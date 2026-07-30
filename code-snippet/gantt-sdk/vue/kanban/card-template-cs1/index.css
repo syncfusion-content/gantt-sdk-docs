@@ -1,0 +1,17 @@
+
+
+
+
+
+
+
+
+
+
+.e-kanban .card-template-wrap td {
+    background: none !important;
+}
+
+.e-kanban .card-template-wrap .CardHeader {
+    font-weight: 500;
+}

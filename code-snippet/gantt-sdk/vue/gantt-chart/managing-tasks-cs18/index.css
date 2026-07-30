@@ -1,0 +1,8 @@
+
+        .e-gantt-chart .e-preventEdit .e-right-resize-gripper,
+        .e-gantt-chart .e-preventEdit .e-left-resize-gripper,
+        .e-gantt-chart .e-preventEdit .e-progress-resize-gripper,
+        .e-gantt-chart .e-preventEdit .e-left-connectorpoint-outer-div,
+        .e-gantt-chart .e-preventEdit .e-right-connectorpoint-outer-div {
+                         display: none;
+        }

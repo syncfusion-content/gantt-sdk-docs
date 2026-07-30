@@ -1,0 +1,46 @@
+import { Gantt } from '@syncfusion/ej2-gantt';
+import { Button } from '@syncfusion/ej2-buttons';
+import { data } from './datasource.ts';
+
+let gantt: Gantt = new Gantt({
+    dataSource: data,
+    height: '430px',
+    enablePersistence: true,
+    taskFields: {
+        id: 'TaskID',
+        name: 'TaskName',
+        startDate: 'StartDate',
+        duration: 'Duration',
+        progress: 'Progress',
+        parentID: 'ParentID'
+    },
+    columns: [
+        { field: 'TaskID', headerText: 'Task ID', textAlign: 'Right', width: 120 },
+        { field: 'TaskName', headerText: 'Task Name', width: 150 },
+        { field: 'StartDate', headerText: 'Start Date', width: 150 },
+        { field: 'Duration', headerText: 'Duration', width: 150 },
+        { field: 'Progress', headerText: 'Progress', width: 150 }
+    ],
+});
+
+gantt.appendTo('#Gantt');
+
+let addBtn: Button = new Button();
+addBtn.appendTo('#add');
+
+let removeBtn: Button = new Button();
+removeBtn.appendTo('#remove');
+
+document.getElementById('add')!.addEventListener('click', () => {
+    (gantt.columns as any).push({
+        field: 'Progress',
+        headerText: 'Progress',
+        width: 100
+    });
+    gantt.refresh();
+});
+
+document.getElementById('remove')!.addEventListener('click', () => {
+    (gantt.columns as any).pop();
+    gantt.refresh();
+});

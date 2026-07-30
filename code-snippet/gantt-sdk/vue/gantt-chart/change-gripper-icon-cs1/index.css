@@ -1,0 +1,9 @@
+
+/* change gripper icon */
+.e-gantt .e-left-resize-gripper::before, .e-gantt .e-right-resize-gripper::before {
+  content: '\e934';
+}
+
+.e-gantt .e-left-resize-gripper, .e-gantt .e-right-resize-gripper {
+  transform: rotate(90deg);
+}

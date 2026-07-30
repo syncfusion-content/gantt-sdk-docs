@@ -1,0 +1,58 @@
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import { GanttComponent, ColumnsDirective, ColumnDirective } from '@syncfusion/ej2-react-gantt';
+import { SwitchComponent } from '@syncfusion/ej2-react-buttons';
+import { data } from './datasource';
+
+function App() {
+    var gantt;
+
+    const taskFields = {
+        id: 'TaskID',
+        name: 'TaskName',
+        startDate: 'StartDate',
+        endDate: 'EndDate',
+        duration: 'Duration',
+        progress: 'Progress',
+        parentID: 'ParentID'
+    };
+
+    const splitterSettings = {
+        position: '75%'
+    };
+
+    const handleSwitchChange = (args) => {
+        if (gantt) {
+            const durationColumn = gantt.treeGrid.grid.getColumnByField('Duration');
+            durationColumn.visible = args.checked ? true : false;
+            gantt.treeGrid.grid.refreshColumns();
+        }
+    };
+
+    return (
+        <div>
+            <div style={{ marginBottom: '20px' }}>
+                <label style={{ padding: '10px 10px' }}>Enable or disable visible property</label>
+                <SwitchComponent id="switch" change={handleSwitchChange} />
+            </div>
+            <GanttComponent
+                ref={g => gantt = g}
+                dataSource={data}
+                taskFields={taskFields}
+                splitterSettings={splitterSettings}
+                treeColumnIndex={1}
+                height="430px"
+            >
+                <ColumnsDirective>
+                    <ColumnDirective field="TaskID" headerText="Task ID" textAlign="Right" width="90" />
+                    <ColumnDirective field="TaskName" headerText="Task Name" textAlign="Left" width="270" />
+                    <ColumnDirective field="StartDate" headerText="Start Date" textAlign="Right" width="120" />
+                    <ColumnDirective field="Duration" headerText="Duration" textAlign="Right" width="90" visible={false} />
+                    <ColumnDirective field="Progress" headerText="Progress" textAlign="Right" width="150" />
+                </ColumnsDirective>
+            </GanttComponent>
+        </div>
+    );
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));

@@ -1,0 +1,90 @@
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import { GanttComponent, Inject, Filter } from '@syncfusion/ej2-react-gantt';
+import { DropDownListComponent } from '@syncfusion/ej2-react-dropdowns';
+import { data } from './datasource';
+
+function App() {
+    let ganttInstance = null;
+    let fieldDropDown = null;
+    let typeDropDown = null;
+
+    const taskFields = {
+        id: 'TaskID',
+        name: 'TaskName',
+        startDate: 'StartDate',
+        progress: 'Progress',
+        parentID: 'ParentID'
+    };
+
+    const splitterSettings = { columnIndex: 2 };
+    const columns = [
+        { field: 'TaskID', headerText: 'Task ID', width: '120' },
+        { field: 'TaskName', headerText: 'Task Name', width: '250' },
+        { field: 'StartDate', headerText: 'Start Date', width: '150' },
+        { field: 'Progress', headerText: 'Progress', width: '150' }
+    ];
+
+    const fieldData = columns.map(col => col.field);
+    const typeData = ['Menu', 'Excel'];
+
+    const onFieldChange = () => {
+        if (typeDropDown) {
+            typeDropDown.enabled = true;
+            typeDropDown.refresh();
+        }
+    };
+
+    const onTypeChange = (args) => {
+        const selectedField = fieldDropDown.value;
+        const selectedType = args.value;
+
+        const col = columns.find(c => c.field === selectedField);
+        if (col) {
+            col.filter = { type: selectedType };
+            ganttInstance.refresh();
+        }
+    };
+
+    return (
+        <div>
+            <div className="container" style={{ marginBottom: 20, display: 'flex', gap: 40 }}>
+
+                <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                    <label style={{ fontWeight: 'bold' }}>Select Column:</label>
+                    <DropDownListComponent
+                        dataSource={fieldData}
+                        placeholder="Select column"
+                        change={onFieldChange}
+                        ref={(d) => (fieldDropDown = d)}
+                    />
+                </div>
+
+                <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                    <label style={{ fontWeight: 'bold' }}>Select Filter Type:</label>
+                    <DropDownListComponent
+                        dataSource={typeData}
+                        enabled={false}   // starts disabled
+                        placeholder="Select filter type"
+                        change={onTypeChange}
+                        ref={(d) => (typeDropDown = d)}
+                    />
+                </div>
+            </div>
+
+            <GanttComponent
+                ref={(g) => (ganttInstance = g)}
+                height="430px"
+                allowFiltering={true}
+                dataSource={data}
+                taskFields={taskFields}
+                columns={columns}
+                splitterSettings={splitterSettings}
+            >
+                <Inject services={[Filter]} />
+            </GanttComponent>
+        </div>
+    );
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));

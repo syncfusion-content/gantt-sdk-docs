@@ -1,0 +1,12 @@
+.e-kanbanTooltipTemp {
+    width: 250px;
+    padding: 3px;
+}
+
+.e-kanbanTooltipTemp>table {
+    width: 100%;
+}
+
+.e-kanbanTooltipTemp td {
+    vertical-align: top;
+}

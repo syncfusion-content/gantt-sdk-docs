@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>EJ2 Gantt</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Typescript Gantt Controls" />
+    <meta name="author" content="Syncfusion" />
+    <link href="index.css" rel="stylesheet" />
+	<link href="https://cdn.syncfusion.com/ej2/34.1.29/tailwind3.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
+</head>
+
+<body>
+    <script type="text/x-jsrender" id="TimelineTemplates"> 
+        ${if(tier == 'topTier')} 
+        <div class="e-header-cell-label e-gantt-top-cell-text" style="width:100%;background-color: #FBF9F1 ;  font-weight: bold;height: 100%;display: flex; justify-content: center ; align-items: center; "title=${date}> 
+        <div> ${value}</div>
+        <div style="width:20px; height: 20px; line-height: normal; padding-left: 10px; ">
+        <img style="width:100%; height:100%;" src =${imagedate()}>
+        </div>
+        </div>
+        ${/if}
+        ${if(tier == 'bottomTier')} 
+        <div class="e-header-cell-label e-gantt-top-cell-text" style="width:100%;background-color: ${bgColor(value,date)}; text-align: center;height: 100%;display: flex; align-items: center;  font-weight: bold;justify-content: center "title=${date}> 
+         ${holidayValue(value,date)}
+        </div>
+        ${/if}
+    </script>
+    <div id='loader'>Loading....</div>
+    <div id='container'>
+        <div id='Gantt'></div>        
+    </div>
+</body>
+
+</html>

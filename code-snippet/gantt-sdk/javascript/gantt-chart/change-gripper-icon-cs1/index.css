@@ -1,0 +1,32 @@
+#container {
+  visibility: hidden;
+}
+
+#loader {
+  color: #008cff;
+  font-family: 'Helvetica Neue', 'calibiri';
+  font-size: 14px;
+  height: 40px;
+  left: 45%;
+  position: absolute;
+  top: 45%;
+  width: 30%;
+}
+
+#element {
+  display: block;
+  height: 350px;
+}
+
+#container #Gantt {
+  height: 450px;
+}
+
+/* change gripper icon */
+.e-gantt .e-left-resize-gripper::before, .e-gantt .e-right-resize-gripper::before {
+  content: '\e934';
+}
+
+.e-gantt .e-left-resize-gripper, .e-gantt .e-right-resize-gripper {
+  transform: rotate(90deg);
+}

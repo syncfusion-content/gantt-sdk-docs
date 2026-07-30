@@ -1,0 +1,20 @@
+#container {
+  visibility: hidden;  
+  display: flex;
+  gap: 2%;
+}
+
+#loader {
+  color: #008cff;
+  font-family: 'Helvetica Neue','calibiri';
+  font-size: 14px;
+  height: 40px;
+  left: 45%;
+  position: absolute;
+  top: 45%;
+  width: 30%;
+}
+
+.gantt-panel, .treegrid-panel {
+  width: 49%;
+}

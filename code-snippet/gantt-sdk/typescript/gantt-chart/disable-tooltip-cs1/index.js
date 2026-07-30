@@ -1,0 +1,30 @@
+var ganttChart = new ej.gantt.Gantt({
+    dataSource: data,
+    height: '430px',
+    taskFields: {
+        id: 'TaskID',
+        name: 'TaskName',
+        startDate: 'StartDate',
+        duration: 'Duration',
+        progress: 'Progress',
+        dependency: 'Predecessor',
+        parentID: 'ParentID',
+        baselineStartDate: 'BaselineStartDate',
+        baselineEndDate: 'BaselineEndDate'
+    },
+    tooltipSettings: {
+        showTooltip: true
+    },
+    beforeTooltipRender: function (args) {
+        if (
+            args.args.target.classList.contains('e-gantt-child-taskbar') ||
+            args.args.target.classList.contains('e-gantt-parent-taskbar') ||
+            args.args.target.classList.contains('e-taskbar-left-resizer') ||
+            args.args.target.classList.contains('e-taskbar-right-resizer')
+        ) {
+            args.cancel = true;
+        }
+    }
+});
+
+ganttChart.appendTo('#Gantt');
