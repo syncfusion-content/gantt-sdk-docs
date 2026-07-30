@@ -1,0 +1,65 @@
+---
+layout: post
+title: Configuring Dimensions in Angular Kanban Component | Syncfusion
+description: Learn how to configure height and width in the Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
+platform: gantt-sdk
+control: Dimensions
+documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+---
+
+# Dimensions in Angular Kanban Component
+
+The Kanban dimensions refers to both [height](https://ej2.syncfusion.com/angular/documentation/api/kanban/#height) and [width](https://ej2.syncfusion.com/angular/documentation/api/kanban/#width) of the entire layout and it accepts three types of values.
+
+* Auto
+* Pixel
+* Percentage
+
+## Auto height and width
+
+When `height` and `width` of the Kanban are set to `auto`, it will try as hard as possible to keep an element the same width as its parent container. In other words, the parent container that holds Kanban, its width or height will be the sum of its children. By default, Kanban is assigned with `auto` values for both the height and width properties.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt-sdk/angular/kanban/auto-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt-sdk/angular/kanban/auto-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/auto-cs1" %}
+
+## Height and width in pixel
+
+The Kanban `height` and `width` will be rendered exactly as per the given pixel values. It accepts both string and number values.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt-sdk/angular/kanban/pixel-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt-sdk/angular/kanban/pixel-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/pixel-cs1" %}
+
+## Height and width in percentage
+
+When `height` and `width` of the Kanban are given in percentage, it will make the Kanban as wide as the parent container.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt-sdk/angular/kanban/percentage-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt-sdk/angular/kanban/percentage-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/percentage-cs1" %}
