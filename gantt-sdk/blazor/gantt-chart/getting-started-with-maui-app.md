@@ -1,77 +1,42 @@
 ---
 layout: post
-title: Getting Started with Gantt Chart in Blazor MAUI App | Syncfusion
-description: Check out and learn about the documentation for getting started with Blazor Gantt Chart Component in Blazor MAUI App.
+title: Getting Started with GanttChart | Blazor MAUI App | Syncfusion
+description: Checkout and learn about the documentation for getting started with Blazor GanttChart Component in Blazor MAUI App.
 platform: Blazor
-control: Gantt Chart
+control: GanttChart
 documentation: ug
 ---
 
-# Getting Started with Blazor Gantt Chart Component in Blazor MAUI App
+# Getting Started with Blazor GanttChart
 
-This section briefly explains how to include the [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) component in your Blazor MAUI application using both [Visual Studio](https://visualstudio.microsoft.com/vs/) and [Visual Studio Code](https://code.visualstudio.com/).
+This section explains you through the step-by-step process of integrating the [Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) component into your Blazor MAUI application using both [Visual Studio](https://visualstudio.microsoft.com/vs/) and [Visual Studio Code](https://code.visualstudio.com/).
 
-> **Ready to streamline your Blazor development?** <br/>Discover the full potential of Blazor components with AI Coding Assistants. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Code Studio and more. [Explore AI Coding Assistants](https://blazor.syncfusion.com/documentation/ai-coding-assistants/overview).
-
-## Create a new Blazor MAUI App
+> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor development?** <br/>Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistants. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistants](https://blazor.syncfusion.com/documentation/ai-coding-assistants/overview)
 
 {% tabcontents %}
 
 {% tabcontent Visual Studio %}
+
+## Prerequisites
+
+To use the MAUI project templates, install the Mobile development with the .NET extension for Visual Studio. For more details, refer to [here](https://learn.microsoft.com/en-us/dotnet/MAUI/get-started/installation?tabs=vswin) or the [Syncfusion® Blazor Extension](https://blazor.syncfusion.com/documentation/visual-studio-integration/template-studio).
+
+## Create a new Blazor MAUI app
 
 Create a Blazor MAUI App using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/dotnet/maui/get-started/first-app?pivots=devices-windows&view=net-maui-9.0&tabs=vswin). For detailed instructions, refer to the [Blazor MAUI App Getting Started](https://blazor.syncfusion.com/documentation/getting-started/maui-blazor-app) documentation.
 
-{% endtabcontent %}
+## Install Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor packages
 
-{% tabcontent Visual Studio Code %}
+Install [Syncfusion.Blazor.Gantt](https://www.nuget.org/packages/Syncfusion.Blazor.Gantt) and [Syncfusion.Blazor.Themes](https://www.nuget.org/packages/Syncfusion.Blazor.Themes/) NuGet packages in your project using the NuGet Package Manager.
 
-Run the following command to create a new Blazor MAUI App.
+1. Go to **Tools → NuGet Package Manager → Manage NuGet Packages for Solution**
+2. Search for `Syncfusion.Blazor.Gantt` and install the latest version
+3. Search for `Syncfusion.Blazor.Themes` and install the latest version
 
-{% tabs %}
-{% highlight razor tabtitle="Terminal" %}
-
-dotnet new maui-blazor -o MauiBlazorApp
-cd MauiBlazorApp
-
-{% endhighlight %}
-{% endtabs %}
-
-Alternatively, create a **Blazor MAUI App** using Visual Studio Code via [Microsoft Templates](https://learn.microsoft.com/en-us/dotnet/maui/get-started/first-app?pivots=devices-windows&view=net-maui-9.0&tabs=visual-studio-code) or the [Syncfusion® Blazor Extension](https://blazor.syncfusion.com/documentation/visual-studio-code-integration/create-project). For detailed instructions, refer to the [Blazor MAUI App Getting Started](https://blazor.syncfusion.com/documentation/getting-started/maui-blazor-app) documentation.
-
-{% endtabcontent %}
-
-{% tabcontent .NET CLI %}
-
-Run the following command to create a new Blazor MAUI App.
+Alternatively, run the following commands in the Package Manager Console:
 
 {% tabs %}
-{% highlight razor tabtitle="Command Prompt" %}
-
-dotnet new maui-blazor -o MauiBlazorApp
-cd MauiBlazorApp
-
-{% endhighlight %}
-{% endtabs %}
-
-{% endtabcontent %}
-
-{% endtabcontents %}
-
-## Install the required Blazor packages
-
-Install the [Syncfusion.Blazor.Gantt](https://www.nuget.org/packages/Syncfusion.Blazor.Gantt) and [Syncfusion.Blazor.Themes](https://www.nuget.org/packages/Syncfusion.Blazor.Themes/) NuGet packages. All Syncfusion Blazor packages are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.blazor). See the [NuGet packages](https://blazor.syncfusion.com/documentation/nuget-packages) topic for details.
-
-{% tabcontents %}
-
-{% tabcontent Visual Studio %}
-
-1. Go to *Tools → NuGet Package Manager → Manage NuGet Packages for Solution*.
-2. Search the required NuGet packages (`Syncfusion.Blazor.Gantt` and `Syncfusion.Blazor.Themes`) and install them.
-
-Alternatively, you can install the same packages using the Package Manager Console with the following command.
-
-{% tabs %}
-{% highlight razor tabtitle="Package Manager Console" %}
+{% highlight C# tabtitle="Package Manager" %}
 
 Install-Package Syncfusion.Blazor.Gantt -Version {{ site.releaseversion }}
 Install-Package Syncfusion.Blazor.Themes -Version {{ site.releaseversion }}
@@ -83,28 +48,36 @@ Install-Package Syncfusion.Blazor.Themes -Version {{ site.releaseversion }}
 
 {% tabcontent Visual Studio Code %}
 
-Open the terminal and run the following command.
+## Prerequisites
+
+To use the MAUI project templates, install the Mobile development with the .NET extension for Visual Studio Code. For more details, refer to [here](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-9.0&tabs=visual-studio-code) or the [Syncfusion® Blazor Extension](https://blazor.syncfusion.com/documentation/visual-studio-code-integration/create-project).
+
+## Create a new Blazor MAUI app
+
+Create a Blazor MAUI app using Visual Studio Code via [Microsoft Templates](https://learn.microsoft.com/en-us/dotnet/maui/get-started/first-app?pivots=devices-windows&view=net-maui-9.0&tabs=visual-studio-code) or the [Syncfusion® Blazor Extension](https://blazor.syncfusion.com/documentation/visual-studio-code-integration/create-project). For detailed instructions, refer to the [Blazor MAUI App Getting Started](https://blazor.syncfusion.com/documentation/getting-started/maui-blazor-app) documentation.
+
+Alternatively, create a MAUI application by using the following command in the integrated terminal (<kbd>Ctrl</kbd>+<kbd>`</kbd>):
 
 {% tabs %}
-{% highlight razor tabtitle="Terminal" %}
+{% highlight c# tabtitle="Blazor MAUI App" %}
 
-dotnet add package Syncfusion.Blazor.Gantt -v {{ site.releaseversion }}
-dotnet add package Syncfusion.Blazor.Themes -v {{ site.releaseversion }}
+dotnet new maui-blazor -o MauiBlazorApp
+cd MauiBlazorApp
 
 {% endhighlight %}
 {% endtabs %}
 
-{% endtabcontent %}
+## Install Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor packages
 
-{% tabcontent .NET CLI %}
+Install [Syncfusion.Blazor.Gantt](https://www.nuget.org/packages/Syncfusion.Blazor.Gantt) and [Syncfusion.Blazor.Themes](https://www.nuget.org/packages/Syncfusion.Blazor.Themes/) NuGet packages in your project using the integrated terminal.
 
-Open the command prompt and run the following command.
+Run the following commands in the integrated terminal (<kbd>Ctrl</kbd>+<kbd>`</kbd>):
 
 {% tabs %}
-{% highlight razor tabtitle="Command Prompt" %}
+{% highlight C# tabtitle="VS Code Terminal" %}
 
-dotnet add package Syncfusion.Blazor.Gantt -v {{ site.releaseversion }}
-dotnet add package Syncfusion.Blazor.Themes -v {{ site.releaseversion }}
+dotnet add package Syncfusion.Blazor.Gantt --version {{ site.releaseversion }}
+dotnet add package Syncfusion.Blazor.Themes --version {{ site.releaseversion }}
 
 {% endhighlight %}
 {% endtabs %}
@@ -113,28 +86,18 @@ dotnet add package Syncfusion.Blazor.Themes -v {{ site.releaseversion }}
 
 {% endtabcontents %}
 
-## Add import namespaces
+N> All Syncfusion Blazor packages are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.blazor). See the [NuGet packages](https://blazor.syncfusion.com/documentation/nuget-packages) topic for details.
 
-After the packages are installed, open the **~/Components/_Imports.razor** file and import the `Syncfusion.Blazor` and `Syncfusion.Blazor.Gantt` namespaces.
+## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor service
 
-{% tabs %}
-{% highlight razor tabtitle="~/_Imports.razor" %}
-
-@using Syncfusion.Blazor 
-@using Syncfusion.Blazor.Gantt
-
-{% endhighlight %}
-{% endtabs %}
-
-## Register the Blazor service
-
-Open the **MauiProgram.cs** file in Blazor MAUI App and register the Blazor service.
+Register the Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor service in the **~/MauiProgram.cs** file.
 
 {% tabs %}
-{% highlight c# tabtitle="MauiProgram.cs" %}
+{% highlight c# tabtitle="~/MauiProgram.cs" %}
 
 ....
 using Syncfusion.Blazor;
+
 ....
 
 public static class MauiProgram
@@ -152,22 +115,23 @@ public static class MauiProgram
 
 ## Add stylesheet and script resources
 
-The theme stylesheet and script can be accessed from NuGet through [Static Web Assets](https://blazor.syncfusion.com/documentation/appearance/themes#static-web-assets). Include the [stylesheet](https://blazor.syncfusion.com/documentation/appearance/themes) and the [script references](https://blazor.syncfusion.com/documentation/common/adding-script-references) in the **~wwwroot/index.html** file.
+The theme stylesheet and script can be accessed from NuGet through [Static Web Assets](https://blazor.syncfusion.com/documentation/appearance/themes#static-web-assets). Include the stylesheet and script references in the **~/index.html** file.
 
-{% tabs %}
-{% highlight html tabtitle="index.html" %}
+- Add the **stylesheet reference inside the `<head>` tag** of the `index.html` file.
+- Add the **script reference inside the `<body>` tag** of the `index.html` file.
 
-....
+```html
+
 <link href="_content/Syncfusion.Blazor.Themes/fluent2.css" rel="stylesheet" />
-....
 <script src="_content/Syncfusion.Blazor.Core/scripts/syncfusion-blazor.min.js" type="text/javascript"></script>
 
-{% endhighlight %}
-{% endtabs %}
+```
 
-## Add Blazor Gantt Chart component
+N> Check out the [Blazor Themes](https://blazor.syncfusion.com/documentation/appearance/themes) topic to discover various methods ([Static Web Assets](https://blazor.syncfusion.com/documentation/appearance/themes#static-web-assets), [CDN](https://blazor.syncfusion.com/documentation/appearance/themes#cdn-reference), and [CRG](https://blazor.syncfusion.com/documentation/common/custom-resource-generator)) for referencing themes in your Blazor application. Also, check out the [Adding Script Reference](https://blazor.syncfusion.com/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your Blazor application.
 
-Open a Razor file located in the **~/Components/Pages/*.razor** (for example, **Home.razor**) and add the [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) component inside the razor file.
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component
+
+Add the Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component in the **~/Pages/Home.razor** file.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -179,8 +143,7 @@ Open a Razor file located in the **~/Components/Pages/*.razor** (for example, **
     </GanttTaskFields>
 </SfGantt>
 
-@code 
-{
+@code {
     public List<TaskData>? TaskCollection { get; set; }
     protected override void OnInitialized()
     {
@@ -220,49 +183,20 @@ Open a Razor file located in the **~/Components/Pages/*.razor** (for example, **
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/BZBRZcLXBwzqJvDV?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## Run the application on Windows
+### Run the application
 
-{% tabcontents %}
+**Visual Studio**:
 
-{% tabcontent Visual Studio %}
+* Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the .NET MAUI Blazor Hybrid app.
+The application will open as a native app.
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) component will render in your default web browser.
+### How to run the sample on Windows
 
-{% endtabcontent %}
-
-{% tabcontent Visual Studio Code %}
-
-Open the terminal and run the following command.
-
-{% tabs %}
-{% highlight razor tabtitle="Terminal" %}
-
-dotnet run
-
-{% endhighlight %}
-{% endtabs %}
-
-{% endtabcontent %}
-
-{% tabcontent .NET CLI %}
-
-Open the command prompt and run the following command.
-
-{% tabs %}
-{% highlight razor tabtitle="Command Prompt" %}
-
-dotnet run
-
-{% endhighlight %}
-{% endtabs %}
-
-{% endtabcontent %}
-
-{% endtabcontents %}
+Run the sample in Windows Machine mode, and it will run Blazor MAUI in Windows.
 
 ![Blazor Gantt Chart Component](images/blazor-gantt-maui-app.webp)
 
-## Run the application on Android
+### How to run the sample on Android
 
 Run the sample in Android Emulator mode, and it will launch the Blazor MAUI application on the configured Android virtual device.
 
@@ -272,10 +206,10 @@ To run the Blazor Gantt Chart in a Blazor Android MAUI application using the And
 
 Refer [here](https://learn.microsoft.com/en-us/dotnet/maui/android/emulator/device-manager#android-device-manager-on-windows) to install and launch Android emulator.
 
-N> If you encounter any errors while using the Android Emulator, refer to the following link for troubleshooting guidance [Troubleshooting Android Emulator](https://learn.microsoft.com/en-us/dotnet/maui/android/emulator/troubleshooting).
+N> If encounter any errors while using the Android Emulator, refer to the following link for troubleshooting guidance [Troubleshooting Android Emulator](https://learn.microsoft.com/en-us/dotnet/maui/android/emulator/troubleshooting).
 
 ## See also
 
-1. [Getting Started with Blazor for Client-Side in .NET Core CLI](https://blazor.syncfusion.com/documentation/getting-started/blazor-webassembly-dotnet-cli)
-2. [Getting Started with Blazor for Server-Side in Visual Studio](https://blazor.syncfusion.com/documentation/getting-started/blazor-server-side-visual-studio)
-3. [Getting Started with Blazor for Server-Side in .NET Core CLI](https://blazor.syncfusion.com/documentation/getting-started/blazor-server-side-dotnet-cli)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor for Client-Side in .NET Core CLI](https://blazor.syncfusion.com/documentation/getting-started/blazor-webassembly-dotnet-cli)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor for Server-Side in Visual Studio](https://blazor.syncfusion.com/documentation/getting-started/blazor-server-side-visual-studio)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor for Server-Side in .NET Core CLI](https://blazor.syncfusion.com/documentation/getting-started/blazor-server-side-dotnet-cli)
