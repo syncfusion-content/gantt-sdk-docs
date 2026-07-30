@@ -28,7 +28,7 @@
     "@syncfusion/ej2-angular-schedule": "*",
     "@syncfusion/ej2-angular-navigations": "*",
     "@angular/animations": "17.1.2",
-    "@angular/common": "17.1.2",
+    "@angular/common": "20.3.25",
     "@angular/compiler": "17.1.2",
     "@angular/forms": "17.1.2",
     "@angular/router": "17.1.2",
