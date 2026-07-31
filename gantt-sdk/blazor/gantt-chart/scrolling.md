@@ -2,7 +2,7 @@
 layout: post
 title: Scrolling in Blazor Gantt Chart Component | Syncfusion
 description: Checkout and learn here all about scrolling in Syncfusion Blazor Gantt Chart component and much more.
-platform: Blazor
+platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---

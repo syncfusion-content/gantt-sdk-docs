@@ -2,7 +2,7 @@
 layout: post
 title: Event Markers in Blazor Gantt Chart Component | Syncfusion
 description: Checkout and learn here all about Event Markers in Syncfusion Blazor Gantt Chart component and more.
-platform: Blazor
+platform: gantt-sdk
 control: Eventmarkers
 documentation: ug
 ---

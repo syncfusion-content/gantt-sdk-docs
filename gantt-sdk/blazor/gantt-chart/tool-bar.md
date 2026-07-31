@@ -2,7 +2,7 @@
 layout: post
 title: Toolbar in Blazor Gantt Chart Component | Syncfusion
 description: Learn all about the Toolbar in Syncfusion Blazor Gantt Chart, including customization, actions and more.
-platform: Blazor
+platform: gantt-sdk
 control: Toolbar
 documentation: ug
 ---

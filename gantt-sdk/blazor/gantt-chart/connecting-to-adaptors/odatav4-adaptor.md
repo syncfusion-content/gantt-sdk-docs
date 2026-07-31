@@ -2,7 +2,7 @@
 layout: post
 title: Blazor Gantt Chart with ODataV4Adaptor| Syncfusion
 description: Learn about binding data and performing CRUD operations using ODataV4Adaptor in the Blazor Gantt Chart component and much more.
-platform: Blazor
+platform: gantt-sdk
 control: Gantt
 keywords: adaptors, ODataV4adaptor, ODataV4 adaptor, remotedata
 documentation: ug

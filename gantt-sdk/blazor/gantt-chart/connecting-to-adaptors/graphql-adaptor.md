@@ -2,7 +2,7 @@
 layout: post
 title: GraphQLAdaptor in Blazor Gantt Chart | Syncfusion
 description: Learn how to bind data and perform CRUD operations using the GraphQLAdaptor in the Blazor Gantt Chart component and much more.
-platform: Blazor
+platform: gantt-sdk
 control: Gantt Chart
 keywords: adaptors, graphqladaptor, graphql adaptor, hot chocolate, remotedata
 documentation: ug

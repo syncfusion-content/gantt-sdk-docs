@@ -2,7 +2,7 @@
 layout: post
 title: WebAssembly Performance in Blazor Gantt Component | Syncfusion
 description: Checkout and learn here all about WebAssembly Performance in Syncfusion Blazor Gantt component and more.
-platform: Blazor
+platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---
