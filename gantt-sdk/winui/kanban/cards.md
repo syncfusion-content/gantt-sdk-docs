@@ -816,7 +816,7 @@ N> This property will only be applicable when [IsToolTipEnabled](https://help.sy
 
 ## Card selection
 
-The SfKanban control supports selecting a single card or multiple cards at a time and performing drag-and-drop operations on the selection. The selection mode is configured through the `CardSelectionType` property. The `CardSelectionType` property accepts the values `Single` and `Multiple`.
+The SfKanban control supports selecting a single card or multiple cards at a time and performing drag-and-drop operations on the selection. The selection mode is configured through the `CardSelectionType` property. The `CardSelectionType` property accepts the values `Single`, `Multiple` and `None`.
 
 ### Single card selection
 
@@ -848,7 +848,7 @@ The `CardSelectionType` property is set to `Multiple` to enable selecting more t
 
 - Use <kbd>Ctrl</kbd> + <kbd>Click</kbd> to add or remove an individual card from the current selection.
 - Use <kbd>Shift</kbd> + <kbd>Click</kbd> to select a range of cards within the same column.
-- Use <kbd>Shift</kbd> + <kbd>Up Arrow</kbd> and <kbd>Shift</kbd> + <kbd>Down Arrow</kbd> to extend or resuce the current selection range within a column.
+- Use <kbd>Shift</kbd> + <kbd>Up Arrow</kbd> and <kbd>Shift</kbd> + <kbd>Down Arrow</kbd> to extend or reduce the current selection range within a column.
 
 {% tabs %}
 {% highlight XAML hl_lines="2" %}
@@ -883,4 +883,4 @@ The following behaviors are supported for multi-card drag and drop:
 
 ![multi-card-drag-and-drop-in-winui-kanban](images/cards/multi-card-drag-and-drop-in-winui-kanban.gif)
 
-N> Multi-card drag and drop is enabled only when `CardSelectionType` is set to `Multiple`. All selected cards are moved together in a single drag operation, and the relative order of the selected cards is preserved after the drop. If the drop target violates a `Workflows` restriction or the column `MinimumCount` / `MaximumCount` limits for any card in the selection, the entire drag-and-drop operation is canceled.
+N> Multi-card drag and drop is enabled only when `CardSelectionType` is set to `Multiple`. All selected cards are moved together in a single drag operation, and the relative order of the selected cards is preserved after the drop. If the drop target violates a `Workflows` restriction for any card in the selection, the entire drag-and-drop operation is canceled.
