@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Gantt Chart in Blazor MAUI App | Syncfusion
 description: Check out and learn about the documentation for getting started with Blazor Gantt Chart Component in Blazor MAUI App.
-platform: Blazor
+platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---

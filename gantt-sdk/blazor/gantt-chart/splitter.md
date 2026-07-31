@@ -2,7 +2,7 @@
 layout: post
 title: Splitter in Blazor Gantt Chart Component | Syncfusion
 description: Learn how to configure the splitter in the Syncfusion Blazor Gantt Chart component for flexible TreeGrid and Chart panel sizing.
-platform: Blazor
+platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---

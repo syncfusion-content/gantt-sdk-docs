@@ -2,7 +2,7 @@
 layout: post
 title: Zooming in Blazor Gantt Chart Component | Syncfusion
 description: Explore zooming options in the Syncfusion Blazor Gantt Chart component, including Zoom In, Zoom Out, Zoom To Fit, and custom zooming levels.
-platform: Blazor
+platform: gantt-sdk
 control: Zooming
 documentation: ug
 ---

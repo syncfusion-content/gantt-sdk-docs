@@ -2,7 +2,7 @@
 layout: post
 title: Excel Like Filter in Blazor Gantt Chart | Syncfusion
 description: Checkout and learn here all about Excel like filter in Syncfusion Blazor Gantt Chart and much more details.
-platform: Blazor
+platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---

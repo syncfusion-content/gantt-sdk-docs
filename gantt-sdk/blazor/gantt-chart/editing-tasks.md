@@ -2,7 +2,7 @@
 layout: post
 title: Editing tasks in Blazor Gantt Chart Component | Syncfusion
 description: Learn to dynamically edit tasks in Syncfusion Blazor Gantt Chart using cell, dialog, taskbar, or code-based methods for seamless project updates.
-platform: Blazor
+platform: gantt-sdk
 control: Editing tasks
 documentation: ug
 ---

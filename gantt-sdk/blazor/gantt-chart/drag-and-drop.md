@@ -2,7 +2,7 @@
 layout: post
 title: Rows Drag and Drop in Blazor Gantt Chart Component | Syncfusion
 description: Checkout and learn here all about Row Drag and Drop in Syncfusion Blazor Gantt Chart component and much more details.
-platform: Blazor
+platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---
