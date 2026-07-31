@@ -2,7 +2,7 @@
 layout: post
 title: PDF Headers and Footers in Syncfusion Blazor Gantt Chart Component
 description: Learn how to customize headers and footers in PDF exports of the Syncfusion Blazor Gantt Chart component with text, lines, page numbers, and images.
-platform: Blazor
+platform: gantt-sdk
 control: header and footer of PDF exporting
 documentation: ug
 ---

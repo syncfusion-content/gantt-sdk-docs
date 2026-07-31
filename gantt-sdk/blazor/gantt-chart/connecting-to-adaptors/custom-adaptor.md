@@ -2,7 +2,7 @@
 layout: post
 title: CustomAdaptor with CRUD Operations in Blazor Gantt Chart | Syncfusion®
 description: Learn how to implement custom data binding and perform CRUD operations using a custom adaptor in Blazor Gantt Chart.
-platform: Blazor
+platform: gantt-sdk
 control: Gantt Chart
 keywords: adaptors, CustomAdaptor, custom adaptor, remotedata, custombinding, custom binding
 documentation: ug

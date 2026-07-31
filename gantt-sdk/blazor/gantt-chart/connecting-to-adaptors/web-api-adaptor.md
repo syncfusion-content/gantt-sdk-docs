@@ -2,7 +2,7 @@
 layout: post
 title: WebApiAdaptor with CRUD Operations in Blazor Gantt Chart | Syncfusion®
 description: Learn about binding data and performing CRUD operations using the WebApiAdaptor in the Blazor Gantt Chart component and much more.
-platform: Blazor
+platform: gantt-sdk
 control: Gantt Chart
 keywords: adaptors, WebApiAdaptor, webapi adaptor, remotedata
 documentation: ug
