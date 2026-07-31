@@ -13,7 +13,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart componen
 
 To enable sorting, set the [AllowSorting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowSorting) property to **true**. You can configure sorting option using the [GanttSortSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSortSettings.html) property.
 
-Sorting is applied by clicking a column header. For multi-column sorting, hold the **CTRL** key while selecting additional headers. To remove sorting from a specific column in a multi-sorted view, hold the **SHIFT** key and click the column header. 
+Sorting is applied by clicking a column header. For multi-column sorting, hold the **CTRL** key while selecting additional headers. To remove sorting from a specific column in a multi-sorted view, hold the **SHIFT** key and click the column header.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -26,7 +26,7 @@ Sorting is applied by clicking a column header. For multi-column sorting, hold t
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
+public List<TaskData>? TaskCollection { get; set; }
 
     protected override void OnInitialized()
     {
@@ -59,6 +59,7 @@ Sorting is applied by clicking a column header. For multi-column sorting, hold t
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -66,8 +67,8 @@ Sorting is applied by clicking a column header. For multi-column sorting, hold t
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/BZrHNxMkAZZaxzYu?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-> * The Gantt Chart columns are sorted in the ascending order. If you click the already sorted column, the sort direction toggles.
-> * To disable sorting for a particular column, set the `GanttColumn.AllowSorting` property to **false**.
+> - The Gantt Chart columns are sorted in the ascending order. If you click the already sorted column, the sort direction toggles.
+> - To disable sorting for a particular column, set the `GanttColumn.AllowSorting` property to **false**.
 
 ## Initial sorting
 
@@ -93,11 +94,11 @@ The following code example shows how to add sorted columns during Gantt initiali
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public class TaskData
     {
@@ -125,6 +126,7 @@ The following code example shows how to add sorted columns during Gantt initiali
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -155,8 +157,8 @@ You can externally sort a column in the Gantt Chart component using the [SortByC
 </SfGantt>
 
 @code{
-    public SfGantt<TaskData>? Gantt;
-    public List<TaskData> TaskCollection { get; set; }
+public SfGantt<TaskData>? Gantt;
+public List<TaskData> TaskCollection { get; set; }
 
     public void Sorting()
     {
@@ -194,6 +196,7 @@ You can externally sort a column in the Gantt Chart component using the [SortByC
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -226,16 +229,16 @@ You can clear all sorted columns in the Gantt Chart component using the [ClearSo
 </SfGantt>
 
 @code {
-    public SfGantt<TaskData>? Gantt;
-    public void ClearSorting()
-    {
-        Gantt?.ClearSortingAsync();
-    }
-    private List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public SfGantt<TaskData>? Gantt;
+public void ClearSorting()
+{
+Gantt?.ClearSortingAsync();
+}
+private List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public class TaskData
     {
@@ -263,6 +266,7 @@ You can clear all sorted columns in the Gantt Chart component using the [ClearSo
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -292,10 +296,9 @@ The following sample demonstrates how to cancel sorting on the **TaskID** column
 </SfGantt>
 
 @code {
-    private string? SortMessage { get; set; }
-    public List<TaskData>? TaskCollection { get; set; }
+private string? SortMessage { get; set; }
+public List<TaskData>? TaskCollection { get; set; }
 
-    
     public void SortingHandler(SortingEventArgs args)
     {
         if (args.ColumnName == "TaskID")
@@ -310,7 +313,7 @@ The following sample demonstrates how to cancel sorting on the **TaskID** column
         SortMessage = $"Sorted by '{args.ColumnName}' in '{args.Direction}' order.";
     }
 
-   
+
     protected override void OnInitialized()
     {
         TaskCollection = GetTaskCollection();
@@ -342,6 +345,7 @@ The following sample demonstrates how to cancel sorting on the **TaskID** column
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -377,8 +381,8 @@ The following sample demonstrates sorting a custom column using an external butt
 </SfGantt>
 
 @code {
-    public SfGantt<TaskData>? Gantt;
-    private List<TaskData>? TaskCollection { get; set; }
+public SfGantt<TaskData>? Gantt;
+private List<TaskData>? TaskCollection { get; set; }
 
     public void Sorting()
     {
@@ -417,6 +421,7 @@ The following sample demonstrates sorting a custom column using an external butt
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -426,7 +431,7 @@ The following sample demonstrates sorting a custom column using an external butt
 
 ## Touch interaction
 
-To perform a tap action on a column header in the Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt component, the [Sorting](https://blazor.syncfusion.com/documentation/gantt-chart/sorting) operation is triggered for the selected column. A popup appears when multi-column sorting is enabled. To sort multiple columns, tap the popup and then tap the desired column headers. 
+To perform a tap action on a column header in the Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt component, the [Sorting](https://blazor.syncfusion.com/documentation/gantt/sorting) operation is triggered for the selected column. A popup appears when multi-column sorting is enabled. To sort multiple columns, tap the popup and then tap the desired column headers.
 
 The following screenshot shows Gantt touch sorting,
 

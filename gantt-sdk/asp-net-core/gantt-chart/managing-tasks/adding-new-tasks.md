@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Adding new tasks in gantt control
 
 Tasks can be dynamically added to the Gantt project by enabling the [`EditSettings.AllowAdding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html#Syncfusion_EJ2_Gantt_GanttEditSettings_AllowAdding) property.
@@ -21,10 +20,10 @@ A row can be added to the Gantt component from the toolbar while the [`EditSetti
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/addingRow/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/addingRow/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="AddingRow.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/addingRow/addingRow.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/addingRow/addingRow.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -32,15 +31,13 @@ A row can be added to the Gantt component from the toolbar while the [`EditSetti
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/addingRow/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/addingRow/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="AddingRow.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/addingRow/addingRow.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/addingRow/addingRow.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/addingRow.png)
 
@@ -54,10 +51,10 @@ A row can also be added above, below or child of the selected row by using conte
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/contextMenu/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/contextMenu/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ContextMenu.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/contextMenu/contextMenu.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/contextMenu/contextMenu.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -65,15 +62,13 @@ A row can also be added above, below or child of the selected row by using conte
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/contextMenu/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/contextMenu/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ContextMenu.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/contextMenu/contextMenu.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/contextMenu/contextMenu.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/contextMenuAdd.png)
 
@@ -81,20 +76,20 @@ A row can also be added above, below or child of the selected row by using conte
 
 You can add rows to the Gantt control dynamically using the `addRecord` method and you can define the add position of the default new record by using the [`RowPosition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.RowPosition.html) property. You can also pass the `RowIndex` as an additional parameter.
 
-* Top of all the rows.
-* Bottom to all the existing rows.
-* Above the selected row.
-* Below the selected row.
-* As child to the selected row.
+- Top of all the rows.
+- Bottom to all the existing rows.
+- Above the selected row.
+- Below the selected row.
+- As child to the selected row.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/addRow/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/addRow/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="AddRow.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/addRow/addRow.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/addRow/addRow.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -102,14 +97,12 @@ You can add rows to the Gantt control dynamically using the `addRecord` method a
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/addRow/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/addRow/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="AddRow.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/addRow/addRow.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/addRow/addRow.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/addRow.png)

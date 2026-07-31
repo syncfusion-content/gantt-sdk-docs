@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Maintain zoomToFit
 
 In the Gantt control, While performing edit actions or dynamically change dataSource, the timeline gets refreshed. When zoomToFit toolbar item is clicked and perform editing actions or dynamically change dataSource, the timeline gets refreshed. So that, the timeline will not fit to the project any more.
@@ -21,10 +20,10 @@ We can maintain `zoomToFit` after editing actions(cell edit,dialog edit,taskbar 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/maintainzoomtofit/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/how-to/maintainzoomtofit/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Maintainzoomtofit.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/maintainzoomtofit/maintainzoomtofit.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/how-to/maintainzoomtofit/maintainzoomtofit.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -32,15 +31,13 @@ We can maintain `zoomToFit` after editing actions(cell edit,dialog edit,taskbar 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/maintainzoomtofit/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/how-to/maintainzoomtofit/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Maintainzoomtofit.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/maintainzoomtofit/maintainzoomtofit.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/how-to/maintainzoomtofit/maintainzoomtofit.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Maintain zoomToFit after change dataSource dynamically
 
@@ -50,10 +47,10 @@ We can maintain `zoomToFit` after change dataSource dynamically, by calling `fit
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/maintainzoomtofitdatasource/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/how-to/maintainzoomtofitdatasource/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Maintainzoomtofitdatasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/maintainzoomtofitdatasource/maintainzoomtofitdatasource.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/how-to/maintainzoomtofitdatasource/maintainzoomtofitdatasource.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -61,11 +58,10 @@ We can maintain `zoomToFit` after change dataSource dynamically, by calling `fit
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/maintainzoomtofitdatasource/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/how-to/maintainzoomtofitdatasource/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Maintainzoomtofitdatasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/maintainzoomtofitdatasource/maintainzoomtofitdatasource.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/how-to/maintainzoomtofitdatasource/maintainzoomtofitdatasource.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-

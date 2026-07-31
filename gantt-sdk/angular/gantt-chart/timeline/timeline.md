@@ -10,7 +10,6 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Timeline in Angular Gantt Chart Component
 
-
 ## Configure timeline view modes
 
 Set the timeline view mode using the [timelineViewMode](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineViewMode) property, with top tier displaying broader units (e.g., weeks) and bottom tier finer ones (e.g., days), ideal for project schedules.
@@ -21,15 +20,15 @@ In Week mode, the top tier shows weeks and the bottom tier days, suitable for sh
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/week-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/week-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/week-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/week-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/timeline/week-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/timeline/week-cs1" %}
 
 ### Month timeline mode
 
@@ -37,15 +36,15 @@ In Month mode, the top tier shows months and the bottom tier weeks, ideal for me
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/month-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/month-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/month-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/month-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/timeline/month-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/timeline/month-cs1" %}
 
 ### Year timeline mode
 
@@ -53,15 +52,15 @@ In Year mode, the top tier shows years and the bottom tier months, suitable for 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/year-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/year-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/year-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/year-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/timeline/year-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/timeline/year-cs1" %}
 
 ### Day timeline mode
 
@@ -69,15 +68,15 @@ In Day mode, the top tier shows days and the bottom tier hours, ideal for detail
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/day-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/day-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/day-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/day-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/timeline/day-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/timeline/day-cs1" %}
 
 ### Hour timeline mode
 
@@ -85,15 +84,15 @@ In Hour mode, the top tier shows hours and the bottom tier minutes, perfect for 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/hour-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/hour-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/hour-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/hour-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/timeline/hour-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/timeline/hour-cs1" %}
 
 ### Minutes timeline mode
 
@@ -101,15 +100,15 @@ In Minutes timeline mode, the tier displays minute-level intervals, ideal for tr
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/minutes-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/minutes-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/hour-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/hour-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/timeline/hour-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/timeline/hour-cs1" %}
 
 ## Timeline view dates
 
@@ -117,15 +116,15 @@ The Gantt Chart control supports rendering a fixed timeline range using the [vie
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/view-dates-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/view-dates-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/view-dates-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/view-dates-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/timeline/view-dates-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/timeline/view-dates-cs1" %}
 
 **Key behaviors**
 
@@ -147,15 +146,15 @@ In the Gantt Chart component, you can customize the week start day using the [we
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/week-startday-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/week-startday-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/week-startday-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/week-startday-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/timeline/week-startday-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/timeline/week-startday-cs1" %}
 
 ## Customize automatic timescale update action
 
@@ -163,15 +162,15 @@ In the Gantt Chart component, the schedule timeline will be automatically update
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/timescale-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/timescale-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/timescale-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/timescale-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/timeline/timescale-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/timeline/timescale-cs1" %}
 
 ## Dynamically change timeline mode
 
@@ -179,14 +178,14 @@ You can dynamically change the timeline mode in the Gantt Chart by updating the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/change-timeline-mode/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/change-timeline-mode/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/change-timeline-mode/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/change-timeline-mode/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/timeline/change-timeline-mode" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/timeline/change-timeline-mode" %}
 
 ## Timeline cells tooltip
 
@@ -194,19 +193,19 @@ In the Gantt Chart component, you can enable or disable the mouse hover tooltip 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/tooltip/timelinecell-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/tooltip/timelinecell-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/tooltip/timelinecell-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/tooltip/timelinecell-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/tooltip/timelinecell-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/tooltip/timelinecell-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/tooltip/timelinecell-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/tooltip/timelinecell-cs1" %}
 
 ## Highlight weekends
 
@@ -214,19 +213,19 @@ Highlight weekends by setting [showWeekend](https://ej2.syncfusion.com/angular/d
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/show-weekend-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/show-weekend-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/show-weekend-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/show-weekend-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/show-weekend-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/show-weekend-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/timeline/show-weekend-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/timeline/show-weekend-cs1" %}
 
 **Limitations:**
 
@@ -244,19 +243,19 @@ You can adjust the Gantt chart view by shifting the timeline forward or backward
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/span-time-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/span-time-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/span-time-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/span-time-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/span-time-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/span-time-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/timeline/span-time-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/timeline/span-time-cs1" %}
 
 ## Timeline template
 
@@ -272,19 +271,19 @@ The following code example how to customize the top tier to display the week's w
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/tooltip/timelinecell-cs2/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/tooltip/timelinecell-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/tooltip/timelinecell-cs2/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/tooltip/timelinecell-cs2/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/tooltip/timelinecell-cs2/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/tooltip/timelinecell-cs2/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/tooltip/timelinecell-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/tooltip/timelinecell-cs2" %}
 
 ## Infinite timeline scrolling
 
@@ -300,19 +299,19 @@ This feature enables exploration of long project schedules without manually upda
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/infinite-timeline-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/infinite-timeline-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/infinite-timeline-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/infinite-timeline-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/infinite-timeline-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/infinite-timeline-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/timeline/infinite-timeline-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/timeline/infinite-timeline-cs1" %}
 
 ## See also
 

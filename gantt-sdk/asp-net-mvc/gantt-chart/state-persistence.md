@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # State Persistence Feature
 
 State persistence refers to the Gantt's state maintained in the browser's [`localStorage`](https://www.w3schools.com/html/html5_webstorage.asp#) even if the browser is refreshed or if you move to the next page within the browser.
@@ -20,15 +19,13 @@ If the [`enablePersistence`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncf
 
 ```typescript
 //get the Gantt model.
-var value = window.localStorage.getItem('ganttGantt'); //"ganttGantt" is component name + component id.
+var value = window.localStorage.getItem("ganttGantt"); //"ganttGantt" is component name + component id.
 var model = JSON.parse(model);
-
 ```
 
 ```typescript
 //set the Gantt model.
-window.localStorage.setItem('ganttGantt', JSON.stringify(model)); //"ganttGantt" is component name + component id.
-
+window.localStorage.setItem("ganttGantt", JSON.stringify(model)); //"ganttGantt" is component name + component id.
 ```
 
 ## Prevent columns from persisting
@@ -43,10 +40,10 @@ N> When the [EnablePersistence](https://help.syncfusion.com/cr/aspnetmvc-js2/Syn
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/state-persist/custom/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/state-persist/custom/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Column-prevent.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/state-persist/custom/column-prevent.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/state-persist/custom/column-prevent.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -54,10 +51,10 @@ N> When the [EnablePersistence](https://help.syncfusion.com/cr/aspnetmvc-js2/Syn
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/state-persist/custom/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/state-persist/custom/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Column-prevent.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/state-persist/custom/column-prevent.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/state-persist/custom/column-prevent.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -72,10 +69,10 @@ If you wish to restore all these column properties, then you can achieve it by c
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/state-persist/default/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/state-persist/default/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Column-persist.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/state-persist/default/column-persist.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/state-persist/default/column-persist.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -83,10 +80,10 @@ If you wish to restore all these column properties, then you can achieve it by c
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/state-persist/default/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/state-persist/default/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Column-persist.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/state-persist/default/column-persist.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/state-persist/default/column-persist.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

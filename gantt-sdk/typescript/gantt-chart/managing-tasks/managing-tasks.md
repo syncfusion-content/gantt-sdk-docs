@@ -17,27 +17,27 @@ Managing tasks in the TypeScript Gantt Chart control enables dynamic project upd
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs12/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/getting-started-cs12/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs12/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/getting-started-cs12/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs12" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/getting-started-cs12" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs12/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/getting-started-cs12/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs12/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/getting-started-cs12/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs12" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/getting-started-cs12" %}
 {% endif %}
 
 Editing feature requires a primary key column for CRUD operations. While defining columns in Gantt Chart using the [columns](../../api/gantt#columns) property, it is mandatory that any one of the columns, must be a primary column. By default, the [id](../../api/gantt/taskFields#id) column will be the primary key column. If [id](../../api/gantt/taskFields#id) column is not defined, we need to enable [isPrimaryKey](../../api/gantt/column#isprimarykey) for any one of the columns defined in the [columns](../../api/gantt#columns) property.
@@ -50,27 +50,27 @@ You can set default values when new task dialog opens using [actionBegin](../../
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/rows-cs2/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/rows-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/rows-cs2/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/rows-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/rows-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/rows-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/rows-cs2/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/rows-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/rows-cs2/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/rows-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/rows-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/rows-cs2" %}
 {% endif %}
 
 ## Cell edit type and its params
@@ -101,27 +101,27 @@ Below is the combined content from the provided markdown sections in bullet poin
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/managingTasks-cs2/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/managingTasks-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/managingTasks-cs2/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/managingTasks-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/managingTasks-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/managingTasks-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/managingTasks-cs2/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/managingTasks-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/managingTasks-cs2/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/managingTasks-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/managingTasks-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/managingTasks-cs2" %}
 {% endif %}
 
 ## Prevent particular column and taskbar editing
@@ -134,27 +134,27 @@ To restrict taskbar editing, set `args.cancel` to **true** in the [actionBegin](
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/managingTasks-cs5/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/managingTasks-cs5/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/managingTasks-cs5/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/managingTasks-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/managingTasks-cs5" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/managingTasks-cs5" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/managingTasks-cs5/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/managingTasks-cs5/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/managingTasks-cs5/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/managingTasks-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/managingTasks-cs5" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/managingTasks-cs5" %}
 {% endif %}
 
 ## Cell Edit Template
@@ -173,27 +173,27 @@ The cell edit template is used to create a custom control for a particular colum
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/managingTasks-cs3/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/managingTasks-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/managingTasks-cs3/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/managingTasks-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/managingTasks-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/managingTasks-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/managingTasks-cs3/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/managingTasks-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/managingTasks-cs3/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/managingTasks-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/managingTasks-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/managingTasks-cs3" %}
 {% endif %}
 
 ## Disable editing for particular column
@@ -206,27 +206,27 @@ In the following demo, editing is disabled for the **TaskName** column.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/managingTasks-cs4/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/managingTasks-cs4/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/managingTasks-cs4/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/managingTasks-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/managingTasks-cs4" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/managingTasks-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/managingTasks-cs4/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/managingTasks-cs4/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/managingTasks-cs4/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/managingTasks-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/managingTasks-cs4" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/managingTasks-cs4" %}
 {% endif %}
 
 ## Customize control in add/edit dialog
@@ -245,27 +245,27 @@ In the below sample, General tab is customized using the `fields` property. The 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/rows-cs14/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/rows-cs14/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/rows-cs14/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/rows-cs14/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/rows-cs14" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/rows-cs14" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/rows-cs14/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/rows-cs14/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/rows-cs14/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/rows-cs14/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/rows-cs14" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/rows-cs14" %}
 {% endif %}
 
 ### Customize dependency, segments and resources tab of dialog
@@ -283,27 +283,27 @@ In the example below:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/rows-cs15/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/rows-cs15/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/rows-cs15/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/rows-cs15/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/rows-cs15" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/rows-cs15" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/rows-cs2/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/rows-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/rows-cs15/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/rows-cs15/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/rows-cs15" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/rows-cs15" %}
 {% endif %}
 
 ### Customize note dialog tab
@@ -316,27 +316,27 @@ In the following example, the notes tab is customized with the [inlinemode](../.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/rows-cs16/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/rows-cs16/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/rows-cs16/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/rows-cs16/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/rows-cs16" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/rows-cs16" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/rows-cs16/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/rows-cs16/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/rows-cs16/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/rows-cs16/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/rows-cs16" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/rows-cs16" %}
 {% endif %}
 
 ## Touch interaction
@@ -370,27 +370,27 @@ The following table explains the taskbar state in dependency edit mode.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/touch-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/touch-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/touch-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/touch-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/touch-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/touch-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/touch-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/touch-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/touch-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/touch-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/touch-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/touch-cs1" %}
 {% endif %}
 
 > Note: In mobile device, you cannot create dependency other than `FS` by taskbar editing. By using cell/dialog editing, you can add all type of dependencies.
@@ -403,27 +403,27 @@ The taskbar editing tooltip can be customized using the [tooltipSettings.editing
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/editingTooltip-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/editingTooltip-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/editingTooltip-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/editingTooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/editingTooltip-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/editingTooltip-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/editingTooltip-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/editingTooltip-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/editingTooltip-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/editingTooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/editingTooltip-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/editingTooltip-cs1" %}
 {% endif %}
 
 ## See also

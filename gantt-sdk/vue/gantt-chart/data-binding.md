@@ -2,7 +2,7 @@
 layout: post
 title: Data Binding in Vue Gantt Chart Component | Syncfusion
 description: Learn here all about Data binding in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Data binding 
+control: Data binding
 platform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -12,8 +12,8 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 The Gantt uses `DataManager`, which supports both RESTful JSON data services binding and local JavaScript object array binding. The [dataSource](https://ej2.syncfusion.com/vue/documentation/api/gantt#datasource) property can be assigned either with the instance of DataManager or JavaScript object array collection. Gantt provides support to bind two kinds of data,
 
-* Local data
-* Remote data
+- Local data
+- Remote data
 
 To learn about Gantt Chart data binding quickly, you can check on this video:
 {% youtube "https://www.youtube.com/watch?v=yJKMcTMJfLc" %}
@@ -26,8 +26,8 @@ In local data binding, the data source for rendering the Gantt Chart component i
 
 The following are the two types of data binding possible with the Gantt Chart component:
 
-* Hierarchical data binding.
-* Self-referential data binding (Flat data).
+- Hierarchical data binding.
+- Self-referential data binding (Flat data).
 
 ### Hierarchical data binding
 
@@ -37,32 +37,32 @@ The following code example shows how to bind the hierarchical local data into th
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/data-binding-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/data-binding-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/data-binding-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/data-binding-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/data-binding-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/data-binding-cs1" %}
 
 ### Self-referential data binding (Flat data)
 
 The Gantt Chart component can be bound with self-referential data by mapping the data source field values to the [id](https://ej2.syncfusion.com/vue/documentation/api/gantt/taskFields#id) and [parentID](https://ej2.syncfusion.com/vue/documentation/api/gantt/taskFields#parentid) properties.
 
-* ID field: This field contains unique values used to identify each individual task and it is mapped to the [id](https://ej2.syncfusion.com/vue/documentation/api/gantt/taskFields#id) property.
-* Parent ID field: This field contains values that indicate parent tasks and it is mapped to the [parentID](https://ej2.syncfusion.com/vue/documentation/api/gantt/taskFields#parentid) property.
+- ID field: This field contains unique values used to identify each individual task and it is mapped to the [id](https://ej2.syncfusion.com/vue/documentation/api/gantt/taskFields#id) property.
+- Parent ID field: This field contains values that indicate parent tasks and it is mapped to the [parentID](https://ej2.syncfusion.com/vue/documentation/api/gantt/taskFields#parentid) property.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/data-binding-cs2/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/data-binding-cs2/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/data-binding-cs2/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/data-binding-cs2/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/data-binding-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/data-binding-cs2" %}
 
 ## Remote data
 
@@ -70,14 +70,14 @@ To bind remote data to the Gantt Chart component, assign service data as an inst
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/data-binding-cs3/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/data-binding-cs3/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/data-binding-cs3/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/data-binding-cs3/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/data-binding-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/data-binding-cs3" %}
 
 ### URL Adaptor
 
@@ -245,7 +245,7 @@ When the <code>loadChildOnDemand</code> is enabled, parent records are rendered 
 ```
 <template>
     <div id="app">
-            <ejs-gantt ref='gantt' id="GanttContainer" 
+            <ejs-gantt ref='gantt' id="GanttContainer"
                 :dataSource= "dataSource"
                 :taskFields= "taskFields"
                 :allowSelection= "true"
@@ -462,7 +462,7 @@ public object Get()
                 val.duration = ord.duration;
                 val.predecessor = ord.predecessor;
             }
-            
+
             return value;
         }
 
@@ -585,11 +585,12 @@ public object Get()
         }
 
 ```
+
 ### Limitations
 
-* Filtering, sorting  and searching are not supported in load on demand.
-* Only Self-Referential type data is supported with remote data binding in Gantt Chart.
-* Load-on-demand supports only the validated data source
+- Filtering, sorting and searching are not supported in load on demand.
+- Only Self-Referential type data is supported with remote data binding in Gantt Chart.
+- Load-on-demand supports only the validated data source
 
 ### Sending additional parameters to the server
 
@@ -693,14 +694,14 @@ The argument passed to the `actionFailure` event contains the error details retu
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/data-binding-cs4/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/data-binding-cs4/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/data-binding-cs4/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/data-binding-cs4/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/data-binding-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/data-binding-cs4" %}
 
 #### Binding with Ajax
 
@@ -708,16 +709,16 @@ You can use Gantt [dataSource](https://ej2.syncfusion.com/vue/documentation/api/
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/data-binding-cs5/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/data-binding-cs5/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/data-binding-cs5/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/data-binding-cs5/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/data-binding-cs5" %}
 
->Note: If you bind the dataSource from this way, then it acts like a local dataSource. So you cannot perform any server side crud actions.
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/data-binding-cs5" %}
+
+> Note: If you bind the dataSource from this way, then it acts like a local dataSource. So you cannot perform any server side crud actions.
 
 ## Split task
 
@@ -728,29 +729,31 @@ The `Split-task` feature allows you to split a task or interrupt the work during
 To split a task at load time in hierarchical way, we need to define the segment details in datasource and this field should be mapped by using the [taskFields.segments](https://ej2.syncfusion.com/vue/documentation/api/gantt/taskFields#segments) property.
 
 ```ts
-
 [
-    {
-        TaskID: 1, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50,
-        Segments: [
-            { StartDate: new Date("04/02/2019"), Duration: 2 },
-            { StartDate: new Date("04/04/2019"), Duration: 2 }
-        ]
-    }
-]
-
+  {
+    TaskID: 1,
+    TaskName: "Identify Site location",
+    StartDate: new Date("04/02/2019"),
+    Duration: 4,
+    Progress: 50,
+    Segments: [
+      { StartDate: new Date("04/02/2019"), Duration: 2 },
+      { StartDate: new Date("04/04/2019"), Duration: 2 },
+    ],
+  },
+];
 ```
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/data-binding-cs6/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/data-binding-cs6/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/data-binding-cs6/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/data-binding-cs6/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/data-binding-cs6" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/data-binding-cs6" %}
 
 ### Self-referential
 
@@ -772,16 +775,16 @@ We can also define segment details as a flat data and this collection can be map
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/data-binding-cs7/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/data-binding-cs7/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/data-binding-cs7/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/data-binding-cs7/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/data-binding-cs7" %}
 
->Note: Segment id field contains id of a task which should be split at load time.
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/data-binding-cs7" %}
+
+> Note: Segment id field contains id of a task which should be split at load time.
 
 ## Improve performance by disabling validations
 
@@ -789,13 +792,13 @@ The [autoCalculateDateScheduling](https://ej2.syncfusion.com/vue/documentation/a
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/virtual-scroll-cs2/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/virtual-scroll-cs2/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/virtual-scroll-cs2/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/virtual-scroll-cs2/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
 ## Limitations
 
-Gantt has the support for both Hierarchical and Self-Referential data binding. When rendering the Gantt Chart component with SQL database, we suggest you to use the Self-Referential data binding to maintain the parent-child relation. Because the complex json structure is very difficult to manage it in SQL tables, we need to write a complex queries and we have to write a complex algorithm to find out the proper record details while updating/deleting the inner level task in Gantt data source. We cannot implement both data binding for Gantt Chart component and this is not a recommended way. If  both child and parentID are mapped, the records will not render properly because, when task id of a record defined in the hierarchy structure is assigned to parent id of another record, in such case the records will not properly render. As the self-referential will search the record with particular id in flat data only, not in the inner level of records. If we map the parentID field,  it will be prioritized and Gantt will be rendered based on the parentID values.
+Gantt has the support for both Hierarchical and Self-Referential data binding. When rendering the Gantt Chart component with SQL database, we suggest you to use the Self-Referential data binding to maintain the parent-child relation. Because the complex json structure is very difficult to manage it in SQL tables, we need to write a complex queries and we have to write a complex algorithm to find out the proper record details while updating/deleting the inner level task in Gantt data source. We cannot implement both data binding for Gantt Chart component and this is not a recommended way. If both child and parentID are mapped, the records will not render properly because, when task id of a record defined in the hierarchy structure is assigned to parent id of another record, in such case the records will not properly render. As the self-referential will search the record with particular id in flat data only, not in the inner level of records. If we map the parentID field, it will be prioritized and Gantt will be rendered based on the parentID values.

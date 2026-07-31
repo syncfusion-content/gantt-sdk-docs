@@ -21,14 +21,14 @@ To enable and configure WBS in your Gantt Chart component:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/wbscolumn-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/wbscolumn-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/wbscolumn-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/wbscolumn-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/wbscolumn-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/wbscolumn-cs1" %}
 
 ## Managing WBS code updates
 
@@ -38,14 +38,14 @@ In the following example, WBS auto-update is enabled only during the **row drag 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/wbscolumn-cs2/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/wbscolumn-cs2/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/wbscolumn-cs2/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/wbscolumn-cs2/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/wbscolumn-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/wbscolumn-cs2" %}
 
 ## Limitations
 

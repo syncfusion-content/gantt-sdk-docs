@@ -77,10 +77,10 @@ The following example demonstrates complete baseline configuration with proper f
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/baseline/baseline/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/baseline/baseline/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Baseline.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/baseline/baseline/baseline.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/baseline/baseline/baseline.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -152,10 +152,10 @@ The following example demonstrates complete baseline configuration with proper f
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/baseline/baseline/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/baseline/baseline/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Baseline.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/baseline/baseline/baseline.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/baseline/baseline/baseline.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -186,10 +186,10 @@ The following example demonstrates how to render multiple baselines using `basel
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/baseline/baselineTemplate/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/baseline/baselineTemplate/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Contextmenu.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/baseline/baselineTemplate/baselineTemplate.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/baseline/baselineTemplate/baselineTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -197,10 +197,10 @@ The following example demonstrates how to render multiple baselines using `basel
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/baseline/baselineTemplate/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/baseline/baselineTemplate/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Contextmenu.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/baseline/baselineTemplate/baselineTemplate.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/baseline/baselineTemplate/baselineTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

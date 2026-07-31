@@ -3,7 +3,7 @@ layout: post
 title: Splitting and Merging Tasks in JavaScript Gantt Chart Control | Syncfusion
 description: Learn how to split and merge tasks in the Syncfusion JavaScript Gantt Chart control for flexible task management in project timelines.
 platform: gantt-sdk
-control: Splitting and merging tasks 
+control: Splitting and merging tasks
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -30,27 +30,27 @@ Split tasks dynamically using the dialog or context menu, requiring [taskFields.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs5/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/split-task-cs5/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs5/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/split-task-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/split-task-cs5" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs5/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/split-task-cs5/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs5/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/split-task-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs5" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/split-task-cs5" %}
 {% endif %}
 
 ## Merge tasks dynamically
@@ -65,27 +65,27 @@ You can get the clicked segment information using the [onTaskbarClick](../../gan
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs8/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/split-task-cs8/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs8/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/split-task-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs8" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/split-task-cs8" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs8/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/split-task-cs8/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs8/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/split-task-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs8" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/split-task-cs8" %}
 {% endif %}
 
 ## Limitations of Split tasks

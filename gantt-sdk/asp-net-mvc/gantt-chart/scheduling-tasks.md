@@ -8,21 +8,20 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Scheduling Tasks
 
 ## Duration units
 
 In Gantt, the tasks’ duration value can be measured by the following duration units,
 
-* Day
-* Hour
-* Minute
+- Day
+- Hour
+- Minute
 
 In Gantt, we can define duration unit for whole project by using [`DurationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DurationUnit) property, when we defines the value for this property, this unit will be applied for all task which don't has duration unit value. And each task in the project can be defined with different duration units and the duration unit of a task can be defined by the following ways,
 
-* Using [`TaskFields.DurationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_DurationUnit) property, to map the duration unit data source field.
-* Defining the duration unit value along with the duration field in the data source.
+- Using [`TaskFields.DurationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_DurationUnit) property, to map the duration unit data source field.
+- Defining the duration unit value along with the duration field in the data source.
 
 ### Mapping the duration unit field
 
@@ -32,10 +31,10 @@ The below code snippet explains the mapping of duration unit data source field t
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/durationUnits/durationUnits/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/durationUnits/durationUnits/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DurationUnits.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/durationUnits/durationUnits/durationUnits.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/durationUnits/durationUnits/durationUnits.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -43,15 +42,13 @@ The below code snippet explains the mapping of duration unit data source field t
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/durationUnits/durationUnits/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/durationUnits/durationUnits/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DurationUnits.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/durationUnits/durationUnits/durationUnits.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/durationUnits/durationUnits/durationUnits.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/durationUnits.png)
 
@@ -65,10 +62,10 @@ Duration units for the tasks can also be defined along with the duration values,
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/durationUnits/durationUnitswithDuration/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/durationUnits/durationUnitswithDuration/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DurationUnitswithDuration.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/durationUnits/durationUnitswithDuration/durationUnitswithDuration.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/durationUnits/durationUnitswithDuration/durationUnitswithDuration.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -76,15 +73,13 @@ Duration units for the tasks can also be defined along with the duration values,
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/durationUnits/durationUnitswithDuration/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/durationUnits/durationUnitswithDuration/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DurationUnitswithDuration.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/durationUnits/durationUnitswithDuration/durationUnitswithDuration.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/durationUnits/durationUnitswithDuration/durationUnitswithDuration.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/durationUnitswithDuration.png)
 
@@ -120,10 +115,10 @@ You can define the various types of unscheduled tasks in the data source as foll
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/unscheduled-tasks/unscheduled-tasks/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/unscheduled-tasks/unscheduled-tasks/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="UnscheduledTasks.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/unscheduled-tasks/unscheduled-tasks/unscheduledTasks.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/unscheduled-tasks/unscheduled-tasks/unscheduledTasks.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -131,15 +126,13 @@ You can define the various types of unscheduled tasks in the data source as foll
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/unscheduled-tasks/unscheduled-tasks/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/unscheduled-tasks/unscheduled-tasks/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="UnscheduledTasks.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/unscheduled-tasks/unscheduled-tasks/unscheduledTasks.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/unscheduled-tasks/unscheduled-tasks/unscheduledTasks.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/unscheduledTasks.png)
 
@@ -155,10 +148,10 @@ The following code snippet explains how to define the working time range for the
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/working-time-range/working-time/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/working-time-range/working-time/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Working-time.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/working-time-range/working-time/working-time.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/working-time-range/working-time/working-time.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -166,22 +159,20 @@ The following code snippet explains how to define the working time range for the
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/working-time-range/working-time/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/working-time-range/working-time/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Working-time.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/working-time-range/working-time/working-time.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/working-time-range/working-time/working-time.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 The following screen shot shows working time range in Gantt control.
 
 ![Alt text](images/working-time-range.png)
 
-N>* Individual tasks can lie between any time within the defined working time range of the project.
-<br/>* The [`DayWorkingTime`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DayWorkingTime) property is used to define the working time for the whole project.
+N>_ Individual tasks can lie between any time within the defined working time range of the project.
+<br/>_ The [`DayWorkingTime`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DayWorkingTime) property is used to define the working time for the whole project.
 
 ## Weekend/Non-working days
 
@@ -191,10 +182,10 @@ Non-working days/weekend are used to represent the non-productive days in a proj
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/how-to/changeWorkweek/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/how-to/changeWorkweek/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChangeWorkweek.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/how-to/changeWorkweek/changeWorkweek.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/how-to/changeWorkweek/changeWorkweek.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -202,15 +193,13 @@ Non-working days/weekend are used to represent the non-productive days in a proj
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/how-to/changeWorkweek/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/how-to/changeWorkweek/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChangeWorkweek.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/how-to/changeWorkweek/changeWorkweek.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/how-to/changeWorkweek/changeWorkweek.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/changeWorkweek.png)
 

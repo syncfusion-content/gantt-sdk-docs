@@ -3,7 +3,7 @@ layout: post
 title: Data Markers in Angular Gantt Chart Component | Syncfusion
 description: Learn here all about data markers in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Data markers 
+control: Data markers
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -37,15 +37,15 @@ The following implementation demonstrates comprehensive data marker integration 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/datamarkers/default-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/datamarkers/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/datamarkers/default-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/datamarkers/default-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/datamarkers/default-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/datamarkers/default-cs1" %}
 
 ## Custom event bind to data markers
 
@@ -58,111 +58,136 @@ Data markers support interactive functionality through click event binding, enab
 The following implementation demonstrates how to open the edit dialog for a specific task when its data marker is clicked:
 
 ```typescript
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { GanttComponent, GanttAllModule, ToolbarService, EditService } from '@syncfusion/ej2-angular-gantt';
+import { Component, OnInit, ViewChild } from "@angular/core";
+import {
+  GanttComponent,
+  GanttAllModule,
+  ToolbarService,
+  EditService,
+} from "@syncfusion/ej2-angular-gantt";
 
 @Component({
-    imports: [GanttAllModule],
-    providers: [ToolbarService, EditService],
-    standalone: true,
-    selector: 'app-root',
-    template: `
-        <ejs-gantt #gantt height="450px" [dataSource]="data" [taskFields]="taskSettings"  [editSettings]="editSettings" [toolbar]="toolbar" (dataBound)="dataBound()">
-        </ejs-gantt>`
+  imports: [GanttAllModule],
+  providers: [ToolbarService, EditService],
+  standalone: true,
+  selector: "app-root",
+  template: ` <ejs-gantt
+    #gantt
+    height="450px"
+    [dataSource]="data"
+    [taskFields]="taskSettings"
+    [editSettings]="editSettings"
+    [toolbar]="toolbar"
+    (dataBound)="dataBound()"
+  >
+  </ejs-gantt>`,
 })
-
 export class AppComponent implements OnInit {
-    @ViewChild('gantt', { static: true }) public ganttInstance?: GanttComponent;
-    public data?: object[];
-    public taskSettings?: object;
-    public editSettings?: object;
-    public toolbar?: string[];
+  @ViewChild("gantt", { static: true }) public ganttInstance?: GanttComponent;
+  public data?: object[];
+  public taskSettings?: object;
+  public editSettings?: object;
+  public toolbar?: string[];
 
-    public ngOnInit(): void {
-        this.data = [
-            {
-                TaskID: 1,
-                TaskName: 'Project Initiation',
-                StartDate: new Date('04/02/2019'),
-                EndDate: new Date('04/21/2019'),
-                subtasks: [
-                    {
-                        TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50,
-                        Indicators: [
-                            {
-                                'date': new Date('04/08/2019'),
-                                'iconClass': 'e-btn-icon e-notes-info e-icons',
-                                'name': 'Review Meeting',
-                                'tooltip': 'Review and approve project requirements'
-                            }
-                        ]
-                    },
-                    {
-                        TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 70,
-                        Indicators: [
-                            {
-                                'date': new Date('04/08/2019'),
-                                'iconClass': 'e-btn-icon e-notes-info e-icons',
-                                'name': 'Quality Check',
-                                'tooltip': 'Soil quality inspection checkpoint'
-                            }
-                        ]
-                    }
-                ]
-            }
-        ];
+  public ngOnInit(): void {
+    this.data = [
+      {
+        TaskID: 1,
+        TaskName: "Project Initiation",
+        StartDate: new Date("04/02/2019"),
+        EndDate: new Date("04/21/2019"),
+        subtasks: [
+          {
+            TaskID: 2,
+            TaskName: "Identify Site location",
+            StartDate: new Date("04/02/2019"),
+            Duration: 4,
+            Progress: 50,
+            Indicators: [
+              {
+                date: new Date("04/08/2019"),
+                iconClass: "e-btn-icon e-notes-info e-icons",
+                name: "Review Meeting",
+                tooltip: "Review and approve project requirements",
+              },
+            ],
+          },
+          {
+            TaskID: 3,
+            TaskName: "Perform Soil test",
+            StartDate: new Date("04/02/2019"),
+            Duration: 4,
+            Progress: 70,
+            Indicators: [
+              {
+                date: new Date("04/08/2019"),
+                iconClass: "e-btn-icon e-notes-info e-icons",
+                name: "Quality Check",
+                tooltip: "Soil quality inspection checkpoint",
+              },
+            ],
+          },
+        ],
+      },
+    ];
 
-        this.taskSettings = {
-            id: 'TaskID',
-            name: 'TaskName',
-            startDate: 'StartDate',
-            endDate: 'EndDate',
-            duration: 'Duration',
-            progress: 'Progress',
-            child: 'subtasks',
-            indicators: 'Indicators'
-        };
-        this.editSettings = {
-            allowEditing: true,
-        };
-    }
+    this.taskSettings = {
+      id: "TaskID",
+      name: "TaskName",
+      startDate: "StartDate",
+      endDate: "EndDate",
+      duration: "Duration",
+      progress: "Progress",
+      child: "subtasks",
+      indicators: "Indicators",
+    };
+    this.editSettings = {
+      allowEditing: true,
+    };
+  }
 
-    public dataBound(): void {
-        const elements = document.querySelectorAll('.e-indicator-span');
-        for (let i = 0; i < elements.length; i++) {
-            elements[i].addEventListener('click', (event: Event) => {
-                // Find the task row that contains the clicked indicator.
-                const indicatorElement = event.target as HTMLElement;
-                const taskRow = indicatorElement.closest('tr.e-chart-row') as HTMLElement;
-                if (taskRow && this.ganttInstance) {
-                    // Get the task ID from the row data
-                    const rowIndex = parseInt(taskRow.getAttribute('data-rowindex') || '0', 10);
-                    const record = this.ganttInstance.flatData[rowIndex] as GanttRecord;
-                    if (record && record.ganttProperties.taskId) {
-                        // Open edit dialog for the specific task.
-                        this.ganttInstance.openEditDialog(record.ganttProperties.taskId);
-                    }
-                }
-            });
+  public dataBound(): void {
+    const elements = document.querySelectorAll(".e-indicator-span");
+    for (let i = 0; i < elements.length; i++) {
+      elements[i].addEventListener("click", (event: Event) => {
+        // Find the task row that contains the clicked indicator.
+        const indicatorElement = event.target as HTMLElement;
+        const taskRow = indicatorElement.closest(
+          "tr.e-chart-row",
+        ) as HTMLElement;
+        if (taskRow && this.ganttInstance) {
+          // Get the task ID from the row data
+          const rowIndex = parseInt(
+            taskRow.getAttribute("data-rowindex") || "0",
+            10,
+          );
+          const record = this.ganttInstance.flatData[rowIndex] as GanttRecord;
+          if (record && record.ganttProperties.taskId) {
+            // Open edit dialog for the specific task.
+            this.ganttInstance.openEditDialog(record.ganttProperties.taskId);
+          }
         }
+      });
     }
+  }
 }
 
 interface GanttProperties {
-    taskId: number | string;
-    taskName?: string;
-    startDate?: Date;
-    endDate?: Date;
-    duration?: number;
-    progress?: number;
-    [key: string]: any;
+  taskId: number | string;
+  taskName?: string;
+  startDate?: Date;
+  endDate?: Date;
+  duration?: number;
+  progress?: number;
+  [key: string]: any;
 }
 
 interface GanttRecord {
-    ganttProperties: GanttProperties;
-    [key: string]: any;
+  ganttProperties: GanttProperties;
+  [key: string]: any;
 }
 ```
+
 ![Custom event bind to data markers](images/custom-event-datamarkers.gif)
 
 **Event handler considerations**: The click event handler locates the parent task row using DOM traversal methods, extracts the task information from the current view data, and calls the [openEditDialog](https://ej2.syncfusion.com/angular/documentation/api/gantt#openeditdialog) method with the appropriate task ID to display the edit dialog for the selected task.
@@ -173,11 +198,11 @@ You can programmatically modify the styling of the indicator by targeting the `.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/datamarkers/indicator-customize/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/datamarkers/indicator-customize/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/datamarkers/indicator-customize/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/datamarkers/indicator-customize/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/datamarkers/indicator-customize" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/datamarkers/indicator-customize" %}

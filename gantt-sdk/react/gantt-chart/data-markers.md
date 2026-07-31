@@ -3,7 +3,7 @@ layout: post
 title: Data markers in React Gantt Chart Component | Syncfusion
 description: Learn here all about Data markers in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Data markers 
+control: Data markers
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -37,17 +37,17 @@ The following implementation demonstrates comprehensive data marker integration 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/datamarkers-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/datamarkers-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/datamarkers-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/datamarkers-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/datamarkers-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/datamarkers-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/datamarkers-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/datamarkers-cs1" %}
 
 ## Custom event bind to data markers
 
@@ -61,13 +61,13 @@ The following implementation demonstrates how to open the edit dialog for a spec
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/datamarkers-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/datamarkers-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/datamarkers-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/datamarkers-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/datamarkers-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/datamarkers-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -81,14 +81,14 @@ You can programmatically modify the styling of the indicator by targeting the `.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/datamarkers-cs3/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/datamarkers-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/datamarkers-cs3/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/datamarkers-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/datamarkers-cs3/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/datamarkers-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/datamarkers-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/datamarkers-cs3" %}

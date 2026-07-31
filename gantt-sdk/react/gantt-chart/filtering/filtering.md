@@ -3,7 +3,7 @@ layout: post
 title: Filtering in React Gantt Chart Component | Syncfusion
 description: Learn here all about filtering in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Filtering 
+control: Filtering
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -16,8 +16,8 @@ To enable filtering, set [allowFiltering](https://ej2.syncfusion.com/react/docum
 
 To activate filtering functionality, inject the `Filter` service in the `providers` of the component.
 
-> * The filtering UI is rendered based on the column type, allowing data to be filtered using appropriate operators.
-> * The filter menu is enabled by default. To disable the filtering option for a specific column, set the `allowFiltering` property of the `column` to **false**.
+> - The filtering UI is rendered based on the column type, allowing data to be filtered using appropriate operators.
+> - The filter menu is enabled by default. To disable the filtering option for a specific column, set the `allowFiltering` property of the `column` to **false**.
 
 ## Apply initial filter on load
 
@@ -27,17 +27,17 @@ The following sample demonstrates how to apply an initial filter where **TaskNam
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/initialfilter-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/initialfilter-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/initialfilter-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/initialfilter-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/initialfilter-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/initialfilter-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/initialfilter-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/initialfilter-cs1" %}
 
 ## Supported filter operators
 
@@ -73,17 +73,17 @@ The React Gantt Chart component supports multiple filtering modes, which can be 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/filterhierarchy-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/filterhierarchy-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/filterhierarchy-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/filterhierarchy-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/filterhierarchy-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/filterhierarchy-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/filterhierarchy-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/filterhierarchy-cs1" %}
 
 ## Enable diacritic-sensitive filtering
 
@@ -93,17 +93,17 @@ The following sample demonstrates this behavior: when filtering the **TaskName**
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/diacriticsfilter-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/diacriticsfilter-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/diacriticsfilter-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/diacriticsfilter-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/diacriticsfilter-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/diacriticsfilter-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/diacriticsfilter-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/diacriticsfilter-cs1" %}
 
 ## Programmatic filtering using method
 
@@ -113,17 +113,17 @@ The following sample demonstrates how to filter the **TaskName** and **TaskID** 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/filterbymethod-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/filterbymethod-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/filterbymethod-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/filterbymethod-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/filterbymethod-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/filterbymethod-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/filterbymethod-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/filterbymethod-cs1" %}
 
 ## Clear all applied filters
 
@@ -131,17 +131,17 @@ You can clear all the filtering conditions applied in the Gantt Chart component 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/clearfilter-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/clearfilter-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/clearfilter-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/clearfilter-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/clearfilter-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/clearfilter-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/clearfilter-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/clearfilter-cs1" %}
 
 ## Set different filter types per column
 
@@ -149,38 +149,38 @@ You can enable different filter types for individual columns in the Gantt Chart 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/filtering-cs6/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/filtering-cs6/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/filtering-cs6/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/filtering-cs6/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/filtering-cs6/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/filtering-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/filtering-cs6" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/filtering-cs6" %}
 
 ## Customize filtering behavior using events
 
-You can customize the filtering behavior in the  Syncfusion<sup style="font-size:70%">&reg;</sup> React Gantt using the [actionBegin](https://ej2.syncfusion.com/react/documentation/gantt/events#actionbegin) and [actionComplete](https://ej2.syncfusion.com/react/documentation/gantt/events#actioncomplete) events. These events allow you to inject custom logic at different stages of the filtering workflow.
+You can customize the filtering behavior in the Syncfusion<sup style="font-size:70%">&reg;</sup> React Gantt using the [actionBegin](https://ej2.syncfusion.com/react/documentation/gantt/events#actionbegin) and [actionComplete](https://ej2.syncfusion.com/react/documentation/gantt/events#actioncomplete) events. These events allow you to inject custom logic at different stages of the filtering workflow.
 
 The following sample demonstrates how to handle different filtering stages using `args.requestType`:
-  
-- For **filterBeforeOpen**, customize filter operators based on `args.columnType` (number or string).  
-- For **filtering**, cancel the action if `args.currentFilteringColumn` is **StartDate**.  
+
+- For **filterBeforeOpen**, customize filter operators based on `args.columnType` (number or string).
+- For **filtering**, cancel the action if `args.currentFilteringColumn` is **StartDate**.
 - For **filterAfterOpen**, apply background styling to the filter dialog content and footer.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/filter-events-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/filter-events-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/filter-events-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/filter-events-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/filter-events-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/filter-events-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/filter-events-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/filter-events-cs1" %}

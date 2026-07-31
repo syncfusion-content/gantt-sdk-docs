@@ -3,7 +3,7 @@ layout: post
 title: Copy and Paste Records in JavaScript Gantt Control | Syncfusion
 description: Learn how to programmatically copy and paste records in the Syncfusion JavaScript Gantt Chart control using context menus for efficient task duplication.
 platform: gantt-sdk
-control: Copy paste records 
+control: Copy paste records
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -17,25 +17,25 @@ The copy and paste functionality in the [JavaScript Gantt Chart](https://www.syn
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/copypasterecords-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/copypasterecords-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/copypasterecords-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/copypasterecords-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/copypasterecords-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/copypasterecords-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/copypasterecords-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/copypasterecords-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/copypasterecords-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/copypasterecords-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/copypasterecords-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/copypasterecords-cs1" %}
 {% endif %}

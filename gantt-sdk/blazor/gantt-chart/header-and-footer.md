@@ -15,8 +15,8 @@ Customizing headers and footers in PDF exports of the Blazor Gantt Chart compone
 
 The Syncfusion Blazor Gantt Chart allows you to add custom text to the header and footer sections when exporting the Gantt content to PDF.
 
-* The **header** appears at the top of each exported page and is typically used to display a document title, company branding, logos, dates, or other identifying information.
-* The **footer** appears at the bottom of each page and commonly includes page numbers, copyright notices, disclaimers, or similar supporting details.
+- The **header** appears at the top of each exported page and is typically used to display a document title, company branding, logos, dates, or other identifying information.
+- The **footer** appears at the bottom of each page and commonly includes page numbers, copyright notices, disclaimers, or similar supporting details.
 
 Header and footer text can be customized using the [Header](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.PdfExportPropertiesBase.html#Syncfusion_Blazor_Grids_PdfExportPropertiesBase_Header) and [Footer](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.PdfExportPropertiesBase.html#Syncfusion_Blazor_Grids_PdfExportPropertiesBase_Footer) properties available in [GanttPdfExportProperties](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttPdfExportProperties.html). To display text within the header or footer:
 
@@ -28,14 +28,14 @@ Header and footer text can be customized using the [Header](https://help.syncfus
 
 The appearance of the header or footer text can be customized using the `Style` property. The following styling options are supported:
 
-* **DashStyle**: Defines the dash pattern applied to the text element.
-* **FontSize**: Specifies the size of the text.
-* **HAlign**: Determines the horizontal alignment of the text. Supported values include `Left`, `Center`, `Right`, and `Justify`.
-* **VAlign**: Determines the vertical alignment of the text. Supported values include `Top`, `Middle`, and `Bottom`.
-* **PenColor**: Sets the color of the pen used to outline the text.
-* **PenSize**: Sets the thickness of the pen used for outlining.
-* **TextBrushColor**: Specifies the fill color used to render the text.
-* **TextPenColor**: Specifies the outline color applied to the text.
+- **DashStyle**: Defines the dash pattern applied to the text element.
+- **FontSize**: Specifies the size of the text.
+- **HAlign**: Determines the horizontal alignment of the text. Supported values include `Left`, `Center`, `Right`, and `Justify`.
+- **VAlign**: Determines the vertical alignment of the text. Supported values include `Top`, `Middle`, and `Bottom`.
+- **PenColor**: Sets the color of the pen used to outline the text.
+- **PenSize**: Sets the thickness of the pen used for outlining.
+- **TextBrushColor**: Specifies the fill color used to render the text.
+- **TextPenColor**: Specifies the outline color applied to the text.
 
 These style options allow full control over text color, size, alignment, and appearance. The [HAlign](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.PdfContentStyle.html#Syncfusion_Blazor_Grids_PdfContentStyle_HAlign) property is especially useful for aligning text horizontally within the header or footer area, ensuring a consistent and professional layout in the exported PDF.
 
@@ -45,54 +45,53 @@ These style options allow full control over text color, size, alignment, and app
 @using Syncfusion.Blazor.Gantt
 @using Syncfusion.Blazor.Grids
 
-
 <SfGantt @ref="Gantt" ID="GanttExport" DataSource="@TaskCollection" Height="450px" Width="900px" AllowPdfExport="true" Toolbar="toolbarItem">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Dependency="Predecessor"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Dependency="Predecessor"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
+</GanttTaskFields>
+<GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    public SfGantt<TaskData>? Gantt;
-    private List<object> toolbarItem = new List<Object>() { new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport" } };
-    public List<PdfHeaderFooterContent> HeaderContent = new List<PdfHeaderFooterContent>
-    {
-        new PdfHeaderFooterContent() { Type = ContentType.Text, Value = "Gantt Chart PDF Export Header", Position = new PdfPosition() { X = 0, Y = 50 }, Style = new PdfContentStyle() { TextBrushColor = "#000000", FontSize = 13, HAlign = PdfHorizontalAlign.Center } }
-    };
-    public List<PdfHeaderFooterContent> FooterContent = new List<PdfHeaderFooterContent>
-    {
-        new PdfHeaderFooterContent() { Type = ContentType.Text, Value = "Gantt Chart PDF Export Footer", Position = new PdfPosition() { X = 0, Y = 350 }, Style = new PdfContentStyle() { TextBrushColor = "#000000", FontSize = 13, HAlign = PdfHorizontalAlign.Center } }
-    };
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
-    public async void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
-    {
-        if (args.Item.Id == "PdfExport")
-        {
-            GanttPdfExportProperties exportProperties = new GanttPdfExportProperties();
-            PdfHeader Header = new PdfHeader()
-            {
-                FromTop = 0,
-                Height = 100,
-                Contents = HeaderContent
-            };
-            PdfFooter Footer = new PdfFooter()
-            {
-                FromBottom = 250,
-                Height = 100,
-                Contents = FooterContent
-            };
-            exportProperties.Header = Header;
-            exportProperties.Footer = Footer;
-            if(Gantt!=null)
-            {
-                await Gantt.ExportToPdfAsync(exportProperties);
-            }
-            
+public List<TaskData>? TaskCollection { get; set; }
+public SfGantt<TaskData>? Gantt;
+private List<object> toolbarItem = new List<Object>() { new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport" } };
+public List<PdfHeaderFooterContent> HeaderContent = new List<PdfHeaderFooterContent>
+{
+new PdfHeaderFooterContent() { Type = ContentType.Text, Value = "Gantt Chart PDF Export Header", Position = new PdfPosition() { X = 0, Y = 50 }, Style = new PdfContentStyle() { TextBrushColor = "#000000", FontSize = 13, HAlign = PdfHorizontalAlign.Center } }
+};
+public List<PdfHeaderFooterContent> FooterContent = new List<PdfHeaderFooterContent>
+{
+new PdfHeaderFooterContent() { Type = ContentType.Text, Value = "Gantt Chart PDF Export Footer", Position = new PdfPosition() { X = 0, Y = 350 }, Style = new PdfContentStyle() { TextBrushColor = "#000000", FontSize = 13, HAlign = PdfHorizontalAlign.Center } }
+};
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
+public async void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
+{
+if (args.Item.Id == "PdfExport")
+{
+GanttPdfExportProperties exportProperties = new GanttPdfExportProperties();
+PdfHeader Header = new PdfHeader()
+{
+FromTop = 0,
+Height = 100,
+Contents = HeaderContent
+};
+PdfFooter Footer = new PdfFooter()
+{
+FromBottom = 250,
+Height = 100,
+Contents = FooterContent
+};
+exportProperties.Header = Header;
+exportProperties.Footer = Footer;
+if(Gantt!=null)
+{
+await Gantt.ExportToPdfAsync(exportProperties);
+}
+
         }
     }
 
@@ -123,6 +122,7 @@ These style options allow full control over text color, size, alignment, and app
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -134,11 +134,11 @@ These style options allow full control over text color, size, alignment, and app
 
 Customize lines in headers or footers using the [Header](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.PdfExportPropertiesBase.html#Syncfusion_Blazor_Grids_PdfExportPropertiesBase_Header) and [Footer](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.PdfExportPropertiesBase.html#Syncfusion_Blazor_Grids_PdfExportPropertiesBase_Footer) properties in [GanttPdfExportProperties](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttPdfExportProperties.html). To draw a line:
 
-* Set the `Type` property to **Line**.
-* Use the `Points` property to define the start and end coordinates of the line.
-* Specify the `PageNumberType` property to determine where the line should appear.
-* Configure the `Style` property to customize color, width, and dash pattern.
- 
+- Set the `Type` property to **Line**.
+- Use the `Points` property to define the start and end coordinates of the line.
+- Specify the `PageNumberType` property to determine where the line should appear.
+- Configure the `Style` property to customize color, width, and dash pattern.
+
 These options provide flexibility for adding separators or visual structure to the header and footer areas in the exported PDF.
 
 {% tabs %}
@@ -147,50 +147,50 @@ These options provide flexibility for adding separators or visual structure to t
 @using Syncfusion.Blazor.Gantt
 @using Syncfusion.Blazor.Grids
 <SfGantt @ref="Gantt" ID="GanttExport" DataSource="@TaskCollection" Height="450px" Width="900px" AllowPdfExport="true" Toolbar="toolbarItem">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Dependency="Predecessor"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Dependency="Predecessor"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
+</GanttTaskFields>
+<GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    public SfGantt<TaskData>? Gantt;
-    private List<object> toolbarItem = new List<Object>() { new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport" } };
-    public List<PdfHeaderFooterContent> HeaderContent = new List<PdfHeaderFooterContent>
-    {
-        new PdfHeaderFooterContent() { Type = ContentType.Line, Points = new PdfPoints() { X1 = 0, Y1 = 4, X2 = 685, Y2 = 4 }, Style = new PdfContentStyle() { PenColor = "#000080", DashStyle = PdfDashStyle.Solid } }
-    };
-    public List<PdfHeaderFooterContent> FooterContent = new List<PdfHeaderFooterContent>
-    {
-        new PdfHeaderFooterContent() { Type = ContentType.Line, Points = new PdfPoints() { X1 = 0, Y1 = 350, X2 = 685, Y2 = 350 }, Style = new PdfContentStyle() { PenColor = "#000080", DashStyle = PdfDashStyle.Solid } }
-    };
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
-    public async void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
-    {
-        if (args.Item.Id == "PdfExport")
-        {
-            GanttPdfExportProperties exportProperties = new GanttPdfExportProperties();
-            PdfHeader Header = new PdfHeader()
-            {
-                FromTop = 0,
-                Height = 100,
-                Contents = HeaderContent
-            };
-            PdfFooter Footer = new PdfFooter()
-            {
-                FromBottom = 250,
-                Height = 100,
-                Contents = FooterContent
-            };
-            exportProperties.Header = Header;
-            exportProperties.Footer = Footer;
-            await Gantt.ExportToPdfAsync(exportProperties);
-        }
-    }
+public List<TaskData>? TaskCollection { get; set; }
+public SfGantt<TaskData>? Gantt;
+private List<object> toolbarItem = new List<Object>() { new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport" } };
+public List<PdfHeaderFooterContent> HeaderContent = new List<PdfHeaderFooterContent>
+{
+new PdfHeaderFooterContent() { Type = ContentType.Line, Points = new PdfPoints() { X1 = 0, Y1 = 4, X2 = 685, Y2 = 4 }, Style = new PdfContentStyle() { PenColor = "#000080", DashStyle = PdfDashStyle.Solid } }
+};
+public List<PdfHeaderFooterContent> FooterContent = new List<PdfHeaderFooterContent>
+{
+new PdfHeaderFooterContent() { Type = ContentType.Line, Points = new PdfPoints() { X1 = 0, Y1 = 350, X2 = 685, Y2 = 350 }, Style = new PdfContentStyle() { PenColor = "#000080", DashStyle = PdfDashStyle.Solid } }
+};
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
+public async void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
+{
+if (args.Item.Id == "PdfExport")
+{
+GanttPdfExportProperties exportProperties = new GanttPdfExportProperties();
+PdfHeader Header = new PdfHeader()
+{
+FromTop = 0,
+Height = 100,
+Contents = HeaderContent
+};
+PdfFooter Footer = new PdfFooter()
+{
+FromBottom = 250,
+Height = 100,
+Contents = FooterContent
+};
+exportProperties.Header = Header;
+exportProperties.Footer = Footer;
+await Gantt.ExportToPdfAsync(exportProperties);
+}
+}
 
     public class TaskData
     {
@@ -219,6 +219,7 @@ These options provide flexibility for adding separators or visual structure to t
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -227,5 +228,6 @@ These options provide flexibility for adding separators or visual structure to t
 {% previewsample "https://blazorplayground.syncfusion.com/embed/hZLnZmVXrwFkDRny?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 ## See also
-- [How to export to PDF?](https://blazor.syncfusion.com/documentation/gantt-chart/pdf-export)
-- [How to manage task dependencies?](https://blazor.syncfusion.com/documentation/gantt-chart/task-dependencies)
+
+- [How to export to PDF?](https://blazor.syncfusion.com/documentation/gantt/pdf-export)
+- [How to manage task dependencies?](https://blazor.syncfusion.com/documentation/gantt/task-dependencies)

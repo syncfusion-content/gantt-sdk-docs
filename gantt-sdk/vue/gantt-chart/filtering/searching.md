@@ -16,35 +16,35 @@ To enable search functionality, inject the [Filter](https://ej2.syncfusion.com/v
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs9/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/filtering-cs9/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs9/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/filtering-cs9/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs9" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/filtering-cs9" %}
 
 ## Initial search
 
 You can apply search criteria when the Gantt Chart loads using the [searchSettings](https://ej2.syncfusion.com/vue/documentation/api/gantt/searchSettings) property.  
 Set values such as:
 
-- [fields](https://ej2.syncfusion.com/vue/documentation/api/gantt/searchSettings#fields)  
-- [operator](https://ej2.syncfusion.com/vue/documentation/api/gantt/searchSettings#operator)  
-- [key](https://ej2.syncfusion.com/vue/documentation/api/gantt/searchSettings#key)  
+- [fields](https://ej2.syncfusion.com/vue/documentation/api/gantt/searchSettings#fields)
+- [operator](https://ej2.syncfusion.com/vue/documentation/api/gantt/searchSettings#operator)
+- [key](https://ej2.syncfusion.com/vue/documentation/api/gantt/searchSettings#key)
 - [ignoreCase](https://ej2.syncfusion.com/vue/documentation/api/gantt/searchSettings#ignorecase)
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs10/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/filtering-cs10/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs10/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/filtering-cs10/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs10" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/filtering-cs10" %}
 
 > By default, the Gantt Chart searches all bound column values.  
 > To restrict searching, specify the [searchSettings.fields](https://ej2.syncfusion.com/vue/documentation/api/gantt/searchSettings#fields) property.
@@ -55,13 +55,13 @@ You can customize the search logic using the [searchSettings.operator](https://e
 
 Supported search operators:
 
-Operator | Description
--------- | -----------
-`startsWith` | Checks if a value begins with the specified value.
-`endsWith` | Checks if a value ends with the specified value.
-`contains` | Checks if a value contains the specified value.
-`equal` | Checks if a value equals the specified value.
-`notEqual` | Checks if a value does **not** equal the specified value.
+| Operator     | Description                                               |
+| ------------ | --------------------------------------------------------- |
+| `startsWith` | Checks if a value begins with the specified value.        |
+| `endsWith`   | Checks if a value ends with the specified value.          |
+| `contains`   | Checks if a value contains the specified value.           |
+| `equal`      | Checks if a value equals the specified value.             |
+| `notEqual`   | Checks if a value does **not** equal the specified value. |
 
 > The default operator is `contains`.
 
@@ -71,14 +71,14 @@ To trigger search from an external button, call the [search](https://ej2.syncfus
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs11/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/filtering-cs11/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs11/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/filtering-cs11/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs11" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/filtering-cs11" %}
 
 > Note: The [allowFiltering](https://ej2.syncfusion.com/vue/documentation/api/gantt#allowfiltering) property must be set to `true` for external searching.
 
@@ -88,14 +88,14 @@ You can limit the search to specific columns by defining their field names in th
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs12/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/filtering-cs12/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs12/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/filtering-cs12/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs12" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/filtering-cs12" %}
 
 > In this example, only `TaskName` and `Duration` fields are searched.
 
@@ -105,11 +105,11 @@ To clear search results programmatically, set the [searchSettings.key](https://e
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs13/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/filtering-cs13/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs13/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/filtering-cs13/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs13" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/filtering-cs13" %}

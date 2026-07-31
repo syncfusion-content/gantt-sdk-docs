@@ -8,37 +8,36 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Context menu in ASP.NET MVC Gantt component
 
 The Gantt control allows you to perform quick actions by using context menu. When right-clicking the context menu, the context menu options are shown. To enable this feature, set the `enableContextMenu` to true. The default context menu options are enabled using the `editSettings` property. The context menu options can be customized using the `contextMenuItems` property.
 
 The default items are listed in the following table.
 
-|Items| Description|
-|----|----|
-|`AutoFit`|  Auto-fits the current column.|
-|`AutoFitAll` | Auto-fits all columns.|
-|`SortAscending` | Sorts the current column in ascending order.|
-|`SortDescending` | Sorts the current column in descending order.|
-|`TaskInformation`|  Edits the current task.|
-|`Add` | Adds a new row to the Gantt.|
-|`Indent` | Indent the selected record to one level.|
-|`Outdent` | Outdent the selected record to one level.|
-|`DeleteTask` | Deletes the current task.|
-|`Save` | Saves the edited task.|
-|`Cancel` | Cancels the edited task.|
-|`DeleteDependency` | Deletes the current dependency task link.|
-|`Convert` | Converts current task to milestone or vice-versa.|
+| Items              | Description                                       |
+| ------------------ | ------------------------------------------------- |
+| `AutoFit`          | Auto-fits the current column.                     |
+| `AutoFitAll`       | Auto-fits all columns.                            |
+| `SortAscending`    | Sorts the current column in ascending order.      |
+| `SortDescending`   | Sorts the current column in descending order.     |
+| `TaskInformation`  | Edits the current task.                           |
+| `Add`              | Adds a new row to the Gantt.                      |
+| `Indent`           | Indent the selected record to one level.          |
+| `Outdent`          | Outdent the selected record to one level.         |
+| `DeleteTask`       | Deletes the current task.                         |
+| `Save`             | Saves the edited task.                            |
+| `Cancel`           | Cancels the edited task.                          |
+| `DeleteDependency` | Deletes the current dependency task link.         |
+| `Convert`          | Converts current task to milestone or vice-versa. |
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/contextmenu/default/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/contextmenu/default/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Contextmenu.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/contextmenu/default/contextmenu.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/contextmenu/default/contextmenu.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -46,15 +45,13 @@ The default items are listed in the following table.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/contextmenu/default/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/contextmenu/default/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Contextmenu.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/contextmenu/default/contextmenu.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/contextmenu/default/contextmenu.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/contextmenu.PNG)
 
@@ -70,10 +67,10 @@ The following sample shows context menu item for parent rows to expand or collap
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/contextmenu/custom/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/contextmenu/custom/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Customcontextmenu.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/contextmenu/custom/customcontextmenu.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/contextmenu/custom/customcontextmenu.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -81,15 +78,13 @@ The following sample shows context menu item for parent rows to expand or collap
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/contextmenu/custom/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/contextmenu/custom/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Customcontextmenu.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/contextmenu/custom/customcontextmenu.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/contextmenu/custom/customcontextmenu.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/customContextMenu.PNG)
 

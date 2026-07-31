@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Open add/edit dialog dynamically
 
 Restriction of collapsing the records when clicking on gantt chart rows can be performed by using the [`collapsing`](../../api/gantt/#collapsing) event.
@@ -17,10 +16,10 @@ Restriction of collapsing the records when clicking on gantt chart rows can be p
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/restrictcollapsechartrows/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/how-to/restrictcollapsechartrows/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Restrictcollapsechartrows.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/restrictcollapsechartrows/restrictcollapsechartrows.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/how-to/restrictcollapsechartrows/restrictcollapsechartrows.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -28,12 +27,10 @@ Restriction of collapsing the records when clicking on gantt chart rows can be p
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/restrictcollapsechartrows/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/how-to/restrictcollapsechartrows/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Restrictcollapsechartrows.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/restrictcollapsechartrows/restrictcollapsechartrows.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/how-to/restrictcollapsechartrows/restrictcollapsechartrows.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-

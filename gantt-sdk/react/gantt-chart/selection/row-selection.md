@@ -3,7 +3,7 @@ layout: post
 title: React Gantt Row Selection API Guide | Syncfusion
 description: Explore how to configure and customize row selection in the Syncfusion React Gantt Chart component using API methods and events.
 platform: gantt-sdk
-control: Row selection 
+control: Row selection
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -18,42 +18,41 @@ You can enable single row selection in the Gantt Chart component by setting [sel
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs5/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs5/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs5/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs5/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs5/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/selection-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/selection-cs5" %}
 
 ## Multiple row selection
 
-You can enable multiple row selection in the Gantt Chart component by setting  [selectionSettings.mode](https://ej2.syncfusion.com/react/documentation/api/gantt/selectionSettings#mode) to **Row** and [selectionSettings.type](https://ej2.syncfusion.com/react/documentation/api/gantt/selectionSettings#type) to **Multiple**. This allows selection of more than one task row at a time by holding down the **Ctrl** key while clicking on multiple rows.
+You can enable multiple row selection in the Gantt Chart component by setting [selectionSettings.mode](https://ej2.syncfusion.com/react/documentation/api/gantt/selectionSettings#mode) to **Row** and [selectionSettings.type](https://ej2.syncfusion.com/react/documentation/api/gantt/selectionSettings#type) to **Multiple**. This allows selection of more than one task row at a time by holding down the **Ctrl** key while clicking on multiple rows.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs8/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs8/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs8/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs8/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs8/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/selection-cs8" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/selection-cs8" %}
 
 ## Row selection event sequence
 
 - On initial row selection: `rowSelecting` triggers first, followed by `rowSelected`.
 
 - When selecting a different row:
-
   - [rowSelecting](https://ej2.syncfusion.com/react/documentation/api/gantt#rowselecting) is followed by [rowDeselecting](https://ej2.syncfusion.com/react/documentation/api/gantt#rowdeselecting) and [rowDeselected](https://ej2.syncfusion.com/react/documentation/api/gantt#rowdeselected) to deselect the previously selected row.
 
   - Then, [rowSelected](https://ej2.syncfusion.com/react/documentation/api/gantt#rowselected) triggers for the newly selected row.
@@ -68,17 +67,17 @@ The following example selects the row at index 5 during initial load:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs6/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs6/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs6/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs6/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs6/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/selection-cs6" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/selection-cs6" %}
 
 ## Select rows externally
 
@@ -90,17 +89,17 @@ Select a single row in the Gantt Chart component by calling the [selectRow](http
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs7/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs7/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs7/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs7/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs7/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/selection-cs7" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/selection-cs7" %}
 
 ### Multiple rows selection
 
@@ -108,17 +107,17 @@ Select multiple rows in the Gantt Chart component by using the [selectRows](http
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs8/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs8/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs8/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs8/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs8/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/selection-cs8" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/selection-cs8" %}
 
 ### Range of rows selection
 
@@ -126,17 +125,17 @@ Select a range of rows in the Gantt Chart component by using the [selectRowsByRa
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs20/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs20/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs20/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs20/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs20/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs20/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/selection-cs20" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/selection-cs20" %}
 
 ## Enable multi row selection without Ctrl key
 
@@ -144,17 +143,17 @@ You can enable simple multi-row selection by setting the `enableSimpleMultiRowSe
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs21/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs21/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs21/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs21/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs21/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs21/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/selection-cs21" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/selection-cs21" %}
 
 ## Get selected row information
 
@@ -166,17 +165,17 @@ To access selected row details in the React Gantt Chart component:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs22/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs22/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs22/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs22/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs22/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs22/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/selection-cs22" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/selection-cs22" %}
 
 > **Note:** The Gantt Chart component supports keyboard navigation for row selection. Use arrow keys to move focus and `Enter` or `Space` to select rows. Ensure accessibility compliance by providing appropriate ARIA attributes.
 
@@ -195,14 +194,14 @@ The following sample demonstrates
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs10/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs10/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs10/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs10/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs10/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs10/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/selection-cs10" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/selection-cs10" %}

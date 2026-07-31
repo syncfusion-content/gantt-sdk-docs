@@ -2,7 +2,7 @@
 layout: post
 title: Immutable in Vue Gantt Chart component | Syncfusion
 description: Learn here all about Immutable in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Immutable 
+control: Immutable
 platform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -18,17 +18,18 @@ To enable this feature, you have to set the [enableImmutableMode](https://ej2.sy
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/immutable-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/immutable-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/immutable-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/immutable-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/immutable-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/immutable-cs1" %}
+
 ## Limitations
 
 The following features are not supported in the immutable mode:
 
-* Column reorder
-* Virtualization
+- Column reorder
+- Virtualization

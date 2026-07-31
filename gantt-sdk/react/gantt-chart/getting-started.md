@@ -71,13 +71,58 @@ Define a simple task list with hierarchical relationships. Each task must have a
 
 ```typescript
 const taskData = [
-  { TaskID: 1, TaskName: 'Project initiation', StartDate: new Date('2024-04-01'), EndDate: new Date('2024-04-15') },
-  { TaskID: 2, TaskName: 'Identify site location', StartDate: new Date('2024-04-01'), Duration: 4, Progress: 70, ParentID: 1 },
-  { TaskID: 3, TaskName: 'Perform site survey', StartDate: new Date('2024-04-01'), Duration: 4, Progress: 50, ParentID: 1 },
-  { TaskID: 4, TaskName: 'Soil testing', StartDate: new Date('2024-04-01'), Duration: 3, Progress: 40, ParentID: 1 },
-  { TaskID: 5, TaskName: 'Project estimation', StartDate: new Date('2024-04-15'), EndDate: new Date('2024-04-25') },
-  { TaskID: 6, TaskName: 'Develop floor plan', StartDate: new Date('2024-04-15'), Duration: 5, Progress: 30, ParentID: 5 },
-  { TaskID: 7, TaskName: 'Estimate project cost', StartDate: new Date('2024-04-15'), Duration: 5, Progress: 20, ParentID: 5 }
+  {
+    TaskID: 1,
+    TaskName: "Project initiation",
+    StartDate: new Date("2024-04-01"),
+    EndDate: new Date("2024-04-15"),
+  },
+  {
+    TaskID: 2,
+    TaskName: "Identify site location",
+    StartDate: new Date("2024-04-01"),
+    Duration: 4,
+    Progress: 70,
+    ParentID: 1,
+  },
+  {
+    TaskID: 3,
+    TaskName: "Perform site survey",
+    StartDate: new Date("2024-04-01"),
+    Duration: 4,
+    Progress: 50,
+    ParentID: 1,
+  },
+  {
+    TaskID: 4,
+    TaskName: "Soil testing",
+    StartDate: new Date("2024-04-01"),
+    Duration: 3,
+    Progress: 40,
+    ParentID: 1,
+  },
+  {
+    TaskID: 5,
+    TaskName: "Project estimation",
+    StartDate: new Date("2024-04-15"),
+    EndDate: new Date("2024-04-25"),
+  },
+  {
+    TaskID: 6,
+    TaskName: "Develop floor plan",
+    StartDate: new Date("2024-04-15"),
+    Duration: 5,
+    Progress: 30,
+    ParentID: 5,
+  },
+  {
+    TaskID: 7,
+    TaskName: "Estimate project cost",
+    StartDate: new Date("2024-04-15"),
+    Duration: 5,
+    Progress: 20,
+    ParentID: 5,
+  },
 ];
 ```
 
@@ -87,30 +132,30 @@ Map your data fields to Gantt Chart properties using `taskFields`:
 
 ```typescript
 const taskFields = {
-  id: 'TaskID',
-  name: 'TaskName',
-  startDate: 'StartDate',
-  endDate: 'EndDate',
-  duration: 'Duration',
-  progress: 'Progress',
-  parentID: 'ParentID'
+  id: "TaskID",
+  name: "TaskName",
+  startDate: "StartDate",
+  endDate: "EndDate",
+  duration: "Duration",
+  progress: "Progress",
+  parentID: "ParentID",
 };
 ```
 
 ### Field mapping reference
 
-| Property | Description | Required |
-|----------|-------------|----------|
-| `id` | Unique task identifier | Yes |
-| `name` | Task display name | Yes |
-| `startDate` | Task start date | Yes |
-| `duration` | Task duration in working days (numeric, optional decimal) | No (use `endDate` instead) |
-| `endDate` | Task end date | No (use `duration` instead) |
-| `progress` | Task completion percentage (0–100) | No |
-| `parentID` | Parent task ID for hierarchy | No |
-| `dependency` | Predecessor relationships (e.g., `2FS+1d`) | No |
-| `hasChildMapping` | Indicates whether a row has child rows (load-on-demand) | No |
-| `resourceInfo` | Field name that holds resource data | No |
+| Property          | Description                                               | Required                    |
+| ----------------- | --------------------------------------------------------- | --------------------------- |
+| `id`              | Unique task identifier                                    | Yes                         |
+| `name`            | Task display name                                         | Yes                         |
+| `startDate`       | Task start date                                           | Yes                         |
+| `duration`        | Task duration in working days (numeric, optional decimal) | No (use `endDate` instead)  |
+| `endDate`         | Task end date                                             | No (use `duration` instead) |
+| `progress`        | Task completion percentage (0–100)                        | No                          |
+| `parentID`        | Parent task ID for hierarchy                              | No                          |
+| `dependency`      | Predecessor relationships (e.g., `2FS+1d`)                | No                          |
+| `hasChildMapping` | Indicates whether a row has child rows (load-on-demand)   | No                          |
+| `resourceInfo`    | Field name that holds resource data                       | No                          |
 
 ## Render the Gantt Chart component
 
@@ -174,14 +219,14 @@ You can preview the following sample by clicking the **Preview Sample** button.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/run-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/run-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/run-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/run-cs1/app/index.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/run-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/run-cs1" %}
 
 ## Troubleshooting
 

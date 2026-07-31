@@ -3,7 +3,7 @@ layout: post
 title: State Persistence in React Gantt Chart Component | Syncfusion
 description: Learn here all about State persistence in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: State persistence 
+control: State persistence
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -16,27 +16,27 @@ To enable this, set the [enablePersistence](https://ej2.syncfusion.com/react/doc
 
 ## Restore initial Gantt state
 
-The React Gantt Chart component provides options to reset its state, reverting all interactions and configurations to the original setup.  This is useful for clearing filters, sorting, and column arrangements, even when [enablePersistence](https://ej2.syncfusion.com/react/documentation/api/gantt#enablepersistence) is enabled.
+The React Gantt Chart component provides options to reset its state, reverting all interactions and configurations to the original setup. This is useful for clearing filters, sorting, and column arrangements, even when [enablePersistence](https://ej2.syncfusion.com/react/documentation/api/gantt#enablepersistence) is enabled.
 
 ### Changing component ID
 
-To reset the Gantt to its default state, update the component ID.  This initializes the component as a new instance, restoring its original configuration.
+To reset the Gantt to its default state, update the component ID. This initializes the component as a new instance, restoring its original configuration.
 
 Here is an example code to change the component ID dynamically to restore initial Gantt state.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/state-persistence-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/state-persistence-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/state-persistence-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/state-persistence-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/state-persistence-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/state-persistence-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/state-persistence-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/state-persistence-cs1" %}
 
 ### Clearing local storage
 
@@ -46,17 +46,17 @@ Here is an example code on how to clear local storage to retain its default stat
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/state-persistence-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/state-persistence-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/state-persistence-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/state-persistence-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/state-persistence-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/state-persistence-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/state-persistence-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/state-persistence-cs2" %}
 
 ## Restore to previous state
 
@@ -66,17 +66,17 @@ To implement this functionality, extract the current state using `getPersistData
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/state-persistence-cs3/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/state-persistence-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/state-persistence-cs3/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/state-persistence-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/state-persistence-cs3/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/state-persistence-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/state-persistence-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/state-persistence-cs3" %}
 
 ## Get or set localStorage value
 
@@ -84,22 +84,20 @@ When [enablePersistence](https://ej2.syncfusion.com/react/documentation/api/gant
 
 ```typescript
 //get the Gantt model.
-let value: string = window.localStorage.getItem('ganttGantt'); //"ganttGantt" is component name + component ID.
+let value: string = window.localStorage.getItem("ganttGantt"); //"ganttGantt" is component name + component ID.
 let model: Object = JSON.parse(model);
-
 ```
 
 ```typescript
 //set the Gantt model.
-window.localStorage.setItem('ganttGantt', JSON.stringify(model)); //"ganttGantt" is component name + component ID.
-
+window.localStorage.setItem("ganttGantt", JSON.stringify(model)); //"ganttGantt" is component name + component ID.
 ```
 
 > You can refer to our [React Gantt](https://www.syncfusion.com/react-ui-components/react-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [React Gantt example](https://ej2.syncfusion.com/react/demos/#/tailwind3/gantt/default) to know how to present and manipulate data.
 
 ## Prevent columns from persisting
 
-When [enablePersistence](https://ej2.syncfusion.com/react/documentation/api/gantt#enablepersistence) is set to **true**, Gantt properties such as [Filtering](https://ej2.syncfusion.com/react/documentation/api/gantt#allowfiltering), [Sorting](https://ej2.syncfusion.com/react/documentation/api/gantt#allowsorting), and [Columns](https://ej2.syncfusion.com/react/documentation/api/gantt#columns) are automatically saved.  
+When [enablePersistence](https://ej2.syncfusion.com/react/documentation/api/gantt#enablepersistence) is set to **true**, Gantt properties such as [Filtering](https://ej2.syncfusion.com/react/documentation/api/gantt#allowfiltering), [Sorting](https://ej2.syncfusion.com/react/documentation/api/gantt#allowsorting), and [Columns](https://ej2.syncfusion.com/react/documentation/api/gantt#columns) are automatically saved.
 
 To prevent specific properties from being persisted, use the `addOnPersist` method.
 
@@ -109,17 +107,17 @@ The example below shows how to prevent Gantt columns from being persisted. In th
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/column-prevent-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/column-prevent-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/column-prevent-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/column-prevent-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/column-prevent-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/column-prevent-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/column-prevent-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/column-prevent-cs1" %}
 
 ## Add to persist
 
@@ -131,17 +129,17 @@ When [enablePersistence](https://ej2.syncfusion.com/react/documentation/api/gant
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/state-persistence-cs3/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/state-persistence-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/state-persistence-cs3/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/state-persistence-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/state-persistence-cs3/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/state-persistence-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/state-persistence-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/state-persistence-cs3" %}
 
 ### Persist the header template and header Text
 
@@ -151,14 +149,14 @@ To persist these settings, clone the [Columns](https://ej2.syncfusion.com/react/
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/column-persist-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/column-persist-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/column-persist-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/column-persist-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/column-persist-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/column-persist-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/column-persist-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/column-persist-cs1" %}

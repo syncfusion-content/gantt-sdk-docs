@@ -27,13 +27,13 @@ GraphQL uses a single endpoint and allows clients to request specific fields, wh
 
 Install the following software and packages before starting the process:
 
-| Software/Package | Version | Purpose |
-|-----------------|---------|---------|
-| Visual Studio 2026 | 18.0 or later | Development IDE with Blazor workload |
-| .NET SDK | net10.0 or compatible | Runtime and build tools |
-| HotChocolate.AspNetCore | 15.1 or later | GraphQL server framework |
-| Syncfusion.Blazor.Gantt | {{site.blazorversion}} | Gantt Chart component |
-| Syncfusion.Blazor.Themes | {{site.blazorversion}} | Styling for Gantt Chart |
+| Software/Package         | Version                | Purpose                              |
+| ------------------------ | ---------------------- | ------------------------------------ |
+| Visual Studio 2026       | 18.0 or later          | Development IDE with Blazor workload |
+| .NET SDK                 | net10.0 or compatible  | Runtime and build tools              |
+| HotChocolate.AspNetCore  | 15.1 or later          | GraphQL server framework             |
+| Syncfusion.Blazor.Gantt  | {{site.blazorversion}} | Gantt Chart component                |
+| Syncfusion.Blazor.Themes | {{site.blazorversion}} | Styling for Gantt Chart              |
 
 ## Setting Up the GraphQL Backend
 
@@ -238,15 +238,15 @@ namespace Gantt_GraphQLAdaptor.Models
 
 The following table shows how C# properties map to GraphQL field names and Gantt task fields:
 
-| Property Name (C#) | GraphQL Field Name | Gantt Task Field | Data Type | Purpose |
-|---|---|---|---|---|
-| `TaskId` | `taskId` | `Id` | `int` | Unique identifier for the task (primary key) |
-| `TaskName` | `taskName` | `Name` | `string` | Display name of the task |
-| `StartDate` | `startDate` | `StartDate` | `DateTime?` | Scheduled start date of the task |
-| `EndDate` | `endDate` | `EndDate` | `DateTime?` | Scheduled end date of the task |
-| `Duration` | `duration` | `Duration` | `int?` | Duration in days |
-| `Progress` | `progress` | `Progress` | `int` | Completion percentage of the task |
-| `ParentId` | `parentId` | `ParentID` | `int?` | Identifier of the parent task (builds hierarchy) |
+| Property Name (C#) | GraphQL Field Name | Gantt Task Field | Data Type   | Purpose                                          |
+| ------------------ | ------------------ | ---------------- | ----------- | ------------------------------------------------ |
+| `TaskId`           | `taskId`           | `Id`             | `int`       | Unique identifier for the task (primary key)     |
+| `TaskName`         | `taskName`         | `Name`           | `string`    | Display name of the task                         |
+| `StartDate`        | `startDate`        | `StartDate`      | `DateTime?` | Scheduled start date of the task                 |
+| `EndDate`          | `endDate`          | `EndDate`        | `DateTime?` | Scheduled end date of the task                   |
+| `Duration`         | `duration`         | `Duration`       | `int?`      | Duration in days                                 |
+| `Progress`         | `progress`         | `Progress`       | `int`       | Completion percentage of the task                |
+| `ParentId`         | `parentId`         | `ParentID`       | `int?`      | Identifier of the parent task (builds hierarchy) |
 
 **Important Convention: Camel Case Conversion**
 
@@ -571,14 +571,14 @@ public class WhereFilter
 
 **DataManagerRequestInput Properties Used by the Gantt Chart:**
 
-| Property | Purpose | Type | Example |
-|----------|---------|------|---------|
-| `Take` | Number of records to retrieve per page | `int` | `20` (fetch next 20 records) |
-| `RequiresCounts` | Whether the total record count should be returned | `bool` | `true` |
-| `Search` | Search filter configuration | `List<SearchFilter>` | Search term and target fields |
-| `Where` | Filter conditions for column filtering | `List<WhereFilter>` | Field name, operator, and value |
-| `Sorted` | Sort specifications for ordering records | `List<Sort>` | Field name and direction (asc/desc) |
-| `Group` | Grouping configuration | `List<string>` | Field names to group by |
+| Property         | Purpose                                           | Type                 | Example                             |
+| ---------------- | ------------------------------------------------- | -------------------- | ----------------------------------- |
+| `Take`           | Number of records to retrieve per page            | `int`                | `20` (fetch next 20 records)        |
+| `RequiresCounts` | Whether the total record count should be returned | `bool`               | `true`                              |
+| `Search`         | Search filter configuration                       | `List<SearchFilter>` | Search term and target fields       |
+| `Where`          | Filter conditions for column filtering            | `List<WhereFilter>`  | Field name, operator, and value     |
+| `Sorted`         | Sort specifications for ordering records          | `List<Sort>`         | Field name and direction (asc/desc) |
+| `Group`          | Grouping configuration                            | `List<string>`       | Field names to group by             |
 
 **Key Attributes Explained**
 
@@ -594,6 +594,7 @@ A **GraphQL mutation resolver** is a method in the backend that handles write re
 In simple terms, a **GraphQL mutation** asks for a change, and a **resolver** is the one who makes it.
 
 **Instructions:**
+
 1. Inside the **Models** folder, create a new file named **GraphQLMutation.cs**.
 2. Define the **GraphQLMutation** class with the following code:
 
@@ -729,8 +730,8 @@ Syncfusion is a library that provides pre-built UI components like the Gantt Cha
 
 **Instructions:**
 
-* The **Syncfusion.Blazor.Gantt** package was installed in **Step 1** of the previous heading.
-* Import the required namespaces in the `Components/_Imports.razor` file:
+- The **Syncfusion.Blazor.Gantt** package was installed in **Step 1** of the previous heading.
+- Import the required namespaces in the `Components/_Imports.razor` file:
 
 ```csharp
 @using Syncfusion.Blazor
@@ -739,19 +740,22 @@ Syncfusion is a library that provides pre-built UI components like the Gantt Cha
 @using Gantt_GraphQLAdaptor.Models
 ```
 
-* Add the stylesheet and scripts in the `Components/App.razor` file. Find the `<head>` section and add:
+- Add the stylesheet and scripts in the `Components/App.razor` file. Find the `<head>` section and add:
 
 ```html
 <!-- Blazor Stylesheet -->
 <link href="_content/Syncfusion.Blazor.Themes/tailwind3.css" rel="stylesheet" />
 
 <!-- Blazor Scripts -->
-<script src="_content/Syncfusion.Blazor.Core/scripts/syncfusion-blazor.min.js" type="text/javascript"></script>
+<script
+  src="_content/Syncfusion.Blazor.Core/scripts/syncfusion-blazor.min.js"
+  type="text/javascript"
+></script>
 ```
 
 For this project, the tailwind3 theme is used. A different theme can be selected or the existing theme can be customized based on project requirements. Refer to the [Blazor Components Appearance](https://blazor.syncfusion.com/documentation/appearance/themes) documentation to learn more about theming and customization options.
 
-Blazor components are now configured and ready to use. For additional guidance, refer to the Gantt Chart component's [getting-started](https://blazor.syncfusion.com/documentation/gantt-chart/getting-started-with-web-app) documentation.
+Blazor components are now configured and ready to use. For additional guidance, refer to the Gantt Chart component's [getting-started](https://blazor.syncfusion.com/documentation/gantt/getting-started-with-web-app) documentation.
 
 ---
 
@@ -839,11 +843,11 @@ The `SfDataManager` component connects the Gantt Chart to the GraphQL backend us
 
 **Component Attributes Explained:**
 
-| Attribute | Purpose | Value |
-|-----------|---------|-------|
-| `Url` | GraphQL endpoint location | `http://localhost:5020/graphql` (must match backend port) |
-| `GraphQLAdaptorOptions` | References the adaptor configuration object | `@adaptorOptions` (defined in next step) |
-| `Adaptor` | Specifies adaptor type to use | `Adaptors.GraphQLAdaptor` (tells Syncfusion to use the GraphQL adaptor) |
+| Attribute               | Purpose                                     | Value                                                                   |
+| ----------------------- | ------------------------------------------- | ----------------------------------------------------------------------- |
+| `Url`                   | GraphQL endpoint location                   | `http://localhost:5020/graphql` (must match backend port)               |
+| `GraphQLAdaptorOptions` | References the adaptor configuration object | `@adaptorOptions` (defined in next step)                                |
+| `Adaptor`               | Specifies adaptor type to use               | `Adaptors.GraphQLAdaptor` (tells Syncfusion to use the GraphQL adaptor) |
 
 **Important Notes:**
 
@@ -932,15 +936,14 @@ The `@code` block in `Home.razor` contains C# code that configures how the adapt
 }
 ```
 
-
 **EditMode Options**
 
 The `Mode` property of `<GanttEditSettings>` accepts the following `EditMode` enum values, which determine how tasks can be edited in the Gantt Chart:
 
-| Value | Description |
-|-------|-------------|
-| `Auto` | Automatically selects the appropriate editing mode based on the action (cell click for inline editing, toolbar **Add**/**Edit** for dialog editing, or row double-click for row editing). Recommended for most scenarios. |
-| `Dialog` | Opens a modal dialog window for editing. The dialog is used for both **Add** (toolbar) and **Edit** (toolbar or row double-click) actions. |
+| Value    | Description                                                                                                                                                                                                               |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Auto`   | Automatically selects the appropriate editing mode based on the action (cell click for inline editing, toolbar **Add**/**Edit** for dialog editing, or row double-click for row editing). Recommended for most scenarios. |
+| `Dialog` | Opens a modal dialog window for editing. The dialog is used for both **Add** (toolbar) and **Edit** (toolbar or row double-click) actions.                                                                                |
 
 Use `EditMode.Auto` when the workflow mixes quick inline edits and full-form edits; use `EditMode.Dialog` when the dataset is complex and benefits from a focused editing experience.
 
@@ -997,7 +1000,7 @@ When the backend executes the query, it returns a **JSON response** in this stru
           "endDate": "2025-01-17T00:00:00",
           "duration": 10,
           "progress": 100,
-          "parentId": null,
+          "parentId": null
         },
         {
           "taskId": 2,
@@ -1006,7 +1009,7 @@ When the backend executes the query, it returns a **JSON response** in this stru
           "endDate": "2025-01-10T00:00:00",
           "duration": 5,
           "progress": 100,
-          "parentId": 1,
+          "parentId": 1
         }
       ]
     }
@@ -1016,13 +1019,13 @@ When the backend executes the query, it returns a **JSON response** in this stru
 
 **Response Structure Explanation:**
 
-| Part | Purpose | Example |
-|------|---------|---------|
-| `data` | Root object containing the query result | Always present in a successful response |
-| `taskData` | Matches the query name (camelCase) | Contains `count` and `result` |
-| `count` | Total number of records available | `22` (in this example) |
-| `result` | Array of `TaskData` objects | `[ {...}, {...} ]` |
-| Each field in `result` | Matches GraphQL query field names | Field values from the data source |
+| Part                   | Purpose                                 | Example                                 |
+| ---------------------- | --------------------------------------- | --------------------------------------- |
+| `data`                 | Root object containing the query result | Always present in a successful response |
+| `taskData`             | Matches the query name (camelCase)      | Contains `count` and `result`           |
+| `count`                | Total number of records available       | `22` (in this example)                  |
+| `result`               | Array of `TaskData` objects             | `[ {...}, {...} ]`                      |
+| Each field in `result` | Matches GraphQL query field names       | Field values from the data source       |
 
 ---
 
@@ -1096,7 +1099,7 @@ When a column header is selected for sorting, the Gantt Chart sends a `Sorted` a
   "dataManager": {
     "Sorted": [
       { "Name": "StartDate", "Direction": "Ascending" },
-      { "Name": "Progress",  "Direction": "Descending" }
+      { "Name": "Progress", "Direction": "Descending" }
     ],
     "Skip": 0,
     "Take": 20,
@@ -1111,17 +1114,17 @@ Filtering is handled by the `Where` array. The backend resolver supports the sta
 
 **Supported Filter Operators:**
 
-| Operator | Purpose | Example |
-|----------|---------|---------|
-| `equal` | Exact match | `Progress equals "High"` |
-| `notequal` | Not equal to value | `Progress notEqual "Completed"` |
-| `contains` | Contains substring (case-insensitive) | `TaskName contains "design"` |
-| `startswith` | Starts with value | `TaskName startsWith "Alice"` |
-| `endswith` | Ends with value | `TaskName endsWith "Progress"` |
-| `greaterthan` | Greater than numeric value | `Progress > 50` |
-| `lessthan` | Less than numeric value | `Duration < 10` |
-| `greaterthanorequal` | Greater than or equal | `Progress >= 75` |
-| `lessthanorequal` | Less than or equal | `Duration <= 5` |
+| Operator             | Purpose                               | Example                         |
+| -------------------- | ------------------------------------- | ------------------------------- |
+| `equal`              | Exact match                           | `Progress equals "High"`        |
+| `notequal`           | Not equal to value                    | `Progress notEqual "Completed"` |
+| `contains`           | Contains substring (case-insensitive) | `TaskName contains "design"`    |
+| `startswith`         | Starts with value                     | `TaskName startsWith "Alice"`   |
+| `endswith`           | Ends with value                       | `TaskName endsWith "Progress"`  |
+| `greaterthan`        | Greater than numeric value            | `Progress > 50`                 |
+| `lessthan`           | Less than numeric value               | `Duration < 10`                 |
+| `greaterthanorequal` | Greater than or equal                 | `Progress >= 75`                |
+| `lessthanorequal`    | Less than or equal                    | `Duration <= 5`                 |
 
 **Variables Sent with the Request:**
 
@@ -1135,7 +1138,7 @@ Filtering is handled by the `Where` array. The backend resolver supports the sta
           {
             "Operator": "or",
             "Predicates": [
-              { "Field": "TaskId", "Value": "High",     "Operator": "equal" },
+              { "Field": "TaskId", "Value": "High", "Operator": "equal" },
               { "Field": "TaskName", "Value": "Critical", "Operator": "equal" }
             ]
           }
@@ -1154,7 +1157,6 @@ Filtering is handled by the `Where` array. The backend resolver supports the sta
 - Top-level predicates are combined with **AND** logic.
 - Nested predicates within a field are combined with **OR** logic.
 - This allows expressions like: `(Progress = "100" OR "50")`.
-
 
 **Backend Processing Order:**
 
@@ -1195,7 +1197,7 @@ mutation create($record: TaskDataInput!, $index: Int!, $action: String!, $additi
     "endDate": "2025-03-12T00:00:00Z",
     "duration": 3,
     "progress": 0,
-    "parentId": 9,
+    "parentId": 9
   },
   "index": -1,
   "action": "add",
@@ -1205,21 +1207,21 @@ mutation create($record: TaskDataInput!, $index: Int!, $action: String!, $additi
 
 **Parameter Explanation:**
 
-| Parameter | Type | Purpose | Example |
-|-----------|------|---------|---------|
-| `record` | `TaskData` | The new task record object with all field values | Task data filled in the dialog |
-| `index` | `int` | The position where the new task should be inserted (`-1` or count+1 means append) | `-1` for append |
-| `action` | `string` | Type of action being performed (usually `"add"` for insert) | `"add"` |
-| `additionalParameters` | `Any` | Extra context or custom parameters from the Gantt Chart | Empty object `{}` |
+| Parameter              | Type       | Purpose                                                                           | Example                        |
+| ---------------------- | ---------- | --------------------------------------------------------------------------------- | ------------------------------ |
+| `record`               | `TaskData` | The new task record object with all field values                                  | Task data filled in the dialog |
+| `index`                | `int`      | The position where the new task should be inserted (`-1` or count+1 means append) | `-1` for append                |
+| `action`               | `string`   | Type of action being performed (usually `"add"` for insert)                       | `"add"`                        |
+| `additionalParameters` | `Any`      | Extra context or custom parameters from the Gantt Chart                           | Empty object `{}`              |
 
 **Insert Operation Logic Breakdown:**
 
-| Step | Purpose | Implementation |
-|------|---------|----------------|
-| **1. Receive Input** | Backend receives new task data from the client | `CreateTask` method parameter `record` contains all field values |
-| **2. Generate ID** | Auto-generate a unique `TaskId` when zero | `tasks.Max(t => t.TaskId) + 1` |
-| **3. Insert Record** | Insert at the requested index, or append if out of range | `tasks.Insert(index, record)` or `tasks.Add(record)` |
-| **4. Return Created** | Send back the created record with the generated `TaskId` | Return the `record` object |
+| Step                  | Purpose                                                  | Implementation                                                   |
+| --------------------- | -------------------------------------------------------- | ---------------------------------------------------------------- |
+| **1. Receive Input**  | Backend receives new task data from the client           | `CreateTask` method parameter `record` contains all field values |
+| **2. Generate ID**    | Auto-generate a unique `TaskId` when zero                | `tasks.Max(t => t.TaskId) + 1`                                   |
+| **3. Insert Record**  | Insert at the requested index, or append if out of range | `tasks.Insert(index, record)` or `tasks.Add(record)`             |
+| **4. Return Created** | Send back the created record with the generated `TaskId` | Return the `record` object                                       |
 
 ---
 
@@ -1259,23 +1261,23 @@ mutation update($record: TaskDataInput!, $action: String!, $primaryColumnName: S
 
 **Parameter Explanation:**
 
-| Parameter | Type | Purpose | Example |
-|-----------|------|---------|---------|
-| `record` | `TaskData` | The modified task record with updated field values | Task data after edit or taskbar drag |
-| `action` | `string` | Type of action being performed (usually `"save"` for update) | `"save"` |
-| `primaryColumnName` | `string` | Name of the primary key column used to identify the record | `"TaskId"` |
-| `primaryColumnValue` | `string` | Value of the primary key used to locate the task | `"10"` |
-| `additionalParameters` | `Any` | Extra context or custom parameters from the Gantt Chart | Empty object `{}` |
+| Parameter              | Type       | Purpose                                                      | Example                              |
+| ---------------------- | ---------- | ------------------------------------------------------------ | ------------------------------------ |
+| `record`               | `TaskData` | The modified task record with updated field values           | Task data after edit or taskbar drag |
+| `action`               | `string`   | Type of action being performed (usually `"save"` for update) | `"save"`                             |
+| `primaryColumnName`    | `string`   | Name of the primary key column used to identify the record   | `"TaskId"`                           |
+| `primaryColumnValue`   | `string`   | Value of the primary key used to locate the task             | `"10"`                               |
+| `additionalParameters` | `Any`      | Extra context or custom parameters from the Gantt Chart      | Empty object `{}`                    |
 
 **Update Operation Logic Breakdown:**
 
-| Step | Purpose | Implementation |
-|------|---------|----------------|
-| **1. Find Record** | Locate the existing task using the primary key value | `FirstOrDefault(t => t.TaskId.ToString() == primaryColumnValue)` |
-| **2. Validate Existence** | Ensure the record exists before updating | `if (existing != null)` check |
-| **3. Update Properties** | Replace all property values with modified data | `UpdateProperties(existing, record)` |
-| **4. Preserve ID** | Keep the original `TaskId` unchanged | `TaskId` is not updated, only used for lookup |
-| **5. Return Updated** | Send back the modified record with new values | Return the `existing` object |
+| Step                      | Purpose                                              | Implementation                                                   |
+| ------------------------- | ---------------------------------------------------- | ---------------------------------------------------------------- |
+| **1. Find Record**        | Locate the existing task using the primary key value | `FirstOrDefault(t => t.TaskId.ToString() == primaryColumnValue)` |
+| **2. Validate Existence** | Ensure the record exists before updating             | `if (existing != null)` check                                    |
+| **3. Update Properties**  | Replace all property values with modified data       | `UpdateProperties(existing, record)`                             |
+| **4. Preserve ID**        | Keep the original `TaskId` unchanged                 | `TaskId` is not updated, only used for lookup                    |
+| **5. Return Updated**     | Send back the modified record with new values        | Return the `existing` object                                     |
 
 **Taskbar Editing Note:** While dragging or resizing a taskbar, the Gantt Chart calls `updateTask` with the new `StartDate`, `EndDate`, and `Duration`. The same `UpdateTask` mutation handles both dialog edits and timeline edits, so no extra wiring is required.
 
@@ -1304,10 +1306,10 @@ mutation delete($primaryColumnValue: String!, $additionalParameters: Any) {
 
 **Parameter Explanation:**
 
-| Parameter | Type | Purpose | Example |
-|-----------|------|---------|---------|
-| `primaryColumnValue` | `string` | Value of the primary key identifying which task to delete | `"10"` |
-| `additionalParameters` | `Any` | Extra context or custom parameters from the Gantt Chart | Empty object `{}` |
+| Parameter              | Type     | Purpose                                                   | Example           |
+| ---------------------- | -------- | --------------------------------------------------------- | ----------------- |
+| `primaryColumnValue`   | `string` | Value of the primary key identifying which task to delete | `"10"`            |
+| `additionalParameters` | `Any`    | Extra context or custom parameters from the Gantt Chart   | Empty object `{}` |
 
 **Backend Response:**
 
@@ -1363,9 +1365,7 @@ mutation batch($changed: [TaskDataInput!], $added: [TaskDataInput!], $deleted: [
       "parentId": 9
     }
   ],
-  "deleted": [
-    { "taskId": 22 }
-  ],
+  "deleted": [{ "taskId": 22 }],
   "action": "batch",
   "primaryColumnName": "TaskId",
   "additionalParameters": {},
@@ -1375,15 +1375,15 @@ mutation batch($changed: [TaskDataInput!], $added: [TaskDataInput!], $deleted: [
 
 **Parameter Explanation:**
 
-| Parameter | Type | Purpose | Example |
-|-----------|------|---------|---------|
-| `changed` | `[TaskData]` | Records to update | Modified rows with existing `TaskId` |
-| `added` | `[TaskData]` | Records to insert | New rows, `TaskId` optional |
-| `deleted` | `[TaskData]` | Records to delete | Objects with `TaskId` only |
-| `action` | `string` | Batch action indicator | `"batch"` |
-| `primaryColumnName` | `string` | Name of primary key column | `"TaskId"` |
-| `additionalParameters` | `Any` | Extra context from the chart | `{}` |
-| `dropIndex` | `Int` | Target index for insertion or reorder | `0` |
+| Parameter              | Type         | Purpose                               | Example                              |
+| ---------------------- | ------------ | ------------------------------------- | ------------------------------------ |
+| `changed`              | `[TaskData]` | Records to update                     | Modified rows with existing `TaskId` |
+| `added`                | `[TaskData]` | Records to insert                     | New rows, `TaskId` optional          |
+| `deleted`              | `[TaskData]` | Records to delete                     | Objects with `TaskId` only           |
+| `action`               | `string`     | Batch action indicator                | `"batch"`                            |
+| `primaryColumnName`    | `string`     | Name of primary key column            | `"TaskId"`                           |
+| `additionalParameters` | `Any`        | Extra context from the chart          | `{}`                                 |
+| `dropIndex`            | `Int`        | Target index for insertion or reorder | `0`                                  |
 
 ---
 

@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Timeline in ASP.NET Core Gantt Component
 
 In the Gantt control, timeline is used to represent the project duration as individual cells with defined unit and formats.
@@ -17,10 +16,10 @@ In the Gantt control, timeline is used to represent the project duration as indi
 
 Gantt contains the following in-built timeline view modes:
 
-* Hour
-* Week
-* Month
-* Year
+- Hour
+- Week
+- Month
+- Year
 
 Timescale mode in Gantt can be defined by using [`TimelineViewMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.TimelineViewMode.html) property and also we can define timescale mode of top tier and bottom tier by using [`TopTier.Unit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTimelineTierSettings.html#Syncfusion_EJ2_Gantt_GanttTimelineTierSettings_Unit) and [`BottomTier.Unit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTimelineTierSettings.html#Syncfusion_EJ2_Gantt_GanttTimelineTierSettings_Unit) properties.
 
@@ -32,10 +31,10 @@ In the `Week` timeline mode, the upper part of the schedule header displays the 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/weekMode/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/weekMode/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="WeekMode.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/weekMode/weekMode.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/weekMode/weekMode.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -43,15 +42,13 @@ In the `Week` timeline mode, the upper part of the schedule header displays the 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/weekMode/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/weekMode/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="WeekMode.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/weekMode/weekMode.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/weekMode/weekMode.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](../images/weekMode.png)
 
@@ -63,10 +60,10 @@ In the `Month` timeline mode, the upper part of the schedule header displays the
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/monthMode/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/monthMode/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="MonthMode.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/monthMode/monthMode.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/monthMode/monthMode.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -74,15 +71,13 @@ In the `Month` timeline mode, the upper part of the schedule header displays the
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/monthMode/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/monthMode/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="MonthMode.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/monthMode/monthMode.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/monthMode/monthMode.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](../images/monthMode.png)
 
@@ -94,10 +89,10 @@ In the `Year` timeline mode, the upper schedule header displays the years wherea
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/yearMode/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/yearMode/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="YearMode.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/yearMode/yearMode.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/yearMode/yearMode.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -105,15 +100,13 @@ In the `Year` timeline mode, the upper schedule header displays the years wherea
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/yearMode/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/yearMode/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="YearMode.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/yearMode/yearMode.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/yearMode/yearMode.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](../images/yearMode.png)
 
@@ -125,10 +118,10 @@ In the `Day` timeline mode, the upper part of the header displays the days where
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/dayMode/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/dayMode/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DayMode.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/dayMode/dayMode.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/dayMode/dayMode.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -136,15 +129,13 @@ In the `Day` timeline mode, the upper part of the header displays the days where
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/dayMode/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/dayMode/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DayMode.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/dayMode/dayMode.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/dayMode/dayMode.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](../images/dayMode.png)
 
@@ -156,10 +147,10 @@ An `Hour` timeline mode tracks the tasks in minutes scale. In this mode, the upp
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/hourMode/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/hourMode/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HourMode.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/hourMode/hourMode.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/hourMode/hourMode.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -167,15 +158,13 @@ An `Hour` timeline mode tracks the tasks in minutes scale. In this mode, the upp
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/hourMode/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/hourMode/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HourMode.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/hourMode/hourMode.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/hourMode/hourMode.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](../images/hourMode.png)
 
@@ -187,10 +176,10 @@ The Gantt Chart control supports rendering a fixed timeline range using the `vie
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/viewDate/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/viewDate/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="viewDate.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/viewDate/viewDate.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/viewDate/viewDate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -198,10 +187,10 @@ The Gantt Chart control supports rendering a fixed timeline range using the `vie
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/viewDate/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/viewDate/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="viewDate.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/viewDate/viewDate.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/viewDate/viewDate.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -210,13 +199,13 @@ The Gantt Chart control supports rendering a fixed timeline range using the `vie
 
 When `viewStartDate` and `viewEndDate` are set to concrete Date values, the timeline rendering is restricted to the inclusive range [viewStartDate, viewEndDate].
 
-* When `viewStartDate` is set to **auto**:
-  * If `projectStartDate` is defined, the timeline begins at `projectStartDate`.
-  * If `projectStartDate` is not defined, the earliest task start date is used as the beginning of the visible range.
+- When `viewStartDate` is set to **auto**:
+  - If `projectStartDate` is defined, the timeline begins at `projectStartDate`.
+  - If `projectStartDate` is not defined, the earliest task start date is used as the beginning of the visible range.
 
-* When `viewEndDate` is set to **auto**: 
-  * If `projectEndDate` is defined, the timeline ends at `projectEndDate`.
-  * If `projectEndDate` is not defined, the maximum task end date is used. If this end date leaves visible white‑space in the timeline area, the end date is automatically extended to fill the chart width.
+- When `viewEndDate` is set to **auto**:
+  - If `projectEndDate` is defined, the timeline ends at `projectEndDate`.
+  - If `projectEndDate` is not defined, the maximum task end date is used. If this end date leaves visible white‑space in the timeline area, the end date is automatically extended to fill the chart width.
 
 > Note: The `ZoomToFit` feature uses `projectStartDate` and `projectEndDate` to fit the entire project within the available timeline viewport.
 
@@ -228,10 +217,10 @@ In the Gantt control, you can enable or disable the mouse hover tooltip of timel
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/timelinecellTooltip/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/timelinecellTooltip/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="TimelinecellTooltip.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/timelinecellTooltip/timelinecellTooltip.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/timelinecellTooltip/timelinecellTooltip.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -239,15 +228,13 @@ In the Gantt control, you can enable or disable the mouse hover tooltip of timel
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/timelinecellTooltip/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/timelinecellTooltip/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="TimelinecellTooltip.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/timelinecellTooltip/timelinecellTooltip.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/timelinecellTooltip/timelinecellTooltip.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](../images/timelinecellTooltip.png)
 
@@ -255,16 +242,16 @@ In the Gantt control, you can enable or disable the mouse hover tooltip of timel
 
 The [timelineSettings.showWeekend](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTimelineSettings.html#Syncfusion_EJ2_Gantt_GanttTimelineSettings_ShowWeekend) property is used to customize the timeline in the Gantt component by controlling the visibility of weekends. To exclude weekends from the timeline, set the `showWeekend` property to `false` in the `timelineSettings` configuration. This feature is particularly useful for focusing the timeline on working days, enhancing project management efficiency by hiding weekends from the view.
 
->Note: To customize non-working or weekend days in the Gantt chart, refer to the [workWeek](https://ej2.syncfusion.com/aspnetcore/documentation/gantt/task-scheduling#weekendnon-working-days) documentation for detailed information.
+> Note: To customize non-working or weekend days in the Gantt chart, refer to the [workWeek](https://ej2.syncfusion.com/aspnetcore/documentation/gantt/task-scheduling#weekendnon-working-days) documentation for detailed information.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/showWeekend/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/showWeekend/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="showWeekend.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/showWeekend/showWeekend.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/showWeekend/showWeekend.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -272,19 +259,20 @@ The [timelineSettings.showWeekend](https://help.syncfusion.com/cr/aspnetcore-js2
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/showWeekend/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/showWeekend/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="showWeekend.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/showWeekend/showWeekend.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/showWeekend/showWeekend.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
 > Limitations
->* The `showWeekend` feature does not support baselines.
->* The `showWeekend` is not compatible with the manual task mode.
->* Non-working hours cannot be excluded when `showWeekend` is set to false.
->* Holidays are not excluded from the timeline if `showWeekend` is set to false.
+>
+> - The `showWeekend` feature does not support baselines.
+> - The `showWeekend` is not compatible with the manual task mode.
+> - Non-working hours cannot be excluded when `showWeekend` is set to false.
+> - Holidays are not excluded from the timeline if `showWeekend` is set to false.
 
 ## Timeline template
 
@@ -292,9 +280,9 @@ In the Gantt component, you can customize timeline cells using the [timelineTemp
 
 When designing the timeline cells, you can utilize the following context properties within the template:
 
-* `date`: Defines the date of the timeline cells.
-* `value`: Defines the formatted date value that will be displayed in the timeline cells.
-* `tier`: Defines whether the cell is part of the top or bottom tier.
+- `date`: Defines the date of the timeline cells.
+- `value`: Defines the formatted date value that will be displayed in the timeline cells.
+- `tier`: Defines whether the cell is part of the top or bottom tier.
 
 The following code example how to customize the top tier to display the week's weather details and the bottom tier to highlight working and non-working days, with formatted text for holidays.
 
@@ -302,10 +290,10 @@ The following code example how to customize the top tier to display the week's w
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/timelineTemplate/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/timelineTemplate/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="timelineTemplate.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/timelineTemplate/timelineTemplate.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/timelineTemplate/timelineTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -313,10 +301,10 @@ The following code example how to customize the top tier to display the week's w
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/timelineTemplate/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/timelineTemplate/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="timelineTemplate.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/timelineTemplate/timelineTemplate.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/timelineTemplate/timelineTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -337,10 +325,10 @@ This feature enables exploration of long project schedules without manually upda
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/infiniteScroll/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/infiniteScroll/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="timelineTemplate.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/infiniteScroll/infiniteScroll.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/infiniteScroll/infiniteScroll.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -348,10 +336,10 @@ This feature enables exploration of long project schedules without manually upda
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/infiniteScroll/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/infiniteScroll/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="timelineTemplate.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timeline/infiniteScroll/infiniteScroll.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timeline/infiniteScroll/infiniteScroll.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

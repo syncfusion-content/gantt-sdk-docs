@@ -56,19 +56,19 @@ For advanced scenarios, you can create custom label templates that provide compl
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/appearance-customization/tasklabeltemplate-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/appearance-customization/tasklabeltemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/appearance-customization/tasklabeltemplate-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/appearance-customization/tasklabeltemplate-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/appearance-customization/tasklabeltemplate-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/appearance-customization/tasklabeltemplate-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/appearance-customization/tasklabeltemplate-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/appearance-customization/tasklabeltemplate-cs1" %}
 
 This code creates a left label with priority-based icons (e.g., red for high priority) and a right label with a progress bar, improving visual feedback. For responsive designs, ensure templates adapt to narrow screens, as task labels may be clipped on short taskbars.
 

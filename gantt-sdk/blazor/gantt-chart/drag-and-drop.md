@@ -9,7 +9,7 @@ documentation: ug
 
 # Row drag and drop in Blazor Gantt Chart component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component includes built-in support for row drag and drop, enabling rows to be rearranged within the Gantt chart or dropped into custom components. 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component includes built-in support for row drag and drop, enabling rows to be rearranged within the Gantt chart or dropped into custom components.
 
 To enable this feature, set the [AllowRowDragAndDrop](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowRowDragAndDrop) property to **true**.
 
@@ -24,7 +24,7 @@ To enable this feature, set the [AllowRowDragAndDrop](https://help.syncfusion.co
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
+public List<TaskData>? TaskCollection { get; set; }
 
     protected override void OnInitialized()
     {
@@ -56,6 +56,7 @@ To enable this feature, set the [AllowRowDragAndDrop](https://help.syncfusion.co
             new TaskData() { TaskId = 8, TaskName = "Estimation approval", StartDate = new DateTime(2026, 04, 07), Duration = "0", Progress = 30, ParentId = 5 }
         };
     }
+
 }
 
 {% endhighlight %}
@@ -72,13 +73,13 @@ You can drag and drop multiple rows simultaneously in the Gantt Chart component.
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="900px" TreeColumnIndex="1" AllowRowDragAndDrop="true">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttSelectionSettings Type="Syncfusion.Blazor.Grids.SelectionType.Multiple"></GanttSelectionSettings>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
+</GanttTaskFields>
+<GanttSelectionSettings Type="Syncfusion.Blazor.Grids.SelectionType.Multiple"></GanttSelectionSettings>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
+public List<TaskData>? TaskCollection { get; set; }
 
     protected override void OnInitialized()
     {
@@ -112,6 +113,7 @@ You can drag and drop multiple rows simultaneously in the Gantt Chart component.
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -121,10 +123,10 @@ You can drag and drop multiple rows simultaneously in the Gantt Chart component.
 
 ## Perform row drag and drop action programmatically
 
-To rearrange rows programmatically in the Gantt Chart component, use the [ReorderRowAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ReorderRowAsync_System_Int32_System_Int32_System_String_) method. This method accepts the following parameters: 
+To rearrange rows programmatically in the Gantt Chart component, use the [ReorderRowAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ReorderRowAsync_System_Int32_System_Int32_System_String_) method. This method accepts the following parameters:
 
-- **FromIndexes**: Indexes of the rows to be dragged.  
-- **ToIndex**: Target index for placement.  
+- **FromIndexes**: Indexes of the rows to be dragged.
+- **ToIndex**: Target index for placement.
 - **Position**: Drop positions such as above, below, or child.
 
 In the example below, the row at index 2 is moved below the row at index 6 using a button `onclick` event.
@@ -134,6 +136,7 @@ In the example below, the row at index 2 is moved below the row at index 6 using
 
 @using Syncfusion.Blazor.Gantt
 @using Syncfusion.Blazor.Buttons
+
 <div style="margin-bottom: 20px;">
     <SfButton CssClass="e-primary" Content="Dynamic drag and drop" OnClick="drag"></SfButton>
 </div>
@@ -144,8 +147,8 @@ In the example below, the row at index 2 is moved below the row at index 6 using
 </SfGantt>
 
 @code {
-    public SfGantt<TaskData>? Gantt;
-    public List<TaskData>? TaskCollection { get; set; }
+public SfGantt<TaskData>? Gantt;
+public List<TaskData>? TaskCollection { get; set; }
 
     protected override void OnInitialized()
     {
@@ -183,6 +186,7 @@ In the example below, the row at index 2 is moved below the row at index 6 using
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -192,7 +196,7 @@ In the example below, the row at index 2 is moved below the row at index 6 using
 
 ## Customize the drag and drop action
 
-Customize the drag and drop behavior in the Gantt component using the [RowDragStarting](https://blazor.syncfusion.com/documentation/gantt-chart/events#rowdragstarting), [RowDropping](https://blazor.syncfusion.com/documentation/gantt-chart/events#rowdropping), [RowDropped](https://blazor.syncfusion.com/documentation/gantt-chart/events#rowdropped) events. These events provide control over the drag lifecycle, allowing precise handling of row interactions.
+Customize the drag and drop behavior in the Gantt component using the [RowDragStarting](https://blazor.syncfusion.com/documentation/gantt/events#rowdragstarting), [RowDropping](https://blazor.syncfusion.com/documentation/gantt/events#rowdropping), [RowDropped](https://blazor.syncfusion.com/documentation/gantt/events#rowdropped) events. These events provide control over the drag lifecycle, allowing precise handling of row interactions.
 
 In this example, the row drop action is canceled when the **TaskID** is 2.
 
@@ -207,16 +211,16 @@ In this example, the row drop action is canceled when the **TaskID** is 2.
 </div>
 
 <SfGantt @ref="Gantt" DataSource="@TaskCollection" Height="450px" Width="900px" AllowRowDragAndDrop="true">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttEditSettings AllowTaskbarEditing="true"></GanttEditSettings>
-    <GanttEvents RowDropping="RowDropping" TValue="TaskData"></GanttEvents>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
+</GanttTaskFields>
+<GanttEditSettings AllowTaskbarEditing="true"></GanttEditSettings>
+<GanttEvents RowDropping="RowDropping" TValue="TaskData"></GanttEvents>
 </SfGantt>
 
 @code {
-    public SfGantt<TaskData>? Gantt;
-    public List<TaskData>? TaskCollection { get; set; }
-    private string message = string.Empty;
+public SfGantt<TaskData>? Gantt;
+public List<TaskData>? TaskCollection { get; set; }
+private string message = string.Empty;
 
     protected override void OnInitialized()
     {
@@ -258,6 +262,7 @@ In this example, the row drop action is canceled when the **TaskID** is 2.
             new TaskData() { TaskId = 8, TaskName = "Estimation approval", StartDate = new DateTime(2026, 04, 07), Duration = "0", Progress = 30, ParentId = 5 }
         };
     }
+
 }
 
 {% endhighlight %}

@@ -3,7 +3,7 @@ layout: post
 title: Columns in TypeScript Gantt control | Syncfusion
 description: Learn here all about columns in Syncfusion TypeScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Columns 
+control: Columns
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -21,44 +21,44 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Gantt Chart cont
 
 **Gantt supports the following column types:**
 
-- **string**: Default type for text data.  
-- **number**: For numeric values with formatting.  
-- **boolean**: Displays checkboxes for true/false values.  
-- **date**: For date values.  
-- **datetime**: For date and time values.  
+- **string**: Default type for text data.
+- **number**: For numeric values with formatting.
+- **boolean**: Displays checkboxes for true/false values.
+- **date**: For date values.
+- **datetime**: For date and time values.
 - **checkbox**: Displays a checkbox column.
 
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs5/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs5/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs5/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columns-cs5" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs5/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs5/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs5/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs5" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columns-cs5" %}
 {% endif %}
 
-> * If `type` is not defined, it is auto-detected from the first record of the data source.
-> * If the first record has a null or blank value, define the `type` explicitly to ensure correct filter dialog behavior.
+> - If `type` is not defined, it is auto-detected from the first record of the data source.
+> - If the first record has a null or blank value, define the `type` explicitly to ensure correct filter dialog behavior.
 
-### Difference between boolean type and checkbox type column 
+### Difference between boolean type and checkbox type column
 
 - Use **boolean** type to bind and edit true/false values from the data source.
 - Use **checkbox** type to enable row selection or deselection in the UI.
@@ -112,27 +112,27 @@ The column width is specified as an absolute pixel value. For example, a column 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs10/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs10/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs10/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs10/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs10" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columns-cs10" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs10/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs10/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs10/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs10/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs10" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columns-cs10" %}
 {% endif %}
 
 ## Column formatting
@@ -143,34 +143,34 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control for Typ
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs11/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs11/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs11/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs11/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs11" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columns-cs11" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs11/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs11/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs11/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs11/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs11" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columns-cs11" %}
 {% endif %}
 
->* The Gantt uses the [Internalization](../../common/globalization/internationalization) library to format values based on the specified format and culture.
->* By default, the [number](../../common/globalization/internationalization#number-formatting) and [date](../../common/globalization/internationalization#date-formatting) values are formatted in **en-US** locale. You can localize the currency and date in different locale as explained [here](../../common/globalization/localization).
->* The available format codes may vary depending on the data type of the column.
->* You can also customize the formatting further by providing a custom function to the [format](../../api/gantt/column#format) property, instead of a format string.
->* Make sure that the format string is valid and compatible with the data type of the column, to avoid unexpected results.
+> - The Gantt uses the [Internalization](../../common/globalization/internationalization) library to format values based on the specified format and culture.
+> - By default, the [number](../../common/globalization/internationalization#number-formatting) and [date](../../common/globalization/internationalization#date-formatting) values are formatted in **en-US** locale. You can localize the currency and date in different locale as explained [here](../../common/globalization/localization).
+> - The available format codes may vary depending on the data type of the column.
+> - You can also customize the formatting further by providing a custom function to the [format](../../api/gantt/column#format) property, instead of a format string.
+> - Make sure that the format string is valid and compatible with the data type of the column, to avoid unexpected results.
 
 ### Number formatting
 
@@ -182,37 +182,36 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control for Typ
 | C      | Currency format   | Use `C2`, `C3`, etc., to define precision for currency values.        |
 | P      | Percentage format | Input should be between 0 and 1; `P2`, `P3`, etc., control precision. |
 
-
 The following example code demonstrates the formatting of data for the **TaskID** column using the **N** format, the **Progress** column using the **P** format, and a currency column using the **C** format.
 
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs12/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs12/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs12/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs12/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs12" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columns-cs12" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs12/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs12/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs12/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs12/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs12" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columns-cs12" %}
 {% endif %}
 
->To learn more about number formatting, you can refer to the [number](../../common/globalization/internationalization#number-formatting) section.
+> To learn more about number formatting, you can refer to the [number](../../common/globalization/internationalization#number-formatting) section.
 
 ### Date formatting
 
@@ -230,32 +229,32 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control for Typ
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs13/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs13/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs13/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs13/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs13" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columns-cs13" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs13/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs13/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs13/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs13/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs13" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columns-cs13" %}
 {% endif %}
 
->To learn more about date formatting, you can refer to [Date formatting](../../common/globalization/internationalization#date-formatting). 
+> To learn more about date formatting, you can refer to [Date formatting](../../common/globalization/internationalization#date-formatting).
 
-### Format the date column based on localization 
+### Format the date column based on localization
 
 You can format the date column in Gantt Chart control based on localization settings by using the [format](../../api/gantt/column#format) property to define the date pattern and the [locale](../../api/gantt#locale) property to apply regional settings.
 
@@ -265,30 +264,30 @@ The following example demonstrates the `format` property specifies the date form
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs14/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs14/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs14/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs14/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs14" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columns-cs14" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs14/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs14/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs14/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs14/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs14" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columns-cs14" %}
 {% endif %}
 
-### Format template column value 
+### Format template column value
 
 You can customize the appearance of values in Gantt template columns using HTML markup and number formatting. To format values, use TypeScript pipes along with the [format](../../api/gantt/column#format) property. In this example, the date pipe formats the **StartDate** value as `'dd/MMM/yyyy'`.
 
@@ -296,24 +295,27 @@ You can customize the appearance of values in Gantt template columns using HTML 
 
 ```ts
 template: (props: any) => {
-                let date: Date = new Date(props.StartDate);
-                return date.getFullYear() + '/' +
-                    date.toLocaleString('default', { month: 'short' }) + '/' +
-                    date.getDate();
-            }
-
+  let date: Date = new Date(props.StartDate);
+  return (
+    date.getFullYear() +
+    "/" +
+    date.toLocaleString("default", { month: "short" }) +
+    "/" +
+    date.getDate()
+  );
+};
 ```
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs15/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs15/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs15/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs15/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs15" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columns-cs15" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -328,14 +330,14 @@ template: function (props) {
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs15/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs15/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs15/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs15/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs15" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columns-cs15" %}
 {% endif %}
 
 > In TypeScript, you can use JavaScript or TypeScript formatting utilities like **Intl.NumberFormat** or **toLocaleString()** to format values such as **dates**, **currency**, **decimals**, or **percentages** in column templates based on your requirements.
@@ -350,68 +352,68 @@ In the example below, `numberFormatOptions` is used for the **Progress** column 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs16/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs16/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs16/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs16/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs16" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columns-cs16" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs16/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs16/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs16/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs16/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs16" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columns-cs16" %}
 {% endif %}
 
->To learn more about custom formatting, you can refer to [Custom Date formatting](../../common/internationalization#custom-formats) and [Custom Number formatting](../../common/internationalization#custom-number-formatting-and-parsing).
+> To learn more about custom formatting, you can refer to [Custom Date formatting](../../common/internationalization#custom-formats) and [Custom Number formatting](../../common/internationalization#custom-number-formatting-and-parsing).
 
 ## Align the text of content
 
 You can use the [textAlign](../../api/gantt/column#textalign) property in Gantt Chart control to set the alignment of text within column cells. By default, the text is aligned to the **left**. The available options are:
 
-*	**Left**: Aligns the text to the left (default).
-*	**Center**: Aligns the text to the center.
-*	**Right**: Aligns the text to the right.
-*	**Justify**: Align the text to the justify.
+- **Left**: Aligns the text to the left (default).
+- **Center**: Aligns the text to the center.
+- **Right**: Aligns the text to the right.
+- **Justify**: Align the text to the justify.
 
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs17/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs17/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs17/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs17/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs17" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columns-cs17" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs17/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs17/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs17/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs17/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs17" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columns-cs17" %}
 {% endif %}
 
->* The `textAlign` property changes the alignment for both the column content and header. If you want to align header differently, you can use the [headerTextAlign](https://ej2.syncfusion.com/documentation/api/gantt/column#headertextalign) property.
+> - The `textAlign` property changes the alignment for both the column content and header. If you want to align header differently, you can use the [headerTextAlign](https://ej2.syncfusion.com/documentation/api/gantt/column#headertextalign) property.
 
 ## Render boolean value as checkbox
 
@@ -423,31 +425,31 @@ The following sample demonstrates how to display a boolean value as a checkbox f
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/checkbox-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/checkbox-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/checkbox-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/checkbox-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/checkbox-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/checkbox-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/checkbox-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/checkbox-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/checkbox-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/checkbox-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/checkbox-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/checkbox-cs1" %}
 {% endif %}
 
->* The `displayAsCheckBox` property is only applicable to boolean values in Gantt columns.
->* When `displayAsCheckBox` is set to **true**, the boolean values will be rendered as checkboxes in the Gantt column, with checked state indicating **true** and unchecked state indicating **false**.
+> - The `displayAsCheckBox` property is only applicable to boolean values in Gantt columns.
+> - When `displayAsCheckBox` is set to **true**, the boolean values will be rendered as checkboxes in the Gantt column, with checked state indicating **true** and unchecked state indicating **false**.
 
 ### How to prevent checkbox for particular row
 
@@ -459,34 +461,34 @@ The following sample hides the checkbox for the row with `ariaRowIndex` set to 3
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/checkbox-cs2/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/checkbox-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/checkbox-cs2/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/checkbox-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/checkbox-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/checkbox-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/checkbox-cs2/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/checkbox-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/checkbox-cs2/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/checkbox-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/checkbox-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/checkbox-cs2" %}
 {% endif %}
 
 ## AutoFit columns
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control for TypeScript supports automatic column width adjustment based on content. Double-clicking the column header resizer adjusts the width to fit the maximum content, ensuring clear data visibility without wrapping.
 
-To enable this feature, set [allowResizing](../../api/gantt#allowresizing) to **true** and inject `Resize` in the Gantt Chart control. 
+To enable this feature, set [allowResizing](../../api/gantt#allowresizing) to **true** and inject `Resize` in the Gantt Chart control.
 
 The following screenshot represents the resizing the column using resizer symbol.
 
@@ -500,27 +502,27 @@ You can resize a column in Gantt to fit its content using the `autoFitColumns` m
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/autofit-columns-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/autofit-columns-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/autofit-columns-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/autofit-columns-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/autofit-columns-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/autofit-columns-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/autofit-columns-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/autofit-columns-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/autofit-columns-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/autofit-columns-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/autofit-columns-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/autofit-columns-cs1" %}
 {% endif %}
 
 > You can autofit all the columns by invoking the `autoFitColumns` method without specifying column names.
@@ -533,27 +535,27 @@ You can lock columns in Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt C
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/lock-columns-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/lock-columns-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/lock-columns-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/lock-columns-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/lock-columns-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/lock-columns-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/lock-columns-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/lock-columns-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/lock-columns-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/lock-columns-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/lock-columns-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/lock-columns-cs1" %}
 {% endif %}
 
 ## Show or hide columns
@@ -562,7 +564,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Gantt Chart cont
 
 ### Using property
 
-You can control the visibility of columns in the TypeScript Gantt Chart control by setting the [visible](../../api/gantt/column#visible) property of each column to **true** or **false**. 
+You can control the visibility of columns in the TypeScript Gantt Chart control by setting the [visible](../../api/gantt/column#visible) property of each column to **true** or **false**.
 
 The following example illustrates how to dynamically toggle the visibility of the **Duration** column. Initially, the column is set with the `visible` property as **false**. When the switch control triggers a `change` event, the `getColumnByField` method retrieves the column, its `visible` property is updated based on the switch state, and `refreshColumns` is called to apply the changes to the UI.
 
@@ -570,32 +572,32 @@ The following example illustrates how to dynamically toggle the visibility of th
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/show-columns-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/show-columns-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/show-columns-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/show-columns-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/show-columns-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/show-columns-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/show-columns-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/show-columns-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/show-columns-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/show-columns-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/show-columns-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/show-columns-cs1" %}
 {% endif %}
 
->* Hiding a column using the `visible` property affects only its display; the data remains accessible in the source.
->* Hidden columns are excluded from the total width calculation.  
->* To keep a column hidden permanently, set `visible` to **false** or remove its definition.
+> - Hiding a column using the `visible` property affects only its display; the data remains accessible in the source.
+> - Hidden columns are excluded from the total width calculation.
+> - To keep a column hidden permanently, set `visible` to **false** or remove its definition.
 
 ### Using methods
 
@@ -603,7 +605,7 @@ You can also show or hide columns in the TypeScript Gantt Chart control using th
 
 **Based on header text:**
 
-You can dynamically show or hide columns by passing either a single header text or an array of header texts as the first parameter, and specifying `headerText` as the second parameter.  This enables dynamic control over column visibility based on the displayed header.
+You can dynamically show or hide columns by passing either a single header text or an array of header texts as the first parameter, and specifying `headerText` as the second parameter. This enables dynamic control over column visibility based on the displayed header.
 
 You can use the `getGanttColumns` method to retrieve all defined columns, and the `getVisibleColumns` method to get only the visible columns.
 
@@ -613,27 +615,27 @@ The following sample demonstrates how to hide and show columns using button clic
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/show-columns-cs2/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/show-columns-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/show-columns-cs2/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/show-columns-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/show-columns-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/show-columns-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/show-columns-cs2/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/show-columns-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/show-columns-cs2/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/show-columns-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/show-columns-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/show-columns-cs2" %}
 {% endif %}
 
 **Based on field:**
@@ -646,64 +648,64 @@ The following sample demonstrates how to hide and show columns using button clic
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/show-hide-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/show-hide-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/show-hide-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/show-hide-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/show-hide-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/show-hide-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/show-hide-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/show-hide-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/show-hide-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/show-hide-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/show-hide-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/show-hide-cs1" %}
 {% endif %}
 
 ## Controlling Gantt actions
 
 You can manage actions like filtering, sorting, resizing, reordering, editing, and searching for specific columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Gantt using the following options:
 
-* [allowEditing](../../api/gantt/columnModel#allowediting): Enables or disables editing for a column.
-* [allowFiltering](../../api/gantt/columnModel#allowfiltering): Enables or disables filtering for a column.
-* [allowSorting](../../api/gantt/columnModel#allowsorting): Enables or disables sorting for a column.
-* [allowReordering](../../api/gantt/columnModel#allowreordering): Enables or disables reordering for a column.
-* [allowResizing](../../api/gantt/columnModel#allowresizing): Enables or disables resizing for a column.
+- [allowEditing](../../api/gantt/columnModel#allowediting): Enables or disables editing for a column.
+- [allowFiltering](../../api/gantt/columnModel#allowfiltering): Enables or disables filtering for a column.
+- [allowSorting](../../api/gantt/columnModel#allowsorting): Enables or disables sorting for a column.
+- [allowReordering](../../api/gantt/columnModel#allowreordering): Enables or disables reordering for a column.
+- [allowResizing](../../api/gantt/columnModel#allowresizing): Enables or disables resizing for a column.
 
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/grid-actions-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/grid-actions-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/grid-actions-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/grid-actions-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/grid-actions-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/grid-actions-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/grid-actions-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/grid-actions-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/grid-actions-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/grid-actions-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/grid-actions-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/grid-actions-cs1" %}
 {% endif %}
 
 ## Customize column styles
@@ -720,27 +722,27 @@ To update column definitions in TypeScript Gantt Chart control, modify the [colu
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs18/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs18/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs18/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs18/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs18" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columns-cs18" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs18/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs18/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs18/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs18/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs18" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columns-cs18" %}
 {% endif %}
 
 ## Adding/removing columns
@@ -751,27 +753,27 @@ You can add or remove columns in the TypeScript Gantt by updating the [columns](
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs19/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs19/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs19/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs19/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs19" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columns-cs19" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs19/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs19/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs19/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs19/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs19" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columns-cs19" %}
 {% endif %}
 
 ## Responsive columns
@@ -784,32 +786,32 @@ The following example demonstrates a Gantt chart where the **Task Name** column 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs8/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs8/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs8/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs8" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columns-cs8" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs8/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs8/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs8/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs8" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columns-cs8" %}
 {% endif %}
 
 ## Clip mode
 
-The clip mode provides options to display overflow cell content using the [columns.clipMode](../../api/gantt/columnModel#clipmode) property.  The following are three types of `clipMode`:
+The clip mode provides options to display overflow cell content using the [columns.clipMode](../../api/gantt/columnModel#clipmode) property. The following are three types of `clipMode`:
 
 - **Clip**: Truncates content that exceeds the cell width.
 - **Ellipsis**: Displays ellipsis when content exceeds the cell area.
@@ -821,25 +823,25 @@ The clip mode provides options to display overflow cell content using the [colum
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs20/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs20/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs20/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs20/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs20" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columns-cs20" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs20/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs20/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs20/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs20/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs20" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columns-cs20" %}
 {% endif %}

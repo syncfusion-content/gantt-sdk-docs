@@ -2,7 +2,7 @@
 layout: post
 title: Loading Animation in Vue Gantt Chart Component | Syncfusion
 description: Learn here all about Loading animation in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Loading animation 
+control: Loading animation
 platform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -16,11 +16,11 @@ In the following sample, the Shimmer indicator is displayed while the gantt is s
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/loading-animation-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/loading-animation-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/loading-animation-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/loading-animation-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/loading-animation-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/loading-animation-cs1" %}

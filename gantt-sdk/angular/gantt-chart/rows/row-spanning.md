@@ -3,7 +3,7 @@ layout: post
 title: Row Spanning in Angular Gantt Chart Component | Syncfusion
 description: Learn here all about Row spanning in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Row spanning 
+control: Row spanning
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -18,13 +18,13 @@ In the example below, the **Soil test approval** cell spans across two rows in t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/rows/rowSpanning-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/rows/rowSpanning-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/rows/rowSpanning-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/rows/rowSpanning-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/rows/rowSpanning-cs1" %}
 
-> * You can use both [rowSpan](https://ej2.syncfusion.com/angular/documentation/api/gantt/queryCellInfoEventArgs#rowspan) and [colSpan](https://ej2.syncfusion.com/angular/documentation/api/gantt/queryCellInfoEventArgs#colspan) together to merge grid cells vertically and horizontally.
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/rows/rowSpanning-cs1" %}
+
+> - You can use both [rowSpan](https://ej2.syncfusion.com/angular/documentation/api/gantt/queryCellInfoEventArgs#rowspan) and [colSpan](https://ej2.syncfusion.com/angular/documentation/api/gantt/queryCellInfoEventArgs#colspan) together to merge grid cells vertically and horizontally.

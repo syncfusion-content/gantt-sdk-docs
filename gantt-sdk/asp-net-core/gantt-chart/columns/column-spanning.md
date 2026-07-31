@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Column Spanning in gantt control
 
 The gantt has option to span the adjacent cells. You need to define the `colSpan` attribute to span cells in the [`QueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_QueryCellInfo) event.
@@ -19,10 +18,10 @@ In the following demo, **Work 1** cells have been spanned.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/colSpan/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/colSpan/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ColSpan.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/colSpan/colSpan.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/colSpan/colSpan.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -30,14 +29,12 @@ In the following demo, **Work 1** cells have been spanned.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/colSpan/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/colSpan/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ColSpan.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/colSpan/colSpan.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/colSpan/colSpan.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/colspan.png)

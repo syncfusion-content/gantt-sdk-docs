@@ -2,7 +2,7 @@
 layout: post
 title: Selection in Vue Gantt Chart Component | Syncfusion
 description: Learn here all about Selection in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Selection 
+control: Selection
 platform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -16,8 +16,8 @@ To select data, inject the [Selection](https://ej2.syncfusion.com/vue/documentat
 
 The Gantt Chart component supports two types of selection that can be set by using the [selectionSettings.type](https://ej2.syncfusion.com/vue/documentation/api/gantt/selectionSettings#type) property. They are:
 
-* `Single`: Sets a single value by default and allows only selection of a single row or a cell.
-* `Multiple`: Allows you to select multiple rows or cells. To perform the multi-selection, press and hold the CTRL key and click the desired rows or cells.
+- `Single`: Sets a single value by default and allows only selection of a single row or a cell.
+- `Multiple`: Allows you to select multiple rows or cells. To perform the multi-selection, press and hold the CTRL key and click the desired rows or cells.
 
 To learn about Gantt Chart Selection, you can check on this video:
 {% youtube "https://www.youtube.com/watch?v=MyvX9O4zKUo" %}
@@ -26,20 +26,20 @@ To learn about Gantt Chart Selection, you can check on this video:
 
 The Gantt Chart component supports three types of selection modes that can be set by using the [selectionSettings.mode](https://ej2.syncfusion.com/vue/documentation/api/gantt/selectionSettings#mode). They are:
 
-* `Row`: Allows you to select only rows, and the row value is set by default.
-* `Cell`: Allows you to select only cells.
-* `Both`: Allows you to select rows and cells at the same time.
+- `Row`: Allows you to select only rows, and the row value is set by default.
+- `Cell`: Allows you to select only cells.
+- `Both`: Allows you to select rows and cells at the same time.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/selection-cs11/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/selection-cs11/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/selection-cs11/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/selection-cs11/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/selection-cs11" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/selection-cs11" %}
 
 ## Toggle selection
 
@@ -47,14 +47,14 @@ The toggle selection allows you to select and deselect a specific row or cell. T
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/selection-cs12/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/selection-cs12/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/selection-cs12/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/selection-cs12/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/selection-cs12" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/selection-cs12" %}
 
 ## Hover highlighting
 
@@ -64,14 +64,14 @@ The following code example shows how to enable the hover highlighting in Gantt.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/selection-cs16/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/selection-cs16/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/selection-cs16/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/selection-cs16/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/selection-cs16" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/selection-cs16" %}
 
 ## Clear selection
 
@@ -79,14 +79,14 @@ You can clear the selected cells and selected rows by using a method called [cle
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/selection-cs13/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/selection-cs13/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/selection-cs13/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/selection-cs13/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/selection-cs13" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/selection-cs13" %}
 
 ## Get selected row indexes and records
 
@@ -94,14 +94,14 @@ You can get the selected row indexes by using the [getSelectedRowIndexes](https:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/selection-cs14/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/selection-cs14/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/selection-cs14/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/selection-cs14/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/selection-cs14" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/selection-cs14" %}
 
 ## Multiple Selection based on condition
 
@@ -111,14 +111,14 @@ In the following code, the rows which contains `TaskId` value as 3 and 4 are sel
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/selection-cs15/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/selection-cs15/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/selection-cs15/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/selection-cs15/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/selection-cs15" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/selection-cs15" %}
 
 ## Touch interaction
 

@@ -24,17 +24,17 @@ In Week mode, the top tier shows weeks and the bottom tier days, suitable for sh
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/weektimeline-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/weektimeline-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/weektimeline-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/weektimeline-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/weektimeline-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/weektimeline-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/weektimeline-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/weektimeline-cs1" %}
 
 ### Month timeline mode
 
@@ -42,17 +42,17 @@ In Month mode, the top tier shows months and the bottom tier weeks, ideal for me
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/monthtimeline-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/monthtimeline-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/monthtimeline-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/monthtimeline-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/monthtimeline-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/monthtimeline-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/monthtimeline-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/monthtimeline-cs1" %}
 
 ### Year timeline mode
 
@@ -60,17 +60,17 @@ In Year mode, the top tier shows years and the bottom tier months, suitable for 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/yeartimeline-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/yeartimeline-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/yeartimeline-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/yeartimeline-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/yeartimeline-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/yeartimeline-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/yeartimeline-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/yeartimeline-cs1" %}
 
 ### Day timeline mode
 
@@ -78,17 +78,17 @@ In Day mode, the top tier shows days and the bottom tier hours, ideal for detail
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/daytimeline-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/daytimeline-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/daytimeline-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/daytimeline-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/daytimeline-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/daytimeline-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/daytimeline-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/daytimeline-cs1" %}
 
 ### Hour timeline mode
 
@@ -96,17 +96,17 @@ In Hour mode, the top tier shows hours and the bottom tier minutes, perfect for 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/hourtimeline-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/hourtimeline-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/hourtimeline-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/hourtimeline-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/hourtimeline-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/hourtimeline-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/hourtimeline-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/hourtimeline-cs1" %}
 
 ### Minutes timeline mode
 
@@ -114,17 +114,17 @@ In Minutes timeline mode, the tier displays minute-level intervals, ideal for tr
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/minutetimeline-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/minutetimeline-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/minutetimeline-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/minutetimeline-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/minutetimeline-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/minutetimeline-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/minutetimeline-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/minutetimeline-cs1" %}
 
 ## Timeline view dates
 
@@ -132,29 +132,29 @@ The Gantt Chart control supports rendering a fixed timeline range using the [vie
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/view-dates-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/view-dates-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/view-dates-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/view-dates-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/view-dates-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/view-dates-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/view-dates-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/view-dates-cs1" %}
 
 **Key behaviors**
 
 When `viewStartDate` and `viewEndDate` are set to concrete Date values, the timeline rendering is restricted to the inclusive range [viewStartDate, viewEndDate].
 
-* When `viewStartDate` is set to **auto**:
-  * If `projectStartDate` is defined, the timeline begins at `projectStartDate`.
-  * If `projectStartDate` is not defined, the earliest task start date is used as the beginning of the visible range.
+- When `viewStartDate` is set to **auto**:
+  - If `projectStartDate` is defined, the timeline begins at `projectStartDate`.
+  - If `projectStartDate` is not defined, the earliest task start date is used as the beginning of the visible range.
 
-* When `viewEndDate` is set to **auto**: 
-  * If `projectEndDate` is defined, the timeline ends at `projectEndDate`.
-  * If `projectEndDate` is not defined, the maximum task end date is used. If this end date leaves visible white‑space in the timeline area, the end date is automatically extended to fill the chart width.
+- When `viewEndDate` is set to **auto**:
+  - If `projectEndDate` is defined, the timeline ends at `projectEndDate`.
+  - If `projectEndDate` is not defined, the maximum task end date is used. If this end date leaves visible white‑space in the timeline area, the end date is automatically extended to fill the chart width.
 
 > Note: The `ZoomToFit` feature uses `projectStartDate` and `projectEndDate` to fit the entire project within the available timeline viewport.
 
@@ -166,17 +166,17 @@ The `weekStartDay` property will take effect only when the timeline displays wee
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/weekstartdaytimeline-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/weekstartdaytimeline-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/weekstartdaytimeline-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/weekstartdaytimeline-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/weekstartdaytimeline-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/weekstartdaytimeline-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/weekstartdaytimeline-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/weekstartdaytimeline-cs1" %}
 
 ## Customize automatic timescale update action
 
@@ -184,17 +184,17 @@ In the Gantt Chart component, the schedule timeline will be automatically update
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/updatetimescale-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/updatetimescale-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/updatetimescale-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/updatetimescale-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/updatetimescale-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/updatetimescale-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/updatetimescale-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/updatetimescale-cs1" %}
 
 ## Dynamically change timeline mode
 
@@ -202,17 +202,17 @@ You can dynamically change the timeline mode in the Gantt Chart by updating the 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/timeline-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/timeline-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/timeline-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/timeline-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/timeline-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/timeline-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/timeline-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/timeline-cs2" %}
 
 ## Timeline cells tooltip
 
@@ -220,17 +220,17 @@ In the Gantt Chart component, you can enable or disable the mouse hover tooltip 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/tooltip-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/tooltip-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/tooltip-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/tooltip-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/tooltip-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/tooltip-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/tooltip-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/tooltip-cs2" %}
 
 ## Highlight weekends
 
@@ -238,22 +238,23 @@ Highlight weekends by setting [showWeekend](https://ej2.syncfusion.com/react/doc
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/showweekend-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/showweekend-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/showweekend-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/showweekend-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/showweekend-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/showweekend-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/showweekend-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/showweekend-cs1" %}
 
 **Limitations:**
-* The `showWeekend` feature does not support baselines and not compatible with the manual task mode.
-* Non-working hours cannot be excluded when `showWeekend` is set to **false**.
-* Holidays are not excluded from the timeline if `showWeekend` is set to **false**.
+
+- The `showWeekend` feature does not support baselines and not compatible with the manual task mode.
+- Non-working hours cannot be excluded when `showWeekend` is set to **false**.
+- Holidays are not excluded from the timeline if `showWeekend` is set to **false**.
 
 ## Navigating Gantt Chart Timeline
 
@@ -265,17 +266,17 @@ You can adjust the Gantt Chart view by shifting the timeline forward or backward
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/timeline-cs3/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/timeline-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/timeline-cs3/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/timeline-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/timeline-cs3/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/timeline-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/timeline-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/timeline-cs3" %}
 
 ## Timeline template
 
@@ -283,68 +284,68 @@ In the Gantt Chart component, you can customize timeline cells using the [timeli
 
 When designing the timeline cells, you can utilize the following context properties within the template:
 
-* `date`: Defines the date of the timeline cells.
-* `value`: Defines the formatted date value that will be displayed in the timeline cells.
-* `tier`: Defines whether the cell is part of the top or bottom tier.
+- `date`: Defines the date of the timeline cells.
+- `value`: Defines the formatted date value that will be displayed in the timeline cells.
+- `tier`: Defines whether the cell is part of the top or bottom tier.
 
 The following code example how to customize the top tier to display the week's weather details and the bottom tier to highlight working and non-working days, with formatted text for holidays.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
 {% raw %}
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import _ as React from 'react';
+import _ as ReactDOM from 'react-dom';
 import { GanttComponent, Inject, Selection, DayMarkers, ColumnsDirective, ColumnDirective, HolidaysDirective, HolidayDirective } from '@syncfusion/ej2-react-gantt'
 import {timelineTemplateData} from './datasource'
 function App() {
-  let ganttInstance ;
-  const taskFields = {
-    id: 'TaskID',
-    name: 'TaskName',
-    startDate: 'StartDate',
-    duration: 'Duration',
-    progress: 'Progress',
-    dependency: 'Predecessor',
-    parentID: 'ParentID'
-  };
-  const bgColor = (value, date) => {
-    if (value === "S") {
-      return "#7BD3EA"
-    }
-    const parsedDate = new Date(date);
-    for (let i = 0; i < ganttInstance.holidays.length; i++) {
-      const holiday = ganttInstance.holidays[i];
-      const fromDate = new Date(holiday.from);
-      const toDate = new Date(holiday.to)
-      if (parsedDate >= fromDate && parsedDate <= toDate) {
-        return "#97E7E1";
-      }
-    }
-    return "#E0FBE2"
-  };
-  const imagedate = () => {
-    const getImage = Math.floor(Math.random() * 5) + 1;
-    return  getImage + ".svg";
+let ganttInstance ;
+const taskFields = {
+id: 'TaskID',
+name: 'TaskName',
+startDate: 'StartDate',
+duration: 'Duration',
+progress: 'Progress',
+dependency: 'Predecessor',
+parentID: 'ParentID'
+};
+const bgColor = (value, date) => {
+if (value === "S") {
+return "#7BD3EA"
+}
+const parsedDate = new Date(date);
+for (let i = 0; i < ganttInstance.holidays.length; i++) {
+const holiday = ganttInstance.holidays[i];
+const fromDate = new Date(holiday.from);
+const toDate = new Date(holiday.to)
+if (parsedDate >= fromDate && parsedDate <= toDate) {
+return "#97E7E1";
+}
+}
+return "#E0FBE2"
+};
+const imagedate = () => {
+const getImage = Math.floor(Math.random() \* 5) + 1;
+return getImage + ".svg";
 
-  }
-  const holidayValue = (value, date) => {
-    const parsedDate = new Date(date);
-    for (let i = 0; i < ganttInstance.holidays.length; i++) {
-      const holiday = ganttInstance.holidays[i];
-      const fromDate = new Date(holiday.from);
-      const toDate = new Date(holiday.to)
-      if (parsedDate >= fromDate && parsedDate <= toDate) {
-        const options = { weekday: 'short' };
-        return parsedDate.toLocaleDateString('en-US', options).toLocaleUpperCase();
-      }
-    }
-    return value
-  }
-  const timelineTemplate = (props) => {
-    if (props.tier == 'topTier') {
-      return (<div
-        className="e-header-cell-label e-gantt-top-cell-text"
-        style={{
+}
+const holidayValue = (value, date) => {
+const parsedDate = new Date(date);
+for (let i = 0; i < ganttInstance.holidays.length; i++) {
+const holiday = ganttInstance.holidays[i];
+const fromDate = new Date(holiday.from);
+const toDate = new Date(holiday.to)
+if (parsedDate >= fromDate && parsedDate <= toDate) {
+const options = { weekday: 'short' };
+return parsedDate.toLocaleDateString('en-US', options).toLocaleUpperCase();
+}
+}
+return value
+}
+const timelineTemplate = (props) => {
+if (props.tier == 'topTier') {
+return (<div
+className="e-header-cell-label e-gantt-top-cell-text"
+style={{
           width: '100%',
           backgroundColor: '#FBF9F1',
           fontWeight: 'bold',
@@ -353,25 +354,23 @@ function App() {
           justifyContent: 'center',
           alignItems: 'center',
         }}
-        title={props.date}
-      >
-        <div>{props.value}</div>
-        <div
-          style={{
+title={props.date} >
+<div>{props.value}</div>
+<div
+style={{
             width: '30px',
             height: '30px',
             lineHeight: 'normal',
             paddingLeft: '10px',
-          }}
-        >
-          <img style={{ width: '100%', height: '100%' }} src={imagedate()} alt="Image" />
-        </div>
-      </div>)
-    }
-    if (props.tier == 'bottomTier') {
-      return (<div
-        className="e-header-cell-label e-gantt-top-cell-text"
-        style={{
+          }} >
+<img style={{ width: '100%', height: '100%' }} src={imagedate()} alt="Image" />
+</div>
+</div>)
+}
+if (props.tier == 'bottomTier') {
+return (<div
+className="e-header-cell-label e-gantt-top-cell-text"
+style={{
           width: '100%',
           backgroundColor: bgColor(props.value, props.date),
           textAlign: 'center',
@@ -381,110 +380,109 @@ function App() {
           fontWeight: 'bold',
           justifyContent: 'center',
         }}
-        title={props.date}
-      >
-        {holidayValue(props.value, props.date)}
-      </div>)
-    }
-  }
-  const splitterSettings = {
-    columnIndex: 1
-  };
-  const timelineSettings = {
-    topTier: {
-      unit: 'Week',
-      format: 'dd/MM/yyyy'
-    },
-    bottomTier: {
-      unit: 'Day',
-      count: 1
-    },
-    timelineUnitSize: 100
-  };
-  const labelSettings = {
-    leftLabel: 'TaskName',
-  };
-  const projectStartDate = new Date('03/31/2019');
-  const projectEndDate = new Date('04/23/2019');
-  return <GanttComponent id='Timeline' ref={g => ganttInstance = g} dataSource={timelineTemplateData} timelineTemplate={timelineTemplate}
-    splitterSettings={splitterSettings}
-    taskFields={taskFields} height='550px'
-    projectStartDate={projectStartDate} projectEndDate={projectEndDate} timelineSettings={timelineSettings}
-     labelSettings={labelSettings} treeColumnIndex={1}>
-    <ColumnsDirective>
-      <ColumnDirective field='TaskID' visible={false}></ColumnDirective>
-      <ColumnDirective field='TaskName' width={300} ></ColumnDirective>
-      <ColumnDirective field='StartDate'></ColumnDirective>
-      <ColumnDirective field='EndDate' ></ColumnDirective>
-      <ColumnDirective field='Duration' ></ColumnDirective>
-      <ColumnDirective field='Progress' ></ColumnDirective>
-    </ColumnsDirective>
-    <HolidaysDirective>
-      <HolidayDirective from='04/04/2019' to='04/05/2019' label='Public Holiday'></HolidayDirective>
-      <HolidayDirective from='04/12/2019' to='04/12/2019' label='Good Friday'></HolidayDirective>
-    </HolidaysDirective>
-    <Inject services={[Selection, DayMarkers]} />
-  </GanttComponent>
+title={props.date} >
+{holidayValue(props.value, props.date)}
+</div>)
+}
+}
+const splitterSettings = {
+columnIndex: 1
+};
+const timelineSettings = {
+topTier: {
+unit: 'Week',
+format: 'dd/MM/yyyy'
+},
+bottomTier: {
+unit: 'Day',
+count: 1
+},
+timelineUnitSize: 100
+};
+const labelSettings = {
+leftLabel: 'TaskName',
+};
+const projectStartDate = new Date('03/31/2019');
+const projectEndDate = new Date('04/23/2019');
+return <GanttComponent id='Timeline' ref={g => ganttInstance = g} dataSource={timelineTemplateData} timelineTemplate={timelineTemplate}
+splitterSettings={splitterSettings}
+taskFields={taskFields} height='550px'
+projectStartDate={projectStartDate} projectEndDate={projectEndDate} timelineSettings={timelineSettings}
+labelSettings={labelSettings} treeColumnIndex={1}>
+<ColumnsDirective>
+<ColumnDirective field='TaskID' visible={false}></ColumnDirective>
+<ColumnDirective field='TaskName' width={300} ></ColumnDirective>
+<ColumnDirective field='StartDate'></ColumnDirective>
+<ColumnDirective field='EndDate' ></ColumnDirective>
+<ColumnDirective field='Duration' ></ColumnDirective>
+<ColumnDirective field='Progress' ></ColumnDirective>
+</ColumnsDirective>
+<HolidaysDirective>
+<HolidayDirective from='04/04/2019' to='04/05/2019' label='Public Holiday'></HolidayDirective>
+<HolidayDirective from='04/12/2019' to='04/12/2019' label='Good Friday'></HolidayDirective>
+</HolidaysDirective>
+<Inject services={[Selection, DayMarkers]} />
+</GanttComponent>
 };
 ReactDOM.render(<App />, document.getElementById('root'));
 {% endraw %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
 {% raw %}
-import * as React from 'react';
+import _ as React from 'react';
 import { useRef } from 'react';
-import * as ReactDOM from 'react-dom';
+import _ as ReactDOM from 'react-dom';
 import { GanttComponent, Inject, Selection, DayMarkers, ColumnsDirective, ColumnDirective, HolidaysDirective, HolidayDirective } from '@syncfusion/ej2-react-gantt';
 import {timelineTemplateData} from './datasource'
 function App() {
-  let ganttInstance :any ;
-  const taskFields: any = {
-    id: 'TaskID',
-    name: 'TaskName',
-    startDate: 'StartDate',
-    duration: 'Duration',
-    progress: 'Progress',
-    dependency: 'Predecessor',
-    parentID: 'ParentID'
-  };
-  const bgColor = (value: string, date: string): string => {
-    if (value === "S") {
-      return "#7BD3EA"
-    }
-    const parsedDate = new Date(date);
-    for (let i = 0; i < ganttInstance.holidays.length; i++) {
-      const holiday = ganttInstance.holidays[i];
-      const fromDate = new Date(holiday.from);
-      const toDate = new Date(holiday.to)
-      if (parsedDate >= fromDate && parsedDate <= toDate) {
-        return "#97E7E1";
-      }
-    }
-    return "#E0FBE2"
-  };
-  const imagedate = () => {
-    const getImage = Math.floor(Math.random() * 5) + 1;
-    return getImage + ".svg";
+let ganttInstance :any ;
+const taskFields: any = {
+id: 'TaskID',
+name: 'TaskName',
+startDate: 'StartDate',
+duration: 'Duration',
+progress: 'Progress',
+dependency: 'Predecessor',
+parentID: 'ParentID'
+};
+const bgColor = (value: string, date: string): string => {
+if (value === "S") {
+return "#7BD3EA"
+}
+const parsedDate = new Date(date);
+for (let i = 0; i < ganttInstance.holidays.length; i++) {
+const holiday = ganttInstance.holidays[i];
+const fromDate = new Date(holiday.from);
+const toDate = new Date(holiday.to)
+if (parsedDate >= fromDate && parsedDate <= toDate) {
+return "#97E7E1";
+}
+}
+return "#E0FBE2"
+};
+const imagedate = () => {
+const getImage = Math.floor(Math.random() \* 5) + 1;
+return getImage + ".svg";
 
-  }
-  const holidayValue = (value: string, date: string): string => {
-    const parsedDate = new Date(date);
-    for (let i = 0; i < ganttInstance.holidays.length; i++) {
-      const holiday = ganttInstance.holidays[i];
-      const fromDate = new Date(holiday.from);
-      const toDate = new Date(holiday.to)
-      if (parsedDate >= fromDate && parsedDate <= toDate) {
-        const options: any = { weekday: 'short' };
-        return parsedDate.toLocaleDateString('en-US', options).toLocaleUpperCase();
-      }
-    }
-    return value
-  }
-  const timelineTemplate = (props): any => {
-    if (props.tier == 'topTier') {
-      return (<div
-        className="e-header-cell-label e-gantt-top-cell-text"
-        style={{
+}
+const holidayValue = (value: string, date: string): string => {
+const parsedDate = new Date(date);
+for (let i = 0; i < ganttInstance.holidays.length; i++) {
+const holiday = ganttInstance.holidays[i];
+const fromDate = new Date(holiday.from);
+const toDate = new Date(holiday.to)
+if (parsedDate >= fromDate && parsedDate <= toDate) {
+const options: any = { weekday: 'short' };
+return parsedDate.toLocaleDateString('en-US', options).toLocaleUpperCase();
+}
+}
+return value
+}
+const timelineTemplate = (props): any => {
+if (props.tier == 'topTier') {
+return (<div
+className="e-header-cell-label e-gantt-top-cell-text"
+style={{
           width: '100%',
           backgroundColor: '#FBF9F1',
           fontWeight: 'bold',
@@ -493,25 +491,23 @@ function App() {
           justifyContent: 'center',
           alignItems: 'center',
         }}
-        title={props.date}
-      >
-        <div>{props.value}</div>
-        <div
-          style={{
+title={props.date} >
+<div>{props.value}</div>
+<div
+style={{
             width: '30px',
             height: '30px',
             lineHeight: 'normal',
             paddingLeft: '10px',
-          }}
-        >
-          <img style={{ width: '100%', height: '100%' }} src={imagedate()} alt="Image" />
-        </div>
-      </div>)
-    }
-    if (props.tier == 'bottomTier') {
-      return (<div
-        className="e-header-cell-label e-gantt-top-cell-text"
-        style={{
+          }} >
+<img style={{ width: '100%', height: '100%' }} src={imagedate()} alt="Image" />
+</div>
+</div>)
+}
+if (props.tier == 'bottomTier') {
+return (<div
+className="e-header-cell-label e-gantt-top-cell-text"
+style={{
           width: '100%',
           backgroundColor: bgColor(props.value, props.date),
           textAlign: 'center',
@@ -521,60 +517,59 @@ function App() {
           fontWeight: 'bold',
           justifyContent: 'center',
         }}
-        title={props.date}
-      >
-        {holidayValue(props.value, props.date)}
-      </div>)
-    }
-  }
-  const splitterSettings: any = {
-    columnIndex: 1
-  };
-  const timelineSettings: any = {
-    topTier: {
-      unit: 'Week',
-      format: 'dd/MM/yyyy'
-    },
-    bottomTier: {
-      unit: 'Day',
-      count: 1
-    },
-    timelineUnitSize: 100
-  };
-  const labelSettings: any = {
-    leftLabel: 'TaskName',
-  };
-  const projectStartDate = new Date('03/31/2019');
-  const projectEndDate = new Date('04/23/2019');
-  return <GanttComponent id='Timeline' ref={g => ganttInstance = g} dataSource={timelineTemplateData} timelineTemplate={timelineTemplate}
-    splitterSettings={splitterSettings}
-    taskFields={taskFields} height='550px'
-    projectStartDate={projectStartDate} projectEndDate={projectEndDate} timelineSettings={timelineSettings}
-     labelSettings={labelSettings} treeColumnIndex={1}>
-    <ColumnsDirective>
-      <ColumnDirective field='TaskID' visible={false}></ColumnDirective>
-      <ColumnDirective field='TaskName' width={300} ></ColumnDirective>
-      <ColumnDirective field='StartDate'></ColumnDirective>
-      <ColumnDirective field='EndDate' ></ColumnDirective>
-      <ColumnDirective field='Duration' ></ColumnDirective>
-      <ColumnDirective field='Progress' ></ColumnDirective>
-    </ColumnsDirective>
-    <HolidaysDirective>
-      <HolidayDirective from='04/04/2019' to='04/05/2019' label='Public Holiday'></HolidayDirective>
-      <HolidayDirective from='04/12/2019' to='04/12/2019' label='Good Friday'></HolidayDirective>
-    </HolidaysDirective>
-    <Inject services={[Selection, DayMarkers]} />
-  </GanttComponent>
+title={props.date} >
+{holidayValue(props.value, props.date)}
+</div>)
+}
+}
+const splitterSettings: any = {
+columnIndex: 1
+};
+const timelineSettings: any = {
+topTier: {
+unit: 'Week',
+format: 'dd/MM/yyyy'
+},
+bottomTier: {
+unit: 'Day',
+count: 1
+},
+timelineUnitSize: 100
+};
+const labelSettings: any = {
+leftLabel: 'TaskName',
+};
+const projectStartDate = new Date('03/31/2019');
+const projectEndDate = new Date('04/23/2019');
+return <GanttComponent id='Timeline' ref={g => ganttInstance = g} dataSource={timelineTemplateData} timelineTemplate={timelineTemplate}
+splitterSettings={splitterSettings}
+taskFields={taskFields} height='550px'
+projectStartDate={projectStartDate} projectEndDate={projectEndDate} timelineSettings={timelineSettings}
+labelSettings={labelSettings} treeColumnIndex={1}>
+<ColumnsDirective>
+<ColumnDirective field='TaskID' visible={false}></ColumnDirective>
+<ColumnDirective field='TaskName' width={300} ></ColumnDirective>
+<ColumnDirective field='StartDate'></ColumnDirective>
+<ColumnDirective field='EndDate' ></ColumnDirective>
+<ColumnDirective field='Duration' ></ColumnDirective>
+<ColumnDirective field='Progress' ></ColumnDirective>
+</ColumnsDirective>
+<HolidaysDirective>
+<HolidayDirective from='04/04/2019' to='04/05/2019' label='Public Holiday'></HolidayDirective>
+<HolidayDirective from='04/12/2019' to='04/12/2019' label='Good Friday'></HolidayDirective>
+</HolidaysDirective>
+<Inject services={[Selection, DayMarkers]} />
+</GanttComponent>
 };
 ReactDOM.render(<App />, document.getElementById('root'));
 {% endraw %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/tooltip-cs8/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/tooltip-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/tooltip-cs8" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/tooltip-cs8" %}
 
 ## Infinite timeline scrolling
 
@@ -590,19 +585,20 @@ This feature enables exploration of long project schedules without manually upda
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/timeline-cs4/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/timeline-cs4/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/timeline-cs4/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/timeline-cs4/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/timeline-cs4/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/timeline-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/timeline-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/timeline-cs4" %}
 
 ## See also
+
 - [How to configure taskbars?](https://ej2.syncfusion.com/react/documentation/gantt/taskbar)
 - [How to zoom the timeline?](https://ej2.syncfusion.com/react/documentation/gantt/timeline/zooming)
 - [How to configure non-working days?](https://ej2.syncfusion.com/react/documentation/gantt/scheduling-tasks#weekendnon-working-days)

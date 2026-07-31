@@ -9,7 +9,7 @@ documentation: ug
 
 # To customize PDF export
 
-Customizing PDF export in the Blazor Gantt Chart component allows tailoring exported documents for specific needs, using [GanttPdfExportProperties](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttPdfExportProperties.html) to adjust file names, page orientation, size, columns, headers, footers, timelines, and templates. Ensuring focused content like selected rows or styled taskbars and [AllowPdfExport](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowPdfExport) enabled. Use [PdfExporting](https://blazor.syncfusion.com/documentation/gantt-chart/events#pdfexporting) and [PdfExported](https://blazor.syncfusion.com/documentation/gantt-chart/events#pdfexported) events for pre-export and post-export modifications, and [PdfQueryTaskbarInfo](https://blazor.syncfusion.com/documentation/gantt-chart/events#pdfquerytaskbarinfo) for taskbar styling.
+Customizing PDF export in the Blazor Gantt Chart component allows tailoring exported documents for specific needs, using [GanttPdfExportProperties](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttPdfExportProperties.html) to adjust file names, page orientation, size, columns, headers, footers, timelines, and templates. Ensuring focused content like selected rows or styled taskbars and [AllowPdfExport](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowPdfExport) enabled. Use [PdfExporting](https://blazor.syncfusion.com/documentation/gantt/events#pdfexporting) and [PdfExported](https://blazor.syncfusion.com/documentation/gantt/events#pdfexported) events for pre-export and post-export modifications, and [PdfQueryTaskbarInfo](https://blazor.syncfusion.com/documentation/gantt/events#pdfquerytaskbarinfo) for taskbar styling.
 
 ## Customize file name
 
@@ -20,32 +20,31 @@ Set the exported PDF file name using the [FileName](https://help.syncfusion.com/
 
 @using Syncfusion.Blazor.Gantt
 
-
 <SfGantt @ref="Gantt" ID="GanttExport" DataSource="@TaskCollection" Height="450px" Width="900px" AllowPdfExport="true" Toolbar="toolbarItem">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Dependency="Predecessor"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Dependency="Predecessor"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
+</GanttTaskFields>
+<GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    public SfGantt<TaskData>? Gantt;
-    private List<object> toolbarItem = new List<Object>() { new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport" } };
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
-    public async void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
-    {
-        if (args.Item.Id == "PdfExport")
-        {
-            GanttPdfExportProperties exportProperties = new GanttPdfExportProperties();
-            exportProperties.FileName = "ProjectSchedule.pdf";
-            if (Gantt != null)
-            {
-                await Gantt.ExportToPdfAsync(exportProperties);
-            }
+public List<TaskData>? TaskCollection { get; set; }
+public SfGantt<TaskData>? Gantt;
+private List<object> toolbarItem = new List<Object>() { new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport" } };
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
+public async void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
+{
+if (args.Item.Id == "PdfExport")
+{
+GanttPdfExportProperties exportProperties = new GanttPdfExportProperties();
+exportProperties.FileName = "ProjectSchedule.pdf";
+if (Gantt != null)
+{
+await Gantt.ExportToPdfAsync(exportProperties);
+}
 
         }
     }
@@ -77,6 +76,7 @@ Set the exported PDF file name using the [FileName](https://help.syncfusion.com/
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -96,31 +96,31 @@ The following code snippet demonstrates how to set the page orientation to `Land
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt @ref="Gantt" ID="GanttExport" DataSource="@TaskCollection" Height="450px" Width="900px" AllowPdfExport="true" Toolbar="toolbarItem">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Dependency="Predecessor"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Dependency="Predecessor"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
+</GanttTaskFields>
+<GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    public SfGantt<TaskData>? Gantt;
-    private List<object> toolbarItem = new List<Object>() { new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport" } };
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
-    public async void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
-    {
-        if (args.Item.Id == "PdfExport")
-        {
-            GanttPdfExportProperties exportProperties = new GanttPdfExportProperties();
-            exportProperties.PageOrientation = Syncfusion.Blazor.Grids.PageOrientation.Landscape;
-            if(Gantt!=null)
-            {
-                await Gantt.ExportToPdfAsync(exportProperties);
-            }
-            
+public List<TaskData>? TaskCollection { get; set; }
+public SfGantt<TaskData>? Gantt;
+private List<object> toolbarItem = new List<Object>() { new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport" } };
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
+public async void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
+{
+if (args.Item.Id == "PdfExport")
+{
+GanttPdfExportProperties exportProperties = new GanttPdfExportProperties();
+exportProperties.PageOrientation = Syncfusion.Blazor.Grids.PageOrientation.Landscape;
+if(Gantt!=null)
+{
+await Gantt.ExportToPdfAsync(exportProperties);
+}
+
         }
     }
 
@@ -151,6 +151,7 @@ The following code snippet demonstrates how to set the page orientation to `Land
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -163,51 +164,51 @@ The following code snippet demonstrates how to set the page orientation to `Land
 Page size can be customized for the exported document using the [PageSize](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.PdfPageSize.html) property in [GanttPdfExportProperties](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttPdfExportProperties.html).
 The supported page sizes are:
 
-* Letter
-* Note
-* Legal
-* A0 to A9
-* B0 to B5
-* Archa
-* Archb
-* Archc
-* Archd
-* Arche
-* Flsa
-* HalfLetter
-* Letter11x17
-* Ledger
+- Letter
+- Note
+- Legal
+- A0 to A9
+- B0 to B5
+- Archa
+- Archb
+- Archc
+- Archd
+- Arche
+- Flsa
+- HalfLetter
+- Letter11x17
+- Ledger
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt @ref="Gantt" ID="GanttExport" DataSource="@TaskCollection" Height="450px" Width="900px" AllowPdfExport="true" Toolbar="toolbarItem">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Dependency="Predecessor"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Dependency="Predecessor"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
+</GanttTaskFields>
+<GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    public SfGantt<TaskData>? Gantt;
-    private List<object> toolbarItem = new List<Object>() { new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport" } };
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
-    public async void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
-    {
-        if (args.Item.Id == "PdfExport")
-        {
-            GanttPdfExportProperties exportProperties = new GanttPdfExportProperties();
-            exportProperties.PageSize = Syncfusion.Blazor.Grids.PdfPageSize.A4;
-            if (Gantt != null)
-            {
-                await Gantt.ExportToPdfAsync(exportProperties);
-            }
-            
+public List<TaskData>? TaskCollection { get; set; }
+public SfGantt<TaskData>? Gantt;
+private List<object> toolbarItem = new List<Object>() { new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport" } };
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
+public async void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
+{
+if (args.Item.Id == "PdfExport")
+{
+GanttPdfExportProperties exportProperties = new GanttPdfExportProperties();
+exportProperties.PageSize = Syncfusion.Blazor.Grids.PdfPageSize.A4;
+if (Gantt != null)
+{
+await Gantt.ExportToPdfAsync(exportProperties);
+}
+
         }
     }
 
@@ -238,6 +239,7 @@ The supported page sizes are:
         };
         return Tasks;
     }
+
 }
 {% endhighlight %}
 {% endtabs %}
@@ -257,40 +259,40 @@ The following code demonstrates how to use the `PdfExporting` event to export th
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt @ref="Gantt" DataSource="@TaskCollection" Height="450px" Width="100%" AllowPdfExport="true" TreeColumnIndex="1" EnableRowVirtualization="true" Toolbar="@toolbarItem" ScrollToTaskbarOnClick="true">
-    <GanttLabelSettings LeftLabel="TaskName" TValue="TaskData"></GanttLabelSettings>
-    <GanttTaskFields ParentID="ParentId" Work="Work" Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" TaskType="TaskType" Dependency="Predecessor">
-    </GanttTaskFields>
-    <GanttColumns>
-        <GanttColumn Field="TaskId" HeaderText="Task Id" Width="100" TextAlign="Syncfusion.Blazor.Grids.TextAlign.Center"></GanttColumn>
-        <GanttColumn Field="TaskName" HeaderText="Task Name"></GanttColumn>
-        <GanttColumn Field="StartDate" HeaderText="Start Date"></GanttColumn>
-        <GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
-        <GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
-        <GanttColumn Field="Assignee" HeaderText="Assignee"></GanttColumn>
-        <GanttColumn Field="Reporter" HeaderText="Reporter"></GanttColumn>
-        <GanttColumn Field="Progress" HeaderText="Progress" TextAlign="Syncfusion.Blazor.Grids.TextAlign.Center"></GanttColumn>
-    </GanttColumns>
-    <GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" Mode="Syncfusion.Blazor.Gantt.EditMode.Auto" ShowDeleteConfirmDialog="true">
-    </GanttEditSettings>
-    <GanttEvents OnToolbarClick="ToolbarClickHandler" PdfExporting=" PdfExportingHandler" TValue="TaskData"></GanttEvents>
-    <GanttSplitterSettings Position="40%"></GanttSplitterSettings>
+<GanttLabelSettings LeftLabel="TaskName" TValue="TaskData"></GanttLabelSettings>
+<GanttTaskFields ParentID="ParentId" Work="Work" Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" TaskType="TaskType" Dependency="Predecessor">
+</GanttTaskFields>
+<GanttColumns>
+<GanttColumn Field="TaskId" HeaderText="Task Id" Width="100" TextAlign="Syncfusion.Blazor.Grids.TextAlign.Center"></GanttColumn>
+<GanttColumn Field="TaskName" HeaderText="Task Name"></GanttColumn>
+<GanttColumn Field="StartDate" HeaderText="Start Date"></GanttColumn>
+<GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
+<GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
+<GanttColumn Field="Assignee" HeaderText="Assignee"></GanttColumn>
+<GanttColumn Field="Reporter" HeaderText="Reporter"></GanttColumn>
+<GanttColumn Field="Progress" HeaderText="Progress" TextAlign="Syncfusion.Blazor.Grids.TextAlign.Center"></GanttColumn>
+</GanttColumns>
+<GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" Mode="Syncfusion.Blazor.Gantt.EditMode.Auto" ShowDeleteConfirmDialog="true">
+</GanttEditSettings>
+<GanttEvents OnToolbarClick="ToolbarClickHandler" PdfExporting=" PdfExportingHandler" TValue="TaskData"></GanttEvents>
+<GanttSplitterSettings Position="40%"></GanttSplitterSettings>
 </SfGantt>
 @code {
-    public SfGantt<TaskData>? Gantt { get; set; }
-    private List<object> toolbarItem = new List<Object>() { new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport" } };
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = VirtualData.GetTreeVirtualData(30);
-    }
-    public async void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
-    {
-        if (args.Item.Id == "PdfExport")
-        {
-            if (Gantt != null)
-            {
-                await Gantt.ExportToPdfAsync();
-            }
+public SfGantt<TaskData>? Gantt { get; set; }
+private List<object> toolbarItem = new List<Object>() { new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport" } };
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = VirtualData.GetTreeVirtualData(30);
+}
+public async void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
+{
+if (args.Item.Id == "PdfExport")
+{
+if (Gantt != null)
+{
+await Gantt.ExportToPdfAsync();
+}
 
         }
     }
@@ -344,7 +346,7 @@ The following code demonstrates how to use the `PdfExporting` event to export th
                     }
                 }
                 return DataCollection;
-            
+
         }
     }
     public class TaskData
@@ -360,8 +362,8 @@ The following code demonstrates how to use the `PdfExporting` event to export th
         public int? ParentId { get; set; }
         public string? Predecessor { get; set; }
     }
-}
 
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -381,41 +383,41 @@ The following code demonstrates how to use the `PdfExporting` event to export a 
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt @ref="Gantt" DataSource="@TaskCollection" Height="450px" Width="100%" AllowPdfExport="true" TreeColumnIndex="1" Toolbar="@toolbarItem">
-    <GanttLabelSettings LeftLabel="TaskName" TValue="TaskData"></GanttLabelSettings>
-    <GanttTaskFields ParentID="ParentId" Work="Work" Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" TaskType="TaskType" Dependency="Predecessor">
-    </GanttTaskFields>
-    <GanttColumns>
-        <GanttColumn Field="TaskId" HeaderText="Task Id" Width="100" TextAlign="Syncfusion.Blazor.Grids.TextAlign.Center"></GanttColumn>
-        <GanttColumn Field="TaskName" HeaderText="Task Name"></GanttColumn>
-        <GanttColumn Field="StartDate" HeaderText="Start Date"></GanttColumn>
-        <GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
-        <GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
-        <GanttColumn Field="Assignee" HeaderText="Assignee"></GanttColumn>
-        <GanttColumn Field="Reporter" HeaderText="Reporter"></GanttColumn>
-        <GanttColumn Field="Progress" HeaderText="Progress" TextAlign="Syncfusion.Blazor.Grids.TextAlign.Center"></GanttColumn>
-    </GanttColumns>
-    <GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" Mode="Syncfusion.Blazor.Gantt.EditMode.Auto" ShowDeleteConfirmDialog="true">
-    </GanttEditSettings>
-    <GanttEvents OnToolbarClick="ToolbarClickHandler" PdfExporting=" PdfExportingHandler" TValue="TaskData"></GanttEvents>
-    <GanttSplitterSettings Position="40%"></GanttSplitterSettings>
+<GanttLabelSettings LeftLabel="TaskName" TValue="TaskData"></GanttLabelSettings>
+<GanttTaskFields ParentID="ParentId" Work="Work" Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" TaskType="TaskType" Dependency="Predecessor">
+</GanttTaskFields>
+<GanttColumns>
+<GanttColumn Field="TaskId" HeaderText="Task Id" Width="100" TextAlign="Syncfusion.Blazor.Grids.TextAlign.Center"></GanttColumn>
+<GanttColumn Field="TaskName" HeaderText="Task Name"></GanttColumn>
+<GanttColumn Field="StartDate" HeaderText="Start Date"></GanttColumn>
+<GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
+<GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
+<GanttColumn Field="Assignee" HeaderText="Assignee"></GanttColumn>
+<GanttColumn Field="Reporter" HeaderText="Reporter"></GanttColumn>
+<GanttColumn Field="Progress" HeaderText="Progress" TextAlign="Syncfusion.Blazor.Grids.TextAlign.Center"></GanttColumn>
+</GanttColumns>
+<GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" Mode="Syncfusion.Blazor.Gantt.EditMode.Auto" ShowDeleteConfirmDialog="true">
+</GanttEditSettings>
+<GanttEvents OnToolbarClick="ToolbarClickHandler" PdfExporting=" PdfExportingHandler" TValue="TaskData"></GanttEvents>
+<GanttSplitterSettings Position="40%"></GanttSplitterSettings>
 </SfGantt>
 @code {
-    public SfGantt<TaskData>? Gantt { get; set; }
-    private List<object>? toolbarItem = new List<Object>() { new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport" } };
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = VirtualData.GetTreeVirtualData(30);
-    }
-    public async void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
-    {
-        if (args.Item.Id == "PdfExport")
-        {
-            if(Gantt!=null)
-            {
-                await Gantt.ExportToPdfAsync();
-            }
-            
+public SfGantt<TaskData>? Gantt { get; set; }
+private List<object>? toolbarItem = new List<Object>() { new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport" } };
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = VirtualData.GetTreeVirtualData(30);
+}
+public async void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
+{
+if (args.Item.Id == "PdfExport")
+{
+if(Gantt!=null)
+{
+await Gantt.ExportToPdfAsync();
+}
+
         }
     }
     public void PdfExportingHandler(PdfExportEventArgs args)
@@ -482,6 +484,7 @@ The following code demonstrates how to use the `PdfExporting` event to export a 
         public int? ParentId { get; set; }
         public string? Predecessor { get; set; }
     }
+
 }
 
 {% endhighlight %}
@@ -498,39 +501,39 @@ PDF export provides an option to export hidden columns of Gantt by defining the 
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt @ref="Gantt" ID="GanttExport" DataSource="@TaskCollection" Height="450px" Width="900px" AllowPdfExport="true" Toolbar="toolbarItem">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Dependency="Predecessor"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Dependency="Predecessor"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttColumns>
-        <GanttColumn Field="TaskId" HeaderText="Task Id" Width="100" HeaderTextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
-        <GanttColumn Field="TaskName" HeaderText="Task Name" Visible="false"></GanttColumn>
-        <GanttColumn Field="StartDate" HeaderText="Start Date" TextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
-        <GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
-        <GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
-        <GanttColumn Field="Predecessor" HeaderText="Dependency"></GanttColumn>
-    </GanttColumns>
-    <GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
+</GanttTaskFields>
+<GanttColumns>
+<GanttColumn Field="TaskId" HeaderText="Task Id" Width="100" HeaderTextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
+<GanttColumn Field="TaskName" HeaderText="Task Name" Visible="false"></GanttColumn>
+<GanttColumn Field="StartDate" HeaderText="Start Date" TextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
+<GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
+<GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
+<GanttColumn Field="Predecessor" HeaderText="Dependency"></GanttColumn>
+</GanttColumns>
+<GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    public SfGantt<TaskData>? Gantt;
-    private List<object> toolbarItem = new List<Object>() { new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport" } };
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
-    public async void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
-    {
-        if (args.Item.Id == "PdfExport")
-        {
-            GanttPdfExportProperties exportProperties = new GanttPdfExportProperties();
-            exportProperties.IncludeHiddenColumn = true;
-            if(Gantt!=null)
-            {
-                await Gantt.ExportToPdfAsync(exportProperties);
-            }
-            
+public List<TaskData>? TaskCollection { get; set; }
+public SfGantt<TaskData>? Gantt;
+private List<object> toolbarItem = new List<Object>() { new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport" } };
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
+public async void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
+{
+if (args.Item.Id == "PdfExport")
+{
+GanttPdfExportProperties exportProperties = new GanttPdfExportProperties();
+exportProperties.IncludeHiddenColumn = true;
+if(Gantt!=null)
+{
+await Gantt.ExportToPdfAsync(exportProperties);
+}
+
         }
     }
 
@@ -561,6 +564,7 @@ PDF export provides an option to export hidden columns of Gantt by defining the 
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -581,42 +585,42 @@ To customize column widths in the exported PDF document, set the [Width](https:/
 @using Syncfusion.PdfExport
 
 <SfGantt @ref="Gantt" ID="GanttExport" DataSource="@TaskCollection" Height="450px" Width="900px" AllowPdfExport="true" Toolbar="toolbarItem">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Dependency="Predecessor"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Dependency="Predecessor"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttColumns>
-        <GanttColumn Field="TaskId" HeaderText="Task Id" Width="100" HeaderTextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
-        <GanttColumn Field="TaskName" HeaderText="Task Name"></GanttColumn>
-        <GanttColumn Field="StartDate" HeaderText="Start Date" TextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
-        <GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
-        <GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
-        <GanttColumn Field="Predecessor" HeaderText="Dependency"></GanttColumn>
-    </GanttColumns>
-    <GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
+</GanttTaskFields>
+<GanttColumns>
+<GanttColumn Field="TaskId" HeaderText="Task Id" Width="100" HeaderTextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
+<GanttColumn Field="TaskName" HeaderText="Task Name"></GanttColumn>
+<GanttColumn Field="StartDate" HeaderText="Start Date" TextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
+<GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
+<GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
+<GanttColumn Field="Predecessor" HeaderText="Dependency"></GanttColumn>
+</GanttColumns>
+<GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    public SfGantt<TaskData>? Gantt;
-    private List<object> toolbarItem = new List<Object>() { new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport" } };
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
-    public async void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
-    {
-        if (args.Item.Id == "PdfExport" && Gantt!=null)
-        {
-            GanttPdfExportProperties exportProperties = new GanttPdfExportProperties();
-            exportProperties.Columns = new List<GanttColumn>()
-            {
-                new GanttColumn(){ Field = "TaskID", HeaderText = "Task Id", Width = "200" },
-                new GanttColumn(){ Field = "TaskName", HeaderText = "Task Name", Width = "250"},
-                new GanttColumn(){ Field = "StartDate", HeaderText = "Start Date", Width = "150"},
-            };
-            await Gantt.ExportToPdfAsync(exportProperties);
-        }
-    }
+public List<TaskData>? TaskCollection { get; set; }
+public SfGantt<TaskData>? Gantt;
+private List<object> toolbarItem = new List<Object>() { new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport" } };
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
+public async void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
+{
+if (args.Item.Id == "PdfExport" && Gantt!=null)
+{
+GanttPdfExportProperties exportProperties = new GanttPdfExportProperties();
+exportProperties.Columns = new List<GanttColumn>()
+{
+new GanttColumn(){ Field = "TaskID", HeaderText = "Task Id", Width = "200" },
+new GanttColumn(){ Field = "TaskName", HeaderText = "Task Name", Width = "250"},
+new GanttColumn(){ Field = "StartDate", HeaderText = "Start Date", Width = "150"},
+};
+await Gantt.ExportToPdfAsync(exportProperties);
+}
+}
 
     public class TaskData
     {
@@ -645,6 +649,7 @@ To customize column widths in the exported PDF document, set the [Width](https:/
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -669,42 +674,42 @@ The following code snippet demonstrates how to configure the `Columns` property 
 @using Syncfusion.PdfExport
 
 <SfGantt @ref="Gantt" ID="GanttExport" DataSource="@TaskCollection" Height="450px" Width="900px" AllowPdfExport="true" Toolbar="toolbarItem">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Dependency="Predecessor"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Dependency="Predecessor"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttColumns>
-        <GanttColumn Field="TaskId" HeaderText="Task Id" Width="100" HeaderTextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
-        <GanttColumn Field="TaskName" HeaderText="Task Name"></GanttColumn>
-        <GanttColumn Field="StartDate" HeaderText="Start Date" TextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
-        <GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
-        <GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
-        <GanttColumn Field="Predecessor" HeaderText="Dependency"></GanttColumn>
-    </GanttColumns>
-    <GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
+</GanttTaskFields>
+<GanttColumns>
+<GanttColumn Field="TaskId" HeaderText="Task Id" Width="100" HeaderTextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
+<GanttColumn Field="TaskName" HeaderText="Task Name"></GanttColumn>
+<GanttColumn Field="StartDate" HeaderText="Start Date" TextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
+<GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
+<GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
+<GanttColumn Field="Predecessor" HeaderText="Dependency"></GanttColumn>
+</GanttColumns>
+<GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    public SfGantt<TaskData>? Gantt;
-    private List<object> toolbarItem = new List<Object>() { new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport" } };
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
-    public async void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
-    {
-        if (args.Item.Id == "PdfExport" && Gantt!=null)
-        {
-            GanttPdfExportProperties exportProperties = new GanttPdfExportProperties();
-            exportProperties.Columns = new List<GanttColumn>()
-            {
-                new GanttColumn(){ Field = "TaskID", HeaderText = "Task Id", Width = "100" },
-                new GanttColumn(){ Field = "TaskName", HeaderText = "Task Name", Width = "200"},
-                new GanttColumn(){ Field = "StartDate", HeaderText = "Start Date", Width = "150"},
-            };
-            await Gantt.ExportToPdfAsync(exportProperties);
-        }
-    }
+public List<TaskData>? TaskCollection { get; set; }
+public SfGantt<TaskData>? Gantt;
+private List<object> toolbarItem = new List<Object>() { new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport" } };
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
+public async void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
+{
+if (args.Item.Id == "PdfExport" && Gantt!=null)
+{
+GanttPdfExportProperties exportProperties = new GanttPdfExportProperties();
+exportProperties.Columns = new List<GanttColumn>()
+{
+new GanttColumn(){ Field = "TaskID", HeaderText = "Task Id", Width = "100" },
+new GanttColumn(){ Field = "TaskName", HeaderText = "Task Name", Width = "200"},
+new GanttColumn(){ Field = "StartDate", HeaderText = "Start Date", Width = "150"},
+};
+await Gantt.ExportToPdfAsync(exportProperties);
+}
+}
 
     public class TaskData
     {
@@ -733,6 +738,7 @@ The following code snippet demonstrates how to configure the `Columns` property 
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -755,44 +761,44 @@ The following code demonstrates how to use the `PdfExporting` event to export sp
 @using Syncfusion.PdfExport
 
 <SfGantt @ref="Gantt" ID="GanttExport" DataSource="@TaskCollection" Height="450px" Width="900px" AllowPdfExport="true" Toolbar="toolbarItem">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Dependency="Predecessor"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Dependency="Predecessor"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttColumns>
-        <GanttColumn Field="TaskId" HeaderText="Task Id" Width="100" HeaderTextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
-        <GanttColumn Field="TaskName" HeaderText="Task Name"></GanttColumn>
-        <GanttColumn Field="StartDate" HeaderText="Start Date" TextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
-        <GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
-        <GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
-        <GanttColumn Field="Predecessor" HeaderText="Dependency"></GanttColumn>
-    </GanttColumns>
-    <GanttEvents OnToolbarClick="ToolbarClickHandler" PdfExporting=" PdfExportingHandler" TValue="TaskData"></GanttEvents>
+</GanttTaskFields>
+<GanttColumns>
+<GanttColumn Field="TaskId" HeaderText="Task Id" Width="100" HeaderTextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
+<GanttColumn Field="TaskName" HeaderText="Task Name"></GanttColumn>
+<GanttColumn Field="StartDate" HeaderText="Start Date" TextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
+<GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
+<GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
+<GanttColumn Field="Predecessor" HeaderText="Dependency"></GanttColumn>
+</GanttColumns>
+<GanttEvents OnToolbarClick="ToolbarClickHandler" PdfExporting=" PdfExportingHandler" TValue="TaskData"></GanttEvents>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    public SfGantt<TaskData>? Gantt;
-    private List<object> toolbarItem = new List<Object>() { new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport" } };
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
-    public async void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
-    {
-        if (args.Item.Id == "PdfExport" && Gantt!=null)
-        {
-            await Gantt.ExportToPdfAsync();
-        }
-    }
-    public void PdfExportingHandler(PdfExportEventArgs args)
-    {
-        args.Columns = new List<GanttColumn>()
-            {
-                new GanttColumn(){ Field = "TaskID", HeaderText = "Task Id", Width = "100" },
-                new GanttColumn(){ Field = "TaskName", HeaderText = "Task Name", Width = "200"},
-                new GanttColumn(){ Field = "StartDate", HeaderText = "Start Date", Width = "150"},
-            };
-    }
+public List<TaskData>? TaskCollection { get; set; }
+public SfGantt<TaskData>? Gantt;
+private List<object> toolbarItem = new List<Object>() { new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport" } };
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
+public async void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
+{
+if (args.Item.Id == "PdfExport" && Gantt!=null)
+{
+await Gantt.ExportToPdfAsync();
+}
+}
+public void PdfExportingHandler(PdfExportEventArgs args)
+{
+args.Columns = new List<GanttColumn>()
+{
+new GanttColumn(){ Field = "TaskID", HeaderText = "Task Id", Width = "100" },
+new GanttColumn(){ Field = "TaskName", HeaderText = "Task Name", Width = "200"},
+new GanttColumn(){ Field = "StartDate", HeaderText = "Start Date", Width = "150"},
+};
+}
 
     public class TaskData
     {
@@ -821,6 +827,7 @@ The following code demonstrates how to use the `PdfExporting` event to export sp
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -836,12 +843,12 @@ You can customize the appearance of taskbars in the exported PDF document using 
 
 The PDF export functionality allows you to customize the appearance of taskbars in the exported PDF document using the [TaskbarColor](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.PdfGanttStyle.html#Syncfusion_Blazor_Gantt_PdfGanttStyle_TaskbarColor) property in the [GanttPdfExportProperties](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttPdfExportProperties.html) class. This property lets you define custom colors for different types of taskbars, including:
 
-* Parent Taskbars
-* Child Taskbars
-* Milestones
-* Critical Paths
-* Manual Taskbars
-* Baselines
+- Parent Taskbars
+- Child Taskbars
+- Milestones
+- Critical Paths
+- Manual Taskbars
+- Baselines
 
 The following code snippet demonstrates how to customize taskbar colors in the exported PDF document:
 
@@ -854,46 +861,46 @@ The following code snippet demonstrates how to customize taskbar colors in the e
 @using Syncfusion.PdfExport
 
 <SfGantt @ref="Gantt" ID="GanttExport" DataSource="@TaskCollection" Height="450px" Width="900px" AllowPdfExport="true" Toolbar="toolbarItem" EnableCriticalPath="true"
-         RenderBaseline="true">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" BaselineStartDate="BaselineStartDate" BaselineEndDate="BaselineEndDate"
+RenderBaseline="true">
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" BaselineStartDate="BaselineStartDate" BaselineEndDate="BaselineEndDate"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttColumns>
-        <GanttColumn Field="TaskId" HeaderText="Task Id" Width="100" HeaderTextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
-        <GanttColumn Field="TaskName" HeaderText="Task Name"></GanttColumn>
-        <GanttColumn Field="StartDate" HeaderText="Start Date" TextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
-        <GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
-        <GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
-    </GanttColumns>
-    <GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
+</GanttTaskFields>
+<GanttColumns>
+<GanttColumn Field="TaskId" HeaderText="Task Id" Width="100" HeaderTextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
+<GanttColumn Field="TaskName" HeaderText="Task Name"></GanttColumn>
+<GanttColumn Field="StartDate" HeaderText="Start Date" TextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
+<GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
+<GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
+</GanttColumns>
+<GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    public SfGantt<TaskData>? Gantt;
-    private List<object> toolbarItem = new List<Object>() { new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport" } };
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
-    public async void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
-    {
-        if (args.Item.Id == "PdfExport" && Gantt!=null)
-        {
-            GanttPdfExportProperties pdfExport = new GanttPdfExportProperties();
-            pdfExport.Style = new PdfGanttStyle();
-            pdfExport.Style.TaskbarColor = new PdfTaskbarColor();
-            pdfExport.Style.TaskbarColor.ParentTaskbarColor = new PdfColor(220, 118, 51);
-            pdfExport.Style.TaskbarColor.ParentProgressColor = new PdfColor(203, 67, 53);
-            pdfExport.Style.TaskbarColor.ChildProgressColor = new PdfColor(35, 155, 86);
-            pdfExport.Style.TaskbarColor.ChildTaskbarColor = new PdfColor(130, 224, 170);
-            pdfExport.Style.TaskbarColor.CriticalPathTaskbarColor = new PdfColor(173, 121, 64);
-            pdfExport.Style.TaskbarColor.CriticalPathProgressColor = new PdfColor(145, 76, 0);
-            pdfExport.Style.TaskbarColor.BaselineColor = new PdfColor(179, 38, 30);
-            pdfExport.Style.TaskbarColor.MilestoneColor = new PdfColor(141, 124, 187);
-            await Gantt.ExportToPdfAsync(pdfExport);
-        }
-    }
+public List<TaskData>? TaskCollection { get; set; }
+public SfGantt<TaskData>? Gantt;
+private List<object> toolbarItem = new List<Object>() { new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport" } };
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
+public async void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
+{
+if (args.Item.Id == "PdfExport" && Gantt!=null)
+{
+GanttPdfExportProperties pdfExport = new GanttPdfExportProperties();
+pdfExport.Style = new PdfGanttStyle();
+pdfExport.Style.TaskbarColor = new PdfTaskbarColor();
+pdfExport.Style.TaskbarColor.ParentTaskbarColor = new PdfColor(220, 118, 51);
+pdfExport.Style.TaskbarColor.ParentProgressColor = new PdfColor(203, 67, 53);
+pdfExport.Style.TaskbarColor.ChildProgressColor = new PdfColor(35, 155, 86);
+pdfExport.Style.TaskbarColor.ChildTaskbarColor = new PdfColor(130, 224, 170);
+pdfExport.Style.TaskbarColor.CriticalPathTaskbarColor = new PdfColor(173, 121, 64);
+pdfExport.Style.TaskbarColor.CriticalPathProgressColor = new PdfColor(145, 76, 0);
+pdfExport.Style.TaskbarColor.BaselineColor = new PdfColor(179, 38, 30);
+pdfExport.Style.TaskbarColor.MilestoneColor = new PdfColor(141, 124, 187);
+await Gantt.ExportToPdfAsync(pdfExport);
+}
+}
 
     public class TaskData
     {
@@ -923,6 +930,7 @@ The following code snippet demonstrates how to customize taskbar colors in the e
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -930,7 +938,7 @@ The following code snippet demonstrates how to customize taskbar colors in the e
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/hNrnZQBDiEJywuwb?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-### Through event 
+### Through event
 
 The PDF export functionality allows you to customize the appearance of taskbars in the exported PDF document using the [PdfQueryTaskbarInfo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_PdfQueryTaskbarInfo) event. This event provides flexibility to format various taskbar types, including parent taskbars, individual taskbars, and milestone templates.
 
@@ -945,48 +953,48 @@ The following code snippet demonstrates how to use the `PdfQueryTaskbarInfo` eve
 @using Syncfusion.PdfExport
 
 <SfGantt @ref="Gantt" ID="GanttExport" DataSource="@TaskCollection" Height="450px" Width="900px" AllowPdfExport="true" Toolbar="toolbarItem">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Dependency="Predecessor"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Dependency="Predecessor"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttColumns>
-        <GanttColumn Field="TaskId" HeaderText="Task Id" Width="100" HeaderTextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
-        <GanttColumn Field="TaskName" HeaderText="Task Name"></GanttColumn>
-        <GanttColumn Field="StartDate" HeaderText="Start Date" TextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
-        <GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
-        <GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
-        <GanttColumn Field="Predecessor" HeaderText="Dependency"></GanttColumn>
-    </GanttColumns>
-    <GanttEvents OnToolbarClick="ToolbarClickHandler" PdfQueryTaskbarInfo="PdfQueryTaskbarInfoHandler" TValue="TaskData"></GanttEvents>
+</GanttTaskFields>
+<GanttColumns>
+<GanttColumn Field="TaskId" HeaderText="Task Id" Width="100" HeaderTextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
+<GanttColumn Field="TaskName" HeaderText="Task Name"></GanttColumn>
+<GanttColumn Field="StartDate" HeaderText="Start Date" TextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
+<GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
+<GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
+<GanttColumn Field="Predecessor" HeaderText="Dependency"></GanttColumn>
+</GanttColumns>
+<GanttEvents OnToolbarClick="ToolbarClickHandler" PdfQueryTaskbarInfo="PdfQueryTaskbarInfoHandler" TValue="TaskData"></GanttEvents>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    public SfGantt<TaskData>? Gantt;
-    private List<object> toolbarItem = new List<Object>() { new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport" } };
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
-    public async void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
-    {
-        if (args.Item.Id == "PdfExport" && Gantt!=null)
-        {
-            await Gantt.ExportToPdfAsync();
-        }
-    }
-    public void PdfQueryTaskbarInfoHandler(PdfQueryTaskbarInfoEventArgs<TaskData> args)
-    {
-        if (args.Data.TaskId == 3)
-        {
-            args.TaskbarStyle.Color = new PdfTaskbarColor();
-            args.TaskbarStyle.Color.ChildProgressColor = new Syncfusion.PdfExport.PdfColor(103, 80, 164);
-            args.TaskbarStyle.Color.ChildTaskbarColor = new Syncfusion.PdfExport.PdfColor(141, 124, 187);
-        }
-        if (args.Data.TaskId == 4)
-        {
-            args.TaskbarStyle.Color = new PdfTaskbarColor();
-            args.TaskbarStyle.Color.MilestoneColor = new Syncfusion.PdfExport.PdfColor(103, 80, 164);
-        }
+public List<TaskData>? TaskCollection { get; set; }
+public SfGantt<TaskData>? Gantt;
+private List<object> toolbarItem = new List<Object>() { new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport" } };
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
+public async void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
+{
+if (args.Item.Id == "PdfExport" && Gantt!=null)
+{
+await Gantt.ExportToPdfAsync();
+}
+}
+public void PdfQueryTaskbarInfoHandler(PdfQueryTaskbarInfoEventArgs<TaskData> args)
+{
+if (args.Data.TaskId == 3)
+{
+args.TaskbarStyle.Color = new PdfTaskbarColor();
+args.TaskbarStyle.Color.ChildProgressColor = new Syncfusion.PdfExport.PdfColor(103, 80, 164);
+args.TaskbarStyle.Color.ChildTaskbarColor = new Syncfusion.PdfExport.PdfColor(141, 124, 187);
+}
+if (args.Data.TaskId == 4)
+{
+args.TaskbarStyle.Color = new PdfTaskbarColor();
+args.TaskbarStyle.Color.MilestoneColor = new Syncfusion.PdfExport.PdfColor(103, 80, 164);
+}
 
     }
     public class TaskData
@@ -1016,6 +1024,7 @@ The following code snippet demonstrates how to use the `PdfQueryTaskbarInfo` eve
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -1040,72 +1049,72 @@ The following code snippet demonstrates how to use the `PdfQueryCellInfo` event 
 @using Syncfusion.PdfExport
 
 <SfGantt @ref="Gantt" ID="GanttExport" DataSource="@TaskCollection" Height="450px" Width="900px" AllowPdfExport="true" Toolbar="toolbarItem">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Dependency="Predecessor"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Dependency="Predecessor"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttColumns>
-        <GanttColumn Field="TaskId" HeaderText="Task Id" Width="100" HeaderTextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
-        <GanttColumn Field="TaskName" HeaderText="Task Name"></GanttColumn>
-        <GanttColumn Field="StartDate" HeaderText="Start Date" TextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
-        <GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
-        <GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
-        <GanttColumn Field="Predecessor" HeaderText="Dependency"></GanttColumn>
-    </GanttColumns>
-    <GanttEvents OnToolbarClick="ToolbarClickHandler" PdfQueryCellInfo="PdfQueryCellInfoHandler" TValue="TaskData"></GanttEvents>
+</GanttTaskFields>
+<GanttColumns>
+<GanttColumn Field="TaskId" HeaderText="Task Id" Width="100" HeaderTextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
+<GanttColumn Field="TaskName" HeaderText="Task Name"></GanttColumn>
+<GanttColumn Field="StartDate" HeaderText="Start Date" TextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
+<GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
+<GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
+<GanttColumn Field="Predecessor" HeaderText="Dependency"></GanttColumn>
+</GanttColumns>
+<GanttEvents OnToolbarClick="ToolbarClickHandler" PdfQueryCellInfo="PdfQueryCellInfoHandler" TValue="TaskData"></GanttEvents>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    public SfGantt<TaskData>? Gantt;
-    private List<object> toolbarItem = new List<Object>() { new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport" } };
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
-    public async void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
-    {
-        if (args.Item.Id == "PdfExport" && Gantt!=null)
-        {
-            await Gantt.ExportToPdfAsync();
-        }
-    }
-    public void PdfQueryCellInfoHandler(Syncfusion.Blazor.Gantt.PdfQueryCellInfoEventArgs<TaskData> args)
-    {
-        if (args.Column.Field == "TaskName" && args.Data.TaskId == 5)
-        {
-            args.Cell.Value = "Updated Value";
-            args.Cell.CellStyle = new PdfElementStyle()
-            {
-                FillBackgroundColor = "Orange",
-                Font = new PdfGridFont()
-                {
-                    FontFamily = PdfFontFamily.TimesRoman,
-                    FontSize = 6,
-                    FontStyle = PdfFontStyle.Italic,
-                    IsTrueType = false,
-                    TextColor = "Red",
-                    TextHighlightColor = "Green"
-                }
-            };
-            args.Cell.CellStyle.Border = new Syncfusion.Blazor.Grids.PdfBorder()
-            {
-                Color = "Black",
-                DashStyle = Syncfusion.Blazor.Grids.PdfDashStyle.Dot,
-                Width = 0.1
-            };
-        }
-    }
-    public class TaskData
-    {
-        public int TaskId { get; set; }
-        public string? TaskName { get; set; }
-        public DateTime StartDate { get; set; }
-        public DateTime? EndDate { get; set; }
-        public string? Duration { get; set; }
-        public int Progress { get; set; }
-        public int? ParentId { get; set; }
-        public string? Predecessor { get; set; }
-    }
+public List<TaskData>? TaskCollection { get; set; }
+public SfGantt<TaskData>? Gantt;
+private List<object> toolbarItem = new List<Object>() { new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport" } };
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
+public async void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
+{
+if (args.Item.Id == "PdfExport" && Gantt!=null)
+{
+await Gantt.ExportToPdfAsync();
+}
+}
+public void PdfQueryCellInfoHandler(Syncfusion.Blazor.Gantt.PdfQueryCellInfoEventArgs<TaskData> args)
+{
+if (args.Column.Field == "TaskName" && args.Data.TaskId == 5)
+{
+args.Cell.Value = "Updated Value";
+args.Cell.CellStyle = new PdfElementStyle()
+{
+FillBackgroundColor = "Orange",
+Font = new PdfGridFont()
+{
+FontFamily = PdfFontFamily.TimesRoman,
+FontSize = 6,
+FontStyle = PdfFontStyle.Italic,
+IsTrueType = false,
+TextColor = "Red",
+TextHighlightColor = "Green"
+}
+};
+args.Cell.CellStyle.Border = new Syncfusion.Blazor.Grids.PdfBorder()
+{
+Color = "Black",
+DashStyle = Syncfusion.Blazor.Grids.PdfDashStyle.Dot,
+Width = 0.1
+};
+}
+}
+public class TaskData
+{
+public int TaskId { get; set; }
+public string? TaskName { get; set; }
+public DateTime StartDate { get; set; }
+public DateTime? EndDate { get; set; }
+public string? Duration { get; set; }
+public int Progress { get; set; }
+public int? ParentId { get; set; }
+public string? Predecessor { get; set; }
+}
 
     public static List<TaskData> GetTaskCollection()
     {
@@ -1122,6 +1131,7 @@ The following code snippet demonstrates how to use the `PdfQueryCellInfo` event 
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -1148,35 +1158,35 @@ In the following sample, header template with images and text are exported to PD
 @inject HttpClient Http
 
 <SfGantt @ref="Gantt" ID="GanttExport" DataSource="@TaskCollection" Width="700px" Height="400px" AllowPdfExport="true" Toolbar="toolbarItem">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId"></GanttTaskFields>
-    <GanttColumns>
-        <GanttColumn Field="TaskName" HeaderText="Job Name" Width="250">
-            <HeaderTemplate>
-                <div>
-                    <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" width="20" height="20" style="margin-right: 8px">
-                    @((context as GridColumn)?.HeaderText)
-                </div>
-            </HeaderTemplate>
-        </GanttColumn>
-        <GanttColumn Field="StartDate" HeaderText="Start Date" Width="250">
-            <HeaderTemplate>
-                <div>
-                    <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" width="20" height="20" style="margin-right: 8px">
-                    @((context as GridColumn)?.HeaderText)
-                </div>
-            </HeaderTemplate>
-        </GanttColumn>
-    </GanttColumns>
-    <GanttEvents OnToolbarClick="ToolbarClickHandler" PdfColumnHeaderQueryCellInfo="PdfHeaderQueryCellInfoHandler" TValue="TaskData"></GanttEvents>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId"></GanttTaskFields>
+<GanttColumns>
+<GanttColumn Field="TaskName" HeaderText="Job Name" Width="250">
+<HeaderTemplate>
+<div>
+<img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" width="20" height="20" style="margin-right: 8px">
+@((context as GridColumn)?.HeaderText)
+</div>
+</HeaderTemplate>
+</GanttColumn>
+<GanttColumn Field="StartDate" HeaderText="Start Date" Width="250">
+<HeaderTemplate>
+<div>
+<img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" width="20" height="20" style="margin-right: 8px">
+@((context as GridColumn)?.HeaderText)
+</div>
+</HeaderTemplate>
+</GanttColumn>
+</GanttColumns>
+<GanttEvents OnToolbarClick="ToolbarClickHandler" PdfColumnHeaderQueryCellInfo="PdfHeaderQueryCellInfoHandler" TValue="TaskData"></GanttEvents>
 </SfGantt>
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    public SfGantt<TaskData>? Gantt;
-    private List<object> toolbarItem = new List<object>() {
-        new Syncfusion.Blazor.Navigations.ToolbarItem() {
-            Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport"
-        }
-    };
+public List<TaskData>? TaskCollection { get; set; }
+public SfGantt<TaskData>? Gantt;
+private List<object> toolbarItem = new List<object>() {
+new Syncfusion.Blazor.Navigations.ToolbarItem() {
+Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport"
+}
+};
 
     public PdfImage? image;
     protected override async Task OnInitializedAsync()
@@ -1228,6 +1238,7 @@ In the following sample, header template with images and text are exported to PD
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -1254,80 +1265,80 @@ In the following sample, task label template with images and text are exported t
 @using System.IO
 
 <SfGantt @ref="Gantt" ID="GanttExport" DataSource="@TaskCollection" Height="450px" Width="900px" AllowPdfExport="true" Toolbar="toolbarItem"
-         ProjectStartDate="new DateTime(2026,04,03)" ProjectEndDate="new DateTime(2026,05,17)">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Dependency="Predecessor"
+ProjectStartDate="new DateTime(2026,04,03)" ProjectEndDate="new DateTime(2026,05,17)">
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Dependency="Predecessor"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttColumns>
-        <GanttColumn Field="TaskId" HeaderText="Task Id" Width="100" HeaderTextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
-        <GanttColumn Field="TaskName" HeaderText="Task Name"></GanttColumn>
-        <GanttColumn Field="StartDate" HeaderText="Start Date" TextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
-        <GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
-        <GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
-        <GanttColumn Field="Predecessor" HeaderText="Dependency"></GanttColumn>
-    </GanttColumns>
-    <GanttLabelSettings TValue="TaskData">
-        <RightLabelTemplate>
-            @{
-                if ((context as TaskData).TaskId == 5)
-                {
-                    <div class="e-right-label-inner-div" style="height:22px;margin-top:7px;">
-                        <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" />
-                    </div>
-                }
-                else
-                {
-                    <div class="e-right-label-inner-div" style="height:22px;margin-top:7px;">
-                        <span class="e-label">@((context as TaskData).TaskName)</span>
-                    </div>
-                }
-            }
-        </RightLabelTemplate>
-        <LeftLabelTemplate>
-            @if ((context as TaskData).TaskId == 2)
-            {
-                <div class="e-left-label-inner-div" style="height:22px;margin-top:7px;">
-                    <span class="e-label">Updated Value</span>
-                </div>
-            }
-            else
-            {
-                <div class="e-left-label-inner-div" style="height:22px;margin-top:7px;">
-                    <span class="e-label">@((context as TaskData).TaskName)</span>
-                </div>
-            }
-        </LeftLabelTemplate>
-        <TaskLabelTemplate>
-            @if ((context as TaskData).TaskId == 3)
-            {
-                <div class="e-task-label-inner-div" style="line-height:21px; height:22px;">
-                    <span class="e-label" style="color:white;">-@((context as TaskData).Progress)%</span>
-                </div>
-            }
-            else
-            {
-                <div class="e-task-label-inner-div" style="line-height:21px; height:22px;">
-                    <span class="e-label" style="color:white;">@((context as TaskData).Progress)%</span>
-                </div>
-            }
-        </TaskLabelTemplate>
-    </GanttLabelSettings>
-    <GanttEvents OnToolbarClick="ToolbarClickHandler" PdfQueryTaskbarInfo="PdfQueryTaskbarInfoHandler" TValue="TaskData"></GanttEvents>
+</GanttTaskFields>
+<GanttColumns>
+<GanttColumn Field="TaskId" HeaderText="Task Id" Width="100" HeaderTextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
+<GanttColumn Field="TaskName" HeaderText="Task Name"></GanttColumn>
+<GanttColumn Field="StartDate" HeaderText="Start Date" TextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
+<GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
+<GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
+<GanttColumn Field="Predecessor" HeaderText="Dependency"></GanttColumn>
+</GanttColumns>
+<GanttLabelSettings TValue="TaskData">
+<RightLabelTemplate>
+@{
+if ((context as TaskData).TaskId == 5)
+{
+<div class="e-right-label-inner-div" style="height:22px;margin-top:7px;">
+<img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" />
+</div>
+}
+else
+{
+<div class="e-right-label-inner-div" style="height:22px;margin-top:7px;">
+<span class="e-label">@((context as TaskData).TaskName)</span>
+</div>
+}
+}
+</RightLabelTemplate>
+<LeftLabelTemplate>
+@if ((context as TaskData).TaskId == 2)
+{
+<div class="e-left-label-inner-div" style="height:22px;margin-top:7px;">
+<span class="e-label">Updated Value</span>
+</div>
+}
+else
+{
+<div class="e-left-label-inner-div" style="height:22px;margin-top:7px;">
+<span class="e-label">@((context as TaskData).TaskName)</span>
+</div>
+}
+</LeftLabelTemplate>
+<TaskLabelTemplate>
+@if ((context as TaskData).TaskId == 3)
+{
+<div class="e-task-label-inner-div" style="line-height:21px; height:22px;">
+<span class="e-label" style="color:white;">-@((context as TaskData).Progress)%</span>
+</div>
+}
+else
+{
+<div class="e-task-label-inner-div" style="line-height:21px; height:22px;">
+<span class="e-label" style="color:white;">@((context as TaskData).Progress)%</span>
+</div>
+}
+</TaskLabelTemplate>
+</GanttLabelSettings>
+<GanttEvents OnToolbarClick="ToolbarClickHandler" PdfQueryTaskbarInfo="PdfQueryTaskbarInfoHandler" TValue="TaskData"></GanttEvents>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    public SfGantt<TaskData>? Gantt;
-    private List<object> toolbarItem = new List<object>()
-    {
-        new Syncfusion.Blazor.Navigations.ToolbarItem()
-        {
-            Text = "PDF Export",
-            TooltipText = "PDF Export",
-            Id = "PdfExport",
-            PrefixIcon = "e-pdfexport"
-        }
-    };
+public List<TaskData>? TaskCollection { get; set; }
+public SfGantt<TaskData>? Gantt;
+private List<object> toolbarItem = new List<object>()
+{
+new Syncfusion.Blazor.Navigations.ToolbarItem()
+{
+Text = "PDF Export",
+TooltipText = "PDF Export",
+Id = "PdfExport",
+PrefixIcon = "e-pdfexport"
+}
+};
 
     public static PdfImage? image;
 
@@ -1409,6 +1420,7 @@ In the following sample, task label template with images and text are exported t
             new TaskData() { TaskId = 8, TaskName = "Estimation approval", StartDate = new DateTime(2026, 04, 07), Duration = "0", Progress = 30, ParentId = 5 }
         };
     }
+
 }
 
 {% endhighlight %}
@@ -1427,6 +1439,7 @@ In the following sample, task label template with images and text are exported t
 - **Consistent label styling**: Ensure consistent theme across labels with uniform font styles, colors, and sizes.
 
 ### Image handling across events
+
 - **Base64 and MemoryStream**: Convert images to Base64 strings, then use `MemoryStream` to convert them to `PdfImage`. This avoids reliance on potentially inaccessible web links.
 - **Height and width management**: Scale images to fit designated areas to prevent default resizing that reflects cell or row heights. Maintain a professional PDF layout.
 - **Compression and optimization**: Compress images prior to Base64 conversion to reduce file size while maintaining quality, optimizing the final PDF document size.
@@ -1445,5 +1458,5 @@ In the following sample, task label template with images and text are exported t
    - **Optimize resources**: Large images or complex styling may slow down the PDF export process. Consider optimizing image size and simplifying styles.
 
 4. **Color code customization**
-    - **Use valid color codes**: You can use HEX (`#RRGGBB`), or standard color names like `red`, `blue`, etc. Ensure all color codes or names used are supported and valid.
+   - **Use valid color codes**: You can use HEX (`#RRGGBB`), or standard color names like `red`, `blue`, etc. Ensure all color codes or names used are supported and valid.
    - **Consistency across styles**: Maintain consistent use of color codes in the styles to avoid unexpected color changes or conflicts during PDF rendering.

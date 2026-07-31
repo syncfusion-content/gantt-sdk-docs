@@ -28,14 +28,14 @@ The Gantt Chart component offers multiple hierarchy modes through the [filterSet
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs3/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/filtering-cs3/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs3/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/filtering-cs3/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/filtering-cs3" %}
 
 ### Initial filter
 
@@ -43,30 +43,30 @@ To apply filtering during initial rendering, define filter predicates using the 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs4/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/filtering-cs4/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs4/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/filtering-cs4/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs4" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/filtering-cs4" %}
 
 ### Filter operators
 
 The filter operator for a column can be defined using the `filterSettings.columns.operator` property.
 
-Operator | Description | Supported Types
--------- | ----------- | ---------------
-`startswith` | Checks if the value begins with the specified text. | String  
-`endswith` | Checks if the value ends with the specified text. | String  
-`contains` | Checks if the value contains the specified text. | String  
-`equal` | Checks if the value equals the specified value. | String \| Number \| Boolean \| Date  
-`notequal` | Checks if the value does **not** equal the specified value. | String \| Number \| Boolean \| Date  
-`greaterthan` | Checks if the value is greater than the specified value. | Number \| Date  
-`greaterthanorequal` | Checks if the value is greater than or equal to the specified value. | Number \| Date  
-`lessthan` | Checks if the value is less than the specified value. | Number \| Date  
-`lessthanorequal` | Checks if the value is less than or equal to the specified value. | Number \| Date  
+| Operator             | Description                                                          | Supported Types                     |
+| -------------------- | -------------------------------------------------------------------- | ----------------------------------- |
+| `startswith`         | Checks if the value begins with the specified text.                  | String                              |
+| `endswith`           | Checks if the value ends with the specified text.                    | String                              |
+| `contains`           | Checks if the value contains the specified text.                     | String                              |
+| `equal`              | Checks if the value equals the specified value.                      | String \| Number \| Boolean \| Date |
+| `notequal`           | Checks if the value does **not** equal the specified value.          | String \| Number \| Boolean \| Date |
+| `greaterthan`        | Checks if the value is greater than the specified value.             | Number \| Date                      |
+| `greaterthanorequal` | Checks if the value is greater than or equal to the specified value. | Number \| Date                      |
+| `lessthan`           | Checks if the value is less than the specified value.                | Number \| Date                      |
+| `lessthanorequal`    | Checks if the value is less than or equal to the specified value.    | Number \| Date                      |
 
 > By default, `filterSettings.columns.operator` is set to **equal**.
 
@@ -79,14 +79,14 @@ Example: Type **Project** in the **TaskName** column to filter diacritic charact
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs5/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/filtering-cs5/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs5/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/filtering-cs5/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs5" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/filtering-cs5" %}
 
 ## Filtering a specific column by method
 
@@ -94,14 +94,14 @@ You can filter a specific column dynamically using the [filterByColumn](https://
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs6/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/filtering-cs6/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs6/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/filtering-cs6/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs6" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/filtering-cs6" %}
 
 ## Clear filtered columns
 
@@ -109,14 +109,14 @@ You can clear all filtering conditions using the [clearFiltering](https://ej2.sy
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs7/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/filtering-cs7/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs7/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/filtering-cs7/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs7" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/filtering-cs7" %}
 
 ## Custom component in filter menu
 
@@ -124,19 +124,19 @@ You can add custom filter components using the [column.filter.ui](https://ej2.sy
 
 To implement a custom filter UI, define:
 
-- `create`: Creates a custom component  
-- `write`: Writes events to the custom component  
-- `read`: Reads the filter value  
+- `create`: Creates a custom component
+- `write`: Writes events to the custom component
+- `read`: Reads the filter value
 
 Below is an example where a dropdown is used as a custom filter for the **TaskName** column.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs8/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/filtering-cs8/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs8/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/filtering-cs8/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs8" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/filtering-cs8" %}

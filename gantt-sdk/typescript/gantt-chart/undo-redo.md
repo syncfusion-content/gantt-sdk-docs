@@ -16,6 +16,7 @@ The undo redo feature in the [TypeScript Gantt Chart](https://www.syncfusion.com
 ## Configure undo redo
 
 Enable undo redo by setting [enableUndoRedo](../api/gantt#enableundoredo) to **true** and injecting `UndoRedo`. The [undoRedoActions](../api/gantt#undoredoactions) property customizes supported actions, such as:
+
 - **Edit:** Reverts task field changes (e.g., StartDate, Duration) via dialog or taskbar drag, requiring `Edit`.
 - **Delete:** Restores deleted tasks, requiring `Edit`.
 - **Add:** Removes added tasks, requiring `Edit`.
@@ -61,27 +62,27 @@ In the following code example, **Edit** and **Delete** actions are specified in 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/undo-redo-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/undo-redo-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/undo-redo-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/undo-redo-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/undo-redo-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/undo-redo-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/undo-redo-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/undo-redo-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/undo-redo-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/undo-redo-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/undo-redo-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/undo-redo-cs1" %}
 {% endif %}
 
 ## Configuring the storage step count for undo and redo actions
@@ -98,27 +99,27 @@ In the following example, `undoRedoStepsCount` value is set to 5. This code allo
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/undo-redo-cs2/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/undo-redo-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/undo-redo-cs2/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/undo-redo-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/undo-redo-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/undo-redo-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/undo-redo-cs2/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/undo-redo-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/undo-redo-cs2/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/undo-redo-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/undo-redo-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/undo-redo-cs2" %}
 {% endif %}
 
 ## Programmatic undo and redo in Gantt Chart
@@ -131,27 +132,27 @@ The following example triggers `undo` and `redo` via external buttons:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/undo-redo-cs3/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/undo-redo-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/undo-redo-cs3/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/undo-redo-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/undo-redo-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/undo-redo-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/undo-redo-cs3/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/undo-redo-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/undo-redo-cs3/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/undo-redo-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/undo-redo-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/undo-redo-cs3" %}
 {% endif %}
 
 ## Retrieve undo and redo stack collection
@@ -164,27 +165,27 @@ The following code example demonstrates how to retrieve the **undo** and **redo*
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/undo-redo-cs4/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/undo-redo-cs4/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/undo-redo-cs4/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/undo-redo-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/undo-redo-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/undo-redo-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/undo-redo-cs4/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/undo-redo-cs4/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/undo-redo-cs4/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/undo-redo-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/undo-redo-cs4" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/undo-redo-cs4" %}
 {% endif %}
 
 ## Clear undo and redo collection
@@ -197,30 +198,31 @@ The following code example demonstrates how to clear the undo and redo collectio
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/undo-redo-cs5/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/undo-redo-cs5/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/undo-redo-cs5/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/undo-redo-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/undo-redo-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/undo-redo-cs5" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/undo-redo-cs5/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/undo-redo-cs5/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/undo-redo-cs5/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/undo-redo-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/undo-redo-cs5" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/undo-redo-cs5" %}
 {% endif %}
 
 ## See also
+
 - [How to configure task editing?](./managing-tasks/task-bar-editing)
 - [How to manage task dependencies?](./task-dependency)
 - [How to configure critical path?](./critical-path)

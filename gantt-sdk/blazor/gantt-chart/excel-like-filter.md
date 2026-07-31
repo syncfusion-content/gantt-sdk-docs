@@ -27,7 +27,7 @@ To enable this feature, configure [GanttFilterSettings.FilterType](https://help.
 </SfGantt>
 
 @code {
-    public List<TaskData> TaskCollection { get; set; } = new();
+public List<TaskData> TaskCollection { get; set; } = new();
 
     protected override void OnInitialized()
     {
@@ -60,6 +60,7 @@ To enable this feature, configure [GanttFilterSettings.FilterType](https://help.
         public int Progress { get; set; }
         public int? ParentId { get; set; }
     }
+
 }
 
 {% endhighlight %}
@@ -67,8 +68,8 @@ To enable this feature, configure [GanttFilterSettings.FilterType](https://help.
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/rjhnXGBXhrnQIqnZ?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-> * The Excel-like filter feature supports various filter conditions, including text-based filters for task names, number-based filters for task Id and progress, and date-based filters for project timelines.
-> * The filter dialog provides additional options, such as searching for specific task values, and clearing applied project filters.
+> - The Excel-like filter feature supports various filter conditions, including text-based filters for task names, number-based filters for task Id and progress, and date-based filters for project timelines.
+> - The filter dialog provides additional options, such as searching for specific task values, and clearing applied project filters.
 
 ## Customize the filter choice count
 
@@ -90,11 +91,11 @@ To customize this behavior, the [FilterChoiceCount](https://help.syncfusion.com/
 </SfGantt>
 
 @code {
-    public List<TaskData> TaskCollection { get; set; } = new();
-    public void FilterDialogOpeningHandler(FilterDialogOpeningEventArgs args)
-    {
-        args.FilterChoiceCount = 100;
-    }
+public List<TaskData> TaskCollection { get; set; } = new();
+public void FilterDialogOpeningHandler(FilterDialogOpeningEventArgs args)
+{
+args.FilterChoiceCount = 100;
+}
 
     protected override void OnInitialized()
     {
@@ -128,6 +129,7 @@ To customize this behavior, the [FilterChoiceCount](https://help.syncfusion.com/
         public int Progress { get; set; }
         public int? ParentId { get; set; }
     }
+
 }
 
 {% endhighlight %}
@@ -168,10 +170,11 @@ In the example below, the filter checkbox list for the **Status** column is cust
         </GanttColumn>
 
     </GanttColumns>
+
 </SfGantt>
 
 @code {
-    public List<TaskData> TaskCollection { get; set; } = new();
+public List<TaskData> TaskCollection { get; set; } = new();
 
     protected override void OnInitialized()
     {
@@ -202,6 +205,7 @@ In the example below, the filter checkbox list for the **Status** column is cust
         public bool IsCompleted { get; set; }
         public int? ParentId { get; set; }
     }
+
 }
 
 {% endhighlight %}
@@ -215,7 +219,7 @@ In the Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart, ther
 
 ### Removing context menu option
 
-The Excel filter dialog includes several features such as **context menu**, **search box**, and **checkbox list** that may not be required in some project management scenarios. 
+The Excel filter dialog includes several features such as **context menu**, **search box**, and **checkbox list** that may not be required in some project management scenarios.
 
 To remove the context menu from the filter dialog, apply the following CSS rule to the Gantt Chart:
 
@@ -245,7 +249,7 @@ To remove the context menu from the filter dialog, apply the following CSS rule 
 </style>
 
 @code {
-    private List<TaskData> TaskCollection { get; set; } = new();
+private List<TaskData> TaskCollection { get; set; } = new();
 
     protected override void OnInitialized()
     {
@@ -278,6 +282,7 @@ To remove the context menu from the filter dialog, apply the following CSS rule 
         public int Progress { get; set; }
         public int? ParentId { get; set; }
     }
+
 }
 
 {% endhighlight %}
@@ -287,7 +292,7 @@ To remove the context menu from the filter dialog, apply the following CSS rule 
 
 ### Customize the height and width of filter dialog
 
-You can adjust the height and width of the filter dialog for each column using CSS styles within the  [FilterDialogOpening](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_FilterDialogOpening) event. This event is triggered before the filter dialog opens, allowing you to apply styles conditionally based on the column name.
+You can adjust the height and width of the filter dialog for each column using CSS styles within the [FilterDialogOpening](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_FilterDialogOpening) event. This event is triggered before the filter dialog opens, allowing you to apply styles conditionally based on the column name.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -307,7 +312,7 @@ You can adjust the height and width of the filter dialog for each column using C
 </style>
 
 @code {
-    private List<TaskData> TaskCollection { get; set; } = new();
+private List<TaskData> TaskCollection { get; set; } = new();
 
     protected override void OnInitialized()
     {
@@ -340,8 +345,8 @@ You can adjust the height and width of the filter dialog for each column using C
         public int Progress { get; set; }
         public int? ParentId { get; set; }
     }
-}
 
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -367,31 +372,31 @@ When a column is filtered, the Gantt Chart displays a default icon with predefin
 
 @if (IsLarge)
 {
-    <style>
-        #Gantt .e-excelfilter.e-popup.e-popup-open {
-            height: 400px;
-            width: 350px !important;
-        }
-    </style>
+<style>
+#Gantt .e-excelfilter.e-popup.e-popup-open {
+height: 400px;
+width: 350px !important;
+}
+</style>
 }
 @if (IsSmall)
 {
-    <style>
-        #Gantt .e-excelfilter.e-popup.e-popup-open {
-            height: 450px;
-            width: 280px !important;
-        }
-    </style>
+<style>
+#Gantt .e-excelfilter.e-popup.e-popup-open {
+height: 450px;
+width: 280px !important;
+}
+</style>
 }
 
 @code {
-    public List<TaskData> TaskCollection { get; set; } = new();
-    public bool IsLarge;
-    public bool IsSmall;
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public List<TaskData> TaskCollection { get; set; } = new();
+public bool IsLarge;
+public bool IsSmall;
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public void FilterDialogOpeningHandler(FilterDialogOpeningEventArgs args)
     {
@@ -438,6 +443,7 @@ When a column is filtered, the Gantt Chart displays a default icon with predefin
         public int Progress { get; set; }
         public int? ParentId { get; set; }
     }
+
 }
 
 {% endhighlight %}
@@ -445,4 +451,4 @@ When a column is filtered, the Gantt Chart displays a default icon with predefin
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/VNhdDGBNLBYifbYM?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-> The [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page provides comprehensive feature representations. The [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/overview?theme=bootstrap4) demonstrates how to present and manipulate project data effectively.
+> The [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page provides comprehensive feature representations. The [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt/overview?theme=bootstrap4) demonstrates how to present and manipulate project data effectively.

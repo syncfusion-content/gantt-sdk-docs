@@ -36,21 +36,21 @@ Set the [autoCalculateDateScheduling](https://ej2.syncfusion.com/angular/documen
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/virtual-scroll-cs2/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/virtual-scroll-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/virtual-scroll-cs2/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/virtual-scroll-cs2/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/virtual-scroll-cs2/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/virtual-scroll-cs2/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/virtual-scroll-cs2" %}
 
->When setting `autoCalculateDateScheduling` property to **false**, you must provide a valid data source; otherwise, the Gantt chart will render with invalid dates.
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/virtual-scroll-cs2" %}
+
+> When setting `autoCalculateDateScheduling` property to **false**, you must provide a valid data source; otherwise, the Gantt chart will render with invalid dates.
 
 ### Optimizing custom content rendering
 
@@ -71,30 +71,31 @@ The following tables show typical load times for various Gantt configurations, c
 
 **Non-virtualized scenario (2,500 tasks)**
 
-| Scenario                        | Load time (seconds) |
-|---------------------------------|---------------------|
+| Scenario                         | Load time (seconds) |
+| -------------------------------- | ------------------- |
 | Default hierarchy (Parent-Child) | 3.8                 |
-| + Predecessor                   | 5.4                 |
-| + Resources                     | 6.5                 |
-| + Split taskbars                | 7.8                 |
+| + Predecessor                    | 5.4                 |
+| + Resources                      | 6.5                 |
+| + Split taskbars                 | 7.8                 |
 
 **Virtualized scenario (25,000 tasks)**
 
-| Scenario                        | Load time (seconds) |
-|---------------------------------|---------------------|
+| Scenario                         | Load time (seconds) |
+| -------------------------------- | ------------------- |
 | Default hierarchy (Parent-Child) | 2.1                 |
-| + Predecessor                   | 5.6                 |
-| + Resources                     | 6.2                 |
-| + Split taskbars                | 6.8                 |
+| + Predecessor                    | 5.6                 |
+| + Resources                      | 6.2                 |
+| + Split taskbars                 | 6.8                 |
 
 ## Optimizing server-side data operations with adaptors
 
 The Angular Gantt Chart component supports various adaptors (OData, ODataV4, WebAPI, URL) for server-side data operations and CRUD functionalities. Using these adaptors with the `DataManager` component enables seamless remote data binding and action execution.
 
 During data operations like filtering and sorting, corresponding action queries are generated according to adaptor requirements. Handle these actions on the application side and return processed data to the Gantt. For efficient data processing, return processed data in this order:
-* Filtering
-* Sorting
-* Aggregates
+
+- Filtering
+- Sorting
+- Aggregates
 
 ## Avoiding MaxJsonLength errors with large datasets
 
@@ -103,7 +104,7 @@ The Angular Gantt Chart component operates on a client-server basis, sending dat
 **Solution 1**
 
 ```csharp
-<configuration> 
+<configuration>
    <system.web.extensions>
        <scripting>
            <webServices>
@@ -111,10 +112,11 @@ The Angular Gantt Chart component operates on a client-server basis, sending dat
            </webServices>
        </scripting>
    </system.web.extensions>
-</configuration> 
+</configuration>
 ```
 
 **Solution 2**
+
 ```csharp
 var serializer = new JavaScriptSerializer { MaxJsonLength = Int32.MaxValue };
 ```
@@ -123,30 +125,31 @@ var serializer = new JavaScriptSerializer { MaxJsonLength = Int32.MaxValue };
 
 Performance issues in applications with multiple Gantt Chart components relate to Angular's change detection mechanism rather than the Syncfusion component itself. Large DOM populations cause performance issues due to continuous change detection.
 
-> For more information on common reasons for slowdowns in Angular apps, you can [refer](https://blog.ninja-squad.com/2018/09/27/angular-performances-part-4/ ) to the [documentation](https://www.thirdrocktechkno.com/blog/top-reasons-why-your-angular-app-is-slow/ ) link:
+> For more information on common reasons for slowdowns in Angular apps, you can [refer](https://blog.ninja-squad.com/2018/09/27/angular-performances-part-4/) to the [documentation](https://www.thirdrocktechkno.com/blog/top-reasons-why-your-angular-app-is-slow/) link:
 
 [Angular](https://v17.angular.io/api/core/ChangeDetectionStrategy) provides two change detection strategies:
 
-* **Default change detection**: Uses the `CheckAlways` strategy with automatic change detection until explicitly deactivated. This can cause continuous detection for all template references.
+- **Default change detection**: Uses the `CheckAlways` strategy with automatic change detection until explicitly deactivated. This can cause continuous detection for all template references.
 
-* **OnPush change detection**: Uses the `CheckOnce` strategy, disabling automatic change detection until reactivated. This triggers detection only for specific inputs rather than all template references.
+- **OnPush change detection**: Uses the `CheckOnce` strategy, disabling automatic change detection until reactivated. This triggers detection only for specific inputs rather than all template references.
 
 Implement OnPush change detection strategy using:
 
 ```ts
- @Component({ 
-  selector: "app-root", 
-  templateUrl: "app.component.html", 
-  providers: [ReorderService], 
-  changeDetection: ChangeDetectionStrategy.OnPush 
-}) 
+ @Component({
+  selector: "app-root",
+  templateUrl: "app.component.html",
+  providers: [ReorderService],
+  changeDetection: ChangeDetectionStrategy.OnPush
+})
 ```
 
 For additional guidance on OnPush strategy implementation:
-* [OnPush Change Detection](https://blog.angular-university.io/onpush-change-detection-how-it-works)
-* [ApplicationRef - Tick](https://v17.angular.io/api/core/ApplicationRef#tick)
-* [Tick - Description](https://v17.angular.io/api/core/testing/tick#description)
-* [DetectChange - Anchor](https://v17.angular.io/api/core/ChangeDetectorRef#!#detectChanges-anchor)
+
+- [OnPush Change Detection](https://blog.angular-university.io/onpush-change-detection-how-it-works)
+- [ApplicationRef - Tick](https://v17.angular.io/api/core/ApplicationRef#tick)
+- [Tick - Description](https://v17.angular.io/api/core/testing/tick#description)
+- [DetectChange - Anchor](https://v17.angular.io/api/core/ChangeDetectorRef#!#detectChanges-anchor)
 
 ## Microsoft Excel limitations for large exports
 

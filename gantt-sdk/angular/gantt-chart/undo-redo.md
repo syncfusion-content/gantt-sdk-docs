@@ -59,19 +59,19 @@ In the following code example, **Edit** and **Delete** actions are specified in 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/undo-redo/default-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/undo-redo/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/undo-redo/default-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/undo-redo/default-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/undo-redo/default-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/undo-redo/default-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/undo-redo/default-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/undo-redo/default-cs1" %}
 
 ## Configuring the storage step count for undo and redo actions
 
@@ -85,19 +85,19 @@ In the following example, `undoRedoStepsCount` value is set to 5.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/undo-redo/default-cs2/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/undo-redo/default-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/undo-redo/default-cs2/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/undo-redo/default-cs2/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/undo-redo/default-cs2/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/undo-redo/default-cs2/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/undo-redo/default-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/undo-redo/default-cs2" %}
 
 This code allows reverting task edits (e.g., changing a task’s duration) or deletions, with up to 5 actions stored.
 
@@ -109,19 +109,19 @@ The following example triggers `undo` and `redo` via external buttons:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/undo-redo/default-cs3/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/undo-redo/default-cs3/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/undo-redo/default-cs3/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/undo-redo/default-cs3/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/undo-redo/default-cs3/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/undo-redo/default-cs3/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/undo-redo/default-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/undo-redo/default-cs3" %}
 
 ## Retrieve undo and redo stack collection
 
@@ -131,19 +131,19 @@ The following code example demonstrates how to retrieve the **undo** and **redo*
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/undo-redo/default-cs4/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/undo-redo/default-cs4/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/undo-redo/default-cs4/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/undo-redo/default-cs4/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/undo-redo/default-cs4/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/undo-redo/default-cs4/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/undo-redo/default-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/undo-redo/default-cs4" %}
 
 ## Clear undo and redo collection
 
@@ -153,19 +153,19 @@ The following code example demonstrates how to clear the undo and redo collectio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/undo-redo/default-cs5/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/undo-redo/default-cs5/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/undo-redo/default-cs5/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/undo-redo/default-cs5/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/undo-redo/default-cs5/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/undo-redo/default-cs5/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/undo-redo/default-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/undo-redo/default-cs5" %}
 
 ## See also
 

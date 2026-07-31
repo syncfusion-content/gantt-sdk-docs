@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Rows in ASP.NET Core Gantt Component
 
 Row represents a task information from the data source, and it is possible to perform the following actions in Gantt rows.
@@ -21,10 +20,10 @@ It is possible to change the height of the row in Gantt by setting row height in
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/rowHeight/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/rowHeight/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="RowHeight.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/rowHeight/rowHeight.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/rowHeight/rowHeight.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -32,15 +31,13 @@ It is possible to change the height of the row in Gantt by setting row height in
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/rowHeight/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/rowHeight/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="RowHeight.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/rowHeight/rowHeight.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/rowHeight/rowHeight.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/rowHeight.png)
 
@@ -56,10 +53,10 @@ All tasks available in Gantt was rendered in collapsed state by setting [`Collap
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/enableCollapseAll/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/enableCollapseAll/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="EnableCollapseAll.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/enableCollapseAll/enableCollapseAll.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/enableCollapseAll/enableCollapseAll.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -67,15 +64,13 @@ All tasks available in Gantt was rendered in collapsed state by setting [`Collap
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/enableCollapseAll/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/enableCollapseAll/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="EnableCollapseAll.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/enableCollapseAll/enableCollapseAll.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/enableCollapseAll/enableCollapseAll.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/enableCollapseAll.png)
 
@@ -87,10 +82,10 @@ In Gantt, we can render some tasks in collapsed state and some tasks in expanded
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/expandState/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/expandState/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ExpandState.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/expandState/expandState.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/expandState/expandState.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -98,15 +93,13 @@ In Gantt, we can render some tasks in collapsed state and some tasks in expanded
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/expandState/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/expandState/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ExpandState.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/expandState/expandState.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/expandState/expandState.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/expandState.png)
 
@@ -118,10 +111,10 @@ On expand action [`Expanding`](https://help.syncfusion.com/cr/cref_files/aspnetc
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/expandCollapseEvent/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/expandCollapseEvent/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ExpandCollapseEvent.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/expandCollapseEvent/expandCollapseEvent.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/expandCollapseEvent/expandCollapseEvent.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -129,14 +122,13 @@ On expand action [`Expanding`](https://help.syncfusion.com/cr/cref_files/aspnetc
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/expandCollapseEvent/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/expandCollapseEvent/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ExpandCollapseEvent.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/expandCollapseEvent/expandCollapseEvent.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/expandCollapseEvent/expandCollapseEvent.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
 
 ## Customize rows
 
@@ -146,10 +138,10 @@ You can customize the appearance of a row in grid side, by using the [`rowDataBo
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/customizeRows/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/customizeRows/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomizeRows.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/customizeRows/customizeRows.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/customizeRows/customizeRows.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -157,15 +149,13 @@ You can customize the appearance of a row in grid side, by using the [`rowDataBo
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/customizeRows/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/customizeRows/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomizeRows.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/customizeRows/customizeRows.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/customizeRows/customizeRows.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/customizeRows.png)
 
@@ -174,8 +164,9 @@ You can customize the appearance of a row in grid side, by using the [`rowDataBo
 You can change the background colour of alternative rows in Gantt chart, by overriding the class as shown below.
 
 ```css
-.e-altrow, tr.e-chart-row:nth-child(even)  {
-    background-color: #f2f2f2;
+.e-altrow,
+tr.e-chart-row:nth-child(even) {
+  background-color: #f2f2f2;
 }
 ```
 
@@ -183,10 +174,10 @@ You can change the background colour of alternative rows in Gantt chart, by over
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/styleAlternateRows/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/styleAlternateRows/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="StyleAlternateRows.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/styleAlternateRows/styleAlternateRows.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/styleAlternateRows/styleAlternateRows.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -194,15 +185,13 @@ You can change the background colour of alternative rows in Gantt chart, by over
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/styleAlternateRows/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/styleAlternateRows/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="StyleAlternateRows.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/styleAlternateRows/styleAlternateRows.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/styleAlternateRows/styleAlternateRows.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/alternateRows.png)
 
@@ -216,10 +205,10 @@ In the following demo, **Soil test approval** cell is spanned to two rows in the
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/rowSpanning/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/rowSpanning/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="RowSpanning.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/rowSpanning/rowSpanning.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/rowSpanning/rowSpanning.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -227,15 +216,13 @@ In the following demo, **Soil test approval** cell is spanned to two rows in the
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/rowSpanning/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/rowSpanning/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="RowSpanning.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/rowSpanning/rowSpanning.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/rows/rowSpanning/rowSpanning.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/rowSpanning.png)
 
@@ -247,10 +234,10 @@ While rendering the TreeGrid part in Gantt, the [`RowDataBound`](https://help.sy
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/appearance-and-styling/customizeRow/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/appearance-and-styling/customizeRow/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomizeRow.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/appearance-and-styling/customizeRow/customizeRow.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/appearance-and-styling/customizeRow/customizeRow.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -258,15 +245,13 @@ While rendering the TreeGrid part in Gantt, the [`RowDataBound`](https://help.sy
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/appearance-and-styling/customizeRow/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/appearance-and-styling/customizeRow/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomizeRow.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/appearance-and-styling/customizeRow/customizeRow.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/appearance-and-styling/customizeRow/customizeRow.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/customizeRow.png)
 
@@ -276,9 +261,9 @@ The clip mode provides options to display its overflow cell content and it can b
 
 The following are three types of `ClipMode`:
 
-* `Clip`: Truncates the cell content when it overflows its area.
-* `Ellipsis`: Displays ellipsis when content of the cell overflows its area.
-* `EllipsisWithTooltip`: Displays ellipsis when content of the cell overflows its area; it displays the tooltip content when hover over ellipsis.
+- `Clip`: Truncates the cell content when it overflows its area.
+- `Ellipsis`: Displays ellipsis when content of the cell overflows its area.
+- `EllipsisWithTooltip`: Displays ellipsis when content of the cell overflows its area; it displays the tooltip content when hover over ellipsis.
 
 N> By default, all the column's [`ClipMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_ClipMode) property is defined as `EllipsisWithTooltip`.
 
@@ -290,10 +275,10 @@ You can enable or disable the Grid cell tooltip using the [`Columns.ClipMode`](h
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/gridcellTooltip/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/gridcellTooltip/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="GridcellTooltip.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/gridcellTooltip/gridcellTooltip.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/gridcellTooltip/gridcellTooltip.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -301,10 +286,10 @@ You can enable or disable the Grid cell tooltip using the [`Columns.ClipMode`](h
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/gridcellTooltip/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/gridcellTooltip/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="GridcellTooltip.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/gridcellTooltip/gridcellTooltip.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/gridcellTooltip/gridcellTooltip.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

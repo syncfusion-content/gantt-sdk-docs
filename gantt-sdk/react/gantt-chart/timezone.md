@@ -22,17 +22,17 @@ The following example sets UTC timezone:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/timezone-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/timezone-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/timezone-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/timezone-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/timezone-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/timezone-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/timezone-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/timezone-cs1" %}
 
 This code ensures taskbars reflect UTC dates, unaffected by local timezones.
 
@@ -136,23 +136,24 @@ The following example handles CRUD with timezone:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/timezone-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/timezone-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/timezone-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/timezone-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/timezone-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/timezone-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/timezone-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/timezone-cs2" %}
 
 ## Use timezone methods
 
 The **Timezone** class from `@syncfusion/ej2-base` provides methods to manipulate task dates for display or storage in Gantt.
 
 ### offset
+
 Calculates the difference (in minutes) between a UTC date and a specified timezone.
 
 | Parameter | Type   | Description                          |
@@ -163,14 +164,15 @@ Calculates the difference (in minutes) between a UTC date and a specified timezo
 **Returns**: number
 
 ```typescript
-    // Assume your local timezone as IST/UTC+05:30.
-    let timezone: Timezone = new Timezone();
-    let date: Date = new Date(2018,11,5,15,25,11);
-    let timeZoneOffset: number = timezone.offset(date,"Europe/Paris");
-    console.log(timeZoneOffset); //-60
+// Assume your local timezone as IST/UTC+05:30.
+let timezone: Timezone = new Timezone();
+let date: Date = new Date(2018, 11, 5, 15, 25, 11);
+let timeZoneOffset: number = timezone.offset(date, "Europe/Paris");
+console.log(timeZoneOffset); //-60
 ```
 
 ### convert
+
 Converts a date from one timezone to another.
 
 | Parameter  | Type          | Description                                            |
@@ -182,16 +184,17 @@ Converts a date from one timezone to another.
 **Returns**: Date
 
 ```typescript
-    // Assume your local timezone as IST/UTC+05:30.
-    let timezone: Timezone = new Timezone();
-    let date: Date = new Date(2018,11,5,15,25,11);
-    let convertedDate: Date = timezone.convert(date, "Europe/Paris", "Asia/Tokyo");
-    let convertedDate1: Date = timezone.convert(date, 60, -360);
-    console.log(convertedDate); //2018-12-05T08:55:11.000Z.
-    console.log(convertedDate1); //2018-12-05T16:55:11.000Z.
+// Assume your local timezone as IST/UTC+05:30.
+let timezone: Timezone = new Timezone();
+let date: Date = new Date(2018, 11, 5, 15, 25, 11);
+let convertedDate: Date = timezone.convert(date, "Europe/Paris", "Asia/Tokyo");
+let convertedDate1: Date = timezone.convert(date, 60, -360);
+console.log(convertedDate); //2018-12-05T08:55:11.000Z.
+console.log(convertedDate1); //2018-12-05T16:55:11.000Z.
 ```
 
 ### remove
+
 Removes the timezone offset, returning a UTC-equivalent date.
 
 | Parameter | Type   | Description                          |
@@ -202,14 +205,15 @@ Removes the timezone offset, returning a UTC-equivalent date.
 **Returns**: Date
 
 ```typescript
-    // Assume your local timezone as IST/UTC+05:30.
-    let timezone: Timezone = new Timezone();
-    let date: Date = new Date(2018,11,5,15,25,11);
-    let convertedDate: Date = timezone.remove(date, "Europe/Paris");
-    console.log(convertedDate); //2018-12-05T14:25:11.000Z.
+// Assume your local timezone as IST/UTC+05:30.
+let timezone: Timezone = new Timezone();
+let date: Date = new Date(2018, 11, 5, 15, 25, 11);
+let convertedDate: Date = timezone.remove(date, "Europe/Paris");
+console.log(convertedDate); //2018-12-05T14:25:11.000Z.
 ```
 
 ## See also
+
 - [How to configure task dependencies?](https://ej2.syncfusion.com/react/documentation/gantt/task-dependency)
 - [How to customize taskbars?](https://ej2.syncfusion.com/react/documentation/gantt/taskbar)
 - [How to configure task constraints?](https://ej2.syncfusion.com/react/documentation/gantt/task-constraints)

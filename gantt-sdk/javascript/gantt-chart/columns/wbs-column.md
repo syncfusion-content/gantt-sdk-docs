@@ -17,34 +17,34 @@ The Work Breakdown Structure (WBS) organizes project tasks hierarchically by ass
 
 To enable WBS in the Gantt Chart control:
 
-- **Enable WBS Codes**: Set [enableWBS](../../api/gantt#enablewbs) to **true**  to automatically generate unique task codes and define their predecessors.
+- **Enable WBS Codes**: Set [enableWBS](../../api/gantt#enablewbs) to **true** to automatically generate unique task codes and define their predecessors.
 - **Auto-Update Codes**: Set [enableAutoWbsUpdate](../../api/gantt#enableautowbsupdate) to **true** to maintain accurate WBS codes during operations such as sorting, editing, or drag-and-drop.
 
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/wbscolumn-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/wbscolumn-cs1/index.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/wbscolumn-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/wbscolumn-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/javascript/gantt-chart/wbscolumn-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/javascript/gantt/wbscolumn-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/wbscolumn-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/wbscolumn-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/wbscolumn-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/wbscolumn-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/wbscolumn-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/wbscolumn-cs1" %}
 
 {% endif %}
 
@@ -58,27 +58,27 @@ In the following example, WBS auto-update is enabled only during the row drag an
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/wbscolumn-cs2/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/wbscolumn-cs2/index.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/wbscolumn-cs2/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/wbscolumn-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/javascript/gantt-chart/wbscolumn-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/javascript/gantt/wbscolumn-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/wbscolumn-cs2/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/wbscolumn-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/wbscolumn-cs2/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/wbscolumn-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/wbscolumn-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/wbscolumn-cs2" %}
 
 {% endif %}
 
@@ -86,6 +86,6 @@ In the following example, WBS auto-update is enabled only during the row drag an
 
 The WBS feature has a few limitations in the Gantt Chart control:
 
-* Editing of the WBS code and WBS predecessor columns is not supported.
-* Load on demand is not supported with the WBS feature.
-* WBS Code and WBS Predecessor fields cannot be mapped directly from the data source.
+- Editing of the WBS code and WBS predecessor columns is not supported.
+- Load on demand is not supported with the WBS feature.
+- WBS Code and WBS Predecessor fields cannot be mapped directly from the data source.

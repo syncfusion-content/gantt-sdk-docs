@@ -36,15 +36,15 @@ The following example demonstrates multi taskbar configuration:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/resourceview/multitaskbar-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/resourceview/multitaskbar-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/resourceview/multitaskbar-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/resourceview/multitaskbar-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/resourceview/multitaskbar-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/resourceview/multitaskbar-cs1" %}
 
 ## Configure taskbar overlap
 
@@ -67,15 +67,15 @@ The following example demonstrates non-overlapping multi taskbar:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/resourceview/multitaskbar-cs3/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/resourceview/multitaskbar-cs3/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/resourceview/multitaskbar-cs3/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/resourceview/multitaskbar-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/resourceview/multitaskbar-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/resourceview/multitaskbar-cs3" %}
 
 This configuration extends row height for clear task separation, ideal for identifying conflicts in small teams, but limits same-resource dependencies. Use overlapping mode for projects requiring extensive dependency mapping.
 

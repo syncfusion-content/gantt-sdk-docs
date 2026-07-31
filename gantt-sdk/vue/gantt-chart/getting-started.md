@@ -264,15 +264,14 @@ You can preview the following sample by clicking the **Preview Sample** button.
 
 {% tabs %}
 {% highlight html tabtitle="App.vue" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/getting-started-cs13/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/getting-started-cs13/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/getting-started-cs13" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/getting-started-cs13" %}
 
 ## Next Steps
 
 - **[Key Elements](./key-elements)** - Learn about UI components and interactions
 - **[Feature Modules](./module)** - Enable advanced features with module injection
 - **[Overview](./overview)** - Explore all available features
-

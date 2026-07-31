@@ -17,6 +17,7 @@ This guide demonstrates how to create an Angular application, configure task dat
 ## Prerequisites
 
 Ensure the following prerequisites are installed:
+
 - Node.js **20.11 or later** (required by Angular 20/21)
 - npm or yarn package manager
 - Basic knowledge of Angular framework
@@ -29,6 +30,7 @@ Create a new Angular application using the Angular CLI:
 ```bash
 npm install -g @angular/cli
 ```
+
 Once the Angular CLI is installed, run the following command to generate a new application:
 
 ```bash
@@ -38,17 +40,20 @@ ng new syncfusion-angular-app
 This command will prompt you for several configuration options:
 
 **Stylesheet Format** — Choose your preferred stylesheet format:
+
 - `CSS` (default) — Standard CSS
 - `SCSS` — Sass with full CSS features (recommended for complex styling)
 - `Sass (Indented)` — Indented Sass syntax
 - `Less` — Less CSS preprocessor
 
 To skip the prompts and use SCSS directly:
+
 ```bash
 ng new syncfusion-angular-app --style=scss
 ```
 
 **Server-side Rendering (SSR)** — When prompted, choose:
+
 - `Yes` — If you need server-side rendering for performance
 - `No` — For standard client-side rendering (recommended for most cases)
 
@@ -91,7 +96,7 @@ npm install @syncfusion/ej2-tailwind3-theme
 The installed theme package includes an `index.css` file that automatically imports all the required dependency styles. Import the following stylesheet into `src/styles.css`:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/gantt/index.css';
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/gantt/index.css";
 ```
 
 ## Create sample task data
@@ -126,14 +131,14 @@ public taskSettings = {
 
 ### Field mapping reference
 
-| Property | Description | Required |
-|----------|-------------|----------|
-| `id` | Unique task identifier | Yes |
-| `name` | Task display name | Yes |
-| `startDate` | Task start date | Yes |
-| `duration` | Task duration in days | Either Duration or EndDate |
-| `endDate` | Task end date | Either Duration or EndDate |
-| `parentID` | Parent task ID for hierarchy | No |
+| Property    | Description                  | Required                   |
+| ----------- | ---------------------------- | -------------------------- |
+| `id`        | Unique task identifier       | Yes                        |
+| `name`      | Task display name            | Yes                        |
+| `startDate` | Task start date              | Yes                        |
+| `duration`  | Task duration in days        | Either Duration or EndDate |
+| `endDate`   | Task end date                | Either Duration or EndDate |
+| `parentID`  | Parent task ID for hierarchy | No                         |
 
 ## Render the Angular Gantt Chart Component
 
@@ -144,37 +149,81 @@ Update the component file to render the Gantt Chart using the sample data and ta
 Modify the `src/app/app.ts` file with the following code:
 
 ```typescript
-import { Component, ViewEncapsulation } from '@angular/core';
-import { GanttModule } from '@syncfusion/ej2-angular-gantt';
+import { Component, ViewEncapsulation } from "@angular/core";
+import { GanttModule } from "@syncfusion/ej2-angular-gantt";
 
 @Component({
-    imports: [GanttModule],
-    standalone: true,
-    selector: 'app-root',
-    template: `<ejs-gantt [dataSource]="data" [taskFields]="taskSettings"></ejs-gantt>`,
-    encapsulation: ViewEncapsulation.None
+  imports: [GanttModule],
+  standalone: true,
+  selector: "app-root",
+  template: `<ejs-gantt
+    [dataSource]="data"
+    [taskFields]="taskSettings"
+  ></ejs-gantt>`,
+  encapsulation: ViewEncapsulation.None,
 })
 export class App {
-    public data = [
-        {TaskID: 1, TaskName: 'Project initiation', StartDate: new Date('2024-04-01'), EndDate: new Date('2024-04-15')},
-        {TaskID: 2, TaskName: 'Identify site location', StartDate: new Date('2024-04-01'), Duration: 4, ParentID: 1},
-        {TaskID: 3, TaskName: 'Perform site survey', StartDate: new Date('2024-04-01'), Duration: 4, ParentID: 1},
-        {TaskID: 4, TaskName: 'Soil testing', StartDate: new Date('2024-04-01'), Duration: 3, ParentID: 1},
-        {TaskID: 5, TaskName: 'Project estimation', StartDate: new Date('2024-04-15'), EndDate: new Date('2024-04-25')},
-        {TaskID: 6, TaskName: 'Develop floor plan', StartDate: new Date('2024-04-15'), Duration: 5, ParentID: 5},
-        {TaskID: 7, TaskName: 'Estimate project cost', StartDate: new Date('2024-04-15'), Duration: 5, ParentID: 5}
-    ];
-    public taskSettings = {
-        id: 'TaskID',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        duration: 'Duration',
-        parentID: 'ParentID'
-    };
+  public data = [
+    {
+      TaskID: 1,
+      TaskName: "Project initiation",
+      StartDate: new Date("2024-04-01"),
+      EndDate: new Date("2024-04-15"),
+    },
+    {
+      TaskID: 2,
+      TaskName: "Identify site location",
+      StartDate: new Date("2024-04-01"),
+      Duration: 4,
+      ParentID: 1,
+    },
+    {
+      TaskID: 3,
+      TaskName: "Perform site survey",
+      StartDate: new Date("2024-04-01"),
+      Duration: 4,
+      ParentID: 1,
+    },
+    {
+      TaskID: 4,
+      TaskName: "Soil testing",
+      StartDate: new Date("2024-04-01"),
+      Duration: 3,
+      ParentID: 1,
+    },
+    {
+      TaskID: 5,
+      TaskName: "Project estimation",
+      StartDate: new Date("2024-04-15"),
+      EndDate: new Date("2024-04-25"),
+    },
+    {
+      TaskID: 6,
+      TaskName: "Develop floor plan",
+      StartDate: new Date("2024-04-15"),
+      Duration: 5,
+      ParentID: 5,
+    },
+    {
+      TaskID: 7,
+      TaskName: "Estimate project cost",
+      StartDate: new Date("2024-04-15"),
+      Duration: 5,
+      ParentID: 5,
+    },
+  ];
+  public taskSettings = {
+    id: "TaskID",
+    name: "TaskName",
+    startDate: "StartDate",
+    duration: "Duration",
+    parentID: "ParentID",
+  };
 }
 ```
 
 **Key Properties**:
+
 - `imports: [GanttModule]` — Imports the Gantt Chart module for use in this component
 - `standalone: true` — Indicates this is a standalone component (Angular 14+)
 - `template` — Defines the component's HTML inline; `[dataSource]="data"` binds the task data and `[taskFields]="taskSettings"` maps the field names
@@ -185,32 +234,36 @@ export class App {
 If using Angular 19 or earlier, define the component in `src/app/app.component.ts`:
 
 ```typescript
-import { Component, ViewEncapsulation } from '@angular/core';
-import { GanttModule } from '@syncfusion/ej2-angular-gantt';
+import { Component, ViewEncapsulation } from "@angular/core";
+import { GanttModule } from "@syncfusion/ej2-angular-gantt";
 
 @Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css'],
-    encapsulation: ViewEncapsulation.None
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"],
+  encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
-    public data = [/* ... task data ... */];
-    public taskSettings = {/* ... field mappings ... */};
+  public data = [
+    /* ... task data ... */
+  ];
+  public taskSettings = {
+    /* ... field mappings ... */
+  };
 }
 ```
 
 Then add to `src/app/app.module.ts`:
 
 ```typescript
-import { GanttModule } from '@syncfusion/ej2-angular-gantt';
-import { NgModule } from '@angular/core';
+import { GanttModule } from "@syncfusion/ej2-angular-gantt";
+import { NgModule } from "@angular/core";
 
 @NgModule({
-    imports: [GanttModule],
-    // ... other declarations
+  imports: [GanttModule],
+  // ... other declarations
 })
-export class AppModule { }
+export class AppModule {}
 ```
 
 And create `src/app/app.component.html`:
@@ -228,11 +281,13 @@ ng serve --open
 ```
 
 This command:
+
 - Compiles the Angular application
 - Starts a local development server on `http://localhost:4200` (default port)
 - Opens the application in your default browser (the `--open` flag)
 
 **Troubleshooting**:
+
 - **Port 4200 already in use**: Run `ng serve --port 4300` to use a different port
 - **Module not found errors**: Ensure all dependencies are installed with `npm install`
 - **Styles not applied**: Verify all CSS imports in `src/styles.css` are correct
@@ -252,11 +307,11 @@ You can preview the following sample by clicking the **Preview Sample** button.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/getting-started/run-application-cs1/src/app.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/getting-started/run-application-cs1/src/app.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/getting-started/run-application-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/getting-started/run-application-cs1" %}
 
 ## Error handling
 
@@ -276,16 +331,24 @@ Use the `actionFailure` event to capture and handle errors:
 
 ```typescript
 @Component({
-    template: `<ejs-gantt [dataSource]="data" [taskFields]="taskSettings" (actionFailure)="onActionFailure($event)"></ejs-gantt>`
+  template: `<ejs-gantt
+    [dataSource]="data"
+    [taskFields]="taskSettings"
+    (actionFailure)="onActionFailure($event)"
+  ></ejs-gantt>`,
 })
 export class App {
-    public data = [/* ... */];
-    public taskSettings = {/* ... */};
-    
-    onActionFailure(args: any) {
-        console.error('Gantt Chart Error:', args.error);
-        alert(`Configuration Error: ${args.error}`);
-    }
+  public data = [
+    /* ... */
+  ];
+  public taskSettings = {
+    /* ... */
+  };
+
+  onActionFailure(args: any) {
+    console.error("Gantt Chart Error:", args.error);
+    alert(`Configuration Error: ${args.error}`);
+  }
 }
 ```
 
@@ -294,4 +357,3 @@ export class App {
 - **[Key Elements](https://ej2.syncfusion.com/angular/documentation/gantt/events)** - Learn about UI components and interactions
 - **[Feature Modules](https://ej2.syncfusion.com/angular/documentation/gantt/module)** - Enable advanced features with module injection
 - **[Overview](https://ej2.syncfusion.com/angular/documentation/gantt/overview)** - Explore all available features
-

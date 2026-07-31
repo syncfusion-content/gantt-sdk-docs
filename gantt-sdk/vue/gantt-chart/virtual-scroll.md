@@ -2,7 +2,7 @@
 layout: post
 title: Virtual Scroll in Vue Gantt Chart component | Syncfusion
 description: Learn here all about Virtual scroll in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Virtual scroll 
+control: Virtual scroll
 platform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -22,14 +22,14 @@ This mode can be enable by setting the `enableVirtualization` property to `true`
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/virtual-scroll-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/virtual-scroll-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/virtual-scroll-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/virtual-scroll-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/virtual-scroll-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/virtual-scroll-cs1" %}
 
 ## Timeline virtualization
 
@@ -39,18 +39,18 @@ This mode can be enable by setting the [enableTimelineVirtualization](https://ej
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/virtual-scroll-cs3/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/virtual-scroll-cs3/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/virtual-scroll-cs3/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/virtual-scroll-cs3/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/virtual-scroll-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/virtual-scroll-cs3" %}
 
 ## Limitations for virtual scroll
 
-* Due to the element height limitation in browsers, the maximum number of records loaded is limited by the browser capacity.
-* Cell selection is not persisted due to on-demand rendering.
-* The number of records rendered will be determined by the `height` property.
-* It is necessary to mention the height of the Gantt in pixels when enabling Virtual Scrolling.
+- Due to the element height limitation in browsers, the maximum number of records loaded is limited by the browser capacity.
+- Cell selection is not persisted due to on-demand rendering.
+- The number of records rendered will be determined by the `height` property.
+- It is necessary to mention the height of the Gantt in pixels when enabling Virtual Scrolling.

@@ -3,7 +3,7 @@ layout: post
 title: Context Menu in JavaScript Gantt Chart Control | Syncfusion
 description: Learn here all about context menu in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Context menu 
+control: Context menu
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -41,27 +41,27 @@ The following example demonstrates context menu implementation with default item
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/contextMenu-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/contextMenu-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/contextMenu-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/contextMenu-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/contextMenu-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/contextMenu-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/contextMenu-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/contextMenu-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/contextMenu-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/contextMenu-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/contextMenu-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/contextMenu-cs1" %}
 {% endif %}
 
 > If a required feature is not enabled, the related context menu item will be disabled or hidden to prevent unsupported actions.
@@ -80,27 +80,27 @@ The following sample shows context menu items for parent rows to expand or colla
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/customContextMenu-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/customContextMenu-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/customContextMenu-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/customContextMenu-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/customContextMenu-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/customContextMenu-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/customContextMenu-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/customContextMenu-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/customContextMenu-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/customContextMenu-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/customContextMenu-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/customContextMenu-cs1" %}
 {% endif %}
 
 This implementation shows custom context menu integration with event handling. The `contextMenuClick` event receives parameters including the selected item's id, text, and the current row data, enabling specific actions based on the context.

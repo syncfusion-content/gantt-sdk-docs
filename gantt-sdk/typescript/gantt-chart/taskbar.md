@@ -3,7 +3,7 @@ layout: post
 title: Taskbar in TypeScript Gantt Chart Control | Syncfusion
 description: Learn how to customize taskbars in the Syncfusion TypeScript Gantt Chart control, including height, templates, and editing interactions.
 platform: gantt-sdk
-control: Taskbar 
+control: Taskbar
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -23,27 +23,27 @@ The following example demonstrates how to set a custom taskbar height of 40 pixe
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/appearanceandstyling-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/appearanceandstyling-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/appearanceandstyling-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/appearanceandstyling-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/appearanceandstyling-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/appearanceandstyling-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/appearanceandstyling-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/appearanceandstyling-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/appearanceandstyling-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/appearanceandstyling-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/appearanceandstyling-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/appearanceandstyling-cs1" %}
 {% endif %}
 
 ## Apply conditional formatting
@@ -56,27 +56,27 @@ This example demonstrates formatting taskbars based on progress, where **args.da
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/appearanceandstyling-cs2/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/appearanceandstyling-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/appearanceandstyling-cs2/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/appearanceandstyling-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/appearanceandstyling-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/appearanceandstyling-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/appearanceandstyling-cs2/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/appearanceandstyling-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/appearanceandstyling-cs2/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/appearanceandstyling-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/appearanceandstyling-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/appearanceandstyling-cs2" %}
 {% endif %}
 
 ## Customize gripper icons
@@ -89,27 +89,27 @@ In the following example, the progress gripper icon is customized by targeting t
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/change-gripper-icon-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/change-gripper-icon-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/change-gripper-icon-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/change-gripper-icon-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/change-gripper-icon-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/change-gripper-icon-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/change-gripper-icon-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/change-gripper-icon-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/change-gripper-icon-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/change-gripper-icon-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/change-gripper-icon-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/change-gripper-icon-cs1" %}
 {% endif %}
 
 ## Control taskbar and notes icon visibility
@@ -122,27 +122,27 @@ The following example hides taskbars for specific tasks and notes icons for empt
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/taskbar-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/taskbar-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/taskbar-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/taskbar-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/taskbar-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/taskbar-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/taskbar-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/taskbar-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/taskbar-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/taskbar-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/taskbar-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/taskbar-cs1" %}
 {% endif %}
 
 This code hides taskbars for tasks with IDs 7–10 (e.g., estimation tasks) and notes icons for empty `Info` fields, using `queryTaskbarInfo` and `queryCellInfo`. The **.e-notes-info** class ensures robust icon targeting, and `taskFields.notes` enables notes rendering.
@@ -163,60 +163,60 @@ import { Gantt, Edit, Selection, IActionBeginEventArgs, IQueryTaskbarInfoEventAr
 Gantt.Inject(Edit, Selection);
 
 let gantt: Gantt = new Gantt({
-    dataSource: [
-      { TaskId: 1, TaskName: 'Product Concept', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
-      { TaskId: 2, TaskName: 'Defining the product and its usage', StartDate: new Date('04/02/2019'), Duration: 3, Progress: 30, ParentId: 1 },
-      { TaskId: 3, TaskName: 'Defining target audience', StartDate: new Date('04/02/2019'), Duration: 3, ParentId: 1 },
-      { TaskId: 4, TaskName: 'Prepare product sketch and notes', StartDate: new Date('04/02/2019'), Duration: 2, Progress: 30, Predecessor: '2', ParentId: 1 },
-      { TaskId: 5, TaskName: 'Concept Approval', StartDate: new Date('04/02/2019'), Duration: 0, Predecessor: '3,4', Indicators: [{ date: '04/10/2019', name: '#briefing', title: 'Product concept briefing' }] },
-      { TaskId: 6, TaskName: 'Market Research', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
-      { TaskId: 7, TaskName: 'Demand Analysis', StartDate: new Date('04/04/2019'), EndDate: new Date('04/21/2019'), ParentId: 6 },
-      { TaskId: 8, TaskName: 'Customer strength', StartDate: new Date('04/04/2019'), Duration: 4, Progress: 30, Predecessor: '5', ParentId: 7 },
-      { TaskId: 9, TaskName: 'Market opportunity analysis', StartDate: new Date('04/04/2019'), Duration: 4, Predecessor: '5', ParentId: 7 },
-      { TaskId: 10, TaskName: 'Competitor Analysis', StartDate: new Date('04/04/2019'), Duration: 4, Progress: 30, Predecessor: '7,8', ParentId: 6 }
-    ],
-    height: '430px',
-    projectStartDate: new Date('03/28/2019'),
-    projectEndDate: new Date('04/18/2019'),
-    taskFields: {
-        id: 'TaskId',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        duration: 'Duration',
-        progress: 'Progress',
-        parentID: 'ParentId'
-    },
-    labelSettings: {
-        leftLabel: 'TaskName'
-    },
-    editSettings: {
-        allowTaskbarEditing: true
-    },
-    queryTaskbarInfo: (args: IQueryTaskbarInfoEventArgs) => {
-        if ((args.data as any).TaskId === 4) {
-            args.taskbarElement.style.cursor = 'default';
-            args.taskbarElement.classList.add(
-                'e-prevent-reschedule',
-                'e-prevent-add-relation-left',
-                'e-prevent-add-relation-right'
-            );
-        }
-    },
-    actionBegin: (args: IActionBeginEventArgs) => {
-        if (
-            (args.data as any).TaskId === 4 &&
-            [
-                'ChildDrag',
-                'ProgressResizing',
-                'LeftResizing',
-                'RightResizing',
-                'ConnectorPointLeftDrag',
-                'ConnectorPointRightDrag'
-            ].includes(args.taskBarEditAction as string)
-        ) {
-            args.cancel = true;
-        }
-    }
+dataSource: [
+{ TaskId: 1, TaskName: 'Product Concept', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
+{ TaskId: 2, TaskName: 'Defining the product and its usage', StartDate: new Date('04/02/2019'), Duration: 3, Progress: 30, ParentId: 1 },
+{ TaskId: 3, TaskName: 'Defining target audience', StartDate: new Date('04/02/2019'), Duration: 3, ParentId: 1 },
+{ TaskId: 4, TaskName: 'Prepare product sketch and notes', StartDate: new Date('04/02/2019'), Duration: 2, Progress: 30, Predecessor: '2', ParentId: 1 },
+{ TaskId: 5, TaskName: 'Concept Approval', StartDate: new Date('04/02/2019'), Duration: 0, Predecessor: '3,4', Indicators: [{ date: '04/10/2019', name: '#briefing', title: 'Product concept briefing' }] },
+{ TaskId: 6, TaskName: 'Market Research', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
+{ TaskId: 7, TaskName: 'Demand Analysis', StartDate: new Date('04/04/2019'), EndDate: new Date('04/21/2019'), ParentId: 6 },
+{ TaskId: 8, TaskName: 'Customer strength', StartDate: new Date('04/04/2019'), Duration: 4, Progress: 30, Predecessor: '5', ParentId: 7 },
+{ TaskId: 9, TaskName: 'Market opportunity analysis', StartDate: new Date('04/04/2019'), Duration: 4, Predecessor: '5', ParentId: 7 },
+{ TaskId: 10, TaskName: 'Competitor Analysis', StartDate: new Date('04/04/2019'), Duration: 4, Progress: 30, Predecessor: '7,8', ParentId: 6 }
+],
+height: '430px',
+projectStartDate: new Date('03/28/2019'),
+projectEndDate: new Date('04/18/2019'),
+taskFields: {
+id: 'TaskId',
+name: 'TaskName',
+startDate: 'StartDate',
+duration: 'Duration',
+progress: 'Progress',
+parentID: 'ParentId'
+},
+labelSettings: {
+leftLabel: 'TaskName'
+},
+editSettings: {
+allowTaskbarEditing: true
+},
+queryTaskbarInfo: (args: IQueryTaskbarInfoEventArgs) => {
+if ((args.data as any).TaskId === 4) {
+args.taskbarElement.style.cursor = 'default';
+args.taskbarElement.classList.add(
+'e-prevent-reschedule',
+'e-prevent-add-relation-left',
+'e-prevent-add-relation-right'
+);
+}
+},
+actionBegin: (args: IActionBeginEventArgs) => {
+if (
+(args.data as any).TaskId === 4 &&
+[
+'ChildDrag',
+'ProgressResizing',
+'LeftResizing',
+'RightResizing',
+'ConnectorPointLeftDrag',
+'ConnectorPointRightDrag'
+].includes(args.taskBarEditAction as string)
+) {
+args.cancel = true;
+}
+}
 });
 
 gantt.appendTo('#Gantt');
@@ -270,62 +270,62 @@ gantt.appendTo('#Gantt');
 {% highlight js tabtitle="index.js" %}
 
 let GanttData = [
-  { TaskId: 1, TaskName: 'Product Concept', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
-  { TaskId: 2, TaskName: 'Defining the product and its usage', StartDate: new Date('04/02/2019'), Duration: 3, Progress: 30, ParentId: 1 },
-  { TaskId: 3, TaskName: 'Defining target audience', StartDate: new Date('04/02/2019'), Duration: 3, ParentId: 1 },
-  { TaskId: 4, TaskName: 'Prepare product sketch and notes', StartDate: new Date('04/02/2019'), Duration: 2, Progress: 30, Predecessor: '2', ParentId: 1 },
-  { TaskId: 5, TaskName: 'Concept Approval', StartDate: new Date('04/02/2019'), Duration: 0, Predecessor: '3,4', Indicators: [{ date: '04/10/2019', name: '#briefing', title: 'Product concept briefing' }] },
-  { TaskId: 6, TaskName: 'Market Research', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
-  { TaskId: 7, TaskName: 'Demand Analysis', StartDate: new Date('04/04/2019'), EndDate: new Date('04/21/2019'), ParentId: 6 },
-  { TaskId: 8, TaskName: 'Customer strength', StartDate: new Date('04/04/2019'), Duration: 4, Progress: 30, Predecessor: '5', ParentId: 7 },
-  { TaskId: 9, TaskName: 'Market opportunity analysis', StartDate: new Date('04/04/2019'), Duration: 4, Predecessor: '5', ParentId: 7 },
-  { TaskId: 10, TaskName: 'Competitor Analysis', StartDate: new Date('04/04/2019'), Duration: 4, Progress: 30, Predecessor: '7,8', ParentId: 6 }
+{ TaskId: 1, TaskName: 'Product Concept', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
+{ TaskId: 2, TaskName: 'Defining the product and its usage', StartDate: new Date('04/02/2019'), Duration: 3, Progress: 30, ParentId: 1 },
+{ TaskId: 3, TaskName: 'Defining target audience', StartDate: new Date('04/02/2019'), Duration: 3, ParentId: 1 },
+{ TaskId: 4, TaskName: 'Prepare product sketch and notes', StartDate: new Date('04/02/2019'), Duration: 2, Progress: 30, Predecessor: '2', ParentId: 1 },
+{ TaskId: 5, TaskName: 'Concept Approval', StartDate: new Date('04/02/2019'), Duration: 0, Predecessor: '3,4', Indicators: [{ date: '04/10/2019', name: '#briefing', title: 'Product concept briefing' }] },
+{ TaskId: 6, TaskName: 'Market Research', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
+{ TaskId: 7, TaskName: 'Demand Analysis', StartDate: new Date('04/04/2019'), EndDate: new Date('04/21/2019'), ParentId: 6 },
+{ TaskId: 8, TaskName: 'Customer strength', StartDate: new Date('04/04/2019'), Duration: 4, Progress: 30, Predecessor: '5', ParentId: 7 },
+{ TaskId: 9, TaskName: 'Market opportunity analysis', StartDate: new Date('04/04/2019'), Duration: 4, Predecessor: '5', ParentId: 7 },
+{ TaskId: 10, TaskName: 'Competitor Analysis', StartDate: new Date('04/04/2019'), Duration: 4, Progress: 30, Predecessor: '7,8', ParentId: 6 }
 ];
 
 var ganttChart = new ej.gantt.Gantt({
-    dataSource: GanttData,
-    height: '430px',
-    projectStartDate: new Date('03/28/2019'),
-    projectEndDate: new Date('04/18/2019'),
-    taskFields: {
-        id: 'TaskId',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        duration: 'Duration',
-        progress: 'Progress',
-        parentID: 'ParentId'
-    },
-    labelSettings: {
-        leftLabel: 'TaskName'
-    },
-    editSettings: {
-        allowTaskbarEditing: true
-    },
-    queryTaskbarInfo: function (args) {
-        if (args.data.TaskId === 4) {
-            args.taskbarElement.style.cursor = 'default';
-            args.taskbarElement.classList.add(
-                'e-prevent-reschedule',
-                'e-prevent-add-relation-left',
-                'e-prevent-add-relation-right'
-            );
-        }
-    },
-    actionBegin: function (args) {
-        if (
-            args.data.TaskId === 4 &&
-            [
-                'ChildDrag',
-                'ProgressResizing',
-                'LeftResizing',
-                'RightResizing',
-                'ConnectorPointLeftDrag',
-                'ConnectorPointRightDrag'
-            ].indexOf(args.taskBarEditAction) !== -1
-        ) {
-            args.cancel = true;
-        }
-    }
+dataSource: GanttData,
+height: '430px',
+projectStartDate: new Date('03/28/2019'),
+projectEndDate: new Date('04/18/2019'),
+taskFields: {
+id: 'TaskId',
+name: 'TaskName',
+startDate: 'StartDate',
+duration: 'Duration',
+progress: 'Progress',
+parentID: 'ParentId'
+},
+labelSettings: {
+leftLabel: 'TaskName'
+},
+editSettings: {
+allowTaskbarEditing: true
+},
+queryTaskbarInfo: function (args) {
+if (args.data.TaskId === 4) {
+args.taskbarElement.style.cursor = 'default';
+args.taskbarElement.classList.add(
+'e-prevent-reschedule',
+'e-prevent-add-relation-left',
+'e-prevent-add-relation-right'
+);
+}
+},
+actionBegin: function (args) {
+if (
+args.data.TaskId === 4 &&
+[
+'ChildDrag',
+'ProgressResizing',
+'LeftResizing',
+'RightResizing',
+'ConnectorPointLeftDrag',
+'ConnectorPointRightDrag'
+].indexOf(args.taskBarEditAction) !== -1
+) {
+args.cancel = true;
+}
+}
 });
 
 ganttChart.appendTo('#Gantt');
@@ -391,10 +391,10 @@ This example renders a custom taskbar with a progress bar and a badge showing th
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/customizations-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/customizations-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/customizations-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/customizations-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -402,10 +402,10 @@ This example renders a custom taskbar with a progress bar and a badge showing th
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/customizations-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/customizations-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/customizations-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/customizations-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -421,27 +421,27 @@ The following example enables multi-taskbar:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/projectview-multitaskbar-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/projectview-multitaskbar-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/projectview-multitaskbar-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/projectview-multitaskbar-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/projectview-multitaskbar-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/projectview-multitaskbar-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/projectview-multitaskbar-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/projectview-multitaskbar-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/projectview-multitaskbar-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/projectview-multitaskbar-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/projectview-multitaskbar-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/projectview-multitaskbar-cs1" %}
 {% endif %}
 
 This feature aggregates child progress in parent taskbars, updating dynamically on child changes.
@@ -456,27 +456,27 @@ The following example demonstrates connector customization. The specified proper
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/appearanceandstyling-cs3/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/appearanceandstyling-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/appearanceandstyling-cs3/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/appearanceandstyling-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/appearanceandstyling-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/appearanceandstyling-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/appearanceandstyling-cs3/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/appearanceandstyling-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/appearanceandstyling-cs3/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/appearanceandstyling-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/appearanceandstyling-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/appearanceandstyling-cs3" %}
 {% endif %}
 
 ## Configure tooltips
@@ -489,32 +489,32 @@ The following example enables tooltips:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/gantt-tooltip-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/gantt-tooltip-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/gantt-tooltip-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/gantt-tooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/gantt-tooltip-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/gantt-tooltip-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/gantt-tooltip-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/gantt-tooltip-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/gantt-tooltip-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/gantt-tooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/gantt-tooltip-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/gantt-tooltip-cs1" %}
 {% endif %}
 
 Tooltips display on hover, with touch-and-hold support for mobile via the tooltip popup.
 
-### Disable taskbar tooltip 
+### Disable taskbar tooltip
 
 You can disable the taskbar tooltip using the [beforeTooltipRender](../gantt/events#beforetooltiprender) event by setting `args.cancel` to **true**.
 
@@ -522,27 +522,27 @@ You can disable the taskbar tooltip using the [beforeTooltipRender](../gantt/eve
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/disable-tooltip-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/disable-tooltip-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/disable-tooltip-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/disable-tooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/disable-tooltip-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/disable-tooltip-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/disable-tooltip-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/disable-tooltip-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/disable-tooltip-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/disable-tooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/disable-tooltip-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/disable-tooltip-cs1" %}
 {% endif %}
 
 ## Customize tooltip templates
@@ -559,27 +559,27 @@ The following example customizes taskbar tooltips:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/taskbarTooltip-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/taskbarTooltip-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/taskbarTooltip-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/taskbarTooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/taskbarTooltip-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/taskbarTooltip-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/taskbarTooltip-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/taskbarTooltip-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/taskbarTooltip-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/taskbarTooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/taskbarTooltip-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/taskbarTooltip-cs1" %}
 {% endif %}
 
 The template uses `data` to display fields like **TaskName** and **Progress**, ensuring responsive display.
@@ -594,27 +594,27 @@ The following example customizes connector tooltips:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/connectorLineTooltip-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/connectorLineTooltip-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/connectorLineTooltip-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/connectorLineTooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/connectorLineTooltip-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/connectorLineTooltip-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/connectorLineTooltip-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/connectorLineTooltip-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/connectorLineTooltip-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/connectorLineTooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/connectorLineTooltip-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/connectorLineTooltip-cs1" %}
 {% endif %}
 
 ### Baseline tooltip
@@ -627,27 +627,27 @@ The following example customizes baseline tooltips:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/baselineTooltip-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/baselineTooltip-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/baselineTooltip-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/baselineTooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/baselineTooltip-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/baselineTooltip-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/baselineTooltip-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/baselineTooltip-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/baselineTooltip-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/baselineTooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/baselineTooltip-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/baselineTooltip-cs1" %}
 {% endif %}
 
 ### Timeline tooltip
@@ -660,27 +660,27 @@ The following example customizes timeline tooltips:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/timelineTooltip-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/timelineTooltip-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/timelineTooltip-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/timelineTooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/timelineTooltip-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/timelineTooltip-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/timelineTooltip-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/timelineTooltip-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/timelineTooltip-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/timelineTooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/timelineTooltip-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/timelineTooltip-cs1" %}
 {% endif %}
 
 ## Tooltip Touch interaction
@@ -688,6 +688,7 @@ The following example customizes timeline tooltips:
 To perform touch and hold action on a element, refer to [tooltip popup](tooltip#tooltip).
 
 ## See also
+
 - [How to configure task dependencies?](../gantt/task-dependency)
 - [How to enable baseline rendering?](../gantt/baseline)
 - [How to customize labels?](../gantt/labels)

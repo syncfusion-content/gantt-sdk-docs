@@ -16,31 +16,31 @@ To activate the column menu feature, set the [showColumnMenu](https://ej2.syncfu
 
 The following built-in column menu items are available:
 
-| Item            | Description                                 |
-|-----------------|---------------------------------------------|
-| SortAscending   | Sorts the column in ascending order.         |
-| SortDescending  | Sorts the column in descending order.        |
-| AutoFit         | Adjusts the width of the current column.     |
-| AutoFitAll      | Adjusts the width of all columns.            |
-| ColumnChooser   | Allows toggling column visibility .          |
-| Filter          | Displays filter options based on [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings#type).  |
+| Item           | Description                                                                                                                             |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| SortAscending  | Sorts the column in ascending order.                                                                                                    |
+| SortDescending | Sorts the column in descending order.                                                                                                   |
+| AutoFit        | Adjusts the width of the current column.                                                                                                |
+| AutoFitAll     | Adjusts the width of all columns.                                                                                                       |
+| ColumnChooser  | Allows toggling column visibility .                                                                                                     |
+| Filter         | Displays filter options based on [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings#type). |
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnmenu-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnmenu-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnmenu-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnmenu-cs1/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnmenu-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnmenu-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/columnmenu-cs1" %}
 
-> * You can disable the column menu for specific columns by setting `columns.showColumnMenu` to **false**.
-> * You can customize the default column menu items by defining [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/gantt#columnmenuitems) with only the required items.
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/columnmenu-cs1" %}
+
+> - You can disable the column menu for specific columns by setting `columns.showColumnMenu` to **false**.
+> - You can customize the default column menu items by defining [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/gantt#columnmenuitems) with only the required items.
 
 ## Add a custom column menu item
 
@@ -52,17 +52,17 @@ The following example demonstrates how to add a custom column menu item to clear
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnmenu-cs2/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnmenu-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnmenu-cs2/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnmenu-cs2/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnmenu-cs2/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnmenu-cs2/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/columnmenu-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/columnmenu-cs2" %}
 
 ## Customize column menu items per column
 
@@ -72,19 +72,19 @@ The following example demonstrates hiding the **Filter** item when the column me
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnmenu-cs3/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnmenu-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnmenu-cs3/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnmenu-cs3/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnmenu-cs3/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnmenu-cs3/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/columnmenu-cs3" %}
 
-> * You can disable the column menu for a specific column by setting `column.showColumnMenu` to **false**.
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/columnmenu-cs3" %}
+
+> - You can disable the column menu for a specific column by setting `column.showColumnMenu` to **false**.
 
 ## Render nested column menu items
 
@@ -94,17 +94,17 @@ The following example demonstrates how to configure `columnMenuItems` to include
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnmenu-cs6/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnmenu-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnmenu-cs6/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnmenu-cs6/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnmenu-cs6/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnmenu-cs6/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/columnmenu-cs6" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/columnmenu-cs6" %}
 
 ## Customize the column menu icon
 
@@ -123,23 +123,29 @@ To customize the column menu icon, follow these steps:
 **2.** Import the required icon stylesheets (e.g., Tailwind3 or Bootstrap5):
 
 ```html
-<link href="https://cdn.syncfusion.com/ej2/ej2-icons/styles/tailwind3.css" rel="stylesheet" />
-<link href="https://cdn.syncfusion.com/ej2/ej2-icons/styles/bootstrap5.css" rel="stylesheet" />
+<link
+  href="https://cdn.syncfusion.com/ej2/ej2-icons/styles/tailwind3.css"
+  rel="stylesheet"
+/>
+<link
+  href="https://cdn.syncfusion.com/ej2/ej2-icons/styles/bootstrap5.css"
+  rel="stylesheet"
+/>
 ```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnmenu-cs5/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnmenu-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.css" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnmenu-cs5/src/app.component.css %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnmenu-cs5/src/app.component.css %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnmenu-cs5/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnmenu-cs5/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnmenu-cs5/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnmenu-cs5/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/columnmenu-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/columnmenu-cs5" %}

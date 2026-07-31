@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Sorting in ASP.NET MVC Gantt Chart Component
 
 Sorting enables you to sort data in the ascending or descending order. To sort a column, click the column header.
@@ -21,10 +20,10 @@ To enable sorting in the Gantt control, set the [`AllowSorting`](https://help.sy
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/sorting/enableSorting/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/sorting/enableSorting/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="EnableSorting.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/sorting/enableSorting/enableSorting.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/sorting/enableSorting/enableSorting.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -32,22 +31,20 @@ To enable sorting in the Gantt control, set the [`AllowSorting`](https://help.sy
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/sorting/enableSorting/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/sorting/enableSorting/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="EnableSorting.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/sorting/enableSorting/enableSorting.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/sorting/enableSorting/enableSorting.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 The following screenshot shows the output of multicolumn sorting in Gantt control.
 
 ![Alt text](images/multiSorting.png)
 
-N> * Gantt columns are sorted in the ascending order. If you click the already sorted column, the sort direction toggles.
-<br/> * To disable sorting for a particular column, set the [`Columns.AllowSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_AllowSorting) property to false.
+N> _ Gantt columns are sorted in the ascending order. If you click the already sorted column, the sort direction toggles.
+<br/> _ To disable sorting for a particular column, set the [`Columns.AllowSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_AllowSorting) property to false.
 
 ## Sorting column on Gantt initialization
 
@@ -57,10 +54,10 @@ The Gantt control can be rendered with sorted columns initially, and this can be
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/sorting/initialSort/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/sorting/initialSort/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="InitialSort.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/sorting/initialSort/initialSort.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/sorting/initialSort/initialSort.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -68,15 +65,13 @@ The Gantt control can be rendered with sorted columns initially, and this can be
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/sorting/initialSort/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/sorting/initialSort/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="InitialSort.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/sorting/initialSort/initialSort.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/sorting/initialSort/initialSort.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Sorting column dynamically
 
@@ -86,10 +81,10 @@ Columns in the Gantt control can be sorted dynamically using the `sortColumn` me
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/sorting/dynamicSort/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/sorting/dynamicSort/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DynamicSort.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/sorting/dynamicSort/dynamicSort.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/sorting/dynamicSort/dynamicSort.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -97,15 +92,13 @@ Columns in the Gantt control can be sorted dynamically using the `sortColumn` me
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/sorting/dynamicSort/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/sorting/dynamicSort/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DynamicSort.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/sorting/dynamicSort/dynamicSort.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/sorting/dynamicSort/dynamicSort.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/beforeSorting.png)
 
@@ -123,10 +116,10 @@ In the Gantt control, you can clear all the sorted columns and return to previou
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/sorting/clearSorting/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/sorting/clearSorting/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ClearSorting.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/sorting/clearSorting/clearSorting.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/sorting/clearSorting/clearSorting.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -134,15 +127,13 @@ In the Gantt control, you can clear all the sorted columns and return to previou
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/sorting/clearSorting/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/sorting/clearSorting/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ClearSorting.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/sorting/clearSorting/clearSorting.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/sorting/clearSorting/clearSorting.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Sorting events
 
@@ -152,10 +143,10 @@ During the sort action, the Gantt control triggers two events. The [`ActionBegin
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/sorting/eventHandlers/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/sorting/eventHandlers/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="EventHandlers.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/sorting/eventHandlers/eventHandlers.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/sorting/eventHandlers/eventHandlers.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -163,15 +154,13 @@ During the sort action, the Gantt control triggers two events. The [`ActionBegin
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/sorting/eventHandlers/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/sorting/eventHandlers/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="EventHandlers.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/sorting/eventHandlers/eventHandlers.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/sorting/eventHandlers/eventHandlers.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 N> The `args.requestType` is the current action name. For example, for sorting the `args.requestType`, value is **sorting**.
 
@@ -185,10 +174,10 @@ The following code snippets explains how to achieve this.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/sorting/customcolumns/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/sorting/customcolumns/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Customcolumns.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/sorting/customcolumns/customcolumns.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/sorting/customcolumns/customcolumns.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -196,14 +185,13 @@ The following code snippets explains how to achieve this.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/sorting/customcolumns/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/sorting/customcolumns/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Customcolumns.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/sorting/customcolumns/customcolumns.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/sorting/customcolumns/customcolumns.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
 
 ## Touch interaction
 

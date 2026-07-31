@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Cell selection action in gantt control
 
 You can select a cell in the Gantt control by setting the [`selectionSettings.mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttSelectionSettings) property to cell. You can get the selected cell information using the `getSelectedRowCellIndexes` method. This method returns the result as an object collection, which has `cellIndexes` and `rowIndex` information of the selected cells.
@@ -19,10 +18,10 @@ Find the code example below to enable the cell selection in Gantt.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/selection/cellSelection/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/selection/cellSelection/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CellSelection.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/selection/cellSelection/cellSelection.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/selection/cellSelection/cellSelection.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -30,14 +29,13 @@ Find the code example below to enable the cell selection in Gantt.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/selection/cellSelection/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/selection/cellSelection/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CellSelection.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/selection/cellSelection/cellSelection.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/selection/cellSelection/cellSelection.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
 
 ## Selecting multiple cells
 
@@ -47,10 +45,10 @@ You can select multiple cells by setting the [`SelectionSettings.Type`](https://
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/selection/multipleCellSelection/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/selection/multipleCellSelection/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="MultipleCellSelection.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/selection/multipleCellSelection/multipleCellSelection.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/selection/multipleCellSelection/multipleCellSelection.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -58,10 +56,10 @@ You can select multiple cells by setting the [`SelectionSettings.Type`](https://
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/selection/multipleCellSelection/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/selection/multipleCellSelection/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="MultipleCellSelection.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/selection/multipleCellSelection/multipleCellSelection.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/selection/multipleCellSelection/multipleCellSelection.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -74,10 +72,10 @@ You can select a cell dynamically using the `selectCell` method. Refer to the fo
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/selection/selectCell/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/selection/selectCell/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="SelectCell.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/selection/selectCell/selectCell.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/selection/selectCell/selectCell.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -85,10 +83,10 @@ You can select a cell dynamically using the `selectCell` method. Refer to the fo
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/selection/selectCell/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/selection/selectCell/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="SelectCell.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/selection/selectCell/selectCell.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/selection/selectCell/selectCell.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -101,10 +99,10 @@ While selecting a cell in Gantt, the [`cellSelecting`](https://help.syncfusion.c
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/selection/cellSelectingEvent/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/selection/cellSelectingEvent/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CellSelectingEvent.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/selection/cellSelectingEvent/cellSelectingEvent.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/selection/cellSelectingEvent/cellSelectingEvent.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -112,14 +110,14 @@ While selecting a cell in Gantt, the [`cellSelecting`](https://help.syncfusion.c
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/selection/cellSelectingEvent/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/selection/cellSelectingEvent/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CellSelectingEvent.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/selection/cellSelectingEvent/cellSelectingEvent.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/selection/cellSelectingEvent/cellSelectingEvent.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
 ## Limitations for cell selection
 
-* Cell-based selection is not supported when virtualization is enabled.
+- Cell-based selection is not supported when virtualization is enabled.

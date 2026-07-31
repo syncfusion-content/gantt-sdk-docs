@@ -72,7 +72,7 @@ In the Gantt Chart component, the appearance can be customized based on the Hier
 <SfGantt @ref="Gantt" TValue="TaskData" DataSource="@TaskCollection" Height="450px" Width="700px">
     <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
     </GanttTaskFields>
-    <GanttEvents TValue="TaskData" QueryChartRowInfo="GanttChartRowInfo"></GanttEvents> 
+    <GanttEvents TValue="TaskData" QueryChartRowInfo="GanttChartRowInfo"></GanttEvents>
 </SfGantt>
 
 @code {
@@ -86,7 +86,7 @@ In the Gantt Chart component, the appearance can be customized based on the Hier
     {
         if (Gantt != null)
         {
-            var data = Gantt.GetRowTaskModel(args.Data); 
+            var data = Gantt.GetRowTaskModel(args.Data);
             if (data.Level == 0 && data.HasChildRecords == true)
             {
                 args.Row.AddClass(new string[] { "customize-parent" });
@@ -96,9 +96,9 @@ In the Gantt Chart component, the appearance can be customized based on the Hier
                 args.Row.AddClass(new string[] { "customize-child" });
             }
         }
-        
+
     }
-    
+
     public class TaskData
     {
         public int TaskId { get; set; }
@@ -362,10 +362,10 @@ In the Gantt Chart component, you can show or hide the grid lines in the Tree Gr
 
 The following options are available in the Gantt Chart component for rendering the grid lines:
 
-* Horizontal: The horizontal grid lines alone will be visible.
-* Vertical: The vertical grid lines alone will be visible.
-* Both: Both the horizontal and vertical grid lines will be visible on the Tree Grid and chart sides.
-* None: Gridlines will not be visible on Tree Grid and chart sides.
+- Horizontal: The horizontal grid lines alone will be visible.
+- Vertical: The vertical grid lines alone will be visible.
+- Both: Both the horizontal and vertical grid lines will be visible on the Tree Grid and chart sides.
+- None: Gridlines will not be visible on Tree Grid and chart sides.
 
 N> By default, the `GridLines` property is set to `Horizontal` type.
 
@@ -423,11 +423,11 @@ N> By default, the `GridLines` property is set to `Horizontal` type.
 
 Gantt Chart component consists of both Tree Grid part and Chart part. Splitter is used to resize the Tree Grid section from the Chart section. You can change the position of the Splitter when loading the Gantt Chart component using the [SplitterSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html) property. The following list defines possible values for this property:
 
-| **Splitter Properties** | **Description** |
-| --- | --- |
-| `GanttSplitterSettings.Position` | This property denotes the percentage of the Tree Grid section’s width to be rendered and this property supports both pixels and percentage values |
-| `GanttSplitterSettings.ColumnIndex` | This property defines the splitter position as column index value |
-| `GanttSplitterSettings.View` | * `Default`: Shows Grid side and Gantt Chart side. <br /> * `Grid`: Shows Grid side alone in Gantt Chart. <br /> * `Chart`: Shows chart side alone in Gantt Chart. |
+| **Splitter Properties**             | **Description**                                                                                                                                                     |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `GanttSplitterSettings.Position`    | This property denotes the percentage of the Tree Grid section’s width to be rendered and this property supports both pixels and percentage values                   |
+| `GanttSplitterSettings.ColumnIndex` | This property defines the splitter position as column index value                                                                                                   |
+| `GanttSplitterSettings.View`        | _ `Default`: Shows Grid side and Gantt Chart side. <br /> _ `Grid`: Shows Grid side alone in Gantt Chart. <br /> \* `Chart`: Shows chart side alone in Gantt Chart. |
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -480,7 +480,7 @@ Gantt Chart component consists of both Tree Grid part and Chart part. Splitter i
 
 ### Change splitter position dynamically
 
-In Gantt Chart, you can change the splitter position dynamically by using `SetSplitterPositionAsync` method. You can change the splitter position by passing value and type parameter to `SetSplitterPositionAsync` method. Type parameter will accept one of the following values 'Position', 'ColumnIndex', 'ViewType'. 
+In Gantt Chart, you can change the splitter position dynamically by using `SetSplitterPositionAsync` method. You can change the splitter position by passing value and type parameter to `SetSplitterPositionAsync` method. Type parameter will accept one of the following values 'Position', 'ColumnIndex', 'ViewType'.
 
 The following code example shows how to use this method.
 
@@ -545,7 +545,7 @@ The following code example shows how to use this method.
         {
             await Gantt.SetSplitterPositionAsync("70%");
         }
-        
+
     }
     public async Task UpdateSplitterByIndex()
     {
@@ -553,7 +553,7 @@ The following code example shows how to use this method.
         {
             await Gantt.SetSplitterPositionAsync(0);
         }
-        
+
     }
     public List<TaskData>? TaskCollection { get; set; }
 
@@ -594,4 +594,4 @@ The following code example shows how to use this method.
 
 ![Changing Splitter Position in Blazor Gantt Chart](images/blazor-gantt-chart-with-splitter.png)
 
-N> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities) to know how to render and configure the gantt.
+N> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt/default-functionalities) to know how to render and configure the gantt.

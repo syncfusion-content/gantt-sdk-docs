@@ -20,17 +20,17 @@ The following example configures resource view:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/resource-view-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/resource-view-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/resource-view-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/resource-view-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/resource-view-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/resource-view-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/resource-view-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/resource-view-cs1" %}
 
 This configuration groups tasks by resources, displaying them as child nodes.
 
@@ -42,17 +42,17 @@ The following example toggles overallocation visibility:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/resource-view-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/resource-view-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/resource-view-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/resource-view-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/resource-view-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/resource-view-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/resource-view-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/resource-view-cs2" %}
 
 This configuration highlights scheduling conflicts for workload management.
 
@@ -70,17 +70,17 @@ The following example enables drag-and-drop:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/resource-view-cs4/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/resource-view-cs4/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/resource-view-cs4/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/resource-view-cs4/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/resource-view-cs4/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/resource-view-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/resource-view-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/resource-view-cs4" %}
 
 This configuration supports dynamic task reassignment.
 
@@ -90,17 +90,17 @@ You can customize the taskbar appearance based on resource view using the [query
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/resource-view-cs6/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/resource-view-cs6/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/resource-view-cs6/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/resource-view-cs6/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/resource-view-cs6/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/resource-view-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/resource-view-cs6" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/resource-view-cs6" %}
 
 ## Hide columns in resource tab
 
@@ -108,17 +108,17 @@ To hide a column in the Gantt Chart's resource view, handle the [actionBegin](ht
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/resource-view-cs7/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/resource-view-cs7/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/resource-view-cs7/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/resource-view-cs7/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/resource-view-cs7/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/resource-view-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/resource-view-cs7" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/resource-view-cs7" %}
 
 ## Limitations
 
@@ -126,6 +126,7 @@ To hide a column in the Gantt Chart's resource view, handle the [actionBegin](ht
 - Unscheduled tasks (lacking start date or duration) are not supported in resource view.
 
 ## See also
+
 - [How to configure resources?](https://ej2.syncfusion.com/react/documentation/gantt/resources)
 - [How to enable multi taskbar?](https://ej2.syncfusion.com/react/documentation/gantt/multi-taskbar)
 - [How to customize taskbars?](https://ej2.syncfusion.com/react/documentation/gantt/taskbar)

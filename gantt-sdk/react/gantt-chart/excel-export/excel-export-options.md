@@ -3,7 +3,7 @@ layout: post
 title: Excel Export Options in React Gantt Chart Component | Syncfusion
 description: Learn here all about Excel export in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Excel export 
+control: Excel export
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -18,17 +18,17 @@ You can export selected records to Excel or CSV by using [getSelectedRecords](ht
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs11/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/excel-export-cs11/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs11/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/excel-export-cs11/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs11/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/excel-export-cs11/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs11" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/excel-export-cs11" %}
 
 ## Show or hide columns during export
 
@@ -38,17 +38,17 @@ The following example demonstrates how the **StartDate** column is made visible 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs6/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/excel-export-cs6/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs6/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/excel-export-cs6/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs6/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/excel-export-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs6" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/excel-export-cs6" %}
 
 ## Include hidden columns in export
 
@@ -58,17 +58,17 @@ The following example demonstrates that the hidden **StartDate** column is inclu
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs5/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/excel-export-cs5/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs5/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/excel-export-cs5/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs5/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/excel-export-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/excel-export-cs5" %}
 
 ## Enable filtering in exported Excel
 
@@ -76,17 +76,17 @@ To enable filtering in exported Excel or CSV files in Gantt Chart component, set
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs12/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/excel-export-cs12/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs12/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/excel-export-cs12/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs12/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/excel-export-cs12/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs12" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/excel-export-cs12" %}
 
 ## Set custom file name
 
@@ -94,17 +94,17 @@ To specify a custom name for the exported Excel or CSV file in the Gantt Chart c
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs10/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/excel-export-cs10/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs10/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/excel-export-cs10/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs10/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/excel-export-cs10/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs10" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/excel-export-cs10" %}
 
 ## Customize exported columns
 
@@ -112,17 +112,17 @@ The Gantt Chart component supports customizing column settings during Excel or C
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs13/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/excel-export-cs13/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs13/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/excel-export-cs13/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs13/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/excel-export-cs13/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs13" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/excel-export-cs13" %}
 
 ## Add header and footer to export
 
@@ -130,23 +130,23 @@ To add header and footer content to exported Excel or CSV files in the Gantt Cha
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs9/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/excel-export-cs9/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs9/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/excel-export-cs9/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs9/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/excel-export-cs9/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs9" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/excel-export-cs9" %}
 
 ## Apply font and color themes
 
 The Excel or CSV export feature in Gantt supports applying custom themes to the exported document, helping maintain a consistent and visually structured appearance.
 
-To configure a theme, set the [theme](https://ej2.syncfusion.com/react/documentation/api/grid/excelExportProperties#theme)  property within [ExcelExportProperties](https://ej2.syncfusion.com/react/documentation/api/grid/excelExportProperties). This allows customization of styles for the following sections in the exported file
+To configure a theme, set the [theme](https://ej2.syncfusion.com/react/documentation/api/grid/excelExportProperties#theme) property within [ExcelExportProperties](https://ej2.syncfusion.com/react/documentation/api/grid/excelExportProperties). This allows customization of styles for the following sections in the exported file
 
 - **caption**: Defines the style for the caption, typically used for titles or descriptions at the top of the sheet.
 - **header**: Specifies the styling for column headers.
@@ -154,17 +154,17 @@ To configure a theme, set the [theme](https://ej2.syncfusion.com/react/documenta
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs8/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/excel-export-cs8/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs8/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/excel-export-cs8/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs8/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/excel-export-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs8" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/excel-export-cs8" %}
 
 > By default, tailwind3 theme is applied to the exported Excel document.
 
@@ -176,14 +176,14 @@ In the example below, the background color is customized for the **Progress** co
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs7/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/excel-export-cs7/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs7/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/excel-export-cs7/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs7/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/excel-export-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs7" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/excel-export-cs7" %}

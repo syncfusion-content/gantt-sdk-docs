@@ -3,7 +3,7 @@ layout: post
 title: Work Breakdown Structure (WBS) in React Gantt Chart | Syncfusion
 description: Learn how to integrate and manage WBS codes in the Syncfusion React Gantt Chart component to improve task hierarchy visualization and project tracking.
 platform: gantt-sdk
-control: WBS Column 
+control: WBS Column
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -16,22 +16,22 @@ The Work Breakdown Structure (WBS) organizes project tasks hierarchically by ass
 
 To enable WBS in the Gantt Chart component:
 
-- **Enable WBS Codes**: Set [enableWBS](https://ej2.syncfusion.com/react/documentation/api/gantt#enablewbs) to **true**  to automatically generate unique task codes and define their predecessors.
+- **Enable WBS Codes**: Set [enableWBS](https://ej2.syncfusion.com/react/documentation/api/gantt#enablewbs) to **true** to automatically generate unique task codes and define their predecessors.
 - **Auto-Update Codes**: Set [enableAutoWbsUpdate](https://ej2.syncfusion.com/react/documentation/api/gantt#enableautowbsupdate) to **true** to maintain accurate WBS codes during operations such as sorting, editing, or drag-and-drop.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/wbs-column-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/wbs-column-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/wbs-column-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/wbs-column-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/wbs-column-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/wbs-column-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/wbs-column-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/wbs-column-cs1" %}
 
 ## Managing WBS code updates
 
@@ -41,22 +41,22 @@ In the following example, WBS auto-update is enabled only during the row drag an
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/wbs-column-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/wbs-column-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/wbs-column-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/wbs-column-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/wbs-column-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/wbs-column-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/wbs-column-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/wbs-column-cs2" %}
 
 ## Limitations
 
 The WBS feature has a few limitations in the Gantt Chart component:
 
-* Editing of the WBS code and WBS predecessor columns is not supported.
-* Load on demand is not supported with the WBS feature.
-* WBS Code and WBS Predecessor fields cannot be mapped directly from the data source.
+- Editing of the WBS code and WBS predecessor columns is not supported.
+- Load on demand is not supported with the WBS feature.
+- WBS Code and WBS Predecessor fields cannot be mapped directly from the data source.

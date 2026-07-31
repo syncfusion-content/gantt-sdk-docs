@@ -3,7 +3,7 @@ layout: post
 title: Angular Gantt Cell Selection API | Syncfusion
 description: Explore cell selection in Syncfusion Angular Gantt Chart, including single, multiple, external selection, and customization via API methods and events.
 platform: gantt-sdk
-control: Cell selection 
+control: Cell selection
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -18,15 +18,15 @@ Single cell selection in the Gantt Chart is enabled by setting [selectionSetting
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/cell-single-selection/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/cell-single-selection/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/cell-single-selection/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/cell-single-selection/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/selection/cell-single-selection" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/selection/cell-single-selection" %}
 
 ## Multiple cell selection
 
@@ -34,23 +34,23 @@ Multiple cell selection in the Gantt Chart is enabled by setting [selectionSetti
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/cell-multiple-selection/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/cell-multiple-selection/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/cell-multiple-selection/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/cell-multiple-selection/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/selection/cell-multiple-selection" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/selection/cell-multiple-selection" %}
 
 ## Cell selection mode
 
 Cell selection mode controls how cells or ranges are selected. Set the desired mode using [selectionSettings.cellSelectionMode](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionsettings#cellselectionmode):
 
-* **Flow** (default): Selects a continuous flow of cells between the start and end indices across rows.
-* **Box**: Selects a rectangular range covering specified rows and columns.
-* **BoxWithBorder**: Similar to Box mode, but applies a border for better visual distinction of the selected range.
+- **Flow** (default): Selects a continuous flow of cells between the start and end indices across rows.
+- **Box**: Selects a rectangular range covering specified rows and columns.
+- **BoxWithBorder**: Similar to Box mode, but applies a border for better visual distinction of the selected range.
 
 > For cell selection modes, [selectionSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionsettings#mode) must be **Cell** or **Both**, and [type](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionsettings#type) must be **Multiple**.
 
@@ -58,15 +58,15 @@ You can dynamically update `cellSelectionMode` with a DropDownList component, as
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/cell-selection-mode/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/cell-selection-mode/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/cell-selection-mode/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/cell-selection-mode/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/selection/cell-selection-mode" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/selection/cell-selection-mode" %}
 
 ## Select cells externally
 
@@ -78,15 +78,15 @@ Select a specific cell in the Gantt Chart by calling the [selectCell](https://ej
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/cell-single-method/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/cell-single-method/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/cell-single-method/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/cell-single-method/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/selection/cell-single-method" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/selection/cell-single-method" %}
 
 ### Multiple cell selection
 
@@ -94,15 +94,15 @@ Select multiple cells in the Gantt Chart by calling the [selectCells](https://ej
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/cell-multiple-method/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/cell-multiple-method/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/cell-multiple-method/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/cell-multiple-method/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/selection/cell-multiple-method" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/selection/cell-multiple-method" %}
 
 ## Get selected cell information
 
@@ -110,15 +110,15 @@ To retrieve information about selected cells in the Gantt Chart, use methods lik
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/cell-get-information/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/cell-get-information/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/cell-get-information/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/cell-get-information/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/selection/cell-get-information" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/selection/cell-get-information" %}
 
 ## Customize cell selection action
 
@@ -128,16 +128,16 @@ The following sample demonstrates customizing cell selection in the Gantt Chart 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/customize-cellselection-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/customize-cellselection-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/customize-cellselection-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/customize-cellselection-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/selection/customize-cellselection-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/selection/customize-cellselection-cs1" %}
 
 ## Limitations for cell selection
 
-* Cell-based selection is not supported when virtualization is enabled.
+- Cell-based selection is not supported when virtualization is enabled.

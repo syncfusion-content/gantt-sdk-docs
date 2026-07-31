@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Taskbar editing action in gantt control
 
 ## Taskbar editing
@@ -19,10 +18,10 @@ Modify the task details through user interaction such as resizing and dragging t
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/enableTaskbarEditing/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/editing/enableTaskbarEditing/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="EnableTaskbarEditing.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/enableTaskbarEditing/enableTaskbarEditing.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/editing/enableTaskbarEditing/enableTaskbarEditing.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -30,15 +29,13 @@ Modify the task details through user interaction such as resizing and dragging t
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/enableTaskbarEditing/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/editing/enableTaskbarEditing/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="EnableTaskbarEditing.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/enableTaskbarEditing/enableTaskbarEditing.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/editing/enableTaskbarEditing/enableTaskbarEditing.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Prevent editing for specific tasks
 
@@ -48,10 +45,10 @@ On taskbar edit action, the [`TaskbarEditing`](https://help.syncfusion.com/cr/as
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/preventTaskbarEditing/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/editing/preventTaskbarEditing/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="PreventTaskbarEditing.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/preventTaskbarEditing/preventTaskbarEditing.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/editing/preventTaskbarEditing/preventTaskbarEditing.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -59,11 +56,10 @@ On taskbar edit action, the [`TaskbarEditing`](https://help.syncfusion.com/cr/as
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/preventTaskbarEditing/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/editing/preventTaskbarEditing/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="PreventTaskbarEditing.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/preventTaskbarEditing/preventTaskbarEditing.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/editing/preventTaskbarEditing/preventTaskbarEditing.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-

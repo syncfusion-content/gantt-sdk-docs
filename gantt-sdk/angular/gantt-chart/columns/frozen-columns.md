@@ -3,7 +3,7 @@ layout: post
 title: Column Pinning (Frozen) in Angular Gantt Chart Component | Syncfusion
 description: Learn here all about column pinning (Frozen) in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Column pinning (Frozen) 
+control: Column pinning (Frozen)
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -18,14 +18,14 @@ In the following example, the `frozenColumns` property is set to **2**, which ke
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/frozencolumns-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/frozencolumns-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/frozencolumns-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/frozencolumns-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/frozencolumns-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/frozencolumns-cs1" %}
 
 ## Freeze particular columns
 
@@ -37,41 +37,41 @@ The following example demonstrates how to freeze a particular column in the Gant
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/frozencolumns-cs2/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/frozencolumns-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/frozencolumns-cs2/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/frozencolumns-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/frozencolumns-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/frozencolumns-cs2" %}
 
 ## Freeze direction
 
-In the Angular Gantt, the **freeze direction** feature allows you to position frozen columns either to the left, right, or in a fixed position, while still allowing the remaining columns to be horizontally movable. 
+In the Angular Gantt, the **freeze direction** feature allows you to position frozen columns either to the left, right, or in a fixed position, while still allowing the remaining columns to be horizontally movable.
 
 To achieve this, the [column.freeze](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#freeze) property can be utilized. This property is used to specify the freeze direction for individual columns.
 
 The types of the `column.freeze` directions:
 
-* **Left**: When the `column.freeze` property is set to **Left**, specific columns will be frozen on the left side.
+- **Left**: When the `column.freeze` property is set to **Left**, specific columns will be frozen on the left side.
 
-* **Right**: When the `column.freeze` property is set to **Right**, certain columns will be frozen on the right side.
+- **Right**: When the `column.freeze` property is set to **Right**, certain columns will be frozen on the right side.
 
-* **Fixed**: The Fixed direction locks a column at a fixed position within the Gantt columns. This ensures that the column is always visible during horizontal scroll.
+- **Fixed**: The Fixed direction locks a column at a fixed position within the Gantt columns. This ensures that the column is always visible during horizontal scroll.
 
 In the following example, the **TaskID** column is frozen on the left side, the **resources** column is frozen on the right side and the **Progress** column is frozen in a fixed position within the content table.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/frozencolumns-cs3/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/frozencolumns-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/frozencolumns-cs3/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/frozencolumns-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/frozencolumns-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/frozencolumns-cs3" %}
 
 ## Change default frozen line color
 
@@ -79,44 +79,47 @@ The frozen line borders of frozen columns in the Angular Gantt Chart component c
 
 To change the default frozen line color, use the following CSS class names and apply the desired border color:
 
-For left frozen columns: 
+For left frozen columns:
 
 ```css
 .e-gantt .e-leftfreeze.e-freezeleftborder {
-    border-right-color: rgb(0, 255, 0) !important;
+  border-right-color: rgb(0, 255, 0) !important;
 }
 ```
+
 For right frozen columns:
 
 ```css
 .e-gantt .e-rightfreeze.e-freezerightborder {
-    border-left-color: rgb(0, 0, 255) !important;
+  border-left-color: rgb(0, 0, 255) !important;
 }
 ```
+
 For fixed frozen columns, both left and right borders need to be specified as mentioned below:
 
 ```css
 .e-gantt .e-leftfreeze.e-freezeleftborder {
-    border-right-color: rgb(0, 255, 0) !important;
+  border-right-color: rgb(0, 255, 0) !important;
 }
 
 .e-gantt .e-rightfreeze.e-freezerightborder {
-    border-left-color: rgb(0, 0, 255) !important;
+  border-left-color: rgb(0, 0, 255) !important;
 }
 ```
+
 The following example demonstrates how to change the default frozen line color using CSS:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/frozencolumns-cs4/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/frozencolumns-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/frozencolumns-cs4/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/frozencolumns-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/frozencolumns-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/frozencolumns-cs4" %}
 
 ## Limitations
 
-* Freeze Direction is not compatible with the [isFrozen](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#isfrozen) and [frozenColumns](https://ej2.syncfusion.com/angular/documentation/api/gantt#frozencolumns) properties.
+- Freeze Direction is not compatible with the [isFrozen](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#isfrozen) and [frozenColumns](https://ej2.syncfusion.com/angular/documentation/api/gantt#frozencolumns) properties.

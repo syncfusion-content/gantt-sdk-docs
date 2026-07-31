@@ -27,15 +27,15 @@ Dapper is a lightweight, high-performance ORM (Object-Relational Mapper) that pr
 
 Ensure the following software and packages are installed before proceeding:
 
-| Software/Package | Version | Purpose |
-|-----------------|---------|---------|
-| Visual Studio 2026 | 18.2.1 or later | Development IDE with Blazor workload |
-| .NET SDK | net10.0 or compatible | Runtime and build tools |
-| SQL Server | 2021 or later | Database server |
-| Syncfusion.Blazor.Gantt | -v {{site.blazorversion}} | Gantt Chart and UI components |
-| Syncfusion.Blazor.Themes | -v {{site.blazorversion}} | Styling for Gantt Chart components |
-| Microsoft.Data.SqlClient | Latest | SQL Server ADO.NET provider |
-| Dapper | Latest | Lightweight micro-ORM for SQL mapping |
+| Software/Package         | Version                   | Purpose                               |
+| ------------------------ | ------------------------- | ------------------------------------- |
+| Visual Studio 2026       | 18.2.1 or later           | Development IDE with Blazor workload  |
+| .NET SDK                 | net10.0 or compatible     | Runtime and build tools               |
+| SQL Server               | 2021 or later             | Database server                       |
+| Syncfusion.Blazor.Gantt  | -v {{site.blazorversion}} | Gantt Chart and UI components         |
+| Syncfusion.Blazor.Themes | -v {{site.blazorversion}} | Styling for Gantt Chart components    |
+| Microsoft.Data.SqlClient | Latest                    | SQL Server ADO.NET provider           |
+| Dapper                   | Latest                    | Lightweight micro-ORM for SQL mapping |
 
 ## Setting up the SQL Server Environment with Dapper
 
@@ -44,6 +44,7 @@ Ensure the following software and packages are installed before proceeding:
 First, the **SQL Server database** structure must be created to store records.
 
 **Instructions:**
+
 1. Open SQL Server Management Studio or any SQL Server client.
 2. Create a new database named `GanttDB`.
 3. Define a `TaskData` table with the specified schema.
@@ -148,13 +149,14 @@ namespace GanttDapper.Data
         public DateTime? EndDate { get; set; }
         public int? ParentID { get; set; }
         public string Predecessor { get; set; }
-        public string Duration { get; set; }    
+        public string Duration { get; set; }
         public int Progress { get; set; }
     }
 }
 ```
 
 **Explanation:**
+
 - The `[Key]` attribute marks the `TaskID` property as the primary key (a unique identifier for each record).
 - Each property represents a column in the database table.
 - The `?` symbol indicates that a property is nullable (can be empty).
@@ -187,16 +189,16 @@ A connection string contains the information needed to connect the application t
 
 **Connection String Components:**
 
-| Component | Description |
-|-----------|-------------|
-| Data Source | The address of the SQL Server instance (server name, IP address, or localhost) |
-| Initial Catalog | The database name (in this case, `GanttDB`) |
-| Integrated Security | Set to `True` for Windows Authentication; use `False` with Username/Password for SQL Authentication |
-| Connect Timeout | Connection timeout in seconds (default is 15) |
-| Encrypt | Enables encryption for the connection (set to `True` for production environments) |
-| Trust Server Certificate | Whether to trust the server certificate (set to `False` for security) |
-| Application Intent | Set to `ReadWrite` for normal operations or `ReadOnly` for read-only scenarios |
-| Multi Subnet Failover | Used in failover clustering scenarios (typically `False`) |
+| Component                | Description                                                                                         |
+| ------------------------ | --------------------------------------------------------------------------------------------------- |
+| Data Source              | The address of the SQL Server instance (server name, IP address, or localhost)                      |
+| Initial Catalog          | The database name (in this case, `GanttDB`)                                                         |
+| Integrated Security      | Set to `True` for Windows Authentication; use `False` with Username/Password for SQL Authentication |
+| Connect Timeout          | Connection timeout in seconds (default is 15)                                                       |
+| Encrypt                  | Enables encryption for the connection (set to `True` for production environments)                   |
+| Trust Server Certificate | Whether to trust the server certificate (set to `False` for security)                               |
+| Application Intent       | Set to `ReadWrite` for normal operations or `ReadOnly` for read-only scenarios                      |
+| Multi Subnet Failover    | Used in failover clustering scenarios (typically `False`)                                           |
 
 The database connection string has been configured successfully.
 
@@ -207,7 +209,7 @@ A repository class is an intermediary layer that handles all database operations
 **Instructions:**
 
 1. Inside the `Data` folder, create a new file named **TaskRepository.cs**.
-2. Define the **TaskRepository** class with the following code: 
+2. Define the **TaskRepository** class with the following code:
 
 ```csharp
 using Dapper;
@@ -278,6 +280,7 @@ namespace GanttDapper.Data
 ```
 
 **QueryAsync&lt;T&gt;** is a Dapper extension method on IDbConnection that:
+
 - Executes a SQL query asynchronously (uses **ADO.NET** async under the hood).
 - Maps each row in the result set to an instance of T (here, TaskDataModel) by matching column names to property names.
 - Returns an **IEnumerable&lt;T&gt;**.
@@ -340,6 +343,7 @@ app.Run();
 ```
 
 **Explanation:**
+
 - **`AddScoped<IDbConnection>`**: Dapper requires an ADO.NET connection object, registered as a scoped service so each request gets its own connection.
 - **`AddScoped<TaskRepository>`**: Makes the TaskRepository available for dependency injection throughout the application.
 - **`AddSyncfusionBlazor()`**: Registers Blazor components.
@@ -372,11 +376,15 @@ Syncfusion is a library that provides pre-built UI components like Gantt Chart, 
 <link href="_content/Syncfusion.Blazor/Themes/tailwind3.css" rel="stylesheet" />
 
 <!-- Blazor Scripts -->
-<script src="_content/Syncfusion.Blazor.Core/scripts/syncfusion-blazor.min.js" type="text/javascript"></script>
+<script
+  src="_content/Syncfusion.Blazor.Core/scripts/syncfusion-blazor.min.js"
+  type="text/javascript"
+></script>
 ```
+
 For this project, the tailwind3 theme is used. A different theme can be selected or the existing theme can be customized based on project requirements. Refer to the [Blazor Components Appearance](https://blazor.syncfusion.com/documentation/appearance/themes) documentation to learn more about theming and customization options.
 
-Blazor components are now configured and ready to use. For additional guidance, refer to the Gantt Chart component [getting‑started](https://blazor.syncfusion.com/documentation/gantt-chart/getting-started-with-web-app) documentation.
+Blazor components are now configured and ready to use. For additional guidance, refer to the Gantt Chart component [getting‑started](https://blazor.syncfusion.com/documentation/gantt/getting-started-with-web-app) documentation.
 
 ### Step 2: Update the Blazor Gantt Chart
 
@@ -421,7 +429,7 @@ The Home component has been updated successfully with Gantt Chart.
 
 ### Step 3: Implement the custom adaptor
 
-The Gantt Chart can bind data from a **SQL Server** database using [DataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html) and set the [Adaptor](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Adaptors.html) property to [CustomAdaptor](https://blazor.syncfusion.com/documentation/gantt-chart/connecting-to-adaptors/custom-adaptor) for scenarios that require full control over data operations.
+The Gantt Chart can bind data from a **SQL Server** database using [DataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html) and set the [Adaptor](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Adaptors.html) property to [CustomAdaptor](https://blazor.syncfusion.com/documentation/gantt/connecting-to-adaptors/custom-adaptor) for scenarios that require full control over data operations.
 
 The `CustomAdaptor` is a bridge between the Gantt Chart and the database. It handles all data operations including reading, searching, filtering, sorting, and CRUD operations. Each operation in the CustomAdaptor's `ReadAsync` method handles specific Gantt Chart functionality. The Gantt Chart sends operation details to the API through a [DataManagerRequest](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManagerRequest.html) object. These details can be applied to the data source using methods from the [DataOperations](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html) class.
 
@@ -487,7 +495,7 @@ The `CustomAdaptor` is a bridge between the Gantt Chart and the database. It han
                 {
                     dataSource = DataOperations.PerformSorting(dataSource, dataManagerRequest.Sorted);
                 }
-                
+
                 int totalRecordsCount = dataSource.Cast<TaskDataModel>().Count();
 
                 // Apply skip operation
@@ -501,7 +509,7 @@ The `CustomAdaptor` is a bridge between the Gantt Chart and the database. It han
                     dataSource = DataOperations.PerformTake(dataSource, dataManagerRequest.Take);
                 }
 
-                // Return the result with total count 
+                // Return the result with total count
                 return dataManagerRequest.RequiresCounts
                     ? new DataResult() { Result = dataSource, Count = totalRecordsCount }
                     : (object)dataSource;
@@ -519,13 +527,13 @@ The `CustomAdaptor` class has been successfully implemented with all data operat
 
 **Common methods in data operations**
 
-* [ReadAsync(DataManagerRequest)](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_ReadAsync_Syncfusion_Blazor_DataManagerRequest_System_String_) - Retrieve and process records (search, filter, sort)
+- [ReadAsync(DataManagerRequest)](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_ReadAsync_Syncfusion_Blazor_DataManagerRequest_System_String_) - Retrieve and process records (search, filter, sort)
 
-* [PerformSearching](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSearching__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_SearchFilter__) - Applies search criteria to the collection.
-* [PerformFiltering](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformFiltering__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_WhereFilter__System_String_) - Filters data based on conditions.
-* [PerformSorting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSorting__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_Sort__) - Sorts data by one or more fields.
-* [PerformSkip](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSkip__1_System_Linq_IQueryable___0__System_Int32_) - Skips a defined number of records.
-* [PerformTake](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformTake__1_System_Linq_IQueryable___0__System_Int32_) - Retrieves a specified number of records.
+- [PerformSearching](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSearching__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_SearchFilter__) - Applies search criteria to the collection.
+- [PerformFiltering](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformFiltering__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_WhereFilter__System_String_) - Filters data based on conditions.
+- [PerformSorting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSorting__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_Sort__) - Sorts data by one or more fields.
+- [PerformSkip](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSkip__1_System_Linq_IQueryable___0__System_Int32_) - Skips a defined number of records.
+- [PerformTake](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformTake__1_System_Linq_IQueryable___0__System_Int32_) - Retrieves a specified number of records.
 
 ---
 
@@ -540,8 +548,8 @@ The toolbar provides buttons for adding, editing, deleting records, and searchin
 
 ```cshtml
 <SfGantt TValue="TaskDataModel"
-        AllowSorting="true" 
-        AllowFiltering="true" 
+        AllowSorting="true"
+        AllowFiltering="true"
         Toolbar="@ToolbarItems">
     <SfDataManager AdaptorInstance="@typeof(CustomAdaptor)" Adaptor="Adaptors.CustomAdaptor"></SfDataManager>
     <GanttColumns>
@@ -562,14 +570,14 @@ The toolbar provides buttons for adding, editing, deleting records, and searchin
 
 **Toolbar Items Explanation:**
 
-| Item | Function |
-|------|----------|
-| `Add` | Opens the Dialog to add a new task data. |
-| `Edit` | Enables editing of the selected record. |
+| Item     | Function                                       |
+| -------- | ---------------------------------------------- |
+| `Add`    | Opens the Dialog to add a new task data.       |
+| `Edit`   | Enables editing of the selected record.        |
 | `Delete` | Deletes the selected record from the database. |
-| `Update` | Saves changes made to the selected record. |
-| `Cancel` | Cancels the current edit or add operation. |
-| `Search` | Displays a search box to find records. |
+| `Update` | Saves changes made to the selected record.     |
+| `Cancel` | Cancels the current edit or add operation.     |
+| `Search` | Displays a search box to find records.         |
 
 The toolbar has been successfully added.
 
@@ -596,7 +604,7 @@ Searching helps to find records by entering keywords in the search box.
 ```csharp
 @code {
     private List<string> ToolbarItems = new List<string> { "Search"};
-    
+
     /// <summary>
     /// CustomAdaptor class to handle Gantt Chart data operations with MSSQL with Dapper
     /// </summary>
@@ -623,9 +631,9 @@ Searching helps to find records by entering keywords in the search box.
             }
 
             int totalRecordsCount = dataSource.Cast<TaskDataModel>().Count();
-            
-            return dataManagerRequest.RequiresCounts 
-                ? new DataResult() { Result = dataSource, Count = totalRecordsCount } 
+
+            return dataManagerRequest.RequiresCounts
+                ? new DataResult() { Result = dataSource, Count = totalRecordsCount }
                 : (object)dataSource;
         }
     }
@@ -653,14 +661,15 @@ Filtering allows to restrict data based on column values using a menu interface.
 2. Add the [AllowFiltering](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowFiltering) property to the `<SfGantt` component:
 
 ```cshtml
-<SfGantt TValue="TaskDataModel"       
+<SfGantt TValue="TaskDataModel"
         AllowFiltering="true" >
-    <SfDataManager AdaptorInstance="@typeof(CustomAdaptor)" Adaptor="Adaptors.CustomAdaptor"></SfDataManager>    
+    <SfDataManager AdaptorInstance="@typeof(CustomAdaptor)" Adaptor="Adaptors.CustomAdaptor"></SfDataManager>
     <GanttColumns>
         <!-- Gantt columns configuration -->
     </GanttColumns>
 </SfGantt>
 ```
+
 3. Update the `ReadAsync` method in the `CustomAdaptor` class to handle filtering:
 
 ```csharp
@@ -679,7 +688,7 @@ Filtering allows to restrict data based on column values using a menu interface.
         {
             get => _taskService;
             set => _taskService = value;
-        }    
+        }
 
         public override async Task<object> ReadAsync(DataManagerRequest dataManagerRequest, string? key =   null)
         {
@@ -695,10 +704,10 @@ Filtering allows to restrict data based on column values using a menu interface.
                 }
             }
 
-            int totalRecordsCount = dataSource.Cast<TaskDataModel>().Count();            
+            int totalRecordsCount = dataSource.Cast<TaskDataModel>().Count();
 
-            return dataManagerRequest.RequiresCounts 
-                ? new DataResult() { Result = dataSource, Count = totalRecordsCount } 
+            return dataManagerRequest.RequiresCounts
+                ? new DataResult() { Result = dataSource, Count = totalRecordsCount }
                 : (object)dataSource;
         }
     }
@@ -735,6 +744,7 @@ Sorting enables the records to arrange in ascending or descending order based on
     </GanttColumns>
 </SfGantt>
 ```
+
 3. Update the `ReadAsync` method in the `CustomAdaptor` class to handle sorting:
 
 ```csharp
@@ -758,20 +768,20 @@ Sorting enables the records to arrange in ascending or descending order based on
         public override async Task<object> ReadAsync(DataManagerRequest dataManagerRequest, string? key =   null)
         {
             IEnumerable<TaskDataModel> dataSource = await _taskService!.GetTasksAsync();
-            
+
              // Handling Sorting
             if (dataManagerRequest.Sorted != null && dataManagerRequest.Sorted.Count > 0)
             {
                 dataSource = DataOperations.PerformSorting(dataSource, dataManagerRequest.Sorted);
             }
 
-            int totalRecordsCount = dataSource.Cast<TaskDataModel>().Count();            
+            int totalRecordsCount = dataSource.Cast<TaskDataModel>().Count();
 
-            return dataManagerRequest.RequiresCounts 
-                ? new DataResult() { Result = dataSource, Count = totalRecordsCount } 
+            return dataManagerRequest.RequiresCounts
+                ? new DataResult() { Result = dataSource, Count = totalRecordsCount }
                 : (object)dataSource;
         }
-    }    
+    }
 }
 ```
 
@@ -795,10 +805,10 @@ Add the [GanttEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Bla
 
 ```cshtml
 <SfGantt TValue="TaskDataModel"
-        AllowSorting="true" 
+        AllowSorting="true"
         AllowFiltering="true"
         Toolbar="@ToolbarItems">
-    <SfDataManager AdaptorInstance="@typeof(CustomAdaptor)" Adaptor="Adaptors.CustomAdaptor"></SfDataManager>     
+    <SfDataManager AdaptorInstance="@typeof(CustomAdaptor)" Adaptor="Adaptors.CustomAdaptor"></SfDataManager>
      <GanttEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" AllowTaskbarEditing="true"></GanttEditSettings>
     <GanttColumns>
         <!-- Gantt columns configuration -->
@@ -850,7 +860,7 @@ public async Task AddTaskAsync(TaskDataModel value)
     value.StartDate ??= DateTime.Now;
 
     const string query = @"
-        INSERT INTO [dbo].[TaskData] 
+        INSERT INTO [dbo].[TaskData]
         (TaskName, StartDate, EndDate, ParentID, Duration, Predecessor, Progress)
         VALUES
         (@TaskID, @TaskName, @StartDate, @EndDate, @ParentID,
@@ -879,7 +889,7 @@ In **Home.razor**, implement the `UpdateAsync` method within the `CustomAdaptor`
 public class CustomAdaptor : DataAdaptor
 {
     public override async Task<object> UpdateAsync(DataManager dataManager, object value, string keyField, string key)
-    {    
+    {
         await _taskService!.UpdateTaskAsync(value as TaskDataModel);
         return value;
     }
@@ -901,15 +911,15 @@ public async Task UpdateTaskAsync(TaskDataModel value)
 
         const string checkQuery = "SELECT COUNT(*) FROM [dbo].[TaskData] WHERE TaskID = @TaskID";
         var exists = await _connection.QueryFirstOrDefaultAsync<int>(checkQuery, new { value.TaskID });
-        
+
         if (exists == 0)
             throw new KeyNotFoundException($"Task with ID {value.TaskID} not found");
-        
+
         const string query = @"
             UPDATE [dbo].[TaskData]
-            SET TaskName = @TaskName, 
+            SET TaskName = @TaskName,
                 StartDate = @StartDate, EndDate = @EndDate, Duration = @Duration,
-                Predecessor = @Predecessor, Progress = @Progress, 
+                Predecessor = @Predecessor, Progress = @Progress,
             WHERE TaskID = @TaskID;"
 
         await _connection.ExecuteAsync(query, value);
@@ -928,7 +938,7 @@ public async Task UpdateTaskAsync(TaskDataModel value)
 2. The CustomAdaptor's `UpdateAsync()` method is called.
 3. The `TaskRepository.UpdateTaskAsync()` method validates the task exists.
 4. Dapper's `ExecuteAsync()` method executes the **UPDATE** query with parameterized values.
-6. The Gantt Chart refreshes to display the updated record.
+5. The Gantt Chart refreshes to display the updated record.
 
 Now modifications are synchronized to the database and reflected in the Gantt Chart UI.
 
@@ -961,7 +971,7 @@ public async Task RemoveTaskAsync(int? key)
 
         const string checkQuery = "SELECT COUNT(*) FROM [dbo].[TaskData] WHERE TaskID = @TaskID";
         var exists = await _connection.QueryFirstOrDefaultAsync<int>(checkQuery, new { TaskID = key });
-        
+
         if (exists == 0)
             throw new KeyNotFoundException($"Task with ID {key} not found");
 
@@ -1048,7 +1058,7 @@ Now the adaptor supports multi-record modifications with database synchronizatio
 - [RemoveAsync(DataManager, object, string, string)](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_RemoveAsync_Syncfusion_Blazor_DataManager_System_Object_System_String_System_String_) - Delete records from SQL Server
 - [BatchUpdateAsync(DataManager, object, object, object, string, string, int?)](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_BatchUpdateAsync_Syncfusion_Blazor_DataManager_System_Object_System_Object_System_Object_System_String_System_String_System_Nullable_System_Int32__) - Handle multiple task operations
 
- > **ExecuteAsync** is used to run commands that don’t return result sets—typically **INSERT, UPDATE, DELETE, CREATE TABLE,** or **calling stored procedures** that return only the number of affected tasks.
+> **ExecuteAsync** is used to run commands that don’t return result sets—typically **INSERT, UPDATE, DELETE, CREATE TABLE,** or **calling stored procedures** that return only the number of affected tasks.
 
 ---
 
@@ -1065,7 +1075,7 @@ Here is the complete and final `Home.razor` component with all features integrat
 
 @inject TaskRepository TaskService
 
-<SfGantt TValue="TaskDataModel" Height="500px" Width="100%" AllowSorting="true" AllowFiltering="true" 
+<SfGantt TValue="TaskDataModel" Height="500px" Width="100%" AllowSorting="true" AllowFiltering="true"
          Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" })">
 
     <SfDataManager AdaptorInstance="@typeof(CustomAdaptor)" Adaptor="Adaptors.CustomAdaptor"></SfDataManager>
@@ -1088,8 +1098,8 @@ Here is the complete and final `Home.razor` component with all features integrat
 </SfGantt>
 ```
 
-> * Set [IsPrimaryKey](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_IsPrimaryKey) to **true** for a column that contains unique values.
-> * Set [IsIdentity](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_IsIdentity) to **true** for auto-generated columns to disable editing during add or update operations.
+> - Set [IsPrimaryKey](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_IsPrimaryKey) to **true** for a column that contains unique values.
+> - Set [IsIdentity](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_IsIdentity) to **true** for auto-generated columns to disable editing during add or update operations.
 
 ```csharp
 @code {
@@ -1128,7 +1138,7 @@ Here is the complete and final `Home.razor` component with all features integrat
 
             // Filtering
             if (dataManagerRequest.Where != null && dataManagerRequest.Where.Count > 0)
-            {                
+            {
                 if (dataManagerRequest.Where[0].Field != null && dataManagerRequest.Where[0].Field == @nameof(TaskDataModel.ParentID)){}
                 else
                 {
@@ -1152,8 +1162,8 @@ Here is the complete and final `Home.razor` component with all features integrat
                 dataSource = DataOperations.PerformTake(dataSource, dataManagerRequest.Take);
             }
 
-            return dataManagerRequest.RequiresCounts 
-                ? new DataResult() { Result = dataSource, Count = totalRecordsCount } 
+            return dataManagerRequest.RequiresCounts
+                ? new DataResult() { Result = dataSource, Count = totalRecordsCount }
                 : (object)dataSource;
         }
 
@@ -1194,6 +1204,7 @@ Here is the complete and final `Home.razor` component with all features integrat
     }
 }
 ```
+
 ---
 
 ## Running the Application
@@ -1231,17 +1242,19 @@ dotnet run
 - **Add**: Click the "Add" button to create a new task.
 - **Edit**: Click the "Edit" button to modify existing task.
 - **Delete**: Click the "Delete" button to remove task.
+
 ---
 
 ## Summary
 
 This guide demonstrates how to:
+
 1. Create a SQL Server database with task data. [🔗](#step-1-create-the-database-and-table-in-sql-server)
 2. Install necessary NuGet packages for Dapper and Syncfusion. [🔗](#step-2-install-required-nuget-packages)
 3. Create data models for database mapping. [🔗](#step-3-create-the-data-model)
 4. Configure connection strings for SQL Server. [🔗](#step-4-configure-the-connection-string)
 5. Implement the repository pattern with Dapper for efficient data access. [🔗](#step-5-create-the-repository-class)
-6. Create a Blazor component with a Gantt Chart that supports searching, filtering, sorting,  and CRUD operations. [🔗](#step-1-install-and-configure-blazor-gantt-chart-component)
+6. Create a Blazor component with a Gantt Chart that supports searching, filtering, sorting, and CRUD operations. [🔗](#step-1-install-and-configure-blazor-gantt-chart-component)
 7. Handle task operations and batch updates. [🔗](#step-8-perform-crud-operations)
 
 The application now provides a complete solution for managing task data with a modern, user-friendly interface using Dapper for high-performance database access.

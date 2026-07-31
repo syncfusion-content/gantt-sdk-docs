@@ -2,7 +2,7 @@
 layout: post
 title: Critical Path in Vue Gantt Chart Component | Syncfusion
 description: Learn here all about Critical path in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Critical path 
+control: Critical path
 platform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -18,14 +18,14 @@ The following code example shows how to display the critical path in the Gantt C
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/criticalpath-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/criticalpath-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/criticalpath-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/criticalpath-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/criticalpath-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/criticalpath-cs1" %}
 
 ## Customize taskbar in critical path
 
@@ -35,11 +35,11 @@ The following code example shows how to customize the critical path taskbar in t
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/customizeCriticalPath-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/customizeCriticalPath-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/customizeCriticalPath-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/customizeCriticalPath-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/customizeCriticalPath-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/customizeCriticalPath-cs1" %}

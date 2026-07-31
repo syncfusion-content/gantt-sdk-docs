@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Multiple Gantt exporting
 
 In Gantt, the Excel export provides support to export multiple Gantt data in new sheet or same sheet.
@@ -21,10 +20,10 @@ The Excel export provides support to export multiple Gantt data in the same shee
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/sameSheet/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/sameSheet/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="SameSheet.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/sameSheet/sameSheet.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/sameSheet/sameSheet.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -32,15 +31,13 @@ The Excel export provides support to export multiple Gantt data in the same shee
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/sameSheet/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/sameSheet/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="SameSheet.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/sameSheet/sameSheet.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/sameSheet/sameSheet.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 N>By default, `multipleExport.blankRows` value is 5.
 
@@ -52,10 +49,10 @@ The Excel exporting provides support to export multiple Gantt in new sheet. To e
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/newSheet/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/newSheet/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="NewSheet.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/newSheet/newSheet.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/newSheet/newSheet.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -63,15 +60,13 @@ The Excel exporting provides support to export multiple Gantt in new sheet. To e
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/newSheet/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/newSheet/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="NewSheet.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/newSheet/newSheet.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/newSheet/newSheet.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Customize the Excel export
 
@@ -85,10 +80,10 @@ In Gantt, the Excel export provides an option to export hidden columns by defini
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/exportHiddenColumns/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/exportHiddenColumns/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ExportHiddenColumns.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/exportHiddenColumns/exportHiddenColumns.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/exportHiddenColumns/exportHiddenColumns.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -96,15 +91,13 @@ In Gantt, the Excel export provides an option to export hidden columns by defini
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/exportHiddenColumns/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/exportHiddenColumns/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ExportHiddenColumns.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/exportHiddenColumns/exportHiddenColumns.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/exportHiddenColumns/exportHiddenColumns.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ### Show or hide columns on exported Excel
 
@@ -118,10 +111,10 @@ Similarly, in the excelExportComplete event, you can revert the columns visibili
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/showHideColumn/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/showHideColumn/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ShowHideColumn.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/showHideColumn/showHideColumn.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/showHideColumn/showHideColumn.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -129,15 +122,13 @@ Similarly, in the excelExportComplete event, you can revert the columns visibili
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/showHideColumn/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/showHideColumn/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ShowHideColumn.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/showHideColumn/showHideColumn.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/showHideColumn/showHideColumn.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ### Cell formatting during export
 
@@ -149,10 +140,10 @@ In the following sample, the background color has been customized for `TaskId` c
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/cellFormat/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/cellFormat/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CellFormat.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/cellFormat/cellFormat.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/cellFormat/cellFormat.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -160,15 +151,13 @@ In the following sample, the background color has been customized for `TaskId` c
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/cellFormat/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/cellFormat/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CellFormat.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/cellFormat/cellFormat.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/cellFormat/cellFormat.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ### Theme
 
@@ -180,10 +169,10 @@ To apply theme in exported Excel, define the `theme` in `ExcelExportProperties`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/theme/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/theme/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Theme.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/theme/theme.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/theme/theme.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -191,15 +180,13 @@ To apply theme in exported Excel, define the `theme` in `ExcelExportProperties`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/theme/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/theme/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Theme.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/theme/theme.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/theme/theme.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 N> By default, material theme is applied to the exported Excel document.
 
@@ -211,10 +198,10 @@ The Excel export also allows users to include header and footer contents to the 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/headerFooter/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/headerFooter/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HeaderFooter.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/headerFooter/headerFooter.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/headerFooter/headerFooter.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -222,15 +209,13 @@ The Excel export also allows users to include header and footer contents to the 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/headerFooter/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/headerFooter/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HeaderFooter.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/headerFooter/headerFooter.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/headerFooter/headerFooter.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ### File name for exported document
 
@@ -240,10 +225,10 @@ You can set the required file name for the exported document by defining the `fi
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/fileName/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/fileName/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="FileName.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/fileName/fileName.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/fileName/fileName.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -251,10 +236,10 @@ You can set the required file name for the exported document by defining the `fi
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/fileName/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/fileName/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="FileName.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/fileName/fileName.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/fileName/fileName.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

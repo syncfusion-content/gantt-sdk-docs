@@ -21,27 +21,27 @@ Define validation rules for columns using [columns.validationRules](../../api/ga
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs24/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/getting-started-cs24/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs24/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/getting-started-cs24/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs24" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/getting-started-cs24" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs24/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/getting-started-cs24/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs24/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/getting-started-cs24/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs24" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/getting-started-cs24" %}
 {% endif %}
 
 ## Apply custom validation
@@ -52,27 +52,27 @@ Implement custom validation for specific columns, like `TaskName`, using callbac
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs25/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/getting-started-cs25/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs25/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/getting-started-cs25/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs25" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/getting-started-cs25" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs25/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/getting-started-cs25/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs25/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/getting-started-cs25/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs25" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/getting-started-cs25" %}
 {% endif %}
 
 ## Validate dependency and resource grids
@@ -83,27 +83,27 @@ Set validation rules for dependency and resource grids in the add/edit dialog us
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs26/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/getting-started-cs26/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs26/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/getting-started-cs26/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs26" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/getting-started-cs26" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs26/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/getting-started-cs26/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs26/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/getting-started-cs26/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs26" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/getting-started-cs26" %}
 {% endif %}
 
 ## See also

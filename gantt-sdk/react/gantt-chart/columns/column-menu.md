@@ -27,17 +27,17 @@ The following built-in column menu items are available:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columnmenu-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columnmenu-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columnmenu-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columnmenu-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columnmenu-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/columnmenu-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/columnmenu-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/columnmenu-cs1" %}
 
 > - You can disable the column menu for specific columns by setting [columns.showColumnMenu](https://ej2.syncfusion.com/react/documentation/api/gantt/column#showcolumnmenu) to **false**.
 > - You can customize the default column menu items by defining [columnMenuItems](https://ej2.syncfusion.com/react/documentation/api/gantt#columnmenuitems) with only the required items.
@@ -52,17 +52,17 @@ The following example demonstrates how to add a custom column menu item to clear
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/colmenu-item-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/colmenu-item-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/colmenu-item-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/colmenu-item-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/colmenu-item-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/colmenu-item-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/colmenu-item-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/colmenu-item-cs1" %}
 
 ## Customize column menu items per column
 
@@ -72,17 +72,17 @@ The following example demonstrates hiding the **Filter** item when the column me
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/colmenu-action-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/colmenu-action-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/colmenu-action-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/colmenu-action-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/colmenu-action-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/colmenu-action-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/colmenu-action-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/colmenu-action-cs1" %}
 
 > - You can disable the column menu for a specific column by setting [column.showColumnMenu](https://ej2.syncfusion.com/react/documentation/api/gantt/column#showcolumnmenu) to **false**.
 
@@ -94,17 +94,17 @@ The following example demonstrates how to configure `columnMenuItems` to include
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columnmenu-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columnmenu-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columnmenu-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columnmenu-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columnmenu-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/columnmenu-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/columnmenu-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/columnmenu-cs2" %}
 
 ## Customize the column menu icon
 
@@ -135,14 +135,14 @@ To customize the column menu icon, follow these steps:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columnmenu-cs3/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columnmenu-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columnmenu-cs3/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columnmenu-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columnmenu-cs3/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/columnmenu-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/columnmenu-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/columnmenu-cs3" %}

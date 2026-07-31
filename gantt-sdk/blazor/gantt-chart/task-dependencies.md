@@ -23,21 +23,22 @@ Task dependencies determine the execution sequence of tasks, forming a structure
 ## Types of task relationships
 
 Task relationships are categorized into four types based on start and finish dates:
+
 - **Start to Start (SS)**: Successor starts with predecessor.
-   Example: In event planning, venue decoration (Task B) can start as soon as venue setup (Task A) begins.
-   ![Blazor Gantt Chart displays Start to Start Task Relationship](images/blazor-gantt-chart-start-to-start-relation.webp)
+  Example: In event planning, venue decoration (Task B) can start as soon as venue setup (Task A) begins.
+  ![Blazor Gantt Chart displays Start to Start Task Relationship](images/blazor-gantt-chart-start-to-start-relation.webp)
 
 - **Start to Finish (SF)**: Successor finishes when predecessor starts.
-    Example: In shift work, the night shift (Task B) can't end until the day shift (Task A) begins.
-   ![Blazor Gantt Chart displays Start to Finish Task Relationship](images/blazor-gantt-chart-start-to-finish-relation.webp)
+  Example: In shift work, the night shift (Task B) can't end until the day shift (Task A) begins.
+  ![Blazor Gantt Chart displays Start to Finish Task Relationship](images/blazor-gantt-chart-start-to-finish-relation.webp)
 
 - **Finish to Start (FS)**: Successor starts after predecessor finishes (default).
-   Example: In software development, coding (Task B) can only start after the design phase (Task A) is finished.
-   ![Blazor Gantt Chart displays Finish to Start Task Relationship](images/blazor-gantt-chart-finish-to-start-relation.webp)
+  Example: In software development, coding (Task B) can only start after the design phase (Task A) is finished.
+  ![Blazor Gantt Chart displays Finish to Start Task Relationship](images/blazor-gantt-chart-finish-to-start-relation.webp)
 
 - **Finish to Finish (FF)**: Successor finishes with predecessor.
-    Example: In publishing, proof reading (Task B) must finish when or shortly after content writing (Task A) is completed.
-   ![Blazor Gantt Chart displays Finish to Finish Task Relationship](images/blazor-gantt-chart-finish-to-finish-relation.webp)
+  Example: In publishing, proof reading (Task B) must finish when or shortly after content writing (Task A) is completed.
+  ![Blazor Gantt Chart displays Finish to Finish Task Relationship](images/blazor-gantt-chart-finish-to-finish-relation.webp)
 
 ## Implementing task dependencies
 
@@ -57,11 +58,11 @@ The following code snippets demonstrate how to define and configure task depende
 @using Syncfusion.Blazor.DropDowns
 
 <SfDropDownList TItem="Types" TValue="string" PopupHeight="230px" Width="250px" @bind-Value="@DropDownValue" DataSource="@PTypes">
-    <DropDownListEvents TItem="Types" TValue="string" ValueChange="OnChange" />
-    <DropDownListFieldSettings Text="Text" Value="ID" />
+<DropDownListEvents TItem="Types" TValue="string" ValueChange="OnChange" />
+<DropDownListFieldSettings Text="Text" Value="ID" />
 </SfDropDownList>
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="650px" DependencyTypes="@types" Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })">
-    <GanttTaskFields Id="TaskId"
+<GanttTaskFields Id="TaskId"
                      Name="TaskName"
                      StartDate="StartDate"
                      EndDate="EndDate"
@@ -69,68 +70,68 @@ The following code snippets demonstrate how to define and configure task depende
                      Progress="Progress"
                      Dependency="Predecessor"
                      ParentID="ParentId">
-    </GanttTaskFields>
+</GanttTaskFields>
 </SfGantt>
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    public List<DependencyType> types = new List<DependencyType>() { DependencyType.FS, DependencyType.SS, DependencyType.SF, DependencyType.FF };
-    public class Types
-    {
-        public string? ID { get; set; }
-        public string? Text { get; set; }
-    }
-    private List<Types> PTypes = new List<Types>()
-    {
-        new Types(){ ID= "Type1", Text= "FS" },
-        new Types(){ ID= "Type2", Text= "FS, SS" },
-        new Types(){ ID= "Type3", Text= "FS, SS, SF" },
-        new Types(){ ID= "Type4", Text= "FS, SS, SF, FF" }
-     };
-    public string DropDownValue = "Type4";
-    public void OnChange(Syncfusion.Blazor.DropDowns.ChangeEventArgs<string, Types> args)
-    {
-        if (args.ItemData.ID == "Type1")
-        {
-            types = new List<DependencyType>() { DependencyType.FS };
-        }
-        else if (args.ItemData.ID == "Type2")
-        {
-            types = new List<DependencyType>() { DependencyType.FS, DependencyType.SS };
-        }
-        else if (args.ItemData.ID == "Type3")
-        {
-            types = new List<DependencyType>() { DependencyType.FS, DependencyType.SS, DependencyType.SF };
-        }
-        if (args.ItemData.ID == "Type4")
-        {
-            types = new List<DependencyType>() { DependencyType.FS, DependencyType.SS, DependencyType.SF, DependencyType.FF };
-        }
-    }
-    protected override void OnInitialized()
-    {
-        TaskCollection = new List<TaskData>
-        {
-            new TaskData { TaskId = 1, TaskName = "Project Initiation", StartDate = new DateTime(2026, 04, 02), EndDate = new DateTime(2026, 04, 06) },
-            new TaskData { TaskId = 2, TaskName = "Identify Site location", StartDate = new DateTime(2026, 04, 02), Duration = "0", Progress = 30, ParentId = 1 },
-            new TaskData { TaskId = 3, TaskName = "Perform Soil test", StartDate = new DateTime(2026, 04, 02), EndDate = new DateTime(2026, 04, 06), Progress = 40, Predecessor = "2FS", ParentId = 1 },
-            new TaskData { TaskId = 4, TaskName = "Soil test approval", StartDate = new DateTime(2026, 04, 02), Duration = "0", Progress = 30, Predecessor = "3FF", ParentId = 1 },
-            new TaskData { TaskId = 5, TaskName = "Project Estimation", StartDate = new DateTime(2026, 04, 02), EndDate = new DateTime(2026, 04, 06) },
-            new TaskData { TaskId = 6, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2026, 04, 06), EndDate = new DateTime(2026, 04, 09), Progress = 30, ParentId = 5 },
-            new TaskData { TaskId = 7, TaskName = "List materials", StartDate = new DateTime(2026, 04, 06), EndDate = new DateTime(2026, 04, 09), Progress = 40, Predecessor = "6SS", ParentId = 5 },
-            new TaskData { TaskId = 8, TaskName = "Estimation approval", StartDate = new DateTime(2026, 04, 06), Duration = "0", Progress = 30, Predecessor = "7SF", ParentId = 5 }
-        };
-    }
-    public class TaskData
-    {
-        public int TaskId { get; set; }
-        public string? TaskName { get; set; }
-        public DateTime StartDate { get; set; }
-        public DateTime? EndDate { get; set; }
-        public string? Duration { get; set; }
-        public int Progress { get; set; }
-        public string? Predecessor { get; set; }
-        public int? ParentId { get; set; }
-    }
+public List<TaskData>? TaskCollection { get; set; }
+public List<DependencyType> types = new List<DependencyType>() { DependencyType.FS, DependencyType.SS, DependencyType.SF, DependencyType.FF };
+public class Types
+{
+public string? ID { get; set; }
+public string? Text { get; set; }
+}
+private List<Types> PTypes = new List<Types>()
+{
+new Types(){ ID= "Type1", Text= "FS" },
+new Types(){ ID= "Type2", Text= "FS, SS" },
+new Types(){ ID= "Type3", Text= "FS, SS, SF" },
+new Types(){ ID= "Type4", Text= "FS, SS, SF, FF" }
+};
+public string DropDownValue = "Type4";
+public void OnChange(Syncfusion.Blazor.DropDowns.ChangeEventArgs<string, Types> args)
+{
+if (args.ItemData.ID == "Type1")
+{
+types = new List<DependencyType>() { DependencyType.FS };
+}
+else if (args.ItemData.ID == "Type2")
+{
+types = new List<DependencyType>() { DependencyType.FS, DependencyType.SS };
+}
+else if (args.ItemData.ID == "Type3")
+{
+types = new List<DependencyType>() { DependencyType.FS, DependencyType.SS, DependencyType.SF };
+}
+if (args.ItemData.ID == "Type4")
+{
+types = new List<DependencyType>() { DependencyType.FS, DependencyType.SS, DependencyType.SF, DependencyType.FF };
+}
+}
+protected override void OnInitialized()
+{
+TaskCollection = new List<TaskData>
+{
+new TaskData { TaskId = 1, TaskName = "Project Initiation", StartDate = new DateTime(2026, 04, 02), EndDate = new DateTime(2026, 04, 06) },
+new TaskData { TaskId = 2, TaskName = "Identify Site location", StartDate = new DateTime(2026, 04, 02), Duration = "0", Progress = 30, ParentId = 1 },
+new TaskData { TaskId = 3, TaskName = "Perform Soil test", StartDate = new DateTime(2026, 04, 02), EndDate = new DateTime(2026, 04, 06), Progress = 40, Predecessor = "2FS", ParentId = 1 },
+new TaskData { TaskId = 4, TaskName = "Soil test approval", StartDate = new DateTime(2026, 04, 02), Duration = "0", Progress = 30, Predecessor = "3FF", ParentId = 1 },
+new TaskData { TaskId = 5, TaskName = "Project Estimation", StartDate = new DateTime(2026, 04, 02), EndDate = new DateTime(2026, 04, 06) },
+new TaskData { TaskId = 6, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2026, 04, 06), EndDate = new DateTime(2026, 04, 09), Progress = 30, ParentId = 5 },
+new TaskData { TaskId = 7, TaskName = "List materials", StartDate = new DateTime(2026, 04, 06), EndDate = new DateTime(2026, 04, 09), Progress = 40, Predecessor = "6SS", ParentId = 5 },
+new TaskData { TaskId = 8, TaskName = "Estimation approval", StartDate = new DateTime(2026, 04, 06), Duration = "0", Progress = 30, Predecessor = "7SF", ParentId = 5 }
+};
+}
+public class TaskData
+{
+public int TaskId { get; set; }
+public string? TaskName { get; set; }
+public DateTime StartDate { get; set; }
+public DateTime? EndDate { get; set; }
+public string? Duration { get; set; }
+public int Progress { get; set; }
+public string? Predecessor { get; set; }
+public int? ParentId { get; set; }
+}
 }
 
 {% endhighlight %}
@@ -170,21 +171,21 @@ Offsets in task dependencies allow for more precise scheduling by introducing la
 
 A positive offset introduces a delay between the end of the predecessor and the start of the successor.
 
-**Format:**     
-    **Predecessor's Task ID**, **Dependency Type**, then add the duration of lag with **+**.
+**Format:**  
+ **Predecessor's Task ID**, **Dependency Type**, then add the duration of lag with **+**.
 
-**Example:**    
-    **2FS+3d** means the task starts 3 days after Task 2 finishes.
+**Example:**  
+ **2FS+3d** means the task starts 3 days after Task 2 finishes.
 
 ### Negative offset (lead)
 
 A negative offset allows a task to start before its predecessor completes, creating an overlap.
 
-**Format:**                            
-    **Predecessor's Task ID**, **Dependency Type**, then add the duration of lead with **-**. 
+**Format:**  
+ **Predecessor's Task ID**, **Dependency Type**, then add the duration of lead with **-**.
 
-**Example:**                       
-    **3SS-1d** means the task starts 1 day before Task 3 starts.
+**Example:**  
+ **3SS-1d** means the task starts 1 day before Task 3 starts.
 
 ## Understanding dependency string structure
 
@@ -198,7 +199,7 @@ Dependency strings in the Gantt Chart follow a structured format to define task 
 
 Here's a detailed explanation of each component:
 
-1. **TaskID**: 
+1. **TaskID**:
    - This is the unique identifier of the predecessor task.
    - It must match the `Id` field specified in your `GanttTaskFields` mapping.
 
@@ -241,7 +242,7 @@ The Gantt Chart component allows you to configure complex task dependencies to h
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
+public List<TaskData>? TaskCollection { get; set; }
 
     protected override void OnInitialized()
     {
@@ -269,6 +270,7 @@ The Gantt Chart component allows you to configure complex task dependencies to h
         public string? Predecessor { get; set; }
         public int? ParentId { get; set; }
     }
+
 }
 
 {% endhighlight %}
@@ -277,6 +279,7 @@ The Gantt Chart component allows you to configure complex task dependencies to h
 {% previewsample "https://blazorplayground.syncfusion.com/embed/BXhdXxWYfIBWfwGP?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 In this example:
+
 - Tasks 2, 3, and 4 are child tasks of Task 1 (Project Initiation).
 - Tasks 6, 7, and 8 are child tasks of Task 5 (Project Estimation).
 - Task 3 has a Finish-to-Start dependency on Task 2.
@@ -306,7 +309,7 @@ Tasks can have multiple dependencies, allowing for complex project structures. S
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
+public List<TaskData>? TaskCollection { get; set; }
 
     protected override void OnInitialized()
     {
@@ -332,6 +335,7 @@ Tasks can have multiple dependencies, allowing for complex project structures. S
         public string? Predecessor { get; set; }
         public int? ParentId { get; set; }
     }
+
 }
 
 {% endhighlight %}
@@ -359,7 +363,7 @@ These properties help visually distinguish task relationships and improve chart 
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" ConnectorLineBackground="#ff0000" ConnectorLineWidth="2" Height="450px" Width="750px">
-    <GanttTaskFields Id="TaskId"
+<GanttTaskFields Id="TaskId"
                      Name="TaskName"
                      StartDate="StartDate"
                      EndDate="EndDate"
@@ -367,10 +371,10 @@ These properties help visually distinguish task relationships and improve chart 
                      Progress="Progress"
                      Dependency="Predecessor"
                      ParentID="ParentId">
-    </GanttTaskFields>
+</GanttTaskFields>
 </SfGantt>
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
+public List<TaskData>? TaskCollection { get; set; }
 
     protected override void OnInitialized()
     {
@@ -396,6 +400,7 @@ These properties help visually distinguish task relationships and improve chart 
         public string? Predecessor { get; set; }
         public int? ParentId { get; set; }
     }
+
 }
 
 {% endhighlight %}
@@ -407,13 +412,13 @@ Additionally, you can modify the colors of the dependency lines and arrows using
 
 ```html
 <style>
-    .e-gantt .e-connector-line {
-        stroke: #ff0000 !important; /* Set line color to red */
-        stroke-width: 2 !important;/* Make line thicker */
-    }
-    .e-gantt .e-connector-line-arrow {
-        fill: #ff0000 !important;/* Set arrow color to red */
-    }
+  .e-gantt .e-connector-line {
+    stroke: #ff0000 !important; /* Set line color to red */
+    stroke-width: 2 !important; /* Make line thicker */
+  }
+  .e-gantt .e-connector-line-arrow {
+    fill: #ff0000 !important; /* Set arrow color to red */
+  }
 </style>
 ```
 
@@ -448,14 +453,14 @@ Task Dependencies in the Blazor Gantt Chart component provide a powerful tool fo
 
 For more advanced topics related to task dependencies and project management in the Blazor Gantt Chart, refer to the following resources:
 
-1. [Predecessor Validation](https://blazor.syncfusion.com/documentation/gantt-chart/predecessor-validation): Learn how to validate and manage task dependencies to ensure project integrity.
+1. [Predecessor Validation](https://blazor.syncfusion.com/documentation/gantt/predecessor-validation): Learn how to validate and manage task dependencies to ensure project integrity.
 
-2. [Critical Path](https://blazor.syncfusion.com/documentation/gantt-chart/criticalpath): Understand how to identify and visualize the critical path in your project, which is crucial for project timeline management.
+2. [Critical Path](https://blazor.syncfusion.com/documentation/gantt/criticalpath): Understand how to identify and visualize the critical path in your project, which is crucial for project timeline management.
 
-3. [Baseline](https://blazor.syncfusion.com/documentation/gantt-chart/baseline): Explore how to set and compare task progress against a baseline schedule.
+3. [Baseline](https://blazor.syncfusion.com/documentation/gantt/baseline): Explore how to set and compare task progress against a baseline schedule.
 
-4. [Resource Allocation](https://blazor.syncfusion.com/documentation/gantt-chart/resources): Discover how to manage resources in conjunction with task dependencies for optimal project planning.
+4. [Resource Allocation](https://blazor.syncfusion.com/documentation/gantt/resources): Discover how to manage resources in conjunction with task dependencies for optimal project planning.
 
-5. [Timeline](https://blazor.syncfusion.com/documentation/gantt-chart/time-line): Understand how to customize the timeline view to better visualize your project schedule and dependencies.
+5. [Timeline](https://blazor.syncfusion.com/documentation/gantt/time-line): Understand how to customize the timeline view to better visualize your project schedule and dependencies.
 
-For more detailed information and advanced usage scenarios, refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart documentation](https://blazor.syncfusion.com/documentation/gantt-chart/getting-started).
+For more detailed information and advanced usage scenarios, refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart documentation](https://blazor.syncfusion.com/documentation/gantt/getting-started).

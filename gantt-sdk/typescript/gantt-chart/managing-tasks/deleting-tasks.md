@@ -3,7 +3,7 @@ layout: post
 title: Deleting tasks in TypeScript Gantt control | Syncfusion
 description: Learn here all about Deleting tasks in Syncfusion TypeScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Deleting tasks 
+control: Deleting tasks
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -17,27 +17,27 @@ A task delete option in the Gantt control can be enabled by enabling the [ediSet
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/deleteRecord-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/deleteRecord-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/deleteRecord-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/deleteRecord-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/deleteRecord-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/deleteRecord-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/deleteRecord-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/deleteRecord-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/deleteRecord-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/deleteRecord-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/deleteRecord-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/deleteRecord-cs1" %}
 {% endif %}
 
 > NOTE: You should select any one of the rows in the Gantt control to perform task delete action.
@@ -53,25 +53,25 @@ The following code snippet explains how to enable the delete confirmation messag
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/editing-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/editing-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/editing-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/editing-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/editing-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/editing-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/editing-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/editing-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/editing-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/editing-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/editing-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/editing-cs1" %}
 {% endif %}

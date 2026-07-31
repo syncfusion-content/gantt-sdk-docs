@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Open add/edit dialog dynamically
 
 Gantt add and edit dialogs can be opened dynamically by using `openAddDialog` and `openEditDialog` methods. The following code example shows how to open add and dialog on separate button click actions.
@@ -17,10 +16,10 @@ Gantt add and edit dialogs can be opened dynamically by using `openAddDialog` an
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/openEditAddDialog/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/editing/openEditAddDialog/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="OpenEditAddDialog.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/openEditAddDialog/openEditAddDialog.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/editing/openEditAddDialog/openEditAddDialog.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -28,14 +27,12 @@ Gantt add and edit dialogs can be opened dynamically by using `openAddDialog` an
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/openEditAddDialog/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/editing/openEditAddDialog/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="OpenEditAddDialog.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/openEditAddDialog/openEditAddDialog.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/editing/openEditAddDialog/openEditAddDialog.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 N> We should select any one of the row in Gantt to open the edit dialog.

@@ -2,7 +2,7 @@
 layout: post
 title: Resource Multi Taskbar in Vue Gantt Chart component | Syncfusion
 description: Learn here all about Resource Multi Taskbar in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Resource Multi Taskbar 
+control: Resource Multi Taskbar
 platform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -18,18 +18,18 @@ The collapse or expand action of a resource record can be achieved only by using
 
 When a resource has multiple tasks scheduled on the same date, then the tasks will be overlapped one another. Taskbar editing is also possible to change the task scheduling on the collapsed state.
 
->Note: By default, the `enableMultiTaskbar` property value is `false`.
+> Note: By default, the `enableMultiTaskbar` property value is `false`.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/resource-view-cs3/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/resource-view-cs3/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/resource-view-cs3/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/resource-view-cs3/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/resource-view-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/resource-view-cs3" %}
 
 ## Disable taskbar overlap
 
@@ -41,11 +41,11 @@ It's important to note that when `allowTaskbarOverlap` is disabled, task depende
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/resource-view-cs5/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/resource-view-cs5/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/resource-view-cs5/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/resource-view-cs5/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/resource-view-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/resource-view-cs5" %}

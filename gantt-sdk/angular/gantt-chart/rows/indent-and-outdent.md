@@ -3,7 +3,7 @@ layout: post
 title: Indent and Outdent in Angular Gantt Chart Component | Syncfusion
 description: Learn how to use Indent and Outdent features in the Syncfusion Angular Gantt Chart component to manage task hierarchy effectively.
 platform: gantt-sdk
-control: Indent and outdent 
+control: Indent and outdent
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -12,8 +12,8 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component provides built-in support for indenting and outdenting rows, allowing hierarchy levels to be adjusted within the Gantt chart.
 
- * **Indent** – Moves a selected row one level deeper, making it the last child of its previous row.
- * **Outdent** – Shifts a row one level up, placing it as a sibling to its parent.
+- **Indent** – Moves a selected row one level deeper, making it the last child of its previous row.
+- **Outdent** – Shifts a row one level up, placing it as a sibling to its parent.
 
 To enable indent and outdent functionality, set [editSettings.allowEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowediting) to **true**, inject `EditService` and `SelectionService` in the `providers` of the component, and use either the **built-in context menu** or [toolbaritems](https://ej2.syncfusion.com/angular/documentation/api/gantt/toolbarItem) to perform indent and outdent actions.
 
@@ -21,14 +21,14 @@ The following sample demonstrates how to enable indent and outdent functionaliti
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/rows/indent-outdent-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/rows/indent-outdent-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/rows/indent-outdent-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/rows/indent-outdent-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/rows/indent-outdent-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/rows/indent-outdent-cs1" %}
 
 ## Indent and outdent a row programmatically
 
@@ -38,14 +38,14 @@ The following sample demonstrates how to programmatically select row index **2**
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/rows/indent-outdent-cs2/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/rows/indent-outdent-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/rows/indent-outdent-cs2/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/rows/indent-outdent-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/rows/indent-outdent-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/rows/indent-outdent-cs2" %}
 
 ## Retrieve Indent and outdent details
 
@@ -53,15 +53,15 @@ You can retrieve indent and outdent details using the [actionComplete](https://e
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/rows/indent-outdent-events-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/rows/indent-outdent-events-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/rows/indent-outdent-events-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/rows/indent-outdent-events-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/rows/indent-outdent-events-cs1" %}
 
-## Limitation 
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/rows/indent-outdent-events-cs1" %}
 
-* The indent and outdent feature does not support selecting and modifying multiple rows simultaneously.
+## Limitation
+
+- The indent and outdent feature does not support selecting and modifying multiple rows simultaneously.

@@ -18,17 +18,17 @@ The following code example demonstrates editing in the Gantt component.
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="700px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId" Dependency="Predecessor">
-    </GanttTaskFields>
-    <GanttEditSettings AllowTaskbarEditing="true" AllowEditing="true" Mode="Syncfusion.Blazor.Gantt.EditMode.Auto"></GanttEditSettings>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId" Dependency="Predecessor">
+</GanttTaskFields>
+<GanttEditSettings AllowTaskbarEditing="true" AllowEditing="true" Mode="Syncfusion.Blazor.Gantt.EditMode.Auto"></GanttEditSettings>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public class TaskData
     {
@@ -55,6 +55,7 @@ The following code example demonstrates editing in the Gantt component.
         Tasks.Add(new TaskData() { TaskId = 8, TaskName = "Estimation approval", StartDate = new DateTime(2026, 04, 06), Duration = "0", Progress = 30, Predecessor = "7", ParentId = 5 });
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -62,7 +63,7 @@ The following code example demonstrates editing in the Gantt component.
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/LXhxZcVtUXMHfOha?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-Editing feature requires a primary key column for CRUD operations. When defining columns in Gantt using the [GanttColumns](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumns.html) property,  at least one column must be marked as the primary key. By default, the [Id](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_Id) column will be the primary key column.  If `Id` column is not defined, we need to enable [IsPrimaryKey](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_IsPrimaryKey) for any one of the columns defined in the `GanttColumns` property.
+Editing feature requires a primary key column for CRUD operations. When defining columns in Gantt using the [GanttColumns](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumns.html) property, at least one column must be marked as the primary key. By default, the [Id](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_Id) column will be the primary key column. If `Id` column is not defined, we need to enable [IsPrimaryKey](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_IsPrimaryKey) for any one of the columns defined in the `GanttColumns` property.
 
 ## Cell edit type and its params
 
@@ -93,16 +94,16 @@ Below is the combined content from the provided markdown sections in bullet poin
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="900px" Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttColumns>
-        <GanttColumn Field="TaskId" Width="100"></GanttColumn>
-        <GanttColumn Field="TaskName" Width="250"></GanttColumn>
-        <GanttColumn Field="StartDate" EditorSettings="DateParams" Type="Syncfusion.Blazor.Grids.ColumnType.DateTime" EditType="Syncfusion.Blazor.Grids.EditType.DateTimePickerEdit"></GanttColumn>
-        <GanttColumn Field="Duration"></GanttColumn>
-        <GanttColumn Field="Progress" EditorSettings="NumericParams" EditType="Syncfusion.Blazor.Grids.EditType.NumericEdit"></GanttColumn>
-    </GanttColumns>
-    <GanttEditSettings AllowEditing="true" AllowAdding="true"></GanttEditSettings>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
+</GanttTaskFields>
+<GanttColumns>
+<GanttColumn Field="TaskId" Width="100"></GanttColumn>
+<GanttColumn Field="TaskName" Width="250"></GanttColumn>
+<GanttColumn Field="StartDate" EditorSettings="DateParams" Type="Syncfusion.Blazor.Grids.ColumnType.DateTime" EditType="Syncfusion.Blazor.Grids.EditType.DateTimePickerEdit"></GanttColumn>
+<GanttColumn Field="Duration"></GanttColumn>
+<GanttColumn Field="Progress" EditorSettings="NumericParams" EditType="Syncfusion.Blazor.Grids.EditType.NumericEdit"></GanttColumn>
+</GanttColumns>
+<GanttEditSettings AllowEditing="true" AllowAdding="true"></GanttEditSettings>
 </SfGantt>
 
 @code {
@@ -147,6 +148,7 @@ Below is the combined content from the provided markdown sections in bullet poin
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -169,29 +171,29 @@ The following code example demonstrates how to define an edit template for a spe
 @using Syncfusion.Blazor.Grids
 @using Syncfusion.Blazor.DropDowns;
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="700px" Toolbar="@(new List<string>() { "Add", "Cancel", "Edit", "Update", })">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttColumns>
-        <GanttColumn Field="TaskId" IsPrimaryKey=true></GanttColumn>
-        <GanttColumn Field="TaskName">
-            <EditTemplate>
-                @{
-                    var task = (context as TaskData);
-                }
-                <SfDropDownList @ref="dropdown" Placeholder="Name" FloatLabelType="Syncfusion.Blazor.Inputs.FloatLabelType.Always" ID="TaskName" @bind-Value="task.TaskName" TItem="string" TValue="string" DataSource="@DropDownData">
-                </SfDropDownList>
-            </EditTemplate>
-        </GanttColumn>
-        <GanttColumn Field="Duration"></GanttColumn>
-        <GanttColumn Field="StartDate"></GanttColumn>
-        <GanttColumn Field="Progress"></GanttColumn>
-    </GanttColumns>
-    <GanttEditSettings AllowAdding="true" AllowEditing=true AllowTaskbarEditing=true></GanttEditSettings>
-    <GanttEvents OnCellSave="CellSaveHandler" TValue="TaskData"></GanttEvents>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
+</GanttTaskFields>
+<GanttColumns>
+<GanttColumn Field="TaskId" IsPrimaryKey=true></GanttColumn>
+<GanttColumn Field="TaskName">
+<EditTemplate>
+@{
+var task = (context as TaskData);
+}
+<SfDropDownList @ref="dropdown" Placeholder="Name" FloatLabelType="Syncfusion.Blazor.Inputs.FloatLabelType.Always" ID="TaskName" @bind-Value="task.TaskName" TItem="string" TValue="string" DataSource="@DropDownData">
+</SfDropDownList>
+</EditTemplate>
+</GanttColumn>
+<GanttColumn Field="Duration"></GanttColumn>
+<GanttColumn Field="StartDate"></GanttColumn>
+<GanttColumn Field="Progress"></GanttColumn>
+</GanttColumns>
+<GanttEditSettings AllowAdding="true" AllowEditing=true AllowTaskbarEditing=true></GanttEditSettings>
+<GanttEvents OnCellSave="CellSaveHandler" TValue="TaskData"></GanttEvents>
 </SfGantt>
 
 @code {
-    SfDropDownList<string, string>? dropdown;
+SfDropDownList<string, string>? dropdown;
 
     private void CellSaveHandler(CellSaveArgs<TaskData> args)
     {
@@ -237,6 +239,7 @@ The following code example demonstrates how to define an edit template for a spe
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -255,34 +258,34 @@ In the following demo, editing is disabled for the **TaskName** column.
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="900px" Toolbar="@(new List<string>() { "Edit" })">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttColumns>
-        <GanttColumn Field="TaskId" Width="100"></GanttColumn>
-        <GanttColumn Field="TaskName" Width="250" AllowEditing="false"></GanttColumn>
-        <GanttColumn Field="StartDate"></GanttColumn>
-        <GanttColumn Field="Duration"></GanttColumn>
-        <GanttColumn Field="Progress"></GanttColumn>
-    </GanttColumns>
-    <GanttEditSettings AllowEditing="true"></GanttEditSettings>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
+</GanttTaskFields>
+<GanttColumns>
+<GanttColumn Field="TaskId" Width="100"></GanttColumn>
+<GanttColumn Field="TaskName" Width="250" AllowEditing="false"></GanttColumn>
+<GanttColumn Field="StartDate"></GanttColumn>
+<GanttColumn Field="Duration"></GanttColumn>
+<GanttColumn Field="Progress"></GanttColumn>
+</GanttColumns>
+<GanttEditSettings AllowEditing="true"></GanttEditSettings>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
-    public class TaskData
-    {
-        public int TaskId { get; set; }
-        public string? TaskName { get; set; }
-        public DateTime StartDate { get; set; }
-        public DateTime? EndDate { get; set; }
-        public string? Duration { get; set; }
-        public int Progress { get; set; }
-        public int? ParentId { get; set; }
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
+public class TaskData
+{
+public int TaskId { get; set; }
+public string? TaskName { get; set; }
+public DateTime StartDate { get; set; }
+public DateTime? EndDate { get; set; }
+public string? Duration { get; set; }
+public int Progress { get; set; }
+public int? ParentId { get; set; }
+}
 
     public static List<TaskData> GetTaskCollection()
     {
@@ -299,6 +302,7 @@ In the following demo, editing is disabled for the **TaskName** column.
             };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -318,11 +322,11 @@ The Gantt Chart component editing actions can be achieved using the double tap a
 
 The following table describes different types of editing modes available in Gantt.
 
-Action |Description
------|-----
-[Cell editing](https://blazor.syncfusion.com/documentation/gantt-chart/editing-tasks#cell-editing) | To perform `double tap` on a specific cell, initiate the cell to be in edit state.
-[Dialog editing](https://blazor.syncfusion.com/documentation/gantt-chart/editing-tasks#dialog-editing) | To perform `double tap` on a specific row, initiate the edit dialog to be opened.
-[Taskbar editing](https://blazor.syncfusion.com/documentation/gantt-chart/taskbar-editing) | Taskbar editing action is initiated using the `tap` action on the taskbar. <br> **Parent taskbar** : Once you tap on the parent taskbar, it will be changed to editing state. Perform only dragging action on parent taskbar editing.<br>![Blazor Gantt Chart displays editing parent taskbar in touch mode](images/editingparent.webp) <br><br> **Child taskbar** : Once you tap the child taskbar, it will be changed to editing state.<br>![Blazor Gantt Chart displays editing parent taskbar in touch mode](images/editingstate.webp) <br> <br> **Dragging taskbar** : To drag a taskbar to the left or right in editing state. <br> <br> **Resizing taskbar** : To resize a taskbar, drag the left/right resize icon. <br> <br> **Progress resizing** : To change the progress, drag the progress resize icon to the left or right direction.
+| Action                                                                                           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| ------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Cell editing](https://blazor.syncfusion.com/documentation/gantt/editing-tasks#cell-editing)     | To perform `double tap` on a specific cell, initiate the cell to be in edit state.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| [Dialog editing](https://blazor.syncfusion.com/documentation/gantt/editing-tasks#dialog-editing) | To perform `double tap` on a specific row, initiate the edit dialog to be opened.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| [Taskbar editing](https://blazor.syncfusion.com/documentation/gantt/taskbar-editing)             | Taskbar editing action is initiated using the `tap` action on the taskbar. <br> **Parent taskbar** : Once you tap on the parent taskbar, it will be changed to editing state. Perform only dragging action on parent taskbar editing.<br>![Blazor Gantt Chart displays editing parent taskbar in touch mode](images/editingparent.webp) <br><br> **Child taskbar** : Once you tap the child taskbar, it will be changed to editing state.<br>![Blazor Gantt Chart displays editing parent taskbar in touch mode](images/editingstate.webp) <br> <br> **Dragging taskbar** : To drag a taskbar to the left or right in editing state. <br> <br> **Resizing taskbar** : To resize a taskbar, drag the left/right resize icon. <br> <br> **Progress resizing** : To change the progress, drag the progress resize icon to the left or right direction. |
 
 ### Task dependency editing
 
@@ -334,12 +338,12 @@ Once the dependency edit mode is initiated, a dialog appears with the message **
 
 The following table explains the taskbar state in dependency edit mode.
 
-Taskbar state |Description
------|-----
-Parent taskbar | You cannot create dependency relationship to parent tasks. <br> ![Parent taskbar](images/parent-taskbar.webp)
-Taskbar without dependency |  If you tap a valid child taskbar, it will create `FS` type dependency line between tasks, otherwise exits from task dependency edit mode. <br> ![Valid taskbar](images/valid-taskbar.webp)
-Taskbar with dependency | If you tap the second taskbar, which has already been directly connected, it will ask to remove it. <br> ![Invalid taskbar](images/invalid-taskbar.webp)
-Removing dependency | Once you tap the taskbar with direct dependency, then confirmation dialog will be shown for removing dependency. <br> ![Confirm dialog](images/confirm-dialog.webp)
+| Taskbar state              | Description                                                                                                                                                                                |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Parent taskbar             | You cannot create dependency relationship to parent tasks. <br> ![Parent taskbar](images/parent-taskbar.webp)                                                                              |
+| Taskbar without dependency | If you tap a valid child taskbar, it will create `FS` type dependency line between tasks, otherwise exits from task dependency edit mode. <br> ![Valid taskbar](images/valid-taskbar.webp) |
+| Taskbar with dependency    | If you tap the second taskbar, which has already been directly connected, it will ask to remove it. <br> ![Invalid taskbar](images/invalid-taskbar.webp)                                   |
+| Removing dependency        | Once you tap the taskbar with direct dependency, then confirmation dialog will be shown for removing dependency. <br> ![Confirm dialog](images/confirm-dialog.webp)                        |
 
 ## Taskbar editing tooltip
 
@@ -350,32 +354,32 @@ The taskbar editing tooltip can be integrated in Gantt chart by using the [Gantt
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="900px" TreeColumnIndex="1"
-         Toolbar="@(new List<string>() { "Add", "Cancel", "CollapseAll", "Delete", "Edit", "ExpandAll", "Search", "Update" , "Indent" , "Outdent"})">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
+Toolbar="@(new List<string>() { "Add", "Cancel", "CollapseAll", "Delete", "Edit", "ExpandAll", "Search", "Update" , "Indent" , "Outdent"})">
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
                      Duration="Duration" Progress="Progress" Dependency="Predecessor" ParentID="ParentId" Notes="Notes">
-    </GanttTaskFields>
-    <GanttEditSettings AllowTaskbarEditing="true" AllowEditing="true" AllowAdding="true" AllowDeleting="true">
-    </GanttEditSettings>
-    <GanttTooltipSettings ShowTooltipOnEditing="true" TValue="TaskData"></GanttTooltipSettings>
+</GanttTaskFields>
+<GanttEditSettings AllowTaskbarEditing="true" AllowEditing="true" AllowAdding="true" AllowDeleting="true">
+</GanttEditSettings>
+<GanttTooltipSettings ShowTooltipOnEditing="true" TValue="TaskData"></GanttTooltipSettings>
 </SfGantt>
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
-    public class TaskData
-    {
-        public int TaskId { get; set; }
-        public string? TaskName { get; set; }
-        public DateTime StartDate { get; set; }
-        public DateTime EndDate { get; set; }
-        public string? Duration { get; set; }
-        public int Progress { get; set; }
-        public string? Predecessor { get; set; }
-        public string? Notes { get; set; }
-        public int? ParentId { get; set; }
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
+public class TaskData
+{
+public int TaskId { get; set; }
+public string? TaskName { get; set; }
+public DateTime StartDate { get; set; }
+public DateTime EndDate { get; set; }
+public string? Duration { get; set; }
+public int Progress { get; set; }
+public string? Predecessor { get; set; }
+public string? Notes { get; set; }
+public int? ParentId { get; set; }
+}
 
     public static List<TaskData> GetTaskCollection()
     {
@@ -390,6 +394,7 @@ The taskbar editing tooltip can be integrated in Gantt chart by using the [Gantt
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -406,61 +411,61 @@ The taskbar editing tooltip can be customized using the [GanttTooltipSettings.Ed
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="700px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId"></GanttTaskFields>
-    <GanttEditSettings AllowTaskbarEditing="true" AllowEditing="true" AllowAdding="true"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId"></GanttTaskFields>
+<GanttEditSettings AllowTaskbarEditing="true" AllowEditing="true" AllowAdding="true"
                        AllowDeleting="true" ShowDeleteConfirmDialog="true">
-    </GanttEditSettings>
-    <GanttTooltipSettings ShowTooltip="true" TValue="TaskData">
-        <EditingTemplate>
-            <table>
-                @{
-                    var template = (context as TaskData);
-                    if (TaskbarEditAction == "LeftResizing")
-                    {
-                        <tr> <td style="padding:3px">@(template.StartDate.ToString("MMM dd, yyyy"))</td> </tr>
-                        <tr> <td style="padding:6px">@(template.Duration) days</td> </tr>
-                    }
-                    else if (TaskbarEditAction == "RightResizing")
-                    {
-                        <tr> <td style="padding:3px">@(template.EndDate.ToString("MMM dd, yyyy"))</td> </tr>
-                        <tr> <td style="padding:6px">@(template.Duration) days</td> </tr>
-                    }
-                    else if (TaskbarEditAction == "ChildDrag" || TaskbarEditAction == "ParentDrag" || TaskbarEditAction == "MilestoneDrag")
-                    {
-                        <tr> <td style="padding:3px">@(template.StartDate.ToString("MMM dd, yyyy"))</td> </tr>
-                        <tr> <td style="padding:3px">@(template.EndDate.ToString("MMM dd, yyyy"))</td> </tr>
-                    }
-                    else if (TaskbarEditAction == "ProgressResizing")
-                    {
-                        <tr> <td style="padding:3px">@(template.Progress) %</td> </tr>
-                    }
-                }
-            </table>
-        </EditingTemplate>
-    </GanttTooltipSettings>
-    <GanttEvents TaskbarEditing="TaskbarEditingHandler" TValue="TaskData"></GanttEvents>
+</GanttEditSettings>
+<GanttTooltipSettings ShowTooltip="true" TValue="TaskData">
+<EditingTemplate>
+<table>
+@{
+var template = (context as TaskData);
+if (TaskbarEditAction == "LeftResizing")
+{
+<tr> <td style="padding:3px">@(template.StartDate.ToString("MMM dd, yyyy"))</td> </tr>
+<tr> <td style="padding:6px">@(template.Duration) days</td> </tr>
+}
+else if (TaskbarEditAction == "RightResizing")
+{
+<tr> <td style="padding:3px">@(template.EndDate.ToString("MMM dd, yyyy"))</td> </tr>
+<tr> <td style="padding:6px">@(template.Duration) days</td> </tr>
+}
+else if (TaskbarEditAction == "ChildDrag" || TaskbarEditAction == "ParentDrag" || TaskbarEditAction == "MilestoneDrag")
+{
+<tr> <td style="padding:3px">@(template.StartDate.ToString("MMM dd, yyyy"))</td> </tr>
+<tr> <td style="padding:3px">@(template.EndDate.ToString("MMM dd, yyyy"))</td> </tr>
+}
+else if (TaskbarEditAction == "ProgressResizing")
+{
+<tr> <td style="padding:3px">@(template.Progress) %</td> </tr>
+}
+}
+</table>
+</EditingTemplate>
+</GanttTooltipSettings>
+<GanttEvents TaskbarEditing="TaskbarEditingHandler" TValue="TaskData"></GanttEvents>
 </SfGantt>
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    private string? TaskbarEditAction { get; set; }
-    private void TaskbarEditingHandler(TaskbarEditingEventArgs<TaskData> args)
-    {
-        TaskbarEditAction = args.Action;
-    }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
-    public class TaskData
-    {
-        public int TaskId { get; set; }
-        public string? TaskName { get; set; }
-        public DateTime StartDate { get; set; }
-        public DateTime EndDate { get; set; }
-        public string? Duration { get; set; }
-        public int Progress { get; set; }
-        public int? ParentId { get; set; }
-    }
+public List<TaskData>? TaskCollection { get; set; }
+private string? TaskbarEditAction { get; set; }
+private void TaskbarEditingHandler(TaskbarEditingEventArgs<TaskData> args)
+{
+TaskbarEditAction = args.Action;
+}
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
+public class TaskData
+{
+public int TaskId { get; set; }
+public string? TaskName { get; set; }
+public DateTime StartDate { get; set; }
+public DateTime EndDate { get; set; }
+public string? Duration { get; set; }
+public int Progress { get; set; }
+public int? ParentId { get; set; }
+}
 
     public static List<TaskData> GetTaskCollection()
     {
@@ -476,6 +481,7 @@ The taskbar editing tooltip can be customized using the [GanttTooltipSettings.Ed
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -484,7 +490,8 @@ The taskbar editing tooltip can be customized using the [GanttTooltipSettings.Ed
 {% previewsample "https://blazorplayground.syncfusion.com/embed/VZhdNGBjKXJOOTyr?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 ## See also
-- [How to add new tasks?](https://blazor.syncfusion.com/documentation/gantt-chart/adding-new-tasks)
-- [How to delete tasks?](https://blazor.syncfusion.com/documentation/gantt-chart/deleting-tasks)
-- [How to manage task dependencies?](https://blazor.syncfusion.com/documentation/gantt-chart/task-dependencies)
-- [How to configure critical path?](https://blazor.syncfusion.com/documentation/gantt-chart/criticalpath)
+
+- [How to add new tasks?](https://blazor.syncfusion.com/documentation/gantt/adding-new-tasks)
+- [How to delete tasks?](https://blazor.syncfusion.com/documentation/gantt/deleting-tasks)
+- [How to manage task dependencies?](https://blazor.syncfusion.com/documentation/gantt/task-dependencies)
+- [How to configure critical path?](https://blazor.syncfusion.com/documentation/gantt/criticalpath)

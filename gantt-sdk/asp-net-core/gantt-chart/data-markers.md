@@ -8,17 +8,16 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Data markers in ASP.NET Core Gantt component
 
 Data markers are a set of events used to represent the schedule events for a task. Data markers are defined in data source as array of objects, and this value is mapped to the Gantt control using the [`taskFields.indicators`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Indicators) property. You can represent more than one data marker in a task.
 
 Data markers can be defined using the following properties:
 
-* `date`: Defines the date of indicator.
-* `iconClass`: Defines the icon class of indicator.
-* `name`: Defines the name of indicator.
-* `tooltip`: Defines the tooltip of indicator.
+- `date`: Defines the date of indicator.
+- `iconClass`: Defines the icon class of indicator.
+- `name`: Defines the name of indicator.
+- `tooltip`: Defines the tooltip of indicator.
 
 N> Data Marker `tooltip` will be rendered only if tooltip property has value.
 
@@ -28,10 +27,10 @@ The following code example demonstrates how to implement data markers in the Gan
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/datamarkers/datamarkers/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/datamarkers/datamarkers/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Datamarkers.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/datamarkers/datamarkers/datamarkers.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/datamarkers/datamarkers/datamarkers.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -39,14 +38,12 @@ The following code example demonstrates how to implement data markers in the Gan
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/datamarkers/datamarkers/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/datamarkers/datamarkers/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Datamarkers.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/datamarkers/datamarkers/datamarkers.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/datamarkers/datamarkers/datamarkers.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/indicators.PNG)

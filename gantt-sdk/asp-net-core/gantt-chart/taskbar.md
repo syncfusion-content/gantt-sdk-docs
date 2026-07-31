@@ -18,10 +18,10 @@ You can design your own taskbars to view the tasks in Gantt by using [`TaskbarTe
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/customizations/taskbarTemplate/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/customizations/taskbarTemplate/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="TaskbarTemplate.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/customizations/taskbarTemplate/taskbarTemplate.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/customizations/taskbarTemplate/taskbarTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -29,15 +29,13 @@ You can design your own taskbars to view the tasks in Gantt by using [`TaskbarTe
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/customizations/taskbarTemplate/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/customizations/taskbarTemplate/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="TaskbarTemplate.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/customizations/taskbarTemplate/taskbarTemplate.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/customizations/taskbarTemplate/taskbarTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/taskbarTemplate1.png)
 
@@ -51,10 +49,10 @@ Height of child taskbars and parent taskbars can be customized by using [`Taskba
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/appearance-and-styling/taskbarHeight/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/appearance-and-styling/taskbarHeight/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="TaskbarHeight.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/appearance-and-styling/taskbarHeight/taskbarHeight.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/appearance-and-styling/taskbarHeight/taskbarHeight.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -62,15 +60,13 @@ Height of child taskbars and parent taskbars can be customized by using [`Taskba
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/appearance-and-styling/taskbarHeight/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/appearance-and-styling/taskbarHeight/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="TaskbarHeight.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/appearance-and-styling/taskbarHeight/taskbarHeight.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/appearance-and-styling/taskbarHeight/taskbarHeight.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/taskbarHeight.png)
 
@@ -84,10 +80,10 @@ The default taskbar UI can be replaced with custom templates using the [`QueryTa
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/appearance-and-styling/conditionalFormatting/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/appearance-and-styling/conditionalFormatting/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ConditionalFormatting.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/appearance-and-styling/conditionalFormatting/conditionalFormatting.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/appearance-and-styling/conditionalFormatting/conditionalFormatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -95,18 +91,15 @@ The default taskbar UI can be replaced with custom templates using the [`QueryTa
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/appearance-and-styling/conditionalFormatting/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/appearance-and-styling/conditionalFormatting/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ConditionalFormatting.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/appearance-and-styling/conditionalFormatting/conditionalFormatting.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/appearance-and-styling/conditionalFormatting/conditionalFormatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-
-
 ![Alt text](images/conditionalFormatting.png)
-
 
 ### Change gripper icon in taskbar
 
@@ -116,10 +109,10 @@ You can change the gripper icon in the taskbar by applying styles to their respe
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/change-gripper-icon/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/change-gripper-icon/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="data.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/change-gripper-icon/data.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/change-gripper-icon/data.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -127,10 +120,10 @@ You can change the gripper icon in the taskbar by applying styles to their respe
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/change-gripper-icon/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/change-gripper-icon/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="data.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/change-gripper-icon/data.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/change-gripper-icon/data.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -141,7 +134,7 @@ You can change the gripper icon in the taskbar by applying styles to their respe
 
 The Gantt component, supports rendering multi-taskbars in the project view. With this feature the parent taskbar, when it is collapsed, visually summarize the progress of all its child taskbars.
 
-This feature can be enabled by setting the [EnableMultiTaskbar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableMultiTaskbar) property value to `true`. 
+This feature can be enabled by setting the [EnableMultiTaskbar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableMultiTaskbar) property value to `true`.
 
 The following code example shows how to use this property.
 
@@ -149,10 +142,10 @@ The following code example shows how to use this property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/projectview-multitaskbar-cs1/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/projectview-multitaskbar-cs1/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Projectview-multitaskbar.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/projectview-multitaskbar-cs1/projectview-multitaskbar.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/projectview-multitaskbar-cs1/projectview-multitaskbar.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -160,15 +153,13 @@ The following code example shows how to use this property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/projectview-multitaskbar-cs1/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/projectview-multitaskbar-cs1/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Projectview-multitaskbar.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/projectview-multitaskbar-cs1/Projectview-multitaskbar.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/projectview-multitaskbar-cs1/Projectview-multitaskbar.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Multitaskbar support in projectview](images/project-multitaskbar.png)
 
@@ -180,10 +171,10 @@ The width and background color of connector lines in Gantt can be customized usi
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/appearance-and-styling/dependencyFormatting/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/appearance-and-styling/dependencyFormatting/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DependencyFormatting.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/appearance-and-styling/dependencyFormatting/dependencyFormatting.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/appearance-and-styling/dependencyFormatting/dependencyFormatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -191,15 +182,13 @@ The width and background color of connector lines in Gantt can be customized usi
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/appearance-and-styling/dependencyFormatting/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/appearance-and-styling/dependencyFormatting/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DependencyFormatting.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/appearance-and-styling/dependencyFormatting/dependencyFormatting.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/appearance-and-styling/dependencyFormatting/dependencyFormatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/dependencyFormatting.png)
 
@@ -207,19 +196,19 @@ The width and background color of connector lines in Gantt can be customized usi
 
 In the Gantt control, you can enable or disable the mouse hover tooltip for the following UI elements using the [`TooltipSettings.ShowTooltip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTooltipSettings.html#Syncfusion_EJ2_Gantt_GanttTooltipSettings_ShowTooltip) property:
 
-* Taskbar
-* Connector line
-* Baseline
-* Event marker
+- Taskbar
+- Connector line
+- Baseline
+- Event marker
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/enableTooltip/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/enableTooltip/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="EnableTooltip.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/enableTooltip/enableTooltip.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/enableTooltip/enableTooltip.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -227,15 +216,13 @@ In the Gantt control, you can enable or disable the mouse hover tooltip for the 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/enableTooltip/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/enableTooltip/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="EnableTooltip.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/enableTooltip/enableTooltip.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/enableTooltip/enableTooltip.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/taskbar-tooltip.png)
 
@@ -265,10 +252,10 @@ The default tooltip in the Gantt control can be customized using the [`TooltipSe
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/taskbarTemplate/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/taskbarTemplate/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="TaskbarTemplate.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/taskbarTemplate/taskbarTemplate.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/taskbarTemplate/taskbarTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -276,15 +263,13 @@ The default tooltip in the Gantt control can be customized using the [`TooltipSe
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/taskbarTemplate/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/taskbarTemplate/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="TaskbarTemplate.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/taskbarTemplate/taskbarTemplate.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/taskbarTemplate/taskbarTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 The below screenshot shows the output of above code example.
 
@@ -298,10 +283,10 @@ A baseline tooltip can be customized using the [`TooltipSettings.Baseline`](http
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/baselineTemplate/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/baselineTemplate/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="BaselineTemplate.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/baselineTemplate/baselineTemplate.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/baselineTemplate/baselineTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -309,15 +294,13 @@ A baseline tooltip can be customized using the [`TooltipSettings.Baseline`](http
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/baselineTemplate/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/baselineTemplate/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="BaselineTemplate.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/baselineTemplate/baselineTemplate.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/baselineTemplate/baselineTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 The following screenshot shows the template for baseline in Gantt.
 
@@ -331,10 +314,10 @@ The default connector line tooltip in the Gantt control can be customized using 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/dependencyLineTemplate/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/dependencyLineTemplate/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DependencyLineTemplate.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/dependencyLineTemplate/dependencyLineTemplate.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/dependencyLineTemplate/dependencyLineTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -342,15 +325,13 @@ The default connector line tooltip in the Gantt control can be customized using 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/dependencyLineTemplate/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/dependencyLineTemplate/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DependencyLineTemplate.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/dependencyLineTemplate/dependencyLineTemplate.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/dependencyLineTemplate/dependencyLineTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 The below screenshot shows the output of above code example.
 
@@ -364,10 +345,10 @@ A timeline tooltip can be customized using the [`TooltipSettings.Timeline`](http
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/timelineTooltipTemplate/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/timelineTooltipTemplate/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="TimelineTooltipTemplate.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/timelineTooltipTemplate/timelineTooltipTemplate.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/timelineTooltipTemplate/timelineTooltipTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -375,14 +356,13 @@ A timeline tooltip can be customized using the [`TooltipSettings.Timeline`](http
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/timelineTooltipTemplate/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/timelineTooltipTemplate/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="TimelineTooltipTemplate.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/timelineTooltipTemplate/timelineTooltipTemplate.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/timelineTooltipTemplate/timelineTooltipTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
 
 The below screenshot shows the output of above code example.
 

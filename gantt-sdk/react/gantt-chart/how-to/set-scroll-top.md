@@ -14,19 +14,20 @@ The [setScrollTop](https://ej2.syncfusion.com/react/documentation/api/gantt#sets
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/how-to-setscrolltop-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/how-to-setscrolltop-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/how-to-setscrolltop-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/how-to-setscrolltop-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/how-to-setscrolltop-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/how-to-setscrolltop-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/how-to-setscrolltop-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/how-to-setscrolltop-cs1" %}
 
 ## See also
+
 - [How to configure virtual scrolling?](https://ej2.syncfusion.com/react/documentation/gantt/virtual-scroll)
 - [How to configure row selection?](https://ej2.syncfusion.com/react/documentation/gantt/selection)
 - [How to manage task editing?](https://ej2.syncfusion.com/react/documentation/gantt/managing-tasks/editing-tasks)

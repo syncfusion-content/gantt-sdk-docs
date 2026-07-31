@@ -3,7 +3,7 @@ layout: post
 title: State Persistence in JavaScript Gantt Chart Control | Syncfusion
 description: Learn here all about State persistence in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: State persistence 
+control: State persistence
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -17,11 +17,11 @@ To enable this, set the [enablePersistence](../../api/gantt#enablepersistence) p
 
 ## Restore initial Gantt state
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Gantt Chart control provides options to reset its state, reverting all interactions and configurations to the original setup.  This is useful for clearing filters, sorting, and column arrangements, even when [enablePersistence](../../api/gantt#enablepersistence) is enabled.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Gantt Chart control provides options to reset its state, reverting all interactions and configurations to the original setup. This is useful for clearing filters, sorting, and column arrangements, even when [enablePersistence](../../api/gantt#enablepersistence) is enabled.
 
 ### Changing control ID
 
-To reset the Gantt to its default state, update the control ID.  This initializes the control as a new instance, restoring its original configuration.
+To reset the Gantt to its default state, update the control ID. This initializes the control as a new instance, restoring its original configuration.
 
 Here is an example code to change the control ID dynamically to restore initial Gantt state.
 
@@ -29,27 +29,27 @@ Here is an example code to change the control ID dynamically to restore initial 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/state-persistence-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/state-persistence-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/state-persistence-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/state-persistence-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/state-persistence-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/state-persistence-cs1" %}
 {% endif %}
 
 ### Clearing local storage
@@ -62,27 +62,27 @@ Here is an example code on how to clear local storage to retain its default stat
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs2/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/state-persistence-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs2/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/state-persistence-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/state-persistence-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs2/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/state-persistence-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs2/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/state-persistence-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/state-persistence-cs2" %}
 {% endif %}
 
 ## Restore to previous state
@@ -95,27 +95,27 @@ To implement this functionality, extract the current state using `getPersistData
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs3/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/state-persistence-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs3/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/state-persistence-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/state-persistence-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs3/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/state-persistence-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs3/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/state-persistence-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/state-persistence-cs3" %}
 {% endif %}
 
 ## Get or set localStorage value
@@ -124,22 +124,20 @@ When [enablePersistence](../../api/gantt#enablepersistence) is set to **true**, 
 
 ```typescript
 //get the Gantt model.
-let value: string = window.localStorage.getItem('ganttGantt'); //"ganttGantt" is control name + control ID.
+let value: string = window.localStorage.getItem("ganttGantt"); //"ganttGantt" is control name + control ID.
 let model: Object = JSON.parse(model);
-
 ```
 
 ```typescript
 //set the Gantt model.
-window.localStorage.setItem('ganttGantt', JSON.stringify(model)); //"ganttGantt" is control name + control ID.
-
+window.localStorage.setItem("ganttGantt", JSON.stringify(model)); //"ganttGantt" is control name + control ID.
 ```
 
 > You can refer to our [JavaScript Gantt](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Gantt example](https://ej2.syncfusion.com/demos#/material/gantt/default.html) to knows how to present and manipulate data.
 
 ## Prevent columns from persisting
 
-When [enablePersistence](../../api/gantt#enablepersistence) is set to **true**, Gantt properties such as [Filtering](../../api/gantt#allowfiltering), [Sorting](../../api/gantt#allowsorting), and [Columns](../../api/gantt#columns) are automatically saved.  
+When [enablePersistence](../../api/gantt#enablepersistence) is set to **true**, Gantt properties such as [Filtering](../../api/gantt#allowfiltering), [Sorting](../../api/gantt#allowsorting), and [Columns](../../api/gantt#columns) are automatically saved.
 
 To prevent specific properties from being persisted, use the `addOnPersist` method.
 
@@ -151,27 +149,27 @@ The example below shows how to prevent Gantt columns from being persisted. In th
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-prevent-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-prevent-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-prevent-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-prevent-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-prevent-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/column-prevent-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-prevent-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-prevent-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-prevent-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-prevent-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-prevent-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/column-prevent-cs1" %}
 {% endif %}
 
 ## Add to persist
@@ -186,27 +184,27 @@ When [enablePersistence](../../api/gantt#enablepersistence) is set to **true** i
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs4/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/state-persistence-cs4/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs4/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/state-persistence-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/state-persistence-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs4/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/state-persistence-cs4/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs4/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/state-persistence-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs4" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/state-persistence-cs4" %}
 {% endif %}
 
 ### Persist the header template and header Text
@@ -219,25 +217,25 @@ To persist these settings, clone the [Columns](../../api/gantt#columns) property
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-persist-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-persist-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-persist-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-persist-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-persist-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/column-persist-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-persist-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-persist-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-persist-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-persist-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-persist-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/column-persist-cs1" %}
 {% endif %}

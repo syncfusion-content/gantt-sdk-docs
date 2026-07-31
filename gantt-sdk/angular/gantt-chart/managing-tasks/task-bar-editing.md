@@ -18,15 +18,15 @@ Enable taskbar editing by setting [allowTaskbarEditing](https://ej2.syncfusion.c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/taskbaredit-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/taskbaredit-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/taskbaredit-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/taskbaredit-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/managing-tasks/taskbaredit-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/managing-tasks/taskbaredit-cs1" %}
 
 ## Prevent taskbar editing for specific tasks
 
@@ -34,15 +34,15 @@ Prevent taskbar editing for specific tasks using the [taskbarEditing](https://ej
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/prevent-taskbaredit-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/prevent-taskbaredit-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/prevent-taskbaredit-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/prevent-taskbaredit-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/managing-tasks/prevent-taskbaredit-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/managing-tasks/prevent-taskbaredit-cs1" %}
 
 ## See also
 

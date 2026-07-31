@@ -2,7 +2,7 @@
 layout: post
 title: Cell Selection in Vue Gantt Chart Component | Syncfusion
 description: Learn here all about Cell selection in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Cell selection 
+control: Cell selection
 platform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -16,14 +16,14 @@ Refer to the following code example to enable cell selection in Gantt.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/selection-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/selection-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/selection-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/selection-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/selection-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/selection-cs1" %}
 
 ## Selecting multiple cells
 
@@ -31,14 +31,14 @@ You can select multiple cells by setting the https://ej2.syncfusion.com/vue/docu
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/selection-cs2/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/selection-cs2/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/selection-cs2/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/selection-cs2/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/selection-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/selection-cs2" %}
 
 ## Selecting a cell dynamically
 
@@ -46,14 +46,14 @@ You can select a cell dynamically using the https://ej2.syncfusion.com/vue/docum
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/selection-cs3/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/selection-cs3/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/selection-cs3/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/selection-cs3/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/selection-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/selection-cs3" %}
 
 ## Customize cell selection action
 
@@ -61,15 +61,15 @@ While selecting a cell in Gantt, the https://ej2.syncfusion.com/vue/documentatio
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/selection-cs4/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/selection-cs4/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/selection-cs4/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/selection-cs4/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/selection-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/selection-cs4" %}
 
 ## Limitations for cell selection
 
-* Cell-based selection is not supported when virtualization is enabled.
+- Cell-based selection is not supported when virtualization is enabled.

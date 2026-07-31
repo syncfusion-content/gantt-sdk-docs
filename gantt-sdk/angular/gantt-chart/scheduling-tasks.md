@@ -31,15 +31,15 @@ The following example configures auto scheduling:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/task-scheduling/automatic-tasks-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/task-scheduling/automatic-tasks-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/task-scheduling/automatic-tasks-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/task-scheduling/automatic-tasks-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/task-scheduling/automatic-tasks-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/task-scheduling/automatic-tasks-cs1" %}
 
 ### Manually scheduled Tasks
 
@@ -47,15 +47,15 @@ The following example configures manual scheduling:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/task-scheduling/manual-tasks-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/task-scheduling/manual-tasks-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/task-scheduling/manual-tasks-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/task-scheduling/manual-tasks-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/task-scheduling/manual-tasks-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/task-scheduling/manual-tasks-cs1" %}
 
 ### Custom scheduled
 
@@ -63,15 +63,15 @@ The following example mixes auto and manual tasks:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/task-scheduling/custom-tasks-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/task-scheduling/custom-tasks-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/task-scheduling/custom-tasks-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/task-scheduling/custom-tasks-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/task-scheduling/custom-tasks-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/task-scheduling/custom-tasks-cs1" %}
 
 ## Configure task types
 
@@ -90,15 +90,15 @@ The following example configures task types:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/work/tasktype-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/work/tasktype-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/work/tasktype-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/work/tasktype-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/work/tasktype-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/work/tasktype-cs1" %}
 
 ## Configure duration units
 
@@ -120,34 +120,34 @@ The following example maps duration units:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/scheduling-tasks/mapping-cs2/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/scheduling-tasks/mapping-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/scheduling-tasks/mapping-cs2/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/scheduling-tasks/mapping-cs2/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/scheduling-tasks/mapping-cs2/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/scheduling-tasks/mapping-cs2/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/scheduling-tasks/mapping-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/scheduling-tasks/mapping-cs2" %}
 
 **Defining duration unit with duration value:**
 The following example defines units in duration values:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/scheduling-tasks/durationfield-cs2/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/scheduling-tasks/durationfield-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/scheduling-tasks/durationfield-cs2/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/scheduling-tasks/durationfield-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/scheduling-tasks/durationfield-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/scheduling-tasks/durationfield-cs2" %}
 
 ## Enable unscheduled tasks
 
@@ -183,15 +183,15 @@ The following example enables unscheduled tasks:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/scheduling-tasks/unscheduledtasks-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/scheduling-tasks/unscheduledtasks-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/scheduling-tasks/unscheduledtasks-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/scheduling-tasks/unscheduledtasks-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/scheduling-tasks/unscheduledtasks-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/scheduling-tasks/unscheduledtasks-cs1" %}
 
 ### Convert to milestone using method
 
@@ -199,15 +199,15 @@ You can convert a task into a milestone using the [ConvertToMilestone](https://e
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/task-scheduling/unscheduledtasks-method-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/task-scheduling/unscheduledtasks-method-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/task-scheduling/unscheduledtasks-method-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/task-scheduling/unscheduledtasks-method-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/task-scheduling/unscheduledtasks-method-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/task-scheduling/unscheduledtasks-method-cs1" %}
 
 ## Configure working time range
 
@@ -217,19 +217,19 @@ The following example sets working hours from 9 AM to 6 PM:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/scheduling-tasks/workingtimerange-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/scheduling-tasks/workingtimerange-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/scheduling-tasks/workingtimerange-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/scheduling-tasks/workingtimerange-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/scheduling-tasks/workingtimerange-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/scheduling-tasks/workingtimerange-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/scheduling-tasks/workingtimerange-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/scheduling-tasks/workingtimerange-cs1" %}
 
 ## Configure weekends and non-working days
 
@@ -243,19 +243,19 @@ The following example excludes Monday and Tuesday:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/scheduling-tasks/changenonworkingday-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/scheduling-tasks/changenonworkingday-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/scheduling-tasks/changenonworkingday-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/scheduling-tasks/changenonworkingday-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/scheduling-tasks/changenonworkingday-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/scheduling-tasks/changenonworkingday-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/scheduling-tasks/changenonworkingday-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/scheduling-tasks/changenonworkingday-cs1" %}
 
 ### Weekend configuration
 
@@ -349,6 +349,7 @@ export class AppComponent {
 ```
 
 ## See also
+
 - [How to configure task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
 - [How to manage resources?](https://ej2.syncfusion.com/angular/documentation/gantt/resources)
 - [How to configure holidays?](https://ej2.syncfusion.com/angular/documentation/gantt/holidays)

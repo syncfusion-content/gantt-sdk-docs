@@ -16,15 +16,15 @@ The following code example demonstrates editing in the Gantt Chart component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/celledit-cs2/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/celledit-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/celledit-cs2/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/celledit-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/managing-tasks/celledit-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/managing-tasks/celledit-cs2" %}
 
 Editing feature requires a primary key column for CRUD operations. While defining columns in Gantt using the [columns](https://ej2.syncfusion.com/angular/documentation/api/gantt#columns) property, it is mandatory that any one of the columns, must be a primary column. By default, the [id](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#id) column will be the primary key column. If [id](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#id) column is not defined, we need to enable [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#isprimarykey) for any one of the columns defined in the [columns](https://ej2.syncfusion.com/angular/documentation/api/gantt#columns) property.
 
@@ -34,15 +34,15 @@ You can set default values when new task dialog opens using [actionBegin](https:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/addrow-toolbar-cs2/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/addrow-toolbar-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/addrow-toolbar-cs2/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/addrow-toolbar-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/managing-tasks/addrow-toolbar-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/managing-tasks/addrow-toolbar-cs2" %}
 
 ## Cell edit type and its params
 
@@ -70,15 +70,15 @@ Below is the combined content from the provided markdown sections in bullet poin
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/editParams-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/editParams-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/editParams-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/editParams-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/managing-tasks/editParams-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/managing-tasks/editParams-cs1" %}
 
 ## Prevent particular column and taskbar editing
 
@@ -88,14 +88,14 @@ To restrict taskbar editing, set `args.cancel` to **true** in the [actionBegin](
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/prevent-editing-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/prevent-editing-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/prevent-editing-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/prevent-editing-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/managing-tasks/prevent-editing-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/managing-tasks/prevent-editing-cs1" %}
 
 ## Cell Edit Template
 
@@ -111,15 +111,15 @@ The cell edit template is used to create a custom component for a particular col
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/cellEditTemplate-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/cellEditTemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/cellEditTemplate-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/cellEditTemplate-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/managing-tasks/cellEditTemplate-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/managing-tasks/cellEditTemplate-cs1" %}
 
 ## Disable editing for particular column
 
@@ -129,15 +129,15 @@ In the following demo, editing is disabled for the **TaskName** column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/disableedit-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/disableedit-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/disableedit-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/disableedit-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/managing-tasks/disableedit-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/managing-tasks/disableedit-cs1" %}
 
 ## Customize control in add/edit dialog
 
@@ -153,15 +153,15 @@ In the below sample, General tab is customized using the `fields` property. The 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/disableedit-cs2/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/disableedit-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/disableedit-cs2/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/disableedit-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/managing-tasks/disableedit-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/managing-tasks/disableedit-cs2" %}
 
 ### Customize dependency, segments and resources tab of dialog
 
@@ -176,15 +176,15 @@ In the example below:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/disableedit-cs3/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/disableedit-cs3/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/disableedit-cs3/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/disableedit-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/managing-tasks/disableedit-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/managing-tasks/disableedit-cs3" %}
 
 ### Customize note dialog tab
 
@@ -194,15 +194,15 @@ In the following example, the notes tab is customized with the [inlinemode](http
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/disableedit-cs4/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/disableedit-cs4/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/disableedit-cs4/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/disableedit-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/managing-tasks/disableedit-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/managing-tasks/disableedit-cs4" %}
 
 ## Touch interaction
 
@@ -233,15 +233,15 @@ The following table explains the taskbar state in dependency edit mode.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/touch/dependencyediting-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/touch/dependencyediting-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/touch/dependencyediting-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/touch/dependencyediting-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/touch/dependencyediting-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/touch/dependencyediting-cs1" %}
 
 > Note: On mobile device, you cannot create dependency other than **FS** by taskbar editing. By using cell/dialog editing, you can add all type of dependencies.
 
@@ -251,15 +251,15 @@ The taskbar editing tooltip can be customized using the [tooltipSettings.editing
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/tooltip/taskbar-edit-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/tooltip/taskbar-edit-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/tooltip/taskbar-edit-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/tooltip/taskbar-edit-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/tooltip/taskbar-edit-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/tooltip/taskbar-edit-cs1" %}
 
 ## See also
 

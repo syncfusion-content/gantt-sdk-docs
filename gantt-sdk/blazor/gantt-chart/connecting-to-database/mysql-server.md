@@ -31,16 +31,16 @@ Entity Framework Core (EF Core) is an ORM (object-relational mapper) for .NET th
 
 Ensure the following software and packages are installed before proceeding:
 
-| Software/Package | Version | Purpose |
-|-----------------|---------|---------|
-| Visual Studio 2026 | 18.2.1 or later | Development IDE with Blazor workload |
-| .NET SDK | net10.0 or compatible | Runtime and build tools |
-| MySQL Server | 8.0.41 or later | Database server |
-| Syncfusion.Blazor.Gantt | -v {{site.blazorversion}} | Gantt Chart and UI components |
-| Syncfusion.Blazor.Themes | -v {{site.blazorversion}} | Styling for Gantt Chart components |
-| Microsoft.EntityFrameworkCore | 10.0.2 or later | Core framework for database operations |
-| Microsoft.EntityFrameworkCore.Tools |10.0.2 or later | Tools for managing database migrations |
-| Pomelo.EntityFrameworkCore.MySql | 10.0.2 or later | MySQL provider for Entity Framework Core |
+| Software/Package                    | Version                   | Purpose                                  |
+| ----------------------------------- | ------------------------- | ---------------------------------------- |
+| Visual Studio 2026                  | 18.2.1 or later           | Development IDE with Blazor workload     |
+| .NET SDK                            | net10.0 or compatible     | Runtime and build tools                  |
+| MySQL Server                        | 8.0.41 or later           | Database server                          |
+| Syncfusion.Blazor.Gantt             | -v {{site.blazorversion}} | Gantt Chart and UI components            |
+| Syncfusion.Blazor.Themes            | -v {{site.blazorversion}} | Styling for Gantt Chart components       |
+| Microsoft.EntityFrameworkCore       | 10.0.2 or later           | Core framework for database operations   |
+| Microsoft.EntityFrameworkCore.Tools | 10.0.2 or later           | Tools for managing database migrations   |
+| Pomelo.EntityFrameworkCore.MySql    | 10.0.2 or later           | MySQL provider for Entity Framework Core |
 
 ## Setting up the MySQL environment for Entity Framework Core
 
@@ -49,6 +49,7 @@ Ensure the following software and packages are installed before proceeding:
 First, the **MySQL database** structure must be created to store task data.
 
 **Instructions:**
+
 1. Open MySQL Workbench or any MySQL client.
 2. Create a new database named `ganttdb`.
 3. Define a `task_data` table with the specified schema.
@@ -64,13 +65,13 @@ USE ganttdb;
 -- Create TaskData Table
 CREATE TABLE IF NOT EXISTS task_data (
     TaskID INT AUTO_INCREMENT PRIMARY KEY,
-    TaskName VARCHAR(50) NOT NULL, 
+    TaskName VARCHAR(50) NOT NULL,
     StartDate DATETIME,
     EndDate DATETIME,
     ParentID INT NULL,
     Duration VARCHAR(10) NOT NULL,
-    Predecessor VARCHAR(100) NULL,   
-    Progress INT NOT NULL  
+    Predecessor VARCHAR(100) NULL,
+    Progress INT NOT NULL
 );
 
 -- Insert Sample Data (Optional)
@@ -140,7 +141,7 @@ namespace GanttMySql.Data
         public DateTime? EndDate { get; set; }
         public int? ParentID { get; set; }
         public string Predecessor { get; set; }
-        public string? Duration { get; set; }    
+        public string? Duration { get; set; }
         public int Progress { get; set; }
     }
 }
@@ -148,6 +149,7 @@ namespace GanttMySql.Data
 ```
 
 **Explanation:**
+
 - The `[Key]` attribute marks the `TaskID` property as the primary key (a unique identifier for each record).
 - Each property represents a column in the database table.
 - The `?` symbol indicates that a property is nullable (can be empty).
@@ -251,6 +253,7 @@ namespace GanttMySql.Data
 ```
 
 **Explanation:**
+
 - The `DbContext` class inherits from Entity Framework's `DbContext` base class.
 - The `TaskData` property represents the `task_data` table in the database.
 - The `OnModelCreating` method configures how the database columns should behave (maximum length, required/optional, default values, etc.).
@@ -290,15 +293,15 @@ A connection string contains the information needed to connect the application t
 
 **Connection String Components:**
 
-| Component | Description |
-|-----------|-------------|
-| Server | The address of the MySQL server (use `localhost` for local development) |
-| Port | The MySQL port number (default is `3306`) |
-| Database | The database name (in this case, `ganttdb`) |
-| Uid | The MySQL username (default is `root`) |
-| Pwd | The MySQL password |
-| SslMode | SSL encryption mode (set to `None` for local development) |
-| ConvertZeroDateTime | Converts zero datetime values to NULL |
+| Component           | Description                                                             |
+| ------------------- | ----------------------------------------------------------------------- |
+| Server              | The address of the MySQL server (use `localhost` for local development) |
+| Port                | The MySQL port number (default is `3306`)                               |
+| Database            | The database name (in this case, `ganttdb`)                             |
+| Uid                 | The MySQL username (default is `root`)                                  |
+| Pwd                 | The MySQL password                                                      |
+| SslMode             | SSL encryption mode (set to `None` for local development)               |
+| ConvertZeroDateTime | Converts zero datetime values to NULL                                   |
 
 The database connection string has been configured successfully.
 
@@ -323,7 +326,7 @@ namespace GanttMySql.Data
     public class TaskRepository
     {
         private readonly TaskDbContext _context;
-    
+
         /// <summary>
         /// Initializes a new instance of <see cref="TaskRepository"/>.
         /// </summary>
@@ -459,12 +462,15 @@ Syncfusion is a library that provides pre-built UI components like Gantt Chart, 
 <link href="_content/Syncfusion.Blazor.Themes/tailwind3.css" rel="stylesheet" />
 
 <!-- Blazor Scripts -->
-<script src="_content/Syncfusion.Blazor.Core/scripts/syncfusion-blazor.min.js" type="text/javascript"></script>
+<script
+  src="_content/Syncfusion.Blazor.Core/scripts/syncfusion-blazor.min.js"
+  type="text/javascript"
+></script>
 ```
 
 For this project, the tailwind3 theme is used. A different theme can be selected or the existing theme can be customized based on project requirements. Refer to the [Blazor Components Appearance](https://blazor.syncfusion.com/documentation/appearance/themes) documentation to learn more about theming and customization options.
 
-Blazor components are now configured and ready to use. For additional guidance, refer to the Gantt Chart component [getting‑started](https://blazor.syncfusion.com/documentation/gantt-chart/getting-started-with-web-app) documentation.
+Blazor components are now configured and ready to use. For additional guidance, refer to the Gantt Chart component [getting‑started](https://blazor.syncfusion.com/documentation/gantt/getting-started-with-web-app) documentation.
 
 ### Step 2: Update the Blazor Gantt Chart
 
@@ -568,7 +574,7 @@ The `CustomAdaptor` is a bridge between the Gantt Chart and the database. It han
                 }
                 // Apply Filter operation if filter criteria exists
                 if (dataManagerRequest.Where != null && dataManagerRequest.Where.Count > 0)
-                {                
+                {
                     if (dataManagerRequest.Where[0].Field != null && dataManagerRequest.Where[0].Field == @nameof(TaskDataModel. ParentID)){}
                     else
                     {
@@ -590,7 +596,7 @@ The `CustomAdaptor` is a bridge between the Gantt Chart and the database. It han
                     dataSource = DataOperations.PerformSkip(dataSource, dataManagerRequest.Skip);
                 }
 
-                // Apply take operation 
+                // Apply take operation
                 if (dataManagerRequest.Take != 0)
                 {
                     dataSource = DataOperations.PerformTake(dataSource, dataManagerRequest.Take);
@@ -614,13 +620,13 @@ The `CustomAdaptor` class has been successfully implemented with all data operat
 
 **Common methods in data operations**
 
-* [ReadAsync(DataManagerRequest)](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_ReadAsync_Syncfusion_Blazor_DataManagerRequest_System_String_) - Retrieve and process records (search, filter, sort)
+- [ReadAsync(DataManagerRequest)](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_ReadAsync_Syncfusion_Blazor_DataManagerRequest_System_String_) - Retrieve and process records (search, filter, sort)
 
-* [PerformSearching](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSearching__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_SearchFilter__) - Applies search criteria to the collection.
-* [PerformFiltering](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformFiltering__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_WhereFilter__System_String_) - Filters data based on conditions.
-* [PerformSorting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSorting__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_Sort__) - Sorts data by one or more fields.
-* [PerformSkip](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSkip__1_System_Linq_IQueryable___0__System_Int32_) - Skips a defined number of records.
-* [PerformTake](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformTake__1_System_Linq_IQueryable___0__System_Int32_) - Retrieves a specified number of records.
+- [PerformSearching](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSearching__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_SearchFilter__) - Applies search criteria to the collection.
+- [PerformFiltering](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformFiltering__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_WhereFilter__System_String_) - Filters data based on conditions.
+- [PerformSorting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSorting__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_Sort__) - Sorts data by one or more fields.
+- [PerformSkip](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSkip__1_System_Linq_IQueryable___0__System_Int32_) - Skips a defined number of records.
+- [PerformTake](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformTake__1_System_Linq_IQueryable___0__System_Int32_) - Retrieves a specified number of records.
 
 ---
 
@@ -635,8 +641,8 @@ The toolbar provides buttons for adding, editing, deleting records, and searchin
 
 ```cshtml
 <SfGantt TValue="TaskDataModel"
-        AllowSorting="true" 
-        AllowFiltering="true" 
+        AllowSorting="true"
+        AllowFiltering="true"
         Toolbar="@ToolbarItems">
     <SfDataManager AdaptorInstance="@typeof(CustomAdaptor)" Adaptor="Adaptors.CustomAdaptor"></SfDataManager>
     <GanttColumns>
@@ -657,19 +663,18 @@ The toolbar provides buttons for adding, editing, deleting records, and searchin
 
 **Toolbar Items Explanation:**
 
-| Item | Function |
-|------|----------|
-| `Add` | Opens the Dialog tab to add a new task record. |
-| `Edit` | Enables editing of the selected record. |
+| Item     | Function                                       |
+| -------- | ---------------------------------------------- |
+| `Add`    | Opens the Dialog tab to add a new task record. |
+| `Edit`   | Enables editing of the selected record.        |
 | `Delete` | Deletes the selected record from the database. |
-| `Update` | Saves changes made to the selected record. |
-| `Cancel` | Cancels the current edit or add operation. |
-| `Search` | Displays a search box to find records. |
+| `Update` | Saves changes made to the selected record.     |
+| `Cancel` | Cancels the current edit or add operation.     |
+| `Search` | Displays a search box to find records.         |
 
 The toolbar has been successfully added.
 
 ---
-
 
 ### Step 5: Implement searching feature
 
@@ -688,12 +693,13 @@ Searching allows the user to find records by entering keywords in the search box
     <!-- Gantt columns configuration -->
 </SfGantt>
 ```
+
 4. Update the `ReadAsync` method in the `CustomAdaptor` class to handle searching:
 
 ```csharp
 @code {
     private List<string> ToolbarItems = new List<string> { "Search"};
-    
+
     /// <summary>
     /// CustomAdaptor class to handle Gantt Chart data operations with MySQL using Entity Framework
     /// </summary>
@@ -720,9 +726,9 @@ Searching allows the user to find records by entering keywords in the search box
             }
 
             int totalRecordsCount = dataSource.Cast<TaskDataModel>().Count();
-            
-            return dataManagerRequest.RequiresCounts 
-                ? new DataResult() { Result = dataSource, Count = totalRecordsCount } 
+
+            return dataManagerRequest.RequiresCounts
+                ? new DataResult() { Result = dataSource, Count = totalRecordsCount }
                 : (object)dataSource;
         }
     }
@@ -750,9 +756,9 @@ Filtering allows the user to restrict data based on column values using a menu i
 2. Add the [AllowFiltering](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowFiltering) property to the `<SfGantt>` component:
 
 ```cshtml
-<SfGantt TValue="TaskDataModel"       
+<SfGantt TValue="TaskDataModel"
         AllowFiltering="true">
-    <SfDataManager AdaptorInstance="@typeof(CustomAdaptor)" Adaptor="Adaptors.CustomAdaptor"></SfDataManager>    
+    <SfDataManager AdaptorInstance="@typeof(CustomAdaptor)" Adaptor="Adaptors.CustomAdaptor"></SfDataManager>
     <!-- Gantt columns configuration -->
 </SfGantt>
 
@@ -776,7 +782,7 @@ Filtering allows the user to restrict data based on column values using a menu i
         {
             get => _taskService;
             set => _taskService = value;
-        }    
+        }
 
         public override async Task<object> ReadAsync(DataManagerRequest dataManagerRequest, string? key =   null)
         {
@@ -784,7 +790,7 @@ Filtering allows the user to restrict data based on column values using a menu i
 
             // Handling Filtering
             if (dataManagerRequest.Where != null && dataManagerRequest.Where.Count > 0)
-            {                
+            {
                 if (dataManagerRequest.Where[0].Field != null && dataManagerRequest.Where[0].Field == @nameof(TaskDataModel.ParentID)){}
                 else
                 {
@@ -792,10 +798,10 @@ Filtering allows the user to restrict data based on column values using a menu i
                 }
             }
 
-            int totalRecordsCount = dataSource.Cast<TaskDataModel>().Count();            
+            int totalRecordsCount = dataSource.Cast<TaskDataModel>().Count();
 
-            return dataManagerRequest.RequiresCounts 
-                ? new DataResult() { Result = dataSource, Count = totalRecordsCount } 
+            return dataManagerRequest.RequiresCounts
+                ? new DataResult() { Result = dataSource, Count = totalRecordsCount }
                 : (object)dataSource;
         }
     }
@@ -861,10 +867,10 @@ Sorting enables the user to arrange records in ascending or descending order bas
                 dataSource = DataOperations.PerformSorting(dataSource, dataManagerRequest.Sorted);
             }
 
-            int totalRecordsCount = dataSource.Cast<TaskDataModel>().Count();            
+            int totalRecordsCount = dataSource.Cast<TaskDataModel>().Count();
 
-            return dataManagerRequest.RequiresCounts 
-                ? new DataResult() { Result = dataSource, Count = totalRecordsCount } 
+            return dataManagerRequest.RequiresCounts
+                ? new DataResult() { Result = dataSource, Count = totalRecordsCount }
                 : (object)dataSource;
         }
     }
@@ -890,14 +896,15 @@ Add the [GanttEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Bla
 
 ```cshtml
 <SfGantt TValue="TaskDataModel"
-        AllowSorting="true" 
+        AllowSorting="true"
         AllowFiltering="true"
         Toolbar="@ToolbarItems">
-    <SfDataManager AdaptorInstance="@typeof(CustomAdaptor)" Adaptor="Adaptors.CustomAdaptor"></SfDataManager>     
+    <SfDataManager AdaptorInstance="@typeof(CustomAdaptor)" Adaptor="Adaptors.CustomAdaptor"></SfDataManager>
      <GanttEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" AllowTaskbarEditing="true"></GanttEditSettings>
     <!-- Gantt columns  -->
 </SfGantt>
 ```
+
 Add the toolbar items list in the `@code` block:
 
 ```csharp
@@ -907,6 +914,7 @@ Add the toolbar items list in the `@code` block:
     // CustomAdaptor class code...
 }
 ```
+
 **Insert**
 
 Record insertion allows new tasks to be added directly through the Gantt Chart component. The adaptor processes the insertion request, performs any required business‑logic validation, and saves the newly created record to the MySQL Server database.
@@ -926,6 +934,7 @@ public class CustomAdaptor : DataAdaptor
     }
 }
 ```
+
 In **Data/TaskRepository.cs**, implement the insert method:
 
 ```csharp
@@ -936,9 +945,9 @@ public async Task AddTaskAsync(TaskData task)
 
     // Ensure DB generates identity
     task.TaskID = 0;
-    
+
     ApplyDefaults(task);
-    
+
     _context.TaskData.Add(task);
     await _context.SaveChangesAsync();
 }
@@ -965,6 +974,7 @@ private static void ApplyDefaults(TaskDataModel task)
 ```
 
 **Helper methods explanation:**
+
 - `ApplyDefaults()`: Applies default values and enforces simple business rules on a task instance.
 
 **What happens behind the scenes:**
@@ -983,7 +993,6 @@ Record modification allows task details to be updated directly within the Gantt 
 
 In **Home.razor**, implement the `UpdateAsync` method to handle record updates within the `CustomAdaptor` class:
 
-
 ```csharp
 public class CustomAdaptor : DataAdaptor
 {
@@ -997,6 +1006,7 @@ public class CustomAdaptor : DataAdaptor
     }
 }
 ```
+
 In **Data/TaskRepository.cs**, implement the update method:
 
 ```csharp
@@ -1064,6 +1074,7 @@ public class CustomAdaptor : DataAdaptor
     }
 }
 ```
+
 In **Data/TaskRepository.cs**, implement the delete method:
 
 ```csharp
@@ -1079,7 +1090,7 @@ public async Task RemoveTaskAsync(int? key)
     try
     {
         var task = await _context.TaskData.FindAsync(key.Value);
-       
+
         if (task == null)
             return;
 
@@ -1093,6 +1104,7 @@ public async Task RemoveTaskAsync(int? key)
     }
 }
 ```
+
 **What happens behind the scenes:**
 
 1. The user selects a record and clicks "Delete".
@@ -1171,6 +1183,7 @@ In **Home.razor**, implement the `BatchUpdateAsync` method to handle multiple re
 Now the adaptor supports modifications with atomic database synchronization. All CRUD operations are now fully implemented, enabling comprehensive data management capabilities within the Blazor Gantt Chart.
 
 **Reference links**
+
 - [InsertAsync(DataManager, object)](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_InsertAsync_Syncfusion_Blazor_DataManager_System_Object_System_String_) - Create new records in MySQL Server
 - [UpdateAsync(DataManager, object, string, string)](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_UpdateAsync_Syncfusion_Blazor_DataManager_System_Object_System_String_System_String_) - Edit existing records in MySQL Server
 - [RemoveAsync(DataManager, object, string, string)](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_RemoveAsync_Syncfusion_Blazor_DataManager_System_Object_System_String_System_String_) - Delete records from MySQL Server
@@ -1179,6 +1192,7 @@ Now the adaptor supports modifications with atomic database synchronization. All
 ---
 
 ### Step 9: Complete code
+
 Here is the complete and final `Home.razor` component with all features integrated:
 
 ```cshtml
@@ -1212,8 +1226,9 @@ Here is the complete and final `Home.razor` component with all features integrat
 
 </SfGantt>
 ```
-> * Set [IsPrimaryKey](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_IsPrimaryKey) to **true** for a column that contains unique values.
-> * Set [IsIdentity](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_IsIdentity) to **true** for auto-generated columns to disable editing during add or update operations.
+
+> - Set [IsPrimaryKey](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_IsPrimaryKey) to **true** for a column that contains unique values.
+> - Set [IsIdentity](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_IsIdentity) to **true** for auto-generated columns to disable editing during add or update operations.
 
 ```csharp
 @code {
@@ -1225,7 +1240,7 @@ Here is the complete and final `Home.razor` component with all features integrat
     protected override void OnInitialized()
     {
         _customAdaptor = new CustomAdaptor { TaskService = TaskService };
-    }   
+    }
 
     /// <summary>
     /// Custom DataAdaptor to handle Gantt Chart data operations with MySQL using EF Core.
@@ -1233,7 +1248,7 @@ Here is the complete and final `Home.razor` component with all features integrat
     /// </summary>
     public class CustomAdaptor : DataAdaptor
     {
-        private static TaskRepository? _taskService { get; set; }   
+        private static TaskRepository? _taskService { get; set; }
 
         /// <summary>
         /// Task repository instance used to fulfill data operations.
@@ -1242,7 +1257,7 @@ Here is the complete and final `Home.razor` component with all features integrat
         {
             get => _taskService;
             set => _taskService = value;
-        }   
+        }
 
         /// <summary>
         /// Reads data according to DataManagerRequest (search, sort, paging).
@@ -1254,25 +1269,25 @@ Here is the complete and final `Home.razor` component with all features integrat
         /// </returns>
         public override async Task<object> ReadAsync(DataManagerRequest dm, string? key = null)
         {
-            IEnumerable<TaskDataModel> dataSource = await _taskService!.GetTasksAsync();    
+            IEnumerable<TaskDataModel> dataSource = await _taskService!.GetTasksAsync();
 
             // Search
             if (dm.Search != null && dm.Search.Count > 0)
-                dataSource = DataOperations.PerformSearching(dataSource, dm.Search);    
+                dataSource = DataOperations.PerformSearching(dataSource, dm.Search);
 
             // Sort
             if (dm.Sorted != null && dm.Sorted.Count > 0)
-                dataSource = DataOperations.PerformSorting(dataSource, dm.Sorted);  
+                dataSource = DataOperations.PerformSorting(dataSource, dm.Sorted);
 
-            int count = dataSource.Cast<TaskDataModel>().Count();   
+            int count = dataSource.Cast<TaskDataModel>().Count();
 
             if (dm.Skip != 0) dataSource = DataOperations.PerformSkip(dataSource, dm.Skip);
-            if (dm.Take != 0) dataSource = DataOperations.PerformTake(dataSource, dm.Take); 
+            if (dm.Take != 0) dataSource = DataOperations.PerformTake(dataSource, dm.Take);
 
             return dm.RequiresCounts
                 ? new DataResult() { Result = dataSource, Count = count }
                 : (object)dataSource;
-        }   
+        }
 
         /// <summary>
         /// Updates a task record using the repository.
@@ -1286,7 +1301,7 @@ Here is the complete and final `Home.razor` component with all features integrat
         {
             await _taskService!.UpdateTaskAsync(value as TaskDataModel);
             return value;
-        }   
+        }
 
         /// <summary>
         /// Removes a task record using the repository.
@@ -1305,11 +1320,11 @@ Here is the complete and final `Home.razor` component with all features integrat
                 string s when int.TryParse(s, out var id) => id,
                 TaskDataModel t => t.TaskID,
                 _ => null
-            };  
+            };
 
             await _taskService!.RemoveTaskAsync(taskID);
             return value;
-        }   
+        }
 
         /// <summary>
         /// Applies batch changes: updates, inserts, and deletes using the repository.
@@ -1332,25 +1347,25 @@ Here is the complete and final `Home.razor` component with all features integrat
                     Console.WriteLine($"UPDATE TaskID={record.TaskID}, ParentID={record.ParentID}");
                     await _taskService!.UpdateTaskAsync(record);
                 }
-            }   
+            }
 
             if (addedRecords is IEnumerable<TaskDataModel> added)
             {
                 foreach (var record in added)
                 {
                     // Debug (optional)
-                    Console.WriteLine($"INSERT TaskID={record.TaskID}, ParentID={record.ParentID}");    
+                    Console.WriteLine($"INSERT TaskID={record.TaskID}, ParentID={record.ParentID}");
 
                     record.TaskID = 0; // identity insert
                     await _taskService!.AddTaskAsync(record);
                 }
-            }   
+            }
 
             if (deletedRecords is IEnumerable<TaskDataModel> deleted)
             {
                 foreach (var record in deleted)
                     await _taskService!.RemoveTaskAsync(record.TaskID);
-            }   
+            }
 
             return key;
         }
@@ -1400,6 +1415,7 @@ dotnet run
 ## Summary
 
 This guide demonstrates how to:
+
 1. Create a MySQL database with task records. [🔗](#step-1-create-the-database-and-table-in-mysql-server)
 2. Install necessary NuGet packages for Entity Framework Core and Syncfusion. [🔗](#step-2-install-required-nuget-packages)
 3. Create data models and DbContext for database communication. [🔗](#step-3-create-the-data-model)

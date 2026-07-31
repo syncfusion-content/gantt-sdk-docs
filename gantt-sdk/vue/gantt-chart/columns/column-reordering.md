@@ -16,14 +16,14 @@ To reorder columns, inject the `Reorder` module in the `provide` section.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/columns-cs7/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/columns-cs7/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/columns-cs7/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/columns-cs7/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/columns-cs7" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/columns-cs7" %}
 
 > You can disable reordering for a particular column by setting the [columns.allowReordering](https://ej2.syncfusion.com/vue/documentation/api/gantt/column#allowreordering) property to `false`.
 
@@ -37,14 +37,14 @@ During the reorder action, the Gantt Chart component triggers the following even
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/columns-cs8/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/columns-cs8/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/columns-cs8/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/columns-cs8/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/columns-cs8" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/columns-cs8" %}
 
 ## Reorder multiple columns
 
@@ -52,11 +52,11 @@ Multiple columns can be reordered at once using the [reorderColumns](https://ej2
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/columns-cs9/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/columns-cs9/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/columns-cs9/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/columns-cs9/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/columns-cs9" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/columns-cs9" %}

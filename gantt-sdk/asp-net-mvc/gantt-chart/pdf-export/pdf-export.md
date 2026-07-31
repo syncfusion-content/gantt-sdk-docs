@@ -22,10 +22,10 @@ N> Currently, we don't have support for exporting the manually scheduled tasks.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/pdf-columnTemplate/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/pdf-export/pdf-columnTemplate/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Pdfexport.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/pdfexport/pdfexport.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/pdf-export/pdfexport/pdfexport.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -33,15 +33,15 @@ N> Currently, we don't have support for exporting the manually scheduled tasks.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/pdfexport/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/pdf-export/pdfexport/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Pdfexport.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/pdfexport/pdfexport.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/pdf-export/pdfexport/pdfexport.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-## Indicators in PDF exporting 
+## Indicators in PDF exporting
 
 The PDF export functionality allows users to export Gantt charts enriched with dynamic indicators and accompanying images.
 These indicators, represented by images,can be effortlessly defined using the `base64` encoding value in the data object of datasource.This data object field should be mapped to indiactor property of [`task fields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Indicators).
@@ -50,10 +50,10 @@ These indicators, represented by images,can be effortlessly defined using the `b
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/pdfexportindicator/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/pdf-export/pdfexportindicator/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Pdfexport.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/pdfexportindicator/pdfexport.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/pdf-export/pdfexportindicator/pdfexport.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -61,10 +61,10 @@ These indicators, represented by images,can be effortlessly defined using the `b
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/pdfexportindicator/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/pdf-export/pdfexportindicator/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Pdfexport.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/pdfexportindicator/pdfexport.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/pdf-export/pdfexportindicator/pdfexport.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -83,10 +83,10 @@ step 2: Then , `pdfExpComplete` return as blob object.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/blobdata/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/pdf-export/blobdata/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="blob-data.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/blobdata/blob-data.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/pdf-export/blobdata/blob-data.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -94,10 +94,10 @@ step 2: Then , `pdfExpComplete` return as blob object.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/blobdata/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/pdf-export/blobdata/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="blob-data.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/blobdata/blob-data.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/pdf-export/blobdata/blob-data.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -106,16 +106,16 @@ step 2: Then , `pdfExpComplete` return as blob object.
 
 In Gantt, we have provided support to export the Gantt component where each rows are auto-fit to the PDF document page width by setting <code>IsFitToWidth</code> as true in <code>FitToWidthSettings</code> of <code>PdfExportProperties</code>.
 
-Also, we can customize the chart width and grid width in exported file using <code>ChartWidth</code> and <code>GridWidth</code> by defining it as percentage in string. 
+Also, we can customize the chart width and grid width in exported file using <code>ChartWidth</code> and <code>GridWidth</code> by defining it as percentage in string.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/singlepage/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/pdf-export/singlepage/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Single-Page-Export.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/singlepage/single-page.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/pdf-export/singlepage/single-page.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -123,10 +123,10 @@ Also, we can customize the chart width and grid width in exported file using <co
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/singlepage/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/pdf-export/singlepage/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Single-Page-Export.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/singlepage/single-page.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/pdf-export/singlepage/single-page.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -139,10 +139,10 @@ PDF export provides an option for exporting multiple Gantt to same file. In this
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdfmultipleexport/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/pdfmultipleexport/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Pdfmultipleexport.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdfmultipleexport/pdfmultipleexport.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/pdfmultipleexport/pdfmultipleexport.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -150,10 +150,10 @@ PDF export provides an option for exporting multiple Gantt to same file. In this
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdfmultipleexport/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/pdfmultipleexport/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Pdfmultipleexport.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdfmultipleexport/pdfmultipleexport.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/pdfmultipleexport/pdfmultipleexport.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -162,19 +162,19 @@ PDF export provides an option for exporting multiple Gantt to same file. In this
 
 PDF export provides an option to include theme for the exported PDF document. To apply theme in exported PDF, define the `theme` in `pdfExportProperties`. The available themes are:
 
-* Material
-* Fabric
-* Bootstrap
-* Bootstrap 4
+- Material
+- Fabric
+- Bootstrap
+- Bootstrap 4
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/themes/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/pdf-export/themes/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Themes.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/themes/themes.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/pdf-export/themes/themes.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -182,10 +182,10 @@ PDF export provides an option to include theme for the exported PDF document. To
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/themes/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/pdf-export/themes/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Themes.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/themes/themes.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/pdf-export/themes/themes.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

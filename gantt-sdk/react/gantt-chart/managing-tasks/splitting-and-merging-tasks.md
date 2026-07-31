@@ -21,22 +21,23 @@ For more details, see [Split task at load time](https://ej2.syncfusion.com/react
 ## Split tasks dynamically
 
 Split tasks dynamically using the dialog or context menu, requiring [taskFields.segments](https://ej2.syncfusion.com/react/documentation/api/gantt/taskFields#segments) or [taskFields.segmentId](https://ej2.syncfusion.com/react/documentation/api/gantt/taskFields#segmentId) mapped, `Edit` injected, and [editSettings.allowEditing](https://ej2.syncfusion.com/react/documentation/api/gantt/editSettings#allowediting) enabled:
+
 - **Dialog**: The Segments tab in the add/edit dialog allows splitting tasks based on their start and end dates.
 - **Context Menu**: Enable [enableContextMenu](https://ej2.syncfusion.com/react/documentation/api/gantt#enablecontextmenu) and inject `ContextMenuService` to include the Split Task option in the context menu, enabling task splitting with a right-click.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/split-tasks-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/split-tasks-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/split-tasks-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/split-tasks-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/split-tasks-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/split-tasks-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/split-tasks-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/split-tasks-cs1" %}
 
 ## Merge tasks dynamically
 
@@ -48,17 +49,17 @@ You can get the clicked segment information using the [onTaskbarClick](https://h
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/split-tasks-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/split-tasks-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/split-tasks-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/split-tasks-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/split-tasks-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/split-tasks-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/split-tasks-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/split-tasks-cs2" %}
 
 ## Limitations of Split tasks
 
@@ -67,6 +68,7 @@ You can get the clicked segment information using the [onTaskbarClick](https://h
 3. Split task is not supported with `Multi taskbar`.
 
 ## See also
+
 - [How to bind data in Gantt?](https://ej2.syncfusion.com/react/documentation/gantt/data-binding)
 - [How to configure task editing?](https://ej2.syncfusion.com/react/documentation/gantt/editing)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/react/documentation/gantt/task-dependency)

@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Managing Tasks in ASP.NET Core Gantt Component
 
 The Gantt component has options to dynamically insert, delete, and update tasks in the project. The primary key column is necessary to manage the tasks and perform CRUD operations in Gantt. To define the primary key, set the [`Columns.IsPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_IsPrimaryKey) property to `true` in the particular column.
@@ -19,10 +18,10 @@ The following code example shows you how to enable the cell editing in Gantt con
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/enableCellEditing/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/enableCellEditing/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="EnableCellEditing.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/enableCellEditing/enableCellEditing.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/enableCellEditing/enableCellEditing.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -30,10 +29,10 @@ The following code example shows you how to enable the cell editing in Gantt con
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/enableCellEditing/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/enableCellEditing/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="EnableCellEditing.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/enableCellEditing/enableCellEditing.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/enableCellEditing/enableCellEditing.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -42,38 +41,38 @@ The following code example shows you how to enable the cell editing in Gantt con
 
 The [`columns.editType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_EditType) is used to define the edit type for any particular column. You can set the [`columns.editType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_EditType) based on data type of the column.
 
-* `numeric edit` - [`NumericTextBox`](https://ej2.syncfusion.com/aspnetmvc/documentation/numerictextbox/ej1-api-migration) component for integers, double, and decimal data types.
+- `numeric edit` - [`NumericTextBox`](https://ej2.syncfusion.com/aspnetmvc/documentation/numerictextbox/ej1-api-migration) component for integers, double, and decimal data types.
 
-* `default edit` - [`TextBox`](https://ej2.syncfusion.com/aspnetmvc/documentation/textbox/getting-started) component for string data type.
+- `default edit` - [`TextBox`](https://ej2.syncfusion.com/aspnetmvc/documentation/textbox/getting-started) component for string data type.
 
-* `dropdown edit` - [`DropDownList`](https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/getting-started) component to show all unique values related to that field.
+- `dropdown edit` - [`DropDownList`](https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/getting-started) component to show all unique values related to that field.
 
-* `boolean edit` - [`CheckBox`](https://ej2.syncfusion.com/aspnetmvc/documentation/check-box/getting-started) component for boolean data type.
+- `boolean edit` - [`CheckBox`](https://ej2.syncfusion.com/aspnetmvc/documentation/check-box/getting-started) component for boolean data type.
 
-* `date picker edit` - [`DatePicker`](https://ej2.syncfusion.com/aspnetmvc/documentation/datepicker/getting-started) component for date data type.
+- `date picker edit` - [`DatePicker`](https://ej2.syncfusion.com/aspnetmvc/documentation/datepicker/getting-started) component for date data type.
 
-* `date time picker edit` - [`DateTimePicker`](https://ej2.syncfusion.com/aspnetmvc/documentation/datetimepicker/getting-started) component for date time data type.
+- `date time picker edit` - [`DateTimePicker`](https://ej2.syncfusion.com/aspnetmvc/documentation/datetimepicker/getting-started) component for date time data type.
 
 Also, you can customize the behavior of the editor component through the [`columns.edit.params`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Edit).
 
 The following table describes cell edit type component and their corresponding edit params of the column.
 
-|Edit Type |Component |Example|
-|-----|-----|-----|
-|`numericedit` | [`NumericTextBox`](https://ej2.syncfusion.com/aspnetmvc/documentation/numerictextbox/ej1-api-migration) | params: { decimals: 2, value: 5 }|
-|`dropdownedit` | [`DropDownList`](https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/getting-started) | params: { value: 'Germany' }|
-|`booleanedit` | [`Checkbox`](https://ej2.syncfusion.com/aspnetmvc/documentation/check-box/getting-started) | params: { checked: true}|
-|`datepickeredit` | [`DatePicker`](https://ej2.syncfusion.com/aspnetmvc/documentation/datepicker/getting-started) | params: { format:'dd.MM.yyyy' }|
-|`datetimepickeredit` | [`DateTimePicker`](https://ej2.syncfusion.com/aspnetmvc/documentation/datetimepicker/getting-started) | params: { value: new Date() }|
+| Edit Type            | Component                                                                                               | Example                           |
+| -------------------- | ------------------------------------------------------------------------------------------------------- | --------------------------------- |
+| `numericedit`        | [`NumericTextBox`](https://ej2.syncfusion.com/aspnetmvc/documentation/numerictextbox/ej1-api-migration) | params: { decimals: 2, value: 5 } |
+| `dropdownedit`       | [`DropDownList`](https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/getting-started)     | params: { value: 'Germany' }      |
+| `booleanedit`        | [`Checkbox`](https://ej2.syncfusion.com/aspnetmvc/documentation/check-box/getting-started)              | params: { checked: true}          |
+| `datepickeredit`     | [`DatePicker`](https://ej2.syncfusion.com/aspnetmvc/documentation/datepicker/getting-started)           | params: { format:'dd.MM.yyyy' }   |
+| `datetimepickeredit` | [`DateTimePicker`](https://ej2.syncfusion.com/aspnetmvc/documentation/datetimepicker/getting-started)   | params: { value: new Date() }     |
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/editParams/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/editParams/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="EditParams.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/editParams/editParams.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/editParams/editParams.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -81,15 +80,13 @@ The following table describes cell edit type component and their corresponding e
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/editParams/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/editParams/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="EditParams.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/editParams/editParams.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/editParams/editParams.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/editParams.png)
 
@@ -97,22 +94,22 @@ The following table describes cell edit type component and their corresponding e
 
 The cell edit template is used to create a custom component for a particular column by invoking the following functions:
 
-* `create` - It is used to create the element at the time of initialization.
+- `create` - It is used to create the element at the time of initialization.
 
-* `write` - It is used to create the custom component or assign default value at the time of editing.
+- `write` - It is used to create the custom component or assign default value at the time of editing.
 
-* `read` - It is used to read the value from the component at the time of save.
+- `read` - It is used to read the value from the component at the time of save.
 
-* `destroy` - It is used to destroy the component.
+- `destroy` - It is used to destroy the component.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/editTemplate/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/editTemplate/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="EditTemplate.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/editTemplate/editTemplate.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/editTemplate/editTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -120,15 +117,13 @@ The cell edit template is used to create a custom component for a particular col
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/editTemplate/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/editTemplate/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="EditTemplate.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/editTemplate/editTemplate.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/editTemplate/editTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/editTemplate.png)
 
@@ -142,10 +137,10 @@ In the following demo, editing is disabled for the `TaskName` column.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/disableEditing/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/disableEditing/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DisableEditing.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/disableEditing/disableEditing.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/disableEditing/disableEditing.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -153,14 +148,13 @@ In the following demo, editing is disabled for the `TaskName` column.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/disableEditing/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/disableEditing/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DisableEditing.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/disableEditing/disableEditing.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/disableEditing/disableEditing.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
 
 ## Read-only gantt
 
@@ -170,10 +164,10 @@ In Gantt, all create, update, delete operations can be disabled by setting `read
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/readOnly/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/readOnly/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ReadOnly.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/readOnly/readOnly.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/readOnly/readOnly.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -181,15 +175,13 @@ In Gantt, all create, update, delete operations can be disabled by setting `read
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/readOnly/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/readOnly/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ReadOnly.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/readOnly/readOnly.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/readOnly/readOnly.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/readOnly.PNG)
 
@@ -203,10 +195,10 @@ You can set default values when new task dialog opens using [actionBegin](https:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/task-dialog-default-value/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/task-dialog-default-value/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Task-dialog-default-value.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/task-dialog-default-value/task-dialog-default-value.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/task-dialog-default-value/task-dialog-default-value.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -214,16 +206,15 @@ You can set default values when new task dialog opens using [actionBegin](https:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/task-dialog-default-value/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/task-dialog-default-value/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Task-dialog-default-value.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/task-dialog-default-value/task-dialog-default-value.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/task-dialog-default-value/task-dialog-default-value.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
 ![Gantt new task dialog with default values](images/task-dialog-with-default-values.png)
-
 
 ## Customize control in add/edit dialog
 
@@ -241,10 +232,10 @@ In the below sample, `General` tab is customized using the `fields` property. Th
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/task-dialog-default-value1/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/task-dialog-default-value1/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Task-dialog-default-value.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/task-dialog-default-value1/task-dialog-default-value.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/task-dialog-default-value1/task-dialog-default-value.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -252,10 +243,10 @@ In the below sample, `General` tab is customized using the `fields` property. Th
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/task-dialog-default-value1/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/task-dialog-default-value1/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Task-dialog-default-value.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/task-dialog-default-value1/task-dialog-default-value.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/task-dialog-default-value1/task-dialog-default-value.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -264,20 +255,21 @@ In the below sample, `General` tab is customized using the `fields` property. Th
 
 You can customize the dependency, segments, and resource tabs of the dialog box using the [additionalParams](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttAddDialogField.html#Syncfusion_EJ2_Gantt_Gantt_AdditionalParams) property within the [addDialogFields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttAddDialogFields.html) and [editDialogFields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditDialogFields.html) settings respectively. This customization involves defining properties from the [grid](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html) within the `additionalParams` property.
 
-In the example below: 
-* The `dependency` tab enables [sorting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowSorting) and [toolbar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) options. 
-* The `segments` tab enables `sorting` and `toolbar` options and includes a new column `newData` defined with a specified [field](https://help.syncfusion.com/cr/aspnetcore-js2#Syncfusion_EJ2_Grids_GridColumn_Field).
-* The `resources` tab defines a new column `Segment Task`  with specific properties such as `field`, [width](https://ej2.syncfusion.com/vue/documentation/api/grid/columnModel/#width) and [headerText](https://help.syncfusion.com/cr/aspnetcore-js2#Syncfusion_EJ2_Grids_GridColumn_HeaderText).
-These customizations are applied to both `addDialogFields` and `editDialogFields` settings.
+In the example below:
+
+- The `dependency` tab enables [sorting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowSorting) and [toolbar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) options.
+- The `segments` tab enables `sorting` and `toolbar` options and includes a new column `newData` defined with a specified [field](https://help.syncfusion.com/cr/aspnetcore-js2#Syncfusion_EJ2_Grids_GridColumn_Field).
+- The `resources` tab defines a new column `Segment Task` with specific properties such as `field`, [width](https://ej2.syncfusion.com/vue/documentation/api/grid/columnModel/#width) and [headerText](https://help.syncfusion.com/cr/aspnetcore-js2#Syncfusion_EJ2_Grids_GridColumn_HeaderText).
+  These customizations are applied to both `addDialogFields` and `editDialogFields` settings.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/task-dialog-default-value2/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/task-dialog-default-value2/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Task-dialog-default-value.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/task-dialog-default-value2/task-dialog-default-value.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/task-dialog-default-value2/task-dialog-default-value.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -285,10 +277,10 @@ These customizations are applied to both `addDialogFields` and `editDialogFields
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/task-dialog-default-value2/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/task-dialog-default-value2/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Task-dialog-default-value.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/task-dialog-default-value2/task-dialog-default-value.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/task-dialog-default-value2/task-dialog-default-value.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -303,10 +295,10 @@ In the following example, the `notes` tab is customized with the [inlinemode](ht
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/task-dialog-default-value3/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/task-dialog-default-value3/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Task-dialog-default-value.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/task-dialog-default-value3/task-dialog-default-value.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/task-dialog-default-value3/task-dialog-default-value.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -314,17 +306,17 @@ In the following example, the `notes` tab is customized with the [inlinemode](ht
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/task-dialog-default-value3/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/task-dialog-default-value3/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Task-dialog-default-value.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/task-dialog-default-value3/task-dialog-default-value.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/task-dialog-default-value3/task-dialog-default-value.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
 ## Troubleshoot: Editing works only when primary key column is defined
 
-Editing feature requires a primary key column for CRUD operations. While defining columns in Gantt using the [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html) property, it is mandatory that any one of the columns, must be a primary column. By default, the [`id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_Id_System_String_) column will be the primary key column.  If [`id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_Id_System_String_) column is not defined, we need to enable [`isPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_IsPrimaryKey) for any one of the columns defined in the [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html) property.
+Editing feature requires a primary key column for CRUD operations. While defining columns in Gantt using the [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html) property, it is mandatory that any one of the columns, must be a primary column. By default, the [`id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_Id_System_String_) column will be the primary key column. If [`id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_Id_System_String_) column is not defined, we need to enable [`isPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_IsPrimaryKey) for any one of the columns defined in the [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html) property.
 
 ## Touch interaction
 
@@ -332,12 +324,13 @@ The Gantt control editing actions can be achieved using the double tap and tap a
 
 The following table describes different types of editing modes available in Gantt.
 
-|Action |Description|
-|-----|-----|
-|[`Cell editing`](managing-tasks/#cell-editing) | To perform `double tap` on a specific cell, initiate the cell to be in edit state.|
-|[`Dialog editing`](managing-tasks/#dialog-editing) | To perform `double tap` on a specific row, initiate the edit dialog to be opened.|
-|[`Taskbar editing`](managing-tasks/#taskbar-editing) | Taskbar editing action is initiated using the `tap` action on the taskbar. <br> **Parent taskbar** : Once you tap on the parent taskbar, it will be changed to editing state. Perform only dragging action on parent taskbar editing. <br> 
-![Alt text](../images/editing-parent.PNG) <br> **Child taskbar** : Once you tap the child taskbar, it will be changed to editing state. <br> 
+| Action                                               | Description                                                                                                                                                                                                                                |
+| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [`Cell editing`](managing-tasks/#cell-editing)       | To perform `double tap` on a specific cell, initiate the cell to be in edit state.                                                                                                                                                         |
+| [`Dialog editing`](managing-tasks/#dialog-editing)   | To perform `double tap` on a specific row, initiate the edit dialog to be opened.                                                                                                                                                          |
+| [`Taskbar editing`](managing-tasks/#taskbar-editing) | Taskbar editing action is initiated using the `tap` action on the taskbar. <br> **Parent taskbar** : Once you tap on the parent taskbar, it will be changed to editing state. Perform only dragging action on parent taskbar editing. <br> |
+
+![Alt text](../images/editing-parent.PNG) <br> **Child taskbar** : Once you tap the child taskbar, it will be changed to editing state. <br>
 ![Alt text](../images/editing-state.PNG) <br> **Dragging taskbar** : To drag a taskbar to the left or right in editing state. <br> <br> **Resizing taskbar** : To resize a taskbar, drag the left/right resize icon. <br> <br> **Progress resizing** : To change the progress, drag the progress resize icon to the left or right direction.|
 
 ### Task dependency editing
@@ -348,12 +341,12 @@ The following table explains the taskbar state in dependency edit mode.
 
 ![Taskbar states](../images/taskbar-states.png)
 
-|Taskbar state |Description|
-|-----|-----|
-|`Parent taskbar` | You cannot create dependency relationship to parent tasks. <br> ![Parent taskbar](../images/parent-taskbar.PNG)|
-|`Taskbar without dependency` |  If you tap a valid child taskbar, it will create `FS` type dependency line between tasks, otherwise exits from task dependency edit mode. <br> ![Valid taskbar](../images/valid-taskbar.PNG)|
-|`Taskbar with dependency` | If you tap the second taskbar, which has already been directly connected, it will ask to remove it. <br> ![Invalid taskbar](../images/invalid-taskbar.PNG)|
-|`Removing dependency` | Once you tap the taskbar with direct dependency, then confirmation dialog will be shown for removing dependency. <br> ![Confirm dialog](../images/confirm-dialog.PNG)|
+| Taskbar state                | Description                                                                                                                                                                                  |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Parent taskbar`             | You cannot create dependency relationship to parent tasks. <br> ![Parent taskbar](../images/parent-taskbar.PNG)                                                                              |
+| `Taskbar without dependency` | If you tap a valid child taskbar, it will create `FS` type dependency line between tasks, otherwise exits from task dependency edit mode. <br> ![Valid taskbar](../images/valid-taskbar.PNG) |
+| `Taskbar with dependency`    | If you tap the second taskbar, which has already been directly connected, it will ask to remove it. <br> ![Invalid taskbar](../images/invalid-taskbar.PNG)                                   |
+| `Removing dependency`        | Once you tap the taskbar with direct dependency, then confirmation dialog will be shown for removing dependency. <br> ![Confirm dialog](../images/confirm-dialog.PNG)                        |
 
 N> In mobile device, you cannot create dependency other than `FS` by taskbar editing. By using cell/dialog editing, you can add all type of dependencies.
 
@@ -365,10 +358,10 @@ The taskbar editing tooltip can be customized using the [`TooltipSettings.Editin
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/editingTemplate/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/editingTemplate/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="EditingTemplate.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/editingTemplate/editingTemplate.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/editingTemplate/editingTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -376,15 +369,13 @@ The taskbar editing tooltip can be customized using the [`TooltipSettings.Editin
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/editingTemplate/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/editingTemplate/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="EditingTemplate.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/editingTemplate/editingTemplate.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/tooltip/editingTemplate/editingTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 The below screenshot shows the output of above code example.
 

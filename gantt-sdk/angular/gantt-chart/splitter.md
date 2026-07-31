@@ -20,25 +20,26 @@ The following example sets a percentage-based splitter position. This configurat
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/appearance-customization/changesplitter/initial-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/appearance-customization/changesplitter/initial-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/appearance-customization/changesplitter/initial-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/appearance-customization/changesplitter/initial-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/appearance-customization/changesplitter/initial-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/appearance-customization/changesplitter/initial-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/appearance-customization/changesplitter/initial-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/appearance-customization/changesplitter/initial-cs1" %}
 
 > If both [position](https://ej2.syncfusion.com/angular/documentation/api/gantt/splitterSettings#position) and [columnIndex](https://ej2.syncfusion.com/angular/documentation/api/gantt/splitterSettings#columnindex) are defined in [splitterSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/splitterSettings), only `position` is applied because it takes precedence over `columnIndex`.
 
 ## Configure view modes
 
 Set predefined view modes with [splitterSettings.view](https://ej2.syncfusion.com/angular/documentation/api/gantt/splitterSettings#view):
+
 - **Default**: Displays both TreeGrid and Chart panels.
 - **Grid**: Shows only the TreeGrid panel for data-focused views.
 - **Chart**: Shows only the Chart panel for timeline visualization.
@@ -104,6 +105,7 @@ export class AppComponent implements OnInit {
     }
 }
 ```
+
 ![Splitter view](images/splitter-view.gif)
 
 ## Adjust splitter position dynamically
@@ -114,15 +116,15 @@ The following example adjusts the splitter dynamically:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/appearance-customization/changesplitter/dynamic-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/appearance-customization/changesplitter/dynamic-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/appearance-customization/changesplitter/dynamic-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/appearance-customization/changesplitter/dynamic-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/appearance-customization/changesplitter/dynamic-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/appearance-customization/changesplitter/dynamic-cs1" %}
 
 ## Customize splitter appearance
 
@@ -259,6 +261,7 @@ export class AppComponent implements OnInit {
 ```
 
 ## See also
+
 - [How to configure Gantt columns?](https://ej2.syncfusion.com/angular/documentation/gantt/columns)
 - [How to customize the timeline?](https://ej2.syncfusion.com/angular/documentation/gantt/timeline)
 - [How to handle scrolling?](https://ej2.syncfusion.com/angular/documentation/gantt/scrolling)

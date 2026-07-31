@@ -15,6 +15,7 @@ Task labels in the [React Gantt Chart](https://www.syncfusion.com/react-componen
 ## Configure task labels
 
 Task labels are configured using the [labelSettings](https://ej2.syncfusion.com/react/documentation/api/gantt/labelSettings) property, mapping fields from the data source defined in [taskFields](https://ej2.syncfusion.com/react/documentation/api/gantt#taskfields) (e.g., id to TaskID, name to TaskName). The component supports three label positions with specific use cases:
+
 - [leftLabel](https://ej2.syncfusion.com/react/documentation/api/gantt/labelSettingsModel#leftlabel): Displays content like task names or resource assignments to the left of taskbars, ideal for identifiers.
 - [rightLabel](https://ej2.syncfusion.com/react/documentation/api/gantt/labelSettingsModel#rightlabel): Shows metrics like progress percentages or durations to the right, suitable for completion data.
 - [taskLabel](https://ej2.syncfusion.com/react/documentation/api/gantt/labelSettingsModel#tasklabel): Overlays content like task titles or progress on taskbars, prominent but limited by taskbar width.
@@ -50,17 +51,17 @@ For advanced scenarios, you can create custom label templates that provide compl
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/customization1-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/customization1-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/customization1-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/customization1-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/customization1-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/customization1-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/customization1-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/customization1-cs1" %}
 
 This code creates a left label with priority-based icons (e.g., red for high priority) and a right label with a progress bar, improving visual feedback. For responsive designs, ensure templates adapt to narrow screens, as task labels may be clipped on short taskbars.
 
@@ -69,6 +70,7 @@ This code creates a left label with priority-based icons (e.g., red for high pri
 Create templates that show different content based on task properties:
 
 {% raw %}
+
 ```typescript
 // Left label template with conditional logic.
 const leftLabelTemplate = (props: any) => {
@@ -105,6 +107,7 @@ const leftLabelTemplate = (props: any) => {
     rightLabel: rightLabelTemplate,
   };
 ```
+
 {% endraw %}
 
 **Rich content labels with multiple data points:**
@@ -157,7 +160,9 @@ const labelSettings = {
     taskLabel: taskLabelTemplate
 };
 ```
+
 ## See also
+
 - [How to customize taskbars?](https://ej2.syncfusion.com/react/documentation/gantt/taskbar)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/react/documentation/gantt/task-dependency)
 - [How to configure critical path?](https://ej2.syncfusion.com/react/documentation/gantt/critical-path)

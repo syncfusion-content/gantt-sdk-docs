@@ -21,17 +21,17 @@ To manually define columns in the Gantt Chart component, use `e-columns` and set
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/column-rendering-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/column-rendering-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/column-rendering-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/column-rendering-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/column-rendering-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/column-rendering-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/column-rendering-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/column-rendering-cs1" %}
 
 ## Auto generated columns
 
@@ -39,17 +39,17 @@ The Gantt Chart component automatically generates columns when the [columns](htt
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/column-rendering-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/column-rendering-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/column-rendering-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/column-rendering-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/column-rendering-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/column-rendering-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/column-rendering-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/column-rendering-cs2" %}
 
 ## Dynamic column generation
 
@@ -66,17 +66,17 @@ In the following example, `percentageFormatter` returns the progress value with 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/column-rendering-cs3/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/column-rendering-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/column-rendering-cs3/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/column-rendering-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/column-rendering-cs3/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/column-rendering-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/column-rendering-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/column-rendering-cs3" %}
 
 > The `valueAccessor` function may impact performance when used with large datasets or complex logic. To improve rendering speed, enable the virtualization feature so that only visible rows are processed and displayed.
 
@@ -88,17 +88,17 @@ In the following example, the **Name** column shows the combined value of **Firs
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/column-rendering-cs4/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/column-rendering-cs4/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/column-rendering-cs4/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/column-rendering-cs4/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/column-rendering-cs4/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/column-rendering-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/column-rendering-cs4" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/column-rendering-cs4" %}
 
 > Since customized values are displayed in the **Name** column, data operations, such as sorting and filtering, cannot be performed for this column.
 
@@ -110,17 +110,17 @@ In the following example, the chart includes columns like **TaskID**, **TaskName
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/column-rendering-cs5/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/column-rendering-cs5/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/column-rendering-cs5/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/column-rendering-cs5/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/column-rendering-cs5/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/column-rendering-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/column-rendering-cs5" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/column-rendering-cs5" %}
 
 > Since custom values are displayed in the **Total Price** column, operations like sorting and filtering are not supported for this column.
 
@@ -130,16 +130,16 @@ You can display serial numbers for each row in the Gantt Chart component using t
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/column-rendering-cs6/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/column-rendering-cs6/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/column-rendering-cs6/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/column-rendering-cs6/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/column-rendering-cs6/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/column-rendering-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/column-rendering-cs6" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/column-rendering-cs6" %}
 
 > Since custom values are displayed in the **S.No** column, data operations such as sorting and filtering are not supported for this column.

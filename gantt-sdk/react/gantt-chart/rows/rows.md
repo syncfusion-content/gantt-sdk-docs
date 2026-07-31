@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 Each row typically represents a single record or item from a data source. Rows in a Gantt chart are used to present data in both tabular and timeline chart formats. Each row displays a set of values representing the fields of an individual data record. Rows allow you to interact with the data in the Gantt chart. You can select rows, edit cell values, perform taskbar editing in the chart side of the Gantt, perform sorting or filtering operations, and trigger events based on actions.
 
-## Customize row styles 
+## Customize row styles
 
 Customizing row styles in the Syncfusion<sup style="font-size:70%">&reg;</sup> React Gantt chart allows you to modify the appearance of rows to meet design requirements, such as highlighting specific rows or adjusting font styles, background colors, and other visual properties. This can be achieved using CSS, built-in properties, methods, or event support provided by the component, offering flexibility for both static and dynamic styling.
 
@@ -24,19 +24,19 @@ The following example demonstrates how to customize row styles based on the valu
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/rows-cs21/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/rows-cs21/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/rows-cs21/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/rows-cs21/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/rows-cs21/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/rows-cs21/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/rows-cs21" %}
 
->* The [queryCellInfo](https://ej2.syncfusion.com/react/documentation/api/gantt#querycellinfo) event can also be used to customize grid cells and is triggered for every cell in the grid part of the gantt chart. It can be useful when you need to customize cells based on certain conditions or criteria. 
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/rows-cs21" %}
+
+> - The [queryCellInfo](https://ej2.syncfusion.com/react/documentation/api/gantt#querycellinfo) event can also be used to customize grid cells and is triggered for every cell in the grid part of the gantt chart. It can be useful when you need to customize cells based on certain conditions or criteria.
 
 ### Using CSS
 
@@ -47,9 +47,10 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> React Gantt chart allows ro
 To highlight the currently selected row, you can override the default styles applied by the Gantt chart. The following CSS classes are used by default:
 
 ```css
- .e-gantt .e-selectionbackground, .e-gantt .e-active  {
-    background-color: #f9920b !important;
-  }
+.e-gantt .e-selectionbackground,
+.e-gantt .e-active {
+  background-color: #f9920b !important;
+}
 ```
 
 **Alternate row customization:**
@@ -58,26 +59,25 @@ To create a visual separation between consecutive rows, you can style alternate 
 
 ```css
 .e-grid .e-altrow {
-    background-color: #fafafa;
+  background-color: #fafafa;
 }
-
 ```
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/rows-cs13/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/rows-cs13/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/rows-cs13/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/rows-cs13/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/rows-cs13/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/rows-cs13/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/rows-cs13" %}
 
-### Using method 
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/rows-cs13" %}
+
+### Using method
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> React Gantt Chart component provides methods to customize the appearance of rows in both the grid and chart sections. These methods are accessible through the `treeGrid` object and the Gantt instance.
 
@@ -98,17 +98,17 @@ The following example demonstrates how to use the `getRowByIndex` method of the 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/rows-cs14/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/rows-cs14/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/rows-cs14/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/rows-cs14/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/rows-cs14/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/rows-cs14/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/rows-cs14" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/rows-cs14" %}
 
 ## Styling parent and child rows
 
@@ -116,35 +116,35 @@ You can customize the styling of parent and child rows in the Syncfusion<sup sty
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/rows-cs15/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/rows-cs15/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/rows-cs15/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/rows-cs15/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/rows-cs15/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/rows-cs15/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/rows-cs15" %}
 
-## Auto focus taskbar on row click 
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/rows-cs15" %}
+
+## Auto focus taskbar on row click
 
 You can enable automatic scrolling to the corresponding taskbar in the timeline when a row is clicked in the Syncfusion<sup style="font-size:70%">&reg;</sup> React Gantt chart by using the [autofocustasks](https://ej2.syncfusion.com/react/documentation/api/gantt#autofocustasks) property. This feature ensures that the selected task is brought into view within the timeline area, improving navigation and focus during interaction.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/rows-cs16/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/rows-cs16/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/rows-cs16/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/rows-cs16/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/rows-cs16/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/rows-cs16/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/rows-cs16" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/rows-cs16" %}
 
 ## Row height
 
@@ -152,22 +152,22 @@ You can customize row height in the Syncfusion<sup style="font-size:70%">&reg;</
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/rows-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/rows-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/rows-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/rows-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/rows-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/rows-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/rows-cs1" %}
 
->*	The `rowHeight` property can only be used to set the height of the entire gantt row. It cannot be used to set the height of individual cells within a row.
->*  The `rowHeight` property applies the height to all rows in the gantt chart, including the header rows.
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/rows-cs1" %}
 
-### Customize row height for particular row 
+> - The `rowHeight` property can only be used to set the height of the entire gantt row. It cannot be used to set the height of individual cells within a row.
+> - The `rowHeight` property applies the height to all rows in the gantt chart, including the header rows.
+
+### Customize row height for particular row
 
 You can customize the height of a specific row in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart using the [rowDataBound](https://ej2.syncfusion.com/react/documentation/gantt/events#rowdatabound) event. Within this event, conditionally apply a height value to the [rowHeight](https://ej2.syncfusion.com/react/documentation/api/gantt#rowheight) property for rows based on their data.
 
@@ -175,20 +175,20 @@ In the example below, the row height is set to **90px** for the row where **Task
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/rows-cs17/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/rows-cs17/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/rows-cs17/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/rows-cs17/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/rows-cs17/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/rows-cs17/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/rows-cs17" %}
 
->* In virtual scrolling mode, it is not applicable to set different row heights.
->* You can customize the row height of multiple rows by checking the relevant criteria in the [dataBound](https://ej2.syncfusion.com/react/documentation/gantt/events#databound) event and setting the `rowHeight` property accordingly.
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/rows-cs17" %}
+
+> - In virtual scrolling mode, it is not applicable to set different row heights.
+> - You can customize the row height of multiple rows by checking the relevant criteria in the [dataBound](https://ej2.syncfusion.com/react/documentation/gantt/events#databound) event and setting the `rowHeight` property accordingly.
 
 ## Row hover with custom action or items
 
@@ -198,50 +198,50 @@ The following demonstrates how to implement a custom action using the `dataBound
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/rows-cs18/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/rows-cs18/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/rows-cs18/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/rows-cs18/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/rows-cs18/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/rows-cs18/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/rows-cs18" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/rows-cs18" %}
 
 ## Adding a new row programmatically
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart allows adding a new row programmatically using the `addRecord` method. This is useful when you want to insert a record without manually entering data. The method accepts three parameters:
 
-- A **data object** representing the new row  
-- A **newRowPosition**, which controls where the row is inserted based on the `newRowPosition` property.  
-- An **index** to specify the insertion position; if not provided, the new row will be added at the top of the Gantt chart by default.  
+- A **data object** representing the new row
+- A **newRowPosition**, which controls where the row is inserted based on the `newRowPosition` property.
+- An **index** to specify the insertion position; if not provided, the new row will be added at the top of the Gantt chart by default.
 
 Supported `newRowPosition` values:
 
-  - **Top**: Adds the row at the beginning of the chart.
-  - **Bottom**: Adds the row at the end of the chart.
-  - **Above**: Inserts the row above a specified target row.
-  - **Below**: Inserts the row below a specified target row.
-  - **Child**: Adds the row as a child under a specified parent row, enabling hierarchical structure.
+- **Top**: Adds the row at the beginning of the chart.
+- **Bottom**: Adds the row at the end of the chart.
+- **Above**: Inserts the row above a specified target row.
+- **Below**: Inserts the row below a specified target row.
+- **Child**: Adds the row as a child under a specified parent row, enabling hierarchical structure.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/rows-cs19/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/rows-cs19/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/rows-cs19/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/rows-cs19/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/rows-cs19/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/rows-cs19/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/rows-cs19" %}
 
->* If you want to add a new record to the beginning of the data source, you can pass **0** as the third parameter to the [addRecord](https://ej2.syncfusion.com/react/documentation/api/gantt#addrecord) method.
->* If you do not specify an index, the new row will be added at the top of the gantt.
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/rows-cs19" %}
+
+> - If you want to add a new record to the beginning of the data source, you can pass **0** as the third parameter to the [addRecord](https://ej2.syncfusion.com/react/documentation/api/gantt#addrecord) method.
+> - If you do not specify an index, the new row will be added at the top of the gantt.
 
 ## Show or hide a row using an external actions
 
@@ -251,17 +251,17 @@ In this example, the `onCheckBoxChange` method checks the checkbox state and use
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/rows-cs20/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/rows-cs20/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/rows-cs20/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/rows-cs20/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/rows-cs20/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/rows-cs20/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/rows-cs20" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/rows-cs20" %}
 
 ## How to get the row data and element
 
@@ -269,42 +269,44 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart provides severa
 
 1. `getRowByIndex`: Returns the grid row element at a specific index.
 
-    ```ts
-    const rowElement = gantt.treeGrid.getRowByIndex(rowIndex);
-    ```
+   ```ts
+   const rowElement = gantt.treeGrid.getRowByIndex(rowIndex);
+   ```
 
 2. `getRowInfo`: Retrieves row data using a target cell element.
 
-    ```ts
-    const rowInformation = gantt.treeGrid.getRowInfo(targetElement);
-    ```
+   ```ts
+   const rowInformation = gantt.treeGrid.getRowInfo(targetElement);
+   ```
 
 3. `getRows`: Returns all grid row elements.
 
-    ```ts
-     const rowElements = gantt.treeGrid.getRows();
-    ```
+   ```ts
+   const rowElements = gantt.treeGrid.getRows();
+   ```
 
 4. `getSelectedRowIndexes`: Provides selected row indexes.
 
-    ```ts
-    const selectedIndexes = gantt.treeGrid.getSelectedRowIndexes();
-    ```
+   ```ts
+   const selectedIndexes = gantt.treeGrid.getSelectedRowIndexes();
+   ```
+
 5. [getSelectedRows](https://ej2.syncfusion.com/documentation/api/treegrid#getselectedrows): Returns selected row elements.
 
-    ```ts
-    const selectedRowElements = gantt.treeGrid.getSelectedRows();
-    ```
+   ```ts
+   const selectedRowElements = gantt.treeGrid.getSelectedRows();
+   ```
+
 6. `getRowByIndex`: Retrieves the chart row element at a specific index.
 
-    ```ts
-     const rowElement = gantt.getRowByIndex(rowIndex);
-    ```
+   ```ts
+   const rowElement = gantt.getRowByIndex(rowIndex);
+   ```
 
 ## See Also
 
-* [Render parent rows in collapsed state](https://ej2.syncfusion.com/react/documentation/gantt/columns/treecolumn#render-parent-rows-in-collapsed-state)  
-* [Retain expanded and collapsed state](https://ej2.syncfusion.com/react/documentation/gantt/columns/treecolumn#retain-expanded-and-collapsed-state) 
-* [Persist expanded collapsed state on page refresh using localStorage](https://ej2.syncfusion.com/react/documentation/gantt/columns/treecolumn#persist-expanded-and-collapsed-state-on-page-refresh-using-localstorage)
-* [Programmatically expand and collapse a row](https://ej2.syncfusion.com/react/documentation/gantt/columns/treecolumn#programmatically-expand-and-collapse-a-row)
-* [Expand and Collapse action events](https://ej2.syncfusion.com/react/documentation/gantt/columns/treecolumn#expand-and-collapse-action-events)
+- [Render parent rows in collapsed state](https://ej2.syncfusion.com/react/documentation/gantt/columns/treecolumn#render-parent-rows-in-collapsed-state)
+- [Retain expanded and collapsed state](https://ej2.syncfusion.com/react/documentation/gantt/columns/treecolumn#retain-expanded-and-collapsed-state)
+- [Persist expanded collapsed state on page refresh using localStorage](https://ej2.syncfusion.com/react/documentation/gantt/columns/treecolumn#persist-expanded-and-collapsed-state-on-page-refresh-using-localstorage)
+- [Programmatically expand and collapse a row](https://ej2.syncfusion.com/react/documentation/gantt/columns/treecolumn#programmatically-expand-and-collapse-a-row)
+- [Expand and Collapse action events](https://ej2.syncfusion.com/react/documentation/gantt/columns/treecolumn#expand-and-collapse-action-events)

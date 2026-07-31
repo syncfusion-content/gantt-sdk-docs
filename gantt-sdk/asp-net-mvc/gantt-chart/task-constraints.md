@@ -17,6 +17,7 @@ Task constraints define rules that control when a task is allowed to start or fi
 ## Benefits of using task constraints
 
 Task constraints help guide the schedule of each task by applying real-world rules. They serve critical planning purposes and offer the following benefits:
+
 - **Enforce Task Logic**: Ensure tasks follow a defined sequence, especially when one cannot begin until another ends.
 - **Align with Milestones**: Anchor key tasks to fixed dates such as launches, reviews, or audits.
 - **Avoid Resource Conflicts**: Prevent tasks from overlapping when they rely on the same resources or teams.
@@ -28,16 +29,16 @@ Task constraints help guide the schedule of each task by applying real-world rul
 
 ## Understanding task constraint types
 
-| Constraint Type | Description | Example Use Case |
-|------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| **As Soon As Possible (ASAP)** | Starts the task immediately once its dependencies are cleared. | Begin development as soon as design is approved. |
-| **As Late As Possible (ALAP)** | Delays the task until the last possible moment without affecting successors. | Apply polish to UI just before release to use the latest assets. |
-| **Must Start On (MSO)** | Requires the task to begin on a fixed, non-negotiable date. | Partner company begins integration on July 1st per contract. |
-| **Must Finish On (MFO)** | Requires the task to end on a fixed date, regardless of its dependencies. | Submit compliance documentation by March 31 due to government regulations. |
-| **Start No Earlier Than (SNET)** | Prevents a task from starting before a certain date. | A campaign cannot begin until regulatory approval on August 15. |
-| **Start No Later Than (SNLT)** | Requires a task to start on or before a given date. | Financial reviews must begin by September 1 to meet reporting cycles. |
-| **Finish No Earlier Than (FNET)** | Ensures the task does not finish before a certain date. | Training can’t end before all participants have completed onboarding. |
-| **Finish No Later Than (FNLT)** | Ensures task completion on or before a specific date. | QA testing must be done by July 25 to meet release deadlines. |
+| Constraint Type                   | Description                                                                  | Example Use Case                                                           |
+| --------------------------------- | ---------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| **As Soon As Possible (ASAP)**    | Starts the task immediately once its dependencies are cleared.               | Begin development as soon as design is approved.                           |
+| **As Late As Possible (ALAP)**    | Delays the task until the last possible moment without affecting successors. | Apply polish to UI just before release to use the latest assets.           |
+| **Must Start On (MSO)**           | Requires the task to begin on a fixed, non-negotiable date.                  | Partner company begins integration on July 1st per contract.               |
+| **Must Finish On (MFO)**          | Requires the task to end on a fixed date, regardless of its dependencies.    | Submit compliance documentation by March 31 due to government regulations. |
+| **Start No Earlier Than (SNET)**  | Prevents a task from starting before a certain date.                         | A campaign cannot begin until regulatory approval on August 15.            |
+| **Start No Later Than (SNLT)**    | Requires a task to start on or before a given date.                          | Financial reviews must begin by September 1 to meet reporting cycles.      |
+| **Finish No Earlier Than (FNET)** | Ensures the task does not finish before a certain date.                      | Training can’t end before all participants have completed onboarding.      |
+| **Finish No Later Than (FNLT)**   | Ensures task completion on or before a specific date.                        | QA testing must be done by July 25 to meet release deadlines.              |
 
 ---
 
@@ -51,6 +52,7 @@ In your Gantt component configuration, map the following fields:
 
 {% if page.publishingplatform == "aspnet-core" %}
 {% raw %}
+
 ```cshtml
 TaskFields.Id = "taskId"
 TaskFields.Name = "taskName"
@@ -59,10 +61,12 @@ TaskFields.EndDate = "endDate"
 TaskFields.ConstraintType = "constraintType" // Specifies the type of constraint (e.g., 2 for MustStartOn)
 TaskFields.ConstraintDate = "constraintDate" // Specifies the relevant date for the constraint
 ```
+
 {% endraw %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% raw %}
+
 ```cshtml
 TaskFields.Id = "taskId"
 TaskFields.Name = "taskName"
@@ -71,6 +75,7 @@ TaskFields.EndDate = "endDate"
 TaskFields.ConstraintType = "constraintType" // Specifies the type of constraint (e.g., 2 for MustStartOn)
 TaskFields.ConstraintDate = "constraintDate" // Specifies the relevant date for the constraint
 ```
+
 {% endraw %}
 {% endif %}
 
@@ -98,10 +103,10 @@ This task is constrained to must start on July 1, 2025.
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/task-scheduling/task-constraints-cs1/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/task-scheduling/task-constraints-cs1/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Constraints.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/task-scheduling/task-constraints-cs1/constraints.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/task-scheduling/task-constraints-cs1/constraints.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -109,10 +114,10 @@ This task is constrained to must start on July 1, 2025.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/task-scheduling/task-constraints-cs1/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/task-scheduling/task-constraints-cs1/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Constraints.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/task-scheduling/task-constraints-cs1/constraints.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/task-scheduling/task-constraints-cs1/constraints.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -120,6 +125,7 @@ This task is constrained to must start on July 1, 2025.
 ### Managing scheduling conflicts due to constraint violations
 
 When scheduling changes conflict with applied constraints, the Gantt component shows a violation popup to alert users. This validation applies specifically to strict constraint types:
+
 - MustStartOn
 - MustFinishOn
 - StartNoLaterThan
@@ -131,23 +137,25 @@ You can intercept constraint violations using the `ActionBegin` event. When the 
 
 ##### Supported flags
 
-| Flag | Description |
-|-----------------------------|--------------------------------------------------------------|
-| RespectMustStartOn | If true, silently rejects violations of MustStartOn. |
-| RespectMustFinishOn | If true, silently cancels changes violating MustFinishOn. |
-| RespectStartNoLaterThan | If true, blocks updates violating StartNoLaterThan. |
-| RespectFinishNoLaterThan | If true, blocks changes violating FinishNoLaterThan. |
+| Flag                     | Description                                               |
+| ------------------------ | --------------------------------------------------------- |
+| RespectMustStartOn       | If true, silently rejects violations of MustStartOn.      |
+| RespectMustFinishOn      | If true, silently cancels changes violating MustFinishOn. |
+| RespectStartNoLaterThan  | If true, blocks updates violating StartNoLaterThan.       |
+| RespectFinishNoLaterThan | If true, blocks changes violating FinishNoLaterThan.      |
 
 > **Defaults**: All flags default to `false`, meaning violations show a popup. Setting a flag to `true` enables silent
 
- enforcement (i.e., the user’s update is canceled without interruption).
+enforcement (i.e., the user’s update is canceled without interruption).
 
 #### Example setup
 
 {% if page.publishingplatform == "aspnet-core" %}
+
 ```cshtml
 ActionBegin="ActionBeginHandler"
 ```
+
 ```c#
 public void ActionBeginHandler(Syncfusion.EJ2.Gantt.GanttActionEventArgs args)
 {
@@ -163,10 +171,13 @@ public void ActionBeginHandler(Syncfusion.EJ2.Gantt.GanttActionEventArgs args)
     }
 }
 ```
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
 ```cshtml
 ActionBegin="ActionBeginHandler"
 ```
+
 ```c#
 public void ActionBeginHandler(Syncfusion.EJ2.Gantt.GanttActionEventArgs args)
 {
@@ -182,6 +193,7 @@ public void ActionBeginHandler(Syncfusion.EJ2.Gantt.GanttActionEventArgs args)
     }
 }
 ```
+
 {% endif %}
 
 In the following example, we have **disabled the `MustStartOn` violation popup** by setting `RespectMustStartOn` to `true`.
@@ -189,10 +201,10 @@ In the following example, we have **disabled the `MustStartOn` violation popup**
 {% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/task-scheduling/task-constraints-cs2/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/task-scheduling/task-constraints-cs2/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ConstraintsPopup.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/task-scheduling/task-constraints-cs2/constraintsPopup.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/task-scheduling/task-constraints-cs2/constraintsPopup.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -200,10 +212,10 @@ In the following example, we have **disabled the `MustStartOn` violation popup**
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/task-scheduling/task-constraints-cs2/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/task-scheduling/task-constraints-cs2/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ConstraintsPopup.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/task-scheduling/task-constraints-cs2/constraintsPopup.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/task-scheduling/task-constraints-cs2/constraintsPopup.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

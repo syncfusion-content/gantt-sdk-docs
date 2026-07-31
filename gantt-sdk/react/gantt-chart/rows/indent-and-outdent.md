@@ -3,7 +3,7 @@ layout: post
 title: Indent and Outdent in React Gantt Chart Component | Syncfusion
 description: Learn how to use Indent and Outdent features in the Syncfusion React Gantt Chart component to manage task hierarchy effectively.
 platform: gantt-sdk
-control: Indent and outdent 
+control: Indent and outdent
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -12,8 +12,8 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component provides built-in support for indenting and outdenting rows, allowing hierarchy levels to be adjusted within the Gantt chart.
 
- * **Indent** – Moves a selected row one level deeper, making it the last child of its previous row.
- * **Outdent** – Shifts a row one level up, placing it as a sibling to its parent.
+- **Indent** – Moves a selected row one level deeper, making it the last child of its previous row.
+- **Outdent** – Shifts a row one level up, placing it as a sibling to its parent.
 
 To enable indent and outdent functionality, set [editSettings.allowEditing](https://ej2.syncfusion.com/react/documentation/api/gantt/editSettings#allowediting) to **true**, inject `Edit` and `Selection` in the Gantt Chart component, and use either the **built-in context menu** or [toolbaritems](https://ej2.syncfusion.com/react/documentation/api/gantt/toolbarItem/) to perform indent and outdent actions.
 
@@ -21,17 +21,17 @@ The following sample demonstrates how to enable indent and outdent functionaliti
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/indent-outdent-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/indent-outdent-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/indent-outdent-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/indent-outdent-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/indent-outdent-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/indent-outdent-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/indent-outdent-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/indent-outdent-cs1" %}
 
 ## Indent and outdent a row programmatically
 
@@ -41,17 +41,17 @@ The following sample demonstrates how to programmatically select row index **2**
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/indent-outdent-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/indent-outdent-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/indent-outdent-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/indent-outdent-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/indent-outdent-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/indent-outdent-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/indent-outdent-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/indent-outdent-cs2" %}
 
 ## Retrieve Indent and outdent details
 
@@ -59,18 +59,18 @@ You can retrieve indent and outdent details using the [actionComplete](https://e
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/indent-outdent-cs3/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/indent-outdent-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/indent-outdent-cs3/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/indent-outdent-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/indent-outdent-cs3/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/indent-outdent-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/indent-outdent-cs3" %}
 
-## Limitation 
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/indent-outdent-cs3" %}
 
-* The indent and outdent feature does not support selecting and modifying multiple rows simultaneously.
+## Limitation
+
+- The indent and outdent feature does not support selecting and modifying multiple rows simultaneously.

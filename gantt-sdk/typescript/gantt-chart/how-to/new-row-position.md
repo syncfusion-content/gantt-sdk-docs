@@ -3,7 +3,7 @@ layout: post
 title: New row position in TypeScript Gantt control | Syncfusion
 description: Learn here all about New row position in Syncfusion TypeScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: New row position 
+control: New row position
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -19,25 +19,25 @@ The following code snippets demonstrate how to achieve this.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/newrowposition-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/newrowposition-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/newrowposition-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/newrowposition-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/newrowposition-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/newrowposition-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/newrowposition-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/newrowposition-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/newrowposition-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/newrowposition-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/newrowposition-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/newrowposition-cs1" %}
 {% endif %}

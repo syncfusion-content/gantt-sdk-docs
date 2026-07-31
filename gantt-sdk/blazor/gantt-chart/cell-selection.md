@@ -20,7 +20,6 @@ Single cell selection in the Gantt chart is enabled by setting [GanttSelectionSe
 
 @using Syncfusion.Blazor.Gantt
 
-
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="700px">
     <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
     </GanttTaskFields>
@@ -28,7 +27,7 @@ Single cell selection in the Gantt chart is enabled by setting [GanttSelectionSe
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
+public List<TaskData>? TaskCollection { get; set; }
 
     protected override void OnInitialized()
     {
@@ -61,13 +60,14 @@ Single cell selection in the Gantt chart is enabled by setting [GanttSelectionSe
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
 {% endtabs %}
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/VthxNmMQJdOQATuu?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
-  
+
 ## Multiple cell selection
 
 Multiple cell selection in the Gantt Chart is enabled by setting [GanttSelectionSettings.Mode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html#Syncfusion_Blazor_Gantt_GanttSelectionSettings_Mode) to **Cell** and [GanttSelectionSettings.Type](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html#Syncfusion_Blazor_Gantt_GanttSelectionSettings_Type) to **Multiple**. This allows selecting multiple cells at a time by holding the <kbd>Ctrl</kbd> key while clicking on each desired cell.
@@ -85,7 +85,7 @@ Multiple cell selection in the Gantt Chart is enabled by setting [GanttSelection
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
+public List<TaskData>? TaskCollection { get; set; }
 
     protected override void OnInitialized()
     {
@@ -118,17 +118,18 @@ Multiple cell selection in the Gantt Chart is enabled by setting [GanttSelection
         };
         return Tasks;
     }
+
 }
 {% endhighlight %}
 {% endtabs %}
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/VZLntQicTQXDLumT?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
-  
+
 > **Note**: Multiple cell selection requires <kbd>Ctrl</kbd> + click on Windows or <kbd>Cmd</kbd> + click on Mac. Ensure selections are visible on smaller screens for mobile responsiveness.
 
 ## Single cell selection dynamically
 
-Select a specific cell in the Gantt Chart by calling the  [SelectCellAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_SelectCellAsync_System_ValueTuple_System_Int32_System_Int32__System_Nullable_System_Boolean__) method and providing the desired row and column indexes as arguments.
+Select a specific cell in the Gantt Chart by calling the [SelectCellAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_SelectCellAsync_System_ValueTuple_System_Int32_System_Int32__System_Nullable_System_Boolean__) method and providing the desired row and column indexes as arguments.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -139,13 +140,13 @@ Select a specific cell in the Gantt Chart by calling the  [SelectCellAsync](http
 
 <SfButton Content="Select Cell" OnClick="SelectCellAsync"></SfButton>
 <SfGantt @ref="Gantt" DataSource="@TaskCollection" Height="450px" Width="700px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttSelectionSettings Mode="Syncfusion.Blazor.Grids.SelectionMode.Cell"></GanttSelectionSettings>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
+</GanttTaskFields>
+<GanttSelectionSettings Mode="Syncfusion.Blazor.Grids.SelectionMode.Cell"></GanttSelectionSettings>
 </SfGantt>
 
 @code {
-    public SfGantt<TaskData>? Gantt;
+public SfGantt<TaskData>? Gantt;
 
     public async Task SelectCellAsync()
     {
@@ -153,7 +154,7 @@ Select a specific cell in the Gantt Chart by calling the  [SelectCellAsync](http
         {
             await Gantt.SelectCellAsync(new ValueTuple<int, int>(1, 2));
         }
-        
+
     }
 
     public List<TaskData>? TaskCollection { get; set; }
@@ -189,6 +190,7 @@ Select a specific cell in the Gantt Chart by calling the  [SelectCellAsync](http
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -198,9 +200,9 @@ Select a specific cell in the Gantt Chart by calling the  [SelectCellAsync](http
 
 ## Customize cell selection action
 
-You may customize cell selection behavior in the Gantt Chart using [CellSelecting](https://blazor.syncfusion.com/documentation/gantt-chart/events#cellselecting), [CellSelected](https://blazor.syncfusion.com/documentation/gantt-chart/events#cellselected), [CellDeselecting](https://blazor.syncfusion.com/documentation/gantt-chart/events#celldeselecting), and [CellDeselected](https://blazor.syncfusion.com/documentation/gantt-chart/events#celldeselected) events.
+You may customize cell selection behavior in the Gantt Chart using [CellSelecting](https://blazor.syncfusion.com/documentation/gantt/events#cellselecting), [CellSelected](https://blazor.syncfusion.com/documentation/gantt/events#cellselected), [CellDeselecting](https://blazor.syncfusion.com/documentation/gantt/events#celldeselecting), and [CellDeselected](https://blazor.syncfusion.com/documentation/gantt/events#celldeselected) events.
 
-The following sample demonstrates selection is canceled in the `cellSelecting` event when the **TaskName** is **Perform Soil test**. 
+The following sample demonstrates selection is canceled in the `cellSelecting` event when the **TaskName** is **Perform Soil test**.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -210,20 +212,20 @@ The following sample demonstrates selection is canceled in the `cellSelecting` e
 
 @if (showMessage)
 {
-    <div style="margin-top:10px; font-weight:bold;color:red">@message</div>
+<div style="margin-top:10px; font-weight:bold;color:red">@message</div>
 }
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="700px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttSelectionSettings Mode="Syncfusion.Blazor.Grids.SelectionMode.Cell" Type="Syncfusion.Blazor.Grids.SelectionType.Multiple"></GanttSelectionSettings>
-    <GanttEvents TValue="TaskData" CellSelecting="CellSelectingAsync" CellSelected="CellSelectedAsync" CellDeselecting="CellDeselectingAsync" CellDeselected="CellDeselectedAsync">
-    </GanttEvents>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
+</GanttTaskFields>
+<GanttSelectionSettings Mode="Syncfusion.Blazor.Grids.SelectionMode.Cell" Type="Syncfusion.Blazor.Grids.SelectionType.Multiple"></GanttSelectionSettings>
+<GanttEvents TValue="TaskData" CellSelecting="CellSelectingAsync" CellSelected="CellSelectedAsync" CellDeselecting="CellDeselectingAsync" CellDeselected="CellDeselectedAsync">
+</GanttEvents>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    private string? message;
-    private bool showMessage;
+public List<TaskData>? TaskCollection { get; set; }
+private string? message;
+private bool showMessage;
 
     protected override void OnInitialized()
     {
@@ -292,6 +294,7 @@ The following sample demonstrates selection is canceled in the `cellSelecting` e
             new TaskData() { TaskId = 8, TaskName = "Estimation approval", StartDate = new DateTime(2026, 01, 06), Duration = "0", Progress = 30, ParentId = 5, }
         };
     }
+
 }
 
 {% endhighlight %}
@@ -303,6 +306,6 @@ The following sample demonstrates selection is canceled in the `cellSelecting` e
 
 ## See Also
 
-- [Accessibility in Blazor Gantt Chart](https://blazor.syncfusion.com/documentation/gantt-chart/accessibility)
+- [Accessibility in Blazor Gantt Chart](https://blazor.syncfusion.com/documentation/gantt/accessibility)
 - [Blazor Gantt Chart Feature Tour](https://www.syncfusion.com/blazor-components/blazor-gantt-chart)
-- [Blazor Gantt Chart Example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=bootstrap5)
+- [Blazor Gantt Chart Example](https://blazor.syncfusion.com/demos/gantt/default-functionalities?theme=bootstrap5)

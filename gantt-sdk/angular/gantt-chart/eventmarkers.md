@@ -3,7 +3,7 @@ layout: post
 title: Eventmarkers in Angular Gantt Chart Component | Syncfusion
 description: Learn here all about Eventmarkers in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Eventmarkers 
+control: Eventmarkers
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -40,19 +40,19 @@ The following implementation demonstrates event marker integration within a Gant
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/eventmarkers/default-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/eventmarkers/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/eventmarkers/default-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/eventmarkers/default-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/eventmarkers/default-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/eventmarkers/default-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/eventmarkers/default-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/eventmarkers/default-cs1" %}
 
 ## Programmatically show and hide event markers
 
@@ -60,17 +60,17 @@ You can programmatically show or hide event markers in the Gantt Chart by updati
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/eventmarkers/show-hide-eventmaker/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/eventmarkers/show-hide-eventmaker/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/eventmarkers/show-hide-eventmaker/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/eventmarkers/show-hide-eventmaker/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/eventmarkers/show-hide-eventmaker/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/eventmarkers/show-hide-eventmaker/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/eventmarkers/show-hide-eventmaker" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/eventmarkers/show-hide-eventmaker" %}
 
 ## See Also
 

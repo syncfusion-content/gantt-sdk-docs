@@ -3,7 +3,7 @@ layout: post
 title: Context Menu in Angular Gantt Chart Component | Syncfusion
 description: Learn here all about context menu in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Context menu 
+control: Context menu
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -38,15 +38,15 @@ The following example demonstrates context menu implementation with default item
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/contextmenu/default-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/contextmenu/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/contextmenu/default-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/contextmenu/default-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/contextmenu/default-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/contextmenu/default-cs1" %}
 
 > If a required feature is not enabled, the related context menu item will be disabled or hidden to prevent unsupported actions.
 
@@ -62,15 +62,15 @@ The following sample shows context menu items for parent rows to expand or colla
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/contextmenu/custom-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/contextmenu/custom-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/contextmenu/custom-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/contextmenu/custom-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/contextmenu/custom-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/contextmenu/custom-cs1" %}
 
 This implementation shows custom context menu integration with event handling. The `contextMenuClick` event receives parameters including the selected item's id, text, and the current row data, enabling specific actions based on the context.
 

@@ -3,7 +3,7 @@ layout: post
 title: Column Template in Angular Gantt Chart Component | Syncfusion
 description: Learn here all about column template in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Column template 
+control: Column template
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -28,26 +28,26 @@ import { GanttComponent, GanttModule, SplitterSettingsModel } from '@syncfusion/
 import { data, ProjectResources } from './data';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [GanttModule],
-  template: `
-        <ejs-gantt #gantt height="450px" rowHeight="60" [dataSource]="data" [taskFields]="taskSettings"
-    [resourceFields]="resourceFields" [resources]="resources" [splitterSettings]="splitterSettings">
-    <e-columns>
-        <e-column field="TaskID"></e-column>
-        <e-column field="resources" headerText="Resources" width="250" textAlign="Center">
-            <ng-template #template let-data>
-                <div class="image">
-                    <img [src]="'assets/images/' + data.TaskID + '.png'" style="height:42px;" />
-                </div>
-            </ng-template>
-        </e-column>
-        <e-column field="TaskName"></e-column>
-        <e-column field="StartDate"></e-column>
-        <e-column field="Duration"></e-column>
-        <e-column field="Progress"></e-column>
-    </e-columns>
+selector: 'app-root',
+standalone: true,
+imports: [GanttModule],
+template: `
+<ejs-gantt #gantt height="450px" rowHeight="60" [dataSource]="data" [taskFields]="taskSettings"
+[resourceFields]="resourceFields" [resources]="resources" [splitterSettings]="splitterSettings">
+<e-columns>
+<e-column field="TaskID"></e-column>
+<e-column field="resources" headerText="Resources" width="250" textAlign="Center">
+<ng-template #template let-data>
+<div class="image">
+<img [src]="'assets/images/' + data.TaskID + '.png'" style="height:42px;" />
+</div>
+</ng-template>
+</e-column>
+<e-column field="TaskName"></e-column>
+<e-column field="StartDate"></e-column>
+<e-column field="Duration"></e-column>
+<e-column field="Progress"></e-column>
+</e-columns>
 
 </ejs-gantt>
     `,
@@ -55,15 +55,15 @@ import { data, ProjectResources } from './data';
 })
 export class AppComponent implements OnInit {
 
-  @ViewChild('gantt') public gantt?: GanttComponent;
+@ViewChild('gantt') public gantt?: GanttComponent;
 
-  public data?: object[];
-  public resources?: object[];
-  public taskSettings?: object;
-  public resourceFields?: object;
-  public splitterSettings?: SplitterSettingsModel;
+public data?: object[];
+public resources?: object[];
+public taskSettings?: object;
+public resourceFields?: object;
+public splitterSettings?: SplitterSettingsModel;
 
-  ngOnInit(): void {
+ngOnInit(): void {
 
     this.data = data;
     this.resources = ProjectResources;
@@ -86,19 +86,20 @@ export class AppComponent implements OnInit {
     this.splitterSettings = {
       columnIndex: 7
     };
-  }
+
+}
 }
 {% endraw %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/column-template-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/column-template-cs1/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/column-template-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/column-template-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/column-template-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/column-template-cs1" %}
 
 > The [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#template) option allows to define any HTML content within a column.
 
@@ -119,11 +120,11 @@ import { GanttModule } from '@syncfusion/ej2-angular-gantt';
 import { GanttData } from './data';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [GanttModule],
-  encapsulation: ViewEncapsulation.None,
-  template: `
+selector: 'app-root',
+standalone: true,
+imports: [GanttModule],
+encapsulation: ViewEncapsulation.None,
+template: `
     <ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [treeColumnIndex]="1" [splitterSettings]="splitterSettings">
       <e-columns>
         <e-column field="TaskID" headerText="TaskID" width="90"></e-column>
@@ -141,46 +142,46 @@ import { GanttData } from './data';
 })
 
 export class AppComponent implements OnInit {
-  public data?: object[];
-  public taskSettings?: object;
-  public splitterSettings?: object;
+public data?: object[];
+public taskSettings?: object;
+public splitterSettings?: object;
 
-  ngOnInit(): void {
-    this.data = GanttData;
-    this.taskSettings = {
-      id: 'TaskID',
-      name: 'TaskName',
-      startDate: 'StartDate',
-      duration: 'Duration',
-      progress: 'Progress',
-      child: 'subtasks'
-    };
-    this.splitterSettings = {
-      position: '75%'
-    };
-  }
+ngOnInit(): void {
+this.data = GanttData;
+this.taskSettings = {
+id: 'TaskID',
+name: 'TaskName',
+startDate: 'StartDate',
+duration: 'Duration',
+progress: 'Progress',
+child: 'subtasks'
+};
+this.splitterSettings = {
+position: '75%'
+};
+}
 
-  public onClick(event: MouseEvent, taskName: string): void {
-    event.preventDefault(); // Prevent default anchor behavior.
-    const baseUrl = 'https://www.meaningofthename.com/';
-    const searchUrl = `${baseUrl}${encodeURIComponent(taskName)}`;
-    window.open(searchUrl, '_blank');
-  }
+public onClick(event: MouseEvent, taskName: string): void {
+event.preventDefault(); // Prevent default anchor behavior.
+const baseUrl = 'https://www.meaningofthename.com/';
+const searchUrl = `${baseUrl}${encodeURIComponent(taskName)}`;
+window.open(searchUrl, '\_blank');
+}
 }
 
 {% endraw %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/column-template-cs2/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/column-template-cs2/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/column-template-cs2/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/column-template-cs2/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/column-template-cs2" %}
 
->The `window.open()` method is a built-in JavaScript function that opens a new browser window or tab with the specified URL.
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/column-template-cs2" %}
+
+> The `window.open()` method is a built-in JavaScript function that opens a new browser window or tab with the specified URL.
 
 ## Render other components in a column
 
@@ -202,12 +203,12 @@ import { SparklineAllModule, Sparkline } from '@syncfusion/ej2-angular-charts';
 import { GanttData } from './data';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [GanttModule, SparklineAllModule],
-  providers: [ResizeService, SelectionService],
-  encapsulation: ViewEncapsulation.None,
-  template: `
+selector: 'app-root',
+standalone: true,
+imports: [GanttModule, SparklineAllModule],
+providers: [ResizeService, SelectionService],
+encapsulation: ViewEncapsulation.None,
+template: `
     <ejs-gantt #gantt height="430px"  [dataSource]="data" (created)="renderGridSparkline()"
         [taskFields]="taskSettings" [treeColumnIndex]='1'  [splitterSettings] = "splitterSettings">    
       <e-columns>
@@ -223,71 +224,71 @@ import { GanttData } from './data';
 })
 
 export class AppComponent implements OnInit {
-  @ViewChild('gantt') public ganttInstance?: GanttComponent;
-  public data = GanttData;
-  public taskSettings?: object;
-  public splitterSettings?: object;
-  public lineData: object[] = [
-    [0, 6, -4, 1, -3, 2, 5],
-    [5, -4, 6, 3, -1, 2, 0],
-    [6, 4, 0, 3, -2, 5, 1],
-    [4, -6, 3, 0, 1, -2, 5],
-    [3, 5, -6, -4, 0, 1, 2],
-    [1, -3, 4, -2, 5, 0, 6],
-    [2, 4, 0, -3, 5, -6, 1],
-    [5, 4, -6, 3, 1, -2, 0],
-    [0, -6, 4, 1, -3, 2, 5],
-    [6, 4, 0, -3, 2, -5, 1],
-  ];
+@ViewChild('gantt') public ganttInstance?: GanttComponent;
+public data = GanttData;
+public taskSettings?: object;
+public splitterSettings?: object;
+public lineData: object[] = [
+[0, 6, -4, 1, -3, 2, 5],
+[5, -4, 6, 3, -1, 2, 0],
+[6, 4, 0, 3, -2, 5, 1],
+[4, -6, 3, 0, 1, -2, 5],
+[3, 5, -6, -4, 0, 1, 2],
+[1, -3, 4, -2, 5, 0, 6],
+[2, 4, 0, -3, 5, -6, 1],
+[5, 4, -6, 3, 1, -2, 0],
+[0, -6, 4, 1, -3, 2, 5],
+[6, 4, 0, -3, 2, -5, 1],
+];
 
-  public ngOnInit(): void {
-    this.taskSettings = {
-      id: 'TaskID',
-      name: 'TaskName',
-      startDate: 'StartDate',
-      duration: 'Duration',
-      progress: 'Progress',
-      child: 'subtasks',
-      customData: 'customData'
-    };
-    this.splitterSettings = {
-      position: '75%'
-    };
-  }
+public ngOnInit(): void {
+this.taskSettings = {
+id: 'TaskID',
+name: 'TaskName',
+startDate: 'StartDate',
+duration: 'Duration',
+progress: 'Progress',
+child: 'subtasks',
+customData: 'customData'
+};
+this.splitterSettings = {
+position: '75%'
+};
+}
 
-  public getSparkData(type: string, count: number): number[] {
-    return this.lineData[count] as number[];
-  }
+public getSparkData(type: string, count: number): number[] {
+return this.lineData[count] as number[];
+}
 
-  public renderGridSparkline(): void {
-    setTimeout(() => {
-      const length = (this.ganttInstance as GanttComponent).treeGrid.getDataRows().length
-      for (let i: number = 1; i <= length; i++) {
-        let line: Sparkline = new Sparkline({
-          height: '50px',
-          width: '90%',
-          lineWidth: 2,
-          valueType: 'Numeric',
-          fill: '#3C78EF',
-          dataSource: this.getSparkData('line', i)
-        });
-        line.appendTo('#spkline' + i);
-      }
-    }, 100)
-  }
+public renderGridSparkline(): void {
+setTimeout(() => {
+const length = (this.ganttInstance as GanttComponent).treeGrid.getDataRows().length
+for (let i: number = 1; i <= length; i++) {
+let line: Sparkline = new Sparkline({
+height: '50px',
+width: '90%',
+lineWidth: 2,
+valueType: 'Numeric',
+fill: '#3C78EF',
+dataSource: this.getSparkData('line', i)
+});
+line.appendTo('#spkline' + i);
+}
+}, 100)
+}
 }
 
 {% endraw %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/column-template-cs9/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/column-template-cs9/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/column-template-cs9/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/column-template-cs9/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/column-template-cs9" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/column-template-cs9" %}
 
 ### Render ColorPicker component in a column
 
@@ -299,17 +300,17 @@ The following example demonstrates how to render a `ColorPicker` for the **Chang
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/column-template-cs3/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/column-template-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/column-template-cs3/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/column-template-cs3/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/column-template-cs3/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/column-template-cs3/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/column-template-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/column-template-cs3" %}
 
 ### Render DropDownList component in a column
 
@@ -319,17 +320,17 @@ The following example demonstrates how to render the [DropDownList](https://ej2.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/column-template-cs4/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/column-template-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/column-template-cs4/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/column-template-cs4/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/column-template-cs4/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/column-template-cs4/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/column-template-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/column-template-cs4" %}
 
 ### Render Chip component in a column
 
@@ -339,17 +340,17 @@ The following example demonstrates how to render the Chips component in the **Ta
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/column-template-cs5/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/column-template-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/column-template-cs5/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/column-template-cs5/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/column-template-cs5/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/column-template-cs5/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/column-template-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/column-template-cs5" %}
 
 ### Render RadioButton in a column
 
@@ -359,17 +360,17 @@ The following example demonstrates rendering `RadioButton` components in the **O
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/column-template-cs10/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/column-template-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/column-template-cs10/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/column-template-cs10/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/column-template-cs10/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/column-template-cs10/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/column-template-cs10" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/column-template-cs10" %}
 
 ## Using condition template
 
@@ -379,19 +380,19 @@ The following example demonstrates how to use the `template` property with the `
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/column-template-cs6/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/column-template-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/column-template-cs6/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/column-template-cs6/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/column-template-cs6/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/column-template-cs6/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/column-template-cs6" %}
 
->You can use any template element or custom component instead of the checkbox in the conditional template based on your requirement.
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/column-template-cs6" %}
+
+> You can use any template element or custom component instead of the checkbox in the conditional template based on your requirement.
 
 ## How to get the row object by clicking on the template element
 
@@ -410,11 +411,11 @@ import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { GanttData, SelectedRecordDataType } from './data';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [GanttModule, ButtonModule, DialogModule],
-  template:
-    `<ejs-gantt height="430px"  [dataSource]="data" [taskFields]="taskSettings" [treeColumnIndex]='1'  [splitterSettings] = "splitterSettings">  
+selector: 'app-root',
+standalone: true,
+imports: [GanttModule, ButtonModule, DialogModule],
+template:
+`<ejs-gantt height="430px"  [dataSource]="data" [taskFields]="taskSettings" [treeColumnIndex]='1'  [splitterSettings] = "splitterSettings">  
       <e-columns>
         <e-column field='TaskID' headerText='Task ID'  width=80></e-column>
         <e-column field='TaskName' headerText='Task Name' width=290 ></e-column>
@@ -434,16 +435,16 @@ import { GanttData, SelectedRecordDataType } from './data';
         <e-column field='Progress' headerText='Progress' width=120 ></e-column>
       </e-columns>  
     </ejs-gantt>`,
-  encapsulation: ViewEncapsulation.None
+encapsulation: ViewEncapsulation.None
 })
 
 export class AppComponent implements OnInit {
-    @ViewChild('Dialog') public dialog?: DialogComponent;
-    public data?: object[];
-    public header?: string;
-    public taskSettings?: object;
-    public splitterSettings?: object;
-    public selectedRecord?: SelectedRecordDataType;
+@ViewChild('Dialog') public dialog?: DialogComponent;
+public data?: object[];
+public header?: string;
+public taskSettings?: object;
+public splitterSettings?: object;
+public selectedRecord?: SelectedRecordDataType;
 
     public ngOnInit(): void {
         this.data = GanttData;
@@ -466,19 +467,20 @@ export class AppComponent implements OnInit {
         (this.dialog as DialogComponent).visible = true;
         this.selectedRecord = data;
     }
+
 }
 
 {% endraw %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/column-template-cs7/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/column-template-cs7/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/column-template-cs7/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/column-template-cs7/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/column-template-cs7" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/column-template-cs7" %}
 
 ## Use custom helper inside the template
 
@@ -492,17 +494,16 @@ The following example demonstrates how to use a custom helper function inside th
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
 
-
 import { GanttModule } from '@syncfusion/ej2-angular-gantt';
-import { Component, ViewEncapsulation,  OnInit} from '@angular/core';
+import { Component, ViewEncapsulation, OnInit} from '@angular/core';
 import { GanttData } from './data';
 
 @Component({
-    imports: [ GanttModule],
-    standalone: true,
-    selector: 'app-root',
-    template:
-        `<ejs-gantt id="ganttDefault" #gantt height="430px"  [dataSource]="data"
+imports: [ GanttModule],
+standalone: true,
+selector: 'app-root',
+template:
+`<ejs-gantt id="ganttDefault" #gantt height="430px"  [dataSource]="data"
         [taskFields]="taskSettings" [treeColumnIndex]='1'  [splitterSettings] = "splitterSettings">  
             <e-columns>
                 <e-column field='TaskID' headerText='TaskID'  width=80></e-column>
@@ -515,13 +516,13 @@ import { GanttData } from './data';
                 <e-column field='Duration' headerText='Duration' width=90></e-column>
             </e-columns>  
        </ejs-gantt>`,
-    encapsulation: ViewEncapsulation.None
+encapsulation: ViewEncapsulation.None
 })
 
 export class AppComponent implements OnInit {
-    public data?: object[];
-    public taskSettings?: object;
-    public splitterSettings?: object;
+public data?: object[];
+public taskSettings?: object;
+public splitterSettings?: object;
 
     public ngOnInit(): void {
         this.data = GanttData;
@@ -541,19 +542,20 @@ export class AppComponent implements OnInit {
     public formatProgress(value: number): string {
         return value.toFixed(3) + '% ';
     }
+
 }
 
 {% endraw %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/column-template-cs8/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/column-template-cs8/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/column-template-cs8/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/column-template-cs8/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/column-template-cs8" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/column-template-cs8" %}
 
 > Custom helpers can only be used inside the ng-template directive of a column.
 
@@ -563,14 +565,14 @@ You can render a component inside a Gantt chart cell by setting the `template` p
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/render-template-cs6/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/render-template-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/render-template-cs6/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/render-template-cs6/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/render-template-cs6/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/render-template-cs6/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/render-template-cs6" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/render-template-cs6" %}

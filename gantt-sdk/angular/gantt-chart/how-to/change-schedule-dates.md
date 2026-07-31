@@ -14,17 +14,18 @@ The [updateProjectDates](https://ej2.syncfusion.com/angular/documentation/api/ga
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/how-to/changescheduledates-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/how-to/changescheduledates-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/how-to/changescheduledates-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/how-to/changescheduledates-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/how-to/changescheduledates-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/how-to/changescheduledates-cs1" %}
 
 ## See also
+
 - [How to configure timeline settings?](https://ej2.syncfusion.com/angular/documentation/gantt/timeline)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
 - [How to configure critical path?](https://ej2.syncfusion.com/angular/documentation/gantt/critical-path)

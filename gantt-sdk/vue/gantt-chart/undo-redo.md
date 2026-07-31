@@ -3,7 +3,7 @@ layout: post
 title: Undo Redo in Vue Gantt Chart Component | Syncfusion
 description: Learn here all about Undo Redo in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Undo Redo 
+control: Undo Redo
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -22,39 +22,39 @@ To Undo Redo, inject the [UndoRedo](https://ej2.syncfusion.com/vue/documentation
 
 By default, all the gantt features listed in the below table will be restored for undo and redo actions. However, you have the option to specify only the required actions to be restored using [undoRedoActions](https://ej2.syncfusion.com/vue/documentation/api/gantt#undoredoactions) property.
 
-| Built-in Undo Redo Items | Actions |
-|------------------------|---------|
-| Edit | Undo redo actions can be performed for edited record.|
-| Delete | Undo redo actions can be performed for deleted record.|
-| Add | Undo redo actions can be performed for newly added record.|
-| ColumnReorder | Undo redo actions can be performed for reordered column.|
-| Indent | Undo redo actions can be performed for indented record.|
-| Outdent | Undo redo actions can be performed for outdented record.|
-| ColumnResize | Undo redo actions can be performed for resized column.|
-| Sorting | Undo redo actions can be performed for sorted column.|
-| Filtering | Undo redo actions can be performed for filtered record.|
-| Search | Undo redo actions can be performed for searched value.|
-| ZoomIn | Undo redo actions can be performed for zoomIn action.|
-| ZoomOut | Undo redo actions can be performed for zoomOut action.|
-| ZoomToFit | Undo redo actions can be performed for zoomToFit action.|
-| ColumnState | Undo redo actions can be performed for hided or shown columns.|
-| RowDragAndDrop | Undo redo actions can be performed for row drag and drop.|
-| TaskbarDragAndDrop |  Undo redo actions can be performed for taskbar drag and drop.|
-| PreviousTimeSpan | Undo redo actions can be performed for previous time span acton.|
-| NextTimeSpan | Undo redo actions can be performed for next time span action.|
+| Built-in Undo Redo Items | Actions                                                          |
+| ------------------------ | ---------------------------------------------------------------- |
+| Edit                     | Undo redo actions can be performed for edited record.            |
+| Delete                   | Undo redo actions can be performed for deleted record.           |
+| Add                      | Undo redo actions can be performed for newly added record.       |
+| ColumnReorder            | Undo redo actions can be performed for reordered column.         |
+| Indent                   | Undo redo actions can be performed for indented record.          |
+| Outdent                  | Undo redo actions can be performed for outdented record.         |
+| ColumnResize             | Undo redo actions can be performed for resized column.           |
+| Sorting                  | Undo redo actions can be performed for sorted column.            |
+| Filtering                | Undo redo actions can be performed for filtered record.          |
+| Search                   | Undo redo actions can be performed for searched value.           |
+| ZoomIn                   | Undo redo actions can be performed for zoomIn action.            |
+| ZoomOut                  | Undo redo actions can be performed for zoomOut action.           |
+| ZoomToFit                | Undo redo actions can be performed for zoomToFit action.         |
+| ColumnState              | Undo redo actions can be performed for hided or shown columns.   |
+| RowDragAndDrop           | Undo redo actions can be performed for row drag and drop.        |
+| TaskbarDragAndDrop       | Undo redo actions can be performed for taskbar drag and drop.    |
+| PreviousTimeSpan         | Undo redo actions can be performed for previous time span acton. |
+| NextTimeSpan             | Undo redo actions can be performed for next time span action.    |
 
 In the following code example, `Edit` and `Delete` actions are specified in `undoRedoActions` property.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/undo-redo-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/undo-redo-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/undo-redo-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/undo-redo-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/undo-redo-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/undo-redo-cs1" %}
 
 ## Configuring the Storage Step Count for Undo and Redo Actions
 
@@ -68,14 +68,14 @@ In the following example, `undoRedoStepsCount` value is set to 5.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/undo-redo-cs2/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/undo-redo-cs2/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/undo-redo-cs2/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/undo-redo-cs2/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/undo-redo-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/undo-redo-cs2" %}
 
 ## Perform undo redo actions programatically
 
@@ -85,14 +85,14 @@ The following code example demonstrates how to invoke the `undo` and `redo` meth
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/undo-redo-cs3/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/undo-redo-cs3/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/undo-redo-cs3/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/undo-redo-cs3/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/undo-redo-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/undo-redo-cs3" %}
 
 ## Retrieve undo and redo stack collection
 
@@ -102,14 +102,14 @@ The following code example demonstrates how to retrieve the undo and redo collec
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/undo-redo-cs4/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/undo-redo-cs4/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/undo-redo-cs4/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/undo-redo-cs4/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/undo-redo-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/undo-redo-cs4" %}
 
 ## Clear undo and redo collection
 
@@ -119,11 +119,11 @@ The following code example demonstrates how to clear the undo and redo collectio
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/undo-redo-cs5/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/undo-redo-cs5/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/undo-redo-cs5/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/undo-redo-cs5/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/undo-redo-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/undo-redo-cs5" %}

@@ -15,6 +15,7 @@ The undo redo feature in the [React Gantt Chart](https://www.syncfusion.com/reac
 ## Configure undo redo
 
 Enable undo redo by setting [enableUndoRedo](https://ej2.syncfusion.com/react/documentation/api/gantt#enableundoredo) to **true** and injecting `UndoRedoService` in the React module’s providers. The [undoRedoActions](https://ej2.syncfusion.com/react/documentation/api/gantt#undoredoactions) property customizes supported actions, such as:
+
 - **Edit:** Reverts task field changes (e.g., StartDate, Duration) via dialog or taskbar drag, requiring `EditService`.
 - **Delete:** Restores deleted tasks, requiring `EditService`.
 - **Add:** Removes added tasks, requiring `EditService`.
@@ -58,17 +59,17 @@ In the following code example, **Edit** and **Delete** actions are specified in 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/undo-redo-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/undo-redo-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/undo-redo-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/undo-redo-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/undo-redo-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/undo-redo-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/undo-redo-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/undo-redo-cs1" %}
 
 ## Configuring the storage step count for undo and redo actions
 
@@ -82,17 +83,17 @@ In the following example, `undoRedoStepsCount` value is set to 5.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/undo-redo-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/undo-redo-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/undo-redo-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/undo-redo-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/undo-redo-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/undo-redo-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/undo-redo-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/undo-redo-cs2" %}
 
 This code allows reverting task edits (e.g., changing a task’s duration) or deletions, with up to 5 actions stored.
 
@@ -104,17 +105,17 @@ The following example triggers `undo` and `redo` via external buttons:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/undo-redo-cs3/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/undo-redo-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/undo-redo-cs3/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/undo-redo-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/undo-redo-cs3/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/undo-redo-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/undo-redo-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/undo-redo-cs3" %}
 
 ## Retrieve undo and redo stack collection
 
@@ -124,17 +125,17 @@ The following code example demonstrates how to retrieve the **undo** and **redo*
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/undo-redo-cs4/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/undo-redo-cs4/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/undo-redo-cs4/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/undo-redo-cs4/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/undo-redo-cs4/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/undo-redo-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/undo-redo-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/undo-redo-cs4" %}
 
 ## Clear undo and redo collection
 
@@ -144,19 +145,20 @@ The following code example demonstrates how to clear the undo and redo collectio
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/undo-redo-cs5/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/undo-redo-cs5/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/undo-redo-cs5/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/undo-redo-cs5/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/undo-redo-cs5/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/undo-redo-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/undo-redo-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/undo-redo-cs5" %}
 
 ## See also
+
 - [How to configure task editing?](https://ej2.syncfusion.com/react/documentation/gantt/managing-tasks/task-bar-editing)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/react/documentation/gantt/task-dependency)
 - [How to configure critical path?](https://ej2.syncfusion.com/react/documentation/gantt/critical-path)

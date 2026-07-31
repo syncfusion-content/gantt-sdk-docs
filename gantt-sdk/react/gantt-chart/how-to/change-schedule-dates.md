@@ -14,19 +14,20 @@ The [updateProjectDates](https://ej2.syncfusion.com/react/documentation/api/gant
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/how-to-changescheduledates-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/how-to-changescheduledates-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/how-to-changescheduledates-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/how-to-changescheduledates-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/how-to-changescheduledates-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/how-to-changescheduledates-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/how-to-changescheduledates-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/how-to-changescheduledates-cs1" %}
 
 ## See also
+
 - [How to configure timeline settings?](https://ej2.syncfusion.com/react/documentation/gantt/timeline)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/react/documentation/gantt/task-dependency)
 - [How to configure critical path?](https://ej2.syncfusion.com/react/documentation/gantt/critical-path)

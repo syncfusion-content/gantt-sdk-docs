@@ -3,7 +3,7 @@ layout: post
 title: Excel Export Options in Angular Gantt Chart Component | Syncfusion
 description: Learn here all about Excel export in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Excel export 
+control: Excel export
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -18,19 +18,19 @@ You can export selected records to Excel or CSV by using [getSelectedRecords](ht
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/excelOption-selected-records/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/excelOption-selected-records/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/excelOption-selected-records/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/excelOption-selected-records/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/excelOption-selected-records/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/excelOption-selected-records/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/excel-export/excelOption-selected-records" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/excel-export/excelOption-selected-records" %}
 
 ## Show or hide columns during export
 
@@ -40,19 +40,19 @@ The following example demonstrates how the **StartDate** column is made visible 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/showHide-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/showHide-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/showHide-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/showHide-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/showHide-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/showHide-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/excel-export/showHide-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/excel-export/showHide-cs1" %}
 
 ## Include hidden columns in export
 
@@ -62,19 +62,19 @@ The following example demonstrates that the hidden **StartDate** column is inclu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/exportHidden-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/exportHidden-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/exportHidden-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/exportHidden-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/showHide-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/showHide-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/excel-export/exportHidden-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/excel-export/exportHidden-cs1" %}
 
 ## Enable filtering in exported Excel
 
@@ -82,19 +82,19 @@ To enable filtering in exported Excel or CSV files in Gantt Chart component, set
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/excelOption-filtering/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/excelOption-filtering/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/excelOption-filtering/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/excelOption-filtering/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/excelOption-filtering/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/excelOption-filtering/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/excel-export/excelOption-filtering" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/excel-export/excelOption-filtering" %}
 
 ## Set custom file name
 
@@ -102,19 +102,19 @@ To specify a custom name for the exported Excel or CSV file in the Gantt Chart c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/excelOption-file-name/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/excelOption-file-name/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/excelOption-file-name/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/excelOption-file-name/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/excelOption-file-name/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/excelOption-file-name/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/excel-export/excelOption-file-name" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/excel-export/excelOption-file-name" %}
 
 ## Customize exported columns
 
@@ -122,19 +122,19 @@ The Gantt Chart component supports customizing column settings during Excel or C
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/excelOption-columns/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/excelOption-columns/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/excelOption-columns/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/excelOption-columns/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/excelOption-columns/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/excelOption-columns/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/excel-export/excelOption-columns" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/excel-export/excelOption-columns" %}
 
 ## Add header and footer to export
 
@@ -142,25 +142,25 @@ To add header and footer content to exported Excel or CSV files in the Gantt Cha
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/headerFooter-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/headerFooter-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/headerFooter-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/headerFooter-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/headerFooter-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/headerFooter-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/excel-export/headerFooter-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/excel-export/headerFooter-cs1" %}
 
 ## Apply font and color themes
 
 The Excel or CSV export feature in Gantt supports applying custom themes to the exported document, helping maintain a consistent and visually structured appearance.
 
-To configure a theme, set the [theme](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#theme)  property within [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties). This allows customization of styles for the following sections in the exported file
+To configure a theme, set the [theme](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#theme) property within [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties). This allows customization of styles for the following sections in the exported file
 
 - **caption**: Defines the style for the caption, typically used for titles or descriptions at the top of the sheet.
 - **header**: Specifies the styling for column headers.
@@ -168,19 +168,19 @@ To configure a theme, set the [theme](https://ej2.syncfusion.com/angular/documen
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/theme-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/theme-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/theme-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/theme-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/theme-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/theme-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/excel-export/theme-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/excel-export/theme-cs1" %}
 
 > By default, tailwind3 theme is applied to the exported Excel document.
 
@@ -192,16 +192,16 @@ In the example below, the background color is customized for the **Progress** co
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/cellFormat-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/cellFormat-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/cellFormat-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/cellFormat-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/cellFormat-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/cellFormat-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/excel-export/cellFormat-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/excel-export/cellFormat-cs1" %}

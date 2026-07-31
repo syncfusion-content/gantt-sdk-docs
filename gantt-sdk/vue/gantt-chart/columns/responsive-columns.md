@@ -14,11 +14,11 @@ You can toggle column visibility based on media queries using the [hideAtMedia](
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/columns-cs18/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/columns-cs18/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/columns-cs18/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/columns-cs18/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/columns-cs18" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/columns-cs18" %}

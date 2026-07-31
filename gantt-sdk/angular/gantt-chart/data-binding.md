@@ -3,7 +3,7 @@ layout: post
 title: Data Binding in Angular Gantt Chart Component | Syncfusion
 description: Learn here all about data binding in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Data binding 
+control: Data binding
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -28,9 +28,9 @@ The Gantt Chart component uses `DataManager` to support both RESTful JSON data s
 
 The component supports two primary data structure types for organizing project hierarchies:
 
-* **Hierarchical data binding**: Uses nested object structures where parent tasks contain child arrays
+- **Hierarchical data binding**: Uses nested object structures where parent tasks contain child arrays
 
-* **Self-referential data binding**: Uses flat data structures with ID fields to establish parent-child relationships
+- **Self-referential data binding**: Uses flat data structures with ID fields to establish parent-child relationships
 
 ## Local data binding implementation
 
@@ -44,15 +44,15 @@ This approach works well for data sources that maintain inherent parent-child re
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/data-binding/hierarchydata-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/data-binding/hierarchydata-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/data-binding/hierarchydata-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/data-binding/hierarchydata-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/data-binding/hierarchydata-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/data-binding/hierarchydata-cs1" %}
 
 ### Self-referential data structure
 
@@ -62,15 +62,15 @@ This approach enables the component to reconstruct hierarchical tree structures 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/data-binding/flatdata-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/data-binding/flatdata-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/data-binding/flatdata-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/data-binding/flatdata-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/data-binding/flatdata-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/data-binding/flatdata-cs1" %}
 
 **Data structure requirements**: When using hierarchical data, link child records to their parent using the `child` property mapping. For self-referential data, ensure each task's parent-child relationship is properly defined by mapping `id` and `parentID` fields correctly to enable proper hierarchy reconstruction.
 
@@ -80,15 +80,15 @@ Remote data binding assigns service endpoints as `DataManager` instances to the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/data-binding/remotedata-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/data-binding/remotedata-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/data-binding/remotedata-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/data-binding/remotedata-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/data-binding/remotedata-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/data-binding/remotedata-cs1" %}
 
 **Server Communication**: DataManager connects to various backend services including RESTful endpoints, OData services, and custom web APIs. Configure the appropriate URL and adaptor type based on the target server architecture and data format requirements.
 
@@ -99,40 +99,49 @@ URL Adaptor enables communication with SQL databases through ADO.NET Entity Data
 The URL Adaptor handles data requests by calling configured server endpoints and processing responses in standardized JSON formats. This approach supports comprehensive data operations including create, read, update, and delete functionalities.
 
 ```typescript
-import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
+import { Component, ViewEncapsulation, OnInit } from "@angular/core";
+import { Gantt } from "@syncfusion/ej2-gantt";
+import { DataManager, UrlAdaptor } from "@syncfusion/ej2-data";
 
 @Component({
-    selector: 'app-root',
-    template:
-       `<ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns"></ejs-gantt>`,
-    encapsulation: ViewEncapsulation.None
+  selector: "app-root",
+  template: `<ejs-gantt
+    height="430px"
+    [dataSource]="data"
+    [taskFields]="taskSettings"
+    [columns]="columns"
+  ></ejs-gantt>`,
+  encapsulation: ViewEncapsulation.None,
 })
-export class AppComponent{
-    public data: DataManager;
-    public taskSettings: object;
-    public columns: object[];
-    public ngOnInit(): void {
-        this.data = new DataManager({
-            url: '/Home/UrlDatasource',
-            adaptor: new UrlAdaptor
-        });
-        this.taskSettings = {
-            id: 'TaskId',
-            name: 'TaskName',
-            startDate: 'StartDate',
-            duration: 'Duration',
-            progress: 'Progress',
-            dependency: 'Predecessor',
-            child: 'SubTasks'
-        };
-        this.columns = [
-            { field: 'TaskName', headerText: 'Task Name', width: '250', clipMode: 'EllipsisWithTooltip' },
-            { field: 'StartDate' },
-            { field: 'Duration' }
-        ];
-    }
+export class AppComponent {
+  public data: DataManager;
+  public taskSettings: object;
+  public columns: object[];
+  public ngOnInit(): void {
+    this.data = new DataManager({
+      url: "/Home/UrlDatasource",
+      adaptor: new UrlAdaptor(),
+    });
+    this.taskSettings = {
+      id: "TaskId",
+      name: "TaskName",
+      startDate: "StartDate",
+      duration: "Duration",
+      progress: "Progress",
+      dependency: "Predecessor",
+      child: "SubTasks",
+    };
+    this.columns = [
+      {
+        field: "TaskName",
+        headerText: "Task Name",
+        width: "250",
+        clipMode: "EllipsisWithTooltip",
+      },
+      { field: "StartDate" },
+      { field: "Duration" },
+    ];
+  }
 }
 ```
 
@@ -161,61 +170,84 @@ Load-on-demand rendering displays child records dynamically when parent nodes ex
 **Virtualization integration**: Combined `enableVirtualization` and `loadChildOnDemand` settings render only current viewport root nodes in collapsed state, further optimizing memory usage and rendering performance for large datasets.
 
 ```typescript
-import { Component, OnInit } from '@angular/core';
-import { DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
-import { VirtualScrollService, SelectionService } from '@syncfusion/ej2-angular-gantt';
+import { Component, OnInit } from "@angular/core";
+import { DataManager, WebApiAdaptor } from "@syncfusion/ej2-data";
+import {
+  VirtualScrollService,
+  SelectionService,
+} from "@syncfusion/ej2-angular-gantt";
 
 @Component({
-    selector: 'app-container',
-    template: `
-      <ejs-gantt id="ganttDefault" [dataSource]="data" [taskFields]="taskSettings" [loadChildOnDemand]="true" [enableVirtualization]="true" [allowSelection]="true" [labelSettings]="labelSettings" [columns]="columns" [treeColumnIndex]="1" height="450px" [projectStartDate]="projectStartDate" [projectEndDate]="projectEndDate"
-      [highlightWeekends]="true"  [taskbarHeight]="20" [rowHeight]="40" [tooltipSettings]="tooltipSettings"  [splitterSettings]="splitterSettings">
-     </ejs-gantt>`,
-    providers: [VirtualScrollService, SelectionService]
+  selector: "app-container",
+  template: ` <ejs-gantt
+    id="ganttDefault"
+    [dataSource]="data"
+    [taskFields]="taskSettings"
+    [loadChildOnDemand]="true"
+    [enableVirtualization]="true"
+    [allowSelection]="true"
+    [labelSettings]="labelSettings"
+    [columns]="columns"
+    [treeColumnIndex]="1"
+    height="450px"
+    [projectStartDate]="projectStartDate"
+    [projectEndDate]="projectEndDate"
+    [highlightWeekends]="true"
+    [taskbarHeight]="20"
+    [rowHeight]="40"
+    [tooltipSettings]="tooltipSettings"
+    [splitterSettings]="splitterSettings"
+  >
+  </ejs-gantt>`,
+  providers: [VirtualScrollService, SelectionService],
 })
-
 export class AppComponent implements OnInit {
-    public data?: object;
-    public taskSettings?: object;
-    public columns?: object[];
-    public labelSettings?: object;
-    public splitterSettings?: object;
-    public tooltipSettings?: object;
-    public projectStartDate?: Date;
-    public projectEndDate?: Date;
+  public data?: object;
+  public taskSettings?: object;
+  public columns?: object[];
+  public labelSettings?: object;
+  public splitterSettings?: object;
+  public tooltipSettings?: object;
+  public projectStartDate?: Date;
+  public projectEndDate?: Date;
 
-    ngOnInit(): void {
-        this.data = new DataManager({
-            url: 'https://services.syncfusion.com/angular/production/api/GanttLoadOnDemand',
-            adaptor: new WebApiAdaptor,
-            crossDomain: true
-        });
-        this.taskSettings = {
-            id: 'taskId',
-            name: 'taskName',
-            startDate: 'startDate',
-            endDate: 'endDate',
-            duration: 'duration',
-            progress: 'progress',
-            hasChildMapping: "isParent",
-            parentID: "parentID"
-        };
-        this.tooltipSettings= {
-            showTooltip: true
-        };
-        this.splitterSettings = {
-            columnIndex: 3
-        };
-        this.columns =  [
-            { field: 'taskId', width:80 },
-            { field: 'taskName', headerText: 'Name', width: '200', clipMode: 'EllipsisWithTooltip' },
-            { field: 'startDate' },
-            { field: 'duration' },
-            { field: 'progress' },
-        ];
-        this.projectStartDate = new Date('01/02/2000');
-        this.projectEndDate = new Date('01/06/2002');
-    }
+  ngOnInit(): void {
+    this.data = new DataManager({
+      url: "https://services.syncfusion.com/angular/production/api/GanttLoadOnDemand",
+      adaptor: new WebApiAdaptor(),
+      crossDomain: true,
+    });
+    this.taskSettings = {
+      id: "taskId",
+      name: "taskName",
+      startDate: "startDate",
+      endDate: "endDate",
+      duration: "duration",
+      progress: "progress",
+      hasChildMapping: "isParent",
+      parentID: "parentID",
+    };
+    this.tooltipSettings = {
+      showTooltip: true,
+    };
+    this.splitterSettings = {
+      columnIndex: 3,
+    };
+    this.columns = [
+      { field: "taskId", width: 80 },
+      {
+        field: "taskName",
+        headerText: "Name",
+        width: "200",
+        clipMode: "EllipsisWithTooltip",
+      },
+      { field: "startDate" },
+      { field: "duration" },
+      { field: "progress" },
+    ];
+    this.projectStartDate = new Date("01/02/2000");
+    this.projectEndDate = new Date("01/06/2002");
+  }
 }
 ```
 
@@ -327,6 +359,7 @@ public object Get()
     return new { result = data, count = data.Count };
 }
 ```
+
 **Recursive children handling**
 
 ```typescript
@@ -439,6 +472,7 @@ public object GetTimeDifference(DateTime sdate, DateTime edate)
 ```
 
 **Load-on-demand limitations**:
+
 - Filtering, sorting, and searching operations are not supported in load-on-demand mode.
 - Only self-referential data types are supported with remote data binding.
 - Load-on-demand requires validated data source structures.
@@ -448,51 +482,65 @@ public object GetTimeDifference(DateTime sdate, DateTime edate)
 **Additional parameter transmission**: Pass extra parameters to server endpoints using the [addParams](https://ej2.syncfusion.com/documentation/api/data/query#addparams) method of the [Query](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#query) class. Server-side implementations inherit these parameters through DataManager class extensions, enabling custom data filtering and processing logic.
 
 ```typescript
-import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { Gantt, ToolbarItem, EditSettingsModel } from '@syncfusion/ej2-gantt';
-import { DataManager, UrlAdaptor, Query } from '@syncfusion/ej2-data';
+import { Component, ViewEncapsulation, OnInit, ViewChild } from "@angular/core";
+import { Gantt, ToolbarItem, EditSettingsModel } from "@syncfusion/ej2-gantt";
+import { DataManager, UrlAdaptor, Query } from "@syncfusion/ej2-data";
 
 @Component({
-    selector: 'app-root',
-    template:
-       `<ejs-gantt #gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [editSettings]="editSettings" [toolbar]="toolbar" (load)="load($event)"></ejs-gantt>`,
-    encapsulation: ViewEncapsulation.None
+  selector: "app-root",
+  template: `<ejs-gantt
+    #gantt
+    height="430px"
+    [dataSource]="data"
+    [taskFields]="taskSettings"
+    [editSettings]="editSettings"
+    [toolbar]="toolbar"
+    (load)="load($event)"
+  ></ejs-gantt>`,
+  encapsulation: ViewEncapsulation.None,
 })
-export class AppComponent{
-    @ViewChild('gantt', {static: true}) public ganttInstance?: GanttComponent;
-    public data?: DataManager;
-    public taskSettings?: object;
-    public editSettings?: EditSettingsModel;
-    public toolbar?: ToolbarItem[];
-    public columns?: object[];
+export class AppComponent {
+  @ViewChild("gantt", { static: true }) public ganttInstance?: GanttComponent;
+  public data?: DataManager;
+  public taskSettings?: object;
+  public editSettings?: EditSettingsModel;
+  public toolbar?: ToolbarItem[];
+  public columns?: object[];
 
-    
-    public ngOnInit(): void {
-        this.data = new DataManager({
-            url: 'http://localhost:50039/Home/UrlDatasource',
-            adaptor: new UrlAdaptor,
-            batchUrl: 'http://localhost:50039/Home/BatchSave',
-        });
-        this.taskSettings = {
-            id: 'TaskId',
-            name: 'TaskName',
-            startDate: 'StartDate',
-            duration: 'Duration',
-            progress: 'Progress',
-            dependency: 'Predecessor',
-            child: 'SubTasks'
-        };
-        this.editSettings = {
-            allowAdding: true,
-            allowEditing: true,
-            allowDeleting: true
-        };
-        this.toolbar =  ['Add', 'Edit', 'Delete', 'Update', 'Cancel', 'ExpandAll', 'CollapseAll'];
-    }
-    
-    public load(args) {
-        this.ganttInstance.query = new Query().addParams('ej2Gantt', "test");
-    }
+  public ngOnInit(): void {
+    this.data = new DataManager({
+      url: "http://localhost:50039/Home/UrlDatasource",
+      adaptor: new UrlAdaptor(),
+      batchUrl: "http://localhost:50039/Home/BatchSave",
+    });
+    this.taskSettings = {
+      id: "TaskId",
+      name: "TaskName",
+      startDate: "StartDate",
+      duration: "Duration",
+      progress: "Progress",
+      dependency: "Predecessor",
+      child: "SubTasks",
+    };
+    this.editSettings = {
+      allowAdding: true,
+      allowEditing: true,
+      allowDeleting: true,
+    };
+    this.toolbar = [
+      "Add",
+      "Edit",
+      "Delete",
+      "Update",
+      "Cancel",
+      "ExpandAll",
+      "CollapseAll",
+    ];
+  }
+
+  public load(args) {
+    this.ganttInstance.query = new Query().addParams("ej2Gantt", "test");
+  }
 }
 ```
 
@@ -535,21 +583,22 @@ namespace URLAdaptor.Controllers
 **HTTP error handling**: Server-side exceptions during data operations can be captured client-side through the [actionFailure](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#actionfailure) event. This enables proper error messaging and graceful degradation when server communication fails.
 
 **Data validation considerations**:
+
 - **Missing parentID validation**: Tasks without valid parentID references may display incorrectly or appear as root tasks unexpectedly
 - **Duplicate task ID prevention**: Ensure unique taskID values to prevent data operation failures or rendering issues
 - **Date format validation**: Task dates must follow supported formats (ISO or configured formats) to prevent parsing errors
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/data-binding/actionFailure-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/data-binding/actionFailure-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/data-binding/actionFailure-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/data-binding/actionFailure-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/data-binding/actionFailure-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/data-binding/actionFailure-cs1" %}
 
 **Fetch API integration**: Use Gantt [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#datasource) property to bind data from external Fetch requests. This approach benefits scenarios requiring asynchronous server data retrieval, utilizing the `onSuccess` event for effective data loading management.
 
@@ -557,15 +606,15 @@ To show or hide the loading indicator during fetch, call [showSpinner](https://e
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/data-binding/bindajax-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/data-binding/bindajax-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/data-binding/bindajax-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/data-binding/bindajax-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/data-binding/bindajax-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/data-binding/bindajax-cs1" %}
 
 **Fetch binding limitation**: Data sources bound through Fetch requests act as local data sources, preventing server-side CRUD operations. This approach suits read-only scenarios or applications with separate data modification workflows.
 
@@ -579,27 +628,31 @@ Split tasks at load time using hierarchical structures by defining segment detai
 
 ```typescript
 [
-    {
-        TaskID: 1, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50,
-        Segments: [
-            { StartDate: new Date("04/02/2019"), Duration: 2 },
-            { StartDate: new Date("04/04/2019"), Duration: 2 }
-        ]
-    }
-]
+  {
+    TaskID: 1,
+    TaskName: "Identify Site location",
+    StartDate: new Date("04/02/2019"),
+    Duration: 4,
+    Progress: 50,
+    Segments: [
+      { StartDate: new Date("04/02/2019"), Duration: 2 },
+      { StartDate: new Date("04/04/2019"), Duration: 2 },
+    ],
+  },
+];
 ```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/data-binding/split-task-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/data-binding/split-task-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/data-binding/split-task-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/data-binding/split-task-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/data-binding/split-task-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/data-binding/split-task-cs1" %}
 
 ### Self-referential split task configuration
 
@@ -619,15 +672,15 @@ segmentData: [
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/data-binding/split-selfreferential-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/data-binding/split-selfreferential-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/data-binding/split-selfreferential-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/data-binding/split-selfreferential-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/data-binding/split-selfreferential-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/data-binding/split-selfreferential-cs1" %}
 
 **Segment ID mapping**: The segment ID field contains references to tasks that should be split at load time, enabling the component to associate segment collections with their corresponding parent tasks.
 
@@ -637,11 +690,11 @@ Control parent task expand status in the Gantt chart by defining the [expandStat
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/data-binding/expandState/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/data-binding/expandState/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/data-binding/expandState/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/data-binding/expandState/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -653,16 +706,16 @@ You can programmatically update the Gantt chart data source using the [updateDat
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/data-binding/update-datsource/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/data-binding/update-datsource/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="dataSource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/data-binding/update-datsource/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/data-binding/update-datsource/src/data.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="updateData.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/data-binding/update-datsource/src/updateData.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/data-binding/update-datsource/src/updateData.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/data-binding/update-datsource/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/data-binding/update-datsource/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -672,11 +725,11 @@ You can display a custom message when no data is available by defining an empty 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/data-binding/empty-template/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/data-binding/empty-template/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/data-binding/empty-template/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/data-binding/empty-template/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 

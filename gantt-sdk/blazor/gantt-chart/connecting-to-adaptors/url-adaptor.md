@@ -4,7 +4,7 @@ title: UrlAdaptor with CRUD Operations in Blazor Gantt Chart | Syncfusion®
 description: Learn how to bind remote data and perform CRUD operations using the UrlAdaptor in Blazor Gantt Chart.
 platform: gantt-sdk
 control: Gantt Chart
-keywords: adaptors, UrlAdaptor, url adaptor, remotedata 
+keywords: adaptors, UrlAdaptor, url adaptor, remotedata
 documentation: ug
 ---
 
@@ -15,17 +15,17 @@ The [UrlAdaptor](https://blazor.syncfusion.com/documentation/data/adaptors#url-a
 This section provides a step-by-step guide to retrieving data using the `UrlAdaptor` and binding it to the [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart), including server side data operations and CRUD actions.
 
 ## Creating an API service
- 
+
 To configure a server with the Blazor Gantt Chart, follow these steps:
- 
+
 **1. Create a Blazor web app**
- 
+
 You can create a **Blazor Web App** named **URLAdaptor** using Visual Studio, either via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/blazor/tooling?view=aspnetcore-8.0) or the [Blazor Extension](https://blazor.syncfusion.com/documentation/visual-studio-integration/template-studio). Make sure to configure the appropriate [interactive render mode](https://learn.microsoft.com/en-us/aspnet/core/blazor/components/render-modes?view=aspnetcore-8.0#render-modes) and [interactivity location](https://learn.microsoft.com/en-us/aspnet/core/blazor/tooling?view=aspnetcore-8.0&pivots=windows).
 
 **2. Create a model class**
- 
+
 Add a new folder named **Models**. Then, add a model class named **TaskData.cs** to represent the Gantt Chart task data.
- 
+
 ```csharp
 namespace URLAdaptor.Models
 {
@@ -100,18 +100,18 @@ namespace URLAdaptor.Models
     }
 }
 ```
- 
+
 **3. Create an API controller**
- 
+
 Create an API controller file named **GanttController.cs** under **Controllers** folder to establish data communication with the Blazor Gantt Chart.
- 
+
 ```csharp
- 
+
 using Microsoft.AspNetCore.Mvc;
 using Syncfusion.Blazor;
 using Syncfusion.Blazor.Data;
 using URLAdaptor.Models;
- 
+
 namespace URLAdaptor.Controllers
 {
     [ApiController]
@@ -140,7 +140,7 @@ namespace URLAdaptor.Controllers
         public object Post([FromBody] DataManagerRequest DataManagerRequest)
         {
             // Retrieve data source and convert to queryable.
-            IQueryable<TaskData> DataSource = GetTaskData().AsQueryable();        
+            IQueryable<TaskData> DataSource = GetTaskData().AsQueryable();
 
             // Get total records count.
             int totalRecordsCount = DataSource.Count();
@@ -150,91 +150,97 @@ namespace URLAdaptor.Controllers
         }
     }
 }
- 
+
 ```
- 
+
 > The **GetTaskData** method returns sample Task data. Replace it with your custom logic to fetch data from a database or other sources.
 
 **4. Register controllers in `Program.cs`**
- 
+
 Add the following lines in the `Program.cs` file to register controllers:
- 
+
 ```csharp
 // Register controllers in the service container.
 builder.Services.AddControllers();
- 
+
 // Map controller routes.
 app.MapControllers();
 ```
- 
+
 **5. Run the application**
- 
+
 Run the application in Visual Studio. The API will be accessible at a URL like `https://localhost:xxxx/api/gantt` (where `xxxx` represents the port number in **launchSettings.json**). Verify that the API returns the task data before proceeding.
 
 ## Connecting Blazor Gantt Chart to an API service
- 
+
 To integrate the Blazor Gantt Chart into your project, follow these steps:
- 
+
 **1. Install Blazor Gantt and Themes NuGet packages**
- 
-To add the Blazor Gantt Chart in the app, open the NuGet Package Manager in Visual Studio (*Tools → NuGet Package Manager → Manage NuGet Packages for Solution*), search and install [Syncfusion.Blazor.Gantt](https://www.nuget.org/packages/Syncfusion.Blazor.Gantt/) and [Syncfusion.Blazor.Themes](https://www.nuget.org/packages/Syncfusion.Blazor.Themes/).
- 
+
+To add the Blazor Gantt Chart in the app, open the NuGet Package Manager in Visual Studio (_Tools → NuGet Package Manager → Manage NuGet Packages for Solution_), search and install [Syncfusion.Blazor.Gantt](https://www.nuget.org/packages/Syncfusion.Blazor.Gantt/) and [Syncfusion.Blazor.Themes](https://www.nuget.org/packages/Syncfusion.Blazor.Themes/).
+
 If your Blazor Web App uses `WebAssembly` or `Auto` render modes, install the Blazor NuGet packages in the client project.
- 
+
 Alternatively, use the following Package Manager commands:
- 
+
 ```powershell
 Install-Package Syncfusion.Blazor.Gantt -Version {{ site.releaseversion }}
 Install-Package Syncfusion.Blazor.Themes -Version {{ site.releaseversion }}
 ```
- 
+
 > Blazor components are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.blazor). Refer to the [NuGet packages](https://blazor.syncfusion.com/documentation/nuget-packages) topic for a complete list of available packages.
- 
+
 **2. Register Blazor service**
- 
-- Open the **~/_Imports.razor** file and import the required namespaces.
- 
+
+- Open the **~/\_Imports.razor** file and import the required namespaces.
+
 ```cs
 @using Syncfusion.Blazor
 @using Syncfusion.Blazor.Gantt
 @using Syncfusion.Blazor.Data
 ```
- 
+
 - Register the Blazor service in the **~/Program.cs** file.
- 
+
 ```csharp
 using Syncfusion.Blazor;
- 
+
 builder.Services.AddSyncfusionBlazor();
 ```
- 
+
 For apps using `WebAssembly` or `Auto (Server and WebAssembly)` render modes, register the service in both **~/Program.cs** files.
- 
+
 **3. Add stylesheet and script resources**
- 
+
 Include the theme stylesheet and script references in the **~/Components/App.razor** file.
- 
+
 ```html
 <head>
-    ....
-    <link href="_content/Syncfusion.Blazor.Themes/bootstrap5.css" rel="stylesheet" />
+  ....
+  <link
+    href="_content/Syncfusion.Blazor.Themes/bootstrap5.css"
+    rel="stylesheet"
+  />
 </head>
 ....
 <body>
-    ....
-    <script src="_content/Syncfusion.Blazor.Core/scripts/syncfusion-blazor.min.js" type="text/javascript"></script>
+  ....
+  <script
+    src="_content/Syncfusion.Blazor.Core/scripts/syncfusion-blazor.min.js"
+    type="text/javascript"
+  ></script>
 </body>
 ```
- 
-> * Refer to the [Blazor Themes](https://blazor.syncfusion.com/documentation/appearance/themes) topic for various methods to include themes (e.g., Static Web Assets, CDN, or CRG).
-> * Set the render mode to **InteractiveServer** or **InteractiveAuto** in your Blazor Web App configuration.
- 
+
+> - Refer to the [Blazor Themes](https://blazor.syncfusion.com/documentation/appearance/themes) topic for various methods to include themes (e.g., Static Web Assets, CDN, or CRG).
+> - Set the render mode to **InteractiveServer** or **InteractiveAuto** in your Blazor Web App configuration.
+
 **4. Add Blazor Gantt Chart and configure with server**
- 
+
 To connect the Blazor Gantt Chart to a hosted API, use the [Url](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_Url) property of [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html).
 
 The `SfDataManager` offers multiple adaptor options to connect with remote database based on an API service. Below is an example of the [UrlAdaptor](https://blazor.syncfusion.com/documentation/data/adaptors#url-adaptor) configuration where an API service is set up to return the resulting data in the `result` and `count` format.
- 
+
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
 
@@ -296,7 +302,7 @@ namespace URLAdaptor.Controllers
         public object Post([FromBody] DataManagerRequest DataManagerRequest)
         {
             // Retrieve data source and convert to queryable.
-            IQueryable<TaskData> DataSource = GetTaskData().AsQueryable();        
+            IQueryable<TaskData> DataSource = GetTaskData().AsQueryable();
 
             // Get total records count.
             int totalRecordsCount = DataSource.Count();
@@ -305,21 +311,22 @@ namespace URLAdaptor.Controllers
             return new { result = DataSource, count = totalRecordsCount };
         }
     }
+
 }
- 
+
 {% endhighlight %}
 {% endtabs %}
- 
+
 > Replace `https://localhost:xxxx/api/gantt`(Replace `xxxx` with the port number shown in the **launchSettings.json**) with the actual URL of your API endpoint that provides the data in a consumable format (e.g., JSON).
- 
+
 **5. Run the application**
- 
+
 When you run the application, the Blazor Gantt Chart will display data fetched from the API.
- 
+
 ![UrlAdaptor Data](../images/url-adaptor.webp)
- 
-> * The Gantt Chart supports server-side operations such as **searching**, **sorting** and **filtering**. These can be handled using methods like [PerformSearching](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSearching__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_SearchFilter__), [PerformFiltering](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformFiltering__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_WhereFilter__System_String_), [PerformSorting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSorting__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_Sort__), [PerformTake](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformTake__1_System_Linq_IQueryable___0__System_Int32_), and [PerformSkip](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSkip__1_System_Linq_IQueryable___0__System_Int32_) from the **Syncfusion.Blazor.Data** package. Let's explore how to manage these data operations using the `UrlAdaptor`.
-> * In an API service project, add **Syncfusion.Blazor.Data** by opening the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
+
+> - The Gantt Chart supports server-side operations such as **searching**, **sorting** and **filtering**. These can be handled using methods like [PerformSearching](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSearching__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_SearchFilter__), [PerformFiltering](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformFiltering__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_WhereFilter__System_String_), [PerformSorting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSorting__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_Sort__), [PerformTake](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformTake__1_System_Linq_IQueryable___0__System_Int32_), and [PerformSkip](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSkip__1_System_Linq_IQueryable___0__System_Int32_) from the **Syncfusion.Blazor.Data** package. Let's explore how to manage these data operations using the `UrlAdaptor`.
+> - In an API service project, add **Syncfusion.Blazor.Data** by opening the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
 
 ## Handling searching operation
 
@@ -339,8 +346,8 @@ To handle the searching operation, ensure that your API endpoint supports custom
 [Route("api/[controller]")]
 public object Post([FromBody] DataManagerRequest DataManagerRequest)
 {
-    // Retrieve data from the data source.
-    IQueryable<TaskData> DataSource = GetTaskData().AsQueryable();
+// Retrieve data from the data source.
+IQueryable<TaskData> DataSource = GetTaskData().AsQueryable();
 
     // Handling searching operation.
     if (DataManagerRequest.Search != null && DataManagerRequest.Search.Count > 0)
@@ -354,6 +361,7 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 
     // Return data based on the request.
     return new { result = DataSource, count = totalRecordsCount };
+
 }
 
 {% endhighlight %}
@@ -365,19 +373,19 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 @using URLAdaptor.Models
 
 <SfGantt TValue="TaskData" Height="450px" Toolbar="@(new List<string>() { "Search" })">
-    <SfDataManager Url="/api/gantt" Adaptor="Adaptors.UrlAdaptor"></SfDataManager>
-    <GanttTaskFields Id="TaskID" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
+<SfDataManager Url="/api/gantt" Adaptor="Adaptors.UrlAdaptor"></SfDataManager>
+<GanttTaskFields Id="TaskID" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
                      ParentID="ParentID" Dependency="Predecessor">
-    </GanttTaskFields>    
-    <GanttColumns>
-        <GanttColumn Field="TaskID" HeaderText="Task ID" Width="90"></GanttColumn>
-        <GanttColumn Field="TaskName" HeaderText="Task Name" Width="220"></GanttColumn>
-        <GanttColumn Field="StartDate" HeaderText="Start Date" Width="140" Format="d"></GanttColumn>
-        <GanttColumn Field="EndDate" HeaderText="End Date" Width="140" Format="d"></GanttColumn>
-        <GanttColumn Field="Duration" HeaderText="Duration" Width="110"></GanttColumn>
-        <GanttColumn Field="Predecessor" HeaderText="Predecessor" Width="140"></GanttColumn>
-        <GanttColumn Field="Progress" HeaderText="Progress" Width="110"></GanttColumn>
-    </GanttColumns>
+</GanttTaskFields>  
+ <GanttColumns>
+<GanttColumn Field="TaskID" HeaderText="Task ID" Width="90"></GanttColumn>
+<GanttColumn Field="TaskName" HeaderText="Task Name" Width="220"></GanttColumn>
+<GanttColumn Field="StartDate" HeaderText="Start Date" Width="140" Format="d"></GanttColumn>
+<GanttColumn Field="EndDate" HeaderText="End Date" Width="140" Format="d"></GanttColumn>
+<GanttColumn Field="Duration" HeaderText="Duration" Width="110"></GanttColumn>
+<GanttColumn Field="Predecessor" HeaderText="Predecessor" Width="140"></GanttColumn>
+<GanttColumn Field="Progress" HeaderText="Progress" Width="110"></GanttColumn>
+</GanttColumns>
 </SfGantt>
 
 {% endhighlight %}
@@ -402,8 +410,8 @@ To handle the filtering operation, ensure that your API endpoint supports custom
 [Route("api/[controller]")]
 public object Post([FromBody] DataManagerRequest DataManagerRequest)
 {
-    // Retrieve data from the data source.
-    IQueryable<TaskData> DataSource = GetTaskData().AsQueryable();
+// Retrieve data from the data source.
+IQueryable<TaskData> DataSource = GetTaskData().AsQueryable();
 
     if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0)
     {
@@ -420,6 +428,7 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 
     // Return data based on the request.
     return new { result = DataSource, count = totalRecordsCount };
+
 }
 
 {% endhighlight %}
@@ -472,8 +481,8 @@ To handle the sorting operation, ensure that your API endpoint supports custom s
 [Route("api/[controller]")]
 public object Post([FromBody] DataManagerRequest DataManagerRequest)
 {
-    // Retrieve data from the data source.
-    IQueryable<TaskData> DataSource = GetTaskData().AsQueryable();
+// Retrieve data from the data source.
+IQueryable<TaskData> DataSource = GetTaskData().AsQueryable();
 
     // Handling sorting operation.
     if (DataManagerRequest.Sorted != null && DataManagerRequest.Sorted.Count > 0)
@@ -487,6 +496,7 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 
     // Return data based on the request.
     return new { result = DataSource, count = totalRecordsCount };
+
 }
 
 {% endhighlight %}
@@ -519,7 +529,7 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 
 ## Handling CRUD operations
 
-The Blazor Gantt Chart communicates CRUD (Create, Read, Update, and Delete) actions to the server through dedicated URL properties on `SfDataManager`: [InsertUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_InsertUrl), [UpdateUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_UpdateUrl), [RemoveUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_RemoveUrl), and [BatchUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_BatchUrl). Each action triggers an HTTP POST to its corresponding endpoint, allowing the server to apply the appropriate database operation. To enable editing, refer to the [editing documentation](https://blazor.syncfusion.com/documentation/gantt-chart/editing-tasks).
+The Blazor Gantt Chart communicates CRUD (Create, Read, Update, and Delete) actions to the server through dedicated URL properties on `SfDataManager`: [InsertUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_InsertUrl), [UpdateUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_UpdateUrl), [RemoveUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_RemoveUrl), and [BatchUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_BatchUrl). Each action triggers an HTTP POST to its corresponding endpoint, allowing the server to apply the appropriate database operation. To enable editing, refer to the [editing documentation](https://blazor.syncfusion.com/documentation/gantt/editing-tasks).
 
 **CRUD operations mapping**
 
@@ -530,7 +540,7 @@ CRUD operations within the Gantt Chart can be mapped to server-side controller a
 3. **UpdateUrl**: Specifies the URL for updating existing data.
 4. **BatchUrl**: Specifies the URL for batch editing.
 
-To enable editing in Blazor Gantt Chart, refer to the editing [documentation](https://blazor.syncfusion.com/documentation/gantt-chart/editing-tasks). In the example below, the [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Toolbar) property is configured to display toolbar items for editing purposes.
+To enable editing in Blazor Gantt Chart, refer to the editing [documentation](https://blazor.syncfusion.com/documentation/gantt/editing-tasks). In the example below, the [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Toolbar) property is configured to display toolbar items for editing purposes.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -541,20 +551,20 @@ To enable editing in Blazor Gantt Chart, refer to the editing [documentation](ht
 @using URLAdaptor.Models
 
 <SfGantt TValue="TaskData" Height="450px" AllowFiltering="true" AllowSorting="true" Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" })">
-    <SfDataManager Url="/api/gantt" InsertUrl="/api/gantt/Insert" UpdateUrl="/api/gantt/Update" RemoveUrl="/api/gantt/Remove" Adaptor="Adaptors.UrlAdaptor"></SfDataManager>
-    <GanttTaskFields Id="TaskID" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
+<SfDataManager Url="/api/gantt" InsertUrl="/api/gantt/Insert" UpdateUrl="/api/gantt/Update" RemoveUrl="/api/gantt/Remove" Adaptor="Adaptors.UrlAdaptor"></SfDataManager>
+<GanttTaskFields Id="TaskID" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
                      ParentID="ParentID" Dependency="Predecessor">
-    </GanttTaskFields>
-    <GanttEditSettings AllowAdding="true" AllowEditing="true" AllowTaskbarEditing="true" AllowDeleting="true" />
-    <GanttColumns>
-        <GanttColumn Field="TaskID" HeaderText="Task ID" Width="90"></GanttColumn>
-        <GanttColumn Field="TaskName" HeaderText="Task Name" Width="220"></GanttColumn>
-        <GanttColumn Field="StartDate" HeaderText="Start Date" Width="140" Format="d"></GanttColumn>
-        <GanttColumn Field="EndDate" HeaderText="End Date" Width="140" Format="d"></GanttColumn>
-        <GanttColumn Field="Duration" HeaderText="Duration" Width="110"></GanttColumn>
-        <GanttColumn Field="Predecessor" HeaderText="Predecessor" Width="140"></GanttColumn>
-        <GanttColumn Field="Progress" HeaderText="Progress" Width="110"></GanttColumn>
-    </GanttColumns>
+</GanttTaskFields>
+<GanttEditSettings AllowAdding="true" AllowEditing="true" AllowTaskbarEditing="true" AllowDeleting="true" />
+<GanttColumns>
+<GanttColumn Field="TaskID" HeaderText="Task ID" Width="90"></GanttColumn>
+<GanttColumn Field="TaskName" HeaderText="Task Name" Width="220"></GanttColumn>
+<GanttColumn Field="StartDate" HeaderText="Start Date" Width="140" Format="d"></GanttColumn>
+<GanttColumn Field="EndDate" HeaderText="End Date" Width="140" Format="d"></GanttColumn>
+<GanttColumn Field="Duration" HeaderText="Duration" Width="110"></GanttColumn>
+<GanttColumn Field="Predecessor" HeaderText="Predecessor" Width="140"></GanttColumn>
+<GanttColumn Field="Progress" HeaderText="Progress" Width="110"></GanttColumn>
+</GanttColumns>
 </SfGantt>
 
 {% endhighlight %}
@@ -619,11 +629,11 @@ To insert a new record, use the `InsertUrl` property to specify the controller a
 [Route("api/[controller]/Insert")]
 public void Insert([FromBody] CRUDModel<TaskData> newRecord)
 {
-    if (newRecord.value != null)
-    {
-        // Add the new record to the data collection.
-        TaskData.GetAllRecords().Insert(0, newRecord.value);
-    }
+if (newRecord.value != null)
+{
+// Add the new record to the data collection.
+TaskData.GetAllRecords().Insert(0, newRecord.value);
+}
 }
 
 {% endhighlight %}
@@ -647,20 +657,20 @@ For updating existing records, use the `UpdateUrl` property to specify the contr
 [Route("api/[controller]/Update")]
 public void Update([FromBody] CRUDModel<TaskData> updatedRecord)
 {
-    var updatedTask = updatedRecord.value;
-    if (updatedTask != null)
-    {
-        var data = TaskData.GetAllRecords().FirstOrDefault(or => or.TaskID == updatedTask.TaskID);
-        if (data != null)
-        {
-            // Update the existing record.
-            data.TaskID = updatedTask.TaskID;
-            data.TaskName = updatedTask.TaskName;
-            data.StartDate = updatedTask.StartDate;
-            data.EndDate = updatedTask.EndDate;
-            // Update other properties similarly.
-        }
-    }
+var updatedTask = updatedRecord.value;
+if (updatedTask != null)
+{
+var data = TaskData.GetAllRecords().FirstOrDefault(or => or.TaskID == updatedTask.TaskID);
+if (data != null)
+{
+// Update the existing record.
+data.TaskID = updatedTask.TaskID;
+data.TaskName = updatedTask.TaskName;
+data.StartDate = updatedTask.StartDate;
+data.EndDate = updatedTask.EndDate;
+// Update other properties similarly.
+}
+}
 }
 
 {% endhighlight %}
@@ -684,14 +694,14 @@ To delete existing records, use the `RemoveUrl` property to specify the controll
 [Route("api/[controller]/Remove")]
 public void Remove([FromBody] CRUDModel<TaskData> deletedRecord)
 {
-    // Get the key value from the deletedRecord.
-    int taskID = int.Parse(deletedRecord.key.ToString()); 
-    var data = TaskData.GetAllRecords().FirstOrDefault(task => task.TaskID == taskID);
-    if (data != null)
-    {
-        // Remove the record from the data collection.
-        TaskData.GetAllRecords().Remove(data);
-    }
+// Get the key value from the deletedRecord.
+int taskID = int.Parse(deletedRecord.key.ToString());
+var data = TaskData.GetAllRecords().FirstOrDefault(task => task.TaskID == taskID);
+if (data != null)
+{
+// Remove the record from the data collection.
+TaskData.GetAllRecords().Remove(data);
+}
 }
 
 {% endhighlight %}

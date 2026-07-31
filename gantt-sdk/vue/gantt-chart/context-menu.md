@@ -2,7 +2,7 @@
 layout: post
 title: Context Menu in Vue Gantt Chart Component | Syncfusion
 description: Learn here all about Context menu in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Context menu 
+control: Context menu
 platform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -16,32 +16,32 @@ To use the context menu, inject the [ContextMenu](https://ej2.syncfusion.com/vue
 
 The default items are listed in the following table.
 
-Items| Description
-----|----
-`AutoFit`|  Auto-fits the current column.
-`AutoFitAll` | Auto-fits all columns.
-`SortAscending` | Sorts the current column in ascending order.
-`SortDescending` | Sorts the current column in descending order.
-`TaskInformation`|  Edits the current task.
-`Add` | Adds a new row to the Gantt.
-`Indent` | Indent the selected record to one level.
-`Outdent` | Outdent the selected record to one level.
-`DeleteTask` | Deletes the current task.
-`Save` | Saves the edited task.
-`Cancel` | Cancels the edited task.
-`DeleteDependency` | Deletes the current dependency task link.
-`Convert` | Converts current task to milestone or vice-versa.
+| Items              | Description                                       |
+| ------------------ | ------------------------------------------------- |
+| `AutoFit`          | Auto-fits the current column.                     |
+| `AutoFitAll`       | Auto-fits all columns.                            |
+| `SortAscending`    | Sorts the current column in ascending order.      |
+| `SortDescending`   | Sorts the current column in descending order.     |
+| `TaskInformation`  | Edits the current task.                           |
+| `Add`              | Adds a new row to the Gantt.                      |
+| `Indent`           | Indent the selected record to one level.          |
+| `Outdent`          | Outdent the selected record to one level.         |
+| `DeleteTask`       | Deletes the current task.                         |
+| `Save`             | Saves the edited task.                            |
+| `Cancel`           | Cancels the edited task.                          |
+| `DeleteDependency` | Deletes the current dependency task link.         |
+| `Convert`          | Converts current task to milestone or vice-versa. |
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/contextmenu-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/contextmenu-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/contextmenu-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/contextmenu-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/contextmenu-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/contextmenu-cs1" %}
 
 ## Custom context menu items
 
@@ -53,14 +53,14 @@ The following sample shows context menu item for parent rows to expand or collap
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/customContextMenu-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/customContextMenu-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/customContextMenu-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/customContextMenu-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/customContextMenu-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/customContextMenu-cs1" %}
 
 > You can show an specific item in context menu for header/content area in the Gantt Chart component by defining the `target` property.
 

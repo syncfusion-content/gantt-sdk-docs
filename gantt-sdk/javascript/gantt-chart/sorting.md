@@ -3,7 +3,7 @@ layout: post
 title: Sorting in JavaScript Gantt Chart Control | Syncfusion
 description: Learn here all about Sorting in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Sorting 
+control: Sorting
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -23,31 +23,31 @@ To enable sorting functionality, inject the [Sort](../api/gantt#sortmodule) modu
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/getting-started-cs14/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/getting-started-cs14/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/getting-started-cs14/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/getting-started-cs14/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/getting-started-cs14" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/getting-started-cs14" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/getting-started-cs14/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/getting-started-cs14/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/getting-started-cs14/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/getting-started-cs14/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/getting-started-cs14" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/getting-started-cs14" %}
 {% endif %}
 
-> * The Gantt columns are sorted in the ascending order. If you click the already sorted column, the sort direction toggles.
-> * To disable sorting for a particular column, set the [columns.allowSorting](../api/gantt/column#allowsorting) property to **false**.
+> - The Gantt columns are sorted in the ascending order. If you click the already sorted column, the sort direction toggles.
+> - To disable sorting for a particular column, set the [columns.allowSorting](../api/gantt/column#allowsorting) property to **false**.
 
 ## Initial sorting
 
@@ -59,27 +59,27 @@ The following code example shows how to add sorted columns during Gantt initiali
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sorting-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sorting-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/sorting-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sorting-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sorting-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/sorting-cs1" %}
 {% endif %}
 
 ## Sort columns externally
@@ -94,27 +94,27 @@ You can externally sort a column in the Syncfusion<sup style="font-size:70%">&re
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sortingColumns-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sortingColumns-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sortingColumns-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sortingColumns-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/sortingColumns-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/sortingColumns-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sortingColumns-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sortingColumns-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sortingColumns-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sortingColumns-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/sortingColumns-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/sortingColumns-cs1" %}
 {% endif %}
 
 ### Remove sort columns
@@ -125,27 +125,27 @@ You can externally remove sorting from a specific column in the Syncfusion<sup s
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs3/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sorting-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs3/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sorting-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/sorting-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs3/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sorting-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs3/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sorting-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/sorting-cs3" %}
 {% endif %}
 
 ### Clear sorting
@@ -156,27 +156,27 @@ You can clear all sorted columns in the Syncfusion<sup style="font-size:70%">&re
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/clearSorting-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/clearSorting-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/clearSorting-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/clearSorting-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/clearSorting-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/clearSorting-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/clearSorting-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/clearSorting-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/clearSorting-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/clearSorting-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/clearSorting-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/clearSorting-cs1" %}
 {% endif %}
 
 ## Customize sort icon
@@ -185,11 +185,11 @@ You can customize the sort icons in the Syncfusion<sup style="font-size:70%">&re
 
 ```css
 .e-gantt .e-icon-ascending::before {
-    content: '\e7aa';
+  content: "\e7aa";
 }
 
 .e-gantt .e-icon-descending::before {
-    content: '\e71f';
+  content: "\e71f";
 }
 ```
 
@@ -197,27 +197,27 @@ You can customize the sort icons in the Syncfusion<sup style="font-size:70%">&re
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs4/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sorting-cs4/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs4/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sorting-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/sorting-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs4/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sorting-cs4/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs4/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sorting-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs4" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/sorting-cs4" %}
 {% endif %}
 
 ## Custom sorting
@@ -234,65 +234,65 @@ The sorting process includes the following steps:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs5/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sorting-cs5/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs5/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sorting-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/sorting-cs5" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs5/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sorting-cs5/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs5/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sorting-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs5" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/sorting-cs5" %}
 {% endif %}
 
 ### Display null values always at bottom
 
 You can customize the sorting behavior in the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Gantt Chart control to make `null` values consistently appear at the bottom, regardless of sort direction, by defining a column-level [column.sortComparer](../api/gantt/column#sortcomparer) function. By default, `null` values are placed at the bottom when sorting in ascending order and at the top when sorting in descending order. Applying a custom `sortComparer` helps override this default logic and is particularly useful when working with datasets where `null` entries should be visually separated from valid data.
- 
+
 The example below demonstrates how to display `null` values at the bottom of the Gantt Chart while sorting the `TaskName` column in both ascending and descending order.
 
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs6/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sorting-cs6/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs6/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sorting-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs6" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/sorting-cs6" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs6/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sorting-cs6/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs6/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sorting-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs6" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/sorting-cs6" %}
 {% endif %}
 
 ## Sorting custom columns
 
-You can sort custom columns of various types such as string or numeric in the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Gantt Chart control by adding them to the column collection. Initial sorting can be configured using the [sortSettings](../api/gantt/sortSettings) property, or sorting can be triggered dynamically through external actions such as a button click. 
+You can sort custom columns of various types such as string or numeric in the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Gantt Chart control by adding them to the column collection. Initial sorting can be configured using the [sortSettings](../api/gantt/sortSettings) property, or sorting can be triggered dynamically through external actions such as a button click.
 
 The following code snippet demonstrates how to sort the `CustomColumn` using an external button.
 
@@ -300,27 +300,27 @@ The following code snippet demonstrates how to sort the `CustomColumn` using an 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sortingCustomColumns-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sortingCustomColumns-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sortingCustomColumns-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sortingCustomColumns-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/sortingCustomColumns-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/sortingCustomColumns-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sortingCustomColumns-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sortingCustomColumns-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sortingCustomColumns-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sortingCustomColumns-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/sortingCustomColumns-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/sortingCustomColumns-cs1" %}
 {% endif %}
 
 ## Prevent sorting on specific columns
@@ -333,27 +333,27 @@ The following sample demonstrates how to prevent sorting for the **TaskID** and 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs7/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sorting-cs7/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs7/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sorting-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs7" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/sorting-cs7" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs7/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sorting-cs7/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs7/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sorting-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs7" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/sorting-cs7" %}
 {% endif %}
 
 ## Disable clear sort
@@ -364,27 +364,27 @@ By default, clicking a column header switches the sort order between ascending, 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs8/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sorting-cs8/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs8/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sorting-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs8" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/sorting-cs8" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs8/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sorting-cs8/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs8/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/sorting-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/sorting-cs8" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/sorting-cs8" %}
 {% endif %}
 
 ## Touch interaction

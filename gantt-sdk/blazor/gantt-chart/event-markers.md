@@ -38,22 +38,22 @@ The following implementation demonstrates event marker integration within a Gant
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="700px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttEventMarkers>
-        <GanttEventMarker Day="@Event" Label="Project approval and kick-off"
+</GanttTaskFields>
+<GanttEventMarkers>
+<GanttEventMarker Day="@Event" Label="Project approval and kick-off"
                           CssClass="e-custom-event-marker"></GanttEventMarker>
-    </GanttEventMarkers>
+</GanttEventMarkers>
 </SfGantt>
 
 @code {
-    private DateTime Event = new DateTime(2026, 04, 03);
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+private DateTime Event = new DateTime(2026, 04, 03);
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public class TaskData
     {
@@ -81,7 +81,9 @@ The following implementation demonstrates event marker integration within a Gant
         };
         return Tasks;
     }
+
 }
+
 <style>
     .e-gantt .e-gantt-chart .e-custom-event-marker {
         width: 1px;
@@ -96,6 +98,6 @@ The following implementation demonstrates event marker integration within a Gant
 
 ## See also
 
-* [Display Striplines in Blazor Gantt](https://www.syncfusion.com/forums/175385/display-striplines-in-blazor-gantt)
+- [Display Striplines in Blazor Gantt](https://www.syncfusion.com/forums/175385/display-striplines-in-blazor-gantt)
 
-N> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=bootstrap5) to know how to render and configure the Gantt.
+N> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt/default-functionalities?theme=bootstrap5) to know how to render and configure the Gantt.

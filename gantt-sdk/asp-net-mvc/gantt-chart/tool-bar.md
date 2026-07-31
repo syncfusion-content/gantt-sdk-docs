@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Toolbar in Gantt control
 
 The Gantt control provides toolbar support to handle Gantt actions. The [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Toolbar) property accepts the collection of built-in toolbar items and [`ItemModel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ToolbarItem.html) objects for custom toolbar items.
@@ -19,29 +18,29 @@ Built-in toolbar items execute standard actions of the Gantt control, and these 
 
 The following table shows built-in toolbar items and its actions.
 
-| Built-in Toolbar Items | Actions |
-|------------------------|---------|
-| Add | Adds a new record. |
-| Cancel | Cancels the edit state. |
-| CollapseAll | Collapses all the rows. |
-| Delete | Deletes the selected record. |
-| Edit | Edits the selected record. |
-| Indent | Indent the selected record to one level.|
-| Outdent | Outdent the elected record to one level.|
-| ExpandAll | Expands all the rows. |
-| NextTimeSpan | Navigate the Gantt timeline to next time span. |
-| PrevTimeSpan | Navigate the Gantt timeline to previous time span. |
-| Search | Searches the records by the given key. |
-| Update | Updates the edited record. |
+| Built-in Toolbar Items | Actions                                            |
+| ---------------------- | -------------------------------------------------- |
+| Add                    | Adds a new record.                                 |
+| Cancel                 | Cancels the edit state.                            |
+| CollapseAll            | Collapses all the rows.                            |
+| Delete                 | Deletes the selected record.                       |
+| Edit                   | Edits the selected record.                         |
+| Indent                 | Indent the selected record to one level.           |
+| Outdent                | Outdent the elected record to one level.           |
+| ExpandAll              | Expands all the rows.                              |
+| NextTimeSpan           | Navigate the Gantt timeline to next time span.     |
+| PrevTimeSpan           | Navigate the Gantt timeline to previous time span. |
+| Search                 | Searches the records by the given key.             |
+| Update                 | Updates the edited record.                         |
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/toolbar/defaultItems/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/toolbar/defaultItems/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DefaultItems.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/toolbar/defaultItems/defaultItems.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/toolbar/defaultItems/defaultItems.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -49,15 +48,13 @@ The following table shows built-in toolbar items and its actions.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/toolbar/defaultItems/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/toolbar/defaultItems/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DefaultItems.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/toolbar/defaultItems/defaultItems.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/toolbar/defaultItems/defaultItems.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 N> The [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Toolbar) has options to define both built-in and custom toolbar items.
 
@@ -71,10 +68,10 @@ By default, the custom toolbar items are at left position. You can change the po
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/toolbar/customItems/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/toolbar/customItems/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomItems.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/toolbar/customItems/customItems.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/toolbar/customItems/customItems.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -82,18 +79,16 @@ By default, the custom toolbar items are at left position. You can change the po
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/toolbar/customItems/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/toolbar/customItems/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomItems.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/toolbar/customItems/customItems.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/toolbar/customItems/customItems.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-
-
-N> * The [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Toolbar) has options to define both built-in and custom toolbar items.
-<br/> * If a toolbar item does not match the built-in items, it will be treated as a custom toolbar item.
+N> _ The [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Toolbar) has options to define both built-in and custom toolbar items.
+<br/> _ If a toolbar item does not match the built-in items, it will be treated as a custom toolbar item.
 
 ## Built-in and custom items in toolbar
 
@@ -105,10 +100,10 @@ In the following example, the `ExpandAll` and `CollapseAll` are built-in toolbar
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/toolbar/defaultandCustomItems/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/toolbar/defaultandCustomItems/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DefaultandCustomItems.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/toolbar/defaultandCustomItems/defaultandCustomItems.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/toolbar/defaultandCustomItems/defaultandCustomItems.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -116,15 +111,13 @@ In the following example, the `ExpandAll` and `CollapseAll` are built-in toolbar
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/toolbar/defaultandCustomItems/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/toolbar/defaultandCustomItems/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DefaultandCustomItems.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/toolbar/defaultandCustomItems/defaultandCustomItems.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/toolbar/defaultandCustomItems/defaultandCustomItems.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Enable/disable toolbar items
 
@@ -134,10 +127,10 @@ You can enable or disable the toolbar items by using the `enableItems` method.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/toolbar/enable-disabletoolbarItems/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/toolbar/enable-disabletoolbarItems/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Enable-disabletoolbarItems.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/toolbar/enable-disabletoolbarItems/enable-disabletoolbarItems.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/toolbar/enable-disabletoolbarItems/enable-disabletoolbarItems.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -145,15 +138,13 @@ You can enable or disable the toolbar items by using the `enableItems` method.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/toolbar/enable-disabletoolbarItems/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/toolbar/enable-disabletoolbarItems/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Enable-disabletoolbarItems.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/toolbar/enable-disabletoolbarItems/enable-disabletoolbarItems.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/toolbar/enable-disabletoolbarItems/enable-disabletoolbarItems.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Add input elements to toolbar
 
@@ -163,10 +154,10 @@ In the Gantt toolbar, you can add EJ2 editor elements like a numeric text box, a
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/toolbar/input-elements/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/toolbar/input-elements/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="input-elements.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/toolbar/input-elements/input-elements.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/toolbar/input-elements/input-elements.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -174,10 +165,10 @@ In the Gantt toolbar, you can add EJ2 editor elements like a numeric text box, a
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/toolbar/input-elements/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/toolbar/input-elements/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="input-elements.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/toolbar/input-elements/input-elements.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/toolbar/input-elements/input-elements.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

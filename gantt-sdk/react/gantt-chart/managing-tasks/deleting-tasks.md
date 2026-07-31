@@ -18,17 +18,17 @@ Enable task deletion through the toolbar by setting [editSettings.allowDeleting]
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/taskdelete-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/taskdelete-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/taskdelete-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/taskdelete-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/taskdelete-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/taskdelete-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/taskdelete-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/taskdelete-cs1" %}
 
 ## Delete tasks with confirmation dialog
 
@@ -36,17 +36,17 @@ Enable a confirmation dialog for task deletion by setting [editSettings.showDele
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/deleteconfirm-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/deleteconfirm-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/deleteconfirm-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/deleteconfirm-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/deleteconfirm-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/deleteconfirm-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/deleteconfirm-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/deleteconfirm-cs1" %}
 
 ## Delete tasks programmatically
 
@@ -122,6 +122,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 ```
 
 ## See also
+
 - [How to configure task editing?](https://ej2.syncfusion.com/react/documentation/gantt/managing-tasks/task-bar-editing)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/react/documentation/gantt/task-dependency)
 - [How to configure critical path?](https://ej2.syncfusion.com/react/documentation/gantt/critical-path)

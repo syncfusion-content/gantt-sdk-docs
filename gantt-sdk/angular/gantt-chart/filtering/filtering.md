@@ -3,7 +3,7 @@ layout: post
 title: Filtering in Angular Gantt Chart Component | Syncfusion
 description: Learn here all about filtering in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Filtering 
+control: Filtering
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -16,8 +16,8 @@ To enable filtering, set [allowFiltering](https://ej2.syncfusion.com/angular/doc
 
 To activate filtering functionality, inject the `FilterService` in the `providers` of the component.
 
-> * The filtering UI is rendered based on the column type, allowing data to be filtered using appropriate operators.
-> * The filter menu is enabled by default. To disable the filtering option for a specific column, set the `allowFiltering` property of the `column` to **false**.
+> - The filtering UI is rendered based on the column type, allowing data to be filtered using appropriate operators.
+> - The filter menu is enabled by default. To disable the filtering option for a specific column, set the `allowFiltering` property of the `column` to **false**.
 
 ## Apply initial filter on load
 
@@ -27,15 +27,15 @@ The following sample demonstrates how to apply an initial filter where **TaskNam
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/initialfilter-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/initialfilter-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/initialfilter-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/initialfilter-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/filtering/initialfilter-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/filtering/initialfilter-cs1" %}
 
 ## Supported filter operators
 
@@ -43,17 +43,17 @@ Filter operators can be set using the `filterSettings.columns.operator` property
 
 The available operators and their supported data types are:
 
-| Operator             | Description                                         | Supported Types                  |
-|----------------------|-----------------------------------------------------|----------------------------------|
-| startswith           | Matches values beginning with the specified value.   | String                           |
-| endswith             | Matches values ending with the specified value.      | String                           |
-| contains             | Matches values that include the specified value.     | String                           |
-| equal                | Matches values exactly equal to the specified value. | String, Number, Boolean, Date    |
-| notequal             | Matches values not equal to the specified value.     | String, Number, Boolean, Date    |
-| greaterthan          | Matches values greater than the specified value.    | Number, Date                     |
-| greaterthanorequal   | Matches values greater than or equal to the value.  | Number, Date                     |
-| lessthan             | Matches values less than the specified value.       | Number, Date                     |
-| lessthanorequal      | Matches values less than or equal to the value.     | Number, Date                     |
+| Operator           | Description                                          | Supported Types               |
+| ------------------ | ---------------------------------------------------- | ----------------------------- |
+| startswith         | Matches values beginning with the specified value.   | String                        |
+| endswith           | Matches values ending with the specified value.      | String                        |
+| contains           | Matches values that include the specified value.     | String                        |
+| equal              | Matches values exactly equal to the specified value. | String, Number, Boolean, Date |
+| notequal           | Matches values not equal to the specified value.     | String, Number, Boolean, Date |
+| greaterthan        | Matches values greater than the specified value.     | Number, Date                  |
+| greaterthanorequal | Matches values greater than or equal to the value.   | Number, Date                  |
+| lessthan           | Matches values less than the specified value.        | Number, Date                  |
+| lessthanorequal    | Matches values less than or equal to the value.      | Number, Date                  |
 
 N> By default, the `filterSettings.columns.operator` value is `equal`
 
@@ -71,15 +71,15 @@ The Angular Gantt Chart component supports multiple filtering modes, which can b
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/filterhierarchy-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/filterhierarchy-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/filterhierarchy-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/filterhierarchy-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/filtering/filterhierarchy-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/filtering/filterhierarchy-cs1" %}
 
 ## Enable diacritic-sensitive filtering
 
@@ -89,15 +89,15 @@ The following sample demonstrates this behavior: when filtering the **TaskName**
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/diacritics-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/diacritics-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/diacritics-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/diacritics-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/filtering/diacritics-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/filtering/diacritics-cs1" %}
 
 ## Programmatic filtering using method
 
@@ -107,15 +107,15 @@ The following sample demonstrates how to filter the **TaskName** and **TaskID** 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/filtercolumn-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/filtercolumn-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/filtercolumn-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/filtercolumn-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/filtering/filtercolumn-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/filtering/filtercolumn-cs1" %}
 
 ## Clear all applied filters
 
@@ -123,15 +123,15 @@ You can clear all the filtering conditions applied in the Gantt Chart component 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/clearfilter-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/clearfilter-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/clearfilter-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/clearfilter-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/filtering/clearfilter-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/filtering/clearfilter-cs1" %}
 
 ## Set different filter types per column
 
@@ -139,34 +139,34 @@ You can enable different filter types for individual columns in the Gantt Chart 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/different-filter/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/different-filter/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/different-filter/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/different-filter/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/filtering/different-filter" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/filtering/different-filter" %}
 
 ## Customize filtering behavior using events
 
-You can customize the filtering behavior in the  Angular Gantt using the [actionBegin](https://ej2.syncfusion.com/angular/documentation/gantt/events#actionbegin) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/gantt/events#actioncomplete) events. These events allow you to inject custom logic at different stages of the filtering workflow.
+You can customize the filtering behavior in the Angular Gantt using the [actionBegin](https://ej2.syncfusion.com/angular/documentation/gantt/events#actionbegin) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/gantt/events#actioncomplete) events. These events allow you to inject custom logic at different stages of the filtering workflow.
 
 The following sample demonstrates how to handle different filtering stages using `args.requestType`:
-  
-- For **filterBeforeOpen**, customize filter operators based on `args.columnType` (number or string).  
-- For **filtering**, cancel the action if `args.currentFilteringColumn` is **StartDate**.  
+
+- For **filterBeforeOpen**, customize filter operators based on `args.columnType` (number or string).
+- For **filtering**, cancel the action if `args.currentFilteringColumn` is **StartDate**.
 - For **filterAfterOpen**, apply background styling to the filter dialog content and footer.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/filter-events/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/filter-events/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/filter-events/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/filter-events/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/filtering/filter-events" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/filtering/filter-events" %}

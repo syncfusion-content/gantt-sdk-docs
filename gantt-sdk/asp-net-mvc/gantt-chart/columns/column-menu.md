@@ -8,27 +8,26 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Column menu in gantt control
 
 The column menu has options to integrate features like sorting, filtering, and autofit. It will show a menu with the integrated feature when users click the Multiple icon of the column. To enable the column menu, you should set the [`ShowColumnMenu`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ShowColumnMenu) property to true. The default items are displayed in the following table:
 
-| Item | Description |
-|-----|-----|
-| `SortAscending` | Sort the current column in ascending order. |
-| `SortDescending` | Sort the current column in descending order. |
-| `AutoFit` | Auto fit the current column. |
-| `AutoFitAll` | Auto fit all columns. |
-| `Filter` | Show the filter option as given in the `filterSettings.type` property. |
+| Item             | Description                                                            |
+| ---------------- | ---------------------------------------------------------------------- |
+| `SortAscending`  | Sort the current column in ascending order.                            |
+| `SortDescending` | Sort the current column in descending order.                           |
+| `AutoFit`        | Auto fit the current column.                                           |
+| `AutoFitAll`     | Auto fit all columns.                                                  |
+| `Filter`         | Show the filter option as given in the `filterSettings.type` property. |
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/columnMenu/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/columnMenu/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ColumnMenu.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/columnMenu/columnMenu.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/columnMenu/columnMenu.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -36,15 +35,13 @@ The column menu has options to integrate features like sorting, filtering, and a
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/columnMenu/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/columnMenu/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ColumnMenu.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/columnMenu/columnMenu.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/columnMenu/columnMenu.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/columnMenu.png)
 
@@ -61,10 +58,10 @@ During the resizing action, the gantt component triggers the below two events.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/colMenuEvents/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/colMenuEvents/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ColMenuEvents.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/colMenuEvents/colMenuEvents.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/colMenuEvents/colMenuEvents.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -72,15 +69,13 @@ During the resizing action, the gantt component triggers the below two events.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/colMenuEvents/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/colMenuEvents/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ColMenuEvents.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/colMenuEvents/colMenuEvents.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/colMenuEvents/colMenuEvents.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Custom Column Menu Item
 
@@ -90,10 +85,10 @@ Custom column menu items can be added by defining the `columnMenuItems`. Actions
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/colMenuItem/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/colMenuItem/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ColMenuItem.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/colMenuItem/colMenuItem.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/colMenuItem/colMenuItem.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -101,15 +96,13 @@ Custom column menu items can be added by defining the `columnMenuItems`. Actions
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/colMenuItem/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/colMenuItem/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ColMenuItem.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/colMenuItem/colMenuItem.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/colMenuItem/colMenuItem.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Customize menu items for particular columns
 
@@ -121,10 +114,10 @@ The following sample, **Filter** item was hidden in column menu when opens for t
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/colMenuAction/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/colMenuAction/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ColMenuAction.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/colMenuAction/colMenuAction.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/colMenuAction/colMenuAction.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -132,10 +125,10 @@ The following sample, **Filter** item was hidden in column menu when opens for t
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/colMenuAction/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/colMenuAction/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ColMenuAction.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/colMenuAction/colMenuAction.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/colMenuAction/colMenuAction.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

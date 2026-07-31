@@ -2,7 +2,7 @@
 layout: post
 title: Immutable in React Gantt Chart component | Syncfusion
 description: Learn here all about Immutable in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Immutable 
+control: Immutable
 platform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -26,21 +26,22 @@ The following example enables immutable mode:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/immutable-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/immutable-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/immutable-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/immutable-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/immutable-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/immutable-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/immutable-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/immutable-cs1" %}
 
 ## Feature compatibility and limitations
 
 Immutable mode is incompatible with certain features due to its reference-based change detection:
+
 - **Column reordering**: Conflicts with reference tracking, requiring temporary disabling of `enableImmutableMode`.
 - **Virtualization**: Incompatible with [enableVirtualization](https://ej2.syncfusion.com/react/documentation/api/gantt#enablevirtualization), as both optimize rendering differently; choose based on dataset size.
 

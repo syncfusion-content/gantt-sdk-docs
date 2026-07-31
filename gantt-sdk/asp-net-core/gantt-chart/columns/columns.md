@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Columns in in gantt control
 
 The column displays information from a bound data source, and you can edit the values of column to update the task details through TreeGrid. The operations such as sorting, filtering, and searching can be performed based on column definitions. To display a Gantt column, the [`Field`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Field) property should be mapped from the data source to the column.
@@ -25,10 +24,10 @@ Using the [`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/definingColumns/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/definingColumns/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DefiningColumns.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/definingColumns/definingColumns.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/definingColumns/definingColumns.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -36,15 +35,13 @@ Using the [`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/definingColumns/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/definingColumns/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DefiningColumns.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/definingColumns/definingColumns.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/definingColumns/definingColumns.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/definingColumns.png)
 
@@ -56,10 +53,10 @@ The column header text can be defined using the [`HeaderText`](https://help.sync
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/headerTemplate/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/headerTemplate/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HeaderTemplate.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/headerTemplate/headerTemplate.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/headerTemplate/headerTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -67,15 +64,13 @@ The column header text can be defined using the [`HeaderText`](https://help.sync
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/headerTemplate/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/headerTemplate/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HeaderTemplate.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/headerTemplate/headerTemplate.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/headerTemplate/headerTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/headerTemplate.png)
 
@@ -87,10 +82,10 @@ To format the cell values based on a specific culture, use the [`Columns.Format`
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/formatColumn/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/formatColumn/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="FormatColumn.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/formatColumn/formatColumn.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/formatColumn/formatColumn.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -98,15 +93,13 @@ To format the cell values based on a specific culture, use the [`Columns.Format`
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/formatColumn/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/formatColumn/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="FormatColumn.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/formatColumn/formatColumn.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/formatColumn/formatColumn.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/formatColumn.png)
 
@@ -116,11 +109,11 @@ N> By default, the [`number`](../../common/internationalization/#number-formatti
 
 The number or integer values can be formatted using the following format strings.
 
-|Format |Description |Remarks|
-|-----|-----|----|
-|N | Denotes numeric type. | The numeric format is followed by an integer value like N2 or N3, which denotes the number of precisions to be allowed.|
-|C | Denotes currency type. | The currency format is followed by an integer value like C2 or C3, which denotes the number of precisions to be allowed.|
-|P | Denotes percentage type | The percentage format expects the input value to be in the range of 0 to 100. For example, the cell value `0.2` is formatted as `20%`. The percentage format is followed by an integer value like P2, P3, which denotes the number of precisions to be allowed.|
+| Format | Description             | Remarks                                                                                                                                                                                                                                                         |
+| ------ | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| N      | Denotes numeric type.   | The numeric format is followed by an integer value like N2 or N3, which denotes the number of precisions to be allowed.                                                                                                                                         |
+| C      | Denotes currency type.  | The currency format is followed by an integer value like C2 or C3, which denotes the number of precisions to be allowed.                                                                                                                                        |
+| P      | Denotes percentage type | The percentage format expects the input value to be in the range of 0 to 100. For example, the cell value `0.2` is formatted as `20%`. The percentage format is followed by an integer value like P2, P3, which denotes the number of precisions to be allowed. |
 
 ### Date formatting
 
@@ -130,22 +123,22 @@ For the built-in date format, you can specify the [`Columns.Format`](https://hel
 
 You can also use the custom format string to format the date values. Some of the custom formats and the formatted date values are given in the following table.
 
-|Format | Formatted value|
-|-----|-----|
-|{ type:'date', format:'dd/MM/yyyy' } | 04/07/2019|
-|{ type:'date', format:'dd.MM.yyyy' } | 04.07.2019|
-|{ type:'date', skeleton:'short' } | 7/4/19|
-|{ type: 'dateTime', format: 'dd/MM/yyyy hh:mm a' } | 04/07/2019 12:00 AM|
-|{ type: 'dateTime', format: 'MM/dd/yyyy hh:mm:ss a' } | 07/04/2019 12:00:00 AM|
+| Format                                                | Formatted value        |
+| ----------------------------------------------------- | ---------------------- |
+| { type:'date', format:'dd/MM/yyyy' }                  | 04/07/2019             |
+| { type:'date', format:'dd.MM.yyyy' }                  | 04.07.2019             |
+| { type:'date', skeleton:'short' }                     | 7/4/19                 |
+| { type: 'dateTime', format: 'dd/MM/yyyy hh:mm a' }    | 04/07/2019 12:00 AM    |
+| { type: 'dateTime', format: 'MM/dd/yyyy hh:mm:ss a' } | 07/04/2019 12:00:00 AM |
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/formatColumns/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/formatColumns/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="FormatColumns.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/formatColumns/formatColumns.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/formatColumns/formatColumns.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -153,10 +146,10 @@ You can also use the custom format string to format the date values. Some of the
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/formatColumns/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/formatColumns/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="FormatColumns.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/formatColumns/formatColumns.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/formatColumns/formatColumns.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -169,10 +162,10 @@ The tree/expander column is a column in the Gantt control, that has icons to exp
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/treeColumnIndex/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/treeColumnIndex/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="TreeColumnIndex.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/treeColumnIndex/treeColumnIndex.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/treeColumnIndex/treeColumnIndex.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -180,15 +173,13 @@ The tree/expander column is a column in the Gantt control, that has icons to exp
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/treeColumnIndex/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/treeColumnIndex/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="TreeColumnIndex.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/treeColumnIndex/treeColumnIndex.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/treeColumnIndex/treeColumnIndex.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/treeColumnIndex.png)
 
@@ -200,10 +191,10 @@ You can show or hide gantt columns dynamically using external buttons by invokin
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/showHide/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/showHide/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ShowHide.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/showHide/showHide.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/showHide/showHide.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -211,15 +202,13 @@ You can show or hide gantt columns dynamically using external buttons by invokin
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/showHide/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/showHide/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ShowHide.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/showHide/showHide.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/showHide/showHide.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/showhidecol.png)
 
@@ -231,10 +220,10 @@ You can enable or disable gantt action for a particular column by setting the `a
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/gridActions/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/gridActions/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="GridActions.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/gridActions/gridActions.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/gridActions/gridActions.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -242,15 +231,13 @@ You can enable or disable gantt action for a particular column by setting the `a
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/gridActions/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/gridActions/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="GridActions.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/gridActions/gridActions.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/gridActions/gridActions.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Column type
 
@@ -259,10 +246,11 @@ Column type can be specified using the `columns.type` property. It specifies the
 If the `format` is defined for a column, the column uses `type` to select the appropriate format option **number** or **date**.
 
 Gantt column supports the following types:
-* string
-* number
-* boolean
-* date
-* date-time
+
+- string
+- number
+- boolean
+- date
+- date-time
 
 N> If the `type` is not defined, it will be determined from the first record of the `dataSource`. In case if the first record of the `dataSource` is null/blank value for a column then it is necessary to define the `type` for that column.

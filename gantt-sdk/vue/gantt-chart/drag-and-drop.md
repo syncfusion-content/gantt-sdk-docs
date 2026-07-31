@@ -2,7 +2,7 @@
 layout: post
 title: Drag and Drop in Vue Gantt Chart component | Syncfusion
 description: Learn here all about Drag and Drop in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Drag and Drop 
+control: Drag and Drop
 platform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -18,14 +18,14 @@ To use row drag and drop feature, inject the `RowDD` and `Edit` modules in the `
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/rows-cs5/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/rows-cs5/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/rows-cs5/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/rows-cs5/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/rows-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/rows-cs5" %}
 
 ### Multiple row drag and drop
 
@@ -33,14 +33,14 @@ Gantt also supports dragging multiple rows at a time and drop them on any rows a
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/rows-cs6/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/rows-cs6/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/rows-cs6/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/rows-cs6/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/rows-cs6" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/rows-cs6" %}
 
 ### Taskbar drag and drop between rows
 
@@ -52,25 +52,25 @@ To use row drag and drop feature, inject the `RowDD` and `Edit` module in Gantt.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/rows-cs14/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/rows-cs14/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/rows-cs14/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/rows-cs14/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/rows-cs14" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/rows-cs14" %}
 
 ### Drag and drop events
 
 We provide various events to customize the row drag and drop action, the following table explains about the available events and its details.
 
-Event Name |Description
------|-----
-`rowDragStartHelper`  |Triggers when clicking the drag icon or Gantt row.
-`rowDragStart`  |Triggers when drag action starts in Gantt.
-`rowDrag`  |Triggers while dragging the Gantt row.
-`rowDrop`  |Triggers when a drag row was dropped on the target row.
+| Event Name           | Description                                             |
+| -------------------- | ------------------------------------------------------- |
+| `rowDragStartHelper` | Triggers when clicking the drag icon or Gantt row.      |
+| `rowDragStart`       | Triggers when drag action starts in Gantt.              |
+| `rowDrag`            | Triggers while dragging the Gantt row.                  |
+| `rowDrop`            | Triggers when a drag row was dropped on the target row. |
 
 ### Customize row drag and drop action
 
@@ -82,14 +82,14 @@ You can prevent drag action of the particular record by setting the `cancel` pro
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/rows-cs7/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/rows-cs7/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/rows-cs7/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/rows-cs7/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/rows-cs7" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/rows-cs7" %}
 
 #### Validating drop position
 
@@ -99,14 +99,14 @@ In the following sample, we have prevented the drop action based on the position
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/rows-cs8/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/rows-cs8/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/rows-cs8/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/rows-cs8/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/rows-cs8" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/rows-cs8" %}
 
 ### Prevent reordering a row as child to another row
 
@@ -116,14 +116,14 @@ In the below example drop action is cancelled and dropped above to target row.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/rows-cs9/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/rows-cs9/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/rows-cs9/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/rows-cs9/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/rows-cs9" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/rows-cs9" %}
 
 ### Perform row drag and drop action programmatically
 
@@ -131,19 +131,19 @@ Gantt provides option to perform row drag and drop action programmatically by us
 
 The following arguments are used to specify the positions to drag and drop a row:
 
-* `fromIndexes`: Index value of source(dragging) row.
-* `toIndex`: Value of target index.
-* `position`: Drop positions such as above, below, or child.
+- `fromIndexes`: Index value of source(dragging) row.
+- `toIndex`: Value of target index.
+- `position`: Drop positions such as above, below, or child.
 
 The following code example shows how to drag and drop a row on button click action.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/rows-cs10/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/rows-cs10/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/rows-cs10/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/rows-cs10/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/rows-cs10" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/rows-cs10" %}

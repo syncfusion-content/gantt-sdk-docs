@@ -20,13 +20,13 @@ The following example configures a Shimmer indicator:
 
 ```typescript
 export class AppComponent {
-    public loadingIndicator: object = {
-        indicatorType: 'Shimmer'
-    };
+  public loadingIndicator: object = {
+    indicatorType: "Shimmer",
+  };
 
-    public data: object[] = [
-        // Large dataset for demonstration.
-    ];
+  public data: object[] = [
+    // Large dataset for demonstration.
+  ];
 }
 ```
 
@@ -36,19 +36,19 @@ The following example shows indicator usage:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/loading-animation-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/loading-animation-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/loading-animation-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/loading-animation-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/loading-animation-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/loading-animation-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/loading-animation-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/loading-animation-cs1" %}
 
 ## Control loading indicators manually
 
@@ -56,39 +56,39 @@ For custom scenarios, such as asynchronous data processing, manually control ind
 
 The following example demonstrates manual control:
 
-
 ```typescript
 export class AppComponent {
-    @ViewChild('gantt', { static: true })
-    public ganttInstance: GanttComponent;
+  @ViewChild("gantt", { static: true })
+  public ganttInstance: GanttComponent;
 
-    showCustomLoading() {
-        // Display loading indicator manually.
-        this.ganttInstance.showSpinner();
-        
-        // Perform custom operation
-        this.performCustomDataOperation().then(() => {
-          // Hiding loading indicator manually.
-            this.ganttInstance.hideSpinner();
-        });
-    }
+  showCustomLoading() {
+    // Display loading indicator manually.
+    this.ganttInstance.showSpinner();
 
-    async performCustomDataOperation(): Promise<void> {
-        // Simulate data processing.
-        return new Promise(resolve => {
-            setTimeout(() => {
-                // Custom data manipulation.
-                this.updateProjectData();
-                resolve();
-            }, 2000);
-        });
-    }
+    // Perform custom operation
+    this.performCustomDataOperation().then(() => {
+      // Hiding loading indicator manually.
+      this.ganttInstance.hideSpinner();
+    });
+  }
+
+  async performCustomDataOperation(): Promise<void> {
+    // Simulate data processing.
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        // Custom data manipulation.
+        this.updateProjectData();
+        resolve();
+      }, 2000);
+    });
+  }
 }
 ```
 
 This code displays a loading indicator during a simulated 2-second data operation, ensuring clear feedback. Use manual control only for specific business logic to avoid overriding automatic behavior.
 
 ## See also
+
 - [How to configure virtual scrolling?](https://ej2.syncfusion.com/angular/documentation/gantt/scrolling/virtual-scrolling)
 - [How to manage data filtering?](https://ej2.syncfusion.com/angular/documentation/gantt/filtering)
 - [How to enable sorting?](https://ej2.syncfusion.com/angular/documentation/gantt/sorting)

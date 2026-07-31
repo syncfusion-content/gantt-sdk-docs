@@ -13,68 +13,68 @@ The Syncfusion® Blazor Gantt Chart component includes built-in undo and redo fu
 
 ## Enable undo and redo
 
-The **Undo** in the Blazor Gantt Chart reverts the most recent action, such as modifications to tasks, dependencies, and other supported operations, while the **Redo** reapplies an action that was previously undone using the **Undo** option. This functionality can be enabled by setting the [EnableUndoRedo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_EnableUndoRedo) property in the Gantt Chart component. When enabled, undo and redo operations can be performed using the built-in toolbar items, and the [OnUndoRedo](https://blazor.syncfusion.com/documentation/gantt-chart/events#onundoredo) event is triggered after each undo or redo operation is completed.
+The **Undo** in the Blazor Gantt Chart reverts the most recent action, such as modifications to tasks, dependencies, and other supported operations, while the **Redo** reapplies an action that was previously undone using the **Undo** option. This functionality can be enabled by setting the [EnableUndoRedo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_EnableUndoRedo) property in the Gantt Chart component. When enabled, undo and redo operations can be performed using the built-in toolbar items, and the [OnUndoRedo](https://blazor.syncfusion.com/documentation/gantt/events#onundoredo) event is triggered after each undo or redo operation is completed.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="500px" Width="100%" HighlightWeekends="true" EnableUndoRedo="true" UndoRedoActions="@undoRedoActions"
-         Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Undo", "Redo", "ZoomIn", "ZoomOut", "ZoomToFit", "PrevTimeSpan", "NextTimeSpan" })"
-         TreeColumnIndex="1" EnableContextMenu="true" AllowSorting="true" ShowColumnMenu="true" AllowResizing="true" AllowReordering="true" AllowFiltering="true">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
+Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Undo", "Redo", "ZoomIn", "ZoomOut", "ZoomToFit", "PrevTimeSpan", "NextTimeSpan" })"
+TreeColumnIndex="1" EnableContextMenu="true" AllowSorting="true" ShowColumnMenu="true" AllowResizing="true" AllowReordering="true" AllowFiltering="true">
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
                      Dependency="Predecessor" ParentID="ParentId"></GanttTaskFields>
-    <GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true"></GanttEditSettings>
-    <GanttColumns>
-        <GanttColumn Field="TaskId" HeaderText="ID"></GanttColumn>
-        <GanttColumn Field="TaskName" HeaderText="Task Name" Width="250" ClipMode="Syncfusion.Blazor.Grids.ClipMode.EllipsisWithTooltip"></GanttColumn>
-        <GanttColumn Field="StartDate" HeaderText="Start Date"></GanttColumn>
-        <GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
-        <GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
-        <GanttColumn Field="Progress" HeaderText="Progress"></GanttColumn>
-    </GanttColumns>
-    <GanttSplitterSettings ColumnIndex="2"></GanttSplitterSettings>
-    <GanttLabelSettings RightLabel="TaskName" TValue="TaskModel"></GanttLabelSettings>
+<GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true"></GanttEditSettings>
+<GanttColumns>
+<GanttColumn Field="TaskId" HeaderText="ID"></GanttColumn>
+<GanttColumn Field="TaskName" HeaderText="Task Name" Width="250" ClipMode="Syncfusion.Blazor.Grids.ClipMode.EllipsisWithTooltip"></GanttColumn>
+<GanttColumn Field="StartDate" HeaderText="Start Date"></GanttColumn>
+<GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
+<GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
+<GanttColumn Field="Progress" HeaderText="Progress"></GanttColumn>
+</GanttColumns>
+<GanttSplitterSettings ColumnIndex="2"></GanttSplitterSettings>
+<GanttLabelSettings RightLabel="TaskName" TValue="TaskModel"></GanttLabelSettings>
 </SfGantt>
 @code {
-    public List<TaskModel> TaskCollection { get; set; } = new();
-    private List<GanttUndoRedoAction> undoRedoActions = new List<GanttUndoRedoAction> {
-        GanttUndoRedoAction.Sort, GanttUndoRedoAction.Add, GanttUndoRedoAction.ColumnReorder, GanttUndoRedoAction.TaskbarEdit,
-        GanttUndoRedoAction.ColumnState, GanttUndoRedoAction.Edit, GanttUndoRedoAction.Filter, GanttUndoRedoAction.NextTimeSpan, GanttUndoRedoAction.PreviousTimeSpan, GanttUndoRedoAction.Search,GanttUndoRedoAction.Delete,
-        GanttUndoRedoAction.ZoomIn, GanttUndoRedoAction.ZoomOut, GanttUndoRedoAction.ZoomToFit,GanttUndoRedoAction.Collapse,GanttUndoRedoAction.Expand,GanttUndoRedoAction.SplitterResize
-    };
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetUndoRedoData();
-    }
-    public class TaskModel
-    {
-        public int TaskId { get; set; }
-        public string? TaskName { get; set; }
-        public DateTime? StartDate { get; set; }
-        public DateTime? EndDate { get; set; }
-        public string? Duration { get; set; }
-        public int Progress { get; set; }
-        public string? Predecessor { get; set; }
-        public int? ParentId { get; set; }
-    }
-    public static List<TaskModel> GetUndoRedoData()
-    {
-        List<TaskModel> Tasks = new List<TaskModel>
-        {
-            new TaskModel { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2026, 11, 02), EndDate = new DateTime(2026, 11, 03), Duration = "2", Progress = 100 },
-            new TaskModel { TaskId = 2, TaskName = "Identify site location", StartDate = new DateTime(2026, 11, 02), EndDate = new DateTime(2026, 11, 04), Duration = "3", Progress = 100, ParentId = 1 },
-            new TaskModel { TaskId = 3, TaskName = "Site analyze", StartDate = new DateTime(2026, 11, 02), EndDate = new DateTime(2026, 11, 03), Duration = "2", Progress = 90, ParentId = 1, },
-            new TaskModel { TaskId = 4, TaskName = "Perform soil test", StartDate = new DateTime(2026, 11, 03), EndDate = new DateTime(2026, 11, 05), Duration = "3", Progress = 0, },
-            new TaskModel { TaskId = 5, TaskName = "Soil test approval", StartDate = new DateTime(2026, 11, 03), EndDate = new DateTime(2026, 11, 04), Duration = "2", Progress = 0, ParentId = 4 },
-            new TaskModel { TaskId = 6, TaskName = "Project estimation", StartDate = new DateTime(2026, 11, 05), EndDate = new DateTime(2026, 11, 05), Duration = "0", Progress = 0, ParentId = 4},
-            new TaskModel { TaskId = 7, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2026, 11, 06), EndDate = new DateTime(2026, 11, 09), Duration = "4", Progress = 0},
-            new TaskModel { TaskId = 8, TaskName = "List materials", StartDate = new DateTime(2026, 11, 06), EndDate = new DateTime(2026, 11, 07), Duration = "2", Progress = 0, ParentId = 7 },
-            new TaskModel { TaskId = 9, TaskName = "Estimation approval", StartDate = new DateTime(2026, 11, 08), EndDate = new DateTime(2026, 11, 09), Duration = "2", Progress = 0, ParentId = 7 },
-            new TaskModel { TaskId = 10, TaskName = "Building approval", StartDate = new DateTime(2026, 11, 10), EndDate = new DateTime(2026, 11, 16), Duration = "7", Progress = 0 },
-        };
-        return Tasks;
-    }
+public List<TaskModel> TaskCollection { get; set; } = new();
+private List<GanttUndoRedoAction> undoRedoActions = new List<GanttUndoRedoAction> {
+GanttUndoRedoAction.Sort, GanttUndoRedoAction.Add, GanttUndoRedoAction.ColumnReorder, GanttUndoRedoAction.TaskbarEdit,
+GanttUndoRedoAction.ColumnState, GanttUndoRedoAction.Edit, GanttUndoRedoAction.Filter, GanttUndoRedoAction.NextTimeSpan, GanttUndoRedoAction.PreviousTimeSpan, GanttUndoRedoAction.Search,GanttUndoRedoAction.Delete,
+GanttUndoRedoAction.ZoomIn, GanttUndoRedoAction.ZoomOut, GanttUndoRedoAction.ZoomToFit,GanttUndoRedoAction.Collapse,GanttUndoRedoAction.Expand,GanttUndoRedoAction.SplitterResize
+};
+protected override void OnInitialized()
+{
+TaskCollection = GetUndoRedoData();
+}
+public class TaskModel
+{
+public int TaskId { get; set; }
+public string? TaskName { get; set; }
+public DateTime? StartDate { get; set; }
+public DateTime? EndDate { get; set; }
+public string? Duration { get; set; }
+public int Progress { get; set; }
+public string? Predecessor { get; set; }
+public int? ParentId { get; set; }
+}
+public static List<TaskModel> GetUndoRedoData()
+{
+List<TaskModel> Tasks = new List<TaskModel>
+{
+new TaskModel { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2026, 11, 02), EndDate = new DateTime(2026, 11, 03), Duration = "2", Progress = 100 },
+new TaskModel { TaskId = 2, TaskName = "Identify site location", StartDate = new DateTime(2026, 11, 02), EndDate = new DateTime(2026, 11, 04), Duration = "3", Progress = 100, ParentId = 1 },
+new TaskModel { TaskId = 3, TaskName = "Site analyze", StartDate = new DateTime(2026, 11, 02), EndDate = new DateTime(2026, 11, 03), Duration = "2", Progress = 90, ParentId = 1, },
+new TaskModel { TaskId = 4, TaskName = "Perform soil test", StartDate = new DateTime(2026, 11, 03), EndDate = new DateTime(2026, 11, 05), Duration = "3", Progress = 0, },
+new TaskModel { TaskId = 5, TaskName = "Soil test approval", StartDate = new DateTime(2026, 11, 03), EndDate = new DateTime(2026, 11, 04), Duration = "2", Progress = 0, ParentId = 4 },
+new TaskModel { TaskId = 6, TaskName = "Project estimation", StartDate = new DateTime(2026, 11, 05), EndDate = new DateTime(2026, 11, 05), Duration = "0", Progress = 0, ParentId = 4},
+new TaskModel { TaskId = 7, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2026, 11, 06), EndDate = new DateTime(2026, 11, 09), Duration = "4", Progress = 0},
+new TaskModel { TaskId = 8, TaskName = "List materials", StartDate = new DateTime(2026, 11, 06), EndDate = new DateTime(2026, 11, 07), Duration = "2", Progress = 0, ParentId = 7 },
+new TaskModel { TaskId = 9, TaskName = "Estimation approval", StartDate = new DateTime(2026, 11, 08), EndDate = new DateTime(2026, 11, 09), Duration = "2", Progress = 0, ParentId = 7 },
+new TaskModel { TaskId = 10, TaskName = "Building approval", StartDate = new DateTime(2026, 11, 10), EndDate = new DateTime(2026, 11, 16), Duration = "7", Progress = 0 },
+};
+return Tasks;
+}
 }
 
 {% endhighlight %}
@@ -116,66 +116,65 @@ The following table lists the built-in actions that can be included for undo and
 | Expand                   | Restores expand state changes on records.                                                  |
 | Collapse                 | Restores collapse state changes on records.                                                |
 
-
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="500px" Width="100%" HighlightWeekends="true" EnableUndoRedo="true" UndoRedoActions="@undoRedoActions"
-         Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Undo", "Redo", "ZoomIn", "ZoomOut", "ZoomToFit", "PrevTimeSpan", "NextTimeSpan" })"
-         TreeColumnIndex="1" EnableContextMenu="true" AllowFiltering="true">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
+Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Undo", "Redo", "ZoomIn", "ZoomOut", "ZoomToFit", "PrevTimeSpan", "NextTimeSpan" })"
+TreeColumnIndex="1" EnableContextMenu="true" AllowFiltering="true">
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
                      Dependency="Predecessor" ParentID="ParentId"></GanttTaskFields>
-    <GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true"></GanttEditSettings>
-    <GanttColumns>
-        <GanttColumn Field="TaskId" HeaderText="ID"></GanttColumn>
-        <GanttColumn Field="TaskName" HeaderText="Task Name" Width="250" ClipMode="Syncfusion.Blazor.Grids.ClipMode.EllipsisWithTooltip"></GanttColumn>
-        <GanttColumn Field="StartDate" HeaderText="Start Date"></GanttColumn>
-        <GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
-        <GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
-        <GanttColumn Field="Progress" HeaderText="Progress"></GanttColumn>
-    </GanttColumns>
-    <GanttSplitterSettings ColumnIndex="2"></GanttSplitterSettings>
-    <GanttLabelSettings RightLabel="TaskName" TValue="TaskModel"></GanttLabelSettings>
+<GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true"></GanttEditSettings>
+<GanttColumns>
+<GanttColumn Field="TaskId" HeaderText="ID"></GanttColumn>
+<GanttColumn Field="TaskName" HeaderText="Task Name" Width="250" ClipMode="Syncfusion.Blazor.Grids.ClipMode.EllipsisWithTooltip"></GanttColumn>
+<GanttColumn Field="StartDate" HeaderText="Start Date"></GanttColumn>
+<GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
+<GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
+<GanttColumn Field="Progress" HeaderText="Progress"></GanttColumn>
+</GanttColumns>
+<GanttSplitterSettings ColumnIndex="2"></GanttSplitterSettings>
+<GanttLabelSettings RightLabel="TaskName" TValue="TaskModel"></GanttLabelSettings>
 </SfGantt>
 @code {
-    public List<TaskModel> TaskCollection { get; set; } = new();
-    private List<GanttUndoRedoAction> undoRedoActions = new List<GanttUndoRedoAction> { GanttUndoRedoAction.Add, GanttUndoRedoAction.TaskbarEdit,
-        GanttUndoRedoAction.Edit, GanttUndoRedoAction.Filter, GanttUndoRedoAction.NextTimeSpan, GanttUndoRedoAction.PreviousTimeSpan,GanttUndoRedoAction.Delete,
-        GanttUndoRedoAction.ZoomIn, GanttUndoRedoAction.ZoomOut, GanttUndoRedoAction.ZoomToFit,GanttUndoRedoAction.Collapse,GanttUndoRedoAction.Expand, GanttUndoRedoAction.SplitterResize
-    };
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetUndoRedoData();
-    }
-    public class TaskModel
-    {
-        public int TaskId { get; set; }
-        public string? TaskName { get; set; }
-        public DateTime? StartDate { get; set; }
-        public DateTime? EndDate { get; set; }
-        public string? Duration { get; set; }
-        public int Progress { get; set; }
-        public string? Predecessor { get; set; }
-        public int? ParentId { get; set; }
-    }
-    public static List<TaskModel> GetUndoRedoData()
-    {
-        List<TaskModel> Tasks = new List<TaskModel>
-        {
-            new TaskModel { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2026, 11, 02), EndDate = new DateTime(2026, 11, 03), Duration = "2", Progress = 100 },
-            new TaskModel { TaskId = 2, TaskName = "Identify site location", StartDate = new DateTime(2026, 11, 02), EndDate = new DateTime(2026, 11, 04), Duration = "3", Progress = 100, ParentId = 1 },
-            new TaskModel { TaskId = 3, TaskName = "Site analyze", StartDate = new DateTime(2026, 11, 02), EndDate = new DateTime(2026, 11, 03), Duration = "2", Progress = 90, ParentId = 1, },
-            new TaskModel { TaskId = 4, TaskName = "Perform soil test", StartDate = new DateTime(2026, 11, 03), EndDate = new DateTime(2026, 11, 05), Duration = "3", Progress = 0, },
-            new TaskModel { TaskId = 5, TaskName = "Soil test approval", StartDate = new DateTime(2026, 11, 03), EndDate = new DateTime(2026, 11, 04), Duration = "2", Progress = 0, ParentId = 4 },
-            new TaskModel { TaskId = 6, TaskName = "Project estimation", StartDate = new DateTime(2026, 11, 05), EndDate = new DateTime(2026, 11, 05), Duration = "0", Progress = 0, ParentId = 4},
-            new TaskModel { TaskId = 7, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2026, 11, 06), EndDate = new DateTime(2026, 11, 09), Duration = "4", Progress = 0},
-            new TaskModel { TaskId = 8, TaskName = "List materials", StartDate = new DateTime(2026, 11, 06), EndDate = new DateTime(2026, 11, 07), Duration = "2", Progress = 0, ParentId = 7 },
-            new TaskModel { TaskId = 9, TaskName = "Estimation approval", StartDate = new DateTime(2026, 11, 08), EndDate = new DateTime(2026, 11, 09), Duration = "2", Progress = 0, ParentId = 7 },
-            new TaskModel { TaskId = 10, TaskName = "Building approval", StartDate = new DateTime(2026, 11, 10), EndDate = new DateTime(2026, 11, 16), Duration = "7", Progress = 0 },
-        };
-        return Tasks;
-    }
+public List<TaskModel> TaskCollection { get; set; } = new();
+private List<GanttUndoRedoAction> undoRedoActions = new List<GanttUndoRedoAction> { GanttUndoRedoAction.Add, GanttUndoRedoAction.TaskbarEdit,
+GanttUndoRedoAction.Edit, GanttUndoRedoAction.Filter, GanttUndoRedoAction.NextTimeSpan, GanttUndoRedoAction.PreviousTimeSpan,GanttUndoRedoAction.Delete,
+GanttUndoRedoAction.ZoomIn, GanttUndoRedoAction.ZoomOut, GanttUndoRedoAction.ZoomToFit,GanttUndoRedoAction.Collapse,GanttUndoRedoAction.Expand, GanttUndoRedoAction.SplitterResize
+};
+protected override void OnInitialized()
+{
+TaskCollection = GetUndoRedoData();
+}
+public class TaskModel
+{
+public int TaskId { get; set; }
+public string? TaskName { get; set; }
+public DateTime? StartDate { get; set; }
+public DateTime? EndDate { get; set; }
+public string? Duration { get; set; }
+public int Progress { get; set; }
+public string? Predecessor { get; set; }
+public int? ParentId { get; set; }
+}
+public static List<TaskModel> GetUndoRedoData()
+{
+List<TaskModel> Tasks = new List<TaskModel>
+{
+new TaskModel { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2026, 11, 02), EndDate = new DateTime(2026, 11, 03), Duration = "2", Progress = 100 },
+new TaskModel { TaskId = 2, TaskName = "Identify site location", StartDate = new DateTime(2026, 11, 02), EndDate = new DateTime(2026, 11, 04), Duration = "3", Progress = 100, ParentId = 1 },
+new TaskModel { TaskId = 3, TaskName = "Site analyze", StartDate = new DateTime(2026, 11, 02), EndDate = new DateTime(2026, 11, 03), Duration = "2", Progress = 90, ParentId = 1, },
+new TaskModel { TaskId = 4, TaskName = "Perform soil test", StartDate = new DateTime(2026, 11, 03), EndDate = new DateTime(2026, 11, 05), Duration = "3", Progress = 0, },
+new TaskModel { TaskId = 5, TaskName = "Soil test approval", StartDate = new DateTime(2026, 11, 03), EndDate = new DateTime(2026, 11, 04), Duration = "2", Progress = 0, ParentId = 4 },
+new TaskModel { TaskId = 6, TaskName = "Project estimation", StartDate = new DateTime(2026, 11, 05), EndDate = new DateTime(2026, 11, 05), Duration = "0", Progress = 0, ParentId = 4},
+new TaskModel { TaskId = 7, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2026, 11, 06), EndDate = new DateTime(2026, 11, 09), Duration = "4", Progress = 0},
+new TaskModel { TaskId = 8, TaskName = "List materials", StartDate = new DateTime(2026, 11, 06), EndDate = new DateTime(2026, 11, 07), Duration = "2", Progress = 0, ParentId = 7 },
+new TaskModel { TaskId = 9, TaskName = "Estimation approval", StartDate = new DateTime(2026, 11, 08), EndDate = new DateTime(2026, 11, 09), Duration = "2", Progress = 0, ParentId = 7 },
+new TaskModel { TaskId = 10, TaskName = "Building approval", StartDate = new DateTime(2026, 11, 10), EndDate = new DateTime(2026, 11, 16), Duration = "7", Progress = 0 },
+};
+return Tasks;
+}
 }
 
 {% endhighlight %}
@@ -194,60 +193,60 @@ The following example illustrates how to configure the maximum number of undo an
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="500px" Width="100%" HighlightWeekends="true" EnableUndoRedo="true" UndoRedoActions="@undoRedoActions"
-         Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Undo", "Redo", "ZoomIn", "ZoomOut", "ZoomToFit", "PrevTimeSpan", "NextTimeSpan" })"
-         TreeColumnIndex="1" EnableContextMenu="true" AllowFiltering="true" MaxUndoRedoSteps="5">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
+Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Undo", "Redo", "ZoomIn", "ZoomOut", "ZoomToFit", "PrevTimeSpan", "NextTimeSpan" })"
+TreeColumnIndex="1" EnableContextMenu="true" AllowFiltering="true" MaxUndoRedoSteps="5">
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
                      Dependency="Predecessor" ParentID="ParentId"></GanttTaskFields>
-    <GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true"></GanttEditSettings>
-    <GanttColumns>
-        <GanttColumn Field="TaskId" HeaderText="ID"></GanttColumn>
-        <GanttColumn Field="TaskName" HeaderText="Task Name" Width="250" ClipMode="Syncfusion.Blazor.Grids.ClipMode.EllipsisWithTooltip"></GanttColumn>
-        <GanttColumn Field="StartDate" HeaderText="Start Date"></GanttColumn>
-        <GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
-        <GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
-        <GanttColumn Field="Progress" HeaderText="Progress"></GanttColumn>
-    </GanttColumns>
-    <GanttSplitterSettings ColumnIndex="2"></GanttSplitterSettings>
-    <GanttLabelSettings RightLabel="TaskName" TValue="TaskModel"></GanttLabelSettings>
+<GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true"></GanttEditSettings>
+<GanttColumns>
+<GanttColumn Field="TaskId" HeaderText="ID"></GanttColumn>
+<GanttColumn Field="TaskName" HeaderText="Task Name" Width="250" ClipMode="Syncfusion.Blazor.Grids.ClipMode.EllipsisWithTooltip"></GanttColumn>
+<GanttColumn Field="StartDate" HeaderText="Start Date"></GanttColumn>
+<GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
+<GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
+<GanttColumn Field="Progress" HeaderText="Progress"></GanttColumn>
+</GanttColumns>
+<GanttSplitterSettings ColumnIndex="2"></GanttSplitterSettings>
+<GanttLabelSettings RightLabel="TaskName" TValue="TaskModel"></GanttLabelSettings>
 </SfGantt>
 @code {
-    public List<TaskModel> TaskCollection { get; set; } = new();
-    private List<GanttUndoRedoAction> undoRedoActions = new List<GanttUndoRedoAction> { GanttUndoRedoAction.Add, GanttUndoRedoAction.TaskbarEdit,
-        GanttUndoRedoAction.Edit, GanttUndoRedoAction.Filter, GanttUndoRedoAction.NextTimeSpan, GanttUndoRedoAction.PreviousTimeSpan,GanttUndoRedoAction.Delete,
-        GanttUndoRedoAction.ZoomIn, GanttUndoRedoAction.ZoomOut, GanttUndoRedoAction.ZoomToFit,GanttUndoRedoAction.Collapse,GanttUndoRedoAction.Expand, GanttUndoRedoAction.SplitterResize
-    };
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetUndoRedoData();
-    }
-    public class TaskModel
-    {
-        public int TaskId { get; set; }
-        public string? TaskName { get; set; }
-        public DateTime? StartDate { get; set; }
-        public DateTime? EndDate { get; set; }
-        public string? Duration { get; set; }
-        public int Progress { get; set; }
-        public string? Predecessor { get; set; }
-        public int? ParentId { get; set; }
-    }
-    public static List<TaskModel> GetUndoRedoData()
-    {
-        List<TaskModel> Tasks = new List<TaskModel>
-        {
-            new TaskModel { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2026, 11, 02), EndDate = new DateTime(2026, 11, 03), Duration = "2", Progress = 100 },
-            new TaskModel { TaskId = 2, TaskName = "Identify site location", StartDate = new DateTime(2026, 11, 02), EndDate = new DateTime(2026, 11, 04), Duration = "3", Progress = 100, ParentId = 1 },
-            new TaskModel { TaskId = 3, TaskName = "Site analyze", StartDate = new DateTime(2026, 11, 02), EndDate = new DateTime(2026, 11, 03), Duration = "2", Progress = 90, ParentId = 1, },
-            new TaskModel { TaskId = 4, TaskName = "Perform soil test", StartDate = new DateTime(2026, 11, 03), EndDate = new DateTime(2026, 11, 05), Duration = "3", Progress = 0, },
-            new TaskModel { TaskId = 5, TaskName = "Soil test approval", StartDate = new DateTime(2026, 11, 03), EndDate = new DateTime(2026, 11, 04), Duration = "2", Progress = 0, ParentId = 4 },
-            new TaskModel { TaskId = 6, TaskName = "Project estimation", StartDate = new DateTime(2026, 11, 05), EndDate = new DateTime(2026, 11, 05), Duration = "0", Progress = 0, ParentId = 4},
-            new TaskModel { TaskId = 7, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2026, 11, 06), EndDate = new DateTime(2026, 11, 09), Duration = "4", Progress = 0},
-            new TaskModel { TaskId = 8, TaskName = "List materials", StartDate = new DateTime(2026, 11, 06), EndDate = new DateTime(2026, 11, 07), Duration = "2", Progress = 0, ParentId = 7 },
-            new TaskModel { TaskId = 9, TaskName = "Estimation approval", StartDate = new DateTime(2026, 11, 08), EndDate = new DateTime(2026, 11, 09), Duration = "2", Progress = 0, ParentId = 7 },
-            new TaskModel { TaskId = 10, TaskName = "Building approval", StartDate = new DateTime(2026, 11, 10), EndDate = new DateTime(2026, 11, 16), Duration = "7", Progress = 0 },
-        };
-        return Tasks;
-    }
+public List<TaskModel> TaskCollection { get; set; } = new();
+private List<GanttUndoRedoAction> undoRedoActions = new List<GanttUndoRedoAction> { GanttUndoRedoAction.Add, GanttUndoRedoAction.TaskbarEdit,
+GanttUndoRedoAction.Edit, GanttUndoRedoAction.Filter, GanttUndoRedoAction.NextTimeSpan, GanttUndoRedoAction.PreviousTimeSpan,GanttUndoRedoAction.Delete,
+GanttUndoRedoAction.ZoomIn, GanttUndoRedoAction.ZoomOut, GanttUndoRedoAction.ZoomToFit,GanttUndoRedoAction.Collapse,GanttUndoRedoAction.Expand, GanttUndoRedoAction.SplitterResize
+};
+protected override void OnInitialized()
+{
+TaskCollection = GetUndoRedoData();
+}
+public class TaskModel
+{
+public int TaskId { get; set; }
+public string? TaskName { get; set; }
+public DateTime? StartDate { get; set; }
+public DateTime? EndDate { get; set; }
+public string? Duration { get; set; }
+public int Progress { get; set; }
+public string? Predecessor { get; set; }
+public int? ParentId { get; set; }
+}
+public static List<TaskModel> GetUndoRedoData()
+{
+List<TaskModel> Tasks = new List<TaskModel>
+{
+new TaskModel { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2026, 11, 02), EndDate = new DateTime(2026, 11, 03), Duration = "2", Progress = 100 },
+new TaskModel { TaskId = 2, TaskName = "Identify site location", StartDate = new DateTime(2026, 11, 02), EndDate = new DateTime(2026, 11, 04), Duration = "3", Progress = 100, ParentId = 1 },
+new TaskModel { TaskId = 3, TaskName = "Site analyze", StartDate = new DateTime(2026, 11, 02), EndDate = new DateTime(2026, 11, 03), Duration = "2", Progress = 90, ParentId = 1, },
+new TaskModel { TaskId = 4, TaskName = "Perform soil test", StartDate = new DateTime(2026, 11, 03), EndDate = new DateTime(2026, 11, 05), Duration = "3", Progress = 0, },
+new TaskModel { TaskId = 5, TaskName = "Soil test approval", StartDate = new DateTime(2026, 11, 03), EndDate = new DateTime(2026, 11, 04), Duration = "2", Progress = 0, ParentId = 4 },
+new TaskModel { TaskId = 6, TaskName = "Project estimation", StartDate = new DateTime(2026, 11, 05), EndDate = new DateTime(2026, 11, 05), Duration = "0", Progress = 0, ParentId = 4},
+new TaskModel { TaskId = 7, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2026, 11, 06), EndDate = new DateTime(2026, 11, 09), Duration = "4", Progress = 0},
+new TaskModel { TaskId = 8, TaskName = "List materials", StartDate = new DateTime(2026, 11, 06), EndDate = new DateTime(2026, 11, 07), Duration = "2", Progress = 0, ParentId = 7 },
+new TaskModel { TaskId = 9, TaskName = "Estimation approval", StartDate = new DateTime(2026, 11, 08), EndDate = new DateTime(2026, 11, 09), Duration = "2", Progress = 0, ParentId = 7 },
+new TaskModel { TaskId = 10, TaskName = "Building approval", StartDate = new DateTime(2026, 11, 10), EndDate = new DateTime(2026, 11, 16), Duration = "7", Progress = 0 },
+};
+return Tasks;
+}
 }
 
 {% endhighlight %}
@@ -270,32 +269,32 @@ In the following example, clicking an external button invokes the `UndoAsync` me
 <SfButton OnClick="@UndoHandler">Undo</SfButton>
 <SfButton OnClick="@RedoHandler">Redo</SfButton>
 <SfGantt @ref="Gantt" DataSource="@TaskCollection" Height="500px" Width="100%" HighlightWeekends="true" EnableUndoRedo="true" UndoRedoActions="@undoRedoActions"
-         Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Undo", "Redo", "ZoomIn", "ZoomOut", "ZoomToFit", "PrevTimeSpan", "NextTimeSpan" })"
-         TreeColumnIndex="1" EnableContextMenu="true" AllowFiltering="true" MaxUndoRedoSteps="5">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId"></GanttTaskFields>
-    <GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true"></GanttEditSettings>
-    <GanttColumns>
-        <GanttColumn Field="TaskId" HeaderText="ID"></GanttColumn>
-        <GanttColumn Field="TaskName" HeaderText="Task Name" Width="250" ClipMode="Syncfusion.Blazor.Grids.ClipMode.EllipsisWithTooltip"></GanttColumn>
-        <GanttColumn Field="StartDate" HeaderText="Start Date"></GanttColumn>
-        <GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
-        <GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
-        <GanttColumn Field="Progress" HeaderText="Progress"></GanttColumn>
-    </GanttColumns>
-    <GanttSplitterSettings ColumnIndex="2"></GanttSplitterSettings>
-    <GanttLabelSettings RightLabel="TaskName" TValue="TaskModel"></GanttLabelSettings>
+Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Undo", "Redo", "ZoomIn", "ZoomOut", "ZoomToFit", "PrevTimeSpan", "NextTimeSpan" })"
+TreeColumnIndex="1" EnableContextMenu="true" AllowFiltering="true" MaxUndoRedoSteps="5">
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId"></GanttTaskFields>
+<GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true"></GanttEditSettings>
+<GanttColumns>
+<GanttColumn Field="TaskId" HeaderText="ID"></GanttColumn>
+<GanttColumn Field="TaskName" HeaderText="Task Name" Width="250" ClipMode="Syncfusion.Blazor.Grids.ClipMode.EllipsisWithTooltip"></GanttColumn>
+<GanttColumn Field="StartDate" HeaderText="Start Date"></GanttColumn>
+<GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
+<GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
+<GanttColumn Field="Progress" HeaderText="Progress"></GanttColumn>
+</GanttColumns>
+<GanttSplitterSettings ColumnIndex="2"></GanttSplitterSettings>
+<GanttLabelSettings RightLabel="TaskName" TValue="TaskModel"></GanttLabelSettings>
 </SfGantt>
 @code {
-    public SfGantt<TaskModel>? Gantt;
-    public List<TaskModel> TaskCollection { get; set; } = new();
-    private List<GanttUndoRedoAction> undoRedoActions = new List<GanttUndoRedoAction> { GanttUndoRedoAction.Add, GanttUndoRedoAction.TaskbarEdit,
-        GanttUndoRedoAction.Edit, GanttUndoRedoAction.Filter, GanttUndoRedoAction.NextTimeSpan, GanttUndoRedoAction.PreviousTimeSpan,GanttUndoRedoAction.Delete,
-        GanttUndoRedoAction.ZoomIn, GanttUndoRedoAction.ZoomOut, GanttUndoRedoAction.ZoomToFit,GanttUndoRedoAction.Collapse,GanttUndoRedoAction.Expand, GanttUndoRedoAction.SplitterResize
-    };
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetUndoRedoData();
-    }
+public SfGantt<TaskModel>? Gantt;
+public List<TaskModel> TaskCollection { get; set; } = new();
+private List<GanttUndoRedoAction> undoRedoActions = new List<GanttUndoRedoAction> { GanttUndoRedoAction.Add, GanttUndoRedoAction.TaskbarEdit,
+GanttUndoRedoAction.Edit, GanttUndoRedoAction.Filter, GanttUndoRedoAction.NextTimeSpan, GanttUndoRedoAction.PreviousTimeSpan,GanttUndoRedoAction.Delete,
+GanttUndoRedoAction.ZoomIn, GanttUndoRedoAction.ZoomOut, GanttUndoRedoAction.ZoomToFit,GanttUndoRedoAction.Collapse,GanttUndoRedoAction.Expand, GanttUndoRedoAction.SplitterResize
+};
+protected override void OnInitialized()
+{
+TaskCollection = GetUndoRedoData();
+}
 
     /// <summary>
     /// Handles the undo action by invoking the Gantt Chart component's asynchronous undo logic.
@@ -306,7 +305,7 @@ In the following example, clicking an external button invokes the `UndoAsync` me
         {
             await Gantt.UndoAsync();
         }
-        
+
     }
 
     /// <summary>
@@ -318,7 +317,7 @@ In the following example, clicking an external button invokes the `UndoAsync` me
         {
             await Gantt.RedoAsync();
         }
-        
+
     }
     public class TaskModel
     {
@@ -347,8 +346,8 @@ In the following example, clicking an external button invokes the `UndoAsync` me
         };
         return Tasks;
     }
-}
 
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -356,5 +355,6 @@ In the following example, clicking an external button invokes the `UndoAsync` me
 {% previewsample "https://blazorplayground.syncfusion.com/embed/hXVnXdVroTNIBznu?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 ## See Also
-- [How to add undo/redo events?](https://blazor.syncfusion.com/documentation/gantt-chart/events#onundoredo)
-- [What are the keys used for undo/redo?](https://blazor.syncfusion.com/documentation/gantt-chart/accessibility#undo-redo)
+
+- [How to add undo/redo events?](https://blazor.syncfusion.com/documentation/gantt/events#onundoredo)
+- [What are the keys used for undo/redo?](https://blazor.syncfusion.com/documentation/gantt/accessibility#undo-redo)

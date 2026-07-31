@@ -3,7 +3,7 @@ layout: post
 title: Globalization and Localization in React Gantt Chart | Syncfusion
 description: Learn here all about globalization and localization in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Globalization and Localization 
+control: Globalization and Localization
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -27,8 +27,9 @@ Implement globalization when targeting multilingual users, complying with region
 The [Localization](../common/localization) library allows you to localize default text content of the Gantt Chart component. Static text elements such as column headers, dialog titles, tooltips, toolbar items, and system messages can be translated to different languages by defining the [locale](https://ej2.syncfusion.com/react/documentation/api/gantt#locale) value and providing translation objects.
 
 1. **Import required libraries**:
+
    ```typescript
-   import { L10n, setCulture } from '@syncfusion/ej2-base';
+   import { L10n, setCulture } from "@syncfusion/ej2-base";
    ```
 
 2. **Define translation objects** for your target languages with complete locale coverage
@@ -62,7 +63,7 @@ The following tables organize all available locale keys by functional category:
 
 | Locale Key | Default Text |
 | ---------- | ------------ ||
-| EmptyRecord          | No records to display                                                                                              |
+| EmptyRecord | No records to display |
 | EmptyDataSourceError | DataSource must not be empty at initial load since columns are generated from dataSource in auto-generated columns |
 
 **Columns**
@@ -297,17 +298,17 @@ The Gantt Chart component includes specialized messages for dependency conflicts
 The following example demonstrates comprehensive German (Deutsch) localization:
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/locale-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/locale-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/locale-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/locale-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/locale-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/locale-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/locale-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/locale-cs1" %}
 
 ## Internationalization (I18N)
 
@@ -317,24 +318,24 @@ Internationalization affects multiple aspects of the Gantt Chart component:
 
 - **Date formatting**: Timeline headers, task dates, date pickers, and calendar displays
 - **Number formatting**: Duration values, progress percentages, and numeric inputs
-- **Time formatting**: Time-based calculations, working hours, and time displays  
+- **Time formatting**: Time-based calculations, working hours, and time displays
 - **Currency formatting**: Cost-related fields and budget calculations
 - **Calendar systems**: Support for different calendar systems (Gregorian, Islamic, etc.)
 - **Week numbering**: ISO week numbers, fiscal year calendars
-  
+
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/internationalization-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/internationalization-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/internationalization-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/internationalization-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/internationalization-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/internationalization-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/internationalization-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/internationalization-cs1" %}
 
 > **Note**: In the above sample, timeline headers and numeric values are formatted using `NumberFormatOptions` and `DateFormatOptions`. The [locale](https://ej2.syncfusion.com/react/documentation/api/gantt#locale) property defaults to **en-US**. Change this property to your desired locale for proper cultural formatting.
 
@@ -353,41 +354,44 @@ To enable RTL support, set the [enableRtl](https://ej2.syncfusion.com/react/docu
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/internationalization-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/internationalization-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/internationalization-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/internationalization-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/internationalization-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/internationalization-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/internationalization-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/internationalization-cs2" %}
 
 The code sets `enableRtl` to **true** and `locale` to **ar**, mirroring the Gantt interface. Test RTL layouts with native speakers to ensure usability, especially for taskbar interactions and dialog navigation. Review custom CSS for RTL compatibility and verify directional icons (e.g., arrows) render correctly.
 
 ## Troubleshooting globalization issues
 
 1. **Missing or incomplete translations:**
-**Issue**: Some UI elements display in default language despite locale configuration
-**Solutions**:
+   **Issue**: Some UI elements display in default language despite locale configuration
+   **Solutions**:
+
 - Verify all locale keys are included in translation objects
 - Check that `L10n.load()` is called before component initialization
 - Ensure locale property matches loaded translation keys
 - Validate translation object structure and syntax
 
 2. **Encoding and character display issues:**
-**Issue**: Special characters or non-Latin scripts don't display correctly
-**Solutions**:
+   **Issue**: Special characters or non-Latin scripts don't display correctly
+   **Solutions**:
+
 - Verify proper UTF-8 encoding in translation files
 - Check font support for target languages
 - Ensure HTML document declares correct charset
 - Test with appropriate fonts for target scripts
 
 3. **Date and number formatting problems:**
-**Issue**: Dates or numbers don't format according to locale
-**Solutions**:
+   **Issue**: Dates or numbers don't format according to locale
+   **Solutions**:
+
 - Load appropriate CLDR data for target cultures
 - Call `setCulture()` before component initialization
 - Verify date format patterns match locale expectations

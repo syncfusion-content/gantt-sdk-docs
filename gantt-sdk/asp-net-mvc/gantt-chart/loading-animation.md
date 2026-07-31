@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Loading Animation in gantt
 
 The loading indicator is used to display a visual indicator while the Gantt is fetching data or performing certain actions, such as sorting or filtering. The gantt support two indicator types, which is achieved by setting the [`loadingIndicator.indicatorType`](../api/gantt/#loadingindicator) property to Shimmer or Spinner. The default value of the indicator type is "Spinner."
@@ -19,10 +18,10 @@ In the following sample, the Shimmer indicator is displayed while the gantt is s
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/loading-animation/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/loading-animation/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Loading-animation.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/loading-animation/loading-animation.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/loading-animation/loading-animation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -30,10 +29,10 @@ In the following sample, the Shimmer indicator is displayed while the gantt is s
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/loading-animation/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/loading-animation/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Loading-animation.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/loading-animation/loading-animation.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/loading-animation/loading-animation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

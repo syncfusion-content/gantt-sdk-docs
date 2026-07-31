@@ -18,21 +18,22 @@ Use the [taskFields.work](https://ej2.syncfusion.com/react/documentation/api/gan
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/work-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/work-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/work-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/work-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/work-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/work-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/work-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/work-cs1" %}
 
 ## Configure task types
 
 The [taskType](https://ej2.syncfusion.com/react/documentation/api/gantt/index-default#tasktype) property controls how `work`, `duration`, and `resourceUnit` fields interact during edits, with `FixedUnit` as the default unless `taskFields.work` is mapped (sets **FixedWork**). Inject `EditService` to enable editing. The available task types are:
+
 - **FixedDuration**: Duration remains constant; editing work or resource units adjusts the other (e.g., increasing work increases resource allocation).
 - **FixedWork**: Work remains constant; editing duration or resource units adjusts the other (e.g., reducing duration increases resource allocation).
 - **FixedUnit**: Resource units remain constant; editing work or duration adjusts the other (e.g., increasing work extends duration).
@@ -41,17 +42,17 @@ For example, a **FixedWork** task with 40 hours and two resources at 50% each sp
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/work-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/work-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/work-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/work-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/work-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/work-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/work-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/work-cs2" %}
 
 Following table explains how the work, duration and resource unit fields will get updated on changing any of the fields
 
@@ -64,6 +65,7 @@ Following table explains how the work, duration and resource unit fields will ge
 ## Work limitations
 
 Work and task types have the following constraints:
+
 - Milestones (zero-duration tasks) do not support work calculations, as they lack duration.
 - Manually scheduled tasks override automatic calculations, allowing manual control over `work`, `duration`, or `resourceUnit`, which may lead to scheduling inconsistencies.
 - Editing work or task types requires `Edit` service for dialogs or taskbar interactions.
@@ -71,6 +73,7 @@ Work and task types have the following constraints:
 - Work calculations rely on [resourceInfo](https://ej2.syncfusion.com/react/documentation/api/gantt/taskFields#resourceinfo) for accurate resource unit allocation.
 
 ## See also
+
 - [How to configure resources?](https://ej2.syncfusion.com/react/documentation/gantt/resources)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/react/documentation/gantt/task-dependency)
 - [How to configure critical path?](https://ej2.syncfusion.com/react/documentation/gantt/critical-path)

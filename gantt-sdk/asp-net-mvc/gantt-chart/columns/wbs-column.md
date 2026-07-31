@@ -23,10 +23,10 @@ To enable and configure WBS in your Gantt component:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/wbsColumn/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/wbsColumn/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="WbsColumn.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/wbsColumn/wbsColumn.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/wbsColumn/wbsColumn.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -34,10 +34,10 @@ To enable and configure WBS in your Gantt component:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/wbsColumn/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/wbsColumn/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="WbsColumn.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/wbsColumn/wbsColumn.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/wbsColumn/wbsColumn.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -52,10 +52,10 @@ In the following example, WBS auto-update is enabled only during the **row drag 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/wbsColumnEvents/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/wbsColumnEvents/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="WbsColumnEvents.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/wbsColumnEvents/wbsColumnEvents.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/wbsColumnEvents/wbsColumnEvents.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -63,10 +63,10 @@ In the following example, WBS auto-update is enabled only during the **row drag 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/wbsColumnEvents/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/wbsColumnEvents/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="WbsColumnEvents.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/wbsColumnEvents/wbsColumnEvents.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/wbsColumnEvents/wbsColumnEvents.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

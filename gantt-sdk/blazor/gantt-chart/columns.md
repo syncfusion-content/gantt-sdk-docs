@@ -42,11 +42,11 @@ You can define columns using the [GanttColumns](https://help.syncfusion.com/cr/b
 </SfGantt>
 
 @code {
-    private List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+private List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public static List<TaskData> GetTaskCollection()
     {
@@ -78,6 +78,7 @@ You can define columns using the [GanttColumns](https://help.syncfusion.com/cr/b
         public int WorkersCount { get; set; }
         public int? ParentId { get; set; }
     }
+
 }
 
 {% endhighlight %}
@@ -91,16 +92,16 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt component lets
 
 **Gantt supports the following column types:**
 
-- **String:**  Text-based column.  
-- **Decimal:** Decimal number column.  
-- **Double:** Double-precision number column. 
-- **Integer:** Integer number column.  
-- **Long:** Long integer column.  
-- **Boolean:** Checkbox for true/false.  
-- **Date:**  Standard date column.  
-- **DateTime:**  Date and time column.  
-- **DateOnly:** Custom column for date.  
-- **TimeOnly:** Custom column for time.  
+- **String:** Text-based column.
+- **Decimal:** Decimal number column.
+- **Double:** Double-precision number column.
+- **Integer:** Integer number column.
+- **Long:** Long integer column.
+- **Boolean:** Checkbox for true/false.
+- **Date:** Standard date column.
+- **DateTime:** Date and time column.
+- **DateOnly:** Custom column for date.
+- **TimeOnly:** Custom column for time.
 - **Checkbox:** Displays checkbox only.
 - **None:** Represents a column that binds to None data.
 
@@ -129,11 +130,11 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt component lets
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public static List<TaskData> GetTaskCollection()
     {
@@ -165,6 +166,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt component lets
         public int WorkersCount { get; set; }
         public int? ParentId { get; set; }
     }
+
 }
 
 {% endhighlight %}
@@ -193,12 +195,12 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart component for B
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    private string NumberFormat = "C";
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public List<TaskData>? TaskCollection { get; set; }
+private string NumberFormat = "C";
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public class TaskData
     {
@@ -226,6 +228,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart component for B
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -233,22 +236,21 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart component for B
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/VjBdXGimTaWPDDSs?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
->* The Gantt uses the `Internalization` library to format values based on the specified format and culture.
->* By default, the number and date values are formatted in **en-US** locale. You can localize the currency and date to a different locale as explained [here](https://www.syncfusion.com/blazor-components/blazor-gantt-chart).
->* The available format codes may vary depending on the data type of the column.
->* You can also customize the formatting further by providing a custom function to the `GanttColumn.Format` property, instead of a format string.
->* Make sure that the format string is valid and compatible with the data type of the column, to avoid unexpected results.
+> - The Gantt uses the `Internalization` library to format values based on the specified format and culture.
+> - By default, the number and date values are formatted in **en-US** locale. You can localize the currency and date to a different locale as explained [here](https://www.syncfusion.com/blazor-components/blazor-gantt-chart).
+> - The available format codes may vary depending on the data type of the column.
+> - You can also customize the formatting further by providing a custom function to the `GanttColumn.Format` property, instead of a format string.
+> - Make sure that the format string is valid and compatible with the data type of the column, to avoid unexpected results.
 
 ### Number formatting
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart component for Blazor supports number formatting through the [GanttColumn.Format](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_Format) property, where standard format strings define numeric value presentation including currency, percentage, and decimal formats. The following standard format strings are available:
 
-| Format | Description        | Remarks                                                                 |
-|--------|--------------------|-------------------------------------------------------------------------|
-| N      | Numeric format     | Use `N2`, `N3`, etc., to set the number of decimal places.              |
-| C      | Currency format    | Use `C2`, `C3`, etc., to define precision for currency values.          |
-| P      | Percentage format  | Input should be between 0 and 1; `P2`, `P3`, etc., control precision.   |
-
+| Format | Description       | Remarks                                                               |
+| ------ | ----------------- | --------------------------------------------------------------------- |
+| N      | Numeric format    | Use `N2`, `N3`, etc., to set the number of decimal places.            |
+| C      | Currency format   | Use `C2`, `C3`, etc., to define precision for currency values.        |
+| P      | Percentage format | Input should be between 0 and 1; `P2`, `P3`, etc., control precision. |
 
 The following example code demonstrates the formatting of data for the **TaskID** column using the **N2** format, the **Progress** column using the **P2** format.
 
@@ -270,7 +272,7 @@ The following example code demonstrates the formatting of data for the **TaskID*
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
+public List<TaskData>? TaskCollection { get; set; }
 
     protected override void OnInitialized()
     {
@@ -303,6 +305,7 @@ The following example code demonstrates the formatting of data for the **TaskID*
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -314,13 +317,13 @@ The following example code demonstrates the formatting of data for the **TaskID*
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt component for Blazor supports date formatting in columns using the [GanttColumn.Format](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_Format) property, where format strings such as **d**, **D**, **MMM dd, yyyy** can be applied. Both built-in formats like **yMd** and custom formats are supported to define the layout and detail of date and time values based on column requirements. The following custom formats and their corresponding output are listed below:
 
-Format | Formatted value
------|-----
-{ type:'date', format:'dd/MM/yyyy' } | 04/07/2026
-{ type:'date', format:'dd.MM.yyyy' } | 04.07.2026
-{ type:'date', skeleton:'short' } | 7/4/26
-{ type: 'dateTime', format: 'dd/MM/yyyy hh:mm tt' } | 04/07/2026 12:00 AM
-{ type: 'dateTime', format: 'MM/dd/yyyy hh:mm:ss tt' } | 07/04/2026 12:00:00 AM
+| Format                                                 | Formatted value        |
+| ------------------------------------------------------ | ---------------------- |
+| { type:'date', format:'dd/MM/yyyy' }                   | 04/07/2026             |
+| { type:'date', format:'dd.MM.yyyy' }                   | 04.07.2026             |
+| { type:'date', skeleton:'short' }                      | 7/4/26                 |
+| { type: 'dateTime', format: 'dd/MM/yyyy hh:mm tt' }    | 04/07/2026 12:00 AM    |
+| { type: 'dateTime', format: 'MM/dd/yyyy hh:mm:ss tt' } | 07/04/2026 12:00:00 AM |
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -339,8 +342,8 @@ Format | Formatted value
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    private string DateFormat = "MM/dd/yyyy";
+public List<TaskData>? TaskCollection { get; set; }
+private string DateFormat = "MM/dd/yyyy";
 
     protected override void OnInitialized()
     {
@@ -373,6 +376,7 @@ Format | Formatted value
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -445,6 +449,7 @@ The Syncfusion<sup style="font-size:70%">®</sup> Gantt component for Blazor sup
         public int WorkersCount { get; set; }
         public int? ParentId { get; set; }
     }
+
 }
 
 {% endhighlight %}
@@ -454,7 +459,7 @@ The Syncfusion<sup style="font-size:70%">®</sup> Gantt component for Blazor sup
 
 ### Resizing a column to fit its content using method
 
-You can resize a column in Gantt Chart to fit its content using the [AutoFitColumnsAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AutoFitColumnsAsync_System_String___) method. This adjusts the column width based on the widest cell without wrapping. To apply this during initial rendering, call the method in the [DataBound](https://blazor.syncfusion.com/documentation/gantt-chart/events#databound) event.
+You can resize a column in Gantt Chart to fit its content using the [AutoFitColumnsAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AutoFitColumnsAsync_System_String___) method. This adjusts the column width based on the widest cell without wrapping. To apply this during initial rendering, call the method in the [DataBound](https://blazor.syncfusion.com/documentation/gantt/events#databound) event.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -462,30 +467,30 @@ You can resize a column in Gantt Chart to fit its content using the [AutoFitColu
 @using Syncfusion.Blazor.Gantt
 
 <SfGantt @ref="Gantt" DataSource="@TaskCollection" Height="450px" Width="700px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttColumns>
-        <GanttColumn Field="TaskId" Width="150"></GanttColumn>
-        <GanttColumn Field="TaskName" HeaderText="Job Name" Width="150"></GanttColumn>
-        <GanttColumn Field="StartDate" HeaderText="Start Date" Width="150"></GanttColumn>
-        <GanttColumn Field="EndDate" HeaderText="End Date" Width="150"></GanttColumn>
-        <GanttColumn Field="Duration" HeaderText="Duration" Width="150"></GanttColumn>
-        <GanttColumn Field="Progress" HeaderText="Progress" Width="150"></GanttColumn>
-        <GanttColumn Field="StartDateOnly" HeaderText="Start Date Only" Format="d" Type="Syncfusion.Blazor.Grids.ColumnType.DateOnly" Width="152" TextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
-        <GanttColumn Field="StartTimeOnly" Format="HH:mm:ss" HeaderText="Start Time Only" Type="Syncfusion.Blazor.Grids.ColumnType.TimeOnly" Width="150" TextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
-        <GanttColumn Field="Status" HeaderText="Status" Width="150" EditType=Syncfusion.Blazor.Grids.EditType.DefaultEdit></GanttColumn>
-        <GanttColumn Field="WorkersCount" HeaderText="Workers Count" Width="150" EditType=Syncfusion.Blazor.Grids.EditType.NumericEdit></GanttColumn>
-    </GanttColumns>
-    <GanttEvents DataBound="DataBoundHandler" TValue="TaskData"></GanttEvents>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
+</GanttTaskFields>
+<GanttColumns>
+<GanttColumn Field="TaskId" Width="150"></GanttColumn>
+<GanttColumn Field="TaskName" HeaderText="Job Name" Width="150"></GanttColumn>
+<GanttColumn Field="StartDate" HeaderText="Start Date" Width="150"></GanttColumn>
+<GanttColumn Field="EndDate" HeaderText="End Date" Width="150"></GanttColumn>
+<GanttColumn Field="Duration" HeaderText="Duration" Width="150"></GanttColumn>
+<GanttColumn Field="Progress" HeaderText="Progress" Width="150"></GanttColumn>
+<GanttColumn Field="StartDateOnly" HeaderText="Start Date Only" Format="d" Type="Syncfusion.Blazor.Grids.ColumnType.DateOnly" Width="152" TextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
+<GanttColumn Field="StartTimeOnly" Format="HH:mm:ss" HeaderText="Start Time Only" Type="Syncfusion.Blazor.Grids.ColumnType.TimeOnly" Width="150" TextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
+<GanttColumn Field="Status" HeaderText="Status" Width="150" EditType=Syncfusion.Blazor.Grids.EditType.DefaultEdit></GanttColumn>
+<GanttColumn Field="WorkersCount" HeaderText="Workers Count" Width="150" EditType=Syncfusion.Blazor.Grids.EditType.NumericEdit></GanttColumn>
+</GanttColumns>
+<GanttEvents DataBound="DataBoundHandler" TValue="TaskData"></GanttEvents>
 </SfGantt>
 
 @code {
-    public SfGantt<TaskData>? Gantt;
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public SfGantt<TaskData>? Gantt;
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     private async void DataBoundHandler(object args)
     {
@@ -493,7 +498,7 @@ You can resize a column in Gantt Chart to fit its content using the [AutoFitColu
         {
             await Gantt.AutoFitColumnsAsync(new string[] { "TaskName", "StartDate", "EndDate" });
         }
-        
+
     }
 
     public class TaskData
@@ -526,6 +531,7 @@ You can resize a column in Gantt Chart to fit its content using the [AutoFitColu
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -542,15 +548,15 @@ The Syncfusion<sup style="font-size:70%">®</sup> Blazor Gantt Chart component d
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" TreeColumnIndex="2" Height="450px" Width="700px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
                      Duration="Duration" Progress="Progress" ParentID="ParentId"></GanttTaskFields>
 </SfGantt>
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public class TaskData
     {
@@ -578,6 +584,7 @@ The Syncfusion<sup style="font-size:70%">®</sup> Blazor Gantt Chart component d
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -625,9 +632,9 @@ The following example demonstrates hiding and showing the **Duration** column us
 </SfGantt>
 
 @code {
-    public SfGantt<TaskData>? Gantt;
-    public List<TaskData>? TaskCollection { get; set; }
-    private string[] ColumnList = { "Duration" };
+public SfGantt<TaskData>? Gantt;
+public List<TaskData>? TaskCollection { get; set; }
+private string[] ColumnList = { "Duration" };
 
     public async Task show()
     {
@@ -676,6 +683,7 @@ The following example demonstrates hiding and showing the **Duration** column us
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -715,9 +723,9 @@ The following example demonstrates hiding and showing the **TaskName** and **Dur
 </SfGantt>
 
 @code {
-    public SfGantt<TaskData>? Gantt;
-    public List<TaskData>? TaskCollection { get; set; }
-    private string[] ColumnList = { "TaskName", "Duration" };
+public SfGantt<TaskData>? Gantt;
+public List<TaskData>? TaskCollection { get; set; }
+private string[] ColumnList = { "TaskName", "Duration" };
 
     public void show()
     {
@@ -760,6 +768,7 @@ The following example demonstrates hiding and showing the **TaskName** and **Dur
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -771,13 +780,13 @@ The following example demonstrates hiding and showing the **TaskName** and **Dur
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component allows fine-grained control over column-level actions such as editing, filtering, sorting, resizing, and reordering. These actions can be enabled or disabled individually using the following properties in the [GanttColumn](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html) configuration:
 
-| Property | Description |
-|----------|-------------|
-| [AllowEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_AllowEditing) | Enables or disables editing for a column. |
-| [AllowFiltering](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_AllowFiltering) | Enables or disables filtering for a column. |
-| [AllowSorting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_AllowSorting) | Enables or disables sorting for a column. |
+| Property                                                                                                                                              | Description                                  |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
+| [AllowEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_AllowEditing)       | Enables or disables editing for a column.    |
+| [AllowFiltering](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_AllowFiltering)   | Enables or disables filtering for a column.  |
+| [AllowSorting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_AllowSorting)       | Enables or disables sorting for a column.    |
 | [AllowReordering](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_AllowReordering) | Enables or disables reordering for a column. |
-| [AllowResizing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_AllowResizing) | Enables or disables resizing for a column. |
+| [AllowResizing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_AllowResizing)     | Enables or disables resizing for a column.   |
 
 > **Note:** These settings are applied per column and do not affect global Gantt behavior.
 
@@ -835,6 +844,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart componen
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -844,7 +854,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart componen
 
 ## Responsive columns
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup>  Blazor Gantt Chart component provides a built-in feature to control column visibility based on media queries using the [HideAtMedia](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_HideAtMedia) property in the column object. This method can be used to hide columns automatically when the screen width matches specified [media query](http://cssmediaqueries.com/what-are-css-media-queries.html) conditions.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component provides a built-in feature to control column visibility based on media queries using the [HideAtMedia](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_HideAtMedia) property in the column object. This method can be used to hide columns automatically when the screen width matches specified [media query](http://cssmediaqueries.com/what-are-css-media-queries.html) conditions.
 
 The following example demonstrates a Gantt chart where the **Job Name** column is set to `(min-width: 700px)`, meaning it will be hidden when the browser width is less than or equal to 700px. Similarly, the **Duration** column is set to `(max-width: 500px)`, so it will be hidden when the browser width exceeds 500px.
 
@@ -897,11 +907,10 @@ The following example demonstrates a Gantt chart where the **Job Name** column i
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
 {% endtabs %}
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/hZVnZcMGyXKNUpMu?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
-
-

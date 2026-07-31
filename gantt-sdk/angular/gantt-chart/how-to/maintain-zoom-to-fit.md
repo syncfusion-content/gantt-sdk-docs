@@ -16,31 +16,32 @@ The following example demonstrates how to use `fitToProject` after performing ed
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/how-to/maintainzoomtofit-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/how-to/maintainzoomtofit-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/how-to/maintainzoomtofit-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/how-to/maintainzoomtofit-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/how-to/maintainzoomtofit-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/how-to/maintainzoomtofit-cs1" %}
 
 The following example demonstrates how to use `fitToProject` after dynamically changing the data source:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/how-to/maintainzoomtofitdatasource-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/how-to/maintainzoomtofitdatasource-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/how-to/maintainzoomtofitdatasource-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/how-to/maintainzoomtofitdatasource-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/how-to/maintainzoomtofitdatasource-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/how-to/maintainzoomtofitdatasource-cs1" %}
 
 ## See also
+
 - [How to configure timeline settings?](https://ej2.syncfusion.com/angular/documentation/gantt/timeline)
 - [How to configure toolbar?](https://ej2.syncfusion.com/angular/documentation/gantt/toolbar)
 - [How to manage task editing?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/editing-tasks)

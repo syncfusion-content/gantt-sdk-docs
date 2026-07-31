@@ -18,15 +18,15 @@ Enable cell editing by setting [editSettings.allowEditing](https://ej2.syncfusio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/celledit-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/celledit-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/celledit-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/celledit-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/managing-tasks/celledit-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/managing-tasks/celledit-cs1" %}
 
 ## Edit tasks via dialog
 
@@ -34,15 +34,15 @@ Enable dialog editing by setting [editSettings.allowEditing](https://ej2.syncfus
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/dialogedit-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/dialogedit-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/dialogedit-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/dialogedit-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/managing-tasks/dialogedit-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/managing-tasks/dialogedit-cs1" %}
 
 ## Customize dialog tabs
 
@@ -52,15 +52,15 @@ The following sample demonstrates customization using properties and the [action
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/addedit-tab-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/addedit-tab-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/addedit-tab-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/addedit-tab-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/managing-tasks/addedit-tab-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/managing-tasks/addedit-tab-cs1" %}
 
 ### Limit fields in general tab
 
@@ -68,15 +68,15 @@ Restrict fields in the dialog’s General tab using [addDialogFields](https://ej
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/addedit-field-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/addedit-field-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/addedit-field-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/addedit-field-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/managing-tasks/addedit-field-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/managing-tasks/addedit-field-cs1" %}
 
 ## Edit task dependencies
 
@@ -96,15 +96,15 @@ Enable dependency editing by mapping the [dependency](https://ej2.syncfusion.com
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/dependencyedit-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/dependencyedit-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/dependencyedit-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/dependencyedit-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/managing-tasks/dependencyedit-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/managing-tasks/dependencyedit-cs1" %}
 
 ## Edit tasks programmatically
 
@@ -116,15 +116,15 @@ To update an existing task ID with a new unique ID, use the [updateTaskId](https
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/updaterecord-dynamic-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/updaterecord-dynamic-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/updaterecord-dynamic-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/updaterecord-dynamic-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/managing-tasks/updaterecord-dynamic-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/managing-tasks/updaterecord-dynamic-cs1" %}
 
 ## Render custom edit component
 
@@ -137,13 +137,13 @@ You can render a custom edit component for a column using the [column.edit](http
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/custom-dynamic-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/custom-dynamic-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/custom-dynamic-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/custom-dynamic-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/managing-tasks/custom-dynamic-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/managing-tasks/custom-dynamic-cs1" %}
 
 ## See also
 

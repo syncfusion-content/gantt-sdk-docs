@@ -16,6 +16,7 @@ The [TypeScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/j
 ## CSS class reference
 
 The Gantt Chart control uses CSS classes for styling, organized by functional areas:
+
 - **Core structure**:
   - `e-gantt`: Root container for the entire control.
   - `e-gridheader`: Header container separating headers from content.
@@ -82,14 +83,14 @@ The following example overrides taskbar and milestone styles:
 ```css
 /* Customize child taskbar appearance */
 .e-gantt .e-gantt-parent-taskbar {
-    background-color: #28a745;
-    border-color: #1e7e34;
+  background-color: #28a745;
+  border-color: #1e7e34;
 }
 
 /* Customize milestone appearance */
 .e-gantt .e-gantt-milestone {
-    background-color: #ff6600;
-    border-color: #cc5200;
+  background-color: #ff6600;
+  border-color: #cc5200;
 }
 ```
 
@@ -98,21 +99,22 @@ The following example overrides taskbar and milestone styles:
 ```css
 /* Customize alternate row colors */
 .e-gantt .e-altrow {
-    background-color: #f8f9fa;
+  background-color: #f8f9fa;
 }
 
 /* Customize cell borders */
 .e-gantt .e-rowcell {
-    border-right: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
 }
 ```
 
 ## Customize the taskbar
 
 To customize the appearance of child taskbars in the Gantt Chart, apply the following CSS.
+
 ```css
-.e-gantt-child-taskbar{
-  border-radius: 40%!important;
+.e-gantt-child-taskbar {
+  border-radius: 40% !important;
 }
 ```
 
@@ -121,13 +123,13 @@ To customize the appearance of child taskbars in the Gantt Chart, apply the foll
 To customize the connector line in the Gantt Chart, apply the following CSS
 
 ```css
- .e-connector-line{
-    stroke-width: 6;
-  }
-  .e-connector-line:hover {
-    stroke-width: 3px !important;
-    stroke: #f10c0c !important;
-  }
+.e-connector-line {
+  stroke-width: 6;
+}
+.e-connector-line:hover {
+  stroke-width: 3px !important;
+  stroke: #f10c0c !important;
+}
 ```
 
 ## customize the dialog popup on editing
@@ -135,7 +137,8 @@ To customize the connector line in the Gantt Chart, apply the following CSS
 To customize the header area of the dialog editor in the Gantt Chart, apply the following CSS.
 
 ```css
-.e-gantt-dialog .e-dlg-header-content, .e-gantt-dialog .e-tab .e-tab-header {
+.e-gantt-dialog .e-dlg-header-content,
+.e-gantt-dialog .e-tab .e-tab-header {
   background: #5b3f51 !important;
 }
 ```
@@ -156,6 +159,7 @@ To customize the row hover effect in the Gantt Chart, apply the following CSS.
 ## Configure grid lines
 
 Control grid line visibility with [gridLines](../../api/gantt#gridlines):
+
 - **Horizontal**: Shows only horizontal lines for row separation.
 - **Vertical**: Shows only vertical lines for column separation.
 - **Both**: Shows both for full grid structure.
@@ -167,32 +171,33 @@ The following example configures both grid lines:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/gridline-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/gridline-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/gridline-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/gridline-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/gridline-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/gridline-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/gridline-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/gridline-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/gridline-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/gridline-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/gridline-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/gridline-cs1" %}
 {% endif %}
 
 By default, `gridLines` is **Horizontal**.
 
 ## See also
+
 - [How to customize taskbars?](../../gantt/taskbar)
 - [How to configure timeline?](../../gantt//timeline/timeline)
 - [How to manage columns?](../../gantt/columns/columns)

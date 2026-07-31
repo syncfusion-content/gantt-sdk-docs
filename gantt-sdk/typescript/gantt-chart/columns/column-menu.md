@@ -3,7 +3,7 @@ layout: post
 title: Column Menu in TypeScript Gantt Chart Control | Syncfusion
 description: Learn here all about column menu in Syncfusion TypeScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Column menu 
+control: Column menu
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -17,45 +17,45 @@ To activate the column menu feature, set the [showColumnMenu](../../api/gantt#sh
 
 The following built-in column menu items are available:
 
-| Item           | Description                                                                                                                           |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| SortAscending  | Sorts the column in ascending order.                                                                                                  |
-| SortDescending | Sorts the column in descending order.                                                                                                 |
-| AutoFit        | Adjusts the width of the current column.                                                                                              |
-| AutoFitAll     | Adjusts the width of all columns.                                                                                                     |
-| ColumnChooser  | Allows toggling column visibility .                                                                                                   |
+| Item           | Description                                                                                  |
+| -------------- | -------------------------------------------------------------------------------------------- |
+| SortAscending  | Sorts the column in ascending order.                                                         |
+| SortDescending | Sorts the column in descending order.                                                        |
+| AutoFit        | Adjusts the width of the current column.                                                     |
+| AutoFitAll     | Adjusts the width of all columns.                                                            |
+| ColumnChooser  | Allows toggling column visibility .                                                          |
 | Filter         | Displays filter options based on [filterSettings.type](../../api/gantt/filtersettings#type). |
 
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columns-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columns-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columns-cs1" %}
 {% endif %}
 
-> * You can disable the column menu for specific columns by setting [columns.showColumnMenu](../../api/gantt/column#showcolumnmenu) to **false**.
+> - You can disable the column menu for specific columns by setting [columns.showColumnMenu](../../api/gantt/column#showcolumnmenu) to **false**.
 
-> * You can customize the default column menu items by defining [columnMenuItems](../../api/gantt#columnmenuitems) with only the required items.
+> - You can customize the default column menu items by defining [columnMenuItems](../../api/gantt#columnmenuitems) with only the required items.
 
 ## Add a custom column menu item
 
@@ -69,27 +69,27 @@ The following example demonstrates how to add a custom column menu item to clear
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnMenu-custom-item-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnMenu-custom-item-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnMenu-custom-item-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnMenu-custom-item-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnMenu-custom-item-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columnMenu-custom-item-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnMenu-custom-item-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnMenu-custom-item-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnMenu-custom-item-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnMenu-custom-item-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnMenu-custom-item-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columnMenu-custom-item-cs1" %}
 {% endif %}
 
 ## Customize column menu items per column
@@ -102,27 +102,27 @@ The following example demonstrates hiding the **Filter** item when the column me
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/colMenu-customAction-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/colMenu-customAction-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/colMenu-customAction-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/colMenu-customAction-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/colMenu-customAction-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/colMenu-customAction-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/colMenu-customAction-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/colMenu-customAction-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/colMenu-customAction-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/colMenu-customAction-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/colMenu-customAction-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/colMenu-customAction-cs1" %}
 {% endif %}
 
 ## Render nested column menu items
@@ -135,27 +135,27 @@ The following example demonstrates how to configure `columnMenuItems` to include
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/column-menu-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/column-menu-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/column-menu-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/column-menu-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/column-menu-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/column-menu-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/column-menu-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/column-menu-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/column-menu-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/column-menu-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/column-menu-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/column-menu-cs1" %}
 {% endif %}
 
 ## Customize the column menu icon
@@ -175,33 +175,39 @@ To customize the column menu icon, follow these steps:
 **2.** Import the required icon stylesheets (e.g., Material or Bootstrap5):
 
 ```html
-<link href="https://cdn.syncfusion.com/ej2/ej2-icons/styles/tailwind3.css" rel="stylesheet" />
-<link href="https://cdn.syncfusion.com/ej2/ej2-icons/styles/bootstrap5.css" rel="stylesheet" />
+<link
+  href="https://cdn.syncfusion.com/ej2/ej2-icons/styles/tailwind3.css"
+  rel="stylesheet"
+/>
+<link
+  href="https://cdn.syncfusion.com/ej2/ej2-icons/styles/bootstrap5.css"
+  rel="stylesheet"
+/>
 ```
 
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/column-menu-cs2/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/column-menu-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/column-menu-cs2/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/column-menu-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/column-menu-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/column-menu-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/column-menu-cs2/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/column-menu-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/column-menu-cs2/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/column-menu-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/column-menu-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/column-menu-cs2" %}
 {% endif %}

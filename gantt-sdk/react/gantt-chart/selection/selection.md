@@ -3,7 +3,7 @@ layout: post
 title: Selection in React Gantt Chart Component | Syncfusion
 description: Learn here all about Selection in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Selection 
+control: Selection
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -18,8 +18,8 @@ To enable selection functionality, inject the [Selection](https://ej2.syncfusion
 
 The Gantt Chart component supports two types of selection that can be set by using the [selectionSettings.type](https://ej2.syncfusion.com/react/documentation/api/gantt/selectionSettings#type) property. They are:
 
-* **Single:** Allows selection of only one row or cell at a time. This is the default behavior.
-* **Multiple:** Enables selection of multiple rows or cells. To perform multi-selection, press and hold the **Ctrl** key (on Windows/Linux) or **Cmd** key (on macOS) while clicking the desired rows or cells.
+- **Single:** Allows selection of only one row or cell at a time. This is the default behavior.
+- **Multiple:** Enables selection of multiple rows or cells. To perform multi-selection, press and hold the **Ctrl** key (on Windows/Linux) or **Cmd** key (on macOS) while clicking the desired rows or cells.
 
 The following video demonstrates how selection works in the React Gantt Chart:
 
@@ -27,25 +27,25 @@ The following video demonstrates how selection works in the React Gantt Chart:
 
 ## Selection mode
 
-The Gantt Chart component supports three types of selection modes, which can be set using the [selectionSettings.mode](https://ej2.syncfusion.com/react/documentation/api/gantt/selectionSettings#mode) property: 
+The Gantt Chart component supports three types of selection modes, which can be set using the [selectionSettings.mode](https://ej2.syncfusion.com/react/documentation/api/gantt/selectionSettings#mode) property:
 
-* **Row:** Allows selection of rows only. This is the default mode.
-* **Cell:** Allows selection of cells only.
-* **Both:** Allows selection of both rows and cells at the same time.
+- **Row:** Allows selection of rows only. This is the default mode.
+- **Cell:** Allows selection of cells only.
+- **Both:** Allows selection of both rows and cells at the same time.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs11/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs11/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs11/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs11/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs11/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs11/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/selection-cs11" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/selection-cs11" %}
 
 ## Toggle selection
 
@@ -55,37 +55,37 @@ When enabled, clicking a selected row or cell will deselect it, and clicking it 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs12/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs12/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs12/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs12/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs12/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs12/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/selection-cs12" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/selection-cs12" %}
 
 ## Persist selection
 
-Persist Selection retains selected tasks even after performing actions such as sorting, filtering, or refreshing the data. To enable this, set `selectionSettings.persistSelection` to **true**.  
+Persist Selection retains selected tasks even after performing actions such as sorting, filtering, or refreshing the data. To enable this, set `selectionSettings.persistSelection` to **true**.
 
 > Cell selection is not supported by the persistence feature.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs23/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs23/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs23/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs23/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs23/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs23/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/selection-cs23" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/selection-cs23" %}
 
 ## Hover highlighting
 
@@ -97,17 +97,17 @@ The following code example shows how to enable the hover highlighting in Gantt.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs16/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs16/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs16/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs16/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs16/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs16/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/selection-cs16" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/selection-cs16" %}
 
 ## Clear selection
 
@@ -115,17 +115,17 @@ To clear selected rows and cells in the Gantt Chart component, use the [clearSel
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs13/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs13/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs13/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs13/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs13/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs13/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/selection-cs13" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/selection-cs13" %}
 
 ## Touch interaction
 

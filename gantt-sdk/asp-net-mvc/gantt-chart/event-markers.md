@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Event Markers
 
 The event markers in the Gantt control is used to highlight the important events in a project. Event markers can be initialized by using the [`EventMarkers`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EventMarkers) property, and you can define date and label for the event markers using the [`Day`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEventMarker.html#Syncfusion_EJ2_Gantt_GanttEventMarker_Day) and [`Label`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEventMarker.html#Syncfusion_EJ2_Gantt_GanttEventMarker_Label) properties. You can also customize it using the [`CssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEventMarker.html#Syncfusion_EJ2_Gantt_GanttEventMarker_CssClass) properties. The following code example shows how to add event markers in the Gantt control.
@@ -17,10 +16,10 @@ The event markers in the Gantt control is used to highlight the important events
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/eventmarkers/eventmarkers/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/eventmarkers/eventmarkers/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Eventmarkers.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/eventmarkers/eventmarkers/eventmarkers.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/eventmarkers/eventmarkers/eventmarkers.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -28,14 +27,12 @@ The event markers in the Gantt control is used to highlight the important events
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/eventmarkers/eventmarkers/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/eventmarkers/eventmarkers/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Eventmarkers.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/eventmarkers/eventmarkers/eventmarkers.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/eventmarkers/eventmarkers/eventmarkers.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/eventmarkers.png)

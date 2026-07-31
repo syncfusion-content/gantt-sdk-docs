@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Drag and Drop the Record from another component to Gantt
 
 In Gantt, it is possible to drag a record from another component and drop it in Gantt chart with updating the Gantt record. Here, dragging an item from `TreeView` component to Gantt and that item is updated as a resource for the Gantt record, we can achieve this, by using [`nodeDragStop`](../../api/treeview/#nodedragstop) event of `TreeView` control.
@@ -17,10 +16,10 @@ In Gantt, it is possible to drag a record from another component and drop it in 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/draganddrop/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/how-to/draganddrop/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Draganddrop.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/draganddrop/draganddrop.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/how-to/draganddrop/draganddrop.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -28,15 +27,13 @@ In Gantt, it is possible to drag a record from another component and drop it in 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/draganddrop/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/how-to/draganddrop/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Draganddrop.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/draganddrop/draganddrop.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/how-to/draganddrop/draganddrop.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 The following screenshot shows dropping record from another component in to Gantt, and **Rose Fuller** is added as resource for the task **Develop floor plan estimation**.
 

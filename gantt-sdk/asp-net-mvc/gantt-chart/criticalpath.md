@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Critical Path feature
 
 The critical path in a project is indicated by a single task or a series of tasks. If a task in critical path is delayed, the entire project will be delayed. A task is considered to be critical if any delay to this task would affect the project end date.
@@ -19,10 +18,10 @@ The critical path can be enabled in Gantt by using the built-in toolbar button o
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/criticalpath/default/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/criticalpath/default/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Criticalpath.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/criticalpath/default/criticalpath.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/criticalpath/default/criticalpath.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -30,15 +29,13 @@ The critical path can be enabled in Gantt by using the built-in toolbar button o
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/criticalpath/default/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/criticalpath/default/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Criticalpath.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/criticalpath/default/criticalpath.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/criticalpath/default/criticalpath.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/criticalpath.PNG)
 
@@ -52,10 +49,10 @@ The following code example shows how to customize the critical path taskbar in t
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/criticalpath/custom/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/criticalpath/custom/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Customcriticalpath.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/criticalpath/custom/customcriticalpath.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/criticalpath/custom/customcriticalpath.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -63,16 +60,12 @@ The following code example shows how to customize the critical path taskbar in t
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/criticalpath/custom/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/criticalpath/custom/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Customcriticalpath.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/criticalpath/custom/customcriticalpath.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/criticalpath/custom/customcriticalpath.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-
-
 ![Alt text](images/customCriticalPath.PNG)
-
-

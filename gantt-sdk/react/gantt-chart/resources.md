@@ -15,6 +15,7 @@ Resources in the [React Gantt Chart](https://www.syncfusion.com/react-components
 ## Configure resource collection
 
 The resource collection defines available resources as JSON objects with ID, name, unit, and group, mapped via [resourceFields](https://ej2.syncfusion.com/react/documentation/api/gantt#resourcefields):
+
 - **id**: Maps to a unique identifier for task assignment.
 - **name**: Maps to the resource name displayed in labels or columns.
 - **unit**: Maps to the work capacity percentage (0-100%) per day.
@@ -24,19 +25,46 @@ The following code demonstrates resource collection setup:
 
 ```typescript
 const projectResources: Object[] = [
-    { resourceId: 1, resourceName: 'Martin Tamer', resourceGroup: 'Planning Team', resourceUnit: 50 },
-    { resourceId: 2, resourceName: 'Rose Fuller', resourceGroup: 'Testing Team', resourceUnit: 70 },
-    { resourceId: 3, resourceName: 'Margaret Buchanan', resourceGroup: 'Approval Team' },
-    { resourceId: 4, resourceName: 'Fuller King', resourceGroup: 'Development Team' },
-    { resourceId: 5, resourceName: 'Davolio Fuller', resourceGroup: 'Approval Team' },
-    { resourceId: 6, resourceName: 'Van Jack', resourceGroup: 'Development Team', resourceUnit: 40 }
+  {
+    resourceId: 1,
+    resourceName: "Martin Tamer",
+    resourceGroup: "Planning Team",
+    resourceUnit: 50,
+  },
+  {
+    resourceId: 2,
+    resourceName: "Rose Fuller",
+    resourceGroup: "Testing Team",
+    resourceUnit: 70,
+  },
+  {
+    resourceId: 3,
+    resourceName: "Margaret Buchanan",
+    resourceGroup: "Approval Team",
+  },
+  {
+    resourceId: 4,
+    resourceName: "Fuller King",
+    resourceGroup: "Development Team",
+  },
+  {
+    resourceId: 5,
+    resourceName: "Davolio Fuller",
+    resourceGroup: "Approval Team",
+  },
+  {
+    resourceId: 6,
+    resourceName: "Van Jack",
+    resourceGroup: "Development Team",
+    resourceUnit: 40,
+  },
 ];
 
 const resourceFields: ResourceFieldsModel = {
-    id: 'resourceId',
-    name: 'resourceName',
-    unit: 'resourceUnit',
-    group: 'resourceGroup'
+  id: "resourceId",
+  name: "resourceName",
+  unit: "resourceUnit",
+  group: "resourceGroup",
 };
 ```
 
@@ -50,13 +78,13 @@ Resources are assigned to tasks using resource IDs in the data source, mapped vi
 Assign a single resource without unit for default 100% allocation.
 
 ```typescript
-{ 
-    TaskID: 2, 
-    TaskName: 'Identify site location', 
-    StartDate: new Date('04/02/2019'), 
-    Duration: 0, 
-    Progress: 50, 
-    resources: [1] 
+{
+    TaskID: 2,
+    TaskName: 'Identify site location',
+    StartDate: new Date('04/02/2019'),
+    Duration: 0,
+    Progress: 50,
+    resources: [1]
 }
 ```
 
@@ -65,11 +93,11 @@ Assign multiple resources with specific units.
 
 ```typescript
 {
-    TaskID: 2, 
-    TaskName: 'Identify site location', 
-    StartDate: new Date('03/29/2019'), 
+    TaskID: 2,
+    TaskName: 'Identify site location',
+    StartDate: new Date('03/29/2019'),
     Duration: 2,
-    Progress: 30,  
+    Progress: 30,
     resources: [{ resourceId: 1, unit: 70 }, 6]
 }
 ```
@@ -80,27 +108,27 @@ The following example shows resource assignment:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/resource-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/resource-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/resource-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/resource-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/resource-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/resource-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/resource-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/resource-cs2" %}
 
 ## Manage resource assignments
 
 Add or remove resources via cell or dialog editing. Cell editing modifies assignments by double-clicking the resource cell, while dialog editing uses the resource tab in the edit dialog.
 
 ![Resource cell editing](./images/cellEdit-resource.png)
-*Alt text: Resource cell editing in the Gantt grid for assignment modifications.*
+_Alt text: Resource cell editing in the Gantt grid for assignment modifications._
 
 ![Resource dialog editing](./images/dialogedit-resource.png)
-*Alt text: Resource dialog editing tab for multiple allocations and units.*
+_Alt text: Resource dialog editing tab for multiple allocations and units._
 
 ## Customize resource styling
 
@@ -110,21 +138,22 @@ The following example demonstrates custom resource styling:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/resource-cs3/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/resource-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/resource-cs3/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/resource-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/resource-cs3/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/resource-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/resource-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/resource-cs3" %}
 
 This configuration applies background colors to resource columns and taskbars, with the `queryTaskbarInfo` event modifying taskbar properties dynamically.
 
 ## See also
+
 - [How to configure resource view?](https://ej2.syncfusion.com/react/documentation/gantt/resource-view)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/react/documentation/gantt/task-dependency)
 - [How to customize taskbars?](https://ej2.syncfusion.com/react/documentation/gantt/taskbar)

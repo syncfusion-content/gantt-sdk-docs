@@ -13,9 +13,9 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Gantt Chart control supports column rendering to control data presentation. Column definitions act as the data schema and support operations such as sorting and filtering. The [field](../../api/gantt/column#field) property is required to map data source values to columns and must be defined for features like complex binding and template-based actions.
 
-> * If the `field` is not defined in the [dataSource](../../api/gantt#datasource), the column will display empty values.
-> * A `field` with a dot operator is treated as [complex binding](../column/column-rendering#complex-data-binding).
-> * To enable CRUD, filtering, or searching, the `field` must be defined for template columns.
+> - If the `field` is not defined in the [dataSource](../../api/gantt#datasource), the column will display empty values.
+> - A `field` with a dot operator is treated as [complex binding](../column/column-rendering#complex-data-binding).
+> - To enable CRUD, filtering, or searching, the `field` must be defined for template columns.
 
 ## Define columns manually
 
@@ -25,27 +25,27 @@ To manually define columns in the Gantt Chart control, use `e-columns` and set p
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs1" %}
 {% endif %}
 
 ## Auto generated columns
@@ -56,30 +56,30 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control automat
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs2/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs2/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs2/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs2/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs2" %}
 {% endif %}
 
-## Dynamic column generation 
+## Dynamic column generation
 
 You can dynamically generate columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control at runtime based on the provided data. This is useful when the column structure needs to adapt to user requirements or dynamic data sources.
 
@@ -87,7 +87,7 @@ You can dynamically generate columns in the Syncfusion<sup style="font-size:70%"
 
 The [valueAccessor](../../api/gantt/column#valueaccessor) property is used to format column data in the Gantt Chart control. It accepts a function that returns a custom display value using the following two arguments:
 
-- `field`: The column's data field.  
+- `field`: The column's data field.
 - `data`: The data record for the row.
 
 In the following example, `percentageFormatter` returns the progress value with a `%` sign, while `concatenateFields` returns a combined string of **TaskName** and **TaskID**.
@@ -96,34 +96,34 @@ In the following example, `percentageFormatter` returns the progress value with 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs3/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs3/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs3/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs3/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs3" %}
 {% endif %}
 
 > The `valueAccessor` function may impact performance when used with large datasets or complex logic. To improve rendering speed, enable the virtualization feature so that only visible rows are processed and displayed.
 
 ### Display array type columns
 
-The Gantt Chart control supports binding an array of objects to a column using the  [valueAccessor](../../api/gantt/column#valueaccessor) property. It accepts a function that returns a custom display value, which is then displayed in the column.
+The Gantt Chart control supports binding an array of objects to a column using the [valueAccessor](../../api/gantt/column#valueaccessor) property. It accepts a function that returns a custom display value, which is then displayed in the column.
 
 In the following example, the **Name** column shows the combined value of **FirstName** and **LastName** by using a custom function defined in `valueAccessor`.
 
@@ -131,62 +131,62 @@ In the following example, the **Name** column shows the combined value of **Firs
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs4/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs4/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs4/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs4/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs4/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs4/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs4" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs4" %}
 {% endif %}
 
->Since customized values are displayed in the **Name** column, data operations, such as sorting and filtering, cannot be performed for this column.
+> Since customized values are displayed in the **Name** column, data operations, such as sorting and filtering, cannot be performed for this column.
 
 ### Expression column
 
 You can achieve an expression column in the Gantt Chart control using the [valueAccessor](../../api/gantt/column#valueaccessor) property. It accepts a function that returns a calculated value, which is displayed in the column based on other column values.
 
-In the following example, the chart includes columns like **TaskID**, **TaskName**, **Duration**, **Progress**, **units**, and **unit price**. A  **Total Price** column is added to display the result of multiplying **units** and **unit price** for each row.
+In the following example, the chart includes columns like **TaskID**, **TaskName**, **Duration**, **Progress**, **units**, and **unit price**. A **Total Price** column is added to display the result of multiplying **units** and **unit price** for each row.
 
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs5/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs5/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs5/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs5" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs5/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs5/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs5/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs5" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs5" %}
 {% endif %}
 
 > Since custom values are displayed in the **Total Price** column, operations like sorting and filtering are not supported for this column.
@@ -199,27 +199,27 @@ You can display serial numbers for each row in the Gantt Chart control using the
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs6/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs6/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs6/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs6" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs6" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs6/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs6/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs6/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs6" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/column-rendering-cs6" %}
 {% endif %}
 
 > Since custom values are displayed in the **S.No** column, data operations such as sorting and filtering are not supported for this column.

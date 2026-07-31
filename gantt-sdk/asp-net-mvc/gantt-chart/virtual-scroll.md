@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Virtual Scrolling in Gantt
 
 Virtual Scroll support in Gantt allows you to load large amount of data without performance degradation. To enable Virtual Scrolling, you need to inject `VirtualScroll` module in Gantt.
@@ -25,10 +24,10 @@ This mode can be enable by setting the `EnableVirtualization` property to `true`
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/virtual-scroll/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/virtual-scroll/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Virtual-scroll.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/virtual-scroll/virtual-scroll.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/virtual-scroll/virtual-scroll.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -36,15 +35,13 @@ This mode can be enable by setting the `EnableVirtualization` property to `true`
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/virtual-scroll/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/virtual-scroll/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Virtual-scroll.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/virtual-scroll/virtual-scroll.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/virtual-scroll/virtual-scroll.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/virtual-scroll.png)
 
@@ -58,10 +55,10 @@ This mode can be enable by setting the [EnableTimelineVirtualization](https://he
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/virtual-scroll-cs2/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/virtual-scroll-cs2/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Timeline-Virtual-scroll.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/virtual-scroll-cs2/virtual-scroll.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/virtual-scroll-cs2/virtual-scroll.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -69,17 +66,17 @@ This mode can be enable by setting the [EnableTimelineVirtualization](https://he
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/virtual-scroll-cs2/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/virtual-scroll-cs2/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Timeline-Virtual-scroll.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/virtual-scroll-cs2/virtual-scroll.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/virtual-scroll-cs2/virtual-scroll.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
 ## Limitations for virtual scroll
 
-* Due to the element height limitation in browsers, the maximum number of records loaded is limited by the browser capacity.
-* Cell-based selection is not supported when virtualization is enabled.
-* The number of records rendered will be determined by the `Height` property.
-* It is necessary to mention the height of the Gantt in pixels when enabling Virtual Scrolling.
+- Due to the element height limitation in browsers, the maximum number of records loaded is limited by the browser capacity.
+- Cell-based selection is not supported when virtualization is enabled.
+- The number of records rendered will be determined by the `Height` property.
+- It is necessary to mention the height of the Gantt in pixels when enabling Virtual Scrolling.

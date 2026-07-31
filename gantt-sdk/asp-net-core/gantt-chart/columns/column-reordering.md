@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Column reordering in gantt control
 
 The column reordering can be done by dragging a column header from one index to another index within the TreeGrid. To enable reordering, set the [`AllowReordering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowReordering) property to true.
@@ -17,10 +16,10 @@ The column reordering can be done by dragging a column header from one index to 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/reOrdering/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/reOrdering/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ReOrdering.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/reOrdering/reOrdering.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/reOrdering/reOrdering.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -28,15 +27,13 @@ The column reordering can be done by dragging a column header from one index to 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/reOrdering/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/reOrdering/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ReOrdering.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/reOrdering/reOrdering.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/reOrdering/reOrdering.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 N> You can disable the reordering of a particular column by setting the [`Columns.AllowReordering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_AllowReordering) property to `false`.
 
@@ -52,10 +49,10 @@ During the reorder action, the gantt component triggers the below three events.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/reorderEvents/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/reorderEvents/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ReorderEvents.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/reorderEvents/reorderEvents.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/reorderEvents/reorderEvents.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -63,15 +60,13 @@ During the reorder action, the gantt component triggers the below three events.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/reorderEvents/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/reorderEvents/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ReorderEvents.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/reorderEvents/reorderEvents.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/reorderEvents/reorderEvents.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Reorder multiple columns
 
@@ -81,10 +76,10 @@ Multiple columns can be reordered at a time by using the `reorderColumns` method
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/reOrderMultiple/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/reOrderMultiple/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ReOrderMultiple.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/reOrderMultiple/reOrderMultiple.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/reOrderMultiple/reOrderMultiple.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -92,10 +87,10 @@ Multiple columns can be reordered at a time by using the `reorderColumns` method
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/reOrderMultiple/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/reOrderMultiple/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ReOrderMultiple.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/reOrderMultiple/reOrderMultiple.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/reOrderMultiple/reOrderMultiple.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

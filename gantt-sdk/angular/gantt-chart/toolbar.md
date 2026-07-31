@@ -3,7 +3,7 @@ layout: post
 title: Toolbar in Angular Gantt Chart Component | Syncfusion
 description: Learn here all about toolbar in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Toolbar 
+control: Toolbar
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -20,34 +20,34 @@ Built-in toolbar items allow you to perform standard operations directly from th
 
 The following table shows built-in toolbar items and its actions.
 
-| Built-in Toolbar Items | Actions |
-|------------------------|---------|
-| ExpandAll | Expands all the rows.|
-| CollapseAll | Collapses all the rows.|
-| Add | Adds a new record.|
-| Edit | Edits the selected record.|
-| Indent | Indent the selected record to one level.|
-| Outdent | Outdents the selected record to one level.|
-| Update | Updates the edited record.|
-| Delete | Deletes the selected record.|
-| Cancel | Cancels the edit state.|
-| Search | Searches the records by the given key.|
-| PrevTimeSpan | Navigate the Gantt timeline to previous time span.|
-| NextTimeSpan | Navigate the Gantt timeline to Next time span.|
+| Built-in Toolbar Items | Actions                                            |
+| ---------------------- | -------------------------------------------------- |
+| ExpandAll              | Expands all the rows.                              |
+| CollapseAll            | Collapses all the rows.                            |
+| Add                    | Adds a new record.                                 |
+| Edit                   | Edits the selected record.                         |
+| Indent                 | Indent the selected record to one level.           |
+| Outdent                | Outdents the selected record to one level.         |
+| Update                 | Updates the edited record.                         |
+| Delete                 | Deletes the selected record.                       |
+| Cancel                 | Cancels the edit state.                            |
+| Search                 | Searches the records by the given key.             |
+| PrevTimeSpan           | Navigate the Gantt timeline to previous time span. |
+| NextTimeSpan           | Navigate the Gantt timeline to Next time span.     |
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/toolbar/default-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/toolbar/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/toolbar/default-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/toolbar/default-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/toolbar/default-cs1" %}
 
-> * The [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt#toolbar) has options to define both built-in and custom toolbar items.
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/toolbar/default-cs1" %}
+
+> - The [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt#toolbar) has options to define both built-in and custom toolbar items.
 
 ### Customize the built-in toolbar items
 
@@ -55,38 +55,38 @@ You can modify built-in toolbar actions using the [toolbarClick](https://ej2.syn
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/toolbar/customize-custom-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/toolbar/customize-custom-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/toolbar/customize-custom-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/toolbar/customize-custom-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/toolbar/customize-custom-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/toolbar/customize-custom-cs1" %}
 
 ### Show only icons in built-in toolbar items
 
 To show only icons in the built-in toolbar items, apply custom CSS to hide the text labels. Use the following style:
 
 ```css
- .e-gantt .e-toolbar .e-tbar-btn-text, 
- .e-gantt .e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn-text {
-    display: none;   
-  }
+.e-gantt .e-toolbar .e-tbar-btn-text,
+.e-gantt .e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn-text {
+  display: none;
+}
 ```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/toolbar/show-only-icons/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/toolbar/show-only-icons/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/toolbar/show-only-icons/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/toolbar/show-only-icons/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/toolbar/show-only-icons" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/toolbar/show-only-icons" %}
 
 ## Customize toolbar buttons using CSS
 
@@ -95,22 +95,21 @@ You can customize the appearance of toolbar buttons in the Gantt Chart component
 ```css
 .e-gantt .e-toolbar .e-tbar-btn .e-icons,
 .e-gantt .e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn {
-  background: #add8e6;   
+  background: #add8e6;
 }
-
 ```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/toolbar/customize-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/toolbar/customize-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/toolbar/customize-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/toolbar/customize-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/toolbar/customize-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/toolbar/customize-cs1" %}
 
 ## Add toolbar at the bottom of gantt
 
@@ -118,15 +117,15 @@ To reposition the toolbar to the bottom of the Gantt chart, use the [created](ht
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/toolbar/add-toolbar-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/toolbar/add-toolbar-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/toolbar/add-toolbar-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/toolbar/add-toolbar-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/toolbar/add-toolbar-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/toolbar/add-toolbar-cs1" %}
 
 ## Custom toolbar items
 
@@ -136,17 +135,17 @@ By default, custom toolbar items are aligned to the left. However, you can chang
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/toolbar/position-toolbar-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/toolbar/position-toolbar-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/toolbar/position-toolbar-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/toolbar/position-toolbar-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/toolbar/position-toolbar-cs1" %}
 
-> * If a toolbar item does not match the built-in items, it will be treated as a custom toolbar item.
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/toolbar/position-toolbar-cs1" %}
+
+> - If a toolbar item does not match the built-in items, it will be treated as a custom toolbar item.
 
 ## Built-in and custom items in toolbar
 
@@ -154,15 +153,15 @@ The Gantt Chart component supports using both built-in and custom toolbar items 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/toolbar/builtin-custom-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/toolbar/builtin-custom-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/toolbar/builtin-custom-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/toolbar/builtin-custom-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/toolbar/builtin-custom-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/toolbar/builtin-custom-cs1" %}
 
 ## Enable/disable toolbar items
 
@@ -170,15 +169,15 @@ You can control toolbar items dynamically using the [enableItems](https://ej2.sy
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/toolbar/enable-disable-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/toolbar/enable-disable-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/toolbar/enable-disable-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/toolbar/enable-disable-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/toolbar/enable-disable-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/toolbar/enable-disable-cs1" %}
 
 ## Add input elements in toolbar
 
@@ -188,13 +187,12 @@ The following example demonstrates how to integrate an [AutoComplete](https://ej
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/toolbar/input-elements-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/toolbar/input-elements-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/toolbar/input-elements-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/toolbar/input-elements-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/toolbar/input-elements-cs1" %}
 
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/toolbar/input-elements-cs1" %}

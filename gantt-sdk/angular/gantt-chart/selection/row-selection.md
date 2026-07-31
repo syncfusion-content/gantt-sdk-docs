@@ -3,7 +3,7 @@ layout: post
 title: Angular Gantt Row Selection API Guide | Syncfusion
 description: Explore how to configure and customize row selection in the Syncfusion Angular Gantt Chart component using API methods and events.
 platform: gantt-sdk
-control: Row selection 
+control: Row selection
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -18,38 +18,37 @@ You can enable single row selection in the Gantt Chart component by setting [sel
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/row-single-selection/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/row-single-selection/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/row-single-selection/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/row-single-selection/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/selection/row-single-selection" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/selection/row-single-selection" %}
 
 ## Multiple row selection
 
-You can enable multiple row selection in the Gantt Chart component by setting  [selectionSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings#mode) to **Row** and [selectionSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings#type) to **Multiple**. This allows selection of more than one task row at a time by holding down the **Ctrl** key while clicking on multiple rows.
+You can enable multiple row selection in the Gantt Chart component by setting [selectionSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings#mode) to **Row** and [selectionSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings#type) to **Multiple**. This allows selection of more than one task row at a time by holding down the **Ctrl** key while clicking on multiple rows.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/row-multiple-selection/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/row-multiple-selection/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/row-multiple-selection/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/row-multiple-selection/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/selection/row-multiple-selection" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/selection/row-multiple-selection" %}
 
 ## Row selection event sequence
 
 - On initial row selection: `rowSelecting` triggers first, followed by `rowSelected`.
 
 - When selecting a different row:
-
   - [rowSelecting](https://ej2.syncfusion.com/angular/documentation/api/gantt#rowselecting) is followed by [rowDeselecting](https://ej2.syncfusion.com/angular/documentation/api/gantt#rowdeselecting) and [rowDeselected](https://ej2.syncfusion.com/angular/documentation/api/gantt#rowdeselected) to deselect the previously selected row.
 
   - Then, [rowSelected](https://ej2.syncfusion.com/angular/documentation/api/gantt#rowselected) triggers for the newly selected row.
@@ -64,15 +63,15 @@ The following example selects the row at index 5 during initial load:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/selectrow-initial-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/selectrow-initial-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/selectrow-initial-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/selectrow-initial-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/selection/selectrow-initial-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/selection/selectrow-initial-cs1" %}
 
 > You can also select single or multiple rows during the initial load by using the [selectRow](https://ej2.syncfusion.com/angular/documentation/api/gantt/selection#selectrow) or [selectRows](https://ej2.syncfusion.com/angular/documentation/api/gantt/selection#selectrows) method inside the [dataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#databound) event.
 
@@ -86,15 +85,15 @@ Select a single row in the Gantt Chart component by calling the [selectRow](http
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/row-single-method/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/row-single-method/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/row-single-method/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/row-single-method/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/selection/row-single-method" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/selection/row-single-method" %}
 
 ### Multiple rows selection
 
@@ -102,15 +101,15 @@ Select multiple rows in the Gantt Chart component by using the [selectRows](http
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/row-multiple-method/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/row-multiple-method/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/row-multiple-method/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/row-multiple-method/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/selection/row-multiple-method" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/selection/row-multiple-method" %}
 
 ### Range of rows selection
 
@@ -118,15 +117,15 @@ Select a range of rows in the Gantt Chart component by using the [selectRowsByRa
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/row-range-method/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/row-range-method/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/row-range-method/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/row-range-method/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/selection/row-range-method" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/selection/row-range-method" %}
 
 ## Enable multi row selection without Ctrl key
 
@@ -134,15 +133,15 @@ You can enable simple multi-row selection by setting the `enableSimpleMultiRowSe
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/selection-multiple/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/selection-multiple/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/selection-multiple/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/selection-multiple/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/selection/selection-multiple" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/selection/selection-multiple" %}
 
 ## Get selected row information
 
@@ -154,20 +153,19 @@ To access selected row details in the Angular Gantt Chart component:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/row-selected-indexes/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/row-selected-indexes/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="app.component.css" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/row-selected-indexes/src/app.component.css %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/row-selected-indexes/src/app.component.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/row-selected-indexes/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/row-selected-indexes/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/selection/row-selected-indexes" %}
 
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/selection/row-selected-indexes" %}
 
 > **Note:** The Gantt Chart component supports keyboard navigation for row selection. Use arrow keys to move focus and `Enter` or `Space` to select rows. Ensure accessibility compliance by providing appropriate ARIA attributes.
 
@@ -185,12 +183,12 @@ The following demonstrates how row selection and background color updates are ha
 The following sample demonstrates
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/row-selection-events/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/row-selection-events/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/selection/row-selection-events/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/selection/row-selection-events/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/selection/row-selection-events" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/selection/row-selection-events" %}

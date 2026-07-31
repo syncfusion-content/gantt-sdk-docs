@@ -18,22 +18,22 @@ By default, column headers in the Gantt chart display the value defined in the [
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnheader-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnheader-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnheader-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnheader-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnheader-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnheader-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/columnheader-cs1" %}
 
-> * The `headerText` property is optional. If not defined, the column's field value will be used as the header text by default.
-> * To apply custom HTML content to the header cell, use the [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#headertemplate) property.
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/columnheader-cs1" %}
+
+> - The `headerText` property is optional. If not defined, the column's field value will be used as the header text by default.
+> - To apply custom HTML content to the header cell, use the [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#headertemplate) property.
 
 ## Customize header using template
 
@@ -43,48 +43,48 @@ In this example, custom elements are applied to both the **TaskName** and **Dura
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnheader-cs2/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnheader-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnheader-cs2/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnheader-cs2/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnheader-cs2/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnheader-cs2/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/columnheader-cs2" %}
 
->* The `headerTemplate` property is only applicable to Gantt columns that have a header element.
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/columnheader-cs2" %}
+
+> - The `headerTemplate` property is only applicable to Gantt columns that have a header element.
 
 ## Align header text
 
 You can align the column header text in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component using the [headerTextAlign](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#headertextalign) property. By default, the text is aligned to the **left**. The available alignment options are:
 
-- **Left:** Aligns text to the left (default).  
-- **Center:** Aligns text to the center.  
-- **Right:** Aligns text to the right.  
+- **Left:** Aligns text to the left (default).
+- **Center:** Aligns text to the center.
+- **Right:** Aligns text to the right.
 - **Justify:** Distributes text evenly across the header.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnheader-cs3/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnheader-cs3/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnheader-cs3/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnheader-cs3/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnheader-cs3/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnheader-cs3/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/columnheader-cs3" %}
 
->* The `headerTextAlign` property only changes the alignment of the text in the column header, and not the content of the column. If you want to align both the column header and content, you can use the [textAlign](https://ej2.syncfusion.com/documentation/api/gantt/column#textalign) property.
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/columnheader-cs3" %}
+
+> - The `headerTextAlign` property only changes the alignment of the text in the column header, and not the content of the column. If you want to align both the column header and content, you can use the [textAlign](https://ej2.syncfusion.com/documentation/api/gantt/column#textalign) property.
 
 ## Enable header text wrapping
 
@@ -96,25 +96,25 @@ The wrapping behavior is defined using the `textWrapSettings.wrapMode` property 
 - **Content:** Wraps only the cell content.
 - **Both:** Wraps both header and content (default).
 
-> * If column width is not defined, autowrap adjusts based on the overall Gantt chart width.
-> * Header text without white space may not wrap.  
-> * If cell content includes HTML tags, autowrap may not function as expected. In such cases, use [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#headertemplate) and [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#template) properties to customize the header and cell layout.
+> - If column width is not defined, autowrap adjusts based on the overall Gantt chart width.
+> - Header text without white space may not wrap.
+> - If cell content includes HTML tags, autowrap may not function as expected. In such cases, use [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#headertemplate) and [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#template) properties to customize the header and cell layout.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnheader-cs6/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnheader-cs6/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnheader-cs6/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnheader-cs6/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnheader-cs6/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnheader-cs6/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/columnheader-cs6" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/columnheader-cs6" %}
 
 ## Update header text dynamically
 
@@ -128,36 +128,36 @@ To modify header text during rendering, use the [headerCellInfo](https://ej2.syn
 
 You can also change header text programmatically using the following methods:
 
-- `getColumnByField`: Returns the column object by field name.  
-- `getColumnHeaderByField`: Returns the header element by field name.  
-- `getColumnIndexByField`: Returns the column index by field name.  
-- `getColumnByUid`: Returns the column object by UID.  
-- `getColumnHeaderByIndex`: Returns the header element by index.  
-- `getColumnIndexByUid`: Returns the column index by UID.  
-- `getColumnHeaderByUid`: Returns the header element by UID.  
+- `getColumnByField`: Returns the column object by field name.
+- `getColumnHeaderByField`: Returns the header element by field name.
+- `getColumnIndexByField`: Returns the column index by field name.
+- `getColumnByUid`: Returns the column object by UID.
+- `getColumnHeaderByIndex`: Returns the header element by index.
+- `getColumnIndexByUid`: Returns the column index by UID.
+- `getColumnHeaderByUid`: Returns the header element by UID.
 
 These methods allow access to the column or header element, where you can update the `headerText` or `textContent` as needed.
 
-> * After modifying header text, call `refreshHeader` to reflect the changes.  
-> * Column UID's are auto-generated and may change when the chart is refreshed
+> - After modifying header text, call `refreshHeader` to reflect the changes.
+> - Column UID's are auto-generated and may change when the chart is refreshed
 
 Here is an example of how to change the header text of a column using the `getColumnByField` method:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnheader-cs5/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnheader-cs5/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnheader-cs5/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnheader-cs5/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnheader-cs5/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnheader-cs5/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/columnheader-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/columnheader-cs5" %}
 
 **Changing the header text of all columns:**
 
@@ -165,17 +165,17 @@ To modify the header text of all columns in the Gantt Chart component, iterate t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnheader-cs7/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnheader-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnheader-cs7/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnheader-cs7/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnheader-cs7/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnheader-cs7/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/columnheader-cs7" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/columnheader-cs7" %}
 
 ## Rotate header text
 
@@ -184,9 +184,9 @@ By default, header text in the Syncfusion<sup style="font-size:70%">&reg;</sup> 
 **Step 1**: Create a CSS class with rotation styles.
 
 ```css
-.e-gantt .e-headercell.orientationcss  {
+.e-gantt .e-headercell.orientationcss {
   transform: rotate(90deg);
-} 
+}
 ```
 
 **Step 2:** Apply the CSS class to the desired column using `customAttributes`.
@@ -209,49 +209,48 @@ public setHeaderHeight(args) {
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnheader-cs8/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnheader-cs8/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnheader-cs8/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnheader-cs8/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="app.component.css" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnheader-cs8/src/app.component.css %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnheader-cs8/src/app.component.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnheader-cs8/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnheader-cs8/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/columnheader-cs8" %}
 
-## Localize header text using ngx-translate 
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/columnheader-cs8" %}
+
+## Localize header text using ngx-translate
 
 The ngx-translate library provides **internationalization (i18n)** and **localization (l10n)** support for Angular applications. With ngx-translate, you can easily translate your Angular application into multiple languages.
 
 In the context of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt chart component, you can use ngx-translate to translate the header text of the Gantt chart's columns. There are two ways to achieve this: through header text and through header template.
 
-### Through header text  
+### Through header text
 
 To translate the header text of the Gantt chart's columns using **ngx-translate** through header text, you can use the **translate** pipe for the [headerText](https://helpej2.syncfusion.com/angular/documentation/api/gantt/column#headertext) property.
 
 **Step 1**: Create and Configure the TranslateService
 
-````typescript
-
-import { Component, ViewChild } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
-import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
+```typescript
+import { Component, ViewChild } from "@angular/core";
+import { TranslateService } from "@ngx-translate/core";
+import { GanttComponent } from "@syncfusion/ej2-angular-gantt";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"],
 })
 export class AppComponent {
-  constructor(public translate: TranslateService) { }
+  constructor(public translate: TranslateService) {}
 
   changeLang(lang: string) {
     this.translate.use(lang);
@@ -260,7 +259,7 @@ export class AppComponent {
       function (this: GanttComponent) {
         this.refresh();
       }.bind(this.gantt),
-      800
+      800,
     );
   }
 
@@ -275,70 +274,69 @@ export class AppComponent {
     this.data = [
       {
         TaskID: 1,
-        TaskName: 'Identify Site location',
-        StartDate: new Date('04/02/2019'),
+        TaskName: "Identify Site location",
+        StartDate: new Date("04/02/2019"),
         lineId: 5,
-        start: 'Reims',
-        destination: 'France',
+        start: "Reims",
+        destination: "France",
         Duration: 4,
-        Progress: 50
+        Progress: 50,
       },
       {
         TaskID: 2,
-        TaskName: 'Perform Soil test',
+        TaskName: "Perform Soil test",
         lineId: 6,
-        start: 'Münster',
-        destination: 'Germany',
-        StartDate: new Date('04/02/2019'),
+        start: "Münster",
+        destination: "Germany",
+        StartDate: new Date("04/02/2019"),
         Duration: 4,
-        Progress: 50
+        Progress: 50,
       },
       {
-        TaskID: 3, TaskName: 'Soil test approval',
+        TaskID: 3,
+        TaskName: "Soil test approval",
         lineId: 2,
-        start: 'Rio de Janeiro',
-        destination: 'Brazil',
-        StartDate: new Date('04/02/2019'),
+        start: "Rio de Janeiro",
+        destination: "Brazil",
+        StartDate: new Date("04/02/2019"),
         Duration: 4,
-        Progress: 50
-      }
+        Progress: 50,
+      },
     ];
     this.taskSettings = {
-      id: 'TaskID',
-      name: 'TaskName',
-      startDate: 'StartDate',
-      duration: 'Duration',
-      progress: 'Progress',
-      lineID: 'lineID',
-      start: 'start',
-      destination: 'destination'
+      id: "TaskID",
+      name: "TaskName",
+      startDate: "StartDate",
+      duration: "Duration",
+      progress: "Progress",
+      lineID: "lineID",
+      start: "start",
+      destination: "destination",
     };
     this.splitterSettings = {
-      position: '75%'
+      position: "75%",
     };
   }
 }
+```
 
-````
-
-**Step 2**:  Import the **TranslateModule** and **TranslateLoader** in your app.module.ts file. You also need to import the `HttpClientModule` to enable HTTP requests for loading translation files
+**Step 2**: Import the **TranslateModule** and **TranslateLoader** in your app.module.ts file. You also need to import the `HttpClientModule` to enable HTTP requests for loading translation files
 
 ```ts
-
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { AppComponent } from './app.component';
-import { GridAllModule } from '@syncfusion/ej2-angular-grids';
-import { CommonModule } from '@angular/common';
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
-import { GanttModule } from '@syncfusion/ej2-angular-gantt';
-import { GanttAllModule } from '@syncfusion/ej2-angular-gantt';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
+import { HttpClient, HttpClientModule } from "@angular/common/http";
+import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
+import { TranslateHttpLoader } from "@ngx-translate/http-loader";
+import { AppComponent } from "./app.component";
+import { GridAllModule } from "@syncfusion/ej2-angular-grids";
+import { CommonModule } from "@angular/common";
+import { ButtonModule } from "@syncfusion/ej2-angular-buttons";
+import { GanttModule } from "@syncfusion/ej2-angular-gantt";
+import { GanttAllModule } from "@syncfusion/ej2-angular-gantt";
 
 export function createTranslateLoader(http: HttpClient) {
-  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+  return new TranslateHttpLoader(http, "./assets/i18n/", ".json");
 }
 
 @NgModule({
@@ -354,18 +352,16 @@ export function createTranslateLoader(http: HttpClient) {
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
-        useFactory: (createTranslateLoader),
+        useFactory: createTranslateLoader,
         deps: [HttpClient],
       },
-      defaultLanguage: '',
-    }),  
+      defaultLanguage: "",
+    }),
   ],
-  
+
   bootstrap: [AppComponent],
 })
 export class AppModule {}
-
-
 ```
 
 In the above code, we import the required modules and define a function called **HttpLoaderFactory** that returns an instance of **TranslateHttpLoader**, which is used to load translation files.
@@ -374,7 +370,7 @@ In the above code, we import the required modules and define a function called *
 
 ```html
 {% raw %}
-<h1> Ngx translate pipe for header text in Angular Gantt Chart component</h1>
+<h1>Ngx translate pipe for header text in Angular Gantt Chart component</h1>
 <h1></h1>
 <div class="container-fluid py-3">
   <div class="btn-group btn-group-sm py-5">
@@ -383,28 +379,47 @@ In the above code, we import the required modules and define a function called *
     <button (click)="changeLang('pt-BR')" style="margin-left:5px">BR</button>
   </div>
 </div>
-<ejs-gantt #gantt height="430px"  [dataSource]="data"
-        [taskFields]="taskSettings"  [splitterSettings] = "splitterSettings">    
-        <e-columns>
-          <e-column field="TaskID" headerText="TaskID" width="120" textAlign="Right"></e-column>
-          <e-column field="TaskName" headerText="TaskName" width="120" textAlign="Right">
-          </e-column>
-          <e-column field="lineId" headerText="{{ 'Line' | translate }}" width="120">
-          </e-column>
-          <e-column field="start" headerText="{{ 'Start' | translate }}" width="140">
-          </e-column>
-          <e-column field="destination" headerText="{{ 'Destination' | translate }}" width="170"> </e-column>
-        </e-columns>
+<ejs-gantt
+  #gantt
+  height="430px"
+  [dataSource]="data"
+  [taskFields]="taskSettings"
+  [splitterSettings]="splitterSettings"
+>
+  <e-columns>
+    <e-column
+      field="TaskID"
+      headerText="TaskID"
+      width="120"
+      textAlign="Right"
+    ></e-column>
+    <e-column
+      field="TaskName"
+      headerText="TaskName"
+      width="120"
+      textAlign="Right"
+    >
+    </e-column>
+    <e-column field="lineId" headerText="{{ 'Line' | translate }}" width="120">
+    </e-column>
+    <e-column field="start" headerText="{{ 'Start' | translate }}" width="140">
+    </e-column>
+    <e-column
+      field="destination"
+      headerText="{{ 'Destination' | translate }}"
+      width="170"
+    >
+    </e-column>
+  </e-columns>
 </ejs-gantt>
 {% endraw %}
 ```
 
 **Step 4**: Then add the json file with the translation text in the required languages,
 
-
 ```json
 
-en-US.json { 
+en-US.json {
     "changeLanguage": "Change Language",
     "Line": "Line",
     "Start": "Start",
@@ -415,7 +430,7 @@ en-US.json {
 
 ```json
 
-de-DE.json { 
+de-DE.json {
     "changeLanguage": "Ändere Sprache",
     "Line": "Linie",
     "Start": "Startpunkt",
@@ -426,7 +441,7 @@ de-DE.json {
 
 ```json
 
-pt-BR.json { 
+pt-BR.json {
     "changeLanguage": "Change Language",
     "Line": "ligne",
     "Start": "debut",
@@ -443,19 +458,18 @@ Here are the steps to use ngx-translate pipe for Gantt's header template in Angu
 
 **Step 1**: Create and Configure the TranslateService
 
-````typescript
-
-import { Component, ViewChild } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
-import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
+```typescript
+import { Component, ViewChild } from "@angular/core";
+import { TranslateService } from "@ngx-translate/core";
+import { GanttComponent } from "@syncfusion/ej2-angular-gantt";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"],
 })
 export class AppComponent {
-  constructor(public translate: TranslateService) { }
+  constructor(public translate: TranslateService) {}
 
   changeLang(lang: string) {
     this.translate.use(lang);
@@ -464,7 +478,7 @@ export class AppComponent {
       function (this: GanttComponent) {
         this.refresh();
       }.bind(this.gantt),
-      800
+      800,
     );
   }
 
@@ -479,70 +493,69 @@ export class AppComponent {
     this.data = [
       {
         TaskID: 1,
-        TaskName: 'Identify Site location',
-        StartDate: new Date('04/02/2019'),
+        TaskName: "Identify Site location",
+        StartDate: new Date("04/02/2019"),
         lineId: 5,
-        start: 'Reims',
-        destination: 'France',
+        start: "Reims",
+        destination: "France",
         Duration: 4,
-        Progress: 50
+        Progress: 50,
       },
       {
         TaskID: 2,
-        TaskName: 'Perform Soil test',
+        TaskName: "Perform Soil test",
         lineId: 6,
-        start: 'Münster',
-        destination: 'Germany',
-        StartDate: new Date('04/02/2019'),
+        start: "Münster",
+        destination: "Germany",
+        StartDate: new Date("04/02/2019"),
         Duration: 4,
-        Progress: 50
+        Progress: 50,
       },
       {
-        TaskID: 3, TaskName: 'Soil test approval',
+        TaskID: 3,
+        TaskName: "Soil test approval",
         lineId: 2,
-        start: 'Rio de Janeiro',
-        destination: 'Brazil',
-        StartDate: new Date('04/02/2019'),
+        start: "Rio de Janeiro",
+        destination: "Brazil",
+        StartDate: new Date("04/02/2019"),
         Duration: 4,
-        Progress: 50
-      }
+        Progress: 50,
+      },
     ];
     this.taskSettings = {
-      id: 'TaskID',
-      name: 'TaskName',
-      startDate: 'StartDate',
-      duration: 'Duration',
-      progress: 'Progress',
-      lineID: 'lineID',
-      start: 'start',
-      destination: 'destination'
+      id: "TaskID",
+      name: "TaskName",
+      startDate: "StartDate",
+      duration: "Duration",
+      progress: "Progress",
+      lineID: "lineID",
+      start: "start",
+      destination: "destination",
     };
     this.splitterSettings = {
-      position: '75%'
+      position: "75%",
     };
   }
 }
-
-````
+```
 
 **Step 2**: Import the required modules in **app.module.ts** file along with translate loader function,
 
 ```ts
-
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { AppComponent } from './app.component';
-import { GridAllModule } from '@syncfusion/ej2-angular-grids';
-import { CommonModule } from '@angular/common';
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
-import { GanttModule } from '@syncfusion/ej2-angular-gantt';
-import { GanttAllModule } from '@syncfusion/ej2-angular-gantt';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
+import { HttpClient, HttpClientModule } from "@angular/common/http";
+import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
+import { TranslateHttpLoader } from "@ngx-translate/http-loader";
+import { AppComponent } from "./app.component";
+import { GridAllModule } from "@syncfusion/ej2-angular-grids";
+import { CommonModule } from "@angular/common";
+import { ButtonModule } from "@syncfusion/ej2-angular-buttons";
+import { GanttModule } from "@syncfusion/ej2-angular-gantt";
+import { GanttAllModule } from "@syncfusion/ej2-angular-gantt";
 
 export function createTranslateLoader(http: HttpClient) {
-  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+  return new TranslateHttpLoader(http, "./assets/i18n/", ".json");
 }
 
 @NgModule({
@@ -558,17 +571,16 @@ export function createTranslateLoader(http: HttpClient) {
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
-        useFactory: (createTranslateLoader),
+        useFactory: createTranslateLoader,
         deps: [HttpClient],
       },
-      defaultLanguage: '',
-    }),  
+      defaultLanguage: "",
+    }),
   ],
-  
+
   bootstrap: [AppComponent],
 })
 export class AppModule {}
-
 ```
 
 **Step 3**: Use the ngx-translate pipe in your Angular Gantt chart component header templates to translate the headers dynamically.
@@ -613,14 +625,14 @@ export class AppModule {}
   </e-columns>
 </ejs-gantt>
 <div>
-{% endraw %}  
+{% endraw %}
 ```
 
 **Step 4**: Then add the json file with the translation text in the required languages,
 
 ```json
 
-en-US.json { 
+en-US.json {
     "changeLanguage": "Change Language",
     "Line": "Line",
     "Start": "Start",
@@ -631,7 +643,7 @@ en-US.json {
 
 ```json
 
-de-DE.json { 
+de-DE.json {
     "changeLanguage": "Ändere Sprache",
     "Line": "Linie",
     "Start": "Startpunkt",
@@ -642,7 +654,7 @@ de-DE.json {
 
 ```json
 
-pt-BR.json { 
+pt-BR.json {
     "changeLanguage": "Change Language",
     "Line": "ligne",
     "Start": "debut",
@@ -659,21 +671,21 @@ The following example demonstrates how to use the `beforeRender` event to add a 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/customtooltip-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/customtooltip-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/customtooltip-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/customtooltip-cs1/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/customtooltip-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/customtooltip-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/customtooltip-cs1" %}
 
-> * The [headerCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt#headercellinfo) event can also be used to customize the header tooltip. This event is triggered for each header cell after it is rendered.
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/customtooltip-cs1" %}
 
-## Style header text 
+> - The [headerCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt#headercellinfo) event can also be used to customize the header tooltip. This event is triggered for each header cell after it is rendered.
+
+## Style header text
 
 To modify the appearance of column headers in the Gantt, follow the steps below. You can use CSS, properties, methods, or events provided by the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component.
 
@@ -690,23 +702,23 @@ You can apply styles to Gantt Chart component header cells using the **.e-header
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/headerstyle-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/headerstyle-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="app.component.css" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/headerstyle-cs1/src/app.component.css %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/headerstyle-cs1/src/app.component.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/headerstyle-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/headerstyle-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/headerstyle-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/headerstyle-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/headerstyle-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/headerstyle-cs1" %}
 
 ### Using property
 
@@ -732,25 +744,25 @@ The following example demonstrates how to style the **TaskName** and **Duration*
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/headerstyle-cs2/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/headerstyle-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="app.component.css" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/headerstyle-cs2/src/app.component.css %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/headerstyle-cs2/src/app.component.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/headerstyle-cs2/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/headerstyle-cs2/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/headerstyle-cs2/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/headerstyle-cs2/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/headerstyle-cs2" %}
 
-### Using method 
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/headerstyle-cs2" %}
+
+### Using method
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart component provides methods in the `treeGrid` object to customize column header appearance:
 
@@ -768,21 +780,21 @@ The following example demonstrates how to apply custom styles to specific column
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/headerstyle-cs3/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/headerstyle-cs3/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/headerstyle-cs3/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/headerstyle-cs3/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/headerstyle-cs3/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/headerstyle-cs3/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/headerstyle-cs3" %}
 
->* The UID is automatically generated by the Gantt chart component and may change whenever the gantt chart is refreshed or updated.
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/headerstyle-cs3" %}
+
+> - The UID is automatically generated by the Gantt chart component and may change whenever the gantt chart is refreshed or updated.
 
 ### Using event
 
@@ -792,21 +804,21 @@ The following example demonstrates how to check if the current header column is 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/headerstyle-cs4/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/headerstyle-cs4/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/headerstyle-cs4/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/headerstyle-cs4/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/headerstyle-cs4/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/headerstyle-cs4/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/headerstyle-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/headerstyle-cs4" %}
 
-## Refresh header programmatically 
+## Refresh header programmatically
 
 To refresh the header in Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart component after updating column properties (such as text, width, or alignment), use the `refreshHeader` method from the `treeGrid` object. This method re-renders the header to reflect the latest column changes.
 
@@ -814,53 +826,56 @@ The following example demonstrates how to update the header text of the column a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/headerstyle-cs5/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/headerstyle-cs5/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/headerstyle-cs5/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/headerstyle-cs5/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/headerstyle-cs5/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/headerstyle-cs5/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/headerstyle-cs5" %}
 
->* The `refreshHeader` method updates only the Gantt header and not the entire Gantt chart.
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/headerstyle-cs5" %}
 
-## Access header element 
+> - The `refreshHeader` method updates only the Gantt header and not the entire Gantt chart.
+
+## Access header element
 
 To retrieve the header element in a Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart component, you can use one of the following methods available in the `treeGrid` object of the Gantt instance:
 
 1. `getHeaderContent`: This method returns the header <div> element of the Gantt chart. You can use it to access the entire header content.
 
-    ```ts
-    const headerElement = this.gantt.treeGrid.getHeaderContent();    
-    ```
+   ```ts
+   const headerElement = this.gantt.treeGrid.getHeaderContent();
+   ```
+
 2. `getHeaderTable`: This method returns the header <table> element of the Gantt chart. You can use it to access only the header table.
 
    ```ts
-    const headerTableElement = this.gantt.treeGrid.getHeaderTable();
+   const headerTableElement = this.gantt.treeGrid.getHeaderTable();
    ```
 
 3. `getColumnHeaderByUid`: This method returns the column header element by its unique identifier (UID).
 
-
    ```ts
-    const columnHeaderElement = this.gantt.treeGrid.getColumnHeaderByUid("e-grid2");
+   const columnHeaderElement =
+     this.gantt.treeGrid.getColumnHeaderByUid("e-grid2");
    ```
 
 4. `getColumnHeaderByIndex`: This method returns the column header element by its index.
 
    ```ts
-    const columnHeaderElement = this.gantt.treeGrid.getColumnHeaderByIndex(0);
+   const columnHeaderElement = this.gantt.treeGrid.getColumnHeaderByIndex(0);
    ```
+
 5. `getColumnHeaderByField`: This method returns the column header element by its field name.
 
    ```ts
-    const columnHeaderElement = this.gantt.treeGrid.getColumnHeaderByField("TaskID"); 
+   const columnHeaderElement =
+     this.gantt.treeGrid.getColumnHeaderByField("TaskID");
    ```
 
->* The UID is automatically generated by the Gantt chart component and may change whenever the Gantt is refreshed or updated.
+> - The UID is automatically generated by the Gantt chart component and may change whenever the Gantt is refreshed or updated.

@@ -3,7 +3,7 @@ layout: post
 title: Data markers in TypeScript Gantt Chart Control | Syncfusion
 description: Learn here all about Data markers in Syncfusion TypeScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Data markers 
+control: Data markers
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -40,27 +40,27 @@ The following implementation demonstrates comprehensive data marker integration 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/data-markers-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/data-markers-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/data-markers-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/data-markers-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/data-markers-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/data-markers-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/data-markers-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/data-markers-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/data-markers-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/data-markers-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/data-markers-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/data-markers-cs1" %}
 {% endif %}
 
 ## Custom event bind to data markers
@@ -77,27 +77,27 @@ The following implementation demonstrates how to open the edit dialog for a spec
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/data-markers-cs2/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/data-markers-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/data-markers-cs2/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/data-markers-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/data-markers-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/data-markers-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/data-markers-cs2/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/data-markers-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/data-markers-cs2/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/data-markers-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/data-markers-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/data-markers-cs2" %}
 {% endif %}
 
 ![Custom event bind to data markers](images/custom-event-datamarkers.gif)
@@ -112,25 +112,25 @@ You can programmatically modify the styling of the indicator by targeting the `.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/data-markers-cs3/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/data-markers-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/data-markers-cs3/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/data-markers-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/data-markers-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/data-markers-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/data-markers-cs3/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/data-markers-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/data-markers-cs3/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/data-markers-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/data-markers-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/data-markers-cs3" %}
 {% endif %}
