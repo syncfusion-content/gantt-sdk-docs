@@ -2,7 +2,7 @@
 layout: post
 title: Resource View in Blazor Gantt Chart Component | Syncfusion
 description: Learn how to configure resource view in the Syncfusion Blazor Gantt Chart component for hierarchical task visualization and resource allocation.
-platform: Blazor
+platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---

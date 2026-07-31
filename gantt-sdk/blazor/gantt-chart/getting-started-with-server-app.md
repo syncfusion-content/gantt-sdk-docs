@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Blazor GanttChart Component | Syncfusion
 description: Checkout and learn about getting started with Blazor GanttChart component in Blazor Server Application.
-platform: Blazor
+platform: gantt-sdk
 control: GanttChart
 documentation: ug
 ---

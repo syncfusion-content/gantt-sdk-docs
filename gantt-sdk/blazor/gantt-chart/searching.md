@@ -2,7 +2,7 @@
 layout: post
 title: Searching in Blazor Gantt Chart Component | Syncfusion
 description: Checkout and learn here all about searching in Syncfusion Blazor Gantt Chart component and much more.
-platform: Blazor
+platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---

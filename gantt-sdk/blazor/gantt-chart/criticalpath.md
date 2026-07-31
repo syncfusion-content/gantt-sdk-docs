@@ -2,7 +2,7 @@
 layout: post
 title: Critical Path in Blazor Gantt Chart Component | Syncfusion
 description: Learn here all about Critical path in Syncfusion Blazor Gantt Chart component and much more details.
-platform: Blazor
+platform: gantt-sdk
 component: Critical path
 documentation: ug
 ---

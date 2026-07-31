@@ -2,7 +2,7 @@
 layout: post
 title: Deleting tasks in Blazor Gantt Chart Component | Syncfusion
 description: Learn how to delete tasks dynamically in the Syncfusion Blazor Gantt Chart component using toolbar or programmatic methods for efficient project management.
-platform: Blazor
+platform: gantt-sdk
 control: Deleting tasks
 documentation: ug
 ---
