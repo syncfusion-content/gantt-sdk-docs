@@ -2,7 +2,7 @@
 layout: post
 title: Taskbar editing in Blazor Gantt Chart Component | Syncfusion
 description: Learn how to edit tasks via taskbar interactions in the Syncfusion Blazor Gantt Chart component for intuitive project timeline adjustments.
-platform: Blazor
+platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---
