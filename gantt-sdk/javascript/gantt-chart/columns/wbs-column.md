@@ -48,7 +48,7 @@ To enable WBS in the Gantt Chart control:
 
 {% endif %}
 
-> When the WBS column is enabled in the Angular Gantt Chart using the [enableWBS](https://ej2.syncfusion.com/javascript/documentation/api/gantt#enablewbs) property along with the **WBS Code** and **WBS Predecessor** fields, the default **ID** and **Predecessor** columns are automatically disabled, as the WBS and WBS Predecessor columns already display the ID and predecessor values based on the task hierarchy.
+> When the WBS column is enabled in the Gantt Chart using the [enableWBS](https://ej2.syncfusion.com/javascript/documentation/api/gantt#enablewbs) property along with the **WBS Code** and **WBS Predecessor** fields, the default **ID** and **Predecessor** columns are automatically disabled, as the WBS and WBS Predecessor columns already display the ID and predecessor values based on the task hierarchy.
 
 ## Managing WBS code updates
 
