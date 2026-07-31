@@ -2,7 +2,7 @@
 layout: post
 title: Task Labels in Blazor Gantt Chart Component | Syncfusion
 description: Learn how to configure taskbar labels in the Syncfusion Blazor Gantt Chart component for enhanced data visualization and project management.
-platform: Blazor
+platform: gantt-sdk
 control:  Task labels
 documentation: ug
 ---
