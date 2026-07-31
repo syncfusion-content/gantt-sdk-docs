@@ -39,6 +39,12 @@ Task relationships are categorized into four types based on start and finish dat
     Example: In publishing, proof reading (Task B) must finish when or shortly after content writing (Task A) is completed.
    ![Blazor Gantt Chart displays Finish to Finish Task Relationship](images/blazor-gantt-chart-finish-to-finish-relation.webp)
 
+> - Dependencies between tasks under the same parent are not supported.
+> - Dependencies between tasks in different parent groups are supported when the `allowParentDependency` property is enabled.
+> - The format of the dependency string depends on the data type of the [Id](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_Id) field mapped in [GanttTaskFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html):
+>   - If the `Id` field is an **integer**, the compact format (for example, `3FS`) can be used without a space between the `Id` and the dependency type.
+>   - If the `Id` field is a **string** or **GUID**, the format `[Id] [PredecessorType]` is mandatory, with a single space between the `Id` and the predecessor type (for example, `TASK-001 FS`). The Gantt Chart parses the two parts based on this space, so the space is required to correctly identify the predecessor type.
+
 ## Implementing task dependencies
 
 To implement task dependencies in the Blazor Gantt Chart, follow these steps:
