@@ -14,11 +14,11 @@ The Excel export feature provides an option to define the data source dynamicall
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/excel-export-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/excel-export-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/excel-export-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/excel-export-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/excel-export-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/excel-export-cs1" %}

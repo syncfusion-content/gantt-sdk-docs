@@ -3,7 +3,7 @@ layout: post
 title: Task Dependency in JavaScript Gantt Chart Control | Syncfusion
 description: Learn here all about task dependency in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Task Dependency 
+control: Task Dependency
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -29,47 +29,48 @@ The following example establishes dependencies. This code renders connector line
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/task-dependency/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/task-dependency/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/task-dependency/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/task-dependency/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/task-dependency" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/task-dependency" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/task-dependency/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/task-dependency/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/task-dependency/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/task-dependency/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/task-dependency" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/task-dependency" %}
 {% endif %}
 
 ## Understand task relationship types
 
 Task relationships are categorized into four types based on start and finish dates:
+
 - Start to Start (SS): Successor starts with predecessor.
 
-    ![Start to Start dependency](./images/ss.png)
+  ![Start to Start dependency](./images/ss.png)
 
 - Start to Finish (SF): Successor finishes when predecessor starts.
 
-    ![Start to Finish dependency](./images/sf.png)
+  ![Start to Finish dependency](./images/sf.png)
 
 - Finish to Start (FS): Successor starts after predecessor finishes (default).
 
-    ![Finish to Start dependency](./images/fs.png)
+  ![Finish to Start dependency](./images/fs.png)
 
 - Finish to Finish (FF): Successor finishes with predecessor.
 
-    ![Finish to Finish dependency](./images/ff.png)
+  ![Finish to Finish dependency](./images/ff.png)
 
 Specify types in the data source (e.g., '2SS+1h') for hour-based offsets.
 
@@ -83,27 +84,27 @@ The following example uses duration units. This code applies offsets such as '2F
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs2/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/predecessor-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs2/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/predecessor-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/predecessor-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs2/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/predecessor-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs2/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/predecessor-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/predecessor-cs2" %}
 {% endif %}
 
 ## Predecessor offset synchronization on initial load
@@ -118,27 +119,27 @@ The [autoUpdatePredecessorOffset](../api/gantt#autoupdatepredecessoroffset) prop
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs7/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/predecessor-cs7/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs7/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/predecessor-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs7" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/predecessor-cs7" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs7/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/predecessor-cs7/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs7/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/predecessor-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs7" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/predecessor-cs7" %}
 {% endif %}
 
 ## Disable automatic dependency offset updates
@@ -151,27 +152,27 @@ The following example disables automatic updates. This code preserves dependency
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs3/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/predecessor-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs3/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/predecessor-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/predecessor-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs3/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/predecessor-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs3/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/predecessor-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/predecessor-cs3" %}
 {% endif %}
 
 ## Handle dependency validation modes
@@ -188,27 +189,27 @@ The following example enables `respectLink` mode. This code reverts edits violat
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs4/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/predecessor-cs4/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs4/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/predecessor-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/predecessor-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs4/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/predecessor-cs4/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs4/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/predecessor-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs4" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/predecessor-cs4" %}
 {% endif %}
 
 ## Use validation dialog
@@ -221,27 +222,27 @@ The following example enables the validation dialog. This code displays options 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs5/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/predecessor-cs5/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs5/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/predecessor-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/predecessor-cs5" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs5/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/predecessor-cs5/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs5/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/predecessor-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs5" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/predecessor-cs5" %}
 {% endif %}
 
 ## Show or hide dependency lines dynamically
@@ -254,27 +255,27 @@ The following example toggles dependency lines. This code hides lines on button 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs6/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/predecessor-cs6/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs6/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/predecessor-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs6" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/predecessor-cs6" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs6/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/predecessor-cs6/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs6/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/predecessor-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs6" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/predecessor-cs6" %}
 {% endif %}
 
 ## Managing predecessor dependencies
@@ -289,27 +290,27 @@ You can manage task dependencies by adding, updating, or removing predecessor li
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/predecessor-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/predecessor-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/predecessor-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/predecessor-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/predecessor-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/predecessor-cs1" %}
 {% endif %}
 
 ## Customize connector lines
@@ -322,27 +323,27 @@ The following example sets the connector line background color as red:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/connector-line/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/connector-line/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/connector-line/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/connector-line/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/connector-line" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/connector-line" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/connector-line/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/connector-line/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/connector-line/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/connector-line/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/connector-line" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/connector-line" %}
 {% endif %}
 
 ## Disable predecessor validation
@@ -353,27 +354,27 @@ By default, Gantt Chart task dates are validated based on predecessor values. To
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/disable-predecessor/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/disable-predecessor/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/disable-predecessor/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/disable-predecessor/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/disable-predecessor" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/disable-predecessor" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/disable-predecessor/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/disable-predecessor/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/disable-predecessor/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/disable-predecessor/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/disable-predecessor" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/disable-predecessor" %}
 {% endif %}
 
 ## Limitation
@@ -381,6 +382,7 @@ By default, Gantt Chart task dates are validated based on predecessor values. To
 > When virtualization is enabled, dependency lines are shown only for tasks currently visible in the viewport. If two tasks are connected by a line, the line will appear only if at least one of the tasks is visible. If both tasks are expanded and the line spans across pages, it will still be displayed as long as one task is in view.
 
 ## See also
+
 - [How to configure task constraints?](./task-constraints)
 - [How to customize taskbars?](./taskbar)
 - [How to enable critical path?](./critical-path)

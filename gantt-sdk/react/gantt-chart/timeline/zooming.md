@@ -28,17 +28,17 @@ This support is used to view all the tasks available in a project within availab
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/zooming-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/zooming-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/zooming-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/zooming-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/zooming-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/zooming-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/zooming-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/zooming-cs1" %}
 
 ## Customizing zooming levels
 
@@ -46,36 +46,36 @@ Zoom actions are governed by predefined zooming levels specified in the [zooming
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/zooming-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/zooming-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/zooming-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/zooming-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/zooming-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/zooming-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/zooming-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/zooming-cs2" %}
 
 ## Zoom actions via methods
 
 Zooming actions can be triggered dynamically or through external controls using the following methods:
 
-* **Zoom In** - Use [zoomIn](https://ej2.syncfusion.com/react/documentation/api/gantt#zoomin) when `ZoomIn` external button was clicked, the timeline cell width is increased when the cell size exceeds the specified range and the timeline unit is changed based on the current zoom levels.
-* **Zoom Out** - Use [zoomOut](https://ej2.syncfusion.com/react/documentation/api/gantt#zoomout) when the `ZoomOut` external button was clicked, the timeline cell width is decreased when the cell size falls behind the specified range and the timeline view mode is changed based on the current zooming levels.
-* **Zoom To Fit** - Use [fitToProject](https://ej2.syncfusion.com/react/documentation/api/gantt#fittoproject) When `ZoomToFit` external button was clicked then all the tasks are rendered within the available chart container width.
+- **Zoom In** - Use [zoomIn](https://ej2.syncfusion.com/react/documentation/api/gantt#zoomin) when `ZoomIn` external button was clicked, the timeline cell width is increased when the cell size exceeds the specified range and the timeline unit is changed based on the current zoom levels.
+- **Zoom Out** - Use [zoomOut](https://ej2.syncfusion.com/react/documentation/api/gantt#zoomout) when the `ZoomOut` external button was clicked, the timeline cell width is decreased when the cell size falls behind the specified range and the timeline view mode is changed based on the current zooming levels.
+- **Zoom To Fit** - Use [fitToProject](https://ej2.syncfusion.com/react/documentation/api/gantt#fittoproject) When `ZoomToFit` external button was clicked then all the tasks are rendered within the available chart container width.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/zooming-cs3/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/zooming-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/zooming-cs3/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/zooming-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/zooming-cs3/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/zooming-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/zooming-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/zooming-cs3" %}

@@ -16,35 +16,36 @@ The following example demonstrates how to use `fitToProject` after performing ed
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/how-to-maintainzoomtofit-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/how-to-maintainzoomtofit-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/how-to-maintainzoomtofit-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/how-to-maintainzoomtofit-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/how-to-maintainzoomtofit-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/how-to-maintainzoomtofit-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/how-to-maintainzoomtofit-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/how-to-maintainzoomtofit-cs1" %}
 
 The following example demonstrates how to use `fitToProject` after dynamically changing the data source:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/how-to-maintainzoomtofitdatasource-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/how-to-maintainzoomtofitdatasource-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/how-to-maintainzoomtofitdatasource-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/how-to-maintainzoomtofitdatasource-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/how-to-maintainzoomtofitdatasource-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/how-to-maintainzoomtofitdatasource-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/how-to-maintainzoomtofitdatasource-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/how-to-maintainzoomtofitdatasource-cs1" %}
 
 ## See also
+
 - [How to configure timeline settings?](https://ej2.syncfusion.com/react/documentation/gantt/timeline)
 - [How to configure toolbar?](https://ej2.syncfusion.com/react/documentation/gantt/toolbar)
 - [How to manage task editing?](https://ej2.syncfusion.com/react/documentation/gantt/managing-tasks/editing-tasks)

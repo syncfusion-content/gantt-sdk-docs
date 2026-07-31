@@ -20,17 +20,17 @@ The following example sets a percentage-based splitter position. This configurat
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/splitter-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/splitter-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/splitter-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/splitter-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/splitter-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/splitter-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/splitter-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/splitter-cs1" %}
 
 > If both [position](https://ej2.syncfusion.com/react/documentation/api/gantt/splitterSettings#position) and [columnIndex](https://ej2.syncfusion.com/react/documentation/api/gantt/splitterSettings#columnindex) are defined in [splitterSettings](https://ej2.syncfusion.com/react/documentation/api/gantt/splitterSettings), only `position` is applied because it takes precedence over `columnIndex`.
 
@@ -46,13 +46,13 @@ The following example configures the Grid view mode. This configuration prioriti
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/splitter-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/splitter-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/splitter-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/splitter-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/splitter-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/splitter-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -66,17 +66,17 @@ The following example adjusts the splitter dynamically:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/splitter-cs3/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/splitter-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/splitter-cs3/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/splitter-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/splitter-cs3/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/splitter-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/splitter-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/splitter-cs3" %}
 
 ## Customize splitter appearance
 
@@ -86,19 +86,20 @@ The following example customizes the splitter’s background and hides the resiz
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/splitter-cs4/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/splitter-cs4/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/splitter-cs4/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/splitter-cs4/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/splitter-cs4/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/splitter-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/splitter-cs4" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/splitter-cs4" %}
 
 ## See also
+
 - [How to configure Gantt Chart columns?](https://ej2.syncfusion.com/react/documentation/gantt/columns/columns)
 - [How to customize the timeline?](https://ej2.syncfusion.com/react/documentation/gantt/timeline/timeline)
 - [How to handle scrolling?](https://ej2.syncfusion.com/react/documentation/gantt/scrolling)

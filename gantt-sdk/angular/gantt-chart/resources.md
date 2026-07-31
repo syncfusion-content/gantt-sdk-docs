@@ -81,19 +81,19 @@ The following example shows resource assignment:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/resources/assign-resources-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/resources/assign-resources-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/resources/assign-resources-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/resources/assign-resources-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/resources/assign-resources-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/resources/assign-resources-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/resources/assign-resources-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/resources/assign-resources-cs1" %}
 
 ## Manage resource assignments
 
@@ -113,23 +113,24 @@ The following example demonstrates custom resource styling:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/resources/resource-customization-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/resources/resource-customization-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/resources/resource-customization-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/resources/resource-customization-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/resources/resource-customization-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/resources/resource-customization-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/resources/resource-customization-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/resources/resource-customization-cs1" %}
 
 This configuration applies background colors to resource columns and taskbars, with the `queryTaskbarInfo` event modifying taskbar properties dynamically.
 
 ## See also
+
 - [How to configure resource view?](https://ej2.syncfusion.com/angular/documentation/gantt/resource-view)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
 - [How to customize taskbars?](https://ej2.syncfusion.com/angular/documentation/gantt/taskbar)

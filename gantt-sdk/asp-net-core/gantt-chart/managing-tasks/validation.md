@@ -19,10 +19,10 @@ Gantt uses [`Form Validator`](https://ej2.syncfusion.com/documentation/form-vali
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/validating/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/validating/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="validating.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/validating/validating.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/validating/validating.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -30,10 +30,10 @@ Gantt uses [`Form Validator`](https://ej2.syncfusion.com/documentation/form-vali
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/validating/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/validating/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="validating.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/validating/validating.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/validating/validating.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -48,10 +48,10 @@ In the below demo, custom validation applied for **TaskName** column.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/customValidation/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/customValidation/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="customValidation.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/customValidation/customValidation.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/customValidation/customValidation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -59,10 +59,10 @@ In the below demo, custom validation applied for **TaskName** column.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/customValidation/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/customValidation/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="customValidation.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/customValidation/customValidation.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/customValidation/customValidation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -76,10 +76,10 @@ Within the actionBegin event, validationRules can be configured for columns in t
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/validating/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/validating/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="validating.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/validating/validating.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/validating/validating.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -87,10 +87,10 @@ Within the actionBegin event, validationRules can be configured for columns in t
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/validating/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/validating/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="validating.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/validating/validating.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/validating/validating.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

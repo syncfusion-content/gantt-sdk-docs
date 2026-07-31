@@ -3,7 +3,7 @@ layout: post
 title: Sorting in Angular Gantt Chart Component | Syncfusion
 description: Learn here all about Sorting in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Sorting 
+control: Sorting
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -20,18 +20,18 @@ To enable sorting functionality, add the [SortService](https://ej2.syncfusion.co
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/sorting/default-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/sorting/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/sorting/default-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/sorting/default-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/sorting/default-cs1" %}
 
-> * The Gantt columns are sorted in the ascending order. If you click the already sorted column, the sort direction toggles.
-> * To disable sorting for a particular column, set the [columns.allowSorting](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#allowsorting) property to **false**.
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/sorting/default-cs1" %}
+
+> - The Gantt columns are sorted in the ascending order. If you click the already sorted column, the sort direction toggles.
+> - To disable sorting for a particular column, set the [columns.allowSorting](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#allowsorting) property to **false**.
 
 ## Initial sorting
 
@@ -41,15 +41,15 @@ The following code example shows how to add sorted columns during Gantt initiali
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/sorting/sort-initial-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/sorting/sort-initial-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/sorting/sort-initial-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/sorting/sort-initial-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/sorting/sort-initial-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/sorting/sort-initial-cs1" %}
 
 ## Sort columns externally
 
@@ -61,15 +61,15 @@ You can externally sort a column in the Angular Gantt Chart component using the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/sorting/sort-dynamic-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/sorting/sort-dynamic-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/sorting/sort-dynamic-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/sorting/sort-dynamic-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/sorting/sort-dynamic-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/sorting/sort-dynamic-cs1" %}
 
 ### Remove sort columns
 
@@ -77,15 +77,15 @@ You can externally remove sorting from a specific column in the Angular Gantt Ch
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/sorting/removesort-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/sorting/removesort-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/sorting/removesort-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/sorting/removesort-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/sorting/removesort-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/sorting/removesort-cs1" %}
 
 ### Clear sorting
 
@@ -93,42 +93,41 @@ You can clear all sorted columns in the Angular Gantt Chart component using the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/sorting/clearsort-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/sorting/clearsort-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/sorting/clearsort-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/sorting/clearsort-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/sorting/clearsort-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/sorting/clearsort-cs1" %}
 
 ## Customize sort icon
 
 You can customize the sort icons in the Angular Gantt Chart component by overriding the **.e-icon-ascending** and **.e-icon-descending** CSS classes using the `content` property, as shown below:
 
 ```css
+.e-gantt .e-icon-ascending::before {
+  content: "\\e306";
+}
 
- .e-gantt .e-icon-ascending::before {
-      content: '\\e306';
-    }
-
-    .e-gantt .e-icon-descending::before {
-      content: '\\e304';
-    }
+.e-gantt .e-icon-descending::before {
+  content: "\\e304";
+}
 ```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/sorting/customize-sort-icon/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/sorting/customize-sort-icon/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/sorting/customize-sort-icon/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/sorting/customize-sort-icon/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/sorting/customize-sort-icon" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/sorting/customize-sort-icon" %}
 
 ## Custom sorting
 
@@ -142,51 +141,51 @@ The sorting process includes the following steps:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/sorting/custom-sorting/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/sorting/custom-sorting/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/sorting/custom-sorting/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/sorting/custom-sorting/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/sorting/custom-sorting" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/sorting/custom-sorting" %}
 
 ### Display null values always at bottom
 
 You can customize the sorting behavior in the Angular Gantt Chart component to make `null` values consistently appear at the bottom, regardless of sort direction, by defining a column-level [column.sortComparer](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#sortcomparer) function. By default, `null` values are placed at the bottom when sorting in ascending order and at the top when sorting in descending order. Applying a custom `sortComparer` helps override this default logic and is particularly useful when working with datasets where `null` entries should be visually separated from valid data.
- 
+
 The example below demonstrates how to display `null` values at the bottom of the Gantt while sorting the `TaskName` column in both ascending and descending order.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/sorting/display-null-sorting/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/sorting/display-null-sorting/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/sorting/display-null-sorting/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/sorting/display-null-sorting/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/sorting/display-null-sorting" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/sorting/display-null-sorting" %}
 
 ## Sorting custom columns
 
-You can sort custom columns of various types such as string or numeric in the Angular Gantt Chart component by adding them to the column collection. Initial sorting can be configured using the [sortSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/sortSettings) property, or sorting can be triggered dynamically through external actions such as a button click. 
+You can sort custom columns of various types such as string or numeric in the Angular Gantt Chart component by adding them to the column collection. Initial sorting can be configured using the [sortSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/sortSettings) property, or sorting can be triggered dynamically through external actions such as a button click.
 
 The following code snippet demonstrates how to sort the `CustomColumn` using an external button.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/sorting/sort-custom-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/sorting/sort-custom-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/sorting/sort-custom-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/sorting/sort-custom-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/sorting/sort-custom-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/sorting/sort-custom-cs1" %}
 
 ## Prevent sorting on specific columns
 
@@ -196,15 +195,15 @@ The following sample demonstrates how to prevent sorting for the **TaskID** and 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/sorting/events-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/sorting/events-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/sorting/events-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/sorting/events-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/sorting/events-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/sorting/events-cs1" %}
 
 ## Disable clear sort
 
@@ -212,15 +211,15 @@ By default, clicking a column header switches the sort order between ascending, 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/sorting/unclear-sort/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/sorting/unclear-sort/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/sorting/unclear-sort/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/sorting/unclear-sort/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/sorting/unclear-sort" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/sorting/unclear-sort" %}
 
 ## Touch interaction
 

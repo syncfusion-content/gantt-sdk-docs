@@ -2,7 +2,7 @@
 layout: post
 title: Row Selection in Vue Gantt Chart Component | Syncfusion
 description: Learn here all about Row selection in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Row selection 
+control: Row selection
 platform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -14,14 +14,14 @@ The row selection in the Gantt Chart component can be enabled or disabled using 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/selection-cs5/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/selection-cs5/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/selection-cs5/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/selection-cs5/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/selection-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/selection-cs5" %}
 
 > `Row` selection is the default type of Gantt selection mode.
 
@@ -31,14 +31,14 @@ You can select a row at the time of loading by setting the index of the row to t
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/selection-cs6/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/selection-cs6/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/selection-cs6/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/selection-cs6/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/selection-cs6" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/selection-cs6" %}
 
 ## Selecting a row dynamically
 
@@ -46,14 +46,14 @@ You can select a single row dynamically using the [selectRow](https://ej2.syncfu
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/selection-cs7/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/selection-cs7/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/selection-cs7/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/selection-cs7/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/selection-cs7" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/selection-cs7" %}
 
 ## Multiple row selection
 
@@ -61,14 +61,14 @@ You can select multiple rows by setting the [selectionSettings.type](https://ej2
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/selection-cs8/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/selection-cs8/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/selection-cs8/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/selection-cs8/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/selection-cs8" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/selection-cs8" %}
 
 ## Customize row selection action
 
@@ -76,13 +76,13 @@ While selecting a row in Gantt, the [rowSelecting](https://ej2.syncfusion.com/vu
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/selection-cs10/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/selection-cs10/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/selection-cs10/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/selection-cs10/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/selection-cs10" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/selection-cs10" %}
 
 In the Gantt Chart component, when you click an already selected row, the selection will be cleared. While deselecting a row in Gantt, the [rowDeselecting](https://ej2.syncfusion.com/vue/documentation/api/gantt#rowdeselecting) and [rowDeselected](https://ej2.syncfusion.com/vue/documentation/api/gantt#rowdeselected) events will be triggered. The `rowDeselecting` event occurs when row deselection begins, and you can get the currently deselecting row’s information to prevent the deselection of a particular row. The `rowDeselected` event occurs when the row deselection action is completed, and you can get the currently deselected row’s information.

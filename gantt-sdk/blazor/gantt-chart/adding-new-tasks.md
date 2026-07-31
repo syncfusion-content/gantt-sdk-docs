@@ -20,13 +20,13 @@ Enable task addition through the toolbar by setting [EditSettings.AllowAdding](h
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt TValue="TaskData" DataSource="@TaskCollection" Toolbar="@(new List<string>() { "Add" })" Height="450px" Width="900px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttEditSettings AllowAdding="true"></GanttEditSettings>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
+</GanttTaskFields>
+<GanttEditSettings AllowAdding="true"></GanttEditSettings>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
+public List<TaskData>? TaskCollection { get; set; }
 
     protected override void OnInitialized()
     {
@@ -59,6 +59,7 @@ Enable task addition through the toolbar by setting [EditSettings.AllowAdding](h
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -77,12 +78,12 @@ Enable context menu task addition by setting [EnableContextMenu](https://help.sy
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt TValue="TaskData" DataSource="@TaskCollection" Height="450px" EnableContextMenu="true" Width="900px" HighlightWeekends="true">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" Dependency="Predecessor" ParentID="ParentId"></GanttTaskFields>
-    <GanttEditSettings AllowAdding="true"></GanttEditSettings>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" Dependency="Predecessor" ParentID="ParentId"></GanttTaskFields>
+<GanttEditSettings AllowAdding="true"></GanttEditSettings>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
+public List<TaskData>? TaskCollection { get; set; }
 
     protected override void OnInitialized()
     {
@@ -116,6 +117,7 @@ Enable context menu task addition by setting [EnableContextMenu](https://help.sy
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -123,7 +125,7 @@ Enable context menu task addition by setting [EnableContextMenu](https://help.sy
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/BjhnDwiGTdlIgfkv?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-> **Note**: The context menu supports keyboard navigation (e.g., <kbd>Enter</kbd> to select "Add Above"). Refer to the [Accessibility in Blazor Gantt Chart](https://blazor.syncfusion.com/documentation/gantt-chart/accessibility) for keyboard shortcuts.
+> **Note**: The context menu supports keyboard navigation (e.g., <kbd>Enter</kbd> to select "Add Above"). Refer to the [Accessibility in Blazor Gantt Chart](https://blazor.syncfusion.com/documentation/gantt/accessibility) for keyboard shortcuts.
 
 ## Adding tasks programmatically
 
@@ -135,15 +137,15 @@ Tasks can be added programmatically using the [AddRecordAsync](https://help.sync
 @using Syncfusion.Blazor.Gantt
 @using Syncfusion.Blazor.Buttons
 <SfButton @onclick="AddRow">Add Row</SfButton>
-<SfGantt @ref="Gantt"  DataSource="@TaskCollection" Height="450px" Width="900px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttEditSettings AllowAdding="true"></GanttEditSettings>
+<SfGantt @ref="Gantt" DataSource="@TaskCollection" Height="450px" Width="900px">
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
+</GanttTaskFields>
+<GanttEditSettings AllowAdding="true"></GanttEditSettings>
 </SfGantt>
 
 @code {
-    public SfGantt<TaskData>? Gantt;
-    public TaskData record = new TaskData() { TaskId = 9, TaskName = "New Added Record", StartDate = new DateTime(2026, 04, 05), Duration = "3", Progress = 50 };
+public SfGantt<TaskData>? Gantt;
+public TaskData record = new TaskData() { TaskId = 9, TaskName = "New Added Record", StartDate = new DateTime(2026, 04, 05), Duration = "3", Progress = 50 };
 
     public async Task AddRow()
     {
@@ -151,7 +153,7 @@ Tasks can be added programmatically using the [AddRecordAsync](https://help.sync
         {
             await Gantt.AddRecordAsync(record, 2, RowPosition.Below);
         }
-        
+
     }
 
     public List<TaskData>? TaskCollection { get; set; }
@@ -187,17 +189,18 @@ Tasks can be added programmatically using the [AddRecordAsync](https://help.sync
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
 {% endtabs %}
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/rjrdjwCQpnblFWSL?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
-                           
+
 > **Note**: Ensure the `TaskID` is unique to prevent runtime errors. Use try-catch blocks with `AddRecordAsync` to handle exceptions, such as invalid data or missing dependencies. For keyboard accessibility, use <kbd>Ctrl</kbd> + <kbd>Insert</kbd> (Windows) or <kbd>⌘</kbd> + <kbd>Insert</kbd> (Mac) to open the add dialog programmatically.
 
 ## See Also
 
-- [Accessibility in Blazor Gantt Chart](https://blazor.syncfusion.com/documentation/gantt-chart/accessibility)
+- [Accessibility in Blazor Gantt Chart](https://blazor.syncfusion.com/documentation/gantt/accessibility)
 - [Blazor Gantt Chart Feature Tour](https://www.syncfusion.com/blazor-components/blazor-gantt-chart)
-- [Blazor Gantt Chart Example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=bootstrap5)
+- [Blazor Gantt Chart Example](https://blazor.syncfusion.com/demos/gantt/default-functionalities?theme=bootstrap5)

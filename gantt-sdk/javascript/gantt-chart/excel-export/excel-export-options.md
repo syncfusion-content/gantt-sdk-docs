@@ -21,27 +21,27 @@ You can export selected records to Excel or CSV by using [getSelectedRecords](..
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs14/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs14/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs14/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs14/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs14" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-export-cs14" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs14/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs14/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs14/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs14/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs14" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-export-cs14" %}
 {% endif %}
 
 ## Show or hide columns during export
@@ -54,27 +54,27 @@ The following example demonstrates how the **StartDate** column is made visible 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs4/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs4/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs4/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-export-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs4/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs4/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs4/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs4" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-export-cs4" %}
 {% endif %}
 
 ## Include hidden columns in export
@@ -87,27 +87,27 @@ The following example demonstrates that the hidden **StartDate** column is inclu
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs3/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs3/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-export-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs3/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs3/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-export-cs3" %}
 {% endif %}
 
 ## Enable filtering in exported Excel
@@ -118,27 +118,27 @@ To enable filtering in exported Excel or CSV files in Gantt Chart control, set t
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs15/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs15/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs15/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs15/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs15" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-export-cs15" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs15/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs15/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs15/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs15/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs15" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-export-cs15" %}
 {% endif %}
 
 ## Set custom file name
@@ -149,27 +149,27 @@ To specify a custom name for the exported Excel or CSV file in the Gantt Chart c
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs8/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs8/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs8/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs8" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-export-cs8" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs8/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs8/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs8/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs8" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-export-cs8" %}
 {% endif %}
 
 ## Customize exported columns
@@ -180,27 +180,27 @@ The Gantt Chart control supports customizing column settings during Excel or CSV
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs16/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs16/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs16/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs16/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs16" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-export-cs16" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs16/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs16/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs16/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs16/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs16" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-export-cs16" %}
 {% endif %}
 
 ## Add header and footer to export
@@ -211,27 +211,27 @@ To add header and footer content to exported Excel or CSV files in the Gantt Cha
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs7/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs7/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs7/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs7" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-export-cs7" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs7/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs7/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs7/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs7" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-export-cs7" %}
 {% endif %}
 
 ## Apply font and color themes
@@ -248,27 +248,27 @@ To configure a theme, set the [theme](../../api/grid/excelExportProperties#theme
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs6/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs6/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs6/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs6" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-export-cs6" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs6/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs6/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs6/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs6" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-export-cs6" %}
 {% endif %}
 
 > By default, tailwind3 theme is applied to the exported Excel document.
@@ -283,25 +283,25 @@ In the example below, the background color is customized for the **Progress** co
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs5/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs5/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs5/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-export-cs5" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs5/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs5/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs5/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs5" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-export-cs5" %}
 {% endif %}

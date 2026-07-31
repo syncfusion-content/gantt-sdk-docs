@@ -2,7 +2,7 @@
 layout: post
 title: Zooming in Vue Gantt Chart Component | Syncfusion
 description: Learn here all about Zooming in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Zooming 
+control: Zooming
 platform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -26,14 +26,14 @@ This support is used to view all the tasks available in a project within availab
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/zooming-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/zooming-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/zooming-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/zooming-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/zooming-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/zooming-cs1" %}
 
 ## Customizing zooming levels
 
@@ -41,30 +41,30 @@ In Gantt, the zoom in and zoom out actions are performed based on the predefined
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/zooming-cs2/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/zooming-cs2/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/zooming-cs2/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/zooming-cs2/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/zooming-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/zooming-cs2" %}
 
 ## Zoom action by methods
 
 You can perform the various zoom actions dynamically or on external click action using the following methods:
 
-* Zoom in - [zoomIn](https://ej2.syncfusion.com/vue/documentation/api/gantt#zoomin)
-* Zoom out - [zoomOut](https://ej2.syncfusion.com/vue/documentation/api/gantt#zoomout)
-* Fit to project - [fitToProject](https://ej2.syncfusion.com/vue/documentation/api/gantt#fittoproject)
+- Zoom in - [zoomIn](https://ej2.syncfusion.com/vue/documentation/api/gantt#zoomin)
+- Zoom out - [zoomOut](https://ej2.syncfusion.com/vue/documentation/api/gantt#zoomout)
+- Fit to project - [fitToProject](https://ej2.syncfusion.com/vue/documentation/api/gantt#fittoproject)
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/zooming-cs3/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/zooming-cs3/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/zooming-cs3/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/zooming-cs3/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/zooming-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/zooming-cs3" %}

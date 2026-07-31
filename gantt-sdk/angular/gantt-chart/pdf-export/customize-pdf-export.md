@@ -18,15 +18,15 @@ Set the exported PDF file name using the [fileName](https://ej2.syncfusion.com/a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/pdf-export-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/pdf-export-cs1" %}
 
 ## How to change page orientation
 
@@ -34,15 +34,15 @@ Adjust page orientation to **Portrait** or **Landscape** using the [pageOrientat
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs2/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs2/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/pdf-export-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/pdf-export-cs2" %}
 
 ## Customize page size
 
@@ -66,19 +66,19 @@ The supported page sizes are:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs3/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs3/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs3/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs3/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs3/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs3/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/pdf-export-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/pdf-export-cs3" %}
 
 ## Export current view data
 
@@ -86,19 +86,19 @@ PDF export provides an option to export the current view data into PDF. To expor
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs4/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs4/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs4/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs4/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs4/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs4/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/pdf-export-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/pdf-export-cs4" %}
 
 ## Enable footer
 
@@ -106,19 +106,19 @@ By default, we render the default footer for a PDF file, this can be enabled or 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs5/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs5/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs5/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs5/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs5/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs5/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/pdf-export-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/pdf-export-cs5" %}
 
 ## Export hidden columns
 
@@ -126,19 +126,19 @@ PDF export provides an option to export hidden columns of Gantt by defining the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs6/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs6/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs6/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs6/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs6/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs6/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/pdf-export-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/pdf-export-cs6" %}
 
 ## Export predecessor lines
 
@@ -146,19 +146,19 @@ The visibility of predecessor lines in the exported PDF document can be controll
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs7/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs7/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs7/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs7/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs7/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs7/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/pdf-export-cs7" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/pdf-export-cs7" %}
 
 ## Export specific columns
 
@@ -170,19 +170,19 @@ In the following example, the **Duration** column is initially hidden in the Gan
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs8/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs8/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs8/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs8/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs8/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs8/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/pdf-export-cs8" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/pdf-export-cs8" %}
 
 ## Conditional cell formatting
 
@@ -192,19 +192,19 @@ In the following sample, the background color is set for **Progress** column in 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs9/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs9/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs9/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs9/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs9/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs9/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/pdf-export-cs9" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/pdf-export-cs9" %}
 
 ## Timeline cell formatting
 
@@ -214,19 +214,19 @@ In the following sample, the header background color is set for timeline cells i
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs10/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs10/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs10/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs10/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs10/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs10/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/pdf-export-cs10" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/pdf-export-cs10" %}
 
 ## Taskbar formatting
 
@@ -236,19 +236,19 @@ In the following sample, the taskbar background color is customized in the chart
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs11/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs11/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs11/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs11/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs11/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs11/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/pdf-export-cs11" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/pdf-export-cs11" %}
 
 ## Customize Gantt chart appearance in PDF export
 
@@ -256,19 +256,19 @@ PDF export allows to customize the Gantt chart's appearance in the exported PDF 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs13/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs13/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs13/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs13/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs13/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs13/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/pdf-export-cs13" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/pdf-export-cs13" %}
 
 ## Customize split taskbar segment colors in PDF
 
@@ -278,19 +278,19 @@ The [taskSegmentStyles](https://ej2.syncfusion.com/angular/documentation/api/gan
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs16/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs16/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs16/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs16/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-cs16/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-cs16/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/pdf-export-cs16" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/pdf-export-cs16" %}
 
 ## Exporting with templates
 
@@ -304,19 +304,19 @@ In the following sample, the hyperlinks and images are exported to PDF using [hy
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-column-template-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-column-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-column-template-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-column-template-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-column-template-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-column-template-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/pdf-export-column-template-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/pdf-export-column-template-cs1" %}
 
 ### Exporting with taskbar template
 
@@ -328,23 +328,23 @@ In the following sample, taskbar templates with images and text are exported to 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-taskbar-template/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-taskbar-template/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-taskbar-template/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-taskbar-template/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="app.component.css" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-taskbar-template/src/app.component.css %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-taskbar-template/src/app.component.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-taskbar-template/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-taskbar-template/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/pdf-export-taskbar-template" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/pdf-export-taskbar-template" %}
 
 ### Exporting with task label template
 
@@ -356,23 +356,23 @@ In the following sample, task label template with images and text are exported t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-tasklabel-template/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-tasklabel-template/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-tasklabel-template/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-tasklabel-template/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="app.component.css" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-tasklabel-template/src/app.component.css %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-tasklabel-template/src/app.component.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-tasklabel-template/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-tasklabel-template/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/pdf-export-tasklabel-template" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/pdf-export-tasklabel-template" %}
 
 ### Exporting with header template
 
@@ -384,23 +384,23 @@ In the following sample, header template with images and text are exported to PD
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-header-template/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-header-template/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-header-template/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-header-template/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="app.component.css" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-header-template/src/app.component.css %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-header-template/src/app.component.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/pdf-export-header-template/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/pdf-export-header-template/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/pdf-export-header-template" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/pdf-export-header-template" %}
 
 ## See also
 

@@ -23,27 +23,27 @@ Export Gantt data to PDF by setting [AllowPdfExport](https://help.syncfusion.com
 @using Syncfusion.Blazor.Navigations
 
 <SfGantt @ref="Gantt" ID="GanttExport" DataSource="@TaskCollection" Height="450px" Width="900px" AllowPdfExport="true" Toolbar="toolbarItem">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
+</GanttTaskFields>
+<GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    public SfGantt<TaskData>? Gantt;
-    private List<object> toolbarItem = new List<Object>() { new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport" } };
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
-    public async void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
-    {
-        if (args.Item.Id == "PdfExport" && Gantt!=null)
-        {
-            await Gantt.ExportToPdfAsync();
-        }
-    }
+public List<TaskData>? TaskCollection { get; set; }
+public SfGantt<TaskData>? Gantt;
+private List<object> toolbarItem = new List<Object>() { new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "PDF Export", TooltipText = "PDF Export", Id = "PdfExport", PrefixIcon = "e-pdfexport" } };
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
+public async void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
+{
+if (args.Item.Id == "PdfExport" && Gantt!=null)
+{
+await Gantt.ExportToPdfAsync();
+}
+}
 
     public class TaskData
     {
@@ -72,6 +72,7 @@ Export Gantt data to PDF by setting [AllowPdfExport](https://help.syncfusion.com
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -83,14 +84,14 @@ Export Gantt data to PDF by setting [AllowPdfExport](https://help.syncfusion.com
 
 When exporting the Gantt chart to a PDF document, a series of events are triggered in a specific order, allowing for advanced customization of the export process. Understanding this flow is essential for effectively controlling and modifying the exported content. Below is the sequence of events that occur during PDF export in the Gantt chart:
 
-* [PdfExporting](https://blazor.syncfusion.com/documentation/gantt-chart/events#pdfexporting)
+- [PdfExporting](https://blazor.syncfusion.com/documentation/gantt/events#pdfexporting)
 
-* [PdfQueryTimelineCellInfo](https://blazor.syncfusion.com/documentation/gantt-chart/events#pdfquerytimelinecellinfo)
+- [PdfQueryTimelineCellInfo](https://blazor.syncfusion.com/documentation/gantt/events#pdfquerytimelinecellinfo)
 
-* [PdfColumnHeaderQueryCellInfo](https://blazor.syncfusion.com/documentation/gantt-chart/events#pdfcolumnheaderquerycellinfo)
+- [PdfColumnHeaderQueryCellInfo](https://blazor.syncfusion.com/documentation/gantt/events#pdfcolumnheaderquerycellinfo)
 
-* [PdfQueryCellInfo](https://blazor.syncfusion.com/documentation/gantt-chart/events#pdfquerycellinfo)
+- [PdfQueryCellInfo](https://blazor.syncfusion.com/documentation/gantt/events#pdfquerycellinfo)
 
-* [PdfQueryTaskbarInfo](https://blazor.syncfusion.com/documentation/gantt-chart/events#pdfquerytaskbarinfo)
+- [PdfQueryTaskbarInfo](https://blazor.syncfusion.com/documentation/gantt/events#pdfquerytaskbarinfo)
 
-* [PdfExported](https://blazor.syncfusion.com/documentation/gantt-chart/events#pdfexported)
+- [PdfExported](https://blazor.syncfusion.com/documentation/gantt/events#pdfexported)

@@ -17,25 +17,25 @@ The [updateProjectDates](../../api/gantt#updateprojectdates) method in the [Type
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/how-to-changescheduledates-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/how-to-changescheduledates-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/how-to-changescheduledates-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/how-to-changescheduledates-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/how-to-changescheduledates-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/how-to-changescheduledates-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/how-to-changescheduledates-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/how-to-changescheduledates-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/how-to-changescheduledates-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/how-to-changescheduledates-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/how-to-changescheduledates-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/how-to-changescheduledates-cs1" %}
 {% endif %}

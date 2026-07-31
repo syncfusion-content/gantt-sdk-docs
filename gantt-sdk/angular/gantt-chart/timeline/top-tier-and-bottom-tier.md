@@ -3,7 +3,7 @@ layout: post
 title: Top Tier and Bottom Tier in Angular Gantt Chart Component | Syncfusion
 description: Learn how to configure top and bottom tiers in the Syncfusion Angular Gantt Chart component using timeline settings such as unit, format, count, and formatter.
 platform: gantt-sdk
-control: Top tier and bottom tier 
+control: Top tier and bottom tier
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -22,15 +22,15 @@ These properties allow precise control over how time intervals are displayed, en
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/top-bottom-tier-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/top-bottom-tier-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/top-bottom-tier-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/top-bottom-tier-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/timeline/top-bottom-tier-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/timeline/top-bottom-tier-cs1" %}
 
 ## Combining timeline cells
 
@@ -42,15 +42,15 @@ In the Angular Gantt Chart component, timeline cells in the top and bottom tiers
 By adjusting these values, the timeline can display broader or more granular intervals, improving visibility for long-term or short-term project views.
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/combine-cells-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/combine-cells-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/combine-cells-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/combine-cells-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/timeline/combine-cells-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/timeline/combine-cells-cs1" %}
 
 ## Format value of timeline cell
 
@@ -63,26 +63,26 @@ In the Angular Gantt Chart component, the values displayed in the top and bottom
 
 The [formatter](https://ej2.syncfusion.com/documentation/api/gantt/itimelineformatter) function supports the following parameters:
 
-| Parameter | Description                                                                 |
-|-----------|-----------------------------------------------------------------------------|
-| date      | The current date value for the cell.                                        |
-| format    | The date format string applied to the cell.                                 |
-| tier      | Indicates whether the cell belongs to the topTier or bottomTier.           |
-| mode      | Specifies the rendering mode (Year, Month, Week, or Day).                   |
+| Parameter | Description                                                      |
+| --------- | ---------------------------------------------------------------- |
+| date      | The current date value for the cell.                             |
+| format    | The date format string applied to the cell.                      |
+| tier      | Indicates whether the cell belongs to the topTier or bottomTier. |
+| mode      | Specifies the rendering mode (Year, Month, Week, or Day).        |
 
 The following example shows how to use the `formatter` function with all four parameters `date`, `format`, `tier`, and `mode`:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/format-value-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/format-value-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/format-value-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/format-value-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/timeline/format-value-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/timeline/format-value-cs1" %}
 
 ## Timeline cell width
 
@@ -97,12 +97,12 @@ This configuration allows precise control over the visual density of the timelin
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/cell-width-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/cell-width-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/cell-width-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timeline/cell-width-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/timeline/cell-width-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/timeline/cell-width-cs1" %}

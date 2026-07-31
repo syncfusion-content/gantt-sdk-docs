@@ -18,17 +18,17 @@ In the following example, **Work** cells are spanned to improve visual clarity:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/column-span-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/column-span-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/column-span-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/column-span-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/column-span-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/column-span-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/column-span-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/column-span-cs1" %}
 
 ## Customize border color of spanned columns
 
@@ -38,17 +38,17 @@ The following example demonstrates how to change the border color of spanned cel
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/column-span-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/column-span-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/column-span-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/column-span-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/column-span-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/column-span-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/column-span-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/column-span-cs2" %}
 
 ## Limitations
 

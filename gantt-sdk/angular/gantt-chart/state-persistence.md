@@ -3,7 +3,7 @@ layout: post
 title: State Persistence in Angular Gantt Chart Component | Syncfusion
 description: Learn here all about State persistence in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: State persistence 
+control: State persistence
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -16,25 +16,25 @@ To enable this, set the [enablePersistence](https://ej2.syncfusion.com/angular/d
 
 ## Restore initial Gantt state
 
-The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component provides options to reset its state, reverting all interactions and configurations to the original setup.  This is useful for clearing filters, sorting, and column arrangements, even when [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablepersistence) is enabled.
+The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component provides options to reset its state, reverting all interactions and configurations to the original setup. This is useful for clearing filters, sorting, and column arrangements, even when [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablepersistence) is enabled.
 
 ### Changing component ID
 
-To reset the Gantt to its default state, update the component ID.  This initializes the component as a new instance, restoring its original configuration.
+To reset the Gantt to its default state, update the component ID. This initializes the component as a new instance, restoring its original configuration.
 
 Here is an example code to change the component ID dynamically to restore initial Gantt state.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/column-persist/column-persist-id/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/column-persist/column-persist-id/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/column-persist/column-persist-id/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/column-persist/column-persist-id/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/column-persist/column-persist-id" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/column-persist/column-persist-id" %}
 
 ### Clearing local storage
 
@@ -44,15 +44,15 @@ Here is an example code on how to clear local storage to retain its default stat
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/column-persist/local-storage/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/column-persist/local-storage/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/column-persist/local-storage/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/column-persist/local-storage/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/column-persist/local-storage" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/column-persist/local-storage" %}
 
 ## Restore to previous state
 
@@ -62,15 +62,15 @@ To implement this functionality, extract the current state using `getPersistData
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/column-persist/restore-state/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/column-persist/restore-state/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/column-persist/restore-state/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/column-persist/restore-state/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/column-persist/restore-state" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/column-persist/restore-state" %}
 
 ## Get or set localStorage value
 
@@ -78,22 +78,20 @@ When [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/ga
 
 ```typescript
 //get the Gantt model.
-let value: string = window.localStorage.getItem('ganttGantt'); //"ganttGantt" is component name + component ID.
+let value: string = window.localStorage.getItem("ganttGantt"); //"ganttGantt" is component name + component ID.
 let model: Object = JSON.parse(model);
-
 ```
 
 ```typescript
 //set the Gantt model.
-window.localStorage.setItem('ganttGantt', JSON.stringify(model)); //"ganttGantt" is component name + component ID.
-
+window.localStorage.setItem("ganttGantt", JSON.stringify(model)); //"ganttGantt" is component name + component ID.
 ```
 
 > You can refer to our [Angular Gantt](https://www.syncfusion.com/angular-ui-components/angular-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Gantt example](https://ej2.syncfusion.com/angular/demos/#/tailwind3/gantt/default) to know how to present and manipulate data.
 
 ## Prevent columns from persisting
 
-When [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablepersistence) is set to **true**, Gantt properties such as [Filtering](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowfiltering), [Sorting](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowsorting), and [Columns](https://ej2.syncfusion.com/angular/documentation/api/gantt#columns) are automatically saved.  
+When [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablepersistence) is set to **true**, Gantt properties such as [Filtering](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowfiltering), [Sorting](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowsorting), and [Columns](https://ej2.syncfusion.com/angular/documentation/api/gantt#columns) are automatically saved.
 
 To prevent specific properties from being persisted, use the `addOnPersist` method.
 
@@ -103,15 +101,15 @@ The example below shows how to prevent Gantt columns from being persisted. In th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/column-prevent/default-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/column-prevent/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/column-prevent/default-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/column-prevent/default-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/column-prevent/default-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/column-prevent/default-cs1" %}
 
 ## Add to persist
 
@@ -123,15 +121,15 @@ When [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/ga
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/column-prevent/default-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/column-prevent/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/column-prevent/default-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/column-prevent/default-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/column-prevent/default-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/column-prevent/default-cs1" %}
 
 ### Persist the header template and header Text
 
@@ -141,12 +139,12 @@ To persist these settings, clone the [Columns](https://ej2.syncfusion.com/angula
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/column-persist/default-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/column-persist/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/column-persist/default-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/column-persist/default-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/column-persist/default-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/column-persist/default-cs1" %}

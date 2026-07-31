@@ -15,8 +15,8 @@ By default, selection is enabled. To disable selection, set the [AllowSelection]
 
 The Gantt component supports two types of selection that can be set by using the [SelectionSettings.Type](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SelectionType.html) property. They are:
 
-* **Single:** Allows selection of only one row or cell at a time. This is the default behavior.
-* **Multiple:** Enables selection of multiple rows or cells. To perform multi-selection, press and hold the **Ctrl** key (on Windows/Linux) or **Cmd** key (on macOS) while clicking the desired rows or cells.
+- **Single:** Allows selection of only one row or cell at a time. This is the default behavior.
+- **Multiple:** Enables selection of multiple rows or cells. To perform multi-selection, press and hold the **Ctrl** key (on Windows/Linux) or **Cmd** key (on macOS) while clicking the desired rows or cells.
 
 ## Selection mode
 
@@ -47,19 +47,19 @@ The Syncfusion Blazor Gantt Chart component supports three selection modes, conf
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    public Syncfusion.Blazor.Grids.SelectionMode SelectionModeValue { get; set; } = Syncfusion.Blazor.Grids.SelectionMode.Both;
-    public class DropDownOrder
-    {
-        public string? Text { get; set; }
-        public Syncfusion.Blazor.Grids.SelectionMode Value { get; set; }
-    }
-    List<DropDownOrder> DropDownData = new List<DropDownOrder>
-    {
-        new DropDownOrder() { Text = "Both", Value = Syncfusion.Blazor.Grids.SelectionMode.Both },
-        new DropDownOrder() { Text = "Row", Value = Syncfusion.Blazor.Grids.SelectionMode.Row },
-        new DropDownOrder() { Text = "Cell", Value = Syncfusion.Blazor.Grids.SelectionMode.Cell },
-    };
+public List<TaskData>? TaskCollection { get; set; }
+public Syncfusion.Blazor.Grids.SelectionMode SelectionModeValue { get; set; } = Syncfusion.Blazor.Grids.SelectionMode.Both;
+public class DropDownOrder
+{
+public string? Text { get; set; }
+public Syncfusion.Blazor.Grids.SelectionMode Value { get; set; }
+}
+List<DropDownOrder> DropDownData = new List<DropDownOrder>
+{
+new DropDownOrder() { Text = "Both", Value = Syncfusion.Blazor.Grids.SelectionMode.Both },
+new DropDownOrder() { Text = "Row", Value = Syncfusion.Blazor.Grids.SelectionMode.Row },
+new DropDownOrder() { Text = "Cell", Value = Syncfusion.Blazor.Grids.SelectionMode.Cell },
+};
 
     protected override void OnInitialized()
     {
@@ -97,6 +97,7 @@ The Syncfusion Blazor Gantt Chart component supports three selection modes, conf
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -127,8 +128,8 @@ When enabled, clicking a selected row or cell will deselect it, and clicking it 
 </SfGantt>
 
 @code {
-    private bool toggle = true;
-    private string buttonText = "Disable Toggle";
+private bool toggle = true;
+private string buttonText = "Disable Toggle";
 
     private void ToggleSelection()
     {
@@ -168,6 +169,7 @@ When enabled, clicking a selected row or cell will deselect it, and clicking it 
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -179,9 +181,9 @@ When enabled, clicking a selected row or cell will deselect it, and clicking it 
 
 The Gantt Chart component allows to select range of cells or rows by mouse or touch dragging. To enable this, set [GanttSelectionSettings.AllowDragSelection](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html#Syncfusion_Blazor_Gantt_GanttSelectionSettings_AllowDragSelection) to **true** and [GanttSelectionSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html) to **Multiple**.
 
->* Drag selection is supported in all selection modes, configurable using the [Mode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html#Syncfusion_Blazor_Gantt_GanttSelectionSettings_Mode) property.
+> - Drag selection is supported in all selection modes, configurable using the [Mode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html#Syncfusion_Blazor_Gantt_GanttSelectionSettings_Mode) property.
 
->* When cell selection is enabled, it works with both **Flow** and **Box** types defined by [CellSelectionMode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html#Syncfusion_Blazor_Gantt_GanttSelectionSettings_CellSelectionMode) property.
+> - When cell selection is enabled, it works with both **Flow** and **Box** types defined by [CellSelectionMode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html#Syncfusion_Blazor_Gantt_GanttSelectionSettings_CellSelectionMode) property.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -196,11 +198,11 @@ The Gantt Chart component allows to select range of cells or rows by mouse or to
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public class TaskData
     {
@@ -228,6 +230,7 @@ The Gantt Chart component allows to select range of cells or rows by mouse or to
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -246,7 +249,6 @@ To clear selected rows and cells in the Gantt component, use the [ClearSelection
 @using Syncfusion.Blazor.Grids
 @using Syncfusion.Blazor.Buttons
 
-
 <div style="margin-bottom: 16px;">
     <SfButton @onclick="select" style="margin-right: 12px;">Select Rows</SfButton>
     <SfButton @onclick="clear">Clear Selection</SfButton>
@@ -258,12 +260,12 @@ To clear selected rows and cells in the Gantt component, use the [ClearSelection
 </SfGantt>
 
 @code {
-    public SfGantt<TaskData>? Gantt;
-    private List<TaskData>? TaskCollection { get; set; }
+public SfGantt<TaskData>? Gantt;
+private List<TaskData>? TaskCollection { get; set; }
 
     public void select()
     {
-          
+
        Gantt?.SelectRowsAsync(new int[] { 1, 2, 3 });
     }
     public void clear()
@@ -302,6 +304,7 @@ To clear selected rows and cells in the Gantt component, use the [ClearSelection
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -313,8 +316,8 @@ To clear selected rows and cells in the Gantt component, use the [ClearSelection
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component supports touch interaction, allowing you to intuitively navigate and interact with chart elements on touch-enabled devices like smart phones and tablets. This feature enhances usability by allowing intuitive gestures for selecting and managing tasks.
 
-[Single Row selection](https://blazor.syncfusion.com/documentation/gantt-chart/selection): Tapping a row on a touch screen automatically selects it, offering a straightforward way to interact with the chart.
+[Single Row selection](https://blazor.syncfusion.com/documentation/gantt/selection): Tapping a row on a touch screen automatically selects it, offering a straightforward way to interact with the chart.
 
-[Multiple Row selection](https://blazor.syncfusion.com/documentation/gantt-chart/selection): To select multiple rows, tap a row to display a popup that activates multi-selection mode. After tapping the popup, continue tapping the desired rows to select them. This allows you to select multiple rows simultaneously, as illustrated below:
+[Multiple Row selection](https://blazor.syncfusion.com/documentation/gantt/selection): To select multiple rows, tap a row to display a popup that activates multi-selection mode. After tapping the popup, continue tapping the desired rows to select them. This allows you to select multiple rows simultaneously, as illustrated below:
 
 ![Multiple selection in Blazor Gantt Chart](images/blazor-gantt-chart-multiple-selection.webp)

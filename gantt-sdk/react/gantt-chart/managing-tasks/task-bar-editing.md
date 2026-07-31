@@ -18,17 +18,17 @@ Enable taskbar editing by setting [allowTaskbarEditing](https://ej2.syncfusion.c
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/taskbaredit-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/taskbaredit-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/taskbaredit-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/taskbaredit-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/taskbaredit-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/taskbaredit-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/taskbaredit-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/taskbaredit-cs2" %}
 
 ## Prevent taskbar editing for specific tasks
 
@@ -36,19 +36,20 @@ Prevent taskbar editing for specific tasks using the [taskbarEditing](https://ej
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/preventtaskbaredit-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/preventtaskbaredit-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/preventtaskbaredit-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/preventtaskbaredit-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/preventtaskbaredit-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/preventtaskbaredit-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/preventtaskbaredit-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/preventtaskbaredit-cs1" %}
 
 ## See also
+
 - [How to configure task editing?](https://ej2.syncfusion.com/react/documentation/gantt/editing)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/react/documentation/gantt/task-dependency)
 - [How to configure critical path?](https://ej2.syncfusion.com/react/documentation/gantt/critical-path)

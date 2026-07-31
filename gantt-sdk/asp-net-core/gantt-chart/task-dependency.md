@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Task dependencies in Gantt
 
 Task dependency or task relationship can be established between two tasks in Gantt. This dependency affects the project schedule. If you change the predecessor of a task, it will affect the successor task, which will affect the next task, and so on. Relationship can be established between parent-parent tasks, child-child tasks, parent-child and child-parent task.
@@ -60,10 +59,10 @@ Task relationship is defined in the data source as a string value, and this valu
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/enableDependency/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/predecessor/enableDependency/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="EnableDependency.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/enableDependency/enableDependency.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/predecessor/enableDependency/enableDependency.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -71,15 +70,13 @@ Task relationship is defined in the data source as a string value, and this valu
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/enableDependency/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/predecessor/enableDependency/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="EnableDependency.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/enableDependency/enableDependency.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/predecessor/enableDependency/enableDependency.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 The following screenshot displays the output of the above code.
 
@@ -89,9 +86,9 @@ The following screenshot displays the output of the above code.
 
 In the Gantt control, the predecessor offset can be defined with the following duration units:
 
-* Day
-* Hour
-* Minute
+- Day
+- Hour
+- Minute
 
 You can define an offset with various offset duration units for predecessors by using the following code example.
 
@@ -99,10 +96,10 @@ You can define an offset with various offset duration units for predecessors by 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/predecessorWithOffset/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/predecessor/predecessorWithOffset/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="PredecessorWithOffset.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/predecessorWithOffset/predecessorWithOffset.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/predecessor/predecessorWithOffset/predecessorWithOffset.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -110,10 +107,10 @@ You can define an offset with various offset duration units for predecessors by 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/predecessorWithOffset/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/predecessor/predecessorWithOffset/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="PredecessorWithOffset.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/predecessorWithOffset/predecessorWithOffset.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/predecessor/predecessorWithOffset/predecessorWithOffset.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -134,10 +131,10 @@ The [autoUpdatePredecessorOffset](https://ej2.syncfusion.com/react/documentation
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/predecessor-cs1/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/predecessor/predecessor-cs1/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="predecessor.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/predecessor-cs1/predecessor.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/predecessor/predecessor-cs1/predecessor.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -145,10 +142,10 @@ The [autoUpdatePredecessorOffset](https://ej2.syncfusion.com/react/documentation
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/predecessor-cs1/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/predecessor/predecessor-cs1/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="predecessor.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/predecessor-cs1/predecessor.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/predecessor/predecessor-cs1/predecessor.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -161,10 +158,10 @@ By default, the dependency offsets are automatically updated in the Gantt chart 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessorWithOffset-cs1/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/predecessorWithOffset-cs1/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="PredecessorWithOffset.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessorWithOffset-cs1/predecessorWithOffset.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/predecessorWithOffset-cs1/predecessorWithOffset.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -172,10 +169,10 @@ By default, the dependency offsets are automatically updated in the Gantt chart 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessorWithOffset-cs1/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/predecessorWithOffset-cs1/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="PredecessorWithOffset.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessorWithOffset-cs1/predecessorWithOffset.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/predecessorWithOffset-cs1/predecessorWithOffset.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -183,8 +180,9 @@ By default, the dependency offsets are automatically updated in the Gantt chart 
 ## Validate predecessor links on editing
 
 In Gantt, task relationship link can be broken by editing the start date, end date and duration value of task. When the task relationship broken on any edit action. This can be handled in Gantt in two ways.
-* Using actionBegin event
-* Using predecessor validation dialog
+
+- Using actionBegin event
+- Using predecessor validation dialog
 
 ### Using actionBegin event
 
@@ -204,10 +202,10 @@ The following sample explains enabling the `respectLink` validation mode while e
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/validatePredecessorLinks/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/predecessor/validatePredecessorLinks/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ValidatePredecessorLinks.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/validatePredecessorLinks/validatePredecessorLinks.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/predecessor/validatePredecessorLinks/validatePredecessorLinks.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -215,15 +213,13 @@ The following sample explains enabling the `respectLink` validation mode while e
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/validatePredecessorLinks/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/predecessor/validatePredecessorLinks/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ValidatePredecessorLinks.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/validatePredecessorLinks/validatePredecessorLinks.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/predecessor/validatePredecessorLinks/validatePredecessorLinks.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ### Using validation dialog
 
@@ -233,14 +229,14 @@ This validation pop-up will display different options based on the successor tas
 
 If you move the successor task that starts after the predecessor task’s end date, then a dialog will be rendered with the following options:
 
-* Cancel, Keep the existing link.
-* Remove the link and move the task to start on edited date.
-* Move the task to start on edited date and keep the link.
+- Cancel, Keep the existing link.
+- Remove the link and move the task to start on edited date.
+- Move the task to start on edited date and keep the link.
 
 If you move the successor task that starts before the predecessor task’s end date, then a dialog will be rendered with the following options:
 
-* Cancel, Keep the existing link.
-* Remove the link and move the task to start on edited date.
+- Cancel, Keep the existing link.
+- Remove the link and move the task to start on edited date.
 
 The following code example shows how to enable the predecessor validation dialog in Gantt.
 
@@ -248,10 +244,10 @@ The following code example shows how to enable the predecessor validation dialog
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/validateWithDialog/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/predecessor/validateWithDialog/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ValidateWithDialog.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/validateWithDialog/validateWithDialog.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/predecessor/validateWithDialog/validateWithDialog.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -259,15 +255,13 @@ The following code example shows how to enable the predecessor validation dialog
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/validateWithDialog/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/predecessor/validateWithDialog/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ValidateWithDialog.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/validateWithDialog/validateWithDialog.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/predecessor/validateWithDialog/validateWithDialog.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 In this case, if the user dragging action violated the predecessor type then the following dialog will be rendered to perform operation.
 
@@ -281,10 +275,10 @@ By default, mapping the dependency field in taskFields displays dependency lines
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/showhide/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/predecessor/showhide/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="showHide.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/showhide/showHide.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/predecessor/showhide/showHide.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -292,14 +286,13 @@ By default, mapping the dependency field in taskFields displays dependency lines
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/showhide/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/predecessor/showhide/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="showHide.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/showhide/showHide.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/predecessor/showhide/showHide.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
 
 The following screen shot dependencyline hide using dynamic button.
 

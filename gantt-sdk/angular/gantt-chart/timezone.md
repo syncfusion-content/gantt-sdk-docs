@@ -22,15 +22,15 @@ The following example sets UTC timezone:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timezone/same-time-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timezone/same-time-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timezone/same-time-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timezone/same-time-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/timezone/same-time-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/timezone/same-time-cs1" %}
 
 This code ensures taskbars reflect UTC dates, unaffected by local timezones.
 
@@ -197,15 +197,15 @@ The following example handles CRUD with timezone:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timezone/timezone-CRUD-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timezone/timezone-CRUD-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/timezone/timezone-CRUD-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/timezone/timezone-CRUD-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/timezone/timezone-CRUD-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/timezone/timezone-CRUD-cs1" %}
 
 ## Use timezone methods
 

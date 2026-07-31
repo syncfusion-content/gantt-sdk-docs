@@ -3,7 +3,7 @@ layout: post
 title: Excel Like Filter in Gantt Chart Control | Syncfusion
 description: Learn here all about excel like filter in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Excel like filter 
+control: Excel like filter
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -19,27 +19,27 @@ To enable this feature, configure [filterSettings.type](../../api/gantt/filterse
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-filter-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-filter-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-filter-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-filter-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-filter-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-filter-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-filter-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-filter-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-filter-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-filter-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-filter-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-filter-cs1" %}
 {% endif %}
 
 ## Show customized text in checkbox list data
@@ -50,27 +50,27 @@ To customize the text displayed in a checkbox list, use `filterItemTemplate` and
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-filter-cs2/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-filter-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-filter-cs2/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-filter-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-filter-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-filter-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-filter-cs2/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-filter-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-filter-cs2/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-filter-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-filter-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-filter-cs2" %}
 {% endif %}
 
 ## Hide Excel filter dialog elements
@@ -79,46 +79,45 @@ You can hide elements such as the context menu, search box, sorting options, and
 
 ```css
 .e-gantt .e-excelfilter .e-contextmenu-wrapper {
-    display: none;
+  display: none;
 }
 ```
 
 If you want to hide only the built-in sorting options (ascending, descending, and separator), apply the following CSS:
 
 ```css
- .e-excel-ascending,
- .e-excel-descending,
- .e-separator.e-excel-separator {
-    display: none;
-  }
-
+.e-excel-ascending,
+.e-excel-descending,
+.e-separator.e-excel-separator {
+  display: none;
+}
 ```
 
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-filter-cs3/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-filter-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-filter-cs3/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-filter-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-filter-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-filter-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-filter-cs3/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-filter-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-filter-cs3/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-filter-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-filter-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-filter-cs3" %}
 {% endif %}
 
 ## Customize filter choice count
@@ -131,27 +130,27 @@ To customize this behavior, the `filterChoiceCount` property can be adjusted to 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-filter-cs4/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-filter-cs4/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-filter-cs4/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-filter-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-filter-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-filter-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-filter-cs4/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-filter-cs4/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-filter-cs4/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-filter-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-filter-cs4" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-filter-cs4" %}
 {% endif %}
 
 ## Bind custom remote data source for Excel-like filtering
@@ -162,25 +161,25 @@ You can dynamically bind a custom remote data source to the Excel filter in the 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-filter-cs5/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-filter-cs5/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-filter-cs5/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-filter-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-filter-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-filter-cs5" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-filter-cs5/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-filter-cs5/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-filter-cs5/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-filter-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-filter-cs5" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-filter-cs5" %}
 {% endif %}

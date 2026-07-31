@@ -3,7 +3,7 @@ layout: post
 title: Resource Multi Taskbar  in ASP.NET Core Gantt Component
 description: Learn here all about Multi Taskbar  in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Resource Multi Taskbar 
+control: Resource Multi Taskbar
 publishingplatform: gantt-sdk
 documentation: ug
 ---
@@ -24,10 +24,10 @@ N> By default, the `enableMultiTaskbar` property value is `false`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resource-view/multitaskbar/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/resource-view/multitaskbar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Multitaskbar.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resource-view/multitaskbar/multitaskbar.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/resource-view/multitaskbar/multitaskbar.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -35,15 +35,13 @@ N> By default, the `enableMultiTaskbar` property value is `false`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resource-view/multitaskbar/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/resource-view/multitaskbar/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Multitaskbar.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resource-view/multitaskbar/multitaskbar.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/resource-view/multitaskbar/multitaskbar.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/multitaskbar.PNG)
 
@@ -59,10 +57,10 @@ It's important to note that when `AllowTaskbarOverlap` is disabled, task depende
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resource-view/taskbaroverlap/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/resource-view/taskbaroverlap/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="TaskbarOverlap.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resource-view/taskbaroverlap/taskbaroverlap.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/resource-view/taskbaroverlap/taskbaroverlap.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -70,10 +68,10 @@ It's important to note that when `AllowTaskbarOverlap` is disabled, task depende
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resource-view/taskbaroverlap/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/resource-view/taskbaroverlap/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="TaskbarOverlap.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resource-view/taskbaroverlap/taskbaroverlap.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/resource-view/taskbaroverlap/taskbaroverlap.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

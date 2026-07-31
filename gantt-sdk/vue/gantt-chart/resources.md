@@ -2,7 +2,7 @@
 layout: post
 title: Resources in Vue Gantt Chart component | Syncfusion
 description: Learn here all about Resources in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Resources 
+control: Resources
 platform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -16,12 +16,12 @@ In Gantt, the resources are represented by staff, equipment and materials etc. I
 
 The resource collection contains details about resources that are used in the project. Resources are JSON object that contains id, name, unit and group of the resources and this collection is mapped to the Gantt control using the [resources](https://ej2.syncfusion.com/vue/documentation/api/gantt#resources) property. These resource fields are mapped to the Gantt control using the [resourceFields](https://ej2.syncfusion.com/vue/documentation/api/gantt#resourceFields) property.
 
-Resource fields | Description
------|-----
-[id](https://ej2.syncfusion.com/vue/documentation/api/gantt/resourceFields#id) | This field is used to assign resources to the tasks.
-[name](https://ej2.syncfusion.com/vue/documentation/api/gantt/resourceFields#name) | This field is used to map the resource names. These names are displayed as one of Gantt columns and also can display as labels using the [labelSettings](https://ej2.syncfusion.com/vue/documentation/api/gantt/labelSettings) property.
-[unit](https://ej2.syncfusion.com/vue/documentation/api/gantt/resourceFields#unit) | It indicates the amount of work that can be done by a resource for the task in a day.
-[group](https://ej2.syncfusion.com/vue/documentation/api/gantt/resourceFields#group) | This field is used to group the resources and the tasks assigned to that particular resource into category.
+| Resource fields                                                                      | Description                                                                                                                                                                                                                              |
+| ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [id](https://ej2.syncfusion.com/vue/documentation/api/gantt/resourceFields#id)       | This field is used to assign resources to the tasks.                                                                                                                                                                                     |
+| [name](https://ej2.syncfusion.com/vue/documentation/api/gantt/resourceFields#name)   | This field is used to map the resource names. These names are displayed as one of Gantt columns and also can display as labels using the [labelSettings](https://ej2.syncfusion.com/vue/documentation/api/gantt/labelSettings) property. |
+| [unit](https://ej2.syncfusion.com/vue/documentation/api/gantt/resourceFields#unit)   | It indicates the amount of work that can be done by a resource for the task in a day.                                                                                                                                                    |
+| [group](https://ej2.syncfusion.com/vue/documentation/api/gantt/resourceFields#group) | This field is used to group the resources and the tasks assigned to that particular resource into category.                                                                                                                              |
 
 The following code snippets shows resource collection and how it assigned to Gantt control.
 
@@ -48,7 +48,7 @@ export default {
              resources: projectResources //resource collection dataSource
         };
     },
-};  
+};
 
 ```
 
@@ -68,8 +68,6 @@ If the unit is not specified for specific resource, the amount of work done will
 
 ```
 
-
-
 ### Assign resources with unit
 
 We can assign the quantity of work done by the resources for the specific task as like below code snippet.
@@ -87,14 +85,14 @@ The following code snippet shows how to assign the resource for each task and ma
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/resources-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/resources-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/resources-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/resources-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/resources-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/resources-cs1" %}
 
 ## Add/Edit resource collection
 
@@ -114,11 +112,11 @@ The following code snippet demonstrates how to customize the background colors o
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/resource-customization-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/resource-customization-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/resource-customization-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/resource-customization-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/resource-customization-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/resource-customization-cs1" %}

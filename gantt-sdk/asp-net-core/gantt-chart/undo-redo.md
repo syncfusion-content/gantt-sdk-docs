@@ -20,26 +20,26 @@ The undo redo feature can be enabled in Gantt by using the [EnableUndoRedo](http
 
 By default, all the gantt features listed in the below table will be restored for undo and redo actions. However, you have the option to specify only the required actions to be restored using [UndoRedoActions](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_UndoRedoActions) property.
 
-| Built-in Undo Redo Items | Actions |
-|------------------------|---------|
-| Edit | Undo redo actions can be performed for edited record.|
-| Delete | Undo redo actions can be performed for deleted record.|
-| Add | Undo redo actions can be performed for newly added record.|
-| ColumnReorder | Undo redo actions can be performed for reordered column.|
-| Indent | Undo redo actions can be performed for indented record.|
-| Outdent | Undo redo actions can be performed for outdented record.|
-| ColumnResize | Undo redo actions can be performed for resized column.|
-| Sorting | Undo redo actions can be performed for sorted column.|
-| Filtering | Undo redo actions can be performed for filtered record.|
-| Search | Undo redo actions can be performed for searched value.|
-| ZoomIn | Undo redo actions can be performed for zoomIn action.|
-| ZoomOut | Undo redo actions can be performed for zoomOut action.|
-| ZoomToFit | Undo redo actions can be performed for zoomToFit action.|
-| ColumnState | Undo redo actions can be performed for hided or shown columns.|
-| RowDragAndDrop | Undo redo actions can be performed for row drag and drop.|
-| TaskbarDragAndDrop |  Undo redo actions can be performed for taskbar drag and drop.|
-| PreviousTimeSpan | Undo redo actions can be performed for previous time span acton.|
-| NextTimeSpan | Undo redo actions can be performed for next time span action.|
+| Built-in Undo Redo Items | Actions                                                          |
+| ------------------------ | ---------------------------------------------------------------- |
+| Edit                     | Undo redo actions can be performed for edited record.            |
+| Delete                   | Undo redo actions can be performed for deleted record.           |
+| Add                      | Undo redo actions can be performed for newly added record.       |
+| ColumnReorder            | Undo redo actions can be performed for reordered column.         |
+| Indent                   | Undo redo actions can be performed for indented record.          |
+| Outdent                  | Undo redo actions can be performed for outdented record.         |
+| ColumnResize             | Undo redo actions can be performed for resized column.           |
+| Sorting                  | Undo redo actions can be performed for sorted column.            |
+| Filtering                | Undo redo actions can be performed for filtered record.          |
+| Search                   | Undo redo actions can be performed for searched value.           |
+| ZoomIn                   | Undo redo actions can be performed for zoomIn action.            |
+| ZoomOut                  | Undo redo actions can be performed for zoomOut action.           |
+| ZoomToFit                | Undo redo actions can be performed for zoomToFit action.         |
+| ColumnState              | Undo redo actions can be performed for hided or shown columns.   |
+| RowDragAndDrop           | Undo redo actions can be performed for row drag and drop.        |
+| TaskbarDragAndDrop       | Undo redo actions can be performed for taskbar drag and drop.    |
+| PreviousTimeSpan         | Undo redo actions can be performed for previous time span acton. |
+| NextTimeSpan             | Undo redo actions can be performed for next time span action.    |
 
 In the following code example, `Edit` and `Delete` actions are specified in `UndoRedoActions` property.
 
@@ -47,10 +47,10 @@ In the following code example, `Edit` and `Delete` actions are specified in `Und
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/undo-redo/undoActions/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/undo-redo/undoActions/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DefaultItems.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/undo-redo/undoActions/undoActions.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/undo-redo/undoActions/undoActions.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -58,10 +58,10 @@ In the following code example, `Edit` and `Delete` actions are specified in `Und
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/undo-redo/undoActions/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/undo-redo/undoActions/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DefaultItems.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/undo-redo/undoActions/undoActions.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/undo-redo/undoActions/undoActions.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -80,10 +80,10 @@ In the following example, `UndoRedoStepsCount` value is set to 5.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/undo-redo/stepsCount/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/undo-redo/stepsCount/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DefaultItems.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/undo-redo/stepsCount/stepsCount.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/undo-redo/stepsCount/stepsCount.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -91,10 +91,10 @@ In the following example, `UndoRedoStepsCount` value is set to 5.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/undo-redo/stepsCount/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/undo-redo/stepsCount/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DefaultItems.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/undo-redo/stepsCount/stepsCount.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/undo-redo/stepsCount/stepsCount.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -109,10 +109,10 @@ The following code example demonstrates how to invoke the `undo` and `redo` meth
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/undo-redo/dynamic/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/undo-redo/dynamic/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DefaultItems.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/undo-redo/dynamic/dynamic.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/undo-redo/dynamic/dynamic.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -120,10 +120,10 @@ The following code example demonstrates how to invoke the `undo` and `redo` meth
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/undo-redo/dynamic/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/undo-redo/dynamic/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DefaultItems.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/undo-redo/dynamic/dynamic.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/undo-redo/dynamic/dynamic.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -138,10 +138,10 @@ The following code example demonstrates how to retrieve the undo and redo collec
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/undo-redo/retrieve/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/undo-redo/retrieve/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DefaultItems.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/undo-redo/retrieve/retrieve.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/undo-redo/retrieve/retrieve.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -149,10 +149,10 @@ The following code example demonstrates how to retrieve the undo and redo collec
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/undo-redo/retrieve/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/undo-redo/retrieve/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DefaultItems.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/undo-redo/retrieve/retrieve.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/undo-redo/retrieve/retrieve.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -167,10 +167,10 @@ The following code example demonstrates how to clear the undo and redo collectio
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/undo-redo/clear/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/undo-redo/clear/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DefaultItems.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/undo-redo/clear/clear.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/undo-redo/clear/clear.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -178,10 +178,10 @@ The following code example demonstrates how to clear the undo and redo collectio
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/undo-redo/clear/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/undo-redo/clear/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DefaultItems.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/undo-redo/clear/clear.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/undo-redo/clear/clear.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

@@ -13,48 +13,48 @@ The Blazor Gantt Chart component includes built-in toolbar support for executing
 
 ## Built-in toolbar items
 
-Built-in toolbar items allow you to perform standard operations directly from the Gantt interface. These items can be added to the toolbar by specifying the  [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Toolbar) property as a collection of predefined items. Each toolbar item appears as a button with an associated icon and label for intuitive interaction.
+Built-in toolbar items allow you to perform standard operations directly from the Gantt interface. These items can be added to the toolbar by specifying the [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Toolbar) property as a collection of predefined items. Each toolbar item appears as a button with an associated icon and label for intuitive interaction.
 
 The following table shows built-in toolbar items and its actions.
 
-| Built-in Toolbar Items | Actions |
-|------------------------|---------|
-| Add | Adds a new record. |
-| Cancel | Cancels the edit state. |
-| CollapseAll | Collapses all the rows. |
-| Delete | Deletes the selected record. |
-| Edit | Edits the selected record. |
-| Indent | Indent the selected record to one level. |
-| Outdent | Outdent the selected record to one level. |
-| ExpandAll | Expands all the rows. |
-| NextTimeSpan | Navigate the Gantt Chart timeline to next time span. |
-| PrevTimeSpan | Navigate the Gantt Chart timeline to previous time span. |
-| Search | Searches the records by the given key. |
-| Update | Updates the edited record. |
-| ZoomIn | To perform zoom-in action on Gantt Chart timeline. |
-| ZoomOut | To perform zoom-out action on Gantt Chart timeline. |
-| ZoomToFit | To show all tasks with timeline fit into available Chart width. |
+| Built-in Toolbar Items | Actions                                                         |
+| ---------------------- | --------------------------------------------------------------- |
+| Add                    | Adds a new record.                                              |
+| Cancel                 | Cancels the edit state.                                         |
+| CollapseAll            | Collapses all the rows.                                         |
+| Delete                 | Deletes the selected record.                                    |
+| Edit                   | Edits the selected record.                                      |
+| Indent                 | Indent the selected record to one level.                        |
+| Outdent                | Outdent the selected record to one level.                       |
+| ExpandAll              | Expands all the rows.                                           |
+| NextTimeSpan           | Navigate the Gantt Chart timeline to next time span.            |
+| PrevTimeSpan           | Navigate the Gantt Chart timeline to previous time span.        |
+| Search                 | Searches the records by the given key.                          |
+| Update                 | Updates the edited record.                                      |
+| ZoomIn                 | To perform zoom-in action on Gantt Chart timeline.              |
+| ZoomOut                | To perform zoom-out action on Gantt Chart timeline.             |
+| ZoomToFit              | To show all tasks with timeline fit into available Chart width. |
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Toolbar="@(new List<string>() { "Add", "Cancel", "CollapseAll", "Delete", "Edit", "ExpandAll", "NextTimeSpan", "PrevTimeSpan", "Search", "Update", "Indent", "Outdent" })" Height="450px" Width="900px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttSearchSettings Fields="@Searchfields"></GanttSearchSettings>
-    <GanttEditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true">
-    </GanttEditSettings>
+</GanttTaskFields>
+<GanttSearchSettings Fields="@Searchfields"></GanttSearchSettings>
+<GanttEditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true">
+</GanttEditSettings>
 </SfGantt>
 
 @code {
-    public string[] Searchfields = new string[] { "TaskID", "TaskName", "StartDate", "EndDate", "Duration", "Progress" };
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public string[] Searchfields = new string[] { "TaskID", "TaskName", "StartDate", "EndDate", "Duration", "Progress" };
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public class TaskData
     {
@@ -82,6 +82,7 @@ The following table shows built-in toolbar items and its actions.
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -89,11 +90,11 @@ The following table shows built-in toolbar items and its actions.
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/rXrnZxrVBtGKoTGy?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-> * The [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Toolbar) has options to define both built-in and custom toolbar items.
+> - The [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Toolbar) has options to define both built-in and custom toolbar items.
 
 ## Custom toolbar items
 
-You can add custom items to the Gantt chart toolbar by setting the [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Toolbar) property with a collection of `ItemModel` objects. The actions associated with these custom toolbar items can be handled using the [OnToolbarClick](https://blazor.syncfusion.com/documentation/gantt-chart/events#ontoolbarclick) event.
+You can add custom items to the Gantt chart toolbar by setting the [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Toolbar) property with a collection of `ItemModel` objects. The actions associated with these custom toolbar items can be handled using the [OnToolbarClick](https://blazor.syncfusion.com/documentation/gantt/events#ontoolbarclick) event.
 
 By default, custom toolbar items are aligned to the left. However, you can change their position using the [Align](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Navigations.ToolbarItem.html#Syncfusion_Blazor_Navigations_ToolbarItem_Align) property. In the example below, the **Collapse All** toolbar item is aligned to the right.
 
@@ -102,20 +103,20 @@ By default, custom toolbar items are aligned to the left. However, you can chang
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt @ref="Gantt" DataSource="@TaskCollection" Toolbar="Toolbaritems" Height="450px" Width="900px" AllowFiltering="true">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
+</GanttTaskFields>
+<GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
 </SfGantt>
 
 @code {
-    public SfGantt<TaskData>? Gantt;
-    public List<Syncfusion.Blazor.Navigations.ToolbarItem> Toolbaritems = new List<Syncfusion.Blazor.Navigations.ToolbarItem>()
-        {
-         new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "Expand All",TooltipText = "Expand All", Id = "ExpandAll" },
-         new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "Collapse All",TooltipText = "Collapse All", Id = "CollapseAll", Align = Syncfusion.Blazor.Navigations.ItemAlign.Right }
-        };
-    public List<TaskData>? TaskCollection { get; set; }
+public SfGantt<TaskData>? Gantt;
+public List<Syncfusion.Blazor.Navigations.ToolbarItem> Toolbaritems = new List<Syncfusion.Blazor.Navigations.ToolbarItem>()
+{
+new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "Expand All",TooltipText = "Expand All", Id = "ExpandAll" },
+new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "Collapse All",TooltipText = "Collapse All", Id = "CollapseAll", Align = Syncfusion.Blazor.Navigations.ItemAlign.Right }
+};
+public List<TaskData>? TaskCollection { get; set; }
 
     public void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
     {
@@ -160,6 +161,7 @@ By default, custom toolbar items are aligned to the left. However, you can chang
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -167,7 +169,7 @@ By default, custom toolbar items are aligned to the left. However, you can chang
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/BNrdjxBVBNPRGttX?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-> * If a toolbar item does not match the built-in items, it will be treated as a custom toolbar item.
+> - If a toolbar item does not match the built-in items, it will be treated as a custom toolbar item.
 
 ## Built-in and custom items in toolbar
 
@@ -178,6 +180,7 @@ The Gantt component supports using both built-in and custom toolbar items simult
 
 @using Syncfusion.Blazor.Gantt
 @using Syncfusion.Blazor.Navigations
+
 <p>@Message</p>
 <SfGantt DataSource="@TaskCollection" Toolbar="Toolbaritems" Height="450px" Width="900px">
     <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
@@ -187,9 +190,9 @@ The Gantt component supports using both built-in and custom toolbar items simult
 </SfGantt>
 
 @code {
-    public List<Object> Toolbaritems = new List<Object>() { "ExpandAll", "CollapseAll", new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "Test", TooltipText = "Test", Id = "Test" } };
-    public List<TaskData>? TaskCollection { get; set; }
-    public string? Message;
+public List<Object> Toolbaritems = new List<Object>() { "ExpandAll", "CollapseAll", new Syncfusion.Blazor.Navigations.ToolbarItem() { Text = "Test", TooltipText = "Test", Id = "Test" } };
+public List<TaskData>? TaskCollection { get; set; }
+public string? Message;
 
     public void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
     {
@@ -230,6 +233,7 @@ The Gantt component supports using both built-in and custom toolbar items simult
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -260,31 +264,31 @@ You can control toolbar items dynamically using the [EnableItems](https://help.s
 </SfGantt>
 
 @code {
-    public SfGantt<TaskData>? Gantt;
-    private bool? isChecked = true;
-    public List<ToolbarItem> Toolbaritems = new List<ToolbarItem>() { new ToolbarItem() { Text = "Quick Filter", TooltipText = "Quick Filter", Id = "quickfilter" },
-    new ToolbarItem() { Text = "Clear Filter", TooltipText = "Clear Filter", Id = "clearfilter" } };
-    public void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
-    {
-        if (args.Item.Id == "quickfilter")
-        {
-            Gantt?.FilterByColumnAsync("TaskName", "startswith", "Identify");
-        }
-        if (args.Item.Id == "clearfilter")
-        {
-            Gantt?.ClearFilteringAsync();
-        }
-    }
-    private void OnSwitchChange(Syncfusion.Blazor.Buttons.ChangeEventArgs<bool?> args)
-    {
-        this.isChecked = args.Checked;
-        Gantt?.EnableItems(new List<int>() { 0, 1 }, isChecked ?? true);
-    }
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public SfGantt<TaskData>? Gantt;
+private bool? isChecked = true;
+public List<ToolbarItem> Toolbaritems = new List<ToolbarItem>() { new ToolbarItem() { Text = "Quick Filter", TooltipText = "Quick Filter", Id = "quickfilter" },
+new ToolbarItem() { Text = "Clear Filter", TooltipText = "Clear Filter", Id = "clearfilter" } };
+public void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
+{
+if (args.Item.Id == "quickfilter")
+{
+Gantt?.FilterByColumnAsync("TaskName", "startswith", "Identify");
+}
+if (args.Item.Id == "clearfilter")
+{
+Gantt?.ClearFilteringAsync();
+}
+}
+private void OnSwitchChange(Syncfusion.Blazor.Buttons.ChangeEventArgs<bool?> args)
+{
+this.isChecked = args.Checked;
+Gantt?.EnableItems(new List<int>() { 0, 1 }, isChecked ?? true);
+}
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public class TaskData
     {
@@ -312,6 +316,7 @@ You can control toolbar items dynamically using the [EnableItems](https://help.s
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -319,4 +324,4 @@ You can control toolbar items dynamically using the [EnableItems](https://help.s
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/VNVxtnhrrWCTwoEw?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-N> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=bootstrap5) to know how to render and configure the Gantt.
+N> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt/default-functionalities?theme=bootstrap5) to know how to render and configure the Gantt.

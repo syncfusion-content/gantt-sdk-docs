@@ -25,14 +25,14 @@ Using the [columns](https://ej2.syncfusion.com/vue/documentation/api/gantt#colum
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/columns-cs14/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/columns-cs14/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/columns-cs14/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/columns-cs14/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/columns-cs14" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/columns-cs14" %}
 
 ## Custom column header
 
@@ -40,14 +40,14 @@ The column header text can be defined using the [headerText](https://ej2.syncfus
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/columns-cs15/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/columns-cs15/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/columns-cs15/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/columns-cs15/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/columns-cs15" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/columns-cs15" %}
 
 ## Format
 
@@ -55,14 +55,14 @@ To format cell values based on a specific culture, use the [columns.format](http
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/columns-cs16/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/columns-cs16/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/columns-cs16/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/columns-cs16/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/columns-cs16" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/columns-cs16" %}
 
 > By default, number and date values are formatted in the `en-US` culture.
 
@@ -70,11 +70,11 @@ To format cell values based on a specific culture, use the [columns.format](http
 
 Number or integer values can be formatted using the following format strings:
 
-Format | Description | Remarks
------|-------------|---------
-N | Numeric type | Followed by precisions like N2, N3, etc.
-C | Currency type | Followed by precisions like C2, C3, etc.
-P | Percentage type | Expects a value from 0 to 1. Example: `0.2` formats to `20%`.
+| Format | Description     | Remarks                                                       |
+| ------ | --------------- | ------------------------------------------------------------- |
+| N      | Numeric type    | Followed by precisions like N2, N3, etc.                      |
+| C      | Currency type   | Followed by precisions like C2, C3, etc.                      |
+| P      | Percentage type | Expects a value from 0 to 1. Example: `0.2` formats to `20%`. |
 
 ### Date formatting
 
@@ -84,24 +84,24 @@ For built‑in date formats, specify the [columns.format](https://ej2.syncfusion
 
 You can also use custom format objects. Examples:
 
-Format | Formatted value
-------|-----------------
-{ type: 'date', format: 'dd/MM/yyyy' } | 04/07/1996
-{ type: 'date', format: 'dd.MM.yyyy' } | 04.07.1996
-{ type: 'date', skeleton: 'short' } | 7/4/96
-{ type: 'dateTime', format: 'dd/MM/yyyy hh:mm a' } | 04/07/1996 12:00 AM
-{ type: 'dateTime', format: 'MM/dd/yyyy hh:mm:ss a' } | 07/04/1996 12:00:00 AM
+| Format                                                | Formatted value        |
+| ----------------------------------------------------- | ---------------------- |
+| { type: 'date', format: 'dd/MM/yyyy' }                | 04/07/1996             |
+| { type: 'date', format: 'dd.MM.yyyy' }                | 04.07.1996             |
+| { type: 'date', skeleton: 'short' }                   | 7/4/96                 |
+| { type: 'dateTime', format: 'dd/MM/yyyy hh:mm a' }    | 04/07/1996 12:00 AM    |
+| { type: 'dateTime', format: 'MM/dd/yyyy hh:mm:ss a' } | 07/04/1996 12:00:00 AM |
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/columns-cs17/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/columns-cs17/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/columns-cs17/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/columns-cs17/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/columns-cs17" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/columns-cs17" %}
 
 ## Change tree/expander column
 
@@ -109,14 +109,14 @@ The tree/expander column contains icons to expand or collapse parent records. Yo
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/columns-cs19/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/columns-cs19/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/columns-cs19/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/columns-cs19/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/columns-cs19" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/columns-cs19" %}
 
 ## Show or hide columns dynamically
 
@@ -124,14 +124,14 @@ You can show or hide Gantt Chart columns dynamically using external buttons by i
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/columns-cs20/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/columns-cs20/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/columns-cs20/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/columns-cs20/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/columns-cs20" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/columns-cs20" %}
 
 ## Controlling Gantt Chart column actions
 
@@ -143,14 +143,14 @@ You can enable or disable Gantt Chart actions for a particular column by using t
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/columns-cs2/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/columns-cs2/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/columns-cs2/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/columns-cs2/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/columns-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/columns-cs2" %}
 
 ## Column type
 
@@ -160,11 +160,11 @@ If a `format` is defined, the column uses `type` to select an appropriate format
 
 Gantt Chart columns support the following types:
 
-* string  
-* number  
-* boolean  
-* date  
-* datetime  
+- string
+- number
+- boolean
+- date
+- datetime
 
 > If `type` is not defined, it is inferred from the first record of the [dataSource](https://ej2.syncfusion.com/vue/documentation/api/gantt#datasource).  
 > If the first record contains a null or blank value, you must explicitly define the column `type`.

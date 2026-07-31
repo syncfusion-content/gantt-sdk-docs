@@ -16,14 +16,14 @@ Column validation validates the editing and adding data and it displays errors f
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/managing-tasks-cs22/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/managing-tasks-cs22/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/managing-tasks-cs22/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/managing-tasks-cs22/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/managing-tasks-cs22" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/managing-tasks-cs22" %}
 
 ## Custom validation
 
@@ -33,14 +33,14 @@ In the below demo, custom validation is applied for the `TaskName` column.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/managing-tasks-cs23/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/managing-tasks-cs23/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/managing-tasks-cs23/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/managing-tasks-cs23/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/managing-tasks-cs23" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/managing-tasks-cs23" %}
 
 ## Dependency and resource grid validation
 
@@ -49,11 +49,11 @@ Within the `actionBegin` event, `validationRules` can be configured for columns 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/managing-tasks-cs24/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/managing-tasks-cs24/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/managing-tasks-cs24/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/managing-tasks-cs24/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/managing-tasks-cs24" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/managing-tasks-cs24" %}

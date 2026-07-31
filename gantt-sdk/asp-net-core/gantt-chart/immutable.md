@@ -3,7 +3,7 @@ layout: post
 title: Immutable in Syncfusion ASP.NET Core Gantt Component
 description: Learn here all about Immutable in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Immutable 
+control: Immutable
 publishingplatform: gantt-sdk
 documentation: ug
 ---
@@ -22,10 +22,10 @@ The following code example shows how to display the immutable mode in the Gantt 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/immutable/immutable/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/immutable/immutable/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="immutable.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/immutable/immutable/immutable.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/immutable/immutable/immutable.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -33,10 +33,10 @@ The following code example shows how to display the immutable mode in the Gantt 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/immutable/immutable/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/immutable/immutable/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="immutable.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/immutable/immutable/immutable.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/immutable/immutable/immutable.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -45,5 +45,5 @@ The following code example shows how to display the immutable mode in the Gantt 
 
 The following features are not supported in the immutable mode:
 
-* Column reorder
-* Virtualization
+- Column reorder
+- Virtualization

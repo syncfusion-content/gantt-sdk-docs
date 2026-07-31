@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Deleting tasks in gantt control
 
 ## Deleting Tasks
@@ -19,10 +18,10 @@ A task delete option in the Gantt control can be enabled by enabling the [`EdiSe
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/deleteRecord/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/deleteRecord/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DeleteRecord.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/deleteRecord/deleteRecord.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/deleteRecord/deleteRecord.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -30,15 +29,13 @@ A task delete option in the Gantt control can be enabled by enabling the [`EdiSe
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/deleteRecord/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/deleteRecord/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DeleteRecord.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/deleteRecord/deleteRecord.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/deleteRecord/deleteRecord.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 N> You should select any one of the rows in the Gantt control to perform task delete action.
 <br/> You should set the [`AllowDeleting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html#Syncfusion_EJ2_Gantt_GanttEditSettings_AllowDeleting) value to `true` to delete the record dynamically.
@@ -53,10 +50,10 @@ The following code snippet explains how to enable the delete confirmation messag
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/deleteConfirmationDialog/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/deleteConfirmationDialog/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DeleteConfirmationDialog.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/deleteConfirmationDialog/deleteConfirmationDialog.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/deleteConfirmationDialog/deleteConfirmationDialog.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -64,14 +61,12 @@ The following code snippet explains how to enable the delete confirmation messag
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/deleteConfirmationDialog/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/deleteConfirmationDialog/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DeleteConfirmationDialog.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/deleteConfirmationDialog/deleteConfirmationDialog.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/deleteConfirmationDialog/deleteConfirmationDialog.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/deleteConfirmationDialog.png)

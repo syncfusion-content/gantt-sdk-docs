@@ -16,10 +16,10 @@ In the Gantt control, you can change the schedule start and end dates by clickin
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/how-to/changeScheduleDates/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/how-to/changeScheduleDates/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChangeScheduleDates.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/how-to/changeScheduleDates/changeScheduleDates.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/how-to/changeScheduleDates/changeScheduleDates.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -27,11 +27,10 @@ In the Gantt control, you can change the schedule start and end dates by clickin
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/how-to/changeScheduleDates/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/how-to/changeScheduleDates/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChangeScheduleDates.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/how-to/changeScheduleDates/changeScheduleDates.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/how-to/changeScheduleDates/changeScheduleDates.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-

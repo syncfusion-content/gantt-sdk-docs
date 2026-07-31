@@ -15,6 +15,7 @@ Task constraints in the [React Gantt Chart](https://www.syncfusion.com/react-com
 ## Benefits of task constraints
 
 Task constraints enhance project planning with the following advantages:
+
 - Enforce logical task sequences, ensuring dependencies are respected (e.g., taskbars align with predecessors).
 - Anchor tasks to fixed milestone dates, such as product launches or audits.
 - Prevent resource conflicts by spacing tasks that share teams or equipment.
@@ -44,6 +45,7 @@ Configure task constraints using the [taskFields.constraintType](https://ej2.syn
 **Define taskFields mappings**
 
 Map the following fields in `taskFields`:
+
 - `id`: Task identifier.
 - `name`: Task name.
 - `startDate`: Task start date.
@@ -70,17 +72,17 @@ The following example applies a **MustStartOn** constraint:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/task-constraints-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/task-constraints-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/task-constraints-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/task-constraints-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/task-constraints-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/task-constraints-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/task-constraints-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/task-constraints-cs1" %}
 
 This code sets a task to start on July 1, 2025, with the taskbar reflecting the constraint.
 
@@ -107,23 +109,25 @@ public actionBegin(args: ActionBeginArgs): void {
   }
 }
 ```
+
 The following example disables the **MustStartOn** violation popup:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/task-constraints-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/task-constraints-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/task-constraints-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/task-constraints-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/task-constraints-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/task-constraints-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/task-constraints-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/task-constraints-cs2" %}
 
 ## See also
+
 - [How to configure task dependencies?](https://ej2.syncfusion.com/react/documentation/gantt/task-dependency)
 - [How to customize taskbars?](https://ej2.syncfusion.com/react/documentation/gantt/taskbar)
 - [How to enable baseline rendering?](https://ej2.syncfusion.com/react/documentation/gantt/baseline)

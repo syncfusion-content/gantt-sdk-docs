@@ -3,7 +3,7 @@ layout: post
 title: Toolbar in JavaScript Gantt Chart Control | Syncfusion
 description: Learn here all about toolbar in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Toolbar 
+control: Toolbar
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -38,30 +38,30 @@ The following table shows built-in toolbar items and its actions.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/toolbar-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/toolbar-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/toolbar-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/toolbar-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/toolbar-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/toolbar-cs1" %}
 {% endif %}
 
-> * The [toolbar](../api/gantt#toolbar) has options to define both built-in and custom toolbar items.
+> - The [toolbar](../api/gantt#toolbar) has options to define both built-in and custom toolbar items.
 
 ### Customize the built-in toolbar items
 
@@ -71,27 +71,27 @@ You can modify built-in toolbar actions using the [toolbarClick](../api/gantt#to
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-custom-action/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/toolbar-custom-action/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-custom-action/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/toolbar-custom-action/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-custom-action" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/toolbar-custom-action" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-custom-action/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/toolbar-custom-action/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-custom-action/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/toolbar-custom-action/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-custom-action" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/toolbar-custom-action" %}
 {% endif %}
 
 ### Show only icons in built-in toolbar items
@@ -99,9 +99,9 @@ You can modify built-in toolbar actions using the [toolbarClick](../api/gantt#to
 To show only icons in the built-in toolbar items, apply custom CSS to hide the text labels. Use the following style:
 
 ```css
-.e-gantt .e-toolbar .e-tbar-btn-text, 
+.e-gantt .e-toolbar .e-tbar-btn-text,
 .e-gantt .e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn-text {
-  display: none;   
+  display: none;
 }
 ```
 
@@ -109,27 +109,27 @@ To show only icons in the built-in toolbar items, apply custom CSS to hide the t
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-cs2/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/toolbar-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-cs2/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/toolbar-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/toolbar-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-cs2/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/toolbar-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-cs2/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/toolbar-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/toolbar-cs2" %}
 {% endif %}
 
 ## Customize toolbar buttons using CSS
@@ -139,7 +139,7 @@ You can customize the appearance of toolbar buttons in the Gantt Chart control u
 ```css
 .e-gantt .e-toolbar .e-tbar-btn .e-icons,
 .e-gantt .e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn {
-  background: #add8e6;   
+  background: #add8e6;
 }
 ```
 
@@ -147,27 +147,27 @@ You can customize the appearance of toolbar buttons in the Gantt Chart control u
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-button/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/toolbar-button/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-button/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/toolbar-button/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-button" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/toolbar-button" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-button/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/toolbar-button/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-button/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/toolbar-button/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-button" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/toolbar-button" %}
 {% endif %}
 
 ## Add toolbar at the bottom of gantt
@@ -178,27 +178,27 @@ To reposition the toolbar to the bottom of the Gantt chart, use the [created](..
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-position/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/toolbar-position/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-position/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/toolbar-position/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-position" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/toolbar-position" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-position/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/toolbar-position/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-position/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/toolbar-position/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-position" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/toolbar-position" %}
 {% endif %}
 
 ## Custom toolbar items
@@ -211,30 +211,30 @@ By default, custom toolbar items are aligned to the left. However, you can chang
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/custom-toolbar/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/custom-toolbar/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/custom-toolbar/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/custom-toolbar/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/custom-toolbar" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/custom-toolbar" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/custom-toolbar/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/custom-toolbar/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/custom-toolbar/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/custom-toolbar/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/custom-toolbar" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/custom-toolbar" %}
 {% endif %}
 
-> * If a toolbar item does not match the built-in items, it will be treated as a custom toolbar item.
+> - If a toolbar item does not match the built-in items, it will be treated as a custom toolbar item.
 
 ## Built-in and custom items in toolbar
 
@@ -244,27 +244,27 @@ The Gantt control supports using both built-in and custom toolbar items simultan
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-cs3/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/toolbar-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-cs3/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/toolbar-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/toolbar-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-cs3/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/toolbar-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-cs3/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/toolbar-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/toolbar-cs3" %}
 {% endif %}
 
 ## Enable/disable toolbar items
@@ -275,27 +275,27 @@ You can control toolbar items dynamically using the [enableItems](../api/gantt#e
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/enable-disabletoolbarItems-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/enable-disabletoolbarItems-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/enable-disabletoolbarItems-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/enable-disabletoolbarItems-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/enable-disabletoolbarItems-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/enable-disabletoolbarItems-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/enable-disabletoolbarItems-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/enable-disabletoolbarItems-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/enable-disabletoolbarItems-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/enable-disabletoolbarItems-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/enable-disabletoolbarItems-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/enable-disabletoolbarItems-cs1" %}
 {% endif %}
 
 ## Add input elements to toolbar
@@ -308,25 +308,25 @@ The following example demonstrates how to integrate an [AutoComplete](../../auto
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/customToolbarItems-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/customToolbarItems-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/customToolbarItems-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/customToolbarItems-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/customToolbarItems-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/customToolbarItems-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/customToolbarItems-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/customToolbarItems-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/customToolbarItems-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/customToolbarItems-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/customToolbarItems-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/customToolbarItems-cs1" %}
 {% endif %}

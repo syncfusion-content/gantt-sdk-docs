@@ -33,7 +33,7 @@ WBS codes follow a hierarchical structure: parent tasks use sequential numbers (
          Width="100%"
          ShowWbsColumn="true"
          AutoGenerateWbs="true">
-    <GanttTaskFields Id="TaskId"
+<GanttTaskFields Id="TaskId"
                      Name="TaskName"
                      StartDate="StartDate"
                      Duration="Duration"
@@ -42,20 +42,20 @@ WBS codes follow a hierarchical structure: parent tasks use sequential numbers (
                      Dependency="Predecessor"
                      WbsCode="WbsCode"
                      WbsPredecessor="WbsPredecessor">
-    </GanttTaskFields>
-    <GanttColumns>
-        <GanttColumn Field="WbsCode" HeaderText="WBS" Width="100"></GanttColumn>
-        <GanttColumn Field="TaskId" HeaderText="Task ID" Width="80"></GanttColumn>
-        <GanttColumn Field="TaskName" HeaderText="Task Name" Width="250"></GanttColumn>
-        <GanttColumn Field="StartDate" HeaderText="Start Date" Width="150"></GanttColumn>
-        <GanttColumn Field="Duration" HeaderText="Duration" Width="100"></GanttColumn>
-        <GanttColumn Field="Progress" HeaderText="Progress" Width="100"></GanttColumn>
-        <GanttColumn Field="WbsPredecessor" HeaderText="WBS Predecessor" Width="150"></GanttColumn>
-    </GanttColumns>
+</GanttTaskFields>
+<GanttColumns>
+<GanttColumn Field="WbsCode" HeaderText="WBS" Width="100"></GanttColumn>
+<GanttColumn Field="TaskId" HeaderText="Task ID" Width="80"></GanttColumn>
+<GanttColumn Field="TaskName" HeaderText="Task Name" Width="250"></GanttColumn>
+<GanttColumn Field="StartDate" HeaderText="Start Date" Width="150"></GanttColumn>
+<GanttColumn Field="Duration" HeaderText="Duration" Width="100"></GanttColumn>
+<GanttColumn Field="Progress" HeaderText="Progress" Width="100"></GanttColumn>
+<GanttColumn Field="WbsPredecessor" HeaderText="WBS Predecessor" Width="150"></GanttColumn>
+</GanttColumns>
 </SfGantt>
 
 @code {
-    public List<TaskData> TaskCollection { get; set; } = new();
+public List<TaskData> TaskCollection { get; set; } = new();
 
     protected override void OnInitialized()
     {
@@ -88,6 +88,7 @@ WBS codes follow a hierarchical structure: parent tasks use sequential numbers (
         public string? WbsCode { get; set; }
         public string? WbsPredecessor { get; set; }
     }
+
 }
 
 {% endhighlight %}
@@ -99,7 +100,7 @@ WBS codes follow a hierarchical structure: parent tasks use sequential numbers (
 
 ## Performance Optimization with Conditional Updates
 
-To improve performance with large datasets, control WBS code recalculation using the [DataBound](https://blazor.syncfusion.com/documentation/gantt-chart/events#databound) and [RowDropped](https://blazor.syncfusion.com/documentation/gantt-chart/events#rowdropped) events. This approach ensures updates occur only when necessary, such as during drag-and-drop operations.
+To improve performance with large datasets, control WBS code recalculation using the [DataBound](https://blazor.syncfusion.com/documentation/gantt/events#databound) and [RowDropped](https://blazor.syncfusion.com/documentation/gantt/events#rowdropped) events. This approach ensures updates occur only when necessary, such as during drag-and-drop operations.
 
 The example below demonstrates how WBS auto-update is conditionally triggered during row drag-and-drop, avoiding unnecessary recalculations during other interactions.
 
@@ -115,7 +116,7 @@ The example below demonstrates how WBS auto-update is conditionally triggered du
          ShowWbsColumn="true"
          AutoGenerateWbs="@EnableAutoUpdate"
          AllowRowDragAndDrop="true">
-    <GanttTaskFields Id="TaskId"
+<GanttTaskFields Id="TaskId"
                      Name="TaskName"
                      StartDate="StartDate"
                      Duration="Duration"
@@ -123,19 +124,19 @@ The example below demonstrates how WBS auto-update is conditionally triggered du
                      ParentID="ParentId"
                      WbsCode="WbsCode"
                      WbsPredecessor="WbsPredecessor">
-    </GanttTaskFields>
-    <GanttColumns>
-        <GanttColumn Field="WbsCode" HeaderText="WBS" Width="100"></GanttColumn>
-        <GanttColumn Field="TaskId" HeaderText="Task ID" Width="80"></GanttColumn>
-        <GanttColumn Field="TaskName" HeaderText="Task Name" Width="250"></GanttColumn>
-        <GanttColumn Field="StartDate" HeaderText="Start Date" Width="150"></GanttColumn>
-        <GanttColumn Field="Duration" HeaderText="Duration" Width="100"></GanttColumn>
-        <GanttColumn Field="Progress" HeaderText="Progress" Width="100"></GanttColumn>
-        <GanttColumn Field="WbsPredecessor" HeaderText="WBS Predecessor" Width="150"></GanttColumn>
-    </GanttColumns>
-    <GanttEvents DataBound="DataBoundHandler" RowDragStarting="RowDragStartHandler"
+</GanttTaskFields>
+<GanttColumns>
+<GanttColumn Field="WbsCode" HeaderText="WBS" Width="100"></GanttColumn>
+<GanttColumn Field="TaskId" HeaderText="Task ID" Width="80"></GanttColumn>
+<GanttColumn Field="TaskName" HeaderText="Task Name" Width="250"></GanttColumn>
+<GanttColumn Field="StartDate" HeaderText="Start Date" Width="150"></GanttColumn>
+<GanttColumn Field="Duration" HeaderText="Duration" Width="100"></GanttColumn>
+<GanttColumn Field="Progress" HeaderText="Progress" Width="100"></GanttColumn>
+<GanttColumn Field="WbsPredecessor" HeaderText="WBS Predecessor" Width="150"></GanttColumn>
+</GanttColumns>
+<GanttEvents DataBound="DataBoundHandler" RowDragStarting="RowDragStartHandler"
                  TValue="TaskData">
-    </GanttEvents>
+</GanttEvents>
 </SfGantt>
 
 @code {
@@ -191,6 +192,7 @@ The example below demonstrates how WBS auto-update is conditionally triggered du
         public string? WbsCode { get; set; }
         public string? WbsPredecessor { get; set; }
     }
+
 }
 
 {% endhighlight %}
@@ -202,14 +204,15 @@ The example below demonstrates how WBS auto-update is conditionally triggered du
 
 The WBS feature has a few limitations in the Gantt component:
 
-* Editing of the WBS code and WBS predecessor columns is not supported.
-* Load on demand is not supported with the WBS feature.
-* WBS Code and WBS Predecessor fields cannot be mapped directly from the data source as they are generated dynamically by the component based on task hierarchy.
+- Editing of the WBS code and WBS predecessor columns is not supported.
+- Load on demand is not supported with the WBS feature.
+- WBS Code and WBS Predecessor fields cannot be mapped directly from the data source as they are generated dynamically by the component based on task hierarchy.
 
 ## See Also
-- [How to define columns manually in Blazor Gantt Chart?](https://blazor.syncfusion.com/documentation/gantt-chart/columns)
-- [How to customize column headers in Blazor Gantt Chart?](https://blazor.syncfusion.com/documentation/gantt-chart/column-template)
-- [How to use the column menu in Blazor Gantt Chart?](https://blazor.syncfusion.com/documentation/gantt-chart/column-menu)
-- [How to reorder columns in Blazor Gantt Chart?](https://blazor.syncfusion.com/documentation/gantt-chart/column-reordering)
-- [How to resize columns in Blazor Gantt Chart?](https://blazor.syncfusion.com/documentation/gantt-chart/column-resizing)
-- [How to use column templates in Blazor Gantt Chart?](https://blazor.syncfusion.com/documentation/gantt-chart/column-template)
+
+- [How to define columns manually in Blazor Gantt Chart?](https://blazor.syncfusion.com/documentation/gantt/columns)
+- [How to customize column headers in Blazor Gantt Chart?](https://blazor.syncfusion.com/documentation/gantt/column-template)
+- [How to use the column menu in Blazor Gantt Chart?](https://blazor.syncfusion.com/documentation/gantt/column-menu)
+- [How to reorder columns in Blazor Gantt Chart?](https://blazor.syncfusion.com/documentation/gantt/column-reordering)
+- [How to resize columns in Blazor Gantt Chart?](https://blazor.syncfusion.com/documentation/gantt/column-resizing)
+- [How to use column templates in Blazor Gantt Chart?](https://blazor.syncfusion.com/documentation/gantt/column-template)

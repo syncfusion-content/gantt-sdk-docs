@@ -3,7 +3,7 @@ layout: post
 title: Sorting in React Gantt Chart Component | Syncfusion
 description: Learn here all about Sorting in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Sorting 
+control: Sorting
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -20,20 +20,20 @@ To enable sorting functionality, add the [Sort](https://ej2.syncfusion.com/react
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/sorting-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/sorting-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/sorting-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/sorting-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/sorting-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/sorting-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/sorting-cs2" %}
 
-> * The Gantt columns are sorted in the ascending order. If you click the already sorted column, the sort direction toggles.
-> * To disable sorting for a particular column, set the [columns.allowSorting](https://ej2.syncfusion.com/react/documentation/api/gantt/column#allowsorting) property to **false**.
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/sorting-cs2" %}
+
+> - The Gantt columns are sorted in the ascending order. If you click the already sorted column, the sort direction toggles.
+> - To disable sorting for a particular column, set the [columns.allowSorting](https://ej2.syncfusion.com/react/documentation/api/gantt/column#allowsorting) property to **false**.
 
 ## Initial sorting
 
@@ -43,17 +43,17 @@ The following code example shows how to add sorted columns during Gantt initiali
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/sorting-cs3/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/sorting-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/sorting-cs3/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/sorting-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/sorting-cs3/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/sorting-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/sorting-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/sorting-cs3" %}
 
 ## Sort columns externally
 
@@ -65,17 +65,17 @@ You can externally sort a column in the Syncfusion<sup style="font-size:70%">&re
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/sortingColumns-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/sortingColumns-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/sortingColumns-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/sortingColumns-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/sortingColumns-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/sortingColumns-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/sortingColumns-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/sortingColumns-cs1" %}
 
 ### Remove sort columns
 
@@ -83,17 +83,17 @@ You can externally remove sorting from a specific column in the Syncfusion<sup s
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/sorting-cs5/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/sorting-cs5/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/sorting-cs5/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/sorting-cs5/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/sorting-cs5/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/sorting-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/sorting-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/sorting-cs5" %}
 
 ### Clear sorting
 
@@ -101,17 +101,17 @@ You can clear all sorted columns in the Syncfusion<sup style="font-size:70%">&re
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/clearSorting-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/clearSorting-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/clearSorting-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/clearSorting-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/clearSorting-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/clearSorting-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/clearSorting-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/clearSorting-cs1" %}
 
 ## Customize sort icon
 
@@ -119,27 +119,27 @@ You can customize the sort icons in the React Gantt Chart component by overridin
 
 ```css
 .e-gantt .e-icon-ascending::before {
-    content: '\e7aa';
+  content: "\e7aa";
 }
 
 .e-gantt .e-icon-descending::before {
-    content: '\e71f';
+  content: "\e71f";
 }
 ```
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/sorting-cs6/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/sorting-cs6/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/sorting-cs6/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/sorting-cs6/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/sorting-cs6/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/sorting-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/sorting-cs6" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/sorting-cs6" %}
 
 ## Custom sorting
 
@@ -153,57 +153,57 @@ The sorting process includes the following steps:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/sorting-cs7/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/sorting-cs7/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/sorting-cs7/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/sorting-cs7/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/sorting-cs7/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/sorting-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/sorting-cs7" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/sorting-cs7" %}
 
 ### Display null values always at bottom
 
 You can customize the sorting behavior in the React Gantt Chart component to make `null` values consistently appear at the bottom, regardless of sort direction, by defining a column-level [column.sortComparer](https://ej2.syncfusion.com/react/documentation/api/gantt/column#sortcomparer) function. By default, `null` values are placed at the bottom when sorting in ascending order and at the top when sorting in descending order. Applying a custom `sortComparer` helps override this default logic and is particularly useful when working with datasets where `null` entries should be visually separated from valid data.
- 
+
 The example below demonstrates how to display `null` values at the bottom of the Gantt Chart while sorting the `TaskName` column in both ascending and descending order.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/sorting-cs8/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/sorting-cs8/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/sorting-cs8/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/sorting-cs8/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/sorting-cs8/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/sorting-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/sorting-cs8" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/sorting-cs8" %}
 
 ## Sorting custom columns
 
-You can sort custom columns of various types such as string or numeric in the React Gantt Chart component by adding them to the column collection. Initial sorting can be configured using the [sortSettings](https://ej2.syncfusion.com/react/documentation/api/gantt/sortSettings) property, or sorting can be triggered dynamically through external actions such as a button click. 
+You can sort custom columns of various types such as string or numeric in the React Gantt Chart component by adding them to the column collection. Initial sorting can be configured using the [sortSettings](https://ej2.syncfusion.com/react/documentation/api/gantt/sortSettings) property, or sorting can be triggered dynamically through external actions such as a button click.
 
 The following code snippet demonstrates how to sort the `CustomColumn` using an external button.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/sortingCustomColumns-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/sortingCustomColumns-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/sortingCustomColumns-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/sortingCustomColumns-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/sortingCustomColumns-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/sortingCustomColumns-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/sortingCustomColumns-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/sortingCustomColumns-cs1" %}
 
 ## Prevent sorting on specific columns
 
@@ -213,17 +213,17 @@ The following sample demonstrates how to prevent sorting for the **TaskID** and 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/sorting-cs4/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/sorting-cs4/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/sorting-cs4/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/sorting-cs4/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/sorting-cs4/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/sorting-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/sorting-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/sorting-cs4" %}
 
 ## Disable clear sort
 
@@ -231,17 +231,17 @@ By default, clicking a column header switches the sort order between ascending, 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/sorting-cs9/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/sorting-cs9/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/sorting-cs9/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/sorting-cs9/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/sorting-cs9/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/sorting-cs9/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/sorting-cs9" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/sorting-cs9" %}
 
 ## Touch interaction
 

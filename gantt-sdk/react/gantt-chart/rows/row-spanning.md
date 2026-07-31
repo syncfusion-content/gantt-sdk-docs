@@ -3,7 +3,7 @@ layout: post
 title: Row spanning in React Gantt Chart Component | Syncfusion
 description: Learn here all about Row spanning in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Row spanning 
+control: Row spanning
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -18,16 +18,16 @@ In the example below, the **Soil test approval** cell spans across two rows in t
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/row-span-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/row-span-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/row-span-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/row-span-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/row-span-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/row-span-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/row-span-cs1" %}
 
-> * You can use both [rowSpan](https://ej2.syncfusion.com/react/documentation/api/gantt/queryCellInfoEventArgs#rowspan) and [colSpan](https://ej2.syncfusion.com/react/documentation/api/gantt/queryCellInfoEventArgs#colspan) together to merge grid cells vertically and horizontally.
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/row-span-cs1" %}
+
+> - You can use both [rowSpan](https://ej2.syncfusion.com/react/documentation/api/gantt/queryCellInfoEventArgs#rowspan) and [colSpan](https://ej2.syncfusion.com/react/documentation/api/gantt/queryCellInfoEventArgs#colspan) together to merge grid cells vertically and horizontally.

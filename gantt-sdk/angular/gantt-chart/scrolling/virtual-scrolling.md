@@ -20,15 +20,15 @@ The following example enables row virtualization for a large dataset:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/virtual-scroll-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/virtual-scroll-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/virtual-scroll-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/virtual-scroll-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/virtual-scroll-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/virtual-scroll-cs1" %}
 
 ## Configure timeline virtualization
 
@@ -38,19 +38,20 @@ The following example enables timeline virtualization for a wide timeline:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/virtual-scroll-cs3/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/virtual-scroll-cs3/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/virtual-scroll-cs3/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/virtual-scroll-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/virtual-scroll-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/virtual-scroll-cs3" %}
 
 ## Virtual scroll limitations
 
 Virtual scrolling has the following constraints:
+
 - Incompatible with [enableImmutableMode](https://ej2.syncfusion.com/angular/documentation/api/gantt#enableimmutablemode), as both use different rendering optimizations.
 - Cell selection is not persisted due to on-demand rendering.
 - Browser height limits restrict the maximum number of records in row virtualization.
@@ -59,6 +60,7 @@ Virtual scrolling has the following constraints:
 - With virtualization enabled, data is rendered in pages. When scrolling to load the next set of records, only the current page's data is available to Gantt's public methods. If a record is selected during this process, only the visible page records are returned. This behavior occurs because the Gantt chart does not retain data from all pages in memory, optimizing performance by loading only the required set.
 
 ## See also
+
 - [How to configure timeline settings?](https://ej2.syncfusion.com/angular/documentation/gantt/timeline)
 - [How to manage large datasets?](https://ej2.syncfusion.com/angular/documentation/gantt/data-binding)
 - [How to configure critical path?](https://ej2.syncfusion.com/angular/documentation/gantt/critical-path)

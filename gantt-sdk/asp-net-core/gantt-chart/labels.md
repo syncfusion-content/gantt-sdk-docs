@@ -16,10 +16,10 @@ The Gantt control maps any data source fields to task labels using the [`LabelSe
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/customizations/tasklabelTemplate/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/customizations/tasklabelTemplate/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="TasklabelTemplate.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/customizations/tasklabelTemplate/tasklabelTemplate.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/customizations/tasklabelTemplate/tasklabelTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -27,14 +27,12 @@ The Gantt control maps any data source fields to task labels using the [`LabelSe
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/customizations/tasklabelTemplate/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/customizations/tasklabelTemplate/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="TasklabelTemplate.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/customizations/tasklabelTemplate/tasklabelTemplate.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/customizations/tasklabelTemplate/tasklabelTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/tasklabelTemplate.png)

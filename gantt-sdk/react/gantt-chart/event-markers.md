@@ -3,7 +3,7 @@ layout: post
 title: Eventmarkers in React Gantt Chart Component | Syncfusion
 description: Learn here all about Eventmarkers in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Eventmarkers 
+control: Eventmarkers
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -40,17 +40,17 @@ The following implementation demonstrates event marker integration within a Gant
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/event-markers-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/event-markers-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/event-markers-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/event-markers-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/event-markers-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/event-markers-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/event-markers-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/event-markers-cs1" %}
 
 ## Programmatically show and hide event markers
 
@@ -58,17 +58,17 @@ You can programmatically show or hide event markers in the Gantt chart by updati
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/event-markers-cs3/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/event-markers-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/event-markers-cs3/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/event-markers-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/event-markers-cs3/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/event-markers-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/event-markers-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/event-markers-cs3" %}
 
 ## See Also
 

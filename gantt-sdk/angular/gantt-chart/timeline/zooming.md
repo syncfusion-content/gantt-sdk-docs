@@ -28,19 +28,19 @@ This support is used to view all the tasks available in a project within availab
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/zooming/default-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/zooming/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/zooming/default-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/zooming/default-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/zooming/default-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/zooming/default-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/zooming/default-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/zooming/default-cs1" %}
 
 ## Customizing zooming levels
 
@@ -48,40 +48,40 @@ Zoom actions are governed by predefined zooming levels specified in the [zooming
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/zooming/custom-zooming-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/zooming/custom-zooming-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/zooming/custom-zooming-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/zooming/custom-zooming-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/zooming/custom-zooming-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/zooming/custom-zooming-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/zooming/custom-zooming-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/zooming/custom-zooming-cs1" %}
 
 ## Zoom actions via methods
 
 Zooming actions can be triggered dynamically or through external controls using the following methods:
 
-* **Zoom In** - Use [zoomIn](https://ej2.syncfusion.com/angular/documentation/api/gantt#zoomin) when `ZoomIn` external button was clicked, the timeline cell width is increased when the cell size exceeds the specified range and the timeline unit is changed based on the current zoom levels.
-* **Zoom Out** - Use [zoomOut](https://ej2.syncfusion.com/angular/documentation/api/gantt#zoomout) when the `ZoomOut` external button was clicked, the timeline cell width is decreased when the cell size falls behind the specified range and the timeline view mode is changed based on the current zooming levels.
-* **Zoom To Fit** - Use [fitToProject](https://ej2.syncfusion.com/angular/documentation/api/gantt#fittoproject) When `ZoomToFit` external button was clicked then all the tasks are rendered within the available chart container width.
+- **Zoom In** - Use [zoomIn](https://ej2.syncfusion.com/angular/documentation/api/gantt#zoomin) when `ZoomIn` external button was clicked, the timeline cell width is increased when the cell size exceeds the specified range and the timeline unit is changed based on the current zoom levels.
+- **Zoom Out** - Use [zoomOut](https://ej2.syncfusion.com/angular/documentation/api/gantt#zoomout) when the `ZoomOut` external button was clicked, the timeline cell width is decreased when the cell size falls behind the specified range and the timeline view mode is changed based on the current zooming levels.
+- **Zoom To Fit** - Use [fitToProject](https://ej2.syncfusion.com/angular/documentation/api/gantt#fittoproject) When `ZoomToFit` external button was clicked then all the tasks are rendered within the available chart container width.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/zooming/method-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/zooming/method-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/zooming/method-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/zooming/method-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/zooming/method-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/zooming/method-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/zooming/method-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/zooming/method-cs1" %}

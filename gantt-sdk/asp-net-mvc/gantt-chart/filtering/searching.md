@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Search in gantt control
 
 You can search records in the Gantt control by using the `search` method with search key as a parameter. The Gantt control provides an option to integrate the search text box in the toolbar by adding the search item to the [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Toolbar) property.
@@ -17,10 +16,10 @@ You can search records in the Gantt control by using the `search` method with se
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/searching/Searching/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/searching/Searching/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Searching.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/searching/Searching/Searching.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/searching/Searching/Searching.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -28,15 +27,13 @@ You can search records in the Gantt control by using the `search` method with se
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/searching/Searching/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/searching/Searching/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Searching.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/searching/Searching/Searching.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/searching/Searching/Searching.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 The following screenshot shows the output of searching for string in Gantt control.
 
@@ -50,10 +47,10 @@ In the Gantt control, you can load a task with some search criteria and this can
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/searching/initialLoadSearch/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/searching/initialLoadSearch/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="InitialLoadSearch.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/searching/initialLoadSearch/initialLoadSearch.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/searching/initialLoadSearch/initialLoadSearch.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -61,15 +58,13 @@ In the Gantt control, you can load a task with some search criteria and this can
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/searching/initialLoadSearch/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/searching/initialLoadSearch/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="InitialLoadSearch.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/searching/initialLoadSearch/initialLoadSearch.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/searching/initialLoadSearch/initialLoadSearch.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/initialLoadSearch.png)
 
@@ -81,13 +76,13 @@ The search operator can be defined in the [`SearchSettings.Operator`](https://he
 
 The following operators are supported in searching:
 
-|Operator |Description|
-|-----|-----|
-|startsWith |Checks whether a value begins with the specified value.|
-|endsWith |Checks whether a value ends with the specified value.|
-|contains |Checks whether a value contains the specified value.|
-|equal |Checks whether a value is equal to the specified value.|
-|notEqual |Checks for the values that are not equal to the specified value.|
+| Operator   | Description                                                      |
+| ---------- | ---------------------------------------------------------------- |
+| startsWith | Checks whether a value begins with the specified value.          |
+| endsWith   | Checks whether a value ends with the specified value.            |
+| contains   | Checks whether a value contains the specified value.             |
+| equal      | Checks whether a value is equal to the specified value.          |
+| notEqual   | Checks for the values that are not equal to the specified value. |
 
 N> By default, the [`SearchSettings.Operator`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttSearchSettings~Operator.html) value is `contains`.
 
@@ -99,10 +94,10 @@ To search the Gantt records from an external button, invoke the `search` method.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/searching/externalSearch/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/searching/externalSearch/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ExternalSearch.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/searching/externalSearch/externalSearch.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/searching/externalSearch/externalSearch.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -110,15 +105,13 @@ To search the Gantt records from an external button, invoke the `search` method.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/searching/externalSearch/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/searching/externalSearch/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ExternalSearch.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/searching/externalSearch/externalSearch.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/searching/externalSearch/externalSearch.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Search specific columns
 
@@ -128,10 +121,10 @@ By default, the Gantt control searches all the columns. You can search specific 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/searching/specificColumnSearch/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/searching/specificColumnSearch/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="SpecificColumnSearch.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/searching/specificColumnSearch/specificColumnSearch.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/searching/specificColumnSearch/specificColumnSearch.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -139,15 +132,13 @@ By default, the Gantt control searches all the columns. You can search specific 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/searching/specificColumnSearch/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/searching/specificColumnSearch/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="SpecificColumnSearch.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/searching/specificColumnSearch/specificColumnSearch.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/searching/specificColumnSearch/specificColumnSearch.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 N> In above sample, you can search only `TaskName` and `Duration` column values.
 
@@ -159,10 +150,10 @@ You can set [`searchSettings.key`](../api/gantt/searchSettings/#key) property as
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/searching/clearSearch/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/searching/clearSearch/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ClearSearch.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/searching/clearSearch/clearSearch.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/searching/clearSearch/clearSearch.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -170,10 +161,10 @@ You can set [`searchSettings.key`](../api/gantt/searchSettings/#key) property as
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/searching/clearSearch/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/searching/clearSearch/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ClearSearch.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/searching/clearSearch/clearSearch.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/searching/clearSearch/clearSearch.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

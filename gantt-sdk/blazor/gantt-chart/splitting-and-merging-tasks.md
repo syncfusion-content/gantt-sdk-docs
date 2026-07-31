@@ -28,91 +28,91 @@ The following code snippet demonstrates how to visualize task segments in the Ga
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt TValue="TaskData" DataSource="@TaskCollection" Height="450px" Width="100%" TreeColumnIndex="1" RowHeight="37" ProjectStartDate="projectStart" ProjectEndDate="projectEnd">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId" Dependency="Predecessor">
-    </GanttTaskFields>
-    <GanttSegmentFields PrimaryKey="Id" ForeignKey="TaskId" StartDate="SegmentStartDate" EndDate="SegmentEndDate" Duration="SegmentDuration" TValue="TaskData" TSegments="SegmentModel" DataSource="SegmentCollection"></GanttSegmentFields>
-    <GanttLabelSettings LeftLabel="TaskName" TValue="TaskData"></GanttLabelSettings>
-    <GanttColumns>
-        <GanttColumn Field="TaskId" Width="100" Visible="false"></GanttColumn>
-        <GanttColumn Field="TaskName" Width="250" ClipMode="Syncfusion.Blazor.Grids.ClipMode.EllipsisWithTooltip"></GanttColumn>
-        <GanttColumn Field="StartDate" HeaderText="Start Date"></GanttColumn>
-        <GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
-        <GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
-        <GanttColumn Field="Progress" HeaderText="Progress"></GanttColumn>
-        <GanttColumn Field="Predecessor" HeaderText="Dependency"></GanttColumn>
-    </GanttColumns>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId" Dependency="Predecessor">
+</GanttTaskFields>
+<GanttSegmentFields PrimaryKey="Id" ForeignKey="TaskId" StartDate="SegmentStartDate" EndDate="SegmentEndDate" Duration="SegmentDuration" TValue="TaskData" TSegments="SegmentModel" DataSource="SegmentCollection"></GanttSegmentFields>
+<GanttLabelSettings LeftLabel="TaskName" TValue="TaskData"></GanttLabelSettings>
+<GanttColumns>
+<GanttColumn Field="TaskId" Width="100" Visible="false"></GanttColumn>
+<GanttColumn Field="TaskName" Width="250" ClipMode="Syncfusion.Blazor.Grids.ClipMode.EllipsisWithTooltip"></GanttColumn>
+<GanttColumn Field="StartDate" HeaderText="Start Date"></GanttColumn>
+<GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
+<GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
+<GanttColumn Field="Progress" HeaderText="Progress"></GanttColumn>
+<GanttColumn Field="Predecessor" HeaderText="Dependency"></GanttColumn>
+</GanttColumns>
 </SfGantt>
 
 @code {
-    private DateTime projectStart = new DateTime(2026, 03, 23);
-    private DateTime projectEnd = new DateTime(2026, 05, 10);
-    public List<TaskData>? TaskCollection { get; set; }
-    public List<SegmentModel>? SegmentCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-        this.SegmentCollection = GetSegmentCollection();
-    }
-    public class SegmentModel
-    {
-        public int Id { get; set; }
-        public int TaskId { get; set; }
-        public DateTime SegmentStartDate { get; set; }
-        public DateTime SegmentEndDate { get; set; }
-        public string? SegmentDuration { get; set; }
-    }
-    public class TaskData
-    {
-        public int TaskId { get; set; }
-        public string? TaskName { get; set; }
-        public DateTime? StartDate { get; set; }
-        public DateTime? EndDate { get; set; }
-        public string? Duration { get; set; }
-        public int Progress { get; set; }
-        public int? ParentId { get; set; }
-        public string? Predecessor { get; set; }
-    }
-    public static List<TaskData> GetTaskCollection()
-    {
-        List<TaskData> Tasks = new List<TaskData>() {
-            new TaskData() { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2026, 03, 25), EndDate = new DateTime(2026, 04, 19), Duration="4" },
-            new TaskData() { TaskId = 2, TaskName = "Identify site location", StartDate = new DateTime(2026, 03, 25), Progress = 30, ParentId = 1, Duration="8", },
-            new TaskData() { TaskId = 3, TaskName = "Site analyze", StartDate = new DateTime(2026, 03, 25),  Progress = 50, ParentId = 1, Duration="8"},
-            new TaskData() { TaskId = 4, TaskName = "Perform soil test", StartDate = new DateTime(2026, 03, 25), ParentId = 1, Duration="5", Predecessor="2FS", Progress=40, },
-            new TaskData() { TaskId = 5, TaskName = "Soil test approval", StartDate = new DateTime(2026, 03, 25), Duration="4", Progress = 30 },
-            new TaskData() { TaskId = 6, TaskName = "Project estimation", StartDate = new DateTime(2026, 04, 08), Duration="8", Progress=40, ParentId=1 },
-            new TaskData() { TaskId = 7, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2026, 03, 29), Duration = "0", Progress = 30, ParentId = 5, Predecessor= "4FS" },
-            new TaskData() { TaskId = 8, TaskName = "List materials", StartDate = new DateTime(2026, 04, 01), Duration = "6", Progress = 30, ParentId = 5 },
-            new TaskData() { TaskId = 9, TaskName = "Estimation approval",Progress=30, StartDate = new DateTime(2026, 04, 01), Duration = "4", ParentId = 5, Predecessor="8FS" },
-            new TaskData() { TaskId = 10, TaskName = "Building approval", StartDate = new DateTime(2026, 04, 12), Duration = "5", ParentId = 5 },
-            new TaskData() { TaskId = 11, TaskName = "Construction initiation", StartDate = new DateTime(2026, 04, 01), Duration = "5", Progress=40 },
-            new TaskData() { TaskId = 12, TaskName = "Ground floor initiation", StartDate = new DateTime(2026, 04, 05), Duration = "5", ParentId = 11, Progress=40},
-            new TaskData() { TaskId = 13, TaskName = "First floor initiation", StartDate = new DateTime(2026, 04, 05), Duration = "7",ParentId = 11, Progress=40},
-            new TaskData() { TaskId = 14, TaskName = "Electric work initiation", StartDate = new DateTime(2026, 04, 01), Duration = "5", ParentId = 11, Progress=40, },
-            new TaskData() { TaskId = 15, TaskName = "Plumbing work", StartDate = new DateTime(2026, 04, 02), Duration = "5", ParentId = 11, Progress=40 },
-       };
-        return Tasks;
-    }
-    private List<SegmentModel> GetSegmentCollection()
-    {
-        List<SegmentModel> segments = new List<SegmentModel>();
-        segments.Add(new SegmentModel() { Id = 1, TaskId = 2, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "1" });
-        segments.Add(new SegmentModel() { Id = 2, TaskId = 2, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
-        segments.Add(new SegmentModel() { Id = 3, TaskId = 3, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "2" });
-        segments.Add(new SegmentModel() { Id = 4, TaskId = 3, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
-        segments.Add(new SegmentModel() { Id = 5, TaskId = 3, SegmentStartDate = new DateTime(2026, 04, 04), SegmentDuration = "3" });
-        segments.Add(new SegmentModel() { Id = 6, TaskId = 4, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "1" });
-        segments.Add(new SegmentModel() { Id = 7, TaskId = 4, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
-        segments.Add(new SegmentModel() { Id = 8, TaskId = 8, SegmentStartDate = new DateTime(2026, 04, 01), SegmentEndDate = new DateTime(2026, 04, 03) });
-        segments.Add(new SegmentModel() { Id = 9, TaskId = 8, SegmentStartDate = new DateTime(2026, 04, 05), SegmentDuration = "1" });
-        segments.Add(new SegmentModel() { Id = 10, TaskId = 9, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
-        segments.Add(new SegmentModel() { Id = 11, TaskId = 9, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "1" });
-        segments.Add(new SegmentModel() { Id = 12, TaskId = 12, SegmentStartDate = new DateTime(2026, 04, 05), SegmentDuration = "1" });
-        segments.Add(new SegmentModel() { Id = 13, TaskId = 12, SegmentStartDate = new DateTime(2026, 04, 07), SegmentDuration = "1" });
-        segments.Add(new SegmentModel() { Id = 14, TaskId = 14, SegmentStartDate = new DateTime(2026, 04, 01), SegmentEndDate = new DateTime(2026, 04, 02) });
-        segments.Add(new SegmentModel() { Id = 15, TaskId = 14, SegmentStartDate = new DateTime(2026, 04, 04), SegmentDuration = "2" });
-        return segments;
-    }
+private DateTime projectStart = new DateTime(2026, 03, 23);
+private DateTime projectEnd = new DateTime(2026, 05, 10);
+public List<TaskData>? TaskCollection { get; set; }
+public List<SegmentModel>? SegmentCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+this.SegmentCollection = GetSegmentCollection();
+}
+public class SegmentModel
+{
+public int Id { get; set; }
+public int TaskId { get; set; }
+public DateTime SegmentStartDate { get; set; }
+public DateTime SegmentEndDate { get; set; }
+public string? SegmentDuration { get; set; }
+}
+public class TaskData
+{
+public int TaskId { get; set; }
+public string? TaskName { get; set; }
+public DateTime? StartDate { get; set; }
+public DateTime? EndDate { get; set; }
+public string? Duration { get; set; }
+public int Progress { get; set; }
+public int? ParentId { get; set; }
+public string? Predecessor { get; set; }
+}
+public static List<TaskData> GetTaskCollection()
+{
+List<TaskData> Tasks = new List<TaskData>() {
+new TaskData() { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2026, 03, 25), EndDate = new DateTime(2026, 04, 19), Duration="4" },
+new TaskData() { TaskId = 2, TaskName = "Identify site location", StartDate = new DateTime(2026, 03, 25), Progress = 30, ParentId = 1, Duration="8", },
+new TaskData() { TaskId = 3, TaskName = "Site analyze", StartDate = new DateTime(2026, 03, 25), Progress = 50, ParentId = 1, Duration="8"},
+new TaskData() { TaskId = 4, TaskName = "Perform soil test", StartDate = new DateTime(2026, 03, 25), ParentId = 1, Duration="5", Predecessor="2FS", Progress=40, },
+new TaskData() { TaskId = 5, TaskName = "Soil test approval", StartDate = new DateTime(2026, 03, 25), Duration="4", Progress = 30 },
+new TaskData() { TaskId = 6, TaskName = "Project estimation", StartDate = new DateTime(2026, 04, 08), Duration="8", Progress=40, ParentId=1 },
+new TaskData() { TaskId = 7, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2026, 03, 29), Duration = "0", Progress = 30, ParentId = 5, Predecessor= "4FS" },
+new TaskData() { TaskId = 8, TaskName = "List materials", StartDate = new DateTime(2026, 04, 01), Duration = "6", Progress = 30, ParentId = 5 },
+new TaskData() { TaskId = 9, TaskName = "Estimation approval",Progress=30, StartDate = new DateTime(2026, 04, 01), Duration = "4", ParentId = 5, Predecessor="8FS" },
+new TaskData() { TaskId = 10, TaskName = "Building approval", StartDate = new DateTime(2026, 04, 12), Duration = "5", ParentId = 5 },
+new TaskData() { TaskId = 11, TaskName = "Construction initiation", StartDate = new DateTime(2026, 04, 01), Duration = "5", Progress=40 },
+new TaskData() { TaskId = 12, TaskName = "Ground floor initiation", StartDate = new DateTime(2026, 04, 05), Duration = "5", ParentId = 11, Progress=40},
+new TaskData() { TaskId = 13, TaskName = "First floor initiation", StartDate = new DateTime(2026, 04, 05), Duration = "7",ParentId = 11, Progress=40},
+new TaskData() { TaskId = 14, TaskName = "Electric work initiation", StartDate = new DateTime(2026, 04, 01), Duration = "5", ParentId = 11, Progress=40, },
+new TaskData() { TaskId = 15, TaskName = "Plumbing work", StartDate = new DateTime(2026, 04, 02), Duration = "5", ParentId = 11, Progress=40 },
+};
+return Tasks;
+}
+private List<SegmentModel> GetSegmentCollection()
+{
+List<SegmentModel> segments = new List<SegmentModel>();
+segments.Add(new SegmentModel() { Id = 1, TaskId = 2, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "1" });
+segments.Add(new SegmentModel() { Id = 2, TaskId = 2, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
+segments.Add(new SegmentModel() { Id = 3, TaskId = 3, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "2" });
+segments.Add(new SegmentModel() { Id = 4, TaskId = 3, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
+segments.Add(new SegmentModel() { Id = 5, TaskId = 3, SegmentStartDate = new DateTime(2026, 04, 04), SegmentDuration = "3" });
+segments.Add(new SegmentModel() { Id = 6, TaskId = 4, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "1" });
+segments.Add(new SegmentModel() { Id = 7, TaskId = 4, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
+segments.Add(new SegmentModel() { Id = 8, TaskId = 8, SegmentStartDate = new DateTime(2026, 04, 01), SegmentEndDate = new DateTime(2026, 04, 03) });
+segments.Add(new SegmentModel() { Id = 9, TaskId = 8, SegmentStartDate = new DateTime(2026, 04, 05), SegmentDuration = "1" });
+segments.Add(new SegmentModel() { Id = 10, TaskId = 9, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
+segments.Add(new SegmentModel() { Id = 11, TaskId = 9, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "1" });
+segments.Add(new SegmentModel() { Id = 12, TaskId = 12, SegmentStartDate = new DateTime(2026, 04, 05), SegmentDuration = "1" });
+segments.Add(new SegmentModel() { Id = 13, TaskId = 12, SegmentStartDate = new DateTime(2026, 04, 07), SegmentDuration = "1" });
+segments.Add(new SegmentModel() { Id = 14, TaskId = 14, SegmentStartDate = new DateTime(2026, 04, 01), SegmentEndDate = new DateTime(2026, 04, 02) });
+segments.Add(new SegmentModel() { Id = 15, TaskId = 14, SegmentStartDate = new DateTime(2026, 04, 04), SegmentDuration = "2" });
+return segments;
+}
 }
 
 {% endhighlight %}
@@ -137,92 +137,92 @@ Segmented taskbars can be merged using the **Merge Task** context menu item. Its
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt TValue="TaskData" EnableContextMenu="true" DataSource="@TaskCollection" Height="450px" Width="100%" TreeColumnIndex="1" Toolbar="@(new List<Object>() { "Add", "Cancel", "Update", "Delete", "Edit", "CollapseAll", "ExpandAll", "ZoomIn", "ZoomOut", "ZoomToFit" })" RowHeight="37" ProjectStartDate="projectStart" ProjectEndDate="projectEnd">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId" Dependency="Predecessor">
-    </GanttTaskFields>
-    <GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true"></GanttEditSettings>
-    <GanttSegmentFields PrimaryKey="Id" ForeignKey="TaskId" StartDate="SegmentStartDate" EndDate="SegmentEndDate" Duration="SegmentDuration" TValue="TaskData" TSegments="SegmentModel" DataSource="SegmentCollection"></GanttSegmentFields>
-    <GanttLabelSettings LeftLabel="TaskName" TValue="TaskData"></GanttLabelSettings>
-    <GanttColumns>
-        <GanttColumn Field="TaskId" Width="100" Visible="false"></GanttColumn>
-        <GanttColumn Field="TaskName" Width="250" ClipMode="Syncfusion.Blazor.Grids.ClipMode.EllipsisWithTooltip"></GanttColumn>
-        <GanttColumn Field="StartDate" HeaderText="Start Date"></GanttColumn>
-        <GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
-        <GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
-        <GanttColumn Field="Progress" HeaderText="Progress"></GanttColumn>
-        <GanttColumn Field="Predecessor" HeaderText="Dependency"></GanttColumn>
-    </GanttColumns>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId" Dependency="Predecessor">
+</GanttTaskFields>
+<GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true"></GanttEditSettings>
+<GanttSegmentFields PrimaryKey="Id" ForeignKey="TaskId" StartDate="SegmentStartDate" EndDate="SegmentEndDate" Duration="SegmentDuration" TValue="TaskData" TSegments="SegmentModel" DataSource="SegmentCollection"></GanttSegmentFields>
+<GanttLabelSettings LeftLabel="TaskName" TValue="TaskData"></GanttLabelSettings>
+<GanttColumns>
+<GanttColumn Field="TaskId" Width="100" Visible="false"></GanttColumn>
+<GanttColumn Field="TaskName" Width="250" ClipMode="Syncfusion.Blazor.Grids.ClipMode.EllipsisWithTooltip"></GanttColumn>
+<GanttColumn Field="StartDate" HeaderText="Start Date"></GanttColumn>
+<GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
+<GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
+<GanttColumn Field="Progress" HeaderText="Progress"></GanttColumn>
+<GanttColumn Field="Predecessor" HeaderText="Dependency"></GanttColumn>
+</GanttColumns>
 </SfGantt>
 
 @code {
-    private DateTime projectStart = new DateTime(2026, 03, 23);
-    private DateTime projectEnd = new DateTime(2026, 05, 10);
-    public List<TaskData>? TaskCollection { get; set; }
-    public List<SegmentModel>? SegmentCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-        this.SegmentCollection = GetSegmentCollection();
-    }
-    public class SegmentModel
-    {
-        public int Id { get; set; }
-        public int TaskId { get; set; }
-        public DateTime SegmentStartDate { get; set; }
-        public DateTime SegmentEndDate { get; set; }
-        public string? SegmentDuration { get; set; }
-    }
-    public class TaskData
-    {
-        public int TaskId { get; set; }
-        public string? TaskName { get; set; }
-        public DateTime? StartDate { get; set; }
-        public DateTime? EndDate { get; set; }
-        public string? Duration { get; set; }
-        public int Progress { get; set; }
-        public int? ParentId { get; set; }
-        public string? Predecessor { get; set; }
-    }
-    public static List<TaskData> GetTaskCollection()
-    {
-        List<TaskData> Tasks = new List<TaskData>() {
-            new TaskData() { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2026, 03, 25), EndDate = new DateTime(2026, 04, 19), Duration="4" },
-            new TaskData() { TaskId = 2, TaskName = "Identify site location", StartDate = new DateTime(2026, 03, 25), Progress = 30, ParentId = 1, Duration="8", },
-            new TaskData() { TaskId = 3, TaskName = "Site analyze", StartDate = new DateTime(2026, 03, 25),  Progress = 50, ParentId = 1, Duration="8"},
-            new TaskData() { TaskId = 4, TaskName = "Perform soil test", StartDate = new DateTime(2026, 03, 25), ParentId = 1, Duration="5", Predecessor="2FS", Progress=40, },
-            new TaskData() { TaskId = 5, TaskName = "Soil test approval", StartDate = new DateTime(2026, 03, 25), Duration="4", Progress = 30 },
-            new TaskData() { TaskId = 6, TaskName = "Project estimation", StartDate = new DateTime(2026, 04, 08), Duration="8", Progress=40, ParentId=1 },
-            new TaskData() { TaskId = 7, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2026, 03, 29), Duration = "0", Progress = 30, ParentId = 5, Predecessor= "4FS" },
-            new TaskData() { TaskId = 8, TaskName = "List materials", StartDate = new DateTime(2026, 04, 01), Duration = "6", Progress = 30, ParentId = 5 },
-            new TaskData() { TaskId = 9, TaskName = "Estimation approval",Progress=30, StartDate = new DateTime(2026, 04, 01), Duration = "4", ParentId = 5, Predecessor="8FS" },
-            new TaskData() { TaskId = 10, TaskName = "Building approval", StartDate = new DateTime(2026, 04, 12), Duration = "5", ParentId = 5 },
-            new TaskData() { TaskId = 11, TaskName = "Construction initiation", StartDate = new DateTime(2026, 04, 01), Duration = "5", Progress=40 },
-            new TaskData() { TaskId = 12, TaskName = "Ground floor initiation", StartDate = new DateTime(2026, 04, 05), Duration = "5", ParentId = 11, Progress=40},
-            new TaskData() { TaskId = 13, TaskName = "First floor initiation", StartDate = new DateTime(2026, 04, 05), Duration = "7",ParentId = 11, Progress=40},
-            new TaskData() { TaskId = 14, TaskName = "Electric work initiation", StartDate = new DateTime(2026, 04, 01), Duration = "5", ParentId = 11, Progress=40, },
-            new TaskData() { TaskId = 15, TaskName = "Plumbing work", StartDate = new DateTime(2026, 04, 02), Duration = "5", ParentId = 11, Progress=40 },
-       };
-        return Tasks;
-    }
-    public List<SegmentModel> GetSegmentCollection()
-    {
-        List<SegmentModel> segments = new List<SegmentModel>();
-        segments.Add(new SegmentModel() { Id = 1, TaskId = 2, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "1" });
-        segments.Add(new SegmentModel() { Id = 2, TaskId = 2, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
-        segments.Add(new SegmentModel() { Id = 3, TaskId = 3, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "2" });
-        segments.Add(new SegmentModel() { Id = 4, TaskId = 3, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
-        segments.Add(new SegmentModel() { Id = 5, TaskId = 3, SegmentStartDate = new DateTime(2026, 04, 04), SegmentDuration = "3" });
-        segments.Add(new SegmentModel() { Id = 6, TaskId = 4, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "1" });
-        segments.Add(new SegmentModel() { Id = 7, TaskId = 4, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
-        segments.Add(new SegmentModel() { Id = 8, TaskId = 8, SegmentStartDate = new DateTime(2026, 04, 01), SegmentEndDate = new DateTime(2026, 04, 03) });
-        segments.Add(new SegmentModel() { Id = 9, TaskId = 8, SegmentStartDate = new DateTime(2026, 04, 05), SegmentDuration = "1" });
-        segments.Add(new SegmentModel() { Id = 10, TaskId = 9, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
-        segments.Add(new SegmentModel() { Id = 11, TaskId = 9, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "1" });
-        segments.Add(new SegmentModel() { Id = 12, TaskId = 12, SegmentStartDate = new DateTime(2026, 04, 05), SegmentDuration = "1" });
-        segments.Add(new SegmentModel() { Id = 13, TaskId = 12, SegmentStartDate = new DateTime(2026, 04, 07), SegmentDuration = "1" });
-        segments.Add(new SegmentModel() { Id = 14, TaskId = 14, SegmentStartDate = new DateTime(2026, 04, 01), SegmentEndDate = new DateTime(2026, 04, 02) });
-        segments.Add(new SegmentModel() { Id = 15, TaskId = 14, SegmentStartDate = new DateTime(2026, 04, 04), SegmentDuration = "2" });
-        return segments;
-    }
+private DateTime projectStart = new DateTime(2026, 03, 23);
+private DateTime projectEnd = new DateTime(2026, 05, 10);
+public List<TaskData>? TaskCollection { get; set; }
+public List<SegmentModel>? SegmentCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+this.SegmentCollection = GetSegmentCollection();
+}
+public class SegmentModel
+{
+public int Id { get; set; }
+public int TaskId { get; set; }
+public DateTime SegmentStartDate { get; set; }
+public DateTime SegmentEndDate { get; set; }
+public string? SegmentDuration { get; set; }
+}
+public class TaskData
+{
+public int TaskId { get; set; }
+public string? TaskName { get; set; }
+public DateTime? StartDate { get; set; }
+public DateTime? EndDate { get; set; }
+public string? Duration { get; set; }
+public int Progress { get; set; }
+public int? ParentId { get; set; }
+public string? Predecessor { get; set; }
+}
+public static List<TaskData> GetTaskCollection()
+{
+List<TaskData> Tasks = new List<TaskData>() {
+new TaskData() { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2026, 03, 25), EndDate = new DateTime(2026, 04, 19), Duration="4" },
+new TaskData() { TaskId = 2, TaskName = "Identify site location", StartDate = new DateTime(2026, 03, 25), Progress = 30, ParentId = 1, Duration="8", },
+new TaskData() { TaskId = 3, TaskName = "Site analyze", StartDate = new DateTime(2026, 03, 25), Progress = 50, ParentId = 1, Duration="8"},
+new TaskData() { TaskId = 4, TaskName = "Perform soil test", StartDate = new DateTime(2026, 03, 25), ParentId = 1, Duration="5", Predecessor="2FS", Progress=40, },
+new TaskData() { TaskId = 5, TaskName = "Soil test approval", StartDate = new DateTime(2026, 03, 25), Duration="4", Progress = 30 },
+new TaskData() { TaskId = 6, TaskName = "Project estimation", StartDate = new DateTime(2026, 04, 08), Duration="8", Progress=40, ParentId=1 },
+new TaskData() { TaskId = 7, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2026, 03, 29), Duration = "0", Progress = 30, ParentId = 5, Predecessor= "4FS" },
+new TaskData() { TaskId = 8, TaskName = "List materials", StartDate = new DateTime(2026, 04, 01), Duration = "6", Progress = 30, ParentId = 5 },
+new TaskData() { TaskId = 9, TaskName = "Estimation approval",Progress=30, StartDate = new DateTime(2026, 04, 01), Duration = "4", ParentId = 5, Predecessor="8FS" },
+new TaskData() { TaskId = 10, TaskName = "Building approval", StartDate = new DateTime(2026, 04, 12), Duration = "5", ParentId = 5 },
+new TaskData() { TaskId = 11, TaskName = "Construction initiation", StartDate = new DateTime(2026, 04, 01), Duration = "5", Progress=40 },
+new TaskData() { TaskId = 12, TaskName = "Ground floor initiation", StartDate = new DateTime(2026, 04, 05), Duration = "5", ParentId = 11, Progress=40},
+new TaskData() { TaskId = 13, TaskName = "First floor initiation", StartDate = new DateTime(2026, 04, 05), Duration = "7",ParentId = 11, Progress=40},
+new TaskData() { TaskId = 14, TaskName = "Electric work initiation", StartDate = new DateTime(2026, 04, 01), Duration = "5", ParentId = 11, Progress=40, },
+new TaskData() { TaskId = 15, TaskName = "Plumbing work", StartDate = new DateTime(2026, 04, 02), Duration = "5", ParentId = 11, Progress=40 },
+};
+return Tasks;
+}
+public List<SegmentModel> GetSegmentCollection()
+{
+List<SegmentModel> segments = new List<SegmentModel>();
+segments.Add(new SegmentModel() { Id = 1, TaskId = 2, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "1" });
+segments.Add(new SegmentModel() { Id = 2, TaskId = 2, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
+segments.Add(new SegmentModel() { Id = 3, TaskId = 3, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "2" });
+segments.Add(new SegmentModel() { Id = 4, TaskId = 3, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
+segments.Add(new SegmentModel() { Id = 5, TaskId = 3, SegmentStartDate = new DateTime(2026, 04, 04), SegmentDuration = "3" });
+segments.Add(new SegmentModel() { Id = 6, TaskId = 4, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "1" });
+segments.Add(new SegmentModel() { Id = 7, TaskId = 4, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
+segments.Add(new SegmentModel() { Id = 8, TaskId = 8, SegmentStartDate = new DateTime(2026, 04, 01), SegmentEndDate = new DateTime(2026, 04, 03) });
+segments.Add(new SegmentModel() { Id = 9, TaskId = 8, SegmentStartDate = new DateTime(2026, 04, 05), SegmentDuration = "1" });
+segments.Add(new SegmentModel() { Id = 10, TaskId = 9, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
+segments.Add(new SegmentModel() { Id = 11, TaskId = 9, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "1" });
+segments.Add(new SegmentModel() { Id = 12, TaskId = 12, SegmentStartDate = new DateTime(2026, 04, 05), SegmentDuration = "1" });
+segments.Add(new SegmentModel() { Id = 13, TaskId = 12, SegmentStartDate = new DateTime(2026, 04, 07), SegmentDuration = "1" });
+segments.Add(new SegmentModel() { Id = 14, TaskId = 14, SegmentStartDate = new DateTime(2026, 04, 01), SegmentEndDate = new DateTime(2026, 04, 02) });
+segments.Add(new SegmentModel() { Id = 15, TaskId = 14, SegmentStartDate = new DateTime(2026, 04, 04), SegmentDuration = "2" });
+return segments;
+}
 }
 
 {% endhighlight %}
@@ -232,7 +232,7 @@ Segmented taskbars can be merged using the **Merge Task** context menu item. Its
 
 ### Through dialog box
 
-In the segments tab of the [add/edit dialog](https://blazor.syncfusion.com/documentation/gantt-chart/editing-tasks#dialog-editing), taskbars can be split or merged by providing segments details such as the start date, end date, and duration. However, It is important to note that a segment's start and end dates must fall within the task's overall start and end dates..
+In the segments tab of the [add/edit dialog](https://blazor.syncfusion.com/documentation/gantt/editing-tasks#dialog-editing), taskbars can be split or merged by providing segments details such as the start date, end date, and duration. However, It is important to note that a segment's start and end dates must fall within the task's overall start and end dates..
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -241,95 +241,95 @@ In the segments tab of the [add/edit dialog](https://blazor.syncfusion.com/docum
 @using System.ComponentModel.DataAnnotations
 
 <SfGantt TValue="TaskData" EnableContextMenu="true" DataSource="@TaskCollection" Height="450px" Width="850px" TreeColumnIndex="1" Toolbar="@(new List<Object>() { "Add", "Cancel", "Update", "Delete", "Edit", "CollapseAll", "ExpandAll", "ZoomIn", "ZoomOut", "ZoomToFit" })" RowHeight="37" ProjectStartDate="projectStart" ProjectEndDate="projectEnd">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId" Dependency="Predecessor">
-    </GanttTaskFields>
-    <GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true"></GanttEditSettings>
-    <GanttSegmentFields PrimaryKey="Id" ForeignKey="TaskId" StartDate="SegmentStartDate" EndDate="SegmentEndDate" Duration="SegmentDuration" TValue="TaskData" TSegments="SegmentModel" DataSource="SegmentCollection"></GanttSegmentFields>
-    <GanttLabelSettings LeftLabel="TaskName" TValue="TaskData"></GanttLabelSettings>
-    <GanttColumns>
-        <GanttColumn Field="TaskId" Width="100" Visible="false"></GanttColumn>
-        <GanttColumn Field="TaskName" Width="250" ClipMode="Syncfusion.Blazor.Grids.ClipMode.EllipsisWithTooltip"></GanttColumn>
-        <GanttColumn Field="StartDate" HeaderText="Start Date"></GanttColumn>
-        <GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
-        <GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
-        <GanttColumn Field="Progress" HeaderText="Progress"></GanttColumn>
-        <GanttColumn Field="Predecessor" HeaderText="Dependency"></GanttColumn>
-    </GanttColumns>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId" Dependency="Predecessor">
+</GanttTaskFields>
+<GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true"></GanttEditSettings>
+<GanttSegmentFields PrimaryKey="Id" ForeignKey="TaskId" StartDate="SegmentStartDate" EndDate="SegmentEndDate" Duration="SegmentDuration" TValue="TaskData" TSegments="SegmentModel" DataSource="SegmentCollection"></GanttSegmentFields>
+<GanttLabelSettings LeftLabel="TaskName" TValue="TaskData"></GanttLabelSettings>
+<GanttColumns>
+<GanttColumn Field="TaskId" Width="100" Visible="false"></GanttColumn>
+<GanttColumn Field="TaskName" Width="250" ClipMode="Syncfusion.Blazor.Grids.ClipMode.EllipsisWithTooltip"></GanttColumn>
+<GanttColumn Field="StartDate" HeaderText="Start Date"></GanttColumn>
+<GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
+<GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
+<GanttColumn Field="Progress" HeaderText="Progress"></GanttColumn>
+<GanttColumn Field="Predecessor" HeaderText="Dependency"></GanttColumn>
+</GanttColumns>
 </SfGantt>
 
 @code {
-    private DateTime projectStart = new DateTime(2026, 03, 23);
-    private DateTime projectEnd = new DateTime(2026, 05, 10);
-    public List<TaskData>? TaskCollection { get; set; }
-    public List<SegmentModel>? SegmentCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-        this.SegmentCollection = GetSegmentCollection();
-    }
-    public class SegmentModel
-    {
-        public int Id { get; set; }
-        public int TaskId { get; set; }
-        [Display(Name = "Start Date")]
-        public DateTime SegmentStartDate { get; set; }
-        [Display(Name = "End Date")]
-        public DateTime SegmentEndDate { get; set; }
-        [Display(Name = "Duration")]
-        public string? SegmentDuration { get; set; }
-    }
-    public class TaskData
-    {
-        public int TaskId { get; set; }
-        public string? TaskName { get; set; }
-        public DateTime? StartDate { get; set; }
-        public DateTime? EndDate { get; set; }
-        public string? Duration { get; set; }
-        public int Progress { get; set; }
-        public int? ParentId { get; set; }
-        public string? Predecessor { get; set; }
-    }
-    public static List<TaskData> GetTaskCollection()
-    {
-        List<TaskData> Tasks = new List<TaskData>() {
-            new TaskData() { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2026, 03, 25), EndDate = new DateTime(2026, 04, 19), Duration="4" },
-            new TaskData() { TaskId = 2, TaskName = "Identify site location", StartDate = new DateTime(2026, 03, 25), Progress = 30, ParentId = 1, Duration="8", },
-            new TaskData() { TaskId = 3, TaskName = "Site analyze", StartDate = new DateTime(2026, 03, 25),  Progress = 50, ParentId = 1, Duration="8"},
-            new TaskData() { TaskId = 4, TaskName = "Perform soil test", StartDate = new DateTime(2026, 03, 25), ParentId = 1, Duration="5", Predecessor="2FS", Progress=40, },
-            new TaskData() { TaskId = 5, TaskName = "Soil test approval", StartDate = new DateTime(2026, 03, 25), Duration="4", Progress = 30 },
-            new TaskData() { TaskId = 6, TaskName = "Project estimation", StartDate = new DateTime(2026, 04, 08), Duration="8", Progress=40, ParentId=1 },
-            new TaskData() { TaskId = 7, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2026, 03, 29), Duration = "0", Progress = 30, ParentId = 5, Predecessor= "4FS" },
-            new TaskData() { TaskId = 8, TaskName = "List materials", StartDate = new DateTime(2026, 04, 01), Duration = "6", Progress = 30, ParentId = 5 },
-            new TaskData() { TaskId = 9, TaskName = "Estimation approval",Progress=30, StartDate = new DateTime(2026, 04, 01), Duration = "4", ParentId = 5, Predecessor="8FS" },
-            new TaskData() { TaskId = 10, TaskName = "Building approval", StartDate = new DateTime(2026, 04, 12), Duration = "5", ParentId = 5 },
-            new TaskData() { TaskId = 11, TaskName = "Construction initiation", StartDate = new DateTime(2026, 04, 01), Duration = "5", Progress=40 },
-            new TaskData() { TaskId = 12, TaskName = "Ground floor initiation", StartDate = new DateTime(2026, 04, 05), Duration = "5", ParentId = 11, Progress=40},
-            new TaskData() { TaskId = 13, TaskName = "First floor initiation", StartDate = new DateTime(2026, 04, 05), Duration = "7",ParentId = 11, Progress=40},
-            new TaskData() { TaskId = 14, TaskName = "Electric work initiation", StartDate = new DateTime(2026, 04, 01), Duration = "5", ParentId = 11, Progress=40, },
-            new TaskData() { TaskId = 15, TaskName = "Plumbing work", StartDate = new DateTime(2026, 04, 02), Duration = "5", ParentId = 11, Progress=40 },
-       };
-        return Tasks;
-    }
-    public List<SegmentModel> GetSegmentCollection()
-    {
-        List<SegmentModel> segments = new List<SegmentModel>();
-        segments.Add(new SegmentModel() { Id = 1, TaskId = 2, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "1" });
-        segments.Add(new SegmentModel() { Id = 2, TaskId = 2, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
-        segments.Add(new SegmentModel() { Id = 3, TaskId = 3, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "2" });
-        segments.Add(new SegmentModel() { Id = 4, TaskId = 3, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
-        segments.Add(new SegmentModel() { Id = 5, TaskId = 3, SegmentStartDate = new DateTime(2026, 04, 04), SegmentDuration = "3" });
-        segments.Add(new SegmentModel() { Id = 6, TaskId = 4, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "1" });
-        segments.Add(new SegmentModel() { Id = 7, TaskId = 4, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
-        segments.Add(new SegmentModel() { Id = 8, TaskId = 8, SegmentStartDate = new DateTime(2026, 04, 01), SegmentEndDate = new DateTime(2026, 04, 03) });
-        segments.Add(new SegmentModel() { Id = 9, TaskId = 8, SegmentStartDate = new DateTime(2026, 04, 05), SegmentDuration = "1" });
-        segments.Add(new SegmentModel() { Id = 10, TaskId = 9, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
-        segments.Add(new SegmentModel() { Id = 11, TaskId = 9, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "1" });
-        segments.Add(new SegmentModel() { Id = 12, TaskId = 12, SegmentStartDate = new DateTime(2026, 04, 05), SegmentDuration = "1" });
-        segments.Add(new SegmentModel() { Id = 13, TaskId = 12, SegmentStartDate = new DateTime(2026, 04, 07), SegmentDuration = "1" });
-        segments.Add(new SegmentModel() { Id = 14, TaskId = 14, SegmentStartDate = new DateTime(2026, 04, 01), SegmentEndDate = new DateTime(2026, 04, 02) });
-        segments.Add(new SegmentModel() { Id = 15, TaskId = 14, SegmentStartDate = new DateTime(2026, 04, 04), SegmentDuration = "2" });
-        return segments;
-    }
+private DateTime projectStart = new DateTime(2026, 03, 23);
+private DateTime projectEnd = new DateTime(2026, 05, 10);
+public List<TaskData>? TaskCollection { get; set; }
+public List<SegmentModel>? SegmentCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+this.SegmentCollection = GetSegmentCollection();
+}
+public class SegmentModel
+{
+public int Id { get; set; }
+public int TaskId { get; set; }
+[Display(Name = "Start Date")]
+public DateTime SegmentStartDate { get; set; }
+[Display(Name = "End Date")]
+public DateTime SegmentEndDate { get; set; }
+[Display(Name = "Duration")]
+public string? SegmentDuration { get; set; }
+}
+public class TaskData
+{
+public int TaskId { get; set; }
+public string? TaskName { get; set; }
+public DateTime? StartDate { get; set; }
+public DateTime? EndDate { get; set; }
+public string? Duration { get; set; }
+public int Progress { get; set; }
+public int? ParentId { get; set; }
+public string? Predecessor { get; set; }
+}
+public static List<TaskData> GetTaskCollection()
+{
+List<TaskData> Tasks = new List<TaskData>() {
+new TaskData() { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2026, 03, 25), EndDate = new DateTime(2026, 04, 19), Duration="4" },
+new TaskData() { TaskId = 2, TaskName = "Identify site location", StartDate = new DateTime(2026, 03, 25), Progress = 30, ParentId = 1, Duration="8", },
+new TaskData() { TaskId = 3, TaskName = "Site analyze", StartDate = new DateTime(2026, 03, 25), Progress = 50, ParentId = 1, Duration="8"},
+new TaskData() { TaskId = 4, TaskName = "Perform soil test", StartDate = new DateTime(2026, 03, 25), ParentId = 1, Duration="5", Predecessor="2FS", Progress=40, },
+new TaskData() { TaskId = 5, TaskName = "Soil test approval", StartDate = new DateTime(2026, 03, 25), Duration="4", Progress = 30 },
+new TaskData() { TaskId = 6, TaskName = "Project estimation", StartDate = new DateTime(2026, 04, 08), Duration="8", Progress=40, ParentId=1 },
+new TaskData() { TaskId = 7, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2026, 03, 29), Duration = "0", Progress = 30, ParentId = 5, Predecessor= "4FS" },
+new TaskData() { TaskId = 8, TaskName = "List materials", StartDate = new DateTime(2026, 04, 01), Duration = "6", Progress = 30, ParentId = 5 },
+new TaskData() { TaskId = 9, TaskName = "Estimation approval",Progress=30, StartDate = new DateTime(2026, 04, 01), Duration = "4", ParentId = 5, Predecessor="8FS" },
+new TaskData() { TaskId = 10, TaskName = "Building approval", StartDate = new DateTime(2026, 04, 12), Duration = "5", ParentId = 5 },
+new TaskData() { TaskId = 11, TaskName = "Construction initiation", StartDate = new DateTime(2026, 04, 01), Duration = "5", Progress=40 },
+new TaskData() { TaskId = 12, TaskName = "Ground floor initiation", StartDate = new DateTime(2026, 04, 05), Duration = "5", ParentId = 11, Progress=40},
+new TaskData() { TaskId = 13, TaskName = "First floor initiation", StartDate = new DateTime(2026, 04, 05), Duration = "7",ParentId = 11, Progress=40},
+new TaskData() { TaskId = 14, TaskName = "Electric work initiation", StartDate = new DateTime(2026, 04, 01), Duration = "5", ParentId = 11, Progress=40, },
+new TaskData() { TaskId = 15, TaskName = "Plumbing work", StartDate = new DateTime(2026, 04, 02), Duration = "5", ParentId = 11, Progress=40 },
+};
+return Tasks;
+}
+public List<SegmentModel> GetSegmentCollection()
+{
+List<SegmentModel> segments = new List<SegmentModel>();
+segments.Add(new SegmentModel() { Id = 1, TaskId = 2, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "1" });
+segments.Add(new SegmentModel() { Id = 2, TaskId = 2, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
+segments.Add(new SegmentModel() { Id = 3, TaskId = 3, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "2" });
+segments.Add(new SegmentModel() { Id = 4, TaskId = 3, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
+segments.Add(new SegmentModel() { Id = 5, TaskId = 3, SegmentStartDate = new DateTime(2026, 04, 04), SegmentDuration = "3" });
+segments.Add(new SegmentModel() { Id = 6, TaskId = 4, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "1" });
+segments.Add(new SegmentModel() { Id = 7, TaskId = 4, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
+segments.Add(new SegmentModel() { Id = 8, TaskId = 8, SegmentStartDate = new DateTime(2026, 04, 01), SegmentEndDate = new DateTime(2026, 04, 03) });
+segments.Add(new SegmentModel() { Id = 9, TaskId = 8, SegmentStartDate = new DateTime(2026, 04, 05), SegmentDuration = "1" });
+segments.Add(new SegmentModel() { Id = 10, TaskId = 9, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
+segments.Add(new SegmentModel() { Id = 11, TaskId = 9, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "1" });
+segments.Add(new SegmentModel() { Id = 12, TaskId = 12, SegmentStartDate = new DateTime(2026, 04, 05), SegmentDuration = "1" });
+segments.Add(new SegmentModel() { Id = 13, TaskId = 12, SegmentStartDate = new DateTime(2026, 04, 07), SegmentDuration = "1" });
+segments.Add(new SegmentModel() { Id = 14, TaskId = 14, SegmentStartDate = new DateTime(2026, 04, 01), SegmentEndDate = new DateTime(2026, 04, 02) });
+segments.Add(new SegmentModel() { Id = 15, TaskId = 14, SegmentStartDate = new DateTime(2026, 04, 04), SegmentDuration = "2" });
+return segments;
+}
 }
 
 {% endhighlight %}
@@ -337,7 +337,7 @@ In the segments tab of the [add/edit dialog](https://blazor.syncfusion.com/docum
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/BZLnjRikqlscLhqT?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-### Through method 
+### Through method
 
 Taskbars can be split or merged externally using the [SplitTaskAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_SplitTaskAsync_System_Int32_System_Collections_Generic_List_System_DateTime__) and [MergeTaskAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_MergeTaskAsync_System_Int32_System_Collections_Generic_List_System_ValueTuple_System_Int32_System_Int32___) methods. These provide a programmatic way to perform efficient splitting and merging operations on taskbars.
 
@@ -353,28 +353,28 @@ In the following code snippet, clicking an external button merges the segments o
 <SfButton IsPrimary OnClick="SplitTaskHandler">Split Task</SfButton>
 
 <SfGantt @ref="Gantt" TValue="TaskData" DataSource="@TaskCollection" Height="450px" Width="100%" TreeColumnIndex="1" Toolbar="@(new List<Object>() { "Add", "Cancel", "Update", "Delete", "Edit", "CollapseAll", "ExpandAll", "ZoomIn", "ZoomOut", "ZoomToFit" })" EnableContextMenu="true" RowHeight="37" ProjectStartDate="projectStart" ProjectEndDate="projectEnd">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId" Dependency="Predecessor">
-    </GanttTaskFields>
-    <GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true"></GanttEditSettings>
-    <GanttSegmentFields PrimaryKey="Id" ForeignKey="TaskId" StartDate="SegmentStartDate" EndDate="SegmentEndDate" Duration="SegmentDuration" TValue="TaskData" TSegments="SegmentModel" DataSource="SegmentCollection"></GanttSegmentFields>
-    <GanttLabelSettings LeftLabel="TaskName" TValue="TaskData"></GanttLabelSettings>
-    <GanttColumns>
-        <GanttColumn Field="TaskId" Width="100" Visible="false"></GanttColumn>
-        <GanttColumn Field="TaskName" Width="250" ClipMode="Syncfusion.Blazor.Grids.ClipMode.EllipsisWithTooltip"></GanttColumn>
-        <GanttColumn Field="StartDate" HeaderText="Start Date"></GanttColumn>
-        <GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
-        <GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
-        <GanttColumn Field="Progress" HeaderText="Progress"></GanttColumn>
-        <GanttColumn Field="Predecessor" HeaderText="Dependency"></GanttColumn>
-    </GanttColumns>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId" Dependency="Predecessor">
+</GanttTaskFields>
+<GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true"></GanttEditSettings>
+<GanttSegmentFields PrimaryKey="Id" ForeignKey="TaskId" StartDate="SegmentStartDate" EndDate="SegmentEndDate" Duration="SegmentDuration" TValue="TaskData" TSegments="SegmentModel" DataSource="SegmentCollection"></GanttSegmentFields>
+<GanttLabelSettings LeftLabel="TaskName" TValue="TaskData"></GanttLabelSettings>
+<GanttColumns>
+<GanttColumn Field="TaskId" Width="100" Visible="false"></GanttColumn>
+<GanttColumn Field="TaskName" Width="250" ClipMode="Syncfusion.Blazor.Grids.ClipMode.EllipsisWithTooltip"></GanttColumn>
+<GanttColumn Field="StartDate" HeaderText="Start Date"></GanttColumn>
+<GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
+<GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
+<GanttColumn Field="Progress" HeaderText="Progress"></GanttColumn>
+<GanttColumn Field="Predecessor" HeaderText="Dependency"></GanttColumn>
+</GanttColumns>
 </SfGantt>
 
 @code {
-    public SfGantt<TaskData>? Gantt { get; set; }
-    private DateTime projectStart = new DateTime(2026, 03, 23);
-    private DateTime projectEnd = new DateTime(2026, 05, 10);
-    public List<TaskData>? TaskCollection { get; set; }
-    public List<SegmentModel>? SegmentCollection { get; set; }
+public SfGantt<TaskData>? Gantt { get; set; }
+private DateTime projectStart = new DateTime(2026, 03, 23);
+private DateTime projectEnd = new DateTime(2026, 05, 10);
+public List<TaskData>? TaskCollection { get; set; }
+public List<SegmentModel>? SegmentCollection { get; set; }
 
     private async Task MergeTaskHandler()
     {
@@ -459,6 +459,7 @@ In the following code snippet, clicking an external button merges the segments o
         segments.Add(new SegmentModel() { Id = 15, TaskId = 14, SegmentStartDate = new DateTime(2026, 04, 04), SegmentDuration = "2" });
         return segments;
     }
+
 }
 
 {% endhighlight %}
@@ -478,28 +479,28 @@ In the below code snippet, using the `SegmentChanging` event a customized messag
 @using Syncfusion.Blazor.Gantt
 <span class="text-primary">@segmentEventMessage</span>
 <SfGantt TValue="TaskData" DataSource="@TaskCollection" Height="450px" Width="800px" TreeColumnIndex="1" Toolbar="@(new List<Object>() { "Add", "Cancel", "Update", "Delete", "Edit", "CollapseAll", "ExpandAll", "ZoomIn", "ZoomOut", "ZoomToFit" })" EnableContextMenu="true" RowHeight="37" ProjectStartDate="projectStart" ProjectEndDate="projectEnd">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId" Dependency="Predecessor">
-    </GanttTaskFields>
-    <GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true"></GanttEditSettings>
-    <GanttSegmentFields PrimaryKey="Id" ForeignKey="TaskId" StartDate="SegmentStartDate" EndDate="SegmentEndDate" Duration="SegmentDuration" TValue="TaskData" TSegments="SegmentModel" DataSource="SegmentCollection" SegmentChanging="SegmentEventHandler"></GanttSegmentFields>
-    <GanttLabelSettings LeftLabel="TaskName" TValue="TaskData"></GanttLabelSettings>
-    <GanttColumns>
-        <GanttColumn Field="TaskId" Width="100" Visible="false"></GanttColumn>
-        <GanttColumn Field="TaskName" Width="250" ClipMode="Syncfusion.Blazor.Grids.ClipMode.EllipsisWithTooltip"></GanttColumn>
-        <GanttColumn Field="StartDate" HeaderText="Start Date"></GanttColumn>
-        <GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
-        <GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
-        <GanttColumn Field="Progress" HeaderText="Progress"></GanttColumn>
-        <GanttColumn Field="Predecessor" HeaderText="Dependency"></GanttColumn>
-    </GanttColumns>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId" Dependency="Predecessor">
+</GanttTaskFields>
+<GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true"></GanttEditSettings>
+<GanttSegmentFields PrimaryKey="Id" ForeignKey="TaskId" StartDate="SegmentStartDate" EndDate="SegmentEndDate" Duration="SegmentDuration" TValue="TaskData" TSegments="SegmentModel" DataSource="SegmentCollection" SegmentChanging="SegmentEventHandler"></GanttSegmentFields>
+<GanttLabelSettings LeftLabel="TaskName" TValue="TaskData"></GanttLabelSettings>
+<GanttColumns>
+<GanttColumn Field="TaskId" Width="100" Visible="false"></GanttColumn>
+<GanttColumn Field="TaskName" Width="250" ClipMode="Syncfusion.Blazor.Grids.ClipMode.EllipsisWithTooltip"></GanttColumn>
+<GanttColumn Field="StartDate" HeaderText="Start Date"></GanttColumn>
+<GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
+<GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
+<GanttColumn Field="Progress" HeaderText="Progress"></GanttColumn>
+<GanttColumn Field="Predecessor" HeaderText="Dependency"></GanttColumn>
+</GanttColumns>
 </SfGantt>
 
 @code {
-    private DateTime projectStart = new DateTime(2026, 03, 23);
-    private DateTime projectEnd = new DateTime(2026, 05, 10);
-    public List<TaskData>? TaskCollection { get; set; }
-    public List<SegmentModel>? SegmentCollection { get; set; }
-    private string? segmentEventMessage { get; set; }
+private DateTime projectStart = new DateTime(2026, 03, 23);
+private DateTime projectEnd = new DateTime(2026, 05, 10);
+public List<TaskData>? TaskCollection { get; set; }
+public List<SegmentModel>? SegmentCollection { get; set; }
+private string? segmentEventMessage { get; set; }
 
     private async Task SegmentEventHandler(SegmentEventArgs<SegmentModel> args)
     {
@@ -590,6 +591,7 @@ In the below code snippet, using the `SegmentChanging` event a customized messag
         segments.Add(new SegmentModel() { Id = 15, TaskId = 14, SegmentStartDate = new DateTime(2026, 04, 04), SegmentDuration = "2" });
         return segments;
     }
+
 }
 
 {% endhighlight %}
@@ -599,9 +601,9 @@ In the below code snippet, using the `SegmentChanging` event a customized messag
 
 ## Segment customization with template
 
-In the Blazor Gantt Chart, the appearance of segments can be customized by using the [TaskbarTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTemplates-1.html#Syncfusion_Blazor_Gantt_GanttTemplates_1_TaskbarTemplate) property. By passing the template context to the `GetRowTaskModel`, the collection of [Segments](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.IGanttTaskModel-1.html#Syncfusion_Blazor_Gantt_IGanttTaskModel_1_Segments) is obtained, which contains details  like left position, width, and progress width for each segment. The segments can be rendered at the appropriate timeline position and dimensions within the template container using these details.
+In the Blazor Gantt Chart, the appearance of segments can be customized by using the [TaskbarTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTemplates-1.html#Syncfusion_Blazor_Gantt_GanttTemplates_1_TaskbarTemplate) property. By passing the template context to the `GetRowTaskModel`, the collection of [Segments](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.IGanttTaskModel-1.html#Syncfusion_Blazor_Gantt_IGanttTaskModel_1_Segments) is obtained, which contains details like left position, width, and progress width for each segment. The segments can be rendered at the appropriate timeline position and dimensions within the template container using these details.
 
-In the code snippet below, the segments are customized based on template context data, and the segment count text is added inside each segment. 
+In the code snippet below, the segments are customized based on template context data, and the segment count text is added inside each segment.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -609,59 +611,60 @@ In the code snippet below, the segments are customized based on template context
 @using Syncfusion.Blazor.Gantt
 
 <SfGantt @ref="gantt" TValue="TaskData" DataSource="@TaskCollection" Height="450px" Width="100%" TreeColumnIndex="1" Toolbar="@(new List<Object>() { "Add", "Cancel", "Update", "Delete", "Edit", "CollapseAll", "ExpandAll", "ZoomIn", "ZoomOut", "ZoomToFit" })" EnableContextMenu="true" RowHeight="37" ProjectStartDate="projectStart" ProjectEndDate="projectEnd">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId" Dependency="Predecessor">
-    </GanttTaskFields>
-    <GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true"></GanttEditSettings>
-    <GanttSegmentFields PrimaryKey="Id" ForeignKey="TaskID" StartDate="SegmentStartDate" EndDate="SegmentEndDate" Duration="SegmentDuration" TValue="TaskData" TSegments="SegmentModel" DataSource="segmentCollection"></GanttSegmentFields>
-    <GanttLabelSettings LeftLabel="TaskName" TValue="TaskData"></GanttLabelSettings>
-    <GanttColumns>
-        <GanttColumn Field="TaskId" Width="100" Visible="false"></GanttColumn>
-        <GanttColumn Field="TaskName" Width="250" ClipMode="Syncfusion.Blazor.Grids.ClipMode.EllipsisWithTooltip"></GanttColumn>
-        <GanttColumn Field="StartDate" HeaderText="Start Date"></GanttColumn>
-        <GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
-        <GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
-        <GanttColumn Field="Progress" HeaderText="Progress"></GanttColumn>
-        <GanttColumn Field="Predecessor" HeaderText="Dependency"></GanttColumn>
-    </GanttColumns>
-    <GanttTemplates TValue="TaskData">
-        <TaskbarTemplate>
-            @{
-                var task = (context as TaskData);
-                if (task == null)
-                {
-                    return;
-                }
-                var taskModel = gantt.GetRowTaskModel(task);
-                List<GanttSegmentData> segments = taskModel.Segments;
-                @if (segments != null && segments.Count() > 1)
-                {
-                    foreach (var segment in segments)
-                    {
-                        string textContent = "Segment " + (segment.SegmentIndex + 1);
-                        <div class="e-gantt-child-taskbar-inner-div e-gantt-child-taskbar e-segmented-taskbar" style=@("height:24px;position: absolute;left:" + segment.Left + "px; width:" + segment.Width + "px;") tabindex=-1 data-segment-index="@(segment.SegmentIndex)">
-                            <div class="e-taskbar-left-resizer e-icon" style="margin-top: 5px; left:2px">
-                            </div>
-                            <div class="e-gantt-child-progressbar-inner-div e-gantt-child-progressbar" style="height:24px;width:@(segment.ProgressWidth + "px");border-radius: 0px;text-align: right;">
-                                <div style=@("height:22px;position: absolute;line-height:21px;font-size: 11px;color: #fff;text-overflow:ellipsis;overflow-x:hidden;")>
-                                    <span>@textContent</span>
-                                </div>
-                            </div>
-                            <div class="e-taskbar-right-resizer e-icon" style="margin-top: 5px;left:@((segment.Width) - 15)px">
-                            </div>
-                        </div>
-                    }
-                }
-                else
-                {
-                    <div class="e-gantt-child-taskbar e-gantt-child-taskbar-inner-div" style="height:24px;" tabindex=-1>
-                        <div class="e-gantt-child-progressbar-inner-div e-gantt-child-progressbar" style="height:24px;width:@(taskModel.ProgressWidth + "px");text-align: right;border-radius: 0px;">
-                        </div>
-                    </div>
-                }
-            }
-        </TaskbarTemplate>
-    </GanttTemplates>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId" Dependency="Predecessor">
+</GanttTaskFields>
+<GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true"></GanttEditSettings>
+<GanttSegmentFields PrimaryKey="Id" ForeignKey="TaskID" StartDate="SegmentStartDate" EndDate="SegmentEndDate" Duration="SegmentDuration" TValue="TaskData" TSegments="SegmentModel" DataSource="segmentCollection"></GanttSegmentFields>
+<GanttLabelSettings LeftLabel="TaskName" TValue="TaskData"></GanttLabelSettings>
+<GanttColumns>
+<GanttColumn Field="TaskId" Width="100" Visible="false"></GanttColumn>
+<GanttColumn Field="TaskName" Width="250" ClipMode="Syncfusion.Blazor.Grids.ClipMode.EllipsisWithTooltip"></GanttColumn>
+<GanttColumn Field="StartDate" HeaderText="Start Date"></GanttColumn>
+<GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
+<GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
+<GanttColumn Field="Progress" HeaderText="Progress"></GanttColumn>
+<GanttColumn Field="Predecessor" HeaderText="Dependency"></GanttColumn>
+</GanttColumns>
+<GanttTemplates TValue="TaskData">
+<TaskbarTemplate>
+@{
+var task = (context as TaskData);
+if (task == null)
+{
+return;
+}
+var taskModel = gantt.GetRowTaskModel(task);
+List<GanttSegmentData> segments = taskModel.Segments;
+@if (segments != null && segments.Count() > 1)
+{
+foreach (var segment in segments)
+{
+string textContent = "Segment " + (segment.SegmentIndex + 1);
+<div class="e-gantt-child-taskbar-inner-div e-gantt-child-taskbar e-segmented-taskbar" style=@("height:24px;position: absolute;left:" + segment.Left + "px; width:" + segment.Width + "px;") tabindex=-1 data-segment-index="@(segment.SegmentIndex)">
+<div class="e-taskbar-left-resizer e-icon" style="margin-top: 5px; left:2px">
+</div>
+<div class="e-gantt-child-progressbar-inner-div e-gantt-child-progressbar" style="height:24px;width:@(segment.ProgressWidth + "px");border-radius: 0px;text-align: right;">
+<div style=@("height:22px;position: absolute;line-height:21px;font-size: 11px;color: #fff;text-overflow:ellipsis;overflow-x:hidden;")>
+<span>@textContent</span>
+</div>
+</div>
+<div class="e-taskbar-right-resizer e-icon" style="margin-top: 5px;left:@((segment.Width) - 15)px">
+</div>
+</div>
+}
+}
+else
+{
+<div class="e-gantt-child-taskbar e-gantt-child-taskbar-inner-div" style="height:24px;" tabindex=-1>
+<div class="e-gantt-child-progressbar-inner-div e-gantt-child-progressbar" style="height:24px;width:@(taskModel.ProgressWidth + "px");text-align: right;border-radius: 0px;">
+</div>
+</div>
+}
+}
+</TaskbarTemplate>
+</GanttTemplates>
 </SfGantt>
+
 <style>
     .e-segmented-taskbar.e-gantt-clone-taskbar {
         top: 0px !important;
@@ -676,77 +679,78 @@ In the code snippet below, the segments are customized based on template context
         border: 1px solid #3f51b5 !important;
     }
 </style>
+
 @code {
-    private SfGantt<TaskData>? gantt;
-    private DateTime projectStart = new DateTime(2026, 03, 23);
-    private DateTime projectEnd = new DateTime(2026, 05, 10);
-    private List<TaskData>? TaskCollection { get; set; }
-    private List<SegmentModel>? segmentCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-        this.segmentCollection = GetSegmentCollection();
-    }
-    public class SegmentModel
-    {
-        public int Id { get; set; }
-        public int TaskID { get; set; }
-        public DateTime SegmentStartDate { get; set; }
-        public DateTime SegmentEndDate { get; set; }
-        public string? SegmentDuration { get; set; }
-    }
-    public class TaskData
-    {
-        public int TaskId { get; set; }
-        public string? TaskName { get; set; }
-        public DateTime? StartDate { get; set; }
-        public DateTime? EndDate { get; set; }
-        public string? Duration { get; set; }
-        public int Progress { get; set; }
-        public int? ParentId { get; set; }
-        public string? Predecessor { get; set; }
-    }
-    public static List<TaskData> GetTaskCollection()
-    {
-        List<TaskData> Tasks = new List<TaskData>() {
-            new TaskData() { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2026, 03, 25), EndDate = new DateTime(2026, 04, 19), Duration="4" },
-            new TaskData() { TaskId = 2, TaskName = "Identify site location", StartDate = new DateTime(2026, 03, 25), Progress = 30, ParentId = 1, Duration="8", },
-            new TaskData() { TaskId = 3, TaskName = "Site analyze", StartDate = new DateTime(2026, 03, 25),  Progress = 50, ParentId = 1, Duration="8"},
-            new TaskData() { TaskId = 4, TaskName = "Perform soil test", StartDate = new DateTime(2026, 03, 25), ParentId = 1, Duration="5", Predecessor="2FS", Progress=40, },
-            new TaskData() { TaskId = 5, TaskName = "Soil test approval", StartDate = new DateTime(2026, 03, 25), Duration="4", Progress = 30 },
-            new TaskData() { TaskId = 6, TaskName = "Project estimation", StartDate = new DateTime(2026, 04, 08), Duration="8", Progress=40, ParentId=1 },
-            new TaskData() { TaskId = 7, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2026, 03, 29), Duration = "0", Progress = 30, ParentId = 5, Predecessor= "4FS" },
-            new TaskData() { TaskId = 8, TaskName = "List materials", StartDate = new DateTime(2026, 04, 01), Duration = "6", Progress = 30, ParentId = 5 },
-            new TaskData() { TaskId = 9, TaskName = "Estimation approval",Progress=30, StartDate = new DateTime(2026, 04, 01), Duration = "4", ParentId = 5, Predecessor="8FS" },
-            new TaskData() { TaskId = 10, TaskName = "Building approval", StartDate = new DateTime(2026, 04, 12), Duration = "5", ParentId = 5 },
-            new TaskData() { TaskId = 11, TaskName = "Construction initiation", StartDate = new DateTime(2026, 04, 01), Duration = "5", Progress=40 },
-            new TaskData() { TaskId = 12, TaskName = "Ground floor initiation", StartDate = new DateTime(2026, 04, 05), Duration = "5", ParentId = 11, Progress=40},
-            new TaskData() { TaskId = 13, TaskName = "First floor initiation", StartDate = new DateTime(2026, 04, 05), Duration = "7",ParentId = 11, Progress=40},
-            new TaskData() { TaskId = 14, TaskName = "Electric work initiation", StartDate = new DateTime(2026, 04, 01), Duration = "5", ParentId = 11, Progress=40, },
-            new TaskData() { TaskId = 15, TaskName = "Plumbing work", StartDate = new DateTime(2026, 04, 02), Duration = "5", ParentId = 11, Progress=40 },
-       };
-        return Tasks;
-    }
-    private List<SegmentModel> GetSegmentCollection()
-    {
-        List<SegmentModel> segments = new List<SegmentModel>();
-        segments.Add(new SegmentModel() { Id = 1, TaskID = 2, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "1" });
-        segments.Add(new SegmentModel() { Id = 2, TaskID = 2, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
-        segments.Add(new SegmentModel() { Id = 3, TaskID = 3, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "2" });
-        segments.Add(new SegmentModel() { Id = 4, TaskID = 3, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
-        segments.Add(new SegmentModel() { Id = 5, TaskID = 3, SegmentStartDate = new DateTime(2026, 04, 04), SegmentDuration = "3" });
-        segments.Add(new SegmentModel() { Id = 6, TaskID = 4, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "1" });
-        segments.Add(new SegmentModel() { Id = 7, TaskID = 4, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
-        segments.Add(new SegmentModel() { Id = 8, TaskID = 8, SegmentStartDate = new DateTime(2026, 04, 01), SegmentEndDate = new DateTime(2026, 04, 03) });
-        segments.Add(new SegmentModel() { Id = 9, TaskID = 8, SegmentStartDate = new DateTime(2026, 04, 05), SegmentDuration = "1" });
-        segments.Add(new SegmentModel() { Id = 10, TaskID = 9, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
-        segments.Add(new SegmentModel() { Id = 11, TaskID = 9, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "1" });
-        segments.Add(new SegmentModel() { Id = 12, TaskID = 12, SegmentStartDate = new DateTime(2026, 04, 05), SegmentDuration = "1" });
-        segments.Add(new SegmentModel() { Id = 13, TaskID = 12, SegmentStartDate = new DateTime(2026, 04, 07), SegmentDuration = "1" });
-        segments.Add(new SegmentModel() { Id = 14, TaskID = 14, SegmentStartDate = new DateTime(2026, 04, 01), SegmentEndDate = new DateTime(2026, 04, 02) });
-        segments.Add(new SegmentModel() { Id = 15, TaskID = 14, SegmentStartDate = new DateTime(2026, 04, 04), SegmentDuration = "2" });
-        return segments;
-    }
+private SfGantt<TaskData>? gantt;
+private DateTime projectStart = new DateTime(2026, 03, 23);
+private DateTime projectEnd = new DateTime(2026, 05, 10);
+private List<TaskData>? TaskCollection { get; set; }
+private List<SegmentModel>? segmentCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+this.segmentCollection = GetSegmentCollection();
+}
+public class SegmentModel
+{
+public int Id { get; set; }
+public int TaskID { get; set; }
+public DateTime SegmentStartDate { get; set; }
+public DateTime SegmentEndDate { get; set; }
+public string? SegmentDuration { get; set; }
+}
+public class TaskData
+{
+public int TaskId { get; set; }
+public string? TaskName { get; set; }
+public DateTime? StartDate { get; set; }
+public DateTime? EndDate { get; set; }
+public string? Duration { get; set; }
+public int Progress { get; set; }
+public int? ParentId { get; set; }
+public string? Predecessor { get; set; }
+}
+public static List<TaskData> GetTaskCollection()
+{
+List<TaskData> Tasks = new List<TaskData>() {
+new TaskData() { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2026, 03, 25), EndDate = new DateTime(2026, 04, 19), Duration="4" },
+new TaskData() { TaskId = 2, TaskName = "Identify site location", StartDate = new DateTime(2026, 03, 25), Progress = 30, ParentId = 1, Duration="8", },
+new TaskData() { TaskId = 3, TaskName = "Site analyze", StartDate = new DateTime(2026, 03, 25), Progress = 50, ParentId = 1, Duration="8"},
+new TaskData() { TaskId = 4, TaskName = "Perform soil test", StartDate = new DateTime(2026, 03, 25), ParentId = 1, Duration="5", Predecessor="2FS", Progress=40, },
+new TaskData() { TaskId = 5, TaskName = "Soil test approval", StartDate = new DateTime(2026, 03, 25), Duration="4", Progress = 30 },
+new TaskData() { TaskId = 6, TaskName = "Project estimation", StartDate = new DateTime(2026, 04, 08), Duration="8", Progress=40, ParentId=1 },
+new TaskData() { TaskId = 7, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2026, 03, 29), Duration = "0", Progress = 30, ParentId = 5, Predecessor= "4FS" },
+new TaskData() { TaskId = 8, TaskName = "List materials", StartDate = new DateTime(2026, 04, 01), Duration = "6", Progress = 30, ParentId = 5 },
+new TaskData() { TaskId = 9, TaskName = "Estimation approval",Progress=30, StartDate = new DateTime(2026, 04, 01), Duration = "4", ParentId = 5, Predecessor="8FS" },
+new TaskData() { TaskId = 10, TaskName = "Building approval", StartDate = new DateTime(2026, 04, 12), Duration = "5", ParentId = 5 },
+new TaskData() { TaskId = 11, TaskName = "Construction initiation", StartDate = new DateTime(2026, 04, 01), Duration = "5", Progress=40 },
+new TaskData() { TaskId = 12, TaskName = "Ground floor initiation", StartDate = new DateTime(2026, 04, 05), Duration = "5", ParentId = 11, Progress=40},
+new TaskData() { TaskId = 13, TaskName = "First floor initiation", StartDate = new DateTime(2026, 04, 05), Duration = "7",ParentId = 11, Progress=40},
+new TaskData() { TaskId = 14, TaskName = "Electric work initiation", StartDate = new DateTime(2026, 04, 01), Duration = "5", ParentId = 11, Progress=40, },
+new TaskData() { TaskId = 15, TaskName = "Plumbing work", StartDate = new DateTime(2026, 04, 02), Duration = "5", ParentId = 11, Progress=40 },
+};
+return Tasks;
+}
+private List<SegmentModel> GetSegmentCollection()
+{
+List<SegmentModel> segments = new List<SegmentModel>();
+segments.Add(new SegmentModel() { Id = 1, TaskID = 2, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "1" });
+segments.Add(new SegmentModel() { Id = 2, TaskID = 2, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
+segments.Add(new SegmentModel() { Id = 3, TaskID = 3, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "2" });
+segments.Add(new SegmentModel() { Id = 4, TaskID = 3, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
+segments.Add(new SegmentModel() { Id = 5, TaskID = 3, SegmentStartDate = new DateTime(2026, 04, 04), SegmentDuration = "3" });
+segments.Add(new SegmentModel() { Id = 6, TaskID = 4, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "1" });
+segments.Add(new SegmentModel() { Id = 7, TaskID = 4, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
+segments.Add(new SegmentModel() { Id = 8, TaskID = 8, SegmentStartDate = new DateTime(2026, 04, 01), SegmentEndDate = new DateTime(2026, 04, 03) });
+segments.Add(new SegmentModel() { Id = 9, TaskID = 8, SegmentStartDate = new DateTime(2026, 04, 05), SegmentDuration = "1" });
+segments.Add(new SegmentModel() { Id = 10, TaskID = 9, SegmentStartDate = new DateTime(2026, 03, 29), SegmentEndDate = new DateTime(2026, 03, 31) });
+segments.Add(new SegmentModel() { Id = 11, TaskID = 9, SegmentStartDate = new DateTime(2026, 04, 01), SegmentDuration = "1" });
+segments.Add(new SegmentModel() { Id = 12, TaskID = 12, SegmentStartDate = new DateTime(2026, 04, 05), SegmentDuration = "1" });
+segments.Add(new SegmentModel() { Id = 13, TaskID = 12, SegmentStartDate = new DateTime(2026, 04, 07), SegmentDuration = "1" });
+segments.Add(new SegmentModel() { Id = 14, TaskID = 14, SegmentStartDate = new DateTime(2026, 04, 01), SegmentEndDate = new DateTime(2026, 04, 02) });
+segments.Add(new SegmentModel() { Id = 15, TaskID = 14, SegmentStartDate = new DateTime(2026, 04, 04), SegmentDuration = "2" });
+return segments;
+}
 }
 
 {% endhighlight %}
@@ -761,6 +765,7 @@ In the code snippet below, the segments are customized based on template context
 3. Split task is not supported with `Multi taskbar`.
 
 ## See also
-- [How to bind data in Gantt?](https://blazor.syncfusion.com/documentation/gantt-chart/data-binding)
-- [How to configure task editing?](https://blazor.syncfusion.com/documentation/gantt-chart/editing-tasks)
-- [How to manage task dependencies?](https://blazor.syncfusion.com/documentation/gantt-chart/task-dependencies)
+
+- [How to bind data in Gantt?](https://blazor.syncfusion.com/documentation/gantt/data-binding)
+- [How to configure task editing?](https://blazor.syncfusion.com/documentation/gantt/editing-tasks)
+- [How to manage task dependencies?](https://blazor.syncfusion.com/documentation/gantt/task-dependencies)

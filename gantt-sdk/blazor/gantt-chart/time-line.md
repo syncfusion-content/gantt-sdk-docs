@@ -24,18 +24,18 @@ In Week mode, the top tier shows weeks and the bottom tier days, suitable for sh
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="900px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttTimelineSettings TimelineViewMode="TimelineViewMode.Week"></GanttTimelineSettings>
+</GanttTaskFields>
+<GanttTimelineSettings TimelineViewMode="TimelineViewMode.Week"></GanttTimelineSettings>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public class TaskData
     {
@@ -62,6 +62,7 @@ In Week mode, the top tier shows weeks and the bottom tier days, suitable for sh
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -78,18 +79,18 @@ In Month mode, the top tier shows months and the bottom tier shows weeks, ideal 
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="900px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttTimelineSettings TimelineUnitSize=120 TimelineViewMode="TimelineViewMode.Month"></GanttTimelineSettings>
+</GanttTaskFields>
+<GanttTimelineSettings TimelineUnitSize=120 TimelineViewMode="TimelineViewMode.Month"></GanttTimelineSettings>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public class TaskData
     {
@@ -116,6 +117,7 @@ In Month mode, the top tier shows months and the bottom tier shows weeks, ideal 
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -132,19 +134,19 @@ In Year mode, the top tier shows years and the bottom tier shows months, suitabl
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="900px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttTimelineSettings TimelineUnitSize=75 TimelineViewMode="TimelineViewMode.Year">
-    </GanttTimelineSettings>
+</GanttTaskFields>
+<GanttTimelineSettings TimelineUnitSize=75 TimelineViewMode="TimelineViewMode.Year">
+</GanttTimelineSettings>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public class TaskData
     {
@@ -171,6 +173,7 @@ In Year mode, the top tier shows years and the bottom tier shows months, suitabl
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -187,18 +190,18 @@ In Day mode, the top tier shows days and the bottom tier hours, ideal for detail
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" DurationUnit="DurationUnit.Hour" Height="450px" Width="900px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttTimelineSettings TimelineViewMode="TimelineViewMode.Day"></GanttTimelineSettings>
+</GanttTaskFields>
+<GanttTimelineSettings TimelineViewMode="TimelineViewMode.Day"></GanttTimelineSettings>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public class TaskData
     {
@@ -225,6 +228,7 @@ In Day mode, the top tier shows days and the bottom tier hours, ideal for detail
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -241,18 +245,18 @@ In Hour mode, the top tier shows hours and the bottom tier minutes, perfect for 
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" DurationUnit="DurationUnit.Minute" Height="450px" Width="900px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttTimelineSettings TimelineViewMode="TimelineViewMode.Hour"></GanttTimelineSettings>
+</GanttTaskFields>
+<GanttTimelineSettings TimelineViewMode="TimelineViewMode.Hour"></GanttTimelineSettings>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public class TaskData
     {
@@ -279,6 +283,7 @@ In Hour mode, the top tier shows hours and the bottom tier minutes, perfect for 
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -295,18 +300,18 @@ In the Gantt chart component, you can customize the week start day using the [Ga
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="1000px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttTimelineSettings WeekStartDay=3></GanttTimelineSettings>
+</GanttTaskFields>
+<GanttTimelineSettings WeekStartDay=3></GanttTimelineSettings>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public class TaskData
     {
@@ -333,6 +338,7 @@ In the Gantt chart component, you can customize the week start day using the [Ga
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -349,19 +355,19 @@ In the Gantt component, the schedule timeline will be automatically updated when
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="700px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttEditSettings AllowEditing="true" AllowTaskbarEditing="true"></GanttEditSettings>
-    <GanttTimelineSettings UpdateTimescaleView="false"></GanttTimelineSettings>
+</GanttTaskFields>
+<GanttEditSettings AllowEditing="true" AllowTaskbarEditing="true"></GanttEditSettings>
+<GanttTimelineSettings UpdateTimescaleView="false"></GanttTimelineSettings>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public class TaskData
     {
@@ -388,6 +394,7 @@ In the Gantt component, the schedule timeline will be automatically updated when
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -404,18 +411,18 @@ In the Gantt Chart component, you can enable or disable the mouse hover tooltip 
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="700px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttTimelineSettings ShowTooltip="true"></GanttTimelineSettings>
+</GanttTaskFields>
+<GanttTimelineSettings ShowTooltip="true"></GanttTimelineSettings>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public class TaskData
     {
@@ -442,6 +449,7 @@ In the Gantt Chart component, you can enable or disable the mouse hover tooltip 
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -455,11 +463,11 @@ In the Gantt component, you can customize timeline cells using the [GanttTooltip
 
 When designing the timeline cells, you can utilize the following context properties within the template:
 
-* `Date`: Defines the date of the timeline cells.
-* `Value`: Defines the formatted date value that will be displayed in the timeline cells.
-* `Tier`: Defines whether the cell is part of the top or bottom tier.
+- `Date`: Defines the date of the timeline cells.
+- `Value`: Defines the formatted date value that will be displayed in the timeline cells.
+- `Tier`: Defines whether the cell is part of the top or bottom tier.
 
-The following code example shows how to customize the top tier to display the week's weather details and the bottom tier to highlight working and non-working days, with formatted text for holidays. 
+The following code example shows how to customize the top tier to display the week's weather details and the bottom tier to highlight working and non-working days, with formatted text for holidays.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -545,6 +553,7 @@ The following code example shows how to customize the top tier to display the we
         width: 40px;
         height: 40px;
     }
+
 </style>
 
 {% endhighlight %}
@@ -553,6 +562,7 @@ The following code example shows how to customize the top tier to display the we
 {% previewsample "https://blazorplayground.syncfusion.com/embed/rNVnDnrBCGeegJHh?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 ## See also
-- [How to configure taskbars?](https://blazor.syncfusion.com/documentation/gantt-chart/taskbar)
-- [How to zoom the timeline?](https://blazor.syncfusion.com/documentation/gantt-chart/zooming)
-- [How to configure non-working days?](https://blazor.syncfusion.com/documentation/gantt-chart/scheduling-tasks#weekend-or-non-working-days)
+
+- [How to configure taskbars?](https://blazor.syncfusion.com/documentation/gantt/taskbar)
+- [How to zoom the timeline?](https://blazor.syncfusion.com/documentation/gantt/zooming)
+- [How to configure non-working days?](https://blazor.syncfusion.com/documentation/gantt/scheduling-tasks#weekend-or-non-working-days)

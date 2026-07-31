@@ -3,7 +3,7 @@ layout: post
 title: React Gantt Chart Cell Selection API | Syncfusion
 description: Explore cell selection in Syncfusion React Gantt Chart, including single, multiple, external selection, and customization via API methods and events.
 platform: gantt-sdk
-control: Cell selection 
+control: Cell selection
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -18,17 +18,17 @@ Single cell selection in the Gantt Chart is enabled by setting [selectionSetting
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/selection-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/selection-cs1" %}
 
 ## Multiple cell selection
 
@@ -36,25 +36,25 @@ Multiple cell selection in the Gantt Chart is enabled by setting [selectionSetti
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/selection-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/selection-cs2" %}
 
 ## Cell selection mode
 
 Cell selection mode controls how cells or ranges are selected. Set the desired mode using [selectionSettings.cellSelectionMode](https://ej2.syncfusion.com/react/documentation/api/gantt/selectionsettings#cellselectionmode):
 
-* **Flow** (default): Selects a continuous flow of cells between the start and end indices across rows.
-* **Box**: Selects a rectangular range covering specified rows and columns.
-* **BoxWithBorder**: Similar to Box mode, but applies a border for better visual distinction of the selected range.
+- **Flow** (default): Selects a continuous flow of cells between the start and end indices across rows.
+- **Box**: Selects a rectangular range covering specified rows and columns.
+- **BoxWithBorder**: Similar to Box mode, but applies a border for better visual distinction of the selected range.
 
 > For cell selection modes, [selectionSettings.mode](https://ej2.syncfusion.com/react/documentation/api/gantt/selectionsettings#mode) must be **Cell** or **Both**, and [type](https://ej2.syncfusion.com/react/documentation/api/gantt/selectionsettings#type) must be **Multiple**.
 
@@ -62,17 +62,17 @@ The following example demonstrates how to change both the selection mode and the
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs17/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs17/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs17/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs17/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs17/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs17/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/selection-cs17" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/selection-cs17" %}
 
 ## Select cells externally
 
@@ -84,17 +84,17 @@ Select a specific cell in the Gantt Chart by calling the [selectCell](https://ej
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs3/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs3/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs3/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/selection-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/selection-cs3" %}
 
 ### Multiple cell selection
 
@@ -102,17 +102,17 @@ Select multiple cells in the Gantt Chart by calling the [selectCells](https://ej
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs18/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs18/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs18/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs18/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs18/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs18/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/selection-cs18" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/selection-cs18" %}
 
 ## Get selected cell information
 
@@ -120,17 +120,17 @@ To retrieve information about selected cells in the Gantt Chart, use methods lik
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs19/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs19/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs19/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs19/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs19/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs19/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/selection-cs19" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/selection-cs19" %}
 
 ## Customize cell selection action
 
@@ -140,18 +140,18 @@ The following sample demonstrates customizing cell selection in the Gantt Chart 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs4/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs4/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs4/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs4/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs4/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/selection-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/selection-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/selection-cs4" %}
 
 ## Limitations for cell selection
 
-* Cell-based selection is not supported when virtualization is enabled.
+- Cell-based selection is not supported when virtualization is enabled.

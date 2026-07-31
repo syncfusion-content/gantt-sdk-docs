@@ -2,7 +2,7 @@
 layout: post
 title: PDF export in Vue Gantt Chart component | Syncfusion
 description: Learn here all about Pdf export in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Pdf export 
+control: Pdf export
 platform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -21,29 +21,29 @@ To export data to a PDF document, inject the `PdfExport` module into the Gantt.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs13/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-cs13/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs13/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-cs13/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs13" %}
 
-## Indicators in PDF exporting 
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/pdf-export-cs13" %}
+
+## Indicators in PDF exporting
 
 The PDF export functionality allows users to export Gantt charts enriched with dynamic indicators and accompanying images. These indicators, represented by images, can be defined using the ../api/gantt/iIndicator#base64 encoding value in the data object of the data source. This data object field should be mapped to the indicator property of the [task fields](https://ej2.syncfusion.com/vue/documentation/api/gantt/taskFields#indicators).
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs14/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-cs14/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs14/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-cs14/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs13" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/pdf-export-cs13" %}
 
 ## Exporting Gantt data as a blob object
 
@@ -57,14 +57,14 @@ Step 2: Then, `pdfExpComplete` will return the blob object.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/exporting-gantt-blobdata-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/exporting-gantt-blobdata-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/exporting-gantt-blobdata-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/exporting-gantt-blobdata-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/exporting-gantt-blobdata-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/exporting-gantt-blobdata-cs1" %}
 
 ## Single page exporting in Gantt
 
@@ -74,14 +74,14 @@ You can also customize the chart width and grid width in the exported file using
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/single-page/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/single-page/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/single-page/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/single-page/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/single-page" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/single-page" %}
 
 ## Multiple Gantt exporting in Vue Gantt Chart component
 
@@ -89,14 +89,14 @@ PDF export provides an option to export multiple Gantt Chart components into the
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-multiple-export-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-multiple-export-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-multiple-export-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-multiple-export-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/pdf-multiple-export-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/pdf-multiple-export-cs1" %}
 
 ## Applying Themes in PDF Export
 
@@ -105,11 +105,11 @@ The available themes are:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-theme-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-theme-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-theme-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-theme-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-theme-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/pdf-export-theme-cs1" %}

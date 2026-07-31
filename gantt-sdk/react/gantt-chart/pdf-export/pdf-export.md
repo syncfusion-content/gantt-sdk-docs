@@ -18,17 +18,17 @@ Export Gantt data to PDF by setting [allowPdfExport](https://ej2.syncfusion.com/
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/pdf-export-cs14/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/pdf-export-cs14/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/pdf-export-cs14/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/pdf-export-cs14/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/pdf-export-cs14/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/pdf-export-cs14/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/pdf-export-cs14" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/pdf-export-cs14" %}
 
 ## Include indicators in PDF export
 
@@ -36,17 +36,17 @@ Include dynamic indicators and images in PDF export by defining them with `base6
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/pdf-export-cs16/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/pdf-export-cs16/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/pdf-export-cs16/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/pdf-export-cs16/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/pdf-export-cs16/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/pdf-export-cs16/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/pdf-export-cs16" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/pdf-export-cs16" %}
 
 ## Export Gantt data as blob object
 
@@ -54,17 +54,17 @@ Export Gantt data as a blob object for previews or modifications by setting the 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/how-to-blobdata-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/how-to-blobdata-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/how-to-blobdata-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/how-to-blobdata-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/how-to-blobdata-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/how-to-blobdata-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/how-to-blobdata-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/how-to-blobdata-cs1" %}
 
 ## Single page exporting in Gantt
 
@@ -72,17 +72,17 @@ Export Gantt rows to a single PDF page by setting [fitToWidthSettings.isFitToWid
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/single-page/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/single-page/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/single-page/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/single-page/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/single-page/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/single-page/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/single-page" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/single-page" %}
 
 ## Multiple Gantt exporting
 
@@ -90,17 +90,17 @@ Export multiple Gantt instances to a single PDF file by calling [pdfExport](http
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/pdf-multiple-export-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/pdf-multiple-export-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/pdf-multiple-export-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/pdf-multiple-export-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/pdf-multiple-export-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/pdf-multiple-export-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/pdf-multiple-export-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/pdf-multiple-export-cs1" %}
 
 ## Apply themes in PDF export
 
@@ -108,19 +108,20 @@ Apply themes to exported PDF documents by setting the [theme](https://ej2.syncfu
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/pdf-export-cs12/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/pdf-export-cs12/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/pdf-export-cs12/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/pdf-export-cs12/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/pdf-export-cs12/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/pdf-export-cs12/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/pdf-export-cs12" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/pdf-export-cs12" %}
 
 ## See also
+
 - [How to export to Excel?](https://ej2.syncfusion.com/react/documentation/gantt/excel-export)
 - [How to customize PDF export?](https://ej2.syncfusion.com/react/documentation/gantt/pdf-export/customize-pdf-export)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/react/documentation/gantt/task-dependency)

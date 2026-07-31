@@ -20,19 +20,19 @@ The following example configures resource view:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/resourceview/resource-view-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/resourceview/resource-view-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/resourceview/resource-view-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/resourceview/resource-view-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/resourceview/resource-view-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/resourceview/resource-view-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/resourceview/resource-view-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/resourceview/resource-view-cs1" %}
 
 This configuration groups tasks by resources, displaying them as child nodes.
 
@@ -44,19 +44,19 @@ The following example toggles overallocation visibility:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/resourceview/show-hide-overallocation-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/resourceview/show-hide-overallocation-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/resourceview/show-hide-overallocation-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/resourceview/show-hide-overallocation-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/resourceview/show-hide-overallocation-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/resourceview/show-hide-overallocation-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/resourceview/show-hide-overallocation-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/resourceview/show-hide-overallocation-cs1" %}
 
 This configuration highlights scheduling conflicts for workload management.
 
@@ -74,19 +74,19 @@ The following example enables drag-and-drop:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/resourceview/multitaskbar-cs2/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/resourceview/multitaskbar-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/resourceview/multitaskbar-cs2/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/resourceview/multitaskbar-cs2/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/resourceview/multitaskbar-cs2/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/resourceview/multitaskbar-cs2/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/resourceview/multitaskbar-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/resourceview/multitaskbar-cs2" %}
 
 This configuration supports dynamic task reassignment.
 
@@ -96,16 +96,16 @@ You can customize the taskbar appearance based on resource view using the [query
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/resourceview/customize-taskbar/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/resourceview/customize-taskbar/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/resourceview/customize-taskbar/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/resourceview/customize-taskbar/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/resourceview/customize-taskbar/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/resourceview/customize-taskbar/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/resourceview/customize-taskbar" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/resourceview/customize-taskbar" %}
 
 ## Hide columns in resource tab
 
@@ -113,16 +113,16 @@ To hide a column in the Gantt Chart's resource view, handle the [actionBegin](ht
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/resourceview/resource-tab/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/resourceview/resource-tab/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/resourceview/resource-tab/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/resourceview/resource-tab/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/resourceview/resource-tab/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/resourceview/resource-tab/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/resourceview/resource-tab" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/resourceview/resource-tab" %}
 
 ## Limitations
 
@@ -130,6 +130,7 @@ To hide a column in the Gantt Chart's resource view, handle the [actionBegin](ht
 - Unscheduled tasks (lacking start date or duration) are not supported in resource view.
 
 ## See also
+
 - [How to configure resources?](https://ej2.syncfusion.com/angular/documentation/gantt/resources)
 - [How to enable multi taskbar?](https://ej2.syncfusion.com/angular/documentation/gantt/multi-taskbar)
 - [How to customize taskbars?](https://ej2.syncfusion.com/angular/documentation/gantt/taskbar)

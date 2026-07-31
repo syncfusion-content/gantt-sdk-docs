@@ -3,7 +3,7 @@ layout: post
 title: Searching in TypeScript Gantt control | Syncfusion
 description: Learn here all about Searching in Syncfusion TypeScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Searching 
+control: Searching
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -19,32 +19,32 @@ To enable search functionality, include the **Search** item in the [toolbar](../
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/searching-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/searching-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/searching-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/searching-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/searching-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/searching-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/searching-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/searching-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/searching-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/searching-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/searching-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/searching-cs1" %}
 {% endif %}
 
 ## Initial search
 
-The TypeScript Gantt control allows applying search criteria during initial load using the [searchSettings](../../api/gantt/searchsettings) property.  
+The TypeScript Gantt control allows applying search criteria during initial load using the [searchSettings](../../api/gantt/searchsettings) property.
 
 To configure this feature, define the following properties:
 
@@ -62,27 +62,27 @@ The following sample demonstrates an initial search where `fields` is set to **T
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/searching-cs2/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/searching-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/searching-cs2/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/searching-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/searching-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/searching-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/searching-cs2/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/searching-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/searching-cs2/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/searching-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/searching-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/searching-cs2" %}
 {% endif %}
 
 > By default, Gantt searches all the bound column values. To customize this behavior, define the [searchSettings.fields](../../api/gantt/searchSettings#fields) property.
@@ -111,27 +111,27 @@ To search the Gantt records from an external button, invoke the [search](../../a
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/externalSearch-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/externalSearch-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/externalSearch-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/externalSearch-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/externalSearch-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/externalSearch-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/externalSearch-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/externalSearch-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/externalSearch-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/externalSearch-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/externalSearch-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/externalSearch-cs1" %}
 {% endif %}
 
 > You should set the [allowFiltering](../../api/gantt#allowfiltering) property to **true** for searching the content externally.
@@ -146,97 +146,97 @@ This following sample demonstrates searching only within the **TaskName** and **
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/searching-cs3/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/searching-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/searching-cs3/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/searching-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/searching-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/searching-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/searching-cs3/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/searching-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/searching-cs3/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/searching-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/searching-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/searching-cs3" %}
 {% endif %}
 
 ## Clear search by external button
 
-To clear the search results in the TypeScript Gantt from an external button, set the [searchSettings.key](../../api/gantt/searchSettings#key) property to an empty string. 
- 
+To clear the search results in the TypeScript Gantt from an external button, set the [searchSettings.key](../../api/gantt/searchSettings#key) property to an empty string.
+
 Alternatively, you can invoke the [search](../../api/gantt#search) method with an empty string to reset the search.
 
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/clear-search-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/clear-search-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/clear-search-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/clear-search-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/clear-search-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/clear-search-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/clear-search-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/clear-search-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/clear-search-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/clear-search-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/clear-search-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/clear-search-cs1" %}
 {% endif %}
 
 ## Search on each key stroke
 
-You can enable instant filtering in the Gantt Chart control by calling the [search](../../api/gantt#search) method on each `keyup` event.  This can be configured within the component�s [created](../../gantt/events#created) event.
+You can enable instant filtering in the Gantt Chart control by calling the [search](../../api/gantt#search) method on each `keyup` event. This can be configured within the component�s [created](../../gantt/events#created) event.
 
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/searching-cs4/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/searching-cs4/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/searching-cs4/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/searching-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/searching-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/searching-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/searching-cs4/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/searching-cs4/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/searching-cs4/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/searching-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/searching-cs4" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/searching-cs4" %}
 
 {% endif %}
 
 ## Highlight the search text
 
-The TypeScript Gantt Chart control supports highlighting matched search text within grid cells to improve visibility of search results. 
+The TypeScript Gantt Chart control supports highlighting matched search text within grid cells to improve visibility of search results.
 
 This can be achieved using the [queryCellInfo](../../api/gantt#querycellinfo) event, which is triggered during cell rendering. Within this event, check if the cell belongs to the target column, retrieve the cell value and search keyword, and use the `includes` method to detect matches. If a match is found, wrap the matched text in a `<span>` with a custom CSS class for styling.
 
@@ -244,25 +244,25 @@ This can be achieved using the [queryCellInfo](../../api/gantt#querycellinfo) ev
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/searching-cs5/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/searching-cs5/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/searching-cs5/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/searching-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/searching-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/searching-cs5" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/searching-cs5/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/searching-cs5/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/searching-cs5/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/searching-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/searching-cs5" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/searching-cs5" %}
 {% endif %}

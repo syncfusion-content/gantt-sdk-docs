@@ -3,7 +3,7 @@ layout: post
 title: Column template in React Gantt Chart Component | Syncfusion
 description: Learn here all about Column template in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Column template 
+control: Column template
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -23,102 +23,102 @@ The following example demonstrates how to render an image for the **Resources** 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
 {% raw %}
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import _ as React from 'react';
+import _ as ReactDOM from 'react-dom';
 import { GanttComponent, ColumnsDirective, ColumnDirective } from '@syncfusion/ej2-react-gantt';
 import { data, ProjectResources } from './datasource';
 
 function App() {
-    const taskFields = {
-        id: 'TaskID',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        duration: 'Duration',
-        progress: 'Progress',
-        parentID: 'ParentID',
-        resourceInfo: 'resources'
-    };
-    const splitterSettings = {
-        columnIndex: 7
-    };
-    const resourceFields = {
-        id: 'resourceID',
-        name: 'resourceName',
-    };
-    function ganttTemplate(props) {
-        var src = props.TaskID + '.png';
-        return (<div className='image' >
-            <img src={src} style={{ height: '42px' }} />
-        </div>);
-    };
-    const template = ganttTemplate;
-    return <GanttComponent dataSource={data} rowHeight={60} taskFields={taskFields}
+const taskFields = {
+id: 'TaskID',
+name: 'TaskName',
+startDate: 'StartDate',
+duration: 'Duration',
+progress: 'Progress',
+parentID: 'ParentID',
+resourceInfo: 'resources'
+};
+const splitterSettings = {
+columnIndex: 7
+};
+const resourceFields = {
+id: 'resourceID',
+name: 'resourceName',
+};
+function ganttTemplate(props) {
+var src = props.TaskID + '.png';
+return (<div className='image' >
+<img src={src} style={{ height: '42px' }} />
+</div>);
+};
+const template = ganttTemplate;
+return <GanttComponent dataSource={data} rowHeight={60} taskFields={taskFields}
         splitterSettings={splitterSettings} resourceFields={resourceFields} resources={ProjectResources} height='450px'>
-        <ColumnsDirective>
-            <ColumnDirective field='TaskID'></ColumnDirective>
-            <ColumnDirective field='resources' headerText='Resources' width='250' template={template} textAlign='Center'></ColumnDirective>
-            <ColumnDirective field='TaskName'></ColumnDirective>
-            <ColumnDirective field='StartDate'></ColumnDirective>
-            <ColumnDirective field='Duration'></ColumnDirective>
-            <ColumnDirective field='Progress'></ColumnDirective>
-        </ColumnsDirective>
-    </GanttComponent>
+<ColumnsDirective>
+<ColumnDirective field='TaskID'></ColumnDirective>
+<ColumnDirective field='resources' headerText='Resources' width='250' template={template} textAlign='Center'></ColumnDirective>
+<ColumnDirective field='TaskName'></ColumnDirective>
+<ColumnDirective field='StartDate'></ColumnDirective>
+<ColumnDirective field='Duration'></ColumnDirective>
+<ColumnDirective field='Progress'></ColumnDirective>
+</ColumnsDirective>
+</GanttComponent>
 };
 ReactDOM.render(<App />, document.getElementById('root'));
 {% endraw %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
 {% raw %}
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import _ as React from 'react';
+import _ as ReactDOM from 'react-dom';
 import { GanttComponent, ColumnsDirective, SplitterSettings, ColumnDirective } from '@syncfusion/ej2-react-gantt';
 import { data, ProjectResources } from './datasource';
 
 function App() {
-    const taskFields: any = {
-        id: 'TaskID',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        duration: 'Duration',
-        progress: 'Progress',
-        parentID: 'ParentID',
-        resourceInfo: 'resources'
-    };
-    const splitterSettings: SplitterSettings = {
-        columnIndex: 7
-    };
-    const resourceFields: any = {
-        id: 'resourceID',
-        name: 'resourceName',
-    };
-    function ganttTemplate(props: any) {
-        var src = props.TaskID + '.png';
-        return (<div className='image' >
-            <img src={src} style={{ height: '42px' }} />
-        </div>);
-    };
-    const template: any = ganttTemplate;
-    return <GanttComponent dataSource={data} rowHeight={60} taskFields={taskFields}
+const taskFields: any = {
+id: 'TaskID',
+name: 'TaskName',
+startDate: 'StartDate',
+duration: 'Duration',
+progress: 'Progress',
+parentID: 'ParentID',
+resourceInfo: 'resources'
+};
+const splitterSettings: SplitterSettings = {
+columnIndex: 7
+};
+const resourceFields: any = {
+id: 'resourceID',
+name: 'resourceName',
+};
+function ganttTemplate(props: any) {
+var src = props.TaskID + '.png';
+return (<div className='image' >
+<img src={src} style={{ height: '42px' }} />
+</div>);
+};
+const template: any = ganttTemplate;
+return <GanttComponent dataSource={data} rowHeight={60} taskFields={taskFields}
         splitterSettings={splitterSettings} resourceFields={resourceFields} resources={ProjectResources} height='450px'>
-        <ColumnsDirective>
-            <ColumnDirective field='TaskID'></ColumnDirective>
-            <ColumnDirective field='resources' headerText='Resources' width='250' template={template} textAlign='Center'></ColumnDirective>
-            <ColumnDirective field='TaskName'></ColumnDirective>
-            <ColumnDirective field='StartDate'></ColumnDirective>
-            <ColumnDirective field='Duration'></ColumnDirective>
-            <ColumnDirective field='Progress'></ColumnDirective>
-        </ColumnsDirective>
-    </GanttComponent>
+<ColumnsDirective>
+<ColumnDirective field='TaskID'></ColumnDirective>
+<ColumnDirective field='resources' headerText='Resources' width='250' template={template} textAlign='Center'></ColumnDirective>
+<ColumnDirective field='TaskName'></ColumnDirective>
+<ColumnDirective field='StartDate'></ColumnDirective>
+<ColumnDirective field='Duration'></ColumnDirective>
+<ColumnDirective field='Progress'></ColumnDirective>
+</ColumnsDirective>
+</GanttComponent>
 };
 ReactDOM.render(<App />, document.getElementById('root'));
 {% endraw %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/columntemplate-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/columntemplate-cs1" %}
 
 > The [template](https://ej2.syncfusion.com/react/documentation/api/gantt/column#template) option allows to define any HTML content within a column.
 
@@ -132,19 +132,19 @@ The example below demonstrates how to render a hyperlink for the **TaskName** fi
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columntemplate-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columntemplate-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/columntemplate-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs2" %}
 
->The `window.open()` method is a built-in JavaScript function that opens a new browser window or tab with the specified URL.
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/columntemplate-cs2" %}
+
+> The `window.open()` method is a built-in JavaScript function that opens a new browser window or tab with the specified URL.
 
 ## Render other components in a column
 
@@ -158,17 +158,17 @@ The following example demonstrates how to render a `LineChart` for the **customD
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs3/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columntemplate-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs3/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columntemplate-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs3/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/columntemplate-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/columntemplate-cs3" %}
 
 ### Render ColorPicker component in a column
 
@@ -180,17 +180,17 @@ The following example demonstrates how to render a `ColorPicker` for the **Chang
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs4/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columntemplate-cs4/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs4/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columntemplate-cs4/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs4/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/columntemplate-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs4" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/columntemplate-cs4" %}
 
 ### Render DropDownList component in a column
 
@@ -200,17 +200,17 @@ The following example demonstrates how to render the [DropDownList](https://ej2.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs5/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columntemplate-cs5/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs5/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columntemplate-cs5/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs5/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/columntemplate-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs5" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/columntemplate-cs5" %}
 
 ### Render Chip component in a column
 
@@ -220,17 +220,17 @@ The following example demonstrates how to render the Chips component in the **Ta
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs6/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columntemplate-cs6/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs6/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columntemplate-cs6/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs6/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/columntemplate-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs6" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/columntemplate-cs6" %}
 
 ### Render RadioButton in a column
 
@@ -240,17 +240,17 @@ The following example demonstrates rendering `RadioButton` components in the **O
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs7/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columntemplate-cs7/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs7/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columntemplate-cs7/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs7/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/columntemplate-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs7" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/columntemplate-cs7" %}
 
 ## Using condition template
 
@@ -260,19 +260,19 @@ The following example code demonstrates how to render a checkbox only when the *
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs8/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columntemplate-cs8/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs8/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columntemplate-cs8/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs8/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/columntemplate-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs8" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/columntemplate-cs8" %}
 
->You can use any template element or custom component instead of the checkbox in the conditional template based on your requirement.
+> You can use any template element or custom component instead of the checkbox in the conditional template based on your requirement.
 
 ## How to get the row object by clicking on the template element
 
@@ -282,17 +282,17 @@ In the following example, a button is rendered in the **Task Data** column. The 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs9/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columntemplate-cs9/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs9/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columntemplate-cs9/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs9/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/columntemplate-cs9/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs9" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/columntemplate-cs9" %}
 
 ## Use custom helper inside the template
 
@@ -304,17 +304,17 @@ The following example demonstrates how to use a custom helper function inside th
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs10/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columntemplate-cs10/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs10/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columntemplate-cs10/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs10/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/columntemplate-cs10/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs10" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/columntemplate-cs10" %}
 
 > Custom helpers can only be used inside the template of the column.
 
@@ -324,14 +324,14 @@ You can render a component inside a Gantt chart cell by setting the `template` p
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs11/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columntemplate-cs11/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs11/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columntemplate-cs11/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs11/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/columntemplate-cs11/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/columntemplate-cs11" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/columntemplate-cs11" %}

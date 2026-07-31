@@ -3,7 +3,7 @@ layout: post
 title: Open Add and Edit Dialogs in JavaScript Gantt Control | Syncfusion
 description: Learn how to open add and edit dialogs programmatically in the Syncfusion JavaScript Gantt Chart control for efficient task creation and modification.
 platform: gantt-sdk
-control: Open add edit dialog 
+control: Open add edit dialog
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -19,30 +19,31 @@ The following code example shows how to open add and dialog on separate button c
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/openEditAddDialog-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/openEditAddDialog-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/openEditAddDialog-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/openEditAddDialog-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/openEditAddDialog-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/openEditAddDialog-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/openEditAddDialog-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/openEditAddDialog-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/openEditAddDialog-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/openEditAddDialog-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/openEditAddDialog-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/openEditAddDialog-cs1" %}
 {% endif %}
 
 ## See also
+
 - [How to configure task editing?](../../gantt/managing-tasks/task-bar-editing)
 - [How to manage task dependencies?](../../gantt/task-dependency)
 - [How to configure critical path?](../../gantt/critical-path)

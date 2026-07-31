@@ -26,39 +26,40 @@ The following example establishes dependencies:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/predecessor-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/predecessor-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/predecessor-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs1" %}
 
-> * Dependencies between tasks under the same parent are not supported.
-> * Dependencies between tasks in different parent groups are supported when the `allowParentDependency` property is enabled.
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/predecessor-cs1" %}
+
+> - Dependencies between tasks under the same parent are not supported.
+> - Dependencies between tasks in different parent groups are supported when the `allowParentDependency` property is enabled.
 
 ## Understand task relationship types
 
 Task relationships are categorized into four types based on start and finish dates:
+
 - Start to Start (SS): Successor starts with predecessor.
 
-    ![Start to Start dependency](images/ss.png)
+  ![Start to Start dependency](images/ss.png)
 
 - Start to Finish (SF): Successor finishes when predecessor starts.
 
-    ![Start to Finish dependency](images/sf.png)
+  ![Start to Finish dependency](images/sf.png)
 
 - Finish to Start (FS): Successor starts after predecessor finishes (default).
 
-    ![Finish to Start dependency](images/fs.png)
+  ![Finish to Start dependency](images/fs.png)
 
 - Finish to Finish (FF): Successor finishes with predecessor.
 
-    ![Finish to Finish dependency](images/ff.png)
+  ![Finish to Finish dependency](images/ff.png)
 
 Specify types in the data source (e.g., '2SS+1h') for hour-based offsets.
 
@@ -70,17 +71,17 @@ The following example uses duration units:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/predecessor-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/predecessor-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/predecessor-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/predecessor-cs2" %}
 
 This code sets offsets like '2FS+3h', adjusting taskbars accordingly.
 
@@ -94,17 +95,17 @@ The [autoUpdatePredecessorOffset](https://ej2.syncfusion.com/react/documentation
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs10/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/predecessor-cs10/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs10/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/predecessor-cs10/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs10/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/predecessor-cs10/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs10" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/predecessor-cs10" %}
 
 ## Disable automatic dependency offset updates
 
@@ -114,23 +115,24 @@ The following example disables automatic updates:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs5/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/predecessor-cs5/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs5/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/predecessor-cs5/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs5/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/predecessor-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/predecessor-cs5" %}
 
 This code preserves offsets during edits, requiring manual adjustments.
 
 ## Handle dependency validation modes
 
 Dependency validation during editing uses the [actionBegin](https://ej2.syncfusion.com/react/documentation/api/gantt#actionbegin) event with `requestType: 'validateLinkedTask'`. The `validateMode` argument defines modes:
+
 - `respectLink`: Prioritizes links, reverting invalid edits.
 - `removeLink`: Prioritizes editing, removing conflicting links.
 - `preserveLinkWithEditing`: Updates offsets to maintain links (default).
@@ -139,17 +141,17 @@ The following example enables `respectLink` mode:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs3/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/predecessor-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs3/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/predecessor-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs3/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/predecessor-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/predecessor-cs3" %}
 
 This code reverts edits violating links, ensuring dependency integrity.
 
@@ -161,17 +163,17 @@ The following example enables the validation dialog:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs4/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/predecessor-cs4/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs4/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/predecessor-cs4/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs4/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/predecessor-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/predecessor-cs4" %}
 
 This code displays options like "Remove the link and move the task" for conflicts.
 
@@ -183,17 +185,17 @@ The following example toggles dependency lines:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs6/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/predecessor-cs6/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs6/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/predecessor-cs6/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs6/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/predecessor-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs6" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/predecessor-cs6" %}
 
 This code hides lines on button click, with ARIA updates for accessibility.
 
@@ -207,17 +209,17 @@ You can manage task dependencies by adding, updating, or removing predecessor li
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs7/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/predecessor-cs7/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs7/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/predecessor-cs7/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs7/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/predecessor-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs7" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/predecessor-cs7" %}
 
 ## Customize connector lines
 
@@ -227,17 +229,17 @@ The following example sets the connector line background color as red:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs8/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/predecessor-cs8/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs8/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/predecessor-cs8/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs8/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/predecessor-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs8" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/predecessor-cs8" %}
 
 ## Disable predecessor validation
 
@@ -245,23 +247,24 @@ By default, Gantt task dates are validated based on predecessor values. To disab
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs9/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/predecessor-cs9/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs9/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/predecessor-cs9/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs9/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/predecessor-cs9/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs9" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/predecessor-cs9" %}
 
 ## Limitation
 
 > When virtualization is enabled, dependency lines are shown only for tasks currently visible in the viewport. If two tasks are connected by a line, the line will appear only if at least one of the tasks is visible. If both tasks are expanded and the line spans across pages, it will still be displayed as long as one task is in view.
 
 ## See also
+
 - [How to configure task constraints?](https://ej2.syncfusion.com/react/documentation/gantt/task-constraints)
 - [How to customize taskbars?](https://ej2.syncfusion.com/react/documentation/gantt/taskbar)
 - [How to enable critical path?](https://ej2.syncfusion.com/react/documentation/gantt/critical-path)

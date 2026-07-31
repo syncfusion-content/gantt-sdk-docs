@@ -2,7 +2,7 @@
 layout: post
 title: Indent And Outdent in Vue Gantt Chart Component | Syncfusion
 description: Learn here all about indent and outdent in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: In dent and out dent 
+control: In dent and out dent
 platform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -18,11 +18,11 @@ Indent and Outdent of a task are used to update the level of the task in hierarc
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/managing-tasks-cs10/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/managing-tasks-cs10/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/managing-tasks-cs10/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/managing-tasks-cs10/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/managing-tasks-cs10" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/managing-tasks-cs10" %}

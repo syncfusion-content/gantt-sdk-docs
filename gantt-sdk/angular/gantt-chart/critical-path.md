@@ -46,19 +46,19 @@ The following example demonstrates enabling critical path analysis:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/criticalpath/default-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/criticalpath/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/criticalpath/default-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/criticalpath/default-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/criticalpath/default-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/criticalpath/default-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/criticalpath/default-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/criticalpath/default-cs1" %}
 
 The code enables critical path analysis by setting `enableCriticalPath` to **true** and injecting the [CriticalPathService](https://ej2.syncfusion.com/angular/documentation/api/gantt#criticalpathmodule). The component automatically calculates slack values for all tasks and highlights those with zero or negative slack as critical tasks, displaying them with red taskbars and emphasized dependency lines.
 
@@ -70,19 +70,19 @@ The following example demonstrates custom styling for critical tasks using the `
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/customizeCriticalPath/default-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/customizeCriticalPath/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/customizeCriticalPath/default-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/customizeCriticalPath/default-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/customizeCriticalPath/default-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/customizeCriticalPath/default-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/customizeCriticalPath/default-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/customizeCriticalPath/default-cs1" %}
 
 The event handler checks the `isCritical` flag and applies custom colors to taskbars, allowing project-specific visual distinctions for critical path tasks while maintaining clear identification of project bottlenecks.
 

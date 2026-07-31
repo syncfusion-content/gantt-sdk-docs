@@ -3,7 +3,7 @@ layout: post
 title: Holidays in JavaScript Gantt Control | Syncfusion
 description: Learn here all about Holidays in Syncfusion JavaScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Holidays 
+control: Holidays
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -41,27 +41,27 @@ The following example configures single and multi-day holidays:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/holidays-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/holidays-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/holidays-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/holidays-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/holidays-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/holidays-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/holidays-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/holidays-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/holidays-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/holidays-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/holidays-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/holidays-cs1" %}
 {% endif %}
 
 The code defines holidays like Christmas (December 25) and a multi-day New Year break, rendering them as highlighted periods in the timeline.
@@ -72,27 +72,27 @@ Customize holiday visuals using the `cssClass` property to apply distinct styles
 
 ```css
 .national-holiday {
-    background-color: #ffebee;
-    border-left: 3px solid #f44336;
+  background-color: #ffebee;
+  border-left: 3px solid #f44336;
 }
 .national-holiday .e-gantt-holiday-label {
-    color: #d32f2f;
-    font-weight: bold;
-    background-color: #ffcdd2;
-    padding: 2px 6px;
-    border-radius: 4px;
+  color: #d32f2f;
+  font-weight: bold;
+  background-color: #ffcdd2;
+  padding: 2px 6px;
+  border-radius: 4px;
 }
 
 .company-holiday {
-    background-color: #e3f2fd;
-    border-left: 3px solid #2196f3;
+  background-color: #e3f2fd;
+  border-left: 3px solid #2196f3;
 }
 .company-holiday .e-gantt-holiday-label {
-    color: #1976d2;
-    font-style: italic;
-    background-color: #bbdefb;
-    padding: 2px 6px;
-    border-radius: 4px;
+  color: #1976d2;
+  font-style: italic;
+  background-color: #bbdefb;
+  padding: 2px 6px;
+  border-radius: 4px;
 }
 ```
 
@@ -100,24 +100,25 @@ For multi-day holidays, specify both `from` and `to` dates:
 
 ```typescript
 holidays: [
-    {
-        from: new Date('2024-12-24'),
-        to: new Date('2024-12-26'),
-        label: 'Christmas Break',
-        cssClass: 'national-holiday'
-    },
-    {
-        from: new Date('2024-01-01'),
-        to: new Date('2024-01-02'),
-        label: 'New Year Holiday',
-        cssClass: 'company-holiday'
-    }
-]
+  {
+    from: new Date("2024-12-24"),
+    to: new Date("2024-12-26"),
+    label: "Christmas Break",
+    cssClass: "national-holiday",
+  },
+  {
+    from: new Date("2024-01-01"),
+    to: new Date("2024-01-02"),
+    label: "New Year Holiday",
+    cssClass: "company-holiday",
+  },
+];
 ```
 
 This code styles holidays with distinct colors and labels, enhancing timeline readability.
 
 ## See Also
+
 - [How to configure event markers?](../../gantt/event-markers)
 - [How to manage task dependencies?](../../gantt/task-dependency)
 - [How to enable critical path analysis?](../../gantt/critical-path)

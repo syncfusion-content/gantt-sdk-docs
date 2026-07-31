@@ -18,17 +18,17 @@ Enable task addition through the toolbar by setting [editSettings.allowAdding](h
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/toolbarRowadding-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/toolbarRowadding-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/toolbarRowadding-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/toolbarRowadding-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/toolbarRowadding-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/toolbarRowadding-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/toolbarRowadding-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/toolbarRowadding-cs1" %}
 
 ## Add tasks via context menu
 
@@ -36,17 +36,17 @@ Enable context menu task addition by setting [enableContextMenu](https://ej2.syn
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/contextMenuRowAdding-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/contextMenuRowAdding-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/contextMenuRowAdding-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/contextMenuRowAdding-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/contextMenuRowAdding-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/contextMenuRowAdding-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/contextMenuRowAdding-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/contextMenuRowAdding-cs1" %}
 
 ## Add tasks programmatically
 
@@ -54,19 +54,20 @@ Add tasks programmatically using the [addRecord](https://ej2.syncfusion.com/reac
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/customRowadding-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/customRowadding-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/customRowadding-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/customRowadding-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/customRowadding-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/customRowadding-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/customRowadding-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/customRowadding-cs1" %}
 
 ## See also
+
 - [How to configure task editing?](https://ej2.syncfusion.com/react/documentation/gantt/managing-tasks/editing-tasks)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/react/documentation/gantt/task-dependency)
 - [How to configure critical path?](https://ej2.syncfusion.com/react/documentation/gantt/critical-path)

@@ -3,7 +3,7 @@ layout: post
 title: Task bar editing in TypeScript Gantt Chart Control | Syncfusion
 description: Learn how to edit tasks via taskbar interactions in the Syncfusion TypeScript Gantt Chart control for intuitive project timeline adjustments.
 platform: gantt-sdk
-control: Task bar editing 
+control: Task bar editing
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -21,27 +21,27 @@ Enable taskbar editing by setting [allowTaskbarEditing](../../api/gantt/editSett
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs13/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/getting-started-cs13/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs13/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/getting-started-cs13/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs13" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/getting-started-cs13" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs13/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/getting-started-cs13/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs13/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/getting-started-cs13/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs13" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/getting-started-cs13" %}
 {% endif %}
 
 ## Prevent taskbar editing for specific tasks
@@ -52,30 +52,31 @@ Prevent taskbar editing for specific tasks using the [taskbarEditing](../../gant
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/editing-cs5/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/editing-cs5/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/editing-cs5/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/editing-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/editing-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/editing-cs5" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/editing-cs5/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/editing-cs5/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/editing-cs5/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/editing-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/editing-cs5" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/editing-cs5" %}
 {% endif %}
 
 ## See also
+
 - [How to configure task editing?](../../gantt/editing)
 - [How to manage task dependencies?](../../gantt/task-dependency)
 - [How to configure critical path?](../../gantt/critical-path)

@@ -17,17 +17,17 @@ By default, Gantt task date values are validated based on predecessor values. Yo
 @using Syncfusion.Blazor.Gantt
 
 <SfGantt @ref="Gantt" DataSource="@TaskCollection" Height="450px" Width="1000px" ProjectStartDate="ProjectStart" ProjectEndDate="ProjectEnd"
-         Toolbar="@(new List<string>() { "Add", "Edit", "Update", "Cancel"})" EnablePredecessorValidation="false">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate"
+Toolbar="@(new List<string>() { "Add", "Edit", "Update", "Cancel"})" EnablePredecessorValidation="false">
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate"
                      Duration="Duration" Dependency="Predecessor" ParentID="ParentId"></GanttTaskFields>
-    <GanttEditSettings AllowTaskbarEditing="true" AllowEditing="true" AllowAdding="true"></GanttEditSettings>
+<GanttEditSettings AllowTaskbarEditing="true" AllowEditing="true" AllowAdding="true"></GanttEditSettings>
 </SfGantt>
 
 @code {
-    public SfGantt<TaskData>? Gantt;
-    private DateTime ProjectStart = new DateTime(2026, 03, 31);
-    private DateTime ProjectEnd = new DateTime(2026, 07, 06);
-    private List<TaskData>? TaskCollection { get; set; }
+public SfGantt<TaskData>? Gantt;
+private DateTime ProjectStart = new DateTime(2026, 03, 31);
+private DateTime ProjectEnd = new DateTime(2026, 07, 06);
+private List<TaskData>? TaskCollection { get; set; }
 
     protected override void OnInitialized()
     {
@@ -59,6 +59,7 @@ By default, Gantt task date values are validated based on predecessor values. Yo
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -74,52 +75,52 @@ In Gantt Chart, the task relationship link can be broken by editing the start da
 
 When editing tasks with predecessor links, the [TaskbarEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_TaskbarEditing) event is triggered. You can validate the editing action within the `TaskbarEditing` event using the [ValidateMode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.ValidateMode.html) event argument. The `ValidateMode` argument provides the following properties:
 
-Argument |Default value |Description
------|-----|-----
-args.ValidationMode.RespectLink | false | In this validation mode, the predecessor links get high priority. For example, in FS type, with this mode enabled, when the successor task is moved before the predecessor task’s end date, the editing will be reverted, and dates will be validated based on the dependency links.
-args.ValidationMode.PreserveLinkWithEditing | true | In this validation mode, the taskbar editing will be considered along with the dependency links. This relationship will be maintained by updating the offset value of predecessors.
+| Argument                                    | Default value | Description                                                                                                                                                                                                                                                                          |
+| ------------------------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| args.ValidationMode.RespectLink             | false         | In this validation mode, the predecessor links get high priority. For example, in FS type, with this mode enabled, when the successor task is moved before the predecessor task’s end date, the editing will be reverted, and dates will be validated based on the dependency links. |
+| args.ValidationMode.PreserveLinkWithEditing | true          | In this validation mode, the taskbar editing will be considered along with the dependency links. This relationship will be maintained by updating the offset value of predecessors.                                                                                                  |
 
 By default, the [PreserveLinkWithEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.ValidateMode.html#Syncfusion_Blazor_Gantt_ValidateMode_PreserveLinkWithEditing) validation mode is enabled, so the predecessors are updated with offset values.
 
 ![Blazor Gantt Chart updating offset on edit actions](images/blazor-gantt-chart-preserve-link-with-editing.gif)
 
-The following code example explains enabling the [RespectLink](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.ValidateMode.html#Syncfusion_Blazor_Gantt_ValidateMode_RespectLink) validation mode while editing the linked tasks in the [TaskbarEditing](https://blazor.syncfusion.com/documentation/gantt-chart/events#taskbarediting) event.
+The following code example explains enabling the [RespectLink](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.ValidateMode.html#Syncfusion_Blazor_Gantt_ValidateMode_RespectLink) validation mode while editing the linked tasks in the [TaskbarEditing](https://blazor.syncfusion.com/documentation/gantt/events#taskbarediting) event.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="700px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
                      Dependency="Predecessor" ParentID="ParentId"></GanttTaskFields>
-    <GanttEditSettings AllowTaskbarEditing="true" AllowEditing></GanttEditSettings>
-    <GanttEvents TValue="TaskData" TaskbarEditing="TaskbarEditing"></GanttEvents>
+<GanttEditSettings AllowTaskbarEditing="true" AllowEditing></GanttEditSettings>
+<GanttEvents TValue="TaskData" TaskbarEditing="TaskbarEditing"></GanttEvents>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
-    public void TaskbarEditing(TaskbarEditingEventArgs<TaskData> args)
-    {
-        if (args.ValidationMode != null)
-        {
-            args.ValidationMode.RespectLink = true;
-        }
-    }
-    public class TaskData
-    {
-        public int TaskId { get; set; }
-        public string? TaskName { get; set; }
-        public DateTime StartDate { get; set; }
-        public DateTime? EndDate { get; set; }
-        public string? Duration { get; set; }
-        public int Progress { get; set; }
-        public string? Predecessor { get; set; }
-        public int? ParentId { get; set; }
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
+public void TaskbarEditing(TaskbarEditingEventArgs<TaskData> args)
+{
+if (args.ValidationMode != null)
+{
+args.ValidationMode.RespectLink = true;
+}
+}
+public class TaskData
+{
+public int TaskId { get; set; }
+public string? TaskName { get; set; }
+public DateTime StartDate { get; set; }
+public DateTime? EndDate { get; set; }
+public string? Duration { get; set; }
+public int Progress { get; set; }
+public string? Predecessor { get; set; }
+public int? ParentId { get; set; }
+}
 
     public static List<TaskData> GetTaskCollection()
     {
@@ -135,6 +136,7 @@ The following code example explains enabling the [RespectLink](https://help.sync
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -154,10 +156,10 @@ The taskbar can be moved above the specified predecessor offset value, but if it
 @using Syncfusion.Blazor.Gantt
 
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="1000px" ProjectStartDate="ProjectStart" ProjectEndDate="ProjectEnd"
-         Toolbar="@(new List<string>() { "Add", "Edit", "Update", "Cancel" })" AutoUpdatePredecessorOffset="false">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate"
+Toolbar="@(new List<string>() { "Add", "Edit", "Update", "Cancel" })" AutoUpdatePredecessorOffset="false">
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate"
                      Duration="Duration" Dependency="Predecessor" ParentID="ParentId"></GanttTaskFields>
-    <GanttEditSettings AllowTaskbarEditing="true" AllowEditing="true" AllowAdding="true"></GanttEditSettings>
+<GanttEditSettings AllowTaskbarEditing="true" AllowEditing="true" AllowAdding="true"></GanttEditSettings>
 </SfGantt>
 
 @code {
@@ -196,6 +198,7 @@ The taskbar can be moved above the specified predecessor offset value, but if it
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -207,7 +210,7 @@ N> When `EnablePredecessorOffsetValidation` is enabled, the predecessor offset w
 
 ### Auto-link validation
 
-When connector lines are drawn between tasks, the task dates are validated based on predecessor values. You can restrict this validation when drawing predecessors by using the [TaskbarEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_TaskbarEditing)  event. You can enable or disable the validation using the [EnablePredecessorValidation](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.TaskbarEditingEventArgs-1.html#Syncfusion_Blazor_Gantt_TaskbarEditingEventArgs_1_EnablePredecessorValidation) event argument. By default, `EnablePredecessorValidation` is **true**.
+When connector lines are drawn between tasks, the task dates are validated based on predecessor values. You can restrict this validation when drawing predecessors by using the [TaskbarEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_TaskbarEditing) event. You can enable or disable the validation using the [EnablePredecessorValidation](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.TaskbarEditingEventArgs-1.html#Syncfusion_Blazor_Gantt_TaskbarEditingEventArgs_1_EnablePredecessorValidation) event argument. By default, `EnablePredecessorValidation` is **true**.
 
 In the following code example, the connector line connected from task ID 2 to task ID 3 is rendered at load time, so validation occurs. However, the connector line from task ID 6 to task ID 7 is drawn dynamically, and validation is restricted by disabling the `EnablePredecessorValidation` property.
 
@@ -217,10 +220,10 @@ In the following code example, the connector line connected from task ID 2 to ta
 @using Syncfusion.Blazor.Gantt
 
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="1000px" Toolbar="@(new List<string>() { "Add", "Edit", "Update", "Cancel" })">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate"
                      Duration="Duration" Dependency="Predecessor" ParentID="ParentId"></GanttTaskFields>
-    <GanttEditSettings AllowTaskbarEditing="true" AllowEditing="true" AllowAdding="true"></GanttEditSettings>
-    <GanttEvents TaskbarEditing="TaskbarEditingHandler" TValue="TaskData"></GanttEvents>
+<GanttEditSettings AllowTaskbarEditing="true" AllowEditing="true" AllowAdding="true"></GanttEditSettings>
+<GanttEvents TaskbarEditing="TaskbarEditingHandler" TValue="TaskData"></GanttEvents>
 </SfGantt>
 
 @code {
@@ -264,6 +267,7 @@ In the following code example, the connector line connected from task ID 2 to ta
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -271,4 +275,4 @@ In the following code example, the connector line connected from task ID 2 to ta
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/LZhxNxingkZucsiM?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-> [EnablePredecessorValidation](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_EnablePredecessorValidation) API is used to enable/disable validation based on predecessor values both on load time and on edit actions like cell editing, dialog editing, and on predecessor drawing. Whereas, [EnablePredecessorValidation](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.TaskbarEditingEventArgs-1.html#Syncfusion_Blazor_Gantt_TaskbarEditingEventArgs_1_EnablePredecessorValidation) event argument is used to enable/disable validation only on predecessor drawing. 
+> [EnablePredecessorValidation](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_EnablePredecessorValidation) API is used to enable/disable validation based on predecessor values both on load time and on edit actions like cell editing, dialog editing, and on predecessor drawing. Whereas, [EnablePredecessorValidation](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.TaskbarEditingEventArgs-1.html#Syncfusion_Blazor_Gantt_TaskbarEditingEventArgs_1_EnablePredecessorValidation) event argument is used to enable/disable validation only on predecessor drawing.

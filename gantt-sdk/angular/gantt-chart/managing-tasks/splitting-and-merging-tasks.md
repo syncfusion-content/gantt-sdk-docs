@@ -27,15 +27,15 @@ Split tasks dynamically using the dialog or context menu, requiring [taskFields.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/split-tasks-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/split-tasks-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/split-tasks-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/split-tasks-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/managing-tasks/split-tasks-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/managing-tasks/split-tasks-cs1" %}
 
 ## Merge tasks dynamically
 
@@ -47,13 +47,13 @@ You can get the clicked segment information using the [onTaskbarClick](https://h
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/clicked-segment-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/clicked-segment-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/clicked-segment-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/clicked-segment-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/managing-tasks/clicked-segment-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/managing-tasks/clicked-segment-cs1" %}
 
 ## Limitations of Split tasks
 
@@ -66,4 +66,3 @@ You can get the clicked segment information using the [onTaskbarClick](https://h
 - [How to bind data in Gantt?](https://ej2.syncfusion.com/angular/documentation/gantt/data-binding)
 - [How to configure task editing?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/editing-tasks)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
-

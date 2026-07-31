@@ -3,7 +3,7 @@ layout: post
 title: Splitter in JavaScript Gantt Chart Control | Syncfusion
 description: Learn here all about splitter in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Splitter 
+control: Splitter
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -23,27 +23,27 @@ The following example sets a percentage-based splitter position. This configurat
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/how-to-splitter-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/how-to-splitter-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/how-to-splitter-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/how-to-splitter-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/how-to-splitter-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/how-to-splitter-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/how-to-splitter-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/how-to-splitter-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/how-to-splitter-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/how-to-splitter-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/how-to-splitter-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/how-to-splitter-cs1" %}
 {% endif %}
 
 > If both [position](../api/gantt/splitterSettings#position) and [columnIndex](../api/gantt/splitterSettings#columnindex) are defined in [splitterSettings](../api/gantt/splitterSettings), only `position` is applied because it takes precedence over `columnIndex`.
@@ -51,6 +51,7 @@ The following example sets a percentage-based splitter position. This configurat
 ## Configure view modes
 
 Set predefined view modes with [splitterSettings.view](../api/gantt/splitterSettings#view):
+
 - **Default**: Displays both TreeGrid and Chart panels.
 - **Grid**: Shows only the TreeGrid panel for data-focused views.
 - **Chart**: Shows only the Chart panel for timeline visualization.
@@ -61,27 +62,27 @@ The following example configures the Grid view mode. This configuration prioriti
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/splitter-view/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/splitter-view/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/splitter-view/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/splitter-view/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/splitter-view" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/splitter-view" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/splitter-view/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/splitter-view/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/splitter-view/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/splitter-view/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/splitter-view" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/splitter-view" %}
 {% endif %}
 
 ## Adjust splitter position dynamically
@@ -94,27 +95,27 @@ The following example adjusts the splitter dynamically:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/changeSplitterDynamically-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/changeSplitterDynamically-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/changeSplitterDynamically-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/changeSplitterDynamically-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/changeSplitterDynamically-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/changeSplitterDynamically-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/changeSplitterDynamically-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/changeSplitterDynamically-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/changeSplitterDynamically-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/changeSplitterDynamically-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/changeSplitterDynamically-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/changeSplitterDynamically-cs1" %}
 {% endif %}
 
 ## Customize splitter appearance
@@ -127,25 +128,25 @@ The following example customizes the splitter’s background and hides the resiz
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/splitter-events/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/splitter-events/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/splitter-events/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/splitter-events/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/splitter-events" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/splitter-events" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/splitter-events/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/splitter-events/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/splitter-events/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/splitter-events/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/splitter-events" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/splitter-events" %}
 {% endif %}

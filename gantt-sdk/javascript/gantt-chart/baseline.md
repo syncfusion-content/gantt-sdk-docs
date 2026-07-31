@@ -3,7 +3,7 @@ layout: post
 title: Baseline in JavaScript Gantt Chart Control | Syncfusion
 description: Learn here all about Baseline in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Baseline 
+control: Baseline
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -27,36 +27,35 @@ To enable baseline, configure the Gantt control by setting [renderBaseline](../a
 
 ```typescript
 export let projectData = [
-    {
-        TaskID: 1,
-        TaskName: 'Project Planning',
-        StartDate: new Date('02/04/2019'),
-        EndDate: new Date('02/08/2019'),
-        baselineStartDate: new Date('02/02/2019'),
-        baselineEndDate: new Date('02/06/2019'),
-        baselineDuration: '5' // Regular baseline
-    },
-    {
-        TaskID: 2,
-        TaskName: 'Milestone Review',
-        StartDate: new Date('02/10/2019'),
-        EndDate: new Date('02/10/2019'),
-        baselineStartDate: new Date('02/09/2019'),
-        baselineEndDate: new Date('02/09/2019'),
-        baselineDuration: '0' // Milestone baseline
-    }
+  {
+    TaskID: 1,
+    TaskName: "Project Planning",
+    StartDate: new Date("02/04/2019"),
+    EndDate: new Date("02/08/2019"),
+    baselineStartDate: new Date("02/02/2019"),
+    baselineEndDate: new Date("02/06/2019"),
+    baselineDuration: "5", // Regular baseline
+  },
+  {
+    TaskID: 2,
+    TaskName: "Milestone Review",
+    StartDate: new Date("02/10/2019"),
+    EndDate: new Date("02/10/2019"),
+    baselineStartDate: new Date("02/09/2019"),
+    baselineEndDate: new Date("02/09/2019"),
+    baselineDuration: "0", // Milestone baseline
+  },
 ];
 
-var baselineColor = 'rgba(255, 107, 107, 0.8)';
-
+var baselineColor = "rgba(255, 107, 107, 0.8)";
 ```
 
 ```css
 .e-gantt .e-gantt-chart .e-baseline-bar {
-    height: 4px;
-    border-radius: 2px;
-    opacity: 0.9;
-    background-color: #4CAF50; 
+  height: 4px;
+  border-radius: 2px;
+  opacity: 0.9;
+  background-color: #4caf50;
 }
 ```
 
@@ -66,27 +65,27 @@ The following example demonstrates complete baseline configuration with proper f
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/baseline-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/baseline-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/baseline-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/baseline-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/baseline-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/baseline-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/baseline-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/baseline-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/baseline-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/baseline-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/baseline-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/baseline-cs1" %}
 {% endif %}
 
 {% if page.publishingplatform == "typescript" %}
@@ -102,17 +101,16 @@ The following example demonstrates complete baseline configuration with proper f
 ## Customize baseline using event
 
 You can customize the baseline bar in the Gantt chart using the [queryTaskbarInfo](../../gantt/events#querytaskbarinfo) event.
- 
+
 {% if page.publishingplatform == "typescript" %}
 
 ```ts
 queryTaskbarInfo: (args) => {
-    const element = args.rowElement.querySelector('.e-baseline-bar');
-    if (element) {
-        (element as HTMLElement).style.background =
-            'linear-gradient(red, yellow)';
-    }
-}
+  const element = args.rowElement.querySelector(".e-baseline-bar");
+  if (element) {
+    (element as HTMLElement).style.background = "linear-gradient(red, yellow)";
+  }
+};
 ```
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -139,9 +137,10 @@ Set the `baselineTemplate` property with a template string or function. The temp
 By default, the Gantt component supports a single baseline per task. However, using the `baselineTemplate`, you can extend this behavior to render multiple baselines by maintaining additional baseline data within a custom field in your data source.
 
 This enables rich visualization scenarios such as:
-* Comparing original vs revised schedules.
-* Visualizing multiple planning phases.
-* Highlighting deviations across timeline checkpoints.
+
+- Comparing original vs revised schedules.
+- Visualizing multiple planning phases.
+- Highlighting deviations across timeline checkpoints.
 
 The following example demonstrates how to render multiple baselines using `baselineTemplate`.
 
@@ -149,25 +148,25 @@ The following example demonstrates how to render multiple baselines using `basel
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/baseline-cs2/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/baseline-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/baseline-cs2/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/baseline-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/baseline-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/baseline-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/baseline-cs2/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/baseline-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/baseline-cs2/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/baseline-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/baseline-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/baseline-cs2" %}
 {% endif %}

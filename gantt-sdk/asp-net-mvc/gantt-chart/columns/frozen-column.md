@@ -6,7 +6,7 @@ platform: gantt-sdk
 control: Column Pinning (Frozen)
 publishingplatform: gantt-sdk
 documentation: ug
---- 
+---
 
 # Column Pinning (Frozen) in ASP.NET MVC Gantt Chart Control
 
@@ -18,10 +18,10 @@ To enable frozen columns, use the `frozenColumns` property in the Gantt Chart co
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/frozenColumn/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/frozenColumn/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="frozenColumn.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/frozenColumn/frozenColumn.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/frozenColumn/frozenColumn.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -31,10 +31,10 @@ To enable frozen columns, use the `FrozenColumns` property in the Gantt Chart co
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/frozenColumn/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/frozenColumn/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="frozenColumn.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/frozenColumn/frozenColumn.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/frozenColumn/frozenColumn.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -51,10 +51,10 @@ To freeze a particular column in the Gantt, set the `isFrozen` property of the c
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/freezeColumn/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/freezeColumn/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="freezeColumn.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/freezeColumn/freezeColumn.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/freezeColumn/freezeColumn.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -66,10 +66,10 @@ To freeze a particular column in the Gantt, set the `IsFrozen` property of the c
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/freezeColumn/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/freezeColumn/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="freezeColumn.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/freezeColumn/freezeColumn.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/freezeColumn/freezeColumn.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -82,20 +82,20 @@ To freeze a particular column in the Gantt, set the `IsFrozen` property of the c
 
 In the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Gantt, the **freeze direction** feature allows you to position frozen columns either to the left, right, or in a fixed position, while still allowing the remaining columns to be horizontally movable. To achieve this, the [column.freeze](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Freeze) property can be utilized. This property is used to specify the freeze direction for individual columns. The types of the `column.freeze` directions:
 
-* **Left**: When the `column.freeze` property is set to **Left**, specific columns will be frozen on the left side.
+- **Left**: When the `column.freeze` property is set to **Left**, specific columns will be frozen on the left side.
 
-* **Right**: When the `column.freeze` property is set to **Right**, certain columns will be frozen on the right side.
+- **Right**: When the `column.freeze` property is set to **Right**, certain columns will be frozen on the right side.
 
-* **Fixed**: The fixed direction locks a column at a fixed position within the Gantt Chart columns. This ensures that the column is always visible during horizontal scroll.
+- **Fixed**: The fixed direction locks a column at a fixed position within the Gantt Chart columns. This ensures that the column is always visible during horizontal scroll.
 
 In the following example, the **TaskID** column is frozen on the left side, the **resources** column is frozen on the right side and the **Progress** column is frozen on the fixed of the content table.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/freezeDirection/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/freezeDirection/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="freezeDirection.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/freezeDirection/freezeDirection.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/freezeDirection/freezeDirection.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -103,20 +103,20 @@ In the following example, the **TaskID** column is frozen on the left side, the 
 
 In the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Gantt, the **freeze direction** feature allows you to position frozen columns either to the left, right, or in a fixed position, while still allowing the remaining columns to be horizontally movable. To achieve this, the [Column.Freeze](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Freeze) property can be utilized. This property is used to specify the freeze direction for individual columns. The types of the `Column.Freeze` directions:
 
-* **Left**: When the `Column.Freeze` property is set to **Left**, specific columns will be frozen on the left side.
+- **Left**: When the `Column.Freeze` property is set to **Left**, specific columns will be frozen on the left side.
 
-* **Right**: When the `Column.Freeze` property is set to **Right**, certain columns will be frozen on the right side.
+- **Right**: When the `Column.Freeze` property is set to **Right**, certain columns will be frozen on the right side.
 
-* **Fixed**: The fixed direction locks a column at a fixed position within the Gantt Chart columns. This ensures that the column is always visible during horizontal scroll.
+- **Fixed**: The fixed direction locks a column at a fixed position within the Gantt Chart columns. This ensures that the column is always visible during horizontal scroll.
 
 In the following example, the **TaskID** column is frozen on the left side, the **resources** column is frozen on the right side and the **Progress** column is frozen on the fixed of the content table.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/freezeDirection/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/freezeDirection/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="freezeDirection.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/freezeDirection/freezeDirection.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/freezeDirection/freezeDirection.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -131,41 +131,44 @@ The frozen line borders of frozen columns in the Syncfusion<sup style="font-size
 
 To change the default frozen line color, use the following CSS class names and apply the desired border color:
 
-For left frozen columns: 
+For left frozen columns:
 
 ```css
 .e-gantt .e-leftfreeze.e-freezeleftborder {
-    border-right-color: rgb(0, 255, 0) !important;
+  border-right-color: rgb(0, 255, 0) !important;
 }
 ```
+
 For right frozen columns:
 
 ```css
 .e-gantt .e-rightfreeze.e-freezerightborder {
-    border-left-color: rgb(0, 0, 255) !important;
+  border-left-color: rgb(0, 0, 255) !important;
 }
 ```
+
 For fixed frozen columns, both left and right borders need to be specified as mentioned below:
 
 ```css
 .e-gantt .e-leftfreeze.e-freezeleftborder {
-    border-right-color: rgb(0, 255, 0) !important;
+  border-right-color: rgb(0, 255, 0) !important;
 }
 
 .e-gantt .e-rightfreeze.e-freezerightborder {
-    border-left-color: rgb(0, 0, 255) !important;
+  border-left-color: rgb(0, 0, 255) !important;
 }
 ```
+
 The following example demonstrates how to change the default frozen line color using CSS:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/frozenLineColor/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/frozenLineColor/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="frozenLineColor.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/frozenLineColor/frozenLineColor.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/frozenLineColor/frozenLineColor.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -173,10 +176,10 @@ The following example demonstrates how to change the default frozen line color u
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/frozenLineColor/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/frozenLineColor/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="frozenLineColor.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/frozenLineColor/frozenLineColor.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/frozenLineColor/frozenLineColor.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with TypeScript Gantt Chart Control | Syncfusion
 description: Checkout and learn about Getting started with TypeScript Gantt Chart control of Syncfusion Essential JS 2 and more details.
 platform: gantt-sdk
-control: Getting started 
+control: Getting started
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -18,11 +18,13 @@ This section explains the steps to create a simple Gantt Chart and demonstrates 
 ## Prerequisites
 
 Ensure you have the following installed on your system before proceeding:
+
 - **Node.js** v14.15.0 or higher
 - **npm** (included with Node.js)
 - **Git** for cloning the repository
 
 You can verify your installations by running:
+
 ```bash
 node --version
 npm --version
@@ -99,13 +101,53 @@ Define a simple task list with hierarchical relationships. The data includes two
 
 ```typescript
 let data: Object[] = [
-    {TaskID: 1, TaskName: 'Project initiation', StartDate: new Date('2024-04-01'), EndDate: new Date('2024-04-15')},
-    {TaskID: 2, TaskName: 'Identify site location', StartDate: new Date('2024-04-01'), Duration: 4, ParentID: 1},
-    {TaskID: 3, TaskName: 'Perform site survey', StartDate: new Date('2024-04-01'), Duration: 4, ParentID: 1},
-    {TaskID: 4, TaskName: 'Soil testing', StartDate: new Date('2024-04-01'), Duration: 3, ParentID: 1},
-    {TaskID: 5, TaskName: 'Project estimation', StartDate: new Date('2024-04-15'), EndDate: new Date('2024-04-25')},
-    {TaskID: 6, TaskName: 'Develop floor plan', StartDate: new Date('2024-04-15'), Duration: 5, ParentID: 5},
-    {TaskID: 7, TaskName: 'Estimate project cost', StartDate: new Date('2024-04-15'), Duration: 5, ParentID: 5}
+  {
+    TaskID: 1,
+    TaskName: "Project initiation",
+    StartDate: new Date("2024-04-01"),
+    EndDate: new Date("2024-04-15"),
+  },
+  {
+    TaskID: 2,
+    TaskName: "Identify site location",
+    StartDate: new Date("2024-04-01"),
+    Duration: 4,
+    ParentID: 1,
+  },
+  {
+    TaskID: 3,
+    TaskName: "Perform site survey",
+    StartDate: new Date("2024-04-01"),
+    Duration: 4,
+    ParentID: 1,
+  },
+  {
+    TaskID: 4,
+    TaskName: "Soil testing",
+    StartDate: new Date("2024-04-01"),
+    Duration: 3,
+    ParentID: 1,
+  },
+  {
+    TaskID: 5,
+    TaskName: "Project estimation",
+    StartDate: new Date("2024-04-15"),
+    EndDate: new Date("2024-04-25"),
+  },
+  {
+    TaskID: 6,
+    TaskName: "Develop floor plan",
+    StartDate: new Date("2024-04-15"),
+    Duration: 5,
+    ParentID: 5,
+  },
+  {
+    TaskID: 7,
+    TaskName: "Estimate project cost",
+    StartDate: new Date("2024-04-15"),
+    Duration: 5,
+    ParentID: 5,
+  },
 ];
 ```
 
@@ -115,24 +157,24 @@ Map the data fields to Gantt Chart properties using [taskFields](https://ej2.syn
 
 ```typescript
 let taskSettings = {
-    id: 'TaskID',
-    name: 'TaskName',
-    startDate: 'StartDate',
-    duration: 'Duration',
-    parentID: 'ParentID'
+  id: "TaskID",
+  name: "TaskName",
+  startDate: "StartDate",
+  duration: "Duration",
+  parentID: "ParentID",
 };
 ```
 
 ### Field mapping reference
 
-| Property | Description | Required |
-|----------|-------------|----------|
-| `id` | Unique task identifier | Yes |
-| `name` | Task display name | Yes |
-| `startDate` | Task start date | Yes |
-| `duration` | Task duration in days | Either Duration or EndDate |
-| `endDate` | Task end date | Either Duration or EndDate |
-| `parentID` | Parent task ID for hierarchy | No |
+| Property    | Description                  | Required                   |
+| ----------- | ---------------------------- | -------------------------- |
+| `id`        | Unique task identifier       | Yes                        |
+| `name`      | Task display name            | Yes                        |
+| `startDate` | Task start date              | Yes                        |
+| `duration`  | Task duration in days        | Either Duration or EndDate |
+| `endDate`   | Task end date                | Either Duration or EndDate |
+| `parentID`  | Parent task ID for hierarchy | No                         |
 
 ## Render the Gantt Chart control
 
@@ -146,22 +188,22 @@ Place the following code in the `app.ts` file to create and configure the Gantt 
 import { Gantt } from '@syncfusion/ej2-gantt';
 
 let gantt: Gantt = new Gantt({
-    dataSource: [
-        {TaskID: 1, TaskName: 'Project initiation', StartDate: new Date('2024-04-01'), EndDate: new Date('2024-04-15')},
-        {TaskID: 2, TaskName: 'Identify site location', StartDate: new Date('2024-04-01'), Duration: 4, ParentID: 1},
-        {TaskID: 3, TaskName: 'Perform site survey', StartDate: new Date('2024-04-01'), Duration: 4, ParentID: 1},
-        {TaskID: 4, TaskName: 'Soil testing', StartDate: new Date('2024-04-01'), Duration: 3, ParentID: 1},
-        {TaskID: 5, TaskName: 'Project estimation', StartDate: new Date('2024-04-15'), EndDate: new Date('2024-04-25')},
-        {TaskID: 6, TaskName: 'Develop floor plan', StartDate: new Date('2024-04-15'), Duration: 5, ParentID: 5},
-        {TaskID: 7, TaskName: 'Estimate project cost', StartDate: new Date('2024-04-15'), Duration: 5, ParentID: 5}
-    ],
-    taskFields: {
-        id: 'TaskID',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        duration: 'Duration',
-        parentID: 'ParentID'
-    }
+dataSource: [
+{TaskID: 1, TaskName: 'Project initiation', StartDate: new Date('2024-04-01'), EndDate: new Date('2024-04-15')},
+{TaskID: 2, TaskName: 'Identify site location', StartDate: new Date('2024-04-01'), Duration: 4, ParentID: 1},
+{TaskID: 3, TaskName: 'Perform site survey', StartDate: new Date('2024-04-01'), Duration: 4, ParentID: 1},
+{TaskID: 4, TaskName: 'Soil testing', StartDate: new Date('2024-04-01'), Duration: 3, ParentID: 1},
+{TaskID: 5, TaskName: 'Project estimation', StartDate: new Date('2024-04-15'), EndDate: new Date('2024-04-25')},
+{TaskID: 6, TaskName: 'Develop floor plan', StartDate: new Date('2024-04-15'), Duration: 5, ParentID: 5},
+{TaskID: 7, TaskName: 'Estimate project cost', StartDate: new Date('2024-04-15'), Duration: 5, ParentID: 5}
+],
+taskFields: {
+id: 'TaskID',
+name: 'TaskName',
+startDate: 'StartDate',
+duration: 'Duration',
+parentID: 'ParentID'
+}
 });
 
 gantt.appendTo('#Gantt');
@@ -210,6 +252,7 @@ npm start
 {% endtabs %}
 
 The application will typically run on `http://localhost:8080` or `http://localhost:3000` depending on your webpack configuration. If you encounter errors:
+
 - **Port already in use**: Change the port in `webpack.config.js` or kill the process using that port
 - **Build errors**: Run `npm install` again to ensure all dependencies are installed correctly
 - **Module not found**: Verify that all imports reference the correct package names (e.g., `@syncfusion/ej2-gantt`)
@@ -228,11 +271,11 @@ You can preview the following sample by clicking the **Preview Sample** button.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs23/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/getting-started-cs23/index.ts %}
 {% endhighlight %}
 {% endtabs %}
-          
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs23" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/getting-started-cs23" %}
 
 ## Error handling
 
@@ -242,17 +285,17 @@ Proper error handling helps identify and resolve issues during development. The 
 
 The `actionFailure` event is triggered when validation errors or configuration issues occur:
 
-* **Invalid duration** — The [duration](https://ej2.syncfusion.com/documentation/api/gantt/taskFields#duration) field accepts only numerical values with an optional decimal point. Non-numerical values trigger the `actionFailure` event.
-* **Invalid dependency** — The [dependency](https://ej2.syncfusion.com/documentation/api/gantt/taskFields#dependency) field accepts a number followed by a predecessor type (FS, FF, SS, SF). Invalid values, special characters, or incorrect predecessor types trigger the `actionFailure` event.
-* **Invalid offset** — The [offset](https://ej2.syncfusion.com/documentation/api/gantt/iPredecessor#offset) accepts only numerical values or their word equivalents followed by a unit. Invalid values trigger the `actionFailure` event.
-* **Failure to map task fields** — The data source fields must be mapped to the Gantt Chart control using the [taskFields](https://ej2.syncfusion.com/documentation/api/gantt/taskFields) property. Missing mappings trigger the `actionFailure` event.
-* **Failure to map resource fields** — To assign resources to a task, resource fields must be mapped using [resourceFields](https://ej2.syncfusion.com/documentation/api/gantt/resourceFields). Missing mappings trigger the `actionFailure` event.
-* **Missing isPrimaryKey** — The [isPrimaryKey](https://ej2.syncfusion.com/documentation/api/gantt/column#isprimarykey) field is crucial for CRUD operations. Failure to map the [id](https://ej2.syncfusion.com/documentation/api/gantt/taskFields#id) column or set `isPrimaryKey` triggers the `actionFailure` event.
-* **Invalid date format** — The [format](https://ej2.syncfusion.com/documentation/api/gantt/iTimelineFormatter) property in `topTier` and `bottomTier` must use valid [date format strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date). Invalid formats trigger the `actionFailure` event.
-* **Missing hasChildMapping** — The [hasChildMapping](https://ej2.syncfusion.com/documentation/api/gantt/taskFields#haschildmapping) property must be configured for [load-on-demand](https://ej2.syncfusion.com/documentation/gantt/data-binding#load-child-on-demand) functionality. Missing mappings trigger the `actionFailure` event.
-* **Invalid event marker day** — The [day](https://ej2.syncfusion.com/documentation/api/gantt/eventMarker#day) property in [eventMarkers](https://ej2.syncfusion.com/documentation/api/gantt/eventMarker) must be a valid date. Invalid dates trigger the `actionFailure` event.
+- **Invalid duration** — The [duration](https://ej2.syncfusion.com/documentation/api/gantt/taskFields#duration) field accepts only numerical values with an optional decimal point. Non-numerical values trigger the `actionFailure` event.
+- **Invalid dependency** — The [dependency](https://ej2.syncfusion.com/documentation/api/gantt/taskFields#dependency) field accepts a number followed by a predecessor type (FS, FF, SS, SF). Invalid values, special characters, or incorrect predecessor types trigger the `actionFailure` event.
+- **Invalid offset** — The [offset](https://ej2.syncfusion.com/documentation/api/gantt/iPredecessor#offset) accepts only numerical values or their word equivalents followed by a unit. Invalid values trigger the `actionFailure` event.
+- **Failure to map task fields** — The data source fields must be mapped to the Gantt Chart control using the [taskFields](https://ej2.syncfusion.com/documentation/api/gantt/taskFields) property. Missing mappings trigger the `actionFailure` event.
+- **Failure to map resource fields** — To assign resources to a task, resource fields must be mapped using [resourceFields](https://ej2.syncfusion.com/documentation/api/gantt/resourceFields). Missing mappings trigger the `actionFailure` event.
+- **Missing isPrimaryKey** — The [isPrimaryKey](https://ej2.syncfusion.com/documentation/api/gantt/column#isprimarykey) field is crucial for CRUD operations. Failure to map the [id](https://ej2.syncfusion.com/documentation/api/gantt/taskFields#id) column or set `isPrimaryKey` triggers the `actionFailure` event.
+- **Invalid date format** — The [format](https://ej2.syncfusion.com/documentation/api/gantt/iTimelineFormatter) property in `topTier` and `bottomTier` must use valid [date format strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date). Invalid formats trigger the `actionFailure` event.
+- **Missing hasChildMapping** — The [hasChildMapping](https://ej2.syncfusion.com/documentation/api/gantt/taskFields#haschildmapping) property must be configured for [load-on-demand](https://ej2.syncfusion.com/documentation/gantt/data-binding#load-child-on-demand) functionality. Missing mappings trigger the `actionFailure` event.
+- **Invalid event marker day** — The [day](https://ej2.syncfusion.com/documentation/api/gantt/eventMarker#day) property in [eventMarkers](https://ej2.syncfusion.com/documentation/api/gantt/eventMarker) must be a valid date. Invalid dates trigger the `actionFailure` event.
 
->**Note**: The `actionFailure` event also captures error information from the underlying TreeGrid component. For more details, refer to [TreeGrid error handling](https://ej2.syncfusion.com/documentation/treegrid/getting-started#handling-errors).
+> **Note**: The `actionFailure` event also captures error information from the underlying TreeGrid component. For more details, refer to [TreeGrid error handling](https://ej2.syncfusion.com/documentation/treegrid/getting-started#handling-errors).
 
 ### Handling errors with actionFailure event
 
@@ -262,19 +305,19 @@ The following code example shows how to attach the [actionFailure](https://ej2.s
 {% highlight ts tabtitle="app.ts" %}
 
 let gantt: Gantt = new Gantt({
-    dataSource: data,
-    taskFields: {
-        id: 'TaskID',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        duration: 'Duration',
-        parentID: 'ParentID'
-    },
-    actionFailure: (args: any) => {
-        // Display error to user or log it
-        console.error('Gantt Error:', args.error);
-        alert(`Error: ${args.error}`);
-    }
+dataSource: data,
+taskFields: {
+id: 'TaskID',
+name: 'TaskName',
+startDate: 'StartDate',
+duration: 'Duration',
+parentID: 'ParentID'
+},
+actionFailure: (args: any) => {
+// Display error to user or log it
+console.error('Gantt Error:', args.error);
+alert(`Error: ${args.error}`);
+}
 });
 
 gantt.appendTo('#Gantt');
@@ -286,11 +329,11 @@ For a complete working example with detailed error scenarios, refer to:
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/exception-handling-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/exception-handling-cs1/index.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/exception-handling-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/exception-handling-cs1" %}
 
 The following screenshot represents the Gantt Exception handling in `actionFailure` event.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Task Constraints in TypeScript Gantt Chart Control | Syncfusion 
+title: Task Constraints in TypeScript Gantt Chart Control | Syncfusion
 description: Learn how to implement and manage task constraints in the Syncfusion TypeScript Gantt Chart control to enforce scheduling rules and dependencies.
 platform: gantt-sdk
 control: Task Constraints
@@ -16,6 +16,7 @@ Task constraints in the [TypeScript Gantt Chart](https://www.syncfusion.com/java
 ## Benefits of task constraints
 
 Task constraints enhance project planning with the following advantages:
+
 - Enforce logical task sequences, ensuring dependencies are respected (e.g., taskbars align with predecessors).
 - Anchor tasks to fixed milestone dates, such as product launches or audits.
 - Prevent resource conflicts by spacing tasks that share teams or equipment.
@@ -27,16 +28,16 @@ Task constraints enhance project planning with the following advantages:
 
 The [constraintType](../api/gantt/taskFieldsModel#constrainttype) property accepts one of eight numeric values from the [ConstraintType](../api/gantt/constraintType) enum, each defining a specific scheduling rule. These can be specified using the corresponding numeric value (e.g., 0). The enum values are typically set in the `taskFields.constraintType` mapping or directly in the data source. Below is a table summarizing the constraint types, their descriptions, example use cases, and their corresponding numeric enum values:
 
-| Constraint Type | Numeric Enum Value | Description | Example Use Case |
-|-----------------|--------------------|-------------|------------------|
-| As Soon As Possible (ASAP) | 0 | Starts the task as soon as dependencies are met. Default for auto-scheduled tasks. | Begin coding once requirements are finalized. |
-| As Late As Possible (ALAP) | 1 | Delays the task until the latest possible start without delaying successors. | Finalize documentation just before release. |
-| Must Start On (MSO) | 2 | Requires the task to start on a specific date. | Start integration on July 1 per contract. |
-| Must Finish On (MFO) | 3 | Requires the task to finish on a specific date. | Submit reports by March 31 for compliance. |
-| Start No Earlier Than (SNET) | 4 | Prevents the task from starting before a date. | Delay marketing until regulatory approval on August 15. |
-| Start No Later Than (SNLT) | 5 | Requires the task to start on or before a date. | Begin reviews by September 1 for reporting. |
-| Finish No Earlier Than (FNET) | 6 | Prevents the task from finishing before a date. | Delay training completion until onboarding finishes. |
-| Finish No Later Than (FNLT) | 7 | Requires the task to finish on or before a date. | Complete QA by July 25 for release. |
+| Constraint Type               | Numeric Enum Value | Description                                                                        | Example Use Case                                        |
+| ----------------------------- | ------------------ | ---------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| As Soon As Possible (ASAP)    | 0                  | Starts the task as soon as dependencies are met. Default for auto-scheduled tasks. | Begin coding once requirements are finalized.           |
+| As Late As Possible (ALAP)    | 1                  | Delays the task until the latest possible start without delaying successors.       | Finalize documentation just before release.             |
+| Must Start On (MSO)           | 2                  | Requires the task to start on a specific date.                                     | Start integration on July 1 per contract.               |
+| Must Finish On (MFO)          | 3                  | Requires the task to finish on a specific date.                                    | Submit reports by March 31 for compliance.              |
+| Start No Earlier Than (SNET)  | 4                  | Prevents the task from starting before a date.                                     | Delay marketing until regulatory approval on August 15. |
+| Start No Later Than (SNLT)    | 5                  | Requires the task to start on or before a date.                                    | Begin reviews by September 1 for reporting.             |
+| Finish No Earlier Than (FNET) | 6                  | Prevents the task from finishing before a date.                                    | Delay training completion until onboarding finishes.    |
+| Finish No Later Than (FNLT)   | 7                  | Requires the task to finish on or before a date.                                   | Complete QA by July 25 for release.                     |
 
 ## Configure task constraints
 
@@ -45,6 +46,7 @@ Configure task constraints using the [taskFields.constraintType](../api/gantt/ta
 **Define taskFields mappings**
 
 Map the following fields in `taskFields`:
+
 - `id`: Task identifier.
 - `name`: Task name.
 - `startDate`: Task start date.
@@ -73,27 +75,27 @@ The following example applies a **MustStartOn** constraint. This code sets a tas
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/task-constraints-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/task-constraints-cs1/index.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/task-constraints-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/task-constraints-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/task-constraints-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/task-constraints-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/task-constraints-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/task-constraints-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/task-constraints-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/task-constraints-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/task-constraints-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/task-constraints-cs1" %}
 
 {% endif %}
 
@@ -127,31 +129,32 @@ The following example disables the **MustStartOn** violation popup:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/task-constraints-cs2/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/task-constraints-cs2/index.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/task-constraints-cs2/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/task-constraints-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/task-constraints-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/task-constraints-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/task-constraints-cs2/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/task-constraints-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/task-constraints-cs2/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/task-constraints-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/task-constraints-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/task-constraints-cs2" %}
 
 {% endif %}
 
 ## See also
+
 - [How to configure task dependencies?](./task-dependency)
 - [How to customize taskbars?](./taskbar)
 - [How to enable baseline rendering?](./baseline)

@@ -3,34 +3,34 @@ layout: post
 title: Excel Export in Angular Gantt Chart Component | Syncfusion
 description: Learn here all about excel export in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Excel export 
+control: Excel export
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
 # Excel Export in Angular Gantt Chart Component
 
-The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component supports exporting project data to Excel and CSV formats, enabling seamless sharing, reporting, and offline analysis.  
- 
-To enable Excel or CSV export functionality, set the [allowExcelExport](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowexcelexport) property to **true** and inject the `ExcelExportService` into the component's `providers` array. 
+The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component supports exporting project data to Excel and CSV formats, enabling seamless sharing, reporting, and offline analysis.
+
+To enable Excel or CSV export functionality, set the [allowExcelExport](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowexcelexport) property to **true** and inject the `ExcelExportService` into the component's `providers` array.
 
 You can trigger export operations using the [excelExport](https://ej2.syncfusion.com/angular/documentation/api/gantt#excelexport) or [csvExport](https://ej2.syncfusion.com/angular/documentation/api/gantt#csvexport) methods, typically within the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/gantt/events#toolbarclick) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/excelExport-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/excelExport-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/excelExport-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/excelExport-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/excelExport-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/excelExport-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/excel-export/excelExport-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/excel-export/excelExport-cs1" %}
 
 ## Binding custom data source while exporting
 
@@ -38,39 +38,39 @@ You can bind a custom data source for Excel or CSV export in the Angular Gantt C
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/customData-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/customData-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/customData-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/customData-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/customData-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/customData-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/excel-export/customData-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/excel-export/customData-cs1" %}
 
 ## Exporting with cell and row spanning
 
 To export merged cells and rows in Excel or CSV files using the Angular Gantt Chart component, handle the [excelQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#excelquerycellinfo) event and apply `rowSpan` and `colSpan` during the export process. The [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querycellinfo) event can be used to customize cell rendering within the Gantt view.
- 
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/excelExport-spanning/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/excelExport-spanning/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/excelExport-spanning/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/excelExport-spanning/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/excelExport-spanning/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/excelExport-spanning/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/excel-export/excelExport-spanning" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/excel-export/excelExport-spanning" %}
 
 ## Show spinner while exporting
 
@@ -78,19 +78,19 @@ To indicate progress during the export operation in the Angular Gantt Chart comp
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/excelExport-spinner/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/excelExport-spinner/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/excelExport-spinner/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/excelExport-spinner/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/excelExport-spinner/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/excelExport-spinner/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/excel-export/excelExport-spinner" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/excel-export/excelExport-spinner" %}
 
 ## Exporting with custom date format
 
@@ -98,19 +98,19 @@ To apply a custom date format to columns during Excel or CSV export in the Angul
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/excelExport-custom-date/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/excelExport-custom-date/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/excelExport-custom-date/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/excelExport-custom-date/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/excelExport-custom-date/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/excelExport-custom-date/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/excel-export/excelExport-custom-date" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/excel-export/excelExport-custom-date" %}
 
 ## Exporting multiple Gantt charts
 
@@ -122,21 +122,21 @@ To export multiple datasets into a single worksheet, set [multipleExport.type](h
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/sameSheet-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/sameSheet-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/sameSheet-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/sameSheet-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/sameSheet-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/sameSheet-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/excel-export/sameSheet-cs1" %}
 
->By default, `multipleExport.blankRows` value is 5.
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/excel-export/sameSheet-cs1" %}
+
+> By default, `multipleExport.blankRows` value is 5.
 
 ### New sheet
 
@@ -144,19 +144,19 @@ To export each Gantt to a separate worksheet, set [multipleExport.type](https://
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/newSheet-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/newSheet-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/newSheet-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/newSheet-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/newSheet-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/newSheet-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/excel-export/newSheet-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/excel-export/newSheet-cs1" %}
 
 ## Export Gantt data as a Blob
 
@@ -164,16 +164,16 @@ To export Gantt data as a Blob object for advanced processing or custom download
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/export-blop/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/export-blop/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/export-blop/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/export-blop/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/export-blop/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/excel-export/export-blop/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/excel-export/export-blop" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/excel-export/export-blop" %}

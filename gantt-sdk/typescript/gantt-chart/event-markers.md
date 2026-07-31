@@ -3,7 +3,7 @@ layout: post
 title: Eventmarkers in TypeScript Gantt Chart Control | Syncfusion
 description: Learn here all about Eventmarkers in Syncfusion TypeScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Event markers 
+control: Event markers
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -43,27 +43,27 @@ The following implementation demonstrates event marker integration within a Gant
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/event-markers-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/event-markers-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/event-markers-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/event-markers-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/event-markers-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/event-markers-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/event-markers-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/event-markers-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/event-markers-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/event-markers-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/event-markers-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/event-markers-cs1" %}
 {% endif %}
 
 ## Programmatically show and hide event markers
@@ -74,27 +74,27 @@ You can programmatically show or hide event markers in the Gantt chart by updati
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/event-markers-cs3/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/event-markers-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/event-markers-cs3/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/event-markers-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/event-markers-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/event-markers-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/event-markers-cs3/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/event-markers-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/event-markers-cs3/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/event-markers-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/event-markers-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/event-markers-cs3" %}
 {% endif %}
 
 ## See Also

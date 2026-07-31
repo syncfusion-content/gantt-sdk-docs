@@ -3,7 +3,7 @@ layout: post
 title: Data Binding in React Gantt Chart Component | Syncfusion
 description: Learn here all about data binding in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Data binding 
+control: Data binding
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -42,17 +42,17 @@ This approach works well for data sources that maintain inherent parent-child re
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/databinding-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/databinding-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/databinding-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/databinding-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/databinding-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/databinding-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/databinding-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/databinding-cs1" %}
 
 ### Self-referential data structure
 
@@ -62,17 +62,17 @@ This approach enables the component to reconstruct hierarchical tree structures 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/databinding-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/databinding-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/databinding-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/databinding-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/databinding-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/databinding-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/databinding-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/databinding-cs2" %}
 
 **Data structure requirements**: When using hierarchical data, link child records to their parent using the `child` property mapping. For self-referential data, ensure each task's parent-child relationship is properly defined by mapping `id` and `parentID` fields correctly to enable proper hierarchy reconstruction.
 
@@ -82,17 +82,17 @@ Remote data binding assigns service endpoints as `DataManager` instances to the 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/databinding-cs3/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/databinding-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/databinding-cs3/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/databinding-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/databinding-cs3/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/databinding-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/databinding-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/databinding-cs3" %}
 
 **Server Communication**: DataManager connects to various backend services including RESTful endpoints, OData services, and custom web APIs. Configure the appropriate URL and adaptor type based on the target server architecture and data format requirements.
 
@@ -127,7 +127,7 @@ function App(){
         { field: 'StartDate' },
         { field: 'Duration' }
     ];
-    return <GanttComponent dataSource={dataSource} taskFields={taskFields} columns={columns} 
+    return <GanttComponent dataSource={dataSource} taskFields={taskFields} columns={columns}
             height='430px'>
            </GanttComponent>
 };
@@ -196,11 +196,11 @@ function App(){
     const projectStartDate = new Date('01/02/2000');
     const projectEndDate = new Date('01/06/2002');
 
-    return <GanttComponent dataSource={dataManager} taskFields={taskFields} 
+    return <GanttComponent dataSource={dataManager} taskFields={taskFields}
             loadChildOnDemand={true} enableVirtualization={true} allowSelection={true}
-            columns={columns} treeColumnIndex={1} height='450px' 
+            columns={columns} treeColumnIndex={1} height='450px'
             projectStartDate={projectStartDate} projectEndDate={projectEndDate}
-            highlightWeekends={true} taskbarHeight={20} rowHeight={40} 
+            highlightWeekends={true} taskbarHeight={20} rowHeight={40}
             tooltipSettings={tooltipSettings} splitterSettings={splitterSettings}>
             <Inject services={[VirtualScroll, Selection]} />
            </GanttComponent>
@@ -316,6 +316,7 @@ public object Get()
     return new { result = data, count = data.Count };
 }
 ```
+
 **Recursive children handling**
 
 ```typescript
@@ -428,6 +429,7 @@ public object GetTimeDifference(DateTime sdate, DateTime edate)
 ```
 
 **Load-on-demand limitations**:
+
 - Filtering, sorting, and searching operations are not supported in load-on-demand mode.
 - Only self-referential data types are supported with remote data binding.
 - Load-on-demand requires validated data source structures.
@@ -464,12 +466,12 @@ function App(){
         allowDeleting: true
     };
     const toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel', 'ExpandAll', 'CollapseAll'];
-    
+
     const load = (args) => {
         ganttInstance.query = new Query().addParams('ej2Gantt', "test");
     };
-    
-    return <GanttComponent dataSource={dataSource} taskFields={taskFields} 
+
+    return <GanttComponent dataSource={dataSource} taskFields={taskFields}
             editSettings={editSettings} toolbar={toolbar} load={load}
             height='430px' ref={gantt => ganttInstance = gantt}>
             <Inject services={[Edit, Toolbar]} />
@@ -517,23 +519,24 @@ namespace URLAdaptor.Controllers
 **HTTP error handling**: Server-side exceptions during data operations can be captured client-side through the [actionFailure](https://ej2.syncfusion.com/react/documentation/api/gantt/index-default#actionfailure) event. This enables proper error messaging and graceful degradation when server communication fails.
 
 **Data validation considerations**:
+
 - **Missing parentID validation**: Tasks without valid parentID references may display incorrectly or appear as root tasks unexpectedly
 - **Duplicate task ID prevention**: Ensure unique taskID values to prevent data operation failures or rendering issues
 - **Date format validation**: Task dates must follow supported formats (ISO or configured formats) to prevent parsing errors
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/databinding-cs4/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/databinding-cs4/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/databinding-cs4/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/databinding-cs4/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/databinding-cs4/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/databinding-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/databinding-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/databinding-cs4" %}
 
 **Fetch API integration**: Use Gantt [dataSource](https://ej2.syncfusion.com/react/documentation/api/gantt/index-default#datasource) property to bind data from external Fetch requests. This approach benefits scenarios requiring asynchronous server data retrieval, utilizing the `onSuccess` event for effective data loading management.
 
@@ -541,17 +544,17 @@ To show or hide the loading indicator during fetch, call [showSpinner](https://e
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/databinding-cs5/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/databinding-cs5/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/databinding-cs5/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/databinding-cs5/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/databinding-cs5/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/databinding-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/databinding-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/databinding-cs5" %}
 
 **Fetch binding limitation**: Data sources bound through Fetch requests act as local data sources, preventing server-side CRUD operations. This approach suits read-only scenarios or applications with separate data modification workflows.
 
@@ -565,29 +568,33 @@ Split tasks at load time using hierarchical structures by defining segment detai
 
 ```typescript
 [
-    {
-        TaskID: 1, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50,
-        Segments: [
-            { StartDate: new Date("04/02/2019"), Duration: 2 },
-            { StartDate: new Date("04/04/2019"), Duration: 2 }
-        ]
-    }
-]
+  {
+    TaskID: 1,
+    TaskName: "Identify Site location",
+    StartDate: new Date("04/02/2019"),
+    Duration: 4,
+    Progress: 50,
+    Segments: [
+      { StartDate: new Date("04/02/2019"), Duration: 2 },
+      { StartDate: new Date("04/04/2019"), Duration: 2 },
+    ],
+  },
+];
 ```
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/databinding-cs6/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/databinding-cs6/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/databinding-cs6/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/databinding-cs6/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/databinding-cs6/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/databinding-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/databinding-cs6" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/databinding-cs6" %}
 
 ### Self-referential split task configuration
 
@@ -607,17 +614,17 @@ segmentData: [
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/databinding-cs7/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/databinding-cs7/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/databinding-cs7/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/databinding-cs7/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/databinding-cs7/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/databinding-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/databinding-cs7" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/databinding-cs7" %}
 
 **Segment ID mapping**: The segment ID field contains references to tasks that should be split at load time, enabling the component to associate segment collections with their corresponding parent tasks.
 
@@ -627,17 +634,17 @@ Control parent task expand status in the Gantt chart by defining the [expandStat
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/databinding-cs8/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/databinding-cs8/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/databinding-cs8/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/databinding-cs8/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/databinding-cs8/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/databinding-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/databinding-cs8" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/databinding-cs8" %}
 
 **State persistence**: ExpandStateMapping ensures parent tasks maintain their intended expanded or collapsed states across data operations, providing consistent user experience and preserving intended data visualization structures.
 
@@ -647,13 +654,13 @@ You can programmatically update the Gantt chart data source using the [updateDat
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/databinding-cs9/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/databinding-cs9/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/databinding-cs9/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/databinding-cs9/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/databinding-cs9/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/databinding-cs9/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -663,13 +670,13 @@ You can display a custom message when no data is available by defining an empty 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/databinding-cs10/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/databinding-cs10/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/databinding-cs10/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/databinding-cs10/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/databinding-cs10/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/databinding-cs10/index.html %}
 {% endhighlight %}
 {% endtabs %}
 

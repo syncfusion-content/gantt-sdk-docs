@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Timezone
 
 The Gantt makes use of the current system time zone by default. If it needs to follow some other user-specific time zone, then the `timezone` property needs to be used.
@@ -25,10 +24,10 @@ Setting `timezone` to UTC for Gantt will display the same time as in the databas
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timezone/same-time/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timezone/same-time/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Same-time.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timezone/same-time/same-time.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timezone/same-time/same-time.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -36,15 +35,13 @@ Setting `timezone` to UTC for Gantt will display the same time as in the databas
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timezone/same-time/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timezone/same-time/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Same-time.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timezone/same-time/same-time.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timezone/same-time/same-time.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## CRUD operations with timezone
 
@@ -54,10 +51,10 @@ CRUD operations can be performed with timezone, and the gantt is rendered based 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timezone/timezone-CRUD/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timezone/timezone-CRUD/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Timezone-CRUD.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timezone/timezone-CRUD/timezone-CRUD.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timezone/timezone-CRUD/timezone-CRUD.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -65,15 +62,13 @@ CRUD operations can be performed with timezone, and the gantt is rendered based 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timezone/timezone-CRUD/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timezone/timezone-CRUD/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Timezone-CRUD.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/timezone/timezone-CRUD/timezone-CRUD.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/timezone/timezone-CRUD/timezone-CRUD.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Timezone methods
 
@@ -81,10 +76,10 @@ CRUD operations can be performed with timezone, and the gantt is rendered based 
 
 This method is used to calculate the difference between passed UTC date and timezone.
 
-| Parameters | Type | Description |
-|------------|------|-------------|
-| Date | Date | UTC time as date object.|
-| Timezone | String | Timezone.|
+| Parameters | Type   | Description              |
+| ---------- | ------ | ------------------------ |
+| Date       | Date   | UTC time as date object. |
+| Timezone   | String | Timezone.                |
 
 Returns `number`
 
@@ -100,11 +95,11 @@ Returns `number`
 
 This method is used to convert the passed date from one timezone to another timezone.
 
-| Parameters | Type | Description |
-|------------|------|-------------|
-| Date | Date | UTC time as date object.|
-| fromOffset | number/string | Timezone from which date need to be converted.|
-| toOffset | number/string | Timezone to which date need to be converted.|
+| Parameters | Type          | Description                                    |
+| ---------- | ------------- | ---------------------------------------------- |
+| Date       | Date          | UTC time as date object.                       |
+| fromOffset | number/string | Timezone from which date need to be converted. |
+| toOffset   | number/string | Timezone to which date need to be converted.   |
 
 Returns `Date`
 
@@ -122,10 +117,10 @@ Returns `Date`
 
 This method is used to remove the time difference between passed UTC date and timezone.
 
-| Parameters | Type | Description |
-|------------|------|-------------|
-| Date | Date | UTC as date object.|
-| Timezone | String | Timezone.|
+| Parameters | Type   | Description         |
+| ---------- | ------ | ------------------- |
+| Date       | Date   | UTC as date object. |
+| Timezone   | String | Timezone.           |
 
 Returns `Date`
 

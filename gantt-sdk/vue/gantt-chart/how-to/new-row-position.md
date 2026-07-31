@@ -2,7 +2,7 @@
 layout: post
 title: New Row Position in Vue Gantt Chart Component | Syncfusion
 description: Learn here all about new row position in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: New row position 
+control: New row position
 platform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -16,11 +16,11 @@ The following code snippets demonstrate how to achieve this.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/how-to/new-row-position-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/how-to/new-row-position-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/how-to/new-row-position-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/how-to/new-row-position-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/how-to/new-row-position-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/how-to/new-row-position-cs1" %}

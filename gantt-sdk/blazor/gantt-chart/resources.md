@@ -15,10 +15,10 @@ Resources in the Blazor Gantt component represent people, equipment, or material
 
 The resource collection in Blazor Gantt Chart defines available resources as a list of objects with fields such as ID, Name, MaxUnits, and Group. These fields are mapped using the [GanttResource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttResource-2.html) property:
 
-* [Id](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttResource-2.html#Syncfusion_Blazor_Gantt_GanttResource_2_Id): Maps to a unique identifier for resource assignment.
-* [Name](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttResource-2.html#Syncfusion_Blazor_Gantt_GanttResource_2_Name): Maps to the resource name displayed in labels or columns.
-* [MaxUnits](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttResource-2.html#Syncfusion_Blazor_Gantt_GanttResource_2_MaxUnits): Maps to the work capacity percentage (0–100%) per day.
-* [Group](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttResource-2.html#Syncfusion_Blazor_Gantt_GanttResource_2_Group): Maps to categories for grouping resources.
+- [Id](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttResource-2.html#Syncfusion_Blazor_Gantt_GanttResource_2_Id): Maps to a unique identifier for resource assignment.
+- [Name](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttResource-2.html#Syncfusion_Blazor_Gantt_GanttResource_2_Name): Maps to the resource name displayed in labels or columns.
+- [MaxUnits](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttResource-2.html#Syncfusion_Blazor_Gantt_GanttResource_2_MaxUnits): Maps to the work capacity percentage (0–100%) per day.
+- [Group](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttResource-2.html#Syncfusion_Blazor_Gantt_GanttResource_2_Group): Maps to categories for grouping resources.
 
 The following code demonstrates resource collection setup:
 
@@ -40,41 +40,41 @@ The following code snippets show the resource collection and how it is assigned 
 @using Syncfusion.Blazor.Gantt
 @using BlazorGanttChart.Data
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="850px" TreeColumnIndex="1" ProjectStartDate="@ProjectStart" ProjectEndDate="@ProjectEnd" WorkUnit="WorkUnit.Hour"
-         Toolbar="@(new List<string>(){ "Add", "Edit", "Update", "Delete", "Cancel", "ExpandAll", "CollapseAll"})">
-    <GanttTaskFields Id="@nameof(GanttModel.TaskData.TaskId)" Name="@nameof(GanttModel.TaskData.Name)" StartDate="@nameof(GanttModel.TaskData.StartDate)" EndDate="@nameof(GanttModel.TaskData.EndDate)" Duration="@nameof(GanttModel.TaskData.Duration)" Progress="@nameof(GanttModel.TaskData.Progress)"
+Toolbar="@(new List<string>(){ "Add", "Edit", "Update", "Delete", "Cancel", "ExpandAll", "CollapseAll"})">
+<GanttTaskFields Id="@nameof(GanttModel.TaskData.TaskId)" Name="@nameof(GanttModel.TaskData.Name)" StartDate="@nameof(GanttModel.TaskData.StartDate)" EndDate="@nameof(GanttModel.TaskData.EndDate)" Duration="@nameof(GanttModel.TaskData.Duration)" Progress="@nameof(GanttModel.TaskData.Progress)"
                      ParentID="@nameof(GanttModel.TaskData.ParentId)" Work="@nameof(GanttModel.TaskData.Work)" TaskType="@nameof(GanttModel.TaskData.TaskType)">
-    </GanttTaskFields>
-    <GanttResource DataSource="ResourceCollection" Id="@nameof(GanttModel.ResourceInfoModel.Id)" Name="@nameof(GanttModel.ResourceInfoModel.Name)" MaxUnits="@nameof(GanttModel.ResourceInfoModel.MaxUnit)" TValue="GanttModel.TaskData" TResources="GanttModel.ResourceInfoModel"></GanttResource>
-    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="@nameof(GanttModel.AssignmentModel.PrimaryId)" TaskID="@nameof(GanttModel.AssignmentModel.TaskID)" ResourceID="@nameof(GanttModel.AssignmentModel.ResourceId)" Units="@nameof(GanttModel.AssignmentModel.Unit)" TValue="GanttModel.TaskData" TAssignment="GanttModel.AssignmentModel">
-    </GanttAssignmentFields>
-    <GanttLabelSettings RightLabel="Resources" TValue="GanttModel.TaskData"></GanttLabelSettings>
-    <GanttEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" AllowTaskbarEditing="true"
+</GanttTaskFields>
+<GanttResource DataSource="ResourceCollection" Id="@nameof(GanttModel.ResourceInfoModel.Id)" Name="@nameof(GanttModel.ResourceInfoModel.Name)" MaxUnits="@nameof(GanttModel.ResourceInfoModel.MaxUnit)" TValue="GanttModel.TaskData" TResources="GanttModel.ResourceInfoModel"></GanttResource>
+<GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="@nameof(GanttModel.AssignmentModel.PrimaryId)" TaskID="@nameof(GanttModel.AssignmentModel.TaskID)" ResourceID="@nameof(GanttModel.AssignmentModel.ResourceId)" Units="@nameof(GanttModel.AssignmentModel.Unit)" TValue="GanttModel.TaskData" TAssignment="GanttModel.AssignmentModel">
+</GanttAssignmentFields>
+<GanttLabelSettings RightLabel="Resources" TValue="GanttModel.TaskData"></GanttLabelSettings>
+<GanttEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" AllowTaskbarEditing="true"
                        ShowDeleteConfirmDialog="true"></GanttEditSettings>
-    <GanttColumns>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.TaskId)" HeaderText="ID"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.Name)" HeaderText="Event Name" Width="250px"></GanttColumn>
-        <GanttResourceColumn HeaderText="Event Resources" Width="300px"></GanttResourceColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.Work)" HeaderText="Work"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.Duration)" HeaderText="Duration"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.TaskType)" HeaderText="Task Type"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.StartDate)" HeaderText="Start Date"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.EndDate)" HeaderText="End Date"></GanttColumn>
-    </GanttColumns>
-    <GanttSplitterSettings Position="28%"> </GanttSplitterSettings>
+<GanttColumns>
+<GanttColumn Field="@nameof(GanttModel.TaskData.TaskId)" HeaderText="ID"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.Name)" HeaderText="Event Name" Width="250px"></GanttColumn>
+<GanttResourceColumn HeaderText="Event Resources" Width="300px"></GanttResourceColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.Work)" HeaderText="Work"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.Duration)" HeaderText="Duration"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.TaskType)" HeaderText="Task Type"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.StartDate)" HeaderText="Start Date"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.EndDate)" HeaderText="End Date"></GanttColumn>
+</GanttColumns>
+<GanttSplitterSettings Position="28%"> </GanttSplitterSettings>
 </SfGantt>
 
 @code {
-    private DateTime ProjectStart = new DateTime(2026, 3, 24);
-    private DateTime ProjectEnd = new DateTime(2026, 7, 28);
-    public List<GanttModel.TaskData> TaskCollection { get; set; } = new();
-    public List<GanttModel.ResourceInfoModel> ResourceCollection { get; set; } = new();
-    public static List<GanttModel.AssignmentModel> AssignmentCollection { get; set; } = new();
-    protected override void OnInitialized()
-    {
-        TaskCollection = GanttModel.GetTaskCollection();
-        ResourceCollection = GanttModel.GetResources;
-        AssignmentCollection = GanttModel.GetAssignmentCollection();
-    }
+private DateTime ProjectStart = new DateTime(2026, 3, 24);
+private DateTime ProjectEnd = new DateTime(2026, 7, 28);
+public List<GanttModel.TaskData> TaskCollection { get; set; } = new();
+public List<GanttModel.ResourceInfoModel> ResourceCollection { get; set; } = new();
+public static List<GanttModel.AssignmentModel> AssignmentCollection { get; set; } = new();
+protected override void OnInitialized()
+{
+TaskCollection = GanttModel.GetTaskCollection();
+ResourceCollection = GanttModel.GetResources;
+AssignmentCollection = GanttModel.GetAssignmentCollection();
+}
 }
 
 {% endhighlight %}
@@ -82,14 +82,14 @@ The following code snippets show the resource collection and how it is assigned 
 
 namespace BlazorGanttChart.Data
 {
-    public class GanttModel
+public class GanttModel
 {
-    public class ResourceInfoModel
-    {
-        public int Id { get; set; }
-        public string? Name { get; set; }
-        public double MaxUnit { get; set; }
-    }
+public class ResourceInfoModel
+{
+public int Id { get; set; }
+public string? Name { get; set; }
+public double MaxUnit { get; set; }
+}
 
     public class TaskData
     {
@@ -165,6 +165,7 @@ namespace BlazorGanttChart.Data
             new TaskData() { TaskId = 9, Name = "Sign contract", StartDate = new DateTime(2026, 03, 31), EndDate = new DateTime(2026, 04, 01), Duration="1", TaskType="FixedWork", Work=24 },
         };
     }
+
 }
 }
 
@@ -177,12 +178,12 @@ namespace BlazorGanttChart.Data
 
 When defining the resource unit within the resource collection, it specifies the amount of work a resource performs per day for a task. This concept is represented by the [Units](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttAssignmentFields-2.html#Syncfusion_Blazor_Gantt_GanttAssignmentFields_2_Units) property in [GanttAssignmentFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttAssignmentFields-2.html) and the [MaxUnits](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttResource-2.html#Syncfusion_Blazor_Gantt_GanttResource_2_MaxUnits) property in `GanttResource`.
 
-* **Units**: Defines the work amount done per day by a resource for a specific task.
-* **MaxUnits**: Sets the resources maximum capacity or availability for any task.
+- **Units**: Defines the work amount done per day by a resource for a specific task.
+- **MaxUnits**: Sets the resources maximum capacity or availability for any task.
 
 When defining the resource unit within the resource collection, it indicates the amount of work that a specific resource will perform per day for a task. This concept is reflected in both the `Units` property in `GanttAssignmentFields` and the `MaxUnits` property in `GanttResource`. The `Units` property specifies the work amount done per day by a resource for a task, while `MaxUnits` sets the resource's maximum capacity or availability for any task.
 
-The following code snippet demonstrates how to assign resources to tasks and map them in the Gantt Chart, providing a clear overview of how resource units and maximum capacities are managed in task allocation. For more details about work and resource units, refer to the [documentation](https://blazor.syncfusion.com/documentation/gantt-chart/work).
+The following code snippet demonstrates how to assign resources to tasks and map them in the Gantt Chart, providing a clear overview of how resource units and maximum capacities are managed in task allocation. For more details about work and resource units, refer to the [documentation](https://blazor.syncfusion.com/documentation/gantt/work).
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -190,41 +191,41 @@ The following code snippet demonstrates how to assign resources to tasks and map
 @using Syncfusion.Blazor.Gantt
 @using BlazorGanttChart.Data
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="850px" TreeColumnIndex="1" ProjectStartDate="@ProjectStart" ProjectEndDate="@ProjectEnd" WorkUnit="WorkUnit.Hour"
-         Toolbar="@(new List<string>(){ "Add", "Edit", "Update", "Delete", "Cancel", "ExpandAll", "CollapseAll"})">
-    <GanttTaskFields Id="@nameof(GanttModel.TaskData.TaskId)" Name="@nameof(GanttModel.TaskData.Name)" StartDate="@nameof(GanttModel.TaskData.StartDate)" EndDate="@nameof(GanttModel.TaskData.EndDate)" Duration="@nameof(GanttModel.TaskData.Duration)" Progress="@nameof(GanttModel.TaskData.Progress)"
+Toolbar="@(new List<string>(){ "Add", "Edit", "Update", "Delete", "Cancel", "ExpandAll", "CollapseAll"})">
+<GanttTaskFields Id="@nameof(GanttModel.TaskData.TaskId)" Name="@nameof(GanttModel.TaskData.Name)" StartDate="@nameof(GanttModel.TaskData.StartDate)" EndDate="@nameof(GanttModel.TaskData.EndDate)" Duration="@nameof(GanttModel.TaskData.Duration)" Progress="@nameof(GanttModel.TaskData.Progress)"
                      ParentID="@nameof(GanttModel.TaskData.ParentId)" Work="@nameof(GanttModel.TaskData.Work)" TaskType="@nameof(GanttModel.TaskData.TaskType)">
-    </GanttTaskFields>
-    <GanttResource DataSource="ResourceCollection" Id="@nameof(GanttModel.ResourceInfoModel.Id)" Name="@nameof(GanttModel.ResourceInfoModel.Name)" MaxUnits="@nameof(GanttModel.ResourceInfoModel.MaxUnit)" TValue="GanttModel.TaskData" TResources="GanttModel.ResourceInfoModel"></GanttResource>
-    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="@nameof(GanttModel.AssignmentModel.PrimaryId)" TaskID="@nameof(GanttModel.AssignmentModel.TaskID)" ResourceID="@nameof(GanttModel.AssignmentModel.ResourceId)" Units="@nameof(GanttModel.AssignmentModel.Unit)" TValue="GanttModel.TaskData" TAssignment="GanttModel.AssignmentModel">
-    </GanttAssignmentFields>
-    <GanttLabelSettings RightLabel="Resources" TValue="GanttModel.TaskData"></GanttLabelSettings>
-    <GanttEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" AllowTaskbarEditing="true"
+</GanttTaskFields>
+<GanttResource DataSource="ResourceCollection" Id="@nameof(GanttModel.ResourceInfoModel.Id)" Name="@nameof(GanttModel.ResourceInfoModel.Name)" MaxUnits="@nameof(GanttModel.ResourceInfoModel.MaxUnit)" TValue="GanttModel.TaskData" TResources="GanttModel.ResourceInfoModel"></GanttResource>
+<GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="@nameof(GanttModel.AssignmentModel.PrimaryId)" TaskID="@nameof(GanttModel.AssignmentModel.TaskID)" ResourceID="@nameof(GanttModel.AssignmentModel.ResourceId)" Units="@nameof(GanttModel.AssignmentModel.Unit)" TValue="GanttModel.TaskData" TAssignment="GanttModel.AssignmentModel">
+</GanttAssignmentFields>
+<GanttLabelSettings RightLabel="Resources" TValue="GanttModel.TaskData"></GanttLabelSettings>
+<GanttEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" AllowTaskbarEditing="true"
                        ShowDeleteConfirmDialog="true"></GanttEditSettings>
-    <GanttColumns>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.TaskId)" HeaderText="ID"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.Name)" HeaderText="Event Name" Width="250px"></GanttColumn>
-        <GanttResourceColumn HeaderText="Event Resources" Width="300px"></GanttResourceColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.Work)" HeaderText="Work"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.Duration)" HeaderText="Duration"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.TaskType)" HeaderText="Task Type"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.StartDate)" HeaderText="Start Date"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.EndDate)" HeaderText="End Date"></GanttColumn>
-    </GanttColumns>
-    <GanttSplitterSettings Position="28%"> </GanttSplitterSettings>
+<GanttColumns>
+<GanttColumn Field="@nameof(GanttModel.TaskData.TaskId)" HeaderText="ID"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.Name)" HeaderText="Event Name" Width="250px"></GanttColumn>
+<GanttResourceColumn HeaderText="Event Resources" Width="300px"></GanttResourceColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.Work)" HeaderText="Work"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.Duration)" HeaderText="Duration"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.TaskType)" HeaderText="Task Type"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.StartDate)" HeaderText="Start Date"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.EndDate)" HeaderText="End Date"></GanttColumn>
+</GanttColumns>
+<GanttSplitterSettings Position="28%"> </GanttSplitterSettings>
 </SfGantt>
 
 @code {
-    private DateTime ProjectStart = new DateTime(2026, 3, 24);
-    private DateTime ProjectEnd = new DateTime(2026, 7, 28);
-    public List<GanttModel.TaskData> TaskCollection { get; set; } = new();
-    public List<GanttModel.ResourceInfoModel> ResourceCollection { get; set; } = new();
-    public static List<GanttModel.AssignmentModel> AssignmentCollection { get; set; } = new();
-    protected override void OnInitialized()
-    {
-        TaskCollection = GanttModel.GetTaskCollection();
-        ResourceCollection = GanttModel.GetResources;
-        AssignmentCollection = GanttModel.GetAssignmentCollection();
-    }
+private DateTime ProjectStart = new DateTime(2026, 3, 24);
+private DateTime ProjectEnd = new DateTime(2026, 7, 28);
+public List<GanttModel.TaskData> TaskCollection { get; set; } = new();
+public List<GanttModel.ResourceInfoModel> ResourceCollection { get; set; } = new();
+public static List<GanttModel.AssignmentModel> AssignmentCollection { get; set; } = new();
+protected override void OnInitialized()
+{
+TaskCollection = GanttModel.GetTaskCollection();
+ResourceCollection = GanttModel.GetResources;
+AssignmentCollection = GanttModel.GetAssignmentCollection();
+}
 }
 
 {% endhighlight %}
@@ -232,14 +233,14 @@ The following code snippet demonstrates how to assign resources to tasks and map
 
 namespace BlazorGanttChart.Data
 {
-    public class GanttModel
-    {
-        public class ResourceInfoModel
-        {
-            public int Id { get; set; }
-            public string? Name { get; set; }
-            public double MaxUnit { get; set; }
-        }
+public class GanttModel
+{
+public class ResourceInfoModel
+{
+public int Id { get; set; }
+public string? Name { get; set; }
+public double MaxUnit { get; set; }
+}
 
         public class TaskData
         {
@@ -316,6 +317,7 @@ namespace BlazorGanttChart.Data
             };
         }
     }
+
 }
 
 {% endhighlight %}
@@ -329,7 +331,7 @@ In the Gantt Chart, you can enable dynamic resource assignments by setting the [
 
 ### Through cell edit
 
-To edit resources directly through [cell editing](https://blazor.syncfusion.com/documentation/gantt-chart/editing-tasks#edit-tasks-via-cell-editing), you can use the [GanttResourceColumn](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttResourceColumn.html) within the [GanttColumns](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumns.html) of the Blazor Gantt Chart. The following code snippet demonstrates the cell edit functionality in the Gantt chart.
+To edit resources directly through [cell editing](https://blazor.syncfusion.com/documentation/gantt/editing-tasks#edit-tasks-via-cell-editing), you can use the [GanttResourceColumn](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttResourceColumn.html) within the [GanttColumns](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumns.html) of the Blazor Gantt Chart. The following code snippet demonstrates the cell edit functionality in the Gantt chart.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -337,55 +339,55 @@ To edit resources directly through [cell editing](https://blazor.syncfusion.com/
 @using Syncfusion.Blazor.Gantt
 @using BlazorGanttChart.Data
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="850px" TreeColumnIndex="1" ProjectStartDate="@ProjectStart" ProjectEndDate="@ProjectEnd" WorkUnit="WorkUnit.Hour"
-         Toolbar="@(new List<string>(){ "Add", "Edit", "Update", "Delete", "Cancel", "ExpandAll", "CollapseAll"})">
-    <GanttTaskFields Id="@nameof(GanttModel.TaskData.TaskId)" Name="@nameof(GanttModel.TaskData.Name)" StartDate="@nameof(GanttModel.TaskData.StartDate)" EndDate="@nameof(GanttModel.TaskData.EndDate)" Duration="@nameof(GanttModel.TaskData.Duration)" Progress="@nameof(GanttModel.TaskData.Progress)"
+Toolbar="@(new List<string>(){ "Add", "Edit", "Update", "Delete", "Cancel", "ExpandAll", "CollapseAll"})">
+<GanttTaskFields Id="@nameof(GanttModel.TaskData.TaskId)" Name="@nameof(GanttModel.TaskData.Name)" StartDate="@nameof(GanttModel.TaskData.StartDate)" EndDate="@nameof(GanttModel.TaskData.EndDate)" Duration="@nameof(GanttModel.TaskData.Duration)" Progress="@nameof(GanttModel.TaskData.Progress)"
                      ParentID="@nameof(GanttModel.TaskData.ParentId)" Work="@nameof(GanttModel.TaskData.Work)" TaskType="@nameof(GanttModel.TaskData.TaskType)">
-    </GanttTaskFields>
-    <GanttResource DataSource="ResourceCollection" Id="@nameof(GanttModel.ResourceInfoModel.Id)" Name="@nameof(GanttModel.ResourceInfoModel.Name)" MaxUnits="@nameof(GanttModel.ResourceInfoModel.MaxUnit)" TValue="GanttModel.TaskData" TResources="GanttModel.ResourceInfoModel"></GanttResource>
-    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="@nameof(GanttModel.AssignmentModel.PrimaryId)" TaskID="@nameof(GanttModel.AssignmentModel.TaskID)" ResourceID="@nameof(GanttModel.AssignmentModel.ResourceId)" Units="@nameof(GanttModel.AssignmentModel.Unit)" TValue="GanttModel.TaskData" TAssignment="GanttModel.AssignmentModel">
-    </GanttAssignmentFields>
-    <GanttLabelSettings RightLabel="Resources" TValue="GanttModel.TaskData"></GanttLabelSettings>
-    <GanttEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" AllowTaskbarEditing="true"
+</GanttTaskFields>
+<GanttResource DataSource="ResourceCollection" Id="@nameof(GanttModel.ResourceInfoModel.Id)" Name="@nameof(GanttModel.ResourceInfoModel.Name)" MaxUnits="@nameof(GanttModel.ResourceInfoModel.MaxUnit)" TValue="GanttModel.TaskData" TResources="GanttModel.ResourceInfoModel"></GanttResource>
+<GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="@nameof(GanttModel.AssignmentModel.PrimaryId)" TaskID="@nameof(GanttModel.AssignmentModel.TaskID)" ResourceID="@nameof(GanttModel.AssignmentModel.ResourceId)" Units="@nameof(GanttModel.AssignmentModel.Unit)" TValue="GanttModel.TaskData" TAssignment="GanttModel.AssignmentModel">
+</GanttAssignmentFields>
+<GanttLabelSettings RightLabel="Resources" TValue="GanttModel.TaskData"></GanttLabelSettings>
+<GanttEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" AllowTaskbarEditing="true"
                        ShowDeleteConfirmDialog="true"></GanttEditSettings>
-    <GanttColumns>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.TaskId)" HeaderText="ID"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.Name)" HeaderText="Event Name" Width="250px"></GanttColumn>
-        <GanttResourceColumn HeaderText="Event Resources" Width="300px"></GanttResourceColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.Work)" HeaderText="Work"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.Duration)" HeaderText="Duration"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.TaskType)" HeaderText="Task Type"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.StartDate)" HeaderText="Start Date"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.EndDate)" HeaderText="End Date"></GanttColumn>
-    </GanttColumns>
-    <GanttSplitterSettings Position="28%"> </GanttSplitterSettings>
+<GanttColumns>
+<GanttColumn Field="@nameof(GanttModel.TaskData.TaskId)" HeaderText="ID"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.Name)" HeaderText="Event Name" Width="250px"></GanttColumn>
+<GanttResourceColumn HeaderText="Event Resources" Width="300px"></GanttResourceColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.Work)" HeaderText="Work"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.Duration)" HeaderText="Duration"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.TaskType)" HeaderText="Task Type"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.StartDate)" HeaderText="Start Date"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.EndDate)" HeaderText="End Date"></GanttColumn>
+</GanttColumns>
+<GanttSplitterSettings Position="28%"> </GanttSplitterSettings>
 </SfGantt>
 
 @code {
-    private DateTime ProjectStart = new DateTime(2026, 3, 24);
-    private DateTime ProjectEnd = new DateTime(2026, 7, 28);
-    public List<GanttModel.TaskData> TaskCollection { get; set; } = new();
-    public List<GanttModel.ResourceInfoModel> ResourceCollection { get; set; } = new();
-    public static List<GanttModel.AssignmentModel> AssignmentCollection { get; set; } = new();
-    protected override void OnInitialized()
-    {
-        TaskCollection = GanttModel.GetTaskCollection();
-        ResourceCollection = GanttModel.GetResources;
-        AssignmentCollection = GanttModel.GetAssignmentCollection();
-    }
+private DateTime ProjectStart = new DateTime(2026, 3, 24);
+private DateTime ProjectEnd = new DateTime(2026, 7, 28);
+public List<GanttModel.TaskData> TaskCollection { get; set; } = new();
+public List<GanttModel.ResourceInfoModel> ResourceCollection { get; set; } = new();
+public static List<GanttModel.AssignmentModel> AssignmentCollection { get; set; } = new();
+protected override void OnInitialized()
+{
+TaskCollection = GanttModel.GetTaskCollection();
+ResourceCollection = GanttModel.GetResources;
+AssignmentCollection = GanttModel.GetAssignmentCollection();
+}
 
 {% endhighlight %}
 {% highlight c# tabtitle="GanttModel.cs" %}
 
 namespace BlazorGanttChart.Data
 {
-    public class GanttModel
-    {
-        public class ResourceInfoModel
-        {
-            public int Id { get; set; }
-            public string? Name { get; set; }
-            public double MaxUnit { get; set; }
-        }
+public class GanttModel
+{
+public class ResourceInfoModel
+{
+public int Id { get; set; }
+public string? Name { get; set; }
+public double MaxUnit { get; set; }
+}
 
         public class TaskData
         {
@@ -462,6 +464,7 @@ namespace BlazorGanttChart.Data
             };
         }
     }
+
 }
 
 {% endhighlight %}
@@ -471,48 +474,48 @@ namespace BlazorGanttChart.Data
 
 ### Through dialog box
 
-In the resource tab of the [Add/Edit dialog box](https://blazor.syncfusion.com/documentation/gantt-chart/editing-tasks#edit-tasks-via-dialog) within the Gantt chart, resources can be conveniently added or removed using the checkboxes provided in the grid rows of the resource tab. Selecting a checkbox item in a grid row adds the corresponding resource to the task, while unchecking it removes the resource. Additionally, the resource tab allows editing the unit value for individual resources.
+In the resource tab of the [Add/Edit dialog box](https://blazor.syncfusion.com/documentation/gantt/editing-tasks#edit-tasks-via-dialog) within the Gantt chart, resources can be conveniently added or removed using the checkboxes provided in the grid rows of the resource tab. Selecting a checkbox item in a grid row adds the corresponding resource to the task, while unchecking it removes the resource. Additionally, the resource tab allows editing the unit value for individual resources.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
- 
+
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="850px" TreeColumnIndex="1" ProjectStartDate="@ProjectStart" ProjectEndDate="@ProjectEnd" WorkUnit="WorkUnit.Hour"
-         Toolbar="@(new List<string>(){ "Add", "Edit", "Update", "Delete", "Cancel", "ExpandAll", "CollapseAll"})">
-    <GanttTaskFields Id="@nameof(GanttModel.TaskData.TaskId)" Name="@nameof(GanttModel.TaskData.Name)" StartDate="@nameof(GanttModel.TaskData.StartDate)" EndDate="@nameof(GanttModel.TaskData.EndDate)" Duration="@nameof(GanttModel.TaskData.Duration)" Progress="@nameof(GanttModel.TaskData.Progress)"
+Toolbar="@(new List<string>(){ "Add", "Edit", "Update", "Delete", "Cancel", "ExpandAll", "CollapseAll"})">
+<GanttTaskFields Id="@nameof(GanttModel.TaskData.TaskId)" Name="@nameof(GanttModel.TaskData.Name)" StartDate="@nameof(GanttModel.TaskData.StartDate)" EndDate="@nameof(GanttModel.TaskData.EndDate)" Duration="@nameof(GanttModel.TaskData.Duration)" Progress="@nameof(GanttModel.TaskData.Progress)"
                      ParentID="@nameof(GanttModel.TaskData.ParentId)" Work="@nameof(GanttModel.TaskData.Work)" TaskType="@nameof(GanttModel.TaskData.TaskType)">
-    </GanttTaskFields>
-    <GanttResource DataSource="ResourceCollection" Id="@nameof(GanttModel.ResourceInfoModel.Id)" Name="@nameof(GanttModel.ResourceInfoModel.Name)" MaxUnits="@nameof(GanttModel.ResourceInfoModel.MaxUnit)" TValue="GanttModel.TaskData" TResources="GanttModel.ResourceInfoModel"></GanttResource>
-    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="@nameof(GanttModel.AssignmentModel.PrimaryId)" TaskID="@nameof(GanttModel.AssignmentModel.TaskID)" ResourceID="@nameof(GanttModel.AssignmentModel.ResourceId)" Units="@nameof(GanttModel.AssignmentModel.Unit)" TValue="GanttModel.TaskData" TAssignment="GanttModel.AssignmentModel">
-    </GanttAssignmentFields>
-    <GanttLabelSettings RightLabel="Resources" TValue="GanttModel.TaskData"></GanttLabelSettings>
-    <GanttEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" AllowTaskbarEditing="true"
+</GanttTaskFields>
+<GanttResource DataSource="ResourceCollection" Id="@nameof(GanttModel.ResourceInfoModel.Id)" Name="@nameof(GanttModel.ResourceInfoModel.Name)" MaxUnits="@nameof(GanttModel.ResourceInfoModel.MaxUnit)" TValue="GanttModel.TaskData" TResources="GanttModel.ResourceInfoModel"></GanttResource>
+<GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="@nameof(GanttModel.AssignmentModel.PrimaryId)" TaskID="@nameof(GanttModel.AssignmentModel.TaskID)" ResourceID="@nameof(GanttModel.AssignmentModel.ResourceId)" Units="@nameof(GanttModel.AssignmentModel.Unit)" TValue="GanttModel.TaskData" TAssignment="GanttModel.AssignmentModel">
+</GanttAssignmentFields>
+<GanttLabelSettings RightLabel="Resources" TValue="GanttModel.TaskData"></GanttLabelSettings>
+<GanttEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" AllowTaskbarEditing="true"
                        ShowDeleteConfirmDialog="true"></GanttEditSettings>
-    <GanttColumns>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.TaskId)" HeaderText="ID"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.Name)" HeaderText="Event Name" Width="250px"></GanttColumn>
-        <GanttResourceColumn HeaderText="Event Resources" Width="300px"></GanttResourceColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.Work)" HeaderText="Work"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.Duration)" HeaderText="Duration"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.TaskType)" HeaderText="Task Type"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.StartDate)" HeaderText="Start Date"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.EndDate)" HeaderText="End Date"></GanttColumn>
-    </GanttColumns>
-    <GanttSplitterSettings Position="28%"> </GanttSplitterSettings>
+<GanttColumns>
+<GanttColumn Field="@nameof(GanttModel.TaskData.TaskId)" HeaderText="ID"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.Name)" HeaderText="Event Name" Width="250px"></GanttColumn>
+<GanttResourceColumn HeaderText="Event Resources" Width="300px"></GanttResourceColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.Work)" HeaderText="Work"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.Duration)" HeaderText="Duration"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.TaskType)" HeaderText="Task Type"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.StartDate)" HeaderText="Start Date"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.EndDate)" HeaderText="End Date"></GanttColumn>
+</GanttColumns>
+<GanttSplitterSettings Position="28%"> </GanttSplitterSettings>
 </SfGantt>
 
 @code {
-    private DateTime ProjectStart = new DateTime(2026, 3, 24);
-    private DateTime ProjectEnd = new DateTime(2026, 7, 28);
-    public List<GanttModel.TaskData> TaskCollection { get; set; } = new();
-    public List<GanttModel.ResourceInfoModel> ResourceCollection { get; set; } = new();
-    public static List<GanttModel.AssignmentModel> AssignmentCollection { get; set; } = new();
-    protected override void OnInitialized()
-    {
-        TaskCollection = GanttModel.GetTaskCollection();
-        ResourceCollection = GanttModel.GetResources;
-        AssignmentCollection = GanttModel.GetAssignmentCollection();
-    }
+private DateTime ProjectStart = new DateTime(2026, 3, 24);
+private DateTime ProjectEnd = new DateTime(2026, 7, 28);
+public List<GanttModel.TaskData> TaskCollection { get; set; } = new();
+public List<GanttModel.ResourceInfoModel> ResourceCollection { get; set; } = new();
+public static List<GanttModel.AssignmentModel> AssignmentCollection { get; set; } = new();
+protected override void OnInitialized()
+{
+TaskCollection = GanttModel.GetTaskCollection();
+ResourceCollection = GanttModel.GetResources;
+AssignmentCollection = GanttModel.GetAssignmentCollection();
+}
 }
 
 {% endhighlight %}
@@ -522,12 +525,12 @@ using System.ComponentModel.DataAnnotations;
 
 namespace BlazorGanttChart.Data
 {
-    public class ResourceInfoModel
-        {
-            public int Id { get; set; }
-            public string? Name { get; set; }
-            public double MaxUnit { get; set; }
-        }
+public class ResourceInfoModel
+{
+public int Id { get; set; }
+public string? Name { get; set; }
+public double MaxUnit { get; set; }
+}
 
         public class TaskData
         {
@@ -604,6 +607,7 @@ namespace BlazorGanttChart.Data
             };
         }
     }
+
 }
 
 {% endhighlight %}
@@ -615,25 +619,25 @@ namespace BlazorGanttChart.Data
 
 You can manage task resources programmatically by using the following methods:
 
-* [AddResourceAssignmentAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AddResourceAssignmentAsync__1___0_): This method adds a new resource to a specific task in the Gantt chart.
-* [DeleteResourceAssignmentAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_DeleteResourceAssignmentAsync__1___0_): Use this method to remove a resource from an existing task in the Gantt chart.
-* [UpdateResourceAssignmentAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_UpdateResourceAssignmentAsync__1___0_): This method updates an existing resource assignment for a task, allowing you to modify resource allocations as needed within the Gantt chart.
+- [AddResourceAssignmentAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AddResourceAssignmentAsync__1___0_): This method adds a new resource to a specific task in the Gantt chart.
+- [DeleteResourceAssignmentAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_DeleteResourceAssignmentAsync__1___0_): Use this method to remove a resource from an existing task in the Gantt chart.
+- [UpdateResourceAssignmentAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_UpdateResourceAssignmentAsync__1___0_): This method updates an existing resource assignment for a task, allowing you to modify resource allocations as needed within the Gantt chart.
 
 Additionally, you can retrieve assigned resources and resource assignments through the following methods:
 
-* [GetResources](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_GetResources__1__0_): Retrieves the list of resources.
+- [GetResources](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_GetResources__1__0_): Retrieves the list of resources.
 
-* [GetResourceAssignments](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_GetResourceAssignments__1__0_): Retrieves the list of resource assignments.
+- [GetResourceAssignments](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_GetResourceAssignments__1__0_): Retrieves the list of resource assignments.
 
-* [AddRecordAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AddRecordAsync__0_System_Nullable_System_Int32__System_Nullable_Syncfusion_Blazor_Gantt_RowPosition__System_Object_) - This method is used to add a new task to the Gantt chart. The fourth argument in this method is used for adding resources to the task.
+- [AddRecordAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AddRecordAsync__0_System_Nullable_System_Int32__System_Nullable_Syncfusion_Blazor_Gantt_RowPosition__System_Object_) - This method is used to add a new task to the Gantt chart. The fourth argument in this method is used for adding resources to the task.
 
 These methods offer a convenient way to add, remove, and update task resources in your Gantt chart efficiently. In the code snippet below, upon clicking an external button, the following actions are performed:
 
-* Add a resource to the 7th index record.
-* Update the resource of the 3rd index record.
-* Delete the resource of the 1st index record.
-* Retrieve the resource of the 1st index record.
-* Retrieve the resource assignments of the 1st index record.
+- Add a resource to the 7th index record.
+- Update the resource of the 3rd index record.
+- Delete the resource of the 1st index record.
+- Retrieve the resource of the 1st index record.
+- Retrieve the resource assignments of the 1st index record.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -649,57 +653,57 @@ These methods offer a convenient way to add, remove, and update task resources i
 <button @onclick="AddNewRecord">AddRecord</button>
 
 <SfGantt @ref="Gantt" DataSource="@TaskCollection" Height="450px" Width="850px" TreeColumnIndex="1" ProjectStartDate="@ProjectStart" ProjectEndDate="@ProjectEnd" WorkUnit="WorkUnit.Hour"
-         Toolbar="@(new List<string>(){ "Add", "Edit", "Update", "Delete", "Cancel", "ExpandAll", "CollapseAll"})">
-    <GanttTaskFields Id="@nameof(GanttModel.TaskData.TaskId)" Name="@nameof(GanttModel.TaskData.Name)" StartDate="@nameof(GanttModel.TaskData.StartDate)" EndDate="@nameof(GanttModel.TaskData.EndDate)" Duration="@nameof(GanttModel.TaskData.Duration)" Progress="@nameof(GanttModel.TaskData.Progress)"
+Toolbar="@(new List<string>(){ "Add", "Edit", "Update", "Delete", "Cancel", "ExpandAll", "CollapseAll"})">
+<GanttTaskFields Id="@nameof(GanttModel.TaskData.TaskId)" Name="@nameof(GanttModel.TaskData.Name)" StartDate="@nameof(GanttModel.TaskData.StartDate)" EndDate="@nameof(GanttModel.TaskData.EndDate)" Duration="@nameof(GanttModel.TaskData.Duration)" Progress="@nameof(GanttModel.TaskData.Progress)"
                      ParentID="@nameof(GanttModel.TaskData.ParentId)" Work="@nameof(GanttModel.TaskData.Work)" TaskType="@nameof(GanttModel.TaskData.TaskType)">
-    </GanttTaskFields>
-    <GanttResource DataSource="ResourceCollection" Id="@nameof(GanttModel.ResourceInfoModel.Id)" Name="@nameof(GanttModel.ResourceInfoModel.Name)" MaxUnits="@nameof(GanttModel.ResourceInfoModel.MaxUnit)" TValue="GanttModel.TaskData" TResources="GanttModel.ResourceInfoModel"></GanttResource>
-    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="@nameof(GanttModel.AssignmentModel.PrimaryId)" TaskID="@nameof(GanttModel.AssignmentModel.TaskID)" ResourceID="@nameof(GanttModel.AssignmentModel.ResourceId)" Units="@nameof(GanttModel.AssignmentModel.Unit)" TValue="GanttModel.TaskData" TAssignment="GanttModel.AssignmentModel">
-    </GanttAssignmentFields>
-    <GanttLabelSettings RightLabel="Resources" TValue="GanttModel.TaskData"></GanttLabelSettings>
-    <GanttEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" AllowTaskbarEditing="true"
+</GanttTaskFields>
+<GanttResource DataSource="ResourceCollection" Id="@nameof(GanttModel.ResourceInfoModel.Id)" Name="@nameof(GanttModel.ResourceInfoModel.Name)" MaxUnits="@nameof(GanttModel.ResourceInfoModel.MaxUnit)" TValue="GanttModel.TaskData" TResources="GanttModel.ResourceInfoModel"></GanttResource>
+<GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="@nameof(GanttModel.AssignmentModel.PrimaryId)" TaskID="@nameof(GanttModel.AssignmentModel.TaskID)" ResourceID="@nameof(GanttModel.AssignmentModel.ResourceId)" Units="@nameof(GanttModel.AssignmentModel.Unit)" TValue="GanttModel.TaskData" TAssignment="GanttModel.AssignmentModel">
+</GanttAssignmentFields>
+<GanttLabelSettings RightLabel="Resources" TValue="GanttModel.TaskData"></GanttLabelSettings>
+<GanttEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" AllowTaskbarEditing="true"
                        ShowDeleteConfirmDialog="true"></GanttEditSettings>
-    <GanttColumns>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.TaskId)" HeaderText="ID"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.Name)" HeaderText="Event Name" Width="250px"></GanttColumn>
-        <GanttResourceColumn HeaderText="Event Resources" Width="300px"></GanttResourceColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.Work)" HeaderText="Work"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.Duration)" HeaderText="Duration"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.TaskType)" HeaderText="Task Type"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.StartDate)" HeaderText="Start Date"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.EndDate)" HeaderText="End Date"></GanttColumn>
-    </GanttColumns>
-    <GanttSplitterSettings Position="28%"> </GanttSplitterSettings>
+<GanttColumns>
+<GanttColumn Field="@nameof(GanttModel.TaskData.TaskId)" HeaderText="ID"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.Name)" HeaderText="Event Name" Width="250px"></GanttColumn>
+<GanttResourceColumn HeaderText="Event Resources" Width="300px"></GanttResourceColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.Work)" HeaderText="Work"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.Duration)" HeaderText="Duration"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.TaskType)" HeaderText="Task Type"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.StartDate)" HeaderText="Start Date"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.EndDate)" HeaderText="End Date"></GanttColumn>
+</GanttColumns>
+<GanttSplitterSettings Position="28%"> </GanttSplitterSettings>
 </SfGantt>
 
 @code {
-    public SfGantt<GanttModel.TaskData> Gantt { get; set; } = new();
-    private DateTime ProjectStart = new DateTime(2026, 3, 24);
-    private DateTime ProjectEnd = new DateTime(2026, 7, 28);
-    public List<GanttModel.TaskData> TaskCollection { get; set; } = new();
-    public List<GanttModel.ResourceInfoModel> ResourceCollection { get; set; } = new();
-    public static List<GanttModel.AssignmentModel> AssignmentCollection { get; set; } = new();
-    protected override void OnInitialized()
-    {
-        TaskCollection = GanttModel.GetTaskCollection();
-        ResourceCollection = GanttModel.GetResources;
-        AssignmentCollection = GanttModel.GetAssignmentCollection();
-    }
-    private async void AddAssignment()
-    {
-        var record = new GanttModel.AssignmentModel() { PrimaryId = 15, TaskID = 8, ResourceId = 8 };
-        await Gantt.AddResourceAssignmentAsync(record);
-    }
-    private async void UpdateAssignment()
-    {
-        var record = new GanttModel.AssignmentModel() { PrimaryId = 7, TaskID = 4, ResourceId = 3, Unit = 50 };
-        await Gantt.UpdateResourceAssignmentAsync(record);
-    }
-    private async void DeleteAssignment()
-    {
-        var record = new GanttModel.AssignmentModel() { TaskID = 2, ResourceId = 6 };
-        await Gantt.DeleteResourceAssignmentAsync(record);
-    }
+public SfGantt<GanttModel.TaskData> Gantt { get; set; } = new();
+private DateTime ProjectStart = new DateTime(2026, 3, 24);
+private DateTime ProjectEnd = new DateTime(2026, 7, 28);
+public List<GanttModel.TaskData> TaskCollection { get; set; } = new();
+public List<GanttModel.ResourceInfoModel> ResourceCollection { get; set; } = new();
+public static List<GanttModel.AssignmentModel> AssignmentCollection { get; set; } = new();
+protected override void OnInitialized()
+{
+TaskCollection = GanttModel.GetTaskCollection();
+ResourceCollection = GanttModel.GetResources;
+AssignmentCollection = GanttModel.GetAssignmentCollection();
+}
+private async void AddAssignment()
+{
+var record = new GanttModel.AssignmentModel() { PrimaryId = 15, TaskID = 8, ResourceId = 8 };
+await Gantt.AddResourceAssignmentAsync(record);
+}
+private async void UpdateAssignment()
+{
+var record = new GanttModel.AssignmentModel() { PrimaryId = 7, TaskID = 4, ResourceId = 3, Unit = 50 };
+await Gantt.UpdateResourceAssignmentAsync(record);
+}
+private async void DeleteAssignment()
+{
+var record = new GanttModel.AssignmentModel() { TaskID = 2, ResourceId = 6 };
+await Gantt.DeleteResourceAssignmentAsync(record);
+}
 
     private void GetResource()
     {
@@ -719,6 +723,7 @@ These methods offer a convenient way to add, remove, and update task resources i
         GanttModel.TaskData data = new GanttModel.TaskData() { TaskId = 10, Name = "NewRecord", StartDate = new DateTime(2021, 03, 29), Duration = "2", TaskType="FixedDuration" };
         await Gantt.AddRecordAsync(data, 0, null, record);
     }
+
 }
 
 {% endhighlight %}
@@ -726,14 +731,14 @@ These methods offer a convenient way to add, remove, and update task resources i
 
 namespace BlazorGanttChart.Data
 {
-    public class GanttModel
-    {
-        public class ResourceInfoModel
-        {
-            public int Id { get; set; }
-            public string? Name { get; set; }
-            public double MaxUnit { get; set; }
-        }
+public class GanttModel
+{
+public class ResourceInfoModel
+{
+public int Id { get; set; }
+public string? Name { get; set; }
+public double MaxUnit { get; set; }
+}
 
         public class TaskData
         {
@@ -810,8 +815,8 @@ namespace BlazorGanttChart.Data
             };
         }
     }
-}
 
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -832,63 +837,63 @@ In the following code snippet, the `ResourceAssignmentChanging` event is used to
 
 <span class="text-primary">@assignmentEventMessage</span>
 <SfGantt @ref="Gantt" DataSource="@TaskCollection" Height="450px" Width="850px" TreeColumnIndex="1" WorkUnit="WorkUnit.Hour"
-         Toolbar="@(new List<string>(){ "Add", "Edit", "Update", "Delete", "Cancel", "ExpandAll", "CollapseAll"})">
-    <GanttTaskFields Id="@nameof(GanttModel.TaskData.TaskId)" Name="@nameof(GanttModel.TaskData.Name)" StartDate="@nameof(GanttModel.TaskData.StartDate)" EndDate="@nameof(GanttModel.TaskData.EndDate)" Duration="@nameof(GanttModel.TaskData.Duration)"
+Toolbar="@(new List<string>(){ "Add", "Edit", "Update", "Delete", "Cancel", "ExpandAll", "CollapseAll"})">
+<GanttTaskFields Id="@nameof(GanttModel.TaskData.TaskId)" Name="@nameof(GanttModel.TaskData.Name)" StartDate="@nameof(GanttModel.TaskData.StartDate)" EndDate="@nameof(GanttModel.TaskData.EndDate)" Duration="@nameof(GanttModel.TaskData.Duration)"
                      ParentID="@nameof(GanttModel.TaskData.ParentId)" Work="@nameof(GanttModel.TaskData.Work)" TaskType="@nameof(GanttModel.TaskData.TaskType)" Progress="@nameof(GanttModel.TaskData.Progress)">
-    </GanttTaskFields>
-    <GanttResource DataSource="ResourceCollection" Id="@nameof(GanttModel.ResourceInfoModel.Id)" Name="@nameof(GanttModel.ResourceInfoModel.Name)" MaxUnits="@nameof(GanttModel.ResourceInfoModel.MaxUnit)" TValue="GanttModel.TaskData" TResources="GanttModel.ResourceInfoModel"></GanttResource>
-    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="@nameof(GanttModel.AssignmentModel.PrimaryId)" TaskID="@nameof(GanttModel.AssignmentModel.TaskID)" ResourceID="@nameof(GanttModel.AssignmentModel.ResourceId)" Units="@nameof(GanttModel.AssignmentModel.Unit)" ResourceAssignmentChanging="AssignmentHandler" TValue="GanttModel.TaskData" TAssignment="GanttModel.AssignmentModel"></GanttAssignmentFields>
-    <GanttLabelSettings RightLabel="Resources" TValue="GanttModel.TaskData"></GanttLabelSettings>
-    <GanttEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" AllowTaskbarEditing="true"
+</GanttTaskFields>
+<GanttResource DataSource="ResourceCollection" Id="@nameof(GanttModel.ResourceInfoModel.Id)" Name="@nameof(GanttModel.ResourceInfoModel.Name)" MaxUnits="@nameof(GanttModel.ResourceInfoModel.MaxUnit)" TValue="GanttModel.TaskData" TResources="GanttModel.ResourceInfoModel"></GanttResource>
+<GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="@nameof(GanttModel.AssignmentModel.PrimaryId)" TaskID="@nameof(GanttModel.AssignmentModel.TaskID)" ResourceID="@nameof(GanttModel.AssignmentModel.ResourceId)" Units="@nameof(GanttModel.AssignmentModel.Unit)" ResourceAssignmentChanging="AssignmentHandler" TValue="GanttModel.TaskData" TAssignment="GanttModel.AssignmentModel"></GanttAssignmentFields>
+<GanttLabelSettings RightLabel="Resources" TValue="GanttModel.TaskData"></GanttLabelSettings>
+<GanttEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" AllowTaskbarEditing="true"
                        ShowDeleteConfirmDialog="true"></GanttEditSettings>
-    <GanttColumns>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.TaskId)" HeaderText="ID"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.Name)" HeaderText="Event Name" Width="250px"></GanttColumn>
-        <GanttResourceColumn HeaderText="Event Resources" Width="300px"></GanttResourceColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.Work)" HeaderText="Work"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.Duration)" HeaderText="Duration"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.TaskType)" HeaderText="Task Type"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.StartDate)" HeaderText="Start Date"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.EndDate)" HeaderText="End Date"></GanttColumn>
-    </GanttColumns>
-    <GanttSplitterSettings Position="28%"> </GanttSplitterSettings>
+<GanttColumns>
+<GanttColumn Field="@nameof(GanttModel.TaskData.TaskId)" HeaderText="ID"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.Name)" HeaderText="Event Name" Width="250px"></GanttColumn>
+<GanttResourceColumn HeaderText="Event Resources" Width="300px"></GanttResourceColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.Work)" HeaderText="Work"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.Duration)" HeaderText="Duration"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.TaskType)" HeaderText="Task Type"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.StartDate)" HeaderText="Start Date"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.EndDate)" HeaderText="End Date"></GanttColumn>
+</GanttColumns>
+<GanttSplitterSettings Position="28%"> </GanttSplitterSettings>
 </SfGantt>
 
 @code {
-    public SfGantt<GanttModel.TaskData> Gantt { get; set; } = new();
-    public List<GanttModel.TaskData> TaskCollection { get; set; } = new();
-    public List<GanttModel.ResourceInfoModel> ResourceCollection { get; set; } = new();
-    public static List<GanttModel.AssignmentModel> AssignmentCollection { get; set; } = new();
-    private string assignmentEventMessage { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GanttModel.GetTaskCollection();
-        ResourceCollection = GanttModel.GetResources;
-        AssignmentCollection = GanttModel.GetAssignmentCollection();
-    }
-    private async Task AssignmentHandler(ResourceAssignmentChangeEventArgs<GanttModel.AssignmentModel> args)
-    {
-        if (args.AddedResources is not null && args.AddedResources.Any())
-        {
-            assignmentEventMessage = "New resource is added!";
-        }
-        if (args.UpdatedResources is not null && args.UpdatedResources.Any())
-        {
-            assignmentEventMessage = "The resource details are updated!";
-        }
-        if (args.DeletedResources is not null && args.DeletedResources.Any())
-        {
-            foreach(GanttModel.AssignmentModel assignment in args.DeletedResources)
-            {
-                if (assignment.TaskID == 2)
-                {
-                    assignmentEventMessage = "The deleted resource action is canceled!";
-                    args.Cancel = true;
-                }
-            }
-        }
-        await Task.CompletedTask;
-    }
+public SfGantt<GanttModel.TaskData> Gantt { get; set; } = new();
+public List<GanttModel.TaskData> TaskCollection { get; set; } = new();
+public List<GanttModel.ResourceInfoModel> ResourceCollection { get; set; } = new();
+public static List<GanttModel.AssignmentModel> AssignmentCollection { get; set; } = new();
+private string assignmentEventMessage { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GanttModel.GetTaskCollection();
+ResourceCollection = GanttModel.GetResources;
+AssignmentCollection = GanttModel.GetAssignmentCollection();
+}
+private async Task AssignmentHandler(ResourceAssignmentChangeEventArgs<GanttModel.AssignmentModel> args)
+{
+if (args.AddedResources is not null && args.AddedResources.Any())
+{
+assignmentEventMessage = "New resource is added!";
+}
+if (args.UpdatedResources is not null && args.UpdatedResources.Any())
+{
+assignmentEventMessage = "The resource details are updated!";
+}
+if (args.DeletedResources is not null && args.DeletedResources.Any())
+{
+foreach(GanttModel.AssignmentModel assignment in args.DeletedResources)
+{
+if (assignment.TaskID == 2)
+{
+assignmentEventMessage = "The deleted resource action is canceled!";
+args.Cancel = true;
+}
+}
+}
+await Task.CompletedTask;
+}
 }
 
 {% endhighlight %}
@@ -896,14 +901,14 @@ In the following code snippet, the `ResourceAssignmentChanging` event is used to
 
 namespace BlazorGanttChart.Data
 {
-    public class GanttModel
-    {
-        public class ResourceInfoModel
-        {
-            public int Id { get; set; }
-            public string? Name { get; set; }
-            public double MaxUnit { get; set; }
-        }
+public class GanttModel
+{
+public class ResourceInfoModel
+{
+public int Id { get; set; }
+public string? Name { get; set; }
+public double MaxUnit { get; set; }
+}
 
         public class TaskData
         {
@@ -980,6 +985,7 @@ namespace BlazorGanttChart.Data
             };
         }
     }
+
 }
 
 {% endhighlight %}
@@ -995,63 +1001,63 @@ The taskbar appearance can be customized by using the [TaskbarTemplate](https://
 {% highlight razor tabtitle="Home.razor" %}
 
 <SfGantt @ref="ganttInstance" DataSource="@TaskCollection" Height="450px" Width="850px" TreeColumnIndex="1" WorkUnit="WorkUnit.Hour"
-         Toolbar="@(new List<string>(){ "Add", "Edit", "Update", "Delete", "Cancel", "ExpandAll", "CollapseAll"})">
-    <GanttTaskFields Id="@nameof(GanttModel.TaskData.TaskId)" Name="@nameof(GanttModel.TaskData.Name)" StartDate="@nameof(GanttModel.TaskData.StartDate)" EndDate="@nameof(GanttModel.TaskData.EndDate)" Duration="@nameof(GanttModel.TaskData.Duration)"
+Toolbar="@(new List<string>(){ "Add", "Edit", "Update", "Delete", "Cancel", "ExpandAll", "CollapseAll"})">
+<GanttTaskFields Id="@nameof(GanttModel.TaskData.TaskId)" Name="@nameof(GanttModel.TaskData.Name)" StartDate="@nameof(GanttModel.TaskData.StartDate)" EndDate="@nameof(GanttModel.TaskData.EndDate)" Duration="@nameof(GanttModel.TaskData.Duration)"
                      ParentID="@nameof(GanttModel.TaskData.ParentId)" Work="@nameof(GanttModel.TaskData.Work)" TaskType="@nameof(GanttModel.TaskData.TaskType)">
-    </GanttTaskFields>
-    <GanttResource DataSource="ResourceCollection" Id="@nameof(GanttModel.ResourceInfoModel.Id)" Name="@nameof(GanttModel.ResourceInfoModel.Name)" MaxUnits="@nameof(GanttModel.ResourceInfoModel.MaxUnit)" TValue="GanttModel.TaskData" TResources="GanttModel.ResourceInfoModel"></GanttResource>
-    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="@nameof(GanttModel.AssignmentModel.PrimaryId)" TaskID="@nameof(GanttModel.AssignmentModel.TaskID)" ResourceID="@nameof(GanttModel.AssignmentModel.ResourceId)" Units="@nameof(GanttModel.AssignmentModel.Unit)" TValue="GanttModel.TaskData" TAssignment="GanttModel.AssignmentModel">
-    </GanttAssignmentFields>
-    <GanttLabelSettings RightLabel="Resources" TValue="GanttModel.TaskData"></GanttLabelSettings>
-    <GanttEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" AllowTaskbarEditing="true"
+</GanttTaskFields>
+<GanttResource DataSource="ResourceCollection" Id="@nameof(GanttModel.ResourceInfoModel.Id)" Name="@nameof(GanttModel.ResourceInfoModel.Name)" MaxUnits="@nameof(GanttModel.ResourceInfoModel.MaxUnit)" TValue="GanttModel.TaskData" TResources="GanttModel.ResourceInfoModel"></GanttResource>
+<GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="@nameof(GanttModel.AssignmentModel.PrimaryId)" TaskID="@nameof(GanttModel.AssignmentModel.TaskID)" ResourceID="@nameof(GanttModel.AssignmentModel.ResourceId)" Units="@nameof(GanttModel.AssignmentModel.Unit)" TValue="GanttModel.TaskData" TAssignment="GanttModel.AssignmentModel">
+</GanttAssignmentFields>
+<GanttLabelSettings RightLabel="Resources" TValue="GanttModel.TaskData"></GanttLabelSettings>
+<GanttEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" AllowTaskbarEditing="true"
                        ShowDeleteConfirmDialog="true"></GanttEditSettings>
-    <GanttTemplates TValue="GanttModel.TaskData">
-        <TaskbarTemplate>
-            @{
-                var task = context as GanttModel.TaskData;
-                if (task is null)
-                {
-                    return;
-                }
-                var taskModel = ganttInstance.GetRowTaskModel(task);
-                string resource = GetResourceName(task);
-                progressColor = "#5869c5";
-                string backgroundColor = GetBGColor(resource);
-                <div class="e-gantt-child-taskbar e-gantt-child-taskbar-inner-div" style="height:24px;background:@backgroundColor" tabindex=-1>
-                    <div class="e-gantt-child-progressbar-inner-div e-gantt-child-progressbar" style="height:24px;width:@(taskModel.ProgressWidth + "px");text-align: right;border-radius: 0px;background:@progressColor">
-                    </div>
-                    <div style="position: absolute;font-size: 13px; top: 3px; color: #ffffff;left: 7px;overflow: hidden; width: @(taskModel.Width + "px"); text-wrap: nowrap;text-overflow: ellipsis;">
-                        @resource
-                    </div>
-                </div>
-            }
-        </TaskbarTemplate>
-    </GanttTemplates>
-    <GanttColumns>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.TaskId)" HeaderText="ID"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.Name)" HeaderText="Event Name" Width="250px"></GanttColumn>
-        <GanttResourceColumn HeaderText="Event Resources" Width="300px"></GanttResourceColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.Work)" HeaderText="Work"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.Duration)" HeaderText="Duration"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.TaskType)" HeaderText="Task Type"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.StartDate)" HeaderText="Start Date"></GanttColumn>
-        <GanttColumn Field="@nameof(GanttModel.TaskData.EndDate)" HeaderText="End Date"></GanttColumn>
-    </GanttColumns>
-    <GanttSplitterSettings Position="28%"> </GanttSplitterSettings>
+<GanttTemplates TValue="GanttModel.TaskData">
+<TaskbarTemplate>
+@{
+var task = context as GanttModel.TaskData;
+if (task is null)
+{
+return;
+}
+var taskModel = ganttInstance.GetRowTaskModel(task);
+string resource = GetResourceName(task);
+progressColor = "#5869c5";
+string backgroundColor = GetBGColor(resource);
+<div class="e-gantt-child-taskbar e-gantt-child-taskbar-inner-div" style="height:24px;background:@backgroundColor" tabindex=-1>
+<div class="e-gantt-child-progressbar-inner-div e-gantt-child-progressbar" style="height:24px;width:@(taskModel.ProgressWidth + "px");text-align: right;border-radius: 0px;background:@progressColor">
+</div>
+<div style="position: absolute;font-size: 13px; top: 3px; color: #ffffff;left: 7px;overflow: hidden; width: @(taskModel.Width + "px"); text-wrap: nowrap;text-overflow: ellipsis;">
+@resource
+</div>
+</div>
+}
+</TaskbarTemplate>
+</GanttTemplates>
+<GanttColumns>
+<GanttColumn Field="@nameof(GanttModel.TaskData.TaskId)" HeaderText="ID"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.Name)" HeaderText="Event Name" Width="250px"></GanttColumn>
+<GanttResourceColumn HeaderText="Event Resources" Width="300px"></GanttResourceColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.Work)" HeaderText="Work"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.Duration)" HeaderText="Duration"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.TaskType)" HeaderText="Task Type"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.StartDate)" HeaderText="Start Date"></GanttColumn>
+<GanttColumn Field="@nameof(GanttModel.TaskData.EndDate)" HeaderText="End Date"></GanttColumn>
+</GanttColumns>
+<GanttSplitterSettings Position="28%"> </GanttSplitterSettings>
 </SfGantt>
 
 @code {
-    private SfGantt<GanttModel.TaskData> ganttInstance { get; set; } = new();
-    private List<GanttModel.TaskData> TaskCollection { get; set; } = new();
-    private List<GanttModel.ResourceInfoModel> ResourceCollection { get; set; } = new();
-    private static List<GanttModel.AssignmentModel> AssignmentCollection { get; set; } = new();
-    private string progressColor = "#5869C5";
-    protected override void OnInitialized()
-    {
-        TaskCollection = GanttModel.GetTaskCollection();
-        ResourceCollection = GanttModel.GetResources;
-        AssignmentCollection = GanttModel.GetAssignmentCollection();
-    }
+private SfGantt<GanttModel.TaskData> ganttInstance { get; set; } = new();
+private List<GanttModel.TaskData> TaskCollection { get; set; } = new();
+private List<GanttModel.ResourceInfoModel> ResourceCollection { get; set; } = new();
+private static List<GanttModel.AssignmentModel> AssignmentCollection { get; set; } = new();
+private string progressColor = "#5869C5";
+protected override void OnInitialized()
+{
+TaskCollection = GanttModel.GetTaskCollection();
+ResourceCollection = GanttModel.GetResources;
+AssignmentCollection = GanttModel.GetAssignmentCollection();
+}
 
     private string GetResourceName(GanttModel.TaskData record)
     {
@@ -1088,6 +1094,7 @@ The taskbar appearance can be customized by using the [TaskbarTemplate](https://
         }
         return color;
     }
+
 }
 
 {% endhighlight %}
@@ -1095,14 +1102,14 @@ The taskbar appearance can be customized by using the [TaskbarTemplate](https://
 
 namespace BlazorGanttChart.Data
 {
-    public class GanttModel
-    {
-        public class ResourceInfoModel
-        {
-            public int Id { get; set; }
-            public string? Name { get; set; }
-            public double MaxUnit { get; set; }
-        }
+public class GanttModel
+{
+public class ResourceInfoModel
+{
+public int Id { get; set; }
+public string? Name { get; set; }
+public double MaxUnit { get; set; }
+}
 
         public class TaskData
         {
@@ -1179,6 +1186,7 @@ namespace BlazorGanttChart.Data
             };
         }
     }
+
 }
 
 {% endhighlight %}
@@ -1188,4 +1196,4 @@ namespace BlazorGanttChart.Data
 
 ## See also
 
-* [CRUD operations on tasks](https://blazor.syncfusion.com/documentation/gantt-chart/managing-tasks)
+- [CRUD operations on tasks](https://blazor.syncfusion.com/documentation/gantt/managing-tasks)

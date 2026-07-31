@@ -19,8 +19,4 @@ To perform `touch and hold` action on a element, refer to [Tooltip Popup](toolti
 
 To perform `long press` action on a row, [Context Menu](context-menu/#context-menu) is opened, and then tap a menu item to trigger its action.
 
-
-
-
-
-N> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=bootstrap4) to know how to render and configure the Gantt.
+N> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt/default-functionalities?theme=bootstrap4) to know how to render and configure the Gantt.

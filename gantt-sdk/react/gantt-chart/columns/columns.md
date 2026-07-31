@@ -3,7 +3,7 @@ layout: post
 title: Columns in React Gantt Chart Component | Syncfusion
 description: Learn here all about columns in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Columns 
+control: Columns
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -20,31 +20,31 @@ The React Gantt Chart component supports specifying the data type for each colum
 
 **Gantt supports the following column types:**
 
-- **string**: Default type for text data.  
-- **number**: For numeric values with formatting.  
-- **boolean**: Displays checkboxes for true/false values.  
-- **date**: For date values.  
-- **datetime**: For date and time values.  
+- **string**: Default type for text data.
+- **number**: For numeric values with formatting.
+- **boolean**: Displays checkboxes for true/false values.
+- **date**: For date values.
+- **datetime**: For date and time values.
 - **checkbox**: Displays a checkbox column.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columns-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columns-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columns-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columns-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columns-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/columns-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/columns-cs1" %}
 
-> * If `type` is not defined, it is auto-detected from the first record of the data source.
-> * If the first record has a null or blank value, define the `type` explicitly to ensure correct filter dialog behavior.
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/columns-cs1" %}
 
-### Difference between boolean type and checkbox type column 
+> - If `type` is not defined, it is auto-detected from the first record of the data source.
+> - If the first record has a null or blank value, define the `type` explicitly to ensure correct filter dialog behavior.
+
+### Difference between boolean type and checkbox type column
 
 - Use **boolean** type to bind and edit true/false values from the data source.
 - Use **checkbox** type to enable row selection or deselection in the UI.
@@ -75,7 +75,12 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt supports the followin
 The column width is automatically calculated based on the content within the column cells. If the content exceeds the width of the column, it will be truncated with an ellipsis (...) at the end. You can set the width for columns as **auto** in your Gantt configuration as shown below:
 
 ```js
-<ColumnDirective field="TaskID" headerText="Task ID" textAlign="Right" width="auto" />
+<ColumnDirective
+  field="TaskID"
+  headerText="Task ID"
+  textAlign="Right"
+  width="auto"
+/>
 ```
 
 **2. Percentage**
@@ -83,7 +88,12 @@ The column width is automatically calculated based on the content within the col
 The column width is specified as a percentage value relative to the width of the gantt container. For example, a column width of 25% will occupy 25% of the total gantt width. You can set the width for columns as **percentage** in your Gantt configuration as shown below:
 
 ```js
-<ColumnDirective field="TaskID" headerText="Task ID" textAlign="Right" width="25%" />
+<ColumnDirective
+  field="TaskID"
+  headerText="Task ID"
+  textAlign="Right"
+  width="25%"
+/>
 ```
 
 **3. Pixel**
@@ -91,22 +101,27 @@ The column width is specified as a percentage value relative to the width of the
 The column width is specified as an absolute pixel value. For example, a column width of 100px will have a fixed width of 100 pixels regardless of the gantt container size. You can set the width for columns as **pixel** in your Gantt configuration as shown below:
 
 ```js
-<ColumnDirective field="TaskID" headerText="Task ID" textAlign="Right" width="100" />
+<ColumnDirective
+  field="TaskID"
+  headerText="Task ID"
+  textAlign="Right"
+  width="100"
+/>
 ```
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columns-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columns-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columns-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columns-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columns-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/columns-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/columns-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/columns-cs2" %}
 
 ## Column formatting
 
@@ -114,23 +129,23 @@ The Gantt Chart component for React supports column formatting to customize data
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/format-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/format-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/format-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/format-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/format-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/format-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/format-cs1" %}
 
->* The Gantt uses the [Internalization](https://ej2.syncfusion.com/react/documentation/common/globalization/internationalization) library to format values based on the specified format and culture.
->* By default, the [number](https://ej2.syncfusion.com/react/documentation/common/globalization/internationalization#number-formatting) and [date](https://ej2.syncfusion.com/react/documentation/common/globalization/internationalization#date-formatting) values are formatted in **en-US** locale. You can localize the currency and date in different locale as explained [here](https://ej2.syncfusion.com/react/documentation/common/globalization/localization).
->* The available format codes may vary depending on the data type of the column.
->* You can also customize the formatting further by providing a custom function to the [format](https://ej2.syncfusion.com/react/documentation/api/gantt/column#format) property, instead of a format string.
->* Make sure that the format string is valid and compatible with the data type of the column, to avoid unexpected results.
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/format-cs1" %}
+
+> - The Gantt uses the [Internalization](https://ej2.syncfusion.com/react/documentation/common/globalization/internationalization) library to format values based on the specified format and culture.
+> - By default, the [number](https://ej2.syncfusion.com/react/documentation/common/globalization/internationalization#number-formatting) and [date](https://ej2.syncfusion.com/react/documentation/common/globalization/internationalization#date-formatting) values are formatted in **en-US** locale. You can localize the currency and date in different locale as explained [here](https://ej2.syncfusion.com/react/documentation/common/globalization/localization).
+> - The available format codes may vary depending on the data type of the column.
+> - You can also customize the formatting further by providing a custom function to the [format](https://ej2.syncfusion.com/react/documentation/api/gantt/column#format) property, instead of a format string.
+> - Make sure that the format string is valid and compatible with the data type of the column, to avoid unexpected results.
 
 ### Number formatting
 
@@ -142,24 +157,23 @@ The Gantt Chart component for React supports number formatting through the [colu
 | C      | Currency format   | Use `C2`, `C3`, etc., to define precision for currency values.        |
 | P      | Percentage format | Input should be between 0 and 1; `P2`, `P3`, etc., control precision. |
 
-
 The following example code demonstrates the formatting of data for the **TaskID** column using the **N** format, the **Progress** column using the **P** format, and a currency column using the **C** format.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/format-cs3/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/format-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/format-cs3/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/format-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/format-cs3/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/format-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/format-cs3" %}
 
->To learn more about number formatting, you can refer to the [number](https://ej2.syncfusion.com/react/documentation/common/globalization/internationalization#number-formatting) section.
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/format-cs3" %}
+
+> To learn more about number formatting, you can refer to the [number](https://ej2.syncfusion.com/react/documentation/common/globalization/internationalization#number-formatting) section.
 
 ### Date formatting
 
@@ -175,21 +189,21 @@ The Gantt Chart component for React supports date formatting in columns using th
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/format-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/format-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/format-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/format-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/format-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/format-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/format-cs2" %}
 
->To learn more about date formatting, you can refer to [Date formatting](https://ej2.syncfusion.com/react/documentation/common/globalization/internationalization#date-formatting). 
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/format-cs2" %}
 
-### Format the date column based on localization 
+> To learn more about date formatting, you can refer to [Date formatting](https://ej2.syncfusion.com/react/documentation/common/globalization/internationalization#date-formatting).
+
+### Format the date column based on localization
 
 You can format the date column in Gantt Chart component based on localization settings by using the [format](https://ej2.syncfusion.com/react/documentation/api/gantt/column#format) property to define the date pattern and the [locale](https://ej2.syncfusion.com/react/documentation/api/gantt#locale) property to apply regional settings.
 
@@ -197,19 +211,19 @@ The following example demonstrates the `format` property specifies the date form
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/format-cs4/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/format-cs4/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/format-cs4/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/format-cs4/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/format-cs4/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/format-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/format-cs4" %}
 
-### Format template column value 
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/format-cs4" %}
+
+### Format template column value
 
 You can customize the appearance of values in Gantt template columns using HTML markup and number formatting. To format values, use React pipes along with the [format](https://ej2.syncfusion.com/react/documentation/api/gantt/column#format) property. In this example, the date pipe formats the **StartDate** value as `'dd/MMM/yyyy'`.
 
@@ -226,17 +240,17 @@ const dateTemplate = (props) => {
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/format-cs5/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/format-cs5/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/format-cs5/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/format-cs5/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/format-cs5/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/format-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/format-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/format-cs5" %}
 
 > In React, you can use JavaScript or TypeScript formatting utilities like **Intl.NumberFormat** or **toLocaleString()** to format values such as **dates**, **currency**, **decimals**, or **percentages** in column templates based on your requirements.
 
@@ -248,44 +262,44 @@ In the example below, `numberFormatOptions` is used for the **Progress** column 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/format-cs6/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/format-cs6/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/format-cs6/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/format-cs6/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/format-cs6/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/format-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/format-cs6" %}
 
->To learn more about custom formatting, you can refer to [Custom Date formatting](https://ej2.syncfusion.com/react/documentation/common/globalization/internationalization#custom-formats) and [Custom Number formatting](https://ej2.syncfusion.com/react/documentation/common/globalization/internationalization#custom-number-formatting-and-parsing). 
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/format-cs6" %}
+
+> To learn more about custom formatting, you can refer to [Custom Date formatting](https://ej2.syncfusion.com/react/documentation/common/globalization/internationalization#custom-formats) and [Custom Number formatting](https://ej2.syncfusion.com/react/documentation/common/globalization/internationalization#custom-number-formatting-and-parsing).
 
 ## Align the text of content
 
 You can use the [textAlign](https://ej2.syncfusion.com/react/documentation/api/gantt/column#textalign) property in Gantt Chart component to set the alignment of text within column cells. By default, the text is aligned to the **left**. The available options are:
 
-*	**Left**: Aligns the text to the left (default).
-*	**Center**: Aligns the text to the center.
-*	**Right**: Aligns the text to the right.
-*	**Justify**: Align the text to the justify.
+- **Left**: Aligns the text to the left (default).
+- **Center**: Aligns the text to the center.
+- **Right**: Aligns the text to the right.
+- **Justify**: Align the text to the justify.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columns-cs3/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columns-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columns-cs3/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columns-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columns-cs3/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/columns-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/columns-cs3" %}
 
->* The `textAlign` property changes the alignment for both the column content and header. If you want to align header differently, you can use the [headerTextAlign](https://ej2.syncfusion.com/documentation/api/gantt/column#headertextalign) property.
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/columns-cs3" %}
+
+> - The `textAlign` property changes the alignment for both the column content and header. If you want to align header differently, you can use the [headerTextAlign](https://ej2.syncfusion.com/documentation/api/gantt/column#headertextalign) property.
 
 ## Render boolean value as checkbox
 
@@ -295,20 +309,20 @@ The following sample demonstrates how to display a boolean value as a checkbox f
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/checkbox-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/checkbox-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/checkbox-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/checkbox-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/checkbox-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/checkbox-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/checkbox-cs1" %}
 
->* The `displayAsCheckBox` property is only applicable to boolean values in Gantt columns.
->* When `displayAsCheckBox` is set to **true**, the boolean values will be rendered as checkboxes in the Gantt column, with checked state indicating **true** and unchecked state indicating **false**.
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/checkbox-cs1" %}
+
+> - The `displayAsCheckBox` property is only applicable to boolean values in Gantt columns.
+> - When `displayAsCheckBox` is set to **true**, the boolean values will be rendered as checkboxes in the Gantt column, with checked state indicating **true** and unchecked state indicating **false**.
 
 ### How to prevent checkbox for particular row
 
@@ -318,23 +332,23 @@ The following sample hides the checkbox for the row with `ariaRowIndex` set to 3
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/checkbox-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/checkbox-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/checkbox-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/checkbox-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/checkbox-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/checkbox-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/checkbox-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/checkbox-cs2" %}
 
 ## AutoFit columns
 
 The Gantt Chart component for React supports automatic column width adjustment based on content. Double-clicking the column header resizer adjusts the width to fit the maximum content, ensuring clear data visibility without wrapping.
 
-To enable this feature, set [allowResizing](https://ej2.syncfusion.com/react/documentation/api/gantt#allowresizing) to **true** and inject `Resize` in the Gantt Chart component. 
+To enable this feature, set [allowResizing](https://ej2.syncfusion.com/react/documentation/api/gantt#allowresizing) to **true** and inject `Resize` in the Gantt Chart component.
 
 The following screenshot represents the resizing the column using resizer symbol.
 
@@ -346,17 +360,17 @@ You can resize a column in Gantt to fit its content using the `autoFitColumns` m
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columns-cs4/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columns-cs4/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columns-cs4/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columns-cs4/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columns-cs4/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/columns-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/columns-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/columns-cs4" %}
 
 > You can autofit all the columns by invoking the `autoFitColumns` method without specifying column names.
 
@@ -366,17 +380,17 @@ You can lock columns in Gantt Chart component to prevent them from being reorder
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columns-cs5/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columns-cs5/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columns-cs5/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columns-cs5/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columns-cs5/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/columns-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/columns-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/columns-cs5" %}
 
 ## Show or hide columns
 
@@ -384,27 +398,27 @@ The React Gantt Chart component allows dynamic control over column visibility us
 
 ### Using property
 
-You can control the visibility of columns in the React Gantt Chart component by setting the [visible](https://ej2.syncfusion.com/react/documentation/api/gantt/column#visible) property of each column to **true** or **false**. 
+You can control the visibility of columns in the React Gantt Chart component by setting the [visible](https://ej2.syncfusion.com/react/documentation/api/gantt/column#visible) property of each column to **true** or **false**.
 
 The following example illustrates how to dynamically toggle the visibility of the **Duration** column. Initially, the column is set with the `visible` property as **false**. When the switch component triggers a `change` event, the `getColumnByField` method retrieves the column, its `visible` property is updated based on the switch state, and `refreshColumns` is called to apply the changes to the UI.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/show-hide-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/show-hide-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/show-hide-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/show-hide-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/show-hide-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/show-hide-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/show-hide-cs1" %}
 
->* Hiding a column using the `visible` property affects only its display; the data remains accessible in the source.
->* Hidden columns are excluded from the total width calculation.  
->* To keep a column hidden permanently, set `visible` to **false** or remove its definition.
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/show-hide-cs1" %}
+
+> - Hiding a column using the `visible` property affects only its display; the data remains accessible in the source.
+> - Hidden columns are excluded from the total width calculation.
+> - To keep a column hidden permanently, set `visible` to **false** or remove its definition.
 
 ### Using methods
 
@@ -412,7 +426,7 @@ You can also show or hide columns in the React Gantt Chart component using the [
 
 **Based on header text:**
 
-You can dynamically show or hide columns by passing either a single header text or an array of header texts as the first parameter, and specifying `headerText` as the second parameter.  This enables dynamic control over column visibility based on the displayed header.
+You can dynamically show or hide columns by passing either a single header text or an array of header texts as the first parameter, and specifying `headerText` as the second parameter. This enables dynamic control over column visibility based on the displayed header.
 
 You can use the `getGanttColumns` method to retrieve all defined columns, and the `getVisibleColumns` method to get only the visible columns.
 
@@ -420,17 +434,17 @@ The following sample demonstrates how to hide and show columns using button clic
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/show-hide-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/show-hide-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/show-hide-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/show-hide-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/show-hide-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/show-hide-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/show-hide-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/show-hide-cs2" %}
 
 **Based on field:**
 
@@ -440,41 +454,41 @@ The following sample demonstrates how to hide and show columns using button clic
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/show-hide-cs3/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/show-hide-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/show-hide-cs3/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/show-hide-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/show-hide-cs3/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/show-hide-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/show-hide-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/show-hide-cs3" %}
 
 ## Controlling Gantt actions
 
 You can manage actions like filtering, sorting, resizing, reordering, editing, and searching for specific columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> React Gantt using the following options:
 
-* [allowEditing](https://ej2.syncfusion.com/react/documentation/api/gantt/columnModel#allowediting): Enables or disables editing for a column.
-* [allowFiltering](https://ej2.syncfusion.com/react/documentation/api/gantt/columnModel#allowfiltering): Enables or disables filtering for a column.
-* [allowSorting](https://ej2.syncfusion.com/react/documentation/api/gantt/columnModel#allowsorting): Enables or disables sorting for a column.
-* [allowReordering](https://ej2.syncfusion.com/react/documentation/api/gantt/columnModel#allowreordering): Enables or disables reordering for a column.
-* [allowResizing](https://ej2.syncfusion.com/react/documentation/api/gantt/columnModel#allowresizing): Enables or disables resizing for a column.
+- [allowEditing](https://ej2.syncfusion.com/react/documentation/api/gantt/columnModel#allowediting): Enables or disables editing for a column.
+- [allowFiltering](https://ej2.syncfusion.com/react/documentation/api/gantt/columnModel#allowfiltering): Enables or disables filtering for a column.
+- [allowSorting](https://ej2.syncfusion.com/react/documentation/api/gantt/columnModel#allowsorting): Enables or disables sorting for a column.
+- [allowReordering](https://ej2.syncfusion.com/react/documentation/api/gantt/columnModel#allowreordering): Enables or disables reordering for a column.
+- [allowResizing](https://ej2.syncfusion.com/react/documentation/api/gantt/columnModel#allowresizing): Enables or disables resizing for a column.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/grid-actions-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/grid-actions-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/grid-actions-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/grid-actions-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/grid-actions-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/grid-actions-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/grid-actions-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/grid-actions-cs1" %}
 
 ## Customize column styles
 
@@ -488,17 +502,17 @@ To update column definitions in React Gantt Chart component, modify the [columns
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columns-cs6/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columns-cs6/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columns-cs6/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columns-cs6/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columns-cs6/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/columns-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/columns-cs6" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/columns-cs6" %}
 
 ## Adding/removing columns
 
@@ -506,17 +520,17 @@ You can add or remove columns in the React Gantt by updating the [columns](https
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columns-cs7/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columns-cs7/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columns-cs7/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columns-cs7/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columns-cs7/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/columns-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/columns-cs7" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/columns-cs7" %}
 
 ## Responsive columns
 
@@ -526,21 +540,21 @@ The following example demonstrates a Gantt chart where the **Task Name** column 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columns-cs8/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columns-cs8/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columns-cs8/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columns-cs8/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columns-cs8/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/columns-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/columns-cs8" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/columns-cs8" %}
 
 ## Clip mode
 
-The clip mode provides options to display overflow cell content using the [columns.clipMode](https://ej2.syncfusion.com/react/documentation/api/gantt/columnModel#clipmode) property.  The following are three types of `clipMode`:
+The clip mode provides options to display overflow cell content using the [columns.clipMode](https://ej2.syncfusion.com/react/documentation/api/gantt/columnModel#clipmode) property. The following are three types of `clipMode`:
 
 - **Clip**: Truncates content that exceeds the cell width.
 - **Ellipsis**: Displays ellipsis when content exceeds the cell area.
@@ -550,14 +564,14 @@ The clip mode provides options to display overflow cell content using the [colum
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columns-cs9/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columns-cs9/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columns-cs9/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/columns-cs9/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/columns-cs9/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/columns-cs9/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/columns-cs9" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/columns-cs9" %}

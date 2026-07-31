@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Custom data source in gantt control
 
 The excel export provides an option to define datasource dynamically before exporting. To export data dynamically, define the `dataSource` in `exportProperties`.
@@ -17,10 +16,10 @@ The excel export provides an option to define datasource dynamically before expo
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/customDataSource/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/customDataSource/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomDataSource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/customDataSource/customDataSource.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/customDataSource/customDataSource.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -28,10 +27,10 @@ The excel export provides an option to define datasource dynamically before expo
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/customDataSource/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/customDataSource/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomDataSource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/customDataSource/customDataSource.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/customDataSource/customDataSource.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

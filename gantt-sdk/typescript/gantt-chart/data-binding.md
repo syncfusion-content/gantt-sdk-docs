@@ -42,27 +42,27 @@ This approach works well for data sources that maintain inherent parent-child re
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/databinding-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/databinding-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/databinding-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/databinding-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/databinding-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/databinding-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/databinding-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/databinding-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/databinding-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/databinding-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/databinding-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/databinding-cs1" %}
 {% endif %}
 
 ### Self-referential data structure
@@ -74,27 +74,27 @@ This approach enables the control to reconstruct hierarchical tree structures fr
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/databinding-cs2/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/databinding-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/databinding-cs2/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/databinding-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/databinding-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/databinding-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/databinding-cs2/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/databinding-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/databinding-cs2/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/databinding-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/databinding-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/databinding-cs2" %}
 {% endif %}
 
 **Data structure requirements**: When using hierarchical data, link child records to their parent using the `child` property mapping. For self-referential data, ensure each task's parent-child relationship is properly defined by mapping `id` and `parentID` fields correctly to enable proper hierarchy reconstruction.
@@ -107,27 +107,27 @@ Remote data binding assigns service endpoints as `DataManager` instances to the 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/databinding-cs3/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/databinding-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/databinding-cs3/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/databinding-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/databinding-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/databinding-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/databinding-cs3/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/databinding-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/databinding-cs3/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/databinding-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/databinding-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/databinding-cs3" %}
 {% endif %}
 
 **Server Communication**: DataManager connects to various backend services including RESTful endpoints, OData services, and custom web APIs. Configure the appropriate URL and adaptor type based on the target server architecture and data format requirements.
@@ -639,27 +639,27 @@ namespace URLAdaptor.Controllers
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/actionfailure-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/actionfailure-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/actionfailure-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/actionfailure-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/actionfailure-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/actionfailure-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/actionfailure-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/actionfailure-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/actionfailure-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/actionfailure-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/actionfailure-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/actionfailure-cs1" %}
 {% endif %}
 
 **Fetch API integration**: Use Gantt [dataSource](../api/gantt/index-default#datasource) property to bind data from external Fetch requests. This approach benefits scenarios requiring asynchronous server data retrieval, utilizing the `onSuccess` event for effective data loading management.
@@ -670,27 +670,27 @@ To show or hide the loading indicator during fetch, call [showSpinner](../api/ga
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/bindajax-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/bindajax-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/bindajax-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/bindajax-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/bindajax-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/bindajax-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/bindajax-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/bindajax-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/bindajax-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/bindajax-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/bindajax-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/bindajax-cs1" %}
 {% endif %}
 
 **Fetch binding limitation**: Data sources bound through Fetch requests act as local data sources, preventing server-side CRUD operations. This approach suits read-only scenarios or applications with separate data modification workflows.
@@ -723,27 +723,27 @@ Split tasks at load time using hierarchical structures by defining segment detai
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/split-task-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/split-task-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/split-task-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/split-task-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/split-task-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/split-task-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/split-task-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/split-task-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/split-task-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/split-task-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/split-task-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/split-task-cs1" %}
 {% endif %}
 
 ### Self-referential split task configuration
@@ -766,27 +766,27 @@ segmentData: [
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/split-task-cs2/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/split-task-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/split-task-cs2/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/split-task-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/split-task-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/split-task-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/split-task-cs2/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/split-task-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/split-task-cs2/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/split-task-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/split-task-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/split-task-cs2" %}
 {% endif %}
 
 **Segment ID mapping**: The segment ID field contains references to tasks that should be split at load time, enabling the control to associate segment collections with their corresponding parent tasks.
@@ -799,10 +799,10 @@ Control parent task expand status in the Gantt chart by defining the [expandStat
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/expand-state-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/expand-state-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/expand-state-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/expand-state-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -810,10 +810,10 @@ Control parent task expand status in the Gantt chart by defining the [expandStat
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/expand-state-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/expand-state-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/expand-state-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/expand-state-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -828,10 +828,10 @@ You can programmatically update the Gantt chart data source using the [updateDat
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/databinding-cs10/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/databinding-cs10/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/databinding-cs10/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/databinding-cs10/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -839,10 +839,10 @@ You can programmatically update the Gantt chart data source using the [updateDat
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/databinding-cs10/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/databinding-cs10/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/databinding-cs10/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/databinding-cs10/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -856,10 +856,10 @@ You can display a custom message when no data is available by defining an empty 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/databinding-cs11/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/databinding-cs11/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/databinding-cs11/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/databinding-cs11/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -867,10 +867,10 @@ You can display a custom message when no data is available by defining an empty 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/databinding-cs11/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/databinding-cs11/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/databinding-cs11/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/databinding-cs11/index.html %}
 {% endhighlight %}
 {% endtabs %}
 

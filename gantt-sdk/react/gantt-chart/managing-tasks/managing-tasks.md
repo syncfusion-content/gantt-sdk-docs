@@ -3,7 +3,7 @@ layout: post
 title: Managing Tasks in React Gantt Chart Component | Syncfusion
 description: Learn here all about Managing tasks in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Managing tasks 
+control: Managing tasks
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -16,19 +16,19 @@ The following code example demonstrates editing in the Gantt Chart component.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/celledit-cs3/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/celledit-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/celledit-cs3/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/celledit-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/celledit-cs3/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/celledit-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/celledit-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/celledit-cs3" %}
 
-Editing feature requires a primary key column for CRUD operations. While defining columns in Gantt Chart using the [columns](https://ej2.syncfusion.com/react/documentation/api/gantt#columns) property, it is mandatory that any one of the columns, must be a primary column. By default, the [id](https://ej2.syncfusion.com/react/documentation/api/gantt/taskFields#id) column will be the primary key column.  If [id](https://ej2.syncfusion.com/react/documentation/api/gantt/taskFields#id) column is not defined, we need to enable [isPrimaryKey](https://ej2.syncfusion.com/react/documentation/api/gantt/column#isprimarykey) for any one of the columns defined in the [columns](https://ej2.syncfusion.com/react/documentation/api/gantt#columns) property.
+Editing feature requires a primary key column for CRUD operations. While defining columns in Gantt Chart using the [columns](https://ej2.syncfusion.com/react/documentation/api/gantt#columns) property, it is mandatory that any one of the columns, must be a primary column. By default, the [id](https://ej2.syncfusion.com/react/documentation/api/gantt/taskFields#id) column will be the primary key column. If [id](https://ej2.syncfusion.com/react/documentation/api/gantt/taskFields#id) column is not defined, we need to enable [isPrimaryKey](https://ej2.syncfusion.com/react/documentation/api/gantt/column#isprimarykey) for any one of the columns defined in the [columns](https://ej2.syncfusion.com/react/documentation/api/gantt#columns) property.
 
 ## Open new task dialog with default values
 
@@ -36,17 +36,17 @@ You can set default values when new task dialog opens using [actionBegin](https:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/celledit-cs7/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/celledit-cs7/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/celledit-cs7/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/celledit-cs7/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/celledit-cs7/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/celledit-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/celledit-cs7" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/celledit-cs7" %}
 
 ## Cell edit type and its params
 
@@ -74,17 +74,17 @@ Below is the combined content from the provided markdown sections in bullet poin
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/cellEditType-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/cellEditType-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/cellEditType-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/cellEditType-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/cellEditType-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/cellEditType-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/cellEditType-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/cellEditType-cs1" %}
 
 ## Prevent particular column and taskbar editing
 
@@ -94,43 +94,43 @@ To restrict taskbar editing, set `args.cancel` to **true** in the [actionBegin](
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/celledit-cs8/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/celledit-cs8/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/celledit-cs8/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/celledit-cs8/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/celledit-cs8/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/celledit-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/celledit-cs8" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/celledit-cs8" %}
 
 ## Cell Edit Template
 
 The cell edit template is used to create a custom component for a particular column by invoking the following functions:
 
-* `create` - It is used to create the element at the time of initialization.
+- `create` - It is used to create the element at the time of initialization.
 
-* `write` - It is used to create the custom component or assign default value at the time of editing.
+- `write` - It is used to create the custom component or assign default value at the time of editing.
 
-* `read` - It is used to read the value from the component at the time of save.
+- `read` - It is used to read the value from the component at the time of save.
 
-* `destroy` - It is used to destroy the component.
+- `destroy` - It is used to destroy the component.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/editParams-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/editParams-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/editParams-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/editParams-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/editParams-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/editParams-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/editParams-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/editParams-cs1" %}
 
 ## Disable editing for particular column
 
@@ -140,17 +140,17 @@ In the following demo, editing is disabled for the **TaskName** column.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/editColumns-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/editColumns-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/editColumns-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/editColumns-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/editColumns-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/editColumns-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/editColumns-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/editColumns-cs1" %}
 
 ## Customize control in add/edit dialog
 
@@ -166,41 +166,42 @@ In the below sample, General tab is customized using the `fields` property. The 
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/toolbarRowadding-cs3/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/toolbarRowadding-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/toolbarRowadding-cs3/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/toolbarRowadding-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/toolbarRowadding-cs3/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/toolbarRowadding-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/toolbarRowadding-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/toolbarRowadding-cs3" %}
 
 ### Customize dependency, segments and resources tab of dialog
 
 You can customize the dependency, segments, and resource tabs of the dialog box using the [additionalParams](https://ej2.syncfusion.com/react/documentation/api/gantt/addDialogFieldSettingsModel#additionalParams) property within the [addDialogFields](https://ej2.syncfusion.com/react/documentation/api/gantt/addDialogFieldSettings) and [editDialogFields](https://ej2.syncfusion.com/react/documentation/api/gantt/editDialogFieldSettings) settings respectively. This customization involves defining properties from the [grid](https://ej2.syncfusion.com/react/documentation/api/grid) within the `additionalParams` property.
 
-In the example below: 
-* The dependency tab enables [sorting](https://ej2.syncfusion.com/react/documentation/api/grid#allowsorting) and [toolbar](https://ej2.syncfusion.com/react/documentation/api/grid#toolbar) options. 
-* The segments tab enables `sorting` and `toolbar` options and includes a new column `newData` defined with a specified [field](https://ej2.syncfusion.com/react/documentation/api/grid/columnModel#field).
-* The resources tab defines a new column **Segment Task**  with specific properties such as `field`, [width](https://ej2.syncfusion.com/react/documentation/api/grid/columnModel#width) and [headerText](https://ej2.syncfusion.com/react/documentation/api/grid/columnModel#headertext).
-These customizations are applied to both `addDialogFields` and `editDialogFields` settings.
+In the example below:
+
+- The dependency tab enables [sorting](https://ej2.syncfusion.com/react/documentation/api/grid#allowsorting) and [toolbar](https://ej2.syncfusion.com/react/documentation/api/grid#toolbar) options.
+- The segments tab enables `sorting` and `toolbar` options and includes a new column `newData` defined with a specified [field](https://ej2.syncfusion.com/react/documentation/api/grid/columnModel#field).
+- The resources tab defines a new column **Segment Task** with specific properties such as `field`, [width](https://ej2.syncfusion.com/react/documentation/api/grid/columnModel#width) and [headerText](https://ej2.syncfusion.com/react/documentation/api/grid/columnModel#headertext).
+  These customizations are applied to both `addDialogFields` and `editDialogFields` settings.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/toolbarRowadding-cs4/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/toolbarRowadding-cs4/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/toolbarRowadding-cs4/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/toolbarRowadding-cs4/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/toolbarRowadding-cs4/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/toolbarRowadding-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/toolbarRowadding-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/toolbarRowadding-cs4" %}
 
 ### Customize note dialog tab
 
@@ -210,17 +211,17 @@ In the following example, the notes tab is customized with the [inlinemode](http
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/toolbarRowadding-cs5/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/toolbarRowadding-cs5/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/toolbarRowadding-cs5/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/toolbarRowadding-cs5/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/toolbarRowadding-cs5/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/toolbarRowadding-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/toolbarRowadding-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/toolbarRowadding-cs5" %}
 
 ## Touch interaction
 
@@ -251,19 +252,19 @@ The following table explains the taskbar state in dependency edit mode.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/touch-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/touch-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/touch-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/touch-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/touch-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/touch-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/touch-cs1" %}
 
->Note: In mobile device, you cannot create dependency other than `FS` by taskbar editing. By using cell/dialog editing, you can add all type of dependencies.
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/touch-cs1" %}
+
+> Note: In mobile device, you cannot create dependency other than `FS` by taskbar editing. By using cell/dialog editing, you can add all type of dependencies.
 
 ## Taskbar editing tooltip
 
@@ -271,17 +272,17 @@ The taskbar editing tooltip can be customized using the [tooltipSettings.editing
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/tooltip-cs6/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/tooltip-cs6/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/tooltip-cs6/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/tooltip-cs6/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/tooltip-cs6/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/tooltip-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/tooltip-cs6" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/tooltip-cs6" %}
 
 ## See also
 

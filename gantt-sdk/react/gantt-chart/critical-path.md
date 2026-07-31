@@ -3,7 +3,7 @@ layout: post
 title: Critical Path in React Gantt Chart Component | Syncfusion
 description: Learn here all about Critical path in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Critical path 
+control: Critical path
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -19,14 +19,16 @@ The component uses Critical Path Method (CPM) principles to identify critical ta
 **Project end date determination**: The calculation begins by determining the overall project end date. If the [projectEndDate](https://ej2.syncfusion.com/react/documentation/api/gantt#projectenddate) property is provided, it uses that value as the project completion reference. If `projectEndDate` is not specified, the component automatically calculates the project end date by examining all task end dates in the data source to find the latest completion point. This reference point determines how much delay each task can tolerate without affecting project completion.
 
 **Slack value calculation**: For each task, the component calculates slack by measuring the time difference between the task's end date and the project end date. Slack represents how much time a task can be delayed without affecting the project completion:
+
 - **Zero slack**: The task must finish exactly on time. Any delay will push back the project end date, making it critical
 - **Negative slack**: The task is already behind schedule or creates scheduling conflicts. This occurs when a task's end date is beyond the project end date, or when dependency relationships create impossible timing constraints.
 
 **Parent-Child task relationships**: In projects with hierarchical tasks, the critical path calculation focuses on dependencies rather than the parent-child structure used for task organization. For example, if Task 1.1 (a child task) depends on Task 2 (a parent task), only the tasks directly linked by the dependency are evaluated for criticality based on their timing. A parent task like Task 2 being critical does not automatically make its child tasks (e.g., Task 2.1, Task 2.2) critical, nor does a critical child task imply a critical parent. The component evaluates each task’s slack independently, ensuring that only tasks with zero or negative slack, driven by their dependency constraints, are marked as critical. This distinction allows precise identification of critical tasks without conflating organizational hierarchy with scheduling dependencies.
 
 **Dependency-based analysis**: The component analyzes different dependency relationship types to determine slack impacts:
+
 - **Finish-to-Start**: When a predecessor task ends after its successor should start, negative slack results from the timing conflict
-- **Start-to-Start**: When a predecessor starts after its successor should start, the component calculates negative slack based on scheduling impossibility  
+- **Start-to-Start**: When a predecessor starts after its successor should start, the component calculates negative slack based on scheduling impossibility
 - **Finish-to-Finish** and **Start-to-Finish**: These relationships can also produce negative slack when timing conflicts exist between connected tasks
 - **Offset and scheduling mode handling**: When dependencies include time offsets (e.g., "+2 days" or "-1 hour"), the component adjusts slack calculations by factoring in the offset duration. The calculation differs for automatically scheduled versus manually scheduled tasks: automatic tasks use forward and backward pass algorithms to compute slack, while manual tasks compare their end dates directly against the project completion date.
 
@@ -44,17 +46,17 @@ The following example demonstrates enabling critical path analysis:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/criticalpath-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/criticalpath-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/criticalpath-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/criticalpath-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/criticalpath-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/criticalpath-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/criticalpath-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/criticalpath-cs1" %}
 
 The code enables critical path analysis by setting `enableCriticalPath` to **true** and injecting the [CriticalPathService](https://ej2.syncfusion.com/react/documentation/api/gantt#criticalpathmodule). The component automatically calculates slack values for all tasks and highlights those with zero or negative slack as critical tasks, displaying them with red taskbars and emphasized dependency lines.
 
@@ -66,17 +68,17 @@ The following example demonstrates custom styling for critical tasks using the `
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/customizeCriticalPath-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/customizeCriticalPath-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/customizeCriticalPath-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/customizeCriticalPath-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/customizeCriticalPath-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/customizeCriticalPath-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/customizeCriticalPath-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/customizeCriticalPath-cs1" %}
 
 The event handler checks the `isCritical` flag and applies custom colors to taskbars, allowing project-specific visual distinctions for critical path tasks while maintaining clear identification of project bottlenecks.
 

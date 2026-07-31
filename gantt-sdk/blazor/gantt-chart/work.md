@@ -20,28 +20,28 @@ N> When the work field is mapped from the data source, the default task type wil
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt @ref="Gantt" DataSource="@TaskCollection" Height="450px" Width="1000px" WorkUnit="WorkUnit.Hour" ProjectStartDate="@ProjectStart" ProjectEndDate="@ProjectEnd">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
                      ParentID="ParentId" Work="Work"></GanttTaskFields>
-    <GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true" ShowDeleteConfirmDialog="true"></GanttEditSettings>
-    <GanttResource DataSource="ResourceCollection" Id="Id" Name="Name" TValue="TaskData" TResources="ResourceInfoModel"></GanttResource>
-    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="PrimaryId" TaskID="TaskID" ResourceID="ResourceId" Units="Unit" TValue="TaskData" TAssignment="AssignmentModel">
-    </GanttAssignmentFields>
-    <GanttLabelSettings TValue="TaskData" RightLabel="Resources"></GanttLabelSettings>
+<GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true" ShowDeleteConfirmDialog="true"></GanttEditSettings>
+<GanttResource DataSource="ResourceCollection" Id="Id" Name="Name" TValue="TaskData" TResources="ResourceInfoModel"></GanttResource>
+<GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="PrimaryId" TaskID="TaskID" ResourceID="ResourceId" Units="Unit" TValue="TaskData" TAssignment="AssignmentModel">
+</GanttAssignmentFields>
+<GanttLabelSettings TValue="TaskData" RightLabel="Resources"></GanttLabelSettings>
 </SfGantt>
 
 @code {
-    public SfGantt<TaskData>? Gantt;
-    private DateTime ProjectStart = new DateTime(2026, 03, 25);
-    private DateTime ProjectEnd = new DateTime(2026, 05, 10);
-    private List<TaskData>? TaskCollection { get; set; }
-    private List<ResourceInfoModel>? ResourceCollection { get; set; }
-    private static List<AssignmentModel> AssignmentCollection { get; set; } = new();
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-        ResourceCollection = GetResources;
-        AssignmentCollection = GetAssignmentCollection();
-    }
+public SfGantt<TaskData>? Gantt;
+private DateTime ProjectStart = new DateTime(2026, 03, 25);
+private DateTime ProjectEnd = new DateTime(2026, 05, 10);
+private List<TaskData>? TaskCollection { get; set; }
+private List<ResourceInfoModel>? ResourceCollection { get; set; }
+private static List<AssignmentModel> AssignmentCollection { get; set; } = new();
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+ResourceCollection = GetResources;
+AssignmentCollection = GetAssignmentCollection();
+}
 
     public class TaskData
     {
@@ -116,6 +116,7 @@ N> When the work field is mapped from the data source, the default task type wil
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -127,36 +128,36 @@ N> When the work field is mapped from the data source, the default task type wil
 
 The work, duration and resource unit fields of a task depends upon each other and will change automatically on editing any one of these fields. But you can also set these field’s values as constant using the [TaskType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_TaskType) property. `FixedUnit` is the default `TaskType`. The following values can be set to the `TaskType` property.
 
-* [FixedDuration](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.TaskType.html#Syncfusion_Blazor_Gantt_TaskType_FixedDuration) - Duration task field will remain constant while updating resource unit or work field.
-* [FixedWork](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.TaskType.html#Syncfusion_Blazor_Gantt_TaskType_FixedWork) - Work field will remain constant while updating resource unit or duration fields.
-* [FixedUnit](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.TaskType.html#Syncfusion_Blazor_Gantt_TaskType_FixedUnit) - Resource units will remain constant while updating duration or work field.
+- [FixedDuration](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.TaskType.html#Syncfusion_Blazor_Gantt_TaskType_FixedDuration) - Duration task field will remain constant while updating resource unit or work field.
+- [FixedWork](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.TaskType.html#Syncfusion_Blazor_Gantt_TaskType_FixedWork) - Work field will remain constant while updating resource unit or duration fields.
+- [FixedUnit](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.TaskType.html#Syncfusion_Blazor_Gantt_TaskType_FixedUnit) - Resource units will remain constant while updating duration or work field.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="1000px" WorkUnit="WorkUnit.Hour" ProjectStartDate="@ProjectStart" ProjectEndDate="@ProjectEnd">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
                      ParentID="ParentId" Work="Work" TaskType="TaskType"></GanttTaskFields>
-    <GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true" ShowDeleteConfirmDialog="true"></GanttEditSettings>
-    <GanttResource DataSource="ResourceCollection" Id="Id" Name="Name" TValue="TaskData" TResources="ResourceInfoModel"></GanttResource>
-    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="PrimaryId" TaskID="TaskID" ResourceID="ResourceId" Units="Unit" TValue="TaskData" TAssignment="AssignmentModel">
-    </GanttAssignmentFields>
-    <GanttLabelSettings TValue="TaskData" RightLabel="Resources"></GanttLabelSettings>
+<GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true" ShowDeleteConfirmDialog="true"></GanttEditSettings>
+<GanttResource DataSource="ResourceCollection" Id="Id" Name="Name" TValue="TaskData" TResources="ResourceInfoModel"></GanttResource>
+<GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="PrimaryId" TaskID="TaskID" ResourceID="ResourceId" Units="Unit" TValue="TaskData" TAssignment="AssignmentModel">
+</GanttAssignmentFields>
+<GanttLabelSettings TValue="TaskData" RightLabel="Resources"></GanttLabelSettings>
 </SfGantt>
 
 @code {
-    private DateTime ProjectStart = new DateTime(2026, 03, 25);
-    private DateTime ProjectEnd = new DateTime(2026, 05, 10);
-    public List<TaskData>? TaskCollection { get; set; }
-    public List<ResourceInfoModel>? ResourceCollection { get; set; }
-    public static List<AssignmentModel> AssignmentCollection { get; set; } = new();
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-        ResourceCollection = GetResources;
-        AssignmentCollection = GetAssignmentCollection();
-    }
+private DateTime ProjectStart = new DateTime(2026, 03, 25);
+private DateTime ProjectEnd = new DateTime(2026, 05, 10);
+public List<TaskData>? TaskCollection { get; set; }
+public List<ResourceInfoModel>? ResourceCollection { get; set; }
+public static List<AssignmentModel> AssignmentCollection { get; set; } = new();
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+ResourceCollection = GetResources;
+AssignmentCollection = GetAssignmentCollection();
+}
 
     public class TaskData
     {
@@ -233,6 +234,7 @@ The work, duration and resource unit fields of a task depends upon each other an
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -242,12 +244,12 @@ The work, duration and resource unit fields of a task depends upon each other an
 
 The following table explains how the work, duration, and resource unit fields will get updated on changing any of the fields
 
-Task Type | Changes in Duration | Changes in work | Changes in Resource Units
------|-----|-----|-----
-Fixed Duration | Updates work value | Updates Resource unit | Updates work value
-Fixed Work | Updates Resource unit. Note: For manually scheduled task work will be updated.| Updates Duration value. Note: For manually scheduled task resource unit updates. | Updates Duration value. Note: For manually scheduled task work field updates.
-Fixed Unit | Updates work value | Updates Duration value. Note: For manually scheduled task resource unit updates.| Updates Duration value. Note: For manually scheduled task work field updates.
+| Task Type      | Changes in Duration                                                            | Changes in work                                                                  | Changes in Resource Units                                                     |
+| -------------- | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| Fixed Duration | Updates work value                                                             | Updates Resource unit                                                            | Updates work value                                                            |
+| Fixed Work     | Updates Resource unit. Note: For manually scheduled task work will be updated. | Updates Duration value. Note: For manually scheduled task resource unit updates. | Updates Duration value. Note: For manually scheduled task work field updates. |
+| Fixed Unit     | Updates work value                                                             | Updates Duration value. Note: For manually scheduled task resource unit updates. | Updates Duration value. Note: For manually scheduled task work field updates. |
 
 N> Fixed Unit is the default TaskType in Gantt. The above calculations are not applicable for Milestones.
 
-You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=bootstrap4) to know how to render and configure the Gantt.
+You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt/default-functionalities?theme=bootstrap4) to know how to render and configure the Gantt.

@@ -3,7 +3,7 @@ layout: post
 title: Filtering in JavaScript Gantt Chart Control | Syncfusion
 description: Learn here all about filtering in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Filtering 
+control: Filtering
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -17,8 +17,8 @@ To enable filtering, set [allowFiltering](../../api/gantt#allowfiltering) to **t
 
 To activate filtering functionality, inject the `Filter` service into the control.
 
-> * The filtering UI is rendered based on the column type, allowing data to be filtered using appropriate operators.
-> * The filter menu is enabled by default. To disable the filtering option for a specific column, set the `allowFiltering` property of the `column` to **false**.
+> - The filtering UI is rendered based on the column type, allowing data to be filtered using appropriate operators.
+> - The filter menu is enabled by default. To disable the filtering option for a specific column, set the `allowFiltering` property of the `column` to **false**.
 
 ## Apply initial filter on load
 
@@ -30,27 +30,27 @@ The following sample demonstrates how to apply an initial filter where **TaskNam
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/initialLoadFiltering-cs4/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/initialLoadFiltering-cs4/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/initialLoadFiltering-cs4/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/initialLoadFiltering-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/initialLoadFiltering-cs4" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/initialLoadFiltering-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/initialLoadFiltering-cs4/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/initialLoadFiltering-cs4/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/initialLoadFiltering-cs4/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/initialLoadFiltering-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/initialLoadFiltering-cs4" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/initialLoadFiltering-cs4" %}
 {% endif %}
 
 ## Supported filter operators
@@ -89,27 +89,27 @@ The JavaScript Gantt Chart control supports multiple filtering modes, which can 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filtering-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/filtering-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filtering-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/filtering-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/filtering-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/filtering-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filtering-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/filtering-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filtering-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/filtering-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/filtering-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/filtering-cs1" %}
 {% endif %}
 
 ## Enable diacritic-sensitive filtering
@@ -122,27 +122,27 @@ The following sample demonstrates this behavior: when filtering the **TaskName**
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/diacriticsFilter-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/diacriticsFilter-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/diacriticsFilter-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/diacriticsFilter-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/diacriticsFilter-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/diacriticsFilter-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/diacriticsFilter-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/diacriticsFilter-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/diacriticsFilter-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/diacriticsFilter-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/diacriticsFilter-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/diacriticsFilter-cs1" %}
 {% endif %}
 
 ## Programmatic filtering using method
@@ -155,27 +155,27 @@ The following sample demonstrates how to filter the **TaskName** and **TaskID** 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filterByColumn-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/filterByColumn-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filterByColumn-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/filterByColumn-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/filterByColumn-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/filterByColumn-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filterByColumn-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/filterByColumn-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filterByColumn-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/filterByColumn-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/filterByColumn-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/filterByColumn-cs1" %}
 {% endif %}
 
 ## Clear all applied filters
@@ -186,27 +186,27 @@ You can clear all the filtering conditions applied in the Gantt Chart contol by 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/clearFilter-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/clearFilter-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/clearFilter-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/clearFilter-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/clearFilter-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/clearFilter-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/clearFilter-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/clearFilter-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/clearFilter-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/clearFilter-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/clearFilter-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/clearFilter-cs1" %}
 {% endif %}
 
 ## Set different filter types per column
@@ -217,27 +217,27 @@ You can enable different filter types for individual columns in the Gantt Chart 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filtering-cs2/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/filtering-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filtering-cs2/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/filtering-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/filtering-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/filtering-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filtering-cs2/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/filtering-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filtering-cs2/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/filtering-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/filtering-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/filtering-cs2" %}
 {% endif %}
 
 ## Customize filtering behavior using events
@@ -245,34 +245,34 @@ You can enable different filter types for individual columns in the Gantt Chart 
 You can customize the filtering behavior in the JavaScript Gantt using the [actionBegin](../../documentation/gantt/events#actionbegin) and [actionComplete](../../gantt/events#actioncomplete) events. These events allow you to inject custom logic at different stages of the filtering workflow.
 
 The following sample demonstrates how to handle different filtering stages using `args.requestType`:
-  
-- For **filterBeforeOpen**, customize filter operators based on `args.columnType` (number or string).  
-- For **filtering**, cancel the action if `args.currentFilteringColumn` is **StartDate**.  
+
+- For **filterBeforeOpen**, customize filter operators based on `args.columnType` (number or string).
+- For **filtering**, cancel the action if `args.currentFilteringColumn` is **StartDate**.
 - For **filterAfterOpen**, apply background styling to the filter dialog content and footer.
 
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filter-events-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/filter-events-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filter-events-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/filter-events-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/filter-events-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/filter-events-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filter-events-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/filter-events-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filter-events-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/filter-events-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/filter-events-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/filter-events-cs1" %}
 {% endif %}

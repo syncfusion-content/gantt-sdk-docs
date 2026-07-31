@@ -3,7 +3,7 @@ layout: post
 title: Excel Like Filter in Angular Gantt Chart Component | Syncfusion
 description: Learn here all about excel like filter in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Excel like filter 
+control: Excel like filter
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -16,15 +16,15 @@ To enable this feature, configure [filterSettings.type](https://ej2.syncfusion.c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/filtermenu-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/filtermenu-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/filtermenu-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/filtermenu-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/filtering/filtermenu-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/filtering/filtermenu-cs1" %}
 
 ## Show customized text in checkbox list data
 
@@ -32,49 +32,46 @@ To customize the text displayed in a checkbox list, use `filterItemTemplate` and
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/show-custom-template/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/show-custom-template/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/show-custom-template/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/show-custom-template/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/filtering/show-custom-template" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/filtering/show-custom-template" %}
 
 ## Hide Excel filter dialog elements
 
 You can hide elements such as the context menu, search box, sorting options, and checkbox list in the Gantt Excel filter dialog using the following CSS:
 
 ```css
-
 .e-gantt .e-excelfilter .e-contextmenu-wrapper {
-    display: none;
+  display: none;
 }
-
 ```
 
 If you want to hide only the built-in sorting options (ascending, descending, and separator), apply the following CSS:
 
 ```css
- .e-excel-ascending,
- .e-excel-descending,
- .e-separator.e-excel-separator {
-    display: none;
-  }
-
+.e-excel-ascending,
+.e-excel-descending,
+.e-separator.e-excel-separator {
+  display: none;
+}
 ```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/customize-filtermenu-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/customize-filtermenu-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/customize-filtermenu-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/customize-filtermenu-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/filtering/customize-filtermenu-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/filtering/customize-filtermenu-cs1" %}
 
 ## Customize filter choice count
 
@@ -84,15 +81,15 @@ To customize this behavior, the `filterChoiceCount` property can be adjusted to 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/choice-count-filtermenu/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/choice-count-filtermenu/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/choice-count-filtermenu/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/choice-count-filtermenu/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/filtering/choice-count-filtermenu" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/filtering/choice-count-filtermenu" %}
 
 ## Bind custom remote data source for Excel-like filtering
 
@@ -100,13 +97,12 @@ You can dynamically bind a custom remote data source to the Excel filter in the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/remote-datasource-filtermenu/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/remote-datasource-filtermenu/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/remote-datasource-filtermenu/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/remote-datasource-filtermenu/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/filtering/remote-datasource-filtermenu" %}
 
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/filtering/remote-datasource-filtermenu" %}

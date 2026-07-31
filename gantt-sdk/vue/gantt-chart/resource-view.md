@@ -2,7 +2,7 @@
 layout: post
 title: Resource View in Vue Gantt Chart Component | Syncfusion
 description: Learn here all about Resource view in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Resource view 
+control: Resource view
 platform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -19,18 +19,18 @@ To learn about Gantt Chart Resource view Concepts, you can check on this video:
 
 A task assigned to one or more resources are termed as resource task and it is added as child task to the respective resource. Already assigned task can also be shared or moved with other resources by adding a resource name to the task or removing resource name from the task by cell or dialog editing.
 
->Note: Currently there is no support for unscheduled task in Resource view Gantt.
+> Note: Currently there is no support for unscheduled task in Resource view Gantt.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/resource-view-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/resource-view-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/resource-view-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/resource-view-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/resource-view-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/resource-view-cs1" %}
 
 ## Resource overallocation
 
@@ -40,18 +40,18 @@ The available working time of resources for completing the task in a day will be
 
 The range of overallocation dates can be highlighted by a square bracket. It can be enabled by setting the `showOverallocation` property as `true`. The following code example demonstrates how to hide or show the over allocation by clicking the custom button.
 
->Note: By default, the `showOverAllocation` property value is `false`.
+> Note: By default, the `showOverAllocation` property value is `false`.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/resource-view-cs2/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/resource-view-cs2/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/resource-view-cs2/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/resource-view-cs2/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/resource-view-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/resource-view-cs2" %}
 
 ## Unassigned task
 
@@ -63,11 +63,11 @@ In Gantt, you can enable taskbar drag and drop between resources by using the [a
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/resource-view-cs4/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/resource-view-cs4/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/resource-view-cs4/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/resource-view-cs4/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/resource-view-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/resource-view-cs4" %}

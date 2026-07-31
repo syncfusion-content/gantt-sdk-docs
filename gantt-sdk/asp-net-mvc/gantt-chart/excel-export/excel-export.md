@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Excel Export in gantt control
 
 Gantt supports client-side exporting, which allows you to export its data to the Excel and CSV formats. Use the `excelExport` and `csvExport` methods for exporting. To enable Excel export in the Gantt, set the [`AllowExcelExport`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~AllowExcelExport.html) to true.
@@ -17,10 +16,10 @@ Gantt supports client-side exporting, which allows you to export its data to the
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/excelExport/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/excelExport/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ExcelExport.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/excelExport/excelExport.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/excelExport/excelExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -28,10 +27,10 @@ Gantt supports client-side exporting, which allows you to export its data to the
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/excelExport/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/excelExport/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ExcelExport.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/excelExport/excelExport.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/excel-export/excelExport/excelExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

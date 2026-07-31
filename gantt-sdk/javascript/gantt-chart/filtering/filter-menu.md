@@ -3,7 +3,7 @@ layout: post
 title: Filter Menu in JavaScript Gantt Chart Control | Syncfusion
 description: Learn here all about filter menu in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Filter menu 
+control: Filter menu
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -17,27 +17,27 @@ The [JavaScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/j
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/initialLoadFiltering-cs2/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/initialLoadFiltering-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/initialLoadFiltering-cs2/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/initialLoadFiltering-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/initialLoadFiltering-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/initialLoadFiltering-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/initialLoadFiltering-cs2/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/initialLoadFiltering-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/initialLoadFiltering-cs2/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/initialLoadFiltering-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/initialLoadFiltering-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/initialLoadFiltering-cs2" %}
 {% endif %}
 
 > To prevent the filter menu from rendering for a specific column, set [columns.allowFiltering](../../api/gantt/column#allowfiltering) to **false**.
@@ -49,44 +49,44 @@ You can customize the filter menu in the JavaScript Gantt Chart control using th
 The `column.filter.ui` property supports three essential functions:
 
 1. `create`- Initializes and renders the custom filter control inside the filter menu.
-2. `write`- Populates the control with the current filter value and attaches any necessary event handlers. 
+2. `write`- Populates the control with the current filter value and attaches any necessary event handlers.
 3. `read` - Retrieves the selected value from the control and applies the filter to the column.
 
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/initialLoadFiltering-cs3/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/initialLoadFiltering-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/initialLoadFiltering-cs3/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/initialLoadFiltering-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/initialLoadFiltering-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/initialLoadFiltering-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/initialLoadFiltering-cs3/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/initialLoadFiltering-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/initialLoadFiltering-cs3/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/initialLoadFiltering-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/initialLoadFiltering-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/initialLoadFiltering-cs3" %}
 {% endif %}
 
 ## Hide default filter icon while perform filtering through method
 
-To hide the default filter icon from the UI when filtering is performed programmatically, apply the following CSS: 
- 
+To hide the default filter icon from the UI when filtering is performed programmatically, apply the following CSS:
+
 ```css
 .e-filtermenudiv.e-icons.e-icon-filter {
-      display: none;
-    }
+  display: none;
+}
 ```
 
 You can perform filtering programmatically by checking if `args.currentTarget.id` equals **performFilter**, and then calling [filterByColumn](../../api/gantt#filterbycolumn) method. If the condition is not met, use [clearFiltering](../../api/gantt#clearfiltering) to reset filters via a button click.
@@ -95,27 +95,27 @@ You can perform filtering programmatically by checking if `args.currentTarget.id
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs2/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/filter-menu-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs2/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/filter-menu-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/filter-menu-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs2/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/filter-menu-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs2/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/filter-menu-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/filter-menu-cs2" %}
 {% endif %}
 
 ## Customize the default input control of filter menu dialog
@@ -138,63 +138,63 @@ The following sample demonstrates how to disable the autofill feature by setting
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/filter-menu-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/filter-menu-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/filter-menu-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/filter-menu-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/filter-menu-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/filter-menu-cs1" %}
 {% endif %}
 
 ## Customizing filter menu operators list
 
 The JavaScript Gantt Chart control allows customization of the default filter operator list using the [filterSettings.operators](../../api/gantt/filterSettings#operators) property. This allows you to define a custom set of operators shown in the filter menu for each column type, improving usability and relevance.
 
-You can configure operators for different types using the following options: 
+You can configure operators for different types using the following options:
 
-- **stringOperator** – Custom operators for string columns.  
-- **numberOperator** – Custom operators for number columns.  
-- **dateOperator** – Custom operators for date columns.  
+- **stringOperator** – Custom operators for string columns.
+- **numberOperator** – Custom operators for number columns.
+- **dateOperator** – Custom operators for date columns.
 - **booleanOperator** – Custom operators for boolean columns.
 
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs3/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/filter-menu-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs3/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/filter-menu-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/filter-menu-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs3/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/filter-menu-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs3/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/filter-menu-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/filter-menu-cs3" %}
 {% endif %}

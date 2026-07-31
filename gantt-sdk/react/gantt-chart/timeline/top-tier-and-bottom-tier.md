@@ -3,7 +3,7 @@ layout: post
 title: Top tier and bottom tier in React Gantt Chart Component | Syncfusion
 description: Learn how to configure top and bottom tiers in the Syncfusion React Gantt Chart Component using timeline settings such as unit, format, count, and formatter.
 platform: gantt-sdk
-control: Top tier and bottom tier 
+control: Top tier and bottom tier
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -22,17 +22,17 @@ These properties allow precise control over how time intervals are displayed, en
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/timeline-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/timeline-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/timeline-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/timeline-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/timeline-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/timeline-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/timeline-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/timeline-cs1" %}
 
 ## Combining timeline cells
 
@@ -45,17 +45,17 @@ By adjusting these values, the timeline can display broader or more granular int
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/combinetimeline-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/combinetimeline-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/combinetimeline-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/combinetimeline-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/combinetimeline-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/combinetimeline-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/combinetimeline-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/combinetimeline-cs1" %}
 
 ## Format value of timeline cell
 
@@ -68,28 +68,28 @@ In the React Gantt Chart component, the values displayed in the top and bottom t
 
 The [formatter](https://ej2.syncfusion.com/documentation/api/gantt/itimelineformatter) function supports the following parameters:
 
-| Parameter | Description                                                                 |
-|-----------|-----------------------------------------------------------------------------|
-| date      | The current date value for the cell.                                        |
-| format    | The date format string applied to the cell.                                 |
-| tier      | Indicates whether the cell belongs to the topTier or bottomTier.           |
-| mode      | Specifies the rendering mode (Year, Month, Week, or Day).                   |
+| Parameter | Description                                                      |
+| --------- | ---------------------------------------------------------------- |
+| date      | The current date value for the cell.                             |
+| format    | The date format string applied to the cell.                      |
+| tier      | Indicates whether the cell belongs to the topTier or bottomTier. |
+| mode      | Specifies the rendering mode (Year, Month, Week, or Day).        |
 
 The following example shows how to use the `formatter` function with all four parameters `date`, `format`, `tier`, and `mode`:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/formattimeline-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/formattimeline-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/formattimeline-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/formattimeline-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/formattimeline-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/formattimeline-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/formattimeline-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/formattimeline-cs1" %}
 
 ## Timeline cell width
 
@@ -104,14 +104,14 @@ This configuration allows precise control over the visual density of the timelin
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/timelineWidth-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/timelineWidth-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/timelineWidth-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/timelineWidth-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/timelineWidth-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/timelineWidth-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/timelineWidth-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/timelineWidth-cs1" %}

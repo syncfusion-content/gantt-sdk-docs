@@ -16,11 +16,11 @@ The Gantt Chart component maps any data source fields to task labels using the [
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/appearance-customization-cs4/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/appearance-customization-cs4/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/appearance-customization-cs4/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/appearance-customization-cs4/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/appearance-customization-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/appearance-customization-cs4" %}

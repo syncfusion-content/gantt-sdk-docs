@@ -18,15 +18,15 @@ Use the [taskFields.work](https://ej2.syncfusion.com/angular/documentation/api/g
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/work/work-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/work/work-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/work/work-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/work/work-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/work/work-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/work/work-cs1" %}
 
 ## Configure task types
 
@@ -40,15 +40,15 @@ For example, a **FixedWork** task with 40 hours and two resources at 50% each sp
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/work/tasktype-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/work/tasktype-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/work/tasktype-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/work/tasktype-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/work/tasktype-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/work/tasktype-cs1" %}
 
 Following table explains how the work, duration and resource unit fields will get updated on changing any of the fields
 

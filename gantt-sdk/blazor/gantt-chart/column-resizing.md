@@ -9,9 +9,9 @@ documentation: ug
 
 # Resize columns in Blazor Gantt Chart component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component allows you to resize columns dynamically by dragging the edges of column headers. This feature enhances readability and layout flexibility, especially when working with large datasets. To enable this feature, set the [AllowResizing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowResizing) property to **true** in the Gantt configuration. 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component allows you to resize columns dynamically by dragging the edges of column headers. This feature enhances readability and layout flexibility, especially when working with large datasets. To enable this feature, set the [AllowResizing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowResizing) property to **true** in the Gantt configuration.
 
-Column width can be adjusted by dragging the right edge of the header, changes are applied immediately. 
+Column width can be adjusted by dragging the right edge of the header, changes are applied immediately.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -24,11 +24,11 @@ Column width can be adjusted by dragging the right edge of the header, changes a
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public class TaskData
     {
@@ -56,6 +56,7 @@ Column width can be adjusted by dragging the right edge of the header, changes a
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -63,16 +64,16 @@ Column width can be adjusted by dragging the right edge of the header, changes a
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/VXrnXGCwpbNZcLVN?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
->* In RTL mode, you can click and drag the left edge of header cell to resize the column.
->* The [Width](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_Width) property of the column can be set initially to define the default width of the column. However, when column resizing is enabled, you can override the default width by manually resizing the columns.
+> - In RTL mode, you can click and drag the left edge of header cell to resize the column.
+> - The [Width](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_Width) property of the column can be set initially to define the default width of the column. However, when column resizing is enabled, you can override the default width by manually resizing the columns.
 
 ## Restrict the resizing based on minimum and maximum width
 
-The Gantt chart component allows restricting column resizing within a defined range to maintain layout consistency. This ensures column widths remain within the specified limits during resizing.  
-  
-To enable this, set the [GanttColumn.MinWidth](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_MinWidth) and [GanttColumn.MaxWidth](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_MaxWidth) properties in the column configuration.  
+The Gantt chart component allows restricting column resizing within a defined range to maintain layout consistency. This ensures column widths remain within the specified limits during resizing.
 
-The following example demonstrates how the **TaskName** column can be configured with a minimum width of 150 pixels and a maximum of 250 pixels, while the **Duration** column can be set between 50 and 200 pixels.  
+To enable this, set the [GanttColumn.MinWidth](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_MinWidth) and [GanttColumn.MaxWidth](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_MaxWidth) properties in the column configuration.
+
+The following example demonstrates how the **TaskName** column can be configured with a minimum width of 150 pixels and a maximum of 250 pixels, while the **Duration** column can be set between 50 and 200 pixels.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -123,6 +124,7 @@ The following example demonstrates how the **TaskName** column can be configured
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -146,4 +148,4 @@ The screenshot below illustrates column resizing on a touch device.
 
 ![Column resize](images/blazor-gantt-chart-column-resizing.webp)
 
-> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=bootstrap4) to know how to render and configure the Gantt Chart.
+> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt/default-functionalities?theme=bootstrap4) to know how to render and configure the Gantt Chart.

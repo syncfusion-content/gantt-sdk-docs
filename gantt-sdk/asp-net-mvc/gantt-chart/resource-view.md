@@ -8,11 +8,9 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Resource View in ASP.NET MVC Gantt Component
 
 The resource breakdown view is used to visualize the tasks assigned to each resource in hierarchy manner. Resources are displayed as parents and all the tasks assigned to each resource are displayed as its child records. It can be initialized by setting the [`viewType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.ViewType.html) property to `ResourceView`.
-
 
 ## Resource task
 
@@ -24,10 +22,10 @@ N> Currently there is no support for unscheduled task in Resource view Gantt.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-view/resourceView/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/resource-view/resourceView/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ResourceView.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-view/resourceView/resourceView.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/resource-view/resourceView/resourceView.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -35,15 +33,13 @@ N> Currently there is no support for unscheduled task in Resource view Gantt.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-view/resourceView/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/resource-view/resourceView/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ResourceView.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-view/resourceView/resourceView.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/resource-view/resourceView/resourceView.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/resourceView.png)
 
@@ -61,10 +57,10 @@ N> By default, the `showOverAllocation` property value is `false`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-view/showhide/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/resource-view/showhide/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Showhide.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-view/showhide/showhide.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/resource-view/showhide/showhide.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -72,15 +68,13 @@ N> By default, the `showOverAllocation` property value is `false`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-view/showhide/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/resource-view/showhide/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Showhide.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-view/showhide/showhide.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/resource-view/showhide/showhide.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/showhide.PNG)
 
@@ -92,16 +86,16 @@ A task not assigned to any one of the resource are termed as unassigned tasks. T
 
 In Gantt, you can enable taskbar drag and drop between resources by using the [`AllowTaskbarDragAndDrop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowTaskbarDragAndDrop) property. This allows you to move a taskbar from one resource to another vertically, making it easier to schedule tasks and manage resources.
 
->Note: By default, the `AllowTaskbarDragAndDrop` property value is `false`.
+> Note: By default, the `AllowTaskbarDragAndDrop` property value is `false`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-view/taskbardragdrop/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/resource-view/taskbardragdrop/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="TaskbarDragAndDrop.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-view/taskbardragdrop/taskbardragdrop.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/resource-view/taskbardragdrop/taskbardragdrop.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -109,10 +103,10 @@ In Gantt, you can enable taskbar drag and drop between resources by using the [`
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-view/taskbardragdrop/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/resource-view/taskbardragdrop/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="TaskbarDragAndDrop.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-view/taskbardragdrop/taskbardragdrop.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/resource-view/taskbardragdrop/taskbardragdrop.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

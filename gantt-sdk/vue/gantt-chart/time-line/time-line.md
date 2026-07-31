@@ -30,14 +30,14 @@ In the `Week` timeline mode, the upper part of the schedule header displays the 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/timeline-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/timeline-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/timeline-cs1" %}
 
 ### Month timeline mode
 
@@ -45,14 +45,14 @@ In the `Month` timeline mode, the upper part of the schedule header displays the
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs2/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/timeline-cs2/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs2/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/timeline-cs2/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/timeline-cs2" %}
 
 ### Year timeline mode
 
@@ -60,14 +60,14 @@ In the `Year` timeline mode, the upper schedule header displays the years wherea
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs3/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/timeline-cs3/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs3/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/timeline-cs3/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/timeline-cs3" %}
 
 ### Day timeline mode
 
@@ -75,14 +75,14 @@ In the `Day` timeline mode, the upper part of the header displays the days where
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs4/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/timeline-cs4/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs4/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/timeline-cs4/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs4" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/timeline-cs4" %}
 
 ### Hour timeline mode
 
@@ -90,14 +90,14 @@ An `Hour` timeline mode tracks the tasks in minutes scale. In this mode, the upp
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs5/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/timeline-cs5/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs5/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/timeline-cs5/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs5" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/timeline-cs5" %}
 
 ## Timeline view dates
 
@@ -105,14 +105,14 @@ The Gantt Chart control supports rendering a fixed timeline range using the [vie
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/view-dates-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/view-dates-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/view-dates-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/view-dates-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/view-dates-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/view-dates-cs1" %}
 
 **Key behaviors**
 
@@ -134,14 +134,14 @@ In the Gantt Chart component, you can customize the week start day using the [we
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs6/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/timeline-cs6/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs6/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/timeline-cs6/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs6" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/timeline-cs6" %}
 
 ## Customize automatic timescale update action
 
@@ -149,14 +149,14 @@ In the Gantt Chart component, the schedule timeline will be automatically update
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs7/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/timeline-cs7/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs7/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/timeline-cs7/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs7" %}s
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/timeline-cs7" %}s
 
 ## Timeline cells tooltip
 
@@ -164,14 +164,14 @@ In the Gantt Chart component, you can enable or disable the mouse hover tooltip 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/tooltip-cs2/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/tooltip-cs2/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/tooltip-cs2/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/tooltip-cs2/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/tooltip-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/tooltip-cs2" %}
 
 ## Show/hide weekends
 
@@ -181,16 +181,17 @@ The [timelineSettings.showWeekend](https://ej2.syncfusion.com/vue/documentation/
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/showweekend-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/showweekend-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/showweekend-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/showweekend-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/showweekend-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/showweekend-cs1" %}
 
 > Limitations
+>
 > - The `showWeekend` feature does not support baselines.
 > - The `showWeekend` is not compatible with the manual task mode.
 > - Non-working hours cannot be excluded when `showWeekend` is set to false.
@@ -212,6 +213,7 @@ The following code example how to customize the top tier to display the week's w
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
 {% raw %}
 <template>
+
 <div>
 <ejs-gantt ref='gantt' :dataSource="data" id="GanttContainer" :taskFields="taskFields" :treeColumnIndex="1"
             :holidays="holidays" :labelSettings="labelSettings" :splitterSettings="splitterSettings" :height="height"
@@ -329,6 +331,7 @@ const holidayValue = (value, date) => {
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
 {% raw %}
 <template>
+
 <div>
 <ejs-gantt ref='gantt' :dataSource="data" id="GanttContainer" :taskFields="taskFields" :treeColumnIndex="1"
             :holidays="holidays" :labelSettings="labelSettings" :splitterSettings="splitterSettings" :height="height"
@@ -470,7 +473,7 @@ export default {
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/tooltip-cs8" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/tooltip-cs8" %}
 
 ## Infinite timeline scrolling
 
@@ -486,11 +489,11 @@ This feature enables exploration of long project schedules without manually upda
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/infinite-scroll-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/infinite-scroll-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/infinite-scroll-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/infinite-scroll-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/infinite-scroll-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/infinite-scroll-cs1" %}

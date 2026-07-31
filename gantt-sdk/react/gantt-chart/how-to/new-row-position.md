@@ -2,7 +2,7 @@
 layout: post
 title: New Row Position in React Gantt Chart component | Syncfusion
 description: Learn here all about new row position in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: New row position 
+control: New row position
 platform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -16,14 +16,14 @@ The following code snippets demonstrate how to achieve this.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/how-to-newrow-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/how-to-newrow-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/how-to-newrow-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/how-to-newrow-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/how-to-newrow-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/how-to-newrow-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/how-to-newrow-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/how-to-newrow-cs1" %}

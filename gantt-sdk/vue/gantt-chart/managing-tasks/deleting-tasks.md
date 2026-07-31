@@ -2,7 +2,7 @@
 layout: post
 title: Deleting Tasks in Vue Gantt Chart Component | Syncfusion
 description: Learn here all about Deleting tasks in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Deleting tasks 
+control: Deleting tasks
 platform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -14,14 +14,14 @@ A task delete option in the Gantt Chart component can be enabled by enabling the
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/managing-tasks-cs4/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/managing-tasks-cs4/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/managing-tasks-cs4/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/managing-tasks-cs4/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/managing-tasks-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/managing-tasks-cs4" %}
 
 > NOTE: You should select any one of the rows in the Gantt Chart component to perform the task delete action.  
 > You should set the [editSettings.allowDeleting](https://ej2.syncfusion.com/vue/documentation/api/gantt/editSettings#allowdeleting) value to `true` to delete the record dynamically.
@@ -34,11 +34,11 @@ The following code snippet explains how to enable the delete confirmation messag
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/managing-tasks-cs5/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/managing-tasks-cs5/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/managing-tasks-cs5/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/managing-tasks-cs5/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/managing-tasks-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/managing-tasks-cs5" %}

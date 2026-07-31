@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Column Resizing in gantt control
 
 The column width can be resized by clicking and dragging the right edge of the column header. While dragging, the width of the column will be resized immediately. Each column can be auto resized by double-clicking the right edge of the column header to fit the width of that column based on the widest cell content. To resize the column, set the [`AllowResizing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowResizing) property to true. The following code example shows how to enable the column resize feature in the Gantt control.
@@ -17,10 +16,10 @@ The column width can be resized by clicking and dragging the right edge of the c
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/resizeColumns/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/resizeColumns/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ResizeColumns.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/resizeColumns/resizeColumns.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/resizeColumns/resizeColumns.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -28,15 +27,13 @@ The column width can be resized by clicking and dragging the right edge of the c
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/resizeColumns/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/resizeColumns/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ResizeColumns.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/resizeColumns/resizeColumns.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/resizeColumns/resizeColumns.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 N> You can disable resizing for a particular column by setting the [`Columns.AllowResizing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_AllowResizing) to `false`.
 
@@ -50,10 +47,10 @@ In the following example, the minimum and maximum widths are defined for the `Du
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/minMaxWidth/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/minMaxWidth/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="MinMaxWidth.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/minMaxWidth/minMaxWidth.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/minMaxWidth/minMaxWidth.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -61,10 +58,10 @@ In the following example, the minimum and maximum widths are defined for the `Du
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/minMaxWidth/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/minMaxWidth/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="MinMaxWidth.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/minMaxWidth/minMaxWidth.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/minMaxWidth/minMaxWidth.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

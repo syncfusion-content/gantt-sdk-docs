@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Taskbar in React Gantt Chart Component
 
-The taskbar in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component visually represents tasks on the timeline, showing duration, progress, and dependencies, enabling intuitive project management. Taskbars support customization through properties like [taskbarHeight](https://ej2.syncfusion.com/react/documentation/api/gantt#taskbarheight) for sizing and [queryTaskbarInfo](https://ej2.syncfusion.com/react/documentation/api/gantt#querytaskbarinfo) event for conditional formatting based on task data like progress. Multi-taskbar support in resource view, enabled by [enableMultiTaskbar](https://ej2.syncfusion.com/react/documentation/api/gantt#enablemultitaskbar), summarizes child task progress in collapsed parent taskbars. Connector lines, styled via [connectorLineWidth](https://ej2.syncfusion.com/react/documentation/api/gantt#connectorlinewidth) and [connectorLineBackground](https://ej2.syncfusion.com/react/documentation/api/gantt#connectorlinebackground), illustrate dependencies. Tooltips, controlled by [tooltipSettings](https://ej2.syncfusion.com/react/documentation/api/gantt/tooltipSettings/), provide hover details for taskbars, baselines, and timelines, with templates for custom content. Editing interactions include dragging for rescheduling (via [allowTaskbarDragAndDrop](https://ej2.syncfusion.com/react/documentation/api/gantt#allowtaskbardraganddrop)) and resizing for duration, progress changes, triggering events like [taskbarEditing](https://ej2.syncfusion.com/react/documentation/gantt/events#taskbarediting) and [taskbarEdited](https://ej2.syncfusion.com/react/documentation/gantt/events#taskbaredited) for validation. 
+The taskbar in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component visually represents tasks on the timeline, showing duration, progress, and dependencies, enabling intuitive project management. Taskbars support customization through properties like [taskbarHeight](https://ej2.syncfusion.com/react/documentation/api/gantt#taskbarheight) for sizing and [queryTaskbarInfo](https://ej2.syncfusion.com/react/documentation/api/gantt#querytaskbarinfo) event for conditional formatting based on task data like progress. Multi-taskbar support in resource view, enabled by [enableMultiTaskbar](https://ej2.syncfusion.com/react/documentation/api/gantt#enablemultitaskbar), summarizes child task progress in collapsed parent taskbars. Connector lines, styled via [connectorLineWidth](https://ej2.syncfusion.com/react/documentation/api/gantt#connectorlinewidth) and [connectorLineBackground](https://ej2.syncfusion.com/react/documentation/api/gantt#connectorlinebackground), illustrate dependencies. Tooltips, controlled by [tooltipSettings](https://ej2.syncfusion.com/react/documentation/api/gantt/tooltipSettings/), provide hover details for taskbars, baselines, and timelines, with templates for custom content. Editing interactions include dragging for rescheduling (via [allowTaskbarDragAndDrop](https://ej2.syncfusion.com/react/documentation/api/gantt#allowtaskbardraganddrop)) and resizing for duration, progress changes, triggering events like [taskbarEditing](https://ej2.syncfusion.com/react/documentation/gantt/events#taskbarediting) and [taskbarEdited](https://ej2.syncfusion.com/react/documentation/gantt/events#taskbaredited) for validation.
 
 ## Customize taskbar height
 
@@ -20,17 +20,17 @@ The following example demonstrates how to set a custom taskbar height of 40 pixe
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/appearanceandstyle-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/appearanceandstyle-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/appearanceandstyle-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/appearanceandstyle-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/appearanceandstyle-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/appearanceandstyle-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/appearanceandstyle-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/appearanceandstyle-cs1" %}
 
 ## Apply conditional formatting
 
@@ -40,17 +40,17 @@ This example demonstrates formatting taskbars based on progress, where **args.da
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/appearanceandstyle-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/appearanceandstyle-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/appearanceandstyle-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/appearanceandstyle-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/appearanceandstyle-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/appearanceandstyle-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/appearanceandstyle-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/appearanceandstyle-cs2" %}
 
 ## Customize gripper icons
 
@@ -60,17 +60,17 @@ In the following example, the progress gripper icon is customized by targeting t
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/change-gripper-icon-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/change-gripper-icon-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/change-gripper-icon-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/change-gripper-icon-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/change-gripper-icon-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/change-gripper-icon-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/change-gripper-icon-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/change-gripper-icon-cs1" %}
 
 ## Control taskbar and notes icon visibility
 
@@ -80,17 +80,17 @@ The following example hides taskbars for specific tasks and notes icons for empt
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/control-taskbar-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/control-taskbar-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/control-taskbar-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/control-taskbar-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/control-taskbar-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/control-taskbar-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/control-taskbar-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/control-taskbar-cs1" %}
 
 This code hides taskbars for tasks with IDs 7–10 (e.g., estimation tasks) and notes icons for empty `Info` fields, using `queryTaskbarInfo` and `queryCellInfo`. The **.e-notes-info** class ensures robust icon targeting, and `taskFields.notes` enables notes rendering.
 
@@ -103,66 +103,65 @@ The following example disables taskbar editing for Task ID 4 by canceling drag
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
 {% raw %}
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import _ as React from 'react';
+import _ as ReactDOM from 'react-dom';
 import { GanttComponent, Inject, Edit, Selection} from '@syncfusion/ej2-react-gantt';
 
 const taskData = [
-  { TaskId: 1, TaskName: 'Product Concept', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
-  { TaskId: 2, TaskName: 'Defining the product and its usage', StartDate: new Date('04/02/2019'), Duration: 3, Progress: 30, ParentId: 1 },
-  { TaskId: 3, TaskName: 'Defining target audience', StartDate: new Date('04/02/2019'), Duration: 3, ParentId: 1 },
-  { TaskId: 4, TaskName: 'Prepare product sketch and notes', StartDate: new Date('04/02/2019'), Duration: 2, Predecessor: '2', Progress: 30, ParentId: 1 },
-  { TaskId: 5, TaskName: 'Concept Approval', StartDate: new Date('04/02/2019'), Duration: 0, Predecessor: '3,4', Indicators: [{ date: '04/10/2019', name: '#briefing', title: 'Product concept briefing' }] },
-  { TaskId: 6, TaskName: 'Market Research', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
-  { TaskId: 7, TaskName: 'Demand Analysis', StartDate: new Date('04/04/2019'), EndDate: new Date('04/21/2019'), ParentId: 6 },
-  { TaskId: 8, TaskName: 'Customer strength', StartDate: new Date('04/04/2019'), Duration: 4, Predecessor: '5', Progress: 30, ParentId: 7 },
-  { TaskId: 9, TaskName: 'Market opportunity analysis', StartDate: new Date('04/04/2019'), Duration: 4, Predecessor: '5', ParentId: 7 },
-  { TaskId: 10, TaskName: 'Competitor Analysis', StartDate: new Date('04/04/2019'), Duration: 4, Predecessor: '7, 8', Progress: 30, ParentId: 6 }
+{ TaskId: 1, TaskName: 'Product Concept', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
+{ TaskId: 2, TaskName: 'Defining the product and its usage', StartDate: new Date('04/02/2019'), Duration: 3, Progress: 30, ParentId: 1 },
+{ TaskId: 3, TaskName: 'Defining target audience', StartDate: new Date('04/02/2019'), Duration: 3, ParentId: 1 },
+{ TaskId: 4, TaskName: 'Prepare product sketch and notes', StartDate: new Date('04/02/2019'), Duration: 2, Predecessor: '2', Progress: 30, ParentId: 1 },
+{ TaskId: 5, TaskName: 'Concept Approval', StartDate: new Date('04/02/2019'), Duration: 0, Predecessor: '3,4', Indicators: [{ date: '04/10/2019', name: '#briefing', title: 'Product concept briefing' }] },
+{ TaskId: 6, TaskName: 'Market Research', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
+{ TaskId: 7, TaskName: 'Demand Analysis', StartDate: new Date('04/04/2019'), EndDate: new Date('04/21/2019'), ParentId: 6 },
+{ TaskId: 8, TaskName: 'Customer strength', StartDate: new Date('04/04/2019'), Duration: 4, Predecessor: '5', Progress: 30, ParentId: 7 },
+{ TaskId: 9, TaskName: 'Market opportunity analysis', StartDate: new Date('04/04/2019'), Duration: 4, Predecessor: '5', ParentId: 7 },
+{ TaskId: 10, TaskName: 'Competitor Analysis', StartDate: new Date('04/04/2019'), Duration: 4, Predecessor: '7, 8', Progress: 30, ParentId: 6 }
 ];
 
 function App() {
-  let gantt = null;
+let gantt = null;
 
-  const taskSettings = { id: 'TaskId', name: 'TaskName', startDate: 'StartDate', duration: 'Duration', progress: 'Progress', parentID: 'ParentId' };
-  const labelSettings = { leftLabel: 'TaskName' };
-  const editSettings = { allowTaskbarEditing: true };
+const taskSettings = { id: 'TaskId', name: 'TaskName', startDate: 'StartDate', duration: 'Duration', progress: 'Progress', parentID: 'ParentId' };
+const labelSettings = { leftLabel: 'TaskName' };
+const editSettings = { allowTaskbarEditing: true };
 
-  const projectStartDate = new Date('03/28/2019');
-  const projectEndDate = new Date('04/18/2019');
+const projectStartDate = new Date('03/28/2019');
+const projectEndDate = new Date('04/18/2019');
 
-  const queryTaskbarInfo = (args) => {
-    if (args.data.TaskId === 4) {
-      args.taskbarElement.style.cursor = 'default';
-      args.taskbarElement.classList.add('e-prevent-reschedule', 'e-prevent-add-relation-left', 'e-prevent-add-relation-right');
-    }
-  };
+const queryTaskbarInfo = (args) => {
+if (args.data.TaskId === 4) {
+args.taskbarElement.style.cursor = 'default';
+args.taskbarElement.classList.add('e-prevent-reschedule', 'e-prevent-add-relation-left', 'e-prevent-add-relation-right');
+}
+};
 
-  const actionBegin = (args) => {
-    if (args.data.TaskId === 4 && [
-      'ChildDrag', 'ProgressResizing', 'LeftResizing', 'RightResizing',
-      'ConnectorPointLeftDrag', 'ConnectorPointRightDrag'
-    ].includes(args.taskBarEditAction)) {
-      args.cancel = true;
-    }
-  };
+const actionBegin = (args) => {
+if (args.data.TaskId === 4 && [
+'ChildDrag', 'ProgressResizing', 'LeftResizing', 'RightResizing',
+'ConnectorPointLeftDrag', 'ConnectorPointRightDrag'
+].includes(args.taskBarEditAction)) {
+args.cancel = true;
+}
+};
 
-  return (
-    <GanttComponent
-      id="ganttDefault"
-      height="430px"
-      dataSource={taskData}
-      taskFields={taskSettings}
-      labelSettings={labelSettings}
-      projectStartDate={projectStartDate}
-      projectEndDate={projectEndDate}
-      editSettings={editSettings}
-      queryTaskbarInfo={queryTaskbarInfo}
-      actionBegin={actionBegin}
-      ref={(g) => (gantt = g)}
-    >
-      <Inject services={[Edit, Selection]} />
-    </GanttComponent>
-  );
+return (
+<GanttComponent
+id="ganttDefault"
+height="430px"
+dataSource={taskData}
+taskFields={taskSettings}
+labelSettings={labelSettings}
+projectStartDate={projectStartDate}
+projectEndDate={projectEndDate}
+editSettings={editSettings}
+queryTaskbarInfo={queryTaskbarInfo}
+actionBegin={actionBegin}
+ref={(g) => (gantt = g)} >
+<Inject services={[Edit, Selection]} />
+</GanttComponent>
+);
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
@@ -170,66 +169,65 @@ ReactDOM.render(<App />, document.getElementById('root'));
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
 {% raw %}
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import _ as React from 'react';
+import _ as ReactDOM from 'react-dom';
 import { GanttComponent, Inject, Edit, Selection, IActionBeginEventArgs, IQueryTaskbarInfoEventArgs, TaskFieldsModel, LabelSettingsModel, EditSettingsModel } from '@syncfusion/ej2-react-gantt';
 
 const taskData: object[] = [
-  { TaskId: 1, TaskName: 'Product Concept', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
-  { TaskId: 2, TaskName: 'Defining the product and its usage', StartDate: new Date('04/02/2019'), Duration: 3, Progress: 30, ParentId: 1 },
-  { TaskId: 3, TaskName: 'Defining target audience', StartDate: new Date('04/02/2019'), Duration: 3, ParentId: 1 },
-  { TaskId: 4, TaskName: 'Prepare product sketch and notes', StartDate: new Date('04/02/2019'), Duration: 2, Predecessor: '2', Progress: 30, ParentId: 1 },
-  { TaskId: 5, TaskName: 'Concept Approval', StartDate: new Date('04/02/2019'), Duration: 0, Predecessor: '3,4', Indicators: [{ date: '04/10/2019', name: '#briefing', title: 'Product concept briefing' }] },
-  { TaskId: 6, TaskName: 'Market Research', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
-  { TaskId: 7, TaskName: 'Demand Analysis', StartDate: new Date('04/04/2019'), EndDate: new Date('04/21/2019'), ParentId: 6 },
-  { TaskId: 8, TaskName: 'Customer strength', StartDate: new Date('04/04/2019'), Duration: 4, Predecessor: '5', Progress: 30, ParentId: 7 },
-  { TaskId: 9, TaskName: 'Market opportunity analysis', StartDate: new Date('04/04/2019'), Duration: 4, Predecessor: '5', ParentId: 7 },
-  { TaskId: 10, TaskName: 'Competitor Analysis', StartDate: new Date('04/04/2019'), Duration: 4, Predecessor: '7, 8', Progress: 30, ParentId: 6 }
+{ TaskId: 1, TaskName: 'Product Concept', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
+{ TaskId: 2, TaskName: 'Defining the product and its usage', StartDate: new Date('04/02/2019'), Duration: 3, Progress: 30, ParentId: 1 },
+{ TaskId: 3, TaskName: 'Defining target audience', StartDate: new Date('04/02/2019'), Duration: 3, ParentId: 1 },
+{ TaskId: 4, TaskName: 'Prepare product sketch and notes', StartDate: new Date('04/02/2019'), Duration: 2, Predecessor: '2', Progress: 30, ParentId: 1 },
+{ TaskId: 5, TaskName: 'Concept Approval', StartDate: new Date('04/02/2019'), Duration: 0, Predecessor: '3,4', Indicators: [{ date: '04/10/2019', name: '#briefing', title: 'Product concept briefing' }] },
+{ TaskId: 6, TaskName: 'Market Research', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
+{ TaskId: 7, TaskName: 'Demand Analysis', StartDate: new Date('04/04/2019'), EndDate: new Date('04/21/2019'), ParentId: 6 },
+{ TaskId: 8, TaskName: 'Customer strength', StartDate: new Date('04/04/2019'), Duration: 4, Predecessor: '5', Progress: 30, ParentId: 7 },
+{ TaskId: 9, TaskName: 'Market opportunity analysis', StartDate: new Date('04/04/2019'), Duration: 4, Predecessor: '5', ParentId: 7 },
+{ TaskId: 10, TaskName: 'Competitor Analysis', StartDate: new Date('04/04/2019'), Duration: 4, Predecessor: '7, 8', Progress: 30, ParentId: 6 }
 ];
 
 function App() {
-  let gantt: GanttComponent | null = null;
+let gantt: GanttComponent | null = null;
 
-  const taskSettings: TaskFieldsModel = { id: 'TaskId', name: 'TaskName', startDate: 'StartDate', duration: 'Duration', progress: 'Progress', parentID: 'ParentId' };
-  const labelSettings: LabelSettingsModel = { leftLabel: 'TaskName' };
-  const editSettings: EditSettingsModel = { allowTaskbarEditing: true };
+const taskSettings: TaskFieldsModel = { id: 'TaskId', name: 'TaskName', startDate: 'StartDate', duration: 'Duration', progress: 'Progress', parentID: 'ParentId' };
+const labelSettings: LabelSettingsModel = { leftLabel: 'TaskName' };
+const editSettings: EditSettingsModel = { allowTaskbarEditing: true };
 
-  const projectStartDate: Date = new Date('03/28/2019');
-  const projectEndDate: Date = new Date('04/18/2019');
+const projectStartDate: Date = new Date('03/28/2019');
+const projectEndDate: Date = new Date('04/18/2019');
 
-  const queryTaskbarInfo = (args: IQueryTaskbarInfoEventArgs): void => {
-    if ((args.data as any).TaskId === 4) {
-      args.taskbarElement.style.cursor = 'default';
-      args.taskbarElement.classList.add('e-prevent-reschedule', 'e-prevent-add-relation-left', 'e-prevent-add-relation-right');
-    }
-  };
+const queryTaskbarInfo = (args: IQueryTaskbarInfoEventArgs): void => {
+if ((args.data as any).TaskId === 4) {
+args.taskbarElement.style.cursor = 'default';
+args.taskbarElement.classList.add('e-prevent-reschedule', 'e-prevent-add-relation-left', 'e-prevent-add-relation-right');
+}
+};
 
-  const actionBegin = (args: IActionBeginEventArgs): void => {
-    if (args.data.TaskId === 4 && [
-      'ChildDrag', 'ProgressResizing', 'LeftResizing', 'RightResizing',
-      'ConnectorPointLeftDrag', 'ConnectorPointRightDrag'
-    ].includes(args.taskBarEditAction)) {
-      args.cancel = true;
-    }
-  };
+const actionBegin = (args: IActionBeginEventArgs): void => {
+if (args.data.TaskId === 4 && [
+'ChildDrag', 'ProgressResizing', 'LeftResizing', 'RightResizing',
+'ConnectorPointLeftDrag', 'ConnectorPointRightDrag'
+].includes(args.taskBarEditAction)) {
+args.cancel = true;
+}
+};
 
-  return (
-    <GanttComponent
-      id="ganttDefault"
-      height="430px"
-      dataSource={taskData}
-      taskFields={taskSettings}
-      labelSettings={labelSettings}
-      projectStartDate={projectStartDate}
-      projectEndDate={projectEndDate}
-      editSettings={editSettings}
-      queryTaskbarInfo={queryTaskbarInfo}
-      actionBegin={actionBegin}
-      ref={(g) => (gantt = g)}
-    >
-      <Inject services={[Edit, Selection]} />
-    </GanttComponent>
-  );
+return (
+<GanttComponent
+id="ganttDefault"
+height="430px"
+dataSource={taskData}
+taskFields={taskSettings}
+labelSettings={labelSettings}
+projectStartDate={projectStartDate}
+projectEndDate={projectEndDate}
+editSettings={editSettings}
+queryTaskbarInfo={queryTaskbarInfo}
+actionBegin={actionBegin}
+ref={(g) => (gantt = g)} >
+<Inject services={[Edit, Selection]} />
+</GanttComponent>
+);
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
@@ -237,6 +235,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% raw %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -274,6 +273,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
             display: none !important;
         }
     </style>
+
 </head>
 
 <body>
@@ -296,22 +296,22 @@ This example renders a custom taskbar with a progress bar and a badge showing th
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
 {% raw %}
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import _ as React from 'react';
+import _ as ReactDOM from 'react-dom';
 import { GanttComponent } from '@syncfusion/ej2-react-gantt';
 
 function App() {
-    const taskData = [
-        { TaskID: 1, TaskName: 'Product Concept', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
-        { TaskID: 2, TaskName: 'Defining the product and its usage', StartDate: new Date('04/02/2019'), Duration: 3, Progress: 30, ParentID: 1 },
-        { TaskID: 3, TaskName: 'Defining target audience', StartDate: new Date('04/02/2019'), Duration: 3, ParentID: 1 },
-        { TaskID: 4, TaskName: 'Prepare product sketch and notes', StartDate: new Date('04/02/2019'), Duration: 2, Predecessor: '2', Progress: 30, ParentID: 1 },
-        { TaskID: 5, TaskName: 'Concept Approval', StartDate: new Date('04/10/2019'), Duration: 0, Predecessor: '3,4', Indicators: [{ date: '04/10/2019', name: '#briefing', title: 'Product concept briefing' }] }
-    ];
+const taskData = [
+{ TaskID: 1, TaskName: 'Product Concept', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
+{ TaskID: 2, TaskName: 'Defining the product and its usage', StartDate: new Date('04/02/2019'), Duration: 3, Progress: 30, ParentID: 1 },
+{ TaskID: 3, TaskName: 'Defining target audience', StartDate: new Date('04/02/2019'), Duration: 3, ParentID: 1 },
+{ TaskID: 4, TaskName: 'Prepare product sketch and notes', StartDate: new Date('04/02/2019'), Duration: 2, Predecessor: '2', Progress: 30, ParentID: 1 },
+{ TaskID: 5, TaskName: 'Concept Approval', StartDate: new Date('04/10/2019'), Duration: 0, Predecessor: '3,4', Indicators: [{ date: '04/10/2019', name: '#briefing', title: 'Product concept briefing' }] }
+];
 
     const taskFields = {
         id: 'TaskID',
-        name: 'TaskName', 
+        name: 'TaskName',
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
@@ -349,6 +349,7 @@ function App() {
             taskbarTemplate={taskbarTemplate}
         />
     );
+
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
@@ -356,22 +357,22 @@ ReactDOM.render(<App />, document.getElementById('root'));
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
 {% raw %}
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import _ as React from 'react';
+import _ as ReactDOM from 'react-dom';
 import { GanttComponent } from '@syncfusion/ej2-react-gantt';
 
 function App() {
-    const taskData = [
-        { TaskID: 1, TaskName: 'Product Concept', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
-        { TaskID: 2, TaskName: 'Defining the product and its usage', StartDate: new Date('04/02/2019'), Duration: 3, Progress: 30, ParentID: 1 },
-        { TaskID: 3, TaskName: 'Defining target audience', StartDate: new Date('04/02/2019'), Duration: 3, ParentID: 1 },
-        { TaskID: 4, TaskName: 'Prepare product sketch and notes', StartDate: new Date('04/02/2019'), Duration: 2, Predecessor: '2', Progress: 30, ParentID: 1 },
-        { TaskID: 5, TaskName: 'Concept Approval', StartDate: new Date('04/10/2019'), Duration: 0, Predecessor: '3,4', Indicators: [{ date: '04/10/2019', name: '#briefing', title: 'Product concept briefing' }] }
-    ];
+const taskData = [
+{ TaskID: 1, TaskName: 'Product Concept', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
+{ TaskID: 2, TaskName: 'Defining the product and its usage', StartDate: new Date('04/02/2019'), Duration: 3, Progress: 30, ParentID: 1 },
+{ TaskID: 3, TaskName: 'Defining target audience', StartDate: new Date('04/02/2019'), Duration: 3, ParentID: 1 },
+{ TaskID: 4, TaskName: 'Prepare product sketch and notes', StartDate: new Date('04/02/2019'), Duration: 2, Predecessor: '2', Progress: 30, ParentID: 1 },
+{ TaskID: 5, TaskName: 'Concept Approval', StartDate: new Date('04/10/2019'), Duration: 0, Predecessor: '3,4', Indicators: [{ date: '04/10/2019', name: '#briefing', title: 'Product concept briefing' }] }
+];
 
     const taskFields = {
         id: 'TaskID',
-        name: 'TaskName', 
+        name: 'TaskName',
         startDate: 'StartDate',
         duration: 'Duration',
         progress: 'Progress',
@@ -409,6 +410,7 @@ function App() {
             taskbarTemplate={taskbarTemplate}
         />
     );
+
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
@@ -424,17 +426,17 @@ The following example enables multi-taskbar:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/projectview-multitaskbar-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/projectview-multitaskbar-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/projectview-multitaskbar-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/projectview-multitaskbar-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/projectview-multitaskbar-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/projectview-multitaskbar-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/projectview-multitaskbar-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/projectview-multitaskbar-cs1" %}
 
 This feature aggregates child progress in parent taskbars, updating dynamically on child changes.
 
@@ -446,17 +448,17 @@ The following example demonstrates connector customization. The specified proper
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/appearanceandstyle-cs3/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/appearanceandstyle-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/appearanceandstyle-cs3/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/appearanceandstyle-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/appearanceandstyle-cs3/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/appearanceandstyle-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/appearanceandstyle-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/appearanceandstyle-cs3" %}
 
 ## Configure tooltips
 
@@ -466,60 +468,61 @@ The following example enables tooltips:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/tooltip-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/tooltip-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/tooltip-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/tooltip-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/tooltip-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/tooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/tooltip-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/tooltip-cs1" %}
 
 Tooltips display on hover, with touch-and-hold support for mobile via the tooltip popup.
 
-### Disable taskbar tooltip 
+### Disable taskbar tooltip
 
 You can disable the taskbar tooltip using the [beforeTooltipRender](https://helpej2.syncfusion.com/react/documentation/gantt/events#beforetooltiprender) event by setting `args.cancel` to **true**.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/disable-tooltip-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/disable-tooltip-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/disable-tooltip-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/disable-tooltip-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/disable-tooltip-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/disable-tooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/disable-tooltip-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/disable-tooltip-cs1" %}
 
 ## Customize tooltip templates
 
 You can customize the following tooltip types in the Gantt chart using the [tooltipSettings](https://ej2.syncfusion.com/react/documentation/api/gantt/tooltipSettings/) configuration:
 
 ### Taskbar tooltip
+
 Taskbar tooltips are customized using [tooltipSettings.taskbar](https://ej2.syncfusion.com/react/documentation/api/gantt/tooltipSettings#taskbar) template, accessing task data for formatted content.
 
 The following example customizes taskbar tooltips:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/tooltip-cs4/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/tooltip-cs4/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/tooltip-cs4/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/tooltip-cs4/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/tooltip-cs4/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/tooltip-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/tooltip-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/tooltip-cs4" %}
 
 The template uses `data` to display fields like **TaskName** and **Progress**, ensuring responsive display.
 
@@ -531,17 +534,17 @@ The following example customizes connector tooltips:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/tooltip-cs5/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/tooltip-cs5/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/tooltip-cs5/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/tooltip-cs5/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/tooltip-cs5/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/tooltip-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/tooltip-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/tooltip-cs5" %}
 
 ### Baseline tooltip
 
@@ -551,17 +554,17 @@ The following example customizes baseline tooltips:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/tooltip-cs7/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/tooltip-cs7/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/tooltip-cs7/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/tooltip-cs7/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/tooltip-cs7/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/tooltip-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/tooltip-cs7" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/tooltip-cs7" %}
 
 ### Timeline tooltip
 
@@ -571,23 +574,24 @@ The following example customizes timeline tooltips:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/timeline-tooltip-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/timeline-tooltip-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/timeline-tooltip-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/timeline-tooltip-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/timeline-tooltip-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/timeline-tooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/timeline-tooltip-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/timeline-tooltip-cs1" %}
 
 ## Tooltip Touch interaction
 
 To perform touch and hold action on a element, refer to [tooltip popup](tooltip#tooltip).
 
 ## See also
+
 - [How to configure task dependencies?](https://ej2.syncfusion.com/react/documentation/gantt/task-dependency)
 - [How to enable baseline rendering?](https://ej2.syncfusion.com/react/documentation/gantt/baseline)
 - [How to customize labels?](https://ej2.syncfusion.com/react/documentation/gantt/labels)

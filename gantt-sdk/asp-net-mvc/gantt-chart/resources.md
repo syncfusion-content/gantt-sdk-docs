@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Resources in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Gantt Component
 
 In Gantt, the resources are represented by staff, equipment and materials etc. In Gantt control you can show or allocate the resources (human resources) for each task.
@@ -17,12 +16,12 @@ In Gantt, the resources are represented by staff, equipment and materials etc. I
 
 The resource collection contains details about resources that are used in the project. Resources are JSON object that contains id, name, unit and group of the resources and this collection is mapped to the Gantt control using the [`resources`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Resources) property. These resource fields are mapped to the Gantt control using the [`resourceFields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttResourcefields.html) property.
 
-|Resource fields | Description|
-|-----|-----|
-|[`id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttResourceFields.html#Syncfusion_EJ2_Gantt_GanttResourceFields_Id) | This field is used to assign resources to the tasks.|
-|[`name`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttResourceFields.html#Syncfusion_EJ2_Gantt_GanttResourceFields_Name) | This field is used to map the resource names. These names are displayed as one of Gantt columns and also can display as labels using the [`labelSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_LabelSettings) property.|
-|[`unit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttResourceFields.html#Syncfusion_EJ2_Gantt_GanttResourceFields_Unit) | It indicates the amount of work that can be done by a resource for the task in a day.|
-|[`group`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttResourceFields.html#Syncfusion_EJ2_Gantt_GanttResourceFields_Group) | This field is used to group the resources and the tasks assigned to that particular resource into category.|
+| Resource fields                                                                                                                                       | Description                                                                                                                                                                                                                                                                                  |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttResourceFields.html#Syncfusion_EJ2_Gantt_GanttResourceFields_Id)       | This field is used to assign resources to the tasks.                                                                                                                                                                                                                                         |
+| [`name`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttResourceFields.html#Syncfusion_EJ2_Gantt_GanttResourceFields_Name)   | This field is used to map the resource names. These names are displayed as one of Gantt columns and also can display as labels using the [`labelSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_LabelSettings) property. |
+| [`unit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttResourceFields.html#Syncfusion_EJ2_Gantt_GanttResourceFields_Unit)   | It indicates the amount of work that can be done by a resource for the task in a day.                                                                                                                                                                                                        |
+| [`group`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttResourceFields.html#Syncfusion_EJ2_Gantt_GanttResourceFields_Group) | This field is used to group the resources and the tasks assigned to that particular resource into category.                                                                                                                                                                                  |
 
 The following code snippets shows resource collection and how it assigned to Gantt control.
 
@@ -30,10 +29,10 @@ The following code snippets shows resource collection and how it assigned to Gan
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resources/assignResource/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/resources/assignResource/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="AssignResource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resources/assignResource/assignResource.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/resources/assignResource/assignResource.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -41,15 +40,13 @@ The following code snippets shows resource collection and how it assigned to Gan
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resources/assignResource/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/resources/assignResource/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="AssignResource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resources/assignResource/assignResource.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/resources/assignResource/assignResource.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Assign resource
 
@@ -62,17 +59,9 @@ Resources are assigned to tasks in following ways.
 If the unit is not specified for specific resource, the amount of work done will be consider as 100% by default. In such cases, the resource unit will not be displayed in Gantt UI.
 
 ```html
-
-GanttDataSource Child1 = new GanttDataSource()
-            {
-                TaskId = 2,
-                TaskName = "Identify site location",
-                StartDate = new DateTime(2019, 04, 02),
-                Duration = 4,
-                Progress = 50,
-                ResourceId = new int[] { 1 },
-            };
-
+GanttDataSource Child1 = new GanttDataSource() { TaskId = 2, TaskName =
+"Identify site location", StartDate = new DateTime(2019, 04, 02), Duration = 4,
+Progress = 50, ResourceId = new int[] { 1 }, };
 ```
 
 ### Assign resources with unit
@@ -80,21 +69,11 @@ GanttDataSource Child1 = new GanttDataSource()
 We can assign the quantity of work done by the resources for the specific task as like below code snippet.
 
 ```html
-
-GanttDataSource Record1Child1 = new GanttDataSource()
-            {
-                TaskId = 2,
-                TaskName = "Identify Site location",
-                StartDate = new DateTime(2019, 03, 29),
-                Duration = 2,
-                Progress = 30,
-                Work = 10,
-                Resources = new List<ResourceModel>
-                {
-                   new ResourceModel{  ResourceId = 1, Unit = 50 }
-                }
-            };
-
+GanttDataSource Record1Child1 = new GanttDataSource() { TaskId = 2, TaskName =
+"Identify Site location", StartDate = new DateTime(2019, 03, 29), Duration = 2,
+Progress = 30, Work = 10, Resources = new List<ResourceModel>
+  { new ResourceModel{ ResourceId = 1, Unit = 50 } } };
+</ResourceModel>
 ```
 
 When resource unit is defined in resource collection, the amount of work done by that particular resource will be same for all the tasks.
@@ -105,10 +84,10 @@ The following code snippet shows how to assign the resource for each task and ma
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resources/resourceUnit/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/resources/resourceUnit/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ResourceUnit.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resources/resourceUnit/resourceUnit.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/resources/resourceUnit/resourceUnit.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -116,15 +95,13 @@ The following code snippet shows how to assign the resource for each task and ma
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resources/resourceUnit/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/resources/resourceUnit/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ResourceUnit.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resources/resourceUnit/resourceUnit.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/resources/resourceUnit/resourceUnit.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/resourceUnit.png)
 
@@ -148,10 +125,10 @@ The following code snippet demonstrates how to customize the background colors o
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-customization/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/resource-customization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ResCustomize.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-customization/rescustomize.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/resource-customization/rescustomize.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -159,10 +136,10 @@ The following code snippet demonstrates how to customize the background colors o
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-customization/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/resource-customization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ResCustomize.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-customization/rescustomize.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/resource-customization/rescustomize.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

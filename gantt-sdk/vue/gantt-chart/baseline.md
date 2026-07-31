@@ -2,7 +2,7 @@
 layout: post
 title: Baseline in Vue Gantt Chart Component | Syncfusion
 description: Learn here all about Baseline in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Baseline 
+control: Baseline
 platform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -15,6 +15,7 @@ The baseline feature in the Gantt Chart component enables comparison between ori
 Before implementing baseline functionality, ensure the data source includes baseline date fields and configure the [taskFields](https://ej2.syncfusion.com/vue/documentation/api/gantt/taskFields) object with appropriate field mappings. The baseline feature requires proper field mapping to display planned versus actual timelines effectively.
 
 **Baseline fields**:
+
 - [baselineStartDate](https://ej2.syncfusion.com/vue/documentation/api/gantt/taskFields#baselinestartdate): Represents the originally planned start date of a task. This value is used to compare against the actual start date to identify schedule deviations.
 - [baselineEndDate](https://ej2.syncfusion.com/vue/documentation/api/gantt/taskFields#baselineenddate): Represents the originally planned end date of a task. It is used to compare against the actual end date.
 - [baselineDuration](https://ej2.syncfusion.com/vue/documentation/api/gantt/taskFields#baselineduration): Represents the total planned duration of the task. This value is critical for baseline visualization. To represent a baseline milestone, this property must be explicitly set to `0`. Setting `baselineStartDate` and `baselineEndDate` to the same value without setting `baselineDuration` to `0` will result in a one-day baseline task, not a milestone.
@@ -25,36 +26,35 @@ To enable baseline, configure the Gantt Chart component by setting [renderBaseli
 
 ```typescript
 export let projectData = [
-    {
-        TaskID: 1,
-        TaskName: 'Project Planning',
-        StartDate: new Date('02/04/2019'),
-        EndDate: new Date('02/08/2019'),
-        baselineStartDate: new Date('02/02/2019'),
-        baselineEndDate: new Date('02/06/2019'),
-        baselineDuration: '5' // Regular baseline
-    },
-    {
-        TaskID: 2,
-        TaskName: 'Milestone Review',
-        StartDate: new Date('02/10/2019'),
-        EndDate: new Date('02/10/2019'),
-        baselineStartDate: new Date('02/09/2019'),
-        baselineEndDate: new Date('02/09/2019'),
-        baselineDuration: '0' // Milestone baseline
-    }
+  {
+    TaskID: 1,
+    TaskName: "Project Planning",
+    StartDate: new Date("02/04/2019"),
+    EndDate: new Date("02/08/2019"),
+    baselineStartDate: new Date("02/02/2019"),
+    baselineEndDate: new Date("02/06/2019"),
+    baselineDuration: "5", // Regular baseline
+  },
+  {
+    TaskID: 2,
+    TaskName: "Milestone Review",
+    StartDate: new Date("02/10/2019"),
+    EndDate: new Date("02/10/2019"),
+    baselineStartDate: new Date("02/09/2019"),
+    baselineEndDate: new Date("02/09/2019"),
+    baselineDuration: "0", // Milestone baseline
+  },
 ];
 
-const baselineColor = 'rgba(255, 107, 107, 0.8)'; // Semi transparent baseline
-
+const baselineColor = "rgba(255, 107, 107, 0.8)"; // Semi transparent baseline
 ```
 
 ```css
 .e-gantt .e-gantt-chart .e-baseline-bar {
-    height: 4px;
-    border-radius: 2px;
-    opacity: 0.9;
-    background-color: #4CAF50; 
+  height: 4px;
+  border-radius: 2px;
+  opacity: 0.9;
+  background-color: #4caf50;
 }
 ```
 
@@ -62,14 +62,14 @@ The following example demonstrates complete baseline configuration with proper f
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/baseline-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/baseline-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/baseline-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/baseline-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/baseline-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/baseline-cs1" %}
 
 ## Customize baseline templates
 
@@ -82,19 +82,20 @@ Set the `baselineTemplate` property with a template string or function. The temp
 By default, the Gantt component supports a single baseline per task. However, using the `baselineTemplate`, you can extend this behavior to render multiple baselines by maintaining additional baseline data within a custom field in your data source.
 
 This enables rich visualization scenarios such as:
-* Comparing original vs revised schedules.
-* Visualizing multiple planning phases.
-* Highlighting deviations across timeline checkpoints.
+
+- Comparing original vs revised schedules.
+- Visualizing multiple planning phases.
+- Highlighting deviations across timeline checkpoints.
 
 The following example demonstrates how to render multiple baselines using `baselineTemplate`.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/baseline-cs2/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/baseline-cs2/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/baseline-cs2/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/baseline-cs2/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/baseline-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/baseline-cs2" %}

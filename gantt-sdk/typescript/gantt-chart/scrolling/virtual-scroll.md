@@ -3,7 +3,7 @@ layout: post
 title: Virtual Scroll in TypeScript Gantt Chart Control | Syncfusion
 description: Learn how to configure virtual scrolling in the Syncfusion TypeScript Gantt Chart control for high-performance rendering of large datasets and wide timelines.
 platform: gantt-sdk
-control: Virtual scroll 
+control: Virtual scroll
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -23,27 +23,27 @@ The following example enables row virtualization for a large dataset:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/virtual-scroll-cs3/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/virtual-scroll-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/virtual-scroll-cs3/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/virtual-scroll-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/virtual-scroll-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/virtual-scroll-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/virtual-scroll-cs3/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/virtual-scroll-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/virtual-scroll-cs3/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/virtual-scroll-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/virtual-scroll-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/virtual-scroll-cs3" %}
 {% endif %}
 
 ## Configure timeline virtualization
@@ -56,32 +56,33 @@ The following example enables timeline virtualization for a wide timeline:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/virtual-scroll-cs5/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/virtual-scroll-cs5/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/virtual-scroll-cs5/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/virtual-scroll-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/virtual-scroll-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/virtual-scroll-cs5" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/virtual-scroll-cs5/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/virtual-scroll-cs5/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/virtual-scroll-cs5/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/virtual-scroll-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/virtual-scroll-cs5" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/virtual-scroll-cs5" %}
 {% endif %}
 
 ## Virtual scroll limitations
 
 Virtual scrolling has the following constraints:
+
 - Incompatible with [enableImmutableMode](../../api/gantt#enableimmutablemode), as both use different rendering optimizations.
 - Cell selection is not persisted due to on-demand rendering.
 - Browser height limits restrict the maximum number of records in row virtualization.

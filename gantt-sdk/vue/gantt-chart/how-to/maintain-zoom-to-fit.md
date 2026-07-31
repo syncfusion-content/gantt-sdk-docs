@@ -18,14 +18,14 @@ We can maintain `zoomToFit` after editing actions (cell edit, dialog edit, taskb
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/how-to/maintainzoomtofit-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/how-to/maintainzoomtofit-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/how-to/maintainzoomtofit-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/how-to/maintainzoomtofit-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/how-to/maintainzoomtofit-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/how-to/maintainzoomtofit-cs1" %}
 
 ## Maintain zoomToFit after changing dataSource dynamically
 
@@ -33,11 +33,11 @@ We can maintain `zoomToFit` after changing the dataSource dynamically by calling
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/how-to/maintainzoomtofitdatasource-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/how-to/maintainzoomtofitdatasource-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/how-to/maintainzoomtofitdatasource-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/how-to/maintainzoomtofitdatasource-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/how-to/maintainzoomtofitdatasource-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/how-to/maintainzoomtofitdatasource-cs1" %}

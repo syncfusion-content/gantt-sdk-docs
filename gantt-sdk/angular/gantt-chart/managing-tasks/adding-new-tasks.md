@@ -18,15 +18,15 @@ Enable task addition through the toolbar by setting [editSettings.allowAdding](h
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/addrow-toolbar-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/addrow-toolbar-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/addrow-toolbar-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/addrow-toolbar-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/managing-tasks/addrow-toolbar-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/managing-tasks/addrow-toolbar-cs1" %}
 
 ## Add tasks via context menu
 
@@ -34,15 +34,15 @@ Enable context menu task addition by setting [enableContextMenu](https://ej2.syn
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/contextmenu-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/contextmenu-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/contextmenu-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/contextmenu-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/managing-tasks/contextmenu-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/managing-tasks/contextmenu-cs1" %}
 
 ## Add tasks programmatically
 
@@ -50,17 +50,18 @@ Add tasks programmatically using the [addRecord](https://ej2.syncfusion.com/angu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/addrow-dynamic-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/addrow-dynamic-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/addrow-dynamic-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/addrow-dynamic-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/managing-tasks/addrow-dynamic-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/managing-tasks/addrow-dynamic-cs1" %}
 
 ## See also
+
 - [How to configure task editing?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/editing-tasks)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
 - [How to configure critical path?](https://ej2.syncfusion.com/angular/documentation/gantt/critical-path)

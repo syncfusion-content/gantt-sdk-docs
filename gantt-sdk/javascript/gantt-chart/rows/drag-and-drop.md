@@ -3,7 +3,7 @@ layout: post
 title: Row Drag and Drop in JavaScript Gantt Chart Control | Syncfusion
 description: Learn here all about row drag and drop in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Row Drag and Drop 
+control: Row Drag and Drop
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -11,7 +11,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Row Drag and Drop in JavaScript Gantt Chart Control
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Gantt Chart control includes built-in support for row drag and drop, enabling rows to be rearranged within the Gantt Chart or dropped into custom components. 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Gantt Chart control includes built-in support for row drag and drop, enabling rows to be rearranged within the Gantt Chart or dropped into custom components.
 
 To enable this feature, inject the `RowDD` module in Gantt. Once injected, enable the functionality by setting the [allowRowDragAndDrop](../api/gantt#allowrowdraganddrop) property.
 
@@ -23,27 +23,27 @@ The Gantt Chart control allows you to rearrange rows using a drag icon. To enabl
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/rows-cs7/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/rows-cs7/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/rows-cs7/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/rows-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/rows-cs7" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/rows-cs7" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/rows-cs7/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/rows-cs7/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/rows-cs7/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/rows-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/rows-cs7" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/rows-cs7" %}
 {% endif %}
 
 ## Different drop positions
@@ -72,7 +72,7 @@ If the border line appears at both the top and bottom of the target row (e.g., T
 
 ![Child Position](../images/child.png)
 
-## Drag and drop to custom component 
+## Drag and drop to custom component
 
 You can drag rows from the Gantt Chart component into custom components for seamless data transfer. To enable this feature, set the [allowRowDragAndDrop](../api/gantt#allowrowdraganddrop) property to **true**, and configure the `targetID` property within the `rowDropSettings` object of the `treeGrid` in the Gantt instance, inside the [load](../api/gantt#load) event. The value of `targetID` must match the ID of the destination component. You can use the [rowDrop](../api/gantt#rowdrop) event to handle the drop and perform necessary actions.
 
@@ -80,27 +80,27 @@ You can drag rows from the Gantt Chart component into custom components for seam
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/drag-drop-custom/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/drag-drop-custom/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/drag-drop-custom/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/drag-drop-custom/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/drag-drop-custom" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/drag-drop-custom" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/drag-drop-custom/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/drag-drop-custom/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/drag-drop-custom/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/drag-drop-custom/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/drag-drop-custom" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/drag-drop-custom" %}
 {% endif %}
 
 ## Drag and drop multiple rows together
@@ -111,27 +111,27 @@ You can drag and drop multiple rows simultaneously in the Gantt Chart control. T
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/rows-cs8/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/rows-cs8/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/rows-cs8/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/rows-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/rows-cs8" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/rows-cs8" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/rows-cs8/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/rows-cs8/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/rows-cs8/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/rows-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/rows-cs8" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/rows-cs8" %}
 {% endif %}
 
 ## Taskbar drag and drop between rows
@@ -142,35 +142,35 @@ You can rearrange rows in the Gantt Chart control by dragging the taskbar elemen
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/dynamicDrag-cs2/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/dynamicDrag-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/dynamicDrag-cs2/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/dynamicDrag-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/dynamicDrag-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/dynamicDrag-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/dynamicDrag-cs2/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/dynamicDrag-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/dynamicDrag-cs2/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/dynamicDrag-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/dynamicDrag-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/dynamicDrag-cs2" %}
 {% endif %}
 
 ## Perform row drag and drop action programmatically
 
-To rearrange rows programmatically in the Gantt Chart control, use the [reorderRows](../api/gantt#reorderrows) method. This method accepts the following parameters: 
+To rearrange rows programmatically in the Gantt Chart control, use the [reorderRows](../api/gantt#reorderrows) method. This method accepts the following parameters:
 
-- **fromIndexes**: Indexes of the rows to be moved.  
-- **toIndex**: Target index for placement.  
+- **fromIndexes**: Indexes of the rows to be moved.
+- **toIndex**: Target index for placement.
 - **position**: Placement relative to the target (e.g., above or below).
 
 In the example, a [click](..api/button#click) event on an external button moves the row at index 1 **below** the row at index 2.
@@ -179,27 +179,27 @@ In the example, a [click](..api/button#click) event on an external button moves 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/dynamicDrag-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/dynamicDrag-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/dynamicDrag-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/dynamicDrag-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/dynamicDrag-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/dynamicDrag-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/dynamicDrag-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/dynamicDrag-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/dynamicDrag-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/dynamicDrag-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/dynamicDrag-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/dynamicDrag-cs1" %}
 {% endif %}
 
 ## Customize the drag and drop action
@@ -212,58 +212,58 @@ In this example, drag and drop actions are customized using event hooks. The `ro
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/drag-drop-action/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/drag-drop-action/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/drag-drop-action/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/drag-drop-action/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/drag-drop-action" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/drag-drop-action" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/drag-drop-action/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/drag-drop-action/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/drag-drop-action/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/drag-drop-action/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/drag-drop-action" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/drag-drop-action" %}
 {% endif %}
 
 ### Prevent reordering a row as child to another row
 
-To prevent rows from being reordered as children, set `args.cancel` to **true** in the [rowDrop](../api/gantt#rowdrop) event. After canceling the default drop action, use the [reorderRows](../api/gantt#reorderrows) method to reposition the row at a specific index. 
- 
+To prevent rows from being reordered as children, set `args.cancel` to **true** in the [rowDrop](../api/gantt#rowdrop) event. After canceling the default drop action, use the [reorderRows](../api/gantt#reorderrows) method to reposition the row at a specific index.
+
 In the example, the drop action in **Child** position is blocked, and the dragged row is reordered **above** the target row.
 
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/rows-cs11/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/rows-cs11/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/rows-cs11/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/rows-cs11/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/rows-cs11" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/rows-cs11" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/rows-cs11/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/rows-cs11/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/rows-cs11/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/rows-cs11/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/rows-cs11" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/rows-cs11" %}
 {% endif %}

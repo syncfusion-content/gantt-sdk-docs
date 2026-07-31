@@ -18,12 +18,12 @@ Unlike vendor specific adaptor patterns, the `ODataV4Adaptor` works with any bac
 
 The adaptor converts Gantt Chart data operations into standard HTTP requests handled by ASP.NET Core controller actions. The mapping is:
 
-| Gantt Operation | HTTP Verb | Controller Method | Purpose |
-|-----------------|-----------|-------------------|---------|
-| Initial load / read | `GET` | `[HttpGet]` | Returns all task records |
-| Add | `POST` | `[HttpPost]` | Inserts a new task |
-| Edit / taskbar drag | `PATCH` | `[HttpPatch("{key}")]` | Partially updates a task |
-| Delete | `DELETE` | `[HttpDelete("{key}")]` | Removes a task |
+| Gantt Operation     | HTTP Verb | Controller Method       | Purpose                  |
+| ------------------- | --------- | ----------------------- | ------------------------ |
+| Initial load / read | `GET`     | `[HttpGet]`             | Returns all task records |
+| Add                 | `POST`    | `[HttpPost]`            | Inserts a new task       |
+| Edit / taskbar drag | `PATCH`   | `[HttpPatch("{key}")]`  | Partially updates a task |
+| Delete              | `DELETE`  | `[HttpDelete("{key}")]` | Removes a task           |
 
 The `Adaptor="Adaptors.ODataV4Adaptor"` setting in the `SfDataManager` instructs the Gantt Chart to issue these HTTP requests and parse the standard OData V4 response shape (`value` array and `@odata.context` metadata).
 
@@ -227,7 +227,7 @@ To integrate the Blazor Gantt Chart into your project, follow the steps below.
 
 **1. Install Blazor Gantt and Themes NuGet packages**
 
-Open the NuGet Package Manager in Visual Studio (*Tools → NuGet Package Manager → Manage NuGet Packages for Solution*) for the `ODataV4Adaptor.Client` project, and install [Syncfusion.Blazor.Gantt](https://www.nuget.org/packages/Syncfusion.Blazor.Gantt/) and [Syncfusion.Blazor.Themes](https://www.nuget.org/packages/Syncfusion.Blazor.Themes/).
+Open the NuGet Package Manager in Visual Studio (_Tools → NuGet Package Manager → Manage NuGet Packages for Solution_) for the `ODataV4Adaptor.Client` project, and install [Syncfusion.Blazor.Gantt](https://www.nuget.org/packages/Syncfusion.Blazor.Gantt/) and [Syncfusion.Blazor.Themes](https://www.nuget.org/packages/Syncfusion.Blazor.Themes/).
 
 Alternatively, use the following Package Manager commands:
 
@@ -240,7 +240,7 @@ Install-Package Syncfusion.Blazor.Themes -Version {{ site.releaseversion }}
 
 **2. Register Blazor service**
 
-- Open the **~/_Imports.razor** file and import the required namespaces.
+- Open the **~/\_Imports.razor** file and import the required namespaces.
 
 ```cs
 @using Syncfusion.Blazor
@@ -261,18 +261,24 @@ Include the theme stylesheet and script references in the **~/Components/App.raz
 
 ```html
 <head>
-    ....
-    <link href="_content/Syncfusion.Blazor.Themes/bootstrap5.css" rel="stylesheet" />
+  ....
+  <link
+    href="_content/Syncfusion.Blazor.Themes/bootstrap5.css"
+    rel="stylesheet"
+  />
 </head>
 ....
 <body>
-    ....
-    <script src="_content/Syncfusion.Blazor.Core/scripts/syncfusion-blazor.min.js" type="text/javascript"></script>
+  ....
+  <script
+    src="_content/Syncfusion.Blazor.Core/scripts/syncfusion-blazor.min.js"
+    type="text/javascript"
+  ></script>
 </body>
 ```
 
-> * Refer to the [Blazor Themes](https://blazor.syncfusion.com/documentation/appearance/themes) topic for various methods to include themes (e.g., Static Web Assets, CDN, or CRG).
-> * Set the render mode to **InteractiveServer** or **InteractiveAuto** in your Blazor Web App configuration.
+> - Refer to the [Blazor Themes](https://blazor.syncfusion.com/documentation/appearance/themes) topic for various methods to include themes (e.g., Static Web Assets, CDN, or CRG).
+> - Set the render mode to **InteractiveServer** or **InteractiveAuto** in your Blazor Web App configuration.
 
 **4. Add the Blazor Gantt Chart and configure it with the server**
 
@@ -289,13 +295,13 @@ Map the flat response to the Gantt's hierarchical view through [GanttTaskFields]
 @using ODataV4Adaptor.Client.Models
 
 <SfGantt TValue="GanttData"
-         Height="450px"
-         Width="1000px"
-         AllowFiltering="true"
-         AllowSorting="true"
-         AllowResizing="true"
-         Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search", "ExpandAll", "CollapseAll" })"
-         TreeColumnIndex="1">
+Height="450px"
+Width="1000px"
+AllowFiltering="true"
+AllowSorting="true"
+AllowResizing="true"
+Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search", "ExpandAll", "CollapseAll" })"
+TreeColumnIndex="1">
 
     <SfDataManager Url="https://localhost:xxxx/odata/gantt"
                    Adaptor="Adaptors.ODataV4Adaptor">
@@ -362,12 +368,12 @@ modelBuilder.EntitySet<GanttData>("Gantt");
 // Add services to the container.
 // Add controllers with OData support to the service collection.
 builder.Services.AddControllers().AddOData(
-    options => options
-    // Enables $count query option to retrieve total record count.
-    .Count()
-    // Enables $filter query option to allow searching based on field values.
-    .Filter()
-    .AddRouteComponents("odata", modelBuilder.GetEdmModel())
+options => options
+// Enables $count query option to retrieve total record count.
+.Count()
+// Enables $filter query option to allow searching based on field values.
+.Filter()
+.AddRouteComponents("odata", modelBuilder.GetEdmModel())
 );
 
 {% endhighlight %}
@@ -379,32 +385,32 @@ builder.Services.AddControllers().AddOData(
 @using ODataV4Adaptor.Client.Models
 
 <SfGantt TValue="GanttData"
-         Toolbar="@(new List<string>() { "Search" })"
-         Height="450px"
-         Width="1000px">
-    <SfDataManager @ref="DataManager" Url="https://localhost:xxxx/odata/gantt" Adaptor="Adaptors.ODataV4Adaptor"></SfDataManager>
-    <GanttTaskFields Id="TaskId"
+Toolbar="@(new List<string>() { "Search" })"
+Height="450px"
+Width="1000px">
+<SfDataManager @ref="DataManager" Url="https://localhost:xxxx/odata/gantt" Adaptor="Adaptors.ODataV4Adaptor"></SfDataManager>
+<GanttTaskFields Id="TaskId"
                      Name="TaskName"
                      StartDate="StartDate"
                      EndDate="EndDate"
                      Duration="Duration"
                      Progress="Progress"
                      ParentID="ParentId">
-    </GanttTaskFields>
+</GanttTaskFields>
 </SfGantt>
 
 @code {
-    public SfDataManager? DataManager { get; set; }
-    protected override void OnAfterRender(bool firstRender)
-    {
-        base.OnAfterRender(firstRender);
-        if (DataManager?.DataAdaptor is ODataV4Adaptor odataAdaptor)
-        {
-            RemoteOptions options = odataAdaptor.Options;
-            options.EnableODataSearchFallback = true;
-            odataAdaptor.Options = options;
-        }
-    }
+public SfDataManager? DataManager { get; set; }
+protected override void OnAfterRender(bool firstRender)
+{
+base.OnAfterRender(firstRender);
+if (DataManager?.DataAdaptor is ODataV4Adaptor odataAdaptor)
+{
+RemoteOptions options = odataAdaptor.Options;
+options.EnableODataSearchFallback = true;
+odataAdaptor.Options = options;
+}
+}
 }
 
 {% endhighlight %}
@@ -430,12 +436,12 @@ modelBuilder.EntitySet<GanttData>("Gantt");
 
 // Add controllers with OData support to the service collection.
 builder.Services.AddControllers().AddOData(
-    options => options
-    // Enables $count query option to retrieve total record count.
-    .Count()
-    // Enables $filter query option to allow filtering based on field values.
-    .Filter()
-    .AddRouteComponents("odata", modelBuilder.GetEdmModel())
+options => options
+// Enables $count query option to retrieve total record count.
+.Count()
+// Enables $filter query option to allow filtering based on field values.
+.Filter()
+.AddRouteComponents("odata", modelBuilder.GetEdmModel())
 );
 
 {% endhighlight %}
@@ -450,23 +456,23 @@ builder.Services.AddControllers().AddOData(
          AllowFiltering="true"
          Height="450px"
          Width="1000px">
-    <SfDataManager Url="https://localhost:xxxx/odata/gantt" Adaptor="Adaptors.ODataV4Adaptor"></SfDataManager>
-    <GanttTaskFields Id="TaskId"
+<SfDataManager Url="https://localhost:xxxx/odata/gantt" Adaptor="Adaptors.ODataV4Adaptor"></SfDataManager>
+<GanttTaskFields Id="TaskId"
                      Name="TaskName"
                      StartDate="StartDate"
                      EndDate="EndDate"
                      Duration="Duration"
                      Progress="Progress"
                      ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttColumns>
-        <GanttColumn Field="TaskId" HeaderText="ID" Width="80"></GanttColumn>
-        <GanttColumn Field="TaskName" HeaderText="Task Name" Width="250"></GanttColumn>
-        <GanttColumn Field="StartDate" HeaderText="Start Date" Width="130"></GanttColumn>
-        <GanttColumn Field="EndDate" HeaderText="End Date" Width="130"></GanttColumn>
-        <GanttColumn Field="Duration" HeaderText="Duration" Width="100"></GanttColumn>
-        <GanttColumn Field="Progress" HeaderText="Progress" Width="100"></GanttColumn>
-    </GanttColumns>
+</GanttTaskFields>
+<GanttColumns>
+<GanttColumn Field="TaskId" HeaderText="ID" Width="80"></GanttColumn>
+<GanttColumn Field="TaskName" HeaderText="Task Name" Width="250"></GanttColumn>
+<GanttColumn Field="StartDate" HeaderText="Start Date" Width="130"></GanttColumn>
+<GanttColumn Field="EndDate" HeaderText="End Date" Width="130"></GanttColumn>
+<GanttColumn Field="Duration" HeaderText="Duration" Width="100"></GanttColumn>
+<GanttColumn Field="Progress" HeaderText="Progress" Width="100"></GanttColumn>
+</GanttColumns>
 </SfGantt>
 
 {% endhighlight %}
@@ -492,12 +498,12 @@ modelBuilder.EntitySet<GanttData>("Gantt");
 
 // Add controllers with OData support to the service collection.
 builder.Services.AddControllers().AddOData(
-    options => options
-    // Enables $count query option to retrieve total record count.
-    .Count()
-    // Enables $orderby query option to allow sorting based on field values.
-    .OrderBy()
-    .AddRouteComponents("odata", modelBuilder.GetEdmModel())
+options => options
+// Enables $count query option to retrieve total record count.
+.Count()
+// Enables $orderby query option to allow sorting based on field values.
+.OrderBy()
+.AddRouteComponents("odata", modelBuilder.GetEdmModel())
 );
 
 {% endhighlight %}
@@ -512,23 +518,23 @@ builder.Services.AddControllers().AddOData(
          AllowSorting="true"
          Height="450px"
          Width="1000px">
-    <SfDataManager Url="https://localhost:xxxx/odata/gantt" Adaptor="Adaptors.ODataV4Adaptor"></SfDataManager>
-    <GanttTaskFields Id="TaskId"
+<SfDataManager Url="https://localhost:xxxx/odata/gantt" Adaptor="Adaptors.ODataV4Adaptor"></SfDataManager>
+<GanttTaskFields Id="TaskId"
                      Name="TaskName"
                      StartDate="StartDate"
                      EndDate="EndDate"
                      Duration="Duration"
                      Progress="Progress"
                      ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttColumns>
-        <GanttColumn Field="TaskId" HeaderText="ID" Width="80"></GanttColumn>
-        <GanttColumn Field="TaskName" HeaderText="Task Name" Width="250"></GanttColumn>
-        <GanttColumn Field="StartDate" HeaderText="Start Date" Width="130"></GanttColumn>
-        <GanttColumn Field="EndDate" HeaderText="End Date" Width="130"></GanttColumn>
-        <GanttColumn Field="Duration" HeaderText="Duration" Width="100"></GanttColumn>
-        <GanttColumn Field="Progress" HeaderText="Progress" Width="100"></GanttColumn>
-    </GanttColumns>
+</GanttTaskFields>
+<GanttColumns>
+<GanttColumn Field="TaskId" HeaderText="ID" Width="80"></GanttColumn>
+<GanttColumn Field="TaskName" HeaderText="Task Name" Width="250"></GanttColumn>
+<GanttColumn Field="StartDate" HeaderText="Start Date" Width="130"></GanttColumn>
+<GanttColumn Field="EndDate" HeaderText="End Date" Width="130"></GanttColumn>
+<GanttColumn Field="Duration" HeaderText="Duration" Width="100"></GanttColumn>
+<GanttColumn Field="Progress" HeaderText="Progress" Width="100"></GanttColumn>
+</GanttColumns>
 </SfGantt>
 
 {% endhighlight %}
@@ -536,7 +542,7 @@ builder.Services.AddControllers().AddOData(
 
 ## Handling CRUD operations
 
-To manage CRUD (Create, Read, Update, and Delete) operations using the `ODataV4Adaptor`, configure the Gantt for [editing](https://blazor.syncfusion.com/documentation/gantt-chart/editing-tasks). The controller handles `GET`, `POST`, `PATCH`, and `DELETE` for tasks. With taskbar editing enabled, [AllowTaskbarEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_AllowTaskbarEditing) set to `true`, drag/resize operations on the timeline also round-trip to the same `PATCH` endpoint.
+To manage CRUD (Create, Read, Update, and Delete) operations using the `ODataV4Adaptor`, configure the Gantt for [editing](https://blazor.syncfusion.com/documentation/gantt/editing-tasks). The controller handles `GET`, `POST`, `PATCH`, and `DELETE` for tasks. With taskbar editing enabled, [AllowTaskbarEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_AllowTaskbarEditing) set to `true`, drag/resize operations on the timeline also round-trip to the same `PATCH` endpoint.
 
 In the example below, [GanttEditSettings.Mode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_Mode) is set to `EditMode.Auto`, and the [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Toolbar) property is configured to display toolbar items for editing.
 
@@ -549,10 +555,10 @@ In the example below, [GanttEditSettings.Mode](https://help.syncfusion.com/cr/bl
 @using ODataV4Adaptor.Client.Models
 
 <SfGantt TValue="GanttData"
-         Height="450px"
-         Width="1000px"
-         Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })"
-         TreeColumnIndex="1">
+Height="450px"
+Width="1000px"
+Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })"
+TreeColumnIndex="1">
 
     <SfDataManager Url="https://localhost:xxxx/odata/gantt"
                    Adaptor="Adaptors.ODataV4Adaptor">
@@ -606,15 +612,16 @@ To insert a new record into the Gantt, use the `HttpPost` method on the server. 
 [EnableQuery]
 public IActionResult Post([FromBody] GanttData addRecord)
 {
-    // Validate the input and return a 400 Bad Request if the record is null.
-    if (addRecord == null)
-        return BadRequest("Null task record");
+// Validate the input and return a 400 Bad Request if the record is null.
+if (addRecord == null)
+return BadRequest("Null task record");
 
     // Insert the new task record at the beginning of the data collection.
     GanttData.GetAllRecords().Insert(0, addRecord);
 
     // Return the inserted record as a JSON result.
     return new JsonResult(addRecord);
+
 }
 
 {% endhighlight %}
@@ -638,9 +645,9 @@ Updating a record in the Gantt – including changes from inline edit, dialog ed
 [HttpPatch("{key}")]
 public IActionResult Patch(int key, [FromBody] GanttData updateRecord)
 {
-    // Validate the input data. Return a 400 Bad Request if the update record is null.
-    if (updateRecord == null)
-        return BadRequest("No records");
+// Validate the input data. Return a 400 Bad Request if the update record is null.
+if (updateRecord == null)
+return BadRequest("No records");
 
     // Retrieve the existing task by its key.
     var existingTask = GanttData.GetAllRecords()
@@ -659,6 +666,7 @@ public IActionResult Patch(int key, [FromBody] GanttData updateRecord)
 
     // Return the updated task in JSON format.
     return new JsonResult(updateRecord);
+
 }
 
 {% endhighlight %}
@@ -681,9 +689,9 @@ To delete a record from the Gantt, use the `HttpDelete` method in your controlle
 [HttpDelete("{key}")]
 public IActionResult Delete(int key)
 {
-    // Retrieve the task to be deleted by its unique identifier.
-    var deleteRecord = GanttData.GetAllRecords()
-                                .FirstOrDefault(t => t.TaskId == key);
+// Retrieve the task to be deleted by its unique identifier.
+var deleteRecord = GanttData.GetAllRecords()
+.FirstOrDefault(t => t.TaskId == key);
 
     // If the task is found, remove it from the data source.
     if (deleteRecord != null)
@@ -691,6 +699,7 @@ public IActionResult Delete(int key)
 
     // Return the deleted task in JSON format.
     return new JsonResult(deleteRecord);
+
 }
 
 {% endhighlight %}

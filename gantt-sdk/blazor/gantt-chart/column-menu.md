@@ -15,14 +15,14 @@ To enable this feature, set [ShowColumnMenu](https://help.syncfusion.com/cr/blaz
 
 The following built-in column menu items are available:
 
-| Item | Description |
-|------|-------------|
-| Sort Ascending | Sort the current column in ascending order. |
-| Sort Descending | Sort the current column in descending order. |
-| Auto Fit | Auto fit the current column. |
-| Auto Fit All | Auto fit all columns. |
-| Column Chooser | Choose column visibility. |
-| Filter | Displays filtering options based on [FilterSettings.FilterType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttFilterSettings.html#Syncfusion_Blazor_Gantt_GanttFilterSettings_FilterType). |
+| Item            | Description                                                                                                                                                                                                     |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Sort Ascending  | Sort the current column in ascending order.                                                                                                                                                                     |
+| Sort Descending | Sort the current column in descending order.                                                                                                                                                                    |
+| Auto Fit        | Auto fit the current column.                                                                                                                                                                                    |
+| Auto Fit All    | Auto fit all columns.                                                                                                                                                                                           |
+| Column Chooser  | Choose column visibility.                                                                                                                                                                                       |
+| Filter          | Displays filtering options based on [FilterSettings.FilterType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttFilterSettings.html#Syncfusion_Blazor_Gantt_GanttFilterSettings_FilterType). |
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -34,7 +34,7 @@ The following built-in column menu items are available:
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
+public List<TaskData>? TaskCollection { get; set; }
 
     protected override void OnInitialized()
     {
@@ -67,6 +67,7 @@ The following built-in column menu items are available:
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -78,6 +79,6 @@ The following built-in column menu items are available:
 
 ## See also
 
-- [Accessibility in Blazor Gantt Chart](https://blazor.syncfusion.com/documentation/gantt-chart/accessibility)
+- [Accessibility in Blazor Gantt Chart](https://blazor.syncfusion.com/documentation/gantt/accessibility)
 - [Blazor Gantt Chart Feature Tour](https://www.syncfusion.com/blazor-components/blazor-gantt-chart)
-- [Blazor Gantt Chart Example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=bootstrap5)
+- [Blazor Gantt Chart Example](https://blazor.syncfusion.com/demos/gantt/default-functionalities?theme=bootstrap5)

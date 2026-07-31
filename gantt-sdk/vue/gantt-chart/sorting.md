@@ -2,7 +2,7 @@
 layout: post
 title: Sorting in Vue Gantt Chart Component | Syncfusion
 description: Learn here all about Sorting in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Sorting 
+control: Sorting
 platform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -20,17 +20,17 @@ To sort data, inject the [Sort](https://ej2.syncfusion.com/vue/documentation/api
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/sorting-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/sorting-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/sorting-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/sorting-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/sorting-cs1" %}
 
-> * Gantt columns are sorted in the ascending order. If you click the already sorted column, the sort direction toggles.
-> * To disable sorting for a particular column, set the [columns.allowSorting](https://ej2.syncfusion.com/vue/documentation/api/gantt/column#allowsorting) property to `false`.
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/sorting-cs1" %}
+
+> - Gantt columns are sorted in the ascending order. If you click the already sorted column, the sort direction toggles.
+> - To disable sorting for a particular column, set the [columns.allowSorting](https://ej2.syncfusion.com/vue/documentation/api/gantt/column#allowsorting) property to `false`.
 
 ## Sorting column on Gantt initialization
 
@@ -38,14 +38,14 @@ The Gantt Chart component can be rendered with sorted columns initially, and thi
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/sorting-cs2/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/sorting-cs2/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/sorting-cs2/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/sorting-cs2/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/sorting-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/sorting-cs2" %}
 
 ## Sorting column dynamically
 
@@ -53,14 +53,14 @@ Columns in the Gantt Chart component can be sorted dynamically using the [sortCo
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/sorting-cs3/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/sorting-cs3/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/sorting-cs3/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/sorting-cs3/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/sorting-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/sorting-cs3" %}
 
 ## Clear all the sorting dynamically
 
@@ -68,14 +68,14 @@ In the Gantt Chart component, you can clear all the sorted columns and return to
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/sorting-cs4/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/sorting-cs4/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/sorting-cs4/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/sorting-cs4/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/sorting-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/sorting-cs4" %}
 
 ## Sorting events
 
@@ -83,14 +83,14 @@ During the sort action, the Gantt Chart component triggers two events. The [acti
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/sorting-cs5/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/sorting-cs5/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/sorting-cs5/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/sorting-cs5/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/sorting-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/sorting-cs5" %}
 
 > The `args.requestType` is the current action name. For example, for sorting the `args.requestType`, value is sorting.
 

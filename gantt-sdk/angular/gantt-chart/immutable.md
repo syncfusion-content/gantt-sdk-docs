@@ -26,19 +26,19 @@ The following example enables immutable mode:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/immutable-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/immutable-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/immutable-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/immutable-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/immutable-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/immutable-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/immutable-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/immutable-cs1" %}
 
 ## Feature compatibility and limitations
 

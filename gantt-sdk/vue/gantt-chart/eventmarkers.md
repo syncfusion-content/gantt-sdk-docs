@@ -2,7 +2,7 @@
 layout: post
 title: Eventmarkers in Vue Gantt Chart component | Syncfusion
 description: Learn here all about Eventmarkers in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Eventmarkers 
+control: Eventmarkers
 platform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -16,11 +16,11 @@ To highlight the days, inject the [DayMarkers](https://ej2.syncfusion.com/vue/do
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/eventmarkers-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/eventmarkers-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/eventmarkers-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/eventmarkers-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/eventmarkers-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/eventmarkers-cs1" %}

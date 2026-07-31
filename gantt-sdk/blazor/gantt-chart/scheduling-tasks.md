@@ -13,9 +13,9 @@ The Gantt provides support for automatic and manual task scheduling modes. It is
 
 The Gantt control supports three types of mode. They are:
 
-* **Auto**: All the tasks are automatically validate.
-* **Manual**: All the tasks are manually validate by the user.
-* **Custom**: Both Auto and Manual tasks are render by mapped from data source.
+- **Auto**: All the tasks are automatically validate.
+- **Manual**: All the tasks are manually validate by the user.
+- **Custom**: Both Auto and Manual tasks are render by mapped from data source.
 
 > The default value of [TaskMode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_TaskMode) is **Auto**.
 
@@ -35,28 +35,28 @@ The rendering of the parent taskbar in auto-scheduling mode also takes into acco
 @using Syncfusion.Blazor.Gantt
 
 <SfGantt DataSource="@TaskCollection" Height="450px" TaskMode="ScheduleMode.Auto" Width="900px" TreeColumnIndex="1" Toolbar="@(new List<string>() { "Add", "Edit", "Update", "Delete", "Cancel", "ExpandAll", "CollapseAll" })">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
                      ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttEditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></GanttEditSettings>
+</GanttTaskFields>
+<GanttEditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></GanttEditSettings>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
-    public class TaskData
-    {
-        public int TaskId { get; set; }
-        public string? TaskName { get; set; }
-        public DateTime StartDate { get; set; }
-        public DateTime? EndDate { get; set; }
-        public string? Duration { get; set; }
-        public int Progress { get; set; }
-        public int? ParentId { get; set; }
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
+public class TaskData
+{
+public int TaskId { get; set; }
+public string? TaskName { get; set; }
+public DateTime StartDate { get; set; }
+public DateTime? EndDate { get; set; }
+public string? Duration { get; set; }
+public int Progress { get; set; }
+public int? ParentId { get; set; }
+}
 
     public static List<TaskData> GetTaskCollection()
     {
@@ -73,6 +73,7 @@ The rendering of the parent taskbar in auto-scheduling mode also takes into acco
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -91,28 +92,28 @@ We can restrict this mode in predecessor validation alone. That is, we can autom
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="450px" TaskMode="ScheduleMode.Manual" ValidateManualTasksOnLinking="true" Width="900px" TreeColumnIndex="1" Toolbar="@(new List<string>() { "Add", "Edit", "Update", "Delete", "Cancel", "ExpandAll", "CollapseAll" })">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
                      ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttEditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true" AllowTaskbarEditing="true"></GanttEditSettings>
+</GanttTaskFields>
+<GanttEditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true" AllowTaskbarEditing="true"></GanttEditSettings>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
-    public class TaskData
-    {
-        public int TaskId { get; set; }
-        public string? TaskName { get; set; }
-        public DateTime StartDate { get; set; }
-        public DateTime? EndDate { get; set; }
-        public string? Duration { get; set; }
-        public int Progress { get; set; }
-        public int? ParentId { get; set; }
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
+public class TaskData
+{
+public int TaskId { get; set; }
+public string? TaskName { get; set; }
+public DateTime StartDate { get; set; }
+public DateTime? EndDate { get; set; }
+public string? Duration { get; set; }
+public int Progress { get; set; }
+public int? ParentId { get; set; }
+}
 
     public static List<TaskData> GetTaskCollection()
     {
@@ -129,6 +130,7 @@ We can restrict this mode in predecessor validation alone. That is, we can autom
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -145,28 +147,28 @@ When the [TaskMode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gant
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" TaskMode="ScheduleMode.Custom" Toolbar="@(new List<string>() { "Add", "Cancel", "CollapseAll", "Delete", "Edit", "ExpandAll", "Update" })" Height="450px" Width="1000px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId" Manual="IsManual">
-    </GanttTaskFields>
-    <GanttEditSettings AllowTaskbarEditing="true" AllowEditing="true" AllowAdding="true" AllowDeleting="true" Mode="Syncfusion.Blazor.Gantt.EditMode.Auto"></GanttEditSettings>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId" Manual="IsManual">
+</GanttTaskFields>
+<GanttEditSettings AllowTaskbarEditing="true" AllowEditing="true" AllowAdding="true" AllowDeleting="true" Mode="Syncfusion.Blazor.Gantt.EditMode.Auto"></GanttEditSettings>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
-    public class TaskData
-    {
-        public int TaskId { get; set; }
-        public string? TaskName { get; set; }
-        public DateTime StartDate { get; set; }
-        public DateTime? EndDate { get; set; }
-        public string? Duration { get; set; }
-        public int Progress { get; set; }
-        public int? ParentId { get; set; }
-        public bool IsManual { get; set; }
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
+public class TaskData
+{
+public int TaskId { get; set; }
+public string? TaskName { get; set; }
+public DateTime StartDate { get; set; }
+public DateTime? EndDate { get; set; }
+public string? Duration { get; set; }
+public int Progress { get; set; }
+public int? ParentId { get; set; }
+public bool IsManual { get; set; }
+}
 
     public static List<TaskData> GetTaskCollection()
     {
@@ -183,6 +185,7 @@ When the [TaskMode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gant
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -194,12 +197,12 @@ When the [TaskMode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gant
 
 Unscheduled tasks are planned for a project without any definite schedule dates. The Gantt control supports rendering the unscheduled tasks. You can create or update the tasks with any one of start date, end date, and duration values or none. You can enable or disable the unscheduled tasks by using the [AllowUnscheduledTasks](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowUnscheduledTasks) property. The following images represent the various types of unscheduled tasks in Gantt.
 
-Taskbar state |Auto |Manual
------|-----|-----
-`Start Date Only` | ![Blazor Gantt Chart with Start Date Task](images/blazor-gantt-chart-start-date-task.webp) | ![Alt text](images/startDate-manual.webp)
-`End Date Only` | ![Blazor Gantt Chart with End Date Task](images/blazor-gantt-chart-end-date-task.webp) | ![Alt text](images/endDate-manual.webp)
-`Duration Only` | ![Blazot Gantt Chart with Duration Task](images/blazor-gantt-chart-duration-task.webp) | ![Alt text](images/duration-manual.webp)
-`Milestone`| ![Blazor Gantt Chart with Milestone Task](images/blazor-gantt-chart-milestone-task.webp) | ![Blazor Gantt Chart with Milestone Task](images/blazor-gantt-chart-milestone-task.webp)
+| Taskbar state     | Auto                                                                                       | Manual                                                                                   |
+| ----------------- | ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------- |
+| `Start Date Only` | ![Blazor Gantt Chart with Start Date Task](images/blazor-gantt-chart-start-date-task.webp) | ![Alt text](images/startDate-manual.webp)                                                |
+| `End Date Only`   | ![Blazor Gantt Chart with End Date Task](images/blazor-gantt-chart-end-date-task.webp)     | ![Alt text](images/endDate-manual.webp)                                                  |
+| `Duration Only`   | ![Blazot Gantt Chart with Duration Task](images/blazor-gantt-chart-duration-task.webp)     | ![Alt text](images/duration-manual.webp)                                                 |
+| `Milestone`       | ![Blazor Gantt Chart with Milestone Task](images/blazor-gantt-chart-milestone-task.webp)   | ![Blazor Gantt Chart with Milestone Task](images/blazor-gantt-chart-milestone-task.webp) |
 
 > A milestone is a task that has no start and end dates, but it has a duration value of zero.
 
@@ -219,21 +222,21 @@ You can define the various types of unscheduled tasks in the data source as foll
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
-    public class TaskData
-    {
-        public int TaskId { get; set; }
-        public string? TaskName { get; set; }
-        public DateTime? StartDate { get; set; }
-        public DateTime? EndDate { get; set; }
-        public string? Duration { get; set; }
-        public int Progress { get; set; }
-        public int? ParentId { get; set; }
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
+public class TaskData
+{
+public int TaskId { get; set; }
+public string? TaskName { get; set; }
+public DateTime? StartDate { get; set; }
+public DateTime? EndDate { get; set; }
+public string? Duration { get; set; }
+public int Progress { get; set; }
+public int? ParentId { get; set; }
+}
 
     public static List<TaskData> GetTaskCollection()
     {
@@ -247,6 +250,7 @@ You can define the various types of unscheduled tasks in the data source as foll
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -267,34 +271,34 @@ The following code snippet explains how to define the working time range for the
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="700px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttDayWorkingTimeCollection>
-        <GanttDayWorkingTime From="9" To="18"></GanttDayWorkingTime>
-    </GanttDayWorkingTimeCollection>
-    <GanttTimelineSettings TimelineUnitSize="75">
-        <GanttTopTierSettings Unit="TimelineViewMode.Day" Format="MMM dd,yyyy"></GanttTopTierSettings>
-        <GanttBottomTierSettings Unit="TimelineViewMode.Hour" Format="hh:mm tt"></GanttBottomTierSettings>
-    </GanttTimelineSettings>
+</GanttTaskFields>
+<GanttDayWorkingTimeCollection>
+<GanttDayWorkingTime From="9" To="18"></GanttDayWorkingTime>
+</GanttDayWorkingTimeCollection>
+<GanttTimelineSettings TimelineUnitSize="75">
+<GanttTopTierSettings Unit="TimelineViewMode.Day" Format="MMM dd,yyyy"></GanttTopTierSettings>
+<GanttBottomTierSettings Unit="TimelineViewMode.Hour" Format="hh:mm tt"></GanttBottomTierSettings>
+</GanttTimelineSettings>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
-    public class TaskData
-    {
-        public int TaskId { get; set; }
-        public string? TaskName { get; set; }
-        public DateTime StartDate { get; set; }
-        public DateTime? EndDate { get; set; }
-        public string? Duration { get; set; }
-        public int Progress { get; set; }
-        public int? ParentId { get; set; }
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
+public class TaskData
+{
+public int TaskId { get; set; }
+public string? TaskName { get; set; }
+public DateTime StartDate { get; set; }
+public DateTime? EndDate { get; set; }
+public string? Duration { get; set; }
+public int Progress { get; set; }
+public int? ParentId { get; set; }
+}
 
     public static List<TaskData> GetTaskCollection()
     {
@@ -311,6 +315,7 @@ The following code snippet explains how to define the working time range for the
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -318,8 +323,8 @@ The following code snippet explains how to define the working time range for the
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/hDLxZHiFyaTpSDHp?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
->* Individual tasks can lie between any time within the defined working time range of the project.
->* The [GanttDayWorkingTime](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttDayWorkingTimeCollection.html#Syncfusion_Blazor_Gantt_GanttDayWorkingTimeCollection_DayWorkingTime) property is used to define the working time for the whole project.
+> - Individual tasks can lie between any time within the defined working time range of the project.
+> - The [GanttDayWorkingTime](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttDayWorkingTimeCollection.html#Syncfusion_Blazor_Gantt_GanttDayWorkingTimeCollection_DayWorkingTime) property is used to define the working time for the whole project.
 
 ## Weekend or non-working days
 
@@ -330,28 +335,28 @@ Non-working days/weekend are used to represent the non-productive days in a proj
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" WorkWeek="@(new string[] { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday" })"
-         HighlightWeekends="true" Height="450px" Width="900px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
+HighlightWeekends="true" Height="450px" Width="900px">
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
+</GanttTaskFields>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
-    public class TaskData
-    {
-        public int TaskId { get; set; }
-        public string? TaskName { get; set; }
-        public DateTime StartDate { get; set; }
-        public DateTime? EndDate { get; set; }
-        public string? Duration { get; set; }
-        public int Progress { get; set; }
-        public int? ParentId { get; set; }
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
+public class TaskData
+{
+public int TaskId { get; set; }
+public string? TaskName { get; set; }
+public DateTime StartDate { get; set; }
+public DateTime? EndDate { get; set; }
+public string? Duration { get; set; }
+public int Progress { get; set; }
+public int? ParentId { get; set; }
+}
 
     public static List<TaskData> GetTaskCollection()
     {
@@ -368,6 +373,7 @@ Non-working days/weekend are used to represent the non-productive days in a proj
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -378,18 +384,18 @@ Non-working days/weekend are used to represent the non-productive days in a proj
 > By default, Saturdays and Sundays are considered as non-working days/weekend in a project.
 > In the Gantt control, you can make weekend as working day by setting the [IncludeWeekend](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_IncludeWeekend) property to **true**`.
 
-## Duration unit 
+## Duration unit
 
 In Gantt Chart, the task's duration value can be measured by the following duration units,
 
-* Day
-* Hour
-* Minute
+- Day
+- Hour
+- Minute
 
 In Gantt, we can define duration unit for whole project by using [GanttTaskFields.DurationUnit](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_DurationUnit) property, when we defines the value for this property, this unit will be applied for all task which don't has duration unit value. And each task in the project can be defined with different duration units and the duration unit of a task can be defined by the following ways,
 
-* Using `DurationUnit` property, to map the duration unit data source field.
-* Defining the duration unit value along with the duration field in the data source.
+- Using `DurationUnit` property, to map the duration unit data source field.
+- Defining the duration unit value along with the duration field in the data source.
 
 ### Mapping the duration unit field
 
@@ -400,17 +406,17 @@ The below code snippet explains the mapping of duration unit data source field t
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="700px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
                      Duration="Duration" DurationUnit="DurationUnit" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
+</GanttTaskFields>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public class TaskData
     {
@@ -440,19 +446,20 @@ The below code snippet explains the mapping of duration unit data source field t
         };
         return Tasks;
     }
+
 }@using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="700px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
                      Duration="Duration" DurationUnit="DurationUnit" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
+</GanttTaskFields>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public class TaskData
     {
@@ -482,6 +489,7 @@ The below code snippet explains the mapping of duration unit data source field t
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -500,17 +508,17 @@ Duration units for the tasks can also be defined along with the duration values,
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="700px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
+</GanttTaskFields>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public class TaskData
     {
@@ -539,6 +547,7 @@ Duration units for the tasks can also be defined along with the duration values,
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -548,4 +557,4 @@ Duration units for the tasks can also be defined along with the duration values,
 
 > The edit type of the duration column in Gantt Chart is string, to support editing the duration field along with duration units.
 
-> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=bootstrap5) to know how to render and configure the Gantt.
+> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt/default-functionalities?theme=bootstrap5) to know how to render and configure the Gantt.

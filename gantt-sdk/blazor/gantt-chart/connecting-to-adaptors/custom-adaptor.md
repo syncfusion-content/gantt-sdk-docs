@@ -314,6 +314,7 @@ The following example demonstrates how to inject a service into the Custom Adapt
     }
 }
 ```
+
 ## Handling searching operation
 
 When using a custom adaptor, override the `Read` or `ReadAsync` method of the `DataAdaptor` abstract class to handle server-side operations. The `DataManagerRequest` object carries the operation-specific criteria — for searching, it is available in `dm.Search`, as shown in the image below:
@@ -330,7 +331,7 @@ The following example demonstrates how to implement searching operation for cust
 @using System.Collections
 
 <SfGantt TValue="TaskData" Height="450px" Toolbar="@(new List<string>() { "Search" })">
-    
+
     <SfDataManager AdaptorInstance="@typeof(CustomAdaptor)" Adaptor="Adaptors.CustomAdaptor">
     </SfDataManager>
 
@@ -340,7 +341,7 @@ The following example demonstrates how to implement searching operation for cust
                      EndDate="EndDate"
                      Progress="Progress">
     </GanttTaskFields>
-    
+
     <GanttColumns>
         <GanttColumn Field="TaskID" HeaderText="Task ID" Width="100"></GanttColumn>
         <GanttColumn Field="TaskName" HeaderText="Task Name" Width="220"></GanttColumn>
@@ -354,7 +355,7 @@ The following example demonstrates how to implement searching operation for cust
     public static List<TaskData> Tasks { get; set; } = new();
 
     protected override void OnInitialized()
-    {        
+    {
         var baseDate = new DateTime(2026, 04, 01);
         var rand = new Random();
 
@@ -362,9 +363,9 @@ The following example demonstrates how to implement searching operation for cust
         {
             TaskID = x,
             TaskName = $"Task {x}",
-            StartDate = baseDate.AddDays(x % 10),           
-            EndDate = baseDate.AddDays((x % 10) + 3),       
-            Progress = rand.Next(0, 101)                    
+            StartDate = baseDate.AddDays(x % 10),
+            EndDate = baseDate.AddDays((x % 10) + 3),
+            Progress = rand.Next(0, 101)
         }).ToList();
     }
 
@@ -401,7 +402,7 @@ The following example demonstrates how to implement searching operation for cust
                 : (object)dataSource;
         }
     }
-}   
+}
 
 ```
 
@@ -412,7 +413,7 @@ Override the `Read` or `ReadAsync` method to handle filtering. The filter criter
 
 Based on this information, the custom data source can be filtered using the built-in [PerformFiltering](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformFiltering__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_WhereFilter__System_String_) method of the `DataOperations` class.
 
-> You can also create your own custom filtering logic and bind the filtered  data to the Gantt Chart.
+> You can also create your own custom filtering logic and bind the filtered data to the Gantt Chart.
 
 The following example demonstrates how to implement the filtering operation for custom-bound data:
 
@@ -424,7 +425,7 @@ The following example demonstrates how to implement the filtering operation for 
 @using System.Collections
 
 <SfGantt TValue="TaskData" Height="450px" AllowFiltering="true">
-    
+
     <SfDataManager AdaptorInstance="@typeof(CustomAdaptor)" Adaptor="Adaptors.CustomAdaptor">
     </SfDataManager>
 
@@ -434,7 +435,7 @@ The following example demonstrates how to implement the filtering operation for 
                      EndDate="EndDate"
                      Progress="Progress">
     </GanttTaskFields>
-    
+
     <GanttColumns>
         <GanttColumn Field="TaskID" HeaderText="Task ID" Width="100"></GanttColumn>
         <GanttColumn Field="TaskName" HeaderText="Task Name" Width="220"></GanttColumn>
@@ -448,7 +449,7 @@ The following example demonstrates how to implement the filtering operation for 
     public static List<TaskData> Tasks { get; set; } = new();
 
     protected override void OnInitialized()
-    {        
+    {
         var baseDate = new DateTime(2026, 04, 01);
         var rand = new Random();
 
@@ -512,7 +513,7 @@ Override the `Read` or `ReadAsync` method to handle sorting. The sort criteria a
 
 Perform sort data using the built‑in [PerformSorting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSorting_System_Collections_IEnumerable_System_Collections_Generic_List_Syncfusion_Blazor_Data_SortedColumn__) method of the `DataOperations` class.
 
->* Alternatively, you can also implement a custom sorting method and bind the sorted data to the Gantt Chart.
+> - Alternatively, you can also implement a custom sorting method and bind the sorted data to the Gantt Chart.
 
 The following example demonstrates how to implement the sorting operation for custom-bound data:
 
@@ -524,7 +525,7 @@ The following example demonstrates how to implement the sorting operation for cu
 @using System.Collections
 
 <SfGantt TValue="TaskData" Height="450px" AllowSorting="true">
-    
+
     <SfDataManager AdaptorInstance="@typeof(CustomAdaptor)" Adaptor="Adaptors.CustomAdaptor">
     </SfDataManager>
 
@@ -534,7 +535,7 @@ The following example demonstrates how to implement the sorting operation for cu
                      EndDate="EndDate"
                      Progress="Progress">
     </GanttTaskFields>
-    
+
     <GanttColumns>
         <GanttColumn Field="TaskID" HeaderText="Task ID" Width="100"></GanttColumn>
         <GanttColumn Field="TaskName" HeaderText="Task Name" Width="220"></GanttColumn>
@@ -548,7 +549,7 @@ The following example demonstrates how to implement the sorting operation for cu
     public static List<TaskData> Tasks { get; set; } = new();
 
     protected override void OnInitialized()
-    {        
+    {
         var baseDate = new DateTime(2026, 04, 01);
         var rand = new Random();
 
@@ -586,7 +587,7 @@ The following example demonstrates how to implement the sorting operation for cu
                 dataSource = DataOperations.PerformSorting(dataSource, dm.Sorted);
             }
 
-            // Count the total number of records 
+            // Count the total number of records
             int count = dataSource.Count();
 
             // Return result / count as DataResult if requested.
@@ -595,7 +596,7 @@ The following example demonstrates how to implement the sorting operation for cu
                 : (object)dataSource;
         }
     }
-}   
+}
 
 ```
 
@@ -603,12 +604,12 @@ The following example demonstrates how to implement the sorting operation for cu
 
 The CRUD operations for custom-bound data can be implemented by overriding the following CRUD methods of the `DataAdaptor` abstract class:
 
-* [Insert](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_Insert_Syncfusion_Blazor_DataManager_System_Object_System_String_)/[InsertAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_InsertAsync_Syncfusion_Blazor_DataManager_System_Object_System_String_)
-* [Remove](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_Remove_Syncfusion_Blazor_DataManager_System_Object_System_String_System_String_)/[RemoveAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_RemoveAsync_Syncfusion_Blazor_DataManager_System_Object_System_String_System_String_)
-* [Update](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_Update_Syncfusion_Blazor_DataManager_System_Object_System_String_System_String_)/[UpdateAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_UpdateAsync_Syncfusion_Blazor_DataManager_System_Object_System_String_System_String_)
-* [BatchUpdate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_BatchUpdate_Syncfusion_Blazor_DataManager_System_Object_System_Object_System_Object_System_String_System_String_System_Nullable_System_Int32__)/[BatchUpdateAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_BatchUpdateAsync_Syncfusion_Blazor_DataManager_System_Object_System_Object_System_Object_System_String_System_String_System_Nullable_System_Int32__)
+- [Insert](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_Insert_Syncfusion_Blazor_DataManager_System_Object_System_String_)/[InsertAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_InsertAsync_Syncfusion_Blazor_DataManager_System_Object_System_String_)
+- [Remove](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_Remove_Syncfusion_Blazor_DataManager_System_Object_System_String_System_String_)/[RemoveAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_RemoveAsync_Syncfusion_Blazor_DataManager_System_Object_System_String_System_String_)
+- [Update](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_Update_Syncfusion_Blazor_DataManager_System_Object_System_String_System_String_)/[UpdateAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_UpdateAsync_Syncfusion_Blazor_DataManager_System_Object_System_String_System_String_)
+- [BatchUpdate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_BatchUpdate_Syncfusion_Blazor_DataManager_System_Object_System_Object_System_Object_System_String_System_String_System_Nullable_System_Int32__)/[BatchUpdateAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_BatchUpdateAsync_Syncfusion_Blazor_DataManager_System_Object_System_Object_System_Object_System_String_System_String_System_Nullable_System_Int32__)
 
->* When using batch editing in the Gantt Chart, use the `BatchUpdate`/`BatchUpdateAsync` method to handle the corresponding CRUD operation.
+> - When using batch editing in the Gantt Chart, use the `BatchUpdate`/`BatchUpdateAsync` method to handle the corresponding CRUD operation.
 
 The following example demonstrates how to implement CRUD operations for custom-bound data:
 
@@ -755,7 +756,7 @@ The following example demonstrates how to implement CRUD operations for custom-b
 }
 ```
 
-> You can refer to the [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore the [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/overview?theme=fluent2) to understand how to present and manipulate data.
+> You can refer to the [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore the [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt/overview?theme=fluent2) to understand how to present and manipulate data.
 
 ## How to pass additional parameters to custom adaptor
 
@@ -766,11 +767,11 @@ Use the [Query](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.Sf
 To enable custom parameters in data requests for the Gantt Chart, follow these steps:
 
 1. **Bind the Query object to the Gantt Chart:**  
-    Assign the initialized Query object to the Gantt Chart `Query` property.
+   Assign the initialized Query object to the Gantt Chart `Query` property.
 2. **Initialize the Query object:**  
-    Create a new instance of the `Query` class and use the `AddParams` method to add your custom parameters.
+   Create a new instance of the `Query` class and use the `AddParams` method to add your custom parameters.
 3. **Access parameters in the custom adaptor:**  
-    Access the parameters via `Params` inside the custom adaptor and apply them as required for server-side logic.
+   Access the parameters via `Params` inside the custom adaptor and apply them as required for server-side logic.
 
 The following example demonstrates how to send additional parameters to the server.
 
@@ -781,7 +782,7 @@ The following example demonstrates how to send additional parameters to the serv
 @using System.Collections
 
 <SfGantt TValue="TaskData" Height="450px" Query="@Query">
-    
+
     <SfDataManager AdaptorInstance="@typeof(CustomAdaptor)" Adaptor="Adaptors.CustomAdaptor">
     </SfDataManager>
 
@@ -791,7 +792,7 @@ The following example demonstrates how to send additional parameters to the serv
                      EndDate="EndDate"
                      Progress="Progress">
     </GanttTaskFields>
-    
+
     <GanttColumns>
         <GanttColumn Field="TaskID" HeaderText="Task ID" Width="100"></GanttColumn>
         <GanttColumn Field="TaskName" HeaderText="Task Name" Width="220"></GanttColumn>
@@ -806,7 +807,7 @@ The following example demonstrates how to send additional parameters to the serv
     public Query Query = new Query().AddParams("TaskID", 1);
 
     protected override void OnInitialized()
-    {        
+    {
         var baseDate = new DateTime(2026, 04, 01);
         var rand = new Random();
 
@@ -842,7 +843,7 @@ The following example demonstrates how to send additional parameters to the serv
             if (dm.Params != null && dm.Params.Count > 0)
             {
                 var val = dm.Params;
-            }            
+            }
 
             // Count the total number of records.
             int count = dataSource.Count();
@@ -853,12 +854,11 @@ The following example demonstrates how to send additional parameters to the serv
                 : (object)dataSource;
         }
     }
-}   
+}
 
 ```
 
 ![Passing Additional Parameters to Custom Adaptor in Blazor Gantt Chart](../images/sending-additional-param-custom-binding.webp)
-
 
 ## Real-world use cases
 

@@ -17,7 +17,7 @@ The `.e-gantt` class is the root container for the entire Blazor Gantt Chart. Cu
 
 ```css
 .e-gantt *:not(.e-icons):not(.e-check):not(.e-frame) {
-    font-family: cursive !important;
+  font-family: cursive !important;
 }
 ```
 
@@ -35,16 +35,16 @@ The grid header in the Blazor Gantt Chart contains column headers and table stru
 
 ```css
 .e-gridheader {
-   color: #1976d2 !important;
+  color: #1976d2 !important;
 }
 .e-headercelldiv {
-    font-size: 36px;
+  font-size: 36px;
 }
 .e-headercell {
-    background: #e3f2fd !important;
+  background: #e3f2fd !important;
 }
-.e-columnheader{
-    color: #1976d2 !important;
+.e-columnheader {
+  color: #1976d2 !important;
 }
 ```
 
@@ -58,21 +58,21 @@ Style the grid content area that displays task data in a tabular format. Use the
 
 ```css
 .e-gridcontent {
-    background-color: #f5f5f5;
+  background-color: #f5f5f5;
 }
 .e-table {
-    border: 1px solid #ccc;
+  border: 1px solid #ccc;
 }
 .e-row {
-    background-color: #ffffff;
-    color: #333;
+  background-color: #ffffff;
+  color: #333;
 }
 .e-altrow {
-    background-color: #e8f4fd;
+  background-color: #e8f4fd;
 }
 .e-rowcell {
-    border-color: #ddd;
-    padding: 8px;
+  border-color: #ddd;
+  padding: 8px;
 }
 ```
 
@@ -88,14 +88,14 @@ The chart content displays taskbars and the timeline visualization. Apply CSS to
 
 ```css
 .e-gantt-chart {
-    background-color: #fafafa;
-    border: 1px solid #ddd;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
 }
 .e-chart-row {
-    background-color: #ecf7ff;
+  background-color: #ecf7ff;
 }
 .e-chart-row:hover {
-    background-color: #fff3cd;
+  background-color: #fff3cd;
 }
 ```
 
@@ -109,15 +109,15 @@ The timeline displays date information and task scheduling. Style the timeline h
 
 ```css
 .e-timeline-header-container {
-    background: #e3f2fd !important;
+  background: #e3f2fd !important;
 }
 
 .e-header-cell-label {
-    color: #0d47a1 !important;
-    font-weight: bold;
+  color: #0d47a1 !important;
+  font-weight: bold;
 }
-.e-weekend-header-cell{
-    background: #fce4ec !important;
+.e-weekend-header-cell {
+  background: #fce4ec !important;
 }
 ```
 
@@ -131,46 +131,46 @@ The taskbar represents tasks visually on the timeline. Customize parent taskbars
 
 ```css
 .e-taskbar-main-container {
-    border: 1px solid #e0e0e0;
+  border: 1px solid #e0e0e0;
 }
 
 .e-gantt-parent-taskbar-inner-div {
-    background-color: #1976d2 !important;
+  background-color: #1976d2 !important;
 }
 
 .e-gantt-parent-progressbar-inner-div {
-    background-color: #0d47a1 !important;
+  background-color: #0d47a1 !important;
 }
 
 .e-gantt-child-taskbar-inner-div {
-    background-color: #7b1fa2 !important;
+  background-color: #7b1fa2 !important;
 }
 
 .e-gantt-child-progressbar-inner-div {
-    background-color: #4a148c !important;
+  background-color: #4a148c !important;
 }
 
 .e-gantt-milestone {
-    background-color: #ff9800 !important;
+  background-color: #ff9800 !important;
 }
 
 .e-gantt-unscheduled-taskbar {
-    background-color: #f44336 !important;
-    opacity: 0.7;
+  background-color: #f44336 !important;
+  opacity: 0.7;
 }
 
 .e-gantt-manualparenttaskbar {
-    border: 2px dashed #1976d2 !important;
+  border: 2px dashed #1976d2 !important;
 }
 
 .e-gantt-child-manualtaskbar {
-    border: 2px dashed #7b1fa2 !important;
+  border: 2px dashed #7b1fa2 !important;
 }
 
 .e-gantt-unscheduled-manualtask {
-    background-color: #f44336 !important;
-    border: 2px dashed #f44336 !important;
-    opacity: 0.7;
+  background-color: #f44336 !important;
+  border: 2px dashed #f44336 !important;
+  opacity: 0.7;
 }
 ```
 
@@ -184,11 +184,11 @@ The baseline in the Blazor Gantt Chart represents planned task schedules for com
 
 ```css
 .e-baseline-bar {
-    background-color: #fdb9c9 !important;
+  background-color: #fdb9c9 !important;
 }
 
 .e-baseline-gantt-milestone-container {
-    background-color: #fdb9c9 !important;
+  background-color: #fdb9c9 !important;
 }
 ```
 
@@ -202,11 +202,11 @@ The connector lines in the Blazor Gantt Chart show dependencies between tasks. A
 
 ```css
 .e-connector-line {
-    stroke: #ab6060fc !important;
-    stroke-width: 2px;
-}   
+  stroke: #ab6060fc !important;
+  stroke-width: 2px;
+}
 .e-connector-line-arrow {
-    fill: #ab6060fc !important;
+  fill: #ab6060fc !important;
 }
 ```
 
@@ -220,22 +220,23 @@ The splitter divides the grid and chart sections, while resize handlers allow us
 
 ```css
 .e-gantt .e-split-bar {
-    background-color: #add8e6 !important;
-    border: 1px solid #87ceeb;
+  background-color: #add8e6 !important;
+  border: 1px solid #87ceeb;
 }
 .e-gantt .e-resize-handler {
-    background-color: #0d6efd !important;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    border: 1px solid #0d47a1;
+  background-color: #0d6efd !important;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #0d47a1;
 }
-.e-gantt .e-arrow-left, .e-gantt .e-arrow-right {
-    color: green !important;
-    font-size: 12px;
+.e-gantt .e-arrow-left,
+.e-gantt .e-arrow-right {
+  color: green !important;
+  font-size: 12px;
 }
 .e-gantt .e-resize-handler:hover {
-    background-color: #f0f0f0 !important;
+  background-color: #f0f0f0 !important;
 }
 ```
 
@@ -251,20 +252,20 @@ The labels in the Blazor Gantt Chart display task information on the taskbars. A
 
 ```css
 .e-label {
-    color: #0d47a1 !important;
-    font-size: 12px;
+  color: #0d47a1 !important;
+  font-size: 12px;
 }
 
 .e-right-label-container {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 2px 4px;
-    border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2px 4px;
+  border-radius: 3px;
 }
 
 .e-left-label-container {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 2px 4px;
-    border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2px 4px;
+  border-radius: 3px;
 }
 ```
 
@@ -278,12 +279,12 @@ The event markers in the Blazor Gantt Chart highlight important dates or milesto
 
 ```css
 .e-event-markers {
-    border-left-color: #7b1fa2 !important;
+  border-left-color: #7b1fa2 !important;
 }
 
 .e-event-markers .e-span-label {
-    background-color: #f3e5f5 !important;
-    color: #4a148c !important;
+  background-color: #f3e5f5 !important;
+  color: #4a148c !important;
 }
 ```
 
@@ -297,22 +298,22 @@ The tooltip in the Blazor Gantt Chart displays detailed information when hoverin
 
 ```css
 .e-tooltip-wrap {
-    background: #a9e0f4 !important;
+  background: #a9e0f4 !important;
 }
 
 .e-gantt-tooltip {
-    background-color: #80b9f5 !important;
-    color: #333 !important;
-    border: 1px solid #87ceeb;
-    border-radius: 4px;
-    padding: 8px;
+  background-color: #80b9f5 !important;
+  color: #333 !important;
+  border: 1px solid #87ceeb;
+  border-radius: 4px;
+  padding: 8px;
 }
 ```
 
 Properties such as `background-color`, `color`, `border`, `border-radius`, and `padding` can be adjusted to align with the Gantt design.
 
 ![Customizing tooltip](./images/blazor-gantt-tooltip.webp)
- 
+
 ## Complete code example with CSS customization
 
 Below is a complete example demonstrating how to customize multiple aspects of the Gantt Chart using CSS classes:
@@ -392,6 +393,7 @@ Below is a complete example demonstrating how to customize multiple aspects of t
     .e-connector-line-arrow {
         fill: #ab6060fc !important; /* Set arrow color */
     }
+
 </style>
 @code {
     public List<TaskData>? TaskCollection { get; set; }
@@ -431,6 +433,7 @@ Below is a complete example demonstrating how to customize multiple aspects of t
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -444,10 +447,10 @@ Below is a complete example demonstrating how to customize multiple aspects of t
 
 Grid lines on the Tree Grid and chart sections can be shown or hidden using the [GridLines](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_GridLines) property. This property controls the visibility of grid lines throughout the component. The available grid line options are:
 
- - **Horizontal**: Displays only horizontal grid lines.
- - **Vertical**: Displays only vertical grid lines.
- - **Both**: Displays both horizontal and vertical grid lines.
- - **None**: Hides all grid lines from the component.
+- **Horizontal**: Displays only horizontal grid lines.
+- **Vertical**: Displays only vertical grid lines.
+- **Both**: Displays both horizontal and vertical grid lines.
+- **None**: Hides all grid lines from the component.
 
 N> By default, the `GridLines` property is set to **Horizontal** type.
 
@@ -470,8 +473,8 @@ N> By default, the `GridLines` property is set to **Horizontal** type.
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    private Syncfusion.Blazor.Gantt.GridLine SelectedGridLine { get; set; } = Syncfusion.Blazor.Gantt.GridLine.Both;
+public List<TaskData>? TaskCollection { get; set; }
+private Syncfusion.Blazor.Gantt.GridLine SelectedGridLine { get; set; } = Syncfusion.Blazor.Gantt.GridLine.Both;
 
     public class GridLineOption
     {
@@ -522,6 +525,7 @@ N> By default, the `GridLines` property is set to **Horizontal** type.
             new TaskData { TaskId = 8, TaskName = "Estimation approval", StartDate = new DateTime(2026, 01, 06), Duration = "0", Progress = 30, ParentId = 5 }
         };
     }
+
 }
 
 {% endhighlight %}
@@ -531,6 +535,6 @@ N> By default, the `GridLines` property is set to **Horizontal** type.
 
 ## See also
 
-* [Customizing the Blazor Gantt Chart’s Taskbar](https://www.syncfusion.com/blogs/post/customizing-the-blazor-gantt-charts-taskbar-an-overview.aspx)
+- [Customizing the Blazor Gantt Chart’s Taskbar](https://www.syncfusion.com/blogs/post/customizing-the-blazor-gantt-charts-taskbar-an-overview.aspx)
 
-> Refer to the [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page for feature details. The [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=bootstrap5) demonstrates how to render and configure the Gantt.
+> Refer to the [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page for feature details. The [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt/default-functionalities?theme=bootstrap5) demonstrates how to render and configure the Gantt.

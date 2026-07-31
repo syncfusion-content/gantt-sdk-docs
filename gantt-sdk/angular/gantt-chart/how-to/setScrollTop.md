@@ -14,17 +14,18 @@ The [setScrollTop](https://ej2.syncfusion.com/angular/documentation/api/gantt#se
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/how-to/setscrolltop-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/how-to/setscrolltop-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/how-to/setscrolltop-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/how-to/setscrolltop-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/how-to/setscrolltop-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/how-to/setscrolltop-cs1" %}
 
 ## See also
+
 - [How to configure virtual scrolling?](https://ej2.syncfusion.com/angular/documentation/gantt/virtual-scroll)
 - [How to configure row selection?](https://ej2.syncfusion.com/angular/documentation/gantt/selection)
 - [How to manage task editing?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/editing-tasks)

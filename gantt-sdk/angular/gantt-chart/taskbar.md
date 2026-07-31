@@ -20,15 +20,15 @@ The following example sets a custom taskbar height:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/appearance-customization/taskbar-height-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/appearance-customization/taskbar-height-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/appearance-customization/taskbar-height-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/appearance-customization/taskbar-height-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/appearance-customization/taskbar-height-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/appearance-customization/taskbar-height-cs1" %}
 
 This code applies a 40px height to taskbars, ensuring visual consistency while maintaining responsiveness.
 
@@ -40,15 +40,15 @@ The following example formats taskbars by progress:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/appearance-customization/formatting-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/appearance-customization/formatting-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/appearance-customization/formatting-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/appearance-customization/formatting-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/appearance-customization/formatting-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/appearance-customization/formatting-cs1" %}
 
 In the event handler, `args.data.progress` determines `args.taskbarBgColor` and `args.progressBarBgColor`, enabling dynamic styling for critical tasks or milestones.
 
@@ -60,15 +60,15 @@ The following example changes gripper icons:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/appearance-customization/change-gripper-icon-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/appearance-customization/change-gripper-icon-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/appearance-customization/change-gripper-icon-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/appearance-customization/change-gripper-icon-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/appearance-customization/change-gripper-icon-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/appearance-customization/change-gripper-icon-cs1" %}
 
 Apply CSS to **.e-gantt-progress-resize-gripper** for progress handles, ensuring touch-friendly sizing for responsive interactions.
 
@@ -80,15 +80,15 @@ The following example hides taskbars for specific tasks and notes icons for empt
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/appearance-customization/taskbar-and-notes/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/appearance-customization/taskbar-and-notes/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/appearance-customization/taskbar-and-notes/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/appearance-customization/taskbar-and-notes/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/appearance-customization/taskbar-and-notes" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/appearance-customization/taskbar-and-notes" %}
 
 This code hides taskbars for tasks with IDs 7–10 (e.g., estimation tasks) and notes icons for empty `Info` fields, using `queryTaskbarInfo` and `queryCellInfo`. The **.e-notes-info** class ensures robust icon targeting, and `taskFields.notes` enables notes rendering.
 
@@ -338,19 +338,19 @@ The following example enables multi-taskbar:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/projectview-multitaskbar-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/projectview-multitaskbar-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/projectview-multitaskbar-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/projectview-multitaskbar-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/projectview-multitaskbar-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/projectview-multitaskbar-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/projectview-multitaskbar-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/projectview-multitaskbar-cs1" %}
 
 This feature aggregates child progress in parent taskbars, updating dynamically on child changes.
 
@@ -362,15 +362,15 @@ The following example customizes connectors:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/appearance-customization/dependency-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/appearance-customization/dependency-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/appearance-customization/dependency-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/appearance-customization/dependency-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/appearance-customization/dependency-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/appearance-customization/dependency-cs1" %}
 
 These properties apply to all connectors, with the `queryTaskbarInfo` event allowing per-dependency customization via `args.connectorLineBackground`.
 
@@ -382,15 +382,15 @@ The following example enables tooltips:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/tooltip/default-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/tooltip/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/tooltip/default-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/tooltip/default-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/tooltip/default-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/tooltip/default-cs1" %}
 
 Tooltips display on hover, with touch-and-hold support for mobile via the tooltip popup.
 
@@ -400,16 +400,16 @@ You can disable the taskbar tooltip using the [beforeTooltipRender](https://help
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/tooltip/disable-timeline-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/tooltip/disable-timeline-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/tooltip/disable-timeline-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/tooltip/disable-timeline-cs1/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/tooltip/disable-timeline-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/tooltip/disable-timeline-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/tooltip/disable-timeline-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/tooltip/disable-timeline-cs1" %}
 
 ## Customize tooltip templates
 
@@ -423,19 +423,19 @@ The following example customizes taskbar tooltips:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/tooltip/taskbar-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/tooltip/taskbar-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/tooltip/taskbar-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/tooltip/taskbar-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/tooltip/taskbar-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/tooltip/taskbar-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/tooltip/taskbar-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/tooltip/taskbar-cs1" %}
 
 The template uses `data` to display fields like **TaskName** and **Progress**, ensuring responsive display.
 
@@ -447,19 +447,19 @@ The following example customizes connector tooltips:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/tooltip/dependency-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/tooltip/dependency-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/tooltip/dependency-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/tooltip/dependency-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/tooltip/dependency-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/tooltip/dependency-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/tooltip/dependency-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/tooltip/dependency-cs1" %}
 
 ### Baseline tooltip
 
@@ -469,19 +469,19 @@ The following example customizes baseline tooltips:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/tooltip/baseline-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/tooltip/baseline-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/tooltip/baseline-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/tooltip/baseline-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/tooltip/baseline-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/tooltip/baseline-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/tooltip/baseline-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/tooltip/baseline-cs1" %}
 
 ### Timeline tooltip
 
@@ -491,19 +491,19 @@ The following example customizes timeline tooltips:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/tooltip/timeline-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/tooltip/timeline-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/tooltip/timeline-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/tooltip/timeline-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/tooltip/timeline-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/tooltip/timeline-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/tooltip/timeline-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/tooltip/timeline-cs1" %}
 
 ## Tooltip Touch interaction
 

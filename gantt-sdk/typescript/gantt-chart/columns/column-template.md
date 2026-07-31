@@ -25,27 +25,27 @@ The following example demonstrates how to render an image for the **Resources** 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs1" %}
 {% endif %}
 
 > The [template](../../api/gantt/column#template) option allows to define any HTML content within a column.
@@ -62,27 +62,27 @@ The example below demonstrates how to render a hyperlink for the **TaskName** fi
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs2/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs2/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs2/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs2/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs2" %}
 {% endif %}
 
 > The `window.open()` method is a built-in JavaScript function that opens a new browser window or tab with the specified URL.
@@ -101,27 +101,27 @@ The following example demonstrates how to render a `LineChart` for the **customD
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs3/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs3/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs3/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs3/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs3" %}
 {% endif %}
 
 ### Render ColorPicker control in a column
@@ -136,27 +136,27 @@ The following example demonstrates how to render a `ColorPicker` for the **Chang
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs4/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs4/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs4/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs4" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs4/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs4/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs4/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs4" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs4" %}
 {% endif %}
 
 ### Render DropDownList control in a column
@@ -169,27 +169,27 @@ The following example demonstrates how to render the [DropDownList](../../drop-d
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs5/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs5/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs5/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs5" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs5" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs5/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs5/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs5/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs5" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs5" %}
 {% endif %}
 
 ### Render Chip control in a column
@@ -202,27 +202,27 @@ The following example demonstrates how to render the Chips control in the **Task
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs6/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs6/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs6/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs6" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs6" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs6/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs6/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs6/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs6" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs6" %}
 {% endif %}
 
 ### Render RadioButton in a column
@@ -235,27 +235,27 @@ The following example demonstrates rendering `RadioButton` controls in the **Ord
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs7/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs7/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs7/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs7" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs7" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs7/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs7/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs7/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs7" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs7" %}
 {% endif %}
 
 ## Using condition template
@@ -268,27 +268,27 @@ The following example code demonstrates how to render a checkbox only when the *
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs8/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs8/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs8/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs8" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs8" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs8/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs8/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs8/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs8" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs8" %}
 {% endif %}
 
 > You can use any template element or custom control instead of the checkbox in the conditional template based on your requirement.
@@ -303,27 +303,27 @@ In the following example, a button is rendered in the **Task Data** column. The 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs9/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs9/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs9/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs9/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs9" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs9" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs9/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs9/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs9/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs9/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs9" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs9" %}
 {% endif %}
 
 ## Use custom helper inside the template
@@ -338,27 +338,27 @@ The following example demonstrates how to use a custom helper function inside th
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs10/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs10/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs10/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs10/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs10" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs10" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs10/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs10/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs10/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs10/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs10" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs10" %}
 {% endif %}
 
 > Custom helpers can only be used inside the template of the column.
@@ -371,25 +371,25 @@ You can render a control inside a Gantt chart cell by setting the `template` pro
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs11/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs11/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs11/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs11/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs11" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs11" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs11/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs11/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs11/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs11/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnTemplate-cs11" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/columnTemplate-cs11" %}
 {% endif %}

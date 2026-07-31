@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Set the vertical scroll position
 
 In the Gantt control, you can set the vertical scroller position dynamically by clicking the custom button using the `setScrollTop` method.
@@ -17,10 +16,10 @@ In the Gantt control, you can set the vertical scroller position dynamically by 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/setScrollTop/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/how-to/setScrollTop/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="SetScrollTop.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/setScrollTop/setScrollTop.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/how-to/setScrollTop/setScrollTop.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -28,14 +27,12 @@ In the Gantt control, you can set the vertical scroller position dynamically by 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/setScrollTop/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/how-to/setScrollTop/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="SetScrollTop.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/setScrollTop/setScrollTop.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/how-to/setScrollTop/setScrollTop.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](../images/setScrollTop.png)

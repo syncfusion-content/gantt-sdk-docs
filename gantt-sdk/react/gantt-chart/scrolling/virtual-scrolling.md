@@ -20,17 +20,17 @@ The following example enables row virtualization for a large dataset:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/virtualscroll-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/virtualscroll-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/virtualscroll-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/virtualscroll-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/virtualscroll-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/virtualscroll-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/virtualscroll-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/virtualscroll-cs1" %}
 
 ## Configure timeline virtualization
 
@@ -40,21 +40,22 @@ The following example enables timeline virtualization for a wide timeline:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/virtualscroll-cs3/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/virtualscroll-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/virtualscroll-cs3/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/virtualscroll-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/virtualscroll-cs3/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/virtualscroll-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/virtualscroll-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/virtualscroll-cs3" %}
 
 ## Virtual scroll limitations
 
 Virtual scrolling has the following constraints:
+
 - Incompatible with [enableImmutableMode](https://ej2.syncfusion.com/react/documentation/api/gantt#enableimmutablemode), as both use different rendering optimizations.
 - Cell selection is not persisted due to on-demand rendering.
 - Browser height limits restrict the maximum number of records in row virtualization.

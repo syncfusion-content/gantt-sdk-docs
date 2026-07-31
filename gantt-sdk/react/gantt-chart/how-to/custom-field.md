@@ -14,19 +14,20 @@ The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/how-to-customfield-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/how-to-customfield-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/how-to-customfield-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/how-to-customfield-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/how-to-customfield-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/how-to-customfield-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/how-to-customfield-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/how-to-customfield-cs1" %}
 
 ## See also
+
 - [How to configure add/edit dialogs?](https://ej2.syncfusion.com/react/documentation/gantt/managing-tasks/managing-tasks#customize-control-in-addedit-dialog)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/react/documentation/gantt/task-dependency)
 - [How to configure critical path?](https://ej2.syncfusion.com/react/documentation/gantt/critical-path)

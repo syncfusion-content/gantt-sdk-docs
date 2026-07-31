@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Checkbox Column in gantt control
 
 To render boolean values as checkbox in columns, you need to set [`displayAsCheckBox`](../api/gantt/column/#displayascheckbox) property as **true**.
@@ -17,10 +16,10 @@ To render boolean values as checkbox in columns, you need to set [`displayAsChec
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/checkbox/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/checkbox/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Checkbox.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/checkbox/checkbox.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/checkbox/checkbox.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -28,15 +27,12 @@ To render boolean values as checkbox in columns, you need to set [`displayAsChec
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/checkbox/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/checkbox/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Checkbox.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/checkbox/checkbox.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/columns/checkbox/checkbox.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-
-
 ![Alt text](images/checkbox.png)
-

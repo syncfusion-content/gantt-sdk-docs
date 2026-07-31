@@ -3,7 +3,7 @@ layout: post
 title: Work Breakdown Structure (WBS) in Angular Gantt Chart Component | Syncfusion
 description: Learn how to integrate and manage WBS codes in the Syncfusion Angular Gantt Chart component to improve task hierarchy visualization and project tracking.
 platform: gantt-sdk
-control: WBS Column 
+control: WBS Column
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -16,19 +16,19 @@ The Work Breakdown Structure (WBS) organizes project tasks hierarchically by ass
 
 To enable WBS in the Gantt Chart component:
 
-- **Enable WBS Codes**: Set [enableWBS](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablewbs) to **true**  to automatically generate unique task codes and define their predecessors.
+- **Enable WBS Codes**: Set [enableWBS](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablewbs) to **true** to automatically generate unique task codes and define their predecessors.
 - **Auto-Update Codes**: Set [enableAutoWbsUpdate](https://ej2.syncfusion.com/angular/documentation/api/gantt#enableautowbsupdate) to **true** to maintain accurate WBS codes during operations such as sorting, editing, or drag-and-drop.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/wbscolumn-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/wbscolumn-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/wbscolumn-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/wbscolumn-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/wbscolumn-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/wbscolumn-cs1" %}
 
 ## Managing WBS code updates
 
@@ -38,19 +38,19 @@ In the following example, WBS auto-update is enabled only during the row drag an
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/wbscolumn-cs2/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/wbscolumn-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/wbscolumn-cs2/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/wbscolumn-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/wbscolumn-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/wbscolumn-cs2" %}
 
 ## Limitations
 
 The WBS feature has a few limitations in the Gantt Chart component:
 
-* Editing of the WBS code and WBS predecessor columns is not supported.
-* Load on demand is not supported with the WBS feature.
-* WBS Code and WBS Predecessor fields cannot be mapped directly from the data source.
+- Editing of the WBS code and WBS predecessor columns is not supported.
+- Load on demand is not supported with the WBS feature.
+- WBS Code and WBS Predecessor fields cannot be mapped directly from the data source.

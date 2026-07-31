@@ -18,17 +18,17 @@ Define validation rules for columns using [columns.validationRules](https://ej2.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/celledit-cs4/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/celledit-cs4/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/celledit-cs4/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/celledit-cs4/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/celledit-cs4/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/celledit-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/celledit-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/celledit-cs4" %}
 
 ## Apply custom validation
 
@@ -36,17 +36,17 @@ Implement custom validation for specific columns, like `TaskName`, using callbac
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/celledit-cs5/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/celledit-cs5/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/celledit-cs5/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/celledit-cs5/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/celledit-cs5/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/celledit-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/celledit-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/celledit-cs5" %}
 
 ## Validate dependency and resource grids
 
@@ -54,19 +54,20 @@ Set validation rules for dependency and resource grids in the add/edit dialog us
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/celledit-cs6/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/celledit-cs6/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/celledit-cs6/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/celledit-cs6/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/celledit-cs6/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/celledit-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/celledit-cs6" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/celledit-cs6" %}
 
 ## See also
+
 - [How to configure task editing?](https://ej2.syncfusion.com/react/documentation/gantt/managing-tasks/editing-tasks)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/react/documentation/gantt/task-dependency)
 - [How to add new tasks?](https://ej2.syncfusion.com/react/documentation/gantt/managing-tasks/adding-new-tasks)

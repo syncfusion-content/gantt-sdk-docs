@@ -3,7 +3,7 @@ layout: post
 title: Immutable Mode in TypeScript Gantt Chart Control | Syncfusion
 description: Learn how to enable immutable mode in the Syncfusion TypeScript Gantt Chart control for optimized task rendering and performance with large datasets.
 platform: gantt-sdk
-control: Immutable 
+control: Immutable
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -18,6 +18,7 @@ Immutable mode optimizes the TypeScript Gantt Chart control’s rendering perfor
 Immutable mode requires a unique primary key in the data source, configured via the [isPrimaryKey](../api/gantt/column#isprimarykey) property, and valid [taskFields](../api/gantt#taskfields) mappings (e.g., id to a unique field like TaskID). The control compares object references to detect changes, requiring immutable data patterns where updates create new objects rather than mutating existing ones. Hierarchical task updates (e.g., parent-child tasks) are efficiently handled by checking only changed references, preserving nested structures.
 
 **Configuration requirements**
+
 - **Primary key**: Set `isPrimaryKey` to **true** on a unique column (e.g., TaskID) to ensure accurate change detection.
 - **Unique identifiers**: Assign stable, unique IDs to all tasks via `taskFields.id`.
 - **Immutable data**: Create new objects for updates (e.g., { ...task, progress: 50 }) to trigger reference changes.
@@ -28,39 +29,40 @@ The following example enables immutable mode:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/immutable-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/immutable-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/immutable-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/immutable-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/immutable-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/immutable-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/immutable-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/immutable-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/immutable-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/immutable-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/immutable-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/immutable-cs1" %}
 {% endif %}
-
 
 ## Feature compatibility and limitations
 
 Immutable mode is incompatible with certain features due to its reference-based change detection:
+
 - **Column reordering**: Conflicts with reference tracking, requiring temporary disabling of `enableImmutableMode`.
 - **Virtualization**: Incompatible with [enableVirtualization](../api/gantt#enablevirtualization), as both optimize rendering differently; choose based on dataset size.
 
 For small datasets, standard rendering may suffice. For dynamic column operations, disable immutable mode temporarily. While immutable mode reduces rendering time, it may increase memory usage to maintain object references, a trade-off to consider for extremely large projects.
 
 ## See also
+
 - [How to manage task dependencies?](../gantt/taskdependency)
 - [How to enable virtual scrolling?](../gantt/scrolling/virtual-scrolling)
 - [How to configure critical path?](../gantt/critical-path)

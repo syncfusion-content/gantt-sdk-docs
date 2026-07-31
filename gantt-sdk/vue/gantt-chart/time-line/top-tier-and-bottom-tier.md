@@ -2,7 +2,7 @@
 layout: post
 title: Top Tier and Bottom Tier in Vue Gantt Chart Component | Syncfusion
 description: Learn here all about Top tier and bottom tier in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Top tier and bottom tier 
+control: Top tier and bottom tier
 platform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -14,14 +14,14 @@ The Gantt Chart component contains two tiers layout in timeline, you can customi
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs8/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/timeline-cs8/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs8/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/timeline-cs8/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs8" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/timeline-cs8" %}
 
 ## Combining timeline cells
 
@@ -29,14 +29,14 @@ In the Gantt Chart component, the timeline cells in top and bottom tiers can be 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs9/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/timeline-cs9/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs9/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/timeline-cs9/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs9" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/timeline-cs9" %}
 
 ## Format value of timeline cell
 
@@ -44,14 +44,14 @@ In the Gantt Chart component, you can format the value of top and bottom timelin
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs10/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/timeline-cs10/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs10/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/timeline-cs10/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs10" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/timeline-cs10" %}
 
 ## Timeline cell width
 
@@ -59,11 +59,11 @@ In the Gantt Chart component, you can define the width value of timeline cell us
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs11/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/timeline-cs11/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs11/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/timeline-cs11/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/timeline-cs11" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/timeline-cs11" %}

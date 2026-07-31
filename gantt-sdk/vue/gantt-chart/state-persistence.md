@@ -2,7 +2,7 @@
 layout: post
 title: State Persistence in Vue Gantt Chart Component | Syncfusion
 description: Learn here all about State persistence in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: State persistence 
+control: State persistence
 platform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -20,15 +20,13 @@ If the [enablePersistence](https://ej2.syncfusion.com/vue/documentation/api/gant
 
 ```ts
 //get the Gantt model.
-let value: string = window.localStorage.getItem('ganttGantt'); //"ganttGantt" is component name + component id.
+let value: string = window.localStorage.getItem("ganttGantt"); //"ganttGantt" is component name + component id.
 let model: Object = JSON.parse(model);
-
 ```
 
 ```ts
 //set the Gantt model.
-window.localStorage.setItem('ganttGantt', JSON.stringify(model)); //"ganttGantt" is component name + component id.
-
+window.localStorage.setItem("ganttGantt", JSON.stringify(model)); //"ganttGantt" is component name + component id.
 ```
 
 > You can refer to our [Vue Gantt](https://www.syncfusion.com/vue-ui-components/vue-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Vue Gantt example](https://ej2.syncfusion.com/vue/demos#/tailwind3/gantt/default) to knows how to present and manipulate data.
@@ -39,18 +37,18 @@ When the [enablePersistence](https://ej2.syncfusion.com/vue/documentation/api/ga
 
 The following example demonstrates how to prevent Gantt columns from persisting. In the [dataBound](https://ej2.syncfusion.com/vue/documentation/api/gantt#databound) event of the Gantt, you can override the `addOnPersist` method and remove the columns from the key list given for persistence.
 
->Note: When the `enablePersistence` property is set to true, the Gantt features such as column template, column formatter, header text, and value accessor will not persist.
+> Note: When the `enablePersistence` property is set to true, the Gantt features such as column template, column formatter, header text, and value accessor will not persist.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/column-prevent-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/column-prevent-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/column-prevent-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/column-prevent-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/column-prevent-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/column-prevent-cs1" %}
 
 ## Persist the header template and header Text
 
@@ -60,11 +58,11 @@ If you wish to restore all these column properties, then you can achieve it by c
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/column-persist-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/column-persist-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/column-persist-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/column-persist-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/column-persist-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/column-persist-cs1" %}

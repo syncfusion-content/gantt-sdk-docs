@@ -9,11 +9,11 @@ documentation: ug
 
 # Excel Export in Blazor Gantt Chart Component
 
-The Syncfusion Blazor Gantt Chart component supports exporting project data to Excel and CSV formats, enabling seamless sharing, reporting, and offline analysis.  
- 
+The Syncfusion Blazor Gantt Chart component supports exporting project data to Excel and CSV formats, enabling seamless sharing, reporting, and offline analysis.
+
 To enable Excel or CSV export functionality, set the [AllowExcelExport](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowExcelExport) property to **true**.
 
-You can trigger export operations using the [ExportToExcelAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ExportToExcelAsync_Syncfusion_Blazor_Grids_ExcelExportProperties_) or [ExportToCsvAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ExportToCsvAsync_Syncfusion_Blazor_Grids_ExcelExportProperties_) methods, typically within the [OnToolbarClick](https://blazor.syncfusion.com/documentation/gantt-chart/events#ontoolbarclick) event.
+You can trigger export operations using the [ExportToExcelAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ExportToExcelAsync_Syncfusion_Blazor_Grids_ExcelExportProperties_) or [ExportToCsvAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ExportToCsvAsync_Syncfusion_Blazor_Grids_ExcelExportProperties_) methods, typically within the [OnToolbarClick](https://blazor.syncfusion.com/documentation/gantt/events#ontoolbarclick) event.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -23,15 +23,15 @@ You can trigger export operations using the [ExportToExcelAsync](https://help.sy
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="900px"
          EnableUndoRedo="true"
          UndoRedoActions="@(new List<GanttUndoRedoAction>{ GanttUndoRedoAction.Edit, GanttUndoRedoAction.Add, GanttUndoRedoAction.Delete })">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" AllowTaskbarEditing="true"></GanttEditSettings>
-    <GanttEvents TValue="TaskData" OnUndoRedo="UndoRedoHandler"></GanttEvents>
+</GanttTaskFields>
+<GanttEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" AllowTaskbarEditing="true"></GanttEditSettings>
+<GanttEvents TValue="TaskData" OnUndoRedo="UndoRedoHandler"></GanttEvents>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
+public List<TaskData>? TaskCollection { get; set; }
 
     protected override void OnInitialized()
     {
@@ -72,6 +72,7 @@ You can trigger export operations using the [ExportToExcelAsync](https://help.sy
             new TaskData() { TaskId = 8, TaskName = "Estimation approval", StartDate = new DateTime(2026, 04, 07), Duration = "0", ParentId = 5 }
         };
     }
+
 }
 
 {% endhighlight %}
@@ -91,16 +92,16 @@ You can bind a custom data source for Excel or CSV export in the Blazor Gantt co
 @using Syncfusion.Blazor.Grids
 
 <SfGantt ID="GanttContainer" @ref="Gantt" AllowExcelExport="true" Toolbar="@(new List<string>() { "ExcelExport", "CsvExport" })"
-         DataSource="@TaskCollection" Height="450px" Width="700px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
+DataSource="@TaskCollection" Height="450px" Width="700px">
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
                      Dependency="Predecessor" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
+</GanttTaskFields>
+<GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
 </SfGantt>
 
 @code {
-    public SfGantt<TaskData>? Gantt;
-    public List<TaskData>? TaskCollection { get; set; }
+public SfGantt<TaskData>? Gantt;
+public List<TaskData>? TaskCollection { get; set; }
 
     protected override void OnInitialized()
     {
@@ -155,13 +156,13 @@ You can bind a custom data source for Excel or CSV export in the Blazor Gantt co
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
 {% endtabs %}
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/htrntmBDLBWEFjJv?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
-
 
 ## Export Gantt Chart Data
 
@@ -179,7 +180,6 @@ In the following example, [EnableRowVirtualization](https://help.syncfusion.com/
 @using Syncfusion.Blazor.Navigations
 @using Syncfusion.Blazor.DropDowns
 @using Syncfusion.Blazor.Grids
-
 
 <div style="display: flex; align-items: center; margin-bottom: 15px;font-weight: bold">
     <label style="padding-right: 10px;">Change export type:</label>
@@ -205,14 +205,14 @@ In the following example, [EnableRowVirtualization](https://help.syncfusion.com/
 </SfGantt>
 
 @code {
-    public SfGantt<TaskData>? Gantt;
-    public List<TaskData>? TaskCollection { get; set; }
-    private string SelectedExportType = "CurrentPage";
-    List<DropDownOrder> DropDownValue = new List<DropDownOrder>
-    {
-        new DropDownOrder { Text = "CurrentPage", Value = "CurrentPage" },
-        new DropDownOrder { Text = "AllPages", Value = "AllPages" },
-    };
+public SfGantt<TaskData>? Gantt;
+public List<TaskData>? TaskCollection { get; set; }
+private string SelectedExportType = "CurrentPage";
+List<DropDownOrder> DropDownValue = new List<DropDownOrder>
+{
+new DropDownOrder { Text = "CurrentPage", Value = "CurrentPage" },
+new DropDownOrder { Text = "AllPages", Value = "AllPages" },
+};
 
     private async Task ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
     {
@@ -300,6 +300,7 @@ In the following example, [EnableRowVirtualization](https://help.syncfusion.com/
         public string? Text { get; set; }
         public string? Value { get; set; }
     }
+
 }
 
 {% endhighlight %}
@@ -320,38 +321,38 @@ To include hidden columns during Excel or CSV export in the Gantt Chart componen
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt ID="GanttContainer" @ref="Gantt" AllowExcelExport="true" Toolbar="@(new List<string>() { "ExcelExport", "CsvExport" })" DataSource="@TaskCollection" Height="450px" Width="700px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId"></GanttTaskFields>
-    <GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
-    <GanttColumns>
-        <GanttColumn Field="TaskId" HeaderText="Task Id" Width="150"></GanttColumn>
-        <GanttColumn Field="TaskName" HeaderText="Task Name" Width="250"></GanttColumn>
-        <GanttColumn Field="StartDate" HeaderText="StartDate" Width="250" Visible="false"></GanttColumn>
-        <GanttColumn Field="Duration" Width="150" HeaderText="Duration" Visible="false"></GanttColumn>
-        <GanttColumn Field="Progress" HeaderText="Progress" Width="250"></GanttColumn>
-    </GanttColumns>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId"></GanttTaskFields>
+<GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
+<GanttColumns>
+<GanttColumn Field="TaskId" HeaderText="Task Id" Width="150"></GanttColumn>
+<GanttColumn Field="TaskName" HeaderText="Task Name" Width="250"></GanttColumn>
+<GanttColumn Field="StartDate" HeaderText="StartDate" Width="250" Visible="false"></GanttColumn>
+<GanttColumn Field="Duration" Width="150" HeaderText="Duration" Visible="false"></GanttColumn>
+<GanttColumn Field="Progress" HeaderText="Progress" Width="250"></GanttColumn>
+</GanttColumns>
 </SfGantt>
 
 @code {
-    public SfGantt<TaskData>? Gantt;
-    public List<TaskData>? TaskCollection { get; set; }
-    public void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
-    {
-        Syncfusion.Blazor.Grids.ExcelExportProperties ExportProperties = new Syncfusion.Blazor.Grids.ExcelExportProperties();
-        ExportProperties.IncludeHiddenColumn = true;
-        if (args.Item.Id == "GanttContainer_excelexport")
-        {
-            Console.WriteLine(args.Item.Id);
-            Gantt?.ExportToExcelAsync(ExportProperties);
-        }
-        else if (args.Item.Id == "GanttContainer_csvexport")
-        {
-            Gantt?.ExportToCsvAsync(ExportProperties);
-        }
-    }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public SfGantt<TaskData>? Gantt;
+public List<TaskData>? TaskCollection { get; set; }
+public void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
+{
+Syncfusion.Blazor.Grids.ExcelExportProperties ExportProperties = new Syncfusion.Blazor.Grids.ExcelExportProperties();
+ExportProperties.IncludeHiddenColumn = true;
+if (args.Item.Id == "GanttContainer_excelexport")
+{
+Console.WriteLine(args.Item.Id);
+Gantt?.ExportToExcelAsync(ExportProperties);
+}
+else if (args.Item.Id == "GanttContainer_csvexport")
+{
+Gantt?.ExportToCsvAsync(ExportProperties);
+}
+}
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public class TaskData
     {
@@ -379,6 +380,7 @@ To include hidden columns during Excel or CSV export in the Gantt Chart componen
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -388,7 +390,7 @@ To include hidden columns during Excel or CSV export in the Gantt Chart componen
 
 ## Add header and footer to export
 
-To add header and footer content to exported Excel or CSV files in the Gantt component, configure the `Header` and `Footer` properties within [ExcelExportProperties](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ExportToExcelAsync_Syncfusion_Blazor_Grids_ExcelExportProperties_) during the [OnToolbarClick](https://blazor.syncfusion.com/documentation/gantt-chart/events#ontoolbarclick) event. This allows you to define custom content that appears at the top and bottom of the exported document.
+To add header and footer content to exported Excel or CSV files in the Gantt component, configure the `Header` and `Footer` properties within [ExcelExportProperties](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ExportToExcelAsync_Syncfusion_Blazor_Grids_ExcelExportProperties_) during the [OnToolbarClick](https://blazor.syncfusion.com/documentation/gantt/events#ontoolbarclick) event. This allows you to define custom content that appears at the top and bottom of the exported document.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -398,16 +400,16 @@ To add header and footer content to exported Excel or CSV files in the Gantt com
 @using Syncfusion.Blazor.Grids
 
 <SfGantt ID="GanttContainer" @ref="Gantt" AllowExcelExport="true" Toolbar="@(new List<string>() { "ExcelExport", "CsvExport" })"
-         DataSource="@TaskCollection" Height="450px" Width="700px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
+DataSource="@TaskCollection" Height="450px" Width="700px">
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
                      Dependency="Predecessor" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
+</GanttTaskFields>
+<GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
 </SfGantt>
 
 @code {
-    public SfGantt<TaskData>? Gantt;
-    public List<TaskData>? TaskCollection { get; set; }
+public SfGantt<TaskData>? Gantt;
+public List<TaskData>? TaskCollection { get; set; }
 
     protected override void OnInitialized()
     {
@@ -489,6 +491,7 @@ To add header and footer content to exported Excel or CSV files in the Gantt com
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -514,16 +517,16 @@ To add additional worksheets during export, follow the steps below:
 @using Syncfusion.ExcelExport
 
 <SfGantt ID="GanttContainer" @ref="Gantt" AllowExcelExport="true" Toolbar="@(new List<string>() { "ExcelExport", "CsvExport" })"
-         DataSource="@TaskCollection" Height="450px" Width="700px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
+DataSource="@TaskCollection" Height="450px" Width="700px">
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
                      Dependency="Predecessor" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
+</GanttTaskFields>
+<GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
 </SfGantt>
 
 @code {
-    public SfGantt<TaskData>? Gantt;
-    public List<TaskData>? TaskCollection { get; set; }
+public SfGantt<TaskData>? Gantt;
+public List<TaskData>? TaskCollection { get; set; }
 
     protected override void OnInitialized()
     {
@@ -582,6 +585,7 @@ To add additional worksheets during export, follow the steps below:
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -603,17 +607,17 @@ To apply a custom theme, set the [Theme](https://help.syncfusion.com/cr/blazor/S
 @using Syncfusion.Blazor.Gantt
 
 <SfGantt ID="GanttContainer" @ref="Gantt" AllowExcelExport="true" Toolbar="@(new List<string>() { "ExcelExport" })" DataSource="@TaskCollection" Height="450px" Width="700px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" Dependency="Predecessor" ParentID="ParentId"></GanttTaskFields>
-    <GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" Dependency="Predecessor" ParentID="ParentId"></GanttTaskFields>
+<GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
 </SfGantt>
 
 @code {
-    public SfGantt<TaskData>? Gantt;
-    public List<TaskData>? TaskCollection { get; set; }
-    public void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
-    {
-        Syncfusion.Blazor.Grids.ExcelExportProperties ExportProperties = new Syncfusion.Blazor.Grids.ExcelExportProperties();
-        Syncfusion.Blazor.Grids.ExcelTheme Theme = new Syncfusion.Blazor.Grids.ExcelTheme();
+public SfGantt<TaskData>? Gantt;
+public List<TaskData>? TaskCollection { get; set; }
+public void ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
+{
+Syncfusion.Blazor.Grids.ExcelExportProperties ExportProperties = new Syncfusion.Blazor.Grids.ExcelExportProperties();
+Syncfusion.Blazor.Grids.ExcelTheme Theme = new Syncfusion.Blazor.Grids.ExcelTheme();
 
         Syncfusion.Blazor.Grids.ExcelStyle ThemeStyle = new Syncfusion.Blazor.Grids.ExcelStyle()
         {
@@ -664,6 +668,7 @@ To apply a custom theme, set the [Theme](https://help.syncfusion.com/cr/blazor/S
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -696,9 +701,9 @@ To assign a custom name to the exported Excel or CSV file in the Gantt Chart com
 </SfGantt>
 
 @code {
-    public SfGantt<TaskData>? Gantt;
-    public string FileName { get; set; } = string.Empty;
-    public List<TaskData>? TaskCollection { get; set; }
+public SfGantt<TaskData>? Gantt;
+public string FileName { get; set; } = string.Empty;
+public List<TaskData>? TaskCollection { get; set; }
 
     protected override void OnInitialized()
     {
@@ -755,6 +760,7 @@ To assign a custom name to the exported Excel or CSV file in the Gantt Chart com
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -762,5 +768,4 @@ To assign a custom name to the exported Excel or CSV file in the Gantt Chart com
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/LZrRNGrthhTKvOpW?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-
-N> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=bootstrap4) to know how to render and configure the Gantt.
+N> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt/default-functionalities?theme=bootstrap4) to know how to render and configure the Gantt.

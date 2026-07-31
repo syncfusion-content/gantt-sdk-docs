@@ -3,7 +3,7 @@ layout: post
 title: How to Span Columns in JavaScript Gantt Chart Control | Syncfusion
 description: Learn how to span columns in the Syncfusion JavaScript Gantt Chart control using the queryCellInfo event, customize borders, and understand limitations.
 platform: gantt-sdk
-control: Column spanning 
+control: Column spanning
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -21,27 +21,27 @@ In the following example, **Work** cells are spanned to improve visual clarity:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-span-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-span-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-span-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-span-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-span-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/column-span-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-span-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-span-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-span-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-span-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-span-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/column-span-cs1" %}
 {% endif %}
 
 ## Customize border color of spanned columns
@@ -54,27 +54,27 @@ The following example demonstrates how to change the border color of spanned cel
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-span-cs2/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-span-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-span-cs2/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-span-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-span-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/column-span-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-span-cs2/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-span-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-span-cs2/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/column-span-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-span-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/column-span-cs2" %}
 {% endif %}
 
 ## Limitations

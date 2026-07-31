@@ -3,7 +3,7 @@ layout: post
 title: Scrolling in Angular Gantt Chart Component | Syncfusion
 description: Learn here all about Scrolling in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Scrolling 
+control: Scrolling
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -28,15 +28,15 @@ For precise layout control, set fixed dimensions using pixel values for both [wi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/scrolling-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/scrolling-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/scrolling-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/scrolling-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/scrolling-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/scrolling-cs1" %}
 
 ## Configure responsive scrolling
 
@@ -44,15 +44,15 @@ You can make the Gantt Chart component responsive by setting its [width](https:/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/responsive-scrolling-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/responsive-scrolling-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/responsive-scrolling-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/responsive-scrolling-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/responsive-scrolling-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/responsive-scrolling-cs1" %}
 
 ## Scroll to task row and timeline
 
@@ -66,15 +66,15 @@ To scroll directly to a specific task within the timeline, use the [scrollToTask
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/scrolling-select/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/scrolling-select/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/scrolling-select/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/scrolling-select/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/scrolling-select" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/scrolling-select" %}
 
 ## Synchronize horizontal scroll between Gantt charts
 
@@ -82,12 +82,12 @@ To synchronize horizontal scrolling across multiple Gantt Chart components, hand
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/scroll-synchronize/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/scroll-synchronize/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/scroll-synchronize/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/scroll-synchronize/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/scroll-synchronize" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/scroll-synchronize" %}

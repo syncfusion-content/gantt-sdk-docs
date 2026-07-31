@@ -22,17 +22,17 @@ Enable cell editing by setting [editSettings.allowEditing](https://ej2.syncfusio
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/celledit-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/celledit-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/celledit-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/celledit-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/celledit-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/celledit-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/celledit-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/celledit-cs2" %}
 
 ## Edit tasks via dialog
 
@@ -40,17 +40,17 @@ Enable dialog editing by setting [editSettings.allowEditing](https://ej2.syncfus
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/dialogedit-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/dialogedit-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/dialogedit-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/dialogedit-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/dialogedit-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/dialogedit-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/dialogedit-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/dialogedit-cs2" %}
 
 ## Customize dialog tabs
 
@@ -60,17 +60,17 @@ The following sample demonstrates customization using properties and the [action
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/editingdialog-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/editingdialog-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/editingdialog-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/editingdialog-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/editingdialog-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/editingdialog-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/editingdialog-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/editingdialog-cs1" %}
 
 ### Limit fields in general tab
 
@@ -78,17 +78,17 @@ Restrict fields in the dialog’s General tab using [addDialogFields](https://ej
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/editingdialog-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/editingdialog-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/editingdialog-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/editingdialog-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/editingdialog-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/editingdialog-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/editingdialog-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/editingdialog-cs2" %}
 
 ## Edit task dependencies
 
@@ -108,17 +108,17 @@ Enable dependency editing by mapping the [dependency](https://ej2.syncfusion.com
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/dependencyedit-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/dependencyedit-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/dependencyedit-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/dependencyedit-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/dependencyedit-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/dependencyedit-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/dependencyedit-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/dependencyedit-cs2" %}
 
 ## Edit tasks programmatically
 
@@ -130,17 +130,17 @@ To update an existing task ID with a new unique ID, use the [updateTaskId](https
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/updaterecord-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/updaterecord-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/updaterecord-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/updaterecord-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/updaterecord-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/updaterecord-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/updaterecord-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/updaterecord-cs1" %}
 
 ## Render custom edit component
 
@@ -153,17 +153,17 @@ You can render a custom edit component for a column using the [column.edit](http
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/custom-dynamic-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/custom-dynamic-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/custom-dynamic-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/custom-dynamic-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/custom-dynamic-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/custom-dynamic-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/custom-dynamic-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/custom-dynamic-cs1" %}
 
 ## See also
 

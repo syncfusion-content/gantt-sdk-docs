@@ -35,15 +35,15 @@ UrlAdaptor is a DataManager adaptor that communicates with REST API endpoints fo
 
 Ensure the following software and packages are installed before proceeding:
 
-| Software/Package | Version | Purpose |
-|-----------------|---------|---------|
-| Visual Studio 2026 | 18.2.1 or later | Development IDE with Blazor workload |
-| .NET SDK | net10.0 or compatible | Runtime and build tools |
-| SQL Server | 2021 or later | Database server |
-| Syncfusion.Blazor.Gantt | -v {{site.blazorversion}} | Gantt Chart and UI components |
-| Syncfusion.Blazor.Themes | -v {{site.blazorversion}} | Styling for Gantt Chart components |
-| Microsoft.EntityFrameworkCore | 10.0.2 | Core framework for database operations |
-| Microsoft.EntityFrameworkCore.SqlServer | 10.0.2 | SQL Server provider for Entity Framework Core |
+| Software/Package                        | Version                   | Purpose                                       |
+| --------------------------------------- | ------------------------- | --------------------------------------------- |
+| Visual Studio 2026                      | 18.2.1 or later           | Development IDE with Blazor workload          |
+| .NET SDK                                | net10.0 or compatible     | Runtime and build tools                       |
+| SQL Server                              | 2021 or later             | Database server                               |
+| Syncfusion.Blazor.Gantt                 | -v {{site.blazorversion}} | Gantt Chart and UI components                 |
+| Syncfusion.Blazor.Themes                | -v {{site.blazorversion}} | Styling for Gantt Chart components            |
+| Microsoft.EntityFrameworkCore           | 10.0.2                    | Core framework for database operations        |
+| Microsoft.EntityFrameworkCore.SqlServer | 10.0.2                    | SQL Server provider for Entity Framework Core |
 
 ## Setting up the SQL Server Environment for Entity Framework Core
 
@@ -52,6 +52,7 @@ Ensure the following software and packages are installed before proceeding:
 First, the SQL Server database structure must be created to store task data.
 
 Instructions:
+
 1. Open SQL Server Management Studio (SSMS) or any SQL Server client.
 2. Create a new database named `GanttDB`.
 3. Define a `TaskData` table with the specified schema.
@@ -157,6 +158,7 @@ namespace GanttEFUrlAdaptor.Data
 ```
 
 **Explanation:**
+
 - `[Table("TaskData")]` maps the entity explicitly to the SQL table named `TaskData`.
 - Each property represents a column in the table.
 - `TaskID` is the identifier used as the primary key in the table script created earlier.
@@ -193,6 +195,7 @@ namespace GanttEFUrlAdaptor.Data
 ```
 
 **Explanation:**
+
 - `TaskDbContext` inherits from `DbContext` and exposes `DbSet<TaskDataModel>` to query and save `TaskData` entities.
 - `modelBuilder.Entity<TaskDataModel>().ToTable("TaskData")` ensures Entity Framework core maps the entity to the `TaskData` table.
 
@@ -224,17 +227,17 @@ A connection string contains the information needed to connect the application t
 
 **Connection String Components:**
 
-| Component | Description |
-|-----------|-------------|
-| Data Source | The SQL Server instance (e.g., `SQLEXPRESS`) |
-| Initial Catalog | The database name (`GanttDB`) |
-| Integrated Security | `True` for Windows Authentication |
-| Connect Timeout | Connection timeout in seconds |
-| Encrypt | Enables encryption for the connection |
-| Trust Server Certificate | Whether to trust the server certificate |
-| Application Intent | `ReadWrite` for normal operations |
-| Multi Subnet Failover | Typically `False` unless using multi-subnet clustering |
-| Command Timeout | Command execution timeout in seconds |
+| Component                | Description                                            |
+| ------------------------ | ------------------------------------------------------ |
+| Data Source              | The SQL Server instance (e.g., `SQLEXPRESS`)           |
+| Initial Catalog          | The database name (`GanttDB`)                          |
+| Integrated Security      | `True` for Windows Authentication                      |
+| Connect Timeout          | Connection timeout in seconds                          |
+| Encrypt                  | Enables encryption for the connection                  |
+| Trust Server Certificate | Whether to trust the server certificate                |
+| Application Intent       | `ReadWrite` for normal operations                      |
+| Multi Subnet Failover    | Typically `False` unless using multi-subnet clustering |
+| Command Timeout          | Command execution timeout in seconds                   |
 
 The database connection string has been configured successfully.
 
@@ -362,12 +365,15 @@ Syncfusion is a library that provides pre-built UI components like Gantt Chart, 
 <link href="_content/Syncfusion.Blazor.Themes/fluent.css" rel="stylesheet" />
 
 <!-- Blazor Scripts -->
-<script src="_content/Syncfusion.Blazor.Core/scripts/syncfusion-blazor.min.js" type="text/javascript"></script>
+<script
+  src="_content/Syncfusion.Blazor.Core/scripts/syncfusion-blazor.min.js"
+  type="text/javascript"
+></script>
 ```
 
 For this project, the **fluent** theme is used. A different theme can be selected or customized based on project requirements. Refer to the [Blazor Components Appearance](https://blazor.syncfusion.com/documentation/appearance/themes) documentation to learn more about theming and customization options.
 
-Blazor components are now configured and ready to use. For additional guidance, refer to the Gantt Chart component [getting‑started](https://blazor.syncfusion.com/documentation/gantt-chart/getting-started-with-web-app) documentation.
+Blazor components are now configured and ready to use. For additional guidance, refer to the Gantt Chart component [getting‑started](https://blazor.syncfusion.com/documentation/gantt/getting-started-with-web-app) documentation.
 
 ### Step 2: Update the Blazor Gantt Chart
 
@@ -392,7 +398,7 @@ The `Home.razor` component will display the task data in a Gantt Chart with sear
                    RemoveUrl="/api/Gantt/Delete"
                    BatchUrl="/api/Gantt/BatchUpdate"
                    Adaptor="Adaptors.UrlAdaptor">
-    </SfDataManager>    
+    </SfDataManager>
     <GanttEditSettings AllowAdding="true" AllowEditing="true" AllowTaskbarEditing="true" AllowDeleting="true" />
     <GanttColumns>
         <GanttColumn Field="TaskID" HeaderText="Task ID" Width="90"></GanttColumn>
@@ -402,7 +408,7 @@ The `Home.razor` component will display the task data in a Gantt Chart with sear
         <GanttColumn Field="Duration" HeaderText="Duration" Width="110"></GanttColumn>
         <GanttColumn Field="Predecessor" HeaderText="Predecessor" Width="140"></GanttColumn>
         <GanttColumn Field="Progress" HeaderText="Progress" Width="110"></GanttColumn>
-    </GanttColumns>    
+    </GanttColumns>
 </SfGantt>
 ```
 
@@ -567,7 +573,7 @@ public object Post([FromBody] DataManagerRequest dataManagerRequest)
         }
 
         int totalRecordsCount = dataSource.Count();
-        
+
         if (dataManagerRequest.Skip != 0)
         {
             dataSource = DataOperations.PerformSkip(dataSource, dataManagerRequest.Skip);
@@ -636,7 +642,7 @@ public object Post([FromBody] DataManagerRequest dataManagerRequest)
         }
 
         int totalRecordsCount = dataSource.Count();
-        
+
         if (dataManagerRequest.Skip != 0)
         {
             dataSource = DataOperations.PerformSkip(dataSource, dataManagerRequest.Skip);
@@ -681,7 +687,7 @@ Sorting enables the records to arrange in ascending or descending order based on
 ```cshtml
 <SfGantt TValue="TaskDataModel"
         AllowSorting="true">
-    <SfDataManager Url="/api/Gantt"Adaptor="Adaptors.UrlAdaptor"></SfDataManager>    
+    <SfDataManager Url="/api/Gantt"Adaptor="Adaptors.UrlAdaptor"></SfDataManager>
 </SfGantt>
 ```
 
@@ -695,7 +701,7 @@ public object Post([FromBody] DataManagerRequest dataManagerRequest)
     try
     {
         IEnumerable<TaskDataModel> dataSource = GetTaskData();
-        
+
         // Handling Sorting
         if (dataManagerRequest.Sorted != null && dataManagerRequest.Sorted.Count > 0)
         {
@@ -703,7 +709,7 @@ public object Post([FromBody] DataManagerRequest dataManagerRequest)
         }
 
         int totalRecordsCount = dataSource.Count();
-        
+
         if (dataManagerRequest.Skip != 0)
         {
             dataSource = DataOperations.PerformSkip(dataSource, dataManagerRequest.Skip);
@@ -744,10 +750,10 @@ CRUD operations (Create, Read, Update, Delete) enable the data to manage directl
 1. Update the `<SfGantt>` component in `Home.razor` to include [GanttEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html):
 
 ```cshtml
-<SfGantt TValue="TaskDataModel" 
+<SfGantt TValue="TaskDataModel"
         AllowSorting="true"
         AllowFiltering="true"
-        Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" })" 
+        Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" })"
         Width="100%" Height="600px">
     <SfDataManager Url="/api/Gantt"
                    InsertUrl="/api/Gantt/Insert"
@@ -755,7 +761,7 @@ CRUD operations (Create, Read, Update, Delete) enable the data to manage directl
                    RemoveUrl="/api/Gantt/Delete"
                    BatchUrl="/api/Gantt/BatchUpdate"
                    Adaptor="Adaptors.UrlAdaptor">
-    </SfDataManager>    
+    </SfDataManager>
     <GanttEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" AllowTaskbarEditing="true" ></GanttEditSettings>
     <GanttColumns>
         // Add Columns
@@ -1003,6 +1009,6 @@ The application now provides a complete solution for managing tasks with a moder
 
 ## Alternative approach: custom adaptor
 
-For a client-side data operations approach without REST API endpoints, refer to the [Blazor Gantt Chart with SQL Server using Entity Framework and Custom Adaptor](https://blazor.syncfusion.com/documentation/gantt-chart/connecting-to-database/microsoft-sql-server) documentation. This approach executes search, filter and sort operations directly in the Blazor component, providing a tightly integrated alternative to the REST API pattern.
+For a client-side data operations approach without REST API endpoints, refer to the [Blazor Gantt Chart with SQL Server using Entity Framework and Custom Adaptor](https://blazor.syncfusion.com/documentation/gantt/connecting-to-database/microsoft-sql-server) documentation. This approach executes search, filter and sort operations directly in the Blazor component, providing a tightly integrated alternative to the REST API pattern.
 
 ---

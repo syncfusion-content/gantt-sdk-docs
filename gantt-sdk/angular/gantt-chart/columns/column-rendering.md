@@ -12,27 +12,27 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component supports column rendering to control data presentation. Column definitions act as the data schema and support operations such as sorting and filtering. The [field](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#field) property is required to map data source values to columns and must be defined for features like complex binding and template-based actions.
 
-> * If the `field` is not defined in the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt#datasource), the column will display empty values.
-> * A `field` with a dot operator is treated as [complex binding](../column/column-rendering#complex-data-binding).
-> * To enable CRUD, filtering, or searching, the `field` must be defined for template columns.
+> - If the `field` is not defined in the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt#datasource), the column will display empty values.
+> - A `field` with a dot operator is treated as [complex binding](../column/column-rendering#complex-data-binding).
+> - To enable CRUD, filtering, or searching, the `field` must be defined for template columns.
 
-## Define columns manually 
+## Define columns manually
 
 To manually define columns in the Gantt Chart component, use `e-columns` and set properties like [field](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#field), [headerText](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#headertext) and [width](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#width). This enables customization of column behavior and appearance based on specific requirements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnrender-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnrender-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnrender-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnrender-cs1/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columntype-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/columnrender-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/columnrender-cs1" %}
 
 ## Auto generated columns
 
@@ -40,19 +40,19 @@ The Gantt Chart component automatically generates columns when the [columns](htt
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/auto-generated-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/auto-generated-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/auto-generated-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/auto-generated-cs1/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/auto-generated-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/auto-generated-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/auto-generated-cs1" %}
 
-## Dynamic column generation 
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/auto-generated-cs1" %}
+
+## Dynamic column generation
 
 You can dynamically generate columns in the Gantt Chart component at runtime based on the provided data. This is useful when the column structure needs to adapt to user requirements or dynamic data sources.
 
@@ -62,84 +62,84 @@ To dynamically generate columns in the Gantt Chart component, define an array of
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnrender-cs2/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnrender-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnrender-cs2/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnrender-cs2/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columntype-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/columnrender-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/columnrender-cs2" %}
 
 ### Using valueAccessor property
 
 The [valueAccessor](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#valueaccessor) property is used to format column data in the Gantt Chart component. It accepts a function that returns a custom display value using the following two arguments:
 
-- `field`: The column's data field.  
+- `field`: The column's data field.
 - `data`: The data record for the row.
 
 In the following example, `percentageFormatter` returns the progress value with a `%` sign, while `concatenateFields` returns a combined string of **TaskName** and **TaskID**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnrender-cs6/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnrender-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnrender-cs6/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnrender-cs6/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columntype-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/columnrender-cs6" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/columnrender-cs6" %}
 
 > The `valueAccessor` function may impact performance when used with large datasets or complex logic. To improve rendering speed, enable the virtualization feature so that only visible rows are processed and displayed.
 
 ### Display array type columns
 
-The Gantt Chart component supports binding an array of objects to a column using the  [valueAccessor](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#valueaccessor) property. It accepts a function that returns a custom display value, which is then displayed in the column.
+The Gantt Chart component supports binding an array of objects to a column using the [valueAccessor](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#valueaccessor) property. It accepts a function that returns a custom display value, which is then displayed in the column.
 
 In the following example, the **Name** column shows the combined value of **FirstName** and **LastName** by using a custom function defined in `valueAccessor`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnrender-cs3/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnrender-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnrender-cs3/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnrender-cs3/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columntype-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/columnrender-cs3" %}
 
->Since customized values are displayed in the **Name** column, data operations, such as sorting and filtering, cannot be performed for this column.
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/columnrender-cs3" %}
+
+> Since customized values are displayed in the **Name** column, data operations, such as sorting and filtering, cannot be performed for this column.
 
 ### Expression column
 
 You can achieve an expression column in the Gantt Chart component using the [valueAccessor](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#valueaccessor) property. It accepts a function that returns a calculated value, which is displayed in the column based on other column values.
 
-In the following example, the chart includes columns like **TaskID**, **TaskName**, **Duration**, **Progress**, **units**, and **unit price**. A  **Total Price** column is added to display the result of multiplying **units** and **unit price** for each row.
+In the following example, the chart includes columns like **TaskID**, **TaskName**, **Duration**, **Progress**, **units**, and **unit price**. A **Total Price** column is added to display the result of multiplying **units** and **unit price** for each row.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnrender-cs4/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnrender-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnrender-cs4/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnrender-cs4/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columntype-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/columnrender-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/columnrender-cs4" %}
 
 > Since custom values are displayed in the **Total Price** column, operations like sorting and filtering are not supported for this column.
 
@@ -149,16 +149,16 @@ You can display serial numbers for each row in the Gantt Chart component using t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnrender-cs5/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnrender-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columnrender-cs5/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columnrender-cs5/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/columntype-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/columns/columntype-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/columnrender-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/columns/columnrender-cs5" %}
 
 > Since custom values are displayed in the **S.No** column, data operations such as sorting and filtering are not supported for this column.

@@ -18,14 +18,14 @@ The file name of the exported PDF document can be specified using the [fileName]
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/pdf-export-cs1" %}
 
 ## How to change page orientation
 
@@ -33,58 +33,58 @@ The page orientation of the exported PDF document can be customized using the [p
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs2/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-cs2/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs2/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-cs2/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/pdf-export-cs2" %}
 
 ## How to change page size
 
-Page size can be customized for the exported document using the  [pageSize](https://helpej2.syncfusion.com/vue/documentation/api/gantt/pdfExportProperties#pagesize) property in [pdfExportProperties](https://helpej2.syncfusion.com/vue/documentation/api/gantt/pdfExportProperties).
- The supported page sizes are:
+Page size can be customized for the exported document using the [pageSize](https://helpej2.syncfusion.com/vue/documentation/api/gantt/pdfExportProperties#pagesize) property in [pdfExportProperties](https://helpej2.syncfusion.com/vue/documentation/api/gantt/pdfExportProperties).
+The supported page sizes are:
 
-* Letter
-* Note
-* Legal
-* A0
-* A1
-* A2
-* A3
-* A5
-* A6
-* A7
-* A8
-* A9
-* B0
-* B1
-* B2
-* B3
-* B4
-* B5
-* Archa
-* Archb
-* Archc
-* Archd
-* Arche
-* Flsa
-* HalfLetter
-* Letter11x17
-* Ledger
+- Letter
+- Note
+- Legal
+- A0
+- A1
+- A2
+- A3
+- A5
+- A6
+- A7
+- A8
+- A9
+- B0
+- B1
+- B2
+- B3
+- B4
+- B5
+- Archa
+- Archb
+- Archc
+- Archd
+- Arche
+- Flsa
+- HalfLetter
+- Letter11x17
+- Ledger
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs3/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-cs3/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs3/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-cs3/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/pdf-export-cs3" %}
 
 ## Export current view data
 
@@ -92,14 +92,14 @@ PDF export provides an option to export the current view data into PDF. To expor
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs4/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-cs4/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs4/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-cs4/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/pdf-export-cs4" %}
 
 ## Export hidden columns
 
@@ -107,14 +107,14 @@ PDF export provides an option to export hidden columns of Gantt by defining the 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs6/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-cs6/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs6/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-cs6/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs6" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/pdf-export-cs6" %}
 
 ## Export predecessor lines
 
@@ -122,14 +122,14 @@ The visibility of predecessor lines in the exported PDF document can be controll
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs7/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-cs7/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs7/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-cs7/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs7" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/pdf-export-cs7" %}
 
 ## Show or hide columns on exported PDF
 
@@ -141,14 +141,14 @@ In the following example, the `Duration` column is initially hidden in the Gantt
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs8/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-cs8/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs8/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-cs8/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs8" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/pdf-export-cs8" %}
 
 ## Conditional cell formatting
 
@@ -158,14 +158,14 @@ In the following sample, the background color is set for `Progress` column in th
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs9/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-cs9/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs9/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-cs9/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs9" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/pdf-export-cs9" %}
 
 ## Timeline cell formatting
 
@@ -175,14 +175,14 @@ In the following sample, the header background color is set for timeline cells i
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs10/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-cs10/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs10/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-cs10/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs10" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/pdf-export-cs10" %}
 
 ## Taskbar formatting
 
@@ -192,29 +192,29 @@ In the following sample, the taskbar background color is customized in the chart
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs11/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-cs11/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs11/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-cs11/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs11" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/pdf-export-cs11" %}
 
 ## Customize Gantt Chart Appearance in PDF Export
 
-PDF export allows to customize the Gantt chart's appearance in the exported PDF documents. To customize the appearance of Gantt charts in exported PDF documents, define [ganttStyle](https://ej2.syncfusion.com/vue/documentation/api/gantt/pdfExportProperties#ganttstyle) within [pdfExportProperties](https://ej2.syncfusion.com/vue/documentation/api/gantt/pdfExportProperties). By using `ganttStyle`, can customize `columnHeader`, `fontFamily`, `cell`, `taskbar`, `label`, `timeline`, `chartGridLineColor`, `connectorLineColor`, `criticalConnectorLineColor`, `footer`, `font`, `eventMarker` and `holiday` regardless of the theme. 
+PDF export allows to customize the Gantt chart's appearance in the exported PDF documents. To customize the appearance of Gantt charts in exported PDF documents, define [ganttStyle](https://ej2.syncfusion.com/vue/documentation/api/gantt/pdfExportProperties#ganttstyle) within [pdfExportProperties](https://ej2.syncfusion.com/vue/documentation/api/gantt/pdfExportProperties). By using `ganttStyle`, can customize `columnHeader`, `fontFamily`, `cell`, `taskbar`, `label`, `timeline`, `chartGridLineColor`, `connectorLineColor`, `criticalConnectorLineColor`, `footer`, `font`, `eventMarker` and `holiday` regardless of the theme.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs12/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-cs12/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs12/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-cs12/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-cs12" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/pdf-export-cs12" %}
 
 ## Customize Split Taskbar Segment Colors in PDF
 
@@ -224,14 +224,14 @@ The [taskSegmentStyles](https://ej2.syncfusion.com/vue/documentation/api/gantt/i
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-customize-segment-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-customize-segment-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-customize-segment-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-customize-segment-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-customize-segment-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/pdf-export-customize-segment-cs1" %}
 
 ## Exporting with templates
 
@@ -241,18 +241,18 @@ The PDF export functionality allows to export Grid columns that include images, 
 
 In the following sample, the hyperlinks and images are exported to PDF using [hyperlink](https://helpej2.syncfusion.com/vue/documentation/api/gantt/pdfQueryCellInfoEventArgs#hyperlink) and [image](https://helpej2.syncfusion.com/vue/documentation/api/gantt/pdfQueryCellInfoEventArgs#image) properties in the [pdfQueryCellInfo](https://helpej2.syncfusion.com/vue/documentation/api/gantt/pdfQueryCellInfoEventArgs) event.
 
->Note: PDF Export supports base64 string to export the images.
+> Note: PDF Export supports base64 string to export the images.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-column-template-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-column-template-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-column-template-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-column-template-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-column-template-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/pdf-export-column-template-cs1" %}
 
 ### Exporting with taskbar template
 
@@ -260,18 +260,18 @@ The PDF export functionality allows to export taskbar templates that include `im
 
 In the following sample, taskbar templates with images and text are exported to PDF using [taskbarTemplate](https://ej2.syncfusion.com/vue/documentation/api/gantt/pdfQueryTaskbarInfoEventArgs#taskbarTemplate) properties in the [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/vue/documentation/api/gantt#pdfquerytaskbarinfo) event.
 
->Note: PDF Export supports base64 string to export the images.
+> Note: PDF Export supports base64 string to export the images.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-taskbar-template-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-taskbar-template-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-taskbar-template-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-taskbar-template-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-taskbar-template-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/pdf-export-taskbar-template-cs1" %}
 
 ### Exporting with task label template
 
@@ -279,18 +279,18 @@ The PDF export functionality allows to export task label template that include `
 
 In the following sample, task label template with images and text are exported to PDF using [labelSettings](https://ej2.syncfusion.com/vue/documentation/api/gantt/pdfQueryTaskbarInfoEventArgs#labelSettings) properties in the [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/vue/documentation/api/gantt#pdfquerytaskbarinfo) event.
 
->Note: PDF Export supports base64 string to export the images.
+> Note: PDF Export supports base64 string to export the images.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-tasklabel-template-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-tasklabel-template-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-tasklabel-template-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-tasklabel-template-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-tasklabel-template-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/pdf-export-tasklabel-template-cs1" %}
 
 ### Exporting with header template
 
@@ -298,15 +298,15 @@ The PDF export functionality allows to export header template that include `imag
 
 In the following sample, header template with images and text are exported to PDF using [headerTemplate](https://ej2.syncfusion.com/vue/documentation/api/gantt/pdfColumnHeaderQueryCellInfoEventArgs#headerTemplate) properties in the [pdfColumnHeaderQueryCellInfo](https://ej2.syncfusion.com/vue/documentation/api/gantt/pdfColumnHeaderQueryCellInfoEventArgs) event.
 
->Note: PDF Export supports base64 string to export the images.
+> Note: PDF Export supports base64 string to export the images.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-header-template-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-header-template-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-header-template-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/pdf-export-header-template-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/pdf-export-header-template-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/pdf-export-header-template-cs1" %}

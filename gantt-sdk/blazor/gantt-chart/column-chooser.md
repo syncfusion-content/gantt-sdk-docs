@@ -13,7 +13,7 @@ The column chooser feature in the Syncfusion<sup style="font-size:70%">&reg;</su
 
 To enable this feature, set the [ShowColumnChooser](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ShowColumnChooser) property to **true**.
 
-You can add a custom column chooser option to the toolbar using the [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Toolbar) property. To open the column chooser at a specific position, use the [OpenColumnChooser](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_OpenColumnChooser_System_Nullable_System_Double__System_Nullable_System_Double_) method with optional X and Y coordinates within the [OnToolbarClick](https://blazor.syncfusion.com/documentation/gantt-chart/events#ontoolbarclick) event.
+You can add a custom column chooser option to the toolbar using the [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Toolbar) property. To open the column chooser at a specific position, use the [OpenColumnChooser](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_OpenColumnChooser_System_Nullable_System_Double__System_Nullable_System_Double_) method with optional X and Y coordinates within the [OnToolbarClick](https://blazor.syncfusion.com/documentation/gantt/events#ontoolbarclick) event.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -21,17 +21,17 @@ You can add a custom column chooser option to the toolbar using the [Toolbar](ht
 @using Syncfusion.Blazor.Gantt
 
 <SfGantt @ref="Gantt" DataSource="@TaskCollection" Toolbar="@ToolbarItems" ShowColumnChooser="true" Height="450px" Width="700px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttEvents OnToolbarClick="ToolbarClickAsync" TValue="TaskData"></GanttEvents>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
+</GanttTaskFields>
+<GanttEvents OnToolbarClick="ToolbarClickAsync" TValue="TaskData"></GanttEvents>
 </SfGantt>
 
 @code {
-    public SfGantt<TaskData>? Gantt;
-    public List<TaskData>? TaskCollection { get; set; }
-    public List<Object> ToolbarItems = new List<Object>() {
-        new Syncfusion.Blazor.Navigations.ToolbarItem() {
-          
+public SfGantt<TaskData>? Gantt;
+public List<TaskData>? TaskCollection { get; set; }
+public List<Object> ToolbarItems = new List<Object>() {
+new Syncfusion.Blazor.Navigations.ToolbarItem() {
+
             Text = "Column Chooser", TooltipText = "Column Chooser", Id = "columnchooser"
         }
     };
@@ -44,7 +44,7 @@ You can add a custom column chooser option to the toolbar using the [Toolbar](ht
             {
                 await Gantt.OpenColumnChooser(100, 40);
             }
-            
+
         }
     }
 
@@ -79,6 +79,7 @@ You can add a custom column chooser option to the toolbar using the [Toolbar](ht
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -158,6 +159,7 @@ The following sample renders a [ListView](https://blazor.syncfusion.com/document
 
         </SfGantt>
     </div>
+
 </div>
 
 <style>
@@ -187,9 +189,9 @@ The following sample renders a [ListView](https://blazor.syncfusion.com/document
 </style>
 
 @code {
-    public List<TaskData>? Orders { get; set; }
-    public SfGantt<TaskData>? Gantt;
-    public CustomColumnChooser ins;
+public List<TaskData>? Orders { get; set; }
+public SfGantt<TaskData>? Gantt;
+public CustomColumnChooser ins;
 
     public async void AfterCompletion(string[] hideColumns, string[] showColumns)
     {
@@ -219,7 +221,7 @@ The following sample renders a [ListView](https://blazor.syncfusion.com/document
         {
             await Gantt.OpenColumnChooser(xOffset, e.ClientY - 100);
         }
-        
+
     }
 
 
@@ -259,6 +261,7 @@ The following sample renders a [ListView](https://blazor.syncfusion.com/document
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -273,13 +276,13 @@ The following sample renders a [ListView](https://blazor.syncfusion.com/document
 <SfTextBox Placeholder="Search Columns" ShowClearButton="true" Input="@OnInput" CssClass="e-search-input"></SfTextBox>
 
 <SfListView @ref="ListView" ID="ListViewCtl" Height="300px" ShowCheckBox="true" DataSource="@DataSourceCopy" CssClass="e-column-chooser-list">
-    <ListViewFieldSettings TValue="DataModel" Id="Id" Text="Text" GroupBy="Type"></ListViewFieldSettings>
-    <ListViewEvents Clicked="OnClicked" TValue="DataModel"></ListViewEvents>
+<ListViewFieldSettings TValue="DataModel" Id="Id" Text="Text" GroupBy="Type"></ListViewFieldSettings>
+<ListViewEvents Clicked="OnClicked" TValue="DataModel"></ListViewEvents>
 </SfListView>
 
 @code {
-    public List<DataModel>? DataSourceCopy { get; set; } = new();
-    public SfListView<DataModel>? ListView { get; set; }
+public List<DataModel>? DataSourceCopy { get; set; } = new();
+public SfListView<DataModel>? ListView { get; set; }
 
     [Parameter]
     public SfGantt<TaskData>? CustomGantt { get; set; }
@@ -361,7 +364,7 @@ The following sample renders a [ListView](https://blazor.syncfusion.com/document
             if (checkedFields.Any() && checkedFields != null)
             {
                 await CustomGantt.ShowColumnsAsync(checkedFields.ToArray(), "Field");
-                
+
             }
             if (fieldsToHide != null && fieldsToHide.ToArray() != null && checkedFields.ToArray()!=null)
         {
@@ -387,6 +390,7 @@ The following sample renders a [ListView](https://blazor.syncfusion.com/document
         public string? Text { get; set; }
         public string? Type { get; set; }
     }
+
 }
 
 {% endhighlight %}
@@ -395,24 +399,24 @@ The following sample renders a [ListView](https://blazor.syncfusion.com/document
 
 public class DataModel
 {
-    public string Id { get; set; }
-    public string Text { get; set; }
-    public string Type { get; set; }
+public string Id { get; set; }
+public string Text { get; set; }
+public string Type { get; set; }
 }
 
 public class TaskData
 {
-    public int? TaskID { get; set; }
-    public string? TaskName { get; set; }
-    public DateTime? StartDate { get; set; }
-    public DateTime? EndDate { get; set; }
-    public string? Duration { get; set; }
-    public int? Progress { get; set; }
-    public string? Predecessor { get; set; }
-    public int? ParentID { get; set; }
-    public bool? IsExpanded { get; set; }
-    public string? Done { get; set; }
-    public bool? IsMilestone { get; set; }
+public int? TaskID { get; set; }
+public string? TaskName { get; set; }
+public DateTime? StartDate { get; set; }
+public DateTime? EndDate { get; set; }
+public string? Duration { get; set; }
+public int? Progress { get; set; }
+public string? Predecessor { get; set; }
+public int? ParentID { get; set; }
+public bool? IsExpanded { get; set; }
+public string? Done { get; set; }
+public bool? IsMilestone { get; set; }
 }
 
 {% endhighlight %}
@@ -422,6 +426,6 @@ public class TaskData
 
 ## See also
 
-- [Accessibility in Blazor Gantt Chart](https://blazor.syncfusion.com/documentation/gantt-chart/accessibility)
+- [Accessibility in Blazor Gantt Chart](https://blazor.syncfusion.com/documentation/gantt/accessibility)
 - [Blazor Gantt Chart Feature Tour](https://www.syncfusion.com/blazor-components/blazor-gantt-chart)
-- [Blazor Gantt Chart Example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=bootstrap5)
+- [Blazor Gantt Chart Example](https://blazor.syncfusion.com/demos/gantt/default-functionalities?theme=bootstrap5)

@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Responsive Columns in gantt control
 
 You can toggle the column visibility based on media queries, which are defined in the [`HideAtMedia`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_HideAtMedia). The [`HideAtMedia`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_HideAtMedia) accepts valid [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html).
@@ -17,10 +16,10 @@ You can toggle the column visibility based on media queries, which are defined i
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/hideAtMedia/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/hideAtMedia/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HideAtMedia.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/hideAtMedia/hideAtMedia.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/hideAtMedia/hideAtMedia.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -28,10 +27,10 @@ You can toggle the column visibility based on media queries, which are defined i
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/hideAtMedia/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/hideAtMedia/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HideAtMedia.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/hideAtMedia/hideAtMedia.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/columns/hideAtMedia/hideAtMedia.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

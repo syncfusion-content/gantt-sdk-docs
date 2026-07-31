@@ -31,98 +31,98 @@ Resource file (**.resx**) is used to translate the static text of the Gantt.
 
 The Resource file is an XML file which contains the strings(key and value pairs) that you want to translate into different languages. You can also refer [Localization](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-7.0) link to know more about how to configure and use localization in the ASP.NET Core application framework.
 
-* Add **.resx** file to [Resources](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-7.0) folder and enter the key value (Locale Keywords) in the **Name** column and the translated string in the **Value** column as follows.
+- Add **.resx** file to [Resources](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-7.0) folder and enter the key value (Locale Keywords) in the **Name** column and the translated string in the **Value** column as follows.
 
-Name |Value (in Deutsch culture)
------|-----
-Gantt_EmptyRecord | Keine Datensätze zum Anzeigen
-Gantt_Id | Id
-Gantt_Name | Name
-Gantt_StartDate | Anfangsdatum
-Gantt_EndDate | Enddatum
-Gantt_Duration | Dauer
-Gantt_Progress | Fortschritt
-Gantt_Dependency | Abhängigkeit
-Gantt_Notes | Anmerkungen
-Gantt_BaselineStartDate | Basisstartdatum
-Gantt_BaselineEndDate | Basisenddatum
-Gantt_Type | Art
-Gantt_Offset | Versatz
-Gantt_ResourceName | Ressourcen
-Gantt_ResourceID | Ressourcen-ID
-Gantt_Day | Tag
-Gantt_Hour | Stunde
-Gantt_Minute | Minute
-Gantt_Days | Tage
-Gantt_Hours | Std
-Gantt_Minutes | Minuten
-Gantt_GeneralTab | Allgemeines
-Gantt_CustomTab | Benutzerdefinierte Spalten
-Gantt_WriteNotes | Notizen schreiben
-Gantt_AddDialogTitle | Neue Aufgabe
-Gantt_EditDialogTitle | Aufgabeninformationen
-Gantt_SaveButton | speichern
-Gantt_Add | Hinzufügen
-Gantt_Edit | Bearbeiten
-Gantt_Update | Aktualisieren
-Gantt_Delete | Löschen
-Gantt_Cancel | Stornieren
-Gantt_Search | Suchen
-Gantt_Task | Aufgabe
-Gantt_Tasks | Aufgaben
-Gantt_ZoomIn | Hineinzoomen
-Gantt_ZoomOut | Rauszoomen
-Gantt_ZoomToFit | Zoomen Sie
-Gantt_ExcelExport | Excel-Export
-Gantt_CsvExport | CSV-Export
-Gantt_ExpandAll | Alle erweitern
-Gantt_CollapseAll | Alles einklappen
-Gantt_NextTimeSpan | Nächste Zeitspanne
-Gantt_PrevTimeSpan | Vorheriger Zeitraum
-Gantt_OkText | Ok
-Gantt_ConfirmDelete | Möchten Sie den Datensatz wirklich löschen?
-Gantt_From | Aus
-Gantt_To | Zu
-Gantt_TaskLink | Aufgabenlink
-Gantt_Lag | Verzögerung
-Gantt_Start | Start
-Gantt_Finish | Beenden
-Gantt_EnterValue | Geben Sie den Wert ein
-Gantt_TaskBeforePredecessor_FS | Sie haben '{0}' verschoben, um vor dem Ende von '{1}' zu beginnen, und die beiden Aufgaben sind miteinander verknüpft. Infolgedessen können die Links nicht beachtet werden. Wählen Sie unten eine Aktion aus, die ausgeführt werden soll
-Gantt_TaskAfterPredecessor_FS | Sie haben '{0}' von '{1}' entfernt und die beiden Aufgaben sind miteinander verknüpft. Infolgedessen können die Links nicht beachtet werden. Wählen Sie unten eine Aktion aus, die ausgeführt werden soll
-Gantt_TaskBeforePredecessor_SS | Sie haben '{0}' verschoben, um vor dem Start von '{1}' zu beginnen, und die beiden Aufgaben sind miteinander verknüpft. Infolgedessen können die Links nicht beachtet werden. Wählen Sie unten eine Aktion aus, die ausgeführt werden soll
-Gantt_TaskAfterPredecessor_SS | Sie haben '{0}' verschoben, um nach dem Start von '{1}' zu beginnen, und die beiden Aufgaben sind miteinander verbunden. Infolgedessen können die Links nicht beachtet werden. Wählen Sie unten eine Aktion aus, die ausgeführt werden soll
-Gantt_TaskBeforePredecessor_FF | Sie haben '{0}' verschoben, um den Vorgang zu beenden, bevor '{1}' abgeschlossen ist, und die beiden Aufgaben sind miteinander verknüpft. Infolgedessen können die Links nicht beachtet werden. Wählen Sie unten eine Aktion aus, die ausgeführt werden soll
-Gantt_TaskBeforePredecessor_SF | Sie haben '{0}' von '{1}' zum Start verschoben und die beiden Aufgaben sind miteinander verbunden. Infolgedessen können die Links nicht beachtet werden. Wählen Sie unten eine Aktion aus, die ausgeführt werden soll
-Gantt_TaskAfterPredecessor_SF | Sie haben '{0}' nach dem Start von '{1}' verschoben und die beiden Aufgaben sind miteinander verbunden. Infolgedessen können die Links nicht beachtet werden. Wählen Sie unten eine Aktion aus, die ausgeführt werden soll
-Gantt_TaskInformation | Aufgabeninformationen
-Gantt_DeleteTask | Aufgabe löschen
-Gantt_DeleteDependency | Abhängigkeit löschen
-Gantt_Convert | Konvertieren
-Gantt_Save | Speichern
-Gantt_Above | Darüber
-Gantt_Below | Darunter
-Gantt_Child | Kind
-Gantt_Milestone | Meilenstein
-Gantt_ToTask | Zur Aufgabe
-Gantt_ToMilestone | Zum Meilenstein
-Gantt_EventMarkers | Ereignismarkierungen
-Gantt_LeftTaskLabel | Linke Aufgabenbezeichnung
-Gantt_RightTaskLabel | Rechte Aufgabenbezeichnung
-Gantt_TimelineCell | Zeitleistenzelle
-Gantt_ConfirmPredecessorDelete | Möchten Sie den Abhängigkeitslink wirklich entfernen?
-Gantt_Indent | Einrücken
-Gantt_Outdent | Ausrücken
-Gantt_SS | SS
-Gantt_SF | SB
-Gantt_FS | BS
-Gantt_FF | BB
+| Name                           | Value (in Deutsch culture)                                                                                                                                                                                                                                   |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Gantt_EmptyRecord              | Keine Datensätze zum Anzeigen                                                                                                                                                                                                                                |
+| Gantt_Id                       | Id                                                                                                                                                                                                                                                           |
+| Gantt_Name                     | Name                                                                                                                                                                                                                                                         |
+| Gantt_StartDate                | Anfangsdatum                                                                                                                                                                                                                                                 |
+| Gantt_EndDate                  | Enddatum                                                                                                                                                                                                                                                     |
+| Gantt_Duration                 | Dauer                                                                                                                                                                                                                                                        |
+| Gantt_Progress                 | Fortschritt                                                                                                                                                                                                                                                  |
+| Gantt_Dependency               | Abhängigkeit                                                                                                                                                                                                                                                 |
+| Gantt_Notes                    | Anmerkungen                                                                                                                                                                                                                                                  |
+| Gantt_BaselineStartDate        | Basisstartdatum                                                                                                                                                                                                                                              |
+| Gantt_BaselineEndDate          | Basisenddatum                                                                                                                                                                                                                                                |
+| Gantt_Type                     | Art                                                                                                                                                                                                                                                          |
+| Gantt_Offset                   | Versatz                                                                                                                                                                                                                                                      |
+| Gantt_ResourceName             | Ressourcen                                                                                                                                                                                                                                                   |
+| Gantt_ResourceID               | Ressourcen-ID                                                                                                                                                                                                                                                |
+| Gantt_Day                      | Tag                                                                                                                                                                                                                                                          |
+| Gantt_Hour                     | Stunde                                                                                                                                                                                                                                                       |
+| Gantt_Minute                   | Minute                                                                                                                                                                                                                                                       |
+| Gantt_Days                     | Tage                                                                                                                                                                                                                                                         |
+| Gantt_Hours                    | Std                                                                                                                                                                                                                                                          |
+| Gantt_Minutes                  | Minuten                                                                                                                                                                                                                                                      |
+| Gantt_GeneralTab               | Allgemeines                                                                                                                                                                                                                                                  |
+| Gantt_CustomTab                | Benutzerdefinierte Spalten                                                                                                                                                                                                                                   |
+| Gantt_WriteNotes               | Notizen schreiben                                                                                                                                                                                                                                            |
+| Gantt_AddDialogTitle           | Neue Aufgabe                                                                                                                                                                                                                                                 |
+| Gantt_EditDialogTitle          | Aufgabeninformationen                                                                                                                                                                                                                                        |
+| Gantt_SaveButton               | speichern                                                                                                                                                                                                                                                    |
+| Gantt_Add                      | Hinzufügen                                                                                                                                                                                                                                                   |
+| Gantt_Edit                     | Bearbeiten                                                                                                                                                                                                                                                   |
+| Gantt_Update                   | Aktualisieren                                                                                                                                                                                                                                                |
+| Gantt_Delete                   | Löschen                                                                                                                                                                                                                                                      |
+| Gantt_Cancel                   | Stornieren                                                                                                                                                                                                                                                   |
+| Gantt_Search                   | Suchen                                                                                                                                                                                                                                                       |
+| Gantt_Task                     | Aufgabe                                                                                                                                                                                                                                                      |
+| Gantt_Tasks                    | Aufgaben                                                                                                                                                                                                                                                     |
+| Gantt_ZoomIn                   | Hineinzoomen                                                                                                                                                                                                                                                 |
+| Gantt_ZoomOut                  | Rauszoomen                                                                                                                                                                                                                                                   |
+| Gantt_ZoomToFit                | Zoomen Sie                                                                                                                                                                                                                                                   |
+| Gantt_ExcelExport              | Excel-Export                                                                                                                                                                                                                                                 |
+| Gantt_CsvExport                | CSV-Export                                                                                                                                                                                                                                                   |
+| Gantt_ExpandAll                | Alle erweitern                                                                                                                                                                                                                                               |
+| Gantt_CollapseAll              | Alles einklappen                                                                                                                                                                                                                                             |
+| Gantt_NextTimeSpan             | Nächste Zeitspanne                                                                                                                                                                                                                                           |
+| Gantt_PrevTimeSpan             | Vorheriger Zeitraum                                                                                                                                                                                                                                          |
+| Gantt_OkText                   | Ok                                                                                                                                                                                                                                                           |
+| Gantt_ConfirmDelete            | Möchten Sie den Datensatz wirklich löschen?                                                                                                                                                                                                                  |
+| Gantt_From                     | Aus                                                                                                                                                                                                                                                          |
+| Gantt_To                       | Zu                                                                                                                                                                                                                                                           |
+| Gantt_TaskLink                 | Aufgabenlink                                                                                                                                                                                                                                                 |
+| Gantt_Lag                      | Verzögerung                                                                                                                                                                                                                                                  |
+| Gantt_Start                    | Start                                                                                                                                                                                                                                                        |
+| Gantt_Finish                   | Beenden                                                                                                                                                                                                                                                      |
+| Gantt_EnterValue               | Geben Sie den Wert ein                                                                                                                                                                                                                                       |
+| Gantt_TaskBeforePredecessor_FS | Sie haben '{0}' verschoben, um vor dem Ende von '{1}' zu beginnen, und die beiden Aufgaben sind miteinander verknüpft. Infolgedessen können die Links nicht beachtet werden. Wählen Sie unten eine Aktion aus, die ausgeführt werden soll                    |
+| Gantt_TaskAfterPredecessor_FS  | Sie haben '{0}' von '{1}' entfernt und die beiden Aufgaben sind miteinander verknüpft. Infolgedessen können die Links nicht beachtet werden. Wählen Sie unten eine Aktion aus, die ausgeführt werden soll                                                    |
+| Gantt_TaskBeforePredecessor_SS | Sie haben '{0}' verschoben, um vor dem Start von '{1}' zu beginnen, und die beiden Aufgaben sind miteinander verknüpft. Infolgedessen können die Links nicht beachtet werden. Wählen Sie unten eine Aktion aus, die ausgeführt werden soll                   |
+| Gantt_TaskAfterPredecessor_SS  | Sie haben '{0}' verschoben, um nach dem Start von '{1}' zu beginnen, und die beiden Aufgaben sind miteinander verbunden. Infolgedessen können die Links nicht beachtet werden. Wählen Sie unten eine Aktion aus, die ausgeführt werden soll                  |
+| Gantt_TaskBeforePredecessor_FF | Sie haben '{0}' verschoben, um den Vorgang zu beenden, bevor '{1}' abgeschlossen ist, und die beiden Aufgaben sind miteinander verknüpft. Infolgedessen können die Links nicht beachtet werden. Wählen Sie unten eine Aktion aus, die ausgeführt werden soll |
+| Gantt_TaskBeforePredecessor_SF | Sie haben '{0}' von '{1}' zum Start verschoben und die beiden Aufgaben sind miteinander verbunden. Infolgedessen können die Links nicht beachtet werden. Wählen Sie unten eine Aktion aus, die ausgeführt werden soll                                        |
+| Gantt_TaskAfterPredecessor_SF  | Sie haben '{0}' nach dem Start von '{1}' verschoben und die beiden Aufgaben sind miteinander verbunden. Infolgedessen können die Links nicht beachtet werden. Wählen Sie unten eine Aktion aus, die ausgeführt werden soll                                   |
+| Gantt_TaskInformation          | Aufgabeninformationen                                                                                                                                                                                                                                        |
+| Gantt_DeleteTask               | Aufgabe löschen                                                                                                                                                                                                                                              |
+| Gantt_DeleteDependency         | Abhängigkeit löschen                                                                                                                                                                                                                                         |
+| Gantt_Convert                  | Konvertieren                                                                                                                                                                                                                                                 |
+| Gantt_Save                     | Speichern                                                                                                                                                                                                                                                    |
+| Gantt_Above                    | Darüber                                                                                                                                                                                                                                                      |
+| Gantt_Below                    | Darunter                                                                                                                                                                                                                                                     |
+| Gantt_Child                    | Kind                                                                                                                                                                                                                                                         |
+| Gantt_Milestone                | Meilenstein                                                                                                                                                                                                                                                  |
+| Gantt_ToTask                   | Zur Aufgabe                                                                                                                                                                                                                                                  |
+| Gantt_ToMilestone              | Zum Meilenstein                                                                                                                                                                                                                                              |
+| Gantt_EventMarkers             | Ereignismarkierungen                                                                                                                                                                                                                                         |
+| Gantt_LeftTaskLabel            | Linke Aufgabenbezeichnung                                                                                                                                                                                                                                    |
+| Gantt_RightTaskLabel           | Rechte Aufgabenbezeichnung                                                                                                                                                                                                                                   |
+| Gantt_TimelineCell             | Zeitleistenzelle                                                                                                                                                                                                                                             |
+| Gantt_ConfirmPredecessorDelete | Möchten Sie den Abhängigkeitslink wirklich entfernen?                                                                                                                                                                                                        |
+| Gantt_Indent                   | Einrücken                                                                                                                                                                                                                                                    |
+| Gantt_Outdent                  | Ausrücken                                                                                                                                                                                                                                                    |
+| Gantt_SS                       | SS                                                                                                                                                                                                                                                           |
+| Gantt_SF                       | SB                                                                                                                                                                                                                                                           |
+| Gantt_FS                       | BS                                                                                                                                                                                                                                                           |
+| Gantt_FF                       | BB                                                                                                                                                                                                                                                           |
 
 ### Blazor server-side
 
 The following examples demonstrate how to enable **Localization** for Gantt in server-side Blazor samples.
 
-* Open the **Program.cs** file and add the below configuration as follows.
+- Open the **Program.cs** file and add the below configuration as follows.
 
 ```csharp
 using Syncfusion.Blazor;
@@ -152,8 +152,7 @@ builder.Services.AddSingleton(typeof(ISyncfusionStringLocalizer), typeof(SampleL
 
 N> Add [UseRequestLocalization()](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-7.0#localization-middleware) middle-ware in Configure method in **Program.cs** file to get browser Culture Information.
 
-
-* Then, write a **class** by inheriting **ISyncfusionStringLocalizer** interface and override the Manager property to get the resource file details from the application end.
+- Then, write a **class** by inheriting **ISyncfusionStringLocalizer** interface and override the Manager property to get the resource file details from the application end.
 
 ```csharp
 using Syncfusion.Blazor;
@@ -181,7 +180,7 @@ namespace BlazorServer
 
 N> BlazorServer denotes the ApplicationNameSpace of your project.
 
-* Finally, specify the culture for Gantt using `Locale` property.
+- Finally, specify the culture for Gantt using `Locale` property.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -239,7 +238,7 @@ N> BlazorServer denotes the ApplicationNameSpace of your project.
 
 The following examples demonstrate how to enable **Localization** for Gantt in client-side Blazor samples.
 
-* Open the **Program.cs** file and add the below configuration in the **Main** function as follows.
+- Open the **Program.cs** file and add the below configuration in the **Main** function as follows.
 
 ```csharp
 using Syncfusion.Blazor;
@@ -271,7 +270,7 @@ namespace ClientApplication
 }
 ```
 
-* Then, create a **~/Shared/SyncfusionLocalizer.cs** file and implement **ISyncfusionStringLocalizer** interface to the class and override the ResourceManager property to get the resource file details from the application end.
+- Then, create a **~/Shared/SyncfusionLocalizer.cs** file and implement **ISyncfusionStringLocalizer** interface to the class and override the ResourceManager property to get the resource file details from the application end.
 
 ```csharp
 using Syncfusion.Blazor;
@@ -299,7 +298,7 @@ public class SyncfusionLocalizer : ISyncfusionStringLocalizer
 
 N> ClientApplication denotes the ApplicationNameSpace of your project.
 
-* Now, Specify the culture for Gantt using `Locale` property.
+- Now, Specify the culture for Gantt using `Locale` property.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -357,8 +356,7 @@ N> ClientApplication denotes the ApplicationNameSpace of your project.
 
 You can customize the culture settings of Syncfusion® Blazor UI components using the Blazor `Internationalization` package, which formats numbers and dates based on the selected culture. By default, components use `en-US`, and to switch to another culture, you need to add the corresponding `.resx` resource file to your application.
 
-[Changing culture and Adding Resx file in the application](https://blazor.syncfusion.com/documentation/gantt-chart/globalization#localization)
-
+[Changing culture and Adding Resx file in the application](https://blazor.syncfusion.com/documentation/gantt/globalization#localization)
 
 ## Right to left (RTL)
 
@@ -375,7 +373,7 @@ You can enable right-to-left layout and text direction in the Gantt component us
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
+public List<TaskData>? TaskCollection { get; set; }
 
     protected override void OnInitialized()
     {
@@ -408,6 +406,7 @@ You can enable right-to-left layout and text direction in the Gantt component us
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -415,8 +414,8 @@ You can enable right-to-left layout and text direction in the Gantt component us
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/BDVHNcBNrmwnIjid?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-N> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=bootstrap5) to know how to render and configure the gantt.
+N> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt/default-functionalities?theme=bootstrap5) to know how to render and configure the gantt.
 
 ## See also
 
-* [How to enable RTL based on Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor service?](https://blazor.syncfusion.com/documentation/common/right-to-left#enable-rtl-for-all-components)
+- [How to enable RTL based on Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor service?](https://blazor.syncfusion.com/documentation/common/right-to-left#enable-rtl-for-all-components)

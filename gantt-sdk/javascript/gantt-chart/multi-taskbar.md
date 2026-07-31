@@ -3,7 +3,7 @@ layout: post
 title: Resource Multi Taskbar in JavaScript Gantt Chart Control | Syncfusion
 description: Learn how to configure the resource multi taskbar in the Syncfusion JavaScript Gantt Chart control to visualize multiple tasks per resource in resource view.
 platform: gantt-sdk
-control: Resource Multi Taskbar 
+control: Resource Multi Taskbar
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -20,75 +20,75 @@ Enable the multi taskbar feature by setting [enableMultiTaskbar](../api/gantt#en
 {% if page.publishingplatform == "typescript" %}
 
 ```ts
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { GanttData } from './datasource.ts';
+import { Gantt } from "@syncfusion/ej2-gantt";
+import { GanttData } from "./datasource.ts";
 
 let gantt: Gantt = new Gantt({
-    dataSource: GanttData,
-    height: '450px',
-    enableMultiTaskbar: true,
-    viewType: 'ResourceView',
-    taskFields: {
-        id: 'TaskID',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        endDate: 'EndDate',
-        duration: 'Duration',
-        progress: 'Progress',
-        resourceInfo: 'Resources'
-    }
+  dataSource: GanttData,
+  height: "450px",
+  enableMultiTaskbar: true,
+  viewType: "ResourceView",
+  taskFields: {
+    id: "TaskID",
+    name: "TaskName",
+    startDate: "StartDate",
+    endDate: "EndDate",
+    duration: "Duration",
+    progress: "Progress",
+    resourceInfo: "Resources",
+  },
 });
 
-gantt.appendTo('#Gantt');
+gantt.appendTo("#Gantt");
 ```
 
 The following example demonstrates multi taskbar configuration:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/resource-view-cs3/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/resource-view-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/resource-view-cs3/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/resource-view-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/resource-view-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/resource-view-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 ```js
 var ganttChart = new ej.gantt.Gantt({
-    dataSource: GanttData,
-    height: '450px',
-    enableMultiTaskbar: true,
-    viewType: 'ResourceView',
-    taskFields: {
-        id: 'TaskID',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        endDate: 'EndDate',
-        duration: 'Duration',
-        progress: 'Progress',
-        resourceInfo: 'Resources'
-    }
+  dataSource: GanttData,
+  height: "450px",
+  enableMultiTaskbar: true,
+  viewType: "ResourceView",
+  taskFields: {
+    id: "TaskID",
+    name: "TaskName",
+    startDate: "StartDate",
+    endDate: "EndDate",
+    duration: "Duration",
+    progress: "Progress",
+    resourceInfo: "Resources",
+  },
 });
 
-ganttChart.appendTo('#Gantt');
+ganttChart.appendTo("#Gantt");
 ```
 
 The following example demonstrates multi taskbar configuration:
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/resource-view-cs3/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/resource-view-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/resource-view-cs3/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/resource-view-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/resource-view-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/resource-view-cs3" %}
 {% endif %}
 
 ## Configure taskbar overlap
@@ -103,75 +103,75 @@ The following example disables taskbar overlap:
 {% if page.publishingplatform == "typescript" %}
 
 ```ts
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { GanttData } from './datasource.ts';
+import { Gantt } from "@syncfusion/ej2-gantt";
+import { GanttData } from "./datasource.ts";
 
 let gantt: Gantt = new Gantt({
-    dataSource: GanttData,
-    height: '450px',
-    viewType: 'ResourceView',
-    enableMultiTaskbar: true,
-    allowTaskbarOverlap: false,
-    taskFields: {
-        id: 'TaskID',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        endDate: 'EndDate',
-        duration: 'Duration',
-        progress: 'Progress',
-        resourceInfo: 'Resources'
-    }
+  dataSource: GanttData,
+  height: "450px",
+  viewType: "ResourceView",
+  enableMultiTaskbar: true,
+  allowTaskbarOverlap: false,
+  taskFields: {
+    id: "TaskID",
+    name: "TaskName",
+    startDate: "StartDate",
+    endDate: "EndDate",
+    duration: "Duration",
+    progress: "Progress",
+    resourceInfo: "Resources",
+  },
 });
 
-gantt.appendTo('#Gantt');
+gantt.appendTo("#Gantt");
 ```
 
 The following example demonstrates non-overlapping multi taskbar:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/resource-view-taskbaroverlap-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/resource-view-taskbaroverlap-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/resource-view-taskbaroverlap-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/resource-view-taskbaroverlap-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/resource-view-taskbaroverlap-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/resource-view-taskbaroverlap-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 ```js
 var ganttChart = new ej.gantt.Gantt({
-    dataSource: GanttData,
-    height: '450px',
-    viewType: 'ResourceView',
-    enableMultiTaskbar: true,
-    allowTaskbarOverlap: false,
-    taskFields: {
-        id: 'TaskID',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        endDate: 'EndDate',
-        duration: 'Duration',
-        progress: 'Progress',
-        resourceInfo: 'Resources'
-    }
+  dataSource: GanttData,
+  height: "450px",
+  viewType: "ResourceView",
+  enableMultiTaskbar: true,
+  allowTaskbarOverlap: false,
+  taskFields: {
+    id: "TaskID",
+    name: "TaskName",
+    startDate: "StartDate",
+    endDate: "EndDate",
+    duration: "Duration",
+    progress: "Progress",
+    resourceInfo: "Resources",
+  },
 });
 
-ganttChart.appendTo('#Gantt');
+ganttChart.appendTo("#Gantt");
 ```
 
 The following example demonstrates non-overlapping multi taskbar:
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/resource-view-taskbaroverlap-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/resource-view-taskbaroverlap-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/resource-view-taskbaroverlap-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/resource-view-taskbaroverlap-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/resource-view-taskbaroverlap-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/resource-view-taskbaroverlap-cs1" %}
 {% endif %}

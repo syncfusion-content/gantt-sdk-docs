@@ -18,15 +18,15 @@ Define validation rules for columns using [columns.validationRules](https://ej2.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/celledit-cs3/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/celledit-cs3/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/celledit-cs3/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/celledit-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/managing-tasks/celledit-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/managing-tasks/celledit-cs3" %}
 
 ## Apply custom validation
 
@@ -34,15 +34,15 @@ Implement custom validation for specific columns, like `TaskName`, using callbac
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/celledit-cs4/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/celledit-cs4/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/celledit-cs4/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/celledit-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/managing-tasks/celledit-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/managing-tasks/celledit-cs4" %}
 
 ## Validate dependency and resource grids
 
@@ -50,17 +50,18 @@ Set validation rules for dependency and resource grids in the add/edit dialog us
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/celledit-cs5/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/celledit-cs5/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/celledit-cs5/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/managing-tasks/celledit-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/managing-tasks/celledit-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/managing-tasks/celledit-cs5" %}
 
 ## See also
+
 - [How to configure task editing?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/editing-tasks)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
 - [How to add new tasks?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/adding-new-tasks)

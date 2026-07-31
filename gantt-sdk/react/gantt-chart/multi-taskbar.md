@@ -43,21 +43,22 @@ The following example demonstrates multi taskbar configuration:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/resource-view-cs3/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/resource-view-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/resource-view-cs3/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/resource-view-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/resource-view-cs3/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/resource-view-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/resource-view-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/resource-view-cs3" %}
 
 ## Configure taskbar overlap
 
 The [allowTaskbarOverlap](https://ej2.syncfusion.com/react/documentation/api/gantt#allowtaskbaroverlap) property controls how multiple taskbars are displayed in a resource row:
+
 - **Overlapping mode (true, default)**: Taskbars overlap within standard row height, supporting full dependency connections, including between tasks of the same resource. Suitable for compact views with many tasks.
 - **Non-overlapping mode (false)**: Taskbars are vertically arranged in an extended row height, preventing overlap for clearer visibility of overallocation. Dependencies between tasks of the same resource are not supported due to vertical stacking, though inter-resource dependencies work.
 
@@ -93,21 +94,22 @@ The following example demonstrates non-overlapping multi taskbar:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/resource-view-cs5/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/resource-view-cs5/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/resource-view-cs5/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/resource-view-cs5/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/resource-view-cs5/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/resource-view-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/resource-view-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/resource-view-cs5" %}
 
 This configuration extends row height for clear task separation, ideal for identifying conflicts in small teams, but limits same-resource dependencies. Use overlapping mode for projects requiring extensive dependency mapping.
 
 ## See also
+
 - [How to configure resource view?](https://ej2.syncfusion.com/react/documentation/gantt/resource-view)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/react/documentation/gantt/task-dependency)
 - [How to allocate resources?](https://ej2.syncfusion.com/react/documentation/gantt/resources)

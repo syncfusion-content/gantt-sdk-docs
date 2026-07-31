@@ -3,7 +3,7 @@ layout: post
 title: Context Menu in React Gantt Chart Component | Syncfusion
 description: Learn here all about context menu in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Context menu 
+control: Context menu
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -38,17 +38,17 @@ The following example demonstrates context menu implementation with default item
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/contextmenu-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/contextmenu-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/contextmenu-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/contextmenu-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/contextmenu-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/contextmenu-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/contextmenu-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/contextmenu-cs1" %}
 
 > If a required feature is not enabled, the related context menu item will be disabled or hidden to prevent unsupported actions.
 
@@ -64,17 +64,17 @@ The following sample shows context menu items for parent rows to expand or colla
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/contextmenu-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/contextmenu-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/contextmenu-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/contextmenu-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/contextmenu-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/contextmenu-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/contextmenu-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/contextmenu-cs2" %}
 
 This implementation shows custom context menu integration with event handling. The `contextMenuClick` event receives parameters including the selected item's id, text, and the current row data, enabling specific actions based on the context.
 

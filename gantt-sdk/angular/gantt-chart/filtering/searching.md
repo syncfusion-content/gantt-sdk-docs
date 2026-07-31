@@ -3,7 +3,7 @@ layout: post
 title: Searching in Angular Gantt Chart Component | Syncfusion
 description: Learn here all about Searching in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Searching 
+control: Searching
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -16,43 +16,43 @@ To enable search functionality, include the **Search** item in the [toolbar](htt
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/default-search-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/default-search-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/default-search-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/default-search-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/filtering/default-search-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/filtering/default-search-cs1" %}
 
 ## Initial search
 
-The Angular Gantt component allows applying search criteria during initial load using the [searchSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings) property.  
+The Angular Gantt component allows applying search criteria during initial load using the [searchSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings) property.
 
 To configure this feature, define the following properties:
 
-| Property      | Description                                                                                  |
-|---------------|----------------------------------------------------------------------------------------------|
-| `fields`      | Defines the fields where the search should be applied.                                       |
-| `operator`    | Sets the condition for matching (e.g., `contains`, `equals`).                                |
-| `key`         | Specifies the value to search for.                                                            |
-| `ignoreCase`  | Determines if the search should be case-insensitive.                                         |
-| `ignoreAccent`| Ignores diacritic characters or accents during the search.
+| Property       | Description                                                   |
+| -------------- | ------------------------------------------------------------- |
+| `fields`       | Defines the fields where the search should be applied.        |
+| `operator`     | Sets the condition for matching (e.g., `contains`, `equals`). |
+| `key`          | Specifies the value to search for.                            |
+| `ignoreCase`   | Determines if the search should be case-insensitive.          |
+| `ignoreAccent` | Ignores diacritic characters or accents during the search.    |
 
 The following sample demonstrates an initial search where `fields` is set to **TaskName**, `operator` is **contains**, `key` is **Pröduct**, with `ignoreCase` set to **true** and `ignoreAccent` set to **true** (e.g., typing "product" will match "Pröduct").
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/initialsearch-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/initialsearch-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/initialsearch-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/initialsearch-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/filtering/initialsearch-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/filtering/initialsearch-cs1" %}
 
 ## Search operators
 
@@ -60,27 +60,27 @@ Search operators specify the type of comparison used during a search. These are 
 
 The following operators are supported in searching:
 
-| Operator     | Description                                      |
-|--------------|--------------------------------------------------|
-| startsWith   | Matches values that begin with the specified text. |
-| endsWith     | Matches values that end with the specified text.   |
-| contains     | Matches values that include the specified text.    |
-| equal        | Matches values that exactly match the specified text. |
-| notEqual     | Matches values that do not match the specified text. |
+| Operator   | Description                                           |
+| ---------- | ----------------------------------------------------- |
+| startsWith | Matches values that begin with the specified text.    |
+| endsWith   | Matches values that end with the specified text.      |
+| contains   | Matches values that include the specified text.       |
+| equal      | Matches values that exactly match the specified text. |
+| notEqual   | Matches values that do not match the specified text.  |
 
 > The default value for `searchSettings.operator` is `contains`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/search-operators-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/search-operators-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/search-operators-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/search-operators-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/filtering/search-operators-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/filtering/search-operators-cs1" %}
 
 ## Search by external button
 
@@ -88,15 +88,15 @@ To perform a search from an external button in the Angular Gantt, call the [sear
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/externalbutton-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/externalbutton-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/externalbutton-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/externalbutton-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/filtering/externalbutton-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/filtering/externalbutton-cs1" %}
 
 > You should set the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowfiltering) property to **true** for searching the content externally.
 
@@ -108,64 +108,64 @@ This following sample demonstrates searching only within the **TaskName** and **
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/specific-column-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/specific-column-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/specific-column-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/specific-column-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/filtering/specific-column-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/filtering/specific-column-cs1" %}
 
 ## Clear search by external button
 
-To clear the search results in the Angular Gantt from an external button, set the [searchSettings.key](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings#key) property to an empty string. 
- 
+To clear the search results in the Angular Gantt from an external button, set the [searchSettings.key](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings#key) property to an empty string.
+
 Alternatively, you can invoke the [search](https://ej2.syncfusion.com/angular/documentation/api/gantt#search) method with an empty string to reset the search.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/clearSearch-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/clearSearch-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/clearSearch-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/clearSearch-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/filtering/clearSearch-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/filtering/clearSearch-cs1" %}
 
 ## Search on each key stroke
 
-You can enable instant filtering in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart component by calling the [search](https://ej2.syncfusion.com/angular/documentation/api/gantt#search) method on each `keyup` event.  This can be configured within the component’s [created](https://ej2.syncfusion.com/angular/documentation/gantt/events#created) event.
+You can enable instant filtering in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart component by calling the [search](https://ej2.syncfusion.com/angular/documentation/api/gantt#search) method on each `keyup` event. This can be configured within the component’s [created](https://ej2.syncfusion.com/angular/documentation/gantt/events#created) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/key-stroke-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/key-stroke-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/key-stroke-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/key-stroke-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/filtering/key-stroke-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/filtering/key-stroke-cs1" %}
 
 ## Highlight the search text
 
-The Angular Gantt Chart component supports highlighting matched search text within grid cells to improve visibility of search results. 
+The Angular Gantt Chart component supports highlighting matched search text within grid cells to improve visibility of search results.
 
 This can be achieved using the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt#querycellinfo) event, which is triggered during cell rendering. Within this event, check if the cell belongs to the target column, retrieve the cell value and search keyword, and use the `includes` method to detect matches. If a match is found, wrap the matched text in a `<span>` with a custom CSS class for styling.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/highlight-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/highlight-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/filtering/highlight-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/filtering/highlight-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/filtering/highlight-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/filtering/highlight-cs1" %}

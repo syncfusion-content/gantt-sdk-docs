@@ -31,16 +31,16 @@ The **Microsoft.EntityFrameworkCore.SqlServer** package is the official Entity F
 
 Ensure the following software and packages are installed before proceeding:
 
-| Software/Package | Version | Purpose |
-|-----------------|---------|---------|
-| Visual Studio 2026 | 18.2.1 or later | Development IDE with Blazor workload |
-| .NET SDK | net10.0 or compatible | Runtime and build tools |
-| SQL Server | 2021 or later | Database server |
-| Syncfusion.Blazor.Gantt | -v {{site.blazorversion}} | Gantt Chart and UI components |
-| Syncfusion.Blazor.Themes | -v {{site.blazorversion}} | Styling for Gantt Chart components |
-| Microsoft.EntityFrameworkCore | 10.0.2 or later | Core framework for database operations |
-| Microsoft.EntityFrameworkCore.Tools | 10.0.2 or later | Tools for managing database migrations |
-| Microsoft.EntityFrameworkCore.SqlServer | 10.0.2 or later | SQL Server provider for Entity Framework Core |
+| Software/Package                        | Version                   | Purpose                                       |
+| --------------------------------------- | ------------------------- | --------------------------------------------- |
+| Visual Studio 2026                      | 18.2.1 or later           | Development IDE with Blazor workload          |
+| .NET SDK                                | net10.0 or compatible     | Runtime and build tools                       |
+| SQL Server                              | 2021 or later             | Database server                               |
+| Syncfusion.Blazor.Gantt                 | -v {{site.blazorversion}} | Gantt Chart and UI components                 |
+| Syncfusion.Blazor.Themes                | -v {{site.blazorversion}} | Styling for Gantt Chart components            |
+| Microsoft.EntityFrameworkCore           | 10.0.2 or later           | Core framework for database operations        |
+| Microsoft.EntityFrameworkCore.Tools     | 10.0.2 or later           | Tools for managing database migrations        |
+| Microsoft.EntityFrameworkCore.SqlServer | 10.0.2 or later           | SQL Server provider for Entity Framework Core |
 
 ## Setting up the SQL Server Environment for Entity Framework Core
 
@@ -49,6 +49,7 @@ Ensure the following software and packages are installed before proceeding:
 First, the **SQL Server database** structure must be created to store task records.
 
 **Instructions:**
+
 1. Open SQL Server Management Studio (SSMS) or any SQL Server client.
 2. Create a new database named `GanttDB`.
 3. Define a `TaskData` table with the specified schema.
@@ -110,10 +111,10 @@ For this guide, a Blazor application named **GanttMsSql** has been created. Once
 3. Run the following commands:
 
 ```powershell
-Install-Package Microsoft.EntityFrameworkCore -Version 10.0.2; 
-Install-Package Microsoft.EntityFrameworkCore.Tools -Version 10.0.2; 
-Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 10.0.2; 
-Install-Package Syncfusion.Blazor.Gantt -v {{site.blazorversion}}; 
+Install-Package Microsoft.EntityFrameworkCore -Version 10.0.2;
+Install-Package Microsoft.EntityFrameworkCore.Tools -Version 10.0.2;
+Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 10.0.2;
+Install-Package Syncfusion.Blazor.Gantt -v {{site.blazorversion}};
 Install-Package Syncfusion.Blazor.Themes -v {{site.blazorversion}}
 ```
 
@@ -164,6 +165,7 @@ namespace GanttMsSql.Data
 ```
 
 **Explanation:**
+
 - The `[Key]` attribute marks the `TaskID` property as the primary key (a unique identifier for each record).
 - Each property represents a column in the database table.
 - The `?` symbol indicates that a property is nullable (can be empty).
@@ -262,6 +264,7 @@ namespace GanttMsSql.Data
 ```
 
 **Explanation:**
+
 - The `DbContext` class inherits from Entity Framework's `DbContext` base class.
 - The `TaskData` property represents the `TaskData` table in the database.
 - The `OnModelCreating` method configures how the database columns should behave (maximum length, required/optional, default values, data types, indexes, etc.).
@@ -303,16 +306,16 @@ A connection string contains the information needed to connect the application t
 
 **Connection String Components:**
 
-| Component | Description |
-|-----------|-------------|
-| Data Source | The address of the SQL Server instance (server name, IP address, or localhost) |
-| Initial Catalog | The database name (in this case, `GanttDB`) |
-| Integrated Security | Set to `True` for Windows Authentication; use `False` with Username/Password for SQL Authentication |
-| Connect Timeout | Connection timeout in seconds (default is 15) |
-| Encrypt | Enables encryption for the connection (set to `True` for production environments) |
-| Trust Server Certificate | Whether to trust the server certificate (set to `False` for security) |
-| Application Intent | Set to `ReadWrite` for normal operations or `ReadOnly` for read-only scenarios |
-| Multi Subnet Failover | Used in failover clustering scenarios (typically `False`) |
+| Component                | Description                                                                                         |
+| ------------------------ | --------------------------------------------------------------------------------------------------- |
+| Data Source              | The address of the SQL Server instance (server name, IP address, or localhost)                      |
+| Initial Catalog          | The database name (in this case, `GanttDB`)                                                         |
+| Integrated Security      | Set to `True` for Windows Authentication; use `False` with Username/Password for SQL Authentication |
+| Connect Timeout          | Connection timeout in seconds (default is 15)                                                       |
+| Encrypt                  | Enables encryption for the connection (set to `True` for production environments)                   |
+| Trust Server Certificate | Whether to trust the server certificate (set to `False` for security)                               |
+| Application Intent       | Set to `ReadWrite` for normal operations or `ReadOnly` for read-only scenarios                      |
+| Multi Subnet Failover    | Used in failover clustering scenarios (typically `False`)                                           |
 
 The database connection string has been configured successfully.
 
@@ -496,11 +499,15 @@ Syncfusion is a library that provides pre-built UI components like Gantt Chart, 
 <link href="_content/Syncfusion.Blazor.Themes/tailwind3.css" rel="stylesheet" />
 
 <!-- Blazor Scripts -->
-<script src="_content/Syncfusion.Blazor.Core/scripts/syncfusion-blazor.min.js" type="text/javascript"></script>
+<script
+  src="_content/Syncfusion.Blazor.Core/scripts/syncfusion-blazor.min.js"
+  type="text/javascript"
+></script>
 ```
+
 For this project, the tailwind3 theme is used. A different theme can be selected or the existing theme can be customized based on project requirements. Refer to the [Blazor Components Appearance](https://blazor.syncfusion.com/documentation/appearance/themes) documentation to learn more about theming and customization options.
 
-Blazor components are now configured and ready to use. For additional guidance, refer to the Gantt Chart component [getting‑started](https://blazor.syncfusion.com/documentation/gantt-chart/getting-started-with-web-app) documentation.
+Blazor components are now configured and ready to use. For additional guidance, refer to the Gantt Chart component [getting‑started](https://blazor.syncfusion.com/documentation/gantt/getting-started-with-web-app) documentation.
 
 ### Step 2: Update the Blazor Gantt Chart
 
@@ -610,7 +617,7 @@ The `CustomAdaptor` is a bridge between the Gantt Chart and the database. It han
                 // Apply filter operation if filter criteria exists
                 if (dataManagerRequest.Where != null && dataManagerRequest.Where.Count > 0)
             {
-                
+
                 if (dataManagerRequest.Where[0].Field != null && dataManagerRequest.Where[0].Field == @nameof(TaskData.ParentID)){}
                 else
                 {
@@ -624,7 +631,7 @@ The `CustomAdaptor` is a bridge between the Gantt Chart and the database. It han
                     dataSource = DataOperations.PerformSorting(dataSource, dataManagerRequest.Sorted);
                 }
 
-                // Calculate total record count 
+                // Calculate total record count
                 int totalRecordsCount = dataSource.Cast<TaskData>().Count();
 
                 if (dataManagerRequest.Skip != 0)
@@ -637,7 +644,7 @@ The `CustomAdaptor` is a bridge between the Gantt Chart and the database. It han
                 {
                     dataSource = DataOperations.PerformTake(dataSource, dataManagerRequest.Take);
                 }
-                
+
 
                 // Return the result with total count for pagination metadata
                 return dataManagerRequest.RequiresCounts
@@ -658,13 +665,13 @@ The `CustomAdaptor` class has been successfully implemented with all data operat
 
 **Common methods in data operations**
 
-* [ReadAsync(DataManagerRequest)](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_ReadAsync_Syncfusion_Blazor_DataManagerRequest_System_String_) - Retrieve and process records (search, filter, sort)
+- [ReadAsync(DataManagerRequest)](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_ReadAsync_Syncfusion_Blazor_DataManagerRequest_System_String_) - Retrieve and process records (search, filter, sort)
 
-* [PerformSearching](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSearching__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_SearchFilter__) - Applies search criteria to the collection.
-* [PerformFiltering](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformFiltering__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_WhereFilter__System_String_) - Filters data based on conditions.
-* [PerformSorting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSorting__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_Sort__) - Sorts data by one or more fields.
-* [PerformSkip](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSkip__1_System_Linq_IQueryable___0__System_Int32_) - Skips a defined number of records.
-* [PerformTake](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformTake__1_System_Linq_IQueryable___0__System_Int32_) - Retrieves a specified number of records.
+- [PerformSearching](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSearching__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_SearchFilter__) - Applies search criteria to the collection.
+- [PerformFiltering](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformFiltering__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_WhereFilter__System_String_) - Filters data based on conditions.
+- [PerformSorting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSorting__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_Sort__) - Sorts data by one or more fields.
+- [PerformSkip](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSkip__1_System_Linq_IQueryable___0__System_Int32_) - Skips a defined number of records.
+- [PerformTake](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformTake__1_System_Linq_IQueryable___0__System_Int32_) - Retrieves a specified number of records.
 
 ---
 
@@ -679,25 +686,25 @@ The toolbar provides buttons for adding, editing, deleting records, and searchin
 
 ```cshtml
 <SfGantt TValue="TaskData"
-        AllowSorting="true" 
-        AllowFiltering="true" 
+        AllowSorting="true"
+        AllowFiltering="true"
         Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" })">
     <SfDataManager AdaptorInstance="@typeof(CustomAdaptor)" Adaptor="Adaptors.CustomAdaptor"></SfDataManager>
-    
+
     <!-- Gantt columns configuration -->
 </SfGantt>
 ```
 
 **Toolbar Items Explanation:**
 
-| Item | Function |
-|------|----------|
-| `Add` | Opens the dialog to add a new task record. |
-| `Edit` | Enables editing of the selected record. |
+| Item     | Function                                       |
+| -------- | ---------------------------------------------- |
+| `Add`    | Opens the dialog to add a new task record.     |
+| `Edit`   | Enables editing of the selected record.        |
 | `Delete` | Deletes the selected record from the database. |
-| `Update` | Saves changes made to the selected record. |
-| `Cancel` | Cancels the current edit or add operation. |
-| `Search` | Displays a search box to find records. |
+| `Update` | Saves changes made to the selected record.     |
+| `Cancel` | Cancels the current edit or add operation.     |
+| `Search` | Displays a search box to find records.         |
 
 The toolbar has been successfully added.
 
@@ -724,7 +731,7 @@ Searching allows the user to find records by entering keywords in the search box
 ```csharp
 @code {
     public List<string> ToolbarItems = new List<string> { "Search"};
-    
+
     /// <summary>
     /// CustomAdaptor class to handle Gantt Chart data operations with SQL using Entity Framework
     /// </summary>
@@ -751,8 +758,8 @@ Searching allows the user to find records by entering keywords in the search box
                 dataSource = DataOperations.PerformSearching(dataSource, dataManagerRequest.Search);
             }
 
-            int totalRecordsCount = dataSource.Cast<TaskData>().Count();            
-            
+            int totalRecordsCount = dataSource.Cast<TaskData>().Count();
+
             return dataManagerRequest.RequiresCounts
                 ? new DataResult() { Result = dataSource, Count = totalRecordsCount }
                 : (object)dataSource;
@@ -782,9 +789,9 @@ Filtering allows the user to restrict data based on column values using a menu i
 2. Add the [AllowFiltering](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowFiltering) property to the `<SfGantt>` component:
 
 ```cshtml
-<SfGantt TValue="TaskData"       
+<SfGantt TValue="TaskData"
         AllowFiltering="true" >
-    <SfDataManager AdaptorInstance="@typeof(CustomAdaptor)" Adaptor="Adaptors.CustomAdaptor"></SfDataManager>    
+    <SfDataManager AdaptorInstance="@typeof(CustomAdaptor)" Adaptor="Adaptors.CustomAdaptor"></SfDataManager>
     <!-- Gantt columns configuration -->
 </SfGantt>
 ```
@@ -793,7 +800,7 @@ Filtering allows the user to restrict data based on column values using a menu i
 
 ```csharp
 @code {
-    
+
     /// <summary>
     /// CustomAdaptor class to handle Gantt Chart data operations with SQL using Entity Framework
     /// </summary>
@@ -814,7 +821,7 @@ Filtering allows the user to restrict data based on column values using a menu i
         {
             IEnumerable<TaskData> dataSource = await _taskService!.GetTasksAsync();
 
-            // Handling Filtering           
+            // Handling Filtering
             if (dataManagerRequest.Where != null && dataManagerRequest.Where.Count > 0)
             {
                 if (dataManagerRequest.Where[0].Field != null && dataManagerRequest.Where[0].Field == @nameof(TaskData.ParentID)){}
@@ -823,8 +830,8 @@ Filtering allows the user to restrict data based on column values using a menu i
                     DataSource = DataOperations.PerformFiltering(DataSource, dataManagerRequest.Where, dataManagerRequest.Where[0].Operator);
                 }
             }
-            int totalRecordsCount = dataSource.Cast<TaskData>().Count();            
-            
+            int totalRecordsCount = dataSource.Cast<TaskData>().Count();
+
             return dataManagerRequest.RequiresCounts
                 ? new DataResult() { Result = dataSource, Count = totalRecordsCount }
                 : (object)dataSource;
@@ -891,8 +898,8 @@ Sorting enables the user to arrange records in ascending or descending order bas
                 dataSource = DataOperations.PerformSorting(dataSource, dataManagerRequest.Sorted);
             }
 
-            int totalRecordsCount = dataSource.Cast<TaskData>().Count();           
-            
+            int totalRecordsCount = dataSource.Cast<TaskData>().Count();
+
             return dataManagerRequest.RequiresCounts
                 ? new DataResult() { Result = dataSource, Count = totalRecordsCount }
                 : (object)dataSource;
@@ -921,10 +928,10 @@ Add the Gantt Chart **EditSettings** and **Toolbar** configuration to enable cre
 
 ```cshtml
 <SfGantt TValue="TaskData"
-        AllowSorting="true" 
+        AllowSorting="true"
         AllowFiltering="true"
         Toolbar="@ToolbarItems">
-    <SfDataManager AdaptorInstance="@typeof(CustomAdaptor)" Adaptor="Adaptors.CustomAdaptor"></SfDataManager>     
+    <SfDataManager AdaptorInstance="@typeof(CustomAdaptor)" Adaptor="Adaptors.CustomAdaptor"></SfDataManager>
      <GanttEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" AllowTaskbarEditing="true"></GanttEditSettings>
     <!-- Gantt columns  -->
 </SfGantt>
@@ -970,9 +977,9 @@ public async Task AddTaskAsync(TaskData task)
 
     // Ensure DB generates identity
     task.TaskID = 0;
-    
+
     ApplyDefaults(task);
-    
+
     _context.TaskData.Add(task);
     await _context.SaveChangesAsync();
 }
@@ -999,6 +1006,7 @@ private static void ApplyDefaults(TaskData task)
 ```
 
 **Helper methods explanation:**
+
 - `ApplyDefaults()`: Applies default values and enforces simple business rules on a task instance.
 
 **What happens behind the scenes:**
@@ -1114,7 +1122,7 @@ public async Task RemoveTaskAsync(int? key)
     try
     {
         var task = await _context.TaskData.FindAsync(key.Value);
-       
+
         if (task == null)
             return;
 
@@ -1252,9 +1260,8 @@ Here is the complete and final `Home.razor` component with all features integrat
 
 ```
 
-
-> * Set [IsPrimaryKey](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_IsPrimaryKey) to **true** for a column that contains unique values.
-> * Set [IsIdentity](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_IsIdentity) to **true** for auto-generated columns to disable editing during add or update operations.
+> - Set [IsPrimaryKey](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_IsPrimaryKey) to **true** for a column that contains unique values.
+> - Set [IsIdentity](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_IsIdentity) to **true** for auto-generated columns to disable editing during add or update operations.
 
 ```csharp
 @code {
@@ -1351,7 +1358,7 @@ Here is the complete and final `Home.razor` component with all features integrat
             await _taskService!.RemoveTaskAsync(taskID);
             return value;
         }
-        
+
         /// <summary>
         /// Applies batch changes: updates, inserts, and deletes using the repository.
         /// </summary>

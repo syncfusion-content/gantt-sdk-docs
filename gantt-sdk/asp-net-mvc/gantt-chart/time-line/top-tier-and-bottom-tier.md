@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Top tier and Bottom tier
 
 Gantt control contains two tier layout in timeline, we can customize the top tier and bottom tier using [`TopTier`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTimelineSettings.html#Syncfusion_EJ2_Gantt_GanttTimelineSettings_TopTier) and [`BottomTier`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTimelineSettings.html#Syncfusion_EJ2_Gantt_GanttTimelineSettings_BottomTier) properties. Timeline tier's unit can be defined by using [`Unit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTimelineTierSettings.html#Syncfusion_EJ2_Gantt_GanttTimelineTierSettings_Unit) property and [`Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTimelineTierSettings.html#Syncfusion_EJ2_Gantt_GanttTimelineTierSettings_Format) property was used to define date format of timeline cell and [`Count`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTimelineTierSettings.html#Syncfusion_EJ2_Gantt_GanttTimelineTierSettings_Count) property was used to define how many unit will be combined as single cell and [`Formatter`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTimelineTierSettings.html#Syncfusion_EJ2_Gantt_GanttTimelineTierSettings_Formatter) property was used to define custom method to format the date value of timeline cell.
@@ -17,10 +16,10 @@ Gantt control contains two tier layout in timeline, we can customize the top tie
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/timeline/topBottomTier/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/timeline/topBottomTier/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="TopBottomTier.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/timeline/topBottomTier/topBottomTier.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/timeline/topBottomTier/topBottomTier.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -28,15 +27,13 @@ Gantt control contains two tier layout in timeline, we can customize the top tie
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/timeline/topBottomTier/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/timeline/topBottomTier/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="TopBottomTier.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/timeline/topBottomTier/topBottomTier.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/timeline/topBottomTier/topBottomTier.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/topBottomTier.png)
 
@@ -48,10 +45,10 @@ In Gantt, timeline cells in top tier and bottom tier can be combined with number
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/timeline/combineCells/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/timeline/combineCells/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CombineCells.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/timeline/combineCells/combineCells.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/timeline/combineCells/combineCells.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -59,15 +56,13 @@ In Gantt, timeline cells in top tier and bottom tier can be combined with number
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/timeline/combineCells/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/timeline/combineCells/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CombineCells.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/timeline/combineCells/combineCells.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/timeline/combineCells/combineCells.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/combineCells.png)
 
@@ -79,10 +74,10 @@ In the Gantt control, you can format the value of top and bottom timeline cells 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/timeline/formatCells/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/timeline/formatCells/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="FormatCells.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/timeline/formatCells/formatCells.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/timeline/formatCells/formatCells.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -90,15 +85,13 @@ In the Gantt control, you can format the value of top and bottom timeline cells 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/timeline/formatCells/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/timeline/formatCells/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="FormatCells.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/timeline/formatCells/formatCells.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/timeline/formatCells/formatCells.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/formatCells.png)
 
@@ -110,10 +103,10 @@ In the Gantt control, you can define the width value of timeline cell using the 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/timeline/timelineWidth/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/timeline/timelineWidth/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="TimelineWidth.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/timeline/timelineWidth/timelineWidth.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/timeline/timelineWidth/timelineWidth.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -121,15 +114,13 @@ In the Gantt control, you can define the width value of timeline cell using the 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/timeline/timelineWidth/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/timeline/timelineWidth/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="TimelineWidth.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/timeline/timelineWidth/timelineWidth.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/timeline/timelineWidth/timelineWidth.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/timelineWidth.png)
 
@@ -141,10 +132,10 @@ In the Gantt control, you can customize the week start day using the [`WeekStart
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/timeline/weekStartDay/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/timeline/weekStartDay/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="WeekStartDay.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/timeline/weekStartDay/weekStartDay.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/timeline/weekStartDay/weekStartDay.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -152,15 +143,13 @@ In the Gantt control, you can customize the week start day using the [`WeekStart
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/timeline/weekStartDay/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/timeline/weekStartDay/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="WeekStartDay.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/timeline/weekStartDay/weekStartDay.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/timeline/weekStartDay/weekStartDay.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/weekStartDay.png)
 
@@ -172,10 +161,10 @@ In the Gantt control, the schedule timeline will be automatically updated when t
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/timeline/updateTimescaleView/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/timeline/updateTimescaleView/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="UpdateTimescaleView.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/timeline/updateTimescaleView/updateTimescaleView.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/timeline/updateTimescaleView/updateTimescaleView.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -183,10 +172,10 @@ In the Gantt control, the schedule timeline will be automatically updated when t
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/timeline/updateTimescaleView/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/timeline/updateTimescaleView/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="UpdateTimescaleView.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/timeline/updateTimescaleView/updateTimescaleView.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/timeline/updateTimescaleView/updateTimescaleView.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

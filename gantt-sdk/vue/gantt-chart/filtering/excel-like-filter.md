@@ -14,11 +14,11 @@ You can enable the Excel-like filter by setting the https://ej2.syncfusion.com/v
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/filtering-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/filtering-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/filtering-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/filtering-cs1" %}

@@ -3,7 +3,7 @@ layout: post
 title: Excel Export in JavaScript Gantt Chart Control | Syncfusion
 description: Learn here all about Excel export in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Excel export 
+control: Excel export
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -21,27 +21,27 @@ You can trigger export operations using the [excelExport](../../api/gantt#excele
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs2/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs2/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-export-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs2/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs2/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-export-cs2" %}
 {% endif %}
 
 ## Binding custom data source while exporting
@@ -52,27 +52,27 @@ You can bind a custom data source for Excel or CSV export in the JavaScript Gant
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-export-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-export-cs1" %}
 {% endif %}
 
 ## Exporting with cell and row spanning
@@ -83,27 +83,27 @@ To export merged cells and rows in Excel or CSV files using the JavaScript Gantt
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs9/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs9/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs9/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs9/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs9" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-export-cs9" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs9/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs9/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs9/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs9/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs9" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-export-cs9" %}
 {% endif %}
 
 ## Show spinner while exporting
@@ -114,27 +114,27 @@ To indicate progress during the export operation in the JavaScript Gantt Chart c
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs10/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs10/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs10/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs10/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs10" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-export-cs10" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs10/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs10/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs10/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs10/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs10" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-export-cs10" %}
 {% endif %}
 
 ## Exporting with custom date format
@@ -145,27 +145,27 @@ To apply a custom date format to columns during Excel or CSV export in the JavaS
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs11/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs11/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs11/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs11/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs11" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-export-cs11" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs11/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs11/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs11/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs11/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs11" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-export-cs11" %}
 {% endif %}
 
 ## Exporting multiple Gantt charts
@@ -180,30 +180,30 @@ To export multiple datasets into a single worksheet, set [multipleExport.type](.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-multiple-export-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-multiple-export-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-multiple-export-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-multiple-export-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-multiple-export-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-multiple-export-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-multiple-export-cs1/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-multiple-export-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-multiple-export-cs1/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-multiple-export-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-multiple-export-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-multiple-export-cs1" %}
 {% endif %}
 
->By default, `multipleExport.blankRows` value is 5.
+> By default, `multipleExport.blankRows` value is 5.
 
 ### New sheet
 
@@ -213,27 +213,27 @@ To export each Gantt to a separate worksheet, set [multipleExport.type](../../ap
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-multiple-export-cs2/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-multiple-export-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-multiple-export-cs2/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-multiple-export-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-multiple-export-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-multiple-export-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-multiple-export-cs2/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-multiple-export-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-multiple-export-cs2/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-multiple-export-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-multiple-export-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-multiple-export-cs2" %}
 {% endif %}
 
 ## Export Gantt data as a Blob
@@ -244,25 +244,25 @@ To export Gantt data as a Blob object for advanced processing or custom download
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs12/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs12/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs12/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs12/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs12" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-export-cs12" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs12/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs12/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs12/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/excel-export-cs12/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs12" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/excel-export-cs12" %}
 {% endif %}

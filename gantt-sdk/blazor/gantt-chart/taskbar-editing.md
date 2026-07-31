@@ -9,24 +9,24 @@ documentation: ug
 
 # Taskbar editing in Blazor Gantt Chart Component
 
-Taskbar editing in the Blazor Gantt Chart component enables intuitive project timeline adjustments by allowing to drag or resize taskbars to modify task details, such as start dates, durations, or progress, using mouse or touch interactions. Enable this feature by setting the [GanttEditSettings.AllowTaskbarEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_AllowTaskbarEditing) property to **true**, ensuring task data aligns with valid [GanttTaskFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html) mappings (e.g., ID, StartDate, Duration). When taskbar editing begins by clicking or tapping on a taskbar, a virtual taskbar appears over the original. This overlay acts as a reference to indicate the original position of the task on the timeline before any changes are made. With this reference, it is possible to drag the taskbar to shift start and end dates, resize it to adjust durations, or move the progress grip to update completion percentages. The [TaskbarEditing](https://blazor.syncfusion.com/documentation/gantt-chart/events#taskbarediting) event allows preventing edits for specific tasks.
+Taskbar editing in the Blazor Gantt Chart component enables intuitive project timeline adjustments by allowing to drag or resize taskbars to modify task details, such as start dates, durations, or progress, using mouse or touch interactions. Enable this feature by setting the [GanttEditSettings.AllowTaskbarEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_AllowTaskbarEditing) property to **true**, ensuring task data aligns with valid [GanttTaskFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html) mappings (e.g., ID, StartDate, Duration). When taskbar editing begins by clicking or tapping on a taskbar, a virtual taskbar appears over the original. This overlay acts as a reference to indicate the original position of the task on the timeline before any changes are made. With this reference, it is possible to drag the taskbar to shift start and end dates, resize it to adjust durations, or move the progress grip to update completion percentages. The [TaskbarEditing](https://blazor.syncfusion.com/documentation/gantt/events#taskbarediting) event allows preventing edits for specific tasks.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="900px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttEditSettings AllowEditing="true" AllowTaskbarEditing="true"></GanttEditSettings>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
+</GanttTaskFields>
+<GanttEditSettings AllowEditing="true" AllowTaskbarEditing="true"></GanttEditSettings>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public class TaskData
     {
@@ -53,6 +53,7 @@ Taskbar editing in the Blazor Gantt Chart component enables intuitive project ti
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -70,9 +71,9 @@ A taskbar can be drawn only when [AllowUnscheduledTasks](https://help.syncfusion
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="100%" Width="100%" AllowUnscheduledTasks="true">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttEditSettings AllowTaskbarEditing="true" AllowSchedulingOnDrag="true"></GanttEditSettings>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
+</GanttTaskFields>
+<GanttEditSettings AllowTaskbarEditing="true" AllowSchedulingOnDrag="true"></GanttEditSettings>
 </SfGantt>
 
 @code {
@@ -108,6 +109,7 @@ A taskbar can be drawn only when [AllowUnscheduledTasks](https://help.syncfusion
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -134,11 +136,11 @@ For more information, refer to the following:
 </SfGantt>
 
 @code {
-    private void TaskbarBeginEditHandler(TaskbarEditingEventArgs<TaskData> args)
-    {
-        if (args.Data.TaskId == 3)
-            args.Cancel = true;
-    }
+private void TaskbarBeginEditHandler(TaskbarEditingEventArgs<TaskData> args)
+{
+if (args.Data.TaskId == 3)
+args.Cancel = true;
+}
 
     public List<TaskData>? TaskCollection { get; set; }
     protected override void OnInitialized()
@@ -173,6 +175,7 @@ For more information, refer to the following:
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}

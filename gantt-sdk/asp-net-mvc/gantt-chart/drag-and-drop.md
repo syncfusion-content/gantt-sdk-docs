@@ -16,10 +16,10 @@ You can dynamically rearrange the rows in the Gantt control by using the `AllowR
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/rows/defaultdrag/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/rows/defaultdrag/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Defaultdrag.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/rows/defaultdrag/defaultdrag.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/rows/defaultdrag/defaultdrag.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -27,15 +27,13 @@ You can dynamically rearrange the rows in the Gantt control by using the `AllowR
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/rows/defaultdrag/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/rows/defaultdrag/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Defaultdrag.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/rows/defaultdrag/defaultdrag.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/rows/defaultdrag/defaultdrag.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/defaultdrag.png)
 
@@ -47,10 +45,10 @@ Gantt also supports dragging multiple rows at a time and drop them on any rows a
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/rows/multidrag/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/rows/multidrag/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Multidrag.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/rows/multidrag/multidrag.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/rows/multidrag/multidrag.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -58,15 +56,13 @@ Gantt also supports dragging multiple rows at a time and drop them on any rows a
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/rows/multidrag/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/rows/multidrag/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Multidrag.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/rows/multidrag/multidrag.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/rows/multidrag/multidrag.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/multidrag.png)
 
@@ -80,10 +76,10 @@ This mode can be enable by setting the [AllowTaskbarDragAndDrop](https://help.sy
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/rows/taskbardragdrop/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/rows/taskbardragdrop/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="TaskbarDragDrop.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/rows/taskbardragdrop/taskbardragdrop.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/rows/taskbardragdrop/taskbardragdrop.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -91,10 +87,10 @@ This mode can be enable by setting the [AllowTaskbarDragAndDrop](https://help.sy
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/rows/taskbardragdrop/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/rows/taskbardragdrop/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="TaskbarDragDrop.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/rows/taskbardragdrop/taskbardragdrop.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/rows/taskbardragdrop/taskbardragdrop.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -103,12 +99,12 @@ This mode can be enable by setting the [AllowTaskbarDragAndDrop](https://help.sy
 
 We provide various events to customize the row drag and drop action, the following table explains about the available events and its details.
 
-|Event Name |Description|
-|-----|-----|
-|`RowDragStartHelper`  |Triggers when clicking the drag icon or Gantt row.|
-|`RowDragStart`  |Triggers when drag action starts in Gantt.|
-|`RowDrag`  |Triggers while dragging the Gantt row.|
-|`RowDrop`  |Triggers when a drag row was dropped on the target row.|
+| Event Name           | Description                                             |
+| -------------------- | ------------------------------------------------------- |
+| `RowDragStartHelper` | Triggers when clicking the drag icon or Gantt row.      |
+| `RowDragStart`       | Triggers when drag action starts in Gantt.              |
+| `RowDrag`            | Triggers while dragging the Gantt row.                  |
+| `RowDrop`            | Triggers when a drag row was dropped on the target row. |
 
 ## Customize row drag and drop action
 
@@ -122,10 +118,10 @@ You can prevent drag action of the particular record by setting the `cancel` pro
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/rows/preventdrag/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/rows/preventdrag/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Preventdrag.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/rows/preventdrag/preventdrag.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/rows/preventdrag/preventdrag.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -133,10 +129,10 @@ You can prevent drag action of the particular record by setting the `cancel` pro
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/rows/preventdrag/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/rows/preventdrag/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Preventdrag.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/rows/preventdrag/preventdrag.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/rows/preventdrag/preventdrag.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -151,10 +147,10 @@ In the following sample, we have prevented the drop action based on the position
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/rows/preventdrop/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/rows/preventdrop/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Preventdrop.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/rows/preventdrop/preventdrop.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/rows/preventdrop/preventdrop.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -162,10 +158,10 @@ In the following sample, we have prevented the drop action based on the position
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/rows/preventdrop/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/rows/preventdrop/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Preventdrop.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/rows/preventdrop/preventdrop.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/rows/preventdrop/preventdrop.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -180,10 +176,10 @@ In the below example drop action is cancelled and dropped above to target row.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/rows/preventReorder/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/rows/preventReorder/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="PreventReorder.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/rows/preventReorder/preventReorder.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/rows/preventReorder/preventReorder.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -191,10 +187,10 @@ In the below example drop action is cancelled and dropped above to target row.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/rows/preventReorder/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/rows/preventReorder/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="PreventReorder.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/rows/preventReorder/preventReorder.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/rows/preventReorder/preventReorder.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -203,9 +199,9 @@ In the below example drop action is cancelled and dropped above to target row.
 
 Gantt provides option to perform row drag and drop action programmatically by using the `reorderRows` method, this method can be used for any external actions like button click. The following arguments are used to specify the positions to drag and drop a row:
 
-* `fromIndexes`: Index value of source(dragging) row.
-* `toIndex`: Value of target index.
-* `position`: Drop positions such as above, below, or child.
+- `fromIndexes`: Index value of source(dragging) row.
+- `toIndex`: Value of target index.
+- `position`: Drop positions such as above, below, or child.
 
 The following code example shows how to drag and drop a row on button click action.
 
@@ -213,10 +209,10 @@ The following code example shows how to drag and drop a row on button click acti
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/rows/dynamicdrag/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/rows/dynamicdrag/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Dynamicdrag.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/rows/dynamicdrag/dynamicdrag.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/rows/dynamicdrag/dynamicdrag.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -224,10 +220,10 @@ The following code example shows how to drag and drop a row on button click acti
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/rows/dynamicdrag/razor %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/rows/dynamicdrag/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Dynamicdrag.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/rows/dynamicdrag/dynamicdrag.cs %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt/rows/dynamicdrag/dynamicdrag.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

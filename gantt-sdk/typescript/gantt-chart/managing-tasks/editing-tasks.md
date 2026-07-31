@@ -3,7 +3,7 @@ layout: post
 title: Editing tasks in TypeScript Gantt control | Syncfusion
 description: Learn here all about Editing tasks in Syncfusion TypeScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Editing tasks 
+control: Editing tasks
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -14,10 +14,11 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 The editing feature can be enabled in the Gantt control by enabling the [editSettings.allowEditing](../../api/gantt/editSettings#allowediting) and [editSettings.allowTaskbarEditing](../../api/gantt/editSettings#allowtaskbarediting) properties.
 
 The following editing options are available to update the tasks in the Gantt chart:
-* Cell
-* Dialog
-* Taskbar
-* Dependency links
+
+- Cell
+- Dialog
+- Taskbar
+- Dependency links
 
 ## Cell editing
 
@@ -31,27 +32,27 @@ The following code example shows you how to enable the cell editing in Gantt con
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs10/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/getting-started-cs10/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs10/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/getting-started-cs10/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs10" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/getting-started-cs10" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs10/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/getting-started-cs10/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs10/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/getting-started-cs10/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs10" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/getting-started-cs10" %}
 {% endif %}
 
 `Note:` When the edit mode is set to `Auto`, on performing double-click action on TreeGrid side, the cells will be changed to editable mode and on performing double-click action on chart side, the edit dialog will appear for editing the task details.
@@ -64,27 +65,27 @@ Modify the task details through the edit dialog by setting the edit [mode](../..
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs11/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/getting-started-cs11/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs11/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/getting-started-cs11/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs11" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/getting-started-cs11" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs11/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/getting-started-cs11/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs11/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/getting-started-cs11/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/getting-started-cs11" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/getting-started-cs11" %}
 {% endif %}
 
 `Note:` In dialog editing mode, the edit dialog appears when performing double-click action on both TreeGrid or Gantt chart sides.
@@ -97,27 +98,27 @@ In the Gantt dialog, you can define the required tabs or editing sections using 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/editing-cs2/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/editing-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/editing-cs2/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/editing-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/editing-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/editing-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/editing-cs2/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/editing-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/editing-cs2/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/editing-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/editing-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/editing-cs2" %}
 {% endif %}
 
 ### Limiting data fields in general tab
@@ -130,27 +131,27 @@ In the Gantt dialog, you can make only specific data source fields visible for e
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/editing-cs3/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/editing-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/editing-cs3/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/editing-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/editing-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/editing-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/editing-cs3/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/editing-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/editing-cs3/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/editing-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/editing-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/editing-cs3" %}
 {% endif %}
 
 ## Task dependencies
@@ -159,9 +160,9 @@ In the Gantt control, you can update the dependencies between the tasks and link
 
 You can update the task dependencies using the following ways:
 
-* Mouse interactions: Using connector points in the taskbar, you can perform drag and drop action to create task dependency links.
-* Edit dialog: Create or remove the task dependencies using the `Dependency` tab in the edit dialog.
-* Cell editing: Create or remove the task links using cell editing.
+- Mouse interactions: Using connector points in the taskbar, you can perform drag and drop action to create task dependency links.
+- Edit dialog: Create or remove the task dependencies using the `Dependency` tab in the edit dialog.
+- Cell editing: Create or remove the task links using cell editing.
 
 The following code example demonstrates how to enable task dependency editing in the Gantt chart using the [editSettings](../../api/gantt/editSettings) property.
 
@@ -169,27 +170,27 @@ The following code example demonstrates how to enable task dependency editing in
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/editing-cs6/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/editing-cs6/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/editing-cs6/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/editing-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/editing-cs6" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/editing-cs6" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/editing-cs6/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/editing-cs6/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/editing-cs6/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/editing-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/editing-cs6" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/editing-cs6" %}
 {% endif %}
 
 ![Alt text](../images/user-interaction.png)
@@ -210,7 +211,7 @@ Updating with dialog
 
 Tasks' value can be dynamically updated by using the [updateRecordById](../../api/gantt#updaterecordbyid) method. You can call this method on any custom action. The following code example shows how to use this method to update a task.
 
->NOTE: Using the [updateRecordById](../../api/gantt#updaterecordbyid) method, you cannot update the task ID value.
+> NOTE: Using the [updateRecordById](../../api/gantt#updaterecordbyid) method, you cannot update the task ID value.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -218,14 +219,14 @@ Tasks' value can be dynamically updated by using the [updateRecordById](../../ap
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/updateRecordById-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/updateRecordById-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/updateRecordById-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/updateRecordById-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/updateRecordById-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/updateRecordById-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -233,14 +234,14 @@ Tasks' value can be dynamically updated by using the [updateRecordById](../../ap
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/updateRecordById-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/updateRecordById-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/updateRecordById-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/updateRecordById-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/updateRecordById-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/updateRecordById-cs1" %}
 {% endif %}
 
 ![Delete action](../images/delete-action.png)

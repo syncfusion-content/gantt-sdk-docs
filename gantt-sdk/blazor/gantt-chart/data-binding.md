@@ -9,18 +9,18 @@ documentation: ug
 
 # Data Binding in Blazor Gantt Chart Component
 
-Data binding connects the Blazor Gantt component to project data sources, enabling dynamic visualization and management of project information. The component supports both local and remote data integration through the  [DataSource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_DataSource) property, which accepts either a list of business objects or a [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html) instance.
+Data binding connects the Blazor Gantt component to project data sources, enabling dynamic visualization and management of project information. The component supports both local and remote data integration through the [DataSource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_DataSource) property, which accepts either a list of business objects or a [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html) instance.
 
 It supports the following kinds of data binding method:
 
-* List binding
-* Remote data
+- List binding
+- Remote data
 
 N> When using `DataSource` as `IEnumerable<T>`, component type(TValue) will be inferred from its value. When using `SfDataManager` for data binding, the **TValue** must be provided explicitly in the Gantt component.
 
 ## TaskFields mapping
 
-Bind data with the Gantt Chart component by using the [DataSource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_DataSource) property. It accepts the list objects or the [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html) instance. 
+Bind data with the Gantt Chart component by using the [DataSource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_DataSource) property. It accepts the list objects or the [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html) instance.
 
 Additionally, task-related fields from the data source are mapped to the Gantt Chart component using the [GanttTaskFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html) property. This property ensures that the necessary task fields, such as [Id](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_Id), [Name](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_Name), [StartDate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_StartDate), [EndDate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_EndDate), [Duration](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_Duration), and [ParentID](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_ParentID) are properly linked to the corresponding data source fields, allowing the Gantt Chart to render tasks accurately. The columns in the Gantt Chart are automatically rendered based on the properties specified in `GanttTaskFields`, ensuring that the necessary columns are displayed to represent the task data.
 
@@ -37,11 +37,11 @@ This following sample shows self-referential data binding in the Gantt Chart by 
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public class TaskData
     {
@@ -68,6 +68,7 @@ This following sample shows self-referential data binding in the Gantt Chart by 
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -94,11 +95,11 @@ Hierarchical data binding organizes complex parent-child relationships through n
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public class TaskData
     {
@@ -118,6 +119,7 @@ Hierarchical data binding organizes complex parent-child relationships through n
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -125,9 +127,9 @@ Hierarchical data binding organizes complex parent-child relationships through n
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/LjVxDGLXBNRgDNIr?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-> * Indent/Outdent is not supported for hierarchy data.
->* ExpandCollapse state maintenance is not supported for hierarchy data.
->* Row drag and drop feature is not supported for hierarchy data.
+> - Indent/Outdent is not supported for hierarchy data.
+> - ExpandCollapse state maintenance is not supported for hierarchy data.
+> - Row drag and drop feature is not supported for hierarchy data.
 
 ### Self-referential data structure
 
@@ -140,16 +142,16 @@ This approach enables the component to reconstruct hierarchical tree structures 
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="700px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
+</GanttTaskFields>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public class TaskData
     {
@@ -172,6 +174,7 @@ This approach enables the component to reconstruct hierarchical tree structures 
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -204,11 +207,11 @@ To handle scenarios where the data model is not defined at compile time, the Gan
 </SfGantt>
 
 @code {
-    private string NumberFormat = "C";
-    private static List<DynamicDictionary> Data = new List<DynamicDictionary>();
-    private List<DynamicDictionary>? GanttDynamicData { get; set; }
-    private static int ParentRecordID { get; set; }
-    private static int ChildRecordID { get; set; }
+private string NumberFormat = "C";
+private static List<DynamicDictionary> Data = new List<DynamicDictionary>();
+private List<DynamicDictionary>? GanttDynamicData { get; set; }
+private static int ParentRecordID { get; set; }
+private static int ChildRecordID { get; set; }
 
     protected override void OnInitialized()
     {
@@ -274,7 +277,7 @@ To handle scenarios where the data model is not defined at compile time, the Gan
                 dictionary[binder.Name] = value;
             }
             return true;
-            
+
         }
 
         public override System.Collections.Generic.IEnumerable<string> GetDynamicMemberNames()
@@ -282,6 +285,7 @@ To handle scenarios where the data model is not defined at compile time, the Gan
             return dictionary?.Keys;
         }
     }
+
 }
 
 {% endhighlight %}
@@ -300,15 +304,15 @@ To handle scenarios where the model type is unknown at compile time, the Gantt C
 @using System.Dynamic
 
 <SfGantt TValue="ExpandoObject" DataSource="@TreeData" @ref="Gantt" Height="450px" Width="700px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" Duration="Duration"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" Duration="Duration"
                      Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true"></GanttEditSettings>
+</GanttTaskFields>
+<GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true"></GanttEditSettings>
 </SfGantt>
 
 @code {
-    SfGantt<ExpandoObject>? Gantt;
-    private List<ExpandoObject>? TreeData { get; set; }
+SfGantt<ExpandoObject>? Gantt;
+private List<ExpandoObject>? TreeData { get; set; }
 
     protected override void OnInitialized()
     {
@@ -358,6 +362,7 @@ To handle scenarios where the model type is unknown at compile time, the Gantt C
             Data.Add(ChildRecord);
         }
     }
+
 }
 
 {% endhighlight %}
@@ -397,8 +402,8 @@ To handle dynamic changes in the data source, the Gantt Chart supports binding t
 </div>
 
 @code {
-    public ObservableCollection<TaskData>? ObservableData { get; set; }
-    public string StatusMessage { get; set; } = "";
+public ObservableCollection<TaskData>? ObservableData { get; set; }
+public string StatusMessage { get; set; } = "";
 
     protected override void OnInitialized()
     {
@@ -426,14 +431,14 @@ To handle dynamic changes in the data source, the Gantt Chart supports binding t
 
     public void DeleteRecord()
     {
-       
+
             if (ObservableData.Count != 0)
             {
                 int deleteRecordTaskID = ObservableData.First().TaskId;
                 ObservableData.Remove(ObservableData.First());
                 RemoveChild(deleteRecordTaskID);
             }
-        
+
     }
 
     public void RemoveChild(int id)
@@ -444,7 +449,7 @@ To handle dynamic changes in the data source, the Gantt Chart supports binding t
                 RemoveChild(child.TaskId);
                 ObservableData.Remove(child);
             }
-        
+
     }
 
     public ObservableCollection<TaskData> ProjectNewData()
@@ -484,6 +489,7 @@ To handle dynamic changes in the data source, the Gantt Chart supports binding t
         public int Progress { get; set; }
         public int? ParentId { get; set; }
     }
+
 }
 
 {% endhighlight %}
@@ -515,10 +521,11 @@ This interface is used to notify that a property value has changed. For example,
         </GanttTaskFields>
         <GanttEditSettings AllowEditing="true"></GanttEditSettings>
     </SfGantt>
+
 </div>
 
 @code {
-    public ObservableCollection<TaskData>? ObservableData { get; set; }
+public ObservableCollection<TaskData>? ObservableData { get; set; }
 
     protected override void OnInitialized()
     {
@@ -579,6 +586,7 @@ This interface is used to notify that a property value has changed. For example,
             PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
         }
     }
+
 }
 
 {% endhighlight %}
@@ -592,7 +600,7 @@ The Syncfusion Blazor component enables remote data binding by connecting UI com
 
 To bind remote data to the Gantt component, assign service data as an instance of [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html) to the `DataSource` property or use the `SfDataManager` component.Set the service endpoint using the **Url** property to enable data operations.
 
- N> When using `SfDataManager` for data binding,  the **TValue** must be provided explicitly in the Gantt component.
+N> When using `SfDataManager` for data binding, the **TValue** must be provided explicitly in the Gantt component.
 <br/> By default, `SfDataManager` uses **ODataAdaptor** for remote data-binding.
 
 ### Web API adaptor
@@ -613,16 +621,16 @@ The Gantt Chart component utilizes the **WebApiAdaptor**, an extension of the **
 </SfGantt>
 
 @code {
-    public class GanttRemoteData
-    {
-        public int TaskId { get; set; }
-        public string? TaskName { get; set; }
-        public DateTime? StartDate { get; set; }
-        public int? Duration { get; set; }
-        public int Progress { get; set; }
-        public string? Predecessor { get; set; }
-        public List<GanttRemoteData>? SubTasks { get; set; }
-    }
+public class GanttRemoteData
+{
+public int TaskId { get; set; }
+public string? TaskName { get; set; }
+public DateTime? StartDate { get; set; }
+public int? Duration { get; set; }
+public int Progress { get; set; }
+public string? Predecessor { get; set; }
+public List<GanttRemoteData>? SubTasks { get; set; }
+}
 }
 {% endhighlight %}
 {% endtabs %}
@@ -644,19 +652,19 @@ The Gantt Chart component seamlessly integrates with OData V4 services via the *
 
 <SfGantt TValue="TaskDatum" Height="450px" Width="100%" HighlightWeekends="true" AllowFiltering="true" AllowSorting="true" Toolbar="@(new List<string>(){ "Add", "Edit", "Update", "Delete", "Cancel", "ExpandAll", "CollapseAll","Indent","Outdent"})" AllowSelection="true" GridLines="GridLine.Both"
 TreeColumnIndex="1">
-    <SfDataManager Url="odata/Gantt" Adaptor="Adaptors.ODataV4Adaptor"></SfDataManager>
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId"></GanttTaskFields>
-    <GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true" ShowDeleteConfirmDialog="true"></GanttEditSettings>
-    <GanttColumns>
-        <GanttColumn Field="TaskId" Width="100"></GanttColumn>
-        <GanttColumn Field="TaskName" HeaderText="Job Name" Width="250" ClipMode="Syncfusion.Blazor.Grids.ClipMode.EllipsisWithTooltip"></GanttColumn>
-        <GanttColumn Field="StartDate" HeaderText="Start Date"></GanttColumn>
-        <GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
-        <GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
-    </GanttColumns>
-    <GanttLabelSettings LeftLabel="TaskName" TValue="TaskDatum">
-    </GanttLabelSettings>
-    <GanttSplitterSettings Position="40%"> </GanttSplitterSettings>
+<SfDataManager Url="odata/Gantt" Adaptor="Adaptors.ODataV4Adaptor"></SfDataManager>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId"></GanttTaskFields>
+<GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true" ShowDeleteConfirmDialog="true"></GanttEditSettings>
+<GanttColumns>
+<GanttColumn Field="TaskId" Width="100"></GanttColumn>
+<GanttColumn Field="TaskName" HeaderText="Job Name" Width="250" ClipMode="Syncfusion.Blazor.Grids.ClipMode.EllipsisWithTooltip"></GanttColumn>
+<GanttColumn Field="StartDate" HeaderText="Start Date"></GanttColumn>
+<GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
+<GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
+</GanttColumns>
+<GanttLabelSettings LeftLabel="TaskName" TValue="TaskDatum">
+</GanttLabelSettings>
+<GanttSplitterSettings Position="40%"> </GanttSplitterSettings>
 </SfGantt>
 
 {% endhighlight %}
@@ -667,14 +675,14 @@ namespace ODataAdap.Models;
 
 public partial class TaskDatum
 {
-    public long Id { get; set; }
-    public int TaskId { get; set; }
-    public string? TaskName { get; set; }
-    public DateTime? StartDate { get; set; }
-    public DateTime? EndDate { get; set; }
-    public int? ParentId { get; set; }
-    public int? Progress { get; set; }
-    public int? Duration { get; set; }
+public long Id { get; set; }
+public int TaskId { get; set; }
+public string? TaskName { get; set; }
+public DateTime? StartDate { get; set; }
+public DateTime? EndDate { get; set; }
+public int? ParentId { get; set; }
+public int? Progress { get; set; }
+public int? Duration { get; set; }
 }
 
 {% endhighlight %}
@@ -690,44 +698,44 @@ using ODataAdap.Models;
 
 namespace ODataAdap.Controllers
 {
-    [Route("api/[controller]")]
-    public class GanttController : ODataController
-    {
-        private OdataContext _db;
-        public GanttController(OdataContext context)
-        {
-            _db = context;
-        }
-        [HttpGet]
-        [EnableQuery]
-        public IActionResult Get()
-        {
-            return Ok(_db.TaskData);
-        }
-        [EnableQuery]
-        public async Task<IActionResult> Post([FromBody] TaskDatum data)
-        {
-            _db.TaskData.Add(data);
-            _db.SaveChanges();
-            return Created(data);
-        }
-        [EnableQuery]
-        public async Task<IActionResult> Patch([FromODataUri] long key, [FromBody] Delta<TaskDatum> data)
-        {
-            var entity = await _db.TaskData.FindAsync(key);
-            data.Patch(entity);
-            await _db.SaveChangesAsync();
-            return Updated(entity);
-        }
-        [EnableQuery]
-        public long Delete([FromODataUri] long key)
-        {
-            var deleterow = _db.TaskData.Find(key);
-            _db.TaskData.Remove(deleterow);
-            _db.SaveChanges();
-            return key;
-        }
-    }
+[Route("api/[controller]")]
+public class GanttController : ODataController
+{
+private OdataContext \_db;
+public GanttController(OdataContext context)
+{
+\_db = context;
+}
+[HttpGet]
+[EnableQuery]
+public IActionResult Get()
+{
+return Ok(\_db.TaskData);
+}
+[EnableQuery]
+public async Task<IActionResult> Post([FromBody] TaskDatum data)
+{
+\_db.TaskData.Add(data);
+\_db.SaveChanges();
+return Created(data);
+}
+[EnableQuery]
+public async Task<IActionResult> Patch([FromODataUri] long key, [FromBody] Delta<TaskDatum> data)
+{
+var entity = await \_db.TaskData.FindAsync(key);
+data.Patch(entity);
+await \_db.SaveChangesAsync();
+return Updated(entity);
+}
+[EnableQuery]
+public long Delete([FromODataUri] long key)
+{
+var deleterow = \_db.TaskData.Find(key);
+\_db.TaskData.Remove(deleterow);
+\_db.SaveChanges();
+return key;
+}
+}
 }
 
 {% endhighlight %}
@@ -747,11 +755,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 static IEdmModel GetEdmModel()
 {
-    ODataConventionModelBuilder builder = new ODataConventionModelBuilder();
-    var datas = builder.EntitySet<TaskDatum>("Gantt");
-    FunctionConfiguration myFirstFunction = datas.EntityType.Collection.Function("MyFirstFunction");
-    myFirstFunction.ReturnsCollectionFromEntitySet<TaskDatum>("Gantt");
-    return builder.GetEdmModel();
+ODataConventionModelBuilder builder = new ODataConventionModelBuilder();
+var datas = builder.EntitySet<TaskDatum>("Gantt");
+FunctionConfiguration myFirstFunction = datas.EntityType.Collection.Function("MyFirstFunction");
+myFirstFunction.ReturnsCollectionFromEntitySet<TaskDatum>("Gantt");
+return builder.GetEdmModel();
 }
 builder.Services.AddMvc(options => options.EnableEndpointRouting = false);
 builder.Services.AddRazorPages();
@@ -759,7 +767,7 @@ builder.Services.AddServerSideBlazor();
 builder.Services.AddSyncfusionBlazor();
 
 builder.Services.AddDbContext<OdataContext>(option =>
-                option.UseSqlServer(builder.Configuration.GetConnectionString("GanttDatabase")));
+option.UseSqlServer(builder.Configuration.GetConnectionString("GanttDatabase")));
 
 builder.Services.AddControllers().AddOData(opt => opt.AddRouteComponents("odata", GetEdmModel()).Count().Filter().OrderBy().Expand().Select().SetMaxTop(null));
 builder.Services.AddControllersWithViews();
@@ -770,9 +778,9 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+app.UseExceptionHandler("/Error");
+// The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+app.UseHsts();
 }
 
 app.UseHttpsRedirection();
@@ -783,7 +791,7 @@ app.UseRouting();
 app.MapControllers();
 app.UseMvcWithDefaultRoute();
 app.MapBlazorHub();
-app.MapFallbackToPage("/_Host");
+app.MapFallbackToPage("/\_Host");
 
 app.Run();
 
@@ -792,7 +800,6 @@ app.Run();
 {% endtabs %}
 
 ### Load child on demand
-
 
 To load child records dynamically, set the remote service URL in `SfDataManager.Url` and configure the [GanttTaskFields.HasChildMapping](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_HasChildMapping) property.
 
@@ -828,75 +835,75 @@ The `LoadChildOnDemand` property, when enabled, renders parent records in an exp
 
 namespace WebAPI.Data
 {
-    public class TaskData
-    {
-        public static List<TaskData> tree = new List<TaskData>();
-        [JsonPropertyName("ID")]
-        public int ID { get; set; }
-        [JsonPropertyName("TaskName")]
-        public string TaskName { get; set; }
-        [JsonPropertyName("StartDate")]
-        public DateTime StartDate { get; set; }
-        [JsonPropertyName("EndDate")]
-        public DateTime EndDate { get; set; }
-        [JsonPropertyName("Duration")]
-        public string Duration { get; set; }
-        [JsonPropertyName("Progress")]
-        public int Progress { get; set; }
-        [JsonPropertyName("ParentId")]
-        public int? ParentId { get; set; }
-        [JsonPropertyName("Predecessor")]
-        public string Predecessor { get; set; }
-        [JsonPropertyName("isParent")]
-        public bool? isParent { get; set; }
-        public TaskData() { }
-        public static List<TaskData> GetTree()
-        {
-            if (tree.Count == 0)
-            {
-                Random rand = new Random();
-                var x = 0;
-                int duration = 0;
-                DateTime startDate = new DateTime(2000, 1, 3, 08, 00, 00);
-                for (var i = 1; i <= 50; i++)
-                {
-                    startDate = startDate.AddDays(i == 1 ? 0 : 7);
-                    DateTime childStartDate = startDate;
-                    TaskData Parent = new TaskData()
-                    {
-                        ID = ++x,
-                        TaskName = "Task " + x,
-                        StartDate = startDate,
-                        EndDate = startDate.AddDays(26),
-                        Duration = "20",
-                        Progress = rand.Next(100),
-                        Predecessor = null,
-                        isParent = true,
-                        ParentId = null
-                    };
-                    tree.Add(Parent);
-                    for (var j = 1; j <= 4; j++)
-                    {
-                        childStartDate = childStartDate.AddDays(j == 1 ? 0 : duration + 2);
-                        duration = 5;
-                        tree.Add(new TaskData()
-                        {
-                            ID = ++x,
-                            TaskName = "Task " + x,
-                            StartDate = childStartDate,
-                            EndDate = childStartDate.AddDays(5),
-                            Duration = duration.ToString(),
-                            Progress = rand.Next(100),
-                            ParentId = Parent.ID,
-                            Predecessor = j > 1 ? (x - 1) + "FS" : "",
-                            isParent = false
-                        });
-                    }
-                }
-            }
-            return tree;
-        }
-    }
+public class TaskData
+{
+public static List<TaskData> tree = new List<TaskData>();
+[JsonPropertyName("ID")]
+public int ID { get; set; }
+[JsonPropertyName("TaskName")]
+public string TaskName { get; set; }
+[JsonPropertyName("StartDate")]
+public DateTime StartDate { get; set; }
+[JsonPropertyName("EndDate")]
+public DateTime EndDate { get; set; }
+[JsonPropertyName("Duration")]
+public string Duration { get; set; }
+[JsonPropertyName("Progress")]
+public int Progress { get; set; }
+[JsonPropertyName("ParentId")]
+public int? ParentId { get; set; }
+[JsonPropertyName("Predecessor")]
+public string Predecessor { get; set; }
+[JsonPropertyName("isParent")]
+public bool? isParent { get; set; }
+public TaskData() { }
+public static List<TaskData> GetTree()
+{
+if (tree.Count == 0)
+{
+Random rand = new Random();
+var x = 0;
+int duration = 0;
+DateTime startDate = new DateTime(2000, 1, 3, 08, 00, 00);
+for (var i = 1; i <= 50; i++)
+{
+startDate = startDate.AddDays(i == 1 ? 0 : 7);
+DateTime childStartDate = startDate;
+TaskData Parent = new TaskData()
+{
+ID = ++x,
+TaskName = "Task " + x,
+StartDate = startDate,
+EndDate = startDate.AddDays(26),
+Duration = "20",
+Progress = rand.Next(100),
+Predecessor = null,
+isParent = true,
+ParentId = null
+};
+tree.Add(Parent);
+for (var j = 1; j <= 4; j++)
+{
+childStartDate = childStartDate.AddDays(j == 1 ? 0 : duration + 2);
+duration = 5;
+tree.Add(new TaskData()
+{
+ID = ++x,
+TaskName = "Task " + x,
+StartDate = childStartDate,
+EndDate = childStartDate.AddDays(5),
+Duration = duration.ToString(),
+Progress = rand.Next(100),
+ParentId = Parent.ID,
+Predecessor = j > 1 ? (x - 1) + "FS" : "",
+isParent = false
+});
+}
+}
+}
+return tree;
+}
+}
 }
 
 {% endhighlight %}
@@ -916,10 +923,10 @@ using System.Collections;
 
 namespace WebAPI.Controller
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class DefaultController : ControllerBase
-    {
+[Route("api/[controller]")]
+[ApiController]
+public class DefaultController : ControllerBase
+{
 
         public static List<TaskData> DataList = new List<TaskData>();
         private static DataRequest req = null;
@@ -1080,15 +1087,16 @@ namespace WebAPI.Controller
             return source;
         }
     }
+
 }
 
 {% endhighlight %}
 
 {% endtabs %}
 
-> * Filtering and searching are not supported in load on demand.
-> * Only Self-Referential type data is supported with remote data binding in Gantt Chart.
-> * Load-on-demand supports only the validated data source.
+> - Filtering and searching are not supported in load on demand.
+> - Only Self-Referential type data is supported with remote data binding in Gantt Chart.
+> - Load-on-demand supports only the validated data source.
 
 N>You can find the sample for load on demand [here](https://github.com/SyncfusionExamples/Lazy-Loading-in-Blazor-Gantt-Chart).
 
@@ -1108,7 +1116,7 @@ To specify custom parameters in a data request, use the `addParams` method of th
 </SfGantt>
 
 @code {
-    private Query? GanttQuery { get; set; }
+private Query? GanttQuery { get; set; }
 
     protected override void OnInitialized()
     {
@@ -1125,6 +1133,7 @@ To specify custom parameters in a data request, use the `addParams` method of th
         public int Progress { get; set; }
         public int? ParentID { get; set; }
     }
+
 }
 
 {% endhighlight %}
@@ -1133,24 +1142,24 @@ To specify custom parameters in a data request, use the `addParams` method of th
 
 namespace URLAdaptor.Models
 {
-    public class TaskDetails
-    {
-        // Static list to hold order data.
-        public static List<TaskDetails> order = new List<TaskDetails>();
-        // Default constructor.
-        public TaskDetails() { }
-        // Parameterized constructor to initialize order details.
-        public TaskDetails(int TaskID, string TaskName, DateTime StartDate, DateTime EndDate, string Duration, int Progress, int? ParentID)
-        {
-            this.TaskID = TaskID;
-            this.TaskName = TaskName;
-            this.StartDate = StartDate;
-            this.EndDate = EndDate;
-            this.Duration = Duration;
-            this.Progress = Progress;
-            this.ParentID = ParentID;
-        }       
- 
+public class TaskDetails
+{
+// Static list to hold order data.
+public static List<TaskDetails> order = new List<TaskDetails>();
+// Default constructor.
+public TaskDetails() { }
+// Parameterized constructor to initialize order details.
+public TaskDetails(int TaskID, string TaskName, DateTime StartDate, DateTime EndDate, string Duration, int Progress, int? ParentID)
+{
+this.TaskID = TaskID;
+this.TaskName = TaskName;
+this.StartDate = StartDate;
+this.EndDate = EndDate;
+this.Duration = Duration;
+this.Progress = Progress;
+this.ParentID = ParentID;
+}
+
         public static List<TaskDetails> GetAllRecords()
         {
             List<TaskDetails> Tasks = new List<TaskDetails>()
@@ -1166,7 +1175,7 @@ namespace URLAdaptor.Models
             };
             return Tasks;
         }
- 
+
         // Properties representing order details.
         public int TaskID { get; set; }
         public string TaskName { get; set; }
@@ -1174,8 +1183,9 @@ namespace URLAdaptor.Models
         public DateTime? EndDate { get; set; }
         public string Duration { get; set; }
         public int Progress { get; set; }
-        public int? ParentID { get; set; }        
+        public int? ParentID { get; set; }
     }
+
 }
 
 {% endhighlight %}
@@ -1186,22 +1196,22 @@ using Microsoft.AspNetCore.Mvc;
 using Syncfusion.Blazor;
 using Syncfusion.Blazor.Data;
 using URLAdaptor.Models;
- 
+
 namespace URLAdaptor.Controllers
-{    
-    public class HomeController : ControllerBase
-    {
-        /// <summary>
-        /// Retrieve data from the data source.
-        /// </summary>
-        /// <returns>Returns a list of TaskDetails records.</returns>
-        [HttpGet]
-        [Route("api/[controller]")]
-        public List<TaskDetails> GetOrderData()
-        {
-            return TaskDetails.GetAllRecords().ToList();
-        }
- 
+{  
+ public class HomeController : ControllerBase
+{
+/// <summary>
+/// Retrieve data from the data source.
+/// </summary>
+/// <returns>Returns a list of TaskDetails records.</returns>
+[HttpGet]
+[Route("api/[controller]")]
+public List<TaskDetails> GetOrderData()
+{
+return TaskDetails.GetAllRecords().ToList();
+}
+
         /// <summary>
         /// Handles server-side data operations such as searching, filtering, sorting, paging, and returns the processed data.
         /// </summary>
@@ -1211,9 +1221,9 @@ namespace URLAdaptor.Controllers
         [Route("api/[controller]")]
         public object Post([FromBody] DataManagerRequest DataManagerRequest)
         {
-            // Retrieve data from the data source (e.g., database).            
+            // Retrieve data from the data source (e.g., database).
             IQueryable<TaskDetails> data = TaskDetails.GetAllRecords().AsQueryable();
- 
+
             if (DataManagerRequest.Params != null && DataManagerRequest.Params.ContainsKey("TaskID"))
             {
                 var param = DataManagerRequest.Params["TaskID"];
@@ -1222,24 +1232,24 @@ namespace URLAdaptor.Controllers
                     data = data.Where(d => d.TaskID == taskId);
                 }
             }
- 
+
             if (DataManagerRequest.Search != null && DataManagerRequest.Search.Count > 0)
             {
                 data = DataOperations.PerformSearching(data, DataManagerRequest.Search);
             }
- 
+
             if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0)
             {
                 data = DataOperations.PerformFiltering(data, DataManagerRequest.Where, DataManagerRequest.Where[0].Operator);
             }
- 
+
             if (DataManagerRequest.Sorted != null && DataManagerRequest.Sorted.Count > 0)
             {
                 data = DataOperations.PerformSorting(data, DataManagerRequest.Sorted);
             }
- 
+
             int totalRecordsCount = data.Count();
- 
+
             if (DataManagerRequest.Skip != 0)
             {
                 data = DataOperations.PerformSkip(data, DataManagerRequest.Skip);
@@ -1248,7 +1258,7 @@ namespace URLAdaptor.Controllers
             {
                 data = DataOperations.PerformTake(data, DataManagerRequest.Take);
             }
- 
+
             return new { result = data.ToList(), count = totalRecordsCount };
         }
         public class CRUDModel<T> where T : class
@@ -1263,6 +1273,7 @@ namespace URLAdaptor.Controllers
             public IDictionary<string, object>? @params { get; set; }
         }
     }
+
 }
 
 {% endhighlight %}
@@ -1284,28 +1295,27 @@ The following sample code demonstrates notifying user when server-side exception
 @using Syncfusion.Blazor.Data
 @using Syncfusion.Blazor.Gantt
 
-
 <label class="error" style="display:block; color: red; margin-bottom: 20px;">@ErrorDetails</label>
 <SfGantt TValue="TaskData" Height="450px" Width="700px">
-    <SfDataManager Url="https://some.com/invalidUrl" Adaptor="Adaptors.UrlAdaptor"></SfDataManager>
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration"
+<SfDataManager Url="https://some.com/invalidUrl" Adaptor="Adaptors.UrlAdaptor"></SfDataManager>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration"
                      Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttEvents TValue="TaskData" OnActionFailure="ActionFailure"></GanttEvents>
+</GanttTaskFields>
+<GanttEvents TValue="TaskData" OnActionFailure="ActionFailure"></GanttEvents>
 </SfGantt>
 
 @code {
-    private string ErrorDetails = "";
-    public class TaskData
-    {
-        public int TaskId { get; set; }
-        public string? TaskName { get; set; }
-        public DateTime? StartDate { get; set; }
-        public DateTime? EndDate { get; set; }
-        public string? Duration { get; set; }
-        public int Progress { get; set; }
-        public int? ParentId { get; set; }
-    }
+private string ErrorDetails = "";
+public class TaskData
+{
+public int TaskId { get; set; }
+public string? TaskName { get; set; }
+public DateTime? StartDate { get; set; }
+public DateTime? EndDate { get; set; }
+public string? Duration { get; set; }
+public int Progress { get; set; }
+public int? ParentId { get; set; }
+}
 
     public void ActionFailure(Syncfusion.Blazor.Grids.FailureEventArgs args)
     {
@@ -1315,6 +1325,7 @@ The following sample code demonstrates notifying user when server-side exception
         }
         StateHasChanged();
     }
+
 }
 
 {% endhighlight %}
@@ -1328,21 +1339,21 @@ Exceptions triggered during Gantt operations can be handled effectively without 
 
 Common errors and their resolutions:
 
-* **ResourceFields Configuration Error**
+- **ResourceFields Configuration Error**
 
-    Ensure that the [ResourceFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ResourceFields) are properly configured by following the guidelines in the [Resource View documentation](https://blazor.syncfusion.com/documentation/gantt-chart/resource-view).
+  Ensure that the [ResourceFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ResourceFields) are properly configured by following the guidelines in the [Resource View documentation](https://blazor.syncfusion.com/documentation/gantt/resource-view).
 
-* **GanttTaskFields Configuration Error**
+- **GanttTaskFields Configuration Error**
 
-    Ensure that the [GanttTaskFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_TaskFields) are properly configured by following the guidelines in the [Hierarchical Data Binding documentation](https://blazor.syncfusion.com/documentation/gantt-chart/data-binding#hierarchical-data-binding).
+  Ensure that the [GanttTaskFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_TaskFields) are properly configured by following the guidelines in the [Hierarchical Data Binding documentation](https://blazor.syncfusion.com/documentation/gantt/data-binding#hierarchical-data-binding).
 
-* **HasChildMapping Configuration Error**
-    
-    Ensure that the [HasChildMapping](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_HasChildMapping) property is properly configured for load-on-demand by following the guidelines in the [Load Child On Demand documentation](https://blazor.syncfusion.com/documentation/gantt-chart/data-binding#load-child-on-demand).
+- **HasChildMapping Configuration Error**
 
-* **GanttSegmentFields.StartDate Configuration Error**
+  Ensure that the [HasChildMapping](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_HasChildMapping) property is properly configured for load-on-demand by following the guidelines in the [Load Child On Demand documentation](https://blazor.syncfusion.com/documentation/gantt/data-binding#load-child-on-demand).
 
-    Ensure that the [GanttSegmentFields.StartDate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSegmentFields-2.html#Syncfusion_Blazor_Gantt_GanttSegmentFields_2_StartDate) field is properly configured by following the guidelines in the [Split Task documentation](https://blazor.syncfusion.com/documentation/gantt-chart/split-task).
+- **GanttSegmentFields.StartDate Configuration Error**
+
+  Ensure that the [GanttSegmentFields.StartDate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSegmentFields-2.html#Syncfusion_Blazor_Gantt_GanttSegmentFields_2_StartDate) field is properly configured by following the guidelines in the [Split Task documentation](https://blazor.syncfusion.com/documentation/gantt/split-task).
 
 The following sample code demonstrates notifying user when server-side exception has occurred during data operation,
 
@@ -1354,25 +1365,25 @@ The following sample code demonstrates notifying user when server-side exception
 @using Syncfusion.Blazor.Gantt
 <label class="error" style="display:block; color: red; margin-bottom: 20px;">@ErrorDetails</label>
 <SfGantt TValue="TaskData" Height="450px" Width="700px">
-    <SfDataManager Url="https://some.com/invalidUrl" Adaptor="Adaptors.UrlAdaptor"></SfDataManager>
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration"
+<SfDataManager Url="https://some.com/invalidUrl" Adaptor="Adaptors.UrlAdaptor"></SfDataManager>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration"
                      Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttEvents TValue="TaskData" OnActionFailure="ActionFailure"></GanttEvents>
+</GanttTaskFields>
+<GanttEvents TValue="TaskData" OnActionFailure="ActionFailure"></GanttEvents>
 </SfGantt>
 
 @code {
-    private string ErrorDetails = "";
-    public class TaskData
-    {
-        public int TaskId { get; set; }
-        public string? TaskName { get; set; }
-        public DateTime? StartDate { get; set; }
-        public DateTime? EndDate { get; set; }
-        public string? Duration { get; set; }
-        public int Progress { get; set; }
-        public int? ParentId { get; set; }
-    }
+private string ErrorDetails = "";
+public class TaskData
+{
+public int TaskId { get; set; }
+public string? TaskName { get; set; }
+public DateTime? StartDate { get; set; }
+public DateTime? EndDate { get; set; }
+public string? Duration { get; set; }
+public int Progress { get; set; }
+public int? ParentId { get; set; }
+}
 
     public void ActionFailure(Syncfusion.Blazor.Grids.FailureEventArgs args)
     {
@@ -1382,8 +1393,8 @@ The following sample code demonstrates notifying user when server-side exception
         }
         StateHasChanged();
     }
-}
 
+}
 
 {% endhighlight %}
 {% endtabs %}

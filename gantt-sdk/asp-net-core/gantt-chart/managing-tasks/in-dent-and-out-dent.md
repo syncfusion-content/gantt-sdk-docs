@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Indent and Outdent in Gantt
 
 Indent and Outdent of a task are used to update the level of the task in hierarchical order of the task. It can be performed bu enabling the [`editSettings.allowEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettingsBuilder.html#Syncfusion_EJ2_Gantt_GanttEditSettingsBuilder_AllowEditing_System_Boolean_) property.
@@ -21,10 +20,10 @@ Indent and Outdent of a task are used to update the level of the task in hierarc
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/indent-outdent/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/indent-outdent/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Indentoutdent.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/indent-outdent/indentoutdent.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/indent-outdent/indentoutdent.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -32,10 +31,10 @@ Indent and Outdent of a task are used to update the level of the task in hierarc
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/indent-outdent/razor %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/indent-outdent/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Indentoutdent.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/indent-outdent/indentoutdent.cs %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt/editing/indent-outdent/indentoutdent.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

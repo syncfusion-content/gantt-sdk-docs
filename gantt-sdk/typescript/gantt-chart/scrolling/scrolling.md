@@ -3,7 +3,7 @@ layout: post
 title: Scrolling in TypeScript Gantt Chart Control | Syncfusion
 description: Learn here all about Scrolling in Syncfusion TypeScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Scrolling 
+control: Scrolling
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -31,27 +31,27 @@ For precise layout control, set fixed dimensions using pixel values for both [wi
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/scrolling-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/scrolling-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/scrolling-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/scrolling-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/scrolling-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/scrolling-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/scrolling-cs1/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/scrolling-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/scrolling-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/scrolling-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/scrolling-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/scrolling-cs1" %}
 {% endif %}
 
 ## Configure responsive scrolling
@@ -62,27 +62,27 @@ You can make the Gantt Chart control responsive by setting its [width](../../api
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/scrolling-cs2/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/scrolling-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/scrolling-cs2/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/scrolling-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/scrolling-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/scrolling-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/scrolling-cs2/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/scrolling-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/scrolling-cs2/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/scrolling-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/scrolling-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/scrolling-cs2" %}
 {% endif %}
 
 ## Scroll to task row and timeline
@@ -99,27 +99,27 @@ To scroll directly to a specific task within the timeline, use the [scrollToTask
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/scrolling-cs3/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/scrolling-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/scrolling-cs3/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/scrolling-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/scrolling-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/scrolling-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/scrolling-cs3/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/scrolling-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/scrolling-cs3/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/scrolling-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/scrolling-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/scrolling-cs3" %}
 {% endif %}
 
 ## Synchronize horizontal scroll between Gantt charts
@@ -129,25 +129,25 @@ To synchronize horizontal scrolling across multiple Gantt Chart controls, handle
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/scrolling-cs4/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/scrolling-cs4/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/scrolling-cs4/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/scrolling-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/scrolling-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/scrolling-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/scrolling-cs4/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/scrolling-cs4/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/scrolling-cs4/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/scrolling-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/scrolling-cs4" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/scrolling-cs4" %}
 {% endif %}

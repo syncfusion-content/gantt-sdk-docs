@@ -61,19 +61,19 @@ The following example demonstrates complete baseline configuration with proper f
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/baseline/default-cs1/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/baseline/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/baseline/default-cs1/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/baseline/default-cs1/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/baseline/default-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/baseline/default-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/baseline/default-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/baseline/default-cs1" %}
 
 > For a comprehensive demonstration of baseline functionality, explore the [interactive sample](https://ej2.syncfusion.com/angular/demos/#/tailwind3/gantt/baseline).
 
@@ -102,24 +102,25 @@ Set the `baselineTemplate` property with a template string or function. The temp
 By default, the Gantt component supports a single baseline per task. However, using the `baselineTemplate`, you can extend this behavior to render multiple baselines by maintaining additional baseline data within a custom field in your data source.
 
 This enables rich visualization scenarios such as:
-* Comparing original vs revised schedules.
-* Visualizing multiple planning phases.
-* Highlighting deviations across timeline checkpoints.
+
+- Comparing original vs revised schedules.
+- Visualizing multiple planning phases.
+- Highlighting deviations across timeline checkpoints.
 
 The following example demonstrates how to render multiple baselines using `baselineTemplate`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/baseline/default-cs2/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/baseline/default-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/baseline/default-cs2/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/baseline/default-cs2/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/baseline/default-cs2/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt/baseline/default-cs2/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/baseline/default-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt/baseline/default-cs2" %}

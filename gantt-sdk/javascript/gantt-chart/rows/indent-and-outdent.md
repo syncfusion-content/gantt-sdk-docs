@@ -3,7 +3,7 @@ layout: post
 title: Indent and Outdent in JavaScript Gantt Chart Control | Syncfusion
 description: Learn how to use indent and outdent features in the Syncfusion JavaScript Gantt Chart control to manage task hierarchy effectively.
 platform: gantt-sdk
-control: Indent and Outdent 
+control: Indent and Outdent
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -13,8 +13,8 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 The [JavaScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control provides built-in support for indenting and outdenting rows, allowing hierarchy levels to be adjusted within the Gantt chart.
 
- * **Indent** – Moves a selected row one level deeper, making it the last child of its previous row.
- * **Outdent** – Shifts a row one level up, placing it as a sibling to its parent.
+- **Indent** – Moves a selected row one level deeper, making it the last child of its previous row.
+- **Outdent** – Shifts a row one level up, placing it as a sibling to its parent.
 
 To enable indent and outdent functionality, set [editSettings.allowEditing](../api/gantt/editSettings#allowediting) to **true**, inject `Edit` and `Selection` module of the control, and use either the **built-in context menu** or [toolbaritems](../api/gantt/toolbarItem) to perform indent and outdent actions.
 
@@ -24,27 +24,27 @@ The following sample demonstrates how to enable indent and outdent functionaliti
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/indent-outdent/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/indent-outdent/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/indent-outdent/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/indent-outdent/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/indent-outdent" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/indent-outdent" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/indent-outdent/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/indent-outdent/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/indent-outdent/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/indent-outdent/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/indent-outdent" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/indent-outdent" %}
 {% endif %}
 
 ## Indent and outdent a row programmatically
@@ -57,27 +57,27 @@ The following sample demonstrates how to programmatically select row index **2**
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/indent-outdent-externally/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/indent-outdent-externally/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/indent-outdent-externally/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/indent-outdent-externally/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/indent-outdent-externally" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/indent-outdent-externally" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/indent-outdent-externally/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/indent-outdent-externally/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/indent-outdent-externally/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/indent-outdent-externally/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/indent-outdent-externally" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/indent-outdent-externally" %}
 {% endif %}
 
 ## Retrieve Indent and outdent details
@@ -88,29 +88,29 @@ You can retrieve indent and outdent details using the [actionComplete](../api/ga
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/indent-outdent-events/index.ts %}
+{% include code-snippet/gantt-sdk/javascript/gantt/indent-outdent-events/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/indent-outdent-events/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/indent-outdent-events/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/indent-outdent-events" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/indent-outdent-events" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/indent-outdent-events/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt/indent-outdent-events/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/indent-outdent-events/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt/indent-outdent-events/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/indent-outdent-events" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt/indent-outdent-events" %}
 {% endif %}
 
-## Limitation 
+## Limitation
 
-* The indent and outdent feature does not support selecting and modifying multiple rows simultaneously.
+- The indent and outdent feature does not support selecting and modifying multiple rows simultaneously.

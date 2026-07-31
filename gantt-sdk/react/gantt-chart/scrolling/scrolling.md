@@ -3,7 +3,7 @@ layout: post
 title: Scrolling in React Gantt Chart Component | Syncfusion
 description: Learn here all about Scrolling in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Scrolling 
+control: Scrolling
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -28,17 +28,17 @@ For precise layout control, set fixed dimensions using pixel values for both [wi
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/scrolling-cs1/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/scrolling-cs1/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/scrolling-cs1/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/scrolling-cs1/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/scrolling-cs1/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/scrolling-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/scrolling-cs1" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/scrolling-cs1" %}
 
 ## Configure responsive scrolling
 
@@ -46,17 +46,17 @@ You can make the Gantt Chart component responsive by setting its [width](https:/
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/scrolling-cs2/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/scrolling-cs2/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/scrolling-cs2/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/scrolling-cs2/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/scrolling-cs2/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/scrolling-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/scrolling-cs2" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/scrolling-cs2" %}
 
 ## Scroll to task row and timeline
 
@@ -70,17 +70,17 @@ To scroll directly to a specific task within the timeline, use the [scrollToTask
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/scrolling-cs3/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/scrolling-cs3/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/scrolling-cs3/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/scrolling-cs3/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/scrolling-cs3/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/scrolling-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/scrolling-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/scrolling-cs3" %}
 
 ## Synchronize horizontal scroll between Gantt charts
 
@@ -88,14 +88,14 @@ To synchronize horizontal scrolling across multiple Gantt Chart components, hand
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/scrolling-cs4/app/index.jsx %}
+{% include code-snippet/gantt-sdk/react/gantt/scrolling-cs4/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/scrolling-cs4/app/index.tsx %}
+{% include code-snippet/gantt-sdk/react/gantt/scrolling-cs4/app/index.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/scrolling-cs4/index.html %}
+{% include code-snippet/gantt-sdk/react/gantt/scrolling-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/scrolling-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt/scrolling-cs4" %}

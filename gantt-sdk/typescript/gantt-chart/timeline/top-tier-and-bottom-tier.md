@@ -3,7 +3,7 @@ layout: post
 title: Top tier and bottom tier in TypeScript Gantt Chart Control | Syncfusion
 description: Learn how to configure top and bottom tiers in the Syncfusion TypeScript Gantt Chart Control using timeline settings such as unit, format, count, and formatter.
 platform: gantt-sdk
-control: Top tier and bottom tier 
+control: Top tier and bottom tier
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -25,27 +25,27 @@ These properties allow precise control over how time intervals are displayed, en
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/timeline-cs8/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/timeline-cs8/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/timeline-cs8/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/timeline-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/timeline-cs8" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/timeline-cs8" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/timeline-cs8/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/timeline-cs8/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/timeline-cs8/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/timeline-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/timeline-cs8" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/timeline-cs8" %}
 {% endif %}
 
 ## Combining timeline cells
@@ -61,27 +61,27 @@ By adjusting these values, the timeline can display broader or more granular int
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/timeline-cs9/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/timeline-cs9/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/timeline-cs9/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/timeline-cs9/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/timeline-cs9" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/timeline-cs9" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/timeline-cs9/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/timeline-cs9/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/timeline-cs9/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/timeline-cs9/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/timeline-cs9" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/timeline-cs9" %}
 {% endif %}
 
 ## Format value of timeline cell
@@ -108,27 +108,27 @@ The following example shows how to use the `formatter` function with all four pa
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/timeline-cs10/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/timeline-cs10/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/timeline-cs10/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/timeline-cs10/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/timeline-cs10" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/timeline-cs10" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/timeline-cs10/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/timeline-cs10/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/timeline-cs10/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/timeline-cs10/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/timeline-cs10" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/timeline-cs10" %}
 {% endif %}
 
 ## Timeline cell width
@@ -146,25 +146,25 @@ This configuration allows precise control over the visual density of the timelin
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/timeline-cs11/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt/timeline-cs11/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/timeline-cs11/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/timeline-cs11/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/timeline-cs11" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/timeline-cs11" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/timeline-cs11/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt/timeline-cs11/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/timeline-cs11/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt/timeline-cs11/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/timeline-cs11" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt/timeline-cs11" %}
 {% endif %}

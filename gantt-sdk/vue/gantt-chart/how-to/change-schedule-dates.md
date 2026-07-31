@@ -15,11 +15,11 @@ In the Gantt Chart component, you can change the schedule start and end dates pr
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/how-to/changescheduledates-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/how-to/changescheduledates-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/how-to/changescheduledates-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/how-to/changescheduledates-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/how-to/changescheduledates-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/how-to/changescheduledates-cs1" %}

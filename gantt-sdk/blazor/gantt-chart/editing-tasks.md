@@ -20,17 +20,17 @@ Enable cell editing by setting [GanttEditSettings.AllowEditing](https://help.syn
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="900px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttEditSettings AllowEditing="true" Mode="Syncfusion.Blazor.Gantt.EditMode.Auto"></GanttEditSettings>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
+</GanttTaskFields>
+<GanttEditSettings AllowEditing="true" Mode="Syncfusion.Blazor.Gantt.EditMode.Auto"></GanttEditSettings>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public class TaskData
     {
@@ -58,6 +58,7 @@ Enable cell editing by setting [GanttEditSettings.AllowEditing](https://help.syn
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -76,17 +77,17 @@ Enable dialog editing by setting [GanttEditSettings.AllowEditing](https://help.s
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="900px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttEditSettings AllowEditing="true" Mode="Syncfusion.Blazor.Gantt.EditMode.Dialog"></GanttEditSettings>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
+</GanttTaskFields>
+<GanttEditSettings AllowEditing="true" Mode="Syncfusion.Blazor.Gantt.EditMode.Dialog"></GanttEditSettings>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public class TaskData
     {
@@ -114,6 +115,7 @@ Enable dialog editing by setting [GanttEditSettings.AllowEditing](https://help.s
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -132,38 +134,38 @@ Customize the edit dialog by defining tabs with [GanttAddDialogFields](https://h
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Toolbar="@(new List<string>() { "Add", "Edit" })" Height="450px" Width="700px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
                      Duration="Duration" Progress="Progress" ParentID="ParentId" Notes="Notes"
                      Dependency="Predecessor">
-    </GanttTaskFields>
-    <GanttResource DataSource="ResourceCollection" Id="Id" Name="Name" TValue="TaskData" TResources="ResourceInfoModel"></GanttResource>
-    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="PrimaryId" TaskID="TaskId" ResourceID="ResourceID" TValue="TaskData" TAssignment="AssignmentModel">
-    </GanttAssignmentFields>
-    <GanttEditSettings AllowAdding="true" AllowEditing="true" Mode="Syncfusion.Blazor.Gantt.EditMode.Dialog">
-    </GanttEditSettings>
-    <GanttEditDialogFields>
-        <GanttEditDialogField Type="GanttDialogFieldType.General" HeaderText="General">
-        </GanttEditDialogField>
-        <GanttEditDialogField Type="GanttDialogFieldType.Dependency"></GanttEditDialogField>
-        <GanttEditDialogField Type="GanttDialogFieldType.Resources"></GanttEditDialogField>
-        <GanttEditDialogField Type="GanttDialogFieldType.Notes"></GanttEditDialogField>
-    </GanttEditDialogFields>
-    <GanttAddDialogFields>
-        <GanttAddDialogField Type="GanttDialogFieldType.General" HeaderText="General Tab"></GanttAddDialogField>
-        <GanttAddDialogField Type="GanttDialogFieldType.Dependency"></GanttAddDialogField>
-    </GanttAddDialogFields>
+</GanttTaskFields>
+<GanttResource DataSource="ResourceCollection" Id="Id" Name="Name" TValue="TaskData" TResources="ResourceInfoModel"></GanttResource>
+<GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="PrimaryId" TaskID="TaskId" ResourceID="ResourceID" TValue="TaskData" TAssignment="AssignmentModel">
+</GanttAssignmentFields>
+<GanttEditSettings AllowAdding="true" AllowEditing="true" Mode="Syncfusion.Blazor.Gantt.EditMode.Dialog">
+</GanttEditSettings>
+<GanttEditDialogFields>
+<GanttEditDialogField Type="GanttDialogFieldType.General" HeaderText="General">
+</GanttEditDialogField>
+<GanttEditDialogField Type="GanttDialogFieldType.Dependency"></GanttEditDialogField>
+<GanttEditDialogField Type="GanttDialogFieldType.Resources"></GanttEditDialogField>
+<GanttEditDialogField Type="GanttDialogFieldType.Notes"></GanttEditDialogField>
+</GanttEditDialogFields>
+<GanttAddDialogFields>
+<GanttAddDialogField Type="GanttDialogFieldType.General" HeaderText="General Tab"></GanttAddDialogField>
+<GanttAddDialogField Type="GanttDialogFieldType.Dependency"></GanttAddDialogField>
+</GanttAddDialogFields>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    public List<ResourceInfoModel>? ResourceCollection { get; set; }
-    public static List<AssignmentModel> AssignmentCollection { get; set; } = new();
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-        ResourceCollection = GetResourceCollections();
-        AssignmentCollection = GetAssignmentCollection();
-    }
+public List<TaskData>? TaskCollection { get; set; }
+public List<ResourceInfoModel>? ResourceCollection { get; set; }
+public static List<AssignmentModel> AssignmentCollection { get; set; } = new();
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+ResourceCollection = GetResourceCollections();
+AssignmentCollection = GetAssignmentCollection();
+}
 
     public class TaskData
     {
@@ -230,6 +232,7 @@ Customize the edit dialog by defining tabs with [GanttAddDialogFields](https://h
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -248,37 +251,37 @@ Restrict fields in the dialog’s General tab using [GanttAddDialogFields](https
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Toolbar="@(new List<string>() { "Add", "Edit" })" Height="450px" Width="700px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
                      Duration="Duration" Progress="Progress" ParentID="ParentId" Notes="Notes"
                      Dependency="Predecessor">
-    </GanttTaskFields>
-    <GanttEditSettings AllowAdding="true" AllowEditing="true" Mode="Syncfusion.Blazor.Gantt.EditMode.Dialog">
-    </GanttEditSettings>
-    <GanttColumns>
-        <GanttColumn Field="TaskId" Width="100"></GanttColumn>
-        <GanttColumn Field="TaskName"></GanttColumn>
-        <GanttColumn Field="StartDate"></GanttColumn>
-        <GanttColumn Field="Duration"></GanttColumn>
-        <GanttColumn Field="Progress"></GanttColumn>
-    </GanttColumns>
-    <GanttEditDialogFields>
-        <GanttEditDialogField Type="GanttDialogFieldType.General" HeaderText="General"
-                              Fields="@(new string[]{ "TaskID", "TaskName", "Duration" })"></GanttEditDialogField>
-        <GanttEditDialogField Type="GanttDialogFieldType.Notes"></GanttEditDialogField>
-    </GanttEditDialogFields>
-    <GanttAddDialogFields>
-        <GanttAddDialogField Type="GanttDialogFieldType.General" HeaderText="General Tab"
-                             Fields="@(new string[]{ "TaskID", "TaskName", "Duration" })"></GanttAddDialogField>
-        <GanttAddDialogField Type="GanttDialogFieldType.Dependency"></GanttAddDialogField>
-    </GanttAddDialogFields>
+</GanttTaskFields>
+<GanttEditSettings AllowAdding="true" AllowEditing="true" Mode="Syncfusion.Blazor.Gantt.EditMode.Dialog">
+</GanttEditSettings>
+<GanttColumns>
+<GanttColumn Field="TaskId" Width="100"></GanttColumn>
+<GanttColumn Field="TaskName"></GanttColumn>
+<GanttColumn Field="StartDate"></GanttColumn>
+<GanttColumn Field="Duration"></GanttColumn>
+<GanttColumn Field="Progress"></GanttColumn>
+</GanttColumns>
+<GanttEditDialogFields>
+<GanttEditDialogField Type="GanttDialogFieldType.General" HeaderText="General"
+Fields="@(new string[]{ "TaskID", "TaskName", "Duration" })"></GanttEditDialogField>
+<GanttEditDialogField Type="GanttDialogFieldType.Notes"></GanttEditDialogField>
+</GanttEditDialogFields>
+<GanttAddDialogFields>
+<GanttAddDialogField Type="GanttDialogFieldType.General" HeaderText="General Tab"
+Fields="@(new string[]{ "TaskID", "TaskName", "Duration" })"></GanttAddDialogField>
+<GanttAddDialogField Type="GanttDialogFieldType.Dependency"></GanttAddDialogField>
+</GanttAddDialogFields>
 </SfGantt>
 
 @code {
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public class TaskData
     {
@@ -308,6 +311,7 @@ Restrict fields in the dialog’s General tab using [GanttAddDialogFields](https
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -317,36 +321,36 @@ Restrict fields in the dialog’s General tab using [GanttAddDialogFields](https
 
 ## Edit task dependencies
 
-Enable dependency editing by mapping the [GanttTaskFields.Dependency](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_Dependency)  property in `GanttTaskFields`, setting [GanttEditSettings.AllowEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_AllowEditing) and [GanttEditSettings.AllowTaskbarEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_AllowTaskbarEditing) to **true**. Update dependencies via:
+Enable dependency editing by mapping the [GanttTaskFields.Dependency](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_Dependency) property in `GanttTaskFields`, setting [GanttEditSettings.AllowEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_AllowEditing) and [GanttEditSettings.AllowTaskbarEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_AllowTaskbarEditing) to **true**. Update dependencies via:
 
 - **Mouse interactions**: Drag connector points on taskbars to create or modify links.
 
-    ![Updating task dependency with mouse drag and drop action](images/user-interaction.webp)
+  ![Updating task dependency with mouse drag and drop action](images/user-interaction.webp)
 
 - **Dialog**: Edit the Dependency tab in the edit dialog.
 
-    ![Updating task dependency in dialog Dependency tab](images/editing-dialog.webp)
+  ![Updating task dependency in dialog Dependency tab](images/editing-dialog.webp)
 
 - **Cell editing**: Update the dependency field in the TreeGrid. Ensure valid dependency strings to avoid circular references.
 
-    ![Updating task dependency via cell editing in TreeGrid](images/cell-edit.webp)
+  ![Updating task dependency via cell editing in TreeGrid](images/cell-edit.webp)
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="700px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId" Dependency="Predecessor">
-    </GanttTaskFields>
-    <GanttEditSettings AllowTaskbarEditing="true" AllowEditing="true" Mode="Syncfusion.Blazor.Gantt.EditMode.Auto"></GanttEditSettings>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId" Dependency="Predecessor">
+</GanttTaskFields>
+<GanttEditSettings AllowTaskbarEditing="true" AllowEditing="true" Mode="Syncfusion.Blazor.Gantt.EditMode.Auto"></GanttEditSettings>
 </SfGantt>
 
 @code {
-    private List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+private List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public class TaskData
     {
@@ -373,6 +377,7 @@ Enable dependency editing by mapping the [GanttTaskFields.Dependency](https://he
         Tasks.Add(new TaskData() { TaskId = 8, TaskName = "Estimation approval", StartDate = new DateTime(2026, 04, 07), Duration = "0", Progress = 30, Predecessor = "7", ParentId = 5 });
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -392,22 +397,22 @@ Update tasks programmatically using the [UpdateRecordByIDAsync](https://help.syn
 @using Syncfusion.Blazor.Gantt
 <button @onclick="UpdateRecord">Update Task 3</button>
 <SfGantt @ref="Gantt" DataSource="@TaskCollection" Height="450px" Width="900px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttEditSettings AllowEditing="true"></GanttEditSettings>
+<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
+</GanttTaskFields>
+<GanttEditSettings AllowEditing="true"></GanttEditSettings>
 </SfGantt>
 
 @code {
-    public SfGantt<TaskData>? Gantt;
-    public void UpdateRecord()
-    {
-        Gantt?.UpdateRecordByIDAsync(new TaskData() { TaskId = 3, TaskName = "Updated by ID value", Progress = 60 });
-    }
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+public SfGantt<TaskData>? Gantt;
+public void UpdateRecord()
+{
+Gantt?.UpdateRecordByIDAsync(new TaskData() { TaskId = 3, TaskName = "Updated by ID value", Progress = 60 });
+}
+public List<TaskData>? TaskCollection { get; set; }
+protected override void OnInitialized()
+{
+TaskCollection = GetTaskCollection();
+}
 
     public class TaskData
     {
@@ -434,8 +439,8 @@ Update tasks programmatically using the [UpdateRecordByIDAsync](https://help.syn
         };
         return Tasks;
     }
-}
 
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -443,6 +448,7 @@ Update tasks programmatically using the [UpdateRecordByIDAsync](https://help.syn
 {% previewsample "https://blazorplayground.syncfusion.com/embed/rDrdZcBDrMapltlw?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 ## See also
-- [How to add new tasks?](https://blazor.syncfusion.com/documentation/gantt-chart/adding-new-tasks)
-- [How to manage task dependencies?](https://blazor.syncfusion.com/documentation/gantt-chart/task-dependencies)
-- [How to configure critical path?](https://blazor.syncfusion.com/documentation/gantt-chart/criticalpath)
+
+- [How to add new tasks?](https://blazor.syncfusion.com/documentation/gantt/adding-new-tasks)
+- [How to manage task dependencies?](https://blazor.syncfusion.com/documentation/gantt/task-dependencies)
+- [How to configure critical path?](https://blazor.syncfusion.com/documentation/gantt/criticalpath)

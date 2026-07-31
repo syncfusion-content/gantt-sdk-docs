@@ -2,7 +2,7 @@
 layout: post
 title: Column Menu in Vue Gantt Chart Component | Syncfusion
 description: Learn here all about column menu in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Column menu 
+control: Column menu
 platform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -14,24 +14,24 @@ The column menu provides options for features like sorting, filtering, and autof
 
 The default items are displayed in the following table:
 
-| Item | Description |
-|-----|-----|
-| `SortAscending` | Sort the current column in ascending order. |
-| `SortDescending` | Sort the current column in descending order. |
-| `AutoFit` | Autofit the current column. |
-| `AutoFitAll` | Autofit all columns. |
-| `Filter` | Show the filter option as given in `filterSettings.type`. |
+| Item             | Description                                               |
+| ---------------- | --------------------------------------------------------- |
+| `SortAscending`  | Sort the current column in ascending order.               |
+| `SortDescending` | Sort the current column in descending order.              |
+| `AutoFit`        | Autofit the current column.                               |
+| `AutoFitAll`     | Autofit all columns.                                      |
+| `Filter`         | Show the filter option as given in `filterSettings.type`. |
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/columns-cs3/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/columns-cs3/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/columns-cs3/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/columns-cs3/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/columns-cs3" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/columns-cs3" %}
 
 > You can disable the column menu for a specific column by setting the `columns.showColumnMenu` property to `false`.
 
@@ -44,14 +44,14 @@ When using the column menu, the Gantt Chart component triggers the following two
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/columns-cs4/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/columns-cs4/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/columns-cs4/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/columns-cs4/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/columns-cs4" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/columns-cs4" %}
 
 ## Custom column menu item
 
@@ -59,14 +59,14 @@ Custom column menu items can be added by defining the [columnMenuItems](https://
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/columns-cs5/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/columns-cs5/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/columns-cs5/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/columns-cs5/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/columns-cs5" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/columns-cs5" %}
 
 ## Customize menu items for specific columns
 
@@ -76,11 +76,11 @@ In the following sample, the **Filter** item is hidden in the column menu when i
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/columns-cs6/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/columns-cs6/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/vue/gantt-chart/columns-cs6/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt/columns-cs6/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/columns-cs6" %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt/columns-cs6" %}
