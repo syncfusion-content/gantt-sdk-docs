@@ -816,7 +816,7 @@ N> This property will only be applicable when [IsToolTipEnabled](https://help.sy
 
 ## Card selection
 
-The WinUI `SfKanban` control supports selecting a single card or multiple cards at a time and performing drag-and-drop operations on the selection. The selection mode is configured through the `CardSelectionType` property. The `CardSelectionType` property accepts the values `Single` and `Multiple`.
+The SfKanban control supports selecting a single card or multiple cards at a time and performing drag-and-drop operations on the selection. The selection mode is configured through the `CardSelectionType` property. The `CardSelectionType` property accepts the values `Single` and `Multiple`.
 
 ### Single card selection
 
