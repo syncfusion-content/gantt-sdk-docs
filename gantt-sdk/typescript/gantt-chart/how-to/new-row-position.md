@@ -1,6 +1,6 @@
 ---
 layout: post
-title: New row position in TypeScript Gantt control | Syncfusion
+title: New Row Position in TypeScript Gantt Control | Syncfusion
 description: Learn here all about New row position in Syncfusion TypeScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: New row position 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization in JavaScript Kanban control | Syncfusion
+title: Localization in JavaScript Kanban Control | Syncfusion
 description: Learn here all about Localization in Syncfusion JavaScript Kanban control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Localization 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Localization in JavaScript Kanban control
+# Localization in JavaScript Kanban Control
 
 The localization library allows you to localize the default text content of the Kanban to different cultures using the `locale` property.
 

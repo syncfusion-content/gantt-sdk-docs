@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Loading animation in TypeScript Gantt control | Syncfusion
+title: Loading Animation in TypeScript Gantt Control | Syncfusion
 description: Learn here all about Loading animation in Syncfusion TypeScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Loading animation 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Loading animation in TypeScript Gantt control
+# Loading Animation in TypeScript Gantt Control
 
 The loading indicator is used to display a visual indicator while the Gantt is fetching data or performing certain actions, such as sorting or filtering. The gantt support two indicator types, which is achieved by setting the [loadingIndicator.indicatorType](../api/gantt#loadingindicator) property to Shimmer or Spinner. The default value of the indicator type is "Spinner."
 

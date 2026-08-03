@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Task bar editing in React Gantt Chart Component | Syncfusion
+title: Task Bar Editing in React Gantt Chart Component | Syncfusion
 description: Learn how to edit tasks via taskbar interactions in the Syncfusion React Gantt Chart component for intuitive project timeline adjustments.
 platform: gantt-sdk
 control: Task bar editing

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Persistence in TypeScript Kanban control | Syncfusion
+title: Persistence in TypeScript Kanban Control | Syncfusion
 description: Learn here all about Persistence in Syncfusion TypeScript Kanban control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Persistence 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Persistence in TypeScript Kanban control
+# Persistence in TypeScript Kanban Control
 
 State persistence refers to the Kanban state maintained in the browser's [`localStorage`](https://www.w3schools.com/html/html5_webstorage.asp#) even if the browser is refreshed or if you move to the next page within the browser.
 

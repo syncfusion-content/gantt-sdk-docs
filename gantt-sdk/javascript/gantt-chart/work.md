@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Work in JavaScript Gantt control | Syncfusion
+title: Work in JavaScript Gantt Control | Syncfusion
 description: Learn here all about Work in Syncfusion JavaScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Work 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Work in JavaScript Gantt control
+# Work in JavaScript Gantt Control
 
 ## Work
 

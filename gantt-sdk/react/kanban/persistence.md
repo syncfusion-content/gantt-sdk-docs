@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Persistence in React Kanban component | Syncfusion
+title: Persistence in React Kanban Component | Syncfusion
 description: Learn here all about Persistence in Syncfusion React Kanban component of Syncfusion Essential JS 2 and more.
 control: Persistence 
 platform: gantt-sdk

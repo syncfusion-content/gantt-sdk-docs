@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ej1 api migration in TypeScript Gantt control | Syncfusion
+title: EJ1 API Migration in TypeScript Gantt Control | Syncfusion
 description: Learn here all about Ej1 api migration in Syncfusion TypeScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Ej1 api migration 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Ej1 api migration in TypeScript Gantt control
+# EJ1 API Migration in TypeScript Gantt Control
 
 This topic shows the API equivalent of JS2 Gantt component to be used, while migrating your project that uses JS1 Gantt.
 

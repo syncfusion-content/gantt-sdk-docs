@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data markers in JavaScript Gantt Chart Control | Syncfusion
+title: Data Markers in JavaScript Gantt Chart Control | Syncfusion
 description: Learn here all about Data markers in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Data markers 

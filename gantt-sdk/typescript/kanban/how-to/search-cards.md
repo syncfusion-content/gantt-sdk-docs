@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Search cards in TypeScript Kanban control | Syncfusion
+title: Search Cards in TypeScript Kanban Control | Syncfusion
 description: Learn here all about Search cards in Syncfusion TypeScript Kanban control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Search cards 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Search cards in TypeScript Kanban control
+# Search Cards in TypeScript Kanban Control
 
 You can search the cards in Kanban by using the `query` property.
 

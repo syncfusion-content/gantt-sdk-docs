@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with React Kanban Component | Syncfusion
+title: Getting Started with React Kanban Component | Syncfusion
 description: Check out and learn about getting started with the React Kanban component from Syncfusion Essential JS 2.
 control: Getting started 
 platform: gantt-sdk

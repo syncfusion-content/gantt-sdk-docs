@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PDF Export with templates in Blazor Gantt Chart Component | Syncfusion
+title: PDF Export with Templates in Blazor Gantt Chart Component | Syncfusion
 description: Checkout and learn here all about PDF Exporting with templates in Syncfusion Blazor Gantt Chart component and much more.
 platform: gantt-sdk
 control: Gantt Chart
@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Exporting PDF with templates
+# Exporting PDF with Templates
 
 The Gantt chart export functionality allows you to export both column and header templates to a PDF document. These templates can include various customizations such as images, formatted text, and custom cell styles within the header and columns. 
 

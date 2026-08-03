@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in React Kanban component | Syncfusion
+title: Data Binding in React Kanban Component | Syncfusion
 description: Learn how to bind local and remote data to the Syncfusion React Kanban component of Syncfusion Essential JS 2 and more.
 control: Data binding
 platform: gantt-sdk

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Timeline in React Gantt Chart component | Syncfusion
+title: Timeline in React Gantt Chart Component | Syncfusion
 description: Learn how to configure timelines in the Syncfusion React Gantt Chart component with view modes, zooming, weekend highlighting, and templates.
 platform: gantt-sdk
 control: Timeline

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Configuring Dimensions in React Kanban component | Syncfusion
+title: Configuring Dimensions in React Kanban Component | Syncfusion
 description: Learn  how to configure height and width in the Syncfusion React Kanban component of Syncfusion Essential JS 2 and more.
 control: Dimensions 
 platform: gantt-sdk

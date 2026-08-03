@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Columns in React Kanban component | Syncfusion
+title: Columns in React Kanban Component | Syncfusion
 description: Learn how to configure columns in the Syncfusion React Kanban component of Syncfusion Essential JS 2 and more.
 control: Columns
 platform: gantt-sdk

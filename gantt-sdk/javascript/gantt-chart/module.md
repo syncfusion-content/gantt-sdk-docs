@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Module in JavaScript Gantt control | Syncfusion
+title: Module in JavaScript Gantt Control | Syncfusion
 description: Learn here all about Module in Syncfusion JavaScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Module 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Module in JavaScript Gantt control
+# Module in JavaScript Gantt Control
 
 The modules that are available in Gantt are as follows.
 

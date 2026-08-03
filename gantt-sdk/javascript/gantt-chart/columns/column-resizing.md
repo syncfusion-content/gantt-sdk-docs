@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Column resizing in JavaScript Gantt Chart control | Syncfusion
+title: Column Resizing in JavaScript Gantt Chart Control | Syncfusion
 description: Learn here all about Column resizing in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Column resizing 

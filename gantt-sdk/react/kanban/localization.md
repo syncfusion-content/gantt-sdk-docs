@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization and RTL in React Kanban component | Syncfusion
+title: Localization and RTL in React Kanban Component | Syncfusion
 description: Learn how to localize text and enable right-to-left (RTL) support in the Syncfusion React Kanban component of Syncfusion Essential JS 2 and more.
 control: Localization 
 platform: gantt-sdk

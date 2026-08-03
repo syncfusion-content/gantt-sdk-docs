@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip in JavaScript Kanban control | Syncfusion
+title: Tooltip in JavaScript Kanban Control | Syncfusion
 description: Learn here all about Tooltip in Syncfusion JavaScript Kanban control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Tooltip 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Tooltip in JavaScript Kanban control
+# Tooltip in JavaScript Kanban Control
 
 The tooltip is used to show the card information when the cursor hover over the card elements using the `enableTooltip` property. Tooltip content is dynamically set based on hovering over the card elements.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: New row position in JavaScript Gantt control | Syncfusion
+title: New Row Position in JavaScript Gantt Control | Syncfusion
 description: Learn here all about New row position in Syncfusion JavaScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: New row position 

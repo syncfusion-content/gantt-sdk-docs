@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sort in TypeScript Kanban control | Syncfusion
+title: Sort in TypeScript Kanban Control | Syncfusion
 description: Learn here all about Sort in Syncfusion TypeScript Kanban control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Sort 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Sort in TypeScript Kanban control
+# Sort in TypeScript Kanban Control
 
 The Kanban provides built-in support to arrange the cards in their columns based on the JSON data order and drop the cards in the columns based on the dropped clone. Initially, users can change the arrangement of cards in the columns and position of the dropped card by using the [`sortBy`](../api/kanban/sortSettingsModel/#sortby) property. The [`sortBy`](../api/kanban/sortSettingsModel/#sortby) property contains three enumeration values as follows.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styling and Appearance in Blazor Kanban Component | Syncfusion®
+title: Styling and Appearance in Blazor Kanban Component | Syncfusion
 description: Checkout and learn here all about styling and appearance in Blazor Kanban component, it's elements and more.
 platform: gantt-sdk
 control: Kanban

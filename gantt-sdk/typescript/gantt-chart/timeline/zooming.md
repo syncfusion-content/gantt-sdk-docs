@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Zooming functionality in TypeScript Gantt Chart Control | Syncfusion
+title: Zooming Functionality in TypeScript Gantt Chart Control | Syncfusion
 description: Explore zooming options in the Syncfusion TypeScript Gantt Chart control, including Zoom In, Zoom Out, Zoom To Fit, and custom zooming levels.
 platform: gantt-sdk
 control: Zooming 

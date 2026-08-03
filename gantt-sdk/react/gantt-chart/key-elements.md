@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Key Elements in Gantt UI for React Gantt control | Syncfusion
+title: Key Elements in Gantt UI for React Gantt Control | Syncfusion
 description:  Checkout and learn about Key Elements in Gantt UI of React Gantt control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Key Elements in Gantt UI

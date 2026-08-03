@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Predecessor validation in Blazor Gantt Chart Component | Syncfusion
+title: Predecessor Validation in Blazor Gantt Chart Component | Syncfusion
 description: Checkout and learn here all about predecessor validation in Syncfusion Blazor Gantt Chart component.
 platform: gantt-sdk
 control: Gantt Chart

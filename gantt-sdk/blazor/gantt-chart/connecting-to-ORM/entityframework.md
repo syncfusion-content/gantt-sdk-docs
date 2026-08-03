@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blazor Gantt Chart with SQL using Entity Framework | Syncfusion®
+title: Blazor Gantt Chart with SQL Using Entity Framework | Syncfusion®
 description: Bind SQL Server data to Blazor Gantt Chart using Entity Framework core with CRUD, filtering and sorting.
 platform: gantt-sdk
 control: Gantt Chart

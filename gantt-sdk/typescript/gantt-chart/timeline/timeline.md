@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Timeline in TypeScript Gantt Chart control | Syncfusion
+title: Timeline in TypeScript Gantt Chart Control | Syncfusion
 description: Learn how to configure timelines in the Syncfusion TypeScript Gantt Chart control with view modes, zooming, weekend highlighting, and templates.
 platform: gantt-sdk
 control: Timeline

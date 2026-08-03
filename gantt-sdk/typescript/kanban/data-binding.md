@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data binding in TypeScript Kanban control | Syncfusion
+title: Data Binding in TypeScript Kanban Control | Syncfusion
 description: Learn here all about Data binding in Syncfusion TypeScript Kanban control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Data binding 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Data binding in TypeScript Kanban control
+# Data Binding in TypeScript Kanban Control
 
 The Kanban uses `DataManager`, which supports both RESTful data service binding and JavaScript object array binding. The [`dataSource`](../api/kanban/#datasource) property of Kanban can be assigned either with the instance of `DataManager` or JavaScript object array collection, as it supports the following two data binding methods:
 

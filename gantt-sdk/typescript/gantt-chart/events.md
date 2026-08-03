@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events in TypeScript Gantt control | Syncfusion
+title: Events in TypeScript Gantt Control | Syncfusion
 description: Learn here all about Events in Syncfusion TypeScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Events 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scheduling tasks in React Gantt Chart Component | Syncfusion
+title: Scheduling Tasks in React Gantt Chart Component | Syncfusion
 description: Learn how to configure task scheduling modes, types, duration units, working time, and holidays in the Syncfusion React Gantt Chart component.
 platform: gantt-sdk
 control: Scheduling tasks

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Maintaining Data in Server in React Gantt Chart Component | Syncfusion
-description: Learn how to manage Gantt data in a server using URLAdaptor for batch CRUD operations in the Syncfusion React Gantt Chart component for seamless project updates.
+title: Maintain Gantt Data on Server in React | Syncfusion
+description: Learn how to manage Gantt data on a server using URLAdaptor for batch CRUD operations in the Syncfusion React Gantt Chart for project updates.
 platform: gantt-sdk
 control: Maintaining data in server
 documentation: ug

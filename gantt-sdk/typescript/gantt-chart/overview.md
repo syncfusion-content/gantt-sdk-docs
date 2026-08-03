@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Index in TypeScript Gantt control | Syncfusion
+title: Index in TypeScript Gantt Control | Syncfusion
 description: Learn here all about Index in Syncfusion TypeScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Index 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Index in TypeScript Gantt control
+# Index in TypeScript Gantt Control
 
 The Gantt chart is a project management tool which provides a Microsoft Project-like interface for scheduling and managing projects. Its intuitive user interface allows you visually manage tasks, task relationships, and resources in a project.
 

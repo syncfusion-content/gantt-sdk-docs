@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization in TypeScript Kanban control | Syncfusion
+title: Localization in TypeScript Kanban Control | Syncfusion
 description: Learn here all about Localization in Syncfusion TypeScript Kanban control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Localization 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Localization in TypeScript Kanban control
+# Localization in TypeScript Kanban Control
 
 The localization library allows you to localize the default text content of the Kanban to different cultures using the `locale` property.
 

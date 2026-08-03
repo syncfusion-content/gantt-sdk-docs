@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data markers in React Gantt Chart Component | Syncfusion
+title: Data Markers in React Gantt Chart Component | Syncfusion
 description: Learn here all about Data markers in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Data markers 

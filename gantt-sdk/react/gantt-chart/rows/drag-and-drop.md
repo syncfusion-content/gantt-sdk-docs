@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Row drag and drop in React Gantt Chart Component | Syncfusion
+title: Row Drag and Drop in React Gantt Chart Component | Syncfusion
 description: Learn here all about row drag and drop in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
 control: Drag and Drop
 platform: gantt-sdk

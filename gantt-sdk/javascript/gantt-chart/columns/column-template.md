@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Column template in JavaScript Gantt Chart Control | Syncfusion
+title: Column Template in JavaScript Gantt Chart Control | Syncfusion
 description: Learn here all about Column template in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Column template

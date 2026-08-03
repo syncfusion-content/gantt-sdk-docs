@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Searching in TypeScript Gantt control | Syncfusion
+title: Searching in TypeScript Gantt Control | Syncfusion
 description: Learn here all about Searching in Syncfusion TypeScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Searching 

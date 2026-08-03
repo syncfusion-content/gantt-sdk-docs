@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in React Gantt Chart component | Syncfusion
+title: Overview in React Gantt Chart Component | Syncfusion
 description: Learn about the React Gantt Chart component features, capabilities, and how to build interactive project schedules.
 control: Overview 
 platform: gantt-sdk

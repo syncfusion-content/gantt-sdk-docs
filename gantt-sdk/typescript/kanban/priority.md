@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Priority in TypeScript Kanban control | Syncfusion
+title: Priority in TypeScript Kanban Control | Syncfusion
 description: Learn here all about Priority in Syncfusion TypeScript Kanban control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Priority 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Priority in TypeScript Kanban control
+# Priority in TypeScript Kanban Control
 
 By default, the Kanban cards are initially placed and drop the card inside the columns based on JSON data orders.
 

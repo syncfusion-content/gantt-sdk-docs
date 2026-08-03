@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Performance tips for JavaScript Gantt control | Syncfusion
+title: Performance Tips for JavaScript Gantt Control | Syncfusion
 description: Checkout and learn here all about how to improve the loading performance of JavaScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Gantt permformance
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Performance tips for JavaScript Gantt control
+# Performance Tips for JavaScript Gantt Control
 
 This article is a comprehensive guide on improving the loading performance of the Gantt component, especially when dealing with large datasets and a significant number of columns. It provides valuable insights into the steps required to bind a large data source without experiencing performance degradation. By offering detailed explanations and actionable tips, this resource aims to empower readers with the knowledge and best practices necessary to optimize the performance of the Gantt component during data binding, ensuring a smooth and efficient user experience.
 

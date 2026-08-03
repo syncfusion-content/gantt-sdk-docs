@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Task scheduling in TypeScript Gantt control | Syncfusion
+title: Task Scheduling in TypeScript Gantt Control | Syncfusion
 description: Learn here all about Task scheduling in Syncfusion TypeScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Task scheduling 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Task scheduling in TypeScript Gantt control
+# Task Scheduling in TypeScript Gantt Control
 
 The Gantt provides support for automatic and manual task scheduling modes. It is used to indicate whether the start date and end date of all the tasks will be automatically validated or not. [taskMode](../api/gantt#taskmode) is the property used to change the schedule mode of a task.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: New Row Position in React Gantt Chart component | Syncfusion
+title: New Row Position in React Gantt Chart Component | Syncfusion
 description: Learn here all about new row position in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
 control: New row position 
 platform: gantt-sdk

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Column template in TypeScript Gantt Chart Control | Syncfusion
+title: Column Template in TypeScript Gantt Chart Control | Syncfusion
 description: Learn here all about Column template in Syncfusion TypeScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Column template

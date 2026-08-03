@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Column resizing in TypeScript Gantt Chart control | Syncfusion
+title: Column Resizing in TypeScript Gantt Chart Control | Syncfusion
 description: Learn here all about Column resizing in Syncfusion TypeScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Column resizing 

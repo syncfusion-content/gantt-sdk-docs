@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filter Cards in Syncfusion React Kanban component | Syncfusion
+title: Filter Cards in Syncfusion React Kanban Component | Syncfusion
 description: Learn how to filter cards in the Syncfusion React Kanban component of Syncfusion Essential JS 2 and more.
 control: Filter cards 
 platform: gantt-sdk

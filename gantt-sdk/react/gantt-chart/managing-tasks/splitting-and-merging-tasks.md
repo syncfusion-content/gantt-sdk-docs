@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Splitting and Merging Tasks in React Gantt Chart Component | Syncfusion
+title: Splitting and Merging Tasks in React Gantt | Syncfusion
 description: Learn how to split and merge tasks in the Syncfusion React Gantt Chart component for flexible task management in project timelines.
 platform: gantt-sdk
 control: Splitting and merging tasks

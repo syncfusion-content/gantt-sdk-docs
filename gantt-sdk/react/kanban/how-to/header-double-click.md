@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Handle Header Double-Click in React Kanban component | Syncfusion
+title: Handle Header Double - Click in React Kanban Component | Syncfusion
 description: Learn how to handle column header double-click events in the Syncfusion React Kanban component of Syncfusion Essential JS 2 and more.
 control: Header double click 
 platform: gantt-sdk
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Handle Header Double-Click in React Kanban Component
+# Handle Header Double - Click in React Kanban Component
 
 You can bind the header double click event by using the [dataBound](https://ej2.syncfusion.com/react/documentation/api/kanban/#dataBound) event at the initial rendering. You can get the column header text when you double click on the headers.
 

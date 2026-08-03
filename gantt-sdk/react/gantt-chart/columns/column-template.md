@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Column template in React Gantt Chart Component | Syncfusion
+title: Column Template in React Gantt Chart Component | Syncfusion
 description: Learn here all about Column template in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Column template 

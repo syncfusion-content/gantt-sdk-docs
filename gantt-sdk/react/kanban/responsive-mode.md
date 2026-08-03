@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Responsive Mode in React Kanban component | Syncfusion
+title: Responsive Mode in React Kanban Component | Syncfusion
 description: Learn here all about Responsive mode in Syncfusion React Kanban component of Syncfusion Essential JS 2 and more.
 control: Responsive mode 
 platform: gantt-sdk

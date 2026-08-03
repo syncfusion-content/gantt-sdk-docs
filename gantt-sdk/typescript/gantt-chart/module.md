@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Module in TypeScript Gantt control | Syncfusion
+title: Module in TypeScript Gantt Control | Syncfusion
 description: Learn here all about Module in Syncfusion TypeScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Module 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Module in TypeScript Gantt control
+# Module in TypeScript Gantt Control
 
 The modules that are available in Gantt are as follows.
 

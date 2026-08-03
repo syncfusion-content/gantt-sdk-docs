@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Responsive mode in TypeScript Kanban control | Syncfusion
+title: Responsive Mode in TypeScript Kanban Control | Syncfusion
 description: Learn here all about Responsive mode in Syncfusion TypeScript Kanban control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Responsive mode 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Responsive mode in TypeScript Kanban control
+# Responsive Mode in TypeScript Kanban Control
 
 The Kanban component has support for responsive behavior based on the client browser's width and height.
 

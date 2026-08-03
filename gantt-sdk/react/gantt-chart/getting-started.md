@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started With React Gantt Chart Component | Syncfusion
+title: Getting Started with React Gantt Chart Component | Syncfusion
 description: Learn how to install and create your first React Gantt Chart component with task scheduling in a few minutes.
 control: Getting started
 platform: gantt-sdk

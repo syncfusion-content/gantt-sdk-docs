@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dialog Editing  in React Kanban component | Syncfusion
+title: Dialog Editing in React Kanban Component | Syncfusion
 description: Learn how to use the dialog module in the Syncfusion React Kanban component of Syncfusion Essential JS 2 and more.
 control: Dialog 
 platform: gantt-sdk

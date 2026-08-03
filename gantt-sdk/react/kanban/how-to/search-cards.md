@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Search Cards in React Kanban component | Syncfusion
+title: Search Cards in React Kanban Component | Syncfusion
 description: Learn how to search cards in the Syncfusion React Kanban component of Syncfusion Essential JS 2 and more.
 control: Search cards 
 platform: gantt-sdk

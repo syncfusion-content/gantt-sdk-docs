@@ -1,6 +1,6 @@
 ---
 layout: post
-title: In dent and out dent in JavaScript Gantt control | Syncfusion
+title: In Dent and Out Dent in JavaScript Gantt Control | Syncfusion
 description: Learn here all about In dent and out dent in Syncfusion JavaScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: In dent and out dent 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# In dent and out dent in JavaScript Gantt control
+# In Dent and Out Dent in JavaScript Gantt Control
 
 Indent and Outdent of a task are used to update the level of task in the hierarchical order of the task. It can be performed by enabling the [editSettings.allowEditing](../../api/gantt/editSettings#allowediting) property.
 

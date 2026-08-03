@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding new tasks in JavaScript Gantt control | Syncfusion
+title: Adding New Tasks in JavaScript Gantt Control | Syncfusion
 description: Learn here all about Adding new tasks in Syncfusion JavaScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Adding new tasks 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Adding new tasks in JavaScript Gantt control
+# Adding New Tasks in JavaScript Gantt Control
 
 Tasks can be dynamically added to the Gantt project by enabling the [editSettings.allowAdding](../../api/gantt/editSettings#allowadding) property.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Key Elements in Gantt UI for TypeScript Gantt control | Syncfusion
+title: Key Elements in Gantt UI for TypeScript Gantt Control | Syncfusion
 description:  Checkout and learn about Key Elements in Gantt UI of TypeScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Key Elements in Gantt UI

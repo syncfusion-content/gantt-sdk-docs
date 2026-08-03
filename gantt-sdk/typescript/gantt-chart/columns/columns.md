@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Columns in TypeScript Gantt control | Syncfusion
+title: Columns in TypeScript Gantt Control | Syncfusion
 description: Learn here all about columns in Syncfusion TypeScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Columns 

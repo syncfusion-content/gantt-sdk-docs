@@ -1,6 +1,6 @@
 ---
 layout: post
-title: React getting started with Next.js | Syncfusion
+title: React Getting Started with Next JS | Syncfusion
 description: Check out and learn here all about how to use the Syncfusion React UI components in the Next.js project.
 control: Next.js
 platform: gantt-sdk
@@ -9,7 +9,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
 
-# Getting Started with Next.js
+# Getting Started with Next JS
 
 This section provides a step-by-step guide for setting up a Next.js application and integrating the Syncfusion<sup style="font-size:70%">&reg;</sup> React Kanban component.
 

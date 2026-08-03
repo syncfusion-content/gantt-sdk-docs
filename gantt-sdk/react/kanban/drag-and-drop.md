@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drag and Drop in React Kanban component | Syncfusion
+title: Drag and Drop in React Kanban Component | Syncfusion
 description: Learn how to enable drag-and-drop for cards in the Syncfusion React Kanban component of Syncfusion Essential JS 2 and more.
 control: Drag and drop 
 platform: gantt-sdk

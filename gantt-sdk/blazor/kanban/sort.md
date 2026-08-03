@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting in Blazor Kanban Component | Syncfusion®
-description: Checkout and learn here all about sorting in Blazor Kanban component and much more details.
+title: Sorting in Blazor Kanban Component | Syncfusion
+description: Learn how to sort cards in the Syncfusion Blazor Kanban component using built-in sort settings, custom fields, and ordering options.
 platform: gantt-sdk
 control: Kanban
 documentation: ug

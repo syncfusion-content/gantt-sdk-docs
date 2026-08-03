@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Columns in JavaScript Gantt control | Syncfusion
+title: Columns in JavaScript Gantt Control | Syncfusion
 description: Learn here all about columns in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Columns 

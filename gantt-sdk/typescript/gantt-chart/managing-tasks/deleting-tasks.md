@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deleting tasks in TypeScript Gantt control | Syncfusion
+title: Deleting Tasks in TypeScript Gantt Control | Syncfusion
 description: Learn here all about Deleting tasks in Syncfusion TypeScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Deleting tasks 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Deleting tasks in TypeScript Gantt control
+# Deleting Tasks in TypeScript Gantt Control
 
 A task delete option in the Gantt control can be enabled by enabling the [ediSettings.allowDeleting](../../api/gantt/editSettings#allowdeleting) property. Tasks can be deleted by clicking the delete toolbar item or using the `deleteRow` method. You can call this method dynamically on any custom actions like button click. The following code example shows how to enable the delete option in the Gantt control.
 

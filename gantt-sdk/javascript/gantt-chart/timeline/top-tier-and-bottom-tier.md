@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Top tier and bottom tier in JavaScript Gantt Chart Control | Syncfusion
-description: Learn how to configure top and bottom tiers in the Syncfusion JavaScript Gantt Chart Control using timeline settings such as unit, format, count, and formatter.
+title: Top Tier and Bottom Tier in JavaScript Gantt | Syncfusion
+description: Learn how to configure top and bottom tiers in the Syncfusion JavaScript Gantt Chart using timeline settings such as unit, format, count, and formatter.
 platform: gantt-sdk
 control: Top tier and bottom tier 
 publishingplatform: gantt-sdk

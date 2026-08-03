@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data markers in TypeScript Gantt Chart Control | Syncfusion
+title: Data Markers in TypeScript Gantt Chart Control | Syncfusion
 description: Learn here all about Data markers in Syncfusion TypeScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Data markers 

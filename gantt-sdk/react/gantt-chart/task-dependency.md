@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Task Dependency in React Gantt Chart Component | Syncfusion
-description: Learn how to configure task dependencies in the Syncfusion React Gantt Chart component for establishing relationships, managing offsets, and handling validation.
+description: Learn how to configure task dependencies in the Syncfusion React Gantt Chart for relationships, offsets, and dependency validation.
 platform: gantt-sdk
 control: Task dependency
 documentation: ug

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Splitting and Merging Tasks in TypeScript Gantt Chart Control | Syncfusion
+title: Splitting and Merging Tasks in TypeScript Gantt | Syncfusion
 description: Learn how to split and merge tasks in the Syncfusion TypeScript Gantt Chart control for flexible task management in project timelines.
 platform: gantt-sdk
 control: Splitting and merging tasks 

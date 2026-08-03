@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Bind the native events in Blazor Gantt Chart Component | Syncfusion®
+title: Bind the Native Events in Blazor Gantt Chart Component | Syncfusion
 description: Learn here to bind the native events and customize the key interaction in Blazor Gantt Chart component.
 platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---
 
-# Bind native events in Gantt Chart
+# Bind Native Events in Gantt Chart
 
 There are default keyboard shortcuts available to perform actions in the Gantt Chart. Refer to the Gantt Chart default keyboard shortcuts [here](https://blazor.syncfusion.com/documentation/gantt-chart/accessibility#keyboard-navigation). Now, you can create custom shortcut keys to perform your own actions in Gantt Chart by binding the native events like onkeydown, onkeyup, onkeypress, etc.
 

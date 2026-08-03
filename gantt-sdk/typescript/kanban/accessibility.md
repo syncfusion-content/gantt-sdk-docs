@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in TypeScript Kanban control | Syncfusion
+title: Accessibility in TypeScript Kanban Control | Syncfusion
 description: Learn here all about Accessibility in Syncfusion TypeScript Kanban control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Accessibility 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Accessibility in TypeScript Kanban control
+# Accessibility in TypeScript Kanban Control
 
 The Kanban component has been designed, keeping in mind the WAI-ARIA specifications, and applies the WAI-ARIA roles, states, and properties. This component is characterized by complete ARIA accessibility support that makes it easy for people who use assistive technologies (AT) or those who completely rely on keyboard navigation.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Virtual scrolling in React Kanban Component | Syncfusion
+title: Virtual Scrolling in React Kanban Component | Syncfusion
 description: Learn here all about Virtual scrolling in Syncfusion React Kanban component of Syncfusion Essential JS 2 and more.
 control: Virtual scrolling 
 platform: gantt-sdk
