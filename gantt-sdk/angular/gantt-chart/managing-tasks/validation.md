@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Validation in Angular Gantt Chart Component | Syncfusion
-description: Learn how to validate task data in the Syncfusion Angular Gantt Chart component using column, custom, dependency, and resource grid rules for accurate project management.
+description: Learn to validate task data in the Syncfusion Angular Gantt Chart using column, custom, dependency, and resource grid rules for accurate project management.
 platform: gantt-sdk
 control: Validating Tasks
 documentation: ug

@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# To customize PDF export
+# To Customize PDF Export
 
 Customizing PDF export in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component allows tailoring exported documents for specific needs, using [PdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties) to adjust file names, page orientation, size, columns, headers, footers, timelines, and templates. Ensuring focused content like selected rows or styled taskbars, with the `PdfExport` module injected and [allowPdfExport](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowpdfexport) enabled. Use [beforePdfExport](https://ej2.syncfusion.com/angular/documentation/gantt/events#beforepdfexport) and [pdfExportComplete](https://ej2.syncfusion.com/angular/documentation/gantt/events#pdfexportcomplete) events for pre-export and post-export modifications, and [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#pdfquerytaskbarinfo) for taskbar styling, supporting RTL layouts via [enableRtl](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablertl).
 

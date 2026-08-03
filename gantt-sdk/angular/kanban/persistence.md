@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Persistence in Angular Kanban component | Syncfusion
+title: Persistence in Angular Kanban Component | Syncfusion
 description: Learn here all about Persistence in Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Persistence 

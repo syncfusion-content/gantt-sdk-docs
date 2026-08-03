@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Splitting and merging tasks in Angular Gantt Chart | Syncfusion
+title: Splitting and Merging Tasks in Angular Gantt Chart | Syncfusion
 description: Learn how to split and merge tasks in the Syncfusion Angular Gantt Chart component for flexible task management in project timelines.
 platform: gantt-sdk
 control: Splitting and merging tasks

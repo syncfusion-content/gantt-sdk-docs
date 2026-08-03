@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Performance tips for Angular Gantt Chart Component | Syncfusion
+title: Performance Tips for Angular Gantt Chart Component | Syncfusion
 description: Check out and learn here all about how to improve the loading performance of Angular Gantt component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Gantt performance

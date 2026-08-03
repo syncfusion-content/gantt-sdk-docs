@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deleting tasks in Angular Gantt Chart Component | Syncfusion
+title: Deleting Tasks in Angular Gantt Chart Component | Syncfusion
 description: Learn how to delete tasks dynamically in the Syncfusion Angular Gantt Chart component using toolbar or programmatic methods for efficient project management.
 platform: gantt-sdk
 control: Deleting tasks

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Angular Gantt Chart Overview
+title: Syncfusion Angular Gantt Chart Overview
 description: Feature catalog for Angular Gantt Chart - task management, timeline visualization, resource allocation, and project scheduling.
 platform: gantt-sdk
 control: Gantt Overview

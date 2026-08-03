@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Feature Modules
+title: Syncfusion Angular Gantt Chart Feature Modules
 description: Enable advanced Angular Gantt Chart features through module injection for sorting, editing, toolbar, and export functionality.
 platform: gantt-sdk
 control: Module

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Column menu in Angular Gantt Chart Component | Syncfusion
+title: Column Menu in Angular Gantt Chart Component | Syncfusion
 description: Learn here all about column menu in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Column menu

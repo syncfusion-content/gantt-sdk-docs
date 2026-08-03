@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ej1 api migration in Angular Kanban component | Syncfusion
+title: Ej1 API Migration in Angular Kanban Component | Syncfusion
 description: Learn here all about Ej1 api migration in Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Ej1 api migration 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Ej1 api migration in Angular Kanban component
+# Ej1 API Migration in Angular Kanban Component
 
 This article describes the API migration process of Kanban component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

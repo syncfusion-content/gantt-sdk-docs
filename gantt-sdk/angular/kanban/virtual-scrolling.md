@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Virtual Scrolling for Performance in Angular Kanban Component | Syncfusion
+title: Virtual Scrolling in Angular Kanban Component | Syncfusion
 description: Learn here all about Virtual Scrolling in Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Virtual scrolling
