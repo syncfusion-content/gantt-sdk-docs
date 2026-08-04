@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Angular Gantt Cell Selection API | Syncfusion
+title: Cell Selection in Angular Gantt Chart | Syncfusion
 description: Explore cell selection in Syncfusion Angular Gantt Chart, including single, multiple, external selection, and customization via API methods and events.
 platform: gantt-sdk
 control: Cell selection 

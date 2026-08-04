@@ -1,6 +1,6 @@
 ---
 layout: post
-title: New row position in Angular Gantt Chart Component | Syncfusion
+title: New Row Position in Angular Gantt Chart Component | Syncfusion
 description: Learn here all about new row position in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: New row position 

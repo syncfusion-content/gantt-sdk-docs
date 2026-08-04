@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resize columns in Angular Gantt Chart Component | Syncfusion
+title: Resize Columns in Angular Gantt Chart Component | Syncfusion
 description: Learn to resize columns in the Angular Gantt Chart component with dynamic sizing, width limits, and external customization options.
 platform: gantt-sdk
 control: Column resizing
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Resize Columns in Angular Gantt Chart component
+# Resize Columns in Angular Gantt Chart Component
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component allows you to resize columns dynamically by dragging the edges of column headers. This feature enhances readability and layout flexibility, especially when working with large datasets.  To enable this feature, set the [allowResizing](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowresizing) property to **true** in the Gantt configuration. 
 
