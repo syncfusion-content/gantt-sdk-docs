@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Columns in Angular Kanban component | Syncfusion
+title: Columns in Angular Kanban Component | Syncfusion
 description: Learn how to configure columns in the Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Columns

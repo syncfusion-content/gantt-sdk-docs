@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in Angular Kanban component | Syncfusion
+title: Data Binding in Angular Kanban Component | Syncfusion
 description: Learn how to bind local and remote data to the Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Data binding

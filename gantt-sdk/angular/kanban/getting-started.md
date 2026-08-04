@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Angular Kanban Component | Syncfusion
+title: Getting Started with Angular Kanban Component | Syncfusion
 description: Checkout and learn about Getting started with Angular Kanban component of Syncfusion Essential JS 2 and more details.
 platform: gantt-sdk
 control: Getting started
