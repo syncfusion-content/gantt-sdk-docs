@@ -1,14 +1,17 @@
----
+﻿---
 layout: post
-title: PDF Export with templates in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about PDF Exporting with templates in Syncfusion Blazor Gantt Chart component and much more.
+title: PDF Export with Templates in Blazor Gantt Chart | Syncfusion
+description: Learn how to export Syncfusion Blazor Gantt Chart to PDF using custom templates for taskbar, header, footer, and timeline sections.
+keywords: blazor gantt pdf templates, pdf taskbar template, pdf header footer template, custom pdf export, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/template-pdf-export
 platform: gantt-sdk
-control: Gantt Chart
+control: Template PDF Export - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
 
-# Exporting PDF with templates
+# PDF Export with Custom Templates in Blazor Gantt Chart
 
 The Gantt chart export functionality allows you to export both column and header templates to a PDF document. These templates can include various customizations such as images, formatted text, and custom cell styles within the header and columns. 
 

@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Work in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Work in Syncfusion Blazor Gantt Chart component and much more details.
+title: Work in Blazor Gantt Chart | Syncfusion
+description: Learn how to configure and calculate work in Syncfusion Blazor Gantt Chart for accurate task effort tracking, resource units, and work scheduling.
+keywords: blazor gantt work, task work, work field, effort tracking, work scheduling, resource work units, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/work
 platform: gantt-sdk
-control: Gantt Chart
+control: Work - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Work in Blazor Gantt Chart Component
+# Work and Effort Tracking with Task Type Support in Blazor Gantt Chart
 
 ## Work
 

@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
 title: Getting Started with Blazor Gantt Chart in Web App | Syncfusion
-description: Check out and learn about the documentation for getting started with Blazor Gantt Chart Component in Blazor Web App.
+description: Learn how to install and set up the Syncfusion Blazor Gantt Chart in a Blazor Web App with task data binding and timeline rendering.
+keywords: blazor gantt chart, getting started, blazor web app, syncfusion gantt, task data binding, timeline rendering
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/getting-started-with-web-app
 platform: gantt-sdk
-component: Gantt Chart
+control: Getting Started - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Getting Started with Blazor Gantt Chart Component in Blazor Web App
+# Getting Started with Blazor Gantt Chart in Blazor Web App
 
 This section briefly explains about how to include the [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) component in your Blazor Web App using [Visual Studio](https://visualstudio.microsoft.com/vs/), [Visual Studio Code](https://code.visualstudio.com/), and the [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/).
 

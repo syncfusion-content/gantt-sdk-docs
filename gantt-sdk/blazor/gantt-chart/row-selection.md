@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Row Selection in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about row Selection in Syncfusion Blazor Gantt Chart component and much more.
+title: Row Selection in Blazor Gantt Chart | Syncfusion
+description: Learn how to configure row selection in Syncfusion Blazor Gantt Chart with single, multiple, and checkbox-based selection modes for task rows.
+keywords: blazor gantt row selection, single row select, multiple row select, checkbox selection, selection mode, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/row-selection
 platform: gantt-sdk
-control: Gantt Chart
+control: Row Selection - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Row selection in  Blazor Gantt Chart Component
+# Row Selection with Single and Multiple Modes in Blazor Gantt Chart
 
 The  Blazor Gantt Chart Component supports row selection using mouse clicks or keyboard navigation (arrow keys). This enables users to highlight, manipulate, or trigger actions on selected task rows.
 

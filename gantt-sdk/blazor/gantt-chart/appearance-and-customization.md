@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Appearance Customization in Blazor Gantt Chart Component | Syncfusion
-description: Learn here all about appearance and customization in Syncfusion Blazor Gantt Chart component and more.
+title: Appearance and Customization in Blazor Gantt Chart | Syncfusion
+description: Learn how to customize the appearance of Syncfusion Blazor Gantt Chart including taskbar height, row height, connectors, and label settings.
+keywords: blazor gantt appearance, customize gantt, taskbar height, row height, connector style, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/appearance-and-customization
 platform: gantt-sdk
-control: Gantt Chart
+control: Appearance and Customization - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Appearance Customization in Blazor Gantt Chart Component
+# Taskbar, Row, and Connector Appearance in Blazor Gantt Chart
 
 ## Taskbar customization
 

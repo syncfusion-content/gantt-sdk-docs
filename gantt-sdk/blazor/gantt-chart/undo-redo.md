@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Undo and Redo in Blazor Gantt Chart Component | Syncfusion
-description: Learn how to enable, configure, and handle undo and redo actions in the Syncfusion Blazor Gantt Chart, including keyboard shortcuts and supported actions.
+title: Undo and Redo in Blazor Gantt Chart | Syncfusion
+description: Learn how to configure undo and redo in Syncfusion Blazor Gantt Chart to revert task edits, dependency changes, and project modifications with action history.
+keywords: blazor gantt undo redo, enableundoredo, undoredoactions, action history, revert changes, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/undo-redo
 platform: gantt-sdk
-control: Gantt Chart
+control: Undo Redo - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Undo and Redo in Blazor Gantt Chart Component
+# Undo and Redo with Action History Management in Blazor Gantt Chart
 
 The Syncfusion® Blazor Gantt Chart component includes built-in undo and redo functionality to revert or restore recent changes. This support improves editing efficiency, reduces errors, and supports quick recovery from accidental modifications.
 

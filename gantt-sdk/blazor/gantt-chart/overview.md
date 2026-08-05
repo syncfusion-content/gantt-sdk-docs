@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Index in Blazor Gantt Chart Component | Syncfusion
-description: Explore the overview of the Syncfusion Blazor Gantt Chart component, covering key concepts, functionalities, and usage guidelines.
+title: Blazor Gantt Chart Component Overview | Syncfusion
+description: Explore the Syncfusion Blazor Gantt Chart component with key features like task scheduling, resource view, dependencies, and timeline rendering.
+keywords: blazor gantt chart, overview, syncfusion gantt, task scheduling, resource view, timeline, project management
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/overview
 platform: gantt-sdk
-control: Gantt Chart
+control: Overview - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Index in Blazor Gantt component
+# Blazor Gantt Chart Overview
 
 The Gantt Chart in Blazor offers a project management interface similar to Microsoft Project, designed for scheduling and managing projects. It provides an intuitive way to visually manage tasks, their relationships, and project resources.
 

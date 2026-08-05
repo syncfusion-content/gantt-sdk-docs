@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Templates in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about templates in Syncfusion Blazor Gantt Chart component and much more details.
+title: Templates in Blazor Gantt Chart | Syncfusion
+description: Learn how to use templates in Syncfusion Blazor Gantt Chart to customize taskbars, grid columns, tooltips, and task edit dialog content.
+keywords: blazor gantt templates, taskbar template, column template, tooltip template, dialog template, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/templates
 platform: gantt-sdk
-control: Gantt Chart
+control: Templates - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Templates in Blazor Gantt Chart component
+# Custom Templates for Taskbar, Column, and Tooltip in Blazor Gantt Chart
 
 Blazor supports templated components that accept one or more UI segments as input, which are rendered as part of the component during execution. The Gantt Chart is a templated Razor component that allows customization of various UI elements using template parameters. This allows rendering of custom content or components based on application logic.
 

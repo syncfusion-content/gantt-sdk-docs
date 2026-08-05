@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Frozen columns in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about frozen columns in Syncfusion Blazor Gantt Chart component and more.
+title: Frozen Columns in Blazor Gantt Chart | Syncfusion
+description: Learn how to freeze columns in Syncfusion Blazor Gantt Chart to keep specific grid columns visible during horizontal scrolling.
+keywords: blazor gantt frozen columns, freeze columns, fixed columns, column freeze, horizontal scroll, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/frozen-columns
 platform: gantt-sdk
-control: Gantt Chart
+control: Frozen Columns - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Frozen columns in Blazor Gantt Component
+# Freeze Columns for Fixed Visibility in Blazor Gantt Chart
 
 The frozen columns feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart allows specific columns to stay fixed on the left side while scrolling horizontally. This enhances readability and simplifies navigation across wide dataset
 

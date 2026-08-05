@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Touch Interaction in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Touch Interaction in Syncfusion Blazor Gantt Chart component and more.
+title: Touch Interaction in Blazor Gantt Chart | Syncfusion
+description: Learn how to configure touch interactions in Syncfusion Blazor Gantt Chart for mobile and tablet devices including task editing and navigation.
+keywords: blazor gantt touch interaction, mobile gantt, touch editing, tablet support, touch navigation, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/touch-interaction
 platform: gantt-sdk
-control: Gantt Chart
+control: Touch Interaction - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Touch Interaction in Blazor Gantt Chart Component
+# Touch and Mobile Interaction Support in Blazor Gantt Chart
 
 The Gantt Chart component supports to perform user interactions in mobile and tablet devices. This section explains how to interact with the Gantt features in touch-enabled devices.
 
