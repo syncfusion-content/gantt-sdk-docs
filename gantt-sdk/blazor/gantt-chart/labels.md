@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Task Labels in Blazor Gantt Chart Component | Syncfusion
+title: Task Labels in Blazor Gantt Chart | Syncfusion
 description: Learn how to configure taskbar labels in the Syncfusion Blazor Gantt Chart component for enhanced data visualization and project management.
 platform: gantt-sdk
 control:  Task labels
 documentation: ug
 ---
 
-# Task Labels in Blazor Gantt Chart Component
+# Task Labels in Blazor Gantt Chart
 
 Task labels in the Blazor Gantt Chart component display key task information directly on or near taskbars, enhancing project visualization without requiring task interaction. Configured via the [GanttLabelSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttLabelSettings-1.html) property, labels show details like task names, IDs, or progress, streamlining workflows for resource management and status tracking. Labels support three positions: left labels outside the taskbar for identifiers like **TaskName**, right labels after the taskbar for metrics like **Progress**, and task labels overlaid on taskbars for prominent data like task titles. Left and right labels remain visible regardless of taskbar width, while task labels may clip for short tasks. Labels improve readability and provide immediate context, reducing the need for hovers or dialogs in large projects.
 

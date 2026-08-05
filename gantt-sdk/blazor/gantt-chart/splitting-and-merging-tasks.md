@@ -7,7 +7,7 @@ control: Splitting and merging tasks
 documentation: ug
 ---
 
-# Splitting and Merging Tasks in Blazor Gantt Chart Component
+# Splitting and Merging Tasks in Blazor Gantt Chart
 
 Splitting and merging tasks in the Blazor Gantt Chart component enhances project management by allowing tasks to be divided into segments or recombined, representing breaks or continuous work periods. This feature enables dividing a task or pausing work when necessary, whether planned or unexpected, and adds dynamism to the timeline view for better visualization.
 

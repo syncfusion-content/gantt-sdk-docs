@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dimensions in Blazor Kanban Component | Syncfusion®
-description: Checkout and learn here all the features about dimensions in Blazor Kanban component and much more details.
+title: Dimensions in Blazor Kanban | Syncfusion
+description: Learn how to configure card and column dimensions in the Syncfusion Blazor Kanban component for optimal layout and display.
 platform: gantt-sdk
 control: Kanban
 documentation: ug
 ---
 
-# Dimensions in Blazor Kanban Component
+# Dimensions in Blazor Kanban
 
 This section explains how to configure the height and width of the Blazor Kanban component to achieve responsive and fixed layouts.
 

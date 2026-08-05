@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Excel Like Filter in Blazor Gantt Chart | Syncfusion
-description: Checkout and learn here all about Excel like filter in Syncfusion Blazor Gantt Chart and much more details.
+description: Learn how to implement Excel-like filter functionality in the Syncfusion Blazor Gantt Chart component for advanced data filtering and analysis.
 platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---
 
-# Excel Like Filter in Blazor Gantt Chart Component
+# Excel Like Filter in Blazor Gantt Chart
 
 The Excel-like filter in Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component enables column-level filtering similar to Microsoft Excel. It supports sorting, clearing filters, and applying advanced conditions through a submenu available in each column header. This feature is highly effective for working with large datasets and applying multiple filter criteria.
 

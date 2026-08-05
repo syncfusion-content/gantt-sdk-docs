@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Taskbar in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Taskbar editing in Syncfusion Blazor Gantt Chart component and more.
+title: Taskbar in Blazor Gantt Chart | Syncfusion
+description: Learn how to configure and edit taskbars in the Syncfusion Blazor Gantt Chart component to manage task timelines and project schedules.
 platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---
-# Taskbar in Blazor Gantt Chart Component
+# Taskbar in Blazor Gantt Chart
 
 ## Taskbar template
 

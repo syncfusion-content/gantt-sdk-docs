@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Excel Like Filter in Blazor Gantt Chart | Syncfusion
-description: Checkout and learn here all about Excel like filter in Syncfusion Blazor Gantt Chart and much more details.
+title: Filter Menu in Blazor Gantt Chart | Syncfusion
+description: Learn how to configure and use filter menus in the Syncfusion Blazor Gantt Chart component to quickly filter and display specific tasks.
 platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---
 
-# Filter Menu in Blazor Gantt Chart Component
+# Filter Menu in Blazor Gantt Chart
 
 The Syncfusion Blazor Gantt Chart component provides a filter menu for each column, allowing filtering based on data type and supported operators. 
 

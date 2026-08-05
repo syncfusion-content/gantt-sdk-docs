@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sorting in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Sorting in Syncfusion Blazor Gantt Chart component and much more details.
+title: Sorting in Blazor Gantt Chart | Syncfusion
+description: Learn how to implement sorting in the Syncfusion Blazor Gantt Chart component to organize tasks by different columns and criteria.
 platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---
 
-# Sorting in Blazor Gantt Chart Component
+# Sorting in Blazor Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component provides sorting functionality to arrange task data in ascending or descending order based on column values.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Gantt Chart - Strict CSP Feature Limitations | Syncfusion
-description: Details on Blazor features in Gantt Chart that require Content Security Policy (CSP) relaxation and much more details.
+title: Gantt Chart Strict CSP Feature Limitations | Syncfusion
+description: Learn about Content Security Policy (CSP) limitations in the Syncfusion Blazor Gantt Chart component and features requiring CSP relaxation.
 platform: gantt-sdk
 control: Gantt Chart
 documentation: ug

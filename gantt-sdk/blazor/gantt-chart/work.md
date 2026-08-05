@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Work in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Work in Syncfusion Blazor Gantt Chart component and much more details.
+title: Work in Blazor Gantt Chart | Syncfusion
+description: Learn how to track and manage work effort in the Syncfusion Blazor Gantt Chart component for accurate project resource allocation."
 platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---
 
-# Work in Blazor Gantt Chart Component
+# Work in Blazor Gantt Chart
 
 ## Work
 

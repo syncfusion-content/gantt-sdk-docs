@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about events in Syncfusion Blazor Gantt Chart component and much more details.
+title: Events in Blazor Gantt Chart | Syncfusion
+description: Learn about available events in the Syncfusion Blazor Gantt Chart component and how to handle component interactions and user actions effectively.
 platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---
 
-# Events in Blazor Gantt Chart Component
+# Events in Blazor Gantt Chart
 
 In this section, the list of events of the Gantt Chart component has been provided which will be triggered for appropriate Gantt Chart actions.
 

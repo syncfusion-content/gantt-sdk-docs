@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Baseline in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Baseline in Syncfusion Blazor Gantt Chart component and much more.
+title: Baseline in Blazor Gantt Chart | Syncfusion
+description: Learn how to set and manage baseline in the Syncfusion Blazor Gantt Chart component to track project progress against original schedules.
 platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---
 
-# Baseline in Blazor Gantt Chart Component
+# Baseline in Blazor Gantt Chart
 
 The baseline feature enables users to view the deviation between the planned dates and actual dates of the tasks in a project. Baseline dates or planned dates of a task may or may not be same as the actual task dates. The baseline can be enabled by setting the [RenderBaseline](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_RenderBaseline) property to `true` and the baseline color can be changed using the [BaselineColor](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_BaselineColor) property. To render the baseline, you should map the baseline start and end date values from the data source. This can be done using the [GanttTaskFields.BaselineStartDate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_BaselineStartDate) and [GanttTaskFields.BaselineEndDate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_BaselineEndDate) properties. The following code example shows how to enable a baseline in the Gantt Chart component.
 

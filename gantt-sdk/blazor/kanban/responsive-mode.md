@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Responsive Mode in Blazor Kanban Component | Syncfusion®
-description: Learn how to enable and configure responsive mode in the Syncfusion Blazor Kanban component so cards adapt to any screen size.
+title: Responsive Mode in Blazor Kanban | Syncfusion
+description: Learn how to enable and configure responsive mode in the Syncfusion Blazor Kanban component for cards that adapt to any screen size.
 platform: gantt-sdk
 control: Kanban
 documentation: ug
 ---
 
-# Responsive Layout in Blazor Kanban Component
+# Responsive Layout in Blazor Kanban
 
 The [Blazor Kanban Board](https://www.syncfusion.com/blazor-components/blazor-kanban-board) component supports responsive behavior, automatically adapting its layout based on the width and height of the client’s browser.
 

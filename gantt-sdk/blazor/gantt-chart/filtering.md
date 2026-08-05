@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Filtering in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Filtering in Syncfusion Blazor Gantt Chart component and much more.
+title: Filtering in Blazor Gantt Chart | Syncfusion
+description: Learn how to implement filtering in the Syncfusion Blazor Gantt Chart component to query and display specific tasks based on custom criteria.
 platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---
 
-# Filtering in Blazor Gantt Chart Component
+# Filtering in Blazor Gantt Chart
 
 Filtering allows you to view specific or related records based on defined criteria. The Gantt Chart component supports options like filter menu, Excel-like filtering, and toolbar search to narrow down visible data.
 

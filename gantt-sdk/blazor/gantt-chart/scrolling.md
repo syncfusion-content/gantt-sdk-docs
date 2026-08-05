@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Scrolling in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about scrolling in Syncfusion Blazor Gantt Chart component and much more.
+title: Scrolling in Blazor Gantt Chart | Syncfusion
+description: Learn how to implement scrolling in the Syncfusion Blazor Gantt Chart component with smooth horizontal and vertical navigation options.
 platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---
 
-# Scrolling in Blazor Gantt Chart Component
+# Scrolling in Blazor Gantt Chart
 
 Scrolling in the Blazor Gantt Chart component enables smooth navigation across extensive project datasets and long timelines. It ensures taskbars, grid rows, and timeline cells remain visible within the viewport. Scrollbars automatically appear when content exceeds the component’s defined [Height](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Height) and [Width](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Width), supporting vertical scrolling for rows, horizontal scrolling for columns, and timeline scrolling for extended chart areas.
 

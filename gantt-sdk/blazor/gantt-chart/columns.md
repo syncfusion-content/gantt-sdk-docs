@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Columns in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Columns in Syncfusion Blazor Gantt Chart component and much more details.
+title: Columns in Blazor Gantt Chart | Syncfusion
+description: Learn how to define, configure, and customize columns in the Syncfusion Blazor Gantt Chart component to organize and display task data efficiently.
 platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---
 
-# Columns in Blazor Gantt Chart Component
+# Columns in Blazor Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component displays task data in a tabular format using columns. Columns organize task data efficiently and enable user interactions such as sorting, filtering, and formatting within the Gantt chart.
 

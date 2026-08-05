@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Deleting Tasks in Blazor Gantt Chart Component | Syncfusion
+title: Deleting Tasks in Blazor Gantt Chart | Syncfusion
 description: Learn how to delete tasks dynamically in the Syncfusion Blazor Gantt Chart component using toolbar or programmatic methods for efficient project management.
 platform: gantt-sdk
 control: Deleting tasks
 documentation: ug
 ---
 
-# Deleting Tasks in Blazor Gantt Chart Component
+# Deleting Tasks in Blazor Gantt Chart
 
 Deleting tasks in the Blazor Gantt Chart component streamlines project management by removing tasks, such as outdated milestones or subtasks, using the toolbar or programmatic methods. Enabled by setting the [GanttEditSettings.AllowDeleting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_AllowDeleting) property to **true** and tasks can be deleted after selecting a row, ensuring seamless updates to dependencies and critical path calculations. A confirmation dialog, activated via [GanttEditSettings.ShowDeleteConfirmDialog](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_ShowDeleteConfirmDialog), prompts to verify deletions, preventing accidental removals. The [DeleteRecordAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_DeleteRecordAsync_System_Nullable_System_Int32__) method allows programmatic deletion, requiring a selected record with valid `GanttTaskFields` mappings (e.g., id, name). Ensure tasks are selected and `GanttTaskFields` are properly configured to avoid issues during deletion.
 

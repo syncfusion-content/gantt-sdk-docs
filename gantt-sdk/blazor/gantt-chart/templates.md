@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Templates in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about templates in Syncfusion Blazor Gantt Chart component and much more details.
+title: Templates in Blazor Gantt Chart | Syncfusion
+description: Learn how to create and customize templates in the Syncfusion Blazor Gantt Chart component for personalized UI and enhanced user experience.
 platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---
 
-# Templates in Blazor Gantt Chart Component
+# Templates in Blazor Gantt Chart
 
 Blazor supports templated components that accept one or more UI segments as input, which are rendered as part of the component during execution. The Gantt Chart is a templated Razor component that allows customization of various UI elements using template parameters. This allows rendering of custom content or components based on application logic.
 

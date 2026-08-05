@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Clipboard in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about clipboard in Syncfusion Blazor Gantt Chart component and much more details.
+title: Clipboard Operations in Blazor Gantt Chart | Syncfusion
+description: Learn how to implement copy, paste, and cut operations in the Syncfusion Blazor Gantt Chart component for efficient data management.
 platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---
 
-# Clipboard in Blazor Gantt Chart Component
+# Clipboard in Blazor Gantt Chart
 
 The clipboard feature allows copying selected row or cell data from the Gantt Chart component.
 

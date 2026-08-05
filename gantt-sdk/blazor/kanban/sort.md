@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sorting in Blazor Kanban Component | Syncfusion
+title: Sorting in Blazor Kanban | Syncfusion
 description: Learn how to sort cards in the Syncfusion Blazor Kanban component using built-in sort settings, custom fields, and ordering options.
 platform: gantt-sdk
 control: Kanban
 documentation: ug
 ---
 
-# How to Sort Cards in the Blazor Kanban Component
+# How to Sort Cards in the Blazor Kanban
 
 The [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban-board) provides built-in support to arrange the cards in their columns based on the JSON data order and drop the cards in the columns based on the dropped clone.
 

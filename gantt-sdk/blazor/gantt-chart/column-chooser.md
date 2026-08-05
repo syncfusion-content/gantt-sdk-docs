@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Column Chooser in Blazor Gantt Chart Component | Syncfusion
+title: Column Chooser in Blazor Gantt Chart | Syncfusion
 description: Learn how to dynamically show or hide columns using the column chooser in the Syncfusion Blazor Gantt Chart, including custom templates.
 platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---
 
-# Column Chooser in Blazor Gantt Chart Component
+# Column Chooser in Blazor Gantt Chart
 
 The column chooser feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component provides dynamic control over which columns are displayed in the Gantt view.
 

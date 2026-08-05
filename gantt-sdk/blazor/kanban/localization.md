@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization in Blazor Kanban Component | Syncfusion®
-description: Checkout and learn here all the features about localization in Blazor Kanban component and much more details.
+title: Localization in Blazor Kanban | Syncfusion
+description: Learn how to implement localization and multi-language support in the Syncfusion Blazor Kanban component for global applications.
 platform: gantt-sdk
 control: Kanban
 documentation: ug
 ---
 
-# Localization Support in Blazor Kanban Component
+# Localization Support in Blazor Kanban
 
 ## Localization
 

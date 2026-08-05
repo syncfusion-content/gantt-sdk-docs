@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blazor Gantt Chart Performance Optimization Guide | Syncfusion
+title: Performance Optimization in Blazor Gantt Chart | Syncfusion
 description: Learn how to optimize the loading and rendering performance of the Blazor Gantt Chart component, especially when working with large datasets.
 platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---
 
-# Performance Tips for Blazor Gantt Chart Component
+# Performance Tips in Blazor Gantt Chart
 
 This guide provides practical strategies to enhance the loading performance of the [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) component, especially when dealing with large datasets and multiple columns. It provides valuable insights into effective strategies and best practices for binding extensive data sources without encountering performance degradation. It includes actionable tips to ensure smooth data binding and a responsive user experience.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Task Scheduling in Blazor Gantt Chart Component | Syncfusion
+title: Task Scheduling in Blazor Gantt Chart | Syncfusion
 description: Learn task scheduling in Syncfusion Blazor Gantt Chart including automatic, manual, custom, and unscheduled tasks, milestones, and duration units.
 platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---
 
-# Task Scheduling in Blazor Gantt Chart Component
+# Task Scheduling in Blazor Gantt Chart
 
 The Gantt provides support for automatic and manual task scheduling modes. It is used to indicate whether the start date and end date of all the tasks will be automatically validated or not. [TaskMode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_TaskMode) is the property used to change the schedule mode of a task.
 

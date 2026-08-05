@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Style and Appearance in Blazor Gantt Chart Component | Syncfusion
-description: Check out and learn here all about style and appearance in Syncfusion Blazor Gantt Chart component and more.
+title: Style and Appearance in Blazor Gantt Chart | Syncfusion
+description: Learn how to customize styles and appearance in the Syncfusion Blazor Gantt Chart component with custom themes and styling options.
 platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---
 
-# Style and Appearance in Blazor Gantt Chart Component
+# Style and Appearance in Blazor Gantt Chart
 
 Customize the appearance of the Blazor Gantt Chart by overriding default CSS styles. The Gantt Chart provides a comprehensive set of CSS classes for targeting specific sections, allowing a tailored design that matches application branding. [Theme Studio](https://blazor.syncfusion.com/documentation/appearance/theme-studio) can create custom themes for all JavaScript controls.
 

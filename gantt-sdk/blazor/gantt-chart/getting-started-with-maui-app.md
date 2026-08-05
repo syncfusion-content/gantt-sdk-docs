@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with Gantt Chart in Blazor MAUI App | Syncfusion
-description: Check out and learn about the documentation for getting started with Blazor Gantt Chart Component in Blazor MAUI App.
+description: Learn about the documentation for getting started with Blazor Gantt Chart in Blazor MAUI App.
 platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---
 
-# Getting Started with Blazor Gantt Chart Component in Blazor MAUI App
+# Getting Started with Blazor Gantt Chart in Blazor MAUI App
 
 This section briefly explains how to include the [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) component in your Blazor MAUI application using both [Visual Studio](https://visualstudio.microsoft.com/vs/) and [Visual Studio Code](https://code.visualstudio.com/).
 

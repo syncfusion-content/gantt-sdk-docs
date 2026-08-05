@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Resource View in Blazor Gantt Chart Component | Syncfusion
+title: Resource View in Blazor Gantt Chart | Syncfusion
 description: Learn how to configure resource view in the Syncfusion Blazor Gantt Chart component for hierarchical task visualization and resource allocation.
 platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---
 
-# Resource View in Blazor Gantt Chart Component
+# Resource View in Blazor Gantt Chart
 
 The resource view in the Blazor Gantt Chart component organizes tasks hierarchically by resource, displaying resources as parent nodes and their assigned tasks as child taskbars in a timeline. Enabled by setting [ViewType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ViewType) property to [ResourceView](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.ViewType.html#Syncfusion_Blazor_Gantt_ViewType_ResourceView), this view visualizes workloads, such as multiple tasks per resource, with taskbars showing duration, progress, and dependencies. Unassigned tasks group under an **Unassigned Task** node. Taskbars include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may truncate resource names. Parent tasks are not supported, and tasks require scheduling (start date and duration).
 

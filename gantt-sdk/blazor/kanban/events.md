@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events in Blazor Kanban Component | Syncfusion®
-description: Checkout and learn here all the features about events in Blazor Kanban component and much more details.
+title: Events in Blazor Kanban | Syncfusion
+description: Learn about available events in the Syncfusion Blazor Kanban component and how to handle card interactions, column changes, and user actions.
 platform: gantt-sdk
 control: Kanban
 documentation: ug
 ---
 
-# Event Handling in Blazor Kanban Component
+# Event Handling in Blazor Kanban
 
 his guide provides a comprehensive overview of the available events in the [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban-board) component. These events enable developers to customize behavior and respond to user interactions effectively.
 

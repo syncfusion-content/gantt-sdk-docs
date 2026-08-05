@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Binding in Blazor Kanban Component | Syncfusion®
-description: Check out and learn here all the features about data binding in Blazor Kanban component and much more details.
+title: Data Binding in Blazor Kanban | Syncfusion
+description: Learn how to bind local and remote data sources to the Syncfusion Blazor Kanban component for dynamic card management and workflow visualization.
 platform: gantt-sdk
 control: Kanban
 documentation: ug
 ---
 
-# Data Binding Overview in Blazor Kanban Component
+# Data Binding Overview in Blazor Kanban
 
 The Kanban uses [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html), which supports both RESTFUL JSON data service binding and IEnumerable binding. The [DataSource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.SfKanban-1.html#Syncfusion_Blazor_Kanban_SfKanban_1_DataSource) property of Kanban can be assigned either with the instance of DataManager or a list of DataSource collection.
 

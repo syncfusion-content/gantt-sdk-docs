@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Context Menu in Blazor Gantt Chart Component | Syncfusion
-description: Check out and learn here all about Context Menu in Syncfusion Blazor Gantt Chart component and much more.
+title: Context Menu in Blazor Gantt Chart | Syncfusion
+description: Learn how to implement and customize context menus in the Syncfusion Blazor Gantt Chart component for quick task actions and operations.
 platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---
 
-# Context Menu in Blazor Gantt Chart Component
+# Context Menu in Blazor Gantt Chart
 
 The Blazor Gantt Chart component provides quick access to actions through a context menu. On right-click, context menu options are displayed based on the clicked element.
 

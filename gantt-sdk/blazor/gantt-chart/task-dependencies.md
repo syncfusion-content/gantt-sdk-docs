@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Task Dependencies in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Task Dependencies in Syncfusion Blazor Gantt Chart component and more.
+title: Task Dependencies in Blazor Gantt Chart | Syncfusion
+description: Learn how to define and manage task dependencies in the Syncfusion Blazor Gantt Chart component to establish task relationships and project scheduling."
 platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---
 
-# Task Dependencies in Blazor Gantt Chart Component
+# Task Dependencies in Blazor Gantt Chart
 
 Task dependencies define the logical order in which tasks must be executed, helping ensure accurate scheduling and streamlined project workflows. In the Blazor Gantt Chart component, task relationships are represented visually to support structured planning and coordination across the project timeline.
 

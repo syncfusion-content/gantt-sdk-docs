@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Column Template in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Column Template in Syncfusion Blazor Gantt Chart component and much more details.
+title: Column Template in Blazor Gantt Chart | Syncfusion
+description: Learn how to create and use custom column templates in the Syncfusion Blazor Gantt Chart component for personalized data display and formatting.
 platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---
 
-# Column Template in Blazor Gantt Chart Component
+# Column Template in Blazor Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component supports column templates, allowing custom content to be displayed in a column instead of the default field value. You can render custom components or HTML elements using the [Template](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_Template) property to include elements such as images, buttons, or other UI controls within a column.
 

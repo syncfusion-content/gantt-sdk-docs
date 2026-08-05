@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Searching in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about searching in Syncfusion Blazor Gantt Chart component and much more.
+title: Search in Blazor Gantt Chart | Syncfusion
+description: Learn how to implement search and filter functionality in the Syncfusion Blazor Gantt Chart component to quickly find and manage tasks in large datasets.
 platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---
 
-# Search in Blazor Gantt Chart Component
+# Searching in Blazor Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component allows quick filtering of records based on search input, improving access to relevant data in large datasets.
 
