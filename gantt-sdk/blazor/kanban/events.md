@@ -9,7 +9,7 @@ documentation: ug
 
 # Event Handling in Blazor Kanban Component
 
-his guide provides a comprehensive overview of the available events in the [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban-board) component. These events enable developers to customize behavior and respond to user interactions effectively.
+This guide provides a comprehensive overview of the available events in the [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban-board) component. These events enable developers to customize behavior and respond to user interactions effectively.
 
 ## OnLoad event
 
@@ -26,7 +26,7 @@ his guide provides a comprehensive overview of the available events in the [Blaz
 
     public void OnLoadHandler(Object args)
     {
-        // Here you can customize your code
+        // Code customization can be performed here.
     }
 }
 
@@ -47,7 +47,7 @@ his guide provides a comprehensive overview of the available events in the [Blaz
 
     public void ActionBeginHandler(ActionEventArgs<TValue> args)
     {
-        // Here you can customize your code
+        // Code customization can be performed here.
     }
 }
 
@@ -68,7 +68,7 @@ his guide provides a comprehensive overview of the available events in the [Blaz
 
     public void ActionCompleteHandler(ActionEventArgs<TValue> args)
     {
-        // Here you can customize your code
+        // Code customization can be performed here.
     }
 }
 
@@ -89,7 +89,7 @@ his guide provides a comprehensive overview of the available events in the [Blaz
 
     public void ActionFailureHandler(ActionEventArgs<TValue> args)
     {
-        // Here you can customize your code
+        // Code customization can be performed here.
     }
 }
 
@@ -110,7 +110,7 @@ his guide provides a comprehensive overview of the available events in the [Blaz
 
     public void CardClickHandler(CardClickEventArgs<TValue> args)
     {
-        // Here you can customize your code
+        // Code customization can be performed here.
     }
 }
 
@@ -131,7 +131,7 @@ his guide provides a comprehensive overview of the available events in the [Blaz
 
     public void CardDoubleClickHandler(CardClickEventArgs<TValue> args)
     {
-        // Here you can customize your code
+        // Code customization can be performed here.
     }
 }
 
@@ -152,7 +152,7 @@ his guide provides a comprehensive overview of the available events in the [Blaz
 
     public void CardRenderedHandler(CardRenderedEventArgs<TValue> args)
     {
-        // Here you can customize your code
+        // Code customization can be performed here.
     }
 }
 
@@ -173,7 +173,7 @@ his guide provides a comprehensive overview of the available events in the [Blaz
 
     public void DataBindingHandler(DataBindingEventArgs<TValue> args)
     {
-        // Here you can customize your code
+        // Code customization can be performed here.
     }
 }
 
@@ -194,7 +194,7 @@ his guide provides a comprehensive overview of the available events in the [Blaz
 
     public void DialogCloseHandler(DialogCloseEventArgs<TValue> args)
     {
-        // Here you can customize your code
+        // Code customization can be performed here.
     }
 }
 
@@ -215,7 +215,7 @@ his guide provides a comprehensive overview of the available events in the [Blaz
 
     public void DialogOpenHandler(DialogOpenEventArgs<TValue> args)
     {
-        // Here you can customize your code
+        // Code customization can be performed here.
     }
 }
 
@@ -236,7 +236,7 @@ his guide provides a comprehensive overview of the available events in the [Blaz
 
     public void DragStartHandler(DragEventArgs<TValue> args)
     {
-        // Here you can customize your code
+        // Code customization can be performed here.
     }
 }
 
@@ -257,7 +257,7 @@ his guide provides a comprehensive overview of the available events in the [Blaz
 
     public void DragStopHandler(DragEventArgs<TValue> args)
     {
-        // Here you can customize your code
+        // Code customization can be performed here.
     }
 }
 
@@ -278,7 +278,7 @@ his guide provides a comprehensive overview of the available events in the [Blaz
 
     public void QueryCellInfoHandler(QueryCellInfoEventArgs<TValue> args)
     {
-        // Here you can customize your code
+        // Code customization can be performed here.
     }
 }
 

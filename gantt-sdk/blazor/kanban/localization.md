@@ -11,11 +11,11 @@ documentation: ug
 
 ## Localization
 
-This section explains how to localize the Blazor Kanban component to support different languages and cultures, including right-to-left (RTL) layouts for languages such as Arabic, Farsi, and Urdu.
+This section explains how to localize the [Blazor Kanban Board](https://www.syncfusion.com/blazor-components/blazor-kanban-board) to support different languages and cultures, including right-to-left (RTL) layouts for languages such as Arabic, Farsi, and Urdu.
 
 ## Localizing Kanban Text
 
-The [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban-board) component supports localization by allowing you to translate built-in text strings into different languages. To learn how to configure localization across all Blazor components, refer to the [Blazor Localization](https://blazor.syncfusion.com/documentation/common/localization) documentation.
+The [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban-board) component supports localization, enabling built-in text strings to be translated into different languages To learn how to configure localization across all Blazor components, refer to the [Blazor Localization](https://blazor.syncfusion.com/documentation/common/localization) documentation.
 
 ## Enabling Right-to-Left (RTL) Layout
 
