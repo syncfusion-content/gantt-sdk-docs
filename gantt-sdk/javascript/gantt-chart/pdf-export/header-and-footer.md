@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Customizing header and footer of PDF export in JavaScript Gantt control
+# PDF Headers and Footers in JavaScript Gantt Chart
 
 PDF export provides an option to specify and customize text, page number, line and image in header and footer of exported PDF document by using [pdfExportProperties](../../api/gantt/pdfexportproperties).
 

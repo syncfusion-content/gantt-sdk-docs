@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Columns in JavaScript Kanban control | Syncfusion
+title: Columns in JavaScript Kanban Control | Syncfusion
 description: Learn here all about Columns in Syncfusion JavaScript Kanban control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Columns 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Columns in JavaScript Kanban control
+# Columns in JavaScript Kanban Control
 
 The **Kanban** columns represent the each stage of the process. The column definitions are used as the **dataSource** schema in the Kanban. The Kanban operations such as drag-and-drop, swimlane, and toggle columns are performed based on column definitions.
 

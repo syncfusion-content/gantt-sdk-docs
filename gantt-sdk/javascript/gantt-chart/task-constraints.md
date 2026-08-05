@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Task Constraints in JavaScript Gantt Chart Control | Syncfusion 
+title: Task Constraints in JavaScript Gantt Chart Control | Syncfusion
 description: Learn how to implement and manage task constraints in the Syncfusion JavaScript Gantt Chart control to enforce scheduling rules and dependencies.
 platform: gantt-sdk
 control: Task Constraints

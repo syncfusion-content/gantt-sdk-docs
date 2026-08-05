@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drag and drop in JavaScript Kanban control | Syncfusion
+title: Drag and Drop in JavaScript Kanban Control | Syncfusion
 description: Learn here all about Drag and drop in Syncfusion JavaScript Kanban control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Drag and drop 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Drag and drop in JavaScript Kanban control
+# Drag and Drop in JavaScript Kanban Control
 
 All cards can be dragged and dropped across the columns or within the columns or swimlane row or kanban to an external source and vice versa.
 

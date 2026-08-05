@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dimensions in JavaScript Kanban control | Syncfusion
+title: Dimensions in JavaScript Kanban Control | Syncfusion
 description: Learn here all about Dimensions in Syncfusion JavaScript Kanban control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Dimensions 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Dimensions in JavaScript Kanban control
+# Dimensions in JavaScript Kanban Control
 
 The Kanban dimensions refers to both height and width of the entire layout and it accepts three types of values.
 

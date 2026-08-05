@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filter cards in JavaScript Kanban control | Syncfusion
+title: Filter Cards in JavaScript Kanban Control | Syncfusion
 description: Learn here all about Filter cards in Syncfusion JavaScript Kanban control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Filter cards 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Filter cards in JavaScript Kanban control
+# Filter Cards in JavaScript Kanban Control
 
 You can filter the collection of cards from the dataSource and display it on the Kanban board by using the [`query`](../../api/kanban/#query) property.
 

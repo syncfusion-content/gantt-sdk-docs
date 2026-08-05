@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Editing tasks in JavaScript Gantt control | Syncfusion
+title: Editing Tasks in JavaScript Gantt Control | Syncfusion
 description: Learn here all about Editing tasks in Syncfusion JavaScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Editing tasks 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Editing tasks in JavaScript Gantt control
+# Editing Tasks in JavaScript Gantt Control
 
 The editing feature can be enabled in the Gantt control by enabling the [editSettings.allowEditing](../../api/gantt/editSettings#allowediting) and [editSettings.allowTaskbarEditing](../../api/gantt/editSettings#allowtaskbarediting) properties.
 

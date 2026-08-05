@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Style in JavaScript Kanban control | Syncfusion
+title: Style in JavaScript Kanban Control | Syncfusion
 description: Learn here all about Style in Syncfusion JavaScript Kanban control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Style 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Style in JavaScript Kanban control
+# Style in JavaScript Kanban Control
 
 To modify the Kanban appearance, you need to override the default CSS of Kanban. Also, you have an option to create your own custom theme using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material). Please find the list of CSS classes in Kanban.
 

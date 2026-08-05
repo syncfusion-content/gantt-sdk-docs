@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Maintaining data in server in JavaScript Gantt control | Syncfusion
+title: Maintaining Data in Server in JavaScript Gantt Control | Syncfusion
 description: Learn here all about Maintaining data in server in Syncfusion JavaScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Maintaining data in server 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Maintaining data in server in JavaScript Gantt control
+# Maintaining Data in Server in JavaScript Gantt Control
 
 All the modified data in Gantt control can be maintained in the database using RESTful web services.
 
