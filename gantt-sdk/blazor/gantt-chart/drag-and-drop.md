@@ -192,7 +192,7 @@ In the example below, the row at index 2 is moved below the row at index 6 using
 
 ## Customize the drag and drop action
 
-Customize the drag and drop behavior in the Gantt component using the [RowDragStarting](https://blazor.syncfusion.com/documentation/gantt-chart/events#rowdragstarting), [RowDropping](https://blazor.syncfusion.com/documentation/gantt-chart/events#rowdropping), [RowDropped](https://blazor.syncfusion.com/documentation/gantt-chart/events#rowdropped) events. These events provide control over the drag lifecycle, allowing precise handling of row interactions.
+Customize the drag and drop behavior in the Gantt component using the [RowDragStarting](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#rowdragstarting), [RowDropping](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#rowdropping), [RowDropped](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#rowdropped) events. These events provide control over the drag lifecycle, allowing precise handling of row interactions.
 
 In this example, the row drop action is canceled when the **TaskID** is 2.
 

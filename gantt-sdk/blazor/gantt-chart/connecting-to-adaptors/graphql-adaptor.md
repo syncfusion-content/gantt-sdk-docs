@@ -10,7 +10,7 @@ documentation: ug
 
 # Connect Syncfusion Blazor Gantt Chart with GraphQL using Hot Chocolate
 
-GraphQL is a query language that enables applications to request only the data they need. Unlike REST APIs that return predefined data structures, GraphQL allows clients to define the fields and structure of the response. The [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) can consume data from GraphQL services through the [GraphQLAdaptor](https://blazor.syncfusion.com/documentation/data/adaptors#graphql-service-binding), which works with the [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html) to handle data operations.
+GraphQL is a query language that enables applications to request only the data they need. Unlike REST APIs that return predefined data structures, GraphQL allows clients to define the fields and structure of the response. The [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) can consume data from GraphQL services through the [GraphQLAdaptor](https://blazor.syncfusion.com/documentation/data/adaptors#graphql-service-binding), which works with the [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html) to handle data operations.
 
 GraphQL uses a single endpoint and allows clients to request specific fields, which is useful for Blazor Gantt Chart applications that handle hierarchical and data-intensive task structures.
 
@@ -21,7 +21,7 @@ GraphQL uses a single endpoint and allows clients to request specific fields, wh
 - **Resolvers**: Methods that handle queries and mutations. `GraphQLQuery` defines the read resolvers; `GraphQLMutation` defines the write resolvers.
 - **Schema**: Defines the data types and operations exposed by the GraphQL endpoint. Hot Chocolate generates it from the C# model classes.
 
-[Hot Chocolate](https://chillicream.com/docs/hotchocolate/v15) is the GraphQL server framework used in this guide.
+[Hot Chocolate](https://chillicream.com/docs/hotchocolate) is the GraphQL server framework used in this guide.
 
 ## Prerequisites
 
@@ -404,7 +404,7 @@ The query resolver has been created successfully.
 
 ### Step 6: Create the DataManagerRequestInput Class
 
-A **DataManagerRequestInput** class is a GraphQL input type that represents all the parameters the [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) sends to the backend when requesting data. This class acts as a container for filtering, sorting, searching and other data operation parameters.
+A **DataManagerRequestInput** class is a GraphQL input type that represents all the parameters the [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) sends to the backend when requesting data. This class acts as a container for filtering, sorting, searching and other data operation parameters.
 
 **Purpose**
 When the Gantt Chart performs operations like sorting, filtering, or searching, it packages all these parameters into a `DataManagerRequestInput` object and sends it to the GraphQL backend. The backend then uses these parameters to fetch and return only the data the chart needs.
@@ -751,7 +751,7 @@ Syncfusion is a library that provides pre-built UI components like the Gantt Cha
 
 For this project, the tailwind3 theme is used. A different theme can be selected or the existing theme can be customized based on project requirements. Refer to the [Blazor Components Appearance](https://blazor.syncfusion.com/documentation/appearance/themes) documentation to learn more about theming and customization options.
 
-Blazor components are now configured and ready to use. For additional guidance, refer to the Gantt Chart component's [getting-started](https://blazor.syncfusion.com/documentation/gantt-chart/getting-started-with-web-app) documentation.
+Blazor components are now configured and ready to use. For additional guidance, refer to the Gantt Chart component's [getting-started](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/getting-started-with-web-app) documentation.
 
 ---
 
@@ -1401,7 +1401,7 @@ This guide demonstrates how to:
 8. Integrate the Blazor Gantt Chart and configure the GraphQL adaptor. [🔗](#step-2-update-the-blazor-gantt-chart)
 9. Perform CRUD operations from the chart using GraphQL mutations. [🔗](#perform-crud-operations)
 
-The application now provides an implementation example of managing project tasks with the [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) integrated with a Hot Chocolate GraphQL backend.
+The application now provides an implementation example of managing project tasks with the [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) integrated with a Hot Chocolate GraphQL backend.
 
 ## Key technical points of the GraphQLAdaptor
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Blazor Gantt Chart Component in WebAssembly App using Visual Studio
 
-This article provides a step-by-step instructions for building Blazor WebAssembly App with [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) component using [Visual Studio](https://visualstudio.microsoft.com/vs/).
+This article provides a step-by-step instructions for building Blazor WebAssembly App with [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) component using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 
 ## Prerequisites
 
@@ -260,7 +260,7 @@ Gantt Chart has an option to define columns as an array. You can customize the G
 {% endhighlight %}
 {% endtabs %}
 
-For further details regarding Columns, refer [here](https://blazor.syncfusion.com/documentation/gantt-chart/columns).
+For further details regarding Columns, refer [here](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/columns).
 
 ## Enable Editing
 
@@ -310,7 +310,7 @@ The editing feature enables you to edit the tasks in the Gantt Chart component. 
 
 N> When the edit mode is set to `Auto`, you can change the cells to editable mode by double-clicking anywhere at the Tree Grid and edit the task details in the edit dialog by double-clicking anywhere at the chart.
 
-You can find the full information regarding Editing from [here](https://blazor.syncfusion.com/documentation/gantt-chart/managing-tasks)
+You can find the full information regarding Editing from [here](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/managing-tasks)
 
 ## Enable Filtering
 
@@ -357,7 +357,7 @@ The filtering feature enables you to view the reduced amount of records based on
 {% endhighlight %}
 {% endtabs %}
 
-You can find the full information regarding Filtering from [here](https://blazor.syncfusion.com/documentation/gantt-chart/filtering)
+You can find the full information regarding Filtering from [here](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/filtering)
 
 ## Enable Sorting
 
@@ -404,7 +404,7 @@ The sorting feature enables you to order the records. It can be enabled by setti
 {% endhighlight %}
 {% endtabs %}
 
-You can find the full information regarding Sorting from [here](https://blazor.syncfusion.com/documentation/gantt-chart/sorting)
+You can find the full information regarding Sorting from [here](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/sorting)
 
 
 ## Enabling Predecessors or Task Relationships
@@ -459,7 +459,7 @@ You can show the relationship in tasks by using the `Dependency` property as sho
 {% endhighlight %}
 {% endtabs %}
 
-You can find the full information regarding Predecessors from [here](https://blazor.syncfusion.com/documentation/gantt-chart/task-dependencies)
+You can find the full information regarding Predecessors from [here](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/task-dependencies)
 
 ## Blazor WASM Gantt Chart Demonstration Video
 

@@ -182,7 +182,7 @@ When defining the resource unit within the resource collection, it specifies the
 
 When defining the resource unit within the resource collection, it indicates the amount of work that a specific resource will perform per day for a task. This concept is reflected in both the `Units` property in `GanttAssignmentFields` and the `MaxUnits` property in `GanttResource`. The `Units` property specifies the work amount done per day by a resource for a task, while `MaxUnits` sets the resource's maximum capacity or availability for any task.
 
-The following code snippet demonstrates how to assign resources to tasks and map them in the Gantt Chart, providing a clear overview of how resource units and maximum capacities are managed in task allocation. For more details about work and resource units, refer to the [documentation](https://blazor.syncfusion.com/documentation/gantt-chart/work).
+The following code snippet demonstrates how to assign resources to tasks and map them in the Gantt Chart, providing a clear overview of how resource units and maximum capacities are managed in task allocation. For more details about work and resource units, refer to the [documentation](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/work).
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -329,7 +329,7 @@ In the Gantt Chart, you can enable dynamic resource assignments by setting the [
 
 ### Through cell edit
 
-To edit resources directly through [cell editing](https://blazor.syncfusion.com/documentation/gantt-chart/editing-tasks#edit-tasks-via-cell-editing), you can use the [GanttResourceColumn](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttResourceColumn.html) within the [GanttColumns](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumns.html) of the Blazor Gantt Chart. The following code snippet demonstrates the cell edit functionality in the Gantt chart.
+To edit resources directly through [cell editing](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/editing-tasks#edit-tasks-via-cell-editing), you can use the [GanttResourceColumn](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttResourceColumn.html) within the [GanttColumns](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumns.html) of the Blazor Gantt Chart. The following code snippet demonstrates the cell edit functionality in the Gantt chart.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -471,7 +471,7 @@ namespace BlazorGanttChart.Data
 
 ### Through dialog box
 
-In the resource tab of the [Add/Edit dialog box](https://blazor.syncfusion.com/documentation/gantt-chart/editing-tasks#edit-tasks-via-dialog) within the Gantt chart, resources can be conveniently added or removed using the checkboxes provided in the grid rows of the resource tab. Selecting a checkbox item in a grid row adds the corresponding resource to the task, while unchecking it removes the resource. Additionally, the resource tab allows editing the unit value for individual resources.
+In the resource tab of the [Add/Edit dialog box](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/editing-tasks#edit-tasks-via-dialog) within the Gantt chart, resources can be conveniently added or removed using the checkboxes provided in the grid rows of the resource tab. Selecting a checkbox item in a grid row adds the corresponding resource to the task, while unchecking it removes the resource. Additionally, the resource tab allows editing the unit value for individual resources.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -1188,4 +1188,4 @@ namespace BlazorGanttChart.Data
 
 ## See also
 
-* [CRUD operations on tasks](https://blazor.syncfusion.com/documentation/gantt-chart/managing-tasks)
+* [CRUD operations on tasks](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/managing-tasks)
