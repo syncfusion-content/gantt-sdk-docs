@@ -51,6 +51,6 @@ Select particular cards in the Kanban board by tapping the card.
 
 ### Single Selection
 
-Single card will be selected when you tap the card once and the selection will be removed when you select another card.
+A single card is selected when tapped once, and the selection is cleared when another card is selected.
 
 ![Selection in Blazor Kanban](./images/blazor-kanban-selection.webp)

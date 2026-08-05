@@ -13,7 +13,7 @@ The cards are main elements in the [Blazor Kanban Board](https://www.syncfusion.
 
 ## Header
 
-The card header is achieved by mapping the `HeaderField` property, which is placed inside the `KanbanCardSettings` property. By default, the `ShowHeader` property is enabled by Kanban board that is used to display the header at the top of the card.
+The card header is achieved by mapping the [HeaderField](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.KanbanCardSettings.html#Syncfusion_Blazor_Kanban_KanbanCardSettings_HeaderField) property, which is placed inside the [KanbanCardSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.KanbanCardSettings.html) property. By default, the [ShowHeader](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.KanbanCardSettings.html#Syncfusion_Blazor_Kanban_KanbanCardSettings_ShowHeader) property is enabled by Kanban board that is used to display the header at the top of the card.
 
 N> The `HeaderField` property must be a unique datasource value to avoid the duplication of card data.
 
@@ -81,11 +81,11 @@ In the following demo, the `ShowHeader` property is disabled on Kanban board.
 
 ## Content
 
-The card's content is fetched from data source using the `ContentField` property, which is placed inside the `KanbanCardSettings` property. If the `ContentField` property is not used, card is rendered with empty content.
+The card's content is fetched from data source using the [ContentField](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.KanbanCardSettings.html#Syncfusion_Blazor_Kanban_KanbanCardSettings_ContentField) property, which is placed inside the `KanbanCardSettings` property. If the `ContentField` property is not used, card is rendered with empty content.
 
 ## Tags
 
-The card tags are used to display the tag text with the background color. Each tag text is separated and shown below the card content. It can be achieved by mapping the data key to the `TagsField` property, which is placed inside the `KanbanCardSettings` property.
+The card tags are used to display the tag text with the background color. Each tag text is separated and shown below the card content. It can be achieved by mapping the data key to the [TagsField](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.KanbanCardSettings.html#Syncfusion_Blazor_Kanban_KanbanCardSettings_TagsField) property, which is placed inside the `KanbanCardSettings` property.
 
 N> The mapped datasource key value contains single or multiple tags. If it is multiple tags, each tag will be separated by a comma in the datasource.
 
@@ -150,7 +150,7 @@ N> The mapped datasource key value contains single or multiple tags. If it is mu
 
 ## Customizing left border color
 
-Kanban card supports to custom the left border color for all the cards. This can be achieved by mapping the data key value to the `GrabberField` property, which is placed inside the `KanbanCardSettings` property. The mapped data key value will be directly assigned to each card element border left color property.
+Kanban card supports to custom the left border color for all the cards. This can be achieved by mapping the data key value to the [GrabberField](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.KanbanCardSettings.html#Syncfusion_Blazor_Kanban_KanbanCardSettings_GrabberField) property, which is placed inside the `KanbanCardSettings` property. The mapped data key value will be directly assigned to each card element border left color property.
 
 N> By default, the card border left color width is `3px`.
 
@@ -215,7 +215,7 @@ N> By default, the card border left color width is `3px`.
 
 ## Rendering custom footer elements
 
-The card allows to render the custom elements based on the given class names inside the `e-card-footer` element. It can be achieved by mapping the data key to the `FooterCssField` property, which is placed inside the `KanbanCardSettings` property. It will help to create your own class name elements inside the `e-card-footer` element. The mapped datasource key value contains single or multiple class names. If it is multiple class names, each class name will be separated by a comma in the datasource.
+The card allows to render the custom elements based on the given class names inside the `e-card-footer` element. It can be achieved by mapping the data key to the [FooterCssField](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.KanbanCardSettings.html#Syncfusion_Blazor_Kanban_KanbanCardSettings_FooterCssField) property, which is placed inside the `KanbanCardSettings` property. It will help to create your own class name elements inside the `e-card-footer` element. The mapped datasource key value contains single or multiple class names. If it is multiple class names, each class name will be separated by a comma in the datasource.
 
 In the following demo, images and icons are rendered using the `FooterCssField` property.
 
@@ -364,7 +364,7 @@ In the following demo, images and icons are rendered using the `FooterCssField` 
 
 ## Customizing card layout with templates
 
-You can customize the default card layout using template as per your application needs. This can be achieved by template of the `KanbanCardSettings` property.
+The default card layout can be customized using the [Template](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.KanbanCardSettings.html#Syncfusion_Blazor_Kanban_KanbanCardSettings_Template) property of the `KanbanCardSettings`.
 
 {% youtube
 "youtube:https://www.youtube.com/watch?v=PjTgXuibei8" %}
@@ -470,7 +470,7 @@ You can customize the default card layout using template as per your application
 
 ## Selection
 
-Kanban board allows to select single and multiple selection of cards when mouse or keyboard interactions using `SelectionType` property. The property contains following types.
+Kanban board allows to select single and multiple selection of cards when mouse or keyboard interactions using [SelectionType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.KanbanCardSettings.html#Syncfusion_Blazor_Kanban_KanbanCardSettings_SelectionType) property. The property contains following types.
 
 * **None**: No cards are allowed to select from Kanban board.
 * **Single**: Only one card allowed to select at a time in the Kanban board.
