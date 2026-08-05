@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WIP Validation in Blazor Kanban Component | Syncfusion®
-description: Checkout and learn here all about WIP validation in Blazor Kanban component and much more details.
+description: Checkout and learn about WIP validation in Blazor Kanban component and much more details with configuration options, examples and best practices.
 platform: gantt-sdk
 control: Kanban
 documentation: ug

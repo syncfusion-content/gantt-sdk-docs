@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tooltip in Blazor Kanban Component | Syncfusion®
-description: Checkout and learn here all about tooltip in Blazor Kanban component and much more details.
+description: Checkout and learn about tooltip in Blazor Kanban component and more details with customization options, examples and implementation guidance.
 platform: gantt-sdk
 control: Kanban
 documentation: ug
