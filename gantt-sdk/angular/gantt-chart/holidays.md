@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Holidays in Angular Gantt Chart Component | Syncfusion
-description: Learn how to configure holidays in the Syncfusion Angular Gantt Chart component for accurate task scheduling with non-working days.
+title: Holidays in Angular Gantt Chart | Non-Working Days | Syncfusion
+description: Learn how to configure holidays and non-working days in Syncfusion Angular Gantt Chart for accurate task scheduling, duration calculation, and timeline visualization.
+keywords: angular gantt holidays, non-working days, workweek, exclude weekends, holiday list, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/holidays
 platform: gantt-sdk
-control: Holidays
+control: Holidays - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Holidays in Angular Gantt Chart Component
+# Holidays and Non-Working Days in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component supports holidays to define non-working days, such as national holidays or company closures, that impact task scheduling and project timelines. Holidays override regular working time settings like [workWeek](https://ej2.syncfusion.com/angular/documentation/api/gantt#workweek) or [includeWeekend](https://ej2.syncfusion.com/angular/documentation/api/gantt#includeweekend), ensuring tasks do not progress during these periods. In the timeline, holidays appear as highlighted backgrounds with descriptive labels, creating visible gaps in taskbars to reflect scheduling adjustments. Custom CSS classes allow distinct styling for different holiday types (e.g., national vs. company holidays), enhancing visual clarity. Properly configured holidays ensure accurate duration calculations, dependency adjustments, and critical path analysis, aligning project timelines with resource availability and regional requirements.
 

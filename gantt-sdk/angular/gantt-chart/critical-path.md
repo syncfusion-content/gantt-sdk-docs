@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Critical Path in Angular Gantt Chart Component | Syncfusion
-description: Learn here all about critical path in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Critical Path in Angular Gantt Chart | Project Analysis | Syncfusion
+description: Learn how to identify and visualize the critical path in Syncfusion Angular Gantt Chart to determine minimum project duration and key tasks that impact deadlines.
+keywords: angular gantt critical path, slack, float, project duration, dependency analysis, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/critical-path
 platform: gantt-sdk
-control: Critical path
+control: Critical Path - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Critical Path in Angular Gantt Chart Component
+# Critical Path Identification in Angular Gantt Chart
 
 The critical path represents the longest sequence of dependent tasks that determines the minimum project duration. Tasks on the critical path have zero or negative [slack](https://ej2.syncfusion.com/angular/documentation/api/gantt/iGanttData#slack) (float), meaning any delay in these tasks directly impacts the overall project completion date. The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component automatically calculates and highlights critical tasks in red with emphasized dependency connector lines when the [enableCriticalPath](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablecriticalpath) property is enabled. Critical path analysis helps identify which tasks require immediate attention and cannot be delayed without affecting project deadlines.
 

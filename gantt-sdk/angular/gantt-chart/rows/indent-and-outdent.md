@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Indent and Outdent in Angular Gantt Chart Component | Syncfusion
-description: Learn how to use Indent and Outdent features in the Syncfusion Angular Gantt Chart component to manage task hierarchy effectively.
+title: Indent and Outdent in Angular Gantt Chart | Hierarchy | Syncfusion
+description: Learn how to use indent and outdent in Syncfusion Angular Gantt Chart to manage task hierarchy by moving rows deeper or shallower in the tree structure.
+keywords: angular gantt indent outdent, task hierarchy, indent outdent rows, tree structure, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/rows/indent-and-outdent
 platform: gantt-sdk
-control: Indent and outdent 
+control: Indent and Outdent - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Indent and Outdent in Angular Gantt Chart Component
+# Indenting and Outdenting Rows for Hierarchy in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component provides built-in support for indenting and outdenting rows, allowing hierarchy levels to be adjusted within the Gantt chart.
 

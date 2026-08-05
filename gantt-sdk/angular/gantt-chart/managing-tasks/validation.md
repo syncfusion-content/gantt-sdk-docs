@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Validation in Angular Gantt Chart Component | Syncfusion
-description: Learn how to validate task data in the Syncfusion Angular Gantt Chart component using column, custom, dependency, and resource grid rules for accurate project management.
+title: Task Validation in Angular Gantt Chart | Form Rules | Syncfusion
+description: Learn how to validate task data in Syncfusion Angular Gantt Chart with column rules, custom validation, dependency checks, and resource grid rules for data integrity.
+keywords: angular gantt validation, form validator, custom rules, dependency validation, resource grid, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/managing-tasks/validation
 platform: gantt-sdk
-control: Validating Tasks
+control: Task Validation - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Validation in Angular Gantt Chart Component
+# Implementing Data Validation and Error Handling in Angular Gantt Chart
 
 Validation in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component ensures accurate task data by enforcing rules during adding or editing, preventing invalid entries before saving. Using the [Form Validator](https://ej2.syncfusion.com/documentation/form-validator) component, apply validation to columns in inline or dialog editing, custom rules for specific fields, or dependency and resource grids in the add/edit dialog. Requires `EditService` and valid [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskfields) mappings (e.g., id, name) to ensure data integrity for tasks updated on September 23, 2025, or later, maintaining valid date ranges or dependency formats.
 

@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Column Pinning (Frozen) in Angular Gantt Chart Component | Syncfusion
-description: Learn here all about column pinning (Frozen) in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Frozen Columns in Angular Gantt Chart | Column Pinning | Syncfusion
+description: Learn how to pin and freeze columns in Syncfusion Angular Gantt Chart to keep critical information visible during horizontal scrolling in large project datasets.
+keywords: angular gantt frozen columns, column pinning, frozencolumns, horizontal scroll, fixed columns, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/columns/frozen-columns
 platform: gantt-sdk
-control: Column pinning (Frozen) 
+control: Frozen Columns - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Column Pinning (Frozen) in Angular Gantt Chart Component
+# Frozen Columns with Left and Right Pinning in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component provides a frozen columns feature that keeps selected columns fixed while scrolling horizontally through large datasets. This functionality ensures that critical information remains visible at all times, improving readability and user experience. By maintaining key columns in view, it simplifies navigation and makes referencing important data points easier when working with extensive project details.
 

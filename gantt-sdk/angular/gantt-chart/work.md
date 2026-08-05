@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Configure Work in Angular Gantt Chart Component | Syncfusion
-description: Learn how to configure work and task types in the Syncfusion Angular Gantt Chart component for accurate task scheduling and resource allocation.
+title: Work Configuration in Angular Gantt Chart | Effort | Syncfusion
+description: Learn how to configure work and task types in Syncfusion Angular Gantt Chart for accurate effort tracking, fixed work scheduling, and resource-driven calculations.
+keywords: angular gantt work, workunit, tasktype, fixed work, effort tracking, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/work
 platform: gantt-sdk
-control: Work
+control: Work - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Configure Work in Angular Gantt Chart Component
+# Work and Effort Tracking with Task Type Support in Angular Gantt Chart
 
 The work feature in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component defines the total effort required to complete a task, mapped via the [taskFields.work](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#work) property to a numeric value (e.g., 40 for 40 hours). The effort is measured in hours, days, or minutes using the [workUnit](https://ej2.syncfusion.com/angular/documentation/api/gantt#workUnit) property, with **Hour** as the default. For example, a task with 40 hours of work and one resource at 100% allocation spans 5 8-hour workdays. Mapping `taskFields.work` sets the task type to **FixedWork** by default, ensuring work hours remain constant during edits. This feature, requiring `EditService` for modifications, integrates with resources, dependencies, and critical path calculations, ensuring precise project scheduling for resource-driven projects.
 

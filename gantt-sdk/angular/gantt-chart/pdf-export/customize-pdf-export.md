@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Customize PDF Exporting in Angular Gantt Chart | Syncfusion
-description: Learn here all about customize PDF exporting in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Customize PDF Export in Angular Gantt Chart | Syncfusion
+description: Learn how to customize PDF export in Syncfusion Angular Gantt Chart with file names, page orientation, headers, footers, timelines, and templates via pdfExportProperties.
+keywords: angular gantt customize pdf export, pdfexportproperties, beforepdfexport, pdfquerytaskbarinfo, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/pdf-export/customize-pdf-export
 platform: gantt-sdk
-control: Multiple gantt exporting
+control: Customize PDF Export - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# To customize PDF export
+# Customizing PDF Export Layout and Content in Angular Gantt Chart
 
 Customizing PDF export in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component allows tailoring exported documents for specific needs, using [PdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties) to adjust file names, page orientation, size, columns, headers, footers, timelines, and templates. Ensuring focused content like selected rows or styled taskbars, with the `PdfExport` module injected and [allowPdfExport](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowpdfexport) enabled. Use [beforePdfExport](https://ej2.syncfusion.com/angular/documentation/gantt/events#beforepdfexport) and [pdfExportComplete](https://ej2.syncfusion.com/angular/documentation/gantt/events#pdfexportcomplete) events for pre-export and post-export modifications, and [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#pdfquerytaskbarinfo) for taskbar styling, supporting RTL layouts via [enableRtl](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablertl).
 

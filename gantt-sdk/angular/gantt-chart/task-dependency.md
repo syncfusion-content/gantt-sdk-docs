@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Task Dependency in Angular Gantt Chart Component | Syncfusion
-description: Learn how to configure task dependencies in the Syncfusion Angular Gantt Chart for establishing relationships, managing offsets, and handling validation.
+title: Task Dependency in Angular Gantt Chart | FS, SS, FF, SF | Syncfusion
+description: Learn how to configure task dependencies in Syncfusion Angular Gantt Chart with Finish-to-Start, Start-to-Start, and other relations, offsets, and validation modes.
+keywords: angular gantt task dependency, fs, ss, ff, sf, predecessor, offset, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/task-dependency
 platform: gantt-sdk
-control: Task dependency
+control: Task Dependency - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Task Dependency in Angular Gantt Chart Component
+# Managing Task Dependencies in Angular Gantt Chart
 
 Task dependency in the Angular Gantt Chart component establishes relationships between tasks, affecting scheduling where changes to predecessors impact successors. Dependencies are categorized into four types—Start to Start (SS), Start to Finish (SF), Finish to Start (FS), and Finish to Finish (FF)—mapped via the [taskFields.dependency](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#dependency) property in the data source. Parent dependencies are enabled by default with [allowParentDependency](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowparentdependency) set to **true**, allowing relationships between parent-parent, child-child, parent-child, and child-parent tasks. Offsets support day, hour, or minute units for precise timing, and validation modes handle conflicts during editing via the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/gantt#actionbegin) event. Connector lines are customized using [connectorLineWidth](https://ej2.syncfusion.com/angular/documentation/api/gantt#connectorlinewidth) and [connectorLineBackground](https://ej2.syncfusion.com/angular/documentation/api/gantt#connectorlinebackground), with the `queryTaskbarInfo` event enabling dynamic styling. Public methods like [addPredecessor](https://ej2.syncfusion.com/angular/documentation/api/gantt#addpredecessor) and [removePredecessor](https://ej2.syncfusion.com/angular/documentation/api/gantt#removepredecessor) allow programmatic management, ensuring accurate visualization with ARIA labels for accessibility and responsive scaling for mobile views.
 

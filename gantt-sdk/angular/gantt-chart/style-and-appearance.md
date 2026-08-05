@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Style and Appearance in Angular Gantt Chart Component | Syncfusion
-description: Learn how to customize the style and appearance of the Syncfusion Angular Gantt Chart component with CSS overrides and grid line configurations.
+title: Style and Appearance in Angular Gantt Chart | CSS | Syncfusion
+description: Learn how to customize Syncfusion Angular Gantt Chart style and appearance with CSS overrides, grid lines, theme studio, and queryTaskbarInfo for custom styling.
+keywords: angular gantt styling, css customization, theme, grid lines, querytaskbarinfo, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/style-and-appearance
 platform: gantt-sdk
-control: Style and appearance
+control: Style and Appearance - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Style and Appearance in Angular Gantt Chart Component
+# Style and Appearance with CSS and Theme Support in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component’s appearance is customized by overriding default CSS styles to align with application designs, using classes for taskbars, milestones, and grid elements. The [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querytaskbarinfo) event modifies taskbar styles dynamically, while grid lines are configured with [gridLines](https://ej2.syncfusion.com/angular/documentation/api/gantt#gridlines) for horizontal, vertical, or both. Custom themes are created via [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=tailwind3). Styles include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may require adjustments for taskbar visibility.
 

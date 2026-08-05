@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Immutable Mode in Angular Gantt Chart Component | Syncfusion
-description: Learn how to enable immutable mode in the Syncfusion Angular Gantt Chart component for optimized task rendering and performance with large datasets.
+title: Immutable Mode in Angular Gantt Chart | Performance | Syncfusion
+description: Learn how to enable immutable mode in Syncfusion Angular Gantt Chart for optimized rendering, fewer DOM operations, and smooth performance with large task datasets.
+keywords: angular gantt immutable mode, enableimmutablemode, performance optimization, large datasets, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/immutable
 platform: gantt-sdk
-control: Immutable
+control: Immutable Mode - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Immutable Mode in Angular Gantt Chart Component
+# Performance Optimization with Immutable Mode in Angular Gantt Chart
 
 Immutable mode optimizes the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component’s rendering performance by minimizing unnecessary re-renders, ideal for large projects with hundreds of tasks or frequent updates like real-time progress tracking. When enabled via the [enableImmutableMode](https://ej2.syncfusion.com/angular/documentation/api/gantt#enableimmutablemode) property, the component uses object reference comparison to identify changed tasks, re-rendering only modified or new rows while preserving unchanged rows’ DOM elements. This reduces DOM operations, CPU usage, and rendering time, ensuring smooth interactions for complex hierarchies or batch updates. For example, updating a single task’s progress in a 1,000-task project re-renders only that task’s row, significantly improving performance over standard mode, which re-renders all visible rows.
 

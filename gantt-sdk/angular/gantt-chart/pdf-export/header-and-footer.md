@@ -1,14 +1,16 @@
 ---
 layout: post
 title: PDF Headers and Footers in Angular Gantt Chart | Syncfusion
-description: Learn how to customize headers and footers in PDF exports of the Syncfusion Angular Gantt Chart component with text, lines, page numbers, and images.
+description: Learn how to customize PDF export headers and footers in Syncfusion Angular Gantt Chart with text, lines, page numbers, and images for professional documentation.
+keywords: angular gantt pdf header footer, pdfexportproperties, pdfheader, pdffooter, page numbers, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/pdf-export/header-and-footer
 platform: gantt-sdk
-control: header and footer of PDF exporting
+control: PDF Headers and Footers - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Header and Footer of PDF exporting in Angular Gantt Chart Component
+# Adding Headers and Footers to PDF Exports in Angular Gantt Chart
 
 Customizing headers and footers in PDF exports of the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component allows adding text, lines, page numbers, and images to enhance document professionalism for projects. Use [PdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties) with [header](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfHeader) and [footer](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfFooter) to define content arrays, specifying `type` (e.g., Text, Line), `value`, `position`, `style`, or `src` for images with `base64` encoding. Disable footers via [enableFooter](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties#enablefooter) set to **false**, ensuring tailored outputs with the `PdfExport` module injected and [allowPdfExport](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowpdfexport) enabled.
 

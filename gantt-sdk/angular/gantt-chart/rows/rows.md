@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Rows in Angular Gantt Chart Component | Syncfusion
-description: Learn here all about Rows in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Rows in Angular Gantt Chart | Row Display | Syncfusion
+description: Learn how to customize rows in Syncfusion Angular Gantt Chart with row height, styles, and interactions to display task data in tabular and timeline chart formats.
+keywords: angular gantt rows, row height, row style, row interaction, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/rows/rows
 platform: gantt-sdk
-control: Rows
+control: Rows - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Row in Angular Gantt Chart Component
+# Row Structure and Interactions in Angular Gantt Chart
 
 Each row typically represents a single record or item from a data source. Rows in a Gantt chart are used to present data in both tabular and timeline chart formats. Each row displays a set of values representing the fields of an individual data record. Rows allow you to interact with the data in the Gantt chart. You can select rows, edit cell values, perform taskbar editing in the chart side of the Gantt, perform sorting or filtering operations, and trigger events based on actions.
 
