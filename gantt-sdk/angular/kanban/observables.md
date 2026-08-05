@@ -10,15 +10,15 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Observables in Angular Kanban Component
 
-An [`Observable`](https://angular.io/guide/observables) is used extensively by Angular since it provide significant benefits over techniques for event handling, asynchronous programming, and handling multiple values.
+An [`Observable`](https://v17.angular.io/guide/observables) is used extensively by Angular since it provide significant benefits over techniques for event handling, asynchronous programming, and handling multiple values.
 
 ## Observable binding using async pipe
 
-Kanban data can be consumed from an [`Observable`](https://angular.io/guide/observables) object by piping it through an [`async`](https://angular.io/api/common/AsyncPipe) pipe. The [`async`](https://angular.io/api/common/AsyncPipe) pipe is used to subscribe the observable object and resolve with the latest value emitted by it.
+Kanban data can be consumed from an [`Observable`](https://v17.angular.io/guide/observables) object by piping it through an [`async`](https://v17.angular.io/api/common/AsyncPipe) pipe. The [`async`](https://v17.angular.io/api/common/AsyncPipe) pipe is used to subscribe the observable object and resolve with the latest value emitted by it.
 
 ## Data binding
 
-The kanban expects an object from the [`Observable`](https://angular.io/guide/observables). The emitted value should be an object with properties **result** and **count**.
+The kanban expects an object from the [`Observable`](https://v17.angular.io/guide/observables). The emitted value should be an object with properties **result** and **count**.
 
 ```ts
 import { Component, OnInit } from '@angular/core';
@@ -103,7 +103,7 @@ export class TasksService extends Subject<DataStateChangeEventArgs> {
 
 ```
 
-> You should maintain the same [`Observable`](https://angular.io/guide/observables) instance for every kanban action.
+> You should maintain the same [`Observable`](https://v17.angular.io/guide/observables) instance for every kanban action.
 > When initial rendering, the [dataStateChange](https://ej2.syncfusion.com/angular/documentation/api/kanban#datastatechange) event will not be triggered. You can perform the operation in the **ngOnInit** if you want the kanban to show the cards.
 
 ## Perform CRUD operations
