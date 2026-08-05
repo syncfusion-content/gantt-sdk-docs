@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Columns in Angular Kanban Component | Syncfusion
 description: Learn how to configure columns in the Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
@@ -14,7 +14,7 @@ The **Kanban** columns represent the each stage of the process. The column defin
 
 ## Single-key mapping
 
-Kanban columns are categorized by mapping the **key** from the datasource using the [keyField](https://ej2.syncfusion.com/angular/documentation/api/kanban/#keyfield) property. The corresponding **value** in the datasource is mapped inside the columns `keyField`. Based on this categorization, Kanban columns are split on this board.
+Kanban columns are categorized by mapping the **key** from the datasource using the [keyField](https://ej2.syncfusion.com/angular/documentation/api/kanban#keyfield) property. The corresponding **value** in the datasource is mapped inside the columns `keyField`. Based on this categorization, Kanban columns are split on this board.
 
 > The `keyField` property is mandatory to render the columns in the Kanban board.
 
@@ -106,7 +106,7 @@ In the following example, the backlog column is collapsed on initialization of K
 
 ## Drag and Drop
 
-The Kanban component allows dynamic column reordering through drag-and-drop interactions. To enable this, set the [`allowColumnDragAndDrop`](https://ej2.syncfusion.com/angular/documentation/api/kanban/#allowColumnDragAndDrop) property to true. Once enabled, users can rearrange columns by dragging a column header to a new position, with visual feedback highlighting potential drop locations.
+The Kanban component allows dynamic column reordering through drag-and-drop interactions. To enable this, set the [`allowColumnDragAndDrop`](https://ej2.syncfusion.com/angular/documentation/api/kanban#allowColumnDragAndDrop) property to true. Once enabled, users can rearrange columns by dragging a column header to a new position, with visual feedback highlighting potential drop locations.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -124,7 +124,7 @@ The Kanban component allows dynamic column reordering through drag-and-drop inte
 
 Stacked headers are the additional headers to column header that will group the similar columns.
 
-Define the grouping of columns **key** value to the `keyFields` property and provide the custom header text name to grouped columns using the `text` property, which is placed inside the [stackedHeaders](https://ej2.syncfusion.com/angular/documentation/api/kanban/#stackedheaders) property.
+Define the grouping of columns **key** value to the `keyFields` property and provide the custom header text name to grouped columns using the `text` property, which is placed inside the [stackedHeaders](https://ej2.syncfusion.com/angular/documentation/api/kanban#stackedheaders) property.
 
 In the following code, the kanban columns 'InProgress, Review' are grouped under 'Development Phase' category.
 
@@ -139,3 +139,4 @@ In the following code, the kanban columns 'InProgress, Review' are grouped under
 {% endtabs %}
   
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/stacked-headers-cs1" %}
+

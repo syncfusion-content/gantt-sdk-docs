@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Dialog Editing in Angular Kanban Component | Syncfusion
 description: Learn how to use the dialog module in the Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Dialog in Angular Kanban Component
 
-The Kanban component provides a built-in dialog module for adding, editing, and deleting cards, configured through the [dialogSettings](https://ej2.syncfusion.com/angular/documentation/api/kanban/#dialogsettings) property. User can edit a card using the following ways.
+The Kanban component provides a built-in dialog module for adding, editing, and deleting cards, configured through the [dialogSettings](https://ej2.syncfusion.com/angular/documentation/api/kanban#dialogsettings) property. User can edit a card using the following ways.
 
 * Built-in dialog module
 * Custom Fields
@@ -125,7 +125,7 @@ Using the dialog template, you can render your own dialog by defining the `templ
 
 ## Prevent Dialog
 
-Prevent the dialog from opening on card double-click by setting `args.cancel` to `true` in the [dialogOpen](https://ej2.syncfusion.com/angular/documentation/api/kanban/#dialogopen) event. The following sample demonstrates preventing dialog opening.
+Prevent the dialog from opening on card double-click by setting `args.cancel` to `true` in the [dialogOpen](https://ej2.syncfusion.com/angular/documentation/api/kanban#dialogopen) event. The following sample demonstrates preventing dialog opening.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -141,22 +141,22 @@ Prevent the dialog from opening on card double-click by setting `args.cancel` to
 
 ## Persisting data in server
 
-The modified card data can be persisted in the database using the RESTful web services. All the CRUD operations in the Kanban are done through [DataManager](https://ej2.syncfusion.com/angular/documentation/data/). The `DataManager` has an option to bind all the CRUD related data in server-side.
+The modified card data can be persisted in the database using the RESTful web services. All the CRUD operations in the Kanban are done through [DataManager](https://ej2.syncfusion.com/angular/documentation/data). The `DataManager` has an option to bind all the CRUD related data in server-side.
 
 > For your information, the ODataAdaptor persists data in the server as per OData protocol.
 
-In the below section covers how to get the edited data details on the server-side using the [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#url-adaptor).
+In the below section covers how to get the edited data details on the server-side using the [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors/url-adaptor).
 
 ### URL adaptor
 
-You can use the [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#url-adaptor) of `DataManager` when binding datasource for remote data. In the initial load of Kanban, data are fetched from remote data and bound to the Kanban using `url` property of `DataManager`.
+You can use the [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors/url-adaptor) of `DataManager` when binding datasource for remote data. In the initial load of Kanban, data are fetched from remote data and bound to the Kanban using `url` property of `DataManager`.
 
 You can map the CRUD operation in Kanban can be mapped to server-side controller actions using the properties `insertUrl`, `removeUrl`, `updateUrl`, and `crudUrl`.
 
-* `insertUrl` – You can perform single insertion operation on server-side.
-* `updateUrl` – You can update single data on server-side.
-* `removeUrl` – You can remove single data on server-side.
-* `crudUrl` – You can perform bulk data operation on server-side.
+* `insertUrl` - You can perform single insertion operation on server-side.
+* `updateUrl` - You can update single data on server-side.
+* `removeUrl` - You can remove single data on server-side.
+* `crudUrl` - You can perform bulk data operation on server-side.
 
 The following code example describes the above behavior.
 
@@ -371,3 +371,4 @@ public class EditParams {
 ```
 
 > The `crudUrl` is used to update the bulk data sent to the server-side. Multiple selections and `sortBy` as `Index` properties are used for `crudUrl` properties to update the modified bulk data to the server-side.
+

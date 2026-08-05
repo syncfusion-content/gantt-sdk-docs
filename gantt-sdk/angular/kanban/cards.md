@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Cards in Angular Kanban Component | Syncfusion
 description: Learn how to configure and customize cards in the Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
@@ -14,7 +14,7 @@ The cards are main elements in Kanban board, which represent the task informatio
 
 ## Drag-and-drop
 
-Transit or change the card position using the drag-and-drop functionality. By default, the [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/kanban/#allowdraganddrop) property is enabled on the Kanban board, which is used to change the card position by column-to-column or within the column.
+Transit or change the card position using the drag-and-drop functionality. By default, the [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/kanban#allowdraganddrop) property is enabled on the Kanban board, which is used to change the card position by column-to-column or within the column.
 
 Added dotted border on Kanban cells except the dragged clone cells when dragging, which indicates the possible ways for dropping the cards into the cells.
 
@@ -44,7 +44,7 @@ The card's content is fetched from `dataSource` using the `contentField` propert
 
 ## Template
 
-The default card layout can be customized using the `template` property in [cardSettings](https://ej2.syncfusion.com/angular/documentation/api/kanban/#cardsettings) to meet application-specific needs, such as adding custom fields or styling. The following sample demonstrates a Kanban board with a custom card template.
+The default card layout can be customized using the `template` property in [cardSettings](https://ej2.syncfusion.com/angular/documentation/api/kanban#cardsettings) to meet application-specific needs, such as adding custom fields or styling. The following sample demonstrates a Kanban board with a custom card template.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -81,3 +81,4 @@ Select the multiple cards randomly using Ctrl + mouse click and select the multi
 {% endtabs %}
   
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/multiple-selection-cs1" %}
+

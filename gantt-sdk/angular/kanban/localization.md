@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Localization and RTL in Angular Kanban Component | Syncfusion
 description: how to localize text and enable right-to-left (RTL) support in the Syncfusion Angular Kanban componentof Syncfusion Essential JS 2 and more.
@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Localization in Angular Kanban Component
 
-The localization library allows you to localize the default text content of the Kanban to different cultures using the [locale](https://ej2.syncfusion.com/angular/documentation/api/kanban/#locale) property.
+The localization library allows you to localize the default text content of the Kanban to different cultures using the [locale](https://ej2.syncfusion.com/angular/documentation/api/kanban#locale) property.
 
 In Kanban, total count and min or max count text alone will be localized based on culture.
 
@@ -53,7 +53,7 @@ The following example demonstrates the Kanban in `Deutsch` culture.
 
 ## Right to left (RTL)
 
-The Kanban provides an option to switch its text direction and layout from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable right-to-left mode in Kanban, set the [enableRtl](https://ej2.syncfusion.com/angular/documentation/api/kanban/#enablertl) to true.
+The Kanban provides an option to switch its text direction and layout from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable right-to-left mode in Kanban, set the [enableRtl](https://ej2.syncfusion.com/angular/documentation/api/kanban#enablertl) to true.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -66,3 +66,4 @@ The Kanban provides an option to switch its text direction and layout from right
 {% endtabs %}
   
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/rtl-cs1" %}
+

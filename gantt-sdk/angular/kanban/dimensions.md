@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Configuring Dimensions in Angular Kanban Component | Syncfusion
 description: Learn how to configure height and width in the Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Dimensions in Angular Kanban Component
 
-The Kanban dimensions refers to both [height](https://ej2.syncfusion.com/angular/documentation/api/kanban/#height) and [width](https://ej2.syncfusion.com/angular/documentation/api/kanban/#width) of the entire layout and it accepts three types of values.
+The Kanban dimensions refers to both [height](https://ej2.syncfusion.com/angular/documentation/api/kanban#height) and [width](https://ej2.syncfusion.com/angular/documentation/api/kanban#width) of the entire layout and it accepts three types of values.
 
 * Auto
 * Pixel
@@ -63,3 +63,4 @@ When `height` and `width` of the Kanban are given in percentage, it will make th
 {% endtabs %}
   
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/percentage-cs1" %}
+

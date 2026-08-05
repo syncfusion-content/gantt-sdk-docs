@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Swimlane in Angular Kanban Component | Syncfusion
 description: Learn here all about Swimlane in Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
@@ -14,7 +14,7 @@ Swimlanes are horizontal categorizations of cards on the Kanban board.  It is us
 
 ## Render swimlane row
 
-Cards can be grouped based on [keyField](https://ej2.syncfusion.com/angular/documentation/api/kanban/#keyfield) and displayed in rows, which are separated by columns. It is mandatory to define the `keyField` that is mapped from the datasource for rendering swimlane rows in the Kanban board.
+Cards can be grouped based on [keyField](https://ej2.syncfusion.com/angular/documentation/api/kanban#keyfield) and displayed in rows, which are separated by columns. It is mandatory to define the `keyField` that is mapped from the datasource for rendering swimlane rows in the Kanban board.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -32,7 +32,7 @@ Cards can be grouped based on [keyField](https://ej2.syncfusion.com/angular/docu
 
 Customize the swimlane row header text by using the `textField` property mapped from datasource.
 
-> It is not mandatory to define the `textField` to  [swimlaneSettings](https://ej2.syncfusion.com/angular/documentation/api/kanban/#swimlanesettings). It will automatically consider the `keyField` to swimlane row header text.
+> It is not mandatory to define the `textField` to  [swimlaneSettings](https://ej2.syncfusion.com/angular/documentation/api/kanban#swimlanesettings). It will automatically consider the `keyField` to swimlane row header text.
 > If the mapping `textField` key is not present in the datasource, it will consider the swimlane `keyField` as swimlane row header text.
 
 {% tabs %}
@@ -65,7 +65,7 @@ You can customize the Kanban swimlane row by using the `template` property, whic
 
 ## Sorting
 
-Swimlane rows are rendered on descending order when using the [sortBy](https://ej2.syncfusion.com/angular/documentation/api/kanban/sortSettingsModel/#sortby) property set to `Descending` order. By default, swimlane rows are rendered by **Ascending** order.
+Swimlane rows are rendered on descending order when using the [sortBy](https://ej2.syncfusion.com/angular/documentation/api/kanban/sortSettingsModel#sortby) property set to `Descending` order. By default, swimlane rows are rendered by **Ascending** order.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -81,7 +81,7 @@ Swimlane rows are rendered on descending order when using the [sortBy](https://e
 
 ## Drag-and-drop
 
-By default, The Kanban does not allow dragging the cards across the swimlane rows. Enabling the [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/kanban/#allowdraganddrop)  property allows you to drag the cards across the swimlane rows, which is specified inside `swimlaneSettings` property.
+By default, The Kanban does not allow dragging the cards across the swimlane rows. Enabling the [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/kanban#allowdraganddrop)  property allows you to drag the cards across the swimlane rows, which is specified inside `swimlaneSettings` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -97,7 +97,7 @@ By default, The Kanban does not allow dragging the cards across the swimlane row
 
 ## Create empty row
 
-You can render the empty swimlane row by enabling the `showEmptyRow` property. If mapping [keyField](https://ej2.syncfusion.com/angular/documentation/api/kanban/#keyfield) does not have cards, empty swimlane row will be rendered.
+You can render the empty swimlane row by enabling the `showEmptyRow` property. If mapping [keyField](https://ej2.syncfusion.com/angular/documentation/api/kanban#keyfield) does not have cards, empty swimlane row will be rendered.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -150,3 +150,4 @@ By default, the `enableFrozenRows` property is set as `false`. If you wish to sh
 {% endtabs %}
   
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/swimlane-enable-frozen-cs1" %}
+
