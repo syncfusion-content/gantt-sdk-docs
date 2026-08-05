@@ -7,7 +7,7 @@ control: Gantt Chart
 documentation: ug
 ---
 
-# Row drag and drop in Blazor Gantt Chart component
+# Row Drag and Drop in Blazor Gantt Chart Component
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component includes built-in support for row drag and drop, enabling rows to be rearranged within the Gantt chart or dropped into custom components. 
 

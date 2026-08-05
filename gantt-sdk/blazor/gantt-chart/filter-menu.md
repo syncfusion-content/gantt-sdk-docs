@@ -7,7 +7,7 @@ control: Gantt Chart
 documentation: ug
 ---
 
-# Filter menu in Blazor Gantt Chart component
+# Filter Menu in Blazor Gantt Chart Component
 
 The Syncfusion Blazor Gantt Chart component provides a filter menu for each column, allowing filtering based on data type and supported operators. 
 

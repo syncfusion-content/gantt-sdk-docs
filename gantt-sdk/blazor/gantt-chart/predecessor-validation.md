@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Predecessor validation in Blazor Gantt Chart Component | Syncfusion
+title: Predecessor Validation in Blazor Gantt Chart Component | Syncfusion
 description: Checkout and learn here all about predecessor validation in Syncfusion Blazor Gantt Chart component.
 platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 ---
 
-# Predecessor Validation
+# Predecessor Validation in Blazor Gantt Chart Component
 
 By default, Gantt task date values are validated based on predecessor values. You can enable or disable this validation by using the [EnablePredecessorValidation](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_EnablePredecessorValidation) property. By default, `EnablePredecessorValidation` is **true**.
 

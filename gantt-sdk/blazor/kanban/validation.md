@@ -1,7 +1,7 @@
 ---
 layout: post
-title: WIP Validation in Blazor Kanban Component | Syncfusion®
-description: Checkout and learn here all about WIP validation in Blazor Kanban component and much more details.
+title: WIP Validation in Blazor Kanban Component | Syncfusion
+description: Learn how to validate work-in-progress limits in the Syncfusion Blazor Kanban component to keep card moves within allowed swimlane rules.
 platform: gantt-sdk
 control: Kanban
 documentation: ug

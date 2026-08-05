@@ -7,7 +7,7 @@ control: Gantt Chart
 documentation: ug
 ---
 
-# Cell selection in Blazor Gantt Chart component
+# Cell Selection in Blazor Gantt Chart Component
 
 Cell selection in the Gantt Chart component enables interactive selection of specific cells or ranges of cells within the grid. You may select cells using mouse clicks or arrow keys (up, down, left, right). This is useful for highlighting, manipulating, or performing operations on particular gantt chart cells.
 

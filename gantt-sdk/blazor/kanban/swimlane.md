@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Swimlane in Blazor Kanban Component | Syncfusion®
-description: Checkout and learn here all about swimlane in Blazor Kanban component and much more details.
+title: Swimlane in Blazor Kanban Component | Syncfusion
+description: Learn how to group Kanban cards into swimlanes in the Syncfusion Blazor Kanban component for clearer workflow visualization.
 platform: gantt-sdk
 control: Kanban
 documentation: ug

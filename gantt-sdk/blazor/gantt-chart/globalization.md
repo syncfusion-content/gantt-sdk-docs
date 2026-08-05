@@ -7,7 +7,7 @@ control: Gantt Chart
 documentation: ug
 ---
 
-# Globalization in Blazor Gantt Chart component
+# Globalization in Blazor Gantt Chart Component
 
 The Syncfusion Blazor Gantt Chart component provides a feature known as Globalization (global and local), which makes the application more accessible and useful for individuals from different regions and language backgrounds. You have the ability to view data in your preferred language and format, resulting in an enhanced overall experience.
 

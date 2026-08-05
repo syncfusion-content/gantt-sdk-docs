@@ -7,7 +7,7 @@ control: Gantt Chart
 documentation: ug
 ---
 
-# Index in Blazor Gantt component
+# Index in Blazor Gantt Chart Component
 
 The Gantt Chart in Blazor offers a project management interface similar to Microsoft Project, designed for scheduling and managing projects. It provides an intuitive way to visually manage tasks, their relationships, and project resources.
 

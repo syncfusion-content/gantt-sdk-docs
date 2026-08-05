@@ -7,7 +7,7 @@ control: Gantt Chart
 documentation: ug
 ---
 
-# Row selection in  Blazor Gantt Chart Component
+# Row Selection in Blazor Gantt Chart Component
 
 The  Blazor Gantt Chart Component supports row selection using mouse clicks or keyboard navigation (arrow keys). This enables users to highlight, manipulate, or trigger actions on selected task rows.
 
