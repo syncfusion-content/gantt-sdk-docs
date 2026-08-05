@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Loading Animation in Angular Gantt Chart Component | Syncfusion
-description: Learn how to configure loading indicators in the Syncfusion Angular Gantt Chart component for visual feedback during data processing and user interactions.
+title: Loading Animation in Angular Gantt Chart | Indicators | Syncfusion
+description: Learn how to add loading animation in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: Loading animation
+control: Loading Animation - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Loading Animation in Angular Gantt Chart Component
+# Loading Indicators with Spinner and Shimmer Support in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component displays loading indicators to provide visual feedback during data processing operations like sorting, filtering, scrolling, or data binding, enhancing user experience by signaling active processes. Configured via the [loadingIndicator.indicatorType](https://ej2.syncfusion.com/angular/documentation/api/gantt/loadingIndicator#indicatortype) property, indicators support two types: **Spinner**, a rotating circular animation for quick operations, and **Shimmer**, an animated placeholder for data-intensive tasks like virtual scrolling with large datasets. Indicators appear automatically during initial data binding, data updates, filtering, sorting, scrolling, and expand/collapse actions, ensuring users perceive system activity. The Spinner is lightweight and ideal for simple updates, while Shimmer previews content layout for complex operations but may be resource-intensive for small datasets. Indicators support accessibility with ARIA labels and adapt to responsive designs for consistent visibility.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Performance Tips for Angular Gantt Chart Component | Syncfusion
-description: Learn to optimize loading performance in the Syncfusion Angular Gantt Chart for large datasets with efficient data handling and customization.
+title: Performance Tips for Angular Gantt Chart | Optimization | Syncfusion
+description: Learn how to optimize performance tips for gantt chart in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: Gantt performance
+control: Performance - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Performance Tips for Angular Gantt Chart Component 
+# Performance Optimization with Virtual Scrolling and Lazy Loading in Angular Gantt Chart
 
 This guide provides practical techniques to optimize the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component's performance, particularly when working with large datasets. Learn how to implement best practices that maintain smooth user experience while handling substantial amounts of project data efficiently.
 

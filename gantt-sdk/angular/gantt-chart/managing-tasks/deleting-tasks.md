@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Deleting Tasks in Angular Gantt Chart Component | Syncfusion
-description: Learn how to delete tasks dynamically in the Syncfusion Angular Gantt Chart component using toolbar or programmatic methods for efficient project management.
+title: Deleting Tasks in Angular Gantt Chart | Syncfusion
+description: Learn how to delete deleting tasks in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: Deleting tasks
+control: Deleting Tasks - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Deleting Tasks in Angular Gantt Chart Component
+# Deleting Tasks from the Project in Angular Gantt Chart
 
 Deleting tasks in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component streamlines project management by removing tasks, such as outdated milestones or subtasks, using the toolbar or programmatic methods. Enabled by setting the [editSettings.allowDeleting](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowdeleting) property to **true** and injecting `EditService`, tasks can be deleted after selecting a row, ensuring seamless updates to dependencies and critical path calculations. A confirmation dialog, activated via [editSettings.showDeleteConfirmDialog](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#showdeleteconfirmdialog), prompts to verify deletions, preventing accidental removals. The [deleteRecord](https://ej2.syncfusion.com/angular/documentation/api/gantt#deleterecord) method allows programmatic deletion, requiring a selected row with valid `taskFields` mappings (e.g., id, name). Ensure tasks are selected and `taskFields` are properly configured to avoid issues during deletion.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data Binding in Angular Gantt Chart Component | Syncfusion
-description: Learn here all about data binding in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Data Binding in Angular Gantt Chart | Syncfusion
+description: Learn how to bind data binding in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: Data binding 
+control: Data Binding - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Data Binding in Angular Gantt Chart Component
+# Data Binding from Local and Remote Sources in Angular Gantt Chart
 
 Data binding connects the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component to project data sources, enabling dynamic visualization and management of project information. The component supports both local JavaScript arrays and remote server data through the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt#datasource) property, which accepts either a `DataManager` instance or JavaScript object array collection.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Maintaining Data in Server in Angular Gantt Chart | Syncfusion
-description: Learn how to manage Gantt data in a server using URLAdaptor for batch CRUD operations in the Syncfusion Angular Gantt Chart for seamless project updates.
+title: Server-Side Data in Angular Gantt Chart | URLAdaptor | Syncfusion
+description: Learn how to maintain server-side data in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: Maintaining data in server
+control: Server-Side Data - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Maintaining Data in Server in Angular Gantt Chart Component
+# Maintaining Data Persistence on Server in Angular Gantt Chart
 
 Maintaining Gantt data in a server enables persistent project updates through RESTful web services, using DataManager’s `UrlAdaptor` to handle CRUD operations with a backend like ASP.NET and ADO.NET Entity Data Model. Configure the data source with a DataManager instance, specifying `url` for fetching data and `batchUrl` for batch updates, ensuring task data aligns with [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskfields) mappings (e.g., id, name, startDate). The server processes insert, edit, and delete actions, returning JSON data with `result` for the data list and `count` for the total count. Batch operations handle interdependent tasks, such as updating a child task affecting its parent or predecessors, ensuring hierarchy and dependency integrity without manual adjustments. Use valid `taskFields` mappings and ensure dependency strings avoid circular references for successful operations.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Gantt Chart with Real-time Updates Using SignalR | Syncfusion
-description: Real-time Syncfusion Angular Gantt Chart updates with ASP.NET Core SignalR. Sync tasks, progress, and changes instantly across users without page reloads.
+title: Real-Time Angular Gantt Chart with SignalR | Live Updates | Syncfusion
+description: Learn how to integrate real-time gantt chart with signalr in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: SignalR
+control: SignalR - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Connecting Real-Time Data to Angular Gantt Chart Using SignalR
+# SignalR Integration with Real-Time Data Sync in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component supports real-time data binding using **SignalR**, a powerful library for bi-directional communication between servers and clients. This approach enables live data updates without page refreshes, making it ideal for applications that require instant information delivery such as stock tickers, live dashboards, and real-time notifications.
 

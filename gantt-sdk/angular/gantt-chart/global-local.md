@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Globalization and Localization in Angular Gantt Chart | Syncfusion
-description: Learn here all about globalization and localization in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Globalization & Localization in Angular Gantt Chart | RTL | Syncfusion
+description: Learn how to work globalization & localization in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: Globalization and Localization 
+control: Globalization & Localization - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Globalization and Localization in Angular Gantt Chart Component
+# Globalization and Localization in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component supports globalization to adapt project management interfaces to diverse languages, cultures, and regional preferences without code changes. Globalization encompasses localization for translating text elements like column headers and dialog titles, internationalization for formatting dates, numbers, and times in timelines and task fields, and Right-to-Left (RTL) support for languages like Arabic and Hebrew. These features ensure that task names, toolbar actions, and timeline displays align with users’ linguistic and cultural expectations, enhancing accessibility and usability in project management workflows for global users.
 

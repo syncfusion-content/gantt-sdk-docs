@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Events in Angular Gantt Chart Component | Syncfusion
-description: Learn about all events available in the Angular Gantt Chart component of Syncfusion Essential JS 2, including their behavior and usage.
+title: Events in Angular Gantt Chart | Complete Event Reference | Syncfusion
+description: Learn how to handle events in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: Gantt Events
-publishingplatform: gantt-sdk
+control: Events - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Events in Angular Gantt Chart Component
+# Events and Custom Actions in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component offers comprehensive support for visualizing project schedules, task management, and timeline tracking through interactive charts. This documentation provides insights into leveraging the component's rich event-driven architecture to customize and control Gantt operations effectively. Events in the Gantt Chart enable you to execute custom logic and integrations, offering flexibility for both simple and complex scenarios.
 

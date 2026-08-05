@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Timezone in Angular Gantt Chart Component | Syncfusion
-description: Learn how to configure timezones in the Syncfusion Angular Gantt Chart component for consistent task scheduling, CRUD operations, and global team coordination.
+title: Timezone in Angular Gantt Chart | Global Scheduling | Syncfusion
+description: Learn how to work timezone in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: Timezone
+control: Timezone - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Timezone in Angular Gantt Chart Component
+# Timezone Configuration with IANA Timezone Support in Angular Gantt Chart
 
 The Angular Gantt Chart component uses the system timezone by default for task scheduling and taskbar rendering, based on JavaScript’s `new Date()` (e.g., Wed Dec 12 2018 05:23:27 GMT+0530 for IST). To support global teams or specific regions, the [timezone](https://ej2.syncfusion.com/angular/documentation/api/gantt#timezone) property allows setting IANA timezones (e.g., "UTC", "Asia") to ensure consistent date display across users. This property function properly when the timeline displays hours. To enable this, set `timelineViewMode` to **'Hour'** or configure `topTier.unit` as **'Day'** and `bottomTier.unit` as **'Hour'**.
 

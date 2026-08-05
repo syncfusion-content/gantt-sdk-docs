@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Excel Export in Angular Gantt Chart Component | Syncfusion
-description: Learn here all about excel export in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Excel Export in Angular Gantt Chart | XLSX & CSV | Syncfusion
+description: Learn how to export excel export in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: Excel export 
+control: Excel Export - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Excel Export in Angular Gantt Chart Component
+# Exporting Data to Excel in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component supports exporting project data to Excel and CSV formats, enabling seamless sharing, reporting, and offline analysis.  
  

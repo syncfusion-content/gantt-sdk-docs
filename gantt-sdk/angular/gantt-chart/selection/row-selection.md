@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Row Selection in Angular Gantt Chart | Syncfusion
-description: Explore how to configure and customize row selection in the Syncfusion Angular Gantt Chart component using API methods and events.
+title: Row Selection in Angular Gantt Chart | Highlight Tasks | Syncfusion
+description: Learn how to select row selection in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: Row selection 
+control: Row Selection - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Row Selection in Angular Gantt Chart Component
+# Selecting Multiple Rows and Rows in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component supports row selection using mouse clicks or keyboard navigation (arrow keys). This enables users to highlight, manipulate, or trigger actions on selected task rows.
 

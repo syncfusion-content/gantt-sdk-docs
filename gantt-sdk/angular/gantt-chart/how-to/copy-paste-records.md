@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Copy and Paste Records in Angular Gantt Chart Component | Syncfusion
-description: Learn how to programmatically copy and paste records in the Syncfusion Angular Gantt Chart component using context menus for efficient task duplication.
+title: Copy and Paste Records in Angular Gantt Chart | Syncfusion
+description: Learn how to copy copy and paste records in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: Copy paste records
+control: Copy Paste Records - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Copy and Paste Records in Angular Gantt Chart Component
+# Implementing Copy and Paste Operations for Records in Angular Gantt Chart
 
 The copy and paste functionality in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component enables efficient task duplication, allowing you to replicate tasks or entire task hierarchies using the [addRecord](https://ej2.syncfusion.com/angular/documentation/api/gantt#addrecord) method and a custom context menu configured via [contextMenuItems](https://ej2.syncfusion.com/angular/documentation/api/gantt#contextmenuitems). For example, right-clicking a parent task to copy and paste it with its child tasks at a specified position streamlines project management workflows. Inject `EditService` and enable `editSettings.allowAdding` to support adding copied records. Define valid [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskfields) mappings (e.g., id, name, startDate) to ensure task data is correctly replicated, including hierarchical structures with child tasks. Use the [contextMenuClick](https://ej2.syncfusion.com/angular/documentation/api/gantt#contextmenuclick) event to handle custom copy-paste actions, specifying the paste position (e.g., child, above, below) via `addRecord` parameters. This feature integrates with dependencies, critical path, and virtual scrolling, ensuring duplicated tasks align with the project structure for seamless schedule management.
 

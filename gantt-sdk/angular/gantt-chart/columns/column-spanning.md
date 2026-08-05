@@ -1,14 +1,14 @@
 ---
 layout: post
-title: How to Span Columns in Angular Gantt Chart Component | Syncfusion
-description: Learn how to span columns in the Syncfusion Angular Gantt Chart component using the queryCellInfo event, customize borders, and understand limitations.
+title: Column Spanning in Angular Gantt Chart | Merge Cells | Syncfusion
+description: Learn how to use column spanning in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: Column Spanning
+control: Column Spanning - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Column Spanning in Angular Gantt Chart Component
+# Column Spanning with Cell Merge Support in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component supports **column spanning**, allowing adjacent cells to merge horizontally for improved layout clarity. This feature is useful for grouping related data or enhancing visual structure.
 

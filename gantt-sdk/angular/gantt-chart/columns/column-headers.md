@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Headers in Angular Gantt Chart Component | Syncfusion
-description: Learn here all about headers in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Column Headers in Angular Gantt Chart | Customization | Syncfusion
+description: Learn how to customize column headers in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: Headers
+control: Column Headers - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Column Headers in Angular Gantt Chart Component
+# Customizing Column Headers in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component provides flexible options to manage and customize column headers. You can define static header text, apply custom templates, align header content, and even update header titles dynamically through events or methods. These features help tailor the Gantt chart to match specific UI requirements and improve readability.
 

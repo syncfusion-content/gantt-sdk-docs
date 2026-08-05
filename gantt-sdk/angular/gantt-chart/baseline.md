@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Baseline in Angular Gantt Chart Component | Syncfusion
-description: Learn here all about baseline in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Baseline in Angular Gantt Chart | Planned vs Actual | Syncfusion
+description: Learn how to set baseline in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: Baseline
+control: Baseline - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Baseline in Angular Gantt Chart Component
+# Baselines for Schedule Comparison in Angular Gantt Chart
 
 The baseline feature in the Gantt Chart component enables comparison between original planned schedules and actual task execution timelines. This visualization provides clear insights into schedule deviations, helping assess project performance and identify areas requiring attention. Baseline functionality displays both the original planned timeline and current progress side-by-side for comprehensive project tracking.
 

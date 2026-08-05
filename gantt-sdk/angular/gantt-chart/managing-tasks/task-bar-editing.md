@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Task Bar Editing in Angular Gantt Chart Component | Syncfusion
-description: Learn how to edit tasks via taskbar interactions in the Syncfusion Angular Gantt Chart component for intuitive project timeline adjustments.
+title: Task Bar Editing in Angular Gantt Chart | Drag & Resize | Syncfusion
+description: Learn how to edit task bar editing in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: Task bar editing
+control: Task Bar Editing - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Task Bar Editing in Angular Gantt Chart Component
+# Editing Tasks Using Taskbar Drag and Resize in Angular Gantt Chart
 
 Task bar editing in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component enables intuitive project timeline adjustments by allowing to drag or resize taskbars to modify task details, such as start dates, durations, or progress, using mouse or touch interactions. Enable this feature by setting the [allowTaskbarEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowtaskbarediting) property to **true** and injecting `EditService`, ensuring task data aligns with valid [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskfields) mappings (e.g., id, startDate, duration). Taskbars can be dragged to shift dates, resize them to adjust durations, or move progress grips to update completion percentages. The [taskbarEditing](https://ej2.syncfusion.com/angular/documentation/gantt/events#taskbarediting) event allows preventing edits for specific tasks, while the [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querytaskbarinfo) event customizes taskbar visuals by hiding editing indicators like resizer or connector points.
 

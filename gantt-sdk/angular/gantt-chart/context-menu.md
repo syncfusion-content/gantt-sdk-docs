@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Context Menu in Angular Gantt Chart Component | Syncfusion
-description: Learn here all about context menu in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Context Menu in Angular Gantt Chart | Right-Click Actions | Syncfusion
+description: Learn how to add context menu in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: Context menu 
+control: Context Menu - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Context Menu in Angular Gantt Chart Component
+# Context Menu Customization in Angular Gantt Chart
 
 The context menu in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component provides right-click access to task and column operations, improving efficiency with contextual task actions. Menu items adapt based on the clicked element, such as task rows, column headers, or chart areas.
 

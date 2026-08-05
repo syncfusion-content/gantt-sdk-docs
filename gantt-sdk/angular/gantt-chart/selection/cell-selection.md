@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Cell Selection in Angular Gantt Chart | Syncfusion
-description: Explore cell selection in Syncfusion Angular Gantt Chart, including single, multiple, external selection, and customization via API methods and events.
+title: Cell Selection in Angular Gantt Chart | Multi-Select | Syncfusion
+description: Learn how to select cell selection in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: Cell selection 
+control: Cell Selection - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Cell Selection in Angular Gantt Chart Component
+# Selecting Individual Cells and Cell Ranges in Angular Gantt Chart
 
 Cell selection in the Gantt Chart component enables interactive selection of specific cells or ranges of cells within the grid. You may select cells using mouse clicks or arrow keys (up, down, left, right). This is useful for highlighting, manipulating, or performing operations on particular Gantt cells.
 

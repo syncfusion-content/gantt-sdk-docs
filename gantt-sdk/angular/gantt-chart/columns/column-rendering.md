@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column Rendering in Angular Gantt Chart Component | Syncfusion
-description: Learn here all about Column rendering in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Column Rendering in Angular Gantt Chart | Syncfusion
+description: Learn how to customize column rendering in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: Column rendering
+control: Column Rendering - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Column Rendering in Angular Gantt Chart Component
+# Column Rendering with Data Binding and Schema Definition in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component supports column rendering to control data presentation. Column definitions act as the data schema and support operations such as sorting and filtering. The [field](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#field) property is required to map data source values to columns and must be defined for features like complex binding and template-based actions.
 

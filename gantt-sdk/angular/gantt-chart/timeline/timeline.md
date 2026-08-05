@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Timeline in Angular Gantt Chart Component | Syncfusion
-description: Learn how to configure timelines in the Syncfusion Angular Gantt Chart component with view modes, zooming, weekend highlighting, and templates.
+title: Timeline in Angular Gantt Chart | View Modes | Syncfusion
+description: Learn how to customize timeline in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: Timeline
+control: Timeline - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Timeline in Angular Gantt Chart Component
+# Configuring Timeline Settings in Angular Gantt Chart
 
 
 ## Configure timeline view modes

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column Template in Angular Gantt Chart Component | Syncfusion
-description: Learn here all about column template in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Column Template in Angular Gantt Chart | Custom Content | Syncfusion
+description: Learn how to create column template in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: Column template 
+control: Column Template - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Column Template in Angular Gantt Chart Component
+# Column Templates with Custom Cell Content in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component provides a [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#template) option that allows you to display custom elements in a column instead of the field value. This can be useful when you need to display images, buttons, or other custom content within a column.
 

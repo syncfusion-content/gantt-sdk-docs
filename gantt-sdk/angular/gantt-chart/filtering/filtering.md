@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Filtering in Angular Gantt Chart Component | Syncfusion
-description: Learn here all about filtering in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Filtering in Angular Gantt Chart | Filter & Search | Syncfusion
+description: Learn how to filter filtering in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: Filtering 
+control: Filtering - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Filtering in Angular Gantt Chart Component
+# Filtering and Search Features in Angular Gantt Chart
 
 Filtering allows you to view specific or related records based on defined criteria. The Gantt Chart component supports options like filter menu, Excel-like filtering, and toolbar search to narrow down visible data.
 

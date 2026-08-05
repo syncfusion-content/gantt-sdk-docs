@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ej1 API Migration in Angular Gantt Chart Component | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: EJ1 to EJ2 API Migration in Angular Gantt Chart | Syncfusion
+description: Learn how to migrate ej1 to ej2 api migration in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: Ej1 api migration 
+control: EJ1 to EJ2 Migration - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Ej1 API Migration in Angular Gantt Chart Component
+# EJ1 to EJ2 API Migration in Angular Gantt Chart
 
 This topic shows the API equivalent of JS2 Gantt Chart component to be used, while migrating your project that uses JS1 Gantt.
 

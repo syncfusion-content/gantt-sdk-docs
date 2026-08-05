@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Toolbar in Angular Gantt Chart Component | Syncfusion
-description: Learn here all about toolbar in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Toolbar in Angular Gantt Chart | Custom Items | Syncfusion
+description: Learn how to customize toolbar in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: Toolbar 
+control: Toolbar - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Toolbar in Angular Gantt Chart Component
+# Toolbar Configuration with Built-in and Custom Items in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component includes built-in toolbar support for executing common actions such as editing, searching, and navigating the timeline. The [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt#toolbar) property accepts the collection of built-in toolbar items and `ItemModel` objects for custom toolbar items.
 

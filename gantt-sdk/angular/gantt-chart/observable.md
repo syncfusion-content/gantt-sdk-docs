@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Observable in Angular Gantt Chart Component | Syncfusion
-description: Learn how to bind observables in the Syncfusion Angular Gantt Chart component for reactive data updates and real-time task management.
+title: Observable Binding in Angular Gantt Chart | Reactive Data | Syncfusion
+description: Learn how to use observable binding in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: Observable
+control: Observable Binding - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Observable in Angular Gantt Chart Component
+# Observable Binding with Reactive Data Support in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component supports [Observable](https://v17.angular.io/guide/observables) data binding, enabling reactive updates to reflect task changes, such as real-time schedule adjustments, without manual intervention. By piping Observables through the [async](https://v17.angular.io/api/common/AsyncPipe) pipe, the component automatically subscribes to data changes, updates the UI, and manages subscription to prevent memory leaks. This is ideal for handling asynchronous data from APIs or WebSockets, ensuring efficient synchronization in project management scenarios. Observables require a data structure with `result` (an array of task data) and `count` (total record count) for proper binding, supporting features like virtual scrolling. Taskbars and grid rows include ARIA labels for accessibility, and the UI adapts to responsive designs, though large datasets may need caching for performance.
 

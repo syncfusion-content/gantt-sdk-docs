@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Resource View in Angular Gantt Chart Component | Syncfusion
-description: Learn how to configure resource view in the Syncfusion Angular Gantt Chart component for hierarchical task visualization and resource allocation.
+title: Resource View in Angular Gantt Chart | Hierarchical View | Syncfusion
+description: Learn how to view resource view in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: Resource view
+control: Resource View - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Resource View in Angular Gantt Chart Component
+# Resource View with Hierarchical Task Visualization in Angular Gantt Chart
 
 The resource view in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component organizes tasks hierarchically by resource, displaying resources as parent nodes and their assigned tasks as child taskbars in a timeline. Enabled by setting [viewType](https://ej2.syncfusion.com/angular/documentation/api/gantt#viewtype) to **ResourceView**, this view visualizes workloads, such as multiple tasks per resource, with taskbars showing duration, progress, and dependencies. Unassigned tasks group under an **Unassigned Task** node. The [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querytaskbarinfo) event customizes taskbar styles, and overallocation indicators highlight scheduling conflicts. Taskbars include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may truncate resource names. Parent tasks are not supported, and tasks require scheduling (start date and duration).
 

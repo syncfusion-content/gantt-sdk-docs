@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Managing Tasks in Angular Gantt Chart Component | Syncfusion
-description: Learn here all about Managing tasks in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Managing Tasks in Angular Gantt Chart | CRUD | Syncfusion
+description: Learn how to manage managing tasks in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: Managing tasks
+control: Managing Tasks - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Managing Tasks in Angular Gantt Chart Component
+# Overview of Task Management Features in Angular Gantt Chart
 
 Managing tasks in the Angular Gantt Chart component enables dynamic project updates, such as inserting, deleting, or editing tasks and dependencies, by enabling [allowAdding](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowadding), [allowDeleting](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowdeleting), [allowEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowediting), and [allowTaskbarEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowtaskbarediting) with `EditService` injected. A primary key column, defined by [columns.isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#isprimarykey) set to **true** (e.g., on id), ensures reliable CRUD operations and task identification. Editing modes include cell editing for quick TreeGrid updates, dialog editing for comprehensive changes, taskbar dragging for duration or date adjustments, and connector line dragging for dependencies. Customize dialogs with templates or fields using [addDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#adddialogfields) and [editDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#editdialogfields). Methods like [addRecord](https://ej2.syncfusion.com/angular/documentation/api/gantt#addrecord), [deleteRecord](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#deleterecord) and [updateRecordById](https://ej2.syncfusion.com/angular/documentation/api/gantt#updaterecordbyid) support programmatic management. Ensure valid `taskFields` mappings and a primary key to enable editing seamlessly.
 

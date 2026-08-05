@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Tree Column in Angular Gantt Chart Component | Syncfusion
-description: Learn here all about tree column in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Tree Column in Angular Gantt Chart | Hierarchical Display | Syncfusion
+description: Learn how to use tree column in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: Tree Column 
+control: Tree Column - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Tree Column in Angular Gantt Chart Component
+# Tree Column with Expand and Collapse Hierarchy in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component provides a structured way to display parent-child relationships using expand/collapse icons.  
 

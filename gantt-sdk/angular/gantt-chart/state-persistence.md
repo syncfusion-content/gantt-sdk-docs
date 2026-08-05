@@ -1,14 +1,14 @@
 ---
 layout: post
-title: State Persistence in Angular Gantt Chart Component | Syncfusion
-description: Learn here all about State persistence in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: State Persistence in Angular Gantt Chart | LocalStorage | Syncfusion
+description: Learn how to persist state persistence in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: State persistence 
+control: State Persistence - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# State Persistence in Angular Gantt Chart Component
+# State Persistence with LocalStorage Support in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component supports state management to retain its configuration and data after a browser refresh during the same session.
 

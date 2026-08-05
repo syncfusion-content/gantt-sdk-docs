@@ -1,18 +1,17 @@
 ---
 layout: post
-title: Feature Modules in Syncfusion Angular Gantt Chart
-description: Enable advanced Angular Gantt Chart features through module injection for sorting, editing, toolbar, and export functionality.
+title: Feature Modules in Angular Gantt Chart | Syncfusion
+description: Learn how to import feature modules in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: Module
+control: Feature Modules - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Feature Modules in Angular Gantt Chart
-
+# Feature Modules with Angular Dependency Injection in Angular Gantt Chart
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) uses a modular architecture for bundle size optimization. Basic rendering requires no additional modules. Advanced features like sorting, editing, toolbar, and export require explicit module injection through Angular's dependency injection system.
 
-This approach loads only the functionality you need, reducing bundle size and improving load times.
+This approach loads only the required functionality, reducing bundle size and improving load times.
 
 ## Inject modules
 
@@ -148,5 +147,5 @@ For detailed tree-shaking implementation, refer to the [Syncfusion Angular Tree 
 
 - [Event Markers](https://ej2.syncfusion.com/angular/documentation/gantt/eventmarkers)
 - [Virtual Scrolling](https://ej2.syncfusion.com/angular/documentation/gantt/scrolling/virtual-scrolling)
-- [Editing Tasks](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/editing-tasks)
+- [Editing Tasks](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/editing-task)
 - [Overview](https://ej2.syncfusion.com/angular/documentation/gantt/overview)

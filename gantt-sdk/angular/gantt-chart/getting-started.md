@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting Started with Syncfusion Angular Gantt Chart
-description: Learn how to install and render your first Angular Gantt Chart with hierarchical task data, field mapping, and timeline visualization.
+title: Getting Started with Angular Gantt Chart | Syncfusion
+description: Learn how to get started getting started with gantt chart in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: Getting started
+control: Getting Started - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

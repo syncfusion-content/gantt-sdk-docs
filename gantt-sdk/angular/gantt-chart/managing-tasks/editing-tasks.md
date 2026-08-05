@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Editing Tasks in Angular Gantt Chart Component | Syncfusion
-description: Learn how to edit tasks in the Syncfusion Angular Gantt Chart using cell, dialog, taskbar, or programmatic editing.
+title: Editing Tasks in Angular Gantt Chart | Cell & Dialog | Syncfusion
+description: Learn how to edit editing tasks in Syncfusion Angular Gantt Chart with custom templates and event handling
 platform: gantt-sdk
-control: Editing tasks
+control: Editing Tasks - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Editing Tasks in Angular Gantt Chart Component
+# Editing Task Properties and Information in Angular Gantt Chart
 
 Editing tasks in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component enables dynamic project updates, such as modifying task durations, names, or dependencies, using cell editing, dialog, taskbar interactions, or programmatic methods. Enable editing by setting [editSettings.allowEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowediting) and [editSettings.allowTaskbarEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowtaskbarediting) to **true** with `EditService` injected, ensuring task data aligns with [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskfields) mappings (e.g., id, name, startDate). Cell editing allows direct updates in the TreeGrid pane, dialog editing provides a comprehensive interface, taskbar dragging adjusts durations or dates, and connector lines manage dependencies via drag-and-drop. Use the [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#mode) property to control editing behavior (**Auto** or **Dialog**). Customize dialog fields with [addDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#adddialogfields) and [editDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#editdialogfields) for tailored forms. The [updateRecordById](https://ej2.syncfusion.com/angular/documentation/api/gantt#updaterecordbyid) method enables programmatic updates, except for task IDs. Ensure valid data to prevent issues and maintain dependency integrity.
 
