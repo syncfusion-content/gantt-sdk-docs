@@ -9,7 +9,7 @@ documentation: ug
 
 # Styling and Appearance in Blazor Kanban Component
 
-To modify the Kanban appearance, you need to override the default CSS of Kanban. Also, you have an option to create your own custom theme using our [Theme Studio](https://blazor.syncfusion.com/themestudio/?theme=material). Find the list of CSS classes in Kanban.
+Customize the appearance of the [Blazor Kanban Board](https://www.syncfusion.com/blazor-components/blazor-kanban-board) by overriding its default CSS styles. Custom themes can also be created using [Theme Studio](https://blazor.syncfusion.com/themestudio/?theme=material). Refer to the list of Kanban CSS classes for additional styling options.
 
 | CSS class | Purpose |
 |-------|---------|

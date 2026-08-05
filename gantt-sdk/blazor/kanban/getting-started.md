@@ -225,7 +225,7 @@ Add the Blazor Kanban component in the **~/Pages/Home.razor** file.
     ```
 2. The application will start and display in your default web browser.
 
-N> You can also explore our [Blazor Kanban Board example](https://blazor.syncfusion.com/demos/kanban/overview?theme=bootstrap5) that shows you how to render and configure the Kanban Board.
+N> Explore our [Blazor Kanban Board example](https://blazor.syncfusion.com/demos/kanban/overview?theme=bootstrap5) that shows how to render and configure the Kanban Board.
 
 ## See also
 

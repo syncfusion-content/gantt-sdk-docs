@@ -9,7 +9,7 @@ documentation: ug
 
 # Columns in Blazor Kanban Component
 
-The **Kanban** columns represent each stage of workflow process.Column definitions serve as the schema for the Kanban board's **DataSource**. The Operations such as drag-and-drop, swimlane grouping, and column toggling are driven by these column definitions.
+The [Blazor Kanban Board](https://www.syncfusion.com/blazor-components/blazor-kanban-board) columns represent each stage of workflow process.Column definitions serve as the schema for the Kanban board's **DataSource**. The Operations such as drag-and-drop, swimlane grouping, and column toggling are driven by these column definitions.
 
 ## Single-key mapping
 
@@ -143,13 +143,13 @@ The Kanban board supports rendering a single column with multiple key mappings u
 
 ## Header text
 
-Use the `HeaderText` property to define the display text for each Kanban column header. If no header text is specified, the column header will appear blank.
+Use the [HeaderText](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.ColumnModel.html#Syncfusion_Blazor_Kanban_ColumnModel_HeaderText) property to define the display text for each Kanban column header. If no header text is specified, the column header will appear blank.
 
 ## Header template
 
-You can customize the column header with `Template` property as shown in the following code.
+The column header can be customized using the Template property, as shown in the following code.
 
-To quickly get started with using templates in the Blazor Kanban component, watch the following video.
+The following video demonstrates how to use templates in the Blazor Kanban component.
 
 {% youtube
 "youtube:https://www.youtube.com/watch?v=PjTgXuibei8" %}
@@ -323,9 +323,9 @@ To quickly get started with using templates in the Blazor Kanban component, watc
 
 ## Toggle columns
 
-Kanban columns can be expanded or collapsed by enabling the `AllowToggle` property in `KanbanColumn`. When enabled, an expand/collapse icon appears in the column header.
+Kanban columns can be expanded or collapsed by enabling the [AllowToggle](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.ColumnModel.html#Syncfusion_Blazor_Kanban_ColumnModel_AllowToggle) property in `KanbanColumn`. When enabled, an expand or collapse icon appears in the column header.
 
-N> By default, collapsed column width is set to `50px`.
+N> By default, the collapsed column width is set to `50px`.
 
 ```cshtml
 
@@ -389,7 +389,7 @@ N> By default, collapsed column width is set to `50px`.
 
 ### Initially collapsed column
 
-By default, all columns are expanded when the Kanban board is initially rendered. To render a column in a collapsed state initially, use the `IsExpanded` property.
+By default, all columns are expanded when the Kanban board is initially rendered. To render a column in a collapsed state initially, use the [IsExpanded](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.ColumnModel.html#Syncfusion_Blazor_Kanban_ColumnModel_IsExpanded) property.
 
 N> The `IsExpanded` property only works when enabling the `AllowToggle` property on particular column.
 

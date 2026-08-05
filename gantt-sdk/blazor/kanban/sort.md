@@ -89,7 +89,7 @@ N> By default, the `SortBy` property is `DataSourceOrder`.
 
 SortBy `Index` property must require datasource `Field` mapping. In this behavior, cards are loaded based on mapping `Field` values, and cards are dropped based on the dropped clone.
 
-Cards are placed in a particular position in the columns where you can drop the cards by specifying the `Field` property, which is mapped from the data source. This property allows the users to drop the cards in the Kanban board where the dropped clone is created exactly. It is also helpful to render the cards based on the `Field` property value.
+Cards can be placed at a specific position within columns by specifying the  `Field` property, which is mapped from the data source. This property allows the users to drop the cards in the Kanban board where the dropped clone is created exactly. It is also helpful to render the cards based on the `Field` property value.
 
 N> The `Field` property mapping key value must be in `number` format.
 
