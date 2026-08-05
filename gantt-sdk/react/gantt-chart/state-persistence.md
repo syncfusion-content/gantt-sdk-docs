@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Persisting User Configurations Across Sessions in React Gantt Chart
+# State Persistence with LocalStorage Support in React Gantt Chart
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component supports state management to retain its configuration and data after a browser refresh during the same session.
 

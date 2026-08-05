@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Enforcing Scheduling Rules with Task Constraints in React Gantt Chart
+# Task Constraints with Scheduling Rules in React Gantt Chart
 
 Task constraints in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component define scheduling rules that control when tasks start or finish, ensuring logical sequences, fixed deadlines, and optimized resource allocation. Constraints affect taskbar positioning, dependency scheduling, and critical path calculations, making schedules realistic by accounting for limitations like material delays or compliance dates. They integrate with `taskMode` (e.g., **Auto** for automatic scheduling, **Manual** for fixed dates).
 

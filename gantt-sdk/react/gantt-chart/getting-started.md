@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Build Your First React Gantt Chart Application
+# Getting Started with React Gantt Chart
 
 This guide walks you through installing and rendering your first [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component. You'll learn how to bind task data, map fields, and display a basic project schedule in just a few minutes.
 

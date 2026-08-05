@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Local and Remote Data Binding in React Gantt Chart
+# Data Binding from Local and Remote Sources in React Gantt Chart
 
 Data binding connects the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component to project data sources, enabling dynamic visualization and management of project information. The component supports both local JavaScript arrays and remote server data through the [dataSource](https://ej2.syncfusion.com/react/documentation/api/gantt#datasource) property, which accepts either a `DataManager` instance or JavaScript object array collection.
 

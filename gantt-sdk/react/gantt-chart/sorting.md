@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Single and Multi-Column Sorting in React Gantt Chart
+# Column Sorting with Multi-Sort Support in React Gantt Chart
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component provides sorting functionality to arrange task data in ascending or descending order based on column values.
 

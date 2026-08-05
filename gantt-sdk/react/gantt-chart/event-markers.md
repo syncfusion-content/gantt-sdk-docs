@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Highlighting Key Dates with Event Markers in React Gantt Chart
+# Project-Wide Timeline Markers in React Gantt Chart
 
 Event markers highlight significant project events by displaying vertical timeline indicators that span across the entire [React Gantt chart](https://www.syncfusion.com/react-components/react-gantt-chart). These markers identify critical dates, milestones, deadlines, or important project events that affect multiple tasks or the overall project timeline, providing visual reference points for project-wide activities.
 

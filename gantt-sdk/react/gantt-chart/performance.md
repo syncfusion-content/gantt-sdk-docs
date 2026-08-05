@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Optimizing Loading and Rendering Performance in React Gantt Chart
+# Optimization with Virtual Scrolling in React Gantt Chart
 
 This article is a comprehensive guide on improving the loading performance of the Gantt Chart component, especially when dealing with large datasets and a significant number of columns. It provides valuable insights into the steps required to bind a large data source without experiencing performance degradation. By offering detailed explanations and actionable tips, this resource aims to empower readers with the knowledge and best practices necessary to optimize the performance of the Gantt Chart component during data binding, ensuring a smooth and efficient user experience.
 

@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Configuring Task Scheduling Modes and Duration in React Gantt Chart
+# Task Scheduling with Duration Units in React Gantt Chart
 
 Task scheduling in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component defines and visualizes task start dates, durations, and end dates as taskbars in a project timeline, enabling precise planning and tracking. Configure scheduling with properties like [taskFields](https://ej2.syncfusion.com/react/documentation/api/gantt#taskfields) for mapping task data, [taskMode](https://ej2.syncfusion.com/react/documentation/api/gantt#taskmode) for auto or manual validation, [taskType](https://ej2.syncfusion.com/react/documentation/api/gantt#tasktype) for fixed unit, work, or duration, and [durationUnit](https://ej2.syncfusion.com/react/documentation/api/gantt#durationunit) for day, hour, or minute units. Working time, set via [dayWorkingTime](https://ej2.syncfusion.com/react/documentation/api/gantt#dayworkingtime), and non-working periods, like weekends or holidays, ensure realistic calculations. Events like [dataBound](https://ej2.syncfusion.com/react/documentation/gantt/events#databound) customize scheduling logic on run-time. Taskbars include ARIA labels for accessibility, describing start, end, and duration, and adapt to responsive designs, though narrow screens may require scrolling for long timelines.
 

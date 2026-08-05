@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Configuring Context Menu Actions in React Gantt Chart
+# Context Menu Customization in React Gantt Chart
 
 The context menu in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component provides right-click access to task and column operations, improving efficiency with contextual task actions. Menu items adapt based on the clicked element, such as task rows, column headers, or chart areas.
 
