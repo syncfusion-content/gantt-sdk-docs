@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Style and Appearance in React Gantt Chart Component | Syncfusion
-description: Learn how to customize the style and appearance of the Syncfusion React Gantt Chart component with CSS overrides and grid line configurations.
+title: Style and Appearance in React Gantt Chart | Syncfusion
+description: Learn how to customize the style and appearance of Syncfusion React Gantt Chart with CSS overrides, themes, and grid line configurations.
+keywords: react gantt style, appearance customization, css override, themes, grid lines, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/style-and-appearance
 platform: gantt-sdk
-control: Style and appearance
+control: Style and Appearance - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Style and Appearance in React Gantt Chart Component
+# Customizing Style and Appearance of React Gantt Chart
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component’s appearance is customized by overriding default CSS styles to align with application designs, using classes for taskbars, milestones, and grid elements. The [queryTaskbarInfo](https://ej2.syncfusion.com/react/documentation/gantt/events#querytaskbarinfo) event modifies taskbar styles dynamically, while grid lines are configured with [gridLines](https://ej2.syncfusion.com/react/documentation/api/gantt#gridlines) for horizontal, vertical, or both. Custom themes are created via [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=tailwind3). Styles include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may require adjustments for taskbar visibility.
 

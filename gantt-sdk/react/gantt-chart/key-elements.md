@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Key Elements in Gantt UI for React Gantt control | Syncfusion
-description:  Checkout and learn about Key Elements in Gantt UI of React Gantt control of Syncfusion Essential JS 2 and more.
+title: Key Elements in React Gantt Chart UI | Syncfusion
+description: Learn about the key UI elements in Syncfusion React Gantt Chart including taskbars, timeline, TreeGrid, and splitter for project management.
+keywords: react gantt key elements, gantt ui components, taskbar, timeline, treegrid, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/key-elements
 platform: gantt-sdk
-control: Key Elements in Gantt UI
-publishingplatform: gantt-sdk
+control: Key Elements - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

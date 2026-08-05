@@ -1,14 +1,16 @@
 ---
 layout: post
-title: React Gantt Chart - GraphQL Adaptor | Syncfusion
-description: React Gantt Chart GraphQL adaptor explains using GraphQL services to fetch and mutate task data and related datasets for timeline rendering.
-control: GraphQL Adaptor
+title: GraphQL Adaptor in React Gantt Chart | Syncfusion
+description: Learn how to use the GraphQL adaptor in Syncfusion React Gantt Chart to fetch and mutate task data from GraphQL services for timeline rendering.
+keywords: react gantt graphql adaptor, graphql data binding, graphql services, task mutation, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/connecting-to-adaptors/graphql-adaptor
 platform: gantt-sdk
+control: GraphQL Adaptor - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# GraphQL Remote Data Binding in Syncfusion React Gantt
+# GraphQL Adaptor for Remote Data Binding in React Gantt Chart
 
 The [GraphQLAdaptor](https://ej2.syncfusion.com/react/documentation/data/adaptors/graphql-adaptor) in the Syncfusion<sup style="font-size:70%">&reg;</sup> DataManager enables the React Gantt to interact with GraphQL services by translating the Gantt's data requests and task update actions into GraphQL queries and mutations. This approach lets the Gantt request precisely the task fields and related entities it needs for timeline rendering, dependency resolution, and taskbar presentation.
 

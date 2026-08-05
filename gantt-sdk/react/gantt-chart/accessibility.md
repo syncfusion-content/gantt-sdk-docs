@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Accessibility in React Gantt Chart Component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Accessibility
+title: Accessibility in React Gantt Chart | Syncfusion
+description: Learn how to configure accessibility in Syncfusion React Gantt Chart with WAI-ARIA, keyboard navigation, and screen reader support for inclusive use.
+keywords: react gantt accessibility, WAI-ARIA, keyboard navigation, screen reader, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/accessibility
 platform: gantt-sdk
+control: Accessibility - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Accessibility in React Gantt Chart Component
+# WAI-ARIA and Keyboard Accessibility in React Gantt Chart
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component is designed with comprehensive accessibility support, adhering to established guidelines and standards including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles). This ensures the component is usable by individuals with disabilities and meets legal accessibility requirements for enterprise applications.
 

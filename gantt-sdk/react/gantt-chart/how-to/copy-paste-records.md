@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Copy and Paste Records in React Gantt Chart Component | Syncfusion
-description: Learn how to programmatically copy and paste records in the Syncfusion React Gantt Chart component using context menus for efficient task duplication.
+title: Copy and Paste Records in React Gantt Chart | Syncfusion
+description: Learn how to copy and paste task records in Syncfusion React Gantt Chart using context menus for efficient task duplication and project management.
+keywords: react gantt copy paste, duplicate task, copy records, paste records, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/how-to/copy-paste-records
 platform: gantt-sdk
-control: Copy paste records
+control: Copy and Paste Records - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Copy and Paste Records in React Gantt Chart Component
+# Copying and Pasting Task Records Using Context Menu in React Gantt Chart
 
 The copy and paste functionality in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component enables efficient task duplication, allowing you to replicate tasks or entire task hierarchies using the [addRecord](https://ej2.syncfusion.com/react/documentation/api/gantt#addrecord) method and a custom context menu configured via [contextMenuItems](https://ej2.syncfusion.com/react/documentation/api/gantt#contextmenuitems). For example, right-clicking a parent task to copy and paste it with its child tasks at a specified position streamlines project management workflows. Inject `Edit` service and enable `editSettings.allowAdding` to support adding copied records. Define valid [taskFields](https://ej2.syncfusion.com/react/documentation/api/gantt#taskfields) mappings (e.g., id, name, startDate) to ensure task data is correctly replicated, including hierarchical structures with child tasks. Use the [contextMenuClick](https://ej2.syncfusion.com/react/documentation/api/gantt#contextmenuclick) event to handle custom copy-paste actions, specifying the paste position (e.g., child, above, below) via `addRecord` parameters. This feature integrates with dependencies, critical path, and virtual scrolling, ensuring duplicated tasks align with the project structure for seamless schedule management.
 

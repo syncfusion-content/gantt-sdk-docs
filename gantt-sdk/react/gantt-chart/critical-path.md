@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Critical Path in React Gantt Chart Component | Syncfusion
-description: Learn here all about Critical path in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Critical Path in React Gantt Chart | Syncfusion
+description: Learn how to enable and customize the critical path in Syncfusion React Gantt Chart to identify tasks that directly impact the project end date.
+keywords: react gantt critical path, critical tasks, project deadline, task dependency, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/critical-path
 platform: gantt-sdk
-control: Critical path 
+control: Critical Path - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Critical Path in React Gantt Chart Component
+# Identifying Critical Tasks Using Critical Path in React Gantt Chart
 
 The critical path represents the longest sequence of dependent tasks that determines the minimum project duration. Tasks on the critical path have zero or negative [slack](https://ej2.syncfusion.com/react/documentation/api/gantt/iGanttData#slack) (float), meaning any delay in these tasks directly impacts the overall project completion date. The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component automatically calculates and highlights critical tasks in red with emphasized dependency connector lines when the [enableCriticalPath](https://ej2.syncfusion.com/react/documentation/api/gantt#enablecriticalpath) property is enabled. Critical path analysis helps identify which tasks require immediate attention and cannot be delayed without affecting project deadlines.
 

@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Undo Redo in React Gantt Chart Component | Syncfusion
-description: Learn how to configure undo redo actions in the Syncfusion React Gantt Chart component for reverting task edits, dependencies, and project changes.
+title: Undo Redo in React Gantt Chart | Syncfusion
+description: Learn how to configure undo and redo actions in Syncfusion React Gantt Chart for reverting task edits, dependencies, and project changes.
+keywords: react gantt undo redo, revert changes, undo action, redo action, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/undo-redo
 platform: gantt-sdk
-control: Undo redo
+control: Undo Redo - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Undo Redo in React Gantt Chart Component
+# Reverting Task Changes with Undo and Redo in React Gantt Chart
 
 The undo redo feature in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component allows users to revert or reapply actions like task edits, deletions, or dependency changes, enhancing project management by correcting mistakes efficiently. Enabled via the [enableUndoRedo](https://ej2.syncfusion.com/react/documentation/api/gantt#enableundoredo) property, it supports actions such as editing task details, dragging taskbars, or reordering columns, provided the `UndoRedoService` is injected. For example, undoing a task duration change restores the original timeline, while redoing it reapplies the edit. The [undoRedoActions](https://ej2.syncfusion.com/react/documentation/api/gantt#undoredoactions) property specifies which actions to track (e.g., Edit, Delete), defaulting to a comprehensive set including sorting, filtering, and zooming. The [undoRedoStepsCount](https://ej2.syncfusion.com/react/documentation/api/gantt#undoredostepscount) property limits the action history, defaulting to 10, with older actions removed as new ones are added. This feature ensures history management for complex projects with hierarchical tasks or frequent updates.
 

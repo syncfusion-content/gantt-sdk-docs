@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Overview in React Gantt Chart component | Syncfusion
-description: Learn about the React Gantt Chart component features, capabilities, and how to build interactive project schedules.
-control: Overview 
+title: Overview of React Gantt Chart Component | Syncfusion
+description: Learn about the Syncfusion React Gantt Chart component features, capabilities, and how to build interactive project schedules with timeline views.
+keywords: react gantt overview, gantt chart features, project scheduling, timeline view, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/overview
 platform: gantt-sdk
+control: Overview - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# React Gantt Chart Overview
+# Syncfusion React Gantt Chart – Features and Capabilities
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) is a project management component that provides a Microsoft Project-like interface for scheduling and managing projects. It enables you to visually manage tasks, task relationships, and resources with an intuitive and interactive timeline view.
 

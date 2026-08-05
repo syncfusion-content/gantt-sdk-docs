@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Rows in React Gantt Chart Component | Syncfusion
-description: Learn here all about rows in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Rows in React Gantt Chart | Syncfusion
+description: Learn how to configure and customize rows in Syncfusion React Gantt Chart with row height, alternate row styling, and row template support.
+keywords: react gantt rows, row height, row template, alternate row, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/rows/rows
 platform: gantt-sdk
-control: Rows
+control: Rows - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Rows in React Gantt Chart Component
+# Configuring and Customizing Rows in React Gantt Chart
 
 Each row typically represents a single record or item from a data source. Rows in a Gantt chart are used to present data in both tabular and timeline chart formats. Each row displays a set of values representing the fields of an individual data record. Rows allow you to interact with the data in the Gantt chart. You can select rows, edit cell values, perform taskbar editing in the chart side of the Gantt, perform sorting or filtering operations, and trigger events based on actions.
 

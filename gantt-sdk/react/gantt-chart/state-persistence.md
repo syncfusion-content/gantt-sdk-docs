@@ -1,14 +1,16 @@
 ---
 layout: post
-title: State Persistence in React Gantt Chart Component | Syncfusion
-description: Learn here all about State persistence in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: State Persistence in React Gantt Chart | Syncfusion
+description: Learn how to enable state persistence in Syncfusion React Gantt Chart to retain user configurations like sorting and filtering across page reloads.
+keywords: react gantt state persistence, persist state, local storage, user settings, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/state-persistence
 platform: gantt-sdk
-control: State persistence 
+control: State Persistence - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# State Persistence in React Gantt Chart Component
+# Persisting User Configurations Across Sessions in React Gantt Chart
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component supports state management to retain its configuration and data after a browser refresh during the same session.
 

@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Task bar editing in React Gantt Chart Component | Syncfusion
-description: Learn how to edit tasks via taskbar interactions in the Syncfusion React Gantt Chart component for intuitive project timeline adjustments.
+title: Taskbar Editing in React Gantt Chart | Syncfusion
+description: Learn how to edit tasks by dragging and resizing taskbars in Syncfusion React Gantt Chart for intuitive project timeline adjustments.
+keywords: react gantt taskbar editing, drag taskbar, resize taskbar, taskbar interactions, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/managing-tasks/task-bar-editing
 platform: gantt-sdk
-control: Task bar editing
+control: Taskbar Editing - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Task Bar Editing in React Gantt Chart Component
+# Editing Tasks by Dragging and Resizing Taskbars in React Gantt Chart
 
 Task bar editing in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component enables intuitive project timeline adjustments by allowing to drag or resize taskbars to modify task details, such as start dates, durations, or progress, using mouse or touch interactions. Enable this feature by setting the [allowTaskbarEditing](https://ej2.syncfusion.com/react/documentation/api/gantt/editSettings#allowtaskbarediting) property to **true** and injecting `Edit`, ensuring task data aligns with valid [taskFields](https://ej2.syncfusion.com/react/documentation/api/gantt#taskfields) mappings (e.g., id, startDate, duration). Taskbars can be dragged to shift dates, resize them to adjust durations, or move progress grips to update completion percentages. The [taskbarEditing](https://ej2.syncfusion.com/react/documentation/gantt/events#taskbarediting) event allows preventing edits for specific tasks, while the [queryTaskbarInfo](https://ej2.syncfusion.com/react/documentation/gantt/events#querytaskbarinfo) event customizes taskbar visuals by hiding editing indicators like resizers or connector points.
 

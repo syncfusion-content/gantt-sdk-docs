@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Baseline in React Gantt Chart Component | Syncfusion
-description: Learn here all about Baseline in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Baseline 
+title: Baseline in React Gantt Chart | Syncfusion
+description: Learn how to configure baseline in Syncfusion React Gantt Chart to compare planned versus actual task schedules for project tracking.
+keywords: react gantt baseline, planned vs actual, baseline taskbar, project tracking, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/baseline
 platform: gantt-sdk
+control: Baseline - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Baseline in React Gantt Chart Component
+# Comparing Planned vs Actual Using Baseline in React Gantt Chart
 
 The baseline feature in the Gantt Chart component enables comparison between original planned schedules and actual task execution timelines. This visualization provides clear insights into schedule deviations, helping assess project performance and identify areas requiring attention. Baseline functionality displays both the original planned timeline and current progress side-by-side for comprehensive project tracking.
 

@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Taskbar in React Gantt Chart Component | Syncfusion
-description: Learn how to customize taskbars in the Syncfusion React Gantt Chart component, including height, templates, and editing interactions.
+title: Taskbar in React Gantt Chart | Syncfusion
+description: Learn how to customize taskbars in Syncfusion React Gantt Chart with height, templates, tooltip, and interactive editing options.
+keywords: react gantt taskbar, taskbar template, taskbar height, taskbar tooltip, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/taskbar
 platform: gantt-sdk
-control: Taskbar
+control: Taskbar - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Taskbar in React Gantt Chart Component
+# Customizing Taskbar Appearance and Behavior in React Gantt Chart
 
 The taskbar in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component visually represents tasks on the timeline, showing duration, progress, and dependencies, enabling intuitive project management. Taskbars support customization through properties like [taskbarHeight](https://ej2.syncfusion.com/react/documentation/api/gantt#taskbarheight) for sizing and [queryTaskbarInfo](https://ej2.syncfusion.com/react/documentation/api/gantt#querytaskbarinfo) event for conditional formatting based on task data like progress. Multi-taskbar support in resource view, enabled by [enableMultiTaskbar](https://ej2.syncfusion.com/react/documentation/api/gantt#enablemultitaskbar), summarizes child task progress in collapsed parent taskbars. Connector lines, styled via [connectorLineWidth](https://ej2.syncfusion.com/react/documentation/api/gantt#connectorlinewidth) and [connectorLineBackground](https://ej2.syncfusion.com/react/documentation/api/gantt#connectorlinebackground), illustrate dependencies. Tooltips, controlled by [tooltipSettings](https://ej2.syncfusion.com/react/documentation/api/gantt/tooltipSettings/), provide hover details for taskbars, baselines, and timelines, with templates for custom content. Editing interactions include dragging for rescheduling (via [allowTaskbarDragAndDrop](https://ej2.syncfusion.com/react/documentation/api/gantt#allowtaskbardraganddrop)) and resizing for duration, progress changes, triggering events like [taskbarEditing](https://ej2.syncfusion.com/react/documentation/gantt/events#taskbarediting) and [taskbarEdited](https://ej2.syncfusion.com/react/documentation/gantt/events#taskbaredited) for validation. 
 

@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Data markers in React Gantt Chart Component | Syncfusion
-description: Learn here all about Data markers in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Data Markers in React Gantt Chart | Syncfusion
+description: Learn how to add and configure data markers in Syncfusion React Gantt Chart to highlight key project milestones and important dates on the timeline.
+keywords: react gantt data markers, milestone markers, timeline indicators, task markers, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/data-markers
 platform: gantt-sdk
-control: Data markers 
+control: Data Markers - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Data Markers in React Gantt Chart Component
+# Adding Data Markers to Highlight Milestones in React Gantt Chart
 
 Data markers are visual indicators that highlight significant events, milestones, or important dates within individual project tasks. These markers provide immediate visual context about critical moments in task timelines, enabling effective identification of key dates and tracking of important events at the task level. Understanding data markers implementation ensures effective project visualization and milestone tracking throughout project development cycles.
 

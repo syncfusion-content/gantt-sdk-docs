@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Sorting in React Gantt Chart Component | Syncfusion
-description: Learn here all about Sorting in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Sorting in React Gantt Chart | Syncfusion
+description: Learn how to configure single and multi-column sorting in Syncfusion React Gantt Chart for organizing project tasks in ascending or descending order.
+keywords: react gantt sorting, multi-column sort, column sorting, task ordering, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/sorting
 platform: gantt-sdk
-control: Sorting 
+control: Sorting - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Sorting in React Gantt Chart Component
+# Single and Multi-Column Sorting in React Gantt Chart
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component provides sorting functionality to arrange task data in ascending or descending order based on column values.
 

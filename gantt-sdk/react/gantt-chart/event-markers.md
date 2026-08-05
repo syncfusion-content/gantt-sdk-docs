@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Eventmarkers in React Gantt Chart Component | Syncfusion
-description: Learn here all about Eventmarkers in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Event Markers in React Gantt Chart | Syncfusion
+description: Learn how to add and configure event markers in Syncfusion React Gantt Chart to highlight significant project dates and events on the timeline.
+keywords: react gantt event markers, timeline markers, significant dates, event indicators, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/event-markers
 platform: gantt-sdk
-control: Eventmarkers 
+control: Event Markers - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Event Markers in React Gantt Chart Component
+# Highlighting Key Dates with Event Markers in React Gantt Chart
 
 Event markers highlight significant project events by displaying vertical timeline indicators that span across the entire [React Gantt chart](https://www.syncfusion.com/react-components/react-gantt-chart). These markers identify critical dates, milestones, deadlines, or important project events that affect multiple tasks or the overall project timeline, providing visual reference points for project-wide activities.
 

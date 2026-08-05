@@ -1,14 +1,16 @@
 ---
 layout: post
-title: React Gantt - Web Method Adaptor | Syncfusion
-description: React Gantt Web Method adaptor explains how the adaptor conveys task-related requests and task modification payloads to server web methods.
-control: WebMethod Adaptor
+title: Web Method Adaptor in React Gantt Chart | Syncfusion
+description: Learn how to use the Web Method adaptor in Syncfusion React Gantt Chart to bind remote data and send task modification payloads to server methods.
+keywords: react gantt web method adaptor, webmethod, remote data binding, server methods, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/connecting-to-adaptors/web-method-adaptor
 platform: gantt-sdk
+control: Web Method Adaptor - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Remote Data Binding with Custom Web Methods in Syncfusion React Gantt
+# Binding Remote Data Using Web Method Adaptor in React Gantt Chart
 
 The [WebMethodAdaptor](https://ej2.syncfusion.com/react/documentation/data/adaptors/web-method-adaptor) enables the Syncfusion<sup style="font-size:70%">&reg;</sup> React Gantt to communicate with server web methods and legacy endpoints by packaging task data requests and task modification payloads into a structured request envelope the server can deserialize. This adaptor is suitable for backend that expose web methods where task requests and updates are handled via HTTP POST operations.
 

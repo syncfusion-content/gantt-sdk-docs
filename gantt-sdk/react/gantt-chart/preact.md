@@ -1,14 +1,16 @@
 ---
 layout: post
-title: React Gantt getting started with Preact | Syncfusion
-description: Learn how to integrate and use the React Gantt Chart component in Preact applications with minimal setup and configuration.
-control: Preact
+title: React Gantt Chart in Preact Application | Syncfusion
+description: Learn how to integrate Syncfusion React Gantt Chart in Preact applications with minimal setup and step-by-step configuration.
+keywords: react gantt preact, preact gantt, preact integration, lightweight react, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/preact
 platform: gantt-sdk
+control: Preact Getting Started - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Getting Started with Preact
+# Getting Started with React Gantt Chart in a Preact Application
 
 This guide shows how to integrate the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component into a Preact application. For detailed component concepts and features, see the [main Getting Started guide](./getting-started).
 

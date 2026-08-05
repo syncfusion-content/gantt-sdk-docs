@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Indent and Outdent in React Gantt Chart Component | Syncfusion
-description: Learn how to use Indent and Outdent features in the Syncfusion React Gantt Chart component to manage task hierarchy effectively.
+title: Indent and Outdent in React Gantt Chart | Syncfusion
+description: Learn how to use indent and outdent features in Syncfusion React Gantt Chart to promote or demote tasks and manage project hierarchy effectively.
+keywords: react gantt indent outdent, task hierarchy, promote demote tasks, task indentation, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/rows/indent-and-outdent
 platform: gantt-sdk
-control: Indent and outdent 
+control: Indent and Outdent - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Indent and Outdent in React Gantt Chart Component
+# Promoting and Demoting Tasks with Indent and Outdent in React Gantt Chart
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component provides built-in support for indenting and outdenting rows, allowing hierarchy levels to be adjusted within the Gantt chart.
 

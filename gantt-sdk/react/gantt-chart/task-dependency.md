@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Task Dependency in React Gantt Chart Component | Syncfusion
-description: Learn how to configure task dependencies in the Syncfusion React Gantt Chart component for establishing relationships, managing offsets, and handling validation.
+title: Task Dependency in React Gantt Chart | Syncfusion
+description: Learn how to configure task dependencies in Syncfusion React Gantt Chart to establish task relationships, set offsets, and handle validation.
+keywords: react gantt task dependency, predecessor, finish-to-start, lag offset, dependency validation, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/task-dependency
 platform: gantt-sdk
-control: Task dependency
+control: Task Dependency - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Task Dependency in React Gantt Chart Component
+# Defining Task Relationships with Dependencies in React Gantt Chart
 
 Task dependency in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component establishes relationships between tasks, affecting scheduling where changes to predecessors impact successors. Dependencies are categorized into four types—Start to Start (SS), Start to Finish (SF), Finish to Start (FS), and Finish to Finish (FF)—mapped via the [taskFields.dependency](https://ej2.syncfusion.com/react/documentation/api/gantt/taskFields#dependency) property in the data source. Parent dependencies are enabled by default with [allowParentDependency](https://ej2.syncfusion.com/react/documentation/api/gantt#allowparentdependency) set to **true**, allowing relationships between parent-parent, child-child, parent-child, and child-parent tasks. Offsets support day, hour, or minute units for precise timing, and validation modes handle conflicts during editing via the [actionBegin](https://ej2.syncfusion.com/react/documentation/api/gantt#actionbegin) event. Connector lines are customized using [connectorLineWidth](https://ej2.syncfusion.com/react/documentation/api/gantt#connectorlinewidth) and [connectorLineBackground](https://ej2.syncfusion.com/react/documentation/api/gantt#connectorlinebackground), with the `queryTaskbarInfo` event enabling dynamic styling. Public methods like [addPredecessor](https://ej2.syncfusion.com/react/documentation/api/gantt#addpredecessor) and [removePredecessor](https://ej2.syncfusion.com/react/documentation/api/gantt#removepredecessor) allow programmatic management, ensuring accurate visualization with ARIA labels for accessibility and responsive scaling for mobile views.
 

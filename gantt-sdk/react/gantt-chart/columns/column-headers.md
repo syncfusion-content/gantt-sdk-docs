@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Headers in React Gantt Chart Component | Syncfusion
-description: Learn here all about Headers in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Column Headers in React Gantt Chart | Syncfusion
+description: Learn how to configure column headers in Syncfusion React Gantt Chart with custom text, tooltips, and formatting for improved readability.
+keywords: react gantt column headers, header text, header tooltip, column title, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/columns/column-headers
 platform: gantt-sdk
-control: Headers
+control: Column Headers - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Column Headers in React Gantt Chart Component
+# Configuring Column Headers with Custom Text and Tooltips in React Gantt Chart
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component provides flexible options to manage and customize column headers. You can define static header text, apply custom templates, align header content, and even update header titles dynamically through events or methods. These features help tailor the Gantt chart to match specific UI requirements and improve readability.
 

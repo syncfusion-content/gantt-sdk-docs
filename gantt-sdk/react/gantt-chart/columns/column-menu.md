@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Column Menu in React Gantt Chart Component | Syncfusion
-description: Learn here all about column menu in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Column menu
+title: Column Menu in React Gantt Chart | Syncfusion
+description: Learn how to enable the column menu in Syncfusion React Gantt Chart for sorting, filtering, and column management through header right-click options.
+keywords: react gantt column menu, header menu, sort columns, filter columns, column chooser, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/columns/column-menu
 platform: gantt-sdk
+control: Column Menu - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Column Menu in React Gantt Chart Component
+# Enabling Column Header Menu for Sort and Filter in React Gantt Chart
 
 The column menu in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component offers built-in actions including sorting, filtering, column chooser, and autofit. When you click the column menu icon, a menu appears with these features.
 

@@ -1,14 +1,16 @@
 ---
 layout: post
-title: React Gantt Chart Cell Selection API | Syncfusion
-description: Explore cell selection in Syncfusion React Gantt Chart, including single, multiple, external selection, and customization via API methods and events.
+title: Cell Selection in React Gantt Chart | Syncfusion
+description: Learn how to configure cell selection in Syncfusion React Gantt Chart with single, multiple, and external selection using API methods and events.
+keywords: react gantt cell selection, select cell, multiple cell selection, cell selection API, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/selection/cell-selection
 platform: gantt-sdk
-control: Cell selection 
+control: Cell Selection - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Cell Selection in React Gantt Chart Component
+# Configuring Cell Selection with API and Events in React Gantt Chart
 
 Cell selection in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component enables interactive selection of specific cells or ranges of cells within the grid. You may select cells using mouse clicks or arrow keys (up, down, left, right). This is useful for highlighting, manipulating, or performing operations on particular Gantt cells.
 
