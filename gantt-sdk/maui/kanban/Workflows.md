@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Workflows in .NET MAUI Kanban Board control | Syncfusion
-description: Learn here all about Workflows support in Syncfusion® .NET MAUI Kanban Board (SfKanban) control and more.
+title: Workflows in .NET MAUI Kanban Board | Syncfusion
+description: Learn about Workflows support in Syncfusion® .NET MAUI Kanban Board to control card transitions and restrict drag-and-drop operations between columns.
 platform: gantt-sdk
 control: Kanban
 documentation: ug
 ---
 
-# Workflows in .NET MAUI Kanban Board (SfKanban)
+# Workflows in .NET MAUI Kanban Board
 
 This feature is used to define the flow of cards between columns, offering restrictions when moving cards from one column to another. It also supports preventing drag-and-drop actions on specific columns.
 

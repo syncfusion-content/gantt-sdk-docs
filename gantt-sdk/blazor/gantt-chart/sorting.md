@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Sorting in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Sorting in Syncfusion Blazor Gantt Chart component and much more details.
+title: Sorting in Blazor Gantt Chart | Multi-Sort | Syncfusion
+description: Learn how to enable sorting in Syncfusion Blazor Gantt Chart to arrange task data in ascending or descending order across single or multiple columns.
+keywords: blazor gantt sorting, allowsorting, multi-column sort, ascending descending, sortsettings, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/sorting
 platform: gantt-sdk
-control: Gantt Chart
+control: Sorting - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Sorting in Blazor Gantt Chart Component
+# Column Sorting with Multi-Sort Support in Blazor Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component provides sorting functionality to arrange task data in ascending or descending order based on column values.
 

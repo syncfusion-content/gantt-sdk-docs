@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Accessibility in Blazor Gantt Chart Component | Syncfusion®
-description: Learn about accessibility features in the Blazor Gantt Chart component, including WCAG 2.2, Section 508, and keyboard navigation support.
+title: Accessibility in Blazor Gantt Chart | WCAG, ARIA | Syncfusion
+description: Learn how to implement accessibility in Syncfusion Blazor Gantt Chart with WCAG 2.2, ARIA labels, keyboard navigation, and Section 508 compliance.
+keywords: blazor gantt accessibility, wcag, aria, section 508, keyboard navigation, screen reader, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/accessibility
 platform: gantt-sdk
-control: Gantt Chart
+control: Accessibility - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Accessibility in Blazor Gantt Chart Component
+# Accessibility and ARIA Compliance in Blazor Gantt Chart
 
 The [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) component adheres to accessibility guidelines, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/), and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) standards, ensuring compatibility with assistive technologies, including those relying on assistive technologies.
 
