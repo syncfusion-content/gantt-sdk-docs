@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Workflow in Blazor Kanban Component | Syncfusion®
-description: Checkout and learn here all about workflow in Blazor Kanban component and much more details.
+description: Checkout and learn here all about workflow in Blazor Kanban component and much more details, features, customization, integration, best practices.
 platform: gantt-sdk
 control: Kanban
 documentation: ug
