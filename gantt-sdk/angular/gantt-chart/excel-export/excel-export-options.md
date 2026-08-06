@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Excel Export Options in Angular Gantt Chart | Syncfusion
-description: Learn how to configure Excel export options in Syncfusion Angular Gantt Chart with column selection, custom data sources, filters, headers, footers, and file naming.
+description: Learn how to configure Excel export options in Syncfusion Angular Gantt Chart with column selection and custom data sources.
 keywords: angular gantt excel export options, excelexportproperties, custom export, selected records, multiple gantt, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/excel-export/excel-export-options
 platform: gantt-sdk

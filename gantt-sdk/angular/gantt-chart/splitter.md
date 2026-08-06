@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Splitter in Angular Gantt Chart | Panel Resizing | Syncfusion
-description: Learn how to configure the splitter in Syncfusion Angular Gantt Chart to resize TreeGrid and chart panels with pixel or percentage positioning for flexible layouts.
+description: Learn how to configure the splitter to resize TreeGrid and chart panels with flexible pixel or percentage positioning.
 keywords: angular gantt splitter, splittersettings, panel resizing, treegrid pane, chart pane, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/splitter
 platform: gantt-sdk

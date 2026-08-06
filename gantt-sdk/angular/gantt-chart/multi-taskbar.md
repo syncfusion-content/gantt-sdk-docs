@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Resource Multi Taskbar in Angular Gantt Chart | Syncfusion
-description: Learn how to visualize multiple tasks per resource in Syncfusion Angular Gantt Chart using resource multi taskbar in resource view to show workloads and overallocation.
+description: Learn how to visualize multiple tasks per resource using resource multi taskbar to show workloads.
 keywords: angular gantt multi taskbar, resource view, enablemultitaskbar, workload, overallocation, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/multi-taskbar
 platform: gantt-sdk

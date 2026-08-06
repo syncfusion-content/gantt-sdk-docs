@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Row Spanning in Angular Gantt Chart | Merge Cells | Syncfusion
-description: Learn how to span rows in Syncfusion Angular Gantt Chart with rowSpan attribute in queryCellInfo event to merge cells across rows for shared information display.
+description: Learn how to span rows in Syncfusion Angular Gantt Chart with rowSpan attribute to merge cells across rows.
 keywords: angular gantt row spanning, rowspan, querycellinfo, merge cells, shared info, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/rows/row-spanning
 platform: gantt-sdk

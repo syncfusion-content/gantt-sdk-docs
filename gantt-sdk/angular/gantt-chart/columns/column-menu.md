@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Column Menu in Angular Gantt Chart | Sort & Filter | Syncfusion
-description: Learn how to enable column menu in Syncfusion Angular Gantt Chart with built-in actions like sorting, filtering, column chooser, and autofit for better data interaction.
+description: Learn how to enable column menu in Syncfusion Angular Gantt Chart with sorting, filtering, column chooser, and autofit.
 keywords: angular gantt column menu, showcolumnmenu, sort filter, column chooser, autofit, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/columns/column-menu
 platform: gantt-sdk

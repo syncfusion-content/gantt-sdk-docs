@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Performance Tips for Angular Gantt Chart | Optimization | Syncfusion
-description: Learn how to optimize Syncfusion Angular Gantt Chart performance with virtual scrolling, immutable mode, lazy loading, and best practices for large task datasets.
+description: Learn how to optimize performance with virtual scrolling, immutable mode, lazy loading, and best practices.
 keywords: angular gantt performance, virtual scrolling, lazy loading, optimization tips, large datasets, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/performance
 platform: gantt-sdk

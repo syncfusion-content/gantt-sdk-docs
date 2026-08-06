@@ -1,16 +1,14 @@
 ---
 layout: post
-title: Task Scheduling Modes in Angular Gantt Chart | Syncfusion
-description: Learn how to use automatic, manual, and custom task scheduling modes in Syncfusion Angular Gantt Chart with taskMode property to control date validation and updates.
-keywords: angular gantt task scheduling, auto scheduling, manual scheduling, taskmode, duration units, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/task-scheduling
+title: Task Scheduling in Angular Gantt Chart Component | Syncfusion
+description: Learn here all about task scheduling in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Task Scheduling - Gantt Chart
+control: Task scheduling 
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Task Scheduling Modes with Auto and Manual in Angular Gantt Chart
+# Task Scheduling in Angular Gantt Chart Component
 
 The Gantt provides support for automatic and manual task scheduling modes. It is used to indicate whether the start date and end date of all the tasks will be automatically validated or not. [taskMode](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskmode) is the property used to change the schedule mode of a task.
 

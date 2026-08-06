@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WBS Column in Angular Gantt Chart | Work Breakdown | Syncfusion
-description: Learn how to integrate WBS codes in Syncfusion Angular Gantt Chart to assign unique hierarchical identifiers to tasks for improved project tracking and visualization.
+description: Learn how to integrate WBS codes in Syncfusion Angular Gantt Chart to assign hierarchical identifiers to tasks.
 keywords: angular gantt wbs column, work breakdown structure, wbs code, task hierarchy, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/columns/wbs-column
 platform: gantt-sdk

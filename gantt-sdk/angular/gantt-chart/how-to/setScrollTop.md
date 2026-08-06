@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set Vertical Scroll Position in Angular Gantt Chart | Syncfusion
-description: Learn how to programmatically set vertical scroll position in Syncfusion Angular Gantt Chart using setScrollTop method to navigate efficiently in large project datasets.
+description: Learn how to set vertical scroll position in Syncfusion Angular Gantt Chart using setScrollTop method.
 keywords: angular gantt setscrolltop, vertical scroll, scroll position, navigation, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/how-to/setScrollTop
 platform: gantt-sdk

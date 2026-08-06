@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PDF Headers and Footers in Angular Gantt Chart | Syncfusion
-description: Learn how to customize PDF export headers and footers in Syncfusion Angular Gantt Chart with text, lines, page numbers, and images for professional documentation.
+description: Learn how to customize PDF export headers and footers in Syncfusion Angular Gantt Chart with text and images.
 keywords: angular gantt pdf header footer, pdfexportproperties, pdfheader, pdffooter, page numbers, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/pdf-export/header-and-footer
 platform: gantt-sdk

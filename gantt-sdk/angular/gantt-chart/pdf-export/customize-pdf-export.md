@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize PDF Export in Angular Gantt Chart | Syncfusion
-description: Learn how to customize PDF export in Syncfusion Angular Gantt Chart with file names, page orientation, headers, footers, timelines, and templates via pdfExportProperties.
+description: Learn how to customize PDF export in Syncfusion Angular Gantt Chart with file names, orientation, headers and footers.
 keywords: angular gantt customize pdf export, pdfexportproperties, beforepdfexport, pdfquerytaskbarinfo, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/pdf-export/customize-pdf-export
 platform: gantt-sdk

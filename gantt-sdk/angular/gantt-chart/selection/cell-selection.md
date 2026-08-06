@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cell Selection in Angular Gantt Chart | Multi-Select | Syncfusion
-description: Learn how to enable cell selection in Syncfusion Angular Gantt Chart with single, multiple, and external selection using API methods and events for cell operations.
+description: Learn how to enable cell selection in Syncfusion Angular Gantt Chart with single, multiple, and external selection.
 keywords: angular gantt cell selection, single cell, multiple cells, cellselect, external selection, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/selection/cell-selection
 platform: gantt-sdk

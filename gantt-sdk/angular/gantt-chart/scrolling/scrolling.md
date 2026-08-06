@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scrolling in Angular Gantt Chart | Viewport | Syncfusion
-description: Learn how to enable smooth scrolling in Syncfusion Angular Gantt Chart across rows, columns, and timeline with ARIA labels and virtual scrolling for large datasets.
+description: Learn how to enable smooth scrolling in Syncfusion Angular Gantt Chart across rows, columns, and timeline.
 keywords: angular gantt scrolling, scroll, vertical scroll, horizontal scroll, virtual scroll, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/scrolling/scrolling
 platform: gantt-sdk

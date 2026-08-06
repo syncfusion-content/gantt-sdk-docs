@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Adding New Tasks in Angular Gantt Chart | Syncfusion
-description: Learn how to add new tasks dynamically in Syncfusion Angular Gantt Chart using toolbar, context menu, or addRecord method to insert milestones, subtasks, and more.
+description: Learn how to add new tasks dynamically in Syncfusion Angular Gantt Chart using toolbar, context menu, or addRecord.
 keywords: angular gantt adding new tasks, allowadding, addrecord, add dialog, new task, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/managing-tasks/adding-new-tasks
 platform: gantt-sdk

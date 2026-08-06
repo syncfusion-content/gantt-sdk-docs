@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Baseline in Angular Gantt Chart | Planned vs Actual | Syncfusion
-description: Learn how to compare planned versus actual project timelines in Syncfusion Angular Gantt Chart using baseline support to track schedule deviations and performance.
+description: Learn how to compare planned versus actual project timelines using baseline support to track schedule deviations.
 keywords: angular gantt baseline, planned schedule, actual schedule, baseline date, project tracking, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/baseline
 platform: gantt-sdk

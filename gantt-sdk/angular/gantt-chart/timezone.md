@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Timezone in Angular Gantt Chart | Global Scheduling | Syncfusion
-description: Learn how to configure timezones in Syncfusion Angular Gantt Chart for consistent task scheduling, CRUD operations, and global team coordination using IANA timezones.
+description: Learn how to configure timezones in Syncfusion Angular Gantt Chart for consistent task scheduling and global team coordination.
 keywords: angular gantt timezone, iana timezone, global teams, time conversion, scheduling, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/timezone
 platform: gantt-sdk

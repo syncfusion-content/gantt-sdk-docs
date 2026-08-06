@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Style and Appearance in Angular Gantt Chart | CSS | Syncfusion
-description: Learn how to customize Syncfusion Angular Gantt Chart style and appearance with CSS overrides, grid lines, theme studio, and queryTaskbarInfo for custom styling.
+description: Learn how to customize style and appearance with CSS overrides, grid lines, and theme customization options.
 keywords: angular gantt styling, css customization, theme, grid lines, querytaskbarinfo, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/style-and-appearance
 platform: gantt-sdk

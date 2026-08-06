@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Open Add and Edit Dialogs in Angular Gantt Chart | Syncfusion
-description: Learn how to open add and edit dialogs programmatically in Syncfusion Angular Gantt Chart using openAddDialog and openEditDialog methods for task management workflows.
+description: Learn how to open add and edit dialogs programmatically in Syncfusion Angular Gantt Chart using dialog methods.
 keywords: angular gantt open add edit dialog, openadddialog, openeditdialog, dialog methods, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/how-to/open-add-edit-dialog
 platform: gantt-sdk

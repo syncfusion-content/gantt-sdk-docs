@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Resources in Angular Gantt Chart | Allocation | Syncfusion
-description: Learn how to configure resources in Syncfusion Angular Gantt Chart for task allocation, utilization tracking, and visual mapping using resourceFields and labels.
+description: Learn how to configure resources for task allocation, utilization tracking, and visual mapping using resourceFields.
 keywords: angular gantt resources, resource allocation, resourcefields, task assignment, utilization, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/resources
 platform: gantt-sdk
@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Resources with Allocation and Task Mapping in Angular Gantt Chart
 
-Resources in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component represent people, equipment, or materials allocated to tasks, visualized in taskbars and labels for clear utilization tracking. Assigned via the [resources](https://ej2.syncfusion.com/angular/documentation/api/gantt#resources) property, resources map to tasks using [resourceFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#resourcefields) for ID, name, unit, and group. This enables display of resource names in columns or labels with [labelSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/labelSettings/), highlighting workloads and overallocation. The [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querytaskbarinfo) event customizes taskbar styles based on resources, such as color-coding. Resources include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may truncate names for multiple assignments. By default, resources allocate 100% unit if unspecified.
+Resources in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component represent people, equipment, or materials allocated to tasks, visualized in taskbars and labels for clear utilization tracking. Assigned via the [resources](https://ej2.syncfusion.com/angular/documentation/api/gantt#resources) property, resources map to tasks using [resourceFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#resourcefields) for ID, name, unit, and group. This enables display of resource names in columns or labels with [labelSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/labelSettings), highlighting workloads and overallocation. The [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querytaskbarinfo) event customizes taskbar styles based on resources, such as color-coding. Resources include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may truncate names for multiple assignments. By default, resources allocate 100% unit if unspecified.
 
 ## Configure resource collection
 

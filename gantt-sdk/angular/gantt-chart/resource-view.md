@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Resource View in Angular Gantt Chart | Hierarchical View | Syncfusion
-description: Learn how to configure resource view in Syncfusion Angular Gantt Chart to visualize tasks hierarchically by resource, showing allocation and workload in timeline.
+description: Learn how to configure resource view to visualize tasks hierarchically by resource with allocation and workload.
 keywords: angular gantt resource view, viewtype, resource hierarchy, workload, allocation, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/resource-view
 platform: gantt-sdk

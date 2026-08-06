@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Managing Tasks in Angular Gantt Chart | CRUD | Syncfusion
-description: Learn how to manage tasks in Syncfusion Angular Gantt Chart with add, edit, delete operations, dialog customization, and editSettings for dynamic project updates.
+description: Learn how to manage tasks in Syncfusion Angular Gantt Chart with add, edit, delete operations and dialog customization.
 keywords: angular gantt managing tasks, allowediting, addrecord, deleterecord, updaterecordbyid, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/managing-tasks/managing-tasks
 platform: gantt-sdk

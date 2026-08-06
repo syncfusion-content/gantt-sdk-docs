@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rows in Angular Gantt Chart | Row Display | Syncfusion
-description: Learn how to customize rows in Syncfusion Angular Gantt Chart with row height, styles, and interactions to display task data in tabular and timeline chart formats.
+description: Learn how to customize rows in Syncfusion Angular Gantt Chart with height, styles, and interactions.
 keywords: angular gantt rows, row height, row style, row interaction, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/rows/rows
 platform: gantt-sdk

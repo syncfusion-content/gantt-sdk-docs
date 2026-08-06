@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PDF Export in Angular Gantt Chart | Document Export | Syncfusion
-description: Learn how to export Syncfusion Angular Gantt Chart to PDF with indicators, blob objects, single-page, multi-instance, and theme options for sharing and archiving.
+description: Learn how to export Syncfusion Angular Gantt Chart to PDF with blob objects, single-page, and multi-instance options.
 keywords: angular gantt pdf export, pdfexport, allowpdfexport, single page, blob, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/pdf-export/pdf-export
 platform: gantt-sdk

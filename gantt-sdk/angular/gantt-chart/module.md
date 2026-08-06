@@ -150,5 +150,5 @@ For detailed tree-shaking implementation, refer to the [Syncfusion Angular Tree 
 
 - [Event Markers](https://ej2.syncfusion.com/angular/documentation/gantt/eventmarkers)
 - [Virtual Scrolling](https://ej2.syncfusion.com/angular/documentation/gantt/scrolling/virtual-scrolling)
-- [Editing Tasks](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/editing-task)
+- [Editing Tasks](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/editing-tasks)
 - [Overview](https://ej2.syncfusion.com/angular/documentation/gantt/overview)

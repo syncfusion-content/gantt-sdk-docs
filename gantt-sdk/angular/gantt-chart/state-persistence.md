@@ -1,7 +1,7 @@
 ---
 layout: post
 title: State Persistence in Angular Gantt Chart | LocalStorage | Syncfusion
-description: Learn how to enable state persistence in Syncfusion Angular Gantt Chart to retain configuration and data after browser refresh using localStorage and enablePersistence.
+description: Learn how to enable state persistence to retain configuration and data after browser refresh using localStorage.
 keywords: angular gantt state persistence, enablepersistence, localstorage, browser refresh, save state, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/state-persistence
 platform: gantt-sdk

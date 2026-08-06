@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Taskbar Customization in Angular Gantt Chart | Syncfusion
-description: Learn how to customize taskbars in Syncfusion Angular Gantt Chart with height, templates, tooltips, drag-resize editing, and multi-taskbar support for project management.
+description: Learn how to customize taskbars with height, templates, tooltips, drag-resize editing, and multi-taskbar support.
 keywords: angular gantt taskbar, taskbar customization, taskbar height, taskbar template, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/taskbar
 platform: gantt-sdk

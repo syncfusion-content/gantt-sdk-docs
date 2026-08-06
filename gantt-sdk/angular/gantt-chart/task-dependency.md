@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Task Dependency in Angular Gantt Chart | FS, SS, FF, SF | Syncfusion
-description: Learn how to configure task dependencies in Syncfusion Angular Gantt Chart with Finish-to-Start, Start-to-Start, and other relations, offsets, and validation modes.
+description: Learn how to configure task dependencies with Finish-to-Start, Start-to-Start, and other relation types.
 keywords: angular gantt task dependency, fs, ss, ff, sf, predecessor, offset, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/task-dependency
 platform: gantt-sdk

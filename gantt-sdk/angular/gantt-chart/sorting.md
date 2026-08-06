@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sorting in Angular Gantt Chart | Multi-Sort | Syncfusion
-description: Learn how to enable sorting in Syncfusion Angular Gantt Chart to arrange task data in ascending or descending order across one or multiple columns with sortSettings.
+description: Learn how to enable sorting to arrange task data in ascending or descending order across multiple columns.
 keywords: angular gantt sorting, allowsorting, sortsettings, multi-column sort, ascending, descending, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/sorting
 platform: gantt-sdk

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Immutable Mode in Angular Gantt Chart | Performance | Syncfusion
-description: Learn how to enable immutable mode in Syncfusion Angular Gantt Chart for optimized rendering, fewer DOM operations, and smooth performance with large task datasets.
+description: Learn how to enable immutable mode for optimized rendering and smooth performance with large task datasets.
 keywords: angular gantt immutable mode, enableimmutablemode, performance optimization, large datasets, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/immutable
 platform: gantt-sdk

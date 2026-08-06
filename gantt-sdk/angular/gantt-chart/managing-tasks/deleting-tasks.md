@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Deleting Tasks in Angular Gantt Chart | Syncfusion
-description: Learn how to delete tasks in Syncfusion Angular Gantt Chart using toolbar or deleterecord method with confirmation dialogs to streamline project management workflows.
+description: Learn how to delete tasks in Syncfusion Angular Gantt Chart using toolbar or deleterecord method with dialogs.
 keywords: angular gantt deleting tasks, allowdeleting, deleterecord, showdeleteconfirmdialog, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/managing-tasks/deleting-tasks
 platform: gantt-sdk

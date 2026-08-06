@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Column Rendering in Angular Gantt Chart | Syncfusion
-description: Learn how to configure column rendering in Syncfusion Angular Gantt Chart with field mapping, complex data binding, and template-based actions for schema definition.
+description: Learn how to configure column rendering in Syncfusion Angular Gantt Chart with field mapping and complex data binding.
 keywords: angular gantt column rendering, column field, data binding, column schema, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/columns/column-rendering
 platform: gantt-sdk
