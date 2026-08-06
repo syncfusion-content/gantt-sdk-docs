@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Swimlane in Blazor Kanban Component | Syncfusion®
-description: Checkout and learn here all about swimlane in Blazor Kanban component and much more details.
+description: Checkout and learn here all about swimlane in Blazor Kanban component and much more details with configuration options, examples, and best practices.
 platform: gantt-sdk
 control: Kanban
 documentation: ug
@@ -13,7 +13,7 @@ Swimlanes are horizontal categorizations of cards on the [Blazor Kanban Board](h
 
 ## Render swimlane row
 
-Cards can be grouped into swimlane rows based on the `KeyField`, with each row representing a unique value from the data source. To render swimlane rows, the [KeyField](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.SfKanban-1.html#Syncfusion_Blazor_Kanban_SfKanban_1_KeyField) must be mapped to a corresponding field in the data source.
+Cards can be grouped into swimlane rows based on the [KeyField](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.SfKanban-1.html#Syncfusion_Blazor_Kanban_SfKanban_1_KeyField), with each row representing a unique value from the data source. To render swimlane rows, the `KeyField` must be mapped to a corresponding field in the data source.
 
 ```cshtml
 
@@ -33,11 +33,11 @@ Cards can be grouped into swimlane rows based on the `KeyField`, with each row r
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()
@@ -101,12 +101,12 @@ N> It is not mandatory to define the `TextField` to `KanbanSwimlaneSettings`. It
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
-        public string AssigneeName { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
+        public string? AssigneeName { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()
@@ -145,9 +145,9 @@ N> It is not mandatory to define the `TextField` to `KanbanSwimlaneSettings`. It
 
 ## Template
 
-You can customize the Kanban swimlane row by using `Template`, which is specified within the [KanbanSwimlaneSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.SfKanban-1.html#Syncfusion_Blazor_Kanban_SfKanban_1_SwimlaneSettings) property. This example demonstrates how to customize the swimlane header using an HTML template.
+Customize the Kanban swimlane row by using `Template`, which is specified within the [KanbanSwimlaneSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.SfKanban-1.html#Syncfusion_Blazor_Kanban_SfKanban_1_SwimlaneSettings) property. This example demonstrates how to customize the swimlane header using an HTML template.
 
-To get started quickly with Blazor Kanban component using Templates, you can check on this video.
+Get started quickly with the Blazor Kanban component using Templates by watching this video.
 
 {% youtube
 "youtube:https://www.youtube.com/watch?v=PjTgXuibei8" %}
@@ -203,12 +203,12 @@ To get started quickly with Blazor Kanban component using Templates, you can che
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
-        public string AssigneeName { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
+        public string? AssigneeName { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()
@@ -270,12 +270,12 @@ N> If the [TextField](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Ka
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
-        public string AssigneeName { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
+        public string? AssigneeName { get; set; }
     }
 
 
@@ -297,9 +297,9 @@ N> If the [TextField](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Ka
 
 The Blazor Kanban component allows custom sorting of swimlane rows by handling the [SwimlaneSorting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.KanbanEvents-1.html#Syncfusion_Blazor_Kanban_KanbanEvents_1_SwimlaneSorting) event.
 
-In this event, you can get the argument of SwimlaneRows which contains the list of SwimlaneSettingsModel and it will align based on the SortDirection property. You can change the List of SwimlaneSettingsModel as per your wish and assign the changed list to it.
+The SwimlaneRows argument, which contains a list of SwimlaneSettingsModel objects, is available in this event and is aligned based on the SortDirection property. The list can be modified as needed and then reassigned to apply the changes.
 
-N> When you refresh the page, the [SwimlaneSorting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.KanbanEvents-1.html#Syncfusion_Blazor_Kanban_KanbanEvents_1_SwimlaneSorting) event will be triggered before Kanban elements append to the DOM element.
+N> The [SwimlaneSorting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.KanbanEvents-1.html#Syncfusion_Blazor_Kanban_KanbanEvents_1_SwimlaneSorting) event is triggered when the page is refreshed, before the Kanban elements are appended to the DOM.
 
 In the following code, changed the order of the swimlane rows at positions 2, 0, 1, 3 and assigned to the argument of [SwimlaneRows](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.SwimlaneSortEventArgs.html#Syncfusion_Blazor_Kanban_SwimlaneSortEventArgs_SwimlaneRows).
 
@@ -321,12 +321,12 @@ In the following code, changed the order of the swimlane rows at positions 2, 0,
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
-        public string AssigneeName { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
+        public string? AssigneeName { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()
@@ -378,11 +378,11 @@ In the following example, the `ShowItemCount` property is disabled to render swi
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()
@@ -423,9 +423,9 @@ In the following example, the `ShowItemCount` property is disabled to render swi
 
 ## Enable frozen rows
 
-Frozen rows provide an option to make the current swimlane row header text always visible on top of the content while scrolling the Kanban content. The swimlane header text will be changed dynamically, when you scroll to another swimlane row.
+Frozen rows provide an option to keep the current swimlane header visible at the top of the Kanban content while scrolling. The swimlane header text is updated dynamically when scrolling to a different swimlane row.
 
-By default, the `EnableFrozenRows` property is set as `false`. If you wish to show the swimlane frozen rows, you can enable the `EnableFrozenRows` property.
+By default, the `EnableFrozenRows` property is set as `false`. To display frozen swimlane rows, enable the `EnableFrozenRows` property.
 
 N> Note: This feature is supported only when Kanban content scrolling is enabled. The expand/collapse swimlane icon is not functional in frozen rows.
 
@@ -447,11 +447,11 @@ N> Note: This feature is supported only when Kanban content scrolling is enabled
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()
