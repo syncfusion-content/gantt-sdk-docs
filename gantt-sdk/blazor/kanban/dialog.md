@@ -53,11 +53,11 @@ KanbanSwimlaneSettings.KeyField (If applicable) | DropDown | -
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()
@@ -131,12 +131,12 @@ N> Each of the above types can be used once per custom dialog. The dialog templa
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
-        public string AssigneeName { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
+        public string? AssigneeName { get; set; }
     }
 
 
@@ -255,15 +255,15 @@ The dialog template allows custom form fields to be rendered within the dialog b
     private class DropDownModel
     {
         public int Id { get; set; }
-        public string Value { get; set; }
+        public string? Value { get; set; }
     }
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()
@@ -324,11 +324,11 @@ The Kanban component allows preventing the dialog from opening on card double-cl
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()
@@ -378,7 +378,7 @@ The following section explains how to retrieve edited card data on the server-si
 
 ### Using URL Adaptor for Server-Side CRUD Operations
 
-Use the [UrlAdaptor](https://blazor.syncfusion.com/documentation/data/adaptors#url-adaptor) of `SfDataManager` when binding data source for remote data. During the initial load of Kanban, data are fetched from remote data and bound to the Kanban using the [Url](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_Url) property of `SfDataManager`.
+Use the `UrlAdaptor` of `SfDataManager` when binding data source for remote data. During the initial load of Kanban, data are fetched from remote data and bound to the Kanban using the [Url](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_Url) property of `SfDataManager`.
 
 CRUD operations in Kanban can be mapped to server-side controller actions by using the properties [InsertUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_InsertUrl), [RemoveUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_RemoveUrl), [UpdateUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_UpdateUrl), and [CrudUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_CrudUrl).
 
@@ -446,11 +446,11 @@ namespace Blazor_Kanban_Crud_UrlAdaptor.Controllers
         {
 
             [JsonProperty("action")]
-            public string Action { get; set; }
+            public string? Action { get; set; }
             [JsonProperty("table")]
-            public string Table { get; set; }
+            public string? Table { get; set; }
             [JsonProperty("keyColumn")]
-            public string KeyColumn { get; set; }
+            public string? KeyColumn { get; set; }
             [JsonProperty("key")]
             public object Key { get; set; }
             [JsonProperty("value")]
@@ -471,7 +471,7 @@ namespace Blazor_Kanban_Crud_UrlAdaptor.Controllers
 
 ### Inserting a card
 
-Using the [InsertUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_InsertUrl) property, the controller action mapping URL can be specified to perform the insert operation on the server side.
+Using the `InsertUrl` property, the controller action mapping URL can be specified to perform the insert operation on the server side.
 
 ```cshtml
         [HttpPost]
@@ -486,7 +486,7 @@ The newly added card data is available in the `value` parameter.
 
 ### Updating a card
 
-Using the [UpdateUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_UpdateUrl) property, the controller action mapping URL can be specified to perform save/update operation on the server-side.
+Using the `UpdateUrl` property, the controller action mapping URL can be specified to perform save/update operation on the server-side.
 
 
 ```cshtml
@@ -502,7 +502,7 @@ The updated card data is available in the `value` parameter.
 
 ### Deleting a card
 
-Using the [RemoveUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_RemoveUrl) property, the controller action mapping URL can be specified to perform a delete operation on the server-side.
+Using the `RemoveUrl` property, the controller action mapping URL can be specified to perform a delete operation on the server-side.
 
 ```cshtml
         [HttpPost]
@@ -517,7 +517,7 @@ The primary key of the card to be deleted is available in the `Key` parameter.
 
 ### Performing Bulk updates
 
-Using the [CrudUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_CrudUrl) property, the controller action mapping URL can be specified to perform all the CRUD operations at the server-side using a single method instead of specifying a separate controller action method for CRUD (insert, update, and delete) operations.
+Using the `CrudUrl` property, the controller action mapping URL can be specified to perform all the CRUD operations at the server-side using a single method instead of specifying a separate controller action method for CRUD (insert, update, and delete) operations.
 
 The `action` parameter of `CrudUrl` identifies the corresponding CRUD operation.
 
@@ -608,11 +608,11 @@ namespace Blazor_Kanban_Crud_UrlAdaptor.Controllers
         {
 
             [JsonProperty("action")]
-            public string Action { get; set; }
+            public string? Action { get; set; }
             [JsonProperty("table")]
-            public string Table { get; set; }
+            public string? Table { get; set; }
             [JsonProperty("keyColumn")]
-            public string KeyColumn { get; set; }
+            public string? KeyColumn { get; set; }
             [JsonProperty("key")]
             public object Key { get; set; }
             [JsonProperty("value")]

@@ -33,11 +33,11 @@ Cards can be grouped into swimlane rows based on the [KeyField](https://help.syn
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()
@@ -101,12 +101,12 @@ N> It is not mandatory to define the `TextField` to `KanbanSwimlaneSettings`. It
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
-        public string AssigneeName { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
+        public string? AssigneeName { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()
@@ -203,12 +203,12 @@ Get started quickly with the Blazor Kanban component using Templates by watching
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
-        public string AssigneeName { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
+        public string? AssigneeName { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()
@@ -270,12 +270,12 @@ N> If the [TextField](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Ka
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
-        public string AssigneeName { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
+        public string? AssigneeName { get; set; }
     }
 
 
@@ -321,12 +321,12 @@ In the following code, changed the order of the swimlane rows at positions 2, 0,
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
-        public string AssigneeName { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
+        public string? AssigneeName { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()
@@ -378,11 +378,11 @@ In the following example, the `ShowItemCount` property is disabled to render swi
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()
@@ -447,11 +447,11 @@ N> Note: This feature is supported only when Kanban content scrolling is enabled
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()

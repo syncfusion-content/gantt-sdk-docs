@@ -7,23 +7,23 @@ namespace Blazor.Data
     public class HospitalData
     {
         public int Id { get; set; }
-        public string Subject { get; set; }
-        public string Location { get; set; }
-        public string Description { get; set; }
+        public string? Subject { get; set; }
+        public string? Location { get; set; }
+        public string? Description { get; set; }
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
         public Nullable<bool> IsAllDay { get; set; }
-        public string CategoryColor { get; set; }
-        public string RecurrenceRule { get; set; }
+        public string? CategoryColor { get; set; }
+        public string? RecurrenceRule { get; set; }
         public Nullable<int> RecurrenceID { get; set; }
         public Nullable<int> FollowingID { get; set; }
-        public string RecurrenceException { get; set; }
-        public string StartTimezone { get; set; }
-        public string EndTimezone { get; set; }
-        public string Name { get; set; }
+        public string? RecurrenceException { get; set; }
+        public string? StartTimezone { get; set; }
+        public string? EndTimezone { get; set; }
+        public string? Name { get; set; }
         public int DepartmentID { get; set; }
         public int ConsultantID { get; set; }
-        public string DepartmentName { get; set; }
+        public string? DepartmentName { get; set; }
     }
 
     public class ScheduleData
@@ -218,27 +218,27 @@ namespace Blazor.Data
     }
     public class KanbanDataModel
     {
-        public string Id { get; set; }
+        public string? Id { get; set; }
         public int ListId { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Type { get; set; }
-        public string Priority { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Type { get; set; }
+        public string? Priority { get; set; }
         public List<string> CardTags { get; set; }
-        public string Tags { get; set; }
+        public string? Tags { get; set; }
         public double Estimate { get; set; }
-        public string Assignee { get; set; }
+        public string? Assignee { get; set; }
         public int RankId { get; set; }
-        public string Color { get; set; }
-        public string Value { get; set; }
-        public string OrderID { get; set; }
-        public string Size { get; set; }
-        public string ImageURL { get; set; }
-        public string Description { get; set; }
-        public string Category { get; set; }
-        public string Price { get; set; }
-        public string AssigneeKey { get; set; }
+        public string? Color { get; set; }
+        public string? Value { get; set; }
+        public string? OrderID { get; set; }
+        public string? Size { get; set; }
+        public string? ImageURL { get; set; }
+        public string? Description { get; set; }
+        public string? Category { get; set; }
+        public string? Price { get; set; }
+        public string? AssigneeKey { get; set; }
         public List<string> ClassName { get; set; }
 
         public List<KanbanDataModel> GetTasks()

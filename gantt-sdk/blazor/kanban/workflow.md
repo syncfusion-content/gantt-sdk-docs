@@ -32,11 +32,11 @@ Provides restriction on columns when performing drag and drop actions while prov
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()
@@ -81,11 +81,11 @@ In the following code, the `Backlog` column will not allow any card drop action 
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()
@@ -131,12 +131,12 @@ In the following code, the `Done` column will not allow any card drag action wit
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
-        public string AssigneeName { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
+        public string? AssigneeName { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()

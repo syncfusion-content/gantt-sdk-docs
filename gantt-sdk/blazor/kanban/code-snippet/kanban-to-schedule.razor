@@ -53,7 +53,7 @@
     SfSchedule<HospitalData> ScheduleRef;
     public List<HospitalData> DataSource = new ScheduleData().GetHospitalData();
     public List<HospitalData> TreeViewData = new ScheduleData().GetWaitingListData();
-    public string[] Resources = new string[] { "Departments", "Consultants" };
+    public string?[] Resources = new string[] { "Departments", "Consultants" };
     private List<string> DropTarget1 = new List<string> { "#Schedule1" };
     private List<ResourceData> Departments { get; set; } = new List<ResourceData> {
         new ResourceData { Text = "GENERAL", Id = 1, Color = "#bbdc00" },
@@ -69,17 +69,17 @@
     };
     public class ResourceData
     {
-        public string Text { get; set; }
+        public string? Text { get; set; }
         public int Id { get; set; }
         public int GroupId { get; set; }
-        public string Color { get; set; }
-        public string Designation { get; set; }
+        public string? Color { get; set; }
+        public string? Designation { get; set; }
     }
     public class MailItem
     {
-        public string Id { get; set; }
-        public string ParentId { get; set; }
-        public string FolderName { get; set; }
+        public string? Id { get; set; }
+        public string? ParentId { get; set; }
+        public string? FolderName { get; set; }
         public bool Expanded { get; set; }
         public bool HasSubFolders { get; set; }
     }
@@ -94,7 +94,7 @@
 
     public class KanbanColumnModel
     {
-        public string HeaderText { get; set; }
+        public string? HeaderText { get; set; }
         public List<string> KeyField { get; set; }
     }
     private async void OnCardDragStop1(Syncfusion.Blazor.Kanban.DragEventArgs<KanbanDataModel> args)

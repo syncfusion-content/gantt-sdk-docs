@@ -210,10 +210,10 @@ N> If the **Interactivity Location** is set to `Global` with `Auto` or `WebAssem
 @code {
     public class TasksModel
     {
-        public string? Id { get; set; }
-        public string? Title { get; set; }
-        public string? Status { get; set; }
-        public string? Summary { get; set; }
+        public string?? Id { get; set; }
+        public string?? Title { get; set; }
+        public string?? Status { get; set; }
+        public string?? Summary { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()

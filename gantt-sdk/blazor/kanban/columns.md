@@ -9,13 +9,13 @@ documentation: ug
 
 # Columns in Blazor Kanban Component
 
-The [Blazor Kanban Board](https://www.syncfusion.com/blazor-components/blazor-kanban-board) columns represent each stage of workflow process.Column definitions serve as the schema for the Kanban board's **DataSource**. The Operations such as drag-and-drop, swimlane grouping, and column toggling are driven by these column definitions.
+The [Blazor Kanban Board](https://www.syncfusion.com/blazor-components/blazor-kanban-board) columns represent each stage of workflow process. These column definitions act as the schema for the Kanban board [DataSource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.SfKanban-1.html#Syncfusion_Blazor_Kanban_SfKanban_1_DataSource) and drive operations such as drag-and-drop, swimlane grouping, and column toggling.
 
 ## Single-key mapping
 
 Columns are categorized by mapping the [KeyField](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.SfKanban-1.html#Syncfusion_Blazor_Kanban_SfKanban_1_KeyField) property to specific key values in the data source. The corresponding **value** in the datasource is mapped inside the columns `KeyField`. This categorization determines how cards are distributed across columns on the Kanban board.
 
-N> The [KeyField](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.SfKanban-1.html#Syncfusion_Blazor_Kanban_SfKanban_1_KeyField) property is required to render columns on the Kanban board.
+N> The `KeyField` property is required to render columns on the Kanban board.
 
 ```cshtml
 
@@ -34,11 +34,11 @@ N> The [KeyField](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()
@@ -79,7 +79,7 @@ N> The [KeyField](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban
 
 ## Multi-key mapping
 
-The Kanban board supports rendering a single column with multiple key mappings using the [KeyField](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.SfKanban-1.html#Syncfusion_Blazor_Kanban_SfKanban_1_KeyField) property.
+The Kanban board supports rendering a single column with multiple key mappings using the `KeyField` property.
 
 ```cshtml
 
@@ -98,11 +98,11 @@ The Kanban board supports rendering a single column with multiple key mappings u
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()
@@ -147,7 +147,7 @@ Use the [HeaderText](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kan
 
 ## Header template
 
-The column header can be customized using the Template property, as shown in the following code.
+The column header can be customized using the `Template` property, as shown in the following code.
 
 The following video demonstrates how to use templates in the Blazor Kanban component.
 
@@ -278,11 +278,11 @@ The following video demonstrates how to use templates in the Blazor Kanban compo
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()
@@ -344,11 +344,11 @@ N> By default, the collapsed column width is set to `50px`.
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()
@@ -412,11 +412,11 @@ In the following example, the Backlog column is collapsed on initialization of K
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()
@@ -457,7 +457,7 @@ In the following example, the Backlog column is collapsed on initialization of K
 
 ## Stacked headers
 
-Stacked headers are additional header rows that group related columns under a common category. Group columns by specifying their key values in the [KeyField](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.SfKanban-1.html#Syncfusion_Blazor_Kanban_SfKanban_1_KeyField) property and assign a custom header label using the `Text` property in [KanbanStackedHeaders](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.SfKanban-1.html#Syncfusion_Blazor_Kanban_SfKanban_1_StackedHeaders).
+Stacked headers are additional header rows that group related columns under a common category. Group columns by specifying their key values in the `KeyField` property and assign a custom header label using the `Text` property in [KanbanStackedHeaders](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.SfKanban-1.html#Syncfusion_Blazor_Kanban_SfKanban_1_StackedHeaders).
 
 In the following code, the kanban columns 'InProgress, Review' are grouped under 'Development Phase' category.
 
@@ -483,11 +483,11 @@ In the following code, the kanban columns 'InProgress, Review' are grouped under
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()

@@ -15,7 +15,7 @@ This section explains how to localize the [Blazor Kanban Board](https://www.sync
 
 ## Localizing Kanban Text
 
-The [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban-board) component supports localization, enabling built-in text strings to be translated into different languages To learn how to configure localization across all Blazor components, refer to the [Blazor Localization](https://blazor.syncfusion.com/documentation/common/localization) documentation.
+The `Kanban` component supports localization, enabling built-in text strings to be translated into different languages To learn how to configure localization across all Blazor components, refer to the [Blazor Localization](https://blazor.syncfusion.com/documentation/common/localization) documentation.
 
 ## Enabling Right-to-Left (RTL) Layout
 
@@ -39,11 +39,11 @@ To enable RTL mode in the Kanban component, set the [EnableRtl](https://help.syn
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
     }
 
     private List<TasksModel> Tasks = new List<TasksModel>()

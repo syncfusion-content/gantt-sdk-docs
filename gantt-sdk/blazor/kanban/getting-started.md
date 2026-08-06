@@ -187,10 +187,10 @@ Add the Blazor Kanban component in the **~/Pages/Home.razor** file.
 @code {
     public class TasksModel
     {
-        public string? Id { get; set; }
-        public string? Title { get; set; }
-        public string? Status { get; set; }
-        public string? Summary { get; set; }
+        public string?? Id { get; set; }
+        public string?? Title { get; set; }
+        public string?? Status { get; set; }
+        public string?? Summary { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()
