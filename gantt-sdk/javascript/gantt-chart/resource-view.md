@@ -11,13 +11,45 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Resource view in JavaScript Gantt Chart Control
 
-The resource view in the  JavaScript Gantt Chart control organizes tasks hierarchically by resource, displaying resources as parent nodes and their assigned tasks as child taskbars in a timeline. Enabled by setting [viewType](../api/gantt#viewtype) to **ResourceView**, this view visualizes workloads, such as multiple tasks per resource, with taskbars showing duration, progress, and dependencies. Unassigned tasks group under an **Unassigned Task** node. The [queryTaskbarInfo](../gantt/events#querytaskbarinfo) event customizes taskbar styles, and overallocation indicators highlight scheduling conflicts. Taskbars include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may truncate resource names. Parent tasks are not supported, and tasks require scheduling (start date and duration).
+The resource view in the JavaScript Gantt Chart control organizes tasks hierarchically by resource, displaying resources as parent nodes and their assigned tasks as child taskbars in a timeline. Enable it by setting [viewType](https://ej2.syncfusion.com/javascript/documentation/api/gantt#viewtype) to **ResourceView**. Resources are declared in the [resources](https://ej2.syncfusion.com/javascript/documentation/api/gantt#resources) collection and mapped through [resourceFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt#resourcefields) to identify the resource ID, name, unit, and group. Each task then references its assigned resources through [taskFields.resourceInfo](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#resourceinfo) in the task data source so resource-based grouping and workload visualization are applied automatically. Unassigned tasks are grouped under an **Unassigned Task** node, while the [queryTaskbarInfo](../gantt/events#querytaskbarinfo) event can customize taskbar styles and overallocation indicators can highlight scheduling conflicts. Taskbars include ARIA labels for accessibility, and the view adapts to responsive layouts, although narrow screens may truncate resource names. Parent tasks are not supported, and tasks require scheduling details such as a start date and duration.
 
 ## Configure resource view
 
-Enable resource view by setting [viewType](../api/gantt#viewtype) to **ResourceView** and mapping resources via [resources](../api/gantt#resources) and [resourceFields](../api/gantt#resourcefields). Tasks are assigned using [taskFields.resourceInfo](../api/gantt/taskFields#resourceinfo).
+Enable resource view by setting [viewType](https://ej2.syncfusion.com/javascript/documentation/api/gantt/index-default#viewtype) to **ResourceView** and mapping the resource collection with [resources](https://ej2.syncfusion.com/javascript/documentation/api/gantt#resources) and [resourceFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt#resourcefields). In the task data source, assign resources through [taskFields.resourceInfo](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#resourceinfo) by providing the resource IDs or resource objects that correspond to the mapped resource fields. The following snippet shows the data structure used for resource-based assignment:
 
-The following example configures resource view:
+```js
+var resources = [
+  {
+    resourceId: 1,
+    resourceName: "Martin Tamer",
+    resourceGroup: "Planning Team",
+    Unit: 50,
+  },
+  {
+    resourceId: 2,
+    resourceName: "Rose Fuller",
+    resourceGroup: "Testing Team",
+    Unit: 70,
+  },
+];
+
+var data = [
+  {
+    TaskID: 1,
+    TaskName: "Planning",
+    StartDate: new Date("03/25/2019"),
+    Duration: 3,
+    resources: [1],
+  },
+  {
+    TaskID: 2,
+    TaskName: "Development",
+    StartDate: new Date("03/28/2019"),
+    Duration: 5,
+    resources: [2],
+  },
+];
+```
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -50,7 +82,7 @@ This configuration groups tasks by resources, displaying them as child nodes.
 
 ## Visualize resource overallocation
 
-Overallocation occurs when tasks exceed a resource’s daily capacity, calculated from [dayWorkingTime](../api/gantt#dayworkingtime) and resource unit in [resourceFields.unit](../api/gantt/resourceFields#unit). Enable indicators with [showOverAllocation](../api/gantt#showoverallocation) set to **true** (default: **false**), highlighting affected date ranges with square brackets.
+Overallocation occurs when tasks exceed a resource’s daily capacity, calculated from [dayWorkingTime](https://ej2.syncfusion.com/javascript/documentation/api/gantt#dayworkingtime) and resource unit in [resourceFields.unit](https://ej2.syncfusion.com/javascript/documentation/api/gantt/resourceFields#unit). Enable indicators with [showOverAllocation](https://ej2.syncfusion.com/javascript/documentation/api/gantt#showoverallocation) set to **true** (default: **false**), highlighting affected date ranges with square brackets.
 
 The following example toggles overallocation visibility:
 
@@ -85,13 +117,13 @@ This configuration highlights scheduling conflicts for workload management.
 
 ## Manage unassigned tasks
 
-Tasks not assigned to any resource are termed unassigned tasks. These tasks are automatically grouped under a node labeled **Unassigned Task** and displayed at the bottom of the Gantt data collection. The system validates task assignments during load time based on the [taskFields.resourceInfo](../api/gantt/taskFields#resourceinfo) mapping property in the data source.
+Tasks not assigned to any resource are termed unassigned tasks. These tasks are automatically grouped under a node labeled **Unassigned Task** and displayed at the bottom of the Gantt data collection. The system validates task assignments during load time based on the [taskFields.resourceInfo](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#resourceinfo) mapping property in the data source.
 
 When a resource is subsequently assigned to an unassigned task, the task automatically moves to become a child of the respective resource node.
 
 ## Enable taskbar drag and drop
 
-Enable taskbar drag-and-drop between resources with [allowTaskbarDragAndDrop](../api/gantt#allowtaskbardraganddrop) set to **true**, requiring the `RowDD` module. This allows vertical taskbar movement for reassignment, triggered by the [rowDragStart](../gantt/events#rowdragstart) and [rowDrop](../gantt/events#rowdrop) events.
+Enable taskbar drag-and-drop between resources with [allowTaskbarDragAndDrop](https://ej2.syncfusion.com/javascript/documentation/api/gantt#allowtaskbardraganddrop) set to **true**, requiring the `RowDD` module. This allows vertical taskbar movement for reassignment, triggered by the [rowDragStart](../gantt/events#rowdragstart) and [rowDrop](../gantt/events#rowdrop) events.
 
 The following example enables drag-and-drop:
 
@@ -124,7 +156,7 @@ The following example enables drag-and-drop:
 
 ## Customize the taskbar based on resource view
 
-You can customize the taskbar appearance based on resource view using the [queryTaskbarInfo](../api/gantt/iQueryTaskbarInfoEventArgs) event.
+You can customize the taskbar appearance based on resource view using the [queryTaskbarInfo](https://ej2.syncfusion.com/javascript/documentation/api/gantt/iQueryTaskbarInfoEventArgs) event.
 
 {% if page.publishingplatform == "typescript" %}
 
