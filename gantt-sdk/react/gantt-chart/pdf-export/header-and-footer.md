@@ -1,14 +1,16 @@
 ---
 layout: post
-title: PDF Headers and Footers in React Gantt Chart | Syncfusion
-description: Learn how to customize headers and footers in PDF exports of the Syncfusion React Gantt Chart component with text, lines, page numbers, and images.
+title: PDF Header and Footer in React Gantt Chart | Syncfusion
+description: Learn how to add and customize headers and footers in PDF exports of Syncfusion React Gantt Chart with text, lines, page numbers, and images.
+keywords: react gantt pdf header footer, pdf export header, pdf export footer, page numbers, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/pdf-export/header-and-footer
 platform: gantt-sdk
-control: header and footer of PDF exporting
+control: PDF Header and Footer - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Header and Footer of PDF exporting in React Gantt Chart Component
+# Adding Custom Headers and Footers to PDF Exports in React Gantt Chart
 
 Customizing headers and footers in PDF exports of the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component allows adding text, lines, page numbers, and images to enhance document professionalism for projects. Use [PdfExportProperties](https://ej2.syncfusion.com/react/documentation/api/gantt/pdfExportProperties) with [header](https://ej2.syncfusion.com/react/documentation/api/gantt/pdfHeader) and [footer](https://ej2.syncfusion.com/react/documentation/api/gantt/pdfFooter) to define content arrays, specifying `type` (e.g., Text, Line), `value`, `position`, `style`, or `src` for images with `base64` encoding. Disable footers via [enableFooter](https://ej2.syncfusion.com/react/documentation/api/gantt/pdfExportProperties#enablefooter) set to **false**, ensuring tailored outputs with the `PdfExport` module injected and [allowPdfExport](https://ej2.syncfusion.com/react/documentation/api/gantt#allowpdfexport) enabled.
 

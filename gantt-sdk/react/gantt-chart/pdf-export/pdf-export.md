@@ -1,14 +1,16 @@
 ---
 layout: post
-title: PDF Export in React Gantt Chart Component | Syncfusion
-description: Learn how to export Gantt to PDF in Syncfusion React Gantt Chart component with indicators, blob objects, single-page, and theme options.
+title: PDF Export in React Gantt Chart | Syncfusion
+description: Learn how to export the Gantt chart to PDF in Syncfusion React Gantt Chart with indicators, blob objects, single-page, and theme options.
+keywords: react gantt pdf export, export to pdf, pdf download, gantt pdf, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/pdf-export/pdf-export
 platform: gantt-sdk
-control: PDF export
+control: PDF Export - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# PDF Export in React Gantt Chart Component
+# Exporting the Gantt Chart as a PDF Document in React Gantt Chart
 
 PDF export in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component enables exporting project data to PDF documents for sharing or archiving, using the [pdfExport](https://ej2.syncfusion.com/react/documentation/api/gantt#pdfexport) method with [allowPdfExport](https://ej2.syncfusion.com/react/documentation/api/gantt#allowpdfexport) set to **true** and `PdfExport` module injected. This feature supports exporting timelines, tasks, and dependencies, with options for indicators via `base64` images, blob objects for previews, single-page layouts, multiple Gantt instances in one file, and themes like Tailwind3 or Bootstrap. Focus on auto-scheduled tasks for accurate export, as manual scheduling is not currently supported.
 

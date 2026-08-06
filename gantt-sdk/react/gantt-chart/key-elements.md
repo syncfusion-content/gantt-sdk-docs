@@ -1,22 +1,23 @@
 ---
 layout: post
-title: Key Elements in Gantt UI for React Gantt control | Syncfusion
-description:  Checkout and learn about Key Elements in Gantt UI of React Gantt control of Syncfusion Essential JS 2 and more.
+title: Key Elements in React Gantt Chart UI | Syncfusion
+description: Learn about the key UI elements in Syncfusion React Gantt Chart including taskbars, timeline, TreeGrid, and splitter for project management.
+keywords: react gantt key elements, gantt ui components, taskbar, timeline, treegrid, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/key-elements
 platform: gantt-sdk
-control: Key Elements in Gantt UI
-publishingplatform: gantt-sdk
+control: Key Elements - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
 
-# Key Elements in Gantt UI
+# Key Elements of the React Gantt Chart UI
 
 This section explains the key elements of the Gantt Chart interface.
 
 The Gantt Chart component consists of two main sections: a `grid` and a `chart`, separated by a `splitter`. The grid is located on the left side of the Gantt Chart component, while the chart section is on the right side. You can adjust the view of the Gantt by moving the splitter left or right to display only the grid, only the chart, or both.
 
-At the top of Gantt chart, having a [toolbar](https://ej2.syncfusion.com/react/documentation/gantt/tool-bar) that allows you to peform **CRUD** operations on tasks.
+At the top of Gantt chart, having a [toolbar](https://ej2.syncfusion.com/react/documentation/gantt/tool-bar) that allows you to perform **CRUD** operations on tasks.
 
 ![Gantt chart](./images/gantt.png)
 
@@ -24,7 +25,7 @@ At the top of Gantt chart, having a [toolbar](https://ej2.syncfusion.com/react/d
 
 * In the tree grid section, the task details are presented in a tabular format.
 * You can expand or collapse a task by clicking on the expand/collapse icon near the parent task.
-* At the top of the tree grid section is the column header, which dispays the titles of different grid columns.
+* At the top of the tree grid section is the column header, which displays the titles of different grid columns.
 
 ![Grid](./images/tabular.png)
 

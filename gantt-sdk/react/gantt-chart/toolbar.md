@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Toolbar in React Gantt Chart Component | Syncfusion
-description: Learn here all about Toolbar in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Toolbar in React Gantt Chart | Syncfusion
+description: Learn how to configure the toolbar in Syncfusion React Gantt Chart with built-in and custom toolbar items for task and project management actions.
+keywords: react gantt toolbar, custom toolbar, built-in toolbar items, toolbar actions, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/toolbar
 platform: gantt-sdk
-control: Toolbar 
+control: Toolbar - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Toolbar in React Gantt Chart Component
+# Toolbar with Built-in and Custom Items in React Gantt Chart
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component includes built-in toolbar support for executing common actions such as editing, searching, and navigating the timeline. The [toolbar](https://ej2.syncfusion.com/react/documentation/api/gantt#toolbar) property accepts the collection of built-in toolbar items and `ItemModel` objects for custom toolbar items.
 

@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Adding New Tasks in React Gantt Chart Component | Syncfusion
-description: Learn how to add tasks dynamically in the Syncfusion React Gantt Chart component using toolbar, context menu, or programmatic methods for project management.
+title: Adding New Tasks in React Gantt Chart | Syncfusion
+description: Learn how to add tasks dynamically in Syncfusion React Gantt Chart using toolbar, context menu, or programmatic methods for project management.
+keywords: react gantt adding tasks, add new task, insert task, dynamic task addition, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/managing-tasks/adding-new-tasks
 platform: gantt-sdk
-control: Adding new tasks
+control: Adding New Tasks - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Adding New Tasks in React Gantt Chart Component
+# Dynamically Adding New Tasks in React Gantt Chart
 
 Adding new tasks to the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component enables flexible project management by inserting tasks like milestones or subtasks using the toolbar, context menu, or programmatic methods. With [editSettings.allowAdding](https://ej2.syncfusion.com/react/documentation/api/gantt/editSettings#allowadding) enabled and `Edit` injected, tasks can be added at the top, as children, or at specific positions, seamlessly integrating with dependencies and critical path calculations. Ensure task data aligns with [taskFields](https://ej2.syncfusion.com/react/documentation/api/gantt#taskfields) mappings (e.g., id, name, startDate) for successful addition, and verify parent rows support subtasks when adding child tasks. The toolbar opens a dialog for task details, the context menu provides positional options, and the [addRecord](https://ej2.syncfusion.com/react/documentation/api/gantt#addrecord) method offers precise control, making task creation efficient for dynamic project updates.
 

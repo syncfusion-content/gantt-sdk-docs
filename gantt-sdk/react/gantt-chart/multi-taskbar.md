@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Resource Multi Taskbar in React Gantt Chart Component | Syncfusion
-description: Learn how to configure the resource multi taskbar in the Syncfusion React Gantt Chart component to visualize multiple tasks per resource in resource view.
+title: Resource Multi Taskbar in React Gantt Chart | Syncfusion
+description: Learn how to configure resource multi taskbar in Syncfusion React Gantt Chart to visualize multiple tasks per resource in the resource view.
+keywords: react gantt multi taskbar, resource view, multiple tasks, resource allocation, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/multi-taskbar
 platform: gantt-sdk
-control: Resource multi taskbar
+control: Resource Multi Taskbar - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Resource Multi Taskbar in React Gantt Chart Component
+# Multi Taskbar with Resource Row Visualization in React Gantt Chart
 
 The resource multi taskbar feature in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component visualizes multiple tasks assigned to a single resource in one row when collapsed in resource view, enabled by setting [enableMultiTaskbar](https://ej2.syncfusion.com/react/documentation/api/gantt#enablemultitaskbar) to **true** and `viewType` to **ResourceView**. This displays workloads, such as concurrent tasks assigned to a resource, like coding activities, in a compact timeline, highlighting overallocation or scheduling conflicts. Taskbars maintain individual properties (e.g., duration, progress) and support editing in collapsed rows, with expand/collapse controlled via grid-side arrows for visual consistency. The feature requires valid [resourceInfo](https://ej2.syncfusion.com/react/documentation/api/gantt/taskFields#resourceinfo) mappings in `taskFields` to associate tasks with resources. Taskbars include ARIA labels for accessibility and adapt to responsive designs, though narrow screens may clip labels for short tasks. By default, `enableMultiTaskbar` is **false**, requiring explicit activation.
 

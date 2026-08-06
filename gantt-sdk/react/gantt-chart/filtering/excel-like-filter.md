@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Excel Like Filter in React Gantt Chart Component | Syncfusion
-description: Learn here all about excel like filter in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Excel-like Filter in React Gantt Chart | Syncfusion
+description: Learn how to enable Excel-like filter in Syncfusion React Gantt Chart for checkbox-based multi-value filtering with search support.
+keywords: react gantt excel like filter, checkbox filter, multi-value filter, search filter, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/filtering/excel-like-filter
 platform: gantt-sdk
-control: Excel like filter 
+control: Excel-like Filter - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Excel-like Filtering in React Gantt Chart Component
+# Checkbox-Based Excel-Like Filtering in React Gantt Chart
 
 The Excel-like filter in [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component enables column-level filtering similar to Microsoft Excel. It supports sorting, clearing filters, and applying advanced conditions through a submenu available in each column header. This feature is highly effective for working with large datasets and applying multiple filter criteria.
 

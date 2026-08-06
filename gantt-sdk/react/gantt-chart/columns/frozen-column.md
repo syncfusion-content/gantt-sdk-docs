@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Column Pinning (Frozen) in React Gantt Chart Component | Syncfusion
-description: Learn here all about Column pinning (Frozen) in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Frozen Columns in React Gantt Chart | Syncfusion
+description: Learn how to freeze and pin columns in Syncfusion React Gantt Chart to keep key task fields visible while scrolling horizontally.
+keywords: react gantt frozen columns, column pinning, freeze columns, sticky columns, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/columns/frozen-column
 platform: gantt-sdk
-control: Column pinning (Frozen) 
+control: Frozen Columns - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Column Pinning (Frozen) in React Gantt Chart Component
+# Freezing and Pinning Columns for Fixed Visibility in React Gantt Chart
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component provides a frozen columns feature that keeps selected columns fixed while scrolling horizontally through large datasets. This functionality ensures that critical information remains visible at all times, improving readability and user experience. By maintaining key columns in view, it simplifies navigation and makes referencing important data points easier when working with extensive project details.
 

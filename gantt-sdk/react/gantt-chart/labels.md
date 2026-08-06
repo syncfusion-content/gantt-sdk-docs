@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Task Labels in React Gantt Chart Component | Syncfusion
-description: Learn how to configure taskbar labels in the Syncfusion React Gantt Chart component for enhanced data visualization and project management.
+title: Task Labels in React Gantt Chart | Syncfusion
+description: Learn how to configure taskbar labels in Syncfusion React Gantt Chart with left, right, and inner label options for better data visualization.
+keywords: react gantt task labels, taskbar labels, left label, right label, inner label, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/labels
 platform: gantt-sdk
-control: Task labels
+control: Task Labels - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Task Labels in React Gantt Chart Component
+# Task Label Positions and Template Support in React Gantt Chart
 
 Task labels in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component display key task information directly on or near taskbars, enhancing project visualization without requiring task interaction. Configured via the [labelSettings](https://ej2.syncfusion.com/react/documentation/api/gantt/labelSettings) property, labels show details like task names, IDs, or progress, streamlining workflows for resource management and status tracking. Labels support three positions: left labels outside the taskbar for identifiers like **TaskName**, right labels after the taskbar for metrics like **Progress**, and task labels overlaid on taskbars for prominent data like task titles. Left and right labels remain visible regardless of taskbar width, while task labels may clip for short tasks. Labels improve readability and provide immediate context, reducing the need for hovers or dialogs in large projects.
 
