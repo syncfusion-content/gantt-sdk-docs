@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Getting Started with JavaScript Gantt Chart Control | Syncfusion
-description:  Checkout and learn about getting started with JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with JavaScript Gantt | Syncfusion
+description: Get started with JavaScript Gantt Chart control by setting up data sources, configuring tasks, and implementing basic features for project management.
+keywords: javascript gantt getting started, setup, configuration, data source, tasks, scheduling, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/es5-getting-started
 platform: gantt-sdk
-control: Getting started 
-publishingplatform: gantt-sdk
+control: Getting Started - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Getting Started in JavaScript Gantt Chart Control
+# Getting Started with JavaScript Gantt Chart
 
 The [JavaScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) is a UI control used to visualize and manage project schedules using a timeline view. It supports hierarchical task data, scheduling, and rich interactive features.
 

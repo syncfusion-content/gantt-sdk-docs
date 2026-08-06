@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Managing Tasks in JavaScript Gantt Chart Control | Syncfusion
-description: Learn here all about Managing tasks in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
+title: Managing Tasks in JavaScript Gantt | Syncfusion
+description: Master task management in Syncfusion JavaScript Gantt Chart with CRUD operations, editing modes, and hierarchical task organization for projects.
+keywords: javascript gantt manage tasks, task management, create tasks, update tasks, delete tasks, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/managing-tasks/managing-tasks
 platform: gantt-sdk
-control: Managing tasks
-publishingplatform: gantt-sdk
+control: Managing Tasks - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Managing Tasks in JavaScript Gantt Chart Control
+# Overview of Task Management Features in JavaScript Gantt Chart
 
 Managing tasks in the JavaScript Gantt Chart control enables dynamic project updates, such as inserting, deleting, or editing tasks and dependencies, by enabling [allowAdding](../../api/gantt/editSettings#allowadding), [allowDeleting](../../api/gantt/editSettings#allowdeleting), [allowEditing](../../api/gantt/editSettings#allowediting), and [allowTaskbarEditing](../../api/gantt/editSettings#allowtaskbarediting) with `Edit` module injected. A primary key column, defined by [columns.isPrimaryKey](../../api/gantt/column#isprimarykey) set to **true** (e.g., on id), ensures reliable CRUD operations and task identification. Editing modes include cell editing for quick TreeGrid updates, dialog editing for comprehensive changes, taskbar dragging for duration or date adjustments, and connector line dragging for dependencies. Customize dialogs with templates or fields using [addDialogFields](../../api/gantt#adddialogfields) and [editDialogFields](../../api/gantt#editdialogfields). Methods like [addRecord](../../api/gantt#addrecord), [deleteRow](../../api/gantt#deleterow), and [updateRecordById](../../api/gantt#updaterecordbyid) support programmatic management. Ensure valid `taskFields` mappings and a primary key to enable editing seamlessly.
 

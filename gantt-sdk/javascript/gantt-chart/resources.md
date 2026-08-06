@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Resources in JavaScript Gantt Chart Control | Syncfusion
-description: Learn how to configure resources in the Syncfusion JavaScript Gantt Chart control for task allocation and utilization visualization.
+title: Resources in JavaScript Gantt Chart | Syncfusion
+description: Learn how to configure resources in Syncfusion JavaScript Gantt Chart for task allocation and visualize resource workload and utilization across project.
+keywords: javascript gantt resources, resource allocation, resource management, workload, team members, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/resources
 platform: gantt-sdk
-control: Resources
-publishingplatform: gantt-sdk
+control: Resources - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Resources in JavaScript Gantt Chart Control
+# Resources with Allocation and Task Mapping in JavaScript Gantt Chart
 
 Resources in the  JavaScript Gantt Chart control represent people, equipment, or materials allocated to tasks, visualized in taskbars and labels for clear utilization tracking. Assigned via the [resources](../api/gantt#resources) property, resources map to tasks using [resourceFields](../api/gantt#resourcefields) for ID, name, unit, and group. This enables display of resource names in columns or labels with [labelSettings](../api/gantt/labelSettings), highlighting workloads and overallocation. The [queryTaskbarInfo](../gantt/events#querytaskbarinfo) event customizes taskbar styles based on resources, such as color-coding. Resources include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may truncate names for multiple assignments. By default, resources allocate 100% unit if unspecified.
 

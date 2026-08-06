@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Eventmarkers in JavaScript Gantt Chart Control | Syncfusion
-description: Learn here all about Eventmarkers in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
+title: Event Markers in JavaScript Gantt | Syncfusion
+description: Configure event markers in Syncfusion JavaScript Gantt Chart to highlight project events, and important dates across the timeline for better tracking.
+keywords: javascript gantt event markers, timeline markers, project milestones, event indicators, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/event-markers
 platform: gantt-sdk
-control: Event markers 
-publishingplatform: gantt-sdk
+control: Event Markers - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Event Markers in JavaScript Gantt Chart Control
+# Project-Wide Timeline Markers in JavaScript Gantt Chart
 
 Event markers highlight significant project events by displaying vertical timeline indicators that span across the entire Gantt chart. These markers identify critical dates, milestones, deadlines, or important project events that affect multiple tasks or the overall project timeline, providing visual reference points for project-wide activities.
 

@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Baseline in JavaScript Gantt Chart Control | Syncfusion
-description: Learn here all about Baseline in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
+title: Baseline in JavaScript Gantt Chart | Syncfusion
+description: Configure and visualize baseline in Syncfusion JavaScript Gantt Chart to compare planned and actual task schedules for effective project tracking.
+keywords: javascript gantt baseline, baseline start date, baseline end date, baseline duration, compare schedules, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/baseline
 platform: gantt-sdk
-control: Baseline 
-publishingplatform: gantt-sdk
+control: Baseline - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Baseline in JavaScript Gantt control
+# Baseline Schedule Comparison in JavaScript Gantt Chart
 
 The baseline feature in the Gantt Chart control enables comparison between original planned schedules and actual task execution timelines. This visualization provides clear insights into schedule deviations, helping assess project performance and identify areas requiring attention. Baseline functionality displays both the original planned timeline and current progress side-by-side for comprehensive project tracking.
 

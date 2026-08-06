@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Excel Export Options in JavaScript Gantt Control | Syncfusion
-description: Learn here all about Excel export in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
+title: Excel Export Options in JavaScript Gantt Chart | Syncfusion
+description: Learn how to customize Excel and CSV export in Syncfusion JavaScript Gantt Chart with custom data settings, headers, footers, and formatting options.
+keywords: javascript gantt excel export options, excel export properties, csv export, export customization, gantt excel export, excel export settings, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/excel-export/excel-export-options
 platform: gantt-sdk
-control: Excel Export Options
-publishingplatform: gantt-sdk
+control: Excel Export Options - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Excel Export Options in JavaScript Gantt Chart Control
+# Customizing Excel Export Options in JavaScript Gantt Chart
 
 The [JavaScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control provides configurable options for Excel or CSV export through the [ExcelExportProperties](../../api/grid/excelExportProperties) object. You can customize column selection, include hidden columns, define a custom data source, apply filters, and format exported data. It also supports setting file names, adding headers and footers, and exporting multiple Gantt Charts.
 

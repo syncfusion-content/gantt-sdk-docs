@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Reorder Columns in JavaScript Gantt Chart Control | Syncfusion
-description: Learn how to reorder columns in the Syncfusion JavaScript Gantt Chart control using drag-and-drop or code, and how to restrict reordering for specific columns.
+title: Column Reordering in JavaScript Gantt Chart | Syncfusion
+description: Learn how to reorder columns in the JavaScript Gantt Chart using drag-and-drop interactions, API methods, and customization options.
+keywords: javascript gantt column reorder, gantt column reordering, drag and drop columns, reorder columns, column customization, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/columns/column-reorder
 platform: gantt-sdk
-control: Column reorder
-publishingplatform: gantt-sdk
+control: Column Reordering - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Column Reorder in JavaScript Gantt Chart Control
+# Reordering Columns Using Drag-and-Drop in JavaScript Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Gantt Chart control supports column reordering by dragging a column header to a new position. 
 

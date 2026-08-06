@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Task scheduling in JavaScript Gantt control | Syncfusion
-description: Learn here all about Task scheduling in Syncfusion JavaScript Gantt control of Syncfusion Essential JS 2 and more.
+title: Task Scheduling in JavaScript Gantt | Syncfusion
+description: Master task scheduling in Syncfusion JavaScript Gantt Chart with automatic dates, duration calculations, and dependency-driven schedule management.
+keywords: javascript gantt task scheduling, schedule calculation, duration, dates, auto scheduling, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/task-scheduling
 platform: gantt-sdk
-control: Task scheduling 
-publishingplatform: gantt-sdk
+control: Task Scheduling - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Task scheduling in JavaScript Gantt control
+# Task Scheduling Modes with Auto and Manual in JavaScript Gantt Chart
 
 The Gantt provides support for automatic and manual task scheduling modes. It is used to indicate whether the start date and end date of all the tasks will be automatically validated or not. [taskMode](../api/gantt#taskmode) is the property used to change the schedule mode of a task.
 

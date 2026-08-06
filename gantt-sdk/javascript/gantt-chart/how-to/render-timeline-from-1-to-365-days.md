@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Timeline From 1 to 365 days in JavaScript Gantt | Syncfusion
-description: Learn here all about Render timeline from 1 to 365 days in Syncfusion JavaScript Gantt control of Syncfusion Essential JS 2 and more.
+title: Render Timeline in JavaScript Gantt | Syncfusion
+description: Learn how to render custom timeline in Syncfusion JavaScript Gantt Chart for extended project schedule visualization and detailed time tracking.
+keywords: javascript gantt timeline, custom timeline, timeline rendering, 365 days, extended timeline, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/how-to/render-timeline-from-1-to-365-days
 platform: gantt-sdk
-control: Render timeline from 1 to 365 days 
-publishingplatform: gantt-sdk
+control: Custom Timeline - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Render Timeline From 1 to 365 Days in JavaScript Gantt Control
+# Render Timeline From 1 to 365 Days in JavaScript Gantt Chart
 
 Gantt chart contains different types of in-built timeline view modes and it can be defined by using [timelineViewMode](../../api/gantt/timelineViewMode) property and also we can customize the timescale mode of top tier and bottom tier by using [topTier.unit](../../api/gantt/timelineTierSettingsModel#unit) and [bottomTier.unit](../../api/gantt/timelineTierSettingsModel#unit) properties. Timeline tier’s unit can be defined by using [unit](../../api/gantt/timelineTierSettings#unit) property and  [format](../../api/gantt/timelineTierSettings#format) property was used to define date format of timeline cell and [formatter](../../api/gantt/timelineTierSettings#formatter) property was used to define custom method to format the date value of timeline cell.
 

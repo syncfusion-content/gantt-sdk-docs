@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Validation in JavaScript Gantt Chart Control | Syncfusion
-description: Learn how to validate task data in the Syncfusion JavaScript Gantt Chart control using column, custom, dependency, and resource grid rules for accurate project management.
+title: Validation in JavaScript Gantt Chart | Syncfusion
+description: Learn to Validate task data in Syncfusion JavaScript Gantt Chart using column validation, custom rules, dependencies, and resource rules for accuracy.
+keywords: javascript gantt validation, data validation, task validation, validation rules, error handling, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/managing-tasks/validation
 platform: gantt-sdk
-control: Validating Tasks
-publishingplatform: gantt-sdk
+control: Validation - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Validation in JavaScript Gantt Chart Control
+# Implementing Data Validation and Error Handling in JavaScript Gantt Chart
 
 Validation in the JavaScript Gantt Chart control ensures accurate task data by enforcing rules during adding or editing, preventing invalid entries before saving. Using the [Form Validator](https://ej2.syncfusion.com/documentation/form-validator) control, apply validation to columns in inline or dialog editing, custom rules for specific fields, or dependency and resource grids in the add/edit dialog. Requires `Edit` and valid [taskFields](../../api/gantt#taskfields) mappings (e.g., id, name) to ensure data integrity for tasks updated on September 23, 2025, or later, maintaining valid date ranges or dependency formats.
 

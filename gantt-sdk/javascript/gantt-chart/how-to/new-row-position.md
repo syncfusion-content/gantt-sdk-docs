@@ -1,15 +1,16 @@
 ---
 layout: post
-title: New row position in JavaScript Gantt control | Syncfusion
-description: Learn here all about New row position in Syncfusion JavaScript Gantt control of Syncfusion Essential JS 2 and more.
+title: New Row Position in JavaScript Gantt | Syncfusion
+description: Learn how to configure new row position in Syncfusion JavaScript Gantt Chart to control where new tasks are inserted in the project hierarchy.
+keywords: javascript gantt new row position, add row position, insert position, task position, row insertion, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/how-to/new-row-position
 platform: gantt-sdk
-control: New row position 
-publishingplatform: gantt-sdk
+control: New Row Position - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# New Row Position in JavaScript Gantt Chart Control
+# Controlling New Row Position When Adding Tasks in JavaScript Gantt Chart Control
 
 In Gantt, a new row can be added in one of the following positions: Top, Bottom, Above, Below and Child. This position can be specified through the `new RowPosition` property. We can make use of the toolbarClick event to create a context menu that specifies the position in which the new row is to be added when adding a record through toolbar click.
 

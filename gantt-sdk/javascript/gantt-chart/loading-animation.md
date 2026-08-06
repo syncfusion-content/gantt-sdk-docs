@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Loading animation in JavaScript Gantt control | Syncfusion
-description: Learn here all about Loading animation in Syncfusion JavaScript Gantt control of Syncfusion Essential JS 2 and more.
+title: Loading Animation in JavaScript Gantt | Syncfusion
+description: Learn how to configure loading indicators in Syncfusion JavaScript Gantt Chart to provide visual feedback during data loading and asynchronous operations.
+keywords: javascript gantt loading animation, spinner, loading indicator, async data, user feedback, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/loading-animation
 platform: gantt-sdk
-control: Loading animation 
-publishingplatform: gantt-sdk
+control: Loading Animation - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Loading animation in JavaScript Gantt control
+# Loading Indicators with Spinner and Shimmer in JavaScript Gantt Chart
 
 The loading indicator is used to display a visual indicator while the Gantt is fetching data or performing certain actions, such as sorting or filtering. The gantt support two indicator types, which is achieved by setting the [loadingIndicator.indicatorType](../api/gantt#loadingindicator) property to Shimmer or Spinner. The default value of the indicator type is "Spinner."
 

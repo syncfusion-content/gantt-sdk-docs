@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Customize PDF Exporting in JavaScript Gantt Chart | Syncfusion
-description: Learn here all about customize PDF exporting in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
+title: Customize PDF Export in JavaScript Gantt | Syncfusion
+description: Learn how to customize PDF export in Syncfusion JavaScript Gantt Chart with themes, styles, columns, and layout options for professional project reports.
+keywords: javascript gantt customize pdf, pdf customization, styling export, columns export, themes, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/pdf-export/customize-pdf-export
 platform: gantt-sdk
-control: Customize PDF exporting
-publishingplatform: gantt-sdk
+control: Customize PDF Export - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# To customize PDF export
+# Customizing PDF Export Layout and Content in JavaScript Gantt Chart
 
 Customizing PDF export in the [JavaScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control allows tailoring exported documents for specific needs, using [PdfExportProperties](../../api/gantt/pdfexportproperties) to adjust file names, page orientation, size, columns, headers, footers, timelines, and templates. Ensuring focused content like selected rows or styled taskbars, with the `PdfExport` module injected and [allowPdfExport](../../api/gantt#allowpdfexport) enabled. Use [beforePdfExport](../../gantt/events#beforepdfexport) and [pdfExportComplete](../../gantt/events#pdfexportcomplete) events for pre-export and post-export modifications, and [pdfQueryTaskbarInfo](../../gantt/events#pdfquerytaskbarinfo) for taskbar styling, supporting RTL layouts via [enableRtl](../../api/gantt#enablertl).
 

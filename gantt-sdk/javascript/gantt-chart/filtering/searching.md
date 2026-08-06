@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Searching in JavaScript Gantt control | Syncfusion
-description: Learn here all about Searching in Syncfusion JavaScript Gantt control of Syncfusion Essential JS 2 and more.
+title: Searching in JavaScript Gantt Chart | Syncfusion
+description: Learn how to enable quick search in Syncfusion JavaScript Gantt Chart to quickly find tasks and data across the project timeline.
+keywords: javascript gantt searching, search tasks, text search, find tasks, search functionality, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/filtering/searching
 platform: gantt-sdk
-control: Searching 
-publishingplatform: gantt-sdk
+control: Searching - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Searching in JavaScript Gantt Chart Control
+# Implementing Quick Search in JavaScript Gantt Chart Control
 
 The [JavaScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control allows quick filtering of records based on search input, improving access to relevant data in large datasets.
 

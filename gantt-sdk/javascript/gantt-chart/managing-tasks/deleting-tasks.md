@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Deleting tasks in JavaScript Gantt control | Syncfusion
-description: Learn here all about Deleting tasks in Syncfusion JavaScript Gantt control of Syncfusion Essential JS 2 and more.
+title: Deleting Tasks in JavaScript Gantt | Syncfusion
+description: Learn to delete tasks in Syncfusion JavaScript Gantt Chart including methods for removing single and multiple tasks from project schedules.
+keywords: javascript gantt delete task, remove task, task deletion, delete multiple, cascading delete, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/managing-tasks/deleting-tasks
 platform: gantt-sdk
-control: Deleting tasks 
-publishingplatform: gantt-sdk
+control: Deleting Tasks - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Deleting tasks in JavaScript Gantt control
+# Deleting Tasks in JavaScript Gantt Chart
 
 A task delete option in the Gantt control can be enabled by enabling the [ediSettings.allowDeleting](../../api/gantt/editSettings#allowdeleting) property. Tasks can be deleted by clicking the delete toolbar item or using the `deleteRow` method. You can call this method dynamically on any custom actions like button click. The following code example shows how to enable the delete option in the Gantt control.
 

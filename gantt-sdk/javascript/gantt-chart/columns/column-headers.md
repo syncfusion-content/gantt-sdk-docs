@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Headers in JavaScript Gantt Chart Control | Syncfusion
-description: Learn here all about Headers in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
+title: Column Headers in JavaScript Gantt Chart | Syncfusion
+description: Learn how to customize JavaScript Gantt column headers with text, templates, alignment, and dynamic updates.
+keywords: javascript gantt column headers, header text, header template, custom header, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/columns/column-headers
 platform: gantt-sdk
-control: Headers
-publishingplatform: gantt-sdk
+control: Column Headers - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Column Headers in JavaScript Gantt Chart Control
+# Configuring Column Headers in JavaScript Gantt Chart
 
 The JavaScript Gantt Chart control provides flexible options to manage and customize column headers. You can define static header text, apply custom templates, align header content, and even update header titles dynamically through events or methods. These features help tailor the Gantt chart to match specific UI requirements and improve readability.
 

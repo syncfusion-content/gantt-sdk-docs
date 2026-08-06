@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Column Menu in JavaScript Gantt Chart Control | Syncfusion
-description: Learn here all about column menu in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
+title: Column Menu in JavaScript Gantt Chart | Syncfusion
+description: Learn how to enable and customize the column menu in the JavaScript Gantt Chart with sorting, filtering, and column chooser options.
+keywords: javascript gantt column menu, column menu, sorting, filtering, column chooser, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/columns/column-menu
 platform: gantt-sdk
-control: Column menu 
-publishingplatform: gantt-sdk
+control: Column Menu - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Column Menu in JavaScript Gantt Chart Control
+# Enabling Column Menu in JavaScript Gantt Chart
 
 The column menu in the JavaScript Gantt Chart control offers built-in actions including sorting, filtering, column chooser, and autofit. When you click the column menu icon, a menu appears with these features.
 

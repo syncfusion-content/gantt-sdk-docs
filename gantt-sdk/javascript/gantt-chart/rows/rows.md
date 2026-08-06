@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Rows in JavaScript Gantt Chart Control | Syncfusion
-description: Learn here all about rows in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
+title: Rows in JavaScript Gantt Chart | Syncfusion
+description:  Learn how to customize rows in Syncfusion JavaScript Gantt Chart with height settings, expansion, drag-and-drop, and row-level interactions.
+keywords: javascript gantt rows, row configuration, row height, row templates, row customization, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/rows/rows
 platform: gantt-sdk
-control: Rows 
-publishingplatform: gantt-sdk
+control: Rows - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Rows in JavaScript Gantt Chart Control
+# Row Interactions and Customization in JavaScript Gantt Chart
 
 Each row typically represents a single record or item from a data source. Rows in a Gantt Chart are used to present data in both tabular and timeline chart formats. Each row displays a set of values representing the fields of an individual data record. Rows allow you to interact with the data in the Gantt Chart. You can select rows, edit cell values, perform taskbar editing in the chart side of the Gantt Chart, perform sorting or filtering operations, and trigger events based on actions.
 

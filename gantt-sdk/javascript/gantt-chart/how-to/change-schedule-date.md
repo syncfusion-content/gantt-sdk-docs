@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Change schedule date in JavaScript Gantt control | Syncfusion
-description: Learn how to update project schedule dates programmatically in the Syncfusion JavaScript Gantt Chart to efficiently adjust timelines and task schedules.
+title: Update Schedule Date in JavaScript Gantt | Syncfusion
+description: Learn how to programmatically update project schedule dates programmatically in Syncfusion JavaScript Gantt Chart to adjust timelines.
+keywords: javascript gantt schedule date, update dates, change dates, adjust timeline, schedule adjustment, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/how-to/change-schedule-date
 platform: gantt-sdk
-control: Schedule dates
-publishingplatform: gantt-sdk
+control: Update Schedule Date - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Update Project Schedule Dates in JavaScript Gantt Chart Control
+# Updating Schedule Dates Programmatically in JavaScript Gantt Chart Control
 
 The [updateProjectDates](../../api/gantt#updateprojectdates) method in the [JavaScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control enables programmatic adjustment of the project's start and end dates, seamlessly updating the timeline and task positions for efficient schedule management. By passing valid `Date` objects for the start and end dates, you can shift the entire project timeline, such as moving a project forward by a month to accommodate delays. An optional Boolean `roundOff` parameter, when set to **true**, aligns dates to the timeline's unit (e.g., days or weeks), ensuring a clean and consistent display. Ensure the Gantt has a defined `dataSource` and [timelineSettings](../../api/gantt#timelinesettings) to render the updated schedule accurately. Use valid date formats and leverage the `roundOff` option to optimize timeline rendering for clarity.
 

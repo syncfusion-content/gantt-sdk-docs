@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Selection in JavaScript Gantt Chart Control | Syncfusion
-description: Learn here all about Selection in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
+title: Selection in JavaScript Gantt Chart | Syncfusion
+description: Learn how to enable selection selection in Syncfusion JavaScript Gantt Chart with row and cell selection modes, keyboard navigation, and selection events.
+keywords: javascript gantt selection, row selection, cell selection, multiple select, keyboard navigation, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/selection/selection
 platform: gantt-sdk
-control: Selection 
-publishingplatform: gantt-sdk
+control: Selection - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Selection in JavaScript Gantt Chart Control
+# Selection in JavaScript Gantt Chart
 
 The Selection feature provides the ability to highlight a row or cell in the Gantt Chart control. Selection can be performed using arrow keys or mouse clicks.
 
