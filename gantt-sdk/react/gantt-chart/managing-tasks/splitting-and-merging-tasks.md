@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Splitting and Merging Tasks for Flexible Scheduling in React Gantt Chart
+# Splitting and Merging Tasks in React Gantt Chart
 
 Splitting and merging tasks in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component enhances project management by allowing tasks to be divided into segments or recombined, representing breaks or continuous work periods. Split tasks at load time using [taskFields.segments](https://ej2.syncfusion.com/react/documentation/api/gantt/taskFields#segments) for hierarchical data or [taskFields.segmentId](https://ej2.syncfusion.com/react/documentation/api/gantt/taskFields#segmentId) for self-referential data, ensuring segments fit within the task’s start and end dates. Dynamically split tasks via the dialog’s Segments tab or context menu’s Split Task option, requiring `Edit` and valid `taskFields` mappings. Merge tasks using the context menu’s Merge Task option or by dragging segments together in the UI, with [enableContextMenu](https://ej2.syncfusion.com/react/documentation/api/gantt#enablecontextmenu) and `ContextMenuService` enabled. Ensure tasks have sufficient width relative to the timeline unit and are not parent or milestone tasks to enable splitting, and avoid using split tasks with multi-taskbar features to maintain compatibility.
 
@@ -70,5 +70,5 @@ You can get the clicked segment information using the [onTaskbarClick](https://h
 
 ## See also
 - [How to bind data in Gantt?](https://ej2.syncfusion.com/react/documentation/gantt/data-binding)
-- [How to configure task editing?](https://ej2.syncfusion.com/react/documentation/gantt/editing)
+- [How to configure task editing?](https://ej2.syncfusion.com/react/documentation/gantt/managing-tasks/editing-tasks)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/react/documentation/gantt/task-dependency)

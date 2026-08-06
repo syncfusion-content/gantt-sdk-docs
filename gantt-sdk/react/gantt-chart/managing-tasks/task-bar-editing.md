@@ -51,6 +51,6 @@ Prevent taskbar editing for specific tasks using the [taskbarEditing](https://ej
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/preventtaskbaredit-cs1" %}
 
 ## See also
-- [How to configure task editing?](https://ej2.syncfusion.com/react/documentation/gantt/editing)
+- [How to configure task editing?](https://ej2.syncfusion.com/react/documentation/gantt/managing-tasks/editing-tasks)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/react/documentation/gantt/task-dependency)
 - [How to configure critical path?](https://ej2.syncfusion.com/react/documentation/gantt/critical-path)
