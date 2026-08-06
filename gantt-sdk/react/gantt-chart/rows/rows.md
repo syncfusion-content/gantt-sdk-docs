@@ -305,8 +305,8 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart provides severa
 
 ## See Also
 
-* [Render parent rows in collapsed state](https://ej2.syncfusion.com/react/documentation/gantt/columns/treecolumn#render-parent-rows-in-collapsed-state)  
-* [Retain expanded and collapsed state](https://ej2.syncfusion.com/react/documentation/gantt/columns/treecolumn#retain-expanded-and-collapsed-state) 
-* [Persist expanded collapsed state on page refresh using localStorage](https://ej2.syncfusion.com/react/documentation/gantt/columns/treecolumn#persist-expanded-and-collapsed-state-on-page-refresh-using-localstorage)
-* [Programmatically expand and collapse a row](https://ej2.syncfusion.com/react/documentation/gantt/columns/treecolumn#programmatically-expand-and-collapse-a-row)
-* [Expand and Collapse action events](https://ej2.syncfusion.com/react/documentation/gantt/columns/treecolumn#expand-and-collapse-action-events)
+* [Render parent rows in collapsed state](https://ej2.syncfusion.com/react/documentation/gantt/columns/tree-column#render-parent-rows-in-collapsed-state)  
+* [Retain expanded and collapsed state](https://ej2.syncfusion.com/react/documentation/gantt/columns/tree-column#retain-expandcollapse-state-on-initial-load) 
+* [Persist expanded collapsed state on page refresh using localStorage](https://ej2.syncfusion.com/react/documentation/gantt/columns/tree-column#persist-expandcollapse-state-across-page-refresh-using-localstorage)
+* [Programmatically expand and collapse a row](https://ej2.syncfusion.com/react/documentation/gantt/columns/tree-column#programmatically-expand-or-collapse-rows)
+* [Expand and Collapse action events](https://ej2.syncfusion.com/react/documentation/gantt/columns/tree-column#customize-expandcollapse-behavior-using-events)

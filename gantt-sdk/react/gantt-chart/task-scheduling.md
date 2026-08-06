@@ -1,16 +1,14 @@
 ---
 layout: post
-title: Task Scheduling in React Gantt Chart | Syncfusion
-description: Learn how to configure task scheduling in Syncfusion React Gantt Chart with manual, auto, and custom modes for flexible project timeline management.
-keywords: react gantt task scheduling, manual scheduling, auto scheduling, custom mode, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/task-scheduling
+title: Task Scheduling in React Gantt Component | Syncfusion
+description: Learn here all about task scheduling in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
+control: Task scheduling 
 platform: gantt-sdk
-control: Task Scheduling - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Task Scheduling Modes with Auto and Manual in React Gantt Chart
+# Task Scheduling in React Gantt Component
 
 The Gantt provides support for automatic and manual task scheduling modes. It is used to indicate whether the start date and end date of all the tasks will be automatically validated or not. [taskMode](https://ej2.syncfusion.com/react/documentation/api/gantt#taskmode) is the property used to change the schedule mode of a task.
 

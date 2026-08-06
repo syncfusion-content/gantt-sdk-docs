@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Editing Task Data Using Multiple Interaction Modes in React Gantt Chart
+# Task Editing with Multiple Interaction Modes in React Gantt Chart
 
 Editing tasks in the React Gantt Chart component enables dynamic project updates, such as modifying task durations, names, or dependencies, using cell editing, dialog, taskbar interactions, or programmatic methods. Enable editing by setting [editSettings.allowEditing](https://ej2.syncfusion.com/react/documentation/api/gantt/editSettings#allowediting) and [editSettings.allowTaskbarEditing](https://ej2.syncfusion.com/react/documentation/api/gantt/editSettings#allowtaskbarediting) to **true** with `Edit` injected, ensuring task data aligns with [taskFields](https://ej2.syncfusion.com/react/documentation/api/gantt#taskfields) mappings (e.g., id, name, startDate). Cell editing allows direct updates in the TreeGrid pane, dialog editing provides a comprehensive interface, taskbar dragging adjusts durations or dates, and connector lines manage dependencies via drag-and-drop. Use the [editSettings.mode](https://ej2.syncfusion.com/react/documentation/api/gantt/editSettings#mode) property to control editing behavior (**Auto** or **Dialog**). Customize dialog fields with [addDialogFields](https://ej2.syncfusion.com/react/documentation/api/gantt#adddialogfields) and [editDialogFields](https://ej2.syncfusion.com/react/documentation/api/gantt#editdialogfields) for tailored forms. The [updateRecordById](https://ej2.syncfusion.com/react/documentation/api/gantt#updaterecordbyid) method enables programmatic updates, except for task IDs. Ensure valid data to prevent issues and maintain dependency integrity.
 
@@ -56,7 +56,7 @@ Enable dialog editing by setting [editSettings.allowEditing](https://ej2.syncfus
 
 ## Customize dialog tabs
 
-Customize the edit dialog by defining tabs with [addDialogFields](https://ej2.syncfusion.com/react/documentation/api/gantt#adddialogfields) and [editDialogFields](https://ej2.syncfusion.com/react/documentation/api/gantt#editdialogfields), using the [type](https://ej2.syncfusion.com/react/documentation/api/gantt/dialogFieldType/) property (e.g., General, Dependency). This organizes fields into tabs for focused editing, such as task details or dependencies, with `Edit` required.
+Customize the edit dialog by defining tabs with [addDialogFields](https://ej2.syncfusion.com/react/documentation/api/gantt#adddialogfields) and [editDialogFields](https://ej2.syncfusion.com/react/documentation/api/gantt#editdialogfields), using the [type](https://ej2.syncfusion.com/react/documentation/api/gantt/dialogFieldType) property (e.g., General, Dependency). This organizes fields into tabs for focused editing, such as task details or dependencies, with `Edit` required.
 
 The following sample demonstrates customization using properties and the [actionComplete](https://ej2.syncfusion.com/react/documentation/gantt/events#actioncomplete) event.
 

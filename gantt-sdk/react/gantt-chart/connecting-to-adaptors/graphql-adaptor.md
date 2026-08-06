@@ -16,9 +16,10 @@ The [GraphQLAdaptor](https://ej2.syncfusion.com/react/documentation/data/adaptor
 
 For server configuration and schema expectations (queries, mutations, and response shapes), consult the GraphQL backend documentation appropriate for your stack. After the GraphQL service is available, configure the Gantt's DataManager to use the GraphQL adaptor as its task data source.
 
-[GraphQL](https://graphql.org/learn/introduction/) provides a single, flexible endpoint where clients specify the exact data shape required. For the Gantt this means requesting task fields, parent/child relationships, resource assignments, and any server‑computed scheduling values in one query. Mutations allow the client to create, update, or delete tasks and dependencies while the server enforces scheduling rules and returns reconciled task states.
+[GraphQL](https://graphql.org/learn/introduction) provides a single, flexible endpoint where clients specify the exact data shape required. For the Gantt this means requesting task fields, parent/child relationships, resource assignments, and any server‑computed scheduling values in one query. Mutations allow the client to create, update, or delete tasks and dependencies while the server enforces scheduling rules and returns reconciled task states.
 
 **Key GraphQL concepts relevant to Gantt:**
+
 - Queries: request task data and related entities; useful for timeline windowing and resolving related resources in a single request.
 - Mutations: perform create, update, and delete operations for tasks and dependencies; the server performs validation and scheduling recalculation.
 - Schema and resolvers: define how task queries and mutations are resolved and which fields (for example, start/end, duration, parentId, resources) are available.
@@ -27,39 +28,38 @@ For server configuration and schema expectations (queries, mutations, and respon
 
 ## Prerequisites
 
-| Software / Package          | Recommended version          | Purpose                                 |
-|-----------------------------|------------------------------|--------------------------------------   |
-| Node.js                     | 20.x LTS or later            | Runtime                                 |
-| npm / yarn / pnpm           | 11.x or later                | Package manager                         | 
-| Vite                        | 7.3.1                        | Use this to create the React application |
-| TypeScript                  | 5.x or later                 | Server‑side and client‑side type safety |
-
+| Software / Package | Recommended version | Purpose                                  |
+| ------------------ | ------------------- | ---------------------------------------- |
+| Node.js            | 20.x LTS or later   | Runtime                                  |
+| npm / yarn / pnpm  | 11.x or later       | Package manager                          |
+| Vite               | 7.3.1               | Use this to create the React application |
+| TypeScript         | 5.x or later        | Server‑side and client‑side type safety  |
 
 ## Key topics
 
-| # | Topics | Link |
-|---|--------|-------|
-| 1 | Set up and configure the GraphQL backend using Node.js | [View](#setting-up-the-graphql-backend-using-nodejs) |
-| 2 | Integrate the React Gantt chart with the GraphQL API | [View](#integrating-syncfusion-react-gantt-with-graphql) |
-| 3 | Implement data operations including filtering, searching, sorting, and paging | [View](#step-4-add-toolbar-with-crud-and-search-options) |
-| 4 | Perform CRUD operations | [View](#step-9-perform-crud-operations) |
-| 5 | Run the GraphQL application | [View](#running-the-application) |
-| 6 | Explore a complete working sample available on GitHub | [View](#complete-sample-repository) |
+| #   | Topics                                                                        | Link                                                     |
+| --- | ----------------------------------------------------------------------------- | -------------------------------------------------------- |
+| 1   | Set up and configure the GraphQL backend using Node.js                        | [View](#setting-up-the-graphql-backend-using-nodejs)     |
+| 2   | Integrate the React Gantt chart with the GraphQL API                          | [View](#integrating-syncfusion-react-gantt-with-graphql) |
+| 3   | Implement data operations including filtering, searching, sorting, and paging | [View](#step-4-add-toolbar-with-crud-and-search-options) |
+| 4   | Perform CRUD operations                                                       | [View](#step-9-perform-crud-operations)                  |
+| 5   | Run the GraphQL application                                                   | [View](#running-the-application)                         |
+| 6   | Explore a complete working sample available on GitHub                         | [View](#complete-sample-repository)                      |
 
 ### GraphQL vs REST comparison
- 
+
 Understanding the key differences between GraphQL and REST helps appreciate the benefits of using GraphQL with Gantt chart:
- 
-| Aspect | REST API | GraphQL |
-|--------|----------|---------|
-| **Endpoints** | Multiple endpoints (/api/orders, /api/customers). | Single endpoint (/graphql). |
-| **Data fetching** | Fixed data structure per endpoint. | Flexible, client specifies exact data needs. |
-| **Over-fetching** | Common (gets unnecessary data). | Eliminated (requests only needed fields). |
-| **Under-fetching** | Requires multiple requests. | Single request for complex data. |
-| **Versioning** | Requires API versioning (v1, v2). | Schema evolution without versioning. |
-| **Type system** | Not built-in | Strongly typed schema. |
-| **Query format** | URL parameters | Structured query language. |
-| **Real-time** | Requires separate solution. | Built-in subscriptions support. |
+
+| Aspect             | REST API                                          | GraphQL                                      |
+| ------------------ | ------------------------------------------------- | -------------------------------------------- |
+| **Endpoints**      | Multiple endpoints (/api/orders, /api/customers). | Single endpoint (/graphql).                  |
+| **Data fetching**  | Fixed data structure per endpoint.                | Flexible, client specifies exact data needs. |
+| **Over-fetching**  | Common (gets unnecessary data).                   | Eliminated (requests only needed fields).    |
+| **Under-fetching** | Requires multiple requests.                       | Single request for complex data.             |
+| **Versioning**     | Requires API versioning (v1, v2).                 | Schema evolution without versioning.         |
+| **Type system**    | Not built-in                                      | Strongly typed schema.                       |
+| **Query format**   | URL parameters                                    | Structured query language.                   |
+| **Real-time**      | Requires separate solution.                       | Built-in subscriptions support.              |
 
 **GraphQL Query example:**
 
@@ -75,6 +75,7 @@ query {
   }
 }
 ```
+
 ## Setting up the GraphQL backend using Node.js
 
 The GraphQL backend acts as the central data service, handling queries and mutations that power the React Gantt chart.
@@ -87,7 +88,7 @@ For this guide, a GraphQL server named **GraphQLServer** is created using Node.j
 
 **Create project folder:**
 
-Open a terminal ( for example, an integrated terminal in Visual Studio Code or Windows Command Prompt opened with  <kbd>Win+R</kbd> or macOS Terminal launched with <kbd>Cmd+Space</kbd> ) and run the following command to create and navigate to the project folder:
+Open a terminal ( for example, an integrated terminal in Visual Studio Code or Windows Command Prompt opened with <kbd>Win+R</kbd> or macOS Terminal launched with <kbd>Cmd+Space</kbd> ) and run the following command to create and navigate to the project folder:
 
 ```bash
 mkdir GraphQLServer
@@ -95,6 +96,7 @@ cd GraphQLServer
 mkdir src
 cd src
 ```
+
 **Configure TypeScript:**
 
 TypeScript configuration tells the compiler to convert TypeScript to JavaScript and sets up the project structure.
@@ -137,6 +139,7 @@ npm i graphpack
 npm install -D typescript ts-node @types/node
 npm install @syncfusion/ej2-data --save
 ```
+
 - `graphpack`: Lightweight GraphQL server and development environment.
 - `typescript`, `ts-node`: Enables TypeScript-based development.
 - `@syncfusion/ej2-data`: Provides data utilities for advanced data operations.
@@ -149,17 +152,18 @@ After installing the required packages, create a new file named **data.ts** insi
 [data.ts]
 
 export const tasks: Task[] = [
-  { 
-    TaskID: 1, 
-    TaskName: 'Planning and Permits', 
-    StartDate: '2025-04-02', 
-    EndDate: '2025-04-10', 
-    Duration: 7, 
-    Progress: 100 
+  {
+    TaskID: 1,
+    TaskName: 'Planning and Permits',
+    StartDate: '2025-04-02',
+    EndDate: '2025-04-10',
+    Duration: 7,
+    Progress: 100
   },
   ....
 ];
 ```
+
 The **GraphQLServer** folder is now created, required packages are installed, and a sample data source is configured. The project is ready for defining the GraphQL schema, resolvers, and server configuration.
 
 ### Step 2: Configuring schema in GraphQL
@@ -167,88 +171,97 @@ The **GraphQLServer** folder is now created, required packages are installed, an
 The GraphQL schema defines the structure of the "task" data model and the server‑side operations available for performing CRUD actions.
 
 **Instructions:**
+
 1. Create a new schema file (**src/schema.graphql**) in the **GraphQLServer** folder.
 2. Add type definition for **GanttTask**:
 
-    ```
-    #--- Task type definition ---
-    type GanttTask {
-      TaskID: Int!
-      TaskName: String!
-      StartDate: String
-      #include additional fields--
-    }
-    ```
+   ```
+   #--- Task type definition ---
+   type GanttTask {
+     TaskID: Int!
+     TaskName: String!
+     StartDate: String
+     #include additional fields--
+   }
+   ```
+
 3. Add type definition for **GanttReturnType**:
 
-    ```
-    # --- Return type for Gantt ---
-    type GanttReturnType {
-      result: [GanttTask!]!
-      count: Int!
-    }
-    ```
+   ```
+   # --- Return type for Gantt ---
+   type GanttReturnType {
+     result: [GanttTask!]!
+     count: Int!
+   }
+   ```
+
 4. Add type definition for **ResourceInfo**:
 
-    ```
-    # --- Resource type definition ---
-    type ResourceInfo {
-      resourceId: Int!
-      resourceName: String
-      resourceGroup: String
-      resourceUnit: Int
-    } 
-    ```
+   ```
+   # --- Resource type definition ---
+   type ResourceInfo {
+     resourceId: Int!
+     resourceName: String
+     resourceGroup: String
+     resourceUnit: Int
+   }
+   ```
+
 5. Add type definition for **ResourceInfoInput**:
 
-    ```
-    # --- Resource input ---
-    input ResourceInfoInput {
-      resourceId: Int!
-      resourceName: String
-      resourceGroup: String
-      resourceUnit: Int
-    } 
-    ```
+   ```
+   # --- Resource input ---
+   input ResourceInfoInput {
+     resourceId: Int!
+     resourceName: String
+     resourceGroup: String
+     resourceUnit: Int
+   }
+   ```
+
 6. Add type definition for **GanttTaskInput**:
 
-    ```
-    # --- Gantt task input for mutation operations ---
-    input GanttTaskInput {
-      TaskID: Int!
-      TaskName: String!
-      StartDate: String
-      #include additional fields--
-    }
-    ```
+   ```
+   # --- Gantt task input for mutation operations ---
+   input GanttTaskInput {
+     TaskID: Int!
+     TaskName: String!
+     StartDate: String
+     #include additional fields--
+   }
+   ```
+
 7. Define the Query type to expose the "getTasks" operation that returns the list of "tasks".
 
-    ```
-    type Query {
-      getTasks: GanttReturnType!
-      task(id: Int!): GanttTask
-    }
-    ```
+   ```
+   type Query {
+     getTasks: GanttReturnType!
+     task(id: Int!): GanttTask
+   }
+   ```
+
 8. Define Mutation types for CRUD operations.
 
-    ```
-    type Mutation {
-      addTask(value: GanttTaskInput!): GanttTask!
-      updateTask(value: GanttTaskInput!): GanttTask!
-      deleteTask(key: ID!): Boolean!
-    }
-    ```
-    **Key parameters definitions:**
-    - **key**: The unique identifier (primary key) of the task to be updated.
-    - **value**: An object containing the created or updated task details.
+   ```
+   type Mutation {
+     addTask(value: GanttTaskInput!): GanttTask!
+     updateTask(value: GanttTaskInput!): GanttTask!
+     deleteTask(key: ID!): Boolean!
+   }
+   ```
+
+   **Key parameters definitions:**
+   - **key**: The unique identifier (primary key) of the task to be updated.
+   - **value**: An object containing the created or updated task details.
 
 ### Step 4: GraphQL - Query resolvers
 
 A resolver in GraphQL is a function responsible for fetching the data for a specific field in a GraphQL schema.
 
-When a client sends a GraphQL query, resolvers run behind the scenes to retrieve the requested information from a database, API, or any data source and return it in the format defined by the schema. 
+When a client sends a GraphQL query, resolvers run behind the scenes to retrieve the requested information from a database, API, or any data source and return it in the format defined by the schema.
 
 **Instructions:**
+
 1. Create a new resolver file (**src/resolvers.ts**) inside the **GraphQLServer** folder.
 2. Import the required data source (**e.g., taskDetails**) from the data file.
 3. Implement the "getTasks" resolver to handle the logic for the "getTasks" query defined in the schema.
@@ -281,76 +294,83 @@ Mutations in GraphQL are used to modify data on the server, such as creating, up
 Previously, the CRUD mutation types were defined in the **schema.graphql** file. The next step is to implement these mutation actions inside the **resolver.ts** file.
 
 **Instructions:**
+
 1. Open the (**src/resolvers.ts**) file.
 2. Implement the "addTask" mutation.
 
-    ```ts
-    import { taskDetails } from './data';
-    let tasks: GanttTask[] = [...taskDetails];
-    ....
-    Mutation: {
-        addTask: (_: unknown, { value }: CreateTaskArgs): GanttTask => {
-            const exists = tasks.find(t => String(t.TaskID) === String(value.TaskID));
-            if (exists) throw new Error('TaskID already exists');
-            const newTask: GanttTask = { ...value };
-            tasks.push(newTask);
-            return newTask;
-        },
-    }
-    ```
-    **"addTask" - code breakdown:**
+   ```ts
+   import { taskDetails } from './data';
+   let tasks: GanttTask[] = [...taskDetails];
+   ....
+   Mutation: {
+       addTask: (_: unknown, { value }: CreateTaskArgs): GanttTask => {
+           const exists = tasks.find(t => String(t.TaskID) === String(value.TaskID));
+           if (exists) throw new Error('TaskID already exists');
+           const newTask: GanttTask = { ...value };
+           tasks.push(newTask);
+           return newTask;
+       },
+   }
+   ```
 
-    | Step | Purpose | Implementation |
-    |------|---------|-----------------|
-    | **1. Receive input** | Read incoming task details sent from the client. | `value` parameter inside "addTask" contains all submitted fields. |
-    | **2. Prepare record** | Store the incoming values as a new task object. | `const newTask = { ...value}` |
-    | **3. Insert record** | Add the "task" to the existing data collection. | use `tasks.push(newtask)` to add record. |
-    | **4. Return created** | Send the inserted record back to the client. | return `newTask` - returns the newly added "task" so the client can update the Gantt instantly. |
+   **"addTask" - code breakdown:**
+
+   | Step                  | Purpose                                          | Implementation                                                                                  |
+   | --------------------- | ------------------------------------------------ | ----------------------------------------------------------------------------------------------- |
+   | **1. Receive input**  | Read incoming task details sent from the client. | `value` parameter inside "addTask" contains all submitted fields.                               |
+   | **2. Prepare record** | Store the incoming values as a new task object.  | `const newTask = { ...value}`                                                                   |
+   | **3. Insert record**  | Add the "task" to the existing data collection.  | use `tasks.push(newtask)` to add record.                                                        |
+   | **4. Return created** | Send the inserted record back to the client.     | return `newTask` - returns the newly added "task" so the client can update the Gantt instantly. |
 
 3. Implement the "updateTask" mutation:
 
-    ```ts
-    Mutation: {
-        updateTask: (_: unknown, { value }: UpdateTaskArgs): GanttTask => {
-            const taskIndex = tasks.findIndex(t => String(t.TaskID) === String(value.TaskID));
-            if (taskIndex === -1) throw new Error('Task not found');
-            tasks[taskIndex] = { ...tasks[taskIndex], ...value };
-            return tasks[taskIndex];
-        }
-      }
-    ```
-    **"updateTask" - code breakdown:**
+   ```ts
+   Mutation: {
+     updateTask: (_: unknown, { value }: UpdateTaskArgs): GanttTask => {
+       const taskIndex = tasks.findIndex(
+         (t) => String(t.TaskID) === String(value.TaskID),
+       );
+       if (taskIndex === -1) throw new Error("Task not found");
+       tasks[taskIndex] = { ...tasks[taskIndex], ...value };
+       return tasks[taskIndex];
+     };
+   }
+   ```
 
-    | Step | Purpose | Implementation |
-    |------|---------|-----------------|
-    | **1. Receive input** | Accept the updated field values. | Resolver parameter `value`. |
-    | **2. Locate record** | Find the matching "task" index using a task ID. | `findIndex(t => String(t.TaskID) === String(value.TaskID))` |
-    | **3. Verification** | Fail fast if no matching task exists. | `if (taskIndex === -1) throw new Error('Task not found');` |
-    | **4. Apply updates** | Merge incoming fields into the located task. | `tasks[taskIndex] = { ...tasks[taskIndex], ...value }` |
-    | **5. Return updated** | Send back the modified "task" to the client. | return `tasks[taskIndex]` object with all updates applied. |
+   **"updateTask" - code breakdown:**
+
+   | Step                  | Purpose                                         | Implementation                                              |
+   | --------------------- | ----------------------------------------------- | ----------------------------------------------------------- |
+   | **1. Receive input**  | Accept the updated field values.                | Resolver parameter `value`.                                 |
+   | **2. Locate record**  | Find the matching "task" index using a task ID. | `findIndex(t => String(t.TaskID) === String(value.TaskID))` |
+   | **3. Verification**   | Fail fast if no matching task exists.           | `if (taskIndex === -1) throw new Error('Task not found');`  |
+   | **4. Apply updates**  | Merge incoming fields into the located task.    | `tasks[taskIndex] = { ...tasks[taskIndex], ...value }`      |
+   | **5. Return updated** | Send back the modified "task" to the client.    | return `tasks[taskIndex]` object with all updates applied.  |
 
 4. Implement the "deleteTask" mutation.
 
-    ```ts
-    Mutation: {
-        deleteTask: (_: unknown, { key }: DeleteTaskArgs): boolean => {
-            const taskIndex = tasks.findIndex(t => String(t.TaskID) === String(key));
-            if (taskIndex === -1) return false;
-            tasks.splice(taskIndex, 1); // simple delete
-            return true;
-        }
+   ```ts
+   Mutation: {
+     deleteTask: (_: unknown, { key }: DeleteTaskArgs): boolean => {
+       const taskIndex = tasks.findIndex(
+         (t) => String(t.TaskID) === String(key),
+       );
+       if (taskIndex === -1) return false;
+       tasks.splice(taskIndex, 1); // simple delete
+       return true;
+     };
+   }
+   ```
 
-      }
-      ```
-    **"deleteTask" - code breakdown:**
+   **"deleteTask" - code breakdown:**
 
-    | Step | Purpose | Implementation |
-    |------|---------|-----------------|
-    | **1. Receive key** | Backend receives only the primary key value from client. | Resolver parameter `key` = `taskId` |
-    | **2. Locate index** | Identify the array index of the target record using the key. | `findIndex(t => String(t.TaskID) === String(key))` |
-    | **3. Validate existence** | Ensure a matching record exists before deletion. | `if (taskIndex === -1) return false` |
-    | **4. Remove record** | Delete the record from the data source at the located index. | `tasks.splice(taskIndex, 1)` |
-    | **5.  Return status of deletion** | Return a boolean indicating whether the deletion was successful. | return `true` or `false`|
+   | Step                             | Purpose                                                          | Implementation                                     |
+   | -------------------------------- | ---------------------------------------------------------------- | -------------------------------------------------- |
+   | **1. Receive key**               | Backend receives only the primary key value from client.         | Resolver parameter `key` = `taskId`                |
+   | **2. Locate index**              | Identify the array index of the target record using the key.     | `findIndex(t => String(t.TaskID) === String(key))` |
+   | **3. Validate existence**        | Ensure a matching record exists before deletion.                 | `if (taskIndex === -1) return false`               |
+   | **4. Remove record**             | Delete the record from the data source at the located index.     | `tasks.splice(taskIndex, 1)`                       |
+   | **5. Return status of deletion** | Return a boolean indicating whether the deletion was successful. | return `true` or `false`                           |
 
 Now all required GraphQL types, queries, and mutations have now been fully added.
 
@@ -366,6 +386,7 @@ Open a Visual Studio Code terminal or Command Prompt and run the below command:
 npm create vite@latest GanttClient
 cd GanttClient
 ```
+
 This command creates a React application named **GanttClient** with the essential folder structure and files required to begin development immediately.
 
 The integration process begins by installing the required React Gantt chart packages before establishing the GraphQL connection.
@@ -378,7 +399,8 @@ Install the necessary Syncfusion<sup style="font-size:70%">&reg;</sup> packages 
 npm install @syncfusion/ej2-react-gantt --save
 npm install @syncfusion/ej2-data --save
 ```
-- `@syncfusion/ej2-react-gantt` –  required to use the React Gantt chart component.
+
+- `@syncfusion/ej2-react-gantt` – required to use the React Gantt chart component.
 - `@syncfusion/ej2-data` – Provides data utilities for binding and manipulating Gantt chart data.
 
 ### Step 2: CSS and component styling
@@ -414,6 +436,7 @@ import "./App.css";
 ...
 
 ```
+
 For this project, the "Tailwind3" theme is used. A different theme can be selected or the existing theme can be customized based on project requirements. Refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> React Components Appearance](https://ej2.syncfusion.com/react/documentation/appearance/theme) documentation to learn more about theming and customization options.
 
 ### Step 3: Configure GraphQL Adaptor
@@ -421,25 +444,25 @@ For this project, the "Tailwind3" theme is used. A different theme can be select
 The `GraphQLAdaptor` needs to be configured on the Syncfusion<sup style="font-size:70%">&reg;</sup> `DataManager` so that Gantt interactions are translated into GraphQL‑compatible requests. Configure the `DataManager` with the adaptor, map the server's response paths (`result` and `count`), and assign the instance to the Gantt's `dataSource`.
 
 **Instructions:**
+
 1. Open `src/App.jsx` in the React client folder.
 2. Configure `DataManager` with `GraphQLAdaptor` and map the response (`result` and `count`).
 3. Ensure the GraphQL schema exposes a query (for example, `getTasks`) that returns `{ count, result }`.
 4. Render the Gantt component with `dataSource` and define columns matching the fields returned by the query.
 
 ```js
-    [App.jsx]
+[App.jsx];
 
-    const ganttDataManager = new DataManager({
-        url: 'http://localhost:xxxx/',
-        adaptor: new GraphQLAdaptor({
-            // Map to { result, count } in your GraphQL payload
-            response: {
-                result: 'getTasks.result',
-                count:  'getTasks.count'
-            },
-            // READ: fetch flat tasks (no DataManagerInput)
-            query: 
-            `query getTasks {
+const ganttDataManager = new DataManager({
+  url: "http://localhost:xxxx/",
+  adaptor: new GraphQLAdaptor({
+    // Map to { result, count } in your GraphQL payload
+    response: {
+      result: "getTasks.result",
+      count: "getTasks.count",
+    },
+    // READ: fetch flat tasks (no DataManagerInput)
+    query: `query getTasks {
                 getTasks {
                     count
                     result {
@@ -449,23 +472,24 @@ The `GraphQLAdaptor` needs to be configured on the Syncfusion<sup style="font-si
                     }
                 }
             }`,
-            mutation: {
-                update: 'updateTask',
-                insert: 'addTask',
-                remove: 'deleteTask'
-            }
-        }),
-        crossDomain: true
-    });
-    <GanttComponent
-       dataSource={ganttDataManager}
-       taskFields={taskFields} 
-       height='400px'>
-        <ColumnsDirective>
-                <ColumnDirective field='TaskID' width='80' type='number'></ColumnDirective>
-                {/* Include additional columns here */}
-        </ColumnsDirective>
-    </GanttComponent>
+    mutation: {
+      update: "updateTask",
+      insert: "addTask",
+      remove: "deleteTask",
+    },
+  }),
+  crossDomain: true,
+});
+<GanttComponent
+  dataSource={ganttDataManager}
+  taskFields={taskFields}
+  height="400px"
+>
+  <ColumnsDirective>
+    <ColumnDirective field="TaskID" width="80" type="number"></ColumnDirective>
+    {/* Include additional columns here */}
+  </ColumnsDirective>
+</GanttComponent>;
 ```
 
 **GraphQL Query structure explained in detail**
@@ -477,28 +501,29 @@ query getTasks {}
 ```
 
 **Line breakdown:**
+
 - `query` - GraphQL keyword indicating a read operation.
 - `getTasks` - Name of the query (must match resolver name with camelCase).
-
 
 ```
 getTasks{}
 ```
 
 **Line breakdown:**
+
 - `getTasks` - Calls the backend resolver to fetch task data.
 - The resolver returns the requested `count` and `result` fields.
-
 
 ```
 count
     result {
     TaskID
-    TaskName 
+    TaskName
     }
 ```
 
 **Line breakdown:**
+
 - `count` - Returns total number of records.
 - Example: If "150" total "task" records exist, count = 150.
 - `result` - Contains the array of "task" records.
@@ -533,13 +558,13 @@ When the backend executes the query, it returns a JSON response in this structur
 
 **Response structure explanation:**
 
-| Part | Purpose | Example |
-|------|---------|---------|
-| `data` | Root object returned for every successful GraphQL query. | Always present in successful response. |
-| `getTasks` | Matches the GraphQL query name; contains task data | Contains **count** and **result**. |
-| `count` | Total number of records available. | 1 (in this example). |
-| `result` | Array of "tasks" objects. | [ {...}, {...} ] |
-| Each `field` in result | Matches GraphQL query field names. | Field values from database. |
+| Part                   | Purpose                                                  | Example                                |
+| ---------------------- | -------------------------------------------------------- | -------------------------------------- |
+| `data`                 | Root object returned for every successful GraphQL query. | Always present in successful response. |
+| `getTasks`             | Matches the GraphQL query name; contains task data       | Contains **count** and **result**.     |
+| `count`                | Total number of records available.                       | 1 (in this example).                   |
+| `result`               | Array of "tasks" objects.                                | [ {...}, {...} ]                       |
+| Each `field` in result | Matches GraphQL query field names.                       | Field values from database.            |
 
 ### Step 4: Perform CRUD operations
 
@@ -553,109 +578,107 @@ The "getMutation" function in the `GraphQLAdaptor` handles the Gantt chart CRUD 
 
 **Insert:**
 
-The Insert operation enables adding new "task" records to the task list. When the Add button in the toolbar is selected, the Gantt chart opens a dialog that displays input fields for entering task details. 
+The Insert operation enables adding new "task" records to the task list. When the Add button in the toolbar is selected, the Gantt chart opens a dialog that displays input fields for entering task details.
 
 After the required data is submitted, the GraphQL mutation sends the new "task" record to the backend for processing and storage.
 
 Open `src/App.jsx` and configure the `getMutation` function in the `GraphQLAdaptor` to return the GraphQL mutation for the insert action.
 
-  ```ts
-  [App.jsx]
-    const ganttDataManager = new DataManager({
-            url: 'http://localhost:xxxx/', // xxxx represents the port number.
-            adaptor: new GraphQLAdaptor({
-                // Map to { result, count } in your GraphQL payload
-                response: {
-                    result: 'getTasks.result',
-                    count:  'getTasks.count'
-                },
-                // READ: fetch flat tasks (no DataManagerInput)
-                query: 
-                `query getTasks {
-                    getTasks {
-                        count
-                        result {
-                            TaskID
-                            TaskName
-                            # add additional fields to fetch initially, e.g.:StartDate
-                        }
-                    }
-                }`,
-                mutation: {
-                    update: 'updateTask',
-                    insert: 'addTask',
-                    remove: 'deleteTask'
-                },
-                // mutation for perform insert.
-                getMutation: function (action: any): string {
-                    if (action === 'insert') {
-                        return `
-                        mutation AddTask($value: GanttTaskInput!) {
-                            addTask(value: $value) {
-                                    TaskID
-                                    TaskName
-                                    # add additional fields to fetch initially, e.g.:StartDate
-                                }
-                        }`;
-                    }   
-                }
-            }),
-            crossDomain: true
-    });
-  ```
+```ts
+[App.jsx];
+const ganttDataManager = new DataManager({
+  url: "http://localhost:xxxx/", // xxxx represents the port number.
+  adaptor: new GraphQLAdaptor({
+    // Map to { result, count } in your GraphQL payload
+    response: {
+      result: "getTasks.result",
+      count: "getTasks.count",
+    },
+    // READ: fetch flat tasks (no DataManagerInput)
+    query: `query getTasks {
+                  getTasks {
+                      count
+                      result {
+                          TaskID
+                          TaskName
+                          # add additional fields to fetch initially, e.g.:StartDate
+                      }
+                  }
+              }`,
+    mutation: {
+      update: "updateTask",
+      insert: "addTask",
+      remove: "deleteTask",
+    },
+    // mutation for perform insert.
+    getMutation: function (action: any): string {
+      if (action === "insert") {
+        return `
+                      mutation AddTask($value: GanttTaskInput!) {
+                          addTask(value: $value) {
+                                  TaskID
+                                  TaskName
+                                  # add additional fields to fetch initially, e.g.:StartDate
+                              }
+                      }`;
+      }
+    },
+  }),
+  crossDomain: true,
+});
+```
 
 **Update:**
 
-The Update operation enables editing of existing records. When the Edit option in the toolbar is selected and a row is chosen, the Gantt chart opens a dialog displaying the current values of the selected record. 
+The Update operation enables editing of existing records. When the Edit option in the toolbar is selected and a row is chosen, the Gantt chart opens a dialog displaying the current values of the selected record.
 
 After the required modifications are submitted, a GraphQL mutation sends the updated record to the backend for processing.
 
 Open `src/App.jsx` and configure the `getMutation` function in the `GraphQLAdaptor` to return the appropriate GraphQL mutation for the update action (for example, `updateTask`).
 
-  ```ts
-  [App.jsx]
+```ts
+[App.jsx];
 const ganttDataManager = new DataManager({
-            url: 'http://localhost:xxxx/', // xxxx represents the port number.
-            adaptor: new GraphQLAdaptor({
-                // Map to { result, count } in your GraphQL payload
-                response: {
-                    result: 'getTasks.result',
-                    count:  'getTasks.count'
-                },
-                // READ: fetch flat tasks (no DataManagerInput)
-                query: 
-                `query getTasks {
-                    getTasks {
-                        count
-                        result {
-                            TaskID
-                            TaskName
-                            # add additional fields to fetch initially, e.g.:StartDate
-                        }
-                    }
-                }`,
-                mutation: {
-                    update: 'updateTask',
-                    insert: 'addTask',
-                    remove: 'deleteTask'
-                },
-                // mutation for perform update.
-                getMutation: function (action: any): string {
-                    if (action === 'update') {
-                        return `
-                        mutation UpdateTask($value: GanttTaskInput!) {
-                            updateTask(value: $value) {
-                                    TaskID
-                                    TaskName
-                                    # add additional fields to fetch initially, e.g.:StartDate
-                                }
-                        }`;
-                    }   
-                }
-            }),
-            crossDomain: true
-    });
-  ```
+  url: "http://localhost:xxxx/", // xxxx represents the port number.
+  adaptor: new GraphQLAdaptor({
+    // Map to { result, count } in your GraphQL payload
+    response: {
+      result: "getTasks.result",
+      count: "getTasks.count",
+    },
+    // READ: fetch flat tasks (no DataManagerInput)
+    query: `query getTasks {
+                  getTasks {
+                      count
+                      result {
+                          TaskID
+                          TaskName
+                          # add additional fields to fetch initially, e.g.:StartDate
+                      }
+                  }
+              }`,
+    mutation: {
+      update: "updateTask",
+      insert: "addTask",
+      remove: "deleteTask",
+    },
+    // mutation for perform update.
+    getMutation: function (action: any): string {
+      if (action === "update") {
+        return `
+                      mutation UpdateTask($value: GanttTaskInput!) {
+                          updateTask(value: $value) {
+                                  TaskID
+                                  TaskName
+                                  # add additional fields to fetch initially, e.g.:StartDate
+                              }
+                      }`;
+      }
+    },
+  }),
+  crossDomain: true,
+});
+```
 
 **Delete:**
 
@@ -664,18 +687,17 @@ The Delete operation enables removal of records from the application. When the `
 Open `src/App.jsx` and configure the `getMutation` function in the `GraphQLAdaptor` to return the delete mutation that matches the `deleteTask` mutation defined in the schema.
 
 ```ts
-  [App.jsx]
-  const ganttDataManager = new DataManager({
-            url: 'http://localhost:xxxx/', // xxxx represents the port number.
-            adaptor: new GraphQLAdaptor({
-                // Map to { result, count } in your GraphQL payload
-                response: {
-                    result: 'getTasks.result',
-                    count:  'getTasks.count'
-                },
-                // READ: fetch flat tasks (no DataManagerInput)
-                query: 
-                `query getTasks {
+[App.jsx];
+const ganttDataManager = new DataManager({
+  url: "http://localhost:xxxx/", // xxxx represents the port number.
+  adaptor: new GraphQLAdaptor({
+    // Map to { result, count } in your GraphQL payload
+    response: {
+      result: "getTasks.result",
+      count: "getTasks.count",
+    },
+    // READ: fetch flat tasks (no DataManagerInput)
+    query: `query getTasks {
                     getTasks {
                         count
                         result {
@@ -685,23 +707,23 @@ Open `src/App.jsx` and configure the `getMutation` function in the `GraphQLAdapt
                         }
                     }
                 }`,
-                mutation: {
-                    update: 'updateTask',
-                    insert: 'addTask',
-                    remove: 'deleteTask'
-                },
-                // mutation for perform delete.
-                getMutation: function (action: any): string {
-                    if (action === 'remove') {
-                        return `
+    mutation: {
+      update: "updateTask",
+      insert: "addTask",
+      remove: "deleteTask",
+    },
+    // mutation for perform delete.
+    getMutation: function (action: any): string {
+      if (action === "remove") {
+        return `
                         mutation DeleteTask($key: ID!) {
                             deleteTask(key: $key) 
                         }`;
-                    }   
-                }
-            }),
-            crossDomain: true
-    });
+      }
+    },
+  }),
+  crossDomain: true,
+});
 ```
 
 ## Overriding processResponse to handle mutation responses
@@ -709,6 +731,7 @@ Open `src/App.jsx` and configure the `getMutation` function in the `GraphQLAdapt
 By default the `GraphQLAdaptor` maps read queries that return `{ result, count }`. For CRUD actions the server often returns a single object (insert/update), a boolean (delete) or a different wrapper. To ensure the Gantt's `DataManager` correctly updates after mutations, override `processResponse` to normalize server responses into the shapes the adaptor expects.
 
 Key points:
+
 - Normalize single-item mutation responses into arrays when the client expects an array.
 - Preserve the `{ result, count }` structure for reads so paging and counts continue to work.
 - Fall back to `super.processResponse(...)` for any unhandled payloads.
@@ -716,52 +739,55 @@ Key points:
 Recommended adaptor implementation (reviewed and improved):
 
 ```js
-
-[App.jsx]
+[App.jsx];
 
 class GraphQLCrudAdaptor extends GraphQLAdaptor {
-    processResponse(resData, ds, query, xhr, request) {
-        if (resData && resData.data) {
-            const data = resData.data;
+  processResponse(resData, ds, query, xhr, request) {
+    if (resData && resData.data) {
+      const data = resData.data;
 
-            // READ - expected shape: { result: [...], count: N }
-            if (data.getTasks) {
-                return data.getTasks;
-            }
+      // READ - expected shape: { result: [...], count: N }
+      if (data.getTasks) {
+        return data.getTasks;
+      }
 
-            // UPDATE - normalize to array so DataManager can consume it
-            if (data.updateTask) {
-                const updated = Array.isArray(data.updateTask) ? data.updateTask : [data.updateTask];
-                return { result: updated, count: updated.length };
-            }
+      // UPDATE - normalize to array so DataManager can consume it
+      if (data.updateTask) {
+        const updated = Array.isArray(data.updateTask)
+          ? data.updateTask
+          : [data.updateTask];
+        return { result: updated, count: updated.length };
+      }
 
-            // INSERT - normalize to array
-            if (data.addTask) {
-                const added = Array.isArray(data.addTask) ? data.addTask : [data.addTask];
-                return { result: added, count: added.length };
-            }
+      // INSERT - normalize to array
+      if (data.addTask) {
+        const added = Array.isArray(data.addTask)
+          ? data.addTask
+          : [data.addTask];
+        return { result: added, count: added.length };
+      }
 
-            // DELETE - server may return boolean; return as-is so calling code can handle it
-            if (typeof data.deleteTask !== 'undefined') {
-                return { result: data.deleteTask };
-            }
-        }
-
-        // Fallback to default behavior
-        return super.processResponse(resData, ds, query, xhr, request);
+      // DELETE - server may return boolean; return as-is so calling code can handle it
+      if (typeof data.deleteTask !== "undefined") {
+        return { result: data.deleteTask };
+      }
     }
+
+    // Fallback to default behavior
+    return super.processResponse(resData, ds, query, xhr, request);
+  }
 }
 const ganttDataManager = new DataManager({
-    url: 'http://localhost:xxxx/',
-    adaptor: new GraphQLCrudAdaptor({ // Updated GraphQLAdaptor for CRUD operations
-        // Map to { result, count } in your GraphQL payload
-        response: {
-            result: 'getTasks.result',
-            count:  'getTasks.count'
-        },
-        // READ: fetch flat tasks (no DataManagerInput)
-        query: 
-        `query getTasks {
+  url: "http://localhost:xxxx/",
+  adaptor: new GraphQLCrudAdaptor({
+    // Updated GraphQLAdaptor for CRUD operations
+    // Map to { result, count } in your GraphQL payload
+    response: {
+      result: "getTasks.result",
+      count: "getTasks.count",
+    },
+    // READ: fetch flat tasks (no DataManagerInput)
+    query: `query getTasks {
             getTasks {
                 count
                 result {
@@ -771,13 +797,13 @@ const ganttDataManager = new DataManager({
                 }
             }
         }`,
-        mutation: {
-            update: 'updateTask',
-            insert: 'addTask',
-            remove: 'deleteTask'
-        }
-    }),
-    crossDomain: true
+    mutation: {
+      update: "updateTask",
+      insert: "addTask",
+      remove: "deleteTask",
+    },
+  }),
+  crossDomain: true,
 });
 ```
 
@@ -786,6 +812,7 @@ const ganttDataManager = new DataManager({
 Open a terminal or Command Prompt. Run the server application first, then start the client application.
 
 ### Run the GraphQL server
+
 - Run the following commands to start the server:
 
 ```bash
@@ -794,7 +821,8 @@ Open a terminal or Command Prompt. Run the server application first, then start 
 ```
 
 ### Run the client
- - Execute the below commands to run the client application:
+
+- Execute the below commands to run the client application:
 
 ```bash
     cd GanttClient
@@ -813,8 +841,8 @@ Open a terminal or Command Prompt. Run the server application first, then start 
 
 For the complete working implementation of this example, refer to the [GitHub](https://github.com/SyncfusionExamples/ej2-react-gantt-chart-samples/tree/master/GraphQlAdaptor) repository.
 
-
 ## See also
+
 - [Hybrid data binding](https://ej2.syncfusion.com/react/documentation/gantt/connecting-to-adaptors/remote-save-adaptor)
 - [RESTful CRUD Operations in ASP.NET Web Forms](https://ej2.syncfusion.com/react/documentation/gantt/connecting-to-adaptors/web-method-adaptor)
 - [Data binding](https://ej2.syncfusion.com/react/documentation/gantt/data-binding)

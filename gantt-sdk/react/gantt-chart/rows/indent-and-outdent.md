@@ -14,10 +14,10 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component provides built-in support for indenting and outdenting rows, allowing hierarchy levels to be adjusted within the Gantt chart.
 
- * **Indent** – Moves a selected row one level deeper, making it the last child of its previous row.
- * **Outdent** – Shifts a row one level up, placing it as a sibling to its parent.
+- **Indent** – Moves a selected row one level deeper, making it the last child of its previous row.
+- **Outdent** – Shifts a row one level up, placing it as a sibling to its parent.
 
-To enable indent and outdent functionality, set [editSettings.allowEditing](https://ej2.syncfusion.com/react/documentation/api/gantt/editSettings#allowediting) to **true**, inject `Edit` and `Selection` in the Gantt Chart component, and use either the **built-in context menu** or [toolbaritems](https://ej2.syncfusion.com/react/documentation/api/gantt/toolbarItem/) to perform indent and outdent actions.
+To enable indent and outdent functionality, set [editSettings.allowEditing](https://ej2.syncfusion.com/react/documentation/api/gantt/editSettings#allowediting) to **true**, inject `Edit` and `Selection` in the Gantt Chart component, and use either the **built-in context menu** or [ToolbarItem](https://ej2.syncfusion.com/react/documentation/api/gantt/toolbarItem) to perform indent and outdent actions.
 
 The following sample demonstrates how to enable indent and outdent functionalities in the Gantt using the [toolbar](https://ej2.syncfusion.com/react/documentation/api/gantt#toolbar) property.
 
@@ -32,7 +32,7 @@ The following sample demonstrates how to enable indent and outdent functionaliti
 {% include code-snippet/gantt-sdk/react/gantt-chart/indent-outdent-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/indent-outdent-cs1" %}
 
 ## Indent and outdent a row programmatically
@@ -52,7 +52,7 @@ The following sample demonstrates how to programmatically select row index **2**
 {% include code-snippet/gantt-sdk/react/gantt-chart/indent-outdent-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/indent-outdent-cs2" %}
 
 ## Retrieve Indent and outdent details
@@ -70,9 +70,9 @@ You can retrieve indent and outdent details using the [actionComplete](https://e
 {% include code-snippet/gantt-sdk/react/gantt-chart/indent-outdent-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/indent-outdent-cs3" %}
 
-## Limitation 
+## Limitation
 
-* The indent and outdent feature does not support selecting and modifying multiple rows simultaneously.
+- The indent and outdent feature does not support selecting and modifying multiple rows simultaneously.

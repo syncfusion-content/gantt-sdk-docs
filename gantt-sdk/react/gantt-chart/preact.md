@@ -45,7 +45,7 @@ During project creation, the CLI prompts for several configuration options. Choo
 
 - **Project language**: JavaScript or TypeScript (based on your preference)
 - **Use router?**: Select "Yes" for multi-page applications, otherwise select "No"
-- **Prerender app (SSG)?**: Select "Yes" for static site generation, otherwise select "No" for a standard setup
+- **Pre render app (SSG)?**: Select "Yes" for static site generation, otherwise select "No" for a standard setup
 - **Use ESLint?**: Select "Yes" for code quality checks or "No" for a minimal setup
 
 > Note: A minimal configuration (without router, pre-rendering, and ESLint) is used in this documentation for simplicity.
@@ -87,17 +87,18 @@ Import the basic Gantt Chart styles in `src/style.css`:
 {% endtabs %}
 
 > **Note:** When using features like editing, toolbar, filtering, or dialogs, you need to import additional component styles:
+>
 > ```css
 > /* For editing, toolbar, and dialog features */
-> @import '../node_modules/@syncfusion/ej2-calendars/styles/tailwind3.css';
-> @import '../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css';
-> @import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
-> @import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
-> @import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
-> @import '../node_modules/@syncfusion/ej2-notifications/styles/tailwind3.css';
-> 
+> @import "../node_modules/@syncfusion/ej2-calendars/styles/tailwind3.css";
+> @import "../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css";
+> @import "../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css";
+> @import "../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css";
+> @import "../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css";
+> @import "../node_modules/@syncfusion/ej2-notifications/styles/tailwind3.css";
+>
 > /* For rich text editor in dialog notes tab */
-> @import '../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css';
+> @import "../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css";
 > ```
 
 ## Create sample task data
@@ -122,25 +123,25 @@ Map your data fields to Gantt Chart properties using `taskFields`:
 
 ```javascript
 const taskFields = {
-  id: 'TaskID',
-  name: 'TaskName',
-  startDate: 'StartDate',
-  duration: 'Duration',
-  progress: 'Progress',
-  parentID: 'ParentID'
+  id: "TaskID",
+  name: "TaskName",
+  startDate: "StartDate",
+  duration: "Duration",
+  progress: "Progress",
+  parentID: "ParentID",
 };
 ```
 
 ### Field mapping reference
 
-| Property | Description | Required |
-|----------|-------------|----------|
-| `id` | Unique task identifier | Yes |
-| `name` | Task display name | Yes |
-| `startDate` | Task start date | Yes |
-| `duration` | Task duration in days | Yes |
-| `progress` | Task completion percentage (0-100) | No |
-| `parentID` | Parent task ID for hierarchy | No |
+| Property    | Description                        | Required |
+| ----------- | ---------------------------------- | -------- |
+| `id`        | Unique task identifier             | Yes      |
+| `name`      | Task display name                  | Yes      |
+| `startDate` | Task start date                    | Yes      |
+| `duration`  | Task duration in days              | Yes      |
+| `progress`  | Task completion percentage (0-100) | No       |
+| `parentID`  | Parent task ID for hierarchy       | No       |
 
 ## Render the Gantt component
 
@@ -154,28 +155,28 @@ import { render } from 'preact';
 import './style.css';
 
 function App() {
-  const taskData = [
-    {TaskID: 1, TaskName: 'Project initiation', StartDate: new Date('2024-04-01'), EndDate: new Date('2024-04-15')},
-    {TaskID: 2, TaskName: 'Identify site location', StartDate: new Date('2024-04-01'), Duration: 4, Progress: 70, ParentID: 1},
-    {TaskID: 3, TaskName: 'Perform site survey', StartDate: new Date('2024-04-01'), Duration: 4, Progress: 50, ParentID: 1},
-    {TaskID: 4, TaskName: 'Soil testing', StartDate: new Date('2024-04-01'), Duration: 3, Progress: 40, ParentID: 1},
-    {TaskID: 5, TaskName: 'Project estimation', StartDate: new Date('2024-04-08'), EndDate: new Date('2024-04-18')},
-    {TaskID: 6, TaskName: 'Develop floor plan', StartDate: new Date('2024-04-08'), Duration: 5, Progress: 30, ParentID: 5},
-    {TaskID: 7, TaskName: 'Estimate project cost', StartDate: new Date('2024-04-08'), Duration: 5, Progress: 20, ParentID: 5}
-  ];
+const taskData = [
+{TaskID: 1, TaskName: 'Project initiation', StartDate: new Date('2024-04-01'), EndDate: new Date('2024-04-15')},
+{TaskID: 2, TaskName: 'Identify site location', StartDate: new Date('2024-04-01'), Duration: 4, Progress: 70, ParentID: 1},
+{TaskID: 3, TaskName: 'Perform site survey', StartDate: new Date('2024-04-01'), Duration: 4, Progress: 50, ParentID: 1},
+{TaskID: 4, TaskName: 'Soil testing', StartDate: new Date('2024-04-01'), Duration: 3, Progress: 40, ParentID: 1},
+{TaskID: 5, TaskName: 'Project estimation', StartDate: new Date('2024-04-08'), EndDate: new Date('2024-04-18')},
+{TaskID: 6, TaskName: 'Develop floor plan', StartDate: new Date('2024-04-08'), Duration: 5, Progress: 30, ParentID: 5},
+{TaskID: 7, TaskName: 'Estimate project cost', StartDate: new Date('2024-04-08'), Duration: 5, Progress: 20, ParentID: 5}
+];
 
-  const taskFields = {
-    id: 'TaskID',
-    name: 'TaskName',
-    startDate: 'StartDate',
-    duration: 'Duration',
-    progress: 'Progress',
-    parentID: 'ParentID'
-  };
+const taskFields = {
+id: 'TaskID',
+name: 'TaskName',
+startDate: 'StartDate',
+duration: 'Duration',
+progress: 'Progress',
+parentID: 'ParentID'
+};
 
-  return (
-    <GanttComponent dataSource={taskData} taskFields={taskFields} height="450px" />
-  );
+return (
+<GanttComponent dataSource={taskData} taskFields={taskFields} height="450px" />
+);
 }
 
 render(<App />, document.getElementById('app'));
