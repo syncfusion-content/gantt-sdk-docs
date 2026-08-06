@@ -448,14 +448,14 @@ Task Dependencies in the Blazor Gantt Chart component provide a powerful tool fo
 
 For more advanced topics related to task dependencies and project management in the Blazor Gantt Chart, refer to the following resources:
 
-1. [Predecessor Validation](https://blazor.syncfusion.com/documentation/gantt-chart/predecessor-validation): Learn how to validate and manage task dependencies to ensure project integrity.
+1. [Predecessor Validation](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/predecessor-validation): Learn how to validate and manage task dependencies to ensure project integrity.
 
-2. [Critical Path](https://blazor.syncfusion.com/documentation/gantt-chart/criticalpath): Understand how to identify and visualize the critical path in your project, which is crucial for project timeline management.
+2. [Critical Path](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/criticalpath): Understand how to identify and visualize the critical path in your project, which is crucial for project timeline management.
 
-3. [Baseline](https://blazor.syncfusion.com/documentation/gantt-chart/baseline): Explore how to set and compare task progress against a baseline schedule.
+3. [Baseline](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/baseline): Explore how to set and compare task progress against a baseline schedule.
 
-4. [Resource Allocation](https://blazor.syncfusion.com/documentation/gantt-chart/resources): Discover how to manage resources in conjunction with task dependencies for optimal project planning.
+4. [Resource Allocation](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/resources): Discover how to manage resources in conjunction with task dependencies for optimal project planning.
 
-5. [Timeline](https://blazor.syncfusion.com/documentation/gantt-chart/time-line): Understand how to customize the timeline view to better visualize your project schedule and dependencies.
+5. [Timeline](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/time-line): Understand how to customize the timeline view to better visualize your project schedule and dependencies.
 
-For more detailed information and advanced usage scenarios, refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart documentation](https://blazor.syncfusion.com/documentation/gantt-chart/getting-started).
+For more detailed information and advanced usage scenarios, refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart documentation](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/getting-started).

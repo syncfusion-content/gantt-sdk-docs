@@ -81,9 +81,9 @@ args.ValidationMode.PreserveLinkWithEditing | true | In this validation mode, th
 
 By default, the [PreserveLinkWithEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.ValidateMode.html#Syncfusion_Blazor_Gantt_ValidateMode_PreserveLinkWithEditing) validation mode is enabled, so the predecessors are updated with offset values.
 
-![Blazor Gantt Chart updating offset on edit actions](images/blazor-gantt-chart-preserve-link-with-editing.gif)
+![Blazor Gantt Chart updating offset on edit actions](images/blazor-gantt-chart-preserve-link-with-editing.webp)
 
-The following code example explains enabling the [RespectLink](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.ValidateMode.html#Syncfusion_Blazor_Gantt_ValidateMode_RespectLink) validation mode while editing the linked tasks in the [TaskbarEditing](https://blazor.syncfusion.com/documentation/gantt-chart/events#taskbarediting) event.
+The following code example explains enabling the [RespectLink](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.ValidateMode.html#Syncfusion_Blazor_Gantt_ValidateMode_RespectLink) validation mode while editing the linked tasks in the [TaskbarEditing](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#taskbarediting) event.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}

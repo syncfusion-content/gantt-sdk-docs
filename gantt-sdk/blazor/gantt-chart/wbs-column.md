@@ -99,7 +99,7 @@ WBS codes follow a hierarchical structure: parent tasks use sequential numbers (
 
 ## Performance Optimization with Conditional Updates
 
-To improve performance with large datasets, control WBS code recalculation using the [DataBound](https://blazor.syncfusion.com/documentation/gantt-chart/events#databound) and [RowDropped](https://blazor.syncfusion.com/documentation/gantt-chart/events#rowdropped) events. This approach ensures updates occur only when necessary, such as during drag-and-drop operations.
+To improve performance with large datasets, control WBS code recalculation using the [DataBound](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#databound) and [RowDropped](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#rowdropped) events. This approach ensures updates occur only when necessary, such as during drag-and-drop operations.
 
 The example below demonstrates how WBS auto-update is conditionally triggered during row drag-and-drop, avoiding unnecessary recalculations during other interactions.
 
@@ -207,9 +207,9 @@ The WBS feature has a few limitations in the Gantt component:
 * WBS Code and WBS Predecessor fields cannot be mapped directly from the data source as they are generated dynamically by the component based on task hierarchy.
 
 ## See Also
-- [How to define columns manually in Blazor Gantt Chart?](https://blazor.syncfusion.com/documentation/gantt-chart/columns)
-- [How to customize column headers in Blazor Gantt Chart?](https://blazor.syncfusion.com/documentation/gantt-chart/column-template)
-- [How to use the column menu in Blazor Gantt Chart?](https://blazor.syncfusion.com/documentation/gantt-chart/column-menu)
-- [How to reorder columns in Blazor Gantt Chart?](https://blazor.syncfusion.com/documentation/gantt-chart/column-reordering)
-- [How to resize columns in Blazor Gantt Chart?](https://blazor.syncfusion.com/documentation/gantt-chart/column-resizing)
-- [How to use column templates in Blazor Gantt Chart?](https://blazor.syncfusion.com/documentation/gantt-chart/column-template)
+- [How to define columns manually in Blazor Gantt Chart?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/columns)
+- [How to customize column headers in Blazor Gantt Chart?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/column-template)
+- [How to use the column menu in Blazor Gantt Chart?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/column-menu)
+- [How to reorder columns in Blazor Gantt Chart?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/column-reordering)
+- [How to resize columns in Blazor Gantt Chart?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/column-resizing)
+- [How to use column templates in Blazor Gantt Chart?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/column-template)

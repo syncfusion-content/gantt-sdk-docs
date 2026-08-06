@@ -13,7 +13,7 @@ The Syncfusion Blazor Gantt Chart component supports exporting project data to E
  
 To enable Excel or CSV export functionality, set the [AllowExcelExport](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowExcelExport) property to **true**.
 
-You can trigger export operations using the [ExportToExcelAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ExportToExcelAsync_Syncfusion_Blazor_Grids_ExcelExportProperties_) or [ExportToCsvAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ExportToCsvAsync_Syncfusion_Blazor_Grids_ExcelExportProperties_) methods, typically within the [OnToolbarClick](https://blazor.syncfusion.com/documentation/gantt-chart/events#ontoolbarclick) event.
+You can trigger export operations using the [ExportToExcelAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ExportToExcelAsync_Syncfusion_Blazor_Grids_ExcelExportProperties_) or [ExportToCsvAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ExportToCsvAsync_Syncfusion_Blazor_Grids_ExcelExportProperties_) methods, typically within the [OnToolbarClick](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#ontoolbarclick) event.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -388,7 +388,7 @@ To include hidden columns during Excel or CSV export in the Gantt Chart componen
 
 ## Add header and footer to export
 
-To add header and footer content to exported Excel or CSV files in the Gantt component, configure the `Header` and `Footer` properties within [ExcelExportProperties](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ExportToExcelAsync_Syncfusion_Blazor_Grids_ExcelExportProperties_) during the [OnToolbarClick](https://blazor.syncfusion.com/documentation/gantt-chart/events#ontoolbarclick) event. This allows you to define custom content that appears at the top and bottom of the exported document.
+To add header and footer content to exported Excel or CSV files in the Gantt component, configure the `Header` and `Footer` properties within [ExcelExportProperties](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ExportToExcelAsync_Syncfusion_Blazor_Grids_ExcelExportProperties_) during the [OnToolbarClick](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#ontoolbarclick) event. This allows you to define custom content that appears at the top and bottom of the exported document.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -763,4 +763,4 @@ To assign a custom name to the exported Excel or CSV file in the Gantt Chart com
 {% previewsample "https://blazorplayground.syncfusion.com/embed/LZrRNGrthhTKvOpW?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 
-N> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=bootstrap4) to know how to render and configure the Gantt.
+N> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=fluent2) to know how to render and configure the Gantt.

@@ -320,9 +320,9 @@ The following table describes different types of editing modes available in Gant
 
 Action |Description
 -----|-----
-[Cell editing](https://blazor.syncfusion.com/documentation/gantt-chart/editing-tasks#cell-editing) | To perform `double tap` on a specific cell, initiate the cell to be in edit state.
-[Dialog editing](https://blazor.syncfusion.com/documentation/gantt-chart/editing-tasks#dialog-editing) | To perform `double tap` on a specific row, initiate the edit dialog to be opened.
-[Taskbar editing](https://blazor.syncfusion.com/documentation/gantt-chart/taskbar-editing) | Taskbar editing action is initiated using the `tap` action on the taskbar. <br> **Parent taskbar** : Once you tap on the parent taskbar, it will be changed to editing state. Perform only dragging action on parent taskbar editing.<br>![Blazor Gantt Chart displays editing parent taskbar in touch mode](images/editingparent.webp) <br><br> **Child taskbar** : Once you tap the child taskbar, it will be changed to editing state.<br>![Blazor Gantt Chart displays editing parent taskbar in touch mode](images/editingstate.webp) <br> <br> **Dragging taskbar** : To drag a taskbar to the left or right in editing state. <br> <br> **Resizing taskbar** : To resize a taskbar, drag the left/right resize icon. <br> <br> **Progress resizing** : To change the progress, drag the progress resize icon to the left or right direction.
+[Cell editing](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/editing-tasks) | To perform `double tap` on a specific cell, initiate the cell to be in edit state.
+[Dialog editing](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/editing-tasks) | To perform `double tap` on a specific row, initiate the edit dialog to be opened.
+[Taskbar editing](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/taskbar-editing) | Taskbar editing action is initiated using the `tap` action on the taskbar. <br> **Parent taskbar** : Once you tap on the parent taskbar, it will be changed to editing state. Perform only dragging action on parent taskbar editing.<br>![Blazor Gantt Chart displays editing parent taskbar in touch mode](images/editingparent.webp) <br><br> **Child taskbar** : Once you tap the child taskbar, it will be changed to editing state.<br>![Blazor Gantt Chart displays editing parent taskbar in touch mode](images/editingstate.webp) <br> <br> **Dragging taskbar** : To drag a taskbar to the left or right in editing state. <br> <br> **Resizing taskbar** : To resize a taskbar, drag the left/right resize icon. <br> <br> **Progress resizing** : To change the progress, drag the progress resize icon to the left or right direction.
 
 ### Task dependency editing
 
@@ -484,7 +484,7 @@ The taskbar editing tooltip can be customized using the [GanttTooltipSettings.Ed
 {% previewsample "https://blazorplayground.syncfusion.com/embed/VZhdNGBjKXJOOTyr?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 ## See also
-- [How to add new tasks?](https://blazor.syncfusion.com/documentation/gantt-chart/adding-new-tasks)
-- [How to delete tasks?](https://blazor.syncfusion.com/documentation/gantt-chart/deleting-tasks)
-- [How to manage task dependencies?](https://blazor.syncfusion.com/documentation/gantt-chart/task-dependencies)
-- [How to configure critical path?](https://blazor.syncfusion.com/documentation/gantt-chart/criticalpath)
+- [How to add new tasks?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/adding-new-tasks)
+- [How to delete tasks?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/deleting-tasks)
+- [How to manage task dependencies?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/task-dependencies)
+- [How to configure critical path?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/criticalpath)
