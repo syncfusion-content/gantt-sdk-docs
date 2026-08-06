@@ -1,6 +1,6 @@
 ---
 layout: post
-title: State Persistence in JavaScript Gantt | Syncfusion
+title: State Persistence in JavaScript Gantt Chart | Syncfusion
 description: Learn how to enable state persistence in the Syncfusion JavaScript Gantt Chart to save and restore columns, filters, and settings across sessions.
 keywords: javascript gantt state persistence, local storage, session state, settings storage, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/state-persistence

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Taskbar Editing in JavaScript Gantt | Syncfusion
+title: Taskbar Editing in JavaScript Gantt Chart | Syncfusion
 description: Learn to edit tasks via taskbar interactions in Syncfusion JavaScript Gantt Chart for intuitive and interactive project timeline adjustments and management.
 keywords: javascript gantt taskbar editing, drag taskbar, resize taskbar, edit taskbar, task drag, synchronfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/managing-tasks/task-bar-editing

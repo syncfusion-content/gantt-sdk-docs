@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Row Drag and Drop in JavaScript Gantt | Syncfusion
+title: Row Drag and Drop in JavaScript Gantt Chart | Syncfusion
 description: Learn how to row drag and drop in Syncfusion JavaScript Gantt Chart to reorder tasks and reorganize project structure with intuitive interactions.
 keywords: javascript gantt row drag drop, drag rows, reorder tasks, drag and drop, row reordering, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/rows/drag-and-drop

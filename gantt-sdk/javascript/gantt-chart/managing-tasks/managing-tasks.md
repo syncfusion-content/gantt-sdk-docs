@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Managing Tasks in JavaScript Gantt | Syncfusion
+title: Managing Tasks in JavaScript Gantt Chart | Syncfusion
 description: Master task management in Syncfusion JavaScript Gantt Chart with CRUD operations, editing modes, and hierarchical task organization for projects.
 keywords: javascript gantt manage tasks, task management, create tasks, update tasks, delete tasks, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/managing-tasks/managing-tasks

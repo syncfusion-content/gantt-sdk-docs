@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resource View in JavaScript Gantt | Syncfusion
+title: Resource View in JavaScript Gantt Chart | Syncfusion
 description: Learn how to configure resource view in Syncfusion JavaScript Gantt Chart to visualize tasks hierarchically by resource, showing workload in timeline.
 keywords: javascript gantt resource view, hierarchical view, resource allocation, task grouping, resource management, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/resource-view

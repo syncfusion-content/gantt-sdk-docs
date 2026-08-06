@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Task Constraints in JavaScript Gantt | Syncfusion
+title: Task Constraints in JavaScript Gantt Chart | Syncfusion
 description: Learn how to configure task constraints in Syncfusion JavaScript Gantt Chart to enforce scheduling rules, deadlines, and control task start and end dates.
 keywords: javascript gantt task constraints, constraint types, scheduling rules, deadlines, task dates, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/task-constraints

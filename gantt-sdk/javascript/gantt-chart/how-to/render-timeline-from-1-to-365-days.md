@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Render Timeline in JavaScript Gantt | Syncfusion
+title: Render Timeline in JavaScript Gantt Chart | Syncfusion
 description: Learn how to render custom timeline in Syncfusion JavaScript Gantt Chart for extended project schedule visualization and detailed time tracking.
 keywords: javascript gantt timeline, custom timeline, timeline rendering, 365 days, extended timeline, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/how-to/render-timeline-from-1-to-365-days

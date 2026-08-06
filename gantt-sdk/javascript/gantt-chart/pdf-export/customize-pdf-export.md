@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize PDF Export in JavaScript Gantt | Syncfusion
+title: Customize PDF Export in JavaScript Gantt Chart | Syncfusion
 description: Learn how to customize PDF export in Syncfusion JavaScript Gantt Chart with themes, styles, columns, and layout options for professional project reports.
 keywords: javascript gantt customize pdf, pdf customization, styling export, columns export, themes, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/pdf-export/customize-pdf-export

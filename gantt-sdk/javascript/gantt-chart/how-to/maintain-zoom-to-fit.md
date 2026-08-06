@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Maintain Zoom to Fit in JavaScript Gantt | Syncfusion
+title: Maintain Zoom to Fit in JavaScript Gantt Chart | Syncfusion
 description: Learn how to maintain zoom-to-fit in Syncfusion JavaScript Gantt Chart during edits and dynamic data source changes for consistent view.
 keywords: javascript gantt zoom to fit, zoom level, auto zoom, fit timeline, zoom functionality, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/how-to/maintain-zoom-to-fit

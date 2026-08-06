@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Loading Animation in JavaScript Gantt | Syncfusion
+title: Loading Animation in JavaScript Gantt Chart | Syncfusion
 description: Learn how to configure loading indicators in Syncfusion JavaScript Gantt Chart to provide visual feedback during data loading and asynchronous operations.
 keywords: javascript gantt loading animation, spinner, loading indicator, async data, user feedback, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/loading-animation

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Excel Like Filter in JavaScript Gantt | Syncfusion
+title: Excel Like Filter in JavaScript Gantt Chart | Syncfusion
 description: Learn how to use Excel-like filtering in Syncfusion JavaScript Gantt Chart with familiar filter options and advanced conditions on large datasets.
 keywords: javascript gantt excel filter, excel like filter, multi-column filter, advanced filter, data filtering, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/filtering/excel-like-filter

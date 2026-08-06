@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization in JavaScript Gantt | Syncfusion
+title: Localization in JavaScript Gantt Chart | Syncfusion
 description: Learn how to configure localization and globalization in Syncfusion JavaScript Gantt Chartfor multi-language and multi-region project management support.
 keywords: javascript gantt localization, globalization, multi-language, rtl, cultural formatting, internationalization, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/global-local

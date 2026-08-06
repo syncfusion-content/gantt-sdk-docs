@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Task Dependency in JavaScript Gantt | Syncfusion
+title: Task Dependency in JavaScript Gantt Chart | Syncfusion
 description: Learn how to configure task dependencies in Syncfusion JavaScript Gantt Chart to establish relationships between tasks and manage project scheduling.
 keywords: javascript gantt task dependency, predecessors, task relationships, dependency types, predecessor links, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/task-dependency

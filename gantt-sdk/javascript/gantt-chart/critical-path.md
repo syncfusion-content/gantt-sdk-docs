@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Critical Path in JavaScript Gantt | Syncfusion
+title: Critical Path in JavaScript Gantt Chart | Syncfusion
 description: Learn how to enable and customize critical path analysis in the Syncfusion JavaScript Gantt Chart to highlight tasks that affect project completion.
 keywords: javascript gantt critical path, slack, float, task dependencies, project duration, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/critical-path

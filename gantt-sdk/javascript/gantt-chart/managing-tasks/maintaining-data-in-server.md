@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Maintain Data on Server in JavaScript Gantt | Syncfusion
+title: Maintain Data on Server in JavaScript Gantt Chart | Syncfusion
 description: Learn to maintain task data on server in Syncfusion JavaScript Gantt Chart with synchronization, CRUD operations, and data persistence strategies.
 keywords: javascript gantt maintain server data, data synchronization, crud operations, server sync, persistance, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/managing-tasks/maintaining-data-in-server

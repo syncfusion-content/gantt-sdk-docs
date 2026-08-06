@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Multi Taskbar in JavaScript Gantt | Syncfusion
+title: Multi Taskbar in JavaScript Gantt Chart | Syncfusion
 description: Learn how to configure multi taskbar in Syncfusion JavaScript Gantt Chart to display multiple tasks per resource and visualize workloads and overallocation.
 keywords: javascript gantt multi taskbar, resource view, resource taskbar, task allocation, resource management, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/multi-taskbar

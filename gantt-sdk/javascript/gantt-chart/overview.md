@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of JavaScript Gantt | Syncfusion
+title: Overview of JavaScript Gantt Chart | Syncfusion
 description: Learn how to use Syncfusion JavaScript Gantt Chart control with key features for project scheduling, task management, and timeline visualization.
 keywords: javascript gantt overview, gantt chart features, project management, timeline, task scheduling, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/overview

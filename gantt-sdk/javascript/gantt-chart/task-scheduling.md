@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Task Scheduling in JavaScript Gantt | Syncfusion
+title: Task Scheduling in JavaScript Gantt Chart | Syncfusion
 description: Master task scheduling in Syncfusion JavaScript Gantt Chart with automatic dates, duration calculations, and dependency-driven schedule management.
 keywords: javascript gantt task scheduling, schedule calculation, duration, dates, auto scheduling, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/task-scheduling

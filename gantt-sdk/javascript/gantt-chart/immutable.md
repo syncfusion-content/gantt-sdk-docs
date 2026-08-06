@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Immutable Mode in JavaScript Gantt | Syncfusion
+title: Immutable Mode in JavaScript Gantt Chart | Syncfusion
 description: Learn how to enable immutable mode in the Syncfusion JavaScript Gantt Chart for better rendering performance and data updates.
 keywords: javascript gantt immutable mode, performance optimization, rendering, large datasets, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/immutable

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in JavaScript Gantt | Syncfusion
+title: Accessibility in JavaScript Gantt Chart | Syncfusion
 description: Learn about accessibility features in the Syncfusion JavaScript Gantt Chart, including WCAG 2.2 compliance, keyboard navigation, and screen reader support.
 keywords: javascript gantt accessibility, wcag 2.2, keyboard navigation, screen reader, aria, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/accessibility

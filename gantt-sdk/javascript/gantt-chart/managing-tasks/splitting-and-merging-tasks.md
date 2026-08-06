@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Split and Merge Tasks in JavaScript Gantt | Syncfusion
+title: Split and Merge Tasks in JavaScript Gantt Chart | Syncfusion
 description: Learn how to split and merge tasks in Syncfusion JavaScript Gantt Chart to create task breaks, manage non-contiguous work, and flexible project scheduling.
 keywords: javascript gantt split merge tasks, task splitting, task merging, work breaks, non-contiguous, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/managing-tasks/splitting-and-merging-tasks

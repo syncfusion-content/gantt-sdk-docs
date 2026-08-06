@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Indent and Outdent in JavaScript Gantt | Syncfusion
+title: Indent and Outdent in JavaScript Gantt Chart | Syncfusion
 description: Learn to indent and outdent tasks in Syncfusion JavaScript Gantt Chart to organize task hierarchy and manage project structure effectively.
 keywords: javascript gantt indent, outdent, task hierarchy, promote task, demote task, hierarchy management, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/managing-tasks/in-dent-and-out-dent

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in JavaScript Gantt | Syncfusion
+title: Data Binding in JavaScript Gantt Chart | Syncfusion
 description: Learn data binding in Syncfusion JavaScript Gantt Chart with local arrays, remote data, DataManager, and dynamic data source updates for project management.
 keywords: javascript gantt data binding, datasource, datamanager, local data, remote data, hierarchy, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/data-binding

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Key Elements in JavaScript Gantt | Syncfusion
+title: Key Elements in JavaScript Gantt Chart | Syncfusion
 description: Learn about key UI elements in Syncfusion JavaScript Gantt Chart including timeline, taskbar, grid columns, and interactive components for project management.
 keywords: javascript gantt ui elements, gantt components, timeline, taskbar, grid, project management, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/key-elements

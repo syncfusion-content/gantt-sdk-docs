@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Context Menu in JavaScript Gantt | Syncfusion
+title: Context Menu in JavaScript Gantt Chart | Syncfusion
 description: Learn how to configure context menu in Syncfusion JavaScript Gantt Chart with built-in and custom menu items for task and project management actions.
 keywords: javascript gantt context menu, right-click menu, task operations, column menu, sorting, filtering, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/context-menu

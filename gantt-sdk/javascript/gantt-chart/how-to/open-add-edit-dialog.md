@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Open Add and Edit Dialogs in Gantt | Syncfusion
+title: Open Add and Edit Dialogs in Gantt Chart | Syncfusion
 description: Learn how to open add and edit dialogs programmatically in Syncfusion JavaScript Gantt Chart for efficient for task management workflows.
 keywords: javascript gantt open dialog, add dialog, edit dialog, task creation, programmatic dialog, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/how-to/open-add-edit-dialog

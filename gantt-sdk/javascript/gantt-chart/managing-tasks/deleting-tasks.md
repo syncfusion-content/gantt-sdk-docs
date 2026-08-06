@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deleting Tasks in JavaScript Gantt | Syncfusion
+title: Deleting Tasks in JavaScript Gantt Chart | Syncfusion
 description: Learn to delete tasks in Syncfusion JavaScript Gantt Chart including methods for removing single and multiple tasks from project schedules.
 keywords: javascript gantt delete task, remove task, task deletion, delete multiple, cascading delete, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/managing-tasks/deleting-tasks

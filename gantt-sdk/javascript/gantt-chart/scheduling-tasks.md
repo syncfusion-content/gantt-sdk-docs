@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scheduling Tasks in JavaScript Gantt | Syncfusion
+title: Scheduling Tasks in JavaScript Gantt Chart | Syncfusion
 description: Learn how to manage task scheduling in the Syncfusion JavaScript Gantt Chart with task modes, duration units, working time, and holidays.
 keywords: javascript gantt scheduling, task scheduling, date calculations, dependencies, constraints, timeline, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/scheduling-tasks

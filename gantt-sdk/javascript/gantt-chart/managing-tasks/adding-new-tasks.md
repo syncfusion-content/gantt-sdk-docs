@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding New Tasks in JavaScript Gantt | Syncfusion
+title: Adding New Tasks in JavaScript Gantt Chart | Syncfusion
 description: Learn to add new tasks in Syncfusion JavaScript Gantt Chart through dialogs, toolbars, and programmatic methods for efficient project task management.
 keywords: javascript gantt add task, adding tasks, new task, create task, task creation, add dialog, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/managing-tasks/adding-new-tasks

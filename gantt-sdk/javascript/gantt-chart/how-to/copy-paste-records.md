@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Copy and Paste Records in Gantt | Syncfusion
+title: Copy and Paste Records in Gantt Chart | Syncfusion
 description: Learn to copy and paste task records in Syncfusion JavaScript Gantt Chart using context menus and programmatic methods for efficient task duplication.
 keywords: javascript gantt copy paste, duplicate records, task duplication, context menu, copy tasks, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/how-to/copy-paste-records

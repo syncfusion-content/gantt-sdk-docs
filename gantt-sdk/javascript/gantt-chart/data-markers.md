@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Markers in JavaScript Gantt | Syncfusion
+title: Data Markers in JavaScript Gantt Chart | Syncfusion
 description: Implement data markers in Syncfusion JavaScript Gantt Chart to highlight task events, milestones, and important dates for effective project visualization.
 keywords: javascript gantt data markers, task markers, milestone markers, event markers, visual indicators, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/data-markers

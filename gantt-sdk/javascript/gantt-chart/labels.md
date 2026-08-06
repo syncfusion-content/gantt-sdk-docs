@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Task Labels in JavaScript Gantt | Syncfusion
+title: Task Labels in JavaScript Gantt Chart | Syncfusion
 description: Learn how to configure taskbar labels in Syncfusion JavaScript Gantt Chart to display task information and custom templates for better project visualization.
 keywords: javascript gantt task labels, taskbar labels, label positioning, custom labels, data visualization, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/labels

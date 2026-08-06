@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom Fields in JavaScript Gantt | Syncfusion
+title: Custom Fields in JavaScript Gantt Chart | Syncfusion
 description: Learn how to configure custom fields custom fields in Syncfusion JavaScript Gantt Charts add/edit dialogs to manage additional project data.
 keywords: javascript gantt custom fields, custom columns, add dialog, edit dialog, custom properties, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/how-to/custom-field
