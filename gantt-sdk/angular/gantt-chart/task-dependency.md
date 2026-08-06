@@ -38,6 +38,12 @@ The following example establishes dependencies:
 
 This code renders connector lines for dependencies like '2FS', updating taskbars on changes.
 
+> - Dependencies between tasks under the same parent are not supported.
+> - Dependencies between tasks in different parent groups are supported when the `allowParentDependency` property is enabled.
+> - The format of the dependency string depends on the data type of the [id](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskfields#id) field mapped in the data source:
+>   - If the `id` field is an **integer**, the compact format (for example, `3FS`) can be used without a space between the `id` and the dependency type.
+>   - If the `id` field is a **string** or **GUID**, the format `[id] [PredecessorType]` is mandatory, with a single space between the `id` and the predecessor type (for example, `TASK-001 FS`). The Gantt Chart parses the two parts based on this space, so the space is required to correctly identify the predecessor type.
+
 ## Understand task relationship types
 
 Task relationships are categorized into four types based on start and finish dates:
