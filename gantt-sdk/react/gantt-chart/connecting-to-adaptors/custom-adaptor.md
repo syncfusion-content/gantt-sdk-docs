@@ -150,7 +150,7 @@ After creating the custom adaptor class, integrate it with the React Gantt Chart
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-
+{% raw %}
 import { DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data';
 import { CustomAdaptor } from './CustomAdaptor';
 import { GanttComponent, Inject, Edit, Selection, Toolbar, ColumnsDirective, ColumnDirective, ContextMenu, Filter, Sort, Reorder, Resize, ColumnMenu, VirtualScroll, RowDD, } from '@syncfusion/ej2-react-gantt';
@@ -205,7 +205,7 @@ function App() {
     const toolbar = ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll', 'Indent', 'Outdent'];
 
     return (
-        <div style={% raw %}{{ margin: '20px' }}{% endraw %}>
+        <div style={{ margin: '20px' }}>
             <h2>ODataV4Adaptor with Gantt</h2>
             <GanttComponent dataSource={data} taskFields={taskFields} resourceFields={resourceFields} resources={resources} showColumnMenu= {true}
                 editSettings={editSettings} height='400px' toolbar={toolbar} allowReordering={true} allowResizing={true} allowRowDragAndDrop={true} enableContextMenu={true} allowFiltering={true} allowSorting={true}>
@@ -224,7 +224,7 @@ function App() {
 }
 
 export default App;
-
+{% endraw %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -322,7 +322,7 @@ React Gantt Chart enables full CRUD functionality by configuring the required [t
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-
+{% raw %}
 import { DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data';
 import { CustomAdaptor } from './CustomAdaptor';
 import { GanttComponent, Inject, Edit, Selection, Toolbar, ColumnsDirective, ColumnDirective, ContextMenu, Filter, Sort, Reorder, Resize, ColumnMenu, VirtualScroll, RowDD, } from '@syncfusion/ej2-react-gantt';
@@ -377,7 +377,7 @@ function App() {
     const toolbar = ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll', 'Indent', 'Outdent'];
 
     return (
-        <div style={% raw %}{{ margin: '20px' }}{% endraw %}>
+        <div style={{ margin: '20px' }}>
             <h2>ODataV4Adaptor with Gantt</h2>
             <GanttComponent dataSource={data} taskFields={taskFields} resourceFields={resourceFields} resources={resources} showColumnMenu= {true}
                 editSettings={editSettings} height='400px' toolbar={toolbar} allowReordering={true} allowResizing={true} allowRowDragAndDrop={true} enableContextMenu={true} allowFiltering={true} allowSorting={true}>
@@ -396,7 +396,7 @@ function App() {
 }
 
 export default App;
-
+{% endraw %}
 {% endhighlight %}
 {% endtabs %}
 
