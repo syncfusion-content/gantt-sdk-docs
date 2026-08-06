@@ -11,7 +11,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Deleting tasks in JavaScript Gantt control
 
-A task delete option in the Gantt control can be enabled by enabling the [ediSettings.allowDeleting](https://ej2.syncfusion.com/javascript/documentation/api/gantt/editSettings#allowdeleting) property. Tasks can be deleted by clicking the delete toolbar item or using the `deleteRow` method. You can call this method dynamically on any custom actions like button click. The following code example shows how to enable the delete option in the Gantt control.
+A task delete option in the Gantt control can be enabled by enabling the [editSettings.allowDeleting](https://ej2.syncfusion.com/javascript/documentation/api/gantt/editSettings#allowdeleting) property. Tasks can be deleted by clicking the delete toolbar item or using the `deleteRow` method. You can call this method dynamically on any custom actions like button click. The following code example shows how to enable the delete option in the Gantt control.
 
 {% if page.publishingplatform == "typescript" %}
 

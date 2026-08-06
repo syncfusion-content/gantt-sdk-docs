@@ -103,7 +103,7 @@ The following tables organize all available locale keys by functional category:
 | --------------------------- | ---------------------------------- |
 | InvalidFilterMessage        | Invalid Filter Data                |
 | FilterbarTitle              | \s filter bar cell                 |
-| Matchs                      | No Matches Found                   |
+| Matches                      | No Matches Found                   |
 | FilterButton                | Filter                             |
 | ClearButton                 | Clear                              |
 | StartsWith                  | Starts With                        |
