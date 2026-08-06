@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# TTask Scheduling Modes with Auto and Manual in TypeScript Gantt Chart
+# Task Scheduling Modes with Auto and Manual in TypeScript Gantt Chart
 
 The Gantt provides support for automatic and manual task scheduling modes. It is used to indicate whether the start date and end date of all the tasks will be automatically validated or not. [taskMode](../api/gantt#taskmode) is the property used to change the schedule mode of a task.
 
