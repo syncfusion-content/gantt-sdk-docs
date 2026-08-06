@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Real-Time Angular Gantt Chart with SignalR | Live Updates | Syncfusion
-description: Learn how to enable real-time updates using SignalR for instant task sync and live collaboration.
+description: Learn how to enable real-time updates with SignalR in the Syncfusion Angular Gantt Chart for instant task synchronization and seamless live collaboration.
 keywords: angular gantt signalr, real-time updates, live data, asp.net core, push notifications, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/signalr
 platform: gantt-sdk

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Row Drag and Drop in Angular Gantt Chart | Reorder | Syncfusion
-description: Learn how to enable row drag and drop in Syncfusion Angular Gantt Chart to rearrange rows.
+description: Learn how to enable row drag and drop in the Syncfusion Angular Gantt Chart to easily reorder rows and manage task hierarchies interactively.
 keywords: angular gantt row drag drop, allowrowdraganddrop, rowddservice, reorder rows, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/rows/drag-and-drop
 platform: gantt-sdk

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Virtual Scrolling in Angular Gantt Chart | Performance | Syncfusion
-description: Learn how to configure virtual scrolling in Syncfusion Angular Gantt Chart for optimal performance.
+description: Learn how to configure virtual scrolling in the Syncfusion Angular Gantt Chart to efficiently handle large datasets and improve rendering performance.
 keywords: angular gantt virtual scroll, virtualscrollservice, row virtualization, timeline virtualization, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/scrolling/virtual-scrolling
 platform: gantt-sdk
