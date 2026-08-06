@@ -3,7 +3,7 @@ layout: post
 title: Column Pinning (Frozen) in JavaScript Gantt Chart Control | Syncfusion
 description: Learn here all about Column pinning (Frozen) in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Column pinning (Frozen) 
+control: Column pinning (Frozen)
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -13,7 +13,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Gantt Chart control provides a frozen columns feature that keeps selected columns fixed while scrolling horizontally through large datasets. This functionality ensures that critical information remains visible at all times, improving readability and user experience. By maintaining key columns in view, it simplifies navigation and makes referencing important data points easier when working with extensive project details.
 
-To enable frozen columns, use the [frozenColumns](../../api/gantt#frozencolumns) property in the Gantt control.
+To enable frozen columns, use the [frozenColumns](https://ej2.syncfusion.com/javascript/documentation/api/gantt#frozencolumns) property in the Gantt control.
 
 In the following example, the `frozenColumns` property is set to **2**, which keeps the first two columns fixed on the left while the remaining columns can be scrolled horizontally.
 
@@ -27,7 +27,7 @@ In the following example, the `frozenColumns` property is set to **2**, which ke
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/frozen-column-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/frozen-column-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -48,7 +48,7 @@ In the following example, the `frozenColumns` property is set to **2**, which ke
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Gantt provides a feature that enables freezing specific columns, significantly enhancing data visibility and improving the user experience. The `isFrozen` property is used at the column level to freeze a specific column at any desired index on the left side, offering flexibility in managing which columns are frozen.
 
-To freeze a particular column in the Gantt, set the [isFrozen](../../api/gantt/column#isfrozen) property of the column to **true**.
+To freeze a particular column in the Gantt, set the [isFrozen](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#isfrozen) property of the column to **true**.
 
 The following example demonstrates how to freeze a particular column in the Gantt using the `isFrozen` property.
 
@@ -62,7 +62,7 @@ The following example demonstrates how to freeze a particular column in the Gant
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/frozen-column-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/frozen-column-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -81,17 +81,17 @@ The following example demonstrates how to freeze a particular column in the Gant
 
 ## Freeze direction
 
-In the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Gantt, the **freeze direction** feature allows you to position frozen columns either to the left, right, or in a fixed position, while still allowing the remaining columns to be horizontally movable. 
+In the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Gantt, the **freeze direction** feature allows you to position frozen columns either to the left, right, or in a fixed position, while still allowing the remaining columns to be horizontally movable.
 
-To achieve this, the [column.freeze](../../api/gantt/column#freeze) property can be utilized. This property is used to specify the freeze direction for individual columns.
+To achieve this, the [column.freeze](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#freeze) property can be utilized. This property is used to specify the freeze direction for individual columns.
 
 The types of the `column.freeze` directions:
 
-* **Left**: When the `column.freeze` property is set to **Left**, specific columns will be frozen on the left side.
+- **Left**: When the `column.freeze` property is set to **Left**, specific columns will be frozen on the left side.
 
-* **Right**: When the `column.freeze` property is set to **Right**, certain columns will be frozen on the right side.
+- **Right**: When the `column.freeze` property is set to **Right**, certain columns will be frozen on the right side.
 
-* **Fixed**: The Fixed direction locks a column at a fixed position within the Gantt columns. This ensures that the column is always visible during horizontal scroll.
+- **Fixed**: The Fixed direction locks a column at a fixed position within the Gantt columns. This ensures that the column is always visible during horizontal scroll.
 
 In the following example, the **TaskID** column is frozen on the left side, the **resources** column is frozen on the right side and the **Progress** column is frozen in a fixed position within the content table.
 
@@ -105,7 +105,7 @@ In the following example, the **TaskID** column is frozen on the left side, the 
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/frozen-column-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/frozen-column-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -128,31 +128,34 @@ The frozen line borders of frozen columns in the Syncfusion<sup style="font-size
 
 To change the default frozen line color, use the following CSS class names and apply the desired border color:
 
-For left frozen columns: 
+For left frozen columns:
 
 ```css
 .e-gantt .e-leftfreeze.e-freezeleftborder {
-    border-right-color: rgb(0, 255, 0) !important;
+  border-right-color: rgb(0, 255, 0) !important;
 }
 ```
+
 For right frozen columns:
 
 ```css
 .e-gantt .e-rightfreeze.e-freezerightborder {
-    border-left-color: rgb(0, 0, 255) !important;
+  border-left-color: rgb(0, 0, 255) !important;
 }
 ```
+
 For fixed frozen columns, both left and right borders need to be specified as mentioned below:
 
 ```css
 .e-gantt .e-leftfreeze.e-freezeleftborder {
-    border-right-color: rgb(0, 255, 0) !important;
+  border-right-color: rgb(0, 255, 0) !important;
 }
 
 .e-gantt .e-rightfreeze.e-freezerightborder {
-    border-left-color: rgb(0, 0, 255) !important;
+  border-left-color: rgb(0, 0, 255) !important;
 }
 ```
+
 The following example demonstrates how to change the default frozen line color using CSS:
 
 {% if page.publishingplatform == "typescript" %}
@@ -165,7 +168,7 @@ The following example demonstrates how to change the default frozen line color u
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/frozen-column-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/frozen-column-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -184,4 +187,4 @@ The following example demonstrates how to change the default frozen line color u
 
 ## Limitations
 
-* Freeze Direction is not compatible with the [isFrozen](../../api/gantt/column#isfrozen) and [frozenColumns](../../api/gantt#frozencolumns) properties.
+- Freeze Direction is not compatible with the [isFrozen](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#isfrozen) and [frozenColumns](https://ej2.syncfusion.com/javascript/documentation/api/gantt#frozencolumns) properties.

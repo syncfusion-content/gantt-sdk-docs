@@ -11,7 +11,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Resources in JavaScript Gantt Chart Control
 
-Resources in the JavaScript Gantt Chart control represent people, equipment, or materials allocated to tasks, and they can be visualized in taskbars and labels for clear utilization tracking. Define a resource collection in the [resources](https://ej2.syncfusion.com/javascript/documentation/api/gantt#resources) property, map its fields with [resourceFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt#resourcefields), and assign the resources to each task through [taskFields.resourceInfo](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#resourceinfo). This mapping enables resource names to appear in columns or labels with [labelSettings](https://ej2.syncfusion.com/javascript/documentation/api/gantt/labelSettings), highlights workloads and overallocation, and supports taskbar customization through the [queryTaskbarInfo](../gantt/events#querytaskbarinfo) event. Resources also include ARIA labels for accessibility and adapt to responsive layouts, although narrow screens may truncate names when multiple resources are assigned. By default, resources allocate 100% unit if the unit is not specified.
+Resources in the JavaScript Gantt Chart control represent people, equipment, or materials allocated to tasks, and they can be visualized in taskbars and labels for clear utilization tracking. Define a resource collection in the [resources](https://ej2.syncfusion.com/javascript/documentation/api/gantt#resources) property, map its fields with [resourceFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt#resourcefields), and assign the resources to each task through [taskFields.resourceInfo](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#resourceinfo). This mapping enables resource names to appear in columns or labels with [labelSettings](https://ej2.syncfusion.com/javascript/documentation/api/gantt/labelSettings), highlights workloads and overallocation, and supports taskbar customization through the [queryTaskbarInfo](https://ej2.syncfusion.com/javascript/documentation/gantt/events#querytaskbarinfo) event. Resources also include ARIA labels for accessibility and adapt to responsive layouts, although narrow screens may truncate names when multiple resources are assigned. By default, resources allocate 100% unit if the unit is not specified.
 
 ## Configure resource collection
 
@@ -28,19 +28,46 @@ The following code demonstrates resource collection setup:
 
 ```ts
 var projectResources: Object[] = [
-    { resourceId: 1, resourceName: 'Martin Tamer', resourceGroup: 'Planning Team', resourceUnit: 50 },
-    { resourceId: 2, resourceName: 'Rose Fuller', resourceGroup: 'Testing Team', resourceUnit: 70 },
-    { resourceId: 3, resourceName: 'Margaret Buchanan', resourceGroup: 'Approval Team' },
-    { resourceId: 4, resourceName: 'Fuller King', resourceGroup: 'Development Team' },
-    { resourceId: 5, resourceName: 'Davolio Fuller', resourceGroup: 'Approval Team' },
-    { resourceId: 6, resourceName: 'Van Jack', resourceGroup: 'Development Team', resourceUnit: 40 }
+  {
+    resourceId: 1,
+    resourceName: "Martin Tamer",
+    resourceGroup: "Planning Team",
+    resourceUnit: 50,
+  },
+  {
+    resourceId: 2,
+    resourceName: "Rose Fuller",
+    resourceGroup: "Testing Team",
+    resourceUnit: 70,
+  },
+  {
+    resourceId: 3,
+    resourceName: "Margaret Buchanan",
+    resourceGroup: "Approval Team",
+  },
+  {
+    resourceId: 4,
+    resourceName: "Fuller King",
+    resourceGroup: "Development Team",
+  },
+  {
+    resourceId: 5,
+    resourceName: "Davolio Fuller",
+    resourceGroup: "Approval Team",
+  },
+  {
+    resourceId: 6,
+    resourceName: "Van Jack",
+    resourceGroup: "Development Team",
+    resourceUnit: 40,
+  },
 ];
 
 var resourceFields: ResourceFieldsModel = {
-    id: 'resourceId',
-    name: 'resourceName',
-    unit: 'resourceUnit',
-    group: 'resourceGroup'
+  id: "resourceId",
+  name: "resourceName",
+  unit: "resourceUnit",
+  group: "resourceGroup",
 };
 ```
 
@@ -48,12 +75,39 @@ var resourceFields: ResourceFieldsModel = {
 
 ```js
 var projectResources = [
-    { resourceId: 1, resourceName: 'Martin Tamer', resourceGroup: 'Planning Team', resourceUnit: 50 },
-    { resourceId: 2, resourceName: 'Rose Fuller', resourceGroup: 'Testing Team', resourceUnit: 70 },
-    { resourceId: 3, resourceName: 'Margaret Buchanan', resourceGroup: 'Approval Team' },
-    { resourceId: 4, resourceName: 'Fuller King', resourceGroup: 'Development Team' },
-    { resourceId: 5, resourceName: 'Davolio Fuller', resourceGroup: 'Approval Team' },
-    { resourceId: 6, resourceName: 'Van Jack', resourceGroup: 'Development Team', resourceUnit: 40 }
+  {
+    resourceId: 1,
+    resourceName: "Martin Tamer",
+    resourceGroup: "Planning Team",
+    resourceUnit: 50,
+  },
+  {
+    resourceId: 2,
+    resourceName: "Rose Fuller",
+    resourceGroup: "Testing Team",
+    resourceUnit: 70,
+  },
+  {
+    resourceId: 3,
+    resourceName: "Margaret Buchanan",
+    resourceGroup: "Approval Team",
+  },
+  {
+    resourceId: 4,
+    resourceName: "Fuller King",
+    resourceGroup: "Development Team",
+  },
+  {
+    resourceId: 5,
+    resourceName: "Davolio Fuller",
+    resourceGroup: "Approval Team",
+  },
+  {
+    resourceId: 6,
+    resourceName: "Van Jack",
+    resourceGroup: "Development Team",
+    resourceUnit: 40,
+  },
 ];
 
 var resourceFields = {
@@ -145,7 +199,7 @@ _Alt text: Resource dialog editing tab for multiple allocations and units._
 
 ## Customize resource styling
 
-Customize resource display using column templates for the resource column and the [queryTaskbarInfo](../gantt/events#querytaskbarinfo) event for taskbar styling based on assigned resources.
+Customize resource display using column templates for the resource column and the [queryTaskbarInfo](https://ej2.syncfusion.com/javascript/documentation/gantt/events#querytaskbarinfo) event for taskbar styling based on assigned resources.
 
 The following example demonstrates custom resource styling:
 
@@ -180,6 +234,6 @@ This configuration applies background colors to resource columns and taskbars, w
 
 ## See also
 
-- [How to configure resource view?](../gantt/resource-view)
-- [How to manage task dependencies?](../gantt/task-dependency)
-- [How to customize taskbars?](../gantt/taskbar)
+- [How to configure resource view?](https://ej2.syncfusion.com/javascript/documentation/gantt/resource-view)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/javascript/documentation/gantt/task-dependency)
+- [How to customize taskbars?](https://ej2.syncfusion.com/javascript/documentation/gantt/taskbar)

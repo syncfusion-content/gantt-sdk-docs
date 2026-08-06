@@ -3,7 +3,7 @@ layout: post
 title: Localization in JavaScript Gantt Chart | Syncfusion
 description: Learn here all about globalization and localization in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Globalization and Localization 
+control: Globalization and Localization
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -25,13 +25,15 @@ Implement globalization when targeting multilingual users, complying with region
 
 ## Localization implementation
 
-The [Localization](../common/localization) library allows you to localize default text content of the Gantt Chart control. Static text elements such as column headers, dialog titles, tooltips, toolbar items, and system messages can be translated to different languages by defining the [locale](../../api/gantt#locale) value and providing translation objects.
+The [Localization](https://ej2.syncfusion.com/javascript/documentation/common/localization) library allows you to localize default text content of the Gantt Chart control. Static text elements such as column headers, dialog titles, tooltips, toolbar items, and system messages can be translated to different languages by defining the [locale](https://ej2.syncfusion.com/javascript/documentation/api/gantt#locale) value and providing translation objects.
 
-1. **Import required libraries**:
+1.  **Import required libraries**:
     {% if page.publishingplatform == "typescript" %}
+
     ```typescript
-    import { L10n, setCulture } from '@syncfusion/ej2-base';
+    import { L10n, setCulture } from "@syncfusion/ej2-base";
     ```
+
     {% elsif page.publishingplatform == "javascript" %}
 
         ```js
@@ -47,15 +49,16 @@ The [Localization](../common/localization) library allows you to localize defaul
             }
         });
         ```
+
     {% endif %}
 
-1. **Define translation objects** for your target languages with complete locale coverage
+1.  **Define translation objects** for your target languages with complete locale coverage
 
-2. **Load translations** using the `L10n.load()` method before component initialization
+1.  **Load translations** using the `L10n.load()` method before component initialization
 
-3. **Set the locale property** on the Gantt Chart control to match your target culture
+1.  **Set the locale property** on the Gantt Chart control to match your target culture
 
-4. **Configure culture settings** using `setCulture()` for number and date formatting
+1.  **Configure culture settings** using `setCulture()` for number and date formatting
 
 ### Localization keys
 
@@ -324,7 +327,7 @@ The following example demonstrates comprehensive German (Deutsch) localization:
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/global-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/global-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -343,13 +346,13 @@ The following example demonstrates comprehensive German (Deutsch) localization:
 
 ## Internationalization (I18N)
 
-The [Internationalization](../common/internationalization) library globalizes number, date, and time values in the Gantt Chart control. This ensures that dates, numbers, and currencies display according to the user's cultural preferences and regional conventions.
+The [Internationalization](https://ej2.syncfusion.com/javascript/documentation/common/internationalization) library globalizes number, date, and time values in the Gantt Chart control. This ensures that dates, numbers, and currencies display according to the user's cultural preferences and regional conventions.
 
 Internationalization affects multiple aspects of the Gantt Chart control:
 
 - **Date formatting**: Timeline headers, task dates, date pickers, and calendar displays
 - **Number formatting**: Duration values, progress percentages, and numeric inputs
-- **Time formatting**: Time-based calculations, working hours, and time displays  
+- **Time formatting**: Time-based calculations, working hours, and time displays
 - **Currency formatting**: Cost-related fields and budget calculations
 - **Calendar systems**: Support for different calendar systems (Gregorian, Islamic, etc.)
 - **Week numbering**: ISO week numbers, fiscal year calendars
@@ -364,7 +367,7 @@ Internationalization affects multiple aspects of the Gantt Chart control:
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/global-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/global-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -381,7 +384,7 @@ Internationalization affects multiple aspects of the Gantt Chart control:
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/global-cs2" %}
 {% endif %}
 
-> **Note**: In the above sample, timeline headers and numeric values are formatted using `NumberFormatOptions` and `DateFormatOptions`. The [locale](../../api/gantt#locale) property defaults to **en-US**. Change this property to your desired locale for proper cultural formatting.
+> **Note**: In the above sample, timeline headers and numeric values are formatted using `NumberFormatOptions` and `DateFormatOptions`. The [locale](https://ej2.syncfusion.com/javascript/documentation/api/gantt#locale) property defaults to **en-US**. Change this property to your desired locale for proper cultural formatting.
 
 ## Right-to-Left (RTL) support
 
@@ -394,7 +397,7 @@ RTL layout affects multiple aspects of the user interface:
 - **Icon orientation**: Directional icons need appropriate orientation
 - **Data presentation**: Maintains logical data relationships while adapting visual presentation
 
-To enable RTL support, set the [enableRtl](../../api/gantt#enablertl) property to **true**:
+To enable RTL support, set the [enableRtl](https://ej2.syncfusion.com/javascript/documentation/api/gantt#enablertl) property to **true**:
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -406,7 +409,7 @@ To enable RTL support, set the [enableRtl](../../api/gantt#enablertl) property t
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/global-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/global-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -428,24 +431,27 @@ The code sets `enableRtl` to **true** and `locale` to **ar**, mirroring the Gant
 ## Troubleshooting globalization issues
 
 1. **Missing or incomplete translations:**
-**Issue**: Some UI elements display in default language despite locale configuration
-**Solutions**:
+   **Issue**: Some UI elements display in default language despite locale configuration
+   **Solutions**:
+
 - Verify all locale keys are included in translation objects
 - Check that `L10n.load()` is called before component initialization
 - Ensure locale property matches loaded translation keys
 - Validate translation object structure and syntax
 
 2. **Encoding and character display issues:**
-**Issue**: Special characters or non-Latin scripts don't display correctly
-**Solutions**:
+   **Issue**: Special characters or non-Latin scripts don't display correctly
+   **Solutions**:
+
 - Verify proper UTF-8 encoding in translation files
 - Check font support for target languages
 - Ensure HTML document declares correct charset
 - Test with appropriate fonts for target scripts
 
 3. **Date and number formatting problems:**
-**Issue**: Dates or numbers don't format according to locale
-**Solutions**:
+   **Issue**: Dates or numbers don't format according to locale
+   **Solutions**:
+
 - Load appropriate CLDR data for target cultures
 - Call `setCulture()` before component initialization
 - Verify date format patterns match locale expectations

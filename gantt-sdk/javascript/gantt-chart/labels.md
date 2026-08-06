@@ -3,7 +3,7 @@ layout: post
 title: Task Labels in JavaScript Gantt Chart Control | Syncfusion
 description: Learn how to configure taskbar labels in the Syncfusion JavaScript Gantt Chart control for enhanced data visualization and project management.
 platform: gantt-sdk
-control: Task labels 
+control: Task labels
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -11,33 +11,34 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Task Labels in JavaScript Gantt Chart Control
 
-Task labels in the JavaScript Gantt Chart control display key task information directly on or near taskbars, enhancing project visualization without requiring task interaction. Configured via the [labelSettings](../api/gantt/labelSettings) property, labels show details like task names, IDs, or progress, streamlining workflows for resource management and status tracking. Labels support three positions: left labels outside the taskbar for identifiers like **TaskName**, right labels after the taskbar for metrics like **Progress**, and task labels overlaid on taskbars for prominent data like task titles. Left and right labels remain visible regardless of taskbar width, while task labels may clip for short tasks. Labels improve readability and provide immediate context, reducing the need for hovers or dialogs in large projects.
+Task labels in the JavaScript Gantt Chart control display key task information directly on or near taskbars, enhancing project visualization without requiring task interaction. Configured via the [labelSettings](https://ej2.syncfusion.com/javascript/documentation/api/gantt/labelSettings) property, labels show details like task names, IDs, or progress, streamlining workflows for resource management and status tracking. Labels support three positions: left labels outside the taskbar for identifiers like **TaskName**, right labels after the taskbar for metrics like **Progress**, and task labels overlaid on taskbars for prominent data like task titles. Left and right labels remain visible regardless of taskbar width, while task labels may clip for short tasks. Labels improve readability and provide immediate context, reducing the need for hovers or dialogs in large projects.
 
 ## Configure task labels
 
-Task labels are configured using the [labelSettings](../api/gantt/labelSettings) property, mapping fields from the data source defined in [taskFields](../api/gantt#taskfields) (e.g., id to TaskID, name to TaskName). The control supports three label positions with specific use cases:
-- [leftLabel](../api/gantt/labelSettingsModel#leftlabel): Displays content like task names or resource assignments to the left of taskbars, ideal for identifiers.
-- [rightLabel](../api/gantt/labelSettingsModel#rightlabel): Shows metrics like progress percentages or durations to the right, suitable for completion data.
-- [taskLabel](../api/gantt/labelSettingsModel#tasklabel): Overlays content like task titles or progress on taskbars, prominent but limited by taskbar width.
+Task labels are configured using the [labelSettings](https://ej2.syncfusion.com/javascript/documentation/api/gantt/labelSettings) property, mapping fields from the data source defined in [taskFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt#taskfields) (e.g., id to TaskID, name to TaskName). The control supports three label positions with specific use cases:
+
+- [leftLabel](https://ej2.syncfusion.com/javascript/documentation/api/gantt/labelSettingsModel#leftlabel): Displays content like task names or resource assignments to the left of taskbars, ideal for identifiers.
+- [rightLabel](https://ej2.syncfusion.com/javascript/documentation/api/gantt/labelSettingsModel#rightlabel): Shows metrics like progress percentages or durations to the right, suitable for completion data.
+- [taskLabel](https://ej2.syncfusion.com/javascript/documentation/api/gantt/labelSettingsModel#tasklabel): Overlays content like task titles or progress on taskbars, prominent but limited by taskbar width.
 
 Use template literals for formatted labels, such as **${Progress}%** for progress percentages. Ensure valid `taskFields` mappings to reference fields accurately.
 
 The following example configures labels for task names, IDs, and progress:
 
 ```typescript
-  const taskFields = {
-    id: 'TaskID',
-    name: 'TaskName',
-    startDate: 'StartDate',
-    duration: 'Duration',
-    progress: 'Progress',
-    parentID: 'ParentID'
-  };
-  const labelSettings = {
-    leftLabel: 'Task Id: ${TaskID}',
-    rightLabel: 'Task Name: ${TaskName}',
-    taskLabel: '${Progress}%'
-  };
+const taskFields = {
+  id: "TaskID",
+  name: "TaskName",
+  startDate: "StartDate",
+  duration: "Duration",
+  progress: "Progress",
+  parentID: "ParentID",
+};
+const labelSettings = {
+  leftLabel: "Task Id: ${TaskID}",
+  rightLabel: "Task Name: ${TaskName}",
+  taskLabel: "${Progress}%",
+};
 ```
 
 This code displays task names on the left, task IDs on the right, and formatted progress percentages on taskbars, ensuring clear visualization.
@@ -56,7 +57,7 @@ For advanced scenarios, you can create custom label templates using functions fo
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/tasklabels-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/tasklabels-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -83,77 +84,85 @@ Create templates that show different content based on task properties:
 
 ```javascript
 function leftLabelTemplate(props) {
-    var priorityIcon = '';
+  var priorityIcon = "";
 
-    if (props.Priority === 'High') {
-        priorityIcon = '<span class="priority-high">🔴</span>';
-    } else if (props.Priority === 'Medium') {
-        priorityIcon = '<span class="priority-medium">🟡</span>';
-    } else if (props.Priority === 'Low') {
-        priorityIcon = '<span class="priority-low">🟢</span>';
-    }
+  if (props.Priority === "High") {
+    priorityIcon = '<span class="priority-high">🔴</span>';
+  } else if (props.Priority === "Medium") {
+    priorityIcon = '<span class="priority-medium">🟡</span>';
+  } else if (props.Priority === "Low") {
+    priorityIcon = '<span class="priority-low">🟢</span>';
+  }
 
-    return (
-        '<div class="custom-left-label">' +
-            priorityIcon +
-            '<span>' + props.TaskName + '</span>' +
-        '</div>'
-    );
+  return (
+    '<div class="custom-left-label">' +
+    priorityIcon +
+    "<span>" +
+    props.TaskName +
+    "</span>" +
+    "</div>"
+  );
 }
 
 function rightLabelTemplate(props) {
-    var progress = props.Progress || 0;
-    var duration = props.Duration || 0;
+  var progress = props.Progress || 0;
+  var duration = props.Duration || 0;
 
-    return (
-        '<div class="custom-right-label">' +
-            '<div class="progress-container">' +
-                '<span class="progress-text">' + progress + '%</span>' +
-                '<div class="progress-bar" style="width:' + progress + '%"></div>' +
-            '</div>' +
-            '<span class="duration-text">' + duration + ' days</span>' +
-        '</div>'
-    );
+  return (
+    '<div class="custom-right-label">' +
+    '<div class="progress-container">' +
+    '<span class="progress-text">' +
+    progress +
+    "%</span>" +
+    '<div class="progress-bar" style="width:' +
+    progress +
+    '%"></div>' +
+    "</div>" +
+    '<span class="duration-text">' +
+    duration +
+    " days</span>" +
+    "</div>"
+  );
 }
 
 var ganttChart = new ej.gantt.Gantt({
-    dataSource: GanttData,
-    height: '450px',
-    taskFields: {
-        id: 'TaskID',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        duration: 'Duration',
-        progress: 'Progress',
-        parentID: 'ParentID'
-    },
-    labelSettings: {
-        leftLabel: leftLabelTemplate,
-        rightLabel: rightLabelTemplate
-    }
+  dataSource: GanttData,
+  height: "450px",
+  taskFields: {
+    id: "TaskID",
+    name: "TaskName",
+    startDate: "StartDate",
+    duration: "Duration",
+    progress: "Progress",
+    parentID: "ParentID",
+  },
+  labelSettings: {
+    leftLabel: leftLabelTemplate,
+    rightLabel: rightLabelTemplate,
+  },
 });
 
-ganttChart.appendTo('#Gantt');
+ganttChart.appendTo("#Gantt");
 ```
 
 {% elsif page.publishingplatform == "typescript" %}
 
 ```ts
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { GanttData } from './datasource.ts';
+import { Gantt } from "@syncfusion/ej2-gantt";
+import { GanttData } from "./datasource.ts";
 
 function leftLabelTemplate(props: any): string {
-    let priorityIcon: string = '';
+  let priorityIcon: string = "";
 
-    if (props.Priority === 'High') {
-        priorityIcon = '<span class="priority-high">🔴</span>';
-    } else if (props.Priority === 'Medium') {
-        priorityIcon = '<span class="priority-medium">🟡</span>';
-    } else if (props.Priority === 'Low') {
-        priorityIcon = '<span class="priority-low">🟢</span>';
-    }
+  if (props.Priority === "High") {
+    priorityIcon = '<span class="priority-high">🔴</span>';
+  } else if (props.Priority === "Medium") {
+    priorityIcon = '<span class="priority-medium">🟡</span>';
+  } else if (props.Priority === "Low") {
+    priorityIcon = '<span class="priority-low">🟢</span>';
+  }
 
-    return `
+  return `
         <div class="custom-left-label">
             ${priorityIcon}
             <span>${props.TaskName}</span>
@@ -162,10 +171,10 @@ function leftLabelTemplate(props: any): string {
 }
 
 function rightLabelTemplate(props: any): string {
-    const progress: number = props.Progress || 0;
-    const duration: number = props.Duration || 0;
+  const progress: number = props.Progress || 0;
+  const duration: number = props.Duration || 0;
 
-    return `
+  return `
         <div class="custom-right-label">
             <div class="progress-container">
                 <span class="progress-text">${progress}%</span>
@@ -177,23 +186,23 @@ function rightLabelTemplate(props: any): string {
 }
 
 let gantt: Gantt = new Gantt({
-    dataSource: GanttData,
-    height: '450px',
-    taskFields: {
-        id: 'TaskID',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        duration: 'Duration',
-        progress: 'Progress',
-        parentID: 'ParentID'
-    },
-    labelSettings: {
-        leftLabel: leftLabelTemplate,
-        rightLabel: rightLabelTemplate
-    }
+  dataSource: GanttData,
+  height: "450px",
+  taskFields: {
+    id: "TaskID",
+    name: "TaskName",
+    startDate: "StartDate",
+    duration: "Duration",
+    progress: "Progress",
+    parentID: "ParentID",
+  },
+  labelSettings: {
+    leftLabel: leftLabelTemplate,
+    rightLabel: rightLabelTemplate,
+  },
 });
 
-gantt.appendTo('#Gantt');
+gantt.appendTo("#Gantt");
 ```
 
 {% endif %}
@@ -206,124 +215,136 @@ Display complex information with formatted content and calculations:
 
 ```js
 function getProgressClass(progress) {
-    if (progress >= 80) {
-        return 'high';
-    }
-    if (progress >= 40) {
-        return 'medium';
-    }
-    return 'low';
+  if (progress >= 80) {
+    return "high";
+  }
+  if (progress >= 40) {
+    return "medium";
+  }
+  return "low";
 }
 
 function formatDate(date) {
-    if (!date) {
-        return '';
-    }
-    return date.toLocaleDateString('en-US', {
-        month: 'short',
-        day: '2-digit'
-    });
+  if (!date) {
+    return "";
+  }
+  return date.toLocaleDateString("en-US", {
+    month: "short",
+    day: "2-digit",
+  });
 }
 
 function taskLabelTemplate(props) {
-    var taskName = props.TaskName || (props.ganttProperties && props.ganttProperties.taskName);
-    var startDate = props.StartDate || (props.ganttProperties && props.ganttProperties.startDate);
-    var endDate = props.EndDate || (props.ganttProperties && props.ganttProperties.endDate);
-    var progress = (props.Progress != null)
-        ? props.Progress
-        : (props.ganttProperties && props.ganttProperties.progress) || 0;
-    var resources = props.Resources || (props.ganttProperties && props.ganttProperties.resourceInfo);
+  var taskName =
+    props.TaskName || (props.ganttProperties && props.ganttProperties.taskName);
+  var startDate =
+    props.StartDate ||
+    (props.ganttProperties && props.ganttProperties.startDate);
+  var endDate =
+    props.EndDate || (props.ganttProperties && props.ganttProperties.endDate);
+  var progress =
+    props.Progress != null
+      ? props.Progress
+      : (props.ganttProperties && props.ganttProperties.progress) || 0;
+  var resources =
+    props.Resources ||
+    (props.ganttProperties && props.ganttProperties.resourceInfo);
 
-    var resourceHtml = '';
-    if (resources && resources.length) {
-        resourceHtml =
-            '<span class="resource-count">👥 ' + resources.length + '</span>';
-    }
+  var resourceHtml = "";
+  if (resources && resources.length) {
+    resourceHtml =
+      '<span class="resource-count">👥 ' + resources.length + "</span>";
+  }
 
-    return (
-        '<div class="rich-task-label">' +
-            '<div class="task-info">' +
-                '<strong>' + taskName + '</strong>' +
-                '<small>' +
-                    formatDate(startDate) + ' – ' + formatDate(endDate) +
-                '</small>' +
-            '</div>' +
-            '<div class="task-meta">' +
-                resourceHtml +
-                '<span class="progress-badge progress-' + getProgressClass(progress) + '">' +
-                    progress + '%' +
-                '</span>' +
-            '</div>' +
-        '</div>'
-    );
+  return (
+    '<div class="rich-task-label">' +
+    '<div class="task-info">' +
+    "<strong>" +
+    taskName +
+    "</strong>" +
+    "<small>" +
+    formatDate(startDate) +
+    " – " +
+    formatDate(endDate) +
+    "</small>" +
+    "</div>" +
+    '<div class="task-meta">' +
+    resourceHtml +
+    '<span class="progress-badge progress-' +
+    getProgressClass(progress) +
+    '">' +
+    progress +
+    "%" +
+    "</span>" +
+    "</div>" +
+    "</div>"
+  );
 }
 
 var ganttChart = new ej.gantt.Gantt({
-    dataSource: GanttData,
-    height: '450px',
-    taskFields: {
-        id: 'TaskID',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        duration: 'Duration',
-        progress: 'Progress',
-        parentID: 'ParentID'
-    },
-    labelSettings: {
-        taskLabel: taskLabelTemplate
-    }
+  dataSource: GanttData,
+  height: "450px",
+  taskFields: {
+    id: "TaskID",
+    name: "TaskName",
+    startDate: "StartDate",
+    duration: "Duration",
+    progress: "Progress",
+    parentID: "ParentID",
+  },
+  labelSettings: {
+    taskLabel: taskLabelTemplate,
+  },
 });
 
-ganttChart.appendTo('#Gantt');
+ganttChart.appendTo("#Gantt");
 ```
 
 {% elsif page.publishingplatform == "typescript" %}
 
 ```ts
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { GanttData } from './datasource.ts';
+import { Gantt } from "@syncfusion/ej2-gantt";
+import { GanttData } from "./datasource.ts";
 
 function getProgressClass(progress: number): string {
-    if (progress >= 80) {
-        return 'high';
-    }
-    if (progress >= 40) {
-        return 'medium';
-    }
-    return 'low';
+  if (progress >= 80) {
+    return "high";
+  }
+  if (progress >= 40) {
+    return "medium";
+  }
+  return "low";
 }
 
 function formatDate(date?: Date): string {
-    if (!date) {
-        return '';
-    }
-    return date.toLocaleDateString('en-US', {
-        month: 'short',
-        day: '2-digit'
-    });
+  if (!date) {
+    return "";
+  }
+  return date.toLocaleDateString("en-US", {
+    month: "short",
+    day: "2-digit",
+  });
 }
 
 function taskLabelTemplate(props: any): string {
-    const taskName: string =
-        props.TaskName || props.ganttProperties?.taskName;
+  const taskName: string = props.TaskName || props.ganttProperties?.taskName;
 
-    const startDate: Date =
-        props.StartDate || props.ganttProperties?.startDate;
+  const startDate: Date = props.StartDate || props.ganttProperties?.startDate;
 
-    const endDate: Date =
-        props.EndDate || props.ganttProperties?.endDate;
+  const endDate: Date = props.EndDate || props.ganttProperties?.endDate;
 
-    const progress: number =
-        props.Progress ?? props.ganttProperties?.progress ?? 0;
+  const progress: number =
+    props.Progress ?? props.ganttProperties?.progress ?? 0;
 
-    const resources: any[] =
-        props.Resources || props.ganttProperties?.resourceInfo;
+  const resources: any[] =
+    props.Resources || props.ganttProperties?.resourceInfo;
 
-    const resourceHtml: string = (resources && resources.length)
-        ? `<span class="resource-count">👥 ${resources.length}</span>`
-        : '';
+  const resourceHtml: string =
+    resources && resources.length
+      ? `<span class="resource-count">👥 ${resources.length}</span>`
+      : "";
 
-    return `
+  return `
         <div class="rich-task-label">
             <div class="task-info">
                 <strong>${taskName}</strong>
@@ -342,28 +363,28 @@ function taskLabelTemplate(props: any): string {
 }
 
 let gantt: Gantt = new Gantt({
-    dataSource: GanttData,
-    height: '450px',
-    taskFields: {
-        id: 'TaskID',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        duration: 'Duration',
-        progress: 'Progress',
-        parentID: 'ParentID'
-    },
-    labelSettings: {
-        taskLabel: taskLabelTemplate
-    }
+  dataSource: GanttData,
+  height: "450px",
+  taskFields: {
+    id: "TaskID",
+    name: "TaskName",
+    startDate: "StartDate",
+    duration: "Duration",
+    progress: "Progress",
+    parentID: "ParentID",
+  },
+  labelSettings: {
+    taskLabel: taskLabelTemplate,
+  },
 });
 
-gantt.appendTo('#Gantt');
+gantt.appendTo("#Gantt");
 ```
 
 {% endif %}
 
 ## See also
 
-- [How to customize taskbars?](../gantt/taskbar)
-- [How to manage task dependencies?](../gantt/task-dependency)
-- [How to configure critical path?](../gantt/critical-path)
+- [How to customize taskbars?](https://ej2.syncfusion.com/javascript/documentation/gantt/taskbar)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/javascript/documentation/gantt/task-dependency)
+- [How to configure critical path?](https://ej2.syncfusion.com/javascript/documentation/gantt/critical-path)

@@ -11,15 +11,15 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Column Rendering in JavaScript Gantt Chart Control
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Gantt Chart control supports column rendering to control data presentation. Column definitions act as the data schema and support operations such as sorting and filtering. The [field](../../api/gantt/column#field) property is required to map data source values to columns and must be defined for features like complex binding and template-based actions.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Gantt Chart control supports column rendering to control data presentation. Column definitions act as the data schema and support operations such as sorting and filtering. The [field](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#field) property is required to map data source values to columns and must be defined for features like complex binding and template-based actions.
 
-> * If the `field` is not defined in the [dataSource](../../api/gantt#datasource), the column will display empty values.
-> * A `field` with a dot operator is treated as [complex binding](../column/column-rendering#complex-data-binding).
-> * To enable CRUD, filtering, or searching, the `field` must be defined for template columns.
+> - If the `field` is not defined in the [dataSource](https://ej2.syncfusion.com/javascript/documentation/api/gantt#datasource), the column will display empty values.
+> - A `field` with a dot operator is treated as [complex binding](https://ej2.syncfusion.com/javascript/documentation/column/column-rendering#complex-data-binding).
+> - To enable CRUD, filtering, or searching, the `field` must be defined for template columns.
 
 ## Define columns manually
 
-To manually define columns in the Gantt Chart control, use `e-columns` and set properties like [field](../../api/gantt/column#field), [headerText](../../api/gantt/column#headertext) and [width](../../api/gantt/column#width). This enables customization of column behavior and appearance based on specific requirements.
+To manually define columns in the Gantt Chart control, use `e-columns` and set properties like [field](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#field), [headerText](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#headertext) and [width](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#width). This enables customization of column behavior and appearance based on specific requirements.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -31,7 +31,7 @@ To manually define columns in the Gantt Chart control, use `e-columns` and set p
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -50,7 +50,7 @@ To manually define columns in the Gantt Chart control, use `e-columns` and set p
 
 ## Auto generated columns
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control automatically generates columns when the [columns](../../api/gantt#columns) property is either empty or undefined during initialization, binding all fields from the [dataSource](../../api/gantt#datasource) as individual Gantt columns.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control automatically generates columns when the [columns](https://ej2.syncfusion.com/javascript/documentation/api/gantt#columns) property is either empty or undefined during initialization, binding all fields from the [dataSource](https://ej2.syncfusion.com/javascript/documentation/api/gantt#datasource) as individual Gantt columns.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -62,7 +62,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control automat
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -79,15 +79,15 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control automat
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs2" %}
 {% endif %}
 
-## Dynamic column generation 
+## Dynamic column generation
 
 You can dynamically generate columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control at runtime based on the provided data. This is useful when the column structure needs to adapt to user requirements or dynamic data sources.
 
 ### Using valueAccessor property
 
-The [valueAccessor](../../api/gantt/column#valueaccessor) property is used to format column data in the Gantt Chart control. It accepts a function that returns a custom display value using the following two arguments:
+The [valueAccessor](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#valueaccessor) property is used to format column data in the Gantt Chart control. It accepts a function that returns a custom display value using the following two arguments:
 
-- `field`: The column's data field.  
+- `field`: The column's data field.
 - `data`: The data record for the row.
 
 In the following example, `percentageFormatter` returns the progress value with a `%` sign, while `concatenateFields` returns a combined string of **TaskName** and **TaskID**.
@@ -102,7 +102,7 @@ In the following example, `percentageFormatter` returns the progress value with 
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -123,7 +123,7 @@ In the following example, `percentageFormatter` returns the progress value with 
 
 ### Display array type columns
 
-The Gantt Chart control supports binding an array of objects to a column using the  [valueAccessor](../../api/gantt/column#valueaccessor) property. It accepts a function that returns a custom display value, which is then displayed in the column.
+The Gantt Chart control supports binding an array of objects to a column using the [valueAccessor](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#valueaccessor) property. It accepts a function that returns a custom display value, which is then displayed in the column.
 
 In the following example, the **Name** column shows the combined value of **FirstName** and **LastName** by using a custom function defined in `valueAccessor`.
 
@@ -137,7 +137,7 @@ In the following example, the **Name** column shows the combined value of **Firs
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -154,13 +154,13 @@ In the following example, the **Name** column shows the combined value of **Firs
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs4" %}
 {% endif %}
 
->Since customized values are displayed in the **Name** column, data operations, such as sorting and filtering, cannot be performed for this column.
+> Since customized values are displayed in the **Name** column, data operations, such as sorting and filtering, cannot be performed for this column.
 
 ### Expression column
 
-You can achieve an expression column in the Gantt Chart control using the [valueAccessor](../../api/gantt/column#valueaccessor) property. It accepts a function that returns a calculated value, which is displayed in the column based on other column values.
+You can achieve an expression column in the Gantt Chart control using the [valueAccessor](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#valueaccessor) property. It accepts a function that returns a calculated value, which is displayed in the column based on other column values.
 
-In the following example, the chart includes columns like **TaskID**, **TaskName**, **Duration**, **Progress**, **units**, and **unit price**. A  **Total Price** column is added to display the result of multiplying **units** and **unit price** for each row.
+In the following example, the chart includes columns like **TaskID**, **TaskName**, **Duration**, **Progress**, **units**, and **unit price**. A **Total Price** column is added to display the result of multiplying **units** and **unit price** for each row.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -172,7 +172,7 @@ In the following example, the chart includes columns like **TaskID**, **TaskName
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs5" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -193,7 +193,7 @@ In the following example, the chart includes columns like **TaskID**, **TaskName
 
 ### Display serial number
 
-You can display serial numbers for each row in the Gantt Chart control using the [rowDataBound](../../gantt/events#rowdatabound) event. This event triggers when data is bound to each row, allowing you to assign and display a serial number directly in the column.
+You can display serial numbers for each row in the Gantt Chart control using the [rowDataBound](https://ej2.syncfusion.com/javascript/documentation/gantt/events#rowdatabound) event. This event triggers when data is bound to each row, allowing you to assign and display a serial number directly in the column.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -205,7 +205,7 @@ You can display serial numbers for each row in the Gantt Chart control using the
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-rendering-cs6" %}
 
 {% elsif page.publishingplatform == "javascript" %}

@@ -3,7 +3,7 @@ layout: post
 title: Resource View in JavaScript Gantt Chart Control | Syncfusion
 description: Learn how to configure resource view in the Syncfusion JavaScript Gantt Chart control for hierarchical task visualization and resource allocation.
 platform: gantt-sdk
-control: Resource view 
+control: Resource view
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -11,7 +11,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Resource view in JavaScript Gantt Chart Control
 
-The resource view in the JavaScript Gantt Chart control organizes tasks hierarchically by resource, displaying resources as parent nodes and their assigned tasks as child taskbars in a timeline. Enable it by setting [viewType](https://ej2.syncfusion.com/javascript/documentation/api/gantt#viewtype) to **ResourceView**. Resources are declared in the [resources](https://ej2.syncfusion.com/javascript/documentation/api/gantt#resources) collection and mapped through [resourceFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt#resourcefields) to identify the resource ID, name, unit, and group. Each task then references its assigned resources through [taskFields.resourceInfo](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#resourceinfo) in the task data source so resource-based grouping and workload visualization are applied automatically. Unassigned tasks are grouped under an **Unassigned Task** node, while the [queryTaskbarInfo](../gantt/events#querytaskbarinfo) event can customize taskbar styles and overallocation indicators can highlight scheduling conflicts. Taskbars include ARIA labels for accessibility, and the view adapts to responsive layouts, although narrow screens may truncate resource names. Parent tasks are not supported, and tasks require scheduling details such as a start date and duration.
+The resource view in the JavaScript Gantt Chart control organizes tasks hierarchically by resource, displaying resources as parent nodes and their assigned tasks as child taskbars in a timeline. Enable it by setting [viewType](https://ej2.syncfusion.com/javascript/documentation/api/gantt#viewtype) to **ResourceView**. Resources are declared in the [resources](https://ej2.syncfusion.com/javascript/documentation/api/gantt#resources) collection and mapped through [resourceFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt#resourcefields) to identify the resource ID, name, unit, and group. Each task then references its assigned resources through [taskFields.resourceInfo](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#resourceinfo) in the task data source so resource-based grouping and workload visualization are applied automatically. Unassigned tasks are grouped under an **Unassigned Task** node, while the [queryTaskbarInfo](https://ej2.syncfusion.com/javascript/documentation/gantt/events#querytaskbarinfo) event can customize taskbar styles and overallocation indicators can highlight scheduling conflicts. Taskbars include ARIA labels for accessibility, and the view adapts to responsive layouts, although narrow screens may truncate resource names. Parent tasks are not supported, and tasks require scheduling details such as a start date and duration.
 
 ## Configure resource view
 
@@ -61,7 +61,7 @@ var data = [
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/resource-view-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/resource-view-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -96,7 +96,7 @@ The following example toggles overallocation visibility:
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/resource-view-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/resource-view-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -123,7 +123,7 @@ When a resource is subsequently assigned to an unassigned task, the task automat
 
 ## Enable taskbar drag and drop
 
-Enable taskbar drag-and-drop between resources with [allowTaskbarDragAndDrop](https://ej2.syncfusion.com/javascript/documentation/api/gantt#allowtaskbardraganddrop) set to **true**, requiring the `RowDD` module. This allows vertical taskbar movement for reassignment, triggered by the [rowDragStart](../gantt/events#rowdragstart) and [rowDrop](../gantt/events#rowdrop) events.
+Enable taskbar drag-and-drop between resources with [allowTaskbarDragAndDrop](https://ej2.syncfusion.com/javascript/documentation/api/gantt#allowtaskbardraganddrop) set to **true**, requiring the `RowDD` module. This allows vertical taskbar movement for reassignment, triggered by the [rowDragStart](https://ej2.syncfusion.com/javascript/documentation/gantt/events#rowdragstart) and [rowDrop](https://ej2.syncfusion.com/javascript/documentation/gantt/events#rowdrop) events.
 
 The following example enables drag-and-drop:
 
@@ -137,7 +137,7 @@ The following example enables drag-and-drop:
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/resource-view-taskbardragdrop-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/resource-view-taskbardragdrop-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -168,7 +168,7 @@ You can customize the taskbar appearance based on resource view using the [query
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/resource-view-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/resource-view-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -187,7 +187,7 @@ You can customize the taskbar appearance based on resource view using the [query
 
 ## Hide columns in resource tab
 
-To hide a column in the Gantt Chart's resource view, handle the [actionBegin](../gantt/events#actionbegin) event and set the `visible` property of the target column to **false** when the `requestType` is `beforeOpenAddDialog` or `beforeOpenEditDialog`.
+To hide a column in the Gantt Chart's resource view, handle the [actionBegin](https://ej2.syncfusion.com/javascript/documentation/gantt/events#actionbegin) event and set the `visible` property of the target column to **false** when the `requestType` is `beforeOpenAddDialog` or `beforeOpenEditDialog`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -199,7 +199,7 @@ To hide a column in the Gantt Chart's resource view, handle the [actionBegin](..
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/resource-view-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/resource-view-cs5" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -222,6 +222,7 @@ To hide a column in the Gantt Chart's resource view, handle the [actionBegin](..
 - Unscheduled tasks (lacking start date or duration) are not supported in resource view.
 
 ## See also
-- [How to configure resources?](../gantt/resources)
-- [How to enable multi taskbar?](../gantt/multi-taskbar)
-- [How to customize taskbars?](../gantt/taskbar)
+
+- [How to configure resources?](https://ej2.syncfusion.com/javascript/documentation/gantt/resources)
+- [How to enable multi taskbar?](https://ej2.syncfusion.com/javascript/documentation/gantt/multi-taskbar)
+- [How to customize taskbars?](https://ej2.syncfusion.com/javascript/documentation/gantt/taskbar)

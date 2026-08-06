@@ -3,7 +3,7 @@ layout: post
 title: Indent and Outdent in JavaScript Gantt Chart Control | Syncfusion
 description: Learn how to use indent and outdent features in the Syncfusion JavaScript Gantt Chart control to manage task hierarchy effectively.
 platform: gantt-sdk
-control: Indent and Outdent 
+control: Indent and Outdent
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -13,12 +13,12 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 The [JavaScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control provides built-in support for indenting and outdenting rows, allowing hierarchy levels to be adjusted within the Gantt chart.
 
- * **Indent** – Moves a selected row one level deeper, making it the last child of its previous row.
- * **Outdent** – Shifts a row one level up, placing it as a sibling to its parent.
+- **Indent** – Moves a selected row one level deeper, making it the last child of its previous row.
+- **Outdent** – Shifts a row one level up, placing it as a sibling to its parent.
 
-To enable indent and outdent functionality, set [editSettings.allowEditing](../api/gantt/editSettings#allowediting) to **true**, inject `Edit` and `Selection` module of the control, and use either the **built-in context menu** or [toolbaritems](../api/gantt/toolbarItem) to perform indent and outdent actions.
+To enable indent and outdent functionality, set [editSettings.allowEditing](https://ej2.syncfusion.com/javascript/documentation/api/gantt/editSettings#allowediting) to **true**, inject `Edit` and `Selection` module of the control, and use either the **built-in context menu** or [toolbaritems](https://ej2.syncfusion.com/javascript/documentation/api/gantt/toolbarItem) to perform indent and outdent actions.
 
-The following sample demonstrates how to enable indent and outdent functionalities in the Gantt using the [toolbar](../api/gantt#toolbar) property.
+The following sample demonstrates how to enable indent and outdent functionalities in the Gantt using the [toolbar](https://ej2.syncfusion.com/javascript/documentation/api/gantt#toolbar) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -30,7 +30,7 @@ The following sample demonstrates how to enable indent and outdent functionaliti
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/indent-outdent/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/indent-outdent" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -49,7 +49,7 @@ The following sample demonstrates how to enable indent and outdent functionaliti
 
 ## Indent and outdent a row programmatically
 
-You can programmatically adjust a row's hierarchy in the JavaScript Gantt Chart control using the [indent](../api/gantt#indent) and [outdent](../api/gantt#outdent) methods. Before performing these actions, select the target row by calling the [selectRow](../api/gantt#selectrow) method with the appropriate row index.
+You can programmatically adjust a row's hierarchy in the JavaScript Gantt Chart control using the [indent](https://ej2.syncfusion.com/javascript/documentation/api/gantt#indent) and [outdent](https://ej2.syncfusion.com/javascript/documentation/api/gantt#outdent) methods. Before performing these actions, select the target row by calling the [selectRow](https://ej2.syncfusion.com/javascript/documentation/api/gantt#selectrow) method with the appropriate row index.
 
 The following sample demonstrates how to programmatically select row index **2** and perform indent or outdent actions using an external button click.
 
@@ -63,7 +63,7 @@ The following sample demonstrates how to programmatically select row index **2**
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/indent-outdent-externally/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/indent-outdent-externally" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -82,7 +82,7 @@ The following sample demonstrates how to programmatically select row index **2**
 
 ## Retrieve Indent and outdent details
 
-You can retrieve indent and outdent details using the [actionComplete](../api/gantt#actioncomplete) event, where the `args.requestType` value will be either **indented** or **outdented**, indicating the type of action performed.
+You can retrieve indent and outdent details using the [actionComplete](https://ej2.syncfusion.com/javascript/documentation/api/gantt#actioncomplete) event, where the `args.requestType` value will be either **indented** or **outdented**, indicating the type of action performed.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -94,7 +94,7 @@ You can retrieve indent and outdent details using the [actionComplete](../api/ga
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/indent-outdent-events/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/indent-outdent-events" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -111,6 +111,6 @@ You can retrieve indent and outdent details using the [actionComplete](../api/ga
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/indent-outdent-events" %}
 {% endif %}
 
-## Limitation 
+## Limitation
 
-* The indent and outdent feature does not support selecting and modifying multiple rows simultaneously.
+- The indent and outdent feature does not support selecting and modifying multiple rows simultaneously.
