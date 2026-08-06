@@ -9,7 +9,7 @@ documentation: ug
 
 # Responsive Layout in Blazor Kanban Component
 
-The [Blazor Kanban Board](https://www.syncfusion.com/blazor-components/blazor-kanban-board) component supports responsive behavior, automatically adapting its layout based on the width and height of the client’s browser.
+The [Blazor Kanban Board](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) component supports responsive behavior, automatically adapting its layout based on the width and height of the client’s browser.
 
 ## Available layouts
 

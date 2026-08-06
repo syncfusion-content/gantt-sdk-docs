@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with Blazor Kanban Component
 
-This guide briefly explains about how to include [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban-board) component in a Blazor WebAssembly App using [Visual Studio](https://visualstudio.microsoft.com/vs/), [Visual Studio Code](https://code.visualstudio.com/), and the [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/).
+This guide briefly explains about how to include [Blazor Kanban](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) component in a Blazor WebAssembly App using [Visual Studio](https://visualstudio.microsoft.com/vs/), [Visual Studio Code](https://code.visualstudio.com/), and the [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/).
 
 > **Ready to streamline your Blazor development?** <br/>Discover the full potential of Blazor components with AI Coding Assistants. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, CodeStudio and more. [Explore AI Coding Assistants](https://blazor.syncfusion.com/documentation/ai-coding-assistant/overview)
 
@@ -225,7 +225,7 @@ Add the Blazor Kanban component in the **~/Pages/Home.razor** file.
     ```
 2. The application will start and display in your default web browser.
 
-N> You can also explore our [Blazor Kanban Board example](https://blazor.syncfusion.com/demos/kanban/overview?theme=bootstrap5) that shows you how to render and configure the Kanban Board.
+N> You can also explore our [Blazor Kanban Board example](https://blazor.syncfusion.com/demos/kanban/overview?theme=fluent2) that shows you how to render and configure the Kanban Board.
 
 ## See also
 

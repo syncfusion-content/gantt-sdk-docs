@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Use Swimlanes in Blazor Kanban
 
-Swimlanes are horizontal categorizations of cards on the [Blazor Kanban Board](https://www.syncfusion.com/blazor-components/blazor-kanban-board). It is used for grouping of cards, which brings transparency to the workflow process.
+Swimlanes are horizontal categorizations of cards on the [Blazor Kanban Board](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board). It is used for grouping of cards, which brings transparency to the workflow process.
 
 ## Render swimlane row
 

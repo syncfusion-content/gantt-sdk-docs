@@ -9,7 +9,7 @@ documentation: ug
 
 # Workflow Restrictions in Blazor Kanban Component
 
-The [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban-board) workflow controls how cards move between columns. It enables restrictions when a card is moved from one column to another and supports disabling drag-and-drop actions per column.
+The [Blazor Kanban](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) workflow controls how cards move between columns. It enables restrictions when a card is moved from one column to another and supports disabling drag-and-drop actions per column.
 
 ## Prevent transition across columns
 

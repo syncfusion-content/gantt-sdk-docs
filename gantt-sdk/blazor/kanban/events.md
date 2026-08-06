@@ -9,7 +9,7 @@ documentation: ug
 
 # Event Handling in Blazor Kanban Component
 
-his guide provides a comprehensive overview of the available events in the [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban-board) component. These events enable developers to customize behavior and respond to user interactions effectively.
+his guide provides a comprehensive overview of the available events in the [Blazor Kanban](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) component. These events enable developers to customize behavior and respond to user interactions effectively.
 
 ## OnLoad event
 
