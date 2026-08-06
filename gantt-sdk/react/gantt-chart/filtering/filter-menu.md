@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Column-Specific Filter Menu for Task Data in React Gantt Chart
 
-The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component offers a filter menu for each column, enabling you to filter data based on column type and supported operators such as equal, contains, greaterthan, etc. To enable this feature, set [allowFiltering](https://ej2.syncfusion.com/react/documentation/api/gantt#allowfiltering) to **true** and configure [filterSettings.type](https://ej2.syncfusion.com/react/documentation/api/gantt/filtersettings#type) as **Menu**.
+The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component offers a filter menu for each column, enabling you to filter data based on column type and supported operators such as equal, contains, greater than, etc. To enable this feature, set [allowFiltering](https://ej2.syncfusion.com/react/documentation/api/gantt#allowfiltering) to **true** and configure [filterSettings.type](https://ej2.syncfusion.com/react/documentation/api/gantt/filtersettings#type) as **Menu**.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
