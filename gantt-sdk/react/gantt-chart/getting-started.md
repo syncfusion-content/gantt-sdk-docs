@@ -14,6 +14,94 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 This guide walks you through installing and rendering your first [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component. You'll learn how to bind task data, map fields, and display a basic project schedule in just a few minutes.
 
+{% tabcontents %}
+
+{% tabcontent Syncfusion CLI %}
+
+## Prerequisites
+
+- [Node.js 24+](https://nodejs.org/en) (LTS recommended).
+- Syncfusion CLI.
+
+## Install the Syncfusion CLI 
+
+Install the Syncfusion CLI globally using the following command:
+
+{% tabs %}
+{% highlight bash tabtitle="npm" %}
+npm install -g @syncfusion/syncfusion-cli
+{% endhighlight %}
+{% endtabs %}
+
+## Set up the Vite project using Syncfusion CLI
+
+You can create a React Vite application using the Syncfusion CLI. The CLI provides two ways to create a project:
+
+### Non-interactive mode
+
+Non-interactive mode allows you to create a project directly using a single command with the required command-line arguments.
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+sf new my-gantt-app --framework react --type ts --template gantt --theme tailwind3
+{% endhighlight %}
+{% endtabs %}
+
+In this mode, the project configuration is passed directly in the command. The above command creates a React Vite application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> `Gantt Chart` component.
+
+### Interactive mode
+
+Interactive mode guides you through the project creation process with step-by-step prompts.
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+sf
+{% endhighlight %}
+{% endtabs %}
+
+When you run the `sf` command, the CLI prompts you to select the required project configuration. To create a React Vite application with the Syncfusion<sup style="font-size:70%">&reg;</sup> `Gantt Chart` component, select the following options:
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+√ Project name? ... my-gantt-app
+√ Choose Framework: » React
+√ Choose Build Tool: » Vite
+√ Choose Language: » TypeScript
+√ Choose Template: » Gantt
+√ Choose Theme: » Tailwind3
+√ Choose Style Format: » CSS
+√ Would you like to integrate the Syncfusion MCP Server (AI Assistant) into this project? ... no
+√ Would you like to install Syncfusion Component Skills for AI-powered development? ... no      
+√ Install dependencies and start app now? ... no
+
+{% endhighlight %}
+{% endtabs %}
+
+The above selections generate a React Vite application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> `Gantt Chart` component. You can choose different values for language, theme, style format, MCP setup, and skills installation based on your project requirements.
+
+The Syncfusion<sup style="font-size:70%">&reg;</sup> CLI creates the project with a predefined template. After the project is generated, you can customize or replace the component code based on your application requirements.
+
+## Run the project
+
+Once the project is created, navigate to the project directory and run the following commands in your terminal.
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+cd my-gantt-app
+npm install
+npm run dev
+{% endhighlight %}
+{% endtabs %}
+
+The output will appear as follows:
+
+![Gantt Chart Component](./images/cli-gantt.png)
+
+{% endtabcontent %}
+
+{% tabcontent Vite CLI %}
+
 ## Prerequisites
 
 Before you begin, ensure you have:
@@ -185,6 +273,10 @@ You can preview the following sample by clicking the **Preview Sample** button.
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/run-cs1" %}
 
+{% endtabcontent %}
+
+{% endtabcontents %}
+
 ## Troubleshooting
 
 - **License warning in console:** Register a valid Syncfusion license key using `registerLicense` from `@syncfusion/ej2-base`. You can obtain a key from your [Syncfusion account](https://www.syncfusion.com/account).
@@ -197,3 +289,5 @@ You can preview the following sample by clicking the **Preview Sample** button.
 - **[Key Elements](./key-elements)** - Learn about UI components and interactions
 - **[Feature Modules](./module)** - Enable advanced features with module injection
 - **[Overview](./overview)** - Explore all available features
+
+N> Looking for the full React Gantt Chart component overview, features, pricing, and documentation? Visit the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) page.
