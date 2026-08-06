@@ -53,7 +53,7 @@
     SfSchedule<HospitalData> ScheduleRef;
     public List<HospitalData> DataSource = new ScheduleData().GetHospitalData();
     public List<HospitalData> TreeViewData = new ScheduleData().GetWaitingListData();
-    public string?[] Resources = new string[] { "Departments", "Consultants" };
+    public string[] Resources = new string[] { "Departments", "Consultants" };
     private List<string> DropTarget1 = new List<string> { "#Schedule1" };
     private List<ResourceData> Departments { get; set; } = new List<ResourceData> {
         new ResourceData { Text = "GENERAL", Id = 1, Color = "#bbdc00" },

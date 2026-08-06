@@ -90,7 +90,7 @@ N> All Syncfusion Blazor packages are available on [nuget.org](https://www.nuget
 
 ## Prerequisites
 
-Install the latest version of [.NET SDK](https://dotnet.microsoft.com/en-us/download). If the .NET SDK is already installed, determine the installed version by running the following command in a command prompt (Windows), terminal (macOS), or command shell (Linux).
+Install the latest version of [.NET SDK](https://dotnet.microsoft.com/en-us/download). If the .NET SDK is already installed, determine the installed version by running the following command in a command prompt (Windows), terminal (macOS) or command shell (Linux).
 
 {% tabs %}
 {% highlight c# tabtitle=".NET CLI" %}
@@ -187,10 +187,10 @@ Add the Blazor Kanban component in the **~/Pages/Home.razor** file.
 @code {
     public class TasksModel
     {
-        public string?? Id { get; set; }
-        public string?? Title { get; set; }
-        public string?? Status { get; set; }
-        public string?? Summary { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()

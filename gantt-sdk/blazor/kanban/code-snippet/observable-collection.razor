@@ -36,11 +36,11 @@ SfToast ToastObj;
         new ColumnModel(){ HeaderText= "Done", KeyField=new List<string>() { "Close" } }
     };
     public ObservableCollection<ObservableDatas> ObservableData { get; set; }
-    private string ToastContent { get; set; }
+    private string? ToastContent { get; set; }
     List<ObservableDatas> Tasks = new List<ObservableDatas>();
     private int AddUniqueId { get; set; }
     private int UpdateUniqueId { get; set; }
-    private string ToastTarget { get; set; } = "#toast-kanban-observable";
+    private string? ToastTarget { get; set; } = "#toast-kanban-observable";
     protected override void OnInitialized()
     {
         Tasks = Enumerable.Range(1, 20).Select(x => new ObservableDatas()
@@ -85,7 +85,7 @@ SfToast ToastObj;
     public class ObservableDatas : INotifyPropertyChanged
     {
         public string? Id { get; set; }
-        private string status { get; set; }
+        private string? status { get; set; }
         public string? Status
         {
             get { return status; }
