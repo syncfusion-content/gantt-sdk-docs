@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Rows Drag and Drop in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Row Drag and Drop in Syncfusion Blazor Gantt Chart component and much more details.
+title: Row Drag and Drop in Blazor Gantt Chart | Syncfusion
+description: Learn how to enable row drag and drop in Syncfusion Blazor Gantt Chart to reorder, rearrange, and move tasks within the project hierarchy.
+keywords: blazor gantt drag drop, row drag drop, reorder tasks, move tasks, drag between grids, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/drag-and-drop
 platform: gantt-sdk
-control: Gantt Chart
+control: Drag and Drop - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Row drag and drop in Blazor Gantt Chart component
+# Row Drag and Drop for Task Reordering in Blazor Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component includes built-in support for row drag and drop, enabling rows to be rearranged within the Gantt chart or dropped into custom components. 
 

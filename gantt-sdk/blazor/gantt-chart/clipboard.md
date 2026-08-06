@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Clipboard in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about clipboard in Syncfusion Blazor Gantt Chart component and much more details.
+title: Clipboard in Blazor Gantt Chart | Syncfusion
+description: Learn how to use clipboard operations in Syncfusion Blazor Gantt Chart to copy and paste task rows or cell values efficiently.
+keywords: blazor gantt clipboard, copy paste gantt, clipboard operations, copy rows, cell copy, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/clipboard
 platform: gantt-sdk
-control: Gantt Chart
+control: Clipboard - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Clipboard in Blazor Gantt Chart component
+# Clipboard Copy and Paste Operations in Blazor Gantt Chart
 
 The clipboard feature allows copying selected row or cell data from the Gantt Chart component.
 
@@ -322,7 +325,8 @@ You can use the [RowSelected](https://blazor.syncfusion.com/documentation/gantt-
             var clip = args.ClipboardText;
             if (clip != "" || clip != null)
             {
-                var record = clip.Split("\n");
+                var record = clip.Split("
+");
                 int index = 0;
                 foreach (var rec in record)
                 {

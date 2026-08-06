@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Expand and Collapse Icon in Blazor Gantt Chart | Syncfusion®
-description: Checkout and learn here all about Customize Expand and Collapse Icon in Blazor Gantt Chart component and more.
+title: Expand Collapse Icon in Blazor Gantt Chart | Syncfusion
+description: Learn how to customize the expand and collapse icons in Syncfusion Blazor Gantt Chart using CSS overrides for a personalized look.
+keywords: blazor gantt expand collapse icon, customize tree icon, treegrid icon, css customization, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/how-to/customize-expand-collapse-icon
 platform: gantt-sdk
-control: Gantt Chart
+control: Expand Collapse Icon - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Customize Expand and Collapse Icon in Blazor Gantt Chart Component
+# Customizing Expand and Collapse Icons in Blazor Gantt Chart
 
 In the Gantt Chart component, you can customize the expand and collapse icons by overriding the default icon classes `.e-treegridexpand` and `.e-treegridcollapse` with the `content` property. The below sample code demonstrates the customization of the expand and collapse icons.
 

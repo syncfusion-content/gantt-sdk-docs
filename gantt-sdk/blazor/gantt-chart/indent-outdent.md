@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Indent and outdent in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Indent and outdent in Syncfusion Blazor Gantt Chart component and more.
+title: Indent and Outdent in Blazor Gantt Chart | Syncfusion
+description: Learn how to indent and outdent tasks in Syncfusion Blazor Gantt Chart to manage task hierarchy and parent-child relationships programmatically.
+keywords: blazor gantt indent outdent, task hierarchy, parent child tasks, indent task, outdent task, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/indent-outdent
 platform: gantt-sdk
-control: Gantt Chart
+control: Indent and Outdent - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Indent and outdent in Blazor Gantt Chart Component
+# Indent and Outdent for Task Hierarchy in Blazor Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component provides built-in support for indenting and outdenting rows, allowing task levels to be updated within the hierarchical structure.
 

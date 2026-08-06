@@ -1,39 +1,42 @@
----
+﻿---
 layout: post
-title: Toolbar in Blazor Gantt Chart Component | Syncfusion
-description: Learn all about the Toolbar in Syncfusion Blazor Gantt Chart, including customization, actions and more.
+title: Toolbar in Blazor Gantt Chart | Custom Items | Syncfusion
+description: Learn how to configure the toolbar in Syncfusion Blazor Gantt Chart with built-in items like Add, Edit, Search, ZoomIn, and custom toolbar buttons.
+keywords: blazor gantt toolbar, toolbar items, custom toolbar, add edit search zoom, built-in toolbar, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/tool-bar
 platform: gantt-sdk
-control: Toolbar
+control: Toolbar - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Toolbar in Blazor Gantt Chart Component
+# Managing Built-in and Custom Toolbar Items in Blazor Gantt Chart
 
 The Blazor Gantt Chart component includes built-in toolbar support for executing common actions such as editing, searching, and navigating the timeline. The [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Toolbar) property accepts the collection of built-in toolbar items and `ToolbarItem` objects for custom toolbar items.
 
 ## Built-in toolbar items
 
-Built-in toolbar items allow you to perform standard operations directly from the Gantt interface. These items can be added to the toolbar by specifying the  [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Toolbar) property as a collection of predefined items. Each toolbar item appears as a button with an associated icon and label for intuitive interaction.
+Built-in toolbar items allow you to perform standard operations directly from the Gantt interface. These items can be added to the toolbar by specifying the [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Toolbar) property as a collection of predefined items. Each toolbar item appears as a button with an associated icon and label for intuitive interaction.
 
 The following table shows built-in toolbar items and its actions.
 
-| Built-in Toolbar Items | Actions |
-|------------------------|---------|
-| Add | Adds a new record. |
-| Cancel | Cancels the edit state. |
-| CollapseAll | Collapses all the rows. |
-| Delete | Deletes the selected record. |
-| Edit | Edits the selected record. |
-| Indent | Indent the selected record to one level. |
-| Outdent | Outdent the selected record to one level. |
-| ExpandAll | Expands all the rows. |
-| NextTimeSpan | Navigate the Gantt Chart timeline to next time span. |
-| PrevTimeSpan | Navigate the Gantt Chart timeline to previous time span. |
-| Search | Searches the records by the given key. |
-| Update | Updates the edited record. |
-| ZoomIn | To perform zoom-in action on Gantt Chart timeline. |
-| ZoomOut | To perform zoom-out action on Gantt Chart timeline. |
-| ZoomToFit | To show all tasks with timeline fit into available Chart width. |
+| Built-in Toolbar Items | Actions                                                         |
+| ---------------------- | --------------------------------------------------------------- |
+| Add                    | Adds a new record.                                              |
+| Cancel                 | Cancels the edit state.                                         |
+| CollapseAll            | Collapses all the rows.                                         |
+| Delete                 | Deletes the selected record.                                    |
+| Edit                   | Edits the selected record.                                      |
+| Indent                 | Indent the selected record to one level.                        |
+| Outdent                | Outdent the selected record to one level.                       |
+| ExpandAll              | Expands all the rows.                                           |
+| NextTimeSpan           | Navigate the Gantt Chart timeline to next time span.            |
+| PrevTimeSpan           | Navigate the Gantt Chart timeline to previous time span.        |
+| Search                 | Searches the records by the given key.                          |
+| Update                 | Updates the edited record.                                      |
+| ZoomIn                 | To perform zoom-in action on Gantt Chart timeline.              |
+| ZoomOut                | To perform zoom-out action on Gantt Chart timeline.             |
+| ZoomToFit              | To show all tasks with timeline fit into available Chart width. |
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -82,6 +85,7 @@ The following table shows built-in toolbar items and its actions.
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -89,7 +93,7 @@ The following table shows built-in toolbar items and its actions.
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/rXrnZxrVBtGKoTGy?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-> * The [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Toolbar) has options to define both built-in and custom toolbar items.
+> - The [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Toolbar) has options to define both built-in and custom toolbar items.
 
 ## Custom toolbar items
 
@@ -160,6 +164,7 @@ By default, custom toolbar items are aligned to the left. However, you can chang
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -167,7 +172,7 @@ By default, custom toolbar items are aligned to the left. However, you can chang
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/BNrdjxBVBNPRGttX?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-> * If a toolbar item does not match the built-in items, it will be treated as a custom toolbar item.
+> - If a toolbar item does not match the built-in items, it will be treated as a custom toolbar item.
 
 ## Built-in and custom items in toolbar
 
@@ -178,6 +183,7 @@ The Gantt component supports using both built-in and custom toolbar items simult
 
 @using Syncfusion.Blazor.Gantt
 @using Syncfusion.Blazor.Navigations
+
 <p>@Message</p>
 <SfGantt DataSource="@TaskCollection" Toolbar="Toolbaritems" Height="450px" Width="900px">
     <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
@@ -230,6 +236,7 @@ The Gantt component supports using both built-in and custom toolbar items simult
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -312,6 +319,7 @@ You can control toolbar items dynamically using the [EnableItems](https://help.s
         };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}

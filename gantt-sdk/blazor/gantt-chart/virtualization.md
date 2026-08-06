@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Virtualization in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Virtualization in Syncfusion Blazor Gantt Chart component and more.
+title: Virtualization in Blazor Gantt Chart | Syncfusion
+description: Learn how to enable row and column virtualization in Syncfusion Blazor Gantt Chart for efficient rendering of large project task datasets.
+keywords: blazor gantt virtualization, row virtualization, column virtualization, large data, virtual scrolling, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/virtualization
 platform: gantt-sdk
-control: Gantt Chart
+control: Virtualization - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Virtualization in Blazor Gantt Chart Component
+# Row and Column Virtualization in Blazor Gantt Chart
 
 Virtual scrolling in the Blazor Gantt Chart improves performance by rendering only visible rows, columns, and timeline segments, reducing DOM operations for large datasets or extended timelines. Row virtualization handles large task volumes (e.g. displaying 10,000 tasks in a project), timeline virtualization loads timeline cells on-demand during horizontal scrolling (e.g. navigating multi-year timelines), and column virtualization renders only the columns currently in view. These techniques enable efficient and scalable project management.
 

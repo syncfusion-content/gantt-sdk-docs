@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Timezone Support in Blazor Gantt Chart Component | Syncfusion
-description: Learn about timezone support in the Syncfusion Blazor Gantt Chart, including configuration and behavior details.
+title: Timezone Support in Blazor Gantt Chart | Syncfusion
+description: Learn how to configure timezone support in Syncfusion Blazor Gantt Chart for accurate task scheduling and date rendering across different time zones.
+keywords: blazor gantt timezone, time zone support, gantt timezone, scheduling timezone, date timezone, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/timezone
 platform: gantt-sdk
-control: Gantt Chart
+control: Timezone - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Timezone support in Blazor Gantt Chart
+# Timezone with IANA Support in Blazor Gantt Chart
 
 The Blazor Gantt Chart component schedules and displays dates and times based on the system timezone by default. To configure it to use a specific timezone, assign a standard IANA timezone string such as `UTC` or `America/New_York` to the [Timezone](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Timezone) property.
 

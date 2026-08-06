@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Splitter in Blazor Gantt Chart Component | Syncfusion
-description: Learn how to configure the splitter in the Syncfusion Blazor Gantt Chart component for flexible TreeGrid and Chart panel sizing.
+title: Splitter in Blazor Gantt Chart | Syncfusion
+description: Learn how to configure the splitter in Syncfusion Blazor Gantt Chart to adjust the TreeGrid and chart panel width for flexible layout control.
+keywords: blazor gantt splitter, splitter position, grid chart panel, splitter index, splitter settings, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/splitter
 platform: gantt-sdk
-control: Gantt Chart
+control: Splitter - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Splitter in Blazor Gantt Chart Component
+# Splitter with Panel Resizing in Blazor Gantt Chart
 
 The splitter in the Blazor Gantt Chart component divides the TreeGrid (task data table) and Chart (timeline with taskbars) panels, enabling flexible width allocation for project visualization. Configured via the [GanttSplitterSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSplitterSettings.html) property, the splitter supports pixel or percentage-based positioning, column-based alignment, and predefined view modes. The [SetSplitterPosition](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_SetSplitterPositionAsync_System_Int32_) method adjusts positioning dynamically, while the [SplitterResizeStart](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_SplitterResizeStart), [SplitterResizing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_SplitterResizing), and [SplitterResized](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_SplitterResized) events handle resize interactions. The splitter includes ARIA labels for accessibility, ensuring screen reader compatibility, and adapts to responsive designs, though narrow screens may limit visible columns or timeline segments. By default, both panels are visible with equal width.
 
