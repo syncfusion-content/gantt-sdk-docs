@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: How to Span Columns in TypeScript Gantt Chart Control | Syncfusion
-description: Learn how to span columns in the Syncfusion TypeScript Gantt Chart control using the queryCellInfo event, customize borders, and understand limitations.
+title: Column Spanning in TypeScript Gantt Chart | Syncfusion
+description: Learn how to merge and span adjacent columns in Syncfusion TypeScript Gantt Chart to organize related task data and improve layout presentation.
+keywords: TypeScript gantt column spanning, gantt column span, merge columns, colspan, cell spanning, gantt layout customization, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/columns/column-spanning
 platform: gantt-sdk
-control: Column spanning 
-publishingplatform: gantt-sdk
+control: Column Spanning - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Column Spanning in TypeScript Gantt Chart Control
+# Merging Adjacent Cells with Column Spanning in TypeScript Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Gantt Chart control supports **column spanning**, allowing adjacent cells to merge horizontally for improved layout clarity. This feature is useful for grouping related data or enhancing visual structure.
 

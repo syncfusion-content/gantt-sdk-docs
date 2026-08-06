@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: TypeScript Gantt Row Selection API Guide | Syncfusion
-description: Explore how to configure and customize row selection in the Syncfusion TypeScript Gantt Chart control using API methods and events.
+title: Row Selection in TypeScript Gantt Chart | Syncfusion
+description: Configure row selection in Syncfusion TypeScript Gantt Chart with single and multiple selection modes, API methods, and events.
+keywords: TypeScript gantt row selection, select rows, multiple rows, selection mode, row select event, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/selection/row-selection
 platform: gantt-sdk
-control: Row selection 
-publishingplatform: gantt-sdk
+control: Row Selection - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Row Selection in TypeScript Gantt Chart Control
+#  Selecting Multiple Rows and Single Row in TypeScript Gantt Chart
 
 The TypeScript Gantt Chart control supports row selection using mouse clicks or keyboard navigation (arrow keys). This enables users to highlight, manipulate, or trigger actions on selected task rows.
 

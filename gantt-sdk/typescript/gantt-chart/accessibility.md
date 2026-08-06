@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Accessibility in TypeScript Gantt Chart Control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion TypeScript Gantt Chart Control of Syncfusion Essential JS 2 and more.
+title: Accessibility in TypeScript Gantt Chart | Syncfusion
+description: Learn about accessibility features in the Syncfusion TypeScript Gantt Chart, including WCAG 2.2 compliance, keyboard navigation, and screen reader support.
+keywords: typescript gantt accessibility, wcag 2.2, keyboard navigation, screen reader, aria, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/accessibility
 platform: gantt-sdk
-control: Accessibility 
-publishingplatform: gantt-sdk
+control: Accessibility - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Accessibility in TypeScript Gantt Chart Control
+# Accessibility in TypeScript Gantt Chart
 
 The [TypeScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control is designed with comprehensive accessibility support, adhering to established guidelines and standards including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles). This ensures the control is usable by individuals with disabilities and meets legal accessibility requirements for enterprise applications.
 
@@ -274,3 +275,5 @@ The sample demonstrates complete keyboard navigation functionality, screen reade
 * [Keyboard Navigation in TypeScript Gantt Chart control](./keyboard-navigation)
 * [WCAG 2.2 Guidelines](https://www.w3.org/TR/WCAG22/)
 * [Section 508 Standards](https://www.section508.gov/)
+
+

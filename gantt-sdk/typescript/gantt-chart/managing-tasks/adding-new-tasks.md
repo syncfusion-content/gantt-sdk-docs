@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Adding new tasks in TypeScript Gantt control | Syncfusion
-description: Learn here all about Adding new tasks in Syncfusion TypeScript Gantt control of Syncfusion Essential JS 2 and more.
+title: Adding New Tasks in TypeScript Gantt Chart | Syncfusion
+description: Learn to add new tasks in Syncfusion TypeScript Gantt Chart through dialogs, toolbars, and programmatic methods for efficient project task management.
+keywords: TypeScript gantt add task, adding tasks, new task, create task, task creation, add dialog, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/managing-tasks/adding-new-tasks
 platform: gantt-sdk
-control: Adding new tasks 
-publishingplatform: gantt-sdk
+control: Adding Tasks - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Adding new tasks in TypeScript Gantt control
+# Adding New Tasks in TypeScript Gantt Chart
 
 Tasks can be dynamically added to the Gantt project by enabling the [editSettings.allowAdding](../../api/gantt/editSettings#allowadding) property.
 

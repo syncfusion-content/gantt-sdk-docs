@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Row Drag and Drop in TypeScript Gantt Chart Control | Syncfusion
-description: Learn here all about row drag and drop in Syncfusion TypeScript Gantt Chart control of Syncfusion Essential JS 2 and more.
+title: Row Drag and Drop in TypeScript Gantt Chart | Syncfusion
+description: Learn how to row drag and drop in Syncfusion TypeScript Gantt Chart to reorder tasks and reorganize project structure with intuitive interactions.
+keywords: TypeScript gantt row drag drop, drag rows, reorder tasks, drag and drop, row reordering, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/rows/drag-and-drop
 platform: gantt-sdk
-control: Row Drag and Drop 
-publishingplatform: gantt-sdk
+control: Row Drag Drop - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Row Drag and Drop in TypeScript Gantt Chart Control
+# Row Drag and Drop in TypeScript Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Gantt Chart control includes built-in support for row drag and drop, enabling rows to be rearranged within the Gantt Chart or dropped into custom components. 
 

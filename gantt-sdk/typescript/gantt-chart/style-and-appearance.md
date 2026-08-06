@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Style and Appearance in TypeScript Gantt Chart | Syncfusion
-description: Learn how to customize the style and appearance of the Syncfusion TypeScript Gantt Chart control with CSS overrides and grid line configurations.
+title: Styling in TypeScript Gantt Chart | Syncfusion
+description: Learn how to customize style and appearance of Syncfusion TypeScript Gantt Chart using CSS overrides, themes, grid lines, colors, and visual configurations.
+keywords: typescript gantt styling, css customization, themes, appearance, colors, visual customization, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/style-and-appearance
 platform: gantt-sdk
-control: Style and appearance
-publishingplatform: gantt-sdk
+control: Styling - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Style and Appearance in TypeScript Gantt Chart Control
+# Style and Appearance with CSS and Themes in TypeScript Gantt Chart
 
 The [TypeScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control's appearance is customized by overriding default CSS styles to align with application designs, using classes for taskbars, milestones, and grid elements. The [queryTaskbarInfo](../../gantt/events#querytaskbarinfo) event modifies taskbar styles dynamically, while grid lines are configured with [gridLines](../../api/gantt#gridlines) for horizontal, vertical, or both. Custom themes are created via [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=tailwind3). Styles include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may require adjustments for taskbar visibility.
 
@@ -196,3 +197,4 @@ By default, `gridLines` is **Horizontal**.
 - [How to customize taskbars?](../../gantt/taskbar)
 - [How to configure timeline?](../../gantt//timeline/timeline)
 - [How to manage columns?](../../gantt/columns/columns)
+

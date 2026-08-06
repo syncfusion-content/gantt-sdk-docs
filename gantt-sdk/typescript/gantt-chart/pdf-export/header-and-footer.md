@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: PDF Headers and Footers in TypeScript Gantt Chart | Syncfusion
-description: Learn how to customize headers and footers in PDF exports of the Syncfusion TypeScript Gantt Chart control with text, lines, page numbers, and images.
+title: PDF Headers and Footers in Gantt Chart | Syncfusion
+description: Learn how to customize headers and footers in PDF exports of Syncfusion TypeScript Gantt Chart with text, images, page numbers, and lines.
+keywords: TypeScript gantt pdf header footer, page header, page footer, pdf customization, page numbers, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/pdf-export/header-and-footer
 platform: gantt-sdk
-control: Header and Footer of PDF export 
-publishingplatform: gantt-sdk
+control: PDF Headers Footers - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Customizing header and footer of PDF export in TypeScript Gantt control
+# Customizing Header and Footer of PDF Export in TypeScript Gantt Chart
 
 PDF export provides an option to specify and customize text, page number, line and image in header and footer of exported PDF document by using [pdfExportProperties](../../api/gantt/pdfexportproperties).
 

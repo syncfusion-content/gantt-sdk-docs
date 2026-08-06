@@ -1,15 +1,17 @@
----
+﻿---
 layout: post
-title: Column Pinning (Frozen) in TypeScript Gantt Chart Control | Syncfusion
-description: Learn here all about Column pinning (Frozen) in Syncfusion TypeScript Gantt Chart control of Syncfusion Essential JS 2 and more.
+title: Frozen Columns in TypeScript Gantt Chart | Syncfusion
+description: Learn how to freeze columns in Syncfusion TypeScript Gantt Chart to keep important task information visible during horizontal scrolling.
+keywords: TypeScript gantt frozen columns, freeze columns, pinned columns, column freezing, frozen columns, gantt column pinning, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/columns/frozen-columns
 platform: gantt-sdk
-control: Column pinning (Frozen) 
+control: Frozen Columns - Gantt Chart
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Column Pinning (Frozen) in TypeScript Gantt Chart Control
+# Freezing Columns for Fixed Visibility in TypeScript Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Gantt Chart control provides a frozen columns feature that keeps selected columns fixed while scrolling horizontally through large datasets. This functionality ensures that critical information remains visible at all times, improving readability and user experience. By maintaining key columns in view, it simplifies navigation and makes referencing important data points easier when working with extensive project details.
 

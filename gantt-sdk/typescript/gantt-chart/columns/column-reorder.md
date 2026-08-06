@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Reorder Columns in TypeScript Gantt Chart Control | Syncfusion
-description: Learn how to reorder columns in the Syncfusion TypeScript Gantt Chart control using drag-and-drop or code, and how to restrict reordering for specific columns.
+title: Column Reordering in TypeScript Gantt Chart | Syncfusion
+description: Learn how to reorder columns in the TypeScript Gantt Chart using drag-and-drop interactions, API methods, and customization options.
+keywords: TypeScript gantt column reorder, gantt column reordering, drag and drop columns, reorder columns, column customization, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/columns/column-reorder
 platform: gantt-sdk
-control: Column reorder
-publishingplatform: gantt-sdk
+control: Column Reordering - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Column Reorder in TypeScript Gantt Chart Control
+# Reordering Columns Using Drag-and-Drop in TypeScript Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Gantt Chart control supports column reordering by dragging a column header to a new position. 
 

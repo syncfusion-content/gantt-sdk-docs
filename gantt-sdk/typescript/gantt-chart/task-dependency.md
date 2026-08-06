@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Task Dependency in TypeScript Gantt Chart Control | Syncfusion
-description: Learn here all about task dependency in Syncfusion TypeScript Gantt Chart control of Syncfusion Essential JS 2 and more.
+title: Task Dependency in TypeScript Gantt Chart | Syncfusion
+description: Learn how to configure task dependencies in Syncfusion TypeScript Gantt Chart to establish relationships between tasks and manage project scheduling.
+keywords: typescript gantt task dependency, predecessors, task relationships, dependency types, predecessor links, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/task-dependency
 platform: gantt-sdk
-control: Task Dependency 
-publishingplatform: gantt-sdk
+control: Task Dependency - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Task Dependency in TypeScript Gantt Chart Control
+# Managing Task Dependencies in TypeScript Gantt Chart
 
 Task dependency in the [TypeScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control establishes relationships between tasks, affecting scheduling where changes to predecessors impact successors. Dependencies are categorized into four types—Start to Start (SS), Start to Finish (SF), Finish to Start (FS), and Finish to Finish (FF)—mapped via the [taskFields.dependency](../api/gantt/taskFields#dependency) property in the data source. Parent dependencies are enabled by default with [allowParentDependency](../api/gantt#allowparentdependency) set to **true**, allowing relationships between parent-parent, child-child, parent-child, and child-parent tasks. Offsets support day, hour, or minute units for precise timing, and validation modes handle conflicts during editing via the [actionBegin](../api/gantt#actionbegin) event. Connector lines are customized using [connectorLineWidth](../api/gantt#connectorlinewidth) and [connectorLineBackground](../api/gantt#connectorlinebackground), with the `queryTaskbarInfo` event enabling dynamic styling. Public methods like [addPredecessor](../api/gantt#addpredecessor) and [removePredecessor](../api/gantt#removepredecessor) allow programmatic management, ensuring accurate visualization with ARIA labels for accessibility and responsive scaling for mobile views.
 
@@ -384,3 +385,4 @@ By default, Gantt Chart task dates are validated based on predecessor values. To
 - [How to configure task constraints?](./task-constraints)
 - [How to customize taskbars?](./taskbar)
 - [How to enable critical path?](./critical-path)
+
