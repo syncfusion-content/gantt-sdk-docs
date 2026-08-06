@@ -16,7 +16,7 @@ The [JavaScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/j
 - **Indent** – Moves a selected row one level deeper, making it the last child of its previous row.
 - **Outdent** – Shifts a row one level up, placing it as a sibling to its parent.
 
-To enable indent and outdent functionality, set [editSettings.allowEditing](https://ej2.syncfusion.com/javascript/documentation/api/gantt/editSettings#allowediting) to **true**, inject `Edit` and `Selection` module of the control, and use either the **built-in context menu** or [toolbaritems](https://ej2.syncfusion.com/javascript/documentation/api/gantt/toolbarItem) to perform indent and outdent actions.
+To enable indent and outdent functionality, set [editSettings.allowEditing](https://ej2.syncfusion.com/javascript/documentation/api/gantt/editSettings#allowediting) to **true**, inject `Edit` and `Selection` module of the control, and use either the **built-in context menu** or [ToolbarItem](https://ej2.syncfusion.com/javascript/documentation/api/gantt/toolbarItem) to perform indent and outdent actions.
 
 The following sample demonstrates how to enable indent and outdent functionalities in the Gantt using the [toolbar](https://ej2.syncfusion.com/javascript/documentation/api/gantt#toolbar) property.
 
