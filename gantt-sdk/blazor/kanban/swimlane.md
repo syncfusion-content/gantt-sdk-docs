@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Swimlane in Blazor Kanban Component | Syncfusion®
-description: Checkout and learn here all about swimlane in Blazor Kanban component and much more details.
+description: Check out and learn all about how to use swimlanes in the Blazor Kanban component, including their features, customization options, and more.
 platform: gantt-sdk
 control: Kanban
 documentation: ug

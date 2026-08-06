@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Responsive Mode in Blazor Kanban Component | Syncfusion®
-description: Checkout and learn here all about responsive mode in Blazor Kanban component and much more.
+description: Explore how responsive mode enhances the Blazor Kanban component, including layouts, scrolling, selection, and touch interactions.
 platform: gantt-sdk
 control: Kanban
 documentation: ug
