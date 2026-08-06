@@ -1,14 +1,16 @@
----
+﻿---
 layout: post
-title: Blazor Gantt Chart with ODataV4Adaptor| Syncfusion
-description: Learn about binding data and performing CRUD operations using ODataV4Adaptor in the Blazor Gantt Chart component and much more.
+title: OData V4 Adaptor in Blazor Gantt Chart | Syncfusion
+description: Learn how to bind data and perform CRUD operations using the ODataV4 adaptor in Syncfusion Blazor Gantt Chart for OData services.
+keywords: blazor gantt odatav4 adaptor, ODataV4adaptor, odata services, remotedata, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/connecting-to-adaptors/odatav4-adaptor
 platform: gantt-sdk
-control: Gantt
-keywords: adaptors, ODataV4adaptor, ODataV4 adaptor, remotedata
+control: OData V4 Adaptor - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# OData Remote Data Binding in Blazor Gantt Chart
+# OData V4 Adaptor for Data Binding in Blazor Gantt Chart
 
 The [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) uses the [ODataV4Adaptor](https://blazor.syncfusion.com/documentation/data/adaptors#odatav4-adaptor) to connect with remote OData V4 services, allowing it to load hierarchical task data, display project schedules on the timeline, and send changes back to the server as tasks are added, edited, or removed. This guide covers everything needed to set up the OData V4 service, bind project task data to the Gantt Chart, and perform CRUD (Create, Read, Update, and Delete) operations using the `ODataV4Adaptor`.
 

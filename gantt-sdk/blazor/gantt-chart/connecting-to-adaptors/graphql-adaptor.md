@@ -1,14 +1,16 @@
----
+﻿---
 layout: post
-title: GraphQLAdaptor in Blazor Gantt Chart | Syncfusion
-description: Learn how to bind data and perform CRUD operations using the GraphQLAdaptor in the Blazor Gantt Chart component and much more.
+title: GraphQL Adaptor in Blazor Gantt Chart | Syncfusion
+description: Learn how to bind data and perform CRUD operations using the GraphQL adaptor in Syncfusion Blazor Gantt Chart with Hot Chocolate server.
+keywords: blazor gantt graphql adaptor, graphqladaptor, hot chocolate, graphql data binding, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/connecting-to-adaptors/graphql-adaptor
 platform: gantt-sdk
-control: Gantt Chart
-keywords: adaptors, graphqladaptor, graphql adaptor, hot chocolate, remotedata
+control: GraphQL Adaptor - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Connect Syncfusion Blazor Gantt Chart with GraphQL using Hot Chocolate
+# GraphQL Adaptor for Data Binding in Blazor Gantt Chart
 
 GraphQL is a query language that enables applications to request only the data they need. Unlike REST APIs that return predefined data structures, GraphQL allows clients to define the fields and structure of the response. The [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) can consume data from GraphQL services through the [GraphQLAdaptor](https://blazor.syncfusion.com/documentation/data/adaptors#graphql-service-binding), which works with the [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html) to handle data operations.
 

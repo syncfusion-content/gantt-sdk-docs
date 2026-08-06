@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
 title: Getting Started with Blazor Gantt Chart in Server App | Syncfusion
-description: Check out and learn about getting started with Blazor Gantt Chart component in Blazor Server Application.
+description: Learn how to install and set up the Syncfusion Blazor Gantt Chart in a Blazor Server App with task data binding and timeline rendering.
+keywords: blazor gantt chart, getting started, blazor server app, syncfusion gantt, task data binding, timeline rendering
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/getting-started-with-server-app
 platform: gantt-sdk
-control: Gantt Chart
+control: Getting Started - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Getting started with Blazor Gantt Chart in Blazor server app
+# Getting Started with Blazor Gantt Chart in Blazor Server App
 
 This section briefly explains about how to include the [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) component in your Blazor server app using [Visual Studio](https://visualstudio.microsoft.com/vs/), [Visual Studio Code](https://code.visualstudio.com/), and the [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/).
 

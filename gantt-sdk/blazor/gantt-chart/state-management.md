@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: State Management in Blazor Gantt Chart Component | Syncfusion
-description: Check out and learn all about State Management in Syncfusion Blazor Gantt Chart component and more here.
+title: State Management in Blazor Gantt Chart | Syncfusion
+description: Learn how to persist and restore state in Syncfusion Blazor Gantt Chart including grid settings, column state, filters, and taskbar configurations.
+keywords: blazor gantt state management, persist state, restore state, state persistence, grid state, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/state-management
 platform: gantt-sdk
-control: Gantt Chart
+control: State Management - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# State Management in Blazor Gantt Chart Component
+# State Persistence and Restoration in Blazor Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component supports state management by retaining its configuration and data in browser local storage after a refresh within the same session. It also provides options to save and load the Gantt state manually.
 

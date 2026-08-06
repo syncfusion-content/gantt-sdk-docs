@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Baseline in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Baseline in Syncfusion Blazor Gantt Chart component and much more.
+title: Baseline in Blazor Gantt Chart | Planned vs Actual | Syncfusion
+description: Learn how to compare planned versus actual project timelines in Syncfusion Blazor Gantt Chart using baseline support to track schedule deviations.
+keywords: blazor gantt baseline, planned schedule, actual schedule, baseline date, project tracking, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/baseline
 platform: gantt-sdk
-control: Gantt Chart
+control: Baseline - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Baseline in Blazor Gantt Chart Component
+# Baselines for Schedule Comparison in Blazor Gantt Chart
 
 The baseline feature enables users to view the deviation between the planned dates and actual dates of the tasks in a project. Baseline dates or planned dates of a task may or may not be same as the actual task dates. The baseline can be enabled by setting the [RenderBaseline](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_RenderBaseline) property to `true` and the baseline color can be changed using the [BaselineColor](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_BaselineColor) property. To render the baseline, you should map the baseline start and end date values from the data source. This can be done using the [GanttTaskFields.BaselineStartDate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_BaselineStartDate) and [GanttTaskFields.BaselineEndDate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_BaselineEndDate) properties. The following code example shows how to enable a baseline in the Gantt Chart component.
 

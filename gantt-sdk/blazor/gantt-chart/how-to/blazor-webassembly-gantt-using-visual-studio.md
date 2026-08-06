@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Getting Started with Blazor Gantt Chart in WebAssembly | Syncfusion®
-description: Checkout and learn about getting started with Blazor WebAssembly and Blazor Gantt Chart Component in Visual Studio and much more.
+title: Blazor Gantt in WebAssembly with VS | Syncfusion
+description: Learn how to create a Blazor WebAssembly app with Syncfusion Gantt Chart using Visual Studio step by step for project management.
+keywords: blazor gantt webassembly, visual studio gantt, blazor wasm, webassembly app setup, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/how-to/blazor-webassembly-gantt-using-visual-studio
 platform: gantt-sdk
-control: Gantt Chart
+control: WebAssembly Setup - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Blazor Gantt Chart Component in WebAssembly App using Visual Studio
+# Getting Started with Blazor Gantt Chart WebAssembly in Visual Studio
 
 This article provides a step-by-step instructions for building Blazor WebAssembly App with [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) component using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

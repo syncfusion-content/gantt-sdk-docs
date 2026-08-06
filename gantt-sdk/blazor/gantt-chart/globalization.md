@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Globalization in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Globalization in Syncfusion Blazor Gantt Chart component and more.
+title: Globalization in Blazor Gantt Chart | Syncfusion
+description: Learn how to globalize Syncfusion Blazor Gantt Chart by localizing culture-specific text, date formats, and number formats for different regions.
+keywords: blazor gantt globalization, localization, culture, date format, number format, rtl support, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/globalization
 platform: gantt-sdk
-control: Gantt Chart
+control: Globalization - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Globalization in Blazor Gantt Chart component
+# Globalization and Localization Support in Blazor Gantt Chart
 
 The Syncfusion Blazor Gantt Chart component provides a feature known as Globalization (global and local), which makes the application more accessible and useful for individuals from different regions and language backgrounds. You have the ability to view data in your preferred language and format, resulting in an enhanced overall experience.
 
