@@ -33,6 +33,8 @@ To enable WBS in the Gantt Chart component:
         
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/wbs-column-cs1" %}
 
+> When the WBS column is enabled in the Gantt Chart using the [enableWBS](https://ej2.syncfusion.com/react/documentation/api/gantt#enablewbs) property along with the **WBS Code** and **WBS Predecessor** fields, the default **ID** and **Predecessor** columns are automatically disabled, as the WBS and WBS Predecessor columns already display the ID and predecessor values based on the task hierarchy.
+
 ## Managing WBS code updates
 
 To optimize performance, WBS code updates can be controlled using the [actionBegin](https://ej2.syncfusion.com/react/documentation/gantt/events#actionbegin) and [dataBound](https://ej2.syncfusion.com/react/documentation/gantt/events#databound) events. This is especially useful during operations like row drag-and-drop, where auto-update is triggered only during that specific action to ensure efficient and accurate code handling.
