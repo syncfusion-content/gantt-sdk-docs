@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Data Markers in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Data Markers in Syncfusion Blazor Gantt Chart component and much more.
+title: Data Markers in Blazor Gantt Chart | Syncfusion
+description: Learn how to add and customize data markers in Syncfusion Blazor Gantt Chart to highlight key milestone points on the project timeline.
+keywords: blazor gantt data markers, timeline markers, milestone markers, task markers, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/data-markers
 platform: gantt-sdk
-control: Gantt Chart
+control: Data Markers - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Data Markers in Blazor Gantt Chart Component
+# Data Markers for Timeline Highlights in Blazor Gantt Chart
 
 Data markers are visual indicators that highlight significant events, milestones, or important dates within individual project tasks. These markers provide immediate visual context about critical moments in task timelines, enabling effective identification of key dates and tracking of important events at the task level. Understanding data markers implementation ensures effective project visualization and milestone tracking throughout project development cycles.
 

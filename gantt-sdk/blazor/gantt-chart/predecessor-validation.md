@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Predecessor validation in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about predecessor validation in Syncfusion Blazor Gantt Chart component.
+title: Predecessor Validation in Blazor Gantt Chart | Syncfusion
+description: Learn how to validate predecessor relationships in Syncfusion Blazor Gantt Chart to ensure correct task dependency setup and avoid circular dependencies.
+keywords: blazor gantt predecessor validation, dependency validation, task dependency, circular dependency, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/predecessor-validation
 platform: gantt-sdk
-control: Gantt Chart
+control: Predecessor Validation - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Predecessor Validation
+# Predecessor Validation for Task Dependencies in Blazor Gantt Chart
 
 By default, Gantt task date values are validated based on predecessor values. You can enable or disable this validation by using the [EnablePredecessorValidation](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_EnablePredecessorValidation) property. By default, `EnablePredecessorValidation` is **true**.
 
@@ -81,7 +84,7 @@ args.ValidationMode.PreserveLinkWithEditing | true | In this validation mode, th
 
 By default, the [PreserveLinkWithEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.ValidateMode.html#Syncfusion_Blazor_Gantt_ValidateMode_PreserveLinkWithEditing) validation mode is enabled, so the predecessors are updated with offset values.
 
-![Blazor Gantt Chart updating offset on edit actions](images/blazor-gantt-chart-preserve-link-with-editing.gif)
+![Blazor Gantt Chart updating offset on edit actions](images/blazor-gantt-chart-preserve-link-with-editing.webp)
 
 The following code example explains enabling the [RespectLink](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.ValidateMode.html#Syncfusion_Blazor_Gantt_ValidateMode_RespectLink) validation mode while editing the linked tasks in the [TaskbarEditing](https://blazor.syncfusion.com/documentation/gantt-chart/events#taskbarediting) event.
 

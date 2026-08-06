@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Column Resizing in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Column Resizing in Syncfusion Blazor Gantt Chart component and much more details.
+title: Column Resizing in Blazor Gantt Chart | Syncfusion
+description: Learn how to resize columns interactively in Syncfusion Blazor Gantt Chart to adjust grid column width based on content or user preference.
+keywords: blazor gantt column resizing, resize columns, column width, autofit columns, interactive resize, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/column-resizing
 platform: gantt-sdk
-control: Gantt Chart
+control: Column Resizing - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Resize columns in Blazor Gantt Chart component
+# Resize Columns Interactively in Blazor Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component allows you to resize columns dynamically by dragging the edges of column headers. This feature enhances readability and layout flexibility, especially when working with large datasets. To enable this feature, set the [AllowResizing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowResizing) property to **true** in the Gantt configuration. 
 

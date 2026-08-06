@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Task Dependencies in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Task Dependencies in Syncfusion Blazor Gantt Chart component and more.
+title: Task Dependencies in Blazor Gantt Chart | Syncfusion
+description: Learn how to define and manage task dependencies in Syncfusion Blazor Gantt Chart with finish-to-start, start-to-start, and other dependency types.
+keywords: blazor gantt task dependencies, finish to start, start to start, dependency type, predecessors, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/task-dependencies
 platform: gantt-sdk
-control: Gantt Chart
+control: Task Dependencies - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Task Dependencies in Blazor Gantt Chart Component
+# Task Dependency Types and Configuration in Blazor Gantt Chart
 
 Task dependencies define the logical order in which tasks must be executed, helping ensure accurate scheduling and streamlined project workflows. In the Blazor Gantt Chart component, task relationships are represented visually to support structured planning and coordination across the project timeline.
 

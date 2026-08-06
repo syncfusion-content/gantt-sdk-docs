@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Timeline in Blazor Gantt Chart component | Syncfusion
-description: Learn how to configure timelines in the Syncfusion Blazor Gantt Chart component with view modes, zooming, weekend highlighting, and templates.
+title: Timeline in Blazor Gantt Chart | Syncfusion
+description: Learn how to configure timeline in Syncfusion Blazor Gantt Chart with view modes, tier settings, zooming, and weekend highlighting options.
+keywords: blazor gantt timeline, view modes, timeline tiers, zooming, weekend highlight, timeline template, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/time-line
 platform: gantt-sdk
-control: Gantt Chart
+control: Timeline - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Timeline in Blazor Gantt Chart Component
+# Timeline View Modes and Configuration in Blazor Gantt Chart
 
 The timeline in the Blazor Gantt Chart component represents project durations as cells with defined units and formats, supporting in-built view modes like Hour-Minute, Day-Hour, Week-Day, Month-Week, Year-Month, and Minutes for flexible visualization. Configure modes using the [TimelineViewMode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.TimelineViewMode.html) property, with top and bottom tiers customized via [TopTier.Unit](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTimelineTierSettings.html#Syncfusion_Blazor_Gantt_GanttTimelineTierSettings_Unit) and [BottomTier.Unit](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTimelineTierSettings.html#Syncfusion_Blazor_Gantt_GanttTimelineTierSettings_Unit) in [TimelineSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTimelineSettings.html). This enables detailed views, such as weekly overviews with daily breakdowns for projects, ensuring accurate timeline representation.
 

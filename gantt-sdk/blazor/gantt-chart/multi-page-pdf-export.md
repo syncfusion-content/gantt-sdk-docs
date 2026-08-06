@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Multi-Page PDF Export with Scaling in Syncfusion Blazor Gantt Chart
-description: Describes how to export the Syncfusion Blazor Gantt Chart to a multi-page PDF using various scaling modes.
+title: Multi-Page PDF Export in Blazor Gantt Chart | Syncfusion
+description: Learn how to export Syncfusion Blazor Gantt Chart to multi-page PDF documents using scaling modes, page-size options, and fit-to-page settings.
+keywords: blazor gantt multi page pdf, multi-page export, pdf scaling, fit to page, pdf pages, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/multi-page-pdf-export
 platform: gantt-sdk
-control: Multi-Page with scaling in PDF Export
+control: Multi-Page PDF Export - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Multi-Page PDF Export with Scaling in Blazor Gantt Chart
+# Multi-Page PDF Export with Scaling Modes in Blazor Gantt Chart
 
 The Syncfusion Blazor Gantt Chart provides support for exporting content across multiple PDF pages with configurable scaling options. These settings allow the Gantt Chart layout to be distributed across pages while maintaining appropriate readability and structure. Multi‑page export behavior can be customized using the [GanttPdfExportProperties](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttPdfExportProperties.html) class.
 
