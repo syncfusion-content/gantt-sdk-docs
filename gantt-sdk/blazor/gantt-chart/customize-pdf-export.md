@@ -7,7 +7,7 @@ control: Customize pdf export
 documentation: ug
 ---
 
-# To customize PDF export
+# To customize PDF export in Blazor Gantt Chart Component
 
 Customizing PDF export in the Blazor Gantt Chart component allows tailoring exported documents for specific needs, using [GanttPdfExportProperties](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttPdfExportProperties.html) to adjust file names, page orientation, size, columns, headers, footers, timelines, and templates. Ensuring focused content like selected rows or styled taskbars and [AllowPdfExport](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowPdfExport) enabled. Use [PdfExporting](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#pdfexporting) and [PdfExported](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#pdfexported) events for pre-export and post-export modifications, and [PdfQueryTaskbarInfo](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#pdfquerytaskbarinfo) for taskbar styling.
 

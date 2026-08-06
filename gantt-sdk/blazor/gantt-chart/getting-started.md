@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Blazor Gantt Chart in Blazor WASM App | Syncfusion
+title: Getting Started with Blazor Gantt Chart in WASM App | Syncfusion
 description: Check out and learn about getting started with Blazor Gantt Chart component in Blazor WebAssembly Application.
 platform: gantt-sdk
 control: Gantt Chart
