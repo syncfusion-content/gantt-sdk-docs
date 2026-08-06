@@ -11,7 +11,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Accessibility in JavaScript Gantt Chart Control
 
-The [JavaScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control is designed with comprehensive accessibility support, adhering to established guidelines and standards including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles). This ensures the control is usable by individuals with disabilities and meets legal accessibility requirements for enterprise applications.
+The [JavaScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control is designed with comprehensive accessibility support, adhering to established guidelines and standards including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles). This ensures the control is usable by individuals with disabilities and meets legal accessibility requirements for enterprise applications.
 
 ## Accessibility compliance
 
@@ -31,8 +31,8 @@ The accessibility compliance for the Gantt Chart control provides detailed insig
 
 | Accessibility Criteria                                                                  | Compatibility                                                                                      |
 | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Support                                       | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
-| [Section 508](https://www.section508.gov/) Support                                      | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes">             |
+| [WCAG 2.2](https://www.w3.org/TR/WCAG22) Support                                       | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
+| [Section 508](https://www.section508.gov) Support                                      | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes">             |
 | Screen Reader Support                                                                   | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
 | Right-To-Left Support                                                                   | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes">             |
 | Color Contrast                                                                          | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes">             |
@@ -286,5 +286,5 @@ The sample demonstrates complete keyboard navigation functionality, screen reade
 
 - [Accessibility in JavaScript Gantt Chart components](https://ej2.syncfusion.com/javascript/documentation/common/accessibility)
 - [Keyboard Navigation in JavaScript Gantt Chart control](#keyboard-navigation)
-- [WCAG 2.2 Guidelines](https://www.w3.org/TR/WCAG22/)
-- [Section 508 Standards](https://www.section508.gov/)
+- [WCAG 2.2 Guidelines](https://www.w3.org/TR/WCAG22)
+- [Section 508 Standards](https://www.section508.gov)

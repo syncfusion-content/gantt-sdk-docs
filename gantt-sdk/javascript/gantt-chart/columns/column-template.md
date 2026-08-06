@@ -93,7 +93,7 @@ The column template has options to render a custom control in a gantt column ins
 
 ### Render LineChart control in a column
 
-The [LineChart](https://ej2.syncfusion.com/javascript/documentation/sparkline/getting-started) control from Syncfusion<sup style="font-size:70%">&reg;</sup> offers a clear and effective way to visualize and compare data trends over time using connected data points. It can be integrated into a Gantt column by configuring the [template](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#template) property in the column configuration.
+The [LineChart](https://ej2.syncfusion.com/javascript/documentation/sparkline/es5-getting-started) control from Syncfusion<sup style="font-size:70%">&reg;</sup> offers a clear and effective way to visualize and compare data trends over time using connected data points. It can be integrated into a Gantt column by configuring the [template](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#template) property in the column configuration.
 
 The following example demonstrates how to render a `LineChart` for the **customData** field.
 
@@ -126,7 +126,7 @@ The following example demonstrates how to render a `LineChart` for the **customD
 
 ### Render ColorPicker control in a column
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> [ColorPicker](https://ej2.syncfusion.com/javascript/documentation/color-picker/getting-started) control offers a user-friendly interface for selecting colors from a predefined palette or custom options. It is useful in scenarios like theme selection or dynamic element styling.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> [ColorPicker](https://ej2.syncfusion.com/javascript/documentation/color-picker/es5-getting-started) control offers a user-friendly interface for selecting colors from a predefined palette or custom options. It is useful in scenarios like theme selection or dynamic element styling.
 
 To render the ColorPicker inside a Gantt column, configure the [template](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#template) property in the column definition.
 
@@ -163,7 +163,7 @@ The following example demonstrates how to render a `ColorPicker` for the **Chang
 
 To render a `DropDownList` control in a Gantt column, define a template using the [template](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#template) property in the column configuration.
 
-The following example demonstrates how to render the [DropDownList](https://ej2.syncfusion.com/javascript/documentation/drop-down-list/getting-started) control in the **Task Priority** column.
+The following example demonstrates how to render the [DropDownList](https://ej2.syncfusion.com/javascript/documentation/drop-down-list/es5-getting-started) control in the **Task Priority** column.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -227,7 +227,7 @@ The following example demonstrates how to render the Chips control in the **Task
 
 ### Render RadioButton in a column
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> [RadioButton](https://ej2.syncfusion.com/javascript/documentation/radio-button/getting-started) control can be rendered in a grid column to display selection options like order statuses or approval choices.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> [RadioButton](https://ej2.syncfusion.com/javascript/documentation/radio-button/es5-getting-started) control can be rendered in a grid column to display selection options like order statuses or approval choices.
 
 The following example demonstrates rendering `RadioButton` controls in the **Order Status** column.
 

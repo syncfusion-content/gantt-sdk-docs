@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Customizing header and footer of PDF export in JavaScript Gantt control
+# Customizing header and footer of PDF export in JavaScript Gantt
 
 PDF export provides an option to specify and customize text, page number, line and image in header and footer of exported PDF document by using [pdfExportProperties](https://ej2.syncfusion.com/javascript/documentation/api/gantt/pdfexportproperties).
 
@@ -279,6 +279,6 @@ By default, the exported PDF file includes a footer. The footer can be disabled 
 
 ## See also
 
-- [How to export to PDF?](https://ej2.syncfusion.com/javascript/documentation/pdf-export/pdf-export)
-- [How to customize PDF export?](https://ej2.syncfusion.com/javascript/documentation/pdf-export/customize-pdf-export)
-- [How to manage task dependencies?](https://ej2.syncfusion.com/javascript/documentation/task-dependency)
+- [How to export to PDF?](https://ej2.syncfusion.com/javascript/documentation/gantt/pdf-export/pdf-export)
+- [How to customize PDF export?](https://ej2.syncfusion.com/javascript/documentation/gantt/pdf-export/customize-pdf-export)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/javascript/documentation/gantt/task-dependency)

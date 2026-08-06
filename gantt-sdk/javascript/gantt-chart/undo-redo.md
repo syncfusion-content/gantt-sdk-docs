@@ -124,7 +124,7 @@ In the following example, `undoRedoStepsCount` value is set to 5. This code allo
 
 ## Programmatic undo and redo in Gantt Chart
 
-Programmatic control over undo redo is achieved using methods like [undo](https://ej2.syncfusion.com/javascript/documentation/api/gantt/#undo) to revert actions, [redo](https://ej2.syncfusion.com/javascript/documentation/api/gantt#redo) to reapply them.
+Programmatic control over undo redo is achieved using methods like [undo](https://ej2.syncfusion.com/javascript/documentation/api/gantt#undo) to revert actions, [redo](https://ej2.syncfusion.com/javascript/documentation/api/gantt#redo) to reapply them.
 
 The following example triggers `undo` and `redo` via external buttons:
 

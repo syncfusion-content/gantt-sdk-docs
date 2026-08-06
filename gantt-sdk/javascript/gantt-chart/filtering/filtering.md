@@ -242,7 +242,7 @@ You can enable different filter types for individual columns in the Gantt Chart 
 
 ## Customize filtering behavior using events
 
-You can customize the filtering behavior in the JavaScript Gantt using the [actionBegin](https://ej2.syncfusion.com/javascript/documentation/documentation/gantt/events#actionbegin) and [actionComplete](https://ej2.syncfusion.com/javascript/documentation/gantt/events#actioncomplete) events. These events allow you to inject custom logic at different stages of the filtering workflow.
+You can customize the filtering behavior in the JavaScript Gantt using the [actionBegin](https://ej2.syncfusion.com/javascript/documentation/gantt/events#actionbegin) and [actionComplete](https://ej2.syncfusion.com/javascript/documentation/gantt/events#actioncomplete) events. These events allow you to inject custom logic at different stages of the filtering workflow.
 
 The following sample demonstrates how to handle different filtering stages using `args.requestType`:
 

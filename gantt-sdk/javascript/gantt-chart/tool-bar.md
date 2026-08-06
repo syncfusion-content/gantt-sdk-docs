@@ -302,7 +302,7 @@ You can control toolbar items dynamically using the [enableItems](https://ej2.sy
 
 You can enhance the Gantt toolbar control by adding editor elements such as numeric text boxes, drop-down lists, and date pickers. These input controls improve user interaction by enabling filtering, searching, and other dynamic actions.
 
-The following example demonstrates how to integrate an [AutoComplete](https://ej2.syncfusion.com/javascript/documentation/https://ej2.syncfusion.com/javascript/documentation/auto-complete/getting-started) compoenent into the toolbar.
+The following example demonstrates how to integrate an [AutoComplete](https://ej2.syncfusion.com/javascript/documentation/auto-complete/es5-getting-started) compoenent into the toolbar.
 
 {% if page.publishingplatform == "typescript" %}
 

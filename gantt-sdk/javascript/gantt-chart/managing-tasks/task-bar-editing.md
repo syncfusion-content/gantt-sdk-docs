@@ -77,6 +77,6 @@ Prevent taskbar editing for specific tasks using the [taskbarEditing](https://ej
 
 ## See also
 
-- [How to configure task editing?](https://ej2.syncfusion.com/javascript/documentation/gantt/editing)
+- [How to configure task editing?](https://ej2.syncfusion.com/javascript/documentation/gantt/editing-tasks)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/javascript/documentation/gantt/task-dependency)
 - [How to configure critical path?](https://ej2.syncfusion.com/javascript/documentation/gantt/critical-path)

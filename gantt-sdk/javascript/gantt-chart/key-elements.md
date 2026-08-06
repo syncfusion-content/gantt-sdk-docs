@@ -9,13 +9,13 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Key Elements in Gantt UI
+# Key Elements in Gantt UI for JavaScript Gantt Chart
 
 This section explains the key elements of the Gantt Chart interface.
 
 The Gantt component consists of two main sections: a `grid` and a `chart`, separated by a `splitter`. The grid is located on the left side of the Gantt component, while the chart section is on the right side. You can adjust the view of the Gantt by moving the splitter left or right to display only the grid, only the chart, or both.
 
-At the top of Gantt chart, having a [toolbar](https://ej2.syncfusion.com/javascript/documentation/gantt/tool-bar/tool-bar) that allows you to peform **CRUD** operations on tasks.
+At the top of Gantt chart, having a [toolbar](https://ej2.syncfusion.com/javascript/documentation/gantt/tool-bar) that allows you to peform **CRUD** operations on tasks.
 
 ![Gantt chart](./images/gantt.png)
 

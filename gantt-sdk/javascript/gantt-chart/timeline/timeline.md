@@ -316,7 +316,7 @@ In the Gantt Chart control, the schedule timeline will be automatically updated 
 
 ## Dynamically change timeline mode
 
-You can dynamically change the timeline mode in the Gantt Chart by updating the [timelineSettings.timelineViewMode](https://ej2.syncfusion.com/javascript/documentation/api/gantt/timelineViewMode) property using the [change](https://ej2.syncfusion.com/javascript/documentation/api/combo-box/index-default#change) event of the [ComboBox](https://ej2.syncfusion.com/javascript/documentation/combo-box/getting-started) control.
+You can dynamically change the timeline mode in the Gantt Chart by updating the [timelineSettings.timelineViewMode](https://ej2.syncfusion.com/javascript/documentation/api/gantt/timelineViewMode) property using the [change](https://ej2.syncfusion.com/javascript/documentation/api/combo-box/index-default#change) event of the [ComboBox](https://ej2.syncfusion.com/javascript/documentation/combo-box/es5-getting-started) control.
 
 {% if page.publishingplatform == "typescript" %}
 

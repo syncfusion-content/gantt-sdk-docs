@@ -63,6 +63,6 @@ For small datasets, standard rendering may suffice. For dynamic column operation
 
 ## See also
 
-- [How to manage task dependencies?](https://ej2.syncfusion.com/javascript/documentation/gantt/taskdependency)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/javascript/documentation/gantt/task-dependency)
 - [How to enable virtual scrolling?](https://ej2.syncfusion.com/javascript/documentation/gantt/scrolling/virtual-scrolling)
 - [How to configure critical path?](https://ej2.syncfusion.com/javascript/documentation/gantt/critical-path)
