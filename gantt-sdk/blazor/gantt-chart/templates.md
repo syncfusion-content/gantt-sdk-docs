@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Custom Templates for Taskbar, Column, and Tooltip in Blazor Gantt Chart
+# Customizing UI Elements with Templates in Blazor Gantt Chart
 
 Blazor supports templated components that accept one or more UI segments as input, which are rendered as part of the component during execution. The Gantt Chart is a templated Razor component that allows customization of various UI elements using template parameters. This allows rendering of custom content or components based on application logic.
 
