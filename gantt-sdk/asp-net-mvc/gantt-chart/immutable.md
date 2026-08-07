@@ -2,7 +2,7 @@
 layout: post
 title: Immutable Mode in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to use immutable mode in Syncfusion ASP.NET MVC Gantt Chart for improved performance when handling large data sets and frequent updates.
-keywords: asp.net core gantt immutable, immutable mode, performance optimization, data handling, syncfusion gantt chart
+keywords: asp.net mvc gantt immutable, immutable mode, performance optimization, data handling, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/immutable
 platform: gantt-sdk
 control: Immutable Mode - Gantt Chart

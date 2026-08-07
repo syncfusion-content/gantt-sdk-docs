@@ -2,7 +2,7 @@
 layout: post
 title: Drag and Drop in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to implement drag and drop functionality in Syncfusion ASP.NET MVC Gantt Chart for intuitive task management and timeline manipulation.
-keywords: asp.net core gantt drag drop, task dragging, timeline manipulation, intuitive task management, syncfusion gantt chart
+keywords: asp.net mvc gantt drag drop, task dragging, timeline manipulation, intuitive task management, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/drag-and-drop
 platform: gantt-sdk
 control: Drag and Drop - Gantt Chart
@@ -72,7 +72,7 @@ Gantt also supports dragging multiple rows at a time and drop them on any rows a
 
 The Gantt feature empowers users to efficiently reorganize records by seamlessly moving taskbar and rearranging their positions through a simple drag-and-drop action. Using this feature, rows can be dropped at above and below as a sibling or child to the existing rows.
 
-This mode can be enable by setting the [AllowTaskbarDragAndDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowTaskbarDragAndDrop) property to `true`.
+This mode can be enable by setting the [AllowTaskbarDragAndDrop](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowTaskbarDragAndDrop) property to `true`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -170,7 +170,7 @@ In the following sample, we have prevented the drop action based on the position
 
 ## Prevent reordering a row as child to another row
 
-You can prevent the default behavior of dropping rows as children to the target by setting the `cancel` property to `true` in [rowDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowDrop) event argument. You can also change the drop position after cancelling using `reorderRows` method.
+You can prevent the default behavior of dropping rows as children to the target by setting the `cancel` property to `true` in [rowDrop](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowDrop) event argument. You can also change the drop position after cancelling using `reorderRows` method.
 
 In the below example drop action is cancelled and dropped above to target row.
 

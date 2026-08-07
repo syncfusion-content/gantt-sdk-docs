@@ -2,7 +2,7 @@
 layout: post
 title: PDF Export Header and Footer in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to customize headers and footers in PDF exports from Syncfusion ASP.NET MVC Gantt Chart for professional document formatting.
-keywords: asp.net core gantt pdf header footer, pdf customization, export header, export footer, pdf formatting, syncfusion gantt chart
+keywords: asp.net mvc gantt pdf header footer, pdf customization, export header, export footer, pdf formatting, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/header-and-footer
 platform: gantt-sdk
 control: PDF Export - Gantt Chart

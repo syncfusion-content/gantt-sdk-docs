@@ -2,7 +2,7 @@
 layout: post
 title: Open Add/Edit Dialog in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to open the add/edit dialog programmatically in Syncfusion ASP.NET MVC Gantt Chart for dynamic task management and editing.
-keywords: asp.net core gantt dialog, open dialog, add task dialog, edit dialog, task editing, syncfusion gantt chart
+keywords: asp.net mvc gantt dialog, open dialog, add task dialog, edit dialog, task editing, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/how-to/open-add-edit-dialog
 platform: gantt-sdk
 control: How-to - Gantt Chart

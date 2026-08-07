@@ -2,7 +2,7 @@
 layout: post
 title: Context Menu in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to implement and customize context menus in Syncfusion ASP.NET MVC Gantt Chart for quick actions and seamless user interactions.
-keywords: asp.net core gantt context menu, right-click menu, custom context menu, quick actions, gantt menu items, syncfusion gantt chart
+keywords: asp.net mvc gantt context menu, right-click menu, custom context menu, quick actions, gantt menu items, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/context-menu
 platform: gantt-sdk
 control: Context Menu - Gantt Chart
@@ -59,7 +59,7 @@ The default items are listed in the following table.
 
 ## Custom context menu items
 
-The custom context menu items can be added by defining the [`contextMenuItems`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ContextMenuItems) as a collection of [`contextMenuItemModel`]. Actions for the customized items can be defined in the [`contextMenuClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ContextMenuClick) event and the visibility of customized items can be defined in the [`contextMenuOpen`] event.
+The custom context menu items can be added by defining the [`contextMenuItems`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ContextMenuItems) as a collection of [`contextMenuItemModel`]. Actions for the customized items can be defined in the [`contextMenuClick`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ContextMenuClick) event and the visibility of customized items can be defined in the [`contextMenuOpen`] event.
 
 To create custom context menu items for header area, define the target property as `.e-gridheader`.
 

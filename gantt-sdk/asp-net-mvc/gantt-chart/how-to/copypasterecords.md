@@ -2,7 +2,7 @@
 layout: post
 title: Copy and Paste Records in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to copy and paste records in Syncfusion ASP.NET MVC Gantt Chart for quick task duplication and bulk operations.
-keywords: asp.net core gantt copy paste, copy records, paste records, duplicate tasks, copy paste operations, syncfusion gantt chart
+keywords: asp.net mvc gantt copy paste, copy records, paste records, duplicate tasks, copy paste operations, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/how-to/copypasterecords
 platform: gantt-sdk
 control: How-to - Gantt Chart

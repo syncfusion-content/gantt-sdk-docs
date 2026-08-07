@@ -2,7 +2,7 @@
 layout: post
 title: Task Constraints in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to implement and manage task constraints in Syncfusion ASP.NET MVC Gantt Chart to enforce scheduling rules and enforce project timelines.
-keywords: asp.net core gantt task constraints, scheduling constraints, constraint types, date constraints, task scheduling, syncfusion gantt chart
+keywords: asp.net mvc gantt task constraints, scheduling constraints, constraint types, date constraints, task scheduling, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/task-constraints
 platform: gantt-sdk
 control: Task Constraints - Gantt Chart
@@ -85,7 +85,7 @@ These mappings ensure that each task can interpret and apply its constraints cor
 
 ### Step 2: Provide constraint data
 
-In your project data source, ensure that each task includes values for the [`ConstraintType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.TaskFieldsModel.html#Syncfusion_EJ2_Gantt_TaskFieldsModel_ConstraintType) and [`ConstraintDate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.TaskFieldsModel.html#Syncfusion_EJ2_Gantt_TaskFieldsModel_ConstraintDate) fields if constraints need to be applied.
+In your project data source, ensure that each task includes values for the [`ConstraintType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.TaskFieldsModel.html#Syncfusion_EJ2_Gantt_TaskFieldsModel_ConstraintType) and [`ConstraintDate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.TaskFieldsModel.html#Syncfusion_EJ2_Gantt_TaskFieldsModel_ConstraintDate) fields if constraints need to be applied.
 
 #### Example data format:
 

@@ -2,7 +2,7 @@
 layout: post
 title: Checkbox Column in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to add and use checkbox columns in Syncfusion ASP.NET MVC Gantt Chart for multi-select task selection and bulk operations.
-keywords: asp.net core gantt checkbox column, checkbox selection, multi select, select tasks, bulk selection, syncfusion gantt chart
+keywords: asp.net mvc gantt checkbox column, checkbox selection, multi select, select tasks, bulk selection, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/columns/check-box-column
 platform: gantt-sdk
 control: Columns - Gantt Chart

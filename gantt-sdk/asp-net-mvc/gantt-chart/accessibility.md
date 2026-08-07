@@ -2,7 +2,7 @@
 layout: post
 title: Accessibility in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn about accessibility features in the Syncfusion ASP.NET MVC Gantt Chart, including WCAG 2.2 compliance, keyboard navigation, and screen reader support.
-keywords: asp.net core gantt accessibility, wcag 2.2, section 508, wcag roles, gantt compliance, syncfusion gantt chart
+keywords: asp.net mvc gantt accessibility, wcag 2.2, section 508, wcag roles, gantt compliance, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/accessibility
 platform: gantt-sdk
 control: Accessibility - Gantt Chart

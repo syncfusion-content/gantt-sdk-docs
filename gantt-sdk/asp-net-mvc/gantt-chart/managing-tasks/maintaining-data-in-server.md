@@ -2,7 +2,7 @@
 layout: post
 title: Maintaining Data in Server for ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to maintain and persist Gantt chart data in server in Syncfusion ASP.NET MVC Gantt Chart for data consistency and reliability.
-keywords: asp.net core gantt server data, maintain data, data persistence, server persistence, data storage, syncfusion gantt chart
+keywords: asp.net mvc gantt server data, maintain data, data persistence, server persistence, data storage, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/managing-tasks/maintaining-data-in-server
 platform: gantt-sdk
 control: Managing Tasks - Gantt Chart

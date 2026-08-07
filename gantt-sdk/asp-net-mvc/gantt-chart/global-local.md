@@ -2,7 +2,7 @@
 layout: post
 title: Global and Locale in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to configure globalization and locale settings in Syncfusion ASP.NET MVC Gantt Chart to support multiple languages and regional formats.
-keywords: asp.net core gantt globalization, locale settings, language support, regional formats, international gantt chart, syncfusion gantt
+keywords: asp.net mvc gantt globalization, locale settings, language support, regional formats, international gantt chart, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/global-locale
 platform: gantt-sdk
 control: Global and Locale - Gantt Chart
@@ -14,7 +14,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 ## Localization
 
-The [`Localization`](../common/localization) library allows you to localize default text content of the Gantt. The Gantt component has static text on some features (like toolbar area text, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Locale) value and translation object.
+The [`Localization`](../common/localization) library allows you to localize default text content of the Gantt. The Gantt component has static text on some features (like toolbar area text, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Locale) value and translation object.
 
 The following list of properties and its values are used in the Gantt.
 
@@ -173,11 +173,11 @@ The [`Internationalization`](../common/internationalization) library is used to 
 {% endif %}
 
 N> _ In the above sample, `Timeline` is formatted by `NumberFormatOptions` and `DateFormatOptions`.
-<br/> _ By default, [`locale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Locale) value is `en-US`. If you want to change `en-US` culture, then set the [`locale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Locale).
+<br/> _ By default, [`locale`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Locale) value is `en-US`. If you want to change `en-US` culture, then set the [`locale`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Locale).
 
 ## Right to left (RTL)
 
-RTL provides an option to switch the text direction and layout of the Gantt component from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Urdu, etc.). To enable RTL Gantt, set the [`EnableRtl`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableRtl) to true.
+RTL provides an option to switch the text direction and layout of the Gantt component from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Urdu, etc.). To enable RTL Gantt, set the [`EnableRtl`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableRtl) to true.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

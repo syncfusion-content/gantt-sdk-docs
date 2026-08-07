@@ -2,7 +2,7 @@
 layout: post
 title: Style and Appearance in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to customize and style Syncfusion ASP.NET MVC Gantt Chart including themes, CSS classes, and appearance customization for brand consistency.
-keywords: asp.net core gantt styling, gantt appearance, css customization, themes, styling options, syncfusion gantt chart
+keywords: asp.net mvc gantt styling, gantt appearance, css customization, themes, styling options, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/style-and-appearance
 platform: gantt-sdk
 control: Style and Appearance - Gantt Chart
@@ -54,7 +54,7 @@ To modify the Gantt Chart appearance, you need to override the default CSS of ga
 
 ## Grid lines
 
-In the Gantt control, you can show or hide the grid lines in the TreeGrid side and chart side by using the [`GridLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_GridLines) property.
+In the Gantt control, you can show or hide the grid lines in the TreeGrid side and chart side by using the [`GridLines`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_GridLines) property.
 
 The following options are available in the Gantt control for rendering the grid lines:
 
@@ -63,7 +63,7 @@ The following options are available in the Gantt control for rendering the grid 
 - **Both**: Both the horizontal and vertical grid lines will be visible on the TreeGrid and chart sides.
 - **None**: Gridlines will not be visible on TreeGrid and chart sides.
 
-N> By default, the [`GridLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_GridLines) property is set to `Horizontal` type.
+N> By default, the [`GridLines`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_GridLines) property is set to `Horizontal` type.
 
 The following code example shows how to change the gridlines rendering mode in the Gantt control.
 

@@ -2,7 +2,7 @@
 layout: post
 title: Virtual Scroll in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to enable virtual scrolling in Syncfusion ASP.NET MVC Gantt Chart to efficiently handle large datasets and improve performance.
-keywords: asp.net core gantt virtual scroll, virtual scrolling, large datasets, performance optimization, scroll performance, syncfusion gantt chart
+keywords: asp.net mvc gantt virtual scroll, virtual scrolling, large datasets, performance optimization, scroll performance, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/virtual-scrolling
 platform: gantt-sdk
 control: Virtual Scroll - Gantt Chart
@@ -51,7 +51,7 @@ This mode can be enable by setting the `EnableVirtualization` property to `true`
 
 Timeline virtualization allows you to load a data source having large timespan with high performance. Initially, it renders the timeline with thrice the width of the gantt element, while other timeline cells render on-demand during horizontal scrolling.
 
-This mode can be enable by setting the [EnableTimelineVirtualization](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableTimelineVirtualization) property to `true`.
+This mode can be enable by setting the [EnableTimelineVirtualization](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableTimelineVirtualization) property to `true`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

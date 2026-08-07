@@ -2,7 +2,7 @@
 layout: post
 title: Key Elements in ASP.NET MVC Gantt Chart | Syncfusion
 description: Understand the key UI elements and components of Syncfusion ASP.NET MVC Gantt Chart to effectively utilize and customize the project management interface.
-keywords: asp.net core gantt key elements, gantt components, ui elements, gantt interface, syncfusion gantt chart
+keywords: asp.net mvc gantt key elements, gantt components, ui elements, gantt interface, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/key-elements
 platform: gantt-sdk
 control: Key Elements - Gantt Chart
@@ -16,7 +16,7 @@ This section explains the key elements of the Gantt Chart interface.
 
 The Gantt component consists of two main sections: a `grid` and a `chart`, separated by a `splitter`. The grid is located on the left side of the Gantt component, while the chart section is on the right side. You can adjust the view of the Gantt by moving the splitter left or right to display only the grid, only the chart, or both.
 
-At the top of Gantt chart, having a [toolbar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Toolbar) that allows you to peform **CRUD** operations on tasks.
+At the top of Gantt chart, having a [toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Toolbar) that allows you to peform **CRUD** operations on tasks.
 
 ![Gantt chart](./images/gantt.png)
 
@@ -59,7 +59,7 @@ A milestone is a unique type of task characterized by the following attributes:
 
 ![Milestone](./images/milestone-element.png)
 
-> For more information, refer to [Unscheduled Tasks](https://ej2.syncfusion.com/aspnetcore/documentation/gantt/task-scheduling#unscheduled-tasks)
+> For more information, refer to [Unscheduled Tasks](https://ej2.syncfusion.com/aspnetmvc/documentation/gantt/task-scheduling#unscheduled-tasks)
 
 **Manual taskbar**
 
@@ -67,7 +67,7 @@ It is a type of task where the dates are not automatically validated by the Gant
 
 ![Manual taskbar](./images/manual-task.png)
 
-> For more information, refer to [Manual Tasks](https://ej2.syncfusion.com/aspnetcore/documentation/gantt/task-scheduling#manually-scheduled-tasks)
+> For more information, refer to [Manual Tasks](https://ej2.syncfusion.com/aspnetmvc/documentation/gantt/task-scheduling#manually-scheduled-tasks)
 
 **Baseline**
 

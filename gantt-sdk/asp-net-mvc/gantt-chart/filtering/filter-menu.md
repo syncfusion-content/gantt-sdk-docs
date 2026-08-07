@@ -2,7 +2,7 @@
 layout: post
 title: Filter Menu in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to enable filtering in Syncfusion ASP.NET MVC Gantt Chart using menu filters, search, hierarchy modes, and custom options.
-keywords: asp.net core gantt filter menu, menu filtering, filter dropdown, filter options, filter interface, syncfusion gantt chart
+keywords: asp.net mvc gantt filter menu, menu filtering, filter dropdown, filter options, filter interface, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/filtering/filter-menu
 platform: gantt-sdk
 control: Filtering - Gantt Chart
@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Using Filter Menu for Data Filtering in ASP.NET MVC Gantt Chart
 
-The Gantt control provides the menu filtering support for each column. You can enable the filter menu by setting the [`AllowFiltering`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~AllowFiltering.html) to `true`. The filter menu UI will be rendered based on its column type, which allows you to filter data. You can filter the records with different operators.
+The Gantt control provides the menu filtering support for each column. You can enable the filter menu by setting the [`AllowFiltering`](https://help.syncfusion.com/cr/cref_files/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~AllowFiltering.html) to `true`. The filter menu UI will be rendered based on its column type, which allows you to filter data. You can filter the records with different operators.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -37,7 +37,7 @@ The Gantt control provides the menu filtering support for each column. You can e
 {% endtabs %}
 {% endif %}
 
-N> The [`AllowFiltering`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~AllowFiltering.html) property should be set to `true` to enable the filter menu. Setting the [`Columns.AllowFiltering`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttColumn~AllowFiltering.html) property to `false` prevents rendering filter menu for a particular column.
+N> The [`AllowFiltering`](https://help.syncfusion.com/cr/cref_files/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~AllowFiltering.html) property should be set to `true` to enable the filter menu. Setting the [`Columns.AllowFiltering`](https://help.syncfusion.com/cr/cref_files/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttColumn~AllowFiltering.html) property to `false` prevents rendering filter menu for a particular column.
 
 ## Custom component in filter menu
 

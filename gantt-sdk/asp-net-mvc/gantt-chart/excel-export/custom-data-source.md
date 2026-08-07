@@ -2,7 +2,7 @@
 layout: post
 title: Custom Data Source in Excel Export | ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to use custom data sources for Excel export in Syncfusion ASP.NET MVC Gantt Chart with flexible data transformation options.
-keywords: asp.net core gantt custom datasource, excel export data source, export custom data, data export, excel datasource, syncfusion gantt chart
+keywords: asp.net mvc gantt custom datasource, excel export data source, export custom data, data export, excel datasource, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/custom-data-source
 platform: gantt-sdk
 control: Excel Export - Gantt Chart

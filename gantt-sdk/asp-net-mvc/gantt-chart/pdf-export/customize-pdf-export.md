@@ -2,7 +2,7 @@
 layout: post
 title: Customize PDF Export in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to customize PDF export settings in Syncfusion ASP.NET MVC Gantt Chart including styling, formatting, and advanced export options.
-keywords: asp.net core gantt customize pdf, pdf customization, export customization, pdf styling, advanced export, syncfusion gantt chart
+keywords: asp.net mvc gantt customize pdf, pdf customization, export customization, pdf styling, advanced export, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/customize-pdf-export
 platform: gantt-sdk
 control: PDF Export - Gantt Chart
@@ -204,7 +204,7 @@ The visibility of predecessor lines in the exported PDF document can be controll
 
 ## Show or hide columns on exported PDF
 
-A hidden column can be shown, or a visible column can be hidden while exporting the Gantt chart by using the [`toolbarClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ToolbarClick) and [`beforePdfExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_BeforePdfExport) events.
+A hidden column can be shown, or a visible column can be hidden while exporting the Gantt chart by using the [`toolbarClick`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ToolbarClick) and [`beforePdfExport`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_BeforePdfExport) events.
 
 Columns can be shown or hidden by setting the `column.visible` property to true or false, respectively.
 
@@ -235,7 +235,7 @@ In the following example, the `Duration` column is initially hidden in the Gantt
 
 ## Conditional cell formatting
 
-TreeGrid cells in the exported PDF can be customized or formatted using the [`pdfQueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_PdfQueryCellInfo) event. In this event, you can format the treegrid cells of exported PDF document based on the column cell value.
+TreeGrid cells in the exported PDF can be customized or formatted using the [`pdfQueryCellInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_PdfQueryCellInfo) event. In this event, you can format the treegrid cells of exported PDF document based on the column cell value.
 
 In the following sample, the background color is set for `Progress` column in the exported document by using the `args.style.backgroundColor` property.
 
@@ -264,7 +264,7 @@ In the following sample, the background color is set for `Progress` column in th
 
 ## Timeline cell formatting
 
-Timeline cells in the exported PDF document can be customized or formatted using the [`pdfQueryTimelineCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_PdfQueryTimelineCellInfo) event.
+Timeline cells in the exported PDF document can be customized or formatted using the [`pdfQueryTimelineCellInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_PdfQueryTimelineCellInfo) event.
 
 In the following sample, the header background color is set for timeline cells in the exported document by using the `args.headerBackgroundColor` property.
 
@@ -293,7 +293,7 @@ In the following sample, the header background color is set for timeline cells i
 
 ## Taskbar formatting
 
-Taskbars in the exported PDF document can be customized or formatted using the [`pdfQueryTaskbarInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_PdfQueryTaskbarInfo) event.
+Taskbars in the exported PDF document can be customized or formatted using the [`pdfQueryTaskbarInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_PdfQueryTaskbarInfo) event.
 
 In the following sample, the taskbar background color is customized in the chart side of the exported document by using the `args.taskbar` property.
 
@@ -349,7 +349,7 @@ PDF export allows to customize the Gantt chart's appearance in the exported PDF 
 
 ## Customize Split Taskbar Segment Colors in PDF
 
-The PDF export feature in the Gantt Chart allows you to customize the colors of split taskbar segments using the `taskSegmentStyles` property inside the [`PdfQueryTaskbarInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_PdfQueryTaskbarInfo) event.
+The PDF export feature in the Gantt Chart allows you to customize the colors of split taskbar segments using the `taskSegmentStyles` property inside the [`PdfQueryTaskbarInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_PdfQueryTaskbarInfo) event.
 
 The `taskSegmentStyles` property contains a collection of style properties for task segments. By specifying the index of corresponding segment index in this collection you can customize that segment taskbar color, progress color, and its border color.
 

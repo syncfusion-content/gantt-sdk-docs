@@ -2,7 +2,7 @@
 layout: post
 title: Multi Taskbar in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to implement multi-taskbar functionality in Syncfusion ASP.NET MVC Gantt Chart to display multiple tasks per resource in a single row.
-keywords: asp.net core gantt multi taskbar, multiple taskbars, resource taskbars, task display, resource management, syncfusion gantt chart
+keywords: asp.net mvc gantt multi taskbar, multiple taskbars, resource taskbars, task display, resource management, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/multi-taskbar
 platform: gantt-sdk
 control: Multi Taskbar - Gantt Chart
@@ -49,7 +49,7 @@ N> By default, the `enableMultiTaskbar` property value is `false`.
 
 ## Disable taskbar overlap
 
-In Gantt, you can disable taskbar overlap between resource tasks using the [`AllowTaskbarOverlap`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowTaskbarOverlap) property. This prevents the taskbars for different tasks from overlapping on the same row, making it easier to distinguish between the different tasks and manage resources effectively.
+In Gantt, you can disable taskbar overlap between resource tasks using the [`AllowTaskbarOverlap`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowTaskbarOverlap) property. This prevents the taskbars for different tasks from overlapping on the same row, making it easier to distinguish between the different tasks and manage resources effectively.
 
 When `AllowTaskbarOverlap` is set to false, the resources are displayed in a single row and the row height will be extended to occupy the tasks of the resource when it is in a collapsed state. This view allows you to easily identify any overallocation of tasks for a resource in a project.
 

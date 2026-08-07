@@ -2,7 +2,7 @@
 layout: post
 title: Holidays in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to define and manage holidays in Syncfusion ASP.NET MVC Gantt Chart to mark non-working days and improve project scheduling accuracy.
-keywords: asp.net core gantt holidays, non-working days, holiday schedule, weekend, project calendar, syncfusion gantt chart
+keywords: asp.net mvc gantt holidays, non-working days, holiday schedule, weekend, project calendar, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/holidays
 platform: gantt-sdk
 control: Holidays - Gantt Chart
@@ -12,12 +12,12 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Holidays and Non-Working Days in ASP.NET MVC Gantt Chart
 
-Non-working days in a project can be displayed in the Gantt control using the [`Holidays`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Holidays) property. Each holiday can be defined with the following properties:
+Non-working days in a project can be displayed in the Gantt control using the [`Holidays`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Holidays) property. Each holiday can be defined with the following properties:
 
-- [`From`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttHoliday.html#Syncfusion_EJ2_Gantt_GanttHoliday_From): Defines start date of the holiday(s).
-- [`To`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttHoliday.html#Syncfusion_EJ2_Gantt_GanttHoliday_To): Defines end date of the holiday(s).
-- [`Label`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttHoliday.html#Syncfusion_EJ2_Gantt_GanttHoliday_Label): Defines the description or label for the holiday.
-- [`CssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttHoliday.html#Syncfusion_EJ2_Gantt_GanttHoliday_CssClass): Formats the holidays label in the Gantt chart.
+- [`From`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttHoliday.html#Syncfusion_EJ2_Gantt_GanttHoliday_From): Defines start date of the holiday(s).
+- [`To`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttHoliday.html#Syncfusion_EJ2_Gantt_GanttHoliday_To): Defines end date of the holiday(s).
+- [`Label`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttHoliday.html#Syncfusion_EJ2_Gantt_GanttHoliday_Label): Defines the description or label for the holiday.
+- [`CssClass`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttHoliday.html#Syncfusion_EJ2_Gantt_GanttHoliday_CssClass): Formats the holidays label in the Gantt chart.
 
 The following code example shows how to display the non-working days in the Gantt control.
 

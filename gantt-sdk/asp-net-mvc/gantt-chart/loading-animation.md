@@ -2,7 +2,7 @@
 layout: post
 title: Loading Animation in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to configure and customize loading animations in Syncfusion ASP.NET MVC Gantt Chart to provide visual feedback during data loading operations.
-keywords: asp.net core gantt loading animation, spinner animation, loading indicator, data loading feedback, syncfusion gantt chart
+keywords: asp.net mvc gantt loading animation, spinner animation, loading indicator, data loading feedback, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/loading-animation
 platform: gantt-sdk
 control: Loading Animation - Gantt Chart

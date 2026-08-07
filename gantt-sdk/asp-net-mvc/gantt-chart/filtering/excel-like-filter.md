@@ -2,7 +2,7 @@
 layout: post
 title: Excel-like Filter in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to implement Excel-like filtering in Syncfusion ASP.NET MVC Gantt Chart with sorting and advanced filtering options.
-keywords: asp.net core gantt excel filter, excel-like filter, advanced filter, filter interface, excel filtering, syncfusion gantt chart
+keywords: asp.net mvc gantt excel filter, excel-like filter, advanced filter, filter interface, excel filtering, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/filtering/excel-like-filter
 platform: gantt-sdk
 control: Filtering - Gantt Chart
@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Using Excel-Like Filtering Interface in ASP.NET MVC Gantt Chart
 
-You can enable Excel like filter by defining [`filterSettings.type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_FilterSettings) as `Excel`. The excel menu contains an option such as Sorting, Clear filter, Sub menu for advanced filtering.
+You can enable Excel like filter by defining [`filterSettings.type`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_FilterSettings) as `Excel`. The excel menu contains an option such as Sorting, Clear filter, Sub menu for advanced filtering.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

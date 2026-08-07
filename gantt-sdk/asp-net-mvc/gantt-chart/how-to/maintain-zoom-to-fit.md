@@ -2,7 +2,7 @@
 layout: post
 title: Maintain Zoom to Fit in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to maintain zoom to fit functionality in Syncfusion ASP.NET MVC Gantt Chart to automatically scale timeline based on project duration.
-keywords: asp.net core gantt zoom to fit, zoom functionality, auto zoom, timeline scaling, gantt zoom, syncfusion gantt chart
+keywords: asp.net mvc gantt zoom to fit, zoom functionality, auto zoom, timeline scaling, gantt zoom, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/how-to/maintain-zoom-to-fit
 platform: gantt-sdk
 control: How-to - Gantt Chart

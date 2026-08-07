@@ -2,7 +2,7 @@
 layout: post
 title: PDF Export in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to export Gantt chart data to PDF in Syncfusion ASP.NET MVC Gantt Chart with formatting, styling, and export customization options.
-keywords: asp.net core gantt pdf export, export gantt, export to pdf, pdf formatting, pdf customization, syncfusion gantt chart
+keywords: asp.net mvc gantt pdf export, export gantt, export to pdf, pdf formatting, pdf customization, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/pdf-export
 platform: gantt-sdk
 control: PDF Export - Gantt Chart
@@ -14,7 +14,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 ## PDF Export
 
-PDF export allows exporting Gantt data to PDF document. You need to use the `pdfExport` method for exporting. To enable PDF export in the Gantt, set the [`allowPdfExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowPdfExport) to true.
+PDF export allows exporting Gantt data to PDF document. You need to use the `pdfExport` method for exporting. To enable PDF export in the Gantt, set the [`allowPdfExport`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowPdfExport) to true.
 
 To export data to PDF document, inject the `PdfExport` module in Gantt.
 
@@ -46,7 +46,7 @@ N> Currently, we don't have support for exporting the manually scheduled tasks.
 ## Indicators in PDF exporting
 
 The PDF export functionality allows users to export Gantt charts enriched with dynamic indicators and accompanying images.
-These indicators, represented by images,can be effortlessly defined using the `base64` encoding value in the data object of datasource.This data object field should be mapped to indiactor property of [`task fields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Indicators).
+These indicators, represented by images,can be effortlessly defined using the `base64` encoding value in the data object of datasource.This data object field should be mapped to indiactor property of [`task fields`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Indicators).
 
 {% if page.publishingplatform == "aspnet-core" %}
 

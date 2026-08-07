@@ -2,7 +2,7 @@
 layout: post
 title: Overview of ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to use Syncfusion ASP.NET MVC Gantt Chart control with key features for project scheduling, task management, and timeline visualization.
-keywords: asp.net core gantt overview, gantt chart features, project management, timeline, task scheduling, syncfusion gantt
+keywords: asp.net mvc gantt overview, gantt chart features, project management, timeline, task scheduling, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/overview
 platform: gantt-sdk
 control: Gantt Chart Overview

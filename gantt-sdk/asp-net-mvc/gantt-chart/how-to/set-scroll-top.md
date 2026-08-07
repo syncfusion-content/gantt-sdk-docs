@@ -2,7 +2,7 @@
 layout: post
 title: Set Scroll Position in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to set the vertical scroll position programmatically in Syncfusion ASP.NET MVC Gantt Chart using the scroll top method.
-keywords: asp.net core gantt scroll position, set scroll top, scroll bar position, vertical scrolling, gantt scroll, syncfusion gantt chart
+keywords: asp.net mvc gantt scroll position, set scroll top, scroll bar position, vertical scrolling, gantt scroll, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/how-to/set-scroll-top
 platform: gantt-sdk
 control: How-to - Gantt Chart

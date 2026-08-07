@@ -2,7 +2,7 @@
 layout: post
 title: Column Pinning (Frozen) in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to pin or freeze columns in Syncfusion ASP.NET MVC Gantt Chart to keep important columns visible while scrolling horizontally.
-keywords: asp.net core gantt column pinning, frozen columns, pinned columns, column freezing, sticky columns, syncfusion gantt chart
+keywords: asp.net mvc gantt column pinning, frozen columns, pinned columns, column freezing, sticky columns, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/columns/frozen-column
 platform: gantt-sdk
 control: Columns - Gantt Chart
@@ -47,7 +47,7 @@ To enable frozen columns, use the `FrozenColumns` property in the Gantt Chart co
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Gantt Chart provides a feature that enables freezing specific columns, significantly enhancing data visibility and improving the user experience. The [isFrozen](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_IsFrozen) property is used at the column level to freeze a specific column at any desired index on the left side, offering flexibility in managing which columns are frozen.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Gantt Chart provides a feature that enables freezing specific columns, significantly enhancing data visibility and improving the user experience. The [isFrozen](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_IsFrozen) property is used at the column level to freeze a specific column at any desired index on the left side, offering flexibility in managing which columns are frozen.
 
 To freeze a particular column in the Gantt, set the `isFrozen` property of the column to **true**. The following example demonstrates how to freeze a particular column in the Gantt Chart using the `isFrozen` property.
 
@@ -82,7 +82,7 @@ To freeze a particular column in the Gantt, set the `IsFrozen` property of the c
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-In the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Gantt, the **freeze direction** feature allows you to position frozen columns either to the left, right, or in a fixed position, while still allowing the remaining columns to be horizontally movable. To achieve this, the [column.freeze](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Freeze) property can be utilized. This property is used to specify the freeze direction for individual columns. The types of the `column.freeze` directions:
+In the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Gantt, the **freeze direction** feature allows you to position frozen columns either to the left, right, or in a fixed position, while still allowing the remaining columns to be horizontally movable. To achieve this, the [column.freeze](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Freeze) property can be utilized. This property is used to specify the freeze direction for individual columns. The types of the `column.freeze` directions:
 
 - **Left**: When the `column.freeze` property is set to **Left**, specific columns will be frozen on the left side.
 

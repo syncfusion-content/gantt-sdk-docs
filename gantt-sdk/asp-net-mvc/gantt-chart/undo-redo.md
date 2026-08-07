@@ -2,7 +2,7 @@
 layout: post
 title: Undo Redo in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to implement undo and redo functionality in Syncfusion ASP.NET MVC Gantt Chart to track and reverse user actions and edits.
-keywords: asp.net core gantt undo redo, undo functionality, redo functionality, action history, change tracking, syncfusion gantt chart
+keywords: asp.net mvc gantt undo redo, undo functionality, redo functionality, action history, change tracking, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/undo-redo
 platform: gantt-sdk
 control: Undo Redo - Gantt Chart
@@ -16,11 +16,11 @@ The Undo feature enables users to revert the most recent action performed in the
 
 The Redo feature can reapply an action that was previously undone using the Undo feature. This allows users to revert their decision to undo an action.
 
-The undo redo feature can be enabled in Gantt by using the [EnableUndoRedo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableUndoRedo) property.
+The undo redo feature can be enabled in Gantt by using the [EnableUndoRedo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableUndoRedo) property.
 
 ## Configure the feature set for undo redo actions
 
-By default, all the gantt features listed in the below table will be restored for undo and redo actions. However, you have the option to specify only the required actions to be restored using [UndoRedoActions](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_UndoRedoActions) property.
+By default, all the gantt features listed in the below table will be restored for undo and redo actions. However, you have the option to specify only the required actions to be restored using [UndoRedoActions](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_UndoRedoActions) property.
 
 | Built-in Undo Redo Items | Actions                                                          |
 | ------------------------ | ---------------------------------------------------------------- |
@@ -70,7 +70,7 @@ In the following code example, `Edit` and `Delete` actions are specified in `Und
 
 ## Configuring the Storage Step Count for Undo and Redo Actions
 
-You can specify the number of actions to be stored for undo and redo operations using the [UndoRedoStepsCount](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_UndoRedoStepsCount) property.
+You can specify the number of actions to be stored for undo and redo operations using the [UndoRedoStepsCount](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_UndoRedoStepsCount) property.
 
 By default, the value of` UndoRedoStepsCount` is set to 10.
 

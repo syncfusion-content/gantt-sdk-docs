@@ -2,7 +2,7 @@
 layout: post
 title: Change Schedule Dates in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to change project schedule dates programmatically in Syncfusion ASP.NET MVC Gantt Chart for task rescheduling and project adjustments.
-keywords: asp.net core gantt schedule date, change dates, schedule start, schedule end, reschedule tasks, syncfusion gantt chart
+keywords: asp.net mvc gantt schedule date, change dates, schedule start, schedule end, reschedule tasks, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/how-to/change-schedule-date
 platform: gantt-sdk
 control: How-to - Gantt Chart

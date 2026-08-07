@@ -2,7 +2,7 @@
 layout: post
 title: EJ1 API Migration in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to migrate from EJ1 API to the new Syncfusion ASP.NET MVC Gantt Chart API with a comprehensive guide covering breaking changes and new features.
-keywords: asp.net core gantt ej1 migration, api migration, upgrading gantt, breaking changes, syncfusion gantt chart
+keywords: asp.net mvc gantt ej1 migration, api migration, upgrading gantt, breaking changes, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/ej1-api-migration
 platform: gantt-sdk
 control: EJ1 API Migration - Gantt Chart

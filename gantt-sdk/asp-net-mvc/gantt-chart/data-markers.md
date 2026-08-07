@@ -2,7 +2,7 @@
 layout: post
 title: Data Markers in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to use data markers in Syncfusion ASP.NET MVC Gantt Chart to highlight important dates and events on the timeline for better project visualization.
-keywords: asp.net core gantt data markers, event markers, timeline markers, milestone tracking, important dates, syncfusion gantt chart
+keywords: asp.net mvc gantt data markers, event markers, timeline markers, milestone tracking, important dates, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/data-markers
 platform: gantt-sdk
 control: Data Markers - Gantt Chart
@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Task Markers and Milestones with Data Markers in ASP.NET MVC Gantt Chart
 
-Data markers are a set of events used to represent the schedule events for a task. Data markers are defined in data source as array of objects, and this value is mapped to the Gantt control using the [`taskFields.indicators`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Indicators) property. You can represent more than one data marker in a task.
+Data markers are a set of events used to represent the schedule events for a task. Data markers are defined in data source as array of objects, and this value is mapped to the Gantt control using the [`taskFields.indicators`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Indicators) property. You can represent more than one data marker in a task.
 
 Data markers can be defined using the following properties:
 

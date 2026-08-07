@@ -2,7 +2,7 @@
 layout: post
 title: Timezone in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to manage and configure timezone support in Syncfusion ASP.NET MVC Gantt Chart for accurate date and time representation across regions.
-keywords: asp.net core gantt timezone, time zone support, date conversion, timezone offset, global projects, syncfusion gantt chart
+keywords: asp.net mvc gantt timezone, time zone support, date conversion, timezone offset, global projects, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/timezone
 platform: gantt-sdk
 control: Timezone - Gantt Chart

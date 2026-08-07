@@ -2,7 +2,7 @@
 layout: post
 title: Drag and Drop in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to drag and drop records from other components to Syncfusion ASP.NET MVC Gantt Chart for seamless task management integration.
-keywords: asp.net core gantt drag drop, drag and drop tasks, record dragging, drop to gantt, external drag drop, syncfusion gantt chart
+keywords: asp.net mvc gantt drag drop, drag and drop tasks, record dragging, drop to gantt, external drag drop, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/how-to/drag-and-drop
 platform: gantt-sdk
 control: How-to - Gantt Chart

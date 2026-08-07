@@ -2,7 +2,7 @@
 layout: post
 title: Sorting in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to implement and customize sorting functionality in Syncfusion ASP.NET MVC Gantt Chart for efficient data organization and analysis.
-keywords: asp.net core gantt sorting, data sorting, column sorting, multi-level sorting, sort order, syncfusion gantt chart
+keywords: asp.net mvc gantt sorting, data sorting, column sorting, multi-level sorting, sort order, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/sorting
 platform: gantt-sdk
 control: Sorting - Gantt Chart
@@ -16,7 +16,7 @@ Sorting enables you to sort data in the ascending or descending order. To sort a
 
 To sort multiple columns, press and hold the CTRL key and click the column header. You can clear sorting of any one of the multi-sorted columns by pressing and holding the SHIFT key and clicking the specific column header.
 
-To enable sorting in the Gantt control, set the [`AllowSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowSorting) property to true. Sorting options can be configured through the [`SortSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SortSettings) property.
+To enable sorting in the Gantt control, set the [`AllowSorting`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowSorting) property to true. Sorting options can be configured through the [`SortSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SortSettings) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -46,11 +46,11 @@ The following screenshot shows the output of multicolumn sorting in Gantt contro
 ![Alt text](images/multiSorting.png)
 
 N> _ Gantt columns are sorted in the ascending order. If you click the already sorted column, the sort direction toggles.
-<br/> _ To disable sorting for a particular column, set the [`Columns.AllowSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_AllowSorting) property to false.
+<br/> _ To disable sorting for a particular column, set the [`Columns.AllowSorting`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_AllowSorting) property to false.
 
 ## Sorting column on Gantt initialization
 
-The Gantt control can be rendered with sorted columns initially, and this can be achieved by using the [`SortSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SortSettings) property. You can add columns that are sorted initially in the [`SortSettings.Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttSortSettings.html#Syncfusion_EJ2_Gantt_GanttSortSettings_Columns) collection defined with `Field` and `Direction` properties. The following code example shows how to add the sorted column to Gantt initialization.
+The Gantt control can be rendered with sorted columns initially, and this can be achieved by using the [`SortSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SortSettings) property. You can add columns that are sorted initially in the [`SortSettings.Columns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttSortSettings.html#Syncfusion_EJ2_Gantt_GanttSortSettings_Columns) collection defined with `Field` and `Direction` properties. The following code example shows how to add the sorted column to Gantt initialization.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -139,7 +139,7 @@ In the Gantt control, you can clear all the sorted columns and return to previou
 
 ## Sorting events
 
-During the sort action, the Gantt control triggers two events. The [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ActionBegin) event triggers before the sort action starts, and the [`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ActionComplete) event triggers after the sort action is completed.
+During the sort action, the Gantt control triggers two events. The [`ActionBegin`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ActionBegin) event triggers before the sort action starts, and the [`ActionComplete`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ActionComplete) event triggers after the sort action is completed.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

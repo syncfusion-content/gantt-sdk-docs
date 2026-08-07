@@ -2,7 +2,7 @@
 layout: post
 title: Scheduling Tasks in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to schedule and manage tasks in Syncfusion ASP.NET MVC Gantt Chart including task duration, dependencies, and automatic schedule calculation.
-keywords: asp.net core gantt scheduling, task scheduling, task duration, date scheduling, task dependencies, project scheduling, syncfusion gantt chart
+keywords: asp.net mvc gantt scheduling, task scheduling, task duration, date scheduling, task dependencies, project scheduling, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/scheduling-tasks
 platform: gantt-sdk
 control: Scheduling Tasks - Gantt Chart
@@ -20,14 +20,14 @@ In Gantt, the tasks’ duration value can be measured by the following duration 
 - Hour
 - Minute
 
-In Gantt, we can define duration unit for whole project by using [`DurationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DurationUnit) property, when we defines the value for this property, this unit will be applied for all task which don't has duration unit value. And each task in the project can be defined with different duration units and the duration unit of a task can be defined by the following ways,
+In Gantt, we can define duration unit for whole project by using [`DurationUnit`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DurationUnit) property, when we defines the value for this property, this unit will be applied for all task which don't has duration unit value. And each task in the project can be defined with different duration units and the duration unit of a task can be defined by the following ways,
 
-- Using [`TaskFields.DurationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_DurationUnit) property, to map the duration unit data source field.
+- Using [`TaskFields.DurationUnit`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_DurationUnit) property, to map the duration unit data source field.
 - Defining the duration unit value along with the duration field in the data source.
 
 ### Mapping the duration unit field
 
-The below code snippet explains the mapping of duration unit data source field to the Gantt control using the [`TaskFields.DurationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_DurationUnit) property.
+The below code snippet explains the mapping of duration unit data source field to the Gantt control using the [`TaskFields.DurationUnit`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_DurationUnit) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -54,7 +54,7 @@ The below code snippet explains the mapping of duration unit data source field t
 
 ![Alt text](images/durationUnits.png)
 
-N> The default value of the [`DurationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_DurationUnit) property is `day`.
+N> The default value of the [`DurationUnit`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_DurationUnit) property is `day`.
 
 ### Defining duration unit along with duration field
 
@@ -89,7 +89,7 @@ N> The edit type of the duration column in Gantt is string, to support editing t
 
 ## Unscheduled Tasks
 
-Unscheduled tasks are planned for a project without any definite schedule dates. The Gantt control supports rendering the unscheduled tasks. You can create or update the tasks with anyone of start date, end date, and duration values or none. You can enable or disable the unscheduled tasks by using the [`AllowUnscheduledTasks`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowUnscheduledTasks) property. The following images represent the various types of unscheduled tasks in Gantt.
+Unscheduled tasks are planned for a project without any definite schedule dates. The Gantt control supports rendering the unscheduled tasks. You can create or update the tasks with anyone of start date, end date, and duration values or none. You can enable or disable the unscheduled tasks by using the [`AllowUnscheduledTasks`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowUnscheduledTasks) property. The following images represent the various types of unscheduled tasks in Gantt.
 
 ### Start Date Only
 
@@ -138,11 +138,11 @@ You can define the various types of unscheduled tasks in the data source as foll
 
 ![Alt text](images/unscheduledTasks.png)
 
-N> If the [`AllowUnscheduledTasks`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowUnscheduledTasks) property is set to false, then the Gantt control automatically calculates the scheduled date values with a default value of duration 1 and the project start date is considered as the start date for the task.
+N> If the [`AllowUnscheduledTasks`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowUnscheduledTasks) property is set to false, then the Gantt control automatically calculates the scheduled date values with a default value of duration 1 and the project start date is considered as the start date for the task.
 
 ## Working Time Range
 
-In the Gantt control, working hours in a day for a project can be defined by using the [`DayWorkingTime`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DayWorkingTime) property. Based on the working hours, automatic date scheduling and duration validations for a task are performed.
+In the Gantt control, working hours in a day for a project can be defined by using the [`DayWorkingTime`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DayWorkingTime) property. Based on the working hours, automatic date scheduling and duration validations for a task are performed.
 
 The following code snippet explains how to define the working time range for the project in Gantt.
 
@@ -174,11 +174,11 @@ The following screen shot shows working time range in Gantt control.
 ![Alt text](images/working-time-range.png)
 
 N>_ Individual tasks can lie between any time within the defined working time range of the project.
-<br/>_ The [`DayWorkingTime`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DayWorkingTime) property is used to define the working time for the whole project.
+<br/>_ The [`DayWorkingTime`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DayWorkingTime) property is used to define the working time for the whole project.
 
 ## Weekend/Non-working days
 
-Non-working days/weekend are used to represent the non-productive days in a project. You can define the non-working days in a week using the [`WorkWeek`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_WorkWeek) property in Gantt.
+Non-working days/weekend are used to represent the non-productive days in a project. You can define the non-working days in a week using the [`WorkWeek`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_WorkWeek) property in Gantt.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -206,5 +206,5 @@ Non-working days/weekend are used to represent the non-productive days in a proj
 ![Alt text](images/changeWorkweek.png)
 
 N> By default, Saturdays and Sundays are considered as non-working days/weekend in a project.
-<br/> In the Gantt control, you can make weekend as working day by setting the [`IncludeWeekend`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_IncludeWeekend) property to `true`.
-<br/> To show or hide weekend in timeline, use [timelineSettings.showWeekend](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTimelineSettings.html#Syncfusion_EJ2_Gantt_GanttTimelineSettings_ShowWeekend) property in `timelineSettings`. To know more about `showWeekend`, refer [here](https://ej2.syncfusion.com/aspnetcore/documentation/gantt/time-line/time-line#showhide-weekends).
+<br/> In the Gantt control, you can make weekend as working day by setting the [`IncludeWeekend`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_IncludeWeekend) property to `true`.
+<br/> To show or hide weekend in timeline, use [timelineSettings.showWeekend](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttTimelineSettings.html#Syncfusion_EJ2_Gantt_GanttTimelineSettings_ShowWeekend) property in `timelineSettings`. To know more about `showWeekend`, refer [here](https://ej2.syncfusion.com/aspnetmvc/documentation/gantt/time-line/time-line#showhide-weekends).

@@ -2,7 +2,7 @@
 layout: post
 title: Task Dependency in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to define and manage task dependencies in Syncfusion ASP.NET MVC Gantt Chart to manage task relationships and project scheduling.
-keywords: asp.net core gantt task dependency, task relationships, dependency types, predecessor tasks, gantt dependencies, syncfusion gantt chart
+keywords: asp.net mvc gantt task dependency, task relationships, dependency types, predecessor tasks, gantt dependencies, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/task-dependency
 platform: gantt-sdk
 control: Task Dependency - Gantt Chart
@@ -16,7 +16,7 @@ Task dependency or task relationship can be established between two tasks in Gan
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-In Gantt, you can enable or disable the parent predecessor using [AllowParentDependency](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.gantt.gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowParentDependency) property.
+In Gantt, you can enable or disable the parent predecessor using [AllowParentDependency](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.gantt.gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowParentDependency) property.
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 In Gantt, you can enable or disable the parent predecessor using [AllowParentDependency](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.gantt.gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowParentDependency) property.
@@ -55,7 +55,7 @@ You cannot finish a task until the dependent task is completed.
 
 ## Define task relationship
 
-Task relationship is defined in the data source as a string value, and this value is mapped to the Gantt control by using the [`TaskFields.Dependency`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Dependency) property. The following code example demonstrates how to enable the predecessor in the Gantt control.
+Task relationship is defined in the data source as a string value, and this value is mapped to the Gantt control by using the [`TaskFields.Dependency`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Dependency) property. The following code example demonstrates how to enable the predecessor in the Gantt control.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -154,7 +154,7 @@ The [autoUpdatePredecessorOffset](https://ej2.syncfusion.com/react/documentation
 
 ## Disabling automatic dependency offset updates
 
-By default, the dependency offsets are automatically updated in the Gantt chart whenever a task's start or end date is changed. However, if you want to disable this feature, you can do so by disabling the [`updateOffsetOnTaskbarEdit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_UpdateOffsetOnTaskbarEdit) property. Once this property is disabled, you can only update the offset value by editing the predecessor column cell or the offset column in the dependency tab of the edit dialog.
+By default, the dependency offsets are automatically updated in the Gantt chart whenever a task's start or end date is changed. However, if you want to disable this feature, you can do so by disabling the [`updateOffsetOnTaskbarEdit`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_UpdateOffsetOnTaskbarEdit) property. Once this property is disabled, you can only update the offset value by editing the predecessor column cell or the offset column in the dependency tab of the edit dialog.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -188,7 +188,7 @@ In Gantt, task relationship link can be broken by editing the start date, end da
 
 ### Using actionBegin event
 
-When the task relationship link is broken on any edit action, then the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ActionBegin) event will be triggered with `requestType` argument as `validateLinkedTask`. You can validate the editing action within the actionBegin event using the `validateMode` event argument. The `validateMode` event argument has the following properties:
+When the task relationship link is broken on any edit action, then the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ActionBegin) event will be triggered with `requestType` argument as `validateLinkedTask`. You can validate the editing action within the actionBegin event using the `validateMode` event argument. The `validateMode` event argument has the following properties:
 
 | Argument                                  | Default value | Description                                                                                                                                                                                                                                                 |
 | ----------------------------------------- | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -198,7 +198,7 @@ When the task relationship link is broken on any edit action, then the [`ActionB
 
 By default, the `preserveLinkWithEditing` validation mode will be enabled, so the predecessors are updated with offset values.
 
-The following sample explains enabling the `respectLink` validation mode while editing the linked tasks in the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ActionBegin) event.
+The following sample explains enabling the `respectLink` validation mode while editing the linked tasks in the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ActionBegin) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -225,7 +225,7 @@ The following sample explains enabling the `respectLink` validation mode while e
 
 ### Using validation dialog
 
-When disabling all the validation modes in the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ActionBegin) event, a validation pop-up will be displayed prompting users to select the validation mode to validate taskbar editing.
+When disabling all the validation modes in the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ActionBegin) event, a validation pop-up will be displayed prompting users to select the validation mode to validate taskbar editing.
 
 This validation pop-up will display different options based on the successor task’s start date after editing.
 
