@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Getting Started with TypeScript Gantt Chart Control | Syncfusion
-description: Checkout and learn about Getting started with TypeScript Gantt Chart control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with TypeScript Gantt Chart | Syncfusion
+description: Get started with TypeScript Gantt Chart control by setting up data sources, configuring tasks, and implementing basic features for project management.
+keywords: typescript gantt getting started, setup, configuration, data source, tasks, scheduling, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/getting-started
 platform: gantt-sdk
-control: Getting started 
-publishingplatform: gantt-sdk
+control: Getting Started - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Getting Started in TypeScript Gantt Chart Control
+# Getting Started with TypeScript Gantt Chart
 
 This section explains the steps to create a simple Gantt Chart and demonstrates the basic usage of the gantt component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 

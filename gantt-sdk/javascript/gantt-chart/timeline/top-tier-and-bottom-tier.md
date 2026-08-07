@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Top tier and bottom tier in JavaScript Gantt Chart Control | Syncfusion
-description: Learn how to configure top and bottom tiers in the Syncfusion JavaScript Gantt Chart Control using timeline settings such as unit, format, count, and formatter.
+title: Timeline Tiers in JavaScript Gantt Chart | Syncfusion
+description: Configure top and bottom tiers in Syncfusion JavaScript Gantt Chart timeline with custom units, formats, and formatting for detailed scheduling views.
+keywords: javascript gantt timeline tiers, top tier, bottom tier, tier format, timeline format, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/timeline/top-tier-and-bottom-tier
 platform: gantt-sdk
-control: Top tier and bottom tier 
-publishingplatform: gantt-sdk
+control: Timeline Tiers - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Top Tier and Bottom Tier in JavaScript Gantt Chart Control
+# Customizing Timeline Top and Bottom Tiers in JavaScript Gantt Chart
 
 The [JavaScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control supports a two-tier timeline layout, enabling customization of both the top and bottom tiers through specific configuration options.
 

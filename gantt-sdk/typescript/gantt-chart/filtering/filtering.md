@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Filtering in TypeScript Gantt Chart Control | Syncfusion
-description: Learn here all about filtering in Syncfusion TypeScript Gantt Chart control of Syncfusion Essential JS 2 and more.
+title: Filtering in TypeScript Gantt Chart | Syncfusion
+description: Learn how to filter task data in Syncfusion TypeScript Gantt Chart to search and display tasks based on criteria for efficient project data management.
+keywords: TypeScript gantt filtering, filter tasks, search tasks, filter conditions, column filtering, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/filtering/filtering
 platform: gantt-sdk
-control: Filtering 
-publishingplatform: gantt-sdk
+control: Filtering - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Filtering in TypeScript Gantt Chart Control
+# Filtering and Search Features in TypeScript Gantt Chart
 
 Filtering allows you to view specific or related records based on defined criteria. The Gantt Chart control supports options like filter menu, Excel-like filtering, and toolbar search to narrow down visible data.
 

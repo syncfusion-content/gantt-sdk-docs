@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Resource View in TypeScript Gantt Chart Control | Syncfusion
-description: Learn how to configure resource view in the Syncfusion TypeScript Gantt Chart control for hierarchical task visualization and resource allocation.
+title: Resource View in TypeScript Gantt Chart | Syncfusion
+description: Learn how to configure resource view in Syncfusion TypeScript Gantt Chart to visualize tasks hierarchically by resource, showing workload in timeline.
+keywords: typescript gantt resource view, hierarchical view, resource allocation, task grouping, resource management, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/resource-view
 platform: gantt-sdk
-control: Resource view 
-publishingplatform: gantt-sdk
+control: Resource View - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Resource view in TypeScript Gantt Chart Control
+# Resource View with Hierarchical Tasks in TypeScript Gantt Chart
 
 The resource view in the  TypeScript Gantt Chart control organizes tasks hierarchically by resource, displaying resources as parent nodes and their assigned tasks as child taskbars in a timeline. Enabled by setting [viewType](../api/gantt#viewtype) to **ResourceView**, this view visualizes workloads, such as multiple tasks per resource, with taskbars showing duration, progress, and dependencies. Unassigned tasks group under an **Unassigned Task** node. The [queryTaskbarInfo](../gantt/events#querytaskbarinfo) event customizes taskbar styles, and overallocation indicators highlight scheduling conflicts. Taskbars include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may truncate resource names. Parent tasks are not supported, and tasks require scheduling (start date and duration).
 
