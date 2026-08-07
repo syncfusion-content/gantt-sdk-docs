@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Context Menu in ASP.NET Core Gantt Component | Syncfusion
-description: Learn here all about Context Menu in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Context Menu in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to implement and customize context menus in Syncfusion ASP.NET Core Gantt Chart for quick actions and seamless user interactions.
+keywords: asp.net core gantt context menu, right-click menu, custom context menu, quick actions, gantt menu items, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/context-menu
 platform: gantt-sdk
-control: Context Menu
-publishingplatform: gantt-sdk
+control: Context Menu - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Context menu in ASP.NET Core Gantt component
+# Context Menu Customization in ASP.NET Core Gantt Chart
 
 The Gantt control allows you to perform quick actions by using context menu. When right-clicking the context menu, the context menu options are shown. To enable this feature, set the `enableContextMenu` to true. The default context menu options are enabled using the `editSettings` property. The context menu options can be customized using the `contextMenuItems` property.
 

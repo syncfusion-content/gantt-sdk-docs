@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Pdf Export in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Pdf Export in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: PDF Export in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to export Gantt chart data to PDF in Syncfusion ASP.NET Core Gantt Chart with formatting, styling, and export customization options.
+keywords: asp.net core gantt pdf export, export gantt, export to pdf, pdf formatting, pdf customization, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/pdf-export/pdf-export
 platform: gantt-sdk
-control: Pdf Export
-publishingplatform: gantt-sdk
+control: PDF Export - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Export
+# Exporting Data to PDF Format in ASP.NET Core Gantt Chart
 
 ## PDF Export
 

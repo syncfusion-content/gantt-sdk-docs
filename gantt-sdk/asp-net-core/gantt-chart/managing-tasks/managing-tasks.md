@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Managing Tasks in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Managing Tasks in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Managing Tasks in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to manage tasks in Syncfusion ASP.NET Core Gantt Chart including adding, editing, deleting, and organizing project tasks.
+keywords: asp.net core gantt managing tasks, task management, edit tasks, delete tasks, add tasks, organize tasks, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managing-tasks/managing-tasks
 platform: gantt-sdk
-control: Managing Tasks
-publishingplatform: gantt-sdk
+control: Managing Tasks - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Managing Tasks in ASP.NET Core Gantt Component
+# Overview of Task Management Features in ASP.NET Core Gantt Chart
 
 The Gantt component has options to dynamically insert, delete, and update tasks in the project. The primary key column is necessary to manage the tasks and perform CRUD operations in Gantt. To define the primary key, set the [`Columns.IsPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_IsPrimaryKey) property to `true` in the particular column.
 

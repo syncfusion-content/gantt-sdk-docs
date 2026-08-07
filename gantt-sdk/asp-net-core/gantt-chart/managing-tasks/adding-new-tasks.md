@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Adding new tasks in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Adding new tasks in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Adding New Tasks in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to add new tasks in Syncfusion ASP.NET Core Gantt Chart using add dialog, inline editing, and programmatic methods.
+keywords: asp.net core gantt add tasks, new tasks, add task dialog, insert tasks, create tasks, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managing-tasks/adding-new-tasks
 platform: gantt-sdk
-control: Managing Tasks
-publishingplatform: gantt-sdk
+control: Managing Tasks - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Adding new tasks in gantt control
+# Adding New Tasks in ASP.NET Core Gantt Chart
 
 Tasks can be dynamically added to the Gantt project by enabling the [`EditSettings.AllowAdding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html#Syncfusion_EJ2_Gantt_GanttEditSettings_AllowAdding) property.
 

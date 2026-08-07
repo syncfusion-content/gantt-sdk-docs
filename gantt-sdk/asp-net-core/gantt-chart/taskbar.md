@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Taskbar in ASP.NET Core Syncfusion Gantt Component
-description: Learn here all about Taskbar in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Taskbar in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to customize and manage taskbars in Syncfusion ASP.NET Core Gantt Chart including taskbar templates, progress tracking, and drag-and-drop.
+keywords: asp.net core gantt taskbar, task bars, taskbar styling, progress bar, drag taskbar, taskbar customization, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/taskbar
 platform: gantt-sdk
-control: Taskbar
-publishingplatform: gantt-sdk
+control: Taskbar - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Taskbar in ASP.NET Core Gantt Chart Component
+# Taskbar Customization with Templates in ASP.NET Core Gantt Chart
 
 ## Taskbar template
 

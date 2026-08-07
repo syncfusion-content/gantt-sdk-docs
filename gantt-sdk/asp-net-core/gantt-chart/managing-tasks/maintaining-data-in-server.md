@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Maintaining data in server in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Maintaining data in server in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Maintaining Data in Server for ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to maintain and persist Gantt chart data in server in Syncfusion ASP.NET Core Gantt Chart for data consistency and reliability.
+keywords: asp.net core gantt server data, maintain data, data persistence, server persistence, data storage, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managing-tasks/maintaining-data-in-server
 platform: gantt-sdk
-control: Managing Tasks
-publishingplatform: gantt-sdk
+control: Managing Tasks - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Maintaining data in server
+# Maintaining Data Persistence on Server in ASP.NET Core Gantt Chart
 
 All the modified data in Gantt control can be maintained in the database using RESTful web services.
 
