@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Filtering in React Gantt Chart Component | Syncfusion
-description: Learn here all about filtering in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Filtering in React Gantt Chart | Syncfusion
+description: Learn how to configure filtering in Syncfusion React Gantt Chart with toolbar search, filter bar, and menu-based options to find tasks quickly.
+keywords: react gantt filtering, filter tasks, filter bar, toolbar filter, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/filtering/filtering
 platform: gantt-sdk
-control: Filtering 
+control: Filtering - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Filtering in React Gantt Chart Component
+# Filtering Tasks with Filter Bar and Toolbar in React Gantt Chart
 
 Filtering allows you to view specific or related records based on defined criteria. The Gantt Chart component supports options like filter menu, Excel-like filtering, and toolbar search to narrow down visible data.
 

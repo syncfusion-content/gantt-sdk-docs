@@ -1,14 +1,16 @@
 ---
 layout: post
 title: Feature Modules in React Gantt Chart | Syncfusion
-description: Learn how to inject feature modules in the React Gantt Chart component to enable advanced features and optimize bundle size.
+description: Learn how to inject feature modules in Syncfusion React Gantt Chart to enable advanced features like filtering, sorting, and PDF export.
+keywords: react gantt modules, inject services, feature modules, bundle optimization, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/module
 platform: gantt-sdk
-control: Module
+control: Feature Modules - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Feature Modules in React Gantt Chart Component
+# Feature Modules with Dependency Injection in React Gantt Chart
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) uses a modular architecture for bundle size optimization. Basic rendering requires no additional modules. Advanced features like sorting, editing, toolbar, and export require explicit module injection.
 

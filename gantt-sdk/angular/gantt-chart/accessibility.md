@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Accessibility in Angular Gantt Chart Component | Syncfusion
-description: Learn here all about accessibility in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Angular Gantt Chart Accessibility | WCAG & ARIA | Syncfusion
+description: Learn how to implement accessibility in Syncfusion Angular Gantt Chart with WCAG 2.2, ARIA labels, keyboard navigation, and Section 508 compliance support.
+keywords: angular gantt accessibility, wcag, aria, section 508, keyboard navigation, screen reader, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/accessibility
 platform: gantt-sdk
-control: Accessibility
+control: Accessibility - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Accessibility in Angular Gantt Chart Component
+# Accessibility and ARIA Compliance in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component is designed with comprehensive accessibility support, adhering to established guidelines and standards including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles). This ensures the component is usable by individuals with disabilities and meets legal accessibility requirements for enterprise applications.
 

@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Deleting tasks in React Gantt Chart Component | Syncfusion
-description: Learn how to delete tasks dynamically in the Syncfusion React Gantt Chart component using toolbar or programmatic methods for efficient project management.
+title: Deleting Tasks in React Gantt Chart | Syncfusion
+description: Learn how to delete tasks in Syncfusion React Gantt Chart using toolbar actions, context menu, or programmatic methods for efficient project management.
+keywords: react gantt deleting tasks, delete task, remove task, task deletion, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/managing-tasks/deleting-tasks
 platform: gantt-sdk
-control: Deleting tasks
+control: Deleting Tasks - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Deleting Tasks in React Gantt Chart Component
+# Removing Tasks Dynamically in React Gantt Chart
 
 Deleting tasks in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component streamlines project management by removing tasks, such as outdated milestones or subtasks, using the toolbar or programmatic methods. Enabled by setting the [editSettings.allowDeleting](https://ej2.syncfusion.com/react/documentation/api/gantt/editSettings#allowdeleting) property to **true** and injecting `Edit`, tasks can be deleted after selecting a row, ensuring seamless updates to dependencies and critical path calculations. A confirmation dialog, activated via [editSettings.showDeleteConfirmDialog](https://ej2.syncfusion.com/react/documentation/api/gantt/editSettings#showdeleteconfirmdialog), prompts to verify deletions, preventing accidental removals. The [deleteRow](https://ej2.syncfusion.com/react/documentation/api/gantt#deleterow) method allows programmatic deletion, requiring a selected row with valid `taskFields` mappings (e.g., id, name). Ensure tasks are selected and `taskFields` are properly configured to avoid issues during deletion.
 

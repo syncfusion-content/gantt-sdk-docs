@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Loading animation in React Gantt Chart component | Syncfusion
-description: Learn here all about Loading animation in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Loading animation 
+title: Loading Animation in React Gantt Chart | Syncfusion
+description: Learn how to configure loading animation in Syncfusion React Gantt Chart to display a spinner indicator while data is being fetched or processed.
+keywords: react gantt loading animation, spinner, shimmer effect, data loading, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/loading-animation
 platform: gantt-sdk
+control: Loading Animation - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Loading animation in React Gantt Chart component
+# Loading Indicators with Spinner and Shimmer in React Gantt Chart
 
 The loading indicator is used to display a visual indicator while the Gantt is fetching data or performing certain actions, such as sorting or filtering. The gantt support two indicator types, which is achieved by setting the [loadingIndicator.indicatorType](https://ej2.syncfusion.com/react/documentation/api/gantt#loadingindicator) property to Shimmer or Spinner. The default value of the indicator type is "Spinner."
 

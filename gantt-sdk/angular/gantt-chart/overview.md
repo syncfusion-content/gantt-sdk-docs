@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Angular Gantt Chart Overview
-description: Feature catalog for Angular Gantt Chart - task management, timeline visualization, resource allocation, and project scheduling.
+title: Angular Gantt Chart Overview - Features & Capabilities | Syncfusion
+description: Learn how to use Syncfusion Angular Gantt Chart features for task management, timeline visualization, resource allocation, and project scheduling in one guide.
+keywords: angular gantt chart overview, features, capabilities, task management, timeline, resource allocation, project scheduling
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/overview
 platform: gantt-sdk
-control: Gantt Overview
+control: Gantt Chart Overview
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
