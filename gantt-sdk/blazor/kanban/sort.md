@@ -1,13 +1,16 @@
 ---
 layout: post
-title: Sorting in Blazor Kanban Component | Syncfusion®
-description: Checkout and learn here all about sorting in Blazor Kanban component and much more details with practical examples and guides.
+title: Sorting in Blazor Kanban | Syncfusion
+description: Learn how to sort cards and columns in Syncfusion Blazor Kanban to organize work items by priority, date, or custom criteria.
+keywords: blazor kanban sorting, syncfusion kanban, card ordering, column sorting
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/kanban/sort
 platform: gantt-sdk
-control: Kanban
+control: Sorting - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# How to Sort Cards in the Blazor Kanban Component
+# Sorting Cards and Columns by Priority in Blazor Kanban
 
 The [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban-board) provides built-in support to arrange the cards in their columns based on the JSON data order and drop the cards in the columns based on the dropped clone.
 
