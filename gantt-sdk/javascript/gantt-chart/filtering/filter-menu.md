@@ -4,7 +4,6 @@ title: Filter Menu in JavaScript Gantt Chart Control | Syncfusion
 description: Learn here all about filter menu in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Filter menu
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -124,13 +123,13 @@ To customize the default input components in the filter menu dialog, use the `pa
 
 You can refer to the table below for supported column types, their default components, customization examples, and API references:
 
-| Column Type | Default control                                        | Customization                            | API Reference                                                                                               |
-| ----------- | ------------------------------------------------------ | ---------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| String      | [AutoComplete](https://ej2.syncfusion.com/javascript/documentation/auto-complete/getting-started)    | Eg: { params: { autofill: false }}       | [AutoComplete API](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/autoCompleteModel) |
-| Number      | [NumericTextBox](https://ej2.syncfusion.com/javascript/documentation/numerictextbox/getting-started) | Eg: { params: { showSpinButton: false }} | [NumericTextBox API](https://ej2.syncfusion.com/javascript/documentation/api/numerictextbox)                |
-| Boolean     | [DropDownList](https://ej2.syncfusion.com/javascript/documentation/drop-down-list/getting-started)   | Eg: { params: { sortOrder:'Ascending'}}  | [DropDownList API](https://ej2.syncfusion.com/javascript/documentation/api/drop-down-list)                  |
-| Date        | [DatePicker](https://ej2.syncfusion.com/javascript/documentation/datepicker/getting-started)         | Eg: { params: { weekNumber: true }}      | [DatePicker API](https://ej2.syncfusion.com/javascript/documentation/api/datepicker)                        |
-| DateTime    | [DateTimePicker](https://ej2.syncfusion.com/javascript/documentation/datetimepicker/getting-started) | Eg: { params: { showClearButton: true }} | [DateTimePicker API](https://ej2.syncfusion.com/javascript/documentation/api/datetimepicker)                |
+| Column Type | Default control                                                                                          | Customization                            | API Reference                                                                                               |
+| ----------- | -------------------------------------------------------------------------------------------------------- | ---------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| String      | [AutoComplete](https://ej2.syncfusion.com/javascript/documentation/auto-complete/es5-getting-started)    | Eg: { params: { autofill: false }}       | [AutoComplete API](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/autoCompleteModel) |
+| Number      | [NumericTextBox](https://ej2.syncfusion.com/javascript/documentation/numerictextbox/getting-started)     | Eg: { params: { showSpinButton: false }} | [NumericTextBox API](https://ej2.syncfusion.com/javascript/documentation/api/numerictextbox)                |
+| Boolean     | [DropDownList](https://ej2.syncfusion.com/javascript/documentation/drop-down-list/getting-started)       | Eg: { params: { sortOrder:'Ascending'}}  | [DropDownList API](https://ej2.syncfusion.com/javascript/documentation/api/drop-down-list)                  |
+| Date        | [DatePicker](https://ej2.syncfusion.com/javascript/documentation/datepicker/es5-getting-started)         | Eg: { params: { weekNumber: true }}      | [DatePicker API](https://ej2.syncfusion.com/javascript/documentation/api/datepicker)                        |
+| DateTime    | [DateTimePicker](https://ej2.syncfusion.com/javascript/documentation/datetimepicker/es5-getting-started) | Eg: { params: { showClearButton: true }} | [DateTimePicker API](https://ej2.syncfusion.com/javascript/documentation/api/datetimepicker)                |
 
 The following sample demonstrates how to disable the autofill feature by setting the `autofill` property to **false** for the **TaskName** column, and how to disable the spin button by setting `showSpinButton` to **false** for the **TaskID** column.
 

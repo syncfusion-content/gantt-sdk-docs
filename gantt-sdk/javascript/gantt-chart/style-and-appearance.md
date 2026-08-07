@@ -4,7 +4,6 @@ title: Style and Appearance in JavaScript Gantt Chart | Syncfusion
 description: Learn how to customize the style and appearance of the Syncfusion JavaScript Gantt Chart control with CSS overrides and grid line configurations.
 platform: gantt-sdk
 control: Style and appearance
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

@@ -4,7 +4,6 @@ title: Indent and Outdent in JavaScript Gantt Chart Control | Syncfusion
 description: Learn how to use indent and outdent features in the Syncfusion JavaScript Gantt Chart control to manage task hierarchy effectively.
 platform: gantt-sdk
 control: Indent and Outdent
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

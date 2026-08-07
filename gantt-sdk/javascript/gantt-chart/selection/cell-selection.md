@@ -4,7 +4,6 @@ title: JavaScript Gantt Chart Cell Selection API | Syncfusion
 description: Explore cell selection in Syncfusion JavaScript Gantt Chart, including single, multiple, external selection, and customization via API methods and events.
 platform: gantt-sdk
 control: Cell selection
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

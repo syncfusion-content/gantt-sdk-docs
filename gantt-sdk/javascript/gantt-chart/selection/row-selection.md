@@ -4,7 +4,6 @@ title: JavaScript Gantt Row Selection API Guide | Syncfusion
 description: Explore how to configure and customize row selection in the Syncfusion JavaScript Gantt Chart control using API methods and events.
 platform: gantt-sdk
 control: Row selection
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

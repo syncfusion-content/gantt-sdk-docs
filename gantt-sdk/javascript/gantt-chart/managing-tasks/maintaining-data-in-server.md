@@ -3,8 +3,7 @@ layout: post
 title: Maintaining data in server in JavaScript Gantt control | Syncfusion
 description: Learn here all about Maintaining data in server in Syncfusion JavaScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Maintaining data in server 
-publishingplatform: gantt-sdk
+control: Maintaining data in server
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -26,31 +25,29 @@ In Gantt, we can fetch data from SQL database using `ADO.NET` Entity Data Model 
 We can define data source for Gantt as instance of DataManager using `url` property of DataManager. Please Check the below code snippet to assign data source to Gantt.
 
 ```ts
-
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
+import { Gantt } from "@syncfusion/ej2-gantt";
+import { DataManager, UrlAdaptor } from "@syncfusion/ej2-data";
 
 let dataSource: DataManager = new DataManager({
-    url: '/Home/UrlDatasource',
-    adaptor: new UrlAdaptor
+  url: "/Home/UrlDatasource",
+  adaptor: new UrlAdaptor(),
 });
 
 let gantt: Gantt = new Gantt({
-    dataSource: dataSource,
-    height: '450px',
-    treeColumnIndex: 1,
-    taskFields: {
-        id: 'TaskId',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        progress: 'Progress',
-        duration: 'Duration',
-        dependency: 'Predecessor',
-        child: 'SubTasks'
-    }
+  dataSource: dataSource,
+  height: "450px",
+  treeColumnIndex: 1,
+  taskFields: {
+    id: "TaskId",
+    name: "TaskName",
+    startDate: "StartDate",
+    progress: "Progress",
+    duration: "Duration",
+    dependency: "Predecessor",
+    child: "SubTasks",
+  },
 });
-gantt.appendTo('#Gantt');
-
+gantt.appendTo("#Gantt");
 ```
 
 ```ts
@@ -67,32 +64,30 @@ public ActionResult UrlDatasource(DataManagerRequest dm)
 We can also do CRUD operations over Gantt data and save the changes to database. By using `BatchUrl` property of DataManager, we can communicate with the controller method to update the data source on CRUD operation. In gantt CRUD actions on task are dependent with other tasks. For example on editing the child record on chart side, corresponding parent item also will get affect and predecessor dependency task as well get affected. So in Gantt all the CRUD operations are considered to be batch editing where you will get all the affected records as collection. Please check the below code snippet to assign controller method to this property.
 
 ```ts
-
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
+import { Gantt } from "@syncfusion/ej2-gantt";
+import { DataManager, UrlAdaptor } from "@syncfusion/ej2-data";
 
 let dataSource: DataManager = new DataManager({
-    url: '/Home/UrlDatasource',
-    adaptor: new UrlAdaptor,
-    batchUrl: "Home/BatchSave"
+  url: "/Home/UrlDatasource",
+  adaptor: new UrlAdaptor(),
+  batchUrl: "Home/BatchSave",
 });
 
 let gantt: Gantt = new Gantt({
-    dataSource: dataSource,
-    height: '450px',
-    treeColumnIndex: 1,
-    taskFields: {
-        id: 'TaskId',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        progress: 'Progress',
-        duration: 'Duration',
-        dependency: 'Predecessor',
-        child: 'SubTasks'
-    }
+  dataSource: dataSource,
+  height: "450px",
+  treeColumnIndex: 1,
+  taskFields: {
+    id: "TaskId",
+    name: "TaskName",
+    startDate: "StartDate",
+    progress: "Progress",
+    duration: "Duration",
+    dependency: "Predecessor",
+    child: "SubTasks",
+  },
 });
-gantt.appendTo('#Gantt');
-
+gantt.appendTo("#Gantt");
 ```
 
 ```ts

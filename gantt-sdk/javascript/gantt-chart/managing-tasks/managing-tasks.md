@@ -4,7 +4,6 @@ title: Managing Tasks in JavaScript Gantt Chart Control | Syncfusion
 description: Learn here all about Managing tasks in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Managing tasks
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

@@ -4,7 +4,6 @@ title: In dent and out dent in JavaScript Gantt control | Syncfusion
 description: Learn here all about In dent and out dent in Syncfusion JavaScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: In dent and out dent
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

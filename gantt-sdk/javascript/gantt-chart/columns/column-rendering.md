@@ -4,7 +4,6 @@ title: Reorder Columns in JavaScript Gantt Chart Control | Syncfusion
 description: Learn how to reorder columns in the Syncfusion JavaScript Gantt Chart control using drag-and-drop or code, and how to restrict reordering for specific columns.
 platform: gantt-sdk
 control: Column reorder
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

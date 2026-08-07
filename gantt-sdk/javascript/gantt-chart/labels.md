@@ -4,7 +4,6 @@ title: Task Labels in JavaScript Gantt Chart Control | Syncfusion
 description: Learn how to configure taskbar labels in the Syncfusion JavaScript Gantt Chart control for enhanced data visualization and project management.
 platform: gantt-sdk
 control: Task labels
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

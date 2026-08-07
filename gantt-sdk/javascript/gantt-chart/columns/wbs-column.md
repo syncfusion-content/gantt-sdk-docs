@@ -4,7 +4,6 @@ title: Work Breakdown Structure (WBS) in JavaScript Gantt | Syncfusion
 description: Learn how to integrate and manage WBS codes in the Syncfusion JavaScript Gantt Chart control to improve task hierarchy visualization and project tracking.
 platform: gantt-sdk
 control: WBS Column
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

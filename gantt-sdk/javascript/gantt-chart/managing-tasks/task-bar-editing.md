@@ -4,7 +4,6 @@ title: Task bar editing in JavaScript Gantt Chart Control | Syncfusion
 description: Learn how to edit tasks via taskbar interactions in the Syncfusion JavaScript Gantt Chart control for intuitive project timeline adjustments.
 platform: gantt-sdk
 control: Task bar editing
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -77,6 +76,6 @@ Prevent taskbar editing for specific tasks using the [taskbarEditing](https://ej
 
 ## See also
 
-- [How to configure task editing?](https://ej2.syncfusion.com/javascript/documentation/gantt/editing-tasks)
+- [How to configure task editing?](https://ej2.syncfusion.com/javascript/documentation/gantt/managing-tasks/editing-tasks)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/javascript/documentation/gantt/task-dependency)
 - [How to configure critical path?](https://ej2.syncfusion.com/javascript/documentation/gantt/critical-path)

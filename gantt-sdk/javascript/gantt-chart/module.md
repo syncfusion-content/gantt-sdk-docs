@@ -4,7 +4,6 @@ title: Module in JavaScript Gantt control | Syncfusion
 description: Learn here all about Module in Syncfusion JavaScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Module
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -22,7 +21,7 @@ The modules that are available in Gantt are as follows.
 | [PdfExport](https://ej2.syncfusion.com/documentation/api/gantt#pdfexportmodule)          | Inject this module to use PDF export feature.        |
 | [RowDD](https://ej2.syncfusion.com/javascript/documentation/api/gantt/rowDD)             | Inject this module to use row drag and drop feature. |
 | `Resize`                                                                                 | Inject this module to use resize feature.            |
-| [Toolbar](https://ej2.syncfusion.com/javascript/documentation/api/gantt#toolbar)                                                          | Inject this module to use toolbar feature.           |
+| [Toolbar](https://ej2.syncfusion.com/javascript/documentation/api/gantt#toolbar)         | Inject this module to use toolbar feature.           |
 | [Edit](https://ej2.syncfusion.com/javascript/documentation/api/gantt/edit)               | Inject this module is use editing feature.           |
 | [Selection](https://ej2.syncfusion.com/javascript/documentation/api/gantt/selection)     | Inject this module to use selection feature.         |
 | [DayMarkers](https://ej2.syncfusion.com/javascript/documentation/api/gantt/dayMarkers)   | Inject this module to use event markers.             |

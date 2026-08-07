@@ -4,7 +4,6 @@ title: Validation in JavaScript Gantt Chart Control | Syncfusion
 description: Learn how to validate task data in the Syncfusion JavaScript Gantt Chart using column, custom, dependency, and resource validation rules.
 platform: gantt-sdk
 control: Validating Tasks
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

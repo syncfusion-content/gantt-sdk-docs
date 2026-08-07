@@ -4,7 +4,6 @@ title: Change schedule date in JavaScript Gantt control | Syncfusion
 description: Learn how to update project schedule dates programmatically in the Syncfusion JavaScript Gantt Chart to efficiently adjust timelines and task schedules.
 platform: gantt-sdk
 control: Schedule dates
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

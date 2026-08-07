@@ -4,7 +4,6 @@ title: Holidays in JavaScript Gantt Control | Syncfusion
 description: Learn here all about Holidays in Syncfusion JavaScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Holidays
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

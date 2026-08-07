@@ -4,7 +4,6 @@ title: PDF Export in JavaScript Gantt Chart Control | Syncfusion
 description: Learn how to export Gantt to PDF in Syncfusion JavaScript Gantt Chart control with indicators, blob objects, single-page, and theme options.
 platform: gantt-sdk
 control: Pdf export
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

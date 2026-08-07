@@ -4,7 +4,6 @@ title: Configure Custom Fields in JavaScript Gantt Chart | Syncfusion
 description: Learn how to configure custom fields in the Syncfusion JavaScript  Gantt Chart control's add/edit dialogs for enhanced task data management.
 platform: gantt-sdk
 control: Custom fields
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

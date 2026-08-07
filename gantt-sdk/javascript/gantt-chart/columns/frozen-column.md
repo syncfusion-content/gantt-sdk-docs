@@ -4,7 +4,6 @@ title: Column Pinning (Frozen) in JavaScript Gantt Chart Control | Syncfusion
 description: Learn here all about Column pinning (Frozen) in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Column pinning (Frozen)
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

@@ -4,7 +4,6 @@ title: Resources in JavaScript Gantt Chart Control | Syncfusion
 description: Learn how to configure resources in the Syncfusion JavaScript Gantt Chart control for task allocation and utilization visualization.
 platform: gantt-sdk
 control: Resources
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

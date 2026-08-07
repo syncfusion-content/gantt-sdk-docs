@@ -4,7 +4,6 @@ title: Resource View in JavaScript Gantt Chart Control | Syncfusion
 description: Learn how to configure resource view in the Syncfusion JavaScript Gantt Chart control for hierarchical task visualization and resource allocation.
 platform: gantt-sdk
 control: Resource view
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

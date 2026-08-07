@@ -3,8 +3,7 @@ layout: post
 title: Loading animation in JavaScript Gantt control | Syncfusion
 description: Learn here all about Loading animation in Syncfusion JavaScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Loading animation 
-publishingplatform: gantt-sdk
+control: Loading animation
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -25,7 +24,7 @@ In the following sample, the Shimmer indicator is displayed while the gantt is s
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/loading-animation-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/loading-animation-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}

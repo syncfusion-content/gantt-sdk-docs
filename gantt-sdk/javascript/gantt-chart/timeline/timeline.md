@@ -4,7 +4,6 @@ title: Timeline in JavaScript Gantt Chart control | Syncfusion
 description: Learn how to configure timelines in the Syncfusion JavaScript Gantt Chart control with view modes, zooming, weekend highlighting, and templates.
 platform: gantt-sdk
 control: Timeline
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

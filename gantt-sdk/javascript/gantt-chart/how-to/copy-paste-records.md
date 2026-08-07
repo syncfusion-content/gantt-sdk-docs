@@ -4,7 +4,6 @@ title: Copy and Paste Records in JavaScript Gantt Control | Syncfusion
 description: Learn how to programmatically copy and paste records in the Syncfusion JavaScript Gantt Chart control using context menus for efficient task duplication.
 platform: gantt-sdk
 control: Copy paste records
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

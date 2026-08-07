@@ -4,7 +4,6 @@ title: Tree Column in JavaScript Gantt Chart Control | Syncfusion
 description: Learn here all about Tree Column in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Tree column
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

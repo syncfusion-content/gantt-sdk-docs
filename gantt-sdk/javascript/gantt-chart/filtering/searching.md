@@ -4,7 +4,6 @@ title: Searching in JavaScript Gantt control | Syncfusion
 description: Learn here all about Searching in Syncfusion JavaScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Searching
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

@@ -4,7 +4,6 @@ title: Scheduling Tasks in JavaScript Gantt Chart Control | Syncfusion
 description: Learn here all about scheduling tasks in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Scheduling Tasks
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

@@ -4,7 +4,6 @@ title: PDF Headers and Footers in JavaScript Gantt Chart | Syncfusion
 description: Learn how to customize headers and footers in PDF exports of the Syncfusion JavaScript Gantt Chart control with text, lines, page numbers, and images.
 platform: gantt-sdk
 control: Header and Footer of PDF export
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -21,40 +20,38 @@ Customize text in headers or footers using the [header](https://ej2.syncfusion.c
 
 ```ts
 let exportProperties: PdfExportProperties = {
-    header: {
-        fromTop: 0,
-        height: 130,
-        contents: [
-            {
-                type: 'Text',
-                value: 'INVOICE',
-                position: { x: 380, y: 0 },
-                style: { textBrushColor: '#C25050', fontSize: 25 },
-            },
-
-        ]
-    }
-}
+  header: {
+    fromTop: 0,
+    height: 130,
+    contents: [
+      {
+        type: "Text",
+        value: "INVOICE",
+        position: { x: 380, y: 0 },
+        style: { textBrushColor: "#C25050", fontSize: 25 },
+      },
+    ],
+  },
+};
 ```
 
 {% elsif page.publishingplatform == "javascript" %}
 
 ```js
 let exportProperties = {
-    header: {
-        fromTop: 0,
-        height: 130,
-        contents: [
-            {
-                type: 'Text',
-                value: 'INVOICE',
-                position: { x: 380, y: 0 },
-                style: { textBrushColor: '#C25050', fontSize: 25 },
-            },
-
-        ]
-    }
-}
+  header: {
+    fromTop: 0,
+    height: 130,
+    contents: [
+      {
+        type: "Text",
+        value: "INVOICE",
+        position: { x: 380, y: 0 },
+        style: { textBrushColor: "#C25050", fontSize: 25 },
+      },
+    ],
+  },
+};
 ```
 
 {% endif %}
@@ -67,36 +64,36 @@ Customize lines in headers or footers using the [header](https://ej2.syncfusion.
 
 ```ts
 let exportProperties: PdfExportProperties = {
-    header: {
-        fromTop: 0,
-        height: 130,
-        contents: [
-            {
-                type: 'Line',
-                style: { penColor: '#000080', penSize: 2, dashStyle: 'Solid' },
-                points: { x1: 0, y1: 4, x2: 685, y2: 4 }
-            }
-        ]
-    }
-}
+  header: {
+    fromTop: 0,
+    height: 130,
+    contents: [
+      {
+        type: "Line",
+        style: { penColor: "#000080", penSize: 2, dashStyle: "Solid" },
+        points: { x1: 0, y1: 4, x2: 685, y2: 4 },
+      },
+    ],
+  },
+};
 ```
 
 {% elsif page.publishingplatform == "javascript" %}
 
 ```js
 let exportProperties = {
-    header: {
-        fromTop: 0,
-        height: 130,
-        contents: [
-            {
-                type: 'Line',
-                style: { penColor: '#000080', penSize: 2, dashStyle: 'Solid' },
-                points: { x1: 0, y1: 4, x2: 685, y2: 4 }
-            }
-        ]
-    }
-}
+  header: {
+    fromTop: 0,
+    height: 130,
+    contents: [
+      {
+        type: "Line",
+        style: { penColor: "#000080", penSize: 2, dashStyle: "Solid" },
+        points: { x1: 0, y1: 4, x2: 685, y2: 4 },
+      },
+    ],
+  },
+};
 ```
 
 {% endif %}
@@ -109,40 +106,40 @@ Add page numbers to headers or footers using the [header](https://ej2.syncfusion
 
 ```ts
 let exportProperties: PdfExportProperties = {
-    footer: {
-        fromBottom: 0,
-        height: 20,
-        contents: [
-            {
-                type: 'PageNumber',
-                pageNumberType: 'Arabic',
-                format: 'Page {$current} of {$total}',
-                position: { x: 0, y: 0 },
-                style: { textBrushColor: '#ffff80', fontSize: 15, hAlign: 'Center' }
-            }
-        ]
-    }
-}
+  footer: {
+    fromBottom: 0,
+    height: 20,
+    contents: [
+      {
+        type: "PageNumber",
+        pageNumberType: "Arabic",
+        format: "Page {$current} of {$total}",
+        position: { x: 0, y: 0 },
+        style: { textBrushColor: "#ffff80", fontSize: 15, hAlign: "Center" },
+      },
+    ],
+  },
+};
 ```
 
 {% elsif page.publishingplatform == "javascript" %}
 
 ```js
 let exportProperties = {
-    footer: {
-        fromBottom: 0,
-        height: 20,
-        contents: [
-            {
-                type: 'PageNumber',
-                pageNumberType: 'Arabic',
-                format: 'Page {$current} of {$total}',
-                position: { x: 0, y: 0 },
-                style: { textBrushColor: '#ffff80', fontSize: 15, hAlign: 'Center' }
-            }
-        ]
-    }
-}
+  footer: {
+    fromBottom: 0,
+    height: 20,
+    contents: [
+      {
+        type: "PageNumber",
+        pageNumberType: "Arabic",
+        format: "Page {$current} of {$total}",
+        position: { x: 0, y: 0 },
+        style: { textBrushColor: "#ffff80", fontSize: 15, hAlign: "Center" },
+      },
+    ],
+  },
+};
 ```
 
 {% endif %}
@@ -157,44 +154,44 @@ Note: PDF Export supports base64 string to export the images.
 
 ```ts
 // Replace it with a valid Base64-encoded image.
-let image: string = "/9j/4AAQSkZJRgABAQEAeAB4AAD..." 
+let image: string = "/9j/4AAQSkZJRgABAQEAeAB4AAD...";
 
 let exportProperties: PdfExportProperties = {
-    header: {
-        fromTop: 0,
-        height: 130,
-        contents: [
-            {
-                type: 'Image',
-                src: image,
-                position: { x: 40, y: 10 },
-                size: { height: 100, width: 250 },
-            }
-        ]
-    }
-}
+  header: {
+    fromTop: 0,
+    height: 130,
+    contents: [
+      {
+        type: "Image",
+        src: image,
+        position: { x: 40, y: 10 },
+        size: { height: 100, width: 250 },
+      },
+    ],
+  },
+};
 ```
 
 {% elsif page.publishingplatform == "javascript" %}
 
 ```js
 // Replace it with a valid Base64-encoded image.
-let image = "/9j/4AAQSkZJRgABAQEAeAB4AAD..." 
+let image = "/9j/4AAQSkZJRgABAQEAeAB4AAD...";
 
 let exportProperties = {
-    header: {
-        fromTop: 0,
-        height: 130,
-        contents: [
-            {
-                type: 'Image',
-                src: image,
-                position: { x: 40, y: 10 },
-                size: { height: 100, width: 250 },
-            }
-        ]
-    }
-}
+  header: {
+    fromTop: 0,
+    height: 130,
+    contents: [
+      {
+        type: "Image",
+        src: image,
+        position: { x: 40, y: 10 },
+        size: { height: 100, width: 250 },
+      },
+    ],
+  },
+};
 ```
 
 {% endif %}
@@ -228,9 +225,9 @@ The below code illustrates the pdf export customization.
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-customization-cs1" %}
 {% endif %}
 
-## Disable footer 
+## Disable footer
 
-By default, the exported PDF file includes a footer. The footer can be disabled by setting the [enableFooter](https://ej2.syncfusion.com/javascript/documentation/api/gantt/pdfexportproperties#enablefooter) property to **false**. 
+By default, the exported PDF file includes a footer. The footer can be disabled by setting the [enableFooter](https://ej2.syncfusion.com/javascript/documentation/api/gantt/pdfexportproperties#enablefooter) property to **false**.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -293,6 +290,7 @@ The following example demonstrates how to export the Gantt Chart along with exte
 {% endif %}
 
 ## See also
+
 - [How to export to PDF?](https://ej2.syncfusion.com/javascript/documentation/gantt/pdf-export/pdf-export)
 - [How to customize PDF export?](https://ej2.syncfusion.com/javascript/documentation/gantt/pdf-export/customize-pdf-export)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/javascript/documentation/gantt/task-dependency)

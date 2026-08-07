@@ -4,7 +4,6 @@ title: Open Add and Edit Dialogs in JavaScript Gantt Control | Syncfusion
 description: Learn how to open add and edit dialogs programmatically in the Syncfusion JavaScript Gantt Chart control for efficient task creation and modification.
 platform: gantt-sdk
 control: Open add edit dialog
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

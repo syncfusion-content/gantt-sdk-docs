@@ -4,7 +4,6 @@ title: Data Binding in JavaScript Gantt Chart Control | Syncfusion
 description: Learn here all about data binding in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Data binding
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

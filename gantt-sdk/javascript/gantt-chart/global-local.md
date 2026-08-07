@@ -4,7 +4,6 @@ title: Localization in JavaScript Gantt Chart | Syncfusion
 description: Learn here all about globalization and localization in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Globalization and Localization
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -103,7 +102,7 @@ The following tables organize all available locale keys by functional category:
 | --------------------------- | ---------------------------------- |
 | InvalidFilterMessage        | Invalid Filter Data                |
 | FilterbarTitle              | \s filter bar cell                 |
-| Matches                      | No Matches Found                   |
+| Matches                     | No Matches Found                   |
 | FilterButton                | Filter                             |
 | ClearButton                 | Clear                              |
 | StartsWith                  | Starts With                        |

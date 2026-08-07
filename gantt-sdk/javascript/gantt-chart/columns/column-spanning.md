@@ -4,7 +4,6 @@ title: How to Span Columns in JavaScript Gantt Chart Control | Syncfusion
 description: Learn how to span columns in the Syncfusion JavaScript Gantt Chart control using the queryCellInfo event, customize borders, and understand limitations.
 platform: gantt-sdk
 control: Column spanning
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

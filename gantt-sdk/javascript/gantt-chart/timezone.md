@@ -4,7 +4,6 @@ title: Timezone in JavaScript Gantt Chart Control | Syncfusion
 description: Learn how to configure timezones in the Syncfusion Gantt Chart to ensure consistent task scheduling, CRUD actions, and global collaboration.
 platform: gantt-sdk
 control: Timezone
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

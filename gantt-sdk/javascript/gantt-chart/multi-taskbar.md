@@ -4,7 +4,6 @@ title: Resource Multi Taskbar in JavaScript Gantt Chart Control | Syncfusion
 description: Learn how to configure the resource multi taskbar in the Syncfusion JavaScript Gantt Chart control to visualize multiple tasks per resource in resource view.
 platform: gantt-sdk
 control: Resource Multi Taskbar
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

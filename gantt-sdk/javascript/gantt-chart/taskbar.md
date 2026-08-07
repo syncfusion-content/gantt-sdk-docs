@@ -4,7 +4,6 @@ title: Taskbar in JavaScript Gantt Chart Control | Syncfusion
 description: Learn how to customize taskbars in the Syncfusion JavaScript Gantt Chart control, including height, templates, and editing interactions.
 platform: gantt-sdk
 control: Taskbar
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

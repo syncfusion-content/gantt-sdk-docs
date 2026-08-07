@@ -3,8 +3,7 @@ layout: post
 title: Toolbar in JavaScript Gantt Chart Control | Syncfusion
 description: Learn here all about toolbar in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Toolbar 
-publishingplatform: gantt-sdk
+control: Toolbar
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -44,7 +43,7 @@ The following table shows built-in toolbar items and its actions.
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -61,7 +60,7 @@ The following table shows built-in toolbar items and its actions.
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-cs1" %}
 {% endif %}
 
-> * The [toolbar](https://ej2.syncfusion.com/javascript/documentation/api/gantt#toolbar) has options to define both built-in and custom toolbar items.
+> - The [toolbar](https://ej2.syncfusion.com/javascript/documentation/api/gantt#toolbar) has options to define both built-in and custom toolbar items.
 
 ### Customize the built-in toolbar items
 
@@ -77,7 +76,7 @@ You can modify built-in toolbar actions using the [toolbarClick](https://ej2.syn
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-custom-action/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-custom-action" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -99,9 +98,9 @@ You can modify built-in toolbar actions using the [toolbarClick](https://ej2.syn
 To show only icons in the built-in toolbar items, apply custom CSS to hide the text labels. Use the following style:
 
 ```css
-.e-gantt .e-toolbar .e-tbar-btn-text, 
+.e-gantt .e-toolbar .e-tbar-btn-text,
 .e-gantt .e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn-text {
-  display: none;   
+  display: none;
 }
 ```
 
@@ -115,7 +114,7 @@ To show only icons in the built-in toolbar items, apply custom CSS to hide the t
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -139,7 +138,7 @@ You can customize the appearance of toolbar buttons in the Gantt Chart control u
 ```css
 .e-gantt .e-toolbar .e-tbar-btn .e-icons,
 .e-gantt .e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn {
-  background: #add8e6;   
+  background: #add8e6;
 }
 ```
 
@@ -153,7 +152,7 @@ You can customize the appearance of toolbar buttons in the Gantt Chart control u
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-button/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-button" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -184,7 +183,7 @@ To reposition the toolbar to the bottom of the Gantt chart, use the [created](ht
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-position/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-position" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -217,7 +216,7 @@ By default, custom toolbar items are aligned to the left. However, you can chang
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/custom-toolbar/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/custom-toolbar" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -234,7 +233,7 @@ By default, custom toolbar items are aligned to the left. However, you can chang
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/custom-toolbar" %}
 {% endif %}
 
-> * If a toolbar item does not match the built-in items, it will be treated as a custom toolbar item.
+> - If a toolbar item does not match the built-in items, it will be treated as a custom toolbar item.
 
 ## Built-in and custom items in toolbar
 
@@ -250,7 +249,7 @@ The Gantt control supports using both built-in and custom toolbar items simultan
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/toolbar-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -281,7 +280,7 @@ You can control toolbar items dynamically using the [enableItems](https://ej2.sy
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/enable-disabletoolbarItems-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/enable-disabletoolbarItems-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -314,7 +313,7 @@ The following example demonstrates how to integrate an [AutoComplete](https://ej
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/customToolbarItems-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/customToolbarItems-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}

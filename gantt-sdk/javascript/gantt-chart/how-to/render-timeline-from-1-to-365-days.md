@@ -4,7 +4,6 @@ title: Timeline From 1 to 365 days in JavaScript Gantt | Syncfusion
 description: Learn here all about Render timeline from 1 to 365 days in Syncfusion JavaScript Gantt control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Render timeline from 1 to 365 days
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

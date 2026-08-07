@@ -4,7 +4,6 @@ title: Immutable Mode in JavaScript Gantt Chart Control | Syncfusion
 description: Learn how to enable immutable mode in the Syncfusion JavaScript Gantt Chart control for optimized task rendering and performance with large datasets.
 platform: gantt-sdk
 control: Immutable
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -64,5 +63,5 @@ For small datasets, standard rendering may suffice. For dynamic column operation
 ## See also
 
 - [How to manage task dependencies?](https://ej2.syncfusion.com/javascript/documentation/gantt/task-dependency)
-- [How to enable virtual scrolling?](https://ej2.syncfusion.com/javascript/documentation/gantt/scrolling/virtual-scrolling)
+- [How to enable virtual scrolling?](https://ej2.syncfusion.com/javascript/documentation/gantt/scrolling/virtual-scroll)
 - [How to configure critical path?](https://ej2.syncfusion.com/javascript/documentation/gantt/critical-path)
