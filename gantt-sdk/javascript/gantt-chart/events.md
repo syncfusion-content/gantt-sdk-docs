@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Events in JavaScript Gantt control | Syncfusion
-description: Learn here all about Events in Syncfusion JavaScript Gantt control of Syncfusion Essential JS 2 and more.
+title: Events in JavaScript Gantt Chart | Syncfusion
+description: Learn to handle events in Syncfusion JavaScript Gantt Chart for task creation, editing, deletion, and custom business logic in project management workflows.
+keywords: javascript gantt events, event handling, task events, editing events, action complete, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/events
 platform: gantt-sdk
-control: Events 
-publishingplatform: gantt-sdk
+control: Events - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Events in JavaScript Gantt Component
+# Events and Custom Actions in JavaScript Gantt Chart
 
 The [JavaScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) component offers comprehensive support for visualizing project schedules, task management, and timeline tracking through interactive charts. This documentation provides insights into leveraging the component's rich event-driven architecture to customize and control Gantt operations effectively. Events in the Gantt Chart enable you to execute custom logic and integrations, offering flexibility for both simple and complex scenarios.
 
