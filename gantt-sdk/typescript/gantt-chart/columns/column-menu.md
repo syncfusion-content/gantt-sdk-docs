@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Enabling Column Menu in TypeScript Gantt Chart
+# Column Menu with Sort and Filter in TypeScript Gantt Chart
 
 The column menu in the TypeScript Gantt Chart control offers built-in actions including sorting, filtering, column chooser, and autofit. When you click the column menu icon, a menu appears with these features.
 

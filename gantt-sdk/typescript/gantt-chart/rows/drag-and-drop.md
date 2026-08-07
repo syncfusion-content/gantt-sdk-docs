@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Row Drag and Drop in TypeScript Gantt Chart
+# Enabling Drag and Drop for Rows in TypeScript Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Gantt Chart control includes built-in support for row drag and drop, enabling rows to be rearranged within the Gantt Chart or dropped into custom components. 
 

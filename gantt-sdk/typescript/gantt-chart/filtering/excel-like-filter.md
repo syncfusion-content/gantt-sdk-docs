@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Excel-like Filtering in TypeScript Gantt Chart
+# Using Excel-Like Filtering Interface in TypeScript Gantt Chart
 
 The Excel-like filter in Gantt Chart control enables column-level filtering similar to Microsoft Excel. It supports sorting, clearing filters, and applying advanced conditions through a submenu available in each column header. This feature is highly effective for working with large datasets and applying multiple filter criteria.
 

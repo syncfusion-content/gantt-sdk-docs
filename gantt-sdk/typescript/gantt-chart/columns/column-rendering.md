@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Configuring Column Types and Display Behavior in TypeScript Gantt Chart
+# Column Rendering with Data Binding in TypeScript Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Gantt Chart control supports column rendering to control data presentation. Column definitions act as the data schema and support operations such as sorting and filtering. The [field](../../api/gantt/column#field) property is required to map data source values to columns and must be defined for features like complex binding and template-based actions.
 

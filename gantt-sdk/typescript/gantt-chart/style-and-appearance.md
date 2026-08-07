@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Style and Appearance with CSS and Themes in TypeScript Gantt Chart
+# Style and Appearance with CSS and Theme Support in TypeScript Gantt Chart
 
 The [TypeScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control's appearance is customized by overriding default CSS styles to align with application designs, using classes for taskbars, milestones, and grid elements. The [queryTaskbarInfo](../../gantt/events#querytaskbarinfo) event modifies taskbar styles dynamically, while grid lines are configured with [gridLines](../../api/gantt#gridlines) for horizontal, vertical, or both. Custom themes are created via [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=tailwind3). Styles include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may require adjustments for taskbar visibility.
 

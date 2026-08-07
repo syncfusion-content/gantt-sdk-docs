@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Panel Resizing with Splitter in TypeScript Gantt Chart
+# Splitter with Panel Resizing in TypeScript Gantt Chart
 
 The splitter in the [TypeScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control divides the TreeGrid pane and Chart pane, enabling flexible width allocation for project visualization. Configured via the [splitterSettings](../api/gantt/splitterSettings) property, the splitter supports pixel or percentage-based positioning, column-based alignment, and predefined view modes. The [setSplitterPosition](../api/gantt#setsplitterposition) method adjusts positioning dynamically, while the [splitterResizeStart](../api/gantt/splitterresizestart), [splitterResizing](../api/gantt/splitterresizing), and [splitterResized](../api/gantt/splitterresized) events handle resize interactions. The splitter includes ARIA labels for accessibility, ensuring screen reader compatibility, and adapts to responsive designs, though narrow screens may limit visible columns or timeline segments. By default, both panels are visible with equal width.
 

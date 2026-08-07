@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Reordering Columns Using Drag-and-Drop in TypeScript Gantt Chart
+# Column Reordering with Drag and Drop Support in TypeScript Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Gantt Chart control supports column reordering by dragging a column header to a new position. 
 

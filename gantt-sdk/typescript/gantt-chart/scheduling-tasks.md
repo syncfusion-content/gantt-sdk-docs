@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Task Scheduling in TypeScript Gantt Chart
+# Task Scheduling with Duration Units in TypeScript Gantt Chart
 
 Task scheduling in the [TypeScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control defines and visualizes task start dates, durations, and end dates as taskbars in a project timeline, enabling precise planning and tracking. Configure scheduling with properties like [taskFields](../api/gantt#taskfields) for mapping task data, [taskMode](../api/gantt#taskmode) for auto or manual validation, [taskType](../api/gantt#tasktype) for fixed unit, work, or duration, and [durationUnit](../api/gantt#durationunit) for day, hour, or minute units. Working time, set via [dayWorkingTime](../api/gantt#dayworkingtime), and non-working periods, like weekends or holidays, ensure realistic calculations. Events like [dataBound](../api/gantt#databound) customize scheduling logic on run-time. Taskbars include ARIA labels for accessibility, describing start, end, and duration, and adapt to responsive designs, though narrow screens may require scrolling for long timelines.
 

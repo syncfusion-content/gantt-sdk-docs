@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Overview in TypeScript Gantt Chart
+# TypeScript Gantt Chart Overview
 
 The Gantt chart is a project management tool which provides a Microsoft Project-like interface for scheduling and managing projects. Its intuitive user interface allows you visually manage tasks, task relationships, and resources in a project.
 

@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Configure Context Menu in TypeScript Gantt Chart
+# Context Menu Customization in TypeScript Gantt Chart
 
 The context menu in the Syncfusion TypeScript Gantt Chart control provides right-click access to task and column operations, improving efficiency with contextual task actions. Menu items adapt based on the clicked element, such as task rows, column headers, or chart areas.
 

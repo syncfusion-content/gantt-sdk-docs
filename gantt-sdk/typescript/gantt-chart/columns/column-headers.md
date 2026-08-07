@@ -11,7 +11,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Configuring Column Headers in TypeScript Gantt Chart
+# Customizing Column Headers in TypeScript Gantt Chart
 
 The TypeScript Gantt Chart control provides flexible options to manage and customize column headers. You can define static header text, apply custom templates, align header content, and even update header titles dynamically through events or methods. These features help tailor the Gantt chart to match specific UI requirements and improve readability.
 

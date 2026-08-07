@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-#  Selecting Multiple Rows and Single Row in TypeScript Gantt Chart
+# Selecting Multiple Rows and Rows in TypeScript Gantt Chart
 
 The TypeScript Gantt Chart control supports row selection using mouse clicks or keyboard navigation (arrow keys). This enables users to highlight, manipulate, or trigger actions on selected task rows.
 

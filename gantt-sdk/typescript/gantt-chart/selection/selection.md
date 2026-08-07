@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Selection in TypeScript Gantt Chart
+# Enabling and Configuring Selection Behavior in TypeScript Gantt Chart
 
 The Selection feature provides the ability to highlight a row or cell in the Gantt Chart control. Selection can be performed using arrow keys or mouse clicks.
 
