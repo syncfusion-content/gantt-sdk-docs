@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Reorder Columns in TypeScript Gantt Chart Control | Syncfusion
-description: Learn how to reorder columns in the Syncfusion TypeScript Gantt Chart control using drag-and-drop or code, and how to restrict reordering for specific columns.
+title: Column Rendering in TypeScript Gantt Chart | Syncfusion
+description: Learn how to configure column rendering in Syncfusion TypeScript Gantt Chart with type definitions, format options, and display customizations.
+keywords: TypeScript gantt column rendering, gantt column customization, column template, data mapping, field binding, gantt column configuration, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/columns/column-rendering
 platform: gantt-sdk
-control: Column reorder
-publishingplatform: gantt-sdk
+control: Column Rendering - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Column Rendering in TypeScript Gantt Chart Control
+# Column Rendering with Data Binding in TypeScript Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Gantt Chart control supports column rendering to control data presentation. Column definitions act as the data schema and support operations such as sorting and filtering. The [field](../../api/gantt/column#field) property is required to map data source values to columns and must be defined for features like complex binding and template-based actions.
 

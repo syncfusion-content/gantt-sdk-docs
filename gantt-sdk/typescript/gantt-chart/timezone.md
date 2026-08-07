@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Timezone in TypeScript Gantt Chart Control | Syncfusion
-description: Learn how to configure timezones in the Syncfusion Gantt Chart control for consistent task scheduling, CRUD operations, and global team coordination.
+title: Timezone in TypeScript Gantt Chart | Syncfusion
+description: Learn how to configure timezone in Syncfusion TypeScript Gantt Chart for consistent task scheduling, CRUD operations, and global team coordination.
+keywords: typescript gantt timezone, time zones, task scheduling, crud operations, global teams, utc, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/timezone
 platform: gantt-sdk
-control: Timezone 
-publishingplatform: gantt-sdk
+control: Timezone - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Timezone in TypeScript Gantt Chart Control
+# Timezone with IANA Support in TypeScript Gantt Chart
 
 The TypeScript Gantt Chart control uses the system timezone by default for task scheduling and taskbar rendering, based on JavaScript's `new Date()` (e.g., Wed Dec 12 2018 05:23:27 GMT+0530 for IST). To support global teams or specific regions, the [timezone](../../api/gantt#timezone) property allows setting IANA timezones (e.g., "UTC", "Asia") to ensure consistent date display across users. This property function properly when the timeline displays hours. To enable this, set `timelineViewMode` to **'Hour'** or configure `topTier.unit` as **'Day'** and `bottomTier.unit` as **'Hour'**.
 
@@ -340,3 +341,5 @@ Removes the timezone offset, returning a UTC-equivalent date.
 - [How to configure task dependencies?](../../gantt/task-dependency)
 - [How to customize taskbars?](../../gantt/taskbar)
 - [How to configure task constraints?](../../gantt/task-constraints)
+
+

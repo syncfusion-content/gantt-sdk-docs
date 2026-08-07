@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Task Labels in TypeScript Gantt Chart Control | Syncfusion
-description: Learn how to configure taskbar labels in the Syncfusion TypeScript Gantt Chart control for enhanced data visualization and project management.
+title: Task Labels in TypeScript Gantt Chart | Syncfusion
+description: Learn how to configure taskbar labels in Syncfusion TypeScript Gantt Chart to display task information and custom templates for better project visualization.
+keywords: typescript gantt task labels, taskbar labels, label positioning, custom labels, data visualization, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/labels
 platform: gantt-sdk
-control: Task labels 
-publishingplatform: gantt-sdk
+control: Task Labels - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Task Labels in TypeScript Gantt Chart Control
+# Task Label Positions and Template Support in TypeScript Gantt Chart
 
 Task labels in the TypeScript Gantt Chart control display key task information directly on or near taskbars, enhancing project visualization without requiring task interaction. Configured via the [labelSettings](../api/gantt/labelSettings) property, labels show details like task names, IDs, or progress, streamlining workflows for resource management and status tracking. Labels support three positions: left labels outside the taskbar for identifiers like **TaskName**, right labels after the taskbar for metrics like **Progress**, and task labels overlaid on taskbars for prominent data like task titles. Left and right labels remain visible regardless of taskbar width, while task labels may clip for short tasks. Labels improve readability and provide immediate context, reducing the need for hovers or dialogs in large projects.
 
@@ -367,3 +368,4 @@ gantt.appendTo('#Gantt');
 - [How to customize taskbars?](../gantt/taskbar)
 - [How to manage task dependencies?](../gantt/task-dependency)
 - [How to configure critical path?](../gantt/critical-path)
+

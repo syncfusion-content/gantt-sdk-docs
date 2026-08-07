@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Task bar editing in TypeScript Gantt Chart Control | Syncfusion
-description: Learn how to edit tasks via taskbar interactions in the Syncfusion TypeScript Gantt Chart control for intuitive project timeline adjustments.
+title: Taskbar Editing in TypeScript Gantt Chart | Syncfusion
+description: Learn to edit tasks via taskbar interactions in Syncfusion TypeScript Gantt Chart for intuitive and interactive project timeline adjustments and management.
+keywords: TypeScript gantt taskbar editing, drag taskbar, resize taskbar, edit taskbar, task drag, synchronfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/managing-tasks/task-bar-editing
 platform: gantt-sdk
-control: Task bar editing 
-publishingplatform: gantt-sdk
+control: Taskbar Editing - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Task Bar Editing in TypeScript Gantt Chart Control
+# Editing Tasks Using Taskbar Drag and Resize in TypeScript Gantt Chart
 
 Task bar editing in the TypeScript Gantt Chart control enables intuitive project timeline adjustments by allowing to drag or resize taskbars to modify task details, such as start dates, durations, or progress, using mouse or touch interactions. Enable this feature by setting the [allowTaskbarEditing](../../api/gantt/editSettings#allowtaskbarediting) property to **true** and injecting `Edit`, ensuring task data aligns with valid [taskFields](../../api/gantt#taskfields) mappings (e.g., id, startDate, duration). Taskbars can be dragged to shift dates, resize them to adjust durations, or move progress grips to update completion percentages. The [taskbarEditing](../../gantt/events#taskbarediting) event allows preventing edits for specific tasks, while the [queryTaskbarInfo](../../gantt/events#querytaskbarinfo) event customizes taskbar visuals by hiding editing indicators like resizers or connector points.
 

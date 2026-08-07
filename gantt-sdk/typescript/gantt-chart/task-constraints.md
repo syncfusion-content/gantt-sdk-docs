@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Task Constraints in TypeScript Gantt Chart Control | Syncfusion 
-description: Learn how to implement and manage task constraints in the Syncfusion TypeScript Gantt Chart control to enforce scheduling rules and dependencies.
+title: Task Constraints in TypeScript Gantt Chart | Syncfusion
+description: Learn how to configure task constraints in Syncfusion TypeScript Gantt Chart to enforce scheduling rules, deadlines, and control task start and end dates.
+keywords: typescript gantt task constraints, constraint types, scheduling rules, deadlines, task dates, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/task-constraints
 platform: gantt-sdk
-control: Task Constraints
-publishingplatform: gantt-sdk
+control: Task Constraints - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Task Constraints in TypeScript Gantt Chart Control
+# Task Constraints with Scheduling Rules in TypeScript Gantt Chart
 
 Task constraints in the [TypeScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control define scheduling rules that control when tasks start or finish, ensuring logical sequences, fixed deadlines, and optimized resource allocation. Constraints affect taskbar positioning, dependency scheduling, and critical path calculations, making schedules realistic by accounting for limitations like material delays or compliance dates. They integrate with `taskMode` (e.g., **Auto** for automatic scheduling, **Manual** for fixed dates).
 
@@ -155,3 +156,4 @@ The following example disables the **MustStartOn** violation popup:
 - [How to configure task dependencies?](./task-dependency)
 - [How to customize taskbars?](./taskbar)
 - [How to enable baseline rendering?](./baseline)
+

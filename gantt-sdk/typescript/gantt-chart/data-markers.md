@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Data markers in TypeScript Gantt Chart Control | Syncfusion
-description: Learn here all about Data markers in Syncfusion TypeScript Gantt Chart control of Syncfusion Essential JS 2 and more.
+title: Data Markers in TypeScript Gantt Chart | Syncfusion
+description: Implement data markers in Syncfusion TypeScript Gantt Chart to highlight task events, milestones, and important dates for effective project visualization.
+keywords: typescript gantt data markers, task markers, milestone markers, event markers, visual indicators, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/data-markers
 platform: gantt-sdk
-control: Data markers 
-publishingplatform: gantt-sdk
+control: Data Markers - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Data Markers in TypeScript Gantt Chart Control
+# Task Markers and Milestones in TypeScript Gantt Chart
 
 Data markers are visual indicators that highlight significant events, milestones, or important dates within individual project tasks. These markers provide immediate visual context about critical moments in task timelines, enabling effective identification of key dates and tracking of important events at the task level. Understanding data markers implementation ensures effective project visualization and milestone tracking throughout project development cycles.
 
@@ -134,3 +135,4 @@ You can programmatically modify the styling of the indicator by targeting the `.
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/data-markers-cs3" %}
 {% endif %}
+

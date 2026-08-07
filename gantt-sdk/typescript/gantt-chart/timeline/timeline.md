@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Timeline in TypeScript Gantt Chart control | Syncfusion
-description: Learn how to configure timelines in the Syncfusion TypeScript Gantt Chart control with view modes, zooming, weekend highlighting, and templates.
+title: Timeline in TypeScript Gantt Chart | Syncfusion
+description: Configure timelines in Syncfusion TypeScript Gantt Chart with view modes, zooming, tier customization, and weekend highlighting for projects.
+keywords: TypeScript gantt timeline, timeline view, timeline modes, timeline tiers, zoom timeline, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/timeline/timeline
 platform: gantt-sdk
-control: Timeline
-publishingplatform: gantt-sdk
+control: Timeline - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Timeline in TypeScript Gantt Chart Control
+# Configuring Timeline Settings in TypeScript Gantt Chart
 
 The timeline in the TypeScript Gantt Chart control represents project durations as cells with defined units and formats, supporting in-built view modes like Hour-Minute, Day-Hour, Week-Day, Month-Week, Year-Month, and Minutes for flexible visualization. Configure modes using the [timelineViewMode](../../api/gantt/timelineViewMode) property, with top and bottom tiers customized via [topTier.unit](../../api/gantt/timelineTierSettings#unit) and [bottomTier.unit](../../api/gantt/timelineTierSettings#unit) in [timelineSettings](../../api/gantt/timelineSettings). This enables detailed views, such as weekly overviews with daily breakdowns for projects, ensuring accurate timeline representation.
 
