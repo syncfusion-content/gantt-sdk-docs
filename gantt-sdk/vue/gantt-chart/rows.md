@@ -11,7 +11,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Row Interactions and Customization in Vue Gantt Chart
+# Row Structure and Interactions in Vue Gantt Chart
 
 Row represents a task information from the data source, and it is possible to perform the following actions in Gantt rows.
 
