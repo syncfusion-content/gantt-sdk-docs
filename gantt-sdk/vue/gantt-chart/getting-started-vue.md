@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Vue 3 getting started with the Gantt Chart component | Syncfusion
-description: Check out and learn about Vue 3 getting started with the Vue Gantt Chart component of Syncfusion Essential JS 2 and more details.
-control: Vue 3 getting started
+title: Getting Started with Vue Gantt Chart in Vue 3 | Syncfusion
+description: Learn how to get started with Vue Gantt Chart component in Vue 3 using Vite and Composition API.
+keywords: vue 3 gantt chart, vue 3 setup, composition api, gantt chart vue 3, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/getting-started-vue
 platform: gantt-sdk
+control: Getting Started - Gantt Chart
+publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Getting Started with the Vue Gantt Chart Component in Vue 3
+# Getting Started with Vue Gantt Chart in Vue 3
 
 This article provides a step-by-step guide for setting up a [Vite](https://vitejs.dev) project with a JavaScript environment and integrating the [Vue Gantt Chart](https://www.syncfusion.com/vue-components/vue-gantt-chart) component using the [Composition API](https://vuejs.org/guide/introduction.html#composition-api).
 

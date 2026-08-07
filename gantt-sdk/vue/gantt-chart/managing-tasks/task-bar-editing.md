@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Task bar editing in Vue Gantt Chart component | Syncfusion
-description: Learn here all about Task bar editing in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Task bar editing 
+title: Taskbar Editing in Vue Gantt Chart | Syncfusion
+description: Learn how to enable taskbar editing in Syncfusion Vue Gantt Chart for resizing and dragging taskbars.
+keywords: vue gantt taskbar editing, taskbar resize, drag taskbar, task modification, interactive editing, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/managing-tasks/taskbar-editing
 platform: gantt-sdk
+control: Taskbar Editing - Gantt Chart
+publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Task bar editing in Vue Gantt Chart component
+# Editing Tasks Using Taskbar Drag and Resize in Vue Gantt Chart
 
 ## Taskbar editing
 

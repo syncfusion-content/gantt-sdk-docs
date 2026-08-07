@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Splitting and Merging Tasks in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about Splitting and merging tasks in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Splitting and merging tasks 
+title: Splitting and Merging Tasks in Vue Gantt Chart | Syncfusion
+description: Learn how to split and merge tasks in Syncfusion Vue Gantt Chart for handling task segments and interruptions.
+keywords: vue gantt split merge tasks, task segments, task splitting, task merging, interrupted tasks, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/managing-tasks/splitting-and-merging-tasks
 platform: gantt-sdk
+control: Splitting and Merging Tasks - Gantt Chart
+publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Splitting and Merging Tasks in Vue Gantt Chart Component
+# Splitting and Merging Tasks in Vue Gantt Chart
 
 ## Splitting task at load time
 

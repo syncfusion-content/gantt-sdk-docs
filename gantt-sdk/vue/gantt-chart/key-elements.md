@@ -1,16 +1,17 @@
 ---
 layout: post
-title: Key Elements in Gantt UI for Vue Gantt control | Syncfusion
-description:  Checkout and learn about Key Elements in Gantt UI of Vue Gantt control of Syncfusion Essential JS 2 and more.
+title: Key Elements in Vue Gantt Chart | Syncfusion
+description: Learn about key elements and components in the Syncfusion Vue Gantt Chart UI interface for effective project management.
+keywords: vue gantt key elements, gantt ui components, interface, taskbar, timeline, grid, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/key-elements
 platform: gantt-sdk
-control: Key Elements in Gantt UI
+control: Key Elements - Gantt Chart
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Key Elements in Gantt UI
+# Key Elements in Vue Gantt Chart UI
 
 This section explains the key elements of the Gantt Chart interface.
 
