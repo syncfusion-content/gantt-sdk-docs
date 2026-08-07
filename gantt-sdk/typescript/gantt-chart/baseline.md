@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Baseline in TypeScript Gantt Chart Control | Syncfusion
-description: Learn here all about Baseline in Syncfusion TypeScript Gantt Chart control of Syncfusion Essential JS 2 and more.
+title: Baseline in TypeScript Gantt Chart | Syncfusion
+description: Learn how to compare planned versus actual project timelines using baseline support in Syncfusion TypeScript Gantt Chart to track schedule deviations.
+keywords: typescript gantt baseline, baseline start date, baseline end date, baseline duration, compare schedules, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/baseline
 platform: gantt-sdk
-control: Baseline 
-publishingplatform: gantt-sdk
+control: Baseline - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Baseline in TypeScript Gantt control
+# Baseline for Schedule Comparison in TypeScript Gantt Chart
 
 The baseline feature in the Gantt Chart control enables comparison between original planned schedules and actual task execution timelines. This visualization provides clear insights into schedule deviations, helping assess project performance and identify areas requiring attention. Baseline functionality displays both the original planned timeline and current progress side-by-side for comprehensive project tracking.
 

@@ -1,16 +1,16 @@
----
+﻿---
 layout: post
-title: Key Elements in Gantt UI for TypeScript Gantt control | Syncfusion
-description:  Checkout and learn about Key Elements in Gantt UI of TypeScript Gantt control of Syncfusion Essential JS 2 and more.
+title: Key Elements in TypeScript Gantt Chart | Syncfusion
+description: Learn about key UI elements in Syncfusion TypeScript Gantt Chart including timeline, taskbar, grid columns, and interactive components for project management.
+keywords: typescript gantt ui elements, gantt components, timeline, taskbar, grid, project management, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/key-elements
 platform: gantt-sdk
-control: Key Elements in Gantt UI
-publishingplatform: gantt-sdk
+control: Key Elements - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Key Elements in Gantt UI
+# Key Elements in TypeScript Gantt Chart UI
 
 This section explains the key elements of the Gantt Chart interface.
 

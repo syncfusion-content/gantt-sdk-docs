@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Scrolling in TypeScript Gantt Chart Control | Syncfusion
-description: Learn here all about Scrolling in Syncfusion TypeScript Gantt Chart control of Syncfusion Essential JS 2 and more.
+title: Scrolling in TypeScript Gantt Chart | Syncfusion
+description: Learn how to configure scrolling behavior in TypeScript Gantt Chart including grid scrolling, timeline scrolling, and scroll synchronization.
+keywords: TypeScript gantt scrolling, horizontal scroll, vertical scroll, scroll sync, scroll bars, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/scrolling/scrolling
 platform: gantt-sdk
-control: Scrolling 
-publishingplatform: gantt-sdk
+control: Scrolling - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Scrolling in TypeScript Gantt Chart Control
+# Configuring Scrolling Behavior and Positioning in TypeScript Gantt Chart
 
 Scrolling in the TypeScript Gantt Chart control enables smooth navigation across extensive project datasets and long timelines. It ensures taskbars, grid rows, and timeline cells remain visible within the viewport. Scrollbars automatically appear when content exceeds the control's defined [height](../../api/gantt#height) and [width](../../api/gantt#width), supporting vertical scrolling for rows, horizontal scrolling for columns, and timeline scrolling for extended chart areas.
 

@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: State Persistence in TypeScript Gantt Chart Control | Syncfusion
-description: Learn here all about State persistence in Syncfusion TypeScript Gantt Chart control of Syncfusion Essential JS 2 and more.
+title: State Persistence in TypeScript Gantt Chart | Syncfusion
+description: Learn how to enable state persistence in the Syncfusion TypeScript Gantt Chart to save and restore columns, filters, and settings across sessions.
+keywords: typescript gantt state persistence, local storage, session state, settings storage, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/state-persistence
 platform: gantt-sdk
-control: State persistence 
-publishingplatform: gantt-sdk
+control: State Persistence - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# State Persistence in TypeScript Gantt Chart Control
+# State Persistence with LocalStorage Support in TypeScript Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Gantt Chart control supports state management to retain its configuration and data after a browser refresh during the same session.
 

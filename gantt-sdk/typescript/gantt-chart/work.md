@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Work in TypeScript Gantt control | Syncfusion
-description: Learn here all about Work in Syncfusion TypeScript Gantt control of Syncfusion Essential JS 2 and more.
+title: Work in TypeScript Gantt Chart | Syncfusion
+description: Learn how to configure work and task types in Syncfusion TypeScript Gantt Chart for accurate effort tracking and resource-based scheduling.
+keywords: typescript gantt work, task work, duration, work units, resource work, time tracking, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/work
 platform: gantt-sdk
-control: Work 
-publishingplatform: gantt-sdk
+control: Work - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Work in TypeScript Gantt control
+# Work and Effort Tracking with Task Type Support in TypeScript Gantt Chart
 
 ## Work
 
