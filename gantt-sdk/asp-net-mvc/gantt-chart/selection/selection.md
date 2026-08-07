@@ -1,30 +1,31 @@
 ---
 layout: post
-title: Selection in Syncfusion ASP.NET MVC Gantt Component
-description: Learn here all about Selection in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Selection in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to implement and customize selection in Syncfusion ASP.NET MVC Gantt Chart including single, multiple, and checkbox selection modes.
+keywords: asp.net core gantt selection, row selection, task selection, multi select, selection mode, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/selection/selection
 platform: gantt-sdk
-control: Selection
-publishingplatform: gantt-sdk
+control: Selection - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Selection in ASP.NET MVC Gantt component
+# Enabling and Configuring Selection Behavior in ASP.NET MVC Gantt Chart
 
 Selection provides an option to highlight a row or a cell. It can be done using arrow keys or by scrolling down the mouse. To disable selection in the Gantt control, set the [`AllowSelection`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~AllowSelection.html) to false.
 
 The Gantt control supports two types of selection that can be set by using the [`SelectionSettings.Type`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttSelectionSettings~Type.html) property. They are:
 
-* `Single`: Sets a single value by default and allows only selection of a single row or a cell.
-* `Multiple`: Allows you to select multiple rows or cells. To perform the multi-selection, press and hold the CTRL key and click the desired rows or cells.
+- `Single`: Sets a single value by default and allows only selection of a single row or a cell.
+- `Multiple`: Allows you to select multiple rows or cells. To perform the multi-selection, press and hold the CTRL key and click the desired rows or cells.
 
 ## Selection mode
 
 The Gantt control supports three types of selection modes that can be set by using the [`SelectionSettings.Mode`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttSelectionSettings~Mode.html). They are:
 
-* `Row`: Allows you to select only rows, and the row value is set by default.
-* `Cell`: Allows you to select only cells.
-* `Both`: Allows you to select rows and cells at the same time.
+- `Row`: Allows you to select only rows, and the row value is set by default.
+- `Cell`: Allows you to select only cells.
+- `Both`: Allows you to select rows and cells at the same time.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -48,8 +49,6 @@ The Gantt control supports three types of selection modes that can be set by usi
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Toggle selection
 
@@ -138,8 +137,6 @@ You can clear the selected cells and selected rows by using a method called `cle
 {% endtabs %}
 {% endif %}
 
-
-
 ## Get selected row indexes and records
 
 You can get the selected row indexes by using the [`getSelectedRowIndexes`](../api/gantt/#getselectedrowindexes) method. And by using [`getSelectedRecords`](../api/gantt/#getSelectedRecords) method, you can get the selected record details.
@@ -166,8 +163,6 @@ You can get the selected row indexes by using the [`getSelectedRowIndexes`](../a
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Multiple selection based on condition
 
@@ -198,15 +193,13 @@ In the following code, the rows which contains `TaskId` value as 3 and 4 are sel
 {% endtabs %}
 {% endif %}
 
-
-
 ![Alt text](images/conditionalSelection.png)
 
 ## Touch interaction
 
 The touch interaction feature in the Gantt component allows you to easily interact with the Gantt chart on touch screen devices. This feature is particularly useful for enhancing usability on mobile devices and tablets, making it easier to navigate and interact with the Gantt chart's content using touch gestures.
 
-[`Single Row Selection`](selection/#selection-mode) :  When you tap on a row using a touch screen, the tapped row is automatically selected. This offers a straightforward way to select single rows with a touch interface.
+[`Single Row Selection`](selection/#selection-mode) : When you tap on a row using a touch screen, the tapped row is automatically selected. This offers a straightforward way to select single rows with a touch interface.
 
 [`Multiple Row Selection`](selection/#multiple-row-selection) : To select multiple rows, you can utilize the multi-row selection feature. When you tap on a row, a popup is displayed, indicating the option for multi-row selection. Tap on the popup, and then proceed to tap on the desired rows you want to select. This allows you to select and interact with multiple rows simultaneously, as shown in the following image:
 

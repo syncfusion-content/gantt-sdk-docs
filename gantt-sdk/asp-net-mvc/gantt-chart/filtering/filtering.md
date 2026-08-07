@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Filtering in Syncfusion ASP.NET MVC Gantt Component
-description: Learn here all about Filtering in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Filtering in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to enable filtering in Syncfusion ASP.NET MVC Gantt Chart using menu filters, search, hierarchy modes, and custom options.
+keywords: asp.net core gantt filtering, filter tasks, data filtering, filter conditions, advanced filtering, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/filtering/filtering
 platform: gantt-sdk
-control: Filtering
-publishingplatform: gantt-sdk
+control: Filtering - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Filtering in gantt control
+# Filtering and Search Features in ASP.NET MVC Gantt Chart
 
 Filtering allows you to view specific or related records based on filter criteria. This can be done in the Gantt control by using the filter menu support and toolbar search support. To enable filtering in the Gantt control, set the [`AllowFiltering`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~AllowFiltering.html) to `true`. Menu filtering support can be configured using the [`FilterSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~FilterSettings.html) property and toolbar searching can be configured using the [`SearchSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~SearchSettings.html) property.
 
@@ -17,13 +18,13 @@ Filtering allows you to view specific or related records based on filter criteri
 
 The Gantt supports a set of filtering modes with the [`FilterSettings.HierarchyMode`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttFilterSettings~HierarchyMode.html) property. The following are the types of filter hierarchy modes available in the Gantt control:
 
-* `Parent`: This is the default filter hierarchy mode in Gantt. The filtered records are displayed with its parent records. If the filtered records do not have any parent record, then only the filtered records will be displayed.
+- `Parent`: This is the default filter hierarchy mode in Gantt. The filtered records are displayed with its parent records. If the filtered records do not have any parent record, then only the filtered records will be displayed.
 
-* `Child`: Displays the filtered records with its child record. If the filtered records do not have any child record, then only the filtered records will be displayed.
+- `Child`: Displays the filtered records with its child record. If the filtered records do not have any child record, then only the filtered records will be displayed.
 
-* `Both`: Displays the filtered records with its both parent and child records. If the filtered records do not have any parent and child records, then only the filtered records will be displayed.
+- `Both`: Displays the filtered records with its both parent and child records. If the filtered records do not have any parent and child records, then only the filtered records will be displayed.
 
-* `None`: Displays only the filtered records.
+- `None`: Displays only the filtered records.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -47,8 +48,6 @@ The Gantt supports a set of filtering modes with the [`FilterSettings.HierarchyM
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ### Initial filter
 
@@ -77,25 +76,23 @@ To apply the filter at initial rendering, set the filter to `predicate` object i
 {% endtabs %}
 {% endif %}
 
-
-
 ### Filter operators
 
 The filter operator for a column can be defined in the `FilterSettings.Columns.Operator` property.
 
 The available operators and its supported data types are:
 
-Operator |Description |Supported Types
------|-----|-----
-startswith |Checks whether the value begins with the specified value. |String
-endswith |Checks whether the value ends with the specified value. |String
-contains |Checks whether the value contains the specified value. |String
-equal |Checks whether the value is equal to the specified value. |String &#124; Number &#124; Boolean &#124; Date
-notequal |Checks for the values that are not equal to the specified value. |String &#124; Number &#124; Boolean &#124; Date
-greaterthan |Checks whether the value is greater than the specified value. |Number &#124; Date
-greaterthanorequal|Checks whether the value is greater than or equal to the specified value. |Number &#124; Date
-lessthan |Checks whether the value is less than the specified value. |Number &#124; Date
-lessthanorequal |Checks whether the value is less than or equal to the specified value. |Number &#124; Date
+| Operator           | Description                                                               | Supported Types                                 |
+| ------------------ | ------------------------------------------------------------------------- | ----------------------------------------------- |
+| startswith         | Checks whether the value begins with the specified value.                 | String                                          |
+| endswith           | Checks whether the value ends with the specified value.                   | String                                          |
+| contains           | Checks whether the value contains the specified value.                    | String                                          |
+| equal              | Checks whether the value is equal to the specified value.                 | String &#124; Number &#124; Boolean &#124; Date |
+| notequal           | Checks for the values that are not equal to the specified value.          | String &#124; Number &#124; Boolean &#124; Date |
+| greaterthan        | Checks whether the value is greater than the specified value.             | Number &#124; Date                              |
+| greaterthanorequal | Checks whether the value is greater than or equal to the specified value. | Number &#124; Date                              |
+| lessthan           | Checks whether the value is less than the specified value.                | Number &#124; Date                              |
+| lessthanorequal    | Checks whether the value is less than or equal to the specified value.    | Number &#124; Date                              |
 
 N> By default, the `FilterSettings.Columns.Operator` value is `equal`
 
@@ -128,8 +125,6 @@ In the following sample, type **Perform** in the **TaskName** column to filter d
 {% endtabs %}
 {% endif %}
 
-
-
 ## Filtering a specific column by method
 
 You can filter the columns dynamically by using the `filterByColumn` method.
@@ -156,8 +151,6 @@ You can filter the columns dynamically by using the `filterByColumn` method.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Clear filtered columns
 

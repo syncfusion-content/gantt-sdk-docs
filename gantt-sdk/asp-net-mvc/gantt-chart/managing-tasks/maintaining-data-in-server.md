@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Maintaining data in server in Syncfusion ASP.NET MVC Gantt Component
-description: Learn here all about Maintaining data in server in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Maintaining Data in Server for ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to maintain and persist Gantt chart data in server in Syncfusion ASP.NET MVC Gantt Chart for data consistency and reliability.
+keywords: asp.net core gantt server data, maintain data, data persistence, server persistence, data storage, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/managing-tasks/maintaining-data-in-server
 platform: gantt-sdk
-control: Managing Tasks
-publishingplatform: gantt-sdk
+control: Managing Tasks - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Maintaining data in server
+# Maintaining Data Persistence on Server in ASP.NET MVC Gantt Chart
 
 All the modified data in Gantt control can be maintained in the database using RESTful web services.
 
@@ -48,8 +49,6 @@ We can define data source for Gantt as instance of DataManager using `url` prope
 {% endtabs %}
 {% endif %}
 
-
-
 We can also do CRUD operations over Gantt data and save the changes to database. By using `BatchUrl` property of DataManager, we can communicate with the controller method to update the data source on CRUD operation. In gantt CRUD actions on task are dependent with other tasks. For example on editing the child record on chart side, corresponding parent item also will get affect and predecessor dependency task as well get affected. So in Gantt all the CRUD operations are considered to be batch editing where you will get all the affected records as collection. Check the below code snippet to assign controller method to this property.
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -74,8 +73,6 @@ We can also do CRUD operations over Gantt data and save the changes to database.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 This server method will be triggered for all the CRUD operations like adding, editing and deleting actions. We can handle those each operations separately inside this method with corresponding data received in this method argument. Also, when using the `UrlAdaptor`, you need to return the data as JSON from the controller action and the JSON object must contain a property as result with dataSource as its value and one more property count with the dataSource total records count as its value.
 
@@ -106,8 +103,6 @@ Using the `added` argument of the `BatchUrl` method we can insert the newly adde
 {% endtabs %}
 {% endif %}
 
-
-
 ## Editing action
 
 Using the `changed` argument of the `BatchUrl` method we can update the modified records to database and return the same to client side. Find the below code example for details.
@@ -135,8 +130,6 @@ Using the `changed` argument of the `BatchUrl` method we can update the modified
 {% endtabs %}
 {% endif %}
 
-
-
 ## Delete action
 
 Using the `deleted` argument of the `BatchUrl` method we can remove the deleted records from database and return the same to client side. on deleting the record we need to remove its corresponding child records as well if it exist from the data base. Find the below code example for details.
@@ -163,7 +156,5 @@ Using the `deleted` argument of the `BatchUrl` method we can remove the deleted 
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 N> You can find the full sample at our [GitHub repository](https://github.com/SyncfusionExamples/EJ2-Gantt-MVC-CRUD-URL-ADAPTOR).

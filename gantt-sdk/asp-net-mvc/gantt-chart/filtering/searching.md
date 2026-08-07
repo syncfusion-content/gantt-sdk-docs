@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Searching in Syncfusion ASP.NET MVC Gantt Component
-description: Learn here all about Searching in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Search in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to use search functionality in Syncfusion ASP.NET MVC Gantt Chart to find records using toolbar search and search methods.
+keywords: asp.net core gantt search, search tasks, find tasks, search functionality, task searching, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/filtering/searching
 platform: gantt-sdk
-control: Filtering
-publishingplatform: gantt-sdk
+control: Filtering - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Search in gantt control
+# Implementing Quick Search for Task Data in ASP.NET MVC Gantt Chart
 
 You can search records in the Gantt control by using the `search` method with search key as a parameter. The Gantt control provides an option to integrate the search text box in the toolbar by adding the search item to the [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Toolbar) property.
 
@@ -35,8 +36,6 @@ You can search records in the Gantt control by using the `search` method with se
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 The following screenshot shows the output of searching for string in Gantt control.
 
@@ -69,8 +68,6 @@ In the Gantt control, you can load a task with some search criteria and this can
 {% endtabs %}
 {% endif %}
 
-
-
 ![Alt text](images/initialLoadSearch.png)
 
 N> By default, Gantt searches all the bound column values. To customize this behavior, define the [`SearchSettings.Fields`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttSearchSettings~Fields.html) property.
@@ -81,13 +78,13 @@ The search operator can be defined in the [`SearchSettings.Operator`](https://he
 
 The following operators are supported in searching:
 
-|Operator |Description|
-|-----|-----|
-|startsWith |Checks whether a value begins with the specified value.|
-|endsWith |Checks whether a value ends with the specified value.|
-|contains |Checks whether a value contains the specified value.|
-|equal |Checks whether a value is equal to the specified value.|
-|notEqual |Checks for the values that are not equal to the specified value.|
+| Operator   | Description                                                      |
+| ---------- | ---------------------------------------------------------------- |
+| startsWith | Checks whether a value begins with the specified value.          |
+| endsWith   | Checks whether a value ends with the specified value.            |
+| contains   | Checks whether a value contains the specified value.             |
+| equal      | Checks whether a value is equal to the specified value.          |
+| notEqual   | Checks for the values that are not equal to the specified value. |
 
 N> By default, the [`SearchSettings.Operator`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttSearchSettings~Operator.html) value is `contains`.
 
@@ -118,8 +115,6 @@ To search the Gantt records from an external button, invoke the `search` method.
 {% endtabs %}
 {% endif %}
 
-
-
 ## Search specific columns
 
 By default, the Gantt control searches all the columns. You can search specific columns by defining the specific column's field names in the [`SearchSettings.Fields`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttSearchSettings~Fields.html) property.
@@ -146,8 +141,6 @@ By default, the Gantt control searches all the columns. You can search specific 
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 N> In above sample, you can search only `TaskName` and `Duration` column values.
 

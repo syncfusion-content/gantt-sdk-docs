@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Event Markers in ASP.NET MVC Gantt Component
-description: Learn here all about Event Markers in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Event Markers in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to add and customize event markers in Syncfusion ASP.NET MVC Gantt Chart to display important dates and milestones on your timeline.
+keywords: asp.net core gantt event markers, timeline markers, milestone markers, custom markers, timeline events, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/event-markers
 platform: gantt-sdk
-control: Event Markers
-publishingplatform: gantt-sdk
+control: Event Markers - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Event Markers
+# Project-Wide Timeline Markers in ASP.NET MVC Gantt Chart
 
 The event markers in the Gantt control is used to highlight the important events in a project. Event markers can be initialized by using the [`EventMarkers`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EventMarkers) property, and you can define date and label for the event markers using the [`Day`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEventMarker.html#Syncfusion_EJ2_Gantt_GanttEventMarker_Day) and [`Label`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEventMarker.html#Syncfusion_EJ2_Gantt_GanttEventMarker_Label) properties. You can also customize it using the [`CssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEventMarker.html#Syncfusion_EJ2_Gantt_GanttEventMarker_CssClass) properties. The following code example shows how to add event markers in the Gantt control.
 
@@ -35,7 +36,5 @@ The event markers in the Gantt control is used to highlight the important events
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/eventmarkers.png)

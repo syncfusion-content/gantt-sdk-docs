@@ -1,28 +1,29 @@
 ---
 layout: post
-title: Scheduling Tasks in ASP.NET MVC Gantt Component
-description: Learn here all about Scheduling Tasks in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Scheduling Tasks in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to schedule and manage tasks in Syncfusion ASP.NET MVC Gantt Chart including task duration, dependencies, and automatic schedule calculation.
+keywords: asp.net core gantt scheduling, task scheduling, task duration, date scheduling, task dependencies, project scheduling, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/scheduling-tasks
 platform: gantt-sdk
-control: Scheduling Tasks
-publishingplatform: gantt-sdk
+control: Scheduling Tasks - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Scheduling Tasks
+# Task Scheduling with Duration Units in ASP.NET MVC Gantt Chart
 
 ## Duration units
 
 In Gantt, the tasks’ duration value can be measured by the following duration units,
 
-* Day
-* Hour
-* Minute
+- Day
+- Hour
+- Minute
 
 In Gantt, we can define duration unit for whole project by using [`DurationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DurationUnit) property, when we defines the value for this property, this unit will be applied for all task which don't has duration unit value. And each task in the project can be defined with different duration units and the duration unit of a task can be defined by the following ways,
 
-* Using [`TaskFields.DurationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_DurationUnit) property, to map the duration unit data source field.
-* Defining the duration unit value along with the duration field in the data source.
+- Using [`TaskFields.DurationUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_DurationUnit) property, to map the duration unit data source field.
+- Defining the duration unit value along with the duration field in the data source.
 
 ### Mapping the duration unit field
 
@@ -50,8 +51,6 @@ The below code snippet explains the mapping of duration unit data source field t
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/durationUnits.png)
 
@@ -83,8 +82,6 @@ Duration units for the tasks can also be defined along with the duration values,
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/durationUnitswithDuration.png)
 
@@ -139,8 +136,6 @@ You can define the various types of unscheduled tasks in the data source as foll
 {% endtabs %}
 {% endif %}
 
-
-
 ![Alt text](images/unscheduledTasks.png)
 
 N> If the [`AllowUnscheduledTasks`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowUnscheduledTasks) property is set to false, then the Gantt control automatically calculates the scheduled date values with a default value of duration 1 and the project start date is considered as the start date for the task.
@@ -174,14 +169,12 @@ The following code snippet explains how to define the working time range for the
 {% endtabs %}
 {% endif %}
 
-
-
 The following screen shot shows working time range in Gantt control.
 
 ![Alt text](images/working-time-range.png)
 
-N>* Individual tasks can lie between any time within the defined working time range of the project.
-<br/>* The [`DayWorkingTime`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DayWorkingTime) property is used to define the working time for the whole project.
+N>_ Individual tasks can lie between any time within the defined working time range of the project.
+<br/>_ The [`DayWorkingTime`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DayWorkingTime) property is used to define the working time for the whole project.
 
 ## Weekend/Non-working days
 
@@ -209,8 +202,6 @@ Non-working days/weekend are used to represent the non-productive days in a proj
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/changeWorkweek.png)
 

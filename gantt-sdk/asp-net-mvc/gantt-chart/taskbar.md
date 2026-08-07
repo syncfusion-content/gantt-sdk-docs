@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Taskbar in ASP.NET MVC Syncfusion Gantt Component
-description: Learn here all about Taskbar in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Taskbar in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to customize and manage taskbars in Syncfusion ASP.NET MVC Gantt Chart including taskbar templates, progress tracking, and drag-and-drop.
+keywords: asp.net core gantt taskbar, task bars, taskbar styling, progress bar, drag taskbar, taskbar customization, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/taskbar
 platform: gantt-sdk
-control: Taskbar
-publishingplatform: gantt-sdk
+control: Taskbar - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Taskbar in ASP.NET MVC Gantt Chart Component
+# Taskbar Customization with Templates in ASP.NET MVC Gantt Chart
 
 ## Taskbar template
 
@@ -36,8 +38,6 @@ You can design your own taskbars to view the tasks in Gantt by using [`TaskbarTe
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/taskbarTemplate1.png)
 
@@ -70,8 +70,6 @@ Height of child taskbars and parent taskbars can be customized by using [`Taskba
 {% endtabs %}
 {% endif %}
 
-
-
 ![Alt text](images/taskbarHeight.png)
 
 N> The [`TaskbarHeight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskbarHeight) value should be lower than the [`RowHeight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_RowHeight) property value and these properties accept only pixel values.
@@ -103,10 +101,7 @@ The default taskbar UI can be replaced with custom templates using the [`QueryTa
 {% endtabs %}
 {% endif %}
 
-
-
 ![Alt text](images/conditionalFormatting.png)
-
 
 ### Change gripper icon in taskbar
 
@@ -141,7 +136,7 @@ You can change the gripper icon in the taskbar by applying styles to their respe
 
 The Gantt component, supports rendering multi-taskbars in the project view. With this feature the parent taskbar, when it is collapsed, visually summarize the progress of all its child taskbars.
 
-This feature can be enabled by setting the [EnableMultiTaskbar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableMultiTaskbar) property value to `true`. 
+This feature can be enabled by setting the [EnableMultiTaskbar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableMultiTaskbar) property value to `true`.
 
 The following code example shows how to use this property.
 
@@ -167,8 +162,6 @@ The following code example shows how to use this property.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Multitaskbar support in projectview](images/project-multitaskbar.png)
 
@@ -199,18 +192,16 @@ The width and background color of connector lines in Gantt can be customized usi
 {% endtabs %}
 {% endif %}
 
-
-
 ![Alt text](images/dependencyFormatting.png)
 
 ## Tooltip
 
 In the Gantt control, you can enable or disable the mouse hover tooltip for the following UI elements using the [`TooltipSettings.ShowTooltip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTooltipSettings.html#Syncfusion_EJ2_Gantt_GanttTooltipSettings_ShowTooltip) property:
 
-* Taskbar
-* Connector line
-* Baseline
-* Event marker
+- Taskbar
+- Connector line
+- Baseline
+- Event marker
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -234,8 +225,6 @@ In the Gantt control, you can enable or disable the mouse hover tooltip for the 
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/taskbar-tooltip.png)
 
@@ -284,8 +273,6 @@ The default tooltip in the Gantt control can be customized using the [`TooltipSe
 {% endtabs %}
 {% endif %}
 
-
-
 The below screenshot shows the output of above code example.
 
 ![Alt text](images/taskbarTemplate.png)
@@ -316,8 +303,6 @@ A baseline tooltip can be customized using the [`TooltipSettings.Baseline`](http
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 The following screenshot shows the template for baseline in Gantt.
 
@@ -350,8 +335,6 @@ The default connector line tooltip in the Gantt control can be customized using 
 {% endtabs %}
 {% endif %}
 
-
-
 The below screenshot shows the output of above code example.
 
 ![Alt text](images/dependencyLineTemplate.png)
@@ -382,7 +365,6 @@ A timeline tooltip can be customized using the [`TooltipSettings.Timeline`](http
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
 
 The below screenshot shows the output of above code example.
 

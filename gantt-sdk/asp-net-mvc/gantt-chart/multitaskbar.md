@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Resource Multi Taskbar  in ASP.NET MVC Gantt Component
-description: Learn here all about Multi Taskbar  in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Multi Taskbar in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to implement multi-taskbar functionality in Syncfusion ASP.NET MVC Gantt Chart to display multiple tasks per resource in a single row.
+keywords: asp.net core gantt multi taskbar, multiple taskbars, resource taskbars, task display, resource management, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/multi-taskbar
 platform: gantt-sdk
-control: Resource Multi Taskbar 
-publishingplatform: gantt-sdk
+control: Multi Taskbar - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Resource Multi Taskbar in ASP.NET MVC Gantt Component
+# Multi Taskbar with Resource Row Visualization in ASP.NET MVC Gantt Chart
 
 ## Resource Multi Taskbar
 
@@ -42,8 +44,6 @@ N> By default, the `enableMultiTaskbar` property value is `false`.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/multitaskbar.PNG)
 

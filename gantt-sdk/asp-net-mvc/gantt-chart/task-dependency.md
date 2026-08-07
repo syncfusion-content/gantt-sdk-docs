@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Task Dependency in Syncfusion ASP.NET MVC Gantt Component
-description: Learn here all about Task Dependency in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Task Dependency in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to define and manage task dependencies in Syncfusion ASP.NET MVC Gantt Chart to manage task relationships and project scheduling.
+keywords: asp.net core gantt task dependency, task relationships, dependency types, predecessor tasks, gantt dependencies, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/task-dependency
 platform: gantt-sdk
-control: Task Dependency
-publishingplatform: gantt-sdk
+control: Task Dependency - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Task dependencies in Gantt
+# Managing Task Dependencies in ASP.NET MVC Gantt Chart
 
 Task dependency or task relationship can be established between two tasks in Gantt. This dependency affects the project schedule. If you change the predecessor of a task, it will affect the successor task, which will affect the next task, and so on. Relationship can be established between parent-parent tasks, child-child tasks, parent-child and child-parent task.
 
@@ -79,8 +80,6 @@ Task relationship is defined in the data source as a string value, and this valu
 {% endtabs %}
 {% endif %}
 
-
-
 The following screenshot displays the output of the above code.
 
 ![Alt text](images/enableDependency.png)
@@ -89,9 +88,9 @@ The following screenshot displays the output of the above code.
 
 In the Gantt control, the predecessor offset can be defined with the following duration units:
 
-* Day
-* Hour
-* Minute
+- Day
+- Hour
+- Minute
 
 You can define an offset with various offset duration units for predecessors by using the following code example.
 
@@ -183,8 +182,9 @@ By default, the dependency offsets are automatically updated in the Gantt chart 
 ## Validate predecessor links on editing
 
 In Gantt, task relationship link can be broken by editing the start date, end date and duration value of task. When the task relationship broken on any edit action. This can be handled in Gantt in two ways.
-* Using actionBegin event
-* Using predecessor validation dialog
+
+- Using actionBegin event
+- Using predecessor validation dialog
 
 ### Using actionBegin event
 
@@ -223,8 +223,6 @@ The following sample explains enabling the `respectLink` validation mode while e
 {% endtabs %}
 {% endif %}
 
-
-
 ### Using validation dialog
 
 When disabling all the validation modes in the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ActionBegin) event, a validation pop-up will be displayed prompting users to select the validation mode to validate taskbar editing.
@@ -233,14 +231,14 @@ This validation pop-up will display different options based on the successor tas
 
 If you move the successor task that starts after the predecessor task’s end date, then a dialog will be rendered with the following options:
 
-* Cancel, Keep the existing link.
-* Remove the link and move the task to start on edited date.
-* Move the task to start on edited date and keep the link.
+- Cancel, Keep the existing link.
+- Remove the link and move the task to start on edited date.
+- Move the task to start on edited date and keep the link.
 
 If you move the successor task that starts before the predecessor task’s end date, then a dialog will be rendered with the following options:
 
-* Cancel, Keep the existing link.
-* Remove the link and move the task to start on edited date.
+- Cancel, Keep the existing link.
+- Remove the link and move the task to start on edited date.
 
 The following code example shows how to enable the predecessor validation dialog in Gantt.
 
@@ -266,8 +264,6 @@ The following code example shows how to enable the predecessor validation dialog
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 In this case, if the user dragging action violated the predecessor type then the following dialog will be rendered to perform operation.
 
@@ -299,7 +295,6 @@ By default, mapping the dependency field in taskFields displays dependency lines
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
 
 The following screen shot dependencyline hide using dynamic button.
 

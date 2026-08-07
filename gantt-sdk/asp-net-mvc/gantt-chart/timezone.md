@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Timezone in ASP.NET MVC Gantt Component
-description: Learn here all about Timezone in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Timezone in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to manage and configure timezone support in Syncfusion ASP.NET MVC Gantt Chart for accurate date and time representation across regions.
+keywords: asp.net core gantt timezone, time zone support, date conversion, timezone offset, global projects, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/timezone
 platform: gantt-sdk
-control: Timezone
-publishingplatform: gantt-sdk
+control: Timezone - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Timezone
+# Timezone with IANA Support in ASP.NET MVC Gantt Chart
 
 The Gantt makes use of the current system time zone by default. If it needs to follow some other user-specific time zone, then the `timezone` property needs to be used.
 
@@ -44,8 +45,6 @@ Setting `timezone` to UTC for Gantt will display the same time as in the databas
 {% endtabs %}
 {% endif %}
 
-
-
 ## CRUD operations with timezone
 
 CRUD operations can be performed with timezone, and the gantt is rendered based on the timezone specified in the load time. All the editing actions will be done based on the user timezone, but on database save action, we have reversed this conversion to local time and provided data to client side events for better understanding purpose. Refer to the following code example.
@@ -73,18 +72,16 @@ CRUD operations can be performed with timezone, and the gantt is rendered based 
 {% endtabs %}
 {% endif %}
 
-
-
 ## Timezone methods
 
 ### offset
 
 This method is used to calculate the difference between passed UTC date and timezone.
 
-| Parameters | Type | Description |
-|------------|------|-------------|
-| Date | Date | UTC time as date object.|
-| Timezone | String | Timezone.|
+| Parameters | Type   | Description              |
+| ---------- | ------ | ------------------------ |
+| Date       | Date   | UTC time as date object. |
+| Timezone   | String | Timezone.                |
 
 Returns `number`
 
@@ -100,11 +97,11 @@ Returns `number`
 
 This method is used to convert the passed date from one timezone to another timezone.
 
-| Parameters | Type | Description |
-|------------|------|-------------|
-| Date | Date | UTC time as date object.|
-| fromOffset | number/string | Timezone from which date need to be converted.|
-| toOffset | number/string | Timezone to which date need to be converted.|
+| Parameters | Type          | Description                                    |
+| ---------- | ------------- | ---------------------------------------------- |
+| Date       | Date          | UTC time as date object.                       |
+| fromOffset | number/string | Timezone from which date need to be converted. |
+| toOffset   | number/string | Timezone to which date need to be converted.   |
 
 Returns `Date`
 
@@ -122,10 +119,10 @@ Returns `Date`
 
 This method is used to remove the time difference between passed UTC date and timezone.
 
-| Parameters | Type | Description |
-|------------|------|-------------|
-| Date | Date | UTC as date object.|
-| Timezone | String | Timezone.|
+| Parameters | Type   | Description         |
+| ---------- | ------ | ------------------- |
+| Date       | Date   | UTC as date object. |
+| Timezone   | String | Timezone.           |
 
 Returns `Date`
 

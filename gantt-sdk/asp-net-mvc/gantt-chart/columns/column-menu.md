@@ -1,25 +1,26 @@
 ---
 layout: post
-title: Columns menu in Syncfusion ASP.NET MVC Gantt Component
-description: Learn here all about Columns menu in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Column Menu in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to use the column menu in Syncfusion ASP.NET MVC Gantt Chart to manage, filter, and configure column visibility and display.
+keywords: asp.net core gantt column menu, column visibility, column configuration, show hide columns, column menu, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/columns/column-menu
 platform: gantt-sdk
-control: Columns
-publishingplatform: gantt-sdk
+control: Columns - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Column menu in gantt control
+# Column Menu with Sort and Filter in ASP.NET MVC Gantt Chart
 
 The column menu has options to integrate features like sorting, filtering, and autofit. It will show a menu with the integrated feature when users click the Multiple icon of the column. To enable the column menu, you should set the [`ShowColumnMenu`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ShowColumnMenu) property to true. The default items are displayed in the following table:
 
-| Item | Description |
-|-----|-----|
-| `SortAscending` | Sort the current column in ascending order. |
-| `SortDescending` | Sort the current column in descending order. |
-| `AutoFit` | Auto fit the current column. |
-| `AutoFitAll` | Auto fit all columns. |
-| `Filter` | Show the filter option as given in the `filterSettings.type` property. |
+| Item             | Description                                                            |
+| ---------------- | ---------------------------------------------------------------------- |
+| `SortAscending`  | Sort the current column in ascending order.                            |
+| `SortDescending` | Sort the current column in descending order.                           |
+| `AutoFit`        | Auto fit the current column.                                           |
+| `AutoFitAll`     | Auto fit all columns.                                                  |
+| `Filter`         | Show the filter option as given in the `filterSettings.type` property. |
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -43,8 +44,6 @@ The column menu has options to integrate features like sorting, filtering, and a
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/columnMenu.png)
 
@@ -80,8 +79,6 @@ During the resizing action, the gantt component triggers the below two events.
 {% endtabs %}
 {% endif %}
 
-
-
 ## Custom Column Menu Item
 
 Custom column menu items can be added by defining the `columnMenuItems`. Actions for this customized items can be defined in the [`columnMenuClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ColumnMenuClick) event.
@@ -108,8 +105,6 @@ Custom column menu items can be added by defining the `columnMenuItems`. Actions
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Customize menu items for particular columns
 

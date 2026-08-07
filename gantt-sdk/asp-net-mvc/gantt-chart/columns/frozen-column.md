@@ -1,14 +1,16 @@
 ---
 layout: post
 title: Column Pinning (Frozen) in ASP.NET MVC Gantt Chart | Syncfusion
-description: Learn here all about column pinning (Frozen) in Syncfusion ASP.NET MVC Gantt Chart control of Syncfusion Essential JS 2 and more.
+description: Learn how to pin or freeze columns in Syncfusion ASP.NET MVC Gantt Chart to keep important columns visible while scrolling horizontally.
+keywords: asp.net core gantt column pinning, frozen columns, pinned columns, column freezing, sticky columns, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/columns/frozen-column
 platform: gantt-sdk
-control: Column Pinning (Frozen)
-publishingplatform: gantt-sdk
+control: Columns - Gantt Chart
 documentation: ug
---- 
+domainurl: https://help.syncfusion.com/gantt-sdk
+---
 
-# Column Pinning (Frozen) in ASP.NET MVC Gantt Chart Control
+# Frozen Columns with Left and Right Pinning in ASP.NET MVC Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Gantt Chart control provides a frozen columns feature that keeps selected columns fixed while scrolling horizontally through large datasets. This functionality ensures that critical information remains visible at all times, improving readability and user experience. By maintaining key columns in view, it simplifies navigation and makes referencing important data points easier when working with extensive project details.
 
@@ -82,11 +84,11 @@ To freeze a particular column in the Gantt, set the `IsFrozen` property of the c
 
 In the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Gantt, the **freeze direction** feature allows you to position frozen columns either to the left, right, or in a fixed position, while still allowing the remaining columns to be horizontally movable. To achieve this, the [column.freeze](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Freeze) property can be utilized. This property is used to specify the freeze direction for individual columns. The types of the `column.freeze` directions:
 
-* **Left**: When the `column.freeze` property is set to **Left**, specific columns will be frozen on the left side.
+- **Left**: When the `column.freeze` property is set to **Left**, specific columns will be frozen on the left side.
 
-* **Right**: When the `column.freeze` property is set to **Right**, certain columns will be frozen on the right side.
+- **Right**: When the `column.freeze` property is set to **Right**, certain columns will be frozen on the right side.
 
-* **Fixed**: The fixed direction locks a column at a fixed position within the Gantt Chart columns. This ensures that the column is always visible during horizontal scroll.
+- **Fixed**: The fixed direction locks a column at a fixed position within the Gantt Chart columns. This ensures that the column is always visible during horizontal scroll.
 
 In the following example, the **TaskID** column is frozen on the left side, the **resources** column is frozen on the right side and the **Progress** column is frozen on the fixed of the content table.
 
@@ -103,11 +105,11 @@ In the following example, the **TaskID** column is frozen on the left side, the 
 
 In the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Gantt, the **freeze direction** feature allows you to position frozen columns either to the left, right, or in a fixed position, while still allowing the remaining columns to be horizontally movable. To achieve this, the [Column.Freeze](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Freeze) property can be utilized. This property is used to specify the freeze direction for individual columns. The types of the `Column.Freeze` directions:
 
-* **Left**: When the `Column.Freeze` property is set to **Left**, specific columns will be frozen on the left side.
+- **Left**: When the `Column.Freeze` property is set to **Left**, specific columns will be frozen on the left side.
 
-* **Right**: When the `Column.Freeze` property is set to **Right**, certain columns will be frozen on the right side.
+- **Right**: When the `Column.Freeze` property is set to **Right**, certain columns will be frozen on the right side.
 
-* **Fixed**: The fixed direction locks a column at a fixed position within the Gantt Chart columns. This ensures that the column is always visible during horizontal scroll.
+- **Fixed**: The fixed direction locks a column at a fixed position within the Gantt Chart columns. This ensures that the column is always visible during horizontal scroll.
 
 In the following example, the **TaskID** column is frozen on the left side, the **resources** column is frozen on the right side and the **Progress** column is frozen on the fixed of the content table.
 
@@ -131,31 +133,34 @@ The frozen line borders of frozen columns in the Syncfusion<sup style="font-size
 
 To change the default frozen line color, use the following CSS class names and apply the desired border color:
 
-For left frozen columns: 
+For left frozen columns:
 
 ```css
 .e-gantt .e-leftfreeze.e-freezeleftborder {
-    border-right-color: rgb(0, 255, 0) !important;
+  border-right-color: rgb(0, 255, 0) !important;
 }
 ```
+
 For right frozen columns:
 
 ```css
 .e-gantt .e-rightfreeze.e-freezerightborder {
-    border-left-color: rgb(0, 0, 255) !important;
+  border-left-color: rgb(0, 0, 255) !important;
 }
 ```
+
 For fixed frozen columns, both left and right borders need to be specified as mentioned below:
 
 ```css
 .e-gantt .e-leftfreeze.e-freezeleftborder {
-    border-right-color: rgb(0, 255, 0) !important;
+  border-right-color: rgb(0, 255, 0) !important;
 }
 
 .e-gantt .e-rightfreeze.e-freezerightborder {
-    border-left-color: rgb(0, 0, 255) !important;
+  border-left-color: rgb(0, 0, 255) !important;
 }
 ```
+
 The following example demonstrates how to change the default frozen line color using CSS:
 
 {% if page.publishingplatform == "aspnet-core" %}

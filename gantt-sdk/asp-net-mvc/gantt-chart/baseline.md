@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Baseline in ASP.NET MVC Syncfusion Gantt Component
-description: Learn here all about Baseline in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Baseline in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to use the Baseline feature in Syncfusion ASP.NET MVC Gantt Chart to compare planned schedules with actual task execution timelines.
+keywords: asp.net core gantt baseline, planned schedule, actual timeline, project comparison, schedule deviations, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/baseline
 platform: gantt-sdk
-control: Baseline
-publishingplatform: gantt-sdk
+control: Baseline - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# BaseLine in ASP.NET MVC Syncfusion Gantt Component
+# Baseline for Schedule Comparison in ASP.NET MVC Gantt Chart
 
 {% if page.publishingplatform == "aspnet-core" %}
 

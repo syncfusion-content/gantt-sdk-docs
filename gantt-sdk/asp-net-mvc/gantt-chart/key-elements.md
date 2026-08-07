@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Key Elements in Gantt UI for ASP.NET MVC Gantt control | Syncfusion
-description:  Checkout and learn about Key Elements in Gantt UI of ASP.NET MVC Gantt control of Syncfusion Essential JS 2 and more.
+title: Key Elements in ASP.NET MVC Gantt Chart | Syncfusion
+description: Understand the key UI elements and components of Syncfusion ASP.NET MVC Gantt Chart to effectively utilize and customize the project management interface.
+keywords: asp.net core gantt key elements, gantt components, ui elements, gantt interface, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/key-elements
 platform: gantt-sdk
-control: Key Elements in Gantt UI
-publishingplatform: gantt-sdk
+control: Key Elements - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Key Elements in Gantt UI
+# Key Elements in ASP.NET MVC Gantt Chart UI
 
 This section explains the key elements of the Gantt Chart interface.
 
@@ -21,25 +22,23 @@ At the top of Gantt chart, having a [toolbar](https://help.syncfusion.com/cr/asp
 
 **Grid section**
 
-* In the tree grid section, the task details are presented in a tabular format.
-* You can expand or collapse a task by clicking on the expand/collapse icon near the parent task.
-* At the top of the tree grid section is the column header, which dispays the titles of different grid columns.
+- In the tree grid section, the task details are presented in a tabular format.
+- You can expand or collapse a task by clicking on the expand/collapse icon near the parent task.
+- At the top of the tree grid section is the column header, which dispays the titles of different grid columns.
 
 ![Grid](./images/tabular.png)
 
-
 **Chart section**
 
-* The `X-axis` of the chart represents the timeline scale.
-* In the chart section, task details are displayed in a taskbar format over a time range along with their activities.
+- The `X-axis` of the chart represents the timeline scale.
+- In the chart section, task details are displayed in a taskbar format over a time range along with their activities.
 
 ![Chart](./images/chart.png)
 
-
 **Elements in taskbar**
 
-* To change the task startDate and endDate value, you can use the start date gripper and end date gripper.
-* To change the progress value, you can use the progress gripper.
+- To change the task startDate and endDate value, you can use the start date gripper and end date gripper.
+- To change the progress value, you can use the progress gripper.
 
 ![Chart edit](./images/chartedit.png)
 
@@ -55,12 +54,12 @@ To establish dependency connections between multiple tasks using connector point
 
 A milestone is a unique type of task characterized by the following attributes:
 
-* It typically has no distinct start and end dates or may have both set to the same date.
-* The duration value for a milestone task is typically zero.
+- It typically has no distinct start and end dates or may have both set to the same date.
+- The duration value for a milestone task is typically zero.
 
 ![Milestone](./images/milestone-element.png)
 
->For more information, refer to [Unscheduled Tasks](https://ej2.syncfusion.com/aspnetcore/documentation/gantt/task-scheduling#unscheduled-tasks)
+> For more information, refer to [Unscheduled Tasks](https://ej2.syncfusion.com/aspnetcore/documentation/gantt/task-scheduling#unscheduled-tasks)
 
 **Manual taskbar**
 
@@ -68,7 +67,7 @@ It is a type of task where the dates are not automatically validated by the Gant
 
 ![Manual taskbar](./images/manual-task.png)
 
->For more information, refer to [Manual Tasks](https://ej2.syncfusion.com/aspnetcore/documentation/gantt/task-scheduling#manually-scheduled-tasks)
+> For more information, refer to [Manual Tasks](https://ej2.syncfusion.com/aspnetcore/documentation/gantt/task-scheduling#manually-scheduled-tasks)
 
 **Baseline**
 
@@ -104,21 +103,21 @@ You can rearrange the Gantt chart rows by using the drag icon on the left side o
 
 **Dialog box**
 
-* While editing a row, the dialog edit box will be used, which contains the following tabs:
-    * General
-    * Dependency
-    * Resources
-    * Notes
+- While editing a row, the dialog edit box will be used, which contains the following tabs:
+  - General
+  - Dependency
+  - Resources
+  - Notes
 
 ![Dialog box](./images/dialogBox.png)
 
 The `General` tab contains form fields where you can view and edit task details. These fields include:
-    **TaskID**: Identifier for the task.
-    **TaskName**: Name or title of the task.
-    **Duration**: Duration of the task.
-    **StartDate**: Start date of the task.
-    **EndDate**: End date of the task.
-    **Progress**: Progress status of the task.
+**TaskID**: Identifier for the task.
+**TaskName**: Name or title of the task.
+**Duration**: Duration of the task.
+**StartDate**: Start date of the task.
+**EndDate**: End date of the task.
+**Progress**: Progress status of the task.
 
 The `Dependency` tab displays tasks that are dependent on the current task, along with their details presented in a tabular format.
 

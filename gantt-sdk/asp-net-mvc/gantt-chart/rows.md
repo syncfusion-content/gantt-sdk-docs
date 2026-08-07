@@ -1,15 +1,16 @@
 ---
 layout: post
-title: TreeGrid View Rows in ASP.NET MVC Gantt Component | Syncfusion
-description: Learn here all about customization of treegrid view rows in Syncfusion ASP.NET MVC Gantt component and much more.
+title: Rows in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to configure and customize rows in Syncfusion ASP.NET MVC Gantt Chart with row height, row styling, and row templates for enhanced visualization.
+keywords: asp.net core gantt rows, row configuration, row height, row styling, row templates, gantt grid rows, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/rows
 platform: gantt-sdk
-control: Rows
-publishingplatform: gantt-sdk
+control: Rows - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Rows in ASP.NET MVC Gantt Component
+# Row Structure and Interactions in ASP.NET MVC Gantt Chart
 
 Row represents a task information from the data source, and it is possible to perform the following actions in Gantt rows.
 
@@ -39,8 +40,6 @@ It is possible to change the height of the row in Gantt by setting row height in
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/rowHeight.png)
 
@@ -75,8 +74,6 @@ All tasks available in Gantt was rendered in collapsed state by setting [`Collap
 {% endtabs %}
 {% endif %}
 
-
-
 ![Alt text](images/enableCollapseAll.png)
 
 ### Define expand/collapse status of tasks
@@ -105,8 +102,6 @@ In Gantt, we can render some tasks in collapsed state and some tasks in expanded
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/expandState.png)
 
@@ -137,7 +132,6 @@ On expand action [`Expanding`](https://help.syncfusion.com/cr/cref_files/aspnetc
 {% endtabs %}
 {% endif %}
 
-
 ## Customize rows
 
 You can customize the appearance of a row in grid side, by using the [`rowDataBound`](../api/gantt/#rowdatabound) event and in chart side by using [`queryTaskbarInfo`](../api/gantt/#querytaskbarinfo) event.
@@ -165,8 +159,6 @@ You can customize the appearance of a row in grid side, by using the [`rowDataBo
 {% endtabs %}
 {% endif %}
 
-
-
 ![Alt text](images/customizeRows.png)
 
 ## Styling alternate rows
@@ -174,8 +166,9 @@ You can customize the appearance of a row in grid side, by using the [`rowDataBo
 You can change the background colour of alternative rows in Gantt chart, by overriding the class as shown below.
 
 ```css
-.e-altrow, tr.e-chart-row:nth-child(even)  {
-    background-color: #f2f2f2;
+.e-altrow,
+tr.e-chart-row:nth-child(even) {
+  background-color: #f2f2f2;
 }
 ```
 
@@ -201,8 +194,6 @@ You can change the background colour of alternative rows in Gantt chart, by over
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/alternateRows.png)
 
@@ -235,8 +226,6 @@ In the following demo, **Soil test approval** cell is spanned to two rows in the
 {% endtabs %}
 {% endif %}
 
-
-
 ![Alt text](images/rowSpanning.png)
 
 ## Customize rows and cells
@@ -266,8 +255,6 @@ While rendering the TreeGrid part in Gantt, the [`RowDataBound`](https://help.sy
 {% endtabs %}
 {% endif %}
 
-
-
 ![Alt text](images/customizeRow.png)
 
 ## Clip mode
@@ -276,9 +263,9 @@ The clip mode provides options to display its overflow cell content and it can b
 
 The following are three types of `ClipMode`:
 
-* `Clip`: Truncates the cell content when it overflows its area.
-* `Ellipsis`: Displays ellipsis when content of the cell overflows its area.
-* `EllipsisWithTooltip`: Displays ellipsis when content of the cell overflows its area; it displays the tooltip content when hover over ellipsis.
+- `Clip`: Truncates the cell content when it overflows its area.
+- `Ellipsis`: Displays ellipsis when content of the cell overflows its area.
+- `EllipsisWithTooltip`: Displays ellipsis when content of the cell overflows its area; it displays the tooltip content when hover over ellipsis.
 
 N> By default, all the column's [`ClipMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_ClipMode) property is defined as `EllipsisWithTooltip`.
 

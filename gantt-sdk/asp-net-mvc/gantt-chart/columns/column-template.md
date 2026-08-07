@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Column template in Syncfusion ASP.NET MVC Gantt Component
-description: Learn here all about Column template in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Column Template in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to customize columns using column templates in Syncfusion ASP.NET MVC Gantt Chart for enhanced data display and formatting.
+keywords: asp.net core gantt column template, template columns, custom column template, column customization, data formatting, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/columns/column-template
 platform: gantt-sdk
-control: Columns
-publishingplatform: gantt-sdk
+control: Columns - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Column template in gantt control
+# Column Templates with Custom Cell Content in ASP.NET MVC Gantt Chart
 
 A column template is used to customize the column’s look. The following code example explains how to define the custom template in Gantt using the [`Template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Template) property.
 
@@ -35,7 +36,5 @@ A column template is used to customize the column’s look. The following code e
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/columnTemplate.png)

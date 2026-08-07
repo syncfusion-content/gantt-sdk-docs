@@ -1,23 +1,24 @@
 ---
 layout: post
-title: Splitter in ASP.NET MVC Gantt Component
-description: Learn here all about Splitter in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Splitter in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to customize and manage the splitter control in Syncfusion ASP.NET MVC Gantt Chart to adjust grid and timeline pane sizes.
+keywords: asp.net core gantt splitter, pane resizing, grid splitter, timeline splitter, layout management, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/splitter
 platform: gantt-sdk
-control: Splitter
-publishingplatform: gantt-sdk
+control: Splitter - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Splitter in ASP.NET MVC Gantt component
+# Splitter with Panel Resizing in ASP.NET MVC Gantt Chart
 
 ## Splitter
 
 In the Gantt control, the Splitter separates the TreeGrid section from the Chart section. You can change the position of the Splitter when loading the Gantt control using the [`SplitterSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SplitterSettings) property. By splitting the TreeGrid from the chart, the width of the TreeGrid and chart sections will vary in the control. The [`SplitterSettings.Position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttSplitterSettings.html#Syncfusion_EJ2_Gantt_GanttSplitterSettings_Position) property denotes the percentage of the TreeGrid section’s width to be rendered and this property supports both pixels and percentage values. You can define the splitter position as column index value using the [`SplitterSettings.ColumnIndex`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttSplitterSettings.html#Syncfusion_EJ2_Gantt_GanttSplitterSettings_ColumnIndex) property. You can also define the splitter position with built-in splitter view modes by using the [`SplitterSettings.View`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttSplitterSettings.html#Syncfusion_EJ2_Gantt_GanttSplitterSettings_View) property. The following list is the possible values for this property:
 
-* `Default`: Shows Grid side and Gantt side.
-* `Grid`: Shows Grid side alone in Gantt.
-* `Chart`: Shows chart side alone in Gantt.
+- `Default`: Shows Grid side and Gantt side.
+- `Grid`: Shows Grid side alone in Gantt.
+- `Chart`: Shows chart side alone in Gantt.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -41,8 +42,6 @@ In the Gantt control, the Splitter separates the TreeGrid section from the Chart
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/changeSplitter.png)
 

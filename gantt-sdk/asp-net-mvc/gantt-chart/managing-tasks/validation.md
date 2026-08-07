@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Validation in Syncfusion ASP.NET MVC Gantt Component
-description: Learn here all about Validation Rule in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Validation in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to implement task validation in Syncfusion ASP.NET MVC Gantt Chart to enforce data validation rules and constraints.
+keywords: asp.net core gantt validation, task validation, validation rules, data validation, validation constraints, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/managing-tasks/validation
 platform: gantt-sdk
-control: Validating Tasks
-publishingplatform: gantt-sdk
+control: Managing Tasks - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Validation in ASP.NET MVC Gantt Component
+# Implementing Data Validation and Error Handling in ASP.NET MVC Gantt Chart
 
 ## Column validation
 

@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Toolbar in Syncfusion ASP.NET MVC Gantt Component
-description: Learn all about Tool Bar in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Toolbar in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to add and customize toolbar in Syncfusion ASP.NET MVC Gantt Chart including built-in and custom toolbar buttons for common actions.
+keywords: asp.net core gantt toolbar, toolbar buttons, custom toolbar, gantt toolbar items, toolbar customization, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/tool-bar
 platform: gantt-sdk
-control: Tool Bar
-publishingplatform: gantt-sdk
+control: Toolbar - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Toolbar in Gantt control
+# Toolbar with Built-in and Custom Items in ASP.NET MVC Gantt Chart
 
 The Gantt control provides toolbar support to handle Gantt actions. The [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Toolbar) property accepts the collection of built-in toolbar items and [`ItemModel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ToolbarItem.html) objects for custom toolbar items.
 
@@ -19,20 +20,20 @@ Built-in toolbar items execute standard actions of the Gantt control, and these 
 
 The following table shows built-in toolbar items and its actions.
 
-| Built-in Toolbar Items | Actions |
-|------------------------|---------|
-| Add | Adds a new record. |
-| Cancel | Cancels the edit state. |
-| CollapseAll | Collapses all the rows. |
-| Delete | Deletes the selected record. |
-| Edit | Edits the selected record. |
-| Indent | Indent the selected record to one level.|
-| Outdent | Outdent the elected record to one level.|
-| ExpandAll | Expands all the rows. |
-| NextTimeSpan | Navigate the Gantt timeline to next time span. |
-| PrevTimeSpan | Navigate the Gantt timeline to previous time span. |
-| Search | Searches the records by the given key. |
-| Update | Updates the edited record. |
+| Built-in Toolbar Items | Actions                                            |
+| ---------------------- | -------------------------------------------------- |
+| Add                    | Adds a new record.                                 |
+| Cancel                 | Cancels the edit state.                            |
+| CollapseAll            | Collapses all the rows.                            |
+| Delete                 | Deletes the selected record.                       |
+| Edit                   | Edits the selected record.                         |
+| Indent                 | Indent the selected record to one level.           |
+| Outdent                | Outdent the elected record to one level.           |
+| ExpandAll              | Expands all the rows.                              |
+| NextTimeSpan           | Navigate the Gantt timeline to next time span.     |
+| PrevTimeSpan           | Navigate the Gantt timeline to previous time span. |
+| Search                 | Searches the records by the given key.             |
+| Update                 | Updates the edited record.                         |
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -56,8 +57,6 @@ The following table shows built-in toolbar items and its actions.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 N> The [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Toolbar) has options to define both built-in and custom toolbar items.
 
@@ -90,10 +89,8 @@ By default, the custom toolbar items are at left position. You can change the po
 {% endtabs %}
 {% endif %}
 
-
-
-N> * The [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Toolbar) has options to define both built-in and custom toolbar items.
-<br/> * If a toolbar item does not match the built-in items, it will be treated as a custom toolbar item.
+N> _ The [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Toolbar) has options to define both built-in and custom toolbar items.
+<br/> _ If a toolbar item does not match the built-in items, it will be treated as a custom toolbar item.
 
 ## Built-in and custom items in toolbar
 
@@ -124,8 +121,6 @@ In the following example, the `ExpandAll` and `CollapseAll` are built-in toolbar
 {% endtabs %}
 {% endif %}
 
-
-
 ## Enable/disable toolbar items
 
 You can enable or disable the toolbar items by using the `enableItems` method.
@@ -152,8 +147,6 @@ You can enable or disable the toolbar items by using the `enableItems` method.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Add input elements to toolbar
 

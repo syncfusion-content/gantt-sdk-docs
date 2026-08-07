@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Columns in Syncfusion ASP.NET MVC Gantt Component
-description: Learn here all about Columns in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Columns in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to configure and customize columns in Syncfusion ASP.NET MVC Gantt Chart using field mapping, column types, formatting, and templates.
+keywords: asp.net core gantt columns, gantt column configuration, field mapping, column customization, column types, gantt columns, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/columns
 platform: gantt-sdk
-control: Columns
-publishingplatform: gantt-sdk
+control: Columns - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Columns in in gantt control
+# Columns with Field Mapping and Formatting in ASP.NET MVC Gantt Chart
 
 The column displays information from a bound data source, and you can edit the values of column to update the task details through TreeGrid. The operations such as sorting, filtering, and searching can be performed based on column definitions. To display a Gantt column, the [`Field`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Field) property should be mapped from the data source to the column.
 
@@ -44,8 +45,6 @@ Using the [`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 {% endtabs %}
 {% endif %}
 
-
-
 ![Alt text](images/definingColumns.png)
 
 ## Custom column header
@@ -74,8 +73,6 @@ The column header text can be defined using the [`HeaderText`](https://help.sync
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/headerTemplate.png)
 
@@ -106,8 +103,6 @@ To format the cell values based on a specific culture, use the [`Columns.Format`
 {% endtabs %}
 {% endif %}
 
-
-
 ![Alt text](images/formatColumn.png)
 
 N> By default, the [`number`](../../common/internationalization/#number-formatting) and [`date`](../../common/internationalization/#manipulating-datetime) values are formatted in `en-US` culture.
@@ -116,11 +111,11 @@ N> By default, the [`number`](../../common/internationalization/#number-formatti
 
 The number or integer values can be formatted using the following format strings.
 
-|Format |Description |Remarks|
-|-----|-----|----|
-|N | Denotes numeric type. | The numeric format is followed by an integer value like N2 or N3, which denotes the number of precisions to be allowed.|
-|C | Denotes currency type. | The currency format is followed by an integer value like C2 or C3, which denotes the number of precisions to be allowed.|
-|P | Denotes percentage type | The percentage format expects the input value to be in the range of 0 to 100. For example, the cell value `0.2` is formatted as `20%`. The percentage format is followed by an integer value like P2, P3, which denotes the number of precisions to be allowed.|
+| Format | Description             | Remarks                                                                                                                                                                                                                                                         |
+| ------ | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| N      | Denotes numeric type.   | The numeric format is followed by an integer value like N2 or N3, which denotes the number of precisions to be allowed.                                                                                                                                         |
+| C      | Denotes currency type.  | The currency format is followed by an integer value like C2 or C3, which denotes the number of precisions to be allowed.                                                                                                                                        |
+| P      | Denotes percentage type | The percentage format expects the input value to be in the range of 0 to 100. For example, the cell value `0.2` is formatted as `20%`. The percentage format is followed by an integer value like P2, P3, which denotes the number of precisions to be allowed. |
 
 ### Date formatting
 
@@ -130,13 +125,13 @@ For the built-in date format, you can specify the [`Columns.Format`](https://hel
 
 You can also use the custom format string to format the date values. Some of the custom formats and the formatted date values are given in the following table.
 
-|Format | Formatted value|
-|-----|-----|
-|{ type:'date', format:'dd/MM/yyyy' } | 04/07/2019|
-|{ type:'date', format:'dd.MM.yyyy' } | 04.07.2019|
-|{ type:'date', skeleton:'short' } | 7/4/19|
-|{ type: 'dateTime', format: 'dd/MM/yyyy hh:mm a' } | 04/07/2019 12:00 AM|
-|{ type: 'dateTime', format: 'MM/dd/yyyy hh:mm:ss a' } | 07/04/2019 12:00:00 AM|
+| Format                                                | Formatted value        |
+| ----------------------------------------------------- | ---------------------- |
+| { type:'date', format:'dd/MM/yyyy' }                  | 04/07/2019             |
+| { type:'date', format:'dd.MM.yyyy' }                  | 04.07.2019             |
+| { type:'date', skeleton:'short' }                     | 7/4/19                 |
+| { type: 'dateTime', format: 'dd/MM/yyyy hh:mm a' }    | 04/07/2019 12:00 AM    |
+| { type: 'dateTime', format: 'MM/dd/yyyy hh:mm:ss a' } | 07/04/2019 12:00:00 AM |
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -188,8 +183,6 @@ The tree/expander column is a column in the Gantt control, that has icons to exp
 {% endtabs %}
 {% endif %}
 
-
-
 ![Alt text](images/treeColumnIndex.png)
 
 ## Show or hide columns dynamically
@@ -218,8 +211,6 @@ You can show or hide gantt columns dynamically using external buttons by invokin
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/showhidecol.png)
 
@@ -250,8 +241,6 @@ You can enable or disable gantt action for a particular column by setting the `a
 {% endtabs %}
 {% endif %}
 
-
-
 ## Column type
 
 Column type can be specified using the `columns.type` property. It specifies the type of data the column binds.
@@ -259,10 +248,11 @@ Column type can be specified using the `columns.type` property. It specifies the
 If the `format` is defined for a column, the column uses `type` to select the appropriate format option **number** or **date**.
 
 Gantt column supports the following types:
-* string
-* number
-* boolean
-* date
-* date-time
+
+- string
+- number
+- boolean
+- date
+- date-time
 
 N> If the `type` is not defined, it will be determined from the first record of the `dataSource`. In case if the first record of the `dataSource` is null/blank value for a column then it is necessary to define the `type` for that column.

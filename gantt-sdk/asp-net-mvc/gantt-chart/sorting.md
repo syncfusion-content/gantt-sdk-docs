@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Sorting in ASP.NET MVC Gantt Component
-description: Learn here all about Sorting in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Sorting in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to implement and customize sorting functionality in Syncfusion ASP.NET MVC Gantt Chart for efficient data organization and analysis.
+keywords: asp.net core gantt sorting, data sorting, column sorting, multi-level sorting, sort order, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/sorting
 platform: gantt-sdk
-control: Sorting
-publishingplatform: gantt-sdk
+control: Sorting - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Sorting in ASP.NET MVC Gantt Chart Component
+# Column Sorting with Multi-Sort in ASP.NET MVC Gantt Chart
 
 Sorting enables you to sort data in the ascending or descending order. To sort a column, click the column header.
 
@@ -40,14 +41,12 @@ To enable sorting in the Gantt control, set the [`AllowSorting`](https://help.sy
 {% endtabs %}
 {% endif %}
 
-
-
 The following screenshot shows the output of multicolumn sorting in Gantt control.
 
 ![Alt text](images/multiSorting.png)
 
-N> * Gantt columns are sorted in the ascending order. If you click the already sorted column, the sort direction toggles.
-<br/> * To disable sorting for a particular column, set the [`Columns.AllowSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_AllowSorting) property to false.
+N> _ Gantt columns are sorted in the ascending order. If you click the already sorted column, the sort direction toggles.
+<br/> _ To disable sorting for a particular column, set the [`Columns.AllowSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_AllowSorting) property to false.
 
 ## Sorting column on Gantt initialization
 
@@ -76,8 +75,6 @@ The Gantt control can be rendered with sorted columns initially, and this can be
 {% endtabs %}
 {% endif %}
 
-
-
 ## Sorting column dynamically
 
 Columns in the Gantt control can be sorted dynamically using the `sortColumn` method. The following code example demonstrates how to invoke the `sortColumn` method by clicking the custom button.
@@ -104,8 +101,6 @@ Columns in the Gantt control can be sorted dynamically using the `sortColumn` me
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/beforeSorting.png)
 
@@ -142,8 +137,6 @@ In the Gantt control, you can clear all the sorted columns and return to previou
 {% endtabs %}
 {% endif %}
 
-
-
 ## Sorting events
 
 During the sort action, the Gantt control triggers two events. The [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ActionBegin) event triggers before the sort action starts, and the [`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ActionComplete) event triggers after the sort action is completed.
@@ -170,8 +163,6 @@ During the sort action, the Gantt control triggers two events. The [`ActionBegin
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 N> The `args.requestType` is the current action name. For example, for sorting the `args.requestType`, value is **sorting**.
 
@@ -203,7 +194,6 @@ The following code snippets explains how to achieve this.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
 
 ## Touch interaction
 

@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Undo Redo in Syncfusion ASP.NET MVC Gantt Component
-description: Learn all about Undo Redo in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Undo Redo in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to implement undo and redo functionality in Syncfusion ASP.NET MVC Gantt Chart to track and reverse user actions and edits.
+keywords: asp.net core gantt undo redo, undo functionality, redo functionality, action history, change tracking, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/undo-redo
 platform: gantt-sdk
-control: Undo Redo
-publishingplatform: gantt-sdk
+control: Undo Redo - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Undo Redo in Gantt component
+# Undo and Redo with Action History Management in ASP.NET MVC Gantt Chart
 
 The Undo feature enables users to revert the most recent action performed in the Gantt Chart. It helps undo changes made to tasks, dependencies, or other actions within the Gantt Chart.
 
@@ -20,26 +22,26 @@ The undo redo feature can be enabled in Gantt by using the [EnableUndoRedo](http
 
 By default, all the gantt features listed in the below table will be restored for undo and redo actions. However, you have the option to specify only the required actions to be restored using [UndoRedoActions](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_UndoRedoActions) property.
 
-| Built-in Undo Redo Items | Actions |
-|------------------------|---------|
-| Edit | Undo redo actions can be performed for edited record.|
-| Delete | Undo redo actions can be performed for deleted record.|
-| Add | Undo redo actions can be performed for newly added record.|
-| ColumnReorder | Undo redo actions can be performed for reordered column.|
-| Indent | Undo redo actions can be performed for indented record.|
-| Outdent | Undo redo actions can be performed for outdented record.|
-| ColumnResize | Undo redo actions can be performed for resized column.|
-| Sorting | Undo redo actions can be performed for sorted column.|
-| Filtering | Undo redo actions can be performed for filtered record.|
-| Search | Undo redo actions can be performed for searched value.|
-| ZoomIn | Undo redo actions can be performed for zoomIn action.|
-| ZoomOut | Undo redo actions can be performed for zoomOut action.|
-| ZoomToFit | Undo redo actions can be performed for zoomToFit action.|
-| ColumnState | Undo redo actions can be performed for hided or shown columns.|
-| RowDragAndDrop | Undo redo actions can be performed for row drag and drop.|
-| TaskbarDragAndDrop |  Undo redo actions can be performed for taskbar drag and drop.|
-| PreviousTimeSpan | Undo redo actions can be performed for previous time span acton.|
-| NextTimeSpan | Undo redo actions can be performed for next time span action.|
+| Built-in Undo Redo Items | Actions                                                          |
+| ------------------------ | ---------------------------------------------------------------- |
+| Edit                     | Undo redo actions can be performed for edited record.            |
+| Delete                   | Undo redo actions can be performed for deleted record.           |
+| Add                      | Undo redo actions can be performed for newly added record.       |
+| ColumnReorder            | Undo redo actions can be performed for reordered column.         |
+| Indent                   | Undo redo actions can be performed for indented record.          |
+| Outdent                  | Undo redo actions can be performed for outdented record.         |
+| ColumnResize             | Undo redo actions can be performed for resized column.           |
+| Sorting                  | Undo redo actions can be performed for sorted column.            |
+| Filtering                | Undo redo actions can be performed for filtered record.          |
+| Search                   | Undo redo actions can be performed for searched value.           |
+| ZoomIn                   | Undo redo actions can be performed for zoomIn action.            |
+| ZoomOut                  | Undo redo actions can be performed for zoomOut action.           |
+| ZoomToFit                | Undo redo actions can be performed for zoomToFit action.         |
+| ColumnState              | Undo redo actions can be performed for hided or shown columns.   |
+| RowDragAndDrop           | Undo redo actions can be performed for row drag and drop.        |
+| TaskbarDragAndDrop       | Undo redo actions can be performed for taskbar drag and drop.    |
+| PreviousTimeSpan         | Undo redo actions can be performed for previous time span acton. |
+| NextTimeSpan             | Undo redo actions can be performed for next time span action.    |
 
 In the following code example, `Edit` and `Delete` actions are specified in `UndoRedoActions` property.
 

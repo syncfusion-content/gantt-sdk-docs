@@ -1,29 +1,30 @@
 ---
 layout: post
-title: Splitting and merging task in Syncfusion ASP.NET MVC Gantt Component
-description: Learn here all about Splitting and merging task in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Splitting and Merging Tasks in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to split and merge tasks in Syncfusion ASP.NET MVC Gantt Chart for managing interrupted work and task consolidation.
+keywords: asp.net core gantt split merge tasks, task splitting, task merging, interrupt tasks, task consolidation, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/managing-tasks/splitting-and-merging-tasks
 platform: gantt-sdk
-control: Managing Tasks
-publishingplatform: gantt-sdk
+control: Managing Tasks - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Splitting and Merging tasks
+# Splitting and Merging Tasks in ASP.NET MVC Gantt Chart
 
 ## Splitting task at load time
 
 To split task at load time, we can define segment details in both hierarchical and self-referential way. Refer below link for more details.
 
-* [Split task at load time](https://ej2.syncfusion.com/aspnetmvc/documentation/gantt/data-binding#split-task)
+- [Split task at load time](https://ej2.syncfusion.com/aspnetmvc/documentation/gantt/data-binding#split-task)
 
 ## Split task dynamically
 
 The task can be split dynamically, either by using the context menu or dialog.
 
-* `Dialog`: `Segments` tab is rendered in add/edit dialog, when the [`TaskFields.Segments`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) or [`TaskFields.segmentId`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) property is mapped. Using this tab, we can split the task based on the original start and end date of a particular task.
+- `Dialog`: `Segments` tab is rendered in add/edit dialog, when the [`TaskFields.Segments`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) or [`TaskFields.segmentId`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) property is mapped. Using this tab, we can split the task based on the original start and end date of a particular task.
 
-* `Context menu`: When the [`TaskFields.Segments`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) or [`TaskFields.SegmentId`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) property is mapped and the [`EnableContextMenu`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableContextMenu) property is enabled, `Split Task` item will be included in the context menu.
+- `Context menu`: When the [`TaskFields.Segments`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) or [`TaskFields.SegmentId`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) property is mapped and the [`EnableContextMenu`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableContextMenu) property is enabled, `Split Task` item will be included in the context menu.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -47,8 +48,6 @@ The task can be split dynamically, either by using the context menu or dialog.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/split-tasks.png)
 

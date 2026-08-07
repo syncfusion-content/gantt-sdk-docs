@@ -1,20 +1,21 @@
 ---
 layout: post
-title: Data Binding in Syncfusion ASP.NET MVC Gantt Component
-description: Learn here all about Data Binding in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Data Binding in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn data binding in Syncfusion ASP.NET MVC Gantt Chart with local arrays, remote data, DataManager, and dynamic data source updates for project management.
+keywords: asp.net core gantt data binding, datamanager, json data, local data, data source binding, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/data-binding
 platform: gantt-sdk
-control: Data Binding
-publishingplatform: gantt-sdk
+control: Data Binding - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Data Binding in Gantt
+# Data Binding from Local and Remote Sources in ASP.NET MVC Gantt Chart
 
 The Gantt control uses `DataManager` for binding the data source, which supports both RESTful JSON data services and local JavaScript object array. The [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataSource) property can be assigned either with the instance of DataManager or JavaScript object array collection. The Gantt control supports binding two types of data:
 
-* Local data
-* Remote data
+- Local data
+- Remote data
 
 ## Local data
 
@@ -24,8 +25,8 @@ In local data binding, the data source for rendering the Gantt control is retrie
 
 The following are the two types of data binding possible with the Gantt control:
 
-* Hierarchical data binding.
-* Self-referential data binding (Flat data).
+- Hierarchical data binding.
+- Self-referential data binding (Flat data).
 
 ### Hierarchical data binding
 
@@ -56,14 +57,12 @@ The following code example shows how to bind the hierarchical local data into th
 {% endtabs %}
 {% endif %}
 
-
-
 ### Self-referential data binding (Flat data)
 
 The Gantt control can be bound with self-referential data by mapping the data source field values to the [`Id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Id) and [`ParentID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_ParentID) properties.
 
-* **ID field**: This field contains unique values used to identify each individual task and it is mapped to the [`Id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Id) property.
-* **Parent ID field**: This field contains values that indicate parent tasks and it is mapped to the [`ParentID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_ParentID) property.
+- **ID field**: This field contains unique values used to identify each individual task and it is mapped to the [`Id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Id) property.
+- **Parent ID field**: This field contains values that indicate parent tasks and it is mapped to the [`ParentID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_ParentID) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -87,8 +86,6 @@ The Gantt control can be bound with self-referential data by mapping the data so
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Remote data
 
@@ -116,8 +113,6 @@ To bind remote data to the Gantt component, assign service data as an instance o
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/remoteData.png)
 
@@ -151,8 +146,6 @@ We can define data source for Gantt as instance of DataManager using `url` prope
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ### Remote Save Adaptor
 
@@ -261,7 +254,6 @@ When <code>EnableVirtualization</code> is enabled and <code>LoadChildOnDemand</c
 When a root node is expanded, its child nodes are rendered and maintained in a collection locally, such that on consecutive expand/collapse actions on the root node, the child nodes are loaded locally instead of from the remote server.
 
 When the <code>LoadChildOnDemand</code> is enabled, parent records are rendered in an expanded state.
-
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -444,7 +436,7 @@ The following code example describes handling of Load on demand at server end.
                 val.duration = ord.duration;
                 val.predecessor = ord.predecessor;
             }
-            
+
             return value;
         }
 
@@ -567,11 +559,12 @@ The following code example describes handling of Load on demand at server end.
         }
 
 ```
+
 ### Limitations
 
-* Filtering, sorting  and searching are not supported in load on demand.
-* Only Self-Referential type data is supported with remote data binding in Gantt Chart.
-* Load-on-demand supports only the validated data source
+- Filtering, sorting and searching are not supported in load on demand.
+- Only Self-Referential type data is supported with remote data binding in Gantt Chart.
+- Load-on-demand supports only the validated data source
 
 ### Sending additional parameters to the server
 
@@ -599,8 +592,6 @@ We can pass additional parameters using [`addParams`](../api/data/query/#addpara
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 #### Handling HTTP error
 
@@ -631,8 +622,6 @@ The argument passed to the `actionFailure` event contains the error details retu
 {% endtabs %}
 {% endif %}
 
-
-
 #### Binding with Fetch
 
 You can use Gantt [`dataSource`](../api/gantt#datasource) property to bind the data source to Gantt from external Fetch request. In the below code we have fetched the data source from the server with the help of Fetch request and provided that to `dataSource` property by using [`onSuccess`](../api/base/ajax/#onsuccess) event of the Fetch.
@@ -660,8 +649,6 @@ You can use Gantt [`dataSource`](../api/gantt#datasource) property to bind the d
 {% endtabs %}
 {% endif %}
 
-
-
 N> If you bind the dataSource from this way, then it acts like a local dataSource. So you cannot perform any server side crud actions.
 
 ## Split task
@@ -673,23 +660,14 @@ The `Split-task` feature allows you to split a task or interrupt the work during
 To split a task at load time in hierarchical way, we need to define the segment details in datasource and this field should be mapped by using the [`taskFields.Segments`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) property.
 
 ```html
-
-GanttDataSource Record2Child1 = new GanttDataSource()
-            {
-                TaskId = 3,
-                TaskName = "Plan timeline",
-                StartDate = new DateTime(2019, 02, 04),
-                EndDate = new DateTime(2019, 02, 10),
-                Duration = 10,
-                Progress = 60,
-                Segments = new List<GanttSegment>
-                {
-                    new GanttSegment {StartDate = new DateTime(2019,02,04), Duration = 2},
-                    new GanttSegment {StartDate = new DateTime(2019,02,05), Duration = 5},
-                    new GanttSegment {StartDate = new DateTime(2019,02,08), Duration = 3}
-                }
-            };
-
+GanttDataSource Record2Child1 = new GanttDataSource() { TaskId = 3, TaskName =
+"Plan timeline", StartDate = new DateTime(2019, 02, 04), EndDate = new
+DateTime(2019, 02, 10), Duration = 10, Progress = 60, Segments = new
+List<GanttSegment>
+  { new GanttSegment {StartDate = new DateTime(2019,02,04), Duration = 2}, new
+  GanttSegment {StartDate = new DateTime(2019,02,05), Duration = 5}, new
+  GanttSegment {StartDate = new DateTime(2019,02,08), Duration = 3} } };
+</GanttSegment>
 ```
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -715,8 +693,6 @@ GanttDataSource Record2Child1 = new GanttDataSource()
 {% endtabs %}
 {% endif %}
 
-
-
 ![Alt text](images/split-tasks.png)
 
 ### Self-referential
@@ -724,14 +700,8 @@ GanttDataSource Record2Child1 = new GanttDataSource()
 We can also define segment details as a flat data and this collection can be mapped by using [`segmentData`](../api/gantt/#segmentData) property. The segment id field of this collection is mapped by using the [`taskFields.SegmentId`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) property.
 
 ```html
-
-  GanttSegment Record1 = new GanttSegment()
-            {
-                segmentId = 2,
-                Duration = 2,
-                StartDate = new DateTime(2019, 04, 02),
-            };
-
+GanttSegment Record1 = new GanttSegment() { segmentId = 2, Duration = 2,
+StartDate = new DateTime(2019, 04, 02), };
 ```
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -756,8 +726,6 @@ We can also define segment details as a flat data and this collection can be map
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/split-tasks.png)
 

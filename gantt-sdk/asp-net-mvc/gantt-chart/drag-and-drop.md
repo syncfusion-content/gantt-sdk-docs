@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Row Drag and Drop in ASP.NET MVC Gantt Component
-description: Learn here all about Row Drag and Drop in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Drag and Drop in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to implement drag and drop functionality in Syncfusion ASP.NET MVC Gantt Chart for intuitive task management and timeline manipulation.
+keywords: asp.net core gantt drag drop, task dragging, timeline manipulation, intuitive task management, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/drag-and-drop
 platform: gantt-sdk
-control: Drag and Drop
-publishingplatform: gantt-sdk
+control: Drag and Drop - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Row Drag and Drop in ASP.NET MVC Gantt Component
+# Enabling Drag and Drop for Rows in ASP.NET MVC Gantt Chart
 
 You can dynamically rearrange the rows in the Gantt control by using the `AllowRowDragAndDrop` property. Using this property, row drag and drop can be enabled or disabled in Gantt. Using this feature, rows can be dropped at above and below as a sibling or child to the existing rows.
 
@@ -34,8 +36,6 @@ You can dynamically rearrange the rows in the Gantt control by using the `AllowR
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/defaultdrag.png)
 
@@ -65,8 +65,6 @@ Gantt also supports dragging multiple rows at a time and drop them on any rows a
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/multidrag.png)
 
@@ -103,12 +101,12 @@ This mode can be enable by setting the [AllowTaskbarDragAndDrop](https://help.sy
 
 We provide various events to customize the row drag and drop action, the following table explains about the available events and its details.
 
-|Event Name |Description|
-|-----|-----|
-|`RowDragStartHelper`  |Triggers when clicking the drag icon or Gantt row.|
-|`RowDragStart`  |Triggers when drag action starts in Gantt.|
-|`RowDrag`  |Triggers while dragging the Gantt row.|
-|`RowDrop`  |Triggers when a drag row was dropped on the target row.|
+| Event Name           | Description                                             |
+| -------------------- | ------------------------------------------------------- |
+| `RowDragStartHelper` | Triggers when clicking the drag icon or Gantt row.      |
+| `RowDragStart`       | Triggers when drag action starts in Gantt.              |
+| `RowDrag`            | Triggers while dragging the Gantt row.                  |
+| `RowDrop`            | Triggers when a drag row was dropped on the target row. |
 
 ## Customize row drag and drop action
 
@@ -203,9 +201,9 @@ In the below example drop action is cancelled and dropped above to target row.
 
 Gantt provides option to perform row drag and drop action programmatically by using the `reorderRows` method, this method can be used for any external actions like button click. The following arguments are used to specify the positions to drag and drop a row:
 
-* `fromIndexes`: Index value of source(dragging) row.
-* `toIndex`: Value of target index.
-* `position`: Drop positions such as above, below, or child.
+- `fromIndexes`: Index value of source(dragging) row.
+- `toIndex`: Value of target index.
+- `position`: Drop positions such as above, below, or child.
 
 The following code example shows how to drag and drop a row on button click action.
 

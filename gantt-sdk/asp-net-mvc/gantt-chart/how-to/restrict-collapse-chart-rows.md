@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Restrict Collapse Chart Rows in ASP.NET MVC Gantt Component
-description: Learn here all about Restrict Collapse Chart Rows in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Restrict Collapse Chart Rows in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to restrict row collapsing in Syncfusion ASP.NET MVC Gantt Chart by preventing users from collapsing specific rows or all rows.
+keywords: asp.net core gantt restrict collapse, collapse restriction, prevent collapse, row collapse, expand collapse, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/how-to/restrict-collapse-chart-rows
 platform: gantt-sdk
-control: Restrict Collapse Chart Rows
-publishingplatform: gantt-sdk
+control: How-to - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Open add/edit dialog dynamically
+# Restrict Collapse Chart Rows in ASP.NET MVC Gantt Chart
 
 Restriction of collapsing the records when clicking on gantt chart rows can be performed by using the [`collapsing`](../../api/gantt/#collapsing) event.
 
@@ -35,5 +36,3 @@ Restriction of collapsing the records when clicking on gantt chart rows can be p
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-

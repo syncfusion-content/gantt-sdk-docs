@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Work in ASP.NET MVC Gantt Component
-description: Learn here all about Work in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Work in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to manage and track work in Syncfusion ASP.NET MVC Gantt Chart including work units, resource allocation, and work calculations.
+keywords: asp.net core gantt work, work units, resource work, work calculation, project work, effort tracking, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/work
 platform: gantt-sdk
-control: Work
-publishingplatform: gantt-sdk
+control: Work - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Work in Gantt component
+# Work and Effort Tracking with Task Type Support in ASP.NET MVC Gantt Chart
 
 ## Work
 
@@ -40,17 +41,15 @@ N> When the work field is mapped from the data source, the default task type wil
 {% endtabs %}
 {% endif %}
 
-
-
 ![Alt text](images/work.png)
 
 ## Task type
 
 The work, duration and resource unit fields of a task depends upon each other and will change automatically on editing any one of these fields. But we can also set these field’s values as constant using the [`taskType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.TaskType.html) property. `FixedUnit` is the default [`taskType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.TaskType.html). The following values can be set to the [`taskType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.TaskType.html) property,
 
-* `FixedDuration` - Duration task field will remain constant while updating resource unit or work field.
-* `FixedWork` - Work field will remain constant while updating resource unit or duration fields.
-* `FixedUnit` - Resource units will remain constant while updating duration or work field.
+- `FixedDuration` - Duration task field will remain constant while updating resource unit or work field.
+- `FixedWork` - Work field will remain constant while updating resource unit or duration fields.
+- `FixedUnit` - Resource units will remain constant while updating duration or work field.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -75,17 +74,15 @@ The work, duration and resource unit fields of a task depends upon each other an
 {% endtabs %}
 {% endif %}
 
-
-
 ![Alt text](images/taskType.png)
 
 Following table explains how the work, duration and resource unit fields will gets updated on changing any of the fields
 
-|Task Type | Changes in Duration | Changes in work | Changes in Resource Units|
-|-----|-----|-----|-----|
-|Fixed Duration | Work field updates | Resource unit updates| Work field updates|
-|Fixed Work | Resource unit updates.  For manually scheduled task work will update.| Duration field updates.  For manually scheduled task resource unit updates. |Duration will update.  For manually scheduled task work field updates.|
-|Fixed Unit | Work field updates | Duration field updates.  For manually scheduled task resource unit updates.| Duration will update.  For manually scheduled task work field updates.|
+| Task Type      | Changes in Duration                                                  | Changes in work                                                            | Changes in Resource Units                                             |
+| -------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| Fixed Duration | Work field updates                                                   | Resource unit updates                                                      | Work field updates                                                    |
+| Fixed Work     | Resource unit updates. For manually scheduled task work will update. | Duration field updates. For manually scheduled task resource unit updates. | Duration will update. For manually scheduled task work field updates. |
+| Fixed Unit     | Work field updates                                                   | Duration field updates. For manually scheduled task resource unit updates. | Duration will update. For manually scheduled task work field updates. |
 
 N> 1. Fixed Unit is the default taskType in Gantt.
 <br/> 2. The above calculations are not applicable for Milestones.
