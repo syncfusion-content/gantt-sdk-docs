@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Performance tips for ASP.NET Core Gantt control | Syncfusion
-description: Checkout and learn here all about how to improve the loading performance of ASP.NET Core Gantt control of Syncfusion Essential JS 2 and more.
+title: Performance in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn about performance optimization techniques in Syncfusion ASP.NET Core Gantt Chart when dealing with large datasets and improving rendering speed.
+keywords: asp.net core gantt performance, large data handling, virtual scrolling, lazy loading, optimization, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/performance
 platform: gantt-sdk
-control: Gantt permformance
-publishingplatform: gantt-sdk
+control: Performance - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Performance tips for ASP.NET Core Gantt control
+# Optimization with Virtual Scrolling in ASP.NET Core Gantt Chart
 
 This article is a comprehensive guide on improving the loading performance of the Gantt component, especially when dealing with large datasets and a significant number of columns. It provides valuable insights into the steps required to bind a large data source without experiencing performance degradation. By offering detailed explanations and actionable tips, this resource aims to empower readers with the knowledge and best practices necessary to optimize the performance of the Gantt component during data binding, ensuring a smooth and efficient user experience.
 

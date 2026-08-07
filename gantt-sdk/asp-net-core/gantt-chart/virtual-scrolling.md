@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Virtual Scroll in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Virtual Scroll in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Virtual Scroll in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to enable virtual scrolling in Syncfusion ASP.NET Core Gantt Chart to efficiently handle large datasets and improve performance.
+keywords: asp.net core gantt virtual scroll, virtual scrolling, large datasets, performance optimization, scroll performance, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/virtual-scrolling
 platform: gantt-sdk
-control: Virtual Scroll
-publishingplatform: gantt-sdk
+control: Virtual Scroll - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Virtual Scrolling in Gantt
+# Implementing Virtual Scrolling for Performance in ASP.NET Core Gantt Chart
 
 Virtual Scroll support in Gantt allows you to load large amount of data without performance degradation. To enable Virtual Scrolling, you need to inject `VirtualScroll` module in Gantt.
 

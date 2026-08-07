@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Undo Redo in Syncfusion ASP.NET Core Gantt Component
-description: Learn all about Undo Redo in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Undo Redo in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to implement undo and redo functionality in Syncfusion ASP.NET Core Gantt Chart to track and reverse user actions and edits.
+keywords: asp.net core gantt undo redo, undo functionality, redo functionality, action history, change tracking, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/undo-redo
 platform: gantt-sdk
-control: Undo Redo
-publishingplatform: gantt-sdk
+control: Undo Redo - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Undo Redo in Gantt component
+# Undo and Redo with Action History Management in ASP.NET Core Gantt Chart
 
 The Undo feature enables users to revert the most recent action performed in the Gantt Chart. It helps undo changes made to tasks, dependencies, or other actions within the Gantt Chart.
 

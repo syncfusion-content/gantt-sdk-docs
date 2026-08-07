@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Scheduling Tasks in ASP.NET Core Gantt Component
-description: Learn here all about Scheduling Tasks in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Scheduling Tasks in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to schedule and manage tasks in Syncfusion ASP.NET Core Gantt Chart including task duration, dependencies, and automatic schedule calculation.
+keywords: asp.net core gantt scheduling, task scheduling, task duration, date scheduling, task dependencies, project scheduling, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/scheduling-tasks
 platform: gantt-sdk
-control: Scheduling Tasks
-publishingplatform: gantt-sdk
+control: Scheduling Tasks - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Scheduling Tasks
+# Task Scheduling with Duration Units in ASP.NET Core Gantt Chart
 
 ## Duration units
 

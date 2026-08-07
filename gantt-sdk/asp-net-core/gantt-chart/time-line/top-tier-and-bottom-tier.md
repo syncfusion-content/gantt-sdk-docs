@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Top tier and Bottom tier in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Top tier and Bottom tier in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Timeline Tiers in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to configure timeline tiers in Syncfusion ASP.NET Core Gantt Chart including top tier and bottom tier for hierarchical date display.
+keywords: asp.net core gantt timeline tiers, timeline hierarchy, top tier, bottom tier, timeline configuration, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/time-line/top-tier-and-bottom-tier
 platform: gantt-sdk
-control: Time Line
-publishingplatform: gantt-sdk
+control: Timeline - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Top tier and Bottom tier
+# Customizing Timeline Top and Bottom Tiers in ASP.NET Core Gantt Chart
 
 Gantt control contains two tier layout in timeline, we can customize the top tier and bottom tier using [`TopTier`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTimelineSettings.html#Syncfusion_EJ2_Gantt_GanttTimelineSettings_TopTier) and [`BottomTier`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTimelineSettings.html#Syncfusion_EJ2_Gantt_GanttTimelineSettings_BottomTier) properties. Timeline tier's unit can be defined by using [`Unit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTimelineTierSettings.html#Syncfusion_EJ2_Gantt_GanttTimelineTierSettings_Unit) property and [`Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTimelineTierSettings.html#Syncfusion_EJ2_Gantt_GanttTimelineTierSettings_Format) property was used to define date format of timeline cell and [`Count`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTimelineTierSettings.html#Syncfusion_EJ2_Gantt_GanttTimelineTierSettings_Count) property was used to define how many unit will be combined as single cell and [`Formatter`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTimelineTierSettings.html#Syncfusion_EJ2_Gantt_GanttTimelineTierSettings_Formatter) property was used to define custom method to format the date value of timeline cell.
 

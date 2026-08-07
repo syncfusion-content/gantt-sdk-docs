@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Maintaining Data in Server in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about maintaining data in server in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Maintaining data in server 
+title: Maintaining Data in Server in Vue Gantt Chart | Syncfusion
+description: Learn how to maintain modified task data in server database using DataManager and RESTful web services in Vue Gantt Chart.
+keywords: vue gantt server data, maintain data, datamanager, crud operations, rest api, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/managing-tasks/maintaining-data-in-server
 platform: gantt-sdk
+control: Maintaining Data in Server - Gantt Chart
+publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Maintaining Data in Server in Vue Gantt Chart Component
+# Maintaining Data Persistence on Server in Vue Gantt Chart
 
 All the modified data in Gantt Chart control can be maintained in the database using RESTful web services.
 
