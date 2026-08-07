@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Taskbar Editing in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about taskbar editing in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Taskbar Editing in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to enable and customize taskbar editing in Syncfusion ASP.NET Core Gantt Chart for inline task modifications and updates.
+keywords: asp.net core gantt taskbar editing, edit taskbar, inline editing, drag taskbar, edit tasks, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managing-tasks/task-bar-editing
 platform: gantt-sdk
-control: Managing Tasks
-publishingplatform: gantt-sdk
+control: Managing Tasks - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Taskbar editing action in gantt control
+# Editing Tasks Using Taskbar Drag and Resize in ASP.NET Core Gantt Chart
 
 ## Taskbar editing
 

@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Task Scheduling in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Task Scheduling in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Task Scheduling in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to implement task scheduling in Syncfusion ASP.NET Core Gantt Chart including automatic scheduling, manual task entry, and date management.
+keywords: asp.net core gantt task scheduling, schedule tasks, task dates, manual scheduling, automatic scheduling, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/task-scheduling
 platform: gantt-sdk
-control: Task Scheduling
-publishingplatform: gantt-sdk
+control: Task Scheduling - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Task Scheduling
+# Task Scheduling Modes with Auto and Manual in ASP.NET Core Gantt Chart
 
 The Gantt provides support for automatic and manual task scheduling modes. It is used to indicate whether the start date and end date of all the tasks will be automatically validated or not. [`taskMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskMode) is the property used to change the schedule mode of a task.
 

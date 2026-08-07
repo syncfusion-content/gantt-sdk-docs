@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Header and footer of PDF export in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Header and footer of PDF export in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: PDF Export Header and Footer in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to customize headers and footers in PDF exports from Syncfusion ASP.NET Core Gantt Chart for professional document formatting.
+keywords: asp.net core gantt pdf header footer, pdf customization, export header, export footer, pdf formatting, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/pdf-export/header-and-footer
 platform: gantt-sdk
-control: Pdf Export
-publishingplatform: gantt-sdk
+control: PDF Export - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Customizing header and footer of PDF export
+# Adding Headers and Footers to PDF Exports in ASP.NET Core Gantt Chart
 
 PDF export provides an option to specify and customize text, page number, line and image in header and footer of exported PDF document by using [pdfExportProperties](https://ej2.syncfusion.com/documentation/api/gantt/pdfExportProperties/#properties).
 

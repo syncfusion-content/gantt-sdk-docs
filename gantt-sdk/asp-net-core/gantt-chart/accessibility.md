@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Accessibility in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Accessibility in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn about accessibility features in the Syncfusion ASP.NET Core Gantt Chart, including WCAG 2.2 compliance, keyboard navigation, and screen reader support.
+keywords: asp.net core gantt accessibility, wcag 2.2, section 508, wcag roles, gantt compliance, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/accessibility
 platform: gantt-sdk
-control: Accessibility
-publishingplatform: gantt-sdk
+control: Accessibility - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Accessibility in ASP.NET Core Gantt component
+# Accessibility and ARIA Compliance in ASP.NET Core Gantt Chart
 
 The Gantt component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

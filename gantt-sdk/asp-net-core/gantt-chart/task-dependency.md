@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Task Dependency in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Task Dependency in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Task Dependency in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to define and manage task dependencies in Syncfusion ASP.NET Core Gantt Chart to manage task relationships and project scheduling.
+keywords: asp.net core gantt task dependency, task relationships, dependency types, predecessor tasks, gantt dependencies, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/task-dependency
 platform: gantt-sdk
-control: Task Dependency
-publishingplatform: gantt-sdk
+control: Task Dependency - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Task dependencies in Gantt
+# Managing Task Dependencies in ASP.NET Core Gantt Chart
 
 Task dependency or task relationship can be established between two tasks in Gantt. This dependency affects the project schedule. If you change the predecessor of a task, it will affect the successor task, which will affect the next task, and so on. Relationship can be established between parent-parent tasks, child-child tasks, parent-child and child-parent task.
 

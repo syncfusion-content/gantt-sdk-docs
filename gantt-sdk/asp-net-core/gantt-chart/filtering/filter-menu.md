@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Filtering in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Menu Filtering in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Filter Menu in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to enable filtering in Syncfusion ASP.NET Core Gantt Chart using menu filters, search, hierarchy modes, and custom options.
+keywords: asp.net core gantt filter menu, menu filtering, filter dropdown, filter options, filter interface, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/filtering/filter-menu
 platform: gantt-sdk
-control: Filtering
-publishingplatform: gantt-sdk
+control: Filtering - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Menu filtering in Gantt control
+# Using Filter Menu for Data Filtering in ASP.NET Core Gantt Chart
 
 The Gantt control provides the menu filtering support for each column. You can enable the filter menu by setting the [`AllowFiltering`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~AllowFiltering.html) to `true`. The filter menu UI will be rendered based on its column type, which allows you to filter data. You can filter the records with different operators.
 

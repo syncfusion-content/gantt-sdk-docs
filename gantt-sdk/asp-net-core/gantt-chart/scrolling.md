@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Scrolling Feature in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Scrolling in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Scrolling in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to implement and customize scrolling in Syncfusion ASP.NET Core Gantt Chart including horizontal and vertical scrolling for large projects.
+keywords: asp.net core gantt scrolling, horizontal scroll, vertical scroll, page scrolling, virtual scroll, large datasets, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/scrolling
 platform: gantt-sdk
-control: Scrolling
-publishingplatform: gantt-sdk
+control: Scrolling - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Scrolling in Gantt Control
+# Configuring Scrolling Behavior and Positioning in ASP.NET Core Gantt Chart
 
 The scrollbar will be displayed in the gantt when content exceeds the element [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Width) or [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Height). The vertical and horizontal scrollbars will be displayed based on the following criteria:
 

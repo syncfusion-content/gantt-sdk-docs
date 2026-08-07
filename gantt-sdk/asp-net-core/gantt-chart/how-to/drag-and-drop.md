@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Drag And Drop in ASP.NET Core Gantt Component
-description: Learn here all about Drag And Drop in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Drag and Drop in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to drag and drop records from other components to Syncfusion ASP.NET Core Gantt Chart for seamless task management integration.
+keywords: asp.net core gantt drag drop, drag and drop tasks, record dragging, drop to gantt, external drag drop, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/how-to/drag-and-drop
 platform: gantt-sdk
-control: Drag And Drop
-publishingplatform: gantt-sdk
+control: How-to - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Drag and Drop the Record from another component to Gantt
+# Drag and Drop from Another Component in ASP.NET Core Gantt Chart
 
 In Gantt, it is possible to drag a record from another component and drop it in Gantt chart with updating the Gantt record. Here, dragging an item from `TreeView` component to Gantt and that item is updated as a resource for the Gantt record, we can achieve this, by using [`nodeDragStop`](../../api/treeview/#nodedragstop) event of `TreeView` control.
 
