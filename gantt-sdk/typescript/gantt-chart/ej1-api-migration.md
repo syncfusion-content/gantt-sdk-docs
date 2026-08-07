@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Ej1 api migration in TypeScript Gantt control | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion TypeScript Gantt control of Syncfusion Essential JS 2 and more.
+title: EJ1 API Migration in TypeScript Gantt Chart | Syncfusion
+description: Learn how to migrate from EJ1 to EJ2 Gantt Chart in TypeScript with the complete API mapping reference, code changes, and step-by-step migration guidance.
+keywords: typescript gantt ej1 migration, api migration, ej2 gantt, backwards compatibility, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/ej1-api-migration
 platform: gantt-sdk
-control: Ej1 api migration 
-publishingplatform: gantt-sdk
+control: EJ1 API Migration - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Ej1 api migration in TypeScript Gantt control
+# Migration from Gantt EJ1 to TypeScript Gantt Chart EJ2
 
 This topic shows the API equivalent of JS2 Gantt component to be used, while migrating your project that uses JS1 Gantt.
 
@@ -290,3 +291,4 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 |Triggers on initialization of Gantt control | **Event:** *load* <br/><br/>`var ganttObj = new ej.Gantt($("#Gantt"), {`<br/>`load: function (args) {}`<br/>`});` | **Event:** *load* <br/><br/>`let gantt: Gantt = new Gantt({`<br/>`load: function (args) {}`<br/>`});`<br/>|
 | Triggers after splitter resize action | **Event:** *splitterResized* <br/><br/>`var ganttObj = new ej.Gantt($("#Gantt"), {`<br/>`splitterResized: function (args) {}`<br/>`});` | **Event:** *splitterResized* <br/><br/>`let gantt: Gantt = new Gantt({`<br/>`splitterResized: function (args) {}`<br/>`});`<br/>|
 | Triggers when taskbar item is clicked | **Event:** *taskbarClick* <br/><br/>`var ganttObj = new ej.Gantt($("#Gantt"), {`<br/>`taskbarClick: function (args) {}`<br/>`});`| **Event:** *onTaskbarClick* <br/><br/>`let gantt: Gantt = new Gantt({`<br/>`onTaskbarClick: function (args) {}`<br/>`}); |
+

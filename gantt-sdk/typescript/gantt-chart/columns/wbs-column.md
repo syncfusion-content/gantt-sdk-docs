@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Work Breakdown Structure (WBS) in TypeScript Gantt | Syncfusion
-description: Learn how to integrate and manage WBS codes in the Syncfusion TypeScript Gantt Chart control to improve task hierarchy visualization and project tracking.
+title: WBS Column in TypeScript Gantt Chart | Syncfusion
+description: Learn how to display Work Breakdown Structure (WBS) codes in the TypeScript Gantt Chart to organize and track project tasks hierarchically.
+keywords: TypeScript gantt wbs column, work breakdown structure, wbs codes, gantt task hierarchy, project planning, wbs task numbering, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/columns/wbs-column
 platform: gantt-sdk
-control: WBS Column
-publishingplatform: gantt-sdk
+control: WBS Column - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Work Breakdown Structure (WBS) in TypeScript Gantt Chart
+# WBS Column for Hierarchical Task Identification in TypeScript Gantt Chart
 
 The Work Breakdown Structure (WBS) organizes project tasks hierarchically by assigning unique codes to each task. This improves task visibility and management, especially in large-scale construction or enterprise-level software projects.
 

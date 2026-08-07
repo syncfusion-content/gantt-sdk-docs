@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Taskbar in JavaScript Gantt Chart Control | Syncfusion
-description: Learn how to customize taskbars in the Syncfusion JavaScript Gantt Chart control, including height, templates, and editing interactions.
+title: Taskbar in JavaScript Gantt Chart | Syncfusion
+description: Learn how to customize taskbars in Syncfusion JavaScript Gantt Chart with templates, heights, and editing interactions for enhanced task visualization.
+keywords: javascript gantt taskbar, taskbar customization, taskbar templates, taskbar colors, taskbar editing, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/taskbar
 platform: gantt-sdk
-control: Taskbar 
-publishingplatform: gantt-sdk
+control: Taskbar - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Taskbar in JavaScript Gantt Chart Control
+# Taskbar Customization with Templates in JavaScript Gantt Chart
 
 The taskbar in the JavaScript Gantt Chart control visually represents tasks on the timeline, showing duration, progress, and dependencies, enabling intuitive project management. Taskbars support customization through properties like [taskbarHeight](../api/gantt#taskbarheight) for sizing and [queryTaskbarInfo](../api/gantt#querytaskbarinfo) event for conditional formatting based on task data like progress. Multi-taskbar support in resource view, enabled by [enableMultiTaskbar](../api/gantt#enablemultitaskbar), summarizes child task progress in collapsed parent taskbars. Connector lines, styled via [connectorLineWidth](../api/gantt#connectorlinewidth) and [connectorLineBackground](../api/gantt#connectorlinebackground), illustrate dependencies. Tooltips, controlled by [tooltipSettings](../api/gantt/tooltipSettings/), provide hover details for taskbars, baselines, and timelines, with templates for custom content. Editing interactions include dragging for rescheduling (via [allowTaskbarDragAndDrop](../api/gantt#allowtaskbardraganddrop)) and resizing for duration, progress changes, triggering events like [taskbarEditing](../gantt/events#taskbarediting) and [taskbarEdited](../gantt/events#taskbaredited) for validation.
 

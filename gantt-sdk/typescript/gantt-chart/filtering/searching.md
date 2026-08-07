@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Searching in TypeScript Gantt control | Syncfusion
-description: Learn here all about Searching in Syncfusion TypeScript Gantt control of Syncfusion Essential JS 2 and more.
+title: Searching in TypeScript Gantt Chart | Syncfusion
+description: Learn how to enable quick search in Syncfusion TypeScript Gantt Chart to quickly find tasks and data across the project timeline.
+keywords: TypeScript gantt searching, search tasks, text search, find tasks, search functionality, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/filtering/searching
 platform: gantt-sdk
-control: Searching 
-publishingplatform: gantt-sdk
+control: Searching - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Searching in TypeScript Gantt Chart Control
+# Implementing Quick Search for Task Data in TypeScript Gantt Chart Control
 
 The [TypeScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control allows quick filtering of records based on search input, improving access to relevant data in large datasets.
 
