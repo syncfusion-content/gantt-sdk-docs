@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Virtual Scroll in TypeScript Gantt Chart Control | Syncfusion
-description: Learn how to configure virtual scrolling in the Syncfusion TypeScript Gantt Chart control for high-performance rendering of large datasets and wide timelines.
+title: Virtual Scrolling in TypeScript Gantt Chart | Syncfusion
+description: Learn how to configure virtual scrolling in Syncfusion TypeScript Gantt Chart for high-performance rendering of large datasets and wide timelines.
+keywords: TypeScript gantt virtual scroll, large data, performance, virtual rendering, high performance, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/scrolling/virtual-scrolling
 platform: gantt-sdk
-control: Virtual scroll 
-publishingplatform: gantt-sdk
+control: Virtual Scrolling - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Virtual Scroll in TypeScript Gantt Chart Control
+# Implementing Virtual Scrolling for Performance in TypeScript Gantt Chart
 
 Virtual scrolling in the TypeScript Gantt Chart control enhances performance by rendering only visible tasks and timeline segments, minimizing DOM operations for large datasets or extensive timelines. It includes row virtualization for handling thousands of tasks (e.g., 10,000 tasks in a project) and timeline virtualization for wide timelines (e.g., multi-year projects), both requiring [VirtualScroll](../../api/gantt/index-default#virtualscrollmodule) injection. Row virtualization renders tasks within the viewport, while timeline virtualization loads timeline cells on-demand during horizontal scrolling, ensuring efficient rendering for complex project management.
 
