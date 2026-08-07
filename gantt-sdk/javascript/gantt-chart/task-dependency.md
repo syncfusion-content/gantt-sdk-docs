@@ -12,11 +12,11 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Managing Task Dependencies in JavaScript Gantt Chart
 
-Task dependency in the [JavaScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control establishes relationships between tasks, affecting scheduling where changes to predecessors impact successors. Dependencies are categorized into four types—Start to Start (SS), Start to Finish (SF), Finish to Start (FS), and Finish to Finish (FF)—mapped via the [taskFields.dependency](../api/gantt/taskFields#dependency) property in the data source. Parent dependencies are enabled by default with [allowParentDependency](../api/gantt#allowparentdependency) set to **true**, allowing relationships between parent-parent, child-child, parent-child, and child-parent tasks. Offsets support day, hour, or minute units for precise timing, and validation modes handle conflicts during editing via the [actionBegin](../api/gantt#actionbegin) event. Connector lines are customized using [connectorLineWidth](../api/gantt#connectorlinewidth) and [connectorLineBackground](../api/gantt#connectorlinebackground), with the `queryTaskbarInfo` event enabling dynamic styling. Public methods like [addPredecessor](../api/gantt#addpredecessor) and [removePredecessor](../api/gantt#removepredecessor) allow programmatic management, ensuring accurate visualization with ARIA labels for accessibility and responsive scaling for mobile views.
+Task dependency in the [JavaScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control establishes relationships between tasks, affecting scheduling where changes to predecessors impact successors. Dependencies are categorized into four types—Start to Start (SS), Start to Finish (SF), Finish to Start (FS), and Finish to Finish (FF)—mapped via the [taskFields.dependency](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#dependency) property in the data source. Parent dependencies are enabled by default with [allowParentDependency](https://ej2.syncfusion.com/javascript/documentation/api/gantt#allowparentdependency) set to **true**, allowing relationships between parent-parent, child-child, parent-child, and child-parent tasks. Offsets support day, hour, or minute units for precise timing, and validation modes handle conflicts during editing via the [actionBegin](https://ej2.syncfusion.com/javascript/documentation/api/gantt#actionbegin) event. Connector lines are customized using [connectorLineWidth](https://ej2.syncfusion.com/javascript/documentation/api/gantt#connectorlinewidth) and [connectorLineBackground](https://ej2.syncfusion.com/javascript/documentation/api/gantt#connectorlinebackground), with the `queryTaskbarInfo` event enabling dynamic styling. Public methods like [addPredecessor](https://ej2.syncfusion.com/javascript/documentation/api/gantt#addpredecessor) and [removePredecessor](https://ej2.syncfusion.com/javascript/documentation/api/gantt#removepredecessor) allow programmatic management, ensuring accurate visualization with ARIA labels for accessibility and responsive scaling for mobile views.
 
 ## Configure task dependencies
 
-Task dependencies are defined in the data source as string values (e.g., '2FS+3d' for Finish to Start with 3-day offset) and mapped using [taskFields.dependency](../api/gantt/taskFields#dependency). Parent dependencies can be enabled by [allowParentDependency](../api/gantt#allowparentdependency) property. By default, the `allowParentDependency` property will be **true**.
+Task dependencies are defined in the data source as string values (e.g., '2FS+3d' for Finish to Start with 3-day offset) and mapped using [taskFields.dependency](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#dependency). Parent dependencies can be enabled by [allowParentDependency](https://ej2.syncfusion.com/javascript/documentation/api/gantt#allowparentdependency) property. By default, the `allowParentDependency` property will be **true**.
 
 Multiple predecessor relationships can be defined in a single task by assigning a comma-separated string to the `Predecessor` field, such as `'2FS,3FS'`. This configuration allows the Gantt Chart to interpret and render multiple dependencies during the initial data load.
 
@@ -36,7 +36,7 @@ The following example establishes dependencies. This code renders connector line
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/task-dependency/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/task-dependency" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -62,21 +62,22 @@ The following example establishes dependencies. This code renders connector line
 ## Understand task relationship types
 
 Task relationships are categorized into four types based on start and finish dates:
+
 - Start to Start (SS): Successor starts with predecessor.
 
-    ![Start to Start dependency](./images/ss.png)
+  ![Start to Start dependency](./images/ss.png)
 
 - Start to Finish (SF): Successor finishes when predecessor starts.
 
-    ![Start to Finish dependency](./images/sf.png)
+  ![Start to Finish dependency](./images/sf.png)
 
 - Finish to Start (FS): Successor starts after predecessor finishes (default).
 
-    ![Finish to Start dependency](./images/fs.png)
+  ![Finish to Start dependency](./images/fs.png)
 
 - Finish to Finish (FF): Successor finishes with predecessor.
 
-    ![Finish to Finish dependency](./images/ff.png)
+  ![Finish to Finish dependency](./images/ff.png)
 
 Specify types in the data source (e.g., '2SS+1h') for hour-based offsets.
 
@@ -96,7 +97,7 @@ The following example uses duration units. This code applies offsets such as '2F
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -115,7 +116,7 @@ The following example uses duration units. This code applies offsets such as '2F
 
 ## Predecessor offset synchronization on initial load
 
-The [autoUpdatePredecessorOffset](../api/gantt#autoupdatepredecessoroffset) property specifies whether the Gantt Chart automatically adjusts and synchronizes the predecessor offset values (e.g., "+2", "-1d") in the predecessor column display and the underlying data during initial data load/binding, so they match the actually rendered taskbar positions and dependency lines.
+The [autoUpdatePredecessorOffset](https://ej2.syncfusion.com/javascript/documentation/api/gantt#autoupdatepredecessoroffset) property specifies whether the Gantt Chart automatically adjusts and synchronizes the predecessor offset values (e.g., "+2", "-1d") in the predecessor column display and the underlying data during initial data load/binding, so they match the actually rendered taskbar positions and dependency lines.
 
 - When **enabled**: During the initial data binding/load, the Gantt recalculates the offset portions of predecessor strings based on the final rendered dates after applying calendar rules, weekends, holidays, and working times. The predecessor column in the grid and the corresponding data field values are updated to reflect these accurate offsets - preventing visual or data mismatch between what is displayed and what was actually used for rendering dependency lines - without affecting task dates, durations, or triggering any scheduling/validation logic.
 
@@ -131,7 +132,7 @@ The [autoUpdatePredecessorOffset](../api/gantt#autoupdatepredecessoroffset) prop
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs7" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -150,7 +151,7 @@ The [autoUpdatePredecessorOffset](../api/gantt#autoupdatepredecessoroffset) prop
 
 ## Disable automatic dependency offset updates
 
-Automatic offset updates during taskbar editing are disabled with [updateOffsetOnTaskbarEdit](../api/gantt#updateoffsetontaskbaredit) set to **false**, allowing manual updates via the dependency tab or predecessor column.
+Automatic offset updates during taskbar editing are disabled with [updateOffsetOnTaskbarEdit](https://ej2.syncfusion.com/javascript/documentation/api/gantt#updateoffsetontaskbaredit) set to **false**, allowing manual updates via the dependency tab or predecessor column.
 
 The following example disables automatic updates. This code preserves dependency offsets during edits, requiring manual adjustments.
 
@@ -164,7 +165,7 @@ The following example disables automatic updates. This code preserves dependency
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -183,7 +184,7 @@ The following example disables automatic updates. This code preserves dependency
 
 ## Handle dependency validation modes
 
-Dependency validation during editing uses the [actionBegin](../api/gantt#actionbegin) event with `requestType: 'validateLinkedTask'`. The `validateMode` argument defines modes:
+Dependency validation during editing uses the [actionBegin](https://ej2.syncfusion.com/javascript/documentation/api/gantt#actionbegin) event with `requestType: 'validateLinkedTask'`. The `validateMode` argument defines modes:
 
 - `respectLink`: Prioritizes links, reverting invalid edits.
 - `removeLink`: Prioritizes editing, removing conflicting links.
@@ -201,7 +202,7 @@ The following example enables `respectLink` mode. This code reverts edits violat
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -220,7 +221,7 @@ The following example enables `respectLink` mode. This code reverts edits violat
 
 ## Use validation dialog
 
-When all validation modes are disabled in [actionBegin](../api/gantt#actionbegin), a dialog prompts users to choose modes like canceling edits or removing links, based on the successor's start date relative to the predecessor.
+When all validation modes are disabled in [actionBegin](https://ej2.syncfusion.com/javascript/documentation/api/gantt#actionbegin), a dialog prompts users to choose modes like canceling edits or removing links, based on the successor's start date relative to the predecessor.
 
 The following example enables the validation dialog. This code displays options like "Remove the link and move the task" for conflicts.
 
@@ -234,7 +235,7 @@ The following example enables the validation dialog. This code displays options 
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs5" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -288,9 +289,9 @@ The following example toggles dependency lines. This code hides lines on button 
 
 You can manage task dependencies by adding, updating, or removing predecessor links. These methods control task order and execution:
 
-- [addPredecessor](../api/gantt#addpredecessor): Adds a predecessor to a task to define its dependency.
-- [removePredecessor](../api/gantt#removepredecessor): Removes an existing dependency from the task.
-- [updatePredecessor](../api/gantt#updatepredecessor): Updates the dependency details using the task's ID.
+- [addPredecessor](https://ej2.syncfusion.com/javascript/documentation/api/gantt#addpredecessor): Adds a predecessor to a task to define its dependency.
+- [removePredecessor](https://ej2.syncfusion.com/javascript/documentation/api/gantt#removepredecessor): Removes an existing dependency from the task.
+- [updatePredecessor](https://ej2.syncfusion.com/javascript/documentation/api/gantt#updatepredecessor): Updates the dependency details using the task's ID.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -302,7 +303,7 @@ You can manage task dependencies by adding, updating, or removing predecessor li
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/predecessor-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -321,7 +322,7 @@ You can manage task dependencies by adding, updating, or removing predecessor li
 
 ## Customize connector lines
 
-Connector lines are styled globally with [connectorLineWidth](../api/gantt#connectorlinewidth) and [connectorLineBackground](../api/gantt#connectorlinebackground).
+Connector lines are styled globally with [connectorLineWidth](https://ej2.syncfusion.com/javascript/documentation/api/gantt#connectorlinewidth) and [connectorLineBackground](https://ej2.syncfusion.com/javascript/documentation/api/gantt#connectorlinebackground).
 
 The following example sets the connector line background color as red:
 
@@ -335,7 +336,7 @@ The following example sets the connector line background color as red:
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/connector-line/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/connector-line" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -354,7 +355,7 @@ The following example sets the connector line background color as red:
 
 ## Disable predecessor validation
 
-By default, Gantt Chart task dates are validated based on predecessor values. To disable this validation, set the [enablePredecessorValidation](../api/gantt#enablepredecessorvalidation) property to **false**.
+By default, Gantt Chart task dates are validated based on predecessor values. To disable this validation, set the [enablePredecessorValidation](https://ej2.syncfusion.com/javascript/documentation/api/gantt#enablepredecessorvalidation) property to **false**.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -366,7 +367,7 @@ By default, Gantt Chart task dates are validated based on predecessor values. To
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/disable-predecessor/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/disable-predecessor" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -388,6 +389,7 @@ By default, Gantt Chart task dates are validated based on predecessor values. To
 > When virtualization is enabled, dependency lines are shown only for tasks currently visible in the viewport. If two tasks are connected by a line, the line will appear only if at least one of the tasks is visible. If both tasks are expanded and the line spans across pages, it will still be displayed as long as one task is in view.
 
 ## See also
+
 - [How to configure task constraints?](./task-constraints)
 - [How to customize taskbars?](./taskbar)
 - [How to enable critical path?](./critical-path)

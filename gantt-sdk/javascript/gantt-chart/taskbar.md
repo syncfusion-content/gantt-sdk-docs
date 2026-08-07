@@ -12,11 +12,11 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Taskbar Customization with Templates in JavaScript Gantt Chart
 
-The taskbar in the JavaScript Gantt Chart control visually represents tasks on the timeline, showing duration, progress, and dependencies, enabling intuitive project management. Taskbars support customization through properties like [taskbarHeight](../api/gantt#taskbarheight) for sizing and [queryTaskbarInfo](../api/gantt#querytaskbarinfo) event for conditional formatting based on task data like progress. Multi-taskbar support in resource view, enabled by [enableMultiTaskbar](../api/gantt#enablemultitaskbar), summarizes child task progress in collapsed parent taskbars. Connector lines, styled via [connectorLineWidth](../api/gantt#connectorlinewidth) and [connectorLineBackground](../api/gantt#connectorlinebackground), illustrate dependencies. Tooltips, controlled by [tooltipSettings](../api/gantt/tooltipSettings/), provide hover details for taskbars, baselines, and timelines, with templates for custom content. Editing interactions include dragging for rescheduling (via [allowTaskbarDragAndDrop](../api/gantt#allowtaskbardraganddrop)) and resizing for duration, progress changes, triggering events like [taskbarEditing](../gantt/events#taskbarediting) and [taskbarEdited](../gantt/events#taskbaredited) for validation.
+The taskbar in the JavaScript Gantt Chart control visually represents tasks on the timeline, showing duration, progress, and dependencies, enabling intuitive project management. Taskbars support customization through properties like [taskbarHeight](https://ej2.syncfusion.com/javascript/documentation/api/gantt#taskbarheight) for sizing and [queryTaskbarInfo](https://ej2.syncfusion.com/javascript/documentation/api/gantt#querytaskbarinfo) event for conditional formatting based on task data like progress. Multi-taskbar support in resource view, enabled by [enableMultiTaskbar](https://ej2.syncfusion.com/javascript/documentation/api/gantt#enablemultitaskbar), summarizes child task progress in collapsed parent taskbars. Connector lines, styled via [connectorLineWidth](https://ej2.syncfusion.com/javascript/documentation/api/gantt#connectorlinewidth) and [connectorLineBackground](https://ej2.syncfusion.com/javascript/documentation/api/gantt#connectorlinebackground), illustrate dependencies. Tooltips, controlled by [tooltipSettings](https://ej2.syncfusion.com/javascript/documentation/api/gantt/tooltipSettings), provide hover details for taskbars, baselines, and timelines, with templates for custom content. Editing interactions include dragging for rescheduling (via [allowTaskbarDragAndDrop](https://ej2.syncfusion.com/javascript/documentation/api/gantt#allowtaskbardraganddrop)) and resizing for duration, progress changes, triggering events like [taskbarEditing](https://ej2.syncfusion.com/javascript/documentation/gantt/events#taskbarediting) and [taskbarEdited](https://ej2.syncfusion.com/javascript/documentation/gantt/events#taskbaredited) for validation.
 
 ## Customize taskbar height
 
-Taskbar height for child and parent tasks is set using the [taskbarHeight](../api/gantt#taskbarheight) property, which accepts pixel values and must be less than [rowHeight](../api/gantt#rowheight) to avoid overflow.
+Taskbar height for child and parent tasks is set using the [taskbarHeight](https://ej2.syncfusion.com/javascript/documentation/api/gantt#taskbarheight) property, which accepts pixel values and must be less than [rowHeight](https://ej2.syncfusion.com/javascript/documentation/api/gantt#rowheight) to avoid overflow.
 
 The following example demonstrates how to set a custom taskbar height of 40 pixels, delivering consistent appearance across tasks while preserving full responsiveness.
 
@@ -30,7 +30,7 @@ The following example demonstrates how to set a custom taskbar height of 40 pixe
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/appearanceandstyling-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/appearanceandstyling-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -49,7 +49,7 @@ The following example demonstrates how to set a custom taskbar height of 40 pixe
 
 ## Apply conditional formatting
 
-Conditional formatting replaces default taskbar appearance using the [queryTaskbarInfo](../api/gantt#querytaskbarinfo) event, accessing task data to modify colors, progress bars, or styles based on criteria like progress.
+Conditional formatting replaces default taskbar appearance using the [queryTaskbarInfo](https://ej2.syncfusion.com/javascript/documentation/api/gantt#querytaskbarinfo) event, accessing task data to modify colors, progress bars, or styles based on criteria like progress.
 
 This example demonstrates formatting taskbars based on progress, where **args.data.progress** in the event handler dynamically sets **args.taskbarBgColor** and **args.progressBarBgColor** to visually highlight critical tasks or milestones.
 
@@ -63,7 +63,7 @@ This example demonstrates formatting taskbars based on progress, where **args.da
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/appearanceandstyling-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/appearanceandstyling-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -96,7 +96,7 @@ In the following example, the progress gripper icon is customized by targeting t
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/change-gripper-icon-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/change-gripper-icon-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -115,7 +115,7 @@ In the following example, the progress gripper icon is customized by targeting t
 
 ## Control taskbar and notes icon visibility
 
-Taskbars and notes icons can be hidden dynamically using the [queryTaskbarInfo](../api/gantt#querytaskbarinfo) and [queryCellInfo](../api/gantt#querycellinfo) events, enabling conditional visibility based on task data (e.g., hiding milestones or empty notes for cleaner timelines). Hiding taskbars affects only the timeline element, not the row or labels, and requires `taskFields.notes` for notes icon rendering.
+Taskbars and notes icons can be hidden dynamically using the [queryTaskbarInfo](https://ej2.syncfusion.com/javascript/documentation/api/gantt#querytaskbarinfo) and [queryCellInfo](https://ej2.syncfusion.com/javascript/documentation/api/gantt#querycellinfo) events, enabling conditional visibility based on task data (e.g., hiding milestones or empty notes for cleaner timelines). Hiding taskbars affects only the timeline element, not the row or labels, and requires `taskFields.notes` for notes icon rendering.
 
 The following example hides taskbars for specific tasks and notes icons for empty notes:
 
@@ -129,7 +129,7 @@ The following example hides taskbars for specific tasks and notes icons for empt
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/taskbar-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/taskbar-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -150,7 +150,7 @@ This code hides taskbars for tasks with IDs 7–10 (e.g., estimation tasks) and 
 
 ## Prevent taskbar editing for specific tasks
 
-Taskbar editing, including dragging, resizing, or adding dependencies, can be prevented for specific tasks (e.g., locked milestones or completed tasks) using the [actionBegin](../api/gantt#actionbegin) event for validation and [queryTaskbarInfo](../api/gantt#querytaskbarinfo) to hide editing UI elements like grippers and connector points. This ensures visual and functional restrictions, with ARIA attributes updated for accessibility.
+Taskbar editing, including dragging, resizing, or adding dependencies, can be prevented for specific tasks (e.g., locked milestones or completed tasks) using the [actionBegin](https://ej2.syncfusion.com/javascript/documentation/api/gantt#actionbegin) event for validation and [queryTaskbarInfo](https://ej2.syncfusion.com/javascript/documentation/api/gantt#querytaskbarinfo) to hide editing UI elements like grippers and connector points. This ensures visual and functional restrictions, with ARIA attributes updated for accessibility.
 
 The following example disables taskbar editing for Task ID 4 by canceling drag, resize, and dependency actions in the `actionBegin` event and hiding resize grippers and connector points in `queryTaskbarInfo` using CSS classes. Editing remains enabled for other tasks through the `Edit` service injection and the `allowTaskbarEditing` property, while global CSS ensures the styles are applied to the Gantt Chart component’s DOM.
 
@@ -164,60 +164,60 @@ import { Gantt, Edit, Selection, IActionBeginEventArgs, IQueryTaskbarInfoEventAr
 Gantt.Inject(Edit, Selection);
 
 let gantt: Gantt = new Gantt({
-    dataSource: [
-      { TaskId: 1, TaskName: 'Product Concept', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
-      { TaskId: 2, TaskName: 'Defining the product and its usage', StartDate: new Date('04/02/2019'), Duration: 3, Progress: 30, ParentId: 1 },
-      { TaskId: 3, TaskName: 'Defining target audience', StartDate: new Date('04/02/2019'), Duration: 3, ParentId: 1 },
-      { TaskId: 4, TaskName: 'Prepare product sketch and notes', StartDate: new Date('04/02/2019'), Duration: 2, Progress: 30, Predecessor: '2', ParentId: 1 },
-      { TaskId: 5, TaskName: 'Concept Approval', StartDate: new Date('04/02/2019'), Duration: 0, Predecessor: '3,4', Indicators: [{ date: '04/10/2019', name: '#briefing', title: 'Product concept briefing' }] },
-      { TaskId: 6, TaskName: 'Market Research', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
-      { TaskId: 7, TaskName: 'Demand Analysis', StartDate: new Date('04/04/2019'), EndDate: new Date('04/21/2019'), ParentId: 6 },
-      { TaskId: 8, TaskName: 'Customer strength', StartDate: new Date('04/04/2019'), Duration: 4, Progress: 30, Predecessor: '5', ParentId: 7 },
-      { TaskId: 9, TaskName: 'Market opportunity analysis', StartDate: new Date('04/04/2019'), Duration: 4, Predecessor: '5', ParentId: 7 },
-      { TaskId: 10, TaskName: 'Competitor Analysis', StartDate: new Date('04/04/2019'), Duration: 4, Progress: 30, Predecessor: '7,8', ParentId: 6 }
-    ],
-    height: '430px',
-    projectStartDate: new Date('03/28/2019'),
-    projectEndDate: new Date('04/18/2019'),
-    taskFields: {
-        id: 'TaskId',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        duration: 'Duration',
-        progress: 'Progress',
-        parentID: 'ParentId'
-    },
-    labelSettings: {
-        leftLabel: 'TaskName'
-    },
-    editSettings: {
-        allowTaskbarEditing: true
-    },
-    queryTaskbarInfo: (args: IQueryTaskbarInfoEventArgs) => {
-        if ((args.data as any).TaskId === 4) {
-            args.taskbarElement.style.cursor = 'default';
-            args.taskbarElement.classList.add(
-                'e-prevent-reschedule',
-                'e-prevent-add-relation-left',
-                'e-prevent-add-relation-right'
-            );
-        }
-    },
-    actionBegin: (args: IActionBeginEventArgs) => {
-        if (
-            (args.data as any).TaskId === 4 &&
-            [
-                'ChildDrag',
-                'ProgressResizing',
-                'LeftResizing',
-                'RightResizing',
-                'ConnectorPointLeftDrag',
-                'ConnectorPointRightDrag'
-            ].includes(args.taskBarEditAction as string)
-        ) {
-            args.cancel = true;
-        }
-    }
+dataSource: [
+{ TaskId: 1, TaskName: 'Product Concept', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
+{ TaskId: 2, TaskName: 'Defining the product and its usage', StartDate: new Date('04/02/2019'), Duration: 3, Progress: 30, ParentId: 1 },
+{ TaskId: 3, TaskName: 'Defining target audience', StartDate: new Date('04/02/2019'), Duration: 3, ParentId: 1 },
+{ TaskId: 4, TaskName: 'Prepare product sketch and notes', StartDate: new Date('04/02/2019'), Duration: 2, Progress: 30, Predecessor: '2', ParentId: 1 },
+{ TaskId: 5, TaskName: 'Concept Approval', StartDate: new Date('04/02/2019'), Duration: 0, Predecessor: '3,4', Indicators: [{ date: '04/10/2019', name: '#briefing', title: 'Product concept briefing' }] },
+{ TaskId: 6, TaskName: 'Market Research', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
+{ TaskId: 7, TaskName: 'Demand Analysis', StartDate: new Date('04/04/2019'), EndDate: new Date('04/21/2019'), ParentId: 6 },
+{ TaskId: 8, TaskName: 'Customer strength', StartDate: new Date('04/04/2019'), Duration: 4, Progress: 30, Predecessor: '5', ParentId: 7 },
+{ TaskId: 9, TaskName: 'Market opportunity analysis', StartDate: new Date('04/04/2019'), Duration: 4, Predecessor: '5', ParentId: 7 },
+{ TaskId: 10, TaskName: 'Competitor Analysis', StartDate: new Date('04/04/2019'), Duration: 4, Progress: 30, Predecessor: '7,8', ParentId: 6 }
+],
+height: '430px',
+projectStartDate: new Date('03/28/2019'),
+projectEndDate: new Date('04/18/2019'),
+taskFields: {
+id: 'TaskId',
+name: 'TaskName',
+startDate: 'StartDate',
+duration: 'Duration',
+progress: 'Progress',
+parentID: 'ParentId'
+},
+labelSettings: {
+leftLabel: 'TaskName'
+},
+editSettings: {
+allowTaskbarEditing: true
+},
+queryTaskbarInfo: (args: IQueryTaskbarInfoEventArgs) => {
+if ((args.data as any).TaskId === 4) {
+args.taskbarElement.style.cursor = 'default';
+args.taskbarElement.classList.add(
+'e-prevent-reschedule',
+'e-prevent-add-relation-left',
+'e-prevent-add-relation-right'
+);
+}
+},
+actionBegin: (args: IActionBeginEventArgs) => {
+if (
+(args.data as any).TaskId === 4 &&
+[
+'ChildDrag',
+'ProgressResizing',
+'LeftResizing',
+'RightResizing',
+'ConnectorPointLeftDrag',
+'ConnectorPointRightDrag'
+].includes(args.taskBarEditAction as string)
+) {
+args.cancel = true;
+}
+}
 });
 
 gantt.appendTo('#Gantt');
@@ -271,62 +271,62 @@ gantt.appendTo('#Gantt');
 {% highlight js tabtitle="index.js" %}
 
 let GanttData = [
-  { TaskId: 1, TaskName: 'Product Concept', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
-  { TaskId: 2, TaskName: 'Defining the product and its usage', StartDate: new Date('04/02/2019'), Duration: 3, Progress: 30, ParentId: 1 },
-  { TaskId: 3, TaskName: 'Defining target audience', StartDate: new Date('04/02/2019'), Duration: 3, ParentId: 1 },
-  { TaskId: 4, TaskName: 'Prepare product sketch and notes', StartDate: new Date('04/02/2019'), Duration: 2, Progress: 30, Predecessor: '2', ParentId: 1 },
-  { TaskId: 5, TaskName: 'Concept Approval', StartDate: new Date('04/02/2019'), Duration: 0, Predecessor: '3,4', Indicators: [{ date: '04/10/2019', name: '#briefing', title: 'Product concept briefing' }] },
-  { TaskId: 6, TaskName: 'Market Research', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
-  { TaskId: 7, TaskName: 'Demand Analysis', StartDate: new Date('04/04/2019'), EndDate: new Date('04/21/2019'), ParentId: 6 },
-  { TaskId: 8, TaskName: 'Customer strength', StartDate: new Date('04/04/2019'), Duration: 4, Progress: 30, Predecessor: '5', ParentId: 7 },
-  { TaskId: 9, TaskName: 'Market opportunity analysis', StartDate: new Date('04/04/2019'), Duration: 4, Predecessor: '5', ParentId: 7 },
-  { TaskId: 10, TaskName: 'Competitor Analysis', StartDate: new Date('04/04/2019'), Duration: 4, Progress: 30, Predecessor: '7,8', ParentId: 6 }
+{ TaskId: 1, TaskName: 'Product Concept', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
+{ TaskId: 2, TaskName: 'Defining the product and its usage', StartDate: new Date('04/02/2019'), Duration: 3, Progress: 30, ParentId: 1 },
+{ TaskId: 3, TaskName: 'Defining target audience', StartDate: new Date('04/02/2019'), Duration: 3, ParentId: 1 },
+{ TaskId: 4, TaskName: 'Prepare product sketch and notes', StartDate: new Date('04/02/2019'), Duration: 2, Progress: 30, Predecessor: '2', ParentId: 1 },
+{ TaskId: 5, TaskName: 'Concept Approval', StartDate: new Date('04/02/2019'), Duration: 0, Predecessor: '3,4', Indicators: [{ date: '04/10/2019', name: '#briefing', title: 'Product concept briefing' }] },
+{ TaskId: 6, TaskName: 'Market Research', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
+{ TaskId: 7, TaskName: 'Demand Analysis', StartDate: new Date('04/04/2019'), EndDate: new Date('04/21/2019'), ParentId: 6 },
+{ TaskId: 8, TaskName: 'Customer strength', StartDate: new Date('04/04/2019'), Duration: 4, Progress: 30, Predecessor: '5', ParentId: 7 },
+{ TaskId: 9, TaskName: 'Market opportunity analysis', StartDate: new Date('04/04/2019'), Duration: 4, Predecessor: '5', ParentId: 7 },
+{ TaskId: 10, TaskName: 'Competitor Analysis', StartDate: new Date('04/04/2019'), Duration: 4, Progress: 30, Predecessor: '7,8', ParentId: 6 }
 ];
 
 var ganttChart = new ej.gantt.Gantt({
-    dataSource: GanttData,
-    height: '430px',
-    projectStartDate: new Date('03/28/2019'),
-    projectEndDate: new Date('04/18/2019'),
-    taskFields: {
-        id: 'TaskId',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        duration: 'Duration',
-        progress: 'Progress',
-        parentID: 'ParentId'
-    },
-    labelSettings: {
-        leftLabel: 'TaskName'
-    },
-    editSettings: {
-        allowTaskbarEditing: true
-    },
-    queryTaskbarInfo: function (args) {
-        if (args.data.TaskId === 4) {
-            args.taskbarElement.style.cursor = 'default';
-            args.taskbarElement.classList.add(
-                'e-prevent-reschedule',
-                'e-prevent-add-relation-left',
-                'e-prevent-add-relation-right'
-            );
-        }
-    },
-    actionBegin: function (args) {
-        if (
-            args.data.TaskId === 4 &&
-            [
-                'ChildDrag',
-                'ProgressResizing',
-                'LeftResizing',
-                'RightResizing',
-                'ConnectorPointLeftDrag',
-                'ConnectorPointRightDrag'
-            ].indexOf(args.taskBarEditAction) !== -1
-        ) {
-            args.cancel = true;
-        }
-    }
+dataSource: GanttData,
+height: '430px',
+projectStartDate: new Date('03/28/2019'),
+projectEndDate: new Date('04/18/2019'),
+taskFields: {
+id: 'TaskId',
+name: 'TaskName',
+startDate: 'StartDate',
+duration: 'Duration',
+progress: 'Progress',
+parentID: 'ParentId'
+},
+labelSettings: {
+leftLabel: 'TaskName'
+},
+editSettings: {
+allowTaskbarEditing: true
+},
+queryTaskbarInfo: function (args) {
+if (args.data.TaskId === 4) {
+args.taskbarElement.style.cursor = 'default';
+args.taskbarElement.classList.add(
+'e-prevent-reschedule',
+'e-prevent-add-relation-left',
+'e-prevent-add-relation-right'
+);
+}
+},
+actionBegin: function (args) {
+if (
+args.data.TaskId === 4 &&
+[
+'ChildDrag',
+'ProgressResizing',
+'LeftResizing',
+'RightResizing',
+'ConnectorPointLeftDrag',
+'ConnectorPointRightDrag'
+].indexOf(args.taskBarEditAction) !== -1
+) {
+args.cancel = true;
+}
+}
 });
 
 ganttChart.appendTo('#Gantt');
@@ -384,7 +384,7 @@ ganttChart.appendTo('#Gantt');
 
 ## Customize taskbar templates
 
-Taskbar templates allow full replacement of the default taskbar UI, enabling custom designs such as progress bars, badges, or icons. You can customize task rendering using the [taskbarTemplate](../api/gantt#taskbartemplate) property for child tasks. You can also use [parentTaskbarTemplate](../api/gantt#parenttaskbartemplate) for parent tasks and [milestoneTemplate](../api/gantt#milestonetemplate) for milestones. The **taskbarTemplate** function receives a props object that contains task-specific details and computed `ganttProperties`, such as the taskbar width and progress value. These properties can be used to dynamically calculate dimensions and control the visual presentation of the taskbar. For advanced conditional styling or logic, the [queryTaskbarInfo](../gantt/events#querytaskbarinfo) event can be used.
+Taskbar templates allow full replacement of the default taskbar UI, enabling custom designs such as progress bars, badges, or icons. You can customize task rendering using the [taskbarTemplate](https://ej2.syncfusion.com/javascript/documentation/api/gantt#taskbartemplate) property for child tasks. You can also use [parentTaskbarTemplate](https://ej2.syncfusion.com/javascript/documentation/api/gantt#parenttaskbartemplate) for parent tasks and [milestoneTemplate](https://ej2.syncfusion.com/javascript/documentation/api/gantt#milestonetemplate) for milestones. The **taskbarTemplate** function receives a props object that contains task-specific details and computed `ganttProperties`, such as the taskbar width and progress value. These properties can be used to dynamically calculate dimensions and control the visual presentation of the taskbar. For advanced conditional styling or logic, the [queryTaskbarInfo](https://ej2.syncfusion.com/javascript/documentation/gantt/events#querytaskbarinfo) event can be used.
 
 This example renders a custom taskbar with a progress bar and a badge showing the task's progress percentage. The progress bar width is calculated from the taskbar width and progress value in props.`ganttProperties`, ensuring each taskbar displays accurate progress at runtime.
 
@@ -414,7 +414,7 @@ This example renders a custom taskbar with a progress bar and a badge showing th
 
 ## Enable multi-taskbar support
 
-In project view, multi-taskbar support, enabled by [enableMultiTaskbar](../api/gantt#enablemultitaskbar), renders parent taskbars summarizing child progress when collapsed, providing aggregated visualization.
+In project view, multi-taskbar support, enabled by [enableMultiTaskbar](https://ej2.syncfusion.com/javascript/documentation/api/gantt#enablemultitaskbar), renders parent taskbars summarizing child progress when collapsed, providing aggregated visualization.
 
 The following example enables multi-taskbar:
 
@@ -428,7 +428,7 @@ The following example enables multi-taskbar:
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/projectview-multitaskbar-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/projectview-multitaskbar-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -449,9 +449,9 @@ This feature aggregates child progress in parent taskbars, updating dynamically 
 
 ## Customize connector lines
 
-Connector lines for dependencies are styled using [connectorLineWidth](../api/gantt#connectorlinewidth) for thickness and [connectorLineBackground](../api/gantt#connectorlinebackground) for color, enhancing dependency visibility.
+Connector lines for dependencies are styled using [connectorLineWidth](https://ej2.syncfusion.com/javascript/documentation/api/gantt#connectorlinewidth) for thickness and [connectorLineBackground](https://ej2.syncfusion.com/javascript/documentation/api/gantt#connectorlinebackground) for color, enhancing dependency visibility.
 
-The following example demonstrates connector customization. The specified properties are applied globally to all connectors, while the [queryTaskbarInfo](../api/gantt#querytaskbarinfo) event supports per-dependency customization through the `args.connectorLineBackground` property.
+The following example demonstrates connector customization. The specified properties are applied globally to all connectors, while the [queryTaskbarInfo](https://ej2.syncfusion.com/javascript/documentation/api/gantt#querytaskbarinfo) event supports per-dependency customization through the `args.connectorLineBackground` property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -463,7 +463,7 @@ The following example demonstrates connector customization. The specified proper
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/appearanceandstyling-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/appearanceandstyling-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -482,7 +482,7 @@ The following example demonstrates connector customization. The specified proper
 
 ## Configure tooltips
 
-Tooltips for taskbars, connectors, baselines, and event markers are enabled by default via [tooltipSettings.showTooltip](../api/gantt/tooltipSettings#showtooltip), set to **true**. Disable for specific elements or customize content with templates.
+Tooltips for taskbars, connectors, baselines, and event markers are enabled by default via [tooltipSettings.showTooltip](https://ej2.syncfusion.com/javascript/documentation/api/gantt/tooltipSettings#showtooltip), set to **true**. Disable for specific elements or customize content with templates.
 
 The following example enables tooltips:
 
@@ -496,7 +496,7 @@ The following example enables tooltips:
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/gantt-tooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/gantt-tooltip-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -515,9 +515,9 @@ The following example enables tooltips:
 
 Tooltips display on hover, with touch-and-hold support for mobile via the tooltip popup.
 
-### Disable taskbar tooltip 
+### Disable taskbar tooltip
 
-You can disable the taskbar tooltip using the [beforeTooltipRender](../gantt/events#beforetooltiprender) event by setting `args.cancel` to **true**.
+You can disable the taskbar tooltip using the [beforeTooltipRender](https://ej2.syncfusion.com/javascript/documentation/gantt/events#beforetooltiprender) event by setting `args.cancel` to **true**.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -529,7 +529,7 @@ You can disable the taskbar tooltip using the [beforeTooltipRender](../gantt/eve
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/disable-tooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/disable-tooltip-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -548,11 +548,11 @@ You can disable the taskbar tooltip using the [beforeTooltipRender](../gantt/eve
 
 ## Customize tooltip templates
 
-You can customize the following tooltip types in the Gantt chart using the [tooltipSettings](../api/gantt/tooltipSettings/) configuration:
+You can customize the following tooltip types in the Gantt chart using the [tooltipSettings](https://ej2.syncfusion.com/javascript/documentation/api/gantt/tooltipSettings) configuration:
 
 ### Taskbar tooltip
 
-Taskbar tooltips are customized using [tooltipSettings.taskbar](../api/gantt/tooltipSettings#taskbar) template, accessing task data for formatted content.
+Taskbar tooltips are customized using [tooltipSettings.taskbar](https://ej2.syncfusion.com/javascript/documentation/api/gantt/tooltipSettings#taskbar) template, accessing task data for formatted content.
 
 The following example customizes taskbar tooltips:
 
@@ -566,7 +566,7 @@ The following example customizes taskbar tooltips:
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/taskbarTooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/taskbarTooltip-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -587,7 +587,7 @@ The template uses `data` to display fields like **TaskName** and **Progress**, e
 
 ### Connector line tooltip
 
-Connector tooltips, customized via [tooltipSettings.connectorLine](../api/gantt/tooltipSettings#connectorline), show dependency details like type and offset.
+Connector tooltips, customized via [tooltipSettings.connectorLine](https://ej2.syncfusion.com/javascript/documentation/api/gantt/tooltipSettings#connectorline), show dependency details like type and offset.
 
 The following example customizes connector tooltips:
 
@@ -601,7 +601,7 @@ The following example customizes connector tooltips:
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/connectorLineTooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/connectorLineTooltip-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -620,7 +620,7 @@ The following example customizes connector tooltips:
 
 ### Baseline tooltip
 
-A baseline tooltip can be customized using the [tooltipSettings.baseline](../api/gantt/tooltipSettings#baseline) property.
+A baseline tooltip can be customized using the [tooltipSettings.baseline](https://ej2.syncfusion.com/javascript/documentation/api/gantt/tooltipSettings#baseline) property.
 
 The following example customizes baseline tooltips:
 
@@ -634,7 +634,7 @@ The following example customizes baseline tooltips:
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/baselineTooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/baselineTooltip-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -653,7 +653,7 @@ The following example customizes baseline tooltips:
 
 ### Timeline tooltip
 
-Timeline tooltips, customized with [tooltipSettings.timeline](../api/gantt/tooltipSettings#timeline), display date details.
+Timeline tooltips, customized with [tooltipSettings.timeline](https://ej2.syncfusion.com/javascript/documentation/api/gantt/tooltipSettings#timeline), display date details.
 
 The following example customizes timeline tooltips:
 
@@ -667,7 +667,7 @@ The following example customizes timeline tooltips:
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/timelineTooltip-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/timelineTooltip-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -686,9 +686,10 @@ The following example customizes timeline tooltips:
 
 ## Tooltip Touch interaction
 
-To perform touch and hold action on a element, refer to [tooltip popup](tooltip#tooltip).
+To perform touch and hold action on a element, refer to [tooltip popup](#configure-tooltips).
 
 ## See also
-- [How to configure task dependencies?](../gantt/task-dependency)
-- [How to enable baseline rendering?](../gantt/baseline)
-- [How to customize labels?](../gantt/labels)
+
+- [How to configure task dependencies?](https://ej2.syncfusion.com/javascript/documentation/gantt/task-dependency)
+- [How to enable baseline rendering?](https://ej2.syncfusion.com/javascript/documentation/gantt/baseline)
+- [How to customize labels?](https://ej2.syncfusion.com/javascript/documentation/gantt/labels)

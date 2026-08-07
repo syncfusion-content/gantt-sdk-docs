@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Adding Custom Fields to Edit Dialogs in JavaScript Gantt Chart
 
-The [JavaScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control allows you to enhance task data management by adding custom fields to the add/edit dialogs, seamlessly integrating them into the General tab using the [actionBegin](../../api/gantt#actionbegin) and [actionComplete](../../api/gantt#actioncomplete) events. For example, adding a priority dropdown to the General tab enables users to assign task priorities during creation or editing. Inject `Edit` and enable `editSettings.allowAdding` and `editSettings.allowEditing` to support dialog modifications. Configure valid [taskFields](../../api/gantt#taskfields) mappings or custom data properties (e.g., priority) to persist custom field values in the data source. Use `actionBegin` to define custom field properties (e.g., textbox, dropdown) before the dialog opens, and `actionComplete` to handle field data after user input. This feature supports various field types, such as dropdowns or numerics, and integrates with task scheduling, dependencies, and critical path, ensuring custom fields align with project workflows. Ensure the dialog module is configured to render custom fields accurately, enhancing flexibility in task management.
+The [JavaScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control allows you to enhance task data management by adding custom fields to the add/edit dialogs, seamlessly integrating them into the General tab using the [actionBegin](https://ej2.syncfusion.com/javascript/documentation/api/gantt#actionbegin) and [actionComplete](https://ej2.syncfusion.com/javascript/documentation/api/gantt#actioncomplete) events. For example, adding a priority dropdown to the General tab enables users to assign task priorities during creation or editing. Inject `Edit` and enable `editSettings.allowAdding` and `editSettings.allowEditing` to support dialog modifications. Configure valid [taskFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt#taskfields) mappings or custom data properties (e.g., priority) to persist custom field values in the data source. Use `actionBegin` to define custom field properties (e.g., textbox, dropdown) before the dialog opens, and `actionComplete` to handle field data after user input. This feature supports various field types, such as dropdowns or numerics, and integrates with task scheduling, dependencies, and critical path, ensuring custom fields align with project workflows. Ensure the dialog module is configured to render custom fields accurately, enhancing flexibility in task management.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -24,7 +24,7 @@ The [JavaScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/j
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/customfield-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/customfield-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -42,6 +42,7 @@ The [JavaScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/j
 {% endif %}
 
 ## See also
-- [How to configure add/edit dialogs?](../../gantt/managing-tasks/managing-tasks#customize-control-in-addedit-dialog)
-- [How to manage task dependencies?](../../gantt/task-dependency)
-- [How to configure critical path?](../../gantt/critical-path)
+
+- [How to configure add/edit dialogs?](https://ej2.syncfusion.com/javascript/documentation/gantt/managing-tasks/managing-tasks#customize-control-in-addedit-dialog)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/javascript/documentation/gantt/task-dependency)
+- [How to configure critical path?](https://ej2.syncfusion.com/javascript/documentation/gantt/critical-path)
