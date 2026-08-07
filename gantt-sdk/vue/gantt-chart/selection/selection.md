@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Selection in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about Selection in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Selection 
+title: Selection in Vue Gantt Chart | Syncfusion
+description: Learn how to enable row and cell selection in Syncfusion Vue Gantt Chart with customizable selection modes.
+keywords: vue gantt selection, row selection, cell selection, selection modes, highlight rows, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/selection/selection
 platform: gantt-sdk
+control: Selection - Gantt Chart
+publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Selection in Vue Gantt Chart Component
+# Enabling and Configuring Selection Behavior in Vue Gantt Chart
 
 Selection provides an option to highlight a row or a cell. It can be done using arrow keys or by scrolling down the mouse. To disable selection in the Gantt Chart component, set the [allowSelection](https://ej2.syncfusion.com/vue/documentation/api/gantt#allowselection) to `false`.
 

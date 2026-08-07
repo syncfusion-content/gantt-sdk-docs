@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Virtual Scroll in Vue Gantt Chart component | Syncfusion
-description: Learn here all about Virtual scroll in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Virtual scroll 
+title: Virtual Scroll in Vue Gantt Chart | Syncfusion
+description: Learn how to enable virtual scrolling in Syncfusion Vue Gantt Chart for efficient rendering of large datasets.
+keywords: vue gantt virtual scroll, row virtualization, large data, performance, scrolling, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/virtual-scrolling
 platform: gantt-sdk
+control: Virtual Scroll - Gantt Chart
+publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Virtual Scroll in Vue Gantt Chart component
+# Implementing Virtual Scrolling for Performance in Vue Gantt Chart
 
 Virtual Scroll support in Gantt allows you to load large amount of data without performance degradation. To enable Virtual Scrolling, you need to inject `VirtualScroll` module in Gantt.
 
