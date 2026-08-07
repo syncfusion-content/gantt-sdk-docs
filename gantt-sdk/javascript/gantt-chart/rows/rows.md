@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Row Interactions and Customization in JavaScript Gantt Chart
+# Row Structure and Interactions in JavaScript Gantt Chart
 
 Each row typically represents a single record or item from a data source. Rows in a Gantt Chart are used to present data in both tabular and timeline chart formats. Each row displays a set of values representing the fields of an individual data record. Rows allow you to interact with the data in the Gantt Chart. You can select rows, edit cell values, perform taskbar editing in the chart side of the Gantt Chart, perform sorting or filtering operations, and trigger events based on actions.
 

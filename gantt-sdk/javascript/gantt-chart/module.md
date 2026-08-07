@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Feature Modules in JavaScript Gantt Chart
+# Feature Modules with Dependency Injection in JavaScript Gantt Chart
 
 The modules that are available in Gantt are as follows.
 

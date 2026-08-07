@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Enabling Column Menu in JavaScript Gantt Chart
+# Column Menu with Sort and Filter in JavaScript Gantt Chart
 
 The column menu in the JavaScript Gantt Chart control offers built-in actions including sorting, filtering, column chooser, and autofit. When you click the column menu icon, a menu appears with these features.
 

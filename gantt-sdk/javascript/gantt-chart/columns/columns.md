@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Configuring Columns in JavaScript Gantt Chart
+# Columns with Field Mapping and Formatting in JavaScript Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Gantt Chart control displays task data in a tabular format using columns. Columns help organize data efficiently and support user interaction within the Gantt chart.
 

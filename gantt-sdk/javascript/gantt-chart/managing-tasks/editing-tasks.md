@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Editing Tasks in JavaScript Gantt Chart
+# Editing Task Properties and Information in JavaScript Gantt Chart
 
 The editing feature can be enabled in the Gantt control by enabling the [editSettings.allowEditing](../../api/gantt/editSettings#allowediting) and [editSettings.allowTaskbarEditing](../../api/gantt/editSettings#allowtaskbarediting) properties.
 
