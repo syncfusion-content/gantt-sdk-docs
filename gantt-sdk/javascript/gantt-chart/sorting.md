@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Sorting in JavaScript Gantt Chart Control | Syncfusion
-description: Learn here all about Sorting in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
+title: Sorting in JavaScript Gantt Chart | Syncfusion
+description: Learn how to enable sorting in Syncfusion JavaScript Gantt Chart to organize tasks and columns in ascending or descending order for improved data management.
+keywords: javascript gantt sorting, column sorting, task sorting, multi-column sorting, sort order, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/sorting
 platform: gantt-sdk
-control: Sorting 
-publishingplatform: gantt-sdk
+control: Sorting - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Sorting in JavaScript Gantt Chart Control
+# Column Sorting with Multi-Sort Support in JavaScript Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Gantt Chart control provides sorting functionality to arrange task data in ascending or descending order based on column values.
 

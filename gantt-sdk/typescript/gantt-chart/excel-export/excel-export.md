@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Excel Export in TypeScript Gantt Chart Control | Syncfusion
-description: Learn here all about Excel export in Syncfusion TypeScript Gantt Chart control of Syncfusion Essential JS 2 and more.
+title: Excel Export in TypeScript Gantt Chart | Syncfusion
+description: Learn how to export Gantt Chart data to Excel and CSV formats in TypeScript using built-in export functionality and customization options.
+keywords: TypeScript gantt excel export, gantt csv export, export gantt data, excel export, csv export, gantt reporting, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/excel-export
 platform: gantt-sdk
-control: Excel export 
-publishingplatform: gantt-sdk
+control: Excel Export - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Excel Export in TypeScript Gantt Chart Control
+# Exporting Data to Excel in TypeScript Gantt Chart
 
 The [TypeScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control supports exporting project data to Excel and CSV formats, enabling seamless sharing, reporting, and offline analysis.
 

@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Holidays in TypeScript Gantt Control | Syncfusion
-description: Learn here all about Holidays in Syncfusion TypeScript Gantt control of Syncfusion Essential JS 2 and more.
+title: Holidays in TypeScript Gantt Chart | Syncfusion
+description: Learn how to configure holidays in the Syncfusion TypeScript Gantt Chart to manage non-working days and ensure accurate task and project scheduling.
+keywords: typescript gantt holidays, non-working days, national holidays, custom holidays, scheduling, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/holidays
 platform: gantt-sdk
-control: Holidays 
-publishingplatform: gantt-sdk
+control: Holidays - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Holidays in TypeScript Gantt Control
+# Holidays and Non-Working Days in TypeScript Gantt Chart
 
 The [TypeScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control supports holidays to define non-working days, such as national holidays or company closures, that impact task scheduling and project timelines. Holidays override regular working time settings like [workWeek](../../api/gantt#workweek) or [includeWeekend](../../api/gantt#includeweekend), ensuring tasks do not progress during these periods. In the timeline, holidays appear as highlighted backgrounds with descriptive labels, creating visible gaps in taskbars to reflect scheduling adjustments. Custom CSS classes allow distinct styling for different holiday types (e.g., national vs. company holidays), enhancing visual clarity. Properly configured holidays ensure accurate duration calculations, dependency adjustments, and critical path analysis, aligning project timelines with resource availability and regional requirements.
 

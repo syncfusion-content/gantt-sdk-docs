@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Maintain Zoom To Fit in ASP.NET Core Gantt Component
-description: Learn here all about Maintain Zoom To Fit in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Maintain Zoom to Fit in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to maintain zoom to fit functionality in Syncfusion ASP.NET Core Gantt Chart to automatically scale timeline based on project duration.
+keywords: asp.net core gantt zoom to fit, zoom functionality, auto zoom, timeline scaling, gantt zoom, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/how-to/maintain-zoom-to-fit
 platform: gantt-sdk
-control: Maintain Zoom To Fit
-publishingplatform: gantt-sdk
+control: How-to - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Maintain zoomToFit
+# Maintaining Zoom-to-Fit Behavior in ASP.NET Core Gantt Chart
 
 In the Gantt control, While performing edit actions or dynamically change dataSource, the timeline gets refreshed. When zoomToFit toolbar item is clicked and perform editing actions or dynamically change dataSource, the timeline gets refreshed. So that, the timeline will not fit to the project any more.
 

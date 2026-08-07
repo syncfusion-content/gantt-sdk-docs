@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Scheduling Tasks in JavaScript Gantt Chart Control | Syncfusion
-description: Learn here all about scheduling tasks in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
+title: Scheduling Tasks in JavaScript Gantt Chart | Syncfusion
+description: Learn how to manage task scheduling in the Syncfusion JavaScript Gantt Chart with task modes, duration units, working time, and holidays.
+keywords: javascript gantt scheduling, task scheduling, date calculations, dependencies, constraints, timeline, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/scheduling-tasks
 platform: gantt-sdk
-control: Scheduling Tasks 
-publishingplatform: gantt-sdk
+control: Scheduling Tasks - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Scheduling Tasks in JavaScript Gantt Chart Control
+# Task Scheduling with Duration Units in JavaScript Gantt Chart
 
 Task scheduling in the [JavaScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control defines and visualizes task start dates, durations, and end dates as taskbars in a project timeline, enabling precise planning and tracking. Configure scheduling with properties like [taskFields](../api/gantt#taskfields) for mapping task data, [taskMode](../api/gantt#taskmode) for auto or manual validation, [taskType](../api/gantt#tasktype) for fixed unit, work, or duration, and [durationUnit](../api/gantt#durationunit) for day, hour, or minute units. Working time, set via [dayWorkingTime](../api/gantt#dayworkingtime), and non-working periods, like weekends or holidays, ensure realistic calculations. Events like [dataBound](../api/gantt#databound) customize scheduling logic on run-time. Taskbars include ARIA labels for accessibility, describing start, end, and duration, and adapt to responsive designs, though narrow screens may require scrolling for long timelines.
 

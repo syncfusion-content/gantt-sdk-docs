@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Data Binding in TypeScript Gantt Chart Control | Syncfusion
-description: Learn here all about data binding in Syncfusion TypeScript Gantt Chart control of Syncfusion Essential JS 2 and more.
+title: Data Binding in TypeScript Gantt Chart | Syncfusion
+description: Learn data binding in Syncfusion TypeScript Gantt Chart with local arrays, remote data, DataManager, and dynamic data source updates for project management.
+keywords: typescript gantt data binding, datasource, datamanager, local data, remote data, hierarchy, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/data-binding
 platform: gantt-sdk
-control: Data binding
-publishingplatform: gantt-sdk
+control: Data Binding - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Data Binding in TypeScript Gantt Chart Control
+# Data Binding from Local and Remote Sources in TypeScript Gantt Chart
 
 Data binding connects the TypeScript Gantt Chart control to project data sources, enabling dynamic visualization and management of project information. The control supports both local JavaScript arrays and remote server data through the [dataSource](../api/gantt#datasource) property, which accepts either a `DataManager` instance or JavaScript object array collection.
 

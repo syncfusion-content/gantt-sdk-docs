@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Work Breakdown Structure (WBS) in JavaScript Gantt | Syncfusion
-description: Learn how to integrate and manage WBS codes in the Syncfusion JavaScript Gantt Chart control to improve task hierarchy visualization and project tracking.
+title: WBS Column in JavaScript Gantt Chart | Syncfusion
+description: Learn how to display Work Breakdown Structure (WBS) codes in the JavaScript Gantt Chart to organize and track project tasks hierarchically.
+keywords: javascript gantt wbs column, work breakdown structure, wbs codes, gantt task hierarchy, project planning, wbs task numbering, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/columns/wbs-column
 platform: gantt-sdk
-control: WBS Column
-publishingplatform: gantt-sdk
+control: WBS Column - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Work Breakdown Structure (WBS) in JavaScript Gantt Chart
+# WBS Column for Hierarchical Task Identification in JavaScript Gantt Chart
 
 The Work Breakdown Structure (WBS) organizes project tasks hierarchically by assigning unique codes to each task. This improves task visibility and management, especially in large-scale construction or enterprise-level software projects.
 
@@ -47,6 +48,8 @@ To enable WBS in the Gantt Chart control:
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/wbscolumn-cs1" %}
 
 {% endif %}
+
+> When the WBS column is enabled in the Gantt Chart using the [enableWBS](https://ej2.syncfusion.com/javascript/documentation/api/gantt#enablewbs) property along with the **WBS Code** and **WBS Predecessor** fields, the default **ID** and **Predecessor** columns are automatically disabled, as the WBS and WBS Predecessor columns already display the ID and predecessor values based on the task hierarchy.
 
 ## Managing WBS code updates
 

@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Indent and Outdent in JavaScript Gantt Chart Control | Syncfusion
-description: Learn how to use indent and outdent features in the Syncfusion JavaScript Gantt Chart control to manage task hierarchy effectively.
+title: Indent and Outdent in JavaScript Gantt Chart | Syncfusion
+description: Learn to manage task hierarchy in Syncfusion JavaScript Gantt Chart using indent and outdent features to adjust row levels and create nested task structures.
+keywords: javascript gantt indent, gantt outdent, task hierarchy, nested tasks, tree hierarchy, task nesting, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/rows/indent-and-outdent
 platform: gantt-sdk
-control: Indent and Outdent 
-publishingplatform: gantt-sdk
+control: Indent and Outdent - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Indent and outdent in JavaScript Gantt Chart Control
+# Indenting and Outdenting Rows for Hierarchy in JavaScript Gantt Chart
 
 The [JavaScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control provides built-in support for indenting and outdenting rows, allowing hierarchy levels to be adjusted within the Gantt chart.
 
