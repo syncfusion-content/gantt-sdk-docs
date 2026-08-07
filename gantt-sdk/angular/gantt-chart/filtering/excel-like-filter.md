@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Excel Like Filter in Angular Gantt Chart Component | Syncfusion
-description: Learn here all about excel like filter in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Excel-Like Filter in Angular Gantt Chart | Advanced | Syncfusion
+description: Learn how to use Excel-like filtering in Syncfusion Angular Gantt Chart to apply column-level filters with advanced conditions.
+keywords: angular gantt excel like filter, advanced filter, sort clear filter, multiple criteria, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/filtering/excel-like-filter
 platform: gantt-sdk
-control: Excel like filter 
+control: Excel-Like Filter - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Excel-like Filtering in Angular Gantt Chart Component
+# Using Excel-Like Filtering Interface in Angular Gantt Chart
 
 The Excel-like filter in [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component enables column-level filtering similar to Microsoft Excel. It supports sorting, clearing filters, and applying advanced conditions through a submenu available in each column header. This feature is highly effective for working with large datasets and applying multiple filter criteria.
 

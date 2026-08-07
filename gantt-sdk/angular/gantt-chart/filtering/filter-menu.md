@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Filter Menu in Angular Gantt Chart Component | Syncfusion
-description: Learn here all about filter menu in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Filter Menu in Angular Gantt Chart | Column Filters | Syncfusion
+description: Learn how to enable filter menu in Syncfusion Angular Gantt Chart for each column with operators like equal, contains, greater than to refine task data display.
+keywords: angular gantt filter menu, filter operators, filtersettings type, column filter, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/filtering/filter-menu
 platform: gantt-sdk
-control: Filter menu 
+control: Filter Menu - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Filter Menu in Angular Gantt Chart Component
+# Using Filter Menu for Data Filtering in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component offers a filter menu for each column, enabling you to filter data based on column type and supported operators such as equal, contains, greaterthan, etc. To enable this feature, set [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowfiltering) to **true** and configure [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/filtersettings#type) as **Menu**.
 

@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Undo Redo in Angular Gantt Chart Component | Syncfusion
-description: Learn how to configure undo redo actions in the Syncfusion Angular Gantt Chart component for reverting task edits, dependencies, and project changes.
+title: Undo and Redo in Angular Gantt Chart | Syncfusion
+description: Learn how to configure undo and redo in Syncfusion Angular Gantt Chart to revert task edits, dependency changes, and project modifications with action history.
+keywords: angular gantt undo redo, enableundoredo, undoredoactions, action history, revert changes, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/undo-redo
 platform: gantt-sdk
-control: Undo redo
+control: Undo Redo - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Undo Redo in Angular Gantt Chart component
+# Undo and Redo with Action History Management in Angular Gantt Chart
 
 The undo redo feature in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component allows users to revert or reapply actions like task edits, deletions, or dependency changes, enhancing project management by correcting mistakes efficiently. Enabled via the [enableUndoRedo](https://ej2.syncfusion.com/angular/documentation/api/gantt#enableundoredo) property, it supports actions such as editing task details, dragging taskbars, or reordering columns, provided the `UndoRedoService` is injected. For example, undoing a task duration change restores the original timeline, while redoing it reapplies the edit. The [undoRedoActions](https://ej2.syncfusion.com/angular/documentation/api/gantt#undoredoactions) property specifies which actions to track (e.g., Edit, Delete), defaulting to a comprehensive set including sorting, filtering, and zooming. The [undoRedoStepsCount](https://ej2.syncfusion.com/angular/documentation/api/gantt#undoredostepscount) property limits the action history, defaulting to 10, with older actions removed as new ones are added. This feature ensures history management for complex projects with hierarchical tasks or frequent updates.
 
