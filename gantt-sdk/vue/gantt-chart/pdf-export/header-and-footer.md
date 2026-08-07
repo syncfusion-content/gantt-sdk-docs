@@ -50,13 +50,6 @@ This functionality helps to customize the line that appears in the header or foo
 * `style` is used to set properties like the color (penColor), size (penSize), and style (dashStyle) of the line.
 * `points` specifies the coordinates for the start and end points of the line.
 
-Supported line styles:
-* dash
-* dot
-* dashdot
-* dashdotdot
-* solid
-
 ```ts
 
 let exportProperties: PdfExportProperties = {

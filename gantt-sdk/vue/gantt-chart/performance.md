@@ -24,16 +24,15 @@ To enhance your application's efficiency, especially when dealing with substanti
 
 1.  **Row Virtualization**: The Virtual scrolling feature in the Gantt Chart component enables the efficient handling and display of large volumes of data without compromising performance. This approach optimizes the rendering process by loading only the visible rows within the Gantt viewport, rather than rendering the entire dataset simultaneously. For more information on implementing row virtualization, you can refer to the [documentation](https://ej2.syncfusion.com/vue/documentation/gantt/virtual-scroll#row-virtualization) section dedicated to this feature. This can be visualized while performing the vertical scroll action.
 
-2. **Timeline Virtualization**: The timeline virtualization feature in the Gantt Component enables efficient handling and display of large timespans without compromising performance. This approach optimizes the rendering process by loading only the visible timeline cells, which are typically three times the width of the Gantt element. Other timeline cells render on-demand during horizontal scrolling. For more information on implementing timeline virtualization, you can refer to the [documentation](https://ej2.syncfusion.com/vue/documentation/gantt/virtual-scroll#timeline-virtualization) section dedicated to this feature. This can be visualized while performing the horizontal scroll action.
+2.  **Timeline Virtualization**: The timeline virtualization feature in the Gantt Component enables efficient handling and display of large timespan without compromising performance. This approach optimizes the rendering process by loading only the visible timeline cells, which are typically three times the width of the Gantt element. Other timeline cells render on-demand during horizontal scrolling. For more information on implementing timeline virtualization, you can refer to the [documentation](https://ej2.syncfusion.com/vue/documentation/gantt/virtual-scroll#timeline-virtualization) section dedicated to this feature. This can be visualized while performing the horizontal scroll action.
 
-3. **Load On Demand**: The Load on demand feature in the Gantt Chart component enables you to render a large number of tasks in the Gantt Chart with optimal performance. With virtualization enabled, only the root-level records are fetched from the datasource during the initial load. When expanding a root parent node or scrolling vertically, the corresponding tasks are dynamically fetched from the datasource and updated in the DOM based on the current viewport position. This ensures that only the necessary data is rendered, significantly improving performance and responsiveness.
+3.  **Load On Demand**: The Load on demand feature in the Gantt Chart component enables you to render a large number of tasks in the Gantt Chart with optimal performance. With virtualization enabled, only the root-level records are fetched from the datasource during the initial load. When expanding a root parent node or scrolling vertically, the corresponding tasks are dynamically fetched from the datasource and updated in the DOM based on the current viewport position. This ensures that only the necessary data is rendered, significantly improving performance and responsiveness.
 
 ## Optimizing performance with AutoCalculateDateScheduling
 
-In the Gantt chart component, by default it automatically calculates the start and end dates in [dataSource](https://ej2.syncfusion.com/vue/documentation/api/gantt#datasource) based on various factors such as working time, holidays, weekends, and predecessors. However, when rendering a large dataset, these calculations for data validation may result in performance issues. To avoid this, set the [autocalculatedatescheduling](https://ej2.syncfusion.com/vue/documentation/api/gantt#autocalculatedatescheduling) property to **false**. 
+In the Gantt chart component, by default it automatically calculates the start and end dates in [dataSource](https://ej2.syncfusion.com/vue/documentation/api/gantt#datasource) based on various factors such as working time, holidays, weekends, and predecessors. However, when rendering a large dataset, these calculations for data validation may result in performance issues. To avoid this, set the [autocalculatedatescheduling](https://ej2.syncfusion.com/vue/documentation/api/gantt#autocalculatedatescheduling) property to **false**.
 
->When setting `autocalculatedatescheduling` property to **false**, you must provide the valid data source; otherwise, the Gantt chart will render with invalid dates.
-
+> When setting `autocalculatedatescheduling` property to **false**, you must provide the valid data source; otherwise, the Gantt chart will render with invalid dates.
 
 ## How to improve loading performance by binding large data by showing custom text or element
 
@@ -43,16 +42,17 @@ When integrating image or template elements into a gantt column, it's recommende
 
 To enhance the performance of the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart component during initial rendering and certain actions, it is recommended to download specific component scripts using CRG (Custom Resource Generator) for optimized project loading. By default, the ej2.min.js script file includes all Syncfusion<sup style="font-size:70%">&reg;</sup> component scripts, which may lead to longer load times. Using [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator), you can selectively choose the components and their modules that your project requires. Subsequently, you can download only the necessary scripts and CSS, thereby improving loading times and optimizing resource utilization according to your project's needs.
 
-[CRG website link](https://crg.syncfusion.com) 
+[CRG website link](https://crg.syncfusion.com)
 
 So to improve the performance of gantt during the initial rendering, suggested you to refer individual script and CSS.
 
 ## How to optimize server-side data operations with adaptors
 
 The Gantt Chart component provides support for various adaptors (OData, ODataV4, WebAPI, URL, etc.) to facilitate server-side data operations and CRUD functionalities. By utilizing these adaptors along with the `DataManager` component, you can seamlessly bind remote data sources to the Gantt and execute actions. During data operations such as filtering and sorting, the corresponding action queries are generated according to the adaptor's requirements. It is crucial to handle these actions on the application side and return the processed data back to the Gantt. Refer to the documentation for comprehensive details. It's worth noting that for efficient data processing, the suggested order for returning processed data to the Gantt is as follows:
-* Filtering
-* Sorting
-* Aggregates
+
+- Filtering
+- Sorting
+- Aggregates
 
 ## How to avoid MaxJsonLength error while passing large amount of records
 
@@ -61,7 +61,7 @@ The Gantt Chart component operates on a client-server basis, meaning data is sen
 **Solution: 1**
 
 ```csharp
-<configuration> 
+<configuration>
    <system.web.extensions>
        <scripting>
            <webServices>
@@ -69,13 +69,15 @@ The Gantt Chart component operates on a client-server basis, meaning data is sen
            </webServices>
        </scripting>
    </system.web.extensions>
-</configuration> 
+</configuration>
 ```
 
 **Solution : 2**
+
 ```csharp
 var serializer = new JavaScriptSerializer { MaxJsonLength = Int32.MaxValue };
 ```
-## Microsoft excel limitation while exporting millions of records to excel file format
+
+## Microsoft Excel limitation while exporting millions of records to excel file format
 
 By default, Microsoft Excel supports only 1,048,576 records per sheet. Therefore, exporting millions of records directly to Excel is not feasible. For more details on Microsoft Excel specifications and limits, you can refer to the [documentation](https://support.microsoft.com/en-gb/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3). It is recommended to export large datasets in CSV (Comma-Separated Values) or other formats that handle large data more efficiently than Excel.

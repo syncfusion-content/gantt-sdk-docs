@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Maintain Zoom To Fit in Vue Gantt Chart | Syncfusion
-description: Learn how to maintain zoom to fit state after edit actions in Syncfusion Vue Gantt Chart.
+description: Learn how to maintain the zoom-to-fit state in the Syncfusion Vue Gantt Chart after edits using fitToProject and event handling for timeline refresh scenarios.
 keywords: vue gantt zoom to fit, maintain zoom, zooming, timeline zoom, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/how-to/maintain-zoom-to-fit
 platform: gantt-sdk

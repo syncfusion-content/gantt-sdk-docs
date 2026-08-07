@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Deleting Tasks in Vue Gantt Chart | Syncfusion
-description: Learn how to delete tasks in Syncfusion Vue Gantt Chart using toolbar, context menu, and methods.
+description: Learn how to delete tasks in Syncfusion Vue Gantt Chart using toolbar, context menu, and API methods to remove task rows and handle task deletion scenarios.
 keywords: vue gantt delete tasks, task deletion, remove tasks, delete row, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/managing-tasks/deleting-tasks
 platform: gantt-sdk

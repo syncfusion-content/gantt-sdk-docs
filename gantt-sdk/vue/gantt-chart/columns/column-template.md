@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Column Template in Vue Gantt Chart | Syncfusion
-description: Learn how to customize column appearance in Syncfusion Vue Gantt Chart using column templates.
+description: Learn how to customize Vue Gantt Chart columns using templates to define custom cell content and render data with the column template property.
 keywords: vue gantt column template, custom template, column customization, template rendering, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/columns/column-template
 platform: gantt-sdk
