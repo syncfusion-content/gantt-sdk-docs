@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Resources in JavaScript Gantt Chart Control | Syncfusion
-description: Learn how to configure resources in the Syncfusion JavaScript Gantt Chart control for task allocation and utilization visualization.
+title: Resources in JavaScript Gantt Chart | Syncfusion
+description: Learn how to configure resources in Syncfusion JavaScript Gantt Chart for task allocation and visualize resource workload and utilization across project.
+keywords: javascript gantt resources, resource allocation, resource management, workload, team members, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/resources
 platform: gantt-sdk
-control: Resources
-publishingplatform: gantt-sdk
+control: Resources - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Resources in JavaScript Gantt Chart Control
+# Resources with Allocation and Task Mapping in JavaScript Gantt Chart
 
 Resources in the JavaScript Gantt Chart control represent people, equipment, or materials allocated to tasks, and they can be visualized in taskbars and labels for clear utilization tracking. Define a resource collection in the [resources](https://ej2.syncfusion.com/javascript/documentation/api/gantt#resources) property, map its fields with [resourceFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt#resourcefields), and assign the resources to each task through [taskFields.resourceInfo](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#resourceinfo). This mapping enables resource names to appear in columns or labels with [labelSettings](https://ej2.syncfusion.com/javascript/documentation/api/gantt/labelSettings), highlights workloads and overallocation, and supports taskbar customization through the [queryTaskbarInfo](../gantt/events#querytaskbarinfo) event. Resources also include ARIA labels for accessibility and adapt to responsive layouts, although narrow screens may truncate names when multiple resources are assigned. By default, resources allocate 100% unit if the unit is not specified.
 

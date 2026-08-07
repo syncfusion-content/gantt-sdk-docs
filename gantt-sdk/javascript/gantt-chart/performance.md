@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Performance tips for JavaScript Gantt control | Syncfusion
-description: Checkout and learn here all about how to improve the loading performance of JavaScript Gantt control of Syncfusion Essential JS 2 and more.
+title: Performance in JavaScript Gantt Chart | Syncfusion
+description: Learn how to optimize Syncfusion JavaScript Gantt Chart with optimization techniques for large datasets, virtual scrolling, and rendering enhancements.
+keywords: javascript gantt performance, optimization, virtual scrolling, large datasets, rendering, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/performance
 platform: gantt-sdk
-control: Gantt permformance
-publishingplatform: gantt-sdk
+control: Performance - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Performance tips for JavaScript Gantt control
+# Optimization with Virtual Scrolling in JavaScript Gantt Chart
 
 This article is a comprehensive guide on improving the loading performance of the Gantt component, especially when dealing with large datasets and a significant number of columns. It provides valuable insights into the steps required to bind a large data source without experiencing performance degradation. By offering detailed explanations and actionable tips, this resource aims to empower readers with the knowledge and best practices necessary to optimize the performance of the Gantt component during data binding, ensuring a smooth and efficient user experience.
 

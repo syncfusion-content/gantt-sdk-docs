@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Column resizing in JavaScript Gantt Chart control | Syncfusion
-description: Learn here all about Column resizing in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
+title: Resize Columns in JavaScript Gantt Chart | Syncfusion
+description: Learn how to resize columns in the JavaScript Gantt Chart by dragging column borders and adjusting widths for improved layout control.
+keywords: javascript gantt column resizing, resize columns, column width, column resizing, gantt column customization, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/columns/column-resizing
 platform: gantt-sdk
-control: Column resizing 
-publishingplatform: gantt-sdk
+control: Column Resizing - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Resize Columns in JavaScript Gantt Chart Control
+# Column Resizing with Dynamic Width Adjustment in JavaScript Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Gantt Chart control allows you to resize columns dynamically by dragging the edges of column headers. This feature enhances readability and layout flexibility, especially when working with large datasets. To enable this feature, set the [allowResizing](../../api/gantt#allowresizing) property to **true** in the Gantt configuration. 
 

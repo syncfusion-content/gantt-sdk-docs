@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Immutable Mode in JavaScript Gantt Chart Control | Syncfusion
-description: Learn how to enable immutable mode in the Syncfusion JavaScript Gantt Chart control for optimized task rendering and performance with large datasets.
+title: Immutable Mode in JavaScript Gantt Chart | Syncfusion
+description: Learn how to enable immutable mode in the Syncfusion JavaScript Gantt Chart for better rendering performance and data updates.
+keywords: javascript gantt immutable mode, performance optimization, rendering, large datasets, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/immutable
 platform: gantt-sdk
-control: Immutable 
-publishingplatform: gantt-sdk
+control: Immutable Mode - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Immutable Mode in JavaScript Gantt Chart Control
+# Performance Optimization with Immutable Mode in JavaScript Gantt Chart
 
 Immutable mode optimizes the JavaScript Gantt Chart control’s rendering performance by minimizing unnecessary re-renders, ideal for large projects with hundreds of tasks or frequent updates like real-time progress tracking. When enabled via the [enableImmutableMode](../api/gantt#enableimmutablemode) property, the control uses object reference comparison to identify changed tasks, re-rendering only modified or new rows while preserving unchanged rows’ DOM elements. This reduces DOM operations, CPU usage, and rendering time, ensuring smooth interactions for complex hierarchies or batch updates. For example, updating a single task’s progress in a 1,000-task project re-renders only that task’s row, significantly improving performance over standard mode, which re-renders all visible rows.
 

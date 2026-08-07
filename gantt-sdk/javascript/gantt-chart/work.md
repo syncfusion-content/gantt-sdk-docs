@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Work in JavaScript Gantt control | Syncfusion
-description: Learn here all about Work in Syncfusion JavaScript Gantt control of Syncfusion Essential JS 2 and more.
+title: Work in JavaScript Gantt Chart | Syncfusion
+description: Learn how to configure work and task types in Syncfusion JavaScript Gantt Chart for accurate effort tracking and resource-based scheduling.
+keywords: javascript gantt work, task work, duration, work units, resource work, time tracking, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/work
 platform: gantt-sdk
-control: Work 
-publishingplatform: gantt-sdk
+control: Work - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Work in JavaScript Gantt control
+# Work and Effort Tracking with Task Type Support in JavaScript Gantt Chart
 
 ## Work
 

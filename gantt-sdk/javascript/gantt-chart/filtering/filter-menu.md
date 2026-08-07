@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Filter Menu in JavaScript Gantt Chart Control | Syncfusion
-description: Learn here all about filter menu in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
+title: Filter Menu in JavaScript Gantt Chart | Syncfusion
+description: Learn how to enable filter menu in Syncfusion JavaScript Gantt Chart to enable filtering options and improve task search and data discovery functionality.
+keywords: javascript gantt filter menu, filter dropdown, filter options, advanced filtering, column filter, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/filtering/filter-menu
 platform: gantt-sdk
-control: Filter menu 
-publishingplatform: gantt-sdk
+control: Filter Menu - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Filter Menu in JavaScript Gantt Chart Control
+# Using Filter Menu for Data Filtering in JavaScript Gantt Chart
 
 The [JavaScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control offers a filter menu for each column, enabling you to filter data based on column type and supported operators such as equal, contains, greaterthan, etc. To enable this feature, set [allowFiltering](../../api/gantt#allowfiltering) to **true** and configure [filterSettings.type](../../api/gantt/filtersettings#type) as **Menu**.
 
