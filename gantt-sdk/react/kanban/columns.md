@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Columns in React Kanban component | Syncfusion
-description: Learn how to configure columns in the Syncfusion React Kanban component of Syncfusion Essential JS 2 and more.
-control: Columns
+title: Columns in React Kanban | Syncfusion
+description: Learn how to configure columns, headers, and workflow stages in Syncfusion React Kanban for organized task management.
+keywords: react kanban columns, syncfusion kanban, workflow columns, kanban stages
+canonical: https://help.syncfusion.com/gantt-sdk/react/kanban/columns
 platform: gantt-sdk
+control: Columns - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Columns in React Kanban Component
+# Columns and Workflow Stages in React Kanban
 
 The **Kanban** columns represent the each stage of the process. The column definitions are used as the **dataSource** schema in the Kanban. The Kanban operations such as drag-and-drop, swimlane, and toggle columns are performed based on column definitions.
 

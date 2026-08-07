@@ -1,15 +1,16 @@
 ---
 layout: post
-title: React getting started with Next.js | Syncfusion
-description: Check out and learn here all about how to use the Syncfusion React UI components in the Next.js project.
-control: Next.js
+title: Getting Started with Next.js in React Kanban | Syncfusion
+description: Learn how to set up Syncfusion React Kanban in a Next.js project with step-by-step instructions and configuration guidance.
+keywords: react kanban next.js, syncfusion kanban, nextjs getting started, react ssr
+canonical: https://help.syncfusion.com/gantt-sdk/react/kanban/nextjs-getting-started
 platform: gantt-sdk
+control: Next.js Getting Started - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Getting Started with Next.js
+# Getting Started with React Kanban in Next.js
 
 This section provides a step-by-step guide for setting up a Next.js application and integrating the Syncfusion<sup style="font-size:70%">&reg;</sup> React Kanban component.
 

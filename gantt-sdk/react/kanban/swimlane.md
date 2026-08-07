@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Swimlane in React Kanban Component | Syncfusion
-description: Learn here all about Swimlane in Syncfusion React Kanban component of Syncfusion Essential JS 2 and more.
-control: Swimlane
+title: Swimlane in React Kanban | Syncfusion
+description: Learn how to group work items by swimlanes in Syncfusion React Kanban to improve visibility, status tracking, and team collaboration.
+keywords: react kanban swimlane, syncfusion kanban, grouping lanes, team views
+canonical: https://help.syncfusion.com/gantt-sdk/react/kanban/swimlane
 platform: gantt-sdk
+control: Swimlane - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Swimlane in React Kanban Component
+# Swimlane Grouping in React Kanban
 
 Swimlanes are horizontal categorizations of cards on the Kanban board.  It is used for grouping of cards, which brings transparency to the workflow process.
 

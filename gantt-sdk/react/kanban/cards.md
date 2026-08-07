@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Cards in React Kanban Component | Syncfusion
-description: Learn how to configure and customize cards in the Syncfusion React Kanban component of Syncfusion Essential JS 2 and more.
-control: Cards
+title: Cards in React Kanban | Syncfusion
+description: Learn how to customize card layout, content, and interactions in Syncfusion React Kanban with practical examples and configuration guidance.
+keywords: react kanban cards, syncfusion kanban, task cards, kanban board
+canonical: https://help.syncfusion.com/gantt-sdk/react/kanban/cards
 platform: gantt-sdk
+control: Cards - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Cards in React Kanban Component
+# Cards and Custom Layouts in React Kanban
 
 The cards are main elements in Kanban board, which represent the task information with header and content. The header and content of a card is fetched from the corresponding mapping fields. The card layout can be customized with template also.
 

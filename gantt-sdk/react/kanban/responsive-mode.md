@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Responsive Mode in React Kanban component | Syncfusion
-description: Learn here all about Responsive mode in Syncfusion React Kanban component of Syncfusion Essential JS 2 and more.
-control: Responsive mode 
+title: Responsive Mode in React Kanban | Syncfusion
+description: Learn how to create adaptive layouts in Syncfusion React Kanban with responsive mode and flexible configuration for desktop and mobile devices.
+keywords: react kanban responsive mode, syncfusion kanban, mobile layout, adaptive ui
+canonical: https://help.syncfusion.com/gantt-sdk/react/kanban/responsive-mode
 platform: gantt-sdk
+control: Responsive Mode - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Responsive Mode in React Kanban Component
+# Responsive Mode and Adaptive Layouts in React Kanban
 
 The Kanban component has support for responsive behavior based on the client browser's width and height.
 

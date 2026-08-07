@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Persistence in React Kanban component | Syncfusion
-description: Learn here all about Persistence in Syncfusion React Kanban component of Syncfusion Essential JS 2 and more.
-control: Persistence 
+title: State Persistence in React Kanban | Syncfusion
+description: Learn how to enable state persistence in Syncfusion React Kanban to retain board state across page reloads and sessions.
+keywords: react kanban persistence, syncfusion kanban, state persistence, local storage
+canonical: https://help.syncfusion.com/gantt-sdk/react/kanban/persistence
 platform: gantt-sdk
+control: Persistence - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Persistence in React Kanban Component
+# State Persistence in React Kanban
 
 State persistence refers to the Kanban state maintained in the browser's [localStorage](https://www.w3schools.com/html/html5_webstorage.asp#) even if the browser is refreshed or if you move to the next page within the browser.
 

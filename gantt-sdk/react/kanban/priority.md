@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Priority in React Kanban Component | Syncfusion
-description: Learn here all about Priority in Syncfusion React Kanban component of Syncfusion Essential JS 2 and more.
-control: Priority
+title: Card Priority in React Kanban | Syncfusion
+description: Learn how to manage card priority and ordering in Syncfusion React Kanban to control card placement and drop behavior.
+keywords: react kanban priority, syncfusion kanban, card priority, drop position
+canonical: https://help.syncfusion.com/gantt-sdk/react/kanban/priority
 platform: gantt-sdk
+control: Priority - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Priority in React Kanban Component
+# Card Priority and Ordering in React Kanban
 
 By default, the Kanban cards are initially placed and drop the card inside the columns based on JSON data orders.
 

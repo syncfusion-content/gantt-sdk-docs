@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Accessibility in React Kanban Component | Syncfusion
-description: Learn about accessibility features in the Syncfusion React Kanban component of Syncfusion Essential JS 2 and more.
-control: Accessibility 
+title: Accessibility in React Kanban | WCAG, ARIA | Syncfusion
+description: Learn how to implement accessibility in Syncfusion React Kanban with WCAG 2.2, ARIA labels, keyboard navigation, and Section 508 compliance.
+keywords: react kanban accessibility, wcag, aria, section 508, keyboard navigation, screen reader, syncfusion kanban
+canonical: https://help.syncfusion.com/gantt-sdk/react/kanban/accessibility
 platform: gantt-sdk
+control: Accessibility - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Accessibility in React Kanban Component
+# Accessibility and ARIA Compliance in React Kanban
 
 The Kanban component is designed to meet WAI-ARIA specifications, applying roles, states, and properties to elements like cards (`.e-card`), columns (`.e-header-cells`), and dialogs to ensure accessibility for users relying on assistive technologies (AT) or keyboard navigation. This enables seamless interaction for users with disabilities, such as navigating cards with screen readers or selecting columns via keyboard.
 

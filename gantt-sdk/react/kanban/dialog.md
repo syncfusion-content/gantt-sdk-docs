@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Dialog Editing  in React Kanban component | Syncfusion
-description: Learn how to use the dialog module in the Syncfusion React Kanban component of Syncfusion Essential JS 2 and more.
-control: Dialog 
+title: Card Editing in React Kanban | Syncfusion
+description: Learn how to edit cards, use dialogs, and validate inputs in Syncfusion React Kanban to manage task details with ease.
+keywords: react kanban card editing, syncfusion kanban, card dialog, task editing
+canonical: https://help.syncfusion.com/gantt-sdk/react/kanban/dialog
 platform: gantt-sdk
+control: Card Editing - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Dialog in React Kanban Component
+# Card Editing and Dialog Management in React Kanban
 
 The Kanban component provides a built-in dialog module for adding, editing, and deleting cards, configured through the [dialogSettings](https://ej2.syncfusion.com/react/documentation/api/kanban/#dialogsettings) property. User can edit a card using the following ways.
 

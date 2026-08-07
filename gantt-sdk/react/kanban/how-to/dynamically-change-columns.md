@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Dynamically Update Columns in React Kanban Component | Syncfusion
-description: Learn here all about Dynamically change columns in the Syncfusion React Kanban component of Syncfusion Essential JS 2 and more.
-control: Dynamically change columns
+title: Dynamically Change Columns in React Kanban | Syncfusion
+description: Learn how to dynamically change columns in Syncfusion React Kanban with practical examples and configuration guidance.
+keywords: react kanban dynamically change columns, syncfusion kanban, update columns at runtime, column toggle
+canonical: https://help.syncfusion.com/gantt-sdk/react/kanban/how-to/dynamically-change-columns
 platform: gantt-sdk
+control: Dynamically Change Columns - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Dynamically Update Columns in React Kanban Component
+#  Modify Columns Programmatically in React Kanban
 
 You can dynamically change the Kanban columns by using the [columns](https://ej2.syncfusion.com/react/documentation/api/kanban/#columns) property.
 

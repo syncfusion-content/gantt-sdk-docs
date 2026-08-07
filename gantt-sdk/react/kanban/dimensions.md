@@ -1,14 +1,16 @@
 ---
 layout: post
-title:  Configuring Dimensions in React Kanban component | Syncfusion
-description: Learn  how to configure height and width in the Syncfusion React Kanban component of Syncfusion Essential JS 2 and more.
-control: Dimensions 
+title: Dimensions in React Kanban | Syncfusion
+description: Learn how to configure responsive dimensions and sizing options in Syncfusion React Kanban to fit different layouts and screen sizes.
+keywords: react kanban dimensions, syncfusion kanban, responsive layout, sizing
+canonical: https://help.syncfusion.com/gantt-sdk/react/kanban/dimensions
 platform: gantt-sdk
+control: Dimensions - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Dimensions in React Kanban Component
+# Dimensions and Responsive Sizing in React Kanban
 
 The Kanban dimensions refers to both [height](https://ej2.syncfusion.com/react/documentation/api/kanban/#height) and [width](https://ej2.syncfusion.com/react/documentation/api/kanban/#width) of the entire layout and it accepts three types of values.
 

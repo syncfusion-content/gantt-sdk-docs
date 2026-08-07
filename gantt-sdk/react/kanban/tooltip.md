@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Tooltip in React Kanban Component | Syncfusion
-description: Learn here all about Tooltip in Syncfusion React Kanban component of Syncfusion Essential JS 2 and more.
-control: Tooltip
+title: Tooltip in React Kanban | Syncfusion
+description: Learn how to add informative tooltips to cards and elements in Syncfusion React Kanban for clearer context and better user guidance.
+keywords: react kanban tooltip, syncfusion kanban, hover info, card hints
+canonical: https://help.syncfusion.com/gantt-sdk/react/kanban/tooltip
 platform: gantt-sdk
+control: Tooltip - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Tooltip in React Kanban Component
+# Tooltip and Hover Information in React Kanban
 
 The tooltip is used to show the card information when the cursor hover over the card elements using the [enableTooltip](https://ej2.syncfusion.com/react/documentation/api/kanban/#enabletooltip) property. Tooltip content is dynamically set based on hovering over the card elements.
 

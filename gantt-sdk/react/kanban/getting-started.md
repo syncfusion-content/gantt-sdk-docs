@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Getting started with React Kanban Component | Syncfusion
-description: Check out and learn about getting started with the React Kanban component from Syncfusion Essential JS 2.
-control: Getting started 
+title: Getting Started in React Kanban | Syncfusion
+description: Learn how to start using Syncfusion React Kanban with step-by-step setup instructions and essential component features.
+keywords: react kanban getting started, syncfusion kanban, install component, react setup
+canonical: https://help.syncfusion.com/gantt-sdk/react/kanban/getting-started
 platform: gantt-sdk
+control: Getting Started - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Getting Started with React Kanban Component
+# Getting Started with React Kanban
 
 This article provides a step-by-step  guide to getting started with the Syncfusion<sup style="font-size:70%">&reg;</sup> React Kanban component.
 
