@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Searching in React Gantt Chart Component | Syncfusion
-description: Learn here all about Searching in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Searching in React Gantt Chart | Syncfusion
+description: Learn how to configure search functionality in Syncfusion React Gantt Chart to quickly locate tasks using the toolbar search box.
+keywords: react gantt searching, toolbar search, task search, search configuration, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/filtering/searching
 platform: gantt-sdk
-control: Searching 
+control: Searching - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Searching in React Gantt Chart Component
+# Searching Tasks Using the Toolbar Search Box in React Gantt Chart
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component allows quick filtering of records based on search input, improving access to relevant data in large datasets.
 

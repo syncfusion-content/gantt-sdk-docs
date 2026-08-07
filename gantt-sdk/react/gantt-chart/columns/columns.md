@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Columns in React Gantt Chart Component | Syncfusion
-description: Learn here all about columns in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Columns in React Gantt Chart | Syncfusion
+description: Learn how to configure columns in Syncfusion React Gantt Chart with field mapping, formatting, visibility, and custom column options.
+keywords: react gantt columns, column configuration, field mapping, column visibility, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/columns/columns
 platform: gantt-sdk
-control: Columns 
+control: Columns - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Columns in React Gantt Chart Component
+# Configuring and Customizing Columns in React Gantt Chart
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component displays task data in a tabular format using columns. Columns help organize data efficiently and support user interaction within the Gantt chart.
 

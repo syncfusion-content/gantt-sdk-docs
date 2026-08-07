@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Performance tips for React Gantt control | Syncfusion
-description: Checkout and learn here all about how to improve the loading performance of React Gantt control of Syncfusion Essential JS 2 and more.
+title: Performance Tips for React Gantt Chart | Syncfusion
+description: Learn how to improve the loading and rendering performance of Syncfusion React Gantt Chart with best practices for large datasets and complex schedules.
+keywords: react gantt performance, loading performance, large dataset, rendering optimization, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/performance
 platform: gantt-sdk
-control: Gantt performance
-publishingplatform: gantt-sdk
+control: Performance - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Performance tips for React Gantt control
+# Optimization with Virtual Scrolling in React Gantt Chart
 
 This article is a comprehensive guide on improving the loading performance of the Gantt Chart component, especially when dealing with large datasets and a significant number of columns. It provides valuable insights into the steps required to bind a large data source without experiencing performance degradation. By offering detailed explanations and actionable tips, this resource aims to empower readers with the knowledge and best practices necessary to optimize the performance of the Gantt Chart component during data binding, ensuring a smooth and efficient user experience.
 
@@ -75,6 +76,6 @@ The Gantt Chart component operates on a client-server basis, meaning data is sen
 ```csharp
 var serializer = new JavaScriptSerializer { MaxJsonLength = Int32.MaxValue };
 ```
-## Microsoft excel limitation while exporting millions of records to excel file format
+## Microsoft Excel limitation while exporting millions of records to excel file format
 
 By default, Microsoft Excel supports only 1,048,576 records per sheet. Therefore, exporting millions of records directly to Excel is not feasible. For more details on Microsoft Excel specifications and limits, you can refer to the [documentation](https://support.microsoft.com/en-gb/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3). It is recommended to export large datasets in CSV (Comma-Separated Values) or other formats that handle large data more efficiently than Excel.
