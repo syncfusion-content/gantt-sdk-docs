@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Columns in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about columns in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Columns
+title: Columns in Vue Gantt Chart | Syncfusion
+description: Learn how to work with columns in Syncfusion Vue Gantt Chart including configuration, customization, and data binding.
+keywords: vue gantt columns, column configuration, column mapping, field binding, column customization, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/columns/columns
 platform: gantt-sdk
+control: Columns - Gantt Chart
+publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Columns in Vue Gantt Chart Component
+# Columns with Field Mapping and Formatting in Vue Gantt Chart
 
 Columns display information from the bound data source, and you can edit column values to update task details through the TreeGrid. Operations such as sorting, filtering, and searching can be performed based on column definitions. To display a Gantt Chart column, the [field](https://ej2.syncfusion.com/vue/documentation/api/gantt/column#field) property should be mapped from the data source to the column.
 

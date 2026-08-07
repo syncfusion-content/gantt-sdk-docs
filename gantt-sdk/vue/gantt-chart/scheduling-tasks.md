@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Scheduling Tasks in Vue Gantt Chart component | Syncfusion
-description: Learn here all about Scheduling tasks in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Scheduling tasks 
+title: Scheduling Tasks in Vue Gantt Chart | Syncfusion
+description: Learn how to schedule and manage tasks in Syncfusion Vue Gantt Chart with duration units, date ranges, and dependencies.
+keywords: vue gantt scheduling, task duration, scheduling modes, task dates, dependencies, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/scheduling-tasks
 platform: gantt-sdk
+control: Scheduling Tasks - Gantt Chart
+publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Scheduling Tasks in Vue Gantt Chart component
+# Task Scheduling with Duration Units in Vue Gantt Chart
 
 ## Duration units
 

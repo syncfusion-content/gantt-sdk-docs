@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Style and appearance in Vue Gantt Chart component | Syncfusion
-description: Learn here all about Style and appearance in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Style and appearance 
+title: Style and Appearance in Vue Gantt Chart | Syncfusion
+description: Learn how to customize the style and appearance of Syncfusion Vue Gantt Chart using CSS classes and themes.
+keywords: vue gantt styling, css customization, theme customization, appearance, custom styles, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/style-and-appearance
 platform: gantt-sdk
+control: Style and Appearance - Gantt Chart
+publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Style and appearance in Vue Gantt Chart component
+# Style and Appearance with CSS and Theme Support in Vue Gantt Chart
 
 To modify the Gantt Chart appearance, you need to override the default CSS of gantt chart. Please find the list of CSS classes and its corresponding section in Gantt Chart. Also, you have an option to create your own custom theme for all the JavaScript controls using our [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=tailwind3).
 

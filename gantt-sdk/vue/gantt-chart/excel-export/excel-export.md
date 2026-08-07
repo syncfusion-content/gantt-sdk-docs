@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Excel Export in Vue Gantt Chart Component | Syncfusion
-description: Learn how to enable and use Excel export in the Syncfusion Vue Gantt Chart component to export data to Excel and CSV formats easily.
-control: Excel export
+title: Excel Export in Vue Gantt Chart | Syncfusion
+description: Learn how to export Vue Gantt Chart data to Excel and CSV formats using client-side exporting.
+keywords: vue gantt excel export, csv export, export data, excel format, client-side export, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/excel-export/excel-export
 platform: gantt-sdk
+control: Excel Export - Gantt Chart
+publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Excel export in Vue Gantt Chart Component
+# Exporting Data to Excel in Vue Gantt Chart
 
 The Gantt Chart component supports client‑side exporting, allowing you to export its data to Excel and CSV formats. Use the [excelExport](https://ej2.syncfusion.com/vue/documentation/api/gantt#excelexport) and [csvExport](https://ej2.syncfusion.com/vue/documentation/api/gantt#csvexport) methods to perform exporting. To enable Excel export, set the [allowExcelExport](https://ej2.syncfusion.com/vue/documentation/api/gantt#allowexcelexport) property to `true`.
 

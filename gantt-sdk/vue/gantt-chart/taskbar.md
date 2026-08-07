@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Taskbar in Vue Gantt Chart component | Syncfusion
-description: Learn here all about Taskbar in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Taskbar 
+title: Taskbar in Vue Gantt Chart | Syncfusion
+description: Learn how to customize and configure taskbars in Syncfusion Vue Gantt Chart with templates for tasks, milestones, and progress.
+keywords: vue gantt taskbar, taskbar template, milestone template, parent taskbar, progress bar, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/taskbar
 platform: gantt-sdk
+control: Taskbar - Gantt Chart
+publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Taskbar in Vue Gantt Chart component
+# Taskbar Customization with Templates in Vue Gantt Chart
 
 ## Taskbar template
 

@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Filtering in Vue Gantt Chart Component | Syncfusion
-description: Learn how to enable and use filtering in the Vue Gantt Chart to refine data with menu filters, search, hierarchy modes, and custom options.
-control: Filtering
+title: Filtering in Vue Gantt Chart | Syncfusion
+description: Learn how to enable filtering in Syncfusion Vue Gantt Chart using menu filters, search, hierarchy modes, and custom options.
+keywords: vue gantt filtering, filter menu, search filtering, filter criteria, data filtering, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/filtering/filtering
 platform: gantt-sdk
+control: Filtering - Gantt Chart
+publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Filtering in Vue Gantt Chart Component
+# Filtering and Search Features in Vue Gantt Chart
 
 Filtering allows you to view specific or related records based on filter criteria. Filtering in the Gantt Chart component can be done using the **filter menu** and **toolbar search**.
 

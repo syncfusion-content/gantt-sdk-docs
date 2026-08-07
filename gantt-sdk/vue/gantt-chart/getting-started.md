@@ -1,9 +1,12 @@
 ---
 layout: post
-title: Getting Started with Vue Gantt Chart Component | Syncfusion
-description: Check out and learn about getting started with the Vue Gantt Chart component of Syncfusion Essential JS 2 and more details.
-control: Getting started
+title: Getting Started with Vue Gantt Chart | Syncfusion
+description: Check out and learn about getting started with the Vue Gantt Chart component with step-by-step guide and code examples.
+keywords: vue gantt getting started, setup, installation, first steps, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/getting-started
 platform: gantt-sdk
+control: Getting Started - Gantt Chart
+publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Searching in Vue Gantt Chart Component | Syncfusion
-description: Learn how to use searching in the Vue Gantt Chart to quickly find records with toolbar search, methods, and customizable search settings.
-control: Searching
+title: Searching in Vue Gantt Chart | Syncfusion
+description: Learn how to use search functionality in Syncfusion Vue Gantt Chart to find records using toolbar search and search methods.
+keywords: vue gantt searching, search records, toolbar search, search method, search functionality, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/filtering/searching
 platform: gantt-sdk
+control: Searching - Gantt Chart
+publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Searching in Vue Gantt Chart Component
+# Implementing Quick Search for Task Data in Vue Gantt Chart
 
 You can search records in the Gantt Chart component using the [search](https://ej2.syncfusion.com/vue/documentation/api/gantt#search) method with a search key as the parameter. The Gantt Chart also supports integrating a search text box into the toolbar by adding the search item through the [toolbar](https://ej2.syncfusion.com/vue/documentation/api/gantt#toolbar) property.
 

@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Cell Selection in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about Cell selection in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Cell selection 
+title: Cell Selection in Vue Gantt Chart | Syncfusion
+description: Learn how to enable cell selection in Syncfusion Vue Gantt Chart with selection modes and cell information methods.
+keywords: vue gantt cell selection, select cells, cell mode, get selected cells, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/selection/cell-selection
 platform: gantt-sdk
+control: Cell Selection - Gantt Chart
+publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Cell Selection in Vue Gantt Chart Component
+# Selecting Individual Cells and Cell Ranges in Vue Gantt Chart
 
 You can select a cell in the Gantt Chart component by setting the https://ej2.syncfusion.com/vue/documentation/api/gantt/selectionSettings#mode property to `cell`. You can get the selected cell information using the https://ej2.syncfusion.com/vue/documentation/api/gantt/selection#getselectedrowcellindexes method. This method returns the result as an object collection, which contains the `cellIndexes` and `rowIndex` information of the selected cells.
 

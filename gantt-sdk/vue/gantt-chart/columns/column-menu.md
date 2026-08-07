@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Column Menu in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about column menu in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Column menu 
+title: Column Menu in Vue Gantt Chart | Syncfusion
+description: Learn how to use column menu in Syncfusion Vue Gantt Chart for sorting, filtering, and column customization options.
+keywords: vue gantt column menu, sorting menu, filtering menu, column options, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/columns/column-menu
 platform: gantt-sdk
+control: Column Menu - Gantt Chart
+publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Column Menu in Vue Gantt Chart Component
+# Column Menu with Sort and Filter in Vue Gantt Chart
 
 The column menu provides options for features like sorting, filtering, and autofit. A menu with the integrated features will appear when you click the multiple icon in a column. To enable the column menu, set the [showColumnMenu](https://ej2.syncfusion.com/vue/documentation/api/gantt#showcolumnmenu) property to `true`.
 

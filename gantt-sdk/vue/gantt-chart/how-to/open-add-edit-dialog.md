@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Open Add Edit Dialog In Vue Gantt Chart Component | Syncfusion
-description: Learn here all about open add edit dialog in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Open add edit dialog 
+title: Open Add Edit Dialog in Vue Gantt Chart | Syncfusion
+description: Learn how to programmatically open add and edit dialogs in Syncfusion Vue Gantt Chart.
+keywords: vue gantt add edit dialog, open dialog, add dialog, edit dialog, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/how-to/open-add-edit-dialog
 platform: gantt-sdk
+control: Open Add Edit Dialog - Gantt Chart
+publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Open Add Edit Dialog in Vue Gantt Chart Component
+# Opening Add and Edit Dialogs Programmatically in Vue Gantt Chart
 
 In the Gantt Chart component, add and edit dialogs can be opened dynamically by using [openAddDialog](https://ej2.syncfusion.com/vue/documentation/api/gantt#openadddialog) and [openEditDialog](https://ej2.syncfusion.com/vue/documentation/api/gantt#openeditdialog) methods. The following code example shows how to open add and edit dialog on separate button click actions.
 

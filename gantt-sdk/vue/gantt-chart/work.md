@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Work in Vue Gantt Chart component | Syncfusion
-description: Learn here all about Work in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Work 
+title: Work in Vue Gantt Chart | Syncfusion
+description: Learn how to manage work values in Syncfusion Vue Gantt Chart with different work units like hour, day, and minute.
+keywords: vue gantt work, work hours, work units, task effort, duration, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/work
 platform: gantt-sdk
+control: Work - Gantt Chart
+publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Work in Vue Gantt Chart component
+# Work and Effort Tracking with Task Type Support in Vue Gantt Chart
 
 ## Work
 

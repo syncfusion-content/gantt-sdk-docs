@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Global local in Vue Gantt Chart component | Syncfusion
-description: Learn here all about Global local in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Global local 
+title: Localization in Vue Gantt Chart | Syncfusion
+description: Learn about localization support in Syncfusion Vue Gantt Chart to display content in multiple languages and regional formats.
+keywords: vue gantt localization, global local, language support, regional settings, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/global-local
 platform: gantt-sdk
+control: Localization - Gantt Chart
+publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Global local in Vue Gantt Chart component
+# Globalization and Localization in Vue Gantt Chart
 
 ## Localization
 

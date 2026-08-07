@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Custom Data Source in Vue Gantt Chart Component | Syncfusion
-description: Learn how to configure a custom data source in the Syncfusion Vue Gantt Chart and dynamically export it using exportProperties.
-control: Custom data source
+title: Custom Data Source in Excel Export in Vue Gantt Chart | Syncfusion
+description: Learn how to configure custom data source in Excel export for Vue Gantt Chart using exportProperties.
+keywords: vue gantt custom data source, export properties, dynamic data source, excel export, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/excel-export/custom-data-source
 platform: gantt-sdk
+control: Custom Data Source - Gantt Chart
+publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Custom data source in Vue Gantt Chart Component
+# Configuring Advanced Excel Export Options in Vue Gantt Chart
 
 The Excel export feature provides an option to define the data source dynamically before exporting. To export data with a custom data source, define the `dataSource` in the `exportProperties`.
 

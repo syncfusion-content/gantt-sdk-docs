@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Timeline in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about Time line in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Timeline
+title: Timeline in Vue Gantt Chart | Syncfusion
+description: Learn how to configure timeline in Syncfusion Vue Gantt Chart with custom units, formats, and timeline views.
+keywords: vue gantt timeline, timeline configuration, timeline units, timeline format, project duration, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/time-line/timeline
 platform: gantt-sdk
+control: Timeline - Gantt Chart
+publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Timeline in Vue Gantt Chart Component
+# Configuring Timeline Settings in Vue Gantt Chart
 
 In the Gantt Chart component, timeline is used to represent the project duration as individual cells with defined unit and formats.
 

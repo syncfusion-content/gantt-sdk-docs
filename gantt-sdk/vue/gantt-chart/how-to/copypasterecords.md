@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Copy Paste Records in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about copy-paste records in the Syncfusion Vue Gantt Chart component of Essential JS 2 and more.
-control: Copypasterecords 
+title: Copy Paste Records in Vue Gantt Chart | Syncfusion
+description: Learn how to copy and paste records in Syncfusion Vue Gantt Chart with context menu and hierarchical records.
+keywords: vue gantt copy paste, copy records, paste records, context menu, copy paste records, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/how-to/copy-paste-records
 platform: gantt-sdk
+control: Copy Paste Records - Gantt Chart
+publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Copy Paste Records in Vue Gantt Chart Component
+# Copy and Paste Operations for Records in Vue Gantt Chart
 
 You can copy and paste a record in the Gantt Chart by using the `addRecord` method and a custom context menu. It is also possible to copy and paste the parent record with multiple hierarchical child records at the required position.
 

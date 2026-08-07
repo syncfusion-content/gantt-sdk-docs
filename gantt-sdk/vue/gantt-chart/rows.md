@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Rows in Vue Gantt Chart component | Syncfusion
-description: Learn here all about Rows in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Rows 
+title: Rows in Vue Gantt Chart | Syncfusion
+description: Learn how to configure and manage rows in Syncfusion Vue Gantt Chart with row height, spanning, and customization options.
+keywords: vue gantt rows, row configuration, row height, row customization, row spanning, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/rows
 platform: gantt-sdk
+control: Rows - Gantt Chart
+publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Rows in Vue Gantt Chart component
+# Row Interactions and Customization in Vue Gantt Chart
 
 Row represents a task information from the data source, and it is possible to perform the following actions in Gantt rows.
 
