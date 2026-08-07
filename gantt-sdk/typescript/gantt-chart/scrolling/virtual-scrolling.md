@@ -3,7 +3,7 @@ layout: post
 title: Virtual Scrolling in TypeScript Gantt Chart | Syncfusion
 description: Learn how to configure virtual scrolling in Syncfusion TypeScript Gantt Chart for high-performance rendering of large datasets and wide timelines.
 keywords: TypeScript gantt virtual scroll, large data, performance, virtual rendering, high performance, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/scrolling/virtual-scroll
+canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/scrolling/virtual-scrolling
 platform: gantt-sdk
 control: Virtual Scrolling - Gantt Chart
 documentation: ug
