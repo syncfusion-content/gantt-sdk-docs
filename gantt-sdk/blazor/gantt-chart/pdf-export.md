@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: PDF Export in Blazor Gantt Chart Component | Syncfusion
-description: Export Gantt charts to PDF in Syncfusion Blazor Gantt with blob objects, single-page layouts, themes, and advanced customization options.
+title: PDF Export in Blazor Gantt Chart | Syncfusion
+description: Learn how to export Syncfusion Blazor Gantt Chart to PDF with blob objects, single-page layouts, themes, and advanced export options.
+keywords: blazor gantt pdf export, export to pdf, gantt pdf, single page pdf, pdf themes, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/pdf-export
 platform: gantt-sdk
-control: PDF export
+control: PDF Export - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# PDF Export in Blazor Gantt Chart Component
+# Export Gantt Chart to PDF in Blazor
 
 The PDF export feature enables exporting Blazor Gantt chart data to a PDF document. To perform the export, use the [ExportToPdfAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ExportToPdfAsync_Syncfusion_Blazor_Gantt_GanttPdfExportProperties_) method. Ensure that PDF export is enabled in the Gantt chart component by setting the [AllowPdfExport](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowPdfExport) property to true.
 PDF export in the Blazor Gantt Chart component enables exporting project data to PDF documents for sharing or archiving, using the [ExportToPdfAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ExportToPdfAsync_Syncfusion_Blazor_Gantt_GanttPdfExportProperties_) method. with [AllowPdfExport](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowPdfExport) set to **true**. This feature supports exporting timelines, tasks, and dependencies, with options for indicators via `base64` images, blob objects for previews, single-page layouts, multiple Gantt instances in one file, and themes like Material or Bootstrap. Focus on auto-scheduled tasks for accurate export, as manual scheduling is not currently supported.

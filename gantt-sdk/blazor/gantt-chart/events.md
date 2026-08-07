@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Events in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about events in Syncfusion Blazor Gantt Chart component and much more details.
+title: Events in Blazor Gantt Chart | Syncfusion
+description: Learn how to handle events in Syncfusion Blazor Gantt Chart for user interactions like task add, edit, delete, selection, and timeline changes.
+keywords: blazor gantt events, task events, selection events, edit events, gantt event handlers, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events
 platform: gantt-sdk
-control: Gantt Chart
+control: Events - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Events in Blazor Gantt Chart Component
+# Events and Custom Actions in Blazor Gantt Chart
 
 In this section, the list of events of the Gantt Chart component has been provided which will be triggered for appropriate Gantt Chart actions.
 

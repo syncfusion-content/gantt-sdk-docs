@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Blazor Gantt Chart Connected to MySQL via EF | Syncfusion®
-description: Bind MySQL data to Blazor Gantt Chart using Entity Framework Core with complete CRUD, filtering, sorting, and advanced data operations.
+title: MySQL with EF in Blazor Gantt Chart | Syncfusion
+description: Learn how to bind MySQL data to Syncfusion Blazor Gantt Chart using Entity Framework Core with CRUD, filtering, and sorting support.
+keywords: blazor gantt mysql, entity framework core, mysql server binding, ef core, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/connecting-to-database/mysql-server
 platform: gantt-sdk
-control: Gantt Chart
+control: MySQL Database - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Connecting MySQL Server to Blazor Gantt Chart Using Entity Framework
+# Connecting to MySQL via Entity Framework in Blazor Gantt Chart
 
 The [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) supports binding data from a MySQL Server database using Entity Framework Core (EF Core). This modern approach is more maintainable and type-safe alternative to raw SQL queries.
 

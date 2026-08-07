@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Critical Path in Blazor Gantt Chart Component | Syncfusion
-description: Learn here all about Critical path in Syncfusion Blazor Gantt Chart component and much more details.
+title: Critical Path in Blazor Gantt Chart | Syncfusion
+description: Learn how to identify and visualize the critical path in Syncfusion Blazor Gantt Chart to track tasks that directly impact the project end date.
+keywords: blazor gantt critical path, critical tasks, project critical path, enablecriticalpath, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/criticalpath
 platform: gantt-sdk
-component: Critical path
+control: Critical Path - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Critical Path in Blazor Gantt Chart component
+# Critical Path Visualization for Project Tracking in Blazor Gantt Chart
 
 The critical path represents the longest sequence of dependent tasks that determines the minimum project duration. Tasks on the critical path have zero or negative [SlackValue](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttCriticalPathSettings.html#Syncfusion_Blazor_Gantt_GanttCriticalPathSettings_SlackValue) (float), specifies the number of days before the project’s maximum end date a task should be marked as critical. The Blazor Gantt Chart component automatically calculates and highlights critical tasks in red with emphasized dependency connector lines when the [EnableCriticalPath](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_EnableCriticalPath) property is enabled. Critical path analysis helps identify which tasks require immediate attention and cannot be delayed without affecting project deadlines.
 

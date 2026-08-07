@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Excel Export in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Excel Export in Syncfusion Blazor Gantt Chart component and much more.
+title: Excel Export in Blazor Gantt Chart | Syncfusion
+description: Learn how to export Syncfusion Blazor Gantt Chart data to Excel with custom file names, themes, column filters, and export options.
+keywords: blazor gantt excel export, export to excel, gantt excel, xlsx export, export options, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/excel-export
 platform: gantt-sdk
-control: Gantt Chart
+control: Excel Export - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Excel Export in Blazor Gantt Chart Component
+# Export Gantt Chart Data to Excel in Blazor
 
 The Syncfusion Blazor Gantt Chart component supports exporting project data to Excel and CSV formats, enabling seamless sharing, reporting, and offline analysis.  
  

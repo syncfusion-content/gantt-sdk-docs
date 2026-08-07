@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Data Binding in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Data Binding in Syncfusion Blazor Gantt Chart component and much more.
+title: Data Binding in Blazor Gantt Chart | Syncfusion
+description: Learn how to bind local and remote data in Syncfusion Blazor Gantt Chart using adaptors, field mapping, and hierarchical data structures.
+keywords: blazor gantt data binding, local data, remote data, adaptors, field mapping, hierarchical data, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/data-binding
 platform: gantt-sdk
-control: Gantt Chart
+control: Data Binding - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Data Binding in Blazor Gantt Chart Component
+# Data Binding from Local and Remote Sources in Blazor Gantt Chart
 
 Data binding connects the Blazor Gantt component to project data sources, enabling dynamic visualization and management of project information. The component supports both local and remote data integration through the  [DataSource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_DataSource) property, which accepts either a list of business objects or a [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html) instance.
 

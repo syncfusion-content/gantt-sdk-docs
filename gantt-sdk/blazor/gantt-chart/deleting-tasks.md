@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Deleting tasks in Blazor Gantt Chart Component | Syncfusion
-description: Learn how to delete tasks dynamically in the Syncfusion Blazor Gantt Chart component using toolbar or programmatic methods for efficient project management.
+title: Deleting Tasks in Blazor Gantt Chart | Syncfusion
+description: Learn how to delete tasks in Syncfusion Blazor Gantt Chart using toolbar actions, context menu, or programmatic API with confirmation support.
+keywords: blazor gantt delete tasks, remove task, toolbar delete, context menu, programmatic delete, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/deleting-tasks
 platform: gantt-sdk
-control: Deleting tasks
+control: Deleting Tasks - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Deleting Tasks in Blazor Gantt Chart Component
+# Deleting Tasks with Toolbar and API in Blazor Gantt Chart
 
 Deleting tasks in the Blazor Gantt Chart component streamlines project management by removing tasks, such as outdated milestones or subtasks, using the toolbar or programmatic methods. Enabled by setting the [GanttEditSettings.AllowDeleting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_AllowDeleting) property to **true** and tasks can be deleted after selecting a row, ensuring seamless updates to dependencies and critical path calculations. A confirmation dialog, activated via [GanttEditSettings.ShowDeleteConfirmDialog](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_ShowDeleteConfirmDialog), prompts to verify deletions, preventing accidental removals. The [DeleteRecordAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_DeleteRecordAsync_System_Nullable_System_Int32__) method allows programmatic deletion, requiring a selected record with valid `GanttTaskFields` mappings (e.g., id, name). Ensure tasks are selected and `GanttTaskFields` are properly configured to avoid issues during deletion.
 

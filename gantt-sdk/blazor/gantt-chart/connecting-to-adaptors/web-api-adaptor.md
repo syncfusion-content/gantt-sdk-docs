@@ -1,14 +1,16 @@
----
+﻿---
 layout: post
-title: WebApiAdaptor with CRUD Operations in Blazor Gantt Chart | Syncfusion®
-description: Learn about binding data and performing CRUD operations using the WebApiAdaptor in the Blazor Gantt Chart component and much more.
+title: Web API Adaptor in Blazor Gantt Chart | Syncfusion
+description: Learn how to bind data and perform CRUD operations using the Web API adaptor in Syncfusion Blazor Gantt Chart component.
+keywords: blazor gantt web api adaptor, WebApiAdaptor, web api data binding, remotedata, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/connecting-to-adaptors/web-api-adaptor
 platform: gantt-sdk
-control: Gantt Chart
-keywords: adaptors, WebApiAdaptor, webapi adaptor, remotedata
+control: Web API Adaptor - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# WebApiAdaptor in Blazor Gantt Chart
+# Web API Adaptor for Remote Data Binding in Blazor Gantt Chart
 
 The [WebApiAdaptor](https://blazor.syncfusion.com/documentation/data/adaptors#web-api-adaptor) extends the capabilities of the [ODataAdaptor](https://blazor.syncfusion.com/documentation/data/adaptors#odata-adaptor) and is used when connecting to a Web API that exposes OData-compatible endpoints. It enables the [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) to send OData-formatted requests for data access and updates.
 

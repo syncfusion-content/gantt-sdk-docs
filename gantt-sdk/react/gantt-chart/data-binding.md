@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Data Binding in React Gantt Chart Component | Syncfusion
-description: Learn here all about data binding in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Data Binding in React Gantt Chart | Syncfusion
+description: Learn how to bind local and remote data in Syncfusion React Gantt Chart using various data sources and adaptors for task scheduling.
+keywords: react gantt data binding, local data, remote data, data source, adaptors, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/data-binding
 platform: gantt-sdk
-control: Data binding 
+control: Data Binding - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Data Binding in React Gantt Chart Component
+# Data Binding from Local and Remote Sources in React Gantt Chart
 
 Data binding connects the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component to project data sources, enabling dynamic visualization and management of project information. The component supports both local JavaScript arrays and remote server data through the [dataSource](https://ej2.syncfusion.com/react/documentation/api/gantt#datasource) property, which accepts either a `DataManager` instance or JavaScript object array collection.
 

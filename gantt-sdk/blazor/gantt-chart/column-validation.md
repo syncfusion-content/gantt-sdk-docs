@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Column Validation in Blazor Gantt Chart Component | Syncfusion
-description: Learn to configure built-in and custom column validation in Syncfusion Blazor Gantt Chart, including validation rules, data annotations, and custom validators.
+title: Column Validation in Blazor Gantt Chart | Syncfusion
+description: Learn how to configure built-in and custom column validation in Syncfusion Blazor Gantt Chart using validation rules and custom validator functions.
+keywords: blazor gantt column validation, validation rules, custom validators, required field, min max validation, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/column-validation
 platform: gantt-sdk
-control: Gantt Chart
+control: Column Validation - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Column Validation in Blazor Gantt Chart
+# Column Validation with Built-in and Custom Rules in Blazor Gantt Chart
 
 Column validation ensures that edited or newly added row data meets defined criteria before it is saved. This support is useful for enforcing rules or constraints on individual columns to maintain data integrity. When validation rules are applied, error messages are displayed for invalid fields, and saving is prevented until all validations pass.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Sorting in .NET MAUI Kanban control | Syncfusion®
-description: Learn here all about Sorting support in Syncfusion® .NET MAUI Kanban Board (SfKanban) control and more.
+title: Sorting in .NET MAUI Kanban Board | Syncfusion®
+description: Learn about Sorting support in the Syncfusion® .NET MAUI Kanban Board using custom fields and index-based sorting.
 platform: gantt-sdk
 control: Kanban (SfKanban)
 documentation: ug
 keywords: .net maui Kanban sorting, sfKanban sorting in .net maui, .net maui Kanban sorting support.
 ---
 
-# Card Item Sorting in .NET MAUI Kanban (SfKanban)
+# Sorting in .NET MAUI Kanban Board
 
 The Kanban control supports customizable card sorting within columns based on specific data fields such as `Priority`, `DueDate`, or `Status`. Sorting can be configured programmatically and updated dynamically at runtime using the following properties:
 

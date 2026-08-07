@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Row spanning in React Gantt Chart Component | Syncfusion
-description: Learn here all about Row spanning in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Row Spanning in React Gantt Chart | Syncfusion
+description: Learn how to configure row spanning in Syncfusion React Gantt Chart to merge cells across multiple rows for improved task data presentation.
+keywords: react gantt row spanning, row merge, cell spanning, merged rows, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/rows/row-spanning
 platform: gantt-sdk
-control: Row spanning 
+control: Row Spanning - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Row Spanning in React Gantt Chart Component
+# Merging Cells Across Rows with Row Spanning in React Gantt Chart
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component supports row cell spanning, allowing multiple cells in a row to merge into a single cell. This is useful for displaying shared information across rows without duplication.
 

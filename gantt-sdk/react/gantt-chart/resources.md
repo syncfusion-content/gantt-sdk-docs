@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Resources in React Gantt Chart Component | Syncfusion
-description: Learn how to configure resources in the Syncfusion React Gantt Chart component for task allocation and utilization visualization.
+title: Resources in React Gantt Chart | Syncfusion
+description: Learn how to configure resources in Syncfusion React Gantt Chart for task allocation, assignment, and resource utilization visualization.
+keywords: react gantt resources, resource allocation, task assignment, resource units, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/resources
 platform: gantt-sdk
-control: Resources
+control: Resources - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Resources in React Gantt Chart Component
+# Resources with Allocation and Task Mapping in React Gantt Chart
 
 Resources in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component represent people, equipment, or materials allocated to tasks, visualized in taskbars and labels for clear utilization tracking. Assigned via the [resources](https://ej2.syncfusion.com/react/documentation/api/gantt#resources) property, resources map to tasks using [resourceFields](https://ej2.syncfusion.com/react/documentation/api/gantt#resourcefields) for ID, name, unit, and group. This enables display of resource names in columns or labels with [labelSettings](https://ej2.syncfusion.com/react/documentation/api/gantt/labelSettings), highlighting workloads and overallocation. The [queryTaskbarInfo](https://ej2.syncfusion.com/react/documentation/gantt/events#querytaskbarinfo) event customizes taskbar styles based on resources, such as color-coding. Resources include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may truncate names for multiple assignments. By default, resources allocate 100% unit if unspecified.
 

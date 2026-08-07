@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Cell Selection in Blazor Gantt Chart Component | Syncfusion
-description: Learn how to configure and customize cell selection in the Syncfusion Blazor Gantt Chart, including single, multiple, and dynamic selection.
+title: Cell Selection in Blazor Gantt Chart | Syncfusion
+description: Learn how to configure cell selection in Syncfusion Blazor Gantt Chart with single, multiple, and programmatic selection modes for grid cells.
+keywords: blazor gantt cell selection, single cell select, multiple cell select, cell selection mode, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/cell-selection
 platform: gantt-sdk
-control: Gantt Chart
+control: Cell Selection - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Cell selection in Blazor Gantt Chart component
+# Cell Selection with Single and Multiple Modes in Blazor Gantt Chart
 
 Cell selection in the Gantt Chart component enables interactive selection of specific cells or ranges of cells within the grid. You may select cells using mouse clicks or arrow keys (up, down, left, right). This is useful for highlighting, manipulating, or performing operations on particular gantt chart cells.
 

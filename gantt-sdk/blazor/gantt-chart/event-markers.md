@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Event Markers in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Event Markers in Syncfusion Blazor Gantt Chart component and more.
+title: Event Markers in Blazor Gantt Chart | Syncfusion
+description: Learn how to add and customize event markers in Syncfusion Blazor Gantt Chart to highlight important project milestones on the timeline.
+keywords: blazor gantt event markers, timeline markers, milestone events, eventmarkers, highlight events, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/event-markers
 platform: gantt-sdk
-control: Eventmarkers
+control: Event Markers - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Event Markers in Blazor Gantt Chart Component
+# Event Markers for Milestone Highlights in Blazor Gantt Chart
 
 The Event Markers is the Gantt Chart component are used to highlight the important events in a project. Event markers can be initialized by using the [GanttEventMarkers](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEventMarkers.html) property, and you can define date and label for the event markers using the [Day](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEventMarker.html#Syncfusion_Blazor_Gantt_GanttEventMarker_Day) and [Label](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEventMarker.html#Syncfusion_Blazor_Gantt_GanttEventMarker_Label) property. You can also customize it using the [CssClass](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEventMarker.html#Syncfusion_Blazor_Gantt_GanttEventMarker_CssClass) property. The following code example shows how to add event markers in the Gantt Chart component.
 

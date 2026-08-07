@@ -1,12 +1,15 @@
----
+﻿---
 layout: post
-title: Taskbar in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Taskbar editing in Syncfusion Blazor Gantt Chart component and more.
+title: Taskbar in Blazor Gantt Chart | Syncfusion
+description: Learn how to configure and customize taskbars in Syncfusion Blazor Gantt Chart including parent, child, milestone taskbars, and progress rendering.
+keywords: blazor gantt taskbar, parent taskbar, child taskbar, milestone, taskbar template, progress bar, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/taskbar
 platform: gantt-sdk
-control: Gantt Chart
+control: Taskbar - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
-# Taskbar in Blazor Gantt Chart Component
+# Taskbar Customization with Templates in Blazor Gantt Chart
 
 ## Taskbar template
 

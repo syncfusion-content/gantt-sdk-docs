@@ -1,14 +1,16 @@
----
+﻿---
 layout: post
-title: UrlAdaptor with CRUD Operations in Blazor Gantt Chart | Syncfusion®
-description: Learn how to bind remote data and perform CRUD operations using the UrlAdaptor in Blazor Gantt Chart.
+title: URL Adaptor in Blazor Gantt Chart | Syncfusion
+description: Learn how to bind remote data and perform CRUD operations using the URL adaptor in Syncfusion Blazor Gantt Chart component.
+keywords: blazor gantt url adaptor, UrlAdaptor, remote data binding, restful api, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/connecting-to-adaptors/url-adaptor
 platform: gantt-sdk
-control: Gantt Chart
-keywords: adaptors, UrlAdaptor, url adaptor, remotedata 
+control: URL Adaptor - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# UrlAdaptor in Syncfusion Blazor Gantt Chart
+# URL Adaptor for Remote Data Binding in Blazor Gantt Chart
 
 The [UrlAdaptor](https://blazor.syncfusion.com/documentation/data/adaptors#url-adaptor) enables the Blazor Gantt Chart to load and manage task data from a remote server through a custom API service. It is used when the application stores data on a server and needs to fetch, update, or delete records through an API rather than loading everything at once on the client side.
 

@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Holidays in Blazor Gantt Chart Component | Syncfusion
-description: Learn how to configure holidays in the Syncfusion Blazor Gantt Chart component for accurate task scheduling with non-working days.
+title: Holidays in Blazor Gantt Chart | Syncfusion
+description: Learn how to configure holidays in Syncfusion Blazor Gantt Chart to mark non-working days and improve project task scheduling accuracy.
+keywords: blazor gantt holidays, non-working days, holiday configuration, working time, project calendar, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/holidays
 platform: gantt-sdk
-control: Gantt Chart
+control: Holidays - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Holidays in Blazor Gantt Chart Component
+# Holidays and Non-Working Days in Blazor Gantt Chart
 
 The Blazor Gantt Chart component supports holidays to define non-working days, such as national holidays or company closures, that impact task scheduling and project timelines. Holidays override regular working time settings like [WorkWeek](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_WorkWeek) or [IncludeWeekend](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_IncludeWeekend), ensuring tasks do not progress during these periods. In the timeline, holidays appear as highlighted backgrounds with descriptive labels, creating visible gaps in taskbars to reflect scheduling adjustments. Custom CSS classes allow distinct styling for different holiday types (e.g., national vs. company holidays), enhancing visual clarity. Properly configured holidays ensure accurate duration calculations, dependency adjustments, and critical path analysis, aligning project timelines with resource availability and regional requirements.
 

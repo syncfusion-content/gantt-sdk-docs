@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Blazor Gantt Chart Performance Optimization Guide | Syncfusion®
-description: Learn how to optimize the loading and rendering performance of the Blazor Gantt Chart component, especially when working with large datasets.
+title: Performance Optimization in Blazor Gantt Chart | Syncfusion
+description: Learn how to optimize loading and rendering performance of Syncfusion Blazor Gantt Chart for large datasets with virtualization and lazy loading.
+keywords: blazor gantt performance, large data, virtualization, lazy loading, rendering optimization, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/performance
 platform: gantt-sdk
-control: Gantt Chart
+control: Performance - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Performance tips for Blazor Gantt Chart component
+# Optimization with Virtual Scrolling in Blazor Gantt Chart
 
 This guide provides practical strategies to enhance the loading performance of the [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) component, especially when dealing with large datasets and multiple columns. It provides valuable insights into effective strategies and best practices for binding extensive data sources without encountering performance degradation. It includes actionable tips to ensure smooth data binding and a responsive user experience.
 

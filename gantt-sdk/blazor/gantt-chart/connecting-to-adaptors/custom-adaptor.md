@@ -1,14 +1,16 @@
----
+﻿---
 layout: post
-title: CustomAdaptor with CRUD Operations in Blazor Gantt Chart | Syncfusion®
-description: Learn how to implement custom data binding and perform CRUD operations using a custom adaptor in Blazor Gantt Chart.
+title: Custom Adaptor in Blazor Gantt Chart | Syncfusion
+description: Learn how to implement custom data binding and perform CRUD operations using a custom adaptor in Syncfusion Blazor Gantt Chart.
+keywords: blazor gantt custom adaptor, custombinding, custom data binding, remotedata, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/connecting-to-adaptors/custom-adaptor
 platform: gantt-sdk
-control: Gantt Chart
-keywords: adaptors, CustomAdaptor, custom adaptor, remotedata, custombinding, custom binding
+control: Custom Adaptor - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Custom Binding in Blazor Gantt Chart
+# Custom Adaptor for Data Binding in Blazor Gantt Chart
 
 The [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html) supports custom adaptors, giving you complete programmatic control over every data operation in the [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart). A custom adaptor is the right choice when your data source is not a standard REST endpoint for example, when task data must be loaded from an in-memory cache, a file system, a legacy system with a proprietary API, or a third-party SDK that does not expose a conventional HTTP interface.
 

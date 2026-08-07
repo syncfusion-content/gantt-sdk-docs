@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Column Menu in Blazor Gantt Chart Component | Syncfusion
-description: Learn how to enable sorting, filtering, and autofit using the column menu in the Syncfusion Blazor Gantt Chart.
+title: Column Menu in Blazor Gantt Chart | Syncfusion
+description: Learn how to enable the column menu in Syncfusion Blazor Gantt Chart for sorting, filtering, autofit, and column chooser actions.
+keywords: blazor gantt column menu, sort filter autofit, column actions, column header menu, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/column-menu
 platform: gantt-sdk
-control: Gantt Chart
+control: Column Menu - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Column Menu in Blazor Gantt Chart Component
+# Column Menu with Sort, Filter and Autofit in Blazor Gantt Chart
 
 The column menu in the Blazor Gantt component offers built-in actions including sorting, filtering, column chooser, and autofit. It appears when the column header icon is clicked.
 

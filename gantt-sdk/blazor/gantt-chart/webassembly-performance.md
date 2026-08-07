@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: WebAssembly Performance in Blazor Gantt Component | Syncfusion
-description: Checkout and learn here all about WebAssembly Performance in Syncfusion Blazor Gantt component and more.
+title: WebAssembly Performance in Blazor Gantt Chart | Syncfusion
+description: Learn how to optimize Syncfusion Blazor WebAssembly Gantt Chart performance with prerendering, lazy loading, and large dataset handling techniques.
+keywords: blazor gantt wasm performance, webassembly performance, prerendering, lazy loading, large dataset, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/webassembly-performance
 platform: gantt-sdk
-control: Gantt Chart
+control: WebAssembly Performance - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# WebAssembly Performance in Blazor Gantt Component
+# WebAssembly Performance Optimization in Blazor Gantt Chart
 
 This guide outlines performance optimization strategies for using the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart component efficiently in the Blazor WebAssembly application. The general framework Blazor WebAssembly performance guidelines can be found [here](https://learn.microsoft.com/en-us/aspnet/core/blazor/performance?view=aspnetcore-7.0).
 

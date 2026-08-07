@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Rows in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Rows in Syncfusion Blazor Gantt Chart component and much more details.
+title: Rows in Blazor Gantt Chart | Syncfusion
+description: Learn how to configure and customize rows in Syncfusion Blazor Gantt Chart with row height, expand, collapse, and alternate row styling options.
+keywords: blazor gantt rows, row height, expand collapse rows, row template, alternate rows, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/rows
 platform: gantt-sdk
-control: Gantt Chart
+control: Rows - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Rows in Blazor Gantt Chart Component
+# Row Configuration and Customization in Blazor Gantt Chart
 
 Each row in the Blazor Gantt Chart Component represents a record from the data source and displays its associated field values in both tabular and timeline views. Rows support various interactions such as selection, cell editing, taskbar manipulation, sorting, filtering, and event triggering.
 

@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Blazor Gantt Chart Connected to SQL Server via Dapper | Syncfusion®
-description: Bind SQL Server data to Blazor Gantt Chart using Dapper with complete CRUD, filtering, sorting and advanced data operations.
+title: Dapper ORM in Blazor Gantt Chart | Syncfusion
+description: Learn how to bind SQL Server data to Syncfusion Blazor Gantt Chart using Dapper micro-ORM with complete CRUD and data operations.
+keywords: blazor gantt dapper, dapper orm, sql server dapper, micro-orm data binding, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/connecting-to-ORM/dapper
 platform: gantt-sdk
-control: Gantt Chart
+control: Dapper ORM - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Connecting SQL Server to Blazor Gantt Chart Using Dapper
+# Connecting to SQL Server Using Dapper in Blazor Gantt Chart
 
 The [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) supports binding data from SQL Server using the lightweight Dapper micro‑ORM. This modern approach provides a simpler, more direct alternative where raw SQL control is preferred.
 

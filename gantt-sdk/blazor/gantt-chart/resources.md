@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Resources in Blazor Gantt Chart Component | Syncfusion
-description: Learn how to configure resources in the Syncfusion Blazor Gantt Chart component for task allocation and utilization visualization.
+title: Resources in Blazor Gantt Chart | Syncfusion
+description: Learn how to configure resources in Syncfusion Blazor Gantt Chart for task allocation, resource assignment, and utilization visualization.
+keywords: blazor gantt resources, resource allocation, assign resources, resource fields, task resources, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/resources
 platform: gantt-sdk
-control: Gantt Chart
+control: Resources - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Resources in Blazor Gantt Chart Component
+# Resources with Allocation and Task Mapping in Blazor Gantt Chart
 
 Resources in the Blazor Gantt component represent people, equipment, or materials allocated to tasks, visualized in taskbars and labels for clear utilization tracking. Assigned via the [GanttResource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttResource-2.html) property, resources map to tasks using [GanttAssignmentFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttAssignmentFields-2.html) for ID, name, unit, and group. This enables display of resource names in columns or labels with [GanttLabelSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttLabelSettings-1.html), highlighting workloads and overallocation. Resources include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may truncate names for multiple assignments. By default, resources allocate 100% unit if unspecified.
 

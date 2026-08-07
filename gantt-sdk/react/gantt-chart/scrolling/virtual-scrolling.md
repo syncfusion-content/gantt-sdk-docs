@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Virtual Scroll in React Gantt Chart Component | Syncfusion
-description: Learn how to configure virtual scrolling in the Syncfusion React Gantt Chart component for high-performance rendering of large datasets and wide timelines.
+title: Virtual Scrolling in React Gantt Chart | Syncfusion
+description: Learn how to configure virtual scrolling in Syncfusion React Gantt Chart for high-performance rendering of large datasets and wide project timelines.
+keywords: react gantt virtual scrolling, virtual scroll, large dataset, performance scrolling, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/scrolling/virtual-scrolling
 platform: gantt-sdk
-control: Virtual scroll
+control: Virtual Scrolling - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Virtual Scroll in React Gantt Chart Component
+# High-Performance Rendering with Virtual Scrolling in React Gantt Chart
 
 Virtual scrolling in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component enhances performance by rendering only visible tasks and timeline segments, minimizing DOM operations for large datasets or extensive timelines. It includes row virtualization for handling thousands of tasks (e.g., 10,000 tasks in a project) and timeline virtualization for wide timelines (e.g., multi-year projects), both requiring [VirtualScroll](https://ej2.syncfusion.com/react/documentation/api/gantt/index-default#virtualscrollmodule) injection. Row virtualization renders tasks within the viewport, while timeline virtualization loads timeline cells on-demand during horizontal scrolling, ensuring efficient rendering for complex project management.
 

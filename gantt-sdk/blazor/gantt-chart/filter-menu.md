@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
 title: Filter Menu in Blazor Gantt Chart | Syncfusion
-description: Check out and learn here all about filter menu operation in Syncfusion Blazor Gantt Chart and much more details.
+description: Learn how to enable and use the filter menu in Syncfusion Blazor Gantt Chart to filter columns with various comparison operators and conditions.
+keywords: blazor gantt filter menu, column filter menu, filter operators, menu filter, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/filter-menu
 platform: gantt-sdk
-control: Gantt Chart
+control: Filter Menu - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Filter menu in Blazor Gantt Chart component
+# Filter Menu with Column Operators in Blazor Gantt Chart
 
 The Syncfusion Blazor Gantt Chart component provides a filter menu for each column, allowing filtering based on data type and supported operators. 
 

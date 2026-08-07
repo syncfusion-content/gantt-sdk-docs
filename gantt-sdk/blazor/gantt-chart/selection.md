@@ -1,13 +1,16 @@
----
+﻿---
 layout: post
-title: Selection in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Selection in Syncfusion Blazor Gantt Chart component and much more.
+title: Selection in Blazor Gantt Chart | Syncfusion
+description: Learn how to configure selection in Syncfusion Blazor Gantt Chart with row, cell, and combined selection modes for interactive task management.
+keywords: blazor gantt selection, row selection, cell selection, selection mode, selectiontype, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/selection
 platform: gantt-sdk
-control: Gantt Chart
+control: Selection - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Selection in Blazor Gantt Chart Component
+# Row and Cell Selection Modes in Blazor Gantt Chart
 
 The Selection feature provides the ability to highlight a row or cell in the Gantt component. Selection can be performed using arrow keys or mouse clicks.
 
