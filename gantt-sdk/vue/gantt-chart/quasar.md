@@ -6,7 +6,6 @@ keywords: vue gantt quasar, quasar framework, vue gantt setup, quasar integratio
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/quasar
 platform: gantt-sdk
 control: Getting Started - Quasar
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

@@ -6,7 +6,6 @@ keywords: vue gantt server data, maintain data, datamanager, crud operations, re
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/managing-tasks/maintaining-data-in-server
 platform: gantt-sdk
 control: Maintaining Data in Server - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

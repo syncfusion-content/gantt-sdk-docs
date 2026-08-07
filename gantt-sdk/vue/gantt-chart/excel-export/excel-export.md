@@ -6,7 +6,6 @@ keywords: vue gantt excel export, csv export, export data, excel format, client-
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/excel-export/excel-export
 platform: gantt-sdk
 control: Excel Export - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

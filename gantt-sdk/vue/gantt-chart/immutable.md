@@ -6,7 +6,6 @@ keywords: vue gantt immutable mode, performance optimization, re-rendering, obje
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/immutable
 platform: gantt-sdk
 control: Immutable Mode - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

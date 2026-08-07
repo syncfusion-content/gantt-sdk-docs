@@ -6,7 +6,6 @@ keywords: vue gantt checkbox columns, boolean columns, checkbox display, column 
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/columns/check-box-columns
 platform: gantt-sdk
 control: Checkbox Columns - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

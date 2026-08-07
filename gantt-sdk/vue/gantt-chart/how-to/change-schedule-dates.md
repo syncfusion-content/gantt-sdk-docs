@@ -6,7 +6,6 @@ keywords: vue gantt change schedule dates, project dates, schedule start end dat
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/how-to/change-schedule-dates
 platform: gantt-sdk
 control: Change Schedule Dates - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

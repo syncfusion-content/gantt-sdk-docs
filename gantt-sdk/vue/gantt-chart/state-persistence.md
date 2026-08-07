@@ -6,7 +6,6 @@ keywords: vue gantt state persistence, localstorage, component state, persist st
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/state-persistence
 platform: gantt-sdk
 control: State Persistence - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

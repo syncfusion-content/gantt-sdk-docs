@@ -6,7 +6,6 @@ keywords: vue gantt add tasks, adding tasks, new task dialog, task insertion, sy
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/managing-tasks/adding-new-tasks
 platform: gantt-sdk
 control: Adding New Tasks - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

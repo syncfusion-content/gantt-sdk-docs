@@ -6,7 +6,6 @@ keywords: vue gantt pdf header footer, customize header, footer customization, p
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/pdf-export/header-and-footer
 platform: gantt-sdk
 control: Header and Footer in PDF Export - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

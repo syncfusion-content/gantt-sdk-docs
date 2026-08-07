@@ -6,7 +6,6 @@ keywords: vue gantt task constraints, scheduling rules, constraint types, task s
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/task-constraints
 platform: gantt-sdk
 control: Task Constraints - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

@@ -6,7 +6,6 @@ keywords: vue gantt task scheduling, scheduling modes, auto schedule, manual sch
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/task-scheduling
 platform: gantt-sdk
 control: Task Scheduling - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

@@ -6,7 +6,6 @@ keywords: vue gantt column template, custom template, column customization, temp
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/columns/column-template
 platform: gantt-sdk
 control: Column Template - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

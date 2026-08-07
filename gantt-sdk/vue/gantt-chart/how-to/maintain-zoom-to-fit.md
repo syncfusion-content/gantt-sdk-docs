@@ -6,7 +6,6 @@ keywords: vue gantt zoom to fit, maintain zoom, zooming, timeline zoom, syncfusi
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/how-to/maintain-zoom-to-fit
 platform: gantt-sdk
 control: Maintain Zoom To Fit - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

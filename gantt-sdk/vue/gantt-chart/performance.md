@@ -6,7 +6,6 @@ keywords: vue gantt performance, large data, optimization, rendering, virtual sc
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/performance
 platform: gantt-sdk
 control: Performance - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

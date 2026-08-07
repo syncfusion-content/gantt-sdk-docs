@@ -6,7 +6,6 @@ keywords: vue gantt rows, row configuration, row height, row customization, row 
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/rows
 platform: gantt-sdk
 control: Rows - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

@@ -6,7 +6,6 @@ keywords: vue gantt scheduling, task duration, scheduling modes, task dates, dep
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/scheduling-tasks
 platform: gantt-sdk
 control: Scheduling Tasks - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

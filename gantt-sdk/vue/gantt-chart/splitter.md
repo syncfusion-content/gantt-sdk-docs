@@ -6,7 +6,6 @@ keywords: vue gantt splitter, grid chart splitter, splitter position, splitter s
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/splitter
 platform: gantt-sdk
 control: Splitter - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

@@ -6,7 +6,6 @@ keywords: vue gantt row selection, select rows, selection mode, get selected rec
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/selection/row-selection
 platform: gantt-sdk
 control: Row Selection - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

@@ -6,7 +6,6 @@ keywords: vue gantt custom field, custom column, add custom field, custom dialog
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/how-to/custom-field
 platform: gantt-sdk
 control: Custom Field - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
