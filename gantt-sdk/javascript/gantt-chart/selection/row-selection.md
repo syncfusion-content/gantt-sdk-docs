@@ -1,15 +1,16 @@
 ---
 layout: post
-title: JavaScript Gantt Row Selection API Guide | Syncfusion
-description: Explore how to configure and customize row selection in the Syncfusion JavaScript Gantt Chart control using API methods and events.
+title: Row Selection in JavaScript Gantt Chart | Syncfusion
+description: Configure row selection in Syncfusion JavaScript Gantt Chart with single and multiple selection modes, API methods, and events.
+keywords: javascript gantt row selection, select rows, multiple rows, selection mode, row select event, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/selection/row-selection
 platform: gantt-sdk
-control: Row selection 
-publishingplatform: gantt-sdk
+control: Row Selection - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Row Selection in JavaScript Gantt Chart Control
+# Selecting Multiple Rows and Rows in JavaScript Gantt Chart
 
 The JavaScript Gantt Chart control supports row selection using mouse clicks or keyboard navigation (arrow keys). This enables users to highlight, manipulate, or trigger actions on selected task rows.
 

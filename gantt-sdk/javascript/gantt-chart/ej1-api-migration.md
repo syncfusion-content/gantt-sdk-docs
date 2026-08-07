@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Ej1 api migration in JavaScript Gantt control | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion JavaScript Gantt control of Syncfusion Essential JS 2 and more.
+title: EJ1 API Migration in JavaScript Gantt Chart | Syncfusion
+description: Learn how to migrate from EJ1 to EJ2 Gantt Chart in JavaScript with the complete API mapping reference, code changes, and step-by-step migration guidance.
+keywords: javascript gantt ej1 migration, api migration, ej2 gantt, backwards compatibility, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/ej1-api-migration
 platform: gantt-sdk
-control: Ej1 api migration 
-publishingplatform: gantt-sdk
+control: EJ1 API Migration - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Ej1 api migration in JavaScript Gantt control
+# EJ1 to EJ2 API Migration in JavaScript Gantt Chart
 
 This topic shows the API equivalent of JS2 Gantt component to be used, while migrating your project that uses JS1 Gantt.
 

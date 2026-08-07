@@ -1,15 +1,16 @@
 ---
 layout: post
-title:  JavaScript Gantt Chart Cell Selection API | Syncfusion
-description: Explore cell selection in Syncfusion JavaScript Gantt Chart, including single, multiple, external selection, and customization via API methods and events.
+title: Cell Selection in JavaScript Gantt Chart | Syncfusion
+description: Configure cell selection in Syncfusion JavaScript Gantt Chart with single and multiple modes, external selection, and API methods.
+keywords: javascript gantt cell selection, select cells, multiple cells, cell select event, cell selection mode, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/selection/cell-selection
 platform: gantt-sdk
-control: Cell selection 
-publishingplatform: gantt-sdk
+control: Cell Selection - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Cell Selection in JavaScript Gantt Chart Control
+# Selecting Individual Cells and Cell Ranges in JavaScript Gantt Chart
 
 Cell selection in the Gantt Chart control enables interactive selection of specific cells or ranges of cells within the grid. You may select cells using mouse clicks or arrow keys (up, down, left, right). This is useful for highlighting, manipulating, or performing operations on particular Gantt cells.
 

@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Row Spanning in JavaScript Gantt Chart Control | Syncfusion
-description: Learn here all about row spanning in Syncfusion JavaScript Gantt Chart control of Syncfusion Essential JS 2 and more.
+title: Row Spanning in JavaScript Gantt Chart | Syncfusion
+description: Learn how to configure row spanning in Syncfusion JavaScript Gantt Chart to merge cells vertically for displaying shared information across rows.
+keywords: javascript gantt row spanning, cell spanning, row span, merge cells, cell merging, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/rows/row-spanning
 platform: gantt-sdk
-control: Row Spanning
-publishingplatform: gantt-sdk
+control: Row Spanning - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Row Spanning in JavaScript Gantt Chart Control
+# Implementing Row Spanning for Multi-Row Cells in JavaScript Gantt Chart
 
 The [JavaScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control supports row cell spanning, allowing multiple cells in a row to merge into a single cell. This is useful for displaying shared information across rows without duplication.
 

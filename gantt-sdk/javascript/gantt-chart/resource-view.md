@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Resource View in JavaScript Gantt Chart Control | Syncfusion
-description: Learn how to configure resource view in the Syncfusion JavaScript Gantt Chart control for hierarchical task visualization and resource allocation.
+title: Resource View in JavaScript Gantt Chart | Syncfusion
+description: Learn how to configure resource view in Syncfusion JavaScript Gantt Chart to visualize tasks hierarchically by resource, showing workload in timeline.
+keywords: javascript gantt resource view, hierarchical view, resource allocation, task grouping, resource management, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/resource-view
 platform: gantt-sdk
-control: Resource view 
-publishingplatform: gantt-sdk
+control: Resource View - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Resource view in JavaScript Gantt Chart Control
+# Resource View with Hierarchical Tasks in JavaScript Gantt Chart Chart
 
 The resource view in the JavaScript Gantt Chart control organizes tasks hierarchically by resource, displaying resources as parent nodes and their assigned tasks as child taskbars in a timeline. Enable it by setting [viewType](https://ej2.syncfusion.com/javascript/documentation/api/gantt#viewtype) to **ResourceView**. Resources are declared in the [resources](https://ej2.syncfusion.com/javascript/documentation/api/gantt#resources) collection and mapped through [resourceFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt#resourcefields) to identify the resource ID, name, unit, and group. Each task then references its assigned resources through [taskFields.resourceInfo](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#resourceinfo) in the task data source so resource-based grouping and workload visualization are applied automatically. Unassigned tasks are grouped under an **Unassigned Task** node, while the [queryTaskbarInfo](../gantt/events#querytaskbarinfo) event can customize taskbar styles and overallocation indicators can highlight scheduling conflicts. Taskbars include ARIA labels for accessibility, and the view adapts to responsive layouts, although narrow screens may truncate resource names. Parent tasks are not supported, and tasks require scheduling details such as a start date and duration.
 
