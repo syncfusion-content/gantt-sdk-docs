@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Column Rendering in React Gantt Chart Component | Syncfusion
-description: Learn here all about column rendering in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Column Rendering in React Gantt Chart | Syncfusion
+description: Learn how to configure column rendering in Syncfusion React Gantt Chart with type definitions, format options, and display customizations.
+keywords: react gantt column rendering, column format, column type, display format, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/columns/column-rendering
 platform: gantt-sdk
-control: Column rendering
+control: Column Rendering - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Column Rendering in React Gantt Chart Component
+# Configuring Column Type and Display Rendering in React Gantt Chart
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component supports column rendering to control data presentation. Column definitions act as the data schema and support operations such as sorting and filtering. The [field](https://ej2.syncfusion.com/react/documentation/api/gantt/column#field) property is required to map data source values to columns and must be defined for features like complex binding and template-based actions.
 

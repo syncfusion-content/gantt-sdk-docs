@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Scrolling in React Gantt Chart Component | Syncfusion
-description: Learn here all about Scrolling in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Scrolling in React Gantt Chart | Syncfusion
+description: Learn how to configure scrolling in Syncfusion React Gantt Chart with horizontal, vertical, and programmatic scroll to navigate large project data.
+keywords: react gantt scrolling, horizontal scroll, vertical scroll, programmatic scroll, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/scrolling/scrolling
 platform: gantt-sdk
-control: Scrolling 
+control: Scrolling - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Scrolling in React Gantt Chart Component
+# Navigating Large Project Data with Scrolling in React Gantt Chart
 
 Scrolling in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component enables smooth navigation across extensive project datasets and long timelines. It ensures taskbars, grid rows, and timeline cells remain visible within the viewport. Scrollbars automatically appear when content exceeds the component’s defined [height](https://ej2.syncfusion.com/react/documentation/api/gantt#height) and [width](https://ej2.syncfusion.com/react/documentation/api/gantt#width), supporting vertical scrolling for rows, horizontal scrolling for columns, and timeline scrolling for extended chart areas.
 

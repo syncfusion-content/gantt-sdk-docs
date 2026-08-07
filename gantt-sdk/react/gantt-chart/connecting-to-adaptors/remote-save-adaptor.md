@@ -1,14 +1,16 @@
 ---
 layout: post
-title: React Gantt - Remote Save Adaptor | Syncfusion
-description: React Gantt Remote Save adaptor explains the hybrid workflow where the full task set is fetched once and CRUD is persisted via a batch endpoint.
-control: RemoteSave Adaptor
+title: Remote Save Adaptor in React Gantt Chart | Syncfusion
+description: Learn how to use the Remote Save adaptor in Syncfusion React Gantt Chart for a hybrid workflow with local data fetch and server-side CRUD persistence.
+keywords: react gantt remote save adaptor, hybrid data binding, batch endpoint, CRUD persistence, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/connecting-to-adaptors/remote-save-adaptor
 platform: gantt-sdk
+control: Remote Save Adaptor - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Hybrid Remote Binding with RemoteSaveAdaptor in Syncfusion React Gantt
+# Hybrid Data Binding with Remote Save Adaptor in React Gantt Chart
 
 The [RemoteSaveAdaptor](https://ej2.syncfusion.com/react/documentation/data/adaptors/remote-save-adaptor) in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) provides a hybrid data workflow. The client fetches the complete task set once and applies client‑side operations locally while persisting edits back to the server via batch CRUD requests. This approach keeps the UI responsive for interactive scheduling while ensuring server‑side persistence and authoritative processing for inserts, updates and deletes.
 

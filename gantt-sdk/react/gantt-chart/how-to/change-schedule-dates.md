@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Update Project Schedule Dates in React Gantt Chart | Syncfusion
-description: Learn how to programmatically update project schedule dates in the Syncfusion React Gantt Chart component to adjust timelines and task schedules efficiently.
+title: Change Schedule Dates in React Gantt Chart | Syncfusion
+description: Learn how to programmatically update project schedule dates in Syncfusion React Gantt Chart to adjust timelines and task schedules efficiently.
+keywords: react gantt schedule dates, change project dates, update timeline, programmatic date change, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/how-to/change-schedule-dates
 platform: gantt-sdk
-control: Schedule dates
+control: Schedule Dates - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Update Project Schedule Dates in React Gantt Chart Component
+# Programmatically Updating Project Schedule Dates in React Gantt Chart
 
 The [updateProjectDates](https://ej2.syncfusion.com/react/documentation/api/gantt#updateprojectdates) method in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component enables programmatic adjustment of the project’s start and end dates, seamlessly updating the timeline and task positions for efficient schedule management. By passing valid `Date` objects for the start and end dates, you can shift the entire project timeline, such as moving a project forward by a month to accommodate delays. An optional Boolean `roundOff` parameter, when set to **true**, aligns dates to the timeline’s unit (e.g., days or weeks), ensuring a clean and consistent display. Ensure the Gantt has a defined `dataSource` and [timelineSettings](https://ej2.syncfusion.com/react/documentation/api/gantt#timelinesettings) to render the updated schedule accurately. Use valid date formats and leverage the `roundOff` option to optimize timeline rendering for clarity.
 

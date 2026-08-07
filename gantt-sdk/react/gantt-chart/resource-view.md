@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Resource View in React Gantt Chart Component | Syncfusion
-description: Learn how to configure resource view in the Syncfusion React Gantt Chart component for hierarchical task visualization and resource allocation.
+title: Resource View in React Gantt Chart | Syncfusion
+description: Learn how to configure resource view in Syncfusion React Gantt Chart for hierarchical task visualization and resource allocation across the project.
+keywords: react gantt resource view, resource allocation, hierarchical view, resource grouping, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/resource-view
 platform: gantt-sdk
-control: Resource view
+control: Resource View - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Resource View in React Gantt Chart Component
+# Resource View with Hierarchical Tasks in React Gantt Chart
 
 The resource view in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component organizes tasks hierarchically by resource, displaying resources as parent nodes and their assigned tasks as child taskbars in a timeline. Enabled by setting [viewType](https://ej2.syncfusion.com/react/documentation/api/gantt#viewtype) to **ResourceView**, this view visualizes workloads, such as multiple tasks per resource, with taskbars showing duration, progress, and dependencies. Unassigned tasks group under an **Unassigned Task** node. The [queryTaskbarInfo](https://ej2.syncfusion.com/react/documentation/gantt/events#querytaskbarinfo) event customizes taskbar styles, and overallocation indicators highlight scheduling conflicts. Taskbars include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may truncate resource names. Parent tasks are not supported, and tasks require scheduling (start date and duration).
 

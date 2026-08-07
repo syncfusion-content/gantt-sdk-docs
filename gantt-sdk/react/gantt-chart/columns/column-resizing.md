@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Resize Columns in React Gantt Chart Component | Syncfusion
-description: Learn to resize columns in the React Gantt Chart with dynamic sizing, width limits, and external customization options.
+title: Column Resizing in React Gantt Chart | Syncfusion
+description: Learn how to resize columns in Syncfusion React Gantt Chart with dynamic sizing, min/max width limits, and programmatic customization options.
+keywords: react gantt column resizing, resize columns, column width, dynamic sizing, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/columns/column-resizing
 platform: gantt-sdk
-control: Column resizing
+control: Column Resizing - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Resize Columns in React Gantt Chart Component
+# Resizing Columns Dynamically in React Gantt Chart
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component allows you to resize columns dynamically by dragging the edges of column headers. This feature enhances readability and layout flexibility, especially when working with large datasets.  To enable this feature, set the [allowResizing](https://ej2.syncfusion.com/react/documentation/api/gantt#allowresizing) property to **true** in the Gantt configuration. 
 
