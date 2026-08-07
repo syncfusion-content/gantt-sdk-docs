@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Baseline in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about Baseline in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Baseline 
+title: Baseline in Vue Gantt Chart | Syncfusion
+description: Learn about baseline feature in Syncfusion Vue Gantt Chart to compare planned vs actual project schedules and track performance.
+keywords: vue gantt baseline, planned schedule, actual schedule, project tracking, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/baseline
 platform: gantt-sdk
+control: Baseline - Gantt Chart
+publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Baseline in Vue Gantt Chart Component
+# Baseline for Schedule Comparison in Vue Gantt Chart
 
 The baseline feature in the Gantt Chart component enables comparison between original planned schedules and actual task execution timelines. This visualization provides clear insights into schedule deviations, helping assess project performance and identify areas requiring attention. Baseline functionality displays both the original planned timeline and current progress side-by-side for comprehensive project tracking.
 

@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Task scheduling in Vue Gantt Chart component | Syncfusion
-description: Learn here all about Task scheduling in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Task scheduling 
+title: Task Scheduling in Vue Gantt Chart | Syncfusion
+description: Learn how to configure task scheduling modes in Syncfusion Vue Gantt Chart for automatic and manual task scheduling.
+keywords: vue gantt task scheduling, scheduling modes, auto schedule, manual schedule, task mode, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/task-scheduling
 platform: gantt-sdk
+control: Task Scheduling - Gantt Chart
+publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Task scheduling in Vue Gantt Chart component
+# Task Scheduling Modes with Auto and Manual in Vue Gantt Chart
 
 The Gantt provides support for automatic and manual task scheduling modes. It is used to indicate whether the start date and end date of all the tasks will be automatically validated or not. [taskMode](https://ej2.syncfusion.com/vue/documentation/api/gantt#taskmode) is the property used to change the schedule mode of a task.
 

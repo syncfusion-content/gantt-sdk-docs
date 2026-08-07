@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Drag and Drop in Vue Gantt Chart component | Syncfusion
-description: Learn here all about Drag and Drop in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Drag and Drop 
+title: Drag and Drop in Vue Gantt Chart | Syncfusion
+description: Learn how to enable drag and drop functionality in Syncfusion Vue Gantt Chart for rearranging rows and managing tasks.
+keywords: vue gantt drag and drop, row drag drop, task rearrange, drag functionality, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/drag-and-drop
 platform: gantt-sdk
+control: Drag and Drop - Gantt Chart
+publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Drag and Drop in Vue Gantt Chart component
+# Enabling Drag and Drop for Rows in Vue Gantt Chart
 
 ## Drag and drop
 

@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Getting Started with Quasar Framework and Vue Gantt Chart | Syncfusion
-description: Check out and learn about getting started with the Quasar Framework and Vue Gantt Chart component of Syncfusion Essential JS 2 and more details.
-control: Quasar 
+title: Getting Started with Vue Gantt Chart in Quasar | Syncfusion
+description: Learn how to get started with Syncfusion Vue Gantt Chart integrated with Quasar Framework for building responsive applications.
+keywords: vue gantt quasar, quasar framework, vue gantt setup, quasar integration, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/quasar
 platform: gantt-sdk
+control: Getting Started - Quasar
+publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Getting Started with the Vue Gantt Chart in the Quasar Framework
+# Getting Started with Vue Gantt Chart in Quasar Framework
 
 This article provides a step-by-step guide for setting up a [Quasar](https://quasar.dev) project and integrating the [Vue Gantt Chart](https://www.syncfusion.com/vue-components/vue-gantt-chart) component using the [Composition API](https://vuejs.org/guide/introduction.html#composition-api).
 
