@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Data Binding in Angular Kanban component | Syncfusion
-description: Learn how to bind local and remote data to the Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
+title: Data Binding in Angular Kanban | Syncfusion
+description: Learn how to bind local and remote data sources to Syncfusion Angular Kanban and render tasks efficiently in your app.
+keywords: angular kanban data binding, syncfusion kanban, remote data, local data
+canonical: https://help.syncfusion.com/gantt-sdk/angular/kanban/data-binding
 platform: gantt-sdk
-control: Data binding
+control: Data Binding - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Data Binding in Angular Kanban Component
+# Data Binding with Local and Remote Sources in Angular Kanban
 
 The Kanban uses [DataManager](https://ej2.syncfusion.com/angular/documentation/data/), which supports both RESTful data service binding and JavaScript object array binding. The [dataSource](https://ej2.syncfusion.com/angular/documentation/api/kanban/#datasource) property of Kanban can be assigned either with the instance of `DataManager` or JavaScript object array collection, as it supports the following two data binding methods:
 

@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Priority in Angular Kanban Component | Syncfusion
-description: Learn here all about Priority in Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
+title: Card Priority in Angular Kanban | Syncfusion
+description: Learn how to manage card priority and ordering in Syncfusion Angular Kanban to control card placement and drop behavior.
+keywords: angular kanban priority, syncfusion kanban, card priority, drop position
+canonical: https://help.syncfusion.com/gantt-sdk/angular/kanban/priority
 platform: gantt-sdk
-control: Priority
+control: Priority - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Priority in Angular Kanban Component
+# Card Priority and Ordering in Angular Kanban
 
 By default, the Kanban cards are initially placed and drop the card inside the columns based on JSON data orders.
 

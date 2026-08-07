@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Swimlane in Angular Kanban Component | Syncfusion
-description: Learn here all about Swimlane in Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
+title: Swimlane in Angular Kanban | Syncfusion
+description: Learn how to group work items by swimlanes in Syncfusion Angular Kanban to improve visibility, status tracking, and team collaboration.
+keywords: angular kanban swimlane, syncfusion kanban, swimlane view, grouping
+canonical: https://help.syncfusion.com/gantt-sdk/angular/kanban/swimlane
 platform: gantt-sdk
-control: Swimlane
+control: Swimlane - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Swimlane in Angular Kanban component
+# Swimlane Grouping in Angular Kanban
 
 Swimlanes are horizontal categorizations of cards on the Kanban board.  It is used for grouping of cards, which brings transparency to the workflow process.
 

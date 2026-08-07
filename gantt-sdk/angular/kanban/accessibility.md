@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Accessibility in Angular Kanban Component | Syncfusion
-description: Learn about accessibility features in the Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Kanban | WCAG, ARIA | Syncfusion
+description: Learn how to implement accessibility in Syncfusion Angular Kanban with WCAG 2.2, ARIA labels, keyboard navigation, and Section 508 compliance.
+keywords: angular kanban accessibility, wcag, aria, section 508, keyboard navigation, screen reader, syncfusion kanban
+canonical: https://help.syncfusion.com/gantt-sdk/angular/kanban/accessibility
 platform: gantt-sdk
-control: Accessibility
+control: Accessibility - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Accessibility in Angular Kanban Component
-
+# Accessibility and ARIA Compliance in Angular Kanban 
 The Kanban component is designed to meet WAI-ARIA specifications, applying roles, states, and properties to elements like cards (`.e-card`), columns (`.e-header-cells`), and dialogs to ensure accessibility for users relying on assistive technologies (AT) or keyboard navigation. This enables seamless interaction for users with disabilities, such as navigating cards with screen readers or selecting columns via keyboard.
 
 The accessibility compliance for the Kanban component is outlined below.

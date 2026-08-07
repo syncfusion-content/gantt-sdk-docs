@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Card Sorting in Angular Kanban Component | Syncfusion
-description: Learn here all about Sort in Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
+title: Sorting in Angular Kanban | Syncfusion
+description: Learn how to sort cards and columns in Syncfusion Angular Kanban to organize work items by priority, date, or custom criteria.
+keywords: angular kanban sorting, syncfusion kanban, card ordering, column sorting
+canonical: https://help.syncfusion.com/gantt-sdk/angular/kanban/sort
 platform: gantt-sdk
-control: Sort
+control: Sorting - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Card Sorting in Angular Kanban Component
+# Card Management and Sorting in Angular Kanban
 
 The Kanban provides built-in support to arrange the cards in their columns based on the JSON data order and drop the cards in the columns based on the dropped clone. Initially, users can change the arrangement of cards in the columns and position of the dropped card by using the [sortBy](https://ej2.syncfusion.com/angular/documentation/api/kanban/sortSettingsModel/#sortby) property. The [sortBy](https://ej2.syncfusion.com/angular/documentation/api/kanban/sortSettingsModel/#sortby) property contains three enumeration values as follows.
 

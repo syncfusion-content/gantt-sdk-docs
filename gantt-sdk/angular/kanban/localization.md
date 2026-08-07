@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Localization and RTL in Angular Kanban Component | Syncfusion
-description: how to localize text and enable right-to-left (RTL) support in the Syncfusion Angular Kanban componentof Syncfusion Essential JS 2 and more.
+title: Localization in Angular Kanban | Syncfusion
+description: Learn how to localize labels, formats, and culture settings in Syncfusion Angular Kanban to support global users and multilingual apps.
+keywords: angular kanban localization, syncfusion kanban, culture settings, global users
+canonical: https://help.syncfusion.com/gantt-sdk/angular/kanban/localization
 platform: gantt-sdk
-control: Localization
+control: Localization - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Localization in Angular Kanban Component
+# Globalization and Localization Support in Angular Kanban
 
 The localization library allows you to localize the default text content of the Kanban to different cultures using the [locale](https://ej2.syncfusion.com/angular/documentation/api/kanban/#locale) property.
 

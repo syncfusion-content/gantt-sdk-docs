@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Responsive Mode in Angular Kanban component | Syncfusion
-description: Learn here all about Responsive mode in Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
+title: Responsive Mode in Angular Kanban | Syncfusion
+description: Learn how to create adaptive layouts in Syncfusion Angular Kanban with responsive mode and flexible configuration for desktop and mobile devices.
+keywords: angular kanban responsive mode, syncfusion kanban, mobile layout, adaptive ui
+canonical: https://help.syncfusion.com/gantt-sdk/angular/kanban/responsive-mode
 platform: gantt-sdk
-control: Responsive mode
+control: Responsive Mode - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Responsive Mode in Angular Kanban Component
+# Responsive Layout and Adaptive Design in Angular Kanban
 
 The Kanban component has support for responsive behavior based on the client browser's width and height.
 

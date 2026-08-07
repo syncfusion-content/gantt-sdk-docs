@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Observables in Angular Kanban Component | Syncfusion
-description: Learn here all about Observables in Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
+title: Observables in Angular Kanban | Syncfusion
+description: Learn how to use RxJS Observables with Syncfusion Angular Kanban for reactive data binding and asynchronous operations.
+keywords: angular kanban observables, syncfusion kanban, async pipe, reactive data
+canonical: https://help.syncfusion.com/gantt-sdk/angular/kanban/observables
 platform: gantt-sdk
-control: Observables
+control: Observables - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Observables in Angular Kanban Component
+# Observables in Angular Kanban
 
 An [`Observable`](https://angular.io/guide/observables) is used extensively by Angular since it provide significant benefits over techniques for event handling, asynchronous programming, and handling multiple values.
 

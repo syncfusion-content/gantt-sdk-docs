@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Virtual Scrolling for Performance in Angular Kanban Component | Syncfusion
-description: Learn here all about Virtual Scrolling in Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
+title: Virtual Scrolling in Angular Kanban | Syncfusion
+description: Learn how to enable virtual scrolling in Syncfusion Angular Kanban to render large datasets with smooth performance.
+keywords: angular kanban virtual scrolling, syncfusion kanban, performance optimization, virtualization
+canonical: https://help.syncfusion.com/gantt-sdk/angular/kanban/virtual-scrolling
 platform: gantt-sdk
-control: Virtual scrolling
+control: Virtual Scrolling - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Virtualization in Angular Kanban Component
+# Virtual Scrolling and Performance in Angular Kanban
 
 Kanban allows you to load a large amount of data without any performance degradation. This feature can be enabled by setting the [enableVirtualization](../api/kanban/#enablevirtualization) property in the Kanban to `true`.
 

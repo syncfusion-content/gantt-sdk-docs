@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Dialog Editing in Angular Kanban Component | Syncfusion
-description: Learn how to use the dialog module in the Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
+title: Card Editing in Angular Kanban | Syncfusion
+description: Learn how to edit cards, use dialogs, and validate inputs in Syncfusion Angular Kanban to manage task details with ease.
+keywords: angular kanban card editing, syncfusion kanban, card dialog, task editing
+canonical: https://help.syncfusion.com/gantt-sdk/angular/kanban/dialog
 platform: gantt-sdk
-control: Dialog 
+control: Card Editing - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Dialog in Angular Kanban Component
+# Card Editing and Dialog Management in Angular Kanban
 
 The Kanban component provides a built-in dialog module for adding, editing, and deleting cards, configured through the [dialogSettings](https://ej2.syncfusion.com/angular/documentation/api/kanban/#dialogsettings) property. User can edit a card using the following ways.
 

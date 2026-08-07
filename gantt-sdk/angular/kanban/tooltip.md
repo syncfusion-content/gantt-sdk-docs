@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Tooltip in Angular Kanban Component | Syncfusion
-description: Learn here all about Tooltip in Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
+title: Tooltip in Angular Kanban | Syncfusion
+description: Learn how to add informative tooltips to cards and elements in Syncfusion Angular Kanban for clearer context and better user guidance.
+keywords: angular kanban tooltip, syncfusion kanban, tooltip display, hover information
+canonical: https://help.syncfusion.com/gantt-sdk/angular/kanban/tooltip
 platform: gantt-sdk
-control: Tooltip
+control: Tooltip - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Tooltip in Angular Kanban Component
+# Tooltip and Hover Information in Angular Kanban
 
 The tooltip is used to show the card information when the cursor hover over the card elements using the [enableTooltip](https://ej2.syncfusion.com/angular/documentation/api/kanban/#enabletooltip) property. Tooltip content is dynamically set based on hovering over the card elements.
 

@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Drag and Drop Cards in Angular Kanban Component | Syncfusion
-description: Learn how to enable drag-and-drop for cards in the Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
+title: Drag and Drop in Angular Kanban | Syncfusion
+description: Learn how to enable drag-and-drop interactions in Syncfusion Angular Kanban to reorder cards and move tasks across columns.
+keywords: angular kanban drag and drop, syncfusion kanban, card movement, reordering
+canonical: https://help.syncfusion.com/gantt-sdk/angular/kanban/drag-and-drop
 platform: gantt-sdk
-control: Drag and drop
+control: Drag and Drop - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Drag and Drop in Angular Kanban Component
+# Drag and Drop Operations in Angular Kanban
 
 All cards can be dragged and dropped across the columns or within the columns or swimlane row or kanban to an external source and vice versa.
 

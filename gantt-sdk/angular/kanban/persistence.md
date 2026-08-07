@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Persistence in Angular Kanban component | Syncfusion
-description: Learn here all about Persistence in Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
+title: State Persistence in Angular Kanban | Syncfusion
+description: Learn how to enable state persistence in Syncfusion Angular Kanban to retain board state across page reloads and sessions.
+keywords: angular kanban persistence, syncfusion kanban, state persistence, local storage
+canonical: https://help.syncfusion.com/gantt-sdk/angular/kanban/persistence
 platform: gantt-sdk
-control: Persistence 
+control: Persistence - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Persistence in Angular Kanban Component
+# State Persistence in Angular Kanban
 
 State persistence refers to the Kanban state maintained in the browser's [`localStorage`](https://www.w3schools.com/html/html5_webstorage.asp#) even if the browser is refreshed or if you move to the next page within the browser.
 

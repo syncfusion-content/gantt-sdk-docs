@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Columns in Angular Kanban component | Syncfusion
-description: Learn how to configure columns in the Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
+title: Columns in Angular Kanban | Syncfusion
+description: Learn how to configure columns, headers, and workflow stages in Syncfusion Angular Kanban for organized task management.
+keywords: angular kanban columns, syncfusion kanban, workflow columns, kanban stages
+canonical: https://help.syncfusion.com/gantt-sdk/angular/kanban/columns
 platform: gantt-sdk
-control: Columns
+control: Columns - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Columns in Angular Kanban Component
+# Columns Configuration and Workflow Stages in Angular Kanban
 
 The **Kanban** columns represent the each stage of the process. The column definitions are used as the **dataSource** schema in the Kanban. The Kanban operations such as drag-and-drop, swimlane, and toggle columns are performed based on column definitions.
 

@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Filter Cards in Syncfusion Angular Kanban Component | Syncfusion
-description: Learn how to filter cards in the Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
+title: Filter Cards in Angular Kanban | Syncfusion
+description: Learn how to filter cards in Syncfusion Angular Kanban using queries and data source conditions with practical examples.
+keywords: angular kanban filter cards, syncfusion kanban, card filtering, filter query
+canonical: https://help.syncfusion.com/gantt-sdk/angular/kanban/how-to/filter-cards
 platform: gantt-sdk
-control: Filter cards
+control: Filter Cards - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Filter Cards in Angular Kanban Component
+# Filter Cards in Angular Kanban
 
 You can filter the collection of cards from the dataSource and display it on the Kanban board by using the [query](https://ej2.syncfusion.com/angular/documentation/api/kanban/#query) property.
 
