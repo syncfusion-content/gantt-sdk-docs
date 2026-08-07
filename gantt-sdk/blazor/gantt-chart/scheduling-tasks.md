@@ -393,6 +393,7 @@ In Gantt, we can define duration unit for whole project by using [GanttTaskField
 
 * Using `DurationUnit` property, to map the duration unit data source field.
 * Defining the duration unit value along with the duration field in the data source.
+* Using the [SfGantt.DurationUnit](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_DurationUnit) property to define a global default duration unit for the entire Gantt Chart. This value is applied to tasks that do not have a task-specific duration unit defined. The property is of type `DurationUnit` and represents the default unit used for the duration field in the Gantt Chart.
 
 ### Mapping the duration unit field
 
