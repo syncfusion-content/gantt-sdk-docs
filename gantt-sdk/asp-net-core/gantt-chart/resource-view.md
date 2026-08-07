@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Resource View in ASP.NET Core Gantt Component
-description: Learn here all about Resource View in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Resource View in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to implement resource view in Syncfusion ASP.NET Core Gantt Chart to manage and visualize resources, allocations, and workload across your project.
+keywords: asp.net core gantt resource view, resource management, resource allocation, workload visualization, team management, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/resource-view
 platform: gantt-sdk
-control: Resource View
-publishingplatform: gantt-sdk
+control: Resource View - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Resource View in ASP.NET Core Gantt Component
+# Resource View with Hierarchical Tasks in ASP.NET Core Gantt Chart
 
 The resource breakdown view is used to visualize the tasks assigned to each resource in hierarchy manner. Resources are displayed as parents and all the tasks assigned to each resource are displayed as its child records. It can be initialized by setting the [`viewType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.ViewType.html) property to `ResourceView`.
 

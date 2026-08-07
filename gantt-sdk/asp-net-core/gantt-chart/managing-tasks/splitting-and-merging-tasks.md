@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Splitting and merging task in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Splitting and merging task in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Splitting and Merging Tasks in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to split and merge tasks in Syncfusion ASP.NET Core Gantt Chart for managing interrupted work and task consolidation.
+keywords: asp.net core gantt split merge tasks, task splitting, task merging, interrupt tasks, task consolidation, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managing-tasks/splitting-and-merging-tasks
 platform: gantt-sdk
-control: Managing Tasks
-publishingplatform: gantt-sdk
+control: Managing Tasks - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Splitting and Merging tasks
+# Splitting and Merging Tasks in ASP.NET Core Gantt Chart
 
 ## Splitting task at load time
 

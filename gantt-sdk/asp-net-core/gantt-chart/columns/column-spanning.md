@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Column spanning in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Column spanning in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Column Spanning in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to implement column spanning in Syncfusion ASP.NET Core Gantt Chart to merge multiple columns and create header groups.
+keywords: asp.net core gantt column spanning, column merge, header grouping, spanning columns, merged columns, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/columns/column-spanning
 platform: gantt-sdk
-control: Columns
-publishingplatform: gantt-sdk
+control: Columns - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Column Spanning in gantt control
+# Column Spanning with Cell Merge Support in ASP.NET Core Gantt Chart
 
 The gantt has option to span the adjacent cells. You need to define the `colSpan` attribute to span cells in the [`QueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_QueryCellInfo) event.
 

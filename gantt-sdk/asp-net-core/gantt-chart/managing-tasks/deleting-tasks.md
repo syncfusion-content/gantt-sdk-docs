@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Deleting tasks in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Deleting Tasks in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Deleting Tasks in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to delete tasks from Syncfusion ASP.NET Core Gantt Chart with cascading delete and confirmation options.
+keywords: asp.net core gantt delete tasks, remove tasks, task deletion, delete confirmation, cascade delete, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managing-tasks/deleting-tasks
 platform: gantt-sdk
-control: Managing Tasks
-publishingplatform: gantt-sdk
+control: Managing Tasks - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Deleting tasks in gantt control
+# Deleting Tasks from the Project in ASP.NET Core Gantt Chart
 
 ## Deleting Tasks
 

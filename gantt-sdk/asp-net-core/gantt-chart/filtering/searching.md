@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Searching in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Searching in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Search in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to use search functionality in Syncfusion ASP.NET Core Gantt Chart to find records using toolbar search and search methods.
+keywords: asp.net core gantt search, search tasks, find tasks, search functionality, task searching, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/filtering/searching
 platform: gantt-sdk
-control: Filtering
-publishingplatform: gantt-sdk
+control: Filtering - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Search in gantt control
+# Implementing Quick Search for Task Data in ASP.NET Core Gantt Chart
 
 You can search records in the Gantt control by using the `search` method with search key as a parameter. The Gantt control provides an option to integrate the search text box in the toolbar by adding the search item to the [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Toolbar) property.
 

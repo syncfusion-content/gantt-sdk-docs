@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Column reordering in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Column reordering in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Column Reordering in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to enable column reordering in Syncfusion ASP.NET Core Gantt Chart allowing users to rearrange columns via drag and drop.
+keywords: asp.net core gantt column reordering, reorder columns, drag columns, column arrangement, column order, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/columns/column-reordering
 platform: gantt-sdk
-control: Columns
-publishingplatform: gantt-sdk
+control: Columns - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Column reordering in gantt control
+# Column Reordering with Drag and Drop Support in ASP.NET Core Gantt Chart
 
 The column reordering can be done by dragging a column header from one index to another index within the TreeGrid. To enable reordering, set the [`AllowReordering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowReordering) property to true.
 

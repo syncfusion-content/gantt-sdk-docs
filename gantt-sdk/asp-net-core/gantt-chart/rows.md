@@ -1,15 +1,16 @@
 ---
 layout: post
-title: TreeGrid View Rows in ASP.NET Core Gantt Component | Syncfusion
-description: Learn here all about customization of treegrid view rows in Syncfusion ASP.NET Core Gantt component and much more.
+title: Rows in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to configure and customize rows in Syncfusion ASP.NET Core Gantt Chart with row height, row styling, and row templates for enhanced visualization.
+keywords: asp.net core gantt rows, row configuration, row height, row styling, row templates, gantt grid rows, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/rows
 platform: gantt-sdk
-control: Rows
-publishingplatform: gantt-sdk
+control: Rows - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Rows in ASP.NET Core Gantt Component
+# Row Structure and Interactions in ASP.NET Core Gantt Chart
 
 Row represents a task information from the data source, and it is possible to perform the following actions in Gantt rows.
 

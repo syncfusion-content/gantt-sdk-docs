@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Timezone in ASP.NET Core Gantt Component
-description: Learn here all about Timezone in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Timezone in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to manage and configure timezone support in Syncfusion ASP.NET Core Gantt Chart for accurate date and time representation across regions.
+keywords: asp.net core gantt timezone, time zone support, date conversion, timezone offset, global projects, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/timezone
 platform: gantt-sdk
-control: Timezone
-publishingplatform: gantt-sdk
+control: Timezone - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Timezone
+# Timezone with IANA Support in ASP.NET Core Gantt Chart
 
 The Gantt makes use of the current system time zone by default. If it needs to follow some other user-specific time zone, then the `timezone` property needs to be used.
 

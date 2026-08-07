@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Selection in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Selection in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Selection in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to implement and customize selection in Syncfusion ASP.NET Core Gantt Chart including single, multiple, and checkbox selection modes.
+keywords: asp.net core gantt selection, row selection, task selection, multi select, selection mode, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/selection/selection
 platform: gantt-sdk
-control: Selection
-publishingplatform: gantt-sdk
+control: Selection - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Selection in ASP.NET Core Gantt component
+# Enabling and Configuring Selection Behavior in ASP.NET Core Gantt Chart
 
 Selection provides an option to highlight a row or a cell. It can be done using arrow keys or by scrolling down the mouse. To disable selection in the Gantt control, set the [`AllowSelection`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~AllowSelection.html) to false.
 

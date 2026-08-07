@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Task Constraints in Syncfusion ASP.NET Core Gantt Component
-description: Learn how to implement and manage task constraints in the Syncfusion ASP.NET Core Gantt component to enforce scheduling rules and dependencies.
+title: Task Constraints in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to implement and manage task constraints in Syncfusion ASP.NET Core Gantt Chart to enforce scheduling rules and enforce project timelines.
+keywords: asp.net core gantt task constraints, scheduling constraints, constraint types, date constraints, task scheduling, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/task-constraints
 platform: gantt-sdk
-control: Constraints
-publishingplatform: gantt-sdk
+control: Task Constraints - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Task Constraints in Gantt Control
+# Task Constraints with Scheduling Rules in ASP.NET Core Gantt Chart
 
 Task constraints define rules that control when a task is allowed to start or finish in the project timeline. They help ensure that tasks follow a logical sequence, align with fixed deadlines, and make efficient use of resources. Constraints also support planning for real-world limitations like material delays, team availability, or mandatory compliance dates—making your schedule more realistic and reliable.
 

@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Work in ASP.NET Core Gantt Component
-description: Learn here all about Work in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Work in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to manage and track work in Syncfusion ASP.NET Core Gantt Chart including work units, resource allocation, and work calculations.
+keywords: asp.net core gantt work, work units, resource work, work calculation, project work, effort tracking, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/work
 platform: gantt-sdk
-control: Work
-publishingplatform: gantt-sdk
+control: Work - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Work in Gantt component
+# Work and Effort Tracking with Task Type Support in ASP.NET Core Gantt Chart
 
 ## Work
 

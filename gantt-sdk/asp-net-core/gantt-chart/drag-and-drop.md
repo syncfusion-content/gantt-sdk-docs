@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Row Drag and Drop in ASP.NET Core Gantt Component
-description: Learn here all about Row Drag and Drop in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Drag and Drop in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to implement drag and drop functionality in Syncfusion ASP.NET Core Gantt Chart for intuitive task management and timeline manipulation.
+keywords: asp.net core gantt drag drop, task dragging, timeline manipulation, intuitive task management, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/drag-and-drop
 platform: gantt-sdk
-control: Drag and Drop
-publishingplatform: gantt-sdk
+control: Drag and Drop - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Row Drag and Drop in ASP.NET Core Gantt Component
+# Enabling Drag and Drop for Rows in ASP.NET Core Gantt Chart
 
 You can dynamically rearrange the rows in the Gantt control by using the `AllowRowDragAndDrop` property. Using this property, row drag and drop can be enabled or disabled in Gantt. Using this feature, rows can be dropped at above and below as a sibling or child to the existing rows.
 

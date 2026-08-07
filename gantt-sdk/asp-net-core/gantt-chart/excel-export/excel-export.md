@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Excel Export in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Excel Export in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Excel Export in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to export Gantt chart data to Excel in Syncfusion ASP.NET Core Gantt Chart with formatting, customization, and advanced options.
+keywords: asp.net core gantt excel export, export gantt, export to excel, excel formatting, excel customization, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/excel-export/excel-export
 platform: gantt-sdk
-control: Excel Export
-publishingplatform: gantt-sdk
+control: Excel Export - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Excel Export in gantt control
+# Exporting Data to Excel in ASP.NET Core Gantt Chart
 
 Gantt supports client-side exporting, which allows you to export its data to the Excel and CSV formats. Use the `excelExport` and `csvExport` methods for exporting. To enable Excel export in the Gantt, set the [`AllowExcelExport`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~AllowExcelExport.html) to true.
 
