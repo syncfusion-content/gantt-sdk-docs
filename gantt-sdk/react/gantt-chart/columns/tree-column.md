@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Tree Column in React Gantt Chart Component | Syncfusion
-description: Learn here all about Tree Column in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Tree Column in React Gantt Chart | Syncfusion
+description: Learn how to configure the tree column in Syncfusion React Gantt Chart to display hierarchical task data with expand and collapse capabilities.
+keywords: react gantt tree column, hierarchy column, task hierarchy, expand collapse, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/columns/tree-column
 platform: gantt-sdk
-control: Tree Column 
+control: Tree Column - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Tree Column in React Gantt Chart Component
+# Configuring the Hierarchical Tree Column in React Gantt Chart
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component provides a structured way to display parent-child relationships using expand/collapse icons.  
 

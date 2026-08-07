@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Events in React Gantt Chart Component | Syncfusion
-description: Learn here all about events in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Events
+title: Events in React Gantt Chart | Syncfusion
+description: Learn how to use events in Syncfusion React Gantt Chart to handle task changes, selection, editing, and other interactive actions programmatically.
+keywords: react gantt events, event handling, task events, gantt callbacks, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/events
 platform: gantt-sdk
+control: Events - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Events in React Gantt Chart Component
+# Events and Custom Actions in React Gantt Chart
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component offers comprehensive support for visualizing project schedules, task management, and timeline tracking through interactive charts. This documentation provides insights into leveraging the component's rich event-driven architecture to customize and control Gantt operations effectively. Events in the Gantt Chart enable you to execute custom logic and integrations, offering flexibility for both simple and complex scenarios.
 

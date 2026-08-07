@@ -1,18 +1,16 @@
 ---
 layout: post
-title: Virtual Scrolling in JavaScript Gantt Chart | Syncfusion
-description: Learn how to configure virtual scrolling in Syncfusion JavaScript Gantt Chart for high-performance rendering of large datasets and wide timelines.
-keywords: javascript gantt virtual scroll, large data, performance, virtual rendering, high performance, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/scrolling/virtual-scroll
+title: Virtual Scroll in TypeScript Gantt Chart Control | Syncfusion
+description: Learn how to configure virtual scrolling in the Syncfusion TypeScript Gantt Chart control for high-performance rendering of large datasets and wide timelines.
 platform: gantt-sdk
-control: Virtual Scrolling - Gantt Chart
+control: Virtual scroll
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Implementing Virtual Scrolling for Performance in JavaScript Gantt Chart
+# Virtual Scroll in TypeScript Gantt Chart Control
 
-Virtual scrolling in the JavaScript Gantt Chart control enhances performance by rendering only visible tasks and timeline segments, minimizing DOM operations for large datasets or extensive timelines. It includes row virtualization for handling thousands of tasks (e.g., 10,000 tasks in a project) and timeline virtualization for wide timelines (e.g., multi-year projects), both requiring [VirtualScroll](../../api/gantt/index-default#virtualscrollmodule) injection. Row virtualization renders tasks within the viewport, while timeline virtualization loads timeline cells on-demand during horizontal scrolling, ensuring efficient rendering for complex project management.
+Virtual scrolling in the TypeScript Gantt Chart control enhances performance by rendering only visible tasks and timeline segments, minimizing DOM operations for large datasets or extensive timelines. It includes row virtualization for handling thousands of tasks (e.g., 10,000 tasks in a project) and timeline virtualization for wide timelines (e.g., multi-year projects), both requiring [VirtualScroll](../../api/gantt/index-default#virtualscrollmodule) injection. Row virtualization renders tasks within the viewport, while timeline virtualization loads timeline cells on-demand during horizontal scrolling, ensuring efficient rendering for complex project management.
 
 ## Configure row virtualization
 
@@ -24,27 +22,27 @@ The following example enables row virtualization for a large dataset:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/virtual-scroll-cs3/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt-chart/virtual-scroll-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/virtual-scroll-cs3/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt-chart/virtual-scroll-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/virtual-scroll-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/virtual-scroll-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/virtual-scroll-cs3/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt-chart/virtual-scroll-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/virtual-scroll-cs3/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt-chart/virtual-scroll-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/virtual-scroll-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/virtual-scroll-cs3" %}
 {% endif %}
 
 ## Configure timeline virtualization
@@ -57,27 +55,27 @@ The following example enables timeline virtualization for a wide timeline:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/virtual-scroll-cs5/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt-chart/virtual-scroll-cs5/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/virtual-scroll-cs5/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt-chart/virtual-scroll-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/virtual-scroll-cs5" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/virtual-scroll-cs5" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/virtual-scroll-cs5/index.js %}
+{% include code-snippet/gantt-sdk/typescript/gantt-chart/virtual-scroll-cs5/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/virtual-scroll-cs5/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt-chart/virtual-scroll-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/virtual-scroll-cs5" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/virtual-scroll-cs5" %}
 {% endif %}
 
 ## Virtual scroll limitations

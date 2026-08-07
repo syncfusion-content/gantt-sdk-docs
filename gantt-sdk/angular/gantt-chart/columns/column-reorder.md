@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Reorder columns in Angular Gantt Chart Component | Syncfusion
-description: Learn how to reorder columns in the Syncfusion Angular Gantt Chart using drag-and-drop or code, and how to restrict reordering for specific columns.
+title: Reorder Columns in Angular Gantt Chart | Drag & Drop | Syncfusion
+description: Learn how to reorder columns in Syncfusion Angular Gantt Chart with drag-and-drop or programmatically, with options to restrict reordering for specific columns.
+keywords: angular gantt reorder columns, allowreordering, drag and drop, column reorder, reorderservice, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/columns/column-reorder
 platform: gantt-sdk
-control: Column reorder
+control: Column Reorder - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Column reorder in Angular Gantt Chart Component
+# Column Reordering with Drag and Drop Support in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component supports column reordering by dragging a column header to a new position. 
 

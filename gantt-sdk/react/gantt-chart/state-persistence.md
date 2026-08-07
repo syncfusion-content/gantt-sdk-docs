@@ -1,14 +1,16 @@
 ---
 layout: post
-title: State Persistence in React Gantt Chart Component | Syncfusion
-description: Learn here all about State persistence in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: State Persistence in React Gantt Chart | Syncfusion
+description: Learn how to enable state persistence in Syncfusion React Gantt Chart to retain user configurations like sorting and filtering across page reloads.
+keywords: react gantt state persistence, persist state, local storage, user settings, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/state-persistence
 platform: gantt-sdk
-control: State persistence 
+control: State Persistence - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# State Persistence in React Gantt Chart Component
+# State Persistence with LocalStorage Support in React Gantt Chart
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component supports state management to retain its configuration and data after a browser refresh during the same session.
 
@@ -103,7 +105,7 @@ When [enablePersistence](https://ej2.syncfusion.com/react/documentation/api/gant
 
 To prevent specific properties from being persisted, use the `addOnPersist` method.
 
-> When the [enablePersistence](https://ej2.syncfusion.com/react/documentation/api/gantt#enablepersistence) property is set to **true**, the Gantt features such as column template, column formatter, header text, and value accessor will not persist.
+> When the [enablePersistence](https://ej2.syncfusion.com/react/documentation/api/gantt#enablepersistence) property is set to **true**, the Gantt features such as column template, column formatter, header text, and value accessors will not persist.
 
 The example below shows how to prevent Gantt columns from being persisted. In the [dataBound](https://ej2.syncfusion.com/react/documentation/gantt/events#databound) event, override the `addOnPersist` method and remove [Columns](https://ej2.syncfusion.com/react/documentation/api/gantt#columns) from the persistence key list.
 
@@ -145,7 +147,7 @@ When [enablePersistence](https://ej2.syncfusion.com/react/documentation/api/gant
 
 ### Persist the header template and header Text
 
-By default, properties such as column template, header text, header template, formatter, and value accessor are not persisted when [enablePersistence](https://ej2.syncfusion.com/react/documentation/api/gantt#enablepersistence) is set to **true**, as these are defined at the application level.
+By default, properties such as column template, header text, header template, formatter, and value accessors are not persisted when [enablePersistence](https://ej2.syncfusion.com/react/documentation/api/gantt#enablepersistence) is set to **true**, as these are defined at the application level.
 
 To persist these settings, clone the [Columns](https://ej2.syncfusion.com/react/documentation/api/gantt#columns) property using `Object.assign`, store it manually along with the persisted data, and reassign it to the Gantt’s `Columns` property during restoration.
 

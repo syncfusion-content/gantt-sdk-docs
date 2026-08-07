@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Configure Work in React Gantt Chart Component | Syncfusion
-description: Learn how to configure work and task types in the Syncfusion React Gantt Chart component for accurate task scheduling and resource allocation.
+title: Configure Work in React Gantt Chart | Syncfusion
+description: Learn how to configure work and task types in Syncfusion React Gantt Chart for accurate task duration calculation and resource allocation.
+keywords: react gantt work, task type, work unit, duration calculation, resource work, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/work
 platform: gantt-sdk
-control: Work
+control: Work - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Configure Work in React Gantt Chart Component
+# Work and Effort Tracking with Task Type Support in React Gantt Chart
 
 The work feature in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component defines the total effort required to complete a task, mapped via the [taskFields.work](https://ej2.syncfusion.com/react/documentation/api/gantt/taskFields#work) property to a numeric value (e.g., 40 for 40 hours). The effort is measured in hours, days, or minutes using the [workUnit](https://ej2.syncfusion.com/react/documentation/api/gantt#workUnit) property, with **Hour** as the default. For example, a task with 40 hours of work and one resource at 100% allocation spans 5 8-hour workdays. Mapping `taskFields.work` sets the task type to **FixedWork** by default, ensuring work hours remain constant during edits. This feature, requiring `Edit` service for modifications, integrates with resources, dependencies, and critical path calculations, ensuring precise project scheduling for resource-driven projects.
 

@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Splitter in React Gantt Chart Component | Syncfusion
-description: Learn how to configure the splitter in the Syncfusion React Gantt Chart component for flexible TreeGrid and Chart panel sizing.
-control: Splitter
+title: Splitter in React Gantt Chart | Syncfusion
+description: Learn how to configure the splitter in Syncfusion React Gantt Chart to adjust the width between the TreeGrid and Chart panel sections.
+keywords: react gantt splitter, treegrid width, chart panel, panel resize, splitter position, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/splitter
 platform: gantt-sdk
+control: Splitter - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Splitter in React Gantt Chart Component
+# Splitter with Panel Resizing in React Gantt Chart
 
 The splitter in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component divides the TreeGrid pane and Chart pane, enabling flexible width allocation for project visualization. Configured via the [splitterSettings](https://ej2.syncfusion.com/react/documentation/api/gantt/splitterSettings) property, the splitter supports pixel or percentage-based positioning, column-based alignment, and predefined view modes. The [setSplitterPosition](https://ej2.syncfusion.com/react/documentation/api/gantt#setsplitterposition) method adjusts positioning dynamically, while the [splitterResizeStart](https://ej2.syncfusion.com/react/documentation/gantt/events#splitterresizestart), [splitterResizing](https://ej2.syncfusion.com/react/documentation/gantt/events#splitterresizing), and [splitterResized](https://ej2.syncfusion.com/react/documentation/gantt/events#splitterresized) events handle resize interactions. The splitter includes ARIA labels for accessibility, ensuring screen reader compatibility, and adapts to responsive designs, though narrow screens may limit visible columns or timeline segments. By default, both panels are visible with equal width.
 

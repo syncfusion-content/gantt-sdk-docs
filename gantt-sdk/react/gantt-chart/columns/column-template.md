@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Column template in React Gantt Chart Component | Syncfusion
-description: Learn here all about Column template in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Column Template in React Gantt Chart | Syncfusion
+description: Learn how to use column templates in Syncfusion React Gantt Chart to render custom content, icons, and components in task grid cells.
+keywords: react gantt column template, custom cell, template rendering, cell customization, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/columns/column-template
 platform: gantt-sdk
-control: Column template 
+control: Column Template - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Column Template in React Gantt Chart Component
+# Rendering Custom Content with Column Templates in React Gantt Chart
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component provides a [template](https://ej2.syncfusion.com/react/documentation/api/gantt/column#template) option that allows you to display custom elements in a column instead of the field value. This can be useful when you need to display images, buttons, or other custom content within a column.
 

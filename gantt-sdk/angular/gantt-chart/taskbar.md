@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Taskbar in Angular Gantt Chart Component | Syncfusion
-description: Learn how to customize taskbars in the Syncfusion Angular Gantt Chart component, including height, templates, and editing interactions.
+title: Taskbar Customization in Angular Gantt Chart | Syncfusion
+description: Learn how to customize taskbars with height, templates, tooltips, drag-resize editing, and multi-taskbar support.
+keywords: angular gantt taskbar, taskbar customization, taskbar height, taskbar template, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/taskbar
 platform: gantt-sdk
-control: Taskbar
+control: Taskbar - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Taskbar in Angular Gantt Chart Component
+# Taskbar Customization with Templates in Angular Gantt Chart
 
 The taskbar in the Angular Gantt Chart component visually represents tasks on the timeline, showing duration, progress, and dependencies, enabling intuitive project management. Taskbars support customization through properties like [taskbarHeight](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskbarheight) for sizing and [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt#querytaskbarinfo) event for conditional formatting based on task data like progress. Multi-taskbar support in resource view, enabled by [enableMultiTaskbar](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablemultitaskbar), summarizes child task progress in collapsed parent taskbars. Connector lines, styled via [connectorLineWidth](https://ej2.syncfusion.com/angular/documentation/api/gantt#connectorlinewidth) and [connectorLineBackground](https://ej2.syncfusion.com/angular/documentation/api/gantt#connectorlinebackground), illustrate dependencies. Tooltips, controlled by [tooltipSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/tooltipSettings), provide hover details for taskbars, baselines, and timelines, with templates for custom content. Editing interactions include dragging for rescheduling (via [allowTaskbarDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowtaskbardraganddrop)) and resizing for duration, progress changes, triggering events like [taskbarEditing](https://ej2.syncfusion.com/angular/documentation/gantt/events#taskbarediting) and [taskbarEdited](https://ej2.syncfusion.com/angular/documentation/gantt/events#taskbaredited) for validation.
 

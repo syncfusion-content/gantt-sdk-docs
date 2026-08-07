@@ -1,14 +1,16 @@
 ---
 layout: post
-title: How to Span Columns in React Gantt Chart Component | Syncfusion
-description: Learn how to span columns in the Syncfusion React Gantt Chart component using the queryCellInfo event, customize borders, and understand limitations.
+title: Column Spanning in React Gantt Chart | Syncfusion
+description: Learn how to span columns in Syncfusion React Gantt Chart using the queryCellInfo event to merge adjacent cells in the task grid.
+keywords: react gantt column spanning, cell spanning, merge cells, queryCellInfo, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/columns/column-spanning
 platform: gantt-sdk
-control: Column Spanning
+control: Column Spanning - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Column Spanning in React Gantt Chart Component
+# Merging Adjacent Cells with Column Spanning in React Gantt Chart
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component supports **column spanning**, allowing adjacent cells to merge horizontally for improved layout clarity. This feature is useful for grouping related data or enhancing visual structure.
 

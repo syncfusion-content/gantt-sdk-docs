@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Work Breakdown Structure (WBS) in Angular Gantt Chart Component | Syncfusion
-description: Learn how to integrate and manage WBS codes in the Syncfusion Angular Gantt Chart component to improve task hierarchy visualization and project tracking.
+title: WBS Column in Angular Gantt Chart | Work Breakdown | Syncfusion
+description: Learn how to integrate WBS codes in Syncfusion Angular Gantt Chart to assign hierarchical identifiers to tasks.
+keywords: angular gantt wbs column, work breakdown structure, wbs code, task hierarchy, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/columns/wbs-column
 platform: gantt-sdk
-control: WBS Column 
+control: WBS Column - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Work Breakdown Structure (WBS) in Angular Gantt Chart Component
+# WBS Column for Hierarchical Task Identification in Angular Gantt Chart
 
 The Work Breakdown Structure (WBS) organizes project tasks hierarchically by assigning unique codes to each task. This improves task visibility and management, especially in large-scale construction or enterprise-level software projects.
 
@@ -29,6 +31,8 @@ To enable WBS in the Gantt Chart component:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/wbscolumn-cs1" %}
+
+> When the WBS column is enabled in the Angular Gantt Chart using the [enableWBS](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablewbs) property along with the **WBS Code** and **WBS Predecessor** fields, the default **ID** and **Predecessor** columns are automatically disabled, as the WBS and WBS Predecessor columns already display the ID and predecessor values based on the task hierarchy.
 
 ## Managing WBS code updates
 

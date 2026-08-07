@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Validation in React Gantt Chart component | Syncfusion
-description: Learn how to validate task data in the Syncfusion React Gantt Chart component using column, custom, dependency, and resource grid rules for accurate project management.
+title: Validation in React Gantt Chart | Syncfusion
+description: Learn how to validate task data in Syncfusion React Gantt Chart using column, custom, dependency, and resource grid rules for accurate project management.
+keywords: react gantt validation, task validation, column validation, custom validation, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/managing-tasks/validation
 platform: gantt-sdk
-control: Validating Tasks
+control: Validation - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Validation in React Gantt Chart component
+# Validating Task Data Using Configurable Rules in React Gantt Chart
 
 Validation in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component ensures accurate task data by enforcing rules during adding or editing, preventing invalid entries before saving. Using the [Form Validator](https://ej2.syncfusion.com/documentation/form-validator) component, apply validation to columns in inline or dialog editing, custom rules for specific fields, or dependency and resource grids in the add/edit dialog. Requires `Edit` and valid [taskFields](https://ej2.syncfusion.com/react/documentation/api/gantt#taskfields) mappings (e.g., id, name) to ensure data integrity for tasks updated on September 23, 2025, or later, maintaining valid date ranges or dependency formats.
 
