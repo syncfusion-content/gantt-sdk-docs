@@ -1,20 +1,22 @@
 ---
 layout: post
-title: Task Labels in Angular Gantt Chart Component | Syncfusion
-description: Learn how to configure taskbar labels in the Syncfusion Angular Gantt Chart component for enhanced data visualization and project management.
+title: Task Labels in Angular Gantt Chart | Taskbar Labels | Syncfusion
+description: Learn how to configure taskbar labels in Syncfusion Angular Gantt Chart with left, right, and task label positions for enhanced project data visualization.
+keywords: angular gantt task labels, labelsettings, left label, right label, taskbar label, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/labels
 platform: gantt-sdk
-control: Task labels
+control: Task Labels - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Task Labels in Angular Gantt Chart Component
+# Task Label Positions and Template Support in Angular Gantt Chart
 
-Task labels in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component display key task information directly on or near taskbars, enhancing project visualization without requiring task interaction. Configured via the [labelSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/labelSettings/) property, labels show details like task names, IDs, or progress, streamlining workflows for resource management and status tracking. Labels support three positions: left labels outside the taskbar for identifiers like **TaskName**, right labels after the taskbar for metrics like **Progress**, and task labels overlaid on taskbars for prominent data like task titles. Left and right labels remain visible regardless of taskbar width, while task labels may clip for short tasks. Labels improve readability and provide immediate context, reducing the need for hovers or dialogs in large projects.
+Task labels in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component display key task information directly on or near taskbars, enhancing project visualization without requiring task interaction. Configured via the [labelSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/labelSettings) property, labels show details like task names, IDs, or progress, streamlining workflows for resource management and status tracking. Labels support three positions: left labels outside the taskbar for identifiers like **TaskName**, right labels after the taskbar for metrics like **Progress**, and task labels overlaid on taskbars for prominent data like task titles. Left and right labels remain visible regardless of taskbar width, while task labels may clip for short tasks. Labels improve readability and provide immediate context, reducing the need for hovers or dialogs in large projects.
 
 ## Configure task labels
 
-Task labels are configured using the [labelSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/labelSettings/) property, mapping fields from the data source defined in [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskfields) (e.g., id to TaskID, name to TaskName). The component supports three label positions with specific use cases:
+Task labels are configured using the [labelSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/labelSettings) property, mapping fields from the data source defined in [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskfields) (e.g., id to TaskID, name to TaskName). The component supports three label positions with specific use cases:
 
 - [leftLabel](https://ej2.syncfusion.com/angular/documentation/api/gantt/labelSettingsModel#leftlabel): Displays content like task names or resource assignments to the left of taskbars, ideal for identifiers.
 - [rightLabel](https://ej2.syncfusion.com/angular/documentation/api/gantt/labelSettingsModel#rightlabel): Shows metrics like progress percentages or durations to the right, suitable for completion data.

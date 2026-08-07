@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Loading Animation in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about Loading animation in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Loading animation 
+title: Loading Animation in Vue Gantt Chart | Syncfusion
+description: Learn how to configure loading indicators and animations in Syncfusion Vue Gantt Chart for better user feedback during data loading.
+keywords: vue gantt loading animation, loading indicator, shimmer, spinner, data binding, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/loading-animation
 platform: gantt-sdk
+control: Loading Animation - Gantt Chart
+publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Loading Animation in Vue Gantt Chart Component
+# Loading Indicators with Spinner and Shimmer in Vue Gantt Chart
 
 The loading indicator is used to display a visual indicator while the Gantt is fetching data or performing certain actions, such as sorting or filtering. The gantt support two indicator types, which is achieved by setting the [loadingIndicator.indicatorType](https://ej2.syncfusion.com/vue/documentation/api/gantt#loadingindicator) property to Shimmer or Spinner. The default value of the indicator type is "Spinner."
 

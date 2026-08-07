@@ -156,3 +156,4 @@ The following example disables the **MustStartOn** violation popup:
 - [How to configure task dependencies?](./task-dependency)
 - [How to customize taskbars?](./taskbar)
 - [How to enable baseline rendering?](./baseline)
+

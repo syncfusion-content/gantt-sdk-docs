@@ -65,3 +65,4 @@ For small datasets, standard rendering may suffice. For dynamic column operation
 - [How to manage task dependencies?](../gantt/taskdependency)
 - [How to enable virtual scrolling?](../gantt/scrolling/virtual-scrolling)
 - [How to configure critical path?](../gantt/critical-path)
+

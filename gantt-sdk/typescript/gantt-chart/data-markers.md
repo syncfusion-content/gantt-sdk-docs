@@ -135,3 +135,4 @@ You can programmatically modify the styling of the indicator by targeting the `.
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/data-markers-cs3" %}
 {% endif %}
+

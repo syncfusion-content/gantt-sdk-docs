@@ -42,3 +42,5 @@ In the following sample, the Shimmer indicator is displayed while the gantt is s
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/loading-animation-cs1" %}
 {% endif %}
+
+

@@ -692,3 +692,4 @@ To perform touch and hold action on a element, refer to [tooltip popup](tooltip#
 - [How to configure task dependencies?](../gantt/task-dependency)
 - [How to enable baseline rendering?](../gantt/baseline)
 - [How to customize labels?](../gantt/labels)
+

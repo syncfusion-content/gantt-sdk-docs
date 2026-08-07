@@ -105,3 +105,4 @@ You can programmatically show or hide event markers in the Gantt chart by updati
 - [How to compare planned vs. actual schedules?](../../gantt/baseline)
 - [How to visualize critical tasks in Gantt chart?](../../gantt/critical-path)
 - [How to highlight task-specific events?](../../gantt/data-markers)
+

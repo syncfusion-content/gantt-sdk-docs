@@ -451,3 +451,4 @@ The code sets `enableRtl` to **true** and `locale` to **ar**, mirroring the Gant
 - Call `setCulture()` before component initialization
 - Verify date format patterns match locale expectations
 - Check timezone and calendar system configuration
+

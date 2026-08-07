@@ -1,14 +1,16 @@
 ---
 layout: post
-title: PDF Export in Angular Gantt Chart Component | Syncfusion
-description: Learn how to export Gantt to PDF in Syncfusion Angular Gantt Chart component with indicators, blob objects, single-page, and theme options.
+title: PDF Export in Angular Gantt Chart | Document Export | Syncfusion
+description: Learn how to export Syncfusion Angular Gantt Chart to PDF with blob objects, single-page, and multi-instance options.
+keywords: angular gantt pdf export, pdfexport, allowpdfexport, single page, blob, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/pdf-export/pdf-export
 platform: gantt-sdk
-control: PDF export
+control: PDF Export - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# PDF Export in Angular Gantt Chart Component
+# Exporting Data to PDF Format in Angular Gantt Chart
 
 PDF export in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component enables exporting project data to PDF documents for sharing or archiving, using the [pdfExport](https://ej2.syncfusion.com/angular/documentation/api/gantt#pdfexport) method with [allowPdfExport](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowpdfexport) set to **true** and `PdfExport` module injected. This feature supports exporting timelines, tasks, and dependencies, with options for indicators via `base64` images, blob objects for previews, single-page layouts, multiple Gantt instances in one file, and themes like Tailwind3 or Bootstrap. Focus on auto-scheduled tasks for accurate export, as manual scheduling is not currently supported.
 

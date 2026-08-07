@@ -184,3 +184,5 @@ This configuration applies background colors to resource columns and taskbars, w
 - [How to configure resource view?](../gantt/resource-view)
 - [How to manage task dependencies?](../gantt/task-dependency)
 - [How to customize taskbars?](../gantt/taskbar)
+
+

@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Validation in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about validation rule in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Validating Task
+title: Validation in Vue Gantt Chart | Syncfusion
+description: Learn how to implement validation rules in Syncfusion Vue Gantt Chart for column validation and data integrity.
+keywords: vue gantt validation, validation rules, column validation, data validation, form validator, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/managing-tasks/validation
 platform: gantt-sdk
+control: Validation - Gantt Chart
+publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Validation in Vue Gantt Chart Component
+# Implementing Data Validation and Error Handling in Vue Gantt Chart
 
 ## Column validation
 

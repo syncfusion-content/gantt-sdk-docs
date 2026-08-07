@@ -275,3 +275,5 @@ The sample demonstrates complete keyboard navigation functionality, screen reade
 * [Keyboard Navigation in TypeScript Gantt Chart control](./keyboard-navigation)
 * [WCAG 2.2 Guidelines](https://www.w3.org/TR/WCAG22/)
 * [Section 508 Standards](https://www.section508.gov/)
+
+

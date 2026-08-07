@@ -63,7 +63,7 @@
     public class SwimlaneTasksModel
     {
         public HeaderModel Id { get; set; }
-        public string Title { get; set; }
+        public string? Title { get; set; }
         public StatusModel Status { get; set; }
         public ContentModel Summary { get; set; }
         public SwimlaneAssignee AssigneeName { get; set; }
@@ -71,12 +71,12 @@
     }
     public class SwimlaneAssignee
     {
-        public string Name { get; set; }
-        public string Text { get; set; }
+        public string? Name { get; set; }
+        public string? Text { get; set; }
     }
     public class StatusModel
     {
-        public string KeyField { get; set; }
+        public string? KeyField { get; set; }
     }
     public class HeaderModel
     {
@@ -84,7 +84,7 @@
     }
     public class ContentModel
     {
-        public string Content { get; set; }
+        public string? Content { get; set; }
     }
     public class SortingModel
     {
@@ -103,7 +103,7 @@
     private class DropDownModel
     {
         public int Id { get; set; }
-        public string Value { get; set; }
+        public string? Value { get; set; }
     }
     private List<DropDownModel> StatusData = new List<DropDownModel>() {
         new DropDownModel { Id = 0, Value = "Open" },

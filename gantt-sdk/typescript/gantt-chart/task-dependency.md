@@ -391,3 +391,4 @@ By default, Gantt Chart task dates are validated based on predecessor values. To
 - [How to configure task constraints?](./task-constraints)
 - [How to customize taskbars?](./taskbar)
 - [How to enable critical path?](./critical-path)
+

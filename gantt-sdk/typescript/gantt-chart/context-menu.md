@@ -121,3 +121,4 @@ This touch interaction ensures consistent experience across different device typ
 > For a comprehensive demonstration of context menu functionality, including default items, custom items, and sub-menus, explore the [interactive sample](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/gantt/contextMenu.html).
 
 {% endif %}
+

@@ -197,3 +197,4 @@ By default, `gridLines` is **Horizontal**.
 - [How to customize taskbars?](../../gantt/taskbar)
 - [How to configure timeline?](../../gantt//timeline/timeline)
 - [How to manage columns?](../../gantt/columns/columns)
+

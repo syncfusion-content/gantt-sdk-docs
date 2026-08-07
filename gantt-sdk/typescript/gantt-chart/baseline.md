@@ -172,3 +172,4 @@ The following example demonstrates how to render multiple baselines using `basel
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/baseline-cs2" %}
 {% endif %}
+

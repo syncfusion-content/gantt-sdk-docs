@@ -79,3 +79,4 @@ var serializer = new JavaScriptSerializer { MaxJsonLength = Int32.MaxValue };
 ## Microsoft excel limitation while exporting millions of records to excel file format
 
 By default, Microsoft Excel supports only 1,048,576 records per sheet. Therefore, exporting millions of records directly to Excel is not feasible. For more details on Microsoft Excel specifications and limits, you can refer to the [documentation](https://support.microsoft.com/en-gb/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3). It is recommended to export large datasets in CSV (Comma-Separated Values) or other formats that handle large data more efficiently than Excel.
+

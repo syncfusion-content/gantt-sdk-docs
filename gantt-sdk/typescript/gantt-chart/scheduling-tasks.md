@@ -436,3 +436,4 @@ The following example uses `dataBound` to switch auto-scheduled tasks to manual 
 - [How to configure task dependencies?](../gantt/task-dependency)
 - [How to manage resources?](../gantt/resources)
 - [How to configure holidays?](../gantt/holidays)
+

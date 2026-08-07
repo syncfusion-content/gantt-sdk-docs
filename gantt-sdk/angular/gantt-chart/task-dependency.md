@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Task Dependency in Angular Gantt Chart Component | Syncfusion
-description: Learn how to configure task dependencies in the Syncfusion Angular Gantt Chart for establishing relationships, managing offsets, and handling validation.
+title: Task Dependency in Angular Gantt Chart | FS, SS, FF, SF | Syncfusion
+description: Learn how to configure task dependencies with Finish-to-Start, Start-to-Start, and other relation types.
+keywords: angular gantt task dependency, fs, ss, ff, sf, predecessor, offset, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/task-dependency
 platform: gantt-sdk
-control: Task dependency
+control: Task Dependency - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Task Dependency in Angular Gantt Chart Component
+# Managing Task Dependencies in Angular Gantt Chart
 
 Task dependency in the Angular Gantt Chart component establishes relationships between tasks, affecting scheduling where changes to predecessors impact successors. Dependencies are categorized into four types—Start to Start (SS), Start to Finish (SF), Finish to Start (FS), and Finish to Finish (FF)—mapped via the [taskFields.dependency](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#dependency) property in the data source. Parent dependencies are enabled by default with [allowParentDependency](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowparentdependency) set to **true**, allowing relationships between parent-parent, child-child, parent-child, and child-parent tasks. Offsets support day, hour, or minute units for precise timing, and validation modes handle conflicts during editing via the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/gantt#actionbegin) event. Connector lines are customized using [connectorLineWidth](https://ej2.syncfusion.com/angular/documentation/api/gantt#connectorlinewidth) and [connectorLineBackground](https://ej2.syncfusion.com/angular/documentation/api/gantt#connectorlinebackground), with the `queryTaskbarInfo` event enabling dynamic styling. Public methods like [addPredecessor](https://ej2.syncfusion.com/angular/documentation/api/gantt#addpredecessor) and [removePredecessor](https://ej2.syncfusion.com/angular/documentation/api/gantt#removepredecessor) allow programmatic management, ensuring accurate visualization with ARIA labels for accessibility and responsive scaling for mobile views.
 
@@ -37,6 +39,12 @@ The following example establishes dependencies:
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/taskdependency/default-cs1" %}
 
 This code renders connector lines for dependencies like '2FS', updating taskbars on changes.
+
+> - Dependencies between tasks under the same parent are not supported.
+> - Dependencies between tasks in different parent groups are supported when the `allowParentDependency` property is enabled.
+> - The format of the dependency string depends on the data type of the [id](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskfields#id) field mapped in the data source:
+>   - If the `id` field is an **integer**, the compact format (for example, `3FS`) can be used without a space between the `id` and the dependency type.
+>   - If the `id` field is a **string** or **GUID**, the format `[id] [PredecessorType]` is mandatory, with a single space between the `id` and the predecessor type (for example, `TASK-001 FS`). The Gantt Chart parses the two parts based on this space, so the space is required to correctly identify the predecessor type.
 
 ## Understand task relationship types
 

@@ -291,3 +291,4 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 |Triggers on initialization of Gantt control | **Event:** *load* <br/><br/>`var ganttObj = new ej.Gantt($("#Gantt"), {`<br/>`load: function (args) {}`<br/>`});` | **Event:** *load* <br/><br/>`let gantt: Gantt = new Gantt({`<br/>`load: function (args) {}`<br/>`});`<br/>|
 | Triggers after splitter resize action | **Event:** *splitterResized* <br/><br/>`var ganttObj = new ej.Gantt($("#Gantt"), {`<br/>`splitterResized: function (args) {}`<br/>`});` | **Event:** *splitterResized* <br/><br/>`let gantt: Gantt = new Gantt({`<br/>`splitterResized: function (args) {}`<br/>`});`<br/>|
 | Triggers when taskbar item is clicked | **Event:** *taskbarClick* <br/><br/>`var ganttObj = new ej.Gantt($("#Gantt"), {`<br/>`taskbarClick: function (args) {}`<br/>`});`| **Event:** *onTaskbarClick* <br/><br/>`let gantt: Gantt = new Gantt({`<br/>`onTaskbarClick: function (args) {}`<br/>`}); |
+

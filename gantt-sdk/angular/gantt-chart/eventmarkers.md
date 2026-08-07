@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Eventmarkers in Angular Gantt Chart Component | Syncfusion
-description: Learn here all about Eventmarkers in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Event Markers in Angular Gantt Chart | Syncfusion
+description: Learn how to highlight critical project events in Syncfusion Angular Gantt Chart with vertical event markers spanning the timeline for milestones and deadlines.
+keywords: angular gantt event markers, timeline indicators, project milestones, vertical markers, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/eventmarkers
 platform: gantt-sdk
-control: Eventmarkers 
+control: Event Markers - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Event Markers in Angular Gantt Chart Component
+# Project-Wide Timeline Markers in Angular Gantt Chart
 
 Event markers highlight significant project events by displaying vertical timeline indicators that span across the entire Gantt chart. These markers identify critical dates, milestones, deadlines, or important project events that affect multiple tasks or the overall project timeline, providing visual reference points for project-wide activities.
 

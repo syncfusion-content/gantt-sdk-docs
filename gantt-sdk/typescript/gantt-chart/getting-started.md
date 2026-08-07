@@ -296,3 +296,4 @@ For a complete working example with detailed error scenarios, refer to:
 The following screenshot represents the Gantt Exception handling in `actionFailure` event.
 
 ![Error Handling](./images/error-handling.png)
+
