@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Virtual Scroll in Angular Gantt Chart Component | Syncfusion
-description: Learn how to configure virtual scrolling in the Syncfusion Angular Gantt Chart component for high-performance rendering of large datasets and wide timelines.
+title: Virtual Scrolling in Angular Gantt Chart | Performance | Syncfusion
+description: Learn how to configure virtual scrolling in the Syncfusion Angular Gantt Chart to efficiently handle large datasets and improve rendering performance.
+keywords: angular gantt virtual scroll, virtualscrollservice, row virtualization, timeline virtualization, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/scrolling/virtual-scrolling
 platform: gantt-sdk
-control: Virtual scroll
+control: Virtual Scrolling - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Virtual scroll in Angular Gantt Chart Component
+# Implementing Virtual Scrolling for Performance in Angular Gantt Chart
 
 Virtual scrolling in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component enhances performance by rendering only visible tasks and timeline segments, minimizing DOM operations for large datasets or extensive timelines. It includes row virtualization for handling thousands of tasks (e.g., 10,000 tasks in a project) and timeline virtualization for wide timelines (e.g., multi-year projects), both requiring [VirtualScrollService](https://ej2.syncfusion.com/angular/documentation/api/gantt#virtualscrollmodule) injection. Row virtualization renders tasks within the viewport, while timeline virtualization loads timeline cells on-demand during horizontal scrolling, ensuring efficient rendering for complex project management.
 

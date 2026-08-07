@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Splitting and merging tasks in Angular Gantt Chart | Syncfusion
-description: Learn how to split and merge tasks in the Syncfusion Angular Gantt Chart component for flexible task management in project timelines.
+title: Split and Merge Tasks in Angular Gantt Chart | Segments | Syncfusion
+description: Learn how to split and merge tasks in Syncfusion Angular Gantt Chart using segments, context menu, or dialogs for flexible task management in project timelines.
+keywords: angular gantt split merge tasks, segments, segmentid, split task, merge task, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/managing-tasks/splitting-and-merging-tasks
 platform: gantt-sdk
-control: Splitting and merging tasks
+control: Split and Merge Tasks - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Splitting and Merging Tasks in Angular Gantt Chart Component
+# Splitting and Merging Tasks in Angular Gantt Chart
 
 Splitting and merging tasks in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component enhances project management by allowing tasks to be divided into segments or recombined, representing breaks or continuous work periods. Split tasks at load time using [taskFields.segments](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#segments) for hierarchical data or [taskFields.segmentId](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskfields#segmentid) for self-referential data, ensuring segments fit within the task’s start and end dates. Dynamically split tasks via the dialog’s Segments tab or context menu’s Split Task option, requiring `EditService` and valid `taskFields` mappings. Merge tasks using the context menu’s Merge Task option or by dragging segments together in the UI, with [enableContextMenu](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablecontextmenu) and `ContextMenuService` enabled. Ensure tasks have sufficient width relative to the timeline unit and are not parent or milestone tasks to enable splitting, and avoid using split tasks with multi-taskbar features to maintain compatibility.
 

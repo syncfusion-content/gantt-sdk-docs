@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Data Markers in Angular Gantt Chart Component | Syncfusion
-description: Learn here all about data markers in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Data Markers in Angular Gantt Chart | Visual Indicators | Syncfusion
+description: Learn how to highlight milestones and significant dates in Syncfusion Angular Gantt Chart with data markers for visual context within individual task timelines.
+keywords: angular gantt data markers, milestones, visual indicators, task events, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/data-markers
 platform: gantt-sdk
-control: Data markers 
+control: Data Markers - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Data Markers in Angular Gantt Chart Component
+# Task Markers and Milestones in Angular Gantt Chart
 
 Data markers are visual indicators that highlight significant events, milestones, or important dates within individual project tasks. These markers provide immediate visual context about critical moments in task timelines, enabling effective identification of key dates and tracking of important events at the task level. Understanding data markers implementation ensures effective project visualization and milestone tracking throughout project development cycles.
 

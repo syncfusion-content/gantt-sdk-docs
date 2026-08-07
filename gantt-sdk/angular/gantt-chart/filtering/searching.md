@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Searching in Angular Gantt Chart Component | Syncfusion
-description: Learn here all about Searching in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Searching in Angular Gantt Chart | Quick Search | Syncfusion
+description: Learn how to enable quick search in Syncfusion Angular Gantt Chart to filter records based on search input and access relevant data fast in large task datasets.
+keywords: angular gantt searching, search settings, toolbar search, filter service, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/filtering/searching
 platform: gantt-sdk
-control: Searching 
+control: Searching - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Searching in Angular Gantt Chart Component
+# Implementing Quick Search for Task Data in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component allows quick filtering of records based on search input, improving access to relevant data in large datasets.
 

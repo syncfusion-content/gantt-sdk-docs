@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Work Breakdown Structure (WBS) in Angular Gantt Chart Component | Syncfusion
-description: Learn how to integrate and manage WBS codes in the Syncfusion Angular Gantt Chart component to improve task hierarchy visualization and project tracking.
+title: WBS Column in Angular Gantt Chart | Work Breakdown | Syncfusion
+description: Learn how to integrate WBS codes in Syncfusion Angular Gantt Chart to assign hierarchical identifiers to tasks.
+keywords: angular gantt wbs column, work breakdown structure, wbs code, task hierarchy, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/columns/wbs-column
 platform: gantt-sdk
-control: WBS Column 
+control: WBS Column - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Work Breakdown Structure (WBS) in Angular Gantt Chart Component
+# WBS Column for Hierarchical Task Identification in Angular Gantt Chart
 
 The Work Breakdown Structure (WBS) organizes project tasks hierarchically by assigning unique codes to each task. This improves task visibility and management, especially in large-scale construction or enterprise-level software projects.
 
