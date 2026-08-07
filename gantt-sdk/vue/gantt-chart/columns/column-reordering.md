@@ -6,7 +6,6 @@ keywords: vue gantt column reordering, reorder columns, drag columns, column arr
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/columns/column-reorder
 platform: gantt-sdk
 control: Column Reordering - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

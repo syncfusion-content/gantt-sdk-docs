@@ -6,7 +6,6 @@ keywords: vue gantt add edit dialog, open dialog, add dialog, edit dialog, syncf
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/how-to/open-add-edit-dialog
 platform: gantt-sdk
 control: Open Add Edit Dialog - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

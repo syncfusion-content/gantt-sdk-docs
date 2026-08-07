@@ -6,7 +6,6 @@ keywords: vue gantt drag drop, drag from another component, inter-component drag
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/how-to/drag-and-drop-from-another
 platform: gantt-sdk
 control: Drag and Drop from Another - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

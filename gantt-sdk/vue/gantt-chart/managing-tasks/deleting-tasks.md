@@ -6,7 +6,6 @@ keywords: vue gantt delete tasks, task deletion, remove tasks, delete row, syncf
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/managing-tasks/deleting-tasks
 platform: gantt-sdk
 control: Deleting Tasks - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

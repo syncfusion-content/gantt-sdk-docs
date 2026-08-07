@@ -6,7 +6,6 @@ keywords: vue gantt indent outdent, task hierarchy, task level, hierarchical ord
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/managing-tasks/indent-and-outdent
 platform: gantt-sdk
 control: Indent and Outdent - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

@@ -6,7 +6,6 @@ keywords: vue gantt modules, feature injection, module configuration, gantt feat
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/module
 platform: gantt-sdk
 control: Modules - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

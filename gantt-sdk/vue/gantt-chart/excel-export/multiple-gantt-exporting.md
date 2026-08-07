@@ -6,7 +6,6 @@ keywords: vue gantt multiple export, multiple gantt export, excel multiple sheet
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/excel-export/multiple-gantt-exporting
 platform: gantt-sdk
 control: Multiple Gantt Exporting - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

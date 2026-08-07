@@ -6,7 +6,6 @@ keywords: vue gantt pdf export, export to pdf, pdf generation, pdf export settin
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/pdf-export/pdf-export
 platform: gantt-sdk
 control: PDF Export - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

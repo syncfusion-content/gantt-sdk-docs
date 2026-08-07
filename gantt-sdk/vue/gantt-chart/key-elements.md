@@ -6,7 +6,6 @@ keywords: vue gantt key elements, gantt ui components, interface, taskbar, timel
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/key-elements
 platform: gantt-sdk
 control: Key Elements - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

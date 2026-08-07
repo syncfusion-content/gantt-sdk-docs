@@ -6,7 +6,6 @@ keywords: vue gantt zooming, zoom in out, timeline zoom, zoom to fit, zoom level
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/time-line/zooming
 platform: gantt-sdk
 control: Zooming - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
