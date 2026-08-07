@@ -576,3 +576,5 @@ You can render a component inside a Gantt chart cell by setting the `template` p
 {% endtabs %}
   
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/render-template-cs6" %}
+
+> When using an Angular `ng-template` in a Gantt Chart column, the template may be evaluated multiple times during Angular change detection. This is Angular's default behavior and is not specific to the Gantt Chart component. To optimize performance, avoid complex logic or expensive operations inside templates. Instead, precompute values in the component class and keep template logic simple.

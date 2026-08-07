@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Ej1 Api Migration in ASP.NET Core Gantt Component
-description: Learn here all about Ej1 Api Migration in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: EJ1 API Migration in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to migrate from EJ1 API to the new Syncfusion ASP.NET Core Gantt Chart API with a comprehensive guide covering breaking changes and new features.
+keywords: asp.net core gantt ej1 migration, api migration, upgrading gantt, breaking changes, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/ej1-api-migration
 platform: gantt-sdk
-control: Ej1 Api Migration
-publishingplatform: gantt-sdk
+control: EJ1 API Migration - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
+# EJ1 to EJ2 API Migration in ASP.NET Core Gantt Chart
 
 This topic shows the API equivalent of JS2 Gantt component to be used, while migrating your project that uses JS1 Gantt.
 

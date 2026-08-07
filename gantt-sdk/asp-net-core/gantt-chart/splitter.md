@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Splitter in ASP.NET Core Gantt Component
-description: Learn here all about Splitter in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Splitter in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to customize and manage the splitter control in Syncfusion ASP.NET Core Gantt Chart to adjust grid and timeline pane sizes.
+keywords: asp.net core gantt splitter, pane resizing, grid splitter, timeline splitter, layout management, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/splitter
 platform: gantt-sdk
-control: Splitter
-publishingplatform: gantt-sdk
+control: Splitter - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Splitter in ASP.NET Core Gantt component
+# Splitter with Panel Resizing in ASP.NET Core Gantt Chart
 
 ## Splitter
 

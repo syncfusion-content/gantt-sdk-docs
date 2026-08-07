@@ -1,14 +1,16 @@
 ---
 layout: post
 title: Column Pinning (Frozen) in ASP.NET Core Gantt Chart | Syncfusion
-description: Learn here all about column pinning (Frozen) in Syncfusion ASP.NET Core Gantt Chart control of Syncfusion Essential JS 2 and more.
+description: Learn how to pin or freeze columns in Syncfusion ASP.NET Core Gantt Chart to keep important columns visible while scrolling horizontally.
+keywords: asp.net core gantt column pinning, frozen columns, pinned columns, column freezing, sticky columns, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/columns/frozen-column
 platform: gantt-sdk
-control: Column Pinning (Frozen)
-publishingplatform: gantt-sdk
+control: Columns - Gantt Chart
 documentation: ug
---- 
+domainurl: https://help.syncfusion.com/gantt-sdk
+---
 
-# Column Pinning (Frozen) in ASP.NET Core Gantt Chart Control
+# Frozen Columns with Left and Right Pinning in ASP.NET Core Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Gantt Chart control provides a frozen columns feature that keeps selected columns fixed while scrolling horizontally through large datasets. This functionality ensures that critical information remains visible at all times, improving readability and user experience. By maintaining key columns in view, it simplifies navigation and makes referencing important data points easier when working with extensive project details.
 
