@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Column resizing in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Column resizing in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Column Resizing in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to enable column resizing in Syncfusion ASP.NET Core Gantt Chart allowing users to adjust column widths interactively.
+keywords: asp.net core gantt column resizing, resize columns, column width, resizable columns, column size adjustment, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/columns/column-resizing
 platform: gantt-sdk
-control: Columns
-publishingplatform: gantt-sdk
+control: Columns - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Column Resizing in gantt control
+# Column Resizing with Dynamic Width Adjustment in ASP.NET Core Gantt Chart
 
 The column width can be resized by clicking and dragging the right edge of the column header. While dragging, the width of the column will be resized immediately. Each column can be auto resized by double-clicking the right edge of the column header to fit the width of that column based on the widest cell content. To resize the column, set the [`AllowResizing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowResizing) property to true. The following code example shows how to enable the column resize feature in the Gantt control.
 

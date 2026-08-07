@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Indent and Outdent in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Indent and Outdent in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Indent and Outdent in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to indent and outdent tasks in Syncfusion ASP.NET Core Gantt Chart to create hierarchical task structures and parent-child relationships.
+keywords: asp.net core gantt indent outdent, task hierarchy, parent child tasks, indent tasks, outdent tasks, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managing-tasks/in-dent-and-out-dent
 platform: gantt-sdk
-control: Managing Tasks
-publishingplatform: gantt-sdk
+control: Managing Tasks - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Indent and Outdent in Gantt
+# Indent and Outdent in ASP.NET Core Gantt Chart
 
 Indent and Outdent of a task are used to update the level of the task in hierarchical order of the task. It can be performed bu enabling the [`editSettings.allowEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettingsBuilder.html#Syncfusion_EJ2_Gantt_GanttEditSettingsBuilder_AllowEditing_System_Boolean_) property.
 

@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Multiple Gantt exporting in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Multiple Gantt exporting in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Multiple Gantt Export in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to export multiple Gantt charts to Excel in Syncfusion ASP.NET Core Gantt Chart with customization options and formatting.
+keywords: asp.net core gantt multiple export, export multiple gantt, batch export, multi-chart export, excel export, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/excel-export/multiple-gantt-exporting
 platform: gantt-sdk
-control: Excel Export
-publishingplatform: gantt-sdk
+control: Excel Export - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Multiple Gantt exporting
+#  Multiple Gantt Exporting in ASP.NET Core Gantt Chart
 
 In Gantt, the Excel export provides support to export multiple Gantt data in new sheet or same sheet.
 

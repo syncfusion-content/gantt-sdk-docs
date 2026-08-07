@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Columns menu in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Columns menu in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Column Menu in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to use the column menu in Syncfusion ASP.NET Core Gantt Chart to manage, filter, and configure column visibility and display.
+keywords: asp.net core gantt column menu, column visibility, column configuration, show hide columns, column menu, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/columns/column-menu
 platform: gantt-sdk
-control: Columns
-publishingplatform: gantt-sdk
+control: Columns - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Column menu in gantt control
+# Column Menu with Sort and Filter in ASP.NET Core Gantt Chart
 
 The column menu has options to integrate features like sorting, filtering, and autofit. It will show a menu with the integrated feature when users click the Multiple icon of the column. To enable the column menu, you should set the [`ShowColumnMenu`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ShowColumnMenu) property to true. The default items are displayed in the following table:
 

@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Row Selection in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Row Selection in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Row Selection in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to implement row selection in Syncfusion ASP.NET Core Gantt Chart with support for single, multiple, and programmatic row selection.
+keywords: asp.net core gantt row selection, select rows, row select, multi row selection, row highlighting, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/selection/row-selection
 platform: gantt-sdk
-control: Selection
-publishingplatform: gantt-sdk
+control: Selection - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Row selection action in gantt control
+# Selecting Multiple Rows and Rows in ASP.NET Core Gantt Chart
 
 The row selection in the Gantt control can be enabled or disabled using the [`AllowSelection`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~AllowSelection.html) property. You can get the selected row object using the `getSelectedRecords` method. The following code example shows how to disable the row selection in Gantt.
 

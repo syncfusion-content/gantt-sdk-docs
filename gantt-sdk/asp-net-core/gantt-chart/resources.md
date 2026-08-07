@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Resources in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Resources in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Resources in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to configure and manage resources in Syncfusion ASP.NET Core Gantt Chart including resource assignments, allocation, and capacity planning.
+keywords: asp.net core gantt resources, resource assignment, resource allocation, team members, capacity planning, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/resources
 platform: gantt-sdk
-control: Resources
-publishingplatform: gantt-sdk
+control: Resources - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Resources in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Gantt Component
+# Resources with Allocation and Task Mapping in ASP.NET Core Gantt Chart
 
 In Gantt, the resources are represented by staff, equipment and materials etc. In Gantt control you can show or allocate the resources (human resources) for each task.
 

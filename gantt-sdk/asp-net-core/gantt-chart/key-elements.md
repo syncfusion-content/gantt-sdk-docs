@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Key Elements in Gantt UI for ASP.NET Core Gantt control | Syncfusion
-description:  Checkout and learn about Key Elements in Gantt UI of ASP.NET Core Gantt control of Syncfusion Essential JS 2 and more.
+title: Key Elements in ASP.NET Core Gantt Chart | Syncfusion
+description: Understand the key UI elements and components of Syncfusion ASP.NET Core Gantt Chart to effectively utilize and customize the project management interface.
+keywords: asp.net core gantt key elements, gantt components, ui elements, gantt interface, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/key-elements
 platform: gantt-sdk
-control: Key Elements in Gantt UI
-publishingplatform: gantt-sdk
+control: Key Elements - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Key Elements in Gantt UI
+# Key Elements in ASP.NET Core Gantt Chart UI
 
 This section explains the key elements of the Gantt Chart interface.
 
