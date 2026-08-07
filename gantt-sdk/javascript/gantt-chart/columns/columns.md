@@ -165,7 +165,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control for Jav
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs11" %}
 {% endif %}
 
-> - The Gantt uses the [Internationlization](https://ej2.syncfusion.com/javascript/documentation/common/internationalization) library to format values based on the specified format and culture.
+> - The Gantt uses the [Internationalization](https://ej2.syncfusion.com/javascript/documentation/common/internationalization) library to format values based on the specified format and culture.
 > - By default, the [number](https://ej2.syncfusion.com/javascript/documentation/common/internationalization#number-formatting) and [date](https://ej2.syncfusion.com/javascript/documentation/common/internationalization#date-formatting) values are formatted in **en-US** locale. You can localize the currency and date in different locale as explained [here](https://ej2.syncfusion.com/javascript/documentation/common/localization).
 > - The available format codes may vary depending on the data type of the column.
 > - You can also customize the formatting further by providing a custom function to the [format](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#format) property, instead of a format string.
