@@ -1,14 +1,16 @@
 ---
 layout: post
-title: React Gantt Row Selection API Guide | Syncfusion
-description: Explore how to configure and customize row selection in the Syncfusion React Gantt Chart component using API methods and events.
+title: Row Selection in React Gantt Chart | Syncfusion
+description: Learn how to configure row selection in Syncfusion React Gantt Chart with single, multiple, and external selection using API methods and events.
+keywords: react gantt row selection, select row, multiple row selection, selection API, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/selection/row-selection
 platform: gantt-sdk
-control: Row selection 
+control: Row Selection - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Row Selection in React Gantt Chart Component
+# Configuring Row Selection with API and Events in React Gantt Chart
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component supports row selection using mouse clicks or keyboard navigation (arrow keys). This enables users to highlight, manipulate, or trigger actions on selected task rows.
 

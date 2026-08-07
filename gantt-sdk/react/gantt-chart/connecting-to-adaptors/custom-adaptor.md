@@ -1,14 +1,16 @@
 ---
 layout: post
-title: React Gantt Chart - Custom Adaptor | Syncfusion
-description: React Gantt Chart custom adaptor explains creating a custom data adaptor to transform requests and responses, enabling custom backends and behaviors.
-control: Custom Adaptor
+title: Custom Adaptor in React Gantt Chart | Syncfusion
+description: Learn how to create a custom data adaptor in Syncfusion React Gantt Chart to transform requests and responses for custom backend data binding.
+keywords: react gantt custom adaptor, custom data binding, custom backend, adaptor transform, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/connecting-to-adaptors/custom-adaptor
 platform: gantt-sdk
+control: Custom Adaptor - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Custom Remote Data Binding in Syncfusion React Gantt Chart
+# Custom Adaptor for Data Binding in React Gantt Chart
 
 The `CustomAdaptor` in Syncfusion<sup style="font-size:70%">&reg;</sup> React Gantt Chart is a powerful extension mechanism that **customizes any existing adaptor** ([RemoteSaveAdaptor](./remote-save-adaptor), [WebMethodAdaptor](./web-method-adaptor), [ODataV4Adaptor](./odatav4-adaptor), [GraphQLAdaptor](./graphql-adaptor)) to meet specific application requirements. Instead of creating an adaptor from scratch, `CustomAdaptor` intercepts and customizes the HTTP request/response pipeline used by the Syncfusion React Gantt Chart.
 
@@ -148,7 +150,7 @@ After creating the custom adaptor class, integrate it with the React Gantt Chart
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-
+{% raw %}
 import { DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data';
 import { CustomAdaptor } from './CustomAdaptor';
 import { GanttComponent, Inject, Edit, Selection, Toolbar, ColumnsDirective, ColumnDirective, ContextMenu, Filter, Sort, Reorder, Resize, ColumnMenu, VirtualScroll, RowDD, } from '@syncfusion/ej2-react-gantt';
@@ -203,7 +205,7 @@ function App() {
     const toolbar = ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll', 'Indent', 'Outdent'];
 
     return (
-        <div style={% raw %}{{ margin: '20px' }}{% endraw %}>
+        <div style={{ margin: '20px' }}>
             <h2>ODataV4Adaptor with Gantt</h2>
             <GanttComponent dataSource={data} taskFields={taskFields} resourceFields={resourceFields} resources={resources} showColumnMenu= {true}
                 editSettings={editSettings} height='400px' toolbar={toolbar} allowReordering={true} allowResizing={true} allowRowDragAndDrop={true} enableContextMenu={true} allowFiltering={true} allowSorting={true}>
@@ -222,7 +224,7 @@ function App() {
 }
 
 export default App;
-
+{% endraw %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -320,7 +322,7 @@ React Gantt Chart enables full CRUD functionality by configuring the required [t
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-
+{% raw %}
 import { DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data';
 import { CustomAdaptor } from './CustomAdaptor';
 import { GanttComponent, Inject, Edit, Selection, Toolbar, ColumnsDirective, ColumnDirective, ContextMenu, Filter, Sort, Reorder, Resize, ColumnMenu, VirtualScroll, RowDD, } from '@syncfusion/ej2-react-gantt';
@@ -375,7 +377,7 @@ function App() {
     const toolbar = ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll', 'Indent', 'Outdent'];
 
     return (
-        <div style={% raw %}{{ margin: '20px' }}{% endraw %}>
+        <div style={{ margin: '20px' }}>
             <h2>ODataV4Adaptor with Gantt</h2>
             <GanttComponent dataSource={data} taskFields={taskFields} resourceFields={resourceFields} resources={resources} showColumnMenu= {true}
                 editSettings={editSettings} height='400px' toolbar={toolbar} allowReordering={true} allowResizing={true} allowRowDragAndDrop={true} enableContextMenu={true} allowFiltering={true} allowSorting={true}>
@@ -394,7 +396,7 @@ function App() {
 }
 
 export default App;
-
+{% endraw %}
 {% endhighlight %}
 {% endtabs %}
 

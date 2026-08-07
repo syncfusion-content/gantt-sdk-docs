@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Zooming functionality in React Gantt Chart Component | Syncfusion
-description: Explore zooming options in the Syncfusion React Gantt Chart component, including Zoom In, Zoom Out, Zoom To Fit, and custom zooming levels.
+title: Zooming in React Gantt Chart | Syncfusion
+description: Learn how to use zooming in Syncfusion React Gantt Chart with Zoom In, Zoom Out, Zoom to Fit, and custom zooming levels for timeline navigation.
+keywords: react gantt zooming, zoom in zoom out, zoom to fit, timeline zoom, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/timeline/zooming
 platform: gantt-sdk
-control: Zooming
+control: Zooming - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Zooming Functionality in React Gantt Chart Component
+# Timeline Navigation and Zooming in React Gantt Chart
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component provides zooming support to adjust the timeline view dynamically. This includes increasing or decreasing the width of timeline cells and changing the timeline units to view tasks across various timespan from minutes to decades.
 

@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Excel Export Options in React Gantt Chart Component | Syncfusion
-description: Learn here all about Excel export in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Excel Export Options in React Gantt Chart | Syncfusion
+description: Learn how to customize Excel export options in Syncfusion React Gantt Chart with column selection, formatting, and custom data settings.
+keywords: react gantt excel export options, export customization, column export, custom format, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/excel-export/excel-export-options
 platform: gantt-sdk
-control: Excel export 
+control: Excel Export Options - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Excel Export Options in React Gantt Chart Component
+# Customizing Excel Export with Advanced Options in React Gantt Chart
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component provides configurable options for Excel or CSV export through the [ExcelExportProperties](https://ej2.syncfusion.com/react/documentation/api/grid/excelExportProperties) object. You can customize column selection, include hidden columns, define a custom data source, apply filters, and format exported data. It also supports setting file names, adding headers and footers, and exporting multiple Gantt Charts.
 
