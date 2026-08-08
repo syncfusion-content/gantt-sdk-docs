@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Virtual Scrolling in ASP.NET MVC Gantt Chart | Syncfusion
+title: Virtual Scroll in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to enable virtual scrolling in Syncfusion ASP.NET MVC Gantt Chart to efficiently handle large datasets and improve performance.
 keywords: asp.net mvc gantt virtual scroll, virtual scrolling, large datasets, performance optimization, scroll performance, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/virtual-scrolling
@@ -16,7 +16,7 @@ Virtual Scroll support in Gantt allows you to load large amount of data without 
 
 ## Row virtualization
 
-Row virtualization allows you to load and render a large number of tasks in Gantt with effective performance. In this mode, all tasks are fetched initially from the datasource and rendered in the DOM [...]
+Row virtualization allows you to load and render a large number of tasks in Gantt with effective performance. In this mode, all tasks are fetched initially from the datasource and rendered in the DOM within a compact viewport area.
 
 The number of records displayed in the Gantt is determined by the height.
 
@@ -49,9 +49,9 @@ This mode can be enable by setting the `EnableVirtualization` property to `true`
 
 ## Timeline virtualization
 
-Timeline virtualization allows you to load a data source having large timespan with high performance. Initially, it renders the timeline with thrice the width of the gantt element, while other timeline [...]
+Timeline virtualization allows you to load a data source having large timespan with high performance. Initially, it renders the timeline with thrice the width of the gantt element, while other timeline cells render on-demand during horizontal scrolling.
 
-This mode can be enable by setting the [EnableTimelineVirtualization](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableTimelineVirtualization [...]
+This mode can be enable by setting the [EnableTimelineVirtualization](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableTimelineVirtualization) property to `true`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
