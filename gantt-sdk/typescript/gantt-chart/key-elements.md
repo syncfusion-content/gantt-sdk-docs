@@ -132,3 +132,5 @@ The `Resources` tab lists all resources assigned to the particular task, as well
 The `Notes` tab displays any notes that have been added for the task.
 
 ![Notes tab](./images/notestab.png)
+
+

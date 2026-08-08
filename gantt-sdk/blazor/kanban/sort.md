@@ -1,13 +1,16 @@
 ---
 layout: post
-title: Sorting in Blazor Kanban Component | Syncfusion®
-description: Checkout and learn here all about sorting in Blazor Kanban component and much more details.
+title: Sorting in Blazor Kanban | Syncfusion
+description: Learn how to sort cards and columns in Syncfusion Blazor Kanban to organize work items by priority, date, or custom criteria.
+keywords: blazor kanban sorting, syncfusion kanban, card ordering, column sorting
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/kanban/sort
 platform: gantt-sdk
-control: Kanban
+control: Sorting - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# How to Sort Cards in the Blazor Kanban Component
+# Sorting Cards and Columns by Priority in Blazor Kanban
 
 The [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban-board) provides built-in support to arrange the cards in their columns based on the JSON data order and drop the cards in the columns based on the dropped clone.
 
@@ -42,27 +45,27 @@ N> By default, the `SortBy` property is `DataSourceOrder`.
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
+        public string? Id { get; set; }
         public int ListId { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Type { get; set; }
-        public string Priority { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Type { get; set; }
+        public string? Priority { get; set; }
         public List<string> CardTags { get; set; }
-        public string Tags { get; set; }
+        public string? Tags { get; set; }
         public double Estimate { get; set; }
-        public string Assignee { get; set; }
+        public string? Assignee { get; set; }
         public int RankId { get; set; }
-        public string Color { get; set; }
-        public string Value { get; set; }
-        public string OrderID { get; set; }
-        public string Size { get; set; }
-        public string ImageURL { get; set; }
-        public string Description { get; set; }
-        public string Category { get; set; }
-        public string Price { get; set; }
-        public string AssigneeKey { get; set; }
+        public string? Color { get; set; }
+        public string? Value { get; set; }
+        public string? OrderID { get; set; }
+        public string? Size { get; set; }
+        public string? ImageURL { get; set; }
+        public string? Description { get; set; }
+        public string? Category { get; set; }
+        public string? Price { get; set; }
+        public string? AssigneeKey { get; set; }
         public List<string> ClassName { get; set; }
     }
 
@@ -89,7 +92,7 @@ N> By default, the `SortBy` property is `DataSourceOrder`.
 
 SortBy `Index` property must require datasource `Field` mapping. In this behavior, cards are loaded based on mapping `Field` values, and cards are dropped based on the dropped clone.
 
-Cards are placed in a particular position in the columns where you can drop the cards by specifying the `Field` property, which is mapped from the data source. This property allows the users to drop the cards in the Kanban board where the dropped clone is created exactly. It is also helpful to render the cards based on the `Field` property value.
+Cards can be placed at a specific position within columns by specifying the  `Field` property, which is mapped from the data source. This property allows the users to drop the cards in the Kanban board where the dropped clone is created exactly. It is also helpful to render the cards based on the `Field` property value.
 
 N> The `Field` property mapping key value must be in `number` format.
 
@@ -148,27 +151,27 @@ For Example,
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
+        public string? Id { get; set; }
         public int ListId { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Type { get; set; }
-        public string Priority { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Type { get; set; }
+        public string? Priority { get; set; }
         public List<string> CardTags { get; set; }
-        public string Tags { get; set; }
+        public string? Tags { get; set; }
         public double Estimate { get; set; }
-        public string Assignee { get; set; }
+        public string? Assignee { get; set; }
         public int RankId { get; set; }
-        public string Color { get; set; }
-        public string Value { get; set; }
-        public string OrderID { get; set; }
-        public string Size { get; set; }
-        public string ImageURL { get; set; }
-        public string Description { get; set; }
-        public string Category { get; set; }
-        public string Price { get; set; }
-        public string AssigneeKey { get; set; }
+        public string? Color { get; set; }
+        public string? Value { get; set; }
+        public string? OrderID { get; set; }
+        public string? Size { get; set; }
+        public string? ImageURL { get; set; }
+        public string? Description { get; set; }
+        public string? Category { get; set; }
+        public string? Price { get; set; }
+        public string? AssigneeKey { get; set; }
         public List<string> ClassName { get; set; }
     }
 
@@ -213,27 +216,27 @@ The SortBy `Custom` property must require datasource `Field` mapping. In this be
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
+        public string? Id { get; set; }
         public int ListId { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Type { get; set; }
-        public string Priority { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Type { get; set; }
+        public string? Priority { get; set; }
         public List<string> CardTags { get; set; }
-        public string Tags { get; set; }
+        public string? Tags { get; set; }
         public double Estimate { get; set; }
-        public string Assignee { get; set; }
+        public string? Assignee { get; set; }
         public int RankId { get; set; }
-        public string Color { get; set; }
-        public string Value { get; set; }
-        public string OrderID { get; set; }
-        public string Size { get; set; }
-        public string ImageURL { get; set; }
-        public string Description { get; set; }
-        public string Category { get; set; }
-        public string Price { get; set; }
-        public string AssigneeKey { get; set; }
+        public string? Color { get; set; }
+        public string? Value { get; set; }
+        public string? OrderID { get; set; }
+        public string? Size { get; set; }
+        public string? ImageURL { get; set; }
+        public string? Description { get; set; }
+        public string? Category { get; set; }
+        public string? Price { get; set; }
+        public string? AssigneeKey { get; set; }
         public List<string> ClassName { get; set; }
     }
 
@@ -282,27 +285,27 @@ In the following sample, cards are aligned in `Descending` order.
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
+        public string? Id { get; set; }
         public int ListId { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Type { get; set; }
-        public string Priority { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Type { get; set; }
+        public string? Priority { get; set; }
         public List<string> CardTags { get; set; }
-        public string Tags { get; set; }
+        public string? Tags { get; set; }
         public double Estimate { get; set; }
-        public string Assignee { get; set; }
+        public string? Assignee { get; set; }
         public int RankId { get; set; }
-        public string Color { get; set; }
-        public string Value { get; set; }
-        public string OrderID { get; set; }
-        public string Size { get; set; }
-        public string ImageURL { get; set; }
-        public string Description { get; set; }
-        public string Category { get; set; }
-        public string Price { get; set; }
-        public string AssigneeKey { get; set; }
+        public string? Color { get; set; }
+        public string? Value { get; set; }
+        public string? OrderID { get; set; }
+        public string? Size { get; set; }
+        public string? ImageURL { get; set; }
+        public string? Description { get; set; }
+        public string? Category { get; set; }
+        public string? Price { get; set; }
+        public string? AssigneeKey { get; set; }
         public List<string> ClassName { get; set; }
     }
 

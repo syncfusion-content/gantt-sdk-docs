@@ -341,3 +341,5 @@ Removes the timezone offset, returning a UTC-equivalent date.
 - [How to configure task dependencies?](../../gantt/task-dependency)
 - [How to customize taskbars?](../../gantt/taskbar)
 - [How to configure task constraints?](../../gantt/task-constraints)
+
+

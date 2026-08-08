@@ -176,3 +176,4 @@ The following example demonstrates non-overlapping multi taskbar:
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/resource-view-taskbaroverlap-cs1" %}
 {% endif %}
+

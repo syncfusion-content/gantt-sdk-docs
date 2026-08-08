@@ -3,7 +3,7 @@ layout: post
 title: Virtual Scrolling in JavaScript Gantt Chart | Syncfusion
 description: Learn how to configure virtual scrolling in Syncfusion JavaScript Gantt Chart for high-performance rendering of large datasets and wide timelines.
 keywords: javascript gantt virtual scroll, large data, performance, virtual rendering, high performance, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/scrolling/virtual-scrolling
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/scrolling/virtual-scroll
 platform: gantt-sdk
 control: Virtual Scrolling - Gantt Chart
 documentation: ug

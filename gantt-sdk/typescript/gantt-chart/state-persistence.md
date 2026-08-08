@@ -242,3 +242,4 @@ To persist these settings, clone the [Columns](../../api/gantt#columns) property
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/column-persist-cs1" %}
 {% endif %}
+

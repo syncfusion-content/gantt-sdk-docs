@@ -194,3 +194,5 @@ To hide a column in the Gantt Chart's resource view, handle the [actionBegin](..
 - [How to configure resources?](../gantt/resources)
 - [How to enable multi taskbar?](../gantt/multi-taskbar)
 - [How to customize taskbars?](../gantt/taskbar)
+
+

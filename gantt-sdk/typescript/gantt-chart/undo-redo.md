@@ -225,3 +225,4 @@ The following code example demonstrates how to clear the undo and redo collectio
 - [How to configure task editing?](./managing-tasks/task-bar-editing)
 - [How to manage task dependencies?](./task-dependency)
 - [How to configure critical path?](./critical-path)
+

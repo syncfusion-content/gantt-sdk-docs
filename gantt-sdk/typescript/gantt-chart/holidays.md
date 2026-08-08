@@ -122,3 +122,5 @@ This code styles holidays with distinct colors and labels, enhancing timeline re
 - [How to configure event markers?](../../gantt/event-markers)
 - [How to manage task dependencies?](../../gantt/task-dependency)
 - [How to enable critical path analysis?](../../gantt/critical-path)
+
+

@@ -103,3 +103,5 @@ The following example demonstrates custom styling for critical tasks using the `
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/customizeCriticalPath-cs1" %}
 {% endif %}
+
+

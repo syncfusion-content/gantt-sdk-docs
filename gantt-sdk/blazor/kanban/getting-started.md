@@ -1,15 +1,18 @@
 ---
 layout: post
-title: Getting Started with Blazor Kanban Component | Syncfusion®
-description: Checkout and learn about getting started with Blazor Kanban component in Blazor WebAssembly Application.
+title: Getting Started in Blazor Kanban | Syncfusion
+description: Learn how to start using Syncfusion Blazor Kanban with step-by-step setup instructions for Blazor WebAssembly and essential component features.
+keywords: blazor kanban getting started, syncfusion kanban, install component, blazor wasm
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/kanban/getting-started
 platform: gantt-sdk
-control: Kanban
+control: Getting Started - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
 <!-- markdownlint-disable MD024 -->
 
-# Getting Started with Blazor Kanban Component
+# Getting Started with Blazor Kanban
 
 This guide briefly explains about how to include [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban-board) component in a Blazor WebAssembly App using [Visual Studio](https://visualstudio.microsoft.com/vs/), [Visual Studio Code](https://code.visualstudio.com/), and the [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/).
 
@@ -90,7 +93,7 @@ N> All Syncfusion Blazor packages are available on [nuget.org](https://www.nuget
 
 ## Prerequisites
 
-Install the latest version of [.NET SDK](https://dotnet.microsoft.com/en-us/download). If the .NET SDK is already installed, determine the installed version by running the following command in a command prompt (Windows), terminal (macOS), or command shell (Linux).
+Install the latest version of [.NET SDK](https://dotnet.microsoft.com/en-us/download). If the .NET SDK is already installed, determine the installed version by running the following command in a command prompt (Windows), terminal (macOS) or command shell (Linux).
 
 {% tabs %}
 {% highlight c# tabtitle=".NET CLI" %}
@@ -225,7 +228,7 @@ Add the Blazor Kanban component in the **~/Pages/Home.razor** file.
     ```
 2. The application will start and display in your default web browser.
 
-N> You can also explore our [Blazor Kanban Board example](https://blazor.syncfusion.com/demos/kanban/overview?theme=bootstrap5) that shows you how to render and configure the Kanban Board.
+N> Explore our [Blazor Kanban Board example](https://blazor.syncfusion.com/demos/kanban/overview?theme=bootstrap5) that shows how to render and configure the Kanban Board.
 
 ## See also
 

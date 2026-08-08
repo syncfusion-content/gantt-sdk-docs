@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Sorting in Angular Gantt Chart Component | Syncfusion
-description: Learn here all about Sorting in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Sorting in Angular Gantt Chart | Multi-Sort | Syncfusion
+description: Learn how to enable sorting to arrange task data in ascending or descending order across multiple columns.
+keywords: angular gantt sorting, allowsorting, sortsettings, multi-column sort, ascending, descending, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/sorting
 platform: gantt-sdk
-control: Sorting 
+control: Sorting - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Sorting in Angular Gantt Chart Component
+# Column Sorting with Multi-Sort Support in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component provides sorting functionality to arrange task data in ascending or descending order based on column values.
 

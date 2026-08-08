@@ -33,3 +33,5 @@ The modules that are available in Gantt are as follows.
 | [CriticalPath](https://ej2.syncfusion.com/documentation/api/gantt#criticalpathmodule) | Inject this module to use critical path feature.|
 
 These modules should be injected into the Gantt using the **Gantt.Inject** method.
+
+

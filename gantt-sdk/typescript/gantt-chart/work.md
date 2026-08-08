@@ -91,3 +91,4 @@ Following table explains how the work, duration and resource unit fields will ge
 >Note
 1. Fixed Unit is the default taskType in Gantt. 
 2. The above calculations are not applicable for Milestones.
+

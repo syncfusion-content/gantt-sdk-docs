@@ -150,3 +150,5 @@ The following example customizes the splitter’s background and hides the resiz
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/splitter-events" %}
 {% endif %}
+
+

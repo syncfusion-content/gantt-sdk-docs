@@ -331,3 +331,5 @@ The following example demonstrates how to integrate an [AutoComplete](../../auto
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/customToolbarItems-cs1" %}
 {% endif %}
+
+

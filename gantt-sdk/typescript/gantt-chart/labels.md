@@ -368,3 +368,4 @@ gantt.appendTo('#Gantt');
 - [How to customize taskbars?](../gantt/taskbar)
 - [How to manage task dependencies?](../gantt/task-dependency)
 - [How to configure critical path?](../gantt/critical-path)
+

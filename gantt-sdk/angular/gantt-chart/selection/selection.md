@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Selection in Angular Gantt Chart component | Syncfusion
-description: Learn here all about Selection in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Selection in Angular Gantt Chart | Highlight Rows | Syncfusion
+description: Learn how to enable selection in the Syncfusion Angular Gantt Chart to highlight rows or cells, improve user interaction, and manage task data efficiently.
+keywords: angular gantt selection, allowselection, row selection, cell selection, keyboard, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/selection/selection
 platform: gantt-sdk
-control: Selection 
+control: Selection - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Selection in Angular Gantt Chart component
+# Enabling and Configuring Selection Behavior in Angular Gantt Chart
 
 The Selection feature provides the ability to highlight a row or cell in the Gantt Chart component. Selection can be performed using arrow keys or mouse clicks.
 

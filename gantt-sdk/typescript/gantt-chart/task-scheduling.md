@@ -360,3 +360,5 @@ Duration units for the tasks can also be defined along with the duration values,
 
 >NOTE:
 The edit type of the duration column in Gantt is string, to support editing the duration field along with duration units.
+
+
