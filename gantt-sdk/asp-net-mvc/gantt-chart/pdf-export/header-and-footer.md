@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Adding Headers and Footers to PDF Exports in ASP.NET MVC Gantt Chart
 
-PDF export provides an option to specify and customize text, page number, line and image in header and footer of exported PDF document by using [pdfExportProperties](https://ej2.syncfusion.com/documentation/api/gantt/pdfExportProperties/#properties).
+PDF export provides an option to specify and customize text, page number, line and image in header and footer of exported PDF document by using [pdfExportProperties](https://ej2.syncfusion.com/documentation/api/gantt/pdfExportProperties#properties).
 
 ## Write a text in header and footer
 

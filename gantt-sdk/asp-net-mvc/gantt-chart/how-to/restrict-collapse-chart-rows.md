@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Restrict Collapse Chart Rows in ASP.NET MVC Gantt Chart
 
-Restriction of collapsing the records when clicking on gantt chart rows can be performed by using the [`collapsing`](../../api/gantt/#collapsing) event.
+Restriction of collapsing the records when clicking on gantt chart rows can be performed by using the [`collapsing`](../../api/gantt#collapsing) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

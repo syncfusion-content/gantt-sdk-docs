@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Checkbox Columns in ASP.NET MVC Gantt Chart
 
-To render boolean values as checkbox in columns, you need to set [`displayAsCheckBox`](../api/gantt/column/#displayascheckbox) property as **true**.
+To render boolean values as checkbox in columns, you need to set [`displayAsCheckBox`](../api/gantt/column#displayascheckbox) property as **true**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

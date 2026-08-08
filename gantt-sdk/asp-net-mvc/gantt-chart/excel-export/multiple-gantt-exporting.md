@@ -103,7 +103,7 @@ In Gantt, the Excel export provides an option to export hidden columns by defini
 
 ### Show or hide columns on exported Excel
 
-In Gantt, while exporting, you can show a hidden column or hide a visible column using the [`ToolbarClick`](https://help.syncfusion.com/cr/cref_files/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~ToolbarClick.html) and [`ExcelExportComplete`](https://help.syncfusion.com/cr/cref_files/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~ExcelExportComplete.html) events.
+In Gantt, while exporting, you can show a hidden column or hide a visible column using the [`ToolbarClick`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ToolbarClick.html) and [`ExcelExportComplete`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ExcelExportComplete.html) events.
 
 In the `ToolbarClick` event, using the `args.item.id` property, you can show or hide columns by setting the `Columns.Visible` property to `true` or `false` respectively.
 
@@ -134,7 +134,7 @@ Similarly, in the excelExportComplete event, you can revert the columns visibili
 
 ### Cell formatting during export
 
-In Gantt, you can customize the TreeGrid cells in the exported document using the [`ExcelQueryCellInfo`](https://help.syncfusion.com/cr/cref_files/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~ExcelQueryCellInfo.html) event. In this event, you can format the TreeGrid cells of exported Excel and CSV documents based on the required condition.
+In Gantt, you can customize the TreeGrid cells in the exported document using the [`ExcelQueryCellInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ExcelQueryCellInfo.html) event. In this event, you can format the TreeGrid cells of exported Excel and CSV documents based on the required condition.
 
 In the following sample, the background color has been customized for `TaskId` column in the exported Excel using the `args.style` and `backColor` properties.
 

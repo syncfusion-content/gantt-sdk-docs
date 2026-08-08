@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Enabling and Configuring Selection Behavior in ASP.NET MVC Gantt Chart
 
-Selection provides an option to highlight a row or a cell. It can be done using arrow keys or by scrolling down the mouse. To disable selection in the Gantt control, set the [`AllowSelection`](https://help.syncfusion.com/cr/cref_files/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~AllowSelection.html) to false.
+Selection provides an option to highlight a row or a cell. It can be done using arrow keys or by scrolling down the mouse. To disable selection in the Gantt control, set the [`AllowSelection`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowSelection.html) to false.
 
 The Gantt control supports two types of selection that can be set by using the [`SelectionSettings.Type`](https://help.syncfusion.com/cr/cref_files/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttSelectionSettings~Type.html) property. They are:
 
@@ -139,7 +139,7 @@ You can clear the selected cells and selected rows by using a method called `cle
 
 ## Get selected row indexes and records
 
-You can get the selected row indexes by using the [`getSelectedRowIndexes`](../api/gantt/#getselectedrowindexes) method. And by using [`getSelectedRecords`](../api/gantt/#getSelectedRecords) method, you can get the selected record details.
+You can get the selected row indexes by using the [`getSelectedRowIndexes`](../api/gantt#getselectedrowindexes) method. And by using [`getSelectedRecords`](../api/gantt#getSelectedRecords) method, you can get the selected record details.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -166,7 +166,7 @@ You can get the selected row indexes by using the [`getSelectedRowIndexes`](../a
 
 ## Multiple selection based on condition
 
-You can select multiple rows based on condition by using the [`selectRows`](../api/grid/#selectrows) method.
+You can select multiple rows based on condition by using the [`selectRows`](../api/grid#selectrows) method.
 
 In the following code, the rows which contains `TaskId` value as 3 and 4 are selected at initial rendering.
 
@@ -199,8 +199,8 @@ In the following code, the rows which contains `TaskId` value as 3 and 4 are sel
 
 The touch interaction feature in the Gantt component allows you to easily interact with the Gantt chart on touch screen devices. This feature is particularly useful for enhancing usability on mobile devices and tablets, making it easier to navigate and interact with the Gantt chart's content using touch gestures.
 
-[`Single Row Selection`](selection/#selection-mode) : When you tap on a row using a touch screen, the tapped row is automatically selected. This offers a straightforward way to select single rows with a touch interface.
+[`Single Row Selection`](selection#selection-mode) : When you tap on a row using a touch screen, the tapped row is automatically selected. This offers a straightforward way to select single rows with a touch interface.
 
-[`Multiple Row Selection`](selection/#multiple-row-selection) : To select multiple rows, you can utilize the multi-row selection feature. When you tap on a row, a popup is displayed, indicating the option for multi-row selection. Tap on the popup, and then proceed to tap on the desired rows you want to select. This allows you to select and interact with multiple rows simultaneously, as shown in the following image:
+[`Multiple Row Selection`](selection#multiple-row-selection) : To select multiple rows, you can utilize the multi-row selection feature. When you tap on a row, a popup is displayed, indicating the option for multi-row selection. Tap on the popup, and then proceed to tap on the desired rows you want to select. This allows you to select and interact with multiple rows simultaneously, as shown in the following image:
 
 ![Multiple selection](../images/multiple-selection.PNG)

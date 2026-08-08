@@ -261,7 +261,7 @@ In the example below:
 
 - The `dependency` tab enables [sorting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowSorting) and [toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) options.
 - The `segments` tab enables `sorting` and `toolbar` options and includes a new column `newData` defined with a specified [field](https://help.syncfusion.com/cr/aspnetmvc-js2#Syncfusion_EJ2_Grids_GridColumn_Field).
-- The `resources` tab defines a new column `Segment Task` with specific properties such as `field`, [width](https://ej2.syncfusion.com/vue/documentation/api/grid/columnModel/#width) and [headerText](https://help.syncfusion.com/cr/aspnetmvc-js2#Syncfusion_EJ2_Grids_GridColumn_HeaderText).
+- The `resources` tab defines a new column `Segment Task` with specific properties such as `field`, [width](https://ej2.syncfusion.com/vue/documentation/api/grid/columnModel#width) and [headerText](https://help.syncfusion.com/cr/aspnetmvc-js2#Syncfusion_EJ2_Grids_GridColumn_HeaderText).
   These customizations are applied to both `addDialogFields` and `editDialogFields` settings.
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -326,18 +326,18 @@ The Gantt control editing actions can be achieved using the double tap and tap a
 
 The following table describes different types of editing modes available in Gantt.
 
-| Action                                               | Description                                                                                                                                                                                                                                |
-| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [`Cell editing`](managing-tasks/#cell-editing)       | To perform `double tap` on a specific cell, initiate the cell to be in edit state.                                                                                                                                                         |
-| [`Dialog editing`](managing-tasks/#dialog-editing)   | To perform `double tap` on a specific row, initiate the edit dialog to be opened.                                                                                                                                                          |
-| [`Taskbar editing`](managing-tasks/#taskbar-editing) | Taskbar editing action is initiated using the `tap` action on the taskbar. <br> **Parent taskbar** : Once you tap on the parent taskbar, it will be changed to editing state. Perform only dragging action on parent taskbar editing. <br> |
+| Action                                              | Description                                                                                                                                                                                                                                |
+| --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [`Cell editing`](managing-tasks#cell-editing)       | To perform `double tap` on a specific cell, initiate the cell to be in edit state.                                                                                                                                                         |
+| [`Dialog editing`](managing-tasks#dialog-editing)   | To perform `double tap` on a specific row, initiate the edit dialog to be opened.                                                                                                                                                          |
+| [`Taskbar editing`](managing-tasks#taskbar-editing) | Taskbar editing action is initiated using the `tap` action on the taskbar. <br> **Parent taskbar** : Once you tap on the parent taskbar, it will be changed to editing state. Perform only dragging action on parent taskbar editing. <br> |
 
 ![Alt text](../images/editing-parent.PNG) <br> **Child taskbar** : Once you tap the child taskbar, it will be changed to editing state. <br>
 ![Alt text](../images/editing-state.PNG) <br> **Dragging taskbar** : To drag a taskbar to the left or right in editing state. <br> <br> **Resizing taskbar** : To resize a taskbar, drag the left/right resize icon. <br> <br> **Progress resizing** : To change the progress, drag the progress resize icon to the left or right direction.|
 
 ### Task dependency editing
 
-You can `tap` the left/right connector point to initiate [`task dependencies`](managing-tasks/#task-dependencies) edit mode and again tap another taskbar to establish the dependency line between two taskbars.
+You can `tap` the left/right connector point to initiate [`task dependencies`](managing-tasks#task-dependencies) edit mode and again tap another taskbar to establish the dependency line between two taskbars.
 
 The following table explains the taskbar state in dependency edit mode.
 

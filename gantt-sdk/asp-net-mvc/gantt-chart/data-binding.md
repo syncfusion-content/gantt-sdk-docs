@@ -568,7 +568,7 @@ The following code example describes handling of Load on demand at server end.
 
 ### Sending additional parameters to the server
 
-We can pass additional parameters using [`addParams`](../api/data/query/#addparams) method of [`Query`](../api/data/query) class. In server side we have inherited and shown the additional parameter value in Syncfusion<sup style="font-size:70%">&reg;</sup> DataManager class itself. We pass an additional parameter in load time using [`load`](../api/gantt#load) event. We can also pass additional parameter to the CRUD model. Check the below code snippet to send additional parameter to Gantt.
+We can pass additional parameters using [`addParams`](../api/data/query#addparams) method of [`Query`](../api/data/query) class. In server side we have inherited and shown the additional parameter value in Syncfusion<sup style="font-size:70%">&reg;</sup> DataManager class itself. We pass an additional parameter in load time using [`load`](../api/gantt#load) event. We can also pass additional parameter to the CRUD model. Check the below code snippet to send additional parameter to Gantt.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -624,7 +624,7 @@ The argument passed to the `actionFailure` event contains the error details retu
 
 #### Binding with Fetch
 
-You can use Gantt [`dataSource`](../api/gantt#datasource) property to bind the data source to Gantt from external Fetch request. In the below code we have fetched the data source from the server with the help of Fetch request and provided that to `dataSource` property by using [`onSuccess`](../api/base/ajax/#onsuccess) event of the Fetch.
+You can use Gantt [`dataSource`](../api/gantt#datasource) property to bind the data source to Gantt from external Fetch request. In the below code we have fetched the data source from the server with the help of Fetch request and provided that to `dataSource` property by using [`onSuccess`](../api/base/ajax#onsuccess) event of the Fetch.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -697,7 +697,7 @@ List<GanttSegment>
 
 ### Self-referential
 
-We can also define segment details as a flat data and this collection can be mapped by using [`segmentData`](../api/gantt/#segmentData) property. The segment id field of this collection is mapped by using the [`taskFields.SegmentId`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) property.
+We can also define segment details as a flat data and this collection can be mapped by using [`segmentData`](../api/gantt#segmentData) property. The segment id field of this collection is mapped by using the [`taskFields.SegmentId`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) property.
 
 ```html
 GanttSegment Record1 = new GanttSegment() { segmentId = 2, Duration = 2,

@@ -118,7 +118,7 @@ The following list of properties and its values are used in the Gantt.
 
 ### Loading translations
 
-To load translation object in an application use [`load`](https://ej2.syncfusion.com/documentation/api/base/l10n/#load) function of [`L10n`](https://ej2.syncfusion.com/documentation/api/base/l10n) class.
+To load translation object in an application use [`load`](https://ej2.syncfusion.com/documentation/api/base/l10n#load) function of [`L10n`](https://ej2.syncfusion.com/documentation/api/base/l10n) class.
 
 The below example demonstrates the Gantt in **Deutsch** culture.
 
