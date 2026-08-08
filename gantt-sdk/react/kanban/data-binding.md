@@ -57,7 +57,7 @@ To bind local JSON data to the Kanban, you can simply assign a JavaScript object
 
 ## Remote data
 
-To bind remote data to kanban component, assign service data as an instance of [DataManager](https://ej2.syncfusion.com/react/documentation/data/) to the [dataSource](https://ej2.syncfusion.com/react/documentation/api/kanban#datasource) property. To interact with remote data source, provide the endpoint **url**.
+To bind remote data to kanban component, assign service data as an instance of [DataManager](https://ej2.syncfusion.com/react/documentation/data) to the [dataSource](https://ej2.syncfusion.com/react/documentation/api/kanban#datasource) property. To interact with remote data source, provide the endpoint **url**.
 
 `[Class-component]`
 
@@ -91,11 +91,11 @@ To bind remote data to kanban component, assign service data as an instance of [
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/remote-data-cs2" %}
 
-> By default, [DataManager](https://ej2.syncfusion.com/react/documentation/data/) uses **ODataAdaptor** for remote data-binding.
+> By default, [DataManager](https://ej2.syncfusion.com/react/documentation/data) uses **ODataAdaptor** for remote data-binding.
 
 ### OData services
 
-[OData](http://www.odata.org/documentation/odata-version-3-0/) is a standardized protocol for creating and consuming data. You can retrieve data from OData service using the DataManager. Refer to the following code example for remote Data binding using OData service.
+[OData](http://www.odata.org/documentation/odata-version-3-0) is a standardized protocol for creating and consuming data. You can retrieve data from OData service using the DataManager. Refer to the following code example for remote Data binding using OData service.
 
 `[Class-component]`
 
@@ -131,7 +131,7 @@ To bind remote data to kanban component, assign service data as an instance of [
 
 ### OData v4 services
 
-The ODataV4 is an improved version of OData protocols, and the [DataManager](https://ej2.syncfusion.com/react/documentation/data/) can also retrieve and consume OData v4 services. For more details on OData v4 services, refer to the [odata documentation](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). To bind OData v4 service, use the **ODataV4Adaptor**.
+The ODataV4 is an improved version of OData protocols, and the [DataManager](https://ej2.syncfusion.com/react/documentation/data) can also retrieve and consume OData v4 services. For more details on OData v4 services, refer to the [odata documentation](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). To bind OData v4 service, use the **ODataV4Adaptor**.
 
 `[Class-component]`
 

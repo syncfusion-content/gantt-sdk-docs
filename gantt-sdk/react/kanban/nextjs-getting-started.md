@@ -16,19 +16,20 @@ This section provides a step-by-step guide for setting up a Next.js application 
 
 ## What is Next.js?
 
-[Next.js](https://nextjs.org/) is a React framework that makes it easy to build fast, SEO-friendly, and user-friendly web applications. It provides features such as server-side rendering, automatic code splitting, routing, and API routes, making it an excellent choice for building modern web applications.
+[Next.js](https://nextjs.org) is a React framework that makes it easy to build fast, SEO-friendly, and user-friendly web applications. It provides features such as server-side rendering, automatic code splitting, routing, and API routes, making it an excellent choice for building modern web applications.
 
 ## Prerequisites
 
 Before getting started with the Next.js application, ensure the following prerequisites are met:
 
-* [Node.js 18.17](https://nodejs.org/en) or later.
+- [Node.js 18.17](https://nodejs.org/en) or later.
 
-* The application is compatible with macOS, Windows, and Linux operating systems.
+- The application is compatible with macOS, Windows, and Linux operating systems.
 
 ## Overview
 
 The Kanban component is composed of:
+
 - **Cards**: tasks displayed on the board; mapped from a `dataSource` via `cardSettings`.
 - **Columns**: workflow stages; defined using `keyField`.
 - **Swimlanes**: optional grouping of cards; configured with `swimlaneSettings`.

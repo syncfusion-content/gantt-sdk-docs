@@ -43,7 +43,7 @@ The accessibility compliance for the Kanban component is outlined below.
 
 ## WAI-ARIA attributes
 
-The Kanban component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns to meet the accessibility. The following ARIA attributes are used in the Kanban component:
+The Kanban component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert) patterns to meet the accessibility. The following ARIA attributes are used in the Kanban component:
 
 | Attributes             | Purpose                                                                                                                                                                                                           |
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
