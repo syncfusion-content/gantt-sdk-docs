@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Handle Header Double-Click in React Kanban
 
-You can bind the header double click event by using the [dataBound](https://ej2.syncfusion.com/react/documentation/api/kanban/#dataBound) event at the initial rendering. You can get the column header text when you double click on the headers.
+You can bind the header double click event by using the [dataBound](https://ej2.syncfusion.com/react/documentation/api/kanban#dataBound) event at the initial rendering. You can get the column header text when you double click on the headers.
 
 `[Class-component]`
 
@@ -27,7 +27,7 @@ You can bind the header double click event by using the [dataBound](https://ej2.
 {% include code-snippet/gantt-sdk/react/kanban/auto-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/auto-cs7" %}
 
 `[Functional-component]`
@@ -43,5 +43,5 @@ You can bind the header double click event by using the [dataBound](https://ej2.
 {% include code-snippet/gantt-sdk/react/kanban/auto-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/auto-cs8" %}

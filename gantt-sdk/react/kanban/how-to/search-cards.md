@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Search Cards in React Kanban
 
-The Kanban component enables searching cards in the `dataSource`. You can search the cards in Kanban by using the [query](https://ej2.syncfusion.com/react/documentation/api/kanban/#query) property.
+The Kanban component enables searching cards in the `dataSource`. You can search the cards in Kanban by using the [query](https://ej2.syncfusion.com/react/documentation/api/kanban#query) property.
 
 In the following sample, the searching operation starts as soon as you start typing characters in the external text box. It will search the cards based on the `Id` and `Summary` using the `search` query with `contains` operator.
 
@@ -29,7 +29,7 @@ In the following sample, the searching operation starts as soon as you start typ
 {% include code-snippet/gantt-sdk/react/kanban/auto-cs9/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/auto-cs9" %}
 
 `[Functional-component]`
@@ -45,5 +45,5 @@ In the following sample, the searching operation starts as soon as you start typ
 {% include code-snippet/gantt-sdk/react/kanban/auto-cs10/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/auto-cs10" %}

@@ -12,13 +12,13 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Tooltip and Hover Information in React Kanban
 
-The tooltip is used to show the card information when the cursor hover over the card elements using the [enableTooltip](https://ej2.syncfusion.com/react/documentation/api/kanban/#enabletooltip) property. Tooltip content is dynamically set based on hovering over the card elements.
+The tooltip is used to show the card information when the cursor hover over the card elements using the [enableTooltip](https://ej2.syncfusion.com/react/documentation/api/kanban#enabletooltip) property. Tooltip content is dynamically set based on hovering over the card elements.
 
 > If you wish to show tooltip on Kanban board custom elements, you need to add `e-tooltip-text` class name of a particular element.
 
 ## Tooltip template
 
-You can customize the tooltip content with any HTML or CSS element and styling using the [tooltipTemplate](https://ej2.syncfusion.com/react/documentation/api/kanban/#tooltiptemplate) property. In the following demo, the tooltip is customized with HTML elements.
+You can customize the tooltip content with any HTML or CSS element and styling using the [tooltipTemplate](https://ej2.syncfusion.com/react/documentation/api/kanban#tooltiptemplate) property. In the following demo, the tooltip is customized with HTML elements.
 
 `[Class-component]`
 
@@ -33,7 +33,7 @@ You can customize the tooltip content with any HTML or CSS element and styling u
 {% include code-snippet/gantt-sdk/react/kanban/tooltip-template-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/tooltip-template-cs1" %}
 
 `[Functional-component]`
@@ -49,5 +49,5 @@ You can customize the tooltip content with any HTML or CSS element and styling u
 {% include code-snippet/gantt-sdk/react/kanban/tooltip-template-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/tooltip-template-cs2" %}

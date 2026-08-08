@@ -12,11 +12,11 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Swimlane Grouping in React Kanban
 
-Swimlanes are horizontal categorizations of cards on the Kanban board.  It is used for grouping of cards, which brings transparency to the workflow process.
+Swimlanes are horizontal categorizations of cards on the Kanban board. It is used for grouping of cards, which brings transparency to the workflow process.
 
 ## Render swimlane row
 
-Cards can be grouped based on [keyField](https://ej2.syncfusion.com/react/documentation/api/kanban/#keyfield) and displayed in rows, which are separated by columns. It is mandatory to define the `keyField` that is mapped from the datasource for rendering swimlane rows in the Kanban board.
+Cards can be grouped based on [keyField](https://ej2.syncfusion.com/react/documentation/api/kanban#keyfield) and displayed in rows, which are separated by columns. It is mandatory to define the `keyField` that is mapped from the datasource for rendering swimlane rows in the Kanban board.
 
 `[Class-component]`
 
@@ -31,7 +31,7 @@ Cards can be grouped based on [keyField](https://ej2.syncfusion.com/react/docume
 {% include code-snippet/gantt-sdk/react/kanban/swimlane-key-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/swimlane-key-cs1" %}
 
 `[Functional-component]`
@@ -47,14 +47,14 @@ Cards can be grouped based on [keyField](https://ej2.syncfusion.com/react/docume
 {% include code-snippet/gantt-sdk/react/kanban/swimlane-key-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/swimlane-key-cs2" %}
 
 ## Custom row text
 
 Customize the swimlane row header text by using the `textField` property mapped from datasource.
 
-> It is not mandatory to define the `textField` to [swimlaneSettings](https://ej2.syncfusion.com/react/documentation/api/kanban/#swimlanesettings).It will automatically consider the `keyField` to swimlane row header text.
+> It is not mandatory to define the `textField` to [swimlaneSettings](https://ej2.syncfusion.com/react/documentation/api/kanban#swimlanesettings).It will automatically consider the `keyField` to swimlane row header text.
 > If the mapping `textField` key is not present in the datasource, it will consider the swimlane `keyField` as swimlane row header text.
 
 `[Class-component]`
@@ -70,7 +70,7 @@ Customize the swimlane row header text by using the `textField` property mapped 
 {% include code-snippet/gantt-sdk/react/kanban/swimlane-text-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/swimlane-text-cs1" %}
 
 `[Functional-component]`
@@ -86,7 +86,7 @@ Customize the swimlane row header text by using the `textField` property mapped 
 {% include code-snippet/gantt-sdk/react/kanban/swimlane-text-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/swimlane-text-cs2" %}
 
 ## Template
@@ -106,7 +106,7 @@ You can customize the Kanban swimlane row by using the `template` property, whic
 {% include code-snippet/gantt-sdk/react/kanban/swimlane-template-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/swimlane-template-cs1" %}
 
 `[Functional-component]`
@@ -122,12 +122,12 @@ You can customize the Kanban swimlane row by using the `template` property, whic
 {% include code-snippet/gantt-sdk/react/kanban/swimlane-template-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/swimlane-template-cs2" %}
 
 ## Sorting
 
-Swimlane rows are rendered on descending order when using the [sortBy](https://ej2.syncfusion.com/react/documentation/api/kanban/sortSettingsModel/#sortby) property set to `Descending` order. By default, swimlane rows are rendered by **Ascending** order.
+Swimlane rows are rendered on descending order when using the [sortBy](https://ej2.syncfusion.com/react/documentation/api/kanban/sortSettingsModel#sortby) property set to `Descending` order. By default, swimlane rows are rendered by **Ascending** order.
 
 `[Class-component]`
 
@@ -142,7 +142,7 @@ Swimlane rows are rendered on descending order when using the [sortBy](https://e
 {% include code-snippet/gantt-sdk/react/kanban/swimlane-sort-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/swimlane-sort-cs1" %}
 
 `[Functional-component]`
@@ -158,12 +158,12 @@ Swimlane rows are rendered on descending order when using the [sortBy](https://e
 {% include code-snippet/gantt-sdk/react/kanban/swimlane-sort-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/swimlane-sort-cs2" %}
 
 ## Drag-and-drop
 
-By default, The Kanban does not allow dragging the cards across the swimlane rows. Enabling the [draganddrop](https://ej2.syncfusion.com/react/documentation/api/kanban/#allowdraganddrop) property allows you to drag the cards across the swimlane rows, which is specified inside [swimlaneSettings](https://ej2.syncfusion.com/react/documentation/api/kanban/#swimlanesettings) property.
+By default, The Kanban does not allow dragging the cards across the swimlane rows. Enabling the [draganddrop](https://ej2.syncfusion.com/react/documentation/api/kanban#allowdraganddrop) property allows you to drag the cards across the swimlane rows, which is specified inside [swimlaneSettings](https://ej2.syncfusion.com/react/documentation/api/kanban#swimlanesettings) property.
 
 `[Class-component]`
 
@@ -178,7 +178,7 @@ By default, The Kanban does not allow dragging the cards across the swimlane row
 {% include code-snippet/gantt-sdk/react/kanban/swimlane-drag-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/swimlane-drag-cs1" %}
 
 `[Functional-component]`
@@ -194,12 +194,12 @@ By default, The Kanban does not allow dragging the cards across the swimlane row
 {% include code-snippet/gantt-sdk/react/kanban/swimlane-drag-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/swimlane-drag-cs2" %}
 
 ## Create empty row
 
-You can render the empty swimlane row by enabling the `showEmptyRow` property. If mapping [keyField](https://ej2.syncfusion.com/react/documentation/api/kanban/#keyfield) does not have cards, empty swimlane row will be rendered.
+You can render the empty swimlane row by enabling the `showEmptyRow` property. If mapping [keyField](https://ej2.syncfusion.com/react/documentation/api/kanban#keyfield) does not have cards, empty swimlane row will be rendered.
 
 `[Class-component]`
 
@@ -214,7 +214,7 @@ You can render the empty swimlane row by enabling the `showEmptyRow` property. I
 {% include code-snippet/gantt-sdk/react/kanban/swimlane-empty-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/swimlane-empty-cs1" %}
 
 `[Functional-component]`
@@ -230,7 +230,7 @@ You can render the empty swimlane row by enabling the `showEmptyRow` property. I
 {% include code-snippet/gantt-sdk/react/kanban/swimlane-empty-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/swimlane-empty-cs2" %}
 
 ## Calculate cards count
@@ -254,7 +254,7 @@ In below demo, disabled on `showItemCount` property on rendering swimlane row wi
 {% include code-snippet/gantt-sdk/react/kanban/swimlane-total-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/swimlane-total-cs1" %}
 
 `[Functional-component]`
@@ -270,7 +270,7 @@ In below demo, disabled on `showItemCount` property on rendering swimlane row wi
 {% include code-snippet/gantt-sdk/react/kanban/swimlane-total-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/swimlane-total-cs2" %}
 
 ## Enable frozen rows
@@ -294,7 +294,7 @@ By default, the `enableFrozenRows` property is set as `false`. If you wish to sh
 {% include code-snippet/gantt-sdk/react/kanban/swimlane-enable-frozen-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/swimlane-enable-frozen-cs1" %}
 
 `[Functional-component]`
@@ -310,5 +310,5 @@ By default, the `enableFrozenRows` property is set as `false`. If you wish to sh
 {% include code-snippet/gantt-sdk/react/kanban/swimlane-enable-frozen-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/swimlane-enable-frozen-cs2" %}

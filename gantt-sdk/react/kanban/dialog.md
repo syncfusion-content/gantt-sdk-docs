@@ -12,11 +12,11 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Card Editing and Dialog Management in React Kanban
 
-The Kanban component provides a built-in dialog module for adding, editing, and deleting cards, configured through the [dialogSettings](https://ej2.syncfusion.com/react/documentation/api/kanban/#dialogsettings) property. User can edit a card using the following ways.
+The Kanban component provides a built-in dialog module for adding, editing, and deleting cards, configured through the [dialogSettings](https://ej2.syncfusion.com/react/documentation/api/kanban#dialogsettings) property. User can edit a card using the following ways.
 
-* Built-in dialog module
-* Custom Fields
-* Dialog template
+- Built-in dialog module
+- Custom Fields
+- Dialog template
 
 ## Default Dialog
 
@@ -28,13 +28,13 @@ Double-clicking a card opens the dialog with fields mapped from `cardSettings` a
 
 The dialog displays with the following fields which mapped to dialog fields by default.
 
-Key | Type | Text
------|-----|----
-`cardSettings.headerField` | Input | ID
-`keyField` | DropDown | -
-`cardSettings.contentField`| TextArea | -
-`cardSettings.priority` (If applicable) | Numeric | -
-`swimlaneSettings.keyField` (If applicable) | DropDown | -
+| Key                                         | Type     | Text |
+| ------------------------------------------- | -------- | ---- |
+| `cardSettings.headerField`                  | Input    | ID   |
+| `keyField`                                  | DropDown | -    |
+| `cardSettings.contentField`                 | TextArea | -    |
+| `cardSettings.priority` (If applicable)     | Numeric  | -    |
+| `swimlaneSettings.keyField` (If applicable) | DropDown | -    |
 
 The following sample demonstrates the default dialog for card editing.
 
@@ -51,7 +51,7 @@ The following sample demonstrates the default dialog for card editing.
 {% include code-snippet/gantt-sdk/react/kanban/getting-started-key-field-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/getting-started-key-field-cs1" %}
 
 `[Functional-component]`
@@ -67,19 +67,19 @@ The following sample demonstrates the default dialog for card editing.
 {% include code-snippet/gantt-sdk/react/kanban/getting-started-key-field-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/getting-started-key-field-cs2" %}
 
 ## Custom Fields
 
 Customize dialog fields using the `fields` property in `dialogSettings`. The `key` property maps to the `dataSource` value, and the `type` property specifies the component type. Available types include:
 
-* String
-* Numeric
-* TextArea
-* DropDown
-* TextBox
-* Input
+- String
+- Numeric
+- TextArea
+- DropDown
+- TextBox
+- Input
 
 > If `type` is not defined in the fields, then it renders as the HTML input element in dialog.
 
@@ -98,7 +98,7 @@ The following sample demonstrates custom dialog fields.
 {% include code-snippet/gantt-sdk/react/kanban/custom-dialog-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/custom-dialog-cs1" %}
 
 `[Functional-component]`
@@ -114,7 +114,7 @@ The following sample demonstrates custom dialog fields.
 {% include code-snippet/gantt-sdk/react/kanban/custom-dialog-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/custom-dialog-cs2" %}
 
 ### Custom Fields label
@@ -134,7 +134,7 @@ By default, the fields `key` mapping value is considered as a `label` and you ca
 {% include code-snippet/gantt-sdk/react/kanban/label-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/label-cs1" %}
 
 `[Functional-component]`
@@ -150,7 +150,7 @@ By default, the fields `key` mapping value is considered as a `label` and you ca
 {% include code-snippet/gantt-sdk/react/kanban/label-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/label-cs2" %}
 
 ### Fields Validation
@@ -170,7 +170,7 @@ The dialog fields can be validated while click on the `Save` button. This can be
 {% include code-snippet/gantt-sdk/react/kanban/fields-validation-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/fields-validation-cs1" %}
 
 `[Functional-component]`
@@ -186,7 +186,7 @@ The dialog fields can be validated while click on the `Save` button. This can be
 {% include code-snippet/gantt-sdk/react/kanban/fields-validation-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/fields-validation-cs2" %}
 
 ## Dialog Template
@@ -206,7 +206,7 @@ Using the dialog template, you can render your own dialog by defining the `templ
 {% include code-snippet/gantt-sdk/react/kanban/dialog-template-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/dialog-template-cs1" %}
 
 `[Functional-component]`
@@ -222,12 +222,12 @@ Using the dialog template, you can render your own dialog by defining the `templ
 {% include code-snippet/gantt-sdk/react/kanban/dialog-template-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/dialog-template-cs2" %}
 
 ## Prevent Dialog
 
-Prevent the dialog from opening on card double-click by setting `args.cancel` to `true` in the [dialogOpen](https://ej2.syncfusion.com/react/documentation/api/kanban/#dialogopen) event. The following sample demonstrates preventing dialog opening.
+Prevent the dialog from opening on card double-click by setting `args.cancel` to `true` in the [dialogOpen](https://ej2.syncfusion.com/react/documentation/api/kanban#dialogopen) event. The following sample demonstrates preventing dialog opening.
 
 `[Class-component]`
 
@@ -242,7 +242,7 @@ Prevent the dialog from opening on card double-click by setting `args.cancel` to
 {% include code-snippet/gantt-sdk/react/kanban/prevent-dialog-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/prevent-dialog-cs1" %}
 
 `[Functional-component]`
@@ -258,7 +258,7 @@ Prevent the dialog from opening on card double-click by setting `args.cancel` to
 {% include code-snippet/gantt-sdk/react/kanban/prevent-dialog-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/prevent-dialog-cs2" %}
 
 ## Persisting data in server
@@ -275,10 +275,10 @@ You can use the [UrlAdaptor](https://ej2.syncfusion.com/react/documentation/data
 
 You can map the CRUD operation in Kanban can be mapped to server-side controller actions using the properties `insertUrl`, `removeUrl`, `updateUrl`, and `crudUrl`.
 
-* `insertUrl` – You can perform single insertion operation on server-side.
-* `updateUrl` – You can update single data on server-side.
-* `removeUrl` – You can remove single data on server-side.
-* `crudUrl` – You can perform bulk data operation on server-side.
+- `insertUrl` – You can perform single insertion operation on server-side.
+- `updateUrl` – You can update single data on server-side.
+- `removeUrl` – You can remove single data on server-side.
+- `crudUrl` – You can perform bulk data operation on server-side.
 
 The following code example describes the above behavior.
 
@@ -315,6 +315,7 @@ class App extends React.Component<{}, {}>{
 ReactDOM.render(<App />, document.getElementById('kanban'));
 
 ```
+
 {% endraw %}
 
 `[Functional-component]`
@@ -350,6 +351,7 @@ function App(){
 ReactDOM.render(<App />, document.getElementById('kanban'));
 
 ```
+
 {% endraw %}
 
 The server-side controller code to handle CRUD operations is as follows.
@@ -472,6 +474,7 @@ class App extends React.Component<{}, {}>{
 ReactDOM.render(<App />, document.getElementById('kanban'));
 
 ```
+
 {% endraw %}
 
 `[Functional-component]`
@@ -508,6 +511,7 @@ function App(){
 ReactDOM.render(<App />, document.getElementById('kanban'));
 
 ```
+
 {% endraw %}
 
 ```ts

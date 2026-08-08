@@ -10,11 +10,11 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-#  Modify Columns Programmatically in React Kanban
+# Modify Columns Programmatically in React Kanban
 
-You can dynamically change the Kanban columns by using the [columns](https://ej2.syncfusion.com/react/documentation/api/kanban/#columns) property.
+You can dynamically change the Kanban columns by using the [columns](https://ej2.syncfusion.com/react/documentation/api/kanban#columns) property.
 
-In the below sample, you can dynamically change the [allowToggle](https://ej2.syncfusion.com/react/documentation/api/kanban/columnsModel/#allowtoggle) property at the particular column when you click on the button. You can also change the initially created columns to the new Kanban columns by using the [columns](https://ej2.syncfusion.com/react/documentation/api/kanban/#columns) property when you click on the button.
+In the below sample, you can dynamically change the [allowToggle](https://ej2.syncfusion.com/react/documentation/api/kanban/columnsModel#allowtoggle) property at the particular column when you click on the button. You can also change the initially created columns to the new Kanban columns by using the [columns](https://ej2.syncfusion.com/react/documentation/api/kanban#columns) property when you click on the button.
 
 `[Class-component]`
 
@@ -29,7 +29,7 @@ In the below sample, you can dynamically change the [allowToggle](https://ej2.sy
 {% include code-snippet/gantt-sdk/react/kanban/auto-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/auto-cs3" %}
 
 `[Functional-component]`
@@ -45,5 +45,5 @@ In the below sample, you can dynamically change the [allowToggle](https://ej2.sy
 {% include code-snippet/gantt-sdk/react/kanban/auto-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/auto-cs4" %}

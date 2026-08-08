@@ -176,7 +176,7 @@ export let kanbanData: Object[] = [
 
 {% tabs %}
 {% highlight ts tabtitle="page.tsx" %}
-
+{% raw %}
 'use client'
 import { extend } from '@syncfusion/ej2-base';
 import { KanbanComponent, ColumnsDirective, ColumnDirective } from "@syncfusion/ej2-react-kanban";
@@ -186,7 +186,7 @@ function App() {
     // Clone the data to avoid mutating the original datasource
     const data = extend([], kanbanData, null, true);
     return (<KanbanComponent id="kanban" keyField="Status" dataSource={data} 
-        cardSettings={% raw %}{{ contentField: "Summary", headerField: "Id" }}{% endraw %}>
+        cardSettings={{ contentField: "Summary", headerField: "Id" }}>
         <ColumnsDirective>
           <ColumnDirective headerText="To Do" keyField="Open"/>
           <ColumnDirective headerText="In Progress" keyField="InProgress"/>
@@ -196,7 +196,7 @@ function App() {
     </KanbanComponent>);
 }
 export default App;
-
+{% endraw %}
 {% endhighlight %}
 {% endtabs %}
 
