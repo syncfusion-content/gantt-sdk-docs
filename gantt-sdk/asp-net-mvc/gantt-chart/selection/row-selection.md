@@ -97,7 +97,7 @@ You can select a single row dynamically using the [`selectRow`](https://ej2.sync
 
 ## Multiple row selection
 
-You can select multiple rows by setting the [`SelectionSettings.Type`](https://help.syncfusion.com/cr/cref_files/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttSelectionSettings~Type.html) property to `Multiple`. You can select more than one row by holding down the CTRL key while selecting multiple rows. The following code example explains how to enable multiple selection in Gantt.
+You can select multiple rows by setting the [`SelectionSettings.Type`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttSelectionSettings.html#Syncfusion_EJ2_Gantt_GanttSelectionSettings_Type) property to `Multiple`. You can select more than one row by holding down the CTRL key while selecting multiple rows. The following code example explains how to enable multiple selection in Gantt.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

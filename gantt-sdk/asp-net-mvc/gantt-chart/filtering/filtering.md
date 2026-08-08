@@ -16,7 +16,7 @@ Filtering allows you to view specific or related records based on filter criteri
 
 ## Filter hierarchy modes
 
-The Gantt supports a set of filtering modes with the [`FilterSettings.HierarchyMode`](https://help.syncfusion.com/cr/cref_files/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttFilterSettings~HierarchyMode.html) property. The following are the types of filter hierarchy modes available in the Gantt control:
+The Gantt supports a set of filtering modes with the [`FilterSettings.HierarchyMode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttFilterSettings.html#Syncfusion_EJ2_Gantt_GanttFilterSettings_HierarchyMode) property. The following are the types of filter hierarchy modes available in the Gantt control:
 
 - `Parent`: This is the default filter hierarchy mode in Gantt. The filtered records are displayed with its parent records. If the filtered records do not have any parent record, then only the filtered records will be displayed.
 
@@ -51,7 +51,7 @@ The Gantt supports a set of filtering modes with the [`FilterSettings.HierarchyM
 
 ### Initial filter
 
-To apply the filter at initial rendering, set the filter to `predicate` object in the [`FilterSettings.Columns`](https://help.syncfusion.com/cr/cref_files/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttFilterSettings~Columns.html) property.
+To apply the filter at initial rendering, set the filter to `predicate` object in the [`FilterSettings.Columns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttFilterSettings.html#Syncfusion_EJ2_Gantt_GanttFilterSettings_Columns) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -98,7 +98,7 @@ N> By default, the `FilterSettings.Columns.Operator` value is `equal`
 
 ### Diacritics
 
-By default, the Gantt control ignores the diacritic characters while filtering. To include diacritic characters, set the [`FilterSettings.IgnoreAccent`](https://help.syncfusion.com/cr/cref_files/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttFilterSettings~IgnoreAccent.html) to true.
+By default, the Gantt control ignores the diacritic characters while filtering. To include diacritic characters, set the [`FilterSettings.IgnoreAccent`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttFilterSettings.html#Syncfusion_EJ2_Gantt_GanttFilterSettings_IgnoreAccent) to true.
 
 In the following sample, type **Perform** in the **TaskName** column to filter diacritic characters.
 
