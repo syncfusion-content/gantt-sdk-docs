@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Search Cards in Angular Kanban
 
-The Kanban component enables searching cards in the `dataSource`. You can search the cards in Kanban by using the [query](https://ej2.syncfusion.com/angular/documentation/api/kanban/#query) property.
+The Kanban component enables searching cards in the `dataSource`. You can search the cards in Kanban by using the [query](https://ej2.syncfusion.com/angular/documentation/api/kanban#query) property.
 
 In the following sample, the searching operation starts as soon as you start typing characters in the external text box. It will search the cards based on the `Id` and `Summary` using the `search` query with `contains` operator.
 
@@ -25,5 +25,5 @@ In the following sample, the searching operation starts as soon as you start typ
 {% include code-snippet/gantt-sdk/angular/kanban/search-cards-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/search-cards-cs1" %}

@@ -12,11 +12,11 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Dimensions, Height, and Width Configuration in Angular Kanban
 
-The Kanban dimensions refers to both [height](https://ej2.syncfusion.com/angular/documentation/api/kanban/#height) and [width](https://ej2.syncfusion.com/angular/documentation/api/kanban/#width) of the entire layout and it accepts three types of values.
+The Kanban dimensions refers to both [height](https://ej2.syncfusion.com/angular/documentation/api/kanban#height) and [width](https://ej2.syncfusion.com/angular/documentation/api/kanban#width) of the entire layout and it accepts three types of values.
 
-* Auto
-* Pixel
-* Percentage
+- Auto
+- Pixel
+- Percentage
 
 ## Auto height and width
 
@@ -31,7 +31,7 @@ When `height` and `width` of the Kanban are set to `auto`, it will try as hard a
 {% include code-snippet/gantt-sdk/angular/kanban/auto-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/auto-cs1" %}
 
 ## Height and width in pixel
@@ -47,7 +47,7 @@ The Kanban `height` and `width` will be rendered exactly as per the given pixel 
 {% include code-snippet/gantt-sdk/angular/kanban/pixel-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/pixel-cs1" %}
 
 ## Height and width in percentage
@@ -63,5 +63,5 @@ When `height` and `width` of the Kanban are given in percentage, it will make th
 {% include code-snippet/gantt-sdk/angular/kanban/percentage-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/percentage-cs1" %}
