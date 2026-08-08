@@ -1,13 +1,16 @@
 ---
 layout: post
-title: Getting Started with Blazor Kanban Component in Web App | Syncfusion®
-description: Checkout and learn about the documentation for getting started with Blazor Kanban Component in Blazor Web App.
+title: Getting Started with Web App in Blazor Kanban | Syncfusion
+description: Learn how to add Syncfusion Blazor Kanban to a Blazor Web App and configure the component for modern web projects.
+keywords: blazor kanban web app, syncfusion kanban, blazor web app, getting started
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/kanban/getting-started-with-web-app
 platform: gantt-sdk
-component: Kanban
+control: Getting Started with Web App - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Getting Started with Blazor Kanban Component in Web App
+# Getting Started with Blazor Kanban in Web App
 
 This section briefly explains about how to include the [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban-board) component in your Blazor Web App using [Visual Studio](https://visualstudio.microsoft.com/vs/), [Visual Studio Code](https://code.visualstudio.com/), and the [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/).
 
