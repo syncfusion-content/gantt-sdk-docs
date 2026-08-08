@@ -1,13 +1,16 @@
 ---
 layout: post
-title: WIP Validation in Blazor Kanban Component | Syncfusion®
-description: Checkout and learn about WIP validation in Blazor Kanban component and much more details with configuration options, examples and best practices.
+title: WIP Validation in Blazor Kanban | Syncfusion
+description: Learn how to set work-in-progress limits and validation rules in Syncfusion Blazor Kanban to control flow and avoid overloading columns.
+keywords: blazor kanban validation, syncfusion kanban, work in progress, column limits
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/kanban/validation
 platform: gantt-sdk
-control: Kanban
+control: WIP Validation - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# WIP Validation in Blazor Kanban Component
+# WIP Validation and Work-in-Progress Limits in Blazor Kanban
 
 Work-In-Progress (WIP) validation in the [Blazor Kanban Board](https://www.syncfusion.com/blazor-components/blazor-kanban-board) helps control the number of cards allowed in each column or swimlane cell. This is achieved using the `MinCount` and `MaxCount` properties. When validation fails, the affected column or cell is visually highlighted.
 

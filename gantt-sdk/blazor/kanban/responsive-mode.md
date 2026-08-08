@@ -1,13 +1,16 @@
 ---
 layout: post
-title: Responsive Mode in Blazor Kanban Component | Syncfusion®
-description: Checkout and learn here all about responsive mode in Blazor Kanban component and much more for modern web applications.
+title: Responsive Mode in Blazor Kanban | Syncfusion
+description: Learn how to create adaptive layouts in Syncfusion Blazor Kanban with responsive mode and flexible configuration for desktop and mobile devices.
+keywords: blazor kanban responsive mode, syncfusion kanban, mobile layout, adaptive ui
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/kanban/responsive-mode
 platform: gantt-sdk
-control: Kanban
+control: Responsive Mode - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Responsive Layout in Blazor Kanban Component
+# Responsive Layout and Adaptive Design in Blazor Kanban
 
 The [Blazor Kanban Board](https://www.syncfusion.com/blazor-components/blazor-kanban-board) component supports responsive behavior, automatically adapting its layout based on the width and height of the client’s browser.
 
