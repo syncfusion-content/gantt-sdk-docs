@@ -1,6 +1,6 @@
 ---
 layout: post
-title: New Row Position in ASP.NET MVC Gantt Component | Syncfusiom
+title: New Row Position in ASP.NET MVC Gantt Component | Syncfusion
 description: Learn here all about New Row Position in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: New Row Position
