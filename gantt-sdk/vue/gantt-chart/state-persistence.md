@@ -33,7 +33,7 @@ window.localStorage.setItem('ganttGantt', JSON.stringify(model)); //"ganttGantt"
 
 ```
 
-> You can refer to our [Vue Gantt](https://www.syncfusion.com/vue-ui-components/vue-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Vue Gantt example](https://ej2.syncfusion.com/vue/demos#/tailwind3/gantt/default) to knows how to present and manipulate data.
+> You can refer to our [Vue Gantt](https://www.syncfusion.com/vue-ui-components/vue-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Vue Gantt example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/gantt/overview.html) to knows how to present and manipulate data.
 
 ## Prevent columns from persisting
 
