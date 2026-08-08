@@ -23,7 +23,7 @@ Before you begin, ensure the following tools are installed:
 | Tool                             | Version                             | Purpose                  |
 | -------------------------------- | ----------------------------------- | ------------------------ |
 | [Node.js](https://nodejs.org/en) | 18.x or later (LTS recommended)     | Required by Vite and npm |
-| [npm](https://www.npmjs.com)     | 9.x or later (bundled with Node.js) | Package manager          |
+| npm     | 9.x or later (bundled with Node.js) | Package manager          |
 
 Verify your setup:
 
