@@ -1,13 +1,16 @@
 ---
 layout: post
-title: Card Editing in Blazor Kanban Component | Syncfusion®
-description: Checkout and learn here all the features about card editing in Blazor Kanban component and much more details.
+title: Card Editing in Blazor Kanban | Syncfusion
+description: Learn how to edit cards, use dialogs, and validate inputs in Syncfusion Blazor Kanban to manage task details with ease.
+keywords: blazor kanban card editing, syncfusion kanban, card dialog, task editing
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/kanban/dialog
 platform: gantt-sdk
-control: Kanban
+control: Card Editing - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Card Editing in Blazor Kanban Component
+# Card Editing and Dialog Management in Blazor Kanban
 
 The [Blazor Kanban Board](https://www.syncfusion.com/blazor-components/blazor-kanban-board) provides built-in support to add, edit and delete a card using dialog module. Users can edit cards using the following methods:
 
