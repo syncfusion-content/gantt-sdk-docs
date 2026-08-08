@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Implementing Data Validation and Error Handling in ASP.NET MVC Gantt Chart
+# Data Validation in ASP.NET MVC Gantt Chart
 
 ## Column validation
 

@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Undo and Redo with Action History Management in ASP.NET MVC Gantt Chart
+# Undo and Redo in ASP.NET MVC Gantt Chart
 
 The Undo feature enables users to revert the most recent action performed in the Gantt Chart. It helps undo changes made to tasks, dependencies, or other actions within the Gantt Chart.
 

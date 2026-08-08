@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Configuring Scrolling Behavior and Positioning in ASP.NET MVC Gantt Chart
+# Scrolling behavior in ASP.NET MVC Gantt Chart
 
 The scrollbar will be displayed in the gantt when content exceeds the element [`width`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Width) or [`height`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Height). The vertical and horizontal scrollbars will be displayed based on the following criteria:
 

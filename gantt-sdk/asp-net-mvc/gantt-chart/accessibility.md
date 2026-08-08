@@ -12,14 +12,14 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Accessibility and ARIA Compliance in ASP.NET MVC Gantt Chart
 
-The Gantt component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Gantt component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the Gantt component is outlined below.
 
 | Accessibility Criteria                                                                  | Compatibility                                                                                      |
 | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Support                                       | AA                                                                                                 |
-| [Section 508](https://www.section508.gov/) Support                                      | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes">             |
+| [WCAG 2.2](https://www.w3.org/TR/WCAG22) Support                                        | AA                                                                                                 |
+| [Section 508](https://www.section508.gov) Support                                       | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes">             |
 | Screen Reader Support                                                                   | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
 | Right-To-Left Support                                                                   | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes">             |
 | Color Contrast                                                                          | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes">             |

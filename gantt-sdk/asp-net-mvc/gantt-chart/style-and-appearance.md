@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Style and Appearance with CSS and Theme Support in ASP.NET MVC Gantt Chart
+# Styling and Themes in ASP.NET MVC Gantt Chart
 
 To modify the Gantt Chart appearance, you need to override the default CSS of gantt chart. Find the list of CSS classes and its corresponding section in Gantt Chart. Also, you have an option to create your own custom theme for all the JavaScript controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
 
