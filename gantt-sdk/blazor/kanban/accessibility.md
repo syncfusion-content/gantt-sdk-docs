@@ -1,13 +1,16 @@
 ---
 layout: post
-title: Accessibility in Blazor Kanban Component | Syncfusion®
-description: Checkout and learn here all about the accessibility in Blazor Kanban component and much more details.
+title: Accessibility in Blazor Kanban | WCAG, ARIA | Syncfusion
+description: Learn how to implement accessibility in Syncfusion Blazor Kanban with WCAG 2.2, ARIA labels, keyboard navigation, and Section 508 compliance.
+keywords: blazor kanban accessibility, wcag, aria, section 508, keyboard navigation, screen reader, syncfusion kanban
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/kanban/accessibility
 platform: gantt-sdk
-control: Kanban
+control: Accessibility - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Accessibility in Blazor Kanban Component
+# Accessibility and ARIA Compliance in Blazor Kanban
 
 The [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban-board) component is built in accordance with [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/) specifications, incorporating appropriate roles, states, and properties. It offers full accessibility support for users relying on assistive technologies (AT) or keyboard navigation.
 

@@ -1,13 +1,16 @@
 ---
 layout: post
-title: Cards in Blazor Kanban Component | Syncfusion®
-description: Checkout and learn here all the features about cards in Blazor Kanban component and much more details.
+title: Cards in Blazor Kanban | Syncfusion
+description: Learn how to customize card layout, content, and interactions in Syncfusion Blazor Kanban with practical examples and configuration guidance.
+keywords: blazor kanban cards, syncfusion kanban, task cards, kanban board
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/kanban/cards
 platform: gantt-sdk
-control: Kanban
+control: Cards - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Working with Cards in Blazor Kanban Component
+# Cards Customization and Layout Options in Blazor Kanban
 
 The cards are main elements in the [Blazor Kanban Board](https://www.syncfusion.com/blazor-components/blazor-kanban-board), which represents the task information with header and content. The header and content of a card is fetched from the corresponding mapping fields. The card layout can be customized with template also.
 
