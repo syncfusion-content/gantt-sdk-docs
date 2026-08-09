@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Responsive Mode in ASP.NET Core Kanban Component
-description: Learn here all about Responsive Mode in Syncfusion ASP.NET Core Kanban component of Syncfusion Essential JS 2 and more.
+title: Responsive Design in ASP.NET Core Kanban | Syncfusion
+description: Learn how to create responsive Kanban layouts in Syncfusion ASP.NET Core that adapt to different screen sizes and devices.
+keywords: asp-net-core kanban responsive, syncfusion kanban, responsive design, mobile
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/responsive-mode
 platform: gantt-sdk
-control: Responsive Mode
-publishingplatform: gantt-sdk
+control: Responsive Mode - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
 
-# Responsive mode
+# Responsive Layout and Adaptive Design in ASP.NET Core Kanban
 
 The Kanban component has support for responsive behavior based on the client browser's width and height.
 
