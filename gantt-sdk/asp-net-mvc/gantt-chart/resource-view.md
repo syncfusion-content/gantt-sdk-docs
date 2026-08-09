@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Resource View in ASP.NET MVC Gantt Component
 
 The resource breakdown view is used to visualize the tasks assigned to each resource in hierarchy manner. Resources are displayed as parents and all the tasks assigned to each resource are displayed as its child records. It can be initialized by setting the [`viewType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.ViewType.html) property to `ResourceView`.

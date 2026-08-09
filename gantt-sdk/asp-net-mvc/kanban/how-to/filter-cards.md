@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Filtering Cards
 
 You can filter the collection of cards from the dataSource and display it on the Kanban board by using the [`query`](../../api/kanban/#query) property.

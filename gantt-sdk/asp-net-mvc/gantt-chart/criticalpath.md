@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Critical Path feature
 
 The critical path in a project is indicated by a single task or a series of tasks. If a task in critical path is delayed, the entire project will be delayed. A task is considered to be critical if any delay to this task would affect the project end date.

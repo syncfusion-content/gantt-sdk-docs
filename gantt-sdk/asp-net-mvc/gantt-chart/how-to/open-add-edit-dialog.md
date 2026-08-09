@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Open add/edit dialog dynamically
 
 Gantt add and edit dialogs can be opened dynamically by using `openAddDialog` and `openEditDialog` methods. The following code example shows how to open add and dialog on separate button click actions.

@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Custom data source in gantt control
 
 The excel export provides an option to define datasource dynamically before exporting. To export data dynamically, define the `dataSource` in `exportProperties`.

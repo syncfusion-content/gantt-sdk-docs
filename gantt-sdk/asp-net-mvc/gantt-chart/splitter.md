@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Splitter in ASP.NET MVC Gantt component
 
 ## Splitter

@@ -10,7 +10,6 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
 # Getting Started with ASP.NET MVC Kanban
 
 This section briefly explains how to include the [ASP.NET MVC Kanban](https://www.syncfusion.com/aspnet-mvc-ui-controls/kanban-board) control in your ASP.NET MVC application using Visual Studio.

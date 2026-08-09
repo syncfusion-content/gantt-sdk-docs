@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Resources in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Gantt Component
 
 In Gantt, the resources are represented by staff, equipment and materials etc. In Gantt control you can show or allocate the resources (human resources) for each task.

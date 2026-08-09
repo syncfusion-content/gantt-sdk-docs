@@ -10,7 +10,6 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
 # Drag and Drop Operations in ASP.NET MVC Kanban
 
 All cards can be dragged and dropped across the columns or within the columns or swimlane row or kanban to an external source and vice versa.

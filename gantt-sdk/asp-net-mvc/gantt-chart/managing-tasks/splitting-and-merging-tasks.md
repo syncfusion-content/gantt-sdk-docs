@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Splitting and Merging tasks
 
 ## Splitting task at load time

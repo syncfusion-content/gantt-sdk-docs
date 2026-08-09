@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Maintaining data in server
 
 All the modified data in Gantt control can be maintained in the database using RESTful web services.

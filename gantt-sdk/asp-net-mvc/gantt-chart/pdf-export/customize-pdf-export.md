@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # To customize PDF export
 
 PDF export provides an option to customize the mapping of Gantt to exported PDF document.

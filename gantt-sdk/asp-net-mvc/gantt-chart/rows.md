@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Rows in ASP.NET MVC Gantt Component
 
 Row represents a task information from the data source, and it is possible to perform the following actions in Gantt rows.

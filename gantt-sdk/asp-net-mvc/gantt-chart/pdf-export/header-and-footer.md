@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Customizing header and footer of PDF export
 
 PDF export provides an option to specify and customize text, page number, line and image in header and footer of exported PDF document by using [pdfExportProperties](https://ej2.syncfusion.com/documentation/api/gantt/pdfExportProperties/#properties).

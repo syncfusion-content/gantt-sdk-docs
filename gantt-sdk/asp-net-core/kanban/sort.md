@@ -10,7 +10,6 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
 # Card Management and Sorting in ASP.NET Core Kanban
 
 The Kanban provides built-in support to arrange the cards in their columns based on the JSON data order and drop the cards in the columns based on the dropped clone. Initially, users can change the arrangement of cards in the columns and position of the dropped card by using the [`sortBy`](../api/kanban/sortSettingsModel/#sortby) property. The [`sortBy`](../api/kanban/sortSettingsModel/#sortby) property contains three enumeration values as follows.

@@ -10,7 +10,6 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
 # Tooltip and Hover Information in ASP.NET MVC Kanban
 
 The tooltip is used to show the card information when the cursor hover over the card elements using the `EnableTooltip` property. Tooltip content is dynamically set based on hovering over the card elements.

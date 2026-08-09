@@ -10,7 +10,6 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
 # Columns Configuration and Workflow Stages in ASP.NET MVC Kanban
 
 The **Kanban** columns represent the each stage of the process. The column definitions are used as the **DataSource** schema in the Kanban. The Kanban operations such as drag-and-drop, swimlane, and toggle columns are performed based on column definitions.

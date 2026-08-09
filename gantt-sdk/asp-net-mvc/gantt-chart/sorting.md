@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Sorting in ASP.NET MVC Gantt Chart Component
 
 Sorting enables you to sort data in the ascending or descending order. To sort a column, click the column header.

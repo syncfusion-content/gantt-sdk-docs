@@ -10,7 +10,6 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
 # Responsive Layout and Adaptive Design in ASP.NET MVC Kanban
 
 The Kanban component has support for responsive behavior based on the client browser's width and height.

@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Taskbar editing action in gantt control
 
 ## Taskbar editing

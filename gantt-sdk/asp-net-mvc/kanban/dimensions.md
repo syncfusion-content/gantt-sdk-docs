@@ -10,7 +10,6 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
 # Dimensions, Height, and Width Configuration in ASP.NET MVC Kanban
 
 The Kanban dimensions refers to both height and width of the entire layout and it accepts three types of values.

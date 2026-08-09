@@ -10,7 +10,6 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
 # Data Binding with Local and Remote Sources in ASP.NET MVC Kanban
 
 The Kanban uses `DataManager`, which supports both RESTful data service binding and list binding. The `DataSource`property of Kanban can be assigned either with the instance of `DataManager` or List, as it supports the following two data binding methods:

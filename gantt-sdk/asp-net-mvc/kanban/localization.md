@@ -10,7 +10,6 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
 # Globalization and Localization Support in ASP.NET MVC Kanban
 
 The localization library allows you to localize the default text content of the Kanban to different cultures using the `Locale` property.

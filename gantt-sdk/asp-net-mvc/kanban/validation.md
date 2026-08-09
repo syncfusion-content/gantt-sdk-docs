@@ -10,7 +10,6 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
 # WIP Validation and Work-in-Progress Limits in ASP.NET MVC Kanban
 
 Validate particular column using the `MinCount` or `MaxCount` properties. The corresponding columns gets different appearance when validation fails. In default layout, `ConstraintType` property accept only `Column` type. In swimlane layout, accept both `Column` and `Swimlane` constraint type.

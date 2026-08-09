@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Multiple Gantt exporting
 
 In Gantt, the Excel export provides support to export multiple Gantt data in new sheet or same sheet.

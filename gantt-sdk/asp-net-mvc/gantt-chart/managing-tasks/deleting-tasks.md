@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Deleting tasks in gantt control
 
 ## Deleting Tasks

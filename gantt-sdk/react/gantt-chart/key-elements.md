@@ -10,7 +10,6 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
 # Key Elements of the React Gantt Chart UI
 
 This section explains the key elements of the Gantt Chart interface.
