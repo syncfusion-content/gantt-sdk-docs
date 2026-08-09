@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Virtual scrolling in Vue Kanban component | Syncfusion
-description: Learn here all about Cards in Syncfusion Vue Kanban component of Syncfusion Essential JS 2 and more.
-control: Virtual scrolling 
+title: Virtual Scrolling in Vue Kanban | Syncfusion
+description: Learn how to implement virtual scrolling in Syncfusion Vue Kanban for efficient rendering of large datasets.
+keywords: vue kanban virtual scrolling, syncfusion kanban, scrolling, performance
+canonical: https://help.syncfusion.com/gantt-sdk/vue/kanban/virtual-scrolling
 platform: gantt-sdk
+control: Virtual Scrolling - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Virtualization in Vue Kanban component
+# Virtual Scrolling and Performance in Vue Kanban
 
 Kanban allows you to load a large amount of data without any performance degradation. This feature can be enabled by setting the [`enableVirtualization`](../api/kanban/#enablevirtualization) property in the Kanban to `true`.
 

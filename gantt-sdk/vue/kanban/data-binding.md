@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Data binding in Vue Kanban component | Syncfusion
-description: Learn here all about Data binding in Syncfusion Vue Kanban component of Syncfusion Essential JS 2 and more.
-control: Data binding 
+title: Data Binding in Vue Kanban | Syncfusion
+description: Learn how to bind local and remote data sources to Syncfusion Vue Kanban and render tasks efficiently in your app.
+keywords: vue kanban data binding, syncfusion kanban, remote data, local data
+canonical: https://help.syncfusion.com/gantt-sdk/vue/kanban/data-binding
 platform: gantt-sdk
+control: Data Binding - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Data binding in Vue Kanban component
+# Data Binding with Local and Remote Sources in Vue Kanban
 
 The Kanban uses `DataManager`, which supports both RESTful data service binding and JavaScript object array binding. The [`dataSource`](https://ej2.syncfusion.com/vue/documentation/api/kanban/#datasource) property of Kanban can be assigned either with the instance of `DataManager` or JavaScript object array collection, as it supports the following two data binding methods:
 

@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Priority in Vue Kanban component | Syncfusion
-description: Learn here all about Priority in Syncfusion Vue Kanban component of Syncfusion Essential JS 2 and more.
-control: Priority 
+title: Priority Management in Vue Kanban | Syncfusion
+description: Learn how to manage task priorities in Syncfusion Vue Kanban and organize work by priority levels and workflow.
+keywords: vue kanban priority, syncfusion kanban, task priority, workflow
+canonical: https://help.syncfusion.com/gantt-sdk/vue/kanban/priority
 platform: gantt-sdk
+control: Priority - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Priority in Vue Kanban component
+# Priority Management in Vue Kanban
 
 By default, the Kanban cards are initially placed and drop the card inside the columns based on JSON data orders.
 

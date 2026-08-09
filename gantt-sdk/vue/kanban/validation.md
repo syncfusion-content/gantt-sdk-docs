@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Validation in Vue Kanban component | Syncfusion
-description: Learn here all about Validation in Syncfusion Vue Kanban component of Syncfusion Essential JS 2 and more.
-control: Validation 
+title: Validation in Vue Kanban | Syncfusion
+description: Learn how to implement data validation and constraints in Syncfusion Vue Kanban for data integrity and error handling.
+keywords: vue kanban validation, syncfusion kanban, data validation, constraints
+canonical: https://help.syncfusion.com/gantt-sdk/vue/kanban/validation
 platform: gantt-sdk
+control: WIP Validation - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Validation in Vue Kanban component
+# WIP Validation and Work-in-Progress Limits in Vue Kanban
 
 Validate particular column using the `minCount` or `maxCount` properties. The corresponding columns gets different appearance when validation fails. In default layout, `constraintType` property accept only `Column` type. In swimlane layout, accept both `Column` and `Swimlane` constraint type.
 

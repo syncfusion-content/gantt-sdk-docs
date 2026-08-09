@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Sort in Vue Kanban component | Syncfusion
-description: Learn here all about Sort in Syncfusion Vue Kanban component of Syncfusion Essential JS 2 and more.
-control: Sort 
+title: Sorting in Vue Kanban | Syncfusion
+description: Learn how to implement sorting functionality in Syncfusion Vue Kanban to organize cards by different criteria.
+keywords: vue kanban sorting, syncfusion kanban, sort cards, organization
+canonical: https://help.syncfusion.com/gantt-sdk/vue/kanban/sort
 platform: gantt-sdk
+control: Sorting - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Sort in Vue Kanban component
+# Card Management and Sorting in Vue Kanban
 
 The Kanban provides built-in support to arrange the cards in their columns based on the JSON data order and drop the cards in the columns based on the dropped clone. Initially, users can change the arrangement of cards in the columns and position of the dropped card by using the [`sortBy`](https://ej2.syncfusion.com/vue/documentation/api/kanban/sortSettingsModel/#sortby) property. The [`sortBy`](https://ej2.syncfusion.com/vue/documentation/api/kanban/sortSettingsModel/#sortby) property contains three enumeration values as follows.
 
