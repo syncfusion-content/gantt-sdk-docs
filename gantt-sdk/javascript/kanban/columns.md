@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Columns in JavaScript Kanban control | Syncfusion
-description: Learn here all about Columns in Syncfusion JavaScript Kanban control of Syncfusion Essential JS 2 and more.
+title: Columns in JavaScript Kanban | Syncfusion
+description: Learn how to configure columns, headers, and workflow stages in Syncfusion JavaScript Kanban for organized task management.
+keywords: javascript kanban columns, syncfusion kanban, workflow columns, kanban stages
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/kanban/columns
 platform: gantt-sdk
-control: Columns 
-publishingplatform: gantt-sdk
+control: Columns - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Columns in JavaScript Kanban control
+# Columns Configuration and Workflow Stages in JavaScript Kanban
 
 The **Kanban** columns represent the each stage of the process. The column definitions are used as the **dataSource** schema in the Kanban. The Kanban operations such as drag-and-drop, swimlane, and toggle columns are performed based on column definitions.
 

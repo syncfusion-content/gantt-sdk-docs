@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Getting started with JavaScript Kanban control | Syncfusion
-description:  Checkout and learn about Getting started with JavaScript Kanban control of Syncfusion Essential JS 2 and more details.
+title: Getting Started in JavaScript Kanban | Syncfusion
+description: Learn how to start using Syncfusion JavaScript Kanban with step-by-step setup instructions and essential component features.
+keywords: javascript kanban getting started, syncfusion kanban, install component, setup
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/kanban/getting-started
 platform: gantt-sdk
-control: Getting started 
-publishingplatform: gantt-sdk
+control: Getting Started - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Getting started in JavaScript Kanban control
+# Getting Started with JavaScript Kanban
 
 This section briefly explains how to create the **Kanban** component and configure its available functionalities in a JavaScript application.
 
