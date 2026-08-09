@@ -6,7 +6,6 @@ keywords: vue gantt column resizing, resize columns, auto fit, column width, syn
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/columns/column-resizing
 platform: gantt-sdk
 control: Column Resizing - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

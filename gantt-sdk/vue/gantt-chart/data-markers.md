@@ -6,7 +6,6 @@ keywords: vue gantt data markers, schedule events, indicators, milestones, syncf
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/data-markers
 platform: gantt-sdk
 control: Data Markers - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

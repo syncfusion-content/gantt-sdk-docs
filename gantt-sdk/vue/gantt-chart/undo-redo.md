@@ -6,7 +6,6 @@ keywords: vue gantt undo redo, undo action, redo action, action history, syncfus
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/undo-redo
 platform: gantt-sdk
 control: Undo Redo - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
