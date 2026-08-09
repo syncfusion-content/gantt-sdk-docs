@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started page with Vue Kanban component | Syncfusion
-description: Checkout and learn about Getting started page with Vue Kanban component of Syncfusion Essential JS 2 and more details.
+title: Getting started page with Vue Kanban | Syncfusion
+description: Checkout and learn about Getting started page with Vue Kanban of Syncfusion Essential JS 2 and more details.
 keywords: vue kanban getting started page, syncfusion kanban, setup, getting started
 canonical: https://help.syncfusion.com/gantt-sdk/vue/kanban/getting-started-page
 platform: gantt-sdk
@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Getting started page with Vue Kanban component
+# Getting started page with Vue Kanban
 
 This article provides a step-by-step guide for setting up a [Vite](https://vitejs.dev/) project with a JavaScript environment and integrating the Syncfusion<sup style="font-size:70%">&reg;</sup> Vue Kanban component using the [Composition API](https://vuejs.org/guide/introduction.html#composition-api) / [Options API](https://vuejs.org/guide/introduction.html#options-api).
 
