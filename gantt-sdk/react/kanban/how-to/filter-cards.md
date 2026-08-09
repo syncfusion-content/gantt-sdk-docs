@@ -1,16 +1,18 @@
 ---
 layout: post
-title: Filter Cards in Syncfusion React Kanban component | Syncfusion
-description: Learn how to filter cards in the Syncfusion React Kanban component of Syncfusion Essential JS 2 and more.
-control: Filter cards 
+title: Filter Cards in React Kanban | Syncfusion
+description: Learn how to filter cards in Syncfusion React Kanban using queries and data source conditions with practical examples.
+keywords: react kanban filter cards, syncfusion kanban, filter query, data filtering
+canonical: https://help.syncfusion.com/gantt-sdk/react/kanban/how-to/filter-cards
 platform: gantt-sdk
+control: Filter Cards - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Filter Cards in React Kanban Component
+# Filter Cards in React Kanban
 
-You can filter the collection of cards from the dataSource and display it on the Kanban board by using the [query](https://ej2.syncfusion.com/react/documentation/api/kanban/#query) property.
+You can filter the collection of cards from the dataSource and display it on the Kanban board by using the [query](https://ej2.syncfusion.com/react/documentation/api/kanban#query) property.
 
 In the below sample, you can filter the cards based on the ‘where’ query and display the filtered data to the Kanban board.
 
@@ -27,7 +29,7 @@ In the below sample, you can filter the cards based on the ‘where’ query and
 {% include code-snippet/gantt-sdk/react/kanban/auto-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/auto-cs5" %}
 
 `[Functional-component]`
@@ -43,5 +45,5 @@ In the below sample, you can filter the cards based on the ‘where’ query and
 {% include code-snippet/gantt-sdk/react/kanban/auto-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/auto-cs6" %}
