@@ -1,20 +1,22 @@
 ---
 layout: post
-title:  Configuring Dimensions in React Kanban component | Syncfusion
-description: Learn  how to configure height and width in the Syncfusion React Kanban component of Syncfusion Essential JS 2 and more.
-control: Dimensions 
+title: Dimensions in React Kanban | Syncfusion
+description: Learn how to configure responsive dimensions and sizing options in Syncfusion React Kanban to fit different layouts and screen sizes.
+keywords: react kanban dimensions, syncfusion kanban, responsive layout, sizing
+canonical: https://help.syncfusion.com/gantt-sdk/react/kanban/dimensions
 platform: gantt-sdk
+control: Dimensions - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Dimensions in React Kanban Component
+# Dimensions and Responsive Sizing in React Kanban
 
-The Kanban dimensions refers to both [height](https://ej2.syncfusion.com/react/documentation/api/kanban/#height) and [width](https://ej2.syncfusion.com/react/documentation/api/kanban/#width) of the entire layout and it accepts three types of values.
+The Kanban dimensions refers to both [height](https://ej2.syncfusion.com/react/documentation/api/kanban#height) and [width](https://ej2.syncfusion.com/react/documentation/api/kanban#width) of the entire layout and it accepts three types of values.
 
-* Auto
-* Pixel
-* Percentage
+- Auto
+- Pixel
+- Percentage
 
 ## Auto height and width
 
@@ -33,7 +35,7 @@ When `height` and `width` of the Kanban are set to `auto`, it will try as hard a
 {% include code-snippet/gantt-sdk/react/kanban/auto-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/auto-cs1" %}
 
 `[Functional-component]`
@@ -49,7 +51,7 @@ When `height` and `width` of the Kanban are set to `auto`, it will try as hard a
 {% include code-snippet/gantt-sdk/react/kanban/auto-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/auto-cs2" %}
 
 ## Height and width in pixel
@@ -69,7 +71,7 @@ The Kanban `height` and `width` will be rendered exactly as per the given pixel 
 {% include code-snippet/gantt-sdk/react/kanban/pixel-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/pixel-cs1" %}
 
 `[Functional-component]`
@@ -85,7 +87,7 @@ The Kanban `height` and `width` will be rendered exactly as per the given pixel 
 {% include code-snippet/gantt-sdk/react/kanban/pixel-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/pixel-cs2" %}
 
 ## Height and width in percentage
@@ -105,7 +107,7 @@ When `height` and `width` of the Kanban are given in percentage, it will make th
 {% include code-snippet/gantt-sdk/react/kanban/percentage-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/percentage-cs1" %}
 
 `[Functional-component]`
@@ -121,5 +123,5 @@ When `height` and `width` of the Kanban are given in percentage, it will make th
 {% include code-snippet/gantt-sdk/react/kanban/percentage-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/percentage-cs2" %}

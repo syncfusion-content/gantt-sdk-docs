@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Drag and Drop in React Kanban component | Syncfusion
-description: Learn how to enable drag-and-drop for cards in the Syncfusion React Kanban component of Syncfusion Essential JS 2 and more.
-control: Drag and drop 
+title: Drag and Drop in React Kanban | Syncfusion
+description: Learn how to enable drag-and-drop interactions in Syncfusion React Kanban to reorder cards and move tasks across columns.
+keywords: react kanban drag and drop, syncfusion kanban, card movement, reordering
+canonical: https://help.syncfusion.com/gantt-sdk/react/kanban/drag-and-drop
 platform: gantt-sdk
+control: Drag and Drop - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Drag and Drop in React Kanban Component
+# Drag and Drop in React Kanban
 
 All cards can be dragged and dropped across the columns or within the columns or swimlane row or kanban to an external source and vice versa.
 

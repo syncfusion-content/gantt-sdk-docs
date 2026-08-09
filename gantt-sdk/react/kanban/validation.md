@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Validation in React Kanban Component | Syncfusion
-description: Learn here all about Validation in Syncfusion React Kanban component of Syncfusion Essential JS 2 and more.
-control: Validation
+title: WIP Validation in React Kanban | Syncfusion
+description: Learn how to set work-in-progress limits and validation rules in Syncfusion React Kanban to control flow and avoid overloading columns.
+keywords: react kanban validation, syncfusion kanban, work in progress, column limits
+canonical: https://help.syncfusion.com/gantt-sdk/react/kanban/validation
 platform: gantt-sdk
+control: WIP Validation - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Validation in React Kanban Component
+# WIP Validation and Work-in-Progress Limits in React Kanban
 
 Validate particular column using the `minCount` or `maxCount` properties. The corresponding columns gets different appearance when validation fails. In default layout, `constraintType` property accept only `Column` type. In swimlane layout, accept both `Column` and `Swimlane` constraint type.
 
