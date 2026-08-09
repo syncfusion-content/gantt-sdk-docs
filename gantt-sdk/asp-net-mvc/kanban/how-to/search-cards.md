@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Searching Cards
 
 You can search the cards in Kanban by using the `query` property.

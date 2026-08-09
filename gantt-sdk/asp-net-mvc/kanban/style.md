@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Style in ASP.NET MVC Kanban Component
-description: Learn here all about Style in Syncfusion ASP.NET MVC Kanban component of Syncfusion Essential JS 2 and more.
+title: Styling and Theming in ASP.NET MVC Kanban | Syncfusion
+description: Learn how to customize styles, themes, and appearance in Syncfusion ASP.NET MVC Kanban with practical CSS and theming guidelines.
+keywords: asp-net-mvc kanban styling, syncfusion kanban, theme, css, appearance
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/kanban/style
 platform: gantt-sdk
-control: Style
-publishingplatform: gantt-sdk
+control: Styling - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Styling and appearance
+# Styling and Appearance in ASP.NET MVC Kanban
 
 To modify the Kanban appearance, you need to override the default CSS of Kanban. Also, you have an option to create your own custom theme using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material). Find the list of CSS classes in Kanban.
 

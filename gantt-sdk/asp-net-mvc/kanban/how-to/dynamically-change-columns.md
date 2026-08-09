@@ -8,7 +8,6 @@ publishingplatform: gantt-sdk
 documentation: ug
 ---
 
-
 # Change Kanban columns dynamically
 
 You can dynamically change the Kanban columns by using the [`columns`](../../api/kanban#columns) property.

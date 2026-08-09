@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Data Binding in Syncfusion ASP.NET MVC Kanban Component
-description: Learn here all about Data Binding in Syncfusion ASP.NET MVC Kanban component of Syncfusion Essential JS 2 and more.
+title: Data Binding in ASP.NET MVC Kanban | Syncfusion
+description: Learn how to bind local and remote data sources to Syncfusion ASP.NET MVC Kanban and render tasks efficiently in your app.
+keywords: asp-net-mvc kanban data binding, syncfusion kanban, remote data, local data
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/kanban/data-binding
 platform: gantt-sdk
-control: Data Binding
-publishingplatform: gantt-sdk
+control: Data Binding - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Data binding in ASP.NET MVC Kanban component
+# Data Binding with Local and Remote Sources in ASP.NET MVC Kanban
 
 The Kanban uses `DataManager`, which supports both RESTful data service binding and list binding. The `DataSource`property of Kanban can be assigned either with the instance of `DataManager` or List, as it supports the following two data binding methods:
 
