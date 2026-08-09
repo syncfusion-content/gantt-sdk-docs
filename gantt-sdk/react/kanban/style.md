@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Styles in React Kanban Component | Syncfusion
-description: Learn here all about Style in Syncfusion React Kanban component of Syncfusion Essential JS 2 and more.
-control: Style
+title: Styling in React Kanban | Syncfusion
+description: Learn how to customize themes, appearance, and visual styles in Syncfusion React Kanban with built-in options and CSS flexibility.
+keywords: react kanban styling, syncfusion kanban, appearance, themes
+canonical: https://help.syncfusion.com/gantt-sdk/react/kanban/style
 platform: gantt-sdk
+control: Styling - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Styles in React Kanban Component
+# Styling and Theming in React Kanban
 
 To modify the Kanban appearance, you need to override the default CSS of Kanban. Also, you have an option to create your own custom theme using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=tailwind3). Please find the list of CSS classes in Kanban.
 

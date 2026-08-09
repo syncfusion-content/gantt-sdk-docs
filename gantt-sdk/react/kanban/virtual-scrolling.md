@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Virtual scrolling in React Kanban Component | Syncfusion
-description: Learn here all about Virtual scrolling in Syncfusion React Kanban component of Syncfusion Essential JS 2 and more.
-control: Virtual scrolling 
+title: Virtual Scrolling in React Kanban | Syncfusion
+description: Learn how to enable virtual scrolling in Syncfusion React Kanban to render large datasets with smooth performance.
+keywords: react kanban virtual scrolling, syncfusion kanban, performance, large datasets
+canonical: https://help.syncfusion.com/gantt-sdk/react/kanban/virtual-scrolling
 platform: gantt-sdk
+control: Virtual Scrolling - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Virtualization in React Kanban Component
+# Virtual Scrolling and Performance in React Kanban
 
 Kanban allows you to load a large amount of data without any performance degradation. This feature can be enabled by setting the [enableVirtualization](../api/kanban#enablevirtualization) property in the Kanban to `true`.
 
