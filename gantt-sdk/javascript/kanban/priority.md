@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Priority in JavaScript Kanban control | Syncfusion
-description: Learn here all about Priority in Syncfusion JavaScript Kanban control of Syncfusion Essential JS 2 and more.
+title: Priority Management in JavaScript Kanban | Syncfusion
+description: Learn how to manage task priorities in Syncfusion JavaScript Kanban and organize work by priority levels.
+keywords: javascript kanban priority, syncfusion kanban, task priority, workflow
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/kanban/priority
 platform: gantt-sdk
-control: Priority 
-publishingplatform: gantt-sdk
+control: Priority - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Priority in JavaScript Kanban control
+# Priority Management in JavaScript Kanban
 
 By default, the Kanban cards are initially placed and drop the card inside the columns based on JSON data orders.
 

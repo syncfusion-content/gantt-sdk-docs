@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Virtual scrolling in TypeScript Kanban control | Syncfusion
-description: Learn here all about Virtual Scrolling in Syncfusion TypeScript Kanban control of Syncfusion Essential JS 2 and more.
+title: Virtual Scrolling in TypeScript Kanban | Syncfusion
+description: Learn how to implement virtual scrolling in Syncfusion TypeScript Kanban for efficient rendering of large datasets.
+keywords: typescript kanban virtual scrolling, syncfusion kanban, scrolling, performance
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/kanban/virtual-scrolling
 platform: gantt-sdk
-control: Virtual scrolling 
-publishingplatform: gantt-sdk
+control: Virtual Scrolling - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Virtualization in TypeScript Kanban control
+# Virtual Scrolling and Performance in TypeScript Kanban
 
 Kanban allows you to load a large amount of data without any performance degradation. This feature can be enabled by setting the [`enableVirtualization`](../api/kanban/#enablevirtualization) property in the Kanban to `true`.
 

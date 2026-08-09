@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Getting started with TypeScript Kanban control | Syncfusion
-description:  Checkout and learn about Getting started with TypeScript Kanban control of Syncfusion Essential JS 2 and more details.
+title: Getting Started in TypeScript Kanban | Syncfusion
+description: Learn how to start using Syncfusion TypeScript Kanban with step-by-step setup instructions and essential component features.
+keywords: typescript kanban getting started, syncfusion kanban, install component, setup
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/kanban/getting-started
 platform: gantt-sdk
-control: Getting started 
-publishingplatform: gantt-sdk
+control: Getting Started - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Getting started with TypeScript Kanban control
+# Getting Started with TypeScript Kanban
 
 This section explains how to create and configure the Kanban component in TypeScript using a Vite project with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Kanban package.
 

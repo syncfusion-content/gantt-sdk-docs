@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Getting Started with ASP.NET MVC Kanban Control | Syncfusion
-description: Checkout and learn about getting started with ASP.NET MVC Kanban control of Syncfusion Essential JS 2 and more details.
+title: Getting Started in ASP.NET MVC Kanban | Syncfusion
+description: Learn how to start using Syncfusion ASP.NET MVC Kanban with step-by-step setup instructions and essential component features.
+keywords: asp-net-mvc kanban getting started, syncfusion kanban, install component, setup
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/kanban/getting-started
 platform: gantt-sdk
-control: Getting Started
-publishingplatform: gantt-sdk
+control: Getting Started - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
 
-# Getting Started with ASP.NET MVC Kanban Control
+# Getting Started with ASP.NET MVC Kanban
 
 This section briefly explains how to include the [ASP.NET MVC Kanban](https://www.syncfusion.com/aspnet-mvc-ui-controls/kanban-board) control in your ASP.NET MVC application using Visual Studio.
 

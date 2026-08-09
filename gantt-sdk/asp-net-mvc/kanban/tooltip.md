@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Tooltip and its Template in Syncfusion ASP.NET MVC Kanban Component
-description: Learn here all about Tooltip in Syncfusion ASP.NET MVC Kanban component of Syncfusion Essential JS 2 and more.
+title: Tooltips in ASP.NET MVC Kanban | Syncfusion
+description: Learn how to implement and customize tooltips in Syncfusion ASP.NET MVC Kanban for enhanced user information display.
+keywords: asp-net-mvc kanban tooltip, syncfusion kanban, hover information, help text
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/kanban/tooltip
 platform: gantt-sdk
-control: Tooltip
-publishingplatform: gantt-sdk
+control: Tooltip - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
 
-# Tooltip in ASP.NET MVC Kanban control
+# Tooltip and Hover Information in ASP.NET MVC Kanban
 
 The tooltip is used to show the card information when the cursor hover over the card elements using the `EnableTooltip` property. Tooltip content is dynamically set based on hovering over the card elements.
 

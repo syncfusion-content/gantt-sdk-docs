@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Accessibility in Vue Kanban component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Vue Kanban component of Syncfusion Essential JS 2 and more.
-control: Accessibility
+title: Accessibility in Vue Kanban | WCAG, ARIA | Syncfusion
+description: Learn how to implement accessibility in Syncfusion Vue Kanban with WCAG 2.2, ARIA labels, keyboard navigation, and Section 508 compliance.
+keywords: vue kanban accessibility, wcag, aria, section 508, keyboard navigation, screen reader, syncfusion kanban
+canonical: https://help.syncfusion.com/gantt-sdk/vue/kanban/accessibility
 platform: gantt-sdk
+control: Accessibility - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Accessibility in Vue Kanban component
+# Accessibility and ARIA Compliance in Vue Kanban
 
 The Kanban component has been designed, keeping in mind the WAI-ARIA specifications, and applies the WAI-ARIA roles, states, and properties. This component is characterized by complete ARIA accessibility support that makes it easy for people who use assistive technologies (AT) or those who completely rely on keyboard navigation.
 

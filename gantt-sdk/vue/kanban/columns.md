@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Columns in Vue Kanban component | Syncfusion
-description: Learn here all about Columns in Syncfusion Vue Kanban component of Syncfusion Essential JS 2 and more.
-control: Columns 
+title: Columns in Vue Kanban | Syncfusion
+description: Learn how to configure columns, headers, and workflow stages in Syncfusion Vue Kanban for organized task management.
+keywords: vue kanban columns, syncfusion kanban, workflow columns, kanban stages
+canonical: https://help.syncfusion.com/gantt-sdk/vue/kanban/columns
 platform: gantt-sdk
+control: Columns - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Columns in Vue Kanban component
+# Columns Configuration and Workflow Stages in Vue Kanban
 
 The **Kanban** columns represent the each stage of the process. The column definitions are used as the **dataSource** schema in the Kanban. The Kanban operations such as drag-and-drop, swimlane, and toggle columns are performed based on column definitions.
 

@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Style in Vue Kanban component | Syncfusion
-description: Learn here all about Style in Syncfusion Vue Kanban component of Syncfusion Essential JS 2 and more.
-control: Style 
+title: Styling and Theming in Vue Kanban | Syncfusion
+description: Learn how to customize styles, themes, and appearance in Syncfusion Vue Kanban with practical CSS and theming guidelines.
+keywords: vue kanban styling, syncfusion kanban, theme, css, appearance
+canonical: https://help.syncfusion.com/gantt-sdk/vue/kanban/style
 platform: gantt-sdk
+control: Styling - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Style in Vue Kanban component
+# Styling and Appearance with CSS and Theme Support in Vue Kanban
 
 To modify the Kanban appearance, you need to override the default CSS of Kanban. Also, you have an option to create your own custom theme using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material). Please find the list of CSS classes in Kanban.
 

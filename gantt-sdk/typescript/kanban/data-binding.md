@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Data binding in TypeScript Kanban control | Syncfusion
-description: Learn here all about Data binding in Syncfusion TypeScript Kanban control of Syncfusion Essential JS 2 and more.
+title: Data Binding in TypeScript Kanban | Syncfusion
+description: Learn how to bind local and remote data sources to Syncfusion TypeScript Kanban and render tasks efficiently in your app.
+keywords: typescript kanban data binding, syncfusion kanban, remote data, local data
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/kanban/data-binding
 platform: gantt-sdk
-control: Data binding 
-publishingplatform: gantt-sdk
+control: Data Binding - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Data binding in TypeScript Kanban control
+# Data Binding with Local and Remote Sources in TypeScript Kanban
 
 The Kanban uses `DataManager`, which supports both RESTful data service binding and JavaScript object array binding. The [`dataSource`](../api/kanban/#datasource) property of Kanban can be assigned either with the instance of `DataManager` or JavaScript object array collection, as it supports the following two data binding methods:
 

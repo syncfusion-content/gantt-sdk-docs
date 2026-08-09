@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Kanban Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core Kanban control of Essential JS 2 and more details.
+title: Getting Started in ASP.NET Core Kanban | Syncfusion
+description: Learn how to start using Syncfusion ASP.NET Core Kanban with step-by-step setup instructions and essential component features.
+keywords: asp-net-core kanban getting started, syncfusion kanban, install component, setup
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/getting-started
 platform: gantt-sdk
-control: Kanban
-publishingplatform: gantt-sdk
+control: Getting Started - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Getting Started with ASP.NET Core Kanban Control
+# Getting Started with ASP.NET Core Kanban
 
 This section briefly explains how to include the [ASP.NET Core Kanban](https://www.syncfusion.com/gantt-sdk/aspnet-core-kanban-board) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/), and [Visual Studio Code](https://code.visualstudio.com/).
 

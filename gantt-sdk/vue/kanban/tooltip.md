@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Tooltip in Vue Kanban component | Syncfusion
-description: Learn here all about Tooltip in Syncfusion Vue Kanban component of Syncfusion Essential JS 2 and more.
-control: Tooltip 
+title: Tooltips in Vue Kanban | Syncfusion
+description: Learn how to implement and customize tooltips in Syncfusion Vue Kanban for enhanced user information display.
+keywords: vue kanban tooltip, syncfusion kanban, hover information, help text
+canonical: https://help.syncfusion.com/gantt-sdk/vue/kanban/tooltip
 platform: gantt-sdk
+control: Tooltip - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Tooltip in Vue Kanban component
+# Tooltip and Hover Information in Vue Kanban
 
 The tooltip is used to show the card information when the cursor hover over the card elements using the `enableTooltip` property. Tooltip content is dynamically set based on hovering over the card elements.
 

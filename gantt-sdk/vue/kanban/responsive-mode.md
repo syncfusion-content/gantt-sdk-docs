@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Responsive mode in Vue Kanban component | Syncfusion
-description: Learn here all about Responsive mode in Syncfusion Vue Kanban component of Syncfusion Essential JS 2 and more.
-control: Responsive mode 
+title: Responsive Design in Vue Kanban | Syncfusion
+description: Learn how to create responsive Kanban layouts in Syncfusion Vue that adapt to different screen sizes and devices.
+keywords: vue kanban responsive, syncfusion kanban, responsive design, mobile
+canonical: https://help.syncfusion.com/gantt-sdk/vue/kanban/responsive-mode
 platform: gantt-sdk
+control: Responsive Mode - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Responsive mode in Vue Kanban component
+# Responsive Layout and Adaptive Design in Vue Kanban
 
 The Kanban component has support for responsive behavior based on the client browser's width and height.
 

@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Priority in TypeScript Kanban control | Syncfusion
-description: Learn here all about Priority in Syncfusion TypeScript Kanban control of Syncfusion Essential JS 2 and more.
+title: Priority Management in TypeScript Kanban | Syncfusion
+description: Learn how to manage task priorities in Syncfusion TypeScript Kanban and organize work by priority levels.
+keywords: typescript kanban priority, syncfusion kanban, task priority, workflow
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/kanban/priority
 platform: gantt-sdk
-control: Priority 
-publishingplatform: gantt-sdk
+control: Priority - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Priority in TypeScript Kanban control
+# Priority Management in TypeScript Kanban
 
 By default, the Kanban cards are initially placed and drop the card inside the columns based on JSON data orders.
 

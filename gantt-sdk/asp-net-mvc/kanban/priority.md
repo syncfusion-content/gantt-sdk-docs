@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Priority and Card Order in Syncfusion ASP.NET MVC Kanban Component
-description: Learn here all about Priority in Syncfusion ASP.NET MVC Kanban component of Syncfusion Essential JS 2 and more.
+title: Priority Management in ASP.NET MVC Kanban | Syncfusion
+description: Learn how to manage task priorities in Syncfusion ASP.NET MVC Kanban and organize work by priority levels.
+keywords: asp-net-mvc kanban priority, syncfusion kanban, task priority, workflow
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/kanban/priority
 platform: gantt-sdk
-control: Priority
-publishingplatform: gantt-sdk
+control: Priority - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
 
-# Card Order in ASP.NET MVC Kanban control
+# Priority Management in ASP.NET MVC Kanban
 
 By default, the Kanban cards are initially placed and drop the card inside the columns based on JSON data orders.
 

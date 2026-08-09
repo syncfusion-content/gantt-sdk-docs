@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Persistence in Vue Kanban component | Syncfusion
-description: Learn here all about Persistence in Syncfusion Vue Kanban component of Syncfusion Essential JS 2 and more.
-control: Persistence 
+title: State Persistence in Vue Kanban | Syncfusion
+description: Learn how to enable state persistence and save Kanban settings and configurations in Syncfusion Vue Kanban component.
+keywords: vue kanban persistence, syncfusion kanban, state management, settings
+canonical: https://help.syncfusion.com/gantt-sdk/vue/kanban/persistence
 platform: gantt-sdk
+control: Persistence - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Persistence in Vue Kanban component
+# State Persistence in Vue Kanban
 
 State persistence refers to the Kanban state maintained in the browser's [`localStorage`](https://www.w3schools.com/html/html5_webstorage.asp#) even if the browser is refreshed or if you move to the next page within the browser.
 

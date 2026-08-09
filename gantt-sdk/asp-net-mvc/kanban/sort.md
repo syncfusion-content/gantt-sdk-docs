@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Sort and Arrangement of Cards in Syncfusion ASP.NET MVC Kanban Component
-description: Learn here all about Sort in Syncfusion ASP.NET MVC Kanban component of Syncfusion Essential JS 2 and more.
+title: Sorting in ASP.NET MVC Kanban | Syncfusion
+description: Learn how to implement sorting functionality in Syncfusion ASP.NET MVC Kanban to organize cards by different criteria.
+keywords: asp-net-mvc kanban sorting, syncfusion kanban, sort cards, organization
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/kanban/sort
 platform: gantt-sdk
-control: Sort
-publishingplatform: gantt-sdk
+control: Sorting - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
 
-# Sort in ASP.NET MVC Kanban control
+# Card Management and Sorting in ASP.NET MVC Kanban
 
 The Kanban provides built-in support to arrange the cards in their columns based on the JSON data order and drop the cards in the columns based on the dropped clone. Initially, users can change the arrangement of cards in the columns and position of the dropped card by using the [`sortBy`](../api/kanban/sortSettingsModel/#sortby) property. The [`sortBy`](../api/kanban/sortSettingsModel/#sortby) property contains three enumeration values as follows.
 

@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Swimlane in ASP.NET Core Kanban Component
-description: Learn here all about Swimlane in Syncfusion ASP.NET Core Kanban component of Syncfusion Essential JS 2 and more.
+title: Swimlanes in ASP.NET Core Kanban | Syncfusion
+description: Learn how to configure swimlanes in Syncfusion ASP.NET Core Kanban to group and organize cards by categories or resources.
+keywords: asp-net-core kanban swimlane, syncfusion kanban, grouping, card grouping
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/swimlane
 platform: gantt-sdk
-control: Swimlane
-publishingplatform: gantt-sdk
+control: Swimlane - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
 
-# Swimlane
+# Swimlane Grouping in ASP.NET Core Kanban
 
 Swimlanes are horizontal categorizations of cards on the Kanban board.  It is used for grouping of cards, which brings transparency to the workflow process.
 

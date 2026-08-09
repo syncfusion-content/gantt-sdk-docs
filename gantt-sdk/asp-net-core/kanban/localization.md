@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Localization in ASP.NET Core Kanban Component
-description: Learn here all about Localization in Syncfusion ASP.NET Core Kanban component of Syncfusion Essential JS 2 and more.
+title: Localization in ASP.NET Core Kanban | Syncfusion
+description: Learn how to implement localization and internationalization in Syncfusion ASP.NET Core Kanban for multi-language support.
+keywords: asp-net-core kanban localization, syncfusion kanban, internationalization, i18n
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/localization
 platform: gantt-sdk
-control: Localization
-publishingplatform: gantt-sdk
+control: Localization - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Globalization
+# Globalization and Localization Support in ASP.NET Core Kanban
 
 The localization library allows you to localize the default text content of the Kanban to different cultures using the `locale` property.
 

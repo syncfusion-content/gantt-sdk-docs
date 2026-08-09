@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Validation in ASP.NET Core Kanban Component
-description: Learn here all about Validation in Syncfusion ASP.NET Core Kanban component of Syncfusion Essential JS 2 and more.
+title: Validation in ASP.NET Core Kanban | Syncfusion
+description: Learn how to implement data validation and constraints in Syncfusion ASP.NET Core Kanban for data integrity.
+keywords: asp-net-core kanban validation, syncfusion kanban, data validation, constraints
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/validation
 platform: gantt-sdk
-control: Validation
-publishingplatform: gantt-sdk
+control: WIP Validation - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
 
-# Validation
+# WIP Validation and Work-in-Progress Limits in ASP.NET Core Kanban
 
 Validate particular column using the `minCount` or `maxCount` properties. The corresponding columns gets different appearance when validation fails. In default layout, `constraintType` property accept only `column` type. In swimlane layout, accept both `column` and `swimlane` constraint type.
 

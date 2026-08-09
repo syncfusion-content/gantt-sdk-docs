@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Virtual scrolling in JavaScript Kanban control | Syncfusion
-description: Learn here all about Virtual Scrolling in Syncfusion JavaScript Kanban control of Syncfusion Essential JS 2 and more.
+title: Virtual Scrolling in JavaScript Kanban | Syncfusion
+description: Learn how to implement virtual scrolling in Syncfusion JavaScript Kanban for efficient rendering of large datasets.
+keywords: javascript kanban virtual scrolling, syncfusion kanban, scrolling, performance
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/kanban/virtual-scrolling
 platform: gantt-sdk
-control: Virtual scrolling 
-publishingplatform: gantt-sdk
+control: Virtual Scrolling - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Virtualization in JavaScript Kanban control
+# Virtual Scrolling and Performance in JavaScript Kanban
 
 Kanban allows you to load a large amount of data without any performance degradation. This feature can be enabled by setting the [`enableVirtualization`](../api/kanban/#enablevirtualization) property in the Kanban to `true`.
 

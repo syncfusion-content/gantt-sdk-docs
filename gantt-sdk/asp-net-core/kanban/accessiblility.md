@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Accessiblility in Syncfusion ASP.NET Core Kanban Control
-description: Learn here all about Accessiblility in Syncfusion ASP.NET Core Kanban control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ASP.NET Core Kanban | WCAG, ARIA | Syncfusion
+description: Learn how to implement accessibility in Syncfusion ASP.NET Core Kanban with WCAG 2.2, ARIA labels, keyboard navigation, and Section 508 compliance.
+keywords: asp-net-core kanban accessibility, wcag, aria, section 508, keyboard navigation, screen reader, syncfusion kanban
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/accessibility
 platform: gantt-sdk
-control: Accessiblility
-publishingplatform: gantt-sdk
+control: Accessibility - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Accessibility in ASP.NET Core Kanban control
+# Accessibility and ARIA Compliance in ASP.NET Core Kanban
 
 The Kanban control has been designed, keeping in mind the WAI-ARIA specifications, and applies the WAI-ARIA roles, states, and properties. This control is characterized by complete ARIA accessibility support that makes it easy for people who use assistive technologies (AT) or those who completely rely on keyboard navigation.
 

@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Usage of Cards and its Layout in Syncfusion ASP.NET MVC Kanban Component
-description: Learn here all about Cards in Syncfusion ASP.NET MVC Kanban component of Syncfusion Essential JS 2 and more.
+title: Cards in ASP.NET MVC Kanban | Syncfusion
+description: Learn how to customize card layout, content, and interactions in Syncfusion ASP.NET MVC Kanban with practical examples and configuration guidance.
+keywords: asp-net-mvc kanban cards, syncfusion kanban, task cards, kanban board
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/kanban/cards
 platform: gantt-sdk
-control: Cards
-publishingplatform: gantt-sdk
+control: Cards - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
 
-# Cards in ASP.NET MVC Kanban component
+# Cards Customization and Layout Options in ASP.NET MVC Kanban
 
 The cards are main elements in Kanban board, which represent the task information with header and content. The header and content of a card is fetched from the corresponding mapping fields. The card layout can be customized with template also.
 

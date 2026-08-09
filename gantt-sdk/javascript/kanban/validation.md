@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Validation in JavaScript Kanban control | Syncfusion
-description: Learn here all about Validation in Syncfusion JavaScript Kanban control of Syncfusion Essential JS 2 and more.
+title: Validation in JavaScript Kanban | Syncfusion
+description: Learn how to implement data validation and constraints in Syncfusion JavaScript Kanban for data integrity.
+keywords: javascript kanban validation, syncfusion kanban, data validation, constraints
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/kanban/validation
 platform: gantt-sdk
-control: Validation 
-publishingplatform: gantt-sdk
+control: WIP Validation - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Validation in JavaScript Kanban control
+# WIP Validation and Work-in-Progress Limits in JavaScript Kanban
 
 Validate particular column using the `minCount` or `maxCount` properties. The corresponding columns gets different appearance when validation fails. In default layout, `constraintType` property accept only `Column` type. In swimlane layout, accept both `Column` and `Swimlane` constraint type.
 
