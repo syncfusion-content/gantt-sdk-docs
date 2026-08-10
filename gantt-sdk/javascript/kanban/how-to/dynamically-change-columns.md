@@ -4,7 +4,6 @@ title: Dynamically change columns in JavaScript Kanban control | Syncfusion
 description: Learn here all about Dynamically change columns in Syncfusion JavaScript Kanban control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Dynamically change columns
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

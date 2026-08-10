@@ -3,8 +3,7 @@ layout: post
 title: Search cards in JavaScript Kanban control | Syncfusion
 description: Learn here all about Search cards in Syncfusion JavaScript Kanban control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Search cards 
-publishingplatform: gantt-sdk
+control: Search cards
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -17,7 +16,7 @@ In the following sample, the searching operation starts as soon as you start typ
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt-sdk/javascript/kanban/search-cards-cs1/index.ts %}
 {% endhighlight %}
@@ -25,7 +24,7 @@ In the following sample, the searching operation starts as soon as you start typ
 {% include code-snippet/gantt-sdk/javascript/kanban/search-cards-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/kanban/search-cards-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}

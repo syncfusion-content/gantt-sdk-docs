@@ -4,7 +4,6 @@ title: Header double click in JavaScript Kanban control | Syncfusion
 description: Learn here all about Header double click in Syncfusion JavaScript Kanban control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Header double click
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

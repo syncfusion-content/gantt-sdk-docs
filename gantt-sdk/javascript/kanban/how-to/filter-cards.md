@@ -4,7 +4,6 @@ title: Filter cards in JavaScript Kanban control | Syncfusion
 description: Learn here all about Filter cards in Syncfusion JavaScript Kanban control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Filter cards
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

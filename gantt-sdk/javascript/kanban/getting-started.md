@@ -21,7 +21,7 @@ Before you begin, make sure your environment meets the following requirements:
 * A modern browser with ES6+ support (latest Chrome, Edge, Firefox, or Safari).
 * A text editor (for example, Visual Studio Code).
 * (Optional) A local web server such as `npx http-server`, the VS Code Live Server extension, or any static file server. A local server is required when loading scripts from a CDN or when the page needs `fetch`/module behavior.
-* If you choose the **local scripts** path, the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/gantt-sdk/confirm) build must be installed on your machine.
+* If you choose the **local scripts** path, the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/gantt-sdk) build must be installed on your machine.
 
 ## Supported themes and versions
 
