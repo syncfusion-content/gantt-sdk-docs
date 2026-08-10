@@ -4,7 +4,6 @@ title: Data Binding in Syncfusion ASP.NET MVC Kanban Component
 description: Learn here all about Data Binding in Syncfusion ASP.NET MVC Kanban component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Data Binding
-publishingplatform: gantt-sdk
 documentation: ug
 ---
 

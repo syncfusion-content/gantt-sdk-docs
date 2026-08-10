@@ -4,7 +4,6 @@ title: Getting Started with ASP.NET MVC Kanban Control | Syncfusion
 description: Checkout and learn about getting started with ASP.NET MVC Kanban control of Syncfusion Essential JS 2 and more details.
 platform: gantt-sdk
 control: Getting Started
-publishingplatform: gantt-sdk
 documentation: ug
 ---
 
