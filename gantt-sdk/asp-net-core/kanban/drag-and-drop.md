@@ -23,7 +23,7 @@ The following drag and drop types are available in the Kanban board.
     * Kanban to Kanban
     * Kanban to External source and vice versa.
 
-N> Dropped card position varies based on the `e-kanban-sortsettings` property.
+N> Dropped card position varies based on the `e-kanban-sortSettings` property.
 
 ## Internal drag and drop
 
@@ -70,7 +70,7 @@ In the following example, disable the drag and drop behavior on the Kanban board
 
 By default, Swimlane allows drag and drop across the columns within the swimlane row. Kanban does not allow dragging the cards across the swimlane rows.
 
-Enabling the `dragAndDrop` property allows you to drag the cards across the swimlane rows, which is specified inside the `e-kanban-swimlanesettings` property.
+Enabling the `dragAndDrop` property allows you to drag the cards across the swimlane rows, which is specified inside the `e-kanban-swimlaneSettings` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

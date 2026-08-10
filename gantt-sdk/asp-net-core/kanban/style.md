@@ -2,7 +2,7 @@
 layout: post
 title: Styling and Theming in ASP.NET Core Kanban | Syncfusion
 description: Learn how to customize styles, themes, and appearance in Syncfusion ASP.NET Core Kanban with practical CSS and theming guidelines.
-keywords: asp-net-core kanban styling, syncfusion kanban, theme, css, appearance
+keywords: asp-net-core kanban styling, syncfusion kanban, theme, CSS, appearance
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/style
 platform: gantt-sdk
 control: Styling - Kanban
@@ -14,7 +14,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 To modify the Kanban appearance, you need to override the default CSS of Kanban. Also, you have an option to create your own custom theme using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material). Find the list of CSS classes in Kanban.
 
-| Css class | Purpose |
+| CSS class | Purpose |
 |-------|---------|
 | .e-kanban .e-kanban-table | customize the kanban. |
 | .e-kanban .e-kanban-header .e-header-cells | Header cells of kanban. |
