@@ -1,17 +1,18 @@
 ---
 layout: post
-title: Zooming action in Syncfusion ASP.NET MVC Gantt Component
-description: Learn here all about zooming in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Zooming in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to implement zooming functionality in Syncfusion ASP.NET MVC Gantt Chart timeline for detailed project view and scale adjustments.
+keywords: asp.net mvc gantt zooming, zoom in, zoom out, timeline zoom, zoom levels, gantt zoom, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/time-line/zooming
 platform: gantt-sdk
-control: Time Line
-publishingplatform: gantt-sdk
+control: Timeline - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
+# Adjusting Zoom Levels and Timeline Scaling in ASP.NET MVC Gantt Chart
 
-# Zooming action in gantt control
-
-The zooming support provides options to increase or decrease the width of timeline cells and also provides options to change the timeline units dynamically. This support enables you to view the tasks in a project clearly from minute to decade timespan. To enable the zooming features, define the `ZoomIn`, `ZoomOut`, and `ZoomToFit` items to [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Toolbar) items collections, and this action can be performed on external actions such as button click using the `zoomIn`, `zoomOut`, and `fitToProject` built-in methods. The following zooming options are available to view the project:
+The zooming support provides options to increase or decrease the width of timeline cells and also provides options to change the timeline units dynamically. This support enables you to view the tasks in a project clearly from minute to decade timespan. To enable the zooming features, define the `ZoomIn`, `ZoomOut`, and `ZoomToFit` items to [`Toolbar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Toolbar) items collections, and this action can be performed on external actions such as button click using the `zoomIn`, `zoomOut`, and `fitToProject` built-in methods. The following zooming options are available to view the project:
 
 ## Zoom in
 
@@ -48,8 +49,6 @@ This support is used to view all the tasks available in a project within availab
 {% endtabs %}
 {% endif %}
 
-
-
 ## Customizing zooming levels
 
 In Gantt, the zoom in and zoom out actions are performed based on the predefined zooming levels in the `zoomingLevels` property. You can customize the zooming actions by defining the required zooming collection to the `zoomingLevels` property.
@@ -77,14 +76,13 @@ In Gantt, the zoom in and zoom out actions are performed based on the predefined
 {% endtabs %}
 {% endif %}
 
-
-
 ## Zoom action by methods
 
 You can perform the various zoom actions dynamically or on external click action using the following methods:
-* Zoom in - `zoomIn`
-* Zoom out - `zoomOut`
-* Fit to project - `fitToProject`
+
+- Zoom in - `zoomIn`
+- Zoom out - `zoomOut`
+- Fit to project - `fitToProject`
 
 {% if page.publishingplatform == "aspnet-core" %}
 
