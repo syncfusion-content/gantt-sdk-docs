@@ -6,7 +6,6 @@ keywords: vue gantt scrolling, virtual scrolling, horizontal scroll, vertical sc
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/scrolling
 platform: gantt-sdk
 control: Scrolling - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

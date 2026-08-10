@@ -6,7 +6,6 @@ keywords: vue gantt columns, column configuration, column mapping, field binding
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/columns/columns
 platform: gantt-sdk
 control: Columns - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

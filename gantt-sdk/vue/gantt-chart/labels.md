@@ -6,7 +6,6 @@ keywords: vue gantt task labels, label settings, left label, right label, task l
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/labels
 platform: gantt-sdk
 control: Task Labels - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

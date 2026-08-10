@@ -6,7 +6,6 @@ keywords: vue gantt styling, css customization, theme customization, appearance,
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/style-and-appearance
 platform: gantt-sdk
 control: Style and Appearance - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
