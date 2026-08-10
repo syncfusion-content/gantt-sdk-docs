@@ -1,12 +1,11 @@
 ---
 layout: post
 title: Drag and Drop from Another Component in Vue Gantt Chart | Syncfusion
-description: Learn how to drag and drop records from another component into Syncfusion Vue Gantt Chart.
+description: Learn how to drag and drop records from another component into the Syncfusion Vue Gantt Chart and update task data during drag-and-drop operations.
 keywords: vue gantt drag drop, drag from another component, inter-component drag, drag and drop, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/how-to/drag-and-drop-from-another
 platform: gantt-sdk
 control: Drag and Drop from Another - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

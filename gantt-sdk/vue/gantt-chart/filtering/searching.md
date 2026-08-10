@@ -6,7 +6,6 @@ keywords: vue gantt searching, search records, toolbar search, search method, se
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/filtering/searching
 platform: gantt-sdk
 control: Searching - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

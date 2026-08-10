@@ -6,7 +6,6 @@ keywords: vue gantt split merge tasks, task segments, task splitting, task mergi
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/managing-tasks/splitting-and-merging-tasks
 platform: gantt-sdk
 control: Splitting and Merging Tasks - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
