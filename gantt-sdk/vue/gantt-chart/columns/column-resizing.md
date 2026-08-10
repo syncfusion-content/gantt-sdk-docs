@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Column resizing in Vue Gantt Chart Component | Syncfusion
-description: Learn all about column resizing in the Syncfusion Vue Gantt Chart Component of Essential JS 2 and more.
-control: Column resizing 
+title: Column Resizing in Vue Gantt Chart | Syncfusion
+description: Learn how to enable column resizing in Syncfusion Vue Gantt Chart to adjust column widths by dragging or double-clicking.
+keywords: vue gantt column resizing, resize columns, auto fit, column width, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/columns/column-resizing
 platform: gantt-sdk
+control: Column Resizing - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Column resizing in Vue Gantt Chart Component
+# Column Resizing with Dynamic Width Adjustment in Vue Gantt Chart
 
 Column width can be adjusted by clicking and dragging the right edge of a column header. While dragging, the column width updates immediately. Each column can also be auto‑resized by double‑clicking the right edge of the column header, which adjusts the width to fit the widest cell content.
 

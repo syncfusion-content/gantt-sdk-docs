@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Toolbar in TypeScript Gantt Chart Control | Syncfusion
-description: Learn here all about toolbar in Syncfusion TypeScript Gantt Chart control of Syncfusion Essential JS 2 and more.
+title: Toolbar in TypeScript Gantt Chart | Syncfusion
+description: Learn how to configure toolbar in Syncfusion TypeScript Gantt Chart with built-in action buttons, custom items, and templates for improved user interactions.
+keywords: typescript gantt toolbar, toolbar items, custom toolbar, action buttons, toolbar templates, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/tool-bar
 platform: gantt-sdk
-control: Toolbar 
-publishingplatform: gantt-sdk
+control: Toolbar - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Toolbar in TypeScript Gantt Chart Control
+# Toolbar with Built-in and Custom Items in TypeScript Gantt Chart
 
 The TypeScript Gantt Chart control includes built-in toolbar support for executing common actions such as editing, searching, and navigating the timeline. The [toolbar](../api/gantt#toolbar) property accepts the collection of built-in toolbar items and `ItemModel` objects for custom toolbar items.
 
@@ -330,3 +331,5 @@ The following example demonstrates how to integrate an [AutoComplete](../../auto
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/customToolbarItems-cs1" %}
 {% endif %}
+
+

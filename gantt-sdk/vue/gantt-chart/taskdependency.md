@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Task Dependency in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about Taskdependency in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Taskdependency 
+title: Task Dependency in Vue Gantt Chart | Syncfusion
+description: Learn how to establish task dependencies in Syncfusion Vue Gantt Chart to manage task relationships and project scheduling.
+keywords: vue gantt task dependency, task relationships, predecessors, successors, dependency types, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/task-dependency
 platform: gantt-sdk
+control: Task Dependency - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Task Dependency in Vue Gantt Chart Component
+# Managing Task Dependencies in Vue Gantt Chart
 
 Task dependency or task relationship can be established between two tasks in Gantt. This dependency affects the project schedule. If you change the predecessor of a task, it will affect the successor task, which will affect the next task, and so on. Relationship can be established between parent-parent tasks, child-child tasks, parent-child and child-parent task.
 

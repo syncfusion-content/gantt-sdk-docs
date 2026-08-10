@@ -1,20 +1,22 @@
 ---
 layout: post
-title: Zooming in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about Zooming in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Zooming 
+title: Zooming in Vue Gantt Chart | Syncfusion
+description: Learn how to zoom timeline in Vue Gantt Chart to change timeline cell widths and timeline units dynamically.
+keywords: vue gantt zooming, zoom in out, timeline zoom, zoom to fit, zoom level, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/time-line/zooming
 platform: gantt-sdk
+control: Zooming - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Zooming in Vue Gantt Chart Component
+# Adjusting Zoom Levels and Timeline Scaling in Vue Gantt Chart
 
 The zooming support provides options to increase or decrease the width of timeline cells and also provides options to change the timeline units dynamically. This support enables you to view the tasks in a project clearly from minute to decade timespan. To enable the zooming features, define the `ZoomIn`, `ZoomOut`, and `ZoomToFit` items to toolbar items collections, and this action can be performed on external actions such as button click using the [zoomIn](https://ej2.syncfusion.com/vue/documentation/api/gantt#zoomin), [zoomOut](https://ej2.syncfusion.com/vue/documentation/api/gantt#zoomout), and [fitToProject](https://ej2.syncfusion.com/vue/documentation/api/gantt#fittoproject) built-in methods. The following zooming options are available to view the project:
 
 ## Zoom in
 
-This support is used to increase the timeline width and timeline unit from years to minutestimespan. When the `ZoomIn` icon was clicked, the timeline cell width is increased when the cellsize exceeds the specified range and the timeline unit is changed based on the current zoom levels.
+This support is used to increase the timeline width and timeline unit from years to minutes timespan. When the `ZoomIn` icon was clicked, the timeline cell width is increased when the cell size exceeds the specified range and the timeline unit is changed based on the current zoom levels.
 
 ## Zoom out
 

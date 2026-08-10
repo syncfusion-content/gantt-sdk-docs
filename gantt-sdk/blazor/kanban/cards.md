@@ -1,19 +1,22 @@
 ---
 layout: post
-title: Cards in Blazor Kanban Component | Syncfusion®
-description: Checkout and learn here all the features about cards in Blazor Kanban component and much more details.
+title: Cards in Blazor Kanban | Syncfusion
+description: Learn how to customize card layout, content, and interactions in Syncfusion Blazor Kanban with practical examples and configuration guidance.
+keywords: blazor kanban cards, syncfusion kanban, task cards, kanban board
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/kanban/cards
 platform: gantt-sdk
-control: Kanban
+control: Cards - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Working with Cards in Blazor Kanban Component
+# Cards Customization and Layout Options in Blazor Kanban
 
 The cards are main elements in the [Blazor Kanban Board](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board), which represents the task information with header and content. The header and content of a card is fetched from the corresponding mapping fields. The card layout can be customized with template also.
 
 ## Header
 
-The card header is achieved by mapping the `HeaderField` property, which is placed inside the `KanbanCardSettings` property. By default, the `ShowHeader` property is enabled by Kanban board that is used to display the header at the top of the card.
+The card header is achieved by mapping the [HeaderField](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.KanbanCardSettings.html#Syncfusion_Blazor_Kanban_KanbanCardSettings_HeaderField) property, which is placed inside the [KanbanCardSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.KanbanCardSettings.html) property. By default, the [ShowHeader](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.KanbanCardSettings.html#Syncfusion_Blazor_Kanban_KanbanCardSettings_ShowHeader) property is enabled by Kanban board that is used to display the header at the top of the card.
 
 N> The `HeaderField` property must be a unique datasource value to avoid the duplication of card data.
 
@@ -36,11 +39,11 @@ In the following demo, the `ShowHeader` property is disabled on Kanban board.
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()
@@ -81,11 +84,11 @@ In the following demo, the `ShowHeader` property is disabled on Kanban board.
 
 ## Content
 
-The card's content is fetched from data source using the `ContentField` property, which is placed inside the `KanbanCardSettings` property. If the `ContentField` property is not used, card is rendered with empty content.
+The card's content is fetched from data source using the [ContentField](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.KanbanCardSettings.html#Syncfusion_Blazor_Kanban_KanbanCardSettings_ContentField) property, which is placed inside the `KanbanCardSettings` property. If the `ContentField` property is not used, card is rendered with empty content.
 
 ## Tags
 
-The card tags are used to display the tag text with the background color. Each tag text is separated and shown below the card content. It can be achieved by mapping the data key to the `TagsField` property, which is placed inside the `KanbanCardSettings` property.
+The card tags are used to display the tag text with the background color. Each tag text is separated and shown below the card content. It can be achieved by mapping the data key to the [TagsField](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.KanbanCardSettings.html#Syncfusion_Blazor_Kanban_KanbanCardSettings_TagsField) property, which is placed inside the `KanbanCardSettings` property.
 
 N> The mapped datasource key value contains single or multiple tags. If it is multiple tags, each tag will be separated by a comma in the datasource.
 
@@ -105,27 +108,27 @@ N> The mapped datasource key value contains single or multiple tags. If it is mu
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
+        public string? Id { get; set; }
         public int ListId { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Type { get; set; }
-        public string Priority { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Type { get; set; }
+        public string? Priority { get; set; }
         public List<string> CardTags { get; set; }
-        public string Tags { get; set; }
+        public string? Tags { get; set; }
         public double Estimate { get; set; }
-        public string Assignee { get; set; }
+        public string? Assignee { get; set; }
         public int RankId { get; set; }
-        public string Color { get; set; }
-        public string Value { get; set; }
-        public string OrderID { get; set; }
-        public string Size { get; set; }
-        public string ImageURL { get; set; }
-        public string Description { get; set; }
-        public string Category { get; set; }
-        public string Price { get; set; }
-        public string AssigneeKey { get; set; }
+        public string? Color { get; set; }
+        public string? Value { get; set; }
+        public string? OrderID { get; set; }
+        public string? Size { get; set; }
+        public string? ImageURL { get; set; }
+        public string? Description { get; set; }
+        public string? Category { get; set; }
+        public string? Price { get; set; }
+        public string? AssigneeKey { get; set; }
         public List<string> ClassName { get; set; }
     }
 
@@ -150,7 +153,7 @@ N> The mapped datasource key value contains single or multiple tags. If it is mu
 
 ## Customizing left border color
 
-Kanban card supports to custom the left border color for all the cards. This can be achieved by mapping the data key value to the `GrabberField` property, which is placed inside the `KanbanCardSettings` property. The mapped data key value will be directly assigned to each card element border left color property.
+Kanban card supports to custom the left border color for all the cards. This can be achieved by mapping the data key value to the [GrabberField](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.KanbanCardSettings.html#Syncfusion_Blazor_Kanban_KanbanCardSettings_GrabberField) property, which is placed inside the `KanbanCardSettings` property. The mapped data key value will be directly assigned to each card element border left color property.
 
 N> By default, the card border left color width is `3px`.
 
@@ -170,27 +173,27 @@ N> By default, the card border left color width is `3px`.
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
+        public string? Id { get; set; }
         public int ListId { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Type { get; set; }
-        public string Priority { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Type { get; set; }
+        public string? Priority { get; set; }
         public List<string> CardTags { get; set; }
-        public string Tags { get; set; }
+        public string? Tags { get; set; }
         public double Estimate { get; set; }
-        public string Assignee { get; set; }
+        public string? Assignee { get; set; }
         public int RankId { get; set; }
-        public string Color { get; set; }
-        public string Value { get; set; }
-        public string OrderID { get; set; }
-        public string Size { get; set; }
-        public string ImageURL { get; set; }
-        public string Description { get; set; }
-        public string Category { get; set; }
-        public string Price { get; set; }
-        public string AssigneeKey { get; set; }
+        public string? Color { get; set; }
+        public string? Value { get; set; }
+        public string? OrderID { get; set; }
+        public string? Size { get; set; }
+        public string? ImageURL { get; set; }
+        public string? Description { get; set; }
+        public string? Category { get; set; }
+        public string? Price { get; set; }
+        public string? AssigneeKey { get; set; }
         public List<string> ClassName { get; set; }
     }
 
@@ -215,7 +218,7 @@ N> By default, the card border left color width is `3px`.
 
 ## Rendering custom footer elements
 
-The card allows to render the custom elements based on the given class names inside the `e-card-footer` element. It can be achieved by mapping the data key to the `FooterCssField` property, which is placed inside the `KanbanCardSettings` property. It will help to create your own class name elements inside the `e-card-footer` element. The mapped datasource key value contains single or multiple class names. If it is multiple class names, each class name will be separated by a comma in the datasource.
+The card allows to render the custom elements based on the given class names inside the `e-card-footer` element. It can be achieved by mapping the data key to the [FooterCssField](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.KanbanCardSettings.html#Syncfusion_Blazor_Kanban_KanbanCardSettings_FooterCssField) property, which is placed inside the `KanbanCardSettings` property. It will help to create your own class name elements inside the `e-card-footer` element. The mapped datasource key value contains single or multiple class names. If it is multiple class names, each class name will be separated by a comma in the datasource.
 
 In the following demo, images and icons are rendered using the `FooterCssField` property.
 
@@ -319,27 +322,27 @@ In the following demo, images and icons are rendered using the `FooterCssField` 
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
+        public string? Id { get; set; }
         public int ListId { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Type { get; set; }
-        public string Priority { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Type { get; set; }
+        public string? Priority { get; set; }
         public List<string> CardTags { get; set; }
-        public string Tags { get; set; }
+        public string? Tags { get; set; }
         public double Estimate { get; set; }
-        public string Assignee { get; set; }
+        public string? Assignee { get; set; }
         public int RankId { get; set; }
-        public string Color { get; set; }
-        public string Value { get; set; }
-        public string OrderID { get; set; }
-        public string Size { get; set; }
-        public string ImageURL { get; set; }
-        public string Description { get; set; }
-        public string Category { get; set; }
-        public string Price { get; set; }
-        public string AssigneeKey { get; set; }
+        public string? Color { get; set; }
+        public string? Value { get; set; }
+        public string? OrderID { get; set; }
+        public string? Size { get; set; }
+        public string? ImageURL { get; set; }
+        public string? Description { get; set; }
+        public string? Category { get; set; }
+        public string? Price { get; set; }
+        public string? AssigneeKey { get; set; }
         public List<string> ClassName { get; set; }
     }
 
@@ -364,7 +367,7 @@ In the following demo, images and icons are rendered using the `FooterCssField` 
 
 ## Customizing card layout with templates
 
-You can customize the default card layout using template as per your application needs. This can be achieved by template of the `KanbanCardSettings` property.
+The default card layout can be customized using the [Template](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.KanbanCardSettings.html#Syncfusion_Blazor_Kanban_KanbanCardSettings_Template) property of the `KanbanCardSettings`.
 
 {% youtube
 "youtube:https://www.youtube.com/watch?v=PjTgXuibei8" %}
@@ -423,13 +426,13 @@ You can customize the default card layout using template as per your application
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Type { get; set; }
-        public string Priority { get; set; }
-        public string Assignee { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Type { get; set; }
+        public string? Priority { get; set; }
+        public string? Assignee { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()
@@ -470,7 +473,7 @@ You can customize the default card layout using template as per your application
 
 ## Selection
 
-Kanban board allows to select single and multiple selection of cards when mouse or keyboard interactions using `SelectionType` property. The property contains following types.
+Kanban board allows to select single and multiple selection of cards when mouse or keyboard interactions using [SelectionType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.KanbanCardSettings.html#Syncfusion_Blazor_Kanban_KanbanCardSettings_SelectionType) property. The property contains following types.
 
 * **None**: No cards are allowed to select from Kanban board.
 * **Single**: Only one card allowed to select at a time in the Kanban board.
@@ -497,11 +500,11 @@ Select multiple cards randomly using Ctrl + mouse click and select the multiple 
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()

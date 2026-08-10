@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Maintaining data in server in TypeScript Gantt control | Syncfusion
-description: Learn here all about Maintaining data in server in Syncfusion TypeScript Gantt control of Syncfusion Essential JS 2 and more.
+title: Maintain Data on Server in TypeScript Gantt Chart | Syncfusion
+description: Learn to maintain task data on server in Syncfusion TypeScript Gantt Chart with synchronization, CRUD operations, and data persistence strategies.
+keywords: TypeScript gantt maintain server data, data synchronization, crud operations, server sync, persistance, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/managing-tasks/maintaining-data-in-server
 platform: gantt-sdk
-control: Maintaining data in server 
-publishingplatform: gantt-sdk
+control: Server-Side Data - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Maintaining data in server in TypeScript Gantt control
+# Maintaining Data Persistence on Server in TypeScript Gantt Chart
 
 All the modified data in Gantt control can be maintained in the database using RESTful web services.
 

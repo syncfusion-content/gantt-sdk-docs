@@ -1,15 +1,18 @@
 ---
 layout: post
-title: Tooltip in Blazor Kanban Component | Syncfusion®
-description: Checkout and learn here all about tooltip in Blazor Kanban component and much more details.
+title: Tooltip in Blazor Kanban | Syncfusion
+description: Learn how to add informative tooltips to cards and elements in Syncfusion Blazor Kanban for clearer context and better user guidance.
+keywords: blazor kanban tooltip, syncfusion kanban, hover info, card hints
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/kanban/tooltip
 platform: gantt-sdk
-control: Kanban
+control: Tooltip - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# How to Use Tooltips in Blazor Kanban Component
+# Tooltips Configuration and Hover Information in Blazor Kanban
 
-Tooltips in the Blazor Kanban component display card details when users hover over card elements. This behavior is enabled using the [EnableTooltip](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.SfKanban-1.html#Syncfusion_Blazor_Kanban_SfKanban_1_EnableTooltip) property, and the content is dynamically derived from the card's data.
+Tooltips in the [Blazor Kanban Board](https://www.syncfusion.com/blazor-components/blazor-kanban-board) display card details when users hover over card elements. This behavior is enabled using the [EnableTooltip](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.SfKanban-1.html#Syncfusion_Blazor_Kanban_SfKanban_1_EnableTooltip) property, and the content is dynamically derived from the card's data.
 
 N> To display tooltips on custom elements within the Kanban board, assign the `e-tooltip-text` class to the target element. This ensures the tooltip is triggered correctly.
 
@@ -30,11 +33,11 @@ N> To display tooltips on custom elements within the Kanban board, assign the `e
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()

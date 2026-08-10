@@ -1,15 +1,18 @@
 ---
 layout: post
-title: Styling and Appearance in Blazor Kanban Component | Syncfusion®
-description: Checkout and learn here all about styling and appearance in Blazor Kanban component, it's elements and more.
+title: Styling in Blazor Kanban | Syncfusion
+description: Learn how to customize themes, appearance, and visual styles in Syncfusion Blazor Kanban with built-in options and CSS flexibility.
+keywords: blazor kanban styling, syncfusion kanban, appearance, themes
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/kanban/style
 platform: gantt-sdk
-control: Kanban
+control: Styling - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Styling and Appearance in Blazor Kanban Component
+# Styling and Appearance with CSS and Theme Support in Blazor Kanban
 
-To modify the Kanban appearance, you need to override the default CSS of Kanban. Also, you have an option to create your own custom theme using our [Theme Studio](https://blazor.syncfusion.com/themestudio/?theme=material). Find the list of CSS classes in Kanban.
+Customize the appearance of the [Blazor Kanban Board](https://www.syncfusion.com/blazor-components/blazor-kanban-board) by overriding its default CSS styles. Custom themes can also be created using [Theme Studio](https://blazor.syncfusion.com/themestudio/?theme=material). Refer to the list of Kanban CSS classes for additional styling options.
 
 | CSS class | Purpose |
 |-------|---------|

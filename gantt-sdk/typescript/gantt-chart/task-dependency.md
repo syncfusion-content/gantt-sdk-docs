@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Task Dependency in TypeScript Gantt Chart Control | Syncfusion
-description: Learn here all about task dependency in Syncfusion TypeScript Gantt Chart control of Syncfusion Essential JS 2 and more.
+title: Task Dependency in TypeScript Gantt Chart | Syncfusion
+description: Learn how to configure task dependencies in Syncfusion TypeScript Gantt Chart to establish relationships between tasks and manage project scheduling.
+keywords: typescript gantt task dependency, predecessors, task relationships, dependency types, predecessor links, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/task-dependency
 platform: gantt-sdk
-control: Task Dependency 
-publishingplatform: gantt-sdk
+control: Task Dependency - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Task Dependency in TypeScript Gantt Chart Control
+# Managing Task Dependencies in TypeScript Gantt Chart
 
 Task dependency in the [TypeScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control establishes relationships between tasks, affecting scheduling where changes to predecessors impact successors. Dependencies are categorized into four types—Start to Start (SS), Start to Finish (SF), Finish to Start (FS), and Finish to Finish (FF)—mapped via the [taskFields.dependency](../api/gantt/taskFields#dependency) property in the data source. Parent dependencies are enabled by default with [allowParentDependency](../api/gantt#allowparentdependency) set to **true**, allowing relationships between parent-parent, child-child, parent-child, and child-parent tasks. Offsets support day, hour, or minute units for precise timing, and validation modes handle conflicts during editing via the [actionBegin](../api/gantt#actionbegin) event. Connector lines are customized using [connectorLineWidth](../api/gantt#connectorlinewidth) and [connectorLineBackground](../api/gantt#connectorlinebackground), with the `queryTaskbarInfo` event enabling dynamic styling. Public methods like [addPredecessor](../api/gantt#addpredecessor) and [removePredecessor](../api/gantt#removepredecessor) allow programmatic management, ensuring accurate visualization with ARIA labels for accessibility and responsive scaling for mobile views.
 
@@ -51,6 +52,12 @@ The following example establishes dependencies. This code renders connector line
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/task-dependency" %}
 {% endif %}
+
+> - Dependencies between tasks under the same parent are not supported.
+> - Dependencies between tasks in different parent groups are supported when the `allowParentDependency` property is enabled.
+> - The format of the dependency string depends on the data type of the [id](https://ej2.syncfusion.com/documentation/api/gantt/taskfields#id) field mapped in the data source:
+>   - If the `id` field is an **integer**, the compact format (for example, `3FS`) can be used without a space between the `id` and the dependency type.
+>   - If the `id` field is a **string** or **GUID**, the format `[id] [PredecessorType]` is mandatory, with a single space between the `id` and the predecessor type (for example, `TASK-001 FS`). The Gantt Chart parses the two parts based on this space, so the space is required to correctly identify the predecessor type.
 
 ## Understand task relationship types
 
@@ -384,3 +391,4 @@ By default, Gantt Chart task dates are validated based on predecessor values. To
 - [How to configure task constraints?](./task-constraints)
 - [How to customize taskbars?](./taskbar)
 - [How to enable critical path?](./critical-path)
+

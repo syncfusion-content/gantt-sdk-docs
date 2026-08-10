@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Column spanning in Vue Gantt Chart Component | Syncfusion
-description: Learn all about column spanning in the Syncfusion Vue Gantt Chart Component of Essential JS 2 and more.
-control: Column spanning 
+title: Column Spanning in Vue Gantt Chart | Syncfusion
+description: Learn how to span adjacent cells in Syncfusion Vue Gantt Chart columns using column spanning feature.
+keywords: vue gantt column spanning, cell spanning, colspan, column layout, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/columns/column-spanning
 platform: gantt-sdk
+control: Column Spanning - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Column spanning in Vue Gantt Chart Component
+# Column Spanning with Cell Merge Support in Vue Gantt Chart
 
 The Gantt Chart component provides an option to span adjacent cells. To span cells, define the [colSpan](https://ej2.syncfusion.com/vue/documentation/api/gantt/queryCellInfoEventArgs#colspan) property inside the [queryCellInfo](https://ej2.syncfusion.com/vue/documentation/api/gantt/queryCellInfoEventArgs) event.
 

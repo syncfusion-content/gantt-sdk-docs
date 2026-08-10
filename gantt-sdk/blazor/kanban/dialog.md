@@ -1,20 +1,23 @@
 ---
 layout: post
-title: Card Editing in Blazor Kanban Component | Syncfusion®
-description: Checkout and learn here all the features about card editing in Blazor Kanban component and much more details.
+title: Card Editing in Blazor Kanban | Syncfusion
+description: Learn how to edit cards, use dialogs, and validate inputs in Syncfusion Blazor Kanban to manage task details with ease.
+keywords: blazor kanban card editing, syncfusion kanban, card dialog, task editing
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/kanban/dialog
 platform: gantt-sdk
-control: Kanban
+control: Card Editing - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Card Editing in Blazor Kanban Component
+# Card Editing and Dialog Management in Blazor Kanban
 
 The [Blazor Kanban Board](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) provides built-in support to add, edit and delete a card using dialog module. Users can edit cards using the following methods:
 
 * Built-in dialog module
 * Dialog template
 
-To get started quickly with Blazor Kanban Edit Dialog using Templates, you can check on this video.
+Get started with Blazor Kanban Edit Dialog using Templates by watching this video.
 
 {% youtube
 "youtube:https://www.youtube.com/watch?v=SgiECU-SZBk" %}
@@ -53,11 +56,11 @@ KanbanSwimlaneSettings.KeyField (If applicable) | DropDown | -
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()
@@ -98,7 +101,7 @@ KanbanSwimlaneSettings.KeyField (If applicable) | DropDown | -
 
 ## Customizing Dialog Fields
 
-You can customize the default dialog fields using the [Type](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.KanbanDialogSettingsField.html#Syncfusion_Blazor_Kanban_KanbanDialogSettingsField_Type) property inside the [KanbanDialogSettingsField](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.KanbanDialogSettingsField.html#properties) property. The [Key](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.KanbanDialogSettingsField.html#Syncfusion_Blazor_Kanban_KanbanDialogSettingsField_Key) property is used to map the data source value and render the corresponding component based on the specified `Type` property.
+Customize the default dialog fields using the [Type](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.KanbanDialogSettingsField.html#Syncfusion_Blazor_Kanban_KanbanDialogSettingsField_Type) property inside the [KanbanDialogSettingsField](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.KanbanDialogSettingsField.html#properties) property. The [Key](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.KanbanDialogSettingsField.html#Syncfusion_Blazor_Kanban_KanbanDialogSettingsField_Key) property is used to map the data source value and render the corresponding component based on the specified `Type` property.
 
 The following types are available in dialog fields.
 
@@ -131,12 +134,12 @@ N> Each of the above types can be used once per custom dialog. The dialog templa
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
-        public string AssigneeName { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
+        public string? AssigneeName { get; set; }
     }
 
 
@@ -155,7 +158,7 @@ N> Each of the above types can be used once per custom dialog. The dialog templa
 
 ## Creating a Custom Dialog Template
 
-Using the dialog template, you can render your own form fields with dialog by using the `Template` property.
+The dialog template allows custom form fields to be rendered within the dialog by using the `Template` property.
 
 ```cshtml
 
@@ -255,15 +258,15 @@ Using the dialog template, you can render your own form fields with dialog by us
     private class DropDownModel
     {
         public int Id { get; set; }
-        public string Value { get; set; }
+        public string? Value { get; set; }
     }
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()
@@ -324,11 +327,11 @@ The Kanban component allows preventing the dialog from opening on card double-cl
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()
@@ -378,7 +381,7 @@ The following section explains how to retrieve edited card data on the server-si
 
 ### Using URL Adaptor for Server-Side CRUD Operations
 
-Use the [UrlAdaptor](https://blazor.syncfusion.com/documentation/data/adaptors#url-adaptor) of `SfDataManager` when binding data source for remote data. During the initial load of Kanban, data are fetched from remote data and bound to the Kanban using the [Url](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_Url) property of `SfDataManager`.
+Use the `UrlAdaptor` of `SfDataManager` when binding data source for remote data. During the initial load of Kanban, data are fetched from remote data and bound to the Kanban using the [Url](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_Url) property of `SfDataManager`.
 
 CRUD operations in Kanban can be mapped to server-side controller actions by using the properties [InsertUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_InsertUrl), [RemoveUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_RemoveUrl), [UpdateUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_UpdateUrl), and [CrudUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_CrudUrl).
 
@@ -446,11 +449,11 @@ namespace Blazor_Kanban_Crud_UrlAdaptor.Controllers
         {
 
             [JsonProperty("action")]
-            public string Action { get; set; }
+            public string? Action { get; set; }
             [JsonProperty("table")]
-            public string Table { get; set; }
+            public string? Table { get; set; }
             [JsonProperty("keyColumn")]
-            public string KeyColumn { get; set; }
+            public string? KeyColumn { get; set; }
             [JsonProperty("key")]
             public object Key { get; set; }
             [JsonProperty("value")]
@@ -471,7 +474,7 @@ namespace Blazor_Kanban_Crud_UrlAdaptor.Controllers
 
 ### Inserting a card
 
-Using the `InsertUrl` property, you can specify the controller action mapping URL to perform insert operation on the server-side.
+Using the `InsertUrl` property, the controller action mapping URL can be specified to perform the insert operation on the server side.
 
 ```cshtml
         [HttpPost]
@@ -482,7 +485,7 @@ Using the `InsertUrl` property, you can specify the controller action mapping UR
         }
 ```
 
-The newly added card data is available in the `value` parameter..
+The newly added card data is available in the `value` parameter.
 
 ### Updating a card
 
@@ -517,7 +520,7 @@ The primary key of the card to be deleted is available in the `Key` parameter.
 
 ### Performing Bulk updates
 
-Using the [CrudUrl](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_CrudUrl) property, the controller action mapping URL can be specified to perform all the CRUD operations at the server-side using a single method instead of specifying a separate controller action method for CRUD (insert, update, and delete) operations.
+Using the `CrudUrl` property, the controller action mapping URL can be specified to perform all the CRUD operations at the server-side using a single method instead of specifying a separate controller action method for CRUD (insert, update, and delete) operations.
 
 The `action` parameter of `CrudUrl` identifies the corresponding CRUD operation.
 
@@ -608,11 +611,11 @@ namespace Blazor_Kanban_Crud_UrlAdaptor.Controllers
         {
 
             [JsonProperty("action")]
-            public string Action { get; set; }
+            public string? Action { get; set; }
             [JsonProperty("table")]
-            public string Table { get; set; }
+            public string? Table { get; set; }
             [JsonProperty("keyColumn")]
-            public string KeyColumn { get; set; }
+            public string? KeyColumn { get; set; }
             [JsonProperty("key")]
             public object Key { get; set; }
             [JsonProperty("value")]

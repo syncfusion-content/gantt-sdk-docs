@@ -1,14 +1,16 @@
 ---
 layout: post
-title: PDF export in Vue Gantt Chart component | Syncfusion
-description: Learn here all about Pdf export in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Pdf export 
+title: PDF Export in Vue Gantt Chart | Syncfusion
+description: Learn how to export Vue Gantt Chart data to PDF documents using custom PDF settings, module injection, and export options to control document output.
+keywords: vue gantt pdf export, export to pdf, pdf generation, pdf export settings, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/pdf-export/pdf-export
 platform: gantt-sdk
+control: PDF Export - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# PDF Export in Vue Gantt Chart component
+# Exporting Data to PDF Format in Vue Gantt Chart
 
 PDF export allows exporting Gantt data to a PDF document. You need to use the https://ej2.syncfusion.com/vue/documentation/api/gantt#pdfexport method for exporting. To enable PDF export in the Gantt, set [allowPdfExport](https://ej2.syncfusion.com/vue/documentation/api/gantt#allowpdfexport) to true.
 

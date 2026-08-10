@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Task scheduling in TypeScript Gantt control | Syncfusion
-description: Learn here all about Task scheduling in Syncfusion TypeScript Gantt control of Syncfusion Essential JS 2 and more.
+title: Task Scheduling in TypeScript Gantt Chart | Syncfusion
+description: Master task scheduling in Syncfusion TypeScript Gantt Chart with automatic dates, duration calculations, and dependency-driven schedule management.
+keywords: typescript gantt task scheduling, schedule calculation, duration, dates, auto scheduling, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/task-scheduling
 platform: gantt-sdk
-control: Task scheduling 
-publishingplatform: gantt-sdk
+control: Task Scheduling - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Task scheduling in TypeScript Gantt control
+# Task Scheduling Modes with Auto and Manual in TypeScript Gantt Chart
 
 The Gantt provides support for automatic and manual task scheduling modes. It is used to indicate whether the start date and end date of all the tasks will be automatically validated or not. [taskMode](../api/gantt#taskmode) is the property used to change the schedule mode of a task.
 
@@ -359,3 +360,5 @@ Duration units for the tasks can also be defined along with the duration values,
 
 >NOTE:
 The edit type of the duration column in Gantt is string, to support editing the duration field along with duration units.
+
+

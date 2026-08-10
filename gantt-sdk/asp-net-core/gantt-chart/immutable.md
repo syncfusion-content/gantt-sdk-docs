@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Immutable in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Immutable in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Immutable Mode in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to use immutable mode in Syncfusion ASP.NET Core Gantt Chart for improved performance when handling large data sets and frequent updates.
+keywords: asp.net core gantt immutable, immutable mode, performance optimization, data handling, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/immutable
 platform: gantt-sdk
-control: Immutable 
-publishingplatform: gantt-sdk
+control: Immutable Mode - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Immutable in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Gantt component
+# Performance Optimization with Immutable Mode in ASP.NET Core Gantt Chart
 
 The immutable mode optimizes the Gantt re-rendering performance by using the object reference and [deep compare](https://dmitripavlutin.com/how-to-compare-objects-in-javascript/#4-deep-equality) concept. When performing the Gantt actions, it will only re-render the modified or newly added rows and prevent the re-rendering of the unchanged rows.
 

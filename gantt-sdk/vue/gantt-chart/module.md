@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Module in Vue Gantt Chart component | Syncfusion
-description: Learn here all about Module in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Module 
+title: Modules in Vue Gantt Chart | Syncfusion
+description: Learn about available modules in Syncfusion Vue Gantt Chart for feature injection and component customization.
+keywords: vue gantt modules, feature injection, module configuration, gantt features, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/module
 platform: gantt-sdk
+control: Modules - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Module in Vue Gantt Chart component
+# Feature Modules with Dependency Injection in Vue Gantt Chart
 
 The modules that are available in Gantt are as follows.
 

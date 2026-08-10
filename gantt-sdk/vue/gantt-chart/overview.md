@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Index in Vue Gantt Chart component | Syncfusion
-description: Learn here all about Index in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Index 
+title: Overview in Vue Gantt Chart | Syncfusion
+description: Learn how to use Syncfusion Vue Gantt Chart control with key features for project scheduling, task management, and timeline visualization.
+keywords: vue gantt overview, gantt chart features, project management, timeline, task scheduling, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/overview
 platform: gantt-sdk
+control: Gantt Chart Overview
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Index in Vue Gantt Chart component
+# Vue Gantt Chart Overview
 
 The Gantt chart is a project management tool which provides a Microsoft Project-like interface for scheduling and managing projects. Its intuitive user interface allows you visually manage tasks, task relationships, and resources in a project.
 

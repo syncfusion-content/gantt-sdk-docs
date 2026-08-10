@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Customize PDF Exporting in Vue Gantt Chart component | Syncfusion
-description: Learn here all about Customize PDF exporting in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Customize PDF exporting
+title: Customize PDF Export in Vue Gantt Chart | Syncfusion
+description: Learn how to customize PDF export in Vue Gantt Chart with custom filename, styles, and PDF properties.
+keywords: vue gantt customize pdf export, pdf customization, export settings, pdf properties, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/pdf-export/customize-pdf-export
 platform: gantt-sdk
+control: Customize PDF Export - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# To Customize PDF Export
+# Customizing PDF Export Layout and Content in Vue Gantt Chart
 
 PDF export provides an option to customize the mapping of Gantt to exported PDF document.
 

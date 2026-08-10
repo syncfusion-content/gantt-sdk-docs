@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Scrolling in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about Scrolling in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Scrolling 
+title: Scrolling in Vue Gantt Chart | Syncfusion
+description: Learn about scrolling features in Syncfusion Vue Gantt Chart including virtual scrolling for large datasets and scroll bar configuration.
+keywords: vue gantt scrolling, virtual scrolling, horizontal scroll, vertical scroll, scroll bar, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/scrolling
 platform: gantt-sdk
+control: Scrolling - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Scrolling in Vue Gantt Chart Component
+# Configuring Scrolling Behavior and Positioning in Vue Gantt Chart
 
 The scrollbar will be displayed in the gantt when content exceeds the element `width` or `height`. The vertical and horizontal scrollbars will be displayed based on the following criteria:
 

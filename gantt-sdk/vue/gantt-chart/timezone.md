@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Timezone in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about Timezone in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Timezone 
+title: Timezone in Vue Gantt Chart | Syncfusion
+description: Learn how to configure timezone support in Syncfusion Vue Gantt Chart for managing project schedules across different time zones.
+keywords: vue gantt timezone, time zone support, date manipulation, local timezone, utc, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/timezone
 platform: gantt-sdk
+control: Timezone - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Timezone in Vue Gantt Chart Component
+# Timezone with IANA Support in Vue Gantt Chart
 
 The Gantt makes use of the current system time zone by default. If it needs to follow some other user-specific time zone, then the `timezone` property needs to be used.
 

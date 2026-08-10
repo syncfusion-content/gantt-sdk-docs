@@ -1,14 +1,16 @@
 ---
 layout: post
-title: State Persistence in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about State persistence in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: State persistence 
+title: State Persistence in Vue Gantt Chart | Syncfusion
+description: Learn how to enable state persistence in Syncfusion Vue Gantt Chart to maintain component state across browser sessions using localStorage.
+keywords: vue gantt state persistence, localstorage, component state, persist state, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/state-persistence
 platform: gantt-sdk
+control: State Persistence - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# State Persistence in Vue Gantt Chart Component
+# State Persistence with LocalStorage Support in Vue Gantt Chart
 
 State persistence refers to the Gantt's state maintained in the browser's [localStorage](https://www.w3schools.com/html/html5_webstorage.asp#) even if the browser is refreshed or if you move to the next page within the browser.
 
@@ -31,7 +33,7 @@ window.localStorage.setItem('ganttGantt', JSON.stringify(model)); //"ganttGantt"
 
 ```
 
-> You can refer to our [Vue Gantt](https://www.syncfusion.com/vue-ui-components/vue-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Vue Gantt example](https://ej2.syncfusion.com/vue/demos#/tailwind3/gantt/default) to knows how to present and manipulate data.
+> You can refer to our [Vue Gantt](https://www.syncfusion.com/vue-ui-components/vue-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Vue Gantt example](https://ej2.syncfusion.com/vue/demos/#/tailwind3/gantt/overview.html) to knows how to present and manipulate data.
 
 ## Prevent columns from persisting
 

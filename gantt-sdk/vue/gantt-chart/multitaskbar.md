@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Resource Multi Taskbar in Vue Gantt Chart component | Syncfusion
-description: Learn here all about Resource Multi Taskbar in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Resource Multi Taskbar 
+title: Multi Taskbar in Vue Gantt Chart | Syncfusion
+description: Learn how to configure multi taskbar feature in Syncfusion Vue Gantt Chart to visualize multiple tasks assigned to resources.
+keywords: vue gantt multi taskbar, resource taskbar, multiple tasks, resource assignment, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/multi-taskbar
 platform: gantt-sdk
+control: Multi Taskbar - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Resource Multi Taskbar in Vue Gantt Chart component
+# Multi Taskbar with Resource Row Visualization in Vue Gantt Chart
 
 ## Resource multi taskbar
 

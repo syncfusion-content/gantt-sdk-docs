@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Time Line in ASP.NET Core Gantt Component | Syncfusion
-description: Learn here all about Time Line in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Timeline in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to configure and customize timeline in Syncfusion ASP.NET Core Gantt Chart including date formats, units, and appearance options.
+keywords: asp.net core gantt timeline, timeline configuration, date formats, timeline units, timeline display, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/time-line/time-line
 platform: gantt-sdk
-control: Time Line
-publishingplatform: gantt-sdk
+control: Timeline - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Timeline in ASP.NET Core Gantt Component
+# Configuring Timeline Settings in ASP.NET Core Gantt Chart
 
 In the Gantt control, timeline is used to represent the project duration as individual cells with defined unit and formats.
 

@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Task labels in Vue Gantt Chart component | Syncfusion
-description: Learn here all about Task labels in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Task labels
+title: Task Labels in Vue Gantt Chart | Syncfusion
+description: Learn how to configure and customize task labels in Syncfusion Vue Gantt Chart to display task information and custom templates.
+keywords: vue gantt task labels, label settings, left label, right label, task label template, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/labels
 platform: gantt-sdk
+control: Task Labels - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Task labels in Vue Gantt Chart component
+# Task Label Positions and Template Support in Vue Gantt Chart
 
 ## Task labels
 

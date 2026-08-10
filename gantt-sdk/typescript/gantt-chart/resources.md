@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Resources in TypeScript Gantt Chart Control | Syncfusion
-description: Learn how to configure resources in the Syncfusion TypeScript Gantt Chart control for task allocation and utilization visualization.
+title: Resources in TypeScript Gantt Chart | Syncfusion
+description: Learn how to configure resources in Syncfusion TypeScript Gantt Chart for task allocation and visualize resource workload and utilization across project.
+keywords: typescript gantt resources, resource allocation, resource management, workload, team members, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/resources
 platform: gantt-sdk
-control: Resources
-publishingplatform: gantt-sdk
+control: Resources - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Resources in TypeScript Gantt Chart Control
+# Resources with Allocation and Task Mapping in TypeScript Gantt Chart
 
 Resources in the  TypeScript Gantt Chart control represent people, equipment, or materials allocated to tasks, visualized in taskbars and labels for clear utilization tracking. Assigned via the [resources](../api/gantt#resources) property, resources map to tasks using [resourceFields](../api/gantt#resourcefields) for ID, name, unit, and group. This enables display of resource names in columns or labels with [labelSettings](../api/gantt/labelSettings), highlighting workloads and overallocation. The [queryTaskbarInfo](../gantt/events#querytaskbarinfo) event customizes taskbar styles based on resources, such as color-coding. Resources include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may truncate names for multiple assignments. By default, resources allocate 100% unit if unspecified.
 
@@ -183,3 +184,5 @@ This configuration applies background colors to resource columns and taskbars, w
 - [How to configure resource view?](../gantt/resource-view)
 - [How to manage task dependencies?](../gantt/task-dependency)
 - [How to customize taskbars?](../gantt/taskbar)
+
+

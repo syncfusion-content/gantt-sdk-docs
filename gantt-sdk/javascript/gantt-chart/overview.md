@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Index in JavaScript Gantt control | Syncfusion
-description: Learn here all about Index in Syncfusion JavaScript Gantt control of Syncfusion Essential JS 2 and more.
+title: Overview of JavaScript Gantt Chart | Syncfusion
+description: Learn how to use Syncfusion JavaScript Gantt Chart control with key features for project scheduling, task management, and timeline visualization.
+keywords: javascript gantt overview, gantt chart features, project management, timeline, task scheduling, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/overview
 platform: gantt-sdk
-control: Index 
-publishingplatform: gantt-sdk
+control: Gantt Chart Overview
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Index in JavaScript Gantt control
+# JavaScript Gantt Chart Overview
 
 The Gantt chart is a project management tool which provides a Microsoft Project-like interface for scheduling and managing projects. Its intuitive user interface allows you visually manage tasks, task relationships, and resources in a project.
 

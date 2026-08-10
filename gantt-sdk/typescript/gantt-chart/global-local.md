@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
 title: Localization in TypeScript Gantt Chart | Syncfusion
-description: Learn here all about globalization and localization in Syncfusion TypeScript Gantt Chart control of Syncfusion Essential JS 2 and more.
+description: Learn how to configure localization and globalization in Syncfusion TypeScript Gantt Chartfor multi-language and multi-region project management support.
+keywords: typescript gantt localization, globalization, multi-language, rtl, cultural formatting, internationalization, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/global-local
 platform: gantt-sdk
-control: Globalization and Localization 
-publishingplatform: gantt-sdk
+control: Globalization - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Globalization and Localization in TypeScript Gantt Chart Control
+# Globalization and Localization in TypeScript Gantt Chart
 
 The [TypeScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control supports globalization to adapt project management interfaces to diverse languages, cultures, and regional preferences without code changes. Globalization encompasses localization for translating text elements like column headers and dialog titles, internationalization for formatting dates, numbers, and times in timelines and task fields, and Right-to-Left (RTL) support for languages like Arabic and Hebrew. These features ensure that task names, toolbar actions, and timeline displays align with users’ linguistic and cultural expectations, enhancing accessibility and usability in project management workflows for global users.
 
@@ -450,3 +451,4 @@ The code sets `enableRtl` to **true** and `locale` to **ar**, mirroring the Gant
 - Call `setCulture()` before component initialization
 - Verify date format patterns match locale expectations
 - Check timezone and calendar system configuration
+

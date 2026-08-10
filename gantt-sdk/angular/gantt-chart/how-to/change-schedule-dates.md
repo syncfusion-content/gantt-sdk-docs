@@ -1,14 +1,16 @@
 ---
 layout: post
 title: Update Project Schedule Dates in Angular Gantt Chart | Syncfusion
-description: Learn how to programmatically update project schedule dates in the Syncfusion Angular Gantt Chart component to adjust timelines and task schedules efficiently.
+description: Learn how to programmatically update project dates in Syncfusion Angular Gantt Chart using updateProjectDates method.
+keywords: angular gantt update schedule dates, updateprojectdates, project timeline, roundoff, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/how-to/change-schedule-dates
 platform: gantt-sdk
-control: Schedule dates
+control: Update Schedule Dates - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Update Project Schedule Dates in Angular Gantt Chart Component
+# Updating Schedule Dates Programmatically in Angular Gantt Chart
 
 The [updateProjectDates](https://ej2.syncfusion.com/angular/documentation/api/gantt#updateprojectdates) method in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component enables programmatic adjustment of the project’s start and end dates, seamlessly updating the timeline and task positions for efficient schedule management. By passing valid `Date` objects for the start and end dates, you can shift the entire project timeline, such as moving a project forward by a month to accommodate delays. An optional Boolean `roundOff` parameter, when set to **true**, aligns dates to the timeline’s unit (e.g., days or weeks), ensuring a clean and consistent display. Ensure the Gantt has a defined `dataSource` and [timelineSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt#timelinesettings) to render the updated schedule accurately. Use valid date formats and leverage the `roundOff` option to optimize timeline rendering for clarity.
 

@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Toolbar in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about Toolbar in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Toolbar 
+title: Toolbar in Vue Gantt Chart | Syncfusion
+description: Learn how to configure the toolbar in Syncfusion Vue Gantt Chart with built-in and custom toolbar items for task management.
+keywords: vue gantt toolbar, custom toolbar, toolbar items, gantt actions, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/toolbar
 platform: gantt-sdk
+control: Toolbar - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Toolbar in Vue Gantt Chart Component
+# Toolbar with Built-in and Custom Items in Vue Gantt Chart
 
 The Gantt Chart component provides the toolbar support to handle Gantt actions. The [toolbar](https://ej2.syncfusion.com/vue/documentation/api/gantt#toolbar) property accepts the collection of built-in toolbar items and `ItemModel` objects for custom toolbar items.
 

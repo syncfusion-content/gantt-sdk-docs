@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Managing tasks in Vue Gantt Chart component | Syncfusion
-description: Learn here all about Managing tasks in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Managing tasks 
+title: Managing Tasks in Vue Gantt Chart | Syncfusion
+description: Learn how to manage tasks in Syncfusion Vue Gantt Chart with CRUD operations for inserting, updating, and deleting tasks.
+keywords: vue gantt managing tasks, crud operations, task management, edit tasks, task operations, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/managing-tasks/managing-tasks
 platform: gantt-sdk
+control: Managing Tasks - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Managing tasks in Vue Gantt Chart component
+# Overview of Task Management Features in Vue Gantt Chart
 
 The Gantt Chart component has options to dynamically insert, delete, and update tasks in the project. The primary key column is necessary to manage the tasks and perform CRUD operations in Gantt. To define the primary key, set the [columns.isPrimaryKey](https://ej2.syncfusion.com/vue/documentation/api/gantt/column#isprimarykey) property to `true` in the particular column.
 

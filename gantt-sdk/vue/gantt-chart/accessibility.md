@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Accessibility in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Accessibility 
+title: Accessibility in Vue Gantt Chart | Syncfusion
+description: Learn about accessibility features in the Syncfusion Vue Gantt Chart, including WCAG 2.2 compliance, keyboard navigation, and screen reader support.
+keywords: vue gantt accessibility, wcag 2.2, keyboard navigation, screen reader, aria, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/accessibility
 platform: gantt-sdk
+control: Accessibility - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Accessibility in Vue Gantt Chart Component
+#  Accessibility and ARIA Compliance in Vue Gantt Chart
 
 The Gantt Chart component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles) that are commonly used to evaluate accessibility.
 

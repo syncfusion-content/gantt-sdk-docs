@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Customize PDF exporting in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Customize PDF exporting in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Customize PDF Export in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to customize PDF export settings in Syncfusion ASP.NET Core Gantt Chart including styling, formatting, and advanced export options.
+keywords: asp.net core gantt customize pdf, pdf customization, export customization, pdf styling, advanced export, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/pdf-export/customize-pdf-export
 platform: gantt-sdk
-control: Pdf Export
-publishingplatform: gantt-sdk
+control: PDF Export - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# To customize PDF export
+# Customizing PDF Export Layout and Content in ASP.NET Core Gantt Chart
 
 PDF export provides an option to customize the mapping of Gantt to exported PDF document.
 

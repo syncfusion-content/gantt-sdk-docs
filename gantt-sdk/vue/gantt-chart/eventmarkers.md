@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Eventmarkers in Vue Gantt Chart component | Syncfusion
-description: Learn here all about Eventmarkers in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Eventmarkers 
+title: Event Markers in Vue Gantt Chart | Syncfusion
+description: Learn how to configure event markers in Syncfusion Vue Gantt Chart to highlight important events and milestones in the project timeline.
+keywords: vue gantt event markers, timeline events, milestone markers, day markers, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/event-markers
 platform: gantt-sdk
+control: Event Markers - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Event markers in Vue Gantt Chart component
+# Project-Wide Timeline Markers in Vue Gantt Chart
 
 The event markers in the Gantt Chart component is used to highlight the important events in a project. Event markers can be initialized by using the [eventMarkers](https://ej2.syncfusion.com/vue/documentation/api/gantt#eventmarkers) property, and you can define date and label for the event markers using the [day](https://ej2.syncfusion.com/vue/documentation/api/gantt/eventMarker#day) and [label](https://ej2.syncfusion.com/vue/documentation/api/gantt/eventMarker#label) properties. You can also customize it using the [cssClass](https://ej2.syncfusion.com/vue/documentation/api/gantt/eventMarker#cssclass) properties. The following code example shows how to add event markers in the Gantt Chart component.
 

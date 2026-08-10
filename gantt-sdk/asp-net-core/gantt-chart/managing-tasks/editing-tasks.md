@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Editing tasks in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Editing Tasks in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Editing Tasks in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to edit tasks in Syncfusion ASP.NET Core Gantt Chart with inline editing, dialog editing, and taskbar editing options.
+keywords: asp.net core gantt edit tasks, task editing, inline editing, edit dialog, edit mode, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managing-tasks/editing-tasks
 platform: gantt-sdk
-control: Managing Tasks
-publishingplatform: gantt-sdk
+control: Managing Tasks - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Editing tasks in gantt control
+# Editing Task Properties and Information in ASP.NET Core Gantt Chart
 
 The editing feature can be enabled in the Gantt control by enabling the [`EditSettings.AllowEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html#Syncfusion_EJ2_Gantt_GanttEditSettings_AllowEditing) and [`EditSettings.AllowTaskbarEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html#Syncfusion_EJ2_Gantt_GanttEditSettings_AllowTaskbarEditing) properties.
 

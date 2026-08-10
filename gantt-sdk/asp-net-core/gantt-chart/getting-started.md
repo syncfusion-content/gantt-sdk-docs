@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Getting started with ASP.NET Core Gantt Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core Gantt control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET Core Gantt Chart | Syncfusion
+description: Explore how to get started with Syncfusion ASP.NET Core Gantt Chart configure the control, bind data, map fields, and visualize project timelines quickly.
+keywords: asp.net core gantt getting started, gantt setup, project timeline, task scheduling, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/getting-started
 platform: gantt-sdk
-control: Getting Started
-publishingplatform: gantt-sdk
+control: Getting Started - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Getting started with the ASP.NET Core Gantt control
+# Getting Started with ASP.NET Core Gantt Chart
 
 This section explains how to include the [ASP.NET Core Gantt](https://www.syncfusion.com/gantt-sdk/aspnet-core-gantt-chart) control in your ASP.NET Core Web App using [Visual Studio](https://visualstudio.microsoft.com/vs/) and [Visual Studio Code](https://code.visualstudio.com/). You’ll learn how to configure the control, bind task data, map fields, and quickly visualize project timelines in just a few steps.
 

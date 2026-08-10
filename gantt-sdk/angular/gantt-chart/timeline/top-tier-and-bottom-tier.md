@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Top Tier and Bottom Tier in Angular Gantt Chart Component | Syncfusion
-description: Learn how to configure top and bottom tiers in the Syncfusion Angular Gantt Chart component using timeline settings such as unit, format, count, and formatter.
+title: Top and Bottom Tier in Angular Gantt Chart | Syncfusion
+description: Learn how to configure top and bottom tiers in Syncfusion Angular Gantt Chart timeline using unit, format, count, and formatter for two-tier timeline layouts.
+keywords: angular gantt top tier bottom tier, toptier, bottomtier, timeline unit format, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/timeline/top-tier-and-bottom-tier
 platform: gantt-sdk
-control: Top tier and bottom tier 
+control: Top and Bottom Tier - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Top Tier and Bottom Tier in Angular Gantt Chart Component
+# Customizing Timeline Top and Bottom Tiers in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component supports a two-tier timeline layout, enabling customization of both the top and bottom tiers through specific configuration options.
 

@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Data markers in Vue Gantt Chart component | Syncfusion
-description: Learn here all about Data markers in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Data markers 
+title: Data Markers in Vue Gantt Chart | Syncfusion
+description: Learn how to configure data markers in Syncfusion Vue Gantt Chart to display schedule events and milestones for tasks.
+keywords: vue gantt data markers, schedule events, indicators, milestones, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/data-markers
 platform: gantt-sdk
+control: Data Markers - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Data markers in Vue Gantt Chart component
+# Task Markers and Milestones with Data Markers in Vue Gantt Chart
 
 Data markers are a set of events used to represent the schedule events for a task. Data markers are defined in data source as array of objects, and this value is mapped to the Gantt control using the [taskFields.indicators](https://ej2.syncfusion.com/vue/documentation/api/gantt/taskFields#indicators) property. You can represent more than one data marker in a task.
 

@@ -1,13 +1,16 @@
 ---
 layout: post
-title: Getting Started with Blazor Kanban in Server App | Syncfusion®
-description: Checkout and learn about the documentation for getting started with Blazor Kanban Component in Blazor Server App.
+title: Getting Started with Server App in Blazor Kanban | Syncfusion
+description: Learn how to set up Syncfusion Blazor Kanban in a Blazor Server app and start building interactive workflows quickly.
+keywords: blazor kanban server app, syncfusion kanban, blazor server, getting started
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/kanban/getting-started-with-server-app
 platform: gantt-sdk
-component: Kanban
+control: Getting Started with Server App - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Getting Started with Blazor Kanban Component in Blazor Server App
+# Getting Started with Blazor Kanban in Server App
 
 This section briefly explains about how to include [Blazor Kanban](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) component in a Blazor Server App using [Visual Studio](https://visualstudio.microsoft.com/vs/), [Visual Studio Code](https://code.visualstudio.com/), and the [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/).
 
@@ -86,7 +89,7 @@ N> All Syncfusion Blazor packages are available on [nuget.org](https://www.nuget
 
 ## Prerequisites
 
-Install the latest version of [.NET SDK](https://dotnet.microsoft.com/en-us/download). If the .NET SDK is already installed, determine the installed version by running the following command in a command prompt (Windows), terminal (macOS), or command shell (Linux).
+Install the latest version of [.NET SDK](https://dotnet.microsoft.com/en-us/download). If the .NET SDK is already installed, determine the installed version by running the following command in a command prompt (Windows), terminal (macOS) or command shell (Linux).
 
 {% tabs %}
 {% highlight c# tabtitle=".NET CLI" %}
@@ -161,7 +164,7 @@ The theme stylesheet and script can be accessed from NuGet through [Static Web A
 
 ```
 
-N> Check out the [Blazor Themes](https://blazor.syncfusion.com/documentation/appearance/themes) topic to discover various methods ([Static Web Assets](https://blazor.syncfusion.com/documentation/appearance/themes#static-web-assets), [CDN](https://blazor.syncfusion.com/documentation/appearance/themes#cdn-reference), and [CRG](https://blazor.syncfusion.com/documentation/common/custom-resource-generator)) for referencing themes in Blazor application. Also, check out the [Adding Script Reference](https://blazor.syncfusion.com/documentation/common/adding-script-references) topic to learn different approaches for adding script references in Blazor application.
+N> Check out the [Blazor Themes](https://blazor.syncfusion.com/documentation/appearance/themes) topic to discover various methods (`Static Web Assets`, [CDN](https://blazor.syncfusion.com/documentation/appearance/themes#cdn-reference), and [CRG](https://blazor.syncfusion.com/documentation/common/custom-resource-generator)) for referencing themes in Blazor application. Also, check out the [Adding Script Reference](https://blazor.syncfusion.com/documentation/common/adding-script-references) topic to learn different approaches for adding script references in Blazor application.
 
 ## Add Blazor Kanban component
 
@@ -234,7 +237,7 @@ N> If the Interactivity Location is set to `Global`, the render mode is automati
     ```
 2. The application will start and display in your default web browser.
 
-N> You can also explore our [Blazor Kanban Board example](https://blazor.syncfusion.com/demos/kanban/overview?theme=fluent2) that shows you how to render and configure the Kanban Board.
+N> Explore our [Blazor Kanban Board example](https://blazor.syncfusion.com/demos/kanban/overview?theme=fluent2), which demonstrates how to render and configure the Kanban Board.
 
 ## See also
 

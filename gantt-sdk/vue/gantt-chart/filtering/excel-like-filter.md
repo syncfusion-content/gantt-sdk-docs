@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Excel-like Filter in Vue Gantt Chart Component | Syncfusion
-description: Learn all about the Excel-like filter in the Syncfusion Vue Gantt Chart component of Essential JS 2.
-control: Excel like filter
+title: Excel-like Filter in Vue Gantt Chart | Syncfusion
+description: Learn how to use Excel-like filtering in Syncfusion Vue Gantt Chart with sorting and advanced filtering options.
+keywords: vue gantt excel filter, advanced filtering, filter menu, sorting options, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/filtering/excel-like-filter
 platform: gantt-sdk
+control: Excel-like Filter - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Excel-like filter in Vue Gantt Chart Component
+# Using Excel-Like Filtering Interface in Vue Gantt Chart
 
 You can enable the Excel-like filter by setting the https://ej2.syncfusion.com/vue/documentation/api/gantt#filtersettings property to `Excel`. The Excel filter menu includes options such as **Sorting**, **Clear Filter**, and an **Advanced Filtering** submenu.
 

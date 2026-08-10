@@ -1,17 +1,20 @@
 ---
 layout: post
-title: Dimensions in Blazor Kanban Component | Syncfusion®
-description: Checkout and learn here all the features about dimensions in Blazor Kanban component and much more details.
+title: Dimensions in Blazor Kanban | Syncfusion
+description: Learn how to configure responsive dimensions and sizing options in Syncfusion Blazor Kanban to fit different layouts and screen sizes.
+keywords: blazor kanban dimensions, syncfusion kanban, responsive layout, sizing
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/kanban/dimensions
 platform: gantt-sdk
-control: Kanban
+control: Dimensions - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Dimensions in Blazor Kanban Component
+# Dimensions, Height, and Width Configuration in Blazor Kanban
 
-This section explains how to configure the height and width of the Blazor Kanban component to achieve responsive and fixed layouts.
+This section explains how to configure the height and width of the [Blazor Kanban Board](https://www.syncfusion.com/blazor-components/blazor-kanban-board) to achieve responsive and fixed layouts.
 
-The [Blazor Kanban](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) component allows customization of its overall layout dimensions height and width using three value types:
+The [Blazor Kanban Board](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) component allows customization of its overall layout dimensions height and width using three value types:
 
 * Auto
 * Pixel
@@ -19,7 +22,7 @@ The [Blazor Kanban](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) co
 
 ## Auto height and width
 
-Use `auto` values when you want the Kanban component to adapt to its content and parent container dynamically.
+`auto` values can be used to allow the Kanban component to adapt dynamically to its content and parent container.
 
 When the Kanban's height and width are set to `auto`, it automatically adjusts to fit the size of its parent container. This ensures the Kanban layout expands or contracts based on its content and surrounding elements. By default, the Kanban component uses `auto` for both [Height](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.SfKanban-1.html#Syncfusion_Blazor_Kanban_SfKanban_1_Height) and [Width](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.SfKanban-1.html#Syncfusion_Blazor_Kanban_SfKanban_1_Width), allowing it to adapt seamlessly to its container.
 
@@ -40,11 +43,11 @@ When the Kanban's height and width are set to `auto`, it automatically adjusts t
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()
@@ -87,7 +90,7 @@ When the Kanban's height and width are set to `auto`, it automatically adjusts t
 
 Define explicit dimensions in pixels to maintain consistent sizing regardless of screen size or container.
 
-When pixel values are specified for the Kanban's [Height](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.SfKanban-1.html#Syncfusion_Blazor_Kanban_SfKanban_1_Height) and [Width](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.SfKanban-1.html#Syncfusion_Blazor_Kanban_SfKanban_1_Width), the component renders with exact dimensions. These values can be provided as either strings (e.g., `'650px'`) or numbers (e.g., `650`).
+When pixel values are specified for the Kanban's `Height` and `Width`, the component renders with exact dimensions. These values can be provided as either strings (e.g., `'650px'`) or numbers (e.g., `650`).
 
 ```cshtml
 
@@ -106,11 +109,11 @@ When pixel values are specified for the Kanban's [Height](https://help.syncfusio
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()
@@ -153,7 +156,7 @@ When pixel values are specified for the Kanban's [Height](https://help.syncfusio
 
 Use percentage values to make the Kanban component scale proportionally within its parent container.
 
-Specifying [Height](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.SfKanban-1.html#Syncfusion_Blazor_Kanban_SfKanban_1_Height) and [Width](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanban.SfKanban-1.html#Syncfusion_Blazor_Kanban_SfKanban_1_Width) in percentage makes the Kanban component scale relative to its parent container, ensuring responsive behavior across different screen sizes.
+Specifying `Height` and `Width` in percentage makes the Kanban component scale relative to its parent container, ensuring responsive behavior across different screen sizes.
 
 ```cshtml
 
@@ -172,11 +175,11 @@ Specifying [Height](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Kanb
 @code {
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
     }
 
     public List<TasksModel> Tasks = new List<TasksModel>()
