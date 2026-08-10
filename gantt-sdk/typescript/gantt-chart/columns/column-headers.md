@@ -16,9 +16,7 @@ The TypeScript Gantt Chart control provides flexible options to manage and custo
 
 ## Set custom header text
 
-By default, column headers in the Gantt chart display the value defined in the [field](../../api/gantt/column#field) property. To customize the header title, use the [headerText](../../api/gantt/column#headertext) property within the column configuration. This allows you to define meaningful labels for each column as needed.
-
-{% if page.publishingplatform == "typescript" %}
+By default, column headers in the Gantt chart display the value defined in the [field](https://ej2.syncfusion.com/documentation/api/gantt/column#field) property. To customize the header title, use the [headerText](https://ej2.syncfusion.com/documentation/api/gantt/column#headertext) property within the column configuration. This allows you to define meaningful labels for each column as needed.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -31,30 +29,14 @@ By default, column headers in the Gantt chart display the value defined in the [
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs1" %}
-{% endif %}
-
 > - The `headerText` property is optional. If not defined, the column's field value will be used as the header text by default.
-> - To apply custom HTML content to the header cell, use the [headerTemplate](../../api/gantt/column#headertemplate) property.
+> - To apply custom HTML content to the header cell, use the [headerTemplate](https://ej2.syncfusion.com/documentation/api/gantt/column#headertemplate) property.
 
 ## Customize header using template
 
-You can customize the column header in the Gantt chart using the [headerTemplate](../../api/gantt/column#headertemplate) property. This allows rendering custom HTML or TypeScript components within the header.
+You can customize the column header in the Gantt chart using the [headerTemplate](https://ej2.syncfusion.com/documentation/api/gantt/column#headertemplate) property. This allows rendering custom HTML or TypeScript components within the header.
 
 In this example, custom elements are applied to both the **TaskName** and **Duration** column headers.
-
-{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -67,32 +49,16 @@ In this example, custom elements are applied to both the **TaskName** and **Dura
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs2" %}
-{% endif %}
-
 > - The `headerTemplate` property is only applicable to Gantt columns that have a header element.
 
 ## Align header text
 
-You can align the column header text in the Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Gantt Chart control using the [headerTextAlign](../../api/gantt/column#headertextalign) property. By default, the text is aligned to the **left**. The available alignment options are:
+You can align the column header text in the Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Gantt Chart control using the [headerTextAlign](https://ej2.syncfusion.com/documentation/api/gantt/column#headertextalign) property. By default, the text is aligned to the **left**. The available alignment options are:
 
 - **Left:** Aligns text to the left (default).
 - **Center:** Aligns text to the center.
 - **Right:** Aligns text to the right.
 - **Justify:** Distributes text evenly across the header.
-
-{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -105,25 +71,11 @@ You can align the column header text in the Syncfusion<sup style="font-size:70%"
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs3" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs3" %}
-{% endif %}
-
 > - The `headerTextAlign` property only changes the alignment of the text in the column header, and not the content of the column. If you want to align both the column header and content, you can use the [textAlign](https://ej2.syncfusion.com/documentation/api/gantt/column#textalign) property.
 
 ## Enable header text wrapping
 
-You can enable autowrap in the Syncfusion TypeScript Gantt Chart control to allow cell content to wrap onto the next line when it exceeds the defined column width. This wrapping behavior is based on the whitespace between words. To activate this feature, set the `allowTextWrap` property to **true** and specify an appropriate column [width](../../api/gantt/column#width).
+You can enable autowrap in the Syncfusion TypeScript Gantt Chart control to allow cell content to wrap onto the next line when it exceeds the defined column width. This wrapping behavior is based on the whitespace between words. To activate this feature, set the `allowTextWrap` property to **true** and specify an appropriate column [width](https://ej2.syncfusion.com/documentation/api/gantt/column#width).
 
 The wrapping behavior is defined using the `textWrapSettings.wrapMode` property of the `treeGrid` object. Available options include:
 
@@ -133,9 +85,7 @@ The wrapping behavior is defined using the `textWrapSettings.wrapMode` property 
 
 > - If column width is not defined, autowrap adjusts based on the overall Gantt chart width.
 > - Header text without white space may not wrap.
-> - If cell content includes HTML tags, autowrap may not function as expected. In such cases, use [headerTemplate](../../api/gantt/column#headertemplate) and [template](../../api/gantt/column#template) properties to customize the header and cell layout.
-
-{% if page.publishingplatform == "typescript" %}
+> - If cell content includes HTML tags, autowrap may not function as expected. In such cases, use [headerTemplate](https://ej2.syncfusion.com/documentation/api/gantt/column#headertemplate) and [template](https://ej2.syncfusion.com/documentation/api/gantt/column#template) properties to customize the header and cell layout.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -148,27 +98,13 @@ The wrapping behavior is defined using the `textWrapSettings.wrapMode` property 
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs4" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs4/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs4" %}
-{% endif %}
-
 ## Update header text dynamically
 
 The TypeScript Gantt Chart control allows dynamic updates to column header text, either through events or method calls. This is useful for customizing headers based on user input or application logic.
 
 **Using Event**
 
-To modify header text during rendering, use the [headerCellInfo](../../gantt/events#headercellinfo) event. After updating the text, call the `refreshHeader` method of the `treeGrid` object to apply changes.
+To modify header text during rendering, use the [headerCellInfo](https://ej2.syncfusion.com/documentation/gantt/events#headercellinfo) event. After updating the text, call the `refreshHeader` method of the `treeGrid` object to apply changes.
 
 **Using method**
 
@@ -189,8 +125,6 @@ These methods allow access to the column or header element, where you can update
 
 Here is an example of how to change the header text of a column using the `getColumnByField` method:
 
-{% if page.publishingplatform == "typescript" %}
-
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs6/index.ts %}
@@ -202,25 +136,9 @@ Here is an example of how to change the header text of a column using the `getCo
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs6" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs6/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs6/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs6" %}
-{% endif %}
-
 **Changing the header text of all columns:**
 
-To modify the header text of all columns in the Gantt Chart control, iterate through the columns collection and set the [headerText](../../api/gantt/column#headertext) property for each column. This approach ensures consistent customization across all headers.
-
-{% if page.publishingplatform == "typescript" %}
+To modify the header text of all columns in the Gantt Chart control, iterate through the columns collection and set the [headerText](https://ej2.syncfusion.com/documentation/api/gantt/column#headertext) property for each column. This approach ensures consistent customization across all headers.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -233,23 +151,9 @@ To modify the header text of all columns in the Gantt Chart control, iterate thr
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs7" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs7/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs7/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs7" %}
-{% endif %}
-
 ## Rotate header text
 
-By default, header text in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control is displayed horizontally. To rotate it vertically, diagonally, or at a custom angle, follow the steps below using the [customAttributes](../../api/gantt/column#customattributes) property of the column.
+By default, header text in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control is displayed horizontally. To rotate it vertically, diagonally, or at a custom angle, follow the steps below using the [customAttributes](https://ej2.syncfusion.com/documentation/api/gantt/column#customattributes) property of the column.
 
 **Step 1**: Create a CSS class with rotation styles.
 
@@ -287,8 +191,6 @@ function setHeaderHeight() {
 }
 ```
 
-{% if page.publishingplatform == "typescript" %}
-
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs8/index.ts %}
@@ -300,27 +202,11 @@ function setHeaderHeight() {
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs8" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs8/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs8/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs8" %}
-{% endif %}
-
 ## Add custom tooltip to header
 
-You can display additional information in the Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Gantt Chart control by adding custom tooltips to column headers. This is especially helpful when space is limited or when extra context is needed. To implement this, use the [beforeRender](../../api/gantt#beforeRender) event of the `Tooltip` control. This event triggers before each header cell is rendered, allowing you to assign a custom tooltip dynamically.
+You can display additional information in the Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Gantt Chart control by adding custom tooltips to column headers. This is especially helpful when space is limited or when extra context is needed. To implement this, use the [beforeRender](https://ej2.syncfusion.com/documentation/api/gantt#beforeRender) event of the `Tooltip` control. This event triggers before each header cell is rendered, allowing you to assign a custom tooltip dynamically.
 
 The following example demonstrates how to use the `beforeRender` event to add a tooltip to a header cell:
-
-{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -333,21 +219,7 @@ The following example demonstrates how to use the `beforeRender` event to add a 
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs9" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs9/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs9/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs9" %}
-{% endif %}
-
-> - The [headerCellInfo](../../api/gantt#headercellinfo) event can also be used to customize the header tooltip. This event is triggered for each header cell after it is rendered.
+> - The [headerCellInfo](https://ej2.syncfusion.com/documentation/api/gantt#headercellinfo) event can also be used to customize the header tooltip. This event is triggered for each header cell after it is rendered.
 
 ## Style header text
 
@@ -364,8 +236,6 @@ You can apply styles to Gantt Chart control header cells using the **.e-headerce
 }
 ```
 
-{% if page.publishingplatform == "typescript" %}
-
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs10/index.ts %}
@@ -377,23 +247,9 @@ You can apply styles to Gantt Chart control header cells using the **.e-headerce
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs10" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs10/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs10/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs10" %}
-{% endif %}
-
 ### Using property
 
-To customize the appearance of column headers in the Gantt Chart control, use the [customAttributes](../../api/gantt/column#customattributes) property. It accepts an object containing CSS class names that apply styles directly to header cells.
+To customize the appearance of column headers in the Gantt Chart control, use the [customAttributes](https://ej2.syncfusion.com/documentation/api/gantt/column#customattributes) property. It accepts an object containing CSS class names that apply styles directly to header cells.
 
 **Step 1:** Define a CSS class with the desired styles.
 
@@ -406,13 +262,11 @@ To customize the appearance of column headers in the Gantt Chart control, use th
 
 **Step 2:** Assign the class using `customAttributes` in the column definition.
 
-```js
+```ts
 {% raw %}
 {  field: 'TaskName', headerText: 'Task Name', customAttributes: { class: 'customcss' }},
 {% endraw %}
 ```
-
-{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -424,20 +278,6 @@ To customize the appearance of column headers in the Gantt Chart control, use th
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs11" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs11/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs11/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs11" %}
-{% endif %}
 
 ### Using method
 
@@ -455,8 +295,6 @@ The following example demonstrates how to apply custom styles to specific column
 - Apply pink background and black font color to the **TaskName** header.
 - Apply the same styles to the **Duration** header using both UID (`grid-column11`) and index 3.
 
-{% if page.publishingplatform == "typescript" %}
-
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs12/index.ts %}
@@ -468,29 +306,13 @@ The following example demonstrates how to apply custom styles to specific column
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs12" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs12/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs12/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs12" %}
-{% endif %}
-
 > - The UID is automatically generated by the Gantt chart control and may change whenever the gantt chart is refreshed or updated.
 
 ### Using event
 
-To customize the Gantt Chart control header appearance, use the [headerCellInfo](../../gantt/events#headercellinfo) event. This event triggers when each header cell is rendered and provides access to its details, allowing you to apply custom styles.
+To customize the Gantt Chart control header appearance, use the [headerCellInfo](https://ej2.syncfusion.com/documentation/gantt/events#headercellinfo) event. This event triggers when each header cell is rendered and provides access to its details, allowing you to apply custom styles.
 
 The following example demonstrates how to check if the current header column is the **TaskID** field and apply a CSS class conditionally:
-
-{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -503,27 +325,11 @@ The following example demonstrates how to check if the current header column is 
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs13" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs13/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs13/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs13" %}
-{% endif %}
-
 ## Refresh header programmatically
 
 To refresh the header in Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control after updating column properties (such as text, width, or alignment), use the `refreshHeader` method from the `treeGrid` object. This method re-renders the header to reflect the latest column changes.
 
 The following example demonstrates how to update the header text of the column at index 1 for the **TaskName** column using a button click.
-
-{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -535,20 +341,6 @@ The following example demonstrates how to update the header text of the column a
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs14" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs14/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs14/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columnheader-cs14" %}
-{% endif %}
 
 ## Access header element
 
