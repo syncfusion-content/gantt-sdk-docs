@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Dimensions in Vue Kanban component | Syncfusion
-description: Learn here all about Dimensions in Syncfusion Vue Kanban component of Syncfusion Essential JS 2 and more.
-control: Dimensions 
+title: Dimensions and Sizing in Vue Kanban | Syncfusion
+description: Learn how to configure dimensions, heights, and responsive sizing in Syncfusion Vue Kanban components.
+keywords: vue kanban dimensions, syncfusion kanban, sizing, responsive
+canonical: https://help.syncfusion.com/gantt-sdk/vue/kanban/dimensions
 platform: gantt-sdk
+control: Dimensions - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Dimensions in Vue Kanban component
+# Dimensions, Height, and Width Configuration in Vue Kanban
 
 The Kanban dimensions refers to both height and width of the entire layout and it accepts three types of values.
 
