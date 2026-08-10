@@ -6,7 +6,6 @@ keywords: vue gantt loading animation, loading indicator, shimmer, spinner, data
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/loading-animation
 platform: gantt-sdk
 control: Loading Animation - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

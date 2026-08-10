@@ -6,7 +6,6 @@ keywords: vue gantt toolbar, custom toolbar, toolbar items, gantt actions, syncf
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/toolbar
 platform: gantt-sdk
 control: Toolbar - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

@@ -6,7 +6,6 @@ keywords: vue gantt quasar, quasar framework, vue gantt setup, quasar integratio
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/quasar
 platform: gantt-sdk
 control: Getting Started - Quasar
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -48,7 +47,7 @@ Now that `quasar-project` is ready to run with default settings, let's add  Vue 
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Vue packages
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Vue component packages are available at [npmjs.com](https://www.npmjs.com/search?q=ej2-vue). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Vue components in the project, install the corresponding npm package.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Vue component packages are available at [npm package registry](https://www.npmjs.com/search?q=ej2-vue). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Vue components in the project, install the corresponding npm package.
 
 This article uses the [Vue Gantt Chart component](https://www.syncfusion.com/vue-components/vue-gantt-chart) as an example. To use the Vue Gantt Chart component in the project, the `@syncfusion/ej2-vue-gantt` package needs to be installed using the following command:
 
