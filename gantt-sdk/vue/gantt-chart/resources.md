@@ -6,7 +6,6 @@ keywords: vue gantt resources, resource allocation, staff assignment, resource m
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/resources
 platform: gantt-sdk
 control: Resources - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

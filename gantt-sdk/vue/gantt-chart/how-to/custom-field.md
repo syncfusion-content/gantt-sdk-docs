@@ -1,12 +1,11 @@
 ---
 layout: post
 title: Custom Field in Vue Gantt Chart | Syncfusion
-description: Learn how to add and display custom fields in Syncfusion Vue Gantt Chart using add/edit dialogs.
+description: Learn how to add custom fields to Syncfusion Vue Gantt Chart add/edit dialogs, customize dialog rendering, and handle events to display and manage field values.
 keywords: vue gantt custom field, custom column, add custom field, custom dialog, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/how-to/custom-field
 platform: gantt-sdk
 control: Custom Field - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

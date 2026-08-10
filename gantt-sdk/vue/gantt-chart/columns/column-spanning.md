@@ -6,7 +6,6 @@ keywords: vue gantt column spanning, cell spanning, colspan, column layout, sync
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/columns/column-spanning
 platform: gantt-sdk
 control: Column Spanning - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
