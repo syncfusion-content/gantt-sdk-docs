@@ -1,28 +1,29 @@
 ---
 layout: post
-title: Resources in Syncfusion ASP.NET MVC Gantt Component
-description: Learn here all about Resources in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Resources in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to configure and manage resources in Syncfusion ASP.NET MVC Gantt Chart including resource assignments, allocation, and capacity planning.
+keywords: asp.net mvc gantt resources, resource assignment, resource allocation, team members, capacity planning, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/resources
 platform: gantt-sdk
-control: Resources
-publishingplatform: gantt-sdk
+control: Resources - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Resources in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Gantt Component
+# Resources with Allocation and Task Mapping in ASP.NET MVC Gantt Chart
 
 In Gantt, the resources are represented by staff, equipment and materials etc. In Gantt control you can show or allocate the resources (human resources) for each task.
 
 ## Resource collection
 
-The resource collection contains details about resources that are used in the project. Resources are JSON object that contains id, name, unit and group of the resources and this collection is mapped to the Gantt control using the [`resources`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Resources) property. These resource fields are mapped to the Gantt control using the [`resourceFields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttResourcefields.html) property.
+The resource collection contains details about resources that are used in the project. Resources are JSON object that contains id, name, unit and group of the resources and this collection is mapped to the Gantt control using the [`resources`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Resources) property. These resource fields are mapped to the Gantt control using the [`resourceFields`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttResourcefields.html) property.
 
-|Resource fields | Description|
-|-----|-----|
-|[`id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttResourceFields.html#Syncfusion_EJ2_Gantt_GanttResourceFields_Id) | This field is used to assign resources to the tasks.|
-|[`name`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttResourceFields.html#Syncfusion_EJ2_Gantt_GanttResourceFields_Name) | This field is used to map the resource names. These names are displayed as one of Gantt columns and also can display as labels using the [`labelSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_LabelSettings) property.|
-|[`unit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttResourceFields.html#Syncfusion_EJ2_Gantt_GanttResourceFields_Unit) | It indicates the amount of work that can be done by a resource for the task in a day.|
-|[`group`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttResourceFields.html#Syncfusion_EJ2_Gantt_GanttResourceFields_Group) | This field is used to group the resources and the tasks assigned to that particular resource into category.|
+| Resource fields                                                                                                                                      | Description                                                                                                                                                                                                                                                                                 |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`id`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttResourceFields.html#Syncfusion_EJ2_Gantt_GanttResourceFields_Id)       | This field is used to assign resources to the tasks.                                                                                                                                                                                                                                        |
+| [`name`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttResourceFields.html#Syncfusion_EJ2_Gantt_GanttResourceFields_Name)   | This field is used to map the resource names. These names are displayed as one of Gantt columns and also can display as labels using the [`labelSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_LabelSettings) property. |
+| [`unit`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttResourceFields.html#Syncfusion_EJ2_Gantt_GanttResourceFields_Unit)   | It indicates the amount of work that can be done by a resource for the task in a day.                                                                                                                                                                                                       |
+| [`group`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttResourceFields.html#Syncfusion_EJ2_Gantt_GanttResourceFields_Group) | This field is used to group the resources and the tasks assigned to that particular resource into category.                                                                                                                                                                                 |
 
 The following code snippets shows resource collection and how it assigned to Gantt control.
 
@@ -49,11 +50,9 @@ The following code snippets shows resource collection and how it assigned to Gan
 {% endtabs %}
 {% endif %}
 
-
-
 ## Assign resource
 
-We can assign resources for a task at initial load, using the resource id value of the resources as a collection. This collection is mapped from the dataSource to the Gantt control using the [`resourceInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_ResourceInfo_System_String_) property.
+We can assign resources for a task at initial load, using the resource id value of the resources as a collection. This collection is mapped from the dataSource to the Gantt control using the [`resourceInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_ResourceInfo_System_String_) property.
 
 Resources are assigned to tasks in following ways.
 
@@ -62,17 +61,9 @@ Resources are assigned to tasks in following ways.
 If the unit is not specified for specific resource, the amount of work done will be consider as 100% by default. In such cases, the resource unit will not be displayed in Gantt UI.
 
 ```html
-
-GanttDataSource Child1 = new GanttDataSource()
-            {
-                TaskId = 2,
-                TaskName = "Identify site location",
-                StartDate = new DateTime(2019, 04, 02),
-                Duration = 4,
-                Progress = 50,
-                ResourceId = new int[] { 1 },
-            };
-
+GanttDataSource Child1 = new GanttDataSource() { TaskId = 2, TaskName =
+"Identify site location", StartDate = new DateTime(2019, 04, 02), Duration = 4,
+Progress = 50, ResourceId = new int[] { 1 }, };
 ```
 
 ### Assign resources with unit
@@ -80,21 +71,11 @@ GanttDataSource Child1 = new GanttDataSource()
 We can assign the quantity of work done by the resources for the specific task as like below code snippet.
 
 ```html
-
-GanttDataSource Record1Child1 = new GanttDataSource()
-            {
-                TaskId = 2,
-                TaskName = "Identify Site location",
-                StartDate = new DateTime(2019, 03, 29),
-                Duration = 2,
-                Progress = 30,
-                Work = 10,
-                Resources = new List<ResourceModel>
-                {
-                   new ResourceModel{  ResourceId = 1, Unit = 50 }
-                }
-            };
-
+GanttDataSource Record1Child1 = new GanttDataSource() { TaskId = 2, TaskName =
+"Identify Site location", StartDate = new DateTime(2019, 03, 29), Duration = 2,
+Progress = 30, Work = 10, Resources = new List<ResourceModel>
+  { new ResourceModel{ ResourceId = 1, Unit = 50 } } };
+</ResourceModel>
 ```
 
 When resource unit is defined in resource collection, the amount of work done by that particular resource will be same for all the tasks.
@@ -124,8 +105,6 @@ The following code snippet shows how to assign the resource for each task and ma
 {% endtabs %}
 {% endif %}
 
-
-
 ![Alt text](images/resourceUnit.png)
 
 ## Add/Edit resource collection
@@ -140,7 +119,7 @@ By using cell/ dialog edit option, we can add/remove the multiple resources for 
 
 In the Gantt Component, you can customize the background colors of the resource column and taskbars based on the resources assigned to each task. This customization enhances the readability and usability of the Gantt chart.
 
-To achieve this, utilize the [template](https://ej2.syncfusion.com/aspnetcore/documentation/gantt/columns/column-template) property for the resource column and the [queryTaskbarInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_QueryTaskbarInfo) event. The `template` property allows you to define a custom template for the resource column, while the `queryTaskbarInfo` event to modify the taskbar properties, including background colors.
+To achieve this, utilize the [template](https://ej2.syncfusion.com/aspnetmvc/documentation/gantt/columns/column-template) property for the resource column and the [queryTaskbarInfo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_QueryTaskbarInfo) event. The `template` property allows you to define a custom template for the resource column, while the `queryTaskbarInfo` event to modify the taskbar properties, including background colors.
 
 The following code snippet demonstrates how to customize the background colors of the taskbar and resource column according to the assigned resources:
 
