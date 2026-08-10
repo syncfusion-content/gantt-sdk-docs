@@ -6,7 +6,6 @@ keywords: vue gantt filter menu, column filter, filter operators, menu filtering
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/filtering/filter-menu
 platform: gantt-sdk
 control: Filter Menu - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

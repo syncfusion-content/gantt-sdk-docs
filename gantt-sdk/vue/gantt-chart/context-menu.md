@@ -6,7 +6,6 @@ keywords: vue gantt context menu, right-click menu, custom menu items, syncfusio
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/context-menu
 platform: gantt-sdk
 control: Context Menu - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

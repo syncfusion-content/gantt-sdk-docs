@@ -1,12 +1,11 @@
 ---
 layout: post
 title: Multiple Gantt Exporting in Vue Gantt Chart | Syncfusion
-description: Learn how to export multiple Vue Gantt Chart instances to Excel in single or multiple sheets.
+description: Learn how to export multiple Vue Gantt Chart instances into Excel, including options to export into a single sheet or multiple sheets with blank rows.
 keywords: vue gantt multiple export, multiple gantt export, excel multiple sheets, multi gantt export, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/excel-export/multiple-gantt-exporting
 platform: gantt-sdk
 control: Multiple Gantt Exporting - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

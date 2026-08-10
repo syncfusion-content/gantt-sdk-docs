@@ -6,7 +6,6 @@ keywords: vue gantt resource view, resource breakdown, task allocation, resource
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/resource-view
 platform: gantt-sdk
 control: Resource View - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
