@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Dialog in JavaScript Kanban control | Syncfusion
-description: Learn here all about Dialog in Syncfusion JavaScript Kanban control of Syncfusion Essential JS 2 and more.
+title: Card Editing in JavaScript Kanban | Syncfusion
+description: Learn how to edit cards, use dialogs, and validate inputs in Syncfusion JavaScript Kanban to manage task details with ease.
+keywords: javascript kanban card editing, syncfusion kanban, card dialog, task editing
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/kanban/dialog
 platform: gantt-sdk
-control: Dialog 
-publishingplatform: gantt-sdk
+control: Card Editing - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Dialog in JavaScript Kanban control
+# Card Editing and Dialog Management in JavaScript Kanban
 
 The Kanban provides built-in support to add, edit and delete a card using dialog module. User can edit a card using the following ways.
 
