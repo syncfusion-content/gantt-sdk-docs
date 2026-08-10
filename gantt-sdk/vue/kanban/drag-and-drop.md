@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Drag and drop in Vue Kanban component | Syncfusion
-description: Learn here all about Drag and drop in Syncfusion Vue Kanban component of Syncfusion Essential JS 2 and more.
-control: Drag and drop 
+title: Drag and Drop in Vue Kanban | Syncfusion
+description: Learn how to enable drag-and-drop interactions in Syncfusion Vue Kanban to reorder cards and move tasks across columns.
+keywords: vue kanban drag and drop, syncfusion kanban, card movement, reordering
+canonical: https://help.syncfusion.com/gantt-sdk/vue/kanban/drag-and-drop
 platform: gantt-sdk
+control: Drag and Drop - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Drag and drop in Vue Kanban component
+# Drag and Drop Operations in Vue Kanban
 
 All cards can be dragged and dropped across the columns or within the columns or swimlane row or kanban to an external source and vice versa.
 

@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Dialog in Vue Kanban component | Syncfusion
-description: Learn here all about Dialog in Syncfusion Vue Kanban component of Syncfusion Essential JS 2 and more.
-control: Dialog 
+title: Card Editing in Vue Kanban | Syncfusion
+description: Learn how to edit cards, use dialogs, and validate inputs in Syncfusion Vue Kanban to manage task details with ease.
+keywords: vue kanban card editing, syncfusion kanban, card dialog, task editing
+canonical: https://help.syncfusion.com/gantt-sdk/vue/kanban/dialog
 platform: gantt-sdk
+control: Card Editing - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Dialog in Vue Kanban component
+# Card Editing and Dialog Management in Vue Kanban
 
 The Kanban provides built-in support to add, edit and delete a card using dialog module. User can edit a card using the following ways.
 
