@@ -1,20 +1,22 @@
 ---
 layout: post
-title: Cards in Angular Kanban Component | Syncfusion
-description: Learn how to configure and customize cards in the Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
+title: Cards in Angular Kanban | Syncfusion
+description: Learn how to customize card layout, content, and interactions in Syncfusion Angular Kanban with practical examples and configuration guidance.
+keywords: angular kanban cards, syncfusion kanban, task cards, kanban board
+canonical: https://help.syncfusion.com/gantt-sdk/angular/kanban/cards
 platform: gantt-sdk
-control: Cards
+control: Cards - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Cards in Angular Kanban Component
+# Cards Customization and Layout Options in Angular Kanban
 
 The cards are main elements in Kanban board, which represent the task information with header and content. The header and content of a card is fetched from the corresponding mapping fields. The card layout can be customized with template also.
 
 ## Drag-and-drop
 
-Transit or change the card position using the drag-and-drop functionality. By default, the [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/kanban/#allowdraganddrop) property is enabled on the Kanban board, which is used to change the card position by column-to-column or within the column.
+Transit or change the card position using the drag-and-drop functionality. By default, the [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/kanban#allowdraganddrop) property is enabled on the Kanban board, which is used to change the card position by column-to-column or within the column.
 
 Added dotted border on Kanban cells except the dragged clone cells when dragging, which indicates the possible ways for dropping the cards into the cells.
 
@@ -35,7 +37,7 @@ In the following demo, the `showHeader` property is disabled on Kanban board.
 {% include code-snippet/gantt-sdk/angular/kanban/card-header-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/card-header-cs1" %}
 
 ## Content
@@ -44,7 +46,7 @@ The card's content is fetched from `dataSource` using the `contentField` propert
 
 ## Template
 
-The default card layout can be customized using the `template` property in [cardSettings](https://ej2.syncfusion.com/angular/documentation/api/kanban/#cardsettings) to meet application-specific needs, such as adding custom fields or styling. The following sample demonstrates a Kanban board with a custom card template.
+The default card layout can be customized using the `template` property in [cardSettings](https://ej2.syncfusion.com/angular/documentation/api/kanban#cardsettings) to meet application-specific needs, such as adding custom fields or styling. The following sample demonstrates a Kanban board with a custom card template.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -55,16 +57,16 @@ The default card layout can be customized using the `template` property in [card
 {% include code-snippet/gantt-sdk/angular/kanban/card-template-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/card-template-cs1" %}
 
 ## Selection
 
 Kanban board allows to select single and multiple selection of cards when mouse or keyboard interactions using `selectionType` property. The property contains following types.
 
-* **None**: No cards are allowed to select from Kanban board.
-* **Single**: Only one card allowed to select at a time in the Kanban board.
-* **Multiple**: Multiple cards are allowed to select in a board.
+- **None**: No cards are allowed to select from Kanban board.
+- **Single**: Only one card allowed to select at a time in the Kanban board.
+- **Multiple**: Multiple cards are allowed to select in a board.
 
 ### Multiple selection
 
@@ -79,5 +81,5 @@ Select the multiple cards randomly using Ctrl + mouse click and select the multi
 {% include code-snippet/gantt-sdk/angular/kanban/multiple-selection-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/multiple-selection-cs1" %}
