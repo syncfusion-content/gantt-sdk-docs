@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Dynamically change columns in TypeScript Kanban control | Syncfusion
-description: Learn here all about Dynamically change columns in Syncfusion TypeScript Kanban control of Syncfusion Essential JS 2 and more.
+title: Dynamically Change Columns in TypeScript Kanban | Syncfusion
+description: Learn how to dynamically change columns in Syncfusion TypeScript Kanban with practical examples and configuration guidance.
+keywords: typeScript kanban dynamically change columns, syncfusion kanban, update columns at runtime, column toggle
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/kanban/how-to/dynamically-change-columns
 platform: gantt-sdk
-control: Dynamically change columns
-publishingplatform: gantt-sdk
+control: Dynamically Change Columns - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Dynamically change columns in TypeScript Kanban control
+# Modify Columns Programmatically in TypeScript Kanban
 
 You can dynamically change the Kanban columns by using the [`columns`](../../api/kanban#columns) property.
 

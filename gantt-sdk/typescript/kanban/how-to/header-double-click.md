@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Header double click in TypeScript Kanban control | Syncfusion
-description: Learn here all about Header double click in Syncfusion TypeScript Kanban control of Syncfusion Essential JS 2 and more.
+title: Header Double-Click in TypeScript Kanban | Syncfusion
+description: Learn how to handle column header double-click events in Syncfusion TypeScript Kanban with practical examples and configuration guidance.
+keywords: typescript kanban header double click, syncfusion kanban, header event, column header
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/kanban/how-to/header-double-click
 platform: gantt-sdk
-control: Header double click
-publishingplatform: gantt-sdk
+control: Header Double Click - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Header double click in TypeScript Kanban control
+# Handle Header Double-Click in TypeScript Kanban
 
 You can bind the header double click event by using the [`dataBound`](../../api/kanban#dataBound) event at the initial rendering. You can get the column header text when you double click on the headers.
 

@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Filter cards in TypeScript Kanban control | Syncfusion
-description: Learn here all about Filter cards in Syncfusion TypeScript Kanban control of Syncfusion Essential JS 2 and more.
+title: Filter Cards in TypeScript Kanban | Syncfusion
+description: Learn how to filter cards in Syncfusion TypeScript Kanban using queries and data source conditions with practical examples.
+keywords: typescript kanban filter cards, syncfusion kanban, filter query, data filtering
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/kanban/how-to/filter-cards
 platform: gantt-sdk
-control: Filter cards
-publishingplatform: gantt-sdk
+control: Filter Cards - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Filter cards in TypeScript Kanban control
+# Filter cards in TypeScript Kanban
 
 You can filter the collection of cards from the dataSource and display it on the Kanban board by using the [`query`](../../api/kanban#query) property.
 
