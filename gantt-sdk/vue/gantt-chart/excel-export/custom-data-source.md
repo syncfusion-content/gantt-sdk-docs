@@ -6,7 +6,6 @@ keywords: vue gantt custom data source, export properties, dynamic data source, 
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/excel-export/custom-data-source
 platform: gantt-sdk
 control: Custom Data Source - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

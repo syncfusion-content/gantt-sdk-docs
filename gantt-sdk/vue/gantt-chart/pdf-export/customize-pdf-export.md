@@ -6,7 +6,6 @@ keywords: vue gantt customize pdf export, pdf customization, export settings, pd
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/pdf-export/customize-pdf-export
 platform: gantt-sdk
 control: Customize PDF Export - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

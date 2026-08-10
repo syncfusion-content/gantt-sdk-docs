@@ -6,7 +6,6 @@ keywords: vue gantt responsive columns, media queries, column visibility, respon
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/columns/responsive-columns
 platform: gantt-sdk
 control: Responsive Columns - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

@@ -6,7 +6,6 @@ keywords: vue gantt data binding, datasource, datamanager, local data, remote da
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/data-binding
 platform: gantt-sdk
 control: Data Binding - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

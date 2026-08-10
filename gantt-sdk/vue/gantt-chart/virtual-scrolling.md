@@ -6,7 +6,6 @@ keywords: vue gantt virtual scroll, row virtualization, large data, performance,
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/virtual-scrolling
 platform: gantt-sdk
 control: Virtual Scroll - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
