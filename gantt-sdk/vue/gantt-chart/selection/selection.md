@@ -6,7 +6,6 @@ keywords: vue gantt selection, row selection, cell selection, selection modes, h
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/selection/selection
 platform: gantt-sdk
 control: Selection - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

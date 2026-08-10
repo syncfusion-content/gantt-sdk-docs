@@ -6,7 +6,6 @@ keywords: vue gantt baseline, planned schedule, actual schedule, project trackin
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/baseline
 platform: gantt-sdk
 control: Baseline - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

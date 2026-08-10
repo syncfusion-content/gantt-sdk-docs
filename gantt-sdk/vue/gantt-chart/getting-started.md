@@ -6,7 +6,6 @@ keywords: vue gantt getting started, setup, installation, first steps, syncfusio
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/getting-started
 platform: gantt-sdk
 control: Getting Started - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -55,7 +54,7 @@ When creating a new project, choose the option `Default ([Vue 2] babel, eslint)`
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Vue packages
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are available at [npmjs.com](https://www.npmjs.com/search?q=ej2-vue). To use Vue components, install the required npm package.
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are available at [npm package registry](https://www.npmjs.com/search?q=ej2-vue). To use Vue components, install the required npm package.
 
 This article uses the [Vue Gantt Chart component](https://www.syncfusion.com/vue-components/vue-gantt-chart) as an example. Install the `@syncfusion/ej2-vue-gantt` package by running the following command:
 

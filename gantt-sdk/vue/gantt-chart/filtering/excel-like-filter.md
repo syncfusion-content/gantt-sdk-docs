@@ -6,7 +6,6 @@ keywords: vue gantt excel filter, advanced filtering, filter menu, sorting optio
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/filtering/excel-like-filter
 platform: gantt-sdk
 control: Excel-like Filter - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

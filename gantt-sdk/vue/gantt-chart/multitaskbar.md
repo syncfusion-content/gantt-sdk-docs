@@ -6,7 +6,6 @@ keywords: vue gantt multi taskbar, resource taskbar, multiple tasks, resource as
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/multi-taskbar
 platform: gantt-sdk
 control: Multi Taskbar - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

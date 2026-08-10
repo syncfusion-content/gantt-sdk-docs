@@ -6,7 +6,6 @@ keywords: vue gantt critical path, task dependencies, project duration, delay im
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/critical-path
 platform: gantt-sdk
 control: Critical Path - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
