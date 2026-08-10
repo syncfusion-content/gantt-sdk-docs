@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Localization in Vue Kanban component | Syncfusion
-description: Learn here all about Localization in Syncfusion Vue Kanban component of Syncfusion Essential JS 2 and more.
-control: Localization 
+title: Localization in Vue Kanban | Syncfusion
+description: Learn how to implement localization and internationalization in Syncfusion Vue Kanban for multi-language support.
+keywords: vue kanban localization, syncfusion kanban, internationalization, i18n
+canonical: https://help.syncfusion.com/gantt-sdk/vue/kanban/localization
 platform: gantt-sdk
+control: Localization - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Localization in Vue Kanban component
+# Globalization and Localization Support in Vue Kanban
 
 The localization library allows you to localize the default text content of the Kanban to different cultures using the `locale` property.
 
