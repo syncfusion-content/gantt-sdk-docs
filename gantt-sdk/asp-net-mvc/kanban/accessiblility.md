@@ -19,13 +19,13 @@ The accessibility compliance for the Kanban control is outlined below.
 | Accessibility Criteria                                                             | Compatibility                                                                        |
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
 | WCAG 2.2 Support                                                                   | AA                                                                                   |
-| [Section 508 Support](../common/accessibility#accessibility-standards)             | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png)             |
-| Screen Reader Support                                                              | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png)             |
-| Right-To-Left Support                                                              | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png)             |
-| Color Contrast                                                                     | ![Intermediate](https://cdn.syncfusion.com/content/images/documentation/partial.png) |
-| Mobile Device Support                                                              | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png)             |
-| [Keyboard Navigation Support](../common/accessibility#keyboard-navigation-support) | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png)             |
-| Accessibility Checker Validation                                                   | ![Intermediate](https://cdn.syncfusion.com/content/images/documentation/partial.png) |
+| [Section 508 Support](../common/accessibility#accessibility-standards)             | ![Yes](./images/full.png)             |
+| Screen Reader Support                                                              | ![Yes](./images/full.png)             |
+| Right-To-Left Support                                                              | ![Yes](./images/full.png)             |
+| Color Contrast                                                                     | ![Intermediate](./images/partial.png) |
+| Mobile Device Support                                                              | ![Yes](./images/full.png)             |
+| [Keyboard Navigation Support](../common/accessibility#keyboard-navigation-support) | ![Yes](./images/full.png)             |
+| Accessibility Checker Validation                                                   | ![Intermediate](./images/partial.png) |
 
 <style>
     .post .post-content img {
@@ -34,11 +34,11 @@ The accessibility compliance for the Kanban control is outlined below.
     }
 </style>
 
-![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png) - All features of the control meet the requirement.
+![Yes](./images/full.png) - All features of the control meet the requirement.
 
-![Intermediate](https://cdn.syncfusion.com/content/images/documentation/partial.png) - Some features of the control do not meet the requirement.
+![Intermediate](./images/partial.png) - Some features of the control do not meet the requirement.
 
-![No](https://cdn.syncfusion.com/content/images/documentation/not-supported.png) - The control does not meet the requirement.
+![No](./images/not-supported.png) - The control does not meet the requirement.
 
 ## WAI-ARIA attributes
 
