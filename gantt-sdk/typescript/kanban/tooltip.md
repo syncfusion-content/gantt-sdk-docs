@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Tooltip in TypeScript Kanban control | Syncfusion
-description: Learn here all about Tooltip in Syncfusion TypeScript Kanban control of Syncfusion Essential JS 2 and more.
+title: Tooltips in TypeScript Kanban | Syncfusion
+description: Learn how to implement and customize tooltips in Syncfusion TypeScript Kanban for enhanced user information display.
+keywords: typescript kanban tooltip, syncfusion kanban, hover information, help text
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/kanban/tooltip
 platform: gantt-sdk
-control: Tooltip 
-publishingplatform: gantt-sdk
+control: Tooltip - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Tooltip in TypeScript Kanban control
+# Tooltip and Hover Information in TypeScript Kanban
 
 The tooltip is used to show the card information when the cursor hover over the card elements using the `enableTooltip` property. Tooltip content is dynamically set based on hovering over the card elements.
 

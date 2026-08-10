@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Getting started with JavaScript Kanban control | Syncfusion
-description:  Checkout and learn about Getting started with JavaScript Kanban control of Syncfusion Essential JS 2 and more details.
+title: Getting Started in JavaScript Kanban | Syncfusion
+description: Learn how to start using Syncfusion JavaScript Kanban with step-by-step setup instructions and essential component features.
+keywords: javascript kanban getting started, syncfusion kanban, install component, setup
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/kanban/getting-started
 platform: gantt-sdk
-control: Getting started 
-publishingplatform: gantt-sdk
+control: Getting Started - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Getting started in JavaScript Kanban control
+# Getting Started with JavaScript Kanban
 
 This section briefly explains how to create the **Kanban** component and configure its available functionalities in a JavaScript application.
 
@@ -20,7 +21,7 @@ Before you begin, make sure your environment meets the following requirements:
 * A modern browser with ES6+ support (latest Chrome, Edge, Firefox, or Safari).
 * A text editor (for example, Visual Studio Code).
 * (Optional) A local web server such as `npx http-server`, the VS Code Live Server extension, or any static file server. A local server is required when loading scripts from a CDN or when the page needs `fetch`/module behavior.
-* If you choose the **local scripts** path, the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/gantt-sdk/confirm) build must be installed on your machine.
+* If you choose the **local scripts** path, the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/gantt-sdk) build must be installed on your machine.
 
 ## Supported themes and versions
 

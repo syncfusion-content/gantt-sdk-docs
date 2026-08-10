@@ -1,20 +1,22 @@
 ---
 layout: post
-title: Dialog Editing in Angular Kanban Component | Syncfusion
-description: Learn how to use the dialog module in the Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
+title: Card Editing in Angular Kanban | Syncfusion
+description: Learn how to edit cards, use dialogs, and validate inputs in Syncfusion Angular Kanban to manage task details with ease.
+keywords: angular kanban card editing, syncfusion kanban, card dialog, task editing
+canonical: https://help.syncfusion.com/gantt-sdk/angular/kanban/dialog
 platform: gantt-sdk
-control: Dialog 
+control: Card Editing - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Dialog in Angular Kanban Component
+# Card Editing and Dialog Management in Angular Kanban
 
-The Kanban component provides a built-in dialog module for adding, editing, and deleting cards, configured through the [dialogSettings](https://ej2.syncfusion.com/angular/documentation/api/kanban/#dialogsettings) property. User can edit a card using the following ways.
+The Kanban component provides a built-in dialog module for adding, editing, and deleting cards, configured through the [dialogSettings](https://ej2.syncfusion.com/angular/documentation/api/kanban#dialogsettings) property. User can edit a card using the following ways.
 
-* Built-in dialog module
-* Custom Fields
-* Dialog template
+- Built-in dialog module
+- Custom Fields
+- Dialog template
 
 ## Default Dialog
 
@@ -26,13 +28,13 @@ Double-clicking a card opens the dialog with fields mapped from `cardSettings` a
 
 The dialog displays with the following fields which mapped to dialog fields by default.
 
-Key | Type | Text
------|-----|----
-`cardSettings.headerField` | Input | ID
-keyField | DropDown | -
-`cardSettings.contentField` | TextArea | -
-`cardSettings.priority` (If applicable) | Numeric | -
-`swimlaneSettings.keyField` (If applicable) | DropDown | -
+| Key                                         | Type     | Text |
+| ------------------------------------------- | -------- | ---- |
+| `cardSettings.headerField`                  | Input    | ID   |
+| keyField                                    | DropDown | -    |
+| `cardSettings.contentField`                 | TextArea | -    |
+| `cardSettings.priority` (If applicable)     | Numeric  | -    |
+| `swimlaneSettings.keyField` (If applicable) | DropDown | -    |
 
 The following sample demonstrates the default dialog for card editing.
 
@@ -45,19 +47,19 @@ The following sample demonstrates the default dialog for card editing.
 {% include code-snippet/gantt-sdk/angular/kanban/getting-started-key-field-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/getting-started-key-field-cs1" %}
 
 ## Custom Fields
 
 Customize dialog fields using the `fields` property in `dialogSettings`. The `key` property maps to the `dataSource` value, and the `type` property specifies the component type. Available types include:
 
-* String
-* Numeric
-* TextArea
-* DropDown
-* TextBox
-* Input
+- String
+- Numeric
+- TextArea
+- DropDown
+- TextBox
+- Input
 
 > If `type` is not defined in the fields, then it renders as the HTML input element in dialog.
 
@@ -72,7 +74,7 @@ The following sample demonstrates custom dialog fields.
 {% include code-snippet/gantt-sdk/angular/kanban/custom-dialog-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/custom-dialog-cs1" %}
 
 ### Custom Fields label
@@ -88,7 +90,7 @@ By default, the fields `key` mapping value is considered as a `label` and you ca
 {% include code-snippet/gantt-sdk/angular/kanban/label-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/label-cs1" %}
 
 ### Fields Validation
@@ -104,7 +106,7 @@ The dialog fields can be validated while click on the `Save` button. This can be
 {% include code-snippet/gantt-sdk/angular/kanban/fields-validation-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/fields-validation-cs1" %}
 
 ## Dialog Template
@@ -120,12 +122,12 @@ Using the dialog template, you can render your own dialog by defining the `templ
 {% include code-snippet/gantt-sdk/angular/kanban/dialog-template-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/dialog-template-cs1" %}
 
 ## Prevent Dialog
 
-Prevent the dialog from opening on card double-click by setting `args.cancel` to `true` in the [dialogOpen](https://ej2.syncfusion.com/angular/documentation/api/kanban/#dialogopen) event. The following sample demonstrates preventing dialog opening.
+Prevent the dialog from opening on card double-click by setting `args.cancel` to `true` in the [dialogOpen](https://ej2.syncfusion.com/angular/documentation/api/kanban#dialogopen) event. The following sample demonstrates preventing dialog opening.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -136,12 +138,12 @@ Prevent the dialog from opening on card double-click by setting `args.cancel` to
 {% include code-snippet/gantt-sdk/angular/kanban/prevent-dialog-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/prevent-dialog-cs1" %}
 
 ## Persisting data in server
 
-The modified card data can be persisted in the database using the RESTful web services. All the CRUD operations in the Kanban are done through [DataManager](https://ej2.syncfusion.com/angular/documentation/data/). The `DataManager` has an option to bind all the CRUD related data in server-side.
+The modified card data can be persisted in the database using the RESTful web services. All the CRUD operations in the Kanban are done through [DataManager](https://ej2.syncfusion.com/angular/documentation/data). The `DataManager` has an option to bind all the CRUD related data in server-side.
 
 > For your information, the ODataAdaptor persists data in the server as per OData protocol.
 
@@ -153,44 +155,47 @@ You can use the [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/da
 
 You can map the CRUD operation in Kanban can be mapped to server-side controller actions using the properties `insertUrl`, `removeUrl`, `updateUrl`, and `crudUrl`.
 
-* `insertUrl` – You can perform single insertion operation on server-side.
-* `updateUrl` – You can update single data on server-side.
-* `removeUrl` – You can remove single data on server-side.
-* `crudUrl` – You can perform bulk data operation on server-side.
+- `insertUrl` – You can perform single insertion operation on server-side.
+- `updateUrl` – You can update single data on server-side.
+- `removeUrl` – You can remove single data on server-side.
+- `crudUrl` – You can perform bulk data operation on server-side.
 
 The following code example describes the above behavior.
 
 ```typescript
-import { Component } from '@angular/core';
-import { CardSettingsModel } from '@syncfusion/ej2-angular-kanban';
-import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
+import { Component } from "@angular/core";
+import { CardSettingsModel } from "@syncfusion/ej2-angular-kanban";
+import { DataManager, UrlAdaptor } from "@syncfusion/ej2-data";
 
 @Component({
-    selector: 'app-root',
-    template: `<ejs-kanban keyField='Status' [dataSource]='dataManager' [cardSettings]='cardSettings'>
-                    <e-columns>
-                    <e-column headerText='To do' keyField='Open'></e-column>
-                    <e-column headerText='In Progress' keyField='InProgress'></e-column>
-                    <e-column headerText='Testing' keyField='Testing'></e-column>
-                    <e-column headerText='Done' keyField='Close'></e-column>
-                    </e-columns>
-                </ejs-kanban>`
+  selector: "app-root",
+  template: `<ejs-kanban
+    keyField="Status"
+    [dataSource]="dataManager"
+    [cardSettings]="cardSettings"
+  >
+    <e-columns>
+      <e-column headerText="To do" keyField="Open"></e-column>
+      <e-column headerText="In Progress" keyField="InProgress"></e-column>
+      <e-column headerText="Testing" keyField="Testing"></e-column>
+      <e-column headerText="Done" keyField="Close"></e-column>
+    </e-columns>
+  </ejs-kanban>`,
 })
 export class AppComponent {
-    public cardSettings: CardSettingsModel = {
-        contentField: 'Summary',
-        headerField: 'Id'
-    };
-    private dataManager: DataManager = new DataManager({
-        url: 'Home/DataSource',
-        updateUrl: 'Home/Update',
-        insertUrl: 'Home/Insert',
-        removeUrl: 'Home/Delete',
-        adaptor: new UrlAdaptor(),
-        crossDomain: true
-    });
+  public cardSettings: CardSettingsModel = {
+    contentField: "Summary",
+    headerField: "Id",
+  };
+  private dataManager: DataManager = new DataManager({
+    url: "Home/DataSource",
+    updateUrl: "Home/Update",
+    insertUrl: "Home/Insert",
+    removeUrl: "Home/Delete",
+    adaptor: new UrlAdaptor(),
+    crossDomain: true,
+  });
 }
-
 ```
 
 The server-side controller code to handle CRUD operations is as follows.
@@ -280,37 +285,40 @@ The action parameter of `crudUrl` is used to get the corresponding CRUD action.
 The following code example describes the above behavior.
 
 ```typescript
-import { Component } from '@angular/core';
-import { CardSettingsModel } from '@syncfusion/ej2-angular-kanban';
-import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
+import { Component } from "@angular/core";
+import { CardSettingsModel } from "@syncfusion/ej2-angular-kanban";
+import { DataManager, UrlAdaptor } from "@syncfusion/ej2-data";
 
 @Component({
-    selector: 'app-root',
-    template: `<ejs-kanban keyField='Status' [dataSource]='dataManager' [cardSettings]='cardSettings'>
-                    <e-columns>
-                    <e-column headerText='To do' keyField='Open'></e-column>
-                    <e-column headerText='In Progress' keyField='InProgress'></e-column>
-                    <e-column headerText='Testing' keyField='Testing'></e-column>
-                    <e-column headerText='Done' keyField='Close'></e-column>
-                    </e-columns>
-                </ejs-kanban>`
+  selector: "app-root",
+  template: `<ejs-kanban
+    keyField="Status"
+    [dataSource]="dataManager"
+    [cardSettings]="cardSettings"
+  >
+    <e-columns>
+      <e-column headerText="To do" keyField="Open"></e-column>
+      <e-column headerText="In Progress" keyField="InProgress"></e-column>
+      <e-column headerText="Testing" keyField="Testing"></e-column>
+      <e-column headerText="Done" keyField="Close"></e-column>
+    </e-columns>
+  </ejs-kanban>`,
 })
 export class AppComponent {
-    public cardSettings: CardSettingsModel = {
-        contentField: 'Summary',
-        headerField: 'Id'
-    };
-    private dataManager: DataManager = new DataManager({
-        url: 'Home/DataSource',
-        updateUrl: 'Home/UpdateData',
-        insertUrl: 'Home/UpdateData',
-        removeUrl: 'Home/UpdateData',
-        crudUrl: 'Home/UpdateData',
-        adaptor: new UrlAdaptor(),
-        crossDomain: true
-    });
+  public cardSettings: CardSettingsModel = {
+    contentField: "Summary",
+    headerField: "Id",
+  };
+  private dataManager: DataManager = new DataManager({
+    url: "Home/DataSource",
+    updateUrl: "Home/UpdateData",
+    insertUrl: "Home/UpdateData",
+    removeUrl: "Home/UpdateData",
+    crudUrl: "Home/UpdateData",
+    adaptor: new UrlAdaptor(),
+    crossDomain: true,
+  });
 }
-
 ```
 
 ```typescript

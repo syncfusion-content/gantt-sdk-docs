@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Style in TypeScript Kanban control | Syncfusion
-description: Learn here all about Style in Syncfusion TypeScript Kanban control of Syncfusion Essential JS 2 and more.
+title: Styling and Theming in TypeScript Kanban | Syncfusion
+description: Learn how to customize styles, themes, and appearance in Syncfusion TypeScript Kanban with practical CSS and theming guidelines.
+keywords: typescript kanban styling, syncfusion kanban, theme, css, appearance
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/kanban/style
 platform: gantt-sdk
-control: Style 
-publishingplatform: gantt-sdk
+control: Styling - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Style in TypeScript Kanban control
+# Styling and Appearance with CSS and Theme Support in TypeScript Kanban
 
 To modify the Kanban appearance, you need to override the default CSS of Kanban. Also, you have an option to create your own custom theme using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material). Please find the list of CSS classes in Kanban.
 
