@@ -6,7 +6,6 @@ keywords: vue gantt zooming, zoom in out, timeline zoom, zoom to fit, zoom level
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/time-line/zooming
 platform: gantt-sdk
 control: Zooming - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -17,7 +16,7 @@ The zooming support provides options to increase or decrease the width of timeli
 
 ## Zoom in
 
-This support is used to increase the timeline width and timeline unit from years to minutestimespan. When the `ZoomIn` icon was clicked, the timeline cell width is increased when the cellsize exceeds the specified range and the timeline unit is changed based on the current zoom levels.
+This support is used to increase the timeline width and timeline unit from years to minutes timespan. When the `ZoomIn` icon was clicked, the timeline cell width is increased when the cell size exceeds the specified range and the timeline unit is changed based on the current zoom levels.
 
 ## Zoom out
 
