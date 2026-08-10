@@ -6,7 +6,6 @@ keywords: vue gantt filtering, filter menu, search filtering, filter criteria, d
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/filtering/filtering
 platform: gantt-sdk
 control: Filtering - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

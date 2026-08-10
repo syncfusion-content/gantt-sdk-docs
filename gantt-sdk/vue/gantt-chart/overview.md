@@ -6,7 +6,6 @@ keywords: vue gantt overview, gantt chart features, project management, timeline
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/overview
 platform: gantt-sdk
 control: Gantt Chart Overview
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

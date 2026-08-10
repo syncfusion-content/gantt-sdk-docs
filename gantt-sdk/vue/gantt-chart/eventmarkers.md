@@ -6,7 +6,6 @@ keywords: vue gantt event markers, timeline events, milestone markers, day marke
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/event-markers
 platform: gantt-sdk
 control: Event Markers - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

@@ -6,7 +6,6 @@ keywords: vue gantt sorting, column sorting, sort order, multi-column sort, sort
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/sorting
 platform: gantt-sdk
 control: Sorting - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

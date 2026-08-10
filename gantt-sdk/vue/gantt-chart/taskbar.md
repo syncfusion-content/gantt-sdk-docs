@@ -6,7 +6,6 @@ keywords: vue gantt taskbar, taskbar template, milestone template, parent taskba
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/taskbar
 platform: gantt-sdk
 control: Taskbar - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

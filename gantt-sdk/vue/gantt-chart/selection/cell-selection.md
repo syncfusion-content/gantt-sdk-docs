@@ -6,7 +6,6 @@ keywords: vue gantt cell selection, select cells, cell mode, get selected cells,
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/selection/cell-selection
 platform: gantt-sdk
 control: Cell Selection - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

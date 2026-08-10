@@ -6,7 +6,6 @@ keywords: vue gantt drag and drop, row drag drop, task rearrange, drag functiona
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/drag-and-drop
 platform: gantt-sdk
 control: Drag and Drop - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

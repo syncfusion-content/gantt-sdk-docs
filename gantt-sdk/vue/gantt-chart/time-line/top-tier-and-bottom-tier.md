@@ -6,7 +6,6 @@ keywords: vue gantt top tier, bottom tier, timeline tier, tier customization, ti
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/time-line/top-tier-and-bottom-tier
 platform: gantt-sdk
 control: Top Tier and Bottom Tier - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
