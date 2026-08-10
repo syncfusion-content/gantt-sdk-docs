@@ -6,7 +6,6 @@ keywords: vue gantt holidays, non-working days, holiday settings, date ranges, s
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/holidays
 platform: gantt-sdk
 control: Holidays - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

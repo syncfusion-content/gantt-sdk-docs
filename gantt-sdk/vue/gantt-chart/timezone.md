@@ -6,7 +6,6 @@ keywords: vue gantt timezone, time zone support, date manipulation, local timezo
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/timezone
 platform: gantt-sdk
 control: Timezone - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
