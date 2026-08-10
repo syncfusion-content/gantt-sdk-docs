@@ -22,21 +22,6 @@ To render an image in a Gantt column, define a template using the [template](htt
 
 The following example demonstrates how to render an image for the **Resources** field to display an image element.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs1/index.js %}
@@ -47,7 +32,6 @@ The following example demonstrates how to render an image for the **Resources** 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs1" %}
-{% endif %}
 
 > The [template](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#template) option allows to define any HTML content within a column.
 
@@ -59,21 +43,6 @@ To configure a hyperlink column, define a [template](https://ej2.syncfusion.com/
 
 The example below demonstrates how to render a hyperlink for the **TaskName** field.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs2/index.js %}
@@ -84,7 +53,6 @@ The example below demonstrates how to render a hyperlink for the **TaskName** fi
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs2" %}
-{% endif %}
 
 > The `window.open()` method is a built-in JavaScript function that opens a new browser window or tab with the specified URL.
 
@@ -98,21 +66,6 @@ The [LineChart](https://ej2.syncfusion.com/javascript/documentation/sparkline/es
 
 The following example demonstrates how to render a `LineChart` for the **customData** field.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs3/index.js %}
@@ -123,7 +76,6 @@ The following example demonstrates how to render a `LineChart` for the **customD
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs3" %}
-{% endif %}
 
 ### Render ColorPicker control in a column
 
@@ -132,21 +84,6 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> [ColorPicker](https://ej2.s
 To render the ColorPicker inside a Gantt column, configure the [template](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#template) property in the column definition.
 
 The following example demonstrates how to render a `ColorPicker` for the **Change color** column.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs4/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -158,28 +95,12 @@ The following example demonstrates how to render a `ColorPicker` for the **Chang
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs4" %}
-{% endif %}
 
 ### Render DropDownList control in a column
 
 To render a `DropDownList` control in a Gantt column, define a template using the [template](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#template) property in the column configuration.
 
 The following example demonstrates how to render the [DropDownList](https://ej2.syncfusion.com/javascript/documentation/drop-down-list/es5-getting-started) control in the **Task Priority** column.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs5/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs5" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -191,28 +112,12 @@ The following example demonstrates how to render the [DropDownList](https://ej2.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs5" %}
-{% endif %}
 
 ### Render Chip control in a column
 
 The Gantt chart control supports rendering the Syncfusion<sup style="font-size:70%">&reg;</sup> [Chips](https://ej2.syncfusion.com/javascript/documentation/chips/getting-started) control in a column using the [template](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#template) property. This is useful for displaying data that benefits from a chip-style visual representation.
 
 The following example demonstrates how to render the Chips control in the **TaskName** column.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs6/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs6/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs6" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -224,28 +129,12 @@ The following example demonstrates how to render the Chips control in the **Task
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs6" %}
-{% endif %}
 
 ### Render RadioButton in a column
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> [RadioButton](https://ej2.syncfusion.com/javascript/documentation/radio-button/es5-getting-started) control can be rendered in a grid column to display selection options like order statuses or approval choices.
 
 The following example demonstrates rendering `RadioButton` controls in the **Order Status** column.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs7/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs7/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs7" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -257,28 +146,12 @@ The following example demonstrates rendering `RadioButton` controls in the **Ord
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs7" %}
-{% endif %}
 
 ## Using condition template
 
 The conditional column [template](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#template) allows rendering elements based on specific conditions.
 
 The following example code demonstrates how to render a checkbox only when the **Discontinued** field is **true**. This is achieved by applying a conditional check inside the template function:
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs8/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs8/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs8" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -290,7 +163,6 @@ The following example code demonstrates how to render a checkbox only when the *
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs8" %}
-{% endif %}
 
 > You can use any template element or custom control instead of the checkbox in the conditional template based on your requirement.
 
@@ -299,21 +171,6 @@ The following example code demonstrates how to render a checkbox only when the *
 The Gantt chart control allows retrieving the row object of a selected record when a [template](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#template) element is clicked. This is useful for performing custom actions based on the selected data.
 
 In the following example, a button is rendered in the **Task Data** column. The `click` event is bound to the `showDetails` method, which receives the data object from the template variable, enabling access to the selected row and displaying it in a dialog popup.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs9/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs9/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs9" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -325,7 +182,6 @@ In the following example, a button is rendered in the **Task Data** column. The 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs9" %}
-{% endif %}
 
 ## Use custom helper inside the template
 
@@ -334,21 +190,6 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart control support
 To use a custom helper function, define it in the template context using the `let` keyword. This creates a reference to the function that can be used within the template.
 
 The following example demonstrates how to use a custom helper function inside the `template` property for the **Progress** column.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs10/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs10/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs10" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -360,28 +201,12 @@ The following example demonstrates how to use a custom helper function inside th
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs10" %}
-{% endif %}
 
 > Custom helpers can only be used inside the template of the column.
 
 ## Render a control in the template property using event
 
 You can render a control inside a Gantt chart cell by setting the `template` property and using the [queryCellInfo](https://ej2.syncfusion.com/javascript/documentation/gantt/events#querycellinfo) event to display it before the cell is rendered.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs11/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs11/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs11" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -393,4 +218,4 @@ You can render a control inside a Gantt chart cell by setting the `template` pro
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columnTemplate-cs11" %}
-{% endif %}
+

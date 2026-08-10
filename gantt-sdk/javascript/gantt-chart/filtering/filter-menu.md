@@ -14,21 +14,6 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 The [JavaScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control offers a filter menu for each column, enabling you to filter data based on column type and supported operators such as equal, contains, greater than, etc. To enable this feature, set [allowFiltering](https://ej2.syncfusion.com/javascript/documentation/api/gantt#allowfiltering) to **true** and configure [filterSettings.type](https://ej2.syncfusion.com/javascript/documentation/api/gantt/filtersettings#type) as **Menu**.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/initialLoadFiltering-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/initialLoadFiltering-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/initialLoadFiltering-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/initialLoadFiltering-cs2/index.js %}
@@ -39,7 +24,6 @@ The [JavaScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/j
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/initialLoadFiltering-cs2" %}
-{% endif %}
 
 > To prevent the filter menu from rendering for a specific column, set [columns.allowFiltering](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#allowfiltering) to **false**.
 
@@ -53,21 +37,6 @@ The `column.filter.ui` property supports three essential functions:
 2. `write`- Populates the control with the current filter value and attaches any necessary event handlers.
 3. `read` - Retrieves the selected value from the control and applies the filter to the column.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/initialLoadFiltering-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/initialLoadFiltering-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/initialLoadFiltering-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/initialLoadFiltering-cs3/index.js %}
@@ -78,7 +47,6 @@ The `column.filter.ui` property supports three essential functions:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/initialLoadFiltering-cs3" %}
-{% endif %}
 
 ## Hide default filter icon while perform filtering through method
 
@@ -92,21 +60,6 @@ To hide the default filter icon from the UI when filtering is performed programm
 
 You can perform filtering programmatically by checking if `args.currentTarget.id` equals **performFilter**, and then calling [filterByColumn](https://ej2.syncfusion.com/javascript/documentation/api/gantt#filterbycolumn) method. If the condition is not met, use [clearFiltering](https://ej2.syncfusion.com/javascript/documentation/api/gantt#clearfiltering) to reset filters via a button click.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs2/index.js %}
@@ -117,7 +70,6 @@ You can perform filtering programmatically by checking if `args.currentTarget.id
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs2" %}
-{% endif %}
 
 ## Customize the default input control of filter menu dialog
 
@@ -135,21 +87,6 @@ You can refer to the table below for supported column types, their default compo
 
 The following sample demonstrates how to disable the autofill feature by setting the `autofill` property to **false** for the **TaskName** column, and how to disable the spin button by setting `showSpinButton` to **false** for the **TaskID** column.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs1/index.js %}
@@ -160,7 +97,6 @@ The following sample demonstrates how to disable the autofill feature by setting
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs1" %}
-{% endif %}
 
 ## Customizing filter menu operators list
 
@@ -173,21 +109,6 @@ You can configure operators for different types using the following options:
 - **dateOperator** – Custom operators for date columns.
 - **booleanOperator** – Custom operators for boolean columns.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs3/index.js %}
@@ -198,4 +119,4 @@ You can configure operators for different types using the following options:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/filter-menu-cs3" %}
-{% endif %}
+

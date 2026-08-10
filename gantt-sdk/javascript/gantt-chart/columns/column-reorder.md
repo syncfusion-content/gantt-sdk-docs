@@ -16,21 +16,6 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Gantt Chart cont
 
 To enable column reordering, set the [allowReordering](https://ej2.syncfusion.com/javascript/documentation/api/gantt#allowreordering) property to **true** in the Gantt configuration and inject the `Reorder` module to the Gantt control.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs2/index.js %}
@@ -41,7 +26,6 @@ To enable column reordering, set the [allowReordering](https://ej2.syncfusion.co
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs2" %}
-{% endif %}
 
 > - You can modify the appearance of column headers during drag-and-drop using the [columnDrag](https://ej2.syncfusion.com/javascript/documentation/gantt/events#columndrag) and [columnDrop](https://ej2.syncfusion.com/javascript/documentation/gantt/events#columndrop) events.
 > - After columns are reordered, their data positions also change. Ensure any dependent logic is updated to reflect the new column order.
@@ -53,21 +37,6 @@ In Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Gantt Chart contr
 
 The following example demonstrates how reordering is restricted for the **TaskName** column.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs21/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs21/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs21" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs21/index.js %}
@@ -78,7 +47,6 @@ The following example demonstrates how reordering is restricted for the **TaskNa
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs21" %}
-{% endif %}
 
 ## Reorder columns programmatically
 
@@ -95,21 +63,6 @@ You can reorder columns in the Gantt Chart control using the [reorderColumns](ht
 
 The following demonstrates how to reorder columns by placing **TaskName** to position before **TaskID**, or moving **TaskName**, **StartDate**, **Duration** to position before **TaskID**.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/multipleReorder-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/multipleReorder-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/multipleReorder-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/multipleReorder-cs1/index.js %}
@@ -120,7 +73,6 @@ The following demonstrates how to reorder columns by placing **TaskName** to pos
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/multipleReorder-cs1" %}
-{% endif %}
 
 ### Reorder columns using column index
 
@@ -130,21 +82,6 @@ You can reorder columns in the Gantt Chart control using the [reorderColumnByInd
 - **toIndex**: Target index to place the column.
 
 The following demonstrates how to reorder the column at index **1** to position **3**.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/multipleReorder-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/multipleReorder-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/multipleReorder-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -156,7 +93,6 @@ The following demonstrates how to reorder the column at index **1** to position 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/multipleReorder-cs2" %}
-{% endif %}
 
 ### Reorder columns using target index
 
@@ -166,21 +102,6 @@ You can reorder single or multiple columns in the Gantt Chart control using the 
 - **toIndex**: The index where the column should be placed.
 
 The following demonstrates how to reorder a single column **TaskID** to index **3**, or move multiple columns **TaskID**, **TaskName** to index **3**.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/multipleReorder-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/multipleReorder-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/multipleReorder-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -192,7 +113,6 @@ The following demonstrates how to reorder a single column **TaskID** to index **
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/multipleReorder-cs3" %}
-{% endif %}
 
 ## Customize column reorder behavior using events
 
@@ -204,21 +124,6 @@ The following demonstrates how to handle specific fields during column reorderin
 - Cancel `columnDrag` for the **Duration** field.
 - Change header text for the **TaskName** field during the `columnDragStart` event.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/reorder-events-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/reorder-events-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/reorder-events-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/reorder-events-cs1/index.js %}
@@ -229,4 +134,4 @@ The following demonstrates how to handle specific fields during column reorderin
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/reorder-events-cs1" %}
-{% endif %}
+

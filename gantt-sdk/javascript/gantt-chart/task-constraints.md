@@ -72,21 +72,6 @@ Include `constraintType` and `constraintDate` in your data source. For example:
 
 The following example applies a **MustStartOn** constraint. This code sets a task to start on July 1, 2025, with the taskbar reflecting the constraint.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/task-constraints-cs1/index.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/task-constraints-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/task-constraints-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/task-constraints-cs1/index.js %}
@@ -97,8 +82,6 @@ The following example applies a **MustStartOn** constraint. This code sets a tas
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/task-constraints-cs1" %}
-
-{% endif %}
 
 ## Handle constraint violations
 
@@ -126,21 +109,6 @@ actionBegin(args) {
 
 The following example disables the **MustStartOn** violation popup:
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/task-constraints-cs2/index.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/task-constraints-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/task-constraints-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/task-constraints-cs2/index.js %}
@@ -152,10 +120,8 @@ The following example disables the **MustStartOn** violation popup:
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/task-constraints-cs2" %}
 
-{% endif %}
-
 ## See also
 
-- [How to configure task dependencies?](./task-dependency)
-- [How to customize taskbars?](./taskbar)
-- [How to enable baseline rendering?](./baseline)
+- [How to configure task dependencies?](https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/task-dependency)
+- [How to customize taskbars?](https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/taskbar)
+- [How to enable baseline rendering?](https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/baseline)

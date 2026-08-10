@@ -18,21 +18,6 @@ Tasks can be dynamically added to the Gantt project by enabling the [editSetting
 
 A row can be added to the Gantt component from the toolbar while the [editSettings.allowAdding](https://ej2.syncfusion.com/javascript/documentation/api/gantt/editSettings#allowadding) property is set to true. On clicking the toolbar add icon, you should provide the task information in the add dialog.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/rows-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/rows-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/rows-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/rows-cs1/index.js %}
@@ -43,28 +28,12 @@ A row can be added to the Gantt component from the toolbar while the [editSettin
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/rows-cs1" %}
-{% endif %}
 
 > By default, the new row will be added to the top most row in the Gantt control.
 
 ## Context menu
 
 A row can also be added above, below or child of the selected row by using context menu support. For this, we need to enable the property [enableContextMenu](https://ej2.syncfusion.com/javascript/documentation/api/gantt#enablecontextmenu) and inject the [ContextMenu](https://ej2.syncfusion.com/javascript/documentation/api/gantt/index-default#contextmenumodule) module into the Gantt control.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/managingTasks-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/managingTasks-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/managingTasks-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -76,7 +45,6 @@ A row can also be added above, below or child of the selected row by using conte
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/managingTasks-cs1" %}
-{% endif %}
 
 ## Using method
 
@@ -88,21 +56,6 @@ You can add rows to the Gantt control dynamically using the [addRecord](https://
 - Below the selected row.
 - As child to the selected row.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/addRow-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/addRow-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/addRow-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/addRow-cs1/index.js %}
@@ -113,4 +66,4 @@ You can add rows to the Gantt control dynamically using the [addRecord](https://
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/addRow-cs1" %}
-{% endif %}
+

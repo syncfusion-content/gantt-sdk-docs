@@ -38,21 +38,6 @@ Holidays are defined using the [holidays](https://ej2.syncfusion.com/javascript/
 
 The following example configures single and multi-day holidays:
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/holidays-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/holidays-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/holidays-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/holidays-cs1/index.js %}
@@ -63,7 +48,6 @@ The following example configures single and multi-day holidays:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/holidays-cs1" %}
-{% endif %}
 
 The code defines holidays like Christmas (December 25) and a multi-day New Year break, rendering them as highlighted periods in the timeline.
 

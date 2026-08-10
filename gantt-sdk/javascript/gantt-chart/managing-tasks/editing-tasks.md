@@ -29,21 +29,6 @@ By setting the edit mode to auto using the [editSettings.mode](https://ej2.syncf
 
 The following code example shows you how to enable the cell editing in Gantt control.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/getting-started-cs10/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/getting-started-cs10/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/getting-started-cs10" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/getting-started-cs10/index.js %}
@@ -54,28 +39,12 @@ The following code example shows you how to enable the cell editing in Gantt con
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/getting-started-cs10" %}
-{% endif %}
 
 `Note:` When the edit mode is set to `Auto`, on performing double-click action on TreeGrid side, the cells will be changed to editable mode and on performing double-click action on chart side, the edit dialog will appear for editing the task details.
 
 ## Dialog editing
 
 Modify the task details through the edit dialog by setting the edit [mode](https://ej2.syncfusion.com/javascript/documentation/api/gantt/editSettings#mode) to `Dialog`.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/getting-started-cs11/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/getting-started-cs11/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/getting-started-cs11" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -87,28 +56,12 @@ Modify the task details through the edit dialog by setting the edit [mode](https
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/getting-started-cs11" %}
-{% endif %}
 
 `Note:` In dialog editing mode, the edit dialog appears when performing double-click action on both TreeGrid or Gantt chart sides.
 
 ### Sections or tabs in dialog
 
 In the Gantt dialog, you can define the required tabs or editing sections using the [addDialogFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt#adddialogfields) and [editDialogFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt#editdialogfields) properties. Every tab is defined using the [type](https://ej2.syncfusion.com/javascript/documentation/api/gantt/dialogFieldType) property.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/editing-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/editing-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/editing-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -120,28 +73,12 @@ In the Gantt dialog, you can define the required tabs or editing sections using 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/editing-cs2" %}
-{% endif %}
 
 ### Limiting data fields in general tab
 
 In the Gantt dialog, you can make only specific data source fields visible for editing by using the [addDialogFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt#adddialogfields) and [editDialogFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt#editdialogfields) properties. The data fields are defined with [type](https://ej2.syncfusion.com/javascript/documentation/api/gantt/addDialogFieldSettings#type) and [fields](https://ej2.syncfusion.com/javascript/documentation/api/gantt/addDialogFieldSettings#fields) properties.
 
 `Note:` You can also define the custom fields in the add/edit dialog General tab using the [fields](https://ej2.syncfusion.com/javascript/documentation/api/gantt/addDialogFieldSettings#fields) property.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/editing-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/editing-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/editing-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -153,7 +90,6 @@ In the Gantt dialog, you can make only specific data source fields visible for e
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/editing-cs3" %}
-{% endif %}
 
 ## Task dependencies
 
@@ -167,21 +103,6 @@ You can update the task dependencies using the following ways:
 
 The following code example demonstrates how to enable task dependency editing in the Gantt chart using the [editSettings](https://ej2.syncfusion.com/javascript/documentation/api/gantt/editSettings) property.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/editing-cs6/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/editing-cs6/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/editing-cs6" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/editing-cs6/index.js %}
@@ -192,7 +113,6 @@ The following code example demonstrates how to enable task dependency editing in
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/editing-cs6" %}
-{% endif %}
 
 ![Alt text](../images/user-interaction.png)
 
@@ -214,23 +134,6 @@ Tasks' value can be dynamically updated by using the [updateRecordById](https://
 
 > NOTE: Using the [updateRecordById](https://ej2.syncfusion.com/javascript/documentation/api/gantt#updaterecordbyid) method, you cannot update the task ID value.
 
-{% if page.publishingplatform == "typescript" %}
-
-![Add action](../images/add-action.png)
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/updateRecordById-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/updateRecordById-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/updateRecordById-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 ![Edit action](../images/edit-action.png)
 
 {% tabs %}
@@ -243,6 +146,5 @@ Tasks' value can be dynamically updated by using the [updateRecordById](https://
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/updateRecordById-cs1" %}
-{% endif %}
 
 ![Delete action](../images/delete-action.png)

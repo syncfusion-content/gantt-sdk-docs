@@ -22,21 +22,6 @@ The [JavaScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/j
 
 These properties allow precise control over how time intervals are displayed, enhancing the readability and usability of the Gantt chart across various project scales.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/timeline-cs8/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/timeline-cs8/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/timeline-cs8" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/timeline-cs8/index.js %}
@@ -47,7 +32,6 @@ These properties allow precise control over how time intervals are displayed, en
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/timeline-cs8" %}
-{% endif %}
 
 ## Combining timeline cells
 
@@ -57,21 +41,6 @@ In the JavaScript Gantt Chart control, timeline cells in the top and bottom tier
 - [bottomTier.count](https://ej2.syncfusion.com/javascript/documentation/api/gantt/timelineTierSettings#count): Specifies the number of time units to combine in each bottom-tier cell.
 
 By adjusting these values, the timeline can display broader or more granular intervals, improving visibility for long-term or short-term project views.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/timeline-cs9/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/timeline-cs9/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/timeline-cs9" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -83,7 +52,6 @@ By adjusting these values, the timeline can display broader or more granular int
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/timeline-cs9" %}
-{% endif %}
 
 ## Format value of timeline cell
 
@@ -105,21 +73,6 @@ The [formatter](https://ej2.syncfusion.com/documentation/api/gantt/itimelineform
 
 The following example shows how to use the `formatter` function with all four parameters `date`, `format`, `tier`, and `mode`:
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/timeline-cs10/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/timeline-cs10/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/timeline-cs10" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/timeline-cs10/index.js %}
@@ -130,7 +83,6 @@ The following example shows how to use the `formatter` function with all four pa
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/timeline-cs10" %}
-{% endif %}
 
 ## Timeline cell width
 
@@ -143,21 +95,6 @@ The width of the top tier cells is automatically calculated based on the bottom 
 
 This configuration allows precise control over the visual density of the timeline, supporting both detailed and high-level project views.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/timeline-cs11/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/timeline-cs11/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/timeline-cs11" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/timeline-cs11/index.js %}
@@ -168,4 +105,4 @@ This configuration allows precise control over the visual density of the timelin
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/timeline-cs11" %}
-{% endif %}
+

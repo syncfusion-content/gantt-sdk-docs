@@ -40,21 +40,6 @@ Event markers render as vertical lines positioned at specific dates across the e
 
 The following implementation demonstrates event marker integration within a Gantt chart, showcasing timeline-wide event highlighting:
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/event-markers-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/event-markers-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/event-markers-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/event-markers-cs1/index.js %}
@@ -65,26 +50,10 @@ The following implementation demonstrates event marker integration within a Gant
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/event-markers-cs1" %}
-{% endif %}
 
 ## Programmatically show and hide event markers
 
 You can programmatically show or hide event markers in the Gantt chart by updating the [eventMarkers](https://ej2.syncfusion.com/javascript/documentation/api/gantt#eventmarkers) property.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/event-markers-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/event-markers-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/event-markers-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -96,7 +65,6 @@ You can programmatically show or hide event markers in the Gantt chart by updati
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/event-markers-cs3" %}
-{% endif %}
 
 ## See Also
 

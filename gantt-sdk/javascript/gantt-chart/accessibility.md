@@ -132,77 +132,6 @@ The Gantt Chart control provides comprehensive keyboard navigation support follo
 
 The Gantt Chart control provides accessible error handling and validation feedback patterns for Gantt-specific scenarios including dependency validation, resource conflicts, and date constraint violations.
 
-{% if page.publishingplatform == "typescript" %}
-
-```ts
-import {
-  Gantt,
-  Edit,
-  Selection,
-  FailureEventArgs,
-  TaskFieldsModel,
-  EditSettingsModel,
-} from "@syncfusion/ej2-gantt";
-import { data } from "./datasource";
-
-Gantt.Inject(Edit, Selection);
-
-const taskFields: TaskFieldsModel = {
-  id: "TaskID",
-  name: "TaskName",
-  startDate: "StartDate",
-  duration: "Duration",
-  progress: "Progress",
-  parentID: "ParentID",
-};
-
-const editSettings: EditSettingsModel = {
-  allowEditing: true,
-  allowAdding: true,
-  allowDeleting: true,
-};
-
-function formatErrorMessage(error: any): string {
-  const msg = error && error.message ? error.message : "Unknown error";
-  return `Error: ${msg}. Please review your input and try again.`;
-}
-
-function manageFocusForError(args: FailureEventArgs): void {
-  const anyArgs: any = args as any;
-  const taskId = anyArgs?.data?.taskId ?? anyArgs?.data?.TaskID;
-  if (!taskId) {
-    return;
-  }
-
-  const targetElement = document.querySelector<HTMLElement>(
-    `[data-task-id="${taskId}"]`,
-  );
-  if (targetElement) {
-    targetElement.focus();
-  }
-}
-
-function onActionFailure(args: FailureEventArgs): void {
-  const errorMessage = formatErrorMessage((args as any)?.error);
-  const region = document.getElementById("error-region");
-  if (region) {
-    region.textContent = errorMessage;
-  }
-  manageFocusForError(args);
-}
-
-const gantt: Gantt = new Gantt({
-  dataSource: data,
-  taskFields,
-  editSettings,
-  actionFailure: onActionFailure,
-});
-
-gantt.appendTo("#Gantt");
-```
-
-{% elsif page.publishingplatform == "javascript" %}
-
 ```js
 var taskFields = {
   id: "TaskID",
@@ -256,8 +185,6 @@ var gantt = new ej.gantt.Gantt({
 
 gantt.appendTo("#Gantt");
 ```
-
-{% endif %}
 
 ## Mobile and touch accessibility
 

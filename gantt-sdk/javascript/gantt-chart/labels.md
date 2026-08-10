@@ -48,21 +48,6 @@ This code displays task names on the left, task IDs on the right, and formatted 
 
 For advanced scenarios, you can create custom label templates using functions for advanced customization that provide complete control over label content and formatting.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/tasklabels-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/tasklabels-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/tasklabels-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/tasklabels-cs1/index.js %}
@@ -73,7 +58,6 @@ For advanced scenarios, you can create custom label templates using functions fo
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/tasklabels-cs1" %}
-{% endif %}
 
 This code creates a left label with priority-based icons (e.g., red for high priority) and a right label with a progress bar, improving visual feedback. For responsive designs, ensure templates adapt to narrow screens, as task labels may be clipped on short taskbars.
 
@@ -205,8 +189,6 @@ let gantt: Gantt = new Gantt({
 
 gantt.appendTo("#Gantt");
 ```
-
-{% endif %}
 
 **Rich content labels with multiple data points:**
 
@@ -381,8 +363,6 @@ let gantt: Gantt = new Gantt({
 
 gantt.appendTo("#Gantt");
 ```
-
-{% endif %}
 
 ## See also
 

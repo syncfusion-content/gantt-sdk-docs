@@ -62,21 +62,6 @@ var baselineColor = "rgba(255, 107, 107, 0.8)";
 
 The following example demonstrates complete baseline configuration with proper field mapping:
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/baseline-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/baseline-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/baseline-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/baseline-cs1/index.js %}
@@ -87,34 +72,12 @@ The following example demonstrates complete baseline configuration with proper f
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/baseline-cs1" %}
-{% endif %}
-
-{% if page.publishingplatform == "typescript" %}
-
-> For a comprehensive demonstration of baseline functionality, explore the [interactive sample](https://ej2.syncfusion.com/demos/#/tailwind3/gantt/baseline.html).
-
-{% elsif page.publishingplatform == "javascript" %}
 
 > For a comprehensive demonstration of baseline functionality, explore the [interactive sample](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/gantt/baseline.html).
-
-{% endif %}
 
 ## Customize baseline using event
 
 You can customize the baseline bar in the Gantt chart using the [queryTaskbarInfo](https://ej2.syncfusion.com/javascript/documentation/gantt/events#querytaskbarinfo) event.
-
-{% if page.publishingplatform == "typescript" %}
-
-```ts
-queryTaskbarInfo: (args) => {
-  const element = args.rowElement.querySelector(".e-baseline-bar");
-  if (element) {
-    (element as HTMLElement).style.background = "linear-gradient(red, yellow)";
-  }
-};
-```
-
-{% elsif page.publishingplatform == "javascript" %}
 
 ```js
 queryTaskbarInfo: function (args) {
@@ -124,8 +87,6 @@ queryTaskbarInfo: function (args) {
     }
 }
 ```
-
-{% endif %}
 
 ## Customize baseline templates
 
@@ -145,21 +106,6 @@ This enables rich visualization scenarios such as:
 
 The following example demonstrates how to render multiple baselines using `baselineTemplate`.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/baseline-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/baseline-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/baseline-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/baseline-cs2/index.js %}
@@ -170,4 +116,4 @@ The following example demonstrates how to render multiple baselines using `basel
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/baseline-cs2" %}
-{% endif %}
+

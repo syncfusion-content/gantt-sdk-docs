@@ -28,21 +28,6 @@ Scrollbars appear based on content size:
 
 For precise layout control, set fixed dimensions using pixel values for both [width](https://ej2.syncfusion.com/javascript/documentation/api/gantt#width) and [height](https://ej2.syncfusion.com/javascript/documentation/api/gantt#height).
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/scrolling-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/scrolling-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/scrolling-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/scrolling-cs1/index.js %}
@@ -53,26 +38,10 @@ For precise layout control, set fixed dimensions using pixel values for both [wi
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/scrolling-cs1" %}
-{% endif %}
 
 ## Configure responsive scrolling
 
 You can make the Gantt Chart control responsive by setting its [width](https://ej2.syncfusion.com/javascript/documentation/api/gantt#width) and [height](https://ej2.syncfusion.com/javascript/documentation/api/gantt#height) to **100%**, allowing it to fully occupy the parent container. When height is set to **100%**, the parent element must have a defined `height` to support proper layout rendering. The Gantt will automatically adjust when the container is resized.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/scrolling-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/scrolling-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/scrolling-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -84,7 +53,6 @@ You can make the Gantt Chart control responsive by setting its [width](https://e
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/scrolling-cs2" %}
-{% endif %}
 
 ## Scroll to task row and timeline
 
@@ -96,21 +64,6 @@ To scroll horizontally to a specific timeline date, use the [scrollToDate](https
 
 To scroll directly to a specific task within the timeline, use the [scrollToTask](https://ej2.syncfusion.com/javascript/documentation/api/gantt#scrolltotask) method with the task ID. This ensures the task is visible within the timeline view.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/scrolling-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/scrolling-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/scrolling-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/scrolling-cs3/index.js %}
@@ -121,25 +74,10 @@ To scroll directly to a specific task within the timeline, use the [scrollToTask
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/scrolling-cs3" %}
-{% endif %}
 
 ## Synchronize horizontal scroll between Gantt charts
 
 To synchronize horizontal scrolling across multiple Gantt Chart controls, handle the [actionComplete](https://ej2.syncfusion.com/javascript/documentation/gantt/events#actioncomplete) event with the **HorizontalScroll** action. This captures the scroll position of the first Gantt chart and applies it to the second Gantt using the `scrollLeft` property. This approach ensures aligned timeline navigation, which is especially useful for comparing related project data side-by-side, such as parallel schedules.
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/scrolling-cs4/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/scrolling-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/scrolling-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -151,4 +89,4 @@ To synchronize horizontal scrolling across multiple Gantt Chart controls, handle
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/scrolling-cs4" %}
-{% endif %}
+

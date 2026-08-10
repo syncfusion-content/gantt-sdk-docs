@@ -18,21 +18,6 @@ The work is the total hours required to complete a task. Work can be mapped from
 
 > Note: When the work field is mapped from the data source, the default task type will be `FixedWork`.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/work-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/work-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/work-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/work-cs1/index.js %}
@@ -43,7 +28,6 @@ The work is the total hours required to complete a task. Work can be mapped from
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/work-cs1" %}
-{% endif %}
 
 ## Task type
 
@@ -52,21 +36,6 @@ The work, duration and resource unit fields of a task depends upon each other an
 - `FixedDuration` - Duration task field will remain constant while updating resource unit or work field.
 - `FixedWork` - Work field will remain constant while updating resource unit or duration fields.
 - `FixedUnit` - Resource units will remain constant while updating duration or work field.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/work-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/work-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/work-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -78,7 +47,6 @@ The work, duration and resource unit fields of a task depends upon each other an
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/work-cs2" %}
-{% endif %}
 
 Following table explains how the work, duration and resource unit fields will gets updated on changing any of the fields
 

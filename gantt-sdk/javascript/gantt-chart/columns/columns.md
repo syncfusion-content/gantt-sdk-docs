@@ -29,21 +29,6 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Gantt Chart cont
 - **datetime**: For date and time values.
 - **checkbox**: Displays a checkbox column.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs5/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs5" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs5/index.js %}
@@ -54,7 +39,6 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Gantt Chart cont
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs5" %}
-{% endif %}
 
 > - If `type` is not defined, it is auto-detected from the first record of the data source.
 > - If the first record has a null or blank value, define the `type` explicitly to ensure correct filter dialog behavior.
@@ -109,21 +93,6 @@ The column width is specified as an absolute pixel value. For example, a column 
     { field: 'TaskID', headerText: 'Task ID', textAlign: 'Right', width: 90 },
 ```
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs10/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs10/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs10" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs10/index.js %}
@@ -134,26 +103,10 @@ The column width is specified as an absolute pixel value. For example, a column 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs10" %}
-{% endif %}
 
 ## Column formatting
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control for JavaScript supports column formatting to customize data presentation. You can format numbers, dates, or apply templates based on specific requirements. Use the [columns.format](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#format) property to define the desired format for each column.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs11/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs11/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs11" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -165,7 +118,6 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control for Jav
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs11" %}
-{% endif %}
 
 > - The Gantt uses the [Internationalization](https://ej2.syncfusion.com/javascript/documentation/common/internationalization) library to format values based on the specified format and culture.
 > - By default, the [number](https://ej2.syncfusion.com/javascript/documentation/common/internationalization#number-formatting) and [date](https://ej2.syncfusion.com/javascript/documentation/common/internationalization#date-formatting) values are formatted in **en-US** locale. You can localize the currency and date in different locale as explained [here](https://ej2.syncfusion.com/javascript/documentation/common/localization).
@@ -185,21 +137,6 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control for Jav
 
 The following example code demonstrates the formatting of data for the **TaskID** column using the **N** format, the **Progress** column using the **P** format, and a currency column using the **C** format.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs12/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs12/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs12" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs12/index.js %}
@@ -210,7 +147,6 @@ The following example code demonstrates the formatting of data for the **TaskID*
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs12" %}
-{% endif %}
 
 > To learn more about number formatting, you can refer to the [number](https://ej2.syncfusion.com/javascript/documentation/common/internationalization#number-formatting) section.
 
@@ -226,21 +162,6 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control for Jav
 | { type: 'dateTime', format: 'dd/MM/yyyy hh:mm a' }    | 04/07/2026 12:00 AM    |
 | { type: 'dateTime', format: 'MM/dd/yyyy hh:mm:ss a' } | 07/04/2026 12:00:00 AM |
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs13/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs13/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs13" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs13/index.js %}
@@ -251,7 +172,6 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control for Jav
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs13" %}
-{% endif %}
 
 > To learn more about date formatting, you can refer to [Date formatting](https://ej2.syncfusion.com/javascript/documentation/common/internationalization#date-formatting).
 
@@ -260,21 +180,6 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control for Jav
 You can format the date column in Gantt Chart control based on localization settings by using the [format](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#format) property to define the date pattern and the [locale](https://ej2.syncfusion.com/javascript/documentation/api/gantt#locale) property to apply regional settings.
 
 The following example demonstrates the `format` property specifies the date format as **yyyy-MMM-dd**, and the `locale` property specifies the locale as **es-AR** for Spanish (Argentina).
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs14/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs14/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs14" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -286,39 +191,10 @@ The following example demonstrates the `format` property specifies the date form
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs14" %}
-{% endif %}
 
 ### Format template column value
 
 You can customize the appearance of values in Gantt template columns using HTML markup and number formatting. To format values, use JavaScript pipes along with the [format](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#format) property. In this example, the date pipe formats the **StartDate** value as `'dd/MMM/yyyy'`.
-
-{% if page.publishingplatform == "typescript" %}
-
-```ts
-template: (props: any) => {
-  let date: Date = new Date(props.StartDate);
-  return (
-    date.getFullYear() +
-    "/" +
-    date.toLocaleString("default", { month: "short" }) +
-    "/" +
-    date.getDate()
-  );
-};
-```
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs15/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs15/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs15" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 ```js
 template: function (props) {
@@ -339,7 +215,6 @@ template: function (props) {
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs15" %}
-{% endif %}
 
 > In JavaScript, you can use JavaScript or TypeScript formatting utilities like **Intl.NumberFormat** or **toLocaleString()** to format values such as **dates**, **currency**, **decimals**, or **percentages** in column templates based on your requirements.
 
@@ -348,21 +223,6 @@ template: function (props) {
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control supports custom formatting for numeric and date values. You can use the [format](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#format) property to display data in a specific format based on requirements.
 
 In the example below, `numberFormatOptions` is used for the **Progress** column to show four decimal places, and `dateFormatOptions` is used for the **StartDate** column to display the date as day-of-week, month abbreviation, day, and 2-digit year (e.g., Sun, May 8, '23).
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs16/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs16/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs16" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -374,7 +234,6 @@ In the example below, `numberFormatOptions` is used for the **Progress** column 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs16" %}
-{% endif %}
 
 > To learn more about custom formatting, you can refer to [Custom Date formatting](https://ej2.syncfusion.com/javascript/documentation/common/internationalization#custom-formats) and [Custom Number formatting](https://ej2.syncfusion.com/javascript/documentation/common/internationalization#custom-number-formatting-and-parsing).
 
@@ -387,21 +246,6 @@ You can use the [textAlign](https://ej2.syncfusion.com/javascript/documentation/
 - **Right**: Aligns the text to the right.
 - **Justify**: Align the text to the justify.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs17/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs17/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs17" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs17/index.js %}
@@ -412,7 +256,6 @@ You can use the [textAlign](https://ej2.syncfusion.com/javascript/documentation/
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs17" %}
-{% endif %}
 
 > - The `textAlign` property changes the alignment for both the column content and header. If you want to align header differently, you can use the [headerTextAlign](https://ej2.syncfusion.com/documentation/api/gantt/column#headertextalign) property.
 
@@ -421,21 +264,6 @@ You can use the [textAlign](https://ej2.syncfusion.com/javascript/documentation/
 You can render boolean values as checkboxes in Gantt Chart control by setting the [displayAsCheckBox](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#displayascheckbox) property to **true** for the desired column. This replaces the default text representation of **true** or **false** with a checkbox, making boolean fields visually clearer and more intuitive.
 
 The following sample demonstrates how to display a boolean value as a checkbox for the **Verified** column.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/checkbox-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/checkbox-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/checkbox-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -447,7 +275,6 @@ The following sample demonstrates how to display a boolean value as a checkbox f
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/checkbox-cs1" %}
-{% endif %}
 
 > - The `displayAsCheckBox` property is only applicable to boolean values in Gantt columns.
 > - When `displayAsCheckBox` is set to **true**, the boolean values will be rendered as checkboxes in the Gantt column, with checked state indicating **true** and unchecked state indicating **false**.
@@ -457,21 +284,6 @@ The following sample demonstrates how to display a boolean value as a checkbox f
 You can prevent the checkbox from rendering in a specific row of the Gantt even when [displayAsCheckBox](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#displayascheckbox) is set to **true** for the column. This can be done using the [rowDataBound](https://ej2.syncfusion.com/javascript/documentation/gantt/events#rowdatabound) event, where you check the row index and conditionally set the inner HTML of the target cell to an empty string to hide the checkbox.
 
 The following sample hides the checkbox for the row with `ariaRowIndex` set to 3.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/checkbox-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/checkbox-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/checkbox-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -483,7 +295,6 @@ The following sample hides the checkbox for the row with `ariaRowIndex` set to 3
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/checkbox-cs2" %}
-{% endif %}
 
 ## AutoFit columns
 
@@ -499,21 +310,6 @@ The following screenshot represents the resizing the column using resizer symbol
 
 You can resize a column in Gantt to fit its content using the `autoFitColumns` method from the `treeGrid` object. This adjusts the column width based on the widest cell without wrapping. To apply this during initial rendering, call the method in the [dataBound](https://ej2.syncfusion.com/javascript/documentation/gantt/events#databound) event.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/autofit-columns-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/autofit-columns-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/autofit-columns-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/autofit-columns-cs1/index.js %}
@@ -524,28 +320,12 @@ You can resize a column in Gantt to fit its content using the `autoFitColumns` m
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/autofit-columns-cs1" %}
-{% endif %}
 
 > You can autofit all the columns by invoking the `autoFitColumns` method without specifying column names.
 
 ## Locked columns
 
 You can lock columns in Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control to prevent them from being reordered and to keep them fixed at the first position. This is achieved by setting the `column.lockColumn` property to **true** in the column configuration. To visually differentiate locked columns, you can apply custom CSS using attribute selectors.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/lock-columns-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/lock-columns-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/lock-columns-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -557,7 +337,6 @@ You can lock columns in Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt C
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/lock-columns-cs1" %}
-{% endif %}
 
 ## Show or hide columns
 
@@ -569,21 +348,6 @@ You can control the visibility of columns in the JavaScript Gantt Chart control 
 
 The following example illustrates how to dynamically toggle the visibility of the **Duration** column. Initially, the column is set with the `visible` property as **false**. When the switch control triggers a `change` event, the `getColumnByField` method retrieves the column, its `visible` property is updated based on the switch state, and `refreshColumns` is called to apply the changes to the UI.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/show-columns-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/show-columns-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/show-columns-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/show-columns-cs1/index.js %}
@@ -594,7 +358,6 @@ The following example illustrates how to dynamically toggle the visibility of th
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/show-columns-cs1" %}
-{% endif %}
 
 > - Hiding a column using the `visible` property affects only its display; the data remains accessible in the source.
 > - Hidden columns are excluded from the total width calculation.
@@ -612,21 +375,6 @@ You can use the `getGanttColumns` method to retrieve all defined columns, and th
 
 The following sample demonstrates how to hide and show columns using button clicks. When the **Hide Column** button is clicked, the `hideColumn` method is called with **Duration** as the first parameter and `headerText` as the second. Clicking the **Show Column** button restores the column using the `showColumn` method.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/show-columns-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/show-columns-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/show-columns-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/show-columns-cs2/index.js %}
@@ -637,28 +385,12 @@ The following sample demonstrates how to hide and show columns using button clic
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/show-columns-cs2" %}
-{% endif %}
 
 **Based on field:**
 
 You can dynamically show or hide columns by passing either a single field name or an array of field names as the first parameter, and `field` as the second parameter to indicate that visibility is controlled using the field name.
 
 The following sample demonstrates how to hide and show columns using button clicks. When the **Hide Column** button is clicked, the `hideColumn` method is triggered with `['TaskName', 'Duration']` as the first parameter and `field` as the second. Clicking the **Show Column** button displays the columns again using the `showColumn` method.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/show-hide-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/show-hide-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/show-hide-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -670,7 +402,6 @@ The following sample demonstrates how to hide and show columns using button clic
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/show-hide-cs1" %}
-{% endif %}
 
 ## Controlling Gantt actions
 
@@ -682,21 +413,6 @@ You can manage actions like filtering, sorting, resizing, reordering, editing, a
 - [allowReordering](https://ej2.syncfusion.com/javascript/documentation/api/gantt/columnModel#allowreordering): Enables or disables reordering for a column.
 - [allowResizing](https://ej2.syncfusion.com/javascript/documentation/api/gantt/columnModel#allowresizing): Enables or disables resizing for a column.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/grid-actions-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/grid-actions-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/grid-actions-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/grid-actions-cs1/index.js %}
@@ -707,7 +423,6 @@ You can manage actions like filtering, sorting, resizing, reordering, editing, a
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/grid-actions-cs1" %}
-{% endif %}
 
 ## Customize column styles
 
@@ -719,21 +434,6 @@ For more information check on this [documentation](https://ej2.syncfusion.com/ja
 
 To update column definitions in JavaScript Gantt Chart control, modify the [columns](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column) property to adjust column appearance and behavior by changing attributes like [headerText](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#headertext), [width](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#width), or [visible](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#visible). After making the required updates, use the `refreshColumns` method from the `treeGrid` object to apply and reflect the changes in the Gantt chart.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs18/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs18/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs18" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs18/index.js %}
@@ -744,26 +444,10 @@ To update column definitions in JavaScript Gantt Chart control, modify the [colu
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs18" %}
-{% endif %}
 
 ## Adding/removing columns
 
 You can add or remove columns in the JavaScript Gantt by updating the [columns](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column) option in the Gantt instance. To add a column, **push** a new column object into the `columns` array. To remove a column, use **pop** to delete the last item or `splice` to remove a specific one from the array.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs19/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs19/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs19" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -775,28 +459,12 @@ You can add or remove columns in the JavaScript Gantt by updating the [columns](
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs19" %}
-{% endif %}
 
 ## Responsive columns
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Gantt Chart control provides a built-in feature to control column visibility based on media queries using the `hideAtMedia` property in the column object. This method can be used to hide columns automatically when the screen width matches specified [media query](http://cssmediaqueries.com/what-are-css-media-queries.html) conditions.
 
 The following example demonstrates a Gantt chart where the **Task Name** column is set to `(min-width: 700px)`, meaning it will be hidden when the browser width is less than or equal to 700px. Similarly, the **Duration** column is set to `(max-width: 500px)`, so it will be hidden when the browser width exceeds 500px.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs8/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs8/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs8" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -808,7 +476,6 @@ The following example demonstrates a Gantt chart where the **Task Name** column 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs8" %}
-{% endif %}
 
 ## Clip mode
 
@@ -820,21 +487,6 @@ The clip mode provides options to display overflow cell content using the [colum
 
 > By default, all the column's [clipMode](https://ej2.syncfusion.com/javascript/documentation/api/gantt/columnModel#clipmode) property is defined as **EllipsisWithTooltip**.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs20/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs20/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs20" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs20/index.js %}
@@ -845,4 +497,4 @@ The clip mode provides options to display overflow cell content using the [colum
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs20" %}
-{% endif %}
+

@@ -25,55 +25,6 @@ The resource collection defines available resources as JSON objects with an ID, 
 
 The following code demonstrates resource collection setup:
 
-{% if page.publishingplatform == "typescript" %}
-
-```ts
-var projectResources: Object[] = [
-  {
-    resourceId: 1,
-    resourceName: "Martin Tamer",
-    resourceGroup: "Planning Team",
-    resourceUnit: 50,
-  },
-  {
-    resourceId: 2,
-    resourceName: "Rose Fuller",
-    resourceGroup: "Testing Team",
-    resourceUnit: 70,
-  },
-  {
-    resourceId: 3,
-    resourceName: "Margaret Buchanan",
-    resourceGroup: "Approval Team",
-  },
-  {
-    resourceId: 4,
-    resourceName: "Fuller King",
-    resourceGroup: "Development Team",
-  },
-  {
-    resourceId: 5,
-    resourceName: "Davolio Fuller",
-    resourceGroup: "Approval Team",
-  },
-  {
-    resourceId: 6,
-    resourceName: "Van Jack",
-    resourceGroup: "Development Team",
-    resourceUnit: 40,
-  },
-];
-
-var resourceFields: ResourceFieldsModel = {
-  id: "resourceId",
-  name: "resourceName",
-  unit: "resourceUnit",
-  group: "resourceGroup",
-};
-```
-
-{% elsif page.publishingplatform == "javascript" %}
-
 ```js
 var projectResources = [
   {
@@ -119,8 +70,6 @@ var resourceFields = {
 };
 ```
 
-{% endif %}
-
 This configuration maps resources for assignment and display.
 
 ## Assign resources to tasks
@@ -161,21 +110,6 @@ Units from the resource collection apply unless overridden at the task level.
 
 The following example shows resource assignment:
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/resources-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/resources-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/resources-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/resources-cs1/index.js %}
@@ -186,7 +120,6 @@ The following example shows resource assignment:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/resources-cs1" %}
-{% endif %}
 
 ## Manage resource assignments
 
@@ -204,21 +137,6 @@ Customize resource display using column templates for the resource column and th
 
 The following example demonstrates custom resource styling:
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/resource-customization-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/resource-customization-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/resource-customization-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/resource-customization-cs1/index.js %}
@@ -229,7 +147,6 @@ The following example demonstrates custom resource styling:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/resource-customization-cs1" %}
-{% endif %}
 
 This configuration applies background colors to resource columns and taskbars, with the `queryTaskbarInfo` event modifying taskbar properties dynamically.
 

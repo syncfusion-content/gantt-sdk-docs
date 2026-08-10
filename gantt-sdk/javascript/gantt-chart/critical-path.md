@@ -46,21 +46,6 @@ The critical path recalculates automatically when task properties change, includ
 
 The following example demonstrates enabling critical path analysis. The code enables critical path analysis by setting `enableCriticalPath` to **true** and injecting the [criticalPath](https://ej2.syncfusion.com/javascript/documentation/api/gantt#criticalpathmodule). The control automatically calculates slack values for all tasks and highlights those with zero or negative slack as critical tasks, displaying them with red taskbars and emphasized dependency lines.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/criticalpath-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/criticalpath-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/criticalpath-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/criticalpath-cs1/index.js %}
@@ -71,28 +56,12 @@ The following example demonstrates enabling critical path analysis. The code ena
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/criticalpath-cs1" %}
-{% endif %}
 
 ## Customizing critical path appearance
 
 The [queryTaskbarInfo](https://ej2.syncfusion.com/javascript/documentation/api/gantt#querytaskbarinfo) event provides access to the [isCritical](https://ej2.syncfusion.com/javascript/documentation/api/gantt/iGanttData#iscritical) property for each task, enabling custom styling beyond the default red highlighting. Modify the [taskbarBgColor](https://ej2.syncfusion.com/javascript/documentation/api/gantt/iQueryTaskbarInfoEventArgs#taskbarbgcolor), [progressBarBgColor](https://ej2.syncfusion.com/javascript/documentation/api/gantt/iQueryTaskbarInfoEventArgs#progressbarbgcolor), or other visual properties to create distinct visual indicators for critical tasks.
 
 The following example demonstrates custom styling for critical tasks using the `queryTaskbarInfo` event. The event handler checks the `isCritical` flag and applies custom colors to taskbars, allowing project-specific visual distinctions for critical path tasks while maintaining clear identification of project bottlenecks.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/customizeCriticalPath-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/customizeCriticalPath-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/customizeCriticalPath-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -104,4 +73,4 @@ The following example demonstrates custom styling for critical tasks using the `
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/customizeCriticalPath-cs1" %}
-{% endif %}
+

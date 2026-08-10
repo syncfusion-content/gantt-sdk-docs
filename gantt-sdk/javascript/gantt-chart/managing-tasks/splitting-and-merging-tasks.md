@@ -27,21 +27,6 @@ Split tasks dynamically using the dialog or context menu, requiring [taskFields.
 - **Dialog**: The Segments tab in the add/edit dialog allows splitting tasks based on their start and end dates.
 - **Context Menu**: Enable [enableContextMenu](https://ej2.syncfusion.com/javascript/documentation/api/gantt#enablecontextmenu) and inject `ContextMenu` to include the Split Task option in the context menu, enabling task splitting with a right-click.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs5/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs5" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs5/index.js %}
@@ -52,7 +37,6 @@ Split tasks dynamically using the dialog or context menu, requiring [taskFields.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs5" %}
-{% endif %}
 
 ## Merge tasks dynamically
 
@@ -61,21 +45,6 @@ Merge split tasks using the context menu’s **Merge Task** option, requiring [e
 ## Get the clicked segment information
 
 You can get the clicked segment information using the [onTaskbarClick](https://ej2.syncfusion.com/javascript/documentation/gantt/events#ontaskbarclick) event.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs8/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs8/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs8" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -87,7 +56,6 @@ You can get the clicked segment information using the [onTaskbarClick](https://e
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs8" %}
-{% endif %}
 
 ## Limitations of Split tasks
 

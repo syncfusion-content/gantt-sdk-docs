@@ -16,21 +16,6 @@ The add and edit dialogs in the [JavaScript Gantt Chart](https://www.syncfusion.
 
 The following code example shows how to open add and dialog on separate button click actions.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/openEditAddDialog-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/openEditAddDialog-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/openEditAddDialog-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/openEditAddDialog-cs1/index.js %}
@@ -41,7 +26,6 @@ The following code example shows how to open add and dialog on separate button c
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/openEditAddDialog-cs1" %}
-{% endif %}
 
 ## See also
 

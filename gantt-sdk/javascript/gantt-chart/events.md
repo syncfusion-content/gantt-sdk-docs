@@ -102,131 +102,6 @@ The event argument structure varies based on the operation type. The following t
 | `requestType` | string   | Describes the type of request, typically **zooming**. |
 | `timeline`    | object   | Timeline settings after zoom is applied.              |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt,Edit, Selection, Toolbar, Sort, Filter, ITimeSpanEventArgs, ITaskAddedEventArgs, IDependencyEventArgs, ZoomEventArgs } from '@syncfusion/ej2-gantt';
-import { FilterEventArgs, SortEventArgs } from '@syncfusion/ej2-grids';
-
-Gantt.Inject(Edit, Selection, Toolbar, Sort, Filter);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-allowFiltering: true,
-allowSorting: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll', 'ZoomIn', 'ZoomOut', 'ZoomToFit'],
-actionBegin: actionBegin,
-height: '450px',
-columns :[
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function actionBegin(args:ITimeSpanEventArgs | ITaskAddedEventArgs | IDependencyEventArgs | ZoomEventArgs | FilterEventArgs | SortEventArgs) {
-// Executes logic before saving a task or dependency.
-if (args.requestType === 'beforeSave') {
-console.log('Action: Before save');
-}
-// Executes logic before applying a filter to the Gantt data.
-else if (args.requestType === 'filtering') {
-console.log('Action: Filtering');
-}
-// Executes logic before sorting the Gantt data.
-else if (args.requestType === 'sorting') {
-console.log('Action: Sorting');
-}
-// Executes logic before zooming in or out of the Gantt chart.
-else if (args.requestType === 'beforeZoomIn' || args.requestType === 'beforeZoomOut') {
-console.log('Action: Zooming');
-}
-
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -348,7 +223,6 @@ gantt.appendTo('#Gantt');
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## actionComplete
 
@@ -410,164 +284,6 @@ Below are detailed descriptions of each argument type's properties, and their pu
 | `name`        | string   | Name of the event                                     |
 | `requestType` | string   | Describes the type of request, typically **zooming**. |
 | `timeline`    | object   | Timeline settings after zoom is applied.              |
-
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Selection, Toolbar, Sort, Filter, ActionCompleteArgs, ITaskAddedEventArgs, ZoomEventArgs } from '@syncfusion/ej2-gantt';
-import { FilterEventArgs, SortEventArgs } from '@syncfusion/ej2-grids';
-
-Gantt.Inject(Edit, Selection, Toolbar, Sort, Filter);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-allowFiltering: true,
-allowSorting: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ZoomIn', 'ZoomOut', 'ZoomToFit'],
-actionComplete: actionComplete,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-child: 'subtasks',
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function actionComplete(args: ActionCompleteArgs | FilterEventArgs | SortEventArgs | ZoomEventArgs | ITaskAddedEventArgs) {
-switch (args.requestType) {
-case 'filtering':
-{
-// Cast args to FilterEventArgs to access filtering-specific properties.
-const filterArgs = args as FilterEventArgs;
-console.log('Filtering applied on column:', filterArgs.currentFilteringColumn);
-console.log('Filter condition:', filterArgs.currentFilterObject);
-break;
-}
-case 'sorting':
-{
-// Cast args to SortEventArgs to access sorting-specific properties.
-const sortArgs = args as SortEventArgs;
-console.log(`Sorted column: ${sortArgs.columnName}`);
-console.log(`Sort direction: ${sortArgs.direction}`);
-break;
-}
-case 'save':
-{
-// Cast args to ITaskAddedEventArgs to access task save-specific properties.
-const taskArgs = args as ITaskAddedEventArgs;
-console.log('Task saved:', taskArgs.modifiedTaskData);// Modified task data after save
-console.log('Original data:', taskArgs.data);// Original task data before modification
-break;
-}
-case 'delete':
-{
-// Cast args to ITaskAddedEventArgs to access task delete-specific properties.
-// Records deleted from Gantt.
-console.log('Deleted records:', args.modifiedRecords);
-break;
-}
-case 'AfterZoomIn':
-case 'AfterZoomOut':
-case 'AfterZoomToProject':
-{
-// Cast args to ZoomEventArgs to access zoom-specific properties.
-const zoomArgs = args as ZoomEventArgs;
-console.log('Zoom action:', zoomArgs.requestType);// Type of zoom action performed.
-console.log('Updated timeline settings:', zoomArgs.timeline);// Timeline settings after zoom.
-break;
-}
-default:
-{
-// Handle any other unspecified actions.
-console.log('Other action:', args.requestType);
-break;
-}
-};
-};
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-	   <button id="addRow">Add Row</button>  
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -721,7 +437,6 @@ gantt.appendTo('#Gantt');
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## actionFailure
 
@@ -731,107 +446,6 @@ The [actionFailure](https://ej2.syncfusion.com/javascript/documentation/api/gant
 | ------------ | -------- | ------------------------------ |
 | `error`      | Error    | Defines the error information. |
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Selection } from '@syncfusion/ej2-gantt';
-import { FailureEventArgs } from '@syncfusion/ej2-grids';
-
-Gantt.Inject(Selection);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-projectStartDate: new Date('2024-03-31'),
-projectEndDate: new Date('2024-05-30'),
-treeColumnIndex: 1,
-splitterSettings: { position: '50%' },
-actionFailure: handleActionFailure,
-height: '450px',
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-child: 'subtasks',
-}
-});
-
-function handleActionFailure(args: FailureEventArgs) {
-const span = document.createElement('span');
-const ganttInstance = gantt;
-if (ganttInstance) {
-ganttInstance.element.parentNode.insertBefore(span, ganttInstance.element);
-span.style.color = "#FF0000";
-span.style.marginLeft = "190px";
-span.innerHTML = args.error[0];
-}
-};
-
-gantt.appendTo('#Gantt');
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -928,7 +542,6 @@ gantt.appendTo('#Gantt');
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## beforeExcelExport
 
@@ -942,123 +555,6 @@ The event argument is an `object` containing the following properties:
 | `isCsv`      | boolean  | Indicates if the export is CSV (**true**) or Excel (**false**). |
 | `name`       | string   | Event name, typically **beforeExcelExport**.                    |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, ExcelExport } from '@syncfusion/ej2-gantt';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations';
-
-Gantt.Inject(Edit, Toolbar, Selection, ExcelExport);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-allowExcelExport: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll', 'ExcelExport', 'CsvExport'],
-toolbarClick: toolbarClick,
-beforeExcelExport: beforeExcelExport,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function toolbarClick(args: ClickEventArgs): void {
-if (args.item.id === 'Gantt_excelexport') {
-gantt.excelExport();
-} else if (args.item.id === 'Gantt_csvexport') {
-gantt.csvExport();
-}
-}
-
-function beforeExcelExport(args: { name: string; isCsv: boolean }) {
-console.log(`[${args.name}] Exporting to ${args.isCsv ? 'CSV' : 'Excel'} at ${new Date().toISOString()}`);
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -1172,7 +668,6 @@ console.log(`[${args.name}] Exporting to ${args.isCsv ? 'CSV' : 'Excel'} at ${ne
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## beforePdfExport
 
@@ -1187,121 +682,6 @@ The event provides an argument of type `object` with the following properties:
 | `name`        | string   | Event name, typically **beforePdfExport**.      |
 | `requestType` | string   | Type of request, typically **beforePdfExport**. |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, PdfExport } from '@syncfusion/ej2-gantt';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations';
-
-Gantt.Inject(Edit, Toolbar, Selection, PdfExport);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-allowPdfExport: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll', 'PdfExport'],
-toolbarClick: toolbarClick,
-beforePdfExport: beforePdfExport,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function toolbarClick(args: ClickEventArgs): void {
-if (args.item.id === 'Gantt_pdfexport') {
-gantt.pdfExport();
-}
-}
-
-function beforePdfExport(args: { name: string }): void {
-console.log(`[${args.name}] PDF export triggered at ${new Date().toISOString()}`);
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -1413,7 +793,6 @@ console.log(`[${args.name}] PDF export triggered at ${new Date().toISOString()}`
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## beforeTooltipRender
 
@@ -1428,133 +807,6 @@ The event provides an argument of type [BeforeTooltipRenderEventArgs](https://ej
 | `cancel`     | boolean  | Set **true** to prevent tooltip display.               |
 | `data`       | Object   | Related Gantt data, such as task or header info.       |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, PdfExport, BeforeTooltipRenderEventArgs } from '@syncfusion/ej2-gantt';
-
-Gantt.Inject(Edit, Toolbar, Selection, PdfExport);
-
-interface Task {
-TaskID: number;
-TaskName: string;
-StartDate?: Date;
-EndDate?: Date;
-Duration?: number;
-Progress?: number;
-Predecessor?: string;
-subtasks?: Task[];
-}
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-beforeTooltipRender: beforeTooltipRender,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function beforeTooltipRender(args: BeforeTooltipRenderEventArgs) {
-// Log tooltip trigger.
-console.log(`Tooltip for ${args.args.target.className} at ${new Date().toISOString()}`);
-// Customize taskbar tooltip.
-if (args.args.target.classList.contains('e-gantt-child-taskbar')) {
-const task = args.data as Task;
-if (task.Duration === 5) {
-args.cancel = true; // Block tooltip for invalid duration.
-return;
-}
-args.content = `<div><b>${task.TaskName}</b><br>Progress: ${task.Progress}%<br>Duration: ${task.Duration} days</div>`;
-}
-};
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -1668,7 +920,6 @@ args.content = `<div><b>${task.TaskName}</b><br>Progress: ${task.Progress}%<br>D
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## cellDeselected
 
@@ -1683,122 +934,6 @@ The event provides an argument of type [CellDeselectEventArgs](https://ej2.syncf
 | `cells`       | NodeList | DOM elements of the deselected cells.         |
 | `data`        | Object   | Row data associated with the deselected cell. |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection } from '@syncfusion/ej2-gantt';
-import { CellDeselectEventArgs } from '@syncfusion/ej2-grids';
-
-Gantt.Inject(Edit, Toolbar, Selection);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-selectionSettings: {
-mode: 'Cell',
-type: 'Multiple'
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-cellDeselected: cellDeselected,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function cellDeselected(args: CellDeselectEventArgs) {
-// Log deselected cell details.
-args.cellIndexes.forEach(index => {
-index.cellIndexes.forEach(colIndex => {
-console.log(`Cell deselected at row ${index.rowIndex}, column ${colIndex} at ${new Date().toISOString()}`);
-});
-});
-};
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -1911,7 +1046,6 @@ console.log(`Cell deselected at row ${index.rowIndex}, column ${colIndex} at ${n
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## cellDeselecting
 
@@ -1926,124 +1060,6 @@ The event provides an argument of type [CellDeselectEventArgs](https://ej2.syncf
 | `cells`       | NodeList | DOM elements representing the deselecting cells.      |
 | `data`        | Object   | Row data associated with the deselecting cell.        |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection } from '@syncfusion/ej2-gantt';
-import { CellDeselectEventArgs } from '@syncfusion/ej2-grids';
-
-Gantt.Inject(Edit, Toolbar, Selection);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-selectionSettings: {
-mode: 'Cell',
-type: 'Multiple'
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-cellDeselecting: cellDeselecting,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function cellDeselecting(args: CellDeselectEventArgs) {
-// Log deselecting cell details.
-if (args.cellIndexes) {
-args.cellIndexes.forEach(index => {
-index.cellIndexes.forEach(colIndex => {
-console.log(`Cell deselecting at row ${index.rowIndex}, column ${colIndex} at ${new Date().toISOString()}`);
-});
-});
-}
-};
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -2158,7 +1174,6 @@ console.log(`Cell deselecting at row ${index.rowIndex}, column ${colIndex} at ${
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## cellEdit
 
@@ -2181,136 +1196,6 @@ The event provides an argument of type [CellEditArgs](https://ej2.syncfusion.com
 | `validationRules` | Object      | Validation rules applied to the cell, if any.        |
 | `value`           | any         | The current value of the cell before editing starts. |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, CellEditArgs } from '@syncfusion/ej2-gantt';
-
-Gantt.Inject(Edit, Toolbar, Selection);
-
-interface Task {
-TaskID: number;
-TaskName: string;
-StartDate?: Date;
-EndDate?: Date;
-Duration?: number;
-Progress?: number;
-Predecessor?: string;
-subtasks?: Task[];
-}
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-selectionSettings: {
-mode: 'Cell',
-type: 'Multiple'
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-cellEdit: cellEdit,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function cellEdit(args: CellEditArgs) {
-// Log edit action.
-console.log(`Editing cell in column ${args.columnName} for task ${(args.rowData as Task).TaskName} at ${new Date().toISOString()}`);
-
-    // Prevent editing TaskID column.
-    if (args.columnName === 'StartDate') {
-      args.cancel = true;
-      alert('Editing Start date is not allowed.');
-      return;
-    }
-
-};
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -2426,7 +1311,6 @@ return;
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## cellSelected
 
@@ -2445,119 +1329,6 @@ The event provides an argument of type [CellSelectEventArgs](https://ej2.syncfus
 | `previousRowCellIndex` | number    | Index of previously selected cell.         |
 | `selectedRowCellIndex` | object[]  | Indices of selected row and column.        |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, CellSelectEventArgs } from '@syncfusion/ej2-gantt';
-import { CellSelectEventArgs } from '@syncfusion/ej2-grids';
-
-Gantt.Inject(Edit, Toolbar, Selection);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-selectionSettings: {
-mode: 'Cell',
-type: 'Multiple'
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-cellSelected: cellSelected,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function cellSelected(args: CellSelectEventArgs) {
-const rowIndex = args.cellIndex.rowIndex;
-const colIndex = args.cellIndex.cellIndex;
-console.log(`Cell selected at row ${rowIndex}, column ${colIndex} at ${new Date().toISOString()}`);
-};
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -2667,7 +1438,6 @@ console.log(`Cell selected at row ${rowIndex}, column ${colIndex} at ${new Date(
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## cellSelecting
 
@@ -2686,122 +1456,6 @@ The event provides an argument of type [CellSelectingEventArgs](https://ej2.sync
 | `previousRowCellIndex` | number    | Index of previously selected cell.         |
 | `selectedRowCellIndex` | object[]  | Indices of selected row and column.        |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, CellSelectEventArgs } from '@syncfusion/ej2-gantt';
-
-Gantt.Inject(Edit, Toolbar, Selection);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-selectionSettings: {
-mode: 'Cell',
-type: 'Multiple'
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-cellSelecting: cellSelecting,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function cellSelecting(args: CellSelectEventArgs) {
-const rowIndex = args.cellIndex.rowIndex;
-const colIndex = args.cellIndex.cellIndex;
-console.log(`Cell selecting at row ${rowIndex}, column ${colIndex} at ${new Date().toISOString()}`);
-// Example: Cancel selection if the cell is in the first row.
-if (rowIndex === 0) {
-args.cancel = true;
-}
-};
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -2915,7 +1569,6 @@ args.cancel = true;
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## columnDrag
 
@@ -2929,118 +1582,6 @@ The event provides an argument of type [ColumnDragEventArgs](https://ej2.syncfus
 | `target`        | Element  | Element where column is dragged over.     |
 | `draggableType` | string   | Type of draggable element (e.g., column). |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection,Reorder } from '@syncfusion/ej2-gantt';
-import { ColumnDragEventArgs } from '@syncfusion/ej2-grids';
-
-Gantt.Inject(Edit, Toolbar, Selection, Reorder);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-allowReordering: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-columnDrag: columnDrag,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function columnDrag(args: ColumnDragEventArgs): void {
-// Log the field name of the column being dragged.
-console.log(`Column "${args.column.field}" was dragged.`);
-
-// Log the target DOM element where the column is being dragged over.
-console.log('Target element:', args.target);
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -3149,7 +1690,6 @@ console.log('Target element:', args.target);
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## columnDragStart
 
@@ -3163,118 +1703,6 @@ The event provides an argument of type [ColumnDragEventArgs](https://ej2.syncfus
 | `target`        | Element  | Element where drag operation began.           |
 | `draggableType` | string   | Type of draggable element (e.g., headercell). |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, Reorder } from '@syncfusion/ej2-gantt';
-import { ColumnDragEventArgs } from '@syncfusion/ej2-grids';
-
-Gantt.Inject(Edit, Toolbar, Selection, Reorder);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-allowReordering: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-columnDragStart: columnDragStart,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function columnDragStart(args: ColumnDragEventArgs): void {
-// Log the field name of the column where the drag operation started.
-console.log(`Column "${args.column.field}" was dragged.`);
-
-// Log the target DOM element where the drag was initiated.
-console.log('Target element:', args.target);
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -3383,7 +1811,6 @@ console.log('Target element:', args.target);
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## columnDrop
 
@@ -3397,118 +1824,6 @@ The event provides an argument of type [ColumnDragEventArgs](https://ej2.syncfus
 | `target`        | Element  | Element where column is dropped.               |
 | `draggableType` | string   | Type of draggable element (e.g., row, column). |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, Reorder } from '@syncfusion/ej2-gantt';
-import { ColumnDragEventArgs } from '@syncfusion/ej2-grids';
-
-Gantt.Inject(Edit, Toolbar, Selection, Reorder);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-allowReordering: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-columnDrop: columnDrop,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function columnDrop(args: ColumnDragEventArgs): void {
-// Log the field name of the column that was dropped
-console.log(`Column "${args.column.field}" was dropped.`);
-
-// Log the target element where the column was dropped
-console.log('Dropped on target element:', args.target);
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -3617,7 +1932,6 @@ console.log('Dropped on target element:', args.target);
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## columnMenuClick
 
@@ -3632,119 +1946,6 @@ The event provides an argument of type [ColumnMenuClickEventArgs](https://ej2.sy
 | `element`    | Element  | DOM element of the clicked menu item.  |
 | `item`       | Object   | The menu item object that was clicked. |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, Filter, Sort, ColumnMenu } from '@syncfusion/ej2-gantt';
-import { ColumnMenuClickEventArgs } from '@syncfusion/ej2-grids';
-
-Gantt.Inject(Edit, Toolbar,Filter, Sort, Selection, ColumnMenu);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-showColumnMenu: true,
-allowFiltering: true,
-allowSorting: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-columnMenuClick: columnMenuClick,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function columnMenuClick(args: ColumnMenuClickEventArgs): void {
-// Example: Log menu item and column field.
-console.log(`Column menu item "${args.item.text}"`);
-console.log(`Column Field "${args.column.field}"`)
-// You can add custom logic here, such as showing a dialog or updating UI.
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -3854,7 +2055,6 @@ console.log(`Column Field "${args.column.field}"`)
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## columnMenuOpen
 
@@ -3874,121 +2074,6 @@ The event provides an argument of type [ColumnMenuOpenEventArgs](https://ej2.syn
 | `parentItem`    | Object       | Parent item in nested menu structure.    |
 | `showSubMenuOn` | MenuOpenType | Submenu trigger type: click or hover.    |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, Filter, Sort, ColumnMenu } from '@syncfusion/ej2-gantt';
-import { ColumnMenuOpenEventArgs } from '@syncfusion/ej2-grids';
-
-Gantt.Inject(Edit, Toolbar,Sort,Filter, Selection, ColumnMenu);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-showColumnMenu: true,
-allowFiltering: true,
-allowSorting: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-columnMenuOpen: columnMenuOpen,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function columnMenuOpen(args: ColumnMenuOpenEventArgs): void {
-console.log(args);
-// cancel the column menu opening for a specific column.
-// Example: Prevent opening the column menu for the "Duration" column.
-if (args.column .field === "Duration") {
-args.cancel = true;
-}
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -4100,7 +2185,6 @@ args.cancel = true;
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## contextMenuClick
 
@@ -4117,110 +2201,6 @@ The event provides an argument of type [ContextMenuClickEventArgs](https://ej2.s
 | `type`       | string       | Type of menu item (e.g., **Content**).  |
 | `rowData`    | Object       | Data object of the related row.         |
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Sort, Filter, Toolbar, Selection, ContextMenu, Resize, ContextMenuClickEventArgs } from '@syncfusion/ej2-gantt';
-
-Gantt.Inject(Edit, Toolbar, Selection, ContextMenu, Sort, Filter, Resize);
-
-interface Task {
-TaskID: number;
-TaskName: string;
-StartDate?: Date;
-EndDate?: Date;
-Duration?: number;
-Progress?: number;
-Predecessor?: string;
-ParentID?: number;
-}
-
-const data: object[] = [
-{ TaskID: 1, TaskName: 'Project Initiation', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
-{ TaskID: 5, TaskName: 'Project Estimation', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
-{ TaskID: 6, TaskName: 'Develop floor plan', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 },
-{ TaskID: 9, TaskName: 'Sign Contract', StartDate: new Date('04/04/2019'), Duration: 1, Predecessor: '8', Progress: 30 },
-{ TaskID: 10, TaskName: 'Kickoff', StartDate: new Date('04/04/2019'), EndDate: new Date('04/21/2019'), Duration: 0, Predecessor: '9' },
-];
-
-const gantt: Gantt = new Gantt({
-dataSource: data,
-height: '450px',
-enableContextMenu: true,
-allowSorting: true,
-allowResizing: true,
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true
-},
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-parentID: 'ParentID'
-},
-contextMenuClick: contextMenuClick,
-});
-
-gantt.appendTo('#Gantt');
-
-// Handle context menu click.
-function contextMenuClick(args: ContextMenuClickEventArgs) {
-// Example: Show which menu item was clicked and the associated row/task.
-console.log('Menu item:', args.item.text);
-if (args.rowData) {
-console.log('Task:', (args.rowData as Task).TaskName);
-}
-// You can add custom logic here.
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -4310,7 +2290,6 @@ console.log('Task:', args.rowData.TaskName);
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## contextMenuOpen
 
@@ -4332,106 +2311,6 @@ The event provides an argument of type [ContextMenuOpenEventArgs](https://ej2.sy
 | `parentItem`    | Object       | Parent item in nested menu structure.   |
 | `showSubMenuOn` | MenuOpenType | Submenu trigger type: click or hover.   |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, ContextMenu, Resize, ContextMenuOpenEventArgs } from '@syncfusion/ej2-gantt';
-
-Gantt.Inject(Edit, Toolbar, Selection, ContextMenu, Resize);
-
-interface Task {
-TaskID: number;
-TaskName: string;
-StartDate?: Date;
-EndDate?: Date;
-Duration?: number;
-Progress?: number;
-Predecessor?: string;
-ParentID?: number;
-}
-
-const data: object[] = [
-{ TaskID: 1, TaskName: 'Project Initiation', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
-{ TaskID: 5, TaskName: 'Project Estimation', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
-{ TaskID: 6, TaskName: 'Develop floor plan', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 },
-{ TaskID: 9, TaskName: 'Sign Contract', StartDate: new Date('04/04/2019'), Duration: 1, Predecessor: '8', Progress: 30 },
-{ TaskID: 10, TaskName: 'Kickoff', StartDate: new Date('04/04/2019'), EndDate: new Date('04/21/2019'), Duration: 0, Predecessor: '9' },
-];
-
-const gantt: Gantt = new Gantt({
-dataSource: data,
-height: '450px',
-enableContextMenu: true,
-allowSorting: true,
-allowResizing: true,
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true
-},
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-parentID: 'ParentID'
-},
-contextMenuOpen: contextMenuOpen,
-});
-
-gantt.appendTo('#Gantt');
-
-function contextMenuOpen(args: ContextMenuOpenEventArgs) {
-const taskName = (args.rowData as Task).TaskName;
-console.log(`Context menu opened for task: ${taskName}`);
-// Disable Delete Task item.
-args.disableItems = ["Delete Task"];
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -4520,104 +2399,11 @@ args.disableItems = ["Delete Task"];
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## created
 
 The [created](https://ej2.syncfusion.com/javascript/documentation/api/gantt#created) event is triggered after the Gantt component has been fully initialized and rendered. This event is useful for executing logic that depends on the component being completely loaded and ready for interaction.
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Sort, Selection, ContextMenu, Resize } from '@syncfusion/ej2-gantt';
-
-Gantt.Inject(Edit, Toolbar, Sort, Selection, ContextMenu, Resize);
-
-const data: object[] = [
-{ TaskID: 1, TaskName: 'Project Initiation', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
-{ TaskID: 5, TaskName: 'Project Estimation', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
-{ TaskID: 6, TaskName: 'Develop floor plan', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 },
-{ TaskID: 9, TaskName: 'Sign Contract', StartDate: new Date('04/04/2019'), Duration: 1, Predecessor: '8', Progress: 30 },
-{ TaskID: 10, TaskName: 'Kickoff', StartDate: new Date('04/04/2019'), EndDate: new Date('04/21/2019'), Duration: 0, Predecessor: '9' },
-];
-
-const gantt: Gantt = new Gantt({
-dataSource: data,
-height: '450px',
-allowSorting: true,
-allowResizing: true,
-enableContextMenu: true,
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true
-},
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-parentID: 'ParentID'
-},
-created: created
-});
-
-gantt.appendTo('#Gantt');
-
-function created() {
-console.log("Gantt component created.");
-if (this.ganttObj) {
-// Select the row at index 6 after component created.
-this.ganttObj.selectedRowIndex = 6;
-console.log("RowIndex 6 is selected on Gantt creation.");
-}
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-	   <button id="addRow">Add Row</button>  
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -4706,97 +2492,11 @@ console.log("RowIndex 6 is selected on Gantt creation.");
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## dataBound
 
 The [dataBound](https://ej2.syncfusion.com/javascript/documentation/api/gantt#databound) event is triggered after the Gantt component has successfully bound its data source and rendered the task data. This event is useful for executing logic that depends on the data being fully loaded and available in the UI.
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Sort, Selection, ContextMenu, Resize } from '@syncfusion/ej2-gantt';
-
-Gantt.Inject(Edit, Toolbar, Sort, Selection, ContextMenu, Resize);
-
-const data: object[] = [
-{ TaskID: 1, TaskName: 'Project Initiation', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
-{ TaskID: 5, TaskName: 'Project Estimation', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
-{ TaskID: 6, TaskName: 'Develop floor plan', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 },
-{ TaskID: 9, TaskName: 'Sign Contract', StartDate: new Date('04/04/2019'), Duration: 1, Predecessor: '8', Progress: 30 },
-{ TaskID: 10, TaskName: 'Kickoff', StartDate: new Date('04/04/2019'), EndDate: new Date('04/21/2019'), Duration: 0, Predecessor: '9' },
-];
-
-const gantt: Gantt = new Gantt({
-dataSource: data,
-height: '450px',
-allowSorting: true,
-allowResizing: true,
-enableContextMenu: true,
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true
-},
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-parentID: 'ParentID'
-},
-dataBound: () => {
-gantt.collapseAll();
-console.log("All tasks collapsed after data binding.");
-}
-});
-
-gantt.appendTo('#Gantt');
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -4879,7 +2579,6 @@ gantt.appendTo('#Gantt');
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## destroyed
 
@@ -4892,107 +2591,6 @@ The event provides an argument of type `object` with the following properties:
 | `name`       | string   | Identifies event as **destroyed**.         |
 | `cancel`     | boolean  | Prevents destruction when set to **true**. |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Sort, Selection, Resize } from '@syncfusion/ej2-gantt';
-import { Button } from '@syncfusion/ej2-buttons';
-
-Gantt.Inject(Edit, Toolbar, Sort, Selection, Resize);
-
-const data: object[] = [
-{ TaskID: 1, TaskName: 'Project Initiation', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2019'), Duration: 4, ParentID: 1, Progress: 50 },
-{ TaskID: 5, TaskName: 'Project Estimation', StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019') },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2019'), Duration: 3, ParentID: 5, Progress: 50 },
-{ TaskID: 9, TaskName: 'Sign Contract', StartDate: new Date('04/04/2019'), Duration: 1, Predecessor: '8', Progress: 30 },
-{ TaskID: 10, TaskName: 'Kickoff', StartDate: new Date('04/04/2019'), EndDate: new Date('04/21/2019'), Duration: 0, Predecessor: '9' },
-];
-
-const gantt: Gantt = new Gantt({
-dataSource: data,
-height: '450px',
-allowSorting: true,
-allowResizing: true,
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true
-},
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-parentID: 'ParentID'
-},
-destroyed: destroyed
-});
-
-gantt.appendTo('#Gantt');
-
-// Button setup
-let button: Button = new Button({
-width: '120px',
-content: 'Destroy Grid',
-cssClass: 'e-primary',
-isPrimary: true
-});
-
-button.appendTo('#element');
-
-(document.getElementById('element') as HTMLElement).addEventListener('click', () => {
-gantt.destroy();
-});
-
-// Destroy event handler.
-function destroyed(args: object): void {
-console.log("Gantt component destroyed.", args);
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div style="margin-bottom: 20px;" id='element'></div>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -5090,7 +2688,6 @@ console.log("Gantt component destroyed.", args);
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## endEdit
 
@@ -5104,133 +2701,6 @@ The event provides an argument of type [ITaskbarEditedEventArgs](https://ej2.syn
 | `data`       | IGanttData | Contains updated data for the task. |
 | `name`       | string     | Identifies event as **endEdit**     |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, ITaskbarEditedEventArgs } from '@syncfusion/ej2-gantt';
-
-Gantt.Inject(Edit, Toolbar, Selection);
-
-interface Task {
-TaskID: number;
-TaskName: string;
-StartDate?: Date;
-EndDate?: Date;
-Duration?: number;
-Progress?: number;
-Predecessor?: string;
-ParentID?: number;
-}
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-allowReordering: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-endEdit: endEditHandler,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function endEditHandler(args: ITaskbarEditedEventArgs): void {
-const task = args.data as Task;
-
-// Log the edited task details.
-console.log(`Task "${task.TaskName}" edited. New Duration: ${task.Duration} days`);
-
-// Validate duration.
-if (task.Duration < 1) {
-alert(`Task "${task.TaskName}" has an invalid duration (${task.Duration} days). Minimum duration is 1 day.`);
-// Optionally, revert the change or notify backend.
-}
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -5344,7 +2814,6 @@ alert(`Task "${task.TaskName}" has an invalid duration (${task.Duration} days). 
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## excelExportComplete
 
@@ -5356,132 +2825,6 @@ The event provides an argument of type [ExcelExportCompleteArgs](https://ej2.syn
 | ------------ | -------- | --------------------------------------- |
 | `promise`    | Promise  | Represents blob data for exported file. |
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, ExcelExport } from '@syncfusion/ej2-gantt';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations';
-import { ExcelExportCompleteArgs } from '@syncfusion/ej2-grids';
-
-Gantt.Inject(Edit, Toolbar, Selection, ExcelExport);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-allowExcelExport: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll', 'ExcelExport'],
-excelExportComplete: excelExportComplete,
-toolbarClick: toolbarClick,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function toolbarClick(args: ClickEventArgs): void {
-// Check if the clicked toolbar item is the Excel export button.
-if (args.item.id === 'Gantt_excelexport') {
-// Trigger Excel export from the Gantt component.
-gantt.excelExport();
-}
-}
-
-function excelExportComplete(args: ExcelExportCompleteArgs): void {
-// Log a message indicating that the Excel export has completed.
-console.log('Excel export completed');
-
-// Change the header text of the second column in the exported Excel file.
-(args as any).gridInstance.columns[1].headerText = "New HeaderText";
-
-// Hide the third column in the exported Excel file.
-(args as any).gridInstance.columns[2].visible = false;
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -5602,7 +2945,6 @@ args.gridInstance.columns[2].visible = false;
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## excelHeaderQueryCellInfo
 
@@ -5619,130 +2961,6 @@ The event provides an argument of type [ExcelHeaderQueryCellInfoEventArgs](https
 | `image`      | Image             | Contains image details for header cell.                 |
 | `style`      | ExcelStyle        | Defines style settings for header cell.                 |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, Column, ExcelExport, ExcelHeaderQueryCellInfoEventArgs } from '@syncfusion/ej2-gantt';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations';
-
-Gantt.Inject(Edit, Toolbar, Selection, ExcelExport);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-allowExcelExport: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll', 'ExcelExport'],
-excelHeaderQueryCellInfo: excelHeaderQueryCellInfo,
-toolbarClick: toolbarClick,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function toolbarClick(args: ClickEventArgs): void {
-// Check if the clicked toolbar item is the Excel export button.
-if (args.item.id === 'Gantt_excelexport') {
-(gantt.columns[3] as Column).visible = false;
-gantt.excelExport();
-}
-}
-
-function excelHeaderQueryCellInfo(args: ExcelHeaderQueryCellInfoEventArgs): void {
-// Customize header cells during Excel export.
-if (args.cell.value === "Progress") {
-// Modify header appearance.
-args.style = {
-backColor: '#a569bd',
-fontSize: 15
-};
-}
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -5863,7 +3081,6 @@ fontSize: 15
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## excelQueryCellInfo
 
@@ -5882,132 +3099,6 @@ The event provides an argument of type [ExcelQueryCellInfoEventArgs](https://ej2
 | `hyperLink`  | Hyperlink | Hyperlink details if cell includes a link.      |
 | `image`      | Image     | Image details if cell includes an image.        |
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, ExcelExport } from '@syncfusion/ej2-gantt';
-import { ExcelQueryCellInfoEventArgs } from '@syncfusion/ej2-grids';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations';
-
-Gantt.Inject(Edit, Toolbar, Selection, ExcelExport);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-allowExcelExport: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll', 'ExcelExport'],
-excelQueryCellInfo: excelQueryCellInfo,
-toolbarClick: toolbarClick,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function toolbarClick(args: ClickEventArgs): void {
-if (args.item.id === 'Gantt_excelexport') {
-gantt.columns[3].visible = false;
-gantt.excelExport();
-}
-}
-
-function excelQueryCellInfo(args: ExcelQueryCellInfoEventArgs): void {
-console.log(args);
-// Customize data cells during Excel export.
-if (args.column.field === "Progress") {
-// Modify data column appearance.
-args.style = {
-backColor: '#a569bd',
-fontSize: 15
-};
-}
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -6128,7 +3219,6 @@ fontSize: 15
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## expanded
 
@@ -6143,113 +3233,6 @@ The event provides an argument of type [ICollapsingEventArgs](https://ej2.syncfu
 | `name`       | string      | Identifies event as **expanded**        |
 | `cancel`     | boolean     | Prevents expansion when set to **true** |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, ICollapsingEventArgs } from '@syncfusion/ej2-gantt';
-
-Gantt.Inject(Edit, Toolbar, Selection);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-allowReordering: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-expanded: onRowExpanded,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function onRowExpanded(args: ICollapsingEventArgs): void {
-console.log('Expanded task:', args.data.TaskName);
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -6354,7 +3337,6 @@ console.log('Expanded task:', args.data.TaskName);
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## expanding
 
@@ -6370,130 +3352,6 @@ The event provides an argument of type [ICollapsingEventArgs](https://ej2.syncfu
 | `name`       | string      | Identifies event as **expanding**       |
 | `cancel`     | boolean     | Prevents expansion when set to **true** |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, ICollapsingEventArgs } from '@syncfusion/ej2-gantt';
-
-Gantt.Inject(Edit, Toolbar, Selection);
-
-interface Task {
-TaskID: number;
-TaskName: string;
-StartDate?: Date;
-EndDate?: Date;
-Duration?: number;
-Progress?: number;
-Predecessor?: string;
-ParentID?: number;
-subtasks?: Task[];
-}
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-allowReordering: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-expanding: onRowExpanding,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function onRowExpanding(args: ICollapsingEventArgs): void {
-// Prevent expansion of a specific task.
-if ((args.data.taskData as Task).TaskName === 'Project Estimation') {
-args.cancel = true;
-console.log('Expansion cancelled for:', (args.data.taskData as Task).TaskName);
-}
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-	   <button id="addRow">Add Row</button>  
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -6602,7 +3460,6 @@ console.log('Expansion cancelled for:', args.data.taskData.TaskName);
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## headerCellInfo
 
@@ -6616,119 +3473,6 @@ The event provides an object of type [HeaderCellInfoEventArgs](https://ej2.syncf
 | `node`       | Element     | Refers to the inner content element of the header cell, used to update text or insert icons. |
 | `name`       | string      | Identifies the event as **headerCellInfo**.                                                  |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, ICollapsingEventArgs } from '@syncfusion/ej2-gantt';
-import { HeaderCellInfoEventArgs } from '@syncfusion/ej2-grids';
-
-Gantt.Inject(Edit, Toolbar, Selection);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-headerCellInfo: headerCellInfo,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function headerCellInfo(args: HeaderCellInfoEventArgs): void {
-// Here you can customize the header cell for a specific column.
-// In this example, we apply a background color to the 'TaskName' column header.
-if (args.cell.column.field === 'TaskName') {
-if (args.node && (args.node as HTMLElement).style) {
-(args.node as HTMLElement).style.backgroundColor = 'lightblue';
-}
-}
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -6838,139 +3582,11 @@ args.node.style.backgroundColor = 'lightblue';
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## load
 
 The [load](https://ej2.syncfusion.com/javascript/documentation/api/gantt#load) event is triggered before the Gantt Chart component is rendered. It allows execution of pre-rendering logic such as modifying initial settings, injecting dynamic configurations, or preparing data before the component is displayed.
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection } from '@syncfusion/ej2-gantt';
-
-Gantt.Inject(Edit, Toolbar, Selection);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-timelineSettings: {
-topTier: {
-unit: 'Week',
-format: 'MMM dd, yyyy'
-},
-bottomTier: {
-unit: 'Day',
-count: 1
-},
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-load: load,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function load(): void {
-// Here you can customize the Gantt configuration before it renders.
-// Example: Set default timeline tier format.
-gantt.timelineSettings = {
-topTier: {
-format: 'dd MMM',
-unit: 'Day'
-},
-bottomTier: {
-unit: 'Hour',
-count: 12
-}
-};
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -7095,7 +3711,6 @@ count: 12
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## onMouseMove
 
@@ -7113,124 +3728,6 @@ The event provides an argument of type [IMouseMoveEventArgs](https://ej2.syncfus
 | `originalEvent` | Object             | Native mouse event object (**MouseEvent**).                          |
 | `predecessor`   | PredecessorTooltip | Tooltip data for predecessor relationships, if available.            |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, IMouseMoveEventArgs } from '@syncfusion/ej2-gantt';
-
-Gantt.Inject(Edit, Toolbar, Selection);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-allowReordering: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-onMouseMove: onMouseMove,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function onMouseMove(args: IMouseMoveEventArgs): void {
-// Check if the mouse is hovering over a column and log its field name.
-if (args.column) {
-console.log('Hovered column:', args.column.field);
-}
-
-    // Access the original mouse event to retrieve cursor position.
-    // Useful for custom interactions like tooltips or overlays
-    if (args.originalEvent) {
-      const { clientX, clientY } = args.originalEvent as MouseEvent;
-      console.log(`Mouse position: X=${clientX}, Y=${clientY}`);
-    }
-
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -7345,7 +3842,6 @@ console.log(`Mouse position: X=${clientX}, Y=${clientY}`);
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## onTaskbarClick
 
@@ -7361,138 +3857,6 @@ The event provides an argument of type [ITaskbarClickEventArgs](https://ej2.sync
 | `taskbarElement` | HTMLElement | Taskbar element that was clicked.               |
 | `name`           | string      | Name of the event (**onTaskbarClick**).         |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, ITaskbarClickEventArgs } from '@syncfusion/ej2-gantt';
-
-Gantt.Inject(Edit, Toolbar, Selection);
-
-interface Task {
-TaskID: number;
-TaskName: string;
-StartDate?: Date;
-EndDate?: Date;
-Duration?: number;
-Progress?: number;
-Predecessor?: string;
-subtasks?: Task[];
-}
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-allowReordering: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-onTaskbarClick: onTaskbarClick,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function onTaskbarClick(args: ITaskbarClickEventArgs): void {
-// Access the clicked task's data
-const task = args.data as Task;
-console.log('Clicked Task:', task.TaskName);
-
-// Get the row index of the clicked task
-console.log('Row Index:', args.rowIndex);
-
-// Log the clicked taskbar element
-console.log('Taskbar Element:', args.taskbarElement);
-
-// Log the specific target element (e.g., label, connector)
-console.log('Clicked Element:', args.target);
-
-// Example: Show a custom tooltip or modal with task details
-alert(`Task "${task['TaskName']}" clicked at row ${args.rowIndex}`);
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -7611,7 +3975,6 @@ alert(`Task "${task['TaskName']}" clicked at row ${args.rowIndex}`);
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## pdfColumnHeaderQueryCellInfo
 
@@ -7629,136 +3992,6 @@ The event provides an argument of type [PdfColumnHeaderQueryCellInfoEventArgs](h
 | `value`          | string \| Object  | Value to be displayed in the header cell. Can be customized.                |
 | `name`           | string            | Identifies the event as **pdfColumnHeaderQueryCellInfo**.                   |
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, PdfHeaderQueryCellInfoEventArgs, PdfExport } from '@syncfusion/ej2-gantt';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations';
-
-Gantt.Inject(Edit, Toolbar, Selection, PdfExport);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-allowPdfExport: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll', 'PdfExport'],
-timelineSettings: {
-topTier: {
-unit: 'Week',
-format: 'MMM dd, yyyy'
-},
-bottomTier: {
-unit: 'Day',
-format: 'dd'
-}
-},
-pdfColumnHeaderQueryCellInfo: pdfColumnHeaderQueryCellInfo,
-toolbarClick: toolbarClick,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function toolbarClick(args: ClickEventArgs): void {
-if (args.item.id === 'Gantt_pdfexport') {
-gantt.pdfExport();
-}
-}
-
-function pdfColumnHeaderQueryCellInfo(args: PdfHeaderQueryCellInfoEventArgs): void {
-// Here you can customize the code.
-if (args.column.field === "TaskName") {
-args.value = "New HeaderText changed";
-}
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -7883,7 +4116,6 @@ args.value = "New HeaderText changed";
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## pdfExportComplete
 
@@ -7895,134 +4127,6 @@ The event provides an `object` with the following property:
 | ------------ | -------- | --------------------------------------------- |
 | `name`       | string   | Identifies the event as **pdfExportComplete** |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, PdfExport } from '@syncfusion/ej2-gantt';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations';
-
-Gantt.Inject(Edit, Toolbar, Selection, PdfExport);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-allowPdfExport: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll', 'PdfExport'],
-timelineSettings: {
-topTier: {
-unit: 'Week',
-format: 'MMM dd, yyyy'
-},
-bottomTier: {
-unit: 'Day',
-format: 'dd'
-}
-},
-pdfExportComplete: pdfExportComplete,
-toolbarClick: toolbarClick,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function toolbarClick(args: ClickEventArgs): void {
-if (args.item.id === 'Gantt_pdfexport') {
-gantt.pdfExport();
-}
-}
-
-function pdfExportComplete(args: object): void {
-// This method is triggered after the PDF export is completed.
-// You can use it to log export status, show notifications, or handle the exported blob.
-console.log('PDF export completed', args);
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-    <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -8146,7 +4250,6 @@ console.log('PDF export completed', args);
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## pdfQueryCellInfo
 
@@ -8164,137 +4267,6 @@ The event provides an argument of type [PdfExportCompleteArgs](https://ej2.syncf
 | `hyperLink`  | Hyperlink                                                         | Hyperlink details if the cell includes a link. |
 | `image`      | Image                                                             | Image details if the cell includes an image.   |
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, PdfExport, PdfQueryCellInfoEventArgs } from '@syncfusion/ej2-gantt';
-import { PdfColor} from '@syncfusion/ej2-pdf-export';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations';
-
-Gantt.Inject(Edit, Toolbar, Selection, PdfExport);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-allowPdfExport: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll', 'PdfExport'],
-timelineSettings: {
-topTier: {
-unit: 'Week',
-format: 'MMM dd, yyyy'
-},
-bottomTier: {
-unit: 'Day',
-format: 'dd'
-}
-},
-pdfQueryCellInfo: pdfQueryCellInfo,
-toolbarClick: toolbarClick,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function toolbarClick(args: ClickEventArgs): void {
-if (args.item.id === 'Gantt_pdfexport') {
-gantt.pdfExport();
-}
-}
-
-function pdfQueryCellInfo(args: PdfQueryCellInfoEventArgs): void {
-// Apply custom styling for the "Progress" column.
-if (args.column.field === 'Progress' && args.style) {
-args.style= { backgroundColor: new PdfColor(234, 234, 234) };
-}
-console.log('PDF Cell Info:', args);
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -8420,7 +4392,6 @@ console.log('PDF Cell Info:', args);
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## pdfQueryTaskbarInfo
 
@@ -8436,134 +4407,6 @@ The event provides an argument of type [PdfQueryTaskbarInfoEventArgs](https://ej
 | `taskbar`         | ITaskbarStyle    | Style settings like color, border, and progress bar.     |
 | `taskbarTemplate` | ITemplateDetails | Template for taskbar appearance including text or image. |
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, PdfExport, PdfQueryTaskbarInfoEventArgs } from '@syncfusion/ej2-gantt';
-import { PdfColor } from '@syncfusion/ej2-pdf-export';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations';
-
-Gantt.Inject(Edit, Toolbar, Selection, PdfExport);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-}
-];
-
-const gantt: Gantt = new Gantt({
-dataSource: data,
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-},
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' }
-],
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'PdfExport'],
-allowPdfExport: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-timelineSettings: {
-topTier: {
-unit: 'Week',
-format: 'MMM dd, yyyy'
-},
-bottomTier: {
-unit: 'Day',
-count: 1
-}
-},
-height: '550px',
-pdfQueryTaskbarInfo: pdfQueryTaskbarInfo,
-toolbarClick: toolbarClick
-});
-
-gantt.appendTo('#Gantt');
-
-function pdfQueryTaskbarInfo(args: PdfQueryTaskbarInfoEventArgs) {
-args.taskbar.taskColor = new PdfColor(255, 87, 34);
-args.taskbar.progressColor = new PdfColor(0, 188, 212);
-console.log('PDF Taskbar Info:', args);
-}
-
-function toolbarClick(args: ClickEventArgs) {
-if (args.item.id === 'Gantt_pdfexport') {
-gantt.pdfExport();
-}
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -8687,7 +4530,6 @@ gantt.pdfExport();
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## pdfQueryTimelineCellInfo
 
@@ -8700,134 +4542,6 @@ The event provides an argument of type [pdfQueryTimelineCellInfoEventArgs](https
 | `timelineCell` | PdfGanttCellStyle | Style settings for the timeline cell being rendered. |
 | `value`        | string            | Text content displayed in the timeline cell.         |
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, PdfExport, PdfQueryTaskbarInfoEventArgs } from '@syncfusion/ej2-gantt';
-import { PdfColor} from '@syncfusion/ej2-pdf-export';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations';
-
-Gantt.Inject(Edit, Toolbar, Selection, PdfExport);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-allowPdfExport: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll', 'PdfExport'],
-timelineSettings: {
-topTier: {
-unit: 'Week',
-format: 'MMM dd, yyyy'
-},
-bottomTier: {
-unit: 'Day',
-format: 'dd'
-}
-},
-pdfQueryTimelineCellInfo: pdfQueryTimelineCellInfo,
-toolbarClick: toolbarClick,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function toolbarClick(args: ClickEventArgs): void {
-if (args.item.id === 'Gantt_pdfexport') {
-gantt.pdfExport();
-}
-}
-
-function pdfQueryTimelineCellInfo(args: PdfQueryTaskbarInfoEventArgs): void {
-// Logs the timeline cell information.
-console.log('Timeline Info:', args.timelineCell);
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -8950,7 +4664,6 @@ console.log('Timeline Info:', args.timelineCell);
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## queryCellInfo
 
@@ -8968,151 +4681,6 @@ The event provides an argument of type [QueryCellInfoEventArgs](https://ej2.sync
 | `colIndex`       | number      | Index of the column containing the cell.          |
 | `colspan`        | number      | Number of columns the cell spans across.          |
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, PdfExport, QueryCellInfoEventArgs } from '@syncfusion/ej2-gantt';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations';
-
-Gantt.Inject(Edit, Toolbar, Selection, PdfExport);
-
-interface Task {
-TaskID: number;
-TaskName: string;
-StartDate?: Date;
-EndDate?: Date;
-Duration?: number;
-Progress?: number;
-Predecessor?: string;
-subtasks?: Task[];
-}
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-allowPdfExport: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll', 'PdfExport'],
-timelineSettings: {
-topTier: {
-unit: 'Week',
-format: 'MMM dd, yyyy'
-},
-bottomTier: {
-unit: 'Day',
-format: 'dd'
-}
-},
-queryCellInfo: queryCellInfo,
-toolbarClick: toolbarClick,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function toolbarClick(args: ClickEventArgs): void {
-if (args.item.id === 'Gantt_pdfexport') {
-gantt.pdfExport();
-}
-}
-
-function queryCellInfo(args: QueryCellInfoEventArgs): void {
-// Highlight cells in the "Progress" column with low progress.
-const task = args.data as Task;
-const cell = args.cell as HTMLElement;
-if (args.column.field === 'Progress' && task.Progress !== undefined && task.Progress < 70) {
-cell.style.backgroundColor = '#fff3cd'; // Light yellow
-cell.style.color = '#856404'; // Dark yellow text
-cell.title = 'Progress is below 70%';
-}
-console.log('Query Cell Info:', args);
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -9242,7 +4810,6 @@ console.log('Query Cell Info:', args);
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## queryTaskbarInfo
 
@@ -9265,140 +4832,6 @@ The event provides an argument of type [IQueryTaskbarInfoEventArgs](https://ej2.
 | `taskbarElement`     | Element    | Defines the taskbar element.             |
 | `taskbarType`        | string     | Defines the taskbar type.                |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, PdfExport, IQueryTaskbarInfoEventArgs } from '@syncfusion/ej2-gantt';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations';
-
-Gantt.Inject(Edit, Toolbar, Selection, PdfExport);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-allowPdfExport: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll', 'PdfExport'],
-timelineSettings: {
-topTier: {
-unit: 'Week',
-format: 'MMM dd, yyyy'
-},
-bottomTier: {
-unit: 'Day',
-format: 'dd'
-}
-},
-queryTaskbarInfo: queryTaskbarInfo,
-toolbarClick: toolbarClick,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function toolbarClick(args: ClickEventArgs): void {
-if (args.item.id === 'Gantt_pdfexport') {
-gantt.pdfExport();
-}
-}
-
-function queryTaskbarInfo(args: IQueryTaskbarInfoEventArgs): void {
-// Log the entire event argument object for debugging
-console.log('Query Cell Info:', args);
-
-// Set custom background color for the progress bar
-args.progressBarBgColor = "rgba(36, 170, 197, 1)";
-
-// Set custom colors for the taskbar and its label
-args.taskLabelColor = "rgba(216, 6, 6, 1)";
-args.taskbarBgColor = "rgb(88, 105, 197)";
-args.taskbarBorderColor = "rgba(79, 181, 63, 1)";
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -9529,7 +4962,6 @@ args.taskbarBorderColor = "rgba(79, 181, 63, 1)";
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## recordDoubleClick
 
@@ -9549,137 +4981,6 @@ The event provides an argument of type [RecordDoubleClickEventArgs](https://ej2.
 | `rowIndex`       | number     | Index of the row in the data source.                  |
 | `target`         | Element    | DOM element that initiated the double-click.          |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, PdfExport, RecordDoubleClickEventArgs } from '@syncfusion/ej2-gantt';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations';
-
-Gantt.Inject(Edit, Toolbar, Selection, PdfExport);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-allowPdfExport: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll', 'PdfExport'],
-timelineSettings: {
-topTier: {
-unit: 'Week',
-format: 'MMM dd, yyyy'
-},
-bottomTier: {
-unit: 'Day',
-format: 'dd'
-}
-},
-recordDoubleClick: recordDoubleClick,
-toolbarClick: toolbarClick,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function toolbarClick(args: ClickEventArgs): void {
-if (args.item.id === 'Gantt_pdfexport') {
-gantt.pdfExport();
-}
-}
-
-function recordDoubleClick(args: RecordDoubleClickEventArgs): void {
-// Log the data of the row that was double-clicked.
-console.log('Record Data:', args.rowData);
-
-// Log the index of the row that was double-clicked.
-console.log('Row Index:', args.rowIndex);
-
-// You can customize this method to perform actions like opening a detail view, editing the record, or showing a popup with more information.
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -9807,7 +5108,6 @@ console.log('Row Index:', args.rowIndex);
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## resizeStart
 
@@ -9820,136 +5120,6 @@ The event provides an argument of type [ResizeArgs](https://ej2.syncfusion.com/j
 | `cancel`     | boolean  | Prevents column resizing when set to **true**. |
 | `column`     | Column   | Details of the column being resized initially. |
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, Resize } from '@syncfusion/ej2-gantt';
-import { ResizeArgs } from '@syncfusion/ej2-grids';
-
-Gantt.Inject(Edit, Toolbar, Selection, Resize);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-allowResizing: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-timelineSettings: {
-topTier: {
-unit: 'Week',
-format: 'MMM dd, yyyy'
-},
-bottomTier: {
-unit: 'Day',
-format: 'dd'
-}
-},
-resizeStart: resizeStart,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function resizeStart(args: ResizeArgs): void {
-
-// Check if the column being resized is 'TaskID'
-if (args.column.field === "TaskID") {
-
-    // Cancel the resize action for the 'TaskID' column
-    args.cancel = true;
-
-    // Show an alert message to inform the user
-    alert("Resizing not allowed for TaskID column");
-
-}
-
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -10075,7 +5245,6 @@ if (args.column.field === "TaskID") {
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## resizeStop
 
@@ -10088,128 +5257,6 @@ The event provides an argument of type [ResizeArgs](https://ej2.syncfusion.com/j
 | `cancel`     | boolean  | Cancels the resize operation when set to **true**. |
 | `column`     | Column   | Provides information about the resized column.     |
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, Resize } from '@syncfusion/ej2-gantt';
-import { ResizeArgs } from '@syncfusion/ej2-grids';
-
-Gantt.Inject(Edit, Toolbar, Selection, Resize);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-allowResizing: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-timelineSettings: {
-topTier: {
-unit: 'Week',
-format: 'MMM dd, yyyy'
-},
-bottomTier: {
-unit: 'Day',
-format: 'dd'
-}
-},
-resizeStop: resizeStop,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function resizeStop(args: ResizeArgs): void {
-// Log the column details that was resized
-console.log('Resized Column Info:', args.column);
-
-// You can customize this method to track column size changes, update layout settings, or store user preferences.
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -10327,7 +5374,6 @@ console.log('Resized Column Info:', args.column);
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## resizing
 
@@ -10340,127 +5386,6 @@ The event provides an argument of type [ResizeArgs](https://ej2.syncfusion.com/j
 | `cancel`     | boolean  | Stops resizing dynamically during interaction.  |
 | `column`     | Column   | Current column details during resizing process. |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, Resize } from '@syncfusion/ej2-gantt';
-import { ResizeArgs } from '@syncfusion/ej2-grids';
-
-Gantt.Inject(Edit, Toolbar, Selection, Resize);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-allowResizing: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-timelineSettings: {
-topTier: {
-unit: 'Week',
-format: 'MMM dd, yyyy'
-},
-bottomTier: {
-unit: 'Day',
-format: 'dd'
-}
-},
-resizing: resizing,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function resizing(args: ResizeArgs): void {
-// Log the column details that was resizing
-console.log('Resized Column Info:', args.column);
-
-// You can customize this method to track column size changes, update layout settings, or store user preferences.
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -10578,7 +5503,6 @@ console.log('Resized Column Info:', args.column);
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## rowDataBound
 
@@ -10593,128 +5517,6 @@ The event provides an argument of type [RowDataBoundEventArgs](https://ej2.syncf
 | `row`          | Element    | Row element rendered in the Gantt Chart.   |
 | `rowHeight`    | number     | Height of the row being rendered.          |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, Resize, RowDataBoundEventArgs } from '@syncfusion/ej2-gantt';
-
-Gantt.Inject(Edit, Toolbar, Selection, Resize);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-allowResizing: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-timelineSettings: {
-topTier: {
-unit: 'Week',
-format: 'MMM dd, yyyy'
-},
-bottomTier: {
-unit: 'Day',
-count: 1
-},
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-rowDataBound: rowDataBound,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function rowDataBound(args: RowDataBoundEventArgs): void {
-// Set the row height to 45 pixels
-args.rowHeight = 45;
-
-// Log the row data for debugging or inspection
-console.log('Row Data Bound Event:', args);
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-	   <button id="addRow">Add Row</button>  
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -10832,7 +5634,6 @@ console.log('Row Data Bound Event:', args);
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## rowDeselected
 
@@ -10850,126 +5651,6 @@ The event provides an argument of type [RowDeselectEventArgs](https://ej2.syncfu
 | `rowIndex`                | number             | Index of the deselected row.                          |
 | `rowIndexes`              | number[]           | Indexes of all deselected rows.                       |
 | `target`                  | Element            | Target element that triggered the deselection.        |
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, RowDeselectEventArgs } from '@syncfusion/ej2-gantt';
-
-Gantt.Inject(Edit, Toolbar, Selection);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-timelineSettings: {
-topTier: {
-unit: 'Week',
-format: 'MMM dd, yyyy'
-},
-bottomTier: {
-unit: 'Day',
-format: 'dd'
-}
-},
-rowDeselected: rowDeselected,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-// Triggered after a row is deselected.
-function rowDeselected(args: RowDeselectEventArgs) {
-// Log the entire event object for debugging.
-console.log('RowDeselected event triggered. Details of the deselected row:', args);
-};
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -11086,7 +5767,6 @@ console.log('RowDeselected event triggered. Details of the deselected row:', arg
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## rowDeselecting
 
@@ -11105,124 +5785,6 @@ The event provides an argument of type [RowDeselectEventArgs](https://ej2.syncfu
 | `rowIndexes`              | number[]           | Indexes of all rows being deselected.                 |
 | `target`                  | Element            | Target element that triggered the deselection.        |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, RowDeselectEventArgs } from '@syncfusion/ej2-gantt';
-
-Gantt.Inject(Edit, Toolbar, Selection);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-timelineSettings: {
-topTier: {
-unit: 'Week',
-format: 'MMM dd, yyyy'
-},
-bottomTier: {
-unit: 'Day',
-format: 'dd'
-}
-},
-rowDeselecting: rowDeselecting,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-// Triggered before a row is deselected.
-function rowDeselecting(args: RowDeselectEventArgs) {
-// Log the entire event object for debugging.
-console.log('rowDeselecting event triggered. Details of the Deselecting row:', args);
-};
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -11338,7 +5900,6 @@ console.log('rowDeselecting event triggered. Details of the Deselecting row:', a
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## rowDrag
 
@@ -11355,134 +5916,6 @@ The event provides an argument of type [RowDragEventArgs](https://ej2.syncfusion
 | `rows`          | Element[] | DOM elements of the selected rows.                  |
 | `target`        | Element   | Target element where the drag started.              |
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, RowDD } from '@syncfusion/ej2-gantt';
-import { RowDragEventArgs } from '@syncfusion/ej2-grids';
-
-Gantt.Inject(Edit, Toolbar, Selection, RowDD);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-allowRowDragAndDrop: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-timelineSettings: {
-topTier: {
-unit: 'Week',
-format: 'MMM dd, yyyy'
-},
-bottomTier: {
-unit: 'Day',
-format: 'dd'
-}
-},
-rowDrag: rowDrag,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-// Triggered when a row is being dragged.
-function rowDrag(args: RowDragEventArgs): void {
-// Log the entire event object for inspection.
-console.log('Row Drag Event:', args);
-
-// Show the target element where the row is being dragged.
-console.log('Target Element:', args.target);
-
-// Show the row element being dragged.
-console.log('Row Element:', args.rows);
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-	   <button id="addRow">Add Row</button>  
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -11605,7 +6038,6 @@ console.log('Row Element:', args.rows);
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## rowDragStart
 
@@ -11621,132 +6053,6 @@ The event provides an argument of type [RowDragEventArgs](https://ej2.syncfusion
 | `originalEvent` | object    | Native mouse event that started the drag.  |
 | `rows`          | Element[] | DOM elements of the dragged rows.          |
 | `target`        | Element   | Element where the drag was initiated.      |
-
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, RowDD } from '@syncfusion/ej2-gantt';
-import { RowDragEventArgs } from '@syncfusion/ej2-grids';
-
-Gantt.Inject(Edit, Toolbar, Selection, RowDD);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-allowRowDragAndDrop: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-timelineSettings: {
-topTier: {
-unit: 'Week',
-format: 'MMM dd, yyyy'
-},
-bottomTier: {
-unit: 'Day',
-format: 'dd'
-}
-},
-rowDragStart: rowDragStart,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function rowDragStart(args: RowDragEventArgs): void {
-console.log("Dragged row index:", args.fromIndex);
-console.log("Dragged row data:", args.data);
-console.log("Dragged row element:", (args.rows[0] as HTMLElement));
-console.log("Target cell:", args.target);
-
-// Highlight the dragged row.
-(args.rows[0] as HTMLElement).style.backgroundColor = "#ffeeba";
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-	   <button id="addRow">Add Row</button>  
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -11868,7 +6174,6 @@ args.rows[0].style.backgroundColor = "#ffeeba";
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## rowDragStartHelper
 
@@ -11885,143 +6190,6 @@ The event provides an argument of type [RowDragEventArgs](https://ej2.syncfusion
 | `rows`          | Element[] | DOM elements of the selected rows.          |
 | `target`        | Element   | Element where the drag was initiated.       |
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, RowDD } from '@syncfusion/ej2-gantt';
-import { RowDragEventArgs } from '@syncfusion/ej2-grids';
-
-Gantt.Inject(Edit, Toolbar, Selection, RowDD);
-
-interface Task {
-TaskID: number;
-TaskName: string;
-StartDate?: Date;
-EndDate?: Date;
-Duration?: number;
-Progress?: number;
-Predecessor?: string;
-ParentID?: number;
-subtasks?: Task[];
-}
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-allowRowDragAndDrop: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-timelineSettings: {
-topTier: {
-unit: 'Week',
-format: 'MMM dd, yyyy'
-},
-bottomTier: {
-unit: 'Day',
-format: 'dd'
-}
-},
-rowDragStartHelper: rowDragStartHelper,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-// Triggered before row drag starts.
-function rowDragStartHelper(args: RowDragEventArgs): void {
-const draggedData = args.data[0] as Task;
-// Cancel drag and drop if TaskID is 3.
-if (draggedData.TaskID === 3) {
-args.cancel = true;
-console.log('Drag cancelled for TaskID 3');
-}
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -12142,7 +6310,6 @@ console.log('Drag cancelled for TaskID 3');
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## rowDrop
 
@@ -12163,141 +6330,6 @@ The event provides an argument of type [RowDragEventArgs](https://ej2.syncfusion
 | `rows`            | Element[]    | DOM elements of the dragged rows.           |
 | `target`          | Element      | Element where the drag was initiated.       |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-interface Task {
-TaskID: number;
-TaskName: string;
-StartDate?: Date;
-EndDate?: Date;
-Duration?: number;
-Progress?: number;
-Predecessor?: string;
-subtasks?: Task[];
-}
-
-import { Gantt, Edit, Toolbar, Selection, RowDD, RowDropEventArgs } from '@syncfusion/ej2-gantt';
-
-Gantt.Inject(Edit, Toolbar, Selection, RowDD);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-allowRowDragAndDrop: true,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-timelineSettings: {
-topTier: {
-unit: 'Week',
-format: 'MMM dd, yyyy'
-},
-bottomTier: {
-unit: 'Day',
-format: 'dd'
-}
-},
-rowDrop: rowDrop,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-// Triggered when a row is dropped after drag-and-drop.
-function rowDrop(args: RowDropEventArgs): void {
-const draggedData = args.data as Task[];
-if (draggedData.some(task => task.TaskID === 2)) {
-args.cancel = true;
-console.log('Drop cancelled for TaskID 2');
-} else {
-console.log('Row dropped:', draggedData);
-}
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -12419,7 +6451,6 @@ console.log('Row dropped:', draggedData);
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## rowSelected
 
@@ -12440,134 +6471,6 @@ The event provides an argument of type [RowSelectEventArgs](https://ej2.syncfusi
 | `rowIndexes`              | number[]             | Indexes of all selected rows.                       |
 | `target`                  | Element              | Target element that triggered the selection.        |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, RowSelectEventArgs } from '@syncfusion/ej2-gantt';
-
-Gantt.Inject(Edit, Toolbar, Selection);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-timelineSettings: {
-topTier: {
-unit: 'Week',
-format: 'MMM dd, yyyy'
-},
-bottomTier: {
-unit: 'Day',
-format: 'dd'
-}
-},
-rowSelected: rowSelected,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-// Triggered when a row is selected.
-function rowSelected(args: RowSelectEventArgs): void {
-console.log(args);
-
-// Reset background color for all rows.
-const rows = document.querySelectorAll('.e-row');
-rows.forEach(row => {
-(row as HTMLElement).style.backgroundColor = '';
-});
-
-// Highlight the selected row.
-if (args.row) {
-(args.row as HTMLElement).style.backgroundColor = '#1addffff'; // Light blue
-}
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -12693,7 +6596,6 @@ args.row.style.backgroundColor = '#1addffff';
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## rowSelecting
 
@@ -12717,143 +6619,6 @@ The event provides an argument of type [RowSelectingEventArgs](https://ej2.syncf
 | `rowIndexes`              | number[]             | Indexes of all rows being selected.                 |
 | `target`                  | Element              | Target element that triggered the selection.        |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, RowSelectingEventArgs } from '@syncfusion/ej2-gantt';
-
-Gantt.Inject(Edit, Toolbar, Selection);
-
-interface Task {
-TaskID: number;
-TaskName: string;
-StartDate?: Date;
-EndDate?: Date;
-Duration?: number;
-Progress?: number;
-Predecessor?: string;
-ParentID?: number;
-subtasks?: Task[];
-}
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-timelineSettings: {
-topTier: {
-unit: 'Week',
-format: 'MMM dd, yyyy'
-},
-bottomTier: {
-unit: 'Day',
-format: 'dd'
-}
-},
-rowSelecting: rowSelecting,
-height: '450px',
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-// Triggered before a row is selected.
-function rowSelecting(args: RowSelectingEventArgs): void {
-console.log(args);
-// Extract the task data from the event arguments.
-const task = args.data as Task;
-// Check if the selected task has TaskID = 3.
-if (task.TaskID == 3) {
-// Cancel the row selection for TaskID 3.
-args.cancel = true;
-console.log("Row selection cancelled for TaskID 3");
-}
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -12976,7 +6741,6 @@ console.log("Row selection cancelled for TaskID 3");
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## splitterResizeStart
 
@@ -12989,130 +6753,6 @@ The event provides an argument of type [ResizeArgs](https://ej2.syncfusion.com/j
 | `cancel`     | boolean  | Defines whether the event is cancelable. |
 | `column`     | Column   | Defines the resizing column details.     |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection } from '@syncfusion/ej2-gantt';
-import { ResizeArgs } from '@syncfusion/ej2-grids';
-
-Gantt.Inject(Edit, Toolbar, Selection);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-timelineSettings: {
-topTier: {
-unit: 'Week',
-format: 'MMM dd, yyyy'
-},
-bottomTier: {
-unit: 'Day',
-count: 1
-},
-},
-splitterResizeStart: splitterResizeStart,
-height: '450px',
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-// Triggered when splitter resizing starts.
-function splitterResizeStart(args: ResizeArgs): void {
-console.log('Splitter resize started:', args);
-
-// Prevent resizing if screen width is less than 768 pixels.
-if (window.innerWidth < 768) {
-args.cancel = true;
-console.log('Resize cancelled due to small screen width');
-}
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -13233,7 +6873,6 @@ console.log('Resize cancelled due to small screen width');
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## splitterResized
 
@@ -13251,128 +6890,6 @@ The event provides an argument of type [ISplitterResizedEventArgs](https://ej2.s
 | `paneSize`   | number[]      | Final sizes of the resized panes.      |
 | `separator`  | HTMLElement   | Splitter bar element that was resized. |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, ISplitterResizedEventArgs } from '@syncfusion/ej2-gantt';
-
-Gantt.Inject(Edit, Toolbar, Selection);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-timelineSettings: {
-topTier: {
-unit: 'Week',
-format: 'MMM dd, yyyy'
-},
-bottomTier: {
-unit: 'Day',
-count: 1
-},
-},
-splitterResized: splitterResized,
-height: '450px',
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function splitterResized(args: ISplitterResizedEventArgs): void {
-const leftPaneSize = args.paneSize[0];
-const rightPaneSize = args.paneSize[1];
-
-// Save pane sizes to local storage.
-localStorage.setItem('ganttLeftPaneWidth', leftPaneSize.toString());
-localStorage.setItem('ganttRightPaneWidth', rightPaneSize.toString());
-console.log('Splitter resized:', leftPaneSize, rightPaneSize);
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -13493,7 +7010,6 @@ console.log('Splitter resized:', leftPaneSize, rightPaneSize);
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## splitterResizing
 
@@ -13511,125 +7027,6 @@ The event provides an argument of type `ResizingEventArgs` with the following pr
 | `paneSize`   | number[]      | Current sizes of the panes.         |
 | `separator`  | HTMLElement   | Splitter bar element being dragged. |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, ITaskbarEditedEventArgs } from '@syncfusion/ej2-gantt';
-import { ResizingEventArgs } from '@syncfusion/ej2-layouts';
-
-Gantt.Inject(Edit, Toolbar, Selection);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-timelineSettings: {
-topTier: {
-unit: 'Week',
-format: 'MMM dd, yyyy'
-},
-bottomTier: {
-unit: 'Day',
-count: 1
-},
-},
-splitterResizing: splitterResizing,
-height: '450px',
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function splitterResizing(args: ResizingEventArgs): void {
-// Change separator color when splitter resizing.
-const separator = args.separator;
-(separator as HTMLElement).style.backgroundColor = '#4CAF50';
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -13745,7 +7142,6 @@ separator.style.backgroundColor = '#4CAF50';
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## taskbarEdited
 
@@ -13766,150 +7162,6 @@ The event provides an argument of type [TaskbarEditedEventArgs](https://ej2.sync
 | `target`            | Element    | Target element of the edit.           |
 | `taskBarEditAction` | string     | Type of taskbar edit performed.       |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, ITaskbarEditedEventArgs } from '@syncfusion/ej2-gantt';
-
-Gantt.Inject(Edit, Toolbar, Selection);
-
-interface Task {
-TaskID: number;
-TaskName: string;
-StartDate?: Date;
-EndDate?: Date;
-Duration?: number;
-Progress?: number;
-Predecessor?: string;
-ParentID?: number;
-subtasks?: Task[];
-}
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-timelineSettings: {
-topTier: {
-unit: 'Week',
-format: 'MMM dd, yyyy'
-},
-bottomTier: {
-unit: 'Day',
-count: 1
-},
-},
-taskbarEdited: taskbarEdited,
-height: '450px',
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function taskbarEdited(args: ITaskbarEditedEventArgs): void {
-// Extract the edited task data.
-const editedTask = args.data as Task;
-
-// Identify the type of taskbar edit action performed.
-const actionType = args.taskBarEditAction;
-
-// Retrieve the previous state of the task before editing.
-const previous = args.previousData;
-
-// Log the event to the console for debugging or tracking.
-console.log('Taskbar Edited!');
-console.log('Action Type:', actionType);
-console.log('Edited Task:', editedTask);
-console.log('Previous Task Data:', previous);
-
-// Show a confirmation alert to the user with task name and action type.
-alert(`Task "${editedTask.TaskName}" was updated via ${actionType}.`);
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -14039,7 +7291,6 @@ alert(`Task "${editedTask.TaskName}" was updated via ${actionType}.`);
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## taskbarEditing
 
@@ -14060,145 +7311,6 @@ The event provides an argument of type [ITaskbarEditedEventArgs](https://ej2.syn
 | `target`            | Element    | Target element involved in the edit.     |
 | `taskBarEditAction` | string     | Specific type of taskbar edit action.    |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection, ITaskbarEditedEventArgs } from '@syncfusion/ej2-gantt';
-
-Gantt.Inject(Edit, Toolbar, Selection);
-
-interface Task {
-TaskID: number;
-TaskName: string;
-StartDate?: Date;
-EndDate?: Date;
-Duration?: number;
-Progress?: number;
-Predecessor?: string;
-subtasks?: Task[];
-}
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-columns: [
-{ field: 'TaskID', headerText: 'Task ID' },
-{ field: 'TaskName', headerText: 'Task Name' },
-{ field: 'StartDate', headerText: 'Start Date' },
-{ field: 'Duration', headerText: 'Duration' },
-{ field: 'Progress', headerText: 'Progress' },
-],
-toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'],
-timelineSettings: {
-topTier: {
-unit: 'Week',
-format: 'MMM dd, yyyy'
-},
-bottomTier: {
-unit: 'Day',
-count: 1
-},
-},
-taskbarEditing: taskbarEditing,
-height: '450px',
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function taskbarEditing(args: ITaskbarEditedEventArgs): void {
-const editedTask = args.data as Task;
-const actionType = args.taskBarEditAction;
-const newDuration = editedTask.Duration;
-
-console.log('Editing in progress...');
-console.log('Action Type:', actionType);
-console.log('New Duration:', newDuration);
-
-// Example validation: prevent duration less than 2 or more than 5
-if (newDuration < 2 || newDuration > 5) {
-args.cancel = true;
-console.log(`Editing cancelled. Duration must be between 2 and 5 days.`);
-}
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -14324,7 +7436,6 @@ console.log(`Editing cancelled. Duration must be between 2 and 5 days.`);
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## toolbarClick
 
@@ -14339,112 +7450,6 @@ The event provides an argument of type [ClickEventArgs](https://ej2.syncfusion.c
 | `originalEvent` | PointerEvent | Native DOM event            |
 | `cancel`        | boolean      | Cancel default action       |
 
-{% if page.publishingplatform == "typescript" %}
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% raw %}
-
-import { Gantt, Edit, Toolbar, Selection } from '@syncfusion/ej2-gantt';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations';
-
-Gantt.Inject(Edit, Toolbar, Selection);
-
-const data: object[] = [
-{
-TaskID: 1,
-TaskName: 'Project Initiation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-{ TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 4, Progress: 50 },
-]
-},
-{
-TaskID: 5,
-TaskName: 'Project Estimation',
-StartDate: new Date('04/02/2024'),
-EndDate: new Date('04/21/2024'),
-subtasks: [
-{ TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 },
-{ TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2024'), Duration: 3, Progress: 50 }
-]
-},
-];
-
-let gantt: Gantt = new Gantt({
-dataSource: data,
-projectStartDate: new Date('03/31/2024'),
-projectEndDate: new Date('05/30/2024'),
-editSettings: {
-allowAdding: true,
-allowEditing: true,
-allowDeleting: true,
-allowTaskbarEditing: true,
-showDeleteConfirmDialog: true
-},
-toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel', 'ExpandAll', 'CollapseAll', 'PrevTimeSpan', 'NextTimeSpan', 'Indent', 'Outdent'],
-toolbarClick: toolbarClick,
-height: '450px',
-taskFields: {
-id: 'TaskID',
-name: 'TaskName',
-startDate: 'StartDate',
-duration: 'Duration',
-progress: 'Progress',
-dependency: 'Predecessor',
-child: 'subtasks'
-}
-});
-
-gantt.appendTo('#Gantt');
-
-function toolbarClick(args: ClickEventArgs): void {
-if (args.item.id === "Gantt_delete") {
-const confirmDelete = confirm('Are you sure you want to delete this task?');
-if (!confirmDelete) {
-args.cancel = true;
-}
-}
-console.log('Toolbar item clicked:', args.item.text);
-}
-
-{% endraw %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-     <title>EJ2 Gantt</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Gantt Controls" />
-    <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-	<link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
-</head>
-
-<body>
-       
-     <div id='loader'>Loading....</div>
-    <div id='container'>
-        <div id='Gantt'></div>        
-    </div>
-</body>
-
-</html>
-
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% raw %}
@@ -14547,4 +7552,4 @@ console.log('Toolbar item clicked:', args.item.text);
 
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
+

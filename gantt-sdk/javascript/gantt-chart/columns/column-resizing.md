@@ -18,21 +18,6 @@ Column width can be adjusted by dragging the right edge of the header, with chan
 
 To use the column resize feature, inject the `Resize` module into the Gantt Chart control.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs3/index.js %}
@@ -43,7 +28,6 @@ To use the column resize feature, inject the `Resize` module into the Gantt Char
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs3" %}
-{% endif %}
 
 > - You can disable resizing for a particular column, by specifying [columns.allowResizing](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#allowresizing) to **false**.
 > - In RTL mode, you can click and drag the left edge of header cell to resize the column.
@@ -57,21 +41,6 @@ To enable this, set the [minWidth](https://ej2.syncfusion.com/javascript/documen
 
 The following example demonstrates how the **TaskID** column can be configured with a minimum width of 100 pixels and a maximum of 200 pixels, while the **TaskName** column can be set between 150 and 300 pixels.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs4/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs4/index.js %}
@@ -82,28 +51,12 @@ The following example demonstrates how the **TaskID** column can be configured w
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/columns-cs4" %}
-{% endif %}
 
 ## Prevent resizing for particular column
 
 You can prevent resizing for a specific column in the Gantt Chart control to maintain a consistent column width. To disable resizing, set the [allowResizing](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#allowresizing) property of the respective column to **false**.
 
 The following example demonstrates how to disable resizing for the **TaskID** column.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-resize-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-resize-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-resize-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -115,7 +68,6 @@ The following example demonstrates how to disable resizing for the **TaskID** co
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-resize-cs1" %}
-{% endif %}
 
 > You can also prevent resizing by setting `args.cancel` to **true** in the [resizeStart](https://ej2.syncfusion.com/javascript/documentation/api/gantt#resizestart) event.
 
@@ -132,21 +84,6 @@ To apply a resizing mode, set the `resizeSettings.mode` property on the `grid` o
 
 The following example demonstrates how to set the `resizeSettings.mode` to **Normal** or **Auto** based on the `DropDownList` [change](https://ej2.syncfusion.com/javascript/documentation/api/drop-down-list#change) event.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-resize-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-resize-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-resize-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/column-resize-cs2/index.js %}
@@ -157,7 +94,6 @@ The following example demonstrates how to set the `resizeSettings.mode` to **Nor
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-resize-cs2" %}
-{% endif %}
 
 > When the [autoFit](https://ej2.syncfusion.com/javascript/documentation/api/grid#autofit) property of grid object in gantt instance is set to **true**, the gantt will automatically adjust its column width based on the content inside them. In `normal` resize mode, if the `autoFit` property is set to **true**, the gantt will maintain any empty space that is left over after resizing the columns. However, in `auto` resize mode, the gantt will ignore any empty space.
 
@@ -166,21 +102,6 @@ The following example demonstrates how to set the `resizeSettings.mode` to **Nor
 You can programmatically resize columns in the JavaScript Gantt Chart control by accessing the target column using the `getColumnByField` method and updating its [width](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#width) property. This is useful for implementing custom UI controls or dynamic layout adjustments. To reflect the change, call the `refreshColumns` method from the `treeGrid` object within the Gantt instance.
 
 The following example demonstrates how to resize a column externally using the [change](https://ej2.syncfusion.com/javascript/documentation/api/drop-down-list#change) event of the [DropDownList](https://ej2.syncfusion.com/javascript/documentation/drop-down-list/getting-started) control.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-resize-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-resize-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-resize-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -192,7 +113,6 @@ The following example demonstrates how to resize a column externally using the [
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-resize-cs3" %}
-{% endif %}
 
 > The `refreshColumns` method of `treeGrid` object in gantt instance is used to refresh the gantt after the column widths are updated. Column resizing externally is useful when you want to provide a custom interface to the user for resizing columns.
 
@@ -201,21 +121,6 @@ The following example demonstrates how to resize a column externally using the [
 You can control column resizing using [resizeStart](https://ej2.syncfusion.com/javascript/documentation/gantt/events#resizestart), [resizing](https://ej2.syncfusion.com/javascript/documentation/gantt/events#resizing), and [resizeStop](https://ej2.syncfusion.com/javascript/documentation/gantt/events#resizestop) events.
 
 The following example demonstrates how resizing events work: `resizeStart` cancels resizing of the **TaskID** column, `resizing` prevents changes when the field is **Duration**, and `resizeStop` applies custom CSS styles to the resized column.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-resize-cs4/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/column-resize-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-resize-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -227,7 +132,6 @@ The following example demonstrates how resizing events work: `resizeStart` cance
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-resize-cs4" %}
-{% endif %}
 
 > The `ResizeArgs` object passed to the events contains information such as the current column width, new column width, column index, and the original event. The [resizing](https://ej2.syncfusion.com/javascript/documentation/api/gantt#resizing) event is triggered multiple times during a single resize operation, so be careful when performing heavy operations in this event.
 

@@ -29,13 +29,7 @@ Implement globalization when targeting multilingual users, complying with region
 The [Localization](https://ej2.syncfusion.com/javascript/documentation/common/localization) library allows you to localize default text content of the Gantt Chart control. Static text elements such as column headers, dialog titles, tooltips, toolbar items, and system messages can be translated to different languages by defining the [locale](https://ej2.syncfusion.com/javascript/documentation/api/gantt#locale) value and providing translation objects.
 
 1.  **Import required libraries**:
-    {% if page.publishingplatform == "typescript" %}
-
-    ```typescript
-    import { L10n, setCulture } from "@syncfusion/ej2-base";
-    ```
-
-    {% elsif page.publishingplatform == "javascript" %}
+    
 
         ```js
         ej.base.L10n.load({
@@ -51,7 +45,7 @@ The [Localization](https://ej2.syncfusion.com/javascript/documentation/common/lo
         });
         ```
 
-    {% endif %}
+    
 
 1.  **Define translation objects** for your target languages with complete locale coverage
 
@@ -318,21 +312,6 @@ The Gantt Chart control includes specialized messages for dependency conflicts:
 
 The following example demonstrates comprehensive German (Deutsch) localization:
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/global-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/global-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/global-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/global-cs1/index.js %}
@@ -343,7 +322,6 @@ The following example demonstrates comprehensive German (Deutsch) localization:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/global-cs1" %}
-{% endif %}
 
 ## Internationalization (I18N)
 
@@ -358,21 +336,6 @@ Internationalization affects multiple aspects of the Gantt Chart control:
 - **Calendar systems**: Support for different calendar systems (Gregorian, Islamic, etc.)
 - **Week numbering**: ISO week numbers, fiscal year calendars
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/global-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/global-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/global-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/global-cs2/index.js %}
@@ -383,7 +346,6 @@ Internationalization affects multiple aspects of the Gantt Chart control:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/global-cs2" %}
-{% endif %}
 
 > **Note**: In the above sample, timeline headers and numeric values are formatted using `NumberFormatOptions` and `DateFormatOptions`. The [locale](https://ej2.syncfusion.com/javascript/documentation/api/gantt#locale) property defaults to **en-US**. Change this property to your desired locale for proper cultural formatting.
 
@@ -400,21 +362,6 @@ RTL layout affects multiple aspects of the user interface:
 
 To enable RTL support, set the [enableRtl](https://ej2.syncfusion.com/javascript/documentation/api/gantt#enablertl) property to **true**:
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/global-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/global-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/global-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/global-cs3/index.js %}
@@ -425,7 +372,6 @@ To enable RTL support, set the [enableRtl](https://ej2.syncfusion.com/javascript
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/global-cs3" %}
-{% endif %}
 
 The code sets `enableRtl` to **true** and `locale` to **ar**, mirroring the Gantt interface. Test RTL layouts with native speakers to ensure usability, especially for taskbar interactions and dialog navigation. Review custom CSS for RTL compatibility and verify directional icons (e.g., arrows) render correctly.
 

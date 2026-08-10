@@ -19,21 +19,6 @@ To enable frozen columns, use the [frozenColumns](https://ej2.syncfusion.com/jav
 
 In the following example, the `frozenColumns` property is set to **2**, which keeps the first two columns fixed on the left while the remaining columns can be scrolled horizontally.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/frozen-column-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/frozen-column-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/frozen-column-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/frozen-column-cs1/index.js %}
@@ -44,7 +29,6 @@ In the following example, the `frozenColumns` property is set to **2**, which ke
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/frozen-column-cs1" %}
-{% endif %}
 
 ## Freeze particular columns
 
@@ -53,21 +37,6 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Gantt provides a
 To freeze a particular column in the Gantt, set the [isFrozen](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#isfrozen) property of the column to **true**.
 
 The following example demonstrates how to freeze a particular column in the Gantt using the `isFrozen` property.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/frozen-column-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/frozen-column-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/frozen-column-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -79,7 +48,6 @@ The following example demonstrates how to freeze a particular column in the Gant
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/frozen-column-cs2" %}
-{% endif %}
 
 ## Freeze direction
 
@@ -97,21 +65,6 @@ The types of the `column.freeze` directions:
 
 In the following example, the **TaskID** column is frozen on the left side, the **resources** column is frozen on the right side and the **Progress** column is frozen in a fixed position within the content table.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/frozen-column-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/frozen-column-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/frozen-column-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/frozen-column-cs3/index.js %}
@@ -122,7 +75,6 @@ In the following example, the **TaskID** column is frozen on the left side, the 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/frozen-column-cs3" %}
-{% endif %}
 
 ## Change default frozen line color
 
@@ -160,21 +112,6 @@ For fixed frozen columns, both left and right borders need to be specified as me
 
 The following example demonstrates how to change the default frozen line color using CSS:
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/frozen-column-cs4/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/frozen-column-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/frozen-column-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/frozen-column-cs4/index.js %}
@@ -185,7 +122,6 @@ The following example demonstrates how to change the default frozen line color u
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/frozen-column-cs4" %}
-{% endif %}
 
 ## Limitations
 

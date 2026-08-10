@@ -59,21 +59,6 @@ By default, all the gantt features listed in the below table will be restored fo
 
 In the following code example, **Edit** and **Delete** actions are specified in `undoRedoActions` property.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/undo-redo-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/undo-redo-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/undo-redo-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/undo-redo-cs1/index.js %}
@@ -84,7 +69,6 @@ In the following code example, **Edit** and **Delete** actions are specified in 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/undo-redo-cs1" %}
-{% endif %}
 
 ## Configuring the storage step count for undo and redo actions
 
@@ -96,21 +80,6 @@ When the number of actions performed exceeds the `undoRedoStepsCount`, the oldes
 
 In the following example, `undoRedoStepsCount` value is set to 5. This code allows reverting task edits (e.g., changing a task’s duration) or deletions, with up to 5 actions stored.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/undo-redo-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/undo-redo-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/undo-redo-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/undo-redo-cs2/index.js %}
@@ -121,28 +90,12 @@ In the following example, `undoRedoStepsCount` value is set to 5. This code allo
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/undo-redo-cs2" %}
-{% endif %}
 
 ## Programmatic undo and redo in Gantt Chart
 
 Programmatic control over undo redo is achieved using methods like [undo](https://ej2.syncfusion.com/javascript/documentation/api/gantt#undo) to revert actions, [redo](https://ej2.syncfusion.com/javascript/documentation/api/gantt#redo) to reapply them.
 
 The following example triggers `undo` and `redo` via external buttons:
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/undo-redo-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/undo-redo-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/undo-redo-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -154,28 +107,12 @@ The following example triggers `undo` and `redo` via external buttons:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/undo-redo-cs3" %}
-{% endif %}
 
 ## Retrieve undo and redo stack collection
 
 By default, when an undo or redo action is performed, the actions are stored in an array collection. To retrieve the undo and redo stack array collections, you can use the [getUndoActions](https://ej2.syncfusion.com/javascript/documentation/api/gantt#getundoactions) and [getRedoActions](https://ej2.syncfusion.com/javascript/documentation/api/gantt#getredoactions) methods.
 
 The following code example demonstrates how to retrieve the **undo** and **redo** collection using method by clicking the external button.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/undo-redo-cs4/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/undo-redo-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/undo-redo-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -187,28 +124,12 @@ The following code example demonstrates how to retrieve the **undo** and **redo*
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/undo-redo-cs4" %}
-{% endif %}
 
 ## Clear undo and redo collection
 
 At any point, you can clear the undo and redo collections using [clearUndoCollection](https://ej2.syncfusion.com/javascript/documentation/api/gantt#clearundocollection) and [clearRedoCollection](https://ej2.syncfusion.com/javascript/documentation/api/gantt#clearredocollection) methods. This allows you to reset the undo and redo stacks as needed during runtime.
 
 The following code example demonstrates how to clear the undo and redo collection using method by clicking the external button.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/undo-redo-cs5/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/undo-redo-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/undo-redo-cs5" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -220,10 +141,9 @@ The following code example demonstrates how to clear the undo and redo collectio
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/undo-redo-cs5" %}
-{% endif %}
 
 ## See also
 
-- [How to configure task editing?](./managing-tasks/task-bar-editing)
-- [How to manage task dependencies?](./task-dependency)
-- [How to configure critical path?](./critical-path)
+- [How to configure task editing?](https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/managing-tasks/task-bar-editing)
+- [How to manage task dependencies?](https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/task-dependency)
+- [How to configure critical path?](https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/critical-path)

@@ -18,21 +18,6 @@ Customizing PDF export in the [JavaScript Gantt Chart](https://www.syncfusion.co
 
 Set the exported PDF file name using the [fileName](https://ej2.syncfusion.com/javascript/documentation/api/gantt/pdfexportproperties#filename) property in [PdfExportProperties](https://ej2.syncfusion.com/javascript/documentation/api/gantt/pdfexportproperties), such as **ProjectPlan.pdf**, for personalized document naming.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs1/index.js %}
@@ -43,26 +28,10 @@ Set the exported PDF file name using the [fileName](https://ej2.syncfusion.com/j
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs1" %}
-{% endif %}
 
 ## How to change page orientation
 
 Adjust page orientation to **Portrait** or **Landscape** using the [pageOrientation](https://ej2.syncfusion.com/javascript/documentation/api/gantt/pdfexportproperties#pageorientation) property in [PdfExportProperties](https://ej2.syncfusion.com/javascript/documentation/api/gantt/pdfexportproperties). By default, the exported PDF document is in Landscape orientation.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -74,7 +43,6 @@ Adjust page orientation to **Portrait** or **Landscape** using the [pageOrientat
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs2" %}
-{% endif %}
 
 ## Customize page size
 
@@ -96,21 +64,6 @@ The supported page sizes are:
 - Letter11x17
 - Ledger
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs3/index.js %}
@@ -121,26 +74,10 @@ The supported page sizes are:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs3" %}
-{% endif %}
 
 ## Export current view data
 
 PDF export provides an option to export the current view data into PDF. To export current view data alone, define the [exportType](https://ej2.syncfusion.com/javascript/documentation/api/gantt/pdfexportproperties#exporttype) to **CurrentViewData**.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs4/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -152,26 +89,10 @@ PDF export provides an option to export the current view data into PDF. To expor
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs4" %}
-{% endif %}
 
 ## Enable footer
 
 By default, we render the default footer for a PDF file, this can be enabled or disabled by using the [enableFooter](https://ej2.syncfusion.com/javascript/documentation/api/gantt/pdfexportproperties#enablefooter) property.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs5/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs5" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -183,26 +104,10 @@ By default, we render the default footer for a PDF file, this can be enabled or 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs5" %}
-{% endif %}
 
 ## Export hidden columns
 
 PDF export provides an option to export hidden columns of Gantt by defining the [includeHiddenColumn](https://ej2.syncfusion.com/javascript/documentation/api/gantt/pdfexportproperties#includehiddencolumn) to **true**.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs6/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs6/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs6" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -214,26 +119,10 @@ PDF export provides an option to export hidden columns of Gantt by defining the 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs6" %}
-{% endif %}
 
 ## Export predecessor lines
 
 The visibility of predecessor lines in the exported PDF document can be controlled using the [showPredecessorLines](https://ej2.syncfusion.com/javascript/documentation/api/gantt/pdfexportproperties#showpredecessorlines) property.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs7/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs7/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs7" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -245,7 +134,6 @@ The visibility of predecessor lines in the exported PDF document can be controll
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs7" %}
-{% endif %}
 
 ## Export specific columns
 
@@ -254,21 +142,6 @@ A hidden column can be shown, or a visible column can be hidden while exporting 
 Columns can be shown or hidden by setting the `column.visible` property to **true** or **false**, respectively.
 
 In the following example, the **Duration** column is initially hidden in the Gantt chart. During export, the **Duration** column is made visible and the **StartDate** column is hidden.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs8/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs8/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs8" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -280,28 +153,12 @@ In the following example, the **Duration** column is initially hidden in the Gan
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs8" %}
-{% endif %}
 
 ## Conditional cell formatting
 
 TreeGrid cells in the exported PDF can be customized or formatted using the [pdfQueryCellInfo](https://ej2.syncfusion.com/javascript/documentation/gantt/events#pdfquerycellinfo) event. This event allows formatting TreeGrid cells in the exported PDF document based on the column cell value.
 
 In the following sample, the background color is set for **Progress** column in the exported document by using the `args.style.backgroundColor` property.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs9/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs9/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs9" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -313,28 +170,12 @@ In the following sample, the background color is set for **Progress** column in 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs9" %}
-{% endif %}
 
 ## Timeline cell formatting
 
 Timeline cells in the exported PDF document can be customized or formatted using the [pdfQueryTimelineCellInfo](https://ej2.syncfusion.com/javascript/documentation/gantt/events#pdfquerytimelinecellinfo) event.
 
 In the following sample, the header background color is set for timeline cells in the exported document by using the `args.timelineCell.backgroundColor` property.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs10/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs10/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs10" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -346,28 +187,12 @@ In the following sample, the header background color is set for timeline cells i
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs10" %}
-{% endif %}
 
 ## Taskbar formatting
 
 Taskbars in the exported PDF document can be customized or formatted using the [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/javascript/documentation/gantt/events#pdfquerytaskbarinfo) event.
 
 In the following sample, the taskbar background color is customized in the chart side of the exported document by using the `args.taskbar` property.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs11/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs11/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs11" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -379,26 +204,10 @@ In the following sample, the taskbar background color is customized in the chart
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs11" %}
-{% endif %}
 
 ## Customize Gantt chart appearance in PDF export
 
 PDF export allows to customize the Gantt chart's appearance in the exported PDF documents. To customize the appearance of Gantt charts in exported PDF documents, define [ganttStyle](https://ej2.syncfusion.com/javascript/documentation/api/gantt/pdfexportproperties#ganttstyle) within [pdfExportProperties](https://ej2.syncfusion.com/javascript/documentation/api/gantt/pdfexportproperties). By using `ganttStyle`, can customize `columnHeader`, `fontFamily`, `cell`, `taskbar`, `label`, `timeline`, `chartGridLineColor`, `connectorLineColor`, `criticalConnectorLineColor`, `footer`, `font`, `eventMarker` and `holiday` regardless of the theme.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs13/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs13/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs13" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -410,28 +219,12 @@ PDF export allows to customize the Gantt chart's appearance in the exported PDF 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs13" %}
-{% endif %}
 
 ## Customize split taskbar segment colors in PDF
 
 The PDF export feature in the Gantt Chart allows you to customize the colors of split taskbar segments using the [taskSegmentStyles](https://ej2.syncfusion.com/javascript/documentation/api/gantt/itaskbarstyle#tasksegmentstyles) property inside the [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/javascript/documentation/api/gantt/index-default#pdfquerytaskbarinfo) event.
 
 The [taskSegmentStyles](https://ej2.syncfusion.com/javascript/documentation/api/gantt/itaskbarstyle#tasksegmentstyles) property contains a collection of style properties for task segments. By specifying the index of corresponding segment index in this collection you can customize that segment taskbar color, progress color, and its border color.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs17/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs17/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs17" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -443,7 +236,6 @@ The [taskSegmentStyles](https://ej2.syncfusion.com/javascript/documentation/api/
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs17" %}
-{% endif %}
 
 ## Exporting with templates
 
@@ -455,21 +247,6 @@ In the following sample, the hyperlinks and images are exported to PDF using [hy
 
 > Note: PDF Export supports base64 string to export the images.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-column-template-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-column-template-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-column-template-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-column-template-cs1/index.js %}
@@ -480,7 +257,6 @@ In the following sample, the hyperlinks and images are exported to PDF using [hy
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-column-template-cs1" %}
-{% endif %}
 
 ### Exporting with taskbar template
 
@@ -489,21 +265,6 @@ The PDF export functionality allows to export taskbar templates that include `im
 In the following sample, taskbar templates with images and text are exported to PDF using [taskbarTemplate](https://ej2.syncfusion.com/javascript/documentation/api/gantt/pdfquerytaskbarinfoeventargs#taskbartemplate) properties in the [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/javascript/documentation/api/gantt#pdfquerytaskbarinfo) event.
 
 > Note: PDF Export supports base64 string to export the images.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-taskbar-template-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-taskbar-template-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-taskbar-template-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -515,7 +276,6 @@ In the following sample, taskbar templates with images and text are exported to 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-taskbar-template-cs1" %}
-{% endif %}
 
 ### Exporting with task label template
 
@@ -524,21 +284,6 @@ The PDF export functionality allows to export task label template that include `
 In the following sample, task label template with images and text are exported to PDF using [labelSettings](https://ej2.syncfusion.com/javascript/documentation/api/gantt/pdfquerytaskbarinfoeventargs#labelsettings) properties in the [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/javascript/documentation/api/gantt#pdfquerytaskbarinfo) event.
 
 > Note: PDF Export supports base64 string to export the images.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-tasklabel-template-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-tasklabel-template-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-tasklabel-template-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -550,7 +295,6 @@ In the following sample, task label template with images and text are exported t
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-tasklabel-template-cs1" %}
-{% endif %}
 
 ### Exporting with header template
 
@@ -559,21 +303,6 @@ The PDF export functionality allows to export header template that include `imag
 In the following sample, header template with images and text are exported to PDF using [headerTemplate](https://ej2.syncfusion.com/javascript/documentation/api/gantt/pdfcolumnheaderquerycellinfoeventargs#headertemplate) properties in the [pdfColumnHeaderQueryCellInfo](https://ej2.syncfusion.com/javascript/documentation/api/gantt/pdfcolumnheaderquerycellinfoeventargs) event.
 
 > Note: PDF Export supports base64 string to export the images.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-header-template-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-header-template-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-header-template-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -585,7 +314,6 @@ In the following sample, header template with images and text are exported to PD
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-header-template-cs1" %}
-{% endif %}
 
 ## See also
 

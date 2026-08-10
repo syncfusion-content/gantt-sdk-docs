@@ -16,21 +16,6 @@ The loading indicator is used to display a visual indicator while the Gantt is f
 
 In the following sample, the Shimmer indicator is displayed while the gantt is scrolled when using the virtual data.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/loading-animation-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/loading-animation-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/loading-animation-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/loading-animation-cs1/index.js %}
@@ -41,4 +26,4 @@ In the following sample, the Shimmer indicator is displayed while the gantt is s
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/loading-animation-cs1" %}
-{% endif %}
+
