@@ -3,7 +3,7 @@ layout: post
 title: Dynamically change columns in JavaScript Kanban control | Syncfusion
 description: Learn here all about Dynamically change columns in Syncfusion JavaScript Kanban control of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Dynamically change columns 
+control: Dynamically change columns
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -11,13 +11,13 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Dynamically change columns in JavaScript Kanban control
 
-You can dynamically change the Kanban columns by using the [`columns`](../../api/kanban/#columns) property.
+You can dynamically change the Kanban columns by using the [`columns`](../../api/kanban#columns) property.
 
-In the below sample, you can dynamically change the [`allowToggle`](../../api/kanban/columnsModel/#allowtoggle) property at the particular column when you click on the button. You can also change the initially created columns to the new Kanban columns by using the [`columns`](../../api/kanban/#columns) property when you click on the button.
+In the below sample, you can dynamically change the [`allowToggle`](../../api/kanban/columnsModel#allowtoggle) property at the particular column when you click on the button. You can also change the initially created columns to the new Kanban columns by using the [`columns`](../../api/kanban#columns) property when you click on the button.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt-sdk/javascript/kanban/dynamic-columns-cs1/index.ts %}
 {% endhighlight %}
@@ -25,7 +25,7 @@ In the below sample, you can dynamically change the [`allowToggle`](../../api/ka
 {% include code-snippet/gantt-sdk/javascript/kanban/dynamic-columns-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/kanban/dynamic-columns-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
