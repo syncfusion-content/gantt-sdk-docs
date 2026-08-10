@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Dialog in TypeScript Kanban control | Syncfusion
-description: Learn here all about Dialog in Syncfusion TypeScript Kanban control of Syncfusion Essential JS 2 and more.
+title: Card Editing in TypeScript Kanban | Syncfusion
+description: Learn how to edit cards, use dialogs, and validate inputs in Syncfusion TypeScript Kanban to manage task details with ease.
+keywords: typescript kanban card editing, syncfusion kanban, card dialog, task editing
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/kanban/dialog
 platform: gantt-sdk
-control: Dialog 
-publishingplatform: gantt-sdk
+control: Card Editing - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Dialog in TypeScript Kanban control
+# Card Editing and Dialog Management in TypeScript Kanban
 
 The Kanban provides built-in support to add, edit and delete a card using dialog module. User can edit a card using the following ways.
 
