@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC Kanban Control
 
-This section briefly explains how to include the [ASP.NET MVC Kanban](https://www.syncfusion.com/aspnet-mvc-ui-controls/kanban-board) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the [ASP.NET MVC Kanban](https://www.syncfusion.com/gantt-sdk/aspnet-mvc-kanban-board) control in your ASP.NET MVC application using Visual Studio.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetmvc/documentation/ai-coding-assistant/overview)
 
@@ -205,7 +205,7 @@ If the Kanban control does not render or behaves unexpectedly, verify the follow
 
 ## See also
 
-* [Real-time example using Kanban](https://ej2.syncfusion.com/aspnetmvc/Kanban/Workflow#/material)
-* [Kanban columns configuration](https://ej2.syncfusion.com/aspnetmvc/documentation/kanban/columns)
-* [Kanban data binding](https://ej2.syncfusion.com/aspnetmvc/documentation/kanban/data-binding)
-* [Syncfusion<sup style="font-size:70%">&reg;</sup> licensing documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing)
+* [Real-time example using Kanban](https://ej2.syncfusion.com/aspnetmvc/kanban/workflow#/fluent2)
+* [Kanban columns configuration](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/kanban/columns)
+* [Kanban data binding](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/kanban/data-binding)
+* [Syncfusion<sup style="font-size:70%">&reg;</sup> licensing documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/overview)
