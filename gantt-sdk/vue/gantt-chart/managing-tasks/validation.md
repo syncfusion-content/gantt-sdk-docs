@@ -6,7 +6,6 @@ keywords: vue gantt validation, validation rules, column validation, data valida
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/managing-tasks/validation
 platform: gantt-sdk
 control: Validation - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

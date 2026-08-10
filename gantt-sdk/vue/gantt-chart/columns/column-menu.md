@@ -6,7 +6,6 @@ keywords: vue gantt column menu, sorting menu, filtering menu, column options, s
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/columns/column-menu
 platform: gantt-sdk
 control: Column Menu - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

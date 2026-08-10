@@ -6,7 +6,6 @@ keywords: vue gantt timeline, timeline configuration, timeline units, timeline f
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/time-line/timeline
 platform: gantt-sdk
 control: Timeline - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

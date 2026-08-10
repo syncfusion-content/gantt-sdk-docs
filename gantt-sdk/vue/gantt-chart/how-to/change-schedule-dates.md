@@ -1,12 +1,11 @@
 ---
 layout: post
 title: Change Schedule Dates in Vue Gantt Chart | Syncfusion
-description: Learn how to change project schedule dates programmatically in Syncfusion Vue Gantt Chart.
+description: Learn how to programmatically change project start and end dates in the Syncfusion Vue Gantt Chart using updateProjectDates and timeline configuration.
 keywords: vue gantt change schedule dates, project dates, schedule start end date, update project dates, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/how-to/change-schedule-dates
 platform: gantt-sdk
 control: Change Schedule Dates - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

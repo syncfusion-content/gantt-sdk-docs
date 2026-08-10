@@ -6,7 +6,6 @@ keywords: vue gantt wbs, work breakdown structure, task hierarchy, wbs codes, pr
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/columns/wbs-column
 platform: gantt-sdk
 control: WBS Column - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

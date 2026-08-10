@@ -6,7 +6,6 @@ keywords: vue gantt accessibility, wcag 2.2, keyboard navigation, screen reader,
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/accessibility
 platform: gantt-sdk
 control: Accessibility - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

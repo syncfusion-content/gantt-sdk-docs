@@ -6,7 +6,6 @@ keywords: vue gantt localization, global local, language support, regional setti
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/global-local
 platform: gantt-sdk
 control: Localization - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

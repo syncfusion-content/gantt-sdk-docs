@@ -6,7 +6,6 @@ keywords: vue gantt managing tasks, crud operations, task management, edit tasks
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/managing-tasks/managing-tasks
 platform: gantt-sdk
 control: Managing Tasks - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
