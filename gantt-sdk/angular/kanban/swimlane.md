@@ -1,20 +1,22 @@
 ---
 layout: post
-title: Swimlane in Angular Kanban Component | Syncfusion
-description: Learn here all about Swimlane in Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
+title: Swimlane in Angular Kanban | Syncfusion
+description: Learn how to group work items by swimlanes in Syncfusion Angular Kanban to improve visibility, status tracking, and team collaboration.
+keywords: angular kanban swimlane, syncfusion kanban, swimlane view, grouping
+canonical: https://help.syncfusion.com/gantt-sdk/angular/kanban/swimlane
 platform: gantt-sdk
-control: Swimlane
+control: Swimlane - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Swimlane in Angular Kanban component
+# Swimlane Grouping in Angular Kanban
 
-Swimlanes are horizontal categorizations of cards on the Kanban board.  It is used for grouping of cards, which brings transparency to the workflow process.
+Swimlanes are horizontal categorizations of cards on the Kanban board. It is used for grouping of cards, which brings transparency to the workflow process.
 
 ## Render swimlane row
 
-Cards can be grouped based on [keyField](https://ej2.syncfusion.com/angular/documentation/api/kanban/#keyfield) and displayed in rows, which are separated by columns. It is mandatory to define the `keyField` that is mapped from the datasource for rendering swimlane rows in the Kanban board.
+Cards can be grouped based on [keyField](https://ej2.syncfusion.com/angular/documentation/api/kanban#keyfield) and displayed in rows, which are separated by columns. It is mandatory to define the `keyField` that is mapped from the datasource for rendering swimlane rows in the Kanban board.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -25,14 +27,14 @@ Cards can be grouped based on [keyField](https://ej2.syncfusion.com/angular/docu
 {% include code-snippet/gantt-sdk/angular/kanban/swimlane-key-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/swimlane-key-cs1" %}
 
 ## Custom row text
 
 Customize the swimlane row header text by using the `textField` property mapped from datasource.
 
-> It is not mandatory to define the `textField` to  [swimlaneSettings](https://ej2.syncfusion.com/angular/documentation/api/kanban/#swimlanesettings). It will automatically consider the `keyField` to swimlane row header text.
+> It is not mandatory to define the `textField` to [swimlaneSettings](https://ej2.syncfusion.com/angular/documentation/api/kanban#swimlanesettings). It will automatically consider the `keyField` to swimlane row header text.
 > If the mapping `textField` key is not present in the datasource, it will consider the swimlane `keyField` as swimlane row header text.
 
 {% tabs %}
@@ -44,7 +46,7 @@ Customize the swimlane row header text by using the `textField` property mapped 
 {% include code-snippet/gantt-sdk/angular/kanban/swimlane-text-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/swimlane-text-cs1" %}
 
 ## Template
@@ -60,12 +62,12 @@ You can customize the Kanban swimlane row by using the `template` property, whic
 {% include code-snippet/gantt-sdk/angular/kanban/swimlane-template-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/swimlane-template-cs1" %}
 
 ## Sorting
 
-Swimlane rows are rendered on descending order when using the [sortBy](https://ej2.syncfusion.com/angular/documentation/api/kanban/sortSettingsModel/#sortby) property set to `Descending` order. By default, swimlane rows are rendered by **Ascending** order.
+Swimlane rows are rendered on descending order when using the [sortBy](https://ej2.syncfusion.com/angular/documentation/api/kanban/sortSettingsModel#sortby) property set to `Descending` order. By default, swimlane rows are rendered by **Ascending** order.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -76,12 +78,12 @@ Swimlane rows are rendered on descending order when using the [sortBy](https://e
 {% include code-snippet/gantt-sdk/angular/kanban/swimlane-sort-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/swimlane-sort-cs1" %}
 
 ## Drag-and-drop
 
-By default, The Kanban does not allow dragging the cards across the swimlane rows. Enabling the [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/kanban/#allowdraganddrop)  property allows you to drag the cards across the swimlane rows, which is specified inside `swimlaneSettings` property.
+By default, The Kanban does not allow dragging the cards across the swimlane rows. Enabling the [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/kanban#allowdraganddrop) property allows you to drag the cards across the swimlane rows, which is specified inside `swimlaneSettings` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -92,12 +94,12 @@ By default, The Kanban does not allow dragging the cards across the swimlane row
 {% include code-snippet/gantt-sdk/angular/kanban/swimlane-drag-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/swimlane-drag-cs1" %}
 
 ## Create empty row
 
-You can render the empty swimlane row by enabling the `showEmptyRow` property. If mapping [keyField](https://ej2.syncfusion.com/angular/documentation/api/kanban/#keyfield) does not have cards, empty swimlane row will be rendered.
+You can render the empty swimlane row by enabling the `showEmptyRow` property. If mapping [keyField](https://ej2.syncfusion.com/angular/documentation/api/kanban#keyfield) does not have cards, empty swimlane row will be rendered.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -108,7 +110,7 @@ You can render the empty swimlane row by enabling the `showEmptyRow` property. I
 {% include code-snippet/gantt-sdk/angular/kanban/swimlane-empty-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/swimlane-empty-cs1" %}
 
 ## Calculate cards count
@@ -128,7 +130,7 @@ In below demo, disabled on `showItemCount` property on rendering swimlane row wi
 {% include code-snippet/gantt-sdk/angular/kanban/swimlane-total-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/swimlane-total-cs1" %}
 
 ## Enable frozen rows
@@ -148,5 +150,5 @@ By default, the `enableFrozenRows` property is set as `false`. If you wish to sh
 {% include code-snippet/gantt-sdk/angular/kanban/swimlane-enable-frozen-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/swimlane-enable-frozen-cs1" %}
