@@ -1,18 +1,20 @@
 ---
 layout: post
-title: Pdf Export in Syncfusion ASP.NET MVC Gantt Component
-description: Learn here all about Pdf Export in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: PDF Export in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to export Gantt chart data to PDF in Syncfusion ASP.NET MVC Gantt Chart with formatting, styling, and export customization options.
+keywords: asp.net mvc gantt pdf export, export gantt, export to pdf, pdf formatting, pdf customization, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/pdf-export
 platform: gantt-sdk
-control: Pdf Export
-publishingplatform: gantt-sdk
+control: PDF Export - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Export
+# Exporting Data to PDF Format in ASP.NET MVC Gantt Chart
 
 ## PDF Export
 
-PDF export allows exporting Gantt data to PDF document. You need to use the `pdfExport` method for exporting. To enable PDF export in the Gantt, set the [`allowPdfExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowPdfExport) to true.
+PDF export allows exporting Gantt data to PDF document. You need to use the `pdfExport` method for exporting. To enable PDF export in the Gantt, set the [`allowPdfExport`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowPdfExport) to true.
 
 To export data to PDF document, inject the `PdfExport` module in Gantt.
 
@@ -41,10 +43,10 @@ N> Currently, we don't have support for exporting the manually scheduled tasks.
 {% endtabs %}
 {% endif %}
 
-## Indicators in PDF exporting 
+## Indicators in PDF exporting
 
 The PDF export functionality allows users to export Gantt charts enriched with dynamic indicators and accompanying images.
-These indicators, represented by images,can be effortlessly defined using the `base64` encoding value in the data object of datasource.This data object field should be mapped to indiactor property of [`task fields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Indicators).
+These indicators, represented by images,can be effortlessly defined using the `base64` encoding value in the data object of datasource.This data object field should be mapped to indiactor property of [`task fields`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Indicators).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -106,7 +108,7 @@ step 2: Then , `pdfExpComplete` return as blob object.
 
 In Gantt, we have provided support to export the Gantt component where each rows are auto-fit to the PDF document page width by setting <code>IsFitToWidth</code> as true in <code>FitToWidthSettings</code> of <code>PdfExportProperties</code>.
 
-Also, we can customize the chart width and grid width in exported file using <code>ChartWidth</code> and <code>GridWidth</code> by defining it as percentage in string. 
+Also, we can customize the chart width and grid width in exported file using <code>ChartWidth</code> and <code>GridWidth</code> by defining it as percentage in string.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -162,10 +164,10 @@ PDF export provides an option for exporting multiple Gantt to same file. In this
 
 PDF export provides an option to include theme for the exported PDF document. To apply theme in exported PDF, define the `theme` in `pdfExportProperties`. The available themes are:
 
-* Material
-* Fabric
-* Bootstrap
-* Bootstrap 4
+- Material
+- Fabric
+- Bootstrap
+- Bootstrap 4
 
 {% if page.publishingplatform == "aspnet-core" %}
 
