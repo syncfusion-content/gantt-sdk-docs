@@ -23,7 +23,7 @@ By the end of this guide, you will have a working Kanban board with four columns
 Before you begin, make sure the following are installed on your development machine:
 
 - [Node.js](https://nodejs.org/en) version 18 or higher (required by Vite 7)
-- [npm](https://www.npmjs.com) (bundled with Node.js) or [yarn](https://yarnpkg.com)
+- `npm` (bundled with Node.js) or [yarn](https://yarnpkg.com)
 - A code editor such as Visual Studio Code
 
 ## Create the Vue Application
