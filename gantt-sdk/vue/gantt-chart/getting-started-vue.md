@@ -22,7 +22,7 @@ This article provides a step-by-step guide for setting up a [Vite](https://vitej
 - [Node.js 24+](https://nodejs.org/en) (LTS recommended).
 - Syncfusion CLI.
 
-## Install the Syncfusion CLI 
+## Install the Syncfusion CLI
 
 Install the Syncfusion CLI globally using the following command:
 
@@ -34,7 +34,7 @@ npm install -g @syncfusion/syncfusion-cli
 
 ## Set up the Vite project using Syncfusion CLI
 
-You can create a Vue application with [Vite](https://vite.dev/) using the Syncfusion CLI. The CLI provides two ways to create a project:
+You can create a Vue application with [Vite](https://vite.dev) using the Syncfusion CLI. The CLI provides two ways to create a project:
 
 ### Non-interactive mode
 
@@ -70,7 +70,7 @@ When you run the `sf` command, the CLI prompts you to select the required projec
 √ Choose Theme: » Material3
 √ Choose Style Format: » CSS
 √ Would you like to integrate the Syncfusion MCP Server (AI Assistant) into this project? ... no
-√ Would you like to install Syncfusion Component Skills for AI-powered development? ... no      
+√ Would you like to install Syncfusion Component Skills for AI-powered development? ... no  
 √ Install dependencies and start app now? ... no
 
 {% endhighlight %}
