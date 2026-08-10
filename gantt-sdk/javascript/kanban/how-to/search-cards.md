@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Search cards in JavaScript Kanban control | Syncfusion
-description: Learn here all about Search cards in Syncfusion JavaScript Kanban control of Syncfusion Essential JS 2 and more.
+title: Search Cards in JavaScript Kanban | Syncfusion
+description: Learn how to search cards in Syncfusion JavaScript Kanban using queries and external input with practical examples and configuration guidance.
+keywords: javascript kanban search cards, syncfusion kanban, search query, card search
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/kanban/how-to/search-cards
 platform: gantt-sdk
-control: Search cards
+control: Search Cards - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Search cards in JavaScript Kanban control
+# Search Cards in JavaScript Kanban
 
 You can search the cards in Kanban by using the `query` property.
 

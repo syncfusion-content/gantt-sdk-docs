@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Dynamically change columns in JavaScript Kanban control | Syncfusion
-description: Learn here all about Dynamically change columns in Syncfusion JavaScript Kanban control of Syncfusion Essential JS 2 and more.
+title: Dynamically Change Columns in JavaScript Kanban | Syncfusion
+description: Learn how to dynamically change columns in Syncfusion JavaScript Kanban with practical examples and configuration guidance.
+keywords: JavaScript kanban dynamically change columns, syncfusion kanban, update columns at runtime, column toggle
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/kanban/how-to/dynamically-change-columns
 platform: gantt-sdk
-control: Dynamically change columns
+control: Dynamically Change Columns - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Dynamically change columns in JavaScript Kanban control
+# Modify Columns Programmatically in JavaScript Kanban
 
 You can dynamically change the Kanban columns by using the [`columns`](../../api/kanban#columns) property.
 
