@@ -1,13 +1,16 @@
 ---
 layout: post
-title: Header Double Click in ASP.NET Core Kanban Component
-description: Learn here all about Header Double Click in Syncfusion ASP.NET Core Kanban component of Syncfusion Essential JS 2 and more.
+title: Header Double-Click in ASP.NET Core Kanban | Syncfusion
+description: Learn how to handle column header double-click events in Syncfusion ASP.NET Core Kanban with practical examples and configuration guidance.
+keywords: asp-net-core kanban header double click, syncfusion kanban, header event, column header
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/how-to/header-double-click
 platform: gantt-sdk
-control: Header Double Click
+control: Header Double Click - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Add header double click
+# Handle Header Double-Click in ASP.NET Core Kanban
 
 You can bind the header double click event by using the [`dataBound`](../../api/kanban#dataBound) event at the initial rendering. You can get the column header text when you double click on the headers.
 

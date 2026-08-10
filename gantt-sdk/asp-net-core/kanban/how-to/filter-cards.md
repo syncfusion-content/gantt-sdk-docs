@@ -1,13 +1,16 @@
 ---
 layout: post
 title: Filter Cards in ASP.NET Core Kanban | Syncfusion
-description: Learn here all about Filter Cards in Syncfusion ASP.NET Core Kanban component of Syncfusion Essential JS 2 and more.
+description: Learn how to filter cards in Syncfusion ASP.NET Core Kanban using queries and data source conditions with practical examples.
+keywords: asp-net-core kanban filter cards, syncfusion kanban, filter query, data filtering
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/how-to/filter-cards
 platform: gantt-sdk
-control: Filter Cards
+control: Filter Cards - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Filtering Cards in ASP.NET Core Kanban
+# Filter Cards in ASP.NET Core Kanban
 
 You can filter the collection of cards from the dataSource and display it on the Kanban board by using the [`query`](../../api/kanban#query) property.
 
