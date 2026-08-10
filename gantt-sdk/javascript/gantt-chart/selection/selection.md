@@ -198,4 +198,4 @@ The touch interaction feature in the Gantt control allows you to easily interact
 
 [Multiple Row Selection](selection#multiple-row-selection) : To select multiple rows, you can utilize the multi-row selection feature. When you tap on a row, a popup is displayed, indicating the option for multi-row selection. Tap on the popup, and then proceed to tap on the desired rows you want to select. This allows you to select and interact with multiple rows simultaneously, as shown in the following image:
 
-![Multiple selection](https://ej2.syncfusion.com/javascript/documentation/images/multiple-selection.PNG)
+![Multiple selection](../images/multiple-selection.PNG)

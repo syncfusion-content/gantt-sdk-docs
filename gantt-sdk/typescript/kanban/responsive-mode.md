@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Responsive mode in TypeScript Kanban control | Syncfusion
-description: Learn here all about Responsive mode in Syncfusion TypeScript Kanban control of Syncfusion Essential JS 2 and more.
+title: Responsive Design in TypeScript Kanban | Syncfusion
+description: Learn how to create responsive Kanban layouts in Syncfusion TypeScript that adapt to different screen sizes and devices.
+keywords: typescript kanban responsive, syncfusion kanban, responsive design, mobile
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/kanban/responsive-mode
 platform: gantt-sdk
-control: Responsive mode 
-publishingplatform: gantt-sdk
+control: Responsive Mode - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Responsive mode in TypeScript Kanban control
+# Responsive Layout and Adaptive Design in TypeScript Kanban
 
 The Kanban component has support for responsive behavior based on the client browser's width and height.
 
@@ -17,8 +18,8 @@ The Kanban component has support for responsive behavior based on the client bro
 
 Possible layouts are:
 
-* Default Layout
-* Swimlane Layout
+- Default Layout
+- Swimlane Layout
 
 ### Default Layout
 
@@ -50,7 +51,7 @@ Single card will be selected when you tap the card once and selection will be re
 
 ### Multiple Selection
 
-Enable [`selectionType`](../api/kanban/cardSettingsModel/#selectiontype) as `Multiple` to select multiple cards. It will open the popup on the screen top. Selected card header text will be shown when selecting single card with a tap and hold action. If single card is selected, only tap action is required to select multiple cards. Multiple Selected card count will be shown on the popup when selecting multiple cards.
+Enable [`selectionType`](../api/kanban/cardSettingsModel#selectiontype) as `Multiple` to select multiple cards. It will open the popup on the screen top. Selected card header text will be shown when selecting single card with a tap and hold action. If single card is selected, only tap action is required to select multiple cards. Multiple Selected card count will be shown on the popup when selecting multiple cards.
 
 ![kanban](./images/single-multiple.PNG)
 

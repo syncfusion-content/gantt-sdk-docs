@@ -6,7 +6,6 @@ keywords: vue gantt frozen columns, column pinning, fixed columns, scrolling, co
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/columns/frozen-column
 platform: gantt-sdk
 control: Frozen Columns - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

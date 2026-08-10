@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Swimlane in JavaScript Kanban control | Syncfusion
-description: Learn here all about Swimlane in Syncfusion JavaScript Kanban control of Syncfusion Essential JS 2 and more.
+title: Swimlanes in JavaScript Kanban | Syncfusion
+description: Learn how to configure swimlanes in Syncfusion JavaScript Kanban to group and organize cards by categories or resources.
+keywords: javascript kanban swimlane, syncfusion kanban, grouping, card grouping
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/kanban/swimlane
 platform: gantt-sdk
-control: Swimlane 
-publishingplatform: gantt-sdk
+control: Swimlane - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Swimlane in JavaScript Kanban control
+# Swimlane Grouping in JavaScript Kanban
 
 Swimlanes are horizontal categorizations of cards on the Kanban board.  It is used for grouping of cards, which brings transparency to the workflow process.
 

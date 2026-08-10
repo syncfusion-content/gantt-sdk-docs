@@ -6,7 +6,6 @@ keywords: vue gantt copy paste, copy records, paste records, context menu, copy 
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/how-to/copy-paste-records
 platform: gantt-sdk
 control: Copy Paste Records - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

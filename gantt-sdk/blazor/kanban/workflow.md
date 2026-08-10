@@ -1,13 +1,16 @@
 ---
 layout: post
-title: Workflow in Blazor Kanban Component | Syncfusion®
-description: Checkout and learn here all about workflow in Blazor Kanban component and much more details, features, customization, integration, best practices.
+title: Workflow in Blazor Kanban | Syncfusion
+description: Learn how to define and customize workflow stages in Syncfusion Blazor Kanban to support collaborative task management and process automation.
+keywords: blazor kanban workflow, syncfusion kanban, stages, process automation
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/kanban/workflow
 platform: gantt-sdk
-control: Kanban
+control: Workflow - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Workflow Restrictions in Blazor Kanban Component
+# Workflow Restrictions and Card Transitions Rules in Blazor Kanban
 
 The [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban-board) workflow controls how cards move between columns. It enables restrictions when a card is moved from one column to another and supports disabling drag-and-drop actions per column.
 

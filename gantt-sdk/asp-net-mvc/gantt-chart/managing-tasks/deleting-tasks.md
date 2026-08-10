@@ -1,19 +1,20 @@
 ---
 layout: post
-title: Deleting tasks in Syncfusion ASP.NET MVC Gantt Component
-description: Learn here all about Deleting Tasks in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Deleting Tasks in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to delete tasks from Syncfusion ASP.NET MVC Gantt Chart with cascading delete and confirmation options.
+keywords: asp.net mvc gantt delete tasks, remove tasks, task deletion, delete confirmation, cascade delete, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/managing-tasks/deleting-tasks
 platform: gantt-sdk
-control: Managing Tasks
-publishingplatform: gantt-sdk
+control: Managing Tasks - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Deleting tasks in gantt control
+# Deleting Tasks from the Project in ASP.NET MVC Gantt Chart
 
 ## Deleting Tasks
 
-A task delete option in the Gantt control can be enabled by enabling the [`EdiSettings.AllowDeleting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html#Syncfusion_EJ2_Gantt_GanttEditSettings_AllowDeleting) property. Tasks can be deleted by clicking the delete toolbar item or using the `deleteRow` method. You can call this method dynamically on any custom actions like button click. The following code example shows how to enable the delete option in the Gantt control.
+A task delete option in the Gantt control can be enabled by enabling the [`EdiSettings.AllowDeleting`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html#Syncfusion_EJ2_Gantt_GanttEditSettings_AllowDeleting) property. Tasks can be deleted by clicking the delete toolbar item or using the `deleteRow` method. You can call this method dynamically on any custom actions like button click. The following code example shows how to enable the delete option in the Gantt control.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -38,14 +39,12 @@ A task delete option in the Gantt control can be enabled by enabling the [`EdiSe
 {% endtabs %}
 {% endif %}
 
-
-
 N> You should select any one of the rows in the Gantt control to perform task delete action.
-<br/> You should set the [`AllowDeleting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html#Syncfusion_EJ2_Gantt_GanttEditSettings_AllowDeleting) value to `true` to delete the record dynamically.
+<br/> You should set the [`AllowDeleting`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html#Syncfusion_EJ2_Gantt_GanttEditSettings_AllowDeleting) value to `true` to delete the record dynamically.
 
 ## Delete confirmation message
 
-Delete confirmation message is used to get the confirmation from users before deleting a task. This confirmation message can be enabled by setting the [`EditSettings.ShowDeleteConfirmDialog`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html#Syncfusion_EJ2_Gantt_GanttEditSettings_ShowDeleteConfirmDialog) property to true.
+Delete confirmation message is used to get the confirmation from users before deleting a task. This confirmation message can be enabled by setting the [`EditSettings.ShowDeleteConfirmDialog`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html#Syncfusion_EJ2_Gantt_GanttEditSettings_ShowDeleteConfirmDialog) property to true.
 
 The following code snippet explains how to enable the delete confirmation message in Gantt.
 
@@ -71,7 +70,5 @@ The following code snippet explains how to enable the delete confirmation messag
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/deleteConfirmationDialog.png)

@@ -6,7 +6,6 @@ keywords: vue gantt work, work hours, work units, task effort, duration, syncfus
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/work
 platform: gantt-sdk
 control: Work - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

@@ -1,13 +1,16 @@
 ---
 layout: post
-title: Getting Started with Blazor Kanban in Server App | Syncfusion®
-description: Checkout and learn about the documentation for getting started with Blazor Kanban Component in Blazor Server App.
+title: Getting Started with Server App in Blazor Kanban | Syncfusion
+description: Learn how to set up Syncfusion Blazor Kanban in a Blazor Server app and start building interactive workflows quickly.
+keywords: blazor kanban server app, syncfusion kanban, blazor server, getting started
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/kanban/getting-started-with-server-app
 platform: gantt-sdk
-component: Kanban
+control: Getting Started with Server App - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Getting Started with Blazor Kanban Component in Blazor Server App
+# Getting Started with Blazor Kanban in Server App
 
 This section briefly explains about how to include [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban-board) component in a Blazor Server App using [Visual Studio](https://visualstudio.microsoft.com/vs/), [Visual Studio Code](https://code.visualstudio.com/), and the [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/).
 
