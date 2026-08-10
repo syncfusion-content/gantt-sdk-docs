@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Ej1 api migration in TypeScript Kanban control | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion TypeScript Kanban control of Syncfusion Essential JS 2 and more.
+title: EJ1 API Migration in TypeScript Kanban | Syncfusion
+description: Learn how to migrate from EJ1 to TypeScript Kanban with API mapping and transition guide for Syncfusion components.
+keywords: typescript kanban ej1 migration, api migration, syncfusion kanban migration
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/kanban/ej1-api-migration
 platform: gantt-sdk
-control: Ej1 api migration 
-publishingplatform: gantt-sdk
+control: EJ1 API Migration - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Ej1 api migration in TypeScript Kanban control
+# EJ1 to EJ2 API Migration in TypeScript Kanban
 
 This article describes the API migration process of Kanban component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
