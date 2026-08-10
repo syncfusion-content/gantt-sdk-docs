@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Swimlane in Vue Kanban component | Syncfusion
-description: Learn here all about Swimlane in Syncfusion Vue Kanban component of Syncfusion Essential JS 2 and more.
-control: Swimlane 
+title: Swimlanes in Vue Kanban | Syncfusion
+description: Learn how to configure swimlanes in Syncfusion Vue Kanban to group and organize cards by categories or resources.
+keywords: vue kanban swimlane, syncfusion kanban, grouping, card grouping
+canonical: https://help.syncfusion.com/gantt-sdk/vue/kanban/swimlane
 platform: gantt-sdk
+control: Swimlane - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Swimlane in Vue Kanban component
+# Swimlane Grouping in Vue Kanban
 
 Swimlanes are horizontal categorizations of cards on the Kanban board.  It is used for grouping of cards, which brings transparency to the workflow process.
 
