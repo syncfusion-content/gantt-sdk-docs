@@ -12,14 +12,14 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Data Binding with Local and Remote Sources in Vue Kanban
 
-The Kanban uses `DataManager`, which supports both RESTful data service binding and JavaScript object array binding. The [`dataSource`](https://ej2.syncfusion.com/vue/documentation/api/kanban/#datasource) property of Kanban can be assigned either with the instance of `DataManager` or JavaScript object array collection, as it supports the following two data binding methods:
+The Kanban uses `DataManager`, which supports both RESTful data service binding and JavaScript object array binding. The [`dataSource`](https://ej2.syncfusion.com/vue/documentation/api/kanban#datasource) property of Kanban can be assigned either with the instance of `DataManager` or JavaScript object array collection, as it supports the following two data binding methods:
 
-* Local data
-* Remote data
+- Local data
+- Remote data
 
 ## Local data
 
-To bind local JSON data to the Kanban, you can simply assign a JavaScript object array to the [`dataSource`](https://ej2.syncfusion.com/vue/documentation/api/kanban/#datasource) property. The JSON object dataSource can also be provided as an instance of `DataManager` and assigned to the Kanban `dataSource` property.
+To bind local JSON data to the Kanban, you can simply assign a JavaScript object array to the [`dataSource`](https://ej2.syncfusion.com/vue/documentation/api/kanban#datasource) property. The JSON object dataSource can also be provided as an instance of `DataManager` and assigned to the Kanban `dataSource` property.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -29,14 +29,14 @@ To bind local JSON data to the Kanban, you can simply assign a JavaScript object
 {% include code-snippet/gantt-sdk/vue/kanban/local-data-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/kanban/local-data-cs1" %}
 
 > By default, `DataManager` uses `JsonAdaptor` for binding local data.
 
 ## Remote data
 
-To bind remote data to kanban component, assign service data as an instance of [`DataManager`](../data) to the [`dataSource`](https://ej2.syncfusion.com/vue/documentation/api/kanban/#datasource) property. To interact with remote data source,  provide the endpoint **url**.
+To bind remote data to kanban component, assign service data as an instance of [`DataManager`](../data) to the [`dataSource`](https://ej2.syncfusion.com/vue/documentation/api/kanban#datasource) property. To interact with remote data source, provide the endpoint **url**.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -46,14 +46,14 @@ To bind remote data to kanban component, assign service data as an instance of [
 {% include code-snippet/gantt-sdk/vue/kanban/remote-data-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/kanban/remote-data-cs1" %}
 
 > By default, [`DataManager`](../data) uses **ODataAdaptor** for remote data-binding.
 
 ### OData services
 
-[`OData`](http://www.odata.org/documentation/odata-version-3-0/) is a standardized protocol for creating and consuming data. You can retrieve data from OData service using the DataManager. Refer to the following code example for remote Data binding using OData service.
+[`OData`](http://www.odata.org/documentation/odata-version-3-0) is a standardized protocol for creating and consuming data. You can retrieve data from OData service using the DataManager. Refer to the following code example for remote Data binding using OData service.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -63,7 +63,7 @@ To bind remote data to kanban component, assign service data as an instance of [
 {% include code-snippet/gantt-sdk/vue/kanban/odata-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/kanban/odata-cs1" %}
 
 ### OData v4 services
@@ -78,7 +78,7 @@ The ODataV4 is an improved version of OData protocols, and the [`DataManager`](.
 {% include code-snippet/gantt-sdk/vue/kanban/odataV4-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/kanban/odataV4-cs1" %}
 
 ### Web API
@@ -152,10 +152,10 @@ The CRUD (Create, Read, Update and Delete) actions can be performed easily on Ka
 
 The CRUD operation in Kanban can be mapped to server-side controller actions using the properties `insertUrl`, `removeUrl`, `updateUrl`, and `crudUrl`.
 
-* `insertUrl` – You can perform a single insertion operation on the server-side.
-* `updateUrl` – You can update single data on the server-side.
-* `removeUrl` – You can remove single data on the server-side.
-* `crudUrl` – You can perform bulk data operation on the server-side.
+- `insertUrl` – You can perform a single insertion operation on the server-side.
+- `updateUrl` – You can update single data on the server-side.
+- `removeUrl` – You can remove single data on the server-side.
+- `crudUrl` – You can perform bulk data operation on the server-side.
 
 ```ts
 <template>
@@ -249,12 +249,12 @@ It is possible to create your own custom adaptor by extending the built-in avail
 {% include code-snippet/gantt-sdk/vue/kanban/custom-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/kanban/custom-cs1" %}
 
 ### Sending additional parameters to the server
 
-To add a custom parameter to the data request, use the **addParams** method of **Query** class. Assign the **Query** object with additional parameters to the kanban [`query`](https://ej2.syncfusion.com/vue/documentation/api/kanban/#query) property.
+To add a custom parameter to the data request, use the **addParams** method of **Query** class. Assign the **Query** object with additional parameters to the kanban [`query`](https://ej2.syncfusion.com/vue/documentation/api/kanban#query) property.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -264,17 +264,17 @@ To add a custom parameter to the data request, use the **addParams** method of *
 {% include code-snippet/gantt-sdk/vue/kanban/additional-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/kanban/additional-cs1" %}
 
-> The parameters added using the [`query`](https://ej2.syncfusion.com/vue/documentation/api/kanban/#query) property will be sent along with the data request for every kanban action.
+> The parameters added using the [`query`](https://ej2.syncfusion.com/vue/documentation/api/kanban#query) property will be sent along with the data request for every kanban action.
 
 ### Handling HTTP error
 
 During server interaction from the kanban, some server-side exceptions may occur, and you can acquire those error messages or exception details
-in client-side using the [`actionFailure`](https://ej2.syncfusion.com/vue/documentation/api/kanban/#actionfailure) event.
+in client-side using the [`actionFailure`](https://ej2.syncfusion.com/vue/documentation/api/kanban#actionfailure) event.
 
-The argument passed to the [`actionFailure`](https://ej2.syncfusion.com/vue/documentation/api/kanban/#actionfailure) event contains the error details returned from the server.
+The argument passed to the [`actionFailure`](https://ej2.syncfusion.com/vue/documentation/api/kanban#actionfailure) event contains the error details returned from the server.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -284,15 +284,15 @@ The argument passed to the [`actionFailure`](https://ej2.syncfusion.com/vue/docu
 {% include code-snippet/gantt-sdk/vue/kanban/error-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/kanban/error-cs1" %}
 
-> The [`actionFailure`](https://ej2.syncfusion.com/vue/documentation/api/kanban/#actionfailure) event will be triggered not only for the server errors, but
-also when there is an exception while processing the kanban actions.
+> The [`actionFailure`](https://ej2.syncfusion.com/vue/documentation/api/kanban#actionfailure) event will be triggered not only for the server errors, but
+> also when there is an exception while processing the kanban actions.
 
 ## Loading data via ajax
 
-You can use Kanban [`dataSource`](https://ej2.syncfusion.com/vue/documentation/api/kanban/#datasource) property to bind the datasource to Kanban from external ajax request. In the following code, we have fetched the datasource from the server using ajax request and provided that to the [`dataSource`](https://ej2.syncfusion.com/vue/documentation/api/kanban/#datasource) property by using the **onSuccess** event of ajax.
+You can use Kanban [`dataSource`](https://ej2.syncfusion.com/vue/documentation/api/kanban#datasource) property to bind the datasource to Kanban from external ajax request. In the following code, we have fetched the datasource from the server using ajax request and provided that to the [`dataSource`](https://ej2.syncfusion.com/vue/documentation/api/kanban#datasource) property by using the **onSuccess** event of ajax.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -302,7 +302,7 @@ You can use Kanban [`dataSource`](https://ej2.syncfusion.com/vue/documentation/a
 {% include code-snippet/gantt-sdk/vue/kanban/ajax-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/kanban/ajax-cs1" %}
 
-> * If you bind the dataSource from this way, then it acts like a local dataSource. So you cannot perform any server-side crud actions.
+> - If you bind the dataSource from this way, then it acts like a local dataSource. So you cannot perform any server-side crud actions.

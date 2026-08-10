@@ -16,7 +16,7 @@ The **Kanban** columns represent the each stage of the process. The column defin
 
 ## Single-key mapping
 
-Kanban columns are categorized by mapping the **key** from the datasource using the `keyField` property. The corresponding **value** in the datasource is mapped inside the columns `keyField`.  Based on this categorization, Kanban columns are split on this board.
+Kanban columns are categorized by mapping the **key** from the datasource using the `keyField` property. The corresponding **value** in the datasource is mapped inside the columns `keyField`. Based on this categorization, Kanban columns are split on this board.
 
 > The `keyField` property is mandatory to render the columns in the Kanban board.
 
@@ -28,7 +28,7 @@ Kanban columns are categorized by mapping the **key** from the datasource using 
 {% include code-snippet/gantt-sdk/vue/kanban/single-key-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/kanban/single-key-cs1" %}
 
 ## Multi-key mapping
@@ -43,7 +43,7 @@ Kanban board allows to render a single column by mapping multiple keys using `ke
 {% include code-snippet/gantt-sdk/vue/kanban/multiple-keys-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/kanban/multiple-keys-cs1" %}
 
 ## Header text
@@ -66,7 +66,7 @@ You can customize the column header with any HTML or CSS element using the `temp
 {% include code-snippet/gantt-sdk/vue/kanban/header-template-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/kanban/header-template-cs1" %}
 
 ## Toggle columns
@@ -83,14 +83,14 @@ Kanban allows to expand or collapse its columns using `allowToggle` inside the `
 {% include code-snippet/gantt-sdk/vue/kanban/toggle-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/kanban/toggle-cs1" %}
 
 ### Initially collapsed column
 
 By default, all columns are on expanded state when loading the Kanban board initially. But, you can render the columns with collapsed state using the `isExpanded` property.
 
->The `isExpanded` property only works when enabling the `allowToggle` property on particular column.
+> The `isExpanded` property only works when enabling the `allowToggle` property on particular column.
 
 In the following example, the backlog column is collapsed on initialization of Kanban board.
 
@@ -102,12 +102,12 @@ In the following example, the backlog column is collapsed on initialization of K
 {% include code-snippet/gantt-sdk/vue/kanban/expanded-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/kanban/expanded-cs1" %}
 
 ## Drag and Drop
 
-The Kanban component allows dynamic column reordering through drag-and-drop interactions. To enable this, set the [`allowColumnDragAndDrop`](https://ej2.syncfusion.com/vue/documentation/api/kanban/#allowColumnDragAndDrop) property to true. Once enabled, users can rearrange columns by dragging a column header to a new position, with visual feedback highlighting potential drop locations.
+The Kanban component allows dynamic column reordering through drag-and-drop interactions. To enable this, set the [`allowColumnDragAndDrop`](https://ej2.syncfusion.com/vue/documentation/api/kanban#allowColumnDragAndDrop) property to true. Once enabled, users can rearrange columns by dragging a column header to a new position, with visual feedback highlighting potential drop locations.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -117,9 +117,8 @@ The Kanban component allows dynamic column reordering through drag-and-drop inte
 {% include code-snippet/gantt-sdk/vue/kanban/column-drag-and-drop-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/kanban/column-drag-and-drop-cs1" %}
 
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/kanban/column-drag-and-drop-cs1" %}
 
 ## Stacked headers
 
@@ -141,5 +140,5 @@ In the following code, the kanban columns 'InProgress, Review' are grouped under
 {% include code-snippet/gantt-sdk/vue/kanban/stacked-headers-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/kanban/stacked-headers-cs1" %}
