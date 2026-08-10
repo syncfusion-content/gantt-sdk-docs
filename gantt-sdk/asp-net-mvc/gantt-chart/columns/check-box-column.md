@@ -1,17 +1,18 @@
 ---
 layout: post
-title: Check box Columns in Syncfusion ASP.NET MVC Gantt Component
-description: Learn here all about Check box Columns in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Checkbox Column in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to add and use checkbox columns in Syncfusion ASP.NET MVC Gantt Chart for multi-select task selection and bulk operations.
+keywords: asp.net mvc gantt checkbox column, checkbox selection, multi select, select tasks, bulk selection, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/columns/check-box-column
 platform: gantt-sdk
-control: Columns
-publishingplatform: gantt-sdk
+control: Columns - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
+# Checkbox Columns in ASP.NET MVC Gantt Chart
 
-# Checkbox Column in gantt control
-
-To render boolean values as checkbox in columns, you need to set [`displayAsCheckBox`](../api/gantt/column/#displayascheckbox) property as **true**.
+To render boolean values as checkbox in columns, you need to set [`displayAsCheckBox`](../api/gantt/column#displayascheckbox) property as **true**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -36,7 +37,4 @@ To render boolean values as checkbox in columns, you need to set [`displayAsChec
 {% endtabs %}
 {% endif %}
 
-
-
 ![Alt text](images/checkbox.png)
-
