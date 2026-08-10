@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Resource View in ASP.NET MVC Gantt Component
-description: Learn here all about Resource View in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Resource View in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to implement resource view in Syncfusion ASP.NET MVC Gantt Chart to manage and visualize resources, allocations, and workload across your project.
+keywords: asp.net mvc gantt resource view, resource management, resource allocation, workload visualization, team management, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/resource-view
 platform: gantt-sdk
-control: Resource View
-publishingplatform: gantt-sdk
+control: Resource View - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
+# Resource View with Hierarchical Tasks in ASP.NET MVC Gantt Chart
 
-# Resource View in ASP.NET MVC Gantt Component
-
-The resource breakdown view is used to visualize the tasks assigned to each resource in hierarchy manner. Resources are displayed as parents and all the tasks assigned to each resource are displayed as its child records. It can be initialized by setting the [`viewType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.ViewType.html) property to `ResourceView`.
-
+The resource breakdown view is used to visualize the tasks assigned to each resource in hierarchy manner. Resources are displayed as parents and all the tasks assigned to each resource are displayed as its child records. It can be initialized by setting the [`viewType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.ViewType.html) property to `ResourceView`.
 
 ## Resource task
 
@@ -42,8 +42,6 @@ N> Currently there is no support for unscheduled task in Resource view Gantt.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Alt text](images/resourceView.png)
 
@@ -80,19 +78,17 @@ N> By default, the `showOverAllocation` property value is `false`.
 {% endtabs %}
 {% endif %}
 
-
-
 ![Alt text](images/showhide.PNG)
 
 ## Unassigned task
 
-A task not assigned to any one of the resource are termed as unassigned tasks. The unassigned tasks are grouped with a name as `Unassigned Task` and displayed at the bottom of Gantt data collection . It is validated at load time during Gantt record creation by default based on a task [`resourceInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_ResourceInfo_System_String_) mapping property in the Gantt chart data source. If the resource is assigned to the unassigned grouped tasks, the task will be moved as child to the respective resource.
+A task not assigned to any one of the resource are termed as unassigned tasks. The unassigned tasks are grouped with a name as `Unassigned Task` and displayed at the bottom of Gantt data collection . It is validated at load time during Gantt record creation by default based on a task [`resourceInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_ResourceInfo_System_String_) mapping property in the Gantt chart data source. If the resource is assigned to the unassigned grouped tasks, the task will be moved as child to the respective resource.
 
 ## Enable taskbar drag and drop
 
-In Gantt, you can enable taskbar drag and drop between resources by using the [`AllowTaskbarDragAndDrop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowTaskbarDragAndDrop) property. This allows you to move a taskbar from one resource to another vertically, making it easier to schedule tasks and manage resources.
+In Gantt, you can enable taskbar drag and drop between resources by using the [`AllowTaskbarDragAndDrop`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowTaskbarDragAndDrop) property. This allows you to move a taskbar from one resource to another vertically, making it easier to schedule tasks and manage resources.
 
->Note: By default, the `AllowTaskbarDragAndDrop` property value is `false`.
+> Note: By default, the `AllowTaskbarDragAndDrop` property value is `false`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
