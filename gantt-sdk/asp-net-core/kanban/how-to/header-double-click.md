@@ -4,10 +4,8 @@ title: Header Double Click in ASP.NET Core Kanban Component
 description: Learn here all about Header Double Click in Syncfusion ASP.NET Core Kanban component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Header Double Click
-publishingplatform: gantt-sdk
 documentation: ug
 ---
-
 
 # Add header double click
 
@@ -35,8 +33,6 @@ You can bind the header double click event by using the [`dataBound`](../../api/
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 Output be like the below.
 

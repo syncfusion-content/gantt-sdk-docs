@@ -10,7 +10,6 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
 # State Persistence in ASP.NET Core Kanban
 
 State persistence refers to the Kanban state maintained in the browser's [`LocalStorage`](https://www.w3schools.com/html/html5_webstorage.asp#) even if the browser is refreshed or if you move to the next page within the browser.
@@ -39,5 +38,3 @@ State persistence stores Kanban datasource, column or swimlane expand/collapse s
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-

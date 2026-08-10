@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Dynamically Change Columns in ASP.NET Core Kanban Component
+title: Dynamically Change Columns in ASP.NET Core Kanban | Syncfusion
 description: Learn here all about Dynamically Change Columns in Syncfusion ASP.NET Core Kanban component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Dynamically Change Columns
-publishingplatform: gantt-sdk
+control: Kanban - Dynamically Change Columns
 documentation: ug
 ---
 

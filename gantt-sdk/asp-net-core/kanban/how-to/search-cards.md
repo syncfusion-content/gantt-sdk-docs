@@ -4,10 +4,8 @@ title: Search Cards in ASP.NET Core Kanban Component
 description: Learn here all about Search Cards in Syncfusion ASP.NET Core Kanban component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Search Cards
-publishingplatform: gantt-sdk
 documentation: ug
 ---
-
 
 # Searching Cards
 
@@ -37,8 +35,6 @@ In the following sample, the searching operation starts as soon as you start typ
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 Output be like the below.
 
