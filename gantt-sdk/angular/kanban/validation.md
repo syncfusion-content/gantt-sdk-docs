@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Validation in Angular Kanban Component | Syncfusion
-description: Learn here all about Validation in Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
+title: WIP Validation in Angular Kanban | Syncfusion
+description: Learn how to set work-in-progress limits and validation rules in Syncfusion Angular Kanban to control flow and avoid overloading columns.
+keywords: angular kanban validation, syncfusion kanban, form validation, input validation
+canonical: https://help.syncfusion.com/gantt-sdk/angular/kanban/validation
 platform: gantt-sdk
-control: Validation
+control: WIP Validation - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Validation in Angular Kanban Component
+# WIP Validation and Work-in-Progress Limits in Angular Kanban
 
 Validate particular column using the `minCount` or `maxCount` properties. The corresponding columns gets different appearance when validation fails. In default layout, `constraintType` property accept only `Column` type. In swimlane layout, accept both `Column` and `Swimlane` constraint type.
 
