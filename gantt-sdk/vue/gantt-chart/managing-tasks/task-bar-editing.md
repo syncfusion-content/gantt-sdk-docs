@@ -6,7 +6,6 @@ keywords: vue gantt taskbar editing, taskbar resize, drag taskbar, task modifica
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/managing-tasks/taskbar-editing
 platform: gantt-sdk
 control: Taskbar Editing - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

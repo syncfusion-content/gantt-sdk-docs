@@ -6,7 +6,6 @@ keywords: vue gantt server data, maintain data, datamanager, crud operations, re
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/managing-tasks/maintaining-data-in-server
 platform: gantt-sdk
 control: Maintaining Data in Server - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -196,7 +195,7 @@ public GanttData Edit(GanttData value)
 
 ## Delete action
 
-Using the `deleted` argument of the `BatchUrl` method we can remove the deleted records from database and return the same to client side. on deleting the record we need to remove its corresponding child records as well if it exist from the data base. please find the below code example for details.
+Using the `deleted` argument of the `BatchUrl` method we can remove the deleted records from database and return the same to client side. on deleting the record we need to remove its corresponding child records as well if it exist from the database. please find the below code example for details.
 
 ```ts
 

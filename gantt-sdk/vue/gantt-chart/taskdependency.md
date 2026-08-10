@@ -6,7 +6,6 @@ keywords: vue gantt task dependency, task relationships, predecessors, successor
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/task-dependency
 platform: gantt-sdk
 control: Task Dependency - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

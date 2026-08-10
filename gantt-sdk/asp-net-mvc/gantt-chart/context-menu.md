@@ -1,35 +1,36 @@
 ---
 layout: post
-title: Context Menu in ASP.NET MVC Gantt Component | Syncfusion
-description: Learn here all about Context Menu in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Context Menu in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to implement and customize context menus in Syncfusion ASP.NET MVC Gantt Chart for quick actions and seamless user interactions.
+keywords: asp.net mvc gantt context menu, right-click menu, custom context menu, quick actions, gantt menu items, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/context-menu
 platform: gantt-sdk
-control: Context Menu
-publishingplatform: gantt-sdk
+control: Context Menu - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Context menu in ASP.NET MVC Gantt component
+# Context Menu Customization in ASP.NET MVC Gantt Chart
 
 The Gantt control allows you to perform quick actions by using context menu. When right-clicking the context menu, the context menu options are shown. To enable this feature, set the `enableContextMenu` to true. The default context menu options are enabled using the `editSettings` property. The context menu options can be customized using the `contextMenuItems` property.
 
 The default items are listed in the following table.
 
-|Items| Description|
-|----|----|
-|`AutoFit`|  Auto-fits the current column.|
-|`AutoFitAll` | Auto-fits all columns.|
-|`SortAscending` | Sorts the current column in ascending order.|
-|`SortDescending` | Sorts the current column in descending order.|
-|`TaskInformation`|  Edits the current task.|
-|`Add` | Adds a new row to the Gantt.|
-|`Indent` | Indent the selected record to one level.|
-|`Outdent` | Outdent the selected record to one level.|
-|`DeleteTask` | Deletes the current task.|
-|`Save` | Saves the edited task.|
-|`Cancel` | Cancels the edited task.|
-|`DeleteDependency` | Deletes the current dependency task link.|
-|`Convert` | Converts current task to milestone or vice-versa.|
+| Items              | Description                                       |
+| ------------------ | ------------------------------------------------- |
+| `AutoFit`          | Auto-fits the current column.                     |
+| `AutoFitAll`       | Auto-fits all columns.                            |
+| `SortAscending`    | Sorts the current column in ascending order.      |
+| `SortDescending`   | Sorts the current column in descending order.     |
+| `TaskInformation`  | Edits the current task.                           |
+| `Add`              | Adds a new row to the Gantt.                      |
+| `Indent`           | Indent the selected record to one level.          |
+| `Outdent`          | Outdent the selected record to one level.         |
+| `DeleteTask`       | Deletes the current task.                         |
+| `Save`             | Saves the edited task.                            |
+| `Cancel`           | Cancels the edited task.                          |
+| `DeleteDependency` | Deletes the current dependency task link.         |
+| `Convert`          | Converts current task to milestone or vice-versa. |
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -54,13 +55,11 @@ The default items are listed in the following table.
 {% endtabs %}
 {% endif %}
 
-
-
 ![Alt text](images/contextmenu.PNG)
 
 ## Custom context menu items
 
-The custom context menu items can be added by defining the [`contextMenuItems`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ContextMenuItems) as a collection of [`contextMenuItemModel`]. Actions for the customized items can be defined in the [`contextMenuClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ContextMenuClick) event and the visibility of customized items can be defined in the [`contextMenuOpen`] event.
+The custom context menu items can be added by defining the [`contextMenuItems`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ContextMenuItems) as a collection of [`contextMenuItemModel`]. Actions for the customized items can be defined in the [`contextMenuClick`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ContextMenuClick) event and the visibility of customized items can be defined in the [`contextMenuOpen`] event.
 
 To create custom context menu items for header area, define the target property as `.e-gridheader`.
 
@@ -89,12 +88,10 @@ The following sample shows context menu item for parent rows to expand or collap
 {% endtabs %}
 {% endif %}
 
-
-
 ![Alt text](images/customContextMenu.PNG)
 
 N> You can show an specific item in context menu for header/content area in the Gantt control by defining the `target` property.
 
 ## Touch interaction
 
-To perform `long press` action on a row, [`context menu`](context-menu/#context-menu) is opened, and then tap a menu item to trigger its action.
+To perform `long press` action on a row, [`context menu`](context-menu#context-menu) is opened, and then tap a menu item to trigger its action.

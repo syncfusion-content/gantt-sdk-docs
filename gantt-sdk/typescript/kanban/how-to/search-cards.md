@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Search cards in TypeScript Kanban control | Syncfusion
-description: Learn here all about Search cards in Syncfusion TypeScript Kanban control of Syncfusion Essential JS 2 and more.
+title: Search Cards in TypeScript Kanban | Syncfusion
+description: Learn how to search cards in Syncfusion TypeScript Kanban using queries and external input with practical examples and configuration guidance.
+keywords: typescript kanban search cards, syncfusion kanban, search query, card search
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/kanban/how-to/search-cards
 platform: gantt-sdk
-control: Search cards 
-publishingplatform: gantt-sdk
+control: Search Cards - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Search cards in TypeScript Kanban control
+# Search Cards in TypeScript Kanban
 
 You can search the cards in Kanban by using the `query` property.
 
@@ -17,7 +18,7 @@ In the following sample, the searching operation starts as soon as you start typ
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt-sdk/typescript/kanban/search-cards-cs1/index.ts %}
 {% endhighlight %}
@@ -25,7 +26,7 @@ In the following sample, the searching operation starts as soon as you start typ
 {% include code-snippet/gantt-sdk/typescript/kanban/search-cards-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/search-cards-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}

@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Swimlane in TypeScript Kanban control | Syncfusion
-description: Learn here all about Swimlane in Syncfusion TypeScript Kanban control of Syncfusion Essential JS 2 and more.
+title: Swimlanes in TypeScript Kanban | Syncfusion
+description: Learn how to configure swimlanes in Syncfusion TypeScript Kanban to group and organize cards by categories or resources.
+keywords: typescript kanban swimlane, syncfusion kanban, grouping, card grouping
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/kanban/swimlane
 platform: gantt-sdk
-control: Swimlane 
-publishingplatform: gantt-sdk
+control: Swimlane - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Swimlane in TypeScript Kanban control
+# Swimlane Grouping in TypeScript Kanban
 
 Swimlanes are horizontal categorizations of cards on the Kanban board.  It is used for grouping of cards, which brings transparency to the workflow process.
 

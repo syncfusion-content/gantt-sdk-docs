@@ -6,7 +6,6 @@ keywords: vue gantt pdf header footer, customize header, footer customization, p
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/pdf-export/header-and-footer
 platform: gantt-sdk
 control: Header and Footer in PDF Export - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -50,13 +49,6 @@ This functionality helps to customize the line that appears in the header or foo
 * `type` determines content type, such as 'Line'.
 * `style` is used to set properties like the color (penColor), size (penSize), and style (dashStyle) of the line.
 * `points` specifies the coordinates for the start and end points of the line.
-
-Supported line styles:
-* dash
-* dot
-* dashdot
-* dashdotdot
-* solid
 
 ```ts
 

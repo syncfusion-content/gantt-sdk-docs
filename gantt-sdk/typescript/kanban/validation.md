@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Validation in TypeScript Kanban control | Syncfusion
-description: Learn here all about Validation in Syncfusion TypeScript Kanban control of Syncfusion Essential JS 2 and more.
+title: Validation in TypeScript Kanban | Syncfusion
+description: Learn how to implement data validation and constraints in Syncfusion TypeScript Kanban for data integrity.
+keywords: typescript kanban validation, syncfusion kanban, data validation, constraints
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/kanban/validation
 platform: gantt-sdk
-control: Validation 
-publishingplatform: gantt-sdk
+control: WIP Validation - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Validation in TypeScript Kanban control
+# WIP Validation and Work-in-Progress Limits in TypeScript Kanban
 
 Validate particular column using the `minCount` or `maxCount` properties. The corresponding columns gets different appearance when validation fails. In default layout, `constraintType` property accept only `Column` type. In swimlane layout, accept both `Column` and `Swimlane` constraint type.
 
