@@ -379,9 +379,9 @@ Non-working days/weekend are used to represent the non-productive days in a proj
 > By default, Saturdays and Sundays are considered as non-working days/weekend in a project.
 > In the Gantt control, you can make weekend as working day by setting the [IncludeWeekend](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_IncludeWeekend) property to **true**`.
 
-## Duration unit 
+## Duration unit
 
-In Gantt Chart, the task's duration value can be measured by the following duration units,
+In the Gantt Chart, task durations can be measured using the following units:
 
 * Day
 * Hour
@@ -389,13 +389,16 @@ In Gantt Chart, the task's duration value can be measured by the following durat
 * Week
 * Month
 
-In Gantt, we can define duration unit for whole project by using [GanttTaskFields.DurationUnit](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_DurationUnit) property, when we defines the value for this property, this unit will be applied for all task which don't has duration unit value. And each task in the project can be defined with different duration units and the duration unit of a task can be defined by the following ways,
+You can configure a default duration unit for the entire Gantt Chart using the `SfGantt.DurationUnit` property. The specified unit is applied to tasks for which a duration unit is not explicitly defined.
 
-* Using `DurationUnit` property, to map the duration unit data source field.
-* Defining the duration unit value along with the duration field in the data source.
-* Use the global default duration unit configured through the [SfGantt.DurationUnit](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_DurationUnit) property for tasks that do not have a task-specific duration unit.
+In addition to the global setting, individual tasks can be configured with different duration units. A task's duration unit can be specified by:
 
-> When a duration unit is defined at the task level, either through the mapped `DurationUnit` field or within the duration value itself, it takes precedence over the global duration unit specified using `SfGantt.DurationUnit`.
+* Mapping a duration unit field from the data source using the [GanttTaskFields.DurationUnit](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_DurationUnit) property.
+* Setting a task-specific duration unit value in the mapped duration unit field.
+* Using the global default duration unit configured through the `SfGantt.DurationUnit` property when no task-specific duration unit is defined.
+
+> When a duration unit is defined at the task level through the mapped `DurationUnit` field, it takes precedence over the global duration unit specified using `SfGantt.DurationUnit`.
+
 
 ### Mapping the duration unit field
 
