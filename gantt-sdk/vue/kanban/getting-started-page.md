@@ -366,4 +366,4 @@ yarn run dev
 The output will appear as follows:
 
 
-![Output](./images/kanban-vue3.png)
+![Output](./images/kanban-vue3.png) 
