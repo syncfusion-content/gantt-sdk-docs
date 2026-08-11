@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Critical Path in UWP Gantt control | Syncfusion
+title: Critical Path in UWP SfGantt | Syncfusion
+description: Learn about CriticalPath support in Syncfusion UWP SfGantt, critical task visualization and critical path styling options.
 platform: gantt-sdk
 control: SfGantt
 documentation: ug
 ---
 
-# Critical Path in UWP Gantt (SfGantt)
+# Critical Path in UWP SfGantt
 
 Critical path is a chain of linked critical tasks that defines the finish date of project. It can be highlighted by enabling the [`HighlightCriticalTasks`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_HighlightCriticalTasksProperty) property in SfGantt as demonstrated in the following code sample.
 
