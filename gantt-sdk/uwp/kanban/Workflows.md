@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Workflows in UWP Kanban Board control | Syncfusion
-description: Learn here all about Workflows support in Syncfusion UWP Kanban Board (SfKanban) control and more.
+title: Workflows in UWP SfKanban | Syncfusion
+description: Learn about Workflows support in Syncfusion UWP SfKanban to manage allowed card transitions and enforce workflow rules across columns.
 platform: gantt-sdk
 control: SfKanban
 documentation: ug
 ---
 
-# Workflows in UWP Kanban Board (SfKanban)
+# Workflows in UWP SfKanban
 
 A Kanban [`Workflows`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Workflows) is a set of Category and AllowedTransitions that an item moves through its life cycle and typically represents processes within your organization.
 
