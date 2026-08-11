@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Swimlane support in WinUI Kanban control | Syncfusion<sup>®</sup>
-description: Learn here all about the swimlane support and its customization in Syncfusion<sup>®</sup> WinUI Kanban (SfKanban) control.
+title: Swimlane in WinUI Kanban | Syncfusion<sup>®</sup>
+description: Learn about Swimlane support in Syncfusion<sup>®</sup> WinUI Kanban using the SwimlaneMappingPath property and customize swimlane headers.
 platform: gantt-sdk
 control: SfKanban
 documentation: ug
 ---
 
-# Swimlane in WinUI Kanban (SfKanban) control
+# Swimlane in WinUI Kanban
 
 Swimlanes are horizontal categorizations of cards on the WinUI Kanban Board. It is used for grouping of cards, which brings transparency to the workflow process. They allow you to categorize your workflow by projects, teams, users, or any other criteria you need.
 

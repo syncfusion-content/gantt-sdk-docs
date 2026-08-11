@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF Gantt control | Syncfusion
-description: Learn here all about introduction of Syncfusion Essential Studio WPF Gantt control, its elements and more details.
+title: About Syncfusion WPF Gantt Control | Syncfusion
+description: Learn about introduction of Syncfusion Essential Studio WPF Gantt Control, its elements and more details..
 platform: gantt-sdk
 control: Gantt
 documentation: ug
 ---
 
-# WPF Gantt control Overview
+# About Syncfusion WPF Gantt Control
 
 Essential Gantt for WPF is a MS Project-like Project Viewer with built-in grid, schedule and resource assignment constraints. It is designed to assist project managers in developing plans, assigning resources to the task, tracking task progress and so on. Some of the key features of Gantt control are: drag support for increasing and decreasing the Start and Finish Date of the Task , Drag and Drop support for  the task within a row and automatic data synchronization between Grid and Chart. This also supports to import and export the Task Details as XML file.
 
