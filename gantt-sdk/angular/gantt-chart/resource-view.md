@@ -130,6 +130,7 @@ To hide a column in the Gantt Chart's resource view, handle the [actionBegin](ht
 
 - Resource view does not support parent tasks; all tasks must be child tasks under resources or the **Unassigned Task** node.
 - Unscheduled tasks (lacking start date or duration) are not supported in resource view.
+* Custom column values are not displayed for resource records (parent records) in resource view. Only scheduling-related fields such as start date, end date, and duration are displayed for resource records.
 
 ## See also
 - [How to configure resources?](https://ej2.syncfusion.com/angular/documentation/gantt/resources)
