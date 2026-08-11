@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About WPF Kanban (SfKanban) control | Syncfusion
-description: Learn here all about introduction of Syncfusion Essential Studio WPF Kanban (SfKanban) control, its elements and more.
+title: About Syncfusion WPF SfKanban Control | Syncfusion
+description: Learn about introduction of Syncfusion Essential Studio WPF SfKanban control, its element and more details.
 platform: gantt-sdk
 control: SfKanban
 documentation: ug
 ---
 
-# WPF Kanban (SfKanban) Overview
+# About Syncfusion WPF SfKanban Control
 
 The Kanban control is an efficient way to visualize a workflow at each stage of completion. Kanban helps to define elegant planning and clear visualization of work progression. SfKanban also provide many features that are used to monitor the progressing tasks in software development cycle. 
 
