@@ -125,10 +125,10 @@ The following example shows resource assignment:
 
 Add or remove resources via cell or dialog editing. Cell editing modifies assignments by double-clicking the resource cell, while dialog editing uses the resource tab in the edit dialog.
 
-![Resource cell editing](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/images/cellEdit-resource.png)
+![Resource cell editing](./images/cellEdit-resource.png)
 _Alt text: Resource cell editing in the Gantt grid for assignment modifications._
 
-![Resource dialog editing](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/images/dialogedit-resource.png)
+![Resource dialog editing](./images/dialogedit-resource.png)
 _Alt text: Resource dialog editing tab for multiple allocations and units._
 
 ## Customize resource styling

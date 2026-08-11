@@ -43,5 +43,5 @@ The following example demonstrates how to use `fitToProject` after dynamically c
 ## See also
 
 - [How to configure timeline settings?](https://ej2.syncfusion.com/documentation/gantt/timeline)
-- [How to configure toolbar?](https://ej2.syncfusion.com/documentation/gantt/toolbar)
+- [How to configure toolbar?](https://ej2.syncfusion.com/documentation/gantt/tool-bar)
 - [How to manage task editing?](https://ej2.syncfusion.com/documentation/gantt/managing-tasks/editing-tasks)

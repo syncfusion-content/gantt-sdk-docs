@@ -66,5 +66,5 @@ You can get the clicked segment information using the [onTaskbarClick](https://e
 ## See also
 
 - [How to bind data in Gantt?](https://ej2.syncfusion.com/documentation/gantt/data-binding)
-- [How to configure task editing?](https://ej2.syncfusion.com/documentation/gantt/editing)
+- [How to configure task editing?](https://ej2.syncfusion.com/documentation/gantt/managing-tasks/editing-tasks)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/documentation/gantt/task-dependency)

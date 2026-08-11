@@ -152,25 +152,25 @@ Available unscheduled task types:
 
   Tasks with only a start date defined, allowing for open-ended planning.
 
-  ![Start date only task](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/images/startDate-only.png)
+  ![Start date only task](./images/startDate-only.png)
 
 - **End date only**
 
   Tasks with only an end date defined, useful for deadline-driven activities.
 
-  ![End date only task](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/images/endDate-only.png)
+  ![End date only task](./images/endDate-only.png)
 
 - **Duration only**
 
   Tasks with only duration specified, providing flexibility in scheduling timing.
 
-  ![Duration only task](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/images/duration-only.png)
+  ![Duration only task](./images/duration-only.png)
 
 - **Milestone**
 
   Special tasks with zero duration representing key project events or deliverables.
 
-  ![Milestone task](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/images/milestone.png)
+  ![Milestone task](./images/milestone.png)
 
 The following example enables unscheduled tasks:
 

@@ -216,4 +216,4 @@ By default, clicking a column header switches the sort order between ascending, 
 
 To perform a tap action on a column header in the Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Gantt Chart control, the [sorting](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/sorting#sorting) operation is triggered for the selected column. A popup appears when multi-column sorting is enabled. To sort multiple columns, tap the popup and then tap the desired column headers. The following screenshot shows Gantt touch sorting.
 
-![Multiple Sorting](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/images/multiple-sorting.png)
+![Multiple Sorting](./images/multiple-sorting.png)

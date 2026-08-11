@@ -119,8 +119,8 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control for Typ
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs11" %}
 
-> - The Gantt uses the [Internalization](https://ej2.syncfusion.com/documentation/common/globalization/internationalization) library to format values based on the specified format and culture.
-> - By default, the [number](https://ej2.syncfusion.com/documentation/common/globalization/internationalization#number-formatting) and [date](https://ej2.syncfusion.com/documentation/common/globalization/internationalization#date-formatting) values are formatted in **en-US** locale. You can localize the currency and date in different locale as explained [here](https://ej2.syncfusion.com/documentation/common/globalization/localization).
+> - The Gantt uses the [Internalization](https://ej2.syncfusion.com/documentation/common/internationalization) library to format values based on the specified format and culture.
+> - By default, the [number](https://ej2.syncfusion.com/documentation/common/internationalization#number-formatting) and [date](https://ej2.syncfusion.com/documentation/common/internationalization#date-formatting) values are formatted in **en-US** locale. You can localize the currency and date in different locale as explained [here](https://ej2.syncfusion.com/documentation/common/localization).
 > - The available format codes may vary depending on the data type of the column.
 > - You can also customize the formatting further by providing a custom function to the [format](https://ej2.syncfusion.com/documentation/api/gantt/column#format) property, instead of a format string.
 > - Make sure that the format string is valid and compatible with the data type of the column, to avoid unexpected results.
@@ -148,7 +148,7 @@ The following example code demonstrates the formatting of data for the **TaskID*
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs12" %}
 
-> To learn more about number formatting, you can refer to the [number](https://ej2.syncfusion.com/documentation/common/globalization/internationalization#number-formatting) section.
+> To learn more about number formatting, you can refer to the [number](https://ej2.syncfusion.com/documentation/common/internationalization#number-formatting) section.
 
 ### Date formatting
 
@@ -173,7 +173,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control for Typ
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs13" %}
 
-> To learn more about date formatting, you can refer to [Date formatting](https://ej2.syncfusion.com/documentation/common/globalization/internationalization#date-formatting).
+> To learn more about date formatting, you can refer to [Date formatting](https://ej2.syncfusion.com/documentation/common/internationalization#date-formatting).
 
 ### Format the date column based on localization
 
@@ -308,7 +308,7 @@ To enable this feature, set [allowResizing](https://ej2.syncfusion.com/documenta
 
 The following screenshot represents the resizing the column using resizer symbol.
 
-![Resizing](https://ej2.syncfusion.com/documentation/images/resizing.gif)
+![Resizing](../images/resizing.gif)
 
 ### Resizing a column to fit its content using method support
 

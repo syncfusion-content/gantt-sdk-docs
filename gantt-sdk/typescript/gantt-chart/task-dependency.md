@@ -49,19 +49,19 @@ Task relationships are categorized into four types based on start and finish dat
 
 - Start to Start (SS): Successor starts with predecessor.
 
-  ![Start to Start dependency](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/images/ss.png)
+  ![Start to Start dependency](./images/ss.png)
 
 - Start to Finish (SF): Successor finishes when predecessor starts.
 
-  ![Start to Finish dependency](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/images/sf.png)
+  ![Start to Finish dependency](./images/sf.png)
 
 - Finish to Start (FS): Successor starts after predecessor finishes (default).
 
-  ![Finish to Start dependency](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/images/fs.png)
+  ![Finish to Start dependency](./images/fs.png)
 
 - Finish to Finish (FF): Successor finishes with predecessor.
 
-  ![Finish to Finish dependency](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/images/ff.png)
+  ![Finish to Finish dependency](./images/ff.png)
 
 Specify types in the data source (e.g., '2SS+1h') for hour-based offsets.
 

@@ -29,6 +29,7 @@ Implement globalization when targeting multilingual users, complying with region
 The [Localization](https://ej2.syncfusion.com/documentation/common/localization) library allows you to localize default text content of the Gantt Chart control. Static text elements such as column headers, dialog titles, tooltips, toolbar items, and system messages can be translated to different languages by defining the [locale](https://ej2.syncfusion.com/documentation/api/gantt#locale) value and providing translation objects.
 
 1.  **Import required libraries**:
+
     ```typescript
     import { L10n, setCulture } from "@syncfusion/ej2-base";
     ```
@@ -84,7 +85,7 @@ The following tables organize all available locale keys by functional category:
 | --------------------------- | ---------------------------------- |
 | InvalidFilterMessage        | Invalid Filter Data                |
 | FilterbarTitle              | \s filter bar cell                 |
-| Matchs                      | No Matches Found                   |
+| Matches                     | No Matches Found                   |
 | FilterButton                | Filter                             |
 | ClearButton                 | Clear                              |
 | StartsWith                  | Starts With                        |

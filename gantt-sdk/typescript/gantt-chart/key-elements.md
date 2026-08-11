@@ -16,37 +16,37 @@ This section explains the key elements of the Gantt Chart interface.
 
 The Gantt component consists of two main sections: a `grid` and a `chart`, separated by a `splitter`. The grid is located on the left side of the Gantt component, while the chart section is on the right side. You can adjust the view of the Gantt by moving the splitter left or right to display only the grid, only the chart, or both.
 
-At the top of Gantt chart, having a [toolbar](https://ej2.syncfusion.com/documentation/gantt/tool-bar/tool-bar) that allows you to peform **CRUD** operations on tasks.
+At the top of Gantt chart, having a [toolbar](https://ej2.syncfusion.com/documentation/gantt/tool-bar) that allows you to perform **CRUD** operations on tasks.
 
-![Gantt chart](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/images/gantt.png)
+![Gantt chart](./images/gantt.png)
 
 **Grid section**
 
 - In the tree grid section, the task details are presented in a tabular format.
 - You can expand or collapse a task by clicking on the expand/collapse icon near the parent task.
-- At the top of the tree grid section is the column header, which dispays the titles of different grid columns.
+- At the top of the tree grid section is the column header, which displays the titles of different grid columns.
 
-![Grid](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/images/tabular.png)
+![Grid](./images/tabular.png)
 
 **Chart section**
 
 - The `X-axis` of the chart represents the timeline scale.
 - In the chart section, task details are displayed in a taskbar format over a time range along with their activities.
 
-![Chart](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/images/chart.png)
+![Chart](./images/chart.png)
 
 **Elements in taskbar**
 
 - To change the task startDate and endDate value, you can use the start date gripper and end date gripper.
 - To change the progress value, you can use the progress gripper.
 
-![Chart edit](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/images/chartedit.png)
+![Chart edit](./images/chartedit.png)
 
 **Managing task dependency**
 
 To establish dependency connections between multiple tasks using connector points.
 
-![dependency](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/images/dependency.png)
+![dependency](./images/dependency.png)
 
 **Other taskbars**
 
@@ -57,7 +57,7 @@ A milestone is a unique type of task characterized by the following attributes:
 - It typically has no distinct start and end dates or may have both set to the same date.
 - The duration value for a milestone task is typically zero.
 
-![Milestone](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/images/milestone-element.png)
+![Milestone](./images/milestone-element.png)
 
 > For more information, refer to [Unscheduled Tasks](https://ej2.syncfusion.com/documentation/gantt/task-scheduling#unscheduled-tasks)
 
@@ -65,7 +65,7 @@ A milestone is a unique type of task characterized by the following attributes:
 
 It is a type of task where the dates are not automatically validated by the Gantt chart.
 
-![Manual taskbar](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/images/manual-task.png)
+![Manual taskbar](./images/manual-task.png)
 
 > For more information, refer to [Manual Tasks](https://ej2.syncfusion.com/documentation/gantt/task-scheduling#manually-scheduled-tasks)
 
@@ -73,13 +73,13 @@ It is a type of task where the dates are not automatically validated by the Gant
 
 A baseline is a line that shows the deviation between the planned dates and the actual dates of tasks.
 
-![Baseline](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/images/baseline.png)
+![Baseline](./images/baseline.png)
 
 **Critical path**
 
 It consists of a series of tasks (or sometimes only a single task) that determine the calculated finish date of the project. If a task on the critical path is delayed, the entire project will be delayed.
 
-![Critical path](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/images/critical-path.png)
+![Critical path](./images/critical-path.png)
 
 **Other elements in chart section**
 
@@ -87,19 +87,19 @@ It consists of a series of tasks (or sometimes only a single task) that determin
 
 It shows significant events on specified days for particular tasks with different icons and labels.
 
-![Indicators](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/images/indicators.png)
+![Indicators](./images/indicators.png)
 
 **Event markers**
 
 Event markers highlight important dates in the project timeline.
 
-![Event markers](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/images/event-markers.png)
+![Event markers](./images/event-markers.png)
 
 **Row drag and drop**
 
 You can rearrange the Gantt chart rows by using the drag icon on the left side of the grid column.
 
-![Drag and drop](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/images/drag.png)
+![Drag and drop](./images/drag.png)
 
 **Dialog box**
 
@@ -109,7 +109,7 @@ You can rearrange the Gantt chart rows by using the drag icon on the left side o
   - Resources
   - Notes
 
-![Dialog box](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/images/dialogBox.png)
+![Dialog box](./images/dialogBox.png)
 
 The `General` tab contains form fields where you can view and edit task details. These fields include:
 **TaskID**: Identifier for the task.
@@ -121,12 +121,12 @@ The `General` tab contains form fields where you can view and edit task details.
 
 The `Dependency` tab displays tasks that are dependent on the current task, along with their details presented in a tabular format.
 
-![Dependenct tab](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/images/dependencytab.png)
+![Dependenct tab](./images/dependencytab.png)
 
 The `Resources` tab lists all resources assigned to the particular task, as well as available resources.
 
-![Resources tab](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/images/resourcestab.png)
+![Resources tab](./images/resourcestab.png)
 
 The `Notes` tab displays any notes that have been added for the task.
 
-![Notes tab](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/images/notestab.png)
+![Notes tab](./images/notestab.png)

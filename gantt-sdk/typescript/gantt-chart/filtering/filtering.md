@@ -51,7 +51,7 @@ The available operators and their supported data types are:
 | contains           | Matches values that include the specified value.     | String                        |
 | equal              | Matches values exactly equal to the specified value. | String, Number, Boolean, Date |
 | notequal           | Matches values not equal to the specified value.     | String, Number, Boolean, Date |
-| greaterthan        | Matches values greater than the specified value.     | Number, Date                  |
+| greater than       | Matches values greater than the specified value.     | Number, Date                  |
 | greaterthanorequal | Matches values greater than or equal to the value.   | Number, Date                  |
 | lessthan           | Matches values less than the specified value.        | Number, Date                  |
 | lessthanorequal    | Matches values less than or equal to the value.      | Number, Date                  |
@@ -147,7 +147,7 @@ You can enable different filter types for individual columns in the Gantt Chart 
 
 ## Customize filtering behavior using events
 
-You can customize the filtering behavior in the TypeScript Gantt using the [actionBegin](https://ej2.syncfusion.com/documentation/documentation/gantt/events#actionbegin) and [actionComplete](https://ej2.syncfusion.com/documentation/gantt/events#actioncomplete) events. These events allow you to inject custom logic at different stages of the filtering workflow.
+You can customize the filtering behavior in the TypeScript Gantt using the [actionBegin](https://ej2.syncfusion.com/documentation/gantt/events#actionbegin) and [actionComplete](https://ej2.syncfusion.com/documentation/gantt/events#actioncomplete) events. These events allow you to inject custom logic at different stages of the filtering workflow.
 
 The following sample demonstrates how to handle different filtering stages using `args.requestType`:
 

@@ -114,15 +114,15 @@ The following code example demonstrates how to enable task dependency editing in
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/editing-cs6" %}
 
-![Alt text](https://ej2.syncfusion.com/documentation/images/user-interaction.png)
+![Alt text](../images/user-interaction.png)
 
 Updating with mouse interaction action
 
-![Alt text](https://ej2.syncfusion.com/documentation/images/cell-edit.png)
+![Alt text](../images/cell-edit.png)
 
 Updating with cell edit
 
-![Alt text](https://ej2.syncfusion.com/documentation/images/dialog.png)
+![Alt text](../images/dialog.png)
 
 Updating with dialog
 
@@ -134,7 +134,7 @@ Tasks' value can be dynamically updated by using the [updateRecordById](https://
 
 > NOTE: Using the [updateRecordById](https://ej2.syncfusion.com/documentation/api/gantt#updaterecordbyid) method, you cannot update the task ID value.
 
-![Add action](https://ej2.syncfusion.com/documentation/images/add-action.png)
+![Add action](../images/add-action.png)
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -147,4 +147,4 @@ Tasks' value can be dynamically updated by using the [updateRecordById](https://
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/updateRecordById-cs1" %}
 
-![Delete action](https://ej2.syncfusion.com/documentation/images/delete-action.png)
+![Delete action](../images/delete-action.png)

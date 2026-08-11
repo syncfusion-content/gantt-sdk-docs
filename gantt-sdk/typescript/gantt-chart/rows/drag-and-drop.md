@@ -43,19 +43,19 @@ In a Gantt chart, drag and drop functionality allows rearranging rows to adjust 
 
 If the border line appears at the top of the target row (e.g., Task ID: 6) while dropping, the row will be placed `above` the target row as a sibling.
 
-![Above Position](https://ej2.syncfusion.com/documentation/images/above.png)
+![Above Position](../images/above.png)
 
 **Below**
 
 If the border line appears at the bottom of the target row (e.g., Task ID: 6) while dropping, the row will be placed `below` the target row as a sibling.
 
-![Below Position](https://ej2.syncfusion.com/documentation/images/below.png)
+![Below Position](../images/below.png)
 
 **Child**
 
 If the border line appears at both the top and bottom of the target row (e.g., Task ID: 6) while dropping, the row will be added as a `child` to the target row.
 
-![Child Position](https://ej2.syncfusion.com/documentation/images/child.png)
+![Child Position](../images/child.png)
 
 ## Drag and drop to custom component
 

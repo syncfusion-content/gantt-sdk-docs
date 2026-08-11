@@ -69,7 +69,7 @@ The following implementation demonstrates how to open the edit dialog for a spec
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/data-markers-cs2" %}
 
-![Custom event bind to data markers](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/images/custom-event-datamarkers.gif)
+![Custom event bind to data markers](./images/custom-event-datamarkers.gif)
 
 **Event handler considerations**: The click event handler locates the parent task row using DOM traversal methods, extracts the task information from the current view data, and calls the [openEditDialog](https://ej2.syncfusion.com/documentation/api/gantt#openeditdialog) method with the appropriate task ID to display the edit dialog for the selected task.
 

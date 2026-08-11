@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Work and Effort Tracking with Task Type Support in TypeScript Gantt Chart
+# Work and Effort Tracking in TypeScript Gantt Chart
 
 ## Work
 

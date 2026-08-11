@@ -79,10 +79,10 @@ Unscheduled tasks are planned for a project without any definite schedule dates.
 
 | Taskbar state     | Auto                                                                            | Manual                                                                            |
 | ----------------- | ------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| `Start Date Only` | ![Alt text](https://ej2.syncfusion.com/documentation/images/startDate-only.png) | ![Alt text](https://ej2.syncfusion.com/documentation/images/startDate-manual.png) |
-| `End Date Only`   | ![Alt text](https://ej2.syncfusion.com/documentation/images/endDate-only.png)   | ![Alt text](https://ej2.syncfusion.com/documentation/images/endDate-manual.png)   |
-| `Duration Only`   | ![Alt text](https://ej2.syncfusion.com/documentation/images/duration-only.png)  | ![Alt text](https://ej2.syncfusion.com/documentation/images/duration-manual.png)  |
-| `Milestone`       | ![Alt text](https://ej2.syncfusion.com/documentation/images/milestone.png)      | ![Alt text](https://ej2.syncfusion.com/documentation/images/milestone.png)        |
+| `Start Date Only` | ![Alt text](./images/startDate-only.png) | ![Alt text](./images/startDate-manual.png) |
+| `End Date Only`   | ![Alt text](./images/endDate-only.png)   | ![Alt text](./images/endDate-manual.png)   |
+| `Duration Only`   | ![Alt text](./images/duration-only.png)  | ![Alt text](./images/duration-manual.png)  |
+| `Milestone`       | ![Alt text](./images/milestone.png)      | ![Alt text](./images/milestone.png)        |
 
 > Note: A milestone is a task that has no start and end dates, but it has a duration value of zero
 

@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: PDF Headers and Footers in Gantt Chart | Syncfusion
+title: PDF Headers and Footers in TypeScript Gantt Chart | Syncfusion
 description: Learn how to customize headers and footers in PDF exports of Syncfusion TypeScript Gantt Chart with text, images, page numbers, and lines.
 keywords: TypeScript gantt pdf header footer, page header, page footer, pdf customization, page numbers, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/pdf-export/header-and-footer
@@ -161,6 +161,6 @@ By default, the exported PDF file includes a footer. The footer can be disabled 
 
 ## See also
 
-- [How to export to PDF?](https://ej2.syncfusion.com/documentation/pdf-export/pdf-export)
-- [How to customize PDF export?](https://ej2.syncfusion.com/documentation/pdf-export/customize-pdf-export)
-- [How to manage task dependencies?](https://ej2.syncfusion.com/documentation/task-dependency)
+- [How to export to PDF?](https://ej2.syncfusion.com/documentation/gantt/pdf-export/pdf-export)
+- [How to customize PDF export?](https://ej2.syncfusion.com/documentation/gantt/pdf-export/pdf-export)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/documentation/gantt/task-dependency)
