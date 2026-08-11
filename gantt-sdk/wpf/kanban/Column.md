@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customizing columns in WPF Kanban board | Syncfusion
-description: This documentation explains the options available to customize the column, including custom size, categorizing the cards, etc. in WPF Kanban board. 
+title: Column in WPF SfKanban | Syncfusion
+description: Learn about Column support in Syncfusion WPF SfKanban, including headers, categories, drag-and-drop behavior, constraints, and appearance settings.
 platform: gantt-sdk
 control: SfKanban
 documentation: ug
 ---
 
-# Column in WPF Kanban (SfKanban) control
+# Column in WPF SfKanban
 
 ## Customizing column size
 

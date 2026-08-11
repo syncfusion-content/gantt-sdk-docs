@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization in UWP Gantt control | Syncfusion
-description: Learn here all about Localization support in Syncfusion UWP Gantt (SfGantt) control and more.
+title: Localization in UWP SfGantt | Syncfusion
+description: Learn about Localization support in Syncfusion UWP SfGantt using culture-specific resources and localization settings.
 platform: gantt-sdk
 control: SfGantt
 documentation: ug
 ---
 
-# Localization in UWP Gantt (SfGantt)
+# Localization in UWP SfGantt
 
 Localization is the process of translating the application resources into different languages for specific cultures. You can localize the SfGantt by adding a resource file. The application culture can be changed by setting the `PrimaryLanguageOverride` in the MainPage() constructor.
 
