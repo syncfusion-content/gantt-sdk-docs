@@ -3,11 +3,11 @@ layout: post
 title: Columns in ASP.NET Core Gantt Chart | Syncfusion
 description: Learn how to configure and customize columns in Syncfusion ASP.NET Core Gantt Chart using field mapping, column types, formatting, and templates.
 keywords: asp.net core gantt columns, gantt column configuration, field mapping, column customization, column types, gantt columns, syncfusion gantt chart
-canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/columns
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/columns/columns
 platform: gantt-sdk
 control: Columns - Gantt Chart
 documentation: ug
-domainurl: https://help.syncfusion.com/gantt-sdk
+domainurl: https://help.syncfusion.com/gantt-sdk/overview
 ---
 
 # Columns with Field Mapping and Formatting in ASP.NET Core Gantt Chart

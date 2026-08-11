@@ -7,7 +7,7 @@ canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/loadin
 platform: gantt-sdk
 control: Loading Animation - Gantt Chart
 documentation: ug
-domainurl: https://help.syncfusion.com/gantt-sdk
+domainurl: https://help.syncfusion.com/gantt-sdk/overview
 ---
 
 # Loading Indicators with Spinner and Shimmer in ASP.NET Core Gantt Chart

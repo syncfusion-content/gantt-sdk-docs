@@ -7,7 +7,7 @@ canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/virtua
 platform: gantt-sdk
 control: Virtual Scroll - Gantt Chart
 documentation: ug
-domainurl: https://help.syncfusion.com/gantt-sdk
+domainurl: https://help.syncfusion.com/gantt-sdk/overview
 ---
 
 # Implementing Virtual Scrolling for Performance in ASP.NET Core Gantt Chart

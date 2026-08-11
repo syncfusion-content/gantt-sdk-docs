@@ -7,7 +7,7 @@ canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managi
 platform: gantt-sdk
 control: Managing Tasks - Gantt Chart
 documentation: ug
-domainurl: https://help.syncfusion.com/gantt-sdk
+domainurl: https://help.syncfusion.com/gantt-sdk/overview
 ---
 
 # Implementing Data Validation and Error Handling in ASP.NET Core Gantt Chart
@@ -15,7 +15,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 ## Column validation
 
 Column validation validates the editing and adding data and it display errors for invalid fields before saving data. This is effective in both inline and dialog editing.
-Gantt uses [`Form Validator`](https://ej2.syncfusion.com/documentation/form-validator) component for column validation. You can set [`validation rules`](https://ej2.syncfusion.com/documentation/form-validator/validation-rules) by defining the [`validationRules`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_ValidationRules) in [`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Columns). The value cannot be saved unless the validation rule get satisfied.
+Gantt uses [`Form Validator`](https://ej2.syncfusion.com/documentation/form-validator/validation-rules#validating-a-form) component for column validation. You can set [`validation rules`](https://ej2.syncfusion.com/documentation/form-validator/validation-rules) by defining the [`validationRules`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_ValidationRules) in [`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Columns). The value cannot be saved unless the validation rule get satisfied.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
