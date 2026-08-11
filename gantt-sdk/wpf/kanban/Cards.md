@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cards in WPF SfKanban | Syncfusion
-description: Learn about Cards support in Syncfusion WPF SfKanban using custom templates, card styles, data models, and template selectors.
+description: Learn about Cards support in Syncfusion WPF SfKanban using custom templates, card styles, data models, and template selectors. 
 platform: gantt-sdk
 control: SfKanban
 documentation: ug
