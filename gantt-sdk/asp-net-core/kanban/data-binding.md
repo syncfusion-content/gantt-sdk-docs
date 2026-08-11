@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Data Binding in ASP.NET Core Kanban Component
+title: Data Binding in ASP.NET Core Kanban Component | Syncfusion
 description: Learn here all about Data Binding in Syncfusion ASP.NET Core Kanban component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
 control: Data Binding
-publishingplatform: gantt-sdk
 documentation: ug
 ---
 
 
-# Data binding
+# Data Binding in ASP.NET Core Kanban Component
 
 The Kanban uses `DataManager`, which supports both RESTful data service binding and list binding. The `dataSource`property of Kanban can be assigned either with the instance of `DataManager` or List, as it supports the following two data binding methods:
 

@@ -431,7 +431,7 @@ In the following sample, the hyperlinks and images are exported to PDF using [hy
 
 ### Exporting with taskbar template
 
-The PDF export functionality allows to export taskbar templates that include `images` and `text` to an PDF document using [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/react/documentation/api/gantt/#pdfquerytaskbarinfo) event. Taskbars in the exported PDF document can be customized or formatted using the `pdfQueryTaskbarInfo` event for parent taskbar templates, taskbar template and milestone templates.
+The PDF export functionality allows to export taskbar templates that include `images` and `text` to an PDF document using [pdfQueryTaskbarInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_PdfQueryTaskbarInfo) event. Taskbars in the exported PDF document can be customized or formatted using the `pdfQueryTaskbarInfo` event for parent taskbar templates, taskbar template and milestone templates.
 
 In the following sample, taskbar templates with images and text are exported to PDF using [taskbarTemplate](https://ej2.syncfusion.com/react/documentation/api/gantt/pdfquerytaskbarinfoeventargs#taskbarTemplate) properties in the [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/react/documentation/api/gantt/index-default#pdfquerytaskbarinfo) event.
 
@@ -462,7 +462,7 @@ In the following sample, taskbar templates with images and text are exported to 
 
 ### Exporting with task label template
 
-The PDF export functionality allows to export task label template that include `images` and `text` to an PDF document using [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/react/documentation/api/gantt/#pdfquerytaskbarinfo) event.
+The PDF export functionality allows to export task label template that include `images` and `text` to an PDF document using [pdfQueryTaskbarInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_PdfQueryTaskbarInfo) event.
 
 In the following sample, task label template with images and text are exported to PDF using [labelSettings](https://ej2.syncfusion.com/react/documentation/api/gantt/pdfquerytaskbarinfoeventargs#labelSettings) properties in the [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/react/documentation/api/gantt/index-default#pdfquerytaskbarinfo) event.
 

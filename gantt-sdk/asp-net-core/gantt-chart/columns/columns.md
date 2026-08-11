@@ -82,7 +82,7 @@ The column header text can be defined using the [`HeaderText`](https://help.sync
 
 ## Format
 
-To format the cell values based on a specific culture, use the [`Columns.Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Format) property. The Gantt control uses the [`Internationalization`](../../common/internationalization/) library to format [`number`](../../common/internationalization/#number-formatting) and [`date`](../../common/internationalization/#manipulating-datetime) values.
+To format the cell values based on a specific culture, use the [`Columns.Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Format) property. The Gantt control uses the [`Internationalization`](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/global-local#internationalization) library to format [`number`](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/global-local#internationalization) and [`date`](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/global-local#internationalization) values.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -111,7 +111,7 @@ To format the cell values based on a specific culture, use the [`Columns.Format`
 
 ![Alt text](images/formatColumn.png)
 
-N> By default, the [`number`](../../common/internationalization/#number-formatting) and [`date`](../../common/internationalization/#manipulating-datetime) values are formatted in `en-US` culture.
+N> By default, the [`number`](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/global-local#internationalization) and [`date`](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/global-local#internationalization) values are formatted in `en-US` culture.
 
 ### Number formatting
 

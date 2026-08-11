@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk/overview
 ---
 
-# Opening Add and Edit Dialogs Programmatically in ASP.NET Core Gantt Chart
+# Opening Add and Edit Dialogs in ASP.NET Core Gantt Chart
 
 Gantt add and edit dialogs can be opened dynamically by using `openAddDialog` and `openEditDialog` methods. The following code example shows how to open add and dialog on separate button click actions.
 

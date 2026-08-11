@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk/overview
 ---
 
-# Work and Effort Tracking with Task Type Support in ASP.NET Core Gantt Chart
+# Work and Effort Tracking in ASP.NET Core Gantt Chart
 
 ## Work
 

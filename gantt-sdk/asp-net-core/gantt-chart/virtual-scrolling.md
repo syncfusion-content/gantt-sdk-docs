@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk/overview
 ---
 
-# Implementing Virtual Scrolling for Performance in ASP.NET Core Gantt Chart
+# Implementing Virtual Scrolling in ASP.NET Core Gantt Chart
 
 Virtual Scroll support in Gantt allows you to load large amount of data without performance degradation. To enable Virtual Scrolling, you need to inject `VirtualScroll` module in Gantt.
 

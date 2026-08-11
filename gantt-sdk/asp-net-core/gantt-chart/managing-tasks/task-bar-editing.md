@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk/overview
 ---
 
-# Editing Tasks Using Taskbar Drag and Resize in ASP.NET Core Gantt Chart
+# Taskbar Editing in ASP.NET Core Gantt Chart
 
 ## Taskbar editing
 

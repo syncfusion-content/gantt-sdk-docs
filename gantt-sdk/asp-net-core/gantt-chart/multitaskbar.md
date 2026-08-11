@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk/overview
 ---
 
-# Multi Taskbar with Resource Row Visualization in ASP.NET Core Gantt Chart
+# Multi Taskbar in ASP.NET Core Gantt Chart
 
 ## Resource Multi Taskbar
 

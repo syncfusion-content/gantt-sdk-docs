@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom Data Source in Excel Export | ASP.NET Core Gantt Chart | Syncfusion
+title: Excel Export Options for ASP.NET Core Gantt Chart | Syncfusion
 description: Learn how to use custom data sources for Excel export in Syncfusion ASP.NET Core Gantt Chart with flexible data transformation options.
 keywords: asp.net core gantt custom datasource, excel export data source, export custom data, data export, excel datasource, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/excel-export/custom-data-source

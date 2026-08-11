@@ -141,7 +141,7 @@ On expand action [`Expanding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syn
 
 ## Customize rows
 
-You can customize the appearance of a row in grid side, by using the [`rowDataBound`](../api/gantt/#rowdatabound) event and in chart side by using [`queryTaskbarInfo`](../api/gantt/#querytaskbarinfo) event.
+You can customize the appearance of a row in grid side, by using the [`rowDataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_RowDataBound) event and in chart side by using [`queryTaskbarInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_QueryTaskbarInfo) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -209,7 +209,7 @@ You can change the background colour of alternative rows in Gantt chart, by over
 
 ## Row spanning
 
-Gantt chart has an option to span row cells. You can achieve this using [`rowSpan`](../api/gantt/queryCellInfoEventArgs/#rowspan) attribute to span cells in the [`QueryCellInfo`](../api/gantt/queryCellInfoEventArgs) event.
+Gantt chart has an option to span row cells. You can achieve this using `rowSpan` attribute to span cells in the [`QueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_QueryCellInfo) event.
 
 In the following demo, **Soil test approval** cell is spanned to two rows in the **TaskName** column.
 

@@ -154,7 +154,7 @@ N> In above sample, you can search only `TaskName` and `Duration` column values.
 
 ## Clear search by external button
 
-You can set [`searchSettings.key`](../api/gantt/searchSettings/#key) property as `empty` string, to clear the searched Gantt records from external button.
+You can set [`searchSettings.key`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttSearchSettings.html#Syncfusion_EJ2_Gantt_GanttSearchSettings_Key) property as `empty` string, to clear the searched Gantt records from external button.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

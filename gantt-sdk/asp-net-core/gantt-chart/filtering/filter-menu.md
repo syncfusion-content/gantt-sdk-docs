@@ -44,7 +44,7 @@ N> The [`AllowFiltering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 
 ## Custom component in filter menu
 
-The [`column.filter.ui`](../api/gantt/column/#filter) is used to add custom filter components to a particular column.
+The `column.filter.ui` is used to add custom filter components to a particular column.
 To implement a custom filter UI, define the following functions:
 
 * `create`:  Creates a custom component.

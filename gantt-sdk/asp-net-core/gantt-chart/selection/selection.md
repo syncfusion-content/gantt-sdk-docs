@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk/overview
 ---
 
-# Enabling and Configuring Selection Behavior in ASP.NET Core Gantt Chart
+# Configuring Selection Behavior in ASP.NET Core Gantt Chart
 
 Selection provides an option to highlight a row or a cell. It can be done using arrow keys or by scrolling down the mouse. To disable selection in the Gantt control, set the [`AllowSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowSelection) to false.
 
@@ -143,7 +143,7 @@ You can clear the selected cells and selected rows by using a method called `cle
 
 ## Get selected row indexes and records
 
-You can get the selected row indexes by using the [`getSelectedRowIndexes`](../api/gantt/#getselectedrowindexes) method. And by using [`getSelectedRecords`](../api/gantt/#getSelectedRecords) method, you can get the selected record details.
+You can get the selected row indexes by using the `getSelectedRowIndexes` method. And by using `getSelectedRecords` method, you can get the selected record details.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -172,7 +172,7 @@ You can get the selected row indexes by using the [`getSelectedRowIndexes`](../a
 
 ## Multiple selection based on condition
 
-You can select multiple rows based on condition by using the [`selectRows`](../api/grid/#selectrows) method.
+You can select multiple rows based on condition by using the `selectRows` method.
 
 In the following code, the rows which contains `TaskId` value as 3 and 4 are selected at initial rendering.
 
