@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Resources in Vue Gantt Chart component | Syncfusion
-description: Learn here all about Resources in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Resources 
+title: Resources in Vue Gantt Chart | Syncfusion
+description: Learn how to manage and allocate resources in Syncfusion Vue Gantt Chart for project staff, equipment, and materials.
+keywords: vue gantt resources, resource allocation, staff assignment, resource management, task assignment, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/resources
 platform: gantt-sdk
+control: Resources - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Resources in Vue Gantt Chart component
+# Resources with Allocation and Task Mapping in Vue Gantt Chart
 
 In Gantt, the resources are represented by staff, equipment and materials etc. In Gantt control you can show or allocate the resources (human resources) for each task.
 

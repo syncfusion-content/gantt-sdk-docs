@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Row Selection in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about Row selection in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Row selection 
+title: Row Selection in Vue Gantt Chart | Syncfusion
+description: Learn how to enable row selection in the Syncfusion Vue Gantt Chart, configure selection modes, and retrieve selected records using built-in APIs.
+keywords: vue gantt row selection, select rows, selection mode, get selected records, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/selection/row-selection
 platform: gantt-sdk
+control: Row Selection - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Row Selection in Vue Gantt Chart Component
+# Selecting Multiple Rows and Rows in Vue Gantt Chart
 
 The row selection in the Gantt Chart component can be enabled or disabled using the [allowSelection](https://ej2.syncfusion.com/vue/documentation/api/gantt#allowselection) property. You can get the selected row object using the [getSelectedRecords](https://ej2.syncfusion.com/vue/documentation/api/gantt/selection#getSelectedRecords) method. The following code example shows how to disable row selection in Gantt.
 

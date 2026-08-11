@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Vue 3 getting started with the Gantt Chart component | Syncfusion
-description: Check out and learn about Vue 3 getting started with the Vue Gantt Chart component of Syncfusion Essential JS 2 and more details.
-control: Vue 3 getting started
+title: Getting Started with Vue Gantt Chart in Vue 3 | Syncfusion
+description: Learn how to get started with the Syncfusion Vue Gantt Chart in a Vue 3 Vite app using the Composition API, including setup, dependencies, and configuration.
+keywords: vue 3 gantt chart, vue 3 setup, composition api, gantt chart vue 3, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/getting-started-vue
 platform: gantt-sdk
+control: Getting Started - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Getting Started with the Vue Gantt Chart Component in Vue 3
+# Getting Started with Vue Gantt Chart in Vue 3
 
 This article provides a step-by-step guide for setting up a [Vite](https://vitejs.dev) project with a JavaScript environment and integrating the [Vue Gantt Chart](https://www.syncfusion.com/vue-components/vue-gantt-chart) component using the [Composition API](https://vuejs.org/guide/introduction.html#composition-api).
 
@@ -20,7 +22,7 @@ This article provides a step-by-step guide for setting up a [Vite](https://vitej
 - [Node.js 24+](https://nodejs.org/en) (LTS recommended).
 - Syncfusion CLI.
 
-## Install the Syncfusion CLI 
+## Install the Syncfusion CLI
 
 Install the Syncfusion CLI globally using the following command:
 
@@ -32,7 +34,7 @@ npm install -g @syncfusion/syncfusion-cli
 
 ## Set up the Vite project using Syncfusion CLI
 
-You can create a Vue application with [Vite](https://vite.dev/) using the Syncfusion CLI. The CLI provides two ways to create a project:
+You can create a Vue application with [Vite](https://vite.dev) using the Syncfusion CLI. The CLI provides two ways to create a project:
 
 ### Non-interactive mode
 
@@ -68,7 +70,7 @@ When you run the `sf` command, the CLI prompts you to select the required projec
 √ Choose Theme: » Material3
 √ Choose Style Format: » CSS
 √ Would you like to integrate the Syncfusion MCP Server (AI Assistant) into this project? ... no
-√ Would you like to install Syncfusion Component Skills for AI-powered development? ... no      
+√ Would you like to install Syncfusion Component Skills for AI-powered development? ... no  
 √ Install dependencies and start app now? ... no
 
 {% endhighlight %}
@@ -177,7 +179,7 @@ Now that `my-project` is ready to run with default settings, let's add Syncfusio
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Vue packages
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Vue component packages are available at [npmjs.com](https://www.npmjs.com/search?q=ej2-vue). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Vue components in the project, install the corresponding npm package.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Vue component packages are available at [npm package registry](https://www.npmjs.com/search?q=ej2-vue). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Vue components in the project, install the corresponding npm package.
 
 This article uses the [Vue Gantt Chart component](https://www.syncfusion.com/vue-components/vue-gantt-chart) as an example. To use the Vue Gantt Chart component in the project, install the `@syncfusion/ej2-vue-gantt` package using the following command:
 

@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Cell Selection in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Cell Selection in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Cell Selection in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to implement cell selection in Syncfusion ASP.NET Core Gantt Chart with support for single and multiple cell selection modes.
+keywords: asp.net core gantt cell selection, select cells, cell select, multi cell selection, cell highlighting, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/selection/cell-selection
 platform: gantt-sdk
-control: Selection
-publishingplatform: gantt-sdk
+control: Selection - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Cell selection action in gantt control
+# Selecting Individual Cells and Cell Ranges in ASP.NET Core Gantt Chart
 
 You can select a cell in the Gantt control by setting the [`selectionSettings.mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttSelectionSettings) property to cell. You can get the selected cell information using the `getSelectedRowCellIndexes` method. This method returns the result as an object collection, which has `cellIndexes` and `rowIndex` information of the selected cells.
 

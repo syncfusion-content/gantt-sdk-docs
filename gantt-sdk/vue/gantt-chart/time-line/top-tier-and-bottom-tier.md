@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Top Tier and Bottom Tier in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about Top tier and bottom tier in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Top tier and bottom tier 
+title: Top Tier and Bottom Tier in Vue Gantt Chart | Syncfusion
+description: Learn how to customize top and bottom tiers in timeline of Syncfusion Vue Gantt Chart with units and formats.
+keywords: vue gantt top tier, bottom tier, timeline tier, tier customization, timeline settings, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/time-line/top-tier-and-bottom-tier
 platform: gantt-sdk
+control: Top Tier and Bottom Tier - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Top Tier and Bottom Tier in Vue Gantt Chart Component
+# Customizing Timeline Top and Bottom Tiers in Vue Gantt Chart
 
 The Gantt Chart component contains two tiers layout in timeline, you can customize the top tier and bottom tier using the [topTier](https://ej2.syncfusion.com/vue/documentation/api/gantt/timelineSettings#toptier) and [bottomTier](https://ej2.syncfusion.com/vue/documentation/api/gantt/timelineSettings#bottomtier) properties. Timeline tier's unit can be defined by using the [unit](https://ej2.syncfusion.com/vue/documentation/api/gantt/timelineTierSettings#unit) property, and the [format](https://ej2.syncfusion.com/vue/documentation/api/gantt/timelineTierSettings#format) property is used to define the date format of timeline cell. The [count](https://ej2.syncfusion.com/vue/documentation/api/gantt/timelineTierSettings#count) property is used to define the number of units to be combined as a single cell and the [formatter](https://ej2.syncfusion.com/vue/documentation/api/gantt/timelineTierSettings#formatter) property is used to define the custom method to format the date value of timeline cell.
 

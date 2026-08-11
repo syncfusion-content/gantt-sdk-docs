@@ -1,20 +1,22 @@
 ---
 layout: post
-title: Columns in Angular Kanban component | Syncfusion
-description: Learn how to configure columns in the Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
+title: Columns in Angular Kanban | Syncfusion
+description: Learn how to configure columns, headers, and workflow stages in Syncfusion Angular Kanban for organized task management.
+keywords: angular kanban columns, syncfusion kanban, workflow columns, kanban stages
+canonical: https://help.syncfusion.com/gantt-sdk/angular/kanban/columns
 platform: gantt-sdk
-control: Columns
+control: Columns - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Columns in Angular Kanban Component
+# Columns Configuration and Workflow Stages in Angular Kanban
 
 The **Kanban** columns represent the each stage of the process. The column definitions are used as the **dataSource** schema in the Kanban. The Kanban operations such as drag-and-drop, swimlane, and toggle columns are performed based on column definitions.
 
 ## Single-key mapping
 
-Kanban columns are categorized by mapping the **key** from the datasource using the [keyField](https://ej2.syncfusion.com/angular/documentation/api/kanban/#keyfield) property. The corresponding **value** in the datasource is mapped inside the columns `keyField`. Based on this categorization, Kanban columns are split on this board.
+Kanban columns are categorized by mapping the **key** from the datasource using the [keyField](https://ej2.syncfusion.com/angular/documentation/api/kanban#keyfield) property. The corresponding **value** in the datasource is mapped inside the columns `keyField`. Based on this categorization, Kanban columns are split on this board.
 
 > The `keyField` property is mandatory to render the columns in the Kanban board.
 
@@ -27,7 +29,7 @@ Kanban columns are categorized by mapping the **key** from the datasource using 
 {% include code-snippet/gantt-sdk/angular/kanban/single-key-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/single-key-cs1" %}
 
 ## Multi-key mapping
@@ -43,7 +45,7 @@ Kanban board allows to render a single column by mapping multiple keys using `ke
 {% include code-snippet/gantt-sdk/angular/kanban/multiple-keys-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/multiple-keys-cs1" %}
 
 ## Header text
@@ -63,12 +65,12 @@ The column header can be customized with HTML or CSS using the `template` proper
 {% include code-snippet/gantt-sdk/angular/kanban/header-template-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/header-template-cs1" %}
 
 ## Toggle columns
 
-Columns can be expanded or collapsed using the `allowToggle` property in `columns`, which renders an expand/collapse icon in the header. 
+Columns can be expanded or collapsed using the `allowToggle` property in `columns`, which renders an expand/collapse icon in the header.
 
 > By default, collapsed column width is set to `50px`.
 
@@ -81,14 +83,14 @@ Columns can be expanded or collapsed using the `allowToggle` property in `column
 {% include code-snippet/gantt-sdk/angular/kanban/toggle-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/toggle-cs1" %}
 
 ### Initially collapsed column
 
 By default, all columns are on expanded state when loading the Kanban board initially. But, you can render the columns with collapsed state using the `isExpanded` property.
 
->The `isExpanded` property only works when enabling the `allowToggle` property on particular column.
+> The `isExpanded` property only works when enabling the `allowToggle` property on particular column.
 
 In the following example, the backlog column is collapsed on initialization of Kanban board.
 
@@ -101,12 +103,12 @@ In the following example, the backlog column is collapsed on initialization of K
 {% include code-snippet/gantt-sdk/angular/kanban/expanded-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/expanded-cs1" %}
 
 ## Drag and Drop
 
-The Kanban component allows dynamic column reordering through drag-and-drop interactions. To enable this, set the [`allowColumnDragAndDrop`](https://ej2.syncfusion.com/angular/documentation/api/kanban/#allowColumnDragAndDrop) property to true. Once enabled, users can rearrange columns by dragging a column header to a new position, with visual feedback highlighting potential drop locations.
+The Kanban component allows dynamic column reordering through drag-and-drop interactions. To enable this, set the [`allowColumnDragAndDrop`](https://ej2.syncfusion.com/angular/documentation/api/kanban#allowColumnDragAndDrop) property to true. Once enabled, users can rearrange columns by dragging a column header to a new position, with visual feedback highlighting potential drop locations.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -117,14 +119,14 @@ The Kanban component allows dynamic column reordering through drag-and-drop inte
 {% include code-snippet/gantt-sdk/angular/kanban/column-drag-and-drop-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/column-drag-and-drop-cs1" %}
 
 ## Stacked headers
 
 Stacked headers are the additional headers to column header that will group the similar columns.
 
-Define the grouping of columns **key** value to the `keyFields` property and provide the custom header text name to grouped columns using the `text` property, which is placed inside the [stackedHeaders](https://ej2.syncfusion.com/angular/documentation/api/kanban/#stackedheaders) property.
+Define the grouping of columns **key** value to the `keyFields` property and provide the custom header text name to grouped columns using the `text` property, which is placed inside the [stackedHeaders](https://ej2.syncfusion.com/angular/documentation/api/kanban#stackedheaders) property.
 
 In the following code, the kanban columns 'InProgress, Review' are grouped under 'Development Phase' category.
 
@@ -137,5 +139,5 @@ In the following code, the kanban columns 'InProgress, Review' are grouped under
 {% include code-snippet/gantt-sdk/angular/kanban/stacked-headers-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/kanban/stacked-headers-cs1" %}

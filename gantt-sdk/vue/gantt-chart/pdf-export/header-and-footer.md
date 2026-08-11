@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Header and footer of PDF export in Vue Gantt Chart component | Syncfusion
-description: Learn here all about Header and footer of PDF export in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Header and footer of PDF export
+title: Header and Footer in PDF Export in Vue Gantt Chart | Syncfusion
+description: Learn how to customize header and footer in PDF export for Vue Gantt Chart with text, page numbers, and images.
+keywords: vue gantt pdf header footer, customize header, footer customization, page numbers, pdf export, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/pdf-export/header-and-footer
 platform: gantt-sdk
+control: Header and Footer in PDF Export - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Customizing header and footer of PDF export in Vue Gantt control
+# Adding Headers and Footers to PDF Exports in Vue Gantt Chart
 
 PDF export provides an option to specify and customize text, page number, line and image in header and footer of exported PDF document by using [pdfExportProperties](https://helpej2.syncfusion.com/vue/documentation/api/gantt/pdfExportProperties).
 
@@ -47,13 +49,6 @@ This functionality helps to customize the line that appears in the header or foo
 * `type` determines content type, such as 'Line'.
 * `style` is used to set properties like the color (penColor), size (penSize), and style (dashStyle) of the line.
 * `points` specifies the coordinates for the start and end points of the line.
-
-Supported line styles:
-* dash
-* dot
-* dashdot
-* dashdotdot
-* solid
 
 ```ts
 

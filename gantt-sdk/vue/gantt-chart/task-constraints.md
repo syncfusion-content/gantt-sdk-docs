@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Task Constraints in Vue Gantt Chart component | Syncfusion 
-description: Learn how to implement and manage task constraints in the Syncfusion Vue Gantt Chart component to enforce scheduling rules and dependencies.
+title: Task Constraints in Vue Gantt Chart | Syncfusion
+description: Learn how to implement and manage task constraints in the Syncfusion Vue Gantt Chart to enforce scheduling rules and dependencies.
+keywords: vue gantt task constraints, scheduling rules, constraint types, task scheduling, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/task-constraints
 platform: gantt-sdk
-control: Task Constraints 
+control: Task Constraints - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Task constraints in Vue Gantt Chart component
+# Task Constraints with Scheduling Rules in Vue Gantt Chart
 
 Task constraints define rules that control when a task is allowed to start or finish in the project timeline. They help ensure that tasks follow a logical sequence, align with fixed deadlines, and make efficient use of resources. Constraints also support planning for real-world limitations like material delays, team availability, or mandatory compliance dates—making your schedule more realistic and reliable.
 

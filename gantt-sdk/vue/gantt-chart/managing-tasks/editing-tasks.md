@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Editing Tasks In Vue Gantt Chart Component | Syncfusion
-description: Learn here all about Editing tasks in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Editing tasks 
+title: Editing Tasks in Vue Gantt Chart | Syncfusion
+description: Learn how to edit tasks in Syncfusion Vue Gantt Chart with inline editing, dialog editing, and taskbar editing options.
+keywords: vue gantt edit tasks, task editing, inline editing, dialog editing, taskbar editing, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/managing-tasks/editing-tasks
 platform: gantt-sdk
+control: Editing Tasks - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Editing Tasks In Vue Gantt Chart Component
+# Editing Task Properties and Information in Vue Gantt Chart
 
 The editing feature can be enabled in the Gantt Chart component by enabling the [editSettings.allowEditing](https://ej2.syncfusion.com/vue/documentation/api/gantt/editSettings#allowediting) and [editSettings.allowTaskbarEditing](https://ej2.syncfusion.com/vue/documentation/api/gantt/editSettings#allowtaskbarediting) properties.
 

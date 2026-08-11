@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Undo Redo in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about Undo Redo in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Undo Redo in Vue Gantt Chart | Syncfusion
+description: Learn how to use undo and redo features in Syncfusion Vue Gantt Chart to revert and reapply user actions.
+keywords: vue gantt undo redo, undo action, redo action, action history, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/undo-redo
 platform: gantt-sdk
-control: Undo Redo 
+control: Undo Redo - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Undo Redo in Vue Gantt Chart Component
+# Undo and Redo with Action History Management in Vue Gantt Chart
 
 The Undo feature enables users to revert the most recent action performed in the Gantt Chart. It helps undo changes made to tasks, dependencies, or other actions within the Gantt Chart.
 

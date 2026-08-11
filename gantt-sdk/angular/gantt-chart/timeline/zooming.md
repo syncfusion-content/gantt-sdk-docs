@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Zooming Functionality in Angular Gantt Chart Component | Syncfusion
-description: Explore zooming options in the Syncfusion Angular Gantt Chart component, including Zoom In, Zoom Out, Zoom To Fit, and custom zooming levels.
+title: Zooming in Angular Gantt Chart | Zoom In & Out | Syncfusion
+description: Learn how to enable zooming in Syncfusion Angular Gantt Chart with Zoom In, Zoom Out, Zoom To Fit, and custom levels to adjust timeline view across timespans.
+keywords: angular gantt zooming, zoomin, zoomout, fittoproject, custom zoom levels, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/timeline/zooming
 platform: gantt-sdk
-control: Zooming
+control: Zooming - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Zooming Functionality in Angular Gantt Chart Component
+# Adjusting Zoom Levels and Timeline Scaling in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component provides zooming support to adjust the timeline view dynamically. This includes increasing or decreasing the width of timeline cells and changing the timeline units to view tasks across various timespan from minutes to decades.
 

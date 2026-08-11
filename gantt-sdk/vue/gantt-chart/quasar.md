@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Getting Started with Quasar Framework and Vue Gantt Chart | Syncfusion
-description: Check out and learn about getting started with the Quasar Framework and Vue Gantt Chart component of Syncfusion Essential JS 2 and more details.
-control: Quasar 
+title: Getting Started with Vue Gantt Chart in Quasar | Syncfusion
+description: Learn how to get started with Syncfusion Vue Gantt Chart integrated with Quasar Framework for building responsive applications.
+keywords: vue gantt quasar, quasar framework, vue gantt setup, quasar integration, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/quasar
 platform: gantt-sdk
+control: Getting Started - Quasar
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Getting Started with the Vue Gantt Chart in the Quasar Framework
+# Getting Started with Vue Gantt Chart in Quasar Framework
 
 This article provides a step-by-step guide for setting up a [Quasar](https://quasar.dev) project and integrating the [Vue Gantt Chart](https://www.syncfusion.com/vue-components/vue-gantt-chart) component using the [Composition API](https://vuejs.org/guide/introduction.html#composition-api).
 
@@ -20,7 +22,7 @@ The `Quasar` Framework is a Vue.js-based open-source framework that empowers dev
 
 ## Set up the Quasar project
 
-To initiate the creation of a new [Quasar](https://quasar.dev/start/quick-start/) project, use the following commands:
+To initiate the creation of a new [Quasar](https://quasar.dev/start/quick-start) project, use the following commands:
 
 ```bash
 npm init quasar
@@ -40,12 +42,11 @@ Navigate to your project directory:
 cd quasar-project
 ```
 
-Now that `quasar-project` is ready to run with default settings, let's add  Vue Gantt Chart component to the project.
-
+Now that `quasar-project` is ready to run with default settings, let's add Vue Gantt Chart component to the project.
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Vue packages
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Vue component packages are available at [npmjs.com](https://www.npmjs.com/search?q=ej2-vue). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Vue components in the project, install the corresponding npm package.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Vue component packages are available at [npm package registry](https://www.npmjs.com/search?q=ej2-vue). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Vue components in the project, install the corresponding npm package.
 
 This article uses the [Vue Gantt Chart component](https://www.syncfusion.com/vue-components/vue-gantt-chart) as an example. To use the Vue Gantt Chart component in the project, the `@syncfusion/ej2-vue-gantt` package needs to be installed using the following command:
 
@@ -73,6 +74,7 @@ In this article, the `Tailwind3` theme is applied using CSS styles, which are av
 {% endtabs %}
 
 > **Note:** When using features like editing, toolbar, filtering, or dialogs, you need to import additional component styles:
+>
 > ```css
 > /* For editing, toolbar, and dialog features */
 > @import "../node_modules/@syncfusion/ej2-calendars/styles/tailwind3.css";
@@ -81,7 +83,7 @@ In this article, the `Tailwind3` theme is applied using CSS styles, which are av
 > @import "../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css";
 > @import "../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css";
 > @import "../node_modules/@syncfusion/ej2-notifications/styles/tailwind3.css";
-> 
+>
 > /* For rich text editor in dialog notes tab */
 > @import "../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css";
 > ```
@@ -89,41 +91,89 @@ In this article, the `Tailwind3` theme is applied using CSS styles, which are av
 > The order of importing CSS styles should be in line with their dependency graph.
 
 ## Create sample data
+
 Define a simple task list with hierarchical relationships. Each task must have a `StartDate` and either a `Duration` or `EndDate` to render properly.
 
 ```js
 const data = [
-  { TaskID: 1, TaskName: 'Project initiation', StartDate: new Date('2024-04-01'), EndDate: new Date('2024-04-15') },
-  { TaskID: 2, TaskName: 'Identify site location', StartDate: new Date('2024-04-01'), Duration: 4, Progress: 70, ParentID: 1 },
-  { TaskID: 3, TaskName: 'Perform site survey', StartDate: new Date('2024-04-01'), Duration: 4, Progress: 50, ParentID: 1 },
-  { TaskID: 4, TaskName: 'Soil testing', StartDate: new Date('2024-04-01'), Duration: 3, Progress: 40, ParentID: 1 },
-  { TaskID: 5, TaskName: 'Project estimation', StartDate: new Date('2024-04-08'), EndDate: new Date('2024-04-18') },
-  { TaskID: 6, TaskName: 'Develop floor plan', StartDate: new Date('2024-04-08'), Duration: 5, Progress: 30, ParentID: 5 },
-  { TaskID: 7, TaskName: 'Estimate project cost', StartDate: new Date('2024-04-08'), Duration: 5, Progress: 20, ParentID: 5 }
-]
+  {
+    TaskID: 1,
+    TaskName: "Project initiation",
+    StartDate: new Date("2024-04-01"),
+    EndDate: new Date("2024-04-15"),
+  },
+  {
+    TaskID: 2,
+    TaskName: "Identify site location",
+    StartDate: new Date("2024-04-01"),
+    Duration: 4,
+    Progress: 70,
+    ParentID: 1,
+  },
+  {
+    TaskID: 3,
+    TaskName: "Perform site survey",
+    StartDate: new Date("2024-04-01"),
+    Duration: 4,
+    Progress: 50,
+    ParentID: 1,
+  },
+  {
+    TaskID: 4,
+    TaskName: "Soil testing",
+    StartDate: new Date("2024-04-01"),
+    Duration: 3,
+    Progress: 40,
+    ParentID: 1,
+  },
+  {
+    TaskID: 5,
+    TaskName: "Project estimation",
+    StartDate: new Date("2024-04-08"),
+    EndDate: new Date("2024-04-18"),
+  },
+  {
+    TaskID: 6,
+    TaskName: "Develop floor plan",
+    StartDate: new Date("2024-04-08"),
+    Duration: 5,
+    Progress: 30,
+    ParentID: 5,
+  },
+  {
+    TaskID: 7,
+    TaskName: "Estimate project cost",
+    StartDate: new Date("2024-04-08"),
+    Duration: 5,
+    Progress: 20,
+    ParentID: 5,
+  },
+];
 ```
+
 ## Configure task fields
 
 ```js
 const taskFields = {
-  id: 'TaskID',
-  name: 'TaskName',
-  startDate: 'StartDate',
-  duration: 'Duration',
-  progress: 'Progress',
-  parentID: 'ParentID'
+  id: "TaskID",
+  name: "TaskName",
+  startDate: "StartDate",
+  duration: "Duration",
+  progress: "Progress",
+  parentID: "ParentID",
 };
 ```
+
 ### Field mapping reference
 
-| Property | Description | Required |
-|----------|-------------|----------|
-| `id` | Unique task identifier | Yes |
-| `name` | Task display name | Yes |
-| `startDate` | Task start date | Yes |
-| `duration` | Task duration in days | Yes |
-| `progress` | Task completion percentage (0-100) | No |
-| `parentID` | Parent task ID for hierarchy | No |
+| Property    | Description                        | Required |
+| ----------- | ---------------------------------- | -------- |
+| `id`        | Unique task identifier             | Yes      |
+| `name`      | Task display name                  | Yes      |
+| `startDate` | Task start date                    | Yes      |
+| `duration`  | Task duration in days              | Yes      |
+| `progress`  | Task completion percentage (0-100) | No       |
+| `parentID`  | Parent task ID for hierarchy       | No       |
 
 *Either `duration` or `endDate` is required for a task to render properly.
 
@@ -142,7 +192,6 @@ First, import and register the Gantt Chart component and its child directives in
 
 {% endhighlight %}
 {% endtabs %}
-
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

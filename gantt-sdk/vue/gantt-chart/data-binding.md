@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Data Binding in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about Data binding in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Data binding 
+title: Data Binding in Vue Gantt Chart | Syncfusion
+description: Learn data binding in Syncfusion Vue Gantt Chart with local arrays, remote data, DataManager, and dynamic data source updates for project management.
+keywords: vue gantt data binding, datasource, datamanager, local data, remote data, hierarchy, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/data-binding
 platform: gantt-sdk
+control: Data Binding - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Data Binding in Vue Gantt Chart Component
+# Data Binding from Local and Remote Sources in Vue Gantt Chart
 
 The Gantt uses `DataManager`, which supports both RESTful JSON data services binding and local JavaScript object array binding. The [dataSource](https://ej2.syncfusion.com/vue/documentation/api/gantt#datasource) property can be assigned either with the instance of DataManager or JavaScript object array collection. Gantt provides support to bind two kinds of data,
 

@@ -1,13 +1,16 @@
 ---
 layout: post
-title: How to Use Drag and Drop in Blazor Kanban Component | Syncfusion®
-description: Checkout and learn here all about drag and drop the cards in the Blazor Kanban component and much more details.
+title: Drag and Drop in Blazor Kanban | Syncfusion
+description: Learn how to enable drag-and-drop interactions in Syncfusion Blazor Kanban to reorder cards and move tasks across columns.
+keywords: blazor kanban drag and drop, syncfusion kanban, card movement, reordering
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/kanban/drag-and-drop
 platform: gantt-sdk
-control: Kanban
+control: Drag and Drop - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Drag and Drop in Blazor Kanban Component
+# Drag and Drop Operations in Blazor Kanban
 
 Cards in the [Blazor Kanban Board](https://www.syncfusion.com/blazor-components/blazor-kanban-board) can be dragged and dropped across columns, within columns, across swimlane rows, or between Kanban boards and external components.
 

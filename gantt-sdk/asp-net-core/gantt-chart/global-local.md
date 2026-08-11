@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Global Local in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Global Local in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Global and Locale in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to configure globalization and locale settings in Syncfusion ASP.NET Core Gantt Chart to support multiple languages and regional formats.
+keywords: asp.net core gantt globalization, locale settings, language support, regional formats, international gantt chart, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/global-locale
 platform: gantt-sdk
-control: Global Local
-publishingplatform: gantt-sdk
+control: Global and Locale - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Globalization in Gantt control
+# Globalization and Localization in ASP.NET Core Gantt Chart
 
 ## Localization
 

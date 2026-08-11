@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Getting started with Angular Kanban Component | Syncfusion
-description: Checkout and learn about Getting started with Angular Kanban component of Syncfusion Essential JS 2 and more details.
+title: Getting Started in Angular Kanban | Syncfusion
+description: Learn how to start using Syncfusion Angular Kanban with step-by-step setup instructions and essential component features.
+keywords: angular kanban getting started, syncfusion kanban, install component, angular setup
+canonical: https://help.syncfusion.com/gantt-sdk/angular/kanban/getting-started
 platform: gantt-sdk
-control: Getting started
+control: Getting Started - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Getting Started with Angular Kanban Component
+# Getting Started with Angular Kanban
 
 The Syncfusion Angular Kanban component is a workflow visualization tool that helps to organize, manage, and track tasks across different stages of a process. This section outlines the steps to create a basic Kanban board in Angular and configure its core features.
 

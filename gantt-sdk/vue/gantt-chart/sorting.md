@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Sorting in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about Sorting in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Sorting 
+title: Sorting in Vue Gantt Chart | Syncfusion
+description: Learn how to sort tasks in Syncfusion Vue Gantt Chart by columns in ascending or descending order with multi-column sorting support.
+keywords: vue gantt sorting, column sorting, sort order, multi-column sort, sort direction, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/sorting
 platform: gantt-sdk
+control: Sorting - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Sorting in Vue Gantt Chart Component
+# Column Sorting with Multi-Sort in Vue Gantt Chart
 
 Sorting enables you to sort data in the ascending or descending order. To sort a column, click the column header.
 

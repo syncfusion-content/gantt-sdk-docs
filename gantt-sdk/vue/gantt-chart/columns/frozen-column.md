@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Column Pinning (Frozen) in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about Column pinning (Frozen) in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Column Pinning (Frozen) in Vue Gantt Chart | Syncfusion
+description: Learn how to enable frozen columns in Syncfusion Vue Gantt Chart to keep selected columns fixed while scrolling.
+keywords: vue gantt frozen columns, column pinning, fixed columns, scrolling, column lock, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/columns/frozen-column
 platform: gantt-sdk
-control: Column pinning (Frozen) 
+control: Frozen Columns - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Column Pinning (Frozen) in Vue Gantt Chart Component
+# Frozen Columns with Left and Right Pinning in Vue Gantt Chart
 
 The [Vue Gantt Chart](https://www.syncfusion.com/vue-components/vue-gantt-chart) component provides a frozen columns feature that keeps selected columns fixed while scrolling horizontally through large datasets. This functionality ensures that critical information remains visible at all times, improving readability and user experience. By maintaining key columns in view, it simplifies navigation and makes referencing important data points easier when working with extensive project details.
 

@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Getting Started with Vue Gantt Chart Component | Syncfusion
-description: Check out and learn about getting started with the Vue Gantt Chart component of Syncfusion Essential JS 2 and more details.
-control: Getting started
+title: Getting Started with Vue Gantt Chart | Syncfusion
+description: Check out and learn about getting started with the Vue Gantt Chart component with step-by-step guide and code examples.
+keywords: vue gantt getting started, setup, installation, first steps, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/getting-started
 platform: gantt-sdk
+control: Getting Started - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -52,7 +54,7 @@ When creating a new project, choose the option `Default ([Vue 2] babel, eslint)`
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Vue packages
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> packages are available at [npmjs.com](https://www.npmjs.com/search?q=ej2-vue). To use Vue components, install the required npm package.
+Syncfusion<sup style="font-size:70%">&reg;</sup> packages are available at [npm package registry](https://www.npmjs.com/search?q=ej2-vue). To use Vue components, install the required npm package.
 
 This article uses the [Vue Gantt Chart component](https://www.syncfusion.com/vue-components/vue-gantt-chart) as an example. Install the `@syncfusion/ej2-vue-gantt` package by running the following command:
 
@@ -275,4 +277,3 @@ You can preview the following sample by clicking the **Preview Sample** button.
 - **[Key Elements](./key-elements)** - Learn about UI components and interactions
 - **[Feature Modules](./module)** - Enable advanced features with module injection
 - **[Overview](./overview)** - Explore all available features
-

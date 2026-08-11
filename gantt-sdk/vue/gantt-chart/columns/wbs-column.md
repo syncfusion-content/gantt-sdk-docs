@@ -1,14 +1,16 @@
 ---
 layout: post
 title: Work Breakdown Structure (WBS) in Vue Gantt Chart | Syncfusion
-description: Learn how to integrate and manage WBS codes in the Syncfusion Vue Gantt Chart component to improve task hierarchy visualization and project tracking.
-control: WBS Column
+description: Learn how to integrate WBS codes in Syncfusion Vue Gantt Chart to improve task hierarchy visualization and project tracking.
+keywords: vue gantt wbs, work breakdown structure, task hierarchy, wbs codes, project structure, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/columns/wbs-column
 platform: gantt-sdk
+control: WBS Column - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Work Breakdown Structure (WBS) in Vue Gantt Chart Component
+# WBS Column for Hierarchical Task Identification in Vue Gantt Chart
 
 The Work Breakdown Structure (WBS) organizes project tasks hierarchically in the Gantt Chart component by assigning unique codes to each task. This system enhances visualization and management by clearly reflecting task relationships and levels. It is especially useful in complex environments such as construction projects or enterprise-scale software development.
 

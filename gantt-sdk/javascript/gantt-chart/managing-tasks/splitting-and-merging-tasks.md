@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Splitting and Merging Tasks in JavaScript Gantt Chart Control | Syncfusion
-description: Learn how to split and merge tasks in the Syncfusion JavaScript Gantt Chart control for flexible task management in project timelines.
+title: Split and Merge Tasks in JavaScript Gantt Chart | Syncfusion
+description: Learn how to split and merge tasks in Syncfusion JavaScript Gantt Chart to create task breaks, manage non-contiguous work, and flexible project scheduling.
+keywords: javascript gantt split merge tasks, task splitting, task merging, work breaks, non-contiguous, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/managing-tasks/splitting-and-merging-tasks
 platform: gantt-sdk
-control: Splitting and merging tasks 
-publishingplatform: gantt-sdk
+control: Split Merge Tasks - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Splitting and Merging Tasks in JavaScript Gantt Chart Control
+# Splitting and Merging Tasks in JavaScript Gantt Chart
 
 Splitting and merging tasks in the JavaScript Gantt Chart control enhances project management by allowing tasks to be divided into segments or recombined, representing breaks or continuous work periods. Split tasks at load time using [taskFields.segments](../../api/gantt/taskFields#segments) for hierarchical data or [taskFields.segmentId](../../api/gantt/taskFields#segmentId) for self-referential data, ensuring segments fit within the task’s start and end dates. Dynamically split tasks via the dialog’s Segments tab or context menu’s Split Task option, requiring `Edit` and valid `taskFields` mappings. Merge tasks using the context menu’s Merge Task option or by dragging segments together in the UI, with [enableContextMenu](../../api/gantt#enablecontextmenu) and `ContextMenu` enabled. Ensure tasks have sufficient width relative to the timeline unit and are not parent or milestone tasks to enable splitting, and avoid using split tasks with multi-taskbar features to maintain compatibility.
 

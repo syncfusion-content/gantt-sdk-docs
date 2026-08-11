@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Scheduling Tasks in Angular Gantt Chart Component | Syncfusion
-description: Learn how to configure task scheduling modes, types, duration units, working time, and holidays in the Syncfusion Angular Gantt Chart component.
+title: Scheduling Tasks in Angular Gantt Chart | Modes & Types | Syncfusion
+description: Learn how to configure task scheduling in Syncfusion Angular Gantt Chart with auto/manual modes, task types, duration units, working time, and holiday settings.
+keywords: angular gantt scheduling, task mode, task type, duration unit, working time, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/scheduling-tasks
 platform: gantt-sdk
-control: Scheduling tasks
+control: Scheduling Tasks - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Scheduling Tasks in Angular Gantt Chart Component
+# Task Scheduling with Duration Units in Angular Gantt Chart
 
 Task scheduling in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component defines and visualizes task start dates, durations, and end dates as taskbars in a project timeline, enabling precise planning and tracking. Configure scheduling with properties like [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskfields) for mapping task data, [taskMode](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskmode) for auto or manual validation, [taskType](https://ej2.syncfusion.com/angular/documentation/api/gantt#tasktype) for fixed unit, work, or duration, and [durationUnit](https://ej2.syncfusion.com/angular/documentation/api/gantt#durationunit) for day, hour, or minute units. Working time, set via [dayWorkingTime](https://ej2.syncfusion.com/angular/documentation/api/gantt#dayworkingtime), and non-working periods, like weekends or holidays, ensure realistic calculations. Events like [dataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#databound) customize scheduling logic on run-time. Taskbars include ARIA labels for accessibility, describing start, end, and duration, and adapt to responsive designs, though narrow screens may require scrolling for long timelines.
 

@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Columns in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Columns in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Columns in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to configure and customize columns in Syncfusion ASP.NET Core Gantt Chart using field mapping, column types, formatting, and templates.
+keywords: asp.net core gantt columns, gantt column configuration, field mapping, column customization, column types, gantt columns, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/columns
 platform: gantt-sdk
-control: Columns
-publishingplatform: gantt-sdk
+control: Columns - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Columns in in gantt control
+# Columns with Field Mapping and Formatting in ASP.NET Core Gantt Chart
 
 The column displays information from a bound data source, and you can edit the values of column to update the task details through TreeGrid. The operations such as sorting, filtering, and searching can be performed based on column definitions. To display a Gantt column, the [`Field`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Field) property should be mapped from the data source to the column.
 

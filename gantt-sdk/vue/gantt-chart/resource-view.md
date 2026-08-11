@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Resource View in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about Resource view in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Resource view 
+title: Resource View in Vue Gantt Chart | Syncfusion
+description: Learn how to configure resource view in Syncfusion Vue Gantt Chart to visualize tasks organized by assigned resources.
+keywords: vue gantt resource view, resource breakdown, task allocation, resource hierarchy, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/resource-view
 platform: gantt-sdk
+control: Resource View - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Resource View in Vue Gantt Chart component
+# Resource View with Hierarchical Tasks in Vue Gantt Chart
 
 The resource breakdown view is used to visualize the tasks assigned to each resource in hierarchy manner. Resources are displayed as parents and all the tasks assigned to each resource are displayed as its child records. It can be initialized by setting the [viewType](https://ej2.syncfusion.com/vue/documentation/api/gantt#viewtype) property to `ResourceView`.
 

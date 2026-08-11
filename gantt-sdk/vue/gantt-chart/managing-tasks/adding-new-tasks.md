@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Adding New Tasks in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about Adding new tasks in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Adding new tasks 
+title: Adding New Tasks in Vue Gantt Chart | Syncfusion
+description: Learn how to dynamically add new tasks in the Syncfusion Vue Gantt Chart using toolbar actions, edit dialogs, and edit settings for task insertion.
+keywords: vue gantt add tasks, adding tasks, new task dialog, task insertion, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/managing-tasks/adding-new-tasks
 platform: gantt-sdk
+control: Adding New Tasks - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Adding New Tasks in Vue Gantt Chart Component
+# Adding New Tasks in Vue Gantt Chart
 
 Tasks can be dynamically added to the Gantt Chart project by enabling the [editSettings.allowAdding](https://ej2.syncfusion.com/vue/documentation/api/gantt/editSettings#allowadding) property.
 

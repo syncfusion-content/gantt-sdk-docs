@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Splitter in TypeScript Gantt Chart Control | Syncfusion
-description: Learn here all about splitter in Syncfusion TypeScript Gantt Chart control of Syncfusion Essential JS 2 and more.
+title: Splitter in TypeScript Gantt Chart | Syncfusion
+description: Learn how to configure splitter in Syncfusion TypeScript Gantt Chart to adjust grid and timeline pane sizes for project visualization.
+keywords: typescript gantt splitter, split pane, resizable panes, grid timeline, layout, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/splitter
 platform: gantt-sdk
-control: Splitter 
-publishingplatform: gantt-sdk
+control: Splitter - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Splitter in TypeScript Gantt Chart Control
+# Splitter with Panel Resizing in TypeScript Gantt Chart
 
 The splitter in the [TypeScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control divides the TreeGrid pane and Chart pane, enabling flexible width allocation for project visualization. Configured via the [splitterSettings](../api/gantt/splitterSettings) property, the splitter supports pixel or percentage-based positioning, column-based alignment, and predefined view modes. The [setSplitterPosition](../api/gantt#setsplitterposition) method adjusts positioning dynamically, while the [splitterResizeStart](../api/gantt/splitterresizestart), [splitterResizing](../api/gantt/splitterresizing), and [splitterResized](../api/gantt/splitterresized) events handle resize interactions. The splitter includes ARIA labels for accessibility, ensuring screen reader compatibility, and adapts to responsive designs, though narrow screens may limit visible columns or timeline segments. By default, both panels are visible with equal width.
 
@@ -149,3 +150,5 @@ The following example customizes the splitter’s background and hides the resiz
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/splitter-events" %}
 {% endif %}
+
+

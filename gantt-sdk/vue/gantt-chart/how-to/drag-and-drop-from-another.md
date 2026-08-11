@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Drag and Drop from Another in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about drag and drop from another component in the Syncfusion Vue Gantt Chart component of Essential JS 2 and more.
-control: Drag and drop from another 
+title: Drag and Drop from Another Component in Vue Gantt Chart | Syncfusion
+description: Learn how to drag and drop records from another component into the Syncfusion Vue Gantt Chart and update task data during drag-and-drop operations.
+keywords: vue gantt drag drop, drag from another component, inter-component drag, drag and drop, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/how-to/drag-and-drop-from-another
 platform: gantt-sdk
+control: Drag and Drop from Another - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Drag and drop from another in Vue Gantt Chart Component
+# Drag and Drop from Another Component in Vue Gantt Chart
 
 In the Gantt Chart, it is possible to drag a record from another component and drop it into the Gantt Chart while updating the Gantt record. Here, an item is dragged from the `TreeView` component to the Gantt Chart, and that item is updated as a resource for the Gantt record. We can achieve this by using the [nodeDragStop](https://ej2.syncfusion.com/vue/documentation/api/treeview#nodedragstop) event of the `TreeView` control.
 

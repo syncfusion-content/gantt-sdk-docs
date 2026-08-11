@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Holidays in Vue Gantt Chart component | Syncfusion
-description: Learn how to display and customize holidays in the Vue Gantt Chart using the holidays property to highlight non-working days effectively.
-control: Holidays 
+title: Holidays in Vue Gantt Chart | Syncfusion
+description: Learn how to display and customize holidays in the Syncfusion Vue Gantt Chart using the holidays property to highlight non-working days.
+keywords: vue gantt holidays, non-working days, holiday settings, date ranges, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/holidays
 platform: gantt-sdk
+control: Holidays - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Holidays in Vue Gantt Chart component
+# Holidays and Non-Working Days in Vue Gantt Chart
 
 Non-working days in a project can be displayed in the Gantt Chart component using the [holidays](https://ej2.syncfusion.com/vue/documentation/api/gantt#holidays) property. Each holiday can be defined with the following properties:
 

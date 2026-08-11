@@ -1,15 +1,16 @@
----
+﻿---
 layout: post
-title: Module in TypeScript Gantt control | Syncfusion
-description: Learn here all about Module in Syncfusion TypeScript Gantt control of Syncfusion Essential JS 2 and more.
+title: Modules in TypeScript Gantt Chart | Syncfusion
+description: Learn how to enable advanced TypeScript Gantt Chart features through module injection for sorting, editing, toolbar, filtering, and export to optimize bundle size.
+keywords: typescript gantt modules, feature modules, optional modules, providers, dependency injection, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/module
 platform: gantt-sdk
-control: Module 
-publishingplatform: gantt-sdk
+control: Modules - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Module in TypeScript Gantt control
+# Feature Modules with Dependency Injection in TypeScript Gantt Chart
 
 The modules that are available in Gantt are as follows.
 
@@ -32,3 +33,5 @@ The modules that are available in Gantt are as follows.
 | [CriticalPath](https://ej2.syncfusion.com/documentation/api/gantt#criticalpathmodule) | Inject this module to use critical path feature.|
 
 These modules should be injected into the Gantt using the **Gantt.Inject** method.
+
+

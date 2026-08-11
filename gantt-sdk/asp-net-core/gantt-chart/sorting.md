@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Sorting in ASP.NET Core Gantt Component
-description: Learn here all about Sorting in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Sorting in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to implement and customize sorting functionality in Syncfusion ASP.NET Core Gantt Chart for efficient data organization and analysis.
+keywords: asp.net core gantt sorting, data sorting, column sorting, multi-level sorting, sort order, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/sorting
 platform: gantt-sdk
-control: Sorting
-publishingplatform: gantt-sdk
+control: Sorting - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Sorting in ASP.NET Core Gantt Chart Component
+# Column Sorting with Multi-Sort in ASP.NET Core Gantt Chart
 
 Sorting enables you to sort data in the ascending or descending order. To sort a column, click the column header.
 

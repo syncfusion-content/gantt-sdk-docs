@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Critical Path in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about Critical path in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Critical path 
+title: Critical Path in Vue Gantt Chart | Syncfusion
+description: Learn about critical path feature in Syncfusion Vue Gantt Chart to identify and track critical tasks affecting project completion.
+keywords: vue gantt critical path, task dependencies, project duration, delay impact, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/critical-path
 platform: gantt-sdk
+control: Critical Path - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Critical Path in Vue Gantt Chart Component
+# Critical Path Identification in Vue Gantt Chart
 
 The critical path in a project is indicated by a single task or a series of tasks. If a task in critical path is delayed, the entire project will be delayed. A task is considered to be critical if any delay to this task would affect the project end date.
 

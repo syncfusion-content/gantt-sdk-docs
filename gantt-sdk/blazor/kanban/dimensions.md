@@ -1,13 +1,16 @@
 ---
 layout: post
-title: Dimensions in Blazor Kanban Component | Syncfusion®
-description: Checkout and learn here all the features about dimensions in Blazor Kanban component and much more details.
+title: Dimensions in Blazor Kanban | Syncfusion
+description: Learn how to configure responsive dimensions and sizing options in Syncfusion Blazor Kanban to fit different layouts and screen sizes.
+keywords: blazor kanban dimensions, syncfusion kanban, responsive layout, sizing
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/kanban/dimensions
 platform: gantt-sdk
-control: Kanban
+control: Dimensions - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Dimensions in Blazor Kanban Component
+# Dimensions, Height, and Width Configuration in Blazor Kanban
 
 This section explains how to configure the height and width of the [Blazor Kanban Board](https://www.syncfusion.com/blazor-components/blazor-kanban-board) to achieve responsive and fixed layouts.
 

@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Checkbox columns in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about checkbox columns in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Checkbox columns 
+title: Checkbox Columns in Vue Gantt Chart | Syncfusion
+description: Learn how to render boolean values as checkbox cells in Syncfusion Vue Gantt Chart columns, including column configuration and displayAsCheckBox setup.
+keywords: vue gantt checkbox columns, boolean columns, checkbox display, column rendering, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/columns/check-box-columns
 platform: gantt-sdk
+control: Checkbox Columns - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Checkbox columns in Vue Gantt Chart Component
+# Checkbox Columns in Vue Gantt Chart
 
 To render boolean values as checkboxes in columns, set the [displayAsCheckBox](https://ej2.syncfusion.com/vue/documentation/api/gantt/column#displayascheckbox) property to **true**.
 
