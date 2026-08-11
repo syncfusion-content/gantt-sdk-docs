@@ -22,7 +22,7 @@ In the below section, we have explained how to get the edited data details on th
 
 In Gantt, we can fetch data from SQL database using `ADO.NET` Entity Data Model and update the changes on CRUD action to the server by using `DataManager` support. To communicate with the remote data we are using `UrlAdaptor` of DataManager property to call the server method and get back resultant data in JSON format. We can know more about `UrlAdaptor` from [`here`](https://ej2.syncfusion.com/javascript/documentation/data/adaptors).
 
-N> Refer the [link](https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/models-data/creating-model-classes-with-the-entity-framework-cs) to create the `ADO.NET` Entity Data Model in Visual studio,
+N> Refer the [link](https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/models-data/creating-model-classes-with-the-entity-framework-cs) to create the `ADO.NET` Entity Data Model in Visual Studio,
 
 We can define data source for Gantt as instance of DataManager using `url` property of DataManager. Check the below code snippet to assign data source to Gantt.
 
@@ -132,7 +132,7 @@ Using the `changed` argument of the `BatchUrl` method we can update the modified
 
 ## Delete action
 
-Using the `deleted` argument of the `BatchUrl` method we can remove the deleted records from database and return the same to client side. on deleting the record we need to remove its corresponding child records as well if it exist from the data base. Find the below code example for details.
+Using the `deleted` argument of the `BatchUrl` method we can remove the deleted records from database and return the same to client side. on deleting the record we need to remove its corresponding child records as well if it exist from the database. Find the below code example for details.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -16,7 +16,7 @@ This section explains the key elements of the Gantt Chart interface.
 
 The Gantt component consists of two main sections: a `grid` and a `chart`, separated by a `splitter`. The grid is located on the left side of the Gantt component, while the chart section is on the right side. You can adjust the view of the Gantt by moving the splitter left or right to display only the grid, only the chart, or both.
 
-At the top of Gantt chart, having a [toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Toolbar) that allows you to peform **CRUD** operations on tasks.
+At the top of Gantt chart, having a [toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Toolbar) that allows you to perform **CRUD** operations on tasks.
 
 ![Gantt chart](./images/gantt.png)
 
@@ -24,7 +24,7 @@ At the top of Gantt chart, having a [toolbar](https://help.syncfusion.com/cr/asp
 
 - In the tree grid section, the task details are presented in a tabular format.
 - You can expand or collapse a task by clicking on the expand/collapse icon near the parent task.
-- At the top of the tree grid section is the column header, which dispays the titles of different grid columns.
+- At the top of the tree grid section is the column header, which displays the titles of different grid columns.
 
 ![Grid](./images/tabular.png)
 
