@@ -2,7 +2,7 @@
 layout: post
 title: Installing Syncfusion Gantt SDK Linux installer - Syncfusion
 description: Learn how to install the Syncfusion Gantt SDK Linux installer after downloading it from our Syncfusion website.
-platform: Gantt SDK
+platform: gantt-sdk
 control: Installation and Deployment
 documentation: ug
 
