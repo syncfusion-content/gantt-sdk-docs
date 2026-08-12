@@ -9,7 +9,7 @@ documentation: ug
 
 # Liquid Glass Effect in .NET MAUI Kanban Board
 
-The Liquid Glass Effect introduces a modern, translucent design with adaptive color tinting and light refraction, creating a sleek, glass like user experience that remains clear and accessible. This section explains how to enable and customize the effect in the Syncfusion® .NET MAUI Kanban Board (SfKanban) control.
+The Liquid Glass Effect introduces a modern, translucent design with adaptive color tinting and light refraction, creating a sleek, glass like user experience that remains clear and accessible. This section explains how to enable and customize the effect in the Syncfusion® .NET MAUI Kanban Board control.
 
 ## Apply liquid glass effect
 
