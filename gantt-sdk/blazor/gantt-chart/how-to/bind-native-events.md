@@ -24,7 +24,7 @@ Interaction Keys |Description
 <kbd>Ctrl + D</kbd> | Used to duplicate a selected record.
 <kbd>Alt + O</kbd> | Used to open the add dialog.
 
-### Example
+## Example
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
