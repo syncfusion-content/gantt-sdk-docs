@@ -88,7 +88,7 @@ Items| Description
 
 ## Custom context menu items
 
-You can configure custom context menu items by assigning a collection of `ContextMenuItemModel` to the [ContextMenuItems](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ContextMenuItems) property. To define actions for these items, use the [ContextMenuItemClicked](https://blazor.syncfusion.com/documentation/gantt-chart/events#contextmenuitemclicked) event.
+You can configure custom context menu items by assigning a collection of `ContextMenuItemModel` to the [ContextMenuItems](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ContextMenuItems) property. To define actions for these items, use the [ContextMenuItemClicked](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#contextmenuitemclicked) event.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -158,7 +158,7 @@ You can configure custom context menu items by assigning a collection of `Contex
 
 ## Built-in and custom context menu items
 
-You can configure built-in and custom context menu items at the same time in the Gantt Chart by assigning a collection of `ContextMenuItemModel` to the [ContextMenuItems](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ContextMenuItems) property. The corresponding actions for custom items are handled through the [ContextMenuItemClicked](https://blazor.syncfusion.com/documentation/gantt-chart/events#contextmenuitemclicked) event.
+You can configure built-in and custom context menu items at the same time in the Gantt Chart by assigning a collection of `ContextMenuItemModel` to the [ContextMenuItems](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ContextMenuItems) property. The corresponding actions for custom items are handled through the [ContextMenuItemClicked](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#contextmenuitemclicked) event.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -229,7 +229,7 @@ To configure nested context menu items (sub-menus) in the Blazor Gantt Chart, fo
 
 1. Define a list of `ContextMenuItemModel` objects using the [ContextMenuItems](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ContextMenuItems) property.
 2. Add sub-items by assigning a collection of `MenuItems` to the `Items` property within each `ContextMenuItemModel`.
-3. Use the [ContextMenuItemClicked](https://blazor.syncfusion.com/documentation/gantt-chart/events#contextmenuitemclicked) event to handle actions for individual menu items.
+3. Use the [ContextMenuItemClicked](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#contextmenuitemclicked) event to handle actions for individual menu items.
 
 The following example demonstrates how to configure a sub-context menu titled **Gantt Action**, which includes the sub-items **Copy with headers** and **Edit**.
 
@@ -318,7 +318,7 @@ The following example demonstrates how to configure a sub-context menu titled **
 
 ## Disable the context menu for specific columns
 
-To disable the context menu for specific columns in the Gantt Chart, use the [ContextMenuOpen](https://blazor.syncfusion.com/documentation/gantt-chart/events#contextmenuopen) event. This event is triggered before the context menu is displayed, and setting the `Cancel` argument to **false** will disable the menu for the targeted columns.
+To disable the context menu for specific columns in the Gantt Chart, use the [ContextMenuOpen](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#contextmenuopen) event. This event is triggered before the context menu is displayed, and setting the `Cancel` argument to **false** will disable the menu for the targeted columns.
 
 The following sample code demonstrates how to disable the context menu for the **Duration** column.
 
@@ -403,7 +403,7 @@ The following sample code demonstrates how to disable the context menu for the *
 
 ## Disable context menu items dynamically 
 
-To dynamically disable specific context menu items based on conditions, set the `Disabled` property to **true** within the [ContextMenuOpen](https://blazor.syncfusion.com/documentation/gantt-chart/events#contextmenuopen) event of the Gantt Chart.
+To dynamically disable specific context menu items based on conditions, set the `Disabled` property to **true** within the [ContextMenuOpen](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#contextmenuopen) event of the Gantt Chart.
 
 The following sample code demonstrates how to disable the context menu items for the **Duration** column, while keeping it enabled for the remaining columns.
 

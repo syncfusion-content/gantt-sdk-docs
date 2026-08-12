@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Sorting Cards and Columns by Priority in Blazor Kanban
 
-The [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban-board) provides built-in support to arrange the cards in their columns based on the JSON data order and drop the cards in the columns based on the dropped clone.
+The [Blazor Kanban](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) provides built-in support to arrange the cards in their columns based on the JSON data order and drop the cards in the columns based on the dropped clone.
 
 ## Using the SortBy Property
 

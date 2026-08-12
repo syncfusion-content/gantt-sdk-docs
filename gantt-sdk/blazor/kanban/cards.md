@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Cards Customization and Layout Options in Blazor Kanban
 
-The cards are main elements in the [Blazor Kanban Board](https://www.syncfusion.com/blazor-components/blazor-kanban-board), which represents the task information with header and content. The header and content of a card is fetched from the corresponding mapping fields. The card layout can be customized with template also.
+The cards are main elements in the [Blazor Kanban Board](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board), which represents the task information with header and content. The header and content of a card is fetched from the corresponding mapping fields. The card layout can be customized with template also.
 
 ## Header
 

@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Custom Adaptor for Data Binding in Blazor Gantt Chart
 
-The [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html) supports custom adaptors, giving you complete programmatic control over every data operation in the [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart). A custom adaptor is the right choice when your data source is not a standard REST endpoint for example, when task data must be loaded from an in-memory cache, a file system, a legacy system with a proprietary API, or a third-party SDK that does not expose a conventional HTTP interface.
+The [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html) supports custom adaptors, giving you complete programmatic control over every data operation in the [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart). A custom adaptor is the right choice when your data source is not a standard REST endpoint for example, when task data must be loaded from an in-memory cache, a file system, a legacy system with a proprietary API, or a third-party SDK that does not expose a conventional HTTP interface.
 
 To implement custom data binding, extend the [DataAdaptor](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html) abstract class and override the relevant methods for reading and CRUD operations.
 
