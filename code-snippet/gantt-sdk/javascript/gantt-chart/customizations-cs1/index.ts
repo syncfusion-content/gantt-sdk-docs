@@ -26,9 +26,14 @@ let gantt: Gantt = new Gantt({
             <div class="e-gantt-child-taskbar-inner-div e-gantt-child-taskbar"
                 style="height:22px;margin-top:-1px;width:${width}px">
                 <div class="e-gantt-child-progressbar-inner-div e-gantt-child-progressbar"
-                    style="height:100%;width:${progressWidth}px"></div>
-                <span class="e-badge e-badge-secondary e-badge-notification e-badge-overlap">%</span>
-            </div>`;
+                    style="height:100%;width:${progressWidth}px">
+                </div>
+                <span class="e-task-label"
+                    style="position:absolute;z-index:1;font-size:12px;color:white;top:3px;left:10px;">
+                    ${props.Progress}
+                </span>
+            </div>
+        `;
     }
 });
 
