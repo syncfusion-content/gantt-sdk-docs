@@ -429,7 +429,7 @@ The following sample demonstrates sorting a custom column using an external butt
 
 ## Touch interaction
 
-To perform a tap action on a column header in the Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt component, the [Sorting](https://blazor.syncfusion.com/documentation/gantt-chart/sorting) operation is triggered for the selected column. A popup appears when multi-column sorting is enabled. To sort multiple columns, tap the popup and then tap the desired column headers. 
+To perform a tap action on a column header in the Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt component, the [Sorting](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/sorting) operation is triggered for the selected column. A popup appears when multi-column sorting is enabled. To sort multiple columns, tap the popup and then tap the desired column headers. 
 
 The following screenshot shows Gantt touch sorting,
 

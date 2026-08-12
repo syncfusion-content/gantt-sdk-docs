@@ -7,7 +7,7 @@ canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/gettin
 platform: gantt-sdk
 control: Getting Started - Gantt Chart
 documentation: ug
-domainurl: https://help.syncfusion.com/gantt-sdk
+domainurl: https://help.syncfusion.com/gantt-sdk/overview
 ---
 
 # Getting Started with ASP.NET Core Gantt Chart
@@ -235,6 +235,6 @@ dotnet run
 
 ## See also
 
-- **[Key Elements](https://ej2.syncfusion.com/aspnetcore/documentation/gantt/key-elements)** - Learn about UI components and interactions
-- **[Overview](https://ej2.syncfusion.com/aspnetcore/documentation/gantt/overview)** - Explore all available features
+- **[Key Elements](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/key-elements)** - Learn about UI components and interactions
+- **[Overview](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/overview)** - Explore all available features
 

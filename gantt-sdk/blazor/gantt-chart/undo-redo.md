@@ -16,7 +16,7 @@ The Syncfusion® Blazor Gantt Chart component includes built-in undo and redo fu
 
 ## Enable undo and redo
 
-The **Undo** in the Blazor Gantt Chart reverts the most recent action, such as modifications to tasks, dependencies, and other supported operations, while the **Redo** reapplies an action that was previously undone using the **Undo** option. This functionality can be enabled by setting the [EnableUndoRedo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_EnableUndoRedo) property in the Gantt Chart component. When enabled, undo and redo operations can be performed using the built-in toolbar items, and the [OnUndoRedo](https://blazor.syncfusion.com/documentation/gantt-chart/events#onundoredo) event is triggered after each undo or redo operation is completed.
+The **Undo** in the Blazor Gantt Chart reverts the most recent action, such as modifications to tasks, dependencies, and other supported operations, while the **Redo** reapplies an action that was previously undone using the **Undo** option. This functionality can be enabled by setting the [EnableUndoRedo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_EnableUndoRedo) property in the Gantt Chart component. When enabled, undo and redo operations can be performed using the built-in toolbar items, and the [OnUndoRedo](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#onundoredo) event is triggered after each undo or redo operation is completed.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -359,5 +359,5 @@ In the following example, clicking an external button invokes the `UndoAsync` me
 {% previewsample "https://blazorplayground.syncfusion.com/embed/hXVnXdVroTNIBznu?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 ## See Also
-- [How to add undo/redo events?](https://blazor.syncfusion.com/documentation/gantt-chart/events#onundoredo)
-- [What are the keys used for undo/redo?](https://blazor.syncfusion.com/documentation/gantt-chart/accessibility#undo-redo)
+- [How to add undo/redo events?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#onundoredo)
+- [What are the keys used for undo/redo?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/accessibility#undo-redo)

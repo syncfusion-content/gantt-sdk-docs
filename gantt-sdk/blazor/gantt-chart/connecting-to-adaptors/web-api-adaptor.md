@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Web API Adaptor for Remote Data Binding in Blazor Gantt Chart
 
-The [WebApiAdaptor](https://blazor.syncfusion.com/documentation/data/adaptors#web-api-adaptor) extends the capabilities of the [ODataAdaptor](https://blazor.syncfusion.com/documentation/data/adaptors#odata-adaptor) and is used when connecting to a Web API that exposes OData-compatible endpoints. It enables the [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) to send OData-formatted requests for data access and updates.
+The [WebApiAdaptor](https://blazor.syncfusion.com/documentation/data/adaptors#web-api-adaptor) extends the capabilities of the [ODataAdaptor](https://blazor.syncfusion.com/documentation/data/adaptors#odata-adaptor) and is used when connecting to a Web API that exposes OData-compatible endpoints. It enables the [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) to send OData-formatted requests for data access and updates.
 
 For proper functionality, the target Web API must support and interpret OData query options included in the request. To learn how to enable OData query support in ASP.NET Web APIs, refer to the official [documentation](https://learn.microsoft.com/en-us/aspnet/web-api/overview/odata-support-in-aspnet-web-api/supporting-odata-query-options).
 

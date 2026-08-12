@@ -446,6 +446,6 @@ Update tasks programmatically using the [UpdateRecordByIDAsync](https://help.syn
 {% previewsample "https://blazorplayground.syncfusion.com/embed/rDrdZcBDrMapltlw?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 ## See also
-- [How to add new tasks?](https://blazor.syncfusion.com/documentation/gantt-chart/adding-new-tasks)
-- [How to manage task dependencies?](https://blazor.syncfusion.com/documentation/gantt-chart/task-dependencies)
-- [How to configure critical path?](https://blazor.syncfusion.com/documentation/gantt-chart/criticalpath)
+- [How to add new tasks?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/adding-new-tasks)
+- [How to manage task dependencies?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/task-dependencies)
+- [How to configure critical path?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/criticalpath)
