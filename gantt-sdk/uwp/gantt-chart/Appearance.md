@@ -24,7 +24,7 @@ The following code sample demonstrates how to customize the visual of a task.
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight xml %}
         <gantt:SfGantt x:Name="GanttControl" ItemsSource="{Binding TaskCollection}"
                        ParentTaskBarBrush="#33ffbe06" 
                        ParentProgressIndicatorBrush="#FFffbe06"
@@ -46,7 +46,7 @@ The following code sample demonstrates how to customize a template.
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight xml %}
     <Grid>
         <Grid.Resources>
             <!--TaskBar Template-->
