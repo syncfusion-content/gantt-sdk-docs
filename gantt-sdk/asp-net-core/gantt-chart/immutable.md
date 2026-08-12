@@ -49,3 +49,4 @@ The following features are not supported in the immutable mode:
 
 * Column reorder
 * Virtualization
+
