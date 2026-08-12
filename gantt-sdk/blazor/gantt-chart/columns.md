@@ -237,7 +237,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart component for B
 {% previewsample "https://blazorplayground.syncfusion.com/embed/VjBdXGimTaWPDDSs?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 >* The Gantt uses the `Internalization` library to format values based on the specified format and culture.
->* By default, the number and date values are formatted in **en-US** locale. You can localize the currency and date to a different locale as explained [here](https://www.syncfusion.com/blazor-components/blazor-gantt-chart).
+>* By default, the number and date values are formatted in **en-US** locale. You can localize the currency and date to a different locale as explained [here](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart).
 >* The available format codes may vary depending on the data type of the column.
 >* You can also customize the formatting further by providing a custom function to the `GanttColumn.Format` property, instead of a format string.
 >* Make sure that the format string is valid and compatible with the data type of the column, to avoid unexpected results.
@@ -457,7 +457,7 @@ The Syncfusion<sup style="font-size:70%">®</sup> Gantt component for Blazor sup
 
 ### Resizing a column to fit its content using method
 
-You can resize a column in Gantt Chart to fit its content using the [AutoFitColumnsAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AutoFitColumnsAsync_System_String___) method. This adjusts the column width based on the widest cell without wrapping. To apply this during initial rendering, call the method in the [DataBound](https://blazor.syncfusion.com/documentation/gantt-chart/events#databound) event.
+You can resize a column in Gantt Chart to fit its content using the [AutoFitColumnsAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AutoFitColumnsAsync_System_String___) method. This adjusts the column width based on the widest cell without wrapping. To apply this during initial rendering, call the method in the [DataBound](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#databound) event.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}

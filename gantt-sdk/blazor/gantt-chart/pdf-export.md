@@ -86,14 +86,14 @@ Export Gantt data to PDF by setting [AllowPdfExport](https://help.syncfusion.com
 
 When exporting the Gantt chart to a PDF document, a series of events are triggered in a specific order, allowing for advanced customization of the export process. Understanding this flow is essential for effectively controlling and modifying the exported content. Below is the sequence of events that occur during PDF export in the Gantt chart:
 
-* [PdfExporting](https://blazor.syncfusion.com/documentation/gantt-chart/events#pdfexporting)
+* [PdfExporting](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#pdfexporting)
 
-* [PdfQueryTimelineCellInfo](https://blazor.syncfusion.com/documentation/gantt-chart/events#pdfquerytimelinecellinfo)
+* [PdfQueryTimelineCellInfo](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#pdfquerytimelinecellinfo)
 
-* [PdfColumnHeaderQueryCellInfo](https://blazor.syncfusion.com/documentation/gantt-chart/events#pdfcolumnheaderquerycellinfo)
+* [PdfColumnHeaderQueryCellInfo](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#pdfcolumnheaderquerycellinfo)
 
-* [PdfQueryCellInfo](https://blazor.syncfusion.com/documentation/gantt-chart/events#pdfquerycellinfo)
+* [PdfQueryCellInfo](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#pdfquerycellinfo)
 
-* [PdfQueryTaskbarInfo](https://blazor.syncfusion.com/documentation/gantt-chart/events#pdfquerytaskbarinfo)
+* [PdfQueryTaskbarInfo](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#pdfquerytaskbarinfo)
 
-* [PdfExported](https://blazor.syncfusion.com/documentation/gantt-chart/events#pdfexported)
+* [PdfExported](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#pdfexported)

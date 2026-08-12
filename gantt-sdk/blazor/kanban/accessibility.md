@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Accessibility and ARIA Compliance in Blazor Kanban
 
-The [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban-board) component is built in accordance with [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/) specifications, incorporating appropriate roles, states, and properties. It offers full accessibility support for users relying on assistive technologies (AT) or keyboard navigation.
+The [Blazor Kanban](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) component is built in accordance with [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/) specifications, incorporating appropriate roles, states, and properties. It offers full accessibility support for users relying on assistive technologies (AT) or keyboard navigation.
 
 It adheres to key accessibility standards including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) , ensuring inclusive design and usability.
 

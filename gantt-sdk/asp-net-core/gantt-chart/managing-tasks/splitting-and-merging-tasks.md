@@ -7,7 +7,7 @@ canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managi
 platform: gantt-sdk
 control: Managing Tasks - Gantt Chart
 documentation: ug
-domainurl: https://help.syncfusion.com/gantt-sdk
+domainurl: https://help.syncfusion.com/gantt-sdk/overview
 ---
 
 # Splitting and Merging Tasks in ASP.NET Core Gantt Chart
@@ -16,7 +16,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 To split task at load time, we can define segment details in both hierarchical and self-referential way. Refer below link for more details.
 
-* [Split task at load time](https://ej2.syncfusion.com/aspnetmvc/documentation/gantt/data-binding#split-task)
+* [Split task at load time](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/data-binding#split-task)
 
 ## Split task dynamically
 

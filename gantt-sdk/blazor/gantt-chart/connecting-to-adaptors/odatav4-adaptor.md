@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # OData V4 Adaptor for Data Binding in Blazor Gantt Chart
 
-The [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) uses the [ODataV4Adaptor](https://blazor.syncfusion.com/documentation/data/adaptors#odatav4-adaptor) to connect with remote OData V4 services, allowing it to load hierarchical task data, display project schedules on the timeline, and send changes back to the server as tasks are added, edited, or removed. This guide covers everything needed to set up the OData V4 service, bind project task data to the Gantt Chart, and perform CRUD (Create, Read, Update, and Delete) operations using the `ODataV4Adaptor`.
+The [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) uses the [ODataV4Adaptor](https://blazor.syncfusion.com/documentation/data/adaptors#odatav4-adaptor) to connect with remote OData V4 services, allowing it to load hierarchical task data, display project schedules on the timeline, and send changes back to the server as tasks are added, edited, or removed. This guide covers everything needed to set up the OData V4 service, bind project task data to the Gantt Chart, and perform CRUD (Create, Read, Update, and Delete) operations using the `ODataV4Adaptor`.
 
 Unlike vendor specific adaptor patterns, the `ODataV4Adaptor` works with any backend that exposes an OData V4 endpoint, so the Gantt is never locked into a particular server technology or platform.
 
@@ -538,7 +538,7 @@ builder.Services.AddControllers().AddOData(
 
 ## Handling CRUD operations
 
-To manage CRUD (Create, Read, Update, and Delete) operations using the `ODataV4Adaptor`, configure the Gantt for [editing](https://blazor.syncfusion.com/documentation/gantt-chart/editing-tasks). The controller handles `GET`, `POST`, `PATCH`, and `DELETE` for tasks. With taskbar editing enabled, [AllowTaskbarEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_AllowTaskbarEditing) set to `true`, drag/resize operations on the timeline also round-trip to the same `PATCH` endpoint.
+To manage CRUD (Create, Read, Update, and Delete) operations using the `ODataV4Adaptor`, configure the Gantt for [editing](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/editing-tasks). The controller handles `GET`, `POST`, `PATCH`, and `DELETE` for tasks. With taskbar editing enabled, [AllowTaskbarEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_AllowTaskbarEditing) set to `true`, drag/resize operations on the timeline also round-trip to the same `PATCH` endpoint.
 
 In the example below, [GanttEditSettings.Mode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_Mode) is set to `EditMode.Auto`, and the [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Toolbar) property is configured to display toolbar items for editing.
 

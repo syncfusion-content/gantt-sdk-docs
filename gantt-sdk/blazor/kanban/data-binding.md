@@ -19,7 +19,7 @@ It supports the following types of data binding:
 * Local data
 * Remote data
 
-N> **Note:** When using `DataSource` as `IEnumerable<T>`, component type(TValue) will be inferred from its value. When using `SfDataManager` for data binding, the TValue must be provided explicitly in the [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban-board) component.
+N> **Note:** When using `DataSource` as `IEnumerable<T>`, component type(TValue) will be inferred from its value. When using `SfDataManager` for data binding, the TValue must be provided explicitly in the [Blazor Kanban](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) component.
 
 ## Binding local data
 
@@ -183,7 +183,7 @@ N> The [GetDynamicMemberNames](https://learn.microsoft.com/en-us/dotnet/api/syst
 
 ### Binding with Observable Collection
 
-This [ObservableCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=netframework-4.8)(dynamic data collection) shows notifications when the items are added, removed, and moved. Implementing the [INotifyCollectionChanged](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?view=netframework-4.8) will notify when there is any dynamic change (add, remove, move, and clear) in the collection. Implementing  the [INotifyPropertyChanged](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=netframework-4.8) will notify when the property value has been changed on the client side.
+This [ObservableCollection](https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=netframework-4.8)(dynamic data collection) shows notifications when the items are added, removed, and moved. Implementing the [INotifyCollectionChanged](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?view=netframework-4.8) will notify when there is any dynamic change (add, remove, move, and clear) in the collection. Implementing  the [INotifyPropertyChanged](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=netframework-4.8) will notify when the property value has been changed on the client side.
 
 Here, the Order class implements the interface of **INotifyPropertyChanged** and it raises the event when the Status property value was changed.
 
@@ -247,7 +247,7 @@ N> By default, SfDataManager uses ODataAdaptor for remote data-binding.
 
 ### Binding with OData v4 services
 
-The ODataV4 is an improved version of OData protocols to retrieve and consume OData V4 services. For more details on OData V4 services, refer to the [OData Documentation](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). To bind OData V4 service, use the ODataV4Adaptor.
+The ODataV4 is an improved version of OData protocols to retrieve and consume OData V4 services. For more details on OData V4 services, refer to the [OData Documentation](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html). To bind OData V4 service, use the ODataV4Adaptor.
 
 ```cshtml
 @using Syncfusion.Blazor.Data

@@ -7,7 +7,7 @@ canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/filter
 platform: gantt-sdk
 control: Filtering - Gantt Chart
 documentation: ug
-domainurl: https://help.syncfusion.com/gantt-sdk
+domainurl: https://help.syncfusion.com/gantt-sdk/overview
 ---
 
 # Implementing Quick Search for Task Data in ASP.NET Core Gantt Chart
@@ -45,7 +45,7 @@ The following screenshot shows the output of searching for string in Gantt contr
 
 ## Initial search
 
-In the Gantt control, you can load a task with some search criteria and this can be done by using the [`SearchSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~SearchSettings.html) property. To apply search at initial rendering, set the value for [`Fields`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttSearchSettings~Fields.html), [`Operator`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttSearchSettings~Operator.html), [`Key`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttSearchSettings~Key.html), and [`IgnoreCase`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttSearchSettings~IgnoreCase.html) in the [`SearchSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~SearchSettings.html) property.
+In the Gantt control, you can load a task with some search criteria and this can be done by using the [`SearchSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SearchSettings) property. To apply search at initial rendering, set the value for [`Fields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttSearchSettings.html#Syncfusion_EJ2_Gantt_GanttSearchSettings_Fields), [`Operator`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttSearchSettings.html#Syncfusion_EJ2_Gantt_GanttSearchSettings_Operator), [`Key`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttSearchSettings.html#Syncfusion_EJ2_Gantt_GanttSearchSettings_Key), and [`IgnoreCase`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttSearchSettings.html#Syncfusion_EJ2_Gantt_GanttSearchSettings_IgnoreCase) in the [`SearchSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SearchSettings) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -74,11 +74,11 @@ In the Gantt control, you can load a task with some search criteria and this can
 
 ![Alt text](images/initialLoadSearch.png)
 
-N> By default, Gantt searches all the bound column values. To customize this behavior, define the [`SearchSettings.Fields`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttSearchSettings~Fields.html) property.
+N> By default, Gantt searches all the bound column values. To customize this behavior, define the [`SearchSettings.Fields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttSearchSettings.html#Syncfusion_EJ2_Gantt_GanttSearchSettings_Fields) property.
 
 ## Search operators
 
-The search operator can be defined in the [`SearchSettings.Operator`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttSearchSettings~Operator.html) property to configure specific searching.
+The search operator can be defined in the [`SearchSettings.Operator`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttSearchSettings.html#Syncfusion_EJ2_Gantt_GanttSearchSettings_Operator) property to configure specific searching.
 
 The following operators are supported in searching:
 
@@ -90,7 +90,7 @@ The following operators are supported in searching:
 |equal |Checks whether a value is equal to the specified value.|
 |notEqual |Checks for the values that are not equal to the specified value.|
 
-N> By default, the [`SearchSettings.Operator`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttSearchSettings~Operator.html) value is `contains`.
+N> By default, the [`SearchSettings.Operator`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttSearchSettings.html#Syncfusion_EJ2_Gantt_GanttSearchSettings_Operator) value is `contains`.
 
 ## Search by external button
 
@@ -123,7 +123,7 @@ To search the Gantt records from an external button, invoke the `search` method.
 
 ## Search specific columns
 
-By default, the Gantt control searches all the columns. You can search specific columns by defining the specific column's field names in the [`SearchSettings.Fields`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttSearchSettings~Fields.html) property.
+By default, the Gantt control searches all the columns. You can search specific columns by defining the specific column's field names in the [`SearchSettings.Fields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttSearchSettings.html#Syncfusion_EJ2_Gantt_GanttSearchSettings_Fields) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -154,7 +154,7 @@ N> In above sample, you can search only `TaskName` and `Duration` column values.
 
 ## Clear search by external button
 
-You can set [`searchSettings.key`](../api/gantt/searchSettings/#key) property as `empty` string, to clear the searched Gantt records from external button.
+You can set [`searchSettings.key`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttSearchSettings.html#Syncfusion_EJ2_Gantt_GanttSearchSettings_Key) property as `empty` string, to clear the searched Gantt records from external button.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
