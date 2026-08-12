@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Search Cards in ASP.NET MVC Kanban Component
-description: Learn here all about Search Cards in Syncfusion ASP.NET MVC Kanban component of Syncfusion Essential JS 2 and more.
+title: Search Cards in ASP.NET MVC Kanban | Syncfusion
+description: Learn how to search cards in Syncfusion ASP.NET MVC Kanban using queries and external input with practical examples and configuration guidance.
+keywords: asp-net-mvc kanban search cards, syncfusion kanban, search query, card search
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/kanban/how-to/search-cards
 platform: gantt-sdk
-control: Search Cards
-publishingplatform: gantt-sdk
+control: Search Cards - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Searching Cards
+# Search Cards in ASP.NET MVC Kanban
 
 You can search the cards in Kanban by using the `query` property.
 

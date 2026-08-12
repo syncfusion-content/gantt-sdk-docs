@@ -1,19 +1,21 @@
 ---
 layout: post
-title: Validation in Syncfusion ASP.NET MVC Kanban Component
-description: Learn here all about Validation in Syncfusion ASP.NET MVC Kanban component of Syncfusion Essential JS 2 and more.
+title: Validation in ASP.NET MVC Kanban | Syncfusion
+description: Learn how to implement data validation and constraints in Syncfusion ASP.NET MVC Kanban for data integrity.
+keywords: asp-net-mvc kanban validation, syncfusion kanban, data validation, constraints
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/kanban/validation
 platform: gantt-sdk
-control: Validation
-publishingplatform: gantt-sdk
+control: WIP Validation - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Validation in ASP.NET MVC Kanban control
+# WIP Validation and Work-in-Progress Limits in ASP.NET MVC Kanban
 
 Validate particular column using the `MinCount` or `MaxCount` properties. The corresponding columns gets different appearance when validation fails. In default layout, `ConstraintType` property accept only `Column` type. In swimlane layout, accept both `Column` and `Swimlane` constraint type.
 
 There are two types of constraints:
+
 1. Column
 2. Swimlane
 
@@ -21,11 +23,11 @@ N> By default, the column count validation is performed based on Kanban **Column
 
 ## Minimum card limit
 
-The `MinCount` property is used to specify the minimum cards hold on particular column or swimlane cell. If the column or swimlane total card count falls short of the minimum count value, it shows the column or cell background colour with validation fails.
+The `MinCount` property is used to specify the minimum cards hold on particular column or swimlane cell. If the column or swimlane total card count falls short of the minimum count value, it shows the column or cell background color with validation fails.
 
 ## Maximum card limit
 
-The `MaxCount` property is used to specify the maximum cards hold on particular column or swimlane cell. If the column or swimlane cell total card count exceeds the maximum count value, it shows the column or cell background colour with validation fails.
+The `MaxCount` property is used to specify the maximum cards hold on particular column or swimlane cell. If the column or swimlane cell total card count exceeds the maximum count value, it shows the column or cell background color with validation fails.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -55,8 +57,6 @@ The `MaxCount` property is used to specify the maximum cards hold on particular 
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 Output be like the below.
 

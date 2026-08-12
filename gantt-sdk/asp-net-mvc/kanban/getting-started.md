@@ -1,17 +1,18 @@
 ---
 layout: post
-title: Getting Started with ASP.NET MVC Kanban Control | Syncfusion
-description: Checkout and learn about getting started with ASP.NET MVC Kanban control of Syncfusion Essential JS 2 and more details.
+title: Getting Started in ASP.NET MVC Kanban | Syncfusion
+description: Learn how to start using Syncfusion ASP.NET MVC Kanban with step-by-step setup instructions and essential component features.
+keywords: asp-net-mvc kanban getting started, syncfusion kanban, install component, setup
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/kanban/getting-started
 platform: gantt-sdk
-control: Getting Started
-publishingplatform: gantt-sdk
+control: Getting Started - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
+# Getting Started with ASP.NET MVC Kanban
 
-# Getting Started with ASP.NET MVC Kanban Control
-
-This section briefly explains how to include the [ASP.NET MVC Kanban](https://www.syncfusion.com/aspnet-mvc-ui-controls/kanban-board) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the [ASP.NET MVC Kanban](https://www.syncfusion.com/gantt-sdk/aspnet-mvc-kanban-board) control in your ASP.NET MVC application using Visual Studio.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetmvc/documentation/ai-coding-assistant/overview)
 
@@ -19,9 +20,9 @@ This section briefly explains how to include the [ASP.NET MVC Kanban](https://ww
 
 The following prerequisites are required to create an ASP.NET MVC application with the Kanban control:
 
-* Visual Studio 2019 or later (Visual Studio 2022 is recommended)
-* .NET Framework 4.6.2 or later
-* An active internet connection to download the NuGet package and CDN assets
+- Visual Studio 2019 or later (Visual Studio 2022 is recommended)
+- .NET Framework 4.6.2 or later
+- An active internet connection to download the NuGet package and CDN assets
 
 Refer to the [System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements) for the complete list of supported environments.
 
@@ -29,8 +30,8 @@ Refer to the [System requirements for ASP.NET MVC controls](https://ej2.syncfusi
 
 You can create an ASP.NET MVC project in one of two ways. Choose the option that matches your development setup:
 
-* **Use the standard Microsoft template** if you are new to ASP.NET MVC and want a plain project: [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
-* **Use the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC extension** if you want a project that is pre-configured with Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies, themes, and helper references: [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
+- **Use the standard Microsoft template** if you are new to ASP.NET MVC and want a plain project: [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
+- **Use the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC extension** if you want a project that is pre-configured with Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies, themes, and helper references: [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
 After the project is created, ensure that a controller named `HomeController` (with an `Index` action) and a corresponding `~/Views/Home/Index.cshtml` view exist. The Kanban control will be added to this view in the later steps.
 
@@ -46,7 +47,7 @@ Install-Package Syncfusion.EJ2.MVC5 -Version {{ site.ej2version }}
 {% endhighlight %}
 {% endtabs %}
 
-N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
+N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
 ## Add namespace
 
@@ -119,24 +120,24 @@ To populate the empty Kanban with cards, define the list or remote data using th
 {% highlight c# tabtitle="HomeController.cs" %}
 public class HomeController : Controller
 {
-    public ActionResult Index()
-    {
-        return View(KanbanDataModels.KanbanTasks());
-    }
+public ActionResult Index()
+{
+return View(KanbanDataModels.KanbanTasks());
+}
 }
 public class KanbanDataModels
 {
-    public string Id { get; set; }
-    public string Title { get; set; }
-    public string Status { get; set; }
-    public string Summary { get; set; }
-    public string Type { get; set; }
-    public string Priority { get; set; }
-    public string Tags { get; set; }
-    public double Estimate { get; set; }
-    public string Assignee { get; set; }
-    public int RankId { get; set; }
-    public string Color { get; set; }
+public string Id { get; set; }
+public string Title { get; set; }
+public string Status { get; set; }
+public string Summary { get; set; }
+public string Type { get; set; }
+public string Priority { get; set; }
+public string Tags { get; set; }
+public double Estimate { get; set; }
+public string Assignee { get; set; }
+public int RankId { get; set; }
+public string Color { get; set; }
 
     public static List<KanbanDataModels> KanbanTasks()
     {
@@ -173,6 +174,7 @@ public class KanbanDataModels
         TaskDetails.Add(new KanbanDataModels { Id = "Task 30", Title = "Task  - 29036", Status = "Testing", Summary = "Test editing feature in the IE browser.", Type = "Story", Priority = "Normal", Tags = "Testing", Estimate = 5.5, Assignee = "Janet Leverling", RankId = 10 });
         return TaskDetails;
     }
+
 }
 {% endhighlight %}
 {% endtabs %}
@@ -197,15 +199,15 @@ N> [View the complete sample on GitHub](https://github.com/SyncfusionExamples/AS
 
 If the Kanban control does not render or behaves unexpectedly, verify the following:
 
-* The `Syncfusion.EJ2.MVC5` NuGet package is restored and referenced by the project.
-* The `Syncfusion.EJ2` namespace is added to `~/Views/Web.config`.
-* The CDN links use the same `{{ site.ej2version }}` value as the `EJS().ScriptManager()` call.
-* The `Index` view exists at the path `~/Views/Home/Index.cshtml`.
-* The license key is registered in `Global.asax`; otherwise, a license-warning banner appears in development mode.
+- The `Syncfusion.EJ2.MVC5` NuGet package is restored and referenced by the project.
+- The `Syncfusion.EJ2` namespace is added to `~/Views/Web.config`.
+- The CDN links use the same `{{ site.ej2version }}` value as the `EJS().ScriptManager()` call.
+- The `Index` view exists at the path `~/Views/Home/Index.cshtml`.
+- The license key is registered in `Global.asax`; otherwise, a license-warning banner appears in development mode.
 
 ## See also
 
-* [Real-time example using Kanban](https://ej2.syncfusion.com/aspnetmvc/Kanban/Workflow#/material)
-* [Kanban columns configuration](https://ej2.syncfusion.com/aspnetmvc/documentation/kanban/columns)
-* [Kanban data binding](https://ej2.syncfusion.com/aspnetmvc/documentation/kanban/data-binding)
-* [Syncfusion<sup style="font-size:70%">&reg;</sup> licensing documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing)
+- [Real-time example using Kanban](https://ej2.syncfusion.com/aspnetmvc/Kanban/Workflow#/material)
+- [Kanban columns configuration](https://ej2.syncfusion.com/aspnetmvc/documentation/kanban/columns)
+- [Kanban data binding](https://ej2.syncfusion.com/aspnetmvc/documentation/kanban/data-binding)
+- [Syncfusion<sup style="font-size:70%">&reg;</sup> licensing documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing)

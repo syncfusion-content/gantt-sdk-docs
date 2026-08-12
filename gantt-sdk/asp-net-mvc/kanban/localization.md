@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Localization in Syncfusion ASP.NET MVC Kanban Component
-description: Learn here all about Localization in Syncfusion ASP.NET MVC Kanban component of Syncfusion Essential JS 2 and more.
+title: Localization in ASP.NET MVC Kanban | Syncfusion
+description: Learn how to implement localization and internationalization in Syncfusion ASP.NET MVC Kanban for multi-language support.
+keywords: asp-net-mvc kanban localization, syncfusion kanban, internationalization, i18n
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/kanban/localization
 platform: gantt-sdk
-control: Localization
-publishingplatform: gantt-sdk
+control: Localization - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Globalization in ASP.NET MVC Kanban control
+# Globalization and Localization Support in ASP.NET MVC Kanban
 
 The localization library allows you to localize the default text content of the Kanban to different cultures using the `Locale` property.
 
