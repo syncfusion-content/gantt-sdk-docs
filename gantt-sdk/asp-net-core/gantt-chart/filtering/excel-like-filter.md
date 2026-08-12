@@ -7,7 +7,7 @@ canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/filter
 platform: gantt-sdk
 control: Filtering - Gantt Chart
 documentation: ug
-domainurl: https://help.syncfusion.com/gantt-sdk/overview
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
 # Using Excel-Like Filtering Interface in ASP.NET Core Gantt Chart

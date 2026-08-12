@@ -7,7 +7,7 @@ canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/drag-a
 platform: gantt-sdk
 control: Drag and Drop - Gantt Chart
 documentation: ug
-domainurl: https://help.syncfusion.com/gantt-sdk/overview
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
 # Enabling Drag and Drop for Rows in ASP.NET Core Gantt Chart

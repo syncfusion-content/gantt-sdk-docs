@@ -7,10 +7,10 @@ canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managi
 platform: gantt-sdk
 control: Managing Tasks - Gantt Chart
 documentation: ug
-domainurl: https://help.syncfusion.com/gantt-sdk/overview
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Taskbar Editing in ASP.NET Core Gantt Chart
+# Editing Tasks Using Taskbar Drag and Resize in ASP.NET Core Gantt Chart
 
 ## Taskbar editing
 

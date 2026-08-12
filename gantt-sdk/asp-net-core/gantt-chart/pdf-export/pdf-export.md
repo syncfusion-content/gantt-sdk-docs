@@ -7,7 +7,7 @@ canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/pdf-ex
 platform: gantt-sdk
 control: PDF Export - Gantt Chart
 documentation: ug
-domainurl: https://help.syncfusion.com/gantt-sdk/overview
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
 # Exporting Data to PDF Format in ASP.NET Core Gantt Chart

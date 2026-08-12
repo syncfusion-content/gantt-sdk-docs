@@ -7,10 +7,10 @@ canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/data-m
 platform: gantt-sdk
 control: Data Markers - Gantt Chart
 documentation: ug
-domainurl: https://help.syncfusion.com/gantt-sdk/overview
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Data Markers in ASP.NET Core Gantt Chart
+# Task Markers and Milestones with Data Markers in ASP.NET Core Gantt Chart
 
 Data markers are a set of events used to represent the schedule events for a task. Data markers are defined in data source as array of objects, and this value is mapped to the Gantt control using the [`taskFields.indicators`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Indicators) property. You can represent more than one data marker in a task.
 

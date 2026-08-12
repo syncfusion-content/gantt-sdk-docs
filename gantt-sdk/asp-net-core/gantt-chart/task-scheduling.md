@@ -7,7 +7,7 @@ canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/task-s
 platform: gantt-sdk
 control: Task Scheduling - Gantt Chart
 documentation: ug
-domainurl: https://help.syncfusion.com/gantt-sdk/overview
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
 # Task Scheduling Modes with Auto and Manual in ASP.NET Core Gantt Chart

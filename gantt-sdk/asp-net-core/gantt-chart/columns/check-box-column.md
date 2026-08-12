@@ -7,12 +7,12 @@ canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/column
 platform: gantt-sdk
 control: Columns - Gantt Chart
 documentation: ug
-domainurl: https://help.syncfusion.com/gantt-sdk/overview
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
 # Checkbox Columns in ASP.NET Core Gantt Chart
 
-To render boolean values as checkbox in columns, you need to set [`displayAsCheckBox`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_DisplayAsCheckBox) property as **true**.
+To render boolean values as checkbox in columns, you need to set [`displayAsCheckBox`](../api/gantt/column/#displayascheckbox) property as **true**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

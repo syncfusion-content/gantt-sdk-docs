@@ -7,12 +7,12 @@ canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/how-to
 platform: gantt-sdk
 control: How-to - Gantt Chart
 documentation: ug
-domainurl: https://help.syncfusion.com/gantt-sdk/overview
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
 # Restrict Collapse Chart Rows in ASP.NET Core Gantt Chart
 
-Restriction of collapsing the records when clicking on gantt chart rows can be performed by using the [`collapsing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Collapsing) event.
+Restriction of collapsing the records when clicking on gantt chart rows can be performed by using the [`collapsing`](../../api/gantt/#collapsing) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

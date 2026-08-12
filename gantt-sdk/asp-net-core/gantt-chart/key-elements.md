@@ -7,7 +7,7 @@ canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/key-el
 platform: gantt-sdk
 control: Key Elements - Gantt Chart
 documentation: ug
-domainurl: https://help.syncfusion.com/gantt-sdk/overview
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
 # Key Elements in ASP.NET Core Gantt Chart UI
@@ -61,7 +61,7 @@ A milestone is a unique type of task characterized by the following attributes:
 
 ![Milestone](./images/milestone-element.png)
 
->For more information, refer to [Unscheduled Tasks](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/task-scheduling#unscheduled-tasks)
+>For more information, refer to [Unscheduled Tasks](https://ej2.syncfusion.com/aspnetcore/documentation/gantt/task-scheduling#unscheduled-tasks)
 
 **Manual taskbar**
 
@@ -69,7 +69,7 @@ It is a type of task where the dates are not automatically validated by the Gant
 
 ![Manual taskbar](./images/manual-task.png)
 
->For more information, refer to [Manual Tasks](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/task-scheduling#manually-scheduled-tasks)
+>For more information, refer to [Manual Tasks](https://ej2.syncfusion.com/aspnetcore/documentation/gantt/task-scheduling#manually-scheduled-tasks)
 
 **Baseline**
 

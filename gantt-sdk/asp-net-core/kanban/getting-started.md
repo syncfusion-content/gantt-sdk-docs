@@ -1,16 +1,18 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Kanban Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core Kanban control of Essential JS 2 and more details.
+title: Getting Started in ASP.NET Core Kanban | Syncfusion
+description: Learn how to start using Syncfusion ASP.NET Core Kanban with step-by-step setup instructions and essential component features.
+keywords: asp-net-core kanban getting started, syncfusion kanban, install component, setup
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/getting-started
 platform: gantt-sdk
-control: Kanban
-publishingplatform: gantt-sdk
+control: Getting Started - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Getting Started with ASP.NET Core Kanban Control
+# Getting Started with ASP.NET Core Kanban
 
-This section briefly explains how to include the [ASP.NET Core Kanban](https://www.syncfusion.com/gantt-sdk/aspnet-core-kanban-board) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/), and [Visual Studio Code](https://code.visualstudio.com/).
+This section briefly explains how to include the [ASP.NET Core Kanban](https://www.syncfusion.com/gantt-sdk/aspnet-core-kanban-board) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs), and [Visual Studio Code](https://code.visualstudio.com).
 
 > **Ready to streamline your ASP.NET Core development?** Discover the full potential of ASP.NET Core controls with AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Code Studio and more. [Explore AI Coding Assistant](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/overview)
 
@@ -45,7 +47,7 @@ Alternatively, create an **ASP.NET Core Web App** using Visual Studio Code via [
 
 ## Install the required ASP.NET Core packages
 
-Install the [Syncfusion.AspNetCore.Kanban](https://www.nuget.org/packages/Syncfusion.AspNetCore.Kanban/) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) NuGet packages. All Syncfusion ASP.NET Core packages are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for the details.
+Install the [Syncfusion.AspNetCore.Kanban](https://www.nuget.org/packages/Syncfusion.AspNetCore.Kanban) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes) NuGet packages. All Syncfusion ASP.NET Core packages are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for the details.
 
 {% tabcontents %}
 
@@ -196,6 +198,7 @@ public class IndexModel : PageModel
     {
      
     }
+
 }
 public class KanbanDataModels
 {

@@ -7,21 +7,21 @@ canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/select
 platform: gantt-sdk
 control: Selection - Gantt Chart
 documentation: ug
-domainurl: https://help.syncfusion.com/gantt-sdk/overview
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Configuring Selection Behavior in ASP.NET Core Gantt Chart
+# Enabling and Configuring Selection Behavior in ASP.NET Core Gantt Chart
 
-Selection provides an option to highlight a row or a cell. It can be done using arrow keys or by scrolling down the mouse. To disable selection in the Gantt control, set the [`AllowSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowSelection) to false.
+Selection provides an option to highlight a row or a cell. It can be done using arrow keys or by scrolling down the mouse. To disable selection in the Gantt control, set the [`AllowSelection`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~AllowSelection.html) to false.
 
-The Gantt control supports two types of selection that can be set by using the [`SelectionSettings.Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttSelectionSettings.html#Syncfusion_EJ2_Gantt_GanttSelectionSettings_Type) property. They are:
+The Gantt control supports two types of selection that can be set by using the [`SelectionSettings.Type`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttSelectionSettings~Type.html) property. They are:
 
 * `Single`: Sets a single value by default and allows only selection of a single row or a cell.
 * `Multiple`: Allows you to select multiple rows or cells. To perform the multi-selection, press and hold the CTRL key and click the desired rows or cells.
 
 ## Selection mode
 
-The Gantt control supports three types of selection modes that can be set by using the [`SelectionSettings.Mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttSelectionSettings.html#Syncfusion_EJ2_Gantt_GanttSelectionSettings_Mode). They are:
+The Gantt control supports three types of selection modes that can be set by using the [`SelectionSettings.Mode`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttSelectionSettings~Mode.html). They are:
 
 * `Row`: Allows you to select only rows, and the row value is set by default.
 * `Cell`: Allows you to select only cells.
@@ -143,7 +143,7 @@ You can clear the selected cells and selected rows by using a method called `cle
 
 ## Get selected row indexes and records
 
-You can get the selected row indexes by using the `getSelectedRowIndexes` method. And by using `getSelectedRecords` method, you can get the selected record details.
+You can get the selected row indexes by using the [`getSelectedRowIndexes`](../api/gantt/#getselectedrowindexes) method. And by using [`getSelectedRecords`](../api/gantt/#getSelectedRecords) method, you can get the selected record details.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -172,7 +172,7 @@ You can get the selected row indexes by using the `getSelectedRowIndexes` method
 
 ## Multiple selection based on condition
 
-You can select multiple rows based on condition by using the `selectRows` method.
+You can select multiple rows based on condition by using the [`selectRows`](../api/grid/#selectrows) method.
 
 In the following code, the rows which contains `TaskId` value as 3 and 4 are selected at initial rendering.
 

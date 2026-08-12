@@ -7,12 +7,12 @@ canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/select
 platform: gantt-sdk
 control: Selection - Gantt Chart
 documentation: ug
-domainurl: https://help.syncfusion.com/gantt-sdk/overview
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
 # Selecting Individual Cells and Cell Ranges in ASP.NET Core Gantt Chart
 
-You can select a cell in the Gantt control by setting the [`selectionSettings.mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttSelectionSettings.html#Syncfusion_EJ2_Gantt_GanttSelectionSettings_Mode) property to cell. You can get the selected cell information using the `getSelectedRowCellIndexes` method. This method returns the result as an object collection, which has `cellIndexes` and `rowIndex` information of the selected cells.
+You can select a cell in the Gantt control by setting the [`selectionSettings.mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttSelectionSettings) property to cell. You can get the selected cell information using the `getSelectedRowCellIndexes` method. This method returns the result as an object collection, which has `cellIndexes` and `rowIndex` information of the selected cells.
 
 Find the code example below to enable the cell selection in Gantt.
 

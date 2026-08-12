@@ -7,7 +7,7 @@ canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/resour
 platform: gantt-sdk
 control: Resources - Gantt Chart
 documentation: ug
-domainurl: https://help.syncfusion.com/gantt-sdk/overview
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
 # Resources with Allocation and Task Mapping in ASP.NET Core Gantt Chart
@@ -141,7 +141,7 @@ By using cell/ dialog edit option, we can add/remove the multiple resources for 
 
 In the Gantt Component, you can customize the background colors of the resource column and taskbars based on the resources assigned to each task. This customization enhances the readability and usability of the Gantt chart.
 
-To achieve this, utilize the [template](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/columns/column-template) property for the resource column and the [queryTaskbarInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_QueryTaskbarInfo) event. The `template` property allows you to define a custom template for the resource column, while the `queryTaskbarInfo` event to modify the taskbar properties, including background colors.
+To achieve this, utilize the [template](https://ej2.syncfusion.com/aspnetcore/documentation/gantt/columns/column-template) property for the resource column and the [queryTaskbarInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_QueryTaskbarInfo) event. The `template` property allows you to define a custom template for the resource column, while the `queryTaskbarInfo` event to modify the taskbar properties, including background colors.
 
 The following code snippet demonstrates how to customize the background colors of the taskbar and resource column according to the assigned resources:
 

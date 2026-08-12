@@ -3,11 +3,11 @@ layout: post
 title: Global and Locale in ASP.NET Core Gantt Chart | Syncfusion
 description: Learn how to configure globalization and locale settings in Syncfusion ASP.NET Core Gantt Chart to support multiple languages and regional formats.
 keywords: asp.net core gantt globalization, locale settings, language support, regional formats, international gantt chart, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/global-local
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/global-locale
 platform: gantt-sdk
 control: Global and Locale - Gantt Chart
 documentation: ug
-domainurl: https://help.syncfusion.com/gantt-sdk/overview
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
 # Globalization and Localization in ASP.NET Core Gantt Chart
@@ -118,7 +118,7 @@ The following list of properties and its values are used in the Gantt.
 
 ### Loading translations
 
-To load translation object in an application use [`load`](https://ej2.syncfusion.com/documentation/api/base/l10n#load) function of [`L10n`](https://ej2.syncfusion.com/documentation/api/base/l10n) class.
+To load translation object in an application use [`load`](https://ej2.syncfusion.com/documentation/api/base/l10n/#load) function of [`L10n`](https://ej2.syncfusion.com/documentation/api/base/l10n/) class.
 
 The below example demonstrates the Gantt in **Deutsch** culture.
 
