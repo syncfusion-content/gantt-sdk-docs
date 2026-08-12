@@ -121,7 +121,7 @@ You can also change header text programmatically using the following methods:
 These methods allow access to the column or header element, where you can update the `headerText` or `textContent` as needed.
 
 > - After modifying header text, call `refreshHeader` to reflect the changes.
-> - Column UIDs are auto-generated and may change when the chart is refreshed
+> - Column UIds are auto-generated and may change when the chart is refreshed
 
 Here is an example of how to change the header text of a column using the `getColumnByField` method:
 

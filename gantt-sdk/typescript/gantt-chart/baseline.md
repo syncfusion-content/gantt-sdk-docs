@@ -73,7 +73,7 @@ The following example demonstrates complete baseline configuration with proper f
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/baseline-cs1" %}
 
-> For a comprehensive demonstration of baseline functionality, explore the [interactive sample](https://ej2.syncfusion.com/demos#/tailwind3/gantt/baseline.html).
+> For a comprehensive demonstration of baseline functionality, explore the [interactive sample](https://ej2.syncfusion.com/demos/#/tailwind3/gantt/baseline.html).
 
 ## Customize baseline using event
 

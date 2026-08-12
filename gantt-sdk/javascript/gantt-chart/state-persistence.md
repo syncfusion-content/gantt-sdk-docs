@@ -18,11 +18,11 @@ To enable this, set the [enablePersistence](../../api/gantt#enablepersistence) p
 
 ## Restore initial Gantt state
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Gantt Chart control provides options to reset its state, reverting all interactions and configurations to the original setup.  This is useful for clearing filters, sorting, and column arrangements, even when [enablePersistence](../../api/gantt#enablepersistence) is enabled.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Gantt Chart control provides options to reset its state, reverting all interactions and configurations to the original setup. This is useful for clearing filters, sorting, and column arrangements, even when [enablePersistence](../../api/gantt#enablepersistence) is enabled.
 
 ### Changing control ID
 
-To reset the Gantt to its default state, update the control ID.  This initializes the control as a new instance, restoring its original configuration.
+To reset the Gantt to its default state, update the control ID. This initializes the control as a new instance, restoring its original configuration.
 
 Here is an example code to change the control ID dynamically to restore initial Gantt state.
 
@@ -36,7 +36,7 @@ Here is an example code to change the control ID dynamically to restore initial 
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -69,7 +69,7 @@ Here is an example code on how to clear local storage to retain its default stat
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -102,7 +102,7 @@ To implement this functionality, extract the current state using `getPersistData
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -125,22 +125,20 @@ When [enablePersistence](../../api/gantt#enablepersistence) is set to **true**, 
 
 ```typescript
 //get the Gantt model.
-let value: string = window.localStorage.getItem('ganttGantt'); //"ganttGantt" is control name + control ID.
+let value: string = window.localStorage.getItem("ganttGantt"); //"ganttGantt" is control name + control ID.
 let model: Object = JSON.parse(model);
-
 ```
 
 ```typescript
 //set the Gantt model.
-window.localStorage.setItem('ganttGantt', JSON.stringify(model)); //"ganttGantt" is control name + control ID.
-
+window.localStorage.setItem("ganttGantt", JSON.stringify(model)); //"ganttGantt" is control name + control ID.
 ```
 
-> You can refer to our [JavaScript Gantt](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Gantt example](https://ej2.syncfusion.com/demos#/material/gantt/default.html) to knows how to present and manipulate data.
+> You can refer to our [JavaScript Gantt](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Gantt example](https://ej2.syncfusion.com/demos/#/material/gantt/default.html) to knows how to present and manipulate data.
 
 ## Prevent columns from persisting
 
-When [enablePersistence](../../api/gantt#enablepersistence) is set to **true**, Gantt properties such as [Filtering](../../api/gantt#allowfiltering), [Sorting](../../api/gantt#allowsorting), and [Columns](../../api/gantt#columns) are automatically saved.  
+When [enablePersistence](../../api/gantt#enablepersistence) is set to **true**, Gantt properties such as [Filtering](../../api/gantt#allowfiltering), [Sorting](../../api/gantt#allowsorting), and [Columns](../../api/gantt#columns) are automatically saved.
 
 To prevent specific properties from being persisted, use the `addOnPersist` method.
 
@@ -158,7 +156,7 @@ The example below shows how to prevent Gantt columns from being persisted. In th
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/column-prevent-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-prevent-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -193,7 +191,7 @@ When [enablePersistence](../../api/gantt#enablepersistence) is set to **true** i
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/state-persistence-cs4" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -226,7 +224,7 @@ To persist these settings, clone the [Columns](../../api/gantt#columns) property
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/column-persist-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/column-persist-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}

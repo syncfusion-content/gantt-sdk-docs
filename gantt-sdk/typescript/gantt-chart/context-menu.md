@@ -80,4 +80,4 @@ On touch devices, context menu functionality is accessible through **long press*
 
 This touch interaction ensures consistent experience across different device types and input methods while maintaining full functionality through intuitive gesture-based navigation.
 
-> For a comprehensive demonstration of context menu functionality, including default items, custom items, and sub-menus, explore the [interactive sample](https://ej2.syncfusion.com/demos#/tailwind3/gantt/contextMenu.html).
+> For a comprehensive demonstration of context menu functionality, including default items, custom items, and sub-menus, explore the [interactive sample](https://ej2.syncfusion.com/demos/#/tailwind3/gantt/contextMenu.html).
