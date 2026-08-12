@@ -68,11 +68,11 @@ The accessibility checker tools highlight the following known issues:
 - Verify that the `<div>` element with `role="grid"` provides proper keyboard access.
 - The element with `role="grid"` contains child elements with roles such as `"generic"` and `"textbox"`, which are not allowed. Only `"row"` or `"rowgroup"` roles are permitted as direct children.
 - Interactive component with ARIA role `treegrid` does not have a programmatically associated accessible name.
-- None of the descendant elements with `role="row"` are tabbable.
+- None of the descendant elements with `role="row"` are focused.
 - The explicitly assigned ARIA role `"rowgroup"` is redundant with the implicit role of the `<tbody>` element.
 - The explicitly assigned ARIA role `"row"` is redundant with the implicit role of the `<tr>` element.
 - The explicitly assigned ARIA role `"gridcell"` is redundant with the implicit role of the `<td>` element.
-- The tabbable element with role `"columnheader"` is not a widget role.
+- The focusable element with role `"columnheader"` is not a widget role.
 - The explicitly assigned ARIA role `"columnheader"` is redundant with the implicit role of the `<th>` element.
 - The element with `role="rowgroup"` does not contain required child elements with role `"row"`.
 - The ARIA attribute `aria-valuenow` is not valid for a `<div>` element with `role="separator"`.
