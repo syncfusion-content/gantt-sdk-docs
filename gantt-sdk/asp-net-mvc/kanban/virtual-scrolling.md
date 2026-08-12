@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Virtual Scrolling in Syncfusion ASP.NET MVC Kanban Component
-description: Learn here all about Virtual Scrolling in Syncfusion ASP.NET MVC Kanban component of Syncfusion Essential JS 2 and more.
+title: Virtual Scrolling in ASP.NET MVC Kanban | Syncfusion
+description: Learn how to implement virtual scrolling in Syncfusion ASP.NET MVC Kanban for efficient rendering of large datasets.
+keywords: asp-net-mvc kanban virtual scrolling, syncfusion kanban, scrolling, performance
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/kanban/virtual-scrolling
 platform: gantt-sdk
-control: Virtual Scrolling
-publishingplatform: gantt-sdk
+control: Virtual Scrolling - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Virtualization
+# Virtual Scrolling and Performance in ASP.NET MVC Kanban
 
 Kanban allows you to load a large amount of data without any performance degradation. This feature can be enabled by setting the `EnableVirtualization` property in the Kanban to `true`.
 
