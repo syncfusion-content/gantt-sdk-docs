@@ -7,10 +7,10 @@ canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/scroll
 platform: gantt-sdk
 control: Scrolling - Gantt Chart
 documentation: ug
-domainurl: https://help.syncfusion.com/gantt-sdk
+domainurl: https://help.syncfusion.com/gantt-sdk/overview
 ---
 
-# Configuring Scrolling Behavior and Positioning in ASP.NET Core Gantt Chart
+# Configuring Scrolling Behavior in ASP.NET Core Gantt Chart
 
 The scrollbar will be displayed in the gantt when content exceeds the element [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Width) or [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Height). The vertical and horizontal scrollbars will be displayed based on the following criteria:
 
@@ -22,7 +22,7 @@ N> The default value for [`height`](https://help.syncfusion.com/cr/aspnetcore-js
 
 ## Set width and height
 
-To specify the [`width`](../api/gantt/#width) and [`height`](../api/gantt/#height) of the scroller in the pixel, set the pixel value to a number.
+To specify the [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Width) and [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Height) of the scroller in the pixel, set the pixel value to a number.
 
 The following code example shows how to set height and width in the Gantt control:
 
@@ -81,7 +81,7 @@ The following code example shows how to set height and width in the Gantt contro
 
 ## Scroll To Date method
 
-In the Gantt control, When We use the [`scrollToDate`](https://ej2.syncfusion.com/documentation/api/gantt/#scrolltodate) method, it will scroll the timeline horizontally to the date that we specified in the method's argument.
+In the Gantt control, When We use the `scrollToDate` method, it will scroll the timeline horizontally to the date that we specified in the method's argument.
 
 The following code examples show how the scroll To Date method works in Gantt:
 

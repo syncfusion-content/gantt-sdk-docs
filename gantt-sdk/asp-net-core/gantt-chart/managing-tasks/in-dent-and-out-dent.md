@@ -7,7 +7,7 @@ canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managi
 platform: gantt-sdk
 control: Managing Tasks - Gantt Chart
 documentation: ug
-domainurl: https://help.syncfusion.com/gantt-sdk
+domainurl: https://help.syncfusion.com/gantt-sdk/overview
 ---
 
 # Indent and Outdent in ASP.NET Core Gantt Chart

@@ -7,10 +7,10 @@ canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/undo-r
 platform: gantt-sdk
 control: Undo Redo - Gantt Chart
 documentation: ug
-domainurl: https://help.syncfusion.com/gantt-sdk
+domainurl: https://help.syncfusion.com/gantt-sdk/overview
 ---
 
-# Undo and Redo with Action History Management in ASP.NET Core Gantt Chart
+# Undo Redo in ASP.NET Core Gantt Chart
 
 The Undo feature enables users to revert the most recent action performed in the Gantt Chart. It helps undo changes made to tasks, dependencies, or other actions within the Gantt Chart.
 
@@ -103,7 +103,7 @@ In the following example, `UndoRedoStepsCount` value is set to 5.
 
 ## Perform undo redo actions programatically
 
-You can perform undo and redo actions programatically using [undo](https://ej2.syncfusion.com/react/documentation/api/gantt/#undo) and [redo](https://ej2.syncfusion.com/react/documentation/api/gantt/#redo) methods.
+You can perform undo and redo actions programatically using `undo` and `redo` methods.
 
 The following code example demonstrates how to invoke the `undo` and `redo` method by clicking the external button.
 
@@ -132,7 +132,7 @@ The following code example demonstrates how to invoke the `undo` and `redo` meth
 
 ## Retrieve undo and redo stack collection
 
-By default, when an undo or redo action is performed, the actions are stored in an array collection. To retrieve the undo and redo stack array collections, you can use the [getUndoActions](https://ej2.syncfusion.com/react/documentation/api/gantt/#getundoactions) and [getRedoActions](https://ej2.syncfusion.com/react/documentation/api/gantt/#getredoactions) methods.
+By default, when an undo or redo action is performed, the actions are stored in an array collection. To retrieve the undo and redo stack array collections, you can use the `getUndoActions` and `getRedoActions` methods.
 
 The following code example demonstrates how to retrieve the undo and redo collection using method by clicking the external button.
 
@@ -161,7 +161,7 @@ The following code example demonstrates how to retrieve the undo and redo collec
 
 ## Clear undo and redo collection
 
-At any point, you can clear the undo and redo collections using the [clearUndoCollection](https://ej2.syncfusion.com/react/documentation/api/gantt/#clearundocollection) and [clearRedoCollection](https://ej2.syncfusion.com/react/documentation/api/gantt/#clearredocollection) methods. This allows you to reset the undo and redo stacks as needed during runtime.
+At any point, you can clear the undo and redo collections using the `clearUndoCollection` and `clearRedoCollection` methods. This allows you to reset the undo and redo stacks as needed during runtime.
 
 The following code example demonstrates how to clear the undo and redo collection using method by clicking the external button.
 
