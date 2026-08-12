@@ -1,20 +1,21 @@
 ---
 layout: post
-title: Data Binding in ASP.NET Core Kanban Component
-description: Learn here all about Data Binding in Syncfusion ASP.NET Core Kanban component of Syncfusion Essential JS 2 and more.
+title: Data Binding in ASP.NET Core Kanban | Syncfusion
+description: Learn how to bind local and remote data sources to Syncfusion ASP.NET Core Kanban and render tasks efficiently in your app.
+keywords: asp-net-core kanban data binding, syncfusion kanban, remote data, local data
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/data-binding
 platform: gantt-sdk
-control: Data Binding
-publishingplatform: gantt-sdk
+control: Data Binding - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Data binding
+# Data Binding with Local and Remote Sources in ASP.NET Core Kanban
 
 The Kanban uses `DataManager`, which supports both RESTful data service binding and list binding. The `dataSource`property of Kanban can be assigned either with the instance of `DataManager` or List, as it supports the following two data binding methods:
 
-* Local data
-* Remote data
+- Local data
+- Remote data
 
 ## Local data
 
@@ -43,8 +44,6 @@ To bind local list data to the Kanban, you can simply assign a list to the `data
 {% endtabs %}
 {% endif %}
 
-
-
 Output be like the below.
 
 ![kanban](./images/local-data.PNG)
@@ -53,7 +52,7 @@ N> By default, `DataManager` uses `JsonAdaptor` for binding local data.
 
 ## Remote data
 
-To bind remote data to kanban component, assign service data as an instance of `DataManager` to the `dataSource`property. To interact with remote data source,  provide the endpoint **url**.
+To bind remote data to kanban component, assign service data as an instance of `DataManager` to the `dataSource`property. To interact with remote data source, provide the endpoint **url**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -78,8 +77,6 @@ To bind remote data to kanban component, assign service data as an instance of `
 {% endtabs %}
 {% endif %}
 
-
-
 Output be like the below.
 
 ![kanban](./images/remote-data.PNG)
@@ -88,7 +85,7 @@ N> By default, `DataManager` uses **ODataAdaptor** for remote data-binding.
 
 ### OData services
 
-[`OData`](http://www.odata.org/documentation/odata-version-3-0/) is a standardized protocol for creating and consuming data. You can retrieve data from OData service using the DataManager. Refer to the following code example for remote Data binding using OData service.
+[`OData`](http://www.odata.org/documentation/odata-version-3-0) is a standardized protocol for creating and consuming data. You can retrieve data from OData service using the DataManager. Refer to the following code example for remote Data binding using OData service.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -112,8 +109,6 @@ N> By default, `DataManager` uses **ODataAdaptor** for remote data-binding.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ### OData v4 services
 
@@ -141,8 +136,6 @@ The ODataV4 is an improved version of OData protocols, and the `DataManager` can
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 Output be like the below.
 
@@ -175,8 +168,6 @@ You can use **WebApiAdaptor** to bind kanban with Web API created using OData en
 {% endtabs %}
 {% endif %}
 
-
-
 Below server-side controller code to get the Kanban data.
 
 ```typescript
@@ -196,10 +187,10 @@ The CRUD (Create, Read, Update and Delete) actions can be performed easily on Ka
 
 The CRUD operation in Kanban can be mapped to server-side controller actions using the properties `insertUrl`, `removeUrl`, `updateUrl`, and `crudUrl`.
 
-* `insertUrl` – You can perform a single insertion operation on the server-side.
-* `updateUrl` – You can update single data on the server-side.
-* `removeUrl` – You can remove single data on the server-side.
-* `crudUrl` – You can perform bulk data operation on the server-side.
+- `insertUrl` – You can perform a single insertion operation on the server-side.
+- `updateUrl` – You can update single data on the server-side.
+- `removeUrl` – You can remove single data on the server-side.
+- `crudUrl` – You can perform bulk data operation on the server-side.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -223,8 +214,6 @@ The CRUD operation in Kanban can be mapped to server-side controller actions usi
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 The server-side controller code to handle the CRUD operations are as follows.
 
@@ -284,8 +273,6 @@ It is possible to create your own custom adaptor by extending the built-in avail
 {% endtabs %}
 {% endif %}
 
-
-
 Output be like the below.
 
 ![kanban](./images/custom-adaptor.PNG)
@@ -317,8 +304,6 @@ To add a custom parameter to the data request, use the **addParams** method of *
 {% endtabs %}
 {% endif %}
 
-
-
 N> The parameters added using the `Query` property will be sent along with the data request for every kanban action.
 
 ### Handling HTTP error
@@ -349,8 +334,6 @@ The argument passed to the `actionFailure` event contains the error details retu
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 Output be like the below.
 
@@ -384,8 +367,6 @@ You can use Kanban `dataSource` property to bind the datasource to Kanban from e
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 Output be like the below.
 
