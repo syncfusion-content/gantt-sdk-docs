@@ -97,7 +97,7 @@ The following table shows built-in toolbar items and its actions.
 
 ## Custom toolbar items
 
-You can add custom items to the Gantt chart toolbar by setting the [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Toolbar) property with a collection of `ItemModel` objects. The actions associated with these custom toolbar items can be handled using the [OnToolbarClick](https://blazor.syncfusion.com/documentation/gantt-chart/events#ontoolbarclick) event.
+You can add custom items to the Gantt chart toolbar by setting the [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Toolbar) property with a collection of `ItemModel` objects. The actions associated with these custom toolbar items can be handled using the [OnToolbarClick](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#ontoolbarclick) event.
 
 By default, custom toolbar items are aligned to the left. However, you can change their position using the [Align](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Navigations.ToolbarItem.html#Syncfusion_Blazor_Navigations_ToolbarItem_Align) property. In the example below, the **Collapse All** toolbar item is aligned to the right.
 
@@ -327,4 +327,4 @@ You can control toolbar items dynamically using the [EnableItems](https://help.s
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/VNVxtnhrrWCTwoEw?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-N> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=bootstrap5) to know how to render and configure the Gantt.
+N> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=fluent2) to know how to render and configure the Gantt.

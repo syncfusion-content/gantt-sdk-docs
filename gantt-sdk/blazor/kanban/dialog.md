@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Card Editing and Dialog Management in Blazor Kanban
 
-The [Blazor Kanban Board](https://www.syncfusion.com/blazor-components/blazor-kanban-board) provides built-in support to add, edit and delete a card using dialog module. Users can edit cards using the following methods:
+The [Blazor Kanban Board](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) provides built-in support to add, edit and delete a card using dialog module. Users can edit cards using the following methods:
 
 * Built-in dialog module
 * Dialog template

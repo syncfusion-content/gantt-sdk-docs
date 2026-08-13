@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Dimensions in ASP.NET Core Kanban Component
-description: Learn here all about Dimensions in Syncfusion ASP.NET Core Kanban component of Syncfusion Essential JS 2 and more.
+title: Dimensions and Sizing in ASP.NET Core Kanban | Syncfusion
+description: Learn how to configure dimensions, heights, and responsive sizing in Syncfusion ASP.NET Core Kanban components.
+keywords: asp-net-core kanban dimensions, syncfusion kanban, sizing, responsive
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/dimensions
 platform: gantt-sdk
-control: Dimensions
-publishingplatform: gantt-sdk
+control: Dimensions - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Kanban dimensions
+# Dimensions, Height, and Width Configuration in ASP.NET Core Kanban
 
 The Kanban dimensions refers to both height and width of the entire layout and it accepts three types of values.
 
