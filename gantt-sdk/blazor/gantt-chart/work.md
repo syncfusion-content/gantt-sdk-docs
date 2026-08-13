@@ -14,7 +14,15 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 ## Work
 
-The work is the total hours required to complete a task. Work can be mapped from the data source field using the property [GanttTaskFields.Work](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_Work). Work can be measured in `Hour`, `Day`, `Minute`. By default, work is measured in `Hour` and it can be changed by using the property `WorkUnit`.
+Work represents the total amount of time required to complete a task. Work can be mapped from the data source field using the property [GanttTaskFields.Work](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_Work). By default, work is measured in `Hour`, and this can be changed using the `WorkUnit` property.
+ 
+The Blazor Gantt Chart component supports the following work units:
+ 
+* [Hour](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.WorkUnit.html#fields) - Displays work values in hours. This is the default work unit.
+* [Day](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.WorkUnit.html#fields) - Displays work values in days.
+* [Minute](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.WorkUnit.html#fields) - Displays work values in minutes.
+* [Week](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.WorkUnit.html#fields) - Displays work values in weeks.
+* [Month](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.WorkUnit.html#fields) - Displays work values in months.
 
 N> When the work field is mapped from the data source, the default task type will be `FixedWork`.
 
