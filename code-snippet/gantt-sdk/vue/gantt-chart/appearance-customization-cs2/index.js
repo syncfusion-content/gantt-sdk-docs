@@ -13,25 +13,21 @@ new Vue({
       <template v-slot:taskbarTemplate="{data}">
         <div class="e-gantt-child-taskbar e-custom-moments" style="height:100%;border-radius:5px;">
           <span class="e-task-label"
-            style="position:absolute;top:5px;font-size:12px;text-overflow:ellipsis;height:90%;overflow:hidden;">{{data.TaskName}}</span>
+            style="position:absolute;top:15px;font-size:12px;text-overflow:ellipsis;height:90%;overflow:hidden;">{{data.TaskName}}</span>
         </div>
       </template>
       <template v-slot:parentTaskbarTemplate="{data}">
         <div class="e-gantt-child-taskbar e-custom-parent" style="height:100%;border-radius:5px;">
           <span class="e-task-label"
-            style="position:absolute;top:5px;font-size:12px;text-overflow:ellipsis;height:90%;overflow:hidden;">{{data.TaskName}}</span>
+            style="position:absolute;top:15px;font-size:12px;text-overflow:ellipsis;height:90%;overflow:hidden;">{{data.TaskName}}</span>
         </div>
       </template>
-      <template v-slot:milestoneTemplate="{data}">
-        <div class="e-gantt-milestone" style="position:absolute;">
-          <div class="e-milestone-top"
-            style="border-right-width:26px; margin-top: -9px;border-left-width:26px;border-bottom-width:26px;"></div>
-          <div class="e-milestone-bottom"
-            style="top:26px;border-right-width:26px; border-left-width:26px; border-top-width:26px;"></div>
+      <template v-slot:milestoneTemplate="{ data }">
+        <div class="e-gantt-milestone" style="margin-top: 3px;width: 41px;height: 41px;border: 0;position: absolute;left: -2px;">
+        </div>
+      </template>
+    </ejs-gantt>
   </div>
-</template>
-</ejs-gantt>
-    </div>
 `,
 
   data: function() {
