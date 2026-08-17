@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Timeline in Blazor Gantt Chart | Syncfusion
 description: Learn how to configure timeline in Syncfusion Blazor Gantt Chart with view modes, tier settings, zooming, and weekend highlighting options.

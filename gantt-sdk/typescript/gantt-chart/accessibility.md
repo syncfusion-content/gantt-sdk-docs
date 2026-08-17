@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Accessibility in TypeScript Gantt Chart | Syncfusion
 description: Learn how to implement accessibility in Syncfusion TypeScript Gantt Chart with WCAG 2.2, ARIA labels, keyboard navigation, and Section 508 compliance support.
@@ -275,5 +275,4 @@ The sample demonstrates complete keyboard navigation functionality, screen reade
 * [Keyboard Navigation in TypeScript Gantt Chart control](./keyboard-navigation)
 * [WCAG 2.2 Guidelines](https://www.w3.org/TR/WCAG22/)
 * [Section 508 Standards](https://www.section508.gov/)
-
 

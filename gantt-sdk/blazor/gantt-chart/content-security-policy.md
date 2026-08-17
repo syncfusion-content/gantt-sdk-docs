@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Content Security Policy in Blazor Gantt Chart | Syncfusion
 description: Learn how to configure Syncfusion Blazor Gantt Chart with strict CSP headers and understand features that require relaxation for proper rendering.

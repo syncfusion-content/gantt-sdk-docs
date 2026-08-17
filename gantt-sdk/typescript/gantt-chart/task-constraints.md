@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Task Constraints in TypeScript Gantt Chart | Syncfusion
 description: Learn how to configure task constraints in Syncfusion TypeScript Gantt Chart to enforce scheduling rules, deadlines, and control task start and end dates.

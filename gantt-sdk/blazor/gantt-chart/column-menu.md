@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Column Menu in Blazor Gantt Chart | Syncfusion
 description: Learn how to enable the column menu in Syncfusion Blazor Gantt Chart for sorting, filtering, autofit, and column chooser actions.

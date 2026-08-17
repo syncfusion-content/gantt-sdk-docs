@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: State Management in Blazor Gantt Chart | Syncfusion
 description: Learn how to persist and restore state in Syncfusion Blazor Gantt Chart including grid settings, column state, filters, and taskbar configurations.

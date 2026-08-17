@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Column Spanning in TypeScript Gantt Chart | Syncfusion
 description: Learn how to merge and span adjacent columns in Syncfusion TypeScript Gantt Chart to organize related task data and improve layout presentation.

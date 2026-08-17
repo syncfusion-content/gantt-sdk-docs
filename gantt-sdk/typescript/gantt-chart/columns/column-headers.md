@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Column Headers in TypeScript Gantt Chart | Syncfusion
 description: Learn how to customize TypeScript Gantt column headers with text, templates, alignment, and dynamic updates.

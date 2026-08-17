@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Editing Tasks in Blazor Gantt Chart | Syncfusion
 description: Learn how to edit tasks in Syncfusion Blazor Gantt Chart using cell editing, dialog editing, taskbar dragging, and programmatic methods.

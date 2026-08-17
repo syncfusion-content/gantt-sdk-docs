@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Filtering in Blazor Gantt Chart | Syncfusion
 description: Learn how to enable and customize filtering in Syncfusion Blazor Gantt Chart to display matching task records based on column criteria and filter modes.

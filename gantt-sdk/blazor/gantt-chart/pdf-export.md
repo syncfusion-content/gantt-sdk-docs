@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: PDF Export in Blazor Gantt Chart | Syncfusion
 description: Learn how to export Syncfusion Blazor Gantt Chart to PDF with blob objects, single-page layouts, themes, and advanced export options.

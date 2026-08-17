@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Globalization in Blazor Gantt Chart | Syncfusion
 description: Learn how to globalize Syncfusion Blazor Gantt Chart by localizing culture-specific text, date formats, and number formats for different regions.

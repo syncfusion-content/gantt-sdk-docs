@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Toolbar in Blazor Gantt Chart | Custom Items | Syncfusion
 description: Learn how to configure the toolbar in Syncfusion Blazor Gantt Chart with built-in items like Add, Edit, Search, ZoomIn, and custom toolbar buttons.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Holidays in Blazor Gantt Chart | Syncfusion
 description: Learn how to configure holidays in Syncfusion Blazor Gantt Chart to mark non-working days and improve project task scheduling accuracy.

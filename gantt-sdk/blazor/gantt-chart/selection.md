@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Selection in Blazor Gantt Chart | Syncfusion
 description: Learn how to configure selection in Syncfusion Blazor Gantt Chart with row, cell, and combined selection modes for interactive task management.

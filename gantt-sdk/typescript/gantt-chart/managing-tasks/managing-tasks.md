@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Managing Tasks in TypeScript Gantt Chart | Syncfusion
 description: Master task management in Syncfusion TypeScript Gantt Chart with CRUD operations, editing modes, and hierarchical task organization for projects.
@@ -127,7 +127,7 @@ Below is the combined content from the provided markdown sections in bullet poin
 
 ## Prevent particular column and taskbar editing
 
-You can prevent editing for the particular column by setting [columns.allowEditing](../../api/gantt/column/#allowEditing) to **false**.
+You can prevent editing for the particular column by setting [columns.allowEditing](../../api/gantt/column#allowEditing) to **false**.
 
 To restrict taskbar editing, set `args.cancel` to **true** in the [actionBegin](../../gantt/events#actionbegin) event based on `taskbarEditAction`.
 
@@ -398,7 +398,7 @@ The following table explains the taskbar state in dependency edit mode.
 
 ## Taskbar editing tooltip
 
-The taskbar editing tooltip can be customized using the [tooltipSettings.editing](../../api/gantt/tooltipSettings/#editing) property. The following code example shows how to customize the taskbar editing tooltip in Gantt.
+The taskbar editing tooltip can be customized using the [tooltipSettings.editing](../../api/gantt/tooltipSettings#editing) property. The following code example shows how to customize the taskbar editing tooltip in Gantt.
 
 {% if page.publishingplatform == "typescript" %}
 
