@@ -136,7 +136,7 @@ window.localStorage.setItem('ganttGantt', JSON.stringify(model)); //"ganttGantt"
 
 ```
 
-> You can refer to our [JavaScript Gantt](https://www.syncfusion.com/gantt-sdk/javascript-gantt-chartt) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Gantt example](https://ej2.syncfusion.com/demos/#/material3/gantt/default.html) to knows how to present and manipulate data.
+> You can refer to our [JavaScript Gantt](https://www.syncfusion.com/gantt-sdk/javascript-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Gantt example](https://ej2.syncfusion.com/demos/#/material3/gantt/default.html) to knows how to present and manipulate data.
 
 ## Prevent columns from persisting
 
