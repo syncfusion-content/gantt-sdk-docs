@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Column Resizing with Dynamic Width Adjustment in TypeScript Gantt Chart
+# Column Resizing with Responsive Width in TypeScript Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Gantt Chart control allows you to resize columns dynamically by dragging the edges of column headers. This feature enhances readability and layout flexibility, especially when working with large datasets. To enable this feature, set the [allowResizing](../../api/gantt#allowresizing) property to **true** in the Gantt configuration. 
 

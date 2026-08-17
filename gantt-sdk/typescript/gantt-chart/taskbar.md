@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Taskbar Customization with Templates in TypeScript Gantt Chart
 
-The taskbar in the TypeScript Gantt Chart control visually represents tasks on the timeline, showing duration, progress, and dependencies, enabling intuitive project management. Taskbars support customization through properties like [taskbarHeight](../api/gantt#taskbarheight) for sizing and [queryTaskbarInfo](../api/gantt#querytaskbarinfo) event for conditional formatting based on task data like progress. Multi-taskbar support in resource view, enabled by [enableMultiTaskbar](../api/gantt#enablemultitaskbar), summarizes child task progress in collapsed parent taskbars. Connector lines, styled via [connectorLineWidth](../api/gantt#connectorlinewidth) and [connectorLineBackground](../api/gantt#connectorlinebackground), illustrate dependencies. Tooltips, controlled by [tooltipSettings](../api/gantt/tooltipSettings/), provide hover details for taskbars, baselines, and timelines, with templates for custom content. Editing interactions include dragging for rescheduling (via [allowTaskbarDragAndDrop](../api/gantt#allowtaskbardraganddrop)) and resizing for duration, progress changes, triggering events like [taskbarEditing](../gantt/events#taskbarediting) and [taskbarEdited](../gantt/events#taskbaredited) for validation.
+The taskbar in the TypeScript Gantt Chart control visually represents tasks on the timeline, showing duration, progress, and dependencies, enabling intuitive project management. Taskbars support customization through properties like [taskbarHeight](../api/gantt#taskbarheight) for sizing and [queryTaskbarInfo](../api/gantt#querytaskbarinfo) event for conditional formatting based on task data like progress. Multi-taskbar support in resource view, enabled by [enableMultiTaskbar](../api/gantt#enablemultitaskbar), summarizes child task progress in collapsed parent taskbars. Connector lines, styled via [connectorLineWidth](../api/gantt#connectorlinewidth) and [connectorLineBackground](../api/gantt#connectorlinebackground), illustrate dependencies. Tooltips, controlled by [tooltipSettings](../api/gantt/tooltipSettings), provide hover details for taskbars, baselines, and timelines, with templates for custom content. Editing interactions include dragging for rescheduling (via [allowTaskbarDragAndDrop](../api/gantt#allowtaskbardraganddrop)) and resizing for duration, progress changes, triggering events like [taskbarEditing](../gantt/events#taskbarediting) and [taskbarEdited](../gantt/events#taskbaredited) for validation.
 
 ## Customize taskbar height
 
@@ -548,7 +548,7 @@ You can disable the taskbar tooltip using the [beforeTooltipRender](../gantt/eve
 
 ## Customize tooltip templates
 
-You can customize the following tooltip types in the Gantt chart using the [tooltipSettings](../api/gantt/tooltipSettings/) configuration:
+You can customize the following tooltip types in the Gantt chart using the [tooltipSettings](../api/gantt/tooltipSettings) configuration:
 
 ### Taskbar tooltip
 

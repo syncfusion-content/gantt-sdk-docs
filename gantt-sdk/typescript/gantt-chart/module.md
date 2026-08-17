@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Modules in TypeScript Gantt Chart | Syncfusion
-description: Learn how to enable advanced TypeScript Gantt Chart features through module injection for sorting, editing, toolbar, filtering, and export to optimize bundle size.
+description: Learn how to enable TypeScript Gantt Chart features through module injection for sorting, editing, toolbar, filtering, and export to optimize bundle size.
 keywords: typescript gantt modules, feature modules, optional modules, providers, dependency injection, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/module
 platform: gantt-sdk

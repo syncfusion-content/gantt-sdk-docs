@@ -69,7 +69,7 @@ The following example demonstrates context menu implementation with default item
 
 ## Custom context menu items
 
-Extend the context menu functionality by adding custom items using the [contextMenuItems](../../api/gantt#contextmenuitems) property. Custom items are defined as a collection of [contextMenuItemModel](../../api/grid/contextMenuItemModel/) objects with properties for `id` (unique identifier), `text` (display label), `target` (CSS selector for appearance context), and `iconCss` (icon styling class).
+Extend the context menu functionality by adding custom items using the [contextMenuItems](../../api/gantt#contextmenuitems) property. Custom items are defined as a collection of [contextMenuItemModel](../../api/grid/contextMenuItemModel) objects with properties for `id` (unique identifier), `text` (display label), `target` (CSS selector for appearance context), and `iconCss` (icon styling class).
 
 The `target` property determines where custom menu items appear: **.e-content** for task-related operations, like add, delete, save, and cancel, `.e-gridheader` for column-related operations.
 
