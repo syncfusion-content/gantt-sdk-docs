@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: EJ1 API Migration in TypeScript Gantt Chart | Syncfusion
 description: Learn how to migrate from EJ1 to EJ2 Gantt Chart in TypeScript with the complete API mapping reference, code changes, and step-by-step migration guidance.

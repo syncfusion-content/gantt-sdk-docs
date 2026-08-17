@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Column Template in TypeScript Gantt Chart | Syncfusion
 description: Learn how to use column templates in Syncfusion TypeScript Gantt Chart to render images, buttons, and custom content within cells.
