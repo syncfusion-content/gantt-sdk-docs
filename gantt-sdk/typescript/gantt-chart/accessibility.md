@@ -276,4 +276,3 @@ The sample demonstrates complete keyboard navigation functionality, screen reade
 * [WCAG 2.2 Guidelines](https://www.w3.org/TR/WCAG22/)
 * [Section 508 Standards](https://www.section508.gov/)
 
-
