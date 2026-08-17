@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Templates in Blazor Gantt Chart | Syncfusion
 description: Learn how to use templates in Syncfusion Blazor Gantt Chart to customize taskbars, grid columns, tooltips, and task edit dialog content.

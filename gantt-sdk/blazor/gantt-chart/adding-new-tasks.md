@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Adding New Tasks in Blazor Gantt Chart | Syncfusion
 description: Learn how to add new tasks in Syncfusion Blazor Gantt Chart using toolbar, context menu, or programmatic API with parent and child task support.

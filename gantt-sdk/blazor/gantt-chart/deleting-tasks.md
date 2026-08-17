@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Deleting Tasks in Blazor Gantt Chart | Syncfusion
 description: Learn how to delete tasks in Syncfusion Blazor Gantt Chart using toolbar actions, context menu, or programmatic API with confirmation support.

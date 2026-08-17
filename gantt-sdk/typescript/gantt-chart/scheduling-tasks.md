@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Scheduling Tasks in TypeScript Gantt Chart | Syncfusion
 description: Learn how to manage task scheduling in the Syncfusion TypeScript Gantt Chart with task modes, duration units, working time, and holidays.

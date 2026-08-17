@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Undo and Redo in Blazor Gantt Chart | Syncfusion
 description: Learn how to configure undo and redo in Syncfusion Blazor Gantt Chart to revert task edits, dependency changes, and project modifications with action history.

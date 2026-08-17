@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Context Menu in Blazor Gantt Chart | Syncfusion
 description: Learn how to enable and customize the context menu in Syncfusion Blazor Gantt Chart with built-in and custom items for quick task interactions.

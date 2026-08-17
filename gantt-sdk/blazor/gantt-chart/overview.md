@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Blazor Gantt Chart Component Overview | Syncfusion
 description: Explore the Syncfusion Blazor Gantt Chart component with key features like task scheduling, resource view, dependencies, and timeline rendering.

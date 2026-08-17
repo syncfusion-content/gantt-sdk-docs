@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Resources in TypeScript Gantt Chart | Syncfusion
 description: Learn how to configure resources in Syncfusion TypeScript Gantt Chart for task allocation and visualize resource workload and utilization across project.

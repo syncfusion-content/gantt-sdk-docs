@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Blazor Gantt in WebAssembly with VS | Syncfusion
 description: Learn how to create a Blazor WebAssembly app with Syncfusion Gantt Chart using Visual Studio step by step for project management.

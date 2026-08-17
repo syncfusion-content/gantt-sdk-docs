@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Excel Export Options in TypeScript Gantt Chart | Syncfusion
 description: Learn how to customize Excel and CSV export in Syncfusion TypeScript Gantt Chart with custom data settings, headers, footers, and formatting options.
