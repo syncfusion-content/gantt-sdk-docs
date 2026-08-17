@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Virtualization in Blazor Gantt Chart | Syncfusion
 description: Learn how to enable row and column virtualization in Syncfusion Blazor Gantt Chart for efficient rendering of large project task datasets.

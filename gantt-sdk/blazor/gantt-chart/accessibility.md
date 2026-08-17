@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Accessibility in Blazor Gantt Chart | WCAG, ARIA | Syncfusion
 description: Learn how to implement accessibility in Syncfusion Blazor Gantt Chart with WCAG 2.2, ARIA labels, keyboard navigation, and Section 508 compliance.

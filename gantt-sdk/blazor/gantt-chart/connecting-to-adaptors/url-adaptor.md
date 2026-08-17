@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: URL Adaptor in Blazor Gantt Chart | Syncfusion
 description: Learn how to bind remote data and perform CRUD operations using the URL adaptor in Syncfusion Blazor Gantt Chart component.

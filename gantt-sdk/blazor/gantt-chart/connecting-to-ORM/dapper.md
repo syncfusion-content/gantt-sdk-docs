@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Dapper ORM in Blazor Gantt Chart | Syncfusion
 description: Learn how to bind SQL Server data to Syncfusion Blazor Gantt Chart using Dapper micro-ORM with complete CRUD and data operations.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Taskbar Editing in Blazor Gantt Chart | Syncfusion
 description: Learn how to edit tasks via taskbar drag and resize interactions in Syncfusion Blazor Gantt Chart for intuitive project timeline adjustments.

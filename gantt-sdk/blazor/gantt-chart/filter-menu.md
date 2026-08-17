@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Filter Menu in Blazor Gantt Chart | Syncfusion
 description: Learn how to enable and use the filter menu in Syncfusion Blazor Gantt Chart to filter columns with various comparison operators and conditions.

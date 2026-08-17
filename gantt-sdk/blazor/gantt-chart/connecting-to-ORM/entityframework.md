@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Entity Framework in Blazor Gantt Chart | Syncfusion
 description: Learn how to bind SQL Server data to Syncfusion Blazor Gantt Chart using Entity Framework Core with CRUD, filtering, and sorting support.

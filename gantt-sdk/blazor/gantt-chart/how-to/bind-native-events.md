@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Bind Native Events in Blazor Gantt Chart | Syncfusion
 description: Learn how to bind native events and customize key interactions in the Syncfusion Blazor Gantt Chart component for advanced scenarios.

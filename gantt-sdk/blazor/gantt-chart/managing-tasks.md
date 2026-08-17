@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Managing Tasks in Blazor Gantt Chart | Syncfusion
 description: Learn how to manage tasks in Syncfusion Blazor Gantt Chart, including adding, editing, deleting, indenting, and outdenting tasks programmatically.

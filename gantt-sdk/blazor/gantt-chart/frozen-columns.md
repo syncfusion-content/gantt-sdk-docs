@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Frozen Columns in Blazor Gantt Chart | Syncfusion
 description: Learn how to freeze columns in Syncfusion Blazor Gantt Chart to keep specific grid columns visible during horizontal scrolling.

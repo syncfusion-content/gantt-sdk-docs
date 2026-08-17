@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Events in Blazor Gantt Chart | Syncfusion
 description: Learn how to handle events in Syncfusion Blazor Gantt Chart for user interactions like task add, edit, delete, selection, and timeline changes.

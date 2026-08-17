@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Taskbar in Blazor Gantt Chart | Syncfusion
 description: Learn how to configure and customize taskbars in Syncfusion Blazor Gantt Chart including parent, child, milestone taskbars, and progress rendering.

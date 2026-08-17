@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Clipboard in Blazor Gantt Chart | Syncfusion
 description: Learn how to use clipboard operations in Syncfusion Blazor Gantt Chart to copy and paste task rows or cell values efficiently.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Cell Selection in Blazor Gantt Chart | Syncfusion
 description: Learn how to configure cell selection in Syncfusion Blazor Gantt Chart with single, multiple, and programmatic selection modes for grid cells.

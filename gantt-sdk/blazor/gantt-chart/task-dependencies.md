@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Task Dependencies in Blazor Gantt Chart | Syncfusion
 description: Learn how to define and manage task dependencies in Syncfusion Blazor Gantt Chart with finish-to-start, start-to-start, and other dependency types.
