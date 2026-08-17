@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Multi-Page PDF Export in Blazor Gantt Chart | Syncfusion
 description: Learn how to export Syncfusion Blazor Gantt Chart to multi-page PDF documents using scaling modes, page-size options, and fit-to-page settings.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Editing Tasks in TypeScript Gantt Chart | Syncfusion
 description: Learn to edit tasks in Syncfusion TypeScript Gantt Chart using dialogs, inline editing, and taskbar interactions for flexible project task management updates.

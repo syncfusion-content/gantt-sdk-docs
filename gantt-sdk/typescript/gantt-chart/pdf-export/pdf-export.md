@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: PDF Export in TypeScript Gantt Chart | Syncfusion
 description: Learn how to export Syncfusion TypeScript Gantt Chart to PDF with customization options, themes, page settings, and multiple layout configurations.

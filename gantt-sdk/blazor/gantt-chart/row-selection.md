@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Row Selection in Blazor Gantt Chart | Syncfusion
 description: Learn how to configure row selection in Syncfusion Blazor Gantt Chart with single, multiple, and checkbox-based selection modes for task rows.

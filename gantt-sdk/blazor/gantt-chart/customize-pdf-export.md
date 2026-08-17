@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Customize PDF Export in Blazor Gantt Chart | Syncfusion
 description: Learn how to customize PDF exports in Syncfusion Blazor Gantt Chart with page size, orientation, margins, fonts, and cell styling options.

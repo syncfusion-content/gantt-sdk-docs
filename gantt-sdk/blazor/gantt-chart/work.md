@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Work in Blazor Gantt Chart | Syncfusion
 description: Learn how to configure and calculate work in Syncfusion Blazor Gantt Chart for accurate task effort tracking, resource units, and work scheduling.

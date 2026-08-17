@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Expand Collapse Icon in Blazor Gantt Chart | Syncfusion
 description: Learn how to customize the expand and collapse icons in Syncfusion Blazor Gantt Chart using CSS overrides for a personalized look.

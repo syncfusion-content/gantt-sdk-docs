@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Scrolling in Blazor Gantt Chart | Syncfusion
 description: Learn how to configure scrolling in Syncfusion Blazor Gantt Chart with scroll-to-task, virtual scrolling, and horizontal scroll settings.

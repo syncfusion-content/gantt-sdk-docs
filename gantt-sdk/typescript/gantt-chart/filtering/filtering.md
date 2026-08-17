@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Filtering in TypeScript Gantt Chart | Syncfusion
 description: Learn how to filter task data in Syncfusion TypeScript Gantt Chart to search and display tasks based on criteria for efficient project data management.

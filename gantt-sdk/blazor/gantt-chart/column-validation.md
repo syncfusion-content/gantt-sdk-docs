@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Column Validation in Blazor Gantt Chart | Syncfusion
 description: Learn how to configure built-in and custom column validation in Syncfusion Blazor Gantt Chart using validation rules and custom validator functions.

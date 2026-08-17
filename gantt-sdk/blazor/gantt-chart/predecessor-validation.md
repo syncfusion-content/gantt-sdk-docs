@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Predecessor Validation in Blazor Gantt Chart | Syncfusion
 description: Learn how to validate predecessor relationships in Syncfusion Blazor Gantt Chart to ensure correct task dependency setup and avoid circular dependencies.

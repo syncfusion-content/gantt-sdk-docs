@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Selection in TypeScript Gantt Chart | Syncfusion
 description: Learn how to enable selection selection in Syncfusion TypeScript Gantt Chart with row and cell selection modes, keyboard navigation, and selection events.

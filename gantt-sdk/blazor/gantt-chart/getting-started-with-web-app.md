@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Getting Started with Blazor Gantt Chart in Web App | Syncfusion
 description: Learn how to install and set up the Syncfusion Blazor Gantt Chart in a Blazor Web App with task data binding and timeline rendering.

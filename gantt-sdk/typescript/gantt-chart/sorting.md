@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Sorting in TypeScript Gantt Chart | Syncfusion
 description: Learn how to enable sorting in Syncfusion TypeScript Gantt Chart to organize tasks and columns in ascending or descending order for improved data management.

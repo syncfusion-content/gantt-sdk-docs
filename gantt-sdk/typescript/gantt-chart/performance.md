@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Performance in TypeScript Gantt Chart | Syncfusion
 description: Learn how to optimize Syncfusion TypeScript Gantt Chart with optimization techniques for large datasets, virtual scrolling, and rendering enhancements.

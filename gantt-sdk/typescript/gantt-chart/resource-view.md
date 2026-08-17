@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Resource View in TypeScript Gantt Chart | Syncfusion
 description: Learn how to configure resource view in Syncfusion TypeScript Gantt Chart to visualize tasks hierarchically by resource, showing workload in timeline.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Task scheduling in Blazor Gantt Chart Component | Syncfusion
 description: Learn task scheduling in Syncfusion Blazor Gantt Chart including automatic, manual, custom, and unscheduled tasks, milestones, and duration units.

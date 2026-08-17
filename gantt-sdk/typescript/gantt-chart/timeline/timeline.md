@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Timeline in TypeScript Gantt Chart | Syncfusion
 description: Configure timelines in Syncfusion TypeScript Gantt Chart with view modes, zooming, tier customization, and weekend highlighting for projects.

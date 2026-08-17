@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Data Markers in Blazor Gantt Chart | Syncfusion
 description: Learn how to add and customize data markers in Syncfusion Blazor Gantt Chart to highlight key milestone points on the project timeline.
