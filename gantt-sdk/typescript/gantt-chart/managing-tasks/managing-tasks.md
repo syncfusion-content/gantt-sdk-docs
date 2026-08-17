@@ -354,7 +354,7 @@ The following table describes different types of editing modes available in Gant
 
 ### Task dependency editing
 
-You can `tap` the left/right connector point to initiate [task dependencies](managing-tasks/#task-dependencies) edit mode and again tap another taskbar to establish the dependency line between two taskbars.
+You can `tap` the left/right connector point to initiate [task dependencies](managing-tasks#task-dependencies) edit mode and again tap another taskbar to establish the dependency line between two taskbars.
 
 The following table explains the taskbar state in dependency edit mode.
 
