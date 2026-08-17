@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: WBS Column in Blazor Gantt Chart | Syncfusion
 description: Learn how to enable and customize the Work Breakdown Structure (WBS) column in Syncfusion Blazor Gantt Chart for task hierarchy numbering.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Hide Chart Part in Blazor Gantt Chart | Syncfusion
 description: Learn how to hide the chart part in Syncfusion Blazor Gantt Chart to display only the TreeGrid view for a simplified layout.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Resource View in Blazor Gantt Chart | Syncfusion
 description: Learn how to configure the resource view in Syncfusion Blazor Gantt Chart for hierarchical task visualization and resource allocation management.

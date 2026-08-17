@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Taskbar in TypeScript Gantt Chart | Syncfusion
 description: Learn how to customize taskbars in Syncfusion TypeScript Gantt Chart with templates, heights, and editing interactions for enhanced task visualization.

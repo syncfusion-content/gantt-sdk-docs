@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Critical Path in Blazor Gantt Chart | Syncfusion
 description: Learn how to identify and visualize the critical path in Syncfusion Blazor Gantt Chart to track tasks that directly impact the project end date.

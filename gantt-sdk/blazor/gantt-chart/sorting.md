@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Sorting in Blazor Gantt Chart | Multi-Sort | Syncfusion
 description: Learn how to enable sorting in Syncfusion Blazor Gantt Chart to arrange task data in ascending or descending order across single or multiple columns.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Undo Redo in TypeScript Gantt Chart | Syncfusion
 description: Learn how to configure undo and redo in Syncfusion TypeScript Gantt Chart to revert or restore user actions for better editing experience.

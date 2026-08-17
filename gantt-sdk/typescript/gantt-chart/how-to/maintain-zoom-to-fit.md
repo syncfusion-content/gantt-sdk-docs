@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Maintain Zoom to Fit in TypeScript Gantt Chart | Syncfusion
 description: Learn how to maintain zoom-to-fit in Syncfusion TypeScript Gantt Chart during edits and dynamic data source changes for consistent view.

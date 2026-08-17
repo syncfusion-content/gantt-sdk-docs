@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Columns in Blazor Gantt Chart | Syncfusion
 description: Learn how to define, configure, and customize columns in Syncfusion Blazor Gantt Chart with field mappings, width, visibility, and header settings.

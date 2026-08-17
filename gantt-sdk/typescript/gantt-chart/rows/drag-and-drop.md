@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Row Drag and Drop in TypeScript Gantt Chart | Syncfusion
 description: Learn how to row drag and drop in Syncfusion TypeScript Gantt Chart to reorder tasks and reorganize project structure with intuitive interactions.

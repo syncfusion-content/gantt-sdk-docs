@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Custom Adaptor in Blazor Gantt Chart | Syncfusion
 description: Learn how to implement custom data binding and perform CRUD operations using a custom adaptor in Syncfusion Blazor Gantt Chart.

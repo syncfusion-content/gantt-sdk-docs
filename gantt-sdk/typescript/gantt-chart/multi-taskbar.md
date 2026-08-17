@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Multi Taskbar in TypeScript Gantt Chart | Syncfusion
 description: Learn how to configure multi taskbar in Syncfusion TypeScript Gantt Chart to display multiple tasks per resource and visualize workloads and overallocation.

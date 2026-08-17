@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Task Scheduling in TypeScript Gantt Chart | Syncfusion
 description: Master task scheduling in Syncfusion TypeScript Gantt Chart with automatic dates, duration calculations, and dependency-driven schedule management.

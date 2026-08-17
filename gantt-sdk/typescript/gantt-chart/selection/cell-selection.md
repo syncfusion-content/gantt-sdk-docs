@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Cell Selection in TypeScript Gantt Chart | Syncfusion
 description: Configure cell selection in Syncfusion TypeScript Gantt Chart with single and multiple modes, external selection, and API methods.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Column Template in Blazor Gantt Chart | Syncfusion
 description: Learn how to use column templates in Syncfusion Blazor Gantt Chart to render custom content like icons, images, or components in grid cells.

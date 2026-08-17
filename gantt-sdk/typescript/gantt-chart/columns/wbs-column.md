@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: WBS Column in TypeScript Gantt Chart | Syncfusion
 description: Learn how to display Work Breakdown Structure (WBS) codes in the TypeScript Gantt Chart to organize and track project tasks hierarchically.

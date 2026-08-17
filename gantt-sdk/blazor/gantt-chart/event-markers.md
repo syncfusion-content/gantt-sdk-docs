@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Event Markers in Blazor Gantt Chart | Syncfusion
 description: Learn how to add and customize event markers in Syncfusion Blazor Gantt Chart to highlight important project milestones on the timeline.

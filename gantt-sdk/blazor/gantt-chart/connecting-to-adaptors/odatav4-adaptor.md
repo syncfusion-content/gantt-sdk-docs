@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: OData V4 Adaptor in Blazor Gantt Chart | Syncfusion
 description: Learn how to bind data and perform CRUD operations using the ODataV4 adaptor in Syncfusion Blazor Gantt Chart for OData services.

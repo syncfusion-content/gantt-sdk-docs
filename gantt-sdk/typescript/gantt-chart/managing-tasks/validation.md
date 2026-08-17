@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Validation in TypeScript Gantt Chart | Syncfusion
 description: Learn to Validate task data in Syncfusion TypeScript Gantt Chart using column validation, custom rules, dependencies, and resource rules for accuracy.

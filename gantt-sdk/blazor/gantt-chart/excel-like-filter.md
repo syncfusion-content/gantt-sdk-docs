@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Excel Like Filter in Blazor Gantt Chart | Syncfusion
 description: Learn how to enable Excel-like filtering in Syncfusion Blazor Gantt Chart with search, sort, and checkbox options for advanced column filtering.

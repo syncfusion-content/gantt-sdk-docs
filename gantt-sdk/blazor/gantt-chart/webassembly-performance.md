@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: WebAssembly Performance in Blazor Gantt Chart | Syncfusion
 description: Learn how to optimize Syncfusion Blazor WebAssembly Gantt Chart performance with prerendering, lazy loading, and large dataset handling techniques.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Timezone Support in Blazor Gantt Chart | Syncfusion
 description: Learn how to configure timezone support in Syncfusion Blazor Gantt Chart for accurate task scheduling and date rendering across different time zones.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: State Persistence in TypeScript Gantt Chart | Syncfusion
 description: Learn how to enable state persistence in the Syncfusion TypeScript Gantt Chart to save and restore columns, filters, and settings across sessions.

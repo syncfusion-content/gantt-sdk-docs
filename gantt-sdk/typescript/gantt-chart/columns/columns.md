@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Columns in TypeScript Gantt Chart | Syncfusion
 description: Learn how to configure and customize columns in Syncfusion TypeScript Gantt Chart using field mapping, column types, formatting, and templates.

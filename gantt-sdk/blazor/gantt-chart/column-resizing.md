@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Column Resizing in Blazor Gantt Chart | Syncfusion
 description: Learn how to resize columns interactively in Syncfusion Blazor Gantt Chart to adjust grid column width based on content or user preference.

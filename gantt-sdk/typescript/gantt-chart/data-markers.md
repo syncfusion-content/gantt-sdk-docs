@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Data Markers in TypeScript Gantt Chart | Syncfusion
 description: Implement data markers in Syncfusion TypeScript Gantt Chart to highlight task events, milestones, and important dates for effective project visualization.

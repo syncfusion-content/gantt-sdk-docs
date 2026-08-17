@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Style and Appearance in Blazor Gantt Chart | Syncfusion
 description: Learn how to customize the style and appearance of Syncfusion Blazor Gantt Chart using themes, CSS variables, and component-level style overrides.

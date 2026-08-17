@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Searching in TypeScript Gantt Chart | Syncfusion
 description: Learn how to enable quick search in Syncfusion TypeScript Gantt Chart to quickly find tasks and data across the project timeline.

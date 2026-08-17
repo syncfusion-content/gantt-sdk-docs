@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Localization in TypeScript Gantt Chart | Syncfusion
 description: Learn how to configure localization and globalization in Syncfusion TypeScript Gantt Chartfor multi-language and multi-region project management support.

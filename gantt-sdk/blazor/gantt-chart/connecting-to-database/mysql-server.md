@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: MySQL with EF in Blazor Gantt Chart | Syncfusion
 description: Learn how to bind MySQL data to Syncfusion Blazor Gantt Chart using Entity Framework Core with CRUD, filtering, and sorting support.
