@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Performance Optimization in Blazor Gantt Chart | Syncfusion
 description: Learn how to optimize loading and rendering performance of Syncfusion Blazor Gantt Chart for large datasets with virtualization and lazy loading.

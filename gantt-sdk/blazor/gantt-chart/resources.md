@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Resources in Blazor Gantt Chart | Syncfusion
 description: Learn how to configure resources in Syncfusion Blazor Gantt Chart for task allocation, resource assignment, and utilization visualization.

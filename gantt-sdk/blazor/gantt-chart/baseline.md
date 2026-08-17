@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Baseline in Blazor Gantt Chart | Planned vs Actual | Syncfusion
 description: Learn how to compare planned versus actual project timelines in Syncfusion Blazor Gantt Chart using baseline support to track schedule deviations.

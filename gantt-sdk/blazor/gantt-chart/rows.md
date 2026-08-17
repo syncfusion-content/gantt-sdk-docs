@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Rows in Blazor Gantt Chart | Syncfusion
 description: Learn how to configure and customize rows in Syncfusion Blazor Gantt Chart with row height, expand, collapse, and alternate row styling options.

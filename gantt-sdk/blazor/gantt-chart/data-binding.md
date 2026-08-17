@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Data Binding in Blazor Gantt Chart | Syncfusion
 description: Learn how to bind local and remote data in Syncfusion Blazor Gantt Chart using adaptors, field mapping, and hierarchical data structures.

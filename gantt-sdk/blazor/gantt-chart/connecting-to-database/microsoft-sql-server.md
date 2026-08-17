@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: SQL Server with EF in Blazor Gantt Chart | Syncfusion
 description: Learn how to bind SQL Server data to Syncfusion Blazor Gantt Chart using Entity Framework Core with complete CRUD and data operations.

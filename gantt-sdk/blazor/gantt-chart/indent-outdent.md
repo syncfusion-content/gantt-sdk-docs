@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Indent and Outdent in Blazor Gantt Chart | Syncfusion
 description: Learn how to indent and outdent tasks in Syncfusion Blazor Gantt Chart to manage task hierarchy and parent-child relationships programmatically.

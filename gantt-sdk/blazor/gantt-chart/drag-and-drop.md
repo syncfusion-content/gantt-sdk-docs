@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Row Drag and Drop in Blazor Gantt Chart | Syncfusion
 description: Learn how to enable row drag and drop in Syncfusion Blazor Gantt Chart to reorder, rearrange, and move tasks within the project hierarchy.

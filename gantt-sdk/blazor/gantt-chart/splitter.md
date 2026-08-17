@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Splitter in Blazor Gantt Chart | Syncfusion
 description: Learn how to configure the splitter in Syncfusion Blazor Gantt Chart to adjust the TreeGrid and chart panel width for flexible layout control.

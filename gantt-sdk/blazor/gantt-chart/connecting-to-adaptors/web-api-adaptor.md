@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Web API Adaptor in Blazor Gantt Chart | Syncfusion
 description: Learn how to bind data and perform CRUD operations using the Web API adaptor in Syncfusion Blazor Gantt Chart component.
