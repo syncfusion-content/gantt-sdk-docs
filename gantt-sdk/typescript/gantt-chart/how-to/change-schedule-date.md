@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Update Schedule Date in TypeScript Gantt Chart | Syncfusion
 description: Learn how to programmatically update project schedule dates programmatically in Syncfusion TypeScript Gantt Chart to adjust timelines.

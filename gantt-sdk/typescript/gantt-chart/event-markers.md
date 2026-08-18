@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Event Markers in TypeScript Gantt Chart | Syncfusion
 description: Configure event markers in Syncfusion TypeScript Gantt Chart to highlight project events, and important dates across the timeline for better tracking.

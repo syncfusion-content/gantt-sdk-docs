@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Templates in Blazor Gantt Chart | Syncfusion
 description: Learn how to use templates in Syncfusion Blazor Gantt Chart to customize taskbars, grid columns, tooltips, and task edit dialog content.
@@ -16,7 +16,7 @@ Blazor supports templated components that accept one or more UI segments as inpu
 
 The Gantt Chart provides several template options for customization, such as:
 
-- [Column template](https://blazor.syncfusion.com/documentation/gantt-chart/column-template) – Used to customize the content of individual cells.
+- [Column template](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/column-template) – Used to customize the content of individual cells.
 - [Header template](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_HeaderTemplate) – Used to customize the content of header cells.
 
 ## Template Context

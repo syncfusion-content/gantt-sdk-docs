@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Responsive Layout and Adaptive Design in Blazor Kanban
 
-The [Blazor Kanban Board](https://www.syncfusion.com/blazor-components/blazor-kanban-board) component supports responsive behavior, automatically adapting its layout based on the width and height of the client’s browser.
+The [Blazor Kanban Board](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) component supports responsive behavior, automatically adapting its layout based on the width and height of the client’s browser.
 
 ## Available layouts
 

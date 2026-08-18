@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Column Reordering in TypeScript Gantt Chart | Syncfusion
 description: Learn how to reorder columns in the TypeScript Gantt Chart using drag-and-drop interactions, API methods, and customization options.

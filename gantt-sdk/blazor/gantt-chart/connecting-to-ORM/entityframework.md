@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Entity Framework in Blazor Gantt Chart | Syncfusion
 description: Learn how to bind SQL Server data to Syncfusion Blazor Gantt Chart using Entity Framework Core with CRUD, filtering, and sorting support.
@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Connecting to SQL Server Using Entity Framework in Blazor Gantt Chart
 
-The [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) supports binding data from SQL Server using Entity Framework Core (EF Core) with REST API endpoints via UrlAdaptor. This approach enables clean separation of UI and data layers while supporting full data operations.
+The [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) supports binding data from SQL Server using Entity Framework Core (EF Core) with REST API endpoints via UrlAdaptor. This approach enables clean separation of UI and data layers while supporting full data operations.
 
 **What is Entity Framework Core?**
 
@@ -370,7 +370,7 @@ Syncfusion is a library that provides pre-built UI components like Gantt Chart, 
 
 For this project, the **fluent** theme is used. A different theme can be selected or customized based on project requirements. Refer to the [Blazor Components Appearance](https://blazor.syncfusion.com/documentation/appearance/themes) documentation to learn more about theming and customization options.
 
-Blazor components are now configured and ready to use. For additional guidance, refer to the Gantt Chart component [getting‑started](https://blazor.syncfusion.com/documentation/gantt-chart/getting-started-with-web-app) documentation.
+Blazor components are now configured and ready to use. For additional guidance, refer to the Gantt Chart component [getting‑started](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/getting-started-with-web-app) documentation.
 
 ### Step 2: Update the Blazor Gantt Chart
 
@@ -1006,6 +1006,6 @@ The application now provides a complete solution for managing tasks with a moder
 
 ## Alternative approach: custom adaptor
 
-For a client-side data operations approach without REST API endpoints, refer to the [Blazor Gantt Chart with SQL Server using Entity Framework and Custom Adaptor](https://blazor.syncfusion.com/documentation/gantt-chart/connecting-to-database/microsoft-sql-server) documentation. This approach executes search, filter and sort operations directly in the Blazor component, providing a tightly integrated alternative to the REST API pattern.
+For a client-side data operations approach without REST API endpoints, refer to the [Blazor Gantt Chart with SQL Server using Entity Framework and Custom Adaptor](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/connecting-to-database/microsoft-sql-server) documentation. This approach executes search, filter and sort operations directly in the Blazor component, providing a tightly integrated alternative to the REST API pattern.
 
 ---

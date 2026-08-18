@@ -7,7 +7,7 @@ canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/sortin
 platform: gantt-sdk
 control: Sorting - Gantt Chart
 documentation: ug
-domainurl: https://help.syncfusion.com/gantt-sdk
+domainurl: https://help.syncfusion.com/gantt-sdk/overview
 ---
 
 # Column Sorting with Multi-Sort in ASP.NET Core Gantt Chart

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Excel Like Filter in TypeScript Gantt Chart | Syncfusion
 description: Learn how to use Excel-like filtering in Syncfusion TypeScript Gantt Chart with familiar filter options and advanced conditions on large datasets.

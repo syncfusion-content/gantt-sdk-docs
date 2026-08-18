@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Data Binding in TypeScript Gantt Chart | Syncfusion
 description: Learn data binding in Syncfusion TypeScript Gantt Chart with local arrays, remote data, DataManager, and dynamic data source updates for project management.

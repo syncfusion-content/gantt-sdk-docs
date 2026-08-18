@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Rows in TypeScript Gantt Chart | Syncfusion
 description: Learn how to customize rows in Syncfusion TypeScript Gantt Chart with height settings, expansion, drag-and-drop, and row-level interactions.

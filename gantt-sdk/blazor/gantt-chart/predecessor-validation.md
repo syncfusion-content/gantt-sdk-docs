@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Predecessor Validation in Blazor Gantt Chart | Syncfusion
 description: Learn how to validate predecessor relationships in Syncfusion Blazor Gantt Chart to ensure correct task dependency setup and avoid circular dependencies.
@@ -86,7 +86,7 @@ By default, the [PreserveLinkWithEditing](https://help.syncfusion.com/cr/blazor/
 
 ![Blazor Gantt Chart updating offset on edit actions](images/blazor-gantt-chart-preserve-link-with-editing.webp)
 
-The following code example explains enabling the [RespectLink](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.ValidateMode.html#Syncfusion_Blazor_Gantt_ValidateMode_RespectLink) validation mode while editing the linked tasks in the [TaskbarEditing](https://blazor.syncfusion.com/documentation/gantt-chart/events#taskbarediting) event.
+The following code example explains enabling the [RespectLink](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.ValidateMode.html#Syncfusion_Blazor_Gantt_ValidateMode_RespectLink) validation mode while editing the linked tasks in the [TaskbarEditing](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#taskbarediting) event.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}

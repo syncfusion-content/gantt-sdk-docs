@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Taskbar Editing in TypeScript Gantt Chart | Syncfusion
 description: Learn to edit tasks via taskbar interactions in Syncfusion TypeScript Gantt Chart for intuitive and interactive project timeline adjustments and management.

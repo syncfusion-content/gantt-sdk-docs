@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Searching in Blazor Gantt Chart | Syncfusion
 description: Learn how to enable and configure searching in Syncfusion Blazor Gantt Chart to quickly find tasks by name, field value, or toolbar search input.

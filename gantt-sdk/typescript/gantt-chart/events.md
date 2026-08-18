@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Events in TypeScript Gantt Chart | Syncfusion
 description: Learn to handle events in Syncfusion TypeScript Gantt Chart for task creation, editing, deletion, and custom business logic in project management workflows.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Getting Started with TypeScript Gantt Chart | Syncfusion
 description: Get started with TypeScript Gantt Chart control by setting up data sources, configuring tasks, and implementing basic features for project management.

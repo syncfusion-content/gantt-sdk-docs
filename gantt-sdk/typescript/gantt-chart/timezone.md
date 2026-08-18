@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Timezone in TypeScript Gantt Chart | Syncfusion
 description: Learn how to configure timezone in Syncfusion TypeScript Gantt Chart for consistent task scheduling, CRUD operations, and global team coordination.

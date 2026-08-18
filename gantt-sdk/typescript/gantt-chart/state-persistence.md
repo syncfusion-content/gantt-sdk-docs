@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: State Persistence in TypeScript Gantt Chart | Syncfusion
 description: Learn how to enable state persistence in the Syncfusion TypeScript Gantt Chart to save and restore columns, filters, and settings across sessions.
@@ -86,7 +86,7 @@ let model: Object = JSON.parse(model);
 window.localStorage.setItem("ganttGantt", JSON.stringify(model)); //"ganttGantt" is control name + control ID.
 ```
 
-> You can refer to our [JavaScript Gantt](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Gantt example](https://ej2.syncfusion.com/demos#/material/gantt/default.html) to knows how to present and manipulate data.
+> You can refer to our [JavaScript Gantt](https://www.syncfusion.com/gantt-sdk/javascript-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript Gantt example](https://ej2.syncfusion.com/demos/#/material3/gantt/default.html) to knows how to present and manipulate data.
 
 ## Prevent columns from persisting
 

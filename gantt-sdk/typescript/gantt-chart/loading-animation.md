@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Loading Animation in TypeScript Gantt Chart | Syncfusion
 description: Learn how to configure loading indicators in Syncfusion TypeScript Gantt Chart to provide visual feedback during data loading and asynchronous operations.

@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Drag And Drop in ASP.NET Core Kanban Component
-description: Learn here all about Drag And Drop in Syncfusion ASP.NET Core Kanban component of Syncfusion Essential JS 2 and more.
+title: Drag and Drop in ASP.NET Core Kanban | Syncfusion
+description: Learn how to enable drag-and-drop interactions in Syncfusion ASP.NET Core Kanban to reorder cards and move tasks across columns.
+keywords: asp-net-core kanban drag and drop, syncfusion kanban, card movement, reordering
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/drag-and-drop
 platform: gantt-sdk
-control: Drag And Drop
-publishingplatform: gantt-sdk
+control: Drag and Drop - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Drag and drop
+# Drag and Drop Operations in ASP.NET Core Kanban
 
 All cards can be dragged and dropped across the columns or within the columns or swimlane row or kanban to an external source and vice versa.
 
@@ -22,7 +23,7 @@ The following drag and drop types are available in the Kanban board.
     * Kanban to Kanban
     * Kanban to External source and vice versa.
 
-N> Dropped card position varies based on the `e-kanban-sortsettings` property.
+N> Dropped card position varies based on the `e-kanban-sortSettings` property.
 
 ## Internal drag and drop
 
@@ -69,7 +70,7 @@ In the following example, disable the drag and drop behavior on the Kanban board
 
 By default, Swimlane allows drag and drop across the columns within the swimlane row. Kanban does not allow dragging the cards across the swimlane rows.
 
-Enabling the `dragAndDrop` property allows you to drag the cards across the swimlane rows, which is specified inside the `e-kanban-swimlanesettings` property.
+Enabling the `dragAndDrop` property allows you to drag the cards across the swimlane rows, which is specified inside the `e-kanban-swimlaneSettings` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

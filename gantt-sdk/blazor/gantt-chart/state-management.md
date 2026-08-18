@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: State Management in Blazor Gantt Chart | Syncfusion
 description: Learn how to persist and restore state in Syncfusion Blazor Gantt Chart including grid settings, column state, filters, and taskbar configurations.
@@ -171,4 +171,4 @@ To manually manage the Gantt chart’s persisted state, use the following method
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/hDLntxWapiiwjpeN?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-N> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=bootstrap4) to know how to render and configure the Gantt.
+N> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=fluent2) to know how to render and configure the Gantt.

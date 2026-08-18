@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Toolbar in TypeScript Gantt Chart | Syncfusion
 description: Learn how to configure toolbar in Syncfusion TypeScript Gantt Chart with built-in action buttons, custom items, and templates for improved user interactions.

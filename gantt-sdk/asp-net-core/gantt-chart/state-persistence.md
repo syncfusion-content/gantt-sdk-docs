@@ -7,10 +7,10 @@ canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/state-
 platform: gantt-sdk
 control: State Persistence - Gantt Chart
 documentation: ug
-domainurl: https://help.syncfusion.com/gantt-sdk
+domainurl: https://help.syncfusion.com/gantt-sdk/overview
 ---
 
-# State Persistence with LocalStorage Support in ASP.NET Core Gantt Chart
+# State Persistence in ASP.NET Core Gantt Chart
 
 State persistence refers to the Gantt's state maintained in the browser's [`localStorage`](https://www.w3schools.com/html/html5_webstorage.asp#) even if the browser is refreshed or if you move to the next page within the browser.
 State persistence stores gantt’s model object in the local storage when the [`enablePersistence`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnablePersistence) is defined as true.

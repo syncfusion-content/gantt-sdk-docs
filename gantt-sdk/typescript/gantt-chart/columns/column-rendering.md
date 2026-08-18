@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Column Rendering in TypeScript Gantt Chart | Syncfusion
 description: Learn how to configure column rendering in Syncfusion TypeScript Gantt Chart with type definitions, format options, and display customizations.

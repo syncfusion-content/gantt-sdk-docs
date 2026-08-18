@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Critical Path in TypeScript Gantt Chart | Syncfusion
 description: Learn how to enable and customize critical path analysis in the Syncfusion TypeScript Gantt Chart to highlight tasks that affect project completion.

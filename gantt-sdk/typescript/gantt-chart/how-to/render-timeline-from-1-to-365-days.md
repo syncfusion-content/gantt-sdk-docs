@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Render Timeline in TypeScript Gantt Chart | Syncfusion
 description: Learn how to render custom timeline in Syncfusion TypeScript Gantt Chart for extended project schedule visualization and detailed time tracking.

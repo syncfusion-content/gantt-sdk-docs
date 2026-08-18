@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Split and Merge Tasks in TypeScript Gantt Chart | Syncfusion
 description: Learn how to split and merge tasks in Syncfusion TypeScript Gantt Chart to create task breaks, manage non-contiguous work, and flexible project scheduling.

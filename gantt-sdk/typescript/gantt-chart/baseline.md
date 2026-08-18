@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Baseline in TypeScript Gantt Chart | Syncfusion
 description: Learn how to compare planned versus actual project timelines using baseline support in Syncfusion TypeScript Gantt Chart to track schedule deviations.

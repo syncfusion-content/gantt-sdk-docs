@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Data Markers in Blazor Gantt Chart | Syncfusion
 description: Learn how to add and customize data markers in Syncfusion Blazor Gantt Chart to highlight key milestone points on the project timeline.
@@ -96,4 +96,4 @@ The following implementation demonstrates comprehensive data marker integration 
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/VNLnjGhNhMWKWcrb?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-N> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=bootstrap5) to know how to render and configure the Gantt.
+N> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=fluent2) to know how to render and configure the Gantt.

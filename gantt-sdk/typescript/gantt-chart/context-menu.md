@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Context Menu in TypeScript Gantt Chart | Syncfusion
 description: Learn how to configure context menu in Syncfusion TypeScript Gantt Chart with built-in and custom menu items for task and project management actions.

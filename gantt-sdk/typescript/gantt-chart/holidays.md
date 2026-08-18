@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Holidays in TypeScript Gantt Chart | Syncfusion
 description: Learn how to configure holidays in the Syncfusion TypeScript Gantt Chart to manage non-working days and ensure accurate task and project scheduling.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Task Labels in TypeScript Gantt Chart | Syncfusion
 description: Learn how to configure taskbar labels in Syncfusion TypeScript Gantt Chart to display task information and custom templates for better project visualization.

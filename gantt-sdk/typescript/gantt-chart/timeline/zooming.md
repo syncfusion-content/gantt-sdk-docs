@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Zooming in TypeScript Gantt Chart | Syncfusion
 description: Implement zooming in Syncfusion TypeScript Gantt Chart with zoom in, zoom out, zoom to fit, and custom zoom levels for timeline navigation.

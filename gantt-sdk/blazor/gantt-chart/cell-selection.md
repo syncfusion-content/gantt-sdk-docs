@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Cell Selection in Blazor Gantt Chart | Syncfusion
 description: Learn how to configure cell selection in Syncfusion Blazor Gantt Chart with single, multiple, and programmatic selection modes for grid cells.
@@ -201,7 +201,7 @@ Select a specific cell in the Gantt Chart by calling the  [SelectCellAsync](http
 
 ## Customize cell selection action
 
-You may customize cell selection behavior in the Gantt Chart using [CellSelecting](https://blazor.syncfusion.com/documentation/gantt-chart/events#cellselecting), [CellSelected](https://blazor.syncfusion.com/documentation/gantt-chart/events#cellselected), [CellDeselecting](https://blazor.syncfusion.com/documentation/gantt-chart/events#celldeselecting), and [CellDeselected](https://blazor.syncfusion.com/documentation/gantt-chart/events#celldeselected) events.
+You may customize cell selection behavior in the Gantt Chart using [CellSelecting](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#cellselecting), [CellSelected](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#cellselected), [CellDeselecting](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#celldeselecting), and [CellDeselected](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#celldeselected) events.
 
 The following sample demonstrates selection is canceled in the `cellSelecting` event when the **TaskName** is **Perform Soil test**. 
 
@@ -306,6 +306,6 @@ The following sample demonstrates selection is canceled in the `cellSelecting` e
 
 ## See Also
 
-- [Accessibility in Blazor Gantt Chart](https://blazor.syncfusion.com/documentation/gantt-chart/accessibility)
-- [Blazor Gantt Chart Feature Tour](https://www.syncfusion.com/blazor-components/blazor-gantt-chart)
-- [Blazor Gantt Chart Example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=bootstrap5)
+- [Accessibility in Blazor Gantt Chart](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/accessibility)
+- [Blazor Gantt Chart Feature Tour](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart)
+- [Blazor Gantt Chart Example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=fluent2)

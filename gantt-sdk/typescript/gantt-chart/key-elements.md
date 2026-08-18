@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Key Elements in TypeScript Gantt Chart | Syncfusion
 description: Learn about key UI elements in Syncfusion TypeScript Gantt Chart including timeline, taskbar, grid columns, and interactive components for project management.

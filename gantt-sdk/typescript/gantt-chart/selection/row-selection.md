@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Row Selection in TypeScript Gantt Chart | Syncfusion
 description: Configure row selection in Syncfusion TypeScript Gantt Chart with single and multiple selection modes, API methods, and events.

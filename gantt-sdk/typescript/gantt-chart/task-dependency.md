@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Task Dependency in TypeScript Gantt Chart | Syncfusion
 description: Learn how to configure task dependencies in Syncfusion TypeScript Gantt Chart to establish relationships between tasks and manage project scheduling.

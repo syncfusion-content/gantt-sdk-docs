@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Immutable Mode in TypeScript Gantt Chart | Syncfusion
 description: Learn how to enable immutable mode in the Syncfusion TypeScript Gantt Chart for better rendering performance and data updates.

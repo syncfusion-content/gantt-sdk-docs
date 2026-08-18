@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Columns in TypeScript Gantt Chart | Syncfusion
 description: Learn how to configure and customize columns in Syncfusion TypeScript Gantt Chart using field mapping, column types, formatting, and templates.
@@ -65,7 +65,7 @@ In Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt for TypeScript, column
 
 > To learn more about resizing, you can refer to the resizing section [here](https://ej2.syncfusion.com/documentation/gantt/columns/column-resizing)
 
-#### Supported types for column width
+### Supported types for column width
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt supports the following three types of column width:
 

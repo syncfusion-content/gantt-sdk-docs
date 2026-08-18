@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Indent and Outdent in TypeScript Gantt Chart | Syncfusion
 description: Learn to manage task hierarchy in Syncfusion TypeScript Gantt Chart using indent and outdent features to adjust row levels and create nested task structures.

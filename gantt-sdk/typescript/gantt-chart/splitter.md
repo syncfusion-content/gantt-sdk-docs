@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Splitter in TypeScript Gantt Chart | Syncfusion
 description: Learn how to configure splitter in Syncfusion TypeScript Gantt Chart to adjust grid and timeline pane sizes for project visualization.

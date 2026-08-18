@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Filter Menu in TypeScript Gantt Chart | Syncfusion
 description: Learn how to enable filter menu in Syncfusion TypeScript Gantt Chart to enable filtering options and improve task search and data discovery functionality.

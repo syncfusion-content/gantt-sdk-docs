@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Deleting Tasks in TypeScript Gantt Chart | Syncfusion
 description: Learn to delete tasks in Syncfusion TypeScript Gantt Chart including methods for removing single and multiple tasks from project schedules.

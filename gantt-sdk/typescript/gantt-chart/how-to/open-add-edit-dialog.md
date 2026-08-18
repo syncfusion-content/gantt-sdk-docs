@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Open Add and Edit Dialogs in Typescript Gantt Chart | Syncfusion
 description: Learn how to open add and edit dialogs programmatically in Syncfusion TypeScript Gantt Chart for efficient for task management workflows.
