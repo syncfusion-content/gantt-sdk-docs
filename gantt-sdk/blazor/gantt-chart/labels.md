@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Task Labels in Blazor Gantt Chart | Syncfusion
 description: Learn how to configure taskbar labels in Syncfusion Blazor Gantt Chart to display task data on left, right, or inside taskbars for better visualization.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Tree Column in TypeScript Gantt Chart | Syncfusion
 description: Learn how to display hierarchical task relationships in Syncfusion TypeScript Gantt Chart using the tree column and expand-collapse functionality.
@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Tree Column with Expand and Collapse Hierarchy in TypeScript Gantt Chart
+# Tree Column with Expand and Collapse in TypeScript Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Gantt Chart control provides a structured way to display parent-child relationships using expand/collapse icons.  
 

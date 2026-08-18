@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Columns in ASP.NET Core Kanban Component
-description: Learn here all about Columns in Syncfusion ASP.NET Core Kanban component of Syncfusion Essential JS 2 and more.
+title: Columns in ASP.NET Core Kanban | Syncfusion
+description: Learn how to configure columns, headers, and workflow stages in Syncfusion ASP.NET Core Kanban for organized task management.
+keywords: asp-net-core kanban columns, syncfusion kanban, workflow columns, kanban stages
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/columns
 platform: gantt-sdk
-control: Columns
-publishingplatform: gantt-sdk
+control: Columns - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-
-# Columns in Kanban Board
+# Columns Configuration and Workflow Stages in ASP.NET Core Kanban
 
 The **Kanban** columns represent the each stage of the process. The column definitions are used as the **dataSource** schema in the Kanban. The Kanban operations such as drag-and-drop, swimlane, and toggle columns are performed based on column definitions.
 

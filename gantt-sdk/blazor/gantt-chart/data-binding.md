@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Data Binding in Blazor Gantt Chart | Syncfusion
 description: Learn how to bind local and remote data in Syncfusion Blazor Gantt Chart using adaptors, field mapping, and hierarchical data structures.
@@ -634,7 +634,7 @@ The Gantt Chart component utilizes the **WebApiAdaptor**, an extension of the **
 
 ### ODataV4 adaptor
 
-The Gantt Chart component seamlessly integrates with OData V4 services via the **ODataV4Adaptor**., enabling efficient data retrieval and operations like sorting, filtering, searching, and paging using a queryable Entity Data Model (EDM), ensuring compatibility with the advanced features offered by the OData V4 protocol. For more details on OData v4 services, refer to the [OData documentation](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197).
+The Gantt Chart component seamlessly integrates with OData V4 services via the **ODataV4Adaptor**., enabling efficient data retrieval and operations like sorting, filtering, searching, and paging using a queryable Entity Data Model (EDM), ensuring compatibility with the advanced features offered by the OData V4 protocol. For more details on OData v4 services, refer to the [OData documentation](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html).
 
 {% tabs %}
 
@@ -1333,19 +1333,19 @@ Common errors and their resolutions:
 
 * **ResourceFields Configuration Error**
 
-    Ensure that the [ResourceFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ResourceFields) are properly configured by following the guidelines in the [Resource View documentation](https://blazor.syncfusion.com/documentation/gantt-chart/resource-view).
+    Ensure that the [ResourceFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ResourceFields) are properly configured by following the guidelines in the [Resource View documentation](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/resource-view).
 
 * **GanttTaskFields Configuration Error**
 
-    Ensure that the [GanttTaskFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_TaskFields) are properly configured by following the guidelines in the [Hierarchical Data Binding documentation](https://blazor.syncfusion.com/documentation/gantt-chart/data-binding#hierarchical-data-binding).
+    Ensure that the [GanttTaskFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_TaskFields) are properly configured by following the guidelines in the [Hierarchical Data Binding documentation](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/data-binding#hierarchical-data-binding).
 
 * **HasChildMapping Configuration Error**
     
-    Ensure that the [HasChildMapping](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_HasChildMapping) property is properly configured for load-on-demand by following the guidelines in the [Load Child On Demand documentation](https://blazor.syncfusion.com/documentation/gantt-chart/data-binding#load-child-on-demand).
+    Ensure that the [HasChildMapping](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_HasChildMapping) property is properly configured for load-on-demand by following the guidelines in the [Load Child On Demand documentation](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/data-binding#load-child-on-demand).
 
 * **GanttSegmentFields.StartDate Configuration Error**
 
-    Ensure that the [GanttSegmentFields.StartDate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSegmentFields-2.html#Syncfusion_Blazor_Gantt_GanttSegmentFields_2_StartDate) field is properly configured by following the guidelines in the [Split Task documentation](https://blazor.syncfusion.com/documentation/gantt-chart/split-task).
+    Ensure that the [GanttSegmentFields.StartDate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSegmentFields-2.html#Syncfusion_Blazor_Gantt_GanttSegmentFields_2_StartDate) field is properly configured by following the guidelines in the [Split Task documentation](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/splitting-and-merging-tasks).
 
 The following sample code demonstrates notifying user when server-side exception has occurred during data operation,
 

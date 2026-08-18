@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Customize PDF Export in TypeScript Gantt Chart | Syncfusion
 description: Learn how to customize PDF export in Syncfusion TypeScript Gantt Chart with themes, styles, columns, and layout options for professional project reports.

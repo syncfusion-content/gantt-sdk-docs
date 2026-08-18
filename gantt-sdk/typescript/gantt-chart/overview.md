@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Overview of TypeScript Gantt Chart | Syncfusion
 description: Learn how to use Syncfusion TypeScript Gantt Chart control with key features for project scheduling, task management, and timeline visualization.

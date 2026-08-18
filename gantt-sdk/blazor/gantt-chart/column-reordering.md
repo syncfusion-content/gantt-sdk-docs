@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Column Reordering in Blazor Gantt Chart | Syncfusion
 description: Learn how to reorder columns by drag and drop in Syncfusion Blazor Gantt Chart to customize the grid panel layout as needed.

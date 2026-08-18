@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Excel Export in TypeScript Gantt Chart | Syncfusion
 description: Learn how to export Gantt Chart data to Excel and CSV formats in TypeScript using built-in export functionality and customization options.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Zooming in Blazor Gantt Chart | Syncfusion
 description: Learn how to configure zooming in Syncfusion Blazor Gantt Chart with zoom in, zoom out, zoom to fit, and custom zoom level options.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Content Security Policy in Blazor Gantt Chart | Syncfusion
 description: Learn how to configure Syncfusion Blazor Gantt Chart with strict CSP headers and understand features that require relaxation for proper rendering.
@@ -14,7 +14,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 ## What's supported under strict CSP ?
 
-The [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) component supports most features under strict Content Security Policy without needing `'unsafe-inline'`. You can safely use:
+The [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) component supports most features under strict Content Security Policy without needing `'unsafe-inline'`. You can safely use:
 
 - Task scheduling and timeline rendering
 - Dependency management

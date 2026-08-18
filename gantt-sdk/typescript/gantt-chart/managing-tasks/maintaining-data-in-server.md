@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Maintain Data on Server in TypeScript Gantt Chart | Syncfusion
 description: Learn to maintain task data on server in Syncfusion TypeScript Gantt Chart with synchronization, CRUD operations, and data persistence strategies.
