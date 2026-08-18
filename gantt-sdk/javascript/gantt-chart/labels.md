@@ -26,7 +26,7 @@ Use template literals for formatted labels, such as **${Progress}%** for progres
 
 The following example configures labels for task names, IDs, and progress:
 
-```typescript
+```js
 const taskFields = {
   id: "TaskID",
   name: "TaskName",
@@ -64,8 +64,6 @@ This code creates a left label with priority-based icons (e.g., red for high pri
 **Conditional label display with icons:**
 
 Create templates that show different content based on task properties:
-
-{% if page.publishingplatform == "javascript" %}
 
 ```javascript
 function leftLabelTemplate(props) {
@@ -130,71 +128,9 @@ var ganttChart = new ej.gantt.Gantt({
 ganttChart.appendTo("#Gantt");
 ```
 
-{% elsif page.publishingplatform == "typescript" %}
-
-```ts
-import { Gantt } from "@syncfusion/ej2-gantt";
-import { GanttData } from "./datasource.ts";
-
-function leftLabelTemplate(props: any): string {
-  let priorityIcon: string = "";
-
-  if (props.Priority === "High") {
-    priorityIcon = '<span class="priority-high">🔴</span>';
-  } else if (props.Priority === "Medium") {
-    priorityIcon = '<span class="priority-medium">🟡</span>';
-  } else if (props.Priority === "Low") {
-    priorityIcon = '<span class="priority-low">🟢</span>';
-  }
-
-  return `
-        <div class="custom-left-label">
-            ${priorityIcon}
-            <span>${props.TaskName}</span>
-        </div>
-    `;
-}
-
-function rightLabelTemplate(props: any): string {
-  const progress: number = props.Progress || 0;
-  const duration: number = props.Duration || 0;
-
-  return `
-        <div class="custom-right-label">
-            <div class="progress-container">
-                <span class="progress-text">${progress}%</span>
-                <div class="progress-bar" style="width:${progress}%"></div>
-            </div>
-            <span class="duration-text">${duration} days</span>
-        </div>
-    `;
-}
-
-let gantt: Gantt = new Gantt({
-  dataSource: GanttData,
-  height: "450px",
-  taskFields: {
-    id: "TaskID",
-    name: "TaskName",
-    startDate: "StartDate",
-    duration: "Duration",
-    progress: "Progress",
-    parentID: "ParentID",
-  },
-  labelSettings: {
-    leftLabel: leftLabelTemplate,
-    rightLabel: rightLabelTemplate,
-  },
-});
-
-gantt.appendTo("#Gantt");
-```
-
 **Rich content labels with multiple data points:**
 
 Display complex information with formatted content and calculations:
-
-{% if page.publishingplatform == "javascript" %}
 
 ```js
 function getProgressClass(progress) {
@@ -281,87 +217,6 @@ var ganttChart = new ej.gantt.Gantt({
 });
 
 ganttChart.appendTo("#Gantt");
-```
-
-{% elsif page.publishingplatform == "typescript" %}
-
-```ts
-import { Gantt } from "@syncfusion/ej2-gantt";
-import { GanttData } from "./datasource.ts";
-
-function getProgressClass(progress: number): string {
-  if (progress >= 80) {
-    return "high";
-  }
-  if (progress >= 40) {
-    return "medium";
-  }
-  return "low";
-}
-
-function formatDate(date?: Date): string {
-  if (!date) {
-    return "";
-  }
-  return date.toLocaleDateString("en-US", {
-    month: "short",
-    day: "2-digit",
-  });
-}
-
-function taskLabelTemplate(props: any): string {
-  const taskName: string = props.TaskName || props.ganttProperties?.taskName;
-
-  const startDate: Date = props.StartDate || props.ganttProperties?.startDate;
-
-  const endDate: Date = props.EndDate || props.ganttProperties?.endDate;
-
-  const progress: number =
-    props.Progress ?? props.ganttProperties?.progress ?? 0;
-
-  const resources: any[] =
-    props.Resources || props.ganttProperties?.resourceInfo;
-
-  const resourceHtml: string =
-    resources && resources.length
-      ? `<span class="resource-count">👥 ${resources.length}</span>`
-      : "";
-
-  return `
-        <div class="rich-task-label">
-            <div class="task-info">
-                <strong>${taskName}</strong>
-                <small>
-                    ${formatDate(startDate)} – ${formatDate(endDate)}
-                </small>
-            </div>
-            <div class="task-meta">
-                ${resourceHtml}
-                <span class="progress-badge progress-${getProgressClass(progress)}">
-                    ${progress}%
-                </span>
-            </div>
-        </div>
-    `;
-}
-
-let gantt: Gantt = new Gantt({
-  dataSource: GanttData,
-  height: "450px",
-  taskFields: {
-    id: "TaskID",
-    name: "TaskName",
-    startDate: "StartDate",
-    duration: "Duration",
-    progress: "Progress",
-    parentID: "ParentID",
-  },
-  labelSettings: {
-    taskLabel: taskLabelTemplate,
-  },
-});
-
-gantt.appendTo("#Gantt");
 ```
 
 ## See also
