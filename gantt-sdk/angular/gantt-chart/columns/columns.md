@@ -68,7 +68,7 @@ In Gantt for Angular, column width can be adjusted using the [width](https://ej2
 
 > To learn more about resizing, you can refer to the resizing section [here](https://ej2.syncfusion.com/angular/documentation/gantt/columns/column-resizing)
 
-#### Supported types for column width
+### Supported types for column width
 
 The Gantt supports the following three types of column width:
 

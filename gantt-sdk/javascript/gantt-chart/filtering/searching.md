@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Implementing Quick Search for Task Data in JavaScript Gantt Chart Control
+# Implementing Quick Search for Task Data in JavaScript Gantt Chart
 
 The [JavaScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control allows quick filtering of records based on search input, improving access to relevant data in large datasets.
 

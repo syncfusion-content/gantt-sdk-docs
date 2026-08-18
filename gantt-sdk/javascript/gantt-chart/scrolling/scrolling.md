@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# onfiguring Scrolling Behavior and Positioning in JavaScript Gantt Chart
+# Scrolling Behavior and Positioning in JavaScript Gantt Chart
 
 Scrolling in the JavaScript Gantt Chart control enables smooth navigation across extensive project datasets and long timelines. It ensures taskbars, grid rows, and timeline cells remain visible within the viewport. Scrollbars automatically appear when content exceeds the control's defined [height](https://ej2.syncfusion.com/javascript/documentation/api/gantt#height) and [width](https://ej2.syncfusion.com/javascript/documentation/api/gantt#width), supporting vertical scrolling for rows, horizontal scrolling for columns, and timeline scrolling for extended chart areas.
 

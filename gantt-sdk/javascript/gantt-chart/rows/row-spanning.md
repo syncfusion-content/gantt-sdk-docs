@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Implementing Row Spanning for Multi-Row Cells in JavaScript Gantt Chart
+# Row Spanning for Multi-Row Cells in JavaScript Gantt Chart
 
 The [JavaScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control supports row cell spanning, allowing multiple cells in a row to merge into a single cell. This is useful for displaying shared information across rows without duplication.
 

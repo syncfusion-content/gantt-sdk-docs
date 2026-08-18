@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Modules in JavaScript Gantt Chart | Syncfusion
-description: Learn how to enable advanced JavaScript Gantt Chart features through module injection for sorting, editing, toolbar, filtering, and export to optimize bundle size.
+description: Learn how to inject and enable JavaScript Gantt Chart modules for editing, filtering, sorting, toolbar actions, and data export features.
 keywords: javascript gantt modules, feature modules, optional modules, providers, dependency injection, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/module
 platform: gantt-sdk

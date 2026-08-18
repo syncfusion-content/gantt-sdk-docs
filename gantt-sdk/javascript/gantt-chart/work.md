@@ -10,9 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Work and Effort Tracking with Task Type Support in JavaScript Gantt Chart
-
-## Work
+# Work and Effort Tracking in JavaScript Gantt Chart
 
 The work is the total hours required to complete a task. Work can be mapped from the data source field using the property [taskFields.work](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#work). Work can be measured in `Hour`, `Day`, `Minute`. By default, work is measured in `Hour` and it can be changed, by using the property [workUnit](https://ej2.syncfusion.com/javascript/documentation/api/gantt#viewtype).
 

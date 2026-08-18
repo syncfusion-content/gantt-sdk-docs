@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Tree Column with Expand and Collapse Hierarchy in JavaScript Gantt Chart
+# Tree Column with Expand and Collapse in JavaScript Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Gantt Chart control provides a structured way to display parent-child relationships using expand/collapse icons.
 

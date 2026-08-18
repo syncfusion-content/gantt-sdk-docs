@@ -139,14 +139,14 @@ The following example demonstrates how to export the Gantt Chart along with exte
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-element/index.js %}
+{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-form/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-element/index.html %}
+{% include code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-form/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-element" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-form" %}
 
 ## See also
 
