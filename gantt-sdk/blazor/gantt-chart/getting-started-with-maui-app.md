@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with Blazor Gantt Chart in MAUI App | Syncfusion
 description: Learn how to install and set up the Syncfusion Blazor Gantt Chart in a Blazor MAUI App with task data binding and timeline rendering.
 keywords: blazor gantt chart, getting started, maui, blazor maui, syncfusion gantt, task binding, timeline rendering
-canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/getting-started-with-maui-app
+canonical: https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart
 platform: gantt-sdk
 control: Getting Started - Gantt Chart
 documentation: ug

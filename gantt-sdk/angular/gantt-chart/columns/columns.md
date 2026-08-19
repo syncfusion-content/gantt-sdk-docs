@@ -3,7 +3,7 @@ layout: post
 title: Columns in Angular Gantt Chart | Field Mapping | Syncfusion
 description: Learn how to configure columns in Syncfusion Angular Gantt Chart with field mapping, formatting, and customization to display task data in a tabular structure.
 keywords: angular gantt columns, column field, column customization, task data display, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/columns
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/columns/columns
 platform: gantt-sdk
 control: Columns - Gantt Chart
 documentation: ug

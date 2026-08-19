@@ -3,7 +3,7 @@ layout: post
 title: React Gantt Chart in Next.js Application | Syncfusion
 description: Learn how to integrate Syncfusion React Gantt Chart in Next.js applications with App Router and server-side rendering support.
 keywords: react gantt next.js, nextjs gantt, app router, server-side rendering, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/nextjs-getting-started
+canonical: https://www.syncfusion.com/react-components/react-gantt-chart
 platform: gantt-sdk
 control: Next.js Getting Started - Gantt Chart
 documentation: ug

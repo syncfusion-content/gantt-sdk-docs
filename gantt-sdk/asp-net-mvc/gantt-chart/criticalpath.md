@@ -3,7 +3,7 @@ layout: post
 title: Critical Path in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to identify and manage the critical path in project schedules using Syncfusion ASP.NET MVC Gantt Chart, ensuring timely project delivery.
 keywords: asp.net mvc gantt critical path, project schedule, task delays, project end date, critical tasks, syncfusion gantt chart
-canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/critical-path
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/criticalpath
 platform: gantt-sdk
 control: Critical Path - Gantt Chart
 documentation: ug

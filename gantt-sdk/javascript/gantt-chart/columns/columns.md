@@ -3,7 +3,7 @@ layout: post
 title: Columns in JavaScript Gantt Chart | Syncfusion
 description: Learn how to configure and customize columns in Syncfusion JavaScript Gantt Chart using field mapping, column types, formatting, and templates.
 keywords: javascript gantt columns, gantt column configuration, field mapping, column customization, column types, gantt columns, syncfusion gantt chart
-canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/columns
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/columns/columns
 platform: gantt-sdk
 control: Columns - Gantt Chart
 documentation: ug
