@@ -268,10 +268,10 @@ You will see a Gantt Chart with:
 
 ## See also
 
-- **[Key Elements](https://ej2.syncfusion.com/aspnetmvc/documentation/gantt/key-elements)** – Learn about UI components and interactions
-- **[Data Binding](https://ej2.syncfusion.com/aspnetmvc/documentation/gantt/data-binding)** – Bind to local, remote, and adaptor-based data sources
-- **[Columns](https://ej2.syncfusion.com/aspnetmvc/documentation/gantt/columns/columns)** – Configure the tree column and task columns
-- **[Task Scheduling](https://ej2.syncfusion.com/aspnetmvc/documentation/gantt/task-scheduling)** – Configure working time, dependencies, and constraints
-- **[Overview](https://ej2.syncfusion.com/aspnetmvc/documentation/gantt/overview)** – Explore all available features
+- **[Key Elements](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/key-elements)** – Learn about UI components and interactions
+- **[Data Binding](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/data-binding)** – Bind to local, remote, and adaptor-based data sources
+- **[Columns](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/columns/columns)** – Configure the tree column and task columns
+- **[Task Scheduling](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/scheduling-tasks)** – Configure working time, dependencies, and constraints
+- **[Overview](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/overview)** – Explore all available features
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Gantt/ASP.NET%20MVC%20Razor%20Examples).
