@@ -226,7 +226,7 @@ In Gantt Chart, the controls such as form elements, grid and RTE in add and edit
 
 The form element in the `General` tab of the add/edit dialog can be added or removed by using the [fields](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttAddDialogField.html#Syncfusion_EJ2_Gantt_Gantt_Fields) property within the [addDialogFields](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttAddDialogFields.html) and [editDialogFields](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttEditDialogFields.html) settings respectively.
 
-The controls of the `fields` can be customized by using the [edit](https://ej2.syncfusion.com/aspnetmvc/documentation/gantt/managing-tasks/managing-tasks#cell-edit-template) template feature.
+The controls of the `fields` can be customized by using the [edit](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/managing-tasks/managing-tasks#cell-edit-template) template feature.
 
 In the below sample, `General` tab is customized using the `fields` property. The fields **TaskID**, **TaskName** and **newInput** are added in both `addDialogFields` and `editDialogFields` settings.
 
@@ -261,7 +261,7 @@ In the example below:
 
 - The `dependency` tab enables [sorting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowSorting) and [toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) options.
 - The `segments` tab enables `sorting` and `toolbar` options and includes a new column `newData` defined with a specified [field](https://help.syncfusion.com/cr/aspnetmvc-js2#Syncfusion_EJ2_Grids_GridColumn_Field).
-- The `resources` tab defines a new column `Segment Task` with specific properties such as `field`, [width](https://ej2.syncfusion.com/vue/documentation/api/grid/columnModel#width) and [headerText](https://help.syncfusion.com/cr/aspnetmvc-js2#Syncfusion_EJ2_Grids_GridColumn_HeaderText).
+- The `resources` tab defines a new column `Segment Task` with specific properties such as `field`, [width](https://ej2.syncfusion.com/vue/documentation/api/grid/columnmodel#width) and [headerText](https://help.syncfusion.com/cr/aspnetmvc-js2#Syncfusion_EJ2_Grids_GridColumn_HeaderText).
   These customizations are applied to both `addDialogFields` and `editDialogFields` settings.
 
 {% if page.publishingplatform == "aspnet-core" %}

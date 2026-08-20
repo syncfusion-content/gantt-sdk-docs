@@ -207,7 +207,7 @@ If the Kanban control does not render or behaves unexpectedly, verify the follow
 
 ## See also
 
-- [Real-time example using Kanban](https://ej2.syncfusion.com/aspnetmvc/Kanban/Workflow#/material)
-- [Kanban columns configuration](https://ej2.syncfusion.com/aspnetmvc/documentation/kanban/columns)
-- [Kanban data binding](https://ej2.syncfusion.com/aspnetmvc/documentation/kanban/data-binding)
-- [Syncfusion<sup style="font-size:70%">&reg;</sup> licensing documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing)
+* [Real-time example using Kanban](https://ej2.syncfusion.com/aspnetmvc/kanban/workflow#/fluent2)
+* [Kanban columns configuration](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/kanban/columns)
+* [Kanban data binding](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/kanban/data-binding)
+* [Syncfusion<sup style="font-size:70%">&reg;</sup> licensing documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/overview)
