@@ -23,9 +23,12 @@ This message appears when a license key is not registered in the application or 
 **Error message:**  
 This application was built using a trial version of Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup>. To remove the license validation message permanently, a valid license key must be included.
 
+![license key not registered](licensing-images/licensing-error-5.png)
+
 **Solution:**
 
 1. If you **have a valid Syncfusion<sup style="font-size:70%">&reg;</sup> license**, you can **generate a license key for a specific version and product** from the [Downloads and Keys page](https://www.syncfusion.com/account/downloads).
+![Community license key](licensing-images/get-community-license-key.png)
 2. If you **have a Syncfusion<sup style="font-size:70%">&reg;</sup> account and an active trial**, you can **generate the trial license key for a specific version and platform** from the [Trial Downloads page](https://www.syncfusion.com/account/manage-trials/downloads).
 3. If you **have a Syncfusion<sup style="font-size:70%">&reg;</sup> account but no active trials**, [purchase a license](https://www.syncfusion.com/sales/pricing?category=ui-components) or [start your 30-day free trial](https://www.syncfusion.com/account/manage-trials/start-trials). Then, generate the trial license key for **a specific version and platform** from the [Downloads and Keys page](https://www.syncfusion.com/account/downloads).
 4. If you **do not already have a Syncfusion<sup style="font-size:70%">&reg;</sup> account**, you can create one [on our Register page](https://www.syncfusion.com/account/register) and [purchase a license](https://www.syncfusion.com/sales/pricing?category=ui-components) or start your 30-day free trial. Then, you can **generate the trial license key for a specific version and platform** from the [Active Trials page](https://www.syncfusion.com/account/manage-trials/start-trials).
@@ -35,14 +38,19 @@ This application was built using a trial version of Syncfusion<sup style="font-s
 
 ### Invalid key
 
-If the application is registered with an invalid key, another version of a license key, or another platform's license key, the following error message will pop up when launching your application.
+If the application is registered with an invalid key, another version of license key, or another platform's license key, the following error message will pop up when launching the application.
 
 **Error message:**  
 The included Syncfusion<sup style="font-size:70%">&reg;</sup> license key is invalid.
 
+![Invalid key](licensing-images/licensing-error-6.png)
+
 **Solution:**
 
 1. If you have a valid Syncfusion<sup style="font-size:70%">&reg;</sup> license, you can **generate a license key for a specific version and product** from the [Downloads and Keys page](https://www.syncfusion.com/account/downloads).
+
+    ![Get Community License Key](licensing-images/get-community-license-key.png)
+
 2. If you have a Syncfusion<sup style="font-size:70%">&reg;</sup> account and an active trial, you can **generate the trial license key for a specific version and product** from the [Trial Downloads page](https://www.syncfusion.com/account/manage-trials/downloads).
 3. If you **have a Syncfusion<sup style="font-size:70%">&reg;</sup> account but no active trials**, [purchase a license](https://www.syncfusion.com/sales/pricing?category=ui-components) or [start your 30-day free trial](https://www.syncfusion.com/account/manage-trials/start-trials). Then, you can **generate the trial license key for a specific version and product** from the [Downloads and Keys page](https://www.syncfusion.com/account/downloads).
 4. If you **do not already have a Syncfusion<sup style="font-size:70%">&reg;</sup> account**, you can create one [on our Register page](https://www.syncfusion.com/account/register) and [purchase a license](https://www.syncfusion.com/sales/pricing?category=ui-components) or [start your 30-day free trial](https://www.syncfusion.com/account/manage-trials/start-trials). Then, you can **generate the trial license key for a specific version and product** from the [Trial Downloads page](https://www.syncfusion.com/account/manage-trials/downloads).
@@ -59,9 +67,13 @@ The following error message will be shown if a Syncfusion<sup style="font-size:7
 **Error message:**  
 This application was built using a trial version of Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup>. Include a valid license to permanently remove this license validation message. You can also obtain a free 30 day evaluation license to temporarily remove this message during the evaluation period.
 
+![Licence key not registered](./licensing-images/licensing-error-1.png)
+
 **Solution:**
 
 * Follow the solution options listed above under **License key not registered or trial expired** to generate a valid license key for your specific legacy version and platform, then register it in your application. For legacy registration instructions, refer to the [license key registration guide](./license-key-registration).
+
+    ![Get Community License Key](licensing-images/get-community-license-key.png)
 
 ### Invalid key
 
@@ -69,6 +81,8 @@ If the legacy application is registered with an invalid key, another version of 
 
 **Error message:**  
 The included Syncfusion<sup style="font-size:70%">&reg;</sup> license is invalid.
+
+![Invalid key](licensing-images/invalid-key.png)
 
 **Solution:**
 
@@ -81,15 +95,19 @@ The following error message will be shown if the trial key has expired after 30 
 **Error message:**  
 Your Syncfusion<sup style="font-size:70%">&reg;</sup> trial license has expired.
 
+![Trial expired](licensing-images/licensing-error-3.png)
+
 **Solution:**  
 Purchase a license [on our Pricing page](https://www.syncfusion.com/sales/pricing?category=ui-components) to resolve this error.
 
 ### Platform Mismatch
 
-If the application is registered with another platformâ€™s license key, the following error message will pop up when launching the application.
+If the application is registered with another platforms license key, the following error message will pop up when launching the application.
 
 **Error message:**  
 The included Syncfusion<sup style="font-size:70%">&reg;</sup> license is invalid (Platform mismatch).
+
+![Platform Mismatch](licensing-images/licensing-error-4.png)
 
 **Solution:**
 
@@ -97,10 +115,12 @@ The included Syncfusion<sup style="font-size:70%">&reg;</sup> license is invalid
 
 ### Version Mismatch
 
-If the application is registered with another versionâ€™s license key, the following error message will pop up when launching the application.
+If the application is registered with another version's license key, the following error message will pop up when launching the application.
 
 **Error message:**  
 The included Syncfusion<sup style="font-size:70%">&reg;</sup> license ({Registered Version}) is invalid for version {Required version}.
+
+![Version Mismatch](licensing-images/version-mismatch.png)
 
 **Solution:**
 
@@ -159,9 +179,9 @@ For native and desktop frameworks (such as WPF, WinUI, and .NET MAUI), you may e
 
 ### Solution:
 
-1. Ensure that all Syncfusion NuGet packagesâ€”including [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/)â€”are installed to the same exact version and successfully restored in your application.
+1. Ensure that all Syncfusion NuGet packagesincluding [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/)are installed to the same exact version and successfully restored in your application.
 2. Verify that package reference declarations within your configuration files are pointing to the identical target version.
-3. Ensure that **Copy Local is set to True** for all referenced assemblies. Since assembly validation runs locally, the validation DLL must reside within the build and publisher output environments.
+3. Ensure that **Copy Local is set to True** for all referenced assemblies. Since assembly validation runs locally, the validation dll must reside within the build and publisher output environments.
 4. Clean and rebuild your project folder (`/bin` and `/obj` directories) to purge any outdated trial assemblies.
 
 ## Troubleshooting Checklist

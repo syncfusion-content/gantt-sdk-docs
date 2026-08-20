@@ -214,6 +214,8 @@ steps:
   npx syncfusion-license activate
   ```
 
+![Bash task](./licensing-images/bash-script.png)
+
 ### Register multiple license keys (Angular)
 
 If you need to register multiple Syncfusion<sup style="font-size:70%">&reg;</sup> license keys in your application, separate each key with a semicolon.
@@ -457,6 +459,17 @@ License registration requirements vary depending on the project type. The follow
 
 ### Register License Key in Blazor Application
 
+I> Syncfusion<sup style="font-size:70%">&reg;</sup> license keys can be validated during the Continuous Integration (CI) processes to ensure proper licensing and prevent licensing errors during deployment. Refer to the [CI License Validation](./ci-license-validation) section for detailed instructions on how to implement it.
+
+Use the following table to determine where to register the license key based on the Blazor hosting model.
+
+| Blazor mode                          | Projects to register the license key     | Files to register the license key        |
+|--------------------------------------|------------------------------------------|------------------------------------------|
+| Blazor Web App (Interactive Auto)    | Server and client                        | `Server/Program.cs`, `Client/Program.cs` |
+| Blazor Web App (Interactive Server)  | Server                                   | `Server/Program.cs`                      |
+| Blazor Web App (Interactive WASM)    | Server and client                        | `Server/Program.cs`, `Client/Program.cs` |
+| Blazor Standalone WebAssembly App    | Client                                   | `Program.cs`                             |
+
 #### Blazor Web App (Interactive Auto)
 
 Open the `~/Program.cs` file in **both the server and client projects** of a Blazor Web App (Interactive Auto) and register the Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor license key.
@@ -614,7 +627,9 @@ To confirm whether your application is referencing licensed or trial assemblies:
 3. Check the **File Description**:
 
     * If the file description includes **"LR"**, it is a **trial** version.
+        ![Trial DLL properties example](./licensing-images/trial.webp)
     * If it does **not** include **"LR"**, it is a **licensed** version.
+        ![Licensed DLL properties example](./licensing-images/licensed.webp)
 
 If trial assemblies are detected, follow these steps to ensure a clean and licensed setup:
 

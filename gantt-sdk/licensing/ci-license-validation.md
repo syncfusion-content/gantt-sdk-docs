@@ -94,7 +94,7 @@ steps:
 
 * Include the PowerShell task in the pipeline and execute the script to validate the license key.
 
-![LicenseKeyValidation script](licensing-images/license-validation-classic.png)
+![LicenseKeyValidation script](licensing-images/license-validation-classic.webp)
 
 ## GitHub Actions
 
@@ -213,11 +213,11 @@ public void TestSyncfusionLicense()
 
 N> The example above uses **NUnit**. If you use MSTest or xUnit, replace `Assert.That(... Is.True, ...)` with the equivalent assertion from your chosen framework. Ensure the `Syncfusion.Licensing` NuGet package (or `Syncfusion.Licensing.dll`) is referenced in the test project.
 
-* Once the unit test is executed, if the license key validation passes for the specified platform, output similar to the following is displayed in the Test Explorer window.
+* Once the unit test is executed, if the license key validation passes for the specified platform, output similar to the following is displayed in the Test Explorer window. The example image below shows the output for the MAUI platform.
 
 ![License validation success message](licensing-images/unit-test-success-message.png)
 
-* If the license validation fails during unit testing, output similar to the following is displayed in the Test Explorer window.
+* If the license validation fails during unit testing, output similar to the following is displayed in the Test Explorer window. The example image below shows the output for the MAUI platform.
 
 ![License validation failure message](licensing-images/unit-test-failure-message.png)
 

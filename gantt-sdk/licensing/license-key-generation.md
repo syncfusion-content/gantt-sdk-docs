@@ -14,8 +14,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 Syncfusion® license keys can be generated from the **License & Downloads** or **Trial & Downloads** section of the Syncfusion® website.
 
-![License and Downloads portal showing the Get Community License Key option](images/get-community-license-key.png)
-
+![License and Downloads portal showing the Get Community License Key option](./licensing-images/get-community-license-key.png)
 
 > * Syncfusion® license keys are **version and platform specific**. Refer to the [KB](https://www.syncfusion.com/kb/8976/how-to-generate-license-key-for-licensed-products) to generate the license key for the required version and platform.
 > * Refer to the [KB](https://www.syncfusion.com/kb/8951/which-version-syncfusion-license-key-should-i-use-in-my-application) to know which version of the Syncfusion® license key should be used in the application.
@@ -28,12 +27,10 @@ You can get the license key, based on license availability in your Syncfusion® 
 
 | Account State | Result |
 |---------------|--------|
-| **Active License** | If your Syncfusion® account has a valid active license, a full license key valid for the licensed version and all covered features is generated.<br><br>![Claim License Key page showing an active license state](images/claim-license-active.png) |
-| **Active Trial** | If your account has a valid trial license, a trial license key that includes the trial expiry date is generated. Trial keys have limited validity (typically 30 days).<br><br>![Claim License Key page showing an active trial state with expiry date](images/claim-license-trial.png) |
-| **Expired License** | If your license subscription has expired, it must be renewed to obtain a valid license key for the latest Essential Studio® version. A temporary license key with a 5-day validity period is generated in the meantime.<br><br>![Claim License Key page indicating an expired license with temporary key notice](images/claim-license-expired.png) |
-| **No Trial, No License, or Expired Trial** | If your account is not associated with any trial or license, or if your trial has expired, you can attempt to claim a new trial or valid license from the Claim License Key page.<br><br>![Claim License Key page showing no active trial or license state](images/claim-license-none.png) |
-
-![Claim License Key page](images/claim-license-key.png)
+| **Active License** | If your Syncfusion® account has a valid active license, a full license key valid for the licensed version and all covered features is generated.<br><br>![Claim License Key page showing an active license state](./licensing-images/active-license.png) |
+| **Active Trial** | If your account has a valid trial license, a trial license key that includes the trial expiry date is generated. Trial keys have limited validity (typically 30 days).<br><br>![Claim License Key page showing an active trial state with expiry date](./licensing-images/active-trial.png) |
+| **Expired License** | If your license subscription has expired, it must be renewed to obtain a valid license key for the latest Essential Studio® version. A temporary license key with a 5-day validity period is generated in the meantime.<br><br>![Claim License Key page indicating an expired license with temporary key notice](./licensing-images/expired-license.png) |
+| **No Trial, No License, or Expired Trial** | If your account is not associated with any trial or license, or if your trial has expired, you can attempt to claim a new trial or valid license from the Claim License Key page.<br><br>![Claim License Key page showing no active trial or license state](./licensing-images/no-active-trial-or-license.png) |
 
 ## Licensing Update for Essential Studio (v31.1 and later)
 
@@ -81,7 +78,7 @@ Follow these steps for the edition-based model. The same steps apply to all plat
 
 **Step 2:** Click the **Get License Key** link.
 
-![Get License Key](images/get-license-key.png)
+![Get License Key](./licensing-images/get-license-key.png)
 
 **Step 3:** In the dialog that appears, select version **31.x.x or higher** from the version dropdown.
 
@@ -99,13 +96,13 @@ To generate an Enterprise Edition key, select all available options:
 - PDF Viewer SDK
 - Spreadsheet Editor SDK
 
-![License Key Generation for SDK](images/license-key-generation-sdk.png)
+![License Key Generation for SDK](./licensing-images/license-key-generation-sdk.png)
 
 N> Customers who purchased a license before v31.x.x are strongly advised to select all five editions and SDKs when generating a key for v31.x.x or higher to ensure continued functionality, as your application might use resources from multiple editions.
 
 **Step 5:** Click **Get License Key**. This generates the Enterprise Edition license key, which covers all SDKs and UI components.
 
-![Generate License Key](images/generate-license-key.png)
+![Generate License Key](./licensing-images/generate-license-key.png)
 
 ## How to Generate License Keys (v30.x.x or earlier)
 
@@ -135,7 +132,7 @@ For versions 30.x.x and earlier, follow the platform-based licensing model. The 
 
 > When selecting an older version, the menu will display platforms (e.g., JavaScript, Angular) instead of the new editions.
 
-![License Key Platform](images/license-key-platform.png)
+![License Key Platform](./licensing-images/license-key-platform.png)
 
 **Step 5:** Click **Get License Key** to generate the platform-specific license key.
 

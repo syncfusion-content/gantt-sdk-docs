@@ -33,7 +33,7 @@ To upgrade from the trial version, there are two possible solutions:
 
 License keys can be generated from the [License & Downloads](https://www.syncfusion.com/account/downloads) or the [Trial & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) section of the Syncfusion<sup style="font-size:70%">&reg;</sup> website.
 
-![Get Community License Key](images/get-community-license-key.png)
+![Get Community License Key](./licensing-images/get-community-license-key.png)
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> license keys are version and platform-specific. Refer to the [KB](https://www.syncfusion.com/kb/8976/how-to-generate-license-key-for-licensed-products) to generate the license key for the required version and platform. Also, refer to this [KB](https://www.syncfusion.com/kb/8951/which-version-syncfusion-license-key-should-i-use-in-my-application) to know which version of the Syncfusion<sup style="font-size:70%">&reg;</sup> license key should be used in the application.
 
@@ -49,17 +49,17 @@ License registration is **not** required for licensed users when referring to sc
 
 1. After installing the licensed build from a licensed installer, go to the installed location and navigate to `EJ2/Installed Version/Web (Essential JS 2)/JavaScript/ej2-js-es5`.
 
-    ![Registry Location](images/ej2-script-folder-structure.png)
+    ![Registry Location](./licensing-images/ej2-script-folder-structure.png)
 
 2. Navigate to the `ej2-js-es5` package folder and access the `ej2.min.js` from the `scripts` folder. Use this minified EJ2 script in your application.
 
-    ![Installation Location](images/ej2-script-in-file-browser.png)
+    ![Installation Location](./licensing-images/ej2-script-in-file-browser.png)
 
 ### Using scripts from the Custom Resource Generator (CRG)
 
 If you are a licensed customer, you can download scripts from the [CRG](https://crg.syncfusion.com/), which does not require license registration, by signing in with the Syncfusion<sup style="font-size:70%">&reg;</sup> account. You can check your license status by clicking the **My Account** icon as follows.
 
-![CRG licensed profile](images/crg-licensed-profile.png)
+![CRG licensed profile](./licensing-images/crg-licensed-profile.png)
 
 Refer to the [CRG documentation](https://ej2.syncfusion.com/javascript/documentation/common/custom-resource-generator) for more information on how to refer to scripts.
 
@@ -96,7 +96,7 @@ No. License registration and validation are performed **locally and offline** wi
 
 Use any licenses shown on the [accounts & downloads](https://www.syncfusion.com/account/downloads) page. Two licenses are shown when you are part of your company's enterprise portal global license and an individual license is also assigned to your account. In that case, both the individual license and your enterprise portal global license are displayed.
 
-![Project License view](images/project-license.png)
+![Project License view](./licensing-images/project-license.png)
 
 For definitions of Syncfusion<sup style="font-size:70%">&reg;</sup> license types, refer to this [KB article on license terms](https://www.syncfusion.com/kb/11532/definition-of-terms-for-syncfusion-licenses).
 
