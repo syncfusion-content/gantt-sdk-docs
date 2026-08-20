@@ -3,7 +3,7 @@ layout: post
 title: Getting Started in ASP.NET MVC Kanban | Syncfusion
 description: Learn how to start using Syncfusion ASP.NET MVC Kanban with step-by-step setup instructions and essential component features.
 keywords: asp-net-mvc kanban getting started, syncfusion kanban, install component, setup
-canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/kanban/getting-started
+canonical: https://www.syncfusion.com/gantt-sdk/aspnet-mvc-kanban-board
 platform: gantt-sdk
 control: Getting Started - Kanban
 documentation: ug

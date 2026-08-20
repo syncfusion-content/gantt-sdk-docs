@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with ASP.NET MVC Gantt Chart | Syncfusion
 description: Explore how to get started with Syncfusion ASP.NET MVC Gantt Chart configure the control, bind data, map fields, and visualize project timelines quickly.
 keywords: asp.net mvc gantt getting started, gantt setup, project timeline, task scheduling, syncfusion gantt chart
-canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/getting-started
+canonical: https://www.syncfusion.com/gantt-sdk/aspnet-mvc-gantt-chart
 platform: gantt-sdk
 control: Getting Started - Gantt Chart
 documentation: ug

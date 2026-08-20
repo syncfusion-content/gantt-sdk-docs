@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with React Gantt Chart | Syncfusion
 description: Learn how to install and create your first React Gantt Chart with task data binding, field mapping, and timeline rendering in this step-by-step guide.
 keywords: react gantt chart, getting started, syncfusion gantt, task data binding, field mapping, timeline rendering
-canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/getting-started
+canonical: https://www.syncfusion.com/react-components/react-gantt-chart
 platform: gantt-sdk
 control: Getting Started - Gantt Chart
 documentation: ug
