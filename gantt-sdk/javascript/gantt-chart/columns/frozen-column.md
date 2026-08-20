@@ -6,7 +6,6 @@ keywords: javascript gantt frozen columns, freeze columns, pinned columns, colum
 canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/columns/frozen-column
 platform: gantt-sdk
 control: Frozen Columns - Gantt Chart
-publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---

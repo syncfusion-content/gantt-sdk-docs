@@ -62,7 +62,7 @@ The application is ready to run with default settings. Now, let's add Syncfusion
 
 ## Install Syncfusion<sup style="font-size:70%">&reg;</sup> React packages
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> React component packages are available at [npmjs.com](https://www.npmjs.com/search?q=ej2-react). To use Syncfusion<sup style="font-size:70%">&reg;</sup> React components in the project, install the corresponding npm package.
+Syncfusion<sup style="font-size:70%">&reg;</sup> React component packages are available in the [npm package registry](https://www.npmjs.com/search?q=ej2-react). To use Syncfusion<sup style="font-size:70%">&reg;</sup> React components in the project, install the corresponding npm package.
 
 Here, the [React Kanban component](https://www.syncfusion.com/react-components/react-kanban-board) is used as an example. To install the React kanban component in the project, use the following command:
 
