@@ -1,7 +1,7 @@
 import { GanttAllModule } from '@syncfusion/ej2-angular-gantt'
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { GanttComponent, ToolbarItem } from '@syncfusion/ej2-angular-gantt';
-import { ExcelExportProperties } from '@syncfusion/ej2-grids';
+import { ExcelExportProperties } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { editingData } from './data';
 
