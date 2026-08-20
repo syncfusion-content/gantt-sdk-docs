@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with Vue Gantt Chart in Vue 3 | Syncfusion
 description: Learn how to get started with the Syncfusion Vue Gantt Chart in a Vue 3 Vite app using the Composition API, including setup, dependencies, and configuration.
 keywords: vue 3 gantt chart, vue 3 setup, composition api, gantt chart vue 3, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/getting-started-vue
+canonical: https://www.syncfusion.com/vue-components/vue-gantt-chart
 platform: gantt-sdk
 control: Getting Started - Gantt Chart
 documentation: ug

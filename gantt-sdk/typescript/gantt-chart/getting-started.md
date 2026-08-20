@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with TypeScript Gantt Chart | Syncfusion
 description: Get started with TypeScript Gantt Chart control by setting up data sources, configuring tasks, and implementing basic features for project management.
 keywords: typescript gantt getting started, setup, configuration, data source, tasks, scheduling, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/getting-started
+canonical: https://www.syncfusion.com/gantt-sdk/javascript-gantt-chart
 platform: gantt-sdk
 control: Getting Started - Gantt Chart
 documentation: ug

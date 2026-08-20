@@ -3,7 +3,7 @@ layout: post
 title: Excel Export in JavaScript Gantt Chart | Syncfusion
 description: Learn how to export Gantt Chart data to Excel and CSV formats in JavaScript using built-in export functionality and customization options.
 keywords: javascript gantt excel export, gantt csv export, export gantt data, excel export, csv export, gantt reporting, syncfusion gantt chart
-canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/excel-export
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/excel-export/excel-export
 platform: gantt-sdk
 control: Excel Export - Gantt Chart
 documentation: ug
