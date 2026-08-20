@@ -3,7 +3,7 @@ layout: post
 title: Columns in TypeScript Gantt Chart | Syncfusion
 description: Learn how to configure and customize columns in Syncfusion TypeScript Gantt Chart using field mapping, column types, formatting, and templates.
 keywords: TypeScript gantt columns, gantt column configuration, field mapping, column customization, column types, gantt columns, syncfusion gantt chart
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/columns
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/columns/columns
 platform: gantt-sdk
 control: Columns - Gantt Chart
 documentation: ug

@@ -3,7 +3,7 @@ layout: post
 title: Frozen Columns in TypeScript Gantt Chart | Syncfusion
 description: Learn how to freeze columns in Syncfusion TypeScript Gantt Chart to keep important task information visible during horizontal scrolling.
 keywords: TypeScript gantt frozen columns, freeze columns, pinned columns, column freezing, frozen columns, gantt column pinning, syncfusion gantt chart
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/columns/frozen-columns
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/columns/frozen-column
 platform: gantt-sdk
 control: Frozen Columns - Gantt Chart
 documentation: ug
