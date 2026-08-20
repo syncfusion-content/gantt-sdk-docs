@@ -179,7 +179,7 @@ For native and desktop frameworks (such as WPF, WinUI, and .NET MAUI), you may e
 
 ### Solution:
 
-1. Ensure that all Syncfusion NuGet packages including [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/)are installed to the same exact version and successfully restored in your application.
+1. Ensure that all Syncfusion NuGet packages including [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) are installed to the same exact version and successfully restored in your application.
 2. Verify that package reference declarations within your configuration files are pointing to the identical target version.
 3. Ensure that **Copy Local is set to True** for all referenced assemblies. Since assembly validation runs locally, the validation dll must reside within the build and publisher output environments.
 4. Clean and rebuild your project folder (`/bin` and `/obj` directories) to purge any outdated trial assemblies.
