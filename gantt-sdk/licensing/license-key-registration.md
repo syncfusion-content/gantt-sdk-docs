@@ -90,7 +90,7 @@ The following steps show how to register the Syncfusion<sup style="font-size:70%
     **License message:** <br /> (INFO) Syncfusion<sup style="font-size:70%">&reg;</sup> License imported successfully.
 
 4. Remove the `.cache` folder from `node_modules` in the application.
-5. Run the application. If you encounter a license validation error, refer to this [link](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-errors) to resolve it. For frequently asked license registration questions, refer to this [link](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-troubleshoot).
+5. Run the application. If you encounter a license validation error, refer to this [link](./licensing-error) to resolve it. For frequently asked license registration questions, refer to this [link](./licensing-troubleshoot).
 
 > If you don't want to use the license text file in the application, refer to this [link](#register-the-license-key-with-the-environment-variable) to use an environment variable and register the Syncfusion<sup style="font-size:70%">&reg;</sup> license key. Also, check out some common licensing FAQs while registering the license key using the npx command from this [link](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-troubleshoot#Reactivating-license-once-after-updating-the-package-version-while-using-npx).
 
@@ -145,7 +145,7 @@ setx SYNCFUSION_LICENSE "license key"
     **License message:** <br /> (INFO) Syncfusion<sup style="font-size:70%">&reg;</sup> License imported successfully.
 
 * Remove the `.cache` folder from `node_modules` in the application.
-* Run the application. If you encounter a license validation error, refer to this [link](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-errors) to resolve it. For frequently asked license registration questions, refer to this [link](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-troubleshoot).
+* Run the application. If you encounter a license validation error, refer to this [link](./licensing-error) to resolve it. For frequently asked license registration questions, refer to this [link](./licensing-troubleshoot).
 
 ### Register the license key in CI services
 

@@ -194,5 +194,5 @@ If you are using the Syncfusion<sup style="font-size:70%">&reg;</sup> [JavaScrip
 * [Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt SDK Licensing Overview](./overview)
 * [Generate Syncfusion<sup style="font-size:70%">&reg;</sup> License Key](./license-key-generation)
 * [Register Syncfusion<sup style="font-size:70%">&reg;</sup> License Key](./license-key-registration)
-* [Syncfusion<sup style="font-size:70%">&reg;</sup> Licensing Errors](./licensing-errors)
+* [Syncfusion<sup style="font-size:70%">&reg;</sup> Licensing Errors](./licensing-error)
 * [Validate Syncfusion<sup style="font-size:70%">&reg;</sup> License Key in CI Services](./ci-license-validation)

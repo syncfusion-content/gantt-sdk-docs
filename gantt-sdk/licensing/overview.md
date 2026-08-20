@@ -18,7 +18,7 @@ Generate a license key from the [License and Downloads](https://www.syncfusion.c
 
 Before using any Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls, register the license key in the application code. Otherwise, a license validation error message will be displayed as follows:
 
-> This application was built using a trial version of Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup>. Please include a valid license to permanently remove this license validation message. You can also obtain a free 30 day evaluation license to temporarily remove this message during the evaluation period. Please refer to this [help topic](./licensing-errors#license-key-not-registeredtrial-expired) for more information.
+> This application was built using a trial version of Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup>. Please include a valid license to permanently remove this license validation message. You can also obtain a free 30 day evaluation license to temporarily remove this message during the evaluation period. Please refer to this [help topic](./licensing-error#license-key-not-registered-or-trial-expired) for more information.
 
 ## Privacy Assurance
 
