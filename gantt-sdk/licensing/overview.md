@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion Gantt SDK Licensing Overview | Syncfusion
-description: Learn about Syncfusion Gantt SDK licensing requirements, license key validation, and registration.
+description: Learn about Syncfusion Gantt SDK licensing requirements, license key generation, validation, and registration across platforms.
 keywords: syncfusion gantt sdk licensing, license key validation, license key registration, unlock key vs license key, build server license registration
 canonical: https://help.syncfusion.com/gantt-sdk/licensing/overview
 platform: gantt-sdk
@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt SDK Licensing Overview
+# Syncfusion® Gantt SDK Licensing Overview
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> introduced license key validation for Essential<sup style="font-size:70%">&reg;</sup> JS2 platforms with the 2022 Volume 1 release. This requirement applies to applications using Syncfusion<sup style="font-size:70%">&reg;</sup> components through the latest JavaScript packages, whether obtained from npm, CDN, or build sources.
 

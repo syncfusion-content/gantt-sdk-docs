@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Troubleshoot Syncfusion Licensing Errors | Syncfusion
-description: Learn how to diagnose and resolve Syncfusion licensing validation errors across all supported Gantt SDK platforms, including key unregistered, invalid, expired, and version mismatches.
+description: Learn how to diagnose and resolve Syncfusion Gantt SDK licensing errors, including key unregistered, invalid, expired, and version mismatch issues.
 keywords: syncfusion licensing errors, trial expired error, invalid key error, platform mismatch license, version mismatch license, troubleshooting license key
 canonical: https://help.syncfusion.com/gantt-sdk/licensing/licensing-error
 platform: gantt-sdk

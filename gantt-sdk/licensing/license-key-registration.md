@@ -1,7 +1,7 @@
 ---
 layout: post
 title: License Key Registration for Syncfusion Controls | Syncfusion
-description: Learn how to register the Syncfusion license key in Angular, React, Vue, JavaScript, TypeScript, ASP.NET Core, ASP.NET MVC, Blazor, WPF, UWP, WinUI, and .NET MAUI Gantt SDK applications.
+description: Learn how to register the Syncfusion Gantt SDK license key across Angular, React, Vue, JS, TS, ASP.NET Core, MVC, Blazor, WPF, UWP, WinUI, and MAUI apps.
 keywords: syncfusion license registration, register license key, registerLicense method, npx syncfusion-license activate, Blazor registration, secure license registration
 canonical: https://help.syncfusion.com/gantt-sdk/licensing/license-key-registration
 platform: gantt-sdk

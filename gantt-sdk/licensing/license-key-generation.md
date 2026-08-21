@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Generate Syncfusion® License Key | Syncfusion
-description: Learn how to generate a Syncfusion license key from the License and Downloads portal, claim a key, and understand edition-based vs platform-based licensing for all platforms.
+description: Learn how to generate a Syncfusion Gantt SDK license key from the License and Downloads portal across all supported platforms and editions.
 keywords: syncfusion license key, generate license key, claim license key, license key generation, edition-based licensing, platform-based licensing, syncfusion essential studio
 canonical: https://help.syncfusion.com/gantt-sdk/licensing/license-key-generation
 platform: gantt-sdk

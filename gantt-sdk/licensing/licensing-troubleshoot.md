@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion Gantt SDK Licensing FAQ & Troubleshooting | Syncfusion
-description: Find answers to common Syncfusion Gantt SDK licensing questions, including offline validation, trial upgrade, multi-developer registration, version key generation, and license data privacy.
+description: Find answers to common Syncfusion Gantt SDK licensing FAQs covering offline validation, trial upgrade, multi-developer setup, and version key generation.
 keywords: syncfusion licensing faq, license troubleshooting, offline license validation, trial to licensed upgrade, license key version upgrade, multiple developers license, license data privacy, gantt sdk license
 canonical: https://help.syncfusion.com/gantt-sdk/licensing/licensing-troubleshoot
 platform: gantt-sdk
@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt SDK Licensing FAQ & Troubleshooting
+# Syncfusion® Gantt SDK Licensing FAQ & Troubleshooting
 
 This page answers the most frequently asked questions about Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt SDK license key validation, registration, and upgrades. If you cannot find an answer here, refer to the [licensing overview](./overview), [license key generation](./license-key-generation), [license key registration](./license-key-registration), or [licensing errors](./licensing-error) pages.
 
@@ -37,7 +37,7 @@ License keys can be generated from the [License & Downloads](https://www.syncfus
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> license keys are version and platform-specific. Refer to the [KB](https://www.syncfusion.com/kb/8976/how-to-generate-license-key-for-licensed-products) to generate the license key for the required version and platform. Also, refer to this [KB](https://www.syncfusion.com/kb/8951/which-version-syncfusion-license-key-should-i-use-in-my-application) to know which version of the Syncfusion<sup style="font-size:70%">&reg;</sup> license key should be used in the application.
 
-> When using ASP.NET Core controls together with JavaScript (ES5) components, register the license key in **both** the JavaScript (ES5) client side and the [ASP.NET Core](https://help.syncfusion.com/gantt-sdk/licensing/license-key-registration#aspnet-core) server side. License validation occurs on the client for JavaScript (ES5) components and on the server for ASP.NET Core components.
+> When using ASP.NET Core controls together with JavaScript (ES5) components, register the license key in **both** the JavaScript (ES5) client side and the [ASP.NET Core](./license-key-registration#asp-net-core) server side. License validation occurs on the client for JavaScript (ES5) components and on the server for ASP.NET Core components.
 
 ## Refer to EJ2 scripts without registering the license key
 
