@@ -175,6 +175,6 @@ N> If the **Syncfusion Essential Studio for Gantt SDK {version}** entry is selec
 
 10.  When the installation is finished, the **Summary** wizard appears. Here you can see the list of products that have been successfully and unsuccessfully installed/uninstalled. To close the Summary wizard, click **Finish**.
 
-    ![Summary install/uninstall](images/Step-by-Step-Installation_img18.png)
+	 ![Summary install/uninstall](images/Step-by-Step-Installation_img18.png)
 
 To open the Syncfusion Control Panel, click **Launch Control Panel**.
