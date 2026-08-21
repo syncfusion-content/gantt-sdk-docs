@@ -12,13 +12,13 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Accessibility and ARIA Compliance in ASP.NET MVC Gantt Chart
 
-The Gantt component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles) that are commonly used to evaluate accessibility.
+The Gantt component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the Gantt component is outlined below.
 
 | Accessibility Criteria                                                                  | Compatibility                                                                                      |
 | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| [WCAG 2.2](https://www.w3.org/TR/WCAG22) Support                                        | AA                                                                                                 |
+| [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Support                                        | AA                                                                                                 |
 | [Section 508](https://www.section508.gov) Support                                       | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes">             |
 | Screen Reader Support                                                                   | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
 | Right-To-Left Support                                                                   | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes">             |
@@ -41,7 +41,7 @@ The accessibility compliance for the Gantt component is outlined below.
 
 ## WAI-ARIA attributes
 
-The Gantt component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns) patterns to meet the accessibility. The following ARIA attributes are used in the Gantt component:
+The Gantt component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/) patterns to meet the accessibility. The following ARIA attributes are used in the Gantt component:
 
 The following ARIA attributes are used in Gantt:
 
@@ -68,11 +68,11 @@ The accessibility checker tools highlight the following known issues:
 - Verify that the `<div>` element with `role="grid"` provides proper keyboard access.
 - The element with `role="grid"` contains child elements with roles such as `"generic"` and `"textbox"`, which are not allowed. Only `"row"` or `"rowgroup"` roles are permitted as direct children.
 - Interactive component with ARIA role `treegrid` does not have a programmatically associated accessible name.
-- None of the descendant elements with `role="row"` are tabbable.
+- None of the descendant elements with `role="row"` are focused.
 - The explicitly assigned ARIA role `"rowgroup"` is redundant with the implicit role of the `<tbody>` element.
 - The explicitly assigned ARIA role `"row"` is redundant with the implicit role of the `<tr>` element.
 - The explicitly assigned ARIA role `"gridcell"` is redundant with the implicit role of the `<td>` element.
-- The tabbable element with role `"columnheader"` is not a widget role.
+- The focusable element with role `"columnheader"` is not a widget role.
 - The explicitly assigned ARIA role `"columnheader"` is redundant with the implicit role of the `<th>` element.
 - The element with `role="rowgroup"` does not contain required child elements with role `"row"`.
 - The ARIA attribute `aria-valuenow` is not valid for a `<div>` element with `role="separator"`.
@@ -82,7 +82,7 @@ The accessibility checker tools highlight the following known issues:
 
 ## Keyboard navigation
 
-The Gantt component follows the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns) guideline, ensuring accessibility for users of assistive technologies (AT) and those who rely solely on keyboard navigation. The following keyboard shortcuts are supported by the Gantt component:
+The Gantt component follows the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/) guideline, ensuring accessibility for users of assistive technologies (AT) and those who rely solely on keyboard navigation. The following keyboard shortcuts are supported by the Gantt component:
 
 | **Press**                            | **To do this**                                  |
 | ------------------------------------ | ----------------------------------------------- |

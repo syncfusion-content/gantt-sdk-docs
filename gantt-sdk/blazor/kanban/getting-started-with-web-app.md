@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with Web App in Blazor Kanban | Syncfusion
 description: Learn how to add Syncfusion Blazor Kanban to a Blazor Web App and configure the component for modern web projects.
 keywords: blazor kanban web app, syncfusion kanban, blazor web app, getting started
-canonical: https://help.syncfusion.com/gantt-sdk/blazor/kanban/getting-started-with-web-app
+canonical: https://www.syncfusion.com/gantt-sdk/blazor-kanban-board
 platform: gantt-sdk
 control: Getting Started with Web App - Kanban
 documentation: ug

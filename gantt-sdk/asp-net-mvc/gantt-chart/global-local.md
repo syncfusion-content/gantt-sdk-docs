@@ -3,7 +3,7 @@ layout: post
 title: Global and Locale in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to configure globalization and locale settings in Syncfusion ASP.NET MVC Gantt Chart to support multiple languages and regional formats.
 keywords: asp.net mvc gantt globalization, locale settings, language support, regional formats, international gantt chart, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/global-locale
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/global-local
 platform: gantt-sdk
 control: Global and Locale - Gantt Chart
 documentation: ug
