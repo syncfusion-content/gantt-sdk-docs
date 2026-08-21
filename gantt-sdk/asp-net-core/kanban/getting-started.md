@@ -3,7 +3,7 @@ layout: post
 title: Getting Started in ASP.NET Core Kanban | Syncfusion
 description: Learn how to start using Syncfusion ASP.NET Core Kanban with step-by-step setup instructions and essential component features.
 keywords: asp-net-core kanban getting started, syncfusion kanban, install component, setup
-canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/getting-started
+canonical: https://www.syncfusion.com/gantt-sdk/aspnet-core-kanban-board
 platform: gantt-sdk
 control: Getting Started - Kanban
 documentation: ug

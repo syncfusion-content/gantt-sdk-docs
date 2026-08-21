@@ -3,7 +3,7 @@ layout: post
 title: Critical Path in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to identify and manage the critical path in project schedules using Syncfusion ASP.NET MVC Gantt Chart, ensuring timely project delivery.
 keywords: asp.net mvc gantt critical path, project schedule, task delays, project end date, critical tasks, syncfusion gantt chart
-canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/critical-path
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/criticalpath
 platform: gantt-sdk
 control: Critical Path - Gantt Chart
 documentation: ug
@@ -43,7 +43,7 @@ The critical path can be enabled in Gantt by using the built-in toolbar button o
 
 ## Customize taskbar in critical path
 
-The taskbar in critical path can be customized by using `queryTaskbarInfo` event and `isCritical` property of row `data` in the event arugment.
+The taskbar in critical path can be customized by using `queryTaskbarInfo` event and `isCritical` property of row `data` in the event argument.
 
 The following code example shows how to customize the critical path taskbar in the Gantt control:
 

@@ -3,7 +3,7 @@ layout: post
 title: Columns in JavaScript Gantt Chart | Syncfusion
 description: Learn how to configure and customize columns in Syncfusion JavaScript Gantt Chart using field mapping, column types, formatting, and templates.
 keywords: javascript gantt columns, gantt column configuration, field mapping, column customization, column types, gantt columns, syncfusion gantt chart
-canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/columns
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/columns/columns
 platform: gantt-sdk
 control: Columns - Gantt Chart
 documentation: ug
@@ -65,7 +65,7 @@ In Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt for JavaScript, column
 
 > To learn more about resizing, you can refer to the resizing section [here](https://ej2.syncfusion.com/javascript/documentation/gantt/columns/column-resizing)
 
-#### Supported types for column width
+### Supported types for column width
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt supports the following three types of column width:
 
