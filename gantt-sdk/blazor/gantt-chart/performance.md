@@ -99,7 +99,7 @@ By considering these factors and implementing the recommended solutions, you can
 
 For more detailed guidance, refer to the [documentation](https://learn.microsoft.com/en-us/aspnet/core/blazor/host-and-deploy/server?view=aspnetcore-8.0) on hosting and deploying Blazor applications.
 
-## Microsoft Excel limitation while exporting millions of records to excel file format
+## Microsoft excel limitation while exporting millions of records to excel file format
 
 Microsoft Excel supports a maximum of 1,048,576 rows per sheet. Therefore, it is not feasible to export millions of records into a single Excel file due to this limitation. For handling large datasets, consider exporting data in formats such as CSV (Comma-Separated Values), which can efficiently manage larger volumes of data.
 For more details on Microsoft Excel's specifications and limits, you can refer to the official [documentation](https://support.microsoft.com/en-us/excel/excel-specifications-and-limits).

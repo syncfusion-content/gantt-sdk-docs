@@ -589,7 +589,7 @@ This interface is used to notify that a property value has changed. For example,
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/LZhRNwLXLXPnOpgb?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## Remote Data
+## Remote data
 
 The Syncfusion Blazor component enables remote data binding by connecting UI components to server-side data sources. This approach facilitates fetching, displaying, and manipulating data stored on remote servers.
 

@@ -452,7 +452,7 @@ In the Gantt Chart component, you can enable or disable the mouse hover tooltip 
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/VtrdNxVrMmqJQQcC?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## Timeline Template
+## Timeline template
 
 In the Gantt component, you can customize timeline cells using the [GanttTooltipSettings.TimelineCellTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTooltipSettings-1.html#Syncfusion_Blazor_Gantt_GanttTooltipSettings_1_TimelineCellTemplate) property, allowing for the customization of HTML content within timeline cells. This feature enhances the visual appeal and enables personalized functionality.
 

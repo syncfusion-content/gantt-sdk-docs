@@ -14,7 +14,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 Resources in the Blazor Gantt component represent people, equipment, or materials allocated to tasks, visualized in taskbars and labels for clear utilization tracking. Assigned via the [GanttResource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttResource-2.html) property, resources map to tasks using [GanttAssignmentFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttAssignmentFields-2.html) for ID, name, unit, and group. This enables display of resource names in columns or labels with [GanttLabelSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttLabelSettings-1.html), highlighting workloads and overallocation. Resources include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may truncate names for multiple assignments. By default, resources allocate 100% unit if unspecified.
 
-## Configure Resource Collection
+## Configure resource collection
 
 The resource collection in Blazor Gantt Chart defines available resources as a list of objects with fields such as ID, Name, MaxUnits, and Group. These fields are mapped using the [GanttResource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttResource-2.html) property:
 
@@ -75,7 +75,7 @@ The following code snippets show the resource collection and how it is assigned 
     protected override void OnInitialized()
     {
         TaskCollection = GanttModel.GetTaskCollection();
-        ResourceCollection = GanttModel.GetResources;
+        ResourceCollection = GanttModel.GetResources();
         AssignmentCollection = GanttModel.GetAssignmentCollection();
     }
 }
@@ -225,7 +225,7 @@ The following code snippet demonstrates how to assign resources to tasks and map
     protected override void OnInitialized()
     {
         TaskCollection = GanttModel.GetTaskCollection();
-        ResourceCollection = GanttModel.GetResources;
+        ResourceCollection = GanttModel.GetResources();
         AssignmentCollection = GanttModel.GetAssignmentCollection();
     }
 }
@@ -372,7 +372,7 @@ To edit resources directly through [cell editing](https://help.syncfusion.com/ga
     protected override void OnInitialized()
     {
         TaskCollection = GanttModel.GetTaskCollection();
-        ResourceCollection = GanttModel.GetResources;
+        ResourceCollection = GanttModel.GetResources();
         AssignmentCollection = GanttModel.GetAssignmentCollection();
     }
 
@@ -513,7 +513,7 @@ In the resource tab of the [Add/Edit dialog box](https://help.syncfusion.com/gan
     protected override void OnInitialized()
     {
         TaskCollection = GanttModel.GetTaskCollection();
-        ResourceCollection = GanttModel.GetResources;
+        ResourceCollection = GanttModel.GetResources();
         AssignmentCollection = GanttModel.GetAssignmentCollection();
     }
 }
@@ -685,7 +685,7 @@ These methods offer a convenient way to add, remove, and update task resources i
     protected override void OnInitialized()
     {
         TaskCollection = GanttModel.GetTaskCollection();
-        ResourceCollection = GanttModel.GetResources;
+        ResourceCollection = GanttModel.GetResources();
         AssignmentCollection = GanttModel.GetAssignmentCollection();
     }
     private async void AddAssignment()
@@ -866,7 +866,7 @@ In the following code snippet, the `ResourceAssignmentChanging` event is used to
     protected override void OnInitialized()
     {
         TaskCollection = GanttModel.GetTaskCollection();
-        ResourceCollection = GanttModel.GetResources;
+        ResourceCollection = GanttModel.GetResources();
         AssignmentCollection = GanttModel.GetAssignmentCollection();
     }
     private async Task AssignmentHandler(ResourceAssignmentChangeEventArgs<GanttModel.AssignmentModel> args)
@@ -1052,7 +1052,7 @@ The taskbar appearance can be customized by using the [TaskbarTemplate](https://
     protected override void OnInitialized()
     {
         TaskCollection = GanttModel.GetTaskCollection();
-        ResourceCollection = GanttModel.GetResources;
+        ResourceCollection = GanttModel.GetResources();
         AssignmentCollection = GanttModel.GetAssignmentCollection();
     }
 
