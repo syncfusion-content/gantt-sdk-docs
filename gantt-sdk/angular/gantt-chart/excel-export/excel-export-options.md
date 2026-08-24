@@ -72,7 +72,7 @@ The following example demonstrates that the hidden **StartDate** column is inclu
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/showHide-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/exportHidden-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -162,7 +162,7 @@ To add header and footer content to exported Excel or CSV files in the Gantt Cha
 
 The Excel or CSV export feature in Gantt supports applying custom themes to the exported document, helping maintain a consistent and visually structured appearance.
 
-To configure a theme, set the [theme](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#theme)  property within [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties). This allows customization of styles for the following sections in the exported file
+To configure a theme, set the [theme](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#theme)  property within [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties). This allows customization of styles for the following sections in the exported file:
 
 - **caption**: Defines the style for the caption, typically used for titles or descriptions at the top of the sheet.
 - **header**: Specifies the styling for column headers.
