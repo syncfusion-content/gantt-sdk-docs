@@ -36,8 +36,6 @@ Then, add it to the component's `providers` array:
 
 You can trigger export operations using the [excelExport](https://ej2.syncfusion.com/angular/documentation/api/gantt#excelexport) or [csvExport](https://ej2.syncfusion.com/angular/documentation/api/gantt#csvexport) methods, typically within the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/gantt/events#toolbarclick) event.
 
-## Basic export example
-
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/excelExport-cs1/src/app.component.ts %}
