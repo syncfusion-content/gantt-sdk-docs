@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with Server App in Blazor Kanban | Syncfusion
 description: Learn how to set up Syncfusion Blazor Kanban in a Blazor Server app and start building interactive workflows quickly.
 keywords: blazor kanban server app, syncfusion kanban, blazor server, getting started
-canonical: https://help.syncfusion.com/gantt-sdk/blazor/kanban/getting-started-with-server-app
+canonical: https://www.syncfusion.com/gantt-sdk/blazor-kanban-board
 platform: gantt-sdk
 control: Getting Started with Server App - Kanban
 documentation: ug

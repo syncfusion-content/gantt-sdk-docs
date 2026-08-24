@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with Angular Gantt Chart | Syncfusion
 description: Learn how to install and build your first Angular Gantt Chart with task data binding, field mapping, and timeline rendering in this step-by-step guide.
 keywords: angular gantt chart, getting started, syncfusion gantt, task data binding, field mapping, timeline rendering
-canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/getting-started
+canonical: https://www.syncfusion.com/angular-components/angular-gantt-chart
 platform: gantt-sdk
 control: Getting Started - Gantt Chart
 documentation: ug

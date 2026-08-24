@@ -3,7 +3,7 @@ layout: post
 title: Timeline in Vue Gantt Chart | Syncfusion
 description: Learn how to configure timeline in Syncfusion Vue Gantt Chart with custom units, formats, and timeline views.
 keywords: vue gantt timeline, timeline configuration, timeline units, timeline format, project duration, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/time-line/timeline
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/time-line/time-line
 platform: gantt-sdk
 control: Timeline - Gantt Chart
 documentation: ug
