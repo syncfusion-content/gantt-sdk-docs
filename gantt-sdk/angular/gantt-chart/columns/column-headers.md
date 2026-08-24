@@ -237,7 +237,7 @@ In the context of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular G
 
 ### Through header text  
 
-To translate the header text of the Gantt chart's columns using **ngx-translate** through header text, you can use the **translate** pipe for the [headerText](https://helpej2.syncfusion.com/angular/documentation/api/gantt/column#headertext) property.
+To translate the header text of the Gantt chart's columns using **ngx-translate** through header text, you can use the **translate** pipe for the [headerText](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#headertext) property.
 
 **Step 1**: Create and Configure the TranslateService
 
