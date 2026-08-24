@@ -36,7 +36,9 @@ To enable column reordering, set the [allowReordering](https://ej2.syncfusion.co
 
 ## Disable column reordering for specific columns
 
-In Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component, when [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowreordering) is enabled globally, you can restrict reordering for individual columns by setting their [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#allowreordering) property to **false**. **Note:** Column-level `allowReordering: false` only works when global `allowReordering` is **true**; if global reordering is disabled, all columns cannot be reordered regardless of column-level settings.
+In Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component, when [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowreordering) is enabled globally, you can restrict reordering for individual columns by setting their [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#allowreordering) property to **false**.
+
+> Column-level `allowReordering: false` only works when global `allowReordering` is **true**; if global reordering is disabled, all columns cannot be reordered regardless of column-level settings.
 
 The following example demonstrates how reordering is restricted for the **TaskName** column.
 
