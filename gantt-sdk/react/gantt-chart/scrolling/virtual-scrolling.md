@@ -54,7 +54,7 @@ The following example enables timeline virtualization for a wide timeline:
         
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/virtualscroll-cs3" %}
 
-## Important: Virtual Scrolling Limitations
+## Virtual scrolling limitations
 
 Before implementing virtual scrolling, be aware of the following constraints:
 - **Immutable mode incompatibility**: Virtual scrolling is incompatible with [enableImmutableMode](https://ej2.syncfusion.com/react/documentation/api/gantt#enableimmutablemode), as both use different rendering optimizations.
