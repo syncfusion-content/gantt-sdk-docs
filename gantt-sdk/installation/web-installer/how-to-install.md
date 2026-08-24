@@ -115,7 +115,7 @@ Follow either one of the option below to uninstall Syncfusion Essential Studio G
   
 **Option 1: Uninstall the Gantt SDK using the Syncfusion Gantt SDK web installer**
 
-Syncfusion provides the option to uninstall products of the same version directly from the Web Installer application. Select the products to be uninstalled from the list, and the Web Installer uninstalls them one by one.
+Syncfusion provides the option to uninstall products of the same version directly from the Web Installer application. Select the products to be uninstalled from the list, and the Web Installer uninstall them one by one.
 
 ![Platform Selection wizard - Installed](images/Step-by-Step-Installation_img4.png)
 
@@ -175,6 +175,6 @@ N> If the **Syncfusion Essential Studio for Gantt SDK {version}** entry is selec
 
 10.  When the installation is finished, the **Summary** wizard appears. Here you can see the list of products that have been successfully and unsuccessfully installed/uninstalled. To close the Summary wizard, click **Finish**.
 
-    ![Summary install/uninstall](images/Step-by-Step-Installation_img18.png)
+	 ![Summary install/uninstall](images/Step-by-Step-Installation_img18.png)
 
 To open the Syncfusion Control Panel, click **Launch Control Panel**.
