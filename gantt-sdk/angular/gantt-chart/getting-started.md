@@ -25,7 +25,7 @@ This guide demonstrates how to create an Angular application, configure task dat
 - [Node.js 24+](https://nodejs.org/en) (LTS recommended).
 - Syncfusion CLI.
 
-## Install the Syncfusion CLI 
+## Install the syncfusion cli 
 
 Install the Syncfusion CLI globally using the following command:
 
@@ -35,7 +35,7 @@ npm install -g @syncfusion/syncfusion-cli
 {% endhighlight %}
 {% endtabs %}
 
-## Create a new Angular application using Syncfusion CLI
+## Create a new angular application using syncfusion cli
 
 You can create a Angular application using the Syncfusion CLI. The CLI provides two ways to create a project:
 
@@ -223,11 +223,11 @@ public taskSettings = {
 | `endDate` | Task end date | Either Duration or EndDate |
 | `parentID` | Parent task ID for hierarchy | No |
 
-## Render the Angular Gantt Chart Component
+## Render the angular gantt chart component
 
 Update the component file to render the Gantt Chart using the sample data and task settings defined earlier.
 
-### For Angular 20+ (Standalone Components)
+### For angular 20+ (standalone components)
 
 Modify the `src/app/app.ts` file with the following code:
 
@@ -268,7 +268,7 @@ export class App {
 - `template` — Defines the component's HTML inline; `[dataSource]="data"` binds the task data and `[taskFields]="taskSettings"` maps the field names
 - `encapsulation: ViewEncapsulation.None` — Disables view encapsulation to allow global styles to apply to the Gantt Chart
 
-### For Angular 19 and Earlier (Module-Based)
+### For angular 19 and earlier (module-based)
 
 If using Angular 19 or earlier, define the component in `src/app/app.component.ts`:
 

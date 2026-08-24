@@ -27,7 +27,7 @@ Configure using:
 - [taskMode](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskmode): Sets global mode.
 - [taskFields.manual](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#manual): Sets per-task mode.
 
-### Automatically scheduled Tasks
+### Automatically scheduled tasks
 
 The following example configures auto scheduling:
 
@@ -43,7 +43,7 @@ The following example configures auto scheduling:
 
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/task-scheduling/automatic-tasks-cs1" %}
 
-### Manually scheduled Tasks
+### Manually scheduled tasks
 
 The following example configures manual scheduling:
 

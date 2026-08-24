@@ -324,7 +324,7 @@ In this example, the `onCheckBoxChange` method checks the checkbox state and use
   
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/rows/hiderow-cs1" %}
 
-## See Also
+## See also
 
 * [Render parent rows in collapsed state](https://ej2.syncfusion.com/angular/documentation/gantt/columns/treecolumn#render-parent-rows-in-collapsed-state)  
 * [Retain expanded and collapsed state](https://ej2.syncfusion.com/angular/documentation/gantt/columns/treecolumn#retain-expanded-and-collapsed-state) 
