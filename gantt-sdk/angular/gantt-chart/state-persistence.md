@@ -135,7 +135,7 @@ When [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/ga
   
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/column-prevent/default-cs1" %}
 
-### Persist the header template and header Text
+### Persist the header template and header text
 
 By default, properties such as column template, header text, header template, formatter, and value accessor are not persisted when [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablepersistence) is set to **true**, as these are defined at the application level.
 
