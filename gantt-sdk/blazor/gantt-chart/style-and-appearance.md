@@ -532,7 +532,7 @@ N> By default, the `GridLines` property is set to **Horizontal** type.
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/BDBxNxCaJTlhelFQ?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## See also
+## See Also
 
 * [Customizing the Blazor Gantt Chart’s Taskbar](https://www.syncfusion.com/blogs/post/customizing-the-blazor-gantt-charts-taskbar-an-overview)
 

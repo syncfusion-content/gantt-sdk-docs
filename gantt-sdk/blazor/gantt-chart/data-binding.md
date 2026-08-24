@@ -251,11 +251,11 @@ To handle scenarios where the data model is not defined at compile time, the Gan
             int range = (DateTime.Today - start).Days;
             DateTime startingDate = start.AddDays(ran.Next(range));
             dynamic ChildRecord = new DynamicDictionary();
-            ChildRecord.TaskId = ++ParentRecordID;
-            ChildRecord.TaskName = "Child Task " + ++ChildRecordID;
+            ChildRecord.TaskId = ++ChildRecordID;
+            ChildRecord.TaskName = "Child Task " + ChildRecordID;
             ChildRecord.StartDate = startingDate;
             ChildRecord.Progress = ran?.Next(10, 100);
-            ChildRecord.Duration = ParentRecordID % 3 == 0 ? (64).ToString() : (98).ToString();
+            ChildRecord.Duration = ChildRecordID % 3 == 0 ? (64).ToString() : (98).ToString();
             ChildRecord.ParentId = ParentId;
             Data.Add(ChildRecord);
         }
@@ -352,11 +352,11 @@ To handle scenarios where the model type is unknown at compile time, the Gantt C
             int range = (DateTime.Today - start).Days;
             DateTime startingDate = start.AddDays(ran.Next(range));
             dynamic ChildRecord = new ExpandoObject();
-            ChildRecord.TaskId = ++ParentRecordID;
-            ChildRecord.TaskName = "Child Task " + ++ChildRecordID;
+            ChildRecord.TaskId = ++ChildRecordID;
+            ChildRecord.TaskName = "Child Task " + ChildRecordID;
             ChildRecord.StartDate = startingDate;
             ChildRecord.Progress = ran.Next(10, 100);
-            ChildRecord.Duration = ParentRecordID % 3 == 0 ? (64).ToString() : (98).ToString();
+            ChildRecord.Duration = ChildRecordID % 3 == 0 ? (64).ToString() : (98).ToString();
             ChildRecord.ParentId = ParentId;
             Data.Add(ChildRecord);
         }
@@ -370,7 +370,7 @@ To handle scenarios where the model type is unknown at compile time, the Gantt C
 
 ## Observable collection and INotifyPropertyChanged
 
-The Gantt chart supports to automatically update data based on `INotifyCollectionChanged` and `INotifyPropertyChanged` interface.
+The Gantt chart automatically updates data based on the `INotifyCollectionChanged` and `INotifyPropertyChanged` interfaces.
 
 ### Observable collection
 

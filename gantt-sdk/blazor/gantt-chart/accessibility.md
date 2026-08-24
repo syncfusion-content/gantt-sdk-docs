@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Accessibility and ARIA Compliance in Blazor Gantt Chart
 
-The [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) component adheres to accessibility guidelines, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/), and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) standards, ensuring compatibility with assistive technologies, including those relying on assistive technologies.
+The [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) component adheres to accessibility guidelines, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/), and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) standards, ensuring compatibility with assistive technologies.
 
 ## Accessibility Compliance
 
@@ -55,7 +55,7 @@ The Blazor Gantt Chart component implements [WAI-ARIA](https://www.w3.org/WAI/AR
 | `aria-label` | Provides descriptive information for UI elements, such as timeline cells, taskbars, labels, dependency lines, and event markers. |
 | `aria-selected` | Indicates selection state for chart rows, set to **false** by default and `true` when a cell or task is selected. |
 | `aria-expanded` | Used for parent task rows, set to `true` when expanded and **false** when collapsed. |
-| `aria-grabbed` | Applied to taskbars during editing to indicate drag-and-drop interaction. |
+| `aria-grabbed` (deprecated) | Not used; the `draggable` HTML attribute is applied to taskbars during editing to indicate drag-and-drop interaction. |
 
 ## Keyboard navigation
 
@@ -191,8 +191,8 @@ The Blazor Gantt Chart component supports comprehensive [keyboard interaction](h
 |---------|-----|--------|
 | <kbd>Ctrl</kbd> + <kbd>Z</kbd> | <kbd>⌘</kbd> + <kbd>Z</kbd> | Undoes the most recent tracked action. |
 | <kbd>Ctrl</kbd> + <kbd>Y</kbd> | <kbd>⌘</kbd> + <kbd>Y</kbd> | Redoes the most recently undone action. |
-| <kbd>Ctrl</kbd> + <kbd>Shift </kbd> + <kbd>Z</kbd> | <kbd>⌘</kbd>+ <kbd>⇧</kbd> + <kbd>Z</kbd> | Redoes the most recently undone action. |
-| <kbd>Ctrl</kbd> + <kbd>Shift </kbd> + <kbd>Y</kbd> | <kbd>⌘</kbd>+ <kbd>⇧</kbd> + <kbd>Y</kbd> | Undoes the most recent tracked action. |
+| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Z</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>Z</kbd> | Redoes the most recently undone action. |
+| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Y</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>Y</kbd> | Redoes the most recently undone action. |
 
 ## Validate Accessibility Compliance
 

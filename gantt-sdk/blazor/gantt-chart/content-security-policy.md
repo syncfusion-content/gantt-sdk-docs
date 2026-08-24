@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Strict CSP Configuration and Feature Limitations in Blazor Gantt Chart
 
-## What's supported under strict CSP ?
+## What's supported under strict CSP?
 
 The [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) component supports most features under strict Content Security Policy without needing `'unsafe-inline'`. You can safely use:
 
@@ -82,6 +82,6 @@ Include `'unsafe-inline'` if you want to use rich text formatting in the Notes f
 
 > Use this only if you need formatted text (bold, colors, lists, etc.) in task Notes.
 
-## See also
+## See Also
 
 * [Content security policy in Blazor components](https://blazor.syncfusion.com/documentation/common/content-security-policy)

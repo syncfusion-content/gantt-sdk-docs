@@ -20,13 +20,15 @@ This configuration ensures that task dates, event markers, baseline dates, and i
 
 The [Timezone](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Timezone) property allows the Gantt Chart to convert and display all task-related dates, including start dates, end dates, event markers, and baseline dates, in the specified timezone.
 
-For example, a `DateTime` value defined as `new DateTime(2025, 2, 4, 8, 0, 0)` in a system set to Pacific Standard Time (PST, UTC-08:00) will be adjusted to `2025-02-03 09:30 PM` when the `Timezone` property is set to `America/New_York` (ET, UTC-05:00 during standard time).
+For example, when a task is created with `new DateTime(2025, 2, 4, 8, 0, 0)` in a local timezone such as `America/Los_Angeles`, the Gantt chart converts that value to the configured `Timezone` before rendering it. The exact displayed value depends on the offset difference and daylight saving changes for the selected timezone.
 
 This conversion ensures accurate scheduling and visualization across timezones, with adjustments for daylight saving time where applicable.
 
 ## Setting the Timezone
 
-Set the [Timezone](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Timezone) property to a valid IANA timezone string such as UTC, America/New_York, or Europe/London. This ensures consistent task date displays and aligns taskbars with database times.
+Set the [Timezone](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Timezone) property to a valid IANA timezone string such as `UTC`, `America/New_York`, or `Europe/London`. This ensures consistent task date displays and aligns taskbars with database times.
+
+> Note: `Timezone` accepts runtime-supported IANA timezone identifiers. If the hosting environment does not include the timezone database, convert values to UTC before assigning them to the chart, or use a supported system timezone identifier.
 
 The following example demonstrates configuring the Gantt Chart with the `America/New_York` timezone and includes a dropdown to dynamically update the timezone, triggering a re-render of all task dates.
 

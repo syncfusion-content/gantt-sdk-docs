@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Top and Bottom Timeline Tier Configuration in Blazor Gantt Chart
 
-The Blazor Gantt Chart component supports a two-tier timeline layout, enabling customization of both the top and bottom tiers through specific configuration options.
+The Blazor Gantt Chart supports a two-tier timeline layout, enabling customization of both the top and bottom tiers through specific configuration options.
 
 - [TopTier](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTimelineSettings.html#Syncfusion_Blazor_Gantt_GanttTimelineSettings_TopTier) and [BottomTier](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTimelineSettings.html#Syncfusion_Blazor_Gantt_GanttTimelineSettings_BottomTier): Define the structure and visibility of each timeline tier.
 - [Unit](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTimelineTierSettings.html#Syncfusion_Blazor_Gantt_GanttTimelineTierSettings_Unit): Specifies the time unit for each tier, such as day, week, or month.
@@ -21,6 +21,13 @@ The Blazor Gantt Chart component supports a two-tier timeline layout, enabling c
 - [Formatter](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTimelineTierSettings.html#Syncfusion_Blazor_Gantt_GanttTimelineTierSettings_Formatter): Applies a custom method to format the timeline cell values programmatically.
 
 These properties allow precise control over how time intervals are displayed, enhancing the readability and usability of the Gantt chart across various project scales.
+
+## Configure the timeline tiers
+
+1. Add `SfGantt` to your page and map the task fields using `GanttTaskFields`.
+2. Add `GanttTimelineSettings` inside the Gantt chart and define the top and bottom tiers with `GanttTopTierSettings` and `GanttBottomTierSettings`.
+3. Set the tier properties such as `Unit`, `Format`, and `Count` to control the date grouping and layout.
+4. Use `TimelineUnitSize` or a custom formatter when you need greater control over cell width or displayed labels.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}

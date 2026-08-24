@@ -10,23 +10,23 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Timeline Zooming with Zoom-In, Out and Fit in Blazor Gantt Chart
+# Timeline Zooming with Zoom In, Zoom Out, and Zoom to Fit in Blazor Gantt Chart
 
-The Blazor Gantt Chart component provides zooming support to adjust the timeline view dynamically. This includes increasing or decreasing the width of timeline cells and changing the timeline units to view tasks across various timespan from minutes to decades.
+The Blazor Gantt Chart provides zooming support to adjust the timeline view dynamically. This includes increasing or decreasing the width of timeline cells and changing the timeline units to view tasks across various timespans, from minutes to decades.
 
 To enable zooming features, add `ZoomIn`, `ZoomOut`, and `ZoomToFit` to the toolbar items collection. These actions can also be triggered externally using the built-in methods like [ZoomInAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ZoomInAsync), [ZoomOutAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ZoomOutAsync), and [ZoomToFitAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ZoomToFitAsync).
 
 **Zoom in**
 
-This support is used to increase the timeline width and timeline unit from years to minutes timespan. When the `ZoomIn` icon is clicked, the timeline cell width is increased when the cell size exceeds the specified range and the timeline unit is changed based on the current zoom levels.
+This support is used to increase the timeline width and change the timeline unit from years to minutes. When the `ZoomIn` icon is clicked, the timeline cell width is increased when the cell size reaches the specified range, and the timeline unit is changed based on the current zoom level.
 
 **Zoom out**
 
-This support is used to increase the timeline width and timeline unit from minutes to years timespan. When the `ZoomOut` icon is clicked, the timeline cell width is decreased when the cell size falls behind the specified range and the timeline view mode is changed based on the current zooming levels.
+This support is used to decrease the timeline width and change the timeline unit from minutes to years. When the `ZoomOut` icon is clicked, the timeline cell width is decreased when the cell size falls below the specified range, and the timeline view mode is changed based on the current zoom level.
 
 **Zoom to fit**
 
-This support is used to view all the tasks available in a project within available area on the chart part of Gantt. When users click the `ZoomToFit` icon, then all the tasks are rendered within the available chart container width.
+This support is used to view all the tasks available in a project within the available area of the chart. When users click the `ZoomToFit` icon, all the tasks are rendered within the available chart container width.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -87,7 +87,7 @@ Zoom actions are governed by predefined zooming levels specified in the [CustomZ
 {% highlight razor tabtitle="Home.razor" %}
 
 @using Syncfusion.Blazor.Gantt
-<SfGantt DataSource="@TaskCollection" CustomZoomingLevels=zoomingLevel Toolbar="@(new List<string>() { "ZoomIn", "ZoomOut", "ZoomToFit" })" Height="450px" Width="700px">
+<SfGantt DataSource="@TaskCollection" CustomZoomingLevels="@zoomingLevel" Toolbar="@(new List<string>() { "ZoomIn", "ZoomOut", "ZoomToFit" })" Height="450px" Width="700px">
     <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId" Dependency="Predecessor">
     </GanttTaskFields>
 </SfGantt>
@@ -141,15 +141,15 @@ Zoom actions are governed by predefined zooming levels specified in the [CustomZ
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://blazorplayground.syncfusion.com/embed/VZVdNHLgLCLWibTz?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/LXVRjPhCpBQtCrAK?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 ## Zoom actions via methods
 
 Zooming actions can be triggered dynamically or through external controls using the following methods:
 
-* **Zoom In** - Use `ZoomIn` when `ZoomIn` external button was clicked, the timeline cell width is increased when the cell size exceeds the specified range and the timeline unit is changed based on the current zoom levels.
-* **Zoom Out** - Use `ZoomOut` when the `ZoomOut` external button was clicked, the timeline cell width is decreased when the cell size falls behind the specified range and the timeline view mode is changed based on the current zooming levels.
-* **Zoom To Fit** - Use `ZoomToFit` When `Fit To Project` external button was clicked then all the tasks are rendered within the available chart container width.
+* **Zoom In** - Use `ZoomInAsync` when the `Zoom In` external button is clicked. The timeline cell width is increased when the cell size reaches the specified range, and the timeline unit is changed based on the current zoom level.
+* **Zoom Out** - Use `ZoomOutAsync` when the `Zoom Out` external button is clicked. The timeline cell width is decreased when the cell size falls below the specified range, and the timeline view mode is changed based on the current zoom level.
+* **Zoom To Fit** - Use `ZoomToFitAsync` when the `Fit To Project` external button is clicked. All the tasks are rendered within the available chart container width.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -173,7 +173,7 @@ Zooming actions can be triggered dynamically or through external controls using 
     {
         TaskCollection = GetTaskCollection();
     }
-    private async void ZoomIn()
+    private async Task ZoomIn()
     {
         if(Gantt!=null)
         {
@@ -181,7 +181,7 @@ Zooming actions can be triggered dynamically or through external controls using 
         }
         
     }
-    private async void ZoomOut()
+    private async Task ZoomOut()
     {
         if (Gantt != null)
         {
@@ -189,7 +189,7 @@ Zooming actions can be triggered dynamically or through external controls using 
         }
        
     }
-    private async void ZoomToFit()
+    private async Task ZoomToFit()
     {
         if (Gantt != null)
         {
@@ -229,7 +229,7 @@ Zooming actions can be triggered dynamically or through external controls using 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://blazorplayground.syncfusion.com/embed/BjrxZRBKrMqqWBiA?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/rjLRjvBWfLQcATOU?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 ## Resetting zooming levels using method
 
@@ -255,13 +255,12 @@ In Gantt chart, you can reset the zoom level to its initial state, as configured
     {
         TaskCollection = GetTaskCollection();
     }
-    private async void ResetZoomingLevels()
+    private async Task ResetZoomingLevels()
     {
-        if (Gantt != null)
+       if (Gantt is not null)
         {
-            await Gantt.ResetZoomAsync();
+        await Gantt.ResetZoomAsync();
         }
-        
     }
     public class TaskData
     {
@@ -295,4 +294,4 @@ In Gantt chart, you can reset the zoom level to its initial state, as configured
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://blazorplayground.syncfusion.com/embed/rjLdXdrUVCpsipfb?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/BZVxZFLszFpKctqv?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}

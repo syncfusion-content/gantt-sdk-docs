@@ -106,7 +106,7 @@ The following sample renders a [ListView](https://blazor.syncfusion.com/document
 
 <div style="height: 100%; width: 100%">
     <div style="position: relative; border: 1px solid red; height: 100%; width: 100%; min-height: 450px; min-width: 800px">
-        <SfGantt @ref="Gantt" DataSource="@Orders" ShowColumnChooser="true" ProjectStartDate="new DateTime(2026, 4, 1)" ID="GanttChart" Width="1200px" Height="450px" HighlightWeekends="true" AllowReordering="true" TreeColumnIndex="1" GridLines="Syncfusion.Blazor.Gantt.GridLine.None">
+        <SfGantt @ref="Gantt" DataSource="@Orders" ShowColumnChooser="true" ProjectStartDate="@(new DateTime(2026, 4, 1))" ID="GanttChart" Width="1200px" Height="450px" HighlightWeekends="true" AllowReordering="true" TreeColumnIndex="1" GridLines="Syncfusion.Blazor.Gantt.GridLine.None">
             <GanttTaskFields Id="TaskID" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" ParentID="ParentID" Dependency="Predecessor"></GanttTaskFields>
             <GanttColumnChooserSettings>
                 <Template>
@@ -147,7 +147,7 @@ The following sample renders a [ListView](https://blazor.syncfusion.com/document
                         <span style="width:20px;height:20px;border-color:red" @onclick="(e) => OpenColumnChooser(e, nameof(TaskData.Progress))" class="e-icons e-plus-icon"></span>Progress
                     </HeaderTemplate>
                 </GanttColumn>
-                <GanttColumn Field=@nameof(TaskData.Predecessor) HeaderText="Predecessor" Format="d" Type="ColumnType.Date" TextAlign="TextAlign.Right" Width="130">
+                <GanttColumn Field=@nameof(TaskData.Predecessor) HeaderText="Predecessor" TextAlign="TextAlign.Right" Width="130">
                     <HeaderTemplate>
                         <span style="width:20px;height:20px;border-color:red" @onclick="(e) => OpenColumnChooser(e, nameof(TaskData.Predecessor))" class="e-icons e-plus-icon"></span>Predecessor
                     </HeaderTemplate>
@@ -361,22 +361,17 @@ The following sample renders a [ListView](https://blazor.syncfusion.com/document
             var fieldsToHide = allFields.Except(checkedFields).ToList();
 
             // Show checked columns
-            if (checkedFields.Any() && checkedFields != null)
+            if (checkedFields.Any())
             {
                 await CustomGantt.ShowColumnsAsync(checkedFields.ToArray(), "Field");
-                
             }
-            if (fieldsToHide != null && fieldsToHide.ToArray() != null && checkedFields.ToArray()!=null)
-        {
-                // Hide unchecked columns
-                if (fieldsToHide.Any())
-                {
-                    await CustomGantt.HideColumnsAsync(fieldsToHide.ToArray(), "Field");
-                }
+            if (fieldsToHide.Any())
+            {
+                await CustomGantt.HideColumnsAsync(fieldsToHide.ToArray(), "Field");
+            }
 
-                // Notify parent component
-                ActionCompleted?.Invoke(fieldsToHide.ToArray(), checkedFields.ToArray());
-            }
+            // Notify parent component
+            ActionCompleted?.Invoke(fieldsToHide.ToArray(), checkedFields.ToArray());
         }
         catch (Exception ex)
         {
@@ -423,7 +418,7 @@ public class TaskData
 
 ![Blazor Gantt Chart with custom column chooser using ListView for grouped columns](images/blazor-gantt-chart-custom-column-chooser.webp)
 
-## See also
+## See Also
 
 - [Accessibility in Blazor Gantt Chart](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/accessibility)
 - [Blazor Gantt Chart Feature Tour](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart)

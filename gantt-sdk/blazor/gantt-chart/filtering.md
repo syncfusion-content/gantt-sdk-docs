@@ -168,7 +168,7 @@ The Blazor Gantt Chart component supports multiple filtering modes, which can be
 
 To apply filtering during the initial render of the Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component, define the filter conditions using a collection of `PredicateModel` objects within the [GanttFilterSettings.Columns](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttFilterSettings.html#Syncfusion_Blazor_Gantt_GanttFilterSettings_Columns) property.
 
-The following sample demonstrates how to apply an initial filter where **TaskName** starts with **Identify** and **TaskID** equals **2**, using a `Predicate` condition set to **and**.
+The following sample demonstrates how to apply an initial filter where **TaskName** starts with **Identify** and **TaskId** equals **2**, using a `Predicate` condition set to **and**.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -188,7 +188,7 @@ The following sample demonstrates how to apply an initial filter where **TaskNam
     public List<PredicateModel> FilterColumns { get; set; } = new List<PredicateModel>
     {
         new PredicateModel() { Field = "TaskName", MatchCase = false, Operator = Operator.StartsWith, Predicate = "and", Value = "Identify" },
-        new PredicateModel() { Field = "TaskID", MatchCase = false, Operator = Operator.Equal, Predicate = "and", Value = 2 }
+        new PredicateModel() { Field = "TaskId", MatchCase = false, Operator = Operator.Equal, Predicate = "and", Value = 2 }
     };
 
     protected override void OnInitialized()
@@ -327,13 +327,12 @@ The example below demonstrates how to filter the **TaskName** and **TaskID** col
     public SfGantt<TaskData>? Gantt;
     public List<TaskData>? TaskCollection { get; set; }
 
-    public async void Filter()
-    {
-        if(Gantt!=null)
+public async Task Filter()
         {
-            await Gantt.FilterByColumnAsync("TaskName", "startswith", "Iden", "or", true, false);
-        }
-        
+            if (Gantt != null)
+            {
+                await Gantt.FilterByColumnAsync("TaskName", "startswith", "Iden", "or", true, false);
+            }
     }
 
     protected override void OnInitialized()

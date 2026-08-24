@@ -1481,9 +1481,9 @@ The events should be provided to the Gantt Chart using the GanttEvents component
         TaskCollection = GetTaskCollection();
     }
 
-    public void EndEdit(TaskbarEditedEventArgs<TaskData> args)
+    public void EndEdit(Syncfusion.Blazor.Grids.EndEditEventArgs<TaskData> args)
     {
-        // Here, you can get the error details in the args.
+        // Here, you can get the details of the edited cell.
     }
 
     public class TaskData
@@ -3051,7 +3051,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
     {
         TaskCollection = GetTaskCollection();
     }
-    private async void BeforeCopyHandler(Syncfusion.Blazor.Gantt.BeforeCopyEventArgs args)
+    private void BeforeCopyHandler(Syncfusion.Blazor.Gantt.BeforeCopyEventArgs args)
     {
         //Here, you can customize your code.
     }

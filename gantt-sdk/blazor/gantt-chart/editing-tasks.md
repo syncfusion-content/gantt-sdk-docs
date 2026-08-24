@@ -266,12 +266,12 @@ Restrict fields in the dialog’s General tab using [GanttAddDialogFields](https
     </GanttColumns>
     <GanttEditDialogFields>
         <GanttEditDialogField Type="GanttDialogFieldType.General" HeaderText="General"
-                              Fields="@(new string[]{ "TaskID", "TaskName", "Duration" })"></GanttEditDialogField>
+                              Fields="@(new string[]{ "TaskId", "TaskName", "Duration" })"></GanttEditDialogField>
         <GanttEditDialogField Type="GanttDialogFieldType.Notes"></GanttEditDialogField>
     </GanttEditDialogFields>
     <GanttAddDialogFields>
         <GanttAddDialogField Type="GanttDialogFieldType.General" HeaderText="General Tab"
-                             Fields="@(new string[]{ "TaskID", "TaskName", "Duration" })"></GanttAddDialogField>
+                             Fields="@(new string[]{ "TaskId", "TaskName", "Duration" })"></GanttAddDialogField>
         <GanttAddDialogField Type="GanttDialogFieldType.Dependency"></GanttAddDialogField>
     </GanttAddDialogFields>
 </SfGantt>
@@ -402,9 +402,12 @@ Update tasks programmatically using the [UpdateRecordByIDAsync](https://help.syn
 
 @code {
     public SfGantt<TaskData>? Gantt;
-    public void UpdateRecord()
+    public async Task UpdateRecord()
     {
-        Gantt?.UpdateRecordByIDAsync(new TaskData() { TaskId = 3, TaskName = "Updated by ID value", Progress = 60 });
+        if (Gantt != null)
+        {
+            await Gantt.UpdateRecordByIDAsync(new TaskData() { TaskId = 3, TaskName = "Updated by ID value", Progress = 60 });
+        }
     }
     public List<TaskData>? TaskCollection { get; set; }
     protected override void OnInitialized()
@@ -445,7 +448,7 @@ Update tasks programmatically using the [UpdateRecordByIDAsync](https://help.syn
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/rDrdZcBDrMapltlw?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## See also
+## See Also
 - [How to add new tasks?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/adding-new-tasks)
 - [How to manage task dependencies?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/task-dependencies)
 - [How to configure critical path?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/criticalpath)

@@ -12,9 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Work and Effort Tracking with Task Type Support in Blazor Gantt Chart
 
-## Work
-
-The work is the total hours required to complete a task. Work can be mapped from the data source field using the property [GanttTaskFields.Work](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_Work). Work can be measured in `Hour`, `Day`, `Minute`. By default, work is measured in `Hour` and it can be changed by using the property `WorkUnit`.
+Work is the total effort required to complete a task. Work can be mapped from a data source field using the property [GanttTaskFields.Work](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_Work). Work can be measured in `Hour`, `Day`, or `Minute`. By default, work is measured in `Hour`, and this can be changed using the `WorkUnit` property.
 
 N> When the work field is mapped from the data source, the default task type will be `FixedWork`.
 
@@ -42,7 +40,7 @@ N> When the work field is mapped from the data source, the default task type wil
     protected override void OnInitialized()
     {
         TaskCollection = GetTaskCollection();
-        ResourceCollection = GetResources;
+        ResourceCollection = GetResources();
         AssignmentCollection = GetAssignmentCollection();
     }
 
@@ -128,7 +126,7 @@ N> When the work field is mapped from the data source, the default task type wil
 
 ## Task type
 
-The work, duration and resource unit fields of a task depends upon each other and will change automatically on editing any one of these fields. But you can also set these field’s values as constant using the [TaskType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_TaskType) property. `FixedUnit` is the default `TaskType`. The following values can be set to the `TaskType` property.
+The work, duration, and resource unit fields of a task depend on one another and change automatically when any of these fields is edited. You can set one of these field values as constant using the [TaskType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_TaskType) property. `FixedWork` is used by default when the Work field is mapped; otherwise, `FixedUnit` is the default task type. The following values can be set for the `TaskType` property.
 
 * [FixedDuration](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.TaskType.html#Syncfusion_Blazor_Gantt_TaskType_FixedDuration) - Duration task field will remain constant while updating resource unit or work field.
 * [FixedWork](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.TaskType.html#Syncfusion_Blazor_Gantt_TaskType_FixedWork) - Work field will remain constant while updating resource unit or duration fields.
@@ -243,14 +241,14 @@ The work, duration and resource unit fields of a task depends upon each other an
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/BXrnZHrKrtkmBmLQ?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-The following table explains how the work, duration, and resource unit fields will get updated on changing any of the fields
+The following table explains how the work, duration, and resource unit fields are updated when any of these fields changes.
 
 Task Type | Changes in Duration | Changes in work | Changes in Resource Units
 -----|-----|-----|-----
-Fixed Duration | Updates work value | Updates Resource unit | Updates work value
-Fixed Work | Updates Resource unit. Note: For manually scheduled task work will be updated.| Updates Duration value. Note: For manually scheduled task resource unit updates. | Updates Duration value. Note: For manually scheduled task work field updates.
-Fixed Unit | Updates work value | Updates Duration value. Note: For manually scheduled task resource unit updates.| Updates Duration value. Note: For manually scheduled task work field updates.
+Fixed Duration | Updates the work value | Updates the resource units | Updates the work value
+Fixed Work | Updates the resource units. For manually scheduled tasks, the work is updated. | Updates the duration. For manually scheduled tasks, the resource units are updated. | Updates the duration. For manually scheduled tasks, the work is updated.
+Fixed Unit | Updates the work value | Updates the duration. For manually scheduled tasks, the resource units are updated. | Updates the duration. For manually scheduled tasks, the work is updated.
 
-N> Fixed Unit is the default TaskType in Gantt. The above calculations are not applicable for Milestones.
+N> `FixedUnit` is the default task type when the Work field is not mapped. The calculations above do not apply to milestones.
 
 You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=fluent2) to know how to render and configure the Gantt.

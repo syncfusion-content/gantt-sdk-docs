@@ -301,7 +301,7 @@ The following sample demonstrates how to cancel sorting on the **TaskID** column
     
     public void SortingHandler(SortingEventArgs args)
     {
-        if (args.ColumnName == "TaskID")
+        if (args.ColumnName == "TaskId")
         {
             args.Cancel = true;
             SortMessage = $"Sorting on '{args.ColumnName}' is disabled.";

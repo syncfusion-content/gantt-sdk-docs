@@ -613,7 +613,7 @@ To customize column widths in the exported PDF document, set the [Width](https:/
             GanttPdfExportProperties exportProperties = new GanttPdfExportProperties();
             exportProperties.Columns = new List<GanttColumn>()
             {
-                new GanttColumn(){ Field = "TaskID", HeaderText = "Task Id", Width = "200" },
+                new GanttColumn(){ Field = "TaskId", HeaderText = "Task Id", Width = "200" },
                 new GanttColumn(){ Field = "TaskName", HeaderText = "Task Name", Width = "250"},
                 new GanttColumn(){ Field = "StartDate", HeaderText = "Start Date", Width = "150"},
             };
@@ -701,7 +701,7 @@ The following code snippet demonstrates how to configure the `Columns` property 
             GanttPdfExportProperties exportProperties = new GanttPdfExportProperties();
             exportProperties.Columns = new List<GanttColumn>()
             {
-                new GanttColumn(){ Field = "TaskID", HeaderText = "Task Id", Width = "100" },
+                new GanttColumn(){ Field = "TaskId", HeaderText = "Task Id", Width = "100" },
                 new GanttColumn(){ Field = "TaskName", HeaderText = "Task Name", Width = "200"},
                 new GanttColumn(){ Field = "StartDate", HeaderText = "Start Date", Width = "150"},
             };
@@ -791,7 +791,7 @@ The following code demonstrates how to use the `PdfExporting` event to export sp
     {
         args.Columns = new List<GanttColumn>()
             {
-                new GanttColumn(){ Field = "TaskID", HeaderText = "Task Id", Width = "100" },
+                new GanttColumn(){ Field = "TaskId", HeaderText = "Task Id", Width = "100" },
                 new GanttColumn(){ Field = "TaskName", HeaderText = "Task Name", Width = "200"},
                 new GanttColumn(){ Field = "StartDate", HeaderText = "Start Date", Width = "150"},
             };
@@ -1257,7 +1257,7 @@ In the following sample, task label template with images and text are exported t
 @using System.IO
 
 <SfGantt @ref="Gantt" ID="GanttExport" DataSource="@TaskCollection" Height="450px" Width="900px" AllowPdfExport="true" Toolbar="toolbarItem"
-         ProjectStartDate="new DateTime(2026,04,03)" ProjectEndDate="new DateTime(2026,05,17)">
+         ProjectStartDate="@(new DateTime(2026,04,03))" ProjectEndDate="@(new DateTime(2026,05,17))">
     <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Dependency="Predecessor"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
     </GanttTaskFields>

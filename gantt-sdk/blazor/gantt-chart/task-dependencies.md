@@ -453,7 +453,7 @@ If you encounter issues with task dependencies, consider the following solutions
 
 Task Dependencies in the Blazor Gantt Chart component provide a powerful tool for visualizing and managing project workflows. By effectively utilizing this feature, you can create more accurate project timelines, identify potential bottlenecks, and ensure smoother project execution.
 
-## See also
+## See Also
 
 For more advanced topics related to task dependencies and project management in the Blazor Gantt Chart, refer to the following resources:
 

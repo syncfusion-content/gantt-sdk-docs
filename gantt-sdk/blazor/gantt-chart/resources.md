@@ -1189,6 +1189,6 @@ namespace BlazorGanttChart.Data
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/rDBdDHsvoIeuDhpp?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## See also
+## See Also
 
 * [CRUD operations on tasks](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/managing-tasks)

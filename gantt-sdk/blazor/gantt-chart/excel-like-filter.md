@@ -21,8 +21,6 @@ To enable this feature, configure [GanttFilterSettings.FilterType](https://help.
 
 @using Syncfusion.Blazor.Gantt
 
-@using Syncfusion.Blazor.Gantt
-
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="900px" AllowFiltering="true">
     <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
     </GanttTaskFields>

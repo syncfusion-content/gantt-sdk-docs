@@ -537,6 +537,6 @@ namespace ColumnValidationComponents
 {% endhighlight %}
 {% endtabs %}
 
-## See also
+## See Also
 - [How to define columns manually in Blazor Gantt Chart?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/columns#defining-columns)
 - [How to use column templates in Blazor Gantt Chart?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/column-template)

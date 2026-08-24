@@ -18,8 +18,8 @@ The following keyboard shortcut is supported for clipboard operations:
 
 Interaction keys |Description
 -----|-----
-<kbd>Ctrl + C</kbd> |Copy selected rows or cells data into clipboard.
-<kbd>Ctrl + Shift + H</kbd> |Copy selected rows or cells data with header into clipboard.
+<kbd>Ctrl</kbd> + <kbd>C</kbd> |Copy selected rows or cells data into clipboard.
+<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>H</kbd> |Copy selected rows or cells data with header into clipboard.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -285,7 +285,7 @@ The Gantt Chart component supports multiple copy modes using the [CopyHierarchyM
 
 ## Paste
 
-You can copy the content of a row or cell by selecting it and pressing the <kbd>Ctrl + C</kbd> shortcut key. To paste the copied data, press <kbd>Ctrl + V</kbd>.
+You can copy the content of a row or cell by selecting it and pressing the <kbd>Ctrl</kbd> + <kbd>C</kbd> shortcut key. To paste the copied data, press <kbd>Ctrl</kbd> + <kbd>V</kbd>.
 
 **Selected row copy and paste:**
 
@@ -317,20 +317,19 @@ You can use the [RowSelected](https://help.syncfusion.com/gantt-sdk/blazor/gantt
     {
         SelectedIndex = -1;
     }
-    private async void BeforeCopyHandler(Syncfusion.Blazor.Gantt.BeforeCopyEventArgs args)
+    private async Task BeforeCopyHandler(Syncfusion.Blazor.Gantt.BeforeCopyEventArgs args)
     {
         if(Gantt!=null)
         {
-            var columns = Gantt.GetColumnsAsync().Result;
+            var columns = await Gantt.GetColumnsAsync();
             var clip = args.ClipboardText;
-            if (clip != "" || clip != null)
+            if (!string.IsNullOrEmpty(clip))
             {
-                var record = clip.Split("
-");
+                var record = clip.Split("\n");
                 int index = 0;
                 foreach (var rec in record)
                 {
-                    var colVal = rec.Split("\t");
+                    var colVal = rec.Split('\t');
                     int colIndex = 0;
                     if (TaskCollection != null)
                     {
@@ -412,17 +411,13 @@ You can use the [RowSelected](https://help.syncfusion.com/gantt-sdk/blazor/gantt
     public static List<TaskData> GetTaskCollection()
     {
         List<TaskData> Tasks = new List<TaskData>() {
-            new TaskData() { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2026, 04, 06), EndDate = new
-            DateTime(2026, 04, 08) },
+            new TaskData() { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2026, 04, 06), EndDate = new DateTime(2026, 04, 08) },
             new TaskData() { TaskId = 2, TaskName = "Identify Site location", StartDate = new DateTime(2026, 04, 06), Duration =
             "0", Progress = 30, ParentId = 1 },
-            new TaskData() { TaskId = 3, TaskName = "Perform soil test", StartDate = new DateTime(2026, 04, 06), EndDate = new
-            DateTime(2026, 04, 09),
-            Progress = 40, ParentId = 1 },
+            new TaskData() { TaskId = 3, TaskName = "Perform soil test", StartDate = new DateTime(2026, 04, 06), EndDate = new DateTime(2026, 04, 09), Progress = 40, ParentId = 1 },
             new TaskData() { TaskId = 4, TaskName = "Soil test approval", StartDate = new DateTime(2026, 04, 06), Duration = "0",
             Progress = 30, ParentId = 1 },
-            new TaskData() { TaskId = 5, TaskName = "Project estimation", StartDate = new DateTime(2026, 04, 07), EndDate = new
-            DateTime(2026, 04, 09) },
+            new TaskData() { TaskId = 5, TaskName = "Project estimation", StartDate = new DateTime(2026, 04, 07), EndDate = new DateTime(2026, 04, 09) },
             new TaskData() { TaskId = 6, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2026, 04, 07),
             EndDate = new DateTime(2026, 04, 10), Progress = 30, ParentId = 5 },
             new TaskData() { TaskId = 7, TaskName = "List materials", StartDate = new DateTime(2026, 04, 07), EndDate = new DateTime(2026, 04, 10),
@@ -491,10 +486,10 @@ You can use the [CellSelected](https://help.syncfusion.com/gantt-sdk/blazor/gant
         {
             if (Gantt != null)
             {
-                var columns = Gantt.GetColumnsAsync().Result;
+                var columns = await Gantt.GetColumnsAsync();
 
                 var currentRecords = Gantt.GetCurrentViewRecords();
-                IDictionary<double, List<double>> clonedRecords = new Dictionary<double, List<double>>(); ;
+                IDictionary<double, List<double>> clonedRecords = new Dictionary<double, List<double>>();
                 for (int i = 0; i < clonedRecordIndex.Count; i++)
                 {
                     if (!clonedRecords.ContainsKey(clonedRecordIndex[i].Item1))
@@ -526,11 +521,11 @@ You can use the [CellSelected](https://help.syncfusion.com/gantt-sdk/blazor/gant
                                 updatedRec?.GetType()?.GetProperty(col.Field)?.SetValue(updatedRec, clonedValue);
                             }
                         }
-                        if (updatedRec != null)
+                        if (updatedRec != null && Gantt != null)
                         {
-                            Gantt?.UpdateRecordByIDAsync(updatedRec);
+                            await Gantt.UpdateRecordByIDAsync(updatedRec);
                         }
-                        
+
                     }
                 }
             }
@@ -551,20 +546,17 @@ You can use the [CellSelected](https://help.syncfusion.com/gantt-sdk/blazor/gant
     public static List<TaskData> GetTaskCollection()
     {
         List<TaskData> Tasks = new List<TaskData>() {
-            new TaskData() { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2026, 04, 05), EndDate = new
-            DateTime(2026, 04, 08) },
+            new TaskData() { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2026, 04, 05), EndDate = new DateTime(2026, 04, 08) },
             new TaskData() { TaskId = 2, TaskName = "Identify Site location", StartDate = new DateTime(2026, 04, 05), Duration =
             "0", Progress = 30, ParentId = 1 },
             new TaskData() { TaskId = 3, TaskName = "Perform soil test", StartDate = new DateTime(2026, 04, 05), EndDate = new DateTime(2026, 04, 09),
             Progress = 40, ParentId = 1 },
             new TaskData() { TaskId = 4, TaskName = "Soil test approval", StartDate = new DateTime(2026, 04, 05), Duration = "0",
             Progress = 30, ParentId = 1 },
-            new TaskData() { TaskId = 5, TaskName = "Project estimation", StartDate = new DateTime(2026, 04, 06), EndDate = new
-            DateTime(2026, 04, 08) },
+            new TaskData() { TaskId = 5, TaskName = "Project estimation", StartDate = new DateTime(2026, 04, 06), EndDate = new DateTime(2026, 04, 08) },
             new TaskData() { TaskId = 6, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2026, 04, 06),
             EndDate = new DateTime(2026, 04, 08), Progress = 30, ParentId = 5 },
-            new TaskData() { TaskId = 7, TaskName = "List materials", StartDate = new DateTime(2026, 04, 06), EndDate = new
-            DateTime(2026, 04, 08),Progress = 40, ParentId = 5 },
+            new TaskData() { TaskId = 7, TaskName = "List materials", StartDate = new DateTime(2026, 04, 06), EndDate = new DateTime(2026, 04, 08), Progress = 40, ParentId = 5 },
             new TaskData() { TaskId = 8, TaskName = "Estimation approval", StartDate = new DateTime(2026, 04, 06), Duration = "0",
             Progress = 30, ParentId = 5 }
         };
@@ -619,16 +611,17 @@ This customization enables users to quickly update multiple cells, improving dat
 
     private string? ColumnField { get; set; }
 
-    private void CellSelectedHandler(CellSelectEventArgs<TaskData> args)
+    private async Task CellSelectedHandler(CellSelectEventArgs<TaskData> args)
     {
-        if (Value == null)
+        if (Value == null && Gantt != null)
         {
-            ColumnField = Gantt?.GetColumnsAsync().Result[Convert.ToInt32(args.CellIndex)].Field;
+            var columns = await Gantt.GetColumnsAsync();
+            ColumnField = columns[Convert.ToInt32(args.CellIndex)].Field;
             if (ColumnField != null)
             {
                 Value = args?.Data?.GetType()?.GetProperty(ColumnField)?.GetValue(args.Data);
             }
-            
+
         }
     }
 

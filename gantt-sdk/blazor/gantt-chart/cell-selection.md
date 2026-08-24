@@ -127,7 +127,7 @@ Multiple cell selection in the Gantt Chart is enabled by setting [GanttSelection
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/VZLntQicTQXDLumT?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
   
-> **Note**: Multiple cell selection requires <kbd>Ctrl</kbd> + click on Windows or <kbd>Cmd</kbd> + click on Mac. Ensure selections are visible on smaller screens for mobile responsiveness.
+> **Note**: Multiple cell selection requires holding <kbd>Ctrl</kbd> (or <kbd>Cmd</kbd> on Mac) while clicking individual cells. Hold <kbd>Shift</kbd> while clicking to select a range of adjacent cells. Both individual and range selections are preserved together.
 
 ## Single cell selection dynamically
 
@@ -302,7 +302,7 @@ The following sample demonstrates selection is canceled in the `cellSelecting` e
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/rNhHtwiwTcDcIOUp?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-> **Note**: Use `CellSelecting` to restrict selections based on task properties. Log selected cell details with `CellSelected` for custom actions. Ensure selections are accessible via keyboard (e.g., <kbd>Shift</kbd> + arrow keys for range selection).
+> **Note**: Use `CellSelecting` to restrict selections based on task properties. Use `CellSelected` to retrieve the selected cell details for custom actions. For keyboard range selection, focus a cell and use <kbd>Shift</kbd> + arrow keys to extend the selection.
 
 ## See Also
 

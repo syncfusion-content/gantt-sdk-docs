@@ -64,7 +64,7 @@ Gantt_CustomTab | Benutzerdefinierte Spalten
 Gantt_WriteNotes | Notizen schreiben
 Gantt_AddDialogTitle | Neue Aufgabe
 Gantt_EditDialogTitle | Aufgabeninformationen
-Gantt_SaveButton | speichern
+Gantt_SaveButton | Speichern
 Gantt_Add | Hinzufügen
 Gantt_Edit | Bearbeiten
 Gantt_Update | Aktualisieren
@@ -156,7 +156,7 @@ builder.Services.AddSingleton(typeof(ISyncfusionStringLocalizer), typeof(SampleL
 N> Add [UseRequestLocalization()](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-7.0#localization-middleware) middle-ware in Configure method in **Program.cs** file to get browser Culture Information.
 
 
-* Then, write a **class** by inheriting **ISyncfusionStringLocalizer** interface and override the Manager property to get the resource file details from the application end.
+* Then, write a **class** by inheriting the **ISyncfusionStringLocalizer** interface and override the ResourceManager property to get the resource file details from the application end.
 
 ```csharp
 using Syncfusion.Blazor;
@@ -238,7 +238,7 @@ N> BlazorServer denotes the ApplicationNameSpace of your project.
 }
 ```
 
-### Blazor webAssembly
+### Blazor WebAssembly
 
 The following examples demonstrate how to enable **Localization** for Gantt in client-side Blazor samples.
 
@@ -274,7 +274,7 @@ namespace ClientApplication
 }
 ```
 
-* Then, create a **~/Shared/SyncfusionLocalizer.cs** file and implement **ISyncfusionStringLocalizer** interface to the class and override the ResourceManager property to get the resource file details from the application end.
+* Then, create a **~/Shared/SyncfusionLocalizer.cs** file, implement the **ISyncfusionStringLocalizer** interface on the class, and override the ResourceManager property to get the resource file details from the application end.
 
 ```csharp
 using Syncfusion.Blazor;
@@ -302,7 +302,7 @@ public class SyncfusionLocalizer : ISyncfusionStringLocalizer
 
 N> ClientApplication denotes the ApplicationNameSpace of your project.
 
-* Now, Specify the culture for Gantt using `Locale` property.
+* Now, specify the culture for Gantt using the `Locale` property.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -420,6 +420,6 @@ You can enable right-to-left layout and text direction in the Gantt component us
 
 N> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=fluent2) to know how to render and configure the gantt.
 
-## See also
+## See Also
 
 * [How to enable RTL based on Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor service?](https://blazor.syncfusion.com/documentation/common/right-to-left#enable-rtl-for-all-components)

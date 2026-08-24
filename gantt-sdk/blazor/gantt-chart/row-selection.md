@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Row Selection in Blazor Gantt Chart | Syncfusion
 description: Learn how to configure row selection in Syncfusion Blazor Gantt Chart with single, multiple, and checkbox-based selection modes for task rows.
@@ -22,6 +22,8 @@ You can enable single row selection in the Gantt Chart component by setting [Sel
 {% highlight razor tabtitle="Home.razor" %}
 
 @using Syncfusion.Blazor.Gantt
+
+@using Syncfusion.Blazor.Grids
 
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="700px" AllowSelection="true">
     <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
@@ -81,6 +83,8 @@ You can enable multiple row selection in the Gantt Chart component by setting  [
 {% highlight razor tabtitle="Home.razor" %}
 
 @using Syncfusion.Blazor.Gantt
+
+@using Syncfusion.Blazor.Grids
 
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="700px" AllowSelection="true">
     <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
@@ -351,8 +355,8 @@ Select multiple rows in the Gantt Chart component by using the [SelectRowsAsync]
 
 To access selected row details in the Blazor Gantt Chart component:
 
-- [GetSelectedRowIndexesAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_GetSelectedRowIndexesAsync) – Returns an array of index positions of the selected rows.
-- [GetSelectedRecordsAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_GetSelectedRecordsAsync) – Returns an array of data objects corresponding to the selected rows.
+- [GetSelectedRowIndexesAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_GetSelectedRowIndexesAsync) â€“ Returns an array of index positions of the selected rows.
+- [GetSelectedRecordsAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_GetSelectedRecordsAsync) â€“ Returns an array of data objects corresponding to the selected rows.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}

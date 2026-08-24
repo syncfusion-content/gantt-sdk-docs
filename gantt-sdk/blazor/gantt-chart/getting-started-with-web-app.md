@@ -269,7 +269,7 @@ dotnet run
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/LDhdjcrXJjgihVLC?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## See also
+## See Also
 
 1. [Getting Started with Blazor Server App](https://blazor.syncfusion.com/documentation/getting-started/blazor-server-side-visual-studio)
 2. [Getting Started with Blazor WebAssembly App](https://blazor.syncfusion.com/documentation/getting-started/blazor-webassembly-app)

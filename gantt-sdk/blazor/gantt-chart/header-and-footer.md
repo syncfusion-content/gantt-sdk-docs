@@ -229,6 +229,6 @@ These options provide flexibility for adding separators or visual structure to t
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/hZLnZmVXrwFkDRny?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## See also
+## See Also
 - [How to export to PDF?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/pdf-export)
 - [How to manage task dependencies?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/task-dependencies)

@@ -1095,7 +1095,7 @@ namespace BlazorGanttChart.Data
 * Editing of resource records(parent record) is not supported in the resource view of the Gantt Chart.
 * CRUD operations are not supported when the [TaskMode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_TaskMode) is set to [Manual](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.ScheduleMode.html#Syncfusion_Blazor_Gantt_ScheduleMode_Manual) or [Custom](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.ScheduleMode.html#Syncfusion_Blazor_Gantt_ScheduleMode_Custom) in the resource view.
 
-## See also
+## See Also
 
 * [Resource Unit](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/resources#resource-unit)
 * [Configure task duration using Work](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/work)

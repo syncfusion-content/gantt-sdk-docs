@@ -555,7 +555,7 @@ The following code example shows how to customize the top tier to display the we
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/rNVnDnrBCGeegJHh?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## See also
+## See Also
 - [How to configure taskbars?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/taskbar)
 - [How to zoom the timeline?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/zooming)
 - [How to configure non-working days?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/scheduling-tasks#weekend-or-non-working-days)

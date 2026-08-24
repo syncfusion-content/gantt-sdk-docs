@@ -22,18 +22,19 @@ You can trigger export operations using the [ExportToExcelAsync](https://help.sy
 {% highlight razor tabtitle="Home.razor" %}
 
 @using Syncfusion.Blazor.Gantt
+@using Syncfusion.Blazor.Navigations
+@using Syncfusion.Blazor.Grids
 
-<SfGantt DataSource="@TaskCollection" Height="450px" Width="900px"
-         EnableUndoRedo="true"
-         UndoRedoActions="@(new List<GanttUndoRedoAction>{ GanttUndoRedoAction.Edit, GanttUndoRedoAction.Add, GanttUndoRedoAction.Delete })">
+<SfGantt ID="GanttContainer" @ref="Gantt" AllowExcelExport="true" Toolbar="@(new List<string>() { "ExcelExport", "CsvExport" })"
+         DataSource="@TaskCollection" Height="450px" Width="900px">
     <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
     </GanttTaskFields>
-    <GanttEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" AllowTaskbarEditing="true"></GanttEditSettings>
-    <GanttEvents TValue="TaskData" OnUndoRedo="UndoRedoHandler"></GanttEvents>
+    <GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
 </SfGantt>
 
 @code {
+    public SfGantt<TaskData>? Gantt;
     public List<TaskData>? TaskCollection { get; set; }
 
     protected override void OnInitialized()
@@ -41,19 +42,23 @@ You can trigger export operations using the [ExportToExcelAsync](https://help.sy
         TaskCollection = GetTaskCollection();
     }
 
-    private void UndoRedoHandler(GanttUndoRedoEventArgs<TaskData> args)
+    private async Task ToolbarClickHandler(ClickEventArgs args)
     {
-        // args.IsRedo indicates redo (true) or undo (false)
-        // args.Action indicates the action type (e.g., Edit, Add, Delete, Sort)
-        // args.ModifiedRecords contains modified records, if any
-        // args.DeletedRecords contains deleted records, if any
-        // args.AddRecord contains the added record, if present
+        if (Gantt == null) return;
+        if (args.Item.Id == "GanttContainer_excelexport")
+        {
+            await Gantt.ExportToExcelAsync();
+        }
+        else if (args.Item.Id == "GanttContainer_csvexport")
+        {
+            await Gantt.ExportToCsvAsync();
+        }
     }
 
     public class TaskData
     {
         public int TaskId { get; set; }
-        public string TaskName { get; set; } = string.Empty;
+        public string? TaskName { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime? EndDate { get; set; }
         public string? Duration { get; set; }
@@ -65,12 +70,12 @@ You can trigger export operations using the [ExportToExcelAsync](https://help.sy
     {
         return new List<TaskData>()
         {
-            new TaskData() { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2026, 04, 06), EndDate = new DateTime(2026, 04, 09), },
-            new TaskData() { TaskId = 2, TaskName = "Identify Site location", StartDate = new DateTime(2026, 04, 06), Duration = "0", Progress = 30,  ParentId = 1 },
+            new TaskData() { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2026, 04, 06), EndDate = new DateTime(2026, 04, 09) },
+            new TaskData() { TaskId = 2, TaskName = "Identify Site location", StartDate = new DateTime(2026, 04, 06), Duration = "0", Progress = 30, ParentId = 1 },
             new TaskData() { TaskId = 3, TaskName = "Perform soil test", StartDate = new DateTime(2026, 04, 06), EndDate = new DateTime(2026, 04, 09), ParentId = 1 },
             new TaskData() { TaskId = 4, TaskName = "Soil test approval", StartDate = new DateTime(2026, 04, 06), Duration = "0", Progress = 30, ParentId = 1 },
-            new TaskData() { TaskId = 5, TaskName = "Project estimation", StartDate = new DateTime(2026, 04, 13), EndDate = new DateTime(2026, 04, 21), },
-            new TaskData() { TaskId = 6, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2026, 04, 07), EndDate = new DateTime(2026, 04, 09), Progress = 30,ParentId = 5 },
+            new TaskData() { TaskId = 5, TaskName = "Project estimation", StartDate = new DateTime(2026, 04, 13), EndDate = new DateTime(2026, 04, 21) },
+            new TaskData() { TaskId = 6, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2026, 04, 07), EndDate = new DateTime(2026, 04, 09), Progress = 30, ParentId = 5 },
             new TaskData() { TaskId = 7, TaskName = "List materials", StartDate = new DateTime(2026, 04, 07), EndDate = new DateTime(2026, 04, 09), ParentId = 5 },
             new TaskData() { TaskId = 8, TaskName = "Estimation approval", StartDate = new DateTime(2026, 04, 07), Duration = "0", ParentId = 5 }
         };

@@ -699,6 +699,6 @@ Customizing the indicator tooltip in a Gantt Chart using [GanttTooltipSettings.I
 
 
 
-## See also
+## See Also
 
 * [Customizing the Blazor Gantt Chart’s Taskbar](https://www.syncfusion.com/blogs/post/customizing-the-blazor-gantt-charts-taskbar-an-overview)

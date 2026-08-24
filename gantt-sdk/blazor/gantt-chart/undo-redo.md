@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Undo and Redo in Blazor Gantt Chart | Syncfusion
 description: Learn how to configure undo and redo in Syncfusion Blazor Gantt Chart to revert task edits, dependency changes, and project modifications with action history.
@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Undo and Redo with Action History Management in Blazor Gantt Chart
 
-The Syncfusion® Blazor Gantt Chart component includes built-in undo and redo functionality to revert or restore recent changes. This support improves editing efficiency, reduces errors, and supports quick recovery from accidental modifications.
+The SyncfusionÂ® Blazor Gantt Chart component includes built-in undo and redo functionality to revert or restore recent changes. This support improves editing efficiency, reduces errors, and supports quick recovery from accidental modifications.
 
 ## Enable undo and redo
 
@@ -22,6 +22,8 @@ The **Undo** in the Blazor Gantt Chart reverts the most recent action, such as m
 {% highlight razor tabtitle="Home.razor" %}
 
 @using Syncfusion.Blazor.Gantt
+@using Syncfusion.Blazor.Grids
+
 <SfGantt DataSource="@TaskCollection" Height="500px" Width="100%" HighlightWeekends="true" EnableUndoRedo="true" UndoRedoActions="@undoRedoActions"
          Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Undo", "Redo", "ZoomIn", "ZoomOut", "ZoomToFit", "PrevTimeSpan", "NextTimeSpan" })"
          TreeColumnIndex="1" EnableContextMenu="true" AllowSorting="true" ShowColumnMenu="true" AllowResizing="true" AllowReordering="true" AllowFiltering="true">
@@ -124,6 +126,8 @@ The following table lists the built-in actions that can be included for undo and
 {% highlight razor tabtitle="Home.razor" %}
 
 @using Syncfusion.Blazor.Gantt
+@using Syncfusion.Blazor.Grids
+
 <SfGantt DataSource="@TaskCollection" Height="500px" Width="100%" HighlightWeekends="true" EnableUndoRedo="true" UndoRedoActions="@undoRedoActions"
          Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Undo", "Redo", "ZoomIn", "ZoomOut", "ZoomToFit", "PrevTimeSpan", "NextTimeSpan" })"
          TreeColumnIndex="1" EnableContextMenu="true" AllowFiltering="true">
@@ -188,7 +192,7 @@ The following table lists the built-in actions that can be included for undo and
 
 ## Configure undo redo step count
 
-The Syncfusion® Blazor Gantt Chart component provides an option to limit the number of undo and redo actions stored in the history. The number of stored history entries can be controlled using the [MaxUndoRedoSteps](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_MaxUndoRedoSteps) property. The default capacity is `20`. When the count exceeds this value, the oldest entry is discarded and the newest action is appended, ensuring consistent memory usage.
+The SyncfusionÂ® Blazor Gantt Chart component provides an option to limit the number of undo and redo actions stored in the history. The number of stored history entries can be controlled using the [MaxUndoRedoSteps](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_MaxUndoRedoSteps) property. The default capacity is `20`. When the count exceeds this value, the oldest entry is discarded and the newest action is appended, ensuring consistent memory usage.
 
 The following example illustrates how to configure the maximum number of undo and redo steps.
 
@@ -196,6 +200,8 @@ The following example illustrates how to configure the maximum number of undo an
 {% highlight razor tabtitle="Home.razor" %}
 
 @using Syncfusion.Blazor.Gantt
+@using Syncfusion.Blazor.Grids
+
 <SfGantt DataSource="@TaskCollection" Height="500px" Width="100%" HighlightWeekends="true" EnableUndoRedo="true" UndoRedoActions="@undoRedoActions"
          Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Undo", "Redo", "ZoomIn", "ZoomOut", "ZoomToFit", "PrevTimeSpan", "NextTimeSpan" })"
          TreeColumnIndex="1" EnableContextMenu="true" AllowFiltering="true" MaxUndoRedoSteps="5">
@@ -268,8 +274,7 @@ In the following example, clicking an external button invokes the `UndoAsync` me
 {% highlight razor tabtitle="Home.razor" %}
 
 @using Syncfusion.Blazor.Gantt
-@using Syncfusion.Blazor.Buttons
-
+@using Syncfusion.Blazor.Grids
 <SfButton OnClick="@UndoHandler">Undo</SfButton>
 <SfButton OnClick="@RedoHandler">Redo</SfButton>
 <SfGantt @ref="Gantt" DataSource="@TaskCollection" Height="500px" Width="100%" HighlightWeekends="true" EnableUndoRedo="true" UndoRedoActions="@undoRedoActions"

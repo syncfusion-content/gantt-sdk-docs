@@ -70,10 +70,10 @@ To enable column reordering, set the [AllowReordering](https://help.syncfusion.c
 
 ## Reorder columns programmatically
 
-You can reorder columns programmatically in the Gantt Chart component using the [ReorderColumnsAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ReorderColumnsAsync_System_Collections_Generic_List_System_String__System_String_) method.  This method reorders one or more columns by specifying the source column(s) and the target column using their field names:  
+You can reorder columns programmatically in the Gantt Chart component using the [ReorderColumnsAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ReorderColumnsAsync_System_Collections_Generic_List_System_String__System_String_) method. This method reorders one or more columns by specifying the source column(s) and the target column using their field names:
 
-- **fromFName**: The field name of the column to move.  
-- **toFName**: The field name of the target column position.
+- **fromFName**: The field name(s) of the column(s) to move. Pass a list when reordering multiple columns.
+- **toFName**: The field name of the target column position. The moved column(s) are placed relative to this column.
 
 The following demonstrates how to reorder columns by placing **Progress** before **Duration**, or moving **TaskName** and **StartDate** to the position of **Duration**.
 
@@ -145,7 +145,7 @@ The following demonstrates how to reorder columns by placing **Progress** before
         public int TaskId { get; set; }
         public string? TaskName { get; set; }
         public DateTime StartDate { get; set; }
-        public DateTime EndDate { get; set; }
+        public DateTime? EndDate { get; set; }
         public string? Duration { get; set; }
         public int Progress { get; set; }
         public int? ParentId { get; set; }

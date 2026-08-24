@@ -19,7 +19,7 @@ By default, Gantt task date values are validated based on predecessor values. Yo
 
 @using Syncfusion.Blazor.Gantt
 
-<SfGantt @ref="Gantt" DataSource="@TaskCollection" Height="450px" Width="1000px" ProjectStartDate="ProjectStart" ProjectEndDate="ProjectEnd"
+<SfGantt @ref="Gantt" DataSource="@TaskCollection" Height="450px" Width="1000px" ProjectStartDate="@ProjectStart" ProjectEndDate="@ProjectEnd"
          Toolbar="@(new List<string>() { "Add", "Edit", "Update", "Cancel"})" EnablePredecessorValidation="false">
     <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate"
                      Duration="Duration" Dependency="Predecessor" ParentID="ParentId"></GanttTaskFields>
@@ -156,7 +156,7 @@ The taskbar can be moved above the specified predecessor offset value, but if it
 
 @using Syncfusion.Blazor.Gantt
 
-<SfGantt DataSource="@TaskCollection" Height="450px" Width="1000px" ProjectStartDate="ProjectStart" ProjectEndDate="ProjectEnd"
+<SfGantt DataSource="@TaskCollection" Height="450px" Width="1000px" ProjectStartDate="@ProjectStart" ProjectEndDate="@ProjectEnd"
          Toolbar="@(new List<string>() { "Add", "Edit", "Update", "Cancel" })" AutoUpdatePredecessorOffset="false">
     <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate"
                      Duration="Duration" Dependency="Predecessor" ParentID="ParentId"></GanttTaskFields>

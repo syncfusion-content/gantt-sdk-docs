@@ -98,7 +98,7 @@ You can make the Gantt Chart component responsive by setting its [Height](https:
 
 @using Syncfusion.Blazor.Gantt
 
-<div Height="600px" class="gantt">
+<div style="height:600px" class="gantt">
     <SfGantt DataSource="@TaskCollection" Toolbar="@(new List<string>() { "Add" })" Height="100%" Width="100%">
         <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
         </GanttTaskFields>
@@ -170,7 +170,7 @@ You can enable automatic scrolling to the corresponding taskbar in the timeline 
     </SfCheckBox>
 </div>
 
-<SfGantt TItem="TaskData" TKey="int" DataSource="TaskCollection" Height="450px" Width="700px" ScrollToTaskbarOnClick="AutoFocusTasks">
+<SfGantt TItem="TaskData" TKey="int" DataSource="@TaskCollection" Height="450px" Width="700px" ScrollToTaskbarOnClick="AutoFocusTasks">
     <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
     </GanttTaskFields>
 </SfGantt>

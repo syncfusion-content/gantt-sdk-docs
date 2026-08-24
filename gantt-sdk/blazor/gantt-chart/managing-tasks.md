@@ -71,8 +71,6 @@ Editing feature requires a primary key column for CRUD operations. When defining
 
 The [GanttColumn.EditType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_EditType) is used to define the edit type for any particular column. You can set the `GanttColumn.EditType` based on data type of the column.
 
-Below is the combined content from the provided markdown sections in bullet points, as requested, ensuring clarity and conciseness while preserving the original information:
-
 - **Cell edit types and components**:
   - **numericedit**: Uses the [NumericTextBox](https://blazor.syncfusion.com/documentation/numeric-textbox/getting-started) component for editing integers, doubles, and decimals.
   - **defaultedit**: Uses the [TextBox](https://blazor.syncfusion.com/documentation/textbox/getting-started) component for editing string data.
@@ -486,7 +484,7 @@ The taskbar editing tooltip can be customized using the [GanttTooltipSettings.Ed
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/VZhdNGBjKXJOOTyr?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## See also
+## See Also
 - [How to add new tasks?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/adding-new-tasks)
 - [How to delete tasks?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/deleting-tasks)
 - [How to manage task dependencies?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/task-dependencies)

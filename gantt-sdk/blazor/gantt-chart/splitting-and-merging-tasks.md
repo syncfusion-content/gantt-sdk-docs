@@ -763,7 +763,7 @@ In the code snippet below, the segments are customized based on template context
 2. The task must have a width greater than the timeline unit cell in order to be split.
 3. Split task is not supported with `Multi taskbar`.
 
-## See also
+## See Also
 - [How to bind data in Gantt?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/data-binding)
 - [How to configure task editing?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/editing-tasks)
 - [How to manage task dependencies?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/task-dependencies)

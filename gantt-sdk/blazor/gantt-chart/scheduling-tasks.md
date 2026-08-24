@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Task scheduling in Blazor Gantt Chart Component | Syncfusion
+title: Task Scheduling in Blazor Gantt Chart Component | Syncfusion
 description: Learn task scheduling in Syncfusion Blazor Gantt Chart including automatic, manual, custom, and unscheduled tasks, milestones, and duration units.
+keywords: blazor gantt task scheduling, schedule mode, manual task, auto task, unscheduled task, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/scheduling-tasks
 platform: gantt-sdk
-control: Gantt Chart
+control: Task Scheduling - Gantt Chart
 documentation: ug
 ---
 

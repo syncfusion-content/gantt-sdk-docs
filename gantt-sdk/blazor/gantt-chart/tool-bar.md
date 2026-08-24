@@ -52,7 +52,7 @@ The following table shows built-in toolbar items and its actions.
 </SfGantt>
 
 @code {
-    public string[] Searchfields = new string[] { "TaskID", "TaskName", "StartDate", "EndDate", "Duration", "Progress" };
+    public string[] Searchfields = new string[] { "TaskId", "TaskName", "StartDate", "EndDate", "Duration", "Progress" };
     public List<TaskData>? TaskCollection { get; set; }
     protected override void OnInitialized()
     {

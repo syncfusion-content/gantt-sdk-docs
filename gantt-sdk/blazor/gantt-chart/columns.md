@@ -126,7 +126,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt component lets
         <GanttColumn Field="Progress" HeaderText="Progress" Type="Syncfusion.Blazor.Grids.ColumnType.Integer" Format="P2" Width="150"></GanttColumn>
         <GanttColumn Field="StartDateOnly" HeaderText="Start Date Only" Format="d" Type="Syncfusion.Blazor.Grids.ColumnType.DateOnly" Width="152" TextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
         <GanttColumn Field="StartTimeOnly" HeaderText="Start Time Only" Type="Syncfusion.Blazor.Grids.ColumnType.TimeOnly" Width="150" TextAlign="Syncfusion.Blazor.Grids.TextAlign.Right"></GanttColumn>
-        <GanttColumn Field="Status" HeaderText="Status" Type="Syncfusion.Blazor.Grids.ColumnType.Boolean" Width="150"></GanttColumn>
+        <GanttColumn Field="Status" HeaderText="Status" Type="Syncfusion.Blazor.Grids.ColumnType.String" Width="150"></GanttColumn>
         <GanttColumn Field="WorkersCount" HeaderText="Workers Count" Width="150"></GanttColumn>
     </GanttColumns>
 </SfGantt>
@@ -236,7 +236,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart component for B
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/VjBdXGimTaWPDDSs?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
->* The Gantt uses the `Internalization` library to format values based on the specified format and culture.
+>* The Gantt uses the `Internationalization` library to format values based on the specified format and culture.
 >* By default, the number and date values are formatted in **en-US** locale. You can localize the currency and date to a different locale as explained [here](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart).
 >* The available format codes may vary depending on the data type of the column.
 >* You can also customize the formatting further by providing a custom function to the `GanttColumn.Format` property, instead of a format string.

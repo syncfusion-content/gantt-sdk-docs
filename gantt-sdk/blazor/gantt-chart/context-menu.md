@@ -130,7 +130,7 @@ You can configure custom context menu items by assigning a collection of `Contex
         public string? TaskName { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime? EndDate { get; set; }
-        public string Duration { get; set; }
+        public string? Duration { get; set; }
         public int Progress { get; set; }
         public int? ParentId { get; set; }
     }
@@ -462,12 +462,12 @@ The following sample code demonstrates how to disable the context menu items for
     public void OnContextMenuOpen(ContextMenuOpenEventArgs<TaskData> Args)
     {
         if (Args.Column != null && Args.Column.Field == "Duration")
-        {   
-            Args.ContextMenu.Items[0].Disabled = true; // To disable edit context menu item.
+        {
+            Args.ContextMenu.Items[0].Disabled = true; // To disable the parent context menu item for the Duration column.
         }
         else
         {
-            Args.ContextMenu.Items[0].Disabled = false; // To enable edit context menu item.
+            Args.ContextMenu.Items[0].Disabled = false; // To enable the parent context menu item for other columns.
         }
     }
 

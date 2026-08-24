@@ -18,15 +18,15 @@ N> Refer to the Getting Started with [Blazor Server-Side Gantt](https://blazor.s
 
 ## Avoid unnecessary component renders
 
-During Blazor's diffing algorithm, every cell of the Gantt Chart component and its child components is evaluated for re-rendering. For example, using [EventCallBack](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.components.eventcallback?view=aspnetcore-6.0) in the application or Gantt Chart causes all child components to be checked once the callback completes.
+During Blazor's diffing algorithm, every cell of the Gantt Chart component and its child components is evaluated for re-rendering. For example, using [EventCallback](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.components.eventcallback?view=aspnetcore-7.0) in the application or Gantt Chart causes all child components to be checked once the callback completes.
 
 To avoid unnecessary re-rendering, use the [PreventRender](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_PreventRender_System_Boolean_) method. This method internally overrides [ShouldRender](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.components.componentbase.shouldrender?view=aspnetcore-6.0) to control the rendering process.
 
 In the following example:
 
-* The [PreventRender](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_PreventRender_System_Boolean_) method is called in the **IncrementCount** method which is a click callback.
+- The [PreventRender](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_PreventRender_System_Boolean_) method is called in the **IncrementCount** method which is a click callback.
 
-* As a result, the Gantt Chart component will be excluded from the rendering triggered by the click event and **currentCount** alone will get updated.
+- As a result, the Gantt Chart component will be excluded from the rendering triggered by the click event, and only **currentCount** will be updated.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -87,6 +87,7 @@ In the following example:
             };
         return Tasks;
     }
+
 }
 
 {% endhighlight %}
@@ -94,8 +95,7 @@ In the following example:
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/LNLnDHhUWYlyTjZm?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-N> The [PreventRender](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_PreventRender_System_Boolean_) method accepts the Boolean argument that accepts true or false to disable or enable rendering respectively.
-This method can be used only after the Gantt component completed the initial rendering. Calling this method during initial rendering will not have any effect.
+N> The [PreventRender](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_PreventRender_System_Boolean_) method accepts a Boolean argument **true** disables rendering, and **false** enables it. Call this method only after the Gantt component has completed its initial rendering; calling it during initial rendering has no effect.
 
 ## Avoid unnecessary initial auto-scheduling validation
 
