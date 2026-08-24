@@ -14,7 +14,9 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component provides a [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#template) option that allows you to display custom elements in a column instead of the field value. This can be useful when you need to display images, buttons, or other custom content within a column.
 
-> When using template columns, they are primarily meant for rendering custom content and may not provide built-in support for Gantt actions like sorting, filtering, editing unless [field](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#field) property of the column is specified.
+## Important Note on Template Columns
+
+> **Template columns are primarily meant for rendering custom content.** By default, they may not provide built-in support for Gantt actions like sorting, filtering, and editing. To enable these features for template columns, you must define the [field](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#field) property of the column. When the field property is specified, the column will support all standard Gantt operations.
 
 ## Render image in a column
 
