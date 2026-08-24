@@ -39,7 +39,7 @@ To enable sorting functionality, add the [Sort](https://ej2.syncfusion.com/react
 
 ## Initial sorting
 
-You can apply sorting during the initial render of the Syncfusion React Gantt Chart component by configuring the [sortSettings.columns](https://ej2.syncfusion.com/react/documentation/api/gantt/sortSettings#columns) property. Each column should be defined with a specific [field](https://ej2.syncfusion.com/react/documentation/api/gantt/sortDescriptorModel#field) and [direction](https://ej2.syncfusion.com/react/documentation/api/gantt/sortDescriptorModel#direction), ensuring that the Gantt loads with the desired sort order applied to the specified columns.
+You can apply sorting during the initial render of the Syncfusion React Gantt Chart component by configuring the [sortSettings.columns](https://ej2.syncfusion.com/react/documentation/api/gantt/sortSettings#columns) property. Each column should be defined with a specific [field](https://ej2.syncfusion.com/react/documentation/api/gantt/sortDescriptorModel#field) and [direction](https://ej2.syncfusion.com/react/documentation/api/gantt/sortDescriptorModel#direction), ensuring that the Gantt loads with the desired sort order applied to those columns.
 
 The following code example shows how to add sorted columns during Gantt initialization, with `field` set to **TaskID** and `direction` to **Descending**, and another with `field` as **TaskName** and `direction` as **Ascending**.
 

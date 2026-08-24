@@ -111,6 +111,8 @@ The following sample demonstrates this behavior: when filtering the **TaskName**
 
 You can apply dynamic filtering in the Syncfusion<sup style="font-size:70%">&reg;</sup> React Gantt by using the [filterByColumn](https://ej2.syncfusion.com/react/documentation/api/gantt#filterbycolumn) method. This enables programmatic filtering without relying on UI interactions.
 
+> **Note:** Applied filters persist across operations until explicitly cleared using the [clearFiltering](https://ej2.syncfusion.com/react/documentation/api/gantt#clearfiltering) method. This behavior can affect subsequent data operations if filters are not properly managed.
+
 The following sample demonstrates how to filter the **TaskName** and **TaskID** columns using single and multiple values. The filtering is triggered through an external button click by calling the `filterByColumn` method.
 
 {% tabs %}

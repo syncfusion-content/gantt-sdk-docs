@@ -14,6 +14,16 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 Virtual scrolling in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component enhances performance by rendering only visible tasks and timeline segments, minimizing DOM operations for large datasets or extensive timelines. It includes row virtualization for handling thousands of tasks (e.g., 10,000 tasks in a project) and timeline virtualization for wide timelines (e.g., multi-year projects), both requiring [VirtualScroll](https://ej2.syncfusion.com/react/documentation/api/gantt/index-default#virtualscrollmodule) injection. Row virtualization renders tasks within the viewport, while timeline virtualization loads timeline cells on-demand during horizontal scrolling, ensuring efficient rendering for complex project management.
 
+## Important: Virtual Scrolling Limitations
+
+Before implementing virtual scrolling, be aware of the following constraints:
+- **Immutable mode incompatibility**: Virtual scrolling is incompatible with [enableImmutableMode](https://ej2.syncfusion.com/react/documentation/api/gantt#enableimmutablemode), as both use different rendering optimizations.
+- **Cell selection not persisted**: Cell selection is not retained due to on-demand rendering of cells.
+- **Browser height limits**: Browser height restrictions may limit the maximum number of records in row virtualization.
+- **Height property requirement**: The [height](https://ej2.syncfusion.com/react/documentation/api/gantt#height) property **must** be set in pixels (e.g., "600px") for row virtualization to function properly. Using percentage or auto values will disable virtual scrolling.
+- **Static parent height required**: Set a static height on the Gantt chart or its parent container; 100% height only works if both the component and its parent have explicit static heights.
+- **Paginated data loading**: With virtualization enabled, data is rendered in pages. When scrolling to load the next page, only the current page's records are available to public methods. If a record is selected during pagination, only the visible page records are returned, as the Gantt does not retain all page data in memory for performance optimization.
+
 ## Configure row virtualization
 
 Row virtualization, enabled by setting [enableVirtualization](https://ej2.syncfusion.com/react/documentation/api/gantt#enablevirtualization) to **true**, renders only tasks visible in the Gantt's viewport, determined by the `height` property in pixels (e.g., "600px"). All tasks are fetched initially but rendered on-demand during vertical scrolling, reducing load times for large datasets. For example, a project with 10,000 tasks renders only the 50 visible tasks, improving performance. Inject [VirtualScroll](https://ej2.syncfusion.com/react/documentation/api/gantt#virtualscrollmodule) in the component's providers to enable this feature. Ensure the `height` property is set explicitly to control the viewport size.
@@ -53,16 +63,6 @@ The following example enables timeline virtualization for a wide timeline:
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/virtualscroll-cs3" %}
-
-## Virtual scroll limitations
-
-Virtual scrolling has the following constraints:
-- Incompatible with [enableImmutableMode](https://ej2.syncfusion.com/react/documentation/api/gantt#enableimmutablemode), as both use different rendering optimizations.
-- Cell selection is not persisted due to on-demand rendering.
-- Browser height limits restrict the maximum number of records in row virtualization.
-- The [height](https://ej2.syncfusion.com/react/documentation/api/gantt#height) property must be set in pixels for row virtualization to define the viewport size.
-- Set a static height for the Gantt chart or its parent container; 100% height only works if both the component and its parent have explicit static heights.
-- With virtualization enabled, data is rendered in pages. When scrolling to load the next set of records, only the current page's data is available to Gantt's public methods. If a record is selected during this process, only the visible page records are returned. This behavior occurs because the Gantt chart does not retain data from all pages in memory, optimizing performance by loading only the required set.
 
 ## See also
 
