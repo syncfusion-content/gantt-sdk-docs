@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Work in TypeScript Gantt Chart | Syncfusion
 description: Learn how to configure work and task types in Syncfusion TypeScript Gantt Chart for accurate effort tracking and resource-based scheduling.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Styling in TypeScript Gantt Chart | Syncfusion
 description: Learn how to customize style and appearance of Syncfusion TypeScript Gantt Chart using CSS overrides, themes, grid lines, colors, and visual configurations.

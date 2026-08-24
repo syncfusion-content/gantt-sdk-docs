@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: PDF Headers and Footers in TypeScript Gantt Chart | Syncfusion
 description: Learn how to customize PDF export headers and footers in Syncfusion TypeScript Gantt Chart with text and images.

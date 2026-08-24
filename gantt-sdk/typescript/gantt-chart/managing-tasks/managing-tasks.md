@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Managing Tasks in TypeScript Gantt Chart | Syncfusion
 description: Master task management in Syncfusion TypeScript Gantt Chart with CRUD operations, editing modes, and hierarchical task organization for projects.

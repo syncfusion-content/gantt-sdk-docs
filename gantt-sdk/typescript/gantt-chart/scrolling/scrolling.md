@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Scrolling in TypeScript Gantt Chart | Syncfusion
 description: Learn how to configure scrolling behavior in TypeScript Gantt Chart including grid scrolling, timeline scrolling, and scroll synchronization.
