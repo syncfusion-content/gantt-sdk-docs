@@ -157,13 +157,13 @@ this.gantt.expandAll();
 this.gantt.collapseAll();
 ```
 
-* `expandAtLevel(level)`: Expands rows at a specific level. 
+* [expandAtLevel(level)](https://ej2.syncfusion.com/angular/documentation/api/treegrid/index-default): Expands rows at a specific level. 
 
 ```ts
 this.gantt.treegrid.expandAtLevel(0);
 ```
 
-* `collapseAtLevel(level)`: Collapses rows at a specific level. 
+* [collapseAtLevel(level)](https://ej2.syncfusion.com/angular/documentation/api/treegrid/index-default#collapseatlevel): Collapses rows at a specific level. 
 
 ```ts
 this.gantt.treegrid.collapseAtLevel(0);
@@ -172,25 +172,25 @@ this.gantt.treegrid.collapseAtLevel(0);
 * `expandByKey(key)`: Expands a row by primary key. 
 
 ```ts
-this.gantt.treegrid.expandByKey(1); //Here pass the primary key value.
+this.gantt.treegrid.expandByKey(1); // Pass the primary key value
 ```
 
 * `collapseByKey(key)`: Collapses a row by primary key. 
 
 ```ts
-this.gantt.treegrid.collapseByKey(1);//Here pass the primary key value.
+this.gantt.treegrid.collapseByKey(1); // Pass the primary key value
 ```
 
 * `expandRow(rowElement)`: Expands a row using its DOM element.  
 
 ```ts
-this.gantt.treegrid.expandRow(tr); //Here pass the row element as parameter.
+this.gantt.treegrid.expandRow(tr); // Pass the row element as parameter
 ```
 
 * `collapseRow(rowElement)`: Collapses a row using its DOM element.
 
 ```ts
-this.gantt.treegrid.collapseRow(tr);//Here pass the row element as parameter.
+this.gantt.treegrid.collapseRow(tr); // Pass the row element as parameter
 ```
 
 {% tabs %}
@@ -227,7 +227,7 @@ To retrieve the currently expanded rows in the Gantt Chart component, use the [g
 
 ## Customize expand/collapse behavior using events
 
-You can customize expand and collapse behavior in the Angular Gantt Chart component using the [expanding](https://ej2.syncfusion.com/angular/documentation/gantt/events#expanding), [expanded](https://ej2.syncfusion.com/angular/documentation/gantt/events#expanded), [collapsing](https://ej2.syncfusion.com/angular/documentation/api/gantt#collapsing), and [collapsed](https://ej2.syncfusion.com/angular/documentation/api/gantt#collapsed) events.  These events allow you to control and respond to row state changes programmatically based on your application logic.
+You can customize expand and collapse behavior in the Angular Gantt Chart component using the [expanding](https://ej2.syncfusion.com/angular/documentation/gantt/events#expanding), [expanded](https://ej2.syncfusion.com/angular/documentation/gantt/events#expanded), [collapsing](https://ej2.syncfusion.com/angular/documentation/gantt/events#collapsing), and [collapsed](https://ej2.syncfusion.com/angular/documentation/gantt/events#collapsed) events.  These events allow you to control and respond to row state changes programmatically based on your application logic.
 
 The following sample demonstrates how to customize expand and collapse actions in the Angular Gantt Chart component:
 
