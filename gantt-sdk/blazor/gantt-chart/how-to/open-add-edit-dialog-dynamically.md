@@ -21,7 +21,7 @@ Gantt Chart add and edit dialogs can be opened dynamically by using [OpenAddDial
 <button @onclick="AddDialog">Add Dialog</button>
 <button @onclick="EditDialog">Open Edit dialog task 3</button>
 <SfGantt @ref="Gantt" DataSource="@TaskCollection" Height="450px" Width="700px">
-    <GanttTaskFields Id="TaskID" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentID">
+    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentID">
     </GanttTaskFields>
     <GanttEditSettings AllowEditing="true" AllowAdding="true"></GanttEditSettings>
 </SfGantt>
@@ -44,7 +44,7 @@ Gantt Chart add and edit dialogs can be opened dynamically by using [OpenAddDial
 
     public class TaskData
     {
-        public int TaskID { get; set; }
+        public int TaskId { get; set; }
         public string TaskName { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }

@@ -110,7 +110,7 @@ namespace BlazorGanttChart.Data
     public class AssignmentModel
     {
         public int PrimaryId { get; set; }
-        public int TaskID { get; set; }
+        public int TaskId { get; set; }
         public int ResourceId { get; set; }
         public double? Unit { get; set; }
     }
@@ -135,20 +135,20 @@ namespace BlazorGanttChart.Data
     {
         List<AssignmentModel> assignments = new List<AssignmentModel>()
         {
-            new AssignmentModel(){ PrimaryId=1, TaskID = 2 , ResourceId=1, Unit=70},
-            new AssignmentModel(){ PrimaryId=2, TaskID = 2 , ResourceId=6},
-            new AssignmentModel(){ PrimaryId=3, TaskID = 3 , ResourceId=2},
-            new AssignmentModel(){ PrimaryId=4, TaskID = 3 , ResourceId=3},
-            new AssignmentModel(){ PrimaryId=5, TaskID = 3 , ResourceId=6},
-            new AssignmentModel(){ PrimaryId=6, TaskID = 4 , ResourceId=8},
-            new AssignmentModel(){ PrimaryId=7, TaskID = 4 , ResourceId=9},
-            new AssignmentModel(){ PrimaryId=8, TaskID = 6 , ResourceId=4},
-            new AssignmentModel(){ PrimaryId=9, TaskID = 7 , ResourceId=4},
-            new AssignmentModel(){ PrimaryId=10, TaskID = 7 , ResourceId=8},
-            new AssignmentModel(){ PrimaryId=11, TaskID = 8 , ResourceId=12},
-            new AssignmentModel(){ PrimaryId=12, TaskID = 8 , ResourceId=5},
-            new AssignmentModel(){ PrimaryId=13, TaskID = 9 , ResourceId=12},
-            new AssignmentModel(){ PrimaryId=14, TaskID = 9 , ResourceId=5}
+            new AssignmentModel(){ PrimaryId=1, TaskId = 2 , ResourceId=1, Unit=70},
+            new AssignmentModel(){ PrimaryId=2, TaskId = 2 , ResourceId=6},
+            new AssignmentModel(){ PrimaryId=3, TaskId = 3 , ResourceId=2},
+            new AssignmentModel(){ PrimaryId=4, TaskId = 3 , ResourceId=3},
+            new AssignmentModel(){ PrimaryId=5, TaskId = 3 , ResourceId=6},
+            new AssignmentModel(){ PrimaryId=6, TaskId = 4 , ResourceId=8},
+            new AssignmentModel(){ PrimaryId=7, TaskId = 4 , ResourceId=9},
+            new AssignmentModel(){ PrimaryId=8, TaskId = 6 , ResourceId=4},
+            new AssignmentModel(){ PrimaryId=9, TaskId = 7 , ResourceId=4},
+            new AssignmentModel(){ PrimaryId=10, TaskId = 7 , ResourceId=8},
+            new AssignmentModel(){ PrimaryId=11, TaskId = 8 , ResourceId=12},
+            new AssignmentModel(){ PrimaryId=12, TaskId = 8 , ResourceId=5},
+            new AssignmentModel(){ PrimaryId=13, TaskId = 9 , ResourceId=12},
+            new AssignmentModel(){ PrimaryId=14, TaskId = 9 , ResourceId=5}
         };
         return assignments;
     }
@@ -260,7 +260,7 @@ namespace BlazorGanttChart.Data
         public class AssignmentModel
         {
             public int PrimaryId { get; set; }
-            public int TaskID { get; set; }
+            public int TaskId { get; set; }
             public int ResourceId { get; set; }
             public double? Unit { get; set; }
         }
@@ -285,20 +285,20 @@ namespace BlazorGanttChart.Data
         {
             List<AssignmentModel> assignments = new List<AssignmentModel>()
             {
-                new AssignmentModel(){ PrimaryId=1, TaskID = 2 , ResourceId=1, Unit=70},
-                new AssignmentModel(){ PrimaryId=2, TaskID = 2 , ResourceId=6},
-                new AssignmentModel(){ PrimaryId=3, TaskID = 3 , ResourceId=2},
-                new AssignmentModel(){ PrimaryId=4, TaskID = 3 , ResourceId=3},
-                new AssignmentModel(){ PrimaryId=5, TaskID = 3 , ResourceId=6},
-                new AssignmentModel(){ PrimaryId=6, TaskID = 4 , ResourceId=8},
-                new AssignmentModel(){ PrimaryId=7, TaskID = 4 , ResourceId=9},
-                new AssignmentModel(){ PrimaryId=8, TaskID = 6 , ResourceId=4},
-                new AssignmentModel(){ PrimaryId=9, TaskID = 7 , ResourceId=4},
-                new AssignmentModel(){ PrimaryId=10, TaskID = 7 , ResourceId=8},
-                new AssignmentModel(){ PrimaryId=11, TaskID = 8 , ResourceId=12},
-                new AssignmentModel(){ PrimaryId=12, TaskID = 8 , ResourceId=5},
-                new AssignmentModel(){ PrimaryId=13, TaskID = 9 , ResourceId=12},
-                new AssignmentModel(){ PrimaryId=14, TaskID = 9 , ResourceId=5}
+                new AssignmentModel(){ PrimaryId=1, TaskId = 2 , ResourceId=1, Unit=70},
+                new AssignmentModel(){ PrimaryId=2, TaskId = 2 , ResourceId=6},
+                new AssignmentModel(){ PrimaryId=3, TaskId = 3 , ResourceId=2},
+                new AssignmentModel(){ PrimaryId=4, TaskId = 3 , ResourceId=3},
+                new AssignmentModel(){ PrimaryId=5, TaskId = 3 , ResourceId=6},
+                new AssignmentModel(){ PrimaryId=6, TaskId = 4 , ResourceId=8},
+                new AssignmentModel(){ PrimaryId=7, TaskId = 4 , ResourceId=9},
+                new AssignmentModel(){ PrimaryId=8, TaskId = 6 , ResourceId=4},
+                new AssignmentModel(){ PrimaryId=9, TaskId = 7 , ResourceId=4},
+                new AssignmentModel(){ PrimaryId=10, TaskId = 7 , ResourceId=8},
+                new AssignmentModel(){ PrimaryId=11, TaskId = 8 , ResourceId=12},
+                new AssignmentModel(){ PrimaryId=12, TaskId = 8 , ResourceId=5},
+                new AssignmentModel(){ PrimaryId=13, TaskId = 9 , ResourceId=12},
+                new AssignmentModel(){ PrimaryId=14, TaskId = 9 , ResourceId=5}
             };
             return assignments;
         }
@@ -406,7 +406,7 @@ namespace BlazorGanttChart.Data
         public class AssignmentModel
         {
             public int PrimaryId { get; set; }
-            public int TaskID { get; set; }
+            public int TaskId { get; set; }
             public int ResourceId { get; set; }
             public double? Unit { get; set; }
         }
@@ -431,20 +431,20 @@ namespace BlazorGanttChart.Data
         {
             List<AssignmentModel> assignments = new List<AssignmentModel>()
             {
-                new AssignmentModel(){ PrimaryId=1, TaskID = 2 , ResourceId=1, Unit=70},
-                new AssignmentModel(){ PrimaryId=2, TaskID = 2 , ResourceId=6},
-                new AssignmentModel(){ PrimaryId=3, TaskID = 3 , ResourceId=2},
-                new AssignmentModel(){ PrimaryId=4, TaskID = 3 , ResourceId=3},
-                new AssignmentModel(){ PrimaryId=5, TaskID = 3 , ResourceId=6},
-                new AssignmentModel(){ PrimaryId=6, TaskID = 4 , ResourceId=8},
-                new AssignmentModel(){ PrimaryId=7, TaskID = 4 , ResourceId=9},
-                new AssignmentModel(){ PrimaryId=8, TaskID = 6 , ResourceId=4},
-                new AssignmentModel(){ PrimaryId=9, TaskID = 7 , ResourceId=4},
-                new AssignmentModel(){ PrimaryId=10, TaskID = 7 , ResourceId=8},
-                new AssignmentModel(){ PrimaryId=11, TaskID = 8 , ResourceId=12},
-                new AssignmentModel(){ PrimaryId=12, TaskID = 8 , ResourceId=5},
-                new AssignmentModel(){ PrimaryId=13, TaskID = 9 , ResourceId=12},
-                new AssignmentModel(){ PrimaryId=14, TaskID = 9 , ResourceId=5}
+                new AssignmentModel(){ PrimaryId=1, TaskId = 2 , ResourceId=1, Unit=70},
+                new AssignmentModel(){ PrimaryId=2, TaskId = 2 , ResourceId=6},
+                new AssignmentModel(){ PrimaryId=3, TaskId = 3 , ResourceId=2},
+                new AssignmentModel(){ PrimaryId=4, TaskId = 3 , ResourceId=3},
+                new AssignmentModel(){ PrimaryId=5, TaskId = 3 , ResourceId=6},
+                new AssignmentModel(){ PrimaryId=6, TaskId = 4 , ResourceId=8},
+                new AssignmentModel(){ PrimaryId=7, TaskId = 4 , ResourceId=9},
+                new AssignmentModel(){ PrimaryId=8, TaskId = 6 , ResourceId=4},
+                new AssignmentModel(){ PrimaryId=9, TaskId = 7 , ResourceId=4},
+                new AssignmentModel(){ PrimaryId=10, TaskId = 7 , ResourceId=8},
+                new AssignmentModel(){ PrimaryId=11, TaskId = 8 , ResourceId=12},
+                new AssignmentModel(){ PrimaryId=12, TaskId = 8 , ResourceId=5},
+                new AssignmentModel(){ PrimaryId=13, TaskId = 9 , ResourceId=12},
+                new AssignmentModel(){ PrimaryId=14, TaskId = 9 , ResourceId=5}
             };
             return assignments;
         }
@@ -548,7 +548,7 @@ namespace BlazorGanttChart.Data
         public class AssignmentModel
         {
             public int PrimaryId { get; set; }
-            public int TaskID { get; set; }
+            public int TaskId { get; set; }
             public int ResourceId { get; set; }
             public double? Unit { get; set; }
         }
@@ -573,20 +573,20 @@ namespace BlazorGanttChart.Data
         {
             List<AssignmentModel> assignments = new List<AssignmentModel>()
             {
-                new AssignmentModel(){ PrimaryId=1, TaskID = 2 , ResourceId=1, Unit=70},
-                new AssignmentModel(){ PrimaryId=2, TaskID = 2 , ResourceId=6},
-                new AssignmentModel(){ PrimaryId=3, TaskID = 3 , ResourceId=2},
-                new AssignmentModel(){ PrimaryId=4, TaskID = 3 , ResourceId=3},
-                new AssignmentModel(){ PrimaryId=5, TaskID = 3 , ResourceId=6},
-                new AssignmentModel(){ PrimaryId=6, TaskID = 4 , ResourceId=8},
-                new AssignmentModel(){ PrimaryId=7, TaskID = 4 , ResourceId=9},
-                new AssignmentModel(){ PrimaryId=8, TaskID = 6 , ResourceId=4},
-                new AssignmentModel(){ PrimaryId=9, TaskID = 7 , ResourceId=4},
-                new AssignmentModel(){ PrimaryId=10, TaskID = 7 , ResourceId=8},
-                new AssignmentModel(){ PrimaryId=11, TaskID = 8 , ResourceId=12},
-                new AssignmentModel(){ PrimaryId=12, TaskID = 8 , ResourceId=5},
-                new AssignmentModel(){ PrimaryId=13, TaskID = 9 , ResourceId=12},
-                new AssignmentModel(){ PrimaryId=14, TaskID = 9 , ResourceId=5}
+                new AssignmentModel(){ PrimaryId=1, TaskId = 2 , ResourceId=1, Unit=70},
+                new AssignmentModel(){ PrimaryId=2, TaskId = 2 , ResourceId=6},
+                new AssignmentModel(){ PrimaryId=3, TaskId = 3 , ResourceId=2},
+                new AssignmentModel(){ PrimaryId=4, TaskId = 3 , ResourceId=3},
+                new AssignmentModel(){ PrimaryId=5, TaskId = 3 , ResourceId=6},
+                new AssignmentModel(){ PrimaryId=6, TaskId = 4 , ResourceId=8},
+                new AssignmentModel(){ PrimaryId=7, TaskId = 4 , ResourceId=9},
+                new AssignmentModel(){ PrimaryId=8, TaskId = 6 , ResourceId=4},
+                new AssignmentModel(){ PrimaryId=9, TaskId = 7 , ResourceId=4},
+                new AssignmentModel(){ PrimaryId=10, TaskId = 7 , ResourceId=8},
+                new AssignmentModel(){ PrimaryId=11, TaskId = 8 , ResourceId=12},
+                new AssignmentModel(){ PrimaryId=12, TaskId = 8 , ResourceId=5},
+                new AssignmentModel(){ PrimaryId=13, TaskId = 9 , ResourceId=12},
+                new AssignmentModel(){ PrimaryId=14, TaskId = 9 , ResourceId=5}
             };
             return assignments;
         }
@@ -690,17 +690,17 @@ These methods offer a convenient way to add, remove, and update task resources i
     }
     private async void AddAssignment()
     {
-        var record = new GanttModel.AssignmentModel() { PrimaryId = 15, TaskID = 8, ResourceId = 8 };
+        var record = new GanttModel.AssignmentModel() { PrimaryId = 15, TaskId = 8, ResourceId = 8 };
         await Gantt.AddResourceAssignmentAsync(record);
     }
     private async void UpdateAssignment()
     {
-        var record = new GanttModel.AssignmentModel() { PrimaryId = 7, TaskID = 4, ResourceId = 3, Unit = 50 };
+        var record = new GanttModel.AssignmentModel() { PrimaryId = 7, TaskId = 4, ResourceId = 3, Unit = 50 };
         await Gantt.UpdateResourceAssignmentAsync(record);
     }
     private async void DeleteAssignment()
     {
-        var record = new GanttModel.AssignmentModel() { TaskID = 2, ResourceId = 6 };
+        var record = new GanttModel.AssignmentModel() { TaskId = 2, ResourceId = 6 };
         await Gantt.DeleteResourceAssignmentAsync(record);
     }
 
@@ -718,7 +718,7 @@ These methods offer a convenient way to add, remove, and update task resources i
     }
     private async void AddNewRecord()
     {
-        var record = new GanttModel.AssignmentModel() { PrimaryId = 19, TaskID = 10, ResourceId = 8 };
+        var record = new GanttModel.AssignmentModel() { PrimaryId = 19, TaskId = 10, ResourceId = 8 };
         GanttModel.TaskData data = new GanttModel.TaskData() { TaskId = 10, Name = "NewRecord", StartDate = new DateTime(2021, 03, 29), Duration = "2", TaskType="FixedDuration" };
         await Gantt.AddRecordAsync(data, 0, null, record);
     }
@@ -754,7 +754,7 @@ namespace BlazorGanttChart.Data
         public class AssignmentModel
         {
             public int PrimaryId { get; set; }
-            public int TaskID { get; set; }
+            public int TaskId { get; set; }
             public int ResourceId { get; set; }
             public double? Unit { get; set; }
         }
@@ -779,20 +779,20 @@ namespace BlazorGanttChart.Data
         {
             List<AssignmentModel> assignments = new List<AssignmentModel>()
             {
-                new AssignmentModel(){ PrimaryId=1, TaskID = 2 , ResourceId=1, Unit=70},
-                new AssignmentModel(){ PrimaryId=2, TaskID = 2 , ResourceId=6},
-                new AssignmentModel(){ PrimaryId=3, TaskID = 3 , ResourceId=2},
-                new AssignmentModel(){ PrimaryId=4, TaskID = 3 , ResourceId=3},
-                new AssignmentModel(){ PrimaryId=5, TaskID = 3 , ResourceId=6},
-                new AssignmentModel(){ PrimaryId=6, TaskID = 4 , ResourceId=8},
-                new AssignmentModel(){ PrimaryId=7, TaskID = 4 , ResourceId=9},
-                new AssignmentModel(){ PrimaryId=8, TaskID = 6 , ResourceId=4},
-                new AssignmentModel(){ PrimaryId=9, TaskID = 7 , ResourceId=4},
-                new AssignmentModel(){ PrimaryId=10, TaskID = 7 , ResourceId=8},
-                new AssignmentModel(){ PrimaryId=11, TaskID = 8 , ResourceId=12},
-                new AssignmentModel(){ PrimaryId=12, TaskID = 8 , ResourceId=5},
-                new AssignmentModel(){ PrimaryId=13, TaskID = 9 , ResourceId=12},
-                new AssignmentModel(){ PrimaryId=14, TaskID = 9 , ResourceId=5}
+                new AssignmentModel(){ PrimaryId=1, TaskId = 2 , ResourceId=1, Unit=70},
+                new AssignmentModel(){ PrimaryId=2, TaskId = 2 , ResourceId=6},
+                new AssignmentModel(){ PrimaryId=3, TaskId = 3 , ResourceId=2},
+                new AssignmentModel(){ PrimaryId=4, TaskId = 3 , ResourceId=3},
+                new AssignmentModel(){ PrimaryId=5, TaskId = 3 , ResourceId=6},
+                new AssignmentModel(){ PrimaryId=6, TaskId = 4 , ResourceId=8},
+                new AssignmentModel(){ PrimaryId=7, TaskId = 4 , ResourceId=9},
+                new AssignmentModel(){ PrimaryId=8, TaskId = 6 , ResourceId=4},
+                new AssignmentModel(){ PrimaryId=9, TaskId = 7 , ResourceId=4},
+                new AssignmentModel(){ PrimaryId=10, TaskId = 7 , ResourceId=8},
+                new AssignmentModel(){ PrimaryId=11, TaskId = 8 , ResourceId=12},
+                new AssignmentModel(){ PrimaryId=12, TaskId = 8 , ResourceId=5},
+                new AssignmentModel(){ PrimaryId=13, TaskId = 9 , ResourceId=12},
+                new AssignmentModel(){ PrimaryId=14, TaskId = 9 , ResourceId=5}
             };
             return assignments;
         }
@@ -883,7 +883,7 @@ In the following code snippet, the `ResourceAssignmentChanging` event is used to
         {
             foreach(GanttModel.AssignmentModel assignment in args.DeletedResources)
             {
-                if (assignment.TaskID == 2)
+                if (assignment.TaskId == 2)
                 {
                     assignmentEventMessage = "The deleted resource action is canceled!";
                     args.Cancel = true;
@@ -924,7 +924,7 @@ namespace BlazorGanttChart.Data
         public class AssignmentModel
         {
             public int PrimaryId { get; set; }
-            public int TaskID { get; set; }
+            public int TaskId { get; set; }
             public int ResourceId { get; set; }
             public double? Unit { get; set; }
         }
@@ -949,20 +949,20 @@ namespace BlazorGanttChart.Data
         {
             List<AssignmentModel> assignments = new List<AssignmentModel>()
             {
-                new AssignmentModel(){ PrimaryId=1, TaskID = 2 , ResourceId=1, Unit=70},
-                new AssignmentModel(){ PrimaryId=2, TaskID = 2 , ResourceId=6},
-                new AssignmentModel(){ PrimaryId=3, TaskID = 3 , ResourceId=2},
-                new AssignmentModel(){ PrimaryId=4, TaskID = 3 , ResourceId=3},
-                new AssignmentModel(){ PrimaryId=5, TaskID = 3 , ResourceId=6},
-                new AssignmentModel(){ PrimaryId=6, TaskID = 4 , ResourceId=8},
-                new AssignmentModel(){ PrimaryId=7, TaskID = 4 , ResourceId=9},
-                new AssignmentModel(){ PrimaryId=8, TaskID = 6 , ResourceId=4},
-                new AssignmentModel(){ PrimaryId=9, TaskID = 7 , ResourceId=4},
-                new AssignmentModel(){ PrimaryId=10, TaskID = 7 , ResourceId=8},
-                new AssignmentModel(){ PrimaryId=11, TaskID = 8 , ResourceId=12},
-                new AssignmentModel(){ PrimaryId=12, TaskID = 8 , ResourceId=5},
-                new AssignmentModel(){ PrimaryId=13, TaskID = 9 , ResourceId=12},
-                new AssignmentModel(){ PrimaryId=14, TaskID = 9 , ResourceId=5}
+                new AssignmentModel(){ PrimaryId=1, TaskId = 2 , ResourceId=1, Unit=70},
+                new AssignmentModel(){ PrimaryId=2, TaskId = 2 , ResourceId=6},
+                new AssignmentModel(){ PrimaryId=3, TaskId = 3 , ResourceId=2},
+                new AssignmentModel(){ PrimaryId=4, TaskId = 3 , ResourceId=3},
+                new AssignmentModel(){ PrimaryId=5, TaskId = 3 , ResourceId=6},
+                new AssignmentModel(){ PrimaryId=6, TaskId = 4 , ResourceId=8},
+                new AssignmentModel(){ PrimaryId=7, TaskId = 4 , ResourceId=9},
+                new AssignmentModel(){ PrimaryId=8, TaskId = 6 , ResourceId=4},
+                new AssignmentModel(){ PrimaryId=9, TaskId = 7 , ResourceId=4},
+                new AssignmentModel(){ PrimaryId=10, TaskId = 7 , ResourceId=8},
+                new AssignmentModel(){ PrimaryId=11, TaskId = 8 , ResourceId=12},
+                new AssignmentModel(){ PrimaryId=12, TaskId = 8 , ResourceId=5},
+                new AssignmentModel(){ PrimaryId=13, TaskId = 9 , ResourceId=12},
+                new AssignmentModel(){ PrimaryId=14, TaskId = 9 , ResourceId=5}
             };
             return assignments;
         }
@@ -1123,7 +1123,7 @@ namespace BlazorGanttChart.Data
         public class AssignmentModel
         {
             public int PrimaryId { get; set; }
-            public int TaskID { get; set; }
+            public int TaskId { get; set; }
             public int ResourceId { get; set; }
             public double? Unit { get; set; }
         }
@@ -1148,20 +1148,20 @@ namespace BlazorGanttChart.Data
         {
             List<AssignmentModel> assignments = new List<AssignmentModel>()
             {
-                new AssignmentModel(){ PrimaryId=1, TaskID = 2 , ResourceId=1, Unit=70},
-                new AssignmentModel(){ PrimaryId=2, TaskID = 2 , ResourceId=6},
-                new AssignmentModel(){ PrimaryId=3, TaskID = 3 , ResourceId=2},
-                new AssignmentModel(){ PrimaryId=4, TaskID = 3 , ResourceId=3},
-                new AssignmentModel(){ PrimaryId=5, TaskID = 3 , ResourceId=6},
-                new AssignmentModel(){ PrimaryId=6, TaskID = 4 , ResourceId=8},
-                new AssignmentModel(){ PrimaryId=7, TaskID = 4 , ResourceId=9},
-                new AssignmentModel(){ PrimaryId=8, TaskID = 6 , ResourceId=4},
-                new AssignmentModel(){ PrimaryId=9, TaskID = 7 , ResourceId=4},
-                new AssignmentModel(){ PrimaryId=10, TaskID = 7 , ResourceId=8},
-                new AssignmentModel(){ PrimaryId=11, TaskID = 8 , ResourceId=12},
-                new AssignmentModel(){ PrimaryId=12, TaskID = 8 , ResourceId=5},
-                new AssignmentModel(){ PrimaryId=13, TaskID = 9 , ResourceId=12},
-                new AssignmentModel(){ PrimaryId=14, TaskID = 9 , ResourceId=5}
+                new AssignmentModel(){ PrimaryId=1, TaskId = 2 , ResourceId=1, Unit=70},
+                new AssignmentModel(){ PrimaryId=2, TaskId = 2 , ResourceId=6},
+                new AssignmentModel(){ PrimaryId=3, TaskId = 3 , ResourceId=2},
+                new AssignmentModel(){ PrimaryId=4, TaskId = 3 , ResourceId=3},
+                new AssignmentModel(){ PrimaryId=5, TaskId = 3 , ResourceId=6},
+                new AssignmentModel(){ PrimaryId=6, TaskId = 4 , ResourceId=8},
+                new AssignmentModel(){ PrimaryId=7, TaskId = 4 , ResourceId=9},
+                new AssignmentModel(){ PrimaryId=8, TaskId = 6 , ResourceId=4},
+                new AssignmentModel(){ PrimaryId=9, TaskId = 7 , ResourceId=4},
+                new AssignmentModel(){ PrimaryId=10, TaskId = 7 , ResourceId=8},
+                new AssignmentModel(){ PrimaryId=11, TaskId = 8 , ResourceId=12},
+                new AssignmentModel(){ PrimaryId=12, TaskId = 8 , ResourceId=5},
+                new AssignmentModel(){ PrimaryId=13, TaskId = 9 , ResourceId=12},
+                new AssignmentModel(){ PrimaryId=14, TaskId = 9 , ResourceId=5}
             };
             return assignments;
         }

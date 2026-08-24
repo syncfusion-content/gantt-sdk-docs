@@ -16,6 +16,14 @@ This section briefly explains about how to include the [Blazor Gantt Chart](http
 
 > **Ready to streamline your Blazor development?** <br/>Discover the full potential of Blazor components with AI Coding Assistants. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Code Studio and more. [Explore AI Coding Assistants](https://blazor.syncfusion.com/documentation/ai-coding-assistant/overview).
 
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- **.NET SDK**: Version 9.0 or higher
+- **Visual Studio**: 2024 version 17.8 or higher (if using Visual Studio)
+- **Visual Studio Code**: Latest version with C# Dev Kit extension (optional, if using VS Code)
+
 ## Create a new Blazor Web App
 
 {% tabcontents %}

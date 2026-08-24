@@ -16,6 +16,14 @@ This section briefly explains about how to include the [Blazor Gantt Chart](http
 
 > **Ready to streamline your Blazor development?** <br/>Discover the full potential of Blazor components with AI Coding Assistants. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Code Studio and more. [Explore AI Coding Assistants](https://blazor.syncfusion.com/documentation/ai-coding-assistant/overview).
 
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- **.NET SDK**: Version 9.0 or higher
+- **Visual Studio**: 2024 version 17.8 or higher (if using Visual Studio)
+- **Visual Studio Code**: Latest version with C# Dev Kit extension (optional, if using VS Code)
+
 ## Create a new Blazor WebAssembly (Standalone) App
 
 {% tabcontents %}
@@ -131,12 +139,22 @@ After the packages are installed, open the **~/_Imports.razor** file and import 
 
 ## Register the Blazor service
 
-Open the **Program.cs** file in Blazor WebAssembly App and register the Blazor service and include the required namespace reference `using Syncfusion.Blazor;` at the top.
+Open the **Program.cs** file in Blazor WebAssembly App and register the Syncfusion Blazor service. Include the required namespace reference `using Syncfusion.Blazor;` at the top, then call `AddSyncfusionBlazor()` in the service configuration section.
 
 {% tabs %}
 {% highlight C# tabtitle="Program.cs" %}
 
+using Syncfusion.Blazor;
+
+var builder = WebAssemblyHostBuilder.CreateDefault(args);
+builder
+    .RootComponents.Add<App>("#app")
+    .RootComponents.Add<HeadOutlet>("head::after");
+
+builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 builder.Services.AddSyncfusionBlazor();
+
+await builder.Build().RunAsync();
 
 {% endhighlight %}
 {% endtabs %}

@@ -23,17 +23,16 @@ You can trigger export operations using the [ExportToExcelAsync](https://help.sy
 
 @using Syncfusion.Blazor.Gantt
 
-<SfGantt DataSource="@TaskCollection" Height="450px" Width="900px"
-         EnableUndoRedo="true"
-         UndoRedoActions="@(new List<GanttUndoRedoAction>{ GanttUndoRedoAction.Edit, GanttUndoRedoAction.Add, GanttUndoRedoAction.Delete })">
+<SfGantt DataSource="@TaskCollection" Height="450px" Width="700px" AllowExcelExport="true"
+         Toolbar="@(new List<string>() { "ExcelExport", "CsvExport" })">
     <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
     </GanttTaskFields>
-    <GanttEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" AllowTaskbarEditing="true"></GanttEditSettings>
-    <GanttEvents TValue="TaskData" OnUndoRedo="UndoRedoHandler"></GanttEvents>
+    <GanttEvents TValue="TaskData" OnToolbarClick="ToolbarClickHandler"></GanttEvents>
 </SfGantt>
 
 @code {
+    public SfGantt<TaskData>? Gantt;
     public List<TaskData>? TaskCollection { get; set; }
 
     protected override void OnInitialized()
@@ -41,13 +40,19 @@ You can trigger export operations using the [ExportToExcelAsync](https://help.sy
         TaskCollection = GetTaskCollection();
     }
 
-    private void UndoRedoHandler(GanttUndoRedoEventArgs<TaskData> args)
+    private async Task ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
     {
-        // args.IsRedo indicates redo (true) or undo (false)
-        // args.Action indicates the action type (e.g., Edit, Add, Delete, Sort)
-        // args.ModifiedRecords contains modified records, if any
-        // args.DeletedRecords contains deleted records, if any
-        // args.AddRecord contains the added record, if present
+        if ((args.Item.Id == "GanttContainer_excelexport" || args.Item.Id == "GanttContainer_csvexport") && TaskCollection != null && Gantt != null)
+        {
+            if (args.Item.Id == "GanttContainer_excelexport")
+            {
+                await Gantt.ExportToExcelAsync();
+            }
+            else if (args.Item.Id == "GanttContainer_csvexport")
+            {
+                await Gantt.ExportToCsvAsync();
+            }
+        }
     }
 
     public class TaskData

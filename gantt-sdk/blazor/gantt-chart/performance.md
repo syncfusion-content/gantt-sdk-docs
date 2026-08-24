@@ -72,7 +72,7 @@ Instead of using the consolidated `Syncfusion.Blazor` package, which includes al
 
 When configuring your Blazor `Gantt Chart`, use individual script and CSS files instead of a single large package file. This practice allows for more efficient loading and rendering of the component by reducing the amount of data processed during initialization. By referring to individual scripts and CSS files, you can ensure that only the necessary resources are loaded, which enhances performance and speeds up the initial rendering of the Gantt Chart.
 
-Refer the below documentation
+Refer to the following documentation
 * [Individual nuget package](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/getting-started-with-web-app#install-the-required-blazor-packages)
 * [Adding script and CSS](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/getting-started-with-web-app#add-stylesheet-and-script-resources)
 
