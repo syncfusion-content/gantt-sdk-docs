@@ -300,7 +300,7 @@ The following sample hides the checkbox for the row with `ariaRowIndex` set to 3
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/checkbox-cs2" %}
 
-## AutoFit columns
+## Autofit columns
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control for TypeScript supports automatic column width adjustment based on content. Double-clicking the column header resizer adjusts the width to fit the maximum content, ensuring clear data visibility without wrapping.
 
