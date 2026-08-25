@@ -26,19 +26,6 @@ This support is used to increase the timeline width and timeline unit from minut
 
 This support is used to view all the tasks available in a project within available area on the chart part of Gantt. When users click the `ZoomToFit` icon, then all the tasks are rendered within the available chart container width.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/zooming/defaultItems/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="DefaultItems.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/zooming/defaultItems/defaultItems.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/zooming/defaultItems/razor %}
@@ -47,24 +34,10 @@ This support is used to view all the tasks available in a project within availab
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/zooming/defaultItems/defaultItems.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Customizing zooming levels
 
 In Gantt, the zoom in and zoom out actions are performed based on the predefined zooming levels in the `zoomingLevels` property. You can customize the zooming actions by defining the required zooming collection to the `zoomingLevels` property.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/zooming/customItems/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="CustomItems.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/zooming/customItems/customItems.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -74,7 +47,6 @@ In Gantt, the zoom in and zoom out actions are performed based on the predefined
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/zooming/customItems/customItems.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Zoom action by methods
 
@@ -84,19 +56,6 @@ You can perform the various zoom actions dynamically or on external click action
 - Zoom out - `zoomOut`
 - Fit to project - `fitToProject`
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/zooming/method/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Method.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/zooming/method/method.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/zooming/method/razor %}
@@ -105,4 +64,3 @@ You can perform the various zoom actions dynamically or on external click action
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/zooming/method/method.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

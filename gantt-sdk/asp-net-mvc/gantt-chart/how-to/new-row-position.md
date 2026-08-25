@@ -13,19 +13,6 @@ In Gantt, a new row can be added in one of the following positions: Top, Bottom,
 
 The following code snippets demonstrate how to achieve this.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/how-to/newrowposition/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Newrowposition.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/how-to/newrowposition/newrowposition.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/how-to/newrowposition/razor %}
@@ -34,4 +21,3 @@ The following code snippets demonstrate how to achieve this.
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/how-to/newrowposition/newrowposition.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
