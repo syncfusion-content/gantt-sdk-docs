@@ -18,8 +18,6 @@ Row represents a task information from the data source, and it is possible to pe
 
 It is possible to change the height of the row in Gantt by setting row height in pixels to the [`RowHeight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_RowHeight) property. The following code example explains how to change the row height in Gantt at load time.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/rowHeight/tagHelper %}
@@ -29,21 +27,7 @@ It is possible to change the height of the row in Gantt by setting row height in
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/rowHeight/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="RowHeight.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/rowHeight/rowHeight.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Alt text](images/rowHeight.png)
+![Alt text](./images/rowHeight.png)
 
 ## Expand/Collapse row
 
@@ -52,8 +36,6 @@ In Gantt parent tasks are expanded/collapsed by using expand/collapse icons, exp
 ### Collapse all tasks at gantt chart load
 
 All tasks available in Gantt was rendered in collapsed state by setting [`CollapseAllParentTasks`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_CollapseAllParentTasks) property as `true`. The following code example shows how to use this property.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -64,27 +46,11 @@ All tasks available in Gantt was rendered in collapsed state by setting [`Collap
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/enableCollapseAll/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="EnableCollapseAll.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/enableCollapseAll/enableCollapseAll.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Alt text](images/enableCollapseAll.png)
+![Alt text](./images/enableCollapseAll.png)
 
 ### Define expand/collapse status of tasks
 
 In Gantt, we can render some tasks in collapsed state and some tasks in expanded state, this can done by defining expand status of the task in data source. This value was mapped to Gantt control by using [`ExpandState`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_ExpandState) property. The following code example shows how to use this property.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -95,27 +61,11 @@ In Gantt, we can render some tasks in collapsed state and some tasks in expanded
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/expandState/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ExpandState.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/expandState/expandState.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Alt text](images/expandState.png)
+![Alt text](./images/expandState.png)
 
 ### Customize expand/collapse action
 
 On expand action [`Expanding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Expanding) and [`Expanded`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Expanded) event will be triggered with current expanding row’s information. Similarly on collapse action [`Collapsing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Collapsing) and [`Collapsed`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Collapsed) event will be triggered. Using this events and it’s arguments we can customize the expand/collapse action. The following code example shows how to prevent the particular row from expand/collapse action using [`Expanding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Expanding) and [`Collapsing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Collapsing) event.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -126,24 +76,9 @@ On expand action [`Expanding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syn
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/expandCollapseEvent/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ExpandCollapseEvent.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/expandCollapseEvent/expandCollapseEvent.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 ## Customize rows
 
 You can customize the appearance of a row in grid side, by using the [`rowDataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_RowDataBound) event and in chart side by using [`queryTaskbarInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_QueryTaskbarInfo) event.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -154,21 +89,7 @@ You can customize the appearance of a row in grid side, by using the [`rowDataBo
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/customizeRows/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="CustomizeRows.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/customizeRows/customizeRows.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Alt text](images/customizeRows.png)
+![Alt text](./images/customizeRows.png)
 
 ## Styling alternate rows
 
@@ -180,8 +101,6 @@ You can change the background colour of alternative rows in Gantt chart, by over
 }
 ```
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/styleAlternateRows/tagHelper %}
@@ -191,29 +110,13 @@ You can change the background colour of alternative rows in Gantt chart, by over
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/styleAlternateRows/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="StyleAlternateRows.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/styleAlternateRows/styleAlternateRows.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Alt text](images/alternateRows.png)
+![Alt text](./images/alternateRows.png)
 
 ## Row spanning
 
 Gantt chart has an option to span row cells. You can achieve this using `rowSpan` attribute to span cells in the [`QueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_QueryCellInfo) event.
 
 In the following demo, **Soil test approval** cell is spanned to two rows in the **TaskName** column.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -224,27 +127,11 @@ In the following demo, **Soil test approval** cell is spanned to two rows in the
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/rowSpanning/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="RowSpanning.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/rows/rowSpanning/rowSpanning.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Alt text](images/rowSpanning.png)
+![Alt text](./images/rowSpanning.png)
 
 ## Customize rows and cells
 
 While rendering the TreeGrid part in Gantt, the [`RowDataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_RowDataBound) and [`QueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_QueryCellInfo) events trigger for every row and cell. Using these events, you can customize the rows and cells. The following code example shows how to customize the cell and row elements using these events.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -255,21 +142,7 @@ While rendering the TreeGrid part in Gantt, the [`RowDataBound`](https://help.sy
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/appearance-and-styling/customizeRow/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="CustomizeRow.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/appearance-and-styling/customizeRow/customizeRow.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Alt text](images/customizeRow.png)
+![Alt text](./images/customizeRow.png)
 
 ## Clip mode
 
@@ -287,8 +160,6 @@ N> By default, all the column's [`ClipMode`](https://help.syncfusion.com/cr/aspn
 
 You can enable or disable the Grid cell tooltip using the [`Columns.ClipMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_ClipMode) property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/gridcellTooltip/tagHelper %}
@@ -297,15 +168,3 @@ You can enable or disable the Grid cell tooltip using the [`Columns.ClipMode`](h
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/gridcellTooltip/gridcellTooltip.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/gridcellTooltip/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="GridcellTooltip.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/tooltip/gridcellTooltip/gridcellTooltip.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

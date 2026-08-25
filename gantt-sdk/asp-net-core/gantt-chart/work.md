@@ -18,8 +18,6 @@ The work is the total hours required to complete a task. Work can be mapped from
 
 N> When the work field is mapped from the data source, the default task type will be `FixedWork`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/work/work/tagHelper %}
@@ -29,21 +27,7 @@ N> When the work field is mapped from the data source, the default task type wil
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/work/work/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Work.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/work/work/work.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Alt text](images/work.png)
+![Alt text](./images/work.png)
 
 ## Task type
 
@@ -52,8 +36,6 @@ The work, duration and resource unit fields of a task depends upon each other an
 * `FixedDuration` - Duration task field will remain constant while updating resource unit or work field.
 * `FixedWork` - Work field will remain constant while updating resource unit or duration fields.
 * `FixedUnit` - Resource units will remain constant while updating duration or work field.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -64,21 +46,7 @@ The work, duration and resource unit fields of a task depends upon each other an
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/work/taskType/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="TaskType.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/work/taskType/taskType.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Alt text](images/taskType.png)
+![Alt text](./images/taskType.png)
 
 Following table explains how the work, duration and resource unit fields will gets updated on changing any of the fields
 

@@ -14,8 +14,6 @@ domainurl: https://help.syncfusion.com/gantt-sdk/overview
 
 Task constraints define rules that control when a task is allowed to start or finish in the project timeline. They help ensure that tasks follow a logical sequence, align with fixed deadlines, and make efficient use of resources. Constraints also support planning for real-world limitations like material delays, team availability, or mandatory compliance dates—making your schedule more realistic and reliable.
 
----
-
 ## Benefits of using task constraints
 
 Task constraints help guide the schedule of each task by applying real-world rules. They serve critical planning purposes and offer the following benefits:
@@ -25,8 +23,6 @@ Task constraints help guide the schedule of each task by applying real-world rul
 - **Support Scenario Planning**: Modify constraints to test "what-if" situations and explore how delays or accelerations affect the timeline.
 - **Meet Business and Compliance Deadlines**: Guarantee that mandatory deadlines are met and ensure the schedule supports regulatory timelines.
 - **Improve Planning Accuracy**: Account for real-world limitations like material availability or stakeholder input windows.
-
----
 
 ## Understanding task constraint types
 
@@ -51,7 +47,6 @@ To enable and manage task constraints in the Gantt component, you need to config
 
 In your Gantt component configuration, map the following fields:
 
-{% if page.publishingplatform == "aspnet-core" %}
 {% raw %}
 ```cshtml
 TaskFields.Id = "taskId"
@@ -62,19 +57,6 @@ TaskFields.ConstraintType = "constraintType" // Specifies the type of constraint
 TaskFields.ConstraintDate = "constraintDate" // Specifies the relevant date for the constraint
 ```
 {% endraw %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% raw %}
-```cshtml
-TaskFields.Id = "taskId"
-TaskFields.Name = "taskName"
-TaskFields.StartDate = "startDate"
-TaskFields.EndDate = "endDate"
-TaskFields.ConstraintType = "constraintType" // Specifies the type of constraint (e.g., 2 for MustStartOn)
-TaskFields.ConstraintDate = "constraintDate" // Specifies the relevant date for the constraint
-```
-{% endraw %}
-{% endif %}
 
 These mappings ensure that each task can interpret and apply its constraints correctly based on your data source.
 
@@ -97,7 +79,6 @@ In your project data source, ensure that each task includes values for the [`Con
 
 This task is constrained to must start on July 1, 2025.
 
-{% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/task-scheduling/task-constraints-cs1/tagHelper %}
@@ -106,18 +87,6 @@ This task is constrained to must start on July 1, 2025.
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/task-scheduling/task-constraints-cs1/constraints.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/task-scheduling/task-constraints-cs1/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Constraints.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/task-scheduling/task-constraints-cs1/constraints.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### Managing scheduling conflicts due to constraint violations
 
@@ -146,7 +115,6 @@ You can intercept constraint violations using the `ActionBegin` event. When the 
 
 #### Example setup
 
-{% if page.publishingplatform == "aspnet-core" %}
 ```cshtml
 ActionBegin="ActionBeginHandler"
 ```
@@ -165,30 +133,9 @@ public void ActionBeginHandler(Syncfusion.EJ2.Gantt.GanttActionEventArgs args)
     }
 }
 ```
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-```cshtml
-ActionBegin="ActionBeginHandler"
-```
-```c#
-public void ActionBeginHandler(Syncfusion.EJ2.Gantt.GanttActionEventArgs args)
-{
-    if (args.RequestType == "ValidateTaskViolation")
-    {
-        args.ValidateMode = new
-        {
-            RespectMustStartOn = true,
-            RespectMustFinishOn = true,
-            RespectStartNoLaterThan = true,
-            RespectFinishNoLaterThan = true
-        };
-    }
-}
-```
-{% endif %}
 
 In the following example, we have **disabled the `MustStartOn` violation popup** by setting `RespectMustStartOn` to `true`.
 
-{% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/task-scheduling/task-constraints-cs2/tagHelper %}
@@ -197,15 +144,3 @@ In the following example, we have **disabled the `MustStartOn` violation popup**
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/task-scheduling/task-constraints-cs2/constraintsPopup.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/task-scheduling/task-constraints-cs2/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ConstraintsPopup.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/task-scheduling/task-constraints-cs2/constraintsPopup.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
