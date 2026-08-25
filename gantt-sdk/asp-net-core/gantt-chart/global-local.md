@@ -133,7 +133,7 @@ The below example demonstrates the Gantt in **Deutsch** culture.
 
 ## Internationalization
 
-The [`Internationalization`](https://help.syncfusion.com/gantt-sdk/common/internationalization) library is used to globalize number, date, and time values in gantt component.
+The [`Internationalization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization) library is used to globalize number, date, and time values in gantt component.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -162,5 +162,5 @@ RTL provides an option to switch the text direction and layout of the Gantt comp
 
 ## See Also
 
-* [Internationalization](https://help.syncfusion.com/gantt-sdk/common/internationalization)
+* [Internationalization](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization)
 * [Localization](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization)

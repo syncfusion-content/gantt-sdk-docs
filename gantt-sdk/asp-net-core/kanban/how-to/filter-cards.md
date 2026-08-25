@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Filter Cards in ASP.NET Core Kanban
 
-You can filter the collection of cards from the dataSource and display it on the Kanban board by using the [`query`](https://help.syncfusion.com/gantt-sdk/api/kanban#query) property.
+You can filter the collection of cards from the dataSource and display it on the Kanban board by using the [`query`](https://ej2.syncfusion.com/documentation/api/kanban#query) property.
 
 In the below sample, you can filter the cards based on the ‘where’ query and display the filtered data to the Kanban board.
 

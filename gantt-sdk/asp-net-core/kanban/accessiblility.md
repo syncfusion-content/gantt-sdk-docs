@@ -3,7 +3,7 @@ layout: post
 title: Accessibility in ASP.NET Core Kanban | WCAG, ARIA | Syncfusion
 description: Learn how to implement accessibility in Syncfusion ASP.NET Core Kanban with WCAG 2.2, ARIA labels, keyboard navigation, and Section 508 compliance.
 keywords: asp-net-core kanban accessibility, wcag, aria, section 508, keyboard navigation, screen reader, syncfusion kanban
-canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/accessibility
+canonical: ../accessibility
 platform: gantt-sdk
 control: Accessibility - Kanban
 documentation: ug
@@ -19,13 +19,13 @@ The accessibility compliance for the Kanban control is outlined below.
 | Accessibility Criteria                                                             | Compatibility                                                                        |
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
 | WCAG 2.2 Support                                                                   | AA                                                                                   |
-| [Section 508 Support](https://help.syncfusion.com/gantt-sdk/common/accessibility#accessibility-standards)             | ![Yes](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/full.png)             |
-| Screen Reader Support                                                              | ![Yes](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/full.png)             |
-| Right-To-Left Support                                                              | ![Yes](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/full.png)             |
-| Color Contrast                                                                     | ![Intermediate](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/partial.png) |
-| Mobile Device Support                                                              | ![Yes](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/full.png)             |
-| [Keyboard Navigation Support](https://help.syncfusion.com/gantt-sdk/common/accessibility#keyboard-navigation-support) | ![Yes](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/full.png)             |
-| Accessibility Checker Validation                                                   | ![Intermediate](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/partial.png) |
+| [Section 508 Support](https://help.syncfusion.com/gantt-sdk/common/accessibility#accessibility-standards)             | ![Yes](./images/full.png)             |
+| Screen Reader Support                                                              | ![Yes](./images/full.png)             |
+| Right-To-Left Support                                                              | ![Yes](./images/full.png)             |
+| Color Contrast                                                                     | ![Intermediate](./images/partial.png) |
+| Mobile Device Support                                                              | ![Yes](./images/full.png)             |
+| [Keyboard Navigation Support](https://ej2.syncfusion.com/aspnetcore/documentation/common/accessibility#keyboard-navigation-support) | ![Yes](./images/full.png)             |
+| Accessibility Checker Validation                                                   | ![Intermediate](./images/partial.png) |
 
 <style>
     .post .post-content img {
@@ -34,11 +34,11 @@ The accessibility compliance for the Kanban control is outlined below.
     }
 </style>
 
-<div><img src="https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/full.png" alt="Yes"> - All features of the control meet the requirement.</div>
+<div><img src="./images/full.png" alt="Yes"> - All features of the control meet the requirement.</div>
 
-<div><img src="https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/partial.png" alt="Intermediate"> - Some features of the control do not meet the requirement.</div>
+<div><img src="./images/partial.png" alt="Intermediate"> - Some features of the control do not meet the requirement.</div>
 
-<div><img src="https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/not-supported.png" alt="No"> - The control does not meet the requirement.</div>
+<div><img src="./images/not-supported.png" alt="No"> - The control does not meet the requirement.</div>
 
 ## WAI-ARIA attributes
 
