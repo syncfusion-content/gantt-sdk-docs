@@ -23,4 +23,4 @@ In the Gantt control, you can set the vertical scroller position dynamically by 
 {% endhighlight %}
 {% endtabs %}
 
-![Alt text](https://help.syncfusion.com/gantt-sdk/images/setScrollTop.png)
+![Alt text](../images/setScrollTop.png)

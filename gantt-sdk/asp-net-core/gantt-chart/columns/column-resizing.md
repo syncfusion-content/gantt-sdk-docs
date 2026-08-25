@@ -42,8 +42,8 @@ In the following example, the minimum and maximum widths are defined for the `Du
 
 ## Touch interaction
 
-When the right edge of the column header cell is `tapped`, a floating handler will be visible over the right border of the column. To [`resize`](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/columns/#column-resizing) the column, drag the floating handler as needed.
+When the right edge of the column header cell is `tapped`, a floating handler will be visible over the right border of the column. To [`resize`](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/columns#column-resizing) the column, drag the floating handler as needed.
 
 The following screenshot represents the Gantt column resizing in touch device.
 
-![Column resize](https://help.syncfusion.com/gantt-sdk/images/column-resize.png)
+![Column resize](../images/column-resize.png)

@@ -201,26 +201,26 @@ The following table describes different types of editing modes available in Gant
 
 |Action |Description|
 |-----|-----|
-|[`Cell editing`](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managing-tasks/#cell-editing) | To perform `double tap` on a specific cell, initiate the cell to be in edit state.|
-|[`Dialog editing`](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managing-tasks/#dialog-editing) | To perform `double tap` on a specific row, initiate the edit dialog to be opened.|
-|[`Taskbar editing`](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managing-tasks/#taskbar-editing) | Taskbar editing action is initiated using the `tap` action on the taskbar. <br> **Parent taskbar** : Once you tap on the parent taskbar, it will be changed to editing state. Perform only dragging action on parent taskbar editing. <br> 
-![Alt text](https://help.syncfusion.com/gantt-sdk/images/editing-parent.PNG) <br> **Child taskbar** : Once you tap the child taskbar, it will be changed to editing state. <br> 
-![Alt text](https://help.syncfusion.com/gantt-sdk/images/editing-state.PNG) <br> **Dragging taskbar** : To drag a taskbar to the left or right in editing state. <br> <br> **Resizing taskbar** : To resize a taskbar, drag the left/right resize icon. <br> <br> **Progress resizing** : To change the progress, drag the progress resize icon to the left or right direction.|
+|[`Cell editing`](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managing-tasks#cell-editing) | To perform `double tap` on a specific cell, initiate the cell to be in edit state.|
+|[`Dialog editing`](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managing-tasks#dialog-editing) | To perform `double tap` on a specific row, initiate the edit dialog to be opened.|
+|[`Taskbar editing`](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managing-tasks#taskbar-editing) | Taskbar editing action is initiated using the `tap` action on the taskbar. <br> **Parent taskbar** : Once you tap on the parent taskbar, it will be changed to editing state. Perform only dragging action on parent taskbar editing. <br> 
+![Alt text](../images/editing-parent.PNG) <br> **Child taskbar** : Once you tap the child taskbar, it will be changed to editing state. <br> 
+![Alt text](../images/editing-state.PNG) <br> **Dragging taskbar** : To drag a taskbar to the left or right in editing state. <br> <br> **Resizing taskbar** : To resize a taskbar, drag the left/right resize icon. <br> <br> **Progress resizing** : To change the progress, drag the progress resize icon to the left or right direction.|
 
 ### Task dependency editing
 
-You can `tap` the left/right connector point to initiate [`task dependencies`](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managing-tasks/#task-dependencies) edit mode and again tap another taskbar to establish the dependency line between two taskbars.
+You can `tap` the left/right connector point to initiate [`task dependencies`](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managing-tasks#task-dependencies) edit mode and again tap another taskbar to establish the dependency line between two taskbars.
 
 The following table explains the taskbar state in dependency edit mode.
 
-![Taskbar states](https://help.syncfusion.com/gantt-sdk/images/taskbar-states.png)
+![Taskbar states](../images/taskbar-states.png)
 
 |Taskbar state |Description|
 |-----|-----|
-|`Parent taskbar` | You cannot create dependency relationship to parent tasks. <br> ![Parent taskbar](https://help.syncfusion.com/gantt-sdk/images/parent-taskbar.PNG)|
-|`Taskbar without dependency` |  If you tap a valid child taskbar, it will create `FS` type dependency line between tasks, otherwise exits from task dependency edit mode. <br> ![Valid taskbar](https://help.syncfusion.com/gantt-sdk/images/valid-taskbar.PNG)|
-|`Taskbar with dependency` | If you tap the second taskbar, which has already been directly connected, it will ask to remove it. <br> ![Invalid taskbar](https://help.syncfusion.com/gantt-sdk/images/invalid-taskbar.PNG)|
-|`Removing dependency` | Once you tap the taskbar with direct dependency, then confirmation dialog will be shown for removing dependency. <br> ![Confirm dialog](https://help.syncfusion.com/gantt-sdk/images/confirm-dialog.PNG)|
+|`Parent taskbar` | You cannot create dependency relationship to parent tasks. <br> ![Parent taskbar](../images/parent-taskbar.PNG)|
+|`Taskbar without dependency` |  If you tap a valid child taskbar, it will create `FS` type dependency line between tasks, otherwise exits from task dependency edit mode. <br> ![Valid taskbar](../images/valid-taskbar.PNG)|
+|`Taskbar with dependency` | If you tap the second taskbar, which has already been directly connected, it will ask to remove it. <br> ![Invalid taskbar](../images/invalid-taskbar.PNG)|
+|`Removing dependency` | Once you tap the taskbar with direct dependency, then confirmation dialog will be shown for removing dependency. <br> ![Confirm dialog](../images/confirm-dialog.PNG)|
 
 N> In mobile device, you cannot create dependency other than `FS` by taskbar editing. By using cell/dialog editing, you can add all type of dependencies.
 
@@ -239,4 +239,4 @@ The taskbar editing tooltip can be customized using the [`TooltipSettings.Editin
 
 The below screenshot shows the output of above code example.
 
-![Alt text](https://help.syncfusion.com/gantt-sdk/images/editingTemplate.png)
+![Alt text](../images/editingTemplate.png)

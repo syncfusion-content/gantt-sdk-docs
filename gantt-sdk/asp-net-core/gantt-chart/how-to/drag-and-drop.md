@@ -25,4 +25,4 @@ In Gantt, it is possible to drag a record from another component and drop it in 
 
 The following screenshot shows dropping record from another component in to Gantt, and **Rose Fuller** is added as resource for the task **Develop floor plan estimation**.
 
-![Dropping Record](https://help.syncfusion.com/gantt-sdk/images/dropping.png)
+![Dropping Record](../images/dropping.png)

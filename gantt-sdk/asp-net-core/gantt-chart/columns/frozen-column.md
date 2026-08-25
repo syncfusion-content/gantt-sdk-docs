@@ -25,7 +25,7 @@ To enable frozen columns, use the `frozenColumns` property in the Gantt Chart co
 {% endhighlight %}
 {% endtabs %}
 
-![Frozen columns](https://help.syncfusion.com/gantt-sdk/images/frozenColumn.png)
+![Frozen columns](../images/frozenColumn.png)
 
 ## Freeze particular columns
 
@@ -42,7 +42,7 @@ To freeze a particular column in the Gantt, set the `isFrozen` property of the c
 {% endhighlight %}
 {% endtabs %}
 
-![Freeze column](https://help.syncfusion.com/gantt-sdk/images/freezeColumn.png)
+![Freeze column](../images/freezeColumn.png)
 
 ## Freeze direction
 
@@ -67,7 +67,7 @@ In the following example, the **TaskID** column is frozen on the left side, the 
 
 N> The freeze direction is not compatible when both the `isFrozen` and `frozenColumns` properties are enabled simultaneously.
 
-![Freeze direction](https://help.syncfusion.com/gantt-sdk/images/freeze-direction.png)
+![Freeze direction](../images/freeze-direction.png)
 
 ## Change default frozen line color
 
@@ -111,4 +111,4 @@ The following example demonstrates how to change the default frozen line color u
 {% endhighlight %}
 {% endtabs %}
 
-![Frozen line color](https://help.syncfusion.com/gantt-sdk/images/frozen-line-color.png)
+![Frozen line color](../images/frozen-line-color.png)

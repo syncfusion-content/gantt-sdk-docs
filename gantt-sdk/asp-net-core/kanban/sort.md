@@ -101,7 +101,7 @@ The SortBy `Custom` property must require datasource [`field`](https://help.sync
 
 ## Change the direction
 
-Kanban board also provides support for aligning the cards in the columns using the [`direction`](https://help.syncfusion.com/gantt-sdk/api/kanban/sortSettingsModel#direction) property inside the [`sortSettings`](https://help.syncfusion.com/gantt-sdk/api/kanban/kanban#sortsettings) property. Based on this, cards can be aligned in the columns either in `Ascending` or `Descending` order. Sorting direction will be performed based on [`sortBy`](https://help.syncfusion.com/gantt-sdk/api/kanban/sortSettingsModel#sortby) property.
+Kanban board also provides support for aligning the cards in the columns using the [`direction`](https://help.syncfusion.com/gantt-sdk/api/kanban/sortSettingsModel#direction) property inside the [`sortSettings`](https://help.syncfusion.com/gantt-sdk/api/kanban#sortsettings) property. Based on this, cards can be aligned in the columns either in `Ascending` or `Descending` order. Sorting direction will be performed based on [`sortBy`](https://help.syncfusion.com/gantt-sdk/api/kanban/sortSettingsModel#sortby) property.
 
 N> By default, cards are aligned in the columns based on `Ascending` order.
 

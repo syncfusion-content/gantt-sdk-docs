@@ -38,7 +38,7 @@ In the `Week` timeline mode, the upper part of the schedule header displays the 
 {% endhighlight %}
 {% endtabs %}
 
-![Alt text](https://help.syncfusion.com/gantt-sdk/images/weekMode.png)
+![Alt text](../images/weekMode.png)
 
 ### Month timeline mode
 
@@ -53,7 +53,7 @@ In the `Month` timeline mode, the upper part of the schedule header displays the
 {% endhighlight %}
 {% endtabs %}
 
-![Alt text](https://help.syncfusion.com/gantt-sdk/images/monthMode.png)
+![Alt text](../images/monthMode.png)
 
 ### Year timeline mode
 
@@ -68,7 +68,7 @@ In the `Year` timeline mode, the upper schedule header displays the years wherea
 {% endhighlight %}
 {% endtabs %}
 
-![Alt text](https://help.syncfusion.com/gantt-sdk/images/yearMode.png)
+![Alt text](../images/yearMode.png)
 
 ### Day timeline mode
 
@@ -83,7 +83,7 @@ In the `Day` timeline mode, the upper part of the header displays the days where
 {% endhighlight %}
 {% endtabs %}
 
-![Alt text](https://help.syncfusion.com/gantt-sdk/images/dayMode.png)
+![Alt text](../images/dayMode.png)
 
 ### Hour timeline mode
 
@@ -98,7 +98,7 @@ An `Hour` timeline mode tracks the tasks in minutes scale. In this mode, the upp
 {% endhighlight %}
 {% endtabs %}
 
-![Alt text](https://help.syncfusion.com/gantt-sdk/images/hourMode.png)
+![Alt text](../images/hourMode.png)
 
 ## Timeline view dates
 
@@ -140,7 +140,7 @@ In the Gantt control, you can enable or disable the mouse hover tooltip of timel
 {% endhighlight %}
 {% endtabs %}
 
-![Alt text](https://help.syncfusion.com/gantt-sdk/images/timelinecellTooltip.png)
+![Alt text](../images/timelinecellTooltip.png)
 
 ## Show/hide weekends
 
@@ -205,4 +205,4 @@ This feature enables exploration of long project schedules without manually upda
 {% endhighlight %}
 {% endtabs %}
 
-![Infinite timeline scrolling](https://help.syncfusion.com/gantt-sdk/images/infinite-timeline-scrolling.gif)
+![Infinite timeline scrolling](../images/infinite-timeline-scrolling.gif)

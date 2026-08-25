@@ -14,7 +14,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk/overview
 
 ## Localization
 
-The [`Localization`](https://help.syncfusion.com/gantt-sdk/common/localization) library allows you to localize default text content of the Gantt. The Gantt component has static text on some features (like toolbar area text, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Locale) value and translation object.
+The [`Localization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization) library allows you to localize default text content of the Gantt. The Gantt component has static text on some features (like toolbar area text, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Locale) value and translation object.
 
 The following list of properties and its values are used in the Gantt.
 
@@ -163,4 +163,4 @@ RTL provides an option to switch the text direction and layout of the Gantt comp
 ## See Also
 
 * [Internationalization](https://help.syncfusion.com/gantt-sdk/common/internationalization)
-* [Localization](https://help.syncfusion.com/gantt-sdk/common/localization)
+* [Localization](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization)

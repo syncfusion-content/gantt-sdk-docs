@@ -123,15 +123,15 @@ The following code example demonstrates how to enable task dependency editing in
 {% endhighlight %}
 {% endtabs %}
 
-![Alt text](https://help.syncfusion.com/gantt-sdk/images/mouse-interactions.png)
+![Alt text](../images/mouse-interactions.png)
 
 Updating with mouse interaction action
 
-![Alt text](https://help.syncfusion.com/gantt-sdk/images/cell-editing.png)
+![Alt text](../images/cell-editing.png)
 
 Updating with cell Edit
 
-![Alt text](https://help.syncfusion.com/gantt-sdk/images/edit-dialog.png)
+![Alt text](../images/edit-dialog.png)
 
 Updating with Dialog
 
