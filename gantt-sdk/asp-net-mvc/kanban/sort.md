@@ -26,22 +26,6 @@ SortBy `Index` property can be used with or without [`field`](../api/kanban/sort
 
 By default, SortBy `Index` property support without any [`field`](../api/kanban/sortSettingsModel#field) mapping. In this behavior, cards are loaded based on the JSON data order and cards are dropped based on the dropped clone.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/sort/index/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/sort/index/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/sort/index/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/sort/index/razor %}
@@ -53,7 +37,6 @@ By default, SortBy `Index` property support without any [`field`](../api/kanban/
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/sort/index/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ### Index with field mapping
 
@@ -82,22 +65,6 @@ Consider, Column A has Card A with priority value `1`, Card B with priority valu
 **Odd/Even order** -
 Consider, Column A has Card A with priority value `1`, Card B with priority value `3`, and Card C with priority value `5` and Column B has Card D with priority value `5`, then the Dropped Card D will be placed between Card A and Card B. Now, the Cards D, B, and C will be dynamically changed to the priority values as `2, 3, and 5` respectively.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/sort/index-field/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/sort/index-field/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/sort/index-field/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/sort/index-field/razor %}
@@ -109,27 +76,10 @@ Consider, Column A has Card A with priority value `1`, Card B with priority valu
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/sort/index-field/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## DataSource Order
 
 The SortBy `DataSourceOrder` property does not require any [`field`](../api/kanban/sortSettingsModel#field) mapping. In this behavior, cards are loaded based on the JSON data order, and also cards are dropped based on the JSON data order.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/sort/data-source-order/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/sort/data-source-order/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/sort/data-source-order/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -142,29 +92,12 @@ The SortBy `DataSourceOrder` property does not require any [`field`](../api/kanb
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/sort/data-source-order/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Custom
 
 ### Custom with field mapping
 
 The SortBy `Custom` property must require datasource [`field`](../api/kanban/sortSettingsModel#field) mapping. In this behavior, cards are loaded based on the [`field`](../api/kanban/sortSettingsModel#field) mapping value and also cards are dropped based on the [`field`](../api/kanban/sortSettingsModel#field) mapping value.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/sort/custom-mapping/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/sort/custom-mapping/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/sort/custom-mapping/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -177,7 +110,6 @@ The SortBy `Custom` property must require datasource [`field`](../api/kanban/sor
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/sort/custom-mapping/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Change the direction
 
@@ -186,22 +118,6 @@ Kanban board also provides support for aligning the cards in the columns using t
 N> By default, cards are aligned in the columns based on `Ascending` order.
 
 In the following sample, cards are aligned in `Descending` order.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/sort/sort-direction/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/sort/sort-direction/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/sort/sort-direction/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -214,4 +130,3 @@ In the following sample, cards are aligned in `Descending` order.
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/sort/sort-direction/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
