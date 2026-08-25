@@ -12,6 +12,19 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Task Management Operations in React Gantt Chart
 
+## Prerequisites for CRUD operations
+
+To enable task management with add, edit, and delete operations, you must:
+
+1. **Configure EditSettings**: Set `editSettings={{ allowAdding: true, allowDeleting: true, allowEditing: true, allowTaskbarEditing: true }}`
+2. **Define a Primary Key**: Mark one column with `isPrimaryKey={true}` (typically the `id` column) for reliable CRUD operations
+3. **Inject Edit Service**: Include `Edit` in the providers array: `providers={[GanttChartComponent, Edit, Toolbar, etc.]}`
+4. **Configure TaskFields**: Ensure `taskFields` properly maps your data (id, name, startDate, duration, etc.)
+
+Without these configurations, editing features will not function.
+
+---
+
 Managing tasks in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component enables dynamic project updates, such as inserting, deleting, or editing tasks and dependencies, by enabling [allowAdding](https://ej2.syncfusion.com/react/documentation/api/gantt/editSettings#allowadding), [allowDeleting](https://ej2.syncfusion.com/react/documentation/api/gantt/editSettings#allowdeleting), [allowEditing](https://ej2.syncfusion.com/react/documentation/api/gantt/editSettings#allowediting), and [allowTaskbarEditing](https://ej2.syncfusion.com/react/documentation/api/gantt/editSettings#allowtaskbarediting) with `EditService` injected. A primary key column, defined by [columns.isPrimaryKey](https://ej2.syncfusion.com/react/documentation/api/gantt/column#isprimarykey) set to **true** (e.g., on id), ensures reliable CRUD operations and task identification. Editing modes include cell editing for quick TreeGrid updates, dialog editing for comprehensive changes, taskbar dragging for duration or date adjustments, and connector line dragging for dependencies. Customize dialogs with templates or fields using [addDialogFields](https://ej2.syncfusion.com/react/documentation/api/gantt#adddialogfields) and [editDialogFields](https://ej2.syncfusion.com/react/documentation/api/gantt#editdialogfields). Methods like [addRecord](https://ej2.syncfusion.com/react/documentation/api/gantt#addrecord), [deleteRow](https://ej2.syncfusion.com/react/documentation/api/gantt#deleterow), and [updateRecordById](https://ej2.syncfusion.com/react/documentation/api/gantt#updaterecordbyid) support programmatic management. Ensure valid `taskFields` mappings and a primary key to enable editing seamlessly.
 
 The following code example demonstrates editing in the Gantt Chart component.
@@ -54,25 +67,30 @@ You can set default values when new task dialog opens using [actionBegin](https:
 
 The [columns.editType](https://ej2.syncfusion.com/react/documentation/api/gantt/column#edittype) is used to define the edit type for any particular column. You can set the [columns.editType](https://ej2.syncfusion.com/react/documentation/api/gantt/column#edittype) based on data type of the column.
 
-Below is the combined content from the provided markdown sections in bullet points, as requested, ensuring clarity and conciseness while preserving the original information:
+### Cell edit types and components
 
-- **Cell edit types and components**:
-  - **numericedit**: Uses the [NumericTextBox](https://helpej2.syncfusion.com/react/documentation/numerictextbox) component for editing integers, doubles, and decimals.
-  - **defaultedit**: Uses the [TextBox](https://helpej2.syncfusion.com/react/documentation/textbox) component for editing string data.
-  - **dropdownedit**: Uses the [DropDownList](https://helpej2.syncfusion.com/react/documentation/drop-down-list) component to display all unique values for a field.
-  - **booleanedit**: Uses the [CheckBox](https://helpej2.syncfusion.com/react/documentation/check-box) component for editing boolean data.
-  - **datepickeredit**: Uses the [DatePicker](https://helpej2.syncfusion.com/react/documentation/datepicker) component for editing date data.
-  - **datetimepickeredit**: Uses the [DateTimePicker](https://helpej2.syncfusion.com/react/documentation/datetimepicker) component for editing date-time data.
+The following edit types are supported:
 
-- **Customization**:
-  - Customize editor component behavior using the [columns.edit.params](https://ej2.syncfusion.com/react/documentation/api/gantt/column#edit) property.
+- **numericedit**: Uses the [NumericTextBox](https://ej2.syncfusion.com/react/documentation/numerictextbox) component for editing integers, doubles, and decimals.
+- **defaultedit**: Uses the [TextBox](https://ej2.syncfusion.com/react/documentation/textbox) component for editing string data.
+- **dropdownedit**: Uses the [DropDownList](https://ej2.syncfusion.com/react/documentation/drop-down-list) component to display all unique values for a field.
+- **booleanedit**: Uses the [CheckBox](https://ej2.syncfusion.com/react/documentation/check-box) component for editing boolean data.
+- **datepickeredit**: Uses the [DatePicker](https://ej2.syncfusion.com/react/documentation/datepicker) component for editing date data.
+- **datetimepickeredit**: Uses the [DateTimePicker](https://ej2.syncfusion.com/react/documentation/datetimepicker) component for editing date-time data.
 
-- **Edit type parameters**:
-  - **numericedit**: Supports parameters like `decimals: 2`, `value: 5`.
-  - **dropdownedit**: Supports parameters like `value: 'Germany'`.
-  - **booleanedit**: Supports parameters like `checked: true`.
-  - **datepickeredit**: Supports parameters like `format: 'dd.MM.yyyy'`.
-  - **datetimepickeredit**: Supports parameters like `value: new Date()`.
+### Customize editor component behavior
+
+Customize editor component behavior using the [columns.edit.params](https://ej2.syncfusion.com/react/documentation/api/gantt/column#edit) property.
+
+### Edit type parameters
+
+Each edit type supports customization parameters:
+
+- **numericedit**: Supports parameters like `decimals: 2`, `value: 5`.
+- **dropdownedit**: Supports parameters like `value: 'Germany'`.
+- **booleanedit**: Supports parameters like `checked: true`.
+- **datepickeredit**: Supports parameters like `format: 'dd.MM.yyyy'`.
+- **datetimepickeredit**: Supports parameters like `value: new Date()`.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
@@ -108,7 +126,7 @@ To restrict taskbar editing, set `args.cancel` to **true** in the [actionBegin](
         
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/celledit-cs8" %}
 
-## Cell Edit Template
+## Cell edit template
 
 The cell edit template is used to create a custom component for a particular column by invoking the following functions:
 
@@ -133,6 +151,18 @@ The cell edit template is used to create a custom component for a particular col
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/editParams-cs1" %}
+
+## CRUD method reference
+
+The Gantt Chart component provides programmatic methods for managing task records without requiring dialog or UI interactions. The following methods enable dynamic data manipulation:
+
+- **addRecord(data, rowIndex): void** - Adds a new task record to the Gantt Chart at a specified row index. The `data` parameter should contain complete task information with all required fields mapped via `taskFields`. If `rowIndex` is not specified, the record is appended to the end of the task list.
+
+- **deleteRow(index): void** - Deletes a task record at the specified row index. This method removes the task from the data source and updates the Gantt Chart view. Use this for removing individual tasks programmatically.
+
+- **updateRecordById(id, data): void** - Updates an existing task record identified by its primary key (typically the `id` field). The `data` parameter should contain the updated field values. This method modifies only the specified fields while preserving other task properties.
+
+These methods require that the [columns.isPrimaryKey](https://ej2.syncfusion.com/react/documentation/api/gantt/column#isprimarykey) property is properly configured to identify unique records.
 
 ## Disable editing for particular column
 
@@ -285,7 +315,7 @@ The taskbar editing tooltip can be customized using the [tooltipSettings.editing
         
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/tooltip-cs6" %}
 
-## See also
+## See Also
 
 - [How to add new tasks?](https://ej2.syncfusion.com/react/documentation/gantt/managing-tasks/adding-new-tasks)
 - [How to delete tasks?](https://ej2.syncfusion.com/react/documentation/gantt/managing-tasks/deleting-tasks)
