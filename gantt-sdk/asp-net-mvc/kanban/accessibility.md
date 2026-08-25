@@ -19,12 +19,12 @@ The accessibility compliance for the Kanban control is outlined below.
 | Accessibility Criteria                                                             | Compatibility                                                                        |
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
 | WCAG 2.2 Support                                                                   | AA                                                                                   |
-| [Section 508 Support](../common/accessibility#accessibility-standards)             | ![Yes](./images/full.png)             |
+| [Section 508 Support](https://ej2.syncfusion.com/aspnetmvc/documentation/common/accessibility#accessibility-standards)             | ![Yes](./images/full.png)             |
 | Screen Reader Support                                                              | ![Yes](./images/full.png)             |
 | Right-To-Left Support                                                              | ![Yes](./images/full.png)             |
 | Color Contrast                                                                     | ![Intermediate](./images/partial.png) |
 | Mobile Device Support                                                              | ![Yes](./images/full.png)             |
-| [Keyboard Navigation Support](../common/accessibility#keyboard-navigation-support) | ![Yes](./images/full.png)             |
+| [Keyboard Navigation Support](https://ej2.syncfusion.com/aspnetmvc/documentation/common/accessibility#keyboard-navigation-support) | ![Yes](./images/full.png)             |
 | Accessibility Checker Validation                                                   | ![Intermediate](./images/partial.png) |
 
 <style>

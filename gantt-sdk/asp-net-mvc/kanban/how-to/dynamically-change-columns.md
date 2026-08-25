@@ -12,9 +12,9 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Modify Columns Programmatically in ASP.NET MVC Kanban
 
-You can dynamically change the Kanban columns by using the [`columns`](../../api/kanban#columns) property.
+You can dynamically change the Kanban columns by using the [`columns`](https://ej2.syncfusion.com/documentation/api/kanban#columns) property.
 
-In the below sample, you can dynamically change the [`allowToggle`](../../api/kanban/columnsModel#allowtoggle) property at the particular column when you click on the button. You can also change the initially created columns to the new Kanban columns by using the [`columns`](../../api/kanban#columns) property when you click on the button.
+In the below sample, you can dynamically change the [`allowToggle`](https://ej2.syncfusion.com/documentation/api/kanban/columnsModel#allowtoggle) property at the particular column when you click on the button. You can also change the initially created columns to the new Kanban columns by using the [`columns`](https://ej2.syncfusion.com/documentation/api/kanban#columns) property when you click on the button.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
