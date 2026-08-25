@@ -253,7 +253,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart component for B
 | P      | Percentage format  | Input should be between 0 and 1; `P2`, `P3`, etc., control precision.   |
 
 
-The following example code demonstrates the formatting of data for the **TaskID** column using the **N2** format, the **Progress** column using the **P2** format.
+The following example code demonstrates the formatting of data for the **TaskId** column using the **N2** format, the **Progress** column using the **P2** format.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -770,7 +770,7 @@ The following example demonstrates hiding and showing the **TaskName** and **Dur
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/hNVnNGswoXLZrmWV?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## Controlling Gantt actions
+## Controlling gantt actions
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component allows fine-grained control over column-level actions such as editing, filtering, sorting, resizing, and reordering. These actions can be enabled or disabled individually using the following properties in the [GanttColumn](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html) configuration:
 

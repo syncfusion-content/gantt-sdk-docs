@@ -52,7 +52,15 @@ Enable context menu task addition by setting [enableContextMenu](https://ej2.syn
 
 ## Add tasks programmatically
 
-Add tasks programmatically using the [addRecord](https://ej2.syncfusion.com/react/documentation/api/gantt#addrecord) method, specifying task data, `rowPosition` (**Top**, **Bottom**, **Above**, **Below**, **Child**), and an optional `rowIndex`. Inject `Edit` and ensure `taskFields` mappings are valid (e.g., unique TaskID). For example, adding a task as a child creates a subtask under a parent row, updating the project hierarchy. Verify dependencies to avoid issues like circular references.
+Add tasks programmatically using the [addRecord](https://ej2.syncfusion.com/react/documentation/api/gantt#addrecord) method, specifying task data, `rowPosition` (**Top**, **Bottom**, **Above**, **Below**, **Child**), and an optional `rowIndex`. Inject `Edit` and ensure `taskFields` mappings are valid. 
+
+**Important prerequisites**:
+- **Unique TaskID**: Every new task **must** have a unique ID value that doesn't conflict with existing task IDs. Duplicate IDs will result in undefined behavior, potential data loss, or rendering errors. Always increment or generate new IDs programmatically before calling `addRecord`.
+- **Required fields**: Provide `TaskName` and at least one date field (`StartDate` with `Duration`, or `EndDate`).
+- **Parent task validation**: When adding a task as a child (`rowPosition: 'Child'`), ensure the parent row exists and supports child tasks.
+- **Dependency validation**: If the new task has dependencies, verify that referenced predecessor tasks exist before adding.
+
+For example, adding a task as a child creates a subtask under a parent row, updating the project hierarchy:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}

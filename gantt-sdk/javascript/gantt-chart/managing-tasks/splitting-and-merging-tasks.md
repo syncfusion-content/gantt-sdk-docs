@@ -57,7 +57,7 @@ You can get the clicked segment information using the [onTaskbarClick](https://e
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs8" %}
 
-## Limitations of Split tasks
+## Limitations of split tasks
 
 1. Parent and milestone tasks cannot be split into segments.
 2. The task must have a width greater than the timeline unit cell in order to be split.

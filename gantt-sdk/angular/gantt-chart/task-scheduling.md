@@ -20,7 +20,7 @@ The Gantt control supports three types of mode. They are:
 
 >Note: The default value of [taskMode](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskmode) is **Auto**.
 
-## Automatically scheduled Tasks
+## Automatically scheduled tasks
 
 When the [taskMode](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskmode) property is set as **Auto**, the start date and end date of all the tasks in the project will be automatically validated. That is, dates are validated based on various factors such as working time, holidays, weekends and predecessors.
 
@@ -42,7 +42,7 @@ The rendering of the parent taskbar in auto-scheduling mode also takes into acco
   
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/task-scheduling/automatic-tasks-cs1" %}
 
-## Manually scheduled Tasks
+## Manually scheduled tasks
 
 When the [taskMode](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskmode) property is set as **Manual**, the start date and end date of all the tasks in the project will be same as given in the data source. That is, dates are not validated based on various factors such as dependencies between tasks, holidays, weekends, working time.
 
@@ -76,7 +76,7 @@ When the [taskMode](https://ej2.syncfusion.com/angular/documentation/api/gantt#t
   
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/task-scheduling/custom-tasks-cs1" %}
 
-## Unscheduled Tasks
+## Unscheduled tasks
 
 Unscheduled tasks are planned for a project without any definite schedule dates. The Gantt control supports rendering the unscheduled tasks. You can create or update the tasks with anyone of start date, end date, and duration values or none. You can enable or disable the unscheduled tasks by using the [allowUnscheduledTasks](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowunscheduledtasks) property. The following images represent the various types of unscheduled tasks in Gantt.
 

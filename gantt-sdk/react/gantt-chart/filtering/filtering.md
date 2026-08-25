@@ -16,7 +16,7 @@ Filtering allows you to view specific or related records based on defined criter
 
 To enable filtering, set [allowFiltering](https://ej2.syncfusion.com/react/documentation/api/gantt#allowfiltering) to **true** in the Gantt configuration. You can define filter options using [filterSettings](https://ej2.syncfusion.com/react/documentation/api/gantt/filterSettings) and configure toolbar search using [searchSettings](https://ej2.syncfusion.com/react/documentation/api/gantt/searchSettings) property.
 
-To activate filtering functionality, inject the `Filter` service in the `providers` of the component.
+To activate filtering functionality, inject the `Filter` service in the `providers` array of the component.
 
 > * The filtering UI is rendered based on the column type, allowing data to be filtered using appropriate operators.
 > * The filter menu is enabled by default. To disable the filtering option for a specific column, set the `allowFiltering` property of the `column` to **false**.
@@ -89,9 +89,13 @@ The React Gantt Chart component supports multiple filtering modes, which can be 
 
 ## Enable diacritic-sensitive filtering
 
-By default, the React Gantt Chart component ignores diacritic characters during filtering. To enable filtering with diacritic sensitivity, set the [filterSettings.ignoreAccent](https://ej2.syncfusion.com/react/documentation/api/gantt/filterSettings#ignoreaccent) property to **true**.
+The React Gantt Chart component supports diacritic-sensitive filtering control via the [filterSettings.ignoreAccent](https://ej2.syncfusion.com/react/documentation/api/gantt/filterSettings#ignoreaccent) property:
 
-The following sample demonstrates this behavior: when filtering the **TaskName** column, entries containing diacritic characters (e.g., “Próject”, “Projéct”) will be matched if you enter the base text **Project**.
+- **Set ignoreAccent: true (default)** - The filter ignores accents and diacritical marks. For example, filtering for “Project” will match entries like “Próject”, “Projéct”, or “Projet”, regardless of their diacritical variations.
+
+- **Set ignoreAccent: false** - The filter performs strict diacritic-sensitive matching. Only exact diacritical matches are returned. For example, filtering for “Project” will NOT match “Projéct” or “Próject”, but will only match exact “Project”.
+
+The following sample demonstrates diacritic-insensitive filtering (default): when filtering the **TaskName** column with ignoreAccent set to true, entries containing diacritic characters (e.g., “Próject”, “Projéct”) will be matched if you enter the base text **Project**.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
@@ -110,6 +114,8 @@ The following sample demonstrates this behavior: when filtering the **TaskName**
 ## Programmatic filtering using method
 
 You can apply dynamic filtering in the Syncfusion<sup style="font-size:70%">&reg;</sup> React Gantt by using the [filterByColumn](https://ej2.syncfusion.com/react/documentation/api/gantt#filterbycolumn) method. This enables programmatic filtering without relying on UI interactions.
+
+> **Note:** Applied filters persist across operations until explicitly cleared using the [clearFiltering](https://ej2.syncfusion.com/react/documentation/api/gantt#clearfiltering) method. This behavior can affect subsequent data operations if filters are not properly managed.
 
 The following sample demonstrates how to filter the **TaskName** and **TaskID** columns using single and multiple values. The filtering is triggered through an external button click by calling the `filterByColumn` method.
 

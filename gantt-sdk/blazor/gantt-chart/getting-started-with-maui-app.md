@@ -16,6 +16,14 @@ This section briefly explains how to include the [Blazor Gantt Chart](https://ww
 
 > **Ready to streamline your Blazor development?** <br/>Discover the full potential of Blazor components with AI Coding Assistants. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Code Studio and more. [Explore AI Coding Assistants](https://blazor.syncfusion.com/documentation/ai-coding-assistant/overview).
 
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- **.NET SDK**: Version 9.0 or higher with MAUI support
+- **Visual Studio**: 2024 version 17.8 or higher with .NET MAUI workload installed
+- **Visual Studio Code**: Latest version with C# Dev Kit extension and MAUI support (optional)
+
 ## Create a new Blazor MAUI App
 
 {% tabcontents %}
@@ -168,7 +176,7 @@ The theme stylesheet and script can be accessed from NuGet through [Static Web A
 {% endhighlight %}
 {% endtabs %}
 
-## Add Blazor Gantt Chart component
+## Add blazor gantt chart component
 
 Open a Razor file located in the **~/Components/Pages/*.razor** (for example, **Home.razor**) and add the [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) component inside the razor file.
 

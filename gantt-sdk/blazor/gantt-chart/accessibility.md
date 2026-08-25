@@ -14,7 +14,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 The [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) component adheres to accessibility guidelines, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/), and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) standards, ensuring compatibility with assistive technologies, including those relying on assistive technologies.
 
-## Accessibility Compliance
+## Accessibility compliance
 
 The table below summarizes the accessibility compliance of the Blazor Gantt Chart component.
 
@@ -194,11 +194,11 @@ The Blazor Gantt Chart component supports comprehensive [keyboard interaction](h
 | <kbd>Ctrl</kbd> + <kbd>Shift </kbd> + <kbd>Z</kbd> | <kbd>⌘</kbd>+ <kbd>⇧</kbd> + <kbd>Z</kbd> | Redoes the most recently undone action. |
 | <kbd>Ctrl</kbd> + <kbd>Shift </kbd> + <kbd>Y</kbd> | <kbd>⌘</kbd>+ <kbd>⇧</kbd> + <kbd>Y</kbd> | Undoes the most recent tracked action. |
 
-## Validate Accessibility Compliance
+## Validate accessibility compliance
 
 Accessibility is validated using [axe-core](https://www.nuget.org/packages/Deque.AxeCore.Playwright) with Playwright tests to ensure compliance with WCAG 2.2 and other standards. Evaluate the accessibility of the Blazor Gantt Chart component using the [sample](https://blazor.syncfusion.com/accessibility/gantt-chart) in a new window with accessibility tools.
 
-## Related Resources
+## Related resources
 
 - [Accessibility in Blazor Components](https://blazor.syncfusion.com/documentation/common/accessibility)
 - [Blazor Gantt Chart Feature Tour](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart)

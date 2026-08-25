@@ -72,7 +72,7 @@ Instead of using the consolidated `Syncfusion.Blazor` package, which includes al
 
 When configuring your Blazor `Gantt Chart`, use individual script and CSS files instead of a single large package file. This practice allows for more efficient loading and rendering of the component by reducing the amount of data processed during initialization. By referring to individual scripts and CSS files, you can ensure that only the necessary resources are loaded, which enhances performance and speeds up the initial rendering of the Gantt Chart.
 
-Refer the below documentation
+Refer to the following documentation
 * [Individual nuget package](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/getting-started-with-web-app#install-the-required-blazor-packages)
 * [Adding script and CSS](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/getting-started-with-web-app#add-stylesheet-and-script-resources)
 
@@ -99,7 +99,7 @@ By considering these factors and implementing the recommended solutions, you can
 
 For more detailed guidance, refer to the [documentation](https://learn.microsoft.com/en-us/aspnet/core/blazor/host-and-deploy/server?view=aspnetcore-8.0) on hosting and deploying Blazor applications.
 
-## Microsoft Excel limitation while exporting millions of records to excel file format
+## Microsoft excel limitation while exporting millions of records to excel file format
 
 Microsoft Excel supports a maximum of 1,048,576 rows per sheet. Therefore, it is not feasible to export millions of records into a single Excel file due to this limitation. For handling large datasets, consider exporting data in formats such as CSV (Comma-Separated Values), which can efficiently manage larger volumes of data.
 For more details on Microsoft Excel's specifications and limits, you can refer to the official [documentation](https://support.microsoft.com/en-us/excel/excel-specifications-and-limits).
