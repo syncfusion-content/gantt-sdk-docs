@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>EJ2 Gantt</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Typescript Gantt Controls" />
+    <meta name="author" content="Syncfusion" />
+    <link href="index.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/tailwind3.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
+    <style>
+        #loader {
+            color: #008cff;
+            height: 40px;
+            left: 45%;
+            position: absolute;
+            top: 45%;
+            width: 30%;
+        }
+
+        .form-container {
+            max-width: 400px;
+            margin-bottom: 20px;
+        }
+
+        .e-float-input {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='loader'>Loading....</div>
+    <div id='container'>
+        <div class="form-container">
+            <form id="formComponent">
+                <div class="e-input-group">
+                    <input class="e-input" id="name" type="text" placeholder=" " required />
+                    <span class="e-float-text">Name</span>
+                </div>
+
+                <div class="e-input-group">
+                    <input class="e-input" id="email" type="email" placeholder=" " required />
+                    <span class="e-float-text">Email</span>
+                </div>
+
+                <div class="e-input-group">
+                    <textarea class="e-input" id="message" rows="2" placeholder=" "></textarea>
+                    <span class="e-float-text">Message</span>
+                </div>
+            </form>
+        </div>
+        <div id='GanttExport'></div>
+    </div>
+    </script>
+</body>
+
+</html>
