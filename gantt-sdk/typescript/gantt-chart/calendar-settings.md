@@ -42,8 +42,6 @@ Working hours are defined per day using start and end times. The following examp
 
 Holidays are non-working dates that exclude time from task calculations. The following example defines holidays for April 10 and April 17, excluding these dates from task scheduling calculations:
 
-{% if page.publishingplatform == "typescript" %}
-
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt-sdk/typescript/gantt-chart/project-calendar-holiday/index.ts %}
