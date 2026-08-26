@@ -45,25 +45,25 @@ The Gantt chart is a project management tool which provides a Microsoft Project-
 
 {% doccards %}
 
-{% doccard text="React" link="/gantt-sdk/react/gantt/getting-started" icon="/gantt-sdk/images/React.svg" %}
+{% doccard text="React" link="/gantt-sdk/react/gantt-chart/getting-started" icon="/gantt-sdk/images/React.svg" %}
 
-{% doccard text="Angular" link="/gantt-sdk/angular/gantt/getting-started" icon="/gantt-sdk/images/Angular.svg" %}
+{% doccard text="Angular" link="/gantt-sdk/angular/gantt-chart/getting-started" icon="/gantt-sdk/images/Angular.svg" %}
 
-{% doccard text="Blazor" link="/gantt-sdk/blazor/gantt/getting-started-webapp" icon="/gantt-sdk/images/Blazor.svg" %}
+{% doccard text="Blazor" link="/gantt-sdk/blazor/gantt-chart/getting-started-with-web-app" icon="/gantt-sdk/images/Blazor.svg" %}
 
-{% doccard text="JavaScript" link="/gantt-sdk/javascript/gantt/getting-started"  icon="/gantt-sdk/images/JavaScript.svg" %}
+{% doccard text="JavaScript" link="/gantt-sdk/javascript/gantt-chart/es5-getting-started"  icon="/gantt-sdk/images/JavaScript.svg" %}
 
-{% doccard text="TypeScript" link="/gantt-sdk/typescript/gantt/getting-started"  icon="/gantt-sdk/images/Typescript.svg" %}
+{% doccard text="TypeScript" link="/gantt-sdk/typescript/gantt-chart/getting-started"  icon="/gantt-sdk/images/Typescript.svg" %}
 
-{% doccard text="Vue" link="/gantt-sdk/vue/gantt/getting-started-vue-3" icon="/gantt-sdk/images/Vue.svg" %}
+{% doccard text="Vue" link="/gantt-sdk/vue/gantt-chart/getting-started-vue" icon="/gantt-sdk/images/Vue.svg" %}
 
-{% doccard text="ASP.NET Core" link="/gantt-sdk/asp-net-core/gantt/getting-started" icon="/gantt-sdk/images/ASP.NET Core.png" %}
+{% doccard text="ASP.NET Core" link="/gantt-sdk/asp-net-core/gantt-chart/getting-started" icon="/gantt-sdk/images/ASP.NET Core.png" %}
 
-{% doccard text="ASP.NET MVC" link="/gantt-sdk/asp-net-mvc/gantt/getting-started" icon="/gantt-sdk/images/ASP.NET MVC.png" %}
+{% doccard text="ASP.NET MVC" link="/gantt-sdk/asp-net-mvc/gantt-chart/getting-started" icon="/gantt-sdk/images/ASP.NET MVC.png" %}
 
-{% doccard text="WPF" link="/gantt-sdk/wpf/gantt/getting-started" icon="/gantt-sdk/images/WPF.svg" %}
+{% doccard text="WPF" link="/gantt-sdk/wpf/gantt-chart/getting-started" icon="/gantt-sdk/images/WPF.svg" %}
 
-{% doccard text="UWP" link="/gantt-sdk/uwp/gantt/getting-started" icon="/gantt-sdk/images/UWP.svg" %}
+{% doccard text="UWP" link="/gantt-sdk/uwp/gantt-chart/getting-started" icon="/gantt-sdk/images/UWP.svg" %}
 
 {% enddoccards %}
 
@@ -90,13 +90,13 @@ The Syncfusion Kanban Board is a task management component used to plan, track, 
 
 {% doccard text="Angular" link="/gantt-sdk/angular/kanban/getting-started" icon="/gantt-sdk/images/Angular.svg" %}
 
-{% doccard text="Blazor" link="/gantt-sdk/blazor/kanban/getting-started-webapp" icon="/gantt-sdk/images/Blazor.svg" %}
+{% doccard text="Blazor" link="/gantt-sdk/blazor/kanban/getting-started-with-web-app" icon="/gantt-sdk/images/Blazor.svg" %}
 
 {% doccard text="JavaScript" link="/gantt-sdk/javascript/kanban/getting-started"  icon="/gantt-sdk/images/JavaScript.svg" %}
 
 {% doccard text="TypeScript" link="/gantt-sdk/typescript/kanban/getting-started"  icon="/gantt-sdk/images/Typescript.svg" %}
 
-{% doccard text="Vue" link="/gantt-sdk/vue/kanban/getting-started-vue-3" icon="/gantt-sdk/images/Vue.svg" %}
+{% doccard text="Vue" link="/gantt-sdk/vue/kanban/getting-started" icon="/gantt-sdk/images/Vue.svg" %}
 
 {% doccard text="ASP.NET Core" link="/gantt-sdk/asp-net-core/kanban/getting-started" icon="/gantt-sdk/images/ASP.NET Core.png" %}
 
