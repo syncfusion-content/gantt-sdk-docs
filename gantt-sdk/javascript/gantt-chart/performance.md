@@ -28,11 +28,11 @@ To enhance your application's efficiency, especially when dealing with substanti
 
 3.  **Load On Demand**: The Load on demand feature in the Gantt component enables you to render a large number of tasks in the Gantt Chart with optimal performance. With virtualization enabled, only the root-level records are fetched from the datasource during the initial load. When expanding a root parent node or scrolling vertically, the corresponding tasks are dynamically fetched from the datasource and updated in the DOM based on the current viewport position. This ensures that only the necessary data is rendered, significantly improving performance and responsiveness.
 
-## Optimizing performance with autocalculatedatescheduling
+## Optimizing performance with autoCalculateDateScheduling 
 
-In the Gantt chart component, by default it automatically calculates the start and end dates in [dataSource](https://ej2.syncfusion.com/documentation/api/gantt#datasource) based on various factors such as working time, holidays, weekends, and predecessors. However, when rendering a large dataset, these calculations for data validation may result in performance issues. To avoid this, set the [autocalculatedatescheduling](https://ej2.syncfusion.com/documentation/api/gantt#autocalculatedatescheduling) property to **false**.
+In the Gantt chart component, by default it automatically calculates the start and end dates in [dataSource](https://ej2.syncfusion.com/documentation/api/gantt#datasource) based on various factors such as working time, holidays, weekends, and predecessors. However, when rendering a large dataset, these calculations for data validation may result in performance issues. To avoid this, set the [autoCalculateDateScheduling ](https://ej2.syncfusion.com/documentation/api/gantt#autocalculatedatescheduling) property to **false**.
 
-> When setting `autocalculatedatescheduling` property to **false**, you must provide the valid data source; otherwise, the Gantt chart will render with invalid dates.
+> When setting `autoCalculateDateScheduling ` property to **false**, you must provide the valid data source; otherwise, the Gantt chart will render with invalid dates.
 
 ## How to improve loading performance by binding large data by showing custom text or element
 
@@ -54,7 +54,7 @@ The Gantt component provides support for various adaptors (OData, ODataV4, WebAP
 - Sorting
 - Aggregates
 
-## How to avoid maxjsonlength error while passing large amount of records
+## How to avoid MaxJsonLength error while passing large amount of records
 
 The Gantt component operates on a client-server basis, meaning data is sent as a JSON object between the client and server. The reported issue occurs due to the serialization of a large JSON object. To resolve this, you need to increase the maximum length for serializing large JSON objects. This can be done by altering the [MaxJsonLength](https://social.msdn.microsoft.com/Forums/en-US/ab1a5864-46e2-4c57-9511-dc3f60cc314a/how-to-increase-maxjsonlength-for-json-post-in-mvc3?forum=aspmv) property in your web.config file or at the point of deserialization.
 

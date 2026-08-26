@@ -171,7 +171,7 @@ You can bind a custom data source for Excel or CSV export in the Blazor Gantt co
 {% previewsample "https://blazorplayground.syncfusion.com/embed/htrntmBDLBWEFjJv?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 
-## Export gantt chart data
+## Export Gantt Chart data
 
 To export either the records visible on the current page or all records from the Gantt Chart to Excel or CSV, set the `ExcelExportProperties.ExportType` property.
 

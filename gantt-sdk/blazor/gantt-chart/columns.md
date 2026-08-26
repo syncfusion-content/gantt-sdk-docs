@@ -770,7 +770,7 @@ The following example demonstrates hiding and showing the **TaskName** and **Dur
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/hNVnNGswoXLZrmWV?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## Controlling gantt actions
+## Controlling Gantt actions
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component allows fine-grained control over column-level actions such as editing, filtering, sorting, resizing, and reordering. These actions can be enabled or disabled individually using the following properties in the [GanttColumn](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html) configuration:
 
