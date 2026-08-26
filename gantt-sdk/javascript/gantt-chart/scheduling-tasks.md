@@ -100,19 +100,25 @@ The following example configures task types:
 
 ## Configure duration units
 
-Duration units determine how task length is measured and calculated within the project. The Gantt Chart control supports three duration units that can be applied at both project and individual task levels.
+Duration units define how task duration values are interpreted and calculated in the Gantt Chart. Duration units can be configured globally for the entire project or individually for each task.
 
 The Gantt Chart control supports the following duration units:
 
 - **Day**: Standard for general planning.
 - **Hour**: For detailed task management.
 - **Minute**: For short-duration tasks.
+- **Week**: Represents a duration calculated using the configured [daysPerWeek](https://ej2.syncfusion.com/javascript/documentation/api/gantt#daysperweek) value.
+- **Month**: Represents a duration calculated using the configured [daysPerMonth](https://ej2.syncfusion.com/javascript/documentation/api/gantt#dayspermonth) value.
 
 Configure using:
 
 - [durationUnit](https://ej2.syncfusion.com/javascript/documentation/api/gantt#durationunit): Sets global unit (default: `day`).
 - [taskFields.durationUnit](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#durationunit): Maps per-task units.
-- Duration field values: Includes units directly (e.g., "5 minutes").
+- [daysPerWeek](https://ej2.syncfusion.com/javascript/documentation/api/gantt#daysperweek): Specifies the number of working days that constitute one week duration. The default value is `5` days. (Valid values range from `1` to `7` days).
+- [daysPerMonth](https://ej2.syncfusion.com/javascript/documentation/api/gantt#dayspermonth): Specifies the number of working days that constitute one month duration. The default value is `20` days. (Valid values range from `1` to `31` days).
+- Duration field values: You can specify the duration unit directly in the duration value (for example, "5 minutes", "2 weeks", or "1 month").
+
+> Note: Week and Month duration units are calculated using the configured `daysPerWeek` and `daysPerMonth` values, rather than calendar weeks or calendar months. For example, if `daysPerWeek` is set to 5, then 1 Week = 5 working days. Similarly, if `daysPerMonth` is set to 20, then 1 Month = 20 working days.
 
 The following example maps duration units:
 
