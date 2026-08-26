@@ -29,7 +29,7 @@ Cards can be grouped based on `keyField` and displayed in rows, which are separa
 
 Output be like the below.
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/swimlane-row.PNG)
+![kanban](.images/swimlane-row.PNG)
 
 ## Custom row text
 
@@ -62,7 +62,7 @@ You can customize the Kanban swimlane row by using the `template` property, whic
 
 Output be like the below.
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/template.PNG)
+![kanban](./images/template.PNG)
 
 ## Sorting
 
@@ -79,7 +79,7 @@ Swimlane rows are rendered on descending order when using the `sortBy` property 
 
 Output be like the below.
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/sorting.PNG)
+![kanban](./images/sorting.PNG)
 
 ## Drag-and-drop
 
@@ -109,7 +109,7 @@ You can render the empty swimlane row by enabling the `showEmptyRow` property. I
 
 Output be like the below.
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/empty-row.PNG)
+![kanban](./images/empty-row.PNG)
 
 ## Calculate cards count
 
@@ -130,7 +130,7 @@ In below demo, disabled on `showItemCount` property on rendering swimlane row wi
 
 Output be like the below.
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/cards-count.PNG)
+![kanban](./images/cards-count.PNG)
 
 ## Enable frozen rows
 
@@ -149,4 +149,4 @@ N> This feature support only when using Kanban content scrolling.
 {% endhighlight %}
 {% endtabs %}
 
-![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/frozen-rows.png)
+![kanban](./images/frozen-rows.png)
