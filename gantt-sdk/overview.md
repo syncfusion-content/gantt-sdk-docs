@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion Gantt SDK Overview
-description: Learn about the Syncfusion Gantt Chart, a project management component to visualize and manage tasks, task relationships, and resources with support for editing, dependencies, timeline, critical path, and more across multiple web platforms.
+description: Learn about the Syncfusion Gantt SDK, including Gantt Chart and Kanban components for project planning, task tracking, resource management, and team workflows.
 platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
