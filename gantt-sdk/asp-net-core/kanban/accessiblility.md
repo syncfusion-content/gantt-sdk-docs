@@ -3,7 +3,7 @@ layout: post
 title: Accessibility in ASP.NET Core Kanban | WCAG, ARIA | Syncfusion
 description: Learn how to implement accessibility in Syncfusion ASP.NET Core Kanban with WCAG 2.2, ARIA labels, keyboard navigation, and Section 508 compliance.
 keywords: asp-net-core kanban accessibility, wcag, aria, section 508, keyboard navigation, screen reader, syncfusion kanban
-canonical: ../accessibility
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/accessiblility
 platform: gantt-sdk
 control: Accessibility - Kanban
 documentation: ug
@@ -19,7 +19,7 @@ The accessibility compliance for the Kanban control is outlined below.
 | Accessibility Criteria                                                             | Compatibility                                                                        |
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
 | WCAG 2.2 Support                                                                   | AA                                                                                   |
-| [Section 508 Support](https://help.syncfusion.com/gantt-sdk/common/accessibility#accessibility-standards)             | ![Yes](./images/full.png)             |
+| [Section 508 Support](https://ej2.syncfusion.com/aspnetcore/documentation/common/accessibility#accessibility-standards)             | ![Yes](./images/full.png)             |
 | Screen Reader Support                                                              | ![Yes](./images/full.png)             |
 | Right-To-Left Support                                                              | ![Yes](./images/full.png)             |
 | Color Contrast                                                                     | ![Intermediate](./images/partial.png) |
@@ -102,4 +102,4 @@ The accessibility compliance of the Kanban control is shown in the following sam
 
 ## See also
 
-- [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core control](https://help.syncfusion.com/gantt-sdk/common/accessibility)
+- [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core control](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/accessiblility)
