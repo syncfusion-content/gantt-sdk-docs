@@ -163,3 +163,7 @@ To export Gantt data as a Blob object for advanced processing or custom download
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs17" %}
+
+## Limitations
+
+A CSV is a plain text format that does not support features such as cell rotation, font and color customization, column and row spanning, or adding formulas. CSV files store raw data without any formatting or styling.
