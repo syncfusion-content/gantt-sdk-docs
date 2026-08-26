@@ -1,12 +1,13 @@
 ---
 layout: post
 title: Calendar Settings in TypeScript Gantt Chart Control | Syncfusion
-description: Learn how to configure project and task calendars in the Syncfusion TypeScript Gantt Chart control to manage working hours, holidays, and task-specific scheduling.
-platform: ej2-javascript
-control: Calendar Settings
-publishingplatform: TypeScript
+description: Learn how to configure project and task calendars in the Syncfusion TypeScript Gantt Chart to manage working time, holidays, and scheduling.
+keywords: typescript gantt task calendar, project calendar, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/calendar-settings
+platform: gantt-sdk
+control: Task Calendar - Gantt Chart
 documentation: ug
-domainurl: ##DomainURL##
+domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
 # Calendar Settings in TypeScript Gantt Chart Control
