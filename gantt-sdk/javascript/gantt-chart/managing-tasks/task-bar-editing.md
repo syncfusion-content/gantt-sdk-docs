@@ -46,7 +46,9 @@ Prevent taskbar editing for specific tasks using the [taskbarEditing](https://ej
 
 ## Enable taskbar drawing
 
-The Gantt Chart control supports creating new tasks by dragging directly on the timeline. This feature is enabled via the [allowTaskbarDraw](../api/gantt/editSettingsModel#allowtaskbardraw) property in the [editSettings](../api/gantt#editsettings) configuration. Taskbars can only be drawn when the [allowUnscheduledTasks](../api/gantt#allowunscheduledtasks) property is set to **true** to create unscheduled tasks that can be scheduled via dragging.
+The Gantt Chart control supports creating new tasks by dragging directly on the timeline. This feature is enabled via the [allowTaskbarDraw](../api/gantt/editSettingsModel#allowtaskbardraw) property in the [editSettings](../api/gantt#editsettings) configuration. Taskbar drawing is intended for scheduling unscheduled tasks and requires [allowUnscheduledTasks](../api/gantt#allowunscheduledtasks) to be enabled. This feature is separate from taskbar editing and is controlled using the `allowTaskbarDraw` property.
+
+Dragging across the timeline schedules an unscheduled task by defining its timeline range. The resulting task duration is calculated based on the configured scheduling settings.
 
 The following example demonstrates how to enable taskbar drawing:
 
