@@ -281,21 +281,7 @@ The following example allows only the Start to Finish (SF) dependency type. This
 >
 > If the `allowedDependencyTypes` property is not specified, all dependency types are allowed.
 >
-> ```ts
-> let gantt: Gantt = new Gantt({
->     // allowedDependencyTypes is not specified
-> });
-> ```
->
 > **Empty collection behavior**
->
-> If an empty collection is specified:
->
-> ```ts
-> let gantt: Gantt = new Gantt({
->     allowedDependencyTypes: []
-> });
-> ```
 >
 > This is equivalent to not specifying the `allowedDependencyTypes` property. In both cases, all supported dependency types are allowed. The Gantt processes all supported dependency types during data loading and permits all dependency relationship types to be created or modified during editing operations.
 
