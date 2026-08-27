@@ -250,32 +250,16 @@ The supported dependency types are:
 
 The following example allows only the Start to Finish (SF) dependency type. This code configures `allowedDependencyTypes: ['SF']` so that only **SF** relationships can be created during loading and editing, with all other dependency types disabled.
 
-{% if page.publishingplatform == "typescript" %}
-
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt/allowedDependencyTypes-cs1/index.ts %}
+{% include code-snippet/gantt-sdk/typescript/gantt-chart/allowedDependencyTypes-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/allowedDependencyTypes-cs1/index.html %}
+{% include code-snippet/gantt-sdk/typescript/gantt-chart/allowedDependencyTypes-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/gantt/allowedDependencyTypes-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt/allowedDependencyTypes-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt/allowedDependencyTypes-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/gantt/allowedDependencyTypes-cs1" %}
-{% endif %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/allowedDependencyTypes-cs1" %}
 
 > **Default behavior**
 >
