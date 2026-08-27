@@ -224,6 +224,81 @@ By default, Gantt Chart task dates are validated based on predecessor values. To
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/disable-predecessor" %}
 
+## Manage specific dependency types
+
+The Gantt Chart supports the [allowedDependencyTypes](https://ej2.syncfusion.com/documentation/api/gantt#alloweddependencytypes) property to control which dependency relationship types can participate in dependency processing during data loading and editing operations.
+
+Using this property, you can explicitly specify the dependency types that are allowed during:
+
+- Initial data loading.
+- CRUD operations.
+- Cell editing.
+- Dialog editing.
+- Taskbar editing.
+- Connector line editing.
+
+Only the dependency types included in the configured `allowedDependencyTypes` collection are processed and maintained. Dependency types that are not included in the collection are ignored during data loading and prevented during editing actions.
+
+The supported dependency types are:
+
+- **FS** – Finish-to-Start
+- **SS** – Start-to-Start
+- **FF** – Finish-to-Finish
+- **SF** – Start-to-Finish
+
+**For example:**
+
+The following example allows only the Start to Finish (SF) dependency type. This code configures `allowedDependencyTypes: ['SF']` so that only **SF** relationships can be created during loading and editing, with all other dependency types disabled.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt/allowedDependencyTypes-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/allowedDependencyTypes-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/allowedDependencyTypes-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt/allowedDependencyTypes-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt/allowedDependencyTypes-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/gantt/allowedDependencyTypes-cs1" %}
+{% endif %}
+
+> **Default behavior**
+>
+> If the `allowedDependencyTypes` property is not specified, all dependency types are allowed.
+>
+> ```ts
+> let gantt: Gantt = new Gantt({
+>     // allowedDependencyTypes is not specified
+> });
+> ```
+>
+> **Empty collection behavior**
+>
+> If an empty collection is specified:
+>
+> ```ts
+> let gantt: Gantt = new Gantt({
+>     allowedDependencyTypes: []
+> });
+> ```
+>
+> This is equivalent to not specifying the `allowedDependencyTypes` property. In both cases, all supported dependency types are allowed. The Gantt processes all supported dependency types during data loading and permits all dependency relationship types to be created or modified during editing operations.
+
 ## Limitation
 
 > When virtualization is enabled, dependency lines are shown only for tasks currently visible in the viewport. If two tasks are connected by a line, the line will appear only if at least one of the tasks is visible. If both tasks are expanded and the line spans across pages, it will still be displayed as long as one task is in view.
