@@ -23,7 +23,7 @@ const toolbar = ['ExcelExport', 'CsvExport'];
 const toolbarClick = (args) => {
         if (args.item.id === 'GanttContainer_excelexport') {
             var excelExportProperties = {
-                dataSource: ganttData[1]
+                dataSource: [ganttData[1]]
             };
             var ganttObj = document.getElementById('GanttContainer').ej2_instances[0];
             ganttObj.excelExport(excelExportProperties);
