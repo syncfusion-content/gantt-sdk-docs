@@ -2,7 +2,7 @@
 layout: post
 title: Columns in Angular Gantt Chart | Field Mapping | Syncfusion
 description: Learn how to configure columns in Syncfusion Angular Gantt Chart with field mapping, formatting, and customization to display task data in a tabular structure.
-keywords: angular gantt columns, column field, column customization, task data display, syncfusion gantt
+keywords: Angular Gantt Chart columns, column field, column customization, task data display, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/columns/columns
 platform: gantt-sdk
 control: Columns - Gantt Chart
@@ -64,17 +64,17 @@ In Gantt for Angular, column width can be adjusted using the [width](https://ej2
 3. Percentage-based widths are responsive and adjust dynamically when the Gantt container is resized. For example, a column with a width of 50% will occupy 50% of the Gantt width and will adjust proportionally when the Gantt container is resized to a smaller size.
 4. When columns are manually resized, a minimum width is enforced to maintain readability. By default, this minimum is set to 10 pixels unless specified otherwise.
 5. If the total column width exceeds the container width, a horizontal scrollbar appears to enable scrolling.
-6. The Gantt Chart component inherits the width of its parent element. If the parent has a fixed width, the Gantt will occupy that space; otherwise, it adjusts dynamically based on available space.
+6. The Angular Gantt Chart component inherits the width of its parent element. If the parent has a fixed width, the Gantt will occupy that space; otherwise, it adjusts dynamically based on available space.
 
 > To learn more about resizing, you can refer to the resizing section [here](https://ej2.syncfusion.com/angular/documentation/gantt/columns/column-resizing)
 
 ### Supported types for column width
 
-The Gantt supports the following three types of column width:
+The Angular Gantt Chart supports the following three types of column width:
 
 **1. Auto**
 
-The column width is automatically calculated based on the content within the column cells. If the content exceeds the width of the column, it will be truncated with an ellipsis (...) at the end. You can set the width for columns as **auto** in your Gantt configuration as shown below:
+The column width is automatically calculated based on the content within the column cells. If the content exceeds the width of the column, it will be truncated with an ellipsis (...) at the end. You can set the width for columns as **auto** in your Angular Gantt Chart configuration as shown below:
 
 ```html
   <e-column field='TaskID' headerText='Task ID' textAlign='Right' width='auto'></e-column>
@@ -112,7 +112,7 @@ The column width is specified as an absolute pixel value. For example, a column 
 
 ## Column formatting
 
-The Gantt Chart component for Angular supports column formatting to customize data presentation. You can format numbers, dates, or apply templates based on specific requirements. Use the [columns.format](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#format) property to define the desired format for each column.
+The Angular Gantt Chart component for Angular supports column formatting to customize data presentation. You can format numbers, dates, or apply templates based on specific requirements. Use the [columns.format](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#format) property to define the desired format for each column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -128,7 +128,7 @@ The Gantt Chart component for Angular supports column formatting to customize da
   
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/columnformat-cs1" %}
 
->* The Gantt uses the [Internationalization](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization) library to format values based on the specified format and culture.
+>* The Angular Gantt Chart uses the [Internationalization](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization) library to format values based on the specified format and culture.
 >* By default, the [number](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#number-formatting) and [date](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#date-formatting) values are formatted in **en-US** locale. You can localize the currency and date in different locale as explained [here](https://ej2.syncfusion.com/angular/documentation/common/globalization/localization).
 >* The available format codes may vary depending on the data type of the column.
 >* You can also customize the formatting further by providing a custom function to the [format](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#format) property, instead of a format string.
@@ -136,7 +136,7 @@ The Gantt Chart component for Angular supports column formatting to customize da
 
 ### Number formatting
 
-The Gantt Chart component for Angular supports number formatting through the [columns.format](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#format) property, where standard format strings define numeric value presentation including currency, percentage, and decimal formats. The following standard format strings are available:
+The Angular Gantt Chart component for Angular supports number formatting through the [columns.format](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#format) property, where standard format strings define numeric value presentation including currency, percentage, and decimal formats. The following standard format strings are available:
 
 | Format | Description        | Remarks                                                                 |
 |--------|--------------------|-------------------------------------------------------------------------|
@@ -165,7 +165,7 @@ The following example code demonstrates the formatting of data for the **TaskID*
 
 ### Date formatting
 
-The Gantt Chart component for Angular supports date formatting in columns using the [columns.format](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#format) property, where format strings such as **d**, **D**, **MMM dd, yyyy** can be applied. Both built-in formats like **yMd** and custom formats are supported to define the layout and detail of date and time values based on column requirements. The following custom formats and their corresponding output are listed below:
+The Angular Gantt Chart component for Angular supports date formatting in columns using the [columns.format](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#format) property, where format strings such as **d**, **D**, **MMM dd, yyyy** can be applied. Both built-in formats like **yMd** and custom formats are supported to define the layout and detail of date and time values based on column requirements. The following custom formats and their corresponding output are listed below:
 
 Format | Formatted value
 -----|-----
@@ -193,7 +193,7 @@ Format | Formatted value
 
 ### Format the date column based on localization 
 
-You can format the date column in Gantt Chart component based on localization settings by using the [format](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#format) property to define the date pattern and the [locale](https://ej2.syncfusion.com/angular/documentation/api/gantt#locale) property to apply regional settings.
+You can format the date column in Angular Gantt Chart component based on localization settings by using the [format](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#format) property to define the date pattern and the [locale](https://ej2.syncfusion.com/angular/documentation/api/gantt#locale) property to apply regional settings.
 
 The following example demonstrates the `format` property specifies the date format as **yyyy-MMM-dd**, and the `locale` property specifies the locale as **es-AR** for Spanish (Argentina).
 
@@ -294,7 +294,7 @@ export class AppComponent implements OnInit {
 
 ### Custom formatting
 
-The Gantt Chart component supports custom formatting for numeric and date values. You can use the [format](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#format) property to display data in a specific format based on requirements.
+The Angular Gantt Chart component supports custom formatting for numeric and date values. You can use the [format](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#format) property to display data in a specific format based on requirements.
 
 In the example below, `numberFormatOptions` is used for the **Progress** column to show four decimal places, and `dateFormatOptions` is used for the **StartDate** column to display the date as day-of-week, month abbreviation, day, and 2-digit year (e.g., Sun, May 8, '23).
 
@@ -316,7 +316,7 @@ In the example below, `numberFormatOptions` is used for the **Progress** column 
 
 ## Align the text of content
 
-You can use the [textAlign](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#textalign) property in Gantt Chart component to set the alignment of text within column cells. By default, the text is aligned to the **left**. The available options are:
+You can use the [textAlign](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#textalign) property in Angular Gantt Chart component to set the alignment of text within column cells. By default, the text is aligned to the **left**. The available options are:
 
 *	**Left**: Aligns the text to the left (default).
 *	**Center**: Aligns the text to the center.
@@ -341,7 +341,7 @@ You can use the [textAlign](https://ej2.syncfusion.com/angular/documentation/api
 
 ## Render boolean value as checkbox
 
-You can render boolean values as checkboxes in Gantt Chart component by setting the [displayAsCheckBox](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#displayascheckbox) property to **true** for the desired column. This replaces the default text representation of **true** or **false** with a checkbox, making boolean fields visually clearer and more intuitive.
+You can render boolean values as checkboxes in Angular Gantt Chart component by setting the [displayAsCheckBox](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#displayascheckbox) property to **true** for the desired column. This replaces the default text representation of **true** or **false** with a checkbox, making boolean fields visually clearer and more intuitive.
 
 The following sample demonstrates how to display a boolean value as a checkbox for the **Verified** column.
 
@@ -359,8 +359,8 @@ The following sample demonstrates how to display a boolean value as a checkbox f
   
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/columnformat-cs4" %}
 
->* The `displayAsCheckBox` property is only applicable to boolean values in Gantt columns.
->* When `displayAsCheckBox` is set to **true**, the boolean values will be rendered as checkboxes in the Gantt column, with checked state indicating **true** and unchecked state indicating **false**.
+>* The `displayAsCheckBox` property is only applicable to boolean values in Angular Gantt Chart columns.
+>* When `displayAsCheckBox` is set to **true**, the boolean values will be rendered as checkboxes in the Angular Gantt Chart column, with checked state indicating **true** and unchecked state indicating **false**.
 
 ### How to prevent checkbox for particular row
 
@@ -533,7 +533,7 @@ You can manage actions like filtering, sorting, resizing, reordering, editing, a
 
 ## Customize column styles
 
-Customizing Gantt column styles allows you to modify the appearance to match your design needs. You can customize font, background color, and other style attributes using supported events, CSS, properties, or methods.
+Customizing Angular Gantt Chart column styles allows you to modify the appearance to match your design needs. You can customize font, background color, and other style attributes using supported events, CSS, properties, or methods.
 
 For more information check on this [documentation](https://ej2.syncfusion.com/angular/documentation/gantt/style-and-appearance).
 

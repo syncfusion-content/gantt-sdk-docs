@@ -2,7 +2,7 @@
 layout: post
 title: Resize Columns in Angular Gantt Chart | Dynamic Width | Syncfusion
 description: Learn how to resize columns in Syncfusion Angular Gantt Chart dynamically by dragging column header edges with width limits and external resize customization.
-keywords: angular gantt resize columns, allowresizing, column width, dynamic sizing, syncfusion gantt
+keywords: Angular Gantt Chart resize columns, allowresizing, column width, dynamic sizing, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/columns/column-resizing
 platform: gantt-sdk
 control: Column Resizing - Gantt Chart
@@ -38,7 +38,7 @@ To use the column resize feature, inject `ResizeService` in the `providers` arra
 
 ## Restrict the resizing based on minimum and maximum width
 
-The Gantt chart component allows restricting column resizing within a defined range to maintain layout consistency. This ensures column widths remain within the specified limits during resizing.  
+The Angular Gantt Chart component allows restricting column resizing within a defined range to maintain layout consistency. This ensures column widths remain within the specified limits during resizing.  
   
 To enable this, set the [minWidth](https://ej2.syncfusion.com/angular/documentation/api/gantt/columnDirective#minwidth) and [maxWidth](https://ej2.syncfusion.com/angular/documentation/api/gantt/columnDirective#maxwidth) properties in the column configuration.  
 
@@ -60,7 +60,7 @@ The following example demonstrates how the **TaskID** column can be configured w
 
 ## Prevent resizing for particular column
 
-You can prevent resizing for a specific column in the Gantt Chart component to maintain a consistent column width. To disable resizing, set the [allowResizing](https://ej2.syncfusion.com/angular/documentation/api/gantt/columnDirective#allowresizing) property of the respective column to **false**.  
+You can prevent resizing for a specific column in the Angular Gantt Chart component to maintain a consistent column width. To disable resizing, set the [allowResizing](https://ej2.syncfusion.com/angular/documentation/api/gantt/columnDirective#allowresizing) property of the respective column to **false**.  
 
 The following example demonstrates how to disable resizing for the **TaskID** column.
 
@@ -86,10 +86,10 @@ The Angular Gantt Chart component supports two resizing modes that determine how
 
 **Available resizing modes:**
 
-1. **Normal mode** (`mode: 'Normal'`): Columns retain their defined widths. If the total column width is less than the Gantt width, empty space appears to the right. If it exceeds, a horizontal scrollbar is shown.  
-2. **Auto mode** (`mode: 'Auto'`): Columns automatically expand or contract to fill the available space based on the Gantt width.
+1. **Normal mode** (`mode: 'Normal'`): Columns retain their defined widths. If the total column width is less than the Angular Gantt Chart width, empty space appears to the right. If it exceeds, a horizontal scrollbar is shown.  
+2. **Auto mode** (`mode: 'Auto'`): Columns automatically expand or contract to fill the available space based on the Angular Gantt Chart width.
 
-To apply a resizing mode, set the `resizeSettings.mode` property on the `grid` object inside the Gantt instance. This can be done during the `load` event or dynamically based on user interaction.  
+To apply a resizing mode, set the `resizeSettings.mode` property on the `grid` object inside the Angular Gantt Chart instance. This can be done during the `load` event or dynamically based on user interaction.  
 
 The following example demonstrates how to set the `resizeSettings.mode` to **Normal** or **Auto** based on the `DropDownList` [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#change) event.
 
@@ -107,7 +107,7 @@ The following example demonstrates how to set the `resizeSettings.mode` to **Nor
   
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/columnresize-cs6" %}
 
-> When the [autoFit](https://ej2.syncfusion.com/angular/documentation/api/grid#autofit) property of grid object in Gantt instance is set to **true**, the Gantt will automatically adjust its column width based on the content inside them. In `normal` resize mode, if the `autoFit` property is set to **true**, the Gantt will maintain any empty space that is left over after resizing the columns. However, in `auto` resize mode, the Gantt will ignore any empty space.
+> When the [autoFit](https://ej2.syncfusion.com/angular/documentation/api/grid#autofit) property of grid object in Angular Gantt Chart instance is set to **true**, the Angular Gantt Chart will automatically adjust its column width based on the content inside them. In `normal` resize mode, if the `autoFit` property is set to **true**, the Angular Gantt Chart will maintain any empty space that is left over after resizing the columns. However, in `auto` resize mode, the Angular Gantt Chart will ignore any empty space.
 
 ## Resize columns programmatically
 
@@ -129,7 +129,7 @@ The following example demonstrates how to resize a column externally using the [
   
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/columnresize-cs4" %}
 
->  The `refreshColumns` method of `treeGrid` object in gantt instance is used to refresh the gantt after the column widths are updated. Column resizing externally is useful when you want to provide a custom interface to the user for resizing columns.
+>  The `refreshColumns` method of `treeGrid` object in Angular Gantt Chart instance is used to refresh the Angular Gantt Chart after the column widths are updated. Column resizing externally is useful when you want to provide a custom interface to the user for resizing columns.
 
 ## Customize column resizing behavior using events
 
@@ -158,7 +158,7 @@ The following example demonstrates how to handle each resizing event separately 
 
 ## Touch interaction
 
-The Gantt Chart component automatically supports touch interactions for mobile devices when [allowResizing](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowresizing) is enabled.
+The Angular Gantt Chart component automatically supports touch interactions for mobile devices when [allowResizing](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowresizing) is enabled.
 
 **Resizing columns on touch devices:**
 

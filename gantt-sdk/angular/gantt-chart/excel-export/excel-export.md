@@ -2,7 +2,7 @@
 layout: post
 title: Excel Export in Angular Gantt Chart | XLSX & CSV | Syncfusion
 description: Learn how to export project data to Excel and CSV from Syncfusion Angular Gantt Chart for offline analysis, reporting, and seamless data sharing workflows.
-keywords: angular gantt excel export, xlsx, csv, allowexcelexport, excelexportservice, syncfusion gantt
+keywords: Angular Gantt Chart excel export, xlsx, csv, allowexcelexport, excelexportservice, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/excel-export/excel-export
 platform: gantt-sdk
 control: Excel Export - Gantt Chart
@@ -160,7 +160,7 @@ To export multiple datasets into a single worksheet, set [multipleExport.type](h
 
 ### New sheet
 
-To export each Gantt to a separate worksheet, set [multipleExport.type](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#multipleexport) to **NewSheet** in the [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties) configuration. This ensures each dataset is placed on its own sheet.
+To export each Angular Gantt Chart to a separate worksheet, set [multipleExport.type](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#multipleexport) to **NewSheet** in the [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties) configuration. This ensures each dataset is placed on its own sheet.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

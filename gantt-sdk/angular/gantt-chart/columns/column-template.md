@@ -2,7 +2,7 @@
 layout: post
 title: Column Template in Angular Gantt Chart | Custom Content | Syncfusion
 description: Learn how to use column templates in Syncfusion Angular Gantt Chart to display custom elements like images, buttons, or HTML in cells instead of field values.
-keywords: angular gantt column template, custom cell content, template column, html template, syncfusion gantt
+keywords: Angular Gantt Chart column template, custom cell content, template column, html template, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/columns/column-template
 platform: gantt-sdk
 control: Column Template - Gantt Chart
@@ -108,7 +108,7 @@ export class AppComponent implements OnInit {
 
 ## Render hyperlink in a column
 
-The Gantt Chart component supports hyperlink columns and allows routing on click using the `template` property. This is useful for displaying data that links to another page or website.
+The Angular Gantt Chart component supports hyperlink columns and allows routing on click using the `template` property. This is useful for displaying data that links to another page or website.
 
 To configure a hyperlink column, define a [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#template) within the **e-column** tag using `ng-template` and an `a` tag. The `onClick` function is triggered when the hyperlink is clicked.
 
@@ -337,7 +337,7 @@ The following example demonstrates how to render the [DropDownList](https://ej2.
 
 ### Render Chip component in a column
 
-The Gantt chart component supports rendering the Syncfusion<sup style="font-size:70%">&reg;</sup> [Chips](https://ej2.syncfusion.com/angular/documentation/chips/getting-started) component in a column using the [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#template) property. This is useful for displaying data that benefits from a chip-style visual representation.
+The Angular Gantt Chart component supports rendering the Syncfusion<sup style="font-size:70%">&reg;</sup> [Chips](https://ej2.syncfusion.com/angular/documentation/chips/getting-started) component in a column using the [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#template) property. This is useful for displaying data that benefits from a chip-style visual representation.
 
 The following example demonstrates how to render the Chips component in the **TaskName** column.
 
@@ -399,7 +399,7 @@ The following example demonstrates how to use the `template` property with the `
 
 ## How to get the row object by clicking on the template element
 
-The Gantt chart component allows retrieving the row object of a selected record when a [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#template) element is clicked. This is useful for performing custom actions based on the selected data.
+The Angular Gantt Chart component allows retrieving the row object of a selected record when a [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#template) element is clicked. This is useful for performing custom actions based on the selected data.
 
 In the following example, a button is rendered in the **Task Data** column. The `click` event is bound to the `showDetails` method, which receives the data object from the template variable, enabling access to the selected row and displaying it in a dialog popup.
 
@@ -486,7 +486,7 @@ export class AppComponent implements OnInit {
 
 ## Use custom helper inside the template
 
-The Gantt chart component supports using custom helper functions within the `ng-template` directive of a column. This allows you to build advanced templates by incorporating logic beyond the default `template` syntax.
+The Angular Gantt Chart component supports using custom helper functions within the `ng-template` directive of a column. This allows you to build advanced templates by incorporating logic beyond the default `template` syntax.
 
 To use a custom helper function, define it in the template context using the `let` keyword. This creates a reference to the function that can be used within the template.
 
@@ -563,7 +563,7 @@ export class AppComponent implements OnInit {
 
 ## Render a component in the template property using event
 
-You can render a component inside a Gantt chart cell by setting the `template` property and using the [queryCellInfo](https://helpej2.syncfusion.com/angular/documentation/gantt/events#querycellinfo) event to display it before the cell is rendered.
+You can render a component inside a Angular Gantt Chart cell by setting the `template` property and using the [queryCellInfo](https://helpej2.syncfusion.com/angular/documentation/gantt/events#querycellinfo) event to display it before the cell is rendered.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -579,4 +579,4 @@ You can render a component inside a Gantt chart cell by setting the `template` p
   
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/render-template-cs6" %}
 
-> When using an Angular `ng-template` in a Gantt Chart column, the template may be evaluated multiple times during Angular change detection. This is Angular's default behavior and is not specific to the Gantt Chart component. To optimize performance, avoid complex logic or expensive operations inside templates. Instead, precompute values in the component class and keep template logic simple.
+> When using an Angular `ng-template` in a Angular Gantt Chart column, the template may be evaluated multiple times during Angular change detection. This is Angular's default behavior and is not specific to the Angular Gantt Chart component. To optimize performance, avoid complex logic or expensive operations inside templates. Instead, precompute values in the component class and keep template logic simple.

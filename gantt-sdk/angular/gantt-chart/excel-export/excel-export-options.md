@@ -2,7 +2,7 @@
 layout: post
 title: Excel Export Options in Angular Gantt Chart | Syncfusion
 description: Learn how to configure Excel export options in Syncfusion Angular Gantt Chart with column selection and custom data sources.
-keywords: angular gantt excel export options, excelexportproperties, custom export, selected records, multiple gantt, syncfusion gantt
+keywords: Angular Gantt Chart excel export options, excelexportproperties, custom export, selected records, multiple gantt, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/excel-export/excel-export-options
 platform: gantt-sdk
 control: Excel Export Options - Gantt Chart
@@ -58,7 +58,7 @@ The following example demonstrates how the **StartDate** column is made visible 
 
 ## Include hidden columns in export
 
-To include hidden columns during Excel export in the Gantt Chart component, set [ExportProperties.includeHiddenColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#includehiddencolumn) to **true** in the export configuration. This ensures that hidden columns are included in the exported data.
+To include hidden columns during Excel export in the Angular Gantt Chart component, set [ExportProperties.includeHiddenColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#includehiddencolumn) to **true** in the export configuration. This ensures that hidden columns are included in the exported data.
 
 The following example demonstrates that the hidden **StartDate** column is included in the exported file.
 
@@ -80,7 +80,7 @@ The following example demonstrates that the hidden **StartDate** column is inclu
 
 ## Enable filtering in exported Excel
 
-To enable filtering in exported Excel or CSV files in Gantt Chart component, set the [enableFilter](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#enablefilter) property to **true** within [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties). Additionally, ensure that filtering is enabled in the Gantt configuration by setting [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowfiltering) to **true**.
+To enable filtering in exported Excel or CSV files in Angular Gantt Chart component, set the [enableFilter](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#enablefilter) property to **true** within [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties). Additionally, ensure that filtering is enabled in the Gantt configuration by setting [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowfiltering) to **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -100,7 +100,7 @@ To enable filtering in exported Excel or CSV files in Gantt Chart component, set
 
 ## Set custom file name
 
-To specify a custom name for the exported Excel or CSV file in the Gantt Chart component, set the [fileName](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#filename) property within the [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties) configuration. This defines the name assigned to the file when the export is triggered.
+To specify a custom name for the exported Excel or CSV file in the Angular Gantt Chart component, set the [fileName](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#filename) property within the [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties) configuration. This defines the name assigned to the file when the export is triggered.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -120,7 +120,7 @@ To specify a custom name for the exported Excel or CSV file in the Gantt Chart c
 
 ## Customize exported columns
 
-The Gantt Chart component supports customizing column settings during Excel or CSV export by configuring the [ExcelExportProperties.columns](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#columns) property. You can specify attributes such as `field`, `headerText`, and `textAlign` to define the structure and formatting of each column in the exported file, aligning the exported content with specific layout and styling preferences.
+The Angular Gantt Chart component supports customizing column settings during Excel or CSV export by configuring the [ExcelExportProperties.columns](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#columns) property. You can specify attributes such as `field`, `headerText`, and `textAlign` to define the structure and formatting of each column in the exported file, aligning the exported content with specific layout and styling preferences.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -140,7 +140,7 @@ The Gantt Chart component supports customizing column settings during Excel or C
 
 ## Add header and footer to export
 
-To add header and footer content to exported Excel or CSV files in the Gantt Chart component, configure the [header](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#header) and [footer](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#footer) properties within [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties) during the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/gantt/events#toolbarclick) event. This allows you to define custom content that appears at the top and bottom of the exported document.
+To add header and footer content to exported Excel or CSV files in the Angular Gantt Chart component, configure the [header](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#header) and [footer](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#footer) properties within [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties) during the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/gantt/events#toolbarclick) event. This allows you to define custom content that appears at the top and bottom of the exported document.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -166,7 +166,7 @@ To configure a theme, set the [theme](https://ej2.syncfusion.com/angular/documen
 
 - **caption**: Defines the style for the caption, typically used for titles or descriptions at the top of the sheet.
 - **header**: Specifies the styling for column headers.
-- **record**: Applies formatting to the data rows exported from the Gantt Chart.
+- **record**: Applies formatting to the data rows exported from the Angular Gantt Chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

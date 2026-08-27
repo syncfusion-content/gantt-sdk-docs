@@ -2,7 +2,7 @@
 layout: post
 title: Tree Column in Angular Gantt Chart | Hierarchical Display | Syncfusion
 description: Learn how to configure tree column in Syncfusion Angular Gantt Chart with treeColumnIndex to display parent-child relationships using expand/collapse icons.
-keywords: angular gantt tree column, treecolumnindex, expand collapse, parent child, hierarchy, syncfusion gantt
+keywords: Angular Gantt Chart tree column, treecolumnindex, expand collapse, parent child, hierarchy, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/columns/treecolumn
 platform: gantt-sdk
 control: Tree Column - Gantt Chart
@@ -99,7 +99,7 @@ You can collapse all parent rows during initial rendering by setting the [collap
 
 ## Retain expand/collapse state on initial load
 
-You can retain the expanded or collapsed state of parent rows during initial rendering by using the [expandState](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#expandstate) property in the data source. This property indicates whether a parent row should be expanded or collapsed when the Gantt Chart component loads.
+You can retain the expanded or collapsed state of parent rows during initial rendering by using the [expandState](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#expandstate) property in the data source. This property indicates whether a parent row should be expanded or collapsed when the Angular Gantt Chart component loads.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -209,7 +209,7 @@ this.gantt.treegrid.collapseRow(tr); // Pass the row element as parameter
 
 ## Retrieve expanded records
 
-To retrieve the currently expanded rows in the Gantt Chart component, use the [getExpandedRecords](https://ej2.syncfusion.com/angular/documentation/api/gantt#getexpandedrecords) method.
+To retrieve the currently expanded rows in the Angular Gantt Chart component, use the [getExpandedRecords](https://ej2.syncfusion.com/angular/documentation/api/gantt#getexpandedrecords) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -227,7 +227,7 @@ To retrieve the currently expanded rows in the Gantt Chart component, use the [g
 
 ## Customize expand/collapse behavior using events
 
-You can customize expand and collapse behavior in the Angular Gantt Chart component using the [expanding](https://ej2.syncfusion.com/angular/documentation/gantt/events#expanding), [expanded](https://ej2.syncfusion.com/angular/documentation/gantt/events#expanded), [collapsing](https://ej2.syncfusion.com/angular/documentation/gantt/events#collapsing), and [collapsed](https://ej2.syncfusion.com/angular/documentation/gantt/events#collapsed) events. These events allow you to control and respond to row state changes programmatically based on your application logic.
+You can customize expand and collapse behavior in the Angular Angular Gantt Chart component using the [expanding](https://ej2.syncfusion.com/angular/documentation/gantt/events#expanding), [expanded](https://ej2.syncfusion.com/angular/documentation/gantt/events#expanded), [collapsing](https://ej2.syncfusion.com/angular/documentation/gantt/events#collapsing), and [collapsed](https://ej2.syncfusion.com/angular/documentation/gantt/events#collapsed) events. These events allow you to control and respond to row state changes programmatically based on your application logic.
 
 The following sample demonstrates how to customize expand and collapse actions in the Angular Gantt Chart component:
 

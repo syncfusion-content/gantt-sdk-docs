@@ -2,7 +2,7 @@
 layout: post
 title: Angular Gantt Chart Accessibility | WCAG & ARIA | Syncfusion
 description: Learn how to implement accessibility in Syncfusion Angular Gantt Chart with WCAG 2.2, ARIA labels, keyboard navigation, and Section 508 compliance support.
-keywords: angular gantt accessibility, wcag, aria, section 508, keyboard navigation, screen reader, syncfusion gantt
+keywords: Angular Gantt Chart accessibility, wcag, aria, section 508, keyboard navigation, screen reader, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/accessibility
 platform: gantt-sdk
 control: Accessibility - Gantt Chart
@@ -44,18 +44,18 @@ The accessibility compliance for the Gantt Chart component provides detailed ins
 
 ### WCAG 2.2 compliance details
 
-The Gantt Chart component achieves **Level AA compliance** for most WCAG 2.2 criteria. The **Intermediate** rating reflects specific limitations including complex data relationships where advanced dependency visualizations may not provide complete programmatic relationships for assistive technologies, dynamic content updates where certain real-time data changes in large datasets may require additional ARIA live region implementation, and custom templates where user-defined templates may require additional accessibility considerations depending on content complexity.
+The Angular Gantt Chart component achieves **Level AA compliance** for most WCAG 2.2 criteria. The **Intermediate** rating reflects specific limitations including complex data relationships where advanced dependency visualizations may not provide complete programmatic relationships for assistive technologies, dynamic content updates where certain real-time data changes in large datasets may require additional ARIA live region implementation, and custom templates where user-defined templates may require additional accessibility considerations depending on content complexity.
 
 ## WAI-ARIA attributes
 
-The Gantt Chart component implements comprehensive [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns) patterns to ensure optimal accessibility. These attributes provide semantic information to assistive technologies and enhance the user experience for individuals with disabilities.
+The Angular Gantt Chart component implements comprehensive [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns) patterns to ensure optimal accessibility. These attributes provide semantic information to assistive technologies and enhance the user experience for individuals with disabilities.
 
 ### Core ARIA implementation
 
 | Attributes            | Purpose                                                                                                   | Implementation Context                                  |
 | --------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
-| `grid (role)`         | Applied to the `e-table` element representing the Grid portion of the Gantt Chart component               | Provides semantic structure for the data grid area      |
-| `gridcell (role)`     | Applied to `td` elements within the `e-table`, representing individual work cells in the Gantt grid       | Enables cell-by-cell navigation for screen readers      |
+| `grid (role)`         | Applied to the `e-table` element representing the Grid portion of the Angular Gantt Chart component               | Provides semantic structure for the data grid area      |
+| `gridcell (role)`     | Applied to `td` elements within the `e-table`, representing individual work cells in the Angular Gantt Chart grid       | Enables cell-by-cell navigation for screen readers      |
 | `columnheader (role)` | Applied to `th` elements within the `e-table`, representing header cells in the Grid table                | Provides column identification and sorting information  |
 | `separator (role)`    | Applied to the `e-split-bar` element, representing the splitter between the Grid table and Chart sections | Indicates resizable boundary between interface sections |
 | `dialog (role)`       | Applied to the `e-dialog` element, representing modal dialog boxes                                        | Manages focus and provides modal interaction patterns   |
@@ -66,7 +66,7 @@ The Gantt Chart component implements comprehensive [WAI-ARIA](https://www.w3.org
 | Attributes         | Purpose                                                                                                                          | Dynamic Behavior                                                            |
 | ------------------ | -------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
 | `aria-label`       | Provides descriptive information for UI elements including timeline cells, taskbars, labels, dependency lines, and event markers | Dynamically updates based on task names, dates, progress, and relationships |
-| `aria-selected`    | Applied to Gantt chart rows with a default value of **false**. Changes to **true** when users select a grid cell or task         | Updates during selection changes to maintain current selection state        |
+| `aria-selected`    | Applied to Angular Gantt Chart rows with a default value of **false**. Changes to **true** when users select a grid cell or task         | Updates during selection changes to maintain current selection state        |
 | `aria-expanded`    | Applied to parent task rows. Value changes to **true** when expanding and **false** when collapsing parent tasks                 | Reflects hierarchical task structure state changes                          |
 | `aria-grabbed`     | Applied to taskbars during taskbar editing operations to indicate drag state                                                     | Activated during drag-and-drop operations for accessibility feedback        |
 | `aria-describedby` | Links tasks to detailed descriptions, tooltips, or error messages                                                                | Dynamically associates contextual information with interactive elements     |
@@ -97,11 +97,11 @@ The accessibility checker tools highlight the following known issues:
 
 ## Keyboard navigation
 
-The Gantt Chart component provides comprehensive keyboard navigation support following [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns) guidelines. This ensures full functionality for users relying on assistive technologies or keyboard-only navigation patterns.
+The Angular Gantt Chart component provides comprehensive keyboard navigation support following [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns) guidelines. This ensures full functionality for users relying on assistive technologies or keyboard-only navigation patterns.
 
 | **Press**                            | **To do this**                                 | **Context**                 |
 | ------------------------------------ | ---------------------------------------------- | --------------------------- |
-| <kbd>Alt + J</kbd>                   | Focus Gantt Chart component                    | Global application shortcut |
+| <kbd>Alt + J</kbd>                   | Focus Angular Gantt Chart component                    | Global application shortcut |
 | <kbd>Tab / Shift + Tab</kbd>         | Focus the next or previous element             | Standard tab navigation     |
 | <kbd>Home</kbd>                      | Selects the first row                          | Grid and chart areas        |
 | <kbd>End</kbd>                       | Selects the last row                           | Grid and chart areas        |
@@ -130,7 +130,7 @@ The Gantt Chart component provides comprehensive keyboard navigation support fol
 
 ## Error handling and validation accessibility
 
-The Gantt Chart component provides accessible error handling and validation feedback patterns for Gantt-specific scenarios including dependency validation, resource conflicts, and date constraint violations.
+The Angular Gantt Chart component provides accessible error handling and validation feedback patterns for Gantt-specific scenarios including dependency validation, resource conflicts, and date constraint violations.
 
 
 ```typescript
@@ -169,23 +169,23 @@ export class AccessibleGanttComponent {
 
 ## Mobile and touch accessibility
 
-The Gantt Chart component provides comprehensive accessibility support for mobile and touch devices through the [enableAdaptiveUI](https://ej2.syncfusion.com/angular/documentation/api/gantt#enableadaptiveui) property, ensuring individuals with disabilities can effectively interact with the component across all device types.
+The Angular Gantt Chart component provides comprehensive accessibility support for mobile and touch devices through the [enableAdaptiveUI](https://ej2.syncfusion.com/angular/documentation/api/gantt#enableadaptiveui) property, ensuring individuals with disabilities can effectively interact with the component across all device types.
 
 Touch gesture accessibility includes single tap equivalent to click for task selection and activation, double tap to open task editing dialog or activate focused elements, long press to open context menu with full keyboard navigation support, swipe gestures for horizontal scrolling through timeline with appropriate announcements, and pinch to zoom for timeline scaling with accessibility feedback. These gestures are optimized for assistive touch technologies and provide tactile feedback where supported by the device platform.
 
 ## Testing accessibility
 
-The Gantt Chart component's accessibility compliance is validated through automated testing using [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) tools. These tools help ensure the component meets established accessibility standards during development and testing phases, providing comprehensive coverage of WCAG guidelines and Section 508 compliance requirements.
+The Angular Gantt Chart component's accessibility compliance is validated through automated testing using [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) tools. These tools help ensure the component meets established accessibility standards during development and testing phases, providing comprehensive coverage of WCAG guidelines and Section 508 compliance requirements.
 
 ## Voluntary Product Accessibility Template (VPAT)
 
 The Angular Gantt Chart component includes comprehensive VPAT documentation detailing accessibility conformance across international standards. This documentation provides structured information about compliance with Section 508, WCAG 2.2, and EN 301 549 requirements.
 
-For detailed accessibility conformance information, refer to the [Syncfusion VPAT document](https://ej2.syncfusion.com/accessibility/Syncfusion-VPAT2.5.docx) which provides specific compliance details for all Syncfusion components including the Gantt chart.
+For detailed accessibility conformance information, refer to the [Syncfusion VPAT document](https://ej2.syncfusion.com/accessibility/Syncfusion-VPAT2.5.docx) which provides specific compliance details for all Syncfusion components including the Angular Gantt Chart.
 
 ## Live accessibility sample
 
-The accessibility compliance of the Gantt Chart component is demonstrated in the following comprehensive sample. This sample showcases all accessibility features, keyboard navigation patterns, and assistive technology support.
+The accessibility compliance of the Angular Gantt Chart component is demonstrated in the following comprehensive sample. This sample showcases all accessibility features, keyboard navigation patterns, and assistive technology support.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/gantt.html" %}
 
