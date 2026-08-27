@@ -252,13 +252,11 @@ The following example allows only the Start to Finish (SF) dependency type. This
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/allowedDependencyTypes-cs1" %}
 
-> **Default behavior**
+>**NOTE**
 >
-> If the `allowedDependencyTypes` property is not specified, all dependency types are allowed.
+> By default, all dependency types are allowed when the `allowedDependencyTypes` property is not specified.
 >
-> **Empty collection behavior**
->
-> This is equivalent to not specifying the `allowedDependencyTypes` property. In both cases, all supported dependency types are allowed. The Gantt processes all supported dependency types during data loading and permits all dependency relationship types to be created or modified during editing operations.
+> Specifying an empty collection (`allowedDependencyTypes: []`) is equivalent to not defining the `allowedDependencyTypes` property. In both cases, all supported dependency types are allowed. The Gantt processes all supported dependency types during data loading and allows all dependency relationship types to be created or modified during editing operations.
 
 ## Limitation
 
