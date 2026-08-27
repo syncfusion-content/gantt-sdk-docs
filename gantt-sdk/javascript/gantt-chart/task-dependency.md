@@ -228,16 +228,7 @@ By default, Gantt Chart task dates are validated based on predecessor values. To
 
 The Gantt Chart supports the [allowedDependencyTypes](https://ej2.syncfusion.com/javascript/documentation/api/gantt#alloweddependencytypes) property to control which dependency relationship types can participate in dependency processing during data loading and editing operations.
 
-Using this property, you can explicitly specify the dependency types that are allowed during:
-
-- Initial data loading.
-- CRUD operations.
-- Cell editing.
-- Dialog editing.
-- Taskbar editing.
-- Connector line editing.
-
-Only the dependency types included in the configured `allowedDependencyTypes` collection are processed and maintained. Dependency types that are not included in the collection are ignored during data loading and prevented during editing actions.
+Only the dependency types included in the configured `allowedDependencyTypes` collection are processed and maintained. Dependency types that are not included in the collection are ignored during data loading and prevented during editing actions. This behavior applies to all CRUD operations.
 
 The supported dependency types are:
 
