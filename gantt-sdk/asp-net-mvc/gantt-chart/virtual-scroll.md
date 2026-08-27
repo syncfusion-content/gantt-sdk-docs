@@ -3,7 +3,7 @@ layout: post
 title: Virtual Scroll in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to enable virtual scrolling in Syncfusion ASP.NET MVC Gantt Chart to efficiently handle large datasets and improve performance.
 keywords: asp.net mvc gantt virtual scroll, virtual scrolling, large datasets, performance optimization, scroll performance, syncfusion gantt chart
-canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/virtual-scrolling
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/virtual-scroll
 platform: gantt-sdk
 control: Virtual Scroll - Gantt Chart
 documentation: ug

@@ -3,7 +3,7 @@ layout: post
 title: Getting Started in ASP.NET MVC Kanban | Syncfusion
 description: Learn how to start using Syncfusion ASP.NET MVC Kanban with step-by-step setup instructions and essential component features.
 keywords: asp-net-mvc kanban getting started, syncfusion kanban, install component, setup
-canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/kanban/getting-started
+canonical: https://www.syncfusion.com/gantt-sdk/aspnet-mvc-kanban-board
 platform: gantt-sdk
 control: Getting Started - Kanban
 documentation: ug
@@ -207,7 +207,7 @@ If the Kanban control does not render or behaves unexpectedly, verify the follow
 
 ## See also
 
-- [Real-time example using Kanban](https://ej2.syncfusion.com/aspnetmvc/Kanban/Workflow#/material)
-- [Kanban columns configuration](https://ej2.syncfusion.com/aspnetmvc/documentation/kanban/columns)
-- [Kanban data binding](https://ej2.syncfusion.com/aspnetmvc/documentation/kanban/data-binding)
-- [Syncfusion<sup style="font-size:70%">&reg;</sup> licensing documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing)
+* [Real-time example using Kanban](https://ej2.syncfusion.com/aspnetmvc/kanban/workflow#/fluent2)
+* [Kanban columns configuration](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/kanban/columns)
+* [Kanban data binding](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/kanban/data-binding)
+* [Syncfusion<sup style="font-size:70%">&reg;</sup> licensing documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/overview)

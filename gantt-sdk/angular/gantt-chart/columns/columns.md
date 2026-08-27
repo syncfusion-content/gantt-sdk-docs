@@ -3,7 +3,7 @@ layout: post
 title: Columns in Angular Gantt Chart | Field Mapping | Syncfusion
 description: Learn how to configure columns in Syncfusion Angular Gantt Chart with field mapping, formatting, and customization to display task data in a tabular structure.
 keywords: angular gantt columns, column field, column customization, task data display, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/columns
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/columns/columns
 platform: gantt-sdk
 control: Columns - Gantt Chart
 documentation: ug
@@ -68,7 +68,7 @@ In Gantt for Angular, column width can be adjusted using the [width](https://ej2
 
 > To learn more about resizing, you can refer to the resizing section [here](https://ej2.syncfusion.com/angular/documentation/gantt/columns/column-resizing)
 
-#### Supported types for column width
+### Supported types for column width
 
 The Gantt supports the following three types of column width:
 
@@ -539,7 +539,7 @@ For more information check on this [documentation](https://ej2.syncfusion.com/an
 
 ## Updating column definitions
 
-To update column definitions in Angular Gantt Chart component, modify the [columns](https://helpej2.syncfusion.com/angular/documentation/api/gantt/column) property to adjust column appearance and behavior by changing attributes like [headerText](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#headertext), [width](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#width), or [visible](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#visible). After making the required updates, use the `refreshColumns` method from the `treeGrid` object to apply and reflect the changes in the Gantt chart.
+To update column definitions in Angular Gantt Chart component, modify the [columns](https://ej2.syncfusion.com/angular/documentation/api/gantt/column) property to adjust column appearance and behavior by changing attributes like [headerText](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#headertext), [width](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#width), or [visible](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#visible). After making the required updates, use the `refreshColumns` method from the `treeGrid` object to apply and reflect the changes in the Gantt chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -560,7 +560,7 @@ To update column definitions in Angular Gantt Chart component, modify the [colum
 
 ## Adding/removing columns
 
-You can add or remove columns in the Angular Gantt by updating the [columns](https://helpej2.syncfusion.com/angular/documentation/api/gantt/column) option in the Gantt instance. To add a column, **push** a new column object into the `columns` array. To remove a column, use **pop** to delete the last item or `splice` to remove a specific one from the array.
+You can add or remove columns in the Angular Gantt by updating the [columns](https://ej2.syncfusion.com/angular/documentation/api/gantt/column) option in the Gantt instance. To add a column, **push** a new column object into the `columns` array. To remove a column, use **pop** to delete the last item or `splice` to remove a specific one from the array.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -45,7 +45,7 @@ Merge split tasks using the context menu’s **Merge Task** option, requiring [e
 
 ## Get the clicked segment information
 
-You can get the clicked segment information using the [onTaskbarClick](https://helpej2.syncfusion.com/angular/documentation/gantt/events#ontaskbarclick) event.
+You can get the clicked segment information using the [onTaskbarClick](https://ej2.syncfusion.com/angular/documentation/gantt/events#ontaskbarclick) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -68,7 +68,7 @@ In Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt for React, column widt
 
 > To learn more about resizing, you can refer to the resizing section [here](https://ej2.syncfusion.com/react/documentation/gantt/columns/column-resizing)
 
-#### Supported types for column width
+### Supported types for column width
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt supports the following three types of column width:
 

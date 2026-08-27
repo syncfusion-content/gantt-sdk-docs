@@ -3,7 +3,7 @@ layout: post
 title: Getting Started in Blazor Kanban | Syncfusion
 description: Learn how to start using Syncfusion Blazor Kanban with step-by-step setup instructions for Blazor WebAssembly and essential component features.
 keywords: blazor kanban getting started, syncfusion kanban, install component, blazor wasm
-canonical: https://help.syncfusion.com/gantt-sdk/blazor/kanban/getting-started
+canonical: https://www.syncfusion.com/gantt-sdk/blazor-kanban-board
 platform: gantt-sdk
 control: Getting Started - Kanban
 documentation: ug
