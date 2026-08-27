@@ -91,7 +91,7 @@ Task calendars can include holidays that override project calendar holidays for 
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/task-calendar-holiday" %}
 
-## Configure duration calculations
+## Configure hours per day for task durations
 
 The [hoursPerDay](../api/gantt#hoursperday) property defines the number of hours used to represent one day when calculating task durations. Changing `hoursPerDay` recalculates day-based duration values using the existing working duration of the task. This affects how duration is displayed and calculated in days, but does not modify the task's start date, end date, or underlying working duration.
 
