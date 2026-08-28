@@ -24,7 +24,7 @@ Data Type </th></tr>
 <tr>
 <td>
 {{'[ToolTipTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ToolTipTemplate)'| markdownify }}</td><td>
-Gets or set the TaskBarCollection Property of GanttControl</td><td>
+Gets or set the TaskBarCollection Property of WPF Gantt Control</td><td>
 Dependency Property</td><td>
 DataTemplate</td></tr>
 </table>
@@ -32,7 +32,7 @@ DataTemplate</td></tr>
 
 ## Adding CustomToolTip to Gantt 
 
-The following code illustrates how to add a custom tooltip to the Gantt control.
+The following code illustrates how to add a custom tooltip to the WPF Gantt control.
 
 {% tabs %}
 {% highlight xaml %}
