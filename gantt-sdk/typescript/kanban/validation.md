@@ -28,9 +28,7 @@ The `minCount` property is used to specify the minimum cards hold on particular 
 
 The `maxCount` property is used to specify the maximum cards hold on particular column or swimlane cell. If the column or swimlane cell total card count exceeds the maximum count value, it shows the column or cell background colour with validation fails.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt-sdk/typescript/kanban/column-validation-cs1/index.ts %}
 {% endhighlight %}
@@ -38,19 +36,5 @@ The `maxCount` property is used to specify the maximum cards hold on particular 
 {% include code-snippet/gantt-sdk/typescript/kanban/column-validation-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/column-validation-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/column-validation-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/column-validation-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/column-validation-cs1" %}
-{% endif %}
