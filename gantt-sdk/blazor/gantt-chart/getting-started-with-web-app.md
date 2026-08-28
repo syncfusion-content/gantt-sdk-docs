@@ -278,22 +278,6 @@ dotnet run
 
 {% endtabcontent %}
 
-{% tabcontent .NET CLI %}
-
-Open the command prompt and navigate to the main project folder (for example, `BlazorWebApp`) and run the following command.
-
-{% tabs %}
-{% highlight razor tabtitle="Command Prompt" %}
-
-cd ..
-cd BlazorWebApp
-dotnet run
-
-{% endhighlight %}
-{% endtabs %}
-
-{% endtabcontent %}
-
 {% endtabcontents %}
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/LDhdjcrXJjgihVLC?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
