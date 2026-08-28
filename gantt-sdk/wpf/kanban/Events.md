@@ -19,7 +19,7 @@ This event is triggered when you tap on any card. The argument contains the foll
 * [`SelectedColumnIndex`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanDragEventArgs_SelectedColumnIndex) - Used to get the index of dragging card's  column.
 * [`SelectedRowIndex`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanDragEventArgs_SelectedRowIndex) - Used to get the index of dragging card's row.
 
-#### Command
+### Command
 
 The `CardTappedCommand` property is used to associate a command with the control. This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
 
