@@ -21,8 +21,6 @@ The Kanban uses `DataManager`, which supports both RESTful data service binding 
 
 To bind local list data to the Kanban, you can simply assign a list to the `dataSource` property. The list can also be provided as an instance of `DataManager` and assigned to the Kanban `dataSource` property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/local-data/tagHelper %}
@@ -31,18 +29,6 @@ To bind local list data to the Kanban, you can simply assign a list to the `data
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/local-data/datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/local-data/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/local-data/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 Output be like the below.
 
@@ -54,8 +40,6 @@ N> By default, `DataManager` uses `JsonAdaptor` for binding local data.
 
 To bind remote data to kanban component, assign service data as an instance of `DataManager` to the `dataSource`property. To interact with remote data source, provide the endpoint **url**.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/remote-data/tagHelper %}
@@ -64,18 +48,6 @@ To bind remote data to kanban component, assign service data as an instance of `
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/remote-data/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/remote-data/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/remote-data/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 Output be like the below.
 
@@ -87,8 +59,6 @@ N> By default, `DataManager` uses **ODataAdaptor** for remote data-binding.
 
 [`OData`](http://www.odata.org/documentation/odata-version-3-0) is a standardized protocol for creating and consuming data. You can retrieve data from OData service using the DataManager. Refer to the following code example for remote Data binding using OData service.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/odata-service/tagHelper %}
@@ -97,25 +67,11 @@ N> By default, `DataManager` uses **ODataAdaptor** for remote data-binding.
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/odata-service/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/odata-service/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/odata-service/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### OData v4 services
 
 The ODataV4 is an improved version of OData protocols, and the `DataManager` can also retrieve and consume OData v4 services. For more details on OData v4 services, refer to the [`OData Documentation`](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). To bind OData v4 service, use the **ODataV4Adaptor**.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/odata-service/tagHelper %}
@@ -124,18 +80,6 @@ The ODataV4 is an improved version of OData protocols, and the `DataManager` can
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/odata-service/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/odata-service/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/odata-service/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 Output be like the below.
 
@@ -145,8 +89,6 @@ Output be like the below.
 
 You can use **WebApiAdaptor** to bind kanban with Web API created using OData endpoint.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/web-api/tagHelper %}
@@ -155,18 +97,6 @@ You can use **WebApiAdaptor** to bind kanban with Web API created using OData en
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/web-api/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/web-api/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/web-api/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 Below server-side controller code to get the Kanban data.
 
@@ -192,8 +122,6 @@ The CRUD operation in Kanban can be mapped to server-side controller actions usi
 - `removeUrl` – You can remove single data on the server-side.
 - `crudUrl` – You can perform bulk data operation on the server-side.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/url-adaptor/tagHelper %}
@@ -202,18 +130,6 @@ The CRUD operation in Kanban can be mapped to server-side controller actions usi
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/url-adaptor/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/url-adaptor/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/url-adaptor/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 The server-side controller code to handle the CRUD operations are as follows.
 
@@ -250,8 +166,6 @@ N> The `crudUrl` is used to update the bulk data sent to the server-side. Multip
 
 It is possible to create your own custom adaptor by extending the built-in available adaptors. The following example demonstrates the custom adaptor usage and how to add a custom field `TaskId` for the cards by overriding the built-in response processing using the `processResponse` method of the `ODataAdaptor`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/custom-adaptor/tagHelper %}
@@ -261,18 +175,6 @@ It is possible to create your own custom adaptor by extending the built-in avail
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/custom-adaptor/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/custom-adaptor/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 Output be like the below.
 
 ![kanban](./images/custom-adaptor.PNG)
@@ -280,8 +182,6 @@ Output be like the below.
 ### Sending additional parameters to the server
 
 To add a custom parameter to the data request, use the **addParams** method of **Query** class. Assign the **Query** object with additional parameters to the kanban `query` property.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -292,18 +192,6 @@ To add a custom parameter to the data request, use the **addParams** method of *
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/additional-parameter/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/additional-parameter/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 N> The parameters added using the `Query` property will be sent along with the data request for every kanban action.
 
 ### Handling HTTP error
@@ -311,8 +199,6 @@ N> The parameters added using the `Query` property will be sent along with the d
 During server interaction from the kanban, some server-side exceptions may occur, and you can acquire those error messages or exception details in client-side using the `actionFailure` event.
 
 The argument passed to the `actionFailure` event contains the error details returned from the server.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -322,18 +208,6 @@ The argument passed to the `actionFailure` event contains the error details retu
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/http-error/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/http-error/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/http-error/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 Output be like the below.
 
@@ -345,8 +219,6 @@ N> The `actionFailure` event will be triggered not only for the server errors, b
 
 You can use Kanban `dataSource` property to bind the datasource to Kanban from external ajax request. In the following code, we have fetched the datasource from the server using ajax request and provided that to the `dataSource` property by using the **OnSuccess** event of ajax.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/data-via-ajax/tagHelper %}
@@ -355,18 +227,6 @@ You can use Kanban `dataSource` property to bind the datasource to Kanban from e
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/data-via-ajax/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/data-via-ajax/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/data-binding/data-via-ajax/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 Output be like the below.
 

@@ -41,8 +41,6 @@ To load translation object in an application, use `load` function of `L10n` clas
 
 The following example demonstrates the Kanban in `Deutsch` culture.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/localization/localization/tagHelper %}
@@ -51,21 +49,6 @@ The following example demonstrates the Kanban in `Deutsch` culture.
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/localization/localization/datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/localization/localization/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/localization/localization/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 Output be like the below.
 
 ![kanban](./images/localization.PNG)
@@ -73,8 +56,6 @@ Output be like the below.
 ## Right to left (RTL)
 
 The Kanban provides an option to switch its text direction and layout from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable right-to-left mode in Kanban, set the `enableRtl` to true.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -84,20 +65,6 @@ The Kanban provides an option to switch its text direction and layout from right
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/localization/rtl/datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/localization/rtl/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/localization/rtl/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 Output be like the below.
 

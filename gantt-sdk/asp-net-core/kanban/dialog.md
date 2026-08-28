@@ -36,8 +36,6 @@ The dialog displays with the following fields which mapped to dialog fields by d
 | cardSettings.priority(If applicable) | Numeric | - |
 | swimlaneSettings.keyField(If applicable) | DropDown | - |
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/default/tagHelper %}
@@ -46,20 +44,6 @@ The dialog displays with the following fields which mapped to dialog fields by d
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/default/datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/default/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/default/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 Output be like the below.
 
@@ -80,8 +64,6 @@ The following types are available in dialog fields.
 
 N> If `type` is not defined in the fields, then it renders as the HTML input element in dialog.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/custom-fields/tagHelper %}
@@ -91,20 +73,6 @@ N> If `type` is not defined in the fields, then it renders as the HTML input ele
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/custom-fields/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/custom-fields/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 Output be like the below.
 
 ![kanban](./images/custom-fields.PNG)
@@ -112,8 +80,6 @@ Output be like the below.
 ### Custom Fields label
 
 By default, the fields `key` mapping value is considered as a `label` and you can change this label by using `text` property.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -124,20 +90,6 @@ By default, the fields `key` mapping value is considered as a `label` and you ca
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/custom-field-label/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/custom-field-label/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 Output be like the below.
 
 ![kanban](./images/custom-fields-label.PNG)
@@ -145,8 +97,6 @@ Output be like the below.
 ### Fields Validation
 
 The dialog fields can be validated while click on the `Save` button. This can be achieved by using `validationRules` property.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -157,25 +107,9 @@ The dialog fields can be validated while click on the `Save` button. This can be
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/fields-validation/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/fields-validation/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ## Dialog Template
 
 Using the dialog template, you can render your own dialog by defining the `template` property. Initialize the template as SCRIPT element Id or HTML string which holds the template and map it to the template property.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -186,20 +120,6 @@ Using the dialog template, you can render your own dialog by defining the `templ
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/template/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/template/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 Output be like the below.
 
 ![kanban](./images/dialog-template.PNG)
@@ -207,8 +127,6 @@ Output be like the below.
 ## Prevent Dialog
 
 The Kanban allows to prevent to open a dialog on card double-click by enabling `args.cancel` in `dialogOpen` event.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -218,20 +136,6 @@ The Kanban allows to prevent to open a dialog on card double-click by enabling `
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/prevent-dialog/datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/prevent-dialog/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/prevent-dialog/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ## Persisting data in server
 
@@ -254,8 +158,6 @@ You can map the CRUD operation in Kanban can be mapped to server-side controller
 
 The following code example describes the above behavior.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/url-adaptor/tagHelper %}
@@ -264,20 +166,6 @@ The following code example describes the above behavior.
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/url-adaptor/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/url-adaptor/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/url-adaptor/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 The server-side controller code to handle the CRUD operations are as follows.
 
@@ -364,8 +252,6 @@ The action parameter of `crudUrl` is used to get the corresponding CRUD action.
 
 The following code example describes the above behavior.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/crud-url-adaptor/tagHelper %}
@@ -374,20 +260,6 @@ The following code example describes the above behavior.
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/crud-url-adaptor/datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/crud-url-adaptor/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/crud-url-adaptor/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ```typescript
 

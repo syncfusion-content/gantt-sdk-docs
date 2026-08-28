@@ -20,8 +20,6 @@ N> If you wish to show tooltip on Kanban board custom elements, you need to add 
 
 You can customize the tooltip content with any HTML or CSS element and styling using the `tooltipTemplate` property. In the following demo, the tooltip is customized with HTML elements.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/tooltip/tagHelper %}
@@ -30,21 +28,6 @@ You can customize the tooltip content with any HTML or CSS element and styling u
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/tooltip/datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/tooltip/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/tooltip/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 Output be like the below.
 
 ![kanban](./images/tooltip.PNG)

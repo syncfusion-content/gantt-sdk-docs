@@ -18,8 +18,6 @@ Swimlanes are horizontal categorizations of cards on the Kanban board.  It is us
 
 Cards can be grouped based on `keyField` and displayed in rows, which are separated by columns. It is mandatory to define the `keyField` that is mapped from the datasource for rendering swimlane rows in the Kanban board.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/swimlane/swimlane-row/tagHelper %}
@@ -28,21 +26,6 @@ Cards can be grouped based on `keyField` and displayed in rows, which are separa
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/swimlane/swimlane-row/datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/swimlane/swimlane-row/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/swimlane/swimlane-row/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 Output be like the below.
 
 ![kanban](./images/swimlane-row.PNG)
@@ -54,8 +37,6 @@ Customize the swimlane row header text by using the `textField` property mapped 
 N> It is not mandatory to define the `textField` to `swimlaneSettings`.  It will automatically consider the `keyField` to swimlane row header text.
 N> If the mapping `textField` key is not present in the datasource, it will consider the swimlane `keyField` as swimlane row header text.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/swimlane/custom-row/tagHelper %}
@@ -65,25 +46,9 @@ N> If the mapping `textField` key is not present in the datasource, it will cons
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/swimlane/custom-row/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/swimlane/custom-row/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ## Template
 
 You can customize the Kanban swimlane row by using the `template` property, which is specified within the `swimlaneSettings` property. In this demo, the swimlane header is customized with HTML element.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -94,20 +59,6 @@ You can customize the Kanban swimlane row by using the `template` property, whic
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/swimlane/template/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/swimlane/template/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 Output be like the below.
 
 ![kanban](./images/template.PNG)
@@ -115,8 +66,6 @@ Output be like the below.
 ## Sorting
 
 Swimlane rows are rendered on descending order when using the `sortBy` property set to `Descending` order. By default, swimlane rows are rendered by **Ascending** order.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -127,20 +76,6 @@ Swimlane rows are rendered on descending order when using the `sortBy` property 
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/swimlane/sorting/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/swimlane/sorting/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 Output be like the below.
 
 ![kanban](./images/sorting.PNG)
@@ -148,8 +83,6 @@ Output be like the below.
 ## Drag-and-drop
 
 By default, The Kanban does not allow dragging the cards across the swimlane rows. Enabling the `dragAndDrop` property allows you to drag the cards across the swimlane rows, which is specified inside `swimlaneSettings` property.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -160,25 +93,9 @@ By default, The Kanban does not allow dragging the cards across the swimlane row
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/swimlane/drag-and-drop/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/swimlane/drag-and-drop/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ## Create empty row
 
 You can render the empty swimlane row by enabling the `showEmptyRow` property. If mapping `keyField` does not have cards, empty swimlane row will be rendered.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -188,20 +105,6 @@ You can render the empty swimlane row by enabling the `showEmptyRow` property. I
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/swimlane/empty-row/datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/swimlane/empty-row/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/swimlane/empty-row/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 Output be like the below.
 
@@ -215,8 +118,6 @@ N> Provided localization support for **Items** text.
 
 In below demo, disabled on `showItemCount` property on rendering swimlane row without total count.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/swimlane/cards-count/tagHelper %}
@@ -225,20 +126,6 @@ In below demo, disabled on `showItemCount` property on rendering swimlane row wi
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/swimlane/cards-count/datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/swimlane/cards-count/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/swimlane/cards-count/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 Output be like the below.
 
@@ -252,8 +139,6 @@ By default, the `enableFrozenRows` property is set as `false`. If you wish to sh
 
 N> This feature support only when using Kanban content scrolling.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/swimlane/frozen-rows/tagHelper %}
@@ -262,19 +147,5 @@ N> This feature support only when using Kanban content scrolling.
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/swimlane/frozen-rows/datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/swimlane/frozen-rows/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/swimlane/frozen-rows/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ![kanban](./images/frozen-rows.png)

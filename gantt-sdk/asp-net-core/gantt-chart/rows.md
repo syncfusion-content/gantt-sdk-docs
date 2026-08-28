@@ -172,7 +172,7 @@ You can customize the appearance of a row in grid side, by using the [`rowDataBo
 
 ## Styling alternate rows
 
-You can change the background colour of alternative rows in Gantt chart, by overriding the class as shown below.
+You can change the background color of alternative rows in Gantt chart, by overriding the class as shown below.
 
 ```css
 .e-altrow, tr.e-chart-row:nth-child(even)  {

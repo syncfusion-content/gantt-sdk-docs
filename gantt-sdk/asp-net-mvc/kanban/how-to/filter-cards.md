@@ -12,22 +12,9 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Filter Cards in ASP.NET MVC Kanban
 
-You can filter the collection of cards from the dataSource and display it on the Kanban board by using the [`query`](../../api/kanban#query) property.
+You can filter the collection of cards from the dataSource and display it on the Kanban board by using the `query` property.
 
 In the below sample, you can filter the cards based on the ‘where’ query and display the filtered data to the Kanban board.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/cards/filter-cards/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/cards/filter-cards/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -37,7 +24,6 @@ In the below sample, you can filter the cards based on the ‘where’ query and
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/cards/filter-cards/datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 Output be like the below.
 

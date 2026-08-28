@@ -20,8 +20,6 @@ Kanban columns are categorized by mapping the **key** from the datasource using 
 
 N> The `keyField` property is mandatory to render the columns in the Kanban board.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/columns/single-key/tagHelper %}
@@ -31,20 +29,6 @@ N> The `keyField` property is mandatory to render the columns in the Kanban boar
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/columns/single-key/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/columns/single-key/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 Output be like the below.
 
 ![kanban](./images/singel-key.PNG)
@@ -52,8 +36,6 @@ Output be like the below.
 ## Multi-key mapping
 
 Kanban board allows to render a single column by mapping multiple keys using `keyField` property. In below sample, specified the multiple keys(Open, Validate) to a single column.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -63,20 +45,6 @@ Kanban board allows to render a single column by mapping multiple keys using `ke
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/columns/multi-key/datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/columns/multi-key/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/columns/multi-key/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 Output be like the below.
 
@@ -90,8 +58,6 @@ You can provide the column header text of Kanban columns using the `headerText` 
 
 You can customize the column header with any HTML or CSS element using the `template` property as shown in the following code.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/columns/header-template/tagHelper %}
@@ -100,20 +66,6 @@ You can customize the column header with any HTML or CSS element using the `temp
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/columns/header-template/datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/columns/header-template/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/columns/header-template/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 Output be like the below.
 
@@ -125,8 +77,6 @@ Kanban allows to expand or collapse its columns using `allowToggle` inside the `
 
 N> By default, collapsed column width is set to `50px`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/columns/toggle-columns/tagHelper %}
@@ -135,20 +85,6 @@ N> By default, collapsed column width is set to `50px`.
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/columns/toggle-columns/datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/columns/toggle-columns/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/columns/toggle-columns/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 Output be like the below.
 
@@ -162,8 +98,6 @@ N>The `isExpanded` property only works when enabling the `allowToggle` property 
 
 In the following example, the To Do column is collapsed on initialization of Kanban board.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/columns/initially-collapsed/tagHelper %}
@@ -173,20 +107,6 @@ In the following example, the To Do column is collapsed on initialization of Kan
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/columns/initially-collapsed/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/columns/initially-collapsed/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 Output be like the below.
 
 ![kanban](./images/initially-collapsed.PNG)
@@ -194,8 +114,6 @@ Output be like the below.
 ## Drag and Drop
  
 The Kanban component allows dynamic column reordering through drag-and-drop interactions. To enable this, set the [`allowColumnDragAndDrop`] property to true. Once enabled, users can rearrange columns by dragging a column header to a new position, with visual feedback highlighting potential drop locations.
- 
-{% if page.publishingplatform == "aspnet-core" %}
  
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -205,18 +123,6 @@ The Kanban component allows dynamic column reordering through drag-and-drop inte
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/columns/drag-drop/datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
- 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
- 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/columns/drag-drop/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/columns/drag-drop/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Stacked headers
 
@@ -226,8 +132,6 @@ Define the grouping of columns **Key** value to the `keyFields` property and pro
 
 In the following code, the kanban columns 'InProgress, Review' are grouped under 'Development phase' category.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/columns/stacked-headers/tagHelper %}
@@ -236,20 +140,6 @@ In the following code, the kanban columns 'InProgress, Review' are grouped under
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/columns/stacked-headers/datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/columns/stacked-headers/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/columns/stacked-headers/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 Output be like the below.
 

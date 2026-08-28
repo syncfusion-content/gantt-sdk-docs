@@ -41,8 +41,6 @@ N> You can prevent the drag or drop behavior of the particular column by disabli
 
 In the following example, disable the drag and drop behavior on the Kanban board.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/drag-and-drop/drag-and-drop/tagHelper %}
@@ -52,27 +50,11 @@ In the following example, disable the drag and drop behavior on the Kanban board
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/drag-and-drop/drag-and-drop/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/drag-and-drop/drag-and-drop/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ### Swimlane drag and drop
 
 By default, Swimlane allows drag and drop across the columns within the swimlane row. Kanban does not allow dragging the cards across the swimlane rows.
 
 Enabling the `dragAndDrop` property allows you to drag the cards across the swimlane rows, which is specified inside the `e-kanban-swimlaneSettings` property.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -82,20 +64,6 @@ Enabling the `dragAndDrop` property allows you to drag the cards across the swim
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/drag-and-drop/swimlane-drag-and-drop/datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/drag-and-drop/swimlane-drag-and-drop/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/drag-and-drop/swimlane-drag-and-drop/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ## External drag and drop
 
@@ -109,8 +77,6 @@ N> Before adding a card to dropped kanban, you can manually change the card data
 
 In the following example, Drag the card from one Kanban and drop it into another kanban using the `dragStop` event. In this event, remove the card from the dragged Kanban by using the `deleteCard` public method and add the card to the dropped Kanban by using the `addCard` public method.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/drag-and-drop/kanban-to-kanban/tagHelper %}
@@ -120,27 +86,11 @@ In the following example, Drag the card from one Kanban and drop it into another
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/drag-and-drop/kanban-to-kanban/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/drag-and-drop/kanban-to-kanban/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ### Treeview to Kanban
 
 Drag the card from the Kanban board and drop it to the Treeview component and vice versa.
 
 In the following sample, remove the data from the Kanban board using the `deleteCard` public method and add to the Treeview component using the `addNodes` public method at Kanban `dragStop` event when dragging the card and dropping it to the Treeview component. Remove the data from Treeview using the `removeNodes` public method and add to Kanban board using the `openDialog` public method when dragging the list from the Treeview component and dropping it to the kanban board.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -151,27 +101,11 @@ In the following sample, remove the data from the Kanban board using the `delete
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/drag-and-drop/kanban-to-treeview/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/drag-and-drop/kanban-to-treeview/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ### Schedule to Kanban
 
 Drag the card from the Kanban board and drop it to the Schedule component and vice versa.
 
 In the following sample, remove the data from the Kanban board using the `deleteCard` public method and add to the schedule component using the `addNodes` public method at Kanban `dragStop` event when dragging the card and dropping it to the Treeview component. Remove the data from Treeview using the `removeNodes` public method and add to Kanban board using the `addCard` public method when dragging the list from the Treeview component and dropping it to the kanban board.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -181,17 +115,3 @@ In the following sample, remove the data from the Kanban board using the `delete
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/drag-and-drop/kanban-to-schedule/datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/drag-and-drop/kanban-to-schedule/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/drag-and-drop/kanban-to-schedule/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
