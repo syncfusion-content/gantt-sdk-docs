@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Indenting and Outdenting Rows for Hierarchy in Angular Gantt Chart
 
-The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component provides built-in support for indenting and outdenting rows, allowing hierarchy levels to be adjusted within it.
+The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component provides built-in support for indenting and outdenting rows, allowing hierarchy levels to be adjusted within the component.
 
  * **Indent** – Moves a selected row one level deeper, making it the last child of its previous row.
  * **Outdent** – Shifts a row one level up, placing it as a sibling to its parent.

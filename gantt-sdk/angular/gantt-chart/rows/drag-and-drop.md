@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Enabling Drag and Drop for Rows in Angular Gantt Chart
 
-The [Angular Gantt chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component includes built-in support for row drag and drop, enabling rows to be rearranged within it or dropped into custom components.
+The [Angular Gantt chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component includes built-in support for row drag and drop, enabling rows to be rearranged within the component or dropped into custom components.
 
 To enable this feature, inject the `RowDDService` in the `providers` array of the **AppComponent**. Once injected, enable the functionality by setting the [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowrowdraganddrop) property.
 

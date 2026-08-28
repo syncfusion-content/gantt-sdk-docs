@@ -91,7 +91,7 @@ You can externally remove sorting from a specific column in the Angular Gantt Ch
 
 ### Clear sorting
 
-You can clear all sorted columns in the Angular Gantt Chart component using the [clearSorting](https://ej2.syncfusion.com/angular/documentation/api/gantt#clearsorting) method to reset it to its unsorted state.
+You can clear all sorted columns in the Angular Gantt Chart component using the [clearSorting](https://ej2.syncfusion.com/angular/documentation/api/gantt#clearsorting) method to remove all applied sorting and restore the default unsorted state.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
