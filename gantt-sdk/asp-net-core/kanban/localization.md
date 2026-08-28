@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Globalization and Localization Support in ASP.NET Core Kanban
 
-The localization library allows you to localize the default text content of the Kanban to different cultures using the `locale` property.
+The localization library allows you to localize the default text content of the Kanban to different cultures using the [`locale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_Locale) property.
 
 In Kanban, total count and min or max count text alone will be localized based on culture.
 
@@ -55,7 +55,7 @@ Output be like the below.
 
 ## Right to left (RTL)
 
-The Kanban provides an option to switch its text direction and layout from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable right-to-left mode in Kanban, set the `enableRtl` to true.
+The Kanban provides an option to switch its text direction and layout from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable right-to-left mode in Kanban, set the [`enableRtl`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_EnableRtl) to true.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

@@ -16,7 +16,7 @@ Swimlanes are horizontal categorizations of cards on the Kanban board.  It is us
 
 ## Render swimlane row
 
-Cards can be grouped based on `keyField` and displayed in rows, which are separated by columns. It is mandatory to define the `keyField` that is mapped from the datasource for rendering swimlane rows in the Kanban board.
+Cards can be grouped based on [`keyField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_KeyField) and displayed in rows, which are separated by columns. It is mandatory to define the [`keyField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_KeyField) that is mapped from the datasource for rendering swimlane rows in the Kanban board.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -32,10 +32,10 @@ Output be like the below.
 
 ## Custom row text
 
-Customize the swimlane row header text by using the `textField` property mapped from datasource.
+Customize the swimlane row header text by using the [`textField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.KanbanSwimlaneSettings.html#Syncfusion_EJ2_Kanban_KanbanSwimlaneSettings_TextField) property mapped from datasource.
 
-N> It is not mandatory to define the `textField` to `swimlaneSettings`.  It will automatically consider the `keyField` to swimlane row header text.
-N> If the mapping `textField` key is not present in the datasource, it will consider the swimlane `keyField` as swimlane row header text.
+N> It is not mandatory to define the [`textField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.KanbanSwimlaneSettings.html#Syncfusion_EJ2_Kanban_KanbanSwimlaneSettings_TextField) to [`swimlaneSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_SwimlaneSettings).  It will automatically consider the [`keyField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_KeyField) to swimlane row header text.
+N> If the mapping [`textField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.KanbanSwimlaneSettings.html#Syncfusion_EJ2_Kanban_KanbanSwimlaneSettings_TextField) key is not present in the datasource, it will consider the swimlane [`keyField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_KeyField) as swimlane row header text.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -48,7 +48,7 @@ N> If the mapping `textField` key is not present in the datasource, it will cons
 
 ## Template
 
-You can customize the Kanban swimlane row by using the `template` property, which is specified within the `swimlaneSettings` property. In this demo, the swimlane header is customized with HTML element.
+You can customize the Kanban swimlane row by using the `template` property, which is specified within the [`swimlaneSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_SwimlaneSettings) property. In this demo, the swimlane header is customized with HTML element.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -65,7 +65,7 @@ Output be like the below.
 
 ## Sorting
 
-Swimlane rows are rendered on descending order when using the `sortBy` property set to `Descending` order. By default, swimlane rows are rendered by **Ascending** order.
+Swimlane rows are rendered on descending order when using the [`sortBy`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.KanbanSortSettings.html#Syncfusion_EJ2_Kanban_KanbanSortSettings_SortBy) property set to `Descending` order. By default, swimlane rows are rendered by **Ascending** order.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -82,7 +82,7 @@ Output be like the below.
 
 ## Drag-and-drop
 
-By default, The Kanban does not allow dragging the cards across the swimlane rows. Enabling the `dragAndDrop` property allows you to drag the cards across the swimlane rows, which is specified inside `swimlaneSettings` property.
+By default, The Kanban does not allow dragging the cards across the swimlane rows. Enabling the `dragAndDrop` property allows you to drag the cards across the swimlane rows, which is specified inside [`swimlaneSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_SwimlaneSettings) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -95,7 +95,7 @@ By default, The Kanban does not allow dragging the cards across the swimlane row
 
 ## Create empty row
 
-You can render the empty swimlane row by enabling the `showEmptyRow` property. If mapping `keyField` does not have cards, empty swimlane row will be rendered.
+You can render the empty swimlane row by enabling the [`showEmptyRow`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.KanbanSwimlaneSettings.html#Syncfusion_EJ2_Kanban_KanbanSwimlaneSettings_ShowEmptyRow) property. If mapping [`keyField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_KeyField) does not have cards, empty swimlane row will be rendered.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -112,11 +112,11 @@ Output be like the below.
 
 ## Calculate cards count
 
-Users can show or hide the cards count by swimlane row in header when enabling the `showItemCount` property, which is enabled by default on the Kanban board.
+Users can show or hide the cards count by swimlane row in header when enabling the [`showItemCount`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.KanbanColumn.html#Syncfusion_EJ2_Kanban_KanbanColumn_ShowItemCount) property, which is enabled by default on the Kanban board.
 
 N> Provided localization support for **Items** text.
 
-In below demo, disabled on `showItemCount` property on rendering swimlane row without total count.
+In below demo, disabled on [`showItemCount`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.KanbanColumn.html#Syncfusion_EJ2_Kanban_KanbanColumn_ShowItemCount) property on rendering swimlane row without total count.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -135,7 +135,7 @@ Output be like the below.
 
 Frozen rows provide an option to make the current swimlane row header text always visible on top of the content while scrolling the Kanban content. The swimlane header text will be changed dynamically, when you scroll to another swimlane row.
 
-By default, the `enableFrozenRows` property is set as `false`. If you wish to show the swimlane frozen rows, you can enable the `enableFrozenRows` property.
+By default, the [`enableFrozenRows`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.KanbanSwimlaneSettings.html#Syncfusion_EJ2_Kanban_KanbanSwimlaneSettings_EnableFrozenRows) property is set as `false`. If you wish to show the swimlane frozen rows, you can enable the [`enableFrozenRows`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.KanbanSwimlaneSettings.html#Syncfusion_EJ2_Kanban_KanbanSwimlaneSettings_EnableFrozenRows) property.
 
 N> This feature support only when using Kanban content scrolling.
 

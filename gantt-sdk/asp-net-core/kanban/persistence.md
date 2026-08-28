@@ -14,7 +14,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 State persistence refers to the Kanban state maintained in the browser's [`LocalStorage`](https://www.w3schools.com/html/html5_webstorage.asp#) even if the browser is refreshed or if you move to the next page within the browser.
 
-State persistence stores Kanban datasource, column or swimlane expand/collapse state in the local storage when the `enablePersistence` is defined as true.
+State persistence stores Kanban datasource, column or swimlane expand/collapse state in the local storage when the [`enablePersistence`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_EnablePersistence) is defined as true.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

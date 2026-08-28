@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Handle Header Double-Click in ASP.NET Core Kanban
 
-You can bind the header double click event by using the `dataBound` event at the initial rendering. You can get the column header text when you double click on the headers.
+You can bind the header double click event by using the [dataBound](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_DataBound) event at the initial rendering. You can get the column header text when you double click on the headers.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

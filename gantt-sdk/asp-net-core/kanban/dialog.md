@@ -51,7 +51,7 @@ Output be like the below.
 
 ## Custom Fields
 
-You can change the default fields of dialog using `fields` property inside the `dialogSettings` property. The `key` property used to map the DataSource value and rendered the corresponding component based on specified `type` property.
+You can change the default fields of dialog using [`fields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.KanbanDialogSettings.html#Syncfusion_EJ2_Kanban_KanbanDialogSettings_Fields) property inside the [`dialogSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_DialogSettings) property. The `key` property used to map the DataSource value and rendered the corresponding component based on specified `type` property.
 
 The following types are available in dialog fields.
 
@@ -126,7 +126,7 @@ Output be like the below.
 
 ## Prevent Dialog
 
-The Kanban allows to prevent to open a dialog on card double-click by enabling `args.cancel` in `dialogOpen` event.
+The Kanban allows to prevent to open a dialog on card double-click by enabling `args.cancel` in [`dialogOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_DialogOpen) event.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -318,4 +318,4 @@ public class EditParams {
 
 ```
 
-N> The `crudUrl` is used to update the bulk data sent to the server-side. Multiple selections and `sortBy` as `Index` properties are used for `crudUrl` properties to update the modified bulk data to the server-side.
+N> The `crudUrl` is used to update the bulk data sent to the server-side. Multiple selections and [`sortBy`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.KanbanSortSettings.html#Syncfusion_EJ2_Kanban_KanbanSortSettings_SortBy) as `Index` properties are used for `crudUrl` properties to update the modified bulk data to the server-side.

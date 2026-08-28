@@ -16,9 +16,9 @@ The **Kanban** columns represent the each stage of the process. The column defin
 
 ## Single-key mapping
 
-Kanban columns are categorized by mapping the **Key** from the datasource using the `KeyField` property. The corresponding **Value** in the datasource is mapped inside the columns `KeyField`.  Based on this categorization, Kanban columns are split on this board.
+Kanban columns are categorized by mapping the **Key** from the datasource using the [`KeyField`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_KeyField) property. The corresponding **Value** in the datasource is mapped inside the columns [`KeyField`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_KeyField).  Based on this categorization, Kanban columns are split on this board.
 
-N> The `KeyField` property is mandatory to render the columns in the Kanban board.
+N> The [`KeyField`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_KeyField) property is mandatory to render the columns in the Kanban board.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -37,7 +37,7 @@ Output be like the below.
 
 ## Multi-key mapping
 
-Kanban board allows to render a single column by mapping multiple keys using `KeyField` property. In below sample, specified the multiple keys(Open, Validate) to a single column.
+Kanban board allows to render a single column by mapping multiple keys using [`KeyField`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_KeyField) property. In below sample, specified the multiple keys(Open, Validate) to a single column.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -56,7 +56,7 @@ Output be like the below.
 
 ## Header text
 
-You can provide the column header text of Kanban columns using the `HeaderText` property. If you have not specified any header text, it will render the header without any text.
+You can provide the column header text of Kanban columns using the [`HeaderText`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.KanbanColumn.html#Syncfusion_EJ2_Kanban_KanbanColumn_HeaderText) property. If you have not specified any header text, it will render the header without any text.
 
 ## Header template
 
@@ -90,7 +90,7 @@ Output be like the below.
 
 ## Toggle columns
 
-Kanban allows to expand or collapse its columns using `AllowToggle` inside the `Columns` property. When enable the property, it will render the expand or collapse icon to the column header.
+Kanban allows to expand or collapse its columns using [`AllowToggle`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.KanbanColumn.html#Syncfusion_EJ2_Kanban_KanbanColumn_AllowToggle) inside the [`Columns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_Columns) property. When enable the property, it will render the expand or collapse icon to the column header.
 
 N> By default, collapsed column width is set to `50px`.
 
@@ -113,7 +113,7 @@ Output be like the below.
 
 By default, all columns are on expanded state when loading the Kanban board initially. But, you can render the columns with collapsed state using the `IsExpanded` property.
 
-N>The `IsExpanded` property only works when enabling the `AllowToggle` property on particular column.
+N>The `IsExpanded` property only works when enabling the [`AllowToggle`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.KanbanColumn.html#Syncfusion_EJ2_Kanban_KanbanColumn_AllowToggle) property on particular column.
 
 In the following example, the To Do column is collapsed on initialization of Kanban board.
 

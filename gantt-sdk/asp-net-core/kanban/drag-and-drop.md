@@ -34,10 +34,10 @@ Allows the user to drag and drop the cards within the kanban board. Based on thi
 
 ### Column drag and drop
 
-By default, all cards can be dragged and dropped across the columns and within the columns. You cannot drag and drop the cards when disabling the `allowDragAndDrop` property.
+By default, all cards can be dragged and dropped across the columns and within the columns. You cannot drag and drop the cards when disabling the [`allowDragAndDrop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_AllowDragAndDrop) property.
 
-N> You can prevent the drag or drop behavior of the particular column by disabling the `allowDrag` or `allowDrop` property.
-<br/> You can also control the flow of transition cards between the columns by using the `transitionColumns` property.
+N> You can prevent the drag or drop behavior of the particular column by disabling the [`allowDrag`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.KanbanColumn.html#Syncfusion_EJ2_Kanban_KanbanColumn_AllowDrag) or [`allowDrop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.KanbanColumn.html#Syncfusion_EJ2_Kanban_KanbanColumn_AllowDrop) property.
+<br/> You can also control the flow of transition cards between the columns by using the [`transitionColumns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.KanbanColumn.html#Syncfusion_EJ2_Kanban_KanbanColumn_TransitionColumns) property.
 
 In the following example, disable the drag and drop behavior on the Kanban board.
 
@@ -71,11 +71,11 @@ Allows the user to drag and drop the cards from one kanban to another kanban or 
 
 ### Kanban to kanban
 
-Drag and drop the card from one kanban to another kanban and vice versa. This can be achieved by specifying the `externalDropId` property which is used to specify the id of the dropped kanban element and the `dragStop` event which is used to delete the card on dragged Kanban and add the card on dropped Kanban using the `deleteCard` and `addCard` public methods.
+Drag and drop the card from one kanban to another kanban and vice versa. This can be achieved by specifying the [`externalDropId`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_ExternalDropId) property which is used to specify the id of the dropped kanban element and the [`dragStop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_DragStop) event which is used to delete the card on dragged Kanban and add the card on dropped Kanban using the `deleteCard` and `addCard` public methods.
 
-N> Before adding a card to dropped kanban, you can manually change the card data `headerField` when the same card data `headerField` is dropped to another Kanban.
+N> Before adding a card to dropped kanban, you can manually change the card data [`headerField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.KanbanCardSettings.html#Syncfusion_EJ2_Kanban_KanbanCardSettings_HeaderField) when the same card data [`headerField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.KanbanCardSettings.html#Syncfusion_EJ2_Kanban_KanbanCardSettings_HeaderField) is dropped to another Kanban.
 
-In the following example, Drag the card from one Kanban and drop it into another kanban using the `dragStop` event. In this event, remove the card from the dragged Kanban by using the `deleteCard` public method and add the card to the dropped Kanban by using the `addCard` public method.
+In the following example, Drag the card from one Kanban and drop it into another kanban using the [`dragStop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_DragStop) event. In this event, remove the card from the dragged Kanban by using the `deleteCard` public method and add the card to the dropped Kanban by using the `addCard` public method.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -90,7 +90,7 @@ In the following example, Drag the card from one Kanban and drop it into another
 
 Drag the card from the Kanban board and drop it to the Treeview component and vice versa.
 
-In the following sample, remove the data from the Kanban board using the `deleteCard` public method and add to the Treeview component using the `addNodes` public method at Kanban `dragStop` event when dragging the card and dropping it to the Treeview component. Remove the data from Treeview using the `removeNodes` public method and add to Kanban board using the `openDialog` public method when dragging the list from the Treeview component and dropping it to the kanban board.
+In the following sample, remove the data from the Kanban board using the `deleteCard` public method and add to the Treeview component using the `addNodes` public method at Kanban [`dragStop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_DragStop) event when dragging the card and dropping it to the Treeview component. Remove the data from Treeview using the `removeNodes` public method and add to Kanban board using the `openDialog` public method when dragging the list from the Treeview component and dropping it to the kanban board.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -105,7 +105,7 @@ In the following sample, remove the data from the Kanban board using the `delete
 
 Drag the card from the Kanban board and drop it to the Schedule component and vice versa.
 
-In the following sample, remove the data from the Kanban board using the `deleteCard` public method and add to the schedule component using the `addNodes` public method at Kanban `dragStop` event when dragging the card and dropping it to the Treeview component. Remove the data from Treeview using the `removeNodes` public method and add to Kanban board using the `addCard` public method when dragging the list from the Treeview component and dropping it to the kanban board.
+In the following sample, remove the data from the Kanban board using the `deleteCard` public method and add to the schedule component using the `addNodes` public method at Kanban [`dragStop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_DragStop) event when dragging the card and dropping it to the Treeview component. Remove the data from Treeview using the `removeNodes` public method and add to Kanban board using the `addCard` public method when dragging the list from the Treeview component and dropping it to the kanban board.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

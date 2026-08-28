@@ -53,7 +53,7 @@ Output be like the below.
 
 ## Custom Fields
 
-You can change the default fields of dialog using `Fields` property inside the `DialogSettings` property. The `Key` property used to map the DataSource value and rendered the corresponding component based on specified `Type` property.
+You can change the default fields of dialog using `Fields` property inside the [`DialogSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_DialogSettings) property. The `Key` property used to map the DataSource value and rendered the corresponding component based on specified `Type` property.
 
 The following types are available in dialog fields.
 
@@ -332,4 +332,4 @@ public class EditParams {
 
 ```
 
-N> The `CrudUrl` is used to update the bulk data sent to the server-side. Multiple selections and `SortBy` as `Index` properties are used for `CrudUrl` properties to update the modified bulk data to the server-side.
+N> The `CrudUrl` is used to update the bulk data sent to the server-side. Multiple selections and [`SortBy`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.KanbanSortSettings.html#Syncfusion_EJ2_Kanban_KanbanSortSettings_SortBy) as `Index` properties are used for `CrudUrl` properties to update the modified bulk data to the server-side.
