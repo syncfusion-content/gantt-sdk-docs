@@ -16,7 +16,7 @@ PDF export provides an option to specify and customize text, page number, line a
 
 ## Write a text in header and footer
 
-This functionality helps to customize the text that appears in the header or footer sections of a PDF document. Text can be added to [header](https://helpej2.syncfusion.com/documentation/api/gantt/pdfheader) or [footer](https://helpej2.syncfusion.com/documentation/api/gantt/pdffooter) of exported PDF document by using [pdfExportProperties](https://helpej2.syncfusion.com/documentation/api/gantt/pdfexportproperties).
+This functionality helps to customize the text that appears in the header or footer sections of a PDF document. Text can be added to [header](https://ej2.syncfusion.com/documentation/api/gantt/pdfheader) or [footer](https://ej2.syncfusion.com/documentation/api/gantt/pdffooter) of exported PDF document by using [pdfExportProperties](https://ej2.syncfusion.com/documentation/api/gantt/pdfexportproperties).
 
 * `type` property in the content array indicates the content type, such as 'Text'.
 * `Value` property determines the text. 
@@ -44,7 +44,7 @@ let exportProperties: PdfExportProperties = {
 
 ## Draw a line in header and footer
 
-This functionality helps to customize the line that appears in the header or footer sections of the PDF document. A line can be added to [header](https://helpej2.syncfusion.com/documentation/api/gantt/pdfheader) or [footer](https://helpej2.syncfusion.com/documentation/api/gantt/pdffooter) of the exported PDF document by using [pdfExportProperties](https://helpej2.syncfusion.com/documentation/api/gantt/pdfexportproperties).
+This functionality helps to customize the line that appears in the header or footer sections of the PDF document. A line can be added to [header](https://ej2.syncfusion.com/documentation/api/gantt/pdfheader) or [footer](https://ej2.syncfusion.com/documentation/api/gantt/pdffooter) of the exported PDF document by using [pdfExportProperties](https://ej2.syncfusion.com/documentation/api/gantt/pdfexportproperties).
 
 * `type` determines content type, such as 'Line'.
 * `style` is used to set properties like the color (penColor), size (penSize), and style (dashStyle) of the line.
@@ -77,7 +77,7 @@ let exportProperties: PdfExportProperties = {
 
 ## Add page number in header and footer
 
-This feature allows to customize the page number that appears in the header or footer sections of the PDF document. Page numbers can be added in [header](https://helpej2.syncfusion.com/documentation/api/gantt/pdfheader) or [footer](https://helpej2.syncfusion.com/documentation/api/gantt/pdffooter) of the exported PDF document by using [pdfExportProperties](https://helpej2.syncfusion.com/documentation/api/gantt/pdfexportproperties).
+This feature allows to customize the page number that appears in the header or footer sections of the PDF document. Page numbers can be added in [header](https://ej2.syncfusion.com/documentation/api/gantt/pdfheader) or [footer](https://ej2.syncfusion.com/documentation/api/gantt/pdffooter) of the exported PDF document by using [pdfExportProperties](https://ej2.syncfusion.com/documentation/api/gantt/pdfexportproperties).
 
 * `type` indicates that the content is a page number.
 * `pageNumberType` specifies the type of numbering to be used.
@@ -114,7 +114,7 @@ Supported page number types:
 
 ## Insert an image in header and footer
 
-This feature allows to customize the image that appears in the header or footer sections of the PDF document. Image (Base64 string) can be added in the exported document in [header](https://helpej2.syncfusion.com/documentation/api/gantt/pdfheader) or [footer](https://helpej2.syncfusion.com/documentation/api/gantt/pdffooter) of the exported PDF document by using [pdfExportProperties](https://helpej2.syncfusion.com/documentation/api/gantt/pdfexportproperties).
+This feature allows to customize the image that appears in the header or footer sections of the PDF document. Image (Base64 string) can be added in the exported document in [header](https://ej2.syncfusion.com/documentation/api/gantt/pdfheader) or [footer](https://ej2.syncfusion.com/documentation/api/gantt/pdffooter) of the exported PDF document by using [pdfExportProperties](https://ej2.syncfusion.com/documentation/api/gantt/pdfexportproperties).
 
 * `type` indicates that the content is an image.
 * `src` specifies the source of the image, which should be Base64 string. 

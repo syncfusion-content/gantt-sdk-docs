@@ -484,7 +484,7 @@ Tooltips display on hover, with touch-and-hold support for mobile via the toolti
 
 ### Disable taskbar tooltip 
 
-You can disable the taskbar tooltip using the [beforeTooltipRender](https://helpej2.syncfusion.com/react/documentation/gantt/events#beforetooltiprender) event by setting `args.cancel` to **true**.
+You can disable the taskbar tooltip using the [beforeTooltipRender](https://ej2.syncfusion.com/react/documentation/gantt/events#beforetooltiprender) event by setting `args.cancel` to **true**.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}

@@ -64,5 +64,5 @@ The split tasks can be merged either using the `Merge Task` item of the Context 
 ## Limitations of Split tasks
 
 1. Parent and milestone tasks cannot be split into segments.
-2. The task must have a width greater than the timeline unit cell in order to be split.
+2. The task must have a width greater than the timeline unit cell to be split.
 3. Split task is not supported with `Multi taskbar`.

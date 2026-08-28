@@ -380,9 +380,9 @@ The `taskSegmentStyles` property contains a collection of style properties for t
 
 ### Exporting with column template
 
-The PDF export functionality allows to export Grid columns that include images, hyperlinks, and custom text to an PDF document using [pdfQueryCellInfo](https://helpej2.syncfusion.com/documentation/api/gantt/pdfquerycellinfoeventargs) event.
+The PDF export functionality allows to export Grid columns that include images, hyperlinks, and custom text to an PDF document using [pdfQueryCellInfo](https://ej2.syncfusion.com/documentation/api/gantt/pdfquerycellinfoeventargs) event.
 
-In the following sample, the hyperlinks and images are exported to PDF using [hyperlink](https://helpej2.syncfusion.com/documentation/api/gantt/pdfquerycellinfoeventargs#hyperlink) and [image](https://helpej2.syncfusion.com/documentation/api/gantt/pdfquerycellinfoeventargs#image) properties in the [pdfQueryCellInfo](https://helpej2.syncfusion.com/documentation/api/gantt/pdfquerycellinfoeventargs) event.
+In the following sample, the hyperlinks and images are exported to PDF using [hyperlink](https://ej2.syncfusion.com/documentation/api/gantt/pdfquerycellinfoeventargs#hyperlink) and [image](https://ej2.syncfusion.com/documentation/api/gantt/pdfquerycellinfoeventargs#image) properties in the [pdfQueryCellInfo](https://ej2.syncfusion.com/documentation/api/gantt/pdfquerycellinfoeventargs) event.
 
 > Note: PDF Export supports base64 string to export the images.
 

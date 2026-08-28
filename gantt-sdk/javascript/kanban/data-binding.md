@@ -19,7 +19,7 @@ The Kanban uses `DataManager`, which supports both RESTful data service binding 
 
 ## Local data
 
-To bind local JSON data to the Kanban, you can simply assign a JavaScript object array to the [`dataSource`](../api/kanban#datasource) property. The JSON object dataSource can also be provided as an instance of `DataManager` and assigned to the Kanban `dataSource` property.
+To bind local JSON data to the Kanban, assign a JavaScript object array to the [`dataSource`](../api/kanban#datasource) property. The JSON object dataSource can also be provided as an instance of `DataManager` and assigned to the Kanban `dataSource` property.
 
 {% if page.publishingplatform == "typescript" %}
 

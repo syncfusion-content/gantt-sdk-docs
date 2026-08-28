@@ -19,7 +19,7 @@ The Kanban uses `DataManager`, which supports both RESTful data service binding 
 
 ## Local data
 
-To bind local list data to the Kanban, you can simply assign a list to the `DataSource` property. The list can also be provided as an instance of `DataManager` and assigned to the Kanban `DataSource` property.
+To bind local list data to the Kanban, assign a list to the `DataSource` property. The list can also be provided as an instance of `DataManager` and assigned to the Kanban `DataSource` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

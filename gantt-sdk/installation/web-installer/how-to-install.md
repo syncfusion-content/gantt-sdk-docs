@@ -12,12 +12,10 @@ documentation: ug
 
 ## Overview
 
-For the Essential Studio Gantt SDK product, Syncfusion offers a Web Installer. This installer alleviates the burden of downloading a larger installer. You can simply download and run the online installer, which will be smaller in size and will download and install the Essential Studio products you have chosen. You can get the most recent version of Essential Studio Web Installer [here](https://www.syncfusion.com/downloads/latest-version). 
+For the Essential Studio Gantt SDK product, Syncfusion offers a Web Installer. This installer alleviates the burden of downloading a larger installer. Download and run the online installer, which will be smaller in size and will download and install the Essential Studio products you have chosen. You can get the most recent version of Essential Studio Web Installer [here](https://www.syncfusion.com/downloads/latest-version). 
 
  
 ## Installation
-
-The steps below show how to install Essential Studio Gantt SDK Web Installer.
 
 The steps below show how to install the Essential Studio Gantt SDK Web Installer.
 

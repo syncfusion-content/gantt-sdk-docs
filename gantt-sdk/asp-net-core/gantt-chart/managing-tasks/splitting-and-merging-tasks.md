@@ -60,7 +60,7 @@ The task can be split dynamically, either by using the context menu or dialog.
 
 ## Merge tasks
 
-The split tasks can be merged either by using the `Merge Task` item of the Context menu or by using the dialog. We can also merge the tasks, by simply dragging the segments together in the UI.
+The split tasks can be merged either by using the `Merge Task` item of the Context menu or by using the dialog. You can also merge the tasks by dragging the segments together in the UI.
 
 ## Limitations of Split tasks
 
