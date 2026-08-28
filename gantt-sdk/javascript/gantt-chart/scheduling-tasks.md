@@ -100,19 +100,23 @@ The following example configures task types:
 
 ## Configure duration units
 
-Duration units determine how task length is measured and calculated within the project. The Gantt Chart control supports three duration units that can be applied at both project and individual task levels.
+Duration units define how task duration values are interpreted and calculated in the Gantt Chart. Duration units can be configured globally for the entire project or individually for each task.
 
 The Gantt Chart control supports the following duration units:
 
 - **Day**: Standard for general planning.
 - **Hour**: For detailed task management.
 - **Minute**: For short-duration tasks.
+- **Week**: Represents a duration calculated using the configured [daysPerWeek](https://ej2.syncfusion.com/javascript/documentation/api/gantt#daysperweek) value.
+- **Month**: Represents a duration calculated using the configured [daysPerMonth](https://ej2.syncfusion.com/javascript/documentation/api/gantt#dayspermonth) value.
 
 Configure using:
 
 - [durationUnit](https://ej2.syncfusion.com/javascript/documentation/api/gantt#durationunit): Sets global unit (default: `day`).
 - [taskFields.durationUnit](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#durationunit): Maps per-task units.
-- Duration field values: Includes units directly (e.g., "5 minutes").
+- [daysPerWeek](https://ej2.syncfusion.com/javascript/documentation/api/gantt#daysperweek): Specifies the number of working days that constitute one week duration.
+- [daysPerMonth](https://ej2.syncfusion.com/javascript/documentation/api/gantt#dayspermonth): Specifies the number of working days that constitute one month duration.
+- Duration field values: You can specify the duration unit directly in the duration value (for example, "5 minutes", "2 weeks", or "1 month").
 
 The following example maps duration units:
 
@@ -141,6 +145,25 @@ The following example defines units in duration values:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/duration-unit-cs1" %}
+
+### Configure days per week and month
+
+The `daysPerWeek` property specifies how many working days constitute one week, directly impacting how week-based durations are calculated. For example, if `daysPerWeek` is 5, then 1 week equals 5 working days.
+
+ Similarly, the `daysPerMonth` property specifies how many working days constitute one month, affecting how month-based durations are converted to actual working days for scheduling calculations. For example, if `daysPerMonth` is 20, then 1 month equals 20 working days.
+
+The following example configures `daysPerWeek` and `daysPerMonth` properties:
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt-sdk/javascript/gantt-chart/duration-unit-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt-sdk/javascript/gantt-chart/duration-unit-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/duration-unit-cs2" %}
 
 ## Enable unscheduled tasks
 
