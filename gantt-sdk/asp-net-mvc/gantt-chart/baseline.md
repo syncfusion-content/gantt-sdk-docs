@@ -26,7 +26,7 @@ Before implementing baseline functionality, ensure the data source includes base
 
 ## Implement baseline
 
-To enable baseline, configure the Gantt component by setting [renderBaseline](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_RenderBaseline) to `true`, mapping `baselineStartDate`, `baselineEndDate`, and optionally `baselineDuration` in `taskFields`. To customize appearance set the [baselineColor](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_BaselineColor) property or the .`e-baseline-bar` CSS class for advanced styling.
+To enable baseline, configure the Gantt component by setting [renderBaseline](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_RenderBaseline) to `true`, mapping `baselineStartDate`, `baselineEndDate`, and optionally `baselineDuration` in `taskFields`. To customize the appearance, set the [baselineColor](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_BaselineColor) property or the .`e-baseline-bar` CSS class for advanced styling.
 
 ```typescript
 List<GanttDataSource> data = new List<GanttDataSource>

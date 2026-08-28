@@ -96,13 +96,13 @@ The following table describes cell edit type component and their corresponding e
 
 The cell edit template is used to create a custom component for a particular column by invoking the following functions:
 
-- `create` - It is used to create the element at the time of initialization.
+- `create` - Creates the element at the time of initialization.
 
-- `write` - It is used to create the custom component or assign default value at the time of editing.
+- `write` - Creates the custom component or assigns the default value at the time of editing.
 
-- `read` - It is used to read the value from the component at the time of save.
+- `read` - Reads the value from the component at the time of save.
 
-- `destroy` - It is used to destroy the component.
+- `destroy` - Destroys the component.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -160,7 +160,7 @@ In the following demo, editing is disabled for the `TaskName` column.
 
 ## Read-only gantt
 
-In Gantt, all create, update, delete operations can be disabled by setting `readOnly` property as `true`. The following sample demonstrates, render Gantt chart as read only.
+In Gantt, all create, update, delete operations can be disabled by setting the `readOnly` property to `true`. The following sample demonstrates rendering the Gantt chart as read only.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

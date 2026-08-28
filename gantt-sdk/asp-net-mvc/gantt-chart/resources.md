@@ -25,7 +25,7 @@ The resource collection contains details about resources that are used in the pr
 | [`unit`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttResourceFields.html#Syncfusion_EJ2_Gantt_GanttResourceFields_Unit)   | It indicates the amount of work that can be done by a resource for the task in a day.                                                                                                                                                                                                       |
 | [`group`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttResourceFields.html#Syncfusion_EJ2_Gantt_GanttResourceFields_Group) | This field is used to group the resources and the tasks assigned to that particular resource into category.                                                                                                                                                                                 |
 
-The following code snippets shows resource collection and how it assigned to Gantt control.
+The following code snippets show the resource collection and how it is assigned to the Gantt control.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

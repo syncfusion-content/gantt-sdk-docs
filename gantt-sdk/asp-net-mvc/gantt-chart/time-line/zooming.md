@@ -16,15 +16,15 @@ The zooming support provides options to increase or decrease the width of timeli
 
 ## Zoom in
 
-This support is used to increase the timeline width and timeline unit from years to minutes timespan. When the `ZoomIn` icon was clicked, the timeline cell width is increased when the cell size exceeds the specified range and the timeline unit is changed based on the current zoom levels.
+This support increases the timeline width and timeline unit from years to minutes timespan. When the `ZoomIn` icon is clicked, the timeline cell width is increased when the cell size exceeds the specified range, and the timeline unit is changed based on the current zoom levels.
 
 ## Zoom out
 
-This support is used to increase the timeline width and timeline unit from minutes to years timespan. When the `ZoomOut` icon was clicked, the timeline cell width is decreased when the cell size falls behind the specified range and the timeline view mode is changed based on the current zooming levels.
+This support increases the timeline width and timeline unit from minutes to years timespan. When the `ZoomOut` icon is clicked, the timeline cell width is decreased when the cell size falls behind the specified range, and the timeline view mode is changed based on the current zooming levels.
 
 ## Zoom to fit
 
-This support is used to view all the tasks available in a project within available area on the chart part of Gantt. When users click the `ZoomToFit` icon, then all the tasks are rendered within the available chart container width.
+This support views all the tasks available in a project within the available area on the chart part of Gantt. When the `ZoomToFit` icon is clicked, all the tasks are rendered within the available chart container width.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

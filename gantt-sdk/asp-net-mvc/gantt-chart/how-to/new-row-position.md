@@ -7,9 +7,9 @@ control: New Row Position
 documentation: ug
 ---
 
-# Set new row position in in ASP.NET MVC Gantt Chart
+# Set new row position in ASP.NET MVC Gantt Chart
 
-In Gantt, a new row can be added in one of the following positions: Top, Bottom, Above, Below and Child. This position can be specified through the `newRowPostion` property. We can make use of the toolbarClick event to create a context menu that specifies the position in which the new row is to be added when adding a record through toolbar click.
+In Gantt, a new row can be added in one of the following positions: Top, Bottom, Above, Below and Child. This position can be specified using the `newRowPosition` property. Use the toolbarClick event to create a context menu that specifies the position in which the new row is to be added when adding a record through toolbar click.
 
 The following code snippets demonstrate how to achieve this.
 

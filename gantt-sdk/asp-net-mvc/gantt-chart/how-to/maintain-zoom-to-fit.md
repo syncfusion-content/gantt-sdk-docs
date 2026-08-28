@@ -12,11 +12,11 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Maintaining Zoom-to-Fit Behavior in ASP.NET MVC Gantt Chart
 
-In the Gantt control, While performing edit actions or dynamically change dataSource, the timeline gets refreshed. When zoomToFit toolbar item is clicked and perform editing actions or dynamically change dataSource, the timeline gets refreshed. So that, the timeline will not fit to the project any more.
+In the Gantt control, while performing edit actions or dynamically changing the dataSource, the timeline gets refreshed. As a result, the timeline will no longer fit the project.
 
 ## Maintain zoomToFit after edit actions
 
-We can maintain `zoomToFit` after editing actions(cell edit,dialog edit,taskbar edit) by using `fitToProject` method in `actionComplete` and `taskbarEdited` event.
+Maintain `zoomToFit` after editing actions (cell edit, dialog edit, taskbar edit) using the `fitToProject` method in the `actionComplete` and `taskbarEdited` events.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -43,7 +43,7 @@ We can maintain `zoomToFit` after editing actions(cell edit,dialog edit,taskbar 
 
 ## Maintain zoomToFit after change dataSource dynamically
 
-We can maintain `zoomToFit` after change dataSource dynamically, by calling `fitToProject` method in dataBound event.
+Maintain `zoomToFit` after changing the dataSource dynamically by calling the `fitToProject` method in the dataBound event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

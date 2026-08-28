@@ -54,7 +54,7 @@ When the [`taskMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 ## Manually scheduled tasks
 
-When the [`taskMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskMode) property is set as `Manual`, the start date and end date of all the tasks in the project will be same as given in the data source. That is, dates are not validated based on various factors such as dependencies between tasks, holidays, weekends, working time. We can restrict this mode in predecessor validation alone. That is, we can automatically validate the dates based on predecessor values by enabling the [`validateManualTasksOnLinking`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ValidateManualTasksOnLinking) property.
+When the [`taskMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskMode) property is set as `Manual`, the start date and end date of all the tasks in the project are the same as given in the data source. That is, dates are not validated based on various factors such as dependencies between tasks, holidays, weekends, working time. Restrict this mode in predecessor validation alone by enabling the [`validateManualTasksOnLinking`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ValidateManualTasksOnLinking) property to automatically validate the dates based on predecessor values.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -235,7 +235,7 @@ Segmented taskbars can be merged using the **Merge Task** context menu item. Its
 
 ### Through dialog box
 
-In the segments tab of the [add/edit dialog](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/editing-tasks#edit-tasks-via-dialog), taskbars can be split or merged by providing segments details such as the start date, end date, and duration. However, It is important to note that a segment's start and end dates must fall within the task's overall start and end dates..
+In the segments tab of the [add/edit dialog](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/editing-tasks#edit-tasks-via-dialog), taskbars can be split or merged by providing segment details such as the start date, end date, and duration. However, a segment's start and end dates must fall within the task's overall start and end dates.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -760,7 +760,7 @@ In the code snippet below, the segments are customized based on template context
 ## Limitation
 
 1. Parent and milestone tasks cannot be split into segments.
-2. The task must have a width greater than the timeline unit cell in order to be split.
+2. The task must have a width greater than the timeline unit cell to be split.
 3. Split task is not supported with `Multi taskbar`.
 
 ## See also

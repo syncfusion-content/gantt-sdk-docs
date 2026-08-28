@@ -12,16 +12,16 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Enabling and Configuring Selection Behavior in ASP.NET MVC Gantt Chart
 
-Selection provides an option to highlight a row or a cell. It can be done using arrow keys or by scrolling down the mouse. To disable selection in the Gantt control, set the [`AllowSelection`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowSelection.html) to false.
+Selection provides an option to highlight a row or a cell. Do this using arrow keys or by scrolling down the mouse. To disable selection in the Gantt control, set the [`AllowSelection`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowSelection.html) to false.
 
-The Gantt control supports two types of selection that can be set by using the [`SelectionSettings.Type`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttSelectionSettings.html#Syncfusion_EJ2_Gantt_GanttSelectionSettings_Type) property. They are:
+The Gantt control supports two types of selection that can be set using the [`SelectionSettings.Type`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttSelectionSettings.html#Syncfusion_EJ2_Gantt_GanttSelectionSettings_Type) property. They are:
 
 - `Single`: Sets a single value by default and allows only selection of a single row or a cell.
 - `Multiple`: Allows you to select multiple rows or cells. To perform the multi-selection, press and hold the CTRL key and click the desired rows or cells.
 
 ## Selection mode
 
-The Gantt control supports three types of selection modes that can be set by using the [`SelectionSettings.Mode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttSelectionSettings.html#Syncfusion_EJ2_Gantt_GanttSelectionSettings_Mode). They are:
+The Gantt control supports three types of selection modes that can be set using the [`SelectionSettings.Mode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttSelectionSettings.html#Syncfusion_EJ2_Gantt_GanttSelectionSettings_Mode). They are:
 
 - `Row`: Allows you to select only rows, and the row value is set by default.
 - `Cell`: Allows you to select only cells.

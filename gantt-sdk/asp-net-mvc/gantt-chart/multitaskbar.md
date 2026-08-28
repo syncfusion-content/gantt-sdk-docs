@@ -14,9 +14,9 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 ## Resource Multi Taskbar
 
-To visualize multiple tasks assigned to each resource in a row when the records are in the collapsed state. It can be enabled by settings the `enableMultiTaskbar` property value as `true`.
+To visualize multiple tasks assigned to each resource in a row when the records are in the collapsed state. Enable it by setting the `enableMultiTaskbar` property value to `true`.
 
-The collapse or expand action of a resource record can be achieved only by using the tree grid side arrow icon. Because it will be disabled on chart side action for this support.
+The collapse or expand action of a resource record can be achieved only using the tree grid side arrow icon, because it will be disabled on the chart side for this support.
 
 When a resource has multiple tasks scheduled on the same date, then the tasks will be overlapped one another. Taskbar editing is also possible to change the task scheduling on the collapsed state.
 

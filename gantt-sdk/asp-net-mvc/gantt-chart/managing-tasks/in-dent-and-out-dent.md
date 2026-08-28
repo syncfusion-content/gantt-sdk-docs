@@ -14,9 +14,9 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 Indent and Outdent of a task are used to update the level of the task in hierarchical order of the task. It can be performed bu enabling the [`editSettings.allowEditing`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttEditSettingsBuilder.html#Syncfusion_EJ2_Gantt_GanttEditSettingsBuilder_AllowEditing_System_Boolean_) property.
 
-`Indent` - Selected task can be indented to the level of task to the hierarchical order. It can be performed by using in-built context menu or toolbar items. It can also be invoked by using the `indent` method dynamically on any action like external button click. The following code example shows how to enable indent option in the Gantt chart.
+`Indent` - The selected task can be indented to the level of task in the hierarchical order using the in-built context menu or toolbar items. It can also be invoked using the `indent` method dynamically on any action like external button click. The following code example shows how to enable indent option in the Gantt chart.
 
-`Outdent` - Selected task can be outdented to the level of task from the hierarchical order. It can be performed by using in-built context menu or toolbar items. It can also be invoked by using the `outdent` method dynamically on any action like external button click. The following code example shows how to enable outdent option in the Gantt chart.
+`Outdent` - The selected task can be outdented to the level of task from the hierarchical order using the in-built context menu or toolbar items. It can also be invoked using the `outdent` method dynamically on any action like external button click. The following code example shows how to enable outdent option in the Gantt chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

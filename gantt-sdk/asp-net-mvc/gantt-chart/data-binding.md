@@ -118,11 +118,11 @@ To bind remote data to the Gantt component, assign service data as an instance o
 
 ### URL Adaptor
 
-In Gantt, we can fetch data from SQL database using `ADO.NET` Entity Data Model and update the changes on CRUD action to the server by using `DataManager` support. To communicate with the remote data we are using `UrlAdaptor` of DataManager property to call the server method and get back resultant data in JSON format. We can know more about `UrlAdaptor` from [`here`](https://ej2.syncfusion.com/javascript/documentation/data/adaptors).
+In Gantt, you can fetch data from a SQL database using the `ADO.NET` Entity Data Model and update the changes on CRUD action to the server using the `DataManager` support. To communicate with the remote data, use the `UrlAdaptor` of the DataManager property to call the server method and get back the resultant data in JSON format. You can know more about `UrlAdaptor` from [`here`](https://ej2.syncfusion.com/javascript/documentation/data/adaptors).
 
 N> Refer the [link](https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/models-data/creating-model-classes-with-the-entity-framework-cs) to create the `ADO.NET` Entity Data Model in Visual Studio,
 
-We can define data source for Gantt as instance of DataManager using `url` property of DataManager. Check the below code snippet to assign data source to Gantt.
+Define the data source for the Gantt as an instance of DataManager using the `url` property of DataManager. Check the below code snippet to assign the data source to the Gantt.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -149,11 +149,11 @@ We can define data source for Gantt as instance of DataManager using `url` prope
 
 ### Remote Save Adaptor
 
-You may need to perform all Gantt Actions on the client-side except the CRUD operations, which should be interacted with the server-side to persist data. It can be achieved in Gantt by using **RemoteSaveAdaptor**.
+You may need to perform all Gantt Actions on the client-side except the CRUD operations, which should be interacted with the server-side to persist data. Achieve this in Gantt using **RemoteSaveAdaptor**.
 
-Datasource must be set to the **json** property and set **RemoteSaveAdaptor** to the **adaptor** property of DataManager. CRUD operations can be mapped to the server-side using the **batchUrl** properties.
+Set the datasource to the **json** property and set the **RemoteSaveAdaptor** to the **adaptor** property of DataManager. CRUD operations can be mapped to the server-side using the **batchUrl** properties.
 
-You can use the following code example to use **RemoteSaveAdaptor** in Gantt.
+The following code example uses the **RemoteSaveAdaptor** in Gantt.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

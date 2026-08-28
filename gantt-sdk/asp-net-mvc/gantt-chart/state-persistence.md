@@ -17,7 +17,7 @@ State persistence stores gantt’s model object in the local storage when the [`
 
 ## Get or set localStorage value
 
-If the [`enablePersistence`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html) property is set to true, the gantt property value is saved in the **window.localStorage** for reference. You can get/set the localStorage value by using the getItem/setItem method in the **window.localStorage**.
+If the [`enablePersistence`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html) property is set to true, the gantt property value is saved in the **window.localStorage** for reference. You can get/set the localStorage value using the getItem/setItem method in the **window.localStorage**.
 
 ```typescript
 //get the Gantt model.
