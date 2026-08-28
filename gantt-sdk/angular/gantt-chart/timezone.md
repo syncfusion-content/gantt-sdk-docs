@@ -2,7 +2,7 @@
 layout: post
 title: Timezone in Angular Gantt Chart | Global Scheduling | Syncfusion
 description: Learn how to configure timezones in Syncfusion Angular Gantt Chart for consistent task scheduling and global team coordination.
-keywords: angular gantt timezone, iana timezone, global teams, time conversion, scheduling, syncfusion gantt
+keywords: Angular Gantt Chart timezone, iana timezone, global teams, time conversion, scheduling, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/timezone
 platform: gantt-sdk
 control: Timezone - Gantt Chart
@@ -116,7 +116,7 @@ export class AppComponent {
 
 ## Display tasks without timezone
 
-Without a specified timezone, the Gantt Chart component renders tasks according to the local system’s timezone, the default behavior. The `new Date()` constructor interprets task dates relative to the system’s timezone settings, causing variations in displayed times across different regions. For instance, a task scheduled from 9:00 AM to 10:00 AM UTC, appears as 5:00 AM to 6:00 AM EDT on a system in New York (UTC -04:00, accounting for daylight saving time). This suits localized projects where tasks are managed within a single timezone but may cause scheduling conflicts in distributed teams, as a task’s displayed time shifts depending on the system’s location.
+Without a specified timezone, the Angular Gantt Chart component renders tasks according to the local system’s timezone, the default behavior. The `new Date()` constructor interprets task dates relative to the system’s timezone settings, causing variations in displayed times across different regions. For instance, a task scheduled from 9:00 AM to 10:00 AM UTC, appears as 5:00 AM to 6:00 AM EDT on a system in New York (UTC -04:00, accounting for daylight saving time). This suits localized projects where tasks are managed within a single timezone but may cause scheduling conflicts in distributed teams, as a task’s displayed time shifts depending on the system’s location.
 
 ```typescript
 import { Component } from "@angular/core";

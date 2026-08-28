@@ -2,7 +2,7 @@
 layout: post
 title: Globalization & Localization in Angular Gantt | RTL | Syncfusion
 description: Learn how to configure globalization and localization in Syncfusion Angular Gantt Chart with multi-language support, RTL layout, locale, and culture settings.
-keywords: angular gantt globalization, localization, rtl, locale, culture, multi-language, syncfusion gantt
+keywords: Angular Gantt Chart globalization, localization, rtl, locale, culture, multi-language, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/global-local
 platform: gantt-sdk
 control: Globalization & Localization - Gantt Chart
@@ -26,7 +26,7 @@ Implement globalization when targeting multilingual users, complying with region
 
 ## Localization implementation
 
-The [Localization](../common/localization) library allows you to localize default text content of the Gantt Chart component. Static text elements such as column headers, dialog titles, tooltips, toolbar items, and system messages can be translated to different languages by defining the [locale](https://ej2.syncfusion.com/angular/documentation/api/gantt#locale) value and providing translation objects.
+The [Localization](../common/localization) library allows you to localize default text content of the Angular Gantt Chart component. Static text elements such as column headers, dialog titles, tooltips, toolbar items, and system messages can be translated to different languages by defining the [locale](https://ej2.syncfusion.com/angular/documentation/api/gantt#locale) value and providing translation objects.
 
 1. **Import required libraries**:
    ```typescript
@@ -37,7 +37,7 @@ The [Localization](../common/localization) library allows you to localize defaul
 
 3. **Load translations** using the `L10n.load()` method before component initialization
 
-4. **Set the locale property** on the Gantt Chart component to match your target culture
+4. **Set the locale property** on the Angular Gantt Chart component to match your target culture
 
 5. **Configure culture settings** using `setCulture()` for number and date formatting
 
@@ -281,7 +281,7 @@ SortDescription | Press Enter to sort |
 
 **Advanced dependency relationship messages:**
 
-The Gantt Chart component includes specialized messages for dependency conflicts:
+The Angular Gantt Chart component includes specialized messages for dependency conflicts:
 
 | Locale Key | Purpose |
 |------------|---------|
@@ -316,9 +316,9 @@ The following example demonstrates comprehensive German (Deutsch) localization:
 
 ## Internationalization (I18N)
 
-The [Internationalization](../common/internationalization) library globalizes number, date, and time values in the Gantt Chart component. This ensures that dates, numbers, and currencies display according to the user's cultural preferences and regional conventions.
+The [Internationalization](../common/internationalization) library globalizes number, date, and time values in the Angular Gantt Chart component. This ensures that dates, numbers, and currencies display according to the user's cultural preferences and regional conventions.
 
-Internationalization affects multiple aspects of the Gantt Chart component:
+Internationalization affects multiple aspects of the Angular Gantt Chart component:
 
 - **Date formatting**: Timeline headers, task dates, date pickers, and calendar displays
 - **Number formatting**: Duration values, progress percentages, and numeric inputs
@@ -347,7 +347,7 @@ Internationalization affects multiple aspects of the Gantt Chart component:
 
 ## Right-to-Left (RTL) support
 
-RTL support enables the Gantt Chart component to adapt its text direction and layout for languages that read from right to left, such as Arabic (العربية), Hebrew (עברית), and Urdu (اردو). This provides an authentic user experience for RTL language users.
+RTL support enables the Angular Gantt Chart component to adapt its text direction and layout for languages that read from right to left, such as Arabic (العربية), Hebrew (עברית), and Urdu (اردو). This provides an authentic user experience for RTL language users.
 
 RTL layout affects multiple aspects of the user interface:
 
@@ -374,7 +374,7 @@ To enable RTL support, set the [enableRtl](https://ej2.syncfusion.com/angular/do
   
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/global/rtl-cs1" %}
 
-The code sets `enableRtl` to **true** and `locale` to **ar**, mirroring the Gantt interface. Test RTL layouts with native speakers to ensure usability, especially for taskbar interactions and dialog navigation. Review custom CSS for RTL compatibility and verify directional icons (e.g., arrows) render correctly.
+The code sets `enableRtl` to **true** and `locale` to **ar**, mirroring the Angular Gantt Chart interface. Test RTL layouts with native speakers to ensure usability, especially for taskbar interactions and dialog navigation. Review custom CSS for RTL compatibility and verify directional icons (e.g., arrows) render correctly.
 
 ## Troubleshooting globalization issues
 

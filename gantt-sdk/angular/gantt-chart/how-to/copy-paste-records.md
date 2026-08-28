@@ -2,7 +2,7 @@
 layout: post
 title: Copy and Paste Records in Angular Gantt Chart | Syncfusion
 description: Learn how to copy and paste records in Syncfusion Angular Gantt Chart with context menus and addRecord method to duplicate tasks and hierarchies efficiently.
-keywords: angular gantt copy paste, addrecord, context menu, task duplication, syncfusion gantt
+keywords: Angular Gantt Chart copy paste, addrecord, context menu, task duplication, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/how-to/copy-paste-records
 platform: gantt-sdk
 control: Copy Paste Records - Gantt Chart

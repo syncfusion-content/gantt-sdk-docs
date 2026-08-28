@@ -2,7 +2,7 @@
 layout: post
 title: Customize PDF Export in Angular Gantt Chart | Syncfusion
 description: Learn how to customize PDF export in Syncfusion Angular Gantt Chart with file names, orientation, headers and footers.
-keywords: angular gantt customize pdf export, pdfexportproperties, beforepdfexport, pdfquerytaskbarinfo, syncfusion gantt
+keywords: Angular Gantt Chart customize pdf export, pdfexportproperties, beforepdfexport, pdfquerytaskbarinfo, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/pdf-export/customize-pdf-export
 platform: gantt-sdk
 control: Customize PDF Export - Gantt Chart
@@ -164,11 +164,11 @@ The visibility of predecessor lines in the exported PDF document can be controll
 
 ## Export specific columns
 
-A hidden column can be shown, or a visible column can be hidden while exporting the Gantt chart by using the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/gantt/events#toolbarclick) and [beforePdfExport](https://ej2.syncfusion.com/angular/documentation/gantt/events#beforepdfexport) events.
+A hidden column can be shown, or a visible column can be hidden while exporting the Angular Gantt Chart by using the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/gantt/events#toolbarclick) and [beforePdfExport](https://ej2.syncfusion.com/angular/documentation/gantt/events#beforepdfexport) events.
 
 Columns can be shown or hidden by setting the `column.visible` property to **true** or **false**, respectively.
 
-In the following example, the **Duration** column is initially hidden in the Gantt chart. During export, the **Duration** column is made visible and the StartDate column is hidden.
+In the following example, the **Duration** column is initially hidden in the Angular Gantt Chart. During export, the **Duration** column is made visible and the StartDate column is hidden.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -252,9 +252,9 @@ In the following sample, the taskbar background color is customized in the chart
 
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/pdf-export-cs11" %}
 
-## Customize Gantt chart appearance in PDF export
+## Customize Gantt Chart appearance in PDF export
 
-PDF export allows to customize the Gantt chart's appearance in the exported PDF documents. To customize the appearance of Gantt charts in exported PDF documents, define [ganttStyle](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties#ganttstyle) within [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties). By using `ganttStyle`, can customize `columnHeader`, `fontFamily`, `cell`, `taskbar`, `label`, `timeline`, `chartGridLineColor`, `connectorLineColor`, `criticalConnectorLineColor`, `footer`, `font`, `eventMarker` and `holiday` regardless of the theme.
+PDF export allows to customize the Angular Gantt Chart's appearance in the exported PDF documents. To customize the appearance of Gantt charts in exported PDF documents, define [ganttStyle](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties#ganttstyle) within [pdfExportProperties](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties). By using `ganttStyle`, can customize `columnHeader`, `fontFamily`, `cell`, `taskbar`, `label`, `timeline`, `chartGridLineColor`, `connectorLineColor`, `criticalConnectorLineColor`, `footer`, `font`, `eventMarker` and `holiday` regardless of the theme.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -274,7 +274,7 @@ PDF export allows to customize the Gantt chart's appearance in the exported PDF 
 
 ## Customize split taskbar segment colors in PDF
 
-The PDF export feature in the Gantt Chart allows you to customize the colors of split taskbar segments using the [taskSegmentStyles](https://ej2.syncfusion.com/angular/documentation/api/gantt/iTaskbarStyle#taskSegmentStyles) property inside the [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#pdfquerytaskbarinfo) event.
+The PDF export feature in the Angular Gantt Chart allows you to customize the colors of split taskbar segments using the [taskSegmentStyles](https://ej2.syncfusion.com/angular/documentation/api/gantt/iTaskbarStyle#taskSegmentStyles) property inside the [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#pdfquerytaskbarinfo) event.
 
 The [taskSegmentStyles](https://ej2.syncfusion.com/angular/documentation/api/gantt/iTaskbarStyle#taskSegmentStyles) property contains a collection of style properties for task segments. By specifying the index of corresponding segment index in this collection you can customize that segment taskbar color, progress color, and its border color.
 
@@ -406,6 +406,6 @@ In the following sample, header template with images and text are exported to PD
 
 ## See also
 
-- [How to export Gantt chart to Excel?](https://ej2.syncfusion.com/angular/documentation/gantt/excel-export)
+- [How to export Angular Gantt Chart to Excel?](https://ej2.syncfusion.com/angular/documentation/gantt/excel-export)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
 - [How to configure critical path?](https://ej2.syncfusion.com/angular/documentation/gantt/critical-path)

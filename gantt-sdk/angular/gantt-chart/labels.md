@@ -2,7 +2,7 @@
 layout: post
 title: Task Labels in Angular Gantt Chart | Taskbar Labels | Syncfusion
 description: Learn how to configure taskbar labels in Syncfusion Angular Gantt Chart with left, right, and task label positions for enhanced project data visualization.
-keywords: angular gantt task labels, labelsettings, left label, right label, taskbar label, syncfusion gantt
+keywords: Angular Gantt Chart task labels, labelsettings, left label, right label, taskbar label, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/labels
 platform: gantt-sdk
 control: Task Labels - Gantt Chart

@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Customizing Column Headers in Angular Gantt Chart
 
-The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component provides flexible options to manage and customize column headers. You can define static header text, apply custom templates, align header content, and even update header titles dynamically through events or methods. These features help tailor the Gantt chart to match specific UI requirements and improve readability.
+The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component provides flexible options to manage and customize column headers. You can define static header text, apply custom templates, align header content, and even update header titles dynamically through events or methods. These features help tailor the Angular Gantt Chart to match specific UI requirements and improve readability.
 
 ## Set custom header text
 
@@ -233,7 +233,7 @@ public setHeaderHeight(args) {
 
 The ngx-translate library provides **internationalization (i18n)** and **localization (l10n)** support for Angular applications. With ngx-translate, you can easily translate your Angular application into multiple languages.
 
-In the context of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component, you can use ngx-translate to translate the header text of the Gantt chart's columns. There are two ways to achieve this: through header text and through header template.
+In the context of the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component, you can use ngx-translate to translate the header text of the Angular Gantt Chart's columns. There are two ways to achieve this: through header text and through header template.
 
 ### Through header text  
 
@@ -573,7 +573,7 @@ export class AppModule {}
 
 ```
 
-**Step 3**: Use the ngx-translate pipe in your Angular Gantt chart component header templates to translate the headers dynamically.
+**Step 3**: Use the ngx-translate pipe in your Angular Gantt Chart component header templates to translate the headers dynamically.
 
 ```Html
 {% raw %}
@@ -762,7 +762,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart compone
 - `getColumnIndexByField(field)` – Returns the index of a column using its field name.
 - `getColumnIndexByUid(uid)` – Returns the index of a column using its unique ID.
 
-The following example demonstrates how to apply custom styles to specific column headers in the Gantt chart using the `dataBound` event:
+The following example demonstrates how to apply custom styles to specific column headers in the Angular Gantt Chart using the `dataBound` event:
 
 - Set font color to black for the header at index 0 of the **TaskID** column.
 - Apply pink background and black font color to the **TaskName** header.
@@ -830,7 +830,7 @@ The following example demonstrates how to update the header text of the column a
   
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/headerstyle-cs5" %}
 
->* The `refreshHeader` method updates only the Gantt header and not the entire Gantt chart.
+>* The `refreshHeader` method updates only the Gantt header and not the entire Gantt Chart.
 
 ## Access header element 
 
@@ -841,7 +841,7 @@ To retrieve the header element in a Syncfusion<sup style="font-size:70%">&reg;</
     ```ts
     const headerElement = this.gantt.treeGrid.getHeaderContent();    
     ```
-2. `getHeaderTable`: This method returns the header <table> element of the Gantt chart. You can use it to access only the header table.
+2. `getHeaderTable`: This method returns the header <table> element of the Angular Gantt Chart. You can use it to access only the header table.
 
    ```ts
     const headerTableElement = this.gantt.treeGrid.getHeaderTable();

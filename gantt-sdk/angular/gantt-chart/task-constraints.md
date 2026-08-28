@@ -2,7 +2,7 @@
 layout: post
 title: Constraints in Angular Gantt Chart | Scheduling Rules | Syncfusion
 description: Learn how to configure task constraints in Syncfusion Angular Gantt Chart to enforce scheduling rules, manage deadlines, and meet project milestones accurately.
-keywords: angular gantt task constraints, scheduling rules, muststarton, mustfinishon, assoon aspossible, syncfusion gantt
+keywords: Angular Gantt Chart task constraints, scheduling rules, muststarton, mustfinishon, assoon aspossible, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/task-constraints
 platform: gantt-sdk
 control: Task Constraints - Gantt Chart

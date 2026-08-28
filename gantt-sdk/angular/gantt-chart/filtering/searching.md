@@ -2,7 +2,7 @@
 layout: post
 title: Searching in Angular Gantt Chart | Quick Search | Syncfusion
 description: Learn how to enable quick search in Syncfusion Angular Gantt Chart to filter records based on search input and access relevant data fast in large task datasets.
-keywords: angular gantt searching, search settings, toolbar search, filter service, syncfusion gantt
+keywords: Angular Gantt Chart searching, search settings, toolbar search, filter service, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/filtering/searching
 platform: gantt-sdk
 control: Searching - Gantt Chart
@@ -30,7 +30,7 @@ To enable search functionality, include the **Search** item in the [toolbar](htt
 
 ## Initial search
 
-The Angular Gantt component allows applying search criteria during initial load using the [searchSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings) property.  
+The Angular Gantt Chart component allows applying search criteria during initial load using the [searchSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings) property.  
 
 To configure this feature, define the following properties:
 
@@ -104,7 +104,7 @@ To perform a search from an external button in the Angular Gantt, call the [sear
 
 ## Search specific columns
 
-To search specific columns in the Gantt Chart component, use the [searchSettings.fields](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings#fields) property. This allows you to define which column fields should be included in the search, instead of searching across all columns by default.
+To search specific columns in the Angular Gantt Chart component, use the [searchSettings.fields](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings#fields) property. This allows you to define which column fields should be included in the search, instead of searching across all columns by default.
 
 This following sample demonstrates searching only within the **TaskName** and **Duration** columns.
 
@@ -140,7 +140,7 @@ Alternatively, you can invoke the [search](https://ej2.syncfusion.com/angular/do
 
 ## Search on each key stroke
 
-You can enable instant filtering in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart component by calling the [search](https://ej2.syncfusion.com/angular/documentation/api/gantt#search) method on each `keyup` event.  This can be configured within the component’s [created](https://ej2.syncfusion.com/angular/documentation/gantt/events#created) event.
+You can enable instant filtering in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component by calling the [search](https://ej2.syncfusion.com/angular/documentation/api/gantt#search) method on each `keyup` event.  This can be configured within the component’s [created](https://ej2.syncfusion.com/angular/documentation/gantt/events#created) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

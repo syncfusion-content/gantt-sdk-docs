@@ -2,7 +2,7 @@
 layout: post
 title: Baseline in Angular Gantt Chart | Planned vs Actual | Syncfusion
 description: Learn how to compare planned versus actual project timelines using baseline support to track schedule deviations.
-keywords: angular gantt baseline, planned schedule, actual schedule, baseline date, project tracking, syncfusion gantt
+keywords: Angular Gantt Chart baseline, planned schedule, actual schedule, baseline date, project tracking, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/baseline
 platform: gantt-sdk
 control: Baseline - Gantt Chart
@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Baselines for Schedule Comparison in Angular Gantt Chart
 
-The baseline feature in the Gantt Chart component enables comparison between original planned schedules and actual task execution timelines. This visualization provides clear insights into schedule deviations, helping assess project performance and identify areas requiring attention. Baseline functionality displays both the original planned timeline and current progress side-by-side for comprehensive project tracking.
+The baseline feature in the Angular Gantt Chart component enables comparison between original planned schedules and actual task execution timelines. This visualization provides clear insights into schedule deviations, helping assess project performance and identify areas requiring attention. Baseline functionality displays both the original planned timeline and current progress side-by-side for comprehensive project tracking.
 
 Before implementing baseline functionality, ensure the data source includes baseline date fields and configure the [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields) object with appropriate field mappings. The baseline feature requires proper field mapping to display planned versus actual timelines effectively.
 
@@ -24,7 +24,7 @@ Before implementing baseline functionality, ensure the data source includes base
 
 ## Implement baseline
 
-To enable baseline, configure the Gantt Chart component by setting [renderBaseline](https://ej2.syncfusion.com/angular/documentation/api/gantt#renderbaseline) to **true**, mapping `baselineStartDate`, `baselineEndDate`, and optionally `baselineDuration` in `taskFields`. To customize appearance set the [baselineColor](https://ej2.syncfusion.com/angular/documentation/api/gantt#baselinecolor) property or the .**e-baseline-bar** CSS class for advanced styling.
+To enable baseline, configure the Angular Gantt Chart component by setting [renderBaseline](https://ej2.syncfusion.com/angular/documentation/api/gantt#renderbaseline) to **true**, mapping `baselineStartDate`, `baselineEndDate`, and optionally `baselineDuration` in `taskFields`. To customize appearance set the [baselineColor](https://ej2.syncfusion.com/angular/documentation/api/gantt#baselinecolor) property or the .**e-baseline-bar** CSS class for advanced styling.
 
 ```typescript
 export let projectData = [
@@ -81,7 +81,7 @@ The following example demonstrates complete baseline configuration with proper f
 
 ## Customize baseline using event
 
-You can customize the baseline bar in the Gantt chart using the [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querytaskbarinfo) event.
+You can customize the baseline bar in the Angular Gantt Chart using the [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querytaskbarinfo) event.
 
 ```ts
 import { IQueryTaskbarInfoEventArgs } from "@syncfusion/ej2-angular-gantt";

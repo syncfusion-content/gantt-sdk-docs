@@ -2,7 +2,7 @@
 layout: post
 title: Resource View in Angular Gantt Chart | Hierarchical View | Syncfusion
 description: Learn how to configure resource view to visualize tasks hierarchically by resource with allocation and workload.
-keywords: angular gantt resource view, viewtype, resource hierarchy, workload, allocation, syncfusion gantt
+keywords: Angular Gantt Chart resource view, viewtype, resource hierarchy, workload, allocation, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/resource-view
 platform: gantt-sdk
 control: Resource View - Gantt Chart
@@ -111,7 +111,7 @@ You can customize the taskbar appearance based on resource view using the [query
 
 ## Hide columns in resource tab
 
-To hide a column in the Gantt Chart's resource view, handle the [actionBegin](https://ej2.syncfusion.com/angular/documentation/gantt/events#actionbegin) event and set the `visible` property of the target column to **false** when the `requestType` is `beforeOpenAddDialog` or `beforeOpenEditDialog`.
+To hide a column in the Angular Gantt Chart's resource view, handle the [actionBegin](https://ej2.syncfusion.com/angular/documentation/gantt/events#actionbegin) event and set the `visible` property of the target column to **false** when the `requestType` is `beforeOpenAddDialog` or `beforeOpenEditDialog`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

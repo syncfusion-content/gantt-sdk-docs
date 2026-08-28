@@ -2,7 +2,7 @@
 layout: post
 title: Custom Fields in Angular Gantt Chart | Dialog Forms | Syncfusion
 description: Learn how to configure custom fields in Syncfusion Angular Gantt Chart add/edit dialogs using event handlers.
-keywords: angular gantt custom fields, add edit dialog, actionbegin, actioncomplete, custom form fields, syncfusion gantt
+keywords: Angular Gantt Chart custom fields, add edit dialog, actionbegin, actioncomplete, custom form fields, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/how-to/custom-field
 platform: gantt-sdk
 control: Custom Fields - Gantt Chart

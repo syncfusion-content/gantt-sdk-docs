@@ -2,7 +2,7 @@
 layout: post
 title: Modules in Angular Gantt Chart | Dependency Injection | Syncfusion
 description: Learn how to enable advanced Angular Gantt Chart features through module injection for sorting, editing, toolbar, filtering, and export to optimize bundle size.
-keywords: angular gantt modules, feature modules, dependency injection, sortservice, editservice, syncfusion gantt
+keywords: Angular Gantt Chart modules, feature modules, dependency injection, sortservice, editservice, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/module
 platform: gantt-sdk
 control: Feature Modules - Gantt Chart

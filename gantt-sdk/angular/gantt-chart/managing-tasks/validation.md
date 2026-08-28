@@ -2,7 +2,7 @@
 layout: post
 title: Task Validation in Angular Gantt Chart | Form Rules | Syncfusion
 description: Learn how to validate task data in Syncfusion Angular Gantt Chart with column rules and custom validation.
-keywords: angular gantt validation, form validator, custom rules, dependency validation, resource grid, syncfusion gantt
+keywords: Angular Gantt Chart validation, form validator, custom rules, dependency validation, resource grid, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/managing-tasks/validation
 platform: gantt-sdk
 control: Task Validation - Gantt Chart

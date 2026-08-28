@@ -2,7 +2,7 @@
 layout: post
 title: Holidays in Angular Gantt Chart | Non-Working Days | Syncfusion
 description: Learn how to configure holidays and non-working days for accurate task scheduling and timeline visualization.
-keywords: angular gantt holidays, non-working days, workweek, exclude weekends, holiday list, syncfusion gantt
+keywords: Angular Gantt Chart holidays, non-working days, workweek, exclude weekends, holiday list, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/holidays
 platform: gantt-sdk
 control: Holidays - Gantt Chart

@@ -2,7 +2,7 @@
 layout: post
 title: Performance Tips for Angular Gantt Chart | Optimization | Syncfusion
 description: Learn how to optimize performance with virtual scrolling, immutable mode, lazy loading, and best practices.
-keywords: angular gantt performance, virtual scrolling, lazy loading, optimization tips, large datasets, syncfusion gantt
+keywords: Angular Gantt Chart performance, virtual scrolling, lazy loading, optimization tips, large datasets, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/performance
 platform: gantt-sdk
 control: Performance - Gantt Chart
@@ -16,7 +16,7 @@ This guide provides practical techniques to optimize the [Angular Gantt Chart](h
 
 ## Improving loading performance with large datasets
 
-A Gantt chart renders rows, columns, and taskbars in the DOM. For example, displaying 10 rows and 10 columns creates 100 elements in the grid area DOM and 10 elements in the chart area DOM. To ensure optimal loading performance, limit the number of rendered rows and columns when working with large datasets.
+A Gantt Chart renders rows, columns, and taskbars in the DOM. For example, displaying 10 rows and 10 columns creates 100 elements in the grid area DOM and 10 elements in the chart area DOM. To ensure optimal loading performance, limit the number of rendered rows and columns when working with large datasets.
 
 ### Optimizing performance with virtualization
 
@@ -52,7 +52,7 @@ Set the [autoCalculateDateScheduling](https://ej2.syncfusion.com/angular/documen
   
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/virtual-scroll-cs2" %}
 
->When setting `autoCalculateDateScheduling` property to **false**, you must provide a valid data source; otherwise, the Gantt chart will render with invalid dates.
+>When setting `autoCalculateDateScheduling` property to **false**, you must provide a valid data source; otherwise, the Angular Gantt Chart will render with invalid dates.
 
 ### Optimizing custom content rendering
 
@@ -60,11 +60,11 @@ When integrating images or template elements into Gantt columns, use the [Column
 
 ### Performance benchmarks
 
-The following tables show typical load times for various Gantt configurations, comparing non-virtualized and virtualized scenarios:
+The following tables show typical load times for various Angular Gantt Chart configurations, comparing non-virtualized and virtualized scenarios:
 
 **Test environment**
 
-- Component Version: Syncfusion Angular Gantt 33.1.44
+- Component Version: Syncfusion Angular Gantt Chart 33.1.44
 - Angular Version: 20.1.0
 - Browser: Edge 138
 - Operating System: Windows 11
@@ -123,7 +123,7 @@ var serializer = new JavaScriptSerializer { MaxJsonLength = Int32.MaxValue };
 
 ## Optimizing Angular apps with multiple gantt and templates
 
-Performance issues in applications with multiple Gantt Chart components relate to Angular's change detection mechanism rather than the Syncfusion component itself. Large DOM populations cause performance issues due to continuous change detection.
+Performance issues in applications with multiple Angular Gantt Chart components relate to Angular's change detection mechanism rather than the Syncfusion component itself. Large DOM populations cause performance issues due to continuous change detection.
 
 > For more information on common reasons for slowdowns in Angular apps, you can [refer](https://blog.ninja-squad.com/2018/09/27/angular-performances-part-4/ ) to the [documentation](https://www.thirdrocktechkno.com/blog/top-reasons-why-your-angular-app-is-slow/ ) link:
 

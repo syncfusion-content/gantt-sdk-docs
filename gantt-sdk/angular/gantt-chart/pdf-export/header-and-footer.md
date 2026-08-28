@@ -2,7 +2,7 @@
 layout: post
 title: PDF Headers and Footers in Angular Gantt Chart | Syncfusion
 description: Learn how to customize PDF export headers and footers in Syncfusion Angular Gantt Chart with text and images.
-keywords: angular gantt pdf header footer, pdfexportproperties, pdfheader, pdffooter, page numbers, syncfusion gantt
+keywords: Angular Gantt Chart pdf header footer, pdfexportproperties, pdfheader, pdffooter, page numbers, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/pdf-export/header-and-footer
 platform: gantt-sdk
 control: PDF Headers and Footers - Gantt Chart
@@ -136,7 +136,7 @@ By default, the exported PDF file includes a footer. The footer can be disabled 
 
 ## Export with external form elements
 
-To include external form elements (such as headers and footers) in the exported PDF along with the Gantt Chart, use the `header` and `footer` properties within the `pdfExportProperties` configuration.
+To include external form elements (such as headers and footers) in the exported PDF along with the Angular Gantt Chart, use the `header` and `footer` properties within the `pdfExportProperties` configuration.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

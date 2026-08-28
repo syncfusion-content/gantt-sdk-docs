@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Columns with Field Mapping and Formatting in Angular Gantt Chart
 
-The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component displays task data in a tabular format using columns. Columns help organize data efficiently and support user interaction within the Gantt chart.
+The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component displays task data in a tabular format using columns. Columns help organize data efficiently and support user interaction within the Angular Gantt Chart.
 
 Each column is defined using the [field](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#field) property, which maps values from the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt#datasource). This mapping ensures accurate data binding and enables formatting and customization for each column.
 
@@ -82,7 +82,7 @@ The column width is automatically calculated based on the content within the col
 
 **2. Percentage**
 
-The column width is specified as a percentage value relative to the width of the gantt container. For example, a column width of 25% will occupy 25% of the total gantt width. You can set the width for columns as **percentage** in your Gantt configuration as shown below:
+The column width is specified as a percentage value relative to the width of the Angular Gantt Chart container. For example, a column width of 25% will occupy 25% of the total gantt width. You can set the width for columns as **percentage** in your Gantt configuration as shown below:
 
 ```html
   <e-column field='TaskID' headerText='Task ID' textAlign='Right' width='25%'></e-column>
@@ -90,7 +90,7 @@ The column width is specified as a percentage value relative to the width of the
 
 **3. Pixel**
 
-The column width is specified as an absolute pixel value. For example, a column width of 100px will have a fixed width of 100 pixels regardless of the gantt container size. You can set the width for columns as **pixel** in your Gantt configuration as shown below:
+The column width is specified as an absolute pixel value. For example, a column width of 100px will have a fixed width of 100 pixels regardless of the Angular Gantt Chart container size. You can set the width for columns as **pixel** in your Gantt configuration as shown below:
 
 ```html
   <e-column field='TaskID' headerText='Task ID' textAlign='Right' width='100'></e-column>
@@ -539,7 +539,7 @@ For more information check on this [documentation](https://ej2.syncfusion.com/an
 
 ## Updating column definitions
 
-To update column definitions in Angular Gantt Chart component, modify the [columns](https://ej2.syncfusion.com/angular/documentation/api/gantt/column) property to adjust column appearance and behavior by changing attributes like [headerText](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#headertext), [width](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#width), or [visible](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#visible). After making the required updates, use the `refreshColumns` method from the `treeGrid` object to apply and reflect the changes in the Gantt chart.
+To update column definitions in Angular Gantt Chart component, modify the [columns](https://ej2.syncfusion.com/angular/documentation/api/gantt/column) property to adjust column appearance and behavior by changing attributes like [headerText](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#headertext), [width](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#width), or [visible](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#visible). After making the required updates, use the `refreshColumns` method from the `treeGrid` object to apply and reflect the changes in the Angular Gantt Chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -580,7 +580,7 @@ You can add or remove columns in the Angular Gantt by updating the [columns](htt
 
 The Angular Gantt Chart component provides a built-in feature to control column visibility based on media queries using the `hideAtMedia` property in the column object. This method can be used to hide columns automatically when the screen width matches specified [media query](http://cssmediaqueries.com/what-are-css-media-queries.html) conditions.
 
-The following example demonstrates a Gantt chart where the **Task Name** column is set to `(min-width: 700px)`, meaning it will be hidden when the browser width is less than or equal to 700px. Similarly, the **Duration** column is set to `(max-width: 500px)`, so it will be hidden when the browser width exceeds 500px.
+The following example demonstrates a Gantt Chart where the **Task Name** column is set to `(min-width: 700px)`, meaning it will be hidden when the browser width is less than or equal to 700px. Similarly, the **Duration** column is set to `(max-width: 500px)`, so it will be hidden when the browser width exceeds 500px.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

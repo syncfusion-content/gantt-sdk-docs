@@ -2,7 +2,7 @@
 layout: post
 title: Task Dependency in Angular Gantt Chart | FS, SS, FF, SF | Syncfusion
 description: Learn how to configure task dependencies with Finish-to-Start, Start-to-Start, and other relation types.
-keywords: angular gantt task dependency, fs, ss, ff, sf, predecessor, offset, syncfusion gantt
+keywords: Angular Gantt Chart task dependency, fs, ss, ff, sf, predecessor, offset, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/task-dependency
 platform: gantt-sdk
 control: Task Dependency - Gantt Chart
@@ -18,7 +18,7 @@ Task dependency in the Angular Gantt Chart component establishes relationships b
 
 Task dependencies are defined in the data source as string values (e.g., '2FS+3d' for Finish to Start with 3-day offset) and mapped using [taskFields.dependency](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#dependency). Parent dependencies can be enabled by [allowParentDependency](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowparentdependency) property. By default, the `allowParentDependency` property will be **true**.
 
-Multiple predecessor relationships can be defined in a single task by assigning a comma-separated string to the `Predecessor` field, such as `'2FS,3FS'`. This configuration allows the Gantt chart to interpret and render multiple dependencies during the initial data load.
+Multiple predecessor relationships can be defined in a single task by assigning a comma-separated string to the `Predecessor` field, such as `'2FS,3FS'`. This configuration allows the Angular Gantt Chart to interpret and render multiple dependencies during the initial data load.
 
 ```ts
 { TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2024'), Duration: 0, Predecessor: '3FS,2FS', Progress: 30 }
@@ -44,7 +44,7 @@ This code renders connector lines for dependencies like '2FS', updating taskbars
 > - Dependencies between tasks in different parent groups are supported when the `allowParentDependency` property is enabled.
 > - The format of the dependency string depends on the data type of the [id](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskfields#id) field mapped in the data source:
 >   - If the `id` field is an **integer**, the compact format (for example, `3FS`) can be used without a space between the `id` and the dependency type.
->   - If the `id` field is a **string** or **GUID**, the format `[id] [PredecessorType]` is mandatory, with a single space between the `id` and the predecessor type (for example, `TASK-001 FS`). The Gantt Chart parses the two parts based on this space, so the space is required to correctly identify the predecessor type.
+>   - If the `id` field is a **string** or **GUID**, the format `[id] [PredecessorType]` is mandatory, with a single space between the `id` and the predecessor type (for example, `TASK-001 FS`). The Angular Gantt Chart parses the two parts based on this space, so the space is required to correctly identify the predecessor type.
 
 ## Understand task relationship types
 
@@ -89,9 +89,9 @@ This code sets offsets like '2FS+3h', adjusting taskbars accordingly.
 
 ## Predecessor offset synchronization on initial load
 
-The [autoUpdatePredecessorOffset](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#autoupdatepredecessoroffset) property specifies whether the Gantt Chart automatically adjusts and synchronizes the predecessor offset values (e.g., "+2", "-1d") in the predecessor column display and the underlying data during initial data load/binding, so they match the actually rendered taskbar positions and dependency lines.
+The [autoUpdatePredecessorOffset](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#autoupdatepredecessoroffset) property specifies whether the Angular Gantt Chart automatically adjusts and synchronizes the predecessor offset values (e.g., "+2", "-1d") in the predecessor column display and the underlying data during initial data load/binding, so they match the actually rendered taskbar positions and dependency lines.
 
-- When **enabled**: During the initial data binding/load, the Gantt recalculates the offset portions of predecessor strings based on the final rendered dates after applying calendar rules, weekends, holidays, and working times. The predecessor column in the grid and the corresponding data field values are updated to reflect these accurate offsets - preventing visual or data mismatch between what is displayed and what was actually used for rendering dependency lines - without affecting task dates, durations, or triggering any scheduling/validation logic.
+- When **enabled**: During the initial data binding/load, the Angular Gantt Chart recalculates the offset portions of predecessor strings based on the final rendered dates after applying calendar rules, weekends, holidays, and working times. The predecessor column in the grid and the corresponding data field values are updated to reflect these accurate offsets - preventing visual or data mismatch between what is displayed and what was actually used for rendering dependency lines - without affecting task dates, durations, or triggering any scheduling/validation logic.
 
 - When **disabled**: The predecessor column displays exactly the offset values provided in the original data source, even if they no longer match the rendered dependency lines due to calendar adjustments. This can result in visual inconsistencies where the grid shows one offset (e.g., "5FS+0") while the drawn arrow connects tasks with a different effective offset (e.g., equivalent to +2 due to non-working days). No automatic correction occurs during load.
 

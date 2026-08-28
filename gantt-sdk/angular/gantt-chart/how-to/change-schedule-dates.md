@@ -2,7 +2,7 @@
 layout: post
 title: Update Project Schedule Dates in Angular Gantt Chart | Syncfusion
 description: Learn how to programmatically update project dates in Syncfusion Angular Gantt Chart using updateProjectDates method.
-keywords: angular gantt update schedule dates, updateprojectdates, project timeline, roundoff, syncfusion gantt
+keywords: Angular Gantt Chart update schedule dates, updateprojectdates, project timeline, roundoff, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/how-to/change-schedule-dates
 platform: gantt-sdk
 control: Update Schedule Dates - Gantt Chart

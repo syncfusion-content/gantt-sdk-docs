@@ -2,7 +2,7 @@
 layout: post
 title: Toolbar in Angular Gantt Chart | Custom Items | Syncfusion
 description: Learn how to configure toolbar in Syncfusion Angular Gantt Chart with built-in items like Add, Edit, Search, ZoomIn, and custom toolbar buttons for actions.
-keywords: angular gantt toolbar, toolbar items, custom toolbar, toolbarservice, add edit search zoom, syncfusion gantt
+keywords: Angular Gantt Chart toolbar, toolbar items, custom toolbar, toolbarservice, add edit search zoom, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/toolbar
 platform: gantt-sdk
 control: Toolbar - Gantt Chart
@@ -92,7 +92,7 @@ To show only icons in the built-in toolbar items, apply custom CSS to hide the t
 
 ## Customize toolbar buttons using CSS
 
-You can customize the appearance of toolbar buttons in the Gantt Chart component using CSS. Use the following class selectors to target the toolbar icons and buttons:
+You can customize the appearance of toolbar buttons in the Angular Gantt Chart component using CSS. Use the following class selectors to target the toolbar icons and buttons:
 
 ```css
 .e-gantt .e-toolbar .e-tbar-btn .e-icons,
@@ -116,7 +116,7 @@ You can customize the appearance of toolbar buttons in the Gantt Chart component
 
 ## Add toolbar at the bottom of gantt
 
-To reposition the toolbar to the bottom of the Gantt chart, use the [created](https://ej2.syncfusion.com/angular/documentation/gantt/events#created) event to manipulate the DOM. In this event, select the toolbar element and append it to the Gantt container using DOM manipulation. This moves the toolbar to the bottom of the layout.
+To reposition the toolbar to the bottom of the Angular Gantt Chart, use the [created](https://ej2.syncfusion.com/angular/documentation/gantt/events#created) event to manipulate the DOM. In this event, select the toolbar element and append it to the Gantt container using DOM manipulation. This moves the toolbar to the bottom of the layout.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -132,7 +132,7 @@ To reposition the toolbar to the bottom of the Gantt chart, use the [created](ht
 
 ## Custom toolbar items
 
-You can add custom items to the Gantt chart toolbar by setting the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt#toolbar) property with a collection of `ItemModel` objects. The actions associated with these custom toolbar items can be handled using the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/gantt#toolbarclick) event.
+You can add custom items to the Angular Gantt Chart toolbar by setting the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt#toolbar) property with a collection of `ItemModel` objects. The actions associated with these custom toolbar items can be handled using the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/gantt#toolbarclick) event.
 
 By default, custom toolbar items are aligned to the left. However, you can change their position using the `align` property. In the example below, the **Collapse All** toolbar item is aligned to the right.
 
@@ -152,7 +152,7 @@ By default, custom toolbar items are aligned to the left. However, you can chang
 
 ## Built-in and custom items in toolbar
 
-The Gantt Chart component supports using both built-in and custom toolbar items simultaneously. In this example, **ExpandAll** and **CollapseAll** are built-in items, while **Test** and **Schedule** are custom items added to the toolbar.
+The Angular Gantt Chart component supports using both built-in and custom toolbar items simultaneously. In this example, **ExpandAll** and **CollapseAll** are built-in items, while **Test** and **Schedule** are custom items added to the toolbar.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -184,7 +184,7 @@ You can control toolbar items dynamically using the [enableItems](https://ej2.sy
 
 ## Add input elements in toolbar
 
-You can enhance the Gantt toolbar component by adding editor elements such as numeric text boxes, drop-down lists, and date pickers. These input controls improve user interaction by enabling filtering, searching, and other dynamic actions.
+You can enhance the Angular Gantt Chart toolbar component by adding editor elements such as numeric text boxes, drop-down lists, and date pickers. These input controls improve user interaction by enabling filtering, searching, and other dynamic actions.
 
 The following example demonstrates how to integrate an [AutoComplete](https://ej2.syncfusion.com/angular/documentation/auto-complete/getting-started) component into the toolbar.
 

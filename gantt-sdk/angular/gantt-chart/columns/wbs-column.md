@@ -53,7 +53,7 @@ In the following example, WBS auto-update is enabled only during the row drag an
 
 ## Limitations
 
-The WBS feature has the following limitations in the Gantt Chart component:
+The WBS feature has the following limitations in the Angular Gantt Chart component:
 
 * **No Inline Editing**: Editing of the WBS Code and WBS Predecessor columns is not supported. These columns are read-only and are automatically calculated based on the task hierarchy.
 

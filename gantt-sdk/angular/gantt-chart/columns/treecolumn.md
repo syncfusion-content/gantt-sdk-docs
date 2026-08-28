@@ -14,7 +14,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component provides a structured way to display parent-child relationships using expand/collapse icons.
 
-To configure this, set the [treeColumnIndex](https://ej2.syncfusion.com/angular/documentation/api/gantt#treecolumnindex) property to the index of the column where these icons should appear. This enables clear visualization and navigation of hierarchical tasks within the Gantt chart.
+To configure this, set the [treeColumnIndex](https://ej2.syncfusion.com/angular/documentation/api/gantt#treecolumnindex) property to the index of the column where these icons should appear. This enables clear visualization and navigation of hierarchical tasks within the Angular Gantt Chart.
 
 ```ts
 
@@ -81,7 +81,7 @@ In the following demonstration, indentation is applied by dynamically adding a C
 
 ## Render parent rows in collapsed state
 
-You can collapse all parent rows during initial rendering by setting the [collapseAllParentTasks](https://ej2.syncfusion.com/angular/documentation/api/gantt#collapseallparenttasks) property in the Gantt Chart component.
+You can collapse all parent rows during initial rendering by setting the [collapseAllParentTasks](https://ej2.syncfusion.com/angular/documentation/api/gantt#collapseallparenttasks) property in the Angular Gantt Chart component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -227,7 +227,7 @@ To retrieve the currently expanded rows in the Angular Gantt Chart component, us
 
 ## Customize expand/collapse behavior using events
 
-You can customize expand and collapse behavior in the Angular Angular Gantt Chart component using the [expanding](https://ej2.syncfusion.com/angular/documentation/gantt/events#expanding), [expanded](https://ej2.syncfusion.com/angular/documentation/gantt/events#expanded), [collapsing](https://ej2.syncfusion.com/angular/documentation/gantt/events#collapsing), and [collapsed](https://ej2.syncfusion.com/angular/documentation/gantt/events#collapsed) events. These events allow you to control and respond to row state changes programmatically based on your application logic.
+You can customize expand and collapse behavior in the Angular Gantt Chart component using the [expanding](https://ej2.syncfusion.com/angular/documentation/gantt/events#expanding), [expanded](https://ej2.syncfusion.com/angular/documentation/gantt/events#expanded), [collapsing](https://ej2.syncfusion.com/angular/documentation/gantt/events#collapsing), and [collapsed](https://ej2.syncfusion.com/angular/documentation/gantt/events#collapsed) events. These events allow you to control and respond to row state changes programmatically based on your application logic.
 
 The following sample demonstrates how to customize expand and collapse actions in the Angular Gantt Chart component:
 

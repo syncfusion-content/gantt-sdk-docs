@@ -22,9 +22,9 @@ The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-
 
 ### Changing component ID
 
-To reset the Gantt to its default state, update the component ID.  This initializes the component as a new instance, restoring its original configuration.
+To reset the Angular Gantt Chart to its default state, update the component ID.  This initializes the component as a new instance, restoring its original configuration.
 
-Here is an example code to change the component ID dynamically to restore initial Gantt state.
+Here is an example code to change the component ID dynamically to restore initial Angular Gantt Chart state.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -40,7 +40,7 @@ Here is an example code to change the component ID dynamically to restore initia
 
 ### Clearing local storage
 
-Clearing the browser’s local storage associated with the Gantt Chart component removes all persisted data, allowing it to load with its initial settings.
+Clearing the browser’s local storage associated with the Angular Gantt Chart component removes all persisted data, allowing it to load with its initial settings.
 
 Here is an example code on how to clear local storage to retain its default state.
 
@@ -76,7 +76,7 @@ To implement this functionality, extract the current state using `getPersistData
 
 ## Get or set localStorage value
 
-When [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablepersistence) is set to **true**, the Gantt Chart component state is stored in `window.localStorage`. The stored data can be retrieved or updated using the `getItem` and `setItem` methods available in the browser's `localStorage`.
+When [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablepersistence) is set to **true**, the Angular Gantt Chart component state is stored in `window.localStorage`. The stored data can be retrieved or updated using the `getItem` and `setItem` methods available in the browser's `localStorage`.
 
 ```typescript
 //get the Gantt model.
@@ -121,7 +121,7 @@ Persistence in the [Angular Gantt Chart](https://www.syncfusion.com/angular-comp
 
 ### Add a new column in persisted columns list
 
-When [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablepersistence) is set to **true** in the Syncfusion Gantt Chart component, column configurations are saved automatically. To add a new column to the persisted list, update the column collection using `columns.push()`, then call the `refreshColumns` method on the `treeGrid` object in the Gantt instance to update the UI.
+When [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablepersistence) is set to **true** in the Syncfusion Angular Gantt Chart component, column configurations are saved automatically. To add a new column to the persisted list, update the column collection using `columns.push()`, then call the `refreshColumns` method on the `treeGrid` object in the Gantt instance to update the UI.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

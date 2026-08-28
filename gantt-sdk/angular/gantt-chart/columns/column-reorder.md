@@ -66,7 +66,7 @@ You can programmatically reorder columns in Angular Gantt Chart component using 
 
 **Use this method when:** You have the field names of columns you want to reorder and prefer a readable, semantic approach.
 
-You can reorder columns in the Angular Gantt Chart component using the [reorderColumns](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#reordercolumns) method on the gantt instance. This method reorders one or more columns by specifying the source column(s) and the target column using their field names:  
+You can reorder columns in the Angular Gantt Chart component using the [reorderColumns](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#reordercolumns) method on the Angular Gantt Chart instance. This method reorders one or more columns by specifying the source column(s) and the target column using their field names:  
 
 - **fromFName**: The field name of the column to move.  
 - **toFName**: The field name of the target column position.

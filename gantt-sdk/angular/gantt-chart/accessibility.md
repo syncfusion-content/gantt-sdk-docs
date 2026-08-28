@@ -16,7 +16,7 @@ The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-
 
 ## Accessibility compliance
 
-The accessibility compliance for the Gantt Chart component provides detailed insight into supported features and current limitations. Understanding these compliance levels helps developers implement appropriate accessibility measures and identify areas requiring additional attention.
+The accessibility compliance for the Angular Gantt Chart component provides detailed insight into supported features and current limitations. Understanding these compliance levels helps developers implement appropriate accessibility measures and identify areas requiring additional attention.
 
 <style>
     .post .post-content img {

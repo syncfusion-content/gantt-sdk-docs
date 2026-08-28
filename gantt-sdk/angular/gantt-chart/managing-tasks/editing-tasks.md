@@ -2,7 +2,7 @@
 layout: post
 title: Editing Tasks in Angular Gantt Chart | Cell & Dialog | Syncfusion
 description: Learn how to edit tasks in Syncfusion Angular Gantt Chart using cell editing, dialog editing, taskbar drag, or updaterecordbyid for dynamic project management.
-keywords: angular gantt editing tasks, allowediting, dialog edit, cell edit, taskbar edit, syncfusion gantt
+keywords: Angular Gantt Chart editing tasks, allowediting, dialog edit, cell edit, taskbar edit, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/managing-tasks/editing-tasks
 platform: gantt-sdk
 control: Editing Tasks - Gantt Chart

@@ -2,7 +2,7 @@
 layout: post
 title: Loading Animation in Angular Gantt Chart | Indicators | Syncfusion
 description: Learn how to configure loading indicators in Syncfusion Angular Gantt Chart with spinner and shimmer effects for visual feedback during data processing.
-keywords: angular gantt loading animation, loading indicator, spinner, shimmer, loadingindicatortype, syncfusion gantt
+keywords: Angular Gantt Chart loading animation, loading indicator, spinner, shimmer, loadingindicatortype, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/loading-animation
 platform: gantt-sdk
 control: Loading Animation - Gantt Chart
@@ -54,7 +54,7 @@ The following example shows indicator usage:
 
 ## Control loading indicators manually
 
-For custom scenarios, such as asynchronous data processing, manually control indicators using the [showSpinner](https://ej2.syncfusion.com/angular/documentation/api/gantt#showspinner) and [hideSpinner](https://ej2.syncfusion.com/angular/documentation/api/gantt#hidespinner) methods. Ensure proper `ViewChild` initialization to reference the Gantt Chart component.
+For custom scenarios, such as asynchronous data processing, manually control indicators using the [showSpinner](https://ej2.syncfusion.com/angular/documentation/api/gantt#showspinner) and [hideSpinner](https://ej2.syncfusion.com/angular/documentation/api/gantt#hidespinner) methods. Ensure proper `ViewChild` initialization to reference the Angular Gantt Chart component.
 
 The following example demonstrates manual control:
 

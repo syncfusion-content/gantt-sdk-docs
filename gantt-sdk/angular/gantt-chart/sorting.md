@@ -2,7 +2,7 @@
 layout: post
 title: Sorting in Angular Gantt Chart | Multi-Sort | Syncfusion
 description: Learn how to enable sorting to arrange task data in ascending or descending order across multiple columns.
-keywords: angular gantt sorting, allowsorting, sortsettings, multi-column sort, ascending, descending, syncfusion gantt
+keywords: Angular Gantt Chart sorting, allowsorting, sortsettings, multi-column sort, ascending, descending, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/sorting
 platform: gantt-sdk
 control: Sorting - Gantt Chart
@@ -91,7 +91,7 @@ You can externally remove sorting from a specific column in the Angular Gantt Ch
 
 ### Clear sorting
 
-You can clear all sorted columns in the Angular Gantt Chart component using the [clearSorting](https://ej2.syncfusion.com/angular/documentation/api/gantt#clearsorting) method to reset the Gantt Chart to its unsorted state.
+You can clear all sorted columns in the Angular Gantt Chart component using the [clearSorting](https://ej2.syncfusion.com/angular/documentation/api/gantt#clearsorting) method to reset the Angular Gantt Chart to its unsorted state.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -140,7 +140,7 @@ The sorting process includes the following steps:
 
 1. Ascending → Descending → Clear Sorting (resets to original data source order).
 2. Child records are sorted within their respective parent groups.
-3. Null values in child records appear at the bottom of each parent group, not across the entire Gantt dataset.
+3. Null values in child records appear at the bottom of each parent group, not across the entire Angular Gantt Chart dataset.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

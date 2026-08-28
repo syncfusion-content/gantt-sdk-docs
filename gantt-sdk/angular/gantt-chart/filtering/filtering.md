@@ -2,7 +2,7 @@
 layout: post
 title: Filtering in Angular Gantt Chart | Filter & Search | Syncfusion
 description: Learn how to filter task data in Syncfusion Angular Gantt Chart with filter menu, Excel-like filtering, and toolbar search to view specific or related records.
-keywords: angular gantt filtering, allowfiltering, filtersettings, search, filter menu, excel filter, syncfusion gantt
+keywords: Angular Gantt Chart filtering, allowfiltering, filtersettings, search, filter menu, excel filter, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/filtering/filtering
 platform: gantt-sdk
 control: Filtering - Gantt Chart
@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Filtering and Search Features in Angular Gantt Chart
 
-Filtering allows you to view specific or related records based on defined criteria. The Gantt Chart component supports options like filter menu, Excel-like filtering, and toolbar search to narrow down visible data.
+Filtering allows you to view specific or related records based on defined criteria. The Angular Gantt Chart component supports options like filter menu, Excel-like filtering, and toolbar search to narrow down visible data.
 
 To enable filtering, set [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowfiltering) to **true** in the Gantt configuration. You can define filter options using [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/filterSettings) and configure toolbar search using [searchSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/searchSettings) property.
 
@@ -121,7 +121,7 @@ The following sample demonstrates how to filter the **TaskName** and **TaskID** 
 
 ## Clear all applied filters
 
-You can clear all the filtering conditions applied in the Gantt Chart component by using the [clearFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt#clearfiltering) method.
+You can clear all the filtering conditions applied in the Angular Gantt Chart component by using the [clearFiltering](https://ej2.syncfusion.com/angular/documentation/api/gantt#clearfiltering) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -137,7 +137,7 @@ You can clear all the filtering conditions applied in the Gantt Chart component 
 
 ## Set different filter types per column
 
-You can enable different filter types for individual columns in the Gantt Chart component by setting the `column.filter.type` property.
+You can enable different filter types for individual columns in the Angular Gantt Chart component by setting the `column.filter.type` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

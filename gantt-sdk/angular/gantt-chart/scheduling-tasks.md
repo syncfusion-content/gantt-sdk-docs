@@ -2,7 +2,7 @@
 layout: post
 title: Scheduling Tasks in Angular Gantt Chart | Modes & Types | Syncfusion
 description: Learn how to configure task scheduling in Syncfusion Angular Gantt Chart with auto/manual modes, task types, duration units, working time, and holiday settings.
-keywords: angular gantt scheduling, task mode, task type, duration unit, working time, syncfusion gantt
+keywords: Angular Gantt Chart scheduling, task mode, task type, duration unit, working time, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/scheduling-tasks
 platform: gantt-sdk
 control: Scheduling Tasks - Gantt Chart
@@ -104,9 +104,9 @@ The following example configures task types:
 
 ## Configure duration units
 
-Duration units determine how task length is measured and calculated within the project. The Gantt Chart component supports three duration units that can be applied at both project and individual task levels.
+Duration units determine how task length is measured and calculated within the project. The Angular Gantt Chart component supports three duration units that can be applied at both project and individual task levels.
 
-The Gantt Chart component supports the following duration units:
+The Angular Gantt Chart component supports the following duration units:
 
 - **Day**: Standard for general planning.
 - **Hour**: For detailed task management.

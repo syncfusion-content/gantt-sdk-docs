@@ -2,7 +2,7 @@
 layout: post
 title: Real-Time Angular Gantt Chart with SignalR | Live Updates | Syncfusion
 description: Learn how to enable real-time updates with SignalR in the Syncfusion Angular Gantt Chart for instant task synchronization and seamless live collaboration.
-keywords: angular gantt signalr, real-time updates, live data, asp.net core, push notifications, syncfusion gantt
+keywords: Angular Gantt Chart signalr, real-time updates, live data, asp.net core, push notifications, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/signalr
 platform: gantt-sdk
 control: SignalR - Gantt Chart
@@ -80,9 +80,9 @@ export class AppComponent {
 }
 ```
 
-### Step 4: Configure the Gantt Chart with Events
+### Step 4: Configure the Angular Gantt Chart with Events
 
-To enable real-time collaboration, you need to integrate the Gantt Chart component into your Angular application and bind two important lifecycle events: created and actionComplete.
+To enable real-time collaboration, you need to integrate the Angular Gantt Chart component into your Angular application and bind two important lifecycle events: created and actionComplete.
 
 ```html
 <ejs-gantt id="ganttDefault" (actionComplete)="actionComplete($event)" (created)="created()">   
@@ -96,11 +96,11 @@ In `app.component.ts`, import SignalR and configure the connection using the fol
 
 **created Event**
 
-The `created` event establishes the SignalR connection to the backend hub. Initializing the connection here ensures that the real-time communication channel is ready as soon as the Gantt Chart component is rendered.
+The `created` event establishes the SignalR connection to the backend hub. Initializing the connection here ensures that the real-time communication channel is ready as soon as the Angular Gantt Chart component is rendered.
 
 **actionComplete Event**
 
-The `actionComplete` event is triggered after add, edit, and delete operations are completed in the Gantt Chart. By checking the `requestType` property, you can identify the performed operation and send the corresponding task data to the SignalR hub. Connected clients receive the notification and apply the appropriate CRUD operation, ensuring real-time synchronization across all Gantt Chart instances.
+The `actionComplete` event is triggered after add, edit, and delete operations are completed in the Angular Gantt Chart. By checking the `requestType` property, you can identify the performed operation and send the corresponding task data to the SignalR hub. Connected clients receive the notification and apply the appropriate CRUD operation, ensuring real-time synchronization across all Angular Gantt Chart instances.
 
 ```ts
 app.component.ts
@@ -246,7 +246,7 @@ args.requestType == "delete")) {
 
 - **HubConnectionBuilder**: Configures and creates the SignalR connection to the backend hub. It allows you to specify the hub URL, authentication options (such as credentials), logging level, and reconnection behavior. Once configured, the `.build()` method creates the `HubConnection` instance that manages communication with the server.
 
-- **on()**: Registers a client-side listener for messages broadcast by the server. In this implementation, it listens for the `ReceiveTaskChange` event. Based on the received operation type (add, update, or delete), the corresponding Gantt Chart method is invoked to synchronize task changes across connected clients.
+- **on()**: Registers a client-side listener for messages broadcast by the server. In this implementation, it listens for the `ReceiveTaskChange` event. Based on the received operation type (add, update, or delete), the corresponding Angular Gantt Chart method is invoked to synchronize task changes across connected clients.
 
 - **invoke()**: Allows the client to call a method on the server-side hub. In this implementation, it invokes the `BroadCastTaskChange` method and sends a payload containing the operation type, task data, and sender connection ID to synchronize task changes across connected clients.
 
@@ -279,7 +279,7 @@ this.ganttObj.deleteRecord(data.taskId);
 
 **Preventing Duplicate Broadcasts**
 
-To avoid broadcast loops during synchronization, incoming SignalR updates are applied locally without re-broadcasting them. The implementation uses the **toRefreshGantt** flag and sender connection ID validation to ensure that each add, update, or delete operation is processed only once across all connected Gantt Chart instances.
+To avoid broadcast loops during synchronization, incoming SignalR updates are applied locally without re-broadcasting them. The implementation uses the **toRefreshGantt** flag and sender connection ID validation to ensure that each add, update, or delete operation is processed only once across all connected Angular Gantt Chart instances.
 
 ## Create the Background Service
 
@@ -319,7 +319,7 @@ namespace GanttSignalRBackend.Hubs
 }
 ```
 
-The `BroadCastTaskChange` method broadcasts task changes to other connected clients in the specified SignalR group. The task change data is sent through the `ReceiveTaskChange` event, allowing connected Gantt Chart instances to remain synchronized.
+The `BroadCastTaskChange` method broadcasts task changes to other connected clients in the specified SignalR group. The task change data is sent through the `ReceiveTaskChange` event, allowing connected Angular Gantt Chart instances to remain synchronized.
 
 ### Step 3: Configure SignalR Services and CORS
 
@@ -361,7 +361,7 @@ This configuration registers SignalR services and configures CORS to allow conne
 
 The Angular Gantt Chart package (@syncfusion/ej2-angular-gantt) has already been installed in your project via npm. 
 
-To make the Gantt Chart component available throughout your Angular application, you need to import the GanttModule and register it in your module file. 
+To make the Angular Gantt Chart component available throughout your Angular application, you need to import the GanttModule and register it in your module file. 
 
 Open src/app/app.module.ts (or your main feature module if you're using a modular structure) and update it as follows.
 
@@ -411,7 +411,7 @@ The integration enables seamless, instant updates across multiple users. The pro
 
 **1. User Action Triggers Event**
 
-When a user makes a change such as editing, adding, or deleting a task in the Gantt Chart, the `actionComplete` event is automatically triggered.
+When a user makes a change such as editing, adding, or deleting a task in the Angular Gantt Chart, the `actionComplete` event is automatically triggered.
 
 **2. Broadcast the Change**
 
@@ -506,7 +506,7 @@ This section covers the most frequent problems developers encounter when integra
 
 ### Quick Diagnostic Steps
 
-When troubleshooting SignalR issues with Angular Gantt, follow these steps systematically:
+When troubleshooting SignalR issues with Angular Gantt Chart, follow these steps systematically:
 
 **1. Verify Backend is Running**
 ```bash

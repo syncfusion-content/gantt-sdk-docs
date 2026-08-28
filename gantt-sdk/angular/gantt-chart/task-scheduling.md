@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 The Gantt provides support for automatic and manual task scheduling modes. It is used to indicate whether the start date and end date of all the tasks will be automatically validated or not. [taskMode](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskmode) is the property used to change the schedule mode of a task.
 
-The Gantt control supports three types of mode. They are:
+The Angular Gantt Chart control supports three types of mode. They are:
 
 * **Auto**: All the tasks are automatically validate.
 * **Manual**: All the tasks are manually validate by the user.
@@ -112,7 +112,7 @@ You can define the various types of unscheduled tasks in the data source as foll
 
 In the Gantt control, working hours for all days of a project can be defined by using the [dayWorkingTime](https://ej2.syncfusion.com/angular/documentation/api/gantt#dayworkingtime) property. Based on the working hours, automatic date scheduling and duration validations for a task are performed.
 
-The following code snippet explains how to define the working time range for the project in Gantt.
+The following code snippet explains how to define the working time range for the project in Angular Gantt Chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -136,11 +136,11 @@ The following code snippet explains how to define the working time range for the
 
 ### Working time range for specific day in a week
 
-In the Gantt control, [weekWorkingTime](https://ej2.syncfusion.com/angular/documentation/api/gantt#weekworkingtime) property enables you to specify different working hours for each day of the week in your Gantt chart. By configuring this property, you can ensure that tasks are only scheduled during defined working periods, avoiding non-working hours for that respective day.
+In the Gantt control, [weekWorkingTime](https://ej2.syncfusion.com/angular/documentation/api/gantt#weekworkingtime) property enables you to specify different working hours for each day of the week in your Angular Gantt Chart. By configuring this property, you can ensure that tasks are only scheduled during defined working periods, avoiding non-working hours for that respective day.
 
 The [timeRange](https://ej2.syncfusion.com/angular/documentation/api/gantt/weekworkingtime#timerange) property of `weekWorkingTime` accepts multiple breakup in the working time as like [dayWorkingTime](https://ej2.syncfusion.com/angular/documentation/api/gantt#dayworkingtime) property. This working time range will apply only to the working days defined in [dayOfWeek](https://ej2.syncfusion.com/angular/documentation/api/gantt/weekworkingtime#dayofweek) property of `weekWorkingTime`.
 
-The following code snippet explains how to define the week working time range for the project in Gantt. In the below sample working time range for **Monday** and **Tuesday** is set from **10** to **18**.
+The following code snippet explains how to define the week working time range for the project in Angular Gantt Chart. In the below sample working time range for **Monday** and **Tuesday** is set from **10** to **18**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -241,4 +241,4 @@ Duration units for the tasks can also be defined along with the duration values,
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/scheduling-tasks/durationfield-cs1" %}
 
 >NOTE:
-The edit type of the duration column in Gantt is string, to support editing the duration field along with duration units.
+The edit type of the duration column in Angular Gantt Chart is string, to support editing the duration field along with duration units.

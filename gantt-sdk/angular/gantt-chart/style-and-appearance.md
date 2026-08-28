@@ -2,7 +2,7 @@
 layout: post
 title: Style and Appearance in Angular Gantt Chart | CSS | Syncfusion
 description: Learn how to customize style and appearance with CSS overrides, grid lines, and theme customization options.
-keywords: angular gantt styling, css customization, theme, grid lines, querytaskbarinfo, syncfusion gantt
+keywords: Angular Gantt Chart styling, css customization, theme, grid lines, querytaskbarinfo, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/style-and-appearance
 platform: gantt-sdk
 control: Style and Appearance - Gantt Chart
@@ -16,7 +16,7 @@ The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-
 
 ## CSS class reference
 
-The Gantt Chart component uses CSS classes for styling, organized by functional areas:
+The Angular Gantt Chart component uses CSS classes for styling, organized by functional areas:
 - **Core structure**:
   - `e-gantt`: Root container for the entire component.
   - `e-gridheader`: Header container separating headers from content.
@@ -109,7 +109,7 @@ The following example overrides taskbar and milestone styles:
 ```
 
 ## Customize the taskbar
-To customize the appearance of child taskbars in the Gantt Chart, apply the following CSS.
+To customize the appearance of child taskbars in the Angular Gantt Chart, apply the following CSS.
 ```css
 .e-gantt-child-taskbar{
   border-radius: 40%!important;
@@ -118,7 +118,7 @@ To customize the appearance of child taskbars in the Gantt Chart, apply the foll
 
 ## Customize the connector line
 
-To customize the connector line in the Gantt Chart, apply the following CSS
+To customize the connector line in the Angular Gantt Chart, apply the following CSS
 
 ```css
  .e-connector-line{
@@ -132,7 +132,7 @@ To customize the connector line in the Gantt Chart, apply the following CSS
 
 ## Customize the dialog popup on editing
 
-To customize the header area of the dialog editor in the Gantt Chart, apply the following CSS.
+To customize the header area of the dialog editor in the Angular Gantt Chart, apply the following CSS.
 
 ```css
 .e-gantt-dialog .e-dlg-header-content, .e-gantt-dialog .e-tab .e-tab-header {
@@ -142,7 +142,7 @@ To customize the header area of the dialog editor in the Gantt Chart, apply the 
 
 ## Customize row hover
 
-To customize the row hover effect in the Gantt Chart, apply the following CSS.
+To customize the row hover effect in the Angular Gantt Chart, apply the following CSS.
 
 ```css
 .e-gantt .e-chart-row:hover {

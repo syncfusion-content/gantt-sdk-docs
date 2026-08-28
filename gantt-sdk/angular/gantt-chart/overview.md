@@ -30,7 +30,7 @@ The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-
 
 - [**Task editing**](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/editing-tasks) - Edit tasks inline, through dialogs, or by dragging taskbars
 - [**Task dependencies**](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency) - Define relationships using finish-to-start, start-to-finish, start-to-start, and finish-to-finish types
-- [**Undo and redo**](https://ej2.syncfusion.com/angular/documentation/gantt/undo-redo) - Revert or reapply recent actions in the Gantt Chart
+- [**Undo and redo**](https://ej2.syncfusion.com/angular/documentation/gantt/undo-redo) - Revert or reapply recent actions in the Angular Gantt Chart
 - [**Task scheduling**](https://ej2.syncfusion.com/angular/documentation/gantt/scheduling-tasks) - Configure automatic or manual task scheduling modes
 - [**Splitting tasks**](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/splitting-and-merging-tasks) - Split tasks into multiple segments and merge them back
 - [**Task constraints**](https://ej2.syncfusion.com/angular/documentation/gantt/task-constraints) - Apply fixed dates or conditional scheduling restrictions

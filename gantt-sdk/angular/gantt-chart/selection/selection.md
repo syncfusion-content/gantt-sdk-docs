@@ -2,7 +2,7 @@
 layout: post
 title: Selection in Angular Gantt Chart | Highlight Rows | Syncfusion
 description: Learn how to enable selection in the Syncfusion Angular Gantt Chart to highlight rows or cells, improve user interaction, and manage task data efficiently.
-keywords: angular gantt selection, allowselection, row selection, cell selection, keyboard, syncfusion gantt
+keywords: Angular Gantt Chart selection, allowselection, row selection, cell selection, keyboard, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/selection/selection
 platform: gantt-sdk
 control: Selection - Gantt Chart
@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Enabling and Configuring Selection Behavior in Angular Gantt Chart
 
-The Selection feature provides the ability to highlight a row or cell in the Gantt Chart component. Selection can be performed using arrow keys or mouse clicks.
+The Selection feature provides the ability to highlight a row or cell in the Angular Gantt Chart component. Selection can be performed using arrow keys or mouse clicks.
 
 To disable selection, set the [allowSelection](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowselection) property to **false**.
 
@@ -29,7 +29,7 @@ The following video demonstrates how selection works in the Angular Gantt Chart:
 
 ## Selection mode
 
-The Gantt Chart component supports three types of selection modes, which can be set using the [selectionSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings#mode) property: 
+The Angular Gantt Chart component supports three types of selection modes, which can be set using the [selectionSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings#mode) property: 
 
 * **Row:** Allows selection of rows only. This is the default mode.
 * **Cell:** Allows selection of cells only.
@@ -105,7 +105,7 @@ The following code example shows how to enable the hover highlighting in Gantt.
 
 ## Clear selection
 
-To clear selected rows and cells in the Gantt Chart component, use the [clearSelection](https://ej2.syncfusion.com/angular/documentation/api/gantt#clearselection) method.
+To clear selected rows and cells in the Angular Gantt Chart component, use the [clearSelection](https://ej2.syncfusion.com/angular/documentation/api/gantt#clearselection) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

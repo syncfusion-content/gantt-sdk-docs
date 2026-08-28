@@ -2,7 +2,7 @@
 layout: post
 title: Critical Path in Angular Gantt Chart | Project Analysis | Syncfusion
 description: Learn how to identify and visualize the critical path to determine minimum project duration and key impact tasks.
-keywords: angular gantt critical path, slack, float, project duration, dependency analysis, syncfusion gantt
+keywords: Angular Gantt Chart critical path, slack, float, project duration, dependency analysis, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/critical-path
 platform: gantt-sdk
 control: Critical Path - Gantt Chart
