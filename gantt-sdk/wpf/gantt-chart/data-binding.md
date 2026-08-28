@@ -19,7 +19,7 @@ You can easily create the task details collection using the TaskDetails class or
 
 Binding [TaskDetails](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskDetails.html) collection to Gantt Control
 
-The following code illustrates how to bind the Task Details to the Gantt Control:
+The following code illustrates how to bind the Task Details to the WPF Gantt control:
 
 {% tabs %}
 

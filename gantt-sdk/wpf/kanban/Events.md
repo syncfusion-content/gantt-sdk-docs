@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events in WPF SfKanban | Syncfusion
-description: Learn about Events support in Syncfusion WPF SfKanban, including card selection, drag-and-drop operations, and workflow-related interactions.
+title: Events in WPF Kanban Board | Syncfusion
+description: Learn about Events support in Syncfusion WPF Kanban Board, including card selection, drag-and-drop operations, and workflow-related interactions.
 platform: gantt-sdk
 control: SfKanban
 documentation: ug
 ---
 
-# Events in WPF SfKanban
+# Events in WPF Kanban Board
 
 ## CardTapped
 
@@ -21,7 +21,7 @@ This event is triggered when you tap on any card. The argument contains the foll
 
 #### Command
 
-The `CardTappedCommand` property is used to associate a command with an instance of SfKanban. This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
+The `CardTappedCommand` property is used to associate a command with the control. This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
 
 #### CommandParameter
 

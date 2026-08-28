@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Column in WPF SfKanban | Syncfusion
-description: Learn about Column support in Syncfusion WPF SfKanban, including headers, categories, drag-and-drop behavior, constraints, and appearance settings.
+title: Column in WPF Kanban Board | Syncfusion
+description: Learn about Column support in Syncfusion WPF Kanban Board, including headers, categories, drag-and-drop behavior, constraints, and appearance settings.
 platform: gantt-sdk
 control: SfKanban
 documentation: ug
 ---
 
-# Column in WPF SfKanban
+# Column in WPF Kanban Board
 
 ## Customizing column size
 
@@ -103,7 +103,7 @@ progressColumn.Categories = new List<object>() { "In Progress", "Validated" };
 
 ## Column Tags
 
-The [`Tags`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_Tags) property customizes the header of a kanban column. The following properties of the tags are used to customize the column header:
+The [`Tags`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_Tags) property customizes the header of a column. The following properties of the tags are used to customize the column header:
 
 * [`CardCount`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.ColumnTag.html#Syncfusion_UI_Xaml_Kanban_ColumnTag_CardCount) - Gets or sets the count of Cards available in column.
 * [`Maximum`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.ColumnTag.html#Syncfusion_UI_Xaml_Kanban_ColumnTag_Maximum) - Gets or sets a value that indicates cards collection's maximum limit of KanbanColumn.
@@ -113,7 +113,7 @@ The [`Tags`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.Kanban
 
 ## Expand/Collapse Column
 
-The Columns can be expanded/collapsed by tapping the toggle button, which is placed at top-right corner of the Kanban header. The [`KanbanColumn.IsExpanded`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_IsExpanded) property is used to programmatically expand/collapse the Kanban column.
+The Columns can be expanded/collapsed by tapping the toggle button, which is placed at top-right corner of the header. The [`KanbanColumn.IsExpanded`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_IsExpanded) property is used to programmatically expand/collapse the column.
 
 {% tabs %}
 
