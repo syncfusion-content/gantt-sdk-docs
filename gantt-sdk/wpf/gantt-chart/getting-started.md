@@ -19,7 +19,7 @@ WPF Gantt control is composed of three controls. They are:
 
 ![gantt-control-appearance-and-structure](Getting-Started_images/gantt-control-appearance-and-structure.png)
 
-#### Gantt grid
+### Gantt grid
 
 Gantt Grid is a table view control which displays the scheduled tasks/activities of the project with its hierarchy. You can edit the fields of the bounded tasks using this grid.
 
@@ -30,7 +30,7 @@ Gantt Grid is a table view control which displays the scheduled tasks/activities
 * Child Task—Child task represents an individual task. This contains only the information about the specific task. The Child task is a part of parent task.
 * Expand/Collapse Button—Expand/Collapse button allows you to expand or collapse the particular hierarchy.
 
-#### Gantt chart
+### Gantt chart
 
 Gantt Chart is an items control which provides a graphically representation of the task/activity that are currently scheduled. Gantt Chart have different components to represent the type of Task, Progress of the Task and Relationship between Tasks.
 
@@ -42,7 +42,7 @@ Gantt Chart is an items control which provides a graphically representation of t
 * Progress Indicator—Progress indicator represents the percentage of work completed for the task.
 * Connector—Connector represents the dependency relationship between the tasks.
 
-#### Gantt schedule 
+### Gantt schedule 
 
 Gantt Schedule is a medium to measure the progress in the WPF Gantt control. Using this you can track or measure the progress of the task or activity.
 
