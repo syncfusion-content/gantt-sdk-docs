@@ -1,23 +1,23 @@
 ---
 layout: post
-title: About Syncfusion WPF SfKanban Control | Syncfusion
-description: Learn about introduction of Syncfusion Essential Studio WPF SfKanban control, its element and more details.
+title: About Syncfusion WPF Kanban Board Control | Syncfusion
+description: Learn about introduction of Syncfusion Essential Studio WPF Kanban Board control, its element and more details.
 platform: gantt-sdk
 control: SfKanban
 documentation: ug
 ---
 
-# About Syncfusion WPF SfKanban Control
+# About Syncfusion WPF Kanban Board Control
 
-The Kanban control is an efficient way to visualize a workflow at each stage of completion. Kanban helps to define elegant planning and clear visualization of work progression. SfKanban also provide many features that are used to monitor the progressing tasks in software development cycle. 
+The WPF Kanban Board is an efficient way to visualize workflows at each stage of completion. It enables effective planning and provides clear visibility into work progress. A rich set of features helps monitor task progress throughout the software development cycle.
 
 ![SfKanban control in WPF](sfkanban_images/wpf-kanban-board-overview.png)
 
 
 ## Key features
 
-* WorkFlows – It allows user to control the transitions between tasks from one category (status) to another.
-* Customization – Kanban cards and place holders can be customized. 
-* WIP Limit – Visualize Work-In Progress limit.
-* Indicator color customization – Indicator color for Kanban cards can be customized.
-* Dragging events – Dragging events occurred while rearranging or repositioning Kanban cards.
+* **Workflows** - It allows users to control the transitions between tasks from one category (status) to another.
+* **Customization** - Cards and placeholders can be customized.
+* **WIP Limit** - Visualize the Work-In-Progress limit.
+* **Indicator color customization** - The indicator color for cards can be customized.
+* **Dragging events** - Dragging events are raised while rearranging or repositioning cards.
