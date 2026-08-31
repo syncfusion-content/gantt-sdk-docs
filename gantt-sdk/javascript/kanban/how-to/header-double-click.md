@@ -12,22 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Handle Header Double-Click in JavaScript Kanban
 
-You can bind the header double click event by using the [`dataBound`](../../api/kanban#dataBound) event at the initial rendering. You can get the column header text when you double click on the headers.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/kanban/how-to-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/kanban/how-to-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/kanban/how-to-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+You can bind the header double click event by using the [`dataBound`](https://ej2.syncfusion.com/javascript/documentation/api/kanban#dataBound) event at the initial rendering. You can get the column header text when you double click on the headers.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -39,4 +24,4 @@ You can bind the header double click event by using the [`dataBound`](../../api/
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/kanban/how-to-cs1" %}
-{% endif %}
+

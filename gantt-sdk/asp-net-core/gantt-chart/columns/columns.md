@@ -22,8 +22,6 @@ The [`TreeColumnIndex`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion
 
 Using the [`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Columns) property, you can define the columns in Gantt. If the columns are not defined, then the default columns will be rendered based on the mapped data source fields in the [`TaskFields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskFields) property. Refer to the following code example for defining the columns in Gantt along with their widths.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/definingColumns/tagHelper %}
@@ -33,27 +31,11 @@ Using the [`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/definingColumns/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="DefiningColumns.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/definingColumns/definingColumns.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Alt text](images/definingColumns.png)
+![Alt text](../images/definingColumns.png)
 
 ## Custom column header
 
 The column header text can be defined using the [`HeaderText`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_HeaderText) property, and you can customize the column headers using the [`HeaderTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_HeaderTemplate) property.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -64,27 +46,11 @@ The column header text can be defined using the [`HeaderText`](https://help.sync
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/headerTemplate/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="HeaderTemplate.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/headerTemplate/headerTemplate.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Alt text](images/headerTemplate.png)
+![Alt text](../images/headerTemplate.png)
 
 ## Format
 
-To format the cell values based on a specific culture, use the [`Columns.Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Format) property. The Gantt control uses the [`Internationalization`](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/global-local#internationalization) library to format [`number`](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/global-local#internationalization) and [`date`](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/global-local#internationalization) values.
-
-{% if page.publishingplatform == "aspnet-core" %}
+To format the cell values based on a specific culture, use the [`Columns.Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Format) property. The Gantt control uses the [`Internationalization`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization) library to format [`number`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization#number-formatting) and [`date`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization#manipulating-datetime) values.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -95,23 +61,9 @@ To format the cell values based on a specific culture, use the [`Columns.Format`
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+![Alt text](../images/formatColumn.png)
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/formatColumn/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="FormatColumn.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/formatColumn/formatColumn.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Alt text](images/formatColumn.png)
-
-N> By default, the [`number`](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/global-local#internationalization) and [`date`](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/global-local#internationalization) values are formatted in `en-US` culture.
+N> By default, the [`number`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization#number-formatting) and [`date`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization#manipulating-datetime) values are formatted in `en-US` culture.
 
 ### Number formatting
 
@@ -139,8 +91,6 @@ You can also use the custom format string to format the date values. Some of the
 |{ type: 'dateTime', format: 'dd/MM/yyyy hh:mm a' } | 04/07/2019 12:00 AM|
 |{ type: 'dateTime', format: 'MM/dd/yyyy hh:mm:ss a' } | 07/04/2019 12:00:00 AM|
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/formatColumns/tagHelper %}
@@ -150,23 +100,9 @@ You can also use the custom format string to format the date values. Some of the
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/formatColumns/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="FormatColumns.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/formatColumns/formatColumns.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Change tree/expander column
 
 The tree/expander column is a column in the Gantt control, that has icons to expand or collapse the parent records. You can define the tree column index in the Gantt control by using the [`TreeColumnIndex`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TreeColumnIndex) property and the default value of this property is `0`. The following code example shows how to use this property.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -177,27 +113,11 @@ The tree/expander column is a column in the Gantt control, that has icons to exp
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/treeColumnIndex/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="TreeColumnIndex.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/treeColumnIndex/treeColumnIndex.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Alt text](images/treeColumnIndex.png)
+![Alt text](../images/treeColumnIndex.png)
 
 ## Show or hide columns dynamically
 
 You can show or hide gantt columns dynamically using external buttons by invoking the `showColumn` or `hideColumn` method. The **Progress** column is hidden and shown on button clicking.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -208,27 +128,11 @@ You can show or hide gantt columns dynamically using external buttons by invokin
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/showHide/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ShowHide.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/showHide/showHide.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Alt text](images/showhidecol.png)
+![Alt text](../images/showhidecol.png)
 
 ## Controlling gantt column actions
 
 You can enable or disable gantt action for a particular column by setting the `allowFiltering`, `allowSorting`, `allowReordering`, and [`allowEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettingsBuilder.html#Syncfusion_EJ2_Gantt_GanttEditSettingsBuilder_AllowEditing_System_Boolean_) properties.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -238,20 +142,6 @@ You can enable or disable gantt action for a particular column by setting the `a
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/gridActions/gridActions.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/gridActions/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="GridActions.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/gridActions/gridActions.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ## Column type
 

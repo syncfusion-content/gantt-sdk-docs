@@ -16,8 +16,6 @@ The loading indicator is used to display a visual indicator while the Gantt is f
 
 In the following sample, the Shimmer indicator is displayed while the gantt is scrolled when using the virtual data.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/loading-animation/tagHelper %}
@@ -26,15 +24,3 @@ In the following sample, the Shimmer indicator is displayed while the gantt is s
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/loading-animation/loading-animation.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/loading-animation/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Loading-animation.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/loading-animation/loading-animation.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

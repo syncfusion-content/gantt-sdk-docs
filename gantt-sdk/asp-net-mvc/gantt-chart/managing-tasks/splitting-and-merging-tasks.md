@@ -26,19 +26,6 @@ The task can be split dynamically, either by using the context menu or dialog.
 
 - `Context menu`: When the [`TaskFields.Segments`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) or [`TaskFields.SegmentId`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) property is mapped and the [`EnableContextMenu`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableContextMenu) property is enabled, `Split Task` item will be included in the context menu.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/split-tasks/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Split-tasks.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/split-tasks/split-tasks.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/split-tasks/razor %}
@@ -47,15 +34,14 @@ The task can be split dynamically, either by using the context menu or dialog.
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/split-tasks/split-tasks.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-![Alt text](images/split-tasks.png)
+![Alt text](../images/split-tasks.png)
 
-![Alt text](images/split-contextmenu.png)
+![Alt text](../images/split-contextmenu.png)
 
-![Alt text](images/merge-contextmenu.png)
+![Alt text](../images/merge-contextmenu.png)
 
-![Alt text](images/segment-tab.png)
+![Alt text](../images/segment-tab.png)
 
 ## Merge tasks
 

@@ -16,19 +16,6 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 Modify the task details through user interaction such as resizing and dragging the taskbar by enabling the [`AllowTaskbarEditing`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html#Syncfusion_EJ2_Gantt_GanttEditSettings_AllowTaskbarEditing) property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/enableTaskbarEditing/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="EnableTaskbarEditing.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/enableTaskbarEditing/enableTaskbarEditing.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/enableTaskbarEditing/razor %}
@@ -37,24 +24,10 @@ Modify the task details through user interaction such as resizing and dragging t
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/enableTaskbarEditing/enableTaskbarEditing.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Prevent editing for specific tasks
 
 On taskbar edit action, the [`TaskbarEditing`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskbarEditing) event will be triggered. You can prevent the taskbar from editing using the [`TaskbarEditing`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskbarEditing) event. This can be done by setting cancel property of [`TaskbarEditing`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskbarEditing) event argument to true. And we can hide the taskbar editing indicators like taskbar resizer, progress resizer and connector points by using [`QueryTaskbarInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_QueryTaskbarInfo) event. The following code example shows how to achieve this.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/preventTaskbarEditing/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="PreventTaskbarEditing.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/preventTaskbarEditing/preventTaskbarEditing.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -64,4 +37,3 @@ On taskbar edit action, the [`TaskbarEditing`](https://help.syncfusion.com/cr/as
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/preventTaskbarEditing/preventTaskbarEditing.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
