@@ -102,4 +102,4 @@ The accessibility compliance of the Kanban control is shown in the following sam
 
 ## See also
 
-- [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC control](https://ej2.syncfusion.com/aspnetcore/documentation/common/accessibility)
+- [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC control](https://ej2.syncfusion.com/aspnetmvc/documentation/common/accessibility)

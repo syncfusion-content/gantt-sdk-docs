@@ -47,14 +47,13 @@ swimlaneSettings.keyField(If applicable) | DropDown | -
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/dialog/default/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
 Output be like the below.
 
 ![kanban](./images/dialog-default.PNG)
 
 ## Custom Fields
 
-You can change the default fields of dialog using `Fields` property inside the `DialogSettings` property. The `Key` property used to map the DataSource value and rendered the corresponding component based on specified `Type` property.
+You can change the default fields of dialog using `Fields` property inside the [`DialogSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_DialogSettings) property. The `Key` property used to map the DataSource value and rendered the corresponding component based on specified `Type` property.
 
 The following types are available in dialog fields.
 
@@ -78,7 +77,6 @@ N> If `Type` is not defined in the fields, then it renders as the HTML input ele
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/dialog/custom-fields/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
 Output be like the below.
 
 ![kanban](./images/custom-fields.PNG)
@@ -98,7 +96,6 @@ By default, the fields `Key` mapping value is considered as a `Label` and you ca
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/dialog/custom-field-label/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
 Output be like the below.
 
 ![kanban](./images/custom-fields-label.PNG)
@@ -118,7 +115,6 @@ The dialog fields can be validated while click on the `Save` button. This can be
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/dialog/fields-validation/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
 ## Dialog Template
 
 Using the dialog template, you can render your own dialog by defining the `Template` property. Initialize the template as SCRIPT element Id or HTML string which holds the template and map it to the template property.
@@ -134,7 +130,6 @@ Using the dialog template, you can render your own dialog by defining the `Templ
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/dialog/template/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
 Output be like the below.
 
 ![kanban](./images/dialog-template.PNG)
@@ -154,7 +149,6 @@ The Kanban allows to prevent to open a dialog on card double-click by enabling `
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/dialog/prevent-dialog/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
 ## Persisting data in server
 
 The modified card data can be persisted in the database using the RESTful web services. All the CRUD operations in the Kanban are done through `DataManager`. The `DataManager` has an option to bind all the CRUD related data in server-side.
@@ -184,7 +178,6 @@ The following code example describes the above behavior.
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/dialog/url-adaptor/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
 The server-side controller code to handle the CRUD operations are as follows.
 
 ```typescript
@@ -282,7 +275,6 @@ The following code example describes the above behavior.
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/dialog/crud-url-adaptor/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
 ```typescript
 
 private NORTHWNDEntities db = new NORTHWNDEntities();
@@ -340,4 +332,4 @@ public class EditParams {
 
 ```
 
-N> The `CrudUrl` is used to update the bulk data sent to the server-side. Multiple selections and `SortBy` as `Index` properties are used for `CrudUrl` properties to update the modified bulk data to the server-side.
+N> The `CrudUrl` is used to update the bulk data sent to the server-side. Multiple selections and [`SortBy`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.KanbanSortSettings.html#Syncfusion_EJ2_Kanban_KanbanSortSettings_SortBy) as `Index` properties are used for `CrudUrl` properties to update the modified bulk data to the server-side.
