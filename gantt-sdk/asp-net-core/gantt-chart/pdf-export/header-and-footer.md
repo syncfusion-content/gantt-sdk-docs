@@ -52,11 +52,11 @@ This functionality helps to customize the line that appears in the header or foo
 
 Supported line styles:
 
-- `dash`
-- `dot`
-- `dashdot`
-- `dashdotdot`
-- `solid`
+- Dash
+- Dot
+- DashDot
+- DashDotDot
+- Solid
 
 ```ts
 let exportProperties: PdfExportProperties = {
