@@ -13,13 +13,13 @@ documentation: ug
 
 Essential Gantt for WPF includes an built-in class called [TaskDetails](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskDetails.html), which is inherited from the [IGanttTask](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.IGanttTask.html) interface. A collection of the [TaskDetails](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskDetails.html) can be bounded as an ItemsSource for the [GanttControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html).
 
-#### Use Case Scenarios
+### Use Case Scenarios
 
 You can easily create the task details collection using the TaskDetails class or by creating a new class by inheriting the [IGanttTask](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.IGanttTask.html) interface.
 
 Binding [TaskDetails](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.TaskDetails.html) collection to Gantt Control
 
-The following code illustrates how to bind the Task Details to the Gantt Control:
+The following code illustrates how to bind the Task Details to the WPF Gantt control:
 
 {% tabs %}
 
@@ -136,7 +136,7 @@ The following image shows the binding TaskDetails:
 
 ![gantt-control-taskdetails-binding](Data-Binding_images/gantt-control-taskdetails-binding.png)
 
-#### Samples Link
+### Samples Link
 
 To view samples: 
 
@@ -531,7 +531,7 @@ public class ViewModel
 The following image shows the External Property Binding:
 ![gantt-control-external-property-binding](Data-Binding_images/gantt-control-external-property-binding.png)
 
-#### Samples Link
+### Samples Link
 
 To view samples: 
 

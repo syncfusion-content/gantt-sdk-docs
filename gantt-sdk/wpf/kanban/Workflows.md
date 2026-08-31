@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Workflows in WPF SfKanban | Syncfusion
-description: Learn about Workflows support in Syncfusion WPF SfKanban to control card transitions and restrict drag-and-drop operations between columns.
+title: Workflows in WPF Kanban Board | Syncfusion
+description: Learn about Workflows support in Syncfusion WPF Kanban Board to control card transitions and restrict drag-and-drop operations between columns.
 platform: gantt-sdk
 control: SfKanban
 documentation: ug
 ---
 
-# Workflows in WPF SfKanban
+# Workflows in WPF Kanban Board
 
 A Kanban [`Workflows`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Workflows) is a set of Category and AllowedTransitions that an item moves through its life cycle and typically represents processes within your organization.
 
