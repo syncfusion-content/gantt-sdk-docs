@@ -16,17 +16,17 @@ The cards are main elements in Kanban board, which represent the task informatio
 
 ## Drag-and-drop
 
-Transit or change the card position using the drag-and-drop functionality. By default, the `AllowDragAndDrop` property is enabled on the Kanban board, which is used to change the card position by column-to-column or within the column.
+Transit or change the card position using the drag-and-drop functionality. By default, the [`AllowDragAndDrop`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_AllowDragAndDrop) property is enabled on the Kanban board, which is used to change the card position by column-to-column or within the column.
 
 Added dotted border on Kanban cells except the dragged clone cells when dragging, which indicates the possible ways for dropping the cards into the cells.
 
 ## Header
 
-The card header is achieved by mapping the `HeaderField` property, which is placed inside the `CardSettings` property. By default, the `ShowHeader` property enabled by Kanban board that is used to show the header at the top of the card.
+The card header is achieved by mapping the [`HeaderField`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.KanbanCardSettings.html#Syncfusion_EJ2_Kanban_KanbanCardSettings_HeaderField) property, which is placed inside the [`CardSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_CardSettings) property. By default, the [`ShowHeader`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.KanbanCardSettings.html#Syncfusion_EJ2_Kanban_KanbanCardSettings_ShowHeader) property enabled by Kanban board that is used to show the header at the top of the card.
 
-N> The `HeaderField` property of `CardSettings` is mandatory to render the cards in the Kanban board. It acts as a unique field that is used to avoid the duplication of card data. You can not change the `HeaderField` of mapped data value using the `updateCard` public method or server-side update of data.
+N> The [`HeaderField`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.KanbanCardSettings.html#Syncfusion_EJ2_Kanban_KanbanCardSettings_HeaderField) property of [`CardSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_CardSettings) is mandatory to render the cards in the Kanban board. It acts as a unique field that is used to avoid the duplication of card data. You can not change the [`HeaderField`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.KanbanCardSettings.html#Syncfusion_EJ2_Kanban_KanbanCardSettings_HeaderField) of mapped data value using the `updateCard` public method or server-side update of data.
 
-In the following demo, the `ShowHeader` property is disabled on Kanban board.
+In the following demo, the [`ShowHeader`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.KanbanCardSettings.html#Syncfusion_EJ2_Kanban_KanbanCardSettings_ShowHeader) property is disabled on Kanban board.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -39,18 +39,17 @@ In the following demo, the `ShowHeader` property is disabled on Kanban board.
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/cards/header/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
 Output be like the below.
 
 ![kanban](./images/header.PNG)
 
 ## Content
 
-The card's content is fetched from data source using the `ContentField` property, which is placed inside the `CardSettings` property. If the `ContentField` property is not used, card is rendered with empty content.
+The card's content is fetched from data source using the [`ContentField`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.KanbanCardSettings.html#Syncfusion_EJ2_Kanban_KanbanCardSettings_ContentField) property, which is placed inside the [`CardSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_CardSettings) property. If the [`ContentField`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.KanbanCardSettings.html#Syncfusion_EJ2_Kanban_KanbanCardSettings_ContentField) property is not used, card is rendered with empty content.
 
 ## Template
 
-You can customize the default card layout using template as per your application needs. This can be achieved by template of the `CardSettings` property.
+You can customize the default card layout using template as per your application needs. This can be achieved by template of the [`CardSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_CardSettings) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -63,14 +62,13 @@ You can customize the default card layout using template as per your application
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/cards/template/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
 Output be like the below.
 
 ![kanban](./images/card-template.PNG)
 
 ## Selection
 
-Kanban board allows to select single and multiple selection of cards when mouse or keyboard interactions using `SelectionType` property. The property contains following types.
+Kanban board allows to select single and multiple selection of cards when mouse or keyboard interactions using [`SelectionType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.KanbanCardSettings.html#Syncfusion_EJ2_Kanban_KanbanCardSettings_SelectionType) property. The property contains following types.
 
 * **None**: No cards are allowed to select from Kanban board.
 * **Single**: Only one card allowed to select at a time in the Kanban board.
@@ -78,7 +76,7 @@ Kanban board allows to select single and multiple selection of cards when mouse 
 
 ### Multiple Selection
 
-Select the multiple cards randomly using Ctrl + mouse click and select the multiple cards continuously using Shift + mouse click action on Kanban board. Set `Multiple` in `SelectionType` to enable the multiple selection in a board.
+Select the multiple cards randomly using Ctrl + mouse click and select the multiple cards continuously using Shift + mouse click action on Kanban board. Set `Multiple` in [`SelectionType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.KanbanCardSettings.html#Syncfusion_EJ2_Kanban_KanbanCardSettings_SelectionType) to enable the multiple selection in a board.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -91,7 +89,6 @@ Select the multiple cards randomly using Ctrl + mouse click and select the multi
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/cards/multiple-selection/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
 Output be like the below.
 
 ![kanban](./images/multiple-selection.PNG)

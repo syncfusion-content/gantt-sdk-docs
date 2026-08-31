@@ -12,14 +12,14 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Data Binding with Local and Remote Sources in ASP.NET Core Kanban
 
-The Kanban uses `DataManager`, which supports both RESTful data service binding and list binding. The `dataSource`property of Kanban can be assigned either with the instance of `DataManager` or List, as it supports the following two data binding methods:
+The Kanban uses `DataManager`, which supports both RESTful data service binding and list binding. The [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_DataSource)property of Kanban can be assigned either with the instance of `DataManager` or List, as it supports the following two data binding methods:
 
 - Local data
 - Remote data
 
 ## Local data
 
-To bind local list data to the Kanban, you can simply assign a list to the `dataSource` property. The list can also be provided as an instance of `DataManager` and assigned to the Kanban `dataSource` property.
+To bind local list data to the Kanban, you can simply assign a list to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_DataSource) property. The list can also be provided as an instance of `DataManager` and assigned to the Kanban [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_DataSource) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -38,7 +38,7 @@ N> By default, `DataManager` uses `JsonAdaptor` for binding local data.
 
 ## Remote data
 
-To bind remote data to kanban component, assign service data as an instance of `DataManager` to the `dataSource`property. To interact with remote data source, provide the endpoint **url**.
+To bind remote data to kanban component, assign service data as an instance of `DataManager` to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_DataSource)property. To interact with remote data source, provide the endpoint **url**.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -160,7 +160,7 @@ public class Params {
 }
 ```
 
-N> The `crudUrl` is used to update the bulk data sent to the server-side. Multiple selections and `sortBy` as `Index` properties are used for `crudUrl` properties to update the modified bulk data to the server-side.
+N> The `crudUrl` is used to update the bulk data sent to the server-side. Multiple selections and [`sortBy`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.KanbanSortSettings.html#Syncfusion_EJ2_Kanban_KanbanSortSettings_SortBy) as `Index` properties are used for `crudUrl` properties to update the modified bulk data to the server-side.
 
 ### Custom adaptor
 
@@ -181,7 +181,7 @@ Output be like the below.
 
 ### Sending additional parameters to the server
 
-To add a custom parameter to the data request, use the **addParams** method of **Query** class. Assign the **Query** object with additional parameters to the kanban `query` property.
+To add a custom parameter to the data request, use the **addParams** method of **Query** class. Assign the **Query** object with additional parameters to the kanban [`query`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_Query) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -192,13 +192,13 @@ To add a custom parameter to the data request, use the **addParams** method of *
 {% endhighlight %}
 {% endtabs %}
 
-N> The parameters added using the `Query` property will be sent along with the data request for every kanban action.
+N> The parameters added using the [`Query`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_Query) property will be sent along with the data request for every kanban action.
 
 ### Handling HTTP error
 
-During server interaction from the kanban, some server-side exceptions may occur, and you can acquire those error messages or exception details in client-side using the `actionFailure` event.
+During server interaction from the kanban, some server-side exceptions may occur, and you can acquire those error messages or exception details in client-side using the [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_ActionFailure) event.
 
-The argument passed to the `actionFailure` event contains the error details returned from the server.
+The argument passed to the [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_ActionFailure) event contains the error details returned from the server.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -213,11 +213,11 @@ Output be like the below.
 
 ![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/http-error.PNG)
 
-N> The `actionFailure` event will be triggered not only for the server errors, but also when there is an exception while processing the kanban actions.
+N> The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_ActionFailure) event will be triggered not only for the server errors, but also when there is an exception while processing the kanban actions.
 
 ## Loading data via ajax
 
-You can use Kanban `dataSource` property to bind the datasource to Kanban from external ajax request. In the following code, we have fetched the datasource from the server using ajax request and provided that to the `dataSource` property by using the **OnSuccess** event of ajax.
+You can use Kanban [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_DataSource) property to bind the datasource to Kanban from external ajax request. In the following code, we have fetched the datasource from the server using ajax request and provided that to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_DataSource) property by using the **OnSuccess** event of ajax.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

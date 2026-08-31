@@ -102,4 +102,4 @@ The accessibility compliance of the Kanban control is shown in the following sam
 
 ## See also
 
-- [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core control](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/accessiblility)
+- [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core control](https://ej2.syncfusion.com/aspnetcore/documentation/common/accessibility)
