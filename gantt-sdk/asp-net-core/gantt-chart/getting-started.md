@@ -231,10 +231,9 @@ dotnet run
 
 {% endtabcontents %}
 
-![ASP.NET Core Gantt Control](images/gantt-control.webp)
+![ASP.NET Core Gantt Control](./images/gantt-control.webp)
 
 ## See also
 
 - **[Key Elements](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/key-elements)** - Learn about UI components and interactions
 - **[Overview](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/overview)** - Explore all available features
-

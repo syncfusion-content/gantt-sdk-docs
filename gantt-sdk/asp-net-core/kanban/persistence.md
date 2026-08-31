@@ -16,8 +16,6 @@ State persistence refers to the Kanban state maintained in the browser's [`Local
 
 State persistence stores Kanban datasource, column or swimlane expand/collapse state in the local storage when the `enablePersistence` is defined as true.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/persistence/tagHelper %}
@@ -26,15 +24,3 @@ State persistence stores Kanban datasource, column or swimlane expand/collapse s
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/persistence/datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/persistence/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/persistence/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

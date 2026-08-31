@@ -26,8 +26,6 @@ The task can be split dynamically, either by using the context menu or dialog.
 
 * `Context menu`: When the [`TaskFields.Segments`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) or [`TaskFields.SegmentId`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) property is mapped and the [`EnableContextMenu`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableContextMenu) property is enabled, `Split Task` item will be included in the context menu.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/split-tasks/tagHelper %}
@@ -37,26 +35,13 @@ The task can be split dynamically, either by using the context menu or dialog.
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+![Alt text](../images/split-tasks.png)
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/split-tasks/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Split-tasks.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/split-tasks/split-tasks.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
+![Alt text](../images/split-contextmenu.png)
 
+![Alt text](../images/merge-contextmenu.png)
 
-![Alt text](images/split-tasks.png)
-
-![Alt text](images/split-contextmenu.png)
-
-![Alt text](images/merge-contextmenu.png)
-
-![Alt text](images/segment-tab.png)
+![Alt text](../images/segment-tab.png)
 
 ## Merge tasks
 
@@ -65,5 +50,5 @@ The split tasks can be merged either by using the `Merge Task` item of the Conte
 ## Limitations of Split tasks
 
 1. Parent and milestone tasks cannot be split into segments.
-2. The task must have a width greater than the timeline unit cell to be split.
+2. The task must have a width greater than the timeline unit cell in order to be split.
 3. Split task is not supported with `Multi taskbar`.

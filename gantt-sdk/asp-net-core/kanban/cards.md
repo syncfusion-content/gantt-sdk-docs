@@ -28,8 +28,6 @@ N> The `headerField` property of `cardSettings` is mandatory to render the cards
 
 In the following demo, the `showHeader` property is disabled on Kanban board.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/cards/header/tagHelper %}
@@ -39,23 +37,9 @@ In the following demo, the `showHeader` property is disabled on Kanban board.
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/cards/header/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/cards/header/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 Output be like the below.
 
-![kanban](./images/header.PNG)
+![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/header.PNG)
 
 ## Content
 
@@ -64,8 +48,6 @@ The card's content is fetched from data source using the `contentField` property
 ## Template
 
 You can customize the default card layout using template as per your application needs. This can be achieved by template of the `cardSettings` property.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -76,23 +58,9 @@ You can customize the default card layout using template as per your application
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/cards/template/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/cards/template/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 Output be like the below.
 
-![kanban](./images/card-template.PNG)
+![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/card-template.PNG)
 
 ## Selection
 
@@ -106,8 +74,6 @@ Kanban board allows to select single and multiple selection of cards when mouse 
 
 Select the multiple cards randomly using Ctrl + mouse click and select the multiple cards continuously using Shift + mouse click action on Kanban board. Set `Multiple` in `selectionType` to enable the multiple selection in a board.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/cards/multiple-selection/tagHelper %}
@@ -117,20 +83,6 @@ Select the multiple cards randomly using Ctrl + mouse click and select the multi
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/cards/multiple-selection/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/cards/multiple-selection/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 Output be like the below.
 
-![kanban](./images/multiple-selection.PNG)
+![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/multiple-selection.PNG)
