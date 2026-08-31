@@ -20,19 +20,6 @@ A task assigned to one or more resources are termed as resource task and it is a
 
 N> Currently there is no support for unscheduled task in Resource view Gantt.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-view/resourceView/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="ResourceView.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-view/resourceView/resourceView.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-view/resourceView/razor %}
@@ -41,9 +28,8 @@ N> Currently there is no support for unscheduled task in Resource view Gantt.
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-view/resourceView/resourceView.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-![Alt text](images/resourceView.png)
+![Alt text](./images/resourceView.png)
 
 ## Resource OverAllocation
 
@@ -55,19 +41,6 @@ The range of overallocation dates can be highlighted by a square bracket. It can
 
 N> By default, the `showOverAllocation` property value is `false`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-view/showhide/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Showhide.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-view/showhide/showhide.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-view/showhide/razor %}
@@ -76,9 +49,8 @@ N> By default, the `showOverAllocation` property value is `false`.
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-view/showhide/showhide.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-![Alt text](images/showhide.PNG)
+![Alt text](./images/showhide.PNG)
 
 ## Unassigned task
 
@@ -90,19 +62,6 @@ In Gantt, you can enable taskbar drag and drop between resources by using the [`
 
 > Note: By default, the `AllowTaskbarDragAndDrop` property value is `false`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-view/taskbardragdrop/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="TaskbarDragAndDrop.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-view/taskbardragdrop/taskbardragdrop.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-view/taskbardragdrop/razor %}
@@ -111,4 +70,3 @@ In Gantt, you can enable taskbar drag and drop between resources by using the [`
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-view/taskbardragdrop/taskbardragdrop.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

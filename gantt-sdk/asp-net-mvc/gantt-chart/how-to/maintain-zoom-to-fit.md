@@ -18,19 +18,6 @@ In the Gantt control, while performing edit actions or dynamically changing the 
 
 Maintain `zoomToFit` after editing actions (cell edit, dialog edit, taskbar edit) using the `fitToProject` method in the `actionComplete` and `taskbarEdited` events.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/how-to/maintainzoomtofit/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Maintainzoomtofit.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/how-to/maintainzoomtofit/maintainzoomtofit.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/how-to/maintainzoomtofit/razor %}
@@ -39,24 +26,10 @@ Maintain `zoomToFit` after editing actions (cell edit, dialog edit, taskbar edit
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/how-to/maintainzoomtofit/maintainzoomtofit.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Maintain zoomToFit after change dataSource dynamically
 
 Maintain `zoomToFit` after changing the dataSource dynamically by calling the `fitToProject` method in the dataBound event.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/how-to/maintainzoomtofitdatasource/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Maintainzoomtofitdatasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/how-to/maintainzoomtofitdatasource/maintainzoomtofitdatasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -66,4 +39,3 @@ Maintain `zoomToFit` after changing the dataSource dynamically by calling the `f
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/how-to/maintainzoomtofitdatasource/maintainzoomtofitdatasource.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

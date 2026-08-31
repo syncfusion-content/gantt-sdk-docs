@@ -16,19 +16,6 @@ The critical path in a project is indicated by a single task or a series of task
 
 The critical path can be enabled in Gantt using the built-in toolbar button or `enableCriticalPath` set to `true`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/criticalpath/default/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Criticalpath.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/criticalpath/default/criticalpath.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/criticalpath/default/razor %}
@@ -37,28 +24,14 @@ The critical path can be enabled in Gantt using the built-in toolbar button or `
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/criticalpath/default/criticalpath.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-![Alt text](images/criticalpath.PNG)
+![Alt text](./images/criticalpath.PNG)
 
 ## Customize taskbar in critical path
 
 The taskbar in critical path can be customized by using `queryTaskbarInfo` event and `isCritical` property of row `data` in the event argument.
 
 The following code example shows how to customize the critical path taskbar in the Gantt control:
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/criticalpath/custom/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Customcriticalpath.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/criticalpath/custom/customcriticalpath.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -68,6 +41,5 @@ The following code example shows how to customize the critical path taskbar in t
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/criticalpath/custom/customcriticalpath.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-![Alt text](images/customCriticalPath.PNG)
+![Alt text](./images/customCriticalPath.PNG)

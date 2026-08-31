@@ -143,19 +143,6 @@ let exportProperties: PdfExportProperties = {
 
 The below code illustrates the pdf export customization.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/pdf-customization/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="PDF-customization.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/pdf-customization/pdf-customization.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/pdf-customization/razor %}
@@ -164,24 +151,10 @@ The below code illustrates the pdf export customization.
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/pdf-customization/pdf-customization.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Disable footer
 
 By default, the exported PDF file includes a footer. The footer can be disabled by setting the `enableFooter` property to `false`.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/footer/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Footer.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/footer/footer.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -191,4 +164,3 @@ By default, the exported PDF file includes a footer. The footer can be disabled 
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/footer/footer.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

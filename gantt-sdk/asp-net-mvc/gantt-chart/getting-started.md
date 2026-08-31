@@ -264,7 +264,7 @@ You will see a Gantt Chart with:
 - Progress indicators on each task.
 - End dates automatically calculated from `StartDate` + `Duration` for child tasks.
 
-![ASP.NET MVC Gantt Chart Control](images/gantt-control.png)
+![ASP.NET MVC Gantt Chart Control](./images/gantt-control.png)
 
 ## See also
 

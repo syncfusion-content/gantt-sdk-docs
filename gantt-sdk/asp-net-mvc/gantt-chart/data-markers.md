@@ -25,19 +25,6 @@ N> Data Marker `tooltip` will be rendered only if tooltip property has value.
 
 The following code example demonstrates how to implement data markers in the Gantt chart.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/datamarkers/datamarkers/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datamarkers.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/datamarkers/datamarkers/datamarkers.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/datamarkers/datamarkers/razor %}
@@ -46,6 +33,5 @@ The following code example demonstrates how to implement data markers in the Gan
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/datamarkers/datamarkers/datamarkers.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-![Alt text](images/indicators.PNG)
+![Alt text](./images/indicators.PNG)

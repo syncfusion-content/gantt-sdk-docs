@@ -27,19 +27,6 @@ The Gantt control supports three types of selection modes that can be set using 
 - `Cell`: Allows you to select only cells.
 - `Both`: Allows you to select rows and cells at the same time.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/selection/bothType/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="BothType.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/selection/bothType/bothType.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/selection/bothType/razor %}
@@ -48,24 +35,10 @@ The Gantt control supports three types of selection modes that can be set using 
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/selection/bothType/bothType.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Toggle selection
 
 The toggle selection allows you to select and deselect a specific row or cell. To enable toggle selection, set the `enableToggle` property of the selectionSettings to `true`. If you click the selected row or cell, then it will be deselected and vice versa. By default, the `enableToggle` property is set to `false`.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/selection/toggleselection/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Toggleselection.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/selection/toggleselection/toggleselection.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -75,26 +48,8 @@ The toggle selection allows you to select and deselect a specific row or cell. T
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/selection/toggleselection/toggleselection.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Hover highlighting
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-The hover highlighting feature in the Syncfusion ASP.NET MVC Gantt Chart enhances user interaction by highlighting **tree grid rows, chart task bars, header cells, and timeline cells** when hovered, making it easier to track tasks in complex project timelines. Enable it by setting the `enableHover` property to **true** in the component.
-
-The following code example shows how to enable the hover highlighting in Gantt.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/selection/hover-highlighting/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="hoverHighlighting.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/selection/hover-highlighting/hoverHighlighting.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 The hover highlighting feature in the Syncfusion ASP.NET MVC Gantt Chart enhances user interaction by highlighting **tree grid rows, chart task bars, header cells, and timeline cells** when hovered, making it easier to track tasks in complex project timelines. Enable it by setting the `EnableHover` property to **true** in the component.
 
@@ -108,24 +63,10 @@ The following code example shows how to enable the hover highlighting in Gantt.
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/selection/hover-highlighting/hoverHighlighting.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Clear selection
 
 You can clear the selected cells and selected rows by using a method called `clearSelection`. The following code example demonstrates how to clear the selected rows in Gantt Chart.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/selection/clearselection/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Clearselection.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/selection/clearselection/clearselection.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -135,24 +76,10 @@ You can clear the selected cells and selected rows by using a method called `cle
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/selection/clearselection/clearselection.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Get selected row indexes and records
 
-You can get the selected row indexes by using the [`getSelectedRowIndexes`](../api/gantt#getselectedrowindexes) method. And by using [`getSelectedRecords`](../api/gantt#getSelectedRecords) method, you can get the selected record details.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/selection/getSelectedRowIndex/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="GetSelectedRowIndex.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/selection/getSelectedRowIndex/getSelectedRowIndex.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+You can get the selected row indexes by using the `getSelectedRowIndexes` method. And by using `getSelectedRecords` method, you can get the selected record details.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -162,26 +89,12 @@ You can get the selected row indexes by using the [`getSelectedRowIndexes`](../a
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/selection/getSelectedRowIndex/getSelectedRowIndex.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Multiple selection based on condition
 
-You can select multiple rows based on condition by using the [`selectRows`](../api/grid#selectrows) method.
+You can select multiple rows based on condition by using the `selectRows` method.
 
 In the following code, the rows which contains `TaskId` value as 3 and 4 are selected at initial rendering.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/selection/conditionalSelection/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="ConditionalSelection.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/selection/conditionalSelection/conditionalSelection.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -191,9 +104,8 @@ In the following code, the rows which contains `TaskId` value as 3 and 4 are sel
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/selection/conditionalSelection/conditionalSelection.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-![Alt text](images/conditionalSelection.png)
+![Alt text](../images/conditionalSelection.png)
 
 ## Touch interaction
 

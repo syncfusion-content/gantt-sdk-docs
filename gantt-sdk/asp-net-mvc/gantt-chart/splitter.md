@@ -20,19 +20,6 @@ In the Gantt control, the Splitter separates the TreeGrid section from the Chart
 - `Grid`: Shows Grid side alone in Gantt.
 - `Chart`: Shows chart side alone in Gantt.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/how-to/changeSplitter/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="ChangeSplitter.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/how-to/changeSplitter/changeSplitter.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/how-to/changeSplitter/razor %}
@@ -41,26 +28,12 @@ In the Gantt control, the Splitter separates the TreeGrid section from the Chart
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/how-to/changeSplitter/changeSplitter.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-![Alt text](images/changeSplitter.png)
+![Alt text](./images/changeSplitter.png)
 
 ## Change splitter position dynamically
 
 In Gantt, we can change the splitter position dynamically by using `setSplitterPosition` method. We can change the splitter position by passing value and type parameter to `setSplitterPosition` method. Type parameter will accept one of the following values 'position', 'columnIndex', 'viewType'. The following code example shows how to use this method.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/how-to/setSplitterPosition/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="SetSplitterPosition.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/how-to/setSplitterPosition/setSplitterPosition.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -70,4 +43,3 @@ In Gantt, we can change the splitter position dynamically by using `setSplitterP
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/how-to/setSplitterPosition/setSplitterPosition.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
