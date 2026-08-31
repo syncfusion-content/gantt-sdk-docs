@@ -21,8 +21,6 @@ Non-working days in a project can be displayed in the Gantt control using the [`
 
 The following code example shows how to display the non-working days in the Gantt control.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/holidays/holidays/tagHelper %}
@@ -32,20 +30,6 @@ The following code example shows how to display the non-working days in the Gant
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/holidays/holidays/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Holidays.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/holidays/holidays/holidays.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 The following screenshot shows the output of Holidays in Gantt control.
 
-![Alt text](images/holidays.png)
+![Alt text](./images/holidays.png)

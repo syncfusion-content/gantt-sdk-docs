@@ -14,14 +14,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk/overview
 
 Task dependency or task relationship can be established between two tasks in Gantt. This dependency affects the project schedule. If you change the predecessor of a task, it will affect the successor task, which will affect the next task, and so on. Relationship can be established between parent-parent tasks, child-child tasks, parent-child and child-parent task.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 In Gantt, you can enable or disable the parent predecessor using [AllowParentDependency](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.gantt.gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowParentDependency) property.
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-In Gantt, you can enable or disable the parent predecessor using [AllowParentDependency](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.gantt.gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowParentDependency) property.
-
-{% endif %}
 
 By default, the `AllowParentDependency` property will be `true`.
 
@@ -33,31 +26,29 @@ Task relationships are categorized into four types based on the start and finish
 
 You cannot start a task until the dependent task also starts.
 
-![Alt text](images/ss.png)
+![Alt text](./images/ss.png)
 
 ### Start to Finish (SF)
 
 You cannot finish a task until the dependent task is started.
 
-![Alt text](images/sf.png)
+![Alt text](./images/sf.png)
 
 ### Finish to Start (FS)
 
 You cannot start a task until the dependent task is completed.
 
-![Alt text](images/fs.png)
+![Alt text](./images/fs.png)
 
 ### Finish to Finish (FF)
 
 You cannot finish a task until the dependent task is completed.
 
-![Alt text](images/ff.png)
+![Alt text](./images/ff.png)
 
 ## Define task relationship
 
 Task relationship is defined in the data source as a string value, and this value is mapped to the Gantt control by using the [`TaskFields.Dependency`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Dependency) property. The following code example demonstrates how to enable the predecessor in the Gantt control.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -68,23 +59,9 @@ Task relationship is defined in the data source as a string value, and this valu
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/enableDependency/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="EnableDependency.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/enableDependency/enableDependency.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 The following screenshot displays the output of the above code.
 
-![Alt text](images/enableDependency.png)
+![Alt text](./images/enableDependency.png)
 
 ## Predecessor offset with duration units
 
@@ -96,8 +73,6 @@ In the Gantt control, the predecessor offset can be defined with the following d
 
 You can define an offset with various offset duration units for predecessors by using the following code example.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/predecessorWithOffset/tagHelper %}
@@ -107,21 +82,9 @@ You can define an offset with various offset duration units for predecessors by 
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/predecessorWithOffset/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="PredecessorWithOffset.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/predecessorWithOffset/predecessorWithOffset.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 The following screen shot depicts the duration unit support in the predecessor offset.
 
-![Alt text](images/predecessorWithOffset.png)
+![Alt text](./images/predecessorWithOffset.png)
 
 ## Predecessor offset synchronization on initial load
 
@@ -130,8 +93,6 @@ The [autoUpdatePredecessorOffset](https://ej2.syncfusion.com/react/documentation
 - When **enabled**: During the initial data binding/load, the Gantt recalculates the offset portions of predecessor strings based on the final rendered dates after applying calendar rules, weekends, holidays, and working times. The predecessor column in the grid and the corresponding data field values are updated to reflect these accurate offsets - preventing visual or data mismatch between what is displayed and what was actually used for rendering dependency lines - without affecting task dates, durations, or triggering any scheduling/validation logic.
 
 - When **disabled**: The predecessor column displays exactly the offset values provided in the original data source, even if they no longer match the rendered dependency lines due to calendar adjustments. This can result in visual inconsistencies where the grid shows one offset (e.g., "5FS+0") while the drawn arrow connects tasks with a different effective offset (e.g., equivalent to +2 due to non-working days). No automatic correction occurs during load.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -142,23 +103,9 @@ The [autoUpdatePredecessorOffset](https://ej2.syncfusion.com/react/documentation
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/predecessor-cs1/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="predecessor.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/predecessor-cs1/predecessor.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Disabling automatic dependency offset updates
 
 By default, the dependency offsets are automatically updated in the Gantt chart whenever a task's start or end date is changed. However, if you want to disable this feature, you can do so by disabling the [`updateOffsetOnTaskbarEdit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_UpdateOffsetOnTaskbarEdit) property. Once this property is disabled, you can only update the offset value by editing the predecessor column cell or the offset column in the dependency tab of the edit dialog.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -168,18 +115,6 @@ By default, the dependency offsets are automatically updated in the Gantt chart 
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessorWithOffset-cs1/predecessorWithOffset.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessorWithOffset-cs1/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="PredecessorWithOffset.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessorWithOffset-cs1/predecessorWithOffset.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Validate predecessor links on editing
 
@@ -201,8 +136,6 @@ By default, the `preserveLinkWithEditing` validation mode will be enabled, so th
 
 The following sample explains enabling the `respectLink` validation mode while editing the linked tasks in the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ActionBegin) event.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/validatePredecessorLinks/tagHelper %}
@@ -211,20 +144,6 @@ The following sample explains enabling the `respectLink` validation mode while e
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/validatePredecessorLinks/validatePredecessorLinks.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/validatePredecessorLinks/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ValidatePredecessorLinks.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/validatePredecessorLinks/validatePredecessorLinks.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ### Using validation dialog
 
@@ -245,8 +164,6 @@ If you move the successor task that starts before the predecessor task’s end d
 
 The following code example shows how to enable the predecessor validation dialog in Gantt.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/validateWithDialog/tagHelper %}
@@ -256,29 +173,13 @@ The following code example shows how to enable the predecessor validation dialog
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/validateWithDialog/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ValidateWithDialog.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/validateWithDialog/validateWithDialog.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 In this case, if the user dragging action violated the predecessor type then the following dialog will be rendered to perform operation.
 
-![Alt text](images/validateWithDialog.png)
+![Alt text](./images/validateWithDialog.png)
 
 ## Dynamically show/hide the dependency line
 
 By default, mapping the dependency field in taskFields displays dependency lines in the Gantt chart. To hide the dependency line upon button click, set `visibility` style to hidden for the CSS class name `.e-gantt-dependency-view-container`.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -289,19 +190,6 @@ By default, mapping the dependency field in taskFields displays dependency lines
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/showhide/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="showHide.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/predecessor/showhide/showHide.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 The following screen shot dependencyline hide using dynamic button.
 
-![Alt text](images/showhide.png)
+![Alt text](./images/showhide.png)

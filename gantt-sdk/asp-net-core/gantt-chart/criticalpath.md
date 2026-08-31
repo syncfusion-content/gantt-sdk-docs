@@ -16,8 +16,6 @@ The critical path in a project is indicated by a single task or a series of task
 
 The critical path can be enabled in Gantt by using the built-in toolbar button or `enableCriticalPath` to true.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/criticalpath/default/tagHelper %}
@@ -27,29 +25,13 @@ The critical path can be enabled in Gantt by using the built-in toolbar button o
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/criticalpath/default/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Criticalpath.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/criticalpath/default/criticalpath.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Alt text](images/criticalpath.PNG)
+![Alt text](./images/criticalpath.PNG)
 
 ## Customize taskbar in critical path
 
 The taskbar in critical path can be customized by using `queryTaskbarInfo` event and `isCritical` property of row `data` in the event arugment.
 
 The following code example shows how to customize the critical path taskbar in the Gantt control:
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -60,20 +42,4 @@ The following code example shows how to customize the critical path taskbar in t
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/criticalpath/custom/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Customcriticalpath.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/criticalpath/custom/customcriticalpath.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Alt text](images/customCriticalPath.PNG)
-
-
+![Alt text](./images/customCriticalPath.PNG)

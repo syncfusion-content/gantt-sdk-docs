@@ -14,8 +14,6 @@ domainurl: https://help.syncfusion.com/gantt-sdk/overview
 
 To render boolean values as checkbox in columns, you need to set [`displayAsCheckBox`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_DisplayAsCheckBox) property as **true**.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/checkbox/tagHelper %}
@@ -25,19 +23,4 @@ To render boolean values as checkbox in columns, you need to set [`displayAsChec
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/checkbox/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Checkbox.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/checkbox/checkbox.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Alt text](images/checkbox.png)
-
+![Alt text](../images/checkbox.png)
