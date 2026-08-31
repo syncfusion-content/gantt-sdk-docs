@@ -90,7 +90,7 @@ You can align the column header text in the Syncfusion<sup style="font-size:70%"
 
 ## Enable header text wrapping
 
-You can enable autowrap in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component to allow cell content to wrap onto the next line when it exceeds the defined column width. This wrapping behavior is based on the whitespace between words. To activate this feature, set the `allowTextWrap` property to **true** and specify an appropriate column [width](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#width).
+You can enable auto wrap in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component to allow cell content to wrap onto the next line when it exceeds the defined column width. This wrapping behavior is based on the whitespace between words. To activate this feature, set the `allowTextWrap` property to **true** and specify an appropriate column [width](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#width).
 
 The wrapping behavior is defined using the `textWrapSettings.wrapMode` property of the `treeGrid` object. Available options include:
 
@@ -98,9 +98,9 @@ The wrapping behavior is defined using the `textWrapSettings.wrapMode` property 
 - **Content:** Wraps only the cell content.
 - **Both:** Wraps both header and content (default).
 
-> * If column width is not defined, autowrap adjusts based on the overall Gantt chart width.
+> * If column width is not defined, auto wrap adjusts based on the overall Gantt chart width.
 > * Header text without white space may not wrap.  
-> * If cell content includes HTML tags, autowrap may not function as expected. In such cases, use [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#headertemplate) and [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#template) properties to customize the header and cell layout.
+> * If cell content includes HTML tags, auto wrap may not function as expected. In such cases, use [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#headertemplate) and [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#template) properties to customize the header and cell layout.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
