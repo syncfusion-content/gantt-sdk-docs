@@ -2,7 +2,7 @@
 layout: post
 title: Tree Column in Angular Gantt Chart | Hierarchical Display | Syncfusion
 description: Learn how to configure tree column in Syncfusion Angular Gantt Chart with treeColumnIndex to display parent-child relationships using expand/collapse icons.
-keywords: angular gantt tree column, treecolumnindex, expand collapse, parent child, hierarchy, syncfusion gantt
+keywords: Angular Gantt Chart tree column, treecolumnindex, expand collapse, parent child, hierarchy, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/columns/treecolumn
 platform: gantt-sdk
 control: Tree Column - Gantt Chart
@@ -14,7 +14,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component provides a structured way to display parent-child relationships using expand/collapse icons.
 
-To configure this, set the [treeColumnIndex](https://ej2.syncfusion.com/angular/documentation/api/gantt#treecolumnindex) property to the index of the column where these icons should appear. This enables clear visualization and navigation of hierarchical tasks within the Gantt chart.
+To configure this, set the [treeColumnIndex](https://ej2.syncfusion.com/angular/documentation/api/gantt#treecolumnindex) property to the index of the column where these icons should appear. This enables clear visualization and navigation of hierarchical tasks within the Angular Gantt Chart.
 
 ```ts
 
@@ -81,7 +81,7 @@ In the following demonstration, indentation is applied by dynamically adding a C
 
 ## Render parent rows in collapsed state
 
-You can collapse all parent rows during initial rendering by setting the [collapseAllParentTasks](https://ej2.syncfusion.com/angular/documentation/api/gantt#collapseallparenttasks) property in the Gantt Chart component.
+You can collapse all parent rows during initial rendering by setting the [collapseAllParentTasks](https://ej2.syncfusion.com/angular/documentation/api/gantt#collapseallparenttasks) property in the Angular Gantt Chart component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -99,7 +99,7 @@ You can collapse all parent rows during initial rendering by setting the [collap
 
 ## Retain expand/collapse state on initial load
 
-You can retain the expanded or collapsed state of parent rows during initial rendering by using the [expandState](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#expandstate) property in the data source. This property indicates whether a parent row should be expanded or collapsed when the Gantt Chart component loads.
+You can retain the expanded or collapsed state of parent rows during initial rendering by using the [expandState](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#expandstate) property in the data source. This property indicates whether a parent row should be expanded or collapsed when the Angular Gantt Chart component loads.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -209,7 +209,7 @@ this.gantt.treegrid.collapseRow(tr); // Pass the row element as parameter
 
 ## Retrieve expanded records
 
-To retrieve the currently expanded rows in the Gantt Chart component, use the [getExpandedRecords](https://ej2.syncfusion.com/angular/documentation/api/gantt#getexpandedrecords) method.
+To retrieve the currently expanded rows in the Angular Gantt Chart component, use the [getExpandedRecords](https://ej2.syncfusion.com/angular/documentation/api/gantt#getexpandedrecords) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

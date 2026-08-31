@@ -2,7 +2,7 @@
 layout: post
 title: Row Drag and Drop in Angular Gantt Chart | Reorder | Syncfusion
 description: Learn how to enable row drag and drop in the Syncfusion Angular Gantt Chart to easily reorder rows and manage task hierarchies interactively.
-keywords: angular gantt row drag drop, allowrowdraganddrop, rowddservice, reorder rows, syncfusion gantt
+keywords: Angular Gantt Chart row drag drop, allowrowdraganddrop, rowddservice, reorder rows, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/rows/drag-and-drop
 platform: gantt-sdk
 control: Row Drag and Drop - Gantt Chart
@@ -12,13 +12,13 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Enabling Drag and Drop for Rows in Angular Gantt Chart
 
-The [Angular Gantt chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component includes built-in support for row drag and drop, enabling rows to be rearranged within the Gantt chart or dropped into custom components. 
+The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component includes built-in support for row drag and drop, enabling rows to be rearranged within the Angular Gantt Chart or dropped into custom components. 
 
 To enable this feature, inject the `RowDDService` in the `providers` array of the **AppComponent**. Once injected, enable the functionality by setting the [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowrowdraganddrop) property.
 
-## Drag and drop within the Gantt chart
+## Drag and drop within the Angular Gantt Chart
 
-The Gantt Chart component allows you to rearrange rows using a drag icon. To enable this feature, set the [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowrowdraganddrop) property to **true**.
+The Angular Gantt Chart component allows you to rearrange rows using a drag icon. To enable this feature, set the [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowrowdraganddrop) property to **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -33,7 +33,7 @@ The Gantt Chart component allows you to rearrange rows using a drag icon. To ena
 
 ## Different drop positions
 
-In a Gantt chart, drag and drop functionality allows rearranging rows to adjust their position. You can drop rows in the following positions:
+In a Gantt Chart, drag and drop functionality allows rearranging rows to adjust their position. You can drop rows in the following positions:
 
 1. Above
 2. Below
@@ -59,7 +59,7 @@ If the border line appears at both the top and bottom of the target row (e.g., T
 
 ## Drag and drop to custom component 
 
-You can drag rows from the Gantt Chart component into custom components for seamless data transfer. To enable this feature, set the [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowrowdraganddrop) property to **true**, and configure the `targetID` property within the `rowDropSettings` object of the `treeGrid` in the Gantt instance, inside the [load](https://ej2.syncfusion.com/angular/documentation/gantt/events#load) event. The value of `targetID` must match the ID of the destination component. You can use the [rowDrop](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdrop) event to handle the drop and perform necessary actions.
+You can drag rows from the Angular Gantt Chart component into custom components for seamless data transfer. To enable this feature, set the [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowrowdraganddrop) property to **true**, and configure the `targetID` property within the `rowDropSettings` object of the `treeGrid` in the Gantt instance, inside the [load](https://ej2.syncfusion.com/angular/documentation/gantt/events#load) event. The value of `targetID` must match the ID of the destination component. You can use the [rowDrop](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdrop) event to handle the drop and perform necessary actions.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -74,7 +74,7 @@ You can drag rows from the Gantt Chart component into custom components for seam
 
 ## Drag and drop multiple rows together
 
-You can drag and drop multiple rows simultaneously in the Gantt Chart component. To enable this functionality, set the [selectionSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings#type) property to **Multiple** , and set the [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowrowdraganddrop) to **true**.
+You can drag and drop multiple rows simultaneously in the Angular Gantt Chart component. To enable this functionality, set the [selectionSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings#type) property to **Multiple** , and set the [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowrowdraganddrop) to **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -89,7 +89,7 @@ You can drag and drop multiple rows simultaneously in the Gantt Chart component.
 
 ## Taskbar drag and drop between rows
 
-You can rearrange rows in the Gantt Chart component by dragging the taskbar element. This functionality is enabled by setting the [allowTaskbarDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowtaskbardraganddrop) property to **true**, allowing taskbars to be repositioned across rows for improved scheduling control.
+You can rearrange rows in the Angular Gantt Chart component by dragging the taskbar element. This functionality is enabled by setting the [allowTaskbarDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowtaskbardraganddrop) property to **true**, allowing taskbars to be repositioned across rows for improved scheduling control.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -104,7 +104,7 @@ You can rearrange rows in the Gantt Chart component by dragging the taskbar elem
 
 ## Drag and drop interactions with server side
 
-You can perform row drag and drop operations in the Gantt Chart component with server-side interaction.
+You can perform row drag and drop operations in the Angular Gantt Chart component with server-side interaction.
 
 To handle drag and drop on the server side, use the [rowDrop](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdrop) event on the client side. This event must be captured and processed to retrieve the necessary information about the dragged record and its intended new position. On the server, the record should be removed from its original index and inserted at the appropriate location based on the event data.
 
@@ -360,7 +360,7 @@ export class AppComponent {
 
 ## Perform row drag and drop action programmatically
 
-To rearrange rows programmatically in the Gantt Chart component, use the [reorderRows](https://ej2.syncfusion.com/angular/documentation/api/gantt#reorderrows) method. This method accepts the following parameters: 
+To rearrange rows programmatically in the Angular Gantt Chart component, use the [reorderRows](https://ej2.syncfusion.com/angular/documentation/api/gantt#reorderrows) method. This method accepts the following parameters: 
 
 - **fromIndexes**: Indexes of the rows to be moved.  
 - **toIndex**: Target index for placement.  
@@ -381,7 +381,7 @@ In the example, a [click](https://ej2.syncfusion.com/angular/documentation/api/b
 
 ## Customize the drag and drop action
 
-Customize the drag and drop behavior in the Gantt Chart component using the [rowDragStartHelper](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdragstarthelper), [rowDragStart](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdragstart), [rowDrag](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdrag), and [rowDrop](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdrop) events. These events provide control over the drag lifecycle, allowing precise handling of row interactions.
+Customize the drag and drop behavior in the Angular Gantt Chart component using the [rowDragStartHelper](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdragstarthelper), [rowDragStart](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdragstart), [rowDrag](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdrag), and [rowDrop](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdrop) events. These events provide control over the drag lifecycle, allowing precise handling of row interactions.
 
 In this example, drag and drop actions are customized using event hooks. The `rowDragStartHelper` event prevents dragging for the row where **TaskID** is 2, while the `rowDrop` event cancels the drop action for the row where **TaskID** is 4. Additionally, `rowDragStart` and `rowDrag` apply background styling based on the values in the **Progress** column.
 

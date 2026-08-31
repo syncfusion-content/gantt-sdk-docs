@@ -2,7 +2,7 @@
 layout: post
 title: Observables in Angular Gantt Chart | Reactive Data | Syncfusion
 description: Learn how to bind observables in Syncfusion Angular Gantt Chart with async pipe for reactive data updates, real-time task management, and WebSocket integration.
-keywords: angular gantt observable, async pipe, reactive data, websocket, real-time updates, syncfusion gantt
+keywords: Angular Gantt Chart observable, async pipe, reactive data, websocket, real-time updates, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/observable
 platform: gantt-sdk
 control: Observable Binding - Gantt Chart
@@ -16,7 +16,7 @@ The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-
 
 ## Bind observables with async pipe
 
-Bind data to the Gantt Chart component using an Observable with the async pipe. The component subscribes on initialization, unsubscribe automatically on destruction, and updates only when new values are emitted.
+Bind data to the Angular Gantt Chart component using an Observable with the async pipe. The component subscribes on initialization, unsubscribe automatically on destruction, and updates only when new values are emitted.
 The Observable must emit an object with:
 - `result`: Array of tasks with properties like **id**, **TaskName**, and **StartDate**.
 - `count`: Total number of tasks.
@@ -118,7 +118,7 @@ This service fetches tasks from an API, supporting pagination for large datasets
 
 ## CRUD operations with observable binding
 
-The Gantt Chart component supports CRUD operations such as add, edit, and delete when using Observable data binding. For every such operation, it triggers the `dataSourceChanged` event, which serves as a unified mechanism for handling data modifications, allowing developers to process create, update, and delete actions programmatically and efficiently synchronize these changes with the underlying data source.
+The Angular Gantt Chart component supports CRUD operations such as add, edit, and delete when using Observable data binding. For every such operation, it triggers the `dataSourceChanged` event, which serves as a unified mechanism for handling data modifications, allowing developers to process create, update, and delete actions programmatically and efficiently synchronize these changes with the underlying data source.
 
 Handle the `dataSourceChanged` event, perform the required operation in the service, and emit the updated data through the Observable using the `next` method to refresh the UI.
 
@@ -126,7 +126,7 @@ Handle the `dataSourceChanged` event, perform the required operation in the serv
 
 The `dataSourceChanged` event serves as an entry point to capture CRUD actions and route them to the backend service for processing
 
-Based on the action type available in the event arguments (`add`, `edit`, or `delete`), perform the corresponding operation in the service. After completing the operation, call the `endEdit()` method to notify the Gantt Chart component that the process is completed.
+Based on the action type available in the event arguments (`add`, `edit`, or `delete`), perform the corresponding operation in the service. After completing the operation, call the `endEdit()` method to notify the Angular Gantt Chart component that the process is completed.
 
 For CRUD operations `app.component.ts` file can be defined as shown below:
 
@@ -222,7 +222,7 @@ export class AppComponent implements OnInit {
     }
 }
 ```
-> Note: Call the `endEdit()` method after processing the CRUD operation to finalize the action in the Gantt Chart component.
+> Note: Call the `endEdit()` method after processing the CRUD operation to finalize the action in the Angular Gantt Chart component.
 
 For CRUD operations `app.component.html` file can be defined as shown below:
 
@@ -244,7 +244,7 @@ For CRUD operations `app.component.html` file can be defined as shown below:
 
 ### Process CRUD operations in service and refresh the UI
 
-When handling a CRUD operation within the service, the underlying data source must be updated and the modified result emitted through the Observable. Use the `next` method which is used to push the updated data, ensuring that the Gantt Chart component receives the latest dataset and refreshes the UI accordingly.
+When handling a CRUD operation within the service, the underlying data source must be updated and the modified result emitted through the Observable. Use the `next` method which is used to push the updated data, ensuring that the Angular Gantt Chart component receives the latest dataset and refreshes the UI accordingly.
 
 The service layer implementation for CRUD operations is defined in the `service.ts` file as shown below:
 
@@ -326,13 +326,13 @@ export class TaskStoreService extends BehaviorSubject<DataStateChangeEventArgs> 
 
 ## Sorting and filtering with observable binding
 
-The Gantt Chart supports sorting and filtering with Observable data binding, triggering the [dataStateChange](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#datastatechange) event for custom or server-side processing. The `dataStateChange` event provides a state object with sorting and filtering details, which must be handled in the service layer to apply the required operations.
+The Angular Gantt Chart supports sorting and filtering with Observable data binding, triggering the [dataStateChange](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#datastatechange) event for custom or server-side processing. The `dataStateChange` event provides a state object with sorting and filtering details, which must be handled in the service layer to apply the required operations.
 
 Since sorting and filtering are not performed automatically with Observable binding, these actions must be handled manually using the `dataStateChange` event.
 
 ### Handle data state change
 
-When sorting or filtering is applied, the Gantt Chart triggers the `dataStateChange` event and passes the current state object. This state includes details of the applied operations, such as sort and filter conditions, which can be processed in the service to return the updated data to the Gantt Chart component.
+When sorting or filtering is applied, the Angular Gantt Chart triggers the `dataStateChange` event and passes the current state object. This state includes details of the applied operations, such as sort and filter conditions, which can be processed in the service to return the updated data to the Angular Gantt Chart component.
 
 The `app.component.ts` file for handling sorting and filtering operations is shown below:
 
@@ -418,7 +418,7 @@ The `app.component.html` file for handling sorting and filtering operations is s
 
 Utilize the state object from the `dataStateChange` event to handle sorting and filtering operations within the service layer.
 
-Apply the specified sort and filter conditions to transform the dataset and emit the processed result through the Observable to update the Gantt Chart component.
+Apply the specified sort and filter conditions to transform the dataset and emit the processed result through the Observable to update the Angular Gantt Chart component.
 
 The service layer implementation for sorting and filtering is defined in the `service.ts` file as shown below:
 
@@ -543,6 +543,6 @@ export class TaskStoreService extends BehaviorSubject<DataStateChangeEventArgs> 
 - After performing any operation, call `endEdit()` (for CRUD actions) and emit the updated data through the Observable to refresh the UI.
 
 ## See also
-- [How to bind data to the Gantt Chart component?](https://ej2.syncfusion.com/angular/documentation/gantt/data-binding)
+- [How to bind data to the Angular Gantt Chart component?](https://ej2.syncfusion.com/angular/documentation/gantt/data-binding)
 - [How to manage task editing?](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/editing-tasks)
 - [How to handle virtual scrolling?](https://ej2.syncfusion.com/angular/documentation/gantt/scrolling/virtual-scrolling)

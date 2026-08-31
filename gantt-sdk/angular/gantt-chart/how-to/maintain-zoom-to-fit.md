@@ -2,7 +2,7 @@
 layout: post
 title: Maintain Zoom-to-Fit in Angular Gantt Chart | Syncfusion
 description: Learn how to maintain zoom-to-fit in Syncfusion Angular Gantt Chart during edits using fitToProject method.
-keywords: angular gantt zoom to fit, fittoproject, maintain zoom, dynamic data, syncfusion gantt
+keywords: Angular Gantt Chart zoom to fit, fittoproject, maintain zoom, dynamic data, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/how-to/maintain-zoom-to-fit
 platform: gantt-sdk
 control: Maintain Zoom-to-Fit - Gantt Chart

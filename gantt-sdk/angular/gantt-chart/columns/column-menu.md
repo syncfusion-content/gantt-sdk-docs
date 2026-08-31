@@ -2,7 +2,7 @@
 layout: post
 title: Column Menu in Angular Gantt Chart | Sort & Filter | Syncfusion
 description: Learn how to enable column menu in Syncfusion Angular Gantt Chart with sorting, filtering, column chooser, and autofit.
-keywords: angular gantt column menu, showcolumnmenu, sort filter, column chooser, autofit, syncfusion gantt
+keywords: Angular Gantt Chart column menu, showcolumnmenu, sort filter, column chooser, autofit, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/columns/column-menu
 platform: gantt-sdk
 control: Column Menu - Gantt Chart
@@ -50,7 +50,7 @@ The Angular Gantt Chart component allows adding custom items to the column menu 
 
 Define the behavior of custom items through the [columnMenuClick](https://ej2.syncfusion.com/angular/documentation/gantt/events#columnmenuclick) event.
 
-The following example demonstrates how to add a custom column menu item to clear the sorting in the Gantt chart.
+The following example demonstrates how to add a custom column menu item to clear the sorting in the Angular Gantt Chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -90,7 +90,7 @@ The following example demonstrates hiding the **Filter** item when the column me
 
 ## Render nested column menu items
 
-Extend the column menu in Gantt Chart component by adding nested items using the [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/gantt#columnmenuitems) property. Nested menus allow you to group related menu items in expandable submenus. This property accepts an array of built-in item names or custom objects (with `items` array) to define additional actions and submenus.
+Extend the column menu in Angular Gantt Chart component by adding nested items using the [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/gantt#columnmenuitems) property. Nested menus allow you to group related menu items in expandable submenus. This property accepts an array of built-in item names or custom objects (with `items` array) to define additional actions and submenus.
 
 The following example demonstrates how to configure `columnMenuItems` to include a nested submenu with child items. When a user hovers over an item with nested children, a submenu expands to show additional options.
 
@@ -110,7 +110,7 @@ The following example demonstrates how to configure `columnMenuItems` to include
 
 ## Customize the column menu icon
 
-Customize the default column menu icon in Gantt Chart component by overriding the **.e-icons.e-columnmenu** class using the `content` CSS property. This allows you to use a Unicode character or a custom icon font.
+Customize the default column menu icon in Angular Gantt Chart component by overriding the **.e-icons.e-columnmenu** class using the `content` CSS property. This allows you to use a Unicode character or a custom icon font.
 
 To customize the column menu icon, follow these steps:
 

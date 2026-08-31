@@ -2,7 +2,7 @@
 layout: post
 title: Row Selection in Angular Gantt Chart | Highlight Tasks | Syncfusion
 description: Learn how to configure row selection in Syncfusion Angular Gantt Chart with mouse and keyboard navigation.
-keywords: angular gantt row selection, single row, multiple rows, selectedrowindex, keyboard navigation, syncfusion gantt
+keywords: Angular Gantt Chart row selection, single row, multiple rows, selectedrowindex, keyboard navigation, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/selection/row-selection
 platform: gantt-sdk
 control: Row Selection - Gantt Chart
@@ -16,7 +16,7 @@ The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-
 
 ## Single row selection
 
-You can enable single row selection in the Gantt Chart component by setting [selectionSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings#mode) to **Row** and [selectionSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings#type) to **Single**. This allows you to select only one task row at a time.
+You can enable single row selection in the Angular Gantt Chart component by setting [selectionSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings#mode) to **Row** and [selectionSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings#type) to **Single**. This allows you to select only one task row at a time.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -32,7 +32,7 @@ You can enable single row selection in the Gantt Chart component by setting [sel
 
 ## Multiple row selection
 
-You can enable multiple row selection in the Gantt Chart component by setting  [selectionSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings#mode) to **Row** and [selectionSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings#type) to **Multiple**. This allows selection of more than one task row at a time by holding down the **Ctrl** key while clicking on multiple rows.
+You can enable multiple row selection in the Angular Gantt Chart component by setting  [selectionSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings#mode) to **Row** and [selectionSettings.type](https://ej2.syncfusion.com/angular/documentation/api/gantt/selectionSettings#type) to **Multiple**. This allows selection of more than one task row at a time by holding down the **Ctrl** key while clicking on multiple rows.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -60,7 +60,7 @@ This sequence ensures proper handling of row transitions during selection and de
 
 ## Select row at initial rendering
 
-You can highlight or pre-select a specific row during the initial rendering of the Gantt Chart component by setting the [selectedRowIndex](https://ej2.syncfusion.com/angular/documentation/api/gantt#selectedrowindex) property. This selects the row at the specified index when the Gantt loads.
+You can highlight or pre-select a specific row during the initial rendering of the Angular Gantt Chart component by setting the [selectedRowIndex](https://ej2.syncfusion.com/angular/documentation/api/gantt#selectedrowindex) property. This selects the row at the specified index when the Gantt loads.
 
 The following example selects the row at index 5 during initial load:
 
@@ -84,7 +84,7 @@ You can programmatically or dynamically select single rows, multiple rows, or a 
 
 ### Single row selection
 
-Select a single row in the Gantt Chart component by calling the [selectRow](https://ej2.syncfusion.com/angular/documentation/api/gantt/selection#selectrow) method with the desired row index.
+Select a single row in the Angular Gantt Chart component by calling the [selectRow](https://ej2.syncfusion.com/angular/documentation/api/gantt/selection#selectrow) method with the desired row index.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -100,7 +100,7 @@ Select a single row in the Gantt Chart component by calling the [selectRow](http
 
 ### Multiple rows selection
 
-Select multiple rows in the Gantt Chart component by using the [selectRows](https://ej2.syncfusion.com/angular/documentation/api/gantt/selection#selectrows) method with an array of row indexes.
+Select multiple rows in the Angular Gantt Chart component by using the [selectRows](https://ej2.syncfusion.com/angular/documentation/api/gantt/selection#selectrows) method with an array of row indexes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -116,7 +116,7 @@ Select multiple rows in the Gantt Chart component by using the [selectRows](http
 
 ### Range of rows selection
 
-Select a range of rows in the Gantt Chart component by using the [selectRowsByRange](https://ej2.syncfusion.com/angular/documentation/api/gantt/selection#selectrowsbyrange) method with the start and end row indexes.
+Select a range of rows in the Angular Gantt Chart component by using the [selectRowsByRange](https://ej2.syncfusion.com/angular/documentation/api/gantt/selection#selectrowsbyrange) method with the start and end row indexes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -171,11 +171,11 @@ To access selected row details in the Angular Gantt Chart component:
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/selection/row-selected-indexes" %}
 
 
-> **Note:** The Gantt Chart component supports keyboard navigation for row selection. Use arrow keys to move focus and `Enter` or `Space` to select rows. Ensure accessibility compliance by providing appropriate ARIA attributes.
+> **Note:** The Angular Gantt Chart component supports keyboard navigation for row selection. Use arrow keys to move focus and `Enter` or `Space` to select rows. Ensure accessibility compliance by providing appropriate ARIA attributes.
 
 ## Customize row selection action
 
-You can customize row selection in the Gantt Chart using [rowSelecting](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowselecting), [rowSelected](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowselected), [rowDeselecting](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdeselecting), and [rowDeselected](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdeselected) events, which allow dynamic control over selection behavior based on specific conditions.
+You can customize row selection in the Angular Gantt Chart using [rowSelecting](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowselecting), [rowSelected](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowselected), [rowDeselecting](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdeselecting), and [rowDeselected](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdeselected) events, which allow dynamic control over selection behavior based on specific conditions.
 
 The following demonstrates how row selection and background color updates are handled in the Angular Gantt Chart component:
 

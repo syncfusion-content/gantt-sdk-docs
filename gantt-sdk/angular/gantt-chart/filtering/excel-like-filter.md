@@ -2,7 +2,7 @@
 layout: post
 title: Excel-Like Filter in Angular Gantt Chart | Advanced | Syncfusion
 description: Learn how to use Excel-like filtering in Syncfusion Angular Gantt Chart to apply column-level filters with advanced conditions.
-keywords: angular gantt excel like filter, advanced filter, sort clear filter, multiple criteria, syncfusion gantt
+keywords: Angular Gantt Chart excel like filter, advanced filter, sort clear filter, multiple criteria, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/filtering/excel-like-filter
 platform: gantt-sdk
 control: Excel-Like Filter - Gantt Chart
@@ -98,7 +98,7 @@ To customize this behavior, the `filterChoiceCount` property can be adjusted to 
 
 ## Bind custom remote data source for Excel-like filtering
 
-You can dynamically bind a custom remote data source to the Excel filter in the Gantt Chart component by using a [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) with [WebApiAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#web-api-adaptor). This can be done by assigning the data source directly or storing fetched data in a global variable. Then, bind it to the filter module’s `dataSource` within the [actionBegin](https://ej2.syncfusion.com/angular/documentation/gantt/events#actionbegin) event when `requestType` is **filterBeforeOpen**.
+You can dynamically bind a custom remote data source to the Excel filter in the Angular Gantt Chart component by using a [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) with [WebApiAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#web-api-adaptor). This can be done by assigning the data source directly or storing fetched data in a global variable. Then, bind it to the filter module’s `dataSource` within the [actionBegin](https://ej2.syncfusion.com/angular/documentation/gantt/events#actionbegin) event when `requestType` is **filterBeforeOpen**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

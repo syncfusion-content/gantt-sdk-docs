@@ -2,7 +2,7 @@
 layout: post
 title: Task Bar Editing in Angular Gantt Chart | Drag & Resize | Syncfusion
 description: Learn how to enable task bar editing in Syncfusion Angular Gantt Chart to drag or resize taskbars and adjust task dates, duration, or progress intuitively.
-keywords: angular gantt task bar editing, allowtaskbarediting, drag resize, taskbar progress, syncfusion gantt
+keywords: Angular Gantt Chart task bar editing, allowtaskbarediting, drag resize, taskbar progress, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/managing-tasks/task-bar-editing
 platform: gantt-sdk
 control: Task Bar Editing - Gantt Chart

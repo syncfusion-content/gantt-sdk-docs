@@ -2,7 +2,7 @@
 layout: post
 title: Adding New Tasks in Angular Gantt Chart | Syncfusion
 description: Learn how to add new tasks dynamically in Syncfusion Angular Gantt Chart using toolbar, context menu, or addRecord.
-keywords: angular gantt adding new tasks, allowadding, addrecord, add dialog, new task, syncfusion gantt
+keywords: Angular Gantt Chart adding new tasks, allowadding, addrecord, add dialog, new task, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/managing-tasks/adding-new-tasks
 platform: gantt-sdk
 control: Adding New Tasks - Gantt Chart
@@ -16,7 +16,7 @@ Adding new tasks to the [Angular Gantt Chart](https://www.syncfusion.com/angular
 
 ## Add tasks via toolbar
 
-Enable task addition through the toolbar by setting [editSettings.allowAdding](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowadding) to **true** and injecting `EditService`. Clicking the toolbar’s **Add** icon opens a dialog to enter details like task name, start date, and duration, adding the task at the top of the Gantt chart. This is ideal for quickly inserting high-level tasks or milestones, with all required fields (e.g., TaskID) validated for successful creation.
+Enable task addition through the toolbar by setting [editSettings.allowAdding](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowadding) to **true** and injecting `EditService`. Clicking the toolbar’s **Add** icon opens a dialog to enter details like task name, start date, and duration, adding the task at the top of the Angular Gantt Chart. This is ideal for quickly inserting high-level tasks or milestones, with all required fields (e.g., TaskID) validated for successful creation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

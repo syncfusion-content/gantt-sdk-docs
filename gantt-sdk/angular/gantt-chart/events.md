@@ -2,7 +2,7 @@
 layout: post
 title: Events in Angular Gantt Chart | Event Reference | Syncfusion
 description: Learn how to use all events in the Syncfusion Angular Gantt Chart component with behavior details, usage examples, and event handler patterns for customization.
-keywords: angular gantt events, event reference, actionbegin, actioncomplete, querytaskbarinfo, syncfusion gantt
+keywords: Angular Gantt Chart events, event reference, actionbegin, actioncomplete, querytaskbarinfo, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/events
 platform: gantt-sdk
 control: Events - Gantt Chart
@@ -12,11 +12,11 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Events and Custom Actions in Angular Gantt Chart
 
-The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component offers comprehensive support for visualizing project schedules, task management, and timeline tracking through interactive charts. This documentation provides insights into leveraging the component's rich event-driven architecture to customize and control Gantt operations effectively. Events in the Gantt Chart enable you to execute custom logic and integrations, offering flexibility for both simple and complex scenarios.
+The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component offers comprehensive support for visualizing project schedules, task management, and timeline tracking through interactive charts. This documentation provides insights into leveraging the component's rich event-driven architecture to customize and control Gantt operations effectively. Events in the Angular Gantt Chart enable you to execute custom logic and integrations, offering flexibility for both simple and complex scenarios.
 
 ## actionBegin
 
-The [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/gantt#actionbegin) event triggers before the Gantt Chart component processes actions such as **adding**, **editing(cell, dialog, taskbar)**, **deleting**, **sorting**, **filtering**, **dependency changes**, and **zooming**. It provides detailed contextual information through the [ActionBeginArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/actionBeginArgs) argument. The argument type and structure depend on the triggered operation. Each argument type provides specific properties to help you inspect and modify the action.
+The [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/gantt#actionbegin) event triggers before the Angular Gantt Chart component processes actions such as **adding**, **editing(cell, dialog, taskbar)**, **deleting**, **sorting**, **filtering**, **dependency changes**, and **zooming**. It provides detailed contextual information through the [ActionBeginArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/actionBeginArgs) argument. The argument type and structure depend on the triggered operation. Each argument type provides specific properties to help you inspect and modify the action.
 
 Below are detailed descriptions of each argument type's properties, and their purposes.
 
@@ -202,7 +202,7 @@ export class AppComponent {
       else if (args.requestType === 'sorting') {
         console.log('Action: Sorting');
       } 
-      // Executes logic before zooming in or out of the Gantt Chart.
+      // Executes logic before zooming in or out of the Angular Gantt Chart.
       else if (args.requestType === 'beforeZoomIn' || args.requestType === 'beforeZoomOut') {
         console.log('Action: Zooming');
       }
@@ -212,7 +212,7 @@ export class AppComponent {
 
 ## actionComplete
 
-The [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/gantt#actioncomplete) event is triggered after the Gantt Chart component successfully completes an operation such as **adding**, **editing(cell, dialog, taskbar)**, **deleting**, **sorting**, **filtering**, **dependency changes**, and **zooming**. It provides detailed contextual information about the completed action through the [ActionCompleteArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/actionCompleteArgs) argument. The structure of this argument varies depending on the type of operation performed, and includes specific properties that allow you to inspect the outcome and implement custom logic based on the completed action. Below are detailed descriptions of each argument type's properties, and their purposes.
+The [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/gantt#actioncomplete) event is triggered after the Angular Gantt Chart component successfully completes an operation such as **adding**, **editing(cell, dialog, taskbar)**, **deleting**, **sorting**, **filtering**, **dependency changes**, and **zooming**. It provides detailed contextual information about the completed action through the [ActionCompleteArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/actionCompleteArgs) argument. The structure of this argument varies depending on the type of operation performed, and includes specific properties that allow you to inspect the outcome and implement custom logic based on the completed action. Below are detailed descriptions of each argument type's properties, and their purposes.
 
 **1. [ActionCompleteArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/actionCompleteArgs)**
 
@@ -492,10 +492,10 @@ export class AppComponent implements OnInit {
     // Log the error details to the browser console for debugging.
     console.log(args);
 
-    // Create a span element to display the error message above the Gantt Chart.
+    // Create a span element to display the error message above the Angular Gantt Chart.
     let span: HTMLElement = document.createElement('span');
 
-    // Insert the span before the Gantt Chart element in the DOM.
+    // Insert the span before the Angular Gantt Chart element in the DOM.
     ((this.gantt?.element as HTMLElement).parentNode as ParentNode).insertBefore(span, (this.gantt as GanttComponent).element);
 
     // Style the error message in red for visibility.
@@ -509,7 +509,7 @@ export class AppComponent implements OnInit {
 
 ## beforeExcelExport
 
-The [beforeExcelExport](https://ej2.syncfusion.com/angular/documentation/api/gantt#beforeexcelexport) event is triggered before initiating data export from the Gantt Chart component to Excel or CSV format. This event enables conditional control over the export process, such as canceling the operation or applying format-specific logic.
+The [beforeExcelExport](https://ej2.syncfusion.com/angular/documentation/api/gantt#beforeexcelexport) event is triggered before initiating data export from the Angular Gantt Chart component to Excel or CSV format. This event enables conditional control over the export process, such as canceling the operation or applying format-specific logic.
 
 The event argument is an `object` containing the following properties:
 
@@ -626,7 +626,7 @@ The event provides an argument of type `object` with the following properties:
 | **Property**   | **Type**   | **Description**                                                  |
 |----------------|------------|------------------------------------------------------------------|
 | `cancel`       | boolean  | Set **true** to cancel PDF export.                               |
-| `ganttObject`  | Object   | Reference to the Gantt Chart instance.                           |
+| `ganttObject`  | Object   | Reference to the Angular Gantt Chart instance.                           |
 | `name`         | string   | Event name, typically **beforePdfExport**.                       |
 | `requestType`  | string  | Type of request, typically **beforePdfExport**.                  |
 
@@ -728,7 +728,7 @@ export class AppComponent {
 
 ## beforeTooltipRender
 
-The [beforeTooltipRender](https://ej2.syncfusion.com/angular/documentation/api/gantt#beforetooltiprender) event is triggered before rendering a tooltip for interactive elements within the Gantt Chart component. This includes taskbars, timeline headers, and connector lines. The event allows dynamic customization or suppression of tooltip content based on contextual data.
+The [beforeTooltipRender](https://ej2.syncfusion.com/angular/documentation/api/gantt#beforetooltiprender) event is triggered before rendering a tooltip for interactive elements within the Angular Gantt Chart component. This includes taskbars, timeline headers, and connector lines. The event allows dynamic customization or suppression of tooltip content based on contextual data.
 
 The event provides an argument of type [BeforeTooltipRenderEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/beforeTooltipRenderEventArgs) with the following properties:
 
@@ -841,7 +841,7 @@ export class AppComponent {
 
 ## cellDeselected
 
-The [cellDeselected](https://ej2.syncfusion.com/angular/documentation/api/gantt#celldeselected) event is triggered when a selected cell in the Gantt Chart component is deselected. This occurs when the selection is cleared by clicking outside the cell, selecting a different cell or row, or through programmatic control. This event is typically used to validate cell data after deselection, synchronize external state, or trigger updates based on cell-level interactions.
+The [cellDeselected](https://ej2.syncfusion.com/angular/documentation/api/gantt#celldeselected) event is triggered when a selected cell in the Angular Gantt Chart component is deselected. This occurs when the selection is cleared by clicking outside the cell, selecting a different cell or row, or through programmatic control. This event is typically used to validate cell data after deselection, synchronize external state, or trigger updates based on cell-level interactions.
 
 The event provides an argument of type [CellDeselectEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/cellDeselectEventArgs) with the following properties:
 
@@ -954,7 +954,7 @@ export class AppComponent {
 
 ## cellDeselecting
 
-The [cellDeselecting](https://ej2.syncfusion.com/angular/documentation/api/gantt#celldeselecting) event is triggered when a previously selected cell in the Gantt Chart component is deselected. This occurs when the selection is cleared either through user interaction or programmatic control. This event is typically used to validate cell data after deselection, synchronize external state, or trigger updates based on cell-level interactions.
+The [cellDeselecting](https://ej2.syncfusion.com/angular/documentation/api/gantt#celldeselecting) event is triggered when a previously selected cell in the Angular Gantt Chart component is deselected. This occurs when the selection is cleared either through user interaction or programmatic control. This event is typically used to validate cell data after deselection, synchronize external state, or trigger updates based on cell-level interactions.
 
 The event provides an argument of type [CellDeselectEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/cellDeselectEventArgs) with the following properties:
 
@@ -1069,7 +1069,7 @@ export class AppComponent {
 
 ## cellEdit
 
-The [cellEdit](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#celledit) event is triggered when a cell enters edit mode in the Gantt Chart component. This event allows customization of the editing behavior, such as validating input, modifying cell values, or preventing edits based on specific conditions. It helps ensure that data changes meet application requirements before being applied.
+The [cellEdit](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#celledit) event is triggered when a cell enters edit mode in the Angular Gantt Chart component. This event allows customization of the editing behavior, such as validating input, modifying cell values, or preventing edits based on specific conditions. It helps ensure that data changes meet application requirements before being applied.
 
 The event provides an argument of type [CellEditArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/cellEditArgs) with the following properties:
 
@@ -1188,7 +1188,7 @@ export class AppComponent {
 
 ## cellSelected
 
-The [cellSelected](https://ej2.syncfusion.com/angular/documentation/api/gantt#cellselected) event is triggered after a cell in the Gantt Chart component is selected. This event provides access to the selected cell’s context and enables interaction logic based on cell-level selection. This event is commonly used to apply conditional styling, display contextual information, or trigger logic based on the selected task or field.
+The [cellSelected](https://ej2.syncfusion.com/angular/documentation/api/gantt#cellselected) event is triggered after a cell in the Angular Gantt Chart component is selected. This event provides access to the selected cell’s context and enables interaction logic based on cell-level selection. This event is commonly used to apply conditional styling, display contextual information, or trigger logic based on the selected task or field.
 
 The event provides an argument of type [CellSelectEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/cellSelectEventArgs) with the following properties:
 
@@ -1302,7 +1302,7 @@ export class AppComponent {
 
 ## cellSelecting
 
-The [cellSelecting](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#cellselecting) event is triggered before a cell is selected in the Gantt Chart component. It enables logic to control selection behavior based on cell context, such as preventing selection under specific conditions or customizing appearance dynamically.
+The [cellSelecting](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#cellselecting) event is triggered before a cell is selected in the Angular Gantt Chart component. It enables logic to control selection behavior based on cell context, such as preventing selection under specific conditions or customizing appearance dynamically.
 
 The event provides an argument of type [CellSelectingEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/cellSelectingEventArgs)  with the following properties:
 
@@ -1524,7 +1524,7 @@ export class AppComponent {
 
 ## columnDragStart
 
-The [columnDragStart](https://ej2.syncfusion.com/angular/documentation/api/gantt#columndragstart) event is triggered when a column header drag operation begins in the Gantt Chart component. This event provides access to the initial drag context and enables customization or restriction of the drag behavior.
+The [columnDragStart](https://ej2.syncfusion.com/angular/documentation/api/gantt#columndragstart) event is triggered when a column header drag operation begins in the Angular Gantt Chart component. This event provides access to the initial drag context and enables customization or restriction of the drag behavior.
 
 The event provides an argument of type [ColumnDragEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/columnDragEventArgs) with the following properties:
 
@@ -1630,7 +1630,7 @@ export class AppComponent {
 
 ## columnDrop
 
-The [columnDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt#columndrop) is triggered when a column header is dropped after a drag operation in the Gantt Chart component.  It provides drop context and supports post-reorder logic such as validation or UI updates.
+The [columnDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt#columndrop) is triggered when a column header is dropped after a drag operation in the Angular Gantt Chart component.  It provides drop context and supports post-reorder logic such as validation or UI updates.
 
 The event provides an argument of type [ColumnDragEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/columnDragEventArgs) with the following properties:
 
@@ -1735,7 +1735,7 @@ export class AppComponent {
 
 ## columnMenuClick
 
-The [columnMenuClick](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#columnmenuclick) event is triggered when a column menu item is selected in the Gantt Chart. It provides access to the clicked item and its associated column, allowing you to customize menu behavior or execute additional logic.
+The [columnMenuClick](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#columnmenuclick) event is triggered when a column menu item is selected in the Angular Gantt Chart. It provides access to the clicked item and its associated column, allowing you to customize menu behavior or execute additional logic.
 
 The event provides an argument of type [ColumnMenuClickEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/columnMenuClickEventArgs) with the following properties:
 
@@ -1840,7 +1840,7 @@ export class AppComponent {
 
 ## columnMenuOpen
 
-The [columnMenuOpen](https://ej2.syncfusion.com/angular/documentation/api/gantt#columnmenuopen) event is triggered when the column menu is opened in the Gantt Chart component. This event provides access to the menu context and allows customization of its appearance, behavior, or available options.
+The [columnMenuOpen](https://ej2.syncfusion.com/angular/documentation/api/gantt#columnmenuopen) event is triggered when the column menu is opened in the Angular Gantt Chart component. This event provides access to the menu context and allows customization of its appearance, behavior, or available options.
 
 The event provides an argument of type [ColumnMenuOpenEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/columnMenuOpenEventArgs) with the following properties:
 
@@ -1952,7 +1952,7 @@ export class AppComponent {
 
 ## contextMenuClick
 
-The [contextMenuClick](https://ej2.syncfusion.com/angular/documentation/api/gantt#contextmenuclick) event is triggered when a context menu item is clicked within the Gantt Chart component. This event provides access to the clicked item and the associated context, enabling customization of menu behavior or execution of additional logic.
+The [contextMenuClick](https://ej2.syncfusion.com/angular/documentation/api/gantt#contextmenuclick) event is triggered when a context menu item is clicked within the Angular Gantt Chart component. This event provides access to the clicked item and the associated context, enabling customization of menu behavior or execution of additional logic.
 
 The event provides an argument of type [ContextMenuClickEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/contextMenuClickEventArgs) with the following properties:
 
@@ -2132,7 +2132,7 @@ export class AppComponent{
 
 ## created
 
-The [created](https://ej2.syncfusion.com/angular/documentation/api/gantt#created) event is triggered when the Gantt Chart component is fully initialized and rendered. This event is useful for executing logic that depends on the component being completely loaded and ready for interaction.
+The [created](https://ej2.syncfusion.com/angular/documentation/api/gantt#created) event is triggered when the Angular Gantt Chart component is fully initialized and rendered. This event is useful for executing logic that depends on the component being completely loaded and ready for interaction.
 
 ```ts
 import { NgModule, ViewChild, viewChild } from '@angular/core'
@@ -2209,7 +2209,7 @@ export class AppComponent{
 
 ## dataBound
 
-The [dataBound](https://ej2.syncfusion.com/angular/documentation/api/gantt#databound) event is triggered after the Gantt Chart component has successfully bound its data source and rendered the task data. This event is useful for executing logic that depends on the data being fully loaded and available in the UI.
+The [dataBound](https://ej2.syncfusion.com/angular/documentation/api/gantt#databound) event is triggered after the Angular Gantt Chart component has successfully bound its data source and rendered the task data. This event is useful for executing logic that depends on the data being fully loaded and available in the UI.
 
 ```ts
 import { NgModule, ViewChild, viewChild } from '@angular/core'
@@ -2285,7 +2285,7 @@ export class AppComponent{
 
 ## destroyed
 
-The [destroyed](https://ej2.syncfusion.com/angular/documentation/api/gantt#destroyed) event is triggered when the Gantt Chart component is removed from the DOM using the destroy() method. This event is useful for handling cleanup operations and releasing resources associated with the component instance.
+The [destroyed](https://ej2.syncfusion.com/angular/documentation/api/gantt#destroyed) event is triggered when the Angular Gantt Chart component is removed from the DOM using the destroy() method. This event is useful for handling cleanup operations and releasing resources associated with the component instance.
 
 The event provides an argument of type `object` with the following properties:
 
@@ -2481,7 +2481,7 @@ export class AppComponent {
 
 ## excelExportComplete
 
-The [excelExportComplete](https://ej2.syncfusion.com/angular/documentation/api/gantt#excelexportcomplete) event is triggered after the Gantt Chart component has completed exporting data to an Excel file. This event enables post-export actions such as displaying notifications, logging activity, or applying additional formatting to the exported content.
+The [excelExportComplete](https://ej2.syncfusion.com/angular/documentation/api/gantt#excelexportcomplete) event is triggered after the Angular Gantt Chart component has completed exporting data to an Excel file. This event enables post-export actions such as displaying notifications, logging activity, or applying additional formatting to the exported content.
 
 The event provides an argument of type [ExcelExportCompleteArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportCompleteArgs) with the following property:
 
@@ -2585,7 +2585,7 @@ export class AppComponent {
   public toolbarClick(args: ClickEventArgs): void {
     // Check if the clicked toolbar item is the Excel export button
     if (args.item.id === 'ganttDefault_excelexport') {
-      // Trigger Excel export from the Gantt Chart component
+      // Trigger Excel export from the Angular Gantt Chart component
       this.ganttObj?.excelExport();
     }
   }
@@ -2868,7 +2868,7 @@ export class AppComponent {
 
 ## expanded
 
-The [expanded](https://ej2.syncfusion.com/angular/documentation/api/gantt#expanded) event is triggered after a row has been expanded in the Gantt Chart. It enables actions that respond to row expansion, such as loading additional data, updating UI elements, or tracking user interaction.
+The [expanded](https://ej2.syncfusion.com/angular/documentation/api/gantt#expanded) event is triggered after a row has been expanded in the Angular Gantt Chart. It enables actions that respond to row expansion, such as loading additional data, updating UI elements, or tracking user interaction.
 
 The event provides an argument of type [ICollapsingEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/iCollapsingEventArgs) with the following properties:
 
@@ -2979,7 +2979,7 @@ export class AppComponent {
 
 ## expanding
 
-The [expanding](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#expanding) event is triggered before a row is expanded in the Gantt Chart. It enables interception of the expansion process and allows cancellation based on custom logic or conditions.
+The [expanding](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#expanding) event is triggered before a row is expanded in the Angular Gantt Chart. It enables interception of the expansion process and allows cancellation based on custom logic or conditions.
 
 The event provides an argument of type [ICollapsingEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/iCollapsingEventArgs) with the following properties:
 
@@ -3094,7 +3094,7 @@ public onRowExpanding(args: ICollapsingEventArgs): void {
 
 ## headerCellInfo
 
-The [headerCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#headercellinfo) event is triggered during the rendering of column header cells in the Gantt Chart. It allows customization of header cell appearance and content before they are displayed in the UI.
+The [headerCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#headercellinfo) event is triggered during the rendering of column header cells in the Angular Gantt Chart. It allows customization of header cell appearance and content before they are displayed in the UI.
 
 The event provides an object of type [HeaderCellInfoEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/headerCellInfoEventArgs) with the following properties:
 
@@ -3211,7 +3211,7 @@ export class AppComponent {
 
 ## load
 
-The [load](https://ej2.syncfusion.com/angular/documentation/api/gantt#load) event is triggered before the Gantt Chart component is rendered. It allows execution of pre-rendering logic such as modifying initial settings, injecting dynamic configurations, or preparing data before the component is displayed.
+The [load](https://ej2.syncfusion.com/angular/documentation/api/gantt#load) event is triggered before the Angular Gantt Chart component is rendered. It allows execution of pre-rendering logic such as modifying initial settings, injecting dynamic configurations, or preparing data before the component is displayed.
 
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
@@ -3333,7 +3333,7 @@ export class AppComponent {
 
 ## onMouseMove
 
-The [onMouseMove](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#onmousemove) event is triggered when the mouse moves within the Gantt Chart area. It enables tracking of cursor movement and interaction with elements under the pointer.
+The [onMouseMove](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#onmousemove) event is triggered when the mouse moves within the Angular Gantt Chart area. It enables tracking of cursor movement and interaction with elements under the pointer.
 
 The event provides an argument of type [IMouseMoveEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/iMouseMoveEventArgs) with the following properties:
 
@@ -3457,7 +3457,7 @@ export class AppComponent {
 
 ## onTaskbarClick
 
-The [onTaskbarClick](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#ontaskbarclick) event is triggered when a taskbar element is clicked in the Gantt Chart. It supports custom actions based on the selected task, such as displaying task details, navigating to related views, or tracking interactions.
+The [onTaskbarClick](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#ontaskbarclick) event is triggered when a taskbar element is clicked in the Angular Gantt Chart. It supports custom actions based on the selected task, such as displaying task details, navigating to related views, or tracking interactions.
 
 The event provides an argument of type [ITaskbarClickEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/iTaskbarClickEventArgs) with the following properties:
 
@@ -3583,7 +3583,7 @@ public onTaskbarClick(args: ITaskbarClickEventArgs): void {
 
 ## pdfColumnHeaderQueryCellInfo
 
-The [pdfColumnHeaderQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#pdfcolumnheaderquerycellinfo) event is triggered before each column header cell is exported to a PDF document in the Gantt Chart. It enables customization of header cell content, style, and formatting during the export process.
+The [pdfColumnHeaderQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#pdfcolumnheaderquerycellinfo) event is triggered before each column header cell is exported to a PDF document in the Angular Gantt Chart. It enables customization of header cell content, style, and formatting during the export process.
 
 The event provides an argument of type [PdfColumnHeaderQueryCellInfoEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfColumnHeaderQueryCellInfoEventArgs)  with the following properties:
 
@@ -3717,7 +3717,7 @@ export class AppComponent {
 
 ## pdfExportComplete
 
-The [pdfExportComplete](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#pdfexportcomplete) event is triggered after the Gantt Chart completes the process of exporting data to a PDF document. It enables post-export operations such as handling the generated file, displaying notifications, or logging export activity.
+The [pdfExportComplete](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#pdfexportcomplete) event is triggered after the Angular Gantt Chart completes the process of exporting data to a PDF document. It enables post-export operations such as handling the generated file, displaying notifications, or logging export activity.
 
 The event provides an `object` with the following property:
 
@@ -3843,7 +3843,7 @@ export class AppComponent {
 
 ## pdfQueryCellInfo
 
-The [pdfQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#pdfquerycellinfo) event is triggered for each cell during the PDF export process in the Gantt Chart. It allows customization of individual cell content, style, and formatting in the exported PDF document.
+The [pdfQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#pdfquerycellinfo) event is triggered for each cell during the PDF export process in the Angular Gantt Chart. It allows customization of individual cell content, style, and formatting in the exported PDF document.
 
 The event provides an argument of type [PdfExportCompleteArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfQueryCellInfoEventArgs) with the following properties:
 
@@ -3979,7 +3979,7 @@ public pdfQueryCellInfo(args: PdfQueryCellInfoEventArgs): void {
 
 ## pdfQueryTaskbarInfo
 
-The [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt#pdfquerytaskbarinfo) event is triggered for each taskbar during the PDF export process in the Gantt Chart. This event allows customization of the taskbar appearance and content in the exported PDF document.
+The [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt#pdfquerytaskbarinfo) event is triggered for each taskbar during the PDF export process in the Angular Gantt Chart. This event allows customization of the taskbar appearance and content in the exported PDF document.
 
 The event provides an argument of type [PdfQueryTaskbarInfoEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfQueryTaskbarInfoEventArgs) with the following properties:
 
@@ -4113,7 +4113,7 @@ public PdfQueryTaskbarInfo(args: PdfQueryTaskbarInfoEventArgs): void {
 
 ## pdfQueryTimelineCellInfo
 
-The [pdfQueryTimelineCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt#pdfquerytimelinecellinfo) event is triggered for each timeline cell during the PDF export process in the Gantt Chart. It allows customization of the appearance, content, and style of timeline cells in the exported PDF document.
+The [pdfQueryTimelineCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt#pdfquerytimelinecellinfo) event is triggered for each timeline cell during the PDF export process in the Angular Gantt Chart. It allows customization of the appearance, content, and style of timeline cells in the exported PDF document.
 
 The event provides an argument of type [pdfQueryTimelineCellInfoEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfQueryTimelineCellInfoEventArgs) with the following properties:
 
@@ -4239,7 +4239,7 @@ export class AppComponent {
 
 ## queryCellInfo
 
-The [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt#querycellinfo) event is triggered for each cell while rendering the Gantt Chart in the UI. It allows customization of cell content, appearance, and style before they are displayed.
+The [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt#querycellinfo) event is triggered for each cell while rendering the Angular Gantt Chart in the UI. It allows customization of cell content, appearance, and style before they are displayed.
 
 The event provides an argument of type  [QueryCellInfoEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/querycellinfoeventargs) with the following properties:
 
@@ -4376,7 +4376,7 @@ public queryCellInfo(args: QueryCellInfoEventArgs): void {
 
 ## queryTaskbarInfo
 
-The [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt#querytaskbarinfo) event is triggered while rendering each taskbar in the Gantt Chart. It allows customization of taskbar appearance, content, and behavior before they are displayed in the UI.
+The [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt#querytaskbarinfo) event is triggered while rendering each taskbar in the Angular Gantt Chart. It allows customization of taskbar appearance, content, and behavior before they are displayed in the UI.
 
 The event provides an argument of type [IQueryTaskbarInfoEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/iquerytaskbarinfoeventargs) with the following properties:
 
@@ -4521,7 +4521,7 @@ export class AppComponent {
 
 ## recordDoubleClick
 
-The [recordDoubleClick](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#recorddoubleclick) event is triggered when a row in the Gantt Chart is double-clicked. It enables custom actions based on the selected task, such as opening detailed views, initiating inline editing, or displaying contextual information.
+The [recordDoubleClick](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#recorddoubleclick) event is triggered when a row in the Angular Gantt Chart is double-clicked. It enables custom actions based on the selected task, such as opening detailed views, initiating inline editing, or displaying contextual information.
 
 The event provides an argument of type [RecordDoubleClickEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/recorddoubleclickeventargs) with the following properties:
 
@@ -4660,7 +4660,7 @@ export class AppComponent {
 
 ## resizeStart
 
-The [resizeStart](https://ej2.syncfusion.com/angular/documentation/api/gantt#resizestart) event is triggered when a column resize action begins in the Gantt Chart. It allows interception of the resize process to apply validations or restrict resizing for specific columns.
+The [resizeStart](https://ej2.syncfusion.com/angular/documentation/api/gantt#resizestart) event is triggered when a column resize action begins in the Angular Gantt Chart. It allows interception of the resize process to apply validations or restrict resizing for specific columns.
 
 The event provides an argument of type [ResizeArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/resizeArgs) with the following properties:
 
@@ -4791,7 +4791,7 @@ export class AppComponent {
 
 ## resizeStop
 
-The [resizeStop](https://ej2.syncfusion.com/angular/documentation/api/gantt#resizestop) event is triggered when a column resize operation is completed in the Gantt Chart. It enables layout updates, persistence of dimensions, or UI adjustments.
+The [resizeStop](https://ej2.syncfusion.com/angular/documentation/api/gantt#resizestop) event is triggered when a column resize operation is completed in the Angular Gantt Chart. It enables layout updates, persistence of dimensions, or UI adjustments.
 
 The event provides an argument of type [ResizeArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/resizeArgs) with the following properties:
 
@@ -4915,7 +4915,7 @@ export class AppComponent {
 
 ## resizing
 
-The [resizing](https://ej2.syncfusion.com/angular/documentation/api/gantt#resizing) event is triggered continuously during column resizing in the Gantt Chart. It provides access to the current column width and supports dynamic updates to layout, styling, or constraints while the resize operation is in progress. This event is commonly used to enforce minimum or maximum widths, preview layout changes, or display contextual indicators during interaction.
+The [resizing](https://ej2.syncfusion.com/angular/documentation/api/gantt#resizing) event is triggered continuously during column resizing in the Angular Gantt Chart. It provides access to the current column width and supports dynamic updates to layout, styling, or constraints while the resize operation is in progress. This event is commonly used to enforce minimum or maximum widths, preview layout changes, or display contextual indicators during interaction.
 
 The event provides an argument of type [ResizeArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/resizeArgs) with the following properties:
 
@@ -5039,7 +5039,7 @@ export class AppComponent {
 
 ## rowDataBound
 
-The [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/gantt#rowdatabound) event is triggered each time a row is bound to data in the Gantt Chart. It enables customization of row appearance and content based on the associated task data. This event supports scenarios such as applying conditional formatting, injecting tooltips or icons, and modifying row structure to reflect task-specific context or status.
+The [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/gantt#rowdatabound) event is triggered each time a row is bound to data in the Angular Gantt Chart. It enables customization of row appearance and content based on the associated task data. This event supports scenarios such as applying conditional formatting, injecting tooltips or icons, and modifying row structure to reflect task-specific context or status.
 
 The event provides an argument of type [RowDataBoundEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/rowDataBoundEventArgs) with the following properties:
 
@@ -5047,7 +5047,7 @@ The event provides an argument of type [RowDataBoundEventArgs](https://ej2.syncf
 |------------------|------------------|---------------------------------------------------------------|
 | `data`           | IGanttData     | Task data bound to the current row.                           |
 | `isSelectable`   | boolean        | Indicates if the row is selectable or not.                    |
-| `row`            | Element        | Row element rendered in the Gantt Chart.                      |
+| `row`            | Element        | Row element rendered in the Angular Gantt Chart.                      |
 | `rowHeight`      | number         | Height of the row being rendered.                             |
 
 ```ts
@@ -5166,7 +5166,7 @@ export class AppComponent {
 
 ## rowDeselected
 
-The [rowDeselected](https://ej2.syncfusion.com/angular/documentation/api/gantt#rowdeselected) event is triggered when a previously selected row is deselected in the Gantt Chart. It enables logic execution tied to selection changes, such as removing visual highlights, updating contextual UI elements, or tracking interaction patterns. This event supports scenarios involving both user-driven and programmatic deselection, ensuring consistent behavior across selection workflows.
+The [rowDeselected](https://ej2.syncfusion.com/angular/documentation/api/gantt#rowdeselected) event is triggered when a previously selected row is deselected in the Angular Gantt Chart. It enables logic execution tied to selection changes, such as removing visual highlights, updating contextual UI elements, or tracking interaction patterns. This event supports scenarios involving both user-driven and programmatic deselection, ensuring consistent behavior across selection workflows.
 
 The event provides an argument of type [RowDeselectEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/rowDeselectEventArgs) with the following properties:
 
@@ -5302,7 +5302,7 @@ export class AppComponent {
 
 ## rowDeselecting
 
-The [rowDeselecting](https://ej2.syncfusion.com/angular/documentation/api/gantt#rowdeselecting) event is triggered before a selected row is deselected in the Gantt Chart. It enables conditional control over the deselection process, allowing validations, confirmation prompts, or logic to prevent deselection based on task state or application rules. This event supports consistent behavior across both interactive and programmatic selection workflows.
+The [rowDeselecting](https://ej2.syncfusion.com/angular/documentation/api/gantt#rowdeselecting) event is triggered before a selected row is deselected in the Angular Gantt Chart. It enables conditional control over the deselection process, allowing validations, confirmation prompts, or logic to prevent deselection based on task state or application rules. This event supports consistent behavior across both interactive and programmatic selection workflows.
 
 The event provides an argument of type [RowDeselectEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/rowDeselectEventArgs) with the following properties:
 
@@ -5439,7 +5439,7 @@ export class AppComponent {
 
 ## rowDrag
 
-The [rowDrag](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#rowdrag) event is triggered while a row is being dragged in the Gantt Chart. It allows customization during drag operations, such as showing visual indicators, applying drag constraints, or tracking drag operations.
+The [rowDrag](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#rowdrag) event is triggered while a row is being dragged in the Angular Gantt Chart. It allows customization during drag operations, such as showing visual indicators, applying drag constraints, or tracking drag operations.
 
 The event provides an argument of type [RowDragEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/rowDropEventArgs) with the following properties:
 
@@ -5589,7 +5589,7 @@ export class AppComponent {
 
 ## rowDragStart
 
-The [rowDragStart](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#rowdragstart) event is triggered when a row drag operation begins in the Gantt Chart. It allows handling of drag initiation, such as applying movement restrictions, customizing visuals, or initiating tracking mechanisms.
+The [rowDragStart](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#rowdragstart) event is triggered when a row drag operation begins in the Angular Gantt Chart. It allows handling of drag initiation, such as applying movement restrictions, customizing visuals, or initiating tracking mechanisms.
 
 The event provides an argument of type [RowDragEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/rowDropEventArgs) with the following properties:
 
@@ -5716,7 +5716,7 @@ export class AppComponent implements OnInit {
 
 ## rowDragStartHelper
 
-The [rowDragStartHelper](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#rowdragstarthelper) event is triggered before a row drag operation begins in the Gantt Chart. It allows handling of drag eligibility checks, such as validating conditions, modifying behavior, or canceling the drag action.
+The [rowDragStartHelper](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#rowdragstarthelper) event is triggered before a row drag operation begins in the Angular Gantt Chart. It allows handling of drag eligibility checks, such as validating conditions, modifying behavior, or canceling the drag action.
 
 The event provides an argument of type [RowDragEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/rowDropEventArgs) with the following properties:
 
@@ -5852,7 +5852,7 @@ export class AppComponent {
 
 ## rowDrop
 
-The [rowDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#rowdrop) event is triggered after a row is dropped into a new position in the Gantt Chart. It allows handling of row reordering, such as updating data, validating hierarchy changes, or tracking user actions.
+The [rowDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#rowdrop) event is triggered after a row is dropped into a new position in the Angular Gantt Chart. It allows handling of row reordering, such as updating data, validating hierarchy changes, or tracking user actions.
 
 The event provides an argument of type [RowDragEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/rowDropEventArgs) with the following properties:
 
@@ -5993,7 +5993,7 @@ export class AppComponent {
 
 ## rowSelected
 
-The [rowSelected](https://ej2.syncfusion.com/angular/documentation/api/gantt#rowselected) event is triggered after a row has been selected in the Gantt Chart. It enables actions that respond to selection changes, such as styling the row, displaying related details, or tracking user interaction.
+The [rowSelected](https://ej2.syncfusion.com/angular/documentation/api/gantt#rowselected) event is triggered after a row has been selected in the Angular Gantt Chart. It enables actions that respond to selection changes, such as styling the row, displaying related details, or tracking user interaction.
 
 The event provides an argument of type [RowSelectEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/rowselecteventargs) with the following properties:
 
@@ -6137,7 +6137,7 @@ export class AppComponent implements OnInit {
 
 ## rowSelecting
 
-The [rowSelecting](https://ej2.syncfusion.com/angular/documentation/api/gantt#rowselecting) event is triggered before a row is selected in the Gantt Chart. It enables actions that intercept the selection process, such as validating conditions, prompting confirmation, or canceling the selection.
+The [rowSelecting](https://ej2.syncfusion.com/angular/documentation/api/gantt#rowselecting) event is triggered before a row is selected in the Angular Gantt Chart. It enables actions that intercept the selection process, such as validating conditions, prompting confirmation, or canceling the selection.
 
 The event provides an argument of type [RowSelectingEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/rowselecteventargs) with the following properties:
 
@@ -6281,7 +6281,7 @@ export class AppComponent {
 
 ## splitterResizeStart
 
-The [splitterResizeStart](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#splitterresizestart) event is triggered when the splitter bar begins resizing in the Gantt Chart layout. It enables actions that respond to resize initiation, such as applying layout constraints, customizing visuals, or tracking user interaction.
+The [splitterResizeStart](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#splitterresizestart) event is triggered when the splitter bar begins resizing in the Angular Gantt Chart layout. It enables actions that respond to resize initiation, such as applying layout constraints, customizing visuals, or tracking user interaction.
 
 The event provides an argument of type [ResizeArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/resizeArgs) with the following properties:
 
@@ -6415,7 +6415,7 @@ export class AppComponent {
 
 ## splitterResized
 
-The [splitterResized](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#splitterresized) event is triggered after the splitter bar has been resized in the Gantt Chart layout. It enables actions that respond to final layout changes, such as saving pane dimensions, updating related components, or tracking user interaction.
+The [splitterResized](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#splitterresized) event is triggered after the splitter bar has been resized in the Angular Gantt Chart layout. It enables actions that respond to final layout changes, such as saving pane dimensions, updating related components, or tracking user interaction.
 
 The event provides an argument of type [ISplitterResizedEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/isplitterresizedeventargs) with the following properties:
 
@@ -6556,7 +6556,7 @@ export class AppComponent {
 
 ## splitterResizing
 
-The [splitterResizing](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#splitterresizing) event is triggered continuously while the splitter bar is being dragged in the Gantt Chart layout. It enables responsive actions during resizing, such as enforcing layout constraints, updating visual elements, or tracking user interaction.
+The [splitterResizing](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#splitterresizing) event is triggered continuously while the splitter bar is being dragged in the Angular Gantt Chart layout. It enables responsive actions during resizing, such as enforcing layout constraints, updating visual elements, or tracking user interaction.
 
 The event provides an argument of type `ResizingEventArgs` with the following properties:
 
@@ -6685,7 +6685,7 @@ export class AppComponent {
 
 ## taskbarEdited
 
-The [taskbarEdited](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskbaredited) event is triggered after a taskbar is modified in the Gantt Chart. It enables actions that respond to task updates, such as saving changes, validating edits, or updating related components.
+The [taskbarEdited](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskbaredited) event is triggered after a taskbar is modified in the Angular Gantt Chart. It enables actions that respond to task updates, such as saving changes, validating edits, or updating related components.
 
 The event provides an argument of type [TaskbarEditedEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/itaskbareditedeventargs) with the following properties:
 
@@ -6828,7 +6828,7 @@ export class AppComponent {
 
 ## taskbarEditing
 
-The [taskbarEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskbarediting) event is triggered while a taskbar is being dragged or resized in the Gantt Chart. It enables actions that respond to live taskbar edits, such as enforcing constraints, updating tooltips, or canceling the edit based on conditions.
+The [taskbarEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskbarediting) event is triggered while a taskbar is being dragged or resized in the Angular Gantt Chart. It enables actions that respond to live taskbar edits, such as enforcing constraints, updating tooltips, or canceling the edit based on conditions.
 
 The event provides an argument of type [ITaskbarEditedEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/iTaskbarEditedEventArgs) with the following properties:
 
@@ -6967,7 +6967,7 @@ taskbarEditing(args: ITaskbarEditedEventArgs): void {
 
 ## toolbarClick
 
-The [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/gantt#toolbarclick) event is triggered when any toolbar item is clicked in the Gantt Chart. It enables actions that respond to toolbar interactions, such as overriding default behavior, confirming actions, or triggering external workflows.
+The [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/gantt#toolbarclick) event is triggered when any toolbar item is clicked in the Angular Gantt Chart. It enables actions that respond to toolbar interactions, such as overriding default behavior, confirming actions, or triggering external workflows.
 
 The event provides an argument of type [ClickEventArgs](https://ej2.syncfusion.com/angular/documentation/api/toolbar/clickEventArgs) with the following properties:
 

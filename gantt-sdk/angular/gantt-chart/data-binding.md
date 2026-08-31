@@ -2,7 +2,7 @@
 layout: post
 title: Data Binding in Angular Gantt Chart | Local & Remote | Syncfusion
 description: Learn how to bind local arrays and remote data sources in Syncfusion Angular Gantt Chart using DataManager and field mapping for dynamic project data.
-keywords: angular gantt data binding, local data, remote data, datamanager, field mapping, syncfusion gantt
+keywords: Angular Gantt Chart data binding, local data, remote data, datamanager, field mapping, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/data-binding
 platform: gantt-sdk
 control: Data Binding - Gantt Chart
@@ -14,15 +14,15 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 Data binding connects the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component to project data sources, enabling dynamic visualization and management of project information. The component supports both local JavaScript arrays and remote server data through the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt#datasource) property, which accepts either a `DataManager` instance or JavaScript object array collection.
 
-Understanding data binding implementation ensures the Gantt chart accurately represents and interacts with project data across different scenarios and data structures.
+Understanding data binding implementation ensures the Angular Gantt Chart accurately represents and interacts with project data across different scenarios and data structures.
 
-The following video explains data binding in Gantt chart:
+The following video explains data binding in Gantt Chart:
 
 {% youtube "https://www.youtube.com/watch?v=FTdp0r1pPK8" %}
 
 ## Understanding data binding approaches
 
-The Gantt Chart component uses `DataManager` to support both RESTful JSON data services and local JavaScript object array binding. This flexibility allows you to choose the most appropriate data source method based on project requirements and data architecture.
+The Angular Gantt Chart component uses `DataManager` to support both RESTful JSON data services and local JavaScript object array binding. This flexibility allows you to choose the most appropriate data source method based on project requirements and data architecture.
 
 **Local Data Binding**: Local data binding retrieves project information from the same application environment. This approach provides faster rendering and reduced network dependency, making it ideal for applications with static or cached project data.
 
@@ -96,7 +96,7 @@ Remote data binding assigns service endpoints as `DataManager` instances to the 
 
 ### URL Adaptor implementation
 
-URL Adaptor enables communication with SQL databases through ADO.NET Entity Data Model, supporting CRUD operations through server method calls that return JSON formatted data. This adaptor facilitates seamless data exchange between the Gantt Chart component and server-side data management systems.
+URL Adaptor enables communication with SQL databases through ADO.NET Entity Data Model, supporting CRUD operations through server method calls that return JSON formatted data. This adaptor facilitates seamless data exchange between the Angular Gantt Chart component and server-side data management systems.
 
 The URL Adaptor handles data requests by calling configured server endpoints and processing responses in standardized JSON formats. This approach supports comprehensive data operations including create, read, update, and delete functionalities.
 
@@ -635,7 +635,7 @@ segmentData: [
 
 ## Expand state management
 
-Control parent task expand status in the Gantt chart by defining the [expandStateMapping](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#expandstate) property. This property maps to data source field names indicating whether parent tasks should render in expanded or collapsed states based on mapped boolean values.
+Control parent task expand status in the Angular Gantt Chart by defining the [expandStateMapping](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#expandstate) property. This property maps to data source field names indicating whether parent tasks should render in expanded or collapsed states based on mapped boolean values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -651,7 +651,7 @@ Control parent task expand status in the Gantt chart by defining the [expandStat
 
 ## Programmatically update datasource
 
-You can programmatically update the Gantt chart data source using the [updateDataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#updatedatasource) method which takes two arguments where the first argument is the new `dataSource` and the second argument is an optional configuration object with `projectStartDate` and `projectEndDate` to define the project timeline.
+You can programmatically update the Angular Gantt Chart data source using the [updateDataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#updatedatasource) method which takes two arguments where the first argument is the new `dataSource` and the second argument is an optional configuration object with `projectStartDate` and `projectEndDate` to define the project timeline.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -692,4 +692,4 @@ You can display a custom message when no data is available by defining an empty 
 
 **Self-referential search limitations**: Self-referential search functions operate only within self-referential data collections for specific IDs, without searching nested hierarchical levels, limiting search scope and effectiveness.
 
-**Parent ID field precedence**: When parentID fields are mapped, they take rendering precedence over other relationship definitions, potentially affecting Gantt chart display based on parent-child data prioritization.
+**Parent ID field precedence**: When parentID fields are mapped, they take rendering precedence over other relationship definitions, potentially affecting Gantt Chart display based on parent-child data prioritization.

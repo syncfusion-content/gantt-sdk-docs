@@ -2,7 +2,7 @@
 layout: post
 title: Reorder Columns in Angular Gantt Chart | Drag & Drop | Syncfusion
 description: Learn how to reorder columns in Syncfusion Angular Gantt Chart with drag-and-drop or programmatically, with options to restrict reordering for specific columns.
-keywords: angular gantt reorder columns, allowreordering, drag and drop, column reorder, reorderservice, syncfusion gantt
+keywords: Angular Gantt Chart reorder columns, allowreordering, drag and drop, column reorder, reorderservice, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/columns/column-reorder
 platform: gantt-sdk
 control: Column Reorder - Gantt Chart
@@ -66,7 +66,7 @@ You can programmatically reorder columns in Angular Gantt Chart component using 
 
 **Use this method when:** You have the field names of columns you want to reorder and prefer a readable, semantic approach.
 
-You can reorder columns in the Gantt Chart component using the [reorderColumns](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#reordercolumns) method on the gantt instance. This method reorders one or more columns by specifying the source column(s) and the target column using their field names:  
+You can reorder columns in the Angular Gantt Chart component using the [reorderColumns](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#reordercolumns) method on the Angular Gantt Chart instance. This method reorders one or more columns by specifying the source column(s) and the target column using their field names:  
 
 - **fromFName**: The field name of the column to move.  
 - **toFName**: The field name of the target column position.
@@ -91,7 +91,7 @@ The following demonstrates how to reorder columns by placing **TaskName** to pos
 
 **Use this method when:** You need to swap or move columns by their numeric position in the grid, or you're implementing UI controls that work with column positions.
 
-You can reorder columns in the Gantt Chart component using the [reorderColumnByIndex](https://ej2.syncfusion.com/angular/documentation/api/grid#reordercolumnbyindex) method on `gantt.treeGrid` object. This method repositions a column based on its current index and takes two parameters:
+You can reorder columns in the Angular Gantt Chart component using the [reorderColumnByIndex](https://ej2.syncfusion.com/angular/documentation/api/grid#reordercolumnbyindex) method on `gantt.treeGrid` object. This method repositions a column based on its current index and takes two parameters:
 
 - **fromIndex**: Index of the column to move (zero-based).  
 - **toIndex**: Target index where the column should be placed (zero-based).
@@ -116,7 +116,7 @@ The following demonstrates how to reorder the column at index **1** to position 
 
 **Use this method when:** You want to move multiple columns to a specific position using their field names, combining the semantic clarity of field names with positional control.
 
-You can reorder single or multiple columns in the Gantt Chart component using the [reorderColumnByTargetIndex](https://ej2.syncfusion.com/angular/documentation/api/grid#reordercolumnbytargetindex) method on `gantt.treeGrid` object. This method reorders columns based on their field names and the target index. It takes two parameters:  
+You can reorder single or multiple columns in the Angular Gantt Chart component using the [reorderColumnByTargetIndex](https://ej2.syncfusion.com/angular/documentation/api/grid#reordercolumnbytargetindex) method on `gantt.treeGrid` object. This method reorders columns based on their field names and the target index. It takes two parameters:  
   
 - **fieldName**: The field name (or array of field names for multiple columns) of the column(s) to move. 
 - **toIndex**: The zero-based index where the column(s) should be placed.
@@ -139,7 +139,7 @@ The following demonstrates how to reorder a single column **TaskID** to index **
 
 ## Customize column reorder behavior using events
 
-You can customize the column reorder behavior in Angular Gantt using the [columnDragStart](https://ej2.syncfusion.com/angular/documentation/gantt/events#columndragstart), [columnDrag](https://ej2.syncfusion.com/angular/documentation/gantt/events#columndrag), and [columnDrop](https://ej2.syncfusion.com/angular/documentation/gantt/events#columndrop) events.  These events provide control over each stage of the column drag-and-drop process, allowing for custom logic or restrictions.
+You can customize the column reorder behavior in Angular Gantt Chart using the [columnDragStart](https://ej2.syncfusion.com/angular/documentation/gantt/events#columndragstart), [columnDrag](https://ej2.syncfusion.com/angular/documentation/gantt/events#columndrag), and [columnDrop](https://ej2.syncfusion.com/angular/documentation/gantt/events#columndrop) events.  These events provide control over each stage of the column drag-and-drop process, allowing for custom logic or restrictions.
 
 The following demonstrates how to handle specific fields during column reordering:  
 - Cancel `columnDrop` for the **TaskID** field.  

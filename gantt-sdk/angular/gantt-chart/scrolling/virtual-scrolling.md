@@ -2,7 +2,7 @@
 layout: post
 title: Virtual Scrolling in Angular Gantt Chart | Performance | Syncfusion
 description: Learn how to configure virtual scrolling in the Syncfusion Angular Gantt Chart to efficiently handle large datasets and improve rendering performance.
-keywords: angular gantt virtual scroll, virtualscrollservice, row virtualization, timeline virtualization, syncfusion gantt
+keywords: Angular Gantt Chart virtual scroll, virtualscrollservice, row virtualization, timeline virtualization, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/scrolling/virtual-scrolling
 platform: gantt-sdk
 control: Virtual Scrolling - Gantt Chart
@@ -57,8 +57,8 @@ Virtual scrolling has the following constraints:
 - Cell selection is not persisted due to on-demand rendering.
 - Browser height limits restrict the maximum number of records in row virtualization.
 - The [height](https://ej2.syncfusion.com/angular/documentation/api/gantt#height) property must be set in pixels for row virtualization to define the viewport size.
-- Set a static height for the Gantt chart or its parent container; 100% height only works if both the component and its parent have explicit static heights.
-- With virtualization enabled, data is rendered in pages. When scrolling to load the next set of records, only the current page's data is available to Gantt's public methods. If a record is selected during this process, only the visible page records are returned. This behavior occurs because the Gantt chart does not retain data from all pages in memory, optimizing performance by loading only the required set.
+- Set a static height for the Angular Gantt Chart or its parent container; 100% height only works if both the component and its parent have explicit static heights.
+- With virtualization enabled, data is rendered in pages. When scrolling to load the next set of records, only the current page's data is available to Gantt's public methods. If a record is selected during this process, only the visible page records are returned. This behavior occurs because the Angular Gantt Chart does not retain data from all pages in memory, optimizing performance by loading only the required set.
 
 ## See also
 - [How to configure timeline settings?](https://ej2.syncfusion.com/angular/documentation/gantt/timeline)

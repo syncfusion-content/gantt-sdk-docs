@@ -2,7 +2,7 @@
 layout: post
 title: Work Configuration in Angular Gantt Chart | Effort | Syncfusion
 description: Learn how to configure work and task types in Syncfusion Angular Gantt Chart for accurate effort tracking and scheduling.
-keywords: angular gantt work, workunit, tasktype, fixed work, effort tracking, syncfusion gantt
+keywords: Angular Gantt Chart work, workunit, tasktype, fixed work, effort tracking, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/work
 platform: gantt-sdk
 control: Work - Gantt Chart

@@ -2,7 +2,7 @@
 layout: post
 title: Server-Side Data in Angular Gantt Chart | URLAdaptor | Syncfusion
 description: Learn how to manage Syncfusion Angular Gantt Chart data on a server using URLAdaptor for batch CRUD operations with RESTful web services and persistent updates.
-keywords: angular gantt server side data, urladaptor, batch crud, datamanager, rest api, syncfusion gantt
+keywords: Angular Gantt Chart server side data, urladaptor, batch crud, datamanager, rest api, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/managing-tasks/maintaining-data-in-server
 platform: gantt-sdk
 control: Server-Side Data - Gantt Chart
@@ -16,7 +16,7 @@ Maintaining Gantt data in a server enables persistent project updates through RE
 
 ## Configure URL adaptor with batch updates
 
-Configure the Gantt Chart component to fetch and update data using DataManager with `UrlAdaptor`. Set the data source to a DataManager instance with `url` for the server endpoint to retrieve data and `batchUrl` for batch CRUD operations (insert, edit, delete). The server returns JSON with `result` as the data list and `count` as the total records. This setup supports large datasets and batch updates, automatically handling related tasks, such as parent or predecessor adjustments, via the `BatchSave` endpoint.
+Configure the Angular Gantt Chart component to fetch and update data using DataManager with `UrlAdaptor`. Set the data source to a DataManager instance with `url` for the server endpoint to retrieve data and `batchUrl` for batch CRUD operations (insert, edit, delete). The server returns JSON with `result` as the data list and `count` as the total records. This setup supports large datasets and batch updates, automatically handling related tasks, such as parent or predecessor adjustments, via the `BatchSave` endpoint.
 
 ```typescript
 import { Component, ViewEncapsulation, OnInit } from "@angular/core";

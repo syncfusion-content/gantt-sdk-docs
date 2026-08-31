@@ -2,7 +2,7 @@
 layout: post
 title: EJ1 to EJ2 API Migration in Angular Gantt Chart | Syncfusion
 description: Learn how to migrate from EJ1 to EJ2 Gantt Chart in Angular with the complete API mapping reference, code changes, and step-by-step migration guidance.
-keywords: ej1 to ej2 migration, gantt api migration, angular gantt upgrade, api mapping, syncfusion migration
+keywords: ej1 to ej2 migration, gantt api migration, Angular Gantt Chart upgrade, api mapping, syncfusion migration
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/ej1-api-migration
 platform: gantt-sdk
 control: EJ1 to EJ2 Migration - Gantt Chart

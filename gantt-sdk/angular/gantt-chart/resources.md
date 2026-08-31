@@ -2,7 +2,7 @@
 layout: post
 title: Resources in Angular Gantt Chart | Allocation | Syncfusion
 description: Learn how to configure resources for task allocation, utilization tracking, and visual mapping using resourceFields.
-keywords: angular gantt resources, resource allocation, resourcefields, task assignment, utilization, syncfusion gantt
+keywords: Angular Gantt Chart resources, resource allocation, resourcefields, task assignment, utilization, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/resources
 platform: gantt-sdk
 control: Resources - Gantt Chart

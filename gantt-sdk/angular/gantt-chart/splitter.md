@@ -2,7 +2,7 @@
 layout: post
 title: Splitter in Angular Gantt Chart | Panel Resizing | Syncfusion
 description: Learn how to configure the splitter to resize TreeGrid and chart panels with flexible pixel or percentage positioning.
-keywords: angular gantt splitter, splittersettings, panel resizing, treegrid pane, chart pane, syncfusion gantt
+keywords: Angular Gantt Chart splitter, splittersettings, panel resizing, treegrid pane, chart pane, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/splitter
 platform: gantt-sdk
 control: Splitter - Gantt Chart
@@ -128,7 +128,7 @@ The following example adjusts the splitter dynamically:
 
 ## Customize splitter appearance
 
-Customize the splitter’s appearance in the Gantt Chart component by handling the [dataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#databound), [splitterResizing](https://ej2.syncfusion.com/angular/documentation/gantt/events#splitterresizing) and [splitterResized](https://ej2.syncfusion.com/angular/documentation/gantt/events#splitterresized) events to dynamically adjust styles, such as the background color or visibility of the resize handler. This enhances visual feedback during splitter interactions, improving usability for resizing the TreeGrid and Chart panels. The splitter retains ARIA labels for accessibility, ensuring screen reader compatibility.
+Customize the splitter’s appearance in the Angular Gantt Chart component by handling the [dataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#databound), [splitterResizing](https://ej2.syncfusion.com/angular/documentation/gantt/events#splitterresizing) and [splitterResized](https://ej2.syncfusion.com/angular/documentation/gantt/events#splitterresized) events to dynamically adjust styles, such as the background color or visibility of the resize handler. This enhances visual feedback during splitter interactions, improving usability for resizing the TreeGrid and Chart panels. The splitter retains ARIA labels for accessibility, ensuring screen reader compatibility.
 
 The following example customizes the splitter’s background and hides the resize handler during resizing:
 

@@ -2,7 +2,7 @@
 layout: post
 title: Undo and Redo in Angular Gantt Chart | Syncfusion
 description: Learn how to configure undo and redo in Syncfusion Angular Gantt Chart to revert task edits, dependency changes, and project modifications with action history.
-keywords: angular gantt undo redo, enableundoredo, undoredoactions, action history, revert changes, syncfusion gantt
+keywords: Angular Gantt Chart undo redo, enableundoredo, undoredoactions, action history, revert changes, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/undo-redo
 platform: gantt-sdk
 control: Undo Redo - Gantt Chart
@@ -103,7 +103,7 @@ In the following example, `undoRedoStepsCount` value is set to 5.
 
 This code allows reverting task edits (e.g., changing a task’s duration) or deletions, with up to 5 actions stored.
 
-## Programmatic undo/redo in Gantt Chart
+## Programmatic undo/redo in Angular Gantt Chart
 
 Programmatic control over undo redo is achieved using methods like [undo](https://ej2.syncfusion.com/angular/documentation/api/gantt#undo) to revert actions, [redo](https://ej2.syncfusion.com/angular/documentation/api/gantt#redo) to reapply them.
 

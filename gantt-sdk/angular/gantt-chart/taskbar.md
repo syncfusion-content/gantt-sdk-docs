@@ -2,7 +2,7 @@
 layout: post
 title: Taskbar Customization in Angular Gantt Chart | Syncfusion
 description: Learn how to customize taskbars with height, templates, tooltips, drag-resize editing, and multi-taskbar support.
-keywords: angular gantt taskbar, taskbar customization, taskbar height, taskbar template, syncfusion gantt
+keywords: Angular Gantt Chart taskbar, taskbar customization, taskbar height, taskbar template, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/taskbar
 platform: gantt-sdk
 control: Taskbar - Gantt Chart
@@ -415,7 +415,7 @@ You can disable the taskbar tooltip using the [beforeTooltipRender](https://ej2.
 
 ## Customize tooltip templates
 
-You can customize the following tooltip types in the Gantt chart using the [tooltipSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/tooltipSettings) configuration:
+You can customize the following tooltip types in the Angular Gantt Chart using the [tooltipSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/tooltipSettings) configuration:
 
 ### Taskbar tooltip
 

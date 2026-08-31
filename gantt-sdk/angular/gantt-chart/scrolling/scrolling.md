@@ -2,7 +2,7 @@
 layout: post
 title: Scrolling in Angular Gantt Chart | Viewport | Syncfusion
 description: Learn how to enable smooth scrolling in Syncfusion Angular Gantt Chart across rows, columns, and timeline.
-keywords: angular gantt scrolling, scroll, vertical scroll, horizontal scroll, virtual scroll, syncfusion gantt
+keywords: Angular Gantt Chart scrolling, scroll, vertical scroll, horizontal scroll, virtual scroll, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/scrolling/scrolling
 platform: gantt-sdk
 control: Scrolling - Gantt Chart
@@ -42,7 +42,7 @@ For precise layout control, set fixed dimensions using pixel values for both [wi
 
 ## Configure responsive scrolling
 
-You can make the Gantt Chart component responsive by setting its [width](https://ej2.syncfusion.com/angular/documentation/api/gantt#width) and [height](https://ej2.syncfusion.com/angular/documentation/api/gantt#height) to **100%**, allowing it to fully occupy the parent container. When height is set to **100%**, the parent element must have a defined `height` to support proper layout rendering. The Gantt will automatically adjust when the container is resized.
+You can make the Angular Gantt Chart component responsive by setting its [width](https://ej2.syncfusion.com/angular/documentation/api/gantt#width) and [height](https://ej2.syncfusion.com/angular/documentation/api/gantt#height) to **100%**, allowing it to fully occupy the parent container. When height is set to **100%**, the parent element must have a defined `height` to support proper layout rendering. The Gantt will automatically adjust when the container is resized.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -78,9 +78,9 @@ To scroll directly to a specific task within the timeline, use the [scrollToTask
   
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/scrolling-select" %}
 
-## Synchronize horizontal scroll between Gantt charts
+## Synchronize horizontal scroll between Angular Gantt Charts
 
-To synchronize horizontal scrolling across multiple Gantt Chart components, handle the [actionComplete](https://ej2.syncfusion.com/angular/documentation/gantt/events#actioncomplete) event with the **HorizontalScroll** action. This captures the scroll position of the first Gantt chart and applies it to the second Gantt using the `scrollLeft` property. This approach ensures aligned timeline navigation, which is especially useful for comparing related project data side-by-side, such as parallel schedules.
+To synchronize horizontal scrolling across multiple Angular Gantt Chart components, handle the [actionComplete](https://ej2.syncfusion.com/angular/documentation/gantt/events#actioncomplete) event with the **HorizontalScroll** action. This captures the scroll position of the first Angular Gantt Chart and applies it to the second Gantt using the `scrollLeft` property. This approach ensures aligned timeline navigation, which is especially useful for comparing related project data side-by-side, such as parallel schedules.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

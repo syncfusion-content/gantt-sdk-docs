@@ -14,7 +14,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) is a UI component designed to visualize and manage project schedules using a timeline view. It supports hierarchical task structures, automatic scheduling, and rich interactive features.
 
-This guide demonstrates how to create an Angular application, configure task data, and render a basic Gantt Chart.
+This guide demonstrates how to create an Angular application, configure task data, and render a basic Angular Gantt Chart.
 
 {% tabcontents %}
 
@@ -49,7 +49,7 @@ sf new syncfusion-angular-app --framework angular --template gantt
 {% endhighlight %}
 {% endtabs %}
 
-In this mode, the project configuration is passed directly in the command. The above command creates a Angular application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt component.
+In this mode, the project configuration is passed directly in the command. The above command creates a Angular application configured with the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Gantt Chart component.
 
 ### Interactive mode
 
@@ -154,7 +154,7 @@ cd syncfusion-angular-app
 
 > This guide uses Angular 21+ with standalone components. For compatibility with other Angular versions, see the [Angular version support matrix](https://ej2.syncfusion.com/angular/documentation/system-requirement#angular-version-compatibility).
 
-Install the Gantt Chart package using the Angular CLI command:
+Install the Angular Gantt Chart package using the Angular CLI command:
 
 ```bash
 ng add @syncfusion/ej2-angular-gantt
@@ -163,12 +163,12 @@ ng add @syncfusion/ej2-angular-gantt
 This command performs the following automatically:
 
 - Installs the `@syncfusion/ej2-angular-gantt` package and dependencies
-- Imports the Gantt Chart module into your application
+- Imports the Angular Gantt Chart module into your application
 - Registers default theme styles in `angular.json`
 
 ## Add theme styles
 
-The Gantt Chart component requires specific CSS files for proper rendering. Syncfusion provides multiple themes for the Gantt Chart component. For a complete list of available themes, refer to the [theme packages](https://ej2.syncfusion.com/angular/documentation/appearance/overview#theme-packages).
+The Angular Gantt Chart component requires specific CSS files for proper rendering. Syncfusion provides multiple themes for the Angular Gantt Chart component. For a complete list of available themes, refer to the [theme packages](https://ej2.syncfusion.com/angular/documentation/appearance/overview#theme-packages).
 
 To apply the [Tailwind 3](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-theme) theme, install the corresponding theme package by using the following command:
 
@@ -225,7 +225,7 @@ public taskSettings = {
 
 ## Render the Angular Gantt Chart Component
 
-Update the component file to render the Gantt Chart using the sample data and task settings defined earlier.
+Update the component file to render the Angular Gantt Chart using the sample data and task settings defined earlier.
 
 ### For Angular 20+ (standalone components)
 
@@ -263,10 +263,10 @@ export class App {
 ```
 
 **Key Properties**:
-- `imports: [GanttModule]` — Imports the Gantt Chart module for use in this component
+- `imports: [GanttModule]` — Imports the Angular Gantt Chart module for use in this component
 - `standalone: true` — Indicates this is a standalone component (Angular 14+)
 - `template` — Defines the component's HTML inline; `[dataSource]="data"` binds the task data and `[taskFields]="taskSettings"` maps the field names
-- `encapsulation: ViewEncapsulation.None` — Disables view encapsulation to allow global styles to apply to the Gantt Chart
+- `encapsulation: ViewEncapsulation.None` — Disables view encapsulation to allow global styles to apply to the Angular Gantt Chart
 
 ### For Angular 19 and Earlier (module-based)
 
@@ -348,11 +348,11 @@ You can preview the following sample by clicking the **Preview Sample** button.
 
 ## Error handling
 
-Proper error handling helps identify and resolve issues during development. The Gantt Chart provides events to capture validation and configuration errors.
+Proper error handling helps identify and resolve issues during development. The Angular Gantt Chart provides events to capture validation and configuration errors.
 
 ### Common error scenarios
 
-- **Missing taskFields mapping** — If `taskFields` is not properly configured, the Gantt Chart cannot map data fields to task properties. Ensure all required fields (`id`, `name`, `startDate`) are mapped.
+- **Missing taskFields mapping** — If `taskFields` is not properly configured, the Angular Gantt Chart cannot map data fields to task properties. Ensure all required fields (`id`, `name`, `startDate`) are mapped.
 - **Invalid date format** — Task dates must be valid JavaScript Date objects. Invalid dates prevent proper rendering.
 - **Missing dataSource** — Ensure `dataSource` is bound to the component with task data.
 - **Unsupported field types** — The `id` field must be numeric or string; Duration must be numeric.
