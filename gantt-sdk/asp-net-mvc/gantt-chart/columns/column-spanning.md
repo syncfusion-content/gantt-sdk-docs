@@ -16,19 +16,6 @@ The gantt has option to span the adjacent cells. You need to define the `colSpan
 
 In the following demo, **Work 1** cells have been spanned.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/colSpan/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="ColSpan.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/colSpan/colSpan.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/colSpan/razor %}
@@ -37,6 +24,5 @@ In the following demo, **Work 1** cells have been spanned.
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/colSpan/colSpan.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-![Alt text](images/colspan.png)
+![Alt text](../images/colspan.png)

@@ -32,19 +32,6 @@ The default items are listed in the following table.
 | `DeleteDependency` | Deletes the current dependency task link.         |
 | `Convert`          | Converts current task to milestone or vice-versa. |
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/contextmenu/default/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Contextmenu.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/contextmenu/default/contextmenu.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/contextmenu/default/razor %}
@@ -53,9 +40,8 @@ The default items are listed in the following table.
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/contextmenu/default/contextmenu.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-![Alt text](images/contextmenu.PNG)
+![Alt text](./images/contextmenu.PNG)
 
 ## Custom context menu items
 
@@ -65,19 +51,6 @@ To create custom context menu items for header area, define the target property 
 
 The following sample shows context menu item for parent rows to expand or collapse child rows in the content area and a context menu item to hide columns in the header area.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/contextmenu/custom/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Customcontextmenu.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/contextmenu/custom/customcontextmenu.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/contextmenu/custom/razor %}
@@ -86,9 +59,8 @@ The following sample shows context menu item for parent rows to expand or collap
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/contextmenu/custom/customcontextmenu.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-![Alt text](images/customContextMenu.PNG)
+![Alt text](./images/customContextMenu.PNG)
 
 N> You can show an specific item in context menu for header/content area in the Gantt control by defining the `target` property.
 
