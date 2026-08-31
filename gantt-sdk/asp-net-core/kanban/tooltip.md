@@ -30,4 +30,4 @@ You can customize the tooltip content with any HTML or CSS element and styling u
 {% endtabs %}
 Output be like the below.
 
-![kanban](./images/tooltip.PNG)
+![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/tooltip.PNG)

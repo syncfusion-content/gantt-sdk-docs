@@ -47,7 +47,7 @@ The dialog displays with the following fields which mapped to dialog fields by d
 
 Output be like the below.
 
-![kanban](./images/dialog-default.PNG)
+![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/dialog-default.PNG)
 
 ## Custom Fields
 
@@ -75,7 +75,7 @@ N> If `type` is not defined in the fields, then it renders as the HTML input ele
 
 Output be like the below.
 
-![kanban](./images/custom-fields.PNG)
+![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/custom-fields.PNG)
 
 ### Custom Fields label
 
@@ -92,7 +92,7 @@ By default, the fields `key` mapping value is considered as a `label` and you ca
 
 Output be like the below.
 
-![kanban](./images/custom-fields-label.PNG)
+![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/custom-fields-label.PNG)
 
 ### Fields Validation
 
@@ -122,7 +122,7 @@ Using the dialog template, you can render your own dialog by defining the `templ
 
 Output be like the below.
 
-![kanban](./images/dialog-template.PNG)
+![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/dialog-template.PNG)
 
 ## Prevent Dialog
 

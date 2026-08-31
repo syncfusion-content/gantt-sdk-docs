@@ -31,7 +31,7 @@ N> The [`keyField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 
 Output be like the below.
 
-![kanban](./images/singel-key.PNG)
+![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/singel-key.PNG)
 
 ## Multi-key mapping
 
@@ -48,7 +48,7 @@ Kanban board allows to render a single column by mapping multiple keys using [`k
 
 Output be like the below.
 
-![kanban](./images/multi-key.PNG)
+![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/multi-key.PNG)
 
 ## Header text
 
@@ -69,7 +69,7 @@ You can customize the column header with any HTML or CSS element using the `temp
 
 Output be like the below.
 
-![kanban](./images/header-template.PNG)
+![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/header-template.PNG)
 
 ## Toggle columns
 
@@ -88,7 +88,7 @@ N> By default, collapsed column width is set to `50px`.
 
 Output be like the below.
 
-![kanban](./images/toggle-columns.PNG)
+![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/toggle-columns.PNG)
 
 ### Initially collapsed column
 
@@ -109,7 +109,7 @@ In the following example, the To Do column is collapsed on initialization of Kan
 
 Output be like the below.
 
-![kanban](./images/initially-collapsed.PNG)
+![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/initially-collapsed.PNG)
 
 ## Drag and Drop
  
@@ -143,4 +143,4 @@ In the following code, the kanban columns 'InProgress, Review' are grouped under
 
 Output be like the below.
 
-![kanban](./images/stacked-header.PNG)
+![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/stacked-header.PNG)

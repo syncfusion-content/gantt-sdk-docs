@@ -33,7 +33,7 @@ When height and width of the Kanban are set to `auto`, it will try as hard as po
 
 Output be like the below.
 
-![kanban](./images/auto.PNG)
+![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/auto.PNG)
 
 ## Height and width in pixel
 
@@ -50,7 +50,7 @@ The Kanban height and width will be rendered exactly as per the given pixel valu
 
 Output be like the below.
 
-![kanban](./images/pixel.PNG)
+![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/pixel.PNG)
 
 ## Height and width in percentage
 
@@ -67,4 +67,4 @@ When height and width of the Kanban are given in percentage, it will make the Ka
 
 Output be like the below.
 
-![kanban](./images/percentage.PNG)
+![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/percentage.PNG)

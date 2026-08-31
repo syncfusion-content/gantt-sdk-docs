@@ -169,13 +169,13 @@ dotnet run
 
 {% endtabcontents %}
 
-![ASP.NET Core Kanban Control](images/default.webp)
+![ASP.NET Core Kanban Control](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/default.webp)
 
 ## Populating cards
 
 To populate the empty Kanban with cards, define the list or remote data using the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_DataSource) property. To define [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_DataSource), the mandatory fields in the list should be relevant to [`keyField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_KeyField). In the following example, you can see the cards defined with default fields such as ID, Summary, and Status.
 
-![kanban](./images/populating-cards.webp)
+![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/populating-cards.webp)
 
 ## Enable swimlane
 
@@ -217,7 +217,7 @@ public class KanbanDataModels
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Kanban with Swimlane](./images/enable-swimlane.webp)
+![ASP.NET Core Kanban with Swimlane](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/enable-swimlane.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Kanban/ASP.NET%20Core%20Tag%20Helper%20Examples).
 

@@ -51,7 +51,7 @@ The following example demonstrates the Kanban in `Deutsch` culture.
 {% endtabs %}
 Output be like the below.
 
-![kanban](./images/localization.PNG)
+![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/localization.PNG)
 
 ## Right to left (RTL)
 
@@ -68,4 +68,4 @@ The Kanban provides an option to switch its text direction and layout from right
 
 Output be like the below.
 
-![kanban](./images/rtl.PNG)
+![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/rtl.PNG)

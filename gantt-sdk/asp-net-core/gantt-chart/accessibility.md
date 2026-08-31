@@ -132,4 +132,4 @@ The accessibility compliance of the Gantt component is shown in the following sa
 
 ## See also
 
-* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core components](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core components](https://ej2.syncfusion.com/aspnetcore/documentation/common/accessibility)
