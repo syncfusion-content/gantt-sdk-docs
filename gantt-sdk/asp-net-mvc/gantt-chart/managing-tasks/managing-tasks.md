@@ -16,19 +16,6 @@ The Gantt component has options to dynamically insert, delete, and update tasks 
 
 The following code example shows you how to enable the cell editing in Gantt control.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/enableCellEditing/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="EnableCellEditing.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/enableCellEditing/enableCellEditing.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/enableCellEditing/razor %}
@@ -37,7 +24,6 @@ The following code example shows you how to enable the cell editing in Gantt con
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/enableCellEditing/enableCellEditing.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Cell edit type and its params
 
@@ -67,19 +53,6 @@ The following table describes cell edit type component and their corresponding e
 | `datepickeredit`     | [`DatePicker`](https://ej2.syncfusion.com/aspnetmvc/documentation/datepicker/getting-started)           | params: { format:'dd.MM.yyyy' }   |
 | `datetimepickeredit` | [`DateTimePicker`](https://ej2.syncfusion.com/aspnetmvc/documentation/datetimepicker/getting-started)   | params: { value: new Date() }     |
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/editParams/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="EditParams.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/editParams/editParams.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/editParams/razor %}
@@ -88,9 +61,8 @@ The following table describes cell edit type component and their corresponding e
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/editParams/editParams.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-![Alt text](images/editParams.png)
+![Alt text](../images/editParams.png)
 
 ## Cell edit template
 
@@ -104,19 +76,6 @@ The cell edit template is used to create a custom component for a particular col
 
 - `destroy` - It is used to destroy the component.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/editTemplate/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="EditTemplate.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/editTemplate/editTemplate.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/editTemplate/razor %}
@@ -125,28 +84,14 @@ The cell edit template is used to create a custom component for a particular col
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/editTemplate/editTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-![Alt text](images/editTemplate.png)
+![Alt text](../images/editTemplate.png)
 
 ## Disable editing for particular column
 
 You can disable editing for particular columns, by using the [`columns.allowEditing`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_AllowEditing) property.
 
 In the following demo, editing is disabled for the `TaskName` column.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/disableEditing/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="DisableEditing.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/disableEditing/disableEditing.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -156,24 +101,10 @@ In the following demo, editing is disabled for the `TaskName` column.
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/disableEditing/disableEditing.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Read-only gantt
 
 In Gantt, all create, update, delete operations can be disabled by setting `readOnly` property as `true`. The following sample demonstrates, render Gantt chart as read only.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/readOnly/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="ReadOnly.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/readOnly/readOnly.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -183,28 +114,14 @@ In Gantt, all create, update, delete operations can be disabled by setting `read
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/readOnly/readOnly.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-![Alt text](images/readOnly.PNG)
+![Alt text](../images/readOnly.PNG)
 
-![Alt text](images/readOnlyEdit.png)
+![Alt text](../images/readOnlyEdit.png)
 
 ## Open new task dialog with default values
 
 You can set default values when new task dialog opens using [actionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ActionBegin) event when `requestType` is `beforeOpenAddDialog`.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/task-dialog-default-value/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Task-dialog-default-value.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/task-dialog-default-value/task-dialog-default-value.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -214,9 +131,8 @@ You can set default values when new task dialog opens using [actionBegin](https:
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/task-dialog-default-value/task-dialog-default-value.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-![Gantt new task dialog with default values](images/task-dialog-with-default-values.png)
+![Gantt new task dialog with default values](../images/task-dialog-with-default-values.png)
 
 ## Customize control in add/edit dialog
 
@@ -230,19 +146,6 @@ The controls of the `fields` can be customized by using the [edit](https://help.
 
 In the below sample, `General` tab is customized using the `fields` property. The fields **TaskID**, **TaskName** and **newInput** are added in both `addDialogFields` and `editDialogFields` settings.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/task-dialog-default-value1/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Task-dialog-default-value.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/task-dialog-default-value1/task-dialog-default-value.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/task-dialog-default-value1/razor %}
@@ -251,7 +154,6 @@ In the below sample, `General` tab is customized using the `fields` property. Th
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/task-dialog-default-value1/task-dialog-default-value.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ### Customize dependency, segments and resources tab of dialog
 
@@ -264,19 +166,6 @@ In the example below:
 - The `resources` tab defines a new column `Segment Task` with specific properties such as `field`, [width](https://ej2.syncfusion.com/vue/documentation/api/grid/columnmodel#width) and [headerText](https://help.syncfusion.com/cr/aspnetmvc-js2#Syncfusion_EJ2_Grids_GridColumn_HeaderText).
   These customizations are applied to both `addDialogFields` and `editDialogFields` settings.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/task-dialog-default-value2/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Task-dialog-default-value.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/task-dialog-default-value2/task-dialog-default-value.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/task-dialog-default-value2/razor %}
@@ -285,26 +174,12 @@ In the example below:
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/task-dialog-default-value2/task-dialog-default-value.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ### Customize note dialog tab
 
 You can customize the note dialog tab using the [additionalParams](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttAddDialogField.html#Syncfusion_EJ2_Gantt_Gantt_AdditionalParams) property within the [addDialogFields](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttAddDialogFields.html) and [editDialogFields](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttEditDialogFields.html) settings respectively. This customization involves defining properties from the [RTE](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.html) module within the `additionalParams` property.
 
 In the following example, the `notes` tab is customized with the [inlinemode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorInlineMode.html) property enabled, allowing for in-place editing. Additionally, the `OnSelection` property is enabled, which opens the toolbar inline upon selecting text.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/task-dialog-default-value3/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Task-dialog-default-value.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/task-dialog-default-value3/task-dialog-default-value.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -314,7 +189,6 @@ In the following example, the `notes` tab is customized with the [inlinemode](ht
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/task-dialog-default-value3/task-dialog-default-value.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Troubleshoot: Editing works only when primary key column is defined
 
@@ -356,19 +230,6 @@ N> In mobile device, you cannot create dependency other than `FS` by taskbar edi
 
 The taskbar editing tooltip can be customized using the [`TooltipSettings.Editing`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttTooltipSettings.html#Syncfusion_EJ2_Gantt_GanttTooltipSettings_Editing) property. The following code example shows how to customize the taskbar editing tooltip in Gantt.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/tooltip/editingTemplate/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="EditingTemplate.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/tooltip/editingTemplate/editingTemplate.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/tooltip/editingTemplate/razor %}
@@ -377,7 +238,6 @@ The taskbar editing tooltip can be customized using the [`TooltipSettings.Editin
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/tooltip/editingTemplate/editingTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 The below screenshot shows the output of above code example.
 

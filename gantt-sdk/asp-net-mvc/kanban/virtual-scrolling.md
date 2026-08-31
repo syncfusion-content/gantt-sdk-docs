@@ -20,22 +20,6 @@ Virtual scrolling optimizes data rendering within each column when using large d
 
 When the Kanban column is scrolled, the virtual scrolling feature dynamically loads additional data on demand into view and unloads the data that is no longer visible.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/virtual-scrolling/default/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/virtual-scrolling/default/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/virtual-scrolling/default/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/virtual-scrolling/default/razor %}
@@ -47,7 +31,6 @@ When the Kanban column is scrolled, the virtual scrolling feature dynamically lo
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/virtual-scrolling/default/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ### Configure the remote data service
 
