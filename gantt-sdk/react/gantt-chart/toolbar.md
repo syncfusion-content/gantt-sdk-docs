@@ -14,9 +14,9 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component includes built-in toolbar support for executing common actions such as editing, searching, and navigating the timeline. The [toolbar](https://ej2.syncfusion.com/react/documentation/api/gantt#toolbar) property accepts the collection of built-in toolbar items and `ItemModel` objects for custom toolbar items.
 
-## Enable the Toolbar Service
+## Enable the toolbar service
 
-To enable toolbar functionality, inject the `Toolbar` service in the `providers` array of the GanttComponent:
+To enable toolbar functionality, inject the `Toolbar` service in the `providers` array of the Gantt Component:
 
 ```typescript
 import { GanttComponent, Inject, Toolbar, Edit } from '@syncfusion/ej2-react-gantt';
@@ -34,9 +34,9 @@ export default function App() {
 }
 ```
 
-Without injecting the Toolbar service, the toolbar will not render even if the `toolbar` property is configured.
+Without injecting the `Toolbar` service, the toolbar will not render even if the `toolbar` property is configured.
 
-## Built-in Toolbar Items
+## Built-in toolbar items
 
 Built-in toolbar items allow you to perform standard operations directly from the Gantt interface. These items can be added to the toolbar by specifying the [toolbar](https://ej2.syncfusion.com/react/documentation/api/gantt#toolbar) property as a collection of predefined items. Each toolbar item appears as a button with an associated icon and label for intuitive interaction.
 
