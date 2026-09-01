@@ -82,7 +82,7 @@ The above selections generate a React Vite application configured with the Syncf
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> CLI creates the project with a predefined template. After the project is generated, you can customize or replace the component code based on your application requirements.
 
-## Run the Project
+## Run the project
 
 Once the project is created, navigate to the project directory and run the following commands in your terminal.
 
