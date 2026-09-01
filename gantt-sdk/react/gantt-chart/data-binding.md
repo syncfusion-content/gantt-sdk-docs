@@ -100,7 +100,7 @@ Remote data binding assigns service endpoints as `DataManager` instances to the 
 
 DataManager supports various adaptors to connect with different backend services. Select the appropriate adaptor based on your server architecture:
 
-### REST API Adaptor
+### REST API adaptor
 
 Use the `UrlAdaptor` for RESTful endpoints:
 
@@ -111,7 +111,7 @@ const data = new DataManager({
 });
 ```
 
-### OData v4 Adaptor
+### OData v4 adaptor
 
 For OData v4 services:
 
@@ -122,7 +122,7 @@ const data = new DataManager({
 });
 ```
 
-### GraphQL Adaptor
+### GraphQL adaptor
 
 For GraphQL endpoints:
 
@@ -133,7 +133,7 @@ const data = new DataManager({
 });
 ```
 
-### Custom Adaptor
+### Custom adaptor
 
 For custom backend implementations, create a custom adaptor by extending the base `Adaptor` class.
 
