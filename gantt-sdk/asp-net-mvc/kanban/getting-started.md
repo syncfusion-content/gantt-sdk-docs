@@ -3,7 +3,7 @@ layout: post
 title: Getting Started in ASP.NET MVC Kanban | Syncfusion
 description: Learn how to start using Syncfusion ASP.NET MVC Kanban with step-by-step setup instructions and essential component features.
 keywords: asp-net-mvc kanban getting started, syncfusion kanban, install component, setup
-canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/kanban/getting-started
+canonical: https://www.syncfusion.com/gantt-sdk/aspnet-mvc-kanban-board
 platform: gantt-sdk
 control: Getting Started - Kanban
 documentation: ug
@@ -111,7 +111,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Populating cards
 
-To populate the empty Kanban with cards, define the list or remote data using the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_DataSource) property. To define `DataSource`, the mandatory fields in the list should be relevant to [KeyField](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_KeyField). In the following example, you can see the cards defined with default fields such as ID, Summary, and Status.
+To populate the empty Kanban with cards, define the list or remote data using the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_DataSource) property. To define [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_DataSource), the mandatory fields in the list should be relevant to [KeyField](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_KeyField). In the following example, you can see the cards defined with default fields such as ID, Summary, and Status.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

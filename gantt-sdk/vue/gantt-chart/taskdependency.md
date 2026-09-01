@@ -3,7 +3,7 @@ layout: post
 title: Task Dependency in Vue Gantt Chart | Syncfusion
 description: Learn how to establish task dependencies in Syncfusion Vue Gantt Chart to manage task relationships and project scheduling.
 keywords: vue gantt task dependency, task relationships, predecessors, successors, dependency types, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/task-dependency
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/taskdependency
 platform: gantt-sdk
 control: Task Dependency - Gantt Chart
 documentation: ug
