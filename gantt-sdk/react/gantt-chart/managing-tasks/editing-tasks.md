@@ -104,7 +104,7 @@ Enable dependency editing by mapping the [dependency](https://ej2.syncfusion.com
 
   ![Updating task dependency in dialog Dependency tab](../images/dialog.png)
 
-- **Cell editing**: Update the dependency field in the TreeGrid. Ensure valid dependency strings to avoid circular references, invalid task IDs, or malformed syntax. If an invalid dependency string is entered (e.g., circular reference or non-existent task), the edit may be rejected based on the configured [validationMode](https://ej2.syncfusion.com/react/documentation/api/gantt#actionbegin), displaying an error or showing a validation dialog.
+- **Cell editing**: Update the dependency field in the TreeGrid. Ensure valid dependency strings to avoid circular references, invalid task IDs, or malformed syntax.
 
   ![Updating task dependency via cell editing in TreeGrid](../images/cell-edit.png)
 
