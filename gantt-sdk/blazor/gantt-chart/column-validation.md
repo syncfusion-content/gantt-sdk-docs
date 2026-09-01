@@ -93,8 +93,6 @@ The Syncfusion® Blazor Gantt Chart component uses the Form Validator library to
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/BZhdXQMwJlqCcoRs?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-> **Note on DateTime validation:** When using `DateTime.Now` in validation range rules, the value is evaluated at component render time, not at validation time. If you need dynamic date validation that changes during runtime, consider using a custom validation method or evaluating the date within an event handler.
-
 > Validation is not supported for the [Resource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttResourceColumn.html) column.
 
 ## Data annotation
