@@ -18,19 +18,6 @@ Indent and Outdent of a task are used to update the level of the task in hierarc
 
 `Outdent` - Selected task can be outdented to the level of task from the hierarchical order. It can be performed by using in-built context menu or toolbar items. It can also be invoked by using the `outdent` method dynamically on any action like external button click. The following code example shows how to enable outdent option in the Gantt chart.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/indent-outdent/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Indentoutdent.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/indent-outdent/indentoutdent.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/indent-outdent/razor %}
@@ -39,4 +26,3 @@ Indent and Outdent of a task are used to update the level of the task in hierarc
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/indent-outdent/indentoutdent.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

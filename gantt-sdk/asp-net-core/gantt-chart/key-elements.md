@@ -28,14 +28,12 @@ At the top of Gantt chart, having a [toolbar](https://help.syncfusion.com/cr/asp
 
 ![Grid](./images/tabular.png)
 
-
 **Chart section**
 
 * The `X-axis` of the chart represents the timeline scale.
 * In the chart section, task details are displayed in a taskbar format over a time range along with their activities.
 
 ![Chart](./images/chart.png)
-
 
 **Elements in taskbar**
 

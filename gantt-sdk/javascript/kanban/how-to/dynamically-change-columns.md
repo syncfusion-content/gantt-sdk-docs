@@ -12,24 +12,9 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Modify Columns Programmatically in JavaScript Kanban
 
-You can dynamically change the Kanban columns by using the [`columns`](../../api/kanban#columns) property.
+You can dynamically change the Kanban columns by using the [`columns`](https://ej2.syncfusion.com/javascript/documentation/api/kanban#columns) property.
 
-In the below sample, you can dynamically change the [`allowToggle`](../../api/kanban/columnsModel#allowtoggle) property at the particular column when you click on the button. You can also change the initially created columns to the new Kanban columns by using the [`columns`](../../api/kanban#columns) property when you click on the button.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/kanban/dynamic-columns-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/kanban/dynamic-columns-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/kanban/dynamic-columns-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+In the below sample, you can dynamically change the [`allowToggle`](https://ej2.syncfusion.com/javascript/documentation/api/kanban/columnsModel#allowToggle) property at the particular column when you click on the button. You can also change the initially created columns to the new Kanban columns by using the [`columns`](https://ej2.syncfusion.com/javascript/documentation/api/kanban#columns) property when you click on the button.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -41,4 +26,4 @@ In the below sample, you can dynamically change the [`allowToggle`](../../api/ka
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/kanban/dynamic-columns-cs1" %}
-{% endif %}
+
