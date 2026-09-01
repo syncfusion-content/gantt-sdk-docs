@@ -12,19 +12,6 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Task Management Operations in React Gantt Chart
 
-## Prerequisites for CRUD operations
-
-To enable task management with add, edit, and delete operations, you must:
-
-1. **Configure EditSettings**: Set `editSettings={{ allowAdding: true, allowDeleting: true, allowEditing: true, allowTaskbarEditing: true }}`
-2. **Define a Primary Key**: Mark one column with `isPrimaryKey={true}` (typically the `id` column) for reliable CRUD operations
-3. **Inject Edit Service**: Include `Edit` in the providers array: `providers={[GanttChartComponent, Edit, Toolbar, etc.]}`
-4. **Configure TaskFields**: Ensure `taskFields` properly maps your data (id, name, startDate, duration, etc.)
-
-Without these configurations, editing features will not function.
-
----
-
 Managing tasks in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component enables dynamic project updates, such as inserting, deleting, or editing tasks and dependencies, by enabling [allowAdding](https://ej2.syncfusion.com/react/documentation/api/gantt/editSettings#allowadding), [allowDeleting](https://ej2.syncfusion.com/react/documentation/api/gantt/editSettings#allowdeleting), [allowEditing](https://ej2.syncfusion.com/react/documentation/api/gantt/editSettings#allowediting), and [allowTaskbarEditing](https://ej2.syncfusion.com/react/documentation/api/gantt/editSettings#allowtaskbarediting) with `EditService` injected. A primary key column, defined by [columns.isPrimaryKey](https://ej2.syncfusion.com/react/documentation/api/gantt/column#isprimarykey) set to **true** (e.g., on id), ensures reliable CRUD operations and task identification. Editing modes include cell editing for quick TreeGrid updates, dialog editing for comprehensive changes, taskbar dragging for duration or date adjustments, and connector line dragging for dependencies. Customize dialogs with templates or fields using [addDialogFields](https://ej2.syncfusion.com/react/documentation/api/gantt#adddialogfields) and [editDialogFields](https://ej2.syncfusion.com/react/documentation/api/gantt#editdialogfields). Methods like [addRecord](https://ej2.syncfusion.com/react/documentation/api/gantt#addrecord), [deleteRow](https://ej2.syncfusion.com/react/documentation/api/gantt#deleterow), and [updateRecordById](https://ej2.syncfusion.com/react/documentation/api/gantt#updaterecordbyid) support programmatic management. Ensure valid `taskFields` mappings and a primary key to enable editing seamlessly.
 
 The following code example demonstrates editing in the Gantt Chart component.
