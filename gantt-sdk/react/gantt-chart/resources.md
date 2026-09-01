@@ -12,31 +12,6 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Resources with Allocation and Task Mapping in React Gantt Chart
 
-## Enable resource module
-
-To use resource features, inject the `Resource` service in the `providers` array of the GanttComponent:
-
-```typescript
-import { GanttComponent, Inject, Resource, Edit } from '@syncfusion/ej2-react-gantt';
-
-export default function App() {
-  return (
-    <GanttComponent
-      dataSource={taskData}
-      taskFields={taskFields}
-      resources={projectResources}
-      resourceFields={{ id: 'resourceId', name: 'resourceName', unit: 'resourceUnit', group: 'resourceGroup' }}
-    >
-      <Inject services={[Resource, Edit]} />
-    </GanttComponent>
-  );
-}
-```
-
-Without injecting the Resource service, resource-related features will not be available.
-
----
-
 Resources in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component represent people, equipment, or materials allocated to tasks, visualized in taskbars and labels for clear utilization tracking. Assigned via the [resources](https://ej2.syncfusion.com/react/documentation/api/gantt#resources) property, resources map to tasks using [resourceFields](https://ej2.syncfusion.com/react/documentation/api/gantt#resourcefields) for ID, name, unit, and group. This enables display of resource names in columns or labels with [labelSettings](https://ej2.syncfusion.com/react/documentation/api/gantt/labelSettings), highlighting workloads and overallocation. The [queryTaskbarInfo](https://ej2.syncfusion.com/react/documentation/gantt/events#querytaskbarinfo) event customizes taskbar styles based on resources, such as color-coding. Resources include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may truncate names for multiple assignments. By default, resources allocate 100% unit if unspecified.
 
 ## Configure resource collection
@@ -158,7 +133,7 @@ The following example demonstrates custom resource styling:
 
 This configuration applies background colors to resource columns and taskbars, with the `queryTaskbarInfo` event modifying taskbar properties dynamically.
 
-## See Also
+## See also
 - [How to configure resource view?](https://ej2.syncfusion.com/react/documentation/gantt/resource-view)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/react/documentation/gantt/task-dependency)
 - [How to customize taskbars?](https://ej2.syncfusion.com/react/documentation/gantt/taskbar)
