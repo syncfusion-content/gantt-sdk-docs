@@ -248,7 +248,7 @@ The following example sets the connector line background color as red:
         
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs8" %}
 
-## Disable Predecessor Validation
+## Disable predecessor validation
 
 By default, Gantt task dates are validated based on predecessor values. To disable this validation, set the `enablePredecessorValidation` property to **false**.
 
