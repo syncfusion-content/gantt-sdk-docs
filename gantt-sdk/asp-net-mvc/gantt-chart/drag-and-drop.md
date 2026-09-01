@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drag and Drop in ASP.NET MVC Gantt Chart | Syncfusion
+title: Task Drag and Drop in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to implement drag and drop functionality in Syncfusion ASP.NET MVC Gantt Chart for intuitive task management and timeline manipulation.
 keywords: asp.net mvc gantt drag drop, task dragging, timeline manipulation, intuitive task management, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/drag-and-drop
