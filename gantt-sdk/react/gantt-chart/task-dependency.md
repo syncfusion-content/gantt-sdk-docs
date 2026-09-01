@@ -270,7 +270,7 @@ By default, Gantt task dates are validated based on predecessor values. To disab
 
 > When virtualization is enabled, dependency lines are shown only for tasks currently visible in the viewport. If two tasks are connected by a line, the line will appear only if at least one of the tasks is visible. If both tasks are expanded and the line spans across pages, it will still be displayed as long as one task is in view.
 
-## See Also
+## See also
 - [How to configure task constraints?](https://ej2.syncfusion.com/react/documentation/gantt/task-constraints)
 - [How to customize taskbars?](https://ej2.syncfusion.com/react/documentation/gantt/taskbar)
 - [How to enable critical path?](https://ej2.syncfusion.com/react/documentation/gantt/critical-path)
