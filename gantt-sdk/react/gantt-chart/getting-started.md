@@ -23,7 +23,7 @@ This guide walks you through installing and rendering your first [React Gantt Ch
 - [Node.js 24+](https://nodejs.org/en) (LTS recommended).
 - Syncfusion CLI.
 
-## Install the Syncfusion CLI
+## Install the Syncfusion CLI 
 
 Install the Syncfusion CLI globally using the following command:
 
@@ -155,16 +155,6 @@ Then add the following CSS reference to the **src/App.css** file:
 {% endhighlight %}
 {% endtabs %}
 
-## Import the Gantt Chart component
-
-Before rendering the Gantt Chart, import the `GanttComponent` from the Syncfusion package at the top of your file:
-
-```typescript
-import { GanttComponent, Inject, Edit, Toolbar, Selection, Resize, Sort, Filter, RowDD, ColumnMenu } from '@syncfusion/ej2-react-gantt';
-```
-
-> **Important**: If the theme CSS is not imported, the component will render without styling. Ensure you import the CSS theme as shown in the "Add theme styles" section above. Without the CSS import, the Gantt Chart will appear with basic browser styling only.
-
 ## Create sample data
 
 Define a simple task list with hierarchical relationships. Each task must have a `StartDate` and either a `Duration` or `EndDate` to render properly. If both are provided, `EndDate` takes precedence. The `Duration` value is in working days; `EndDate` is an absolute calendar date.
@@ -294,7 +284,7 @@ You can preview the following sample by clicking the **Preview Sample** button.
 - **Peer dependency errors:** Ensure React 18+ is installed (`npm install react@18 react-dom@18`).
 - **TypeScript errors on task data:** Define an interface for your task records, e.g. `interface ITask { TaskID: number; TaskName: string; StartDate: Date; Duration?: number; EndDate?: Date; Progress?: number; ParentID?: number; }`.
 
-## Next steps
+## Next Steps
 
 - **[Key Elements](./key-elements)** - Learn about UI components and interactions
 - **[Feature Modules](./module)** - Enable advanced features with module injection
