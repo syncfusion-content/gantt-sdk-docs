@@ -20,7 +20,7 @@ A Gantt chart consists of rows, columns, and taskbars. For example, binding 10 r
 
 ### Optimizing performance with virtualization
 
-To enhance your application's efficiency, especially when dealing with substantial datasets, it is recommended to using [virtualization](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/virtual-scroll). Implementing these techniques can significantly reduce the load on your application and elevate its overall performance.
+To enhance your application's efficiency, especially when dealing with substantial datasets, it is recommended to use [virtualization](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/virtual-scroll). Implementing these techniques can significantly reduce the load on your application and elevate its overall performance.
 
 1.  **Row Virtualization**: The Virtual scrolling feature in the Gantt component enables the efficient handling and display of large volumes of data without compromising performance. This approach optimizes the rendering process by loading only the visible rows within the Gantt viewport, rather than rendering the entire dataset simultaneously. For more information on implementing row virtualization, you can refer to the [documentation](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/virtual-scroll#row-virtualization) section dedicated to this feature. This can be visualized while performing the vertical scroll action.
 
@@ -44,7 +44,7 @@ To enhance the performance of the Syncfusion<sup style="font-size:70%">&reg;</su
 
 [CRG website link](https://crg.syncfusion.com)
 
-So to improve the performance of gantt during the initial rendering, suggested you to refer individual script and CSS.
+So to improve the performance of the gantt during the initial rendering, refer to the individual script and CSS.
 
 ## How to optimize server-side data operations with adaptors
 

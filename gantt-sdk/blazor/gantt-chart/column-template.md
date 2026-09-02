@@ -18,7 +18,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart componen
 
 ## Render button in a column
 
-You can render the Syncfusion<sup style="font-size:70%">&reg;</sup> [Button](https://blazor.syncfusion.com/documentation/button/getting-started-with-web-app) component inside a Gantt column by using the `Template` property.
+You can render the Syncfusion<sup style="font-size:70%">&reg;</sup> [Button](https://blazor.syncfusion.com/documentation/button/getting-started-with-web-app) component inside a Gantt column using the `Template` property.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}

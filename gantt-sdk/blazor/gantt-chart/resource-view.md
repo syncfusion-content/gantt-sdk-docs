@@ -791,7 +791,7 @@ In the Gantt Chart, you can enable dynamic resources assignments by setting the 
 
 In the resource tab of the [add/edit dialog box](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/editing-tasks#edit-tasks-via-dialog) within the Gantt chart, resources can be both added and removed.
 
-In the resource view, you can easily change task resources. If the dialog box's resource tab has multiple resources, you can add one resource, make individual changes, or remove assigned resources as needed, all done efficiently.
+In the resource view, you can change task resources. If the dialog box's resource tab has multiple resources, you can add one resource, make individual changes, or remove assigned resources as needed, all done efficiently.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -928,7 +928,7 @@ namespace BlazorGanttChart.Data
 
 ### Through method
 
-You can manipulate task resources programmatically by using the following methods:
+You can manipulate task resources programmatically using the following methods:
 
 * [AddResourceAssignmentAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AddResourceAssignmentAsync__1___0_): Adds a new resource assignment to a task.
 * [DeleteResourceAssignmentAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_DeleteResourceAssignmentAsync__1___0_): Removes a existing resource assignment from a task.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drag and Drop in ASP.NET MVC Gantt Chart | Syncfusion
+title: Enabling Drag and Drop in Rows in ASP.NET MVC Gantt Chart | Syncfusion
 description: Learn how to implement drag and drop functionality in Syncfusion ASP.NET MVC Gantt Chart for intuitive task management and timeline manipulation.
 keywords: asp.net mvc gantt drag drop, task dragging, timeline manipulation, intuitive task management, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/drag-and-drop
@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Enabling Drag and Drop for Rows in ASP.NET MVC Gantt Chart
 
-You can dynamically rearrange the rows in the Gantt control by using the `AllowRowDragAndDrop` property. Using this property, row drag and drop can be enabled or disabled in Gantt. Using this feature, rows can be dropped at above and below as a sibling or child to the existing rows.
+You can dynamically rearrange the rows in the Gantt control using the `AllowRowDragAndDrop` property. This property enables or disables row drag and drop in Gantt. Using this feature, rows can be dropped above and below as a sibling or child to the existing rows.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -27,7 +27,7 @@ You can dynamically rearrange the rows in the Gantt control by using the `AllowR
 
 ## Multiple row drag and drop
 
-Gantt also supports dragging multiple rows at a time and drop them on any rows above, below, or at child positions. In Gantt, you can enable the multiple drag and drop by setting the `SelectionSettings.Type` to `Multiple` and you should enable the `AllowRowDragAndDrop` property.
+Gantt also supports dragging multiple rows at a time and dropping them on any rows above, below, or at child positions. In Gantt, enable the multiple drag and drop by setting the `SelectionSettings.Type` to `Multiple` and the `AllowRowDragAndDrop` property to `true`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

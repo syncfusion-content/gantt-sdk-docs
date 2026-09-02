@@ -14,7 +14,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 The critical path in a project is indicated by a single task or a series of tasks. If a task in critical path is delayed, the entire project will be delayed. A task is considered to be critical if any delay to this task would affect the project end date.
 
-The critical path can be enabled in Gantt by using the built-in toolbar button or `enableCriticalPath` to true.
+The critical path can be enabled in Gantt using the built-in toolbar button or `enableCriticalPath` set to `true`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
