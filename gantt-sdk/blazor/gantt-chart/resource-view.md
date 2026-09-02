@@ -20,8 +20,6 @@ Enable resource view by setting [ViewType](https://help.syncfusion.com/cr/blazor
 
 The following example configures resource view:
 
-**Note on @nameof() usage:** The code examples use the `@nameof()` operator in Razor templates. This provides compile-time safety by ensuring property names are correct; if a property name is refactored, the code will fail to compile, alerting you to the necessary changes. This is preferable to using string literals like `"TaskId"` which would silently break if the property is renamed.
-
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
 
