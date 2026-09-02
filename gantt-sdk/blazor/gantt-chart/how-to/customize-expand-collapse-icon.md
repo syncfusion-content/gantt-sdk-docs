@@ -22,11 +22,11 @@ In the Gantt Chart component, you can customize the expand and collapse icons by
          Toolbar="@(new List<string>(){ "Add", "Edit", "Update", "Delete", "Cancel", "ExpandAll", "CollapseAll", "Indent", "Outdent"})"
          AllowSelection="true" TreeColumnIndex="1"
          ProjectStartDate="@ProjectStart" ProjectEndDate="@ProjectEnd">
-    <GanttTaskFields Id="TaskID" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
+    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
                      Dependency="Predecessor" ParentID="ParentID"></GanttTaskFields>
     <GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true" ShowDeleteConfirmDialog="true"></GanttEditSettings>
     <GanttColumns>
-        <GanttColumn Field="TaskID" Width="100"></GanttColumn>
+        <GanttColumn Field="TaskId" Width="100"></GanttColumn>
         <GanttColumn Field="TaskName" HeaderText="Job Name" Width="250" ClipMode="Syncfusion.Blazor.Grids.ClipMode.EllipsisWithTooltip"></GanttColumn>
         <GanttColumn Field="StartDate" HeaderText="Start Date"></GanttColumn>
         <GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
@@ -54,7 +54,7 @@ In the Gantt Chart component, you can customize the expand and collapse icons by
     {
         public class TaskData
         {
-            public int TaskID { get; set; }
+            public int TaskId { get; set; }
             public string TaskName { get; set; }
             public DateTime? StartDate { get; set; }
             public DateTime? EndDate { get; set; }

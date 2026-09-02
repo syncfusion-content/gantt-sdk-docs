@@ -291,7 +291,7 @@ In Hour mode, the top tier shows hours and the bottom tier minutes, perfect for 
 
 ## Customize week start day
 
-In the Gantt chart component, you can customize the week start day using the [GanttTimelineSettings.WeekStartDay](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTimelineSettings.html#Syncfusion_Blazor_Gantt_GanttTimelineSettings_WeekStartDay) property. By default, the `GanttTimelineSettings.WeekStartDay` is set to **0**, which specifies the **Sunday** as a start day of the week. But, you can customize the week start day by using the following code example.
+In the Gantt chart component, you can customize the week start day using the [GanttTimelineSettings.WeekStartDay](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTimelineSettings.html#Syncfusion_Blazor_Gantt_GanttTimelineSettings_WeekStartDay) property. By default, the `GanttTimelineSettings.WeekStartDay` is set to **0**, which specifies the **Sunday** as a start day of the week. Customize the week start day using the following code example.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -452,7 +452,7 @@ In the Gantt Chart component, you can enable or disable the mouse hover tooltip 
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/VtrdNxVrMmqJQQcC?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## Timeline Template
+## Timeline template
 
 In the Gantt component, you can customize timeline cells using the [GanttTooltipSettings.TimelineCellTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTooltipSettings-1.html#Syncfusion_Blazor_Gantt_GanttTooltipSettings_1_TimelineCellTemplate) property, allowing for the customization of HTML content within timeline cells. This feature enhances the visual appeal and enables personalized functionality.
 

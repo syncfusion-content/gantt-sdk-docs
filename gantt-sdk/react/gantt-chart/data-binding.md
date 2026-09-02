@@ -96,7 +96,48 @@ Remote data binding assigns service endpoints as `DataManager` instances to the 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/databinding-cs3" %}
 
-**Server Communication**: DataManager connects to various backend services including RESTful endpoints, OData services, and custom web APIs. Configure the appropriate URL and adaptor type based on the target server architecture and data format requirements.
+## Configuring datamanager for different service types
+
+DataManager supports various adaptors to connect with different backend services. Select the appropriate adaptor based on your server architecture:
+
+### REST API adaptor
+
+Use the `UrlAdaptor` for RESTful endpoints:
+
+```typescript
+const data = new DataManager({
+  url: 'https://api.example.com/gantt/tasks',
+  adaptor: new UrlAdaptor()
+});
+```
+
+### OData v4 adaptor
+
+For OData v4 services:
+
+```typescript
+const data = new DataManager({
+  url: 'https://api.example.com/odata/v4/tasks',
+  adaptor: new ODataV4Adaptor()
+});
+```
+
+### GraphQL adaptor
+
+For GraphQL endpoints:
+
+```typescript
+const data = new DataManager({
+  url: 'https://api.example.com/graphql',
+  adaptor: new GraphQLAdaptor()
+});
+```
+
+### Custom adaptor
+
+For custom backend implementations, create a custom adaptor by extending the base `Adaptor` class.
+
+**Server Communication**: DataManager connects to various backend services including RESTful endpoints, OData services, and custom web APIs. Configure the appropriate URL and adaptor type based on the target server architecture and data format requirements. Refer to the [Custom Adaptor](./connecting-to-adaptors/custom-adaptor) documentation for advanced implementation details.
 
 ### URL Adaptor implementation
 
@@ -643,7 +684,7 @@ Control parent task expand status in the Gantt chart by defining the [expandStat
 
 **State persistence**: ExpandStateMapping ensures parent tasks maintain their intended expanded or collapsed states across data operations, providing consistent user experience and preserving intended data visualization structures.
 
-## programmatically update datasource
+## Programmatically update datasource
 
 You can programmatically update the Gantt chart data source using the [updateDataSource](https://ej2.syncfusion.com/react/documentation/api/gantt/index-default#updatedatasource) method which takes two arguments where the first argument is the new `dataSource` and the second argument is an optional configuration object with `projectStartDate` and `projectEndDate` to define the project timeline.
 
