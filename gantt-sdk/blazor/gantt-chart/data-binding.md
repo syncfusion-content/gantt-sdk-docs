@@ -186,6 +186,10 @@ This approach enables the component to reconstruct hierarchical tree structures 
 
 To handle scenarios where the data model is not defined at compile time, the Gantt Chart can be bound to a list of **DynamicObject** using the [DataSource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_DataSource) property. This enables full support for data operations and editing without requiring a strongly typed model.
 
+**When to use DynamicObject vs. strongly typed models:**
+- **Use strongly typed models** (recommended) when your data structure is known at compile time. They provide better IntelliSense support, compile-time type checking, and superior performance.
+- **Use DynamicObject** only when working with truly dynamic or variable data structures that cannot be defined as a class at compile time, such as data from NoSQL databases or user-generated schemas.
+
 > The [GetDynamicMemberNames](https://learn.microsoft.com/en-us/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames?view=net-8.0) method of the `DynamicObject` class must be overridden to return the property names required for rendering, data operations, editing, and other related functionalities when using **DynamicObject** with the Gantt Chart.
 
 {% tabs %}
@@ -589,7 +593,7 @@ This interface is used to notify that a property value has changed. For example,
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/LZhRNwLXLXPnOpgb?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## Remote Data
+## Remote data
 
 The Syncfusion Blazor component enables remote data binding by connecting UI components to server-side data sources. This approach facilitates fetching, displaying, and manipulating data stored on remote servers.
 
@@ -1104,8 +1108,8 @@ To specify custom parameters in a data request, use the `addParams` method of th
 
 <SfGantt TValue="TaskData" Height="450px" Width="700px" Query=@GanttQuery>
     <SfDataManager Url="/api/Home" Adaptor="Adaptors.UrlAdaptor"></SfDataManager>
-    <GanttTaskFields Id="TaskID" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration"
-                     Progress="Progress" ParentID="ParentID">
+    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration"
+                     Progress="Progress" ParentID="ParentId">
     </GanttTaskFields>
     <GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true"></GanttEditSettings>
 </SfGantt>
@@ -1120,13 +1124,13 @@ To specify custom parameters in a data request, use the `addParams` method of th
 
     public class TaskData
     {
-        public int TaskID { get; set; }
+        public int TaskId { get; set; }
         public string? TaskName { get; set; }
         public DateTime? StartDate { get; set; }
         public DateTime? EndDate { get; set; }
         public string? Duration { get; set; }
         public int Progress { get; set; }
-        public int? ParentID { get; set; }
+        public int? ParentId { get; set; }
     }
 }
 
@@ -1143,41 +1147,41 @@ namespace URLAdaptor.Models
         // Default constructor.
         public TaskDetails() { }
         // Parameterized constructor to initialize order details.
-        public TaskDetails(int TaskID, string TaskName, DateTime StartDate, DateTime EndDate, string Duration, int Progress, int? ParentID)
+        public TaskDetails(int TaskId, string TaskName, DateTime StartDate, DateTime EndDate, string Duration, int Progress, int? ParentId)
         {
-            this.TaskID = TaskID;
+            this.TaskId = TaskId;
             this.TaskName = TaskName;
             this.StartDate = StartDate;
             this.EndDate = EndDate;
             this.Duration = Duration;
             this.Progress = Progress;
-            this.ParentID = ParentID;
+            this.ParentId = ParentId;
         }       
  
         public static List<TaskDetails> GetAllRecords()
         {
             List<TaskDetails> Tasks = new List<TaskDetails>()
             {
-                new TaskDetails() { TaskID = 1, TaskName = "Project initiation", StartDate = new DateTime(2026, 01, 05), EndDate = new DateTime(2026, 01, 07), },
-                new TaskDetails() { TaskID = 2, TaskName = "Identify Site location", StartDate = new DateTime(2026, 01, 04), Duration = "0", Progress = 30, ParentID = 1, },
-                new TaskDetails() { TaskID = 3, TaskName = "Perform soil test", StartDate = new DateTime(2026, 01, 04), Duration = "4", Progress = 40, ParentID = 1, },
-                new TaskDetails() { TaskID = 4, TaskName = "Soil test approval", StartDate = new DateTime(2026, 01, 04), Duration = "0", Progress = 30, ParentID = 1, },
-                new TaskDetails() { TaskID = 5, TaskName = "Project estimation", StartDate = new DateTime(2026, 01, 04), EndDate = new DateTime(2026, 01, 10), },
-                new TaskDetails() { TaskID = 6, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2026, 01, 06), Duration = "3", Progress = 30, ParentID = 5, },
-                new TaskDetails() { TaskID = 7, TaskName = "List materials", StartDate = new DateTime(2026, 01, 06), Duration = "3", Progress = 40, ParentID = 5, },
-                new TaskDetails() { TaskID = 8, TaskName = "Estimation approval", StartDate = new DateTime(2026, 01, 06), Duration = "0", Progress = 30, ParentID = 5, }
+                new TaskDetails() { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2026, 01, 05), EndDate = new DateTime(2026, 01, 07), },
+                new TaskDetails() { TaskId = 2, TaskName = "Identify Site location", StartDate = new DateTime(2026, 01, 04), Duration = "0", Progress = 30, ParentId = 1, },
+                new TaskDetails() { TaskId = 3, TaskName = "Perform soil test", StartDate = new DateTime(2026, 01, 04), Duration = "4", Progress = 40, ParentId = 1, },
+                new TaskDetails() { TaskId = 4, TaskName = "Soil test approval", StartDate = new DateTime(2026, 01, 04), Duration = "0", Progress = 30, ParentId = 1, },
+                new TaskDetails() { TaskId = 5, TaskName = "Project estimation", StartDate = new DateTime(2026, 01, 04), EndDate = new DateTime(2026, 01, 10), },
+                new TaskDetails() { TaskId = 6, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2026, 01, 06), Duration = "3", Progress = 30, ParentId = 5, },
+                new TaskDetails() { TaskId = 7, TaskName = "List materials", StartDate = new DateTime(2026, 01, 06), Duration = "3", Progress = 40, ParentId = 5, },
+                new TaskDetails() { TaskId = 8, TaskName = "Estimation approval", StartDate = new DateTime(2026, 01, 06), Duration = "0", Progress = 30, ParentId = 5, }
             };
             return Tasks;
         }
  
         // Properties representing order details.
-        public int TaskID { get; set; }
+        public int TaskId { get; set; }
         public string TaskName { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime? EndDate { get; set; }
         public string Duration { get; set; }
         public int Progress { get; set; }
-        public int? ParentID { get; set; }        
+        public int? ParentId { get; set; }        
     }
 }
 
@@ -1222,7 +1226,7 @@ namespace URLAdaptor.Controllers
                 var param = DataManagerRequest.Params["TaskID"];
                 if (int.TryParse(param?.ToString(), out int taskId))
                 {
-                    data = data.Where(d => d.TaskID == taskId);
+                    data = data.Where(d => d.TaskId == taskId);
                 }
             }
  

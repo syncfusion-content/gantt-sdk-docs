@@ -147,7 +147,7 @@ namespace GanttEFUrlAdaptor.Data
     [Table("TaskData")]
     public class TaskDataModel
     {
-        public int TaskID { get; set; }
+        public int TaskId { get; set; }
         public string TaskName { get; set; }
         public DateTime? StartDate { get; set; }
         public DateTime? EndDate { get; set; }
@@ -398,7 +398,7 @@ The `Home.razor` component will display the task data in a Gantt Chart with sear
     </SfDataManager>    
     <GanttEditSettings AllowAdding="true" AllowEditing="true" AllowTaskbarEditing="true" AllowDeleting="true" />
     <GanttColumns>
-        <GanttColumn Field="TaskID" HeaderText="Task ID" Width="90"></GanttColumn>
+        <GanttColumn Field="TaskId" HeaderText="Task ID" Width="90"></GanttColumn>
         <GanttColumn Field="TaskName" HeaderText="Task Name" Width="220"></GanttColumn>
         <GanttColumn Field="StartDate" HeaderText="Start Date" Width="140" Format="d"></GanttColumn>
         <GanttColumn Field="EndDate" HeaderText="End Date" Width="140" Format="d"></GanttColumn>
@@ -421,7 +421,7 @@ The `Home.razor` component will display the task data in a Gantt Chart with sear
 
 ### Step 3: Implement the Endpoints for UrlAdaptor
 
-The UrlAdaptor communicates with REST API endpoints for Gantt Chart operations rather than executing logic in the component. The Gantt Chart sends requests to endpoints defined in a controller. Below is the controller structure with the same decorators and signatures as in the project, with placeholder comments to add logic.
+The UrlAdaptor communicates with REST API endpoints for Gantt Chart operations rather than executing logic in the component. The Gantt Chart sends requests to endpoints defined in a controller. Below is the controller structure showing the required method signatures and decorators. Each method contains placeholder implementations that you must complete with your own database logic.
 
 Open the file named **Controllers/GanttController.cs** and use the following structure:
 

@@ -135,12 +135,22 @@ After the packages are installed, open the **~/_Imports.razor** file and import 
 
 ### Register the Blazor service
 
-Open the **Program.cs** file in Blazor WebAssembly App and register the Blazor service and include the required namespace reference `using Syncfusion.Blazor;` at the top.
+Open the **Program.cs** file in Blazor WebAssembly App and register the Syncfusion Blazor service. Include the required namespace reference `using Syncfusion.Blazor;` at the top, then call `AddSyncfusionBlazor()` in the service configuration section.
 
 {% tabs %}
 {% highlight C# tabtitle="Program.cs" %}
 
+using Syncfusion.Blazor;
+
+var builder = WebAssemblyHostBuilder.CreateDefault(args);
+builder
+    .RootComponents.Add<App>("#app")
+    .RootComponents.Add<HeadOutlet>("head::after");
+
+builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 builder.Services.AddSyncfusionBlazor();
+
+await builder.Build().RunAsync();
 
 {% endhighlight %}
 {% endtabs %}

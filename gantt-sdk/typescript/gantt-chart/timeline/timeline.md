@@ -12,7 +12,9 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Configuring Timeline Settings in TypeScript Gantt Chart
 
-The timeline in the TypeScript Gantt Chart control represents project durations as cells with defined units and formats, supporting in-built view modes like Hour-Minute, Day-Hour, Week-Day, Month-Week, Year-Month, and Minutes for flexible visualization. Configure modes using the [timelineViewMode](https://ej2.syncfusion.com/documentation/api/gantt/timelineViewMode) property, with top and bottom tiers customized via [topTier.unit](https://ej2.syncfusion.com/documentation/api/gantt/timelineTierSettings#unit) and [bottomTier.unit](https://ej2.syncfusion.com/documentation/api/gantt/timelineTierSettings#unit) in [timelineSettings](https://ej2.syncfusion.com/documentation/api/gantt/timelineSettings). This enables detailed views, such as weekly overviews with daily breakdowns for projects, ensuring accurate timeline representation.
+The timeline in the TypeScript Gantt Chart control represents project durations as cells with defined units and formats. It supports in-built view modes including Hour-Minute, Day-Hour, Week-Day, Month-Week, Year-Month, and Minutes for flexible visualization.
+
+Configure timeline modes using the [timelineViewMode](https://ej2.syncfusion.com/documentation/api/gantt/timelineViewMode) property. Customize the top and bottom tiers via [topTier.unit](https://ej2.syncfusion.com/documentation/api/gantt/timelineTierSettings#unit) and [bottomTier.unit](https://ej2.syncfusion.com/documentation/api/gantt/timelineTierSettings#unit) in [timelineSettings](https://ej2.syncfusion.com/documentation/api/gantt/timelineSettings). This enables detailed views, such as weekly overviews with daily breakdowns for projects, ensuring accurate timeline representation.
 
 ## Configure timeline view modes
 
@@ -137,7 +139,7 @@ When `viewStartDate` and `viewEndDate` are set to concrete Date values, the time
   - If `projectEndDate` is defined, the timeline ends at `projectEndDate`.
   - If `projectEndDate` is not defined, the maximum task end date is used. If this end date leaves visible white-space in the timeline area, the end date is automatically extended to fill the chart width.
 
-> Note: The `ZoomToFit` feature uses `projectStartDate` and `projectEndDate` to fit the entire project within the available timeline viewport.
+> **Note:** The `ZoomToFit` feature uses `projectStartDate` and `projectEndDate` to fit the entire project within the available timeline viewport.
 
 ## Customize week start day
 
@@ -222,7 +224,7 @@ Highlight weekends by setting [showWeekend](https://ej2.syncfusion.com/documenta
 - Non-working hours cannot be excluded when `showWeekend` is set to **false**.
 - Holidays are not excluded from the timeline if `showWeekend` is set to **false**.
 
-## Navigating Gantt Chart Timeline
+## Navigating Gantt Chart timeline
 
 You can adjust the Gantt Chart view by shifting the timeline forward or backward by one unit using the following methods:
 

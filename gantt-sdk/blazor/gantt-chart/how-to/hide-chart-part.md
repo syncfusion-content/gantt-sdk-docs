@@ -19,7 +19,7 @@ In the Gantt Chart component, you can hide chart part and display Tree Grid part
 
 @using Syncfusion.Blazor.Gantt
     <SfGantt DataSource="@TaskCollection" Height="230px" Width="700px">
-        <GanttTaskFields Id="TaskID" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentID">
+        <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentID">
         </GanttTaskFields>
         <GanttSplitterSettings View="SplitterView.Grid"></GanttSplitterSettings>
     </SfGantt>
@@ -33,7 +33,7 @@ In the Gantt Chart component, you can hide chart part and display Tree Grid part
 
     public class TaskData
     {
-        public int TaskID { get; set; }
+        public int TaskId { get; set; }
         public string TaskName { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }

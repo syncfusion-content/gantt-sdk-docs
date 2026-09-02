@@ -54,8 +54,6 @@ You can set default values when new task dialog opens using [actionBegin](https:
 
 The [columns.editType](https://ej2.syncfusion.com/react/documentation/api/gantt/column#edittype) is used to define the edit type for any particular column. You can set the [columns.editType](https://ej2.syncfusion.com/react/documentation/api/gantt/column#edittype) based on data type of the column.
 
-Below is the combined content from the provided markdown sections in bullet points, as requested, ensuring clarity and conciseness while preserving the original information:
-
 - **Cell edit types and components**:
   - **numericedit**: Uses the [NumericTextBox](https://ej2.syncfusion.com/react/documentation/numerictextbox) component for editing integers, doubles, and decimals.
   - **defaultedit**: Uses the [TextBox](https://ej2.syncfusion.com/react/documentation/textbox) component for editing string data.
@@ -108,7 +106,7 @@ To restrict taskbar editing, set `args.cancel` to **true** in the [actionBegin](
         
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/celledit-cs8" %}
 
-## Cell Edit Template
+## Cell edit template
 
 The cell edit template is used to create a custom component for a particular column by invoking the following functions:
 
