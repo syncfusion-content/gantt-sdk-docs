@@ -50,15 +50,13 @@ You can set default values when new task dialog opens using [actionBegin](https:
 
 The [columns.editType](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#edittype) is used to define the edit type for any particular column. You can set the [columns.editType](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#edittype) based on data type of the column.
 
-Below is the combined content from the provided markdown sections in bullet points, as requested, ensuring clarity and conciseness while preserving the original information:
-
 - **Cell edit types and components**:
-  - **numericedit**: Uses the [NumericTextBox](https://helpej2.syncfusion.com/angular/documentation/numerictextbox) component for editing integers, doubles, and decimals.
-  - **defaultedit**: Uses the [TextBox](https://helpej2.syncfusion.com/angular/documentation/textbox) component for editing string data.
-  - **dropdownedit**: Uses the [DropDownList](https://helpej2.syncfusion.com/angular/documentation/drop-down-list) component to display all unique values for a field.
-  - **booleanedit**: Uses the [CheckBox](https://helpej2.syncfusion.com/angular/documentation/check-box) component for editing boolean data.
-  - **datepickeredit**: Uses the [DatePicker](https://helpej2.syncfusion.com/angular/documentation/datepicker) component for editing date data.
-  - **datetimepickeredit**: Uses the [DateTimePicker](https://helpej2.syncfusion.com/angular/documentation/datetimepicker) component for editing date-time data.
+  - **numericedit**: Uses the [NumericTextBox](https://ej2.syncfusion.com/angular/documentation/numerictextbox) component for editing integers, doubles, and decimals.
+  - **defaultedit**: Uses the [TextBox](https://ej2.syncfusion.com/angular/documentation/textbox) component for editing string data.
+  - **dropdownedit**: Uses the [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list) component to display all unique values for a field.
+  - **booleanedit**: Uses the [CheckBox](https://ej2.syncfusion.com/angular/documentation/check-box) component for editing boolean data.
+  - **datepickeredit**: Uses the [DatePicker](https://ej2.syncfusion.com/angular/documentation/datepicker) component for editing date data.
+  - **datetimepickeredit**: Uses the [DateTimePicker](https://ej2.syncfusion.com/angular/documentation/datetimepicker) component for editing date-time data.
 
 - **Customization**:
   - Customize editor component behavior using the [columns.edit.params](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#edit) property.
@@ -99,7 +97,7 @@ To restrict taskbar editing, set `args.cancel` to **true** in the [actionBegin](
 
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/managing-tasks/prevent-editing-cs1" %}
 
-## Cell Edit Template
+## Cell edit template
 
 The cell edit template is used to create a custom component for a particular column by invoking the following functions:
 
@@ -208,7 +206,7 @@ In the following example, the notes tab is customized with the [inlinemode](http
 
 ## Touch interaction
 
-The Gantt control editing actions can be achieved using the double tap and tap and drag actions on a element.
+The Gantt control editing actions can be achieved using the double tap and tap and drag actions on an element.
 
 The following table describes different types of editing modes available in Gantt.
 

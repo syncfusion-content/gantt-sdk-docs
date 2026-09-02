@@ -68,7 +68,7 @@ In Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt for React, column widt
 
 > To learn more about resizing, you can refer to the resizing section [here](https://ej2.syncfusion.com/react/documentation/gantt/columns/column-resizing)
 
-#### Supported types for column width
+### Supported types for column width
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt supports the following three types of column width:
 
@@ -486,7 +486,7 @@ For more information check on this [documentation](https://ej2.syncfusion.com/re
 
 ## Updating column definitions
 
-To update column definitions in React Gantt Chart component, modify the [columns](https://helpej2.syncfusion.com/react/documentation/api/gantt/column) property to adjust column appearance and behavior by changing attributes like [headerText](https://ej2.syncfusion.com/react/documentation/api/gantt/column#headertext), [width](https://ej2.syncfusion.com/react/documentation/api/gantt/column#width), or [visible](https://ej2.syncfusion.com/react/documentation/api/gantt/column#visible). After making the required updates, use the `refreshColumns` method from the `treeGrid` object to apply and reflect the changes in the Gantt chart.
+To update column definitions in React Gantt Chart component, modify the [columns](https://ej2.syncfusion.com/react/documentation/api/gantt/column) property to adjust column appearance and behavior by changing attributes like [headerText](https://ej2.syncfusion.com/react/documentation/api/gantt/column#headertext), [width](https://ej2.syncfusion.com/react/documentation/api/gantt/column#width), or [visible](https://ej2.syncfusion.com/react/documentation/api/gantt/column#visible). After making the required updates, use the `refreshColumns` method from the `treeGrid` object to apply and reflect the changes in the Gantt chart.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
@@ -504,7 +504,7 @@ To update column definitions in React Gantt Chart component, modify the [columns
 
 ## Adding/removing columns
 
-You can add or remove columns in the React Gantt by updating the [columns](https://helpej2.syncfusion.com/react/documentation/api/gantt/column) option in the Gantt instance. To add a column, **push** a new column object into the `columns` array. To remove a column, use **pop** to delete the last item or `splice` to remove a specific one from the array.
+You can add or remove columns in the React Gantt by updating the [columns](https://ej2.syncfusion.com/react/documentation/api/gantt/column) option in the Gantt instance. To add a column, **push** a new column object into the `columns` array. To remove a column, use **pop** to delete the last item or `splice` to remove a specific one from the array.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}

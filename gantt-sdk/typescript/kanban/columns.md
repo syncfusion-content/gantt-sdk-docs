@@ -20,8 +20,6 @@ Kanban columns are categorized by mapping the **key** from the datasource using 
 
 > The `keyField` property is mandatory to render the columns in the Kanban board.
 
-{% if page.publishingplatform == "typescript" %}
-
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt-sdk/typescript/kanban/single-key-cs1/index.ts %}
@@ -33,25 +31,9 @@ Kanban columns are categorized by mapping the **key** from the datasource using 
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/single-key-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/single-key-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/single-key-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/single-key-cs1" %}
-{% endif %}
-
 ## Multi-key mapping
 
 Kanban board allows to render a single column by mapping multiple keys using `keyField` property. In below sample, specified the multiple keys(Open, Validate) to a single column.
-
-{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -63,20 +45,6 @@ Kanban board allows to render a single column by mapping multiple keys using `ke
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/multiple-keys-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/multiple-keys-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/multiple-keys-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/multiple-keys-cs1" %}
-{% endif %}
 
 ## Header text
 
@@ -97,8 +65,6 @@ You can get the following columns data when using header template.
 - showItemCount
 - count
 
-{% if page.publishingplatform == "typescript" %}
-
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt-sdk/typescript/kanban/header-template-cs1/index.ts %}
@@ -110,27 +76,11 @@ You can get the following columns data when using header template.
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/header-template-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/header-template-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/header-template-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/header-template-cs1" %}
-{% endif %}
-
 ## Toggle columns
 
 Kanban allows to expand or collapse its columns using `allowToggle` inside the `columns` property. When enable the property, it will render the expand or collapse icon to the column header.
 
 > By default, collapsed column width is set to `50px`.
-
-{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -143,20 +93,6 @@ Kanban allows to expand or collapse its columns using `allowToggle` inside the `
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/toggle-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/toggle-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/toggle-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/toggle-cs1" %}
-{% endif %}
-
 ### Initially collapsed column
 
 By default, all columns are on expanded state when loading the Kanban board initially. But, you can render the columns with collapsed state using the `isExpanded` property.
@@ -164,8 +100,6 @@ By default, all columns are on expanded state when loading the Kanban board init
 > The `isExpanded` property only works when enabling the `allowToggle` property on particular column.
 
 In the following example, the backlog column is collapsed on initialization of Kanban board.
-
-{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -178,25 +112,9 @@ In the following example, the backlog column is collapsed on initialization of K
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/expanded-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/expanded-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/expanded-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/expanded-cs1" %}
-{% endif %}
-
 ## Drag and Drop
 
 The Kanban component allows dynamic column reordering through drag-and-drop interactions. To enable this, set the [`allowColumnDragAndDrop`](https://ej2.syncfusion.com/documentation/api/kanban#allowColumnDragAndDrop) property to true. Once enabled, users can rearrange columns by dragging a column header to a new position, with visual feedback highlighting potential drop locations.
-
-{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -209,20 +127,6 @@ The Kanban component allows dynamic column reordering through drag-and-drop inte
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/column-drag-and-drop-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/column-drag-and-drop-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/column-drag-and-drop-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/column-drag-and-drop-cs1" %}
-{% endif %}
-
 ## Stacked headers
 
 Stacked headers are the additional headers to column header that will group the similar columns.
@@ -230,8 +134,6 @@ Stacked headers are the additional headers to column header that will group the 
 Define the grouping of columns **key** value to the `keyFields` property and provide the custom header text name to grouped columns using the `text` property, which is placed inside the `stackedHeaders` property.
 
 In the following code, the kanban columns 'InProgress, Review' are grouped under 'Development Phase' category.
-
-{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -244,16 +146,3 @@ In the following code, the kanban columns 'InProgress, Review' are grouped under
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/stacked-headers-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/stacked-headers-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/stacked-headers-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/stacked-headers-cs1" %}
-{% endif %}

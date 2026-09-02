@@ -12,11 +12,11 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Adding Headers and Footers to PDF Exports in ASP.NET MVC Gantt Chart
 
-PDF export provides an option to specify and customize text, page number, line and image in header and footer of exported PDF document by using [pdfExportProperties](https://ej2.syncfusion.com/documentation/api/gantt/pdfexportproperties#properties).
+PDF export provides an option to specify and customize text, page number, line and image in header and footer of exported PDF document using [pdfExportProperties](https://ej2.syncfusion.com/documentation/api/gantt/pdfexportproperties#properties).
 
 ## Write a text in header and footer
 
-This functionality helps to customize the text that appears in the header or footer sections of a PDF document. Text can be added to [header](https://ej2.syncfusion.com/documentation/api/gantt/pdfheader) or [footer](https://ej2.syncfusion.com/documentation/api/gantt/pdffooter) of exported PDF document by using [pdfExportProperties](https://ej2.syncfusion.com/documentation/api/gantt/pdfexportproperties).
+This functionality helps to customize the text that appears in the header or footer sections of a PDF document. Text can be added to [header](https://ej2.syncfusion.com/documentation/api/gantt/pdfheader) or [footer](https://ej2.syncfusion.com/documentation/api/gantt/pdffooter) of exported PDF document using [pdfExportProperties](https://ej2.syncfusion.com/documentation/api/gantt/pdfexportproperties).
 
 - `type` property in the content array indicates the content type, such as 'Text'.
 - `Value` property determines the text.
@@ -44,7 +44,7 @@ let exportProperties: PdfExportProperties = {
 
 ## Draw a line in header and footer
 
-This functionality helps to customize the line that appears in the header or footer sections of the PDF document. A line can be added to [header](https://ej2.syncfusion.com/documentation/api/gantt/pdfheader) or [footer](https://ej2.syncfusion.com/documentation/api/gantt/pdffooter) of the exported PDF document by using [pdfExportProperties](https://ej2.syncfusion.com/documentation/api/gantt/pdfexportproperties).
+This functionality helps to customize the line that appears in the header or footer sections of the PDF document. A line can be added to [header](https://ej2.syncfusion.com/documentation/api/gantt/pdfheader) or [footer](https://ej2.syncfusion.com/documentation/api/gantt/pdffooter) of the exported PDF document using [pdfExportProperties](https://ej2.syncfusion.com/documentation/api/gantt/pdfexportproperties).
 
 - `type` determines content type, such as 'Line'.
 - `style` is used to set properties like the color (penColor), size (penSize), and style (dashStyle) of the line.
@@ -76,7 +76,7 @@ let exportProperties: PdfExportProperties = {
 
 ## Add page number in header and footer
 
-This feature allows to customize the page number that appears in the header or footer sections of the PDF document. Page numbers can be added in [header](https://ej2.syncfusion.com/documentation/api/gantt/pdfheader) or [footer](https://ej2.syncfusion.com/documentation/api/gantt/pdffooter) of the exported PDF document by using [pdfExportProperties](https://ej2.syncfusion.com/documentation/api/gantt/pdfexportproperties).
+This feature allows to customize the page number that appears in the header or footer sections of the PDF document. Page numbers can be added in [header](https://ej2.syncfusion.com/documentation/api/gantt/pdfheader) or [footer](https://ej2.syncfusion.com/documentation/api/gantt/pdffooter) of the exported PDF document using [pdfExportProperties](https://ej2.syncfusion.com/documentation/api/gantt/pdfexportproperties).
 
 - `type` indicates that the content is a page number.
 - `pageNumberType` specifies the type of numbering to be used.
@@ -143,19 +143,6 @@ let exportProperties: PdfExportProperties = {
 
 The below code illustrates the pdf export customization.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/pdf-customization/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="PDF-customization.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/pdf-customization/pdf-customization.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/pdf-customization/razor %}
@@ -164,24 +151,10 @@ The below code illustrates the pdf export customization.
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/pdf-customization/pdf-customization.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Disable footer
 
 By default, the exported PDF file includes a footer. The footer can be disabled by setting the `enableFooter` property to `false`.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/footer/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Footer.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/footer/footer.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -191,4 +164,3 @@ By default, the exported PDF file includes a footer. The footer can be disabled 
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/pdf-export/footer/footer.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

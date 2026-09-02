@@ -43,8 +43,6 @@ The accessibility compliance for the Gantt component is outlined below.
 
 The Gantt component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/) patterns to meet the accessibility. The following ARIA attributes are used in the Gantt component:
 
-The following ARIA attributes are used in Gantt:
-
 | Attributes | Purpose |
 | --- | --- |
 | `grid (role)` | This attribute is added to the `e-table` element present in the Gantt, which represents Grid part |
@@ -132,4 +130,4 @@ The accessibility compliance of the Gantt component is shown in the following sa
 
 ## See also
 
-* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core components](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core components](https://ej2.syncfusion.com/aspnetcore/documentation/common/accessibility)

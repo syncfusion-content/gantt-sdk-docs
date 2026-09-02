@@ -3,7 +3,7 @@ layout: post
 title: Getting Started in React Kanban | Syncfusion
 description: Learn how to start using Syncfusion React Kanban with step-by-step setup instructions and essential component features.
 keywords: react kanban getting started, syncfusion kanban, install component, react setup
-canonical: https://help.syncfusion.com/gantt-sdk/react/kanban/getting-started
+canonical: https://www.syncfusion.com/gantt-sdk/react-kanban-board
 platform: gantt-sdk
 control: Getting Started - Kanban
 documentation: ug
@@ -23,7 +23,7 @@ Before you begin, ensure the following tools are installed:
 | Tool                             | Version                             | Purpose                  |
 | -------------------------------- | ----------------------------------- | ------------------------ |
 | [Node.js](https://nodejs.org/en) | 18.x or later (LTS recommended)     | Required by Vite and npm |
-| npm     | 9.x or later (bundled with Node.js) | Package manager          |
+| npm                              | 9.x or later (bundled with Node.js) | Package manager          |
 
 Verify your setup:
 
