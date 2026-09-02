@@ -20,7 +20,7 @@ In Gantt, the tasks’ duration value can be measured by the following duration 
 - Hour
 - Minute
 
-In Gantt, we can define duration unit for whole project by using [`DurationUnit`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DurationUnit) property, when we defines the value for this property, this unit will be applied for all task which don't has duration unit value. And each task in the project can be defined with different duration units and the duration unit of a task can be defined by the following ways,
+In Gantt, you can define the duration unit for the whole project using the [`DurationUnit`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DurationUnit) property. When a value is defined for this property, this unit is applied for all tasks which don't have a duration unit value. Each task in the project can be defined with different duration units, and the duration unit of a task can be defined in the following ways:
 
 - Using [`TaskFields.DurationUnit`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_DurationUnit) property, to map the duration unit data source field.
 - Defining the duration unit value along with the duration field in the data source.

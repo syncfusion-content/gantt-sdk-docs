@@ -14,8 +14,8 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 ## Column validation
 
-Column validation validates the editing and adding data and it display errors for invalid fields before saving data. This is effective in both inline and dialog editing.
-Gantt uses [`Form Validator`](https://ej2.syncfusion.com/documentation/form-validator/validation-rules) component for column validation. You can set [`validation rules`](https://ej2.syncfusion.com/documentation/form-validator/validation-rules) by defining the [`validationRules`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_ValidationRules) in [`Columns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Columns). The value cannot be saved unless the validation rule get satisfied.
+Column validation validates the editing and adding data and displays errors for invalid fields before saving data. This is effective in both inline and dialog editing.
+Gantt uses the [`Form Validator`](https://ej2.syncfusion.com/documentation/form-validator/validation-rules) component for column validation. You can set [`validation rules`](https://ej2.syncfusion.com/documentation/form-validator/validation-rules) by defining the [`validationRules`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_ValidationRules) in [`Columns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Columns). The value cannot be saved unless the validation rule is satisfied.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -28,7 +28,7 @@ Gantt uses [`Form Validator`](https://ej2.syncfusion.com/documentation/form-vali
 
 ## Custom validation
 
-You can define your own custom validation rules for the specific columns by using callback function to it's [`validation rule`](https://ej2.syncfusion.com/documentation/form-validator/validation-rules#defining-custom-rules).
+You can define your own custom validation rules for the specific columns using a callback function to the [`validation rule`](https://ej2.syncfusion.com/documentation/form-validator/validation-rules#defining-custom-rules).
 
 In the below demo, custom validation applied for **TaskName** column.
 

@@ -616,7 +616,7 @@ namespace BlazorGanttChart.Data
 
 ### Through method
 
-You can manage task resources programmatically by using the following methods:
+You can manage task resources programmatically using the following methods:
 
 * [AddResourceAssignmentAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AddResourceAssignmentAsync__1___0_): This method adds a new resource to a specific task in the Gantt chart.
 * [DeleteResourceAssignmentAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_DeleteResourceAssignmentAsync__1___0_): Use this method to remove a resource from an existing task in the Gantt chart.
@@ -992,7 +992,7 @@ namespace BlazorGanttChart.Data
 
 ## Custom taskbar styling using template
 
-The taskbar appearance can be customized by using the [TaskbarTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTemplates-1.html#Syncfusion_Blazor_Gantt_GanttTemplates_1_TaskbarTemplate) property. In the following code snippet, child tasks are customized based on the template context data. The resource name is added inside each child taskbar, and the taskbar colors are changed based on the assigned resources.
+The taskbar appearance can be customized using the [TaskbarTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTemplates-1.html#Syncfusion_Blazor_Gantt_GanttTemplates_1_TaskbarTemplate) property. In the following code snippet, child tasks are customized based on the template context data. The resource name is added inside each child taskbar, and the taskbar colors are changed based on the assigned resources.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}

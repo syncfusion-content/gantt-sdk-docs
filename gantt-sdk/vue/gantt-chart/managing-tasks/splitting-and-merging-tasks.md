@@ -2,7 +2,7 @@
 layout: post
 title: Splitting and Merging Tasks in Vue Gantt Chart | Syncfusion
 description: Learn how to split and merge tasks in Syncfusion Vue Gantt Chart for handling task segments and interruptions.
-keywords: vue gantt split merge tasks, task segments, task splitting, task merging, interrupted tasks, syncfusion gantt
+keywords: vue gantt split merge tasks, task segments, interrupted tasks, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/managing-tasks/splitting-and-merging-tasks
 platform: gantt-sdk
 control: Splitting and Merging Tasks - Gantt Chart
@@ -14,14 +14,13 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 ## Splitting task at load time
 
-To split task at load time, we can define segment details in both hierarchical and self-referential way.
-Refer below link for more details.
+Define segment details at load time in both hierarchical and self-referential ways.
 
 * [Split task at load time](../data-binding#split-task)
 
 ## Split task dynamically
 
-The task can be split dynamically, either by using the context menu or dialog.
+Split tasks using the context menu or dialog.
 
 * `Dialog`: `Segments` tab is rendered in add/edit dialog, when the [taskFields.segments](https://ej2.syncfusion.com/vue/documentation/api/gantt/taskFields#segments) or [taskFields.segmentId](https://ej2.syncfusion.com/vue/documentation/api/gantt/taskFields#segmentid) property is mapped. Using this tab, we can split the task based on the original start and end date of a particular task.
 
@@ -40,10 +39,10 @@ The task can be split dynamically, either by using the context menu or dialog.
 
 ## Merge tasks
 
-The split tasks can be merged either by using the `Merge Task` item of the context menu or by using the dialog. We can also merge the tasks by simply dragging the segments together in the UI.
+Merge split tasks using the `Merge Task` item of the context menu, the dialog, or by dragging the segments together in the UI.
 
 ## Limitations of Split tasks
 
 1. Parent and milestone tasks cannot be split into segments.  
-2. The task must have a width greater than the timeline unit cell in order to be split.  
+2. The task must be wider than a single timeline unit cell to enable splitting.  
 3. Split task is not supported with `Multi taskbar`.

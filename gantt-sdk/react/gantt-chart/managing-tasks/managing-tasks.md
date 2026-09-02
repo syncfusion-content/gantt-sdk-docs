@@ -57,12 +57,12 @@ The [columns.editType](https://ej2.syncfusion.com/react/documentation/api/gantt/
 Below is the combined content from the provided markdown sections in bullet points, as requested, ensuring clarity and conciseness while preserving the original information:
 
 - **Cell edit types and components**:
-  - **numericedit**: Uses the [NumericTextBox](https://helpej2.syncfusion.com/react/documentation/numerictextbox) component for editing integers, doubles, and decimals.
-  - **defaultedit**: Uses the [TextBox](https://helpej2.syncfusion.com/react/documentation/textbox) component for editing string data.
-  - **dropdownedit**: Uses the [DropDownList](https://helpej2.syncfusion.com/react/documentation/drop-down-list) component to display all unique values for a field.
-  - **booleanedit**: Uses the [CheckBox](https://helpej2.syncfusion.com/react/documentation/check-box) component for editing boolean data.
-  - **datepickeredit**: Uses the [DatePicker](https://helpej2.syncfusion.com/react/documentation/datepicker) component for editing date data.
-  - **datetimepickeredit**: Uses the [DateTimePicker](https://helpej2.syncfusion.com/react/documentation/datetimepicker) component for editing date-time data.
+  - **numericedit**: Uses the [NumericTextBox](https://ej2.syncfusion.com/react/documentation/numerictextbox) component for editing integers, doubles, and decimals.
+  - **defaultedit**: Uses the [TextBox](https://ej2.syncfusion.com/react/documentation/textbox) component for editing string data.
+  - **dropdownedit**: Uses the [DropDownList](https://ej2.syncfusion.com/react/documentation/drop-down-list) component to display all unique values for a field.
+  - **booleanedit**: Uses the [CheckBox](https://ej2.syncfusion.com/react/documentation/check-box) component for editing boolean data.
+  - **datepickeredit**: Uses the [DatePicker](https://ej2.syncfusion.com/react/documentation/datepicker) component for editing date data.
+  - **datetimepickeredit**: Uses the [DateTimePicker](https://ej2.syncfusion.com/react/documentation/datetimepicker) component for editing date-time data.
 
 - **Customization**:
   - Customize editor component behavior using the [columns.edit.params](https://ej2.syncfusion.com/react/documentation/api/gantt/column#edit) property.
