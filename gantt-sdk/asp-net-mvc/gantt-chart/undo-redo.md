@@ -16,7 +16,7 @@ The Undo feature enables users to revert the most recent action performed in the
 
 The Redo feature can reapply an action that was previously undone using the Undo feature. This allows users to revert their decision to undo an action.
 
-The undo redo feature can be enabled in Gantt by using the [EnableUndoRedo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableUndoRedo) property.
+Enable the undo redo feature in Gantt using the [EnableUndoRedo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableUndoRedo) property.
 
 ## Configure the feature set for undo redo actions
 
@@ -45,19 +45,6 @@ By default, all the gantt features listed in the below table will be restored fo
 
 In the following code example, `Edit` and `Delete` actions are specified in `UndoRedoActions` property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/undo-redo/undoActions/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="DefaultItems.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/undo-redo/undoActions/undoActions.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/undo-redo/undoActions/razor %}
@@ -66,7 +53,6 @@ In the following code example, `Edit` and `Delete` actions are specified in `Und
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/undo-redo/undoActions/undoActions.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Configuring the Storage Step Count for Undo and Redo Actions
 
@@ -78,19 +64,6 @@ When the number of actions performed exceeds the `UndoRedoStepsCount`, the oldes
 
 In the following example, `UndoRedoStepsCount` value is set to 5.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/undo-redo/stepsCount/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="DefaultItems.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/undo-redo/stepsCount/stepsCount.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/undo-redo/stepsCount/razor %}
@@ -99,26 +72,12 @@ In the following example, `UndoRedoStepsCount` value is set to 5.
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/undo-redo/stepsCount/stepsCount.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Perform undo redo actions programatically
 
 You can perform undo and redo actions programatically using [undo](https://ej2.syncfusion.com/react/documentation/api/gantt/index-default#undo) and [redo](https://ej2.syncfusion.com/react/documentation/api/gantt/index-default#redo) methods.
 
 The following code example demonstrates how to invoke the `undo` and `redo` method by clicking the external button.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/undo-redo/dynamic/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="DefaultItems.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/undo-redo/dynamic/dynamic.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -128,26 +87,12 @@ The following code example demonstrates how to invoke the `undo` and `redo` meth
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/undo-redo/dynamic/dynamic.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Retrieve undo and redo stack collection
 
 By default, when an undo or redo action is performed, the actions are stored in an array collection. To retrieve the undo and redo stack array collections, you can use the [getUndoActions](https://ej2.syncfusion.com/react/documentation/api/gantt/index-default#getundoactions) and [getRedoActions](https://ej2.syncfusion.com/react/documentation/api/gantt/index-default#getredoactions) methods.
 
 The following code example demonstrates how to retrieve the undo and redo collection using method by clicking the external button.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/undo-redo/retrieve/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="DefaultItems.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/undo-redo/retrieve/retrieve.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -157,26 +102,12 @@ The following code example demonstrates how to retrieve the undo and redo collec
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/undo-redo/retrieve/retrieve.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Clear undo and redo collection
 
 At any point, you can clear the undo and redo collections using the [clearUndoCollection](https://ej2.syncfusion.com/react/documentation/api/gantt/index-default#clearundocollection) and [clearRedoCollection](https://ej2.syncfusion.com/react/documentation/api/gantt/index-default#clearredocollection) methods. This allows you to reset the undo and redo stacks as needed during runtime.
 
 The following code example demonstrates how to clear the undo and redo collection using method by clicking the external button.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/undo-redo/clear/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="DefaultItems.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/undo-redo/clear/clear.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -186,4 +117,3 @@ The following code example demonstrates how to clear the undo and redo collectio
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/undo-redo/clear/clear.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

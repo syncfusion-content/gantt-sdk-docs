@@ -12,16 +12,14 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Data Binding with Local and Remote Sources in TypeScript Kanban
 
-The Kanban uses `DataManager`, which supports both RESTful data service binding and JavaScript object array binding. The [`dataSource`](../api/kanban#datasource) property of Kanban can be assigned either with the instance of `DataManager` or JavaScript object array collection, as it supports the following two data binding methods:
+The Kanban uses `DataManager`, which supports both RESTful data service binding and JavaScript object array binding. The [`dataSource`](https://ej2.syncfusion.com/documentation/api/kanban#dataSource) property of Kanban can be assigned either with the instance of `DataManager` or JavaScript object array collection, as it supports the following two data binding methods:
 
 - Local data
 - Remote data
 
 ## Local data
 
-To bind local JSON data to the Kanban, you can simply assign a JavaScript object array to the [`dataSource`](../api/kanban#datasource) property. The JSON object dataSource can also be provided as an instance of `DataManager` and assigned to the Kanban `dataSource` property.
-
-{% if page.publishingplatform == "typescript" %}
+To bind local JSON data to the Kanban, you can simply assign a JavaScript object array to the [`dataSource`](https://ej2.syncfusion.com/documentation/api/kanban#dataSource) property. The JSON object dataSource can also be provided as an instance of `DataManager` and assigned to the Kanban `dataSource` property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -34,27 +32,11 @@ To bind local JSON data to the Kanban, you can simply assign a JavaScript object
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/local-data-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/local-data-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/local-data-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/local-data-cs1" %}
-{% endif %}
-
 > By default, `DataManager` uses `JsonAdaptor` for binding local data.
 
 ## Remote data
 
-To bind remote data to kanban component, assign service data as an instance of [`DataManager`](../data) to the [`dataSource`](../api/kanban#datasource) property. To interact with remote data source, provide the endpoint **url**.
-
-{% if page.publishingplatform == "typescript" %}
+To bind remote data to kanban component, assign service data as an instance of [`DataManager`](https://ej2.syncfusion.com/documentation/data) to the [`dataSource`](https://ej2.syncfusion.com/documentation/api/kanban#dataSource) property. To interact with remote data source, provide the endpoint **url**.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -67,27 +49,11 @@ To bind remote data to kanban component, assign service data as an instance of [
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/remote-data-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/remote-data-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/remote-data-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/remote-data-cs1" %}
-{% endif %}
-
-> By default, [`DataManager`](../data) uses **ODataAdaptor** for remote data-binding.
+> By default, [`DataManager`](https://ej2.syncfusion.com/documentation/data) uses **ODataAdaptor** for remote data-binding.
 
 ### OData services
 
 [`OData`](http://www.odata.org/documentation/odata-version-3-0) is a standardized protocol for creating and consuming data. You can retrieve data from OData service using the DataManager. Refer to the following code example for remote Data binding using OData service.
-
-{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -100,25 +66,9 @@ To bind remote data to kanban component, assign service data as an instance of [
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/odata-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/odata-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/odata-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/odata-cs1" %}
-{% endif %}
-
 ### OData v4 services
 
-The ODataV4 is an improved version of OData protocols, and the [`DataManager`](../data) can also retrieve and consume OData v4 services. For more details on OData v4 services, refer to the [`odata documentation`](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). To bind OData v4 service, use the **ODataV4Adaptor**.
-
-{% if page.publishingplatform == "typescript" %}
+The ODataV4 is an improved version of OData protocols, and the [`DataManager`](https://ej2.syncfusion.com/documentation/data) can also retrieve and consume OData v4 services. For more details on OData v4 services, refer to the [`odata documentation`](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). To bind OData v4 service, use the **ODataV4Adaptor**.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -131,19 +81,6 @@ The ODataV4 is an improved version of OData protocols, and the [`DataManager`](.
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/odataV4-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/odataV4-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/odataV4-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/odataV4-cs1" %}
-{% endif %}
 
 ### Web API
 
@@ -268,8 +205,6 @@ public class Params {
 
 It is possible to create your own custom adaptor by extending the built-in available adaptors. The following example demonstrates the custom adaptor usage and how to add a custom field `TaskId` for the cards by overriding the built-in response processing using the `processResponse` method of the `ODataAdaptor`.
 
-{% if page.publishingplatform == "typescript" %}
-
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt-sdk/typescript/kanban/custom-cs1/index.ts %}
@@ -281,25 +216,9 @@ It is possible to create your own custom adaptor by extending the built-in avail
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/custom-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/custom-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/custom-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/custom-cs1" %}
-{% endif %}
-
 ### Sending additional parameters to the server
 
-To add a custom parameter to the data request, use the **addParams** method of **Query** class. Assign the **Query** object with additional parameters to the kanban [`query`](../api/kanban#query) property.
-
-{% if page.publishingplatform == "typescript" %}
+To add a custom parameter to the data request, use the **addParams** method of **Query** class. Assign the **Query** object with additional parameters to the kanban [`query`](https://ej2.syncfusion.com/documentation/api/kanban#query) property.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -312,30 +231,14 @@ To add a custom parameter to the data request, use the **addParams** method of *
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/additional-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/additional-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/additional-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/additional-cs1" %}
-{% endif %}
-
-> The parameters added using the [`query`](../api/kanban#query) property will be sent along with the data request for every kanban action.
+> The parameters added using the [`query`](https://ej2.syncfusion.com/documentation/api/kanban#query) property will be sent along with the data request for every kanban action.
 
 ### Handling HTTP error
 
 During server interaction from the kanban, some server-side exceptions may occur, and you can acquire those error messages or exception details
-in client-side using the [`actionFailure`](../api/kanban#actionfailure) event.
+in client-side using the [`actionFailure`](https://ej2.syncfusion.com/documentation/api/kanban#actionFailure) event.
 
-The argument passed to the [`actionFailure`](../api/kanban#actionfailure) event contains the error details returned from the server.
-
-{% if page.publishingplatform == "typescript" %}
+The argument passed to the [`actionFailure`](https://ej2.syncfusion.com/documentation/api/kanban#actionFailure) event contains the error details returned from the server.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -346,28 +249,13 @@ The argument passed to the [`actionFailure`](../api/kanban#actionfailure) event 
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/error-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/error-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% endif %}
-
 ![kanban](./images/handling-http-error.png)
 
-> The [`actionFailure`](../api/kanban#actionfailure) event will be triggered not only for the server errors, but also when there is an exception while processing the kanban actions.
+> The [`actionFailure`](https://ej2.syncfusion.com/documentation/api/kanban#actionFailure) event will be triggered not only for the server errors, but also when there is an exception while processing the kanban actions.
 
 ## Loading data via ajax
 
-You can use Kanban [`dataSource`](../api/kanban#datasource) property to bind the datasource to Kanban from external ajax request. In the following code, we have fetched the datasource from the server using ajax request and provided that to the [`dataSource`](../api/kanban#datasource) property by using the **onSuccess** event of ajax.
-
-{% if page.publishingplatform == "typescript" %}
+You can use Kanban [`dataSource`](https://ej2.syncfusion.com/documentation/api/kanban#dataSource) property to bind the datasource to Kanban from external ajax request. In the following code, we have fetched the datasource from the server using ajax request and provided that to the [`dataSource`](https://ej2.syncfusion.com/documentation/api/kanban#dataSource) property by using the **onSuccess** event of ajax.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -380,18 +268,5 @@ You can use Kanban [`dataSource`](../api/kanban#datasource) property to bind the
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/ajax-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/ajax-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/ajax-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/ajax-cs1" %}
-{% endif %}
 
 > - If you bind the dataSource from this way, then it acts like a local dataSource. So you cannot perform any server-side crud actions.

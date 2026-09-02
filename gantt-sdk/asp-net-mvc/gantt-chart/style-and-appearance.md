@@ -58,27 +58,14 @@ In the Gantt control, you can show or hide the grid lines in the TreeGrid side a
 
 The following options are available in the Gantt control for rendering the grid lines:
 
-- **Horizontal**: The horizontal grid lines alone will be visible.
-- **Vertical**: The vertical grid lines alone will be visible.
-- **Both**: Both the horizontal and vertical grid lines will be visible on the TreeGrid and chart sides.
+- **Horizontal**: The horizontal grid lines alone are visible.
+- **Vertical**: The vertical grid lines alone are visible.
+- **Both**: Both the horizontal and vertical grid lines are visible on the TreeGrid and chart sides.
 - **None**: Gridlines will not be visible on TreeGrid and chart sides.
 
 N> By default, the [`GridLines`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_GridLines) property is set to `Horizontal` type.
 
 The following code example shows how to change the gridlines rendering mode in the Gantt control.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/appearance-and-styling/gridLines/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="GridLines.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/appearance-and-styling/gridLines/gridLines.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -88,6 +75,5 @@ The following code example shows how to change the gridlines rendering mode in t
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/appearance-and-styling/gridLines/gridLines.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-![Alt text](images/gridLines.png)
+![Alt text](./images/gridLines.png)

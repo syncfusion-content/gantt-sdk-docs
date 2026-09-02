@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Predecessor Validation for Task Dependencies in Blazor Gantt Chart
 
-By default, Gantt task date values are validated based on predecessor values. You can enable or disable this validation by using the [EnablePredecessorValidation](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_EnablePredecessorValidation) property. By default, `EnablePredecessorValidation` is **true**.
+By default, Gantt task date values are validated based on predecessor values. Enable or disable this validation using the [EnablePredecessorValidation](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_EnablePredecessorValidation) property. By default, `EnablePredecessorValidation` is **true**.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -210,7 +210,7 @@ N> When `EnablePredecessorOffsetValidation` is enabled, the predecessor offset w
 
 ### Auto-link validation
 
-When connector lines are drawn between tasks, the task dates are validated based on predecessor values. You can restrict this validation when drawing predecessors by using the [TaskbarEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_TaskbarEditing)  event. You can enable or disable the validation using the [EnablePredecessorValidation](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.TaskbarEditingEventArgs-1.html#Syncfusion_Blazor_Gantt_TaskbarEditingEventArgs_1_EnablePredecessorValidation) event argument. By default, `EnablePredecessorValidation` is **true**.
+When connector lines are drawn between tasks, the task dates are validated based on predecessor values. You can restrict this validation when drawing predecessors using the [TaskbarEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_TaskbarEditing)  event. You can enable or disable the validation using the [EnablePredecessorValidation](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.TaskbarEditingEventArgs-1.html#Syncfusion_Blazor_Gantt_TaskbarEditingEventArgs_1_EnablePredecessorValidation) event argument. By default, `EnablePredecessorValidation` is **true**.
 
 In the following code example, the connector line connected from task ID 2 to task ID 3 is rendered at load time, so validation occurs. However, the connector line from task ID 6 to task ID 7 is drawn dynamically, and validation is restricted by disabling the `EnablePredecessorValidation` property.
 

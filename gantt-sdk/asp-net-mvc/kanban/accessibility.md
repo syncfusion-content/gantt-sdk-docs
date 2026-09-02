@@ -19,12 +19,12 @@ The accessibility compliance for the Kanban control is outlined below.
 | Accessibility Criteria                                                             | Compatibility                                                                        |
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
 | WCAG 2.2 Support                                                                   | AA                                                                                   |
-| [Section 508 Support](../common/accessibility#accessibility-standards)             | ![Yes](./images/full.png)             |
+| [Section 508 Support](https://ej2.syncfusion.com/aspnetmvc/documentation/common/accessibility#accessibility-standards)             | ![Yes](./images/full.png)             |
 | Screen Reader Support                                                              | ![Yes](./images/full.png)             |
 | Right-To-Left Support                                                              | ![Yes](./images/full.png)             |
 | Color Contrast                                                                     | ![Intermediate](./images/partial.png) |
 | Mobile Device Support                                                              | ![Yes](./images/full.png)             |
-| [Keyboard Navigation Support](../common/accessibility#keyboard-navigation-support) | ![Yes](./images/full.png)             |
+| [Keyboard Navigation Support](https://ej2.syncfusion.com/aspnetmvc/documentation/common/accessibility#keyboard-navigation-support) | ![Yes](./images/full.png)             |
 | Accessibility Checker Validation                                                   | ![Intermediate](./images/partial.png) |
 
 <style>
@@ -80,22 +80,6 @@ The Kanban control followed the [keyboard interaction](https://www.w3.org/WAI/AR
 
 Disables all the functionalities in the Kanban board performed using keyboard by setting the `AllowKeyboard` properties to `False`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/keyboard-disable/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/keyboard-disable/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/keyboard-disable/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/keyboard-disable/razor %}
@@ -107,7 +91,6 @@ Disables all the functionalities in the Kanban board performed using keyboard by
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/keyboard-disable/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Ensuring accessibility
 
@@ -119,4 +102,4 @@ The accessibility compliance of the Kanban control is shown in the following sam
 
 ## See also
 
-- [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC control](../common/accessibility)
+- [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC control](https://ej2.syncfusion.com/aspnetmvc/documentation/common/accessibility)
