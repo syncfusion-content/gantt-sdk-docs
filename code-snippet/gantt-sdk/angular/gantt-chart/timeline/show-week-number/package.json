@@ -36,6 +36,7 @@
     "@syncfusion/ej2-navigations": "*",
     "@syncfusion/ej2-popups": "*",
     "@syncfusion/ej2-splitbuttons": "*",
+    "@syncfusion/ej2-tailwind3-theme": "*",
     "@syncfusion/ej2-treegrid": "*",
     "moment": "2.29.4",
     "rxjs": "7.8.0",
