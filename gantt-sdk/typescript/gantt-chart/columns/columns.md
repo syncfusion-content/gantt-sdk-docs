@@ -52,6 +52,25 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Gantt Chart cont
 
 > To learn more about how to render boolean values as checkboxes in a Syncfusion<sup style="font-size:70%">&reg;</sup> GanttColumn, please refer to the [Render Boolean Values as Checkbox](https://ej2.syncfusion.com/documentation/gantt/columns/columns#render-boolean-value-as-checkbox) section.
 
+## Serial number column
+
+The **Serial Number** feature automatically generates sequential row numbers for records displayed in the Gantt Chart. To enable this feature, set the [enableSerialNumber](https://ej2.syncfusion.com/documentation/api/gantt#enableserialnumber) property to **true**. When enabled, serial numbers are assigned based on the current visible row order without requiring a dedicated field in the data source.
+
+Serial numbers are generated dynamically starting from **1** and are displayed through the Serial Number column. The numbering is automatically updated whenever the row order changes due to actions such as filtering, searching, expand/collapse operations, indent/outdent actions, CRUD operations, row drag-and-drop, and data refresh.
+
+The following example demonstrates how to enable the auto-generated Serial Number column in the Gantt Chart:
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt-sdk/typescript/gantt-chart/serialnumber-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt-sdk/typescript/gantt-chart/serialnumber-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/serialnumber-cs1" %}
+
 ## Column width
 
 In Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt for TypeScript, column width can be adjusted using the [width](https://ej2.syncfusion.com/documentation/api/gantt#width) property within the [column](https://ej2.syncfusion.com/documentation/api/gantt#columns) configuration. This property accepts values in pixels (e.g., **100**) or percentages (e.g., **25%**) to define the column's width relative to the Gantt container.

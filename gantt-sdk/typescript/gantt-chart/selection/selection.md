@@ -59,6 +59,31 @@ When enabled, clicking a selected row or cell will deselect it, and clicking it 
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/toggleselection-cs1" %}
 
+## Hierarchy selection mode
+
+The hierarchy checkbox selection feature allows you to select or deselect parent and child records through checkboxes. To enable this, set the [hierarchySelectionMode](https://ej2.syncfusion.com/documentation/api/gantt#hierarchyselectionmode) property, along with [selectionSettings.type](https://ej2.syncfusion.com/documentation/api/gantt/selectionSettings#type) set to **Multiple**, and add a dedicated checkbox column by defining a column with its `type` set to **checkbox** in the [columns](https://ej2.syncfusion.com/documentation/api/gantt#columns) configuration.
+
+### hierarchySelectionMode
+
+The [hierarchySelectionMode](https://ej2.syncfusion.com/documentation/api/gantt#hierarchyselectionmode) property allows you to configure how checkbox selection is propagated across parent and child task records using different hierarchy modes. The following modes are supported:
+
+- **Self:** Selecting or deselecting a checkbox affects only the current row. Parent and child records remain unchanged.
+- **Hierarchy:** Selecting a parent record automatically selects all descendant records. Child selection updates the corresponding parent state and displays indeterminate states when applicable. This is the default mode.
+- **FilteredHierarchy:** Works similarly to **Hierarchy**, but checkbox propagation is applied only to the currently visible records after filtering or searching.
+
+The following example demonstrates how to enable checkbox-based row selection with the **Hierarchy** mode:
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt-sdk/typescript/gantt-chart/hierarchy-selection-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt-sdk/typescript/gantt-chart/hierarchy-selection-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/hierarchy-selection-cs1" %}
+
 ## Persist selection
 
 Persist Selection retains selected tasks even after performing actions such as sorting, filtering, or refreshing the data. To enable this, set `selectionSettings.persistSelection` to **true**.
