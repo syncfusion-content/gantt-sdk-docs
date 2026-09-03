@@ -59,7 +59,7 @@ When enabled, clicking a selected row or cell will deselect it, and clicking it 
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/toggleselection-cs1" %}
 
-## Hierarchy selection mode
+## Hierarchy checkbox selection
 
 The hierarchy checkbox selection feature allows you to select or deselect parent and child records through checkboxes. To enable this, set the [hierarchySelectionMode](https://ej2.syncfusion.com/javascript/documentation/api/gantt#hierarchyselectionmode) property, along with [selectionSettings.type](https://ej2.syncfusion.com/javascript/documentation/api/gantt/selectionSettings#type) set to **Multiple**, and add a dedicated checkbox column by defining a column with its `type` set to **checkbox** in the [columns](https://ej2.syncfusion.com/javascript/documentation/api/gantt#columns) configuration.
 
