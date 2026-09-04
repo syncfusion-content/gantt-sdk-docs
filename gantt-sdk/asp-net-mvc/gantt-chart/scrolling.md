@@ -22,7 +22,7 @@ N> The default value for [`height`](https://help.syncfusion.com/cr/aspnetmvc-js2
 
 ## Set width and height
 
-To specify the [`width`](../api/gantt#width) and [`height`](../api/gantt#height) of the scroller in pixels, set the pixel value to a number.
+To specify the [`width`](https://ej2.syncfusion.com/aspnetmvc/documentation/api/gantt#width) and [`height`](https://ej2.syncfusion.com/aspnetmvc/documentation/api/gantt#height) of the scroller in pixels, set the pixel value to a number.
 
 The following code example shows how to set height and width in the Gantt control:
 

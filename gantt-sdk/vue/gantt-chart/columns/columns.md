@@ -53,7 +53,7 @@ The column header text can be defined using the [headerText](https://ej2.syncfus
 
 ## Format
 
-To format cell values based on a specific culture, use the [columns.format](https://ej2.syncfusion.com/vue/documentation/api/gantt/column#format) property. The Gantt Chart component uses the [Internationalization](../../common/internationalization) library to format `number` and `date` values.
+To format cell values based on a specific culture, use the [columns.format](https://ej2.syncfusion.com/vue/documentation/api/gantt/column#format) property. The Gantt Chart component uses the [Internationalization](https://ej2.syncfusion.com/vue/documentation/common/globalization/overview) library to format `number` and `date` values.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

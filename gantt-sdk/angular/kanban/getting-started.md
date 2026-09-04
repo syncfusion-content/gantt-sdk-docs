@@ -23,7 +23,7 @@ The Kanban component consists of the following elements:
 - **Columns**: Define workflow stages and are mapped using the `keyField` property.
 - **Swimlanes**: Group cards based on categories and are configured using `swimlaneSettings`.
 
-> Note: The example in this section uses only cards and columns. To enable swimlanes, see the [Swimlanes documentation](swimlane).
+> Note: The example in this section uses only cards and columns. To enable swimlanes, see the [Swimlanes documentation](https://help.syncfusion.com/gantt-sdk/angular/kanban/swimlane).
 
 ## Setting Up the Angular Environment
 
@@ -234,8 +234,8 @@ For reference, the complete sample used in this section is shown below. The data
 
 ## See also
 
-- [Kanban columns](./columns)
-- [Kanban data binding](./data-binding)
-- [Kanban dialog](./dialog)
-- [Kanban swimlane](./swimlane)
-- [Kanban priority](./priority)
+- [Kanban columns](https://help.syncfusion.com/gantt-sdk/angular/kanban/columns)
+- [Kanban data binding](https://help.syncfusion.com/gantt-sdk/angular/kanban/data-binding)
+- [Kanban dialog](https://help.syncfusion.com/gantt-sdk/angular/kanban/dialog)
+- [Kanban swimlane](https://help.syncfusion.com/gantt-sdk/angular/kanban/swimlane)
+- [Kanban priority](https://help.syncfusion.com/gantt-sdk/angular/kanban/priority)

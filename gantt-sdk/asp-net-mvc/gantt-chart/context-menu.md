@@ -66,4 +66,4 @@ N> You can show an specific item in context menu for header/content area in the 
 
 ## Touch interaction
 
-To perform `long press` action on a row, [`context menu`](context-menu#context-menu) is opened, and then tap a menu item to trigger its action.
+To perform `long press` action on a row, [`context menu`](https://help.syncfusion.com/gantt-sdk/aspnetmvc/gantt-chart/context-menu#context-menu) is opened, and then tap a menu item to trigger its action.

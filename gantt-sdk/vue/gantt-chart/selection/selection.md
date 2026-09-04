@@ -126,8 +126,8 @@ In the following code, the rows which contains `TaskId` value as 3 and 4 are sel
 
 The touch interaction feature in the Gantt Chart component allows you to easily interact with the Gantt chart on touch screen devices. This feature is particularly useful for enhancing usability on mobile devices and tablets, making it easier to navigate and interact with the Gantt chart's content using touch gestures.
 
-[Single Row Selection](selection#selection-mode): When you tap on a row using a touch screen, the tapped row is automatically selected. This offers a straightforward way to select single rows with a touch interface.
+[Single Row Selection](https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/selection/selection#selection-mode): When you tap on a row using a touch screen, the tapped row is automatically selected. This offers a straightforward way to select single rows with a touch interface.
 
-[Multiple Row Selection](selection#multiple-row-selection): To select multiple rows, you can utilize the multi-row selection feature. When you tap on a row, a popup is displayed, indicating the option for multi-row selection. Tap on the popup, and then proceed to tap on the desired rows you want to select. This allows you to select and interact with multiple rows simultaneously, as shown in the following image:
+[Multiple Row Selection](https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/selection/selection#multiple-row-selection): To select multiple rows, you can utilize the multi-row selection feature. When you tap on a row, a popup is displayed, indicating the option for multi-row selection. Tap on the popup, and then proceed to tap on the desired rows you want to select. This allows you to select and interact with multiple rows simultaneously, as shown in the following image:
 
 ![Multiple selection](../images/multiple-selection.PNG)

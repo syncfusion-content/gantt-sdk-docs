@@ -137,7 +137,7 @@ const data = new DataManager({
 
 For custom backend implementations, create a custom adaptor by extending the base `Adaptor` class.
 
-**Server Communication**: DataManager connects to various backend services including RESTful endpoints, OData services, and custom web APIs. Configure the appropriate URL and adaptor type based on the target server architecture and data format requirements. Refer to the [Custom Adaptor](./connecting-to-adaptors/custom-adaptor) documentation for advanced implementation details.
+**Server Communication**: DataManager connects to various backend services including RESTful endpoints, OData services, and custom web APIs. Configure the appropriate URL and adaptor type based on the target server architecture and data format requirements. Refer to the [Custom Adaptor](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/connecting-to-adaptors/custom-adaptor) documentation for advanced implementation details.
 
 ### URL Adaptor implementation
 
@@ -193,7 +193,7 @@ public ActionResult UrlDatasource(DataManagerRequest dm)
 
 ### Load-on-demand implementation
 
-Load-on-demand rendering displays child records dynamically when parent nodes expand, optimizing performance for large hierarchical datasets. Configure a remote service URL in the DataManager instance and define the [hasChildMapping](https://ej2.syncfusion.com/react/documentation/api/gantt/taskFields#hasChildMapping) property in taskFields to enable this functionality.
+Load-on-demand rendering displays child records dynamically when parent nodes expand, optimizing performance for large hierarchical datasets. Configure a remote service URL in the DataManager instance and define the [hasChildMapping](https://ej2.syncfusion.com/react/documentation/api/gantt/taskFields#haschildmapping) property in taskFields to enable this functionality.
 
 **Core concept**: The `hasChildMapping` property maps data source field names that indicate whether records contain child elements. This enables the component to display expand icons and manage dynamic loading without pre-loading entire hierarchical structures.
 

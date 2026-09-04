@@ -83,7 +83,7 @@ To bind remote data to the Gantt Chart component, assign service data as an inst
 
 ### URL Adaptor
 
-In Gantt, we can fetch data from SQL database using `ADO.NET` Entity Data Model and update the changes on CRUD action to the server by using `DataManager` support. To communicate with the remote data we are using `UrlAdaptor` of DataManager property to call the server method and get back resultant data in JSON format. We can know more about `UrlAdaptor` from [here](https://ej2.syncfusion.com/javascript/documentation/data/adaptors/?no-cache=1).
+In Gantt, we can fetch data from SQL database using `ADO.NET` Entity Data Model and update the changes on CRUD action to the server by using `DataManager` support. To communicate with the remote data we are using `UrlAdaptor` of DataManager property to call the server method and get back resultant data in JSON format. We can know more about `UrlAdaptor` from [here](https://ej2.syncfusion.com/vue/documentation/data/adaptors/?no-cache=1).
 
 > Please refer the [link](https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/models-data/creating-model-classes-with-the-entity-framework-cs) to create the `ADO.NET` Entity Data Model in Visual Studio,
 
@@ -232,7 +232,7 @@ The following code example describes the CRUD operations handled at server-side.
 
 ### Load child on demand
 
-To render child records on demand, assign a remote service URL in the instance of DataManager to the Url property. To interact with the remote data source, provide the endpoint URL and also define the [hasChildMapping](https://ej2.syncfusion.com/vue/documentation/api/gantt/taskFields#hasChildMapping) property in taskFields of Gantt Chart.
+To render child records on demand, assign a remote service URL in the instance of DataManager to the Url property. To interact with the remote data source, provide the endpoint URL and also define the [hasChildMapping](https://ej2.syncfusion.com/vue/documentation/api/gantt/taskFields#haschildmapping) property in taskFields of Gantt Chart.
 
 The <code>hasChildMapping</code> property maps the field name in the data source, which denotes whether the current record holds any child records. This is useful internally to show expand icon while binding child data on demand.
 
@@ -787,7 +787,7 @@ We can also define segment details as a flat data and this collection can be map
 
 ## Improve performance by disabling validations
 
-The [autoCalculateDateScheduling](https://ej2.syncfusion.com/vue/documentation/api/gantt#autoCalculateDateScheduling) property can help you reduce the time taken for the Gantt chart to render on the initial load. When this API is enabled, parent-child validation, data validation, and predecessor validation are restricted, allowing the Gantt chart to load more quickly. Since we are disabling the validations, data source provided to gantt should have all data such as start date, end date, duration, as proper data.
+The [autoCalculateDateScheduling](https://ej2.syncfusion.com/vue/documentation/api/gantt#autocalculatedatescheduling) property can help you reduce the time taken for the Gantt chart to render on the initial load. When this API is enabled, parent-child validation, data validation, and predecessor validation are restricted, allowing the Gantt chart to load more quickly. Since we are disabling the validations, data source provided to gantt should have all data such as start date, end date, duration, as proper data.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

@@ -228,6 +228,6 @@ The Kanban board now displays cards from the `kanbanData` array. In this example
 
 ## See also
 
-- [Kanban columns](./columns.md)
-- [Kanban data binding](./data-binding.md)
-- [Kanban dialog](./dialog.md)
+- [Kanban columns](https://help.syncfusion.com/gantt-sdk/react/kanban/columns)
+- [Kanban data binding](https://help.syncfusion.com/gantt-sdk/react/kanban/data-binding)
+- [Kanban dialog](https://help.syncfusion.com/gantt-sdk/react/kanban/dialog)
