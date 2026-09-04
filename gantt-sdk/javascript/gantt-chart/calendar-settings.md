@@ -12,16 +12,16 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Calendar Settings in JavaScript Gantt Chart Control
 
-The Gantt Chart control supports advanced calendar configuration through the [calendarSettings](../api/gantt#calendarsettings) property, enabling management of working hours, holidays, and task-specific scheduling. Calendar settings control how the Gantt Chart calculates task duration, determines working days, and schedules dependencies.
+The Gantt Chart control supports advanced calendar configuration through the [calendarSettings](https://ej2.syncfusion.com/javascript/documentation/api/gantt/index-default#calendarsettings) property, enabling management of working hours, holidays, and task-specific scheduling. Calendar settings control how the Gantt Chart calculates task duration, determines working days, and schedules dependencies.
 
-The [calendarSettings](../api/gantt#calendarsettings) property contains two key configurations:
+The [calendarSettings](https://ej2.syncfusion.com/javascript/documentation/api/gantt/index-default#calendarsettings) property contains two key configurations:
 
 - **Project Calendar**: Defines working hours and holidays for the entire project, applied to all tasks by default
 - **Task Calendars**: Defines custom working hours and holidays for specific tasks, enabling team-specific or shift-based scheduling
 
 ## Project calendar
 
-The [calendarSettings.projectCalendar](../api/gantt/calendarSettingsModel#projectcalendar) defines the default working hours and non-working days for the entire project. All tasks follow the project calendar unless assigned a task-specific calendar.
+The [calendarSettings.projectCalendar](https://ej2.syncfusion.com/javascript/documentation/api/gantt/calendarSettingsModel#projectcalendar) defines the default working hours and non-working days for the entire project. All tasks follow the project calendar unless assigned a task-specific calendar.
 
 ### Configure project working hours and exceptions
 
@@ -59,7 +59,7 @@ Task calendars enable specific tasks to use custom working hours and holidays in
 
 ### Assign task-specific calendars with exceptions
 
-To assign a custom calendar to a task, first define the calendar in [calendarSettings.taskCalendar](../api/gantt/calendarSettingsModel#taskcalendar), then reference it using the [calendarId](../api/gantt/taskFieldsModel#calendarid) property in the task data. Calendar exceptions allow defining specific dates with custom working hours, enabling team-specific scheduling adjustments such as split shifts or holidays that differ from the main schedule.
+To assign a custom calendar to a task, first define the calendar in [calendarSettings.taskCalendar](https://ej2.syncfusion.com/javascript/documentation/api/gantt/calendarSettingsModel#taskcalendar), then reference it using the [calendarId](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFieldsModel#calendarid) property in the task data. Calendar exceptions allow defining specific dates with custom working hours, enabling team-specific scheduling adjustments such as split shifts or holidays that differ from the main schedule.
 
 When a task is assigned a calendar through `calendarId`, that task follows only the assigned task calendar. The assigned task calendar overrides the project calendar for that task. Working days, holidays, and calendar exceptions defined in the assigned calendar are used when calculating the task schedule and working duration. Other task calendars are not considered when scheduling that task.
 
@@ -93,7 +93,7 @@ Task calendars can include holidays that override project calendar holidays for 
 
 ## Configure hours per day for task durations
 
-The [hoursPerDay](../api/gantt#hoursperday) property defines the number of hours used to represent one day when calculating task durations. Changing `hoursPerDay` recalculates day-based duration values using the existing working duration of the task. This affects how duration is displayed and calculated in days, but does not modify the task's start date, end date, or underlying working duration.
+The [hoursPerDay](https://ej2.syncfusion.com/javascript/documentation/api/gantt/index-default#hoursperday) property defines the number of hours used to represent one day when calculating task durations. Changing `hoursPerDay` recalculates day-based duration values using the existing working duration of the task. This affects how duration is displayed and calculated in days, but does not modify the task's start date, end date, or underlying working duration.
 
 For example, a task with 32 hours of working duration is displayed as 4 days when `hoursPerDay` is set to 8. If `hoursPerDay` is changed to 16, the same task is displayed as 2 days. The task schedule remains unchanged because the underlying working duration is not modified.
 
@@ -116,13 +116,13 @@ Calendar settings directly affect how task duration is calculated and when tasks
 
 - **Working hours**: Task durations ignore non-working hours. A 2-day task completed during 9 AM-5 PM working hours uses the same elapsed time as a 2-day task across multiple days with shorter working hours
 - **Holidays**: Tasks skip over holiday dates, extending the end date accordingly to maintain the required working duration
-- **Weekends**: By default, weekends are treated as non-working days when [includeWeekend](../api/gantt#includeweekend) is set to **false**
+- **Weekends**: By default, weekends are treated as non-working days when [includeWeekend](https://ej2.syncfusion.com/javascript/documentation/api/gantt/index-default#includeweekend) is set to **false**
 - **Task dependencies**: Dependency calculations use the predecessor task's calendar to determine when the successor task can start
 - **Task calendars**: Tasks without an assigned task calendar follow the project calendar. Tasks with an assigned task calendar use the working hours, holidays, and exceptions defined in that calendar for scheduling and duration calculations.
 - **Duration calculations**: Changing `hoursPerDay` recalculates day-based duration values without changing the scheduled start and end dates.
 
 ## See also
 
-- [How to configure holidays?](../gantt/holidays)
-- [How to include weekends in scheduling?](../gantt/task-scheduling#include-weekends)
-- [How to work with task fields?](../gantt/task-scheduling#task-fields)
+- [How to configure holidays?](https://help.syncfusion.com/gantt-sdk/javascript/GANTT_CHART/holidays)
+- [How to include weekends in scheduling?](https://help.syncfusion.com/gantt-sdk/javascript/GANTT_CHART/task-scheduling#include-weekends)
+- [How to work with task fields?](https://help.syncfusion.com/gantt-sdk/javascript/GANTT_CHART/task-scheduling#task-fields)

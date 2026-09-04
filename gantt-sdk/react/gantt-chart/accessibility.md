@@ -231,7 +231,7 @@ The sample demonstrates complete keyboard navigation functionality, screen reade
 
 ## See also
 
-- [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> React components](../common/accessibility)
-- [Keyboard Navigation in React Gantt Chart component](./keyboard-navigation)
+- [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> React components](https://ej2.syncfusion.com/react/documentation/common/accessibility)
+- [Keyboard Navigation in React Gantt Chart component](https://ej2.syncfusion.com/react/documentation/common/accessibility#keyboard-navigation-support)
 - [WCAG 2.2 Guidelines](https://www.w3.org/TR/WCAG22/)
 - [Section 508 Standards](https://www.section508.gov/)

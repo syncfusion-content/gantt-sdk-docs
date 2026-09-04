@@ -14,7 +14,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 ## Localization
 
-The [Localization](../common/localization) library allows you to localize default text content of the Gantt.
+The [Localization](https://ej2.syncfusion.com/vue/documentation/common/globalization/overview) library allows you to localize default text content of the Gantt.
 The Gantt Chart component has static text on some features (like toolbar area text, etc.)
 that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the
 [locale](https://ej2.syncfusion.com/vue/documentation/api/gantt#locale) value and translation object.
@@ -139,7 +139,7 @@ The below example demonstrates the Gantt in **Deutsch** culture.
 
 ## Internationalization
 
-The [Internationalization](../common/internationalization) library is used to globalize number, date, and time values in gantt component.
+The [Internationalization](https://ej2.syncfusion.com/vue/documentation/common/globalization/overview) library is used to globalize number, date, and time values in gantt component.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -172,5 +172,5 @@ RTL provides an option to switch the text direction and layout of the Gantt Char
 
 ## See Also
 
-* [Internationalization](../common/internationalization)
-* [Localization](../common/localization)
+* [Internationalization](https://ej2.syncfusion.com/vue/documentation/common/globalization/overview)
+* [Localization](https://ej2.syncfusion.com/vue/documentation/common/globalization/overview)
