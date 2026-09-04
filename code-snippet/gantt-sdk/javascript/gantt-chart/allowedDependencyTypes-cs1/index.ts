@@ -14,7 +14,7 @@ let gantt: Gantt = new Gantt({
     dependency: 'Predecessor',
     parentID: 'ParentID'
   },
-  // allowedDependencyTypes: ['SF'],
+  allowedDependencyTypes: ['SF'],
   editSettings: {
     allowAdding: true,
     allowEditing: true,

@@ -9,7 +9,7 @@ var ganttChart = new ej.gantt.Gantt({
     dependency: 'Predecessor',
     parentID: 'ParentID'
   },
- // allowedDependencyTypes: ['SF'],
+  allowedDependencyTypes: ['SF'],
   editSettings: {
     allowAdding: true,
     allowEditing: true,
