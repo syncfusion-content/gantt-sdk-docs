@@ -33,12 +33,12 @@ The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-
 - [**Task editing**](./managing-tasks/editing-tasks) - Edit tasks inline, through dialogs, or by dragging taskbars
 - [**Task dependencies**](./task-dependency) - Define relationships using finish-to-start, start-to-finish, start-to-start, and finish-to-finish types
 - [**Undo and redo**](./undo-redo) - Revert or reapply recent actions in the Gantt Chart
-- [**Task scheduling**](./task-scheduling) - Configure automatic or manual task scheduling modes
+- [**Task scheduling**](./scheduling-tasks) - Configure automatic or manual task scheduling modes
 - [**Splitting tasks**](./managing-tasks/splitting-and-merging-tasks) - Split tasks into multiple segments and merge them back
 
 ## Timeline and visualization
 
-- [**Customizable timeline**](./timeline) - Configure timeline tiers from minutes to decades with custom text
+- [**Customizable timeline**](./timeline/timeline) - Configure timeline tiers from minutes to decades with custom text
 - [**Zooming**](./timeline/zooming) - Zoom in and out to view tasks at different time scales
 - [**Taskbars**](./taskbar) - Customize taskbar appearance and display baselines for planned vs actual progress
 - [**Critical path**](./critical-path) - Identify task sequences that determine project completion dates

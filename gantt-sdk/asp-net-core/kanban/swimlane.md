@@ -28,7 +28,7 @@ Cards can be grouped based on [`keyField`](https://help.syncfusion.com/cr/aspnet
 {% endtabs %}
 Output be like the below.
 
-![kanban](.images/swimlane-row.PNG)
+![kanban](./images/swimlane-row.PNG)
 
 ## Custom row text
 

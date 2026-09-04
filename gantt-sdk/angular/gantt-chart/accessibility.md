@@ -193,7 +193,7 @@ The sample demonstrates complete keyboard navigation functionality, screen reade
 
 ## See also
 
-* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components](../common/accessibility)
-* [Keyboard Navigation in Angular Gantt Chart component](./keyboard-navigation)
+* Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components
+* [Keyboard Navigation in Angular Gantt Chart component](#keyboard-navigation)
 * [WCAG 2.2 Guidelines](https://www.w3.org/TR/WCAG22/)
 * [Section 508 Standards](https://www.section508.gov/)

@@ -587,7 +587,7 @@ The following example customizes timeline tooltips:
 
 ## Tooltip Touch interaction
 
-To perform touch and hold action on a element, refer to [tooltip popup](tooltip#tooltip).
+To perform touch and hold action on a element, refer to [tooltip popup](#configure-tooltips).
 
 ## See also
 - [How to configure task dependencies?](https://ej2.syncfusion.com/react/documentation/gantt/task-dependency)

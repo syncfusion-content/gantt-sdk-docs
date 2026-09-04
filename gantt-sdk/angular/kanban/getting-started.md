@@ -238,4 +238,3 @@ For reference, the complete sample used in this section is shown below. The data
 - [Kanban data binding](./data-binding)
 - [Kanban dialog](./dialog)
 - [Kanban swimlane](./swimlane)
-- [Kanban priority](./priority)

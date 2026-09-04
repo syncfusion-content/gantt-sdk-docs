@@ -34,11 +34,11 @@ window.localStorage.setItem('ganttGantt', JSON.stringify(model)); //"ganttGantt"
 
 ## Prevent columns from persisting
 
-When the [EnablePersistence](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnablePersistence) property is set to true, the Gantt properties such as [Filtering](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowFiltering), [Sorting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowSorting), and [Columns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Columns) will persist. You can use the `addOnPersist` method to prevent these Gantt properties from persisting.
+When the [EnablePersistence](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnablePersistence) property is set to true, the Gantt properties such as [Filtering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowFiltering), [Sorting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowSorting), and [Columns](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Columns) will persist. You can use the `addOnPersist` method to prevent these Gantt properties from persisting.
 
-The following example demonstrates how to prevent Gantt columns from persisting. In the [DataBound](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataBound) event of the Gantt, you can override the `addOnPersist` method and remove the columns from the key list given for persistence.
+The following example demonstrates how to prevent Gantt columns from persisting. In the [DataBound](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataBound) event of the Gantt, you can override the `addOnPersist` method and remove the columns from the key list given for persistence.
 
-N> When the [EnablePersistence](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnablePersistence) property is set to true, the Gantt properties such as column template, column formatter, header text, and value accessor will not persist.
+N> When the [EnablePersistence](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnablePersistence) property is set to true, the Gantt properties such as column template, column formatter, header text, and value accessor will not persist.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -51,7 +51,7 @@ N> When the [EnablePersistence](https://help.syncfusion.com/cr/aspnetmvc-js2/Syn
 
 ## Persist the header template and header Text
 
-By default, the Gantt properties such as column template, header text, header template, column formatter, and value accessor will not persist when [EnablePersistence](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnablePersistence) is set to true. Because the column template and header text can be customized at the application level.
+By default, the Gantt properties such as column template, header text, header template, column formatter, and value accessor will not persist when [EnablePersistence](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnablePersistence) is set to true. Because the column template and header text can be customized at the application level.
 
 If you wish to restore all these column properties, then you can achieve it by cloning the gantt’s columns property using JavaScript Object’s assign method and storing this along with the persist data manually. While restoring the settings, this column object must be assigned to the gantt’s columns property to restore the column settings as demonstrated in the following sample.
 

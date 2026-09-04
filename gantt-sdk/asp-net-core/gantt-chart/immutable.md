@@ -14,7 +14,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk/overview
 
 The immutable mode optimizes the Gantt re-rendering performance by using object reference comparison and deep equality checks. When performing the Gantt actions, it will only re-render the modified or newly added rows and prevent the re-rendering of the unchanged rows.
 
-To enable this feature, you have to set the [`enableImmutableMode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableImmutableMode) property as **true**.
+To enable this feature, you have to set the [`enableImmutableMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableImmutableMode) property as **true**.
 
 > This feature uses the primary key value for data comparison. So, you need to provide the `isPrimaryKey` column.
 

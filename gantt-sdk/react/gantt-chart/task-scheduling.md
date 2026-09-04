@@ -78,7 +78,7 @@ When the [taskMode](https://ej2.syncfusion.com/react/documentation/api/gantt#tas
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/task-scheduling-cs3" %} -->
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/task-scheduling-cs3" %}
 
 ## Unscheduled Tasks
 
