@@ -203,23 +203,19 @@ import { GanttModule, IGanttData } from "@syncfusion/ej2-angular-gantt";
       [taskbarTemplate]="taskbarTemplate"
     >
     </ejs-gantt>
-    <ng-template #taskbarTemplate let-data="data">
-      <div
-        class="e-gantt-child-taskbar-inner-div e-gantt-child-taskbar"
+    <ng-template #taskbarTemplate let-data>
+      <div class="e-gantt-child-taskbar-inner-div e-gantt-child-taskbar"
         style="height:22px; margin-top: -1px"
         tabindex="-1"
         [style.width.px]="data.ganttProperties.width"
       >
-        <div
-          class="e-gantt-child-progressbar-inner-div e-gantt-child-progressbar"
-          style="border-style:solid;height:100%;border-top-right-radius:0px;border-bottom-right-radius:0px;"
-          [style.width.px]="calculateProgressWidth(data)"
-        ></div>
-        <div class="e-notification-badge-container">
-          <span
-            class="e-badge e-badge-secondary e-badge-notification e-badge-overlap"
-            >{{ data.ganttProperties.progress }}%</span
-          >
+        <div class="e-gantt-child-progressbar-inner-div       e-gantt-child-progressbar"
+        style="border-style:solid;height:100%;border-top-right-radius:0px;border-bottom-right-radius:0px;"
+        [style.width.px]="calculateProgressWidth(data)">
+          <span class="e-task-label"
+            style="line-height:21px; text-align:left;display:inline-block;width:122px; height:22px;"
+            >{{ data.Progress }}
+          </span>
         </div>
       </div>
     </ng-template>`,
