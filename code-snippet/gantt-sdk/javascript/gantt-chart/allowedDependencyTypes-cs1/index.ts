@@ -12,9 +12,9 @@ let gantt: Gantt = new Gantt({
     duration: 'Duration',
     progress: 'Progress',
     dependency: 'Predecessor',
-    child: 'subtasks'
+    parentID: 'ParentID'
   },
-  allowedDependencyTypes: ['SF'],
+  // allowedDependencyTypes: ['SF'],
   editSettings: {
     allowAdding: true,
     allowEditing: true,
