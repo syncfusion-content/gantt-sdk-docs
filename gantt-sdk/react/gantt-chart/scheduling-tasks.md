@@ -119,8 +119,8 @@ The Gantt Chart component supports the following duration units:
 - **Day**: Standard for general planning.
 - **Hour**: For detailed task management.
 - **Minute**: For short-duration tasks.
-- **Week**: Represents a duration calculated using the configured [daysPerWeek](https://ej2.syncfusion.com/javascript/documentation/api/gantt#daysperweek) value.
-- **Month**: Represents a duration calculated using the configured [daysPerMonth](https://ej2.syncfusion.com/javascript/documentation/api/gantt#dayspermonth) value.
+- **Week**: Represents a duration calculated using the configured [daysPerWeek](https://ej2.syncfusion.com/react/documentation/api/gantt#daysperweek) value.
+- **Month**: Represents a duration calculated using the configured [daysPerMonth](https://ej2.syncfusion.com/react/documentation/api/gantt#dayspermonth) value.
 
 Configure using:
 
