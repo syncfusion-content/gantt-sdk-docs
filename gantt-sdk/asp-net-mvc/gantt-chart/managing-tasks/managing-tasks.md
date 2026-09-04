@@ -163,7 +163,7 @@ In the example below:
 
 - The `dependency` tab enables [sorting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowSorting) and [toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) options.
 - The `segments` tab enables `sorting` and `toolbar` options and includes a new column `newData` defined with a specified [field](https://help.syncfusion.com/cr/aspnetmvc-js2#Syncfusion_EJ2_Grids_GridColumn_Field).
-- The `resources` tab defines a new column `Segment Task` with specific properties such as `field`, [width](https://ej2.syncfusion.com/documentation/api/grid/columnmodel#width) and [headerText](https://help.syncfusion.com/cr/aspnetmvc-js2#Syncfusion_EJ2_Grids_GridColumn_HeaderText).
+- The `resources` tab defines a new column `Segment Task` with specific properties such as `field`, [width](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Width) and [headerText](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_HeaderText).
   These customizations are applied to both `addDialogFields` and `editDialogFields` settings.
 
 {% tabs %}
