@@ -54,9 +54,11 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript Gantt Chart cont
 
 ## Serial number column
 
-The **Serial Number** feature automatically generates sequential row numbers for records displayed in the Gantt Chart. To enable this feature, set the [enableSerialNumber](https://ej2.syncfusion.com/documentation/api/gantt#enableserialnumber) property to **true**. When enabled, serial numbers are assigned based on the current visible row order without requiring a dedicated field in the data source.
+The **Serial Number** feature automatically generates sequential row numbers for records displayed in the Gantt Chart. To enable this feature, set the [enableSerialNumber](https://ej2.syncfusion.com/documentation/api/gantt#enableserialnumber) property to **true**. Additionally, you need to define a dedicated column in the [columns](https://ej2.syncfusion.com/documentation/api/gantt#columns) configuration with its [field](https://ej2.syncfusion.com/documentation/api/gantt/column#field) property set as **SerialNumber** to display the generated serial numbers. When enabled, serial numbers are assigned based on the current visible row order without requiring a dedicated field in the data source.
 
-Serial numbers are generated dynamically starting from **1** and are displayed through the Serial Number column. The numbering is automatically updated whenever the row order changes due to actions such as filtering, searching, expand/collapse operations, indent/outdent actions, CRUD operations, row drag-and-drop, and data refresh.
+Serial numbers are automatically recalculated whenever the visible row sequence changes. This includes operations such as filtering, searching, sorting, expanding or collapsing parent tasks, indenting or outdenting tasks, adding, editing, or deleting records, row drag-and-drop, and data refresh. As a result, the serial number column always reflects the latest row order currently displayed in the Gantt Chart.
+
+The feature works consistently with hierarchical data and updates the numbering across all visible records, ensuring that users can easily identify and reference rows regardless of changes made to the task hierarchy or displayed data set
 
 The following example demonstrates how to enable the auto-generated Serial Number column in the Gantt Chart:
 

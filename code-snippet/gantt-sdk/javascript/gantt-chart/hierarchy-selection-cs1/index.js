@@ -13,11 +13,6 @@ var gantt = new ej.gantt.Gantt({
         dependency: 'Predecessor',
         parentID: 'ParentID'
     },
-    selectionSettings: {
-        mode: 'Cell',
-        type: 'Multiple',
-        toogle: false
-    },
     toolbar: ['Search'],
     filterSettings: {
         type: 'Menu'

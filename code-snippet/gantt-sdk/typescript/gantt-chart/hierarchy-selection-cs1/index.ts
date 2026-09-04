@@ -17,11 +17,6 @@ let gantt: Gantt = new Gantt({
         dependency: 'Predecessor',
         parentID: 'ParentID'
     },
-    selectionSettings: {
-        mode: 'Cell',
-        type: 'Multiple',
-        toogle: false
-    },
     toolbar: ['Search'],
     filterSettings: {
         type: 'Menu'
