@@ -42,7 +42,7 @@ You can select a row at the time of loading by setting the index of the row to t
 
 ## Selecting a row dynamically
 
-You can select a single row dynamically using the [`selectRow`](https://ej2.syncfusion.com/vue/documentation/api/gantt/selection#selectrow) method. Similarly, you can use the [`selectRows`](https://ej2.syncfusion.com/vue/documentation/api/gantt/selection#selectrows) method to dynamically select multiple rows. The following code demonstrates how to select a single or multiple rows dynamically by clicking the custom button.
+You can select a single row dynamically using the [`selectRow`](https://ej2.syncfusion.com/documentation/api/gantt/selection#selectrow) method. Similarly, you can use the [`selectRows`](https://ej2.syncfusion.com/documentation/api/gantt/selection#selectrows) method to dynamically select multiple rows. The following code demonstrates how to select a single or multiple rows dynamically by clicking the custom button.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

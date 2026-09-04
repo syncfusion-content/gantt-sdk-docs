@@ -330,4 +330,3 @@ npm list @syncfusion/ej2-react-kanban
 - [Kanban data binding](./data-binding.md)
 - [Kanban dialog](./dialog.md)
 - [Kanban swimlane](./swimlane.md)
-- [Kanban priority](./priority.md)

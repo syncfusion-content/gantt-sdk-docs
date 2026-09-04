@@ -31,6 +31,6 @@ The Gantt chart is a project management tool which provides a Microsoft Project-
 * [**Toolbar**](./toolbar): Managing the Gantt data using toolbars.
 * [**Rows**](./rows): Customizes the rows and adds the custom rows to the Gantt chart at initialization and dynamically.
 * [**Selection**](./selection): Customizes the row and cell selection to the Gantt chart at initialization and dynamically.
-* [**Data markers or indicators**](./appearance-customization): Displays indicators and flags along with taskbars and task labels.
+* [**Data markers or indicators**](./data-markers): Displays indicators and flags along with taskbars and task labels.
 * [**Event markers**](./eventmarkers): Highlights important days or events in a project using the event markers.
 * [**Holidays**](./holidays): Defines non-working days in a project using holidays.

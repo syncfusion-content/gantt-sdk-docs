@@ -385,7 +385,7 @@ Refer to the [swimlane configuration](./swimlane) for the complete list of optio
 * [Swimlane configuration](./swimlane)
 * [Cards and card fields](./cards)
 * [Data binding](./data-binding)
-* [Remote data binding with ODataV4](./odataV4)
+* [Remote data binding with ODataV4](./data-binding#odata-v4-services)
 * [Sorting and filtering cards](./sort)
 * [Responsive mode](./responsive-mode)
 * [Accessibility](./accessibility)
