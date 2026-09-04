@@ -7,7 +7,7 @@ var ganttChart = new ej.gantt.Gantt({
     duration: 'Duration',
     progress: 'Progress',
     dependency: 'Predecessor',
-    child: 'subtasks'
+    parentID: 'ParentID'
   },
   allowedDependencyTypes: ['SF'],
   editSettings: {

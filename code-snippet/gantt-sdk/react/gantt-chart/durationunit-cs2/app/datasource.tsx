@@ -1,53 +1,12 @@
-export let data: Object[]  = [
-    {
-        TaskID: 1,
-        TaskName: 'Project Initiation',
-        StartDate: new Date('04/02/2019'),
-        EndDate: new Date('04/21/2019'),
-        isParent:true,
-        subtasks: [
-            { TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 2, DurationUnit:'day', Progress: 50,isParent:false },
-            { TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 12,DurationUnit:'hour', Progress: 70, resources: [2, 3, 5],isParent:false   },
-            { TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2019'), Duration: 240,DurationUnit:'minute', Predecessor:"2FS", Progress: 80,isParent:false  },
-        ]
-    },
-    {
-        TaskID: 5,
-        TaskName: 'Project Estimation',
-        StartDate: new Date('04/02/2019'),
-        EndDate: new Date('04/21/2019'),
-        isParent:true,
-        subtasks: [
-            { TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2019'), Duration: 3, DurationUnit:'hour', Progress: 50, resources: [4],isParent:false  },
-            { TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2019'), Duration: 3, Progress: 50, DurationUnit:'day', resources: [4, 8],isParent:false  },
-            { TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2019'), Duration: 480,Predecessor:"6SS", DurationUnit:'minute', Progress: 70, resources: [12, 5],isParent:false  }
-        ]
-    },
-];
-
-export let ganttData: Object[]  = [
-    {
-        TaskID: 1,
-        TaskName: 'Project Initiation',
-        StartDate: new Date('04/02/2019'),
-        EndDate: new Date('04/21/2019'),
-        isParent:true,
-        subtasks: [
-            { TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: '3days', DurationUnit:'day', Progress: 50,isParent:false },
-            { TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: '12hours',DurationUnit:'hour', Progress: 70, resources: [2, 3, 5],isParent:false   },
-            { TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2019'), Duration: '1800minutes',DurationUnit:'minute', Predecessor:"2FS", Progress: 80,isParent:false  },
-        ]
-    },
-    {
-        TaskID: 5,
-        TaskName: 'Project Estimation',
-        StartDate: new Date('04/02/2019'),
-        EndDate: new Date('04/21/2019'),
-        isParent:true,
-        subtasks: [
-            { TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2019'), Duration: '12hours', DurationUnit:'hour', Progress: 50, resources: [4],isParent:false  },
-            { TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2019'), Duration: '3days', Progress: 50, DurationUnit:'day', resources: [4, 8],isParent:false  },
-            { TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2019'), Duration: '480minutes',Predecessor:"6SS", DurationUnit:'minute', Progress: 70, resources: [12, 5],isParent:false  }
-        ]
-    },
+export let GanttData: Object[] = [
+  { TaskID: 1, TaskName: 'Project Planning', ParentID: null, StartDate: new Date('04/02/2019'), EndDate: new Date('04/21/2019'), isParent: true },
+  { TaskID: 2, TaskName: 'Planning Phase', ParentID: 1, StartDate: new Date('04/02/2019'), Duration: 1, DurationUnit: 'week', Progress: 50, isParent: false },
+  { TaskID: 3, TaskName: 'Resource Allocation', ParentID: 1, StartDate: new Date('04/09/2019'), Duration: 2, DurationUnit: 'week', Predecessor: '2FS', Progress: 70, isParent: false },
+  { TaskID: 4, TaskName: 'Design Phase', ParentID: null, StartDate: new Date('04/23/2019'), EndDate: new Date('05/21/2019'), isParent: true },
+  { TaskID: 5, TaskName: 'Design Mockups', ParentID: 4, StartDate: new Date('04/23/2019'), Duration: 1, DurationUnit: 'month', Progress: 60, isParent: false },
+  { TaskID: 6, TaskName: 'Design Review', ParentID: 4, StartDate: new Date('05/21/2019'), Duration: 1, DurationUnit: 'week', Predecessor: '5FS', Progress: 40, isParent: false },
+  { TaskID: 7, TaskName: 'Development', ParentID: null, StartDate: new Date('05/28/2019'), EndDate: new Date('07/21/2019'), isParent: true },
+  { TaskID: 8, TaskName: 'Backend Development', ParentID: 7, StartDate: new Date('05/28/2019'), Duration: 2, DurationUnit: 'week', Progress: 35, isParent: false },
+  { TaskID: 9, TaskName: 'Frontend Development', ParentID: 7, StartDate: new Date('06/11/2019'), Duration: 1, DurationUnit: 'month', Predecessor: '8FS', Progress: 25, isParent: false },
+  { TaskID: 10, TaskName: 'Testing', ParentID: 7, StartDate: new Date('07/09/2019'), Duration: 2, DurationUnit: 'week', Predecessor: '9FS', Progress: 10, isParent: false }
 ];

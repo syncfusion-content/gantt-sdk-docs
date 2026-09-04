@@ -20,8 +20,8 @@ To enable selection functionality, inject the [Selection](https://ej2.syncfusion
 
 The Gantt Chart component supports two types of selection that can be set by using the [selectionSettings.type](https://ej2.syncfusion.com/react/documentation/api/gantt/selectionSettings#type) property. They are:
 
-* **Single:** Allows selection of only one row or cell at a time. This is the default behavior.
-* **Multiple:** Enables selection of multiple rows or cells. To perform multi-selection, press and hold the **Ctrl** key (on Windows/Linux) or **Cmd** key (on macOS) while clicking the desired rows or cells.
+- **Single:** Allows selection of only one row or cell at a time. This is the default behavior.
+- **Multiple:** Enables selection of multiple rows or cells. To perform multi-selection, press and hold the **Ctrl** key (on Windows/Linux) or **Cmd** key (on macOS) while clicking the desired rows or cells.
 
 The following video demonstrates how selection works in the React Gantt Chart:
 
@@ -29,11 +29,11 @@ The following video demonstrates how selection works in the React Gantt Chart:
 
 ## Selection mode
 
-The Gantt Chart component supports three types of selection modes, which can be set using the [selectionSettings.mode](https://ej2.syncfusion.com/react/documentation/api/gantt/selectionSettings#mode) property: 
+The Gantt Chart component supports three types of selection modes, which can be set using the [selectionSettings.mode](https://ej2.syncfusion.com/react/documentation/api/gantt/selectionSettings#mode) property:
 
-* **Row:** Allows selection of rows only. This is the default mode.
-* **Cell:** Allows selection of cells only.
-* **Both:** Allows selection of both rows and cells at the same time.
+- **Row:** Allows selection of rows only. This is the default mode.
+- **Cell:** Allows selection of cells only.
+- **Both:** Allows selection of both rows and cells at the same time.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
@@ -46,7 +46,7 @@ The Gantt Chart component supports three types of selection modes, which can be 
 {% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs11/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/selection-cs11" %}
 
 ## Toggle selection
@@ -66,12 +66,40 @@ When enabled, clicking a selected row or cell will deselect it, and clicking it 
 {% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs12/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/selection-cs12" %}
+
+## Hierarchy checkbox selection
+
+The hierarchy checkbox selection feature allows you to select or deselect parent and child records through checkboxes. To enable this, set the [hierarchyCheckboxMode](https://ej2.syncfusion.com/react/documentation/api/gantt#hierarchycheckboxmode) property, and define a dedicated column with the field name **CheckBox** in the [columns](https://ej2.syncfusion.com/react/documentation/api/gantt#columns) configuration.
+
+### Hierarchy Checkbox Mode
+
+The [hierarchyCheckboxMode](https://ej2.syncfusion.com/react/documentation/api/gantt#hierarchycheckboxmode) property allows you to configure how checkbox selection is propagated across parent and child task records using different hierarchy modes. The following modes are supported:
+
+- **Self:** Selecting a record's checkbox selects only that record. Even if the record is a parent or a child, its selection state does not affect any other records in the hierarchy.
+- **Hierarchy:** Selecting a record's checkbox selects all its descendant and parent records. For example, when you select a parent record, all of its child records are selected, and when you select a child record, its parent record reflects the selection state accordingly. This is the default behavior of the [hierarchyCheckboxMode](https://ej2.syncfusion.com/react/documentation/api/gantt#hierarchycheckboxmode) property.
+- **FilteredHierarchy:** The behavior is similar to **Hierarchy** mode, but checkbox propagation is applied only to the records that are currently visible after filtering or searching. Records that are hidden by the filter remain unaffected by the selection.
+
+The following example demonstrates how to enable checkbox-based row selection with the **Hierarchy** mode:
+
+{% tabs %}
+{% highlight js tabtitle="index.jsx" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/hierarchy-selection-cs1/app/index.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="index.tsx" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/hierarchy-selection-cs1/app/index.tsx %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/hierarchy-selection-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/hierarchy-selection-cs1" %}
 
 ## Persist selection
 
-Persist Selection retains selected tasks even after performing actions such as sorting, filtering, or refreshing the data. To enable this, set `selectionSettings.persistSelection` to **true**.  
+Persist Selection retains selected tasks even after performing actions such as sorting, filtering, or refreshing the data. To enable this, set `selectionSettings.persistSelection` to **true**.
 
 > Cell selection is not supported by the persistence feature.
 
@@ -86,7 +114,7 @@ Persist Selection retains selected tasks even after performing actions such as s
 {% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs23/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/selection-cs23" %}
 
 ## Hover highlighting
@@ -108,7 +136,7 @@ The following code example shows how to enable the hover highlighting in Gantt.
 {% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs16/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/selection-cs16" %}
 
 ## Clear selection
@@ -126,7 +154,7 @@ To clear selected rows and cells in the Gantt Chart component, use the [clearSel
 {% include code-snippet/gantt-sdk/react/gantt-chart/selection-cs13/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/selection-cs13" %}
 
 ## Touch interaction
