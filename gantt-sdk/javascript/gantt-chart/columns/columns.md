@@ -52,6 +52,27 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Gantt Chart cont
 
 > To learn more about how to render boolean values as checkboxes in a Syncfusion<sup style="font-size:70%">&reg;</sup> GanttColumn, please refer to the [Render Boolean Values as Checkbox](https://ej2.syncfusion.com/javascript/documentation/gantt/columns/columns#render-boolean-value-as-checkbox) section.
 
+## Serial number column
+
+The **Serial Number** feature automatically generates sequential row numbers for records displayed in the Gantt Chart. To enable this feature, set the [enableSerialNumber](https://ej2.syncfusion.com/javascript/documentation/api/gantt#enableserialnumber) property to **true**. Additionally, you need to define a dedicated column in the [columns](https://ej2.syncfusion.com/javascript/documentation/api/gantt#columns) configuration with its [field](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#field) property set as **SerialNumber** to display the generated serial numbers. When enabled, serial numbers are assigned based on the current visible row order without requiring a dedicated field in the data source.
+
+Serial numbers are automatically recalculated whenever the visible row sequence changes. This includes operations such as filtering, searching, sorting, expanding or collapsing parent tasks, indenting or outdenting tasks, adding, editing, or deleting records, row drag-and-drop, and data refresh. As a result, the serial number column always reflects the latest row order currently displayed in the Gantt Chart.
+
+The feature works consistently with hierarchical data and updates the numbering across all visible records, ensuring that users can easily identify and reference rows regardless of changes made to the task hierarchy or displayed data set
+
+The following example demonstrates how to enable the auto-generated Serial Number column in the Gantt Chart:
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt-sdk/javascript/gantt-chart/serialnumber-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt-sdk/javascript/gantt-chart/serialnumber-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/serialnumber-cs1" %}
+
 ## Column width
 
 In Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt for JavaScript, column width can be adjusted using the [width](https://ej2.syncfusion.com/javascript/documentation/api/gantt#width) property within the [column](https://ej2.syncfusion.com/javascript/documentation/api/gantt#columns) configuration. This property accepts values in pixels (e.g., **100**) or percentages (e.g., **25%**) to define the column's width relative to the Gantt container.
@@ -296,7 +317,7 @@ The following sample hides the checkbox for the row with `ariaRowIndex` set to 3
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/checkbox-cs2" %}
 
-## AutoFit columns
+## Autofit columns
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control for JavaScript supports automatic column width adjustment based on content. Double-clicking the column header resizer adjusts the width to fit the maximum content, ensuring clear data visibility without wrapping.
 

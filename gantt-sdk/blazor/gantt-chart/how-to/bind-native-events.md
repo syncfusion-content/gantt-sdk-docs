@@ -30,7 +30,7 @@ Interaction Keys |Description
 {% highlight razor tabtitle="Home.razor" %}
 
 <SfGantt @ref=Gantt DataSource="@TaskCollection" @onkeydown="KeyDown" @onkeyup="KeyUp" Height="450px" Width="700px">
-    <GanttTaskFields Id="TaskID" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentID">
+    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentID">
     </GanttTaskFields>
     <GanttSelectionSettings Mode="Syncfusion.Blazor.Grids.SelectionMode.Row" Type="Syncfusion.Blazor.Grids.SelectionType.Multiple"></GanttSelectionSettings>
     <GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true"></GanttEditSettings>
@@ -80,7 +80,7 @@ Interaction Keys |Description
                         {
                             TaskCollection.Remove(TaskCollection.Where(x => x.TaskID == i.TaskID).FirstOrDefault());
                         }
-                        Gantt.RefreshAsync();
+                        await Gantt.RefreshAsync();
                     }
                 }
             }
@@ -96,7 +96,7 @@ Interaction Keys |Description
             //Insert the duplicate record here
             TaskCollection.Insert((int)SelectedIndex + 1, SelectedRecords);
             //Refresh the Gantt data.
-            Gantt.RefreshAsync();
+            await Gantt.RefreshAsync();
         }
     }
     private async Task KeyUp(KeyboardEventArgs Args)
@@ -141,7 +141,7 @@ Interaction Keys |Description
     }
     public class TaskData
     {
-        public int TaskID { get; set; }
+        public int TaskId { get; set; }
         public string TaskName { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }

@@ -358,7 +358,7 @@ The following example customizes timeline tooltips:
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/timelineTooltip-cs1" %}
 
-## Tooltip Touch interaction
+## Tooltip touch interaction
 
 To perform touch and hold action on a element, refer to [tooltip popup](https://ej2.syncfusion.com/documentation/api/tooltip#tooltip).
 

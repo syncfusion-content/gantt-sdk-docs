@@ -18,7 +18,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 
 ## OnActionFailure
 
-[OnActionFailure](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_OnActionFailure) event trigger when any Gantt Chart action failed to achieve the desired results. By using this event the error details and their cause is achieved. In the following sample, the wrong field name has been provided for the IdMapping property, so that it will throw the OnActionFailure event.
+[OnActionFailure](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_OnActionFailure) event trigger when any Gantt Chart action failed to achieve the desired results. Using this event, the error details and their cause is achieved. In the following sample, the wrong field name has been provided for the IdMapping property, so that it will throw the OnActionFailure event.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -75,7 +75,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 
 ## Created
 
-[Created](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_Created) event triggers when the Gantt Chart component is created. The Gantt Chart properties can be modified by using this event.
+[Created](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_Created) event triggers when the Gantt Chart component is created. The Gantt Chart properties can be modified using this event.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -243,7 +243,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 
 ## Destroyed
 
-[Destroyed](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_Destroyed) event triggers when the Gantt Chart component is destroyed. By using this event, confirm that the Gantt Chart gets destroyed.
+[Destroyed](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_Destroyed) event triggers when the Gantt Chart component is destroyed. Using this event, confirm that the Gantt Chart gets destroyed.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
