@@ -54,27 +54,24 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Gantt Chart cont
 
 ## Serial number column
 
-The Serial Number feature generates sequential row numbers for the records displayed in the Gantt Chart. Set [enableSerialNumber](https://ej2.syncfusion.com/angular/documentation/api/gantt#enableserialnumber) to **true** and define a column whose `field` is **SerialNumber**.
+The **Serial Number** feature automatically generates sequential row numbers for records displayed in the Gantt Chart. To enable this feature, set the [enableSerialNumber](https://ej2.syncfusion.com/javascript/documentation/api/gantt#enableserialnumber) property to **true**. Additionally, you need to define a dedicated column in the [columns](https://ej2.syncfusion.com/javascript/documentation/api/gantt#columns) configuration with its [field](https://ej2.syncfusion.com/javascript/documentation/api/gantt/column#field) property set as **SerialNumber** to display the generated serial numbers. When enabled, serial numbers are assigned based on the current visible row order without requiring a dedicated field in the data source.
 
-Serial numbers are calculated from the current visible row order and do not require a field in the data source. They are recalculated after filtering, searching, sorting, expanding or collapsing records, indenting or outdenting tasks, CRUD operations, row drag-and-drop, and data refresh. The numbering therefore remains consistent with hierarchical data and the current view.
+Serial numbers are automatically recalculated whenever the visible row sequence changes. This includes operations such as filtering, searching, sorting, expanding or collapsing parent tasks, indenting or outdenting tasks, adding, editing, or deleting records, row drag-and-drop, and data refresh. As a result, the serial number column always reflects the latest row order currently displayed in the Gantt Chart.
 
-The following example enables serial numbers with sorting, filtering, editing, and row drag-and-drop:
+The feature works consistently with hierarchical data and updates the numbering across all visible records, ensuring that users can easily identify and reference rows regardless of changes made to the task hierarchy or displayed data set
+
+The following example demonstrates how to enable the auto-generated Serial Number column in the Gantt Chart:
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/serialnumber-cs1/src/app.component.ts %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt-sdk/javascript/gantt-chart/serialnumber-cs1/index.js %}
 {% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/serialnumber-cs1/src/main.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="data.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/serialnumber-cs1/src/data.ts %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt-sdk/javascript/gantt-chart/serialnumber-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/serialnumber-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/serialnumber-cs1" %}
 
 ## Column width
 
