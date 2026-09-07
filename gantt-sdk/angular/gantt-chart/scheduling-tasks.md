@@ -165,19 +165,19 @@ The following example configures `daysPerWeek` and `daysPerMonth` and allows you
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/scheduling-tasks/duration-unit-cs2/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt-chart/scheduling-tasks/duration-units-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/scheduling-tasks/duration-unit-cs2/src/main.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt-chart/scheduling-tasks/duration-units-cs2/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="data.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/scheduling-tasks/duration-unit-cs2/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt-chart/scheduling-tasks/duration-units-cs2/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/scheduling-tasks/duration-unit-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/scheduling-tasks/duration-units-cs2" %}
 
 ## Enable unscheduled tasks
 
