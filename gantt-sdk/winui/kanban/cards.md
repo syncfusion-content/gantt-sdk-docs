@@ -872,7 +872,7 @@ this.kanban.ItemsSource = new ViewModel().TaskDetails;
 
 ### Multi-card drag and drop
 
-When `CardSelectionType` is set to `Multiple`, the entire selection can be dragged and dropped as a single operation. This enables bulk-moving related work items between stages without losing their relative order.
+When [CardSelectionType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.html) is set to [Multiple](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.html), the entire selection can be dragged and dropped as a single operation. This enables bulk-moving related work items between stages without losing their relative order.
 
 The following behaviors are supported for multi-card drag and drop:
 
