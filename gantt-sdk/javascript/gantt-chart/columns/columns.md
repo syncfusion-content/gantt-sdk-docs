@@ -52,6 +52,30 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Gantt Chart cont
 
 > To learn more about how to render boolean values as checkboxes in a Syncfusion<sup style="font-size:70%">&reg;</sup> GanttColumn, please refer to the [Render Boolean Values as Checkbox](https://ej2.syncfusion.com/javascript/documentation/gantt/columns/columns#render-boolean-value-as-checkbox) section.
 
+## Serial number column
+
+The Serial Number feature generates sequential row numbers for the records displayed in the Gantt Chart. Set [enableSerialNumber](https://ej2.syncfusion.com/angular/documentation/api/gantt#enableserialnumber) to **true** and define a column whose `field` is **SerialNumber**.
+
+Serial numbers are calculated from the current visible row order and do not require a field in the data source. They are recalculated after filtering, searching, sorting, expanding or collapsing records, indenting or outdenting tasks, CRUD operations, row drag-and-drop, and data refresh. The numbering therefore remains consistent with hierarchical data and the current view.
+
+The following example enables serial numbers with sorting, filtering, editing, and row drag-and-drop:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/serialnumber-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/serialnumber-cs1/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="data.ts" %}
+{% include code-snippet/gantt-sdk/angular/gantt-chart/columns/serialnumber-cs1/src/data.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/serialnumber-cs1" %}
+
 ## Column width
 
 In Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt for JavaScript, column width can be adjusted using the [width](https://ej2.syncfusion.com/javascript/documentation/api/gantt#width) property within the [column](https://ej2.syncfusion.com/javascript/documentation/api/gantt#columns) configuration. This property accepts values in pixels (e.g., **100**) or percentages (e.g., **25%**) to define the column's width relative to the Gantt container.
