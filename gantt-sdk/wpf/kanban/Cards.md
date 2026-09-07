@@ -485,7 +485,7 @@ N> Multi-card drag and drop is enabled only when [CardSelectionType](https://hel
 
 ### Selected card in WPF Kanban control
 
-You can customize the appearance of a selected card in the Kanban control using the [SelectedBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.html) property of [KanbanCardStyle](https://help.syncfusionbanCardStyle.html). This property enables you to visually highlight the selected card by changing its border color. Additionally, you can customize the card's border color when the mouse pointer hovers over it by using the [HoverBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.html) property of `KanbanCardStyle`.
+You can customize the appearance of a selected card in the Kanban control using the [SelectedBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.html) property of [KanbanCardStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.html). This property enables you to visually highlight the selected card by changing its border color. Additionally, you can customize the card's border color when the mouse pointer hovers over it by using the [HoverBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.html) property of `KanbanCardStyle`.
 
 {% tabs %}
 
