@@ -485,14 +485,26 @@ N> Multi-card drag and drop is enabled only when `CardSelectionType` is set to `
 
 ### Selected card in WPF Kanban control
 
-When a card is selected in the Kanban control, its appearance can be customized using the predefined theme keys. These theme keys allow you to modify the selected card's background and border colors to match your application's visual style.
+When a card is selected in the Kanban control, its appearance can be customized using the predefined theme keys. These theme keys allow you to modify the selected card's border color to match your application's visual style.
 
-#### Selected card theme keys
+{% tabs %}
 
-The following theme keys control the appearance of a selected card: 
+{% highlight xaml %}
 
-* `SfKanbanCard.Selected.BorderBrush`
-* `SfKanban.MultiDragPopup.Background`
+<kanban:SfKanban.CardStyle>
+    <kanban:KanbanCardStyle SelectedBorderBrush="Blue">
+    </kanban:KanbanCardStyle>
+</kanban:SfKanban.CardStyle>
 
-<SolidColorBrush x:Key="SfKanban.MultiDragPopup.Background" Color="#FFFFFFFF" />
-<SolidColorBrush x:Key="SfKanbanCard.Selected.BorderBrush" Color="#536FFF" />
+{% endhighlight %}
+
+{% highlight C# %}
+
+kanban.CardStyle = new KanbanCardStyle()
+{
+    SelectedBorderBrush = new SolidColorBrush(Colors.Blue)
+};
+
+{% endhighlight %}
+
+{% endtabs %}
