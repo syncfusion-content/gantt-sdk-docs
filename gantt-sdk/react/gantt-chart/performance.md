@@ -47,6 +47,37 @@ By incorporating `useMemo`, developers can optimize the rendering process, enhan
 
 When integrating image or template elements into a Gantt column, it’s recommended to utilize the [Column Template](https://ej2.syncfusion.com/react/documentation/gantt/columns/column-template) feature instead of customizing data through the [rowDataBound](https://ej2.syncfusion.com/react/documentation/api/gantt#rowdatabound) or [queryCellInfo](https://ej2.syncfusion.com/react/documentation/api/gantt#querycellinfo) events. These events are triggered for each row and cell rendering, which can introduce delays in the component's rendering process. Moreover, rendering custom elements using these events may lead to the persistence of rendered elements, potentially causing longer rendering times over time. By opting for the column template feature, you can efficiently fulfill this requirement without experiencing rendering delays and ensure a more streamlined rendering process.
 
+### Performance benchmarks
+
+The following tables show typical load times for various Gantt configurations, comparing non-virtualized and virtualized scenarios:
+
+**Test environment**
+
+- Component Version: Syncfusion React Gantt 34.2.6
+- React Version: 19.2.5
+- Browser: Edge 152
+- Operating System: Windows 11
+- CPU: 11th Gen Intel® Core™ i5-1135G7 @ 2.40GHz
+- RAM: 16GB
+
+**Non-virtualized scenario (2,500 tasks)**
+
+| Scenario                        | Load time (seconds) |
+|---------------------------------|---------------------|
+| Default hierarchy (Parent-Child) | 2.8                 |
+| + Predecessor                   | 5.5                 |
+| + Resources                     | 5.51                 |
+| + Split taskbars                | 7.1                 |
+
+**Virtualized scenario (25,000 tasks)**
+
+| Scenario                        | Load time (seconds) |
+|---------------------------------|---------------------|
+| Default hierarchy (Parent-Child) | 4.1                 |
+| + Predecessor                   | 5.45                 |
+| + Resources                     | 5.4                 |
+| + Split taskbars                | 13.5                |
+
 ## How to optimize server-side data operations with adaptors
 
 The Gantt Chart component provides support for various adaptors (OData, ODataV4, WebAPI, URL, etc.) to facilitate server-side data operations and CRUD functionalities. By utilizing these adaptors along with the `DataManager` component, you can seamlessly bind remote data sources to the Gantt and execute actions. During data operations such as filtering and sorting, the corresponding action queries are generated according to the adaptor's requirements. It is crucial to handle these actions on the application side and return the processed data back to the Gantt. Refer to the documentation for comprehensive details. It's worth noting that for efficient data processing, the suggested order for returning processed data to the Gantt is as follows:

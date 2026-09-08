@@ -14,11 +14,15 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 ## Duration units
 
-In the Gantt Chart component, the tasks’ duration value can be measured by the following duration units:
+Duration units define how task duration values are interpreted and calculated in the Gantt Chart. Duration units can be configured globally for the entire project or individually for each task.
 
-* Day
-* Hour
-* Minute
+In the Gantt Chart component, the tasks' duration value can be measured by the following duration units:
+
+* **Day**: Standard for general planning. Represents a single calendar or working day.
+* **Hour**: For detailed task management. Useful for tasks measured in hours within a day.
+* **Minute**: For short-duration tasks. Ideal for tasks requiring precise time tracking in minutes.
+* **Week**: Represents a duration calculated using the configured [daysPerWeek](https://ej2.syncfusion.com/vue/documentation/api/gantt#daysperweek) value. This is useful for tasks that span multiple days but are easier to express in weeks.
+* **Month**: Represents a duration calculated using the configured [daysPerMonth](https://ej2.syncfusion.com/vue/documentation/api/gantt#dayspermonth) value. This is helpful for longer-duration tasks that are naturally measured in months.
 
 In the Gantt Chart component, you can define the duration unit for whole project by using the [durationUnit](https://ej2.syncfusion.com/vue/documentation/api/gantt#durationunit) property. When you define a value for this property, the duration unit will be applied for all tasks that do not have duration unit value.
 
@@ -61,6 +65,25 @@ A duration unit for a task can be defined along with duration value, the followi
 
 >NOTE:
 The edit type of the duration column in Gantt is string to edit the duration field along with duration units.
+
+### Configure days per week and month
+
+The `daysPerWeek` property specifies how many working days constitute one week, directly impacting how week-based durations are calculated. For example, if `daysPerWeek` is 5, then 1 week equals 5 working days.
+
+Similarly, the `daysPerMonth` property specifies how many working days constitute one month, affecting how month-based durations are converted to actual working days for scheduling calculations. For example, if `daysPerMonth` is 20, then 1 month equals 20 working days.
+
+The following example configures `daysPerWeek` and `daysPerMonth` properties:
+
+{% tabs %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/durationunit-cs2/app-composition.vue %}
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/durationunit-cs2/app.vue %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/durationunit-cs2" %}
 
 ## Unscheduled tasks
 
