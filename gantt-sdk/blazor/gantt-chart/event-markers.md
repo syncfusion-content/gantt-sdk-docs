@@ -97,6 +97,112 @@ The following implementation demonstrates event marker integration within a Gant
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/rtBxtchjrBZplHLu?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
+## Multiple event marker configuration
+
+Multiple event markers allow you to highlight several project events that occur on the same timeline date. By configuring multiple markers with the same Day value and different labels, you can represent related milestones, reviews, approvals, or phase transitions without losing visibility of individual events.
+
+**Same-date event tracking**: Multiple event markers can be placed on a single date to represent different project activities occurring at the same point in time.
+
+**Label positioning support**: The Top property can be used to adjust the vertical position of marker labels, helping prevent overlap when multiple event markers are displayed on the same date.
+
+The following implementation demonstrates how to configure multiple event markers on the same timeline date in the Gantt Chart:
+
+{% tabs %}
+{% highlight razor tabtitle="Home.razor" %}
+
+<SfGantt @ref="GanttInstance" DataSource="@TaskCollection" Height="450px" Width="100%" ProjectStartDate="@(new DateTime(2026, 3, 27))" ProjectEndDate="@(new DateTime(2026, 7, 6))" TreeColumnIndex="1" ScrollToTaskbarOnClick="true">
+	<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId" Indicators="Indicators" Dependency="Predecessor">
+	</GanttTaskFields>
+	<GanttColumns>
+		<GanttColumn Field="TaskId" HeaderText="Task Id"></GanttColumn>
+		<GanttColumn Field="TaskName" HeaderText="Task Name" ClipMode="Syncfusion.Blazor.Grids.ClipMode.EllipsisWithTooltip"></GanttColumn>
+		<GanttColumn Field="StartDate" HeaderText="Start Date"></GanttColumn>
+		<GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
+		<GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
+		<GanttColumn Field="Predecessor" HeaderText="Dependency"></GanttColumn>
+		<GanttColumn Field="Progress" HeaderText="Progress"></GanttColumn>
+	</GanttColumns>
+	<GanttEventMarkers>
+		<GanttEventMarker Day="@ResearchPhaseDate" Label="Research phase" CssClass="e-custom-event-marker"></GanttEventMarker>
+		<GanttEventMarker Day="@ResearchPhaseDate" Label="Demand Analysis" CssClass="e-custom-event-marker" Top="150px"></GanttEventMarker>
+		<GanttEventMarker Day="@DesignPhaseDate" Label="Design phase" CssClass="e-custom-event-marker" Top="150px"></GanttEventMarker>
+		<GanttEventMarker Day="@DesignPhaseDate" Label="Competitor Analysis" CssClass="e-custom-event-marker" Top="300px"></GanttEventMarker>
+		<GanttEventMarker Day="@ProductionPhaseDate" Label="Production phase" CssClass="e-custom-event-marker"></GanttEventMarker>
+		<GanttEventMarker Day="@SalesMarketingPhaseDate" Label="Sales and marketing phase" CssClass="e-custom-event-marker"></GanttEventMarker>
+	</GanttEventMarkers>
+	<GanttSplitterSettings Position="28%"></GanttSplitterSettings>
+	<GanttLabelSettings LeftLabel="TaskName" TValue="TaskData"></GanttLabelSettings>
+</SfGantt>
+
+@code{
+	internal SfGantt<TaskData>? GanttInstance { get; set; }
+	internal List<TaskData> TaskCollection { get; set; } = new List<TaskData>();
+	public DateTime ResearchPhaseDate { get; set; } = new DateTime(2026, 04, 09);
+	public DateTime DesignPhaseDate { get; set; } = new DateTime(2026, 04, 30);
+	public DateTime ProductionPhaseDate { get; set; } = new DateTime(2026, 05, 22);
+	public DateTime SalesMarketingPhaseDate { get; set; } = new DateTime(2026, 06, 19);
+	/// <summary>
+	/// Initializes the sample by loading task data for the Gantt chart.
+	/// </summary>
+	protected override async Task OnInitializedAsync()
+	{
+		TaskCollection = GetTaskCollection();
+		await Task.CompletedTask.ConfigureAwait(true);
+	}
+    internal sealed class TaskData
+    {
+        public int TaskId { get; set; }
+        public int Id { get; set; }
+        public string Text { get; set; } = string.Empty;
+        public string TaskName { get; set; } = string.Empty;
+        public DateTime StartDate { get; set; }
+        public DateTime EndDate { get; set; }
+        public string? Duration { get; set; }
+        public int Progress { get; set; }
+        public int? ParentId { get; set; }
+        public string Predecessor { get; set; } = string.Empty;
+        public int ID { get; set; }
+        public string Value { get; set; } = string.Empty;
+        public List<GanttIndicator>? Indicators { get; set; }
+    }
+    /// <summary>
+    /// Generates and returns a collection of Gantt task data.
+    /// </summary>
+    internal static List<TaskData> GetTaskCollection()
+    {
+        List<TaskData> Tasks = new List<TaskData>() {
+                new TaskData() { TaskId = 1, TaskName = "Product concept ", StartDate = new DateTime(2026, 04, 02), EndDate = new DateTime(2026, 04, 08), Duration = "5 days" },
+                new TaskData() { TaskId = 2, TaskName = "Defining the product usage", StartDate = new DateTime(2026, 04, 02), EndDate = new DateTime(2026, 04, 08), Duration = "3", Progress = 30, ParentId = 1 },
+                new TaskData() { TaskId = 3, TaskName = "Defining the target audience", StartDate = new DateTime(2026, 04, 02), EndDate = new DateTime(2026, 04, 04), Duration = "3", Progress = 40, ParentId = 1 },
+                new TaskData() { TaskId = 4, TaskName = "Prepare product sketch and notes", StartDate = new DateTime(2026, 04, 05), EndDate = new DateTime(2026, 04, 08), Duration = "2", Progress = 30, ParentId = 1, Predecessor = "2" },
+                new TaskData() { TaskId = 5, TaskName = "Concept approval", StartDate = new DateTime(2026, 04, 08), EndDate = new DateTime(2026, 04, 08), Duration = "0", Predecessor = "3,4", Indicators = new List<GanttIndicator>() { new GanttIndicator() { Name = "Design phase", IconClass = "e-btn-icon e-notes-info e-icons e-icon-left e-gantt e-notes-info::after", Date = new DateTime(2026, 04, 10), Tooltip = "Design phase" }, } },
+                new TaskData() { TaskId = 6, TaskName = "Market research", StartDate = new DateTime(2026, 04, 09), EndDate = new DateTime(2026, 04, 18), Duration = "4", Progress = 30 },
+                new TaskData() { TaskId = 7, TaskName = "Demand analysis", StartDate = new DateTime(2026, 04, 09), EndDate = new DateTime(2026, 04, 12), Duration = "4", Progress = 40, ParentId = 6 },
+                new TaskData() { TaskId = 8, TaskName = "Customer strength", StartDate = new DateTime(2026, 04, 09), EndDate = new DateTime(2026, 04, 12), Duration = "4", Progress = 30, ParentId = 7, Predecessor = "5" },
+                new TaskData() { TaskId = 9, TaskName = "Market opportunity analysis", StartDate = new DateTime(2026, 04, 09), EndDate = new DateTime(2026, 04, 12), Duration = "4", ParentId = 7, Predecessor = "5" },
+                new TaskData() { TaskId = 10, TaskName = "Competitor analysis", StartDate = new DateTime(2026, 04, 15), EndDate = new DateTime(2026, 04, 18), Duration = "4", Progress = 30, ParentId = 6, Predecessor = "7,8" },
+                new TaskData() { TaskId = 11, TaskName = "Product strength analysis", StartDate = new DateTime(2026, 04, 15), EndDate = new DateTime(2026, 04, 18), Duration = "4", Progress = 40, ParentId = 6, Predecessor = "9" },
+                new TaskData() { TaskId = 12, TaskName = "Research completed", StartDate = new DateTime(2026, 04, 22), EndDate = new DateTime(2026, 04, 22), Duration = "0", Progress = 30, ParentId = 6, Predecessor = "10", Indicators = new List<GanttIndicator>() { new GanttIndicator() { Name = "Research completed", IconClass = "e-btn-icon e-notes-info e-icons e-icon-left e-gantt e-notes-info::after", Date = new DateTime(2026, 04, 23), Tooltip = "Research completed" }, } },
+                new TaskData() { TaskId = 13, TaskName = "Product design and development", StartDate = new DateTime(2026, 04, 19), EndDate = new DateTime(2026, 05, 16), Duration = "20" },
+                new TaskData() { TaskId = 14, TaskName = "Functionality design", StartDate = new DateTime(2026, 04, 19), EndDate = new DateTime(2026, 04, 23), Duration = "3", Progress = 30, ParentId = 13, Predecessor = "12" },
+                new TaskData() { TaskId = 15, TaskName = "Quality design", StartDate = new DateTime(2026, 04, 19), EndDate = new DateTime(2026, 04, 23), Duration = "3", Progress = 40, ParentId = 13, Predecessor = "12" },
+                new TaskData() { TaskId = 16, TaskName = "Define reliability", StartDate = new DateTime(2026, 04, 24), EndDate = new DateTime(2026, 04, 25), Duration = "2", Progress = 30, ParentId = 13, Predecessor = "15" },
+                new TaskData() { TaskId = 17, TaskName = "Identifying raw materials", StartDate = new DateTime(2026, 04, 24), EndDate = new DateTime(2026, 04, 25), Duration = "2", ParentId = 13, Predecessor = "15" },
+                new TaskData() { TaskId = 18, TaskName = "Define cost plan", StartDate = new DateTime(2026, 04, 26), EndDate = new DateTime(2026, 04, 29), Duration = "2", Progress = 30, ParentId = 13, Predecessor = "17" },
+                new TaskData() { TaskId = 19, TaskName = "Define manufacturing cost", StartDate = new DateTime(2026, 04, 26), EndDate = new DateTime(2026, 04, 29), Duration = "2", Progress = 40, ParentId = 18, Predecessor = "17" },
+                new TaskData() { TaskId = 20, TaskName = "Define selling cost", StartDate = new DateTime(2026, 04, 26), EndDate = new DateTime(2026, 04, 29), Duration = "2", Progress = 30, ParentId = 18, Predecessor = "17" },
+            };
+        return Tasks;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Limitations
+
+Multiple event markers may overlap when they are configured without the Top property or when the same Top value is assigned to multiple markers, as they are rendered at the same vertical position.
+
 ## See also
 
 * [Display Striplines in Blazor Gantt](https://www.syncfusion.com/forums/175385/display-striplines-in-blazor-gantt)
