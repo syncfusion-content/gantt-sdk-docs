@@ -1,0 +1,53 @@
+@using Syncfusion.EJ2.Gantt
+@using Syncfusion.EJ2.Buttons
+
+@(Html.EJS().Button("updateHoursPerDay")
+    .Content("Update Hours Per Day")
+    .Render())
+
+@(Html.EJS().Gantt("Gantt")
+    .DataSource((IEnumerable<object>)ViewBag.DataSource)
+    .Height("450px")
+    .HoursPerDay(8)
+    .ProjectStartDate("04/01/2026")
+    .ProjectEndDate("04/30/2026")
+    .TaskFields(ts => ts
+        .Id("TaskId")
+        .Name("TaskName")
+        .StartDate("StartDate")
+        .Duration("Duration")
+        .ParentID("ParentId"))
+    .LabelSettings(ls => ls.LeftLabel("TaskName"))
+    .CalendarSettings(new
+    {
+        projectCalendar = new
+        {
+            workingTime = new object[]
+            {
+                new { from = 9, to = 12 },
+                new { from = 13, to = 17 }
+            },
+            exceptions = new object[]
+            {
+                new
+                {
+                    from = new DateTime(2026, 4, 6),
+                    to = new DateTime(2026, 4, 6),
+                    name = "Extended Working Day",
+                    isWorking = true,
+                    workingTime = new object[]
+                    {
+                        new { from = 8, to = 18 }
+                    }
+                }
+            }
+        }
+    })
+    .Render())
+
+<script>
+	document.getElementById('updateHoursPerDay').addEventListener('click', function () {
+		var gantt = document.getElementById('Gantt').ej2_instances[0];
+		gantt.hoursPerDay = 16;
+	});
+</script>
