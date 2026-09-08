@@ -213,17 +213,6 @@ The supported dependency types are:
 The following example allows only the Start to Finish (SF) dependency type. This code configures `allowedDependencyTypes: ['SF']` so that only **SF** relationships can be created during loading and editing, with all other dependency types disabled.
 
 {% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/allowedDependencyTypes-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/allowedDependencyTypes-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/allowedDependencyTypes-cs1" %}
-
-{% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/predecessor/allowedDependencyTypes/razor %}
 {% endhighlight %}
