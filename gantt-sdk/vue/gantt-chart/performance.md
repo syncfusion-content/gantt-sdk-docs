@@ -52,7 +52,7 @@ The following tables show typical load times for various Gantt configurations, c
 
 **Test environment**
 
-- Component Version: Syncfusion Gantt 35.1.27
+- Component Version: Syncfusion Gantt Vue 35.1.27
 - Vue Version: 3.5.41
 - Browser: Edge 152
 - Operating System: Windows 11
