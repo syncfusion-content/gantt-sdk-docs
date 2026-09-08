@@ -98,7 +98,7 @@ During data operations like filtering and sorting, corresponding action queries 
 * Sorting
 * Aggregates
 
-## Avoiding MaxJsonLength errors with large datasets
+## Avoiding maxJsonLength errors with large datasets
 
 The Angular Gantt Chart component operates on a client-server basis, sending data as JSON objects. Large JSON object serialization can cause MaxJsonLength errors. Resolve this by increasing the maximum length for JSON serialization in your web.config file or at the deserialization point.
 
