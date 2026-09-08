@@ -54,7 +54,7 @@ The Gantt component provides support for various adaptors (OData, ODataV4, WebAP
 - Sorting
 - Aggregates
 
-## How to avoid maxjsonlength error while passing large amount of records
+## How to avoid MaxJsonLength error while passing large amount of records
 
 The Gantt component operates on a client-server basis, meaning data is sent as a JSON object between the client and server. The reported issue occurs due to the serialization of a large JSON object. To resolve this, you need to increase the maximum length for serializing large JSON objects. This can be done by altering the [MaxJsonLength](https://social.msdn.microsoft.com/Forums/en-US/ab1a5864-46e2-4c57-9511-dc3f60cc314a/how-to-increase-maxjsonlength-for-json-post-in-mvc3?forum=aspmv) property in your web.config file or at the point of deserialization.
 
