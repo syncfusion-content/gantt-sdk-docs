@@ -76,10 +76,10 @@ The following example configures `daysPerWeek` and `daysPerMonth` properties:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/durationunit-cs2/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt-chart/durationunit-cs2/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/durationunit-cs2/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt-chart/durationunit-cs2/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 

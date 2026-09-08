@@ -148,10 +148,10 @@ The following example demonstrates how to enable checkbox-based row selection wi
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/hierarchy-selection-cs1/app-composition.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt-chart/hierarchy-selection-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/gantt-sdk/react/gantt-chart/hierarchy-selection-cs1/app.vue %}
+{% include code-snippet/gantt-sdk/vue/gantt-chart/hierarchy-selection-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
