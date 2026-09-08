@@ -46,6 +46,37 @@ To enhance the performance of the Syncfusion<sup style="font-size:70%">&reg;</su
 
 So to improve the performance of gantt during the initial rendering, suggested you to refer individual script and CSS.
 
+### Performance benchmarks
+
+The following tables show typical load times for various Gantt configurations, comparing non-virtualized and virtualized scenarios:
+
+**Test environment**
+
+- Component Version: Syncfusion Gantt 35.1.27
+- JavaScript Version: Es5
+- Browser: Edge 152
+- Operating System: Windows 11
+- CPU: 11th Gen Intel® Core™ i5-1135G7 @ 2.40GHz
+- RAM: 16GB
+
+**Non-virtualized scenario (2,500 tasks)**
+
+| Scenario                        | Load time (seconds) |
+|---------------------------------|---------------------|
+| Default hierarchy (Parent-Child) | 3.1                 |
+| + Predecessor                   | 5.5                 |
+| + Resources                     | 5.7                 |
+| + Split taskbars                | 4.2                 |
+
+**Virtualized scenario (25,000 tasks)**
+
+| Scenario                        | Load time (seconds) |
+|---------------------------------|---------------------|
+| Default hierarchy (Parent-Child) | 3.6                 |
+| + Predecessor                   | 5.5                 |
+| + Resources                     | 5.7                 |
+| + Split taskbars                | 11.3                |
+
 ## How to optimize server-side data operations with adaptors
 
 The Gantt component provides support for various adaptors (OData, ODataV4, WebAPI, URL, etc.) to facilitate server-side data operations and CRUD functionalities. By utilizing these adaptors along with the `DataManager` component, you can seamlessly bind remote data sources to the Gantt and execute actions. During data operations such as filtering and sorting, the corresponding action queries are generated according to the adaptor's requirements. It is crucial to handle these actions on the application side and return the processed data back to the Gantt. Refer to the documentation for comprehensive details. It's worth noting that for efficient data processing, the suggested order for returning processed data to the Gantt is as follows:

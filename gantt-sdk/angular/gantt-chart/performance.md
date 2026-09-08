@@ -64,7 +64,7 @@ The following tables show typical load times for various Gantt configurations, c
 
 **Test environment**
 
-- Component Version: Syncfusion Angular Gantt 34.2.6
+- Component Version: Syncfusion Angular Gantt 35.1.27
 - Angular Version: 21.2.9
 - Browser: Edge 152
 - Operating System: Windows 11

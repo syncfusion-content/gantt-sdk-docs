@@ -53,7 +53,7 @@ The following tables show typical load times for various Gantt configurations, c
 
 **Test environment**
 
-- Component Version: Syncfusion React Gantt 34.2.6
+- Component Version: Syncfusion React Gantt 35.1.27
 - React Version: 19.2.5
 - Browser: Edge 152
 - Operating System: Windows 11
