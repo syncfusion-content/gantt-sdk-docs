@@ -109,6 +109,6 @@ Set validation rules for dependency and resource grids in the add/edit dialog us
 
 ## See also
 
-- [How to configure task editing?](https://help.syncfusion.com/gantt-sdk/javascript/GANTT_CHART/managing-tasks/editing-tasks)
-- [How to manage task dependencies?](https://help.syncfusion.com/gantt-sdk/javascript/GANTT_CHART/task-dependency)
-- [How to add new tasks?](https://help.syncfusion.com/gantt-sdk/javascript/GANTT_CHART/managing-tasks/adding-new-tasks)
+- [How to configure task editing?](https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/managing-tasks/editing-tasks)
+- [How to manage task dependencies?](https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/task-dependency)
+- [How to add new tasks?](https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/managing-tasks/adding-new-tasks)
