@@ -1,5 +1,5 @@
 import { Gantt, Edit, Selection } from '@syncfusion/ej2-gantt';
-import {GanttData} from './datasource';
+import {GanttData} from './datasource.ts';
 
 Gantt.Inject(Edit, Selection);
 
