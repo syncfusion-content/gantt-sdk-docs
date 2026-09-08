@@ -85,8 +85,6 @@ The following implementation demonstrates timeline range configuration within a 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://blazorplayground.syncfusion.com/embed/rtBxtchjrBZplHLu?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
-
 ## See also
 
 * [Display Striplines in Blazor Gantt](https://www.syncfusion.com/forums/175385/display-striplines-in-blazor-gantt)
