@@ -123,6 +123,5 @@ Calendar settings directly affect how task duration is calculated and when tasks
 
 ## See also
 
-- [How to configure holidays?](../gantt/holidays)
-- [How to include weekends in scheduling?](../gantt/task-scheduling#include-weekends)
-- [How to work with task fields?](../gantt/task-scheduling#task-fields)
+- [How to configure holidays?](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/holidays)
+- [How to include weekends in scheduling?](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/scheduling-tasks#weekend-configuration)
