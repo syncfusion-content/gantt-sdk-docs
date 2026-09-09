@@ -130,7 +130,7 @@ The following implementation demonstrates event marker integration within a Gant
 .e-gantt .e-gantt-chart .e-custom-event-marker {
     width: 1px;
     border-left: 2px red dotted;
-
+}
 </style>
 
 {% endhighlight %}
