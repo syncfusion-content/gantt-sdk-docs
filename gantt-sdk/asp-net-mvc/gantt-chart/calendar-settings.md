@@ -1,0 +1,117 @@
+---
+layout: post
+title: Calendar Settings in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to configure project and task calendars in the Syncfusion ASP.NET MVC Gantt Chart to manage working time, holidays, and scheduling.
+keywords: asp.net mvc gantt task calendar, project calendar, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/calendar-settings
+platform: gantt-sdk
+control: Task Calendar - Gantt Chart
+documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+---
+
+# Calendar Settings in ASP.NET MVC Gantt Chart Control
+
+The Gantt Chart control supports advanced calendar configuration through the `CalendarSettings` property, enabling management of working hours, holidays, and task-specific scheduling. Calendar settings control how the Gantt Chart calculates task duration, determines working days, and schedules dependencies.
+
+The `CalendarSettings` property contains two key configurations:
+
+- **Project Calendar**: Defines working hours and holidays for the entire project, applied to all tasks by default
+- **Task Calendars**: Defines custom working hours and holidays for specific tasks, enabling team-specific or shift-based scheduling
+
+## Project calendar
+
+The `CalendarSettings.projectCalendar` defines the default working hours and non-working days for the entire project. All tasks follow the project calendar unless assigned a task-specific calendar.
+
+### Configure project working hours and exceptions
+
+Working hours are defined per day using start and end times. The following example configures the project to have working hours from 9:00 AM to 5:00 PM with a lunch break from 12:00 PM to 1:00 PM. Calendar exceptions allow overriding working hours for specific dates, enabling custom scheduling for special working days or non-working days that don't fit the standard holiday definition:
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/calendar-settings/project-calendar/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="ProjectCalendar.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/calendar-settings/project-calendar/projectCalendar.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+### Define project holidays
+
+Holidays are non-working dates that exclude time from task calculations. The following example defines holidays for April 10 and April 17, excluding these dates from task scheduling calculations:
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/calendar-settings/project-calendar-holiday/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="ProjectCalendarHoliday.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/calendar-settings/project-calendar-holiday/projectCalendarHoliday.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+## Task calendars
+
+Task calendars enable specific tasks to use custom working hours and holidays instead of the project calendar. This is useful for managing work across different shifts, regions, or external teams with different availability.
+
+### Assign task-specific calendars with exceptions
+
+To assign a custom calendar to a task, first define the calendar in `CalendarSettings.TaskCalendar`, then reference it using the `CalendarId` property in the task data. Calendar exceptions allow defining specific dates with custom working hours, enabling team-specific scheduling adjustments such as split shifts or holidays that differ from the main schedule.
+
+When a task is assigned a calendar through `CalendarId`, that task follows only the assigned task calendar. The assigned task calendar overrides the project calendar for that task. Working days, holidays, and calendar exceptions defined in the assigned calendar are used when calculating the task schedule and working duration. Other task calendars are not considered when scheduling that task.
+
+The following example defines two task calendars with different working hours, task-specific exceptions, and assigns them to specific tasks:
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/calendar-settings/task-calendar/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="TaskCalendar.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/calendar-settings/task-calendar/taskCalendar.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+### Define task calendar holidays
+
+Task calendars can include holidays that override project calendar holidays for the assigned task. These holidays are considered when calculating the task schedule and working duration. The following example configures a task calendar with specific holidays:
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/calendar-settings/task-calendar-holiday/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="TaskCalendarHoliday.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/calendar-settings/task-calendar-holiday/taskCalendarHoliday.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+## Configure hours per day for task durations
+
+The `HoursPerDay` property defines the number of hours used to represent one day when calculating task durations. Changing `HoursPerDay` recalculates day-based duration values using the existing working duration of the task. This affects how duration is displayed and calculated in days, but does not modify the task's start date, end date, or underlying working duration.
+
+For example, a task with 32 hours of working duration is displayed as 4 days when `HoursPerDay` is set to 8. If `HoursPerDay` is changed to 16, the same task is displayed as 2 days. The task schedule remains unchanged because the underlying working duration is not modified.
+
+The following example demonstrates how changing `HoursPerDay` affects duration calculations.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/calendar-settings/hoursperday/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="HoursPerDay.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/calendar-settings/hoursperday/hoursperday.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+## Impact on task scheduling
+
+Calendar settings directly affect how task duration is calculated and when tasks are scheduled:
+
+- **Working hours**: Task durations ignore non-working hours. A 2-day task completed during 9 AM-5 PM working hours uses the same elapsed time as a 2-day task across multiple days with shorter working hours
+- **Holidays**: Tasks skip over holiday dates, extending the end date accordingly to maintain the required working duration
+- **Weekends**: By default, weekends are treated as non-working days when `IncludeWeekend` is set to **false**
+- **Task dependencies**: Dependency calculations use the predecessor task's calendar to determine when the successor task can start
+- **Task calendars**: Tasks without an assigned task calendar follow the project calendar. Tasks with an assigned task calendar use the working hours, holidays, and exceptions defined in that calendar for scheduling and duration calculations.
+- **Duration calculations**: Changing `HoursPerDay` recalculates day-based duration values without changing the scheduled start and end dates.
+
+## See also
+
+- [How to configure holidays?](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/holidays)
+- [How to include weekends in scheduling?](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/scheduling-tasks#weekendnon-working-days)
