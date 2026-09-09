@@ -555,7 +555,7 @@ The following code example shows how to customize the top tier to display the we
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/rNVnDnrBCGeegJHh?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-# Timeline Range Control in Blazor Gantt Chart
+## Timeline Range Control in Blazor Gantt Chart
 
 The timeline range in the Blazor Gantt Chart component can be controlled using the `ViewStartDate` and `ViewEndDate` properties. These properties allow you to display only a specific portion of the timeline without affecting the actual task scheduling.
 
