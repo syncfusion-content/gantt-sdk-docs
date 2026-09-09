@@ -126,12 +126,17 @@ The following implementation demonstrates event marker integration within a Gant
     }
 }
 
+<style>
+.e-gantt .e-gantt-chart .e-custom-event-marker {
+    width: 1px;
+    border-left: 2px red dotted;
+
+</style>
+
 {% endhighlight %}
 {% endtabs %}
 
-## Limitations
-
-Multiple event markers may overlap when they are configured without the Top property or when the same Top value is assigned to multiple markers, as they are rendered at the same vertical position.
+N> Multiple event markers may overlap when they are configured without the Top property or when the same Top value is assigned to multiple markers, as they are rendered at the same vertical position.
 
 ## See also
 
