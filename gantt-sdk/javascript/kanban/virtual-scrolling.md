@@ -12,28 +12,13 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Virtual Scrolling and Performance in JavaScript Kanban
 
-Kanban allows you to load a large amount of data without any performance degradation. This feature can be enabled by setting the [`enableVirtualization`](../api/kanban#enablevirtualization) property in the Kanban to `true`.
+Kanban allows you to load a large amount of data without any performance degradation. This feature can be enabled by setting the [`enableVirtualization`](https://ej2.syncfusion.com/javascript/documentation/api/kanban#enableVirtualization) property in the Kanban to `true`.
 
 ## Virtual scrolling
 
-Virtual scrolling optimizes data rendering within each column when using large datasets. Only a subset of cards that are visible and about to be loaded on the screen are rendered. The number of records displayed in the Kanban is determined implicitly by the height of the Kanban area and the card height. The [`cardHeight`](../api/kanban#cardheight) property of Kanban can be used to set the cards' height in pixel value. By default, the card height will be `auto`.
+Virtual scrolling optimizes data rendering within each column when using large datasets. Only a subset of cards that are visible and about to be loaded on the screen are rendered. The number of records displayed in the Kanban is determined implicitly by the height of the Kanban area and the card height. The [`cardHeight`](https://ej2.syncfusion.com/javascript/documentation/api/kanban#cardHeight) property of Kanban can be used to set the cards' height in pixel value. By default, the card height will be `auto`.
 
 When the Kanban column is scrolled, the virtual scrolling feature dynamically loads additional data on demand into view and unloads the data that is no longer visible.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/kanban/virtual-scrolling-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/kanban/virtual-scrolling-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/kanban/virtual-scrolling-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -45,11 +30,11 @@ When the Kanban column is scrolled, the virtual scrolling feature dynamically lo
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/kanban/virtual-scrolling-cs1" %}
-{% endif %}
+
 
 ### Configure the remote data service
 
-When the remote data is configured for the [`dataSource`](../api/kanban#datasource), the service method will receive an additional `KanbanVirtualization` parameter to handle the initial data load for Kanban Virtualization.
+When the remote data is configured for the [`dataSource`](https://ej2.syncfusion.com/javascript/documentation/api/kanban#dataSource), the service method will receive an additional `KanbanVirtualization` parameter to handle the initial data load for Kanban Virtualization.
 
 To handle Kanban virtual scrolling, the server-side code needs to handle the `Where` and `Take` queries differently using the `KanbanVirtualization` parameter. The following is the example code for handling Kanban virtualization's initial data load using the `KanbanVirtualization` parameter.
 

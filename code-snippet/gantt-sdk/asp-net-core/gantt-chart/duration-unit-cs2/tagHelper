@@ -1,0 +1,52 @@
+<div style="padding-bottom:10px">
+    <label>Days Per Week:</label>
+    <input type="number" id="daysPerWeek" value="5" min="1" max="7" />
+
+    <label style="margin-left:10px">Days Per Month:</label>
+    <input type="number" id="daysPerMonth" value="20" min="1" max="31" />
+
+    <button id="updateButton">Update</button>
+</div>
+
+<ejs-gantt id="Gantt"
+           dataSource="@Model.GanttDataSourceCollection"
+           height="380px"
+           daysPerWeek="5"
+           daysPerMonth="20">
+
+    <e-gantt-taskfields id="TaskID"
+                        name="TaskName"
+                        startDate="StartDate"
+                        duration="Duration"
+                        progress="Progress"
+                        durationUnit="DurationUnit"
+                        parentID="ParentID">
+    </e-gantt-taskfields>
+
+    <e-gantt-splittersettings columnIndex="4">
+    </e-gantt-splittersettings>
+
+</ejs-gantt>
+
+<script>
+    document.getElementById('updateButton').addEventListener('click', function () {
+
+        var daysPerWeek = parseInt(document.getElementById('daysPerWeek').value);
+        var daysPerMonth = parseInt(document.getElementById('daysPerMonth').value);
+
+        if (daysPerWeek < 1 || daysPerWeek > 7) {
+            alert('Days per Week must be between 1 and 7');
+            return;
+        }
+
+        if (daysPerMonth < 1 || daysPerMonth > 31) {
+            alert('Days per Month must be between 1 and 31');
+            return;
+        }
+
+        var gantt = document.getElementById('Gantt').ej2_instances[0];
+
+        gantt.daysPerWeek = daysPerWeek;
+        gantt.daysPerMonth = daysPerMonth;
+    });
+</script>

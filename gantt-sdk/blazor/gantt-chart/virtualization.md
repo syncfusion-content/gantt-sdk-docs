@@ -363,7 +363,7 @@ Column virtualization, enabled by setting [EnableRowVirtualization](https://help
 
 N> Column's [Width](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_Width) is required for column virtualization. If the column's width is not defined, then the Gantt Chart will consider its value as **150px**.
 
-## Configure Timeline Virtualization
+## Configure timeline virtualization
 
 Timeline virtualization, enabled by setting [EnableTimelineVirtualization](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_EnableTimelineVirtualization) to **true**, initially renders twice times the width of the Gantt element and loads additional timeline cells on demand during horizontal scrolling. This improves performance for wide timelines, such as multi-year projects, by rendering only the visible segments. The rendering behavior depends on `TimelineSettings`, which defines the scale (e.g., monthly or daily tiers).
 

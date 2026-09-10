@@ -3,7 +3,7 @@ layout: post
 title: Column Reordering in Vue Gantt Chart | Syncfusion
 description: Learn how to enable column reordering in Syncfusion Vue Gantt Chart by dragging column headers to rearrange columns.
 keywords: vue gantt column reordering, reorder columns, drag columns, column arrangement, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/columns/column-reorder
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/columns/column-reordering
 platform: gantt-sdk
 control: Column Reordering - Gantt Chart
 documentation: ug

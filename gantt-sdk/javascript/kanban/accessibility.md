@@ -18,15 +18,15 @@ The accessibility compliance for the Kanban component is outlined below.
 
 | Accessibility Criteria                                                              | Compatibility                                                                        |
 | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| [WCAG 2.2 Support](../common/accessibility#accessibility-standards)                 | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png)             |
-| [Section 508 Support](../common/accessibility#accessibility-standards)              | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png)             |
-| [Screen Reader Support](../common/accessibility#screen-reader-support)              | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png)             |
-| [Right-To-Left Support](../common/accessibility#right-to-left-support)              | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png)             |
-| [Color Contrast](../common/accessibility#color-contrast)                            | ![Intermediate](https://cdn.syncfusion.com/content/images/documentation/partial.png) |
-| [Mobile Device Support](../common/accessibility#mobile-device-support)              | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png)             |
-| [Keyboard Navigation Support](../common/accessibility#keyboard-navigation-support)  | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png)             |
-| [Accessibility Checker Validation](../common/accessibility#ensuring-accessibility)  | ![Intermediate](https://cdn.syncfusion.com/content/images/documentation/partial.png) |
-| [Axe-core Accessibility Validation](../common/accessibility#ensuring-accessibility) | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png)             |
+| [WCAG 2.2 Support](https://ej2.syncfusion.com/javascript/documentation/common/accessibility#accessibility-standards)                 | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png)             |
+| [Section 508 Support](https://ej2.syncfusion.com/javascript/documentation/common/accessibility#accessibility-standards)              | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png)             |
+| [Screen Reader Support](https://ej2.syncfusion.com/javascript/documentation/common/accessibility#screen-reader-support)              | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png)             |
+| [Right-To-Left Support](https://ej2.syncfusion.com/javascript/documentation/common/accessibility#right-to-left-support)              | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png)             |
+| [Color Contrast](https://ej2.syncfusion.com/javascript/documentation/common/accessibility#color-contrast)                            | ![Intermediate](https://cdn.syncfusion.com/content/images/documentation/partial.png) |
+| [Mobile Device Support](https://ej2.syncfusion.com/javascript/documentation/common/accessibility#mobile-device-support)              | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png)             |
+| [Keyboard Navigation Support](https://ej2.syncfusion.com/javascript/documentation/common/accessibility#keyboard-navigation-support)  | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png)             |
+| [Accessibility Checker Validation](https://ej2.syncfusion.com/javascript/documentation/common/accessibility#ensuring-accessibility)  | ![Intermediate](https://cdn.syncfusion.com/content/images/documentation/partial.png) |
+| [Axe-core Accessibility Validation](https://ej2.syncfusion.com/javascript/documentation/common/accessibility#ensuring-accessibility) | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png)             |
 
 <style>
     .post .post-content img {
@@ -81,21 +81,6 @@ The Kanban component followed the [keyboard interaction](https://www.w3.org/WAI/
 
 Disables all the functionalities in the Kanban board performed using keyboard by setting the `allowKeyboard` properties to `false`.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/kanban/keyboard-disable-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/kanban/keyboard-disable-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/kanban/keyboard-disable-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/kanban/keyboard-disable-cs1/index.js %}
@@ -106,7 +91,6 @@ Disables all the functionalities in the Kanban board performed using keyboard by
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/kanban/keyboard-disable-cs1" %}
-{% endif %}
 
 ## Ensuring accessibility
 
@@ -118,4 +102,4 @@ The accessibility compliance of the Kanban component is shown in the following s
 
 ## See also
 
-- [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript components](../common/accessibility)
+- [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript components](https://ej2.syncfusion.com/javascript/documentation/common/accessibility)

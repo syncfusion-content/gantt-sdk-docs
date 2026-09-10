@@ -26,8 +26,6 @@ To specify the [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusio
 
 The following code example shows how to set height and width in the Gantt control:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/scrolling/width-height/tagHelper %}
@@ -37,26 +35,12 @@ The following code example shows how to set height and width in the Gantt contro
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/scrolling/width-height/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Width-height.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/scrolling/width-height/width-height.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Responsive with the parent container
 
 Specify the [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Width) and [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Height) as `100%` to make the gantt element fill its parent container.
 Setting the [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Height) to `100%` requires the gantt parent element to have explicit height.
 
 The following code example shows how to set height and width in the Gantt control:
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -67,25 +51,11 @@ The following code example shows how to set height and width in the Gantt contro
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/scrolling/responsive/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Responsive.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/scrolling/responsive/responsive.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Scroll To Date method
 
 In the Gantt control, When We use the `scrollToDate` method, it will scroll the timeline horizontally to the date that we specified in the method's argument.
 
 The following code examples show how the scroll To Date method works in Gantt:
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -96,24 +66,9 @@ The following code examples show how the scroll To Date method works in Gantt:
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/scrollToDate/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="scrollToDate.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/scrollToDate/scrollToDate.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 ## Set the vertical scroll position
 
 In the Gantt control, you can set the vertical scroller position dynamically by clicking the custom button using the `setScrollTop` method.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -123,16 +78,3 @@ In the Gantt control, you can set the vertical scroller position dynamically by 
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/setScrollTop/setScrollTop.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/setScrollTop/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="SetScrollTop.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/setScrollTop/setScrollTop.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-

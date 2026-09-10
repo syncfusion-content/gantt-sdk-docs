@@ -19,7 +19,7 @@ Resources in the [React Gantt Chart](https://www.syncfusion.com/react-components
 The resource collection defines available resources as JSON objects with ID, name, unit, and group, mapped via [resourceFields](https://ej2.syncfusion.com/react/documentation/api/gantt#resourcefields):
 - **id**: Maps to a unique identifier for task assignment.
 - **name**: Maps to the resource name displayed in labels or columns.
-- **unit**: Maps to the work capacity percentage (0-100%) per day.
+- **unit**: Maps to the work capacity percentage (0-100%) per day. Default is 100% if not specified. Values above 100% allow over-allocation scenarios. For example, a 50% unit reduces daily work capacity to half the configured `dayWorkingTime`.
 - **group**: Maps to categories for grouping resources.
 
 The following code demonstrates resource collection setup:
@@ -64,6 +64,13 @@ Assign a single resource without unit for default 100% allocation.
 
 **Multiple resources with custom units:**
 Assign multiple resources with specific units.
+
+Resources can be assigned in multiple formats:
+- **Array of IDs**: `[1, 2]` - Assigns resources by their IDs with default 100% unit for each.
+- **Array of objects**: `[{ resourceId: 1, unit: 70 }, { resourceId: 2, unit: 50 }]` - Assigns resources with custom units.
+- **Mixed format**: `[1, { resourceId: 2, unit: 50 }]` - Combines ID references with custom unit assignments.
+
+The following example shows a mixed assignment where resource 1 uses its default unit and resource 6 uses the default unit:
 
 ```typescript
 {

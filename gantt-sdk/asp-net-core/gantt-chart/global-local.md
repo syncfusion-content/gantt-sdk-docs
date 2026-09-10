@@ -14,7 +14,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk/overview
 
 ## Localization
 
-The [`Localization`](../common/localization) library allows you to localize default text content of the Gantt. The Gantt component has static text on some features (like toolbar area text, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Locale) value and translation object.
+The [`Localization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization) library allows you to localize default text content of the Gantt. The Gantt component has static text on some features (like toolbar area text, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Locale) value and translation object.
 
 The following list of properties and its values are used in the Gantt.
 
@@ -122,8 +122,6 @@ To load translation object in an application use [`load`](https://ej2.syncfusion
 
 The below example demonstrates the Gantt in **Deutsch** culture.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/global/locale/tagHelper %}
@@ -133,25 +131,9 @@ The below example demonstrates the Gantt in **Deutsch** culture.
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/global/locale/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Locale.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/global/locale/locale.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ## Internationalization
 
-The [`Internationalization`](../common/internationalization) library is used to globalize number, date, and time values in gantt component.
-
-{% if page.publishingplatform == "aspnet-core" %}
+The [`Internationalization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization) library is used to globalize number, date, and time values in gantt component.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -162,29 +144,12 @@ The [`Internationalization`](../common/internationalization) library is used to 
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/global/internationalization/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Internationalization.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/global/internationalization/internationalization.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 N> * In the above sample, `Timeline` is formatted by `NumberFormatOptions` and `DateFormatOptions`.
 <br/> * By default, [`locale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Locale) value is `en-US`. If you want to change `en-US` culture, then set the [`locale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Locale).
-
 
 ## Right to left (RTL)
 
 RTL provides an option to switch the text direction and layout of the Gantt component from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Urdu, etc.). To enable RTL Gantt, set the [`EnableRtl`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableRtl) to true.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -195,19 +160,7 @@ RTL provides an option to switch the text direction and layout of the Gantt comp
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/global/enableRtl/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="EnableRtl.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/global/enableRtl/enableRtl.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## See Also
 
-* [Internationalization](../common/internationalization)
-* [Localization](../common/localization)
+* [Internationalization](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization)
+* [Localization](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization)

@@ -16,13 +16,13 @@ Splitting and merging tasks in the [React Gantt Chart](https://www.syncfusion.co
 
 ## Split tasks at load time
 
-Define task segments at load time using [taskFields.segments](https://ej2.syncfusion.com/react/documentation/api/gantt/taskFields#segments) or [taskFields.segmentId](https://ej2.syncfusion.com/react/documentation/api/gantt/taskFields#segmentId) mapped. This splits tasks into segments within their original start and end dates, ideal for representing interruptions like holidays in a project schedule.
+Define task segments at load time using [taskFields.segments](https://ej2.syncfusion.com/react/documentation/api/gantt/taskFields#segments) or [taskFields.segmentId](https://ej2.syncfusion.com/react/documentation/api/gantt/taskFields#segmentid) mapped. This splits tasks into segments within their original start and end dates, ideal for representing interruptions like holidays in a project schedule.
 
 For more details, see [Split task at load time](https://ej2.syncfusion.com/react/documentation/gantt/data-binding#split-task).
 
 ## Split tasks dynamically
 
-Split tasks dynamically using the dialog or context menu, requiring [taskFields.segments](https://ej2.syncfusion.com/react/documentation/api/gantt/taskFields#segments) or [taskFields.segmentId](https://ej2.syncfusion.com/react/documentation/api/gantt/taskFields#segmentId) mapped, `Edit` injected, and [editSettings.allowEditing](https://ej2.syncfusion.com/react/documentation/api/gantt/editSettings#allowediting) enabled:
+Split tasks dynamically using the dialog or context menu, requiring [taskFields.segments](https://ej2.syncfusion.com/react/documentation/api/gantt/taskFields#segments) or [taskFields.segmentId](https://ej2.syncfusion.com/react/documentation/api/gantt/taskFields#segmentid) mapped, `Edit` injected, and [editSettings.allowEditing](https://ej2.syncfusion.com/react/documentation/api/gantt/editSettings#allowediting) enabled:
 - **Dialog**: The Segments tab in the add/edit dialog allows splitting tasks based on their start and end dates.
 - **Context Menu**: Enable [enableContextMenu](https://ej2.syncfusion.com/react/documentation/api/gantt#enablecontextmenu) and inject `ContextMenuService` to include the Split Task option in the context menu, enabling task splitting with a right-click.
 

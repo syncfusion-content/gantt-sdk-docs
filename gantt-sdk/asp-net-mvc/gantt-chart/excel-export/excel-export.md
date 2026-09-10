@@ -14,19 +14,6 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 Gantt supports client-side exporting, which allows you to export its data to the Excel and CSV formats. Use the `excelExport` and `csvExport` methods for exporting. To enable Excel export in the Gantt, set the [`AllowExcelExport`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowExcelExport) to true.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/excelExport/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="ExcelExport.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/excelExport/excelExport.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/excelExport/razor %}
@@ -35,4 +22,3 @@ Gantt supports client-side exporting, which allows you to export its data to the
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/excelExport/excelExport.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

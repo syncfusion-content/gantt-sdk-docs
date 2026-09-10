@@ -14,19 +14,6 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 The Gantt control maps any data source fields to task labels using the [`LabelSettings.LeftLabel`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttLabelSettings.html#Syncfusion_EJ2_Gantt_GanttLabelSettings_LeftLabel), [`LabelSettings.RightLabel`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttLabelSettings.html#Syncfusion_EJ2_Gantt_GanttLabelSettings_RightLabel), and [`LabelSettings.TaskLabel`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttLabelSettings.html#Syncfusion_EJ2_Gantt_GanttLabelSettings_TaskLabel) properties. You can customize the task labels with templates.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/customizations/tasklabelTemplate/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="TasklabelTemplate.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/customizations/tasklabelTemplate/tasklabelTemplate.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/customizations/tasklabelTemplate/razor %}
@@ -35,6 +22,5 @@ The Gantt control maps any data source fields to task labels using the [`LabelSe
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/customizations/tasklabelTemplate/tasklabelTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-![Alt text](images/tasklabelTemplate.png)
+![Alt text](./images/tasklabelTemplate.png)

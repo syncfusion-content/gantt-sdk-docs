@@ -1,0 +1,27 @@
+@Html.EJS().Gantt("Gantt")
+    .DataSource((IEnumerable<object>)ViewBag.DataSource)
+    .Height("550px")
+    .TaskFields(ts => ts
+        .Id("TaskId")
+        .Name("TaskName")
+        .StartDate("StartDate")
+        .EndDate("EndDate")
+        .Duration("Duration")
+        .Progress("Progress")
+        .Dependency("Predecessor")
+        .ParentId("ParentId"))
+    .Columns(col =>
+    {
+        col.Field("TaskId").Add();
+        col.Field("TaskName").HeaderText("Name").Width(250).Add();
+        col.Field("StartDate").Add();
+        col.Field("Duration").Add();
+    })
+    .CalendarSettings(cal => cal
+        .ProjectCalendar(pc => pc
+            .Holidays(hol =>
+            {
+                hol.From(new DateTime(2026, 4, 10)).To(new DateTime(2026, 4, 10)).Add();
+                hol.From(new DateTime(2026, 4, 17)).To(new DateTime(2026, 4, 17)).Add();
+            })))
+    .Render()

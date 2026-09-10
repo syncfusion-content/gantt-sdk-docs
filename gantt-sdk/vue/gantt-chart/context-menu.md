@@ -68,4 +68,4 @@ The following sample shows context menu item for parent rows to expand or collap
 
 ## Touch interaction
 
-To perform `long press` action on a row, [context menu](context-menu#context-menu) is opened, and then tap a menu item to trigger its action.
+To perform `long press` action on a row, [context menu](https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/context-menu#context-menu) is opened, and then tap a menu item to trigger its action.

@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Data Binding from Local and Remote Sources in JavaScript Gantt Chart
 
-Data binding connects the JavaScript Gantt Chart control to project data sources, enabling dynamic visualization and management of project information. The control supports both local JavaScript arrays and remote server data through the [dataSource](../api/gantt#datasource) property, which accepts either a `DataManager` instance or JavaScript object array collection.
+Data binding connects the JavaScript Gantt Chart control to project data sources, enabling dynamic visualization and management of project information. The control supports both local JavaScript arrays and remote server data through the [dataSource](https://ej2.syncfusion.com/javascript/documentation/api/gantt#datasource) property, which accepts either a `DataManager` instance or JavaScript object array collection.
 
 Understanding data binding implementation ensures the Gantt chart accurately represents and interacts with project data across different scenarios and data structures.
 
@@ -31,28 +31,13 @@ The control supports two primary data structure types for organizing project hie
 
 ## Local data binding implementation
 
-Local data binding assigns JavaScript object arrays directly to the [dataSource](../api/gantt#datasource) property. The data source can be provided as a raw array or wrapped in a DataManager instance for consistent data operations.
+Local data binding assigns JavaScript object arrays directly to the [dataSource](https://ej2.syncfusion.com/javascript/documentation/api/gantt#datasource) property. The data source can be provided as a raw array or wrapped in a DataManager instance for consistent data operations.
 
 ### Hierarchical data structure
 
-Hierarchical data binding organizes complex parent-child relationships through nested object structures. Each parent task contains multiple child tasks through the [child](../api/gantt/taskFields#child) field mapping, creating natural tree structures that represent project hierarchies.
+Hierarchical data binding organizes complex parent-child relationships through nested object structures. Each parent task contains multiple child tasks through the [child](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#child) field mapping, creating natural tree structures that represent project hierarchies.
 
 This approach works well for data sources that maintain inherent parent-child relationships in their structure, such as JSON responses from APIs that provide nested task collections.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/databinding-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/databinding-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/databinding-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -64,27 +49,12 @@ This approach works well for data sources that maintain inherent parent-child re
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/databinding-cs1" %}
-{% endif %}
 
 ### Self-referential data structure
 
-Self-referential data binding uses flat data structures where tasks reference their relationships through ID fields. Map unique task identifiers to the [id](../api/gantt/taskFields#id) field and parent identifiers to the [parentID](../api/gantt/taskFields#parentid) field to establish task hierarchies without nested objects.
+Self-referential data binding uses flat data structures where tasks reference their relationships through ID fields. Map unique task identifiers to the [id](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#id) field and parent identifiers to the [parentID](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#parentid) field to establish task hierarchies without nested objects.
 
 This approach enables the control to reconstruct hierarchical tree structures from relational data, making it ideal for database-driven applications where parent-child relationships are maintained through foreign key references.
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/databinding-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/databinding-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/databinding-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -96,28 +66,12 @@ This approach enables the control to reconstruct hierarchical tree structures fr
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/databinding-cs2" %}
-{% endif %}
 
 **Data structure requirements**: When using hierarchical data, link child records to their parent using the `child` property mapping. For self-referential data, ensure each task's parent-child relationship is properly defined by mapping `id` and `parentID` fields correctly to enable proper hierarchy reconstruction.
 
 ## Remote data binding implementation
 
-Remote data binding assigns service endpoints as `DataManager` instances to the [dataSource](../api/gantt#datasource) property. This enables real-time data synchronization with external servers, databases, or web services.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/databinding-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/databinding-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/databinding-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+Remote data binding assigns service endpoints as `DataManager` instances to the [dataSource](https://ej2.syncfusion.com/javascript/documentation/api/gantt#datasource) property. This enables real-time data synchronization with external servers, databases, or web services.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -129,7 +83,6 @@ Remote data binding assigns service endpoints as `DataManager` instances to the 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/databinding-cs3" %}
-{% endif %}
 
 **Server Communication**: DataManager connects to various backend services including RESTful endpoints, OData services, and custom web APIs. Configure the appropriate URL and adaptor type based on the target server architecture and data format requirements.
 
@@ -190,11 +143,11 @@ public ActionResult UrlDatasource(DataManagerRequest dm)
 
 ### Load-on-demand implementation
 
-Load-on-demand rendering displays child records dynamically when parent nodes expand, optimizing performance for large hierarchical datasets. Configure a remote service URL in the DataManager instance and define the [hasChildMapping](../api/gantt/taskFields#hasChildMapping) property in taskFields to enable this functionality.
+Load-on-demand rendering displays child records dynamically when parent nodes expand, optimizing performance for large hierarchical datasets. Configure a remote service URL in the DataManager instance and define the [hasChildMapping](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#hasChildMapping) property in taskFields to enable this functionality.
 
 **Core concept**: The `hasChildMapping` property maps data source field names that indicate whether records contain child elements. This enables the control to display expand icons and manage dynamic loading without pre-loading entire hierarchical structures.
 
-**Loading behavior**: When [loadChildOnDemand](../api/gantt/index-default#loadchildondemand) is enabled, root nodes render in collapsed state initially. Expanding root nodes triggers child data loading from remote servers, with subsequent expand/collapse actions using locally cached data for improved performance.
+**Loading behavior**: When [loadChildOnDemand](https://ej2.syncfusion.com/javascript/documentation/api/gantt/index-default#loadchildondemand) is enabled, root nodes render in collapsed state initially. Expanding root nodes triggers child data loading from remote servers, with subsequent expand/collapse actions using locally cached data for improved performance.
 
 **Virtualization integration**: Combined `enableVirtualization` and `loadChildOnDemand` settings render only current viewport root nodes in collapsed state, further optimizing memory usage and rendering performance for large datasets.
 
@@ -545,7 +498,7 @@ public object GetTimeDifference(DateTime sdate, DateTime edate)
 
 ### Advanced server communication
 
-**Additional parameter transmission**: Pass extra parameters to server endpoints using the [addParams](../api/data/query#addparams) method of the [Query](../api/gantt/index-default#query) class. Server-side implementations inherit these parameters through DataManager class extensions, enabling custom data filtering and processing logic.
+**Additional parameter transmission**: Pass extra parameters to server endpoints using the [addParams](https://ej2.syncfusion.com/javascript/documentation/api/data/query#addparams) method of the [Query](https://ej2.syncfusion.com/javascript/documentation/api/gantt/index-default#query) class. Server-side implementations inherit these parameters through DataManager class extensions, enabling custom data filtering and processing logic.
 
 ```typescript
 import { Gantt, Edit, Toolbar } from "@syncfusion/ej2-gantt";
@@ -628,28 +581,13 @@ namespace URLAdaptor.Controllers
 }
 ```
 
-**HTTP error handling**: Server-side exceptions during data operations can be captured client-side through the [actionFailure](../api/gantt/index-default#actionfailure) event. This enables proper error messaging and graceful degradation when server communication fails.
+**HTTP error handling**: Server-side exceptions during data operations can be captured client-side through the [actionFailure](https://ej2.syncfusion.com/javascript/documentation/api/gantt/index-default#actionfailure) event. This enables proper error messaging and graceful degradation when server communication fails.
 
 **Data validation considerations**:
 
 - **Missing parentID validation**: Tasks without valid parentID references may display incorrectly or appear as root tasks unexpectedly
 - **Duplicate task ID prevention**: Ensure unique taskID values to prevent data operation failures or rendering issues
 - **Date format validation**: Task dates must follow supported formats (ISO or configured formats) to prevent parsing errors
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/actionfailure-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/actionfailure-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/actionfailure-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -661,26 +599,10 @@ namespace URLAdaptor.Controllers
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/actionfailure-cs1" %}
-{% endif %}
 
-**Fetch API integration**: Use Gantt [dataSource](../api/gantt/index-default#datasource) property to bind data from external Fetch requests. This approach benefits scenarios requiring asynchronous server data retrieval, utilizing the `onSuccess` event for effective data loading management.
+**Fetch API integration**: Use Gantt [dataSource](https://ej2.syncfusion.com/javascript/documentation/api/gantt/index-default#datasource) property to bind data from external Fetch requests. This approach benefits scenarios requiring asynchronous server data retrieval, utilizing the `onSuccess` event for effective data loading management.
 
-To show or hide the loading indicator during fetch, call [showSpinner](../api/gantt/index-default#showspinner) method before sending the request and [hideSpinner](../api/gantt/index-default#hidespinner) method after receiving the data.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/bindajax-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/bindajax-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/bindajax-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+To show or hide the loading indicator during fetch, call [showSpinner](https://ej2.syncfusion.com/javascript/documentation/api/gantt/index-default#showspinner) method before sending the request and [hideSpinner](https://ej2.syncfusion.com/javascript/documentation/api/gantt/index-default#hidespinner) method after receiving the data.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -692,7 +614,6 @@ To show or hide the loading indicator during fetch, call [showSpinner](../api/ga
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/bindajax-cs1" %}
-{% endif %}
 
 **Fetch binding limitation**: Data sources bound through Fetch requests act as local data sources, preventing server-side CRUD operations. This approach suits read-only scenarios or applications with separate data modification workflows.
 
@@ -702,7 +623,7 @@ Split task functionality allows task interruption during planned or unforeseen c
 
 ### Hierarchical split task configuration
 
-Split tasks at load time using hierarchical structures by defining segment details in the data source and mapping through the [taskFields.segments](../api/gantt/taskFields#segments) property. Each task contains segment arrays specifying split periods and durations.
+Split tasks at load time using hierarchical structures by defining segment details in the data source and mapping through the [taskFields.segments](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#segments) property. Each task contains segment arrays specifying split periods and durations.
 
 ```ts
 [
@@ -720,21 +641,6 @@ Split tasks at load time using hierarchical structures by defining segment detai
 ];
 ```
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs1/index.js %}
@@ -745,11 +651,10 @@ Split tasks at load time using hierarchical structures by defining segment detai
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs1" %}
-{% endif %}
 
 ### Self-referential split task configuration
 
-Define segment details as flat data collections mapped through the [segmentData](../api/gantt#segmentdata) property. The segment ID field connects segments to their parent tasks through the [taskFields.segmentId](../api/gantt/taskfields#segmentid) property mapping.
+Define segment details as flat data collections mapped through the [segmentData](https://ej2.syncfusion.com/javascript/documentation/api/gantt#segmentdata) property. The segment ID field connects segments to their parent tasks through the [taskFields.segmentId](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskfields#segmentid) property mapping.
 
 ```typescript
 taskFields: {
@@ -763,21 +668,6 @@ segmentData: [
 ],
 ```
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs2/index.js %}
@@ -788,26 +678,12 @@ segmentData: [
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/split-task-cs2" %}
-{% endif %}
 
 **Segment ID mapping**: The segment ID field contains references to tasks that should be split at load time, enabling the control to associate segment collections with their corresponding parent tasks.
 
 ## Expand state management
 
-Control parent task expand status in the Gantt chart by defining the [expandStateMapping](../api/gantt/taskFields#expandstate) property. This property maps to data source field names indicating whether parent tasks should render in expanded or collapsed states based on mapped boolean values.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/expand-state-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/expand-state-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
+Control parent task expand status in the Gantt chart by defining the [expandStateMapping](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#expandstate) property. This property maps to data source field names indicating whether parent tasks should render in expanded or collapsed states based on mapped boolean values.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -817,26 +693,12 @@ Control parent task expand status in the Gantt chart by defining the [expandStat
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/expand-state-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 **State persistence**: ExpandStateMapping ensures parent tasks maintain their intended expanded or collapsed states across data operations, providing consistent user experience and preserving intended data visualization structures.
 
 ## Programmatically update datasource
 
-You can programmatically update the Gantt chart data source using the [updateDataSource](../api/gantt/index-default#updatedatasource) method which takes two arguments where the first argument is the new `dataSource` and the second argument is an optional configuration object with `projectStartDate` and `projectEndDate` to define the project timeline.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/databinding-cs10/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/databinding-cs10/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
+You can programmatically update the Gantt chart data source using the [updateDataSource](https://ej2.syncfusion.com/javascript/documentation/api/gantt/index-default#updatedatasource) method which takes two arguments where the first argument is the new `dataSource` and the second argument is an optional configuration object with `projectStartDate` and `projectEndDate` to define the project timeline.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -847,24 +709,9 @@ You can programmatically update the Gantt chart data source using the [updateDat
 {% endhighlight %}
 {% endtabs %}
 
-{% endif %}
-
 ## Display custom message for empty records
 
 You can display a custom message when no data is available by defining an empty record template and assigning it to `treeGrid.grid.emptyRecordTemplate` during the `load` event in the control.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/databinding-cs11/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/databinding-cs11/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -874,8 +721,6 @@ You can display a custom message when no data is available by defining an empty 
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/databinding-cs11/index.html %}
 {% endhighlight %}
 {% endtabs %}
-
-{% endif %}
 
 ## Data binding limitations
 

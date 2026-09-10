@@ -22,8 +22,6 @@ The number of records displayed in the Gantt is determined by the height.
 
 This mode can be enable by setting the `EnableVirtualization` property to `true`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/virtual-scroll/tagHelper %}
@@ -33,29 +31,13 @@ This mode can be enable by setting the `EnableVirtualization` property to `true`
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/virtual-scroll/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Virtual-scroll.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/virtual-scroll/virtual-scroll.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Alt text](images/virtual-scroll.png)
+![Alt text](./images/virtual-scroll.png)
 
 ## Timeline virtualization
 
 Timeline virtualization allows you to load a data source having large timespan with high performance. Initially, it renders the timeline with thrice the width of the gantt element, while other timeline cells render on-demand during horizontal scrolling.
 
 This mode can be enable by setting the [EnableTimelineVirtualization](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableTimelineVirtualization) property to `true`.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -65,18 +47,6 @@ This mode can be enable by setting the [EnableTimelineVirtualization](https://he
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/virtual-scroll-cs2/virtual-scroll.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/virtual-scroll-cs2/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Timeline-Virtual-scroll.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/virtual-scroll-cs2/virtual-scroll.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Limitations for virtual scroll
 
