@@ -83,7 +83,7 @@ Now that `my-project` is ready to run with default settings, let's add Syncfusio
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Vue packages
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Vue component packages are available at [npmjs.com](https://www.npmjs.com/search?q=ej2-vue). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Vue components in the project, install the corresponding npm package.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Vue component packages are available at [node package registry](https://www.npmjs.com/search?q=ej2-vue). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Vue components in the project, install the corresponding npm package.
 
 This article uses the [Vue Kanban component](https://www.syncfusion.com/vue-components/vue-kanban) as an example. To use the Vue Kanban component in the project, the `@syncfusion/ej2-vue-kanban` package needs to be installed using the following command:
 
