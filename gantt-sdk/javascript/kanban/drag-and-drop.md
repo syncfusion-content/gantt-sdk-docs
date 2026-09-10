@@ -41,21 +41,6 @@ By default, all cards can be dragged and dropped across the columns and within t
 
 In the following example, disable the drag and drop behavior on the Kanban board.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/kanban/drag-and-drop-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/kanban/drag-and-drop-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/kanban/drag-and-drop-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/kanban/drag-and-drop-cs1/index.js %}
@@ -66,28 +51,12 @@ In the following example, disable the drag and drop behavior on the Kanban board
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/kanban/drag-and-drop-cs1" %}
-{% endif %}
 
 ### Swimlane drag and drop
 
 By default, Swimlane allows drag and drop across the columns within the swimlane row. Kanban does not allow dragging the cards across the swimlane rows.
 
 Enabling the `dragAndDrop` property allows you to drag the cards across the swimlane rows, which is specified inside the `swimlaneSettings` property.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/kanban/swimlane-drag-and-drop-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/kanban/swimlane-drag-and-drop-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/kanban/swimlane-drag-and-drop-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -99,7 +68,6 @@ Enabling the `dragAndDrop` property allows you to drag the cards across the swim
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/kanban/swimlane-drag-and-drop-cs1" %}
-{% endif %}
 
 ## External drag and drop
 
@@ -113,21 +81,6 @@ Drag and drop the card from one kanban to another kanban and vice versa. This ca
 
 In the following example, Drag the card from one Kanban and drop it into another kanban using the `dragStop` event. In this event, remove the card from the dragged Kanban by using the `deleteCard` public method and add the card to the dropped Kanban by using the `addCard` public method.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/kanban/kanban-to-kanban-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/kanban/kanban-to-kanban-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/kanban/kanban-to-kanban-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/kanban/kanban-to-kanban-cs1/index.js %}
@@ -138,28 +91,12 @@ In the following example, Drag the card from one Kanban and drop it into another
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/kanban/kanban-to-kanban-cs1" %}
-{% endif %}
 
 ### Treeview to Kanban
 
 Drag the card from the Kanban board and drop it to the Treeview component and vice versa.
 
 In the following sample, remove the data from the Kanban board using the `deleteCard` public method and add to the Treeview component using the `addNodes` public method at Kanban `dragStop` event when dragging the card and dropping it to the Treeview component. Remove the data from Treeview using the `removeNodes` public method and add to Kanban board using the `openDialog` public method when dragging the list from the Treeview component and dropping it to the kanban board.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/kanban/kanban-to-treeview-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/kanban/kanban-to-treeview-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/kanban/kanban-to-treeview-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -171,28 +108,12 @@ In the following sample, remove the data from the Kanban board using the `delete
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/kanban/kanban-to-treeview-cs1" %}
-{% endif %}
 
 ### Schedule to Kanban
 
 Drag the card from the Kanban board and drop it to the Schedule component and vice versa.
 
 In the following sample, remove the data from the Kanban board using the `deleteCard` public method and add to the schedule component using the `addNodes` public method at Kanban `dragStop` event when dragging the card and dropping it to the Treeview component. Remove the data from Treeview using the `removeNodes` public method and add to Kanban board using the `addCard` public method when dragging the list from the Treeview component and dropping it to the kanban board.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/kanban/kanban-to-schedule-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/kanban/kanban-to-schedule-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/kanban/kanban-to-schedule-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -204,4 +125,3 @@ In the following sample, remove the data from the Kanban board using the `delete
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/kanban/kanban-to-schedule-cs1" %}
-{% endif %}

@@ -14,8 +14,6 @@ domainurl: https://help.syncfusion.com/gantt-sdk/overview
 
 The row selection in the Gantt control can be enabled or disabled using the [`AllowSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowSelection) property. You can get the selected row object using the `getSelectedRecords` method. The following code example shows how to disable the row selection in Gantt.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/selection/disableSelection/tagHelper %}
@@ -25,27 +23,11 @@ The row selection in the Gantt control can be enabled or disabled using the [`Al
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/selection/disableSelection/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="DisableSelection.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/selection/disableSelection/disableSelection.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 N> `Row` selection is the default type of Gantt selection mode.
 
 ## Selecting a row on initial load
 
 You can select a row at the time of loading by setting the index of the row to the [`SelectedRowIndex`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SelectedRowIndex) property. Find the following code example for details.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -56,27 +38,11 @@ You can select a row at the time of loading by setting the index of the row to t
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/selection/initialLoadSelection/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="InitialLoadSelection.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/selection/initialLoadSelection/initialLoadSelection.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Alt text](images/initialLoadSelection.png)
+![Alt text](../images/initialLoadSelection.png)
 
 ## Selecting a row dynamically
 
-You can select a single row dynamically using the [`selectRow`](https://ej2.syncfusion.com/vue/documentation/api/gantt/selection#selectrow) method. Similarly, you can use the [`selectRows`](https://ej2.syncfusion.com/vue/documentation/api/gantt/selection#selectrows) method to dynamically select multiple rows. The following code demonstrates how to select a single or multiple rows dynamically by clicking the custom button.
-
-{% if page.publishingplatform == "aspnet-core" %}
+You can select a single row dynamically using the [`selectRow`](https://ej2.syncfusion.com/documentation/api/gantt/selection#selectrow) method. Similarly, you can use the [`selectRows`](https://ej2.syncfusion.com/documentation/api/gantt/selection#selectrows) method to dynamically select multiple rows. The following code demonstrates how to select a single or multiple rows dynamically by clicking the custom button.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -87,24 +53,9 @@ You can select a single row dynamically using the [`selectRow`](https://ej2.sync
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/selection/selectRow/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="SelectRow.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/selection/selectRow/selectRow.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 ## Multiple row selection
 
 You can select multiple rows by setting the [`SelectionSettings.Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttSelectionSettings.html#Syncfusion_EJ2_Gantt_GanttSelectionSettings_Type) property to `Multiple`. You can select more than one row by holding down the CTRL key while selecting multiple rows. The following code example explains how to enable multiple selection in Gantt.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -115,25 +66,9 @@ You can select multiple rows by setting the [`SelectionSettings.Type`](https://h
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/selection/multipleRowSelection/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="MultipleRowSelection.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/selection/multipleRowSelection/multipleRowSelection.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ## Customize row selection action
 
 While selecting a row in Gantt, the [`RowSelecting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_RowSelecting) and [`RowSelected`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_RowSelected) events will be triggered. The the [`RowSelecting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_RowSelecting) event will be triggered on initialization of row selection, and you can get the previously selected row and current selecting row’s information, which is used to prevent selection of a particular row. The [`RowSelected`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_RowSelected) event will be triggered on completion of row selection action, and you can get the current selected row’s information through this event. The following code example demonstrates how to prevent the selection of a row using the [`RowSelecting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_RowSelecting) event.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -143,19 +78,5 @@ While selecting a row in Gantt, the [`RowSelecting`](https://help.syncfusion.com
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/selection/rowSelectingEvent/rowSelectingEvent.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/selection/rowSelectingEvent/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="RowSelectingEvent.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/selection/rowSelectingEvent/rowSelectingEvent.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 In the Gantt control, when you click an already selected row, selection will be cleared. While deselecting a row in Gantt, the [`RowDeselecting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_RowDeselecting) and [`RowDeselected`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_RowDeselected) events will occur. The [`RowDeselecting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_RowDeselecting) event will occur on initialization of deselecting row, and you can get the current deselecting row’s information to prevent the deselection of particular row. The [`RowDeselected`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_RowDeselected) event will occur on completion of row deselection action, and you can get the current deselected row’s information.

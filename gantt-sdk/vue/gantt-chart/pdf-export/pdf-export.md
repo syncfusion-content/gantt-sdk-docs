@@ -102,7 +102,7 @@ PDF export provides an option to export multiple Gantt Chart components into the
 
 ## Applying Themes in PDF Export
 
-PDF export provides an option to apply themes to the exported PDF document. To apply a theme, define the [theme](https://helpej2.syncfusion.com/vue/documentation/api/gantt/pdfExportProperties#theme) in [pdfExportProperties](https://helpej2.syncfusion.com/vue/documentation/api/gantt/pdfExportProperties).  
+PDF export provides an option to apply themes to the exported PDF document. To apply a theme, define the [theme](https://ej2.syncfusion.com/vue/documentation/api/gantt/pdfExportProperties#theme) in [pdfExportProperties](https://ej2.syncfusion.com/vue/documentation/api/gantt/pdfExportProperties).  
 The available themes are:
 
 {% tabs %}

@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with JavaScript Gantt Chart | Syncfusion
 description: Get started with JavaScript Gantt Chart control by setting up data sources, configuring tasks, and implementing basic features for project management.
 keywords: javascript gantt getting started, setup, configuration, data source, tasks, scheduling, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/es5-getting-started
+canonical: https://www.syncfusion.com/gantt-sdk/javascript-gantt-chart
 platform: gantt-sdk
 control: Getting Started - Gantt Chart
 documentation: ug
@@ -20,7 +20,7 @@ This section explains the steps required to create a simple Essential<sup style=
 
 To get started, ensure the following software is installed on the machine.
 
-* [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/gantt-sdk/confirm)
+* [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/gantt-sdk)
 
 * [Visual Studio Code](https://code.visualstudio.com)
 > Check out the [download and installation](https://ej2.syncfusion.com/javascript/documentation/installation-and-upgrade/download) section of **Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript**. If you are using Syncfusion<sup style="font-size:70%">&reg;</sup> CDN resources to build your web application, you can skip the Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript prerequisite.
@@ -340,7 +340,7 @@ You can preview the following sample by clicking the **Preview Sample** button.
 
 ## Deploy the application
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Gantt Chart control features are segregated into individual feature-wise modules. The [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build and `CDN` scripts contain code for all features used in Gantt Chart, so you should avoid using them in production. You are strongly recommended to generate script files for production using the Syncfusion<sup style="font-size:70%">&reg;</sup> **Custom Resource Generator ([CRG](https://crg.syncfusion.com))** for Essential<sup style="font-size:70%">&reg;</sup> JS 2. CRG allows you to generate the bundled script for the currently enabled features in Gantt Chart. See the [CRG getting started guide](https://ej2.syncfusion.com/javascript/documentation/common/custom-resource-generator/) for step-by-step instructions.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Gantt Chart control features are segregated into individual feature-wise modules. The [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/essential-js2) build and `CDN` scripts contain code for all features used in Gantt Chart, so you should avoid using them in production. You are strongly recommended to generate script files for production using the Syncfusion<sup style="font-size:70%">&reg;</sup> **Custom Resource Generator ([CRG](https://crg.syncfusion.com))** for Essential<sup style="font-size:70%">&reg;</sup> JS 2. CRG allows you to generate the bundled script for the currently enabled features in Gantt Chart. See the [CRG getting started guide](https://ej2.syncfusion.com/javascript/documentation/common/custom-resource-generator) for step-by-step instructions.
 
 ## Error handling
 

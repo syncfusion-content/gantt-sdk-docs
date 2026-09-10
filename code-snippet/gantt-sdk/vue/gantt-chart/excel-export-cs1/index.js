@@ -29,7 +29,7 @@ new Vue({
         toolbarClick: (args: ClickEventArgs) => {
                 if (args.item.id === 'GanttContainer_excelexport') {
                     var excelExportProperties: ExcelExportProperties = {
-                        dataSource: ganttData[1];
+                        dataSource: [ganttData[1]]
                     };
                     var ganttObj = document.getElementById('GanttContainer').ej2_instances[0];
                     ganttObj.excelExport(excelExportProperties);

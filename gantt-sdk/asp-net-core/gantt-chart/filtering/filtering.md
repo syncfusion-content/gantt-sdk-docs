@@ -26,8 +26,6 @@ The Gantt supports a set of filtering modes with the [`FilterSettings.HierarchyM
 
 * `None`: Displays only the filtered records.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/filtering/filterHierarchyMode/tagHelper %}
@@ -37,25 +35,9 @@ The Gantt supports a set of filtering modes with the [`FilterSettings.HierarchyM
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/filtering/filterHierarchyMode/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="FilterHierarchyMode.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/filtering/filterHierarchyMode/filterHierarchyMode.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ### Initial filter
 
 To apply the filter at initial rendering, set the filter to `predicate` object in the [`FilterSettings.Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttFilterSettings.html#Syncfusion_EJ2_Gantt_GanttFilterSettings_Columns) property.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -65,20 +47,6 @@ To apply the filter at initial rendering, set the filter to `predicate` object i
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/filtering/initialFilter/initialFilter.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/filtering/initialFilter/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="InitialFilter.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/filtering/initialFilter/initialFilter.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ### Filter operators
 
@@ -106,8 +74,6 @@ By default, the Gantt control ignores the diacritic characters while filtering. 
 
 In the following sample, type **Perform** in the **TaskName** column to filter diacritic characters.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/filtering/diacriticsFilter/tagHelper %}
@@ -117,25 +83,9 @@ In the following sample, type **Perform** in the **TaskName** column to filter d
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/filtering/diacriticsFilter/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="DiacriticsFilter.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/filtering/diacriticsFilter/diacriticsFilter.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ## Filtering a specific column by method
 
 You can filter the columns dynamically by using the `filterByColumn` method.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -146,25 +96,9 @@ You can filter the columns dynamically by using the `filterByColumn` method.
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/filtering/filterByColumn/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="FilterByColumn.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/filtering/filterByColumn/filterByColumn.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ## Clear filtered columns
 
 You can clear all the filtering condition done in the Gantt control by using the `clearFiltering` method. The following code snippet explains the above behaviour.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -174,15 +108,3 @@ You can clear all the filtering condition done in the Gantt control by using the
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/filtering/clearFilter/clearFilter.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/filtering/clearFilter/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ClearFilter.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/filtering/clearFilter/clearFilter.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

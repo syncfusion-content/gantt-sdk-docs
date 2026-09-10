@@ -40,11 +40,42 @@ When integrating image or template elements into a gantt column, it's recommende
 
 ## How to improve loading performance by referring individual script and CSS
 
-To enhance the performance of the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart component during initial rendering and certain actions, it is recommended to download specific component scripts using CRG (Custom Resource Generator) for optimized project loading. By default, the ej2.min.js script file includes all Syncfusion<sup style="font-size:70%">&reg;</sup> component scripts, which may lead to longer load times. Using [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator), you can selectively choose the components and their modules that your project requires. Subsequently, you can download only the necessary scripts and CSS, thereby improving loading times and optimizing resource utilization according to your project's needs.
+To enhance the performance of the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart component during initial rendering and certain actions, it is recommended to download specific component scripts using CRG (Custom Resource Generator) for optimized project loading. By default, the ej2.min.js script file includes all Syncfusion<sup style="font-size:70%">&reg;</sup> component scripts, which may lead to longer load times. Using [CRG](https://crg.syncfusion.com), you can selectively choose the components and their modules that your project requires. Subsequently, you can download only the necessary scripts and CSS, thereby improving loading times and optimizing resource utilization according to your project's needs.
 
 [CRG website link](https://crg.syncfusion.com)
 
 So to improve the performance of gantt during the initial rendering, suggested you to refer individual script and CSS.
+
+### Performance benchmarks
+
+The following tables show typical load times for various Gantt configurations, comparing non-virtualized and virtualized scenarios:
+
+**Test environment**
+
+- Component Version: Syncfusion Vue Gantt 35.1.27
+- Vue Version: 3.5.41
+- Browser: Edge 152
+- Operating System: Windows 11
+- CPU: 11th Gen Intel® Core™ i5-1135G7 @ 2.40GHz
+- RAM: 16GB
+
+**Non-virtualized scenario (2,500 tasks)**
+
+| Scenario                        | Load time (seconds) |
+|---------------------------------|---------------------|
+| Default hierarchy (Parent-Child) | 3.5                 |
+| + Predecessor                   | 5.9                 |
+| + Resources                     | 6.7                 |
+| + Split taskbars                | 8.5                 |
+
+**Virtualized scenario (25,000 tasks)**
+
+| Scenario                        | Load time (seconds) |
+|---------------------------------|---------------------|
+| Default hierarchy (Parent-Child) | 5.6                 |
+| + Predecessor                   | 6.9                 |
+| + Resources                     | 8.1                 |
+| + Split taskbars                | 20.7                |
 
 ## How to optimize server-side data operations with adaptors
 
@@ -54,7 +85,7 @@ The Gantt Chart component provides support for various adaptors (OData, ODataV4,
 - Sorting
 - Aggregates
 
-## How to avoid MaxJsonLength error while passing large amount of records
+## How to avoid maxJsonLength error while passing large amount of records
 
 The Gantt Chart component operates on a client-server basis, meaning data is sent as a JSON object between the client and server. The reported issue occurs due to the serialization of a large JSON object. To resolve this, you need to increase the maximum length for serializing large JSON objects. This can be done by altering the [MaxJsonLength](https://social.msdn.microsoft.com/Forums/en-US/ab1a5864-46e2-4c57-9511-dc3f60cc314a/how-to-increase-maxjsonlength-for-json-post-in-mvc3?forum=aspmv) property in your web.config file or at the point of deserialization.
 

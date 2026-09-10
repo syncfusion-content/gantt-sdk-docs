@@ -358,6 +358,6 @@ In the following example, clicking an external button invokes the `UndoAsync` me
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/hXVnXdVroTNIBznu?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## See Also
+## See also
 - [How to add undo/redo events?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#onundoredo)
 - [What are the keys used for undo/redo?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/accessibility#undo-redo)

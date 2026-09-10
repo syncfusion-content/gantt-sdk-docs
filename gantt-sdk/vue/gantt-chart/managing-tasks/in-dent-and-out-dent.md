@@ -3,7 +3,7 @@ layout: post
 title: Indent and Outdent in Vue Gantt Chart | Syncfusion
 description: Learn how to indent and outdent tasks in Syncfusion Vue Gantt Chart, organizing task hierarchy with built-in methods, toolbar items, and context menu actions.
 keywords: vue gantt indent outdent, task hierarchy, task level, hierarchical order, task organization, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/managing-tasks/indent-and-outdent
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/managing-tasks/in-dent-and-out-dent
 platform: gantt-sdk
 control: Indent and Outdent - Gantt Chart
 documentation: ug

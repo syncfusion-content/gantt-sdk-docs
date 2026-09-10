@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with Vue Gantt Chart | Syncfusion
 description: Check out and learn about getting started with the Vue Gantt Chart component with step-by-step guide and code examples.
 keywords: vue gantt getting started, setup, installation, first steps, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/getting-started
+canonical: https://www.syncfusion.com/vue-components/vue-gantt-chart
 platform: gantt-sdk
 control: Getting Started - Gantt Chart
 documentation: ug
@@ -274,6 +274,6 @@ You can preview the following sample by clicking the **Preview Sample** button.
 
 ## Next Steps
 
-- **[Key Elements](./key-elements)** - Learn about UI components and interactions
-- **[Feature Modules](./module)** - Enable advanced features with module injection
-- **[Overview](./overview)** - Explore all available features
+- **[Key Elements](https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/key-elements)** - Learn about UI components and interactions
+- **[Feature Modules](https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/module)** - Enable advanced features with module injection
+- **[Overview](https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/overview)** - Explore all available features

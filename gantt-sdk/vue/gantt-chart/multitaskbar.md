@@ -3,7 +3,7 @@ layout: post
 title: Multi Taskbar in Vue Gantt Chart | Syncfusion
 description: Learn how to configure multi taskbar feature in Syncfusion Vue Gantt Chart to visualize multiple tasks assigned to resources.
 keywords: vue gantt multi taskbar, resource taskbar, multiple tasks, resource assignment, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/multi-taskbar
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/multitaskbar
 platform: gantt-sdk
 control: Multi Taskbar - Gantt Chart
 documentation: ug

@@ -22,19 +22,6 @@ The column menu has options to integrate features like sorting, filtering, and a
 | `AutoFitAll`     | Auto fit all columns.                                                  |
 | `Filter`         | Show the filter option as given in the `filterSettings.type` property. |
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/columnMenu/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="ColumnMenu.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/columnMenu/columnMenu.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/columnMenu/razor %}
@@ -43,9 +30,8 @@ The column menu has options to integrate features like sorting, filtering, and a
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/columnMenu/columnMenu.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-![Alt text](images/columnMenu.png)
+![Alt text](../images/columnMenu.png)
 
 N> You can disable the column menu for a particular column by setting the `Columns.ShowColumnMenu` to `false`.
 
@@ -56,19 +42,6 @@ During the resizing action, the gantt component triggers the below two events.
 1. The [`columnMenuOpen`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ColumnMenuOpen) event triggers before the column menu opens.
 2. The [`columnMenuClick`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ColumnMenuClick) event triggers when the user clicks the column menu of the gantt.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/colMenuEvents/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="ColMenuEvents.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/colMenuEvents/colMenuEvents.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/colMenuEvents/razor %}
@@ -77,24 +50,10 @@ During the resizing action, the gantt component triggers the below two events.
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/colMenuEvents/colMenuEvents.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Custom Column Menu Item
 
 Custom column menu items can be added by defining the `columnMenuItems`. Actions for this customized items can be defined in the [`columnMenuClick`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ColumnMenuClick) event.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/colMenuItem/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="ColMenuItem.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/colMenuItem/colMenuItem.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -104,26 +63,12 @@ Custom column menu items can be added by defining the `columnMenuItems`. Actions
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/colMenuItem/colMenuItem.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Customize menu items for particular columns
 
 Sometimes, you have a scenario that to hide an item from column menu for particular columns. In that case, you need to define the `columnMenuOpenEventArgs.hide` as true in the [`columnMenuOpen`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ColumnMenuOpen) event.
 
 The following sample, **Filter** item was hidden in column menu when opens for the **Task Name** column.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/colMenuAction/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="ColMenuAction.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/colMenuAction/colMenuAction.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -133,4 +78,3 @@ The following sample, **Filter** item was hidden in column menu when opens for t
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/colMenuAction/colMenuAction.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

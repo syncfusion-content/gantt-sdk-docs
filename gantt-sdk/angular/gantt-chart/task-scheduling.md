@@ -3,7 +3,7 @@ layout: post
 title: Task Scheduling in Angular Gantt Chart Component | Syncfusion
 description: Learn here all about task scheduling in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
 platform: gantt-sdk
-control: Task scheduling 
+control: Task scheduling
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
@@ -14,11 +14,11 @@ The Gantt provides support for automatic and manual task scheduling modes. It is
 
 The Gantt control supports three types of mode. They are:
 
-* **Auto**: All the tasks are automatically validate.
-* **Manual**: All the tasks are manually validate by the user.
-* **Custom**: Both Auto and Manual tasks are render by mapped from data source.
+- **Auto**: All the tasks are automatically validate.
+- **Manual**: All the tasks are manually validate by the user.
+- **Custom**: Both Auto and Manual tasks are render by mapped from data source.
 
->Note: The default value of [taskMode](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskmode) is **Auto**.
+> Note: The default value of [taskMode](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskmode) is **Auto**.
 
 ## Automatically scheduled Tasks
 
@@ -39,7 +39,7 @@ The rendering of the parent taskbar in auto-scheduling mode also takes into acco
 {% include code-snippet/gantt-sdk/angular/gantt-chart/task-scheduling/automatic-tasks-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/task-scheduling/automatic-tasks-cs1" %}
 
 ## Manually scheduled Tasks
@@ -57,7 +57,7 @@ We can restrict this mode in predecessor validation alone. That is, we can autom
 {% include code-snippet/gantt-sdk/angular/gantt-chart/task-scheduling/manual-tasks-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/task-scheduling/manual-tasks-cs1" %}
 
 ## Custom
@@ -73,21 +73,21 @@ When the [taskMode](https://ej2.syncfusion.com/angular/documentation/api/gantt#t
 {% include code-snippet/gantt-sdk/angular/gantt-chart/task-scheduling/custom-tasks-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/task-scheduling/custom-tasks-cs1" %}
 
 ## Unscheduled Tasks
 
 Unscheduled tasks are planned for a project without any definite schedule dates. The Gantt control supports rendering the unscheduled tasks. You can create or update the tasks with anyone of start date, end date, and duration values or none. You can enable or disable the unscheduled tasks by using the [allowUnscheduledTasks](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowunscheduledtasks) property. The following images represent the various types of unscheduled tasks in Gantt.
 
-Taskbar state |Auto |Manual
------|-----|-----
-`Start Date Only` | ![Alt text](images/startDate-only.png) | ![Alt text](images/startDate-manual.png)
-`End Date Only` | ![Alt text](images/endDate-only.png) | ![Alt text](images/endDate-manual.png)
-`Duration Only` | ![Alt text](images/duration-only.png) | ![Alt text](images/duration-manual.png)
-`Milestone`| ![Alt text](images/milestone.png) | ![Alt text](images/milestone.png)
+| Taskbar state     | Auto                                   | Manual                                   |
+| ----------------- | -------------------------------------- | ---------------------------------------- |
+| `Start Date Only` | ![Alt text](images/startDate-only.png) | ![Alt text](images/startDate-manual.png) |
+| `End Date Only`   | ![Alt text](images/endDate-only.png)   | ![Alt text](images/endDate-manual.png)   |
+| `Duration Only`   | ![Alt text](images/duration-only.png)  | ![Alt text](images/duration-manual.png)  |
+| `Milestone`       | ![Alt text](images/milestone.png)      | ![Alt text](images/milestone.png)        |
 
->Note: A milestone is a task that has no start and end dates, but it has a duration value of zero
+> Note: A milestone is a task that has no start and end dates, but it has a duration value of zero
 
 ## Define unscheduled tasks in data source
 
@@ -102,7 +102,7 @@ You can define the various types of unscheduled tasks in the data source as foll
 {% include code-snippet/gantt-sdk/angular/gantt-chart/task-scheduling/unscheduled-tasks-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/task-scheduling/unscheduled-tasks-cs1" %}
 
 > NOTE:
@@ -127,12 +127,13 @@ The following code snippet explains how to define the working time range for the
 {% include code-snippet/gantt-sdk/angular/gantt-chart/task-scheduling/working-timerange-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/task-scheduling/working-timerange-cs1" %}
 
 > NOTE:
->* Individual tasks can lie between any time within the defined working time range of the project.
->* The [dayWorkingTime](https://ej2.syncfusion.com/angular/documentation/api/gantt/dayWorkingTime/) property is used to define the working time for the whole project.
+>
+> - Individual tasks can lie between any time within the defined working time range of the project.
+> - The [dayWorkingTime](https://ej2.syncfusion.com/angular/documentation/api/gantt/dayWorkingTime) property is used to define the working time for the whole project.
 
 ### Working time range for specific day in a week
 
@@ -155,14 +156,15 @@ The following code snippet explains how to define the week working time range fo
 {% include code-snippet/gantt-sdk/angular/gantt-chart/task-scheduling/week-workingtime-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/task-scheduling/week-workingtime-cs1" %}
 
 > NOTE:
->* By default working time range for all days will be **8** to **12** and **13** to **17** hours.
->* If both `dayWorkingTime` and `weekWorkingTime` are mapped, priority will be given to `weekWorkingTime` property.
->* Default working time defined in `dayWorkingTime` property will be used for the days left out in the `weekWorkingTime` property.
->* If a day is a holiday or non-working day and also initialized in `weekWorkingTime` property, it will only be considered as a non-working day.
+>
+> - By default working time range for all days will be **8** to **12** and **13** to **17** hours.
+> - If both `dayWorkingTime` and `weekWorkingTime` are mapped, priority will be given to `weekWorkingTime` property.
+> - Default working time defined in `dayWorkingTime` property will be used for the days left out in the `weekWorkingTime` property.
+> - If a day is a holiday or non-working day and also initialized in `weekWorkingTime` property, it will only be considered as a non-working day.
 
 ## Weekend/non-working days
 
@@ -181,7 +183,7 @@ Non-working days/weekend are used to represent the non-productive days in a proj
 {% include code-snippet/gantt-sdk/angular/gantt-chart/task-scheduling/non-workingdays-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/task-scheduling/non-workingdays-cs1" %}
 
 > NOTE:
@@ -192,14 +194,14 @@ Non-working days/weekend are used to represent the non-productive days in a proj
 
 In Gantt, the task's duration value can be measured by the following duration units,
 
-* Day
-* Hour
-* Minute
+- Day
+- Hour
+- Minute
 
 In Gantt, we can define duration unit for whole project by using [durationUnit](https://ej2.syncfusion.com/angular/documentation/api/gantt#durationunit) property, when we defines the value for this property, this unit will be applied for all task which don't has duration unit value. And each task in the project can be defined with different duration units and the duration unit of a task can be defined by the following ways,
 
-* Using [taskFields.durationUnit](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#durationunit) property, to map the duration unit data source field.
-* Defining the duration unit value along with the duration field in the data source.
+- Using [taskFields.durationUnit](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#durationunit) property, to map the duration unit data source field.
+- Defining the duration unit value along with the duration field in the data source.
 
 ### Mapping the duration unit field
 
@@ -218,11 +220,11 @@ The below code snippet explains the mapping of duration unit data source field t
 {% include code-snippet/gantt-sdk/angular/gantt-chart/scheduling-tasks/mapping-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/scheduling-tasks/mapping-cs1" %}
 
 > NOTE:
-The default value of the [durationUnit](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#durationunit) property is `day`.
+> The default value of the [durationUnit](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#durationunit) property is `day`.
 
 ### Defining duration unit along with duration field
 
@@ -237,8 +239,8 @@ Duration units for the tasks can also be defined along with the duration values,
 {% include code-snippet/gantt-sdk/angular/gantt-chart/scheduling-tasks/durationfield-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/scheduling-tasks/durationfield-cs1" %}
 
->NOTE:
-The edit type of the duration column in Gantt is string, to support editing the duration field along with duration units.
+> NOTE:
+> The edit type of the duration column in Gantt is string, to support editing the duration field along with duration units.

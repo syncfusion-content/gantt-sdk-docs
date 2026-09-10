@@ -33,7 +33,7 @@ namespace URLAdaptor.Models
 {
     public class TaskData
     {
-        public int TaskID { get; set; }
+        public int TaskId { get; set; }
         public string TaskName { get; set; }
         public DateTime? StartDate { get; set; }
         public DateTime? EndDate { get; set; }
@@ -247,11 +247,11 @@ The `SfDataManager` offers multiple adaptor options to connect with remote datab
 
 <SfGantt TValue="TaskData" Height="450px">
     <SfDataManager Url="/api/gantt" Adaptor="Adaptors.UrlAdaptor"></SfDataManager>
-    <GanttTaskFields Id="TaskID" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
+    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
                      ParentID="ParentID" Dependency="Predecessor">
     </GanttTaskFields>    
     <GanttColumns>
-        <GanttColumn Field="TaskID" HeaderText="Task ID" Width="90"></GanttColumn>
+        <GanttColumn Field="TaskId" HeaderText="Task ID" Width="90"></GanttColumn>
         <GanttColumn Field="TaskName" HeaderText="Task Name" Width="220"></GanttColumn>
         <GanttColumn Field="StartDate" HeaderText="Start Date" Width="140" Format="d"></GanttColumn>
         <GanttColumn Field="EndDate" HeaderText="End Date" Width="140" Format="d"></GanttColumn>
@@ -368,11 +368,11 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 
 <SfGantt TValue="TaskData" Height="450px" Toolbar="@(new List<string>() { "Search" })">
     <SfDataManager Url="/api/gantt" Adaptor="Adaptors.UrlAdaptor"></SfDataManager>
-    <GanttTaskFields Id="TaskID" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
+    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
                      ParentID="ParentID" Dependency="Predecessor">
     </GanttTaskFields>    
     <GanttColumns>
-        <GanttColumn Field="TaskID" HeaderText="Task ID" Width="90"></GanttColumn>
+        <GanttColumn Field="TaskId" HeaderText="Task ID" Width="90"></GanttColumn>
         <GanttColumn Field="TaskName" HeaderText="Task Name" Width="220"></GanttColumn>
         <GanttColumn Field="StartDate" HeaderText="Start Date" Width="140" Format="d"></GanttColumn>
         <GanttColumn Field="EndDate" HeaderText="End Date" Width="140" Format="d"></GanttColumn>
@@ -435,11 +435,11 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 
 <SfGantt TValue="TaskData" Height="450px" AllowFiltering="true">
     <SfDataManager Url="/api/gantt" Adaptor="Adaptors.UrlAdaptor"></SfDataManager>
-    <GanttTaskFields Id="TaskID" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
+    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
                      ParentID="ParentID" Dependency="Predecessor">
     </GanttTaskFields>   
     <GanttColumns>
-        <GanttColumn Field="TaskID" HeaderText="Task ID" Width="90"></GanttColumn>
+        <GanttColumn Field="TaskId" HeaderText="Task ID" Width="90"></GanttColumn>
         <GanttColumn Field="TaskName" HeaderText="Task Name" Width="220"></GanttColumn>
         <GanttColumn Field="StartDate" HeaderText="Start Date" Width="140" Format="d"></GanttColumn>
         <GanttColumn Field="EndDate" HeaderText="End Date" Width="140" Format="d"></GanttColumn>
@@ -502,11 +502,11 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 
 <SfGantt TValue="TaskData" Height="450px" AllowSorting="true">
     <SfDataManager Url="/api/gantt" Adaptor="Adaptors.UrlAdaptor"></SfDataManager>
-    <GanttTaskFields Id="TaskID" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
+    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
                      ParentID="ParentID" Dependency="Predecessor">
     </GanttTaskFields>    
     <GanttColumns>
-        <GanttColumn Field="TaskID" HeaderText="Task ID" Width="90"></GanttColumn>
+        <GanttColumn Field="TaskId" HeaderText="Task ID" Width="90"></GanttColumn>
         <GanttColumn Field="TaskName" HeaderText="Task Name" Width="220"></GanttColumn>
         <GanttColumn Field="StartDate" HeaderText="Start Date" Width="140" Format="d"></GanttColumn>
         <GanttColumn Field="EndDate" HeaderText="End Date" Width="140" Format="d"></GanttColumn>
@@ -544,12 +544,12 @@ To enable editing in Blazor Gantt Chart, refer to the editing [documentation](ht
 
 <SfGantt TValue="TaskData" Height="450px" AllowFiltering="true" AllowSorting="true" Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" })">
     <SfDataManager Url="/api/gantt" InsertUrl="/api/gantt/Insert" UpdateUrl="/api/gantt/Update" RemoveUrl="/api/gantt/Remove" Adaptor="Adaptors.UrlAdaptor"></SfDataManager>
-    <GanttTaskFields Id="TaskID" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
+    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
                      ParentID="ParentID" Dependency="Predecessor">
     </GanttTaskFields>
     <GanttEditSettings AllowAdding="true" AllowEditing="true" AllowTaskbarEditing="true" AllowDeleting="true" />
     <GanttColumns>
-        <GanttColumn Field="TaskID" HeaderText="Task ID" Width="90"></GanttColumn>
+        <GanttColumn Field="TaskId" HeaderText="Task ID" Width="90"></GanttColumn>
         <GanttColumn Field="TaskName" HeaderText="Task Name" Width="220"></GanttColumn>
         <GanttColumn Field="StartDate" HeaderText="Start Date" Width="140" Format="d"></GanttColumn>
         <GanttColumn Field="EndDate" HeaderText="End Date" Width="140" Format="d"></GanttColumn>

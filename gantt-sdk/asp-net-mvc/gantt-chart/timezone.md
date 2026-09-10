@@ -22,19 +22,6 @@ The `new Date()` in JavaScript returns the exact current date object with comple
 
 Setting `timezone` to UTC for Gantt will display the same time as in the database for all the users in different time zone.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/timezone/same-time/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Same-time.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/timezone/same-time/same-time.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/timezone/same-time/razor %}
@@ -43,24 +30,10 @@ Setting `timezone` to UTC for Gantt will display the same time as in the databas
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/timezone/same-time/same-time.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## CRUD operations with timezone
 
 CRUD operations can be performed with timezone, and the gantt is rendered based on the timezone specified in the load time. All the editing actions will be done based on the user timezone, but on database save action, we have reversed this conversion to local time and provided data to client side events for better understanding purpose. Refer to the following code example.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/timezone/timezone-CRUD/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Timezone-CRUD.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/timezone/timezone-CRUD/timezone-CRUD.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -70,7 +43,6 @@ CRUD operations can be performed with timezone, and the gantt is rendered based 
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/timezone/timezone-CRUD/timezone-CRUD.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Timezone methods
 
@@ -85,7 +57,7 @@ This method is used to calculate the difference between passed UTC date and time
 
 Returns `number`
 
-```sh
+```js
     // Assume your local timezone as IST/UTC+05:30
     var timezone = new ej.schedule.Timezone();
     var date = new Date(2018,11,5,15,25,11);
@@ -105,7 +77,7 @@ This method is used to convert the passed date from one timezone to another time
 
 Returns `Date`
 
-```sh
+```js
     // Assume your local timezone as IST/UTC+05:30
     var timezone = new ej.schedule.Timezone();
     var date = new Date(2018,11,5,15,25,11);
@@ -126,7 +98,7 @@ This method is used to remove the time difference between passed UTC date and ti
 
 Returns `Date`
 
-```sh
+```js
     // Assume your local timezone as IST/UTC+05:30
     var timezone = new ej.schedule.Timezone();
     var date = new Date(2018,11,5,15,25,11);

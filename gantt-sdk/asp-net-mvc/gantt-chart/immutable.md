@@ -20,19 +20,6 @@ To enable this feature, you have to set the [`enableImmutableMode`](https://help
 
 The following code example shows how to display the immutable mode in the Gantt control.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/immutable/immutable/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="immutable.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/immutable/immutable/immutable.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/immutable/immutable/razor %}
@@ -41,7 +28,6 @@ The following code example shows how to display the immutable mode in the Gantt 
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/immutable/immutable/immutable.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Limitations
 

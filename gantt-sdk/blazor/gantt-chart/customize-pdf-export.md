@@ -249,7 +249,7 @@ The supported page sizes are:
 
 ## Export current view records
 
-The PDF export functionality allows you to export only the records that are currently visible on the Gantt chart to a PDF document. This can be achieved by enabling the [IsCurrentViewExport](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.PdfExportEventArgs.html#Syncfusion_Blazor_Gantt_PdfExportEventArgs_IsCurrentViewExport) boolean property in the [PdfExporting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_PdfExporting) event.
+The PDF export functionality allows you to export only the records that are currently visible on the Gantt chart to a PDF document. Achieve this by enabling the [IsCurrentViewExport](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.PdfExportEventArgs.html#Syncfusion_Blazor_Gantt_PdfExportEventArgs_IsCurrentViewExport) boolean property in the [PdfExporting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_PdfExporting) event.
 
 > Exporting current view records is only applicable when the virtualization feature is enabled, and it does not retain the state of collapsed rows during export.
 
@@ -745,7 +745,7 @@ The following code snippet demonstrates how to configure the `Columns` property 
 
 ### Through event
 
-The PDF export functionality allows you to export only specific columns from the Gantt chart, rather than exporting all columns by default. This can be achieved by using the `Columns` argument in the [PdfExporting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_PdfExporting) event.
+The PDF export functionality allows you to export only specific columns from the Gantt chart, rather than exporting all columns by default. Achieve this using the `Columns` argument in the [PdfExporting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_PdfExporting) event.
 
 The following code demonstrates how to use the `PdfExporting` event to export specific columns of the Gantt chart to a PDF document,
 
@@ -1432,7 +1432,7 @@ In the following sample, task label template with images and text are exported t
 ### Image handling across events
 - **Base64 and MemoryStream**: Convert images to Base64 strings, then use `MemoryStream` to convert them to `PdfImage`. This avoids reliance on potentially inaccessible web links.
 - **Height and width management**: Scale images to fit designated areas to prevent default resizing that reflects cell or row heights. Maintain a professional PDF layout.
-- **Compression and optimization**: Compress images prior to Base64 conversion to reduce file size while maintaining quality, optimizing the final PDF document size.
+- **Compression and optimization**: Compress images before Base64 conversion to reduce file size while maintaining quality, optimizing the final PDF document size.
 
 ### Troubleshooting PDF export
 

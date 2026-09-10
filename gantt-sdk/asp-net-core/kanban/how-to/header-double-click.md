@@ -12,9 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Handle Header Double-Click in ASP.NET Core Kanban
 
-You can bind the header double click event by using the [`dataBound`](../../api/kanban#dataBound) event at the initial rendering. You can get the column header text when you double click on the headers.
-
-{% if page.publishingplatform == "aspnet-core" %}
+You can bind the header double click event by using the [dataBound](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_DataBound) event at the initial rendering. You can get the column header text when you double click on the headers.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -24,18 +22,6 @@ You can bind the header double click event by using the [`dataBound`](../../api/
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/how-to/header-double-click/datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/how-to/header-double-click/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/how-to/header-double-click/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 Output be like the below.
 

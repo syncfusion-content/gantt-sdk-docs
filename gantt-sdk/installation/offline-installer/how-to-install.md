@@ -70,7 +70,7 @@ The steps below show how to install the Essential Studio Gantt SDK installer.
 
     **Confirmation Alert**
 
-    ![Confirmation wizard](images/Step-by-Step-Installation_img8.png)
+    ![Confirmation wizard](../web-installer/images/Step-by-Step-Installation_img8.png)
 
     **Uninstall Progress:**
 

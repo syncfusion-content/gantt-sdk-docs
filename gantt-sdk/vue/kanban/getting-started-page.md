@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Getting started page with Vue Kanban component | Syncfusion
-description:  Checkout and learn about Getting started page with Vue Kanban component of Syncfusion Essential JS 2 and more details.
-control: Getting started page 
+description: Checkout and learn about Getting started page with Vue Kanban component of Syncfusion Essential JS 2 and more details.
+control: Getting started page
 platform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Getting Started with the Vue Kanban Component in Vue 3
 
-This article provides a step-by-step guide for setting up a [Vite](https://vitejs.dev/) project with a JavaScript environment and integrating the Syncfusion<sup style="font-size:70%">&reg;</sup> Vue Kanban component using the [Composition API](https://vuejs.org/guide/introduction.html#composition-api) / [Options API](https://vuejs.org/guide/introduction.html#options-api).
+This article provides a step-by-step guide for setting up a [Vite](https://vitejs.dev) project with a JavaScript environment and integrating the Syncfusion<sup style="font-size:70%">&reg;</sup> Vue Kanban component using the [Composition API](https://vuejs.org/guide/introduction.html#composition-api) / [Options API](https://vuejs.org/guide/introduction.html#options-api).
 
 The `Composition API` is a new feature introduced in Vue.js 3 that provides an alternative way to organize and reuse component logic. It allows developers to write components as functions that use smaller, reusable functions called composition functions to manage their properties and behavior.
 
@@ -18,11 +18,11 @@ The `Options API` is the traditional way of writing Vue.js components, where the
 
 ## Prerequisites
 
-[System requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Vue UI components](https://ej2.syncfusion.com/vue/documentation/system-requirements/)
+[System requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Vue UI components](https://ej2.syncfusion.com/vue/documentation/system-requirements)
 
 ## Set up the Vite project
 
-A recommended approach for beginning with Vue is to scaffold a project using [Vite](https://vitejs.dev/). To create a new Vite project, use one of the commands that are specific to either NPM or Yarn.
+A recommended approach for beginning with Vue is to scaffold a project using [Vite](https://vitejs.dev). To create a new Vite project, use one of the commands that are specific to either NPM or Yarn.
 
 ```bash
 npm create vite@latest
@@ -99,7 +99,7 @@ yarn add @syncfusion/ej2-vue-kanban
 
 ## Import Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-You can import themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> Vue component in various ways, such as using CSS or SASS styles from npm packages, CDN, [CRG](https://ej2.syncfusion.com/javascript/documentation/common/custom-resource-generator/) and [Theme Studio](https://ej2.syncfusion.com/vue/documentation/appearance/theme-studio/). Refer to [themes topic](https://ej2.syncfusion.com/vue/documentation/appearance/theme/) to know more about built-in themes and different ways to refer to themes in a Vue project.
+You can import themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> Vue component in various ways, such as using CSS or SASS styles from npm packages, CDN, [CRG](https://ej2.syncfusion.com/vue/documentation/common/custom-resource-generator) and [Theme Studio](https://ej2.syncfusion.com/vue/documentation/appearance/theme-studio). Refer to [themes topic](https://ej2.syncfusion.com/vue/documentation/appearance/theme) to know more about built-in themes and different ways to refer to themes in a Vue project.
 
 In this article, `Material` theme is applied using CSS styles, which are available in installed packages. The necessary `Material` CSS styles for the Kanban component and its dependents were imported into the `<style>` section of **src/App.vue** file.
 
@@ -150,7 +150,7 @@ Follow the below steps to add the Vue Kanban component using `Composition API` o
 
 {% endhighlight %}
 {% endtabs %}
-   
+
 2. In the `template` section, define the Kanban component with the [dataSource](https://ej2.syncfusion.com/vue/documentation/api/Kanban#datasource) property and column definitions.
 
 {% tabs %}
@@ -234,14 +234,14 @@ Here is the summarized code for the above steps in the **src/App.vue** file:
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
 <template>
-      <ejs-kanban id="kanban" keyField="Status" :dataSource="data" :cardSettings="cardSettings">
-        <e-columns>
-          <e-column headerText="To Do" keyField="Open" ></e-column>
-          <e-column headerText="In Progress" keyField="InProgress" ></e-column>
-          <e-column headerText="Testing" keyField="Testing" ></e-column>
-          <e-column headerText="Done" keyField="Close" ></e-column>
-        </e-columns>
-      </ejs-kanban>
+<ejs-kanban id="kanban" keyField="Status" :dataSource="data" :cardSettings="cardSettings">
+<e-columns>
+<e-column headerText="To Do" keyField="Open" ></e-column>
+<e-column headerText="In Progress" keyField="InProgress" ></e-column>
+<e-column headerText="Testing" keyField="Testing" ></e-column>
+<e-column headerText="Done" keyField="Close" ></e-column>
+</e-columns>
+</ejs-kanban>
 </template>
 
 <script setup>
@@ -364,6 +364,5 @@ yarn run dev
 ```
 
 The output will appear as follows:
-
 
 ![Output](./images/kanban-vue3.png)

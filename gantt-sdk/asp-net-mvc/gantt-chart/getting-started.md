@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with ASP.NET MVC Gantt Chart | Syncfusion
 description: Explore how to get started with Syncfusion ASP.NET MVC Gantt Chart configure the control, bind data, map fields, and visualize project timelines quickly.
 keywords: asp.net mvc gantt getting started, gantt setup, project timeline, task scheduling, syncfusion gantt chart
-canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/getting-started
+canonical: https://www.syncfusion.com/gantt-sdk/aspnet-mvc-gantt-chart
 platform: gantt-sdk
 control: Getting Started - Gantt Chart
 documentation: ug
@@ -83,8 +83,6 @@ The theme styles and client-side scripts are referenced using a CDN inside the `
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
-{% raw %}
-
 <head>
     ...
     <!-- Syncfusion ASP.NET MVC controls styles -->
@@ -92,7 +90,6 @@ The theme styles and client-side scripts are referenced using a CDN inside the `
     <!-- Syncfusion ASP.NET MVC controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
-{% endraw %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -264,7 +261,7 @@ You will see a Gantt Chart with:
 - Progress indicators on each task.
 - End dates automatically calculated from `StartDate` + `Duration` for child tasks.
 
-![ASP.NET MVC Gantt Chart Control](images/gantt-control.png)
+![ASP.NET MVC Gantt Chart Control](./images/gantt-control.png)
 
 ## See also
 

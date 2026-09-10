@@ -16,8 +16,6 @@ domainurl: https://help.syncfusion.com/gantt-sdk/overview
 
 Modify the task details through user interaction such as resizing and dragging the taskbar by enabling the [`AllowTaskbarEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html#Syncfusion_EJ2_Gantt_GanttEditSettings_AllowTaskbarEditing) property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/enableTaskbarEditing/tagHelper %}
@@ -27,25 +25,9 @@ Modify the task details through user interaction such as resizing and dragging t
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/enableTaskbarEditing/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="EnableTaskbarEditing.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/enableTaskbarEditing/enableTaskbarEditing.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ## Prevent editing for specific tasks
 
 On taskbar edit action, the [`TaskbarEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskbarEditing) event will be triggered. You can prevent the taskbar from editing using the [`TaskbarEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskbarEditing) event. This can be done by setting cancel property of [`TaskbarEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskbarEditing) event argument to true. And we can hide the taskbar editing indicators like taskbar resizer, progress resizer and connector points by using [`QueryTaskbarInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_QueryTaskbarInfo) event. The following code example shows how to achieve this.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -56,15 +38,19 @@ On taskbar edit action, the [`TaskbarEditing`](https://help.syncfusion.com/cr/as
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+## Enable taskbar drawing
+
+The Gantt Chart control supports creating new tasks by dragging directly on the timeline. This feature is enabled via the `allowTaskbarDraw` property in the [GanttEditSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html) configuration. Taskbar drawing is intended for scheduling unscheduled tasks and requires [AllowUnscheduledTasks](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowUnscheduledTasks) to be enabled.
+
+Dragging across the timeline schedules an unscheduled task by defining its timeline range. The resulting task duration is calculated based on the configured scheduling settings.
+
+The following example demonstrates how to enable taskbar drawing:
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/preventTaskbarEditing/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/taskbar-draw/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="PreventTaskbarEditing.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/preventTaskbarEditing/preventTaskbarEditing.cs %}
+{% highlight c# tabtitle="taskbar-draw.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/taskbar-draw/taskbar-draw.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-

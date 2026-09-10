@@ -21,19 +21,6 @@ To enable and configure WBS in your Gantt component:
 - **Enable WBS Codes**: Set the [`EnableWBS`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableWBS) property to `true` to automatically generate unique task codes and their predecessors.
 - **Auto-Update Codes**: Set the [`EnableAutoWbsUpdate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableAutoWbsUpdate) property to `true` to maintain WBS code accuracy during operations like sorting, filtering, editing, or drag-and-drop.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/wbsColumn/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="WbsColumn.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/wbsColumn/wbsColumn.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/wbsColumn/razor %}
@@ -42,26 +29,12 @@ To enable and configure WBS in your Gantt component:
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/wbsColumn/wbsColumn.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Managing WBS code updates
 
 For better performance, you can control when WBS codes are updated by using the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ActionBegin) and [`DataBound`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataBound) events. This is particularly useful during actions like dragging and dropping rows.
 
 In the following example, WBS auto-update is enabled only during the **row drag and drop** action using these events.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/wbsColumnEvents/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="WbsColumnEvents.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/wbsColumnEvents/wbsColumnEvents.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -71,7 +44,6 @@ In the following example, WBS auto-update is enabled only during the **row drag 
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/wbsColumnEvents/wbsColumnEvents.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Limitations
 

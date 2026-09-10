@@ -140,7 +140,7 @@ Customize the edit dialog by defining tabs with [GanttAddDialogFields](https://h
                      Dependency="Predecessor">
     </GanttTaskFields>
     <GanttResource DataSource="ResourceCollection" Id="Id" Name="Name" TValue="TaskData" TResources="ResourceInfoModel"></GanttResource>
-    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="PrimaryId" TaskID="TaskId" ResourceID="ResourceID" TValue="TaskData" TAssignment="AssignmentModel">
+    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="PrimaryId" TaskID="TaskId" ResourceId="ResourceId" TValue="TaskData" TAssignment="AssignmentModel">
     </GanttAssignmentFields>
     <GanttEditSettings AllowAdding="true" AllowEditing="true" Mode="Syncfusion.Blazor.Gantt.EditMode.Dialog">
     </GanttEditSettings>
@@ -189,7 +189,7 @@ Customize the edit dialog by defining tabs with [GanttAddDialogFields](https://h
     {
         public int PrimaryId { get; set; }
         public int TaskId { get; set; }
-        public int ResourceID { get; set; }
+        public int ResourceId { get; set; }
     }
 
     public static List<ResourceInfoModel> GetResourceCollections()
@@ -208,12 +208,12 @@ Customize the edit dialog by defining tabs with [GanttAddDialogFields](https://h
     {
         List<AssignmentModel> assignments = new List<AssignmentModel>()
         {
-            new AssignmentModel(){ PrimaryId=1, TaskId = 2, ResourceID=1},
-            new AssignmentModel(){ PrimaryId=2, TaskId = 3, ResourceID=2},
-            new AssignmentModel(){ PrimaryId=3, TaskId = 3, ResourceID=3},
-            new AssignmentModel(){ PrimaryId=4, TaskId = 6, ResourceID=4},
-            new AssignmentModel(){ PrimaryId=5, TaskId = 8, ResourceID=1},
-            new AssignmentModel(){ PrimaryId=6, TaskId = 8, ResourceID=5}
+            new AssignmentModel(){ PrimaryId=1, TaskId = 2, ResourceId=1},
+            new AssignmentModel(){ PrimaryId=2, TaskId = 3, ResourceId=2},
+            new AssignmentModel(){ PrimaryId=3, TaskId = 3, ResourceId=3},
+            new AssignmentModel(){ PrimaryId=4, TaskId = 6, ResourceId=4},
+            new AssignmentModel(){ PrimaryId=5, TaskId = 8, ResourceId=1},
+            new AssignmentModel(){ PrimaryId=6, TaskId = 8, ResourceId=5}
         };
         return assignments;
     }
@@ -266,12 +266,12 @@ Restrict fields in the dialog’s General tab using [GanttAddDialogFields](https
     </GanttColumns>
     <GanttEditDialogFields>
         <GanttEditDialogField Type="GanttDialogFieldType.General" HeaderText="General"
-                              Fields="@(new string[]{ "TaskID", "TaskName", "Duration" })"></GanttEditDialogField>
+                              Fields="@(new string[]{ "TaskId", "TaskName", "Duration" })"></GanttEditDialogField>
         <GanttEditDialogField Type="GanttDialogFieldType.Notes"></GanttEditDialogField>
     </GanttEditDialogFields>
     <GanttAddDialogFields>
         <GanttAddDialogField Type="GanttDialogFieldType.General" HeaderText="General Tab"
-                             Fields="@(new string[]{ "TaskID", "TaskName", "Duration" })"></GanttAddDialogField>
+                             Fields="@(new string[]{ "TaskId", "TaskName", "Duration" })"></GanttAddDialogField>
         <GanttAddDialogField Type="GanttDialogFieldType.Dependency"></GanttAddDialogField>
     </GanttAddDialogFields>
 </SfGantt>

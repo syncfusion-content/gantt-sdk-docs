@@ -14,26 +14,13 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 ## Resource Multi Taskbar
 
-To visualize multiple tasks assigned to each resource in a row when the records are in the collapsed state. It can be enabled by settings the `enableMultiTaskbar` property value as `true`.
+To visualize multiple tasks assigned to each resource in a row when the records are in the collapsed state. Enable it by setting the `enableMultiTaskbar` property value to `true`.
 
-The collapse or expand action of a resource record can be achieved only by using the tree grid side arrow icon. Because it will be disabled on chart side action for this support.
+The collapse or expand action of a resource record can be achieved only using the tree grid side arrow icon, because it will be disabled on the chart side for this support.
 
 When a resource has multiple tasks scheduled on the same date, then the tasks will be overlapped one another. Taskbar editing is also possible to change the task scheduling on the collapsed state.
 
 N> By default, the `enableMultiTaskbar` property value is `false`.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-view/multitaskbar/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Multitaskbar.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-view/multitaskbar/multitaskbar.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -43,9 +30,8 @@ N> By default, the `enableMultiTaskbar` property value is `false`.
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-view/multitaskbar/multitaskbar.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-![Alt text](images/multitaskbar.PNG)
+![Alt text](./images/multitaskbar.PNG)
 
 ## Disable taskbar overlap
 
@@ -55,19 +41,6 @@ When `AllowTaskbarOverlap` is set to false, the resources are displayed in a sin
 
 It's important to note that when `AllowTaskbarOverlap` is disabled, task dependencies or relationships cannot be established between tasks that are rendered in multiple lines for the same resource. If you need to establish dependencies between tasks for the same resource, you may want to consider enabling taskbar overlap.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-view/taskbaroverlap/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="TaskbarOverlap.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-view/taskbaroverlap/taskbaroverlap.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-view/taskbaroverlap/razor %}
@@ -76,4 +49,3 @@ It's important to note that when `AllowTaskbarOverlap` is disabled, task depende
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/resource-view/taskbaroverlap/taskbaroverlap.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
