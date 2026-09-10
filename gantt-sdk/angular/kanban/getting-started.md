@@ -23,7 +23,7 @@ The Kanban component consists of the following elements:
 - **Columns**: Define workflow stages and are mapped using the `keyField` property.
 - **Swimlanes**: Group cards based on categories and are configured using `swimlaneSettings`.
 
-> Note: The example in this section uses only cards and columns. To enable swimlanes, see the [Swimlanes documentation](swimlane).
+> Note: The example in this section uses only cards and columns. To enable swimlanes, see the [Swimlanes documentation](https://help.syncfusion.com/gantt-sdk/angular/kanban/swimlane).
 
 ## Setting Up the Angular Environment
 
@@ -75,7 +75,7 @@ cd my-app
 
 ## Adding the Syncfusion<sup style="font-size:70%">&reg;</sup> Kanban Package
 
-All available Essential JS 2 packages are published in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. Use a package version that is compatible with Angular 21 (for example, `@syncfusion/ej2-angular-kanban@^21` or later).
+All available Essential JS 2 packages are published in the [node package registry](https://www.npmjs.com/~syncfusionorg) registry. Use a package version that is compatible with Angular 21 (for example, `@syncfusion/ej2-angular-kanban@^21` or later).
 
 Install the Kanban component with the following command:
 
@@ -229,13 +229,13 @@ For reference, the complete sample used in this section is shown below. The data
 ### Troubleshooting
 
 - **Blank board or no cards** — Confirm that each item's `Status` matches one of the `keyField` values declared in the `<e-columns>` block (for example, `Open`, `InProgress`, `Testing`, `Close`).
-- **`'KanbanModule' is not a module` or `ejs-kanban` is not recognized** — Verify that `@syncfusion/ej2-angular-kanban` is installed and listed in `package.json` dependencies.
+- **`'KanbanModule' is not a module` or `<ejs-kanban>` is not recognized** — Verify that `@syncfusion/ej2-angular-kanban` is installed and listed in `package.json` dependencies.
 - **Missing styles (cards or layout not rendering correctly)** — Re-check that all CSS imports were added to `styles.css` and that the dev server was restarted after editing the styles file.
 
 ## See also
 
-- [Kanban columns](./columns)
-- [Kanban data binding](./data-binding)
-- [Kanban dialog](./dialog)
-- [Kanban swimlane](./swimlane)
-- [Kanban priority](./priority)
+- [Kanban columns](https://help.syncfusion.com/gantt-sdk/angular/kanban/columns)
+- [Kanban data binding](https://help.syncfusion.com/gantt-sdk/angular/kanban/data-binding)
+- [Kanban dialog](https://help.syncfusion.com/gantt-sdk/angular/kanban/dialog)
+- [Kanban swimlane](https://help.syncfusion.com/gantt-sdk/angular/kanban/swimlane)
+- [Kanban priority](https://help.syncfusion.com/gantt-sdk/angular/kanban/priority)

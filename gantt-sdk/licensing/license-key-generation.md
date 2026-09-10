@@ -67,7 +67,7 @@ Effective from the 2025 Volume 3 release (v31.1.17), the licensing model has bee
 
 - **Edition-Based License Keys**: License keys are now generated per edition (e.g., UI Edition, Document SDK) instead of per platform (e.g., ASP.NET Core, Blazor). This minimizes the need for multiple platform-specific keys.
 - **Enterprise Edition Coverage**: A single Enterprise Edition license key unlocks all editions and SDKs. This key is available to customers with an Enterprise Edition license or those who purchased or registered before v31.1.17, by selecting all options during key generation.
-- **Unchanged Registration Process**: The method for registering license keys within your application remains the same. See the [License Key Registration Guide](./license-key-registration) for instructions.
+- **Unchanged Registration Process**: The method for registering license keys within your application remains the same. See the [License Key Registration Guide](https://help.syncfusion.com/gantt-sdk/licensing/license-key-registration) for instructions.
 - **Recommendation for Existing Customers**: Users with licenses from before v31.1.17 are advised to select all five editions (UI Component Suite, Document SDK, DOCX Editor SDK, PDF Viewer SDK, Spreadsheet Editor SDK) when generating a key for v31.1.17 or higher to ensure compatibility with applications using controls or libraries from multiple editions.
 
 ## How to Generate License Keys (v31.1.17 or higher)
@@ -138,6 +138,6 @@ For versions 30.x.x and earlier, follow the platform-based licensing model. The 
 
 ## See Also
 
-- [How to register Syncfusion® License Key in the Application?](./license-key-registration)
-- [Syncfusion Licensing Overview](./overview)
-- [Licensing FAQ and Troubleshooting](./licensing-troubleshoot)
+- [How to register Syncfusion® License Key in the Application?](https://help.syncfusion.com/gantt-sdk/licensing/license-key-registration)
+- [Syncfusion Licensing Overview](https://help.syncfusion.com/gantt-sdk/licensing/overview)
+- [Licensing FAQ and Troubleshooting](https://help.syncfusion.com/gantt-sdk/licensing/licensing-troubleshoot)
