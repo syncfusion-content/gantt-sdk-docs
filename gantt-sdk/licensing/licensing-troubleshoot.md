@@ -161,7 +161,7 @@ If you have obtained Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies
 
 ## Registering the license key when using JavaScript (ES5) components together with server-side controls
 
-If you are using the Syncfusion<sup style="font-size:70%">&reg;</sup> [JavaScript (ES5) components](https://ej2.syncfusion.com/home) in combination with a server-side Syncfusion<sup style="font-size:70%">&reg;</sup> platform such as **ASP.NET Core** or **ASP.NET MVC**, you must register the license key in **both** locations, because the license is validated on the **client side** for JavaScript (ES5) components and on the **server side** for the server-side platform.
+If you are using the Syncfusion<sup style="font-size:70%">&reg;</sup> [JavaScript (ES5) components](https://ej2.syncfusion.com/home/) in combination with a server-side Syncfusion<sup style="font-size:70%">&reg;</sup> platform such as **ASP.NET Core** or **ASP.NET MVC**, you must register the license key in **both** locations, because the license is validated on the **client side** for JavaScript (ES5) components and on the **server side** for the server-side platform.
 
 - **ASP.NET Core** — register the license key in `Program.cs` using `Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY")` and in `_Layout.cshtml` for the JavaScript (ES5) components, after referring to the Syncfusion<sup style="font-size:70%">&reg;</sup> styles and scripts.
 
