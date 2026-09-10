@@ -65,7 +65,7 @@ npm install
 
 ### Adding Syncfusion<sup style="font-size:70%">&reg;</sup> packages
 
-Once you have created the React application, install the required Syncfusion<sup style="font-size:70%">&reg;</sup> React component package in the application. All Syncfusion<sup style="font-size:70%">&reg;</sup> React (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are published on the [npmjs](https://www.npmjs.com/~syncfusionorg) public registry.To install the Kanban component package, use the following command.
+Once you have created the React application, install the required Syncfusion<sup style="font-size:70%">&reg;</sup> React component package in the application. All Syncfusion<sup style="font-size:70%">&reg;</sup> React (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are published on the [node package registry](https://www.npmjs.com/~syncfusionorg) public registry.To install the Kanban component package, use the following command.
 
 ```bash
 npm install @syncfusion/ej2-react-kanban
