@@ -83,5 +83,5 @@ The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-
 
 - [**Immutable mode**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/immutable) - Optimize performance for frequent data updates
 - [**State persistence**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/state-persistence) - Save and restore user preferences
-- [**Accessibility**](./accessibility) - Built-in keyboard navigation and screen reader support
-- [**Globalization**](./global-local) - Localize dates, numbers, and text for different cultures
+- [**Accessibility**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/accessibility) - Built-in keyboard navigation and screen reader support
+- [**Globalization**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/global-local) - Localize dates, numbers, and text for different cultures

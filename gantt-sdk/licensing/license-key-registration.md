@@ -769,7 +769,7 @@ public static class MauiProgram
 
 ## See Also
 
-* [License Key Generation](license-key-generation)
-* [Licensing Overview](overview)
-* [Licensing FAQ](licensing-troubleshoot)
-* [Licensing Errors](licensing-error)
+* [License Key Generation](https://help.syncfusion.com/gantt-sdk/licensing/license-key-generation)
+* [Licensing Overview](https://help.syncfusion.com/gantt-sdk/licensing/overview)
+* [Licensing FAQ](https://help.syncfusion.com/gantt-sdk/licensing/licensing-troubleshoot)
+* [Licensing Errors](https://help.syncfusion.com/gantt-sdk/licensing/licensing-error)
