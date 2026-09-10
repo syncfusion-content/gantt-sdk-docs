@@ -208,7 +208,7 @@ In the following example, the backlog column is collapsed on initialization of K
 
 ## Drag and Drop
 
-The Kanban component allows dynamic column reordering through drag-and-drop interactions. To enable this, set the [allowColumnDragAndDrop](https://ej2.syncfusion.com/react/documentation/api/kanban#allowColumnDragAndDrop) property to true. Once enabled, users can rearrange columns by dragging a column header to a new position, with visual feedback highlighting potential drop locations.
+The Kanban component allows dynamic column reordering through drag-and-drop interactions. To enable this, set the [allowColumnDragAndDrop](https://ej2.syncfusion.com/react/documentation/api/kanban#allowcolumndraganddrop) property to true. Once enabled, users can rearrange columns by dragging a column header to a new position, with visual feedback highlighting potential drop locations.
 
 `[Class-component]`
 

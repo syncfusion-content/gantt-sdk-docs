@@ -326,8 +326,8 @@ npm list @syncfusion/ej2-react-kanban
 
 ## See also
 
-- [Kanban columns](./columns.md)
-- [Kanban data binding](./data-binding.md)
-- [Kanban dialog](./dialog.md)
-- [Kanban swimlane](./swimlane.md)
-- [Kanban priority](./priority.md)
+- [Kanban columns](https://help.syncfusion.com/gantt-sdk/react/kanban/columns)
+- [Kanban data binding](https://help.syncfusion.com/gantt-sdk/react/kanban/data-binding)
+- [Kanban dialog](https://help.syncfusion.com/gantt-sdk/react/kanban/dialog)
+- [Kanban swimlane](https://help.syncfusion.com/gantt-sdk/react/kanban/swimlane)
+- [Kanban priority](https://help.syncfusion.com/gantt-sdk/react/kanban/priority)

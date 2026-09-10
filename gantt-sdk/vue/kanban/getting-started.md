@@ -128,7 +128,7 @@ This command starts the Vite development server. By default, the app is served a
 
 ## Next Steps
 
-- [Configure Kanban columns](./columns.md)
-- [Bind data from a remote service](./data-binding.md)
-- [Customize Kanban cards](./cards.md)
-- [Enable dialog editing](./dialog.md)
+- [Configure Kanban columns](https://help.syncfusion.com/gantt-sdk/vue/kanban/columns)
+- [Bind data from a remote service](https://help.syncfusion.com/gantt-sdk/vue/kanban/data-binding)
+- [Customize Kanban cards](https://help.syncfusion.com/gantt-sdk/vue/kanban/cards)
+- [Enable dialog editing](https://help.syncfusion.com/gantt-sdk/vue/kanban/dialog)
