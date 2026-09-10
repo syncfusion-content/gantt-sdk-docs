@@ -176,7 +176,7 @@ N> If the Interactivity Location is set to `Global`, the render mode is automati
 {% tabs %}
 {% highlight razor %}
 
-@_ desired render mode define here _@
+@* desired render mode define here *@
 @rendermode InteractiveServer
 
 {% endhighlight %}
