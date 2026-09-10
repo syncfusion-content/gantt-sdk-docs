@@ -12,22 +12,22 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Syncfusion® Gantt SDK Licensing FAQ & Troubleshooting
 
-This page answers the most frequently asked questions about Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt SDK license key validation, registration, and upgrades. If you cannot find an answer here, refer to the [licensing overview](./overview), [license key generation](./license-key-generation), [license key registration](./license-key-registration), or [licensing errors](./licensing-error) pages.
+This page answers the most frequently asked questions about Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt SDK license key validation, registration, and upgrades. If you cannot find an answer here, refer to the [licensing overview](https://help.syncfusion.com/gantt-sdk/licensing/overview), [license key generation](https://help.syncfusion.com/gantt-sdk/licensing/license-key-generation), [license key registration](https://help.syncfusion.com/gantt-sdk/licensing/license-key-registration), or [licensing errors](https://help.syncfusion.com/gantt-sdk/licensing/licensing-error) pages.
 
 ## Is an internet connection required for license validation?
 
 No, an internet connection is **not** required for the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> license validation. The Syncfusion<sup style="font-size:70%">&reg;</sup> license validation is done **offline** during application execution. Apps registered with a valid Syncfusion<sup style="font-size:70%">&reg;</sup> license key can be deployed on any system that does not have an internet connection.
 
-> The initial `npx syncfusion-license activate` step does require an internet connection to retrieve the key for the first time. Refer to the [license key registration guide](./license-key-registration) for details.
+> The initial `npx syncfusion-license activate` step does require an internet connection to retrieve the key for the first time. Refer to the [license key registration guide](https://help.syncfusion.com/gantt-sdk/licensing/license-key-registration) for details.
 
 ## Upgrade from the trial version after purchasing a license
 
 To upgrade from the trial version, there are two possible solutions:
 
-* Uninstall the trial version and install the fully licensed build from the [License & Downloads](https://www.syncfusion.com/account/downloads) section of the Syncfusion<sup style="font-size:70%">&reg;</sup> website.
-* If you are using Syncfusion<sup style="font-size:70%">&reg;</sup> controls from the [npm](https://www.npmjs.com/search?q=scope:syncfusion) or [NuGet](https://www.nuget.org/packages?q=syncfusion) registries, replace the currently used trial license key with a paid license key that can be generated from the [License & Downloads](https://www.syncfusion.com/account/downloads) section of the Syncfusion<sup style="font-size:70%">&reg;</sup> website. Refer to the [license key registration guide](./license-key-registration) for information on registering the license in the application.
+- Uninstall the trial version and install the fully licensed build from the [License & Downloads](https://www.syncfusion.com/account/downloads) section of the Syncfusion<sup style="font-size:70%">&reg;</sup> website.
+- If you are using Syncfusion<sup style="font-size:70%">&reg;</sup> controls from the [npm](https://www.npmjs.com/search?q=scope:syncfusion) or [NuGet](https://www.nuget.org/packages?q=syncfusion) registries, replace the currently used trial license key with a paid license key that can be generated from the [License & Downloads](https://www.syncfusion.com/account/downloads) section of the Syncfusion<sup style="font-size:70%">&reg;</sup> website. Refer to the [license key registration guide](https://help.syncfusion.com/gantt-sdk/licensing/license-key-registration) for information on registering the license in the application.
 
-> License registration is not required if you reference Syncfusion<sup style="font-size:70%">&reg;</sup> scripts from the licensed installer. These licensing changes apply to all evaluators who refer to the Syncfusion<sup style="font-size:70%">&reg;</sup> scripts from the evaluation installer and those who use the Syncfusion<sup style="font-size:70%">&reg;</sup> NuGet packages from [nuget.org](https://www.nuget.org/).
+> License registration is not required if you reference Syncfusion<sup style="font-size:70%">&reg;</sup> scripts from the licensed installer. These licensing changes apply to all evaluators who refer to the Syncfusion<sup style="font-size:70%">&reg;</sup> scripts from the evaluation installer and those who use the Syncfusion<sup style="font-size:70%">&reg;</sup> NuGet packages from [nuget.org](https://www.nuget.org).
 
 ## Where can I get a license key?
 
@@ -37,7 +37,7 @@ License keys can be generated from the [License & Downloads](https://www.syncfus
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> license keys are version and platform-specific. Refer to the [KB](https://www.syncfusion.com/kb/8976/how-to-generate-license-key-for-licensed-products) to generate the license key for the required version and platform. Also, refer to this [KB](https://www.syncfusion.com/kb/8951/which-version-syncfusion-license-key-should-i-use-in-my-application) to know which version of the Syncfusion<sup style="font-size:70%">&reg;</sup> license key should be used in the application.
 
-> When using ASP.NET Core controls together with JavaScript (ES5) components, register the license key in **both** the JavaScript (ES5) client side and the [ASP.NET Core](./license-key-registration#asp-net-core) server side. License validation occurs on the client for JavaScript (ES5) components and on the server for ASP.NET Core components.
+> When using ASP.NET Core controls together with JavaScript (ES5) components, register the license key in **both** the JavaScript (ES5) client side and the [ASP.NET Core](https://help.syncfusion.com/gantt-sdk/licensing/license-key-registration#asp-net-core) server side. License validation occurs on the client for JavaScript (ES5) components and on the server for ASP.NET Core components.
 
 ## Refer to EJ2 scripts without registering the license key
 
@@ -49,15 +49,15 @@ License registration is **not** required for licensed users when referring to sc
 
 1. After installing the licensed build from a licensed installer, go to the installed location and navigate to `EJ2/Installed Version/Web (Essential JS 2)/JavaScript/ej2-js-es5`.
 
-    ![Registry Location](./licensing-images/ej2-script-folder-structure.png)
+   ![Registry Location](./licensing-images/ej2-script-folder-structure.png)
 
 2. Navigate to the `ej2-js-es5` package folder and access the `ej2.min.js` from the `scripts` folder. Use this minified EJ2 script in your application.
 
-    ![Installation Location](./licensing-images/ej2-script-in-file-browser.png)
+   ![Installation Location](./licensing-images/ej2-script-in-file-browser.png)
 
 ### Using scripts from the Custom Resource Generator (CRG)
 
-If you are a licensed customer, you can download scripts from the [CRG](https://crg.syncfusion.com/), which does not require license registration, by signing in with the Syncfusion<sup style="font-size:70%">&reg;</sup> account. You can check your license status by clicking the **My Account** icon as follows.
+If you are a licensed customer, you can download scripts from the [CRG](https://crg.syncfusion.com), which does not require license registration, by signing in with the Syncfusion<sup style="font-size:70%">&reg;</sup> account. You can check your license status by clicking the **My Account** icon as follows.
 
 ![CRG licensed profile](./licensing-images/crg-licensed-profile.png)
 
@@ -75,8 +75,8 @@ You do not need to generate or change license keys for minor version upgrades. H
 
 For example:
 
-* If you are using a version like `25.1.X`, it is important to use the same version for all Syncfusion<sup style="font-size:70%">&reg;</sup> components in your application. The license key generated for version `25.X.XX` can be used. This key can be used across all minor versions within that major version, `v25`. This means you can upgrade all packages to `25.2.X` while still using the same license key.
-* However, if you upgrade from one major version to another—such as from `25.1.X` to `26.1.X`—you will need to generate a new license key for the latest version and update it in your application.
+- If you are using a version like `25.1.X`, it is important to use the same version for all Syncfusion<sup style="font-size:70%">&reg;</sup> components in your application. The license key generated for version `25.X.XX` can be used. This key can be used across all minor versions within that major version, `v25`. This means you can upgrade all packages to `25.2.X` while still using the same license key.
+- However, if you upgrade from one major version to another—such as from `25.1.X` to `26.1.X`—you will need to generate a new license key for the latest version and update it in your application.
 
 > The guidelines above do not apply to packages on version `20.X.XX`, where `20.1` denotes one major version and `20.2` another major version. Starting with release version 21, the pattern has been adjusted. So if you are using `20.1.X` and upgrade to `20.2.X`, you must generate new license keys for `20.2.X` and update them in the application. These guidelines apply to versions 21 and later.
 
@@ -90,7 +90,7 @@ Yes. One valid license key covers all web applications within the licensed proje
 
 ## Does the license registration access any resources or data?
 
-No. License registration and validation are performed **locally and offline** without accessing external resources or sending data. Refer to the [Licensing Overview](./overview#privacy-assurance) for more information.
+No. License registration and validation are performed **locally and offline** without accessing external resources or sending data. Refer to the [Licensing Overview](https://help.syncfusion.com/gantt-sdk/licensing/overview#privacy-assurance) for more information.
 
 ## License & Downloads shows the "Essential Studio<sup style="font-size:70%">&reg;</sup> Enterprise Edition Binary with Test Studio" and the "Project License". Which license should I use?
 
@@ -114,10 +114,10 @@ For all other registration approaches (manual code registration, `license.txt` f
 
 The following are the most common reasons that lead to a license error within an application:
 
-* The application may have a license issue due to **duplicate Syncfusion<sup style="font-size:70%">&reg;</sup> packages**.
-* An **invalid license issue** may occur because Syncfusion<sup style="font-size:70%">&reg;</sup> packages are referenced with **multiple versions** in the same project.
-* **Registering the license key of a different version** than the referenced Syncfusion<sup style="font-size:70%">&reg;</sup> package version in the application can also cause licensing errors.
-* **Inclusion of non-target-platform packages** in the dependencies (for example, plain TypeScript packages in an Angular/React/Vue project, or platform-specific assemblies in a .NET project) may lead to licensing errors due to duplicate instances of Syncfusion<sup style="font-size:70%">&reg;</sup> packages.
+- The application may have a license issue due to **duplicate Syncfusion<sup style="font-size:70%">&reg;</sup> packages**.
+- An **invalid license issue** may occur because Syncfusion<sup style="font-size:70%">&reg;</sup> packages are referenced with **multiple versions** in the same project.
+- **Registering the license key of a different version** than the referenced Syncfusion<sup style="font-size:70%">&reg;</sup> package version in the application can also cause licensing errors.
+- **Inclusion of non-target-platform packages** in the dependencies (for example, plain TypeScript packages in an Angular/React/Vue project, or platform-specific assemblies in a .NET project) may lead to licensing errors due to duplicate instances of Syncfusion<sup style="font-size:70%">&reg;</sup> packages.
 
 ### License issue due to duplicate Syncfusion® packages in the application
 
@@ -144,10 +144,10 @@ For instance, if you are using a component version labeled as `v20.4.XX`, it is 
 
 When integrating Syncfusion<sup style="font-size:70%">&reg;</sup> with your project, include **only** the component packages that match your target platform. For example:
 
-* In an **Angular** project, include only the `@syncfusion/*-angular` packages — not the plain `@syncfusion/*` TypeScript packages.
-* In a **React** project, include only the `@syncfusion/*-react` packages — not the `@syncfusion/*` TypeScript packages.
-* In a **Vue** project, include only the `@syncfusion/*-vue` packages — not the `@syncfusion/*` TypeScript packages.
-* In a **.NET** project (ASP.NET Core, ASP.NET MVC, Blazor, WPF, WinUI, MAUI, UWP), include only the platform-specific `Syncfusion.*` NuGet packages and **avoid** referencing JavaScript-only `ej2-*` packages directly.
+- In an **Angular** project, include only the `@syncfusion/*-angular` packages — not the plain `@syncfusion/*` TypeScript packages.
+- In a **React** project, include only the `@syncfusion/*-react` packages — not the `@syncfusion/*` TypeScript packages.
+- In a **Vue** project, include only the `@syncfusion/*-vue` packages — not the `@syncfusion/*` TypeScript packages.
+- In a **.NET** project (ASP.NET Core, ASP.NET MVC, Blazor, WPF, WinUI, MAUI, UWP), include only the platform-specific `Syncfusion.*` NuGet packages and **avoid** referencing JavaScript-only `ej2-*` packages directly.
 
 The platform-specific packages automatically pull in their required sub-dependencies. Including the wrong package family separately may result in **duplicate instances** of packages, which can lead to issues with license validation. To ensure proper license validation and avoid conflicts, include only the platform-specific component packages in your project dependencies.
 
@@ -157,13 +157,13 @@ If you have obtained Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies
 
 1. Register for a free Syncfusion<sup style="font-size:70%">&reg;</sup> account [here](https://www.syncfusion.com/account/register).
 2. Go to the **Start Trials** [page](https://www.syncfusion.com/account/manage-trials/start-trials) and start a trial.
-3. Proceed to the [Trial & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) section to obtain the [license key](./license-key-generation). For a step-by-step walkthrough of the generation process, see the [License Key Generation](./license-key-generation) guide.
+3. Proceed to the [Trial & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) section to obtain the [license key](https://help.syncfusion.com/gantt-sdk/licensing/license-key-generation). For a step-by-step walkthrough of the generation process, see the [License Key Generation](https://help.syncfusion.com/gantt-sdk/licensing/license-key-generation) guide.
 
 ## Registering the license key when using JavaScript (ES5) components together with server-side controls
 
-If you are using the Syncfusion<sup style="font-size:70%">&reg;</sup> [JavaScript (ES5) components](https://ej2.syncfusion.com/home/) in combination with a server-side Syncfusion<sup style="font-size:70%">&reg;</sup> platform such as **ASP.NET Core** or **ASP.NET MVC**, you must register the license key in **both** locations, because the license is validated on the **client side** for JavaScript (ES5) components and on the **server side** for the server-side platform.
+If you are using the Syncfusion<sup style="font-size:70%">&reg;</sup> [JavaScript (ES5) components](https://ej2.syncfusion.com/home) in combination with a server-side Syncfusion<sup style="font-size:70%">&reg;</sup> platform such as **ASP.NET Core** or **ASP.NET MVC**, you must register the license key in **both** locations, because the license is validated on the **client side** for JavaScript (ES5) components and on the **server side** for the server-side platform.
 
-* **ASP.NET Core** — register the license key in `Program.cs` using `Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY")` and in `_Layout.cshtml` for the JavaScript (ES5) components, after referring to the Syncfusion<sup style="font-size:70%">&reg;</sup> styles and scripts.
+- **ASP.NET Core** — register the license key in `Program.cs` using `Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY")` and in `_Layout.cshtml` for the JavaScript (ES5) components, after referring to the Syncfusion<sup style="font-size:70%">&reg;</sup> styles and scripts.
 
   ```csharp
   var app = builder.Build();
@@ -172,7 +172,7 @@ If you are using the Syncfusion<sup style="font-size:70%">&reg;</sup> [JavaScrip
   Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
   ```
 
-* **ASP.NET MVC** — register the license key in `Global.asax.cs` using `Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY")` and in `_Layout.cshtml` for the JavaScript (ES5) components, after referring to the Syncfusion<sup style="font-size:70%">&reg;</sup> styles and scripts.
+- **ASP.NET MVC** — register the license key in `Global.asax.cs` using `Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY")` and in `_Layout.cshtml` for the JavaScript (ES5) components, after referring to the Syncfusion<sup style="font-size:70%">&reg;</sup> styles and scripts.
 
   ```csharp
   protected void Application_Start()
@@ -191,8 +191,8 @@ If you are using the Syncfusion<sup style="font-size:70%">&reg;</sup> [JavaScrip
 
 ## See Also
 
-* [Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt SDK Licensing Overview](./overview)
-* [Generate Syncfusion<sup style="font-size:70%">&reg;</sup> License Key](./license-key-generation)
-* [Register Syncfusion<sup style="font-size:70%">&reg;</sup> License Key](./license-key-registration)
-* [Syncfusion<sup style="font-size:70%">&reg;</sup> Licensing Errors](./licensing-error)
-* [Validate Syncfusion<sup style="font-size:70%">&reg;</sup> License Key in CI Services](./ci-license-validation)
+- [Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt SDK Licensing Overview](https://help.syncfusion.com/gantt-sdk/licensing/overview)
+- [Generate Syncfusion<sup style="font-size:70%">&reg;</sup> License Key](https://help.syncfusion.com/gantt-sdk/licensing/license-key-generation)
+- [Register Syncfusion<sup style="font-size:70%">&reg;</sup> License Key](https://help.syncfusion.com/gantt-sdk/licensing/license-key-registration)
+- [Syncfusion<sup style="font-size:70%">&reg;</sup> Licensing Errors](https://help.syncfusion.com/gantt-sdk/licensing/licensing-error)
+- [Validate Syncfusion<sup style="font-size:70%">&reg;</sup> License Key in CI Services](https://help.syncfusion.com/gantt-sdk/licensing/ci-license-validation)

@@ -29,7 +29,7 @@ The Gantt chart is a project management tool which provides a Microsoft Project-
 * [**Resources**](https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/resources): Resources are represented by staff, equipment, materials, and more. You can show and allocate the resources for each task.
 * [**Filtering**](https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/filtering/filtering): Filters individual column using the menu filtering along with toolbar search box.
 * [**Toolbar**](https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/toolbar): Managing the Gantt data using toolbars.
-* [**Rows**](https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/rows/rows): Customizes the rows and adds the custom rows to the Gantt chart at initialization and dynamically.
+* [**Rows**](https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/rows): Customizes the rows and adds the custom rows to the Gantt chart at initialization and dynamically.
 * [**Selection**](https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/selection/selection): Customizes the row and cell selection to the Gantt chart at initialization and dynamically.
 * [**Data markers or indicators**](https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/style-and-appearance): Displays indicators and flags along with taskbars and task labels.
 * [**Event markers**](https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/eventmarkers): Highlights important days or events in a project using the event markers.

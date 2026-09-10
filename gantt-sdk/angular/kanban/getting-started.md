@@ -75,7 +75,7 @@ cd my-app
 
 ## Adding the Syncfusion<sup style="font-size:70%">&reg;</sup> Kanban Package
 
-All available Essential JS 2 packages are published in the [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry. Use a package version that is compatible with Angular 21 (for example, `@syncfusion/ej2-angular-kanban@^21` or later).
+All available Essential JS 2 packages are published in the [node package registry](https://www.npmjs.com/~syncfusionorg) registry. Use a package version that is compatible with Angular 21 (for example, `@syncfusion/ej2-angular-kanban@^21` or later).
 
 Install the Kanban component with the following command:
 
@@ -229,7 +229,7 @@ For reference, the complete sample used in this section is shown below. The data
 ### Troubleshooting
 
 - **Blank board or no cards** — Confirm that each item's `Status` matches one of the `keyField` values declared in the `<e-columns>` block (for example, `Open`, `InProgress`, `Testing`, `Close`).
-- **`'KanbanModule' is not a module` or `ejs-kanban` is not recognized** — Verify that `@syncfusion/ej2-angular-kanban` is installed and listed in `package.json` dependencies.
+- **`'KanbanModule' is not a module` or `<ejs-kanban>` is not recognized** — Verify that `@syncfusion/ej2-angular-kanban` is installed and listed in `package.json` dependencies.
 - **Missing styles (cards or layout not rendering correctly)** — Re-check that all CSS imports were added to `styles.css` and that the dev server was restarted after editing the styles file.
 
 ## See also

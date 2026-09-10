@@ -84,7 +84,7 @@ EmptyDataSourceError | DataSource must not be empty at initial load since column
 |------------|--------------|
 | InvalidFilterMessage| Invalid Filter Data |
 | FilterbarTitle| \s filter bar cell |
-| Matchs| No Matches Found |
+| Match| No Matches Found |
 | FilterButton| Filter |
 | ClearButton| Clear |
 | StartsWith| Starts With |

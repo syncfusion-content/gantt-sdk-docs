@@ -96,7 +96,7 @@ Remote data binding assigns service endpoints as `DataManager` instances to the 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/databinding-cs3" %}
 
-## Configuring datamanager for different service types
+## Configuring data manager for different service types
 
 DataManager supports various adaptors to connect with different backend services. Select the appropriate adaptor based on your server architecture:
 
