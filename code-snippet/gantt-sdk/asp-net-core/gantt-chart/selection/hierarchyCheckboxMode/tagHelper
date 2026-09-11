@@ -1,0 +1,74 @@
+<div style="padding-bottom:10px">
+    <label>Hierarchy Checkbox Mode</label>
+    <ejs-dropdownlist id="mode"
+                      dataSource="@Model.ModeData"
+                      value="hierarchy"
+                      width="125px"
+                      popupHeight="100px"
+                      change="onModeChange">
+        <e-dropdownlist-fields text="type" value="id"></e-dropdownlist-fields>
+    </ejs-dropdownlist>
+</div>
+
+<ejs-gantt id="Gantt"
+           dataSource="@Model.GanttDataSourceCollection"
+           height="370px"
+           allowFiltering="true"
+           allowSelection="true"
+           hierarchyCheckboxMode="Hierarchy"
+           toolbar="@(new List<string>() { "Search" })">
+
+    <e-gantt-filtersettings type="Menu"></e-gantt-filtersettings>
+
+    <e-gantt-taskfields id="TaskID"
+                        name="TaskName"
+                        startDate="StartDate"
+                        endDate="EndDate"
+                        duration="Duration"
+                        progress="Progress"
+                        dependency="Predecessor"
+                        parentID="ParentID">
+    </e-gantt-taskfields>
+
+    <e-gantt-columns>
+        <e-gantt-column field="CheckBox"
+                        headerText=""
+                        showCheckbox="true"
+                        width="70"
+                        allowFiltering="false">
+        </e-gantt-column>
+
+        <e-gantt-column field="TaskID"
+                        width="110"
+                        visible="false">
+        </e-gantt-column>
+
+        <e-gantt-column field="TaskName"
+                        width="190">
+        </e-gantt-column>
+
+        <e-gantt-column field="StartDate">
+        </e-gantt-column>
+
+        <e-gantt-column field="EndDate">
+        </e-gantt-column>
+
+        <e-gantt-column field="Duration">
+        </e-gantt-column>
+
+        <e-gantt-column field="Predecessor">
+        </e-gantt-column>
+
+        <e-gantt-column field="Progress">
+        </e-gantt-column>
+    </e-gantt-columns>
+
+</ejs-gantt>
+
+<script>
+    function onModeChange(args) {
+        var gantt = document.getElementById('Gantt').ej2_instances[0];
+        gantt.hierarchyCheckboxMode = args.value;
+        gantt.refresh();
+    }
+</script>
