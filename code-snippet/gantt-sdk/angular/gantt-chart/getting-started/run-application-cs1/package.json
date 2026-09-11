@@ -10,6 +10,7 @@
   },
   "private": true,
   "dependencies": {
+    "@syncfusion/ej2-tailwind3-theme": "*",
     "@angular/core": "^21.0.0",
     "@angular/platform-browser": "^21.0.0",
     "@angular/platform-browser-dynamic": "^21.0.0",
@@ -39,7 +40,8 @@
     "tslib": "2.3.0",
     "zone.js": "0.14.3"
   },
-  "devDependencies": {  
+  "devDependencies": {
+    "@types/node": "^20.17.0",  
     "@angular/cli": "^21.0.0",
     "@angular/compiler-cli": "^21.0.0",
     "@angular-devkit/build-angular": "^21.0.0",
