@@ -22,7 +22,7 @@ Task constraints are useful for activities such as contract-controlled work, reg
 
 ### Constraint precedence
 
-Child task constraints take precedence over parent rollup dates. Parent tasks support only AsSoonAsPossible, AsLateAsPossible, and StartNoEarlierThan. Unsupported parent constraint values are converted to AsSoonAsPossible during data binding.
+Constraints defined on child tasks take precedence over parent task dates. Parent tasks support only AsSoonAsPossible, AsLateAsPossible, and StartNoEarlierThan. Unsupported parent constraint values are converted to AsSoonAsPossible during data binding.
 
 ### Task model configuration
 
