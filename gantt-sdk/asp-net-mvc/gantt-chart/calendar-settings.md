@@ -100,7 +100,7 @@ The following example demonstrates how changing `HoursPerDay` affects duration c
 {% endhighlight %}
 {% endtabs %}
 
-> **Note:** The default `hoursPerDay` value is **8 hours**. When a task has 3 days duration with the default `hoursPerDay` of 8, the total working hours = 3 days × 8 hours = **24 hours**. If the calendar's working time is configured as 24 hours (0:00 to 24:00), these 24 hours fit within a single calendar day, so the task displays as **1 calendar day** on the chart, even though the duration specification is 3 days.
+> **Note:** The default `hoursPerDay` value is **8 hours**. When a task has 4 days duration with the `hoursPerDay` value of 6, the total working hours = 4 days × 6 hours = **24 hours**. If the calendar's working time is configured as 24 hours (0:00 to 24:00), these 24 hours fit within a single calendar day, so the task displays as **1 calendar day** on the chart, even though the duration specification is 4 days.
 
 ## Impact on task scheduling
 
