@@ -14,15 +14,12 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 Task constraints define rules that restrict when an automatically scheduled task can start or finish. They support fixed-date activities, deadline-driven planning, milestone enforcement, and controlled task movement while preserving task dependencies and working-calendar rules.
 
-Task constraints are useful for activities such as contract-controlled work, regulatory submissions, product launches, audits, and procurement milestones. Constraint values can be loaded from a data source, edited through the task dialog, or updated programmatically.
+Task constraints are useful for activities such as contract-controlled work, regulatory submissions, product launches, audits, and procurement milestones. Constraint values can be loaded from a task collection, edited through the task dialog, or updated programmatically.
 
 >* Task constraints are evaluated only for auto-scheduled tasks. Constraint values on manually scheduled tasks are informational until the task is changed to auto scheduling.
 
 ## Task Constraints Configuration
 
-### Constraint precedence
-
-Constraints defined on child tasks take precedence over parent task dates. Parent tasks support only AsSoonAsPossible, AsLateAsPossible, and StartNoEarlierThan. Unsupported parent constraint values are converted to AsSoonAsPossible during data binding.
 
 ### Task model configuration
 
@@ -56,7 +53,7 @@ The task model should keep `ConstraintType` so the scheduling engine can validat
 
 ### GanttTaskFields configuration
 
-The following example maps task identity, scheduling, dependency, and constraint fields:
+The following example maps task identity, scheduling, dependency, and constraint fields. The **Design approval** task is fixed to April 8, 2026, and the **Release validation** task must finish on or before April 20, 2026. These constraints demonstrate how dependency propagation and taskbar movement are validated against the configured scheduling rules.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -107,8 +104,6 @@ The following example maps task identity, scheduling, dependency, and constraint
 {% endhighlight %}
 {% endtabs %}
 
->* The **Design approval** task is fixed to April 8, 2026. The **Release validation** task must finish on or before April 20, 2026. Dependency propagation and taskbar movement are validated against these rules.
-
 {% previewsample "" %}
 
 ## Supported constraint types
@@ -128,7 +123,7 @@ The `TaskConstraintType` enumeration defines the supported scheduling rules. The
 
 >* A date-based constraint should provide a non-null `ConstraintDate`.
 >* ASAP does not require a constraint date.
->* Parent records accept only ASAP, ALAP and SNET. Unsupported parent values are converted to ASAP before scheduling begins.
+>* Parent tasks support only `AsSoonAsPossible`, `StartNoEarlierThan`, and `FinishNoLaterThan`. Unsupported parent constraint values are converted to `AsSoonAsPossible` during data binding.
 
 ### Default constraint behavior
 
@@ -146,7 +141,7 @@ When a task is edited and a changed date violates the selected constraint rule, 
 
 ### Cell editing
 
-Cell editing validates changes to start date, end date, duration, `ConstraintType`, and `ConstraintDate`. An invalid value is rejected immediately, the previous valid value is restored.
+Cell editing validates changes to start date, end date, duration, work and assigned resources, `ConstraintType`, and `ConstraintDate`. For tasks configured with work and resource mappings, editing the work value or the assigned resource and resource units recalculates the task duration and end date according to the configured [TaskType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_TaskType). The recalculated end date is then evaluated against the task constraint. An invalid field value is rejected immediately, and the previous valid value is restored. If the edited date or the recalculated end date violates the constraint, the Scheduling Conflict dialog is displayed with options to cancel the change and preserve the constraint or remove the conflicting constraint and apply the edit.
 
 ### Dialog editing
 
@@ -240,7 +235,7 @@ The `ConstraintDate` value is updated through the same working-time calendar log
 
 >* Use ASAP for ordinary dependency-driven work and reserve exact constraints for dates that are externally controlled.
 >* Provide `ConstraintDate` whenever a selected constraint requires a reference date.
->* Keep parent constraints limited to ASAP, ALAP and SNET.
+>* Keep parent constraints limited to ASAP, SNET, and FNLT.
 >* Configure working time, weekends, and holidays before validating date-based constraints.
 >* Handle `OnTaskConstraint` for programmatic workflows that need custom conflict decisions.
 >* Test constrained tasks with taskbar drag, resize, dialog editing, cell editing, undo, redo, and dependency updates.
@@ -249,8 +244,6 @@ The `ConstraintDate` value is updated through the same working-time calendar log
 ## Limitations
 
 >* Task constraints apply only to auto-scheduled tasks.
->* Parent tasks support only `AsSoonAsPossible`, `AsLateAsPossible`, and `StartNoEarlierThan`.
->* `MustStartOn`, `MustFinishOn`, `StartNoLaterThan`, `FinishNoEarlierThan`, and `FinishNoLaterThan` are not supported for parent tasks.
 >* Initial data binding renders bound dates without enforcing conflicting constraints. Validation begins when a scheduling operation is performed.
 
 ## See also
