@@ -43,7 +43,7 @@ public class TaskData
 
 ### Constraint type mapping
 
-Map the task model property that contains the constraint type through the [ConstraintType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html) property of [GanttTaskFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html). Values must correspond to the [TaskConstraintType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.TaskConstraintType.html) enumeration and identify the specific scheduling rule for the task, such as `AsSoonAsPossible`, `AsLateAsPossible`, `MustStartOn`, `MustFinishOn`, `StartNoEarlierThan`, `StartNoLaterThan`, `FinishNoEarlierThan`, or `FinishNoLaterThan`.
+Map the task model property that contains the constraint type through the [ConstraintType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html) property of [GanttTaskFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html). Values must correspond to the [TaskConstraintType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.html) enumeration and identify the specific scheduling rule for the task, such as `AsSoonAsPossible`, `AsLateAsPossible`, `MustStartOn`, `MustFinishOn`, `StartNoEarlierThan`, `StartNoLaterThan`, `FinishNoEarlierThan`, or `FinishNoLaterThan`.
 
 ### Constraint date mapping
 
