@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Getting Started with Blazor Kanban in Server App
 
-This section briefly explains about how to include [Blazor Kanban](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) component in a Blazor Server App using [Visual Studio](https://visualstudio.microsoft.com/vs/), [Visual Studio Code](https://code.visualstudio.com/), and the [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/).
+This section briefly explains about how to include [Blazor Kanban](https://www.syncfusion.com/gantt-sdk/blazor-kanban-board) component in a Blazor Server App using [Visual Studio](https://visualstudio.microsoft.com/vs), [Visual Studio Code](https://code.visualstudio.com), and the [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools).
 
 {% tabcontents %}
 
@@ -20,7 +20,7 @@ This section briefly explains about how to include [Blazor Kanban](https://www.s
 
 ## Prerequisites
 
-* [System requirements for Blazor components](https://blazor.syncfusion.com/documentation/system-requirements)
+- [System requirements for Blazor components](https://blazor.syncfusion.com/documentation/system-requirements)
 
 ## Create a new Blazor App in Visual Studio
 
@@ -28,7 +28,7 @@ Create a **Blazor Server App** by using the **Blazor Web App** template in Visua
 
 ## Install required Blazor packages
 
-Install [Syncfusion.Blazor.Kanban](https://www.nuget.org/packages/Syncfusion.Blazor.Kanban/) and [Syncfusion.Blazor.Themes](https://www.nuget.org/packages/Syncfusion.Blazor.Themes/) using Visual Studio's NuGet Package Manager (Tools → NuGet Package Manager → Manage NuGet Packages for Solution).
+Install [Syncfusion.Blazor.Kanban](https://www.nuget.org/packages/Syncfusion.Blazor.Kanban) and [Syncfusion.Blazor.Themes](https://www.nuget.org/packages/Syncfusion.Blazor.Themes) using Visual Studio's NuGet Package Manager (Tools → NuGet Package Manager → Manage NuGet Packages for Solution).
 
 Alternatively, use the Package Manager Console:
 
@@ -49,7 +49,7 @@ N> All Syncfusion Blazor packages are available on [nuget.org](https://www.nuget
 
 ## Prerequisites
 
-* [System requirements for Blazor components](https://blazor.syncfusion.com/documentation/system-requirements)
+- [System requirements for Blazor components](https://blazor.syncfusion.com/documentation/system-requirements)
 
 ## Create a new Blazor App in Visual Studio Code
 
@@ -70,7 +70,7 @@ cd BlazorApp
 
 ## Install required Blazor packages
 
-From the integrated terminal, add the required packages of  [Syncfusion.Blazor.Kanban](https://www.nuget.org/packages/Syncfusion.Blazor.Kanban/) and [Syncfusion.Blazor.Themes](https://www.nuget.org/packages/Syncfusion.Blazor.Themes/)  to the project:
+From the integrated terminal, add the required packages of [Syncfusion.Blazor.Kanban](https://www.nuget.org/packages/Syncfusion.Blazor.Kanban) and [Syncfusion.Blazor.Themes](https://www.nuget.org/packages/Syncfusion.Blazor.Themes) to the project:
 
 {% tabs %}
 {% highlight c# tabtitle="VS Code Terminal" %}
@@ -114,7 +114,7 @@ cd BlazorApp
 
 ## Install required Blazor packages
 
-Run the following commands to add the packages of  [Syncfusion.Blazor.Kanban](https://www.nuget.org/packages/Syncfusion.Blazor.Kanban/) and [Syncfusion.Blazor.Themes](https://www.nuget.org/packages/Syncfusion.Blazor.Themes/):
+Run the following commands to add the packages of [Syncfusion.Blazor.Kanban](https://www.nuget.org/packages/Syncfusion.Blazor.Kanban) and [Syncfusion.Blazor.Themes](https://www.nuget.org/packages/Syncfusion.Blazor.Themes):
 
 {% tabs %}
 {% highlight c# tabtitle=".NET CLI" %}
@@ -157,11 +157,12 @@ The theme stylesheet and script can be accessed from NuGet through [Static Web A
 - Add the **script reference inside the `<body>` tag** of the `App.razor` file.
 
 ```html
-
 <link href="_content/Syncfusion.Blazor.Themes/fluent2.css" rel="stylesheet" />
 ....
-<script src="_content/Syncfusion.Blazor.Core/scripts/syncfusion-blazor.min.js" type="text/javascript"></script>
-
+<script
+  src="_content/Syncfusion.Blazor.Core/scripts/syncfusion-blazor.min.js"
+  type="text/javascript"
+></script>
 ```
 
 N> Check out the [Blazor Themes](https://blazor.syncfusion.com/documentation/appearance/themes) topic to discover various methods (`Static Web Assets`, [CDN](https://blazor.syncfusion.com/documentation/appearance/themes#cdn-reference), and [CRG](https://blazor.syncfusion.com/documentation/common/custom-resource-generator)) for referencing themes in Blazor application. Also, check out the [Adding Script Reference](https://blazor.syncfusion.com/documentation/common/adding-script-references) topic to learn different approaches for adding script references in Blazor application.
@@ -197,13 +198,13 @@ N> If the Interactivity Location is set to `Global`, the render mode is automati
 </SfKanban>
 
 @code {
-    public class TasksModel
-    {
-        public string? Id { get; set; }
-        public string? Title { get; set; }
-        public string? Status { get; set; }
-        public string? Summary { get; set; }
-    }
+public class TasksModel
+{
+public string? Id { get; set; }
+public string? Title { get; set; }
+public string? Status { get; set; }
+public string? Summary { get; set; }
+}
 
     public List<TasksModel> Tasks = new List<TasksModel>()
     {
@@ -216,6 +217,7 @@ N> If the Interactivity Location is set to `Global`, the render mode is automati
         new TasksModel { Id = "Task 7", Title = "BLAZ-29007", Status = "Close", Summary = "Analyze grid control." },
         new TasksModel { Id = "Task 8", Title = "BLAZ-29008", Status = "Close", Summary = "Stored procedure for initial data binding of the grid." }
     };
+
 }
 
 {% endhighlight %}
@@ -227,14 +229,14 @@ N> If the Interactivity Location is set to `Global`, the render mode is automati
 
 **Visual Studio**:
 
-* Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The Blazor Gantt Chart component will render in your default web browser.
+- Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The Blazor Gantt Chart component will render in your default web browser.
 
 **Visual Studio Code or .NET CLI**:
 
 1. Open a terminal in the project directory and run the following command:
-    ```
-    dotnet run
-    ```
+   ```
+   dotnet run
+   ```
 2. The application will start and display in your default web browser.
 
 N> Explore our [Blazor Kanban Board example](https://blazor.syncfusion.com/demos/kanban/overview?theme=fluent2), which demonstrates how to render and configure the Kanban Board.
