@@ -121,7 +121,7 @@ Select a range of rows in the Gantt Chart control by using the [selectRowsByRang
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/selection-cs15" %}
 
-## Enable multi row selection without Ctrl key
+## Enable multi row selection without ctrl key
 
 You can enable simple multi-row selection by setting the `enableSimpleMultiRowSelection` property to **true** in the Grid configuration during the [created](https://ej2.syncfusion.com/javascript/documentation/gantt/events#created) event. This allows multiple rows to be selected individually through clicks without holding the Ctrl key.
 

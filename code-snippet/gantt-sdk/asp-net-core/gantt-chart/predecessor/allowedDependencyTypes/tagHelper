@@ -1,0 +1,35 @@
+@page
+@model IndexModel
+@using Syncfusion.EJ2.Gantt
+
+<ejs-gantt id="Default"
+           dataSource="@Model.GanttDataSourceCollection"
+           allowSelection="true"
+           gridLines="Both"
+           highlightWeekends="true"
+           height="550px"
+           projectStartDate="03/21/2019"
+           projectEndDate="05/30/2019"
+           allowedDependencyTypes="@(new string[] { "SF" })">
+
+    <e-gantt-taskfields id="TaskID"
+                        name="TaskName"
+                        startDate="StartDate"
+                        duration="Duration"
+                        progress="Progress"
+                        dependency="Predecessor"
+                        child="subtasks">
+    </e-gantt-taskfields>
+
+    <e-gantt-editsettings allowAdding="true"
+                          allowEditing="true"
+                          allowDeleting="true"
+                          allowTaskbarEditing="true"
+                          showDeleteConfirmDialog="true">
+    </e-gantt-editsettings>
+
+    <e-gantt-labelsettings leftLabel="TaskName"
+                           taskLabel="Progress">
+    </e-gantt-labelsettings>
+
+</ejs-gantt>

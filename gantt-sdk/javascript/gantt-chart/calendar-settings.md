@@ -110,6 +110,8 @@ The following example demonstrates how changing `hoursPerDay` affects duration c
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/hoursperday" %}
 
+> **Note:** The default `hoursPerDay` value is **8 hours**. When a task has 4 days duration with the `hoursPerDay` value of 6, the total working hours = 4 days × 6 hours = **24 hours**. If the calendar's working time is configured as 24 hours (0:00 to 24:00), these 24 hours fit within a single calendar day, so the task displays as **1 calendar day** on the chart, even though the duration specification is 4 days.
+
 ## Impact on task scheduling
 
 Calendar settings directly affect how task duration is calculated and when tasks are scheduled:
@@ -123,6 +125,5 @@ Calendar settings directly affect how task duration is calculated and when tasks
 
 ## See also
 
-- [How to configure holidays?](../gantt/holidays)
-- [How to include weekends in scheduling?](../gantt/task-scheduling#include-weekends)
-- [How to work with task fields?](../gantt/task-scheduling#task-fields)
+- [How to configure holidays?](https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/holidays)
+- [How to include weekends in scheduling?](https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/scheduling-tasks#weekend-configuration)

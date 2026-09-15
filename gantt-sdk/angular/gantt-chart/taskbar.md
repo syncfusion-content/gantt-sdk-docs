@@ -356,6 +356,27 @@ The following example enables multi-taskbar:
 
 This feature aggregates child progress in parent taskbars, updating dynamically on child changes.
 
+## Enable taskbar drawing
+
+To allow users to draw a new taskbar directly in the chart timeline, set [editSettings.allowTaskbarDraw](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowtaskbardraw) to **true**. Taskbar drawing is useful for creating unscheduled tasks interactively; enable [allowUnscheduledTasks](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowunscheduledtasks) when the task can initially lack a complete schedule.
+
+```html
+<ejs-gantt
+  [dataSource]="data"
+  [allowUnscheduledTasks]="true"
+  [editSettings]="editSettings"
+  [taskFields]="taskSettings"
+>
+</ejs-gantt>
+```
+
+```typescript
+public editSettings: object = {
+  allowTaskbarEditing: true,
+  allowTaskbarDraw: true
+};
+```
+
 ## Customize connector lines
 
 Connector lines for dependencies are styled using [connectorLineWidth](https://ej2.syncfusion.com/angular/documentation/api/gantt#connectorlinewidth) for thickness and [connectorLineBackground](https://ej2.syncfusion.com/angular/documentation/api/gantt#connectorlinebackground) for color, enhancing dependency visibility.

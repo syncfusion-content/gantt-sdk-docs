@@ -223,7 +223,7 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 | Custom toolbar | **Property:** *toolbarSettings.customToolbarItems* <br/> <br/> `$("#gantt").ejGantt({`<br>`toolbarSettings: {`<br>&nbsp;&nbsp;`showToolbar: true,`<br>&nbsp;&nbsp;`customToolbarItems: [{ text: "ShowBaseline", tooltipText: "Show Baseline" }, { text: "Reset",tooltipText:"Reset" }]`<br>`},` <br>`});` | **Property:** *toolbar* <br/><br/> `var ganttObj = new ej.gantt.Gantt({`<br>&nbsp;&nbsp;`toolbar: [{text: 'Quick Filter', tooltipText: 'Quick Filter', id: 'toolbarfilter', align:'Right'}],`<br>`});`<br>`ganttObj.appendTo('#gantt');` |
 | Triggers when toolbar items clicked | **Event:** *toolbarClick* <br/><br/>`$("#gantt").ejGantt({` <br/>`toolbarClick: function (args) {}`<br/>`});` | **Event:** *toolbarClick* <br/><br/>`let gantt:Gantt= new Gantt({`<br/>`toolbarClick: function (args) {}`<br/>`});`<br/>|
 
-## ToolTip
+## Tooltip
 
 |Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
@@ -294,7 +294,7 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 | To render baseline | **Property:** *renderBaseline* <br><br> `$("#gantt").ejGantt({`<br>&nbsp; `renderBaseline: true` <br>`});`| **Property:** *renderBaseline* <br><br>`var ganttObj = new ej.gantt.Gantt({`<br>&nbsp;&nbsp;`renderBaseline: true` <br>`});`<br>`ganttObj.appendTo('#gantt');` |
 | To define baselineColor | **Property:** *baselineColor* <br><br> `$("#gantt").ejGantt({`<br>&nbsp; `baselineColor: "#fba41c"` <br>`});`| **Property:** *baselineColor* <br><br>`var ganttObj = new ej.gantt.Gantt({`<br>&nbsp;&nbsp;`baselineColor: 'red'` <br>`});`<br>`ganttObj.appendTo('#gantt');` |
 
-## Context Menu
+## Context menu
 
 |Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
@@ -302,7 +302,7 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
 | To define custom menu items  | **Event:** *contextMenuOpen* <br><br>`$("#gantt").ejGantt({` <br/>`contextMenuOpen: function(args) {`<br/>&nbsp;&nbsp;`args.contextMenuItems.push({`<br>&nbsp;&nbsp;&nbsp;`headerText: "Expand/Collapse",`<br>&nbsp;&nbsp;&nbsp;`menuId: "expand",`<br>&nbsp;&nbsp;&nbsp;`iconPath: "url(Expand-02-WF.png)",`<br>&nbsp;&nbsp;&nbsp;`eventHandler: function() {`<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`//event handler for custom menu items`<br>&nbsp;&nbsp;&nbsp;`}`<br>`});`<br>`}`<br>`});`| **Property:** *contextMenuItems* <br><br>`var ganttObj = new ej.gantt.Gantt({`<br>`contextMenuItems: [ <br>&nbsp;`{ text: 'Collapse the Row', target: '.e-content', id: 'collapserow' },`<br>&nbsp;`{ text: 'Expand the Row', target: '.e-content', id: 'expandrow' }`<br>]`<br>`});`<br>`ganttObj.appendTo('#gantt');` |
 | Triggers before context menu opens | **Event:** *contextMenuOpen* <br/><br/>`$("#gantt").ejGantt({` <br/>`contextMenuOpen: function (args) {}`<br/>`});` | **Event:** *contextMenuOpen* <br/><br/>`var ganttObj= new ej.gantt.Gantt({`<br/>`contextMenuOpen: function (args) {}`<br/>`});`<br/>|
 
-## Scheduling Tasks
+## Scheduling tasks
 
 |Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
@@ -316,7 +316,7 @@ This topic shows the API equivalent of JS2 Gantt component to be used, while mig
  To set working days of a week | **Property:** *workweek* <br/><br/> `$("#gantt").ejGantt({`<br>`workweek:["Sunday","Monday","Tuesday","Wednesday","Thursday"]` <br>`});` | **Property:** *workWeek* <br/><br/>`var ganttObj = new ej.gantt.Gantt({`<br>&nbsp;&nbsp;`workWeek: ["Sunday","Monday","Tuesday","Wednesday","Thursday"]`<br>`});`<br>`ganttObj.appendTo('#gantt');` |
 | To enable/disable Unscheduled tasks | **Property:** *allowUnscheduledTask* <br><br> `$("#gantt").ejGantt({`<br>&nbsp; `allowUnscheduledTask: true` <br>`});`| **Property:** *allowUnscheduledTasks* <br><br>`var ganttObj = new ej.gantt.Gantt({`<br>&nbsp;&nbsp;`allowUnscheduledTasks: true` <br>`});`<br>`ganttObj.appendTo('#gantt');` |
 
-## Appearance and Customizations
+## Appearance and customizations
 
 |Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |

@@ -29,9 +29,9 @@ The [projectStartDate](https://ej2.syncfusion.com/react/documentation/api/gantt#
 Holidays are defined using the [holidays](https://ej2.syncfusion.com/react/documentation/api/gantt#holidays) property, which accepts an array of holiday objects specifying dates, labels, and styling. The `DayMarkersService` must be injected to render holidays as visual markers in the timeline and adjust task scheduling calculations. Holidays take precedence over settings like `workWeek` or `includeWeekend`, ensuring tasks do not progress during these periods.
 
 **Holiday configuration properties**
-- `from`: Sets the start date of the holiday (e.g., `new Date('2024-12-25')`).
-- `to`: Defines the end date for multi-day holidays (optional for single-day holidays).
-- `label`: Provides a descriptive name (e.g., “Christmas Day”) displayed in the timeline.
+- `from`: Sets the start date of the holiday (e.g., `new Date('2024-12-25')`). Must be a valid Date object.
+- `to`: Defines the end date for multi-day holidays (optional for single-day holidays). **Must be equal to or after `from` date**, or the holiday will not render. The `to` date is **inclusive** in the holiday range.
+- `label`: Provides a descriptive name (e.g., "Christmas Day") displayed in the timeline.
 - `cssClass`: Applies custom CSS classes for styling holiday appearances.
 
 Inject `DayMarkersService` to enable holiday rendering and scheduling logic:

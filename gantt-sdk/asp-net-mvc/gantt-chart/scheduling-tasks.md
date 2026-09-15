@@ -14,20 +14,25 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 ## Duration units
 
-In Gantt, the tasks’ duration value can be measured by the following duration units,
+Duration units define how task duration values are interpreted and calculated in the Gantt Chart. Duration units can be configured globally for the entire project or individually for each task.
 
-- Day
-- Hour
-- Minute
+The Gantt Chart control supports the following duration units:
 
-In Gantt, you can define the duration unit for the whole project using the [`DurationUnit`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DurationUnit) property. When a value is defined for this property, this unit is applied for all tasks which don't have a duration unit value. Each task in the project can be defined with different duration units, and the duration unit of a task can be defined in the following ways:
+- **Day**: Standard for general planning.
+- **Hour**: For detailed task management.
+- **Minute**: For short-duration tasks.
+- **Week**: Represents a duration calculated using the configured `daysPerWeek` value.
+- **Month**: Represents a duration calculated using the configured `daysPerMonth` value.
 
-- Using [`TaskFields.DurationUnit`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_DurationUnit) property, to map the duration unit data source field.
-- Defining the duration unit value along with the duration field in the data source.
+Configure using:
 
-### Mapping the duration unit field
+- [durationUnit](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DurationUnit): Sets global unit (default: `day`).
+- [taskFields.durationUnit](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_DurationUnit): Maps per-task units.
+- `daysPerWeek`: Specifies the number of working days that constitute one week duration.
+- `daysPerMonth`: Specifies the number of working days that constitute one month duration.
+- Duration field values: You can specify the duration unit directly in the duration value (for example, "5 minutes", "2 weeks", or "1 month").
 
-The below code snippet explains the mapping of duration unit data source field to the Gantt control using the [`TaskFields.DurationUnit`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_DurationUnit) property.
+The following example maps duration units:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -138,3 +143,20 @@ Non-working days/weekend are used to represent the non-productive days in a proj
 N> By default, Saturdays and Sundays are considered as non-working days/weekend in a project.
 <br/> In the Gantt control, you can make weekend as working day by setting the [`IncludeWeekend`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_IncludeWeekend) property to `true`.
 <br/> To show or hide weekend in timeline, use [timelineSettings.showWeekend](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttTimelineSettings.html#Syncfusion_EJ2_Gantt_GanttTimelineSettings_ShowWeekend) property in `timelineSettings`. To know more about `showWeekend`, refer [here](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/time-line/time-line#showhide-weekends).
+
+### Configure days per week and month
+
+The `daysPerWeek` property specifies how many working days constitute one week, directly impacting how week-based durations are calculated. For example, if `daysPerWeek` is 5, then 1 week equals 5 working days.
+
+Similarly, the `daysPerMonth` property specifies how many working days constitute one month, affecting how month-based durations are converted to actual working days for scheduling calculations. For example, if `daysPerMonth` is 20, then 1 month equals 20 working days.
+
+The following example configures `daysPerWeek` and `daysPerMonth` properties:
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/duration-unit-cs2/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="DurationUnitCS2.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/duration-unit-cs2/durationUnitCS2.cs %}
+{% endhighlight %}
+{% endtabs %}

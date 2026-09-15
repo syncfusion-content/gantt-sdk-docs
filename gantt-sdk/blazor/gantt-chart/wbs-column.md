@@ -101,7 +101,7 @@ WBS codes follow a hierarchical structure: parent tasks use sequential numbers (
 > When the WBS column is enabled in the Gantt Chart using the [ShowWbsColumn](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ShowWbsColumn) property along with the [WbsCode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_WbsCode) and [WbsPredecessor](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_WbsPredecessor) fields, the default **ID** and **Predecessor** columns are automatically disabled, as the WBS and WBS Predecessor columns already display the ID and predecessor values based on the task hierarchy.
 > The WBS column in Gantt chart currently supports string data types for both WBS codes and WBS predecessor values, ensuring consistent text-based representation across all project hierarchy levels and dependency relationships.
 
-## Performance Optimization with Conditional Updates
+## Performance optimization with conditional updates
 
 To improve performance with large datasets, control WBS code recalculation using the [DataBound](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#databound) and [RowDropped](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#rowdropped) events. This approach ensures updates occur only when necessary, such as during drag-and-drop operations.
 
@@ -210,7 +210,7 @@ The WBS feature has a few limitations in the Gantt component:
 * Load on demand is not supported with the WBS feature.
 * WBS Code and WBS Predecessor fields cannot be mapped directly from the data source as they are generated dynamically by the component based on task hierarchy.
 
-## See Also
+## See also
 - [How to define columns manually in Blazor Gantt Chart?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/columns)
 - [How to customize column headers in Blazor Gantt Chart?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/column-template)
 - [How to use the column menu in Blazor Gantt Chart?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/column-menu)

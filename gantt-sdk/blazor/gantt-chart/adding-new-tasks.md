@@ -14,7 +14,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 Adding new tasks to the Blazor Gantt Chart component enables flexible project management by inserting tasks like milestones or subtasks using the toolbar, context menu, or programmatic methods. With [EditSettings.AllowAdding](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_AllowAdding) enabled, tasks can be added at the top, as children, or at specific positions, seamlessly integrating with dependencies and critical path calculations. Ensure task data aligns with [GanttTaskFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html) mappings (e.g., id, name, startDate) for successful addition, and verify parent rows support subtasks when adding child tasks. The toolbar opens a dialog for task details, the context menu provides positional options, and the [AddRecordAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AddRecordAsync__0_System_Nullable_System_Int32__System_Nullable_Syncfusion_Blazor_Gantt_RowPosition__System_Object_) method offers precise control, making task creation efficient for dynamic project updates.
 
-## Adding Tasks via Toolbar
+## Adding tasks via toolbar
 
 Enable task addition through the toolbar by setting [EditSettings.AllowAdding](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_AllowAdding) to **true**. Clicking the toolbar’s **Add** icon opens a dialog to enter details like task name, start date, and duration, adding the task at the top of the Gantt chart. This is ideal for quickly inserting high-level tasks or milestones, with all required fields (e.g., TaskID) validated for successful creation.
 
@@ -199,7 +199,7 @@ Tasks can be added programmatically using the [AddRecordAsync](https://help.sync
                            
 > **Note**: Ensure the `TaskID` is unique to prevent runtime errors. Use try-catch blocks with `AddRecordAsync` to handle exceptions, such as invalid data or missing dependencies. For keyboard accessibility, use <kbd>Ctrl</kbd> + <kbd>Insert</kbd> (Windows) or <kbd>⌘</kbd> + <kbd>Insert</kbd> (Mac) to open the add dialog programmatically.
 
-## See Also
+## See also
 
 - [Accessibility in Blazor Gantt Chart](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/accessibility)
 - [Blazor Gantt Chart Feature Tour](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart)

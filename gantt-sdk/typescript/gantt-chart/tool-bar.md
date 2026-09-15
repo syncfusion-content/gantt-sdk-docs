@@ -107,7 +107,7 @@ You can customize the appearance of toolbar buttons in the Gantt Chart control u
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/toolbar-button" %}
 
-## Add toolbar at the bottom of gantt
+## Add toolbar at the bottom of Gantt
 
 To reposition the toolbar to the bottom of the Gantt chart, use the [created](https://ej2.syncfusion.com/documentation/api/gantt#created) event to manipulate the DOM. In this event, select the toolbar element and append it to the Gantt container using DOM manipulation. This moves the toolbar to the bottom of the layout.
 

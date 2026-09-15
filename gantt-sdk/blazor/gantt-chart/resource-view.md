@@ -32,7 +32,7 @@ The following example configures resource view:
                      ParentID="@nameof(GanttModel.TaskData.ParentId)" Work="@nameof(GanttModel.TaskData.Work)" TaskType="@nameof(GanttModel.TaskData.TaskType)" Progress="@nameof(GanttModel.TaskData.Progress)">
     </GanttTaskFields>
     <GanttResource DataSource="ResourceCollection" Id="@nameof(GanttModel.ResourceInfoModel.Id)" Name="@nameof(GanttModel.ResourceInfoModel.Name)" MaxUnits="@nameof(GanttModel.ResourceInfoModel.MaxUnit)" TValue="GanttModel.TaskData" TResources="GanttModel.ResourceInfoModel"></GanttResource>
-    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="@nameof(GanttModel.AssignmentModel.PrimaryId)" TaskID="@nameof(GanttModel.AssignmentModel.TaskID)" ResourceID="@nameof(GanttModel.AssignmentModel.ResourceId)" Units="@nameof(GanttModel.AssignmentModel.Unit)" TValue="GanttModel.TaskData" TAssignment="GanttModel.AssignmentModel">
+    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="@nameof(GanttModel.AssignmentModel.PrimaryId)" TaskId="@nameof(GanttModel.AssignmentModel.TaskId)" ResourceID="@nameof(GanttModel.AssignmentModel.ResourceId)" Units="@nameof(GanttModel.AssignmentModel.Unit)" TValue="GanttModel.TaskData" TAssignment="GanttModel.AssignmentModel">
     </GanttAssignmentFields>
     <GanttLabelSettings RightLabel="Resources" TValue="GanttModel.TaskData"></GanttLabelSettings>
     <GanttEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" AllowTaskbarEditing="true"
@@ -58,7 +58,7 @@ The following example configures resource view:
     protected override void OnInitialized()
     {
         TaskCollection = GanttModel.GetTaskCollection();
-        ResourceCollection = GanttModel.GetResources;
+        ResourceCollection = GanttModel.GetResources();
         AssignmentCollection = GanttModel.GetAssignmentCollection();
     }
 }
@@ -93,7 +93,7 @@ namespace BlazorGanttChart.Data
     public class AssignmentModel
     {
         public int PrimaryId { get; set; }
-        public int TaskID { get; set; }
+        public int TaskId { get; set; }
         public int ResourceId { get; set; }
         public double? Unit { get; set; }
     }
@@ -176,7 +176,7 @@ The following example toggles overallocation visibility:
                      ParentID="@nameof(GanttModel.TaskData.ParentId)" Work="@nameof(GanttModel.TaskData.Work)" TaskType="@nameof(GanttModel.TaskData.TaskType)" Progress="@nameof(GanttModel.TaskData.Progress)">
     </GanttTaskFields>
     <GanttResource DataSource="ResourceCollection" Id="@nameof(GanttModel.ResourceInfoModel.Id)" Name="@nameof(GanttModel.ResourceInfoModel.Name)" MaxUnits="@nameof(GanttModel.ResourceInfoModel.MaxUnit)" TValue="GanttModel.TaskData" TResources="GanttModel.ResourceInfoModel"></GanttResource>
-    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="@nameof(GanttModel.AssignmentModel.PrimaryId)" TaskID="@nameof(GanttModel.AssignmentModel.TaskID)" ResourceID="@nameof(GanttModel.AssignmentModel.ResourceId)" Units="@nameof(GanttModel.AssignmentModel.Unit)" TValue="GanttModel.TaskData" TAssignment="GanttModel.AssignmentModel">
+    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="@nameof(GanttModel.AssignmentModel.PrimaryId)" TaskId="@nameof(GanttModel.AssignmentModel.TaskId)" ResourceID="@nameof(GanttModel.AssignmentModel.ResourceId)" Units="@nameof(GanttModel.AssignmentModel.Unit)" TValue="GanttModel.TaskData" TAssignment="GanttModel.AssignmentModel">
     </GanttAssignmentFields>
     <GanttLabelSettings RightLabel="Resources" TValue="GanttModel.TaskData"></GanttLabelSettings>
     <GanttEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" AllowTaskbarEditing="true"
@@ -202,7 +202,7 @@ The following example toggles overallocation visibility:
     protected override void OnInitialized()
     {
         TaskCollection = GanttModel.GetTaskCollection();
-        ResourceCollection = GanttModel.GetResources;
+        ResourceCollection = GanttModel.GetResources();
         AssignmentCollection = GanttModel.GetAssignmentCollection();
     }
 }
@@ -237,7 +237,7 @@ namespace BlazorGanttChart.Data
     public class AssignmentModel
     {
         public int PrimaryId { get; set; }
-        public int TaskID { get; set; }
+        public int TaskId { get; set; }
         public int ResourceId { get; set; }
         public double? Unit { get; set; }
     }
@@ -314,7 +314,7 @@ When a resource is subsequently assigned to an unassigned task, the task automat
                      ParentID="@nameof(GanttModel.TaskData.ParentId)" Work="@nameof(GanttModel.TaskData.Work)" TaskType="@nameof(GanttModel.TaskData.TaskType)" Progress="@nameof(GanttModel.TaskData.Progress)">
     </GanttTaskFields>
     <GanttResource DataSource="ResourceCollection" Id="@nameof(GanttModel.ResourceInfoModel.Id)" Name="@nameof(GanttModel.ResourceInfoModel.Name)" MaxUnits="@nameof(GanttModel.ResourceInfoModel.MaxUnit)" TValue="GanttModel.TaskData" TResources="GanttModel.ResourceInfoModel"></GanttResource>
-    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="@nameof(GanttModel.AssignmentModel.PrimaryId)" TaskID="@nameof(GanttModel.AssignmentModel.TaskID)" ResourceID="@nameof(GanttModel.AssignmentModel.ResourceId)" Units="@nameof(GanttModel.AssignmentModel.Unit)" TValue="GanttModel.TaskData" TAssignment="GanttModel.AssignmentModel">
+    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="@nameof(GanttModel.AssignmentModel.PrimaryId)" TaskId="@nameof(GanttModel.AssignmentModel.TaskId)" ResourceID="@nameof(GanttModel.AssignmentModel.ResourceId)" Units="@nameof(GanttModel.AssignmentModel.Unit)" TValue="GanttModel.TaskData" TAssignment="GanttModel.AssignmentModel">
     </GanttAssignmentFields>
     <GanttLabelSettings RightLabel="Resources" TValue="GanttModel.TaskData"></GanttLabelSettings>
     <GanttEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" AllowTaskbarEditing="true"
@@ -340,7 +340,7 @@ When a resource is subsequently assigned to an unassigned task, the task automat
     protected override void OnInitialized()
     {
         TaskCollection = GanttModel.GetTaskCollection();
-        ResourceCollection = GanttModel.GetResources;
+        ResourceCollection = GanttModel.GetResources();
         AssignmentCollection = GanttModel.GetAssignmentCollection();
     }
 }
@@ -375,7 +375,7 @@ namespace BlazorGanttChart.Data
     public class AssignmentModel
     {
         public int PrimaryId { get; set; }
-        public int TaskID { get; set; }
+        public int TaskId { get; set; }
         public int ResourceId { get; set; }
         public double? Unit { get; set; }
     }
@@ -448,7 +448,7 @@ For a compact view, multiple tasks assigned to each resource can be visualized i
                      ParentID="@nameof(GanttModel.TaskData.ParentId)" Work="@nameof(GanttModel.TaskData.Work)" TaskType="@nameof(GanttModel.TaskData.TaskType)" Progress="@nameof(GanttModel.TaskData.Progress)">
     </GanttTaskFields>
     <GanttResource DataSource="ResourceCollection" Id="@nameof(GanttModel.ResourceInfoModel.Id)" Name="@nameof(GanttModel.ResourceInfoModel.Name)" MaxUnits="@nameof(GanttModel.ResourceInfoModel.MaxUnit)" TValue="GanttModel.TaskData" TResources="GanttModel.ResourceInfoModel"></GanttResource>
-    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="@nameof(GanttModel.AssignmentModel.PrimaryId)" TaskID="@nameof(GanttModel.AssignmentModel.TaskID)" ResourceID="@nameof(GanttModel.AssignmentModel.ResourceId)" Units="@nameof(GanttModel.AssignmentModel.Unit)" TValue="GanttModel.TaskData" TAssignment="GanttModel.AssignmentModel">
+    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="@nameof(GanttModel.AssignmentModel.PrimaryId)" TaskId="@nameof(GanttModel.AssignmentModel.TaskId)" ResourceID="@nameof(GanttModel.AssignmentModel.ResourceId)" Units="@nameof(GanttModel.AssignmentModel.Unit)" TValue="GanttModel.TaskData" TAssignment="GanttModel.AssignmentModel">
     </GanttAssignmentFields>
     <GanttLabelSettings RightLabel="Resources" TValue="GanttModel.TaskData"></GanttLabelSettings>
     <GanttTaskbarSettings EnableMultiTaskbar="true"></GanttTaskbarSettings>
@@ -475,7 +475,7 @@ For a compact view, multiple tasks assigned to each resource can be visualized i
     protected override void OnInitialized()
     {
         TaskCollection = GanttModel.GetTaskCollection();
-        ResourceCollection = GanttModel.GetResources;
+        ResourceCollection = GanttModel.GetResources();
         AssignmentCollection = GanttModel.GetAssignmentCollection();
     }
 }
@@ -512,7 +512,7 @@ namespace BlazorGanttChart.Data
     public class AssignmentModel
     {
         public int PrimaryId { get; set; }
-        public int TaskID { get; set; }
+        public int TaskId { get; set; }
         public int ResourceId { get; set; }
         public double? Unit { get; set; }
     }
@@ -625,7 +625,7 @@ Enable taskbar drag-and-drop between resources with [AllowTaskbarDragAndDrop](ht
                      ParentID="@nameof(GanttModel.TaskData.ParentId)" Work="@nameof(GanttModel.TaskData.Work)" TaskType="@nameof(GanttModel.TaskData.TaskType)" Progress="@nameof(GanttModel.TaskData.Progress)">
     </GanttTaskFields>
     <GanttResource DataSource="ResourceCollection" Id="@nameof(GanttModel.ResourceInfoModel.Id)" Name="@nameof(GanttModel.ResourceInfoModel.Name)" MaxUnits="@nameof(GanttModel.ResourceInfoModel.MaxUnit)" TValue="GanttModel.TaskData" TResources="GanttModel.ResourceInfoModel"></GanttResource>
-    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="@nameof(GanttModel.AssignmentModel.PrimaryId)" TaskID="@nameof(GanttModel.AssignmentModel.TaskID)" ResourceID="@nameof(GanttModel.AssignmentModel.ResourceId)" Units="@nameof(GanttModel.AssignmentModel.Unit)" TValue="GanttModel.TaskData" TAssignment="GanttModel.AssignmentModel">
+    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="@nameof(GanttModel.AssignmentModel.PrimaryId)" TaskId="@nameof(GanttModel.AssignmentModel.TaskId)" ResourceID="@nameof(GanttModel.AssignmentModel.ResourceId)" Units="@nameof(GanttModel.AssignmentModel.Unit)" TValue="GanttModel.TaskData" TAssignment="GanttModel.AssignmentModel">
     </GanttAssignmentFields>
     <GanttLabelSettings RightLabel="Resources" TValue="GanttModel.TaskData"></GanttLabelSettings>
     <GanttTaskbarSettings EnableMultiTaskbar="true" AllowTaskbarDragAndDrop="true"></GanttTaskbarSettings>
@@ -651,7 +651,7 @@ Enable taskbar drag-and-drop between resources with [AllowTaskbarDragAndDrop](ht
     protected override void OnInitialized()
     {
         TaskCollection = GanttModel.GetTaskCollection();
-        ResourceCollection = GanttModel.GetResources;
+        ResourceCollection = GanttModel.GetResources();
         AssignmentCollection = GanttModel.GetAssignmentCollection();
     }
 }
@@ -687,7 +687,7 @@ namespace BlazorGanttChart.Data
     public class AssignmentModel
     {
         public int PrimaryId { get; set; }
-        public int TaskID { get; set; }
+        public int TaskId { get; set; }
         public int ResourceId { get; set; }
         public double? Unit { get; set; }
     }
@@ -806,7 +806,7 @@ In the resource view, you can change task resources. If the dialog box's resourc
                      ParentID="@nameof(GanttModel.TaskData.ParentId)" Work="@nameof(GanttModel.TaskData.Work)" TaskType="@nameof(GanttModel.TaskData.TaskType)" Progress="@nameof(GanttModel.TaskData.Progress)">
     </GanttTaskFields>
     <GanttResource DataSource="ResourceCollection" Id="@nameof(GanttModel.ResourceInfoModel.Id)" Name="@nameof(GanttModel.ResourceInfoModel.Name)" MaxUnits="@nameof(GanttModel.ResourceInfoModel.MaxUnit)" TValue="GanttModel.TaskData" TResources="GanttModel.ResourceInfoModel"></GanttResource>
-    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="@nameof(GanttModel.AssignmentModel.PrimaryId)" TaskID="@nameof(GanttModel.AssignmentModel.TaskID)" ResourceID="@nameof(GanttModel.AssignmentModel.ResourceId)" Units="@nameof(GanttModel.AssignmentModel.Unit)" TValue="GanttModel.TaskData" TAssignment="GanttModel.AssignmentModel">
+    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="@nameof(GanttModel.AssignmentModel.PrimaryId)" TaskId="@nameof(GanttModel.AssignmentModel.TaskId)" ResourceID="@nameof(GanttModel.AssignmentModel.ResourceId)" Units="@nameof(GanttModel.AssignmentModel.Unit)" TValue="GanttModel.TaskData" TAssignment="GanttModel.AssignmentModel">
     </GanttAssignmentFields>
     <GanttLabelSettings RightLabel="Resources" TValue="GanttModel.TaskData"></GanttLabelSettings>
     <GanttEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" AllowTaskbarEditing="true"
@@ -832,7 +832,7 @@ In the resource view, you can change task resources. If the dialog box's resourc
     protected override void OnInitialized()
     {
         TaskCollection = GanttModel.GetTaskCollection();
-        ResourceCollection = GanttModel.GetResources;
+        ResourceCollection = GanttModel.GetResources();
         AssignmentCollection = GanttModel.GetAssignmentCollection();
     }
 }
@@ -867,7 +867,7 @@ namespace BlazorGanttChart.Data
     public class AssignmentModel
     {
         public int PrimaryId { get; set; }
-        public int TaskID { get; set; }
+        public int TaskId { get; set; }
         public int ResourceId { get; set; }
         public double? Unit { get; set; }
     }
@@ -952,7 +952,7 @@ These methods offer a convenient way to efficiently manage task resources in you
                      ParentID="@nameof(GanttModel.TaskData.ParentId)" Work="@nameof(GanttModel.TaskData.Work)" TaskType="@nameof(GanttModel.TaskData.TaskType)" Progress="@nameof(GanttModel.TaskData.Progress)">
     </GanttTaskFields>
     <GanttResource DataSource="ResourceCollection" Id="@nameof(GanttModel.ResourceInfoModel.Id)" Name="@nameof(GanttModel.ResourceInfoModel.Name)" MaxUnits="@nameof(GanttModel.ResourceInfoModel.MaxUnit)" TValue="GanttModel.TaskData" TResources="GanttModel.ResourceInfoModel"></GanttResource>
-    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="@nameof(GanttModel.AssignmentModel.PrimaryId)" TaskID="@nameof(GanttModel.AssignmentModel.TaskID)" ResourceID="@nameof(GanttModel.AssignmentModel.ResourceId)" Units="@nameof(GanttModel.AssignmentModel.Unit)" TValue="GanttModel.TaskData" TAssignment="GanttModel.AssignmentModel">
+    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="@nameof(GanttModel.AssignmentModel.PrimaryId)" TaskId="@nameof(GanttModel.AssignmentModel.TaskId)" ResourceID="@nameof(GanttModel.AssignmentModel.ResourceId)" Units="@nameof(GanttModel.AssignmentModel.Unit)" TValue="GanttModel.TaskData" TAssignment="GanttModel.AssignmentModel">
     </GanttAssignmentFields>
     <GanttLabelSettings RightLabel="Resources" TValue="GanttModel.TaskData"></GanttLabelSettings>
     <GanttEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" AllowTaskbarEditing="true"
@@ -978,7 +978,7 @@ These methods offer a convenient way to efficiently manage task resources in you
     protected override void OnInitialized()
     {
         TaskCollection = GanttModel.GetTaskCollection();
-        ResourceCollection = GanttModel.GetResources;
+        ResourceCollection = GanttModel.GetResources();
         AssignmentCollection = GanttModel.GetAssignmentCollection();
     }
 
@@ -1029,7 +1029,7 @@ namespace BlazorGanttChart.Data
     public class AssignmentModel
     {
         public int PrimaryId { get; set; }
-        public int TaskID { get; set; }
+        public int TaskId { get; set; }
         public int ResourceId { get; set; }
         public double? Unit { get; set; }
     }

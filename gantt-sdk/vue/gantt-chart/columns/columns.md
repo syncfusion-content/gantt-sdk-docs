@@ -170,3 +170,24 @@ Gantt Chart columns support the following types:
 
 > If `type` is not defined, it is inferred from the first record of the [dataSource](https://ej2.syncfusion.com/vue/documentation/api/gantt#datasource).  
 > If the first record contains a null or blank value, you must explicitly define the column `type`.
+
+## Serial number column
+
+The **Serial Number** feature automatically generates sequential row numbers for records displayed in the Gantt Chart. To enable this feature, set the [enableSerialNumber](https://ej2.syncfusion.com/vue/documentation/api/gantt#enableserialnumber) property to **true**. Additionally, you need to define a dedicated column in the [columns](https://ej2.syncfusion.com/vue/documentation/api/gantt#columns) configuration with its [field](https://ej2.syncfusion.com/vue/documentation/api/gantt/column#field) property set as **SerialNumber** to display the generated serial numbers. When enabled, serial numbers are assigned based on the current visible row order without requiring a dedicated field in the data source.
+
+Serial numbers are automatically recalculated whenever the visible row sequence changes. This includes operations such as filtering, searching, sorting, expanding or collapsing parent tasks, indenting or outdenting tasks, adding, editing, or deleting records, row drag-and-drop, and data refresh. As a result, the serial number column always reflects the latest row order currently displayed in the Gantt Chart.
+
+The feature works consistently with hierarchical data and updates the numbering across all visible records, ensuring that users can easily identify and reference rows regardless of changes made to the task hierarchy or displayed data set.
+
+The following example demonstrates how to enable the auto-generated Serial Number column in the Gantt Chart:
+
+{% tabs %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
+{% include code-snippet/gantt-sdk/vue/gantt-chart/serialnumber-cs1/app-composition.vue %}
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+{% include code-snippet/gantt-sdk/vue/gantt-chart/serialnumber-cs1/app.vue %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/serialnumber-cs1" %}
