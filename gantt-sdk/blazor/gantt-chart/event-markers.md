@@ -26,6 +26,8 @@ Event markers utilize specific properties to define their positioning, appearanc
 
 **Visual customization**: The `CssClass` property enables custom styling through CSS class applications. This property allows distinctive visual treatment for different marker types, supporting color coding, styling variations, and brand consistency.
 
+**Label positioning support**: The `Top` property enables vertical alignment customization for event marker labels. This property helps prevent label overlap when multiple event markers are rendered on the same date, improving clarity and readability.
+
 ## Event marker configuration
 
 Event markers render as vertical lines positioned at specific dates across the entire Gantt timeline, distinguishing them from data markers which appear within individual task rows. This project-wide visibility ensures critical dates remain prominent regardless of the current view or task focus.
@@ -41,61 +43,100 @@ The following implementation demonstrates event marker integration within a Gant
 
 @using Syncfusion.Blazor.Gantt
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="700px">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
-                     Duration="Duration" Progress="Progress" ParentID="ParentId">
-    </GanttTaskFields>
-    <GanttEventMarkers>
-        <GanttEventMarker Day="@Event" Label="Project approval and kick-off"
-                          CssClass="e-custom-event-marker"></GanttEventMarker>
-    </GanttEventMarkers>
+@using Syncfusion.Blazor.Gantt
+<SfGantt @ref="GanttInstance" DataSource="@TaskCollection" Height="450px" Width="100%" ProjectStartDate="@(new DateTime(2026, 3, 27))" ProjectEndDate="@(new DateTime(2026, 7, 6))" TreeColumnIndex="1" ScrollToTaskbarOnClick="true">
+	<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId" Dependency="Predecessor">
+	</GanttTaskFields>
+	<GanttColumns>
+		<GanttColumn Field="TaskId" HeaderText="Task Id"></GanttColumn>
+		<GanttColumn Field="TaskName" HeaderText="Task Name" ClipMode="Syncfusion.Blazor.Grids.ClipMode.EllipsisWithTooltip"></GanttColumn>
+		<GanttColumn Field="StartDate" HeaderText="Start Date"></GanttColumn>
+		<GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
+		<GanttColumn Field="Duration" HeaderText="Duration"></GanttColumn>
+		<GanttColumn Field="Predecessor" HeaderText="Dependency"></GanttColumn>
+		<GanttColumn Field="Progress" HeaderText="Progress"></GanttColumn>
+	</GanttColumns>
+	<GanttEventMarkers>
+		<GanttEventMarker Day="@ResearchPhaseDate" Label="Research phase" CssClass="e-custom-event-marker"></GanttEventMarker>
+		<GanttEventMarker Day="@ResearchPhaseDate" Label="Demand Analysis" CssClass="e-custom-event-marker" Top="150px"></GanttEventMarker>
+		<GanttEventMarker Day="@DesignPhaseDate" Label="Design phase" CssClass="e-custom-event-marker" Top="150px"></GanttEventMarker>
+		<GanttEventMarker Day="@DesignPhaseDate" Label="Competitor Analysis" CssClass="e-custom-event-marker" Top="300px"></GanttEventMarker>
+	</GanttEventMarkers>
+	<GanttSplitterSettings Position="28%"></GanttSplitterSettings>
+	<GanttLabelSettings LeftLabel="TaskName" TValue="TaskData"></GanttLabelSettings>
 </SfGantt>
 
-@code {
-    private DateTime Event = new DateTime(2026, 04, 03);
-    public List<TaskData>? TaskCollection { get; set; }
-    protected override void OnInitialized()
-    {
-        TaskCollection = GetTaskCollection();
-    }
+@code{
+	internal SfGantt<TaskData>? GanttInstance { get; set; }
+	internal List<TaskData> TaskCollection { get; set; } = new List<TaskData>();
+	public DateTime ResearchPhaseDate { get; set; } = new DateTime(2026, 04, 09);
+	public DateTime DesignPhaseDate { get; set; } = new DateTime(2026, 04, 30);
 
-    public class TaskData
+	/// <summary>
+	/// Initializes the sample by loading task data for the Gantt chart.
+	/// </summary>
+	protected override async Task OnInitializedAsync()
+	{
+		TaskCollection = GetTaskCollection();
+		await Task.CompletedTask.ConfigureAwait(true);
+	}
+    internal sealed class TaskData
     {
         public int TaskId { get; set; }
-        public string? TaskName { get; set; }
+        public int Id { get; set; }
+        public string Text { get; set; } = string.Empty;
+        public string TaskName { get; set; } = string.Empty;
         public DateTime StartDate { get; set; }
-        public DateTime? EndDate { get; set; }
+        public DateTime EndDate { get; set; }
         public string? Duration { get; set; }
         public int Progress { get; set; }
         public int? ParentId { get; set; }
+        public string Predecessor { get; set; } = string.Empty;
+        public int ID { get; set; }
+        public string Value { get; set; } = string.Empty;
     }
-
-    public static List<TaskData> GetTaskCollection()
+    /// <summary>
+    /// Generates and returns a collection of Gantt task data.
+    /// </summary>
+    internal static List<TaskData> GetTaskCollection()
     {
-        List<TaskData> Tasks = new List<TaskData>()
-        {
-            new TaskData() { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2026, 04, 06), EndDate = new DateTime(2026, 04, 09), },
-            new TaskData() { TaskId = 2, TaskName = "Identify Site location", StartDate = new DateTime(2026, 04, 06), Duration = "0", Progress = 30,  ParentId = 1 },
-            new TaskData() { TaskId = 3, TaskName = "Perform soil test", StartDate = new DateTime(2026, 04, 06), EndDate = new DateTime(2026, 04, 09), ParentId = 1 },
-            new TaskData() { TaskId = 4, TaskName = "Soil test approval", StartDate = new DateTime(2026, 04, 06), Duration = "0", Progress = 30, ParentId = 1 },
-            new TaskData() { TaskId = 5, TaskName = "Project estimation", StartDate = new DateTime(2026, 04, 13), EndDate = new DateTime(2026, 04, 21), },
-            new TaskData() { TaskId = 6, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2026, 04, 07), EndDate = new DateTime(2026, 04, 09), Progress = 30,ParentId = 5 },
-            new TaskData() { TaskId = 7, TaskName = "List materials", StartDate = new DateTime(2026, 04, 07), EndDate = new DateTime(2026, 04, 09), ParentId = 5 },
-            new TaskData() { TaskId = 8, TaskName = "Estimation approval", StartDate = new DateTime(2026, 04, 07), Duration = "0", ParentId = 5 }
-        };
+        List<TaskData> Tasks = new List<TaskData>() {
+                new TaskData() { TaskId = 1, TaskName = "Product concept ", StartDate = new DateTime(2026, 04, 02), EndDate = new DateTime(2026, 04, 08), Duration = "5 days" },
+                new TaskData() { TaskId = 2, TaskName = "Defining the product usage", StartDate = new DateTime(2026, 04, 02), EndDate = new DateTime(2026, 04, 08), Duration = "3", Progress = 30, ParentId = 1 },
+                new TaskData() { TaskId = 3, TaskName = "Defining the target audience", StartDate = new DateTime(2026, 04, 02), EndDate = new DateTime(2026, 04, 04), Duration = "3", Progress = 40, ParentId = 1 },
+                new TaskData() { TaskId = 4, TaskName = "Prepare product sketch and notes", StartDate = new DateTime(2026, 04, 05), EndDate = new DateTime(2026, 04, 08), Duration = "2", Progress = 30, ParentId = 1, Predecessor = "2" },
+                new TaskData() { TaskId = 5, TaskName = "Concept approval", StartDate = new DateTime(2026, 04, 08), EndDate = new DateTime(2026, 04, 08), Duration = "0", Predecessor = "3,4" },
+                new TaskData() { TaskId = 6, TaskName = "Market research", StartDate = new DateTime(2026, 04, 09), EndDate = new DateTime(2026, 04, 18), Duration = "4", Progress = 30 },
+                new TaskData() { TaskId = 7, TaskName = "Demand analysis", StartDate = new DateTime(2026, 04, 09), EndDate = new DateTime(2026, 04, 12), Duration = "4", Progress = 40, ParentId = 6 },
+                new TaskData() { TaskId = 8, TaskName = "Customer strength", StartDate = new DateTime(2026, 04, 09), EndDate = new DateTime(2026, 04, 12), Duration = "4", Progress = 30, ParentId = 7, Predecessor = "5" },
+                new TaskData() { TaskId = 9, TaskName = "Market opportunity analysis", StartDate = new DateTime(2026, 04, 09), EndDate = new DateTime(2026, 04, 12), Duration = "4", ParentId = 7, Predecessor = "5" },
+                new TaskData() { TaskId = 10, TaskName = "Competitor analysis", StartDate = new DateTime(2026, 04, 15), EndDate = new DateTime(2026, 04, 18), Duration = "4", Progress = 30, ParentId = 6, Predecessor = "7,8" },
+                new TaskData() { TaskId = 11, TaskName = "Product strength analysis", StartDate = new DateTime(2026, 04, 15), EndDate = new DateTime(2026, 04, 18), Duration = "4", Progress = 40, ParentId = 6, Predecessor = "9" },
+                new TaskData() { TaskId = 12, TaskName = "Research completed", StartDate = new DateTime(2026, 04, 22), EndDate = new DateTime(2026, 04, 22), Duration = "0", Progress = 30, ParentId = 6, Predecessor = "10"},
+                new TaskData() { TaskId = 13, TaskName = "Product design and development", StartDate = new DateTime(2026, 04, 19), EndDate = new DateTime(2026, 05, 16), Duration = "20" },
+                new TaskData() { TaskId = 14, TaskName = "Functionality design", StartDate = new DateTime(2026, 04, 19), EndDate = new DateTime(2026, 04, 23), Duration = "3", Progress = 30, ParentId = 13, Predecessor = "12" },
+                new TaskData() { TaskId = 15, TaskName = "Quality design", StartDate = new DateTime(2026, 04, 19), EndDate = new DateTime(2026, 04, 23), Duration = "3", Progress = 40, ParentId = 13, Predecessor = "12" },
+                new TaskData() { TaskId = 16, TaskName = "Define reliability", StartDate = new DateTime(2026, 04, 24), EndDate = new DateTime(2026, 04, 25), Duration = "2", Progress = 30, ParentId = 13, Predecessor = "15" },
+                new TaskData() { TaskId = 17, TaskName = "Identifying raw materials", StartDate = new DateTime(2026, 04, 24), EndDate = new DateTime(2026, 04, 25), Duration = "2", ParentId = 13, Predecessor = "15" },
+                new TaskData() { TaskId = 18, TaskName = "Define cost plan", StartDate = new DateTime(2026, 04, 26), EndDate = new DateTime(2026, 04, 29), Duration = "2", Progress = 30, ParentId = 13, Predecessor = "17" },
+                new TaskData() { TaskId = 19, TaskName = "Define manufacturing cost", StartDate = new DateTime(2026, 04, 26), EndDate = new DateTime(2026, 04, 29), Duration = "2", Progress = 40, ParentId = 18, Predecessor = "17" },
+                new TaskData() { TaskId = 20, TaskName = "Define selling cost", StartDate = new DateTime(2026, 04, 26), EndDate = new DateTime(2026, 04, 29), Duration = "2", Progress = 30, ParentId = 18, Predecessor = "17" },
+            };
         return Tasks;
     }
 }
+
 <style>
-    .e-gantt .e-gantt-chart .e-custom-event-marker {
-        width: 1px;
-        border-left: 2px red dotted;
-    }
+.e-gantt .e-gantt-chart .e-custom-event-marker {
+    width: 1px;
+    border-left: 2px red dotted;
+}
 </style>
 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://blazorplayground.syncfusion.com/embed/rtBxtchjrBZplHLu?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+N> Multiple event markers may overlap when they are configured without the Top property or when the same Top value is assigned to multiple markers, as they are rendered at the same vertical position.
 
 ## See also
 

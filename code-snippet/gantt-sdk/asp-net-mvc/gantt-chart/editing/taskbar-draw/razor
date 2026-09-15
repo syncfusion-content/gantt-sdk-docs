@@ -1,0 +1,24 @@
+@using Syncfusion.EJ2
+
+<div class="control-section">
+	@(Html.EJS().Gantt("Gantt")
+        .DataSource((IEnumerable<object>)ViewBag.DataSource)
+        .Height("450px")
+        .ProjectStartDate("03/28/2019")
+        .ProjectEndDate("05/18/2019")
+        .TaskFields(tf => tf
+            .Id("TaskId")
+            .Name("TaskName")
+            .StartDate("StartDate")
+            .Duration("Duration")
+            .EndDate("EndDate")
+        )
+        .LabelSettings(ls => ls.LeftLabel("TaskName"))
+        .AllowUnscheduledTasks(true)
+        .EditSettings(es => es
+            .AllowTaskbarEditing(true)
+            .AllowTaskbarDragAndDrop(true)
+        )
+        .Render()
+    )
+</div>

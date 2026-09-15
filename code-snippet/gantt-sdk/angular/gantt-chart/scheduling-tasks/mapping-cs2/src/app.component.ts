@@ -7,7 +7,7 @@ import { editingData } from './data';
     standalone: true,
     selector: 'app-root',
     template:
-       `<ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [splitterSettings] = "splitterSettings"></ejs-gantt>`,
+    `<ejs-gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [splitterSettings] = "splitterSettings" [daysPerWeek]="daysPerWeek" [daysPerMonth]="daysPerMonth"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
 
@@ -15,6 +15,8 @@ export class AppComponent implements OnInit {
     public data?: object[];
     public taskSettings?: object;
     public splitterSettings?: object;
+    public daysPerWeek: number = 5;
+    public daysPerMonth: number = 20;
 
     public ngOnInit(): void {
         this.data = editingData;
