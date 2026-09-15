@@ -1,0 +1,69 @@
+@using Syncfusion.EJ2.Gantt
+
+@(Html.EJS().Gantt("Gantt")
+    .DataSource((IEnumerable<object>)ViewBag.DataSource)
+    .Height("450px")
+    .ProjectStartDate("04/01/2019")
+    .ProjectEndDate("04/30/2019")
+    .TaskFields(ts => ts
+        .Id("TaskId")
+        .Name("TaskName")
+        .StartDate("StartDate")
+        .Duration("Duration")
+        .CalendarId("CalendarId"))
+    .LabelSettings(ls => ls.LeftLabel("TaskName"))
+    .CalendarSettings(cs => cs
+        .ProjectCalendar(pc => pc.WorkingTime(new List<object>
+        {
+            new { from = 9, to = 17 }
+        }))
+        .TaskCalendars(new List<object>
+        {
+            new
+            {
+                calendarId = "day-shift",
+                workingTime = new[]
+                {
+                    new { from = 9, to = 17 }
+                },
+                holidays = new object[] { },
+                exceptions = new[]
+                {
+                    new
+                    {
+                        from = new DateTime(2026, 4, 9),
+                        to = new DateTime(2026, 4, 9),
+                        name = "Team Meeting Day",
+                        isWorking = true,
+                        workingTime = new[]
+                        {
+                            new { from = 10, to = 16 }
+                        }
+                    }
+                }
+            },
+            new
+            {
+                calendarId = "night-shift",
+                workingTime = new[]
+                {
+                    new { from = 17, to = 9 }
+                },
+                holidays = new object[] { },
+                exceptions = new[]
+                {
+                    new
+                    {
+                        from = new DateTime(2026, 4, 10),
+                        to = new DateTime(2026, 4, 10),
+                        name = "Maintenance Window",
+                        isWorking = true,
+                        workingTime = new[]
+                        {
+                            new { from = 18, to = 8 }
+                        }
+                    }
+                }
+            }
+        }))
+    .Render())

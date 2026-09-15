@@ -37,3 +37,20 @@ On taskbar edit action, the [`TaskbarEditing`](https://help.syncfusion.com/cr/as
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/preventTaskbarEditing/preventTaskbarEditing.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+## Enable taskbar drawing
+
+The Gantt Chart control supports creating new tasks by dragging directly on the timeline. This feature is enabled via the `allowTaskbarDraw` property in the [GanttEditSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html) configuration. Taskbar drawing is intended for scheduling unscheduled tasks and requires [AllowUnscheduledTasks](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowUnscheduledTasks) to be enabled.
+
+Dragging across the timeline schedules an unscheduled task by defining its timeline range. The resulting task duration is calculated based on the configured scheduling settings.
+
+The following example demonstrates how to enable taskbar drawing:
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/taskbar-draw/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="taskbar-draw.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/taskbar-draw/taskbar-draw.cs %}
+{% endhighlight %}
+{% endtabs %}

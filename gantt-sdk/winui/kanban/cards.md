@@ -872,7 +872,7 @@ this.kanban.ItemsSource = new ViewModel().TaskDetails;
 
 ### Multi-card drag and drop
 
-When `CardSelectionType` is set to `Multiple`, the entire selection can be dragged and dropped as a single operation. This enables bulk-moving related work items between stages without losing their relative order.
+When [CardSelectionType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.html) is set to [Multiple](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.html), the entire selection can be dragged and dropped as a single operation. This enables bulk-moving related work items between stages without losing their relative order.
 
 The following behaviors are supported for multi-card drag and drop:
 
@@ -884,3 +884,17 @@ The following behaviors are supported for multi-card drag and drop:
 ![multi-card-drag-and-drop-in-winui-kanban](images/cards/multi-card-drag-and-drop-in-winui-kanban.gif)
 
 N> Multi-card drag and drop is enabled only when `CardSelectionType` is set to `Multiple`. All selected cards are moved together in a single drag operation, and the relative order of the selected cards is preserved after the drop. If the drop target violates a `Workflows` restriction for any card in the selection, the entire drag-and-drop operation is canceled.
+
+### Selected card in WinUI Kanban control
+
+When a card is selected in the Kanban control, its appearance can be customized using the predefined theme keys. These theme keys allow you to modify the selected card's background and border colors to match your application's visual style.
+
+#### Selected card theme keys
+
+The following theme keys control the appearance of a selected card:
+
+* `SyncfusionKanbanSelectedCardBackground`
+* `SyncfusionKanbanSelectedCardBorderBrush`
+
+<SolidColorBrush x:Key="SyncfusionKanbanSelectedCardBackground" Color="#F6F6F680" />
+<SolidColorBrush x:Key="SyncfusionKanbanSelectedCardBorderBrush" Color="#005FB8" />
