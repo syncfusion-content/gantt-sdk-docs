@@ -46,7 +46,7 @@ To enhance the performance of the Syncfusion<sup style="font-size:70%">&reg;</su
 
 So to improve the performance of gantt during the initial rendering, suggested you to refer individual script and CSS.
 
-### Performance benchmarks
+## Performance benchmarks
 
 The following tables show typical load times for various Gantt configurations, comparing non-virtualized and virtualized scenarios:
 

@@ -47,7 +47,7 @@ By incorporating `useMemo`, developers can optimize the rendering process, enhan
 
 When integrating image or template elements into a Gantt column, it’s recommended to utilize the [Column Template](https://ej2.syncfusion.com/react/documentation/gantt/columns/column-template) feature instead of customizing data through the [rowDataBound](https://ej2.syncfusion.com/react/documentation/api/gantt#rowdatabound) or [queryCellInfo](https://ej2.syncfusion.com/react/documentation/api/gantt#querycellinfo) events. These events are triggered for each row and cell rendering, which can introduce delays in the component's rendering process. Moreover, rendering custom elements using these events may lead to the persistence of rendered elements, potentially causing longer rendering times over time. By opting for the column template feature, you can efficiently fulfill this requirement without experiencing rendering delays and ensure a more streamlined rendering process.
 
-### Performance benchmarks
+## Performance benchmarks
 
 The following tables show typical load times for various Gantt configurations, comparing non-virtualized and virtualized scenarios:
 
