@@ -166,4 +166,4 @@ To export Gantt data as a Blob object for advanced processing or custom download
 
 ## Limitations
 
-A CSV is a plain text format that does not support features such as cell rotation, font and color customization, column and row spanning, or adding formulas. CSV files store raw data without any formatting or styling.
+CSV export preserves the task data in a simple, portable format that is compatible with a wide range of applications. As CSV files focus on data representation rather than visual formatting, hierarchy indentation available in the Gantt view is not included in the exported file.
