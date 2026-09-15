@@ -12,11 +12,11 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Row Structure and Interactions in ASP.NET MVC Gantt Chart
 
-Row represents a task information from the data source, and it is possible to perform the following actions in Gantt rows.
+A row represents the task information from the data source, and you can perform the following actions in Gantt rows.
 
 ## Row height
 
-It is possible to change the height of the row in Gantt by setting row height in pixels to the [`RowHeight`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_RowHeight) property. The following code example explains how to change the row height in Gantt at load time.
+Change the height of the row in Gantt by setting row height in pixels to the [`RowHeight`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_RowHeight) property. The following code example explains how to change the row height in Gantt at load time.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -50,7 +50,7 @@ All tasks available in Gantt was rendered in collapsed state by setting [`Collap
 
 ### Define expand/collapse status of tasks
 
-In Gantt, we can render some tasks in collapsed state and some tasks in expanded state, this can done by defining expand status of the task in data source. This value was mapped to Gantt control by using [`ExpandState`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_ExpandState) property. The following code example shows how to use this property.
+In Gantt, you can render some tasks in collapsed state and some tasks in expanded state by defining the expand status of the task in the data source. This value is mapped to the Gantt control using the [`ExpandState`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_ExpandState) property. The following code example shows how to use this property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

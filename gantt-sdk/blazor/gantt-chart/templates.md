@@ -19,7 +19,7 @@ The Gantt Chart provides several template options for customization, such as:
 - [Column template](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/column-template) – Used to customize the content of individual cells.
 - [Header template](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_HeaderTemplate) – Used to customize the content of header cells.
 
-## Template Context
+## Template context
 
 Most templates used in the Gantt Chart are of type `RenderFragment<T>` and are passed with parameters. These parameters can be accessed within the template using an implicit parameter named `context`. The name of this implicit parameter can also be customized using the `Context` attribute.
 

@@ -104,7 +104,7 @@ Enable dependency editing by mapping the [dependency](https://ej2.syncfusion.com
 
   ![Updating task dependency in dialog Dependency tab](../images/dialog.png)
 
-- **Cell editing**: Update the dependency field in the TreeGrid. Ensure valid dependency strings to avoid circular references.
+- **Cell editing**: Update the dependency field in the TreeGrid. Ensure valid dependency strings to avoid circular references, invalid task IDs, or malformed syntax.
 
   ![Updating task dependency via cell editing in TreeGrid](../images/cell-edit.png)
 

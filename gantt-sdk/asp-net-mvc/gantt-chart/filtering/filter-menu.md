@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Filter Menu in ASP.NET MVC Gantt Chart | Syncfusion
-description: Learn how to enable filtering in Syncfusion ASP.NET MVC Gantt Chart using menu filters, search, hierarchy modes, and custom options.
+description: Learn how to enable and customize filter menus in the Syncfusion ASP.NET MVC Gantt Chart, including column filtering and custom filter components.
 keywords: asp.net mvc gantt filter menu, menu filtering, filter dropdown, filter options, filter interface, syncfusion gantt chart
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/filtering/filter-menu
 platform: gantt-sdk

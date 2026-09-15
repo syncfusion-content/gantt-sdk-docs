@@ -12,17 +12,17 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Filtering and Search Features in ASP.NET MVC Gantt Chart
 
-Filtering allows you to view specific or related records based on filter criteria. This can be done in the Gantt control by using the filter menu support and toolbar search support. To enable filtering in the Gantt control, set the [`AllowFiltering`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowFiltering.html) to `true`. Menu filtering support can be configured using the [`FilterSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_FilterSettings.html) property and toolbar searching can be configured using the [`SearchSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SearchSettings.html) property.
+Filtering allows you to view specific or related records based on filter criteria. Do this in the Gantt control using the filter menu support and toolbar search support. To enable filtering in the Gantt control, set the [`AllowFiltering`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowFiltering.html) to `true`. Configure menu filtering support using the [`FilterSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_FilterSettings.html) property and toolbar searching using the [`SearchSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SearchSettings.html) property.
 
 ## Filter hierarchy modes
 
 The Gantt supports a set of filtering modes with the [`FilterSettings.HierarchyMode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttFilterSettings.html#Syncfusion_EJ2_Gantt_GanttFilterSettings_HierarchyMode) property. The following are the types of filter hierarchy modes available in the Gantt control:
 
-- `Parent`: This is the default filter hierarchy mode in Gantt. The filtered records are displayed with its parent records. If the filtered records do not have any parent record, then only the filtered records will be displayed.
+- `Parent`: This is the default filter hierarchy mode in Gantt. The filtered records are displayed with their parent records. If the filtered records do not have any parent record, only the filtered records are displayed.
 
-- `Child`: Displays the filtered records with its child record. If the filtered records do not have any child record, then only the filtered records will be displayed.
+- `Child`: Displays the filtered records with their child record. If the filtered records do not have any child record, only the filtered records are displayed.
 
-- `Both`: Displays the filtered records with its both parent and child records. If the filtered records do not have any parent and child records, then only the filtered records will be displayed.
+- `Both`: Displays the filtered records with both their parent and child records. If the filtered records do not have any parent and child records, only the filtered records are displayed.
 
 - `None`: Displays only the filtered records.
 

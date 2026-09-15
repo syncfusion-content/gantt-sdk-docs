@@ -291,7 +291,7 @@ In Hour mode, the top tier shows hours and the bottom tier minutes, perfect for 
 
 ## Customize week start day
 
-In the Gantt chart component, you can customize the week start day using the [GanttTimelineSettings.WeekStartDay](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTimelineSettings.html#Syncfusion_Blazor_Gantt_GanttTimelineSettings_WeekStartDay) property. By default, the `GanttTimelineSettings.WeekStartDay` is set to **0**, which specifies the **Sunday** as a start day of the week. But, you can customize the week start day by using the following code example.
+In the Gantt chart component, you can customize the week start day using the [GanttTimelineSettings.WeekStartDay](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTimelineSettings.html#Syncfusion_Blazor_Gantt_GanttTimelineSettings_WeekStartDay) property. By default, the `GanttTimelineSettings.WeekStartDay` is set to **0**, which specifies the **Sunday** as a start day of the week. Customize the week start day using the following code example.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -452,7 +452,7 @@ In the Gantt Chart component, you can enable or disable the mouse hover tooltip 
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/VtrdNxVrMmqJQQcC?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## Timeline Template
+## Timeline template
 
 In the Gantt component, you can customize timeline cells using the [GanttTooltipSettings.TimelineCellTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTooltipSettings-1.html#Syncfusion_Blazor_Gantt_GanttTooltipSettings_1_TimelineCellTemplate) property, allowing for the customization of HTML content within timeline cells. This feature enhances the visual appeal and enables personalized functionality.
 
@@ -554,6 +554,65 @@ The following code example shows how to customize the top tier to display the we
 {% endtabs %}
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/rNVnDnrBCGeegJHh?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+
+## Timeline Range Control in Blazor Gantt Chart
+
+The timeline range in the Blazor Gantt Chart component can be controlled using the `ViewStartDate` and `ViewEndDate` properties. These properties allow you to display only a specific portion of the timeline without affecting the actual task scheduling.
+
+## Configure timeline range
+
+Use the `ViewStartDate` and `ViewEndDate` properties in [GanttTimelineSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTimelineSettings.html) to define the visible timeline range. Only the timeline cells within the specified date range are rendered, while task scheduling remains unchanged.
+
+The following example demonstrates how to configure a fixed timeline range.
+
+{% tabs %}
+{% highlight razor tabtitle="Home.razor" %}
+
+@using Syncfusion.Blazor.Gantt
+<SfGantt DataSource="@TaskCollection" Height="450px" Width="700px">
+    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
+                     Duration="Duration" Progress="Progress" ParentID="ParentId">
+    </GanttTaskFields>
+    <GanttTimelineSettings ViewStartDate="new DateTime(2026, 04, 01)" ViewEndDate="new DateTime(2026, 04, 20)"></GanttTimelineSettings>
+</SfGantt>
+
+@code {
+    private List<TaskData>? TaskCollection { get; set; }
+    protected override void OnInitialized()
+    {
+        TaskCollection = GetTaskCollection();
+    }
+
+    public class TaskData
+    {
+        public int TaskId { get; set; }
+        public string? TaskName { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime? EndDate { get; set; }
+        public string? Duration { get; set; }
+        public int Progress { get; set; }
+        public int? ParentId { get; set; }
+    }
+
+    public static List<TaskData> GetTaskCollection()
+    {
+        List<TaskData> Tasks = new List<TaskData>()
+        {
+            new TaskData() { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2026, 04, 06), EndDate = new DateTime(2026, 04, 08), },
+            new TaskData() { TaskId = 2, TaskName = "Identify Site location", StartDate = new DateTime(2026, 04, 06), Duration = "0", Progress = 30, ParentId = 1 },
+            new TaskData() { TaskId = 3, TaskName = "Perform soil test", StartDate = new DateTime(2026, 04, 02), EndDate = new DateTime(2026, 04, 06), Progress = 40, ParentId = 1 },
+            new TaskData() { TaskId = 4, TaskName = "Soil test approval", StartDate = new DateTime(2026, 04, 06), Duration = "0", Progress = 30, ParentId = 1 },
+            new TaskData() { TaskId = 5, TaskName = "Project estimation", StartDate = new DateTime(2026, 04, 06), EndDate = new DateTime(2026, 04, 08), },
+            new TaskData() { TaskId = 6, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2026, 04, 06), EndDate = new DateTime(2026, 04, 08), Progress = 30, ParentId = 5 },
+            new TaskData() { TaskId = 7, TaskName = "List materials", StartDate = new DateTime(2026, 04, 06), EndDate = new DateTime(2026, 04, 08), Progress = 40, ParentId = 5 },
+            new TaskData() { TaskId = 8, TaskName = "Estimation approval", StartDate = new DateTime(2026, 04, 06), Duration = "0", Progress = 30, ParentId = 5 }
+        };
+        return Tasks;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ## See also
 - [How to configure taskbars?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/taskbar)

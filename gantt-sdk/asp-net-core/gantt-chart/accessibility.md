@@ -43,8 +43,6 @@ The accessibility compliance for the Gantt component is outlined below.
 
 The Gantt component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/) patterns to meet the accessibility. The following ARIA attributes are used in the Gantt component:
 
-The following ARIA attributes are used in Gantt:
-
 | Attributes | Purpose |
 | --- | --- |
 | `grid (role)` | This attribute is added to the `e-table` element present in the Gantt, which represents Grid part |

@@ -13,7 +13,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 ## Taskbar template
 
-You can design your taskbars to view the tasks in Gantt Chart by using [GanttTemplates.TaskbarTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTemplates-1.html#Syncfusion_Blazor_Gantt_GanttTemplates_1_TaskbarTemplate) property. It is also possible to customize the parent taskbars and milestones with custom templates by using [GanttTemplates.ParentTaskbarTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTemplates-1.html#Syncfusion_Blazor_Gantt_GanttTemplates_1_ParentTaskbarTemplate) and [GanttTemplates.MilestoneTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTemplates-1.html#Syncfusion_Blazor_Gantt_GanttTemplates_1_MilestoneTemplate) properties.
+You can design your taskbars to view the tasks in Gantt Chart using the [GanttTemplates.TaskbarTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTemplates-1.html#Syncfusion_Blazor_Gantt_GanttTemplates_1_TaskbarTemplate) property. You can also customize the parent taskbars and milestones with custom templates using the [GanttTemplates.ParentTaskbarTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTemplates-1.html#Syncfusion_Blazor_Gantt_GanttTemplates_1_ParentTaskbarTemplate) and [GanttTemplates.MilestoneTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTemplates-1.html#Syncfusion_Blazor_Gantt_GanttTemplates_1_MilestoneTemplate) properties.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -189,7 +189,7 @@ You can design your taskbars to view the tasks in Gantt Chart by using [GanttTem
 
 ### Taskbar height
 
-Height of child taskbars and parent taskbars can be customized by using [TaskbarHeight](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_TaskbarHeight) property. The following code example shows how to use the property.
+The height of child taskbars and parent taskbars can be customized using the [TaskbarHeight](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_TaskbarHeight) property. The following code example shows how to use the property.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt

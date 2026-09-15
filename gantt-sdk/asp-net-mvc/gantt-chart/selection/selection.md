@@ -12,16 +12,16 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Enabling and Configuring Selection Behavior in ASP.NET MVC Gantt Chart
 
-Selection provides an option to highlight a row or a cell. It can be done using arrow keys or by scrolling down the mouse. To disable selection in the Gantt control, set the [`AllowSelection`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowSelection.html) to false.
+Selection provides an option to highlight a row or a cell. Do this using arrow keys or by scrolling down the mouse. To disable selection in the Gantt control, set the [`AllowSelection`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowSelection.html) to false.
 
-The Gantt control supports two types of selection that can be set by using the [`SelectionSettings.Type`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttSelectionSettings.html#Syncfusion_EJ2_Gantt_GanttSelectionSettings_Type) property. They are:
+The Gantt control supports two types of selection that can be set using the [`SelectionSettings.Type`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttSelectionSettings.html#Syncfusion_EJ2_Gantt_GanttSelectionSettings_Type) property. They are:
 
 - `Single`: Sets a single value by default and allows only selection of a single row or a cell.
 - `Multiple`: Allows you to select multiple rows or cells. To perform the multi-selection, press and hold the CTRL key and click the desired rows or cells.
 
 ## Selection mode
 
-The Gantt control supports three types of selection modes that can be set by using the [`SelectionSettings.Mode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttSelectionSettings.html#Syncfusion_EJ2_Gantt_GanttSelectionSettings_Mode). They are:
+The Gantt control supports three types of selection modes that can be set using the [`SelectionSettings.Mode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttSelectionSettings.html#Syncfusion_EJ2_Gantt_GanttSelectionSettings_Mode). They are:
 
 - `Row`: Allows you to select only rows, and the row value is set by default.
 - `Cell`: Allows you to select only cells.
@@ -46,6 +46,29 @@ The toggle selection allows you to select and deselect a specific row or cell. T
 {% endhighlight %}
 {% highlight c# tabtitle="Toggleselection.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/selection/toggleselection/toggleselection.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+## Hierarchy checkbox selection
+
+The hierarchy checkbox selection feature allows you to select or deselect parent and child records through checkboxes. To enable this, set the [hierarchyCheckboxMode](https://ej2.syncfusion.com/documentation/api/gantt#hierarchycheckboxmode) property, and define a dedicated column with the field name **CheckBox** in the [columns](https://ej2.syncfusion.com/documentation/api/gantt#columns) configuration.
+
+### Hierarchy Checkbox Mode
+
+The [hierarchyCheckboxMode](https://ej2.syncfusion.com/documentation/api/gantt#hierarchycheckboxmode) property allows you to configure how checkbox selection is propagated across parent and child task records using different hierarchy modes. The following modes are supported:
+
+- **Self:** Selecting a record's checkbox selects only that record. Even if the record is a parent or a child, its selection state does not affect any other records in the hierarchy.
+- **Hierarchy:** Selecting a record's checkbox selects all its descendant and parent records. For example, when you select a parent record, all of its child records are selected, and when you select a child record, its parent record reflects the selection state accordingly. This is the default behavior of the [hierarchyCheckboxMode](https://ej2.syncfusion.com/documentation/api/gantt#hierarchycheckboxmode) property.
+- **FilteredHierarchy:** The behavior is similar to **Hierarchy** mode, but checkbox propagation is applied only to the records that are currently visible after filtering or searching. Records that are hidden by the filter remain unaffected by the selection.
+
+The following example demonstrates how to enable checkbox-based row selection with the **Hierarchy** mode:
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/selection/hierarchyCheckboxMode/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="HierarchyCheckboxMode.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/selection/hierarchyCheckboxMode/hierarchyCheckboxMode.cs %}
 {% endhighlight %}
 {% endtabs %}
 

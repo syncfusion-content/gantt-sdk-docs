@@ -17,11 +17,13 @@ Task scheduling in the [React Gantt Chart](https://www.syncfusion.com/react-comp
 ## Configure scheduling modes
 
 Scheduling modes control task date validation:
+
 - **Auto** (default): Validates dates based on dependencies, working time, holidays, and weekends. Parent tasks adjust to child tasks' minimum start and maximum end dates.
 - **Manual**: Allows custom dates without automatic validation, editable for parent tasks.
 - **Custom**: Renders both auto and manual tasks from the data source.
 
 Configure using:
+
 - [taskMode](https://ej2.syncfusion.com/react/documentation/api/gantt#taskmode): Sets global mode.
 - [taskFields.manual](https://ej2.syncfusion.com/react/documentation/api/gantt/taskFields#manual): Sets per-task mode.
 
@@ -40,7 +42,7 @@ The following example configures auto scheduling:
 {% include code-snippet/gantt-sdk/react/gantt-chart/task-scheduling-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/task-scheduling-cs1" %}
 
 ### Manually scheduled Tasks
@@ -58,7 +60,7 @@ The following example configures manual scheduling:
 {% include code-snippet/gantt-sdk/react/gantt-chart/task-scheduling-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/task-scheduling-cs2" %}
 
 ### Custom scheduled
@@ -76,7 +78,7 @@ The following example mixes auto and manual tasks:
 {% include code-snippet/gantt-sdk/react/gantt-chart/task-scheduling-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/task-scheduling-cs3" %}
 
 ## Configure task types
@@ -88,6 +90,7 @@ Task types define how changes to duration, work, or resource units affect other 
 - **FixedDuration**: Adjusts units when work changes, maintaining duration.
 
 Configure using:
+
 - [taskType](https://ej2.syncfusion.com/react/documentation/api/gantt#tasktype): Sets global type.
 - [taskFields.type](https://ej2.syncfusion.com/react/documentation/api/gantt/taskFields#type): Sets per-task type.
 
@@ -104,19 +107,23 @@ The following example configures task types:
 {% include code-snippet/gantt-sdk/react/gantt-chart/tasktype-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/tasktype-cs1" %}
 
 ## Configure duration units
 
-Duration units determine how task length is measured and calculated within the project. The Gantt Chart component supports three duration units that can be applied at both project and individual task levels.
+Duration units define how task duration values are interpreted and calculated in the Gantt Chart. Duration units can be configured globally for the entire project or individually for each task.
 
 The Gantt Chart component supports the following duration units:
+
 - **Day**: Standard for general planning.
 - **Hour**: For detailed task management.
 - **Minute**: For short-duration tasks.
+- **Week**: Represents a duration calculated using the configured [daysPerWeek](https://ej2.syncfusion.com/react/documentation/api/gantt#daysperweek) value.
+- **Month**: Represents a duration calculated using the configured [daysPerMonth](https://ej2.syncfusion.com/react/documentation/api/gantt#dayspermonth) value.
 
 Configure using:
+
 - [durationUnit](https://ej2.syncfusion.com/react/documentation/api/gantt#durationunit): Sets global unit (default: `day`).
 - [taskFields.durationUnit](https://ej2.syncfusion.com/react/documentation/api/gantt/taskFields#durationunit): Maps per-task units.
 - Duration field values: Includes units directly (e.g., "5 minutes").
@@ -134,7 +141,7 @@ The following example maps duration units:
 {% include code-snippet/gantt-sdk/react/gantt-chart/durationunit-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/durationunit-cs3" %}
 
 **Defining duration unit with duration value:**
@@ -152,8 +159,30 @@ The following example defines units in duration values:
 {% include code-snippet/gantt-sdk/react/gantt-chart/durationunit-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/durationunit-cs5" %}
+
+### Configure days per week and month
+
+The `daysPerWeek` property specifies how many working days constitute one week, directly impacting how week-based durations are calculated. For example, if `daysPerWeek` is 5, then 1 week equals 5 working days.
+
+Similarly, the `daysPerMonth` property specifies how many working days constitute one month, affecting how month-based durations are converted to actual working days for scheduling calculations. For example, if `daysPerMonth` is 20, then 1 month equals 20 working days.
+
+The following example configures `daysPerWeek` and `daysPerMonth` properties:
+
+{% tabs %}
+{% highlight js tabtitle="index.jsx" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/durationunit-cs2/app/index.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="index.tsx" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/durationunit-cs2/app/index.tsx %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/durationunit-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/durationunit-cs2" %}
 
 ## Enable unscheduled tasks
 
@@ -163,27 +192,27 @@ Available unscheduled task types:
 
 - **Start date only**
 
-    Tasks with only a start date defined, allowing for open-ended planning.
+  Tasks with only a start date defined, allowing for open-ended planning.
 
-    ![Start date only task](images/startDate-only.png)
+  ![Start date only task](images/startDate-only.png)
 
-- **End date only** 
+- **End date only**
 
-    Tasks with only an end date defined, useful for deadline-driven activities.
+  Tasks with only an end date defined, useful for deadline-driven activities.
 
-    ![End date only task](images/endDate-only.png)
+  ![End date only task](images/endDate-only.png)
 
 - **Duration only**
 
-    Tasks with only duration specified, providing flexibility in scheduling timing.
+  Tasks with only duration specified, providing flexibility in scheduling timing.
 
-    ![Duration only task](images/duration-only.png)
+  ![Duration only task](images/duration-only.png)
 
 - **Milestone**
 
-    Special tasks with zero duration representing key project events or deliverables.
+  Special tasks with zero duration representing key project events or deliverables.
 
-    ![Milestone task](images/milestone.png)
+  ![Milestone task](images/milestone.png)
 
 The following example enables unscheduled tasks:
 
@@ -198,7 +227,7 @@ The following example enables unscheduled tasks:
 {% include code-snippet/gantt-sdk/react/gantt-chart/unscheduledtask-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/unscheduledtask-cs1" %}
 
 ### Convert to milestone using method
@@ -216,7 +245,7 @@ You can convert a task into a milestone using the [ConvertToMilestone](https://e
 {% include code-snippet/gantt-sdk/react/gantt-chart/unscheduledtasks-method-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/unscheduledtasks-method-cs1" %}
 
 ## Configure working time range
@@ -236,7 +265,7 @@ The following example sets working hours from 9 AM to 6 PM:
 {% include code-snippet/gantt-sdk/react/gantt-chart/workingTimeRange-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-   
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/workingTimeRange-cs1" %}
 
 Non-working days represent periods when project work cannot be performed, such as weekends, holidays, or planned maintenance periods. These settings ensure realistic project scheduling by excluding non-productive time from calculations.
@@ -258,12 +287,13 @@ The following example excludes Monday and Tuesday:
 {% include code-snippet/gantt-sdk/react/gantt-chart/how-to-changeworkweek-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/how-to-changeworkweek-cs1" %}
 
 ### Weekend configuration
 
 Configure weekends with:
+
 - Default behavior: Saturday and Sunday are non-working.
 - Timeline display: [timelineSettings.showWeekend](https://ej2.syncfusion.com/react/documentation/api/gantt/timelineSettings#showweekend) controls visibility.
 - Working weekends: [includeWeekend](https://ej2.syncfusion.com/react/documentation/api/gantt#includeweekend) set to **true** includes weekends.
@@ -271,6 +301,7 @@ Configure weekends with:
 ## Customize scheduling with events
 
 Customize scheduling with:
+
 - [dataBound](https://ej2.syncfusion.com/react/documentation/gantt/events#databound): Adjusts task scheduling after data binding, e.g., switching auto-scheduled tasks to manual mode if their start date precedes the project start date.
 
 The following example uses `dataBound` to switch auto-scheduled tasks to manual mode if their start date is before the project start date (04/01/2025):
@@ -286,7 +317,7 @@ The following example uses `dataBound` to switch auto-scheduled tasks to manual 
 {% include code-snippet/gantt-sdk/react/gantt-chart/scheduling-customization-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/scheduling-customization-cs1" %}
 
 ## See also

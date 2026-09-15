@@ -12,17 +12,17 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Scrolling behavior in ASP.NET MVC Gantt Chart
 
-The scrollbar will be displayed in the gantt when content exceeds the element [`width`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Width) or [`height`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Height). The vertical and horizontal scrollbars will be displayed based on the following criteria:
+The scrollbar is displayed in the gantt when content exceeds the element [`width`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Width) or [`height`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Height). The vertical and horizontal scrollbars appear based on the following criteria:
 
 - The vertical scrollbar appears when the total height of rows present in the gantt exceeds its element height.
 - The horizontal scrollbar appears when the sum of columns width exceeds the grid pane size.
-- The [`height`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Height) and [`width`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Width) are used to set the gantt height and width, respectively.
+- The [`height`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Height) and [`width`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Width) set the gantt height and width, respectively.
 
 N> The default value for [`height`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Height) and [`width`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Width) is `auto`.
 
 ## Set width and height
 
-To specify the [`width`](../api/gantt#width) and [`height`](../api/gantt#height) of the scroller in the pixel, set the pixel value to a number.
+To specify the [`width`](../api/gantt#width) and [`height`](../api/gantt#height) of the scroller in pixels, set the pixel value to a number.
 
 The following code example shows how to set height and width in the Gantt control:
 

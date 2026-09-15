@@ -563,7 +563,7 @@ export class AppComponent implements OnInit {
 
 ## Render a component in the template property using event
 
-You can render a component inside a Gantt chart cell by setting the `template` property and using the [queryCellInfo](https://helpej2.syncfusion.com/angular/documentation/gantt/events#querycellinfo) event to display it before the cell is rendered.
+You can render a component inside a Gantt chart cell by setting the `template` property and using the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querycellinfo) event to display it before the cell is rendered.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -579,4 +579,4 @@ You can render a component inside a Gantt chart cell by setting the `template` p
   
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/render-template-cs6" %}
 
-> When using an Angular `ng-template` in a Gantt Chart column, the template may be evaluated multiple times during Angular change detection. This is Angular's default behavior and is not specific to the Gantt Chart component. To optimize performance, avoid complex logic or expensive operations inside templates. Instead, precompute values in the component class and keep template logic simple.
+> When using an Angular `ng-template` in a Gantt Chart column, the template may be evaluated multiple times during Angular change detection. This is Angular's default behavior and is not specific to the Gantt Chart component. To optimize performance, avoid complex logic or expensive operations inside templates. Instead, pre compute values in the component class and keep template logic simple.

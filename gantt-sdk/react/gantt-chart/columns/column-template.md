@@ -322,7 +322,7 @@ The following example demonstrates how to use a custom helper function inside th
 
 ## Render a component in the template property using event
 
-You can render a component inside a Gantt chart cell by setting the `template` property and using the [queryCellInfo](https://helpej2.syncfusion.com/react/documentation/gantt/events#querycellinfo) event to display it before the cell is rendered.
+You can render a component inside a Gantt chart cell by setting the `template` property and using the [queryCellInfo](https://ej2.syncfusion.com/react/documentation/gantt/events#querycellinfo) event to display it before the cell is rendered.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}

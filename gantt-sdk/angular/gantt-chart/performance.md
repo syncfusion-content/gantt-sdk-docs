@@ -64,30 +64,30 @@ The following tables show typical load times for various Gantt configurations, c
 
 **Test environment**
 
-- Component Version: Syncfusion Angular Gantt 33.1.44
-- Angular Version: 20.1.0
-- Browser: Edge 138
+- Component Version: Syncfusion Angular Gantt 35.1.27
+- Angular Version: 21.2.9
+- Browser: Edge 152
 - Operating System: Windows 11
-- CPU: 12th Gen Intel® Core™ i5-1235U
+- CPU: 11th Gen Intel® Core™ i5-1135G7 @ 2.40GHz
 - RAM: 16GB
 
 **Non-virtualized scenario (2,500 tasks)**
 
 | Scenario                        | Load time (seconds) |
 |---------------------------------|---------------------|
-| Default hierarchy (Parent-Child) | 3.8                 |
-| + Predecessor                   | 5.4                 |
-| + Resources                     | 6.5                 |
-| + Split taskbars                | 7.8                 |
+| Default hierarchy (Parent-Child) | 4.5                 |
+| + Predecessor                   | 6.7                 |
+| + Resources                     | 7.5                 |
+| + Split taskbars                | 6.8                 |
 
 **Virtualized scenario (25,000 tasks)**
 
 | Scenario                        | Load time (seconds) |
 |---------------------------------|---------------------|
-| Default hierarchy (Parent-Child) | 2.1                 |
-| + Predecessor                   | 5.6                 |
-| + Resources                     | 6.2                 |
-| + Split taskbars                | 6.8                 |
+| Default hierarchy (Parent-Child) | 3.9                 |
+| + Predecessor                   | 5.9                 |
+| + Resources                     | 6.5                 |
+| + Split taskbars                | 10.6                |
 
 ## Optimizing server-side data operations with adaptors
 
@@ -98,7 +98,7 @@ During data operations like filtering and sorting, corresponding action queries 
 * Sorting
 * Aggregates
 
-## Avoiding MaxJsonLength errors with large datasets
+## Avoiding maxJsonLength errors with large datasets
 
 The Angular Gantt Chart component operates on a client-server basis, sending data as JSON objects. Large JSON object serialization can cause MaxJsonLength errors. Resolve this by increasing the maximum length for JSON serialization in your web.config file or at the deserialization point.
 

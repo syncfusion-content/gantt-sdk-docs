@@ -14,15 +14,15 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 ## Splitting task at load time
 
-To split task at load time, we can define segment details in both hierarchical and self-referential way. Refer below link for more details.
+To split a task at load time, define segment details in both hierarchical and self-referential ways. Refer below link for more details.
 
 - [Split task at load time](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/data-binding#split-task)
 
 ## Split task dynamically
 
-The task can be split dynamically, either by using the context menu or dialog.
+The task can be split dynamically, either using the context menu or dialog.
 
-- `Dialog`: `Segments` tab is rendered in add/edit dialog, when the [`TaskFields.Segments`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) or [`TaskFields.segmentId`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) property is mapped. Using this tab, we can split the task based on the original start and end date of a particular task.
+- `Dialog`: `Segments` tab is rendered in add/edit dialog when the [`TaskFields.Segments`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) or [`TaskFields.segmentId`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) property is mapped. Using this tab, split the task based on the original start and end date of a particular task.
 
 - `Context menu`: When the [`TaskFields.Segments`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) or [`TaskFields.SegmentId`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) property is mapped and the [`EnableContextMenu`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableContextMenu) property is enabled, `Split Task` item will be included in the context menu.
 
@@ -45,10 +45,10 @@ The task can be split dynamically, either by using the context menu or dialog.
 
 ## Merge tasks
 
-The split tasks can be merged either by using the `Merge Task` item of the Context menu or by using the dialog. We can also merge the tasks, by simply dragging the segments together in the UI.
+The split tasks can be merged either using the `Merge Task` item of the Context menu or using the dialog. Merge the tasks by dragging the segments together in the UI.
 
 ## Limitations of Split tasks
 
 1. Parent and milestone tasks cannot be split into segments.
-2. The task must have a width greater than the timeline unit cell in order to be split.
+2. The task must have a width greater than the timeline unit cell to be split.
 3. Split task is not supported with `Multi taskbar`.

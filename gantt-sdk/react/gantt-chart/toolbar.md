@@ -14,7 +14,27 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component includes built-in toolbar support for executing common actions such as editing, searching, and navigating the timeline. The [toolbar](https://ej2.syncfusion.com/react/documentation/api/gantt#toolbar) property accepts the collection of built-in toolbar items and `ItemModel` objects for custom toolbar items.
 
-To enable toolbar functionality, inject the `Toolbar` in the `service` array.
+## Enable the toolbar service
+
+To enable toolbar functionality, inject the `Toolbar` service in the `providers` array of the Gantt Component:
+
+```typescript
+import { GanttComponent, Inject, Toolbar, Edit } from '@syncfusion/ej2-react-gantt';
+
+export default function App() {
+  return (
+    <GanttComponent
+      dataSource={taskData}
+      taskFields={taskFields}
+      toolbar={['Add', 'Edit', 'Delete', 'Search']}
+    >
+      <Inject services={[Toolbar, Edit]} />
+    </GanttComponent>
+  );
+}
+```
+
+Without injecting the `Toolbar` service, the toolbar will not render even if the `toolbar` property is configured.
 
 ## Built-in toolbar items
 
@@ -53,11 +73,11 @@ The following table shows built-in toolbar items and its actions.
 
 > * The [toolbar](https://ej2.syncfusion.com/react/documentation/api/gantt#toolbar) has options to define both built-in and custom toolbar items.
 
-### Customize the built-in toolbar items
+### Customizing built-in toolbar items
 
 You can modify built-in toolbar actions using the [toolbarClick](https://ej2.syncfusion.com/react/documentation/api/gantt#toolbarclick) event. The following example disables the default functionality of the **Add** button, allowing you to override its behavior and display a custom message when it's clicked.
 
-You can check this video to learn about how to use custom toolbar in Gantt.
+Watch the following video to learn how to customize toolbar items in Gantt:
 
 {% youtube "https://www.youtube.com/watch?v=llhPqZOsLdY&t=123s" %}
 
@@ -126,7 +146,7 @@ You can customize the appearance of toolbar buttons in the Gantt Chart component
         
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/customtoolbar-cs3" %}
 
-## Add toolbar at the bottom of gantt
+## Add toolbar at the bottom of Gantt
 
 To reposition the toolbar to the bottom of the Gantt chart, use the [created](https://ej2.syncfusion.com/react/documentation/gantt/events#created) event to manipulate the DOM. In this event, select the toolbar element and append it to the Gantt container using DOM manipulation. This moves the toolbar to the bottom of the layout.
 
@@ -202,7 +222,7 @@ You can control toolbar items dynamically using the [enableItems](https://ej2.sy
         
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/enabledisableToolbar-cs1" %}
 
-## Add input elements in Toolbar
+## Add input elements in toolbar
 
 You can enhance the Gantt toolbar component by adding editor elements such as numeric text boxes, drop-down lists, and date pickers. These input controls improve user interaction by enabling filtering, searching, and other dynamic actions.
 

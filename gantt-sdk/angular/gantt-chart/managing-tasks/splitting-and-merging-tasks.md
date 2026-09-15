@@ -60,7 +60,7 @@ You can get the clicked segment information using the [onTaskbarClick](https://e
 ## Limitations of Split tasks
 
 1. Parent and milestone tasks cannot be split into segments.
-2. The task must have a width greater than the timeline unit cell in order to be split.
+2. The task must have a width greater than the timeline unit cell to be split.
 3. Split task is not supported with `Multi taskbar`.
 
 ## See also
