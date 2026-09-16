@@ -71,7 +71,7 @@ The following example demonstrates setting the `FrozenColumns` value to 2, which
 
 ## Freeze particular column
 
-To freeze a specific column in the Gantt Chart, set the [IsFrozen](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_IsFrozen) property to **true** on the corresponding [GanttColumn](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html) component.
+To freeze a specific column in the Blazor Gantt Chart, set the [IsFrozen](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_IsFrozen) property to **true** on the corresponding [GanttColumn](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html) component.
 
 The following example demonstrates that the **TaskID** and **TaskName** columns are frozen.
 
@@ -206,7 +206,7 @@ The following example demonstrates that the **TaskID** column is frozen on the l
 
 ## Add or remove frozen columns by dragging the column separator
 
-Frozen columns can be added or removed by dragging the column separator in the Gantt Chart.This separator is a draggable vertical line that separates frozen columns from non-frozen ones.
+Frozen columns can be added or removed by dragging the column separator in the Blazor Gantt Chart.This separator is a draggable vertical line that separates frozen columns from non-frozen ones.
 
 To enable this feature, set the [AllowFreezeLineMoving](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowFreezeLineMoving) property to **true**.  If no columns are configured as frozen, the separator appears at both the left and right edges of the grid.
 
@@ -271,7 +271,7 @@ To enable this feature, set the [AllowFreezeLineMoving](https://help.syncfusion.
 
 ## Change default frozen line color
   
-You can customize the color of the default frozen line in the Gantt Chart by applying custom CSS styles.
+You can customize the color of the default frozen line in the Blazor Gantt Chart by applying custom CSS styles.
 
 The following example demonstrates how to change the frozen line color to blue.
 
@@ -340,4 +340,4 @@ The following example demonstrates how to change the frozen line color to blue.
 
 - The [Freeze](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_Freeze) and [FrozenColumns](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_FrozenColumns) properties cannot be used together as they are incompatible.
 
-- The Gantt Chart does not support Right-to-Left (RTL) mode when using frozen columns.
+- The Blazor Gantt Chart does not support Right-to-Left (RTL) mode when using frozen columns.
