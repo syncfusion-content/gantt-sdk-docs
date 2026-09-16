@@ -8,7 +8,7 @@ platform: gantt-sdk
 control: PDF Export - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
----
+--- 
 
 # Export Gantt Chart to PDF in Blazor
 
@@ -17,7 +17,7 @@ PDF export in the Blazor Gantt Chart component enables exporting project data to
 
 ## Export basic Gantt data
 
-Export Gantt data to PDF by setting [AllowPdfExport](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowPdfExport) to**true** and calling [ExportToPdfAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ExportToPdfAsync_Syncfusion_Blazor_Gantt_GanttPdfExportProperties_), which generates a document with the chart and tree-grid data.
+Export Gantt data to PDF by setting [AllowPdfExport](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowPdfExport) to **true** and calling [ExportToPdfAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ExportToPdfAsync_Syncfusion_Blazor_Gantt_GanttPdfExportProperties_), which generates a document with the chart and tree-grid data.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -26,8 +26,13 @@ Export Gantt data to PDF by setting [AllowPdfExport](https://help.syncfusion.com
 @using Syncfusion.Blazor.Navigations
 
 <SfGantt @ref="Gantt" ID="GanttExport" DataSource="@TaskCollection" Height="450px" Width="900px" AllowPdfExport="true" Toolbar="toolbarItem">
-    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
-                     Duration="Duration" Progress="Progress" ParentID="ParentId">
+    <GanttTaskFields Id="TaskId" 
+                     Name="TaskName" 
+                     StartDate="StartDate" 
+                     EndDate="EndDate"
+                     Duration="Duration" 
+                     Progress="Progress" 
+                     ParentID="ParentId">
     </GanttTaskFields>
     <GanttEvents OnToolbarClick="ToolbarClickHandler" TValue="TaskData"></GanttEvents>
 </SfGantt>
@@ -81,6 +86,100 @@ Export Gantt data to PDF by setting [AllowPdfExport](https://help.syncfusion.com
 {% endtabs %}
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/BjVnjxWxUvLyVuIn?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+
+## Export Gantt Chart to a PDF MemoryStream
+
+The Blazor Gantt Chart supports exporting PDF documents directly to a `MemoryStream` using the [ExportToPdfStreamAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html) method. Instead of automatically downloading the exported PDF document, the generated content is returned as a `MemoryStream` that can be stored, transmitted, or processed programmatically.
+
+This feature is useful when the exported PDF document must be stored in a database, uploaded to cloud storage, sent as an email attachment, returned through a web API, or processed further before delivery.
+
+The following example demonstrates how to export the Gantt Chart as a PDF memory stream.
+
+{% tabs %}
+{% highlight razor tabtitle="Home.razor" %}
+
+@using Syncfusion.Blazor.Gantt
+@using Syncfusion.Blazor.Navigations
+
+<SfGantt @ref="GanttInstance"
+         DataSource="@TaskCollection"
+         Height="450px"
+         AllowPdfExport="true"
+         Toolbar="ToolbarItems">
+
+    <GanttEvents TValue="TaskData"
+                 OnToolbarClick="ToolbarClickHandler">
+    </GanttEvents>
+
+    <GanttTaskFields Id="TaskId"
+                     Name="TaskName"
+                     StartDate="StartDate"
+                     EndDate="EndDate"
+                     Duration="Duration"
+                     Progress="Progress"
+                     ParentID="ParentId">
+    </GanttTaskFields>
+
+</SfGantt>
+
+@code {
+
+    private SfGantt<TaskData>? GanttInstance;
+
+    public List<TaskData> TaskCollection { get; set; } = new();
+
+    private List<object> ToolbarItems = new()
+    {
+        new ItemModel() { Text = "PDF Stream", Id = "PdfStream" }
+    };
+
+    protected override void OnInitialized()
+    {
+        TaskCollection = GetTaskCollection();
+    }
+
+    private async Task ToolbarClickHandler(ClickEventArgs args)
+    {
+        if (args.Item.Id == "PdfStream" && GanttInstance != null)
+        {
+            GanttPdfExportProperties exportProperties = new()
+            {
+                FileName = "GanttExport.pdf"
+            };
+            MemoryStream pdfStream = await GanttInstance.ExportToPdfStreamAsync( exportProperties, enableMultiPage: true);
+
+        }
+    }
+
+    public class TaskData
+    {
+        public int TaskId { get; set; }
+        public string? TaskName { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime? EndDate { get; set; }
+        public string? Duration { get; set; }
+        public int Progress { get; set; }
+        public int? ParentId { get; set; }
+    }
+
+    public static List<TaskData> GetTaskCollection()
+    {
+        return new List<TaskData>()
+        {
+            new TaskData() { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2026, 01, 05), EndDate = new DateTime(2026, 01, 08) },
+            new TaskData() { TaskId = 2, TaskName = "Identify Site location", StartDate = new DateTime(2026, 01, 05), Duration = "0", Progress = 30, ParentId = 1 },
+            new TaskData() { TaskId = 3, TaskName = "Perform soil test", StartDate = new DateTime(2026, 01, 05), EndDate = new DateTime(2026, 01, 08), Progress = 40, ParentId = 1 },
+            new TaskData() { TaskId = 4, TaskName = "Soil test approval", StartDate = new DateTime(2026, 01, 05), Duration = "0", Progress = 30, ParentId = 1 },
+            new TaskData() { TaskId = 5, TaskName = "Project estimation", StartDate = new DateTime(2026, 01, 05), EndDate = new DateTime(2026, 01, 10) },
+            new TaskData() { TaskId = 6, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2026, 01, 07), EndDate = new DateTime(2026, 01, 09), Progress = 30, ParentId = 5 },
+            new TaskData() { TaskId = 7, TaskName = "List materials", StartDate = new DateTime(2026, 01, 07), EndDate = new DateTime(2026, 01, 09), Progress = 40, ParentId = 5 },
+            new TaskData() { TaskId = 8, TaskName = "Estimation approval", StartDate = new DateTime(2026, 01, 07), Duration = "0", Progress = 30, ParentId = 5 }
+        };
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Events triggered during exporting
 
