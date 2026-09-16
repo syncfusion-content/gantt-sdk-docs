@@ -114,9 +114,9 @@ Add the Blazor Gantt Chart component in the **~/Pages/Index.razor** file.
 {% endhighlight %}
 {% endtabs %}
 
-## Binding Gantt Chart with Data
+## Binding Blazor Gantt Chart with Data
 
-Bind data with the Gantt Chart component by using the `DataSource` property. It accepts an list objects or the DataManager instance.
+Bind data with the Blazor Gantt Chart component by using the `DataSource` property. It accepts an list objects or the DataManager instance.
 
 {% tabs %}
 {% highlight razor %}
@@ -159,7 +159,7 @@ public static List<TaskData> GetTaskCollection()
 
 ## Mapping Task Fields
 
-The data source fields that are required to render the tasks are mapped to the Gantt Chart component using the [GanttTaskFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html?_ga=2.236537025.1141213009.1642998031-1223836246.1561029397) property.
+The data source fields that are required to render the tasks are mapped to the Blazor Gantt Chart component using the [GanttTaskFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html?_ga=2.236537025.1141213009.1642998031-1223836246.1561029397) property.
 
 {% tabs %}
 {% highlight razor %}
@@ -204,7 +204,7 @@ private static List<TaskData> GetTaskCollection()
 
 ## Defining Columns
 
-Gantt Chart has an option to define columns as an array. You can customize the Gantt Chart columns using the following properties:
+Gantt Chart has an option to define columns as an array. You can customize the Blazor Gantt Chart columns using the following properties:
 
 * [Field](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_Field) : Maps the data source fields to the columns.
 * [HeaderText](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_HeaderText) : Changes the title of columns.
@@ -267,7 +267,7 @@ For further details regarding Columns, refer [here](https://help.syncfusion.com/
 
 ## Enable Editing
 
-The editing feature enables you to edit the tasks in the Gantt Chart component. It can be enabled by using the [EditSettings.AllowEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_AllowEditing) and [EditSettings.AllowTaskbarEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_AllowTaskbarEditing) properties.
+The editing feature enables you to edit the tasks in the Blazor Gantt Chart component. It can be enabled by using the [EditSettings.AllowEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_AllowEditing) and [EditSettings.AllowTaskbarEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_AllowTaskbarEditing) properties.
 
 {% tabs %}
 {% highlight razor %}
@@ -317,7 +317,7 @@ You can find the full information regarding Editing from [here](https://help.syn
 
 ## Enable Filtering
 
-The filtering feature enables you to view the reduced amount of records based on filter criteria. Gantt Chart provides the menu filtering support for each column. It can be enabled by setting the [AllowFiltering](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowFiltering) property to `true`. Filtering feature can also be customized using the [FilterSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_FilterSettings) property.
+The filtering feature enables you to view the reduced amount of records based on filter criteria. Blazor Gantt Chart provides the menu filtering support for each column. It can be enabled by setting the [AllowFiltering](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowFiltering) property to `true`. Filtering feature can also be customized using the [FilterSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_FilterSettings) property.
 
 {% tabs %}
 {% highlight razor %}
@@ -412,7 +412,7 @@ You can find the full information regarding Sorting from [here](https://help.syn
 
 ## Enabling Predecessors or Task Relationships
 
-Predecessor or task dependency in the Gantt Chart component is used to depict the relationship between the tasks.
+Predecessor or task dependency in the Blazor Gantt Chart component is used to depict the relationship between the tasks.
 
 * Start to Start (SS): You cannot start a task until the dependent task starts.
 * Start to Finish (SF): You cannot finish a task until the dependent task finishes.
@@ -464,6 +464,6 @@ You can show the relationship in tasks by using the `Dependency` property as sho
 
 You can find the full information regarding Predecessors from [here](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/task-dependencies)
 
-## Blazor WASM Gantt Chart Demonstration Video
+## Blazor WASM Blazor Gantt Chart Demonstration Video
 
 ![Blazor Gantt Chart](../images/blazor-gantt-chart.webp)

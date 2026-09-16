@@ -125,13 +125,13 @@ The following example enables row virtualization for a large dataset:
 
 <!-- Having doubt paging supported or not -->
 
-By default, the number of records rendered per page will be twice the Gantt chart's height. You can customize the row rendering count using the [PageSize](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_PageSize) and [OverscanCount](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_OverscanCount) properties. Here's an explanation of these properties:
+By default, the number of records rendered per page will be twice the Blazor Gantt Chart's height. You can customize the row rendering count using the [PageSize](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_PageSize) and [OverscanCount](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_OverscanCount) properties. Here's an explanation of these properties:
 
 * `PageSize`:
-    •	The `PageSize` property determines the number of rows rendered per page in the Gantt Chart.
+    •	The `PageSize` property determines the number of rows rendered per page in the Blazor Gantt Chart.
     •	It allows you to control how many rows are loaded and displayed at initial rendering and also while scrolling, helping to improve performance by reducing the number of DOM elements rendered.
 * `OverscanCount`:
-    •	The `OverscanCount` property is used to render additional rows before and after the Gantt Chart's current page rows.
+    •	The `OverscanCount` property is used to render additional rows before and after the Blazor Gantt Chart's current page rows.
     •	During both virtual scrolling and initial rendering, extra rows are rendered to provide a buffer around the current page area. This minimizes the need for frequent rendering during scrolling, providing a smoother user experience.
 
 {% tabs %}
@@ -361,7 +361,7 @@ Column virtualization, enabled by setting [EnableRowVirtualization](https://help
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/hjhdZnLreflsbmai?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-N> Column's [Width](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_Width) is required for column virtualization. If the column's width is not defined, then the Gantt Chart will consider its value as **150px**.
+N> Column's [Width](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_Width) is required for column virtualization. If the column's width is not defined, then the Blazor Gantt Chart will consider its value as **150px**.
 
 ## Configure timeline virtualization
 
@@ -502,7 +502,7 @@ The following example enables timeline virtualization for a wide timeline:
 
 ## Limitations for virtualization
 
-* Due to the element height limitation in browsers, the maximum number of records loaded by the Gantt chart is limited by the browser capability.
+* Due to the element height limitation in browsers, the maximum number of records loaded by the Blazor Gantt Chart is limited by the browser capability.
 * It is necessary to mention the height of the Gantt in pixels when enabling virtual scrolling.
 * Cell selection will not be persisted in a row.
 * Programmatic selection using the [SelectRowsAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_SelectRowsAsync_System_Int32___) method is not supported in virtual scrolling.
