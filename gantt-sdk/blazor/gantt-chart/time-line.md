@@ -616,7 +616,7 @@ The following example demonstrates how to configure a fixed timeline range.
 
 ## Weekend Visibility in Blazor Gantt Chart
 
-The Blazor Gantt Chart provides support for displaying or hiding weekends within the timeline using the [ShowWeekend](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTimelineSettings.html) property available in GanttTimelineSettings.
+The Blazor Gantt Chart provides support for displaying or hiding weekends within the timeline using the [`ShowWeekend`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTimelineSettings.html) property available in GanttTimelineSettings.
 
 By default, weekends are displayed in the timeline. Setting `ShowWeekend` to `false` removes weekend days from the timeline and renders only working days, providing a compact project view focused on business schedules.
 

@@ -327,6 +327,8 @@ The following example demonstrates how to export Gantt Chart data to an Excel me
 
 {% tabs %} {% highlight razor tabtitle="Home.razor" %}
 @using Syncfusion.Blazor.Gantt 
+@using Syncfusion.Blazor.Navigations
+@using System.IO
 <SfGantt @ref="Gantt"
          DataSource="@TaskCollection"
          AllowExcelExport="true"
@@ -349,6 +351,13 @@ The following example demonstrates how to export Gantt Chart data to an Excel me
 
 @code {
     private SfGantt<TaskData>? Gantt;
+
+    public List<TaskData>? TaskCollection { get; set; }
+
+    protected override void OnInitialized()
+    {
+        TaskCollection = GetTaskCollection();
+    }
 
     private List<object> ToolbarItems = new()
     {
@@ -403,8 +412,14 @@ The following example demonstrates how to export Gantt Chart data to a CSV memor
 
 {% tabs %} {% highlight razor tabtitle="Home.razor" %}
 @using Syncfusion.Blazor.Gantt 
+@using Syncfusion.Blazor.Navigations
+@using System.IO
 
-<SfGantt ID="GanttContainer" @ref="Gantt" AllowExcelExport="true" DataSource="@TaskCollection" Height="450px" Width="700px">
+<SfGantt ID="GanttContainer" @ref="Gantt" AllowExcelExport="true" DataSource="@TaskCollection" Height="450px" Width="700px" Toolbar="ToolbarItems">
+
+<GanttEvents TValue="TaskData"
+                 OnToolbarClick="ToolbarClickHandler">
+    </GanttEvents>  
 
  <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
     </GanttTaskFields>
@@ -413,6 +428,7 @@ The following example demonstrates how to export Gantt Chart data to a CSV memor
 
 @code {
     public SfGantt<TaskData>? Gantt;
+    
     public List<TaskData>? TaskCollection { get; set; }
 
     protected override void OnInitialized()
@@ -420,19 +436,21 @@ The following example demonstrates how to export Gantt Chart data to a CSV memor
         TaskCollection = GetTaskCollection();
     }
 
-    private async Task ExportCsvStream()
+    private List<object> ToolbarItems = new()
     {
-        if (Gantt == null)
+        new ItemModel() { Text = "CSVStream", Id = "CsvStream" }
+    };
+
+    private async Task ToolbarClickHandler(ClickEventArgs args)
+    {
+        if (args.Item.Id == "CsvStream" && Gantt != null)
         {
-            return;
+            ExcelExportProperties exportProperties = new()
+            {
+                FileName = "GanttExport.csv"
+            };
+            MemoryStream stream = await Gantt.ExportToCsvStreamAsync(exportProperties);
         }
-
-        ExcelExportProperties exportProperties = new ExcelExportProperties()
-        {
-            FileName = "GanttExport.csv"
-        };
-        MemoryStream stream = await Gantt.ExportToCsvStreamAsync(exportProperties);
-
     }
 
     public class TaskData

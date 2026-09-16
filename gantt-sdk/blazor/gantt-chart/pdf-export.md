@@ -89,7 +89,7 @@ Export Gantt data to PDF by setting [AllowPdfExport](https://help.syncfusion.com
 
 ## Export Gantt Chart to a PDF MemoryStream
 
-The Blazor Gantt Chart supports exporting PDF documents directly to a `MemoryStream` using the [ExportToPdfStreamAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html) method. Instead of automatically downloading the exported PDF document, the generated content is returned as a `MemoryStream` that can be stored, transmitted, or processed programmatically.
+The Blazor Gantt Chart supports exporting PDF documents directly to a `MemoryStream` using the [`ExportToPdfStreamAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ExportToPdfAsync_Syncfusion_Blazor_Gantt_GanttPdfExportProperties_) method. Instead of automatically downloading the exported PDF document, the generated content is returned as a `MemoryStream` that can be stored, transmitted, or processed programmatically.
 
 This feature is useful when the exported PDF document must be stored in a database, uploaded to cloud storage, sent as an email attachment, returned through a web API, or processed further before delivery.
 
@@ -100,6 +100,7 @@ The following example demonstrates how to export the Gantt Chart as a PDF memory
 
 @using Syncfusion.Blazor.Gantt
 @using Syncfusion.Blazor.Navigations
+@using System.IO
 
 <SfGantt @ref="GanttInstance"
          DataSource="@TaskCollection"
@@ -146,8 +147,7 @@ The following example demonstrates how to export the Gantt Chart as a PDF memory
             {
                 FileName = "GanttExport.pdf"
             };
-            MemoryStream pdfStream = await GanttInstance.ExportToPdfStreamAsync( exportProperties, enableMultiPage: true);
-
+            MemoryStream pdfStream = await GanttInstance.ExportToPdfStreamAsync(exportProperties,enableMultiPage: true);
         }
     }
 
