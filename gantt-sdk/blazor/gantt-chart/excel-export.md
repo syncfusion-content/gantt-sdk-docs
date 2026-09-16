@@ -9,7 +9,7 @@ control: Excel Export - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
-
+ 
 # Export Gantt Chart Data to Excel in Blazor
 
 The Syncfusion Blazor Gantt Chart component supports exporting project data to Excel and CSV formats, enabling seamless sharing, reporting, and offline analysis.  
@@ -314,6 +314,174 @@ In the following example, [EnableRowVirtualization](https://help.syncfusion.com/
 {% endtabs %}
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/BNrnjmBDLLrUXEhq?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+
+## Export Gantt Chart Data as a MemoryStream
+
+A `MemoryStream` is an in-memory representation of a file that allows exported data to be accessed and processed without creating a physical file on disk. When exporting Gantt Chart data as an Excel or CSV memory stream, the generated document is stored in memory and returned as a `MemoryStream` object. This approach is useful for scenarios such as storing the exported document in a database, uploading it to cloud storage, sending it through a web API, attaching it to an email, or performing additional processing before making it available to users.
+
+### Export Excel data as MemoryStream
+
+To export Gantt Chart data as an Excel document stream, use the [`ExportToExcelStreamAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html) method. This method generates the Excel document in memory and returns it as a `MemoryStream`, which can then be used for custom processing, storage, or transmission without downloading the file directly to the client.
+
+The following example demonstrates how to export Gantt Chart data to an Excel memory stream using a custom toolbar item.
+
+{% tabs %} {% highlight razor tabtitle="Home.razor" %}
+@using Syncfusion.Blazor.Gantt 
+@using Syncfusion.Blazor.Navigations
+@using System.IO
+<SfGantt @ref="Gantt"
+         DataSource="@TaskCollection"
+         AllowExcelExport="true"
+         Toolbar="ToolbarItems">
+
+    <GanttEvents TValue="TaskData"
+                 OnToolbarClick="ToolbarClickHandler">
+    </GanttEvents>
+
+    <GanttTaskFields Id="TaskId"
+                     Name="TaskName"
+                     StartDate="StartDate"
+                     EndDate="EndDate"
+                     Duration="Duration"
+                     Progress="Progress"
+                     ParentID="ParentId">
+    </GanttTaskFields>
+
+</SfGantt>
+
+@code {
+    private SfGantt<TaskData>? Gantt;
+
+    public List<TaskData>? TaskCollection { get; set; }
+
+    protected override void OnInitialized()
+    {
+        TaskCollection = GetTaskCollection();
+    }
+
+    private List<object> ToolbarItems = new()
+    {
+        new ItemModel() { Text = "Excel Stream", Id = "ExcelStream" }
+    };
+
+    private async Task ToolbarClickHandler(ClickEventArgs args)
+    {
+        if (args.Item.Id == "ExcelStream" && Gantt != null)
+        {
+            ExcelExportProperties exportProperties = new()
+            {
+                FileName = "GanttExport.xlsx"
+            };
+
+            MemoryStream stream = await Gantt.ExportToExcelStreamAsync(exportProperties);
+        }
+    }
+     public class TaskData
+    {
+        public int TaskId { get; set; }
+        public string? TaskName { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime? EndDate { get; set; }
+        public string? Duration { get; set; }
+        public int Progress { get; set; }
+        public int? ParentId { get; set; }
+    }
+
+    public static List<TaskData> GetTaskCollection()
+    {
+        return new List<TaskData>()
+        {
+            new TaskData() { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2026, 01, 05), EndDate = new DateTime(2026, 01, 08), },
+            new TaskData() { TaskId = 2, TaskName = "Identify Site location", StartDate = new DateTime(2026, 01, 05), Duration = "0", Progress = 30, ParentId = 1, },
+            new TaskData() { TaskId = 3, TaskName = "Perform soil test", StartDate = new DateTime(2026, 01, 05), EndDate = new DateTime(2026, 01, 08), Progress = 40, ParentId = 1, },
+            new TaskData() { TaskId = 4, TaskName = "Soil test approval", StartDate = new DateTime(2026, 01, 05), Duration = "0", Progress = 30, ParentId = 1, },
+            new TaskData() { TaskId = 5, TaskName = "Project estimation", StartDate = new DateTime(2026, 01, 05), EndDate = new DateTime(2026, 01, 10), },
+            new TaskData() { TaskId = 6, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2026, 01, 07), EndDate = new DateTime(2026, 01, 09), Progress = 30, ParentId = 5, },
+            new TaskData() { TaskId = 7, TaskName = "List materials", StartDate = new DateTime(2026, 01, 07), EndDate = new DateTime(2026, 01, 09), Progress = 40, ParentId = 5, },
+            new TaskData() { TaskId = 8, TaskName = "Estimation approval", StartDate = new DateTime(2026, 01, 07), Duration = "0", Progress = 30, ParentId = 5, }
+        };
+    }
+}
+{% endhighlight %} {% endtabs %}
+
+### Export CSV data as MemoryStream
+
+To export Gantt Chart data as a CSV document stream, use the [`ExportToCsvStreamAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html) method. This method generates the CSV document in memory and returns it as a `MemoryStream`, which can then be used for custom processing, storage, or transmission without downloading the file directly to the client.
+
+The following example demonstrates how to export Gantt Chart data to a CSV memory stream using a custom toolbar item.
+
+{% tabs %} {% highlight razor tabtitle="Home.razor" %}
+@using Syncfusion.Blazor.Gantt 
+@using Syncfusion.Blazor.Navigations
+@using System.IO
+
+<SfGantt ID="GanttContainer" @ref="Gantt" AllowExcelExport="true" DataSource="@TaskCollection" Height="450px" Width="700px" Toolbar="ToolbarItems">
+
+<GanttEvents TValue="TaskData"
+                 OnToolbarClick="ToolbarClickHandler">
+    </GanttEvents>  
+
+ <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId">
+    </GanttTaskFields>
+
+</SfGantt>
+
+@code {
+    public SfGantt<TaskData>? Gantt;
+    
+    public List<TaskData>? TaskCollection { get; set; }
+
+    protected override void OnInitialized()
+    {
+        TaskCollection = GetTaskCollection();
+    }
+
+    private List<object> ToolbarItems = new()
+    {
+        new ItemModel() { Text = "CSVStream", Id = "CsvStream" }
+    };
+
+    private async Task ToolbarClickHandler(ClickEventArgs args)
+    {
+        if (args.Item.Id == "CsvStream" && Gantt != null)
+        {
+            ExcelExportProperties exportProperties = new()
+            {
+                FileName = "GanttExport.csv"
+            };
+            MemoryStream stream = await Gantt.ExportToCsvStreamAsync(exportProperties);
+        }
+    }
+
+    public class TaskData
+    {
+        public int TaskId { get; set; }
+        public string? TaskName { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime? EndDate { get; set; }
+        public string? Duration { get; set; }
+        public int Progress { get; set; }
+        public int? ParentId { get; set; }
+    }
+
+    public static List<TaskData> GetTaskCollection()
+    {
+        return new List<TaskData>()
+        {
+            new TaskData() { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2026, 01, 05), EndDate = new DateTime(2026, 01, 08), },
+            new TaskData() { TaskId = 2, TaskName = "Identify Site location", StartDate = new DateTime(2026, 01, 05), Duration = "0", Progress = 30, ParentId = 1, },
+            new TaskData() { TaskId = 3, TaskName = "Perform soil test", StartDate = new DateTime(2026, 01, 05), EndDate = new DateTime(2026, 01, 08), Progress = 40, ParentId = 1, },
+            new TaskData() { TaskId = 4, TaskName = "Soil test approval", StartDate = new DateTime(2026, 01, 05), Duration = "0", Progress = 30, ParentId = 1, },
+            new TaskData() { TaskId = 5, TaskName = "Project estimation", StartDate = new DateTime(2026, 01, 05), EndDate = new DateTime(2026, 01, 10), },
+            new TaskData() { TaskId = 6, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2026, 01, 07), EndDate = new DateTime(2026, 01, 09), Progress = 30, ParentId = 5, },
+            new TaskData() { TaskId = 7, TaskName = "List materials", StartDate = new DateTime(2026, 01, 07), EndDate = new DateTime(2026, 01, 09), Progress = 40, ParentId = 5, },
+            new TaskData() { TaskId = 8, TaskName = "Estimation approval", StartDate = new DateTime(2026, 01, 07), Duration = "0", Progress = 30, ParentId = 5, }
+        };
+    }
+
+}
+
+{% endhighlight %} {% endtabs %}
 
 ## Customize the excel export
 
