@@ -446,7 +446,6 @@ The [CardSelectionType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ka
 
 - Use <kbd>Ctrl</kbd> + <kbd>Click</kbd> to add or remove an individual card from the current selection.
 - Use <kbd>Shift</kbd> + <kbd>Click</kbd> to select a range of cards within the same column.
-- Use <kbd>Shift</kbd> + <kbd>Up Arrow</kbd> and <kbd>Shift</kbd> + <kbd>Down Arrow</kbd> to extend or reduce the current selection range within a column.
 
 {% tabs %}
 {% highlight XAML hl_lines="2" %}

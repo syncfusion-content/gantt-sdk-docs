@@ -114,7 +114,7 @@ private void OnKanbanColumnDragOver(object sender, KanbanColumnDragOverEventArgs
     var sourceColumn = e.SourceColumn;
     var currentColumn = e.CurrentColumn;
     int previousColumnIndex = e.PreviousColumnIndex;
-    int currentColumnIndex = e.CurrentColumnIndex
+    int currentColumnIndex = e.CurrentColumnIndex;
 }
 
 {% endhighlight %}
@@ -182,7 +182,7 @@ private void OnKanbanColumnDrop(object sender, KanbanColumnDropEventArgs e)
     var sourceColumn = e.SourceColumn;
     var previousColumnIndex = e.PreviousColumnIndex;
     int targetColumnIndex = e.TargetColumnIndex;
-    int targetColumn = e.TargetColumn;
+    var targetColumn = e.TargetColumn;
 }
 
 {% endhighlight %}
@@ -907,7 +907,7 @@ The [CardTappedCommand](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.
         {
             if (parameter is KanbanCardTappedEventArgs args)
             {
-                var selectedCoumn = args.SelectedColumn;
+                var selectedColumn = args.SelectedColumn;
             }
         }
 
@@ -999,7 +999,7 @@ this.kanban.ItemsSource = new ViewModel().TaskDetails;
 this.kanban.SelectionMode = KanbanSelectionMode.Multiple; 
 this.kanban.CardSelected += this.OnKanbanCardSelected;
 
-private void OnKanbanCardSelected(object sender KanbanCardSelectedEventArgs e) 
+private void OnKanbanCardSelected(object sender, KanbanCardSelectedEventArgs e) 
 { 
     var selectedCard = e.SelectedCard; 
     var selectedCards = e.SelectedCards; 
@@ -1132,10 +1132,10 @@ public class ViewModel
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## Methods
 
 ### GetSelectedCards
 
-The [GetSelectedCards()](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.html) method returns the collection of cards that are currently selected in the Kanban board.
-
-{% endtabs %}
+The [GetSelectedCards](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.html) method returns the collection of cards that are currently selected in the Kanban board.
