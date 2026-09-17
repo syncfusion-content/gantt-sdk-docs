@@ -180,7 +180,7 @@ When enabled, clicking a selected row or cell will deselect it, and clicking it 
 
 ## Drag selection
 
-The Gantt Chart component allows to select range of cells or rows by mouse or touch dragging. To enable this, set [GanttSelectionSettings.AllowDragSelection](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html#Syncfusion_Blazor_Gantt_GanttSelectionSettings_AllowDragSelection) to **true** and [GanttSelectionSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html) to **Multiple**.
+The Blazor Gantt Chart component allows to select range of cells or rows by mouse or touch dragging. To enable this, set [GanttSelectionSettings.AllowDragSelection](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html#Syncfusion_Blazor_Gantt_GanttSelectionSettings_AllowDragSelection) to **true** and [GanttSelectionSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html) to **Multiple**.
 
 >* Drag selection is supported in all selection modes, configurable using the [Mode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html#Syncfusion_Blazor_Gantt_GanttSelectionSettings_Mode) property.
 
