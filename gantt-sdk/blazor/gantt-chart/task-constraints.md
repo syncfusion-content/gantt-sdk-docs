@@ -16,7 +16,7 @@ Task constraints define rules that restrict when an automatically scheduled task
 
 Task constraints are useful for activities such as contract-controlled work, regulatory submissions, product launches, audits, and procurement milestones. Constraint values can be loaded from a task collection, edited through the task dialog, or updated programmatically.
 
->* Task constraints are evaluated only for auto-scheduled tasks. Constraint values on manually scheduled tasks are informational until the task is changed to auto scheduling.
+> Task constraints are evaluated only for auto-scheduled tasks. Constraint values on manually scheduled tasks are informational until the task is changed to auto scheduling.
 
 ## Task Constraints Configuration
 
@@ -121,9 +121,9 @@ The `TaskConstraintType` enumeration defines the supported scheduling rules. The
 | Start No Later Than (SNLT) | `StartNoLaterThan` | Must start on or before `ConstraintDate`. |
 | Finish No Later Than (FNLT) | `FinishNoLaterThan` | Must finish on or before `ConstraintDate`. |
 
->* A date-based constraint should provide a non-null `ConstraintDate`.
->* ASAP does not require a constraint date.
->* Parent tasks support only `AsSoonAsPossible`, `StartNoEarlierThan`, and `FinishNoLaterThan`. Unsupported parent constraint values are converted to `AsSoonAsPossible` during data binding.
+>- A date-based constraint should provide a non-null `ConstraintDate`.
+>- ASAP does not require a constraint date.
+>- Parent tasks support only `AsSoonAsPossible`, `StartNoEarlierThan`, and `FinishNoLaterThan`. Unsupported parent constraint values are converted to `AsSoonAsPossible` during data binding.
 
 ### Default constraint behavior
 
@@ -233,18 +233,18 @@ The `ConstraintDate` value is updated through the same working-time calendar log
 
 ## Best practices
 
->* Use ASAP for ordinary dependency-driven work and reserve exact constraints for dates that are externally controlled.
->* Provide `ConstraintDate` whenever a selected constraint requires a reference date.
->* Keep parent constraints limited to ASAP, SNET, and FNLT.
->* Configure working time, weekends, and holidays before validating date-based constraints.
->* Handle `OnTaskConstraint` for programmatic workflows that need custom conflict decisions.
->* Test constrained tasks with taskbar drag, resize, dialog editing, cell editing, undo, redo, and dependency updates.
->* Avoid applying unnecessary hard constraints to large task networks because they can increase conflict resolution and recalculation work.
+* Use ASAP for ordinary dependency-driven work and reserve exact constraints for dates that are externally controlled.
+* Provide `ConstraintDate` whenever a selected constraint requires a reference date.
+* Keep parent constraints limited to ASAP, SNET, and FNLT.
+* Configure working time, weekends, and holidays before validating date-based constraints.
+* Handle `OnTaskConstraint` for programmatic workflows that need custom conflict decisions.
+* Test constrained tasks with taskbar drag, resize, dialog editing, cell editing, undo, redo, and dependency updates.
+* Avoid applying unnecessary hard constraints to large task networks because they can increase conflict resolution and recalculation work.
 
 ## Limitations
 
->* Task constraints apply only to auto-scheduled tasks.
->* Initial data binding renders bound dates without enforcing conflicting constraints. Validation begins when a scheduling operation is performed.
+* Task constraints apply only to auto-scheduled tasks.
+* Initial data binding renders bound dates without enforcing conflicting constraints. Validation begins when a scheduling operation is performed.
 
 ## See also
 
