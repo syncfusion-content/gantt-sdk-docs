@@ -23,17 +23,16 @@ You can trigger export operations using the [ExportToExcelAsync](https://help.sy
 
 @using Syncfusion.Blazor.Gantt
 
-<SfGantt DataSource="@TaskCollection" Height="450px" Width="900px"
-         EnableUndoRedo="true"
-         UndoRedoActions="@(new List<GanttUndoRedoAction>{ GanttUndoRedoAction.Edit, GanttUndoRedoAction.Add, GanttUndoRedoAction.Delete })">
+<SfGantt DataSource="@TaskCollection" Height="450px" Width="700px" AllowExcelExport="true"
+         Toolbar="@(new List<string>() { "ExcelExport", "CsvExport" })">
     <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
                      Duration="Duration" Progress="Progress" ParentID="ParentId">
     </GanttTaskFields>
-    <GanttEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" AllowTaskbarEditing="true"></GanttEditSettings>
-    <GanttEvents TValue="TaskData" OnUndoRedo="UndoRedoHandler"></GanttEvents>
+    <GanttEvents TValue="TaskData" OnToolbarClick="ToolbarClickHandler"></GanttEvents>
 </SfGantt>
 
 @code {
+    public SfGantt<TaskData>? Gantt;
     public List<TaskData>? TaskCollection { get; set; }
 
     protected override void OnInitialized()
@@ -41,13 +40,19 @@ You can trigger export operations using the [ExportToExcelAsync](https://help.sy
         TaskCollection = GetTaskCollection();
     }
 
-    private void UndoRedoHandler(GanttUndoRedoEventArgs<TaskData> args)
+    private async Task ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
     {
-        // args.IsRedo indicates redo (true) or undo (false)
-        // args.Action indicates the action type (e.g., Edit, Add, Delete, Sort)
-        // args.ModifiedRecords contains modified records, if any
-        // args.DeletedRecords contains deleted records, if any
-        // args.AddRecord contains the added record, if present
+        if ((args.Item.Id == "GanttContainer_excelexport" || args.Item.Id == "GanttContainer_csvexport") && TaskCollection != null && Gantt != null)
+        {
+            if (args.Item.Id == "GanttContainer_excelexport")
+            {
+                await Gantt.ExportToExcelAsync();
+            }
+            else if (args.Item.Id == "GanttContainer_csvexport")
+            {
+                await Gantt.ExportToCsvAsync();
+            }
+        }
     }
 
     public class TaskData
@@ -166,12 +171,12 @@ You can bind a custom data source for Excel or CSV export in the Blazor Gantt co
 {% previewsample "https://blazorplayground.syncfusion.com/embed/htrntmBDLBWEFjJv?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 
-## Export Gantt Chart Data
+## Export Blazor Gantt Chart data
 
-To export either the records visible on the current page or all records from the Gantt Chart to Excel or CSV, set the `ExcelExportProperties.ExportType` property.
+To export either the records visible on the current page or all records from the Blazor Gantt Chart to Excel or CSV, set the `ExcelExportProperties.ExportType` property.
 
 - **CurrentPage**: Exports only the records displayed on the current Gantt page.
-- **AllPages**: Exports all records from the Gantt Chart.
+- **AllPages**: Exports all records from the Blazor Gantt Chart.
 
 In the following example, [EnableRowVirtualization](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_EnableRowVirtualization) is enabled, and the export type is applied based on the selected value from a dropdown.
 
@@ -312,11 +317,11 @@ In the following example, [EnableRowVirtualization](https://help.syncfusion.com/
 
 ## Customize the excel export
 
-You can customize the Excel or CSV export functionality in the Gantt Chart component using the [ExcelExportProperties](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ExportToExcelAsync_Syncfusion_Blazor_Grids_ExcelExportProperties_) configuration object.
+You can customize the Excel or CSV export functionality in the Blazor Gantt Chart component using the [ExcelExportProperties](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ExportToExcelAsync_Syncfusion_Blazor_Grids_ExcelExportProperties_) configuration object.
 
 ### Include hidden columns in export
 
-To include hidden columns during Excel or CSV export in the Gantt Chart component, set [ExcelExportProperties.IncludeHiddenColumn](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.ExcelExportProperties.html#Syncfusion_Blazor_Grids_ExcelExportProperties_IncludeHiddenColumn) to **true** in the export configuration. This ensures that hidden columns are included in the exported data.
+To include hidden columns during Excel or CSV export in the Blazor Gantt Chart component, set [ExcelExportProperties.IncludeHiddenColumn](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.ExcelExportProperties.html#Syncfusion_Blazor_Grids_ExcelExportProperties_IncludeHiddenColumn) to **true** in the export configuration. This ensures that hidden columns are included in the exported data.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -598,7 +603,7 @@ To apply a custom theme, set the [Theme](https://help.syncfusion.com/cr/blazor/S
 
 - **caption**: Defines the style for the caption, typically used for titles or descriptions at the top of the sheet.
 - **header**: Specifies the styling for column headers.
-- **record**: Applies formatting to the data rows exported from the Gantt Chart.
+- **record**: Applies formatting to the data rows exported from the Blazor Gantt Chart.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -678,7 +683,7 @@ N> By default, material theme is applied to the exported Excel document.
 
 ### Set custom file name
 
-To assign a custom name to the exported Excel or CSV file in the Gantt Chart component, set the [FileName](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.ExcelExportProperties.html#Syncfusion_Blazor_Grids_ExcelExportProperties_FileName) property within the [ExcelExportProperties](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ExportToExcelAsync_Syncfusion_Blazor_Grids_ExcelExportProperties_) configuration. This configuration determines the filename applied during the export process.
+To assign a custom name to the exported Excel or CSV file in the Blazor Gantt Chart component, set the [FileName](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.ExcelExportProperties.html#Syncfusion_Blazor_Grids_ExcelExportProperties_FileName) property within the [ExcelExportProperties](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ExportToExcelAsync_Syncfusion_Blazor_Grids_ExcelExportProperties_) configuration. This configuration determines the filename applied during the export process.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}

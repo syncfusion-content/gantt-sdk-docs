@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Column Definition and Configuration in Blazor Gantt Chart
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component displays task data in a tabular format using columns. Columns organize task data efficiently and enable user interactions such as sorting, filtering, and formatting within the Gantt chart.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component displays task data in a tabular format using columns. Columns organize task data efficiently and enable user interactions such as sorting, filtering, and formatting within the Blazor Gantt Chart.
 
 Each column is defined using the [Field](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_Field) property, which maps values from the data source. This mapping ensures accurate data binding and enables formatting and customization for each column.
 
@@ -107,7 +107,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt component lets
 - **Checkbox:** Displays checkbox only.
 - **None:** Represents a column that binds to None data.
 
-> The `DateOnly` and `TimeOnly` formats are supported in additional columns in the Gantt Chart.
+> The `DateOnly` and `TimeOnly` formats are supported in additional columns in the Blazor Gantt Chart.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -253,7 +253,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart component for B
 | P      | Percentage format  | Input should be between 0 and 1; `P2`, `P3`, etc., control precision.   |
 
 
-The following example code demonstrates the formatting of data for the **TaskID** column using the **N2** format, the **Progress** column using the **P2** format.
+The following example code demonstrates the formatting of data for the **TaskId** column using the **N2** format, the **Progress** column using the **P2** format.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -457,7 +457,7 @@ The Syncfusion<sup style="font-size:70%">®</sup> Gantt component for Blazor sup
 
 ### Resizing a column to fit its content using method
 
-You can resize a column in Gantt Chart to fit its content using the [AutoFitColumnsAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AutoFitColumnsAsync_System_String___) method. This adjusts the column width based on the widest cell without wrapping. To apply this during initial rendering, call the method in the [DataBound](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#databound) event.
+You can resize a column in Blazor Gantt Chart to fit its content using the [AutoFitColumnsAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AutoFitColumnsAsync_System_String___) method. This adjusts the column width based on the widest cell without wrapping. To apply this during initial rendering, call the method in the [DataBound](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#databound) event.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -849,7 +849,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart componen
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup>  Blazor Gantt Chart component provides a built-in feature to control column visibility based on media queries using the [HideAtMedia](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_HideAtMedia) property in the column object. This method can be used to hide columns automatically when the screen width matches specified [media query](http://cssmediaqueries.com/what-are-css-media-queries.html) conditions.
 
-The following example demonstrates a Gantt chart where the **Job Name** column is set to `(min-width: 700px)`, meaning it will be hidden when the browser width is less than or equal to 700px. Similarly, the **Duration** column is set to `(max-width: 500px)`, so it will be hidden when the browser width exceeds 500px.
+The following example demonstrates a Blazor Gantt Chart where the **Job Name** column is set to `(min-width: 700px)`, meaning it will be hidden when the browser width is less than or equal to 700px. Similarly, the **Duration** column is set to `(max-width: 500px)`, so it will be hidden when the browser width exceeds 500px.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}

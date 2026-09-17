@@ -18,7 +18,7 @@ This configuration ensures that task dates, event markers, baseline dates, and i
 
 ## Timezone date conversion
 
-The [Timezone](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Timezone) property allows the Gantt Chart to convert and display all task-related dates, including start dates, end dates, event markers, and baseline dates, in the specified timezone.
+The [Timezone](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Timezone) property allows the Blazor Gantt Chart to convert and display all task-related dates, including start dates, end dates, event markers, and baseline dates, in the specified timezone.
 
 For example, a `DateTime` value defined as `new DateTime(2025, 2, 4, 8, 0, 0)` in a system set to Pacific Standard Time (PST, UTC-08:00) will be adjusted to `2025-02-03 09:30 PM` when the `Timezone` property is set to `America/New_York` (ET, UTC-05:00 during standard time).
 
@@ -28,7 +28,7 @@ This conversion ensures accurate scheduling and visualization across timezones, 
 
 Set the [Timezone](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Timezone) property to a valid IANA timezone string such as UTC, America/New_York, or Europe/London. This ensures consistent task date displays and aligns taskbars with database times.
 
-The following example demonstrates configuring the Gantt Chart with the `America/New_York` timezone and includes a dropdown to dynamically update the timezone, triggering a re-render of all task dates.
+The following example demonstrates configuring the Blazor Gantt Chart with the `America/New_York` timezone and includes a dropdown to dynamically update the timezone, triggering a re-render of all task dates.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}

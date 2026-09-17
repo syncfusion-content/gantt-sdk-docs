@@ -16,7 +16,7 @@ The Selection feature provides the ability to highlight a row or cell in the Gan
 
 By default, selection is enabled. To disable selection, set the [AllowSelection](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowSelection) property to **false**.
 
-The Gantt component supports two types of selection that can be set by using the [SelectionSettings.Type](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SelectionType.html) property. They are:
+The Gantt component supports two types of selection that can be set using the [SelectionSettings.Type](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SelectionType.html) property. They are:
 
 * **Single:** Allows selection of only one row or cell at a time. This is the default behavior.
 * **Multiple:** Enables selection of multiple rows or cells. To perform multi-selection, press and hold the **Ctrl** key (on Windows/Linux) or **Cmd** key (on macOS) while clicking the desired rows or cells.
@@ -180,7 +180,7 @@ When enabled, clicking a selected row or cell will deselect it, and clicking it 
 
 ## Drag selection
 
-The Gantt Chart component allows to select range of cells or rows by mouse or touch dragging. To enable this, set [GanttSelectionSettings.AllowDragSelection](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html#Syncfusion_Blazor_Gantt_GanttSelectionSettings_AllowDragSelection) to **true** and [GanttSelectionSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html) to **Multiple**.
+The Blazor Gantt Chart component allows to select range of cells or rows by mouse or touch dragging. To enable this, set [GanttSelectionSettings.AllowDragSelection](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html#Syncfusion_Blazor_Gantt_GanttSelectionSettings_AllowDragSelection) to **true** and [GanttSelectionSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html) to **Multiple**.
 
 >* Drag selection is supported in all selection modes, configurable using the [Mode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html#Syncfusion_Blazor_Gantt_GanttSelectionSettings_Mode) property.
 

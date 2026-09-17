@@ -14,7 +14,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component supports state management by retaining its configuration and data in browser local storage after a refresh within the same session. It also provides options to save and load the Gantt state manually.
 
-The properties below can be saved and loaded into a Gantt chart:
+The properties below can be saved and loaded into a Blazor Gantt Chart:
 
 Property|
 -----|
@@ -29,9 +29,9 @@ ProjectEndDate |
 
 ## Enabling persistence
 
-You can enable persistence to maintain the Gantt chart’s current state in the browser’s local storage. This helps retain settings such as expanded rows and selected tasks after a page reload. To enable this behavior, set the [EnablePersistence](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_EnablePersistence) property to **true**.
+You can enable persistence to maintain the Blazor Gantt Chart’s current state in the browser’s local storage. This helps retain settings such as expanded rows and selected tasks after a page reload. To enable this behavior, set the [EnablePersistence](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_EnablePersistence) property to **true**.
 
-N> The state will be persisted based on the **ID** property. So, it is recommended to explicitly set the **ID** property for the Gantt chart.
+N> The state will be persisted based on the **ID** property. So, it is recommended to explicitly set the **ID** property for the Blazor Gantt Chart.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -81,7 +81,7 @@ N> The state will be persisted based on the **ID** property. So, it is recommend
 
 ## Handling gantt state manually
 
-To manually manage the Gantt chart’s persisted state, use the following methods to save the current state, load a previously stored one, and reset the chart to its default configuration:
+To manually manage the Blazor Gantt Chart’s persisted state, use the following methods to save the current state, load a previously stored one, and reset the chart to its default configuration:
 
 * [GetPersistDataAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_GetPersistDataAsync) - Saves the current chart state as a string, suitable for transmission or storage.
 * [SetPersistDataAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_SetPersistDataAsync_System_String_) - Loads a previously saved state into the chart.

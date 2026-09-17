@@ -23,11 +23,11 @@ N> When using `DataSource` as `IEnumerable<T>`, component type(TValue) will be i
 
 ## TaskFields mapping
 
-Bind data with the Gantt Chart component by using the [DataSource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_DataSource) property. It accepts the list objects or the [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html) instance. 
+Bind data with the Blazor Gantt Chart component using the [DataSource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_DataSource) property. It accepts the list objects or the [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html) instance.
 
-Additionally, task-related fields from the data source are mapped to the Gantt Chart component using the [GanttTaskFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html) property. This property ensures that the necessary task fields, such as [Id](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_Id), [Name](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_Name), [StartDate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_StartDate), [EndDate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_EndDate), [Duration](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_Duration), and [ParentID](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_ParentID) are properly linked to the corresponding data source fields, allowing the Gantt Chart to render tasks accurately. The columns in the Gantt Chart are automatically rendered based on the properties specified in `GanttTaskFields`, ensuring that the necessary columns are displayed to represent the task data.
+Additionally, map task-related fields from the data source to the Blazor Gantt Chart component using the [GanttTaskFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html) property. This property ensures that the necessary task fields, such as [Id](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_Id), [Name](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_Name), [StartDate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_StartDate), [EndDate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_EndDate), [Duration](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_Duration), and [ParentID](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_ParentID) are properly linked to the corresponding data source fields, allowing the Blazor Gantt Chart to render tasks accurately. The columns in the Blazor Gantt Chart are automatically rendered based on the properties specified in `GanttTaskFields`, ensuring that the necessary columns are displayed to represent the task data.
 
-This following sample shows self-referential data binding in the Gantt Chart by mapping the data source fields to the `Id` and `ParentID` properties.
+The following sample shows self-referential data binding in the Blazor Gantt Chart by mapping the data source fields to the `Id` and `ParentID` properties.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -184,9 +184,13 @@ This approach enables the component to reconstruct hierarchical tree structures 
 
 ### DynamicObject binding
 
-To handle scenarios where the data model is not defined at compile time, the Gantt Chart can be bound to a list of **DynamicObject** using the [DataSource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_DataSource) property. This enables full support for data operations and editing without requiring a strongly typed model.
+To handle scenarios where the data model is not defined at compile time, the Blazor Gantt Chart can be bound to a list of **DynamicObject** using the [DataSource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_DataSource) property. This enables full support for data operations and editing without requiring a strongly typed model.
 
-> The [GetDynamicMemberNames](https://learn.microsoft.com/en-us/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames?view=net-8.0) method of the `DynamicObject` class must be overridden to return the property names required for rendering, data operations, editing, and other related functionalities when using **DynamicObject** with the Gantt Chart.
+**When to use DynamicObject vs. strongly typed models:**
+- **Use strongly typed models** (recommended) when your data structure is known at compile time. They provide better IntelliSense support, compile-time type checking, and superior performance.
+- **Use DynamicObject** only when working with truly dynamic or variable data structures that cannot be defined as a class at compile time, such as data from NoSQL databases or user-generated schemas.
+
+> The [GetDynamicMemberNames](https://learn.microsoft.com/en-us/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames?view=net-8.0) method of the `DynamicObject` class must be overridden to return the property names required for rendering, data operations, editing, and other related functionalities when using **DynamicObject** with the Blazor Gantt Chart.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -294,7 +298,7 @@ To handle scenarios where the data model is not defined at compile time, the Gan
 
 ### ExpandoObject Binding
 
-To handle scenarios where the model type is unknown at compile time, the Gantt Chart can be bound to a list of **ExpandoObject** using the [DataSource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_DataSource) property. This enables full support for rendering, data operations, editing, and other related functionalities without requiring a strongly typed model.
+To handle scenarios where the model type is unknown at compile time, the Blazor Gantt Chart can be bound to a list of **ExpandoObject** using the [DataSource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_DataSource) property. This enables full support for rendering, data operations, editing, and other related functionalities without requiring a strongly typed model.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -370,11 +374,11 @@ To handle scenarios where the model type is unknown at compile time, the Gantt C
 
 ## Observable collection and INotifyPropertyChanged
 
-The Gantt chart supports to automatically update data based on `INotifyCollectionChanged` and `INotifyPropertyChanged` interface.
+The Blazor Gantt Chart supports to automatically update data based on `INotifyCollectionChanged` and `INotifyPropertyChanged` interface.
 
 ### Observable collection
 
-To handle dynamic changes in the data source, the Gantt Chart supports binding to an [ObservableCollection](https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=net-6.0). This collection implements the [INotifyCollectionChanged](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?view=net-6.0) interface, which automatically notifies the UI when items are added, removed, moved, or cleared.
+To handle dynamic changes in the data source, the Blazor Gantt Chart supports binding to an [ObservableCollection](https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=net-6.0). This collection implements the [INotifyCollectionChanged](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?view=net-6.0) interface, which automatically notifies the UI when items are added, removed, moved, or cleared.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -496,7 +500,7 @@ To handle dynamic changes in the data source, the Gantt Chart supports binding t
 
 ### INotifyPropertyChanged
 
-The Gantt chart provides support to update its data automatically when an item's property value changes, if the item implements the [INotifyPropertyChanged](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=net-6.0) interface.
+The Blazor Gantt Chart provides support to update its data automatically when an item's property value changes, if the item implements the [INotifyPropertyChanged](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=net-6.0) interface.
 
 This interface is used to notify that a property value has changed. For example, `TaskData` raises the `PropertyChanged` event when **TaskName** is updated, allowing Gantt to reflect the change without a manual refresh.
 
@@ -589,7 +593,7 @@ This interface is used to notify that a property value has changed. For example,
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/LZhRNwLXLXPnOpgb?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## Remote Data
+## Remote data
 
 The Syncfusion Blazor component enables remote data binding by connecting UI components to server-side data sources. This approach facilitates fetching, displaying, and manipulating data stored on remote servers.
 
@@ -600,7 +604,7 @@ To bind remote data to the Gantt component, assign service data as an instance o
 
 ### Web API adaptor
 
-The Gantt Chart component utilizes the **WebApiAdaptor**, an extension of the **ODataAdaptor**, for seamless integration with Web API services, including OData V4 endpoints. This adaptor supports efficient data retrieval and operations such as sorting, filtering, searching, and paging. It communicates with Web API endpoints using HTTP requests in JSON format, ensuring compatibility with OData-formatted queries for stable connectivity to remote data sources.
+The Blazor Gantt Chart component utilizes the **WebApiAdaptor**, an extension of the **ODataAdaptor**, for seamless integration with Web API services, including OData V4 endpoints. This adaptor supports efficient data retrieval and operations such as sorting, filtering, searching, and paging. It communicates with Web API endpoints using HTTP requests in JSON format, ensuring compatibility with OData-formatted queries for stable connectivity to remote data sources.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -634,7 +638,7 @@ The Gantt Chart component utilizes the **WebApiAdaptor**, an extension of the **
 
 ### ODataV4 adaptor
 
-The Gantt Chart component seamlessly integrates with OData V4 services via the **ODataV4Adaptor**., enabling efficient data retrieval and operations like sorting, filtering, searching, and paging using a queryable Entity Data Model (EDM), ensuring compatibility with the advanced features offered by the OData V4 protocol. For more details on OData v4 services, refer to the [OData documentation](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html).
+The Blazor Gantt Chart component seamlessly integrates with OData V4 services via the **ODataV4Adaptor**., enabling efficient data retrieval and operations like sorting, filtering, searching, and paging using a queryable Entity Data Model (EDM), ensuring compatibility with the advanced features offered by the OData V4 protocol. For more details on OData v4 services, refer to the [OData documentation](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html).
 
 {% tabs %}
 
@@ -1090,7 +1094,7 @@ namespace WebAPI.Controller
 {% endtabs %}
 
 > * Filtering and searching are not supported in load on demand.
-> * Only Self-Referential type data is supported with remote data binding in Gantt Chart.
+> * Only Self-Referential type data is supported with remote data binding in Blazor Gantt Chart.
 > * Load-on-demand supports only the validated data source.
 
 N>You can find the sample for load on demand [here](https://github.com/SyncfusionExamples/Lazy-Loading-in-Blazor-Gantt-Chart).
@@ -1104,8 +1108,8 @@ To specify custom parameters in a data request, use the `addParams` method of th
 
 <SfGantt TValue="TaskData" Height="450px" Width="700px" Query=@GanttQuery>
     <SfDataManager Url="/api/Home" Adaptor="Adaptors.UrlAdaptor"></SfDataManager>
-    <GanttTaskFields Id="TaskID" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration"
-                     Progress="Progress" ParentID="ParentID">
+    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration"
+                     Progress="Progress" ParentID="ParentId">
     </GanttTaskFields>
     <GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true"></GanttEditSettings>
 </SfGantt>
@@ -1120,13 +1124,13 @@ To specify custom parameters in a data request, use the `addParams` method of th
 
     public class TaskData
     {
-        public int TaskID { get; set; }
+        public int TaskId { get; set; }
         public string? TaskName { get; set; }
         public DateTime? StartDate { get; set; }
         public DateTime? EndDate { get; set; }
         public string? Duration { get; set; }
         public int Progress { get; set; }
-        public int? ParentID { get; set; }
+        public int? ParentId { get; set; }
     }
 }
 
@@ -1143,41 +1147,41 @@ namespace URLAdaptor.Models
         // Default constructor.
         public TaskDetails() { }
         // Parameterized constructor to initialize order details.
-        public TaskDetails(int TaskID, string TaskName, DateTime StartDate, DateTime EndDate, string Duration, int Progress, int? ParentID)
+        public TaskDetails(int TaskId, string TaskName, DateTime StartDate, DateTime EndDate, string Duration, int Progress, int? ParentId)
         {
-            this.TaskID = TaskID;
+            this.TaskId = TaskId;
             this.TaskName = TaskName;
             this.StartDate = StartDate;
             this.EndDate = EndDate;
             this.Duration = Duration;
             this.Progress = Progress;
-            this.ParentID = ParentID;
+            this.ParentId = ParentId;
         }       
  
         public static List<TaskDetails> GetAllRecords()
         {
             List<TaskDetails> Tasks = new List<TaskDetails>()
             {
-                new TaskDetails() { TaskID = 1, TaskName = "Project initiation", StartDate = new DateTime(2026, 01, 05), EndDate = new DateTime(2026, 01, 07), },
-                new TaskDetails() { TaskID = 2, TaskName = "Identify Site location", StartDate = new DateTime(2026, 01, 04), Duration = "0", Progress = 30, ParentID = 1, },
-                new TaskDetails() { TaskID = 3, TaskName = "Perform soil test", StartDate = new DateTime(2026, 01, 04), Duration = "4", Progress = 40, ParentID = 1, },
-                new TaskDetails() { TaskID = 4, TaskName = "Soil test approval", StartDate = new DateTime(2026, 01, 04), Duration = "0", Progress = 30, ParentID = 1, },
-                new TaskDetails() { TaskID = 5, TaskName = "Project estimation", StartDate = new DateTime(2026, 01, 04), EndDate = new DateTime(2026, 01, 10), },
-                new TaskDetails() { TaskID = 6, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2026, 01, 06), Duration = "3", Progress = 30, ParentID = 5, },
-                new TaskDetails() { TaskID = 7, TaskName = "List materials", StartDate = new DateTime(2026, 01, 06), Duration = "3", Progress = 40, ParentID = 5, },
-                new TaskDetails() { TaskID = 8, TaskName = "Estimation approval", StartDate = new DateTime(2026, 01, 06), Duration = "0", Progress = 30, ParentID = 5, }
+                new TaskDetails() { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2026, 01, 05), EndDate = new DateTime(2026, 01, 07), },
+                new TaskDetails() { TaskId = 2, TaskName = "Identify Site location", StartDate = new DateTime(2026, 01, 04), Duration = "0", Progress = 30, ParentId = 1, },
+                new TaskDetails() { TaskId = 3, TaskName = "Perform soil test", StartDate = new DateTime(2026, 01, 04), Duration = "4", Progress = 40, ParentId = 1, },
+                new TaskDetails() { TaskId = 4, TaskName = "Soil test approval", StartDate = new DateTime(2026, 01, 04), Duration = "0", Progress = 30, ParentId = 1, },
+                new TaskDetails() { TaskId = 5, TaskName = "Project estimation", StartDate = new DateTime(2026, 01, 04), EndDate = new DateTime(2026, 01, 10), },
+                new TaskDetails() { TaskId = 6, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2026, 01, 06), Duration = "3", Progress = 30, ParentId = 5, },
+                new TaskDetails() { TaskId = 7, TaskName = "List materials", StartDate = new DateTime(2026, 01, 06), Duration = "3", Progress = 40, ParentId = 5, },
+                new TaskDetails() { TaskId = 8, TaskName = "Estimation approval", StartDate = new DateTime(2026, 01, 06), Duration = "0", Progress = 30, ParentId = 5, }
             };
             return Tasks;
         }
  
         // Properties representing order details.
-        public int TaskID { get; set; }
+        public int TaskId { get; set; }
         public string TaskName { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime? EndDate { get; set; }
         public string Duration { get; set; }
         public int Progress { get; set; }
-        public int? ParentID { get; set; }        
+        public int? ParentId { get; set; }        
     }
 }
 
@@ -1222,7 +1226,7 @@ namespace URLAdaptor.Controllers
                 var param = DataManagerRequest.Params["TaskID"];
                 if (int.TryParse(param?.ToString(), out int taskId))
                 {
-                    data = data.Where(d => d.TaskID == taskId);
+                    data = data.Where(d => d.TaskId == taskId);
                 }
             }
  
