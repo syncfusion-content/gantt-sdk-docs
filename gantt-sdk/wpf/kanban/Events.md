@@ -144,7 +144,7 @@ private void OnKanbanColumnDragOver(object sender, KanbanColumnDragOverEventArgs
     var sourceColumn = e.SourceColumn;
     var currentColumn = e.CurrentColumn;
     int previousColumnIndex = e.PreviousColumnIndex;
-    int currentColumnIndex = e.CurrentColumnIndex;
+    int currentColumnIndex = e.CurrentColumnIndex
 }
 
 {% endhighlight %}
@@ -212,7 +212,7 @@ private void OnKanbanColumnDrop(object sender, KanbanColumnDropEventArgs e)
     var sourceColumn = e.SourceColumn;
     var previousColumnIndex = e.PreviousColumnIndex;
     int targetColumnIndex = e.TargetColumnIndex;
-    var targetColumn = e.TargetColumn;
+    int targetColumn = e.TargetColumn;
 }
 
 {% endhighlight %}
@@ -253,7 +253,7 @@ This event is triggered when you start to drag a card. The argument contains the
 
 ## CardDragEnd  
 
-This event is triggered whenever dragging is canceled. The argument contains the following information.
+This event is triggered when whenever dragging is canceled. The argument contains the following information.
 
 * [`IsCancel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanDragEndEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanDragEndEventArgs_IsCancel)			- Used to cancel the drag action.
 * [`SelectedCard`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanDragEventArgs_SelectedCard)			- Used to get the underlying model of the card.
@@ -318,7 +318,7 @@ This event will be fired after the columns are generated automatically. You can 
 
 ## ColumnGenerated
 
-This event is triggered when a column is generated.
+This event is triggered when a column generated.
 
 * [`Columns`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumnsGeneratedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanColumnsGeneratedEventArgs_Columns)  -  used to get the generated columns.
 * [`IsCancel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumnGeneratedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanColumnGeneratedEventArgs_IsCancel)   -  used to cancel the generated column added to the SfKanban.
