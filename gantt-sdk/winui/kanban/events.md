@@ -995,7 +995,7 @@ this.kanban.ItemsSource = new ViewModel().TaskDetails;
 this.kanban.SelectionMode = KanbanSelectionMode.Multiple; 
 this.kanban.CardSelected += this.OnKanbanCardSelected;
 
-private void OnKanbanCardSelected(object sender KanbanCardSelectedEventArgs e)
+private void OnKanbanCardSelected(object sender, KanbanCardSelectedEventArgs e)
 { 
     var selectedCard = e.SelectedCard; 
     var selectedCards = e.SelectedCards; 
