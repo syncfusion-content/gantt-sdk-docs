@@ -72,11 +72,11 @@ You can customize row height in the Syncfusion<sup style="font-size:70%">&reg;</
 
 ## Expand or collapse row
 
-You can expand or collapse parent tasks in the Gantt Chart using expand/collapse icons, toolbar actions like Expand All or Collapse All, or public methods. By default, all tasks are rendered in an expanded state.
+You can expand or collapse parent tasks in the Blazor Gantt Chart using expand/collapse icons, toolbar actions like Expand All or Collapse All, or public methods. By default, all tasks are rendered in an expanded state.
 
 ### Render parent rows in collapsed state
 
-You can collapse all parent rows during initial rendering by setting the [CollapseAllParentTasks](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_CollapseAllParentTasks)  property in the Gantt Chart component.
+You can collapse all parent rows during initial rendering by setting the [CollapseAllParentTasks](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_CollapseAllParentTasks)  property in the Blazor Gantt Chart component.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -132,7 +132,7 @@ You can collapse all parent rows during initial rendering by setting the [Collap
 
 ### Retain expand/collapse state on initial load
 
-You can retain the expand or collapse state of parent rows in the Gantt Chart during initial rendering by specifying the expand status in the data source and assigning it to [GanttTaskFields.ExpandState](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_ExpandState) property. This property defines whether a parent row is displayed as expanded or collapsed when the component loads.
+You can retain the expand or collapse state of parent rows in the Blazor Gantt Chart during initial rendering by specifying the expand status in the data source and assigning it to [GanttTaskFields.ExpandState](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_ExpandState) property. This property defines whether a parent row is displayed as expanded or collapsed when the component loads.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -277,7 +277,7 @@ To customize rows in the chart portion, use the [QueryChartRowInfo](https://help
 
 To customize grid cells, use the [QueryCellInfo](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#querycellinfo) event. It is triggered for each cell in the grid and can be used to apply styles or logic based on specific condition.
 
-The following example demonstrates how to apply custom styles to rows and cells in the Gantt Chart component:
+The following example demonstrates how to apply custom styles to rows and cells in the Blazor Gantt Chart component:
 
 - If **TaskID** is 4, a custom background style is applied to both the grid row and chart row.
 - If the **Progress** column value is 30, a custom style is applied to the grid cell.

@@ -32,7 +32,7 @@ The Microsoft.EntityFrameworkCore.SqlServer package is the provider that connect
 
 **What is UrlAdaptor?**
 
-UrlAdaptor is a DataManager adaptor that communicates with REST API endpoints for all Gantt Chart operations. The Gantt Chart sends read, insert, update, delete, and batch requests to controller actions, which use Entity Framework core to access SQL Server.
+UrlAdaptor is a DataManager adaptor that communicates with REST API endpoints for all Blazor Gantt Chart operations. The Blazor Gantt Chart sends read, insert, update, delete, and batch requests to controller actions, which use Entity Framework core to access SQL Server.
 
 ## Prerequisites
 
@@ -43,8 +43,8 @@ Ensure the following software and packages are installed before proceeding:
 | Visual Studio 2026 | 18.2.1 or later | Development IDE with Blazor workload |
 | .NET SDK | net10.0 or compatible | Runtime and build tools |
 | SQL Server | 2021 or later | Database server |
-| Syncfusion.Blazor.Gantt | -v {{site.blazorversion}} | Gantt Chart and UI components |
-| Syncfusion.Blazor.Themes | -v {{site.blazorversion}} | Styling for Gantt Chart components |
+| Syncfusion.Blazor.Gantt | -v {{site.blazorversion}} | Blazor Gantt Chart and UI components |
+| Syncfusion.Blazor.Themes | -v {{site.blazorversion}} | Styling for Blazor Gantt Chart components |
 | Microsoft.EntityFrameworkCore | 10.0.2 | Core framework for database operations |
 | Microsoft.EntityFrameworkCore.SqlServer | 10.0.2 | SQL Server provider for Entity Framework Core |
 
@@ -243,7 +243,7 @@ The database connection string has been configured successfully.
 
 ### Step 6: Create the Gantt API Controller
 
-A controller exposes REST API endpoints for the Gantt Chart to read data. This step adds minimal `POST` endpoint that return empty results. Additional CRUD and batch endpoints will be added later when configuring UrlAdaptor.
+A controller exposes REST API endpoints for the Blazor Gantt Chart to read data. This step adds minimal `POST` endpoint that return empty results. Additional CRUD and batch endpoints will be added later when configuring UrlAdaptor.
 
 **Instructions:**
 
@@ -346,7 +346,7 @@ app.Run();
 
 ### Step 1: Install and configure Blazor Gantt Chart Components
 
-Syncfusion is a library that provides pre-built UI components like Gantt Chart, which visualizes project schedules, task hierarchies, dependencies, baselines, and progress on a timeline.
+Syncfusion is a library that provides pre-built UI components like Blazor Gantt Chart, which visualizes project schedules, task hierarchies, dependencies, baselines, and progress on a timeline.
 
 **Instructions:**
 
@@ -370,11 +370,11 @@ Syncfusion is a library that provides pre-built UI components like Gantt Chart, 
 
 For this project, the **fluent** theme is used. A different theme can be selected or customized based on project requirements. Refer to the [Blazor Components Appearance](https://blazor.syncfusion.com/documentation/appearance/themes) documentation to learn more about theming and customization options.
 
-Blazor components are now configured and ready to use. For additional guidance, refer to the Gantt Chart component [getting‑started](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/getting-started-with-web-app) documentation.
+Blazor components are now configured and ready to use. For additional guidance, refer to the Blazor Gantt Chart component [getting‑started](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/getting-started-with-web-app) documentation.
 
 ### Step 2: Update the Blazor Gantt Chart
 
-The `Home.razor` component will display the task data in a Gantt Chart with search, filter, sort, and CRUD capabilities using UrlAdaptor to communicate with REST API endpoints.
+The `Home.razor` component will display the task data in a Blazor Gantt Chart with search, filter, sort, and CRUD capabilities using UrlAdaptor to communicate with REST API endpoints.
 
 **Instructions:**
 
@@ -411,17 +411,17 @@ The `Home.razor` component will display the task data in a Gantt Chart with sear
 
 **Component Explanation:**
 
-- **`<SfGantt>`**: The Gantt Chart component displays hierarchical tasks, dependencies, baselines, durations, and progress on an interactive timeline for scheduling.
+- **`<SfGantt>`**: The Blazor Gantt Chart component displays hierarchical tasks, dependencies, baselines, durations, and progress on an interactive timeline for scheduling.
 - **`<SfDataManager>`**: Manages data communication with REST API endpoints using UrlAdaptor. The `Url` property points to the read endpoint, while `InsertUrl`, `UpdateUrl`, `RemoveUrl`, and `BatchUrl` point to CRUD endpoints.
 - **`AllowFiltering="true"`**: Enables column filtering with menu-based filters.
 - **`AllowSorting="true"`**: Enables column sorting by clicking headers.
-- **`<GanttColumns>`**: Defines the columns displayed in the Gantt Chart, mapped to `TaskDataModel` properties.
+- **`<GanttColumns>`**: Defines the columns displayed in the Blazor Gantt Chart, mapped to `TaskDataModel` properties.
 - **`<GanttEditSettings>`**: Enables adding, deleting and inline editing .
 - **`Toolbar`**: "Add", "Edit", "Delete", "Update", "Cancel", "Search" for CRUD and search operations.
 
 ### Step 3: Implement the Endpoints for UrlAdaptor
 
-The UrlAdaptor communicates with REST API endpoints for Gantt Chart operations rather than executing logic in the component. The Gantt Chart sends requests to endpoints defined in a controller. Below is the controller structure with the same decorators and signatures as in the project, with placeholder comments to add logic.
+The UrlAdaptor communicates with REST API endpoints for Blazor Gantt Chart operations rather than executing logic in the component. The Blazor Gantt Chart sends requests to endpoints defined in a controller. Below is the controller structure with the same decorators and signatures as in the project, with placeholder comments to add logic.
 
 Open the file named **Controllers/GanttController.cs** and use the following structure:
 
@@ -592,10 +592,10 @@ public object Post([FromBody] DataManagerRequest dataManagerRequest)
 
 **How searching works:**
 
-- When a text is entered in the search box and presses Enter, the Gantt Chart sends a search request to the REST API.
+- When a text is entered in the search box and presses Enter, the Blazor Gantt Chart sends a search request to the REST API.
 - The `Post` method receives the search criteria in `dataManagerRequest.Search`.
 - The `DataOperations.PerformSearching()` method filters the data based on the search term across all columns.
-- Results are returned and displayed in the Gantt Chart.
+- Results are returned and displayed in the Blazor Gantt Chart.
 
 Searching feature is now active.
 
@@ -666,7 +666,7 @@ public object Post([FromBody] DataManagerRequest dataManagerRequest)
 - Click the "Filter" button to apply the filter.
 - The `Post` method receives the filter criteria in `dataManagerRequest.Where`.
 - The `DataOperations.PerformFiltering()` method applies the filter conditions to the data.
-- Results are filtered accordingly and displayed in the Gantt Chart.
+- Results are filtered accordingly and displayed in the Blazor Gantt Chart.
 
 Filtering feature is now active.
 
@@ -732,7 +732,7 @@ public object Post([FromBody] DataManagerRequest dataManagerRequest)
 - Click again to sort in descending order.
 - The `Post` method receives the sort criteria in `dataManagerRequest.Sorted`.
 - The `DataOperations.PerformSorting()` method sorts the data based on the specified column and direction.
-- Records are sorted accordingly and displayed in the Gantt Chart.
+- Records are sorted accordingly and displayed in the Blazor Gantt Chart.
 
 Sorting feature is now active.
 
@@ -740,7 +740,7 @@ Sorting feature is now active.
 
 ### Step 7: Perform CRUD Operations
 
-CRUD operations (Create, Read, Update, Delete) enable the data to manage directly from the Gantt Chart. The REST API endpoints in the controller handle all database operations using Entity Framework Core.
+CRUD operations (Create, Read, Update, Delete) enable the data to manage directly from the Blazor Gantt Chart. The REST API endpoints in the controller handle all database operations using Entity Framework Core.
 
 **Instructions:**
 
@@ -768,7 +768,7 @@ CRUD operations (Create, Read, Update, Delete) enable the data to manage directl
 
 **Insert (Create)**
 
-Record insertion allows new tasks to be added directly through the Gantt Chart component. The `Insert` endpoint processes the insertion request and saves the newly created record to the SQL Server database.
+Record insertion allows new tasks to be added directly through the Blazor Gantt Chart component. The `Insert` endpoint processes the insertion request and saves the newly created record to the SQL Server database.
 
 In **Controllers/GanttController.cs**, the insert method is implemented as:
 
@@ -795,15 +795,15 @@ public void Insert([FromBody] CRUDModel<TaskDataModel> value)
 **What happens behind the scenes:**
 
 1. Clicks the "Add" button and fills Dialog.
-2. The Gantt Chart sends a POST request to `/api/Gantt/Insert`.
+2. The Blazor Gantt Chart sends a POST request to `/api/Gantt/Insert`.
 3. The `Insert` method receives the new task data in `value.Value`.
 4. Entity Framework Core adds the record to the `_context.TaskData` collection.
 5. `SaveChanges()` persists the record to the SQL Server database.
-6. The Gantt Chart automatically refreshes to display the new record.
+6. The Blazor Gantt Chart automatically refreshes to display the new record.
 
 **Update (Edit)**
 
-Record modification allows task details to be updated directly within the Gantt Chart. The `Update` endpoint processes the edited row and applies the changes to the SQL Server database.
+Record modification allows task details to be updated directly within the Blazor Gantt Chart. The `Update` endpoint processes the edited row and applies the changes to the SQL Server database.
 
 In **Controllers/GanttController.cs**, the update method is implemented as:
 
@@ -834,16 +834,16 @@ public void Update([FromBody] CRUDModel<TaskDataModel> value)
 **What happens behind the scenes:**
 
 1. Clicks the "Edit" button and modifies the record.
-2. The Gantt Chart sends a POST request to `/api/Gantt/Update`.
+2. The Blazor Gantt Chart sends a POST request to `/api/Gantt/Update`.
 3. The `Update` method receives the modified task data in `value.Value`.
 4. The existing task is retrieved from the database by its TaskID.
 5. The properties are updated with the new values using `SetValues()`.
 6. `SaveChanges()` persists the changes to the SQL Server database.
-7. The Gantt Chart refreshes to display the updated task.
+7. The Blazor Gantt Chart refreshes to display the updated task.
 
 **Delete (Remove)**
 
-Record deletion allows tasks to be removed directly from the Gantt Chart. The `Delete` endpoint executes the corresponding SQL Server DELETE operation and updates both the database and the Gantt Chart.
+Record deletion allows tasks to be removed directly from the Blazor Gantt Chart. The `Delete` endpoint executes the corresponding SQL Server DELETE operation and updates both the database and the Blazor Gantt Chart.
 
 In **Controllers/GanttController.cs**, the delete method is implemented as:
 
@@ -875,13 +875,13 @@ public void Delete([FromBody] CRUDModel<TaskDataModel> value)
 **What happens behind the scenes:**
 
 1. Select a record and click "Delete".
-2. A confirmation dialog appears (built into the Gantt Chart).
-3. If confirmed, the Gantt Chart sends a POST request to `/api/Gantt/Delete`.
+2. A confirmation dialog appears (built into the Blazor Gantt Chart).
+3. If confirmed, the Blazor Gantt Chart sends a POST request to `/api/Gantt/Delete`.
 4. The `Delete` method extracts the TaskID from `value.Key`.
 5. The task is located in the database by its TaskID.
 6. The task is removed from the `_context.TaskData` collection.
 7. `SaveChanges()` executes the **DELETE** statement in SQL Server.
-8. The Gantt Chart refreshes to remove the deleted task from the UI.
+8. The Blazor Gantt Chart refreshes to remove the deleted task from the UI.
 
 **Batch Operations (Multiple CRUD in one request)**
 
@@ -935,13 +935,13 @@ public void Batch([FromBody] CRUDModel<TaskDataModel> value)
 
 **What happens behind the scenes:**
 
-- The Gantt Chart collects all added, edited, and deleted records.
+- The Blazor Gantt Chart collects all added, edited, and deleted records.
 - All changes are sent in a single POST request to `/api/Gantt/BatchUpdate`.
 - The `Batch` method processes changed records using `UpdateRange()`.
 - The `Batch` method processes added records using `AddRange()`.
 - The `Batch` method processes deleted records using `Remove()`.
 - All operations are saved to the database in a single `SaveChanges()` call for transactional consistency.
-- The Gantt Chart refreshes to display all changes.
+- The Blazor Gantt Chart refreshes to display all changes.
 
 All CRUD operations are now fully implemented, enabling comprehensive data management capabilities within the Blazor Gantt Chart.
 
@@ -973,11 +973,11 @@ The application will start, and the console will display the local URL `https://
 
 1. Open a web browser.
 2. Navigate to the URL displayed in the console.
-3. The Gantt Chart application is now running and ready to use.
+3. The Blazor Gantt Chart application is now running and ready to use.
 
 **Available Features**
 
-- **View Data**: All tasks from the SQL Server database are displayed in the Gantt Chart.
+- **View Data**: All tasks from the SQL Server database are displayed in the Blazor Gantt Chart.
 - **Search**: Use the search box to find tasks by any field.
 - **Filter**: Click on column headers to apply filters.
 - **Sort**: Click on column headers to sort data in ascending or descending order.
