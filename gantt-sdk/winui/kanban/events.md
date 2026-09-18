@@ -965,11 +965,7 @@ public class RelayCommand : ICommand
 
 {% endtabs %}
 
-## Selection Events
-
-The WinUI Kanban control supports selection-related events that allow you to track card selection and deselection operations. These events provide information about the selected or deselected cards, modifier keys used during the operation, and the associated Kanban column.
-
-### CardSelected
+## CardSelected
 
 The CardSelected event occurs when one or more cards are selected in the Kanban board. The event is raised once per selection update cycle.
 
@@ -999,7 +995,7 @@ this.kanban.ItemsSource = new ViewModel().TaskDetails;
 this.kanban.SelectionMode = KanbanSelectionMode.Multiple; 
 this.kanban.CardSelected += this.OnKanbanCardSelected;
 
-private void OnKanbanCardSelected(object sender KanbanCardSelectedEventArgs e) 
+private void OnKanbanCardSelected(object sender, KanbanCardSelectedEventArgs e)
 { 
     var selectedCard = e.SelectedCard; 
     var selectedCards = e.SelectedCards; 
@@ -1052,7 +1048,7 @@ public class ViewModel
 
 {% endtabs %}
 
-### CardDeselected
+## CardDeselected
 
 The CardDeselected event occurs when one or more cards are deselected in the Kanban board. The event is raised once per deselection update cycle.
 
@@ -1131,11 +1127,5 @@ public class ViewModel
 }
 
 {% endhighlight %}
-
-## Methods
-
-### GetSelectedCards
-
-The [GetSelectedCards()](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.html) method returns the collection of cards that are currently selected in the Kanban board.
 
 {% endtabs %}
