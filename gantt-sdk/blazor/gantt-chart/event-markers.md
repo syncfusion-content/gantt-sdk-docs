@@ -136,7 +136,7 @@ The following implementation demonstrates event marker integration within a Blaz
 {% endhighlight %}
 {% endtabs %}
 
-N> Multiple event markers may overlap when they are configured without the Top property or when the same Top value is assigned to multiple markers, as they are rendered at the same vertical position.
+N> Multiple event markers may overlap when they are configured without the `Top` property or when the same value is assigned to multiple markers, as they are rendered at the same vertical position.
 
 ## See also
 
