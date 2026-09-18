@@ -249,11 +249,11 @@ The supported page sizes are:
 
 ## Export current view records
 
-The PDF export functionality allows you to export only the records that are currently visible on the Gantt chart to a PDF document. This can be achieved by enabling the [IsCurrentViewExport](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.PdfExportEventArgs.html#Syncfusion_Blazor_Gantt_PdfExportEventArgs_IsCurrentViewExport) boolean property in the [PdfExporting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_PdfExporting) event.
+The PDF export functionality allows you to export only the records that are currently visible on the Blazor Gantt Chart to a PDF document. Achieve this by enabling the [IsCurrentViewExport](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.PdfExportEventArgs.html#Syncfusion_Blazor_Gantt_PdfExportEventArgs_IsCurrentViewExport) boolean property in the [PdfExporting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_PdfExporting) event.
 
 > Exporting current view records is only applicable when the virtualization feature is enabled, and it does not retain the state of collapsed rows during export.
 
-The following code demonstrates how to use the `PdfExporting` event to export the current view data of the Gantt chart to a PDF document:
+The following code demonstrates how to use the `PdfExporting` event to export the current view data of the Blazor Gantt Chart to a PDF document:
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -371,13 +371,13 @@ The following code demonstrates how to use the `PdfExporting` event to export th
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/VjhnZcLDMYskOirW?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## How to export Gantt chart with custom timeline range
+## How to export Blazor Gantt Chart with custom timeline range
 
-The PDF export functionality allows you to export a specific timeline range of the Gantt chart to a PDF document. To define the custom range, set the [RangeStart](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.PdfExportEventArgs.html#Syncfusion_Blazor_Gantt_PdfExportEventArgs_RangeStart) and [RangeEnd](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.PdfExportEventArgs.html#Syncfusion_Blazor_Gantt_PdfExportEventArgs_RangeEnd) properties within the [PdfExporting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_PdfExporting) event.
+The PDF export functionality allows you to export a specific timeline range of the Blazor Gantt Chart to a PDF document. To define the custom range, set the [RangeStart](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.PdfExportEventArgs.html#Syncfusion_Blazor_Gantt_PdfExportEventArgs_RangeStart) and [RangeEnd](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.PdfExportEventArgs.html#Syncfusion_Blazor_Gantt_PdfExportEventArgs_RangeEnd) properties within the [PdfExporting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_PdfExporting) event.
 
 The `RangeStart` property specifies the start date, and the `RangeEnd` property specifies the end date of the timeline range to be exported.
 
-The following code demonstrates how to use the `PdfExporting` event to export a custom timeline range of the Gantt chart to a PDF document:
+The following code demonstrates how to use the `PdfExporting` event to export a custom timeline range of the Blazor Gantt Chart to a PDF document:
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -655,13 +655,13 @@ To customize column widths in the exported PDF document, set the [Width](https:/
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/LNLHjQBNWaAWgqWE?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## How to export Gantt chart with specific columns
+## How to export Blazor Gantt Chart with specific columns
 
 ### Through property
 
-The PDF export functionality enables you to export only specific columns from the Gantt chart, rather than exporting all columns by default. To achieve this, set the [Columns](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttPdfExportProperties.html#Syncfusion_Blazor_Gantt_GanttPdfExportProperties_Columns) property of the [GanttPdfExportProperties](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttPdfExportProperties.html) class. This allows you to tailor the exported PDF to include only the columns that are relevant to your needs.
+The PDF export functionality enables you to export only specific columns from the Blazor Gantt Chart, rather than exporting all columns by default. To achieve this, set the [Columns](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttPdfExportProperties.html#Syncfusion_Blazor_Gantt_GanttPdfExportProperties_Columns) property of the [GanttPdfExportProperties](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttPdfExportProperties.html) class. This allows you to tailor the exported PDF to include only the columns that are relevant to your needs.
 
-The following code snippet demonstrates how to configure the `Columns` property to export specific columns from the Gantt chart to a PDF document:
+The following code snippet demonstrates how to configure the `Columns` property to export specific columns from the Blazor Gantt Chart to a PDF document:
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -745,9 +745,9 @@ The following code snippet demonstrates how to configure the `Columns` property 
 
 ### Through event
 
-The PDF export functionality allows you to export only specific columns from the Gantt chart, rather than exporting all columns by default. This can be achieved by using the `Columns` argument in the [PdfExporting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_PdfExporting) event.
+The PDF export functionality allows you to export only specific columns from the Blazor Gantt Chart, rather than exporting all columns by default. Achieve this using the `Columns` argument in the [PdfExporting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_PdfExporting) event.
 
-The following code demonstrates how to use the `PdfExporting` event to export specific columns of the Gantt chart to a PDF document,
+The following code demonstrates how to use the `PdfExporting` event to export specific columns of the Blazor Gantt Chart to a PDF document,
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -1030,7 +1030,7 @@ The following code snippet demonstrates how to use the `PdfQueryTaskbarInfo` eve
 
 ### Exporting with column template
 
-The PDF export functionality allows for advanced customization of Gantt chart columns, including the inclusion of images, background colors, and custom text. This can be achieved using the [PdfQueryCellInfo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_PdfQueryCellInfo) event. By handling this event, you can define how individual cells in the Gantt chart are rendered in the exported PDF.
+The PDF export functionality allows for advanced customization of Blazor Gantt Chart columns, including the inclusion of images, background colors, and custom text. This can be achieved using the [PdfQueryCellInfo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_PdfQueryCellInfo) event. By handling this event, you can define how individual cells in the Blazor Gantt Chart are rendered in the exported PDF.
 
 The following code snippet demonstrates how to use the `PdfQueryCellInfo` event to export Gantt columns with custom text and different cell background colors,
 

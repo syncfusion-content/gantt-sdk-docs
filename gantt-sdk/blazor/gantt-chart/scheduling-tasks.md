@@ -213,7 +213,7 @@ You can define the various types of unscheduled tasks in the data source as foll
 @using Syncfusion.Blazor.Gantt
 
 <SfGantt DataSource="@TaskCollection" Height="450px" Width="700px" AllowUnscheduledTasks="true">
-    <GanttTaskFields Id="TaskID" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
+    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate"
                      Duration="Duration" Progress="Progress">
     </GanttTaskFields>
 </SfGantt>
@@ -253,11 +253,11 @@ You can define the various types of unscheduled tasks in the data source as foll
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/hjVdNFtQpdpnXYkd?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-> If the [AllowUnscheduledTasks](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowUnscheduledTasks) property is set to **false**, then the Gantt Chart Component automatically calculates the scheduled date values with a default value of duration 1 and the project start date is considered as the start date for the task.
+> If the [AllowUnscheduledTasks](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowUnscheduledTasks) property is set to **false**, then the Blazor Gantt Chart Component automatically calculates the scheduled date values with a default value of duration 1 and the project start date is considered as the start date for the task.
 
 ## Working time range
 
-In the Gantt Chart component, working hours for all days of a project can be defined by using the [GanttDayWorkingTime](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttDayWorkingTimeCollection.html#Syncfusion_Blazor_Gantt_GanttDayWorkingTimeCollection_DayWorkingTime) property. Based on the working hours, automatic date scheduling and duration validations for a task are performed.
+In the Blazor Gantt Chart component, working hours for all days of a project can be defined by using the [GanttDayWorkingTime](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttDayWorkingTimeCollection.html#Syncfusion_Blazor_Gantt_GanttDayWorkingTimeCollection_DayWorkingTime) property. Based on the working hours, automatic date scheduling and duration validations for a task are performed.
 
 The following code snippet explains how to define the working time range for the project in Gantt.
 
@@ -378,7 +378,7 @@ Non-working days/weekend are used to represent the non-productive days in a proj
 
 ## Duration unit
 
-In the Gantt Chart, task durations can be measured using the following units:
+In the Blazor Gantt Chart, task durations can be measured using the following units:
 
 * Day
 * Hour
@@ -386,7 +386,7 @@ In the Gantt Chart, task durations can be measured using the following units:
 * Week
 * Month
 
-You can configure a default duration unit for the entire Gantt Chart using the `SfGantt.DurationUnit` property. The specified unit is applied to tasks for which a duration unit is not explicitly defined.
+You can configure a default duration unit for the entire Blazor Gantt Chart using the `SfGantt.DurationUnit` property. The specified unit is applied to tasks for which a duration unit is not explicitly defined.
 
 In addition to the global setting, individual tasks can be configured with different duration units. A task's duration unit can be specified by:
 
@@ -509,6 +509,6 @@ Duration units for the tasks can also be defined along with the duration values,
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/BNLdNPDmzTgcIjgR?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-> The edit type of the duration column in Gantt Chart is string, to support editing the duration field along with duration units.
+> The edit type of the duration column in Blazor Gantt Chart is string, to support editing the duration field along with duration units.
 
 > You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=fluent2) to know how to render and configure the Gantt.

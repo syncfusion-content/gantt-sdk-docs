@@ -16,7 +16,7 @@ The Syncfusion® Blazor Gantt Chart component includes built-in undo and redo fu
 
 ## Enable undo and redo
 
-The **Undo** in the Blazor Gantt Chart reverts the most recent action, such as modifications to tasks, dependencies, and other supported operations, while the **Redo** reapplies an action that was previously undone using the **Undo** option. This functionality can be enabled by setting the [EnableUndoRedo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_EnableUndoRedo) property in the Gantt Chart component. When enabled, undo and redo operations can be performed using the built-in toolbar items, and the [OnUndoRedo](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#onundoredo) event is triggered after each undo or redo operation is completed.
+The **Undo** in the Blazor Gantt Chart reverts the most recent action, such as modifications to tasks, dependencies, and other supported operations, while the **Redo** reapplies an action that was previously undone using the **Undo** option. This functionality can be enabled by setting the [EnableUndoRedo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_EnableUndoRedo) property in the Blazor Gantt Chart component. When enabled, undo and redo operations can be performed using the built-in toolbar items, and the [OnUndoRedo](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#onundoredo) event is triggered after each undo or redo operation is completed.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -301,7 +301,7 @@ In the following example, clicking an external button invokes the `UndoAsync` me
     }
 
     /// <summary>
-    /// Handles the undo action by invoking the Gantt Chart component's asynchronous undo logic.
+    /// Handles the undo action by invoking the Blazor Gantt Chart component's asynchronous undo logic.
     /// </summary>
     private async Task UndoHandler()
     {
@@ -313,7 +313,7 @@ In the following example, clicking an external button invokes the `UndoAsync` me
     }
 
     /// <summary>
-    /// Handles the redo action by invoking the Gantt Chart component's asynchronous redo logic.
+    /// Handles the redo action by invoking the Blazor Gantt Chart component's asynchronous redo logic.
     /// </summary>
     private async Task RedoHandler()
     {
