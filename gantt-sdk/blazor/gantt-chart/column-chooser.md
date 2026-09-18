@@ -93,7 +93,7 @@ You can add a custom column chooser option to the toolbar using the [Toolbar](ht
 
 ## Custom component in column chooser template
 
-You can customize the column chooser dialog in the Gantt Chart by assigning a custom template using the [GanttColumnChooserSettings.Template](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumnChooserSettings.html#Syncfusion_Blazor_Gantt_GanttColumnChooserSettings_Template) property. This allows you to render custom components or layouts within the column chooser.
+You can customize the column chooser dialog in the Blazor Gantt Chart by assigning a custom template using the [GanttColumnChooserSettings.Template](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumnChooserSettings.html#Syncfusion_Blazor_Gantt_GanttColumnChooserSettings_Template) property. This allows you to render custom components or layouts within the column chooser.
 
 The following sample renders a [ListView](https://blazor.syncfusion.com/documentation/listview/getting-started-webapp) inside the column chooser template to support grouped column selection. It also includes a search box for filtering columns based on user input.
 

@@ -71,7 +71,7 @@ By default, Gantt task date values are validated based on predecessor values. Yo
 
 ## Custom validation using TaskbarEditing event
 
-In Gantt Chart, the task relationship link can be broken by editing the start date, end date, or duration of a task. When the task relationship is broken during any edit action, it can be handled in Gantt Chart in the following ways.
+In Blazor Gantt Chart, the task relationship link can be broken by editing the start date, end date, or duration of a task. When the task relationship is broken during any edit action, it can be handled in Blazor Gantt Chart in the following ways.
 
 ### Validation mode
 
