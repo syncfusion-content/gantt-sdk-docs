@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Timeline View Modes and Configuration in Blazor Gantt Chart
+# Timeline View Modes and Configuration in Blazor Gantt Chart 
 
 The timeline in the Blazor Gantt Chart component represents project durations as cells with defined units and formats, supporting in-built view modes like Hour-Minute, Day-Hour, Week-Day, Month-Week, Year-Month, and Minutes for flexible visualization. Configure modes using the [TimelineViewMode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.TimelineViewMode.html) property, with top and bottom tiers customized via [TopTier.Unit](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTimelineTierSettings.html#Syncfusion_Blazor_Gantt_GanttTimelineTierSettings_Unit) and [BottomTier.Unit](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTimelineTierSettings.html#Syncfusion_Blazor_Gantt_GanttTimelineTierSettings_Unit) in [TimelineSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTimelineSettings.html). This enables detailed views, such as weekly overviews with daily breakdowns for projects, ensuring accurate timeline representation.
 
@@ -613,6 +613,93 @@ The following example demonstrates how to configure a fixed timeline range.
 
 {% endhighlight %}
 {% endtabs %}
+
+## Hide Weekends in Timeline 
+
+The Blazor Gantt Chart can hide weekend days from the timeline using the `ShowWeekend` property of [`GanttTimelineSettings`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTimelineSettings.html). 
+
+By default, weekends are displayed in the timeline. Setting `ShowWeekend` to `false` removes weekend days from the timeline and renders only working days, providing a compact project view focused on business schedules.
+
+This feature supports weekday-only operations and improves timeline readability by removing non-working days from the chart view.
+
+### Understanding Weekend Visibility
+
+The `ShowWeekend` property determines whether weekend days are displayed in the Gantt timeline. When enabled, both working days and weekends are rendered in the timeline. When disabled, weekend days are excluded from the timeline view, allowing the project schedule to focus only on working days.
+
+### Working days
+The working days of a project can be customized using the WorkWeek property. Days that are not included in the configured work week are considered non-working days. When `ShowWeekend` is set to `false`, only the configured working days are showed in the timeline, while all non-working days are hidden.
+
+### Key behaviors
+
+- **Default behavior**: Weekends are Showed in the timeline by default.
+- **Timeline rendering**: Setting `ShowWeekend` to `false` Hides weekend cells from the timeline.
+- **Working-day focus**: Projects can be displayed using only working days by excluding weekend cells from the timeline.
+- **Schedule visualization**: Tasks continue to follow their configured schedule while the timeline reflects the selected weekend visibility setting.
+
+The following example hides weekends in the Gantt Chart timeline by setting `ShowWeekend` to **false**.
+
+{% tabs %}
+{% highlight razor tabtitle="Home.razor" %}
+
+@using Syncfusion.Blazor.Gantt
+
+<SfGantt DataSource="@TaskCollection" Height="450px" Width="100%">
+
+    <GanttTaskFields Id="TaskId"
+                     Name="TaskName"
+                     StartDate="StartDate"
+                     EndDate="EndDate"
+                     Duration="Duration"
+                     Progress="Progress"
+                     ParentID="ParentId">
+    </GanttTaskFields>
+
+    <GanttTimelineSettings ShowWeekend="false"></GanttTimelineSettings>
+
+</SfGantt>
+
+@code {
+
+    public List<TaskData>? TaskCollection { get; set; }
+
+    protected override void OnInitialized()
+    {
+        TaskCollection = GetTaskCollection();
+    }
+
+    public class TaskData
+    {
+        public int TaskId { get; set; }
+        public string? TaskName { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime? EndDate { get; set; }
+        public string? Duration { get; set; }
+        public int Progress { get; set; }
+        public int? ParentId { get; set; }
+    }
+
+    public static List<TaskData> GetTaskCollection()
+    {
+        List<TaskData> Tasks = new List<TaskData>()
+        {
+            new TaskData() { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2026, 01, 05), EndDate = new DateTime(2026, 01, 16), },
+            new TaskData() { TaskId = 2, TaskName = "Identify Site location", StartDate = new DateTime(2026, 01, 05), Duration = "5", Progress = 30, ParentId = 1, },
+            new TaskData() { TaskId = 3, TaskName = "Perform soil test", StartDate = new DateTime(2026, 01, 05), EndDate = new DateTime(2026, 01, 08), Progress = 40, ParentId = 1, },
+            new TaskData() { TaskId = 4, TaskName = "Soil test approval", StartDate = new DateTime(2026, 01, 05), Duration = "9", Progress = 30, ParentId = 1, },
+            new TaskData() { TaskId = 5, TaskName = "Project estimation", StartDate = new DateTime(2026, 01, 05), EndDate = new DateTime(2026, 01, 10), },
+            new TaskData() { TaskId = 6, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2026, 01, 07), EndDate = new DateTime(2026, 01, 09), Progress = 30, ParentId = 5, },
+            new TaskData() { TaskId = 7, TaskName = "List materials", StartDate = new DateTime(2026, 01, 07), EndDate = new DateTime(2026, 01, 09), Progress = 40, ParentId = 5, },
+            new TaskData() { TaskId = 8, TaskName = "Estimation approval", StartDate = new DateTime(2026, 01, 07), Duration = "5", Progress = 30, ParentId = 5, }
+        };
+
+        return Tasks;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+>* The `ShowWeekend` property does not affect holiday rendering. Holidays remain visible in the timeline when `ShowWeekend` is set to `false`.
 
 ## See also
 - [How to configure taskbars?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/taskbar)
