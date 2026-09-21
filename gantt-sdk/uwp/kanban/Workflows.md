@@ -5,6 +5,7 @@ description: Learn about Workflows support in Syncfusion UWP Kanban Board to man
 platform: gantt-sdk
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Workflows in UWP Kanban Board

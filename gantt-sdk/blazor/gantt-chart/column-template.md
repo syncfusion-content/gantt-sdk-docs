@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Column Template - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Column Template for Custom Cell Rendering in Blazor Gantt Chart

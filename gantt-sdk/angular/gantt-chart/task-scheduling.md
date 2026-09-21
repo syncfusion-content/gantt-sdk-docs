@@ -6,6 +6,7 @@ platform: gantt-sdk
 control: Task scheduling 
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Task Scheduling in Angular Gantt Chart Component

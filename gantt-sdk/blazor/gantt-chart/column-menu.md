@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Column Menu - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Column Menu with Sort, Filter and Autofit in Blazor Gantt Chart

@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Frozen Columns - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Freezing and Pinning Columns for Fixed Visibility in React Gantt Chart

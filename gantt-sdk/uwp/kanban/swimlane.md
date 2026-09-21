@@ -5,6 +5,7 @@ description: Learn about Swimlane support in Syncfusion UWP Kanban Board using s
 platform: gantt-sdk
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 # Swimlane in UWP Kanban Board
 

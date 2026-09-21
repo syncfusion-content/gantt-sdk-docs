@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Row Selection - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Selecting Multiple Rows and Rows in Vue Gantt Chart

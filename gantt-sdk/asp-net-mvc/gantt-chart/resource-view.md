@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Resource View - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Resource View with Hierarchical Tasks in ASP.NET MVC Gantt Chart

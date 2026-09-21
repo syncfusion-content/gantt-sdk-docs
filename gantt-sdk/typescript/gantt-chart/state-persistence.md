@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: State Persistence - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # State Persistence with LocalStorage Support in TypeScript Gantt Chart

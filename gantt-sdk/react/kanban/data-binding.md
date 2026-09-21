@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Data Binding - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Data Binding in React Kanban

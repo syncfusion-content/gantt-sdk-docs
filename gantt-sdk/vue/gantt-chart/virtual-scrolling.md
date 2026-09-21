@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Virtual Scroll - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Implementing Virtual Scrolling for Performance in Vue Gantt Chart

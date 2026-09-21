@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Adding Tasks - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Adding New Tasks in JavaScript Gantt Chart

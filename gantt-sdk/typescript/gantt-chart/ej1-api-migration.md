@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: EJ1 API Migration - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Migration from Gantt EJ1 to TypeScript Gantt Chart EJ2

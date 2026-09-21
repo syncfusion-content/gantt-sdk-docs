@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Managing Tasks - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Overview of Task Management Features in Vue Gantt Chart

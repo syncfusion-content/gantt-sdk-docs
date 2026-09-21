@@ -5,6 +5,7 @@ description: Learn about Placeholder support in Syncfusion WPF SfKanban using Pl
 platform: gantt-sdk
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Placeholder in WPF SfKanban

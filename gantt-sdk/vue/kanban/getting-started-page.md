@@ -6,6 +6,7 @@ control: Getting started page
 platform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Getting Started with the Vue Kanban Component in Vue 3

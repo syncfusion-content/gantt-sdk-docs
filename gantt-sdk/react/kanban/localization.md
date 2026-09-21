@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Localization - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Localization and RTL Support in React Kanban

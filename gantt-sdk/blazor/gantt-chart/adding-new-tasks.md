@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Adding New Tasks - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Adding New Tasks with Toolbar and API in Blazor Gantt Chart

@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Column Chooser - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Column Chooser for Dynamic Visibility in Blazor Gantt Chart

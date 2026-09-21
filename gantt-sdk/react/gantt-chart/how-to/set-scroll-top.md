@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Scroll Position - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Set Vertical Scroll Position in React Gantt Chart

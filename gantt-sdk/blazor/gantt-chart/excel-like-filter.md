@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Excel Like Filter - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Excel-Like Filter with Checkbox and Search in Blazor Gantt Chart

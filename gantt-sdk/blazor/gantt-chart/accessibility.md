@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Accessibility - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Accessibility and ARIA Compliance in Blazor Gantt Chart

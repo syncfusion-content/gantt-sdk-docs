@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Columns - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Columns Configuration and Workflow Stages in TypeScript Kanban

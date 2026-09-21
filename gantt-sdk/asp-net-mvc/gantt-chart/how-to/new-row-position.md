@@ -5,6 +5,7 @@ description: Learn here all about New Row Position in Syncfusion ASP.NET MVC Gan
 platform: gantt-sdk
 control: New Row Position
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Set new row position in ASP.NET MVC Gantt Chart

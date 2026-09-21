@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Filter Menu - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Using Filter Menu for Data Filtering in TypeScript Gantt Chart

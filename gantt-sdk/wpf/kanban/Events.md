@@ -5,6 +5,7 @@ description: Learn about Events support in Syncfusion WPF Kanban Board, includin
 platform: gantt-sdk
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Events in WPF Kanban Board

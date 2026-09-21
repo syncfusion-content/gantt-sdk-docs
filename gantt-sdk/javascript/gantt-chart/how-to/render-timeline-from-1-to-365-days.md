@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Custom Timeline - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Render Timeline From 1 to 365 Days in JavaScript Gantt Chart

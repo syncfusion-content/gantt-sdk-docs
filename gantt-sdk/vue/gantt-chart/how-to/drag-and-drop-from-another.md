@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Drag and Drop from Another - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Drag and Drop from Another Component in Vue Gantt Chart

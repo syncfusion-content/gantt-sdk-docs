@@ -5,6 +5,7 @@ description: Learn about Resource View Gantt Inline Items support in Syncfusion 
 platform: gantt-sdk
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Resource View Gantt Inline Items in WPF Gantt

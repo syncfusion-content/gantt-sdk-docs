@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Virtualization - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Row and Column Virtualization in Blazor Gantt Chart

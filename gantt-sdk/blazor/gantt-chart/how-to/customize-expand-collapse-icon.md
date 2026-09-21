@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Expand Collapse Icon - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Customizing Expand and Collapse Icons in Blazor Gantt Chart

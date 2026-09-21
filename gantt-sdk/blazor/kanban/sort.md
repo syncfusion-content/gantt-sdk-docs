@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Sorting - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Sorting Cards and Columns by Priority in Blazor Kanban

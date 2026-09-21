@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Columns - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Column Reordering in ASP.NET MVC Gantt Chart

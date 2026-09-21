@@ -5,7 +5,7 @@ description: Learn here about the common installation errors and solution to tho
 platform: gantt-sdk
 control: Installation and Deployment
 documentation: ug
-
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 

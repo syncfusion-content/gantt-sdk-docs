@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: PDF Export - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Exporting the Gantt Chart as a PDF Document in React Gantt Chart

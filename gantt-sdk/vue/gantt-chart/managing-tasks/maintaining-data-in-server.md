@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Maintaining Data in Server - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Maintaining Data Persistence on Server in Vue Gantt Chart

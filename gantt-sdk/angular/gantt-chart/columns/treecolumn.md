@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Tree Column - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Tree Column with Expand and Collapse Hierarchy in Angular Gantt Chart

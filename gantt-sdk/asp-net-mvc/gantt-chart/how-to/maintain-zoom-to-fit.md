@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: How-to - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Maintaining Zoom-to-Fit Behavior in ASP.NET MVC Gantt Chart

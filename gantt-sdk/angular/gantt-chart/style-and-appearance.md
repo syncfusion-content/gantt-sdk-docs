@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Style and Appearance - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Style and Appearance with CSS and Theme Support in Angular Gantt Chart

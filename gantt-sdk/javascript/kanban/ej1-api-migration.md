@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: EJ1 API Migration - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # EJ1 to EJ2 API Migration in JavaScript Kanban

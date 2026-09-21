@@ -5,7 +5,7 @@ description: Learn how to download the Syncfusion Gantt SDK web installer from t
 platform: gantt-sdk
 control: Installation and Deployment
 documentation: ug
-
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Downloading Syncfusion Gantt SDK Web Installer

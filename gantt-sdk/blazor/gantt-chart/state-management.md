@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: State Management - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # State Persistence and Restoration in Blazor Gantt Chart

@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: PDF Headers and Footers - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Adding Headers and Footers to PDF Exports in TypeScript Gantt Chart

@@ -9,6 +9,7 @@ control: Task Scheduling - Gantt Chart
 publishingplatform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Task Scheduling Modes with Auto and Manual in Vue Gantt Chart

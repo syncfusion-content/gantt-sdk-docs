@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Holidays - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Holidays and Non-Working Days in React Gantt Chart

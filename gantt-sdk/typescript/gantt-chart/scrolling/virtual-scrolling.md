@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Virtual Scrolling - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Implement Virtual Scrolling in TypeScript Gantt Chart

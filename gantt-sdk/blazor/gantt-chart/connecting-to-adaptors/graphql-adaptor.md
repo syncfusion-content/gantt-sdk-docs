@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: GraphQL Adaptor - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # GraphQL Adaptor for Data Binding in Blazor Gantt Chart

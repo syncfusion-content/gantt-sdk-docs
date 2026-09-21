@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Frozen Columns - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Freeze Columns for Fixed Visibility in Blazor Gantt Chart

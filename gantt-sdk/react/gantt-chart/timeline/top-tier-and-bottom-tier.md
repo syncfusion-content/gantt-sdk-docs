@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Top and Bottom Tier - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Customizing Top and Bottom Timeline Tiers in React Gantt Chart

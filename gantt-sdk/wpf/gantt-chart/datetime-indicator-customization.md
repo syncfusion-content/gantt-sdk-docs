@@ -5,6 +5,7 @@ description: Learn about DateTime Indicator Customization support in Syncfusion 
 platform: gantt-sdk
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # DateTime Indicator Customization in WPF Gantt

@@ -7,7 +7,8 @@ canonical: https://www.syncfusion.com/gantt-sdk/aspnet-core-gantt-chart
 platform: gantt-sdk
 control: Getting Started - Gantt Chart
 documentation: ug
-domainurl: https://help.syncfusion.com/gantt-sdk/overview
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK/overview
 ---
 
 # Getting Started with ASP.NET Core Gantt Chart
