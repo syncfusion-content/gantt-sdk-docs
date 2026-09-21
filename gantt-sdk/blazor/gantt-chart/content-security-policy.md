@@ -40,7 +40,7 @@ These styles are applied at runtime and blocked under strict CSP.
 
 ### How to use plain text only ?
 
-If you don't need rich text formatting in Notes, just use plain text. The rest of the Gantt Chart will work fully under strict CSP.
+If you don't need rich text formatting in Notes, just use plain text. The rest of the Blazor Gantt Chart will work fully under strict CSP.
 
 ## Recommended CSP configurations
 
@@ -61,7 +61,7 @@ Use this configuration if you don't use rich text formatting in Notes (or don't 
                upgrade-insecure-requests;">
 ```
 
-This configuration maintains full security for the Gantt Chart's project management and visualization features.
+This configuration maintains full security for the Blazor Gantt Chart's project management and visualization features.
 
 ### Relaxed CSP (with rich text notes)
 

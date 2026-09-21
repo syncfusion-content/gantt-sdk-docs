@@ -889,6 +889,8 @@ N> Multi-card drag and drop is enabled only when `CardSelectionType` is set to `
 
 When a card is selected in the Kanban control, its appearance can be customized using the predefined theme keys. These theme keys allow you to modify the selected card's background and border colors to match your application's visual style.
 
+The [GetSelectedCards](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.html) method returns the collection of cards that are currently selected in the Kanban board.
+
 #### Selected card theme keys
 
 The following theme keys control the appearance of a selected card:

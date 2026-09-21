@@ -20,7 +20,7 @@ The Blazor Gantt Chart component supports a two-tier timeline layout, enabling c
 - [Count](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTimelineTierSettings.html#Syncfusion_Blazor_Gantt_GanttTimelineTierSettings_Count): Combines multiple time units into a single timeline cell.
 - [Formatter](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTimelineTierSettings.html#Syncfusion_Blazor_Gantt_GanttTimelineTierSettings_Formatter): Applies a custom method to format the timeline cell values programmatically.
 
-These properties allow precise control over how time intervals are displayed, enhancing the readability and usability of the Gantt chart across various project scales.
+These properties allow precise control over how time intervals are displayed, enhancing the readability and usability of the Blazor Gantt Chart across various project scales.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
