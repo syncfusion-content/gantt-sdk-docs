@@ -446,7 +446,6 @@ The [CardSelectionType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Ka
 
 - Use <kbd>Ctrl</kbd> + <kbd>Click</kbd> to add or remove an individual card from the current selection.
 - Use <kbd>Shift</kbd> + <kbd>Click</kbd> to select a range of cards within the same column.
-- Use <kbd>Shift</kbd> + <kbd>Up Arrow</kbd> and <kbd>Shift</kbd> + <kbd>Down Arrow</kbd> to extend or reduce the current selection range within a column.
 
 {% tabs %}
 {% highlight XAML hl_lines="2" %}
@@ -486,6 +485,8 @@ N> Multi-card drag and drop is enabled only when [CardSelectionType](https://hel
 ### Selected card in WPF Kanban control
 
 You can customize the appearance of a selected card in the Kanban control using the [SelectedBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.html) property of [KanbanCardStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.html). This property enables you to visually highlight the selected card by changing its border color. Additionally, you can customize the card's border color when the mouse pointer hovers over it by using the [HoverBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.html) property of `KanbanCardStyle`.
+
+The [GetSelectedCards](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.html) method returns the collection of cards that are currently selected in the Kanban board.
 
 {% tabs %}
 

@@ -65,7 +65,7 @@ The Blazor Gantt Chart component supports comprehensive [keyboard interaction](h
 
 | Windows | Mac | Action |
 |---------|-----|--------|
-| <kbd>Alt</kbd> + <kbd>J</kbd> | <kbd>⌥</kbd> + <kbd>J</kbd> | Focuses the entire Gantt chart. |
+| <kbd>Alt</kbd> + <kbd>J</kbd> | <kbd>⌥</kbd> + <kbd>J</kbd> | Focuses the entire Blazor Gantt Chart. |
 | <kbd>Home</kbd> | <kbd>Fn</kbd> + <kbd>←</kbd> | Moves focus to the first cell of the current row. |
 | <kbd>End</kbd> | <kbd>Fn</kbd> + <kbd>→</kbd> | Moves focus to the last cell of the current row. |
 | <kbd>Ctrl</kbd> + <kbd>Home</kbd> | <kbd>⌘</kbd> + <kbd>Fn</kbd> + <kbd>←</kbd> | Moves focus to the first cell of the first row. |

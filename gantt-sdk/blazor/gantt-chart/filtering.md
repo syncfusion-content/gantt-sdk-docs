@@ -12,9 +12,9 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Filter Records with Column Criteria in Blazor Gantt Chart
 
-Filtering allows you to view specific or related records based on defined criteria. The Gantt Chart component supports options like filter menu, Excel-like filtering, and toolbar search to narrow down visible data.
+Filtering allows you to view specific or related records based on defined criteria. The Blazor Gantt Chart component supports options like filter menu, Excel-like filtering, and toolbar search to narrow down visible data.
 
-To enable filtering, set [AllowFiltering](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowFiltering) to **true** in the Gantt Chart configuration. You can define filter options using [GanttFilterSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttFilterSettings.html) and configure toolbar search using [GanttSearchSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSearchSettings.html) property.
+To enable filtering, set [AllowFiltering](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowFiltering) to **true** in the Blazor Gantt Chart configuration. You can define filter options using [GanttFilterSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttFilterSettings.html) and configure toolbar search using [GanttSearchSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSearchSettings.html) property.
 
 > The  filtering UI is rendered based on the column type, allowing data to be filtered using appropriate operators.
 > The filter menu is enabled by default. To disable the filtering option for a specific column, set the `AllowFiltering` property of the `GanttColumn` to **false**.
@@ -376,7 +376,7 @@ The example below demonstrates how to filter the **TaskName** and **TaskID** col
 
 ## Clear filtered columns
 
-You can clear all the filtering conditions applied in the Gantt Chart component by using the [ClearFilteringAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ClearFilteringAsync) method.
+You can clear all the filtering conditions applied in the Blazor Gantt Chart component by using the [ClearFilteringAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ClearFilteringAsync) method.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -451,7 +451,7 @@ You can clear all the filtering conditions applied in the Gantt Chart component 
 
 ## Enable different filter for a column
 
-You can enable different filter types for individual columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart component by setting the[GanttColumn.FilterSettings.Type](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.FilterSettings.html#Syncfusion_Blazor_Grids_FilterSettings_Type) property.
+You can enable different filter types for individual columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component by setting the[GanttColumn.FilterSettings.Type](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.FilterSettings.html#Syncfusion_Blazor_Grids_FilterSettings_Type) property.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -581,7 +581,7 @@ You can enable different filter types for individual columns in the Syncfusion<s
 
 ## Get filtered records
 
-You can retrieve filtered records from the Gantt Chart component using the [GetFilteredRecordsAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_GetFilteredRecordsAsync) method. 
+You can retrieve filtered records from the Blazor Gantt Chart component using the [GetFilteredRecordsAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_GetFilteredRecordsAsync) method. 
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -692,7 +692,7 @@ You can retrieve filtered records from the Gantt Chart component using the [GetF
 
 ## Customize filtering action
 
-You can customize the filtering behavior in the Gantt Chart component using the [FilterDialogOpening](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_FilterDialogOpening), [FilterDialogOpened](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_FilterDialogOpened), [Filtering](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_Filtering), and [Filtered](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_Filtered) events.
+You can customize the filtering behavior in the Blazor Gantt Chart component using the [FilterDialogOpening](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_FilterDialogOpening), [FilterDialogOpened](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_FilterDialogOpened), [Filtering](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_Filtering), and [Filtered](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_Filtered) events.
 
 The following `Filtering` event cancels the filter action for the **TaskName** column.
 
