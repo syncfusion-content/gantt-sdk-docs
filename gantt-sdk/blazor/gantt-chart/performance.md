@@ -51,6 +51,43 @@ To improve performance when working with large datasets, you can disable this au
 ```
 N> When setting `AutoCalculateDateScheduling` property to **false**, you must provide the valid data source; otherwise, the Blazor Gantt Chart will render with invalid dates.
 
+## Performance benchmarks
+
+The following tables show typical load times for Blazor Gantt Chart configurations with and without virtualization. The results compare Blazor Server and Blazor WebAssembly (WASM) applications across common task and feature combinations.
+
+**Test environment**
+
+- **Component Version:** Syncfusion Blazor 35.1.*
+- **.NET Version:** 10.0.401
+- **Browser:** Google Chrome 153.0.8010.37
+- **Operating System:** Windows 11
+- **CPU:** 11th Gen Intel® Core™ i5-1135G7
+- **RAM:** 16 GB
+
+### 2,500 tasks (non-virtualized)
+
+| Scenario | Server load time (s) | WASM load time (s) |
+|---|---:|---:|
+| Default hierarchy (Parent + Child + Auto Validation) | 3.51 | 40.24 |
+| + Dependency | 4.15 | 54.19 |
+| + Resources | 4.18 | 58.23 |
+| + Split Taskbars | 4.95 | 60.78 |
+| + Resources (Without Validation) | 4.88 | 60.73 |
+| Resource View | 3.15 | 40.46 |
+| Resource View + Dependency | 3.48 | 53.52 |
+
+### 25,000 tasks (virtualized)
+
+| Scenario | Server load time (s) | WASM load time (s) |
+|---|---:|---:|
+| Default hierarchy (Parent + Child + Auto Validation) | 0.35 | 37.78 |
+| + Dependency | 2.32 | 138.65 |
+| + Resources | 2.15 | 146.79 |
+| + Split Taskbars | 2.51 | 197.29 |
+| + Resources (Without Validation) | 2.06 | 143.55 |
+| Resource View | 1.29 | 90.39 |
+| Resource View + Dependency | 2.81 | 194.16 |
+
 ## How to improve loading performance when binding large data by showing custom text or element?
 
 When integrating images or custom template elements into Blazor Gantt Chart columns in the Blazor Gantt Chart, it is recommended to use the [Column Template](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/column-template) feature rather than customizing data through event handlers such as [RowDataBound](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#rowdatabound) or [QueryCellInfo](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#querycellinfo). These events are triggered for every row and cell during rendering, which can significantly slow down the component’s rendering process, especially with large datasets. Additionally, using these events for custom element rendering can lead to performance degradation over time due to the accumulation of rendered elements.
@@ -99,7 +136,7 @@ By considering these factors and implementing the recommended solutions, you can
 
 For more detailed guidance, refer to the [documentation](https://learn.microsoft.com/en-us/aspnet/core/blazor/host-and-deploy/server?view=aspnetcore-8.0) on hosting and deploying Blazor applications.
 
-## Microsoft excel limitation while exporting millions of records to excel file format
+## Microsoft Excel limitation while exporting millions of records to excel file format
 
 Microsoft Excel supports a maximum of 1,048,576 rows per sheet. Therefore, it is not feasible to export millions of records into a single Excel file due to this limitation. For handling large datasets, consider exporting data in formats such as CSV (Comma-Separated Values), which can efficiently manage larger volumes of data.
 For more details on Microsoft Excel's specifications and limits, you can refer to the official [documentation](https://support.microsoft.com/en-us/excel/excel-specifications-and-limits).
