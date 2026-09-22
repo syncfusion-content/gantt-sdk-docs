@@ -12,11 +12,11 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Row Selection with Single and Multiple Modes in Blazor Gantt Chart
 
-The  Blazor Gantt Chart Component supports row selection using mouse clicks or keyboard navigation (arrow keys). This enables users to highlight, manipulate, or trigger actions on selected task rows.
+The Blazor Gantt Chart Component supports row selection using mouse clicks or keyboard navigation (arrow keys). This enables users to highlight, manipulate, or trigger actions on selected task rows.
 
 ## Enable single row selection
 
-You can enable single row selection in the Gantt Chart component by setting [SelectionSettings.Mode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SelectionMode.html) to **Row** and [SelectionSettings.Type](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SelectionType.html) to **Single**. This allows you to select only one task row at a time.
+You can enable single row selection in the Blazor Gantt Chart component by setting [SelectionSettings.Mode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SelectionMode.html) to **Row** and [SelectionSettings.Type](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SelectionType.html) to **Single**. This allows you to select only one task row at a time.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -70,11 +70,11 @@ You can enable single row selection in the Gantt Chart component by setting [Sel
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/VNVdjHCbSdDNlUmQ?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-N> `Row` selection is the default type of Gantt Chart selection mode.
+N> `Row` selection is the default type of Blazor Gantt Chart selection mode.
 
 ## Enable multiple row selection
 
-You can enable multiple row selection in the Gantt Chart component by setting  [SelectionSettings.Mode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SelectionMode.html) to **Row** and [SelectionSettings.Type](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SelectionType.html) to **Multiple**. This allows selection of more than one task row at a time by holding down the **Ctrl** key while clicking on multiple rows.
+You can enable multiple row selection in the Blazor Gantt Chart component by setting  [SelectionSettings.Mode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SelectionMode.html) to **Row** and [SelectionSettings.Type](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SelectionType.html) to **Multiple**. This allows selection of more than one task row at a time by holding down the **Ctrl** key while clicking on multiple rows.
 
 
 {% tabs %}
@@ -131,7 +131,7 @@ You can enable multiple row selection in the Gantt Chart component by setting  [
 
 ## Select row at initial rendering
 
-You can highlight or pre-select a specific row during the initial rendering of the Gantt Chart component by setting the [SelectedRowIndex](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_SelectedRowIndex) property. This selects the row at the specified index when the Gantt Chart loads.
+You can highlight or pre-select a specific row during the initial rendering of the Blazor Gantt Chart component by setting the [SelectedRowIndex](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_SelectedRowIndex) property. This selects the row at the specified index when the Blazor Gantt Chart loads.
 
 The following example selects the row at index 3 during initial load:
 
@@ -193,7 +193,7 @@ You can programmatically or dynamically select single rows, multiple rows, or a 
 
 ### Single row selection
 
-Select a single row in the Gantt Chart component by calling the [SelectRowAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_SelectRowAsync_System_Int32_System_Boolean_) method with the desired row index.
+Select a single row in the Blazor Gantt Chart component by calling the [SelectRowAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_SelectRowAsync_System_Int32_System_Boolean_) method with the desired row index.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -269,7 +269,7 @@ Select a single row in the Gantt Chart component by calling the [SelectRowAsync]
 
 ### Multiple rows selection
 
-Select multiple rows in the Gantt Chart component by using the [SelectRowsAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_SelectRowsAsync_System_Int32___) method with an array of row indexes.
+Select multiple rows in the Blazor Gantt Chart component by using the [SelectRowsAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_SelectRowsAsync_System_Int32___) method with an array of row indexes.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}

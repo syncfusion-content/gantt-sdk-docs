@@ -23,11 +23,11 @@ N> When using `DataSource` as `IEnumerable<T>`, component type(TValue) will be i
 
 ## TaskFields mapping
 
-Bind data with the Gantt Chart component using the [DataSource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_DataSource) property. It accepts the list objects or the [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html) instance.
+Bind data with the Blazor Gantt Chart component using the [DataSource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_DataSource) property. It accepts the list objects or the [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html) instance.
 
-Additionally, map task-related fields from the data source to the Gantt Chart component using the [GanttTaskFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html) property. This property ensures that the necessary task fields, such as [Id](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_Id), [Name](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_Name), [StartDate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_StartDate), [EndDate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_EndDate), [Duration](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_Duration), and [ParentID](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_ParentID) are properly linked to the corresponding data source fields, allowing the Gantt Chart to render tasks accurately. The columns in the Gantt Chart are automatically rendered based on the properties specified in `GanttTaskFields`, ensuring that the necessary columns are displayed to represent the task data.
+Additionally, map task-related fields from the data source to the Blazor Gantt Chart component using the [GanttTaskFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html) property. This property ensures that the necessary task fields, such as [Id](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_Id), [Name](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_Name), [StartDate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_StartDate), [EndDate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_EndDate), [Duration](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_Duration), and [ParentID](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_ParentID) are properly linked to the corresponding data source fields, allowing the Blazor Gantt Chart to render tasks accurately. The columns in the Blazor Gantt Chart are automatically rendered based on the properties specified in `GanttTaskFields`, ensuring that the necessary columns are displayed to represent the task data.
 
-The following sample shows self-referential data binding in the Gantt Chart by mapping the data source fields to the `Id` and `ParentID` properties.
+The following sample shows self-referential data binding in the Blazor Gantt Chart by mapping the data source fields to the `Id` and `ParentID` properties.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -184,13 +184,13 @@ This approach enables the component to reconstruct hierarchical tree structures 
 
 ### DynamicObject binding
 
-To handle scenarios where the data model is not defined at compile time, the Gantt Chart can be bound to a list of **DynamicObject** using the [DataSource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_DataSource) property. This enables full support for data operations and editing without requiring a strongly typed model.
+To handle scenarios where the data model is not defined at compile time, the Blazor Gantt Chart can be bound to a list of **DynamicObject** using the [DataSource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_DataSource) property. This enables full support for data operations and editing without requiring a strongly typed model.
 
 **When to use DynamicObject vs. strongly typed models:**
 - **Use strongly typed models** (recommended) when your data structure is known at compile time. They provide better IntelliSense support, compile-time type checking, and superior performance.
 - **Use DynamicObject** only when working with truly dynamic or variable data structures that cannot be defined as a class at compile time, such as data from NoSQL databases or user-generated schemas.
 
-> The [GetDynamicMemberNames](https://learn.microsoft.com/en-us/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames?view=net-8.0) method of the `DynamicObject` class must be overridden to return the property names required for rendering, data operations, editing, and other related functionalities when using **DynamicObject** with the Gantt Chart.
+> The [GetDynamicMemberNames](https://learn.microsoft.com/en-us/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames?view=net-8.0) method of the `DynamicObject` class must be overridden to return the property names required for rendering, data operations, editing, and other related functionalities when using **DynamicObject** with the Blazor Gantt Chart.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -298,7 +298,7 @@ To handle scenarios where the data model is not defined at compile time, the Gan
 
 ### ExpandoObject Binding
 
-To handle scenarios where the model type is unknown at compile time, the Gantt Chart can be bound to a list of **ExpandoObject** using the [DataSource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_DataSource) property. This enables full support for rendering, data operations, editing, and other related functionalities without requiring a strongly typed model.
+To handle scenarios where the model type is unknown at compile time, the Blazor Gantt Chart can be bound to a list of **ExpandoObject** using the [DataSource](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_DataSource) property. This enables full support for rendering, data operations, editing, and other related functionalities without requiring a strongly typed model.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -374,11 +374,11 @@ To handle scenarios where the model type is unknown at compile time, the Gantt C
 
 ## Observable collection and INotifyPropertyChanged
 
-The Gantt chart supports to automatically update data based on `INotifyCollectionChanged` and `INotifyPropertyChanged` interface.
+The Blazor Gantt Chart supports to automatically update data based on `INotifyCollectionChanged` and `INotifyPropertyChanged` interface.
 
 ### Observable collection
 
-To handle dynamic changes in the data source, the Gantt Chart supports binding to an [ObservableCollection](https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=net-6.0). This collection implements the [INotifyCollectionChanged](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?view=net-6.0) interface, which automatically notifies the UI when items are added, removed, moved, or cleared.
+To handle dynamic changes in the data source, the Blazor Gantt Chart supports binding to an [ObservableCollection](https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=net-6.0). This collection implements the [INotifyCollectionChanged](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?view=net-6.0) interface, which automatically notifies the UI when items are added, removed, moved, or cleared.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -500,7 +500,7 @@ To handle dynamic changes in the data source, the Gantt Chart supports binding t
 
 ### INotifyPropertyChanged
 
-The Gantt chart provides support to update its data automatically when an item's property value changes, if the item implements the [INotifyPropertyChanged](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=net-6.0) interface.
+The Blazor Gantt Chart provides support to update its data automatically when an item's property value changes, if the item implements the [INotifyPropertyChanged](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=net-6.0) interface.
 
 This interface is used to notify that a property value has changed. For example, `TaskData` raises the `PropertyChanged` event when **TaskName** is updated, allowing Gantt to reflect the change without a manual refresh.
 
@@ -604,7 +604,7 @@ To bind remote data to the Gantt component, assign service data as an instance o
 
 ### Web API adaptor
 
-The Gantt Chart component utilizes the **WebApiAdaptor**, an extension of the **ODataAdaptor**, for seamless integration with Web API services, including OData V4 endpoints. This adaptor supports efficient data retrieval and operations such as sorting, filtering, searching, and paging. It communicates with Web API endpoints using HTTP requests in JSON format, ensuring compatibility with OData-formatted queries for stable connectivity to remote data sources.
+The Blazor Gantt Chart component utilizes the **WebApiAdaptor**, an extension of the **ODataAdaptor**, for seamless integration with Web API services, including OData V4 endpoints. This adaptor supports efficient data retrieval and operations such as sorting, filtering, searching, and paging. It communicates with Web API endpoints using HTTP requests in JSON format, ensuring compatibility with OData-formatted queries for stable connectivity to remote data sources.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -638,7 +638,7 @@ The Gantt Chart component utilizes the **WebApiAdaptor**, an extension of the **
 
 ### ODataV4 adaptor
 
-The Gantt Chart component seamlessly integrates with OData V4 services via the **ODataV4Adaptor**., enabling efficient data retrieval and operations like sorting, filtering, searching, and paging using a queryable Entity Data Model (EDM), ensuring compatibility with the advanced features offered by the OData V4 protocol. For more details on OData v4 services, refer to the [OData documentation](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html).
+The Blazor Gantt Chart component seamlessly integrates with OData V4 services via the **ODataV4Adaptor**., enabling efficient data retrieval and operations like sorting, filtering, searching, and paging using a queryable Entity Data Model (EDM), ensuring compatibility with the advanced features offered by the OData V4 protocol. For more details on OData v4 services, refer to the [OData documentation](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html).
 
 {% tabs %}
 
@@ -1094,7 +1094,7 @@ namespace WebAPI.Controller
 {% endtabs %}
 
 > * Filtering and searching are not supported in load on demand.
-> * Only Self-Referential type data is supported with remote data binding in Gantt Chart.
+> * Only Self-Referential type data is supported with remote data binding in Blazor Gantt Chart.
 > * Load-on-demand supports only the validated data source.
 
 N>You can find the sample for load on demand [here](https://github.com/SyncfusionExamples/Lazy-Loading-in-Blazor-Gantt-Chart).

@@ -12,9 +12,9 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Event Markers for Milestone Highlights in Blazor Gantt Chart
 
-The Event Markers in the Gantt Chart component are used to highlight the important events in a project. Event markers can be initialized using the [GanttEventMarkers](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEventMarkers.html) property, and you can define date and label for the event markers using the [Day](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEventMarker.html#Syncfusion_Blazor_Gantt_GanttEventMarker_Day) and [Label](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEventMarker.html#Syncfusion_Blazor_Gantt_GanttEventMarker_Label) property. You can also customize it using the [CssClass](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEventMarker.html#Syncfusion_Blazor_Gantt_GanttEventMarker_CssClass) property. The following code example shows how to add event markers in the Gantt Chart component.
+The Event Markers in the Blazor Gantt Chart component are used to highlight the important events in a project. Event markers can be initialized using the [GanttEventMarkers](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEventMarkers.html) property, and you can define date and label for the event markers using the [Day](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEventMarker.html#Syncfusion_Blazor_Gantt_GanttEventMarker_Day) and [Label](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEventMarker.html#Syncfusion_Blazor_Gantt_GanttEventMarker_Label) property. You can also customize it using the [CssClass](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEventMarker.html#Syncfusion_Blazor_Gantt_GanttEventMarker_CssClass) property. The following code example shows how to add event markers in the Blazor Gantt Chart component.
 
-Event markers highlight significant project events by displaying vertical timeline indicators that span across the entire Gantt chart. These markers identify critical dates, milestones, deadlines, or important project events that affect multiple tasks or the overall project timeline, providing visual reference points for project-wide activities.
+Event markers highlight significant project events by displaying vertical timeline indicators that span across the entire Blazor Gantt Chart. These markers identify critical dates, milestones, deadlines, or important project events that affect multiple tasks or the overall project timeline, providing visual reference points for project-wide activities.
 
 Understanding event markers implementation enables effective visualization of project-critical dates and enhances timeline awareness across all project phases.
 
@@ -36,7 +36,7 @@ Event markers render as vertical lines positioned at specific dates across the e
 
 **Multiple marker support**: The component supports multiple event markers simultaneously, allowing comprehensive tracking of various project-critical dates within the same timeline view. Each marker maintains independent configuration while sharing the common timeline space.
 
-The following implementation demonstrates event marker integration within a Gantt chart, showcasing timeline-wide event highlighting:
+The following implementation demonstrates event marker integration within a Blazor Gantt Chart, showcasing timeline-wide event highlighting:
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -73,7 +73,7 @@ The following implementation demonstrates event marker integration within a Gant
 	public DateTime DesignPhaseDate { get; set; } = new DateTime(2026, 04, 30);
 
 	/// <summary>
-	/// Initializes the sample by loading task data for the Gantt chart.
+	/// Initializes the sample by loading task data for the Blazor Gantt Chart.
 	/// </summary>
 	protected override async Task OnInitializedAsync()
 	{
@@ -136,7 +136,7 @@ The following implementation demonstrates event marker integration within a Gant
 {% endhighlight %}
 {% endtabs %}
 
-N> Multiple event markers may overlap when they are configured without the Top property or when the same Top value is assigned to multiple markers, as they are rendered at the same vertical position.
+N> Multiple event markers may overlap when they are configured without the `Top` property or when the same value is assigned to multiple markers, as they are rendered at the same vertical position.
 
 ## See also
 

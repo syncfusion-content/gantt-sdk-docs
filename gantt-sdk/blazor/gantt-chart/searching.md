@@ -312,7 +312,7 @@ N> You should set the `AllowFiltering` property to `true` for searching the cont
 
 ## Search specific columns
 
-To search specific columns in the Gantt Chart component, use the [GanttSearchSettings.Fields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSearchSettings.html#Syncfusion_Blazor_Gantt_GanttSearchSettings_Fields) property. This allows you to define which column fields should be included in the search, instead of searching across all columns by default.
+To search specific columns in the Blazor Gantt Chart component, use the [GanttSearchSettings.Fields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSearchSettings.html#Syncfusion_Blazor_Gantt_GanttSearchSettings_Fields) property. This allows you to define which column fields should be included in the search, instead of searching across all columns by default.
 
 This following sample demonstrates searching only within the **TaskName** and **Duration** columns.
 
