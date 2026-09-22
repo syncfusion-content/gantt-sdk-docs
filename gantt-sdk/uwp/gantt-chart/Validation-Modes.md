@@ -5,6 +5,7 @@ description: Learn about Validation Modes support in Syncfusion UWP SfGantt usin
 platform: gantt-sdk
 control: SfGantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Validation Modes in UWP SfGantt

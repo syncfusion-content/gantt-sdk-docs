@@ -5,6 +5,7 @@ description: Learn about Holidays Customization support in Syncfusion WPF Gantt 
 platform: gantt-sdk
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Holidays Customization in WPF Gantt
