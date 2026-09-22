@@ -33,12 +33,7 @@
                     {
                         from = new DateTime(2026, 4, 9),
                         to = new DateTime(2026, 4, 9),
-                        name = "Team Meeting Day",
-                        isWorking = true,
-                        workingTime = new[]
-                        {
-                            new { from = 10, to = 16 }
-                        }
+                        label = "Team Meeting Day"
                     }
                 }
             },

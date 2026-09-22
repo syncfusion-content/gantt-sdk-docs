@@ -33,9 +33,7 @@ function App() {
         {
           from: new Date("04/06/2026"),
           to: new Date("04/06/2026"),
-          name: "Extended Working Day",
-          isWorking: true,
-          workingTime: [{ from: 8, to: 18 }],
+          label: "Extended Working Day"
         },
       ],
     },
