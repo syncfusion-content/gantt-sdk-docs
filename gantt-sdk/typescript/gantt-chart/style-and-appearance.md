@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Style and Appearance with CSS and Theme Support in TypeScript Gantt Chart
+# Style and Appearance in TypeScript Gantt Chart
 
 Customize the appearance of the TypeScript Gantt Chart by overriding default CSS styles. The TypeScript Gantt Chart provides a comprehensive set of CSS classes for targeting specific sections, allowing a tailored design that matches application branding. [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=tailwind3) can create custom themes for all JavaScript controls.
 
