@@ -37,12 +37,7 @@
                 {
                     from = new DateTime(2026, 4, 6),
                     to = new DateTime(2026, 4, 6),
-                    name = "Extended Working Day",
-                    isWorking = true,
-                    workingTime = new[]
-                    {
-                        new { from = 8, to = 18 }
-                    }
+                    label = "Extended Working Day"
                 }
             })">
         </e-gantt-projectcalendar>
