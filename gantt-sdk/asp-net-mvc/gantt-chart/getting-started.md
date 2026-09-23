@@ -84,8 +84,6 @@ The theme styles and client-side scripts are referenced using a CDN inside the `
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
-{% raw %}
-
 <head>
     ...
     <!-- Syncfusion ASP.NET MVC controls styles -->
@@ -93,7 +91,6 @@ The theme styles and client-side scripts are referenced using a CDN inside the `
     <!-- Syncfusion ASP.NET MVC controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
-{% endraw %}
 {% endhighlight %}
 {% endtabs %}
 

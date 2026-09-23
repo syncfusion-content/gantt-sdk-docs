@@ -11,7 +11,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 appliesto: UI Component Suite, Gantt SDK/overview
 ---
 
-# Implementing Data Validation in ASP.NET Core Gantt Chart
+# Implement Data Validation in ASP.NET Core Gantt Chart
 
 ## Column validation
 
