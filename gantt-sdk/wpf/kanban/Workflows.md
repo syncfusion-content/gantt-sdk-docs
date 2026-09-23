@@ -5,6 +5,7 @@ description: Learn about Workflows support in Syncfusion WPF Kanban Board to con
 platform: gantt-sdk
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Workflows in WPF Kanban Board
