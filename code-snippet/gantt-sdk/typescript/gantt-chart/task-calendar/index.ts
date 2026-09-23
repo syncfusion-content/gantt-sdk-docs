@@ -32,7 +32,7 @@ let gantt: Gantt = new Gantt({
                 ],
                 holidays: [],
                 exceptions: [
-                    { from: new Date('04/09/2026'), to: new Date('04/09/2026'), name: 'Team Meeting Day', isWorking: true, workingTime: [{ from: 10, to: 16 }] }
+                    { from: new Date('04/09/2026'), to: new Date('04/09/2026'), label: 'Team Meeting Day' }
                 ]
             },
             {
