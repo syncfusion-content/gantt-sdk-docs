@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Getting Started with React Gantt Chart in a Preact Application
 
-This guide shows how to integrate the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component into a Preact application. For detailed component concepts and features, see the [main Getting Started guide](./getting-started).
+This guide shows how to integrate the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component into a Preact application. For detailed component concepts and features, see the [main Getting Started guide](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/getting-started).
 
 ## Prerequisites
 
@@ -214,6 +214,6 @@ The chart displays one parent task ("Project initiation") with three subtasks sh
 
 ## Next Steps
 
-- **[Key Elements](./key-elements)** - Learn about UI components and interactions
-- **[Feature Modules](./module)** - Enable advanced features with module injection
-- **[Overview](./overview)** - Explore all available features
+- **[Key Elements](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/key-elements)** - Learn about UI components and interactions
+- **[Feature Modules](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/module)** - Enable advanced features with module injection
+- **[Overview](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/overview)** - Explore all available features

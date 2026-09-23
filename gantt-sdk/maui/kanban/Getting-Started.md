@@ -34,7 +34,7 @@ Before proceeding, ensure the following are set up:
 ## Step 2: Install the Syncfusion<sup>®</sup> MAUI Kanban NuGet package
 
 1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
-2. Search for [Syncfusion.Maui.Kanban](https://www.nuget.org/packages/Syncfusion.Maui.Kanban/) and install the latest version.
+2. Search for [Syncfusion.Maui.Kanban](https://www.nuget.org/packages/Syncfusion.Maui.Kanban) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
 {% endtabcontent %}
@@ -82,7 +82,7 @@ Before proceeding, ensure the following are set up:
 ## Step 2: Install the Syncfusion<sup>®</sup> MAUI Kanban NuGet package
 
 1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
-2. Search for [Syncfusion.Maui.Kanban](https://www.nuget.org/packages/Syncfusion.Maui.Kanban/) and install the latest version.
+2. Search for [Syncfusion.Maui.Kanban](https://www.nuget.org/packages/Syncfusion.Maui.Kanban) and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored. If not, Open the Terminal in Rider and manually run: `dotnet restore`
 
 {% endtabcontent %}
@@ -91,15 +91,15 @@ Before proceeding, ensure the following are set up:
 ## Step 3: Register Syncfusion handler
 
 Make sure to add the namespace.
- 
+
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.Maui.Core.Hosting;
 {% endhighlight %}
 {% endtabs %}
- 
+
 Register the Syncfusion core handler in your `CreateMauiApp` method of `MauiProgram.cs` file to use Syncfusion controls.
- 
+
 {% tabs %}
 {% highlight c# %}
 builder.ConfigureSyncfusionCore();
@@ -107,19 +107,19 @@ builder.ConfigureSyncfusionCore();
 {% endtabs %}
 
 ## Step 4: Import the Kanban namespace
- 
+
 Add the following namespace in your XAML or C#.
- 
+
 {% tabs %}
 {% highlight xaml %}
- 
+
 xmlns:kanban="clr-namespace:Syncfusion.Maui.Kanban;assembly=Syncfusion.Maui.Kanban"
- 
+
 {% endhighlight %}
 {% highlight c# %}
- 
+
 using Syncfusion.Maui.Kanban;
- 
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -129,11 +129,11 @@ Initialize the .NET MAUI [`SfKanban`](https://help.syncfusion.com/cr/maui/Syncfu
 
 ### Creating the default model tasks
 
-* **Define the View Model:** Create a view model class to set values for the properties listed in the [`KanbanModel`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Kanban.KanbanModel.html) class as shown in the following example code. Each [`KanbanModel`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Kanban.KanbanModel.html) instance represents a card in Kanban control.
+- **Define the View Model:** Create a view model class to set values for the properties listed in the [`KanbanModel`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Kanban.KanbanModel.html) class as shown in the following example code. Each [`KanbanModel`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Kanban.KanbanModel.html) instance represents a card in Kanban control.
 
-* **Bind item source for Kanban:** To populate the Kanban card items, utilize the [`ItemsSource`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Kanban.SfKanban.html#Syncfusion_Maui_Kanban_SfKanban_ItemsSource) property of [`SfKanban`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Kanban.SfKanban.html).
+- **Bind item source for Kanban:** To populate the Kanban card items, utilize the [`ItemsSource`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Kanban.SfKanban.html#Syncfusion_Maui_Kanban_SfKanban_ItemsSource) property of [`SfKanban`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Kanban.SfKanban.html).
 
-* **Defining columns in the Kanban Board:** The columns are generated automatically based on the different values of [`Category`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Kanban.KanbanModel.html#Syncfusion_Maui_Kanban_KanbanModel_Category) in the [`KanbanModel`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Kanban.KanbanModel.html) class from [`ItemsSource`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Kanban.SfKanban.html#Syncfusion_Maui_Kanban_SfKanban_ItemsSource). However, you can manually define the columns by setting the [`AutoGenerateColumns`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Kanban.SfKanban.html#Syncfusion_Maui_Kanban_SfKanban_AutoGenerateColumns) property to `false` and adding [`KanbanColumn`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Kanban.KanbanColumn.html) instances to the [`Columns`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Kanban.SfKanban.html#Syncfusion_Maui_Kanban_SfKanban_Columns) property of [`SfKanban`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Kanban.SfKanban.html). Define the categories of column using the [`Categories`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Kanban.KanbanColumn.html#Syncfusion_Maui_Kanban_KanbanColumn_Categories) property of [`KanbanColumn`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Kanban.KanbanColumn.html), and cards will be added to the respective columns.
+- **Defining columns in the Kanban Board:** The columns are generated automatically based on the different values of [`Category`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Kanban.KanbanModel.html#Syncfusion_Maui_Kanban_KanbanModel_Category) in the [`KanbanModel`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Kanban.KanbanModel.html) class from [`ItemsSource`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Kanban.SfKanban.html#Syncfusion_Maui_Kanban_SfKanban_ItemsSource). However, you can manually define the columns by setting the [`AutoGenerateColumns`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Kanban.SfKanban.html#Syncfusion_Maui_Kanban_SfKanban_AutoGenerateColumns) property to `false` and adding [`KanbanColumn`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Kanban.KanbanColumn.html) instances to the [`Columns`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Kanban.SfKanban.html#Syncfusion_Maui_Kanban_SfKanban_Columns) property of [`SfKanban`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Kanban.SfKanban.html). Define the categories of column using the [`Categories`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Kanban.KanbanColumn.html#Syncfusion_Maui_Kanban_KanbanColumn_Categories) property of [`KanbanColumn`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Kanban.KanbanColumn.html), and cards will be added to the respective columns.
 
 The following sample code demonstrates this process in action:
 
@@ -142,25 +142,25 @@ The following sample code demonstrates this process in action:
 {% highlight XAML %}
 
 <kanban:SfKanban x:Name="kanban"
-                 AutoGenerateColumns="False"
-                 ItemsSource="{Binding Cards}">
-    <kanban:SfKanban.Columns>
-        <kanban:KanbanColumn Title="To Do"
-                             Categories="Open">
-        </kanban:KanbanColumn>
-        <kanban:KanbanColumn Title="In Progress"
-                             Categories="In Progress">
-        </kanban:KanbanColumn>
-        <kanban:KanbanColumn Title="Code Review"
-                             Categories="Code Review">
-        </kanban:KanbanColumn>
-        <kanban:KanbanColumn Title="Done"
-                             Categories="Done">
-        </kanban:KanbanColumn>
-    </kanban:SfKanban.Columns>
-    <kanban:SfKanban.BindingContext>
-        <local:KanbanViewModel />
-    </kanban:SfKanban.BindingContext>
+AutoGenerateColumns="False"
+ItemsSource="{Binding Cards}">
+<kanban:SfKanban.Columns>
+<kanban:KanbanColumn Title="To Do"
+Categories="Open">
+</kanban:KanbanColumn>
+<kanban:KanbanColumn Title="In Progress"
+Categories="In Progress">
+</kanban:KanbanColumn>
+<kanban:KanbanColumn Title="Code Review"
+Categories="Code Review">
+</kanban:KanbanColumn>
+<kanban:KanbanColumn Title="Done"
+Categories="Done">
+</kanban:KanbanColumn>
+</kanban:SfKanban.Columns>
+<kanban:SfKanban.BindingContext>
+<local:KanbanViewModel />
+</kanban:SfKanban.BindingContext>
 </kanban:SfKanban>
 
 {% endhighlight %}
@@ -168,30 +168,30 @@ The following sample code demonstrates this process in action:
 
 SfKanban kanban = new SfKanban();
 KanbanViewModel viewModel = new KanbanViewModel();
-kanban.AutoGenerateColumns = false; 
+kanban.AutoGenerateColumns = false;
 
 kanban.Columns.Add(new KanbanColumn
 {
-    Title = "To Do",
-    Categories = new List<object>() { "Open" },
+Title = "To Do",
+Categories = new List<object>() { "Open" },
 });
 
 kanban.Columns.Add(new KanbanColumn
 {
-    Title = "In Progress",
-    Categories = new List<object>() { "In Progress" },
+Title = "In Progress",
+Categories = new List<object>() { "In Progress" },
 });
 
 kanban.Columns.Add(new KanbanColumn
 {
-    Title = "Code Review",
-    Categories = new List<object>() { "Code Review" },
+Title = "Code Review",
+Categories = new List<object>() { "Code Review" },
 });
 
 kanban.Columns.Add(new KanbanColumn
 {
-    Title = "Done",
-    Categories = new List<object>() { "Done" },
+Title = "Done",
+Categories = new List<object>() { "Done" },
 });
 
 kanban.ItemsSource = viewModel.Cards;
@@ -201,19 +201,19 @@ kanban.ItemsSource = viewModel.Cards;
 
 public class KanbanViewModel
 {
-    public ObservableCollection<KanbanModel> Cards { get; set; }
-    public KanbanViewModel()
-    {
-        this.Cards = new ObservableCollection<KanbanModel>();
-        this.Cards.Add(new KanbanModel()
-        {
-            ID = 1,
-            Title = "iOS - 1002",
-            Category = "Open",
-            Description = "Analyze customer requirements",
-            IndicatorFill = Colors.Red,
-            Tags = new List<string> { "Incident", "Customer" }
-        });
+public ObservableCollection<KanbanModel> Cards { get; set; }
+public KanbanViewModel()
+{
+this.Cards = new ObservableCollection<KanbanModel>();
+this.Cards.Add(new KanbanModel()
+{
+ID = 1,
+Title = "iOS - 1002",
+Category = "Open",
+Description = "Analyze customer requirements",
+IndicatorFill = Colors.Red,
+Tags = new List<string> { "Incident", "Customer" }
+});
 
         this.Cards.Add(new KanbanModel()
         {
@@ -255,6 +255,7 @@ public class KanbanViewModel
             Tags = new List<string> { "Story", "Customer" }
         });
     }
+
 }
 
 {% endhighlight %}

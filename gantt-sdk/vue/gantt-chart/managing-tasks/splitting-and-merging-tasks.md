@@ -16,7 +16,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 Define segment details at load time in both hierarchical and self-referential ways.
 
-* [Split task at load time](../data-binding#split-task)
+* [Split task at load time](https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/data-binding#split-task)
 
 ## Split task dynamically
 

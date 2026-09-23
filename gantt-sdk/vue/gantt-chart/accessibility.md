@@ -131,4 +131,4 @@ The accessibility compliance of the Gantt component is shown in the following sa
 
 ## See also
 
-* [Accessibility in Syncfusion® Vue components](../common/accessibility)
+* [Accessibility in Syncfusion® Vue components](https://ej2.syncfusion.com/vue/documentation/common/accessibility)
