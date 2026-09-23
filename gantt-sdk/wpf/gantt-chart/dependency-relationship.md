@@ -411,7 +411,7 @@ The following image shows the Dependency Relationship:
 
 ![gantt-control-dependency-relationship](Dependency-Relationship_images/gantt-control-dependency-relationship.png)
 
-#### Samples Link
+### Samples Link
 
 To view samples: 
 
@@ -438,7 +438,7 @@ There are two predecessor validation modes in Gantt Control.
 * Auto - Successor nodes will adjust its position based on its predecessor nodes automatically.
 * Manual - Successor nodes need to adjust manually with respect to predecessor.
 
-#### Properties
+### Properties
 
 <table>
 <tr>
@@ -468,7 +468,7 @@ The following image shows the Predecessor in Auto Mode:
 
 ![gantt-control-predecessors-in-auto-mode](Dependency-Relationship_images/gantt-control-predecessors-in-auto-mode.png)
 
-#### Editing Predecessors
+### Editing Predecessors
 
 While creating a new predecessor in Grid, it should be in the following format:
 
@@ -494,11 +494,11 @@ The following are what you should use for different relationships:
 
 If any other data is added, the current editing relationship will be deleted and only the valid predecessors remain for the task.
 
-#### Editing Resources
+### Editing Resources
 
 As of now, resources cannot be edited in Grid. You can update the resource collection in the underlying source whenever you need. Gantt will listen to the changes in the collection and will update the [GanttGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttGrid.html) and [GanttChart](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttChart.html) accordingly.
 
-#### Use Case Scenario
+### Use Case Scenario
 
 This helps to change the dependency relationships and resources of the tasks dynamically.
 

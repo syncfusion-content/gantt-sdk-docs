@@ -518,7 +518,7 @@ The following image shows Customized Calender and Weekends:
 Customized Calender
 {:.caption}
 
-#### Samples Link
+### Samples Link
 
 To view samples:
 

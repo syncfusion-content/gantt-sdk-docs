@@ -16,17 +16,17 @@ The Syncfusion® [.NET MAUI Kanban](https://www.syncfusion.com/maui-controls/mau
 
 ## Business use cases
 
-- Project management applications that require visual tracking of tasks across multiple workflow stages.  
-- Agile development tools that support Kanban-based planning and task organization.  
-- Business workflow systems that manage process stages such as pending, in progress, and completed.  
-- Team collaboration applications that require clear visibility of task status and progress.  
+- Project management applications that require visual tracking of tasks across multiple workflow stages.
+- Agile development tools that support Kanban-based planning and task organization.
+- Business workflow systems that manage process stages such as pending, in progress, and completed.
+- Team collaboration applications that require clear visibility of task status and progress.
 
 ## Key features
 
-- **Workflow visualization support** allows representing tasks across different stages for better visibility and tracking.  
-- **Work-in-progress (WIP) control** allows limiting the number of items in each stage to improve efficiency.  
-- **Workflow transition management** allows controlling how tasks move between different stages of the process.  
-- **High-level customization support** allows configuring layout, appearance, and behavior to match application needs.  
+- **Workflow visualization support** allows representing tasks across different stages for better visibility and tracking.
+- **Work-in-progress (WIP) control** allows limiting the number of items in each stage to improve efficiency.
+- **Workflow transition management** allows controlling how tasks move between different stages of the process.
+- **High-level customization support** allows configuring layout, appearance, and behavior to match application needs.
 
 ## Globalization
 
@@ -64,7 +64,7 @@ The following table summarizes the globalization support available in this contr
 <th align="center">Keyboard navigation</th>
 </tr>
 <tr>
-<td><a href="/maui/kanban-board/overview">Kanban Board</a></td>
+<td><a href="/maui/kanban-board/overview" aria-label="MAUI Kanban Board overview">Kanban Board</a></td>
 <td align="center"><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td align="center"><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td align="center"><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>
@@ -75,14 +75,14 @@ The following table summarizes the globalization support available in this contr
 
 ## Related controls
 
-- [DataGrid](https://help.syncfusion.com/maui/datagrid/overview) for managing structured task data in tabular format.  
-- [ListView](https://help.syncfusion.com/maui/listview/overview) for displaying task lists in scrollable layouts.  
-- [Scheduler](https://help.syncfusion.com/maui/scheduler/overview) for managing timelines and scheduling tasks.  
+- [DataGrid](https://help.syncfusion.com/maui/datagrid/overview) for managing structured task data in tabular format.
+- [ListView](https://help.syncfusion.com/maui/listview/overview) for displaying task lists in scrollable layouts.
+- [Scheduler](https://help.syncfusion.com/maui/scheduler/overview) for managing timelines and scheduling tasks.
 
 ## See Also
 
-- [Getting Started](https://help.syncfusion.com/maui/kanban-board/getting-started) shows a step‑by‑step guide to begin using the Kanban Board control.  
-- [Columns](https://help.syncfusion.com/maui/kanban-board/column) explains how to configure workflow stages and columns.  
+- [Getting Started](https://help.syncfusion.com/maui/kanban-board/getting-started) shows a step‑by‑step guide to begin using the Kanban Board control.
+- [Columns](https://help.syncfusion.com/maui/kanban-board/column) explains how to configure workflow stages and columns.
 - [UI Kit](https://www.syncfusion.com/demos/maui#maui-ui-control) provides interactive demos and ready‑made UI examples.
 
 ## Resources

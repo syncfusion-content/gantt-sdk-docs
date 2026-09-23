@@ -133,7 +133,7 @@ The following code snippet explains how to define the working time range for the
 
 > NOTE:
 >* Individual tasks can lie between any time within the defined working time range of the project.
->* The [dayWorkingTime](https://ej2.syncfusion.com/angular/documentation/api/gantt/dayWorkingTime/) property is used to define the working time for the whole project.
+>* The [dayWorkingTime](https://ej2.syncfusion.com/angular/documentation/api/gantt/dayWorkingTime) property is used to define the working time for the whole project.
 
 ### Working time range for specific day in a week
 
