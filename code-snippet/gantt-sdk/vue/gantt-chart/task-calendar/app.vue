@@ -40,9 +40,7 @@ export default {
 						exceptions: [{
 							from: new Date('04/09/2026'),
 							to: new Date('04/09/2026'),
-							name: 'Team Meeting Day',
-							isWorking: true,
-							workingTime: [{ from: 10, to: 16 }]
+							label: 'Team Meeting Day'
 						}]
 					},
 					{
@@ -52,9 +50,7 @@ export default {
 						exceptions: [{
 							from: new Date('04/10/2026'),
 							to: new Date('04/10/2026'),
-							name: 'Maintenance Window',
-							isWorking: true,
-							workingTime: [{ from: 18, to: 8 }]
+							label: 'Maintenance Window'
 						}]
 					}
 				]
