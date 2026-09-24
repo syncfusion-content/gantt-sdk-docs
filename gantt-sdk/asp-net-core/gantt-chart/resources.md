@@ -27,8 +27,6 @@ The resource collection contains details about resources that are used in the pr
 
 The following code snippets shows resource collection and how it assigned to Gantt control.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resources/assignResource/tagHelper %}
@@ -37,20 +35,6 @@ The following code snippets shows resource collection and how it assigned to Gan
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resources/assignResource/assignResource.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resources/assignResource/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="AssignResource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resources/assignResource/assignResource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ## Assign resource
 
@@ -102,8 +86,6 @@ When resource unit is defined in resource collection, the amount of work done by
 
 The following code snippet shows how to assign the resource for each task and map to Gantt control.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resources/resourceUnit/tagHelper %}
@@ -113,29 +95,15 @@ The following code snippet shows how to assign the resource for each task and ma
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resources/resourceUnit/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ResourceUnit.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resources/resourceUnit/resourceUnit.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Alt text](images/resourceUnit.png)
+![Alt text](./images/resourceUnit.png)
 
 ## Add/Edit resource collection
 
 By using cell/ dialog edit option, we can add/remove the multiple resources for a particular task. Resource Unit can be change for a each task on resource tab in edit dialog by double click on the unit cell.
 
-![Cell Edit](images/cellEdit-resource.png)
+![Cell Edit](./images/cellEdit-resource.png)
 
-![Dialog Edit](images/dialogedit-resource.png)
+![Dialog Edit](./images/dialogedit-resource.png)
 
 ## Custom background colors for resource column and taskbar
 
@@ -145,8 +113,6 @@ To achieve this, utilize the [template](https://help.syncfusion.com/gantt-sdk/as
 
 The following code snippet demonstrates how to customize the background colors of the taskbar and resource column according to the assigned resources:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resource-customization/tagHelper %}
@@ -155,15 +121,3 @@ The following code snippet demonstrates how to customize the background colors o
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resource-customization/rescustomize.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resource-customization/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ResCustomize.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resource-customization/rescustomize.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

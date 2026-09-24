@@ -253,7 +253,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart component for B
 | P      | Percentage format  | Input should be between 0 and 1; `P2`, `P3`, etc., control precision.   |
 
 
-The following example code demonstrates the formatting of data for the **TaskID** column using the **N2** format, the **Progress** column using the **P2** format.
+The following example code demonstrates the formatting of data for the **TaskId** column using the **N2** format, the **Progress** column using the **P2** format.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}

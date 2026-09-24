@@ -210,7 +210,7 @@ The WBS feature has a few limitations in the Gantt component:
 * Load on demand is not supported with the WBS feature.
 * WBS Code and WBS Predecessor fields cannot be mapped directly from the data source as they are generated dynamically by the component based on task hierarchy.
 
-## See Also
+## See also
 - [How to define columns manually in Blazor Gantt Chart?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/columns)
 - [How to customize column headers in Blazor Gantt Chart?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/column-template)
 - [How to use the column menu in Blazor Gantt Chart?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/column-menu)

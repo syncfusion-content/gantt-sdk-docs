@@ -4,6 +4,8 @@ import { GanttData } from './datasource.ts';
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
     height: '380px',
+    daysPerWeek: 5,
+    daysPerMonth: 20,
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',

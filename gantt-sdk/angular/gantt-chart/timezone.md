@@ -213,7 +213,7 @@ The following example handles CRUD with timezone:
 
 The **Timezone** class from `@syncfusion/ej2-base` provides methods to manipulate task dates for display or storage in Gantt.
 
-### offset
+### Offset
 
 Calculates the difference (in minutes) between a UTC date and a specified timezone.
 
@@ -232,7 +232,7 @@ let timeZoneOffset: number = timezone.offset(date, "Europe/Paris");
 console.log(timeZoneOffset); //-60
 ```
 
-### convert
+### Convert
 
 Converts a date from one timezone to another.
 
@@ -254,7 +254,7 @@ console.log(convertedDate); //2018-12-05T08:55:11.000Z.
 console.log(convertedDate1); //2018-12-05T16:55:11.000Z.
 ```
 
-### remove
+### Remove
 
 Removes the timezone offset, returning a UTC-equivalent date.
 

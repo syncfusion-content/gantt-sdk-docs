@@ -14,8 +14,6 @@ domainurl: https://help.syncfusion.com/gantt-sdk/overview
 
 You can enable Excel like filter by defining [`filterSettings.type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_FilterSettings) as `Excel`. The excel menu contains an option such as Sorting, Clear filter, Sub menu for advanced filtering.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/filtering/excelfilter/tagHelper %}
@@ -24,15 +22,3 @@ You can enable Excel like filter by defining [`filterSettings.type`](https://hel
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/filtering/excelfilter/enablefilter.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/filtering/excelfilter/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Enablefilter.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/filtering/excelfilter/enablefilter.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

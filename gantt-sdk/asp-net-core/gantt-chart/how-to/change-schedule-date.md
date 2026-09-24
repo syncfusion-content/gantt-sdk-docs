@@ -14,8 +14,6 @@ domainurl: https://help.syncfusion.com/gantt-sdk/overview
 
 In the Gantt control, you can change the schedule start and end dates by clicking the custom button programmatically using the `updateProjectDates` method. You can pass the start and end dates as method arguments to the `updateProjectDates` method. You can also pass the Boolean value as an additional parameter, which is used to round-off the schedule start and end dates displayed in Gantt timeline.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/changeScheduleDates/tagHelper %}
@@ -24,16 +22,3 @@ In the Gantt control, you can change the schedule start and end dates by clickin
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/changeScheduleDates/changeScheduleDates.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/changeScheduleDates/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ChangeScheduleDates.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/changeScheduleDates/changeScheduleDates.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-

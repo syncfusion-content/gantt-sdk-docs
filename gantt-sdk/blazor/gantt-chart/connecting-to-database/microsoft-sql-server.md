@@ -154,7 +154,7 @@ namespace GanttMsSql.Data
     public class TaskData
     {
         [Key]
-        public int TaskID { get; set; }
+        public int TaskId { get; set; }
         public string TaskName { get; set; }
         public DateTime? StartDate { get; set; }
         public DateTime? EndDate { get; set; }

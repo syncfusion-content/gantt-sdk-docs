@@ -1,0 +1,21 @@
+<ejs-gantt id='Gantt' dataSource="ViewBag.DataSource" height="550px" gridLines="Both" treeColumnIndex="1">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
+                        endDate="EndDate" duration="Duration" progress="Progress" dependency="Predecessor" child="SubTasks">
+    </e-gantt-taskfields>
+    <e-gantt-calendar-settings>
+        <e-calendar-settings-task-calendars>
+            <e-calendar-task-calendar id="1" name="TaskCalendar1">
+                <e-calendar-settings-work-time-scale startTime="8:00 AM" endTime="4:00 PM"></e-calendar-settings-work-time-scale>
+            </e-calendar-task-calendar>
+            <e-calendar-task-calendar id="2" name="TaskCalendar2">
+                <e-calendar-settings-work-time-scale startTime="9:00 AM" endTime="6:00 PM"></e-calendar-settings-work-time-scale>
+            </e-calendar-task-calendar>
+        </e-calendar-settings-task-calendars>
+    </e-gantt-calendar-settings>
+    <e-gantt-columns>
+        <e-gantt-column field="TaskId"></e-gantt-column>
+        <e-gantt-column field="TaskName" headerText="Name" width="250"></e-gantt-column>
+        <e-gantt-column field="StartDate"></e-gantt-column>
+        <e-gantt-column field="Duration"></e-gantt-column>
+    </e-gantt-columns>
+</ejs-gantt>

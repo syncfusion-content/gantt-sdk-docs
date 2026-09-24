@@ -36,9 +36,7 @@ cardSettings.contentField | TextArea | -
 cardSettings.priority(If applicable) | Numeric | -
 swimlaneSettings.keyField(If applicable) | DropDown | -
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt-sdk/typescript/kanban/getting-started-key-field-cs1/index.ts %}
 {% endhighlight %}
@@ -46,22 +44,8 @@ swimlaneSettings.keyField(If applicable) | DropDown | -
 {% include code-snippet/gantt-sdk/typescript/kanban/getting-started-key-field-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/getting-started-key-field-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/getting-started-key-field-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/getting-started-key-field-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/getting-started-key-field-cs1" %}
-{% endif %}
 
 ## Custom Fields
 
@@ -78,9 +62,7 @@ The following types are available in dialog fields.
 
 > If `type` is not defined in the fields, then it renders as the HTML input element in dialog.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt-sdk/typescript/kanban/custom-dialog-cs1/index.ts %}
 {% endhighlight %}
@@ -88,30 +70,14 @@ The following types are available in dialog fields.
 {% include code-snippet/gantt-sdk/typescript/kanban/custom-dialog-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/custom-dialog-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/custom-dialog-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/custom-dialog-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/custom-dialog-cs1" %}
-{% endif %}
 
 ### Custom Fields label
 
 By default, the fields `key` mapping value is considered as a `label` and you can change this label by using `text` property.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt-sdk/typescript/kanban/label-cs1/index.ts %}
 {% endhighlight %}
@@ -119,30 +85,14 @@ By default, the fields `key` mapping value is considered as a `label` and you ca
 {% include code-snippet/gantt-sdk/typescript/kanban/label-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/label-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/label-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/label-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/label-cs1" %}
-{% endif %}
 
 ### Fields Validation
 
 The dialog fields can be validated while click on the `Save` button. This can be achieved by using `validationRules` property.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt-sdk/typescript/kanban/fields-validation-cs1/index.ts %}
 {% endhighlight %}
@@ -150,30 +100,14 @@ The dialog fields can be validated while click on the `Save` button. This can be
 {% include code-snippet/gantt-sdk/typescript/kanban/fields-validation-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/fields-validation-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/fields-validation-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/fields-validation-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/fields-validation-cs1" %}
-{% endif %}
 
 ## Dialog Template
 
 Using the dialog template, you can render your own dialog by defining the `template` property. Initialize the template as SCRIPT element Id or HTML string which holds the template and map it to the template property.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt-sdk/typescript/kanban/dialog-template-cs1/index.ts %}
 {% endhighlight %}
@@ -181,30 +115,14 @@ Using the dialog template, you can render your own dialog by defining the `templ
 {% include code-snippet/gantt-sdk/typescript/kanban/dialog-template-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/dialog-template-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/dialog-template-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/dialog-template-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/dialog-template-cs1" %}
-{% endif %}
 
 ## Prevent Dialog
 
 The Kanban allows to prevent to open a dialog on card double-click by enabling `args.cancel` in `dialogOpen` event.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt-sdk/typescript/kanban/prevent-dialog-cs1/index.ts %}
 {% endhighlight %}
@@ -212,34 +130,20 @@ The Kanban allows to prevent to open a dialog on card double-click by enabling `
 {% include code-snippet/gantt-sdk/typescript/kanban/prevent-dialog-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/prevent-dialog-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/prevent-dialog-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/prevent-dialog-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/prevent-dialog-cs1" %}
-{% endif %}
 
 ## Persisting data in server
 
-The modified card data can be persisted in the database using the RESTful web services. All the CRUD operations in the Kanban are done through [`DataManager`](../data). The `DataManager` has an option to bind all the CRUD related data in server-side.
+The modified card data can be persisted in the database using the RESTful web services. All the CRUD operations in the Kanban are done through [`DataManager`](https://ej2.syncfusion.com/documentation/data). The `DataManager` has an option to bind all the CRUD related data in server-side.
 
 > For your information, the ODataAdaptor persists data in the server as per OData protocol.
 
-In the below section covers how to get the edited data details on the server-side using the [`UrlAdaptor`](../data/adaptors.html#url-adaptor).
+In the below section covers how to get the edited data details on the server-side using the [`UrlAdaptor`](https://ej2.syncfusion.com/documentation/data/adaptors.html#url-adaptor).
 
 ### URL adaptor
 
-You can use the [`UrlAdaptor`](../data/adaptors.html#url-adaptor) of `DataManager` when binding data source for remote data. In the initial load of Kanban, data are fetched from remote data and bound to the Kanban using `url` property of `DataManager`.
+You can use the [`UrlAdaptor`](https://ej2.syncfusion.com/documentation/data/adaptors.html#url-adaptor) of `DataManager` when binding data source for remote data. In the initial load of Kanban, data are fetched from remote data and bound to the Kanban using `url` property of `DataManager`.
 
 You can map the CRUD operation in Kanban can be mapped to server-side controller actions using the properties `insertUrl`, `removeUrl`, `updateUrl`, and `crudUrl`.
 

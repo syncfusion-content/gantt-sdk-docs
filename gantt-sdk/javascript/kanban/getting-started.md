@@ -320,7 +320,7 @@ The full set of default card fields recognized by the Kanban control is:
 | `Priority` | Used by the priority feature |
 | `DueDate` | Used by the due-date feature |
 
-To customize which fields appear on a card, use the [`cardSettings`](./cards) property; to add remote data fetching, see the [`dataSource`](./data-binding) configuration.
+To customize which fields appear on a card, use the [`cardSettings`](https://help.syncfusion.com/gantt-sdk/javascript/kanban/cards) property; to add remote data fetching, see the [`dataSource`](https://help.syncfusion.com/gantt-sdk/javascript/kanban/data-binding) configuration.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -357,7 +357,7 @@ The commonly used `swimlaneSettings` options are:
 | `showItemCount` | Shows the count of cards in each swimlane |
 | `sortDirection` | Orders swimlanes (`Ascending` or `Descending`) |
 
-Refer to the [swimlane configuration](./swimlane) for the complete list of options.
+Refer to the [swimlane configuration](https://help.syncfusion.com/gantt-sdk/javascript/kanban/swimlane) for the complete list of options.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -381,11 +381,11 @@ Refer to the [swimlane configuration](./swimlane) for the complete list of optio
 
 ## See also
 
-* [Columns configuration](./columns)
-* [Swimlane configuration](./swimlane)
-* [Cards and card fields](./cards)
-* [Data binding](./data-binding)
-* [Remote data binding with ODataV4](./odataV4)
-* [Sorting and filtering cards](./sort)
-* [Responsive mode](./responsive-mode)
-* [Accessibility](./accessibility)
+* [Columns configuration](https://help.syncfusion.com/gantt-sdk/javascript/kanban/columns)
+* [Swimlane configuration](https://help.syncfusion.com/gantt-sdk/javascript/kanban/swimlane)
+* [Cards and card fields](https://help.syncfusion.com/gantt-sdk/javascript/kanban/cards)
+* [Data binding](https://help.syncfusion.com/gantt-sdk/javascript/kanban/data-binding)
+* [Remote data binding with ODataV4](https://help.syncfusion.com/gantt-sdk/javascript/kanban/odataV4)
+* [Sorting and filtering cards](https://help.syncfusion.com/gantt-sdk/javascript/kanban/sort)
+* [Responsive mode](https://help.syncfusion.com/gantt-sdk/javascript/kanban/responsive-mode)
+* [Accessibility](https://help.syncfusion.com/gantt-sdk/javascript/kanban/accessibility)

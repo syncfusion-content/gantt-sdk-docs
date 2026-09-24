@@ -20,8 +20,6 @@ To enable this feature, you have to set the [`enableImmutableMode`](https://help
 
 The following code example shows how to display the immutable mode in the Gantt control.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/immutable/immutable/tagHelper %}
@@ -31,22 +29,9 @@ The following code example shows how to display the immutable mode in the Gantt 
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/immutable/immutable/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="immutable.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/immutable/immutable/immutable.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Limitations
 
 The following features are not supported in the immutable mode:
 
 * Column reorder
 * Virtualization
-

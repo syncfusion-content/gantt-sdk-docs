@@ -3,7 +3,7 @@ layout: post
 title: Event Markers in Vue Gantt Chart | Syncfusion
 description: Learn how to configure event markers in Syncfusion Vue Gantt Chart to highlight important events and milestones in the project timeline.
 keywords: vue gantt event markers, timeline events, milestone markers, day markers, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/event-markers
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/eventmarkers
 platform: gantt-sdk
 control: Event Markers - Gantt Chart
 documentation: ug

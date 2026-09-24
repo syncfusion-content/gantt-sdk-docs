@@ -74,7 +74,7 @@ You can programmatically show or hide event markers in the Gantt Chart by updati
   
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/eventmarkers/show-hide-eventmaker" %}
 
-## See Also
+## See also
 
 - [How to bind data to the Gantt chart?](https://ej2.syncfusion.com/angular/documentation/gantt/data-binding)
 - [How to enable context menu in Gantt chart?](https://ej2.syncfusion.com/angular/documentation/gantt/context-menu)

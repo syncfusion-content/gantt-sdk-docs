@@ -67,8 +67,6 @@ N> By default, the [`GridLines`](https://help.syncfusion.com/cr/aspnetcore-js2/S
 
 The following code example shows how to change the gridlines rendering mode in the Gantt control.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/appearance-and-styling/gridLines/tagHelper %}
@@ -78,18 +76,4 @@ The following code example shows how to change the gridlines rendering mode in t
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/appearance-and-styling/gridLines/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="GridLines.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/appearance-and-styling/gridLines/gridLines.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Alt text](images/gridLines.png)
+![Alt text](./images/gridLines.png)

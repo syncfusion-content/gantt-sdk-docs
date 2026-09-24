@@ -51,7 +51,7 @@ Single card will be selected when you tap the card once and selection will be re
 
 ### Multiple Selection
 
-Enable [`selectionType`](../api/kanban/cardSettingsModel#selectiontype) as `Multiple` to select multiple cards. It will open the popup on the screen top. Selected card header text will be shown when selecting single card with a tap and hold action. If single card is selected, only tap action is required to select multiple cards. Multiple Selected card count will be shown on the popup when selecting multiple cards.
+Enable [`selectionType`](https://ej2.syncfusion.com/documentation/api/kanban/cardSettingsModel#selectionType) as `Multiple` to select multiple cards. It will open the popup on the screen top. Selected card header text will be shown when selecting single card with a tap and hold action. If single card is selected, only tap action is required to select multiple cards. Multiple Selected card count will be shown on the popup when selecting multiple cards.
 
 ![kanban](./images/single-multiple.PNG)
 

@@ -107,7 +107,7 @@ The following sample renders a [ListView](https://blazor.syncfusion.com/document
 <div style="height: 100%; width: 100%">
     <div style="position: relative; border: 1px solid red; height: 100%; width: 100%; min-height: 450px; min-width: 800px">
         <SfGantt @ref="Gantt" DataSource="@Orders" ShowColumnChooser="true" ProjectStartDate="new DateTime(2026, 4, 1)" ID="GanttChart" Width="1200px" Height="450px" HighlightWeekends="true" AllowReordering="true" TreeColumnIndex="1" GridLines="Syncfusion.Blazor.Gantt.GridLine.None">
-            <GanttTaskFields Id="TaskID" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" ParentID="ParentID" Dependency="Predecessor"></GanttTaskFields>
+            <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" ParentID="ParentID" Dependency="Predecessor"></GanttTaskFields>
             <GanttColumnChooserSettings>
                 <Template>
                     @{

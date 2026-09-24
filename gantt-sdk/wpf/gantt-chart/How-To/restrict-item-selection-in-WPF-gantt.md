@@ -5,6 +5,7 @@ description: Learn how to restrict item selection in Syncfusion WPF Gantt by usi
 platform: gantt-sdk
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # How to Restrict item selection in WPF Gantt

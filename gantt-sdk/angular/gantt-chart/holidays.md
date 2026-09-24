@@ -115,7 +115,7 @@ holidays: [
 
 This code styles holidays with distinct colors and labels, enhancing timeline readability.
 
-## See Also
+## See also
 - [How to configure event markers?](https://ej2.syncfusion.com/angular/documentation/gantt/eventmarkers)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
 - [How to enable critical path analysis?](https://ej2.syncfusion.com/angular/documentation/gantt/critical-path)

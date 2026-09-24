@@ -12,11 +12,9 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Filter cards in TypeScript Kanban
 
-You can filter the collection of cards from the dataSource and display it on the Kanban board by using the [`query`](../../api/kanban#query) property.
+You can filter the collection of cards from the dataSource and display it on the Kanban board by using the [`query`](https://ej2.syncfusion.com/documentation/api/kanban#query) property.
 
 In the below sample, you can filter the cards based on the ‘where’ query and display the filtered data to the Kanban board.
-
-{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -29,16 +27,3 @@ In the below sample, you can filter the cards based on the ‘where’ query and
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/filter-cards-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/filter-cards-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/filter-cards-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/filter-cards-cs1" %}
-{% endif %}

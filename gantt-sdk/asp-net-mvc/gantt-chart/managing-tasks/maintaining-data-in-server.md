@@ -26,19 +26,6 @@ N> Refer the [link](https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-
 
 We can define data source for Gantt as instance of DataManager using `url` property of DataManager. Check the below code snippet to assign data source to Gantt.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/urlAdaptor/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="UrlAdaptor.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/urlAdaptor/UrlAdaptor.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/urlAdaptor/razor %}
@@ -47,22 +34,8 @@ We can define data source for Gantt as instance of DataManager using `url` prope
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/urlAdaptor/UrlAdaptor.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 We can also do CRUD operations over Gantt data and save the changes to database. By using `BatchUrl` property of DataManager, we can communicate with the controller method to update the data source on CRUD operation. In gantt CRUD actions on task are dependent with other tasks. For example on editing the child record on chart side, corresponding parent item also will get affect and predecessor dependency task as well get affected. So in Gantt all the CRUD operations are considered to be batch editing where you will get all the affected records as collection. Check the below code snippet to assign controller method to this property.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/batchUrl/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="UrlAdaptor.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/batchUrl/UrlAdaptor.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -72,26 +45,12 @@ We can also do CRUD operations over Gantt data and save the changes to database.
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/batchUrl/UrlAdaptor.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 This server method will be triggered for all the CRUD operations like adding, editing and deleting actions. We can handle those each operations separately inside this method with corresponding data received in this method argument. Also, when using the `UrlAdaptor`, you need to return the data as JSON from the controller action and the JSON object must contain a property as result with dataSource as its value and one more property count with the dataSource total records count as its value.
 
 ## Insert action
 
 Using the `added` argument of the `BatchUrl` method we can insert the newly added row to database and return the same to client side. Find the below code example for details.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/adding/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="UrlAdaptor.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/adding/UrlAdaptor.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -101,24 +60,10 @@ Using the `added` argument of the `BatchUrl` method we can insert the newly adde
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/adding/UrlAdaptor.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Editing action
 
 Using the `changed` argument of the `BatchUrl` method we can update the modified records to database and return the same to client side. Find the below code example for details.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/editingData/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="UrlAdaptor.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/editingData/UrlAdaptor.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -128,24 +73,10 @@ Using the `changed` argument of the `BatchUrl` method we can update the modified
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/editingData/UrlAdaptor.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Delete action
 
 Using the `deleted` argument of the `BatchUrl` method we can remove the deleted records from database and return the same to client side. on deleting the record we need to remove its corresponding child records as well if it exist from the database. Find the below code example for details.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/deleting/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="UrlAdaptor.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/deleting/UrlAdaptor.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -155,6 +86,5 @@ Using the `deleted` argument of the `BatchUrl` method we can remove the deleted 
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/editing/deleting/UrlAdaptor.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 N> You can find the full sample at our [GitHub repository](https://github.com/SyncfusionExamples/EJ2-Gantt-MVC-CRUD-URL-ADAPTOR).

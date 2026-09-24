@@ -484,7 +484,7 @@ Tooltips display on hover, with touch-and-hold support for mobile via the toolti
 
 ### Disable taskbar tooltip 
 
-You can disable the taskbar tooltip using the [beforeTooltipRender](https://helpej2.syncfusion.com/react/documentation/gantt/events#beforetooltiprender) event by setting `args.cancel` to **true**.
+You can disable the taskbar tooltip using the [beforeTooltipRender](https://ej2.syncfusion.com/react/documentation/gantt/events#beforetooltiprender) event by setting `args.cancel` to **true**.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
@@ -587,7 +587,7 @@ The following example customizes timeline tooltips:
 
 ## Tooltip Touch interaction
 
-To perform touch and hold action on a element, refer to [tooltip popup](tooltip#tooltip).
+To perform touch and hold action on a element, refer to [tooltip popup](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/taskbar#configure-tooltips).
 
 ## See also
 - [How to configure task dependencies?](https://ej2.syncfusion.com/react/documentation/gantt/task-dependency)

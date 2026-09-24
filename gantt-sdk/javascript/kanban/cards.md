@@ -28,21 +28,6 @@ The card header is achieved by mapping the `headerField` property, which is plac
 
 In the following demo, the `showHeader` property is disabled on Kanban board.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/kanban/card-header-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/kanban/card-header-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/kanban/card-header-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/kanban/card-header-cs1/index.js %}
@@ -53,7 +38,6 @@ In the following demo, the `showHeader` property is disabled on Kanban board.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/kanban/card-header-cs1" %}
-{% endif %}
 
 ## Content
 
@@ -62,21 +46,6 @@ The card's content is fetched from data source using the `contentField` property
 ## Template
 
 You can customize the default card layout using template as per your application needs. This can be achieved by template of the `cardSettings` property.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/kanban/card-template-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/kanban/card-template-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/kanban/card-template-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -88,7 +57,6 @@ You can customize the default card layout using template as per your application
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/kanban/card-template-cs1" %}
-{% endif %}
 
 ## Selection
 
@@ -102,21 +70,6 @@ Kanban board allows to select single and multiple selection of cards when mouse 
 
 Select the multiple cards randomly using Ctrl + mouse click and select the multiple cards continuously using Shift + mouse click action on Kanban board. Set `Multiple` in `selectionType` to enable the multiple selection in a board.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/kanban/multiple-selection-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/kanban/multiple-selection-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/kanban/multiple-selection-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/kanban/multiple-selection-cs1/index.js %}
@@ -127,4 +80,3 @@ Select the multiple cards randomly using Ctrl + mouse click and select the multi
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/kanban/multiple-selection-cs1" %}
-{% endif %}

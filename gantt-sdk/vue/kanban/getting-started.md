@@ -3,7 +3,7 @@ layout: post
 title: Getting Started in Vue Kanban | Syncfusion
 description: Learn how to start using Syncfusion Vue Kanban with step-by-step setup instructions and essential component features.
 keywords: vue kanban getting started, syncfusion kanban, install component, setup
-canonical: https://help.syncfusion.com/gantt-sdk/vue/kanban/getting-started
+canonical: https://www.syncfusion.com/gantt-sdk/vue-kanban-board
 platform: gantt-sdk
 control: Getting Started - Kanban
 documentation: ug
@@ -128,7 +128,7 @@ This command starts the Vite development server. By default, the app is served a
 
 ## Next Steps
 
-- [Configure Kanban columns](./columns.md)
-- [Bind data from a remote service](./data-binding.md)
-- [Customize Kanban cards](./cards.md)
-- [Enable dialog editing](./dialog.md)
+- [Configure Kanban columns](https://help.syncfusion.com/gantt-sdk/vue/kanban/columns)
+- [Bind data from a remote service](https://help.syncfusion.com/gantt-sdk/vue/kanban/data-binding)
+- [Customize Kanban cards](https://help.syncfusion.com/gantt-sdk/vue/kanban/cards)
+- [Enable dialog editing](https://help.syncfusion.com/gantt-sdk/vue/kanban/dialog)

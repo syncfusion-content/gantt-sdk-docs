@@ -1432,7 +1432,7 @@ In the following sample, task label template with images and text are exported t
 ### Image handling across events
 - **Base64 and MemoryStream**: Convert images to Base64 strings, then use `MemoryStream` to convert them to `PdfImage`. This avoids reliance on potentially inaccessible web links.
 - **Height and width management**: Scale images to fit designated areas to prevent default resizing that reflects cell or row heights. Maintain a professional PDF layout.
-- **Compression and optimization**: Compress images prior to Base64 conversion to reduce file size while maintaining quality, optimizing the final PDF document size.
+- **Compression and optimization**: Compress images before Base64 conversion to reduce file size while maintaining quality, optimizing the final PDF document size.
 
 ### Troubleshooting PDF export
 

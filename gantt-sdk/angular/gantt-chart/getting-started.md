@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with Angular Gantt Chart | Syncfusion
 description: Learn how to install and build your first Angular Gantt Chart with task data binding, field mapping, and timeline rendering in this step-by-step guide.
 keywords: angular gantt chart, getting started, syncfusion gantt, task data binding, field mapping, timeline rendering
-canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/getting-started
+canonical: https://www.syncfusion.com/angular-components/angular-gantt-chart
 platform: gantt-sdk
 control: Getting Started - Gantt Chart
 documentation: ug
@@ -227,7 +227,7 @@ public taskSettings = {
 
 Update the component file to render the Gantt Chart using the sample data and task settings defined earlier.
 
-### For Angular 20+ (Standalone Components)
+### For Angular 20+ (standalone components)
 
 Modify the `src/app/app.ts` file with the following code:
 
@@ -268,7 +268,7 @@ export class App {
 - `template` — Defines the component's HTML inline; `[dataSource]="data"` binds the task data and `[taskFields]="taskSettings"` maps the field names
 - `encapsulation: ViewEncapsulation.None` — Disables view encapsulation to allow global styles to apply to the Gantt Chart
 
-### For Angular 19 and Earlier (Module-Based)
+### For Angular 19 and Earlier (module-based)
 
 If using Angular 19 or earlier, define the component in `src/app/app.component.ts`:
 

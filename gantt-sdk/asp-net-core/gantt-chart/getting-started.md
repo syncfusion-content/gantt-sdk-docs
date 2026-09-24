@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with ASP.NET Core Gantt Chart | Syncfusion
 description: Explore how to get started with Syncfusion ASP.NET Core Gantt Chart configure the control, bind data, map fields, and visualize project timelines quickly.
 keywords: asp.net core gantt getting started, gantt setup, project timeline, task scheduling, syncfusion gantt chart
-canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/getting-started
+canonical: https://www.syncfusion.com/gantt-sdk/aspnet-core-gantt-chart
 platform: gantt-sdk
 control: Getting Started - Gantt Chart
 documentation: ug
@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk/overview
 
 # Getting Started with ASP.NET Core Gantt Chart
 
-This section explains how to include the [ASP.NET Core Gantt](https://www.syncfusion.com/gantt-sdk/aspnet-core-gantt-chart) control in your ASP.NET Core Web App using [Visual Studio](https://visualstudio.microsoft.com/vs/) and [Visual Studio Code](https://code.visualstudio.com/). You’ll learn how to configure the control, bind task data, map fields, and quickly visualize project timelines in just a few steps.
+This section explains how to include the [ASP.NET Core Gantt](https://www.syncfusion.com/gantt-sdk/aspnet-core-gantt-chart) control in your ASP.NET Core Web App using [Visual Studio](https://visualstudio.microsoft.com/vs) and [Visual Studio Code](https://code.visualstudio.com). You’ll learn how to configure the control, bind task data, map fields, and quickly visualize project timelines in just a few steps.
 
 > **Ready to streamline your ASP.NET Core development?** Discover the full potential of ASP.NET Core controls with AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, CodeStudio and more. [Explore AI Coding Assistant](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/overview)
 
@@ -57,7 +57,7 @@ Install the [Syncfusion.AspNetCore.Gantt](https://www.nuget.org/packages/Syncfus
 
 {% tabcontent Visual Studio %}
 
-1. Go to *Tools → NuGet Package Manager → Manage NuGet Packages for Solution*.
+1. Go to _Tools → NuGet Package Manager → Manage NuGet Packages for Solution_.
 2. Search the required NuGet packages (`Syncfusion.AspNetCore.Gantt` and `Syncfusion.AspNetCore.Themes`) and install them.
 
 Alternatively, you can install the same packages using the Package Manager Console with the following commands.
@@ -92,20 +92,20 @@ dotnet add package Syncfusion.AspNetCore.Themes --version {{ site.releaseversion
 
 ## Add ASP.NET Core tag helpers
 
-After the packages are installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.AspNetCore.Gantt` and `Syncfusion.AspNetCore.Base` tag helpers.
+After the packages are installed, open the **~/Pages/\_ViewImports.cshtml** file and import the `Syncfusion.AspNetCore.Gantt` and `Syncfusion.AspNetCore.Base` tag helpers.
 
 {% tabs %}
 {% highlight cs tabtitle="~/_ViewImports.cshtml" %}
 
-@addTagHelper *, Syncfusion.AspNetCore.Gantt
-@addTagHelper *, Syncfusion.AspNetCore.Base
+@addTagHelper _, Syncfusion.AspNetCore.Gantt
+@addTagHelper _, Syncfusion.AspNetCore.Base
 
 {% endhighlight %}
 {% endtabs %}
 
 ## Add stylesheet and script resources
 
-The theme stylesheet and script can be referenced from NuGet through [Static Web Assets](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#static-web-assets). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) and [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file.
+The theme stylesheet and script can be referenced from NuGet through [Static Web Assets](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#static-web-assets). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) and [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of **~/Pages/Shared/\_Layout.cshtml** file.
 
 {% tabs %}
 {% highlight cshtml tabtitle="_Layout.cshtml" %}
@@ -121,7 +121,7 @@ The theme stylesheet and script can be referenced from NuGet through [Static Web
 
 ## Register the script manager
 
-Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager (`<ejs-scripts>`) at the end of the `<body>` element as shown below.
+Open the **~/Pages/Shared/\_Layout.cshtml** file and register the script manager (`<ejs-scripts>`) at the end of the `<body>` element as shown below.
 
 {% tabs %}
 {% highlight cshtml tabtitle="_Layout.cshtml" %}
@@ -144,24 +144,24 @@ Create a simple task hierarchy by assigning a `ParentID` to child tasks. To rend
 
 List<GanttDataSource> Tasks = new List<GanttDataSource>()
 {
-    new GanttDataSource() { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2019, 04, 02), EndDate = new DateTime(2019, 04, 21) },
-    new GanttDataSource() { TaskId = 2, TaskName = "Identify site location", StartDate = new DateTime(2019, 04, 02), Duration = 4, Progress = 50, ParentID = 1 },
-    new GanttDataSource() { TaskId = 3, TaskName = "Perform soil test", StartDate = new DateTime(2019, 04, 02), Duration = 4, Progress = 50, ParentID = 1 },
-    new GanttDataSource() { TaskId = 4, TaskName = "Soil test approval", StartDate = new DateTime(2019, 04, 02), Duration = 4, Progress = 50, ParentID = 1 },
-    new GanttDataSource() { TaskId = 5, TaskName = "Project estimation", StartDate = new DateTime(2019, 04, 02), EndDate = new DateTime(2019, 04, 21) },
-    new GanttDataSource() { TaskId = 6, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2019, 04, 04), Duration = 3, Progress = 50, ParentID = 5 },
-    new GanttDataSource() { TaskId = 7, TaskName = "List materials", StartDate = new DateTime(2019, 04, 04), Duration = 3, Progress = 50, ParentID = 5 }
+new GanttDataSource() { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2019, 04, 02), EndDate = new DateTime(2019, 04, 21) },
+new GanttDataSource() { TaskId = 2, TaskName = "Identify site location", StartDate = new DateTime(2019, 04, 02), Duration = 4, Progress = 50, ParentID = 1 },
+new GanttDataSource() { TaskId = 3, TaskName = "Perform soil test", StartDate = new DateTime(2019, 04, 02), Duration = 4, Progress = 50, ParentID = 1 },
+new GanttDataSource() { TaskId = 4, TaskName = "Soil test approval", StartDate = new DateTime(2019, 04, 02), Duration = 4, Progress = 50, ParentID = 1 },
+new GanttDataSource() { TaskId = 5, TaskName = "Project estimation", StartDate = new DateTime(2019, 04, 02), EndDate = new DateTime(2019, 04, 21) },
+new GanttDataSource() { TaskId = 6, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2019, 04, 04), Duration = 3, Progress = 50, ParentID = 5 },
+new GanttDataSource() { TaskId = 7, TaskName = "List materials", StartDate = new DateTime(2019, 04, 04), Duration = 3, Progress = 50, ParentID = 5 }
 };
 
 public class GanttDataSource
 {
-    public int TaskId { get; set; }
-    public string TaskName { get; set; }
-    public DateTime StartDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public int? Duration { get; set; }
-    public int Progress { get; set; }
-    public int? ParentID { get; set; }
+public int TaskId { get; set; }
+public string TaskName { get; set; }
+public DateTime StartDate { get; set; }
+public DateTime EndDate { get; set; }
+public int? Duration { get; set; }
+public int Progress { get; set; }
+public int? ParentID { get; set; }
 }
 
 {% endhighlight %}
@@ -182,15 +182,15 @@ Use the `taskFields` configuration to map the fields in your data source to the 
 
 ### Field mapping reference
 
-| Property | Description | Required |
-|----------|-------------|----------|
-| `id` | Unique task identifier | Yes |
-| `name` | Task display name | Yes |
-| `startDate` | Task start date | Yes |
-| `endDate` | Task end date | No |
-| `duration` | Task duration in days | Yes |
-| `progress` | Task completion percentage (0-100) | No |
-| `parentID` | Parent task ID for hierarchy | No |
+| Property    | Description                        | Required |
+| ----------- | ---------------------------------- | -------- |
+| `id`        | Unique task identifier             | Yes      |
+| `name`      | Task display name                  | Yes      |
+| `startDate` | Task start date                    | Yes      |
+| `endDate`   | Task end date                      | No       |
+| `duration`  | Task duration in days              | Yes      |
+| `progress`  | Task completion percentage (0-100) | No       |
+| `parentID`  | Parent task ID for hierarchy       | No       |
 
 ## Add the ASP.NET Core Gantt control
 
@@ -231,10 +231,9 @@ dotnet run
 
 {% endtabcontents %}
 
-![ASP.NET Core Gantt Control](images/gantt-control.webp)
+![ASP.NET Core Gantt Control](./images/gantt-control.webp)
 
 ## See also
 
 - **[Key Elements](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/key-elements)** - Learn about UI components and interactions
 - **[Overview](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/overview)** - Explore all available features
-

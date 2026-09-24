@@ -12,15 +12,13 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Virtual Scrolling and Performance in ASP.NET Core Kanban
 
-Kanban allows you to load a large amount of data without any performance degradation. This feature can be enabled by setting the `enableVirtualization` property in the Kanban to `true`.
+Kanban allows you to load a large amount of data without any performance degradation. This feature can be enabled by setting the [`enableVirtualization`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_EnableVirtualization) property in the Kanban to `true`.
 
 ## Virtual scrolling
 
-Virtual scrolling optimizes data rendering within each column when using large datasets. Only a subset of cards that are visible and about to be loaded on the screen are rendered. The number of records displayed in the Kanban is determined implicitly by the height of the Kanban area and the card height. The `cardHeight` property of Kanban can be used to set the card's height in pixel value. By default, the card height will be `auto`.
+Virtual scrolling optimizes data rendering within each column when using large datasets. Only a subset of cards that are visible and about to be loaded on the screen are rendered. The number of records displayed in the Kanban is determined implicitly by the height of the Kanban area and the card height. The [`cardHeight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_CardHeight) property of Kanban can be used to set the card's height in pixel value. By default, the card height will be `auto`.
 
 When the Kanban column is scrolled, the virtual scrolling feature dynamically loads additional data on demand into view and unloads the data that is no longer visible.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -33,21 +31,6 @@ When the Kanban column is scrolled, the virtual scrolling feature dynamically lo
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/virtual-scrolling/default/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/virtual-scrolling/default/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/virtual-scrolling/default/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/virtual-scrolling/default/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### Configure the remote data service
 

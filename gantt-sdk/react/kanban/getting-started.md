@@ -3,7 +3,7 @@ layout: post
 title: Getting Started in React Kanban | Syncfusion
 description: Learn how to start using Syncfusion React Kanban with step-by-step setup instructions and essential component features.
 keywords: react kanban getting started, syncfusion kanban, install component, react setup
-canonical: https://help.syncfusion.com/gantt-sdk/react/kanban/getting-started
+canonical: https://www.syncfusion.com/gantt-sdk/react-kanban-board
 platform: gantt-sdk
 control: Getting Started - Kanban
 documentation: ug
@@ -23,7 +23,7 @@ Before you begin, ensure the following tools are installed:
 | Tool                             | Version                             | Purpose                  |
 | -------------------------------- | ----------------------------------- | ------------------------ |
 | [Node.js](https://nodejs.org/en) | 18.x or later (LTS recommended)     | Required by Vite and npm |
-| npm     | 9.x or later (bundled with Node.js) | Package manager          |
+| npm                              | 9.x or later (bundled with Node.js) | Package manager          |
 
 Verify your setup:
 
@@ -65,7 +65,7 @@ npm install
 
 ### Adding Syncfusion<sup style="font-size:70%">&reg;</sup> packages
 
-Once you have created the React application, install the required Syncfusion<sup style="font-size:70%">&reg;</sup> React component package in the application. All Syncfusion<sup style="font-size:70%">&reg;</sup> React (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are published on the [npmjs](https://www.npmjs.com/~syncfusionorg) public registry.To install the Kanban component package, use the following command.
+Once you have created the React application, install the required Syncfusion<sup style="font-size:70%">&reg;</sup> React component package in the application. All Syncfusion<sup style="font-size:70%">&reg;</sup> React (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are published on the [node package registry](https://www.npmjs.com/~syncfusionorg) public registry.To install the Kanban component package, use the following command.
 
 ```bash
 npm install @syncfusion/ej2-react-kanban
@@ -326,8 +326,8 @@ npm list @syncfusion/ej2-react-kanban
 
 ## See also
 
-- [Kanban columns](./columns.md)
-- [Kanban data binding](./data-binding.md)
-- [Kanban dialog](./dialog.md)
-- [Kanban swimlane](./swimlane.md)
-- [Kanban priority](./priority.md)
+- [Kanban columns](https://help.syncfusion.com/gantt-sdk/react/kanban/columns)
+- [Kanban data binding](https://help.syncfusion.com/gantt-sdk/react/kanban/data-binding)
+- [Kanban dialog](https://help.syncfusion.com/gantt-sdk/react/kanban/dialog)
+- [Kanban swimlane](https://help.syncfusion.com/gantt-sdk/react/kanban/swimlane)
+- [Kanban priority](https://help.syncfusion.com/gantt-sdk/react/kanban/priority)

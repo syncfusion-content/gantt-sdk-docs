@@ -41,9 +41,7 @@ To load translation object in an application, use `load` function of `L10n` clas
 
 The following example demonstrates the Kanban in `Deutsch` culture.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt-sdk/typescript/kanban/locale-cs1/index.ts %}
 {% endhighlight %}
@@ -51,30 +49,14 @@ The following example demonstrates the Kanban in `Deutsch` culture.
 {% include code-snippet/gantt-sdk/typescript/kanban/locale-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/locale-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/locale-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/locale-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/locale-cs1" %}
-{% endif %}
 
 ## Right to left (RTL)
 
 The Kanban provides an option to switch its text direction and layout from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable right-to-left mode in Kanban, set the `enableRtl` to true.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/gantt-sdk/typescript/kanban/rtl-cs1/index.ts %}
 {% endhighlight %}
@@ -82,19 +64,6 @@ The Kanban provides an option to switch its text direction and layout from right
 {% include code-snippet/gantt-sdk/typescript/kanban/rtl-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/rtl-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/rtl-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/typescript/kanban/rtl-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/kanban/rtl-cs1" %}
-{% endif %}
+

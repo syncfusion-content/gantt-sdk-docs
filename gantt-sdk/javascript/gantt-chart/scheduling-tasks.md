@@ -12,37 +12,24 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Task Scheduling with Duration Units in JavaScript Gantt Chart
 
-Task scheduling in the [JavaScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control defines and visualizes task start dates, durations, and end dates as taskbars in a project timeline, enabling precise planning and tracking. Configure scheduling with properties like [taskFields](../api/gantt#taskfields) for mapping task data, [taskMode](../api/gantt#taskmode) for auto or manual validation, [taskType](../api/gantt#tasktype) for fixed unit, work, or duration, and [durationUnit](../api/gantt#durationunit) for day, hour, or minute units. Working time, set via [dayWorkingTime](../api/gantt#dayworkingtime), and non-working periods, like weekends or holidays, ensure realistic calculations. Events like [dataBound](../api/gantt#databound) customize scheduling logic on run-time. Taskbars include ARIA labels for accessibility, describing start, end, and duration, and adapt to responsive designs, though narrow screens may require scrolling for long timelines.
+Task scheduling in the [JavaScript Gantt Chart](https://www.syncfusion.com/javascript-ui-controls/js-gantt-chart) control defines and visualizes task start dates, durations, and end dates as taskbars in a project timeline, enabling precise planning and tracking. Configure scheduling with properties like [taskFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt#taskfields) for mapping task data, [taskMode](https://ej2.syncfusion.com/javascript/documentation/api/gantt#taskmode) for auto or manual validation, [taskType](https://ej2.syncfusion.com/javascript/documentation/api/gantt#tasktype) for fixed unit, work, or duration, and [durationUnit](https://ej2.syncfusion.com/javascript/documentation/api/gantt#durationunit) for day, hour, or minute units. Working time, set via [dayWorkingTime](https://ej2.syncfusion.com/javascript/documentation/api/gantt#dayworkingtime), and non-working periods, like weekends or holidays, ensure realistic calculations. Events like [dataBound](https://ej2.syncfusion.com/javascript/documentation/api/gantt#databound) customize scheduling logic on run-time. Taskbars include ARIA labels for accessibility, describing start, end, and duration, and adapt to responsive designs, though narrow screens may require scrolling for long timelines.
 
 ## Configure scheduling modes
 
 Scheduling modes control task date validation:
+
 - **Auto** (default): Validates dates based on dependencies, working time, holidays, and weekends. Parent tasks adjust to child tasks' minimum start and maximum end dates.
 - **Manual**: Allows custom dates without automatic validation, editable for parent tasks.
 - **Custom**: Renders both auto and manual tasks from the data source.
 
 Configure using:
-- [taskMode](../api/gantt#taskmode): Sets global mode.
-- [taskFields.manual](../api/gantt/taskFields#manual): Sets per-task mode.
+
+- [taskMode](https://ej2.syncfusion.com/javascript/documentation/api/gantt#taskmode): Sets global mode.
+- [taskFields.manual](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#manual): Sets per-task mode.
 
 ### Automatically scheduled Tasks
 
 The following example configures auto scheduling:
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/auto-schedule/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/auto-schedule/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/auto-schedule" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -54,26 +41,10 @@ The following example configures auto scheduling:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/auto-schedule" %}
-{% endif %}
 
 ### Manually scheduled Tasks
 
 The following example configures manual scheduling:
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/manual-schedule/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/manual-schedule/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/manual-schedule" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -85,26 +56,10 @@ The following example configures manual scheduling:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/manual-schedule" %}
-{% endif %}
 
 ### Custom scheduled
 
 The following example mixes auto and manual tasks:
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/custom-schedule/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/custom-schedule/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/custom-schedule" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -116,35 +71,21 @@ The following example mixes auto and manual tasks:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/custom-schedule" %}
-{% endif %}
 
 ## Configure task types
 
 Task types define how changes to duration, work, or resource units affect other properties:
+
 - **FixedUnit** (default): Adjusts duration when work changes, maintaining unit allocation.
 - **FixedWork**: Adjusts duration when units change, maintaining work amount.
 - **FixedDuration**: Adjusts units when work changes, maintaining duration.
 
 Configure using:
-- [taskType](../api/gantt#tasktype): Sets global type.
-- [taskFields.type](../api/gantt/taskFields#type): Sets per-task type.
+
+- [taskType](https://ej2.syncfusion.com/javascript/documentation/api/gantt#tasktype): Sets global type.
+- [taskFields.type](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#type): Sets per-task type.
 
 The following example configures task types:
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/task-type/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/task-type/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/task-type" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -156,38 +97,28 @@ The following example configures task types:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/task-type" %}
-{% endif %}
 
 ## Configure duration units
 
-Duration units determine how task length is measured and calculated within the project. The Gantt Chart control supports three duration units that can be applied at both project and individual task levels.
+Duration units define how task duration values are interpreted and calculated in the Gantt Chart. Duration units can be configured globally for the entire project or individually for each task.
 
 The Gantt Chart control supports the following duration units:
+
 - **Day**: Standard for general planning.
 - **Hour**: For detailed task management.
 - **Minute**: For short-duration tasks.
+- **Week**: Represents a duration calculated using the configured [daysPerWeek](https://ej2.syncfusion.com/javascript/documentation/api/gantt#daysperweek) value.
+- **Month**: Represents a duration calculated using the configured [daysPerMonth](https://ej2.syncfusion.com/javascript/documentation/api/gantt#dayspermonth) value.
 
 Configure using:
-- [durationUnit](../api/gantt#durationunit): Sets global unit (default: `day`).
-- [taskFields.durationUnit](../api/gantt/taskFields#durationunit): Maps per-task units.
-- Duration field values: Includes units directly (e.g., "5 minutes").
+
+- [durationUnit](https://ej2.syncfusion.com/javascript/documentation/api/gantt#durationunit): Sets global unit (default: `day`).
+- [taskFields.durationUnit](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#durationunit): Maps per-task units.
+- [daysPerWeek](https://ej2.syncfusion.com/javascript/documentation/api/gantt#daysperweek): Specifies the number of working days that constitute one week duration.
+- [daysPerMonth](https://ej2.syncfusion.com/javascript/documentation/api/gantt#dayspermonth): Specifies the number of working days that constitute one month duration.
+- Duration field values: You can specify the duration unit directly in the duration value (for example, "5 minutes", "2 weeks", or "1 month").
 
 The following example maps duration units:
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/duration-unit/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/duration-unit/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/duration-unit" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -199,26 +130,10 @@ The following example maps duration units:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/duration-unit" %}
-{% endif %}
 
 **Defining duration unit with duration value:**
 
 The following example defines units in duration values:
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/duration-unit-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/duration-unit-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/duration-unit-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -230,53 +145,57 @@ The following example defines units in duration values:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/duration-unit-cs1" %}
-{% endif %}
+
+### Configure days per week and month
+
+The `daysPerWeek` property specifies how many working days constitute one week, directly impacting how week-based durations are calculated. For example, if `daysPerWeek` is 5, then 1 week equals 5 working days.
+
+ Similarly, the `daysPerMonth` property specifies how many working days constitute one month, affecting how month-based durations are converted to actual working days for scheduling calculations. For example, if `daysPerMonth` is 20, then 1 month equals 20 working days.
+
+The following example configures `daysPerWeek` and `daysPerMonth` properties:
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/gantt-sdk/javascript/gantt-chart/duration-unit-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt-sdk/javascript/gantt-chart/duration-unit-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/duration-unit-cs2" %}
 
 ## Enable unscheduled tasks
 
-Unscheduled tasks lack start date, end date, or duration, visualized as milestones or single-day tasks. Enable with [allowUnscheduledTasks](../api/gantt#allowunscheduledtasks) set to **true** (default: **false**), defaulting to a 1-day duration from the project start.
+Unscheduled tasks lack start date, end date, or duration, visualized as milestones or single-day tasks. Enable with [allowUnscheduledTasks](https://ej2.syncfusion.com/javascript/documentation/api/gantt#allowunscheduledtasks) set to **true** (default: **false**), defaulting to a 1-day duration from the project start.
 
 Available unscheduled task types:
+
 - **Start date only**
 
-    Tasks with only a start date defined, allowing for open-ended planning.
+  Tasks with only a start date defined, allowing for open-ended planning.
 
-    ![Start date only task](./images/startDate-only.png)
+  ![Start date only task](./images/startDate-only.png)
 
-- **End date only** 
+- **End date only**
 
-    Tasks with only an end date defined, useful for deadline-driven activities.
+  Tasks with only an end date defined, useful for deadline-driven activities.
 
-    ![End date only task](./images/endDate-only.png)
+  ![End date only task](./images/endDate-only.png)
 
 - **Duration only**
 
-    Tasks with only duration specified, providing flexibility in scheduling timing.
+  Tasks with only duration specified, providing flexibility in scheduling timing.
 
-    ![Duration only task](./images/duration-only.png)
+  ![Duration only task](./images/duration-only.png)
 
 - **Milestone**
 
-    Special tasks with zero duration representing key project events or deliverables.
+  Special tasks with zero duration representing key project events or deliverables.
 
-    ![Milestone task](./images/milestone.png)
+  ![Milestone task](./images/milestone.png)
 
 The following example enables unscheduled tasks:
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/unscheduledTasks-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/unscheduledTasks-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/unscheduledTasks-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -288,26 +207,10 @@ The following example enables unscheduled tasks:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/unscheduledTasks-cs1" %}
-{% endif %}
 
 ### Convert to milestone using method
 
-You can convert a task into a milestone using the [convertToMilestone](../api/gantt#converttomilestone) method.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/milestone-convert/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/milestone-convert/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/milestone-convert" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+You can convert a task into a milestone using the [convertToMilestone](https://ej2.syncfusion.com/javascript/documentation/api/gantt#converttomilestone) method.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -319,28 +222,12 @@ You can convert a task into a milestone using the [convertToMilestone](../api/ga
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/milestone-convert" %}
-{% endif %}
 
 ## Configure working time range
 
-Working time ranges define productive hours per day, ensuring accurate scheduling calculations. Configure with [dayWorkingTime](../api/gantt#dayWorkingTime) sets project-wide working hours.
+Working time ranges define productive hours per day, ensuring accurate scheduling calculations. Configure with [dayWorkingTime](https://ej2.syncfusion.com/javascript/documentation/api/gantt#dayWorkingTime) sets project-wide working hours.
 
 The following example sets working hours from 9 AM to 6 PM:
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/workingtimerange-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/workingtimerange-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/workingtimerange-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -352,7 +239,6 @@ The following example sets working hours from 9 AM to 6 PM:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/workingtimerange-cs1" %}
-{% endif %}
 
 ## Configure weekends and non-working days
 
@@ -360,24 +246,9 @@ Non-working days represent periods when project work cannot be performed, such a
 
 ### Configure work week
 
-Define which days of the week are considered working days using the [workWeek](../api/gantt#workweek) property.
+Define which days of the week are considered working days using the [workWeek](https://ej2.syncfusion.com/javascript/documentation/api/gantt#workweek) property.
 
 The following example excludes Monday and Tuesday:
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/how-to-changeworkweek-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/how-to-changeworkweek-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/how-to-changeworkweek-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -389,36 +260,22 @@ The following example excludes Monday and Tuesday:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/how-to-changeworkweek-cs1" %}
-{% endif %}
 
 ### Weekend configuration
 
 Configure weekends with:
+
 - Default behavior: Saturday and Sunday are non-working.
-- Timeline display: [timelineSettings.showWeekend](../api/gantt/timelineSettings#showweekend) controls visibility.
-- Working weekends: [includeWeekend](../api/gantt#includeweekend) set to **true** includes weekends.
+- Timeline display: [timelineSettings.showWeekend](https://ej2.syncfusion.com/javascript/documentation/api/gantt/timelineSettings#showweekend) controls visibility.
+- Working weekends: [includeWeekend](https://ej2.syncfusion.com/javascript/documentation/api/gantt#includeweekend) set to **true** includes weekends.
 
 ## Customize scheduling with events
 
 Customize scheduling with:
-- [dataBound](../api/gantt#databound): Adjusts task scheduling after data binding, e.g., switching auto-scheduled tasks to manual mode if their start date precedes the project start date.
+
+- [dataBound](https://ej2.syncfusion.com/javascript/documentation/api/gantt#databound): Adjusts task scheduling after data binding, e.g., switching auto-scheduled tasks to manual mode if their start date precedes the project start date.
 
 The following example uses `dataBound` to switch auto-scheduled tasks to manual mode if their start date is before the project start date (04/01/2025):
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/scheduling-events/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/scheduling-events/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/scheduling-events" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -430,9 +287,9 @@ The following example uses `dataBound` to switch auto-scheduled tasks to manual 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/scheduling-events" %}
-{% endif %}
 
 ## See also
-- [How to configure task dependencies?](../gantt/task-dependency)
-- [How to manage resources?](../gantt/resources)
-- [How to configure holidays?](../gantt/holidays)
+
+- [How to configure task dependencies?](https://ej2.syncfusion.com/javascript/documentation/gantt/task-dependency)
+- [How to manage resources?](https://ej2.syncfusion.com/javascript/documentation/gantt/resources)
+- [How to configure holidays?](https://ej2.syncfusion.com/javascript/documentation/gantt/holidays)

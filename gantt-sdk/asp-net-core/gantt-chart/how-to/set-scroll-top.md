@@ -14,8 +14,6 @@ domainurl: https://help.syncfusion.com/gantt-sdk/overview
 
 In the Gantt control, you can set the vertical scroller position dynamically by clicking the custom button using the `setScrollTop` method.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/setScrollTop/tagHelper %}
@@ -24,19 +22,5 @@ In the Gantt control, you can set the vertical scroller position dynamically by 
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/setScrollTop/setScrollTop.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/setScrollTop/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="SetScrollTop.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/setScrollTop/setScrollTop.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ![Alt text](../images/setScrollTop.png)

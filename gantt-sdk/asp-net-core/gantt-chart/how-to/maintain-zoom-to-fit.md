@@ -18,8 +18,6 @@ In the Gantt control, While performing edit actions or dynamically change dataSo
 
 We can maintain `zoomToFit` after editing actions(cell edit,dialog edit,taskbar edit) by using `fitToProject` method in `actionComplete` and `taskbarEdited` event.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/maintainzoomtofit/tagHelper %}
@@ -29,25 +27,9 @@ We can maintain `zoomToFit` after editing actions(cell edit,dialog edit,taskbar 
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/maintainzoomtofit/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Maintainzoomtofit.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/maintainzoomtofit/maintainzoomtofit.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ## Maintain zoomToFit after change dataSource dynamically
 
 We can maintain `zoomToFit` after change dataSource dynamically, by calling `fitToProject` method in dataBound event.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -57,16 +39,3 @@ We can maintain `zoomToFit` after change dataSource dynamically, by calling `fit
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/maintainzoomtofitdatasource/maintainzoomtofitdatasource.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/maintainzoomtofitdatasource/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Maintainzoomtofitdatasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/maintainzoomtofitdatasource/maintainzoomtofitdatasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
