@@ -18,7 +18,7 @@ The `Quasar` Framework is a Vue.js-based open-source framework that empowers dev
 
 ## Prerequisites
 
-[System requirements for Vue Gantt Chart component](../system-requirements)
+[System requirements for Vue Gantt Chart component](https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/getting-started)
 
 ## Set up the Quasar project
 
@@ -260,6 +260,6 @@ The chart displays two parent tasks ("Project initiation" and "Project estimatio
 
 ## Next Steps
 
-- **[Key Elements](./key-elements)** - Learn about UI components and interactions
-- **[Feature Modules](./module)** - Enable advanced features with module injection
-- **[Overview](./overview)** - Explore all available features
+- **[Key Elements](https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/key-elements)** - Learn about UI components and interactions
+- **[Feature Modules](https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/module)** - Enable advanced features with module injection
+- **[Overview](https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/overview)** - Explore all available features

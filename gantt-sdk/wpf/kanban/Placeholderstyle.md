@@ -5,13 +5,14 @@ description: Learn about Placeholder support in Syncfusion WPF SfKanban using Pl
 platform: gantt-sdk
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Placeholder in WPF SfKanban
 
 The placeholder is to denote a card's new position in the [`KanbanColumn`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html). It will appear while dragging a card over the column.
 
-### Placeholder style
+## Placeholder style
 
 [`PlaceholderStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_PlaceholderStyle) property is used to customize the placeholder. Following properties are used to customize its appearance.
 

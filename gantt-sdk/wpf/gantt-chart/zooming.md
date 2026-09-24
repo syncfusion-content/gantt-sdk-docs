@@ -5,6 +5,7 @@ description: Learn about Zooming support in Syncfusion WPF Gantt using ZoomFacto
 platform: gantt-sdk
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Zooming in WPF Gantt

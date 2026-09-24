@@ -5,6 +5,7 @@ description: Learn about Cards support in Syncfusion® .NET MAUI Kanban Board, i
 platform: gantt-sdk
 control: Kanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Cards in .NET MAUI Kanban Board
