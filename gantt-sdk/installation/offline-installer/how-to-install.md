@@ -68,10 +68,6 @@ The steps below show how to install the Essential Studio Gantt SDK installer.
 
     N> If any version is selected to uninstall, a confirmation screen appears; if continue is selected, the Progress screen displays the uninstall and install progress, respectively. If none of the versions are chosen to be uninstalled, only the installation progress is displayed.
 
-    **Confirmation Alert**
-
-    ![Confirmation wizard](images/Step-by-Step-Installation_img8.png)
-
     **Uninstall Progress:**
 
     ![Uninstalling wizard](images/Step-by-Step-Installation_img7.png)
