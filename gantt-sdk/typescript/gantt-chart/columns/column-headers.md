@@ -3,7 +3,7 @@ layout: post
 title: Column Headers in TypeScript Gantt Chart | Syncfusion
 description: Learn how to customize TypeScript Gantt column headers with text, templates, alignment, and dynamic updates.
 keywords: TypeScript gantt column headers, header text, header template, custom header, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/columns/column-headers
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/columns/column-headers
 platform: gantt-sdk
 control: Column Headers - Gantt Chart
 documentation: ug

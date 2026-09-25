@@ -3,7 +3,7 @@ layout: post
 title: Editing Tasks in TypeScript Gantt Chart | Syncfusion
 description: Learn to edit tasks in Syncfusion TypeScript Gantt Chart using dialogs, inline editing, and taskbar interactions for flexible project task management updates.
 keywords: TypeScript gantt edit task, inline editing, edit dialog, task update, edit mode, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/managing-tasks/editing-tasks
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/managing-tasks/editing-tasks
 platform: gantt-sdk
 control: Editing Tasks - Gantt Chart
 documentation: ug
@@ -130,9 +130,9 @@ Updating with dialog
 
 ## Update task values using method
 
-Tasks' value can be dynamically updated by using the [updateRecordById](https://ej2.syncfusion.com/documentation/api/gantt#updaterecordbyid) method. You can call this method on any custom action. The following code example shows how to use this method to update a task.
+Tasks' value can be dynamically updated by using the [updateRecordByID](https://ej2.syncfusion.com/documentation/api/gantt#updaterecordbyid) method. You can call this method on any custom action. The following code example shows how to use this method to update a task.
 
-> NOTE: Using the [updateRecordById](https://ej2.syncfusion.com/documentation/api/gantt#updaterecordbyid) method, you cannot update the task ID value.
+> NOTE: Using the [updateRecordByID](https://ej2.syncfusion.com/documentation/api/gantt#updaterecordbyid) method, you cannot update the task ID value.
 
 ![Add action](../images/add-action.png)
 

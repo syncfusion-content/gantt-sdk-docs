@@ -18,18 +18,20 @@ The modules that are available in Gantt are as follows.
 | --------------------------------------------------------------------------------------- | ---------------------------------------------------- |
 | [Sort](https://ej2.syncfusion.com/documentation/api/gantt/sort)                         | Inject this module to use sorting feature.           |
 | [Filter](https://ej2.syncfusion.com/documentation/api/gantt/filter)                     | Inject this module to use filtering feature.         |
-| [Reorder](https://ej2.syncfusion.com/vue/documentation/api/grid/reorder)                | Inject this module to use reorder feature.           |
+| [Reorder](https://ej2.syncfusion.com/documentation/api/gantt#reordermodule)               | Inject this module to use reorder feature.           |
 | [ExcelExport](https://ej2.syncfusion.com/documentation/api/gantt#excelexportmodule)     | Inject this module to use excel export feature.      |
 | [PdfExport](https://ej2.syncfusion.com/documentation/api/gantt#pdfexportmodule)         | Inject this module to use PDF export feature.        |
 | [RowDD](https://ej2.syncfusion.com/documentation/api/gantt/rowDD)                       | Inject this module to use row drag and drop feature. |
 | `Resize`                                                                                | Inject this module to use resize feature.            |
 | [Toolbar](https://ej2.syncfusion.com/documentation/api/gantt#toolbar)                   | Inject this module to use toolbar feature.           |
-| [Edit](https://ej2.syncfusion.com/documentation/api/gantt/edit)                         | Inject this module is use editing feature.           |
+| [Edit](https://ej2.syncfusion.com/documentation/api/gantt/edit)                         | Inject this module to use editing feature.           |
 | [Selection](https://ej2.syncfusion.com/documentation/api/gantt/selection)               | Inject this module to use selection feature.         |
 | [DayMarkers](https://ej2.syncfusion.com/documentation/api/gantt/dayMarkers)             | Inject this module to use event markers.             |
 | [ContextMenu](https://ej2.syncfusion.com/documentation/api/gantt/contextMenu)           | Inject this module to use context menu feature.      |
 | [ColumnMenu](https://ej2.syncfusion.com/documentation/api/gantt/columnMenu)             | Inject this module to use column menu feature.       |
 | [VirtualScroll](https://ej2.syncfusion.com/documentation/api/gantt#virtualscrollmodule) | Inject this module to use virtual scroll feature.    |
 | [CriticalPath](https://ej2.syncfusion.com/documentation/api/gantt#criticalpathmodule)   | Inject this module to use critical path feature.     |
+| [UndoRedo](https://ej2.syncfusion.com/documentation/api/gantt#undoredomodule)           | Inject this module to use undo / redo feature.       |
+| [Freeze](https://ej2.syncfusion.com/documentation/api/gantt#freezemodule)                | Inject this module to use frozen columns feature.    |
 
 These modules should be injected into the Gantt using the **Gantt.Inject** method.

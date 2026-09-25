@@ -12,9 +12,9 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Timezone with IANA Support in TypeScript Gantt Chart
 
-The TypeScript Gantt Chart control uses the system timezone by default for task scheduling and taskbar rendering, based on JavaScript's `new Date()` (e.g., Wed Dec 12 2018 05:23:27 GMT+0530 for IST). To support global teams or specific regions, the [timezone](https://ej2.syncfusion.com/documentation/api/gantt#timezone) property allows setting IANA timezones (e.g., "UTC", "Asia") to ensure consistent date display across users. This property function properly when the timeline displays hours. To enable this, set `timelineViewMode` to **'Hour'** or configure `topTier.unit` as **'Day'** and `bottomTier.unit` as **'Hour'**.
+The TypeScript Gantt Chart control uses the system timezone by default for task scheduling and taskbar rendering, based on JavaScript's `new Date()` (e.g., Wed Dec 12 2018 05:23:27 GMT+0530 for IST). To support global teams or specific regions, the [timezone](https://ej2.syncfusion.com/documentation/api/gantt#timezone) property allows setting IANA timezones (e.g., "UTC", "Asia/Kolkata") to ensure consistent date display across users.
 
-The `Timezone` class from `@syncfusion/ej2-base` provides methods (`offset`, `convert`, `remove`) to manipulate task dates, integrating with `taskFields.startDate` and `taskFields.endDate`. CRUD operations adjust dates via events like [actionBegin](https://ej2.syncfusion.com/documentation/gantt/events#actionbegin) and [actionComplete](https://ej2.syncfusion.com/documentation/gantt/events#actioncomplete).
+The `Timezone` class from `@syncfusion/ej2-base` provides methods (`offset`, `convert`, `remove`) to manipulate task dates, integrating with `taskFields.startDate` and `taskFields.endDate`. CRUD operations adjust dates via events like [actionBegin](https://ej2.syncfusion.com/documentation/gantt/events#actionbegin) and [actionComplete](https://ej2.syncfusion.com/documentation/gantt/events#actioncomplete). The timezone setting always affects internal date calculations (task start/end times, durations, dependencies), even in non-hour views. Visible changes to timeline and task bar positions only appear when the timeline includes an hour-level mode.
 
 ## Configure consistent time display
 

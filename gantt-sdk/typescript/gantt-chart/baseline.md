@@ -44,7 +44,7 @@ export let projectData = [
     EndDate: new Date("02/10/2019"),
     baselineStartDate: new Date("02/09/2019"),
     baselineEndDate: new Date("02/09/2019"),
-    baselineDuration: "0", // Milestone baseline
+    baselineDuration: "1", // Same-day baseline (equal baselineStartDate/baselineEndDate also renders as a milestone diamond)
   },
 ];
 

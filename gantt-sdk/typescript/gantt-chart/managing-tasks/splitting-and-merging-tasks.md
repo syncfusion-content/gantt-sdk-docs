@@ -3,7 +3,7 @@ layout: post
 title: Split and Merge Tasks in TypeScript Gantt Chart | Syncfusion
 description: Learn how to split and merge tasks in Syncfusion TypeScript Gantt Chart to create task breaks, manage non-contiguous work, and flexible project scheduling.
 keywords: TypeScript gantt split merge tasks, task splitting, task merging, work breaks, non-contiguous, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/managing-tasks/splitting-and-merging-tasks
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/managing-tasks/splitting-and-merging-tasks
 platform: gantt-sdk
 control: Split Merge Tasks - Gantt Chart
 documentation: ug

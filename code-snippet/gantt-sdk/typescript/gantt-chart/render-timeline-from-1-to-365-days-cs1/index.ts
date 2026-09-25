@@ -23,7 +23,7 @@ let gantt: Gantt = new Gantt({
         },
         bottomTier: {
             unit: "Day",
-            formatter: date => {
+            formatter: (date:Date) => {
                 let presentDate = new Date(
                     date.getFullYear(),
                     date.getMonth(),
@@ -33,7 +33,7 @@ let gantt: Gantt = new Gantt({
                 var diff = Number(presentDate) - Number(start);
                 var oneDay = 1000 * 60 * 60 * 24;
                 var day = Math.floor(diff / oneDay);
-                return day;
+                return day.toString();
             }
           }
     },

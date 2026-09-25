@@ -492,7 +492,7 @@ public object GetTimeDifference(DateTime sdate, DateTime edate)
 **Load-on-demand limitations**:
 
 - Filtering, sorting, and searching operations are not supported in load-on-demand mode.
-- Only self-referential data types are supported with remote data binding.
+- When using remote data binding with load-on-demand, only self-referential (flat) data structures are supported; hierarchical (nested) data is not supported in this mode and must be flattened server-side or via `Query` before binding.
 - Load-on-demand requires validated data source structures.
 
 ### Advanced server communication
@@ -682,7 +682,7 @@ segmentData: [
 
 ## Expand state management
 
-Control parent task expand status in the Gantt chart by defining the [expandStateMapping](https://ej2.syncfusion.com/documentation/api/gantt/taskFields#expandstate) property. This property maps to data source field names indicating whether parent tasks should render in expanded or collapsed states based on mapped boolean values.
+Control parent task expand status in the Gantt chart by defining the [taskFields.expandState](https://ej2.syncfusion.com/documentation/api/gantt/taskFields#expandstate) property. This property maps to data source field names indicating whether parent tasks should render in expanded or collapsed states based on mapped boolean values.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -693,7 +693,7 @@ Control parent task expand status in the Gantt chart by defining the [expandStat
 {% endhighlight %}
 {% endtabs %}
 
-**State persistence**: ExpandStateMapping ensures parent tasks maintain their intended expanded or collapsed states across data operations, providing consistent user experience and preserving intended data visualization structures.
+**State persistence**: `taskFields.expandState` ensures parent tasks maintain their intended expanded or collapsed states across data operations, providing consistent user experience and preserving intended data visualization structures.
 
 ## Programmatically update datasource
 

@@ -101,7 +101,6 @@ The Gantt Chart control provides comprehensive keyboard navigation support follo
 
 | **Press**                            | **To do this**                                 | **Context**                 |
 | ------------------------------------ | ---------------------------------------------- | --------------------------- |
-| <kbd>Alt + J</kbd>                   | Focus Gantt Chart control                      | Global application shortcut |
 | <kbd>Tab / Shift + Tab</kbd>         | Focus the next or previous element             | Standard tab navigation     |
 | <kbd>Home</kbd>                      | Selects the first row                          | Grid and chart areas        |
 | <kbd>End</kbd>                       | Selects the last row                           | Grid and chart areas        |

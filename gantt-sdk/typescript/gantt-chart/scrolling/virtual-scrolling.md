@@ -3,7 +3,7 @@ layout: post
 title: Virtual Scrolling in TypeScript Gantt Chart | Syncfusion
 description: Learn how to configure virtual scrolling in Syncfusion TypeScript Gantt Chart for high-performance rendering of large datasets and wide timelines.
 keywords: TypeScript gantt virtual scroll, large data, performance, virtual rendering, high performance, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/scrolling/virtual-scrolling
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/scrolling/virtual-scrolling
 platform: gantt-sdk
 control: Virtual Scrolling - Gantt Chart
 documentation: ug
@@ -53,7 +53,7 @@ The following example enables timeline virtualization for a wide timeline:
 Virtual scrolling has the following constraints:
 
 - Incompatible with [enableImmutableMode](https://ej2.syncfusion.com/documentation/api/gantt#enableimmutablemode), as both use different rendering optimizations.
-- Cell selection is not persisted due to on-demand rendering.
+- Cell selection is not supported due to on-demand rendering.
 - Browser height limits restrict the maximum number of records in row virtualization.
 - The [height](https://ej2.syncfusion.com/documentation/api/gantt#height) property must be set in pixels for row virtualization to define the viewport size.
 - Set a static height for the Gantt chart or its parent container; 100% height only works if both the control and its parent have explicit static heights.

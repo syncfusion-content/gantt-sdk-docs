@@ -82,7 +82,7 @@ function actionBegin(args: ActionBeginArgs): void {
       enabled: true,
       floatLabelType: 'Auto',
       placeholder: 'CustomField',
-      value: (args.rowData as any).CustomField
+      value: (args.rowData as any).taskData.CustomField
     };
     let inputObj = new (inputs as any)[column.editType](input);
     inputObj.appendTo(inputElement);

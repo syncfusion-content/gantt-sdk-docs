@@ -90,7 +90,7 @@ window.localStorage.setItem("ganttGantt", JSON.stringify(model)); //"ganttGantt"
 
 ## Prevent columns from persisting
 
-When [enablePersistence](https://ej2.syncfusion.com/documentation/api/gantt#enablepersistence) is set to **true**, Gantt properties such as [Filtering](https://ej2.syncfusion.com/documentation/api/gantt#allowfiltering), [Sorting](https://ej2.syncfusion.com/documentation/api/gantt#allowsorting), and [Columns](https://ej2.syncfusion.com/documentation/api/gantt#columns) are automatically saved.
+When [enablePersistence](https://ej2.syncfusion.com/documentation/api/gantt#enablepersistence) is set to **true**, Gantt properties such as [Filtering](https://ej2.syncfusion.com/documentation/api/gantt#allowfiltering), [Sorting](https://ej2.syncfusion.com/documentation/api/gantt#allowsorting), [Columns](https://ej2.syncfusion.com/documentation/api/gantt#columns), [searchSettings](https://ej2.syncfusion.com/documentation/api/gantt#searchsettings), [selectedRowIndex](https://ej2.syncfusion.com/documentation/api/gantt#selectedrowindex), [treeColumnIndex](https://ej2.syncfusion.com/documentation/api/gantt#treecolumnindex), the current zoom level, and the splitter position are automatically saved. Templates and header text are **not** persisted automatically — see the next section for how to handle those.
 
 To prevent specific properties from being persisted, use the `addOnPersist` method.
 

@@ -3,7 +3,7 @@ layout: post
 title: Resize Columns in TypeScript Gantt Chart | Syncfusion
 description: Learn how to resize columns in the TypeScript Gantt Chart by dragging column borders and adjusting widths for improved layout control.
 keywords: TypeScript gantt column resizing, resize columns, column width, column resizing, gantt column customization, syncfusion gantt chart
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/columns/column-resizing
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/columns/column-resizing
 platform: gantt-sdk
 control: Column Resizing - Gantt Chart
 documentation: ug

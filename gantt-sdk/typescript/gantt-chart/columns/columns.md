@@ -396,7 +396,7 @@ You can also show or hide columns in the TypeScript Gantt Chart control using th
 
 You can dynamically show or hide columns by passing either a single header text or an array of header texts as the first parameter, and specifying `headerText` as the second parameter. This enables dynamic control over column visibility based on the displayed header.
 
-You can use the `getGanttColumns` method to retrieve all defined columns, and the `getVisibleColumns` method to get only the visible columns.
+You can use the `getGanttColumns` method to retrieve all defined columns. To get only the visible columns, use `getVisibleColumns` method.
 
 The following sample demonstrates how to hide and show columns using button clicks. When the **Hide Column** button is clicked, the `hideColumn` method is called with **Duration** as the first parameter and `headerText` as the second. Clicking the **Show Column** button restores the column using the `showColumn` method.
 
@@ -522,3 +522,16 @@ The clip mode provides options to display overflow cell content using the [colum
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/columns-cs20" %}
+
+## See also
+
+- [How to configure column headers?](columns/column-headers)
+- [How to configure the column menu?](columns/column-menu)
+- [How to configure column rendering?](columns/column-rendering)
+- [How to enable column reorder?](columns/column-reorder)
+- [How to enable column resizing?](columns/column-resizing)
+- [How to span columns?](columns/column-spanning)
+- [How to use column templates?](columns/column-template)
+- [How to freeze columns?](columns/frozen-column)
+- [How to configure the tree column?](columns/tree-column)
+- [How to configure the WBS column?](columns/wbs-column)

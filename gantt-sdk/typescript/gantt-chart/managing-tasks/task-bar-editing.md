@@ -3,7 +3,7 @@ layout: post
 title: Taskbar Editing in TypeScript Gantt Chart | Syncfusion
 description: Learn to edit tasks via taskbar interactions in Syncfusion TypeScript Gantt Chart for intuitive and interactive project timeline adjustments and management.
 keywords: TypeScript gantt taskbar editing, drag taskbar, resize taskbar, edit taskbar, task drag, synchronfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/managing-tasks/task-bar-editing
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/managing-tasks/task-bar-editing
 platform: gantt-sdk
 control: Taskbar Editing - Gantt Chart
 documentation: ug

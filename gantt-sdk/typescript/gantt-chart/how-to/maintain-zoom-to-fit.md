@@ -3,7 +3,7 @@ layout: post
 title: Maintain Zoom to Fit in TypeScript Gantt Chart | Syncfusion
 description: Learn how to maintain zoom-to-fit in Syncfusion TypeScript Gantt Chart during edits and dynamic data source changes for consistent view.
 keywords: TypeScript gantt zoom to fit, zoom level, auto zoom, fit timeline, zoom functionality, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/how-to/maintain-zoom-to-fit
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/how-to/maintain-zoom-to-fit
 platform: gantt-sdk
 control: Maintain Zoom to Fit - Gantt Chart
 documentation: ug

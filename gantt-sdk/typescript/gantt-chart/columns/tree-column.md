@@ -3,7 +3,7 @@ layout: post
 title: Tree Column in TypeScript Gantt Chart | Syncfusion
 description: Learn how to display hierarchical task relationships in Syncfusion TypeScript Gantt Chart using the tree column and expand-collapse functionality.
 keywords: TypeScript gantt tree column, tree column, hierarchical tasks, expand collapse tasks, tree column index, gantt hierarchy, syncfusion gantt chart
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/columns/tree-column
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/columns/tree-column
 platform: gantt-sdk
 control: Tree Column - Gantt Chart
 documentation: ug
@@ -137,37 +137,37 @@ gantt.collapseAll();
 - `expandAtLevel(level)`: Expands rows at a specific level.
 
 ```ts
-gantt.treegrid.expandAtLevel(0);
+gantt.treeGrid.expandAtLevel(0);
 ```
 
 - `collapseAtLevel(level)`: Collapses rows at a specific level.
 
 ```ts
-gantt.treegrid.collapseAtLevel(0);
+gantt.treeGrid.collapseAtLevel(0);
 ```
 
 - `expandByKey(key)`: Expands a row by primary key.
 
 ```ts
-gantt.treegrid.expandByKey(1); //Here pass the primary key value.
+gantt.treeGrid.expandByKey(1); //Here pass the primary key value.
 ```
 
 - `collapseByKey(key)`: Collapses a row by primary key.
 
 ```ts
-gantt.treegrid.collapseByKey(1); //Here pass the primary key value.
+gantt.treeGrid.collapseByKey(1); //Here pass the primary key value.
 ```
 
 - `expandRow(rowElement)`: Expands a row using its DOM element.
 
 ```ts
-gantt.treegrid.expandRow(tr); //Here pass the row element as parameter.
+gantt.treeGrid.expandRow(tr); //Here pass the row element as parameter.
 ```
 
 - `collapseRow(rowElement)`: Collapses a row using its DOM element.
 
 ```ts
-gantt.treegrid.collapseRow(tr); //Here pass the row element as parameter.
+gantt.treeGrid.collapseRow(tr); //Here pass the row element as parameter.
 ```
 
 {% tabs %}

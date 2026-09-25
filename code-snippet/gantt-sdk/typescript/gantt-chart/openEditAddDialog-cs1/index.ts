@@ -41,12 +41,12 @@ let editBtn: Button = new Button();
 editBtn.appendTo('#editDialog');
 
 document.getElementById('editDialog')!.addEventListener('click', () => {
-    gantt.editModule.dialogModule.openEditDialog(gantt.selectedRowIndex + 1);
+    gantt.openEditDialog();
 });
 
 let addBtn: Button = new Button();
 addBtn.appendTo('#addDialog');
 
 document.getElementById('addDialog')!.addEventListener('click', () => {
-    gantt.editModule.dialogModule.openAddDialog();
+    gantt.openAddDialog();
 });

@@ -3,7 +3,7 @@ layout: post
 title: Filtering in TypeScript Gantt Chart | Syncfusion
 description: Learn how to filter task data in Syncfusion TypeScript Gantt Chart to search and display tasks based on criteria for efficient project data management.
 keywords: TypeScript gantt filtering, filter tasks, search tasks, filter conditions, column filtering, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/filtering/filtering
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/filtering/filtering
 platform: gantt-sdk
 control: Filtering - Gantt Chart
 documentation: ug
@@ -83,7 +83,7 @@ The TypeScript Gantt Chart control supports multiple filtering modes, which can 
 
 ## Enable diacritic-sensitive filtering
 
-By default, the TypeScript Gantt Chart control ignores diacritic characters during filtering. To enable filtering with diacritic sensitivity, set the [filterSettings.ignoreAccent](https://ej2.syncfusion.com/documentation/api/gantt/filterSettings#ignoreaccent) property to **true**.
+By default, filtering is diacritic-sensitive. To make filtering ignore accents, set the [filterSettings.ignoreAccent](https://ej2.syncfusion.com/documentation/api/gantt/filterSettings#ignoreaccent) property to **true**.
 
 The following sample demonstrates this behavior: when filtering the **TaskName** column, entries containing diacritic characters (e.g., �Pr�ject�, �Proj�ct�) will be matched if you enter the base text **Project**.
 
@@ -165,3 +165,9 @@ The following sample demonstrates how to handle different filtering stages using
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/filter-events-cs1" %}
+
+## See also
+
+- [How to filter with the menu?](filtering/filter-menu)
+- [How to filter like Excel?](filtering/excel-like-filter)
+- [How to search?](filtering/searching)

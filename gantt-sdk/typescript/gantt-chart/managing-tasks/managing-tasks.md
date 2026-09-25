@@ -3,7 +3,7 @@ layout: post
 title: Managing Tasks in TypeScript Gantt Chart | Syncfusion
 description: Master task management in Syncfusion TypeScript Gantt Chart with CRUD operations, editing modes, and hierarchical task organization for projects.
 keywords: TypeScript gantt manage tasks, task management, create tasks, update tasks, delete tasks, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/managing-tasks/managing-tasks
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/managing-tasks/managing-tasks
 platform: gantt-sdk
 control: Managing Tasks - Gantt Chart
 documentation: ug
@@ -22,7 +22,7 @@ Multiple editing modes are available including:
 - **Taskbar dragging** for duration or date adjustments
 - **Connector line dragging** for task dependencies
 
-Customize dialogs with templates or fields using [addDialogFields](https://ej2.syncfusion.com/documentation/api/gantt#adddialogfields) and [editDialogFields](https://ej2.syncfusion.com/documentation/api/gantt#editdialogfields) properties. Methods like [addRecord](https://ej2.syncfusion.com/documentation/api/gantt#addrecord), [deleteRow](https://ej2.syncfusion.com/documentation/api/gantt#deleterow), and [updateRecordById](https://ej2.syncfusion.com/documentation/api/gantt#updaterecordbyid) support programmatic task management. Ensure valid `taskFields` mappings and a primary key to enable editing seamlessly.
+Customize dialogs with templates or fields using [addDialogFields](https://ej2.syncfusion.com/documentation/api/gantt#adddialogfields) and [editDialogFields](https://ej2.syncfusion.com/documentation/api/gantt#editdialogfields) properties. Methods like [addRecord](https://ej2.syncfusion.com/documentation/api/gantt#addrecord), [deleteRow](https://ej2.syncfusion.com/documentation/api/gantt#deleterow), and [updateRecordByID](https://ej2.syncfusion.com/documentation/api/gantt#updaterecordbyid) support programmatic task management. Ensure valid `taskFields` mappings and a primary key to enable editing seamlessly.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -265,5 +265,10 @@ The taskbar editing tooltip can be customized using the [tooltipSettings.editing
 
 - [How to add new tasks?](https://ej2.syncfusion.com/documentation/gantt/managing-tasks/adding-new-tasks)
 - [How to delete tasks?](https://ej2.syncfusion.com/documentation/gantt/managing-tasks/deleting-tasks)
+- [How to edit tasks?](managing-tasks/editing-tasks)
+- [How to maintain data on the server?](managing-tasks/maintaining-data-in-server)
+- [How to split and merge tasks?](managing-tasks/splitting-and-merging-tasks)
+- [How to edit taskbars?](managing-tasks/task-bar-editing)
+- [How to validate task data?](managing-tasks/validation)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/documentation/gantt/task-dependency)
 - [How to configure critical path?](https://ej2.syncfusion.com/documentation/gantt/critical-path)

@@ -3,7 +3,7 @@ layout: post
 title: Adding New Tasks in TypeScript Gantt Chart | Syncfusion
 description: Learn to add new tasks in Syncfusion TypeScript Gantt Chart through dialogs, toolbars, and programmatic methods for efficient project task management.
 keywords: TypeScript gantt add task, adding tasks, new task, create task, task creation, add dialog, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/managing-tasks/adding-new-tasks
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/managing-tasks/adding-new-tasks
 platform: gantt-sdk
 control: Adding Tasks - Gantt Chart
 documentation: ug

@@ -3,7 +3,7 @@ layout: post
 title: Rows in TypeScript Gantt Chart | Syncfusion
 description: Learn how to customize rows in Syncfusion TypeScript Gantt Chart with height settings, expansion, drag-and-drop, and row-level interactions.
 keywords: TypeScript gantt rows, row configuration, row height, row templates, row customization, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/rows/rows
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/rows/rows
 platform: gantt-sdk
 control: Rows - Gantt Chart
 documentation: ug
@@ -236,3 +236,9 @@ In this example, the `onCheckBoxChange` method checks the checkbox state and use
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/row-show-hide" %}
+
+## See also
+
+- [How to enable drag and drop?](rows/drag-and-drop)
+- [How to indent and outdent?](rows/indent-and-outdent)
+- [How to span rows?](rows/row-spanning)

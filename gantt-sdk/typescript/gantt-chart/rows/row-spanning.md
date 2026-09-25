@@ -3,7 +3,7 @@ layout: post
 title: Row Spanning in TypeScript Gantt Chart | Syncfusion
 description: Learn how to configure row spanning in Syncfusion TypeScript Gantt Chart to merge cells vertically for displaying shared information across rows.
 keywords: TypeScript gantt row spanning, cell spanning, row span, merge cells, cell merging, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/rows/row-spanning
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/rows/row-spanning
 platform: gantt-sdk
 control: Row Spanning - Gantt Chart
 documentation: ug
