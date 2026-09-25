@@ -37,7 +37,7 @@ let exportProperties: PdfExportProperties = {
 
 ## Draw a line in header and footer
 
-Customize lines in headers or footers using the [header](https://ej2.syncfusion.com/documentation/api/gantt/pdfHeader) or [footer](https://ej2.syncfusion.com/documentation/api/gantt/pdfFooter) properties in [PdfExportProperties](https://ej2.syncfusion.com/documentation/api/gantt/pdfExportProperties). Set `type` to **Line**, define `points` for start/end coordinates, `pageNumberType` for position, and `style` for color, width, or dash style.
+Customize lines in headers or footers using the [header](https://ej2.syncfusion.com/documentation/api/gantt/pdfHeader) or [footer](https://ej2.syncfusion.com/documentation/api/gantt/pdfFooter) properties in [PdfExportProperties](https://ej2.syncfusion.com/documentation/api/gantt/pdfExportProperties). Set `type` to **Line**, define `points` for start/end coordinates, and `style` for color, width, or dash style.
 
 ```ts
 let exportProperties: PdfExportProperties = {

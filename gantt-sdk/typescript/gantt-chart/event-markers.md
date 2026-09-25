@@ -32,7 +32,7 @@ Event markers render as vertical lines positioned at specific dates across the e
 
 **Timeline integration**: Event markers integrate seamlessly with the Gantt chart timeline, appearing as vertical indicators that extend from the top to the bottom of the chart area. This comprehensive visibility ensures important dates remain visible during scrolling, zooming, or filtering operations.
 
-**Configuration requirements**: Event markers require the `DayMarkers` injection in the AppModule providers section to enable rendering functionality. This service manages marker positioning, styling, and timeline integration logic.
+**Configuration requirements**: Event markers require `Gantt.Inject(DayMarkers)` to enable rendering functionality. The `DayMarkers` module manages marker positioning, styling, and timeline integration logic.
 
 **Multiple marker support**: The control supports multiple event markers simultaneously, allowing comprehensive tracking of various project-critical dates within the same timeline view. Each marker maintains independent configuration while sharing the common timeline space.
 

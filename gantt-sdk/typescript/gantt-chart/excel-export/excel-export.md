@@ -139,3 +139,7 @@ To export Gantt data as a Blob object for advanced processing or custom download
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/excel-export-cs12" %}
+
+## See also
+
+- [How to configure export options?](excel-export-options)

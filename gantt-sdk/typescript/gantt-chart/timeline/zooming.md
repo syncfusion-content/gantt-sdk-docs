@@ -3,7 +3,7 @@ layout: post
 title: Zooming in TypeScript Gantt Chart | Syncfusion
 description: Implement zooming in Syncfusion TypeScript Gantt Chart with zoom in, zoom out, zoom to fit, and custom zoom levels for timeline navigation.
 keywords: TypeScript gantt zooming, zoom in, zoom out, zoom to fit, zoom level, timeline zoom, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/timeline/zooming
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/timeline/zooming
 platform: gantt-sdk
 control: Zooming - Gantt Chart
 documentation: ug
@@ -22,7 +22,7 @@ This support is used to increase the timeline width and timeline unit from years
 
 **Zoom out**
 
-This support is used to increase the timeline width and timeline unit from minutes to years timespan. When the `ZoomOut` icon was clicked, the timeline cell width is decreased when the cell size falls behind the specified range and the timeline view mode is changed based on the current zooming levels.
+This support is used to decrease the timeline width and timeline unit from minutes to years timespan. When the `ZoomOut` icon was clicked, the timeline cell width is decreased when the cell size falls behind the specified range and the timeline view mode is changed based on the current zooming levels.
 
 **Zoom to fit**
 

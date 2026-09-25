@@ -216,7 +216,7 @@ This example renders a custom taskbar with a progress bar and a badge showing th
 
 ## Enable multi-taskbar support
 
-In project view, multi-taskbar support, enabled by [enableMultiTaskbar](https://ej2.syncfusion.com/documentation/api/gantt#enablemultitaskbar), renders parent taskbars summarizing child progress when collapsed, providing aggregated visualization.
+In project view, multi-taskbar support, enabled by [enableMultiTaskbar](https://ej2.syncfusion.com/documentation/api/gantt#enablemultitaskbar), stacks each child's own individual taskbar inside the parent row when collapsed, so all child work is visible at a glance without expanding the parent.
 
 The following example enables multi-taskbar:
 
@@ -231,7 +231,7 @@ The following example enables multi-taskbar:
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/projectview-multitaskbar-cs1" %}
 
-This feature aggregates child progress in parent taskbars, updating dynamically on child changes.
+This feature stacks the child taskbars in the parent row, updating dynamically on child changes.
 
 ## Customize connector lines
 

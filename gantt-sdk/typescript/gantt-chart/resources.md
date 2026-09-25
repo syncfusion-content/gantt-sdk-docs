@@ -102,7 +102,7 @@ Assign multiple resources with specific units.
     StartDate: new Date('03/29/2019'),
     Duration: 2,
     Progress: 30,
-    resources: [{ resourceId: 1, unit: 70 }, 6]
+    resources: [{ resourceId: 1, resourceUnit: 70 }, 6]
 }
 ```
 

@@ -33,6 +33,7 @@ To enable sorting functionality, inject the [Sort](https://ej2.syncfusion.com/do
 
 > - The Gantt columns are sorted in the ascending order. If you click the already sorted column, the sort direction toggles.
 > - To disable sorting for a particular column, set the [columns.allowSorting](https://ej2.syncfusion.com/documentation/api/gantt/column#allowsorting) property to **false**.
+> - Sorting never flattens hierarchy: children always sort within their own parent group, regardless of sort type.
 
 ## Initial sorting
 

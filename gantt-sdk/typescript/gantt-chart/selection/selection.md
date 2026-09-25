@@ -3,7 +3,7 @@ layout: post
 title: Selection in TypeScript Gantt Chart | Syncfusion
 description: Learn how to enable selection selection in Syncfusion TypeScript Gantt Chart with row and cell selection modes, keyboard navigation, and selection events.
 keywords: TypeScript gantt selection, row selection, cell selection, multiple select, keyboard navigation, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/selection/selection
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/selection/selection
 platform: gantt-sdk
 control: Selection - Gantt Chart
 documentation: ug
@@ -144,3 +144,8 @@ The touch interaction feature in the Gantt control allows you to easily interact
 [Multiple Row Selection](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/selection#multiple-row-selection) : To select multiple rows, you can utilize the multi-row selection feature. When you tap on a row, a popup is displayed, indicating the option for multi-row selection. Tap on the popup, and then proceed to tap on the desired rows you want to select. This allows you to select and interact with multiple rows simultaneously, as shown in the following image:
 
 ![Multiple selection](../images/multiple-selection.PNG)
+
+## See also
+
+- [How to select cells?](selection/cell-selection)
+- [How to select rows?](selection/row-selection)

@@ -3,7 +3,7 @@ layout: post
 title: Searching in TypeScript Gantt Chart | Syncfusion
 description: Learn how to enable quick search in Syncfusion TypeScript Gantt Chart to quickly find tasks and data across the project timeline.
 keywords: TypeScript gantt searching, search tasks, text search, find tasks, search functionality, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/filtering/searching
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/filtering/searching
 platform: gantt-sdk
 control: Searching - Gantt Chart
 documentation: ug
@@ -39,7 +39,6 @@ To configure this feature, define the following properties:
 | `operator`     | Sets the condition for matching (e.g., `contains`, `equals`). |
 | `key`          | Specifies the value to search for.                            |
 | `ignoreCase`   | Determines if the search should be case-insensitive.          |
-| `ignoreAccent` | Ignores diacritic characters or accents during the search.    |
 
 The following sample demonstrates an initial search where `fields` is set to **TaskName**, `operator` is **contains**, `key` is **Pr�duct**, with `ignoreCase` set to **true** and `ignoreAccent` set to **true** (e.g., typing "product" will match "Pr�duct").
 
@@ -64,11 +63,11 @@ The following operators are supported in searching:
 
 | Operator   | Description                                           |
 | ---------- | ----------------------------------------------------- |
-| startsWith | Matches values that begin with the specified text.    |
-| endsWith   | Matches values that end with the specified text.      |
-| contains   | Matches values that include the specified text.       |
-| equal      | Matches values that exactly match the specified text. |
-| notEqual   | Matches values that do not match the specified text.  |
+| `startswith` | Matches values that begin with the specified text.    |
+| `endswith`   | Matches values that end with the specified text.      |
+| `contains`   | Matches values that include the specified text.       |
+| `equal`      | Matches values that exactly match the specified text. |
+| `notequal`   | Matches values that do not match the specified text.  |
 
 > The default value for `searchSettings.operator` is `contains`.
 
