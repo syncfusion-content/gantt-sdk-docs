@@ -150,5 +150,3 @@ To resize a column:
 The screenshot below illustrates column resizing on a touch device.
 
 ![Column resize](../images/column-resize.png)
-
-> Column resize is captured by the [UndoRedo](undo-redo) module's action tracker as 'ColumnResize'. Enable the UndoRedo module to allow users to undo / redo resize operations.

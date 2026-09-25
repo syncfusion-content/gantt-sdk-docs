@@ -6933,7 +6933,7 @@ console.log("Row selection cancelled for TaskID 3");
 
 The [splitterResizeStart](https://ej2.syncfusion.com/documentation/api/gantt#splitterresizestart) event is triggered when the splitter bar begins resizing in the Gantt Chart layout.It enables actions that respond to resize initiation, such as applying layout constraints, customizing visuals, or tracking user interaction.
 
-The event provides an argument of type [ResizeEventArgs](https://ej2.syncfusion.com/documentation/api/layout#resizeeventargs) (from `@syncfusion/ej2-layouts`) with the following properties:
+The event provides an argument of type `ResizeEventArgs` with the following properties:
 
 | **Property** | **Type** | **Description**                          |
 | ------------ | -------- | ---------------------------------------- |
