@@ -117,8 +117,6 @@ The Gantt Chart control provides comprehensive keyboard navigation support follo
 | <kbd>Insert</kbd>                    | Adds a new row                                 | Quick task creation         |
 | <kbd>Ctrl + Insert</kbd>             | Opens addRowDialog                             | Detailed task creation      |
 | <kbd>Ctrl + F2</kbd>                 | Opens editRowDialog                            | Task editing                |
-| <kbd>Ctrl + A</kbd>                  | Select all rows                                 | Grid and chart areas        |
-| <kbd>Shift + F10</kbd>               | Opens the context menu via the keyboard         | Grid rows and cells         |
 | <kbd>Delete</kbd>                    | Deletes the selected row                       | Task removal                |
 | <kbd>Shift + F5</kbd>                | Focus specific task                            | Task location               |
 | <kbd>Ctrl + Shift + F</kbd>          | Focus search functionality                     | Data filtering              |

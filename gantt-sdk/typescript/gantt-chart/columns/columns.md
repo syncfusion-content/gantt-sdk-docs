@@ -396,7 +396,7 @@ You can also show or hide columns in the TypeScript Gantt Chart control using th
 
 You can dynamically show or hide columns by passing either a single header text or an array of header texts as the first parameter, and specifying `headerText` as the second parameter. This enables dynamic control over column visibility based on the displayed header.
 
-You can use the `getGanttColumns` method to retrieve all defined columns. To get only the visible columns, use `getVisibleColumns`.
+You can use the `getGanttColumns` method to retrieve all defined columns. To get only the visible columns, use `getVisibleColumns` method.
 
 The following sample demonstrates how to hide and show columns using button clicks. When the **Hide Column** button is clicked, the `hideColumn` method is called with **Duration** as the first parameter and `headerText` as the second. Clicking the **Show Column** button restores the column using the `showColumn` method.
 
