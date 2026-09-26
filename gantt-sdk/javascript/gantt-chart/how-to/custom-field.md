@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Custom Fields - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Adding Custom Fields to Edit Dialogs in JavaScript Gantt Chart

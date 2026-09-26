@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Excel Export Options - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Customizing Excel Export with Advanced Options in React Gantt Chart

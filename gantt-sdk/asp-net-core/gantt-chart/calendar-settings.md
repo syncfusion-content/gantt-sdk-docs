@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Task Calendar - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Calendar Settings in ASP.NET Core Gantt Chart Control

@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Swimlane - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Swimlane Grouping in Vue Kanban

@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Zoom to Fit - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Maintain Zoom-to-Fit in React Gantt Chart

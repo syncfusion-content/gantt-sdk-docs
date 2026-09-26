@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Modules - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Feature Modules with Dependency Injection in JavaScript Gantt Chart

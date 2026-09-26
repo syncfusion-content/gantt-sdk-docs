@@ -9,9 +9,11 @@ appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Migrate GridTreeControl to SfTreeGrid in WPF Gantt
+
 To facilitate the migration from [`GridTreeControl`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html) to [`SfTreeGrid`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html), aimed at integrating drag-and-drop, filtering, and sorting capabilities into the GanttGrid, this transition results in the breaking of certain APIs and the introduction of new ones. Please find the differences in the following topics.
 
 ## Assembly references
+
 <table>
 <tr>
 <th>Removed Assemblies</th>
@@ -25,6 +27,7 @@ Syncfusion.GridCommon.WPF
 </table>
 
 ## Namespace
+
 <table>
 <tr>
 <th>Removed Namespaces</th>
@@ -38,7 +41,9 @@ Syncfusion.Windows.Controls.Gantt.Chart</td>
 </table>
 
 ## GanttGrid class API breaking
+
 ### Class
+
 <table>
 <tr>
 <th>Class Names</th>
@@ -54,6 +59,7 @@ Syncfusion.Windows.Controls.Gantt.Chart</td>
 </table>
 
 ### Properties
+
 <table>
 <tr>
 <th>Existing API Types</th>
@@ -89,9 +95,10 @@ Syncfusion.Windows.Controls.Gantt.Chart</td>
 <td>ObservableCollection(object)</td>
 <td>{{'[SelectedItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectedItems)'| markdownify }}</td>
 </tr>
-</table> 
+</table>
 
 ### Methods
+
 <table>
 <tr>
 <th>Existing Methods</th>
@@ -107,9 +114,10 @@ Syncfusion.Windows.Controls.Gantt.Chart</td>
 <td>{{'[ExpandAllNodes(GridTreeNode n)](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_ExpandAllNodes_Syncfusion_Windows_Controls_Grid_GridTreeNode_)'| markdownify }}</td>
 <td>{{'[ExpandAllNodes(TreeNode treeNode)](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ExpandAllNodes_Syncfusion_UI_Xaml_TreeGrid_TreeNode_)'| markdownify }}</td>
 </tr>
-</table> 
+</table>
 
 ### Events
+
 <table>
 <tr>
 <th>Existing Structures</th>
@@ -136,16 +144,16 @@ Syncfusion.Windows.Controls.Gantt.Chart</td>
 {{'[NodeCollapsing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_NodeCollapsing)'| markdownify }}</td>
 </tr>
 
-
 <tr>
 <td>{{'[SyncfusionRoutedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.ComponentModel.SyncfusionRoutedEventArgs.html)'| markdownify }}</td>
 <td>{{'[ItemsSourceChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridTreeControl.html#Syncfusion_Windows_Controls_Grid_GridTreeControl_ItemsSourceChanged)'| markdownify }} </td>
 <td>{{'[EventHandler(TreeGridItemsSourceChangedEventArgs)](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridItemsSourceChangedEventArgs.html)'| markdownify }}</td>
 <td>{{'[ItemsSourceChanged](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSourceChanged)'| markdownify }}</td>
 </tr>
-</table> 
+</table>
 
 ### Enums
+
 <table>
 <tr>
 <th>Existing Names</th>
@@ -195,6 +203,7 @@ VS2010
 </table>
 
 ### Column types
+
 <table>
 <tr>
 <th>GridTreeControl</th>
@@ -217,6 +226,7 @@ VS2010
 </table>
 
 ### Removed public classes
+
 <table>
 <tr>
 <th>Class Names</th>
@@ -256,13 +266,14 @@ VS2010
 
 ### Removed theme
 
-* Blend
-* Metro
-* Office2010Black
-* Office2010Silver
-* VS2010
+- Blend
+- Metro
+- Office2010Black
+- Office2010Silver
+- VS2010
 
 ### Removed API
+
 <table>
 <tr>
 <th>Class Names</th>
@@ -278,6 +289,7 @@ VS2010
 </table>
 
 ## Access type changed classes
+
 <table>
 <tr>
 <th>Class Names</th>
@@ -304,6 +316,7 @@ VS2010
 ## Newly added APIs
 
 ### Properties
+
 <table>
 <tr>
 <th>Names</th>
@@ -342,6 +355,7 @@ VS2010
 </table>
 
 ### Events
+
 <table>
 <tr>
 <th>Event Names</th>
@@ -381,9 +395,11 @@ VS2010
 </table>
 
 ## Gantt.MVVM.WPF
+
 To make the migration from GridTreeControl to SfTreeGrid, integrating drag-and-drop, filtering, and sorting into the Gantt grid, this transition breaks certain APIs and introduces new ones. Please find the differences in the following topics.
 
 ### Assembly references
+
 <table>
 <tr>
 <th>Removed Assemblies</th>
@@ -399,6 +415,7 @@ Syncfusion.GridCommon.WPF
 </table>
 
 ### Alternate events
+
 <table>
 <tr>
 <th>GridTreeControl Structure</th>
@@ -447,7 +464,9 @@ Syncfusion.GridCommon.WPF
 </table>
 
 ### Alternate commands
-#### ExpandStateChanging
+
+### ExpandStateChanging
+
 <table>
 <tr>
 <th>GridTreeControl Commands</th>
@@ -492,7 +511,8 @@ GanttGridNodeCollapsingCommand</td>
 </tr>
 </table>
 
-#### ExpandStateChanged
+### ExpandStateChanged
+
 <table>
 <tr>
 <th>GridTreeControl Commands</th>
@@ -537,7 +557,9 @@ GanttGridNodeCollapsedCommand</td>
 </table>
 
 ### Deprecated events
+
 These events are deprecated. The `GridTreeControl` has been replaced by the `SfTreeGrid` in the `WPF Gantt`.<table>
+
 <tr>
 <th>Structures</th>
 <th>Event Names</th>

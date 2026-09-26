@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Web API Adaptor - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Web API Adaptor for Remote Data Binding in Blazor Gantt Chart

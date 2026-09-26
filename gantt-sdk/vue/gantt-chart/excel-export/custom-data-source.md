@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Custom Data Source - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Configuring Advanced Excel Export Options in Vue Gantt Chart

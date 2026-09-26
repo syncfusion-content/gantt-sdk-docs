@@ -5,6 +5,7 @@ description: Learn about Highlighting Tasks support in Syncfusion WPF Gantt usin
 platform: gantt-sdk
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Highlighting Tasks in WPF Gantt

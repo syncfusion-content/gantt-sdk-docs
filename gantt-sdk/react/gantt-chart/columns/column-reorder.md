@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Column Reorder - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Reordering Columns Using Drag-and-Drop in React Gantt Chart

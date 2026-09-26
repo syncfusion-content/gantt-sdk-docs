@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Drag and Drop - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Enabling Drag and Drop for Rows in ASP.NET MVC Gantt Chart

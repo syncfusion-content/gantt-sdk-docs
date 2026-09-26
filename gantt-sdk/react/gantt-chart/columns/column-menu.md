@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Column Menu - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Enabling Column Header Menu for Sort and Filter in React Gantt Chart

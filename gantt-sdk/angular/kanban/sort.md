@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Sorting - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Card Management and Sorting in Angular Kanban

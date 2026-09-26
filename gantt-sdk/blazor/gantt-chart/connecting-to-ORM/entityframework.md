@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Entity Framework - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Connecting to SQL Server Using Entity Framework in Blazor Gantt Chart

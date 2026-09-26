@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Filtering - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Filtering and Search Features in JavaScript Gantt Chart

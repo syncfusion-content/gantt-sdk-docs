@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Virtual Scroll - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Virtual Scrolling in ASP.NET MVC Gantt Chart

@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Column Rendering - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Column Rendering with Data Binding in JavaScript Gantt Chart

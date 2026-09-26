@@ -5,6 +5,7 @@ description: Learn task scheduling in Syncfusion Blazor Gantt Chart including au
 platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Task Scheduling with Duration Units in Blazor Gantt Chart

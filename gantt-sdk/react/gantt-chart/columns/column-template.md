@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Column Template - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Rendering Custom Content with Column Templates in React Gantt Chart

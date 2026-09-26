@@ -6,6 +6,7 @@ control: Getting started page
 platform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Getting Started with the Vue Kanban Component in Vue 3
@@ -83,7 +84,7 @@ Now that `my-project` is ready to run with default settings, let's add Syncfusio
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Vue packages
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Vue component packages are available at [node package registry](https://www.npmjs.com/search?q=ej2-vue). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Vue components in the project, install the corresponding npm package.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Vue component packages are available at [npmjs.com](https://www.npmjs.com/search?q=ej2-vue). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Vue components in the project, install the corresponding npm package.
 
 This article uses the [Vue Kanban component](https://www.syncfusion.com/vue-components/vue-kanban) as an example. To use the Vue Kanban component in the project, the `@syncfusion/ej2-vue-kanban` package needs to be installed using the following command:
 
@@ -99,7 +100,7 @@ yarn add @syncfusion/ej2-vue-kanban
 
 ## Import Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
-You can import themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> Vue component in various ways, such as using CSS or SASS styles from npm packages, CDN, [CRG](https://crg.syncfusion.com/) and [Theme Studio](https://ej2.syncfusion.com/vue/documentation/appearance/theme-studio). Refer to [themes topic](https://ej2.syncfusion.com/vue/documentation/appearance/theme) to know more about built-in themes and different ways to refer to themes in a Vue project.
+You can import themes for the Syncfusion<sup style="font-size:70%">&reg;</sup> Vue component in various ways, such as using CSS or SASS styles from npm packages, CDN, [CRG](https://ej2.syncfusion.com/javascript/documentation/common/custom-resource-generator) and [Theme Studio](https://ej2.syncfusion.com/vue/documentation/appearance/theme-studio). Refer to [themes topic](https://ej2.syncfusion.com/vue/documentation/appearance/theme) to know more about built-in themes and different ways to refer to themes in a Vue project.
 
 In this article, `Material` theme is applied using CSS styles, which are available in installed packages. The necessary `Material` CSS styles for the Kanban component and its dependents were imported into the `<style>` section of **src/App.vue** file.
 
@@ -234,14 +235,14 @@ Here is the summarized code for the above steps in the **src/App.vue** file:
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
 <template>
-<ejs-kanban id="kanban" keyField="Status" :dataSource="data" :cardSettings="cardSettings">
-<e-columns>
-<e-column headerText="To Do" keyField="Open" ></e-column>
-<e-column headerText="In Progress" keyField="InProgress" ></e-column>
-<e-column headerText="Testing" keyField="Testing" ></e-column>
-<e-column headerText="Done" keyField="Close" ></e-column>
-</e-columns>
-</ejs-kanban>
+      <ejs-kanban id="kanban" keyField="Status" :dataSource="data" :cardSettings="cardSettings">
+        <e-columns>
+          <e-column headerText="To Do" keyField="Open" ></e-column>
+          <e-column headerText="In Progress" keyField="InProgress" ></e-column>
+          <e-column headerText="Testing" keyField="Testing" ></e-column>
+          <e-column headerText="Done" keyField="Close" ></e-column>
+        </e-columns>
+      </ejs-kanban>
 </template>
 
 <script setup>

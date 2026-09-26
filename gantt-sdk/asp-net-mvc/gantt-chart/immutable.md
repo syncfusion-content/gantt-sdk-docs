@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Immutable Mode - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Immutable Mode in ASP.NET MVC Gantt Chart

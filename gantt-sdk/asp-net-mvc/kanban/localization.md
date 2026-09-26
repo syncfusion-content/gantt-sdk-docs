@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Localization - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Globalization and Localization Support in ASP.NET MVC Kanban

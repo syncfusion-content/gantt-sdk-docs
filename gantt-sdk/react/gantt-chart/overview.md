@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Overview - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # React Gantt Chart Overview

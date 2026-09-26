@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Data Markers - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Task Markers and Milestones in TypeScript Gantt Chart

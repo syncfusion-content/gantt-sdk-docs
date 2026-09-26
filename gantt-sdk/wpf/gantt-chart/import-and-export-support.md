@@ -642,7 +642,7 @@ The following image shows Importing the exported document in MS Project:
 Exported document opened in MS Project
 {:caption}
 
-#### Samples Link
+### Samples Link
 
 To view samples: 
 

@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Open Add Edit Dialog - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Opening Add and Edit Dialogs Programmatically in Vue Gantt Chart

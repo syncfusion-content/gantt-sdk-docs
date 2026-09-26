@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Column Headers - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Customizing Column Headers in JavaScript Gantt Chart

@@ -5,6 +5,7 @@ description: Learn how to install the Syncfusion Gantt SDK web installer after d
 platform: gantt-sdk
 control: Installation and Deployment
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Installing Syncfusion Gantt SDK web installer

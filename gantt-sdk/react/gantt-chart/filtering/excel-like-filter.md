@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Excel-like Filter - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Checkbox-Based Excel-Like Filtering in React Gantt Chart

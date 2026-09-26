@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Task Constraints - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Task Constraints with Scheduling Rules in ASP.NET MVC Gantt Chart

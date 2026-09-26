@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion WPF Gantt control. Exp
 platform: gantt-sdk
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Getting Started with WPF Gantt
@@ -93,7 +94,7 @@ You can create WPF Gantt control in two methods. They are:
 
 The following are the steps to create WPF Gantt control programmatically: 
 
-#### Adding WPF Gantt control
+### Adding WPF Gantt control
 
 You can add WPF Gantt control to the application using the following code:
 
@@ -111,7 +112,7 @@ GanttControl ganttControl = new GanttControl();
 
 When the code runs, an empty Gantt with in-built TaskDetails collection will be displayed.
 
-#### Binding data to GanttControl
+### Binding data to GanttControl
 
 Create a collection of tasks and bind it to the newly created WPF Gantt control as given in the following code:
 

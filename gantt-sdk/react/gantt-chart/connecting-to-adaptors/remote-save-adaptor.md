@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Remote Save Adaptor - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Hybrid Data Binding with Remote Save Adaptor in React Gantt Chart

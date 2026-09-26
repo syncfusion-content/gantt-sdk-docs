@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Taskbar - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Taskbar Customization with Templates in JavaScript Gantt Chart

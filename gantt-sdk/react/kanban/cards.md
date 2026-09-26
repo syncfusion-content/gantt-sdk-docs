@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Cards - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Cards and Custom Layouts in React Kanban

@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Loading Animation - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Loading Indicators with Spinner and Shimmer in TypeScript Gantt Chart

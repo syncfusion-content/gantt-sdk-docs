@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Persistence - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # State Persistence in TypeScript Kanban

@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: MySQL Database - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Connecting to MySQL via Entity Framework in Blazor Gantt Chart

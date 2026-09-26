@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Web Method Adaptor - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Binding Remote Data Using WebMethodAdaptor in React Gantt Chart

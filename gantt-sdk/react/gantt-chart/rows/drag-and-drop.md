@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Row Drag and Drop - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Reordering Tasks with Row Drag and Drop in React Gantt Chart

@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Multiple Gantt Exporting - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Multiple Gantt Exporting in Vue Gantt Chart

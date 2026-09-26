@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: EJ1 API Migration - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # EJ1 to EJ2 API Migration in ASP.NET MVC Gantt Chart

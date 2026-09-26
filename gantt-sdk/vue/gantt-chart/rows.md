@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Rows - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Row Structure and Interactions in Vue Gantt Chart

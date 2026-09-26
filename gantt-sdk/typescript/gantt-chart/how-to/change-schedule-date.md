@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Update Schedule Date - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Updating Schedule Dates Programmatically in TypeScript Gantt Chart

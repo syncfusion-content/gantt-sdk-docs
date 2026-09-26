@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Header and Footer in PDF Export - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Adding Headers and Footers to PDF Exports in Vue Gantt Chart

@@ -6,6 +6,7 @@ control: Dynamically change columns
 platform: gantt-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Dynamically change columns in Vue Kanban component

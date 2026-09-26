@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Indent and Outdent - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Indenting and Outdenting Rows for Hierarchy in TypeScript Gantt Chart

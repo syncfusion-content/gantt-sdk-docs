@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Checkbox Columns - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Checkbox Columns in Vue Gantt Chart

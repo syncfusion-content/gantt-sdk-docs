@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Labels - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Task Label Positions and Template Support in ASP.NET MVC Gantt Chart

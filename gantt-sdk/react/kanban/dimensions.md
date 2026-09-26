@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Dimensions - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Dimensions and Responsive Sizing in React Kanban

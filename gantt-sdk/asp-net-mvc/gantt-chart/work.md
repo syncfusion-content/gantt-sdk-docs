@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Work - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Work Tracking in ASP.NET MVC Gantt Chart

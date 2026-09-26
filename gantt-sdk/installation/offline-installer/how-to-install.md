@@ -5,7 +5,7 @@ description: Learn how to install the Syncfusion Gantt SDK offline installer aft
 platform: gantt-sdk
 control: Installation and Deployment
 documentation: ug
-
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Installing Syncfusion Gantt SDK offline installer
@@ -67,10 +67,6 @@ The steps below show how to install the Essential Studio Gantt SDK installer.
     N> From the 2021 Volume 1 release, Syncfusion has added the option to uninstall previous versions from 18.1 while installing the new version.
 
     N> If any version is selected to uninstall, a confirmation screen appears; if continue is selected, the Progress screen displays the uninstall and install progress, respectively. If none of the versions are chosen to be uninstalled, only the installation progress is displayed.
-
-    **Confirmation Alert**
-
-    ![Confirmation wizard](images/Step-by-Step-Installation_img8.png)
 
     **Uninstall Progress:**
 

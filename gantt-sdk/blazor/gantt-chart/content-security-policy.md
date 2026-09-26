@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Content Security Policy - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Strict CSP Configuration and Feature Limitations in Blazor Gantt Chart

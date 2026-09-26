@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Validation - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Implement Data Validation and Error Handling in JavaScript Gantt Chart

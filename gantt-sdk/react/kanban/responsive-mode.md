@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Responsive Mode - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Responsive Mode and Adaptive Layouts in React Kanban
