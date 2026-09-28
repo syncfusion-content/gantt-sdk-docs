@@ -101,8 +101,8 @@ The Syncfusion® Blazor Gantt Chart component supports data annotation validatio
 
 **Applying data annotation**
 
-* Add validation attributes to the model class properties that are bound to the Gantt Chart.
-* Validation messages are displayed using the built-in tooltip in the Gantt Chart.
+* Add validation attributes to the model class properties that are bound to the Blazor Gantt Chart.
+* Validation messages are displayed using the built-in tooltip in the Blazor Gantt Chart.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -179,7 +179,7 @@ The Syncfusion® Blazor Gantt Chart component supports custom validation for sce
 
 * Create a class that inherits from `ValidationAttribute` and override the `IsValid` method to include custom logic.
 * Apply the custom attribute to the model property that requires validation.
-* The Gantt Chart automatically enforces these rules during add and edit operations.
+* The Blazor Gantt Chart automatically enforces these rules during add and edit operations.
 
 The following example demonstrates how to implement custom validation for the **ActivityName** and **Progress** fields.
 
@@ -292,7 +292,7 @@ The Syncfusion® Blazor Gantt Chart component supports custom validator componen
 
 **Injecting a custom validator**
 
-A custom validator component can be injected into the internal EditForm of the Gantt Chart using the [Validator](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_Validator) property of [GanttEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html). Inside the validator, the current row's data and the edit context can be accessed through the implicit parameter context of type [ValidatorTemplateContext](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.ValidatorTemplateContext.html). This enables form-level checks during add and edit operations.
+A custom validator component can be injected into the internal EditForm of the Blazor Gantt Chart using the [Validator](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_Validator) property of [GanttEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html). Inside the validator, the current row's data and the edit context can be accessed through the implicit parameter context of type [ValidatorTemplateContext](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.ValidatorTemplateContext.html). This enables form-level checks during add and edit operations.
 
 For details on creating a form validator component, refer to [ASP.NET Core Blazor Validator Components](https://learn.microsoft.com/en-us/aspnet/core/blazor/forms/?view=aspnetcore-8.0#validator-components).
 

@@ -12,13 +12,13 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # OData V4 Adaptor for Data Binding in Blazor Gantt Chart
 
-The [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) uses the [ODataV4Adaptor](https://blazor.syncfusion.com/documentation/data/adaptors#odatav4-adaptor) to connect with remote OData V4 services, allowing it to load hierarchical task data, display project schedules on the timeline, and send changes back to the server as tasks are added, edited, or removed. This guide covers everything needed to set up the OData V4 service, bind project task data to the Gantt Chart, and perform CRUD (Create, Read, Update, and Delete) operations using the `ODataV4Adaptor`.
+The [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) uses the [ODataV4Adaptor](https://blazor.syncfusion.com/documentation/data/adaptors#odatav4-adaptor) to connect with remote OData V4 services, allowing it to load hierarchical task data, display project schedules on the timeline, and send changes back to the server as tasks are added, edited, or removed. This guide covers everything needed to set up the OData V4 service, bind project task data to the Blazor Gantt Chart, and perform CRUD (Create, Read, Update, and Delete) operations using the `ODataV4Adaptor`.
 
 Unlike vendor specific adaptor patterns, the `ODataV4Adaptor` works with any backend that exposes an OData V4 endpoint, so the Gantt is never locked into a particular server technology or platform.
 
 **How the `ODataV4Adaptor` maps to controller endpoints:**
 
-The adaptor converts Gantt Chart data operations into standard HTTP requests handled by ASP.NET Core controller actions. The mapping is:
+The adaptor converts Blazor Gantt Chart data operations into standard HTTP requests handled by ASP.NET Core controller actions. The mapping is:
 
 | Gantt Operation | HTTP Verb | Controller Method | Purpose |
 |-----------------|-----------|-------------------|---------|
@@ -27,7 +27,7 @@ The adaptor converts Gantt Chart data operations into standard HTTP requests han
 | Edit / taskbar drag | `PATCH` | `[HttpPatch("{key}")]` | Partially updates a task |
 | Delete | `DELETE` | `[HttpDelete("{key}")]` | Removes a task |
 
-The `Adaptor="Adaptors.ODataV4Adaptor"` setting in the `SfDataManager` instructs the Gantt Chart to issue these HTTP requests and parse the standard OData V4 response shape (`value` array and `@odata.context` metadata).
+The `Adaptor="Adaptors.ODataV4Adaptor"` setting in the `SfDataManager` instructs the Blazor Gantt Chart to issue these HTTP requests and parse the standard OData V4 response shape (`value` array and `@odata.context` metadata).
 
 ## Configuring an OData V4 Service
 
@@ -126,7 +126,7 @@ builder.Services.AddControllers().AddOData(
 
 **6. Create an API controller**
 
-Create an API controller (for example, **GanttController.cs**) under the **Controllers** folder within the `ODataV4Adaptor` project. This controller handles the HTTP requests for CRUD operations, including `GET`, `POST`, `PATCH`, and `DELETE`, used by the Gantt Chart.
+Create an API controller (for example, **GanttController.cs**) under the **Controllers** folder within the `ODataV4Adaptor` project. This controller handles the HTTP requests for CRUD operations, including `GET`, `POST`, `PATCH`, and `DELETE`, used by the Blazor Gantt Chart.
 
 ```csharp
 using Microsoft.AspNetCore.Mvc;
@@ -700,19 +700,19 @@ public IActionResult Delete(int key)
 
 ## Real-world use cases
 
-The `ODataV4Adaptor` is a strong fit for Gantt Chart scenarios where the task list is large, shared, or backed by an enterprise data service. Typical use cases include:
+The `ODataV4Adaptor` is a strong fit for Blazor Gantt Chart scenarios where the task list is large, shared, or backed by an enterprise data service. Typical use cases include:
 
-- **Enterprise project portfolios** – Centralized OData services that already expose project/task data to other tools (reporting, mobile, integrations) can be reused by the Gantt Chart without a separate API layer.
-- **Construction and engineering schedules** – Multi-level work breakdown structures (Phase → Stage → Activity → Task) where the same task records are read by Gantt Chart, Grid, and reporting views.
+- **Enterprise project portfolios** – Centralized OData services that already expose project/task data to other tools (reporting, mobile, integrations) can be reused by the Blazor Gantt Chart without a separate API layer.
+- **Construction and engineering schedules** – Multi-level work breakdown structures (Phase → Stage → Activity → Task) where the same task records are read by Blazor Gantt Chart, Grid, and reporting views.
 - **Resource planning** – HR or production planning tools that need to surface dependency-heavy timelines from an existing OData feed and enable taskbar drag operations to reassign dates.
-- **Cross-team editing** – In concurrent editing scenarios on the same project plan, the server-driven `PATCH` round-trip keeps the database as the source of truth and the Gantt Chart in sync after each save.
-- **Hybrid data sources** – A single OData endpoint that joins tasks, resources, and calendars allows the Gantt Chart to pull only the fields it needs via `$select` while still being able to drill into related entities.
+- **Cross-team editing** – In concurrent editing scenarios on the same project plan, the server-driven `PATCH` round-trip keeps the database as the source of truth and the Blazor Gantt Chart in sync after each save.
+- **Hybrid data sources** – A single OData endpoint that joins tasks, resources, and calendars allows the Blazor Gantt Chart to pull only the fields it needs via `$select` while still being able to drill into related entities.
 
-## Benefits of using the ODataV4Adaptor with the Gantt Chart
+## Benefits of using the ODataV4Adaptor with the Blazor Gantt Chart
 
-- **Standardized wire format** – OData V4 responses (`value` + `@odata.context`) are predictable, so the Gantt Chart can hydrate its tree, grid, and chart from a single payload.
+- **Standardized wire format** – OData V4 responses (`value` + `@odata.context`) are predictable, so the Blazor Gantt Chart can hydrate its tree, grid, and chart from a single payload.
 - **Server-driven shaping** – `$filter`, `$orderby`, `$top`, `$skip`, and `$count` keep large project datasets performant by pushing slicing, sorting, and counting to the server.
-- **Reduced client footprint** – Because filtering, sorting, and counting happen on the server, the Gantt Chart only renders the rows it needs, which is critical for schedules with thousands of tasks.
-- **Reusable backend** – The same OData endpoint that powers the Gantt Chart can power the DataGrid, charts, mobile apps, and third-party integrations, eliminating duplicate controller code.
-- **Full editing lifecycle** – Built-in `GET`, `POST`, `PATCH`, and `DELETE` conventions cover every Gantt Chart editing surface (inline, dialog, toolbar Add/Delete, and taskbar drag/resize).
+- **Reduced client footprint** – Because filtering, sorting, and counting happen on the server, the Blazor Gantt Chart only renders the rows it needs, which is critical for schedules with thousands of tasks.
+- **Reusable backend** – The same OData endpoint that powers the Blazor Gantt Chart can power the DataGrid, charts, mobile apps, and third-party integrations, eliminating duplicate controller code.
+- **Full editing lifecycle** – Built-in `GET`, `POST`, `PATCH`, and `DELETE` conventions cover every Blazor Gantt Chart editing surface (inline, dialog, toolbar Add/Delete, and taskbar drag/resize).
 - **Type-safe contracts** – The `ODataConventionModelBuilder` generates an EDM from the model class, giving you a typed contract that documents which fields and operations are exposed.

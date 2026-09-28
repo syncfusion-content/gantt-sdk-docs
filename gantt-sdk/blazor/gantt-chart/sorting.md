@@ -69,12 +69,12 @@ Sorting is applied by clicking a column header. For multi-column sorting, hold t
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/BZrHNxMkAZZaxzYu?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-> * The Gantt Chart columns are sorted in the ascending order. If you click the already sorted column, the sort direction toggles.
+> * The Blazor Gantt Chart columns are sorted in the ascending order. If you click the already sorted column, the sort direction toggles.
 > * To disable sorting for a particular column, set the `GanttColumn.AllowSorting` property to **false**.
 
 ## Initial sorting
 
-You can configure sorting during the initial render of the Syncfusion Blazor Gantt Chart by setting the [GanttSortSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSortSettings.html) property. Within this configuration, define each column in the [GanttSortSettings.GanttSortDescriptors](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSortSettings.html) collection using the `Field` and `Direction` properties to ensure the Gantt Chart loads with the desired sort order applied to the specified columns.
+You can configure sorting during the initial render of the Syncfusion Blazor Gantt Chart by setting the [GanttSortSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSortSettings.html) property. Within this configuration, define each column in the [GanttSortSettings.GanttSortDescriptors](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSortSettings.html) collection using the `Field` and `Direction` properties to ensure the Blazor Gantt Chart loads with the desired sort order applied to the specified columns.
 
 The following code example shows how to add sorted columns during Gantt initialization, with `Field` set to **TaskID** and `Direction` to **Descending**, and another with `Field` as **TaskName** and `Direction` as **Ascending**.
 
@@ -141,7 +141,7 @@ You can externally sort columns, clear all sorting in the Syncfusion<sup style="
 
 ### Add sort columns
 
-You can externally sort a column in the Gantt Chart component using the [SortByColumnAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_SortByColumnAsync_System_String_Syncfusion_Blazor_Grids_SortDirection_System_Nullable_System_Boolean__) method with parameters for column name, sort direction, and multi-sort configuration.
+You can externally sort a column in the Blazor Gantt Chart component using the [SortByColumnAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_SortByColumnAsync_System_String_Syncfusion_Blazor_Grids_SortDirection_System_Nullable_System_Boolean__) method with parameters for column name, sort direction, and multi-sort configuration.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -206,7 +206,7 @@ You can externally sort a column in the Gantt Chart component using the [SortByC
 
 ### Clear sorting
 
-You can clear all sorted columns in the Gantt Chart component using the [ClearSortingAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ClearSortingAsync) method to reset the Gantt chart to its unsorted state.
+You can clear all sorted columns in the Blazor Gantt Chart component using the [ClearSortingAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ClearSortingAsync) method to reset the Blazor Gantt Chart to its unsorted state.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}

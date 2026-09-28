@@ -224,7 +224,7 @@ The full set of default card fields recognized by the Kanban control is:
 | `Priority` | Used by the priority feature |
 | `DueDate` | Used by the due-date feature |
 
-To customize which fields appear on a card, use the [`cardSettings`](./cards) property; to add remote data fetching, see the [`dataSource`](./data-binding) configuration.
+To customize which fields appear on a card, use the [`cardSettings`](https://help.syncfusion.com/gantt-sdk/typescript/kanban/cards) property; to add remote data fetching, see the [`dataSource`](https://help.syncfusion.com/gantt-sdk/typescript/kanban/data-binding) configuration.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -270,11 +270,11 @@ To customize which fields appear on a card, use the [`cardSettings`](./cards) pr
 
 ## See also
 
-* [Columns configuration](./columns)
-* [Swimlane configuration](./swimlane)
-* [Cards and card fields](./cards)
-* [Data binding](./data-binding)
-* [Remote data binding with ODataV4](./odataV4)
-* [Sorting and filtering cards](./sort)
-* [Responsive mode](./responsive-mode)
-* [Accessibility](./accessibility)
+* [Columns configuration](https://help.syncfusion.com/gantt-sdk/typescript/kanban/columns)
+* [Swimlane configuration](https://help.syncfusion.com/gantt-sdk/typescript/kanban/swimlane)
+* [Cards and card fields](https://help.syncfusion.com/gantt-sdk/typescript/kanban/cards)
+* [Data binding](https://help.syncfusion.com/gantt-sdk/typescript/kanban/data-binding)
+* [Remote data binding with ODataV4](https://help.syncfusion.com/gantt-sdk/typescript/kanban/odataV4)
+* [Sorting and filtering cards](https://help.syncfusion.com/gantt-sdk/typescript/kanban/sort)
+* [Responsive mode](https://help.syncfusion.com/gantt-sdk/typescript/kanban/responsive-mode)
+* [Accessibility](https://help.syncfusion.com/gantt-sdk/typescript/kanban/accessibility)

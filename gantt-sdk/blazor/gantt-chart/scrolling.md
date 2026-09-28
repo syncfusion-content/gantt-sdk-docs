@@ -91,7 +91,7 @@ The following example sets fixed dimensions:
 
 ## Configure responsive scrolling
 
-You can make the Gantt Chart component responsive by setting its [Height](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Height) and [Width](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Width) to **100%**, allowing it to fully occupy the parent container. When height is set to **100%**, the parent element must have a defined `Height` to support proper layout rendering. The Gantt will automatically adjust when the container is resized.
+You can make the Blazor Gantt Chart component responsive by setting its [Height](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Height) and [Width](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Width) to **100%**, allowing it to fully occupy the parent container. When height is set to **100%**, the parent element must have a defined `Height` to support proper layout rendering. The Gantt will automatically adjust when the container is resized.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}

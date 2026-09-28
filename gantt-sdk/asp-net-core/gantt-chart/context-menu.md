@@ -41,7 +41,7 @@ The default items are listed in the following table.
 {% endhighlight %}
 {% endtabs %}
 
-![Alt text](./images/contextmenu.PNG)
+![Alt text](./images/contextmenu.png)
 
 ## Custom context menu items
 

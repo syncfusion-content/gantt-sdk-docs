@@ -30,12 +30,12 @@ The following table shows built-in toolbar items and its actions.
 | Indent                 | Indent the selected record to one level.                        |
 | Outdent                | Outdent the selected record to one level.                       |
 | ExpandAll              | Expands all the rows.                                           |
-| NextTimeSpan           | Navigate the Gantt Chart timeline to next time span.            |
-| PrevTimeSpan           | Navigate the Gantt Chart timeline to previous time span.        |
+| NextTimeSpan           | Navigate the Blazor Gantt Chart timeline to next time span.            |
+| PrevTimeSpan           | Navigate the Blazor Gantt Chart timeline to previous time span.        |
 | Search                 | Searches the records by the given key.                          |
 | Update                 | Updates the edited record.                                      |
-| ZoomIn                 | To perform zoom-in action on Gantt Chart timeline.              |
-| ZoomOut                | To perform zoom-out action on Gantt Chart timeline.             |
+| ZoomIn                 | To perform zoom-in action on Blazor Gantt Chart timeline.              |
+| ZoomOut                | To perform zoom-out action on Blazor Gantt Chart timeline.             |
 | ZoomToFit              | To show all tasks with timeline fit into available Chart width. |
 
 {% tabs %}
@@ -97,7 +97,7 @@ The following table shows built-in toolbar items and its actions.
 
 ## Custom toolbar items
 
-You can add custom items to the Gantt chart toolbar by setting the [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Toolbar) property with a collection of `ItemModel` objects. The actions associated with these custom toolbar items can be handled using the [OnToolbarClick](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#ontoolbarclick) event.
+You can add custom items to the Blazor Gantt Chart toolbar by setting the [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Toolbar) property with a collection of `ItemModel` objects. The actions associated with these custom toolbar items can be handled using the [OnToolbarClick](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#ontoolbarclick) event.
 
 By default, custom toolbar items are aligned to the left. However, you can change their position using the [Align](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Navigations.ToolbarItem.html#Syncfusion_Blazor_Navigations_ToolbarItem_Align) property. In the example below, the **Collapse All** toolbar item is aligned to the right.
 

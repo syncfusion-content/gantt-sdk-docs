@@ -12,14 +12,14 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Blazor Gantt Chart Overview
 
-The Gantt Chart in Blazor offers a project management interface similar to Microsoft Project, designed for scheduling and managing projects. It provides an intuitive way to visually manage tasks, their relationships, and project resources.
+The Blazor Gantt Chart in Blazor offers a project management interface similar to Microsoft Project, designed for scheduling and managing projects. It provides an intuitive way to visually manage tasks, their relationships, and project resources.
 
 ## Key features
 
 **1. Data & Handling** 
 Supports flexible data integration and efficient processing through structured field mapping, remote data connectivity, and performance-optimized rendering for large datasets.
    * [Data Binding](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/data-binding): The Gantt component supports both **hierarchical** and **self-referential** JSON structures. It also integrates seamlessly with remote data sources using the DataManager component, enabling RESTful API connections, OData, and other services. This flexibility allows dynamic data loading. 
-   * [Task Field Mapping](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/data-binding#taskfields-mapping): Maps specific data fields to Gantt chart properties using the [GanttTaskFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html) configuration. Required fields include Id, Name, and StartDate, with optional fields like Duration, Progress, and ParentID to define task hierarchy and scheduling.
+   * [Task Field Mapping](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/data-binding#taskfields-mapping): Maps specific data fields to Blazor Gantt Chart properties using the [GanttTaskFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html) configuration. Required fields include Id, Name, and StartDate, with optional fields like Duration, Progress, and ParentID to define task hierarchy and scheduling.
    * [Large Data](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/data-binding#load-child-on-demand): Optimized for large datasets using **virtualization** and **load-on-demand** techniques. Improves performance by rendering only visible rows and timeline cells during scroll operations.
 
 **2. Task Management** 
@@ -54,7 +54,7 @@ Supports customizable visual elements for task representation, including taskbar
   * [Themes](https://blazor.syncfusion.com/documentation/appearance/theme-studio#common-variables): Supports multiple design systems including Fluent, Tailwind, Bootstrap, and Material. Theme Studio enables branding and style customization.
 
 **5. Grid Setup** 
-Defines the tabular structure of the Gantt chart, allowing customization of columns, rows, and selection behavior to support readable layouts and interactive data handling.
+Defines the tabular structure of the Blazor Gantt Chart, allowing customization of columns, rows, and selection behavior to support readable layouts and interactive data handling.
   * [Columns](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/columns):  Defines the structure and layout of the grid by specifying which task fields are displayed. Supports reordering and resizing to allow users to adjust column positions and widths. Templates can be used to customize both cell and header content for advanced formatting. Includes support for WBS columns to represent hierarchical task numbering and frozen columns to keep key fields visible during horizontal scrolling. Column rendering is optimized for performance, and a column chooser is available to control visibility dynamically.
   * [Rows](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/rows): Allows customization of row appearance, including styling and height adjustments to suit layout and readability requirements.
   * [Selection](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/selection): Provides functionality for selecting rows or individual cells within the grid. Supports both single and multiple selection modes.
@@ -66,11 +66,11 @@ Handles resource planning and tracking through effort-based work mapping and all
 
 **7. Interaction** 
 Enables user-driven control through filtering, toolbar actions, drag-and-drop, context menus, and keyboard navigation, supporting efficient task manipulation and grid operations.
-  * [Filtering](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/filtering):  Helps organize and focus task data using column Menu filters, Excel-style filtering, and toolbar search. These options make it easier to view specific tasks or values within the Gantt chart. 
+  * [Filtering](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/filtering):  Helps organize and focus task data using column Menu filters, Excel-style filtering, and toolbar search. These options make it easier to view specific tasks or values within the Blazor Gantt Chart. 
   * [Toolbar](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/tool-bar): Includes built-in and customizable command buttons for performing various actions related to task and chart management.
-  * [Drag and Drop](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/drag-and-drop): Allows tasks and rows to be moved interactively for reordering and rescheduling within the Gantt chart.
+  * [Drag and Drop](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/drag-and-drop): Allows tasks and rows to be moved interactively for reordering and rescheduling within the Blazor Gantt Chart.
   * [Context Menu](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/context-menu): Enables quick access to task and column operations through right-click interaction. Menu options vary based on the selected element, such as task rows, column headers, or chart areas.
-  * [Keyboard](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/accessibility#keyboard-navigation): Enables efficient interaction through keyboard shortcuts for navigating tasks, editing values, and selecting rows or cells within the Gantt chart.
+  * [Keyboard](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/accessibility#keyboard-navigation): Enables efficient interaction through keyboard shortcuts for navigating tasks, editing values, and selecting rows or cells within the Blazor Gantt Chart.
 
 **8. Performance**
 Optimizes rendering and responsiveness through virtual scrolling, loading animations, and read-only configurations for handling large datasets effectively.
@@ -85,6 +85,6 @@ Supports internationalization and accessibility through localization, right-to-l
 **10. Export & Events**
 Enables structured data export to Excel, CSV, and PDF formats, and provides event hooks for customizing chart behavior during rendering, editing, and user interactions.
   * **Export:**  
-    * [Excel and CSV](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/excel-export): Enables exporting Gantt chart data to Excel and CSV formats, simplifying structured data handling for reporting and offline analysis.  
+    * [Excel and CSV](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/excel-export): Enables exporting Blazor Gantt Chart data to Excel and CSV formats, simplifying structured data handling for reporting and offline analysis.  
     * [PDF](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/pdf-export): Allows exporting the chart as a PDF document, with support for single-page layout to generate compact and printable visual summaries.
   * [Event Hooks](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events): Provides lifecycle events that enable customization of chart behavior during rendering, editing, and user interactions (e.g., DataBound, TaskbarEdited).

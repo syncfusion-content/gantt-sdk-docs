@@ -124,7 +124,7 @@ Enable dialog editing by setting [GanttEditSettings.AllowEditing](https://help.s
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/hXVxNGhjLWmKLWte?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-N> In dialog editing mode, the edit dialog appears when the Tree Grid or Gantt chart sides are double-clicked.
+N> In dialog editing mode, the edit dialog appears when the Tree Grid or Blazor Gantt Chart sides are double-clicked.
 
 ## Sections or tabs in Dialog
 

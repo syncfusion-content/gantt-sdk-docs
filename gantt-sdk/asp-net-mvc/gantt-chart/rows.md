@@ -78,7 +78,7 @@ On expand action [`Expanding`](https://help.syncfusion.com/cr/aspnetmvc-js2/Sync
 
 ## Customize rows
 
-You can customize the appearance of a row in grid side, by using the [`rowDataBound`](../api/gantt#rowdatabound) event and in chart side by using [`queryTaskbarInfo`](../api/gantt#querytaskbarinfo) event.
+You can customize the appearance of a row in grid side, by using the [`rowDataBound`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_RowDataBound) event and in chart side by using [`queryTaskbarInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_QueryTaskbarInfo) event.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

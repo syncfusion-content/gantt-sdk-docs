@@ -35,7 +35,7 @@ Data markers represent schedule events for specific tasks through visual indicat
 **Mapping configuration**: The marker array connects to the Gantt component through the [GanttTaskFields.Indicators](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_Indicators) property mapping. This configuration establishes the relationship between data source marker definitions and component rendering logic.
 
 **Multiple marker support**: Tasks can display multiple data markers simultaneously, allowing comprehensive event tracking within individual task contexts. Each marker maintains independent configuration while sharing the same task timeline space.
-The following implementation demonstrates comprehensive data marker integration within a Gantt chart, showcasing multiple markers per task with varied styling and tooltip configurations:
+The following implementation demonstrates comprehensive data marker integration within a Blazor Gantt Chart, showcasing multiple markers per task with varied styling and tooltip configurations:
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}

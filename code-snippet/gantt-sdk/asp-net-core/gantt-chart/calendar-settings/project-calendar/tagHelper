@@ -62,12 +62,7 @@
                                       {
                                           from = new DateTime(2026, 4, 10),
                                           to = new DateTime(2026, 4, 10),
-                                          name = "Maintenance Window",
-                                          isWorking = true,
-                                          workingTime = new[]
-                                          {
-                                              new { from = 18, to = 8 }
-                                          }
+                                          label = "Maintenance Window"
                                       }
                                   })">
             </e-gantt-taskcalendar>

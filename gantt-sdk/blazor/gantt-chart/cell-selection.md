@@ -12,11 +12,11 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Cell Selection with Single and Multiple Modes in Blazor Gantt Chart
 
-Cell selection in the Gantt Chart component enables interactive selection of specific cells or ranges of cells within the grid. You may select cells using mouse clicks or arrow keys (up, down, left, right). This is useful for highlighting, manipulating, or performing operations on particular gantt chart cells.
+Cell selection in the Blazor Gantt Chart component enables interactive selection of specific cells or ranges of cells within the grid. You may select cells using mouse clicks or arrow keys (up, down, left, right). This is useful for highlighting, manipulating, or performing operations on particular Blazor Gantt Chart cells.
 
 ## Single cell selection
 
-Single cell selection in the Gantt chart is enabled by setting [GanttSelectionSettings.Mode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html#Syncfusion_Blazor_Gantt_GanttSelectionSettings_Mode) to **Cell** and [GanttSelectionSettings.Type](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html#Syncfusion_Blazor_Gantt_GanttSelectionSettings_Type) to **Single**. This allows selecting only one cell at a time.
+Single cell selection in the Blazor Gantt Chart is enabled by setting [GanttSelectionSettings.Mode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html#Syncfusion_Blazor_Gantt_GanttSelectionSettings_Mode) to **Cell** and [GanttSelectionSettings.Type](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html#Syncfusion_Blazor_Gantt_GanttSelectionSettings_Type) to **Single**. This allows selecting only one cell at a time.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -73,7 +73,7 @@ Single cell selection in the Gantt chart is enabled by setting [GanttSelectionSe
   
 ## Multiple cell selection
 
-Multiple cell selection in the Gantt Chart is enabled by setting [GanttSelectionSettings.Mode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html#Syncfusion_Blazor_Gantt_GanttSelectionSettings_Mode) to **Cell** and [GanttSelectionSettings.Type](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html#Syncfusion_Blazor_Gantt_GanttSelectionSettings_Type) to **Multiple**. This allows selecting multiple cells at a time by holding the <kbd>Ctrl</kbd> key while clicking on each desired cell.
+Multiple cell selection in the Blazor Gantt Chart is enabled by setting [GanttSelectionSettings.Mode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html#Syncfusion_Blazor_Gantt_GanttSelectionSettings_Mode) to **Cell** and [GanttSelectionSettings.Type](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html#Syncfusion_Blazor_Gantt_GanttSelectionSettings_Type) to **Multiple**. This allows selecting multiple cells at a time by holding the <kbd>Ctrl</kbd> key while clicking on each desired cell.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -131,7 +131,7 @@ Multiple cell selection in the Gantt Chart is enabled by setting [GanttSelection
 
 ## Single cell selection dynamically
 
-Select a specific cell in the Gantt Chart by calling the  [SelectCellAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_SelectCellAsync_System_ValueTuple_System_Int32_System_Int32__System_Nullable_System_Boolean__) method and providing the desired row and column indexes as arguments.
+Select a specific cell in the Blazor Gantt Chart by calling the  [SelectCellAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_SelectCellAsync_System_ValueTuple_System_Int32_System_Int32__System_Nullable_System_Boolean__) method and providing the desired row and column indexes as arguments.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -201,7 +201,7 @@ Select a specific cell in the Gantt Chart by calling the  [SelectCellAsync](http
 
 ## Customize cell selection action
 
-You may customize cell selection behavior in the Gantt Chart using [CellSelecting](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#cellselecting), [CellSelected](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#cellselected), [CellDeselecting](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#celldeselecting), and [CellDeselected](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#celldeselected) events.
+You may customize cell selection behavior in the Blazor Gantt Chart using [CellSelecting](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#cellselecting), [CellSelected](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#cellselected), [CellDeselecting](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#celldeselecting), and [CellDeselected](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#celldeselected) events.
 
 The following sample demonstrates selection is canceled in the `cellSelecting` event when the **TaskName** is **Perform Soil test**. 
 

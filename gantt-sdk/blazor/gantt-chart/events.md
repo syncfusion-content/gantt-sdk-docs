@@ -12,13 +12,13 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Events and Custom Actions in Blazor Gantt Chart
 
-In this section, the list of events of the Gantt Chart component has been provided which will be triggered for appropriate Gantt Chart actions.
+In this section, the list of events of the Blazor Gantt Chart component has been provided which will be triggered for appropriate Blazor Gantt Chart actions.
 
-The events should be provided to the Gantt Chart using the GanttEvents component. When using events of the Gantt Chart, TValue must be provided in the GanttEvents component.
+The events should be provided to the Blazor Gantt Chart using the GanttEvents component. When using events of the Blazor Gantt Chart, TValue must be provided in the GanttEvents component.
 
 ## OnActionFailure
 
-[OnActionFailure](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_OnActionFailure) event trigger when any Gantt Chart action failed to achieve the desired results. Using this event, the error details and their cause is achieved. In the following sample, the wrong field name has been provided for the IdMapping property, so that it will throw the OnActionFailure event.
+[OnActionFailure](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_OnActionFailure) event trigger when any Blazor Gantt Chart action failed to achieve the desired results. Using this event, the error details and their cause is achieved. In the following sample, the wrong field name has been provided for the IdMapping property, so that it will throw the OnActionFailure event.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -75,7 +75,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 
 ## Created
 
-[Created](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_Created) event triggers when the Gantt Chart component is created. The Gantt Chart properties can be modified using this event.
+[Created](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_Created) event triggers when the Blazor Gantt Chart component is created. The Blazor Gantt Chart properties can be modified using this event.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -131,7 +131,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 
 ## OnLoad
 
-[OnLoad](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_OnLoad) event triggers before the rendering process starts which allows customization of Gantt Chart properties before the Gantt Chart rendering.
+[OnLoad](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_OnLoad) event triggers before the rendering process starts which allows customization of Blazor Gantt Chart properties before the Blazor Gantt Chart rendering.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -187,7 +187,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 
 ## DataBound
 
-[DataBound](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_DataBound) event is raised when data source is populated on the Gantt Chart.
+[DataBound](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_DataBound) event is raised when data source is populated on the Blazor Gantt Chart.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -243,7 +243,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 
 ## Destroyed
 
-[Destroyed](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_Destroyed) event triggers when the Gantt Chart component is destroyed. Using this event, confirm that the Gantt Chart gets destroyed.
+[Destroyed](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_Destroyed) event triggers when the Blazor Gantt Chart component is destroyed. Using this event, confirm that the Blazor Gantt Chart gets destroyed.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -476,7 +476,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 
 ## RowDropping
 
-[RowDropping](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_RowDropping) event triggers when the row elements are being dropped on to the target element in Gantt Chart.
+[RowDropping](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_RowDropping) event triggers when the row elements are being dropped on to the target element in Blazor Gantt Chart.
 
 > The dropping action can be cancelled by setting the `Cancel` argument of the `RowDropping` event to true.
 
@@ -537,7 +537,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 
 ## RowDropped
 
-[RowDropped](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_RowDropped) event triggers when row elements are dropped on the Gantt Chart.
+[RowDropped](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_RowDropped) event triggers when row elements are dropped on the Blazor Gantt Chart.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -596,7 +596,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 
 ## RowDataBound
 
-[RowDataBound](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_RowDataBound) event triggers every time a request is made to access row information, element, or data and before the row element is appended to the Gantt Chart element.
+[RowDataBound](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_RowDataBound) event triggers every time a request is made to access row information, element, or data and before the row element is appended to the Blazor Gantt Chart element.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -654,7 +654,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 ```
 
 ## Sorting
-[Sorting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_Sorting) event triggers  is triggered when a sorting action occurs or when a column is removed from sorting in the Gantt Chart.
+[Sorting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_Sorting) event triggers  is triggered when a sorting action occurs or when a column is removed from sorting in the Blazor Gantt Chart.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -709,7 +709,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 }
 ```
 ## Sorted 
-[Sorted](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_Sorted) event triggers after a sorting action is performed or a column is removed from sorting in the Gantt Chart.
+[Sorted](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_Sorted) event triggers after a sorting action is performed or a column is removed from sorting in the Blazor Gantt Chart.
 ```cshtml
 @using Syncfusion.Blazor.Gantt
 @using Syncfusion.Blazor.Grids
@@ -765,7 +765,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 ```
 ## Searching 
 
-[Searching](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_Searching)  event is triggered before a search action is performed in the Gantt Chart.
+[Searching](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_Searching)  event is triggered before a search action is performed in the Blazor Gantt Chart.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -822,7 +822,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 ```
 ## Searched 
 
-[Searched](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_Searched) event is triggered after a search action is performed in the Gantt Chart.
+[Searched](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_Searched) event is triggered after a search action is performed in the Blazor Gantt Chart.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -879,7 +879,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 ```
 ## RowCreating
 
-[RowCreating](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_RowCreating) event is triggered before an add action is performed in the Gantt Chart.
+[RowCreating](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_RowCreating) event is triggered before an add action is performed in the Blazor Gantt Chart.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -937,7 +937,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 
 ## RowCreated
 
-[RowCreated](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_RowCreated) event is triggered after an add action is performed in the Gantt Chart.
+[RowCreated](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_RowCreated) event is triggered after an add action is performed in the Blazor Gantt Chart.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -994,7 +994,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 ```
 ##  RowUpdating 
 
-[RowUpdating](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_RowUpdating ) event is triggered before a save action is performed in the Gantt Chart. 
+[RowUpdating](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_RowUpdating ) event is triggered before a save action is performed in the Blazor Gantt Chart. 
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -1051,7 +1051,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 ```
 ## RowUpdated 
 
-[RowUpdated ](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_RowUpdated) event is triggered after a save action is performed in the Gantt Chart. 
+[RowUpdated ](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_RowUpdated) event is triggered after a save action is performed in the Blazor Gantt Chart. 
 
 ```cshtml
 
@@ -1110,7 +1110,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 
 ## RowDeleting 
 
-[RowDeleting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_RowDeleting) event is triggered before a delete action is performed in the Gantt Chart. 
+[RowDeleting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_RowDeleting) event is triggered before a delete action is performed in the Blazor Gantt Chart. 
 
 ```cshtml
 
@@ -1167,7 +1167,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 ```
 ## RowDeleted
 
-[RowDeleted](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_RowDeleted) event is triggered after a delete action is performed in the Gantt Chart. 
+[RowDeleted](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_RowDeleted) event is triggered after a delete action is performed in the Blazor Gantt Chart. 
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -1225,7 +1225,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 ```
 ## Filtering 
 
-[Filtering](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_Filtering) event is triggered before a filtering or clear filtering action is performed in the Gantt Chart.
+[Filtering](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_Filtering) event is triggered before a filtering or clear filtering action is performed in the Blazor Gantt Chart.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -1283,7 +1283,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 ```
 ## Filtered
 
-[Filtered](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_Filtered) event is triggered after a filtering or clear filtering action is performed in the Gantt Chart.
+[Filtered](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_Filtered) event is triggered after a filtering or clear filtering action is performed in the Blazor Gantt Chart.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -1341,7 +1341,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 
 ## QueryChartRowInfo
 
-[QueryChartRowInfo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_QueryChartRowInfo) event triggers during the rendering of Taskbar in the Gantt Chart so that the Chart rows can be customized.
+[QueryChartRowInfo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_QueryChartRowInfo) event triggers during the rendering of Taskbar in the Blazor Gantt Chart so that the Chart rows can be customized.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -1400,7 +1400,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 
 ## QueryCellInfo
 
-[QueryCellInfo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_QueryCellInfo) event triggers every time a request is made to access cell information, element, or data and before the cell element is appended to the Gantt Chart element.
+[QueryCellInfo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_QueryCellInfo) event triggers every time a request is made to access cell information, element, or data and before the cell element is appended to the Blazor Gantt Chart element.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -3085,7 +3085,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 }
 ```
 ## FilterDialogOpening
-[FilterDialogOpening](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_FilterDialogOpening) event triggers before the filter dialog is opened in the Gantt chart. 
+[FilterDialogOpening](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_FilterDialogOpening) event triggers before the filter dialog is opened in the Blazor Gantt Chart. 
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -3141,7 +3141,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 }
 ```
 ## FilterDialogOpened
-[FilterDialogOpened](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_FilterDialogOpened) event is triggered after the filter dialog is opened in the Gantt chart. 
+[FilterDialogOpened](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_FilterDialogOpened) event is triggered after the filter dialog is opened in the Blazor Gantt Chart. 
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -3197,7 +3197,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 }
 ```
 ## ColumnReordering
-[ColumnReordering](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_ColumnReordering) event is triggered before the columns are reordered in the Gantt chart.
+[ColumnReordering](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_ColumnReordering) event is triggered before the columns are reordered in the Blazor Gantt Chart.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -3254,7 +3254,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 ```
 
 ## ColumnReordered
-[ColumnReordered](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_ColumnReordered) event is triggered after the columns are reordered in the Gantt chart.
+[ColumnReordered](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_ColumnReordered) event is triggered after the columns are reordered in the Blazor Gantt Chart.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -3310,7 +3310,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 }
 ```
 ## GanttDialogOpening
-[GanttDialogOpening](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_GanttDialogOpening) event is triggered before the dialog opens in the Gantt chart.
+[GanttDialogOpening](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_GanttDialogOpening) event is triggered before the dialog opens in the Blazor Gantt Chart.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -3366,7 +3366,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 }
 ```
 ## GanttDialogOpened
-[GanttDialogOpened](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_GanttDialogOpened) event is triggered after the dialog has opened in the Gantt chart.
+[GanttDialogOpened](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_GanttDialogOpened) event is triggered after the dialog has opened in the Blazor Gantt Chart.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -3422,7 +3422,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 }
 ```
 ## GanttDialogClosing
-[GanttDialogClosing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_GanttDialogClosing) event is triggered before the add and edit dialogs close in the Gantt chart.
+[GanttDialogClosing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_GanttDialogClosing) event is triggered before the add and edit dialogs close in the Blazor Gantt Chart.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -3478,7 +3478,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 }
 ```
 ## Zooming
-[Zooming](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_Zooming) event is triggered before the zoom action is performed in the Gantt chart.
+[Zooming](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_Zooming) event is triggered before the zoom action is performed in the Blazor Gantt Chart.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -3533,7 +3533,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 }
 ```
 ## Zoomed
-[Zoomed](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_Zoomed) event is triggered after the zoom action has been performed in the Gantt chart.
+[Zoomed](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_Zoomed) event is triggered after the zoom action has been performed in the Blazor Gantt Chart.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -3588,7 +3588,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 }
 ```
 ## TaskConnectorChanging
-[TaskConnectorChanging](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_TaskConnectorChanging) event is triggered when initiating the connection of a taskbar to another taskbar in the Gantt chart.
+[TaskConnectorChanging](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_TaskConnectorChanging) event is triggered when initiating the connection of a taskbar to another taskbar in the Blazor Gantt Chart.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -3643,7 +3643,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 }
 ```
 ## TaskConnectorChanged
-[TaskConnectorChanged](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_TaskConnectorChanged) event is triggered when a dependency connector line is drawn between two taskbars in the Gantt chart.
+[TaskConnectorChanged](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_TaskConnectorChanged) event is triggered when a dependency connector line is drawn between two taskbars in the Blazor Gantt Chart.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -3701,7 +3701,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 
 ## IndentationChanging
 
-[IndentationChanging](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_IndentationChanging) event triggers before an indent or outdent action is performed in the Gantt Chart. The `IsIndent` property of this event argument determines the type of indentation (indent or outdent). The following sample code demonstrates how to cancel the outdent action based on the `IsIndent` property.
+[IndentationChanging](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_IndentationChanging) event triggers before an indent or outdent action is performed in the Blazor Gantt Chart. The `IsIndent` property of this event argument determines the type of indentation (indent or outdent). The following sample code demonstrates how to cancel the outdent action based on the `IsIndent` property.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -3760,7 +3760,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 
 ## IndentationChanged
 
-[IndentationChanged](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_IndentationChanged) event triggers after an indent or outdent action is performed in the Gantt Chart. From the event argument, details about the indent or outdent action performed can be obtained using the `IsIndent` property. The following sample demonstrates how to determine whether the performed action is an indent or outdent based on the `IsIndent` property.
+[IndentationChanged](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_IndentationChanged) event triggers after an indent or outdent action is performed in the Blazor Gantt Chart. From the event argument, details about the indent or outdent action performed can be obtained using the `IsIndent` property. The following sample demonstrates how to determine whether the performed action is an indent or outdent based on the `IsIndent` property.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -3823,7 +3823,7 @@ The events should be provided to the Gantt Chart using the GanttEvents component
 
 ## PdfExporting
 
-The [PdfExporting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_PdfExporting) event triggers before the Gantt chart is exported to a PDF document. To cancel the export, set the [Cancel](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.PdfExportEventArgs.html#Syncfusion_Blazor_Gantt_PdfExportEventArgs_Cancel) argument to true within the `PdfExporting` event.
+The [PdfExporting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_PdfExporting) event triggers before the Blazor Gantt Chart is exported to a PDF document. To cancel the export, set the [Cancel](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.PdfExportEventArgs.html#Syncfusion_Blazor_Gantt_PdfExportEventArgs_Cancel) argument to true within the `PdfExporting` event.
 
 ``` cshtml
 @using Syncfusion.Blazor.Gantt
@@ -3897,7 +3897,7 @@ The [PdfExporting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt
 
 ## PdfExported
 
-The [PdfExported](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_PdfExported) event is triggered after the Gantt chart has been exported to a PDF document. Through the event arguments, you can access details about the exported columns, the timeline range of the Gantt chart, and the file name of the exported PDF document.
+The [PdfExported](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_PdfExported) event is triggered after the Blazor Gantt Chart has been exported to a PDF document. Through the event arguments, you can access details about the exported columns, the timeline range of the Blazor Gantt Chart, and the file name of the exported PDF document.
 
 ``` cshtml
 @using Syncfusion.Blazor.Gantt
@@ -3971,7 +3971,7 @@ The [PdfExported](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.
 
 ## PdfColumnHeaderQueryCellInfo
 
-The [PdfColumnHeaderQueryCellInfo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_PdfColumnHeaderQueryCellInfo) event is triggered each time a column header is drawn in PDF document export. By handling this event, you can define how each column header in the Gantt chart is rendered in the exported PDF, including the addition of images, background colors, and custom text.
+The [PdfColumnHeaderQueryCellInfo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_PdfColumnHeaderQueryCellInfo) event is triggered each time a column header is drawn in PDF document export. By handling this event, you can define how each column header in the Blazor Gantt Chart is rendered in the exported PDF, including the addition of images, background colors, and custom text.
 
 ``` cshtml
 @using Syncfusion.Blazor.Gantt
@@ -4047,7 +4047,7 @@ The [PdfColumnHeaderQueryCellInfo](https://help.syncfusion.com/cr/blazor/Syncfus
 
 ## PdfQueryCellInfo
 
-The [PdfQueryCellInfo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_PdfQueryCellInfo) event is triggered each time a cell is drawn in PDF document. By handling this event, you can define how each cell in the Gantt chart is rendered in the exported PDF, including the addition of images, background colors, and custom text.
+The [PdfQueryCellInfo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_PdfQueryCellInfo) event is triggered each time a cell is drawn in PDF document. By handling this event, you can define how each cell in the Blazor Gantt Chart is rendered in the exported PDF, including the addition of images, background colors, and custom text.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -4122,9 +4122,9 @@ The [PdfQueryCellInfo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.G
 
 ## PdfQueryTimelineCellInfo
 
-The [PdfQueryTimelineCellInfo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_PdfQueryTimelineCellInfo) event is triggered each time a timeline cell is drawn in PDF document. Handling this event allows you to specify how individual timeline cells in the Gantt chart are rendered in the exported PDF document, including the addition of images, background colors, and custom text to the timeline cell.
+The [PdfQueryTimelineCellInfo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_PdfQueryTimelineCellInfo) event is triggered each time a timeline cell is drawn in PDF document. Handling this event allows you to specify how individual timeline cells in the Blazor Gantt Chart are rendered in the exported PDF document, including the addition of images, background colors, and custom text to the timeline cell.
 
-The following code snippet demonstrates how to use the `PdfQueryTimelineCellInfo` event to add custom text to the Gantt chart timeline cells in the exported PDF document:
+The following code snippet demonstrates how to use the `PdfQueryTimelineCellInfo` event to add custom text to the Blazor Gantt Chart timeline cells in the exported PDF document:
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -4273,7 +4273,7 @@ The [PdfQueryTaskbarInfo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazo
 }
 ```
 ## RowDragSelectionStarting 
-[RowDragSelectionStarting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_RowDragSelectionStarting) event callback that is raised when drag selection is started in the Gantt Chart.
+[RowDragSelectionStarting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_RowDragSelectionStarting) event callback that is raised when drag selection is started in the Blazor Gantt Chart.
 ``` cshtml
 @using Syncfusion.Blazor.Gantt
 @using Syncfusion.Blazor.Grids
@@ -4329,7 +4329,7 @@ The [PdfQueryTaskbarInfo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazo
 ```
 
 ## RowDragSelectionCompleting
-[RowDragSelectionCompleting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_RowDragSelectionCompleting) event callback that is raised before drag selection is completed in the Gantt Chart.
+[RowDragSelectionCompleting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_RowDragSelectionCompleting) event callback that is raised before drag selection is completed in the Blazor Gantt Chart.
 ``` cshtml
 @using Syncfusion.Blazor.Gantt
 @using Syncfusion.Blazor.Grids
@@ -4385,7 +4385,7 @@ The [PdfQueryTaskbarInfo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazo
 ```
 
 ## RowDragSelectionCompleted
-[RowDragSelectionCompleted](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_RowDragSelectionCompleted) event callback that is raised after drag selection is completed in the Gantt Chart.
+[RowDragSelectionCompleted](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_RowDragSelectionCompleted) event callback that is raised after drag selection is completed in the Blazor Gantt Chart.
 ``` cshtml
 @using Syncfusion.Blazor.Gantt
 @using Syncfusion.Blazor.Grids
@@ -4501,4 +4501,4 @@ The [PdfQueryTaskbarInfo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazo
 }
 ```
 
-N> We are not going to limit Gantt Chart with these events, we will be adding new events in the future based on the user requests. If the event, you are looking for is not on the list, then request [here](https://www.syncfusion.com/feedback/blazor-components).
+N> We are not going to limit Blazor Gantt Chart with these events, we will be adding new events in the future based on the user requests. If the event, you are looking for is not on the list, then request [here](https://www.syncfusion.com/feedback/blazor-components).

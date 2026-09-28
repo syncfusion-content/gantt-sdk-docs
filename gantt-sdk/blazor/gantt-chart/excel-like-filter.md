@@ -220,7 +220,7 @@ In the Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart, ther
 
 The Excel filter dialog includes several features such as **context menu**, **search box**, and **checkbox list** that may not be required in some project management scenarios. 
 
-To remove the context menu from the filter dialog, apply the following CSS rule to the Gantt Chart:
+To remove the context menu from the filter dialog, apply the following CSS rule to the Blazor Gantt Chart:
 
 ```cshtml
 <style>
@@ -353,7 +353,7 @@ You can adjust the height and width of the filter dialog for each column using C
 
 ### Customize filter icon for filtered columns
 
-When a column is filtered, the Gantt Chart displays a default icon with predefined styles. You can customize this icon using the **.e-gantt .e-filtered::before** CSS class for enhanced project visualization.
+When a column is filtered, the Blazor Gantt Chart displays a default icon with predefined styles. You can customize this icon using the **.e-gantt .e-filtered::before** CSS class for enhanced project visualization.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
