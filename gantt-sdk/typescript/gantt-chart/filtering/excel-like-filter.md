@@ -90,7 +90,7 @@ To customize this behavior, the `filterChoiceCount` property can be adjusted to 
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/excel-filter-cs4" %}
 
-## Bind custom remote data source for Excel-like filtering
+## Bind custom remote data source for excel-like filtering
 
 You can dynamically bind a custom remote data source to the Excel filter in the Gantt Chart control by using a [DataManager](https://ej2.syncfusion.com/documentation/data/getting-started) with [WebApiAdaptor](https://ej2.syncfusion.com/documentation/data/adaptors#web-api-adaptor). This can be done by assigning the data source directly or storing fetched data in a global variable. Then, bind it to the filter module's `dataSource` within the [actionBegin](https://ej2.syncfusion.com/documentation/gantt/events#actionbegin) event when `requestType` is **filterBeforeOpen**.
 

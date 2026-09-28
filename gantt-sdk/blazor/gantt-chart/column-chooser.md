@@ -93,7 +93,7 @@ You can add a custom column chooser option to the toolbar using the [Toolbar](ht
 
 ## Custom component in column chooser template
 
-You can customize the column chooser dialog in the Gantt Chart by assigning a custom template using the [GanttColumnChooserSettings.Template](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumnChooserSettings.html#Syncfusion_Blazor_Gantt_GanttColumnChooserSettings_Template) property. This allows you to render custom components or layouts within the column chooser.
+You can customize the column chooser dialog in the Blazor Gantt Chart by assigning a custom template using the [GanttColumnChooserSettings.Template](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumnChooserSettings.html#Syncfusion_Blazor_Gantt_GanttColumnChooserSettings_Template) property. This allows you to render custom components or layouts within the column chooser.
 
 The following sample renders a [ListView](https://blazor.syncfusion.com/documentation/listview/getting-started-webapp) inside the column chooser template to support grouped column selection. It also includes a search box for filtering columns based on user input.
 
@@ -107,7 +107,7 @@ The following sample renders a [ListView](https://blazor.syncfusion.com/document
 <div style="height: 100%; width: 100%">
     <div style="position: relative; border: 1px solid red; height: 100%; width: 100%; min-height: 450px; min-width: 800px">
         <SfGantt @ref="Gantt" DataSource="@Orders" ShowColumnChooser="true" ProjectStartDate="new DateTime(2026, 4, 1)" ID="GanttChart" Width="1200px" Height="450px" HighlightWeekends="true" AllowReordering="true" TreeColumnIndex="1" GridLines="Syncfusion.Blazor.Gantt.GridLine.None">
-            <GanttTaskFields Id="TaskID" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" ParentID="ParentID" Dependency="Predecessor"></GanttTaskFields>
+            <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" ParentID="ParentID" Dependency="Predecessor"></GanttTaskFields>
             <GanttColumnChooserSettings>
                 <Template>
                     @{

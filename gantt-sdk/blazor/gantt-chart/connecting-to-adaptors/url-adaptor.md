@@ -26,14 +26,14 @@ You can create a **Blazor Web App** named **URLAdaptor** using Visual Studio, ei
 
 **2. Create a model class**
  
-Add a new folder named **Models**. Then, add a model class named **TaskData.cs** to represent the Gantt Chart task data.
+Add a new folder named **Models**. Then, add a model class named **TaskData.cs** to represent the Blazor Gantt Chart task data.
  
 ```csharp
 namespace URLAdaptor.Models
 {
     public class TaskData
     {
-        public int TaskID { get; set; }
+        public int TaskId { get; set; }
         public string TaskName { get; set; }
         public DateTime? StartDate { get; set; }
         public DateTime? EndDate { get; set; }
@@ -247,11 +247,11 @@ The `SfDataManager` offers multiple adaptor options to connect with remote datab
 
 <SfGantt TValue="TaskData" Height="450px">
     <SfDataManager Url="/api/gantt" Adaptor="Adaptors.UrlAdaptor"></SfDataManager>
-    <GanttTaskFields Id="TaskID" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
+    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
                      ParentID="ParentID" Dependency="Predecessor">
     </GanttTaskFields>    
     <GanttColumns>
-        <GanttColumn Field="TaskID" HeaderText="Task ID" Width="90"></GanttColumn>
+        <GanttColumn Field="TaskId" HeaderText="Task ID" Width="90"></GanttColumn>
         <GanttColumn Field="TaskName" HeaderText="Task Name" Width="220"></GanttColumn>
         <GanttColumn Field="StartDate" HeaderText="Start Date" Width="140" Format="d"></GanttColumn>
         <GanttColumn Field="EndDate" HeaderText="End Date" Width="140" Format="d"></GanttColumn>
@@ -320,7 +320,7 @@ When you run the application, the Blazor Gantt Chart will display data fetched f
  
 ![UrlAdaptor Data](../images/url-adaptor.webp)
  
-> * The Gantt Chart supports server-side operations such as **searching**, **sorting** and **filtering**. These can be handled using methods like [PerformSearching](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSearching__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_SearchFilter__), [PerformFiltering](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformFiltering__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_WhereFilter__System_String_), [PerformSorting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSorting__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_Sort__), [PerformTake](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformTake__1_System_Linq_IQueryable___0__System_Int32_), and [PerformSkip](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSkip__1_System_Linq_IQueryable___0__System_Int32_) from the **Syncfusion.Blazor.Data** package. Let's explore how to manage these data operations using the `UrlAdaptor`.
+> * The Blazor Gantt Chart supports server-side operations such as **searching**, **sorting** and **filtering**. These can be handled using methods like [PerformSearching](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSearching__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_SearchFilter__), [PerformFiltering](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformFiltering__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_WhereFilter__System_String_), [PerformSorting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSorting__1_System_Linq_IQueryable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_Sort__), [PerformTake](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformTake__1_System_Linq_IQueryable___0__System_Int32_), and [PerformSkip](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSkip__1_System_Linq_IQueryable___0__System_Int32_) from the **Syncfusion.Blazor.Data** package. Let's explore how to manage these data operations using the `UrlAdaptor`.
 > * In an API service project, add **Syncfusion.Blazor.Data** by opening the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
 
 ## Handling searching operation
@@ -368,11 +368,11 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 
 <SfGantt TValue="TaskData" Height="450px" Toolbar="@(new List<string>() { "Search" })">
     <SfDataManager Url="/api/gantt" Adaptor="Adaptors.UrlAdaptor"></SfDataManager>
-    <GanttTaskFields Id="TaskID" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
+    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
                      ParentID="ParentID" Dependency="Predecessor">
     </GanttTaskFields>    
     <GanttColumns>
-        <GanttColumn Field="TaskID" HeaderText="Task ID" Width="90"></GanttColumn>
+        <GanttColumn Field="TaskId" HeaderText="Task ID" Width="90"></GanttColumn>
         <GanttColumn Field="TaskName" HeaderText="Task Name" Width="220"></GanttColumn>
         <GanttColumn Field="StartDate" HeaderText="Start Date" Width="140" Format="d"></GanttColumn>
         <GanttColumn Field="EndDate" HeaderText="End Date" Width="140" Format="d"></GanttColumn>
@@ -435,11 +435,11 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 
 <SfGantt TValue="TaskData" Height="450px" AllowFiltering="true">
     <SfDataManager Url="/api/gantt" Adaptor="Adaptors.UrlAdaptor"></SfDataManager>
-    <GanttTaskFields Id="TaskID" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
+    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
                      ParentID="ParentID" Dependency="Predecessor">
     </GanttTaskFields>   
     <GanttColumns>
-        <GanttColumn Field="TaskID" HeaderText="Task ID" Width="90"></GanttColumn>
+        <GanttColumn Field="TaskId" HeaderText="Task ID" Width="90"></GanttColumn>
         <GanttColumn Field="TaskName" HeaderText="Task Name" Width="220"></GanttColumn>
         <GanttColumn Field="StartDate" HeaderText="Start Date" Width="140" Format="d"></GanttColumn>
         <GanttColumn Field="EndDate" HeaderText="End Date" Width="140" Format="d"></GanttColumn>
@@ -502,11 +502,11 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 
 <SfGantt TValue="TaskData" Height="450px" AllowSorting="true">
     <SfDataManager Url="/api/gantt" Adaptor="Adaptors.UrlAdaptor"></SfDataManager>
-    <GanttTaskFields Id="TaskID" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
+    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
                      ParentID="ParentID" Dependency="Predecessor">
     </GanttTaskFields>    
     <GanttColumns>
-        <GanttColumn Field="TaskID" HeaderText="Task ID" Width="90"></GanttColumn>
+        <GanttColumn Field="TaskId" HeaderText="Task ID" Width="90"></GanttColumn>
         <GanttColumn Field="TaskName" HeaderText="Task Name" Width="220"></GanttColumn>
         <GanttColumn Field="StartDate" HeaderText="Start Date" Width="140" Format="d"></GanttColumn>
         <GanttColumn Field="EndDate" HeaderText="End Date" Width="140" Format="d"></GanttColumn>
@@ -525,7 +525,7 @@ The Blazor Gantt Chart communicates CRUD (Create, Read, Update, and Delete) acti
 
 **CRUD operations mapping**
 
-CRUD operations within the Gantt Chart can be mapped to server-side controller actions using specific properties:
+CRUD operations within the Blazor Gantt Chart can be mapped to server-side controller actions using specific properties:
 
 1. **InsertUrl**: Specifies the URL for inserting new data.
 2. **RemoveUrl**: Specifies the URL for removing existing data.
@@ -544,12 +544,12 @@ To enable editing in Blazor Gantt Chart, refer to the editing [documentation](ht
 
 <SfGantt TValue="TaskData" Height="450px" AllowFiltering="true" AllowSorting="true" Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" })">
     <SfDataManager Url="/api/gantt" InsertUrl="/api/gantt/Insert" UpdateUrl="/api/gantt/Update" RemoveUrl="/api/gantt/Remove" Adaptor="Adaptors.UrlAdaptor"></SfDataManager>
-    <GanttTaskFields Id="TaskID" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
+    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
                      ParentID="ParentID" Dependency="Predecessor">
     </GanttTaskFields>
     <GanttEditSettings AllowAdding="true" AllowEditing="true" AllowTaskbarEditing="true" AllowDeleting="true" />
     <GanttColumns>
-        <GanttColumn Field="TaskID" HeaderText="Task ID" Width="90"></GanttColumn>
+        <GanttColumn Field="TaskId" HeaderText="Task ID" Width="90"></GanttColumn>
         <GanttColumn Field="TaskName" HeaderText="Task Name" Width="220"></GanttColumn>
         <GanttColumn Field="StartDate" HeaderText="Start Date" Width="140" Format="d"></GanttColumn>
         <GanttColumn Field="EndDate" HeaderText="End Date" Width="140" Format="d"></GanttColumn>
@@ -562,7 +562,7 @@ To enable editing in Blazor Gantt Chart, refer to the editing [documentation](ht
 {% endhighlight %}
 {% endtabs %}
 
-> Normal/Inline editing is the default edit [Mode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_Mode) for the Gantt. To enable CRUD operations, ensure that the [IsPrimaryKey](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_IsPrimaryKey) property is set to **true** for a specific Gantt Chart column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit [Mode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_Mode) for the Gantt. To enable CRUD operations, ensure that the [IsPrimaryKey](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_IsPrimaryKey) property is set to **true** for a specific Blazor Gantt Chart column, ensuring that its value is unique.
 
 The below class is used to structure data sent during CRUD operations.
 

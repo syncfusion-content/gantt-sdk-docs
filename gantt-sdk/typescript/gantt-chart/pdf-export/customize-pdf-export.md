@@ -205,7 +205,7 @@ In the following sample, the taskbar background color is customized in the chart
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/pdf-export-cs11" %}
 
-## Customize Gantt chart appearance in PDF export
+## Customize Gantt Chart appearance in PDF export
 
 PDF export allows to customize the Gantt chart's appearance in the exported PDF documents. To customize the appearance of Gantt charts in exported PDF documents, define [ganttStyle](https://ej2.syncfusion.com/documentation/api/gantt/pdfexportproperties#ganttstyle) within [pdfExportProperties](https://ej2.syncfusion.com/documentation/api/gantt/pdfexportproperties). By using `ganttStyle`, can customize `columnHeader`, `fontFamily`, `cell`, `taskbar`, `label`, `timeline`, `chartGridLineColor`, `connectorLineColor`, `criticalConnectorLineColor`, `footer`, `font`, `eventMarker` and `holiday` regardless of the theme.
 

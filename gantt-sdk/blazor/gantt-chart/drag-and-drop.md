@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Row Drag and Drop for Task Reordering in Blazor Gantt Chart
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component includes built-in support for row drag and drop, enabling rows to be rearranged within the Gantt chart or dropped into custom components. 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component includes built-in support for row drag and drop, enabling rows to be rearranged within the Blazor Gantt Chart or dropped into custom components. 
 
 To enable this feature, set the [AllowRowDragAndDrop](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowRowDragAndDrop) property to **true**.
 
@@ -68,7 +68,7 @@ To enable this feature, set the [AllowRowDragAndDrop](https://help.syncfusion.co
 
 ## Multiple row drag and drop
 
-You can drag and drop multiple rows simultaneously in the Gantt Chart component. To enable this functionality, set the [GanttSelectionSettings.Type](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html#Syncfusion_Blazor_Gantt_GanttSelectionSettings_Type) property to **SelectionType.Multiple** , and set the [AllowRowDragAndDrop](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowRowDragAndDrop) property is set to **true**.
+You can drag and drop multiple rows simultaneously in the Blazor Gantt Chart component. To enable this functionality, set the [GanttSelectionSettings.Type](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html#Syncfusion_Blazor_Gantt_GanttSelectionSettings_Type) property to **SelectionType.Multiple** , and set the [AllowRowDragAndDrop](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowRowDragAndDrop) property is set to **true**.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -124,7 +124,7 @@ You can drag and drop multiple rows simultaneously in the Gantt Chart component.
 
 ## Perform row drag and drop action programmatically
 
-To rearrange rows programmatically in the Gantt Chart component, use the [ReorderRowAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ReorderRowAsync_System_Int32_System_Int32_System_String_) method. This method accepts the following parameters: 
+To rearrange rows programmatically in the Blazor Gantt Chart component, use the [ReorderRowAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ReorderRowAsync_System_Int32_System_Int32_System_String_) method. This method accepts the following parameters: 
 
 - **FromIndexes**: Indexes of the rows to be dragged.  
 - **ToIndex**: Target index for placement.  

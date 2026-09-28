@@ -12,9 +12,9 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Binding Native Events and Custom Shortcuts in Blazor Gantt Chart
 
-There are default keyboard shortcuts available to perform actions in the Gantt Chart. Refer to the Gantt Chart default keyboard shortcuts [here](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/accessibility#keyboard-navigation). Now, you can create custom shortcut keys to perform your own actions in Gantt Chart by binding the native events like onkeydown, onkeyup, onkeypress, etc.
+There are default keyboard shortcuts available to perform actions in the Blazor Gantt Chart. Refer to the Blazor Gantt Chart default keyboard shortcuts [here](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/accessibility#keyboard-navigation). Now, you can create custom shortcut keys to perform your own actions in Blazor Gantt Chart by binding the native events like onkeydown, onkeyup, onkeypress, etc.
 
-In the following Gantt Chart example, some of the actions can be performed by using `onkeydown` and `onkeyup` events.
+In the following Blazor Gantt Chart example, some of the actions can be performed by using `onkeydown` and `onkeyup` events.
 
 Interaction Keys |Description
 -----|-----
@@ -30,7 +30,7 @@ Interaction Keys |Description
 {% highlight razor tabtitle="Home.razor" %}
 
 <SfGantt @ref=Gantt DataSource="@TaskCollection" @onkeydown="KeyDown" @onkeyup="KeyUp" Height="450px" Width="700px">
-    <GanttTaskFields Id="TaskID" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentID">
+    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentID">
     </GanttTaskFields>
     <GanttSelectionSettings Mode="Syncfusion.Blazor.Grids.SelectionMode.Row" Type="Syncfusion.Blazor.Grids.SelectionType.Multiple"></GanttSelectionSettings>
     <GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true"></GanttEditSettings>
@@ -80,7 +80,7 @@ Interaction Keys |Description
                         {
                             TaskCollection.Remove(TaskCollection.Where(x => x.TaskID == i.TaskID).FirstOrDefault());
                         }
-                        Gantt.RefreshAsync();
+                        await Gantt.RefreshAsync();
                     }
                 }
             }
@@ -96,7 +96,7 @@ Interaction Keys |Description
             //Insert the duplicate record here
             TaskCollection.Insert((int)SelectedIndex + 1, SelectedRecords);
             //Refresh the Gantt data.
-            Gantt.RefreshAsync();
+            await Gantt.RefreshAsync();
         }
     }
     private async Task KeyUp(KeyboardEventArgs Args)
@@ -141,7 +141,7 @@ Interaction Keys |Description
     }
     public class TaskData
     {
-        public int TaskID { get; set; }
+        public int TaskId { get; set; }
         public string TaskName { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }

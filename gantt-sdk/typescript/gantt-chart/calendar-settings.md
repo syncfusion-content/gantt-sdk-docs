@@ -17,7 +17,7 @@ The Gantt Chart control supports advanced calendar configuration through the [ca
 The [calendarSettings](../api/gantt#calendarsettings) property contains two key configurations:
 
 - **Project Calendar**: Defines working hours and holidays for the entire project, applied to all tasks by default
-- **Task Calendars**: Defines custom working hours and holidays for specific tasks, enabling team-specific or shift-based scheduling
+- **Task Calendars**: Defines custom working days and holidays for specific tasks, enabling team-specific or shift-based scheduling
 
 ## Project calendar
 
@@ -55,15 +55,15 @@ Holidays are non-working dates that exclude time from task calculations. The fol
 
 ## Task calendars
 
-Task calendars enable specific tasks to use custom working hours and holidays instead of the project calendar. This is useful for managing work across different shifts, regions, or external teams with different availability.
+Task calendars enable specific tasks to use custom working days and holidays instead of the project calendar. This is useful for managing work across different shifts, regions, or external teams with different availability.
 
 ### Assign task-specific calendars with exceptions
 
-To assign a custom calendar to a task, first define the calendar in [calendarSettings.taskCalendar](../api/gantt/calendarSettingsModel#taskcalendar), then reference it using the [calendarId](../api/gantt/taskFieldsModel#calendarid) property in the task data. Calendar exceptions allow defining specific dates with custom working hours, enabling team-specific scheduling adjustments such as split shifts or holidays that differ from the main schedule.
+To assign a custom calendar to a task, first define the calendar in [calendarSettings.taskCalendar](../api/gantt/calendarSettingsModel#taskcalendar), then reference it using the [calendarId](../api/gantt/taskFieldsModel#calendarid) property in the task data. Calendar exceptions allow defining specific dates with custom working days, enabling team-specific scheduling adjustments such as split shifts or holidays that differ from the main schedule.
 
 When a task is assigned a calendar through `calendarId`, that task follows only the assigned task calendar. The assigned task calendar overrides the project calendar for that task. Working days, holidays, and calendar exceptions defined in the assigned calendar are used when calculating the task schedule and working duration. Other task calendars are not considered when scheduling that task.
 
-The following example defines two task calendars with different working hours, task-specific exceptions, and assigns them to specific tasks:
+The following example defines two task calendars with different working days, task-specific exceptions, and assigns them to specific tasks:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -110,6 +110,8 @@ The following example demonstrates how changing `hoursPerDay` affects duration c
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/hoursperday" %}
 
+> **Note:** The default `hoursPerDay` value is **8 hours**. When a task has 4 days duration with the `hoursPerDay` value of 6, the total working hours = 4 days × 6 hours = **24 hours**. If the calendar's working time is configured as 24 hours (0:00 to 24:00), these 24 hours fit within a single calendar day, so the task displays as **1 calendar day** on the chart, even though the duration specification is 4 days.
+
 ## Impact on task scheduling
 
 Calendar settings directly affect how task duration is calculated and when tasks are scheduled:
@@ -123,6 +125,5 @@ Calendar settings directly affect how task duration is calculated and when tasks
 
 ## See also
 
-- [How to configure holidays?](../gantt/holidays)
-- [How to include weekends in scheduling?](../gantt/task-scheduling#include-weekends)
-- [How to work with task fields?](../gantt/task-scheduling#task-fields)
+- [How to configure holidays?](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/holidays)
+- [How to include weekends in scheduling?](https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/scheduling-tasks#weekend-configuration)

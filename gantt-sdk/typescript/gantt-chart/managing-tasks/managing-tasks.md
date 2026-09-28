@@ -12,7 +12,17 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Overview of Task Management Features in TypeScript Gantt Chart
 
-Managing tasks in the TypeScript Gantt Chart control enables dynamic project updates, such as inserting, deleting, or editing tasks and dependencies, by enabling [allowAdding](https://ej2.syncfusion.com/documentation/api/gantt/editSettings#allowadding), [allowDeleting](https://ej2.syncfusion.com/documentation/api/gantt/editSettings#allowdeleting), [allowEditing](https://ej2.syncfusion.com/documentation/api/gantt/editSettings#allowediting), and [allowTaskbarEditing](https://ej2.syncfusion.com/documentation/api/gantt/editSettings#allowtaskbarediting) with `Edit` module injected. A primary key column, defined by [columns.isPrimaryKey](https://ej2.syncfusion.com/documentation/api/gantt/column#isprimarykey) set to **true** (e.g., on id), ensures reliable CRUD operations and task identification. Editing modes include cell editing for quick TreeGrid updates, dialog editing for comprehensive changes, taskbar dragging for duration or date adjustments, and connector line dragging for dependencies. Customize dialogs with templates or fields using [addDialogFields](https://ej2.syncfusion.com/documentation/api/gantt#adddialogfields) and [editDialogFields](https://ej2.syncfusion.com/documentation/api/gantt#editdialogfields). Methods like [addRecord](https://ej2.syncfusion.com/documentation/api/gantt#addrecord), [deleteRow](https://ej2.syncfusion.com/documentation/api/gantt#deleterow), and [updateRecordById](https://ej2.syncfusion.com/documentation/api/gantt#updaterecordbyid) support programmatic management. Ensure valid `taskFields` mappings and a primary key to enable editing seamlessly.
+Managing tasks in the TypeScript Gantt Chart control enables dynamic project updates, such as inserting, deleting, or editing tasks and dependencies. Enable task management by setting [allowAdding](https://ej2.syncfusion.com/documentation/api/gantt/editSettings#allowadding), [allowDeleting](https://ej2.syncfusion.com/documentation/api/gantt/editSettings#allowdeleting), [allowEditing](https://ej2.syncfusion.com/documentation/api/gantt/editSettings#allowediting), and [allowTaskbarEditing](https://ej2.syncfusion.com/documentation/api/gantt/editSettings#allowtaskbarediting) properties to **true** with the `Edit` module injected.
+
+A primary key column, defined by [columns.isPrimaryKey](https://ej2.syncfusion.com/documentation/api/gantt/column#isprimarykey) set to **true** (typically on the id field), ensures reliable CRUD operations and task identification.
+
+Multiple editing modes are available including:
+- **Cell editing** for quick TreeGrid updates
+- **Dialog editing** for comprehensive changes
+- **Taskbar dragging** for duration or date adjustments
+- **Connector line dragging** for task dependencies
+
+Customize dialogs with templates or fields using [addDialogFields](https://ej2.syncfusion.com/documentation/api/gantt#adddialogfields) and [editDialogFields](https://ej2.syncfusion.com/documentation/api/gantt#editdialogfields) properties. Methods like [addRecord](https://ej2.syncfusion.com/documentation/api/gantt#addrecord), [deleteRow](https://ej2.syncfusion.com/documentation/api/gantt#deleterow), and [updateRecordById](https://ej2.syncfusion.com/documentation/api/gantt#updaterecordbyid) support programmatic task management. Ensure valid `taskFields` mappings and a primary key to enable editing seamlessly.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -44,9 +54,9 @@ You can set default values when new task dialog opens using [actionBegin](https:
 
 ## Cell edit type and its params
 
-The [columns.editType](https://ej2.syncfusion.com/documentation/api/gantt/column#edittype) is used to define the edit type for any particular column. You can set the [columns.editType](https://ej2.syncfusion.com/documentation/api/gantt/column#edittype) based on data type of the column.
+The [columns.editType](https://ej2.syncfusion.com/documentation/api/gantt/column#edittype) is used to define the edit type for any particular column. You can set the [columns.editType](https://ej2.syncfusion.com/documentation/api/gantt/column#edittype) based on the data type of the column.
 
-Below is the combined content from the provided markdown sections in bullet points, as requested, ensuring clarity and conciseness while preserving the original information:
+The following cell edit types and components are available:
 
 - **Cell edit types and components**:
   - **numericedit**: Uses the [NumericTextBox](https://ej2.syncfusion.com/documentation/numerictextbox) control for editing integers, doubles, and decimals.
@@ -94,7 +104,7 @@ To restrict taskbar editing, set `args.cancel` to **true** in the [actionBegin](
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/managingTasks-cs5" %}
 
-## Cell Edit Template
+## Cell edit template
 
 The cell edit template is used to create a custom control for a particular column by invoking the following functions:
 

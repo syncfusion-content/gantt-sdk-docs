@@ -32,7 +32,7 @@ You can create a **Blazor Web App** named **WebApiAdaptor** using Visual Studio 
 
 **2. Create a model class**
 
-Add a new folder named **Models**. Then, add a model class named **GanttData.cs** to represent the Gantt Chart task data. The model uses a `ParentId` field that maps to the `GanttTaskFields.ParentID` property on the client to establish the parent-child relationship between tasks and build the task hierarchy.
+Add a new folder named **Models**. Then, add a model class named **GanttData.cs** to represent the Blazor Gantt Chart task data. The model uses a `ParentId` field that maps to the `GanttTaskFields.ParentID` property on the client to establish the parent-child relationship between tasks and build the task hierarchy.
 
 ```csharp
 namespace WebApiAdaptor.Models
@@ -248,7 +248,7 @@ Include the theme stylesheet and script references in the **~/Components/App.raz
 
 To connect the Blazor Gantt Chart to a hosted API, use the [Url](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManager.html#Syncfusion_Blazor_DataManager_Url) property of [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html). The `SfDataManager` offers multiple adaptor options to connect with remote services through an API; the `WebApiAdaptor` works with any Web API endpoint that returns data in the **Items** and **Count** format and understands OData-formatted query strings.
 
-The following example shows a `WebApiAdaptor` configuration where the API is set up to return the resulting data in the **Items** and **Count** format. The `ParentId` field on each `GanttData` record is mapped to [GanttTaskFields.ParentID](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_ParentID) so the flat response is rendered as a parent/child hierarchy in the Gantt Chart.
+The following example shows a `WebApiAdaptor` configuration where the API is set up to return the resulting data in the **Items** and **Count** format. The `ParentId` field on each `GanttData` record is mapped to [GanttTaskFields.ParentID](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_ParentID) so the flat response is rendered as a parent/child hierarchy in the Blazor Gantt Chart.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -437,7 +437,7 @@ public object GetTaskData()
 {% endhighlight %}
 {% endtabs %}
 
-> This example demonstrates a custom way of handling the `$filter` query sent by the Gantt Chart. You can also handle it using your own logic based on the query string format or use dynamic expression evaluation libraries for a more generic approach.
+> This example demonstrates a custom way of handling the `$filter` query sent by the Blazor Gantt Chart. You can also handle it using your own logic based on the query string format or use dynamic expression evaluation libraries for a more generic approach.
 
 ## Handling filtering operation
 
@@ -708,7 +708,7 @@ public object GetTaskData()
 
 The Blazor Gantt Chart uses `WebApiAdaptor` CRUD conventions that map directly to the HTTP verbs on your controller. While adding, editing (cell, row, dialog, or taskbar), or deleting a record, the `SfDataManager` automatically issues the corresponding `POST`, `PUT`, or `DELETE` request to the base URL. Each action sends the task payload as JSON to the same controller, so a single endpoint per HTTP verb is enough to handle the full edit lifecycle.
 
-To enable editing in the Gantt Chart, configure [GanttEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html) with `AllowAdding`, `AllowEditing`, `AllowTaskbarEditing`, and `AllowDeleting` set to **true**, and include the `Add`, `Edit`, `Delete`, `Update`, and `Cancel` toolbar items.
+To enable editing in the Blazor Gantt Chart, configure [GanttEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html) with `AllowAdding`, `AllowEditing`, `AllowTaskbarEditing`, and `AllowDeleting` set to **true**, and include the `Add`, `Edit`, `Delete`, `Update`, and `Cancel` toolbar items.
 
 **CRUD mapping with `WebApiAdaptor`**
 
@@ -721,7 +721,7 @@ To enable editing in the Gantt Chart, configure [GanttEditSettings](https://help
 
 **Insert operation**
 
-To insert a new record into the Gantt Chart, the `WebApiAdaptor` issues an `HTTP POST` to the base URL. The new record is sent to the `AddTask` parameter of the controller. Below is a sample implementation that generates the next `TaskId` and appends the task to the in-memory collection:
+To insert a new record into the Blazor Gantt Chart, the `WebApiAdaptor` issues an `HTTP POST` to the base URL. The new record is sent to the `AddTask` parameter of the controller. Below is a sample implementation that generates the next `TaskId` and appends the task to the in-memory collection:
 
 
 ```csharp
@@ -742,7 +742,7 @@ public IActionResult AddTask([FromBody] GanttData newTask)
 
 **Update operation**
 
-Updating a record in the Gantt Chart — whether it is a cell edit, dialog edit, or a taskbar drag that changes the start date, end date, duration, progress, or parent — is performed through an `HTTP PUT` to the base URL. The updated record is sent to the `UpdateTask` parameter. Below is a sample implementation that finds the existing task by `TaskId` and applies the changes:
+Updating a record in the Blazor Gantt Chart — whether it is a cell edit, dialog edit, or a taskbar drag that changes the start date, end date, duration, progress, or parent — is performed through an `HTTP PUT` to the base URL. The updated record is sent to the `UpdateTask` parameter. Below is a sample implementation that finds the existing task by `TaskId` and applies the changes:
 
 
 ```csharp
@@ -771,7 +771,7 @@ public IActionResult UpdateTask([FromBody] GanttData updatedTask)
 
 **Delete operation**
 
-To delete a record from the Gantt Chart, the `WebApiAdaptor` issues an `HTTP DELETE` to the base URL with the task id passed as a query string parameter (`?taskId=<id>`). Below is a sample implementation that removes the task from the in-memory collection:
+To delete a record from the Blazor Gantt Chart, the `WebApiAdaptor` issues an `HTTP DELETE` to the base URL with the task id passed as a query string parameter (`?taskId=<id>`). Below is a sample implementation that removes the task from the in-memory collection:
 
 
 ```csharp

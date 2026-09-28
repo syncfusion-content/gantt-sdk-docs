@@ -1,0 +1,58 @@
+@using Syncfusion.EJ2.Gantt
+@using Syncfusion.EJ2.DropDowns
+
+@Html.EJS().DropDownList("mode")
+    .DataSource(new List<object>()
+    {
+        new { id = "self", type = "self" },
+        new { id = "hierarchy", type = "hierarchy" },
+        new { id = "filteredHierarchy", type = "filteredHierarchy" }
+    })
+    .Value("hierarchy")
+    .Width("125px")
+    .Fields(new DropDownListFieldSettings
+    {
+        Text = "type",
+        Value = "id"
+    })
+    .Change("onModeChange")
+    .Render()
+
+@(Html.EJS().Gantt("Gantt")
+    .DataSource((IEnumerable<object>)ViewBag.DataSource)
+    .Height("370px")
+    .AllowFiltering(true)
+    .AllowSelection(true)
+    .EnableSerialNumber(false)
+    .HierarchyCheckboxMode("hierarchy")
+    .Toolbar(new List<string>() { "Search" })
+    .FilterSettings(fs => fs.Type(Syncfusion.EJ2.TreeGrid.FilterType.Menu))
+    .TaskFields(ts => ts
+        .Id("TaskID")
+        .Name("TaskName")
+        .StartDate("StartDate")
+        .EndDate("EndDate")
+        .Duration("Duration")
+        .Progress("Progress")
+        .Dependency("Predecessor")
+        .ParentID("ParentID"))
+    .Columns(col =>
+    {
+        col.Field("CheckBox").HeaderText("").ShowCheckbox(true).Width("70").AllowFiltering(false).Add();
+        col.Field("TaskID").Width("110").Visible(false).Add();
+        col.Field("TaskName").Width("190").Add();
+        col.Field("StartDate").Add();
+        col.Field("EndDate").Add();
+        col.Field("Duration").Add();
+        col.Field("Predecessor").Add();
+        col.Field("Progress").Add();
+    })
+    .Render())
+
+<script>
+    function onModeChange(args) {
+        var gantt = document.getElementById('Gantt').ej2_instances[0];
+        gantt.hierarchyCheckboxMode = args.value;
+        gantt.refresh();
+    }
+</script>

@@ -12,13 +12,13 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Accessibility and ARIA Compliance in ASP.NET MVC Gantt Chart
 
-The Gantt component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Gantt component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the Gantt component is outlined below.
 
 | Accessibility Criteria                                                                  | Compatibility                                                                                      |
 | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Support                                        | AA                                                                                                 |
+| [WCAG 2.2](https://www.w3.org/TR/WCAG22) Support                                        | AA                                                                                                 |
 | [Section 508](https://www.section508.gov) Support                                       | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes">             |
 | Screen Reader Support                                                                   | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
 | Right-To-Left Support                                                                   | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes">             |
@@ -41,7 +41,7 @@ The accessibility compliance for the Gantt component is outlined below.
 
 ## WAI-ARIA attributes
 
-The Gantt component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/) patterns to meet the accessibility. The following ARIA attributes are used in the Gantt component:
+The Gantt component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns) patterns to meet the accessibility. The following ARIA attributes are used in the Gantt component:
 
 The following ARIA attributes are used in Gantt:
 
@@ -58,7 +58,7 @@ The following ARIA attributes are used in Gantt:
 | `aria-expanded`       | This attribute is assigned to the Gantt chart parent task row. The value is changed to `true` when the user clicks a parent taskbar to expand. After the user clicked a parent taskbar to collapse, the attribute value is changed to `false` |
 | `aria-grabbed`        | This attribute is assigned to the taskbars of Gantt when the user tries to achieve taskbar editing                                                                                                                                            |
 
-The Syncfusion ASP.NET MVC Gantt Chart component is structured using a combined TreeGrid and chart architecture for rendering its grid (table) and timeline sections. To enhance accessibility for screen readers, roles and ARIA attributes are incorporated for the treegrid parent and all its child elements. Although this architectural approach may have some limitations with accessibility checker tools, it is important to note that these limitations do not affect the readability or usability of the Gantt content in screen readers.
+The Syncfusion ASP.NET MVC Gantt Chart component is structured using a combined TreeGrid and chart architecture for rendering its grid (table) and timeline sections. To enhance accessibility for screen readers, roles and ARIA attributes are incorporated for the treegrid parent and all its child elements. Although this architectural approach may have some limitations with accessibility checker tools, these limitations do not affect the readability or usability of the Gantt content in screen readers.
 
 The accessibility checker tools highlight the following known issues:
 
@@ -82,7 +82,7 @@ The accessibility checker tools highlight the following known issues:
 
 ## Keyboard navigation
 
-The Gantt component follows the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/) guideline, ensuring accessibility for users of assistive technologies (AT) and those who rely solely on keyboard navigation. The following keyboard shortcuts are supported by the Gantt component:
+The Gantt component follows the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns) guideline, ensuring accessibility for users of assistive technologies (AT) and those who rely solely on keyboard navigation. The following keyboard shortcuts are supported by the Gantt component:
 
 | **Press**                            | **To do this**                                  |
 | ------------------------------------ | ----------------------------------------------- |
@@ -132,4 +132,4 @@ The accessibility compliance of the Gantt component is shown in the following sa
 
 ## See also
 
-- [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC components](../common/accessibility)
+- [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC components](https://ej2.syncfusion.com/aspnetmvc/documentation/common/accessibility)

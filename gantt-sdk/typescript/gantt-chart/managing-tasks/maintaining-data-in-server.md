@@ -33,7 +33,7 @@ import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
 
 let dataSource: DataManager = new DataManager({
     url: '/Home/UrlDatasource',
-    adaptor: new UrlAdaptor
+    adaptor: new UrlAdaptor()
 });
 
 let gantt: Gantt = new Gantt({
@@ -74,7 +74,7 @@ import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
 
 let dataSource: DataManager = new DataManager({
     url: '/Home/UrlDatasource',
-    adaptor: new UrlAdaptor,
+    adaptor: new UrlAdaptor(),
     batchUrl: "Home/BatchSave"
 });
 
@@ -122,7 +122,7 @@ This server method will be triggered for all the CRUD operations like adding, ed
 
 ## Insert action
 
-Using the `added` argument of the `BatchUrl` method we can insert the newly added row to database and return the same to client side. please find the below code example for details.
+Using the `added` argument of the `BatchUrl` method we can insert the newly added row to database and return the same to client side. Please find the below code example for details.
 
 ```ts
 GanttDataSourceEntities db = new GanttDataSourceEntities();
@@ -151,7 +151,7 @@ public GanttData Create(GanttData value)
 
 ## Editing action
 
-Using the `changed` argument of the `BatchUrl` method we can update the modified records to database and return the same to client side. please find the below code example for details.
+Using the `changed` argument of the `BatchUrl` method we can update the modified records to database and return the same to client side. Please find the below code example for details.
 
 ```ts
 GanttDataSourceEntities db = new GanttDataSourceEntities();
@@ -194,7 +194,7 @@ public GanttData Edit(GanttData value)
 
 ## Delete action
 
-Using the `deleted` argument of the `BatchUrl` method we can remove the deleted records from database and return the same to client side. on deleting the record we need to remove its corresponding child records as well if it exist from the data base. please find the below code example for details.
+Using the `deleted` argument of the `BatchUrl` method, we can remove the deleted records from the database and return the same to the client side. When deleting a record, also remove its corresponding child records if they exist in the database. Please find the below code example for details.
 
 ```ts
 GanttDataSourceEntities db = new GanttDataSourceEntities();

@@ -317,7 +317,7 @@ By default, the [Id](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gan
 
 ## Touch interaction
 
-The Gantt Chart component editing actions can be achieved using the double tap and tap and drag actions on an element.
+The Blazor Gantt Chart component editing actions can be achieved using the double tap and tap and drag actions on an element.
 
 The following table describes different types of editing modes available in Gantt.
 
@@ -346,7 +346,7 @@ Removing dependency | Once you tap the taskbar with direct dependency, then conf
 
 ## Taskbar editing tooltip
 
-The taskbar editing tooltip can be integrated in Gantt chart by using the [GanttTooltipSettings.ShowTooltipOnEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTooltipSettings-1.html#Syncfusion_Blazor_Gantt_GanttTooltipSettings_1_ShowTooltipOnEditing) property. By default, this property is set to **true**. The following code example shows how to integrate the `GanttTooltipSettings.ShowTooltipOnEditing` in a Gantt Chart:
+The taskbar editing tooltip can be integrated in Blazor Gantt Chart by using the [GanttTooltipSettings.ShowTooltipOnEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTooltipSettings-1.html#Syncfusion_Blazor_Gantt_GanttTooltipSettings_1_ShowTooltipOnEditing) property. By default, this property is set to **true**. The following code example shows how to integrate the `GanttTooltipSettings.ShowTooltipOnEditing` in a Blazor Gantt Chart:
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -402,7 +402,7 @@ The taskbar editing tooltip can be integrated in Gantt chart by using the [Gantt
 
 ### Template
 
-The taskbar editing tooltip can be customized using the [GanttTooltipSettings.EditingTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTooltipSettings-1.html#Syncfusion_Blazor_Gantt_GanttTooltipSettings_1_EditingTemplate) property. The following code example shows how to customize the taskbar editing tooltip in a Gantt Chart:
+The taskbar editing tooltip can be customized using the [GanttTooltipSettings.EditingTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTooltipSettings-1.html#Syncfusion_Blazor_Gantt_GanttTooltipSettings_1_EditingTemplate) property. The following code example shows how to customize the taskbar editing tooltip in a Blazor Gantt Chart:
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}

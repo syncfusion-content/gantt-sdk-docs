@@ -49,7 +49,7 @@ The following sample demonstrates how to programmatically select row index **2**
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/indent-outdent-externally" %}
 
-## Retrieve Indent and outdent details
+## Retrieve indent and outdent details
 
 You can retrieve indent and outdent details using the [actionComplete](https://ej2.syncfusion.com/documentation/api/gantt#actioncomplete) event, where the `args.requestType` value will be either **indented** or **outdented**, indicating the type of action performed.
 

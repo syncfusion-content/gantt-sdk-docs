@@ -125,7 +125,7 @@ To export each Gantt to a separate worksheet, set [multipleExport.type](https://
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/excel-multiple-export-cs2" %}
 
-## Export Gantt data as a Blob
+## Export Gantt data as a blob
 
 To export Gantt data as a Blob object for advanced processing or custom download workflows, set the `isBlob` parameter to **true** in the [excelExport](https://ej2.syncfusion.com/documentation/api/gantt#excelexport) or [csvExport](https://ej2.syncfusion.com/documentation/api/gantt#csvexport) method. Use the [excelExportComplete](https://ej2.syncfusion.com/documentation/gantt/events#excelexportcomplete) event to access the Blob and implement custom logic.
 

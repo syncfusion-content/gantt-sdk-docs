@@ -16,7 +16,7 @@ Sorting enables you to sort data in the ascending or descending order. To sort a
 
 To sort multiple columns, press and hold the CTRL key and click the column header. You can clear sorting of any one of the multi-sorted columns by pressing and holding the SHIFT key and clicking the specific column header.
 
-To enable sorting in the Gantt control, set the [`AllowSorting`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowSorting) property to true. Sorting options can be configured through the [`SortSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SortSettings) property.
+To enable sorting in the Gantt control, set the [`AllowSorting`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowSorting) property to `true`. Configure sorting options using the [`SortSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SortSettings) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -113,7 +113,7 @@ The following code snippets explains how to achieve this.
 
 ## Touch interaction
 
-To perform `tap` action on a column header, trigger [`sorting`](sorting#sorting) operation to the selected column. A popup is displayed for multi-column sorting. To sort multiple columns, tap the popup, and then tap the desired column headers.
+To perform `tap` action on a column header, trigger [`sorting`](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/sorting#sorting) operation to the selected column. A popup is displayed for multi-column sorting. To sort multiple columns, tap the popup, and then tap the desired column headers.
 
 The following screenshot shows Gantt touch sorting,
 

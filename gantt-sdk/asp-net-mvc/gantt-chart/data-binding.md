@@ -76,11 +76,11 @@ To bind remote data to the Gantt component, assign service data as an instance o
 
 ### URL Adaptor
 
-In Gantt, we can fetch data from SQL database using `ADO.NET` Entity Data Model and update the changes on CRUD action to the server by using `DataManager` support. To communicate with the remote data we are using `UrlAdaptor` of DataManager property to call the server method and get back resultant data in JSON format. We can know more about `UrlAdaptor` from [`here`](https://ej2.syncfusion.com/javascript/documentation/data/adaptors).
+In Gantt, you can fetch data from a SQL database using the `ADO.NET` Entity Data Model and update the changes on CRUD action to the server using the `DataManager` support. To communicate with the remote data, use the `UrlAdaptor` of the DataManager property to call the server method and get back the resultant data in JSON format. You can know more about `UrlAdaptor` from [`here`](https://ej2.syncfusion.com/javascript/documentation/data/adaptors).
 
 N> Refer the [link](https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/models-data/creating-model-classes-with-the-entity-framework-cs) to create the `ADO.NET` Entity Data Model in Visual Studio,
 
-We can define data source for Gantt as instance of DataManager using `url` property of DataManager. Check the below code snippet to assign data source to Gantt.
+Define the data source for the Gantt as an instance of DataManager using the `url` property of DataManager. Check the below code snippet to assign the data source to the Gantt.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -93,11 +93,11 @@ We can define data source for Gantt as instance of DataManager using `url` prope
 
 ### Remote Save Adaptor
 
-You may need to perform all Gantt Actions on the client-side except the CRUD operations, which should be interacted with the server-side to persist data. It can be achieved in Gantt by using **RemoteSaveAdaptor**.
+You may need to perform all Gantt Actions on the client-side except the CRUD operations, which should be interacted with the server-side to persist data. Achieve this in Gantt using **RemoteSaveAdaptor**.
 
-Datasource must be set to the **json** property and set **RemoteSaveAdaptor** to the **adaptor** property of DataManager. CRUD operations can be mapped to the server-side using the **batchUrl** properties.
+Set the datasource to the **json** property and set the **RemoteSaveAdaptor** to the **adaptor** property of DataManager. CRUD operations can be mapped to the server-side using the **batchUrl** properties.
 
-You can use the following code example to use **RemoteSaveAdaptor** in Gantt.
+The following code example uses the **RemoteSaveAdaptor** in Gantt.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -487,7 +487,7 @@ The following code example describes handling of Load on demand at server end.
 
 ### Sending additional parameters to the server
 
-We can pass additional parameters using [`addParams`](../api/data/query#addparams) method of [`Query`](../api/data/query) class. In server side we have inherited and shown the additional parameter value in Syncfusion<sup style="font-size:70%">&reg;</sup> DataManager class itself. We pass an additional parameter in load time using [`load`](../api/gantt#load) event. We can also pass additional parameter to the CRUD model. Check the below code snippet to send additional parameter to Gantt.
+We can pass additional parameters using [`addParams`](https://ej2.syncfusion.com/documentation/api/data/query#addparams) method of [`query`](https://ej2.syncfusion.com/documentation/api/data/query) class. In server side we have inherited and shown the additional parameter value in Syncfusion<sup style="font-size:70%">&reg;</sup> DataManager class itself. We pass an additional parameter in load time using [`load`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Load) event. We can also pass additional parameter to the CRUD model. Check the below code snippet to send additional parameter to Gantt.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -500,7 +500,7 @@ We can pass additional parameters using [`addParams`](../api/data/query#addparam
 
 #### Handling HTTP error
 
-During server interaction from the Gantt, some server-side exceptions may occur, and you can acquire those error messages or exception details in client-side using the [`actionFailure`](../api/gantt#actionfailure) event.
+During server interaction from the Gantt, some server-side exceptions may occur, and you can acquire those error messages or exception details in client-side using the [`actionFailure`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ActionFailure) event.
 
 The argument passed to the `actionFailure` event contains the error details returned from the server.
 
@@ -515,7 +515,7 @@ The argument passed to the `actionFailure` event contains the error details retu
 
 #### Binding with Fetch
 
-You can use Gantt [`dataSource`](../api/gantt#datasource) property to bind the data source to Gantt from external Fetch request. In the below code we have fetched the data source from the server with the help of Fetch request and provided that to `dataSource` property by using [`onSuccess`](../api/base/ajax#onsuccess) event of the Fetch.
+You can use Gantt [`dataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataSource) property to bind the data source to Gantt from external Fetch request. In the below code we have fetched the data source from the server with the help of Fetch request and provided that to `dataSource` property by using `onSuccess` event of the Fetch.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -560,7 +560,7 @@ List<GanttSegment>
 
 ### Self-referential
 
-We can also define segment details as a flat data and this collection can be mapped by using [`segmentData`](../api/gantt#segmentData) property. The segment id field of this collection is mapped by using the [`taskFields.SegmentId`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) property.
+We can also define segment details as a flat data and this collection can be mapped by using [`segmentData`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) property. The segment id field of this collection is mapped by using the [`taskFields.SegmentId`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) property.
 
 ```html
 GanttSegment Record1 = new GanttSegment() { segmentId = 2, Duration = 2,

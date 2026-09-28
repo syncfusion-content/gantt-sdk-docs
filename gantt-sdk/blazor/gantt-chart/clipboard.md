@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Clipboard Copy and Paste Operations in Blazor Gantt Chart
 
-The clipboard feature allows copying selected row or cell data from the Gantt Chart component.
+The clipboard feature allows copying selected row or cell data from the Blazor Gantt Chart component.
 
 The following keyboard shortcut is supported for clipboard operations:
 
@@ -157,7 +157,7 @@ To copy selected rows or cells to the clipboard using external buttons, invoke t
 
 ## Copy hierarchy modes
 
-The Gantt Chart component supports multiple copy modes using the [CopyHierarchyMode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.TreeGrid.CopyHierarchyType.html) property. The following modes are available:
+The Blazor Gantt Chart component supports multiple copy modes using the [CopyHierarchyMode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.TreeGrid.CopyHierarchyType.html) property. The following modes are available:
 
 - **Parent**: Copies selected records along with their parent records. If no parent exists, only the selected records are copied.
 
@@ -579,7 +579,7 @@ You can use the [CellSelected](https://help.syncfusion.com/gantt-sdk/blazor/gant
 
 ## Autofill
 
-To achieve the autofill functionality in the Gantt chart, the drag selection feature must be enabled, and the `keyup` event must be bound.
+To achieve the autofill functionality in the Blazor Gantt Chart, the drag selection feature must be enabled, and the `keyup` event must be bound.
 
 The following properties have been configured in the [GanttSelectionSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html) to enable the drag selection feature:
 
@@ -590,11 +590,11 @@ The following properties have been configured in the [GanttSelectionSettings](ht
 
 These settings allow users to select multiple cells by dragging the mouse.
 
-The `keyup` event is used to detect key actions. For more information, please refer to this [page](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/how-to/bind-native-events). In this example, pressing the `Alt` key triggers autofill. The value of the first selected cell is captured during the `CellSelected` event based on the selected cell index. 
+The `keyup` event is used to detect key actions. For more information, refer to the documentation on [Binding Native Events](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/how-to/bind-native-events). In this example, pressing the `Alt` key triggers autofill. The value of the first selected cell is captured during the `CellSelected` event based on the selected cell index. 
 
 When the `Alt` key is released during a multi-cell selection, the [UpdateRecordByID](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_UpdateRecordByIDAsync__0_) method is called in the `keyup` event. This updates all selected rows by copying the value from the first selected cell to the corresponding cells in other rows.
 
-This customization enables users to quickly update multiple cells, improving data entry efficiency in the Gantt chart.
+This customization enables users to quickly update multiple cells, improving data entry efficiency in the Blazor Gantt Chart.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}

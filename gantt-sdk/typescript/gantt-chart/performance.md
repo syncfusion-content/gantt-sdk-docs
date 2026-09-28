@@ -28,7 +28,7 @@ To enhance your application's efficiency, especially when dealing with substanti
 
 3.  **Load On Demand**: The Load on demand feature in the Gantt component enables you to render a large number of tasks in the Gantt Chart with optimal performance. With virtualization enabled, only the root-level records are fetched from the datasource during the initial load. When expanding a root parent node or scrolling vertically, the corresponding tasks are dynamically fetched from the datasource and updated in the DOM based on the current viewport position. This ensures that only the necessary data is rendered, significantly improving performance and responsiveness.
 
-## Optimizing performance with AutoCalculateDateScheduling
+## Optimizing performance with autocalculatedatescheduling
 
 In the Gantt chart component, by default it automatically calculates the start and end dates in [dataSource](https://ej2.syncfusion.com/documentation/api/gantt#datasource) based on various factors such as working time, holidays, weekends, and predecessors. However, when rendering a large dataset, these calculations for data validation may result in performance issues. To avoid this, set the [autocalculatedatescheduling](https://ej2.syncfusion.com/documentation/api/gantt#autocalculatedatescheduling) property to **false**.
 
@@ -46,6 +46,38 @@ To enhance the performance of the Syncfusion<sup style="font-size:70%">&reg;</su
 
 So to improve the performance of gantt during the initial rendering, suggested you to refer individual script and CSS.
 
+## Performance benchmarks
+
+The following tables show typical load times for various Gantt configurations, comparing non-virtualized and virtualized scenarios:
+
+**Test environment**
+
+- Component Version: Syncfusion Gantt 35.1.27
+- Typescript Version: 5.9.3
+- Browser: Edge 152
+- Operating System: Windows 11
+- CPU: 11th Gen Intel® Core™ i5-1135G7 @ 2.40GHz
+- RAM: 16GB
+
+**Non-virtualized scenario (2,500 tasks)**
+
+| Scenario                        | Load time (seconds) |
+|---------------------------------|---------------------|
+| Default hierarchy (Parent-Child) | 3.1                 |
+| + Predecessor                   | 5.6                 |
+| + Resources                     | 5.6                 |
+| + Split taskbars                | 7.2                 |
+
+**Virtualized scenario (25,000 tasks)**
+
+| Scenario                        | Load time (seconds) |
+|---------------------------------|---------------------|
+| Default hierarchy (Parent-Child) | 4.1                 |
+| + Predecessor                   | 5.3                 |
+| + Resources                     | 6.0                 |
+| + Split taskbars                | 14.0                |
+
+
 ## How to optimize server-side data operations with adaptors
 
 The Gantt component provides support for various adaptors (OData, ODataV4, WebAPI, URL, etc.) to facilitate server-side data operations and CRUD functionalities. By utilizing these adaptors along with the `DataManager` component, you can seamlessly bind remote data sources to the Gantt and execute actions. During data operations such as filtering and sorting, the corresponding action queries are generated according to the adaptor's requirements. It is crucial to handle these actions on the application side and return the processed data back to the Gantt. Refer to the documentation for comprehensive details. It's worth noting that for efficient data processing, the suggested order for returning processed data to the Gantt is as follows:
@@ -54,7 +86,7 @@ The Gantt component provides support for various adaptors (OData, ODataV4, WebAP
 - Sorting
 - Aggregates
 
-## How to avoid MaxJsonLength error while passing large amount of records
+## How to avoid maxJsonLength error while passing large amount of records
 
 The Gantt component operates on a client-server basis, meaning data is sent as a JSON object between the client and server. The reported issue occurs due to the serialization of a large JSON object. To resolve this, you need to increase the maximum length for serializing large JSON objects. This can be done by altering the [MaxJsonLength](https://social.msdn.microsoft.com/Forums/en-US/ab1a5864-46e2-4c57-9511-dc3f60cc314a/how-to-increase-maxjsonlength-for-json-post-in-mvc3?forum=aspmv) property in your web.config file or at the point of deserialization.
 
@@ -78,6 +110,6 @@ The Gantt component operates on a client-server basis, meaning data is sent as a
 var serializer = new JavaScriptSerializer { MaxJsonLength = Int32.MaxValue };
 ```
 
-## Microsoft Excel limitation while exporting millions of records to excel file format
+## Microsoft Excel limitation while exporting millions of records to Excel file format
 
 By default, Microsoft Excel supports only 1,048,576 records per sheet. Therefore, exporting millions of records directly to Excel is not feasible. For more details on Microsoft Excel specifications and limits, you can refer to the [documentation](https://support.microsoft.com/en-gb/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3). It is recommended to export large datasets in CSV (Comma-Separated Values) or other formats that handle large data more efficiently than Excel.

@@ -133,7 +133,7 @@ To customize the connector line in the Gantt Chart, apply the following CSS
 }
 ```
 
-## customize the dialog popup on editing
+## Customize the dialog popup on editing
 
 To customize the header area of the dialog editor in the Gantt Chart, apply the following CSS.
 

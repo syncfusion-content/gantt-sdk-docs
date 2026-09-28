@@ -1,0 +1,71 @@
+@page
+@model IndexModel
+@using Syncfusion.EJ2.Gantt
+
+<ejs-gantt id="Gantt"
+           dataSource="@Model.GanttDataSourceCollection"
+           height="450px"
+           projectStartDate="04/01/2019"
+           projectEndDate="04/30/2019">
+
+    <e-gantt-taskfields id="TaskId"
+                        name="TaskName"
+                        startDate="StartDate"
+                        duration="Duration"
+                        calendarId="CalendarId">
+    </e-gantt-taskfields>
+
+    <e-gantt-labelsettings leftLabel="TaskName">
+    </e-gantt-labelsettings>
+
+    <e-gantt-calendarsettings>
+
+        <e-gantt-projectcalendar
+            workingTime="@(new List<object>
+            {
+                new { from = 9, to = 17 }
+            })"
+            holidays="@(new List<object>
+            {
+                new
+                {
+                    from = new DateTime(2019, 4, 10),
+                    to = new DateTime(2019, 4, 10),
+                    label = "Regional Holiday"
+                }
+            })">
+        </e-gantt-projectcalendar>
+
+        <e-gantt-taskcalendars>
+
+            <e-gantt-taskcalendar
+                calendarId="local-team"
+                holidays="@(new List<object>
+                {
+                    new
+                    {
+                        from = new DateTime(2019, 4, 5),
+                        to = new DateTime(2019, 4, 5),
+                        label = "Local Holiday"
+                    }
+                })">
+            </e-gantt-taskcalendar>
+
+            <e-gantt-taskcalendar
+                calendarId="offshore-team"
+                holidays="@(new List<object>
+                {
+                    new
+                    {
+                        from = new DateTime(2019, 4, 8),
+                        to = new DateTime(2019, 4, 8),
+                        label = "Offshore Holiday"
+                    }
+                })">
+            </e-gantt-taskcalendar>
+
+        </e-gantt-taskcalendars>
+
+    </e-gantt-calendarsettings>
+
+</ejs-gantt>

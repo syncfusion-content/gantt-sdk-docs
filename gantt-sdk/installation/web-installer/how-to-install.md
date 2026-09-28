@@ -12,12 +12,10 @@ documentation: ug
 
 ## Overview
 
-For the Essential Studio Gantt SDK product, Syncfusion offers a Web Installer. This installer alleviates the burden of downloading a larger installer. You can simply download and run the online installer, which will be smaller in size and will download and install the Essential Studio products you have chosen. You can get the most recent version of Essential Studio Web Installer [here](https://www.syncfusion.com/downloads/latest-version). 
+For the Essential Studio Gantt SDK product, Syncfusion offers a Web Installer. This installer alleviates the burden of downloading a larger installer. Download and run the online installer, which will be smaller in size and will download and install the Essential Studio products you have chosen. You can get the most recent version of Essential Studio Web Installer [here](https://www.syncfusion.com/downloads/latest-version). 
 
  
 ## Installation
-
-The steps below show how to install Essential Studio Gantt SDK Web Installer.
 
 The steps below show how to install the Essential Studio Gantt SDK Web Installer.
 
@@ -115,7 +113,7 @@ Follow either one of the option below to uninstall Syncfusion Essential Studio G
   
 **Option 1: Uninstall the Gantt SDK using the Syncfusion Gantt SDK web installer**
 
-Syncfusion provides the option to uninstall products of the same version directly from the Web Installer application. Select the products to be uninstalled from the list, and the Web Installer uninstalls them one by one.
+Syncfusion provides the option to uninstall products of the same version directly from the Web Installer application. Select the products to be uninstalled from the list, and the Web Installer uninstall them one by one.
 
 ![Platform Selection wizard - Installed](images/Step-by-Step-Installation_img4.png)
 

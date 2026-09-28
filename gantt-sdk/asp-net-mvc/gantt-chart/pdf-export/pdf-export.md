@@ -14,7 +14,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 ## PDF Export
 
-PDF export allows exporting Gantt data to PDF document. You need to use the `pdfExport` method for exporting. To enable PDF export in the Gantt, set the [`allowPdfExport`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowPdfExport) to true.
+PDF export allows exporting Gantt data to PDF document. Use the `pdfExport` method for exporting. To enable PDF export, set the [`allowPdfExport`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowPdfExport) property to `true`.
 
 To export data to PDF document, inject the `PdfExport` module in Gantt.
 

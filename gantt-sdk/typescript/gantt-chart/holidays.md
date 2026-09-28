@@ -102,7 +102,7 @@ holidays: [
 
 This code styles holidays with distinct colors and labels, enhancing timeline readability.
 
-## See Also
+## See also
 
 - [How to configure event markers?](https://ej2.syncfusion.com/documentation/gantt/event-markers)
 - [How to manage task dependencies?](https://ej2.syncfusion.com/documentation/gantt/task-dependency)

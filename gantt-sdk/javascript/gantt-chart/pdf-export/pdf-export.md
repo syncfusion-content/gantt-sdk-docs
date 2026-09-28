@@ -44,7 +44,7 @@ Include dynamic indicators and images in PDF export by defining them with `base6
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/pdf-export-cs16" %}
 
-## Export Gantt data as blob object
+## Export Gantt data as Blob object
 
 Export Gantt data as a blob object for previews or modifications by setting the fourth argument of [pdfExport](https://ej2.syncfusion.com/javascript/documentation/api/gantt#pdfexport) to **true**, with the blob returned in the [pdfExportComplete](https://ej2.syncfusion.com/javascript/documentation/gantt/events#pdfexportcomplete) event.
 

@@ -52,7 +52,7 @@ Enable context menu task addition by setting [enableContextMenu](https://ej2.syn
 
 ## Add tasks programmatically
 
-Add tasks programmatically using the [addRecord](https://ej2.syncfusion.com/react/documentation/api/gantt#addrecord) method, specifying task data, `rowPosition` (**Top**, **Bottom**, **Above**, **Below**, **Child**), and an optional `rowIndex`. Inject `Edit` and ensure `taskFields` mappings are valid (e.g., unique TaskID). For example, adding a task as a child creates a subtask under a parent row, updating the project hierarchy. Verify dependencies to avoid issues like circular references.
+Add tasks programmatically using the [addRecord](https://ej2.syncfusion.com/react/documentation/api/gantt#addrecord) method, specifying task data, `rowPosition` (**Top**, **Bottom**, **Above**, **Below**, **Child**), and an optional `rowIndex`. Inject `Edit` and ensure `taskFields` mappings are valid. For example, adding a task as a child creates a subtask under a parent row, updating the project hierarchy:
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}

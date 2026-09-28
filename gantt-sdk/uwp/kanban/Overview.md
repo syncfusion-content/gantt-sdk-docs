@@ -5,6 +5,7 @@ description: Learn about introduction of Syncfusion Essential Studio UWP Kanban 
 platform: gantt-sdk
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # About Syncfusion UWP Kanban Board Control
