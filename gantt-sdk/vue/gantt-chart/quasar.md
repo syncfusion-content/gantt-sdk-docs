@@ -153,7 +153,7 @@ const taskFields = {
 | `progress`  | Task completion percentage (0-100) | No       |
 | `parentID`  | Parent task ID for hierarchy       | No       |
 
-\*Either `duration` or `endDate` is required for a task to render properly.
+*Either `duration` or `endDate` is required for a task to render properly.
 
 ## Add the Syncfusion<sup style="font-size:70%">&reg;</sup> Vue component
 
