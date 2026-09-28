@@ -62,33 +62,11 @@ In this article, the `Tailwind3` theme is applied using CSS styles, which are av
 {% highlight html tabtitle="~/src/app.vue" %}
 
 <style>
-@import "../node_modules/@syncfusion/ej2-base/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-gantt/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-grids/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-treegrid/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-layouts/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css";
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/gantt/index.css";
 </style>
 
 {% endhighlight %}
 {% endtabs %}
-
-> **Note:** When using features like editing, toolbar, filtering, or dialogs, you need to import additional component styles:
->
-> ```css
-> /* For editing, toolbar, and dialog features */
-> @import "../node_modules/@syncfusion/ej2-calendars/styles/tailwind3.css";
-> @import "../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css";
-> @import "../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css";
-> @import "../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css";
-> @import "../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css";
-> @import "../node_modules/@syncfusion/ej2-notifications/styles/tailwind3.css";
->
-> /* For rich text editor in dialog notes tab */
-> @import "../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css";
-> ```
-
-> The order of importing CSS styles should be in line with their dependency graph.
 
 ## Create sample data
 
@@ -175,7 +153,7 @@ const taskFields = {
 | `progress`  | Task completion percentage (0-100) | No       |
 | `parentID`  | Parent task ID for hierarchy       | No       |
 
-*Either `duration` or `endDate` is required for a task to render properly.
+\*Either `duration` or `endDate` is required for a task to render properly.
 
 ## Add the Syncfusion<sup style="font-size:70%">&reg;</sup> Vue component
 
@@ -226,12 +204,7 @@ First, import and register the Gantt Chart component and its child directives in
 </script>
 
 <style>
-@import "../node_modules/@syncfusion/ej2-base/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-gantt/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-grids/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-treegrid/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-layouts/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css";
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/kanban/index.css";
 </style>
 
 {% endhighlight %}
