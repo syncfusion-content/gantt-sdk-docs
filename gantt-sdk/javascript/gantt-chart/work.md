@@ -69,5 +69,5 @@ The following table summarizes how work, duration, and resource units update whe
 ## See also
 
 - [Resources](https://ej2.syncfusion.com/javascript/documentation/gantt/resources)
-- [Task dependencies](https://ej2.syncfusion.com/javascript/documentation/gantt/taskdependency)
+- [Task dependencies](https://ej2.syncfusion.com/javascript/documentation/gantt/task-dependency)
 - [Critical path](https://ej2.syncfusion.com/javascript/documentation/gantt/critical-path)
