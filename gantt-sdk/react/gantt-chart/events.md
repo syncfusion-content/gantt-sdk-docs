@@ -3942,10 +3942,10 @@ The event provides an argument of type [ContextMenuOpenEventArgs](https://ej2.sy
 | `hideItems`      | string[] | Collection of menu item IDs to hide.                             |
 | `left`           | number   | Left position, in pixels, where the context menu should appear.  |
 | `name`           | string   | Name of the event.                                               |
-| `rowData`        | Object   | Selected row data associated with the context menu action.       |
+| `rowData`        | IGanttData | Selected row data associated with the context menu action.       |
 | `target`         | Element  | DOM element that triggered the context menu.                     |
 | `top`            | number   | Top position, in pixels, where the context menu should appear.   |
-| `type`           | string   | Type of context menu, such as **Header**, **Row**, or **Chart**. |
+| `type`           | ContextMenuType | Type of context menu, such as **Header**, **Row**, or **Chart**. |
 
 
 {% tabs %}
@@ -4677,7 +4677,13 @@ The event provides an argument of type [ITaskbarEditedEventArgs](https://ej2.syn
 | `action`             |  string       | Specifies type of task edit action.                  |
 | `cancel`             |  boolean      | Specifies whether the event can be canceled.         |
 | `data`               |  IGanttData   | Contains updated data for the task.                  |
-| `name`               |  string       | Identifies event as **endEdit**                      |
+| `editingFields`      |  ITaskData    | Represents the fields being edited in the taskbar.  |
+| `previousData`       |  ITaskData    | Represents the previous values of the task.         |
+| `recordIndex`        |  number       | Index of the edited task in the data collection.    |
+| `roundOffDuration`   |  boolean      | Indicates whether duration should be rounded off.   |
+| `segmentIndex`       |  number       | Index of the segment being edited.                  |
+| `target`             |  Element      | Target HTML element involved in the edit action.    |
+| `taskBarEditAction`  |  string       | Type of taskbar edit action performed.              |
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}

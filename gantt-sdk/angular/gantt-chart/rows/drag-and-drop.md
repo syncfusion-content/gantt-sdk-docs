@@ -379,6 +379,8 @@ In the example, a [click](https://ej2.syncfusion.com/angular/documentation/api/b
   
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/rows/drag-drop-cs2" %}
 
+> **Note:** Dependency links are not automatically updated when rows are reordered. Since task IDs remain unchanged, review the predecessor relationships after a bulk reorder to ensure they are still valid.
+
 ## Customize the drag and drop action
 
 Customize the drag and drop behavior in the Gantt Chart component using the [rowDragStartHelper](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdragstarthelper), [rowDragStart](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdragstart), [rowDrag](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdrag), and [rowDrop](https://ej2.syncfusion.com/angular/documentation/gantt/events#rowdrop) events. These events provide control over the drag lifecycle, allowing precise handling of row interactions.

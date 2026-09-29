@@ -2360,10 +2360,10 @@ The event provides an argument of type [ContextMenuOpenEventArgs](https://ej2.sy
 | `hideItems`      | string[] | Array of menu item IDs to hide.              |
 | `left`           | number   | Left position of menu in viewport.           |
 | `name`           | string   | Event name: **contextMenuOpen**.             |
-| `rowData`        | Object   | Data object of the related row.              |
+| `rowData`        | IGanttData | Data object of the related row.              |
 | `target`         | Element  | Target element of the menu invocation.       |
 | `top`            | number   | Top position of menu in viewport.            |
-| `type`           | string   | Type of menu item (e.g., **Content**).       |
+| `type`           | ContextMenuType | Type of context menu, such as **Header**, **Row**, or **Chart**. |
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -2763,8 +2763,8 @@ The event provides an argument of type [ITaskbarEditedEventArgs](https://ej2.syn
 | `action`            | string     | Specifies type of task edit action.                                    |
 | `cancel`            | boolean    | Specifies whether the event can be canceled.                           |
 | `data`              | IGanttData | Contains updated data for the task.                                    |
-| `editingFields`     | Object     | Map of field names to their pre-edit values.                           |
-| `previousData`      | IGanttData | Original data before the edit.                                         |
+| `editingFields`     | ITaskData  | Represents the fields being edited in the taskbar.                    |
+| `previousData`      | ITaskData  | Represents the previous values of the task before editing.            |
 | `recordIndex`       | number     | Index of the record being edited.                                      |
 | `roundOffDuration`  | boolean    | Indicates whether the edit duration was rounded off.                   |
 | `segmentIndex`      | number     | Index of the task segment edited (for split tasks).                    |
