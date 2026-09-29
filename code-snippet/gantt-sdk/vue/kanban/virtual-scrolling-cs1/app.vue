@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-       <ejs-kanban id="KanbanVirtualScrolling" :enableVirtualization="true" keyField="Status"
+       <ejs-kanban id="KanbanVirtualScrolling"  :height="500" :enableVirtualization="true" keyField="Status"
        :dataSource="kanbanData" :enableTooltip="enableTooltip" :cardSettings="cardSettings" :dialogSettings="dialogSettings">
         <e-columns>
             <e-column headerText="To Do" keyField="Open" ></e-column>
