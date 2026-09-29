@@ -204,7 +204,7 @@ First, import and register the Gantt Chart component and its child directives in
 </script>
 
 <style>
-@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/kanban/index.css";
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/gantt/index.css";
 </style>
 
 {% endhighlight %}
