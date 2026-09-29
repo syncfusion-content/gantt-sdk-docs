@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
 ---
 
-# Overview in Blazor Kanban
+# Blazor Kanban Documentation Overview
 
 ## Introduction to Syncfusion Blazor Kanban
 
@@ -57,7 +57,7 @@ The card is the core unit of work in the Kanban board. The following features co
 | **[Header](./cards#header)** | Show a heading with card identifiers | Quick card identification |
 | **[Content](./cards#content)** | Display the primary card text | Clear task descriptions |
 | **[Tags](./cards#tags)** | Show categorical labels on cards | Visual classification |
-| **[Customizing left border color](./cards#customizing-left-border-color)** | Color-code cards by field values | Status at a glance |
+| **[Customizing left border color](./cards#customizing-left-border-color)** | Color code cards by field values | Status at a glance |
 | **[Rendering custom footer elements](./cards#rendering-custom-footer-elements)** | Add custom markup to card footers | Additional card actions |
 | **[Customizing card layout with templates](./cards#customizing-card-layout-with-templates)** | Replace the card layout with Blazor templates | Fully custom card visuals |
 
@@ -68,7 +68,7 @@ The [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban) 
 | Feature | Purpose | Key Benefit |
 |---------|---------|-------------|
 | **[Drag and Drop](./drag-and-drop)** | Move cards between columns and swimlanes | Core kanban interaction |
-| **[Internal drag and drop](./drag-and-drop#internal-drag-and-drop)** | Reorder cards within their own column | Flexible in-column sorting |
+| **[Internal drag and drop](./drag-and-drop#internal-drag-and-drop)** | Reorder cards within their own column | Flexible in column sorting |
 | **[Prevent transition across columns](./workflow#prevent-transition-across-columns)** | Restrict which columns accept a card | Enforced process rules |
 | **[Prevent Drop actions](./workflow#prevent-drop-actions)** | Cancel drops conditionally | Custom validation logic |
 | **[Using the SortBy Property](./sort#using-the-sortby-property)** | Sort cards by index or field values | Ordered presentation |
@@ -102,7 +102,7 @@ WIP (work-in-progress) validation prevents columns from exceeding their capacity
 
 | Feature | Purpose | Key Benefit |
 |---------|---------|-------------|
-| **[Minimum card limit](./validation#minimum-card-limit)** | Enforce a lower bound on column cards | Complete-state enforcement |
+| **[Minimum card limit](./validation#minimum-card-limit)** | Enforce a lower bound on column cards | Complete state enforcement |
 | **[Maximum card limit](./validation#maximum-card-limit)** | Cap the cards allowed per column | Capacity enforcement |
 
 ## Layout & appearance
@@ -126,13 +126,13 @@ The [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban) 
 - **[Enabling Right-to-Left (RTL) Layout](./localization#enabling-right-to-left-rtl-layout)** - RTL rendering for RTL languages
 - **[WAI-ARIA attributes](./accessibility#wai-aria-attributes)** - Accessible roles and attributes for the board UI
 - **[Keyboard interaction](./accessibility#keyboard-interaction)** - Complete board operation via keyboard
-  - Arrow Keys - Move the card selection and between columns
-  - Enter - Open the selected card
-  - Delete - Remove the selected cards
-  - Ctrl+Enter / Ctrl+Space - Select multiple cards
-  - Shift+Up / Shift+Down - Select multiple cards up or down
-  - Tab / Shift+Tab - Navigate and reverse-navigate the columns
-  - Home / End - Jump to the first or last card
+  - **Arrow Keys** - Move the card selection and between columns
+  - **Enter** - Open the selected card
+  - **Delete** - Remove the selected cards
+  - **Ctrl+Enter / Ctrl+Space** - Select multiple cards
+  - **Shift+Up / Shift+Down** - Select multiple cards up or down
+  - **Tab / Shift+Tab** - Navigate and reverse navigate the columns
+  - **Home / End** - Jump to the first or last card
 - **[Ensuring accessibility](./accessibility#ensuring-accessibility)** - axe-core validation guidance
 
 ## Advanced features
@@ -142,7 +142,7 @@ The [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban) 
 | Feature | Purpose | Use Case | Key Benefit |
 |---------|---------|----------|-------------|
 | **[Events](./events)** | Handle load, card click, drag, and dialog events | Custom workflows and integrations | Deep integration points |
-| **[Responsive Mode](./responsive-mode#scrolling)** | Scroll and select behaviors in responsive layouts | Mobile board interaction | Touch-friendly experience |
+| **[Responsive Mode](./responsive-mode#scrolling)** | Scroll and select behaviors in responsive layouts | Mobile board interaction | Touch friendly experience |
 
 ## System requirements
 
@@ -161,10 +161,10 @@ The [Blazor Kanban](https://www.syncfusion.com/blazor-components/blazor-kanban) 
 - [Blazor WebAssembly Guide](./getting-started)
 
 **Popular Features:**
-- [Columns](./columns) - Single and multi-key column mapping
+- [Columns](./columns) - Single and multi key column mapping
 - [Cards](./cards) - Customizable card content and styling
 - [Swimlane](./swimlane) - Category-based lanes
-- [Drag and Drop](./drag-and-drop) - Cross-column card transfers
+- [Drag and Drop](./drag-and-drop) - Cross column card transfers
 - [WIP Validation](./validation) - Column capacity enforcement
 - [Card Editing](./dialog) - Built-in and custom edit dialogs
 
