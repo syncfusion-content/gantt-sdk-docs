@@ -35,7 +35,6 @@ The following items are available in the default context menu:
 - `MergeTask`: Combines split task segments with sub-options: **Left**, **Right**.
 - `Convert`: Converts tasks with sub-options: **To Milestone** and **To Task**.
 - `DeleteDependency`: Deletes the selected task dependency.
-- `TaskMode`: Switches a task between **Auto** and **Manual** scheduling.
 
 The following example demonstrates context menu implementation with default items, where menu options adapt based on the clicked element and `editSettings` configuration.
 

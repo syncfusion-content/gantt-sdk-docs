@@ -123,7 +123,7 @@ In the example, a [click](https://ej2.syncfusion.com/documentation/api/button#cl
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/dynamicDrag-cs1" %}
 
-> **Note:** Predecessor / dependency links are not automatically re-pointed after a row reorder. Task IDs stay the same, so existing dependency links continue to target the same IDs — but the relationship may no longer make sense in the new position. Review your dependency graph after a bulk reorder.
+> **Note:** Dependency links are not automatically updated when rows are reordered. Since task IDs remain unchanged, review the predecessor relationships after a bulk reorder to ensure they are still valid.
 
 ## Customize the drag and drop action
 

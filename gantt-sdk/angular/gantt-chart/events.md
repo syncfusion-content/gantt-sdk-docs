@@ -2041,23 +2041,23 @@ export class AppComponent{
 
 ## contextMenuOpen
 
-The [contextMenuOpen](https://ej2.syncfusion.com/angular/documentation/api/gantt#contextmenuopen) event is triggered when a context menu item is clicked in the Gantt. This event allows customization of menu behavior or execution of additional logic based on the selected item and context.
+The [contextMenuOpen](https://ej2.syncfusion.com/angular/documentation/api/gantt#contextmenuopen) event is triggered when the context menu is opened in the Gantt. This event allows customization of menu behavior or execution of additional logic based on the selected item and context.
 
 The event provides an argument of type [ContextMenuOpenEventArgs](https://ej2.syncfusion.com/angular/documentation/api/gantt/contextMenuOpenEventArgs) with the following properties:
 
-| **Property**       | **Type**         | **Description**                              |
-|--------------------|------------------|----------------------------------------------|
-| `name`             | string         | Event name: **contextMenuOpen**.             |
-| `element`          | Element        | DOM element that triggered the menu.         |
-| `event`            | PointerEvent   | Pointer event with interaction details.      |
-| `item`             | Object         | Menu item object with properties.            |
-| `type`             | string         | Type of menu item (e.g., **Content**).       |
-| `rowData`          | Object         | Data object of the related row.              |
-| `items`            | Object[]       | List of available context menu items.        |
-| `left`             | number         | Left position of menu in viewport.           |
-| `top`              | number         | Top position of menu in viewport.            |
-| `parentItem`       | Object         | Parent item in nested menu structure.        |
-| `showSubMenuOn`    | MenuOpenType   | Submenu trigger type: click or hover.        |
+| **Property**     | **Type** | **Description**                                                        |
+| ---------------- | -------- | ---------------------------------------------------------------------- |
+| `chartRow`       | Element  | Gantt chart row element where the context menu was opened.             |
+| `disableItems`   | string[] | Collection of menu item IDs to disable.                                |
+| `gridRow`        | Element  | TreeGrid row element where the context menu was opened.                |
+| `hideChildItems` | string[] | Collection of submenu item IDs to hide.                                |
+| `hideItems`      | string[] | Collection of menu item IDs to hide.                                   |
+| `left`           | number   | Left position, in pixels, where the context menu should appear.        |
+| `name`           | string   | Name of the event.                                                     |
+| `rowData`        | Object   | Selected row data associated with the context menu action.             |
+| `target`         | Element  | DOM element that triggered the context menu.                           |
+| `top`            | number   | Top position, in pixels, where the context menu should appear.         |
+| `type`           | string   | Type of context menu, such as **Header**, **Row**, or **Chart**.       |
 
 ```ts
 import { NgModule } from '@angular/core'
@@ -2378,6 +2378,7 @@ The event provides an argument of type [ITaskbarEditedEventArgs](https://ej2.syn
 | **Property**         | **Type**       | **Description**                                      |
 |----------------------|----------------|------------------------------------------------------|
 | `action`             | string      | Specifies type of task edit action.                  |
+| `cancel`             | boolean     | Specifies whether the event can be canceled.         |
 | `data`               | IGanttData   | Contains updated data for the task.                  |
 | `name`               | string       | Identifies event as **endEdit**                      |
 

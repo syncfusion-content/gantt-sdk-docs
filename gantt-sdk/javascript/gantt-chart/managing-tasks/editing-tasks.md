@@ -130,9 +130,9 @@ Updating with dialog
 
 ## Update task values using method
 
-Tasks' value can be dynamically updated by using the [updateRecordById](https://ej2.syncfusion.com/javascript/documentation/api/gantt#updaterecordbyid) method. You can call this method on any custom action. The following code example shows how to use this method to update a task.
+Tasks' value can be dynamically updated by using the [updateRecordByID](https://ej2.syncfusion.com/javascript/documentation/api/gantt#updaterecordbyid) method. You can call this method on any custom action. The following code example shows how to use this method to update a task.
 
-> NOTE: Using the [updateRecordById](https://ej2.syncfusion.com/javascript/documentation/api/gantt#updaterecordbyid) method, you cannot update the task ID value.
+> NOTE: Using the [updateRecordByID](https://ej2.syncfusion.com/javascript/documentation/api/gantt#updaterecordbyid) method, you cannot update the task ID value.
 
 ![Edit action](../images/edit-action.png)
 

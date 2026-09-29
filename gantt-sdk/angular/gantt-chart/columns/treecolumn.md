@@ -160,37 +160,37 @@ this.gantt.collapseAll();
 - [expandAtLevel(level)](https://ej2.syncfusion.com/angular/documentation/api/treegrid/index-default#expandatlevel): Expands rows at a specific level.
 
 ```ts
-this.gantt.treegrid.expandAtLevel(0);
+this.gantt.treeGrid.expandAtLevel(0);
 ```
 
 - [collapseAtLevel(level)](https://ej2.syncfusion.com/angular/documentation/api/treegrid/index-default#collapseatlevel): Collapses rows at a specific level.
 
 ```ts
-this.gantt.treegrid.collapseAtLevel(0);
+this.gantt.treeGrid.collapseAtLevel(0);
 ```
 
 - `expandByKey(key)`: Expands a row by primary key.
 
 ```ts
-this.gantt.treegrid.expandByKey(1); // Pass the primary key value
+this.gantt.treeGrid.expandByKey(1); // Pass the primary key value
 ```
 
 - `collapseByKey(key)`: Collapses a row by primary key.
 
 ```ts
-this.gantt.treegrid.collapseByKey(1); // Pass the primary key value
+this.gantt.treeGrid.collapseByKey(1); // Pass the primary key value
 ```
 
 - `expandRow(rowElement)`: Expands a row using its DOM element.
 
 ```ts
-this.gantt.treegrid.expandRow(tr); // Pass the row element as parameter
+this.gantt.treeGrid.expandRow(tr); // Pass the row element as parameter
 ```
 
 - `collapseRow(rowElement)`: Collapses a row using its DOM element.
 
 ```ts
-this.gantt.treegrid.collapseRow(tr); // Pass the row element as parameter
+this.gantt.treeGrid.collapseRow(tr); // Pass the row element as parameter
 ```
 
 {% tabs %}

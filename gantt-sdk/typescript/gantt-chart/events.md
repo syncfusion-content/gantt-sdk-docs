@@ -45,8 +45,8 @@ The event argument structure varies based on the operation type. The following t
 | -------------------- | -------- | -------------------------------------------------------------------------------------- |
 | `cancel`             | boolean  | Set to **true** to cancel the current action before it is processed.                   |
 | `isTimelineRoundOff` | boolean  | Indicates whether timeline rounding is applied during taskbar editing.                 |
-| `timelineStartDate`  | Date     | Start of the timeline view. Useful for validating task boundaries.                  |
-| `timelineEndDate`    | Date     | End of the timeline view. Useful for validating task boundaries.                      |
+| `timelineStartDate`  | Date     | Start of the timeline view. Useful for validating task boundaries.                     |
+| `timelineEndDate`    | Date     | End of the timeline view. Useful for validating task boundaries.                       |
 | `requestType`        | string   | Describes the type of request. For taskbar editing, values include **taskbarEditing**. |
 
 **3. [ITaskAddedEventArgs](https://ej2.syncfusion.com/documentation/api/gantt/iTaskAddedEventArgs) (Adding/Editing/Deleting tasks)**
@@ -86,14 +86,14 @@ The event argument structure varies based on the operation type. The following t
 
 **6. [IDependencyEventArgs](https://ej2.syncfusion.com/documentation/api/gantt/iDependencyEventArgs) (Dependency editing)**
 
-| **Property**           | **Type** | **Description**                                                                          |
-| ---------------------- | -------- | ---------------------------------------------------------------------------------------- |
-| `fromItem`             | object   | Source task object in the dependency link.                                               |
-| `isValidLink`          | boolean  | Indicates whether the new dependency link is valid.                                      |
-| `newPredecessorString` | string   | New predecessor string after editing.                                                    |
-| `predecessor`          | IPredecessor | Original predecessor object before editing.                                         |
-| `requestType`          | string   | Describes the type of request, typically **validateDependency** or **updateDependency**. |
-| `toItem`               | object   | Target task object in the dependency link.                                               |
+| **Property**           | **Type**     | **Description**                                                                          |
+| ---------------------- | ------------ | ---------------------------------------------------------------------------------------- |
+| `fromItem`             | object       | Source task object in the dependency link.                                               |
+| `isValidLink`          | boolean      | Indicates whether the new dependency link is valid.                                      |
+| `newPredecessorString` | string       | New predecessor string after editing.                                                    |
+| `predecessor`          | IPredecessor | Original predecessor object before editing.                                              |
+| `requestType`          | string       | Describes the type of request, typically **validateDependency** or **updateDependency**. |
+| `toItem`               | object       | Target task object in the dependency link.                                               |
 
 **7. [ZoomEventArgs](https://ej2.syncfusion.com/documentation/api/gantt/zoomEventArgs) (Zooming)**
 
@@ -238,9 +238,9 @@ Below are detailed descriptions of each argument type's properties, and their pu
 | **Property**       | **Type**             | **Description**                                                      |
 | ------------------ | -------------------- | -------------------------------------------------------------------- |
 | `action`           | string               | Defines the action performed during the event.                       |
-| `cancel`           | boolean              | Set to **true** to cancel the current action.                         |
-| `data`             | object \| object[]   | The data record(s) involved in the completed action.                  |
-| `element`          | Element              | The DOM element involved in the action.                               |
+| `cancel`           | boolean              | Set to **true** to cancel the current action.                        |
+| `data`             | object \| object[]   | The data record(s) involved in the completed action.                 |
+| `element`          | Element              | The DOM element involved in the action.                              |
 | `keyEvent`         | Event                | Defines the key event triggered.                                     |
 | `modifiedRecords`  | object[]             | Records that were modified during batch operations.                  |
 | `modifiedTaskData` | object[]             | Task data that was modified during batch operations.                 |
@@ -453,9 +453,9 @@ break;
 
 The [actionFailure](https://ej2.syncfusion.com/documentation/api/gantt#actionfailure) event is triggered when an operation in the Gantt encounters an error due to configuration issues, invalid data, or missing modules. It returns a [FailureEventArgs](https://ej2.syncfusion.com/documentation/api/grid/failureEventArgs#failureeventargs) object containing detailed information about the failure, including the following property:
 
-| **Property** | **Type**  | **Description**                |
-| ------------ | --------- | ------------------------------ |
-| `error`      | Error[]   | Array of error objects from the failed action. |
+| **Property** | **Type** | **Description**                                |
+| ------------ | -------- | ---------------------------------------------- |
+| `error`      | Error[]  | Array of error objects from the failed action. |
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -2351,25 +2351,19 @@ The [contextMenuOpen](https://ej2.syncfusion.com/documentation/api/gantt#context
 
 The event provides an argument of type [ContextMenuOpenEventArgs](https://ej2.syncfusion.com/documentation/api/gantt/contextMenuOpenEventArgs) with the following properties:
 
-| **Property**       | **Type**           | **Description**                                  |
-| ------------------ | ------------------ | ------------------------------------------------ |
-| `chartRow`         | Element            | Chart row element where the menu was opened.     |
-| `disableItems`     | string[]           | Array of menu item IDs to disable.                |
-| `element`          | Element            | DOM element that triggered the menu.              |
-| `event`            | PointerEvent       | Pointer event with interaction details.           |
-| `gridRow`          | Element            | Grid row element where the menu was opened.       |
-| `hideChildItems`   | string[]           | Array of submenu item IDs to hide.                |
-| `hideItems`        | string[]           | Array of menu item IDs to hide.                   |
-| `item`             | Object             | Menu item object with properties.                 |
-| `items`            | Object[]           | List of available context menu items.             |
-| `left`             | number             | Left position of menu in viewport.                |
-| `name`             | string             | Event name: **contextMenuOpen**.                  |
-| `parentItem`       | Object             | Parent item in nested menu structure.             |
-| `rowData`          | Object             | Data object of the related row.                   |
-| `showSubMenuOn`    | MenuOpenType       | Submenu trigger type: click or hover.             |
-| `target`           | Element            | Target element of the menu invocation.            |
-| `top`              | number             | Top position of menu in viewport.                 |
-| `type`             | string             | Type of menu item (e.g., **Content**).            |
+| **Property**     | **Type** | **Description**                              |
+| ---------------- | -------- | -------------------------------------------- |
+| `chartRow`       | Element  | Chart row element where the menu was opened. |
+| `disableItems`   | string[] | Array of menu item IDs to disable.           |
+| `gridRow`        | Element  | Grid row element where the menu was opened.  |
+| `hideChildItems` | string[] | Array of submenu item IDs to hide.           |
+| `hideItems`      | string[] | Array of menu item IDs to hide.              |
+| `left`           | number   | Left position of menu in viewport.           |
+| `name`           | string   | Event name: **contextMenuOpen**.             |
+| `rowData`        | Object   | Data object of the related row.              |
+| `target`         | Element  | Target element of the menu invocation.       |
+| `top`            | number   | Top position of menu in viewport.            |
+| `type`           | string   | Type of menu item (e.g., **Content**).       |
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -2764,17 +2758,18 @@ The [endEdit](https://ej2.syncfusion.com/documentation/api/gantt#endedit) event 
 
 The event provides an argument of type [ITaskbarEditedEventArgs](https://ej2.syncfusion.com/documentation/api/gantt/iTaskbarEditedEventArgs) with the following properties:
 
-| **Property**        | **Type**    | **Description**                                                       |
-| ------------------- | ----------- | --------------------------------------------------------------------- |
-| `action`            | string      | Specifies type of task edit action.                                   |
-| `data`              | IGanttData  | Contains updated data for the task.                                   |
-| `editingFields`     | Object      | Map of field names to their pre-edit values.                          |
-| `previousData`      | IGanttData  | Original data before the edit.                                        |
-| `recordIndex`       | number      | Index of the record being edited.                                     |
-| `roundOffDuration`  | boolean     | Indicates whether the edit duration was rounded off.                  |
-| `segmentIndex`      | number      | Index of the task segment edited (for split tasks).                   |
-| `target`            | Element     | DOM element involved in the edit.                                      |
-| `taskBarEditAction` | string      | Type of taskbar edit action (e.g., **leftResized**, **rightResized**). |
+| **Property**        | **Type**   | **Description**                                                        |
+| ------------------- | ---------- | ---------------------------------------------------------------------- |
+| `action`            | string     | Specifies type of task edit action.                                    |
+| `cancel`            | boolean    | Specifies whether the event can be canceled.                           |
+| `data`              | IGanttData | Contains updated data for the task.                                    |
+| `editingFields`     | Object     | Map of field names to their pre-edit values.                           |
+| `previousData`      | IGanttData | Original data before the edit.                                         |
+| `recordIndex`       | number     | Index of the record being edited.                                      |
+| `roundOffDuration`  | boolean    | Indicates whether the edit duration was rounded off.                   |
+| `segmentIndex`      | number     | Index of the task segment edited (for split tasks).                    |
+| `target`            | Element    | DOM element involved in the edit.                                      |
+| `taskBarEditAction` | string     | Type of taskbar edit action (e.g., **leftResized**, **rightResized**). |
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -3040,14 +3035,14 @@ The [excelHeaderQueryCellInfo](https://ej2.syncfusion.com/documentation/api/gant
 
 The event provides an argument of type [ExcelHeaderQueryCellInfoEventArgs](https://ej2.syncfusion.com/documentation/api/grid/excelHeaderQueryCellInfoEventArgs) with the following properties:
 
-| **Property** | **Type**          | **Description**                                         |
-| ------------ | ----------------- | ------------------------------------------------------- |
+| **Property** | **Type**          | **Description**                                   |
+| ------------ | ----------------- | ------------------------------------------------- |
 | `name`       | string            | Identifies event as **excelHeaderQueryCellInfo**. |
-| `cell`       | ExcelCell         | Represents current Excel header cell.                   |
-| `gridCell`   | Cell \| ExcelCell | Refers to related Grid header cell.                     |
-| `hyperLink`  | Hyperlink         | Contains hyperlink details for header cell.             |
-| `image`      | Image             | Contains image details for header cell.                 |
-| `style`      | ExcelStyle        | Defines style settings for header cell.                 |
+| `cell`       | ExcelCell         | Represents current Excel header cell.             |
+| `gridCell`   | Cell \| ExcelCell | Refers to related Grid header cell.               |
+| `hyperLink`  | Hyperlink         | Contains hyperlink details for header cell.       |
+| `image`      | Image             | Contains image details for header cell.           |
+| `style`      | ExcelStyle        | Defines style settings for header cell.           |
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -3184,7 +3179,7 @@ The event provides an argument of type [ExcelQueryCellInfoEventArgs](https://ej2
 | `data`       | object    | Row data for the current cell.                  |
 | `value`      | string    | Original value before export.                   |
 | `style`      | object    | Style settings like font and alignment.         |
-| `colSpan`   | number    | Specifies number of columns to span.            |
+| `colSpan`    | number    | Specifies number of columns to span.            |
 | `hyperLink`  | Hyperlink | Hyperlink details if cell includes a link.      |
 | `image`      | Image     | Image details if cell includes an image.        |
 
@@ -3317,13 +3312,13 @@ The [expanded](https://ej2.syncfusion.com/documentation/api/gantt#expanded) even
 
 The event provides an argument of type [ICollapsingEventArgs](https://ej2.syncfusion.com/documentation/api/gantt/iCollapsingEventArgs) with the following properties:
 
-| **Property** | **Type**    | **Description**                                  |
-| ------------ | ----------- | ------------------------------------------------ |
-| `data`       | object      | Data object of the expanded row                  |
-| `gridRow`    | HTMLElement | DOM element of the expanded row in the grid      |
-| `chartRow`   | HTMLElement | DOM element of the expanded row in the chart     |
-| `name`       | string      | Identifies event as **expanded**                 |
-| `cancel`     | boolean     | Prevents expansion when set to **true**          |
+| **Property** | **Type**    | **Description**                              |
+| ------------ | ----------- | -------------------------------------------- |
+| `data`       | object      | Data object of the expanded row              |
+| `gridRow`    | HTMLElement | DOM element of the expanded row in the grid  |
+| `chartRow`   | HTMLElement | DOM element of the expanded row in the chart |
+| `name`       | string      | Identifies event as **expanded**             |
+| `cancel`     | boolean     | Prevents expansion when set to **true**      |
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -3572,11 +3567,11 @@ The [headerCellInfo](https://ej2.syncfusion.com/documentation/api/gantt#headerce
 
 The event provides an object of type [HeaderCellInfoEventArgs](https://ej2.syncfusion.com/documentation/api/grid/headerCellInfoEventArgs) with the following properties:
 
-| **Property** | **Type**    | **Description**                                                                              |
-| ------------ | ----------- | -------------------------------------------------------------------------------------------- |
-| `cell`       | Cell        | Wrapper object for the header cell, exposing `.column` (the underlying Column model).        |
-| `node`       | Element     | Refers to the inner content element of the header cell, used to update text or insert icons. |
-| `name`       | string      | Identifies the event as **headerCellInfo**.                                                  |
+| **Property** | **Type** | **Description**                                                                              |
+| ------------ | -------- | -------------------------------------------------------------------------------------------- |
+| `cell`       | Cell     | Wrapper object for the header cell, exposing `.column` (the underlying Column model).        |
+| `node`       | Element  | Refers to the inner content element of the header cell, used to update text or insert icons. |
+| `name`       | string   | Identifies the event as **headerCellInfo**.                                                  |
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -4240,9 +4235,9 @@ The [pdfExportComplete](https://ej2.syncfusion.com/documentation/api/gantt#pdfex
 
 The event provides an `object` with the following property:
 
-| **Property** | **Type**          | **Description**                                            |
-| ------------ | ----------------- | ---------------------------------------------------------- |
-| `promise`    | Promise<Blob>     | Resolves with the exported PDF blob (present for blob export). |
+| **Property** | **Type**      | **Description**                                                |
+| ------------ | ------------- | -------------------------------------------------------------- |
+| `promise`    | Promise<Blob> | Resolves with the exported PDF blob (present for blob export). |
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -4794,15 +4789,15 @@ The [queryCellInfo](https://ej2.syncfusion.com/documentation/api/gantt#querytask
 
 The event provides an argument of type [QueryCellInfoEventArgs](https://ej2.syncfusion.com/documentation/api/gantt/querycellinfoeventargs) with the following properties:
 
-| **Property**     | **Type**    | **Description**                                            |
-| ---------------- | ----------- | ---------------------------------------------------------- |
-| `cell`           | HTMLElement | Represents the cell element being rendered.                |
-| `column`         | Column      | Configuration object for the current column.               |
-| `data`           | object      | Data object for the row associated with the cell.          |
-| `colSpan`        | number      | Number of columns the cell spans across.                   |
-| `rowSpan`        | number      | Number of rows the cell spans across.                      |
-| `requestType`    | string      | Type of request (e.g., **beforeOpenEditDialog**, **save**).|
-| `foreignKeyData` | object      | Foreign key data for the cell, if applicable.              |
+| **Property**     | **Type**    | **Description**                                             |
+| ---------------- | ----------- | ----------------------------------------------------------- |
+| `cell`           | HTMLElement | Represents the cell element being rendered.                 |
+| `column`         | Column      | Configuration object for the current column.                |
+| `data`           | object      | Data object for the row associated with the cell.           |
+| `colSpan`        | number      | Number of columns the cell spans across.                    |
+| `rowSpan`        | number      | Number of rows the cell spans across.                       |
+| `requestType`    | string      | Type of request (e.g., **beforeOpenEditDialog**, **save**). |
+| `foreignKeyData` | object      | Foreign key data for the cell, if applicable.               |
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -6479,20 +6474,20 @@ The [rowDrop](https://ej2.syncfusion.com/documentation/api/gantt#rowdrop) event 
 
 The event provides an argument of type [RowDragEventArgs](https://ej2.syncfusion.com/documentation/api/gantt/rowDropEventArgs) with the following properties:
 
-| **Property**       | **Type**     | **Description**                             |
-| ------------------ | ------------ | ------------------------------------------- |
-| `cancel`           | boolean      | Set to **true** to cancel the drop.         |
-| `data`             | Object[]     | Selected rows data objects.                 |
-| `draggedRecords`   | IGanttData[] | Records that were dragged into a new position. |
-| `dropIndex`        | number       | Target index for the dropped row.           |
-| `dropPosition`     | string       | Position relative to the target row.        |
-| `dropRecord`       | IGanttData   | Dropped record after reordering.            |
-| `fromIndex`        | number       | Original index of the dragged row.          |
-| `modifiedRecords`  | IGanttData[] | Records updated after the drop.             |
-| `originalEvent`    | object       | Native mouse event that completed the drag. |
-| `requestType`      | string       | Type of request triggered by the drop.      |
-| `rows`             | Element[]    | DOM elements of the dragged rows.           |
-| `target`           | Element      | Element where the drag was initiated.       |
+| **Property**      | **Type**     | **Description**                                |
+| ----------------- | ------------ | ---------------------------------------------- |
+| `cancel`          | boolean      | Set to **true** to cancel the drop.            |
+| `data`            | Object[]     | Selected rows data objects.                    |
+| `draggedRecords`  | IGanttData[] | Records that were dragged into a new position. |
+| `dropIndex`       | number       | Target index for the dropped row.              |
+| `dropPosition`    | string       | Position relative to the target row.           |
+| `dropRecord`      | IGanttData   | Dropped record after reordering.               |
+| `fromIndex`       | number       | Original index of the dragged row.             |
+| `modifiedRecords` | IGanttData[] | Records updated after the drop.                |
+| `originalEvent`   | object       | Native mouse event that completed the drag.    |
+| `requestType`     | string       | Type of request triggered by the drop.         |
+| `rows`            | Element[]    | DOM elements of the dragged rows.              |
+| `target`          | Element      | Element where the drag was initiated.          |
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -6935,14 +6930,14 @@ The [splitterResizeStart](https://ej2.syncfusion.com/documentation/api/gantt#spl
 
 The event provides an argument of type `ResizeEventArgs` with the following properties:
 
-| **Property** | **Type** | **Description**                          |
-| ------------ | -------- | ---------------------------------------- |
-| `element`    | HTMLElement | The splitter element being resized.   |
-| `event`      | Event    | The original event that triggered resize. |
-| `index`      | number   | Index of the pane being resized.         |
-| `pane`       | string[] | Array of pane selectors.                |
-| `paneSize`   | number[] | Array of pane sizes in pixels.           |
-| `cancel`     | boolean  | Defines whether the event is cancelable. |
+| **Property** | **Type**    | **Description**                           |
+| ------------ | ----------- | ----------------------------------------- |
+| `element`    | HTMLElement | The splitter element being resized.       |
+| `event`      | Event       | The original event that triggered resize. |
+| `index`      | number      | Index of the pane being resized.          |
+| `pane`       | string[]    | Array of pane selectors.                  |
+| `paneSize`   | number[]    | Array of pane sizes in pixels.            |
+| `cancel`     | boolean     | Defines whether the event is cancelable.  |
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
