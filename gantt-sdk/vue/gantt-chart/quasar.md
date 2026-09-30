@@ -18,7 +18,7 @@ The `Quasar` Framework is a Vue.js-based open-source framework that empowers dev
 
 ## Prerequisites
 
-[System requirements for Vue Gantt Chart component](../system-requirements)
+[System requirements for Vue Gantt Chart component](https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/getting-started)
 
 ## Set up the Quasar project
 
@@ -62,33 +62,11 @@ In this article, the `Tailwind3` theme is applied using CSS styles, which are av
 {% highlight html tabtitle="~/src/app.vue" %}
 
 <style>
-@import "../node_modules/@syncfusion/ej2-base/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-gantt/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-grids/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-treegrid/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-layouts/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css";
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/gantt/index.css";
 </style>
 
 {% endhighlight %}
 {% endtabs %}
-
-> **Note:** When using features like editing, toolbar, filtering, or dialogs, you need to import additional component styles:
->
-> ```css
-> /* For editing, toolbar, and dialog features */
-> @import "../node_modules/@syncfusion/ej2-calendars/styles/tailwind3.css";
-> @import "../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css";
-> @import "../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css";
-> @import "../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css";
-> @import "../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css";
-> @import "../node_modules/@syncfusion/ej2-notifications/styles/tailwind3.css";
->
-> /* For rich text editor in dialog notes tab */
-> @import "../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css";
-> ```
-
-> The order of importing CSS styles should be in line with their dependency graph.
 
 ## Create sample data
 
@@ -226,12 +204,7 @@ First, import and register the Gantt Chart component and its child directives in
 </script>
 
 <style>
-@import "../node_modules/@syncfusion/ej2-base/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-gantt/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-grids/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-treegrid/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-layouts/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css";
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/gantt/index.css";
 </style>
 
 {% endhighlight %}
@@ -260,6 +233,6 @@ The chart displays two parent tasks ("Project initiation" and "Project estimatio
 
 ## Next Steps
 
-- **[Key Elements](./key-elements)** - Learn about UI components and interactions
-- **[Feature Modules](./module)** - Enable advanced features with module injection
-- **[Overview](./overview)** - Explore all available features
+- **[Key Elements](https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/key-elements)** - Learn about UI components and interactions
+- **[Feature Modules](https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/module)** - Enable advanced features with module injection
+- **[Overview](https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/overview)** - Explore all available features

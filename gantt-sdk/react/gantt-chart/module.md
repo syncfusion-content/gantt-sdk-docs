@@ -112,7 +112,7 @@ This ensures your production bundle includes only the Gantt features your applic
 
 ## See also
 
-- [Event Markers](./event-markers)
-- [Virtual Scrolling](./scrolling/virtual-scrolling)
-- [Editing Tasks](./managing-tasks/editing-tasks)
-- [Overview](./overview)
+- [Event Markers](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/event-markers)
+- [Virtual Scrolling](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/scrolling/virtual-scrolling)
+- [Editing Tasks](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/managing-tasks/editing-tasks)
+- [Overview](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/overview)

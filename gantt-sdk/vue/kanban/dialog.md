@@ -14,27 +14,27 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 The Kanban provides built-in support to add, edit and delete a card using dialog module. User can edit a card using the following ways.
 
-* Built-in dialog module
-* Custom Fields
-* Dialog template
+- Built-in dialog module
+- Custom Fields
+- Dialog template
 
 ## Default Dialog
 
 When double-click on the cards, the dialog is opened with below fields to edit a card. This dialog contains `Delete`, `Save` and `Cancel` buttons.
 
-* To edit a card, modify the card details and click the `Save` button.
-* To delete a card, click `Delete` button.
-* Click on the `Cancel` button to cancel the editing action.
+- To edit a card, modify the card details and click the `Save` button.
+- To delete a card, click `Delete` button.
+- Click on the `Cancel` button to cancel the editing action.
 
 The dialog displays with the following fields which mapped to dialog fields by default.
 
-Key | Type | Text
------|-----|----
-cardSettings.headerField | Input | ID
-keyField | DropDown | -
-cardSettings.contentField | TextArea | -
-cardSettings.priority(If applicable) | Numeric | -
-swimlaneSettings.keyField(If applicable) | DropDown | -
+| Key                                      | Type     | Text |
+| ---------------------------------------- | -------- | ---- |
+| cardSettings.headerField                 | Input    | ID   |
+| keyField                                 | DropDown | -    |
+| cardSettings.contentField                | TextArea | -    |
+| cardSettings.priority(If applicable)     | Numeric  | -    |
+| swimlaneSettings.keyField(If applicable) | DropDown | -    |
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -44,7 +44,7 @@ swimlaneSettings.keyField(If applicable) | DropDown | -
 {% include code-snippet/gantt-sdk/vue/kanban/getting-started-key-field-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/kanban/getting-started-key-field-cs1" %}
 
 ## Custom Fields
@@ -53,12 +53,12 @@ You can change the default fields of dialog using `fields` property inside the `
 
 The following types are available in dialog fields.
 
-* String
-* Numeric
-* TextArea
-* DropDown
-* TextBox
-* Input
+- String
+- Numeric
+- TextArea
+- DropDown
+- TextBox
+- Input
 
 > If `type` is not defined in the fields, then it renders as the HTML input element in dialog.
 
@@ -70,7 +70,7 @@ The following types are available in dialog fields.
 {% include code-snippet/gantt-sdk/vue/kanban/custom-dialog-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/kanban/custom-dialog-cs1" %}
 
 ### Custom Fields label
@@ -85,7 +85,7 @@ By default, the fields `key` mapping value is considered as a `label` and you ca
 {% include code-snippet/gantt-sdk/vue/kanban/label-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/kanban/label-cs1" %}
 
 ### Fields Validation
@@ -100,7 +100,7 @@ The dialog fields can be validated while click on the `Save` button. This can be
 {% include code-snippet/gantt-sdk/vue/kanban/fields-validation-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/kanban/fields-validation-cs1" %}
 
 ## Dialog Template
@@ -119,7 +119,7 @@ Using the dialog template, you can render your own dialog by defining the `templ
 {% include code-snippet/gantt-sdk/vue/kanban/dialog-template-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/kanban/dialog-template-cs1" %}
 
 ## Prevent Dialog
@@ -134,12 +134,12 @@ The Kanban allows to prevent to open a dialog on card double-click by enabling `
 {% include code-snippet/gantt-sdk/vue/kanban/prevent-dialog-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/kanban/prevent-dialog-cs1" %}
 
 ## Persisting data in server
 
-The modified card data can be persisted in the database using the RESTful web services. All the CRUD operations in the Kanban are done through [`DataManager`](../data). The `DataManager` has an option to bind all the CRUD related data in server-side.
+The modified card data can be persisted in the database using the RESTful web services. All the CRUD operations in the Kanban are done through [`DataManager`](https://ej2.syncfusion.com/vue/documentation/data/vue-2-getting-started). The `DataManager` has an option to bind all the CRUD related data in server-side.
 
 > For your information, the ODataAdaptor persists data in the server as per OData protocol.
 
@@ -151,10 +151,10 @@ You can use the `UrlAdaptor` of `DataManager` when binding data source for remot
 
 You can map the CRUD operation in Kanban can be mapped to server-side controller actions using the properties `insertUrl`, `removeUrl`, `updateUrl`, and `crudUrl`.
 
-* `insertUrl` – You can perform single insertion operation on server-side.
-* `updateUrl` – You can update single data on server-side.
-* `removeUrl` – You can remove single data on server-side.
-* `crudUrl` – You can perform bulk data operation on server-side.
+- `insertUrl` – You can perform single insertion operation on server-side.
+- `updateUrl` – You can update single data on server-side.
+- `removeUrl` – You can remove single data on server-side.
+- `crudUrl` – You can perform bulk data operation on server-side.
 
 The following code example describes the above behavior.
 
@@ -194,14 +194,7 @@ const cardSettings = {
 
 </script>
 <style>
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-layouts/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-vue-kanban/styles/material.css';
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/kanban/index.css";
 </style>
 ```
 
@@ -329,14 +322,7 @@ const cardSettings = {
 
 </script>
 <style>
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-layouts/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-vue-kanban/styles/material.css';
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/kanban/index.css";
 </style>
 
 ```
