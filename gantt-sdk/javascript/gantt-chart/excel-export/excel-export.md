@@ -140,3 +140,6 @@ To export Gantt data as a Blob object for advanced processing or custom download
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/excel-export-cs12" %}
 
+## Limitations
+
+CSV export preserves the task data in a simple, portable format that is compatible with a wide range of applications. As CSV files focus on data representation rather than visual formatting, hierarchy indentation available in the Gantt view is not included in the exported file.

@@ -207,3 +207,7 @@ In the example below, the background color is customized for the **Progress** co
 {% endtabs %}
   
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/excel-export/cellFormat-cs1" %}
+
+## Limitations
+
+CSV export preserves the task data in a simple, portable format that is compatible with a wide range of applications. As CSV files focus on data representation rather than visual formatting, hierarchy indentation available in the Gantt view is not included in the exported file.
