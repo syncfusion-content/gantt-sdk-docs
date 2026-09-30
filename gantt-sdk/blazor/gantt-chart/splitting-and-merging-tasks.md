@@ -24,7 +24,7 @@ In the Blazor Gantt Chart, the [GanttSegmentFields](https://help.syncfusion.com/
 This collection must be structured so that the [ForeignKey](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSegmentFields-2.html#Syncfusion_Blazor_Gantt_GanttSegmentFields_2_ForeignKey) property of `GanttSegmentFields` and the [Id](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_Id) property of [GanttTaskFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html) form a foreign key relationship between the task collection `DataSource` and the segment collection `DataSource`.
 Additionally, the start date, end date, and duration field mappings of the segment collection can be defined using the corresponding properties in `GanttSegmentFields`.
 
-The following code snippet demonstrates how to visualize task segments in the Gantt Chart.
+The following code snippet demonstrates how to visualize task segments in the Blazor Gantt Chart.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -125,13 +125,13 @@ The following code snippet demonstrates how to visualize task segments in the Ga
 
 ## Split and merge tasks dynamically
 
-In the Gantt Chart, dynamic splitting and merging of segments can be enabled by setting the [AllowTaskbarEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_AllowTaskbarEditing) and [AllowEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_AllowEditing) properties to true in the [GanttEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html) component. Tasks or segments can be dynamically split into multiple segments, and existing segments can be merged. Merging can be performed by dragging a segment and dropping it over another segment of the same task. Additionally, split and merge actions can be performed in the Gantt Chart using the following three methods:
+In the Blazor Gantt Chart, dynamic splitting and merging of segments can be enabled by setting the [AllowTaskbarEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_AllowTaskbarEditing) and [AllowEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_AllowEditing) properties to true in the [GanttEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html) component. Tasks or segments can be dynamically split into multiple segments, and existing segments can be merged. Merging can be performed by dragging a segment and dropping it over another segment of the same task. Additionally, split and merge actions can be performed in the Blazor Gantt Chart using the following three methods:
 
 ### Through context menu
 
 To split and merge tasks using the context menu, set the [EnableContextMenu](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_EnableContextMenu) property to **true** in the `SfGantt` component. Once enabled, context menu items such as **Split Task** and **Merge Task** allow taskbars to be split and merged directly from the UI.
 
-Right-clicking on a taskbar or segment element in the Gantt Chart displays the context menu with the **Split Task** option. Selecting this option divides the taskbar or segment at the timeline cell where the right-click occurred.
+Right-clicking on a taskbar or segment element in the Blazor Gantt Chart displays the context menu with the **Split Task** option. Selecting this option divides the taskbar or segment at the timeline cell where the right-click occurred.
 
 Segmented taskbars can be merged using the **Merge Task** context menu item. Its sub-menu includes **Right** and **Left** options. Selecting **Right** merges the current segment with the one to its right, while selecting **Left** merges it with the segment to its left.
 

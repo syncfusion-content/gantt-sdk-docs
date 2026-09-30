@@ -12,13 +12,13 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # WebAssembly Performance Optimization in Blazor Gantt Chart
 
-This guide outlines performance optimization strategies for using the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart component efficiently in the Blazor WebAssembly application. The general framework Blazor WebAssembly performance guidelines can be found [here](https://learn.microsoft.com/en-us/aspnet/core/blazor/performance?view=aspnetcore-7.0).
+This guide outlines performance optimization strategies for using the Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component efficiently in the Blazor WebAssembly application. The general framework Blazor WebAssembly performance guidelines can be found [here](https://learn.microsoft.com/en-us/aspnet/core/blazor/performance?view=aspnetcore-7.0).
 
 N> Refer to the Getting Started with [Blazor Server-Side Gantt](https://blazor.syncfusion.com/documentation/getting-started/blazor-server-side-visual-studio) and [Blazor WebAssembly Gantt](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/how-to/blazor-webassembly-gantt-using-visual-studio) documentation pages for configuration specifications.
 
 ## Avoid unnecessary component renders
 
-During Blazor's diffing algorithm, every cell of the Gantt Chart component and its child components is evaluated for re-rendering. For example, using [EventCallBack](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.components.eventcallback?view=aspnetcore-6.0) in the application or Gantt Chart causes all child components to be checked once the callback completes.
+During Blazor's diffing algorithm, every cell of the Blazor Gantt Chart component and its child components is evaluated for re-rendering. For example, using [EventCallBack](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.components.eventcallback?view=aspnetcore-6.0) in the application or Blazor Gantt Chart causes all child components to be checked once the callback completes.
 
 To avoid unnecessary re-rendering, use the [PreventRender](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_PreventRender_System_Boolean_) method. This method internally overrides [ShouldRender](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.components.componentbase.shouldrender?view=aspnetcore-6.0) to control the rendering process.
 
@@ -26,7 +26,7 @@ In the following example:
 
 * The [PreventRender](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_PreventRender_System_Boolean_) method is called in the **IncrementCount** method which is a click callback.
 
-* As a result, the Gantt Chart component will be excluded from the rendering triggered by the click event and **currentCount** alone will get updated.
+* As a result, the Blazor Gantt Chart component will be excluded from the rendering triggered by the click event and **currentCount** alone will get updated.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}

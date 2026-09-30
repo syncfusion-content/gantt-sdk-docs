@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion WPF Kanban Board Contr
 platform: gantt-sdk
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 # Getting Started with WPF Kanban Board
 

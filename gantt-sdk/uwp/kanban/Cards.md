@@ -5,6 +5,7 @@ description: Learn about Cards support in Syncfusion UWP Kanban Board, card temp
 platform: gantt-sdk
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Cards in UWP Kanban Board

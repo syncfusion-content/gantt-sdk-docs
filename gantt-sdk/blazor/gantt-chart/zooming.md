@@ -233,7 +233,7 @@ Zooming actions can be triggered dynamically or through external controls using 
 
 ## Resetting zooming levels using method
 
-In Gantt chart, you can reset the zoom level to its initial state, as configured during the initial rendering, after performing zooming actions like **ZoomIn**, **ZoomOut**, and **ZoomToFit**, using [ResetZoomAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ResetZoomAsync) method.
+In Blazor Gantt Chart, you can reset the zoom level to its initial state, as configured during the initial rendering, after performing zooming actions like **ZoomIn**, **ZoomOut**, and **ZoomToFit**, using [ResetZoomAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ResetZoomAsync) method.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}

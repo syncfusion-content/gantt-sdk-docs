@@ -5,6 +5,7 @@ description: Learn about introduction of Syncfusion Essential Studio WPF Gantt C
 platform: gantt-sdk
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # About Syncfusion WPF Gantt Control

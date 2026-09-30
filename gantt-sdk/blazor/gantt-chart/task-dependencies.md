@@ -46,7 +46,7 @@ Task relationships are categorized into four types based on start and finish dat
 > - Dependencies between tasks in different parent groups are supported when the `allowParentDependency` property is enabled.
 > - The format of the dependency string depends on the data type of the [Id](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_Id) field mapped in [GanttTaskFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html):
 >   - If the `Id` field is an **integer**, the compact format (for example, `3FS`) can be used without a space between the `Id` and the dependency type.
->   - If the `Id` field is a **string** or **GUID**, the format `[Id] [PredecessorType]` is mandatory, with a single space between the `Id` and the predecessor type (for example, `TASK-001 FS`). The Gantt Chart parses the two parts based on this space, so the space is required to correctly identify the predecessor type.
+>   - If the `Id` field is a **string** or **GUID**, the format `[Id] [PredecessorType]` is mandatory, with a single space between the `Id` and the predecessor type (for example, `TASK-001 FS`). The Blazor Gantt Chart parses the two parts based on this space, so the space is required to correctly identify the predecessor type.
 
 ## Implementing task dependencies
 
@@ -57,7 +57,7 @@ To implement task dependencies in the Blazor Gantt Chart, follow these steps:
 - **Specify dependencies**: Assign values using the predecessor's Task ID followed by the dependency type (e.g., `2FS`, `6SS`, `7SF`, `3FF`).
 - **Predecessor configuration**: Use the [DependencyTypes](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_DependencyTypes) property to define relationships between tasks using supported types such as `FS`, `SS`, `SF`, and `FF` through [DependencyType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.DependencyType.html) enums.
 
-The following code snippets demonstrate how to define and configure task dependencies in the Gantt Chart component.
+The following code snippets demonstrate how to define and configure task dependencies in the Blazor Gantt Chart component.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -147,11 +147,11 @@ The following code snippets demonstrate how to define and configure task depende
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/BDLnZxCkTyWWdtxp?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-The example initially sets the `DependencyTypes` property with all task dependency types: Finish-to-Start (FS), Start-to-Start (SS), Start-to-Finish (SF), and Finish-to-Finish (FF). A dropdown allows you to dynamically change which types are active. As you select different options, the Gantt Chart immediately updates the dependencies based on the current `DependencyTypes` configuration.
+The example initially sets the `DependencyTypes` property with all task dependency types: Finish-to-Start (FS), Start-to-Start (SS), Start-to-Finish (SF), and Finish-to-Finish (FF). A dropdown allows you to dynamically change which types are active. As you select different options, the Blazor Gantt Chart immediately updates the dependencies based on the current `DependencyTypes` configuration.
 
 ## Relationship between task levels
 
-In a Gantt Chart, tasks can have hierarchical relationships which define how parent tasks, child tasks, and cross-level dependencies interact with each other. Understanding these relationships helps in organizing tasks within a project effectively and ensures that dependencies are managed efficiently. Below are details on different task level relationships with real-time examples:
+In a Blazor Gantt Chart, tasks can have hierarchical relationships which define how parent tasks, child tasks, and cross-level dependencies interact with each other. Understanding these relationships helps in organizing tasks within a project effectively and ensures that dependencies are managed efficiently. Below are details on different task level relationships with real-time examples:
 
 ### Parent-parent relationships
 
@@ -173,7 +173,7 @@ These relationships define dependencies between tasks at different hierarchical 
 
 ## Predecessor offset with duration unit
 
-Offsets in task dependencies allow for more precise scheduling by introducing lag (delay) or lead (overlap) time between tasks. The Gantt Chart supports specifying these offsets using day units.
+Offsets in task dependencies allow for more precise scheduling by introducing lag (delay) or lead (overlap) time between tasks. The Blazor Gantt Chart supports specifying these offsets using day units.
 
 ### Positive offset (lag)
 
@@ -197,7 +197,7 @@ A negative offset allows a task to start before its predecessor completes, creat
 
 ## Understanding dependency string structure
 
-Dependency strings in the Gantt Chart follow a structured format to define task relationships and scheduling offsets. Let's break down an example:
+Dependency strings in the Blazor Gantt Chart follow a structured format to define task relationships and scheduling offsets. Let's break down an example:
 
 **2FS+3d**
 
@@ -230,7 +230,7 @@ Here's a detailed explanation of each component:
 
 ## Implementing complex dependencies
 
-The Gantt Chart component allows you to configure complex task dependencies to handle intricate project workflows. The following code snippets demonstrate how to define and set up such dependencies.
+The Blazor Gantt Chart component allows you to configure complex task dependencies to handle intricate project workflows. The following code snippets demonstrate how to define and set up such dependencies.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -352,11 +352,11 @@ In this example, the "Review" task starts after the "Implementation" task finish
 
 ## Visualizing dependencies
 
-The Gantt Chart automatically renders dependency lines between related tasks. These lines visually represent the relationships and update dynamically as you modify task schedules.
+The Blazor Gantt Chart automatically renders dependency lines between related tasks. These lines visually represent the relationships and update dynamically as you modify task schedules.
 
 ## Customizing dependency appearance
 
-To customize the appearance of dependency lines in the Gantt Chart:
+To customize the appearance of dependency lines in the Blazor Gantt Chart:
 
 - Use the [ConnectorLineBackground](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ConnectorLineBackground) property to set the line color using CSS values (e.g., `#ff00ff`).
 - Use the [ConnectorLineWidth](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ConnectorLineWidth) property to define the line thickness in pixels (default is `1`).
@@ -426,11 +426,11 @@ Additionally, you can modify the colors of the dependency lines and arrows using
 </style>
 ```
 
-This customization makes the dependency lines and arrows red and thicker for better visibility in the Gantt Chart.
+This customization makes the dependency lines and arrows red and thicker for better visibility in the Blazor Gantt Chart.
 
 ## Handling circular dependencies
 
-Circular dependencies, where tasks depend on each other in a loop (e.g., Task A depends on B, B depends on C, and C depends on A), can cause logical errors. The Gantt Chart detects and prevents these, providing a warning message. To resolve, review task dependencies to identify and break the loop where necessary.
+Circular dependencies, where tasks depend on each other in a loop (e.g., Task A depends on B, B depends on C, and C depends on A), can cause logical errors. The Blazor Gantt Chart detects and prevents these, providing a warning message. To resolve, review task dependencies to identify and break the loop where necessary.
 
 ## Best practices
 
