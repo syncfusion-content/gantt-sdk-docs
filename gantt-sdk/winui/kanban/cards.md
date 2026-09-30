@@ -899,5 +899,22 @@ The following theme keys control the appearance of a selected card:
 * `SyncfusionKanbanSelectedCardBackground`
 * `SyncfusionKanbanSelectedCardBorderBrush`
 
-<SolidColorBrush x:Key="SyncfusionKanbanSelectedCardBackground" Color="#F6F6F680" />
-<SolidColorBrush x:Key="SyncfusionKanbanSelectedCardBorderBrush" Color="#005FB8" />
+{% tabs %}
+{% highlight XAML hl_lines="3, 4" %}
+
+ <Grid>
+    <Grid.Resources>
+        <SolidColorBrush x:Key="SyncfusionKanbanSelectedCardBackground" Color="#F6F6F680" />
+        <SolidColorBrush x:Key="SyncfusionKanbanSelectedCardBorderBrush" Color="#005FB8" />
+    </Grid.Resources>
+    <kanban:SfKanban x:Name="kanban"
+                     CardSelectionType="Multiple"
+                     ItemsSource="{Binding TaskDetails}">
+        <kanban:SfKanban.DataContext>
+            <local:ViewModel/>
+        </kanban:SfKanban.DataContext>
+    </kanban:SfKanban>
+</Grid>
+
+{% endhighlight %}
+{% endtabs %}
