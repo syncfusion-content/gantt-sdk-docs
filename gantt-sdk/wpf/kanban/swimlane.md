@@ -5,6 +5,7 @@ description: Learn about Swimlane support in Syncfusion WPF SfKanban using the S
 platform: gantt-sdk
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 # Swimlane in WPF SfKanban
 

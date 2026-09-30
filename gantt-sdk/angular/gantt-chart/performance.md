@@ -32,7 +32,7 @@ Virtualization techniques significantly improve application efficiency when hand
 
 By default, the Angular Gantt Chart component automatically calculates start and end dates in the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt#datasource) based on working time, holidays, weekends, and predecessors. For large datasets, these calculations can impact performance.
 
-Set the [autoCalculateDateScheduling](https://ej2.syncfusion.com/angular/documentation/api/gantt#autoCalculateDateScheduling) property to **false** to improve initial load performance. This disables parent-child validation, data validation, and predecessor validation, allowing faster rendering.
+Set the [autoCalculateDateScheduling](https://ej2.syncfusion.com/angular/documentation/api/gantt#autocalculatedatescheduling) property to **false** to improve initial load performance. This disables parent-child validation, data validation, and predecessor validation, allowing faster rendering.
 
 **Important**: When disabling `autoCalculateDateScheduling`, provide complete data including start date, end date, and duration in your data source.
 
@@ -127,7 +127,7 @@ Performance issues in applications with multiple Gantt Chart components relate t
 
 > For more information on common reasons for slowdowns in Angular apps, you can [refer](https://blog.ninja-squad.com/2018/09/27/angular-performances-part-4/ ) to the [documentation](https://www.thirdrocktechkno.com/blog/top-reasons-why-your-angular-app-is-slow/ ) link:
 
-[Angular](https://v17.angular.io/api/core/ChangeDetectionStrategy) provides two change detection strategies:
+[Angular](https://angular.dev/api/core/ChangeDetectionStrategy) provides two change detection strategies:
 
 * **Default change detection**: Uses the `CheckAlways` strategy with automatic change detection until explicitly deactivated. This can cause continuous detection for all template references.
 
@@ -146,9 +146,9 @@ Implement OnPush change detection strategy using:
 
 For additional guidance on OnPush strategy implementation:
 * [OnPush Change Detection](https://blog.angular-university.io/onpush-change-detection-how-it-works)
-* [ApplicationRef - Tick](https://v17.angular.io/api/core/ApplicationRef#tick)
-* [Tick - Description](https://v17.angular.io/api/core/testing/tick#description)
-* [DetectChange - Anchor](https://v17.angular.io/api/core/ChangeDetectorRef#!#detectChanges-anchor)
+* [ApplicationRef - Tick](https://angular.dev/api/core/ApplicationRef)
+* [Tick - Description](https://angular.dev/api/core/testing/tick)
+* [DetectChange - Anchor](https://angular.dev/api/core/ChangeDetectorRef)
 
 ## Microsoft Excel limitations for large exports
 

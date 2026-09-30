@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Getting Started with React Gantt Chart in a Next.js Application
 
-This guide shows how to integrate the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component into a Next.js application using the App Router. For detailed component concepts and features, see the [main Getting Started guide](./getting-started).
+This guide shows how to integrate the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component into a Next.js application using the App Router. For detailed component concepts and features, see the [main Getting Started guide](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/getting-started).
 
 ## Prerequisites
 
@@ -67,29 +67,10 @@ Import the basic Gantt Chart styles in `app/globals.css` (replace the existing c
 {% tabs %}
 {% highlight css tabtitle="globals.css" %}
 
-@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-gantt/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-grids/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-treegrid/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-layouts/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/gantt/index.css";
 
 {% endhighlight %}
 {% endtabs %}
-
-> **Note:** When using features like editing, toolbar, filtering, or dialogs, you need to import additional component styles:
-> ```css
-> /* For editing, toolbar, and dialog features */
-> @import '../node_modules/@syncfusion/ej2-calendars/styles/tailwind3.css';
-> @import '../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css';
-> @import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
-> @import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
-> @import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
-> @import '../node_modules/@syncfusion/ej2-notifications/styles/tailwind3.css';
-> 
-> /* For rich text editor in dialog notes tab */
-> @import '../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css';
-> ```
 
 ## Create sample data
 
@@ -203,6 +184,6 @@ The chart displays one parent task ("Project initiation") with three subtasks sh
 
 ## Next Steps
 
-- **[Key Elements](./key-elements)** - Learn about UI components and interactions
-- **[Feature Modules](./module)** - Enable advanced features with module injection
-- **[Overview](./overview)** - Explore all available features
+- **[Key Elements](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/key-elements)** - Learn about UI components and interactions
+- **[Feature Modules](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/module)** - Enable advanced features with module injection
+- **[Overview](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/overview)** - Explore all available features

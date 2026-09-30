@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 
 # Custom Adaptor for Data Binding in React Gantt Chart
 
-The `CustomAdaptor` in Syncfusion<sup style="font-size:70%">&reg;</sup> React Gantt Chart is a powerful extension mechanism that **customizes any existing adaptor** ([RemoteSaveAdaptor](./remote-save-adaptor), [WebMethodAdaptor](./web-method-adaptor), [ODataV4Adaptor](./odatav4-adaptor), [GraphQLAdaptor](./graphql-adaptor)) to meet specific application requirements. Instead of creating an adaptor from scratch, `CustomAdaptor` intercepts and customizes the HTTP request/response pipeline used by the Syncfusion React Gantt Chart.
+The `CustomAdaptor` in Syncfusion<sup style="font-size:70%">&reg;</sup> React Gantt Chart is a powerful extension mechanism that **customizes any existing adaptor** ([RemoteSaveAdaptor](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/connecting-to-adaptors/remote-save-adaptor), [WebMethodAdaptor](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/connecting-to-adaptors/web-method-adaptor), [ODataV4Adaptor](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/connecting-to-adaptors/odatav4-adaptor), [GraphQLAdaptor](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/connecting-to-adaptors/graphql-adaptor)) to meet specific application requirements. Instead of creating an adaptor from scratch, `CustomAdaptor` intercepts and customizes the HTTP request/response pipeline used by the Syncfusion React Gantt Chart.
 
 For detailed guidance, refer to the [DataManager CustomAdaptor documentation](https://ej2.syncfusion.com/react/documentation/data/adaptors/custom-adaptor), which explains the usage of custom adaptors in depth. For complete server-side setup and advanced implementation details, see the [DataManager ODataV4Adaptor documentation](https://ej2.syncfusion.com/react/documentation/data/adaptors/odatav4-adaptor), covering endpoint configuration, query handling, and recommended practices for integrating OData V4 services.
 
@@ -56,24 +56,7 @@ npm install @syncfusion/ej2-data --save
 - Include the required Syncfusion theme and component styles so the Gantt Chart and its input controls render correctly. Add these imports to **index.css** or **App.css**:
 
 ```ts
-/* Basic Gantt Chart styles */
-@import "../node_modules/@syncfusion/ej2-base/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-gantt/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-grids/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-treegrid/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-layouts/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css";
-
-/* For editing, toolbar, and dialog features */
-@import "../node_modules/@syncfusion/ej2-calendars/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-notifications/styles/tailwind3.css";
-
-/* For rich text editor in dialog notes tab */
-@import "../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css";
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/gantt/index.css";
 ```
 
 Import the **App.css** in the application entry point (**App.jsx**).
