@@ -60,7 +60,7 @@ N> By default, `DataManager` uses **ODataAdaptor** for remote data-binding.
 
 ### OData services
 
-[`OData`](https://www.odata.org/documentation/odata-version-3-0/) is a standardized protocol for creating and consuming data. You can retrieve data from OData service using the DataManager. Refer to the following code example for remote Data binding using OData service.
+[`OData`](https://www.odata.org/documentation/odata-version-3-0) is a standardized protocol for creating and consuming data. You can retrieve data from OData service using the DataManager. Refer to the following code example for remote Data binding using OData service.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
