@@ -24,9 +24,9 @@ Before implementing baseline functionality, ensure the data source includes base
 
 ## Implement baseline
 
-To enable baseline, configure the Gantt component by setting [renderBaseline](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_RenderBaseline) to `true`, mapping `baselineStartDate`, `baselineEndDate`, and optionally `baselineDuration` in `taskFields`. To customize appearance set the [baselineColor](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_BaselineColor) property or the .`e-baseline-bar` CSS class for advanced styling.
+To enable baseline, configure the Gantt component by setting [renderBaseline](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_RenderBaseline) to `true`, mapping `baselineStartDate`, `baselineEndDate`, and optionally `baselineDuration` in `taskFields`. To customize appearance set the [baselineColor](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_BaselineColor) property or the `e-baseline-bar` CSS class for advanced styling.
 
-```typescript
+```csharp
 List<GanttDataSource> data = new List<GanttDataSource>
 {
     ...
@@ -49,6 +49,7 @@ List<GanttDataSource> data = new List<GanttDataSource>
         TaskName = "Estimation approval",
         StartDate = new DateTime(2019, 4, 4),
         BaselineStartDate = new DateTime(2019, 04, 02),
+        BaselineEndDate = new DateTime(2019, 04, 02),
         Duration = 0,
         Progress = 50,
         ParentID = 5,
@@ -58,7 +59,7 @@ List<GanttDataSource> data = new List<GanttDataSource>
 ```
 
 ```cs
-// Here you can customize base line color.
+// Here you can customize baseline color.
 <ejs-gantt id='Gantt' dataSource="ViewBag.dataSource" height="450px" renderBaseline="true" baselineColor="red" projectStartDate="03/31/2019" projectEndDate="05/31/2019">
 ...
 </ejs-gantt>
@@ -110,7 +111,7 @@ The following example demonstrates how to render multiple baselines using `basel
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/baseline/baselineTemplate/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Contextmenu.cs" %}
+{% highlight c# tabtitle="BaselineTemplate.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/baseline/baselineTemplate/baselineTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
