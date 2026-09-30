@@ -6944,7 +6944,7 @@ The event provides an argument of type `ResizeEventArgs` with the following prop
 {% raw %}
 
 import { Gantt, Edit, Toolbar, Selection } from '@syncfusion/ej2-gantt';
-import { ResizeEventArgs } from '@syncfusion/ej2-layouts';
+import { ResizeEventArgs } from '@syncfusion/ej2-gantt';
 
 Gantt.Inject(Edit, Toolbar, Selection);
 

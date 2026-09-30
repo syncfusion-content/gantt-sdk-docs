@@ -6439,7 +6439,7 @@ The event provides an argument of type [ISplitterResizedEventArgs](https://ej2.s
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
 import { GanttModule, ISplitterResizedEventArgs } from '@syncfusion/ej2-angular-gantt';
-import { ResizeEventArgs } from '@syncfusion/ej2-layouts';
+import { ResizeEventArgs } from '@syncfusion/ej2-gantt';
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { GanttComponent, EditService, ToolbarService, SelectionService } from '@syncfusion/ej2-angular-gantt';
 
@@ -6581,7 +6581,7 @@ The event provides an argument of type `ResizingEventArgs` with the following pr
 import { BrowserModule } from '@angular/platform-browser';
 import { GanttModule } from '@syncfusion/ej2-angular-gantt';
 
-import { ResizeEventArgs, ResizingEventArgs } from '@syncfusion/ej2-layouts';
+import { ResizeEventArgs, ResizingEventArgs } from '@syncfusion/ej2-gantt';
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { GanttComponent, EditService, ToolbarService, SelectionService } from '@syncfusion/ej2-angular-gantt';
 
