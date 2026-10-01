@@ -41,7 +41,7 @@ The following implementation demonstrates event marker integration within a Blaz
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
 
-
+@using Syncfusion.Blazor.Gantt
 <SfGantt @ref="GanttInstance" DataSource="@TaskCollection" Height="450px" Width="100%" ProjectStartDate="@(new DateTime(2026, 3, 27))" ProjectEndDate="@(new DateTime(2026, 7, 6))" TreeColumnIndex="1" ScrollToTaskbarOnClick="true">
 	<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId" Dependency="Predecessor">
 	</GanttTaskFields>
