@@ -70,7 +70,6 @@ dotnet run
 {% highlight razor tabtitle="Auto" %}
 
 cd MyApp
-cd MyApp
 dotnet run
 
 {% endhighlight %}
