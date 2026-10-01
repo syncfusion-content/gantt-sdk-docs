@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Virtual Scrolling - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Virtual Scrolling and Performance in Angular Kanban

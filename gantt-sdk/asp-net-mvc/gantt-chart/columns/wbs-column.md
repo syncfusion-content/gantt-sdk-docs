@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: WBS Column - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # WBS Column in ASP.NET MVC Gantt Chart

@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Copy and Paste Records - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Copy and Paste Task Records in React Gantt Chart

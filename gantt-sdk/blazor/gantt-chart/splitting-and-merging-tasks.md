@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Splitting and Merging Tasks - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Task Splitting and Merging in Blazor Gantt Chart

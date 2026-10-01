@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Adding New Tasks - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Dynamically Adding New Tasks in React Gantt Chart

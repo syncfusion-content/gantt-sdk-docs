@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Templates - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Customizing UI Elements with Templates in Blazor Gantt Chart

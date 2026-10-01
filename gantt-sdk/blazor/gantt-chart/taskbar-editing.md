@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Taskbar Editing - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Taskbar Drag and Resize Editing in Blazor Gantt Chart

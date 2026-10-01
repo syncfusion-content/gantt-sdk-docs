@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Header Double Click - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Handle Header Double-Click in JavaScript Kanban

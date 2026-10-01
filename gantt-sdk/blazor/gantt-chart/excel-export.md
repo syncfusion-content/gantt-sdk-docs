@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Excel Export - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
  
 # Export Gantt Chart Data to Excel in Blazor 

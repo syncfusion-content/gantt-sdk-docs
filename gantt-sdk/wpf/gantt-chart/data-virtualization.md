@@ -5,6 +5,7 @@ description: Learn about Data Virtualization support in Syncfusion Essential Stu
 platform: gantt-sdk
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Data Virtualization in WPF Gantt
