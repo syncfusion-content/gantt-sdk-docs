@@ -276,6 +276,28 @@ The [taskSegmentStyles](https://ej2.syncfusion.com/react/documentation/api/gantt
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/pdf-export-customize-segment-cs1" %}
 
+## Export non-English characters in PDF
+
+The PDF export feature in the Gantt Chart supports exporting non-English characters (such as Arabic, Hebrew, Chinese, Japanese, and other Unicode characters) to the PDF document. To export non-English characters correctly, you need to use a TrueType font that supports those characters by setting the [ganttStyle](https://ej2.syncfusion.com/react/documentation/api/gantt/pdfExportProperties#ganttstyle) property with a custom `PdfTrueTypeFont` within the [pdfExportProperties](https://ej2.syncfusion.com/react/documentation/api/gantt/pdfExportProperties).
+
+The `PdfTrueTypeFont` class allows you to embed TrueType fonts in the PDF document, ensuring that non-ASCII characters are rendered correctly in the exported PDF. This is particularly useful when exporting Gantt charts with data in languages like Arabic, Chinese, or any other non-English language.
+
+In the following sample, the Gantt chart containing Arabic text is exported to PDF with proper character rendering using a TrueType font (Advent Pro) that supports the Arabic characters.
+
+{% tabs %}
+{% highlight js tabtitle="index.jsx" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/pdf-export-non-english-cs1/app/index.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="index.tsx" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/pdf-export-non-english-cs1/app/index.tsx %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/pdf-export-non-english-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/pdf-export-non-english-cs1" %}
+
 ## Exporting with templates
 
 ### Exporting with column template
