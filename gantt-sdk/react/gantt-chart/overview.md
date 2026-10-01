@@ -16,7 +16,7 @@ The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-
 
 ## Quick start
 
-- [Getting Started](./getting-started) - Install and render your first Gantt Chart
+- [Getting Started](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/getting-started) - Install and render your first Gantt Chart
 - [Live Demos](https://ej2.syncfusion.com/react/demos/#/tailwind3/gantt/default) - Explore interactive examples
 - [API Reference](https://ej2.syncfusion.com/react/documentation/api/gantt) - Complete API documentation
 
@@ -24,64 +24,64 @@ The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-
 
 ## Data binding and performance
 
-- [**Data sources**](./data-binding) - Bind local arrays, JSON objects, or remote data using DataManager
-- [**Load on demand**](./data-binding) - Load parent tasks initially and render child tasks on expansion for large datasets
-- [**Virtual scrolling**](./scrolling/virtual-scrolling) - Handle thousands of tasks with optimized rendering
+- [**Data sources**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/data-binding) - Bind local arrays, JSON objects, or remote data using DataManager
+- [**Load on demand**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/data-binding#load-on-demand-implementation) - Load parent tasks initially and render child tasks on expansion for large datasets
+- [**Virtual scrolling**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/scrolling/virtual-scrolling) - Handle thousands of tasks with optimized rendering
 
 ## Task management
 
-- [**Task editing**](./managing-tasks/editing-tasks) - Edit tasks inline, through dialogs, or by dragging taskbars
-- [**Task dependencies**](./task-dependency) - Define relationships using finish-to-start, start-to-finish, start-to-start, and finish-to-finish types
-- [**Undo and redo**](./undo-redo) - Revert or reapply recent actions in the Gantt Chart
-- [**Task scheduling**](./task-scheduling) - Configure automatic or manual task scheduling modes
-- [**Splitting tasks**](./managing-tasks/splitting-and-merging-tasks) - Split tasks into multiple segments and merge them back
+- [**Task editing**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/managing-tasks/editing-tasks) - Edit tasks inline, through dialogs, or by dragging taskbars
+- [**Task dependencies**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/task-dependency) - Define relationships using finish-to-start, start-to-finish, start-to-start, and finish-to-finish types
+- [**Undo and redo**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/undo-redo) - Revert or reapply recent actions in the Gantt Chart
+- [**Task scheduling**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/scheduling-tasks) - Configure automatic or manual task scheduling modes
+- [**Splitting tasks**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/managing-tasks/splitting-and-merging-tasks) - Split tasks into multiple segments and merge them back
 
 ## Timeline and visualization
 
-- [**Customizable timeline**](./timeline) - Configure timeline tiers from minutes to decades with custom text
-- [**Zooming**](./timeline/zooming) - Zoom in and out to view tasks at different time scales
-- [**Taskbars**](./taskbar) - Customize taskbar appearance and display baselines for planned vs actual progress
-- [**Critical path**](./critical-path) - Identify task sequences that determine project completion dates
-- [**Timezone support**](./timezone) - Schedule projects across different timezones
+- [**Customizable timeline**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/timeline) - Configure timeline tiers from minutes to decades with custom text
+- [**Zooming**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/timeline/zooming) - Zoom in and out to view tasks at different time scales
+- [**Taskbars**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/taskbar) - Customize taskbar appearance and display baselines for planned vs actual progress
+- [**Critical path**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/critical-path) - Identify task sequences that determine project completion dates
+- [**Timezone support**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/timezone) - Schedule projects across different timezones
 
 ## Columns and layout
 
-- [**Columns**](./columns/columns) - Configure, customize, and add columns to display task information
-- [**Column templates**](./columns/column-template) - Use custom templates to format column content
-- [**Frozen columns**](./columns/frozen-column) - Lock columns to keep them visible during horizontal scrolling
-- [**Column reordering**](./columns/column-reorder) - Reorder columns by dragging and dropping
-- [**Column resizing**](./columns/column-resizing) - Adjust column widths interactively
+- [**Columns**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/columns/columns) - Configure, customize, and add columns to display task information
+- [**Column templates**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/columns/column-template) - Use custom templates to format column content
+- [**Frozen columns**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/columns/frozen-column) - Lock columns to keep them visible during horizontal scrolling
+- [**Column reordering**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/columns/column-reorder) - Reorder columns by dragging and dropping
+- [**Column resizing**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/columns/column-resizing) - Adjust column widths interactively
 
 ## Data operations
 
-- [**Filtering**](./filtering/filtering) - Filter tasks using menu, Excel-like, and toolbar search options
-- [**Sorting**](./sorting) - Sort tasks by one or multiple columns
-- [**Selection**](./selection/selection) - Select single or multiple rows and cells
-- [**Context menu**](./context-menu) - Access common operations through right-click menus
+- [**Filtering**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/filtering/filtering) - Filter tasks using menu, Excel-like, and toolbar search options
+- [**Sorting**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/sorting) - Sort tasks by one or multiple columns
+- [**Selection**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/selection/selection) - Select single or multiple rows and cells
+- [**Context menu**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/context-menu) - Access common operations through right-click menus
 
 ## Resources and indicators
 
-- [**Resource allocation**](./resources) - Assign and manage staff, equipment, and materials across tasks
-- [**Resource view**](./resource-view) - Display tasks grouped by assigned resources
-- [**Data markers**](./data-markers) - Display custom indicators and flags on taskbars
-- [**Event markers**](./event-markers) - Highlight important dates or milestones in the timeline
-- [**Holidays**](./holidays) - Define non-working days in project schedules
+- [**Resource allocation**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/resources) - Assign and manage staff, equipment, and materials across tasks
+- [**Resource view**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/resource-view) - Display tasks grouped by assigned resources
+- [**Data markers**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/data-markers) - Display custom indicators and flags on taskbars
+- [**Event markers**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/event-markers) - Highlight important dates or milestones in the timeline
+- [**Holidays**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/holidays) - Define non-working days in project schedules
 
 ## User interface
 
-- [**Toolbar**](./toolbar) - Add built-in or custom toolbar actions for common operations
-- [**Row customization**](./rows/rows) - Customize row appearance and height
-- [**Drag and drop**](./rows/drag-and-drop) - Reorder tasks by dragging rows
-- [**Indent and outdent**](./rows/indent-and-outdent) - Change task hierarchy levels
+- [**Toolbar**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/toolbar) - Add built-in or custom toolbar actions for common operations
+- [**Row customization**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/rows/rows) - Customize row appearance and height
+- [**Drag and drop**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/rows/drag-and-drop) - Reorder tasks by dragging rows
+- [**Indent and outdent**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/rows/indent-and-outdent) - Change task hierarchy levels
 
 ## Export
 
-- [**PDF export**](./pdf-export/pdf-export) - Export Gantt Charts to PDF with customization options
-- [**Excel export**](./excel-export/excel-export) - Export task data to Excel format
+- [**PDF export**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/pdf-export/pdf-export) - Export Gantt Charts to PDF with customization options
+- [**Excel export**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/excel-export/excel-export) - Export task data to Excel format
 
 ## Additional features
 
-- [**Immutable mode**](./immutable) - Optimize performance for frequent data updates
-- [**State persistence**](./state-persistence) - Save and restore user preferences
-- [**Accessibility**](./accessibility) - Built-in keyboard navigation and screen reader support
-- [**Globalization**](./global-local) - Localize dates, numbers, and text for different cultures
+- [**Immutable mode**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/immutable) - Optimize performance for frequent data updates
+- [**State persistence**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/state-persistence) - Save and restore user preferences
+- [**Accessibility**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/accessibility) - Built-in keyboard navigation and screen reader support
+- [**Globalization**](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/global-local) - Localize dates, numbers, and text for different cultures

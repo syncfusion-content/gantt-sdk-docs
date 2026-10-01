@@ -36,7 +36,7 @@ To bind local JSON data to the Kanban, assign a JavaScript object array to the [
 
 ## Remote data
 
-To bind remote data to kanban component, assign service data as an instance of [`DataManager`](../data) to the [`dataSource`](https://ej2.syncfusion.com/vue/documentation/api/kanban#datasource) property. To interact with remote data source, provide the endpoint **url**.
+To bind remote data to kanban component, assign service data as an instance of [`DataManager`](https://ej2.syncfusion.com/vue/documentation/data/vue-2-getting-started) to the [`dataSource`](https://ej2.syncfusion.com/vue/documentation/api/kanban#datasource) property. To interact with remote data source, provide the endpoint **url**.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -49,7 +49,7 @@ To bind remote data to kanban component, assign service data as an instance of [
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/kanban/remote-data-cs1" %}
 
-> By default, [`DataManager`](../data) uses **ODataAdaptor** for remote data-binding.
+> By default, [`DataManager`](https://ej2.syncfusion.com/vue/documentation/data/vue-2-getting-started) uses **ODataAdaptor** for remote data-binding.
 
 ### OData services
 
@@ -68,7 +68,7 @@ To bind remote data to kanban component, assign service data as an instance of [
 
 ### OData v4 services
 
-The ODataV4 is an improved version of OData protocols, and the [`DataManager`](../data) can also retrieve and consume OData v4 services. For more details on OData v4 services, refer to the [`odata documentation`](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). To bind OData v4 service, use the **ODataV4Adaptor**.
+The ODataV4 is an improved version of OData protocols, and the [`DataManager`](https://ej2.syncfusion.com/vue/documentation/data/vue-2-getting-started) can also retrieve and consume OData v4 services. For more details on OData v4 services, refer to the [`odata documentation`](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). To bind OData v4 service, use the **ODataV4Adaptor**.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -121,14 +121,7 @@ const dialogOpen = (args) => {
 
 </script>
 <style>
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-layouts/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-vue-kanban/styles/material.css';
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/kanban/index.css";
 </style>
 
 ```
@@ -193,14 +186,7 @@ const cardSettings = {
 
 </script>
 <style>
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-layouts/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-vue-kanban/styles/material.css';
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/kanban/index.css";
 </style>
 
 ```

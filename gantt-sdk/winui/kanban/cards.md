@@ -5,6 +5,7 @@ description: Learn about Cards support in Syncfusion<sup>®</sup> WinUI Kanban B
 platform: gantt-sdk
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Cards in WinUI Kanban Board
@@ -816,11 +817,11 @@ N> This property will only be applicable when [IsToolTipEnabled](https://help.sy
 
 ## Card selection
 
-The SfKanban control supports selecting a single card or multiple cards at a time and performing drag-and-drop operations on the selection. The selection mode is configured through the `CardSelectionType` property. The `CardSelectionType` property accepts the values `Single`, `Multiple` and `None`.
+The SfKanban control supports selecting a single card or multiple cards at a time and performing drag-and-drop operations on the selection. The selection mode is configured through the [CardSelectionType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardSelectionType) property. The [CardSelectionType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardSelectionType) property accepts the values [Single](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardSelectionType.html#Syncfusion_UI_Xaml_Kanban_KanbanCardSelectionType_Single), [Multiple](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardSelectionType.html#Syncfusion_UI_Xaml_Kanban_KanbanCardSelectionType_Multiple) and [None](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardSelectionType.html#Syncfusion_UI_Xaml_Kanban_KanbanCardSelectionType_None).
 
 ### Single card selection
 
-The `CardSelectionType` property is set to `Single` when only one card needs to be selected at any given time. With this mode, selecting a different card automatically clears the previous selection, keeping the focus on a single task.
+The [CardSelectionType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardSelectionType) property is set to [Single](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardSelectionType.html#Syncfusion_UI_Xaml_Kanban_KanbanCardSelectionType_Single) when only one card needs to be selected at any given time. With this mode, selecting a different card automatically clears the previous selection, keeping the focus on a single task.
 
 {% tabs %}
 {% highlight XAML hl_lines="2" %}
@@ -844,7 +845,7 @@ this.kanban.ItemsSource = new ViewModel().TaskDetails;
 
 ### Multiple card selection
 
-The `CardSelectionType` property is set to `Multiple` to enable selecting more than one card at a time. The control supports the following keyboard and mouse interactions for building a selection:
+The [CardSelectionType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardSelectionType) property is set to [Multiple](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardSelectionType.html#Syncfusion_UI_Xaml_Kanban_KanbanCardSelectionType_Multiple) to enable selecting more than one card at a time. The control supports the following keyboard and mouse interactions for building a selection:
 
 - Use <kbd>Ctrl</kbd> + <kbd>Click</kbd> to add or remove an individual card from the current selection.
 - Use <kbd>Shift</kbd> + <kbd>Click</kbd> to select a range of cards within the same column.
@@ -872,7 +873,7 @@ this.kanban.ItemsSource = new ViewModel().TaskDetails;
 
 ### Multi-card drag and drop
 
-When [CardSelectionType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.html) is set to [Multiple](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.html), the entire selection can be dragged and dropped as a single operation. This enables bulk-moving related work items between stages without losing their relative order.
+When [CardSelectionType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardSelectionType) is set to [Multiple](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardSelectionType.html#Syncfusion_UI_Xaml_Kanban_KanbanCardSelectionType_Multiple), the entire selection can be dragged and dropped as a single operation. This enables bulk-moving related work items between stages without losing their relative order.
 
 The following behaviors are supported for multi-card drag and drop:
 
@@ -883,13 +884,13 @@ The following behaviors are supported for multi-card drag and drop:
 
 ![multi-card-drag-and-drop-in-winui-kanban](images/cards/multi-card-drag-and-drop-in-winui-kanban.gif)
 
-N> Multi-card drag and drop is enabled only when `CardSelectionType` is set to `Multiple`. All selected cards are moved together in a single drag operation, and the relative order of the selected cards is preserved after the drop. If the drop target violates a `Workflows` restriction for any card in the selection, the entire drag-and-drop operation is canceled.
+N> Multi-card drag and drop is enabled only when [CardSelectionType](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardSelectionType) is set to [Multiple](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardSelectionType.html#Syncfusion_UI_Xaml_Kanban_KanbanCardSelectionType_Multiple). All selected cards are moved together in a single drag operation, and the relative order of the selected cards is preserved after the drop. If the drop target violates a [Workflows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Workflows) restriction for any card in the selection, the entire drag-and-drop operation is canceled.
 
 ### Selected card in WinUI Kanban control
 
 When a card is selected in the Kanban control, its appearance can be customized using the predefined theme keys. These theme keys allow you to modify the selected card's background and border colors to match your application's visual style.
 
-The [GetSelectedCards](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.html) method returns the collection of cards that are currently selected in the Kanban board.
+The [GetSelectedCards](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_GetSelectedCards) method returns the collection of cards that are currently selected in the Kanban board.
 
 #### Selected card theme keys
 
@@ -898,5 +899,22 @@ The following theme keys control the appearance of a selected card:
 * `SyncfusionKanbanSelectedCardBackground`
 * `SyncfusionKanbanSelectedCardBorderBrush`
 
-<SolidColorBrush x:Key="SyncfusionKanbanSelectedCardBackground" Color="#F6F6F680" />
-<SolidColorBrush x:Key="SyncfusionKanbanSelectedCardBorderBrush" Color="#005FB8" />
+{% tabs %}
+{% highlight XAML hl_lines="3, 4" %}
+
+ <Grid>
+    <Grid.Resources>
+        <SolidColorBrush x:Key="SyncfusionKanbanSelectedCardBackground" Color="#F6F6F680" />
+        <SolidColorBrush x:Key="SyncfusionKanbanSelectedCardBorderBrush" Color="#005FB8" />
+    </Grid.Resources>
+    <kanban:SfKanban x:Name="kanban"
+                     CardSelectionType="Multiple"
+                     ItemsSource="{Binding TaskDetails}">
+        <kanban:SfKanban.DataContext>
+            <local:ViewModel/>
+        </kanban:SfKanban.DataContext>
+    </kanban:SfKanban>
+</Grid>
+
+{% endhighlight %}
+{% endtabs %}
