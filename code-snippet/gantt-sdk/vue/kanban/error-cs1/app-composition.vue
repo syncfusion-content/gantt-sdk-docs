@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-   <ejs-kanban id="kanban" ref="KanbanObj" keyField="Status" :dataSource="kanbanData"
-    :cardSettings="cardSettings" :actionFailure='actionFailure'>
+    <ejs-kanban id="kanban" ref="KanbanObj" keyField="Status" :dataSource="kanbanData" :cardSettings="cardSettings"
+      :actionFailure='actionFailure'>
       <e-columns>
         <e-column headerText="To Do" keyField="Open"></e-column>
         <e-column headerText="In Progress" keyField="InProgress"></e-column>
@@ -15,9 +15,9 @@
 
 <script setup>
 
-import { KanbanComponent as EjsKanban, ColumnDirective as EColumn, ColumnsDirective as EColumns} from '@syncfusion/ej2-vue-kanban';
+import { KanbanComponent as EjsKanban, ColumnDirective as EColumn, ColumnsDirective as EColumns } from '@syncfusion/ej2-vue-kanban';
 import { DataManager, ODataAdaptor } from "@syncfusion/ej2-data";
-import {ref} from 'vue';
+import { ref } from 'vue';
 
 const kanbanData = new DataManager({
   url: 'http://some.com/invalidUrl',
@@ -28,7 +28,7 @@ const cardSettings = {
   headerField: "Id"
 };
 const KanbanObj = ref(null);
-const actionFailure = function() {
+const actionFailure = function () {
   var span = document.createElement('span');
   KanbanObj.value.ej2Instances.element.parentNode.insertBefore(span, KanbanObj.value.ej2Instances.element);
   span.style.color = '#FF0000'
@@ -38,12 +38,5 @@ const actionFailure = function() {
 </script>
 
 <style>
-@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-layouts/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-vue-kanban/styles/tailwind3.css';
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/kanban/index.css";
 </style>
