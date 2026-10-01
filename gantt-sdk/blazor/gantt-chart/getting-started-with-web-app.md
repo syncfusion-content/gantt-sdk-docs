@@ -64,11 +64,13 @@ dotnet run
 {% highlight razor tabtitle="WebAssembly" %}
 
 cd MyApp
+cd MyApp
 dotnet run
 
 {% endhighlight %}
 {% highlight razor tabtitle="Auto" %}
 
+cd MyApp
 cd MyApp
 dotnet run
 
