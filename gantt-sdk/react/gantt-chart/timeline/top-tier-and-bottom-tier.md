@@ -93,6 +93,26 @@ The following example shows how to use the `formatter` function with all four pa
         
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/formattimeline-cs1" %}
 
+## Show week number in timeline cell
+
+The Gantt Chart allows week numbers to be displayed in timeline cells using the [formatter](https://ej2.syncfusion.com/react/documentation/api/gantt/timelineTierSettings#formatter) property of the [timelineSettings.topTier](https://ej2.syncfusion.com/react/documentation/api/gantt/timelinesettingsmodel#toptier) configuration. The formatter function customizes the default timeline header text and displays values such as `Week 13`.
+
+The following example demonstrates how to display week numbers in the top-tier timeline cells while displaying individual days in the bottom-tier timeline.
+
+{% tabs %}
+{% highlight js tabtitle="index.jsx" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/timeline-cs5/app/index.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="index.tsx" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/timeline-cs5/app/index.tsx %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/timeline-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/timeline-cs5" %}
+
 ## Timeline cell width
 
 In the React Gantt Chart component, the width of timeline cells can be configured using the [timelineSettings.timelineUnitSize](https://ej2.syncfusion.com/react/documentation/api/gantt/timelineSettings#timelineunitsize) property within `timelineSettings`. This value directly sets the width of the bottom tier cells.
