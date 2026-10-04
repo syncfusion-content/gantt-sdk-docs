@@ -43,11 +43,11 @@ public class TaskData
 
 ### Constraint type mapping
 
-Map the task model property that contains the constraint type through the [ConstraintType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html) property of [GanttTaskFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html). Values must correspond to the [TaskConstraintType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.html) enumeration and identify the specific scheduling rule for the task, such as `AsSoonAsPossible`, `AsLateAsPossible`, `MustStartOn`, `MustFinishOn`, `StartNoEarlierThan`, `StartNoLaterThan`, `FinishNoEarlierThan`, or `FinishNoLaterThan`.
+Map the task model property that contains the constraint type through the [ConstraintType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_ConstraintType) property of [GanttTaskFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html). Values must correspond to the [TaskConstraintType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.TaskConstraintType.html) enumeration and identify the specific scheduling rule for the task, such as `AsSoonAsPossible`, `AsLateAsPossible`, `MustStartOn`, `MustFinishOn`, `StartNoEarlierThan`, `StartNoLaterThan`, `FinishNoEarlierThan`, or `FinishNoLaterThan`.
 
 ### Constraint date mapping
 
-Map the task model property that contains the constraint date through the [ConstraintDate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html) property of [GanttTaskFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html). This mapping must point to a nullable `DateTime` field in the task model that stores the reference date used by a date-based constraint. `AsSoonAsPossible` and `AsLateAsPossible` do not require a `ConstraintDate` field. Keep the field available for date-aware constraints and leave it empty for no-date constraints.
+Map the task model property that contains the constraint date through the [ConstraintDate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_ConstraintDate) property of [GanttTaskFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html). This mapping must point to a nullable `DateTime` field in the task model that stores the reference date used by a date-based constraint. `AsSoonAsPossible` and `AsLateAsPossible` do not require a `ConstraintDate` field. Keep the field available for date-aware constraints and leave it empty for no-date constraints.
 
 The task model should keep `ConstraintType` so the scheduling engine can validate the selected constraint rule and the related date consistently during dependency propagation, dialog editing, taskbar updates, and programmatic changes.
 
@@ -104,7 +104,7 @@ The following example maps task identity, scheduling, dependency, and constraint
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/LDLRstNsTJJXoVYq?appbar=true&editor=true&result=true&errorlist=true&theme=fluent2" %}
 
 ## Supported constraint types
 
@@ -168,7 +168,7 @@ Taskbar drag and resize operations calculate the proposed dates before constrain
 
 ## Handle constraint events
 
-The [GanttEvents](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html) component exposes [OnTaskConstraint](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html) for custom constraint handling. The [GanttTaskConstraintEventArgs](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.html) argument contains the affected task and the [IsRespectConstraint](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.html) setting. This setting determines whether a violated constraint must be respected without displaying the Scheduling Conflict dialog. By default, `IsRespectConstraint` is set to `false`, which allows the Scheduling Conflict dialog to be displayed when a constraint violation occurs and the schedule can be adjusted.
+The [GanttEvents](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html) component exposes [OnTaskConstraint](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_OnTaskConstraint) for custom constraint handling. The [GanttTaskConstraintEventArgs](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskConstraintEventArgs-1.html) argument contains the affected task and the [IsRespectConstraint](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskConstraintEventArgs-1.html#Syncfusion_Blazor_Gantt_GanttTaskConstraintEventArgs_1_IsRespectConstraint) setting. This setting determines whether a violated constraint must be respected without displaying the Scheduling Conflict dialog. By default, `IsRespectConstraint` is set to `false`, which allows the Scheduling Conflict dialog to be displayed when a constraint violation occurs and the schedule can be adjusted.
 
 Set `IsRespectConstraint` to `true` to respect the constraint, suppress the dialog, and revert the scheduling action to the original valid state. Set it to `false` to display the Scheduling Conflict dialog when the operation can be resolved by cancelling the date change, removing the violated constraint, or applying an allowed schedule adjustment.
 
