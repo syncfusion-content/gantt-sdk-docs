@@ -369,7 +369,7 @@ The following example demonstrates how to export Gantt Chart data to an Excel me
     {
         if (args.Item.Id == "ExcelStream" && Gantt != null)
         {
-            MemoryStream stream = await Gantt.ExportToExcelStreamAsync(exportProperties);
+            MemoryStream stream = await Gantt.ExportToExcelStreamAsync();
         }
     }
     public class TaskData
@@ -400,7 +400,7 @@ The following example demonstrates how to export Gantt Chart data to an Excel me
 }
 {% endhighlight %} {% endtabs %}
 
-{% previewsample "" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/LZVxstNWIZNDIUGj?appbar=true&editor=true&result=true&errorlist=true&theme=fluent2" %}
 
 ### Export CSV data as MemoryStream
 
@@ -444,7 +444,7 @@ The following example demonstrates how to export Gantt Chart data to a CSV memor
     {
         if (args.Item.Id == "CsvStream" && Gantt != null)
         {
-            MemoryStream stream = await Gantt.ExportToCsvStreamAsync(exportProperties);
+            MemoryStream stream = await Gantt.ExportToCsvStreamAsync();
         }
     }
 
@@ -477,7 +477,7 @@ The following example demonstrates how to export Gantt Chart data to a CSV memor
 }
 
 {% endhighlight %} {% endtabs %}
-{% previewsample "" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/rZrxiDZiyXNRRyvB?appbar=true&editor=true&result=true&errorlist=true&theme=fluent2" %}
 ## Customize the excel export
 
 You can customize the Excel or CSV export functionality in the Blazor Gantt Chart component using the [ExcelExportProperties](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ExportToExcelAsync_Syncfusion_Blazor_Grids_ExcelExportProperties_) configuration object.
