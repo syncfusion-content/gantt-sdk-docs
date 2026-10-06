@@ -7,7 +7,8 @@ canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/schedu
 platform: gantt-sdk
 control: Scheduling Tasks - Gantt Chart
 documentation: ug
-domainurl: https://help.syncfusion.com/gantt-sdk/overview
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK/overview
 ---
 
 # Task Scheduling with Duration Units in ASP.NET Core Gantt Chart

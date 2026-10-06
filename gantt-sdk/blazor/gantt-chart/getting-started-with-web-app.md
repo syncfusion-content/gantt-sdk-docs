@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Getting Started - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Getting Started with Blazor Gantt Chart in Blazor Web App
@@ -64,12 +65,12 @@ dotnet run
 {% highlight razor tabtitle="WebAssembly" %}
 
 cd MyApp
+cd MyApp
 dotnet run
 
 {% endhighlight %}
 {% highlight razor tabtitle="Auto" %}
 
-cd MyApp
 cd MyApp
 dotnet run
 

@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Dynamically Change Columns - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Modify Columns Programmatically in TypeScript Kanban

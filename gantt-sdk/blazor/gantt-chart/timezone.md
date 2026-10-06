@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Timezone - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Timezone with IANA Support in Blazor Gantt Chart

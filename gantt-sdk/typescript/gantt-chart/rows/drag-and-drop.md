@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Row Drag Drop - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Enabling Drag and Drop for Rows in TypeScript Gantt Chart

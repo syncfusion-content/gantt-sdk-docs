@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Editing Tasks - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Task Editing with Multiple Interaction Modes in React Gantt Chart

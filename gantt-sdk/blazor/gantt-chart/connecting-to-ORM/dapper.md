@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Dapper ORM - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Connecting to SQL Server Using Dapper in Blazor Gantt Chart

@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Resource Multi Taskbar - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Multi Taskbar with Resource Row Visualization in React Gantt Chart

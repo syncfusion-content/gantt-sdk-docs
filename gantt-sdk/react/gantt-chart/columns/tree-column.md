@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Tree Column - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Configuring the Hierarchical Tree Column in React Gantt Chart
