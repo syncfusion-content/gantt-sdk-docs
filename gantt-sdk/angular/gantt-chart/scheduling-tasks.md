@@ -223,7 +223,7 @@ The following example enables unscheduled tasks:
 
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/scheduling-tasks/unscheduledtasks-cs1" %}
 
-I> When child tasks contain only **Duration** values without **StartDate** and **EndDate**, the child tasks are rendered as unscheduled tasks. However, parent tasks are automatically assigned calculated schedule dates based on the Gantt scheduling engine and **ProjectStartDate**. Therefore, parent tasks may display **StartDate** and **EndDate** values even when all child tasks are unscheduled.
+I> When child tasks contain only **Duration** values without **StartDate** and **EndDate**, they are rendered as unscheduled tasks. However, parent tasks may still display calculated **StartDate** and **EndDate** values based on the Gantt scheduling engine. If **ProjectStartDate** is specified, it is used as the scheduling reference date; otherwise, the Gantt component derives the required timeline from the available task data. The **viewStartDate** and **viewEndDate** properties only control the visible timeline range and do not affect parent task date calculations. As a result, parent tasks can display calculated schedule dates even when all child tasks are unscheduled, regardless of whether **ProjectStartDate**, timeline view dates, or both are defined.
 
 ### Convert to milestone using method
 
