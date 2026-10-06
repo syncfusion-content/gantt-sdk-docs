@@ -410,7 +410,7 @@ The following image shows the Dependency Relationship:
 
 ![gantt-control-dependency-relationship](Dependency-Relationship_images/gantt-control-dependency-relationship.jpeg)
 
-#### Samples Link
+### Samples Link
 
 To view samples: 
 
@@ -430,7 +430,7 @@ You can add/remove/update the predecessors and resources of tasks at run time. I
 
 You can edit the predecessor information from the [GanttGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttGrid.html). For resource, you can edit in the underlying source, Gantt will listen to the change in the underlying source and reflect it in both [GanttGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttGrid.html) and [GanttChart](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttChart.html).
 
-## Predecessor Validation
+### Predecessor Validation
 
 There are two predecessor validation modes in Gantt Control. 
 
