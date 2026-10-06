@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Predecessor Validation - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Predecessor Validation for Task Dependencies in Blazor Gantt Chart

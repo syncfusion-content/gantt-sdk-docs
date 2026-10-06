@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Top Tier and Bottom Tier - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Customizing Timeline Top and Bottom Tiers in Vue Gantt Chart

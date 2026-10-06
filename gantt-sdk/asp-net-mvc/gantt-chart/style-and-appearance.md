@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Style and Appearance - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Styling and Themes in ASP.NET MVC Gantt Chart

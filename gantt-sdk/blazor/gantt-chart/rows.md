@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Rows - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Row Configuration and Customization in Blazor Gantt Chart

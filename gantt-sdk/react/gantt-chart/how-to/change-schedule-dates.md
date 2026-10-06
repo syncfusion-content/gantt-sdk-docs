@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Schedule Dates - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Programmatically Updating Project Schedule Dates in React Gantt Chart

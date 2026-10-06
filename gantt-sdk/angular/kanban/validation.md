@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: WIP Validation - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # WIP Validation and Work-in-Progress Limits in Angular Kanban

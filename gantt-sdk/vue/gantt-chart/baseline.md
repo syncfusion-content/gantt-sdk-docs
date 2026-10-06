@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Baseline - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Baseline for Schedule Comparison in Vue Gantt Chart
