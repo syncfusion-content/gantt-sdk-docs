@@ -900,7 +900,7 @@ The following theme keys control the appearance of a selected card:
 * `SyncfusionKanbanSelectedCardBorderBrush`
 
 {% tabs %}
-{% highlight XAML hl_lines="3, 4" %}
+{% highlight XAML hl_lines="3,4" %}
 
  <Grid>
     <Grid.Resources>
