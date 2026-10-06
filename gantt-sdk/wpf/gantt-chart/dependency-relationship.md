@@ -408,7 +408,7 @@ public class ViewModel
 
 The following image shows the Dependency Relationship:
 
-![gantt-control-dependency-relationship](Dependency-Relationship_images/gantt-control-dependency-relationship.png)
+![gantt-control-dependency-relationship](Dependency-Relationship_images/gantt-control-dependency-relationship.jpeg)
 
 #### Samples Link
 
@@ -461,11 +461,11 @@ NA</td></tr>
 
 The following image shows the Predecessor in Manual Mode:
 
-![gantt-control-predecessors-in-manual-mode](Dependency-Relationship_images/gantt-control-predecessors-in-manual-mode.png)
+![gantt-control-predecessors-in-manual-mode](Dependency-Relationship_images/gantt-control-predecessors-in-manual-mode.jpeg)
 
 The following image shows the Predecessor in Auto Mode:
 
-![gantt-control-predecessors-in-auto-mode](Dependency-Relationship_images/gantt-control-predecessors-in-auto-mode.png)
+![gantt-control-predecessors-in-auto-mode](Dependency-Relationship_images/gantt-control-predecessors-in-auto-mode.jpeg)
 
 #### Editing Predecessors
 
