@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Column Resizing - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Resizing Columns Dynamically in React Gantt Chart

@@ -7,7 +7,8 @@ canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/excel-
 platform: gantt-sdk
 control: Excel Export - Gantt Chart
 documentation: ug
-domainurl: https://help.syncfusion.com/gantt-sdk/overview
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK/overview
 ---
 
 # Exporting Data to Excel in ASP.NET Core Gantt Chart

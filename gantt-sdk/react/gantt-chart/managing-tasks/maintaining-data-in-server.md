@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Maintaining Data in Server - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Persisting Task Changes on the Server in React Gantt Chart

@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Column Reordering - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Column Reordering with Drag and Drop Support in Vue Gantt Chart

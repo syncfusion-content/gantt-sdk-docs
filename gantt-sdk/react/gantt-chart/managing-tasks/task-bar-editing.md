@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Taskbar Editing - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Editing Tasks by Dragging and Resizing Taskbars in React Gantt Chart

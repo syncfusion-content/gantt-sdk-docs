@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Multi-Page PDF Export - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Multi-Page PDF Export with Scaling Modes in Blazor Gantt Chart

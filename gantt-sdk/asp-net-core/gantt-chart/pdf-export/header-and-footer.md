@@ -7,7 +7,8 @@ canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/pdf-ex
 platform: gantt-sdk
 control: PDF Export - Gantt Chart
 documentation: ug
-domainurl: https://help.syncfusion.com/gantt-sdk/overview
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK/overview
 ---
 
 # Adding Headers and Footers to PDF Exports in ASP.NET Core Gantt Chart
