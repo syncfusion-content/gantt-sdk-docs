@@ -88,7 +88,7 @@ Routed Event </td></tr>
 
 The properties of the GanttScheduleCell class are as follows:
 
-#### Properties
+### Properties
 
 <table>
 <tr>
