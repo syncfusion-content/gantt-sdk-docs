@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Selection - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Configuring Row and Cell Selection in React Gantt Chart

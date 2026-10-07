@@ -232,7 +232,7 @@ The following image shows Built-in Zooming in Gantt:
 
 ![gantt-control-built-in-zooming](Zooming_images/gantt-control-built-in-zooming.png)
 
-#### Samples Link
+### Samples Link
 
 To view samples:
 
@@ -550,7 +550,7 @@ The following image shows Custom Zooming in Gantt:
 
 ![gantt-control-custom-zooming](Zooming_images/gantt-control-custom-zooming.png)
 
-#### Samples Link
+### Samples Link
 
 To view samples:
 
@@ -600,7 +600,7 @@ double</td></tr>
 </table>
 
 
-#### Events
+### Events
 
 <table>
 <tr>

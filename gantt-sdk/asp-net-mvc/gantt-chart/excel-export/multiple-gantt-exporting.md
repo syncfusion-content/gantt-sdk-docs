@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Excel Export - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Multiple Gantt Exporting in ASP.NET MVC Gantt Chart
