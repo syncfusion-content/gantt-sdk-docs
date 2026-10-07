@@ -934,5 +934,8 @@ To assign a custom name to the exported Excel or CSV file in the Blazor Gantt Ch
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/LZrRNGrthhTKvOpW?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
+## Limitations
+
+CSV export preserves task data in a simple and widely compatible format. Since CSV files are designed for data representation rather than visual layout, Gantt Chart specific hierarchy indentation and structural formatting are not retained in the exported file.
 
 N> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=fluent2) to know how to render and configure the Gantt.
