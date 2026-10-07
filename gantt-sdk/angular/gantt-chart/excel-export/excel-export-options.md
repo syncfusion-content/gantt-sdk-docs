@@ -211,4 +211,4 @@ In the example below, the background color is customized for the **Progress** co
 
 ## Limitations
 
-CSV export preserves the task data in a simple, portable format that is compatible with a wide range of applications. As CSV files focus on data representation rather than visual formatting, hierarchy indentation available in the Gantt view is not included in the exported file.
+CSV export preserves task data in a simple and widely compatible format. Since CSV files are designed for data representation rather than visual layout, Gantt Chart specific hierarchy indentation and structural formatting are not retained in the exported file.
