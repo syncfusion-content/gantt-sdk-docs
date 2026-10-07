@@ -104,7 +104,7 @@ The following example maps task identity, scheduling, dependency, and constraint
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://blazorplayground.syncfusion.com/embed/LDLRstNsTJJXoVYq?appbar=true&editor=true&result=true&errorlist=true&theme=fluent2" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/LDLRstNsTJJXoVYq?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 ## Supported constraint types
 
