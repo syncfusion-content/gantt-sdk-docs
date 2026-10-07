@@ -3,11 +3,12 @@ layout: post
 title: Timeline Tiers in TypeScript Gantt Chart | Syncfusion
 description: Configure top and bottom tiers in Syncfusion TypeScript Gantt Chart timeline with custom units, formats, and formatting for detailed scheduling views.
 keywords: TypeScript gantt timeline tiers, top tier, bottom tier, tier format, timeline format, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/timeline/top-tier-and-bottom-tier
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/timeline/top-tier-and-bottom-tier
 platform: gantt-sdk
 control: Timeline Tiers - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Customizing Timeline Top and Bottom Tiers in TypeScript Gantt Chart
@@ -83,6 +84,23 @@ The following example shows how to use the `formatter` function with all four pa
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/timeline-cs10" %}
+
+## Show week number in timeline cell
+
+The Gantt Chart allows week numbers to be displayed in timeline cells using the [formatter](https://ej2.syncfusion.com/documentation/api/gantt/timelineTierSettings#formatter) property of the [timelineSettings.topTier](https://ej2.syncfusion.com/documentation/api/gantt/timelinesettingsmodel#toptier) configuration. The formatter function customizes the default timeline header text and displays values such as `Week 13`.
+
+The following example demonstrates how to display week numbers in the top-tier timeline cells while displaying individual days in the bottom-tier timeline.
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt-sdk/typescript/gantt-chart/timeline-cs16/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt-sdk/typescript/gantt-chart/timeline-cs16/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/timeline-cs16" %}
 
 ## Timeline cell width
 

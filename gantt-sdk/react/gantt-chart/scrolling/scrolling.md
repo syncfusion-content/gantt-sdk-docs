@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Scrolling - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Navigating Large Project Data with Scrolling in React Gantt Chart

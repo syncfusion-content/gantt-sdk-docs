@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Getting Started - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Getting Started with TypeScript Gantt Chart
@@ -92,7 +93,7 @@ After installing the Tailwind 3 theme, update the `~/src/styles/styles.css` file
 
 > You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme) section to know more about built-in themes (material, bootstrap, fabric, etc.) and CSS reference for individual controls. To use a different theme, replace the theme name in the import statement with the desired theme name (e.g., `material.css`, `bootstrap5.css`).
 
-The imported CSS is added to the global stylesheet and styles are automatically applied to all Syncfusion components during application runtime. No additional configuration is required in the TypeScript (`.ts`) file.
+The imported CSS is added to the global stylesheet and styles are automatically applied to all Syncfusion<sup style="font-size:70%">&reg;</sup> components during application runtime. No additional configuration is required in the TypeScript (`.ts`) file.
 
 ## Create sample task data
 

@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Column Reordering - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Reorder Columns by Drag and Drop in Blazor Gantt Chart

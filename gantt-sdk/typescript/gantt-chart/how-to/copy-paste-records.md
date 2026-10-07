@@ -3,11 +3,12 @@ layout: post
 title: Copy and Paste Records in TypeScript Gantt Chart | Syncfusion
 description: Learn to copy and paste task records in Syncfusion TypeScript Gantt Chart using context menus and programmatic methods for efficient task duplication.
 keywords: TypeScript gantt copy paste, duplicate records, task duplication, context menu, copy tasks, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/how-to/copy-paste-records
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/how-to/copy-paste-records
 platform: gantt-sdk
 control: Copy and Paste - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Copy and Paste Operations for Records in TypeScript Gantt Chart

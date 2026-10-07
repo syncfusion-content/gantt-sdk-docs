@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Row Drag and Drop - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Reordering Tasks with Row Drag and Drop in React Gantt Chart
@@ -412,6 +413,8 @@ In the example, a [click](https://ej2.syncfusion.com/react/documentation/api/but
 {% endtabs %} 
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/rows-cs9" %}
+
+> **Note:** Dependency links are not automatically updated when rows are reordered. Since task IDs remain unchanged, review the predecessor relationships after a bulk reorder to ensure they are still valid.
 
 ## Customize the drag and drop action
 

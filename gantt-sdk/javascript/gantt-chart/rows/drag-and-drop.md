@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Row Drag Drop - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Enabling Drag and Drop for Rows in JavaScript Gantt Chart
@@ -122,6 +123,8 @@ In the example, a [click](https://ej2.syncfusion.com/javascript/documentation/ap
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/dynamicDrag-cs1" %}
+
+> **Note:** Dependency links are not automatically updated when rows are reordered. Since task IDs remain unchanged, review the predecessor relationships after a bulk reorder to ensure they are still valid.
 
 ## Customize the drag and drop action
 

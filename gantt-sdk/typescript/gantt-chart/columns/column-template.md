@@ -3,11 +3,12 @@ layout: post
 title: Column Template in TypeScript Gantt Chart | Syncfusion
 description: Learn how to use column templates in Syncfusion TypeScript Gantt Chart to render images, buttons, and custom content within cells.
 keywords: TypeScript gantt column template, gantt column templates, custom column content, cell template, template columns, gantt customization, syncfusion gantt chart
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/columns/column-template
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/columns/column-template
 platform: gantt-sdk
 control: Column Template - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Column Templates with Custom Cell Content in TypeScript Gantt Chart

@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Virtual Scrolling - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # High-Performance Rendering with Virtual Scrolling in React Gantt Chart

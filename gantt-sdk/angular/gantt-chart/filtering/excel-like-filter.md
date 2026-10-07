@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Excel-Like Filter - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Using Excel-Like Filtering Interface in Angular Gantt Chart

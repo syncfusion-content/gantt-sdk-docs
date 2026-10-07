@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Row Drag and Drop - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Enabling Drag and Drop for Rows in Angular Gantt Chart
@@ -378,6 +379,8 @@ In the example, a [click](https://ej2.syncfusion.com/angular/documentation/api/b
 {% endtabs %}
   
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/rows/drag-drop-cs2" %}
+
+> **Note:** Dependency links are not automatically updated when rows are reordered. Since task IDs remain unchanged, review the predecessor relationships after a bulk reorder to ensure they are still valid.
 
 ## Customize the drag and drop action
 

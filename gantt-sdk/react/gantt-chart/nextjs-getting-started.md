@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Next.js Getting Started - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Getting Started with React Gantt Chart in a Next.js Application

@@ -3,11 +3,12 @@ layout: post
 title: Timeline in TypeScript Gantt Chart | Syncfusion
 description: Configure timelines in Syncfusion TypeScript Gantt Chart with view modes, zooming, tier customization, and weekend highlighting for projects.
 keywords: TypeScript gantt timeline, timeline view, timeline modes, timeline tiers, zoom timeline, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/timeline/timeline
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/timeline/timeline
 platform: gantt-sdk
 control: Timeline - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Configuring Timeline Settings in TypeScript Gantt Chart

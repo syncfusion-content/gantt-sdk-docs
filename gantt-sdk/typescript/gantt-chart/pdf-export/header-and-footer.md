@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: PDF Headers and Footers - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Adding Headers and Footers to PDF Exports in TypeScript Gantt Chart
@@ -37,7 +38,7 @@ let exportProperties: PdfExportProperties = {
 
 ## Draw a line in header and footer
 
-Customize lines in headers or footers using the [header](https://ej2.syncfusion.com/documentation/api/gantt/pdfHeader) or [footer](https://ej2.syncfusion.com/documentation/api/gantt/pdfFooter) properties in [PdfExportProperties](https://ej2.syncfusion.com/documentation/api/gantt/pdfExportProperties). Set `type` to **Line**, define `points` for start/end coordinates, `pageNumberType` for position, and `style` for color, width, or dash style.
+Customize lines in headers or footers using the [header](https://ej2.syncfusion.com/documentation/api/gantt/pdfHeader) or [footer](https://ej2.syncfusion.com/documentation/api/gantt/pdfFooter) properties in [PdfExportProperties](https://ej2.syncfusion.com/documentation/api/gantt/pdfExportProperties). Set `type` to **Line**, define `points` for start/end coordinates, and `style` for color, width, or dash style.
 
 ```ts
 let exportProperties: PdfExportProperties = {

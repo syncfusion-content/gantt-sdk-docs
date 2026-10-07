@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Responsive Mode - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Responsive Layout and Adaptive Design in Blazor Kanban

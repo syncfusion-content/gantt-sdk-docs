@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Data Binding - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Data Binding from Local and Remote Sources in JavaScript Gantt Chart

@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Dimensions - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Dimensions, Height, and Width Configuration in JavaScript Kanban

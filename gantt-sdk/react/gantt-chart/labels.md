@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Task Labels - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Task Label Positions and Template Support in React Gantt Chart

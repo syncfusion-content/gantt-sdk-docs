@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Clipboard - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Clipboard Copy and Paste Operations in Blazor Gantt Chart

@@ -1,4 +1,4 @@
-import { Gantt, Edit, Selection, Toolbar, actionCompleteArgs, ITaskbarEditedEventArgs } from '@syncfusion/ej2-gantt';
+import { Gantt, Edit, Selection, Toolbar, ActionCompleteArgs, ITaskbarEditedEventArgs } from '@syncfusion/ej2-gantt';
 import { GanttData } from './datasource.ts';
 
 Gantt.Inject(Edit, Selection, Toolbar);
@@ -21,7 +21,7 @@ let gantt: Gantt = new Gantt({
     allowTaskbarEditing: true
   },
   toolbar: ['Edit', 'ZoomToFit'],
-  actionComplete: (args: actionCompleteArgs) => {
+  actionComplete: (args: ActionCompleteArgs) => {
     if ((args.action === "CellEditing" || args.action === "DialogEditing")
       && args.requestType === "save") {
       gantt.dataSource = GanttData;

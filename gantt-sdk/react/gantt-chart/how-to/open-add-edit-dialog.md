@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Add and Edit Dialog - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Programmatically Opening Add and Edit Dialogs in React Gantt Chart

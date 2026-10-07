@@ -3,11 +3,12 @@ layout: post
 title: Excel Like Filter in TypeScript Gantt Chart | Syncfusion
 description: Learn how to use Excel-like filtering in Syncfusion TypeScript Gantt Chart with familiar filter options and advanced conditions on large datasets.
 keywords: TypeScript gantt excel filter, excel like filter, multi-column filter, advanced filter, data filtering, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/filtering/excel-like-filter
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/filtering/excel-like-filter
 platform: gantt-sdk
 control: Excel Like Filter - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Using Excel-Like Filtering Interface in TypeScript Gantt Chart

@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Splitter - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Splitter with Panel Resizing in TypeScript Gantt Chart

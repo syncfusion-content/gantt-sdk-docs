@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Drag and Drop - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Drag and Drop Operations in Blazor Kanban

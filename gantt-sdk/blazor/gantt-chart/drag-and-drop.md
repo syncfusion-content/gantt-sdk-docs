@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Drag and Drop - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Row Drag and Drop for Task Reordering in Blazor Gantt Chart

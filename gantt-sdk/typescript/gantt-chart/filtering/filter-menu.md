@@ -3,11 +3,12 @@ layout: post
 title: Filter Menu in TypeScript Gantt Chart | Syncfusion
 description: Learn how to enable filter menu in Syncfusion TypeScript Gantt Chart to enable filtering options and improve task search and data discovery functionality.
 keywords: TypeScript gantt filter menu, filter dropdown, filter options, advanced filtering, column filter, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/filtering/filter-menu
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/filtering/filter-menu
 platform: gantt-sdk
 control: Filter Menu - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Using Filter Menu for Data Filtering in TypeScript Gantt Chart

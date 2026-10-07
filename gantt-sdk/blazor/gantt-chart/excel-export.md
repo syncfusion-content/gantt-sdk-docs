@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Excel Export - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
  
 # Export Gantt Chart Data to Excel in Blazor 
@@ -477,7 +478,9 @@ The following example demonstrates how to export Gantt Chart data to a CSV memor
 }
 
 {% endhighlight %} {% endtabs %}
+
 {% previewsample "https://blazorplayground.syncfusion.com/embed/rZrxiDZiyXNRRyvB?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+
 ## Customize the excel export
 
 You can customize the Excel or CSV export functionality in the Blazor Gantt Chart component using the [ExcelExportProperties](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ExportToExcelAsync_Syncfusion_Blazor_Grids_ExcelExportProperties_) configuration object.
@@ -933,5 +936,8 @@ To assign a custom name to the exported Excel or CSV file in the Blazor Gantt Ch
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/LZrRNGrthhTKvOpW?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
+## Limitations
+
+CSV export preserves task data in a simple and widely compatible format. Since CSV files are designed for data representation rather than visual layout, Gantt Chart specific hierarchy indentation and structural formatting are not retained in the exported file.
 
 N> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=fluent2) to know how to render and configure the Gantt.

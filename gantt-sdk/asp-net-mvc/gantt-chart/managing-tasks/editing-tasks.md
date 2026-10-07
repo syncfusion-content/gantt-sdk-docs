@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Managing Tasks - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Editing Task Properties and Information in ASP.NET MVC Gantt Chart
@@ -140,9 +141,9 @@ N> When the edit mode is set to `Auto`, on performing double-click action on Tre
 
 ## Update task values using method
 
-Tasks value can be dynamically updated by using the `updateRecordById` method. You can call this method on any custom action. The following code example shows how to use this method to update a task.
+Tasks value can be dynamically updated by using the `updateRecordByID` method. You can call this method on any custom action. The following code example shows how to use this method to update a task.
 
-N> Using the `updateRecordById` method, you cannot update the task ID value.
+N> Using the `updateRecordByID` method, you cannot update the task ID value.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

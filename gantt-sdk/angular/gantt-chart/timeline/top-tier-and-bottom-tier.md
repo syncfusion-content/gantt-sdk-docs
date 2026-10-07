@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Top and Bottom Tier - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Customizing Timeline Top and Bottom Tiers in Angular Gantt Chart
@@ -85,6 +86,24 @@ The following example shows how to use the `formatter` function with all four pa
 {% endtabs %}
   
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/timeline/format-value-cs1" %}
+
+## Show week number in timeline cell
+
+The Gantt Chart allows week numbers to be displayed in timeline cells using the [formatter](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineTierSettings#formatter) property of the [timelineSettings.topTier](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelinesettingsmodel#toptier) configuration. The formatter function customizes the default timeline header text and displays values such as `Week 13`.
+
+The following example demonstrates how to display week numbers in the top-tier timeline cells while displaying individual days in the bottom-tier timeline.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/show-week-number/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt-sdk/angular/gantt-chart/timeline/show-week-number/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/timeline/show-week-number" %}
 
 ## Timeline cell width
 

@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: SignalR - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # SignalR Integration with Real-Time Data Sync in Angular Gantt Chart

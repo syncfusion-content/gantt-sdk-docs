@@ -3,11 +3,12 @@ layout: post
 title: Maintain Data on Server in TypeScript Gantt Chart | Syncfusion
 description: Learn to maintain task data on server in Syncfusion TypeScript Gantt Chart with synchronization, CRUD operations, and data persistence strategies.
 keywords: TypeScript gantt maintain server data, data synchronization, crud operations, server sync, persistance, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/managing-tasks/maintaining-data-in-server
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/managing-tasks/maintaining-data-in-server
 platform: gantt-sdk
 control: Server-Side Data - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Maintaining Data Persistence on Server in TypeScript Gantt Chart

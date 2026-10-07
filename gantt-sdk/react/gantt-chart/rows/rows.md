@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Rows - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Configuring and Customizing Rows in React Gantt Chart
@@ -96,7 +97,7 @@ To customize rows in the chart section, the following methods are available:
 - `getRowByIndex`: Returns the HTML element of a chart row at a specific index.
 - `getChartRows`: Returns all chart row elements.
 
-The following example demonstrates how to use the `getRowByIndex` method of the `treegrid` object in the Gantt instance and the `getRowByIndex` method of the Gantt chart component to customize the appearance of a row within the [rowDataBound](https://ej2.syncfusion.com/react/documentation/gantt/events#rowdatabound) event of the Gantt chart.
+The following example demonstrates how to use the `getRowByIndex` method of the `treeGrid` object in the Gantt instance and the `getRowByIndex` method of the Gantt chart component to customize the appearance of a row within the [rowDataBound](https://ej2.syncfusion.com/react/documentation/gantt/events#rowdatabound) event of the Gantt chart.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}

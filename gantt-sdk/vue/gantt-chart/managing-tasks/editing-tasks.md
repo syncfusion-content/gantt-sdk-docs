@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Editing Tasks - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Editing Task Properties and Information in Vue Gantt Chart
@@ -130,7 +131,7 @@ Updating with dialog
 
 ## Update task values using method
 
-The task values can be dynamically updated by using the [updateRecordById](https://ej2.syncfusion.com/vue/documentation/api/gantt#updaterecordbyid) method. You can call this method on any custom action. The following code example shows how to use this method to update a task.
+The task values can be dynamically updated by using the [updateRecordByID](https://ej2.syncfusion.com/vue/documentation/api/gantt#updaterecordbyid) method. You can call this method on any custom action. The following code example shows how to use this method to update a task.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -143,4 +144,4 @@ The task values can be dynamically updated by using the [updateRecordById](https
         
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/managing-tasks-cs18" %}
 
-> NOTE: Using the [updateRecordById](https://ej2.syncfusion.com/vue/documentation/api/gantt#updaterecordbyid) method, you cannot update the task ID value.
+> NOTE: Using the [updateRecordByID](https://ej2.syncfusion.com/vue/documentation/api/gantt#updaterecordbyid) method, you cannot update the task ID value.
