@@ -3,7 +3,7 @@ layout: post
 title: Column Menu in TypeScript Gantt Chart | Syncfusion
 description: Learn how to enable and customize the column menu in the TypeScript Gantt Chart with sorting, filtering, and column chooser options.
 keywords: TypeScript gantt column menu, column menu, sorting, filtering, column chooser, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/columns/column-menu
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/columns/column-menu
 platform: gantt-sdk
 control: Column Menu - Gantt Chart
 documentation: ug

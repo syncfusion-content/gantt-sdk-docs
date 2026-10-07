@@ -414,6 +414,8 @@ In the example, a [click](https://ej2.syncfusion.com/react/documentation/api/but
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/rows-cs9" %}
 
+> **Note:** Dependency links are not automatically updated when rows are reordered. Since task IDs remain unchanged, review the predecessor relationships after a bulk reorder to ensure they are still valid.
+
 ## Customize the drag and drop action
 
 Customize the drag and drop behavior in the Gantt Chart component using the [rowDragStartHelper](https://ej2.syncfusion.com/react/documentation/gantt/events#rowdragstarthelper), [rowDragStart](https://ej2.syncfusion.com/react/documentation/gantt/events#rowdragstart), [rowDrag](https://ej2.syncfusion.com/react/documentation/gantt/events#rowdrag), and [rowDrop](https://ej2.syncfusion.com/react/documentation/gantt/events#rowdrop) events. These events provide control over the drag lifecycle, allowing precise handling of row interactions.

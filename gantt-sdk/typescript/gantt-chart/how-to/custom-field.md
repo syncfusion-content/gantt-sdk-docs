@@ -3,7 +3,7 @@ layout: post
 title: Custom Fields in TypeScript Gantt Chart | Syncfusion
 description: Learn how to configure custom fields custom fields in Syncfusion TypeScript Gantt Charts add/edit dialogs to manage additional project data.
 keywords: TypeScript gantt custom fields, custom columns, add dialog, edit dialog, custom properties, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/how-to/custom-field
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/how-to/custom-field
 platform: gantt-sdk
 control: Custom Fields - Gantt Chart
 documentation: ug

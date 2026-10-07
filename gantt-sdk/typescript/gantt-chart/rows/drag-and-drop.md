@@ -3,7 +3,7 @@ layout: post
 title: Row Drag and Drop in TypeScript Gantt Chart | Syncfusion
 description: Learn how to row drag and drop in Syncfusion TypeScript Gantt Chart to reorder tasks and reorganize project structure with intuitive interactions.
 keywords: TypeScript gantt row drag drop, drag rows, reorder tasks, drag and drop, row reordering, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/rows/drag-and-drop
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/rows/drag-and-drop
 platform: gantt-sdk
 control: Row Drag Drop - Gantt Chart
 documentation: ug
@@ -123,6 +123,8 @@ In the example, a [click](https://ej2.syncfusion.com/documentation/api/button#cl
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/dynamicDrag-cs1" %}
+
+> **Note:** Dependency links are not automatically updated when rows are reordered. Since task IDs remain unchanged, review the predecessor relationships after a bulk reorder to ensure they are still valid.
 
 ## Customize the drag and drop action
 

@@ -3,7 +3,7 @@ layout: post
 title: Cell Selection in TypeScript Gantt Chart | Syncfusion
 description: Configure cell selection in Syncfusion TypeScript Gantt Chart with single and multiple modes, external selection, and API methods.
 keywords: TypeScript gantt cell selection, select cells, multiple cells, cell select event, cell selection mode, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/selection/cell-selection
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/selection/cell-selection
 platform: gantt-sdk
 control: Cell Selection - Gantt Chart
 documentation: ug
