@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Gantt Chart Overview
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # ASP.NET MVC Gantt Chart Overview

@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Filter Menu - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Column-Specific Filter Menu for Task Data in React Gantt Chart

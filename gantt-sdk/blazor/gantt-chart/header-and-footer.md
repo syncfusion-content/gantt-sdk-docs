@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: PDF Header and Footer - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # PDF Export with Custom Headers and Footers in Blazor Gantt Chart

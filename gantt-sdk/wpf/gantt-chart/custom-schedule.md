@@ -5,6 +5,7 @@ description: Learn about Custom Schedule support in Syncfusion WPF Gantt using S
 platform: gantt-sdk
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Custom Schedule in WPF Gantt
@@ -42,7 +43,7 @@ In both the custom schedules, Gantt will get the information from the applicatio
     * Months—represents the corresponding row as month’s row.
     * Years—represents the corresponding row as year’s row.
 
-#### Use Case Scenario
+### Use Case Scenario
 
 This will be useful when you like to define your own schedules with your own measurements/calendars.
 
@@ -50,7 +51,7 @@ Example 1: The Research organizations may follow different measurements to track
 
 Example 2: A very big construction project many have the time period of many years or months. They need some customized way of date time schedule to track their progress. In this scenario, they can use the CustomDateTime schedule to form the custom schedule like the schedule that has the time scale on quarterly basis to track their progress.
 
-#### Properties
+### Properties
 
 <table>
 <tr>
@@ -67,7 +68,7 @@ DependencyProperty </td><td>
 IList&lt;GanttScheduleRowInfo&gt;</td></tr>
 </table>
 
-#### Events
+### Events
 
 <table>
 <tr>
@@ -88,7 +89,7 @@ Routed Event </td></tr>
 
 The properties of the GanttScheduleCell class are as follows:
 
-#### Properties
+### Properties
 
 <table>
 <tr>

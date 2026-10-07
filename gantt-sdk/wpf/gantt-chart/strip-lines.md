@@ -163,7 +163,7 @@ Double</td></tr>
 * You can mark the important dates and meetings in the scheduled time line.
 * Strip lines help you to avoid missing important events.
 
-#### Properties
+### Properties
 
 <table>
 <tr>
@@ -187,7 +187,7 @@ IEnumerable</td></tr>
 </table>
 
 
-#### Enums
+### Enums
 
 
 
@@ -207,7 +207,7 @@ This property contains the following values:Regular: This denotes the normal str
 </table>
 
 
-#### Events
+### Events
 
 By handling its event, you can customize the strip lines dynamically.
 
@@ -421,7 +421,7 @@ private List<StripLineInfo> GetStripCollection()
 {% endhighlight %}
 {% endtabs %}
 
-#### Output
+### Output
 
 The following screenshot illustrates how to render the regular strip lines.
 
@@ -431,7 +431,7 @@ The following screenshot illustrates how to render the regular strip lines.
 Strip lines in the Gantt chart
 {:.caption}
 
-#### Absolute Strip lines
+### Absolute Strip lines
 
 The following code sample demonstrates how to bind the absolute strip line collection to strip lines.
 
@@ -624,7 +624,7 @@ private List<StripLineInfo> GetStripCollection()
 {% endhighlight  %}
 {% endtabs %}
 
-#### Output
+### Output
 
 The following screenshot illustrates how to render the absolute strip lines.
 
@@ -633,7 +633,7 @@ The following screenshot illustrates how to render the absolute strip lines.
 Strip lines in the Gantt chart
 {:.caption}
 
-#### Sample Link
+### Sample Link
 
 To view samples:
 

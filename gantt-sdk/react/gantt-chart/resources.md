@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Resources - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Resources with Allocation and Task Mapping in React Gantt Chart

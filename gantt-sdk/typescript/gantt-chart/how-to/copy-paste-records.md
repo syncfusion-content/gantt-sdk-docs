@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Copy and Paste - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Copy and Paste Operations for Records in TypeScript Gantt Chart

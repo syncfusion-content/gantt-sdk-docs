@@ -24,7 +24,7 @@ This event is triggered when you tap on any card. The argument contains the foll
 
 The `CardTappedCommand` property is used to associate a command with the control. This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
 
-#### CommandParameter
+### CommandParameter
 
 The `CardTappedCommandParameter` property is used to set the parameter reference, based on which the event argument is shown.
 

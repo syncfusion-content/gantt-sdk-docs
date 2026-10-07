@@ -6,6 +6,7 @@ platform: gantt-sdk
 control: Gantt Chart
 documentation: ug
 domainurl: https://helpstaging.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Welcome to Syncfusion® Gantt SDK

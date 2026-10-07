@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Undo Redo - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Undo and Redo with Action History Management in Blazor Gantt Chart

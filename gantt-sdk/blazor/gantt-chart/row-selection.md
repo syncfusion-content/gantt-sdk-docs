@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Row Selection - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Row Selection with Single and Multiple Modes in Blazor Gantt Chart

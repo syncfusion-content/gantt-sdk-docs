@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Searching - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Toolbar Search and Task Lookup in Blazor Gantt Chart
