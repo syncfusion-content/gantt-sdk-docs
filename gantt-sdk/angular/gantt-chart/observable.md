@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Observable Binding - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Observable Binding with Reactive Data Support in Angular Gantt Chart

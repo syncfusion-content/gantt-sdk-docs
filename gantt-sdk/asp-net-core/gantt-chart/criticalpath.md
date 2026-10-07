@@ -7,7 +7,8 @@ canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/critic
 platform: gantt-sdk
 control: Critical Path - Gantt Chart
 documentation: ug
-domainurl: https://help.syncfusion.com/gantt-sdk/overview
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK/overview
 ---
 
 # Critical Path Identification in ASP.NET Core Gantt Chart

@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Tooltip - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Tooltips Configuration and Hover Information in Blazor Kanban

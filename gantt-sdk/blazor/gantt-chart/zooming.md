@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Zooming - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Timeline Zooming with Zoom-In, Out and Fit in Blazor Gantt Chart

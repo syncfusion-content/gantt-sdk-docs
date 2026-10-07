@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: URL Adaptor - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # URL Adaptor for Remote Data Binding in Blazor Gantt Chart

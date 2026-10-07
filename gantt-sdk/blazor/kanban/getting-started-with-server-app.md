@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Getting Started with Server App - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Getting Started with Blazor Kanban in Server App

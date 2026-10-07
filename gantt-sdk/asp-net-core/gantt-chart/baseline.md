@@ -7,7 +7,8 @@ canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/baseli
 platform: gantt-sdk
 control: Baseline - Gantt Chart
 documentation: ug
-domainurl: https://help.syncfusion.com/gantt-sdk/overview
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK/overview
 ---
 
 # Baseline for Schedule Comparison in ASP.NET Core Gantt Chart

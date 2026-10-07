@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Custom Adaptor - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Custom Adaptor for Data Binding in React Gantt Chart

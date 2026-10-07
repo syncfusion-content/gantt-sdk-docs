@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: WebAssembly Performance - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # WebAssembly Performance Optimization in Blazor Gantt Chart

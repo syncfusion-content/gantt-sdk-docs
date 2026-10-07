@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Critical Path - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Critical Path Identification in TypeScript Gantt Chart

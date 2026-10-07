@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Native Events - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Binding Native Events and Custom Shortcuts in Blazor Gantt Chart
