@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Data Binding - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Data Binding with Local and Remote Sources in Vue Kanban
@@ -121,14 +122,7 @@ const dialogOpen = (args) => {
 
 </script>
 <style>
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-layouts/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-vue-kanban/styles/material.css';
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/kanban/index.css";
 </style>
 
 ```
@@ -193,14 +187,7 @@ const cardSettings = {
 
 </script>
 <style>
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-layouts/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-vue-kanban/styles/material.css';
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/kanban/index.css";
 </style>
 
 ```

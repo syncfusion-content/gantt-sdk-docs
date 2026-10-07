@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Event Markers - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Event Markers for Milestone Highlights in Blazor Gantt Chart
@@ -42,8 +43,7 @@ The following implementation demonstrates event marker integration within a Blaz
 {% highlight razor tabtitle="Home.razor" %}
 
 @using Syncfusion.Blazor.Gantt
-<SfGantt DataSource="@TaskCollection" Height="450px" Width="700px">
-@using Syncfusion.Blazor.Gantt
+
 <SfGantt @ref="GanttInstance" DataSource="@TaskCollection" Height="450px" Width="100%" ProjectStartDate="@(new DateTime(2026, 3, 27))" ProjectEndDate="@(new DateTime(2026, 7, 6))" TreeColumnIndex="1" ScrollToTaskbarOnClick="true">
 	<GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentId" Dependency="Predecessor">
 	</GanttTaskFields>
@@ -83,8 +83,6 @@ The following implementation demonstrates event marker integration within a Blaz
     internal sealed class TaskData
     {
         public int TaskId { get; set; }
-        public int Id { get; set; }
-        public string Text { get; set; } = string.Empty;
         public string TaskName { get; set; } = string.Empty;
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
@@ -92,8 +90,6 @@ The following implementation demonstrates event marker integration within a Blaz
         public int Progress { get; set; }
         public int? ParentId { get; set; }
         public string Predecessor { get; set; } = string.Empty;
-        public int ID { get; set; }
-        public string Value { get; set; } = string.Empty;
     }
     /// <summary>
     /// Generates and returns a collection of Gantt task data.

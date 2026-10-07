@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Filtering - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Filtering Tasks with Filter Bar and Toolbar in React Gantt Chart

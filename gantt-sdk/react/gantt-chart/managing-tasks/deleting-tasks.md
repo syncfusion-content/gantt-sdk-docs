@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Deleting Tasks - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Removing Tasks Dynamically in React Gantt Chart

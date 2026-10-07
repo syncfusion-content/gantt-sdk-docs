@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Excel Export - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Exporting Gantt Task Data to Excel in React Gantt Chart
@@ -163,3 +164,7 @@ To export Gantt data as a Blob object for advanced processing or custom download
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/excel-export-cs17" %}
+
+## Limitations
+
+CSV export preserves task data in a simple and widely compatible format. Since CSV files are designed for data representation rather than visual layout, Gantt Chart specific hierarchy indentation and structural formatting are not retained in the exported file.

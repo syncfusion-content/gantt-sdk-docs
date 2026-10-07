@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Preact Getting Started - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Getting Started with React Gantt Chart in a Preact Application
@@ -76,30 +77,10 @@ Import the basic Gantt Chart styles in `src/style.css`:
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
 
-@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-gantt/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-grids/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-treegrid/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-layouts/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/gantt/index.css";
 
 {% endhighlight %}
 {% endtabs %}
-
-> **Note:** When using features like editing, toolbar, filtering, or dialogs, you need to import additional component styles:
->
-> ```css
-> /* For editing, toolbar, and dialog features */
-> @import "../node_modules/@syncfusion/ej2-calendars/styles/tailwind3.css";
-> @import "../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css";
-> @import "../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css";
-> @import "../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css";
-> @import "../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css";
-> @import "../node_modules/@syncfusion/ej2-notifications/styles/tailwind3.css";
->
-> /* For rich text editor in dialog notes tab */
-> @import "../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css";
-> ```
 
 ## Create sample task data
 

@@ -24,7 +24,7 @@ This event is triggered when you tap on any card. The argument contains the foll
 
 The `CardTappedCommand` property is used to associate a command with the control. This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
 
-#### CommandParameter
+### CommandParameter
 
 The `CardTappedCommandParameter` property is used to set the parameter reference, based on which the event argument is shown.
 
@@ -327,24 +327,25 @@ This event is triggered when a column generated.
 
 ## CardSelected
 
-The CardSelected event occurs when one or more cards are selected in the Kanban board. The event is raised once per selection update cycle.
+The [CardSelected](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardSelected) event occurs when one or more cards are selected in the Kanban board. The event is raised once per selection update cycle.
 
-We can get the following details from the CardSelected event.
+We can get the following details from the [CardSelected](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardSelected) event.
 
-* [SelectedCard](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html) - Returns the card that initiated the selection operation.
-* [SelectedCards](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html) - Returns the collection of cards that are currently selected in the Kanban board.
-* [SelectedCardIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html) - Returns the index of the selected card that initiated the selection operation.
-* [IsControlKeyPressed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html) - Returns a value indicating whether the Control key was pressed during the selection.
-* [IsShiftKeyPressed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html) - Returns a value indicating whether the Shift key was pressed during the selection.
-* [Column](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html) - Returns the Kanban column associated with the selection.
+* [SelectedCard](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanCardSelectedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardSelectedEventArgs_SelectedCard) - Returns the card that initiated the selection operation.
+* [SelectedCards](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanCardSelectedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardSelectedEventArgs_SelectedCards) - Returns the collection of cards that are currently selected in the Kanban board.
+* [SelectedCardIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanCardSelectedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardSelectedEventArgs_SelectedCardIndex) - Returns the index of the selected card that initiated the selection operation.
+* [IsControlKeyPressed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanCardSelectedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardSelectedEventArgs_IsControlKeyPressed) - Returns a value indicating whether the Control key was pressed during the selection.
+* [IsShiftKeyPressed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanCardSelectedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardSelectedEventArgs_IsShiftKeyPressed) - Returns a value indicating whether the Shift key was pressed during the selection.
+* [Column](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanCardSelectedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardSelectedEventArgs_Column) - Returns the Kanban column associated with the selection.
 
 {% tabs %}
 
-{% highlight XAML hl_lines="3" %}
+{% highlight XAML hl_lines="4" %}
 
-<kanban:SfKanban x:Name="kanban" ItemsSource="{Binding TaskDetails}" 
-                             CardSelectionType="Multiple" 
-                             CardSelected="OnKanbanCardSelected">
+<kanban:SfKanban x:Name="kanban" 
+                 ItemsSource="{Binding TaskDetails}" 
+                 CardSelectionType="Multiple" 
+                 CardSelected="OnKanbanCardSelected">
 </kanban:SfKanban>
 
 {% endhighlight %}
@@ -410,15 +411,15 @@ public class ViewModel
 
 ## CardDeselected
 
-The CardDeselected event occurs when one or more cards are deselected in the Kanban board. The event is raised once per deselection update cycle.
+The [CardDeselected](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDeselected) event occurs when one or more cards are deselected in the Kanban board. The event is raised once per deselection update cycle.
 
-We can get the following details from the CardDeselected event.
+We can get the following details from the [CardDeselected](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDeselected) event.
 
-* [DeselectedCard](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html) - Returns the card that initiated the deselection operation.
-* [DeselectedCards](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html) - Returns the collection of cards that are deselected in the Kanban board.
-* [IsControlKeyPressed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html) - Returns a value indicating whether the Control key was pressed during the deselection.
-* [IsShiftKeyPressed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html) - Returns a value indicating whether the Shift key was pressed during the deselection.
-* [Column](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html) - Returns the Kanban column associated with the deselection.
+* [DeselectedCard](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanCardDeselectedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDeselectedEventArgs_DeselectedCard) - Returns the card that initiated the deselection operation.
+* [DeselectedCards](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanCardDeselectedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDeselectedEventArgs_DeselectedCards) - Returns the collection of cards that are deselected in the Kanban board.
+* [IsControlKeyPressed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanCardDeselectedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDeselectedEventArgs_IsControlKeyPressed) - Returns a value indicating whether the Control key was pressed during the deselection.
+* [IsShiftKeyPressed](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanCardDeselectedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDeselectedEventArgs_IsShiftKeyPressed) - Returns a value indicating whether the Shift key was pressed during the deselection.
+* [Column](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanCardDeselectedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDeselectedEventArgs_Column) - Returns the Kanban column associated with the deselection.
 
 {% tabs %}
 

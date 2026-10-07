@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Event Markers - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Project-Wide Timeline Markers in ASP.NET MVC Gantt Chart

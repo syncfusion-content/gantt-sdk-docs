@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Toolbar - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Toolbar with Built-in and Custom Items in Vue Gantt Chart

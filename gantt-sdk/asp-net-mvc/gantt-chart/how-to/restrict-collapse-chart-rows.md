@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: How-to - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Restrict Collapse Chart Rows in ASP.NET MVC Gantt Chart

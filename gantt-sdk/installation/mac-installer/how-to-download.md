@@ -5,6 +5,7 @@ description: Learn how to download the Syncfusion Gantt SDK Mac installer from t
 platform: gantt-sdk
 control: Installation and Deployment
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Downloading Syncfusion Gantt SDK Mac Installer

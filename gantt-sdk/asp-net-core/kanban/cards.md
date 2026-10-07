@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Cards - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Cards Customization and Layout Options in ASP.NET Core Kanban

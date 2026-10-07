@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: PDF Export - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 --- 
 
 # Export Gantt Chart to PDF in Blazor 
@@ -89,7 +90,7 @@ Export Gantt data to PDF by setting [AllowPdfExport](https://help.syncfusion.com
 
 ## Export Gantt Chart to a PDF MemoryStream
 
-The [ExportToPdfStreamAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html) method exports PDF documents directly to a `MemoryStream`. Instead of automatically downloading the exported PDF document, the generated content is returned as a `MemoryStream` for storage, transmission, or programmatic processing.
+The [ExportToPdfStreamAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ExportToPdfStreamAsync_Syncfusion_Blazor_Gantt_GanttPdfExportProperties_System_Boolean_) method exports PDF documents directly to a `MemoryStream`. Instead of automatically downloading the exported PDF document, the generated content is returned as a `MemoryStream` for storage, transmission, or programmatic processing.
 
 This feature supports scenarios that require the exported PDF document to be stored in a database, uploaded to cloud storage, sent as an email attachment, returned through a web API, or processed further before delivery.
 
@@ -143,7 +144,7 @@ The following example demonstrates how to export the Gantt Chart as a PDF memory
     {
         if (args.Item.Id == "PdfStream" && GanttInstance != null)
         {
-            MemoryStream pdfStream = await GanttInstance.ExportToPdfStreamAsync(exportProperties, enableMultiPage: true);
+            MemoryStream pdfStream = await GanttInstance.ExportToPdfStreamAsync(enableMultiPage: true);
         }
     }
 
@@ -176,7 +177,7 @@ The following example demonstrates how to export the Gantt Chart as a PDF memory
 
 {% endhighlight %}
 {% endtabs %}
-{% previewsample "" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/rjLdWNZsfalIvXTo?appbar=true&editor=true&result=true&errorlist=true&theme=fluent2" %}
 ## Events triggered during exporting
 
 When exporting the Blazor Gantt Chart to a PDF document, a series of events are triggered in a specific order, allowing for advanced customization of the export process. Understanding this flow is essential for effectively controlling and modifying the exported content. Below is the sequence of events that occur during PDF export in the Blazor Gantt Chart:

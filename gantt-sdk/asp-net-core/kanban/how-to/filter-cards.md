@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Filter Cards - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Filter Cards in ASP.NET Core Kanban

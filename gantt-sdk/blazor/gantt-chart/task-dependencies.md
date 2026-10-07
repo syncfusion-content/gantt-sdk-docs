@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Task Dependencies - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Task Dependency Types and Configuration in Blazor Gantt Chart

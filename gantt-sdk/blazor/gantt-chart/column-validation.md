@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Column Validation - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Column Validation with Built-in and Custom Rules in Blazor Gantt Chart
