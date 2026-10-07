@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Maintain Zoom To Fit - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Maintaining Zoom-to-Fit Behavior in Vue Gantt Chart

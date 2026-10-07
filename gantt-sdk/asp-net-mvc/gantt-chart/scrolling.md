@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Scrolling - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Scrolling behavior in ASP.NET MVC Gantt Chart

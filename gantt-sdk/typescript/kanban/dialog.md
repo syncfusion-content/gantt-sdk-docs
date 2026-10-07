@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Card Editing - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Card Editing and Dialog Management in TypeScript Kanban

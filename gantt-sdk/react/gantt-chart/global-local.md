@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Globalization and Localization - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Globalization and Localization in React Gantt Chart

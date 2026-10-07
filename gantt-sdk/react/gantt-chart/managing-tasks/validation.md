@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Validation - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Validating Task Data Using Configurable Rules in React Gantt Chart
