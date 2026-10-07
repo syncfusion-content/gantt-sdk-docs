@@ -124,6 +124,8 @@ In the example, a [click](https://ej2.syncfusion.com/javascript/documentation/ap
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/dynamicDrag-cs1" %}
 
+> **Note:** Dependency links are not automatically updated when rows are reordered. Since task IDs remain unchanged, review the predecessor relationships after a bulk reorder to ensure they are still valid.
+
 ## Customize the drag and drop action
 
 Customize the drag and drop behavior in the Gantt Chart control using the [rowDragStartHelper](https://ej2.syncfusion.com/javascript/documentation/api/gantt#rowdragstarthelper), [rowDragStart](https://ej2.syncfusion.com/javascript/documentation/api/gantt#rowdragstart), [rowDrag](https://ej2.syncfusion.com/javascript/documentation/api/gantt#rowdrag), and [rowDrop](https://ej2.syncfusion.com/javascript/documentation/api/gantt#rowdrop) events. These events provide control over the drag lifecycle, allowing precise handling of row interactions.

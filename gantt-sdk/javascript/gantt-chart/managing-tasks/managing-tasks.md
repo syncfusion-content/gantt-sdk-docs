@@ -23,7 +23,7 @@ Multiple editing modes are available including:
 - **Taskbar dragging** for duration or date adjustments
 - **Connector line dragging** for task dependencies
 
-Customize dialogs with templates or fields using [addDialogFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt#adddialogfields) and [editDialogFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt#editdialogfields) properties. Methods like [addRecord](https://ej2.syncfusion.com/javascript/documentation/api/gantt#addrecord), [deleteRow](https://ej2.syncfusion.com/javascript/documentation/api/gantt#deleterow), and [updateRecordById](https://ej2.syncfusion.com/javascript/documentation/api/gantt#updaterecordbyid) support programmatic task management. Ensure valid `taskFields` mappings and a primary key to enable editing seamlessly.
+Customize dialogs with templates or fields using [addDialogFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt#adddialogfields) and [editDialogFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt#editdialogfields) properties. Methods like [addRecord](https://ej2.syncfusion.com/javascript/documentation/api/gantt#addrecord), [deleteRecord](https://ej2.syncfusion.com/javascript/documentation/api/gantt/index-default#deleterecord), and [updateRecordByID](https://ej2.syncfusion.com/javascript/documentation/api/gantt#updaterecordbyid) support programmatic task management. Ensure valid `taskFields` mappings and a primary key to enable editing seamlessly.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

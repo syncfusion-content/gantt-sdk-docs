@@ -2298,19 +2298,19 @@ The [contextMenuOpen](https://ej2.syncfusion.com/javascript/documentation/api/ga
 
 The event provides an argument of type [ContextMenuOpenEventArgs](https://ej2.syncfusion.com/javascript/documentation/api/gantt/contextMenuOpenEventArgs) with the following properties:
 
-| **Property**    | **Type**     | **Description**                         |
-| --------------- | ------------ | --------------------------------------- |
-| `name`          | string       | Event name: **contextMenuOpen**.        |
-| `element`       | Element      | DOM element that triggered the menu.    |
-| `event`         | PointerEvent | Pointer event with interaction details. |
-| `item`          | Object       | Menu item object with properties.       |
-| `type`          | string       | Type of menu item (e.g., **Content**).  |
-| `rowData`       | Object       | Data object of the related row.         |
-| `items`         | Object[]     | List of available context menu items.   |
-| `left`          | number       | Left position of menu in viewport.      |
-| `top`           | number       | Top position of menu in viewport.       |
-| `parentItem`    | Object       | Parent item in nested menu structure.   |
-| `showSubMenuOn` | MenuOpenType | Submenu trigger type: click or hover.   |
+| **Property**     | **Type**        | **Description**                                                  |
+| ---------------- | --------------- | ---------------------------------------------------------------- |
+| `chartRow`       | Element         | Gantt chart row element where the context menu was opened.       |
+| `disableItems`   | string[]        | Collection of menu item IDs to disable.                          |
+| `gridRow`        | Element         | TreeGrid row element where the context menu was opened.          |
+| `hideChildItems` | string[]        | Collection of submenu item IDs to hide.                          |
+| `hideItems`      | string[]        | Collection of menu item IDs to hide.                             |
+| `left`           | number          | Left position, in pixels, where the context menu should appear.  |
+| `name`           | string          | Name of the event.                                               |
+| `rowData`        | IGanttData      | Selected row data associated with the context menu action.       |
+| `target`         | Element         | DOM element that triggered the context menu.                     |
+| `top`            | number          | Top position, in pixels, where the context menu should appear.   |
+| `type`           | ContextMenuType | Type of context menu, such as **Header**, **Row**, or **Chart**. |
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -2696,11 +2696,18 @@ The [endEdit](https://ej2.syncfusion.com/javascript/documentation/api/gantt#ende
 
 The event provides an argument of type [ITaskbarEditedEventArgs](https://ej2.syncfusion.com/javascript/documentation/api/gantt/iTaskbarEditedEventArgs) with the following properties:
 
-| **Property** | **Type**   | **Description**                     |
-| ------------ | ---------- | ----------------------------------- |
-| `action`     | string     | Specifies type of task edit action. |
-| `data`       | IGanttData | Contains updated data for the task. |
-| `name`       | string     | Identifies event as **endEdit**     |
+| **Property**        | **Type**   | **Description**                                    |
+| ------------------- | ---------- | -------------------------------------------------- |
+| `action`            | string     | Specifies type of task edit action.                |
+| `cancel`            | boolean    | Specifies whether the event can be canceled.       |
+| `data`              | IGanttData | Contains updated data for the task.                |
+| `editingFields`     | ITaskData  | Represents the fields being edited in the taskbar. |
+| `previousData`      | ITaskData  | Represents the previous values of the task.        |
+| `recordIndex`       | number     | Index of the edited task in the data collection.   |
+| `roundOffDuration`  | boolean    | Indicates whether duration should be rounded off.  |
+| `segmentIndex`      | number     | Index of the segment being edited.                 |
+| `target`            | Element    | Target HTML element involved in the edit action.   |
+| `taskBarEditAction` | string     | Type of taskbar edit action performed.             |
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -7553,4 +7560,3 @@ console.log('Toolbar item clicked:', args.item.text);
 
 {% endhighlight %}
 {% endtabs %}
-

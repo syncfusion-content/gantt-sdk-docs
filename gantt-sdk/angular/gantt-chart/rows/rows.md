@@ -92,7 +92,7 @@ To customize rows in the chart section, the following methods are available:
 - `getRowByIndex`: Returns the HTML element of a chart row at a specific index.
 - `getChartRows`: Returns all chart row elements.
 
-The following example demonstrates how to use the `getRowByIndex` method of the `treegrid` object in the Gantt instance and the `getRowByIndex` method of the Gantt chart component to customize the appearance of a row within the [dataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#databound) event.
+The following example demonstrates how to use the `getRowByIndex` method of the `treeGrid` object in the Gantt instance and the `getRowByIndex` method of the Gantt chart component to customize the appearance of a row within the [dataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#databound) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
