@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Context Menu - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Context Menu Customization in Angular Gantt Chart

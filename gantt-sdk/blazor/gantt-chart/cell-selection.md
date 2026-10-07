@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Cell Selection - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Cell Selection with Single and Multiple Modes in Blazor Gantt Chart

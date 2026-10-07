@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Server-Side Data - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Maintaining Data Persistence on Server in Angular Gantt Chart

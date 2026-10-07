@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: OData V4 Adaptor - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # OData V4 Adaptor for Remote Data Binding in React Gantt Chart

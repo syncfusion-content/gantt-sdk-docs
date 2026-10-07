@@ -5,6 +5,7 @@ description: Learn about Baseline Support in Syncfusion WPF Gantt, including var
 platform: gantt-sdk
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Baseline Support in WPF Gantt
@@ -748,7 +749,7 @@ The following image shows the BaseLine Chart View:
 
 ![gantt-control-baseline-chart](Baseline-Support_images/gantt-control-baseline-chart.png)
 
-#### Samples
+### Samples
 
 To view samples:
 
@@ -773,7 +774,7 @@ This helps the Project Lead to store the estimation and will help to schedule th
 On-Demand Baseline Column Inclusion
 {:caption}
 
-#### Properties
+### Properties
 
 <table>
 <tr>
@@ -1446,7 +1447,7 @@ This will provide enough information about the project. The entire project infor
 
 This will be useful for Project Leads to take decisions based on the current status. An Organization can use this to present the current statuses of their projects to their clients. They can also use this for analysis before making important decisions on projects.
 
-#### Methods
+### Methods
 
 <table>
 <tr>
@@ -1466,7 +1467,7 @@ ProjectInfo </td></tr>
 </table>
 
 
-#### Adding Project Statistics to an Application
+### Adding Project Statistics to an Application
 
 To add Project Statistics to an application:
 
@@ -2109,7 +2110,7 @@ Sample Project Statistic Visual:
 Project Statistics
 {:.caption}
 
-#### Samples
+### Samples
 
 To view samples:
 

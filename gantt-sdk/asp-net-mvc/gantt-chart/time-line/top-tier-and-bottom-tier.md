@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Timeline - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Customizing Timeline Top and Bottom Tiers in ASP.NET MVC Gantt Chart

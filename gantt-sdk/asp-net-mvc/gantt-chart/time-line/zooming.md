@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Timeline - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Adjusting Zoom Levels and Timeline Scaling in ASP.NET MVC Gantt Chart

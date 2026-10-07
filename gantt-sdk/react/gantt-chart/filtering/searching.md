@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Searching - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Searching Tasks Using the Toolbar Search Box in React Gantt Chart

@@ -8,6 +8,7 @@ platform: gantt-sdk
 control: Toolbar - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Managing Built-in and Custom Toolbar Items in Blazor Gantt Chart
