@@ -144,3 +144,7 @@ To export Gantt data as a Blob object for advanced processing or custom download
 ## Limitations
 
 CSV export preserves task data in a simple and widely compatible format. Since CSV files are designed for data representation rather than visual layout, Gantt Chart specific hierarchy indentation and structural formatting are not retained in the exported file.
+
+## See also
+
+- [How to configure export options?](excel-export-options)

@@ -31,9 +31,9 @@ To enhance your application's efficiency, especially when dealing with substanti
 
 ## Optimizing performance with autocalculatedatescheduling
 
-In the Gantt chart component, by default it automatically calculates the start and end dates in [dataSource](https://ej2.syncfusion.com/documentation/api/gantt#datasource) based on various factors such as working time, holidays, weekends, and predecessors. However, when rendering a large dataset, these calculations for data validation may result in performance issues. To avoid this, set the [autocalculatedatescheduling](https://ej2.syncfusion.com/documentation/api/gantt#autocalculatedatescheduling) property to **false**.
+In the Gantt chart component, by default it automatically calculates the start and end dates in [dataSource](https://ej2.syncfusion.com/documentation/api/gantt#datasource) based on various factors such as working time, holidays, weekends, and predecessors. However, when rendering a large dataset, these calculations for data validation may result in performance issues. To avoid this, set the [autoCalculateDateScheduling](https://ej2.syncfusion.com/documentation/api/gantt#autoCalculateDateScheduling) property to **false**.
 
-> When setting `autocalculatedatescheduling` property to **false**, you must provide the valid data source; otherwise, the Gantt chart will render with invalid dates.
+> When setting `autoCalculateDateScheduling` property to **false**, you must provide the valid data source; otherwise, the Gantt chart will render with invalid dates.
 
 ## How to improve loading performance by binding large data by showing custom text or element
 
@@ -53,7 +53,7 @@ The following tables show typical load times for various Gantt configurations, c
 
 **Test environment**
 
-- Component Version: Syncfusion Gantt 35.1.27
+- Component Version: Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt 35.1.27
 - Typescript Version: 5.9.3
 - Browser: Edge 152
 - Operating System: Windows 11

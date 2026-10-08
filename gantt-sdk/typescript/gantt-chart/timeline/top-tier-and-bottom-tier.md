@@ -3,7 +3,7 @@ layout: post
 title: Timeline Tiers in TypeScript Gantt Chart | Syncfusion
 description: Configure top and bottom tiers in Syncfusion TypeScript Gantt Chart timeline with custom units, formats, and formatting for detailed scheduling views.
 keywords: TypeScript gantt timeline tiers, top tier, bottom tier, tier format, timeline format, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/timeline/top-tier-and-bottom-tier
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/timeline/top-tier-and-bottom-tier
 platform: gantt-sdk
 control: Timeline Tiers - Gantt Chart
 documentation: ug

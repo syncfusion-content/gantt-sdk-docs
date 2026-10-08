@@ -1,32 +1,50 @@
-
-
-
-import { Gantt, Edit, Selection } from '@syncfusion/ej2-gantt';
-import { Button } from '@syncfusion/ej2-buttons';
+import { Gantt, Selection } from '@syncfusion/ej2-gantt';
 import { data } from './datasource.ts';
 
-Gantt.Inject(Edit, Selection);
+let primaryGantt: Gantt;
+let secondaryGantt: Gantt;
 
-let gantt: Gantt = new Gantt({
+let taskFields = {
+    id: 'TaskID',
+    name: 'TaskName',
+    startDate: 'StartDate',
+    endDate: 'EndDate',
+    duration: 'Duration',
+    progress: 'Progress',
+    dependency: 'Predecessor',
+    parentID: 'ParentID'
+};
+
+function syncScroll(args: any): void {
+    if (args.requestType === 'scroll' && args.scrollDirection === 'Horizontal') {
+        const chart = secondaryGantt.element.querySelector('.e-chart-root-container > div') as HTMLElement;
+        if (chart) {
+            chart.scrollLeft = args.scrollLeft;
+        }
+    }
+}
+
+primaryGantt = new Gantt({
     dataSource: data,
     height: '450px',
-    taskFields: {
-        id: 'TaskID',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        duration: 'Duration',
-        progress: 'Progress',
-        parentID: 'ParentID'
-    },
-    splitterSettings: {
-        position: "50%"
-    }
+    width: '100%',
+    taskFields: taskFields,
+    treeColumnIndex: 1,
+    allowSelection: true,
+    dateFormat: 'MMM dd, y',
+    highlightWeekends: true,
+    actionComplete: syncScroll
 });
-gantt.appendTo('#Gantt');
+primaryGantt.appendTo('#primaryGantt');
 
-let scrollBtn: Button = new Button();
-scrollBtn.appendTo('#scrollTop');
-
-document.getElementById('scrollTop').addEventListener('click', () => {
-    gantt.ganttChartModule.scrollObject.setScrollTop(300);
+secondaryGantt = new Gantt({
+    dataSource: data,
+    height: '450px',
+    width: '100%',
+    taskFields: taskFields,
+    treeColumnIndex: 1,
+    allowSelection: true,
+    dateFormat: 'MMM dd, y',
+    highlightWeekends: true
 });
+secondaryGantt.appendTo('#secondaryGantt');

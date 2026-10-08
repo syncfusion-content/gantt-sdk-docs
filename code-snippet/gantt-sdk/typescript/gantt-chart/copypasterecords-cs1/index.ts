@@ -1,5 +1,6 @@
 import { Gantt, Edit, Selection, ContextMenu, ContextMenuClickEventArgs, ContextMenuOpenEventArgs } from '@syncfusion/ej2-gantt';
 import { ContextMenuItemModel } from '@syncfusion/ej2-grids';
+import { extend } from '@syncfusion/ej2-base';
 import { GanttData } from './datasource.ts';
 
 Gantt.Inject(Edit, Selection, ContextMenu);
@@ -36,7 +37,7 @@ gantt.appendTo('#Gantt');
 
 function contextMenuClick(args: ContextMenuClickEventArgs): void {
     if (args.item.id === 'copy') {
-        copiedRecord = args.rowData;
+        copiedRecord = extend({}, {}, args.rowData, true);
         copiedRecord.taskData.TaskID = gantt.currentViewData.length + 1;
     }
 
@@ -61,7 +62,7 @@ function contextMenuOpen(args: ContextMenuOpenEventArgs): void {
 
 function addChildRecords(record: any, index: number): void {
     for (let i = 0; i < record.childRecords.length; i++) {
-        let childRecord = record.childRecords[i];
+        let childRecord = extend({}, {}, record.childRecords[i], true);
         childRecord.taskData.TaskID = gantt.currentViewData.length + 1;
         gantt.addRecord(childRecord.taskData, 'Child', index);
         if (childRecord.hasChildRecords) {

@@ -3,7 +3,7 @@ layout: post
 title: Render Timeline in TypeScript Gantt Chart | Syncfusion
 description: Learn how to render custom timeline in Syncfusion TypeScript Gantt Chart for extended project schedule visualization and detailed time tracking.
 keywords: TypeScript gantt timeline, custom timeline, timeline rendering, 365 days, extended timeline, syncfusion gantt
-canonical: https://help.syncfusion.com/gantt-sdk/TypeScript/gantt-chart/how-to/render-timeline-from-1-to-365-days
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/how-to/render-timeline-from-1-to-365-days
 platform: gantt-sdk
 control: Custom Timeline - Gantt Chart
 documentation: ug
