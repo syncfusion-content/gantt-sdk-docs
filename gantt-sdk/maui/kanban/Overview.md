@@ -10,7 +10,7 @@ appliesto: UI Component Suite, Gantt SDK
 
 # About Syncfusion .NET MAUI Kanban Board control
 
-The Syncfusion® [.NET MAUI Kanban](https://www.syncfusion.com/maui-controls/maui-kanban) control is a highly interactive and customizable tool designed to streamline task management. It provides an efficient way to visualize workflows at various stages of completion. Kanban helps facilitate effective planning and offers a clear visualization of work progress.
+The Syncfusion® [.NET MAUI Kanban](https://www.syncfusion.com/gantt-sdk/maui-kanban) control is a highly interactive and customizable tool designed to streamline task management. It provides an efficient way to visualize workflows at various stages of completion. Kanban helps facilitate effective planning and offers a clear visualization of work progress.
 
 ![.NET MAUI kanban overview ](images/overview/kanban-overview.png)
 
@@ -222,7 +222,7 @@ The following table summarizes the globalization support available in this contr
     <h3 class="form-title">Feature Tour</h3>
 </div>
 <div class="form-description">Get a quick overview of key features and capabilities to kick start your journey.</div>
-<a href="https://www.syncfusion.com/maui-controls/maui-kanban" class="explore-link">
+<a href="https://www.syncfusion.com/gantt-sdk/maui-kanban" class="explore-link">
 Explore Features
   <span class="card-icon card-arrow"></span>
 </a>
