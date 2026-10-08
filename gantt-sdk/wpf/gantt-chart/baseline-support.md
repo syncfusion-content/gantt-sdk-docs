@@ -769,7 +769,7 @@ Initially, Gantt will get loaded with a default set of columns. Then, you can ad
 
 This helps the Project Lead to store the estimation and will help to schedule the project in an efficient way by comparing the progress on planning itself. Organizations can have the default set of columns on Gantt Grid on loading, and when they need to compare a field with the estimate data, they can pick that column from the drop down. 
 
-![gantt-control-add-new-column](Baseline-Support_images/gantt-control-add-new-column.png)
+![gantt-control-add-new-column](Baseline-Support_images/gantt-control-add-new-column.jpeg)
 
 On-Demand Baseline Column Inclusion
 {:caption}

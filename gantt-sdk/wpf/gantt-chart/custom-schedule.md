@@ -137,128 +137,112 @@ The following code illustrates Adding Custom Schedule to an Application:
 {% tabs  %}
 {% highlight xaml %}
  
-<syncfusion:GanttControl x:Name="ganttControl"
+<syncfusion:GanttControl x:Name="Gantt"
                          CustomScheduleSource="{Binding CustomScheduleInfo}"
                          ItemsSource="{Binding TopCountriesCollection}"
                          ScheduleType="CustomNumeric"
                          UseAutoUpdateHierarchy="False">
     <syncfusion:GanttControl.TaskAttributeMapping>
-        <syncfusion:TaskAttributeMapping TaskIdMapping="Id"                    
-                                         TaskNameMapping="Name"                
-                                         StartPointMapping="Start" 
-                                         FinishPointMapping="End"              
-                                         ChildMapping="ChildTask"              
-                                         ProgressMapping="Complete"
-                                         ResourceInfoMapping="Resource">
-        </syncfusion:TaskAttributeMapping>
+        <syncfusion:TaskAttributeMapping ChildMapping="ChildTopCountries"
+                                         TaskIdMapping="Id"
+                                         TaskNameMapping="Name"
+                                         FinishPointMapping="End"
+                                         StartPointMapping="Start"/>
     </syncfusion:GanttControl.TaskAttributeMapping>
- <syncfusion:GanttControl.Resources>
- <Style x:Key="TopCountriesNode" TargetType="{x:Type gantt:GanttNode}">
-     <Setter Property="Template">
-         <Setter.Value>
-             <ControlTemplate TargetType="{x:Type gantt:GanttNode}">
-                 <Border
-                     Name="PART_Border"
-                     Height="21"
-                     VerticalAlignment="Center"
-                     BorderThickness="0.5"
-                     Opacity="0.8">
-                     <Grid>
-                         <Grid.ColumnDefinitions>
-                             <ColumnDefinition Width="Auto" />
-                             <ColumnDefinition Width="*" />
-                             <ColumnDefinition Width="Auto" />
-                         </Grid.ColumnDefinitions>
+    <syncfusion:GanttControl.Resources>
+        <Style x:Key="TopCountriesNode" TargetType="{x:Type syncfusion:GanttNode}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type syncfusion:GanttNode}">
+                        <Border Name="PART_Border"
+                                Height="21"
+                                VerticalAlignment="Center"
+                                BorderThickness="0.5"
+                                Opacity="0.8">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
 
-                         <Thumb
-                             x:Name="PART_DragDropThumb"
-                             Grid.Column="0"
-                             Grid.ColumnSpan="3"
-                             Cursor="SizeAll">
-                             <Thumb.Template>
-                                 <ControlTemplate>
-                                     <Border Background="Transparent" />
-                                 </ControlTemplate>
-                             </Thumb.Template>
-                         </Thumb>
-                         <Grid
-                             Grid.Column="0"
-                             Grid.ColumnSpan="3"
-                             Width="{TemplateBinding Width}"
-                             HorizontalAlignment="Stretch"
-                             VerticalAlignment="Center">
-                             <TextBlock
-                                 Margin="0,0,20,0"
-                                 HorizontalAlignment="Right"
-                                 Foreground="White"
-                                 IsHitTestVisible="False"
-                                 Text="{Binding End, StringFormat='\{0\}%'}" />
-                         </Grid>
-                         <Thumb
-                             x:Name="PART_RightThumb"
-                             Grid.Column="2"
-                             HorizontalAlignment="Right"
-                             Cursor="ScrollE">
-                             <Thumb.Template>
-                                 <ControlTemplate>
-                                     <Rectangle
-                                         Width="6"
-                                         Height="20"
-                                         HorizontalAlignment="Right"
-                                         VerticalAlignment="Center"
-                                         Fill="Transparent" />
-                                 </ControlTemplate>
-                             </Thumb.Template>
-                         </Thumb>
-                         <Thumb
-                             x:Name="PART_LeftThumb"
-                             Grid.Column="0"
-                             HorizontalAlignment="Left"
-                             Cursor="ScrollW">
-                             <Thumb.Template>
-                                 <ControlTemplate>
-                                     <Border
-                                         Width="4"
-                                         Height="20"
-                                         Background="Transparent"
-                                         BorderBrush="Transparent"
-                                         BorderThickness="0" />
-                                 </ControlTemplate>
-                             </Thumb.Template>
-                         </Thumb>
-                     </Grid>
-                 </Border>
-             </ControlTemplate>
-         </Setter.Value>
-     </Setter>
- </Style>
+                                <Thumb  x:Name="PART_DragDropThumb"
+                                        Grid.Column="0"
+                                        Grid.ColumnSpan="3"
+                                        Cursor="SizeAll">
+                                    <Thumb.Template>
+                                        <ControlTemplate>
+                                            <Border Background="Transparent" />
+                                        </ControlTemplate>
+                                    </Thumb.Template>
+                                </Thumb>
+                                <Grid Grid.Column="0"
+                                      Grid.ColumnSpan="3"
+                                      Width="{TemplateBinding Width}"
+                                      HorizontalAlignment="Stretch"
+                                      VerticalAlignment="Center">
+                                    <TextBlock  Margin="0,0,20,0"
+                                                HorizontalAlignment="Right"
+                                                Foreground="White"
+                                                IsHitTestVisible="False"
+                                                Text="{Binding End, StringFormat='\{0\}%'}" />
+                                </Grid>
+                                <Thumb  x:Name="PART_RightThumb"
+                                        Grid.Column="2"
+                                        HorizontalAlignment="Right"
+                                        Cursor="ScrollE">
+                                    <Thumb.Template>
+                                        <ControlTemplate>
+                                            <Rectangle Width="6"
+                                                       Height="20"
+                                                       HorizontalAlignment="Right"
+                                                       VerticalAlignment="Center"
+                                                       Fill="Transparent" />
+                                        </ControlTemplate>
+                                    </Thumb.Template>
+                                </Thumb>
+                                <Thumb x:Name="PART_LeftThumb"
+                                       Grid.Column="0"
+                                       HorizontalAlignment="Left"
+                                       Cursor="ScrollW">
+                                    <Thumb.Template>
+                                        <ControlTemplate>
+                                            <Border Width="4"
+                                                    Height="20"
+                                                    Background="Transparent"
+                                                    BorderBrush="Transparent"
+                                                    BorderThickness="0" />
+                                        </ControlTemplate>
+                                    </Thumb.Template>
+                                </Thumb>
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
 
-<!--Milestone style-->
- <Style x:Key="MileStone" TargetType="gantt:MileStone">
-     <Setter Property="Template">
-         <Setter.Value>
-             <ControlTemplate TargetType="gantt:MileStone">
-                 <Grid>
-                     <Path
-                         Width="17"
-                         Height="19"
-                         HorizontalAlignment="Left"
-                         VerticalAlignment="Center"
-                         Data="F1 M 551.156,416.878L 552.734,419.766L 555.621,421.344L 552.734,422.922L 551.156,425.81L 549.577,422.922L 546.69,421.344L 549.577,419.766L 551.156,416.878 Z "
-                         Fill="#FFE71400"
-                         Stretch="Fill"
-                         Stroke="#FFE71400" />
-                 </Grid>
-             </ControlTemplate>
-         </Setter.Value>
-     </Setter>
- </Style>
-    <Style BasedOn="{StaticResource TopCountriesNode}" TargetType="gantt:GanttNode" />
-    <Style BasedOn="{StaticResource MileStone}" TargetType="gantt:MileStone" />
- </syncfusion:GanttControl.Resources>
-    <syncfusion:GanttControl.DataContext>
-        <local:ViewModel/>
-    </syncfusion:GanttControl.DataContext>
+        <Style x:Key="MileStone" TargetType="syncfusion:MileStone">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="syncfusion:MileStone">
+                        <Grid>
+                            <Path Width="17"
+                                  Height="19"
+                                  HorizontalAlignment="Left"
+                                  VerticalAlignment="Center"
+                                  Data="F1 M 551.156,416.878L 552.734,419.766L 555.621,421.344L 552.734,422.922L 551.156,425.81L 549.577,422.922L 546.69,421.344L 549.577,419.766L 551.156,416.878 Z "
+                                  Fill="#FFE71400"
+                                  Stretch="Fill"
+                                  Stroke="#FFE71400" />
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+                <Style BasedOn="{StaticResource TopCountriesNode}" TargetType="syncfusion:GanttNode" />
+                <Style BasedOn="{StaticResource MileStone}" TargetType="syncfusion:MileStone" />
+    </syncfusion:GanttControl.Resources>
 </syncfusion:GanttControl>
 
 {% endhighlight  %}
@@ -1178,7 +1162,7 @@ public class ViewModel
 
 The following image shows custom DateTime schedule:
 
-![gantt-control-custom-datetime-schedule](Custom-Schedule_images/gantt-control-custom-datetime-schedule.png)
+![gantt-control-custom-datetime-schedule](Custom-Schedule_images/gantt-control-custom-datetime-schedule.jpeg)
 
 Custom DateTime Schedule
 {:.caption}

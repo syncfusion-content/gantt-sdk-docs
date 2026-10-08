@@ -18,7 +18,7 @@ WPF Gantt control is composed of three controls. They are:
 * ScheduleHeader  
 * GanttChartVisualControl
 
-![gantt-control-appearance-and-structure](Getting-Started_images/gantt-control-appearance-and-structure.png)
+![gantt-control-appearance-and-structure](Getting-Started_images/gantt-control-appearance-and-structure.jpeg)
 
 ### Gantt grid
 
