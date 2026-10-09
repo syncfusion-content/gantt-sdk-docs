@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Dialog in ASP.NET Core Kanban Component
-description: Learn here all about Dialog in Syncfusion ASP.NET Core Kanban component of Syncfusion Essential JS 2 and more.
+title: Card Editing in ASP.NET Core Kanban | Syncfusion
+description: Learn how to edit cards, use dialogs, and validate inputs in Syncfusion ASP.NET Core Kanban to manage task details with ease.
+keywords: asp-net-core kanban card editing, syncfusion kanban, card dialog, task editing
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/dialog
 platform: gantt-sdk
-control: Dialog
-publishingplatform: gantt-sdk
+control: Card Editing - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Card Editing in ASP.NET Core Kanban control
+# Card Editing and Dialog Management in ASP.NET Core Kanban
 
 The Kanban provides built-in support to add, edit and delete a card using dialog module. User can edit a card using the following ways.
 
@@ -34,8 +37,6 @@ The dialog displays with the following fields which mapped to dialog fields by d
 | cardSettings.priority(If applicable) | Numeric | - |
 | swimlaneSettings.keyField(If applicable) | DropDown | - |
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/default/tagHelper %}
@@ -45,27 +46,13 @@ The dialog displays with the following fields which mapped to dialog fields by d
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/default/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/default/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 Output be like the below.
 
-![kanban](./images/dialog-default.PNG)
+![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/dialog-default.PNG)
 
 ## Custom Fields
 
-You can change the default fields of dialog using `fields` property inside the `dialogSettings` property. The `key` property used to map the DataSource value and rendered the corresponding component based on specified `type` property.
+You can change the default fields of dialog using [`fields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.KanbanDialogSettings.html#Syncfusion_EJ2_Kanban_KanbanDialogSettings_Fields) property inside the [`dialogSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_DialogSettings) property. The `key` property used to map the DataSource value and rendered the corresponding component based on specified `type` property.
 
 The following types are available in dialog fields.
 
@@ -78,8 +65,6 @@ The following types are available in dialog fields.
 
 N> If `type` is not defined in the fields, then it renders as the HTML input element in dialog.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/custom-fields/tagHelper %}
@@ -89,29 +74,13 @@ N> If `type` is not defined in the fields, then it renders as the HTML input ele
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/custom-fields/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/custom-fields/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 Output be like the below.
 
-![kanban](./images/custom-fields.PNG)
+![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/custom-fields.PNG)
 
 ### Custom Fields label
 
 By default, the fields `key` mapping value is considered as a `label` and you can change this label by using `text` property.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -122,29 +91,13 @@ By default, the fields `key` mapping value is considered as a `label` and you ca
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/custom-field-label/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/custom-field-label/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 Output be like the below.
 
-![kanban](./images/custom-fields-label.PNG)
+![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/custom-fields-label.PNG)
 
 ### Fields Validation
 
 The dialog fields can be validated while click on the `Save` button. This can be achieved by using `validationRules` property.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -155,25 +108,9 @@ The dialog fields can be validated while click on the `Save` button. This can be
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/fields-validation/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/fields-validation/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ## Dialog Template
 
 Using the dialog template, you can render your own dialog by defining the `template` property. Initialize the template as SCRIPT element Id or HTML string which holds the template and map it to the template property.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -184,29 +121,13 @@ Using the dialog template, you can render your own dialog by defining the `templ
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/template/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/template/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 Output be like the below.
 
-![kanban](./images/dialog-template.PNG)
+![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/dialog-template.PNG)
 
 ## Prevent Dialog
 
-The Kanban allows to prevent to open a dialog on card double-click by enabling `args.cancel` in `dialogOpen` event.
-
-{% if page.publishingplatform == "aspnet-core" %}
+The Kanban allows to prevent to open a dialog on card double-click by enabling `args.cancel` in [`dialogOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_DialogOpen) event.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -216,20 +137,6 @@ The Kanban allows to prevent to open a dialog on card double-click by enabling `
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/prevent-dialog/datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/prevent-dialog/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/prevent-dialog/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ## Persisting data in server
 
@@ -252,8 +159,6 @@ You can map the CRUD operation in Kanban can be mapped to server-side controller
 
 The following code example describes the above behavior.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/url-adaptor/tagHelper %}
@@ -262,20 +167,6 @@ The following code example describes the above behavior.
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/url-adaptor/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/url-adaptor/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/url-adaptor/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 The server-side controller code to handle the CRUD operations are as follows.
 
@@ -362,8 +253,6 @@ The action parameter of `crudUrl` is used to get the corresponding CRUD action.
 
 The following code example describes the above behavior.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/crud-url-adaptor/tagHelper %}
@@ -372,20 +261,6 @@ The following code example describes the above behavior.
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/crud-url-adaptor/datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/crud-url-adaptor/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/dialog/crud-url-adaptor/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ```typescript
 
@@ -444,4 +319,4 @@ public class EditParams {
 
 ```
 
-N> The `crudUrl` is used to update the bulk data sent to the server-side. Multiple selections and `sortBy` as `Index` properties are used for `crudUrl` properties to update the modified bulk data to the server-side.
+N> The `crudUrl` is used to update the bulk data sent to the server-side. Multiple selections and [`sortBy`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.KanbanSortSettings.html#Syncfusion_EJ2_Kanban_KanbanSortSettings_SortBy) as `Index` properties are used for `crudUrl` properties to update the modified bulk data to the server-side.

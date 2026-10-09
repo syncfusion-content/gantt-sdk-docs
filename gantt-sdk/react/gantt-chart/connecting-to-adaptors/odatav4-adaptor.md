@@ -1,14 +1,17 @@
 ---
 layout: post
-title: React Gantt Chart - OData v4 Adaptor | Syncfusion
-description: React Gantt Chart OData v4 adaptor explains integration with OData v4 services and how the adaptor conveys task-related requests and updates.
-control: ODataV4 Adaptor
+title: OData V4 Adaptor in React Gantt Chart | Syncfusion
+description: Learn how to use the OData V4 adaptor in Syncfusion React Gantt Chart to integrate with OData services for task data binding and CRUD operations.
+keywords: react gantt odatav4 adaptor, OData v4, odata services, remote data binding, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/connecting-to-adaptors/odatav4-adaptor
 platform: gantt-sdk
+control: OData V4 Adaptor - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# OData Remote Data Binding in Syncfusion React Gantt
+# OData V4 Adaptor for Remote Data Binding in React Gantt Chart
 
 The [ODataV4Adaptor](https://ej2.syncfusion.com/react/documentation/data/adaptors/odatav4-adaptor) in the Syncfusion<sup style="font-size:70%">&reg;</sup> React DataManager enables seamless integration between the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) and OData v4 services by translating the Gantt's task data requests and update actions into OData‑formatted requests and by interpreting OData responses. The adaptor provides a consistent pathway for the Gantt to obtain task records, relationship metadata, and any counts or summaries the server returns, while allowing server‑side scheduling rules, dependency resolution, and related dataset processing to remain authoritative.
 
@@ -53,24 +56,7 @@ npm install @syncfusion/ej2-data --save
 - Include the required Syncfusion theme and component styles so the Gantt and its input controls render correctly. Add these imports to **index.css** or **App.css**:
 
 ```ts
-/* Basic Gantt Chart styles */
-@import "../node_modules/@syncfusion/ej2-base/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-gantt/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-grids/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-treegrid/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-layouts/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css";
-
-/* For editing, toolbar, and dialog features */
-@import "../node_modules/@syncfusion/ej2-calendars/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-notifications/styles/tailwind3.css";
-
-/* For rich text editor in dialog notes tab */
-@import "../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css";
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/gantt/index.css";
 ```
 
 Import the **App.css** in the application entry point(**App.jsx**).

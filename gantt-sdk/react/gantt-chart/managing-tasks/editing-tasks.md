@@ -1,16 +1,19 @@
 ---
 layout: post
-title: Editing Tasks in React Gantt Chart Component | Syncfusion
-description: Learn how to edit tasks dynamically in the Syncfusion React Gantt Chart component using cell editing, dialog, taskbar, or programmatic methods for project updates.
+title: Editing Tasks in React Gantt Chart | Syncfusion
+description: Learn how to edit tasks in Syncfusion React Gantt Chart using cell editing, dialog, taskbar interactions, or programmatic methods for project updates.
+keywords: react gantt editing tasks, task edit, cell editing, dialog editing, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/managing-tasks/editing-tasks
 platform: gantt-sdk
-control: Editing tasks
+control: Editing Tasks - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Editing Tasks in React Gantt Chart Component
+# Task Editing with Multiple Interaction Modes in React Gantt Chart
 
-Editing tasks in the React Gantt Chart component enables dynamic project updates, such as modifying task durations, names, or dependencies, using cell editing, dialog, taskbar interactions, or programmatic methods. Enable editing by setting [editSettings.allowEditing](https://ej2.syncfusion.com/react/documentation/api/gantt/editSettings#allowediting) and [editSettings.allowTaskbarEditing](https://ej2.syncfusion.com/react/documentation/api/gantt/editSettings#allowtaskbarediting) to **true** with `Edit` injected, ensuring task data aligns with [taskFields](https://ej2.syncfusion.com/react/documentation/api/gantt#taskfields) mappings (e.g., id, name, startDate). Cell editing allows direct updates in the TreeGrid pane, dialog editing provides a comprehensive interface, taskbar dragging adjusts durations or dates, and connector lines manage dependencies via drag-and-drop. Use the [editSettings.mode](https://ej2.syncfusion.com/react/documentation/api/gantt/editSettings#mode) property to control editing behavior (**Auto** or **Dialog**). Customize dialog fields with [addDialogFields](https://ej2.syncfusion.com/react/documentation/api/gantt#adddialogfields) and [editDialogFields](https://ej2.syncfusion.com/react/documentation/api/gantt#editdialogfields) for tailored forms. The [updateRecordById](https://ej2.syncfusion.com/react/documentation/api/gantt#updaterecordbyid) method enables programmatic updates, except for task IDs. Ensure valid data to prevent issues and maintain dependency integrity.
+Editing tasks in the React Gantt Chart component enables dynamic project updates, such as modifying task durations, names, or dependencies, using cell editing, dialog, taskbar interactions, or programmatic methods. Enable editing by setting [editSettings.allowEditing](https://ej2.syncfusion.com/react/documentation/api/gantt/editSettings#allowediting) and [editSettings.allowTaskbarEditing](https://ej2.syncfusion.com/react/documentation/api/gantt/editSettings#allowtaskbarediting) to **true** with `Edit` injected, ensuring task data aligns with [taskFields](https://ej2.syncfusion.com/react/documentation/api/gantt#taskfields) mappings (e.g., id, name, startDate). Cell editing allows direct updates in the TreeGrid pane, dialog editing provides a comprehensive interface, taskbar dragging adjusts durations or dates, and connector lines manage dependencies via drag-and-drop. Use the [editSettings.mode](https://ej2.syncfusion.com/react/documentation/api/gantt/editSettings#mode) property to control editing behavior (**Auto** or **Dialog**). Customize dialog fields with [addDialogFields](https://ej2.syncfusion.com/react/documentation/api/gantt#adddialogfields) and [editDialogFields](https://ej2.syncfusion.com/react/documentation/api/gantt#editdialogfields) for tailored forms. The [updateRecordByID](https://ej2.syncfusion.com/react/documentation/api/gantt#updaterecordbyid) method enables programmatic updates, except for task IDs. Ensure valid data to prevent issues and maintain dependency integrity.
 
 To get start quickly with CRUD functionalities, you can check on this video:
 
@@ -54,7 +57,7 @@ Enable dialog editing by setting [editSettings.allowEditing](https://ej2.syncfus
 
 ## Customize dialog tabs
 
-Customize the edit dialog by defining tabs with [addDialogFields](https://ej2.syncfusion.com/react/documentation/api/gantt#adddialogfields) and [editDialogFields](https://ej2.syncfusion.com/react/documentation/api/gantt#editdialogfields), using the [type](https://ej2.syncfusion.com/react/documentation/api/gantt/dialogFieldType/) property (e.g., General, Dependency). This organizes fields into tabs for focused editing, such as task details or dependencies, with `Edit` required.
+Customize the edit dialog by defining tabs with [addDialogFields](https://ej2.syncfusion.com/react/documentation/api/gantt#adddialogfields) and [editDialogFields](https://ej2.syncfusion.com/react/documentation/api/gantt#editdialogfields), using the [type](https://ej2.syncfusion.com/react/documentation/api/gantt/dialogFieldType) property (e.g., General, Dependency). This organizes fields into tabs for focused editing, such as task details or dependencies, with `Edit` required.
 
 The following sample demonstrates customization using properties and the [actionComplete](https://ej2.syncfusion.com/react/documentation/gantt/events#actioncomplete) event.
 
@@ -102,7 +105,7 @@ Enable dependency editing by mapping the [dependency](https://ej2.syncfusion.com
 
   ![Updating task dependency in dialog Dependency tab](../images/dialog.png)
 
-- **Cell editing**: Update the dependency field in the TreeGrid. Ensure valid dependency strings to avoid circular references.
+- **Cell editing**: Update the dependency field in the TreeGrid. Ensure valid dependency strings to avoid circular references, invalid task IDs, or malformed syntax.
 
   ![Updating task dependency via cell editing in TreeGrid](../images/cell-edit.png)
 
@@ -122,11 +125,11 @@ Enable dependency editing by mapping the [dependency](https://ej2.syncfusion.com
 
 ## Edit tasks programmatically
 
-You can update tasks programmatically using the [updateRecordById](https://ej2.syncfusion.com/react/documentation/api/gantt#updaterecordbyid) method by specifying the task ID and updated data. This requires `Edit` to be injected and supports automation, such as updating durations through a button. The task ID cannot be changed using this method. Ensure `taskFields` mappings are valid for successful updates.
+You can update tasks programmatically using the [updateRecordByID](https://ej2.syncfusion.com/react/documentation/api/gantt#updaterecordbyid) method by specifying the task ID and updated data. This requires `Edit` to be injected and supports automation, such as updating durations through a button. The task ID cannot be changed using this method. Ensure `taskFields` mappings are valid for successful updates.
 
 To update an existing task ID with a new unique ID, use the [updateTaskId](https://ej2.syncfusion.com/react/documentation/api/gantt/index-default#updatetaskid) method.
 
-> You can also update custom column values using the `updateRecordById` method. The `taskID` must be specified for the update to apply.
+> You can also update custom column values using the `updateRecordByID` method. The `taskID` must be specified for the update to apply.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}

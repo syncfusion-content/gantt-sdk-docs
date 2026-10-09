@@ -1,17 +1,21 @@
 ---
 layout: post
-title: State Management in Blazor Gantt Chart Component | Syncfusion
-description: Check out and learn all about State Management in Syncfusion Blazor Gantt Chart component and more here.
+title: State Management in Blazor Gantt Chart | Syncfusion
+description: Learn how to persist and restore state in Syncfusion Blazor Gantt Chart including grid settings, column state, filters, and taskbar configurations.
+keywords: blazor gantt state management, persist state, restore state, state persistence, grid state, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/state-management
 platform: gantt-sdk
-control: Gantt Chart
+control: State Management - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# State Management in Blazor Gantt Chart Component
+# State Persistence and Restoration in Blazor Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component supports state management by retaining its configuration and data in browser local storage after a refresh within the same session. It also provides options to save and load the Gantt state manually.
 
-The properties below can be saved and loaded into a Gantt chart:
+The properties below can be saved and loaded into a Blazor Gantt Chart:
 
 Property|
 -----|
@@ -26,9 +30,9 @@ ProjectEndDate |
 
 ## Enabling persistence
 
-You can enable persistence to maintain the Gantt chart’s current state in the browser’s local storage. This helps retain settings such as expanded rows and selected tasks after a page reload. To enable this behavior, set the [EnablePersistence](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_EnablePersistence) property to **true**.
+You can enable persistence to maintain the Blazor Gantt Chart’s current state in the browser’s local storage. This helps retain settings such as expanded rows and selected tasks after a page reload. To enable this behavior, set the [EnablePersistence](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_EnablePersistence) property to **true**.
 
-N> The state will be persisted based on the **ID** property. So, it is recommended to explicitly set the **ID** property for the Gantt chart.
+N> The state will be persisted based on the **ID** property. So, it is recommended to explicitly set the **ID** property for the Blazor Gantt Chart.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -78,7 +82,7 @@ N> The state will be persisted based on the **ID** property. So, it is recommend
 
 ## Handling gantt state manually
 
-To manually manage the Gantt chart’s persisted state, use the following methods to save the current state, load a previously stored one, and reset the chart to its default configuration:
+To manually manage the Blazor Gantt Chart’s persisted state, use the following methods to save the current state, load a previously stored one, and reset the chart to its default configuration:
 
 * [GetPersistDataAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_GetPersistDataAsync) - Saves the current chart state as a string, suitable for transmission or storage.
 * [SetPersistDataAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_SetPersistDataAsync_System_String_) - Loads a previously saved state into the chart.
@@ -168,4 +172,4 @@ To manually manage the Gantt chart’s persisted state, use the following method
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/hDLntxWapiiwjpeN?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-N> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=bootstrap4) to know how to render and configure the Gantt.
+N> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=fluent2) to know how to render and configure the Gantt.

@@ -1,13 +1,17 @@
 ---
 layout: post
-title: Column Reordering in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Column Reordering in Syncfusion Blazor Gantt Chart component and much more details.
+title: Column Reordering in Blazor Gantt Chart | Syncfusion
+description: Learn how to reorder columns by drag and drop in Syncfusion Blazor Gantt Chart to customize the grid panel layout as needed.
+keywords: blazor gantt column reorder, drag drop columns, reorder columns, grid layout, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/column-reordering
 platform: gantt-sdk
-control: Gantt Chart
+control: Column Reordering - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Column reorder in Blazor Gantt Chart component
+# Reorder Columns by Drag and Drop in Blazor Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component supports column reordering by dragging a column header to a new position. 
 
@@ -67,7 +71,7 @@ To enable column reordering, set the [AllowReordering](https://help.syncfusion.c
 
 ## Reorder columns programmatically
 
-You can reorder columns programmatically in the Gantt Chart component using the [ReorderColumnsAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ReorderColumnsAsync_System_Collections_Generic_List_System_String__System_String_) method.  This method reorders one or more columns by specifying the source column(s) and the target column using their field names:  
+You can reorder columns programmatically in the Blazor Gantt Chart component using the [ReorderColumnsAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ReorderColumnsAsync_System_Collections_Generic_List_System_String__System_String_) method.  This method reorders one or more columns by specifying the source column(s) and the target column using their field names:  
 
 - **fromFName**: The field name of the column to move.  
 - **toFName**: The field name of the target column position.

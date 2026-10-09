@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Resources in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Resources in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Resources in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to configure and manage resources in Syncfusion ASP.NET Core Gantt Chart including resource assignments, allocation, and capacity planning.
+keywords: asp.net core gantt resources, resource assignment, resource allocation, team members, capacity planning, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/resources
 platform: gantt-sdk
-control: Resources
-publishingplatform: gantt-sdk
+control: Resources - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK/overview
 ---
 
-
-# Resources in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Gantt Component
+# Resources with Allocation and Task Mapping in ASP.NET Core Gantt Chart
 
 In Gantt, the resources are represented by staff, equipment and materials etc. In Gantt control you can show or allocate the resources (human resources) for each task.
 
@@ -26,8 +28,6 @@ The resource collection contains details about resources that are used in the pr
 
 The following code snippets shows resource collection and how it assigned to Gantt control.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resources/assignResource/tagHelper %}
@@ -36,20 +36,6 @@ The following code snippets shows resource collection and how it assigned to Gan
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resources/assignResource/assignResource.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resources/assignResource/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="AssignResource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resources/assignResource/assignResource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ## Assign resource
 
@@ -101,8 +87,6 @@ When resource unit is defined in resource collection, the amount of work done by
 
 The following code snippet shows how to assign the resource for each task and map to Gantt control.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resources/resourceUnit/tagHelper %}
@@ -112,39 +96,23 @@ The following code snippet shows how to assign the resource for each task and ma
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resources/resourceUnit/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ResourceUnit.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resources/resourceUnit/resourceUnit.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Alt text](images/resourceUnit.png)
+![Alt text](./images/resourceUnit.png)
 
 ## Add/Edit resource collection
 
 By using cell/ dialog edit option, we can add/remove the multiple resources for a particular task. Resource Unit can be change for a each task on resource tab in edit dialog by double click on the unit cell.
 
-![Cell Edit](images/cellEdit-resource.png)
+![Cell Edit](./images/cellEdit-resource.png)
 
-![Dialog Edit](images/dialogedit-resource.png)
+![Dialog Edit](./images/dialogedit-resource.png)
 
 ## Custom background colors for resource column and taskbar
 
 In the Gantt Component, you can customize the background colors of the resource column and taskbars based on the resources assigned to each task. This customization enhances the readability and usability of the Gantt chart.
 
-To achieve this, utilize the [template](https://ej2.syncfusion.com/aspnetcore/documentation/gantt/columns/column-template) property for the resource column and the [queryTaskbarInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_QueryTaskbarInfo) event. The `template` property allows you to define a custom template for the resource column, while the `queryTaskbarInfo` event to modify the taskbar properties, including background colors.
+To achieve this, utilize the [template](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/columns/column-template) property for the resource column and the [queryTaskbarInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_QueryTaskbarInfo) event. The `template` property allows you to define a custom template for the resource column, while the `queryTaskbarInfo` event to modify the taskbar properties, including background colors.
 
 The following code snippet demonstrates how to customize the background colors of the taskbar and resource column according to the assigned resources:
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -154,15 +122,3 @@ The following code snippet demonstrates how to customize the background colors o
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resource-customization/rescustomize.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resource-customization/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ResCustomize.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resource-customization/rescustomize.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

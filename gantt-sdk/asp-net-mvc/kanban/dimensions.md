@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Dimensions in Syncfusion ASP.NET MVC Kanban Component
-description: Learn here all about Dimensions in Syncfusion ASP.NET MVC Kanban component of Syncfusion Essential JS 2 and more.
+title: Dimensions and Sizing in ASP.NET MVC Kanban | Syncfusion
+description: Learn how to configure dimensions, heights, and responsive sizing in Syncfusion ASP.NET MVC Kanban components.
+keywords: asp-net-mvc kanban dimensions, syncfusion kanban, sizing, responsive
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/kanban/dimensions
 platform: gantt-sdk
-control: Dimensions
-publishingplatform: gantt-sdk
+control: Dimensions - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-
-# Kanban dimensions in ASP.NET MVC Kanban control
+# Dimensions, Height, and Width Configuration in ASP.NET MVC Kanban
 
 The Kanban dimensions refers to both height and width of the entire layout and it accepts three types of values.
 
@@ -20,22 +22,6 @@ The Kanban dimensions refers to both height and width of the entire layout and i
 ## Auto height and width
 
 When height and width of the Kanban are set to `auto`, it will try as hard as possible to keep an element the same width as its parent container. In other words, the parent container that holds Kanban, its width or height will be the sum of its children. By default, Kanban is assigned with `auto` values for both the height and width properties.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/dimensions/auto/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/dimensions/auto/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/dimensions/auto/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -48,9 +34,6 @@ When height and width of the Kanban are set to `auto`, it will try as hard as po
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/dimensions/auto/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 Output be like the below.
 
@@ -59,22 +42,6 @@ Output be like the below.
 ## Height and width in pixel
 
 The Kanban height and width will be rendered exactly as per the given pixel values. It accepts both string and number values.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/dimensions/pixel/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/dimensions/pixel/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/dimensions/pixel/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -87,9 +54,6 @@ The Kanban height and width will be rendered exactly as per the given pixel valu
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/dimensions/pixel/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 Output be like the below.
 
@@ -98,22 +62,6 @@ Output be like the below.
 ## Height and width in percentage
 
 When height and width of the Kanban are given in percentage, it will make the Kanban as wide as the parent container.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/dimensions/percentage/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/dimensions/percentage/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/dimensions/percentage/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -126,9 +74,6 @@ When height and width of the Kanban are given in percentage, it will make the Ka
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/dimensions/percentage/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 Output be like the below.
 

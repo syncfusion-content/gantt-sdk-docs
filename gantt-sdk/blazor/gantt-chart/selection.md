@@ -1,19 +1,23 @@
 ---
 layout: post
-title: Selection in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Selection in Syncfusion Blazor Gantt Chart component and much more.
+title: Selection in Blazor Gantt Chart | Syncfusion
+description: Learn how to configure selection in Syncfusion Blazor Gantt Chart with row, cell, and combined selection modes for interactive task management.
+keywords: blazor gantt selection, row selection, cell selection, selection mode, selectiontype, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/selection
 platform: gantt-sdk
-control: Gantt Chart
+control: Selection - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Selection in Blazor Gantt Chart Component
+# Row and Cell Selection Modes in Blazor Gantt Chart
 
 The Selection feature provides the ability to highlight a row or cell in the Gantt component. Selection can be performed using arrow keys or mouse clicks.
 
 By default, selection is enabled. To disable selection, set the [AllowSelection](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowSelection) property to **false**.
 
-The Gantt component supports two types of selection that can be set by using the [SelectionSettings.Type](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SelectionType.html) property. They are:
+The Gantt component supports two types of selection that can be set using the [SelectionSettings.Type](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SelectionType.html) property. They are:
 
 * **Single:** Allows selection of only one row or cell at a time. This is the default behavior.
 * **Multiple:** Enables selection of multiple rows or cells. To perform multi-selection, press and hold the **Ctrl** key (on Windows/Linux) or **Cmd** key (on macOS) while clicking the desired rows or cells.
@@ -177,7 +181,7 @@ When enabled, clicking a selected row or cell will deselect it, and clicking it 
 
 ## Drag selection
 
-The Gantt Chart component allows to select range of cells or rows by mouse or touch dragging. To enable this, set [GanttSelectionSettings.AllowDragSelection](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html#Syncfusion_Blazor_Gantt_GanttSelectionSettings_AllowDragSelection) to **true** and [GanttSelectionSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html) to **Multiple**.
+The Blazor Gantt Chart component allows to select range of cells or rows by mouse or touch dragging. To enable this, set [GanttSelectionSettings.AllowDragSelection](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html#Syncfusion_Blazor_Gantt_GanttSelectionSettings_AllowDragSelection) to **true** and [GanttSelectionSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html) to **Multiple**.
 
 >* Drag selection is supported in all selection modes, configurable using the [Mode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html#Syncfusion_Blazor_Gantt_GanttSelectionSettings_Mode) property.
 
@@ -313,8 +317,8 @@ To clear selected rows and cells in the Gantt component, use the [ClearSelection
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component supports touch interaction, allowing you to intuitively navigate and interact with chart elements on touch-enabled devices like smart phones and tablets. This feature enhances usability by allowing intuitive gestures for selecting and managing tasks.
 
-[Single Row selection](https://blazor.syncfusion.com/documentation/gantt-chart/selection): Tapping a row on a touch screen automatically selects it, offering a straightforward way to interact with the chart.
+[Single Row selection](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/selection): Tapping a row on a touch screen automatically selects it, offering a straightforward way to interact with the chart.
 
-[Multiple Row selection](https://blazor.syncfusion.com/documentation/gantt-chart/selection): To select multiple rows, tap a row to display a popup that activates multi-selection mode. After tapping the popup, continue tapping the desired rows to select them. This allows you to select multiple rows simultaneously, as illustrated below:
+[Multiple Row selection](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/selection): To select multiple rows, tap a row to display a popup that activates multi-selection mode. After tapping the popup, continue tapping the desired rows to select them. This allows you to select multiple rows simultaneously, as illustrated below:
 
 ![Multiple selection in Blazor Gantt Chart](images/blazor-gantt-chart-multiple-selection.webp)

@@ -1,18 +1,21 @@
 ---
 layout: post
-title: State Persistence in Angular Gantt Chart Component | Syncfusion
-description: Learn here all about State persistence in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: State Persistence in Angular Gantt Chart | LocalStorage | Syncfusion
+description: Learn how to enable state persistence to retain configuration and data after browser refresh using localStorage.
+keywords: angular gantt state persistence, enablepersistence, localstorage, browser refresh, save state, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/state-persistence
 platform: gantt-sdk
-control: State persistence 
+control: State Persistence - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# State Persistence in Angular Gantt Chart Component
+# State Persistence with LocalStorage Support in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component supports state management to retain its configuration and data after a browser refresh during the same session.
 
-To enable this, set the [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablepersistence) property to **true**. Once enabled, the component saves its state in the browser’s [localStorage](https://www.w3schools.com/html/html5_webstorage.asp#) and restores it automatically after page reloads.
+To enable this, set the [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablepersistence) property to **true**. Once enabled, the component saves its state in the browser’s [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) and restores it automatically after page reloads.
 
 ## Restore initial Gantt state
 
@@ -133,7 +136,7 @@ When [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/ga
   
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/column-prevent/default-cs1" %}
 
-### Persist the header template and header Text
+### Persist the header template and header text
 
 By default, properties such as column template, header text, header template, formatter, and value accessor are not persisted when [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/gantt#enablepersistence) is set to **true**, as these are defined at the application level.
 

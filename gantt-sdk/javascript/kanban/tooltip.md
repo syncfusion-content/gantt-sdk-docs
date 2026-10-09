@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Tooltip in JavaScript Kanban control | Syncfusion
-description: Learn here all about Tooltip in Syncfusion JavaScript Kanban control of Syncfusion Essential JS 2 and more.
+title: Tooltips in JavaScript Kanban | Syncfusion
+description: Learn how to implement and customize tooltips in Syncfusion JavaScript Kanban for enhanced user information display.
+keywords: javascript kanban tooltip, syncfusion kanban, hover information, help text
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/kanban/tooltip
 platform: gantt-sdk
-control: Tooltip 
-publishingplatform: gantt-sdk
+control: Tooltip - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Tooltip in JavaScript Kanban control
+# Tooltip and Hover Information in JavaScript Kanban
 
 The tooltip is used to show the card information when the cursor hover over the card elements using the `enableTooltip` property. Tooltip content is dynamically set based on hovering over the card elements.
 
@@ -18,21 +20,6 @@ The tooltip is used to show the card information when the cursor hover over the 
 ## Tooltip template
 
 You can customize the tooltip content with any HTML or CSS element and styling using the `tooltipTemplate` property. In the following demo, the tooltip is customized with HTML elements.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/kanban/tooltip-template-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/kanban/tooltip-template-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/kanban/tooltip-template-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -44,4 +31,3 @@ You can customize the tooltip content with any HTML or CSS element and styling u
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/kanban/tooltip-template-cs1" %}
-{% endif %}

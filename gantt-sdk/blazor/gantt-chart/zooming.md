@@ -1,13 +1,17 @@
 ---
 layout: post
-title: Zooming in Blazor Gantt Chart Component | Syncfusion
-description: Explore zooming options in the Syncfusion Blazor Gantt Chart component, including Zoom In, Zoom Out, Zoom To Fit, and custom zooming levels.
+title: Zooming in Blazor Gantt Chart | Syncfusion
+description: Learn how to configure zooming in Syncfusion Blazor Gantt Chart with zoom in, zoom out, zoom to fit, and custom zoom level options.
+keywords: blazor gantt zooming, zoom in zoom out, zoom to fit, zoom levels, timeline zoom, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/zooming
 platform: gantt-sdk
-control: Zooming
+control: Zooming - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Zooming functionality in Blazor Gantt Chart component
+# Timeline Zooming with Zoom-In, Out and Fit in Blazor Gantt Chart
 
 The Blazor Gantt Chart component provides zooming support to adjust the timeline view dynamically. This includes increasing or decreasing the width of timeline cells and changing the timeline units to view tasks across various timespan from minutes to decades.
 
@@ -230,7 +234,7 @@ Zooming actions can be triggered dynamically or through external controls using 
 
 ## Resetting zooming levels using method
 
-In Gantt chart, you can reset the zoom level to its initial state, as configured during the initial rendering, after performing zooming actions like **ZoomIn**, **ZoomOut**, and **ZoomToFit**, using [ResetZoomAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ResetZoomAsync) method.
+In Blazor Gantt Chart, you can reset the zoom level to its initial state, as configured during the initial rendering, after performing zooming actions like **ZoomIn**, **ZoomOut**, and **ZoomToFit**, using [ResetZoomAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ResetZoomAsync) method.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}

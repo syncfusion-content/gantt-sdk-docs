@@ -1,16 +1,105 @@
 ---
 layout: post
-title: Vue 3 getting started with the Gantt Chart component | Syncfusion
-description: Check out and learn about Vue 3 getting started with the Vue Gantt Chart component of Syncfusion Essential JS 2 and more details.
-control: Vue 3 getting started
+title: Getting Started with Vue Gantt Chart in Vue 3 | Syncfusion
+description: Learn how to get started with the Syncfusion Vue Gantt Chart in a Vue 3 Vite app using the Composition API, including setup, dependencies, and configuration.
+keywords: vue 3 gantt chart, vue 3 setup, composition api, gantt chart vue 3, syncfusion gantt
+canonical: https://www.syncfusion.com/vue-components/vue-gantt-chart
 platform: gantt-sdk
+control: Getting Started - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Getting Started with the Vue Gantt Chart Component in Vue 3
+# Getting Started with Vue Gantt Chart in Vue 3
 
 This article provides a step-by-step guide for setting up a [Vite](https://vitejs.dev) project with a JavaScript environment and integrating the [Vue Gantt Chart](https://www.syncfusion.com/vue-components/vue-gantt-chart) component using the [Composition API](https://vuejs.org/guide/introduction.html#composition-api).
+
+{% tabcontents %}
+{% tabcontent Syncfusion CLI %}
+
+## Prerequisites
+
+- [Node.js 24+](https://nodejs.org/en) (LTS recommended).
+- Syncfusion CLI.
+
+## Install the Syncfusion CLI
+
+Install the Syncfusion CLI globally using the following command:
+
+{% tabs %}
+{% highlight bash tabtitle="npm" %}
+npm install -g @syncfusion/syncfusion-cli
+{% endhighlight %}
+{% endtabs %}
+
+## Set up the Vite project using Syncfusion CLI
+
+You can create a Vue application with [Vite](https://vite.dev) using the Syncfusion CLI. The CLI provides two ways to create a project:
+
+### Non-interactive mode
+
+Non-interactive mode allows you to create a project directly using a single command with the required command-line arguments.
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+sf new my-project --framework vue --template gantt
+{% endhighlight %}
+{% endtabs %}
+
+In this mode, the project configuration is passed directly in the command. The above command creates a `Vue` application with Vite and configured it with the Syncfusion<sup style="font-size:70%">&reg;</sup> `Gantt` component. The generated project uses the TypeScript and the Composition API.
+
+### Interactive mode
+
+Interactive mode guides you through the project creation process with step-by-step prompts.
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+sf
+{% endhighlight %}
+{% endtabs %}
+
+When you run the `sf` command, the CLI prompts you to select the required project configuration options. To create a Vue application with Vite and the Syncfusion<sup style="font-size:70%">&reg;</sup> `Gantt` component, select the following options:
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+√ Project name? ... my-project
+√ Choose Framework: » Vue
+√ Choose Language: » JavaScript
+√ Choose Template: » Gantt
+√ Choose Theme: » Material3
+√ Choose Style Format: » CSS
+√ Would you like to integrate the Syncfusion MCP Server (AI Assistant) into this project? ... no
+√ Would you like to install Syncfusion Component Skills for AI-powered development? ... no  
+√ Install dependencies and start app now? ... no
+
+{% endhighlight %}
+{% endtabs %}
+
+The above selections generate a `Vue` application with Vite and configure it with the Syncfusion<sup style="font-size:70%">&reg;</sup> `Gantt` component. You can choose different values for language, theme, style format, MCP setup, and skills installation based on your project requirements.
+
+The Syncfusion<sup style="font-size:70%">&reg;</sup> CLI creates the project with a predefined template. After the project is generated, you can customize or replace the component code based on your application requirements.
+
+## Run the project
+
+Once the project is created, navigate to the project directory and run the following commands in your terminal.
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+cd my-project
+npm install
+npm run dev
+{% endhighlight %}
+{% endtabs %}
+
+The output will appear as follows:
+
+![Gantt Component](./images/cli-gantt.png)
+
+{% endtabcontent %}
+
+{% tabcontent Vite CLI %}
 
 ## Prerequisites
 
@@ -91,7 +180,7 @@ Now that `my-project` is ready to run with default settings, let's add Syncfusio
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> Vue packages
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Vue component packages are available at [npmjs.com](https://www.npmjs.com/search?q=ej2-vue). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Vue components in the project, install the corresponding npm package.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Vue component packages are available at [npm package registry](https://www.npmjs.com/search?q=ej2-vue). To use Syncfusion<sup style="font-size:70%">&reg;</sup> Vue components in the project, install the corresponding npm package.
 
 This article uses the [Vue Gantt Chart component](https://www.syncfusion.com/vue-components/vue-gantt-chart) as an example. To use the Vue Gantt Chart component in the project, install the `@syncfusion/ej2-vue-gantt` package using the following command:
 
@@ -256,12 +345,7 @@ To display the Gantt Chart, bind your task data using the `dataSource` property 
 </script>
 
 <style>
-@import "../node_modules/@syncfusion/ej2-base/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-gantt/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-grids/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-treegrid/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-layouts/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css";
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/gantt/index.css";
 </style>
 
 {% endhighlight %}
@@ -292,8 +376,11 @@ The chart displays two parent tasks ("Project initiation" and "Project estimatio
 
 Web server will be initiated, Open the quick start app in the browser at port `localhost:8080`.
 
+{% endtabcontent %}
+{% endtabcontents %}
+
 ## Next Steps
 
-- **[Key Elements](./key-elements)** - Learn about UI components and interactions
-- **[Feature Modules](./module)** - Enable advanced features with module injection
-- **[Overview](./overview)** - Explore all available features
+- **[Key Elements](https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/key-elements)** - Learn about UI components and interactions
+- **[Feature Modules](https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/module)** - Enable advanced features with module injection
+- **[Overview](https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/overview)** - Explore all available features

@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Sorting in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about Sorting in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Sorting 
+title: Sorting in Vue Gantt Chart | Syncfusion
+description: Learn how to sort tasks in Syncfusion Vue Gantt Chart by columns in ascending or descending order with multi-column sorting support.
+keywords: vue gantt sorting, column sorting, sort order, multi-column sort, sort direction, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/sorting
 platform: gantt-sdk
+control: Sorting - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Sorting in Vue Gantt Chart Component
+# Column Sorting with Multi-Sort in Vue Gantt Chart
 
 Sorting enables you to sort data in the ascending or descending order. To sort a column, click the column header.
 
@@ -96,7 +99,7 @@ During the sort action, the Gantt Chart component triggers two events. The [acti
 
 ## Touch interaction
 
-To perform `tap` action on a column header, trigger [sorting](sorting#sorting) operation to the selected column. A popup is displayed for multi-column sorting. To sort multiple columns, tap the popup, and then tap the desired column headers.
+To perform `tap` action on a column header, trigger [sorting](https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/sorting#sorting) operation to the selected column. A popup is displayed for multi-column sorting. To sort multiple columns, tap the popup, and then tap the desired column headers.
 
 The following screenshot shows Gantt touch sorting,
 

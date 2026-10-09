@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Sorting in React Gantt Chart Component | Syncfusion
-description: Learn here all about Sorting in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Sorting in React Gantt Chart | Syncfusion
+description: Learn how to configure single and multi-column sorting in Syncfusion React Gantt Chart for organizing project tasks in ascending or descending order.
+keywords: react gantt sorting, multi-column sort, column sorting, task ordering, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/sorting
 platform: gantt-sdk
-control: Sorting 
+control: Sorting - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Sorting in React Gantt Chart Component
+# Column Sorting with Multi-Sort Support in React Gantt Chart
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component provides sorting functionality to arrange task data in ascending or descending order based on column values.
 
@@ -16,7 +19,7 @@ To enable sorting, set the [allowSorting](https://ej2.syncfusion.com/react/docum
 
 Sorting is applied by clicking a column header. For multi-column sorting, hold the **CTRL** key while selecting additional headers. To remove sorting from a specific column in a multi-sorted view, hold the **SHIFT** key and click the column header. For details on keyboard interactions, refer to the [selection keyboard interaction](https://ej2.syncfusion.com/react/documentation/grid/accessibility#keyboard-interaction) documentation.
 
-To enable sorting functionality, add the [Sort](https://ej2.syncfusion.com/react/documentation/api/gantt#sortmodule) service in the `providers` of the component.
+To enable sorting functionality, add the [Sort](https://ej2.syncfusion.com/react/documentation/api/gantt#sortmodule) service in the `providers` array of the component.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
@@ -37,7 +40,7 @@ To enable sorting functionality, add the [Sort](https://ej2.syncfusion.com/react
 
 ## Initial sorting
 
-You can apply sorting during the initial render of the Syncfusion React Gantt Chart component by configuring the [sortSettings.columns](https://ej2.syncfusion.com/react/documentation/api/gantt/sortSettings#columns) property. Each column should be defined with a specific [field](https://ej2.syncfusion.com/react/documentation/api/gantt/sortDescriptorModel#field) and [direction](https://ej2.syncfusion.com/react/documentation/api/gantt/sortDescriptorModel#direction), ensuring that the Gantt loads with the desired sort order applied to the specified columns.
+You can apply sorting during the initial render of the Syncfusion React Gantt Chart component by configuring the [sortSettings.columns](https://ej2.syncfusion.com/react/documentation/api/gantt/sortSettings#columns) property. Each column should be defined with a specific [field](https://ej2.syncfusion.com/react/documentation/api/gantt/sortDescriptorModel#field) and [direction](https://ej2.syncfusion.com/react/documentation/api/gantt/sortDescriptorModel#direction), ensuring that the Gantt loads with the desired sort order applied to those columns.
 
 The following code example shows how to add sorted columns during Gantt initialization, with `field` set to **TaskID** and `direction` to **Descending**, and another with `field` as **TaskName** and `direction` as **Ascending**.
 
@@ -245,6 +248,6 @@ By default, clicking a column header switches the sort order between ascending, 
 
 ## Touch interaction
 
-To perform a tap action on a column header in the React Gantt Chart component, the [sorting](sorting#sorting) operation is triggered for the selected column. A popup appears when multi-column sorting is enabled. To sort multiple columns, tap the popup and then tap the desired column headers. The following screenshot shows Gantt touch sorting.
+To perform a tap action on a column header in the React Gantt Chart component, the [sorting](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/sorting#sorting) operation is triggered for the selected column. A popup appears when multi-column sorting is enabled. To sort multiple columns, tap the popup and then tap the desired column headers. The following screenshot shows Gantt touch sorting.
 
 ![Multiple Sorting](images/multiple-sorting.png)

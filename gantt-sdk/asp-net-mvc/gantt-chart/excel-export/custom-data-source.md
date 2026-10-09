@@ -1,30 +1,19 @@
 ---
 layout: post
-title: Custom data source in Syncfusion ASP.NET MVC Gantt Component
-description: Learn here all about Custom data source in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Custom Data Source in Excel Export | ASP.NET MVC Gantt | Syncfusion
+description: Learn how to use custom data sources for Excel export in Syncfusion ASP.NET MVC Gantt Chart with flexible data transformation options.
+keywords: asp.net mvc gantt custom datasource, excel export data source, export custom data, data export, excel datasource, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/custom-data-source
 platform: gantt-sdk
-control: Excel Export
-publishingplatform: gantt-sdk
+control: Excel Export - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-
-# Custom data source in gantt control
+# Configuring Advanced Excel Export Options for ASP.NET MVC Gantt Chart
 
 The excel export provides an option to define datasource dynamically before exporting. To export data dynamically, define the `dataSource` in `exportProperties`.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/customDataSource/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="CustomDataSource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/customDataSource/customDataSource.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -34,4 +23,3 @@ The excel export provides an option to define datasource dynamically before expo
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/excel-export/customDataSource/customDataSource.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

@@ -1,11 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET MVC Gantt Chart Control | Syncfusion
-description: Checkout and learn about getting started with ASP.NET MVC Gantt Chart control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET MVC Gantt Chart | Syncfusion
+description: Explore how to get started with Syncfusion ASP.NET MVC Gantt Chart configure the control, bind data, map fields, and visualize project timelines quickly.
+keywords: asp.net mvc gantt getting started, gantt setup, project timeline, task scheduling, syncfusion gantt chart
+canonical: https://www.syncfusion.com/gantt-sdk/aspnet-mvc-gantt-chart
 platform: gantt-sdk
-control: Getting Started
-publishingplatform: gantt-sdk
+control: Getting Started - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Getting Started with ASP.NET MVC Gantt Chart Control
@@ -16,16 +19,16 @@ This guide walks you through setting up and integrating the [ASP.NET MVC Gantt](
 
 ## Prerequisites
 
-* [System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements)
-* Visual Studio 2017 or later
-* .NET Framework 4.5 or later with ASP.NET MVC 5
-* A valid Syncfusion<sup style="font-size:70%">&reg;</sup> license key. Trial users can obtain a free community license from your [Syncfusion account](https://www.syncfusion.com/account) and register it in `Global.asax` `Application_Start` as shown in the [Register Syncfusion<sup style="font-size:70%">&reg;</sup> license key](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/how-to-register-in-an-application) topic.
+- [System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements)
+- Visual Studio 2017 or later
+- .NET Framework 4.5 or later with ASP.NET MVC 5
+- A valid Syncfusion<sup style="font-size:70%">&reg;</sup> license key. Trial users can obtain a free community license from your [Syncfusion account](https://www.syncfusion.com/account) and register it in `Global.asax` `Application_Start` as shown in the [Register Syncfusion<sup style="font-size:70%">&reg;</sup> license key](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/how-to-register-in-an-application) topic.
 
 ## Create ASP.NET MVC application with HTML helper
 
-* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
+- [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
+- [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
 ## Install ASP.NET MVC package in the application
 
@@ -39,7 +42,7 @@ Install-Package Syncfusion.EJ2.MVC5 -Version {{ site.ej2version }}
 {% endhighlight %}
 {% endtabs %}
 
-N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). Refer to the [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating the Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
+N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). Refer to the [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing) for validating the Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
 ## Add namespace
 
@@ -81,7 +84,6 @@ The theme styles and client-side scripts are referenced using a CDN inside the `
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
-{% raw %}
 <head>
     ...
     <!-- Syncfusion ASP.NET MVC controls styles -->
@@ -89,7 +91,6 @@ The theme styles and client-side scripts are referenced using a CDN inside the `
     <!-- Syncfusion ASP.NET MVC controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
-{% endraw %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -167,12 +168,12 @@ using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
-    public class HomeController : Controller
-    {
-        public ActionResult Index()
-        {
-            return View(GanttData());
-        }
+public class HomeController : Controller
+{
+public ActionResult Index()
+{
+return View(GanttData());
+}
 
         public static List<GanttDataSource> GanttData()
         {
@@ -190,6 +191,7 @@ namespace WebApplication1.Controllers
             return GanttDataSourceCollection;
         }
     }
+
 }
 {% endhighlight %}
 {% endtabs %}
@@ -203,16 +205,16 @@ Open `~/Views/Home/Index.cshtml` and replace its contents with the following. Th
 @model List<WebApplication1.Models.GanttDataSource>
 
 @{
-    ViewBag.Title = "Gantt Chart Overview";
+ViewBag.Title = "Gantt Chart Overview";
 }
 
 @Html.EJS().Gantt("gantt").DataSource(Model).TaskFields(ts => ts.Id("TaskId")
-        .Name("TaskName")
-        .StartDate("StartDate")
-        .EndDate("EndDate")
-        .Duration("Duration")
-        .Progress("Progress")
-        .ParentID("ParentID")).Render()
+.Name("TaskName")
+.StartDate("StartDate")
+.EndDate("EndDate")
+.Duration("Duration")
+.Progress("Progress")
+.ParentID("ParentID")).Render()
 {% endhighlight %}
 {% endtabs %}
 
@@ -220,20 +222,20 @@ Open `~/Views/Home/Index.cshtml` and replace its contents with the following. Th
 
 The `TaskFields` fluent builder maps each data field to a Gantt Chart property. The most common options are listed below.
 
-| Property | Description | Required | Maps to sample field |
-|----------|-------------|----------|----------------------|
-| `Id` | Unique task identifier | Yes | `TaskId` |
-| `Name` | Task display name | Yes | `TaskName` |
-| `StartDate` | Task start date | Yes | `StartDate` |
-| `EndDate` | Task end date (used when `Duration` is null) | No | `EndDate` |
-| `Duration` | Task duration in days (used when `EndDate` is null) | No | `Duration` |
-| `Progress` | Task completion percentage (0–100) | No | `Progress` |
-| `ParentID` | Parent task ID for hierarchy | No (required for hierarchical data) | `ParentID` |
-| `Child` | Mapping for self-referential child collection | No | – |
-| `Dependency` | Predecessor field name | No | – |
-| `ResourceInfo` | Resource mapping field name | No | – |
-| `BaselineStartDate` / `BaselineEndDate` | Baseline date fields | No | – |
-| `Notes` | Task notes | No | – |
+| Property                                | Description                                         | Required                            | Maps to sample field |
+| --------------------------------------- | --------------------------------------------------- | ----------------------------------- | -------------------- |
+| `Id`                                    | Unique task identifier                              | Yes                                 | `TaskId`             |
+| `Name`                                  | Task display name                                   | Yes                                 | `TaskName`           |
+| `StartDate`                             | Task start date                                     | Yes                                 | `StartDate`          |
+| `EndDate`                               | Task end date (used when `Duration` is null)        | No                                  | `EndDate`            |
+| `Duration`                              | Task duration in days (used when `EndDate` is null) | No                                  | `Duration`           |
+| `Progress`                              | Task completion percentage (0–100)                  | No                                  | `Progress`           |
+| `ParentID`                              | Parent task ID for hierarchy                        | No (required for hierarchical data) | `ParentID`           |
+| `Child`                                 | Mapping for self-referential child collection       | No                                  | –                    |
+| `Dependency`                            | Predecessor field name                              | No                                  | –                    |
+| `ResourceInfo`                          | Resource mapping field name                         | No                                  | –                    |
+| `BaselineStartDate` / `BaselineEndDate` | Baseline date fields                                | No                                  | –                    |
+| `Notes`                                 | Task notes                                          | No                                  | –                    |
 
 > Use either `EndDate` or `Duration` for each task. If both are supplied, `EndDate` takes precedence.
 
@@ -243,13 +245,13 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ### Troubleshooting
 
-| Issue | Likely cause | Fix |
-|-------|--------------|-----|
-| Blank chart, console shows a license warning | License key not registered | Register the key in `Application_Start` (see [Prerequisites](#prerequisites)). |
-| `CS0246: The type or namespace name 'Syncfusion' could not be found` | `Syncfusion.EJ2` namespace not registered | Add the namespace to `~/Views/Web.config` (see [Add namespace](#add-namespace)). |
-| `CS1061: 'HtmlHelper<...>' does not contain a definition for 'Gantt'` | Helper assembly not referenced | Reinstall the `Syncfusion.EJ2.MVC5` NuGet package and rebuild. |
-| Chart renders without rows | `DataSource` is null in the view | Verify that the `HomeController.Index` action returns the data list and that the `@model` directive matches the list type. |
-| Resource 404 for `fluent.css` / `ej2.min.js` | Network blocked, CDN unreachable, or `{{ site.ej2version }}` not resolved | Refer to the styles and scripts via [NPM](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references#node-package-manager-npm) or [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator) instead. |
+| Issue                                                                 | Likely cause                                                              | Fix                                                                                                                                                                                                                                                           |
+| --------------------------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Blank chart, console shows a license warning                          | License key not registered                                                | Register the key in `Application_Start` (see [Prerequisites](#prerequisites)).                                                                                                                                                                                |
+| `CS0246: The type or namespace name 'Syncfusion' could not be found`  | `Syncfusion.EJ2` namespace not registered                                 | Add the namespace to `~/Views/Web.config` (see [Add namespace](#add-namespace)).                                                                                                                                                                              |
+| `CS1061: 'HtmlHelper<...>' does not contain a definition for 'Gantt'` | Helper assembly not referenced                                            | Reinstall the `Syncfusion.EJ2.MVC5` NuGet package and rebuild.                                                                                                                                                                                                |
+| Chart renders without rows                                            | `DataSource` is null in the view                                          | Verify that the `HomeController.Index` action returns the data list and that the `@model` directive matches the list type.                                                                                                                                    |
+| Resource 404 for `fluent.css` / `ej2.min.js`                          | Network blocked, CDN unreachable, or `{{ site.ej2version }}` not resolved | Refer to the styles and scripts via [NPM](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references#node-package-manager-npm) or [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator) instead. |
 
 ## Output
 
@@ -260,14 +262,14 @@ You will see a Gantt Chart with:
 - Progress indicators on each task.
 - End dates automatically calculated from `StartDate` + `Duration` for child tasks.
 
-![ASP.NET MVC Gantt Chart Control](images/gantt-control.png)
+![ASP.NET MVC Gantt Chart Control](./images/gantt-control.png)
 
 ## See also
 
-- **[Key Elements](https://ej2.syncfusion.com/aspnetmvc/documentation/gantt/key-elements)** – Learn about UI components and interactions
-- **[Data Binding](https://ej2.syncfusion.com/aspnetmvc/documentation/gantt/data-binding)** – Bind to local, remote, and adaptor-based data sources
-- **[Columns](https://ej2.syncfusion.com/aspnetmvc/documentation/gantt/columns/columns)** – Configure the tree column and task columns
-- **[Task Scheduling](https://ej2.syncfusion.com/aspnetmvc/documentation/gantt/task-scheduling)** – Configure working time, dependencies, and constraints
-- **[Overview](https://ej2.syncfusion.com/aspnetmvc/documentation/gantt/overview)** – Explore all available features
+- **[Key Elements](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/key-elements)** – Learn about UI components and interactions
+- **[Data Binding](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/data-binding)** – Bind to local, remote, and adaptor-based data sources
+- **[Columns](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/columns/columns)** – Configure the tree column and task columns
+- **[Task Scheduling](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/scheduling-tasks)** – Configure working time, dependencies, and constraints
+- **[Overview](https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/overview)** – Explore all available features
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Gantt/ASP.NET%20MVC%20Razor%20Examples).

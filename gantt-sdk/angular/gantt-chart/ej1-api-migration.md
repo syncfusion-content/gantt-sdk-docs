@@ -1,18 +1,21 @@
 ---
 layout: post
-title: Ej1 api migration in Angular Gantt Chart component | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: EJ1 to EJ2 API Migration in Angular Gantt Chart | Syncfusion
+description: Learn how to migrate from EJ1 to EJ2 Gantt Chart in Angular with the complete API mapping reference, code changes, and step-by-step migration guidance.
+keywords: ej1 to ej2 migration, gantt api migration, angular gantt upgrade, api mapping, syncfusion migration
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/ej1-api-migration
 platform: gantt-sdk
-control: Ej1 api migration 
+control: EJ1 to EJ2 Migration - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Ej1 api migration in Angular Gantt Chart component
+# EJ1 to EJ2 API Migration in Angular Gantt Chart
 
 This topic shows the API equivalent of JS2 Gantt Chart component to be used, while migrating your project that uses JS1 Gantt.
 
-## Data Binding and Task mapping
+## Data binding and task mapping
 
 |Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
@@ -125,7 +128,7 @@ This topic shows the API equivalent of JS2 Gantt Chart component to be used, whi
 | Custom toolbar | **Property:** *toolbarSettings.customToolbarItems* <br/> <br/> `<ej-gantt [toolbarSettings]= "toolbarSettings">`<br>`</ej-gantt>`<br> **TS** <br>`this.toolbarSettings = {`<br>&nbsp;&nbsp;`showToolbar: true,`<br>&nbsp;&nbsp;`customToolbarItems: [{ text: "ShowBaseline", tooltipText: "Show Baseline" }, { text: "Reset", tooltipText:"Reset" }]`<br>`};` | **Property:** *toolbar* <br/><br/> `<ejs-gantt [toolbar]="toolbar">`<br>`</ejs-gantt>`<br> **TS** <br>`this.toolbar = [{text: 'Quick Filter', tooltipText: 'Quick Filter', id: 'toolbarfilter', align:'Right'}];` |
 | Triggers when toolbar items clicked | **Event:** *toolbarClick* <br/><br/>`<ej-gantt id="Gantt" (toolbarClick)="toolbarClick($event)">`<br>`</ej-gantt>`<br> **TS** <br>`toolbarClick(event) { }` | **Event:** *toolbarClick* <br/><br/>`<ejs-gantt (toolbarClick)="toolbarClick($event)">`<br>`</ejs-gantt>`<br> **TS** <br>`public toolbarClick(event) { }` |
 
-## ToolTip
+## Tooltip
 
 |Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
@@ -196,7 +199,7 @@ This topic shows the API equivalent of JS2 Gantt Chart component to be used, whi
 | To render baseline | **Property:** *renderBaseline* <br><br> `<ej-gantt [renderBaseline] = "true">`<br>`</ej-gantt>`| **Property:** *renderBaseline* <br><br>`<ejs-gantt [renderBaseline]="true">`<br>`</ejs-gantt>` |
 | To define baselineColor | **Property:** *baselineColor* <br><br> `<ej-gantt [baselineColor]= "blue">`<br>`</ej-gantt>`| **Property:** *baselineColor* <br><br>`<ejs-gantt baselineColor="red">`<br>`</ejs-gantt>` |
 
-## Context Menu
+## Context menu
 
 |Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
@@ -204,7 +207,7 @@ This topic shows the API equivalent of JS2 Gantt Chart component to be used, whi
 | To define custom menu items  | **Event:** *contextMenuOpen* <br><br>`<ej-gantt id="Gantt" (contextMenuOpen)="contextMenuOpen($event)">`<br>`</ej-gantt>`<br> **TS** <br>`contextMenuOpen(event) {`<br/>&nbsp;&nbsp;`event.contextMenuItems.push({`<br>&nbsp;&nbsp;&nbsp;`headerText: "Expand/Collapse",`<br>&nbsp;&nbsp;&nbsp;`menuId: "expand",`<br>&nbsp;&nbsp;&nbsp;`iconPath: "url(Expand-02-WF.png)",`<br>&nbsp;&nbsp;&nbsp;`eventHandler: function() {`<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`//event handler for custom menu items`<br>&nbsp;&nbsp;&nbsp;`}`<br>`});`<br>`}`<br>`}`| **Property:** *contextMenuItems* <br><br>`<ejs-gantt [contextMenuItems]="contextMenuItems">`<br>`</ejs-gantt>`<br> **TS** <br>`this.contextMenuItems = [` <br>&nbsp;`{ text: 'Collapse the Row', target: '.e-content', id: 'collapserow' } as ContextMenuItemModel,`<br>&nbsp;`{ text: 'Expand the Row', target: '.e-content', id: 'expandrow' } as ContextMenuItemModel`<br>`];`|
 | Triggers before context menu opens | **Event:** *contextMenuOpen* <br/><br/>`<ej-gantt id="Gantt" (contextMenuOpen)="contextMenuOpen($event)">`<br>`</ej-gantt>`<br> **TS** <br>`contextMenuOpen(event) { }` | **Event:** *contextMenuOpen* <br/><br/>`<ejs-gantt (contextMenuOpen)="contextMenuOpen($event)">`<br>`</ejs-gantt>`<br> **TS** <br>`public contextMenuOpen(event) { }` |
 
-## Scheduling Tasks
+## Scheduling tasks
 
 |Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
@@ -218,7 +221,7 @@ This topic shows the API equivalent of JS2 Gantt Chart component to be used, whi
  To set working days of a week | **Property:** *workweek* <br/><br/> `<ej-gantt [workweek]= "workweek">`<br>`</ej-gantt>`<br> **TS** <br>`this.workweek = ["Sunday","Monday","Tuesday","Wednesday","Thursday"];`| **Property:** *workWeek* <br/><br/>`<ejs-gantt [workWeek]="workWeek">`<br>`</ejs-gantt>`<br> **TS** <br>`this.workWeek = ["Sunday","Monday","Tuesday","Wednesday","Thursday"];` |
 | To enable/disable Unscheduled tasks | **Property:** *allowUnscheduledTask* <br><br> `<ej-gantt [allowUnscheduledTask]="true">`<br>`</ej-gantt>`| **Property:** *allowUnscheduledTasks* <br><br>`<ejs-gantt allowUnscheduledTasks="true">`<br>`</ejs-gantt>` |
 
-## Appearance and Customizations
+## Appearance and customizations
 
 |Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |

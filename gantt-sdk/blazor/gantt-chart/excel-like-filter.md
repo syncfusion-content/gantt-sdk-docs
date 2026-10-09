@@ -1,13 +1,17 @@
 ---
 layout: post
 title: Excel Like Filter in Blazor Gantt Chart | Syncfusion
-description: Checkout and learn here all about Excel like filter in Syncfusion Blazor Gantt Chart and much more details.
+description: Learn how to enable Excel-like filtering in Syncfusion Blazor Gantt Chart with search, sort, and checkbox options for advanced column filtering.
+keywords: blazor gantt excel filter, excel like filter, checkbox filter, search filter, advanced filter, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/excel-like-filter
 platform: gantt-sdk
-control: Gantt Chart
+control: Excel Like Filter - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Excel like filter in Blazor Gantt Chart component
+# Excel-Like Filter with Checkbox and Search in Blazor Gantt Chart
 
 The Excel-like filter in Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component enables column-level filtering similar to Microsoft Excel. It supports sorting, clearing filters, and applying advanced conditions through a submenu available in each column header. This feature is highly effective for working with large datasets and applying multiple filter criteria.
 
@@ -217,7 +221,7 @@ In the Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart, ther
 
 The Excel filter dialog includes several features such as **context menu**, **search box**, and **checkbox list** that may not be required in some project management scenarios. 
 
-To remove the context menu from the filter dialog, apply the following CSS rule to the Gantt Chart:
+To remove the context menu from the filter dialog, apply the following CSS rule to the Blazor Gantt Chart:
 
 ```cshtml
 <style>
@@ -350,7 +354,7 @@ You can adjust the height and width of the filter dialog for each column using C
 
 ### Customize filter icon for filtered columns
 
-When a column is filtered, the Gantt Chart displays a default icon with predefined styles. You can customize this icon using the **.e-gantt .e-filtered::before** CSS class for enhanced project visualization.
+When a column is filtered, the Blazor Gantt Chart displays a default icon with predefined styles. You can customize this icon using the **.e-gantt .e-filtered::before** CSS class for enhanced project visualization.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -445,4 +449,4 @@ When a column is filtered, the Gantt Chart displays a default icon with predefin
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/VNhdDGBNLBYifbYM?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-> The [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page provides comprehensive feature representations. The [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/overview?theme=bootstrap4) demonstrates how to present and manipulate project data effectively.
+> The [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) feature tour page provides comprehensive feature representations. The [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/overview?theme=fluent2) demonstrates how to present and manipulate project data effectively.

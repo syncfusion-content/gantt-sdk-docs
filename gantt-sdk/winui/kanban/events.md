@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Events in WinUI Kanban control | Syncfusion<sup>®</sup>
-description: Learn here all about the interaction-related events support in Syncfusion<sup>®</sup> WinUI Kanban (SfKanban) control.
+title: Events in WinUI Kanban Board | Syncfusion<sup>®</sup>
+description: Learn about Events support in Syncfusion<sup>®</sup> WinUI Kanban Board including card interactions, selection changes, drag-and-drop operations.
 platform: gantt-sdk
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Events in WinUI Kanban (SfKanban)
+# Events in WinUI Kanban Board
 
 ## ColumnDragStarting
 
@@ -214,7 +215,7 @@ public class ViewModel
 The [CardDragStarting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDragStarting) event occurs when a card begins to be dragged. We can get the following details from the [CardDragStarting](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDragStarting) event.
 
 * [Column](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragStartingEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragStartingEventArgs_Column) -  Returns the source column from which the card is being dragged.
-* [Card](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragStartingEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragStartingEventArgs_Card) - Returns the dragging card in the kanban.
+* [Card](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragStartingEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragStartingEventArgs_Card) - Returns the card being dragged.
 * [KeepCard](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDragStartingEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDragStartingEventArgs_KeepCard) - Determines whether the original card remains in the source column during a drag operation. When set to `true`, the card stays in its original column while being dragged, allowing repeated drag-and-drop actions without relocating the card. A preview of the card is generated during the drag.
 
 {% tabs %}
@@ -766,7 +767,7 @@ public class ViewModel
 
 ## Command
 
-Kanban commands allow to map [CardTapped](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTapped) event to command which supports the MVVM (Model-View-ViewModel) pattern.
+Commands allow to map [CardTapped](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardTapped) event to command which supports the MVVM (Model-View-ViewModel) pattern.
 
 ### CardTappedCommand
 
@@ -962,4 +963,170 @@ public class RelayCommand : ICommand
 }
 
 {% endhighlight %}
+
+{% endtabs %}
+
+## CardSelected
+
+The [CardSelected](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardSelected) event occurs when one or more cards are selected in the Kanban board. The event is raised once per selection update cycle.
+
+We can get the following details from the [CardSelected](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardSelected) event.
+
+* [SelectedCard](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardSelectedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardSelectedEventArgs_SelectedCard) - Returns the card that initiated the selection operation.
+* [SelectedCards](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardSelectedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardSelectedEventArgs_SelectedCards) - Returns the collection of cards that are currently selected in the Kanban board.
+* [SelectedCardIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardSelectedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardSelectedEventArgs_SelectedCardIndex) - Returns the index of the selected card that initiated the selection operation.
+* [IsControlKeyPressed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardSelectedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardSelectedEventArgs_IsControlKeyPressed) - Returns a value indicating whether the Control key was pressed during the selection.
+* [IsShiftKeyPressed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardSelectedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardSelectedEventArgs_IsShiftKeyPressed) - Returns a value indicating whether the Shift key was pressed during the selection.
+* [Column](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardSelectedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardSelectedEventArgs_Column) - Returns the Kanban column associated with the selection.
+
+{% tabs %}
+
+{% highlight XAML hl_lines="3" %}
+
+<kanban:SfKanban x:Name="kanban" ItemsSource="{Binding TaskDetails}" 
+                                 SelectionMode="Multiple" 
+                                 CardSelected="OnKanbanCardSelected">
+</kanban:SfKanban>
+
+{% endhighlight %}
+
+{% highlight C# hl_lines="12" %}
+
+this.kanban.ItemsSource = new ViewModel().TaskDetails; 
+this.kanban.SelectionMode = KanbanSelectionMode.Multiple; 
+this.kanban.CardSelected += this.OnKanbanCardSelected;
+
+private void OnKanbanCardSelected(object sender, KanbanCardSelectedEventArgs e)
+{ 
+    var selectedCard = e.SelectedCard; 
+    var selectedCards = e.SelectedCards; 
+    int selectedCardIndex = e.SelectedCardIndex; 
+    bool isControlKeyPressed = e.IsControlKeyPressed; 
+    bool isShiftKeyPressed = e.IsShiftKeyPressed; 
+    var column = e.Column; 
+}
+
+{% endhighlight %}
+
+{% highlight c# tabtitle="ViewModel.cs" %}
+
+public class ViewModel 
+{
+    public ObservableCollection<KanbanModel> TaskDetails { get; set; }
+
+    public ViewModel()
+    {
+        this.TaskDetails = new ObservableCollection<KanbanModel>();
+        this.GetTaskDetails();
+    }
+
+    private void GetTaskDetails()
+    {
+        this.TaskDetails.Add(new KanbanModel()
+        {
+            Title = "UWP Issue",
+            Description = "Crosshair label template not visible in UWP",
+            Category = "Open"
+        });
+
+        this.TaskDetails.Add(new KanbanModel()
+        {
+            Title = "Kanban Feature",
+            Description = "Provide drag and drop support",
+            Category = "In Progress"
+        });
+
+        this.TaskDetails.Add(new KanbanModel()
+        {
+            Title = "WF Issue",
+            Description = "HorizontalAlignment for tooltip is not working",
+            Category = "Done"
+        });
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## CardDeselected
+
+The [CardDeselected](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDeselected) event occurs when one or more cards are deselected in the Kanban board. The event is raised once per deselection update cycle.
+
+We can get the following details from the [CardDeselected](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDeselected) event.
+
+* [DeselectedCard](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDeselectedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDeselectedEventArgs_DeselectedCard) - Returns the card that initiated the deselection operation.
+* [DeselectedCards](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDeselectedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDeselectedEventArgs_DeselectedCards) - Returns the collection of cards that are deselected in the Kanban board.
+* [IsControlKeyPressed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDeselectedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDeselectedEventArgs_IsControlKeyPressed) - Returns a value indicating whether the Control key was pressed during the deselection.
+* [IsShiftKeyPressed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDeselectedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDeselectedEventArgs_IsShiftKeyPressed) - Returns a value indicating whether the Shift key was pressed during the deselection.
+* [Column](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Kanban.KanbanCardDeselectedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanCardDeselectedEventArgs_Column) - Returns the Kanban column associated with the deselection.
+
+{% tabs %}
+
+{% highlight XAML hl_lines="5" %}
+
+<kanban:SfKanban x:Name="kanban" 
+                 ItemsSource="{Binding TaskDetails}" 
+                 SelectionMode="Multiple" 
+                 CardDeselected="OnKanbanCardDeselected">
+</kanban:SfKanban>
+
+{% endhighlight %}
+
+{% highlight C# hl_lines="11" %}
+
+this.kanban.ItemsSource = new ViewModel().TaskDetails; 
+this.kanban.SelectionMode = KanbanSelectionMode.Multiple; 
+this.kanban.CardDeselected += this.OnKanbanCardDeselected;
+
+private void OnKanbanCardDeselected(object sender, KanbanCardDeselectedEventArgs e) 
+{
+    var deselectedCard = e.DeselectedCard;
+    var deselectedCards = e.DeselectedCards;
+    bool isControlKeyPressed = e.IsControlKeyPressed;
+    bool isShiftKeyPressed = e.IsShiftKeyPressed;
+    var column = e.Column;
+}
+
+{% endhighlight %}
+
+{% highlight c# tabtitle="ViewModel.cs" %}
+
+public class ViewModel 
+{
+    public ObservableCollection<KanbanModel> TaskDetails { get; set; }
+
+    public ViewModel()
+    {
+        this.TaskDetails = new ObservableCollection<KanbanModel>();
+        this.GetTaskDetails();
+    }
+
+    private void GetTaskDetails()
+    {
+        this.TaskDetails.Add(new KanbanModel()
+        {
+            Title = "UWP Issue",
+            Description = "Crosshair label template not visible in UWP",
+            Category = "Open"
+        });
+
+        this.TaskDetails.Add(new KanbanModel()
+        {
+            Title = "Kanban Feature",
+            Description = "Provide drag and drop support",
+            Category = "In Progress"
+        });
+
+        this.TaskDetails.Add(new KanbanModel()
+        {
+            Title = "WF Issue",
+            Description = "HorizontalAlignment for tooltip is not working",
+            Category = "Done"
+        });
+    }
+}
+
+{% endhighlight %}
+
 {% endtabs %}

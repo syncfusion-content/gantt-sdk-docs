@@ -1,18 +1,21 @@
 ---
 layout: post
-title: Work in Vue Gantt Chart component | Syncfusion
-description: Learn here all about Work in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Work 
+title: Work in Vue Gantt Chart | Syncfusion
+description: Learn how to manage work values in Syncfusion Vue Gantt Chart with different work units like hour, day, and minute.
+keywords: vue gantt work, work hours, work units, task effort, duration, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/work
 platform: gantt-sdk
+control: Work - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Work in Vue Gantt Chart component
+# Work and Effort Tracking with Task Type Support in Vue Gantt Chart
 
 ## Work
 
-The work is the total hours required to complete a task. Work can be mapped from the data source field using the property [taskFields.work](https://ej2.syncfusion.com/vue/documentation/api/gantt/taskFields#work). Work can be measured in `Hour`, `Day`, `Minute`. By default, work is measured in `Hour` and it can be changed, by using the property [workUnit](https://ej2.syncfusion.com/vue/documentation/api/gantt#viewtype).
+The work is the total hours required to complete a task. Work can be mapped from the data source field using the property [taskFields.work](https://ej2.syncfusion.com/vue/documentation/api/gantt/taskFields#work). Work can be measured in `Hour`, `Day`, `Minute`. By default, work is measured in `Hour` and it can be changed, by using the property [workUnit](https://ej2.syncfusion.com/vue/documentation/api/gantt#workunit).
 
 >Note: When the work field is mapped from the data source, the default task type will be `FixedWork`.
 

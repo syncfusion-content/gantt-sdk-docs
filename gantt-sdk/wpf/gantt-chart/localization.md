@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Localization in WPF Gantt control | Syncfusion
-description: Learn about Localization support in Syncfusion Essential Studio WPF Gantt control, its elements and more details.
+title: Localization in WPF Gantt | Syncfusion
+description: Learn about Localization support in Syncfusion WPF Gantt  for different languages and regional settings.
 platform: gantt-sdk
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 
@@ -31,7 +32,7 @@ public MainWindow()
 To localize the [GanttControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html) based on `CurrentUICulture` using resource files, follow the below steps. 
 
 1.Create new folder and named as **Resources** in your application. 
-2.Add the default resource file of GanttControl into **Resources** folder. You can download the Syncfusion.Gantt.WPF.resx [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Resources-2137559261.zip).
+2.Add the default resource file into the **Resources** folder. You can download the Syncfusion.Gantt.WPF.resx [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Resources-2137559261.zip).
 
 ![ResourceReference](Localization_images/ResourceReference.png)
 
@@ -53,4 +54,4 @@ For example, you have to give name as **Syncfusion.Gantt.WPF.fr.resx** for Frenc
 
 ![localization-in-wpf-gantt-control](Localization_images/localization-in-wpf-gantt-control.png)
 
-You can download the sample for localization of Gantt from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_Gantt-1030234357.zip)
+You can download the localization sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_Gantt-1030234357.zip)

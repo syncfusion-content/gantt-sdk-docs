@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Strip Lines in WPF Gantt control | Syncfusion
-description: Learn about Strip Lines support in Syncfusion Essential Studio WPF Gantt control, its elements and more details.
+title: Strip Lines in WPF Gantt | Syncfusion
+description: Learn about Strip Lines support in Syncfusion WPF Gantt to highlight important events, milestones, and recurring dates in the project timeline.
 platform: gantt-sdk
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Strip Lines in WPF Gantt
 
-The Gantt provides support to add strip lines in the Gantt chart region that denotes an important event in a sequential timeline. By using this feature, you can add strip lines to highlight the important days in your project. You can add a collection of strip lines using the provided API.
+The control provides support to add strip lines in the Gantt chart region that denote an important event in a sequential timeline. By using this feature, you can add strip lines to highlight the important days in your project. You can add a collection of strip lines using the provided API.
 
 ## Strip lines in Essential Gantt support the following features:
 
@@ -18,9 +19,9 @@ Strip lines can be repeatable in the Gantt chart region based on repeat behavior
 * You can modify the content or appearance of the strip lines at run time by changing the values of the underlying collection source.
 * The visibility of strip lines can be toggled using the [`ShowStripLines`](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ShowStripLines) property in the Gantt control.
 
-The Gantt control will get the information from the application to draw the strip lines. Gantt will accept the strip line information in the form of a collection of StripLineInfo objects and process it to draw the strip lines.
+The control will get the information from the application to draw the strip lines. Gantt will accept the strip line information in the form of a collection of `StripLineInfo` objects and process it to draw the strip lines.
 
-#### Repeat behavior
+### Repeat behavior
 
 The available repeat behaviors are as follows:
 
@@ -31,9 +32,9 @@ The available repeat behaviors are as follows:
 * Hour
 * Minute
 
-#### Style selector
+### Style selector
 It used to pass the style of the strip lines dynamically. Based on constraints.
-#### Template selector
+### Template selector
 It used to pass the content template of the strip lines dynamically based on constraints.
 
 ## Types of strip lines
@@ -157,12 +158,12 @@ Double</td></tr>
 </table>
 
 
-#### Use Case Scenarios
+### Use Case Scenarios
 
 * You can mark the important dates and meetings in the scheduled time line.
 * Strip lines help you to avoid missing important events.
 
-#### Properties
+### Properties
 
 <table>
 <tr>
@@ -186,7 +187,7 @@ IEnumerable</td></tr>
 </table>
 
 
-#### Enums
+### Enums
 
 
 
@@ -206,7 +207,7 @@ This property contains the following values:Regular: This denotes the normal str
 </table>
 
 
-#### Events
+### Events
 
 By handling its event, you can customize the strip lines dynamically.
 
@@ -227,7 +228,7 @@ Event </td></tr>
 
 ## Adding strip lines to application
 
-#### Regular strip lines
+### Regular strip lines
 
 The following code sample demonstrates how to bind the regular strip line collection to strip lines.
 
@@ -420,7 +421,7 @@ private List<StripLineInfo> GetStripCollection()
 {% endhighlight %}
 {% endtabs %}
 
-#### Output
+### Output
 
 The following screenshot illustrates how to render the regular strip lines.
 
@@ -430,7 +431,7 @@ The following screenshot illustrates how to render the regular strip lines.
 Strip lines in the Gantt chart
 {:.caption}
 
-#### Absolute Strip lines
+### Absolute Strip lines
 
 The following code sample demonstrates how to bind the absolute strip line collection to strip lines.
 
@@ -623,7 +624,7 @@ private List<StripLineInfo> GetStripCollection()
 {% endhighlight  %}
 {% endtabs %}
 
-#### Output
+### Output
 
 The following screenshot illustrates how to render the absolute strip lines.
 
@@ -632,7 +633,7 @@ The following screenshot illustrates how to render the absolute strip lines.
 Strip lines in the Gantt chart
 {:.caption}
 
-#### Sample Link
+### Sample Link
 
 To view samples:
 

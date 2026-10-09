@@ -1,16 +1,19 @@
 ---
 layout: post
-title: CustomAdaptor with CRUD Operations in Blazor Gantt Chart | Syncfusion®
-description: Learn how to implement custom data binding and perform CRUD operations using a custom adaptor in Blazor Gantt Chart.
+title: Custom Adaptor in Blazor Gantt Chart | Syncfusion
+description: Learn how to implement custom data binding and perform CRUD operations using a custom adaptor in Syncfusion Blazor Gantt Chart.
+keywords: blazor gantt custom adaptor, custombinding, custom data binding, remotedata, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/connecting-to-adaptors/custom-adaptor
 platform: gantt-sdk
-control: Gantt Chart
-keywords: adaptors, CustomAdaptor, custom adaptor, remotedata, custombinding, custom binding
+control: Custom Adaptor - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Custom Binding in Blazor Gantt Chart
+# Custom Adaptor for Data Binding in Blazor Gantt Chart
 
-The [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html) supports custom adaptors, giving you complete programmatic control over every data operation in the [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart). A custom adaptor is the right choice when your data source is not a standard REST endpoint for example, when task data must be loaded from an in-memory cache, a file system, a legacy system with a proprietary API, or a third-party SDK that does not expose a conventional HTTP interface.
+The [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html) supports custom adaptors, giving you complete programmatic control over every data operation in the [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart). A custom adaptor is the right choice when your data source is not a standard REST endpoint for example, when task data must be loaded from an in-memory cache, a file system, a legacy system with a proprietary API, or a third-party SDK that does not expose a conventional HTTP interface.
 
 To implement custom data binding, extend the [DataAdaptor](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html) abstract class and override the relevant methods for reading and CRUD operations.
 
@@ -72,7 +75,7 @@ public abstract class DataAdaptor
 
 ## Data Binding
 
-Custom data binding in Gantt Chart is achieved by providing a custom adaptor class and overriding the [Read](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_Read_Syncfusion_Blazor_DataManagerRequest_System_String_) or [ReadAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_ReadAsync_Syncfusion_Blazor_DataManagerRequest_System_String_) methods of the `DataAdaptor` abstract class.
+Custom data binding in Blazor Gantt Chart is achieved by providing a custom adaptor class and overriding the [Read](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_Read_Syncfusion_Blazor_DataManagerRequest_System_String_) or [ReadAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_ReadAsync_Syncfusion_Blazor_DataManagerRequest_System_String_) methods of the `DataAdaptor` abstract class.
 
 The following example demonstrates how to implement custom data binding using a custom adaptor:
 
@@ -83,7 +86,7 @@ The following example demonstrates how to implement custom data binding using a 
 
 <SfGantt TValue="TaskData" Height="450px" Width="1000px" >
      <SfDataManager AdaptorInstance="@typeof(CustomAdaptor)" Adaptor="Adaptors.CustomAdaptor"></SfDataManager>
-    <GanttTaskFields Id="TaskID" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Progress="Progress" Duration="Duration"  ParentID="ParentID">
+    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Progress="Progress" Duration="Duration"  ParentID="ParentID">
     </GanttTaskFields>
 </SfGantt>
 
@@ -162,7 +165,7 @@ The following example demonstrates how to implement custom data binding using a 
             if (dm.Where != null && dm.Where.Count > 0)
             {
                 // Filtering
-                // ParentID is used internally by the Gantt Chart to build the task hierarchy
+                // ParentID is used internally by the Blazor Gantt Chart to build the task hierarchy
                 if (dm.Where[0].Field != null && dm.Where[0].Field == @nameof(TaskData.ParentID)){}
                 else
                 {
@@ -184,9 +187,9 @@ The following example demonstrates how to implement custom data binding using a 
 }
 ```
 
-> If the [DataManagerRequest.RequiresCounts](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManagerRequest.html#Syncfusion_Blazor_DataManagerRequest_RequiresCounts) property is **true**, the `Read/ReadAsync` method must return a **DataResult** containing both **Result** (a collection of records) and **Count** (the total number of records). When **false**, return only the collection of records.
+> **ReadAsync return format:** If the [DataManagerRequest.RequiresCounts](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataManagerRequest.html#Syncfusion_Blazor_DataManagerRequest_RequiresCounts) property is **true**, the `Read/ReadAsync` method must return a **DataResult** containing both **Result** (a collection of records) and **Count** (the total number of records). When **false**, return only the collection of records. Example: `return new DataResult() { Result = filteredRecords, Count = totalCount };`
 
-The following image shows the custom-bind data displayed in the Gantt Chart:
+The following image shows the custom-bind data displayed in the Blazor Gantt Chart:
 
 ![Custom Binding in Gantt](../images/blazor-gantt-custom-binding.webp)
 
@@ -214,7 +217,7 @@ The following example demonstrates how to inject a service into the Custom Adapt
 
 <SfGantt TValue="TaskData" Height="450px" Width="1000px">
      <SfDataManager AdaptorInstance="@typeof(CustomAdaptor)" Adaptor="Adaptors.CustomAdaptor"></SfDataManager>
-    <GanttTaskFields Id="TaskID" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Progress="Progress" Duration="Duration"  ParentID="ParentID">
+    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Progress="Progress" Duration="Duration"  ParentID="ParentID">
     </GanttTaskFields>
 </SfGantt>
 
@@ -289,7 +292,7 @@ The following example demonstrates how to inject a service into the Custom Adapt
 
             if (dm.Where != null && dm.Where.Count > 0)
             {
-                // ParentID is used internally by the Gantt Chart to build the task hierarchy
+                // ParentID is used internally by the Blazor Gantt Chart to build the task hierarchy
                 if (dm.Where[0].Field != null && dm.Where[0].Field == @nameof(TaskData.ParentID)) { }
                 else
                 {
@@ -334,7 +337,7 @@ The following example demonstrates how to implement searching operation for cust
     <SfDataManager AdaptorInstance="@typeof(CustomAdaptor)" Adaptor="Adaptors.CustomAdaptor">
     </SfDataManager>
 
-    <GanttTaskFields Id="TaskID"
+    <GanttTaskFields Id="TaskId"
                      Name="TaskName"
                      StartDate="StartDate"
                      EndDate="EndDate"
@@ -342,7 +345,7 @@ The following example demonstrates how to implement searching operation for cust
     </GanttTaskFields>
     
     <GanttColumns>
-        <GanttColumn Field="TaskID" HeaderText="Task ID" Width="100"></GanttColumn>
+        <GanttColumn Field="TaskId" HeaderText="Task ID" Width="100"></GanttColumn>
         <GanttColumn Field="TaskName" HeaderText="Task Name" Width="220"></GanttColumn>
         <GanttColumn Field="StartDate" HeaderText="Start Date" Format="d" Width="140"></GanttColumn>
         <GanttColumn Field="EndDate" HeaderText="End Date" Format="d" Width="140"></GanttColumn>
@@ -370,7 +373,7 @@ The following example demonstrates how to implement searching operation for cust
 
     public class TaskData
     {
-        public int TaskID { get; set; }
+        public int TaskId { get; set; }
         public string TaskName { get; set; } = string.Empty;
         public DateTime? StartDate { get; set; }
         public DateTime? EndDate { get; set; }
@@ -412,7 +415,7 @@ Override the `Read` or `ReadAsync` method to handle filtering. The filter criter
 
 Based on this information, the custom data source can be filtered using the built-in [PerformFiltering](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformFiltering__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_List_Syncfusion_Blazor_Data_WhereFilter__System_String_) method of the `DataOperations` class.
 
-> You can also create your own custom filtering logic and bind the filtered  data to the Gantt Chart.
+> You can also create your own custom filtering logic and bind the filtered  data to the Blazor Gantt Chart.
 
 The following example demonstrates how to implement the filtering operation for custom-bound data:
 
@@ -428,7 +431,7 @@ The following example demonstrates how to implement the filtering operation for 
     <SfDataManager AdaptorInstance="@typeof(CustomAdaptor)" Adaptor="Adaptors.CustomAdaptor">
     </SfDataManager>
 
-    <GanttTaskFields Id="TaskID"
+    <GanttTaskFields Id="TaskId"
                      Name="TaskName"
                      StartDate="StartDate"
                      EndDate="EndDate"
@@ -436,7 +439,7 @@ The following example demonstrates how to implement the filtering operation for 
     </GanttTaskFields>
     
     <GanttColumns>
-        <GanttColumn Field="TaskID" HeaderText="Task ID" Width="100"></GanttColumn>
+        <GanttColumn Field="TaskId" HeaderText="Task ID" Width="100"></GanttColumn>
         <GanttColumn Field="TaskName" HeaderText="Task Name" Width="220"></GanttColumn>
         <GanttColumn Field="StartDate" HeaderText="Start Date" Format="d" Width="140"></GanttColumn>
         <GanttColumn Field="EndDate" HeaderText="End Date" Format="d" Width="140"></GanttColumn>
@@ -464,7 +467,7 @@ The following example demonstrates how to implement the filtering operation for 
 
     public class TaskData
     {
-        public int TaskID { get; set; }
+        public int TaskId { get; set; }
         public string TaskName { get; set; }
         public DateTime? StartDate { get; set; }
         public DateTime? EndDate { get; set; }
@@ -483,7 +486,7 @@ The following example demonstrates how to implement the filtering operation for 
             // Apply filtering if filter criteria are provided.
             if (dm.Where != null && dm.Where.Count > 0)
             {
-                // ParentID is used internally by the Gantt Chart to build the task hierarchy
+                // ParentID is used internally by the Blazor Gantt Chart to build the task hierarchy
                 if (dm.Where[0].Field != null && dm.Where[0].Field == @nameof(TaskData.ParentID)) { }
                 else
                 {
@@ -512,7 +515,7 @@ Override the `Read` or `ReadAsync` method to handle sorting. The sort criteria a
 
 Perform sort data using the built‑in [PerformSorting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataOperations.html#Syncfusion_Blazor_DataOperations_PerformSorting_System_Collections_IEnumerable_System_Collections_Generic_List_Syncfusion_Blazor_Data_SortedColumn__) method of the `DataOperations` class.
 
->* Alternatively, you can also implement a custom sorting method and bind the sorted data to the Gantt Chart.
+>* Alternatively, you can also implement a custom sorting method and bind the sorted data to the Blazor Gantt Chart.
 
 The following example demonstrates how to implement the sorting operation for custom-bound data:
 
@@ -528,7 +531,7 @@ The following example demonstrates how to implement the sorting operation for cu
     <SfDataManager AdaptorInstance="@typeof(CustomAdaptor)" Adaptor="Adaptors.CustomAdaptor">
     </SfDataManager>
 
-    <GanttTaskFields Id="TaskID"
+    <GanttTaskFields Id="TaskId"
                      Name="TaskName"
                      StartDate="StartDate"
                      EndDate="EndDate"
@@ -536,7 +539,7 @@ The following example demonstrates how to implement the sorting operation for cu
     </GanttTaskFields>
     
     <GanttColumns>
-        <GanttColumn Field="TaskID" HeaderText="Task ID" Width="100"></GanttColumn>
+        <GanttColumn Field="TaskId" HeaderText="Task ID" Width="100"></GanttColumn>
         <GanttColumn Field="TaskName" HeaderText="Task Name" Width="220"></GanttColumn>
         <GanttColumn Field="StartDate" HeaderText="Start Date" Format="d" Width="140"></GanttColumn>
         <GanttColumn Field="EndDate" HeaderText="End Date" Format="d" Width="140"></GanttColumn>
@@ -564,7 +567,7 @@ The following example demonstrates how to implement the sorting operation for cu
 
     public class TaskData
     {
-        public int TaskID { get; set; }
+        public int TaskId { get; set; }
         public string TaskName { get; set; } = string.Empty;
         public DateTime? StartDate { get; set; }
         public DateTime? EndDate { get; set; }
@@ -608,7 +611,7 @@ The CRUD operations for custom-bound data can be implemented by overriding the f
 * [Update](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_Update_Syncfusion_Blazor_DataManager_System_Object_System_String_System_String_)/[UpdateAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_UpdateAsync_Syncfusion_Blazor_DataManager_System_Object_System_String_System_String_)
 * [BatchUpdate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_BatchUpdate_Syncfusion_Blazor_DataManager_System_Object_System_Object_System_Object_System_String_System_String_System_Nullable_System_Int32__)/[BatchUpdateAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DataAdaptor.html#Syncfusion_Blazor_DataAdaptor_BatchUpdateAsync_Syncfusion_Blazor_DataManager_System_Object_System_Object_System_Object_System_String_System_String_System_Nullable_System_Int32__)
 
->* When using batch editing in the Gantt Chart, use the `BatchUpdate`/`BatchUpdateAsync` method to handle the corresponding CRUD operation.
+>* When using batch editing in the Blazor Gantt Chart, use the `BatchUpdate`/`BatchUpdateAsync` method to handle the corresponding CRUD operation.
 
 The following example demonstrates how to implement CRUD operations for custom-bound data:
 
@@ -619,7 +622,7 @@ The following example demonstrates how to implement CRUD operations for custom-b
 
 <SfGantt TValue="TaskData" Height="450px" Width="1000px" Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search"})">
      <SfDataManager AdaptorInstance="@typeof(CustomAdaptor)" Adaptor="Adaptors.CustomAdaptor"></SfDataManager>
-    <GanttTaskFields Id="TaskID" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Progress="Progress" Duration="Duration"  ParentID="ParentID">
+    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Progress="Progress" Duration="Duration"  ParentID="ParentID">
     </GanttTaskFields>
      <GanttEditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></GanttEditSettings>
      <GanttEvents RowUpdating="RowUpdatingHandler" TValue="TaskData"></GanttEvents>
@@ -705,7 +708,7 @@ The following example demonstrates how to implement CRUD operations for custom-b
             if (dm.Where != null && dm.Where.Count > 0)
             {
                 // Apply filtering if filter criteria are provided.
-                // ParentID is used internally by the Gantt Chart to build the task hierarchy
+                // ParentID is used internally by the Blazor Gantt Chart to build the task hierarchy
                 if (dm.Where[0].Field != null && dm.Where[0].Field == @nameof(TaskData.ParentID)) { }
                 else
                 {
@@ -759,14 +762,14 @@ The following example demonstrates how to implement CRUD operations for custom-b
 
 ## How to pass additional parameters to custom adaptor
 
-The Gantt Chart allows sending custom parameters along with data requests. This is useful when additional information must be sent to the server.
+The Blazor Gantt Chart allows sending custom parameters along with data requests. This is useful when additional information must be sent to the server.
 
-Use the [Query](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Query) property of the Gantt Chart along with the [AddParams](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.Query.html#Syncfusion_Blazor_Data_Query_AddParams_System_String_System_Object_) method of the `Query` class to send custom parameters.
+Use the [Query](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Query) property of the Blazor Gantt Chart along with the [AddParams](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.Query.html#Syncfusion_Blazor_Data_Query_AddParams_System_String_System_Object_) method of the `Query` class to send custom parameters.
 
-To enable custom parameters in data requests for the Gantt Chart, follow these steps:
+To enable custom parameters in data requests for the Blazor Gantt Chart, follow these steps:
 
-1. **Bind the Query object to the Gantt Chart:**  
-    Assign the initialized Query object to the Gantt Chart `Query` property.
+1. **Bind the Query object to the Blazor Gantt Chart:**  
+    Assign the initialized Query object to the Blazor Gantt Chart `Query` property.
 2. **Initialize the Query object:**  
     Create a new instance of the `Query` class and use the `AddParams` method to add your custom parameters.
 3. **Access parameters in the custom adaptor:**  
@@ -785,7 +788,7 @@ The following example demonstrates how to send additional parameters to the serv
     <SfDataManager AdaptorInstance="@typeof(CustomAdaptor)" Adaptor="Adaptors.CustomAdaptor">
     </SfDataManager>
 
-    <GanttTaskFields Id="TaskID"
+    <GanttTaskFields Id="TaskId"
                      Name="TaskName"
                      StartDate="StartDate"
                      EndDate="EndDate"
@@ -793,7 +796,7 @@ The following example demonstrates how to send additional parameters to the serv
     </GanttTaskFields>
     
     <GanttColumns>
-        <GanttColumn Field="TaskID" HeaderText="Task ID" Width="100"></GanttColumn>
+        <GanttColumn Field="TaskId" HeaderText="Task ID" Width="100"></GanttColumn>
         <GanttColumn Field="TaskName" HeaderText="Task Name" Width="220"></GanttColumn>
         <GanttColumn Field="StartDate" HeaderText="Start Date" Format="d" Width="140"></GanttColumn>
         <GanttColumn Field="EndDate" HeaderText="End Date" Format="d" Width="140"></GanttColumn>
@@ -822,7 +825,7 @@ The following example demonstrates how to send additional parameters to the serv
 
     public class TaskData
     {
-        public int TaskID { get; set; }
+        public int TaskId { get; set; }
         public string TaskName { get; set; } = string.Empty;
         public DateTime? StartDate { get; set; }
         public DateTime? EndDate { get; set; }
@@ -864,14 +867,14 @@ The following example demonstrates how to send additional parameters to the serv
 
 The `CustomAdaptor` is the right choice when the task data cannot be fetched from a standard REST endpoint or when the data operations require logic that no built-in adaptor can provide. Typical use cases include:
 
-- **In-memory or static data sources** – Applications that load task data from a local list, an embedded JSON file, or an application-level cache can bind that data to the Gantt Chart without standing up a separate API service.
-- **Legacy systems with proprietary APIs** – When task records are stored in an older system that exposes a non-standard interface (SOAP, gRPC, a vendor SDK), the custom adaptor wraps that interface and presents it to the Gantt Chart as a normal data source.
-- **Third-party SDK integration** – Productivity suites, ERP platforms, and project management tools often ship with their own client SDKs. A custom adaptor calls the SDK directly inside the `Read` method and maps the response to the Gantt Chart data model.
+- **In-memory or static data sources** – Applications that load task data from a local list, an embedded JSON file, or an application-level cache can bind that data to the Blazor Gantt Chart without standing up a separate API service.
+- **Legacy systems with proprietary APIs** – When task records are stored in an older system that exposes a non-standard interface (SOAP, gRPC, a vendor SDK), the custom adaptor wraps that interface and presents it to the Blazor Gantt Chart as a normal data source.
+- **Third-party SDK integration** – Productivity suites, ERP platforms, and project management tools often ship with their own client SDKs. A custom adaptor calls the SDK directly inside the `Read` method and maps the response to the Blazor Gantt Chart data model.
 - **Complex business rules during data operations** – When inserting or updating a task requires validating against related records, recalculating dependent fields, or triggering side effects, that logic can be placed directly in the adaptor methods rather than in the server controller.
-- **Offline-first and PWA applications** – Applications that store tasks in IndexedDB or local storage can use a custom adaptor to read and write that local store, keeping the Gantt Chart functional even when the device is offline.
-- **Testing and prototyping** – A custom adaptor backed by a static list lets teams build and validate the full Gantt Chart UI — including CRUD, searching, filtering, and sorting — before the real backend is ready.
+- **Offline-first and PWA applications** – Applications that store tasks in IndexedDB or local storage can use a custom adaptor to read and write that local store, keeping the Blazor Gantt Chart functional even when the device is offline.
+- **Testing and prototyping** – A custom adaptor backed by a static list lets teams build and validate the full Blazor Gantt Chart UI — including CRUD, searching, filtering, and sorting — before the real backend is ready.
 
-## Benefits of using the CustomAdaptor with the Gantt Chart
+## Benefits of using the CustomAdaptor with the Blazor Gantt Chart
 
 - **Complete control over every data operation** – You write the `Read`, `Insert`, `Update`, `Remove`, and `BatchUpdate` methods yourself, so the adaptor can handle any data source or business rule without being constrained by a predefined wire format.
 - **Works with any data source** – Unlike REST-based adaptors, the `CustomAdaptor` is not tied to HTTP. It can read from in-memory collections, file systems, local storage, third-party SDKs, or any other source that .NET can access.
@@ -879,4 +882,4 @@ The `CustomAdaptor` is the right choice when the task data cannot be fetched fro
 - **No server dependency** – Because the adaptor runs inside the Blazor application, there is no need for a separate API project or a network round-trip for data operations, which simplifies deployment and reduces latency.
 - **Supports both synchronous and asynchronous operations** – The `DataAdaptor` base class provides both `Read`/`ReadAsync` and `Insert`/`InsertAsync` signatures, so you can use `async/await` to call remote services or databases without blocking the UI.
 - **Seamless integration with dependency injection** – Registering the adaptor as a scoped service lets you inject repositories, caching layers, logging, and any other application service directly into the adaptor class.
-- **Ideal for testing and prototyping** – Swapping the real adaptor for a test adaptor backed by a fixed list requires no changes to the Gantt Chart component itself, making unit and integration testing straightforward.
+- **Ideal for testing and prototyping** – Swapping the real adaptor for a test adaptor backed by a fixed list requires no changes to the Blazor Gantt Chart component itself, making unit and integration testing straightforward.

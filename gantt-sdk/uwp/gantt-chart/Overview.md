@@ -1,15 +1,16 @@
 ---
 layout: post
-title: About UWP Gantt control | Syncfusion
-description: Learn here all about introduction of Syncfusion Essential Studio UWP Gantt (SfGantt) control, its elements and more.
+title: About Syncfusion UWP Gantt Chart Control | Syncfusion
+description: Learn about introduction of Syncfusion Essential Studio UWP Gantt Chart control, its elements and more details.
 platform: gantt-sdk
 control: SfGantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# UWP Gantt (SfGantt) Overview
+# About Syncfusion UWP Gantt Chart Control
 
-The Gantt control has been designed to visualize and edit the project schedule and track the project progress. It helps to organize and schedule the projects. The project schedule can be updated through interactions such as editing, dragging, and resizing.
+The UWP Gantt Chart control has been designed to visualize and edit the project schedule and track the project progress. It helps to organize and schedule the projects. The project schedule can be updated through interactions such as editing, dragging, and resizing.
 
 ![Overview](SfGantt_images/Overview.jpeg)
 

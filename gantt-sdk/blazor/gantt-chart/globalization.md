@@ -1,17 +1,21 @@
 ---
 layout: post
-title: Globalization in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Globalization in Syncfusion Blazor Gantt Chart component and more.
+title: Globalization in Blazor Gantt Chart | Syncfusion
+description: Learn how to globalize Syncfusion Blazor Gantt Chart by localizing culture-specific text, date formats, and number formats for different regions.
+keywords: blazor gantt globalization, localization, culture, date format, number format, rtl support, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/globalization
 platform: gantt-sdk
-control: Gantt Chart
+control: Globalization - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Globalization in Blazor Gantt Chart component
+# Globalization and Localization Support in Blazor Gantt Chart
 
 The Syncfusion Blazor Gantt Chart component provides a feature known as Globalization (global and local), which makes the application more accessible and useful for individuals from different regions and language backgrounds. You have the ability to view data in your preferred language and format, resulting in an enhanced overall experience.
 
-Add **UseRequestLocalization** middle-ware in the **Program.cs** file to get browser Culture Info.
+Add the **UseRequestLocalization** middleware in the **Program.cs** file to get the browser CultureInfo.
 
 Refer the following code to add configuration in Program.cs file
 
@@ -357,7 +361,7 @@ N> ClientApplication denotes the ApplicationNameSpace of your project.
 
 You can customize the culture settings of Syncfusion® Blazor UI components using the Blazor `Internationalization` package, which formats numbers and dates based on the selected culture. By default, components use `en-US`, and to switch to another culture, you need to add the corresponding `.resx` resource file to your application.
 
-[Changing culture and Adding Resx file in the application](https://blazor.syncfusion.com/documentation/gantt-chart/globalization#localization)
+[Changing culture and Adding Resx file in the application](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/globalization#localization)
 
 
 ## Right to left (RTL)
@@ -415,7 +419,7 @@ You can enable right-to-left layout and text direction in the Gantt component us
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/BDVHNcBNrmwnIjid?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-N> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=bootstrap5) to know how to render and configure the gantt.
+N> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=fluent2) to know how to render and configure the gantt.
 
 ## See also
 

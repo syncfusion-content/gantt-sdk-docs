@@ -1,15 +1,19 @@
 ---
 layout: post
-title: Baseline in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Baseline in Syncfusion Blazor Gantt Chart component and much more.
+title: Baseline in Blazor Gantt Chart | Planned vs Actual | Syncfusion
+description: Learn how to compare planned versus actual project timelines in Syncfusion Blazor Gantt Chart using baseline support to track schedule deviations.
+keywords: blazor gantt baseline, planned schedule, actual schedule, baseline date, project tracking, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/baseline
 platform: gantt-sdk
-control: Gantt Chart
+control: Baseline - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Baseline in Blazor Gantt Chart Component
+# Baselines for Schedule Comparison in Blazor Gantt Chart
 
-The baseline feature enables users to view the deviation between the planned dates and actual dates of the tasks in a project. Baseline dates or planned dates of a task may or may not be same as the actual task dates. The baseline can be enabled by setting the [RenderBaseline](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_RenderBaseline) property to `true` and the baseline color can be changed using the [BaselineColor](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_BaselineColor) property. To render the baseline, you should map the baseline start and end date values from the data source. This can be done using the [GanttTaskFields.BaselineStartDate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_BaselineStartDate) and [GanttTaskFields.BaselineEndDate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_BaselineEndDate) properties. The following code example shows how to enable a baseline in the Gantt Chart component.
+The baseline feature enables users to view the deviation between the planned dates and actual dates of the tasks in a project. Baseline dates or planned dates of a task may or may not be the same as the actual task dates. Enable the baseline by setting the [RenderBaseline](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_RenderBaseline) property to `true` and change the baseline color using the [BaselineColor](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_BaselineColor) property. To render the baseline, map the baseline start and end date values from the data source using the [GanttTaskFields.BaselineStartDate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_BaselineStartDate) and [GanttTaskFields.BaselineEndDate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_BaselineEndDate) properties. The following code example shows how to enable a baseline in the Blazor Gantt Chart component.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -60,8 +64,8 @@ The baseline feature enables users to view the deviation between the planned dat
 }
 ```
 
-The following screenshot shows the baselines in Gantt Chart component.
+The following screenshot shows the baselines in Blazor Gantt Chart component.
 
 ![Baselines in Blazor Gantt Chart](images/blazor-gantt-chart-with-baseline.webp)
 
-N> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities) to know how to render and configure the gantt.
+N> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=fluent2) to know how to render and configure the gantt.

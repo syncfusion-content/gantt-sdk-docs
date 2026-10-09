@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Zooming action in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about zooming in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Zooming in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to implement zooming functionality in Syncfusion ASP.NET Core Gantt Chart timeline for detailed project view and scale adjustments.
+keywords: asp.net core gantt zooming, zoom in, zoom out, timeline zoom, zoom levels, gantt zoom, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/time-line/zooming
 platform: gantt-sdk
-control: Time Line
-publishingplatform: gantt-sdk
+control: Timeline - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK/overview
 ---
 
-
-# Zooming action in gantt control
+# Adjusting Zoom Levels and Timeline Scaling in ASP.NET Core Gantt Chart
 
 The zooming support provides options to increase or decrease the width of timeline cells and also provides options to change the timeline units dynamically. This support enables you to view the tasks in a project clearly from minute to decade timespan. To enable the zooming features, define the `ZoomIn`, `ZoomOut`, and `ZoomToFit` items to [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Toolbar) items collections, and this action can be performed on external actions such as button click using the `zoomIn`, `zoomOut`, and `fitToProject` built-in methods. The following zooming options are available to view the project:
 
@@ -25,8 +27,6 @@ This support is used to increase the timeline width and timeline unit from minut
 
 This support is used to view all the tasks available in a project within available area on the chart part of Gantt. When users click the `ZoomToFit` icon, then all the tasks are rendered within the available chart container width.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/zooming/defaultItems/tagHelper %}
@@ -36,25 +36,9 @@ This support is used to view all the tasks available in a project within availab
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/zooming/defaultItems/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="DefaultItems.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/zooming/defaultItems/defaultItems.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ## Customizing zooming levels
 
 In Gantt, the zoom in and zoom out actions are performed based on the predefined zooming levels in the `zoomingLevels` property. You can customize the zooming actions by defining the required zooming collection to the `zoomingLevels` property.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -65,28 +49,12 @@ In Gantt, the zoom in and zoom out actions are performed based on the predefined
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/zooming/customItems/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="CustomItems.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/zooming/customItems/customItems.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ## Zoom action by methods
 
 You can perform the various zoom actions dynamically or on external click action using the following methods:
 * Zoom in - `zoomIn`
 * Zoom out - `zoomOut`
 * Fit to project - `fitToProject`
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -96,15 +64,3 @@ You can perform the various zoom actions dynamically or on external click action
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/zooming/method/method.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/zooming/method/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Method.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/zooming/method/method.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Excel Export Options in Angular Gantt Chart Component | Syncfusion
-description: Learn here all about Excel export in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Excel Export Options in Angular Gantt Chart | Syncfusion
+description: Learn how to configure Excel export options in Syncfusion Angular Gantt Chart with column selection and custom data sources.
+keywords: angular gantt excel export options, excelexportproperties, custom export, selected records, multiple gantt, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/excel-export/excel-export-options
 platform: gantt-sdk
-control: Excel export 
+control: Excel Export Options - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Excel Export Options in Angular Gantt Chart Component
+# Configuring Advanced Excel Export Options in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component provides configurable options for Excel or CSV export through the [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties) object. You can customize column selection, include hidden columns, define a custom data source, apply filters, and format exported data. It also supports setting file names, adding headers and footers, and exporting multiple Gantt Charts.
 
@@ -70,7 +73,7 @@ The following example demonstrates that the hidden **StartDate** column is inclu
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/showHide-cs1/src/data.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt-chart/excel-export/exportHidden-cs1/src/data.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -160,7 +163,7 @@ To add header and footer content to exported Excel or CSV files in the Gantt Cha
 
 The Excel or CSV export feature in Gantt supports applying custom themes to the exported document, helping maintain a consistent and visually structured appearance.
 
-To configure a theme, set the [theme](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#theme)  property within [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties). This allows customization of styles for the following sections in the exported file
+To configure a theme, set the [theme](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#theme)  property within [ExcelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties). This allows customization of styles for the following sections in the exported file:
 
 - **caption**: Defines the style for the caption, typically used for titles or descriptions at the top of the sheet.
 - **header**: Specifies the styling for column headers.
@@ -205,3 +208,7 @@ In the example below, the background color is customized for the **Progress** co
 {% endtabs %}
   
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/excel-export/cellFormat-cs1" %}
+
+## Limitations
+
+CSV export preserves task data in a simple and widely compatible format. Since CSV files are designed for data representation rather than visual layout, Gantt Chart specific hierarchy indentation and structural formatting are not retained in the exported file.

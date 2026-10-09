@@ -1,4 +1,20 @@
-            @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => ts.Id("TaskId").Name(
-                "TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").DurationUnit("DurationUnit").Progress(
-                    "Progress").Child("SubTasks")).Render()
-        
+@using Syncfusion.EJ2.Gantt
+
+@(Html.EJS().Gantt("Gantt")
+    .DataSource((IEnumerable<object>)ViewBag.DataSource)
+    .Height("450px")
+    .DaysPerWeek(5)
+    .DaysPerMonth(20)
+    .SplitterSettings(new GanttSplitterSettings
+    {
+        ColumnIndex = 4
+    })
+    .TaskFields(ts => ts
+        .Id("TaskID")
+        .Name("TaskName")
+        .StartDate("StartDate")
+        .Duration("Duration")
+        .Progress("Progress")
+        .DurationUnit("DurationUnit")
+        .ParentID("ParentID"))
+    .Render())

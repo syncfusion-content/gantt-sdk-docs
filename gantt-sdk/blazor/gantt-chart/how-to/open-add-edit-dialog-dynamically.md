@@ -1,13 +1,17 @@
 ---
 layout: post
-title: Open Add Edit Dialog in Blazor Gantt Chart Component | Syncfusion®
-description: Learn how to open add and edit dialogs programmatically in the Blazor Gantt Chart component for efficient task creation and modification.
+title: Open Add Edit Dialog in Blazor Gantt Chart | Syncfusion
+description: Learn how to open add and edit dialogs programmatically in Syncfusion Blazor Gantt Chart for efficient task creation and updates.
+keywords: blazor gantt open dialog, add task dialog, edit task dialog, programmatic dialog, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/how-to/open-add-edit-dialog-dynamically
 platform: gantt-sdk
-control: Gantt Chart
+control: Add Edit Dialog - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Open Add Edit Dialog Dynamically in Blazor Gantt Chart Component
+# Opening Add and Edit Dialogs Programmatically in Blazor Gantt Chart
 
 Gantt Chart add and edit dialogs can be opened dynamically by using [OpenAddDialog](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.Action.html#Syncfusion_Blazor_Gantt_Action_OpenAddDialog) and [OpenEditDialog](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.Action.html#Syncfusion_Blazor_Gantt_Action_OpenEditDialog) methods. The following code example shows how to open add and edit dialog on separate button click actions.
 
@@ -18,7 +22,7 @@ Gantt Chart add and edit dialogs can be opened dynamically by using [OpenAddDial
 <button @onclick="AddDialog">Add Dialog</button>
 <button @onclick="EditDialog">Open Edit dialog task 3</button>
 <SfGantt @ref="Gantt" DataSource="@TaskCollection" Height="450px" Width="700px">
-    <GanttTaskFields Id="TaskID" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentID">
+    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress" ParentID="ParentID">
     </GanttTaskFields>
     <GanttEditSettings AllowEditing="true" AllowAdding="true"></GanttEditSettings>
 </SfGantt>
@@ -41,7 +45,7 @@ Gantt Chart add and edit dialogs can be opened dynamically by using [OpenAddDial
 
     public class TaskData
     {
-        public int TaskID { get; set; }
+        public int TaskId { get; set; }
         public string TaskName { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }

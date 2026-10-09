@@ -1,27 +1,30 @@
 ---
 layout: post
-title: GraphQLAdaptor in Blazor Gantt Chart | Syncfusion
-description: Learn how to bind data and perform CRUD operations using the GraphQLAdaptor in the Blazor Gantt Chart component and much more.
+title: GraphQL Adaptor in Blazor Gantt Chart | Syncfusion
+description: Learn how to bind data and perform CRUD operations using the GraphQL adaptor in Syncfusion Blazor Gantt Chart with Hot Chocolate server.
+keywords: blazor gantt graphql adaptor, graphqladaptor, hot chocolate, graphql data binding, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/connecting-to-adaptors/graphql-adaptor
 platform: gantt-sdk
-control: Gantt Chart
-keywords: adaptors, graphqladaptor, graphql adaptor, hot chocolate, remotedata
+control: GraphQL Adaptor - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Connect Syncfusion Blazor Gantt Chart with GraphQL using Hot Chocolate
+# GraphQL Adaptor for Data Binding in Blazor Gantt Chart
 
-GraphQL is a query language that enables applications to request only the data they need. Unlike REST APIs that return predefined data structures, GraphQL allows clients to define the fields and structure of the response. The [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) can consume data from GraphQL services through the [GraphQLAdaptor](https://blazor.syncfusion.com/documentation/data/adaptors#graphql-service-binding), which works with the [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html) to handle data operations.
+GraphQL is a query language that enables applications to request only the data they need. Unlike REST APIs that return predefined data structures, GraphQL allows clients to define the fields and structure of the response. The [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) can consume data from GraphQL services through the [GraphQLAdaptor](https://blazor.syncfusion.com/documentation/data/adaptors#graphql-service-binding), which works with the [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html) to handle data operations.
 
 GraphQL uses a single endpoint and allows clients to request specific fields, which is useful for Blazor Gantt Chart applications that handle hierarchical and data-intensive task structures.
 
 **Key GraphQL Concepts**
 
-- **Queries**: Read-only requests used by the Gantt Chart to load tasks.
+- **Queries**: Read-only requests used by the Blazor Gantt Chart to load tasks.
 - **Mutations**: Write requests used to create, update, or delete tasks.
 - **Resolvers**: Methods that handle queries and mutations. `GraphQLQuery` defines the read resolvers; `GraphQLMutation` defines the write resolvers.
 - **Schema**: Defines the data types and operations exposed by the GraphQL endpoint. Hot Chocolate generates it from the C# model classes.
 
-[Hot Chocolate](https://chillicream.com/docs/hotchocolate/v15) is the GraphQL server framework used in this guide.
+[Hot Chocolate](https://chillicream.com/docs/hotchocolate) is the GraphQL server framework used in this guide.
 
 ## Prerequisites
 
@@ -32,8 +35,8 @@ Install the following software and packages before starting the process:
 | Visual Studio 2026 | 18.0 or later | Development IDE with Blazor workload |
 | .NET SDK | net10.0 or compatible | Runtime and build tools |
 | HotChocolate.AspNetCore | 15.1 or later | GraphQL server framework |
-| Syncfusion.Blazor.Gantt | {{site.blazorversion}} | Gantt Chart component |
-| Syncfusion.Blazor.Themes | {{site.blazorversion}} | Styling for Gantt Chart |
+| Syncfusion.Blazor.Gantt | {{site.blazorversion}} | Blazor Gantt Chart component |
+| Syncfusion.Blazor.Themes | {{site.blazorversion}} | Styling for Blazor Gantt Chart |
 
 ## Setting Up the GraphQL Backend
 
@@ -46,8 +49,8 @@ For this guide, a Blazor application named **Gantt_GraphQLAdaptor** is used.
 **Required Packages:**
 
 - **HotChocolate.AspNetCore** (version 15.1 or later) – GraphQL server framework
-- **Syncfusion.Blazor.Gantt** (version {{site.blazorversion}}) – Gantt Chart component
-- **Syncfusion.Blazor.Themes** (version {{site.blazorversion}}) – Styling for the Gantt Chart
+- **Syncfusion.Blazor.Gantt** (version {{site.blazorversion}}) – Blazor Gantt Chart component
+- **Syncfusion.Blazor.Themes** (version {{site.blazorversion}}) – Styling for the Blazor Gantt Chart
 
 **Method 1: Using Package Manager Console**
 
@@ -395,7 +398,7 @@ public class TaskDataResponse
 
 **Details:**
 
-- The `GetTaskData` method receives `DataManagerRequestInput`, which contains filter, sort, search parameters from the Gantt Chart.
+- The `GetTaskData` method receives `DataManagerRequestInput`, which contains filter, sort, search parameters from the Blazor Gantt Chart.
 - Hot Chocolate automatically converts the method name `GetTaskData` to camelCase: `taskData` in the GraphQL schema.
 
 The query resolver has been created successfully.
@@ -404,10 +407,10 @@ The query resolver has been created successfully.
 
 ### Step 6: Create the DataManagerRequestInput Class
 
-A **DataManagerRequestInput** class is a GraphQL input type that represents all the parameters the [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) sends to the backend when requesting data. This class acts as a container for filtering, sorting, searching and other data operation parameters.
+A **DataManagerRequestInput** class is a GraphQL input type that represents all the parameters the [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) sends to the backend when requesting data. This class acts as a container for filtering, sorting, searching and other data operation parameters.
 
 **Purpose**
-When the Gantt Chart performs operations like sorting, filtering, or searching, it packages all these parameters into a `DataManagerRequestInput` object and sends it to the GraphQL backend. The backend then uses these parameters to fetch and return only the data the chart needs.
+When the Blazor Gantt Chart performs operations like sorting, filtering, or searching, it packages all these parameters into a `DataManagerRequestInput` object and sends it to the GraphQL backend. The backend then uses these parameters to fetch and return only the data the chart needs.
 
 **Instructions**:
 
@@ -569,7 +572,7 @@ public class WhereFilter
 }
 ```
 
-**DataManagerRequestInput Properties Used by the Gantt Chart:**
+**DataManagerRequestInput Properties Used by the Blazor Gantt Chart:**
 
 | Property | Purpose | Type | Example |
 |----------|---------|------|---------|
@@ -712,7 +715,7 @@ namespace Gantt_GraphQLAdaptor.Models
 
 A mutation resolver is a C# method decorated with GraphQL attributes that:
 
-- **Receives input parameters** from the Gantt Chart (record data, primary keys, indices, drop positions).
+- **Receives input parameters** from the Blazor Gantt Chart (record data, primary keys, indices, drop positions).
 - **Processes the operation** (validation, ID generation, data modification).
 - **Persists changes** to the data source (database, file, memory).
 - **Returns results** to the client (modified record or list of records).
@@ -725,7 +728,7 @@ The GraphQL Mutation class has been successfully created and is ready to handle 
 
 ### Step 1: Install and Configure Blazor Gantt Chart Components with GraphQL
 
-Syncfusion is a library that provides pre-built UI components like the Gantt Chart, which is used to display hierarchical project tasks with a timeline view.
+Syncfusion is a library that provides pre-built UI components like the Blazor Gantt Chart, which is used to display hierarchical project tasks with a timeline view.
 
 **Instructions:**
 
@@ -751,7 +754,7 @@ Syncfusion is a library that provides pre-built UI components like the Gantt Cha
 
 For this project, the tailwind3 theme is used. A different theme can be selected or the existing theme can be customized based on project requirements. Refer to the [Blazor Components Appearance](https://blazor.syncfusion.com/documentation/appearance/themes) documentation to learn more about theming and customization options.
 
-Blazor components are now configured and ready to use. For additional guidance, refer to the Gantt Chart component's [getting-started](https://blazor.syncfusion.com/documentation/gantt-chart/getting-started-with-web-app) documentation.
+Blazor components are now configured and ready to use. For additional guidance, refer to the Blazor Gantt Chart component's [getting-started](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/getting-started-with-web-app) documentation.
 
 ---
 
@@ -762,7 +765,7 @@ The `Home.razor` component will display the project task data in a Blazor Gantt 
 **Instructions:**
 
 1. Open the file named `Home.razor` in the `Components/Pages` folder.
-2. Add the following code to create a basic Gantt Chart connected to the GraphQL backend:
+2. Add the following code to create a basic Blazor Gantt Chart connected to the GraphQL backend:
 
 ```cshtml
 @page "/"
@@ -820,15 +823,15 @@ The `Home.razor` component will display the project task data in a Blazor Gantt 
 
 **Component Explanation:**
 
-- **`<SfGantt>`** – The Gantt Chart component that displays hierarchical tasks with a timeline.
-- **`<SfDataManager>`** – Connects the Gantt Chart to the GraphQL backend through the GraphQL adaptor options.
+- **`<SfGantt>`** – The Blazor Gantt Chart component that displays hierarchical tasks with a timeline.
+- **`<SfDataManager>`** – Connects the Blazor Gantt Chart to the GraphQL backend through the GraphQL adaptor options.
 - **`<GanttTaskFields>`** – Maps model fields to Gantt properties: `Id`, `Name`, `StartDate`, `EndDate`, `Duration`, `Progress`, and `ParentID` (for hierarchy).
 - **`<GanttEditSettings>`** – Enables add, edit, delete, and taskbar editing (`AllowTaskbarEditing="true"` is Gantt-specific; it enables dragging and resizing taskbars, which calls the `UpdateTask` mutation).
-- **`<GanttColumns>`** – Defines the columns shown in the grid section of the Gantt Chart.
+- **`<GanttColumns>`** – Defines the columns shown in the grid section of the Blazor Gantt Chart.
 - **`<GanttSplitterSettings>`** – Controls the position of the splitter between the grid and the timeline.
 - **`Toolbar="@ToolbarItems"`** – Provides toolbar buttons for Add, Edit, Delete, ExpandAll, CollapseAll, and Search actions.
 
-The `SfDataManager` component connects the Gantt Chart to the GraphQL backend using the adaptor options configured below:
+The `SfDataManager` component connects the Blazor Gantt Chart to the GraphQL backend using the adaptor options configured below:
 
 ```cshtml
 <SfDataManager Url="http://localhost:5020/graphql"
@@ -860,11 +863,11 @@ The GraphQL adaptor is a bridge that connects the Blazor Gantt Chart with the Gr
 
 An adaptor is a translator between two different systems. The GraphQL adaptor specifically:
 
-- Receives interaction events generated by the Gantt Chart, including Add, Edit, Delete, taskbar drag, and toolbar actions, as well as sorting and filtering operations.
+- Receives interaction events generated by the Blazor Gantt Chart, including Add, Edit, Delete, taskbar drag, and toolbar actions, as well as sorting and filtering operations.
 - Converts these actions into GraphQL query or mutation syntax.
 - Sends the **GraphQL request** to the backend **GraphQL endpoint**.
 - Receives the response data from the backend.
-- Formats the response back into a structure the Gantt Chart understands.
+- Formats the response back into a structure the Blazor Gantt Chart understands.
 - Updates the chart display (grid, tree, and timeline) with the new data.
 
 The adaptor enables bidirectional communication between the frontend (Gantt Chart) and backend (GraphQL server).
@@ -935,7 +938,7 @@ The `@code` block in `Home.razor` contains C# code that configures how the adapt
 
 **EditMode Options**
 
-The `Mode` property of `<GanttEditSettings>` accepts the following `EditMode` enum values, which determine how tasks can be edited in the Gantt Chart:
+The `Mode` property of `<GanttEditSettings>` accepts the following `EditMode` enum values, which determine how tasks can be edited in the Blazor Gantt Chart:
 
 | Value | Description |
 |-------|-------------|
@@ -1052,17 +1055,17 @@ dotnet run
 2. Navigate to `https://localhost:5020` (or the port shown in the terminal).
 3. The Project Task Manager is now running and ready to use.
 
-The Gantt Chart will display the project schedule and is ready to perform server-driven search, sort, filter, and CRUD operations through the GraphQL endpoint.
+The Blazor Gantt Chart will display the project schedule and is ready to perform server-driven search, sort, filter, and CRUD operations through the GraphQL endpoint.
 
 ---
 
 ## How Data Operations Work with the GraphQL Adaptor
 
-The Gantt Chart passes all data operation parameters (search, sort, filter) inside the `dataManager` input variable. The backend resolver reads this object and applies the operations in the same order: **search → sort → filter**.
+The Blazor Gantt Chart passes all data operation parameters (search, sort, filter) inside the `dataManager` input variable. The backend resolver reads this object and applies the operations in the same order: **search → sort → filter**.
 
 ### Searching
 
-When the **Search** toolbar button is used to enter a keyword, the Gantt Chart sends a `Search` array with the target fields and key. The backend `GetTaskData` resolver iterates over the configured fields and applies a case-insensitive `IndexOf` check, then continues to sort, filter.
+When the **Search** toolbar button is used to enter a keyword, the Blazor Gantt Chart sends a `Search` array with the target fields and key. The backend `GetTaskData` resolver iterates over the configured fields and applies a case-insensitive `IndexOf` check, then continues to sort, filter.
 
 **Variables Sent with the Request:**
 
@@ -1087,7 +1090,7 @@ When the **Search** toolbar button is used to enter a keyword, the Gantt Chart s
 
 ### Sorting
 
-When a column header is selected for sorting, the Gantt Chart sends a `Sorted` array. The backend resolver reflectsively reads the property and applies `OrderBy` / `OrderByDescending` based on the `Direction`. Multiple sort conditions can be applied sequentially by holding the **Ctrl** key and selecting additional column headers.
+When a column header is selected for sorting, the Blazor Gantt Chart sends a `Sorted` array. The backend resolver reflectsively reads the property and applies `OrderBy` / `OrderByDescending` based on the `Direction`. Multiple sort conditions can be applied sequentially by holding the **Ctrl** key and selecting additional column headers.
 
 **Variables Sent with the Request:**
 
@@ -1166,9 +1169,9 @@ Filtering is handled by the `Where` array. The backend resolver supports the sta
 
 ## Perform CRUD Operations
 
-The Gantt Chart performs Create, Read, Update, and Delete operations through the four configured mutations: `Insert`, `Update`, `Delete`, and `Batch`. Unlike data operations (search/sort/filter) which travel through `DataManagerRequestInput`, CRUD operations pass values directly to the corresponding GraphQL mutation.
+The Blazor Gantt Chart performs Create, Read, Update, and Delete operations through the four configured mutations: `Insert`, `Update`, `Delete`, and `Batch`. Unlike data operations (search/sort/filter) which travel through `DataManagerRequestInput`, CRUD operations pass values directly to the corresponding GraphQL mutation.
 
-Enable CRUD on the Gantt Chart by setting `AllowAdding`, `AllowEditing`, `AllowDeleting`, and `AllowTaskbarEditing` to `true` in `<GanttEditSettings>` (as shown in **Step 2**). Toolbar buttons such as **Add**, **Edit**, **Delete**, and **Update** are added through the `Toolbar="@ToolbarItems"` list.
+Enable CRUD on the Blazor Gantt Chart by setting `AllowAdding`, `AllowEditing`, `AllowDeleting`, and `AllowTaskbarEditing` to `true` in `<GanttEditSettings>` (as shown in **Step 2**). Toolbar buttons such as **Add**, **Edit**, **Delete**, and **Update** are added through the `Toolbar="@ToolbarItems"` list.
 
 ### Insert
 
@@ -1210,7 +1213,7 @@ mutation create($record: TaskDataInput!, $index: Int!, $action: String!, $additi
 | `record` | `TaskData` | The new task record object with all field values | Task data filled in the dialog |
 | `index` | `int` | The position where the new task should be inserted (`-1` or count+1 means append) | `-1` for append |
 | `action` | `string` | Type of action being performed (usually `"add"` for insert) | `"add"` |
-| `additionalParameters` | `Any` | Extra context or custom parameters from the Gantt Chart | Empty object `{}` |
+| `additionalParameters` | `Any` | Extra context or custom parameters from the Blazor Gantt Chart | Empty object `{}` |
 
 **Insert Operation Logic Breakdown:**
 
@@ -1225,7 +1228,7 @@ mutation create($record: TaskDataInput!, $index: Int!, $action: String!, $additi
 
 ### Update
 
-The Update operation modifies an existing task. The Gantt Chart calls the `updateTask` mutation for both cell/row/dialog edits and **taskbar drag operations** (when `AllowTaskbarEditing="true"`), because dragging a taskbar updates the underlying start date, end date, and duration.
+The Update operation modifies an existing task. The Blazor Gantt Chart calls the `updateTask` mutation for both cell/row/dialog edits and **taskbar drag operations** (when `AllowTaskbarEditing="true"`), because dragging a taskbar updates the underlying start date, end date, and duration.
 
 **GraphQL Mutation Request:**
 
@@ -1265,7 +1268,7 @@ mutation update($record: TaskDataInput!, $action: String!, $primaryColumnName: S
 | `action` | `string` | Type of action being performed (usually `"save"` for update) | `"save"` |
 | `primaryColumnName` | `string` | Name of the primary key column used to identify the record | `"TaskId"` |
 | `primaryColumnValue` | `string` | Value of the primary key used to locate the task | `"10"` |
-| `additionalParameters` | `Any` | Extra context or custom parameters from the Gantt Chart | Empty object `{}` |
+| `additionalParameters` | `Any` | Extra context or custom parameters from the Blazor Gantt Chart | Empty object `{}` |
 
 **Update Operation Logic Breakdown:**
 
@@ -1277,7 +1280,7 @@ mutation update($record: TaskDataInput!, $action: String!, $primaryColumnName: S
 | **4. Preserve ID** | Keep the original `TaskId` unchanged | `TaskId` is not updated, only used for lookup |
 | **5. Return Updated** | Send back the modified record with new values | Return the `existing` object |
 
-**Taskbar Editing Note:** While dragging or resizing a taskbar, the Gantt Chart calls `updateTask` with the new `StartDate`, `EndDate`, and `Duration`. The same `UpdateTask` mutation handles both dialog edits and timeline edits, so no extra wiring is required.
+**Taskbar Editing Note:** While dragging or resizing a taskbar, the Blazor Gantt Chart calls `updateTask` with the new `StartDate`, `EndDate`, and `Duration`. The same `UpdateTask` mutation handles both dialog edits and timeline edits, so no extra wiring is required.
 
 ---
 
@@ -1307,7 +1310,7 @@ mutation delete($primaryColumnValue: String!, $additionalParameters: Any) {
 | Parameter | Type | Purpose | Example |
 |-----------|------|---------|---------|
 | `primaryColumnValue` | `string` | Value of the primary key identifying which task to delete | `"10"` |
-| `additionalParameters` | `Any` | Extra context or custom parameters from the Gantt Chart | Empty object `{}` |
+| `additionalParameters` | `Any` | Extra context or custom parameters from the Blazor Gantt Chart | Empty object `{}` |
 
 **Backend Response:**
 
@@ -1325,7 +1328,7 @@ If the task does not exist, the response is `false`.
 
 ### Batch Update
 
-The Batch Update operation allows adding, updating, and deleting multiple tasks in a single request. The Gantt Chart uses this when several changes are accumulated before being sent to the server in one round trip (for example, while applying a series of edits and then clicks **Update**).
+The Batch Update operation allows adding, updating, and deleting multiple tasks in a single request. The Blazor Gantt Chart uses this when several changes are accumulated before being sent to the server in one round trip (for example, while applying a series of edits and then clicks **Update**).
 
 **GraphQL Mutation Request:**
 
@@ -1401,12 +1404,12 @@ This guide demonstrates how to:
 8. Integrate the Blazor Gantt Chart and configure the GraphQL adaptor. [🔗](#step-2-update-the-blazor-gantt-chart)
 9. Perform CRUD operations from the chart using GraphQL mutations. [🔗](#perform-crud-operations)
 
-The application now provides an implementation example of managing project tasks with the [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) integrated with a Hot Chocolate GraphQL backend.
+The application now provides an implementation example of managing project tasks with the [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) integrated with a Hot Chocolate GraphQL backend.
 
 ## Key technical points of the GraphQLAdaptor
 
 - **Typed schema** – Hot Chocolate generates a typed schema from the `TaskData` class, so insert, update, and batch operations are validated at the schema level.
-- **Selective field loading** – The GraphQL query lists only the fields the Gantt Chart renders, which reduces payload size for large projects.
+- **Selective field loading** – The GraphQL query lists only the fields the Blazor Gantt Chart renders, which reduces payload size for large projects.
 - **Server-driven operations** – Searching, sorting, and filtering happen on the server through `DataManagerRequestInput`.
 - **Hierarchical data with a flat payload** – The adaptor returns tasks with a `ParentId` field, and the `ParentID` mapping reconstructs the parent/child hierarchy in the grid and the taskbar view.
 - **Full CRUD** – Add (toolbar), edit (cell, row, dialog), delete, and taskbar drag operations are mapped to standard GraphQL mutations on the backend.

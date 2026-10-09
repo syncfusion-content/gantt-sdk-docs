@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Resource Multi Taskbar  in ASP.NET Core Gantt Component
-description: Learn here all about Multi Taskbar  in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Multi Taskbar in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to implement multi-taskbar functionality in Syncfusion ASP.NET Core Gantt Chart to display multiple tasks per resource in a single row.
+keywords: asp.net core gantt multi taskbar, multiple taskbars, resource taskbars, task display, resource management, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/multitaskbar
 platform: gantt-sdk
-control: Resource Multi Taskbar 
-publishingplatform: gantt-sdk
+control: Multi Taskbar - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK/overview
 ---
 
-# Resource Multi Taskbar in ASP.NET Core Gantt Component
+# Multi Taskbar in ASP.NET Core Gantt Chart
 
 ## Resource Multi Taskbar
 
@@ -20,8 +23,6 @@ When a resource has multiple tasks scheduled on the same date, then the tasks wi
 
 N> By default, the `enableMultiTaskbar` property value is `false`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resource-view/multitaskbar/tagHelper %}
@@ -31,21 +32,7 @@ N> By default, the `enableMultiTaskbar` property value is `false`.
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resource-view/multitaskbar/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Multitaskbar.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resource-view/multitaskbar/multitaskbar.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Alt text](images/multitaskbar.PNG)
+![Alt text](./images/multitaskbar.PNG)
 
 ## Disable taskbar overlap
 
@@ -55,8 +42,6 @@ When `AllowTaskbarOverlap` is set to false, the resources are displayed in a sin
 
 It's important to note that when `AllowTaskbarOverlap` is disabled, task dependencies or relationships cannot be established between tasks that are rendered in multiple lines for the same resource. If you need to establish dependencies between tasks for the same resource, you may want to consider enabling taskbar overlap.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resource-view/taskbaroverlap/tagHelper %}
@@ -65,15 +50,3 @@ It's important to note that when `AllowTaskbarOverlap` is disabled, task depende
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resource-view/taskbaroverlap/taskbaroverlap.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resource-view/taskbaroverlap/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="TaskbarOverlap.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/resource-view/taskbaroverlap/taskbaroverlap.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

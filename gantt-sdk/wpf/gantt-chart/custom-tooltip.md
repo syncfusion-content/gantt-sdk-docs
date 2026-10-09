@@ -1,10 +1,11 @@
 ---
 layout: post
-title: CustomToolTip in WPF Gantt control | Syncfusion
-description: Learn about CustomToolTip support in Syncfusion Essential Studio WPF Gantt control, its elements and more details.
+title: CustomToolTip in WPF Gantt | Syncfusion
+description: Learn about CustomToolTip support in Syncfusion WPF Gantt using the ToolTipTemplate property to display custom content and visuals.
 platform: gantt-sdk
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # CustomToolTip in WPF Gantt
@@ -24,7 +25,7 @@ Data Type </th></tr>
 <tr>
 <td>
 {{'[ToolTipTemplate](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ToolTipTemplate)'| markdownify }}</td><td>
-Gets or set the TaskBarCollection Property of GanttControl</td><td>
+Gets or set the TaskBarCollection Property of WPF Gantt Control</td><td>
 Dependency Property</td><td>
 DataTemplate</td></tr>
 </table>
@@ -32,7 +33,7 @@ DataTemplate</td></tr>
 
 ## Adding CustomToolTip to Gantt 
 
-The following code illustrates how to add a custom tooltip to the Gantt control.
+The following code illustrates how to add a custom tooltip to the WPF Gantt control.
 
 {% tabs %}
 {% highlight xaml %}

@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Reorder Columns in React Gantt Chart Component | Syncfusion
-description: Learn how to reorder columns in the Syncfusion React Gantt Chart using drag-and-drop or code, and how to restrict reordering for specific columns.
+title: Column Reorder in React Gantt Chart | Syncfusion
+description: Learn how to reorder columns in Syncfusion React Gantt Chart using drag-and-drop or programmatic methods to customize the task grid layout.
+keywords: react gantt column reorder, drag drop columns, reorder columns, column position, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/columns/column-reorder
 platform: gantt-sdk
-control: Column reorder
+control: Column Reorder - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Column Reorder in React Gantt Chart Component
+# Reordering Columns Using Drag-and-Drop in React Gantt Chart
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component supports column reordering by dragging a column header to a new position. 
 
@@ -60,7 +63,7 @@ You can programmatically reorder columns in React Gantt Chart component using av
 
 ### Reorder columns using field names
 
-You can reorder columns in the Gantt Chart component using the [reorderColumns](https://helpej2.syncfusion.com/react/documentation/api/gantt#reordercolumns) method.  This method reorders one or more columns by specifying the source column(s) and the target column using their field names:  
+You can reorder columns in the Gantt Chart component using the [reorderColumns](https://ej2.syncfusion.com/react/documentation/api/gantt#reordercolumns) method.  This method reorders one or more columns by specifying the source column(s) and the target column using their field names:  
 
 - **fromFName**: The field name of the column to move.  
 - **toFName**: The field name of the target column position.

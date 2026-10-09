@@ -1,13 +1,17 @@
 ---
 layout: post
-title: Editing tasks in Blazor Gantt Chart Component | Syncfusion
-description: Learn to dynamically edit tasks in Syncfusion Blazor Gantt Chart using cell, dialog, taskbar, or code-based methods for seamless project updates.
+title: Editing Tasks in Blazor Gantt Chart | Syncfusion
+description: Learn how to edit tasks in Syncfusion Blazor Gantt Chart using cell editing, dialog editing, taskbar dragging, and programmatic methods.
+keywords: blazor gantt edit tasks, cell editing, dialog editing, taskbar edit, programmatic edit, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/editing-tasks
 platform: gantt-sdk
-control: Editing tasks
+control: Editing Tasks - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Editing tasks in Blazor Gantt Chart Component
+# Editing Tasks with Cell, Dialog and Taskbar in Blazor Gantt Chart
 
 Editing tasks in the Blazor Gantt Chart component enables dynamic project updates, such as modifying task durations, names, or dependencies, using cell editing, dialog, taskbar interactions, or programmatic methods. Enable editing by setting [GanttEditSettings.AllowEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_AllowEditing) and [GanttEditSettings.AllowTaskbarEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_AllowTaskbarEditing) to **true**, ensuring task data aligns with [TaskFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html) mappings (e.g., id, name, startDate). Cell editing allows direct updates in the TreeGrid pane, dialog editing provides a comprehensive interface, taskbar dragging adjusts durations or dates, and connector lines manage dependencies via drag-and-drop. Use the [GanttEditSettings.Mode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_Mode) property to control editing behavior (**Auto** or **Dialog**). Customize dialog fields with [AddDialogFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttAddDialogFields.html#Syncfusion_Blazor_Gantt_GanttAddDialogFields_AddDialogFields) and [EditDialogFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditDialogFields.html#Syncfusion_Blazor_Gantt_GanttEditDialogFields_EditDialogFields) for tailored forms. The [UpdateRecordByIDAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_UpdateRecordByIDAsync__0_) method enables programmatic updates, except for task IDs. Ensure valid data to prevent issues and maintain dependency integrity.
 
@@ -121,7 +125,7 @@ Enable dialog editing by setting [GanttEditSettings.AllowEditing](https://help.s
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/hXVxNGhjLWmKLWte?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-N> In dialog editing mode, the edit dialog appears when the Tree Grid or Gantt chart sides are double-clicked.
+N> In dialog editing mode, the edit dialog appears when the Tree Grid or Blazor Gantt Chart sides are double-clicked.
 
 ## Sections or tabs in Dialog
 
@@ -137,7 +141,7 @@ Customize the edit dialog by defining tabs with [GanttAddDialogFields](https://h
                      Dependency="Predecessor">
     </GanttTaskFields>
     <GanttResource DataSource="ResourceCollection" Id="Id" Name="Name" TValue="TaskData" TResources="ResourceInfoModel"></GanttResource>
-    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="PrimaryId" TaskID="TaskId" ResourceID="ResourceID" TValue="TaskData" TAssignment="AssignmentModel">
+    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="PrimaryId" TaskID="TaskId" ResourceId="ResourceId" TValue="TaskData" TAssignment="AssignmentModel">
     </GanttAssignmentFields>
     <GanttEditSettings AllowAdding="true" AllowEditing="true" Mode="Syncfusion.Blazor.Gantt.EditMode.Dialog">
     </GanttEditSettings>
@@ -186,7 +190,7 @@ Customize the edit dialog by defining tabs with [GanttAddDialogFields](https://h
     {
         public int PrimaryId { get; set; }
         public int TaskId { get; set; }
-        public int ResourceID { get; set; }
+        public int ResourceId { get; set; }
     }
 
     public static List<ResourceInfoModel> GetResourceCollections()
@@ -205,12 +209,12 @@ Customize the edit dialog by defining tabs with [GanttAddDialogFields](https://h
     {
         List<AssignmentModel> assignments = new List<AssignmentModel>()
         {
-            new AssignmentModel(){ PrimaryId=1, TaskId = 2, ResourceID=1},
-            new AssignmentModel(){ PrimaryId=2, TaskId = 3, ResourceID=2},
-            new AssignmentModel(){ PrimaryId=3, TaskId = 3, ResourceID=3},
-            new AssignmentModel(){ PrimaryId=4, TaskId = 6, ResourceID=4},
-            new AssignmentModel(){ PrimaryId=5, TaskId = 8, ResourceID=1},
-            new AssignmentModel(){ PrimaryId=6, TaskId = 8, ResourceID=5}
+            new AssignmentModel(){ PrimaryId=1, TaskId = 2, ResourceId=1},
+            new AssignmentModel(){ PrimaryId=2, TaskId = 3, ResourceId=2},
+            new AssignmentModel(){ PrimaryId=3, TaskId = 3, ResourceId=3},
+            new AssignmentModel(){ PrimaryId=4, TaskId = 6, ResourceId=4},
+            new AssignmentModel(){ PrimaryId=5, TaskId = 8, ResourceId=1},
+            new AssignmentModel(){ PrimaryId=6, TaskId = 8, ResourceId=5}
         };
         return assignments;
     }
@@ -263,12 +267,12 @@ Restrict fields in the dialog’s General tab using [GanttAddDialogFields](https
     </GanttColumns>
     <GanttEditDialogFields>
         <GanttEditDialogField Type="GanttDialogFieldType.General" HeaderText="General"
-                              Fields="@(new string[]{ "TaskID", "TaskName", "Duration" })"></GanttEditDialogField>
+                              Fields="@(new string[]{ "TaskId", "TaskName", "Duration" })"></GanttEditDialogField>
         <GanttEditDialogField Type="GanttDialogFieldType.Notes"></GanttEditDialogField>
     </GanttEditDialogFields>
     <GanttAddDialogFields>
         <GanttAddDialogField Type="GanttDialogFieldType.General" HeaderText="General Tab"
-                             Fields="@(new string[]{ "TaskID", "TaskName", "Duration" })"></GanttAddDialogField>
+                             Fields="@(new string[]{ "TaskId", "TaskName", "Duration" })"></GanttAddDialogField>
         <GanttAddDialogField Type="GanttDialogFieldType.Dependency"></GanttAddDialogField>
     </GanttAddDialogFields>
 </SfGantt>
@@ -443,6 +447,6 @@ Update tasks programmatically using the [UpdateRecordByIDAsync](https://help.syn
 {% previewsample "https://blazorplayground.syncfusion.com/embed/rDrdZcBDrMapltlw?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 ## See also
-- [How to add new tasks?](https://blazor.syncfusion.com/documentation/gantt-chart/adding-new-tasks)
-- [How to manage task dependencies?](https://blazor.syncfusion.com/documentation/gantt-chart/task-dependencies)
-- [How to configure critical path?](https://blazor.syncfusion.com/documentation/gantt-chart/criticalpath)
+- [How to add new tasks?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/adding-new-tasks)
+- [How to manage task dependencies?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/task-dependencies)
+- [How to configure critical path?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/criticalpath)

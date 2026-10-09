@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Holidays Customization in WPF Gantt control | Syncfusion
-description: Learn about Holidays Customization support in Syncfusion WPF Gantt control, its elements and more details.
+title: Holidays Customization in WPF Gantt | Syncfusion
+description: Learn about Holidays Customization support in Syncfusion WPF Gantt using GanttHoliday, ShowHolidays, and ExcludeHolidays properties.
 platform: gantt-sdk
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Holidays Customization in WPF Gantt
 
-The GanttControl allows customers to differentiate the dates of holidays. This support is used to highlight the holidays in the Gantt chart.
+The control allows customers to differentiate the dates of holidays. This support is used to highlight the holidays in the Gantt chart.
 
 The holidays can be specified using the [Holidays](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_Holidays) property in the SfGantt, which holds a collection of [GanttHoliday](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttHoliday.html).
 
@@ -21,7 +22,7 @@ The following properties in the GanttHoliday are used to define the holidays:
 
 N> If the background is not defined, then the Non-WorkingDays background will be applied.
 
-The following properties in the GanttControl are used to customize the holiday feature:
+The following properties are used to customize the holiday feature:
 
 * [ShowHolidays](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_ShowHolidays): Indicates whether to enable or disable the holidays in the Gantt chart.
 

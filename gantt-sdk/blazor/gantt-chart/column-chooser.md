@@ -1,19 +1,23 @@
 ---
 layout: post
-title: Column Chooser in Blazor Gantt Chart Component | Syncfusion
-description: Learn how to dynamically show or hide columns using the column chooser in the Syncfusion Blazor Gantt Chart, including custom templates.
+title: Column Chooser in Blazor Gantt Chart | Syncfusion
+description: Learn how to show or hide columns dynamically using the column chooser in Syncfusion Blazor Gantt Chart for flexible grid customization.
+keywords: blazor gantt column chooser, show hide columns, dynamic columns, column visibility, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/column-chooser
 platform: gantt-sdk
-control: Gantt Chart
+control: Column Chooser - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Column Chooser in Blazor Gantt Chart Component
+# Column Chooser for Dynamic Visibility in Blazor Gantt Chart
 
 The column chooser feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component provides dynamic control over which columns are displayed in the Gantt view.
 
 To enable this feature, set the [ShowColumnChooser](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ShowColumnChooser) property to **true**.
 
-You can add a custom column chooser option to the toolbar using the [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Toolbar) property. To open the column chooser at a specific position, use the [OpenColumnChooser](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_OpenColumnChooser_System_Nullable_System_Double__System_Nullable_System_Double_) method with optional X and Y coordinates within the [OnToolbarClick](https://blazor.syncfusion.com/documentation/gantt-chart/events#ontoolbarclick) event.
+You can add a custom column chooser option to the toolbar using the [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Toolbar) property. To open the column chooser at a specific position, use the [OpenColumnChooser](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_OpenColumnChooser_System_Nullable_System_Double__System_Nullable_System_Double_) method with optional X and Y coordinates within the [OnToolbarClick](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#ontoolbarclick) event.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -90,7 +94,7 @@ You can add a custom column chooser option to the toolbar using the [Toolbar](ht
 
 ## Custom component in column chooser template
 
-You can customize the column chooser dialog in the Gantt Chart by assigning a custom template using the [GanttColumnChooserSettings.Template](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumnChooserSettings.html#Syncfusion_Blazor_Gantt_GanttColumnChooserSettings_Template) property. This allows you to render custom components or layouts within the column chooser.
+You can customize the column chooser dialog in the Blazor Gantt Chart by assigning a custom template using the [GanttColumnChooserSettings.Template](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumnChooserSettings.html#Syncfusion_Blazor_Gantt_GanttColumnChooserSettings_Template) property. This allows you to render custom components or layouts within the column chooser.
 
 The following sample renders a [ListView](https://blazor.syncfusion.com/documentation/listview/getting-started-webapp) inside the column chooser template to support grouped column selection. It also includes a search box for filtering columns based on user input.
 
@@ -104,7 +108,7 @@ The following sample renders a [ListView](https://blazor.syncfusion.com/document
 <div style="height: 100%; width: 100%">
     <div style="position: relative; border: 1px solid red; height: 100%; width: 100%; min-height: 450px; min-width: 800px">
         <SfGantt @ref="Gantt" DataSource="@Orders" ShowColumnChooser="true" ProjectStartDate="new DateTime(2026, 4, 1)" ID="GanttChart" Width="1200px" Height="450px" HighlightWeekends="true" AllowReordering="true" TreeColumnIndex="1" GridLines="Syncfusion.Blazor.Gantt.GridLine.None">
-            <GanttTaskFields Id="TaskID" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" ParentID="ParentID" Dependency="Predecessor"></GanttTaskFields>
+            <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" ParentID="ParentID" Dependency="Predecessor"></GanttTaskFields>
             <GanttColumnChooserSettings>
                 <Template>
                     @{
@@ -422,6 +426,6 @@ public class TaskData
 
 ## See also
 
-- [Accessibility in Blazor Gantt Chart](https://blazor.syncfusion.com/documentation/gantt-chart/accessibility)
-- [Blazor Gantt Chart Feature Tour](https://www.syncfusion.com/blazor-components/blazor-gantt-chart)
-- [Blazor Gantt Chart Example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=bootstrap5)
+- [Accessibility in Blazor Gantt Chart](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/accessibility)
+- [Blazor Gantt Chart Feature Tour](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart)
+- [Blazor Gantt Chart Example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=fluent2)

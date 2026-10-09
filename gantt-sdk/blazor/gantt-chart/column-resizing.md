@@ -1,13 +1,17 @@
 ---
 layout: post
-title: Column Resizing in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Column Resizing in Syncfusion Blazor Gantt Chart component and much more details.
+title: Column Resizing in Blazor Gantt Chart | Syncfusion
+description: Learn how to resize columns interactively in Syncfusion Blazor Gantt Chart to adjust grid column width based on content or user preference.
+keywords: blazor gantt column resizing, resize columns, column width, autofit columns, interactive resize, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/column-resizing
 platform: gantt-sdk
-control: Gantt Chart
+control: Column Resizing - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Resize columns in Blazor Gantt Chart component
+# Resize Columns Interactively in Blazor Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component allows you to resize columns dynamically by dragging the edges of column headers. This feature enhances readability and layout flexibility, especially when working with large datasets. To enable this feature, set the [AllowResizing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowResizing) property to **true** in the Gantt configuration. 
 
@@ -68,7 +72,7 @@ Column width can be adjusted by dragging the right edge of the header, changes a
 
 ## Restrict the resizing based on minimum and maximum width
 
-The Gantt chart component allows restricting column resizing within a defined range to maintain layout consistency. This ensures column widths remain within the specified limits during resizing.  
+The Blazor Gantt Chart component allows restricting column resizing within a defined range to maintain layout consistency. This ensures column widths remain within the specified limits during resizing.  
   
 To enable this, set the [GanttColumn.MinWidth](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_MinWidth) and [GanttColumn.MaxWidth](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_MaxWidth) properties in the column configuration.  
 
@@ -132,7 +136,7 @@ The following example demonstrates how the **TaskName** column can be configured
 
 ## Touch interaction
 
-The Gantt Chart component supports touch interactions for mobile devices. Users can resize columns by tapping and dragging the floating handler, or use the column menu to autofit columns.
+The Blazor Gantt Chart component supports touch interactions for mobile devices. Users can resize columns by tapping and dragging the floating handler, or use the column menu to autofit columns.
 
 **Resizing columns on touch devices:**
 
@@ -146,4 +150,4 @@ The screenshot below illustrates column resizing on a touch device.
 
 ![Column resize](images/blazor-gantt-chart-column-resizing.webp)
 
-> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=bootstrap4) to know how to render and configure the Gantt Chart.
+> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=fluent2) to know how to render and configure the Blazor Gantt Chart.

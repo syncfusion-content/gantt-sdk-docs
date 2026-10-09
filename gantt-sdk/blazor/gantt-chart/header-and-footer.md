@@ -1,13 +1,17 @@
 ---
 layout: post
-title: PDF Headers and Footers in Syncfusion Blazor Gantt Chart Component
-description: Learn how to customize headers and footers in PDF exports of the Syncfusion Blazor Gantt Chart component with text, lines, page numbers, and images.
+title: PDF Headers and Footers in Blazor Gantt Chart | Syncfusion
+description: Learn how to add custom headers and footers in PDF exports of Syncfusion Blazor Gantt Chart with text, lines, page numbers, and images.
+keywords: blazor gantt pdf header footer, pdf page header, pdf page footer, custom pdf header, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/header-and-footer
 platform: gantt-sdk
-control: header and footer of PDF exporting
+control: PDF Header and Footer - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Header and Footer of PDF Exporting in Blazor Gantt Chart Component
+# PDF Export with Custom Headers and Footers in Blazor Gantt Chart
 
 Customizing headers and footers in PDF exports of the Blazor Gantt Chart component allows adding text, lines, page numbers, and images to enhance document professionalism for projects. Use [GanttPdfExportProperties](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttPdfExportProperties.html) with [Header](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.PdfExportPropertiesBase.html#Syncfusion_Blazor_Grids_PdfExportPropertiesBase_Header) and [Footer](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.PdfExportPropertiesBase.html#Syncfusion_Blazor_Grids_PdfExportPropertiesBase_Footer) to define content arrays, specifying `Type` (e.g., Text, Line), `Value`, `Position`, `Style`, or `Src` for images with `Base64` encoding.
 
@@ -227,5 +231,5 @@ These options provide flexibility for adding separators or visual structure to t
 {% previewsample "https://blazorplayground.syncfusion.com/embed/hZLnZmVXrwFkDRny?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 ## See also
-- [How to export to PDF?](https://blazor.syncfusion.com/documentation/gantt-chart/pdf-export)
-- [How to manage task dependencies?](https://blazor.syncfusion.com/documentation/gantt-chart/task-dependencies)
+- [How to export to PDF?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/pdf-export)
+- [How to manage task dependencies?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/task-dependencies)

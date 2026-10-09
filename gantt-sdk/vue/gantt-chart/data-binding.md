@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Data Binding in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about Data binding in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Data binding 
+title: Data Binding in Vue Gantt Chart | Syncfusion
+description: Learn data binding in Syncfusion Vue Gantt Chart with local arrays, remote data, DataManager, and dynamic data source updates for project management.
+keywords: vue gantt data binding, datasource, datamanager, local data, remote data, hierarchy, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/data-binding
 platform: gantt-sdk
+control: Data Binding - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Data Binding in Vue Gantt Chart Component
+# Data Binding from Local and Remote Sources in Vue Gantt Chart
 
 The Gantt uses `DataManager`, which supports both RESTful JSON data services binding and local JavaScript object array binding. The [dataSource](https://ej2.syncfusion.com/vue/documentation/api/gantt#datasource) property can be assigned either with the instance of DataManager or JavaScript object array collection. Gantt provides support to bind two kinds of data,
 
@@ -81,7 +84,7 @@ To bind remote data to the Gantt Chart component, assign service data as an inst
 
 ### URL Adaptor
 
-In Gantt, we can fetch data from SQL database using `ADO.NET` Entity Data Model and update the changes on CRUD action to the server by using `DataManager` support. To communicate with the remote data we are using `UrlAdaptor` of DataManager property to call the server method and get back resultant data in JSON format. We can know more about `UrlAdaptor` from [here](https://ej2.syncfusion.com/javascript/documentation/data/adaptors/?no-cache=1).
+In Gantt, we can fetch data from SQL database using `ADO.NET` Entity Data Model and update the changes on CRUD action to the server by using `DataManager` support. To communicate with the remote data we are using `UrlAdaptor` of DataManager property to call the server method and get back resultant data in JSON format. We can know more about `UrlAdaptor` from [here](https://ej2.syncfusion.com/vue/documentation/data/adaptors/?no-cache=1).
 
 > Please refer the [link](https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/models-data/creating-model-classes-with-the-entity-framework-cs) to create the `ADO.NET` Entity Data Model in Visual Studio,
 
@@ -230,7 +233,7 @@ The following code example describes the CRUD operations handled at server-side.
 
 ### Load child on demand
 
-To render child records on demand, assign a remote service URL in the instance of DataManager to the Url property. To interact with the remote data source, provide the endpoint URL and also define the [hasChildMapping](https://ej2.syncfusion.com/vue/documentation/api/gantt/taskFields#hasChildMapping) property in taskFields of Gantt Chart.
+To render child records on demand, assign a remote service URL in the instance of DataManager to the Url property. To interact with the remote data source, provide the endpoint URL and also define the [hasChildMapping](https://ej2.syncfusion.com/vue/documentation/api/gantt/taskFields#haschildmapping) property in taskFields of Gantt Chart.
 
 The <code>hasChildMapping</code> property maps the field name in the data source, which denotes whether the current record holds any child records. This is useful internally to show expand icon while binding child data on demand.
 
@@ -785,7 +788,7 @@ We can also define segment details as a flat data and this collection can be map
 
 ## Improve performance by disabling validations
 
-The [autoCalculateDateScheduling](https://ej2.syncfusion.com/vue/documentation/api/gantt#autoCalculateDateScheduling) property can help you reduce the time taken for the Gantt chart to render on the initial load. When this API is enabled, parent-child validation, data validation, and predecessor validation are restricted, allowing the Gantt chart to load more quickly. Since we are disabling the validations, data source provided to gantt should have all data such as start date, end date, duration, as proper data.
+The [autoCalculateDateScheduling](https://ej2.syncfusion.com/vue/documentation/api/gantt#autocalculatedatescheduling) property can help you reduce the time taken for the Gantt chart to render on the initial load. When this API is enabled, parent-child validation, data validation, and predecessor validation are restricted, allowing the Gantt chart to load more quickly. Since we are disabling the validations, data source provided to gantt should have all data such as start date, end date, duration, as proper data.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

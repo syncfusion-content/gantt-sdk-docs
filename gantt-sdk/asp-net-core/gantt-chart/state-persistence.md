@@ -1,15 +1,17 @@
 ---
 layout: post
-title: State Persistence in ASP.NET Core Gantt Control | Syncfusion
-description: Learn here all about State Persistence in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: State Persistence in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to enable state persistence in Syncfusion ASP.NET Core Gantt Chart to save and restore user preferences, columns, and view settings.
+keywords: asp.net core gantt state persistence, user preferences, local storage, save state, restore state, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/state-persistence
 platform: gantt-sdk
-control: State Persistence
-publishingplatform: gantt-sdk
+control: State Persistence - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK/overview
 ---
 
-
-# State Persistence Feature
+# State Persistence in ASP.NET Core Gantt Chart
 
 State persistence refers to the Gantt's state maintained in the browser's [`localStorage`](https://www.w3schools.com/html/html5_webstorage.asp#) even if the browser is refreshed or if you move to the next page within the browser.
 State persistence stores gantt’s model object in the local storage when the [`enablePersistence`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnablePersistence) is defined as true.
@@ -39,8 +41,6 @@ The following example demonstrates how to prevent Gantt columns from persisting.
 
 N> When the [EnablePersistence](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnablePersistence) property is set to true, the Gantt properties such as column template, column formatter, header text, and value accessor will not persist.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/state-persist/custom/tagHelper %}
@@ -50,25 +50,11 @@ N> When the [EnablePersistence](https://help.syncfusion.com/cr/aspnetmvc-js2/Syn
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/state-persist/custom/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Column-prevent.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/state-persist/custom/column-prevent.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Persist the header template and header Text
 
 By default, the Gantt properties such as column template, header text, header template, column formatter, and value accessor will not persist when [EnablePersistence](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnablePersistence) is set to true. Because the column template and header text can be customized at the application level.
 
 If you wish to restore all these column properties, then you can achieve it by cloning the gantt’s columns property using JavaScript Object’s assign method and storing this along with the persist data manually. While restoring the settings, this column object must be assigned to the gantt’s columns property to restore the column settings as demonstrated in the following sample.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -78,15 +64,3 @@ If you wish to restore all these column properties, then you can achieve it by c
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/state-persist/default/column-persist.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/state-persist/default/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Column-persist.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/state-persist/default/column-persist.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

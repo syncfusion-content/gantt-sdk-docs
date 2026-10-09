@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Appearance in UWP Gantt control | Syncfusion
-description: Learn here all about Appearance support in Syncfusion UWP Gantt (SfGantt) control and more.
+title: Appearance in UWP Gantt Chart | Syncfusion
+description: Learn about Appearance support in Syncfusion UWP Gantt Chart using visual styling options and custom templates for task bars, parent tasks.
 platform: gantt-sdk
 control: SfGantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Appearance in UWP Gantt (SfGantt)
+# Appearance in UWP Gantt Chart
 
-The Gantt control provides options to customize the look and feel of the task visual in the Gantt chart. 
+The control provides options to customize the look and feel of the task visual. 
 
 **Visual customization**
 The colors of parent taskbar, taskbar, milestone, and progress bar can be customized using the following properties:

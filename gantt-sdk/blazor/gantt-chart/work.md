@@ -1,17 +1,21 @@
 ---
 layout: post
-title: Work in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Work in Syncfusion Blazor Gantt Chart component and much more details.
+title: Work in Blazor Gantt Chart | Syncfusion
+description: Learn how to configure and calculate work in Syncfusion Blazor Gantt Chart for accurate task effort tracking, resource units, and work scheduling.
+keywords: blazor gantt work, task work, work field, effort tracking, work scheduling, resource work units, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/work
 platform: gantt-sdk
-control: Gantt Chart
+control: Work - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Work in Blazor Gantt Chart Component
+# Work and Effort Tracking with Task Type Support in Blazor Gantt Chart
 
 ## Work
 
-The work is the total hours required to complete a task. Work can be mapped from the data source field using the property [GanttTaskFields.Work](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_Work). Work can be measured in `Hour`, `Day`, `Minute`. By default, work is measured in `Hour` and it can be changed by using the property `WorkUnit`.
+The work is the total hours required to complete a task. Work can be mapped from the data source field using the property [GanttTaskFields.Work](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_Work). Work can be measured in `Hour`, `Day`, `Minute`. By default, work is measured in `Hour` and can be changed using the `WorkUnit` property.
 
 N> When the work field is mapped from the data source, the default task type will be `FixedWork`.
 
@@ -24,7 +28,7 @@ N> When the work field is mapped from the data source, the default task type wil
                      ParentID="ParentId" Work="Work"></GanttTaskFields>
     <GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true" ShowDeleteConfirmDialog="true"></GanttEditSettings>
     <GanttResource DataSource="ResourceCollection" Id="Id" Name="Name" TValue="TaskData" TResources="ResourceInfoModel"></GanttResource>
-    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="PrimaryId" TaskID="TaskID" ResourceID="ResourceId" Units="Unit" TValue="TaskData" TAssignment="AssignmentModel">
+    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="PrimaryId" TaskID="TaskId" ResourceID="ResourceId" Units="Unit" TValue="TaskData" TAssignment="AssignmentModel">
     </GanttAssignmentFields>
     <GanttLabelSettings TValue="TaskData" RightLabel="Resources"></GanttLabelSettings>
 </SfGantt>
@@ -63,7 +67,7 @@ N> When the work field is mapped from the data source, the default task type wil
     public class AssignmentModel
     {
         public int PrimaryId { get; set; }
-        public int TaskID { get; set; }
+        public int TaskId { get; set; }
         public int ResourceId { get; set; }
         public double? Unit { get; set; }
     }
@@ -87,18 +91,18 @@ N> When the work field is mapped from the data source, the default task type wil
     {
         List<AssignmentModel> assignments = new List<AssignmentModel>()
         {
-            new AssignmentModel(){ PrimaryId=1, TaskID = 2, ResourceId=1, Unit=70},
-            new AssignmentModel(){ PrimaryId=2, TaskID = 2, ResourceId=6},
-            new AssignmentModel(){ PrimaryId=3, TaskID = 3, ResourceId=2},
-            new AssignmentModel(){ PrimaryId=4, TaskID = 3, ResourceId=3},
-            new AssignmentModel(){ PrimaryId=5, TaskID = 3, ResourceId=5},
-            new AssignmentModel(){ PrimaryId=6, TaskID = 4, ResourceId=8},
-            new AssignmentModel(){ PrimaryId=7, TaskID = 4, ResourceId=9},
-            new AssignmentModel(){ PrimaryId=8, TaskID = 6, ResourceId=4},
-            new AssignmentModel(){ PrimaryId=9, TaskID = 7, ResourceId=6},
-            new AssignmentModel(){ PrimaryId=10, TaskID = 7, ResourceId=8},
-            new AssignmentModel(){ PrimaryId=11, TaskID = 8, ResourceId=12},
-            new AssignmentModel(){ PrimaryId=12, TaskID = 8, ResourceId=5},
+            new AssignmentModel(){ PrimaryId=1, TaskId = 2, ResourceId=1, Unit=70},
+            new AssignmentModel(){ PrimaryId=2, TaskId = 2, ResourceId=6},
+            new AssignmentModel(){ PrimaryId=3, TaskId = 3, ResourceId=2},
+            new AssignmentModel(){ PrimaryId=4, TaskId = 3, ResourceId=3},
+            new AssignmentModel(){ PrimaryId=5, TaskId = 3, ResourceId=5},
+            new AssignmentModel(){ PrimaryId=6, TaskId = 4, ResourceId=8},
+            new AssignmentModel(){ PrimaryId=7, TaskId = 4, ResourceId=9},
+            new AssignmentModel(){ PrimaryId=8, TaskId = 6, ResourceId=4},
+            new AssignmentModel(){ PrimaryId=9, TaskId = 7, ResourceId=6},
+            new AssignmentModel(){ PrimaryId=10, TaskId = 7, ResourceId=8},
+            new AssignmentModel(){ PrimaryId=11, TaskId = 8, ResourceId=12},
+            new AssignmentModel(){ PrimaryId=12, TaskId = 8, ResourceId=5},
         };
         return assignments;
     }
@@ -140,7 +144,7 @@ The work, duration and resource unit fields of a task depends upon each other an
                      ParentID="ParentId" Work="Work" TaskType="TaskType"></GanttTaskFields>
     <GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true" ShowDeleteConfirmDialog="true"></GanttEditSettings>
     <GanttResource DataSource="ResourceCollection" Id="Id" Name="Name" TValue="TaskData" TResources="ResourceInfoModel"></GanttResource>
-    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="PrimaryId" TaskID="TaskID" ResourceID="ResourceId" Units="Unit" TValue="TaskData" TAssignment="AssignmentModel">
+    <GanttAssignmentFields DataSource="AssignmentCollection" PrimaryKey="PrimaryId" TaskID="TaskId" ResourceID="ResourceId" Units="Unit" TValue="TaskData" TAssignment="AssignmentModel">
     </GanttAssignmentFields>
     <GanttLabelSettings TValue="TaskData" RightLabel="Resources"></GanttLabelSettings>
 </SfGantt>
@@ -180,7 +184,7 @@ The work, duration and resource unit fields of a task depends upon each other an
     public class AssignmentModel
     {
         public int PrimaryId { get; set; }
-        public int TaskID { get; set; }
+        public int TaskId { get; set; }
         public int ResourceId { get; set; }
         public double? Unit { get; set; }
     }
@@ -204,18 +208,18 @@ The work, duration and resource unit fields of a task depends upon each other an
     {
         List<AssignmentModel> assignments = new List<AssignmentModel>()
         {
-            new AssignmentModel(){ PrimaryId=1, TaskID = 2, ResourceId=1, Unit=70},
-            new AssignmentModel(){ PrimaryId=2, TaskID = 2, ResourceId=6},
-            new AssignmentModel(){ PrimaryId=3, TaskID = 3, ResourceId=2},
-            new AssignmentModel(){ PrimaryId=4, TaskID = 3, ResourceId=3},
-            new AssignmentModel(){ PrimaryId=5, TaskID = 3, ResourceId=5},
-            new AssignmentModel(){ PrimaryId=6, TaskID = 4, ResourceId=8},
-            new AssignmentModel(){ PrimaryId=7, TaskID = 4, ResourceId=9},
-            new AssignmentModel(){ PrimaryId=8, TaskID = 6, ResourceId=4},
-            new AssignmentModel(){ PrimaryId=9, TaskID = 7, ResourceId=6},
-            new AssignmentModel(){ PrimaryId=10, TaskID = 7, ResourceId=8},
-            new AssignmentModel(){ PrimaryId=11, TaskID = 8, ResourceId=12},
-            new AssignmentModel(){ PrimaryId=12, TaskID = 8, ResourceId=5},
+            new AssignmentModel(){ PrimaryId=1, TaskId = 2, ResourceId=1, Unit=70},
+            new AssignmentModel(){ PrimaryId=2, TaskId = 2, ResourceId=6},
+            new AssignmentModel(){ PrimaryId=3, TaskId = 3, ResourceId=2},
+            new AssignmentModel(){ PrimaryId=4, TaskId = 3, ResourceId=3},
+            new AssignmentModel(){ PrimaryId=5, TaskId = 3, ResourceId=5},
+            new AssignmentModel(){ PrimaryId=6, TaskId = 4, ResourceId=8},
+            new AssignmentModel(){ PrimaryId=7, TaskId = 4, ResourceId=9},
+            new AssignmentModel(){ PrimaryId=8, TaskId = 6, ResourceId=4},
+            new AssignmentModel(){ PrimaryId=9, TaskId = 7, ResourceId=6},
+            new AssignmentModel(){ PrimaryId=10, TaskId = 7, ResourceId=8},
+            new AssignmentModel(){ PrimaryId=11, TaskId = 8, ResourceId=12},
+            new AssignmentModel(){ PrimaryId=12, TaskId = 8, ResourceId=5},
         };
         return assignments;
     }
@@ -250,4 +254,4 @@ Fixed Unit | Updates work value | Updates Duration value. Note: For manually sch
 
 N> Fixed Unit is the default TaskType in Gantt. The above calculations are not applicable for Milestones.
 
-You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=bootstrap4) to know how to render and configure the Gantt.
+You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=fluent2) to know how to render and configure the Gantt.

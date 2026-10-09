@@ -1,15 +1,19 @@
 ---
 layout: post
-title: Clipboard in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about clipboard in Syncfusion Blazor Gantt Chart component and much more details.
+title: Clipboard in Blazor Gantt Chart | Syncfusion
+description: Learn how to use clipboard operations in Syncfusion Blazor Gantt Chart to copy and paste task rows or cell values efficiently.
+keywords: blazor gantt clipboard, copy paste gantt, clipboard operations, copy rows, cell copy, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/clipboard
 platform: gantt-sdk
-control: Gantt Chart
+control: Clipboard - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Clipboard in Blazor Gantt Chart component
+# Clipboard Copy and Paste Operations in Blazor Gantt Chart
 
-The clipboard feature allows copying selected row or cell data from the Gantt Chart component.
+The clipboard feature allows copying selected row or cell data from the Blazor Gantt Chart component.
 
 The following keyboard shortcut is supported for clipboard operations:
 
@@ -154,7 +158,7 @@ To copy selected rows or cells to the clipboard using external buttons, invoke t
 
 ## Copy hierarchy modes
 
-The Gantt Chart component supports multiple copy modes using the [CopyHierarchyMode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.TreeGrid.CopyHierarchyType.html) property. The following modes are available:
+The Blazor Gantt Chart component supports multiple copy modes using the [CopyHierarchyMode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.TreeGrid.CopyHierarchyType.html) property. The following modes are available:
 
 - **Parent**: Copies selected records along with their parent records. If no parent exists, only the selected records are copied.
 
@@ -286,7 +290,7 @@ You can copy the content of a row or cell by selecting it and pressing the <kbd>
 
 **Selected row copy and paste:**
 
-You can use the [RowSelected](https://blazor.syncfusion.com/documentation/gantt-chart/events#rowselected) event, which captures the index of the active row. When a copy command is triggered (`Ctrl + C`), the [BeforeCopy](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_BeforeCopy) event processes the selected row data and prepares it for duplication. The paste operation is initiated through the `onkeyup` keyboard event (`Ctrl + V`) and handled using the [AddRecordAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AddRecordAsync__0_System_Nullable_System_Int32__System_Nullable_Syncfusion_Blazor_Gantt_RowPosition__System_Object_) method, which inserts the copied records above the selected row. To prevent unintended paste actions, the [RowDeselected](https://blazor.syncfusion.com/documentation/gantt-chart/events#rowdeselected) event resets the selection index when no row is active.
+You can use the [RowSelected](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#rowselected) event, which captures the index of the active row. When a copy command is triggered (`Ctrl + C`), the [BeforeCopy](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_BeforeCopy) event processes the selected row data and prepares it for duplication. The paste operation is initiated through the `onkeyup` keyboard event (`Ctrl + V`) and handled using the [AddRecordAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AddRecordAsync__0_System_Nullable_System_Int32__System_Nullable_Syncfusion_Blazor_Gantt_RowPosition__System_Object_) method, which inserts the copied records above the selected row. To prevent unintended paste actions, the [RowDeselected](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#rowdeselected) event resets the selection index when no row is active.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -322,7 +326,8 @@ You can use the [RowSelected](https://blazor.syncfusion.com/documentation/gantt-
             var clip = args.ClipboardText;
             if (clip != "" || clip != null)
             {
-                var record = clip.Split("\n");
+                var record = clip.Split("
+");
                 int index = 0;
                 foreach (var rec in record)
                 {
@@ -437,7 +442,7 @@ You can use the [RowSelected](https://blazor.syncfusion.com/documentation/gantt-
 
 **Selected Cell Copy and Paste:** 
 
-You can use the [CellSelected](https://blazor.syncfusion.com/documentation/gantt-chart/events#cellselected) event to identify the active row when a cell is selected. When the copy command (`Ctrl + C`) is triggered, the selected cell positions are captured using `GetSelectedRowCellIndexesAsync`. On paste (`Ctrl + V`), the copied values are applied to the corresponding cells in the target rows using the [UpdateRecordByIDAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_UpdateRecordByIDAsync__0_) method. The copy and paste actions are handled through `onkeydown` and `onkeyup` keyboard events. To avoid unintended updates, the [CellDeselected](https://blazor.syncfusion.com/documentation/gantt-chart/events#celldeselected) event resets the selection index when no cell is active. 
+You can use the [CellSelected](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#cellselected) event to identify the active row when a cell is selected. When the copy command (`Ctrl + C`) is triggered, the selected cell positions are captured using `GetSelectedRowCellIndexesAsync`. On paste (`Ctrl + V`), the copied values are applied to the corresponding cells in the target rows using the [UpdateRecordByIDAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_UpdateRecordByIDAsync__0_) method. The copy and paste actions are handled through `onkeydown` and `onkeyup` keyboard events. To avoid unintended updates, the [CellDeselected](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#celldeselected) event resets the selection index when no cell is active. 
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -575,7 +580,7 @@ You can use the [CellSelected](https://blazor.syncfusion.com/documentation/gantt
 
 ## Autofill
 
-To achieve the autofill functionality in the Gantt chart, the drag selection feature must be enabled, and the `keyup` event must be bound.
+To achieve the autofill functionality in the Blazor Gantt Chart, the drag selection feature must be enabled, and the `keyup` event must be bound.
 
 The following properties have been configured in the [GanttSelectionSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html) to enable the drag selection feature:
 
@@ -586,11 +591,11 @@ The following properties have been configured in the [GanttSelectionSettings](ht
 
 These settings allow users to select multiple cells by dragging the mouse.
 
-The `keyup` event is used to detect key actions. For more information, please refer to this [page](https://blazor.syncfusion.com/documentation/gantt-chart/how-to/bind-native-events). In this example, pressing the `Alt` key triggers autofill. The value of the first selected cell is captured during the `CellSelected` event based on the selected cell index. 
+The `keyup` event is used to detect key actions. For more information, refer to the documentation on [Binding Native Events](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/how-to/bind-native-events). In this example, pressing the `Alt` key triggers autofill. The value of the first selected cell is captured during the `CellSelected` event based on the selected cell index. 
 
 When the `Alt` key is released during a multi-cell selection, the [UpdateRecordByID](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_UpdateRecordByIDAsync__0_) method is called in the `keyup` event. This updates all selected rows by copying the value from the first selected cell to the corresponding cells in other rows.
 
-This customization enables users to quickly update multiple cells, improving data entry efficiency in the Gantt chart.
+This customization enables users to quickly update multiple cells, improving data entry efficiency in the Blazor Gantt Chart.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}

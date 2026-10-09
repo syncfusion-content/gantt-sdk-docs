@@ -1,16 +1,19 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Kanban Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core Kanban control of Essential JS 2 and more details.
+title: Getting Started in ASP.NET Core Kanban | Syncfusion
+description: Learn how to start using Syncfusion ASP.NET Core Kanban with step-by-step setup instructions and essential component features.
+keywords: asp-net-core kanban getting started, syncfusion kanban, install component, setup
+canonical: https://www.syncfusion.com/gantt-sdk/aspnet-core-kanban-board
 platform: gantt-sdk
-control: Kanban
-publishingplatform: gantt-sdk
+control: Getting Started - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Getting Started with ASP.NET Core Kanban Control
+# Getting Started with ASP.NET Core Kanban
 
-This section briefly explains how to include the [ASP.NET Core Kanban](https://www.syncfusion.com/gantt-sdk/aspnet-core-kanban-board) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/), and [Visual Studio Code](https://code.visualstudio.com/).
+This section briefly explains how to include the [ASP.NET Core Kanban](https://www.syncfusion.com/gantt-sdk/aspnet-core-kanban-board) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs), and [Visual Studio Code](https://code.visualstudio.com).
 
 > **Ready to streamline your ASP.NET Core development?** Discover the full potential of ASP.NET Core controls with AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Code Studio and more. [Explore AI Coding Assistant](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/overview)
 
@@ -45,7 +48,7 @@ Alternatively, create an **ASP.NET Core Web App** using Visual Studio Code via [
 
 ## Install the required ASP.NET Core packages
 
-Install the [Syncfusion.AspNetCore.Kanban](https://www.nuget.org/packages/Syncfusion.AspNetCore.Kanban/) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) NuGet packages. All Syncfusion ASP.NET Core packages are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for the details.
+Install the [Syncfusion.AspNetCore.Kanban](https://www.nuget.org/packages/Syncfusion.AspNetCore.Kanban) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes) NuGet packages. All Syncfusion ASP.NET Core packages are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for the details.
 
 {% tabcontents %}
 
@@ -167,13 +170,13 @@ dotnet run
 
 {% endtabcontents %}
 
-![ASP.NET Core Kanban Control](images/default.webp)
+![ASP.NET Core Kanban Control](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/default.webp)
 
 ## Populating cards
 
-To populate the empty Kanban with cards, define the list or remote data using the `dataSource` property. To define [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_DataSource), the mandatory fields in the list should be relevant to `keyField`. In the following example, you can see the cards defined with default fields such as ID, Summary, and Status.
+To populate the empty Kanban with cards, define the list or remote data using the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_DataSource) property. To define [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_DataSource), the mandatory fields in the list should be relevant to [`keyField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_KeyField). In the following example, you can see the cards defined with default fields such as ID, Summary, and Status.
 
-![kanban](./images/populating-cards.webp)
+![kanban](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/populating-cards.webp)
 
 ## Enable swimlane
 
@@ -196,6 +199,7 @@ public class IndexModel : PageModel
     {
      
     }
+
 }
 public class KanbanDataModels
 {
@@ -214,7 +218,7 @@ public class KanbanDataModels
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Kanban with Swimlane](./images/enable-swimlane.webp)
+![ASP.NET Core Kanban with Swimlane](https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/images/enable-swimlane.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Kanban/ASP.NET%20Core%20Tag%20Helper%20Examples).
 

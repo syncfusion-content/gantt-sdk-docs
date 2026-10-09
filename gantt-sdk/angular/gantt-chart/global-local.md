@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Globalization and Localization in Angular Gantt Chart | Syncfusion
-description: Learn here all about globalization and localization in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Globalization & Localization in Angular Gantt | RTL | Syncfusion
+description: Learn how to configure globalization and localization in Syncfusion Angular Gantt Chart with multi-language support, RTL layout, locale, and culture settings.
+keywords: angular gantt globalization, localization, rtl, locale, culture, multi-language, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/global-local
 platform: gantt-sdk
-control: Globalization and Localization 
+control: Globalization & Localization - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Globalization and Localization in Angular Gantt Chart Component
+# Globalization and Localization in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component supports globalization to adapt project management interfaces to diverse languages, cultures, and regional preferences without code changes. Globalization encompasses localization for translating text elements like column headers and dialog titles, internationalization for formatting dates, numbers, and times in timelines and task fields, and Right-to-Left (RTL) support for languages like Arabic and Hebrew. These features ensure that task names, toolbar actions, and timeline displays align with users’ linguistic and cultural expectations, enhancing accessibility and usability in project management workflows for global users.
 
@@ -24,7 +27,7 @@ Implement globalization when targeting multilingual users, complying with region
 
 ## Localization implementation
 
-The [Localization](../common/localization) library allows you to localize default text content of the Gantt Chart component. Static text elements such as column headers, dialog titles, tooltips, toolbar items, and system messages can be translated to different languages by defining the [locale](https://ej2.syncfusion.com/angular/documentation/api/gantt#locale) value and providing translation objects.
+The [Localization](https://ej2.syncfusion.com/angular/documentation/common/globalization/localization) library allows you to localize default text content of the Gantt Chart component. Static text elements such as column headers, dialog titles, tooltips, toolbar items, and system messages can be translated to different languages by defining the [locale](https://ej2.syncfusion.com/angular/documentation/api/gantt#locale) value and providing translation objects.
 
 1. **Import required libraries**:
    ```typescript
@@ -82,7 +85,7 @@ EmptyDataSourceError | DataSource must not be empty at initial load since column
 |------------|--------------|
 | InvalidFilterMessage| Invalid Filter Data |
 | FilterbarTitle| \s filter bar cell |
-| Matchs| No Matches Found |
+| Match| No Matches Found |
 | FilterButton| Filter |
 | ClearButton| Clear |
 | StartsWith| Starts With |
@@ -314,7 +317,7 @@ The following example demonstrates comprehensive German (Deutsch) localization:
 
 ## Internationalization (I18N)
 
-The [Internationalization](../common/internationalization) library globalizes number, date, and time values in the Gantt Chart component. This ensures that dates, numbers, and currencies display according to the user's cultural preferences and regional conventions.
+The [Internationalization](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization) library globalizes number, date, and time values in the Gantt Chart component. This ensures that dates, numbers, and currencies display according to the user's cultural preferences and regional conventions.
 
 Internationalization affects multiple aspects of the Gantt Chart component:
 

@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Performance tips for Angular Gantt Chart Component | Syncfusion
-description: Check out and learn here all about how to improve the loading performance of Angular Gantt component of Syncfusion Essential JS 2 and more.
+title: Performance Tips for Angular Gantt Chart | Optimization | Syncfusion
+description: Learn how to optimize performance with virtual scrolling, immutable mode, lazy loading, and best practices.
+keywords: angular gantt performance, virtual scrolling, lazy loading, optimization tips, large datasets, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/performance
 platform: gantt-sdk
-control: Gantt performance
+control: Performance - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Performance Tips for Angular Gantt Component
+# Optimization with Virtual Scrolling in Angular Gantt Chart
 
 This guide provides practical techniques to optimize the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component's performance, particularly when working with large datasets. Learn how to implement best practices that maintain smooth user experience while handling substantial amounts of project data efficiently.
 
@@ -30,7 +33,7 @@ Virtualization techniques significantly improve application efficiency when hand
 
 By default, the Angular Gantt Chart component automatically calculates start and end dates in the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/gantt#datasource) based on working time, holidays, weekends, and predecessors. For large datasets, these calculations can impact performance.
 
-Set the [autoCalculateDateScheduling](https://ej2.syncfusion.com/angular/documentation/api/gantt#autoCalculateDateScheduling) property to **false** to improve initial load performance. This disables parent-child validation, data validation, and predecessor validation, allowing faster rendering.
+Set the [autoCalculateDateScheduling](https://ej2.syncfusion.com/angular/documentation/api/gantt#autocalculatedatescheduling) property to **false** to improve initial load performance. This disables parent-child validation, data validation, and predecessor validation, allowing faster rendering.
 
 **Important**: When disabling `autoCalculateDateScheduling`, provide complete data including start date, end date, and duration in your data source.
 
@@ -62,30 +65,30 @@ The following tables show typical load times for various Gantt configurations, c
 
 **Test environment**
 
-- Component Version: Syncfusion Angular Gantt 33.1.44
-- Angular Version: 20.1.0
-- Browser: Edge 138
+- Component Version: Syncfusion Angular Gantt 35.1.27
+- Angular Version: 21.2.9
+- Browser: Edge 152
 - Operating System: Windows 11
-- CPU: 12th Gen Intel® Core™ i5-1235U
+- CPU: 11th Gen Intel® Core™ i5-1135G7 @ 2.40GHz
 - RAM: 16GB
 
 **Non-virtualized scenario (2,500 tasks)**
 
 | Scenario                        | Load time (seconds) |
 |---------------------------------|---------------------|
-| Default hierarchy (Parent-Child) | 3.8                 |
-| + Predecessor                   | 5.4                 |
-| + Resources                     | 6.5                 |
-| + Split taskbars                | 7.8                 |
+| Default hierarchy (Parent-Child) | 4.5                 |
+| + Predecessor                   | 6.7                 |
+| + Resources                     | 7.5                 |
+| + Split taskbars                | 6.8                 |
 
 **Virtualized scenario (25,000 tasks)**
 
 | Scenario                        | Load time (seconds) |
 |---------------------------------|---------------------|
-| Default hierarchy (Parent-Child) | 2.1                 |
-| + Predecessor                   | 5.6                 |
-| + Resources                     | 6.2                 |
-| + Split taskbars                | 6.8                 |
+| Default hierarchy (Parent-Child) | 3.9                 |
+| + Predecessor                   | 5.9                 |
+| + Resources                     | 6.5                 |
+| + Split taskbars                | 10.6                |
 
 ## Optimizing server-side data operations with adaptors
 
@@ -96,7 +99,7 @@ During data operations like filtering and sorting, corresponding action queries 
 * Sorting
 * Aggregates
 
-## Avoiding MaxJsonLength errors with large datasets
+## Avoiding maxJsonLength errors with large datasets
 
 The Angular Gantt Chart component operates on a client-server basis, sending data as JSON objects. Large JSON object serialization can cause MaxJsonLength errors. Resolve this by increasing the maximum length for JSON serialization in your web.config file or at the deserialization point.
 
@@ -125,7 +128,7 @@ Performance issues in applications with multiple Gantt Chart components relate t
 
 > For more information on common reasons for slowdowns in Angular apps, you can [refer](https://blog.ninja-squad.com/2018/09/27/angular-performances-part-4/ ) to the [documentation](https://www.thirdrocktechkno.com/blog/top-reasons-why-your-angular-app-is-slow/ ) link:
 
-[Angular](https://v17.angular.io/api/core/ChangeDetectionStrategy) provides two change detection strategies:
+[Angular](https://angular.dev/api/core/ChangeDetectionStrategy) provides two change detection strategies:
 
 * **Default change detection**: Uses the `CheckAlways` strategy with automatic change detection until explicitly deactivated. This can cause continuous detection for all template references.
 
@@ -144,9 +147,9 @@ Implement OnPush change detection strategy using:
 
 For additional guidance on OnPush strategy implementation:
 * [OnPush Change Detection](https://blog.angular-university.io/onpush-change-detection-how-it-works)
-* [ApplicationRef - Tick](https://v17.angular.io/api/core/ApplicationRef#tick)
-* [Tick - Description](https://v17.angular.io/api/core/testing/tick#description)
-* [DetectChange - Anchor](https://v17.angular.io/api/core/ChangeDetectorRef#!#detectChanges-anchor)
+* [ApplicationRef - Tick](https://angular.dev/api/core/ApplicationRef)
+* [Tick - Description](https://angular.dev/api/core/testing/tick)
+* [DetectChange - Anchor](https://angular.dev/api/core/ChangeDetectorRef)
 
 ## Microsoft Excel limitations for large exports
 

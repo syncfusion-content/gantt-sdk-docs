@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Scrolling Feature in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Scrolling in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Scrolling in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to implement and customize scrolling in Syncfusion ASP.NET Core Gantt Chart including horizontal and vertical scrolling for large projects.
+keywords: asp.net core gantt scrolling, horizontal scroll, vertical scroll, page scrolling, virtual scroll, large datasets, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/scrolling
 platform: gantt-sdk
-control: Scrolling
-publishingplatform: gantt-sdk
+control: Scrolling - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK/overview
 ---
 
-
-# Scrolling in Gantt Control
+# Configuring Scrolling Behavior in ASP.NET Core Gantt Chart
 
 The scrollbar will be displayed in the gantt when content exceeds the element [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Width) or [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Height). The vertical and horizontal scrollbars will be displayed based on the following criteria:
 
@@ -21,11 +23,9 @@ N> The default value for [`height`](https://help.syncfusion.com/cr/aspnetcore-js
 
 ## Set width and height
 
-To specify the [`width`](../api/gantt/#width) and [`height`](../api/gantt/#height) of the scroller in the pixel, set the pixel value to a number.
+To specify the [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Width) and [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Height) of the scroller in the pixel, set the pixel value to a number.
 
 The following code example shows how to set height and width in the Gantt control:
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -36,26 +36,12 @@ The following code example shows how to set height and width in the Gantt contro
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/scrolling/width-height/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Width-height.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/scrolling/width-height/width-height.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Responsive with the parent container
 
 Specify the [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Width) and [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Height) as `100%` to make the gantt element fill its parent container.
 Setting the [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Height) to `100%` requires the gantt parent element to have explicit height.
 
 The following code example shows how to set height and width in the Gantt control:
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -66,25 +52,11 @@ The following code example shows how to set height and width in the Gantt contro
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/scrolling/responsive/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Responsive.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/scrolling/responsive/responsive.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Scroll To Date method
 
-In the Gantt control, When We use the [`scrollToDate`](https://ej2.syncfusion.com/documentation/api/gantt/#scrolltodate) method, it will scroll the timeline horizontally to the date that we specified in the method's argument.
+In the Gantt control, When We use the `scrollToDate` method, it will scroll the timeline horizontally to the date that we specified in the method's argument.
 
 The following code examples show how the scroll To Date method works in Gantt:
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -95,24 +67,9 @@ The following code examples show how the scroll To Date method works in Gantt:
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/scrollToDate/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="scrollToDate.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/scrollToDate/scrollToDate.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 ## Set the vertical scroll position
 
 In the Gantt control, you can set the vertical scroller position dynamically by clicking the custom button using the `setScrollTop` method.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -122,16 +79,3 @@ In the Gantt control, you can set the vertical scroller position dynamically by 
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/setScrollTop/setScrollTop.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/setScrollTop/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="SetScrollTop.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/setScrollTop/setScrollTop.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-

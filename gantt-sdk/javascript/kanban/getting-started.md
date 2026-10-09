@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Getting started with JavaScript Kanban control | Syncfusion
-description:  Checkout and learn about Getting started with JavaScript Kanban control of Syncfusion Essential JS 2 and more details.
+title: Getting Started in JavaScript Kanban | Syncfusion
+description: Learn how to start using Syncfusion JavaScript Kanban with step-by-step setup instructions and essential component features.
+keywords: javascript kanban getting started, syncfusion kanban, install component, setup
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/kanban/getting-started
 platform: gantt-sdk
-control: Getting started 
-publishingplatform: gantt-sdk
+control: Getting Started - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Getting started in JavaScript Kanban control
+# Getting Started with JavaScript Kanban
 
 This section briefly explains how to create the **Kanban** component and configure its available functionalities in a JavaScript application.
 
@@ -20,7 +22,7 @@ Before you begin, make sure your environment meets the following requirements:
 * A modern browser with ES6+ support (latest Chrome, Edge, Firefox, or Safari).
 * A text editor (for example, Visual Studio Code).
 * (Optional) A local web server such as `npx http-server`, the VS Code Live Server extension, or any static file server. A local server is required when loading scripts from a CDN or when the page needs `fetch`/module behavior.
-* If you choose the **local scripts** path, the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/gantt-sdk/confirm) build must be installed on your machine.
+* If you choose the **local scripts** path, the [Essential Studio<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/gantt-sdk) build must be installed on your machine.
 
 ## Supported themes and versions
 
@@ -319,7 +321,7 @@ The full set of default card fields recognized by the Kanban control is:
 | `Priority` | Used by the priority feature |
 | `DueDate` | Used by the due-date feature |
 
-To customize which fields appear on a card, use the [`cardSettings`](./cards) property; to add remote data fetching, see the [`dataSource`](./data-binding) configuration.
+To customize which fields appear on a card, use the [`cardSettings`](https://help.syncfusion.com/gantt-sdk/javascript/kanban/cards) property; to add remote data fetching, see the [`dataSource`](https://help.syncfusion.com/gantt-sdk/javascript/kanban/data-binding) configuration.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -356,7 +358,7 @@ The commonly used `swimlaneSettings` options are:
 | `showItemCount` | Shows the count of cards in each swimlane |
 | `sortDirection` | Orders swimlanes (`Ascending` or `Descending`) |
 
-Refer to the [swimlane configuration](./swimlane) for the complete list of options.
+Refer to the [swimlane configuration](https://help.syncfusion.com/gantt-sdk/javascript/kanban/swimlane) for the complete list of options.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -380,11 +382,11 @@ Refer to the [swimlane configuration](./swimlane) for the complete list of optio
 
 ## See also
 
-* [Columns configuration](./columns)
-* [Swimlane configuration](./swimlane)
-* [Cards and card fields](./cards)
-* [Data binding](./data-binding)
-* [Remote data binding with ODataV4](./odataV4)
-* [Sorting and filtering cards](./sort)
-* [Responsive mode](./responsive-mode)
-* [Accessibility](./accessibility)
+* [Columns configuration](https://help.syncfusion.com/gantt-sdk/javascript/kanban/columns)
+* [Swimlane configuration](https://help.syncfusion.com/gantt-sdk/javascript/kanban/swimlane)
+* [Cards and card fields](https://help.syncfusion.com/gantt-sdk/javascript/kanban/cards)
+* [Data binding](https://help.syncfusion.com/gantt-sdk/javascript/kanban/data-binding)
+* [Remote data binding with ODataV4](https://help.syncfusion.com/gantt-sdk/javascript/kanban/odataV4)
+* [Sorting and filtering cards](https://help.syncfusion.com/gantt-sdk/javascript/kanban/sort)
+* [Responsive mode](https://help.syncfusion.com/gantt-sdk/javascript/kanban/responsive-mode)
+* [Accessibility](https://help.syncfusion.com/gantt-sdk/javascript/kanban/accessibility)

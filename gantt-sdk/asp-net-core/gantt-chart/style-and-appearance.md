@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Style And Appearance in ASP.NET Core Gantt Component
-description: Learn here all about Style And Appearance in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to customize and style Syncfusion ASP.NET Core Gantt Chart including themes, CSS classes, and appearance customization for brand consistency.
+keywords: asp.net core gantt styling, gantt appearance, css customization, themes, styling options, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/style-and-appearance
 platform: gantt-sdk
-control: Style And Appearance
-publishingplatform: gantt-sdk
+control: Style and Appearance - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK/overview
 ---
 
-
-# Styling
+# Style and Appearance in ASP.NET Core Gantt Chart
 
 To modify the Gantt Chart appearance, you need to override the default CSS of gantt chart. Find the list of CSS classes and its corresponding section in Gantt Chart. Also, you have an option to create your own custom theme for all the JavaScript controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
 
@@ -66,8 +68,6 @@ N> By default, the [`GridLines`](https://help.syncfusion.com/cr/aspnetcore-js2/S
 
 The following code example shows how to change the gridlines rendering mode in the Gantt control.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/appearance-and-styling/gridLines/tagHelper %}
@@ -77,18 +77,4 @@ The following code example shows how to change the gridlines rendering mode in t
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/appearance-and-styling/gridLines/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="GridLines.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/appearance-and-styling/gridLines/gridLines.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Alt text](images/gridLines.png)
+![Alt text](./images/gridLines.png)

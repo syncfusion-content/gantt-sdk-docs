@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Work in ASP.NET Core Gantt Component
-description: Learn here all about Work in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Work in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to manage and track work in Syncfusion ASP.NET Core Gantt Chart including work units, resource allocation, and work calculations.
+keywords: asp.net core gantt work, work units, resource work, work calculation, project work, effort tracking, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/work
 platform: gantt-sdk
-control: Work
-publishingplatform: gantt-sdk
+control: Work - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK/overview
 ---
 
-
-# Work in Gantt component
+# Work and Effort Tracking in ASP.NET Core Gantt Chart
 
 ## Work
 
 The work is the total hours required to complete a task. Work can be mapped from the data source field using the property [`taskFields.work`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFieldsBuilder.html#Syncfusion_EJ2_Gantt_GanttTaskFieldsBuilder_Work_System_String_). Work can be measured in `Hour`, `Day`, `Minute`. By default, work is measured in `Hour` and it can be changed, by using the property [`workUnit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.WorkUnit.html).
 
 N> When the work field is mapped from the data source, the default task type will be `FixedWork`.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -28,21 +28,7 @@ N> When the work field is mapped from the data source, the default task type wil
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/work/work/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Work.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/work/work/work.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Alt text](images/work.png)
+![Alt text](./images/work.png)
 
 ## Task type
 
@@ -51,8 +37,6 @@ The work, duration and resource unit fields of a task depends upon each other an
 * `FixedDuration` - Duration task field will remain constant while updating resource unit or work field.
 * `FixedWork` - Work field will remain constant while updating resource unit or duration fields.
 * `FixedUnit` - Resource units will remain constant while updating duration or work field.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -63,21 +47,7 @@ The work, duration and resource unit fields of a task depends upon each other an
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/work/taskType/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="TaskType.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/work/taskType/taskType.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Alt text](images/taskType.png)
+![Alt text](./images/taskType.png)
 
 Following table explains how the work, duration and resource unit fields will gets updated on changing any of the fields
 

@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Key Elements in Gantt UI for ASP.NET Core Gantt control | Syncfusion
-description:  Checkout and learn about Key Elements in Gantt UI of ASP.NET Core Gantt control of Syncfusion Essential JS 2 and more.
+title: Key Elements in ASP.NET Core Gantt Chart | Syncfusion
+description: Understand the key UI elements and components of Syncfusion ASP.NET Core Gantt Chart to effectively utilize and customize the project management interface.
+keywords: asp.net core gantt key elements, gantt components, ui elements, gantt interface, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/key-elements
 platform: gantt-sdk
-control: Key Elements in Gantt UI
-publishingplatform: gantt-sdk
+control: Key Elements - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK/overview
 ---
 
-
-# Key Elements in Gantt UI
+# Key Elements in ASP.NET Core Gantt Chart UI
 
 This section explains the key elements of the Gantt Chart interface.
 
@@ -27,14 +29,12 @@ At the top of Gantt chart, having a [toolbar](https://help.syncfusion.com/cr/asp
 
 ![Grid](./images/tabular.png)
 
-
 **Chart section**
 
 * The `X-axis` of the chart represents the timeline scale.
 * In the chart section, task details are displayed in a taskbar format over a time range along with their activities.
 
 ![Chart](./images/chart.png)
-
 
 **Elements in taskbar**
 
@@ -60,7 +60,7 @@ A milestone is a unique type of task characterized by the following attributes:
 
 ![Milestone](./images/milestone-element.png)
 
->For more information, refer to [Unscheduled Tasks](https://ej2.syncfusion.com/aspnetcore/documentation/gantt/task-scheduling#unscheduled-tasks)
+>For more information, refer to [Unscheduled Tasks](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/task-scheduling#unscheduled-tasks)
 
 **Manual taskbar**
 
@@ -68,7 +68,7 @@ It is a type of task where the dates are not automatically validated by the Gant
 
 ![Manual taskbar](./images/manual-task.png)
 
->For more information, refer to [Manual Tasks](https://ej2.syncfusion.com/aspnetcore/documentation/gantt/task-scheduling#manually-scheduled-tasks)
+>For more information, refer to [Manual Tasks](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/task-scheduling#manually-scheduled-tasks)
 
 **Baseline**
 

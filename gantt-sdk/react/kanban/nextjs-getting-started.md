@@ -1,33 +1,36 @@
 ---
 layout: post
-title: React getting started with Next.js | Syncfusion
-description: Check out and learn here all about how to use the Syncfusion React UI components in the Next.js project.
-control: Next.js
+title: Getting Started with Next.js in React Kanban | Syncfusion
+description: Learn how to set up Syncfusion React Kanban in a Next.js project with step-by-step instructions and configuration guidance.
+keywords: react kanban next.js, syncfusion kanban, nextjs getting started, react ssr
+canonical: https://www.syncfusion.com/react-components/react-kanban-board
 platform: gantt-sdk
+control: Next.js Getting Started - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-
-# Getting Started with Next.js
+# Getting Started with React Kanban in Next.js
 
 This section provides a step-by-step guide for setting up a Next.js application and integrating the Syncfusion<sup style="font-size:70%">&reg;</sup> React Kanban component.
 
 ## What is Next.js?
 
-[Next.js](https://nextjs.org/) is a React framework that makes it easy to build fast, SEO-friendly, and user-friendly web applications. It provides features such as server-side rendering, automatic code splitting, routing, and API routes, making it an excellent choice for building modern web applications.
+[Next.js](https://nextjs.org) is a React framework that makes it easy to build fast, SEO-friendly, and user-friendly web applications. It provides features such as server-side rendering, automatic code splitting, routing, and API routes, making it an excellent choice for building modern web applications.
 
 ## Prerequisites
 
 Before getting started with the Next.js application, ensure the following prerequisites are met:
 
-* [Node.js 18.17](https://nodejs.org/en) or later.
+- [Node.js 18.17](https://nodejs.org/en) or later.
 
-* The application is compatible with macOS, Windows, and Linux operating systems.
+- The application is compatible with macOS, Windows, and Linux operating systems.
 
 ## Overview
 
 The Kanban component is composed of:
+
 - **Cards**: tasks displayed on the board; mapped from a `dataSource` via `cardSettings`.
 - **Columns**: workflow stages; defined using `keyField`.
 - **Swimlanes**: optional grouping of cards; configured with `swimlaneSettings`.
@@ -60,7 +63,7 @@ The application is ready to run with default settings. Now, let's add Syncfusion
 
 ## Install Syncfusion<sup style="font-size:70%">&reg;</sup> React packages
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> React component packages are available at [npmjs.com](https://www.npmjs.com/search?q=ej2-react). To use Syncfusion<sup style="font-size:70%">&reg;</sup> React components in the project, install the corresponding npm package.
+Syncfusion<sup style="font-size:70%">&reg;</sup> React component packages are available in the [npm package registry](https://www.npmjs.com/search?q=ej2-react). To use Syncfusion<sup style="font-size:70%">&reg;</sup> React components in the project, install the corresponding npm package.
 
 Here, the [React Kanban component](https://www.syncfusion.com/react-components/react-kanban-board) is used as an example. To install the React kanban component in the project, use the following command:
 
@@ -86,15 +89,7 @@ Import the Tailwind theme (tailwind3) into the **app/globals.css** file and remo
 {% tabs %}
 {% highlight css tabtitle="globals.css" %}
 
-@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-layouts/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-notifications/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-kanban/styles/tailwind3.css';
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/kanban/index.css";
 
 {% endhighlight %}
 {% endtabs %}
@@ -175,7 +170,7 @@ export let kanbanData: Object[] = [
 
 {% tabs %}
 {% highlight ts tabtitle="page.tsx" %}
-
+{% raw %}
 'use client'
 import { extend } from '@syncfusion/ej2-base';
 import { KanbanComponent, ColumnsDirective, ColumnDirective } from "@syncfusion/ej2-react-kanban";
@@ -185,7 +180,7 @@ function App() {
     // Clone the data to avoid mutating the original datasource
     const data = extend([], kanbanData, null, true);
     return (<KanbanComponent id="kanban" keyField="Status" dataSource={data} 
-        cardSettings={% raw %}{{ contentField: "Summary", headerField: "Id" }}{% endraw %}>
+        cardSettings={{ contentField: "Summary", headerField: "Id" }}>
         <ColumnsDirective>
           <ColumnDirective headerText="To Do" keyField="Open"/>
           <ColumnDirective headerText="In Progress" keyField="InProgress"/>
@@ -195,7 +190,7 @@ function App() {
     </KanbanComponent>);
 }
 export default App;
-
+{% endraw %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -226,6 +221,6 @@ The Kanban board now displays cards from the `kanbanData` array. In this example
 
 ## See also
 
-- [Kanban columns](./columns.md)
-- [Kanban data binding](./data-binding.md)
-- [Kanban dialog](./dialog.md)
+- [Kanban columns](https://help.syncfusion.com/gantt-sdk/react/kanban/columns)
+- [Kanban data binding](https://help.syncfusion.com/gantt-sdk/react/kanban/data-binding)
+- [Kanban dialog](https://help.syncfusion.com/gantt-sdk/react/kanban/dialog)

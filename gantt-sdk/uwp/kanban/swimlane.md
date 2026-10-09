@@ -1,11 +1,13 @@
 ---
 layout: post
-title: Swimlane in UWP Kanban Board control | Syncfusion
+title: Swimlane in UWP Kanban Board | Syncfusion
+description: Learn about Swimlane support in Syncfusion UWP Kanban Board using swimlane support and header customization.
 platform: gantt-sdk
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
-# Swimlane in UWP Kanban Board (SfKanban)
+# Swimlane in UWP Kanban Board
 
 Swim lanes are horizontal categorizations that allow you to categorize your current workflow by different projects, teams, users, or whatever you need. 
 
@@ -35,7 +37,7 @@ N> If there is no value assigned for the [`SwimlaneKey`](https://help.syncfusion
 
 ## Customization
 
-SfKanban provides support to customize header, which is displayed before the swim lane group using [`SwimlaneHeaderTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_SwimlaneHeaderTemplate) property. The following code example displays image along with name.
+Customize the header displayed before each swimlane group using the [`SwimlaneHeaderTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_SwimlaneHeaderTemplate) property. The following code example displays image along with name.
 
 {% highlight xaml %}
 <kanban:SfKanban x:Name="Kanban" ItemsSource="{Binding Tasks}">

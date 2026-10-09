@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Data Markers in Angular Gantt Chart Component | Syncfusion
-description: Learn here all about data markers in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Data Markers in Angular Gantt Chart | Visual Indicators | Syncfusion
+description: Learn how to highlight milestones and significant dates in Syncfusion Angular Gantt Chart with data markers for visual context within individual task timelines.
+keywords: angular gantt data markers, milestones, visual indicators, task events, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/data-markers
 platform: gantt-sdk
-control: Data markers 
+control: Data Markers - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Data Markers in Angular Gantt Chart Component
+# Task Markers and Milestones in Angular Gantt Chart
 
 Data markers are visual indicators that highlight significant events, milestones, or important dates within individual project tasks. These markers provide immediate visual context about critical moments in task timelines, enabling effective identification of key dates and tracking of important events at the task level. Understanding data markers implementation ensures effective project visualization and milestone tracking throughout project development cycles.
 
@@ -181,3 +184,18 @@ You can programmatically modify the styling of the indicator by targeting the `.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/datamarkers/indicator-customize" %}
+
+## Hide data markers programmatically
+
+You can hide data markers programmatically by targeting the `.e-indicator-span` class of the rendered marker elements and setting their display style. The following example shows how to hide and show all data markers using external buttons:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt-sdk/angular/gantt-chart/datamarkers/indicator-hide/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt-sdk/angular/gantt-chart/datamarkers/indicator-hide/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/datamarkers/indicator-hide" %}

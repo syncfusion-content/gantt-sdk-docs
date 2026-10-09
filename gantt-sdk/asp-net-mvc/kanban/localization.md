@@ -1,17 +1,19 @@
 ---
 layout: post
-title: Localization in Syncfusion ASP.NET MVC Kanban Component
-description: Learn here all about Localization in Syncfusion ASP.NET MVC Kanban component of Syncfusion Essential JS 2 and more.
+title: Localization in ASP.NET MVC Kanban | Syncfusion
+description: Learn how to implement localization and internationalization in Syncfusion ASP.NET MVC Kanban for multi-language support.
+keywords: asp-net-mvc kanban localization, syncfusion kanban, internationalization, i18n
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/kanban/localization
 platform: gantt-sdk
-control: Localization
-publishingplatform: gantt-sdk
+control: Localization - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
+# Globalization and Localization Support in ASP.NET MVC Kanban
 
-# Globalization in ASP.NET MVC Kanban control
-
-The localization library allows you to localize the default text content of the Kanban to different cultures using the `Locale` property.
+The localization library allows you to localize the default text content of the Kanban to different cultures using the [`Locale`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_Locale) property.
 
 In Kanban, total count and min or max count text alone will be localized based on culture.
 
@@ -40,22 +42,6 @@ To load translation object in an application, use `load` function of `L10n` clas
 
 The following example demonstrates the Kanban in `Deutsch` culture.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/localization/localization/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/localization/localization/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/localization/localization/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/localization/localization/razor %}
@@ -67,9 +53,6 @@ The following example demonstrates the Kanban in `Deutsch` culture.
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/localization/localization/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 Output be like the below.
 
@@ -77,23 +60,7 @@ Output be like the below.
 
 ## Right to left (RTL)
 
-The Kanban provides an option to switch its text direction and layout from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable right-to-left mode in Kanban, set the `EnableRtl` to true.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/localization/rtl/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/localization/rtl/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/localization/rtl/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+The Kanban provides an option to switch its text direction and layout from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable right-to-left mode in Kanban, set the [`EnableRtl`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_EnableRtl) to true.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -106,9 +73,6 @@ The Kanban provides an option to switch its text direction and layout from right
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/localization/rtl/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 Output be like the below.
 

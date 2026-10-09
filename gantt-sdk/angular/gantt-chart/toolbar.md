@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Toolbar in Angular Gantt Chart Component | Syncfusion
-description: Learn here all about toolbar in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Toolbar in Angular Gantt Chart | Custom Items | Syncfusion
+description: Learn how to configure toolbar in Syncfusion Angular Gantt Chart with built-in items like Add, Edit, Search, ZoomIn, and custom toolbar buttons for actions.
+keywords: angular gantt toolbar, toolbar items, custom toolbar, toolbarservice, add edit search zoom, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/toolbar
 platform: gantt-sdk
-control: Toolbar 
+control: Toolbar - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Toolbar in Angular Gantt Chart Component
+# Toolbar with Built-in and Custom Items in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component includes built-in toolbar support for executing common actions such as editing, searching, and navigating the timeline. The [toolbar](https://ej2.syncfusion.com/angular/documentation/api/gantt#toolbar) property accepts the collection of built-in toolbar items and `ItemModel` objects for custom toolbar items.
 
@@ -150,7 +153,7 @@ By default, custom toolbar items are aligned to the left. However, you can chang
 
 ## Built-in and custom items in toolbar
 
-The Gantt Chart component supports using both built-in and custom toolbar items simultaneously. In this example, **ExpandAll** and **CollapseAll** are built-in items, while **Test** and **Schedule** is a custom item added to the toolbar.
+The Gantt Chart component supports using both built-in and custom toolbar items simultaneously. In this example, **ExpandAll** and **CollapseAll** are built-in items, while **Test** and **Schedule** are custom items added to the toolbar.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -1,13 +1,17 @@
 ---
 layout: post
-title: Searching in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about searching in Syncfusion Blazor Gantt Chart component and much more.
+title: Searching in Blazor Gantt Chart | Syncfusion
+description: Learn how to enable and configure searching in Syncfusion Blazor Gantt Chart to quickly find tasks by name, field value, or toolbar search input.
+keywords: blazor gantt searching, search tasks, toolbar search, task name search, search settings, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/searching
 platform: gantt-sdk
-control: Gantt Chart
+control: Searching - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Search in Blazor Gantt Chart Component
+# Toolbar Search and Task Lookup in Blazor Gantt Chart
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component allows quick filtering of records based on search input, improving access to relevant data in large datasets.
 
@@ -309,7 +313,7 @@ N> You should set the `AllowFiltering` property to `true` for searching the cont
 
 ## Search specific columns
 
-To search specific columns in the Gantt Chart component, use the [GanttSearchSettings.Fields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSearchSettings.html#Syncfusion_Blazor_Gantt_GanttSearchSettings_Fields) property. This allows you to define which column fields should be included in the search, instead of searching across all columns by default.
+To search specific columns in the Blazor Gantt Chart component, use the [GanttSearchSettings.Fields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSearchSettings.html#Syncfusion_Blazor_Gantt_GanttSearchSettings_Fields) property. This allows you to define which column fields should be included in the search, instead of searching across all columns by default.
 
 This following sample demonstrates searching only within the **TaskName** and **Duration** columns.
 

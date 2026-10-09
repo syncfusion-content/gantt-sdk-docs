@@ -1,15 +1,19 @@
 ---
 layout: post
-title: Column Menu in Blazor Gantt Chart Component | Syncfusion
-description: Learn how to enable sorting, filtering, and autofit using the column menu in the Syncfusion Blazor Gantt Chart.
+title: Column Menu in Blazor Gantt Chart | Syncfusion
+description: Learn how to enable the column menu in Syncfusion Blazor Gantt Chart for sorting, filtering, autofit, and column chooser actions.
+keywords: blazor gantt column menu, sort filter autofit, column actions, column header menu, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/column-menu
 platform: gantt-sdk
-control: Gantt Chart
+control: Column Menu - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Column Menu in Blazor Gantt Chart Component
+# Column Menu with Sort, Filter and Autofit in Blazor Gantt Chart
 
-The column menu in the Blazor Gantt component offers built-in actions including sorting, filtering, column chooser, and autofit. It appears when the column header icon is clicked.
+The column menu in the Blazor Gantt Chart component offers built-in actions including sorting, filtering, column chooser, and autofit. It appears when the column header icon is clicked.
 
 To enable this feature, set [ShowColumnMenu](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ShowColumnMenu) to **true** in the Gantt configuration. Also enable [AllowSorting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowSorting), [AllowFiltering](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowFiltering), and [AllowResizing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowResizing) to support the corresponding actions.
 
@@ -78,6 +82,6 @@ The following built-in column menu items are available:
 
 ## See also
 
-- [Accessibility in Blazor Gantt Chart](https://blazor.syncfusion.com/documentation/gantt-chart/accessibility)
-- [Blazor Gantt Chart Feature Tour](https://www.syncfusion.com/blazor-components/blazor-gantt-chart)
-- [Blazor Gantt Chart Example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=bootstrap5)
+- [Accessibility in Blazor Gantt Chart](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/accessibility)
+- [Blazor Gantt Chart Feature Tour](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart)
+- [Blazor Gantt Chart Example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=fluent2)

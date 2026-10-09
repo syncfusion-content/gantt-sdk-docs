@@ -1,17 +1,21 @@
 ---
 layout: post
-title: Gantt Chart - Strict CSP Feature Limitations | Syncfusion®
-description: Details on Blazor features in Gantt Chart that require Content Security Policy (CSP) relaxation and much more details.
+title: Content Security Policy in Blazor Gantt Chart | Syncfusion
+description: Learn how to configure Syncfusion Blazor Gantt Chart with strict CSP headers and understand features that require relaxation for proper rendering.
+keywords: blazor gantt csp, content security policy, strict csp, csp limitations, nonce, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/content-security-policy
 platform: gantt-sdk
-control: Gantt Chart
+control: Content Security Policy - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Gantt Chart - Content Security Policy Limitations
+# Strict CSP Configuration and Feature Limitations in Blazor Gantt Chart
 
 ## What's supported under strict CSP ?
 
-The [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) component supports most features under strict Content Security Policy without needing `'unsafe-inline'`. You can safely use:
+The [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) component supports most features under strict Content Security Policy without needing `'unsafe-inline'`. You can safely use:
 
 - Task scheduling and timeline rendering
 - Dependency management
@@ -37,7 +41,7 @@ These styles are applied at runtime and blocked under strict CSP.
 
 ### How to use plain text only ?
 
-If you don't need rich text formatting in Notes, just use plain text. The rest of the Gantt Chart will work fully under strict CSP.
+If you don't need rich text formatting in Notes, just use plain text. The rest of the Blazor Gantt Chart will work fully under strict CSP.
 
 ## Recommended CSP configurations
 
@@ -58,7 +62,7 @@ Use this configuration if you don't use rich text formatting in Notes (or don't 
                upgrade-insecure-requests;">
 ```
 
-This configuration maintains full security for the Gantt Chart's project management and visualization features.
+This configuration maintains full security for the Blazor Gantt Chart's project management and visualization features.
 
 ### Relaxed CSP (with rich text notes)
 

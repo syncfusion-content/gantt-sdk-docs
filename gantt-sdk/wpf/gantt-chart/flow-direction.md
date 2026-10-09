@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Flow Direction in WPF Gantt control | Syncfusion
-description: Learn about Flow Direction support in Syncfusion Essential Studio WPF Gantt control, its elements and more details.
+title: Flow Direction in WPF Gantt | Syncfusion
+description: Learn about Flow Direction support in Syncfusion WPF Gantt to customize left-to-right and right-to-left layout behavior.
 platform: gantt-sdk
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Flow Direction in WPF Gantt
 
-Gantt provides support to display the contents from right-to-left or left-to-right direction. It can be achieved by setting the `FlowDirection` property value as “RightToLeft” or “LeftToRight” in the Gantt control. The following code sample explains how to set this property.
+The control supports displaying content in either right-to-left or left-to-right direction. This can be achieved by setting the `FlowDirection` property value to `RightToLeft` or `LeftToRight` in the WPF Gantt control. The following code sample explains how to set this property.
 
 {% tabs %}
 

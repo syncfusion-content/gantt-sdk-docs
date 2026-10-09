@@ -1,30 +1,34 @@
 ---
 layout: post
-title: Accessibility in Blazor Gantt Chart Component | Syncfusion®
-description: Learn about accessibility features in the Blazor Gantt Chart component, including WCAG 2.2, Section 508, and keyboard navigation support.
+title: Accessibility in Blazor Gantt Chart | WCAG, ARIA | Syncfusion
+description: Learn how to implement accessibility in Syncfusion Blazor Gantt Chart with WCAG 2.2, ARIA labels, keyboard navigation, and Section 508 compliance.
+keywords: blazor gantt accessibility, wcag, aria, section 508, keyboard navigation, screen reader, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/accessibility
 platform: gantt-sdk
-control: Gantt Chart
+control: Accessibility - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Accessibility in Blazor Gantt Chart Component
+# Accessibility and ARIA Compliance in Blazor Gantt Chart
 
-The [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) component adheres to accessibility guidelines, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/), and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) standards, ensuring compatibility with assistive technologies, including those relying on assistive technologies.
+The [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) component adheres to accessibility guidelines, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/), and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) standards, ensuring compatibility with assistive technologies, including those relying on assistive technologies.
 
-## Accessibility Compliance
+## Accessibility compliance
 
 The table below summarizes the accessibility compliance of the Blazor Gantt Chart component.
 
 | Accessibility Criteria | Compatibility |
 |------------------------|---------------|
-| [WCAG 2.2 Support](../common/accessibility#accessibility-standards) | AA |
-| [Section 508 Support](../common/accessibility#accessibility-standards) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Full compatibility"> |
-| [Screen Reader Support](../common/accessibility#screen-reader-support) | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate compatibility"> |
-| [Right-To-Left Support](../common/accessibility#right-to-left-support) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Full compatibility"> |
-| [Color Contrast](../common/accessibility#color-contrast) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Full compatibility"> |
-| [Mobile Device Support](../common/accessibility#mobile-device-support) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Full compatibility"> |
-| [Keyboard Navigation Support](../common/accessibility#keyboard-navigation-support) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Full compatibility"> |
-| [Axe-core Accessibility Validation](../common/accessibility#ensuring-accessibility) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Full compatibility"> |
+| [WCAG 2.2 Support](https://blazor.syncfusion.com/documentation/common/accessibility#accessibility-standards) | AA |
+| [Section 508 Support](https://blazor.syncfusion.com/documentation/common/accessibility#accessibility-standards) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Full compatibility"> |
+| [Screen Reader Support](https://blazor.syncfusion.com/documentation/common/accessibility#screen-reader-support) | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate compatibility"> |
+| [Right-To-Left Support](https://blazor.syncfusion.com/documentation/common/accessibility#right-to-left-support) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Full compatibility"> |
+| [Color Contrast](https://blazor.syncfusion.com/documentation/common/accessibility#color-contrast) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Full compatibility"> |
+| [Mobile Device Support](https://blazor.syncfusion.com/documentation/common/accessibility#mobile-device-support) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Full compatibility"> |
+| [Keyboard Navigation Support](https://blazor.syncfusion.com/documentation/common/accessibility#keyboard-navigation-support) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Full compatibility"> |
+| [Axe-core Accessibility Validation](https://blazor.syncfusion.com/documentation/common/accessibility#ensuring-accessibility) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Full compatibility"> |
 
 <style>
     .post .post-content img {
@@ -62,7 +66,7 @@ The Blazor Gantt Chart component supports comprehensive [keyboard interaction](h
 
 | Windows | Mac | Action |
 |---------|-----|--------|
-| <kbd>Alt</kbd> + <kbd>J</kbd> | <kbd>⌥</kbd> + <kbd>J</kbd> | Focuses the entire Gantt chart. |
+| <kbd>Alt</kbd> + <kbd>J</kbd> | <kbd>⌥</kbd> + <kbd>J</kbd> | Focuses the entire Blazor Gantt Chart. |
 | <kbd>Home</kbd> | <kbd>Fn</kbd> + <kbd>←</kbd> | Moves focus to the first cell of the current row. |
 | <kbd>End</kbd> | <kbd>Fn</kbd> + <kbd>→</kbd> | Moves focus to the last cell of the current row. |
 | <kbd>Ctrl</kbd> + <kbd>Home</kbd> | <kbd>⌘</kbd> + <kbd>Fn</kbd> + <kbd>←</kbd> | Moves focus to the first cell of the first row. |
@@ -191,12 +195,12 @@ The Blazor Gantt Chart component supports comprehensive [keyboard interaction](h
 | <kbd>Ctrl</kbd> + <kbd>Shift </kbd> + <kbd>Z</kbd> | <kbd>⌘</kbd>+ <kbd>⇧</kbd> + <kbd>Z</kbd> | Redoes the most recently undone action. |
 | <kbd>Ctrl</kbd> + <kbd>Shift </kbd> + <kbd>Y</kbd> | <kbd>⌘</kbd>+ <kbd>⇧</kbd> + <kbd>Y</kbd> | Undoes the most recent tracked action. |
 
-## Validate Accessibility Compliance
+## Validate accessibility compliance
 
 Accessibility is validated using [axe-core](https://www.nuget.org/packages/Deque.AxeCore.Playwright) with Playwright tests to ensure compliance with WCAG 2.2 and other standards. Evaluate the accessibility of the Blazor Gantt Chart component using the [sample](https://blazor.syncfusion.com/accessibility/gantt-chart) in a new window with accessibility tools.
 
-## Related Resources
+## Related resources
 
 - [Accessibility in Blazor Components](https://blazor.syncfusion.com/documentation/common/accessibility)
-- [Blazor Gantt Chart Feature Tour](https://www.syncfusion.com/blazor-components/blazor-gantt-chart)
-- [Blazor Gantt Chart Example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=bootstrap5)
+- [Blazor Gantt Chart Feature Tour](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart)
+- [Blazor Gantt Chart Example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=fluent2)

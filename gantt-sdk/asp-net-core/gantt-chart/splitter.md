@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Splitter in ASP.NET Core Gantt Component
-description: Learn here all about Splitter in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Splitter in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to customize and manage the splitter control in Syncfusion ASP.NET Core Gantt Chart to adjust grid and timeline pane sizes.
+keywords: asp.net core gantt splitter, pane resizing, grid splitter, timeline splitter, layout management, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/splitter
 platform: gantt-sdk
-control: Splitter
-publishingplatform: gantt-sdk
+control: Splitter - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK/overview
 ---
 
-
-# Splitter in ASP.NET Core Gantt component
+# Splitter with Panel Resizing in ASP.NET Core Gantt Chart
 
 ## Splitter
 
@@ -18,8 +20,6 @@ In the Gantt control, the Splitter separates the TreeGrid section from the Chart
 * `Default`: Shows Grid side and Gantt side.
 * `Grid`: Shows Grid side alone in Gantt.
 * `Chart`: Shows chart side alone in Gantt.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -30,27 +30,11 @@ In the Gantt control, the Splitter separates the TreeGrid section from the Chart
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/changeSplitter/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ChangeSplitter.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/changeSplitter/changeSplitter.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Alt text](images/changeSplitter.png)
+![Alt text](./images/changeSplitter.png)
 
 ## Change splitter position dynamically
 
 In Gantt, we can change the splitter position dynamically by using `setSplitterPosition` method. We can change the splitter position by passing value and type parameter to `setSplitterPosition` method. Type parameter will accept one of the following values 'position', 'columnIndex', 'viewType'. The following code example shows how to use this method.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -60,15 +44,3 @@ In Gantt, we can change the splitter position dynamically by using `setSplitterP
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/setSplitterPosition/setSplitterPosition.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/setSplitterPosition/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="SetSplitterPosition.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/setSplitterPosition/setSplitterPosition.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

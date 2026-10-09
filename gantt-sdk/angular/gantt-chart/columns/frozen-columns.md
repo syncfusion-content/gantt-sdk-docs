@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Column Pinning (Frozen) in Angular Gantt Chart Component | Syncfusion
-description: Learn here all about column pinning (Frozen) in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Frozen Columns in Angular Gantt Chart | Column Pinning | Syncfusion
+description: Learn how to pin and freeze columns in Syncfusion Angular Gantt Chart to keep critical information visible during scrolling.
+keywords: angular gantt frozen columns, column pinning, frozencolumns, horizontal scroll, fixed columns, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/columns/frozen-columns
 platform: gantt-sdk
-control: Column pinning (Frozen) 
+control: Frozen Columns - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Column Pinning (Frozen) in Angular Gantt Chart Component
+# Frozen Columns with Left and Right Pinning in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component provides a frozen columns feature that keeps selected columns fixed while scrolling horizontally through large datasets. This functionality ensures that critical information remains visible at all times, improving readability and user experience. By maintaining key columns in view, it simplifies navigation and makes referencing important data points easier when working with extensive project details.
 
@@ -48,7 +51,7 @@ The following example demonstrates how to freeze a particular column in the Gant
 
 ## Freeze direction
 
-In the Angular Gantt, the **freeze direction** feature allows you to position frozen columns either to the left, right, or in a fixed position, while still allowing the remaining columns to be horizontally movable. 
+In the Angular Gantt, the **freeze direction** feature allows you to position frozen columns to the left, right, or in a fixed position, while still allowing the remaining columns to be horizontally scrollable. 
 
 To achieve this, the [column.freeze](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#freeze) property can be utilized. This property is used to specify the freeze direction for individual columns.
 
@@ -119,4 +122,4 @@ The following example demonstrates how to change the default frozen line color u
 
 ## Limitations
 
-* Freeze Direction is not compatible with the [isFrozen](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#isfrozen) and [frozenColumns](https://ej2.syncfusion.com/angular/documentation/api/gantt#frozencolumns) properties.
+* **Freeze Direction Incompatibility**: The Freeze Direction feature (using the [column.freeze](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#freeze) property) is not compatible with the [isFrozen](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#isfrozen) and [frozenColumns](https://ej2.syncfusion.com/angular/documentation/api/gantt#frozencolumns) properties. When using Freeze Direction, do not use the isFrozen property or frozenColumns settings simultaneously, as they may cause conflicting behavior in how columns are positioned and frozen.

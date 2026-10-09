@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Scheduling Tasks in Angular Gantt Chart Component | Syncfusion
-description: Learn how to configure task scheduling modes, types, duration units, working time, and holidays in the Syncfusion Angular Gantt Chart component.
+title: Scheduling Tasks in Angular Gantt Chart | Modes & Types | Syncfusion
+description: Learn how to configure task scheduling in Syncfusion Angular Gantt Chart with auto/manual modes, task types, duration units, working time, and holiday settings.
+keywords: angular gantt scheduling, task mode, task type, duration unit, working time, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/scheduling-tasks
 platform: gantt-sdk
-control: Scheduling tasks
+control: Scheduling Tasks - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Scheduling Tasks in Angular Gantt Chart Component
+# Task Scheduling with Duration Units in Angular Gantt Chart
 
 Task scheduling in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component defines and visualizes task start dates, durations, and end dates as taskbars in a project timeline, enabling precise planning and tracking. Configure scheduling with properties like [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskfields) for mapping task data, [taskMode](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskmode) for auto or manual validation, [taskType](https://ej2.syncfusion.com/angular/documentation/api/gantt#tasktype) for fixed unit, work, or duration, and [durationUnit](https://ej2.syncfusion.com/angular/documentation/api/gantt#durationunit) for day, hour, or minute units. Working time, set via [dayWorkingTime](https://ej2.syncfusion.com/angular/documentation/api/gantt#dayworkingtime), and non-working periods, like weekends or holidays, ensure realistic calculations. Events like [dataBound](https://ej2.syncfusion.com/angular/documentation/gantt/events#databound) customize scheduling logic on run-time. Taskbars include ARIA labels for accessibility, describing start, end, and duration, and adapt to responsive designs, though narrow screens may require scrolling for long timelines.
 
@@ -25,7 +28,7 @@ Configure using:
 - [taskMode](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskmode): Sets global mode.
 - [taskFields.manual](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#manual): Sets per-task mode.
 
-### Automatically scheduled Tasks
+### Automatically scheduled tasks
 
 The following example configures auto scheduling:
 
@@ -41,7 +44,7 @@ The following example configures auto scheduling:
 
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/task-scheduling/automatic-tasks-cs1" %}
 
-### Manually scheduled Tasks
+### Manually scheduled tasks
 
 The following example configures manual scheduling:
 
@@ -102,19 +105,23 @@ The following example configures task types:
 
 ## Configure duration units
 
-Duration units determine how task length is measured and calculated within the project. The Gantt Chart component supports three duration units that can be applied at both project and individual task levels.
+Duration units determine how task length is measured and calculated within the project. The Gantt Chart component supports five duration units that can be applied at both project and individual task levels.
 
 The Gantt Chart component supports the following duration units:
 
 - **Day**: Standard for general planning.
 - **Hour**: For detailed task management.
 - **Minute**: For short-duration tasks.
+- **Week**: A duration calculated using the configured [daysPerWeek](https://ej2.syncfusion.com/angular/documentation/api/gantt#daysperweek) value.
+- **Month**: A duration calculated using the configured [daysPerMonth](https://ej2.syncfusion.com/angular/documentation/api/gantt#dayspermonth) value.
 
 Configure using:
 
 - [durationUnit](https://ej2.syncfusion.com/angular/documentation/api/gantt#durationunit): Sets global unit (default: `day`).
 - [taskFields.durationUnit](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields#durationunit): Maps per-task units.
-- Duration field values: Includes units directly (e.g., "5 minutes").
+- [daysPerWeek](https://ej2.syncfusion.com/angular/documentation/api/gantt#daysperweek): Specifies the number of working days that constitute one week duration.
+- [daysPerMonth](https://ej2.syncfusion.com/angular/documentation/api/gantt#dayspermonth): Specifies the number of working days that constitute one month duration.
+- Duration field values: Includes units directly (e.g., "5 minutes", "2 weeks", or "1 month").
 
 The following example maps duration units:
 
@@ -148,6 +155,30 @@ The following example defines units in duration values:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/scheduling-tasks/durationfield-cs2" %}
+
+### Configure days per week and month
+
+The [daysPerWeek](https://ej2.syncfusion.com/angular/documentation/api/gantt#daysperweek) property specifies how many working days constitute one week. Similarly, [daysPerMonth](https://ej2.syncfusion.com/angular/documentation/api/gantt#dayspermonth) specifies how many working days constitute one month. These values affect the conversion of week- and month-based durations into working days.
+
+For example, with `daysPerWeek` set to 5, a duration of one week represents five working days. With `daysPerMonth` set to 20, a duration of one month represents twenty working days.
+
+The following example configures `daysPerWeek` and `daysPerMonth` and allows you to update both values:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt-sdk/angular/gantt-chart/scheduling-tasks/duration-units-cs2/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt-sdk/angular/gantt-chart/scheduling-tasks/duration-units-cs2/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="data.ts" %}
+{% include code-snippet/gantt-sdk/angular/gantt-chart/scheduling-tasks/duration-units-cs2/src/data.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/scheduling-tasks/duration-units-cs2" %}
 
 ## Enable unscheduled tasks
 
@@ -192,6 +223,8 @@ The following example enables unscheduled tasks:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/scheduling-tasks/unscheduledtasks-cs1" %}
+
+I> When child tasks contain only **Duration** values without **StartDate** and **EndDate**, they are rendered as unscheduled tasks. However, parent tasks may still display calculated **StartDate** and **EndDate** values based on the Gantt scheduling engine. If **projectStartDate** is specified, it is used as the scheduling reference date; otherwise, the Gantt Chart component derives the required timeline from the available task data. The **viewStartDate** and **viewEndDate** properties only control the visible timeline range and do not affect parent task date calculations. As a result, parent tasks can display calculated schedule dates even when all child tasks are unscheduled, regardless of whether **projectStartDate**, timeline view dates, or both are defined.
 
 ### Convert to milestone using method
 
@@ -349,6 +382,7 @@ export class AppComponent {
 ```
 
 ## See also
+
 - [How to configure task dependencies?](https://ej2.syncfusion.com/angular/documentation/gantt/taskdependency)
 - [How to manage resources?](https://ej2.syncfusion.com/angular/documentation/gantt/resources)
 - [How to configure holidays?](https://ej2.syncfusion.com/angular/documentation/gantt/holidays)

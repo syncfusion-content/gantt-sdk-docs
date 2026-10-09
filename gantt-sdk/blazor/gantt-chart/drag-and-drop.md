@@ -1,15 +1,19 @@
 ---
 layout: post
-title: Rows Drag and Drop in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Row Drag and Drop in Syncfusion Blazor Gantt Chart component and much more details.
+title: Row Drag and Drop in Blazor Gantt Chart | Syncfusion
+description: Learn how to enable row drag and drop in Syncfusion Blazor Gantt Chart to reorder, rearrange, and move tasks within the project hierarchy.
+keywords: blazor gantt drag drop, row drag drop, reorder tasks, move tasks, drag between grids, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/drag-and-drop
 platform: gantt-sdk
-control: Gantt Chart
+control: Drag and Drop - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Row drag and drop in Blazor Gantt Chart component
+# Row Drag and Drop for Task Reordering in Blazor Gantt Chart
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component includes built-in support for row drag and drop, enabling rows to be rearranged within the Gantt chart or dropped into custom components. 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Gantt Chart component includes built-in support for row drag and drop, enabling rows to be rearranged within the Blazor Gantt Chart or dropped into custom components. 
 
 To enable this feature, set the [AllowRowDragAndDrop](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowRowDragAndDrop) property to **true**.
 
@@ -65,7 +69,7 @@ To enable this feature, set the [AllowRowDragAndDrop](https://help.syncfusion.co
 
 ## Multiple row drag and drop
 
-You can drag and drop multiple rows simultaneously in the Gantt Chart component. To enable this functionality, set the [GanttSelectionSettings.Type](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html#Syncfusion_Blazor_Gantt_GanttSelectionSettings_Type) property to **SelectionType.Multiple** , and set the [AllowRowDragAndDrop](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowRowDragAndDrop) property is set to **true**.
+You can drag and drop multiple rows simultaneously in the Blazor Gantt Chart component. To enable this functionality, set the [GanttSelectionSettings.Type](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttSelectionSettings.html#Syncfusion_Blazor_Gantt_GanttSelectionSettings_Type) property to **SelectionType.Multiple** , and set the [AllowRowDragAndDrop](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AllowRowDragAndDrop) property is set to **true**.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -121,7 +125,7 @@ You can drag and drop multiple rows simultaneously in the Gantt Chart component.
 
 ## Perform row drag and drop action programmatically
 
-To rearrange rows programmatically in the Gantt Chart component, use the [ReorderRowAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ReorderRowAsync_System_Int32_System_Int32_System_String_) method. This method accepts the following parameters: 
+To rearrange rows programmatically in the Blazor Gantt Chart component, use the [ReorderRowAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ReorderRowAsync_System_Int32_System_Int32_System_String_) method. This method accepts the following parameters: 
 
 - **FromIndexes**: Indexes of the rows to be dragged.  
 - **ToIndex**: Target index for placement.  
@@ -192,7 +196,7 @@ In the example below, the row at index 2 is moved below the row at index 6 using
 
 ## Customize the drag and drop action
 
-Customize the drag and drop behavior in the Gantt component using the [RowDragStarting](https://blazor.syncfusion.com/documentation/gantt-chart/events#rowdragstarting), [RowDropping](https://blazor.syncfusion.com/documentation/gantt-chart/events#rowdropping), [RowDropped](https://blazor.syncfusion.com/documentation/gantt-chart/events#rowdropped) events. These events provide control over the drag lifecycle, allowing precise handling of row interactions.
+Customize the drag and drop behavior in the Gantt component using the [RowDragStarting](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#rowdragstarting), [RowDropping](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#rowdropping), [RowDropped](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#rowdropped) events. These events provide control over the drag lifecycle, allowing precise handling of row interactions.
 
 In this example, the row drop action is canceled when the **TaskID** is 2.
 

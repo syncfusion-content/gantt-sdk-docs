@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Sorting in ASP.NET Core Gantt Component
-description: Learn here all about Sorting in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Sorting in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to implement and customize sorting functionality in Syncfusion ASP.NET Core Gantt Chart for efficient data organization and analysis.
+keywords: asp.net core gantt sorting, data sorting, column sorting, multi-level sorting, sort order, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/sorting
 platform: gantt-sdk
-control: Sorting
-publishingplatform: gantt-sdk
+control: Sorting - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK/overview
 ---
 
-
-# Sorting in ASP.NET Core Gantt Chart Component
+# Column Sorting with Multi-Sort in ASP.NET Core Gantt Chart
 
 Sorting enables you to sort data in the ascending or descending order. To sort a column, click the column header.
 
 To sort multiple columns, press and hold the CTRL key and click the column header. You can clear sorting of any one of the multi-sorted columns by pressing and holding the SHIFT key and clicking the specific column header.
 
 To enable sorting in the Gantt control, set the [`AllowSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowSorting) property to true. Sorting options can be configured through the [`SortSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SortSettings) property.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -28,23 +28,9 @@ To enable sorting in the Gantt control, set the [`AllowSorting`](https://help.sy
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/sorting/enableSorting/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="EnableSorting.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/sorting/enableSorting/enableSorting.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 The following screenshot shows the output of multicolumn sorting in Gantt control.
 
-![Alt text](images/multiSorting.png)
+![Alt text](./images/multiSorting.png)
 
 N> * Gantt columns are sorted in the ascending order. If you click the already sorted column, the sort direction toggles.
 <br/> * To disable sorting for a particular column, set the [`Columns.AllowSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_AllowSorting) property to false.
@@ -52,8 +38,6 @@ N> * Gantt columns are sorted in the ascending order. If you click the already s
 ## Sorting column on Gantt initialization
 
 The Gantt control can be rendered with sorted columns initially, and this can be achieved by using the [`SortSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SortSettings) property. You can add columns that are sorted initially in the [`SortSettings.Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttSortSettings.html#Syncfusion_EJ2_Gantt_GanttSortSettings_Columns) collection defined with `Field` and `Direction` properties. The following code example shows how to add the sorted column to Gantt initialization.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -64,25 +48,9 @@ The Gantt control can be rendered with sorted columns initially, and this can be
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/sorting/initialSort/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="InitialSort.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/sorting/initialSort/initialSort.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ## Sorting column dynamically
 
 Columns in the Gantt control can be sorted dynamically using the `sortColumn` method. The following code example demonstrates how to invoke the `sortColumn` method by clicking the custom button.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -93,33 +61,17 @@ Columns in the Gantt control can be sorted dynamically using the `sortColumn` me
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/sorting/dynamicSort/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="DynamicSort.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/sorting/dynamicSort/dynamicSort.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Alt text](images/beforeSorting.png)
+![Alt text](./images/beforeSorting.png)
 
 Before Sorting
 
-![Alt text](images/afterSorting.png)
+![Alt text](./images/afterSorting.png)
 
 After Sorting
 
 ## Clear all the sorted columns dynamically
 
 In the Gantt control, you can clear all the sorted columns and return to previous position using the `clearSorting` public method. The following code snippet shows how to clear all the sorted columns by clicking the custom button.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -130,25 +82,9 @@ In the Gantt control, you can clear all the sorted columns and return to previou
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/sorting/clearSorting/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ClearSorting.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/sorting/clearSorting/clearSorting.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ## Sorting events
 
 During the sort action, the Gantt control triggers two events. The [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ActionBegin) event triggers before the sort action starts, and the [`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ActionComplete) event triggers after the sort action is completed.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -159,20 +95,6 @@ During the sort action, the Gantt control triggers two events. The [`ActionBegin
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/sorting/eventHandlers/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="EventHandlers.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/sorting/eventHandlers/eventHandlers.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 N> The `args.requestType` is the current action name. For example, for sorting the `args.requestType`, value is **sorting**.
 
 ## Sorting custom columns
@@ -180,8 +102,6 @@ N> The `args.requestType` is the current action name. For example, for sorting t
 In Gantt, you can sort custom columns of different types like string, numeric, etc., By adding the custom column in the column collection, you can perform initial sort using the `sortSettings` or you can also sort the column dynamically by a button click.
 
 The following code snippets explains how to achieve this.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -192,23 +112,10 @@ The following code snippets explains how to achieve this.
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/sorting/customcolumns/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Customcolumns.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/sorting/customcolumns/customcolumns.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 ## Touch interaction
 
-To perform `tap` action on a column header, trigger [`sorting`](sorting/#sorting) operation to the selected column. A popup is displayed for multi-column sorting. To sort multiple columns, tap the popup, and then tap the desired column headers.
+To perform `tap` action on a column header, trigger [`sorting`](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/sorting#sorting) operation to the selected column. A popup is displayed for multi-column sorting. To sort multiple columns, tap the popup, and then tap the desired column headers.
 
 The following screenshot shows Gantt touch sorting,
 
-![Multiple Sorting](images/multiple-sorting.png)
+![Multiple Sorting](./images/multiple-sorting.png)

@@ -1,17 +1,18 @@
 ---
 layout: post
-title: Placeholder in UWP Kanban Board control | Syncfusion
-description: Learn here all about Placeholder support in Syncfusion UWP Kanban Board (SfKanban) control and more.
+title: Placeholder in UWP Kanban Board | Syncfusion
+description: Learn about Placeholder support in Syncfusion UWP Kanban Board using PlaceholderStyle properties to control placeholder appearance and selected-state visuals.
 platform: gantt-sdk
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Placeholder in UWP Kanban Board (SfKanban)
+# Placeholder in UWP Kanban Board
 
 The placeholder is to denote a card's new position in the [`KanbanColumn`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html). It will appear while dragging a card over the column.
 
-### Placeholder style
+## Placeholder style
 
 [`PlaceholderStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_PlaceholderStyle) property is used to customize the placeholder. Following properties are used to customize its appearance.
 

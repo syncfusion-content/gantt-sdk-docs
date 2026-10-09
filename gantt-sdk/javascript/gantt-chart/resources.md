@@ -1,21 +1,23 @@
 ---
 layout: post
-title: Resources in JavaScript Gantt Chart Control | Syncfusion
-description: Learn how to configure resources in the Syncfusion JavaScript Gantt Chart control for task allocation and utilization visualization.
+title: Resources in JavaScript Gantt Chart | Syncfusion
+description: Learn how to configure resources in Syncfusion JavaScript Gantt Chart for task allocation and visualize resource workload and utilization across project.
+keywords: javascript gantt resources, resource allocation, resource management, workload, team members, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/resources
 platform: gantt-sdk
-control: Resources
-publishingplatform: gantt-sdk
+control: Resources - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Resources in JavaScript Gantt Chart Control
+# Resources with Allocation and Task Mapping in JavaScript Gantt Chart
 
-Resources in the  JavaScript Gantt Chart control represent people, equipment, or materials allocated to tasks, visualized in taskbars and labels for clear utilization tracking. Assigned via the [resources](../api/gantt#resources) property, resources map to tasks using [resourceFields](../api/gantt#resourcefields) for ID, name, unit, and group. This enables display of resource names in columns or labels with [labelSettings](../api/gantt/labelSettings), highlighting workloads and overallocation. The [queryTaskbarInfo](../gantt/events#querytaskbarinfo) event customizes taskbar styles based on resources, such as color-coding. Resources include ARIA labels for accessibility, ensuring screen reader compatibility, and adapt to responsive designs, though narrow screens may truncate names for multiple assignments. By default, resources allocate 100% unit if unspecified.
+Resources in the JavaScript Gantt Chart control represent people, equipment, or materials allocated to tasks, and they can be visualized in taskbars and labels for clear utilization tracking. Define a resource collection in the [resources](https://ej2.syncfusion.com/javascript/documentation/api/gantt#resources) property, map its fields with [resourceFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt#resourcefields), and assign the resources to each task through [taskFields.resourceInfo](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#resourceinfo). This mapping enables resource names to appear in columns or labels with [labelSettings](https://ej2.syncfusion.com/javascript/documentation/api/gantt/labelSettings), highlights workloads and overallocation, and supports taskbar customization through the [queryTaskbarInfo](https://ej2.syncfusion.com/javascript/documentation/gantt/events#querytaskbarinfo) event. Resources also include ARIA labels for accessibility and adapt to responsive layouts, although narrow screens may truncate names when multiple resources are assigned. By default, resources allocate 100% unit if the unit is not specified.
 
 ## Configure resource collection
 
-The resource collection defines available resources as JSON objects with ID, name, unit, and group, mapped via [resourceFields](../api/gantt#resourcefields):
+The resource collection defines available resources as JSON objects with an ID, name, unit, and group, and these fields are mapped through [resourceFields](https://ej2.syncfusion.com/javascript/documentation/api/gantt#resourcefields). Each task in the data source can then reference the matching resources by using [taskFields.resourceInfo](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#resourceinfo):
 
 - **id**: Maps to a unique identifier for task assignment.
 - **name**: Maps to the resource name displayed in labels or columns.
@@ -24,36 +26,41 @@ The resource collection defines available resources as JSON objects with ID, nam
 
 The following code demonstrates resource collection setup:
 
-{% if page.publishingplatform == "typescript" %}
-
-```ts
-var projectResources: Object[] = [
-    { resourceId: 1, resourceName: 'Martin Tamer', resourceGroup: 'Planning Team', resourceUnit: 50 },
-    { resourceId: 2, resourceName: 'Rose Fuller', resourceGroup: 'Testing Team', resourceUnit: 70 },
-    { resourceId: 3, resourceName: 'Margaret Buchanan', resourceGroup: 'Approval Team' },
-    { resourceId: 4, resourceName: 'Fuller King', resourceGroup: 'Development Team' },
-    { resourceId: 5, resourceName: 'Davolio Fuller', resourceGroup: 'Approval Team' },
-    { resourceId: 6, resourceName: 'Van Jack', resourceGroup: 'Development Team', resourceUnit: 40 }
-];
-
-var resourceFields: ResourceFieldsModel = {
-    id: 'resourceId',
-    name: 'resourceName',
-    unit: 'resourceUnit',
-    group: 'resourceGroup'
-};
-```
-
-{% elsif page.publishingplatform == "javascript" %}
-
 ```js
 var projectResources = [
-    { resourceId: 1, resourceName: 'Martin Tamer', resourceGroup: 'Planning Team', resourceUnit: 50 },
-    { resourceId: 2, resourceName: 'Rose Fuller', resourceGroup: 'Testing Team', resourceUnit: 70 },
-    { resourceId: 3, resourceName: 'Margaret Buchanan', resourceGroup: 'Approval Team' },
-    { resourceId: 4, resourceName: 'Fuller King', resourceGroup: 'Development Team' },
-    { resourceId: 5, resourceName: 'Davolio Fuller', resourceGroup: 'Approval Team' },
-    { resourceId: 6, resourceName: 'Van Jack', resourceGroup: 'Development Team', resourceUnit: 40 }
+  {
+    resourceId: 1,
+    resourceName: "Martin Tamer",
+    resourceGroup: "Planning Team",
+    resourceUnit: 50,
+  },
+  {
+    resourceId: 2,
+    resourceName: "Rose Fuller",
+    resourceGroup: "Testing Team",
+    resourceUnit: 70,
+  },
+  {
+    resourceId: 3,
+    resourceName: "Margaret Buchanan",
+    resourceGroup: "Approval Team",
+  },
+  {
+    resourceId: 4,
+    resourceName: "Fuller King",
+    resourceGroup: "Development Team",
+  },
+  {
+    resourceId: 5,
+    resourceName: "Davolio Fuller",
+    resourceGroup: "Approval Team",
+  },
+  {
+    resourceId: 6,
+    resourceName: "Van Jack",
+    resourceGroup: "Development Team",
+    resourceUnit: 40,
+  },
 ];
 
 var resourceFields = {
@@ -64,13 +71,11 @@ var resourceFields = {
 };
 ```
 
-{% endif %}
-
 This configuration maps resources for assignment and display.
 
 ## Assign resources to tasks
 
-Resources are assigned to tasks using resource IDs in the data source, mapped via [taskFields.resourceInfo](../api/gantt/taskFields#resourceinfo). Assignments can be added or edited dynamically via cell or dialog editing, triggered by double-clicking.
+Resources are assigned to tasks by declaring a field in the task data source, such as `resources`, and populating it with the matching resource IDs or resource objects. This field is mapped through [taskFields.resourceInfo](https://ej2.syncfusion.com/javascript/documentation/api/gantt/taskFields#resourceinfo) so the Gantt Chart control can group tasks under the appropriate resource nodes. Assignments can be added or edited dynamically via cell or dialog editing, triggered by double-clicking.
 
 **Single resource assignment:**
 
@@ -106,21 +111,6 @@ Units from the resource collection apply unless overridden at the task level.
 
 The following example shows resource assignment:
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/resources-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/resources-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/resources-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/gantt-sdk/javascript/gantt-chart/resources-cs1/index.js %}
@@ -131,7 +121,6 @@ The following example shows resource assignment:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/resources-cs1" %}
-{% endif %}
 
 ## Manage resource assignments
 
@@ -145,24 +134,9 @@ _Alt text: Resource dialog editing tab for multiple allocations and units._
 
 ## Customize resource styling
 
-Customize resource display using column templates for the resource column and the [queryTaskbarInfo](../gantt/events#querytaskbarinfo) event for taskbar styling based on assigned resources.
+Customize resource display using column templates for the resource column and the [queryTaskbarInfo](https://ej2.syncfusion.com/javascript/documentation/gantt/events#querytaskbarinfo) event for taskbar styling based on assigned resources.
 
 The following example demonstrates custom resource styling:
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/resource-customization-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/gantt-chart/resource-customization-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/resource-customization-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -174,12 +148,11 @@ The following example demonstrates custom resource styling:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/resource-customization-cs1" %}
-{% endif %}
 
 This configuration applies background colors to resource columns and taskbars, with the `queryTaskbarInfo` event modifying taskbar properties dynamically.
 
 ## See also
 
-- [How to configure resource view?](../gantt/resource-view)
-- [How to manage task dependencies?](../gantt/task-dependency)
-- [How to customize taskbars?](../gantt/taskbar)
+- [How to configure resource view?](https://ej2.syncfusion.com/javascript/documentation/gantt/resource-view)
+- [How to manage task dependencies?](https://ej2.syncfusion.com/javascript/documentation/gantt/task-dependency)
+- [How to customize taskbars?](https://ej2.syncfusion.com/javascript/documentation/gantt/taskbar)

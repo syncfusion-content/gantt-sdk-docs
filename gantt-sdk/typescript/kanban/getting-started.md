@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Getting started with TypeScript Kanban control | Syncfusion
-description:  Checkout and learn about Getting started with TypeScript Kanban control of Syncfusion Essential JS 2 and more details.
+title: Getting Started in TypeScript Kanban | Syncfusion
+description: Learn how to start using Syncfusion TypeScript Kanban with step-by-step setup instructions and essential component features.
+keywords: typescript kanban getting started, syncfusion kanban, install component, setup
+canonical: https://help.syncfusion.com/gantt-sdk/typescript/kanban/getting-started
 platform: gantt-sdk
-control: Getting started 
-publishingplatform: gantt-sdk
+control: Getting Started - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Getting started with TypeScript Kanban control
+# Getting Started with TypeScript Kanban
 
 This section explains how to create and configure the Kanban component in TypeScript using a Vite project with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Kanban package.
 
@@ -223,7 +225,7 @@ The full set of default card fields recognized by the Kanban control is:
 | `Priority` | Used by the priority feature |
 | `DueDate` | Used by the due-date feature |
 
-To customize which fields appear on a card, use the [`cardSettings`](./cards) property; to add remote data fetching, see the [`dataSource`](./data-binding) configuration.
+To customize which fields appear on a card, use the [`cardSettings`](https://help.syncfusion.com/gantt-sdk/typescript/kanban/cards) property; to add remote data fetching, see the [`dataSource`](https://help.syncfusion.com/gantt-sdk/typescript/kanban/data-binding) configuration.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -269,11 +271,11 @@ To customize which fields appear on a card, use the [`cardSettings`](./cards) pr
 
 ## See also
 
-* [Columns configuration](./columns)
-* [Swimlane configuration](./swimlane)
-* [Cards and card fields](./cards)
-* [Data binding](./data-binding)
-* [Remote data binding with ODataV4](./odataV4)
-* [Sorting and filtering cards](./sort)
-* [Responsive mode](./responsive-mode)
-* [Accessibility](./accessibility)
+* [Columns configuration](https://help.syncfusion.com/gantt-sdk/typescript/kanban/columns)
+* [Swimlane configuration](https://help.syncfusion.com/gantt-sdk/typescript/kanban/swimlane)
+* [Cards and card fields](https://help.syncfusion.com/gantt-sdk/typescript/kanban/cards)
+* [Data binding](https://help.syncfusion.com/gantt-sdk/typescript/kanban/data-binding)
+* [Remote data binding with ODataV4](https://help.syncfusion.com/gantt-sdk/typescript/kanban/odataV4)
+* [Sorting and filtering cards](https://help.syncfusion.com/gantt-sdk/typescript/kanban/sort)
+* [Responsive mode](https://help.syncfusion.com/gantt-sdk/typescript/kanban/responsive-mode)
+* [Accessibility](https://help.syncfusion.com/gantt-sdk/typescript/kanban/accessibility)

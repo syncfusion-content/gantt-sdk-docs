@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Tree Column in React Gantt Chart Component | Syncfusion
-description: Learn here all about Tree Column in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Tree Column in React Gantt Chart | Syncfusion
+description: Learn how to configure the tree column in Syncfusion React Gantt Chart to display hierarchical task data with expand and collapse capabilities.
+keywords: react gantt tree column, hierarchy column, task hierarchy, expand collapse, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/columns/tree-column
 platform: gantt-sdk
-control: Tree Column 
+control: Tree Column - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Tree Column in React Gantt Chart Component
+# Configuring the Hierarchical Tree Column in React Gantt Chart
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component provides a structured way to display parent-child relationships using expand/collapse icons.  
 
@@ -150,37 +153,37 @@ gantt.collapseAll();
 * `expandAtLevel(level)`: Expands rows at a specific level. 
 
 ```ts
-gantt.treegrid.expandAtLevel(0);
+gantt.treeGrid.expandAtLevel(0);
 ```
 
 * `collapseAtLevel(level)`: Collapses rows at a specific level. 
 
 ```ts
-gantt.treegrid.collapseAtLevel(0);
+gantt.treeGrid.collapseAtLevel(0);
 ```
 
 * `expandByKey(key)`: Expands a row by primary key. 
 
 ```ts
-gantt.treegrid.expandByKey(1); //Here pass the primary key value.
+gantt.treeGrid.expandByKey(1); //Here pass the primary key value.
 ```
 
 * `collapseByKey(key)`: Collapses a row by primary key. 
 
 ```ts
-gantt.treegrid.collapseByKey(1);//Here pass the primary key value.
+gantt.treeGrid.collapseByKey(1);//Here pass the primary key value.
 ```
 
 * `expandRow(rowElement)`: Expands a row using its DOM element.  
 
 ```ts
-gantt.treegrid.expandRow(tr); //Here pass the row element as parameter.
+gantt.treeGrid.expandRow(tr); //Here pass the row element as parameter.
 ```
 
 * `collapseRow(rowElement)`: Collapses a row using its DOM element.
 
 ```ts
-gantt.treegrid.collapseRow(tr);//Here pass the row element as parameter.
+gantt.treeGrid.collapseRow(tr);//Here pass the row element as parameter.
 ```
 
 {% tabs %}

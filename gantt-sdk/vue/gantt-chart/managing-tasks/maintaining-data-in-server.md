@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Maintaining Data in Server in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about maintaining data in server in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Maintaining data in server 
+title: Maintaining Data in Server in Vue Gantt Chart | Syncfusion
+description: Learn how to maintain modified task data in server database using DataManager and RESTful web services in Vue Gantt Chart.
+keywords: vue gantt server data, maintain data, datamanager, crud operations, rest api, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/managing-tasks/maintaining-data-in-server
 platform: gantt-sdk
+control: Maintaining Data in Server - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Maintaining Data in Server in Vue Gantt Chart Component
+# Maintaining Data Persistence on Server in Vue Gantt Chart
 
 All the modified data in Gantt Chart control can be maintained in the database using RESTful web services.
 
@@ -18,7 +21,7 @@ In the below section, we have explained how to get the edited data details on th
 
 ## URL Adaptor
 
-In Gantt Chart, we can fetch data from SQL database using `ADO.NET` Entity Data Model and update the changes on CRUD action to the server by using `DataManager` support. To communicate with the remote data we are using `UrlAdaptor` of DataManager property to call the server method and get back resultant data in JSON format. We can know more about `UrlAdaptor` from [here](https://ej2.syncfusion.com/javascript/documentation/data/adaptors/?no-cache=1).
+In Gantt Chart, we can fetch data from SQL database using `ADO.NET` Entity Data Model and update the changes on CRUD action to the server by using `DataManager` support. To communicate with the remote data we are using `UrlAdaptor` of DataManager property to call the server method and get back resultant data in JSON format. We can know more about `UrlAdaptor` from [here](https://ej2.syncfusion.com/vue/documentation/data/adaptors/?no-cache=1).
 
 > Please refer to the [link](https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/models-data/creating-model-classes-with-the-entity-framework-cs) to create the `ADO.NET` Entity Data Model in Visual Studio.
 
@@ -193,7 +196,7 @@ public GanttData Edit(GanttData value)
 
 ## Delete action
 
-Using the `deleted` argument of the `BatchUrl` method we can remove the deleted records from database and return the same to client side. on deleting the record we need to remove its corresponding child records as well if it exist from the data base. please find the below code example for details.
+Using the `deleted` argument of the `BatchUrl` method we can remove the deleted records from database and return the same to client side. on deleting the record we need to remove its corresponding child records as well if it exist from the database. please find the below code example for details.
 
 ```ts
 

@@ -1,0 +1,66 @@
+<ejs-gantt id="Gantt"
+           dataSource="@Model.GanttDataSourceCollection"
+           height="450px"
+           allowSorting="true"
+           allowFiltering="true"
+           allowResizing="true"
+           enableContextMenu="true"
+           showColumnMenu="true"
+           enableSerialNumber="true"
+           allowRowDragAndDrop="true"
+           allowTaskbarDragAndDrop="true"
+           treeColumnIndex="2"
+           toolbar="@(new List<string>() { "Add", "Edit", "Update", "Delete", "Cancel", "Indent", "Outdent", "ExpandAll", "CollapseAll", "Search" })">
+
+    <e-gantt-taskfields id="TaskID"
+                        name="TaskName"
+                        startDate="StartDate"
+                        duration="Duration"
+                        progress="Progress"
+                        parentID="ParentID">
+    </e-gantt-taskfields>
+
+    <e-gantt-editsettings allowAdding="true"
+                          allowEditing="true"
+                          allowDeleting="true"
+                          allowTaskbarEditing="true"
+                          showDeleteConfirmDialog="true">
+    </e-gantt-editsettings>
+
+    <e-gantt-splittersettings columnIndex="4">
+    </e-gantt-splittersettings>
+
+    <e-gantt-columns>
+        <e-gantt-column field="TaskID"
+                        headerText="Task ID"
+                        visible="false">
+        </e-gantt-column>
+
+        <e-gantt-column field="SerialNumber"
+                        headerText="S.No"
+                        width="100">
+        </e-gantt-column>
+
+        <e-gantt-column field="TaskName"
+                        headerText="Task Name"
+                        allowReordering="false"
+                        width="280">
+        </e-gantt-column>
+
+        <e-gantt-column field="StartDate"
+                        headerText="Start Date"
+                        width="140">
+        </e-gantt-column>
+
+        <e-gantt-column field="Duration"
+                        headerText="Duration"
+                        allowEditing="false"
+                        width="130">
+        </e-gantt-column>
+
+        <e-gantt-column field="Progress"
+                        headerText="Progress">
+        </e-gantt-column>
+    </e-gantt-columns>
+
+</ejs-gantt>

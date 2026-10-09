@@ -1,17 +1,21 @@
 ---
 layout: post
-title: Style and Appearance in Blazor Gantt Chart Component | Syncfusion
-description: Check out and learn here all about style and appearance in Syncfusion Blazor Gantt Chart component and more.
+title: Style and Appearance in Blazor Gantt Chart | Syncfusion
+description: Learn how to customize the style and appearance of Syncfusion Blazor Gantt Chart using themes, CSS variables, and component-level style overrides.
+keywords: blazor gantt style, appearance customization, themes, css variables, gantt styling, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/style-and-appearance
 platform: gantt-sdk
-control: Gantt Chart
+control: Style and Appearance - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Style and Appearance in Blazor Gantt Chart Component
+# Style and Appearance with CSS and Theme Support in Blazor Gantt Chart
 
-Customize the appearance of the Blazor Gantt Chart by overriding default CSS styles. The Gantt Chart provides a comprehensive set of CSS classes for targeting specific sections, allowing a tailored design that matches application branding. [Theme Studio](https://blazor.syncfusion.com/documentation/appearance/theme-studio) can create custom themes for all JavaScript controls.
+Customize the appearance of the Blazor Gantt Chart by overriding default CSS styles. The Blazor Gantt Chart provides a comprehensive set of CSS classes for targeting specific sections, allowing a tailored design that matches application branding. [Theme Studio](https://blazor.syncfusion.com/documentation/appearance/theme-studio) can create custom themes for all JavaScript controls.
 
-## Customizing Gantt Chart root element
+## Customizing Blazor Gantt Chart root element
 
 The `.e-gantt` class is the root container for the entire Blazor Gantt Chart. Customize this element to control global appearance including font family, background color, and overall spacing:
 
@@ -25,11 +29,11 @@ Properties such as `font-family`, `background-color`, and spacing-related styles
 
 ![Customizing root element](./images/blazor-gantt-chart-root-element.webp)
 
-This customization applies a cursive font to the Gantt Chart content. Additional styling can be applied to rows, alternate rows, selected rows, and hover states. Avoid using `!important` for hover styles in production environments. Instead, increase selector specificity to maintain consistent styling control.
+This customization applies a cursive font to the Blazor Gantt Chart content. Additional styling can be applied to rows, alternate rows, selected rows, and hover states. Avoid using `!important` for hover styles in production environments. Instead, increase selector specificity to maintain consistent styling control.
 
 ## Styling the grid section
 
-### Customizing grid headers in Gantt Chart
+### Customizing grid headers in Blazor Gantt Chart
 
 The grid header in the Blazor Gantt Chart contains column headers and table structures. Customize the header appearance and styling using the following CSS classes:
 
@@ -315,7 +319,7 @@ Properties such as `background-color`, `color`, `border`, `border-radius`, and `
  
 ## Complete code example with CSS customization
 
-Below is a complete example demonstrating how to customize multiple aspects of the Gantt Chart using CSS classes:
+Below is a complete example demonstrating how to customize multiple aspects of the Blazor Gantt Chart using CSS classes:
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -440,7 +444,7 @@ Below is a complete example demonstrating how to customize multiple aspects of t
 
 ![style and appearance](./images/style-and-appearance.webp)
 
-## Configuring grid lines in the Gantt Chart
+## Configuring grid lines in the Blazor Gantt Chart
 
 Grid lines on the Tree Grid and chart sections can be shown or hidden using the [GridLines](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_GridLines) property. This property controls the visibility of grid lines throughout the component. The available grid line options are:
 
@@ -531,6 +535,6 @@ N> By default, the `GridLines` property is set to **Horizontal** type.
 
 ## See also
 
-* [Customizing the Blazor Gantt Chart’s Taskbar](https://www.syncfusion.com/blogs/post/customizing-the-blazor-gantt-charts-taskbar-an-overview.aspx)
+* [Customizing the Blazor Gantt Chart’s Taskbar](https://www.syncfusion.com/blogs/post/customizing-the-blazor-gantt-charts-taskbar-an-overview)
 
-> Refer to the [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page for feature details. The [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=bootstrap5) demonstrates how to render and configure the Gantt.
+> Refer to the [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) feature tour page for feature details. The [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=fluent2) demonstrates how to render and configure the Gantt.

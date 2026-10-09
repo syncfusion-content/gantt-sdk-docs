@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Context Menu in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about Context menu in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Context menu 
+title: Context Menu in Vue Gantt Chart | Syncfusion
+description: Learn how to configure and customize context menu in Syncfusion Vue Gantt Chart for quick task actions and operations.
+keywords: vue gantt context menu, right-click menu, custom menu items, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/context-menu
 platform: gantt-sdk
+control: Context Menu - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Context Menu in Vue Gantt Chart Component
+# Context Menu Customization in Vue Gantt Chart
 
 The Gantt Chart component allows you to perform quick actions by using context menu. When right-clicking the context menu, the context menu options are shown. To enable this feature, set the [enableContextMenu](https://ej2.syncfusion.com/vue/documentation/api/gantt#enablecontextmenu) to true. The default context menu options are enabled using the [editSettings](https://ej2.syncfusion.com/vue/documentation/api/gantt#editsettings) property. The context menu options can be customized using the [contextMenuItems](https://ej2.syncfusion.com/vue/documentation/api/gantt#contextmenuitems) property.
 
@@ -66,4 +69,4 @@ The following sample shows context menu item for parent rows to expand or collap
 
 ## Touch interaction
 
-To perform `long press` action on a row, [context menu](context-menu#context-menu) is opened, and then tap a menu item to trigger its action.
+To perform `long press` action on a row, [context menu](https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/context-menu#context-menu) is opened, and then tap a menu item to trigger its action.

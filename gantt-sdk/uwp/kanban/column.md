@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Column in UWP Kanban Board control | Syncfusion
-description: Learn here all about Column support in Syncfusion UWP Kanban Board (SfKanban) control and more.
+title: Column in UWP Kanban Board | Syncfusion
+description: Learn about Column support in Syncfusion UWP Kanban Board with category mapping, header settings, drag-and-drop support, and WIP constraints.
 platform: gantt-sdk
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Column in UWP Kanban Board (SfKanban)
+# Column in UWP Kanban Board
 
 ## Customizing column size
 

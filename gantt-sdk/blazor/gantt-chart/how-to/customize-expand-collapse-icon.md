@@ -1,15 +1,19 @@
 ---
 layout: post
-title: Expand and Collapse Icon in Blazor Gantt Chart | Syncfusion®
-description: Checkout and learn here all about Customize Expand and Collapse Icon in Blazor Gantt Chart component and more.
+title: Expand Collapse Icon in Blazor Gantt Chart | Syncfusion
+description: Learn how to customize the expand and collapse icons in Syncfusion Blazor Gantt Chart using CSS overrides for a personalized look.
+keywords: blazor gantt expand collapse icon, customize tree icon, treegrid icon, css customization, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/how-to/customize-expand-collapse-icon
 platform: gantt-sdk
-control: Gantt Chart
+control: Expand Collapse Icon - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Customize Expand and Collapse Icon in Blazor Gantt Chart Component
+# Customizing Expand and Collapse Icons in Blazor Gantt Chart
 
-In the Gantt Chart component, you can customize the expand and collapse icons by overriding the default icon classes `.e-treegridexpand` and `.e-treegridcollapse` with the `content` property. The below sample code demonstrates the customization of the expand and collapse icons.
+In the Blazor Gantt Chart component, you can customize the expand and collapse icons by overriding the default icon classes `.e-treegridexpand` and `.e-treegridcollapse` with the `content` property. The below sample code demonstrates the customization of the expand and collapse icons.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -19,11 +23,11 @@ In the Gantt Chart component, you can customize the expand and collapse icons by
          Toolbar="@(new List<string>(){ "Add", "Edit", "Update", "Delete", "Cancel", "ExpandAll", "CollapseAll", "Indent", "Outdent"})"
          AllowSelection="true" TreeColumnIndex="1"
          ProjectStartDate="@ProjectStart" ProjectEndDate="@ProjectEnd">
-    <GanttTaskFields Id="TaskID" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
+    <GanttTaskFields Id="TaskId" Name="TaskName" StartDate="StartDate" EndDate="EndDate" Duration="Duration" Progress="Progress"
                      Dependency="Predecessor" ParentID="ParentID"></GanttTaskFields>
     <GanttEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" AllowTaskbarEditing="true" ShowDeleteConfirmDialog="true"></GanttEditSettings>
     <GanttColumns>
-        <GanttColumn Field="TaskID" Width="100"></GanttColumn>
+        <GanttColumn Field="TaskId" Width="100"></GanttColumn>
         <GanttColumn Field="TaskName" HeaderText="Job Name" Width="250" ClipMode="Syncfusion.Blazor.Grids.ClipMode.EllipsisWithTooltip"></GanttColumn>
         <GanttColumn Field="StartDate" HeaderText="Start Date"></GanttColumn>
         <GanttColumn Field="EndDate" HeaderText="End Date"></GanttColumn>
@@ -51,7 +55,7 @@ In the Gantt Chart component, you can customize the expand and collapse icons by
     {
         public class TaskData
         {
-            public int TaskID { get; set; }
+            public int TaskId { get; set; }
             public string TaskName { get; set; }
             public DateTime? StartDate { get; set; }
             public DateTime? EndDate { get; set; }

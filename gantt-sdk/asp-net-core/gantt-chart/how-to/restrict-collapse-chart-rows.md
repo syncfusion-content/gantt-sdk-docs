@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Restrict Collapse Chart Rows in ASP.NET Core Gantt Component
-description: Learn here all about Restrict Collapse Chart Rows in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Restrict Collapse Chart Rows in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to restrict row collapsing in Syncfusion ASP.NET Core Gantt Chart by preventing users from collapsing specific rows or all rows.
+keywords: asp.net core gantt restrict collapse, collapse restriction, prevent collapse, row collapse, expand collapse, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/how-to/restrict-collapse-chart-rows
 platform: gantt-sdk
-control: Restrict Collapse Chart Rows
-publishingplatform: gantt-sdk
+control: How-to - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK/overview
 ---
 
+# Restrict Collapse Chart Rows in ASP.NET Core Gantt Chart
 
-# Open add/edit dialog dynamically
-
-Restriction of collapsing the records when clicking on gantt chart rows can be performed by using the [`collapsing`](../../api/gantt/#collapsing) event.
-
-{% if page.publishingplatform == "aspnet-core" %}
+Restriction of collapsing the records when clicking on gantt chart rows can be performed by using the [`collapsing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Collapsing) event.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -23,17 +23,3 @@ Restriction of collapsing the records when clicking on gantt chart rows can be p
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/restrictcollapsechartrows/restrictcollapsechartrows.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/restrictcollapsechartrows/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Restrictcollapsechartrows.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/how-to/restrictcollapsechartrows/restrictcollapsechartrows.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-

@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Filtering and Sorting in WPF GanttControl | Syncfusion
-description: Learn about Filtering and sorting support in Syncfusion Essential Studio WPF GanttControl, its elements and more details.
+title: Filtering and Sorting in WPF Gantt | Syncfusion
+description: Learn about Filtering and sorting support in Syncfusion WPF Gantt using Excel-like filtering and ascending or descending column sorting.
 platform: gantt-sdk
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Filtering and sorting support in GanttControl
+# Filtering and Sorting in WPF Gantt
 `Filtering` is the process of retrieving values from a collection that satisfy specified conditions. In the [GanttControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html), filtering can be applied through the user interface, allowing users to narrow down the displayed data based on their criteria.
 Additionally, the [GanttControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html) enables sorting of data against one or more columns in either ascending or descending order. When sorting is applied, the rows are rearranged based on the specified sort criteria, providing users with organized and easily navigable data views.
 
@@ -27,7 +28,7 @@ this.ganttControl.AllowFiltering = true;
 {% endhighlight  %}
 {% endtabs %}
 
-N> By default, the WPF GanttControl uses the `Extended` filter level. This setting ensures that all parent nodes of any node that meets the filter criteria are shown.
+N> By default, the WPF Gantt uses the `Extended` filter level. This setting ensures that all parent nodes of any node that meets the filter criteria are shown.
 
 ## Sorting
 The [GanttControl](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html) allows you to sort column data in either ascending or descending order. When sorting is applied, the rows are rearranged based on the specified sort criteria. You can sort the data by touching or clicking the column header. Sorting can be enabled by setting the [AllowSorting](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Gantt.GanttControl.html#Syncfusion_Windows_Controls_Gantt_GanttControl_AllowSorting) property to `true`.

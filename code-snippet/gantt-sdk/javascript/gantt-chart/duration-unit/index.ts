@@ -5,6 +5,8 @@ const gantt: Gantt = new Gantt({
     dataSource: GanttData,
     height: '450px',
     splitterSettings: {columnIndex:4},
+    daysPerWeek: 5,
+    daysPerMonth: 20,
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',

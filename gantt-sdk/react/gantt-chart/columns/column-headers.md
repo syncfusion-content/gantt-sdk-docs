@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Headers in React Gantt Chart Component | Syncfusion
-description: Learn here all about Headers in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Column Headers in React Gantt Chart | Syncfusion
+description: Learn how to configure column headers in Syncfusion React Gantt Chart with custom text, tooltips, and formatting for improved readability.
+keywords: react gantt column headers, header text, header tooltip, column title, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/columns/column-headers
 platform: gantt-sdk
-control: Headers
+control: Column Headers - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Column Headers in React Gantt Chart Component
+# Configuring Column Headers in React Gantt Chart
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component provides flexible options to manage and customize column headers. You can define static header text, apply custom templates, align header content, and even update header titles dynamically through events or methods. These features help tailor the Gantt chart to match specific UI requirements and improve readability.
 
@@ -82,7 +85,7 @@ You can align the column header text in the React Gantt Chart component using th
 
 ## Enable header text wrapping
 
-You can enable autowrap in the React Gantt Chart component to allow cell content to wrap onto the next line when it exceeds the defined column width. This wrapping behavior is based on the whitespace between words. To activate this feature, set the `allowTextWrap` property to **true** and specify an appropriate column [width](https://ej2.syncfusion.com/react/documentation/api/gantt/column#width).
+You can enable auto wrap in the React Gantt Chart component to allow cell content to wrap onto the next line when it exceeds the defined column width. This wrapping behavior is based on the whitespace between words. To activate this feature, set the `allowTextWrap` property to **true** and specify an appropriate column [width](https://ej2.syncfusion.com/react/documentation/api/gantt/column#width).
 
 The wrapping behavior is defined using the `textWrapSettings.wrapMode` property of the `treeGrid` object. Available options include:
 
@@ -90,9 +93,9 @@ The wrapping behavior is defined using the `textWrapSettings.wrapMode` property 
 - **Content:** Wraps only the cell content.
 - **Both:** Wraps both header and content (default).
 
-> * If column width is not defined, autowrap adjusts based on the overall Gantt chart width.
+> * If column width is not defined, auto wrap adjusts based on the overall Gantt chart width.
 > * Header text without white space may not wrap.
-> * If cell content includes HTML tags, autowrap may not function as expected. In such cases, use [headerTemplate](https://ej2.syncfusion.com/react/documentation/api/gantt/column#headertemplate) and [template](https://ej2.syncfusion.com/react/documentation/api/gantt/column#template) properties to customize the header and cell layout.
+> * If cell content includes HTML tags, auto wrap may not function as expected. In such cases, use [headerTemplate](https://ej2.syncfusion.com/react/documentation/api/gantt/column#headertemplate) and [template](https://ej2.syncfusion.com/react/documentation/api/gantt/column#template) properties to customize the header and cell layout.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
@@ -219,7 +222,7 @@ By default, header text in the Gantt Chart component is displayed horizontally. 
 
 ## Add custom tooltip to header
 
-You can display additional information in the React Gantt Chart component by adding custom tooltips to column headers. This is especially helpful when space is limited or when extra context is needed. To implement this, use the [beforeRender](https://ej2.syncfusion.com/react/documentation/api/gantt#beforeRender) event of the `Tooltip` component. This event triggers before each header cell is rendered, allowing you to assign a custom tooltip dynamically.
+You can display additional information in the React Gantt Chart component by adding custom tooltips to column headers. This is especially helpful when space is limited or when extra context is needed. To implement this, use the [beforeRender](https://ej2.syncfusion.com/react/documentation/api/tooltip#beforerender) event of the `Tooltip` component. This event triggers before each header cell is rendered, allowing you to assign a custom tooltip dynamically.
 
 The following example demonstrates how to use the `beforeRender` event to add a tooltip to a header cell:
 

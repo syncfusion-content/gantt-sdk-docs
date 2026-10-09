@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Top tier and bottom tier in React Gantt Chart Component | Syncfusion
-description: Learn how to configure top and bottom tiers in the Syncfusion React Gantt Chart Component using timeline settings such as unit, format, count, and formatter.
+title: Top and Bottom Tier in React Gantt Chart | Syncfusion
+description: Learn how to configure top and bottom tiers in Syncfusion React Gantt Chart using unit, format, count, and formatter for timeline customization.
+keywords: react gantt top tier bottom tier, timeline tiers, tier format, tier unit, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/timeline/top-tier-and-bottom-tier
 platform: gantt-sdk
-control: Top tier and bottom tier 
+control: Top and Bottom Tier - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Top Tier and Bottom Tier in React Gantt Chart Component
+# Customizing Top and Bottom Timeline Tiers in React Gantt Chart
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component supports a two-tier timeline layout, enabling customization of both the top and bottom tiers through specific configuration options.
 
@@ -90,6 +93,26 @@ The following example shows how to use the `formatter` function with all four pa
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/formattimeline-cs1" %}
+
+## Show week number in timeline cell
+
+The Gantt Chart allows week numbers to be displayed in timeline cells using the [formatter](https://ej2.syncfusion.com/react/documentation/api/gantt/timelineTierSettings#formatter) property of the [timelineSettings.topTier](https://ej2.syncfusion.com/react/documentation/api/gantt/timelinesettingsmodel#toptier) configuration. The formatter function customizes the default timeline header text and displays values such as `Week 13`.
+
+The following example demonstrates how to display week numbers in the top-tier timeline cells while displaying individual days in the bottom-tier timeline.
+
+{% tabs %}
+{% highlight js tabtitle="index.jsx" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/timeline-cs5/app/index.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="index.tsx" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/timeline-cs5/app/index.tsx %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/timeline-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/timeline-cs5" %}
 
 ## Timeline cell width
 

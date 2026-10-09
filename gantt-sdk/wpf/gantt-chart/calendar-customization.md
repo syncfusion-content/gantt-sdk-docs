@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Calendar Customization in WPF Gantt control | Syncfusion
-description: Learn about Calendar Customization support in Syncfusion WPF Gantt control, its elements and more details.
+title: Calendar Customization in WPF Gantt | Syncfusion
+description: Learn about Calendar Customization support in Syncfusion WPF Gantt, including week start days, fiscal years, working hours, weekends, and holidays.
 platform: gantt-sdk
 control: Gantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Calendar Customization in WPF Gantt
@@ -517,7 +518,7 @@ The following image shows Customized Calender and Weekends:
 Customized Calender
 {:.caption}
 
-#### Samples Link
+### Samples Link
 
 To view samples:
 

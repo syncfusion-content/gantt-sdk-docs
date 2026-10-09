@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Persistence in ASP.NET Core Kanban Component
-description: Learn here all about Persistence in Syncfusion ASP.NET Core Kanban component of Syncfusion Essential JS 2 and more.
+title: State Persistence in ASP.NET Core Kanban | Syncfusion
+description: Learn how to enable state persistence and save Kanban settings in Syncfusion ASP.NET Core Kanban component.
+keywords: asp-net-core kanban persistence, syncfusion kanban, state management, settings
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/persistence
 platform: gantt-sdk
-control: Persistence
-publishingplatform: gantt-sdk
+control: Persistence - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-
-# State Persistence
+# State Persistence in ASP.NET Core Kanban
 
 State persistence refers to the Kanban state maintained in the browser's [`LocalStorage`](https://www.w3schools.com/html/html5_webstorage.asp#) even if the browser is refreshed or if you move to the next page within the browser.
 
-State persistence stores Kanban datasource, column or swimlane expand/collapse state in the local storage when the `enablePersistence` is defined as true.
-
-{% if page.publishingplatform == "aspnet-core" %}
+State persistence stores Kanban datasource, column or swimlane expand/collapse state in the local storage when the [`enablePersistence`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_EnablePersistence) is defined as true.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -25,17 +25,3 @@ State persistence stores Kanban datasource, column or swimlane expand/collapse s
 {% include code-snippet/gantt-sdk/asp-net-core/kanban/persistence/datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/persistence/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/kanban/persistence/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-

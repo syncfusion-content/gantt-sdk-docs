@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Cards | SfKanban | wpf | Syncfusion
-description: This section describes about cards in Syncfusion Essential Studio WPF Kanban (SfKanban) control, its elements and more. 
+title: Cards in WPF Kanban Board | Syncfusion
+description: Learn about Cards support in Syncfusion WPF Kanban Board using custom templates, card styles, data models, and template selectors.
 platform: gantt-sdk
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Cards in WPF Kanban (SfKanban) control
+# Cards in WPF Kanban Board
 
 The default elements of a card can be customized using the below properties of [`KanbanModel`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanModel.html).
 
@@ -80,7 +81,7 @@ sfKanban.IndicatorColorPalette = indicatorColorPalette;
 
 ## Customizing kanban cards
 
-The [`CardStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardStyle) property customizes the kanban cards. The following properties of [`CardStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardStyle) are used to customize its appearance:
+The [`CardStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardStyle) property customizes the cards. The following properties of [`CardStyle`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardStyle) are used to customize its appearance
 
 * [`Background`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanCardStyle.html#Syncfusion_UI_Xaml_Kanban_KanbanCardStyle_Background) - Changes the background color of a card.
 * [`BorderBrush`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanCardStyle.html#Syncfusion_UI_Xaml_Kanban_KanbanCardStyle_BorderBrush) - Changes the border brush of a card.
@@ -192,7 +193,7 @@ An interactive tooltip provides additional details about the cards on hovering t
 
 ### Enable tooltip for cards
 
-To enable tooltip for the kanban cards, use [IsToolTipEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) property of [SfKanban](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html). By default, [IsToolTipEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) is set to `false.` To provide users with additional information or context about cards, simply set this property to `true.`
+To enable tooltip for the cards, use [IsToolTipEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) property of [SfKanban](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html). By default, [IsToolTipEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) is set to `false.` To provide users with additional information or context about cards, simply set this property to `true.`
 
 {% tabs %}
 {% highlight XAML hl_lines="2" %}
@@ -411,3 +412,102 @@ public class ViewModel
 
 N>
 * This property will only be applicable when [IsToolTipEnabled](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IsToolTipEnabled) is set to `true.`
+
+## Card selection
+
+The SfKanban control supports selecting a single card or multiple cards at a time and performing drag-and-drop operations on the selection. The selection mode is configured through the [CardSelectionType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardSelectionType) property. The [CardSelectionType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardSelectionType) property accepts the values [Single](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanCardSelectionType.html#Syncfusion_UI_Xaml_Kanban_KanbanCardSelectionType_Single), [Multiple](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanCardSelectionType.html#Syncfusion_UI_Xaml_Kanban_KanbanCardSelectionType_Multiple) and [None](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanCardSelectionType.html#Syncfusion_UI_Xaml_Kanban_KanbanCardSelectionType_None).
+
+### Single card selection
+
+The [CardSelectionType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardSelectionType) property is set to [Single](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanCardSelectionType.html#Syncfusion_UI_Xaml_Kanban_KanbanCardSelectionType_Single) when only one card needs to be selected at any given time. With this mode, selecting a different card automatically clears the previous selection, keeping the focus on a single task.
+
+{% tabs %}
+{% highlight XAML hl_lines="2" %}
+
+<kanban:SfKanban x:Name="kanban"
+                 CardSelectionType="Single"
+                 ItemsSource="{Binding TaskDetails}">
+    <kanban:SfKanban.DataContext>
+        <local:ViewModel/>
+    </kanban:SfKanban.DataContext>
+</kanban:SfKanban>
+
+{% endhighlight %}
+{% highlight C# hl_lines="1" %}
+
+this.kanban.CardSelectionType = KanbanCardSelectionType.Single;
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
+
+{% endhighlight %}
+{% endtabs %}
+
+### Multiple card selection
+
+The [CardSelectionType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardSelectionType) property is set to [Multiple](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanCardSelectionType.html#Syncfusion_UI_Xaml_Kanban_KanbanCardSelectionType_Multiple) to enable selecting more than one card at a time. The control supports the following keyboard and mouse interactions for building a selection:
+
+- Use <kbd>Ctrl</kbd> + <kbd>Click</kbd> to add or remove an individual card from the current selection.
+- Use <kbd>Shift</kbd> + <kbd>Click</kbd> to select a range of cards within the same column.
+
+{% tabs %}
+{% highlight XAML hl_lines="2" %}
+
+<kanban:SfKanban x:Name="kanban"
+                 CardSelectionType="Multiple"
+                 ItemsSource="{Binding TaskDetails}">
+    <kanban:SfKanban.DataContext>
+        <local:ViewModel/>
+    </kanban:SfKanban.DataContext>
+</kanban:SfKanban>
+
+{% endhighlight %}
+{% highlight C# hl_lines="1" %}
+
+this.kanban.CardSelectionType = KanbanCardSelectionType.Multiple;
+this.kanban.ItemsSource = new ViewModel().TaskDetails;
+
+{% endhighlight %}
+{% endtabs %}
+
+### Multi-card drag and drop
+
+When [CardSelectionType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardSelectionType) is set to [Multiple](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanCardSelectionType.html#Syncfusion_UI_Xaml_Kanban_KanbanCardSelectionType_Multiple), the entire selection can be dragged and dropped as a single operation. This enables bulk-moving related work items between stages without losing their relative order.
+
+The following behaviors are supported for multi-card drag and drop:
+
+- Moves every selected card in a single drag operation.
+- Preserves the relative order of the selected cards after the drop.
+- Supports moving cards between columns and across swimlanes.
+- Validates workflow restrictions for all selected cards before completing the drop operation.
+
+![wpf-kanban-board-multi-card-selection](SfKanban_images/wpf-kanban-board-multi-card-selection.gif)
+
+N> Multi-card drag and drop is enabled only when [CardSelectionType](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardSelectionType) is set to [Multiple](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanCardSelectionType.html#Syncfusion_UI_Xaml_Kanban_KanbanCardSelectionType_Multiple). All selected cards are moved together in a single drag operation, and the relative order of the selected cards is preserved after the drop. If the drop target violates a [Workflows](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Workflows) restriction for any card in the selection, the entire drag-and-drop operation is canceled.
+
+### Selected card in WPF Kanban control
+
+You can customize the appearance of a selected card in the Kanban control using the [SelectedBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanCardStyle.html#Syncfusion_UI_Xaml_Kanban_KanbanCardStyle_SelectedBorderBrush) property of [KanbanCardStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanCardStyle.html). This property enables you to visually highlight the selected card by changing its border color. Additionally, you can customize the card's border color when the mouse pointer hovers over it by using the [HoverBorderBrush](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanCardStyle.html#Syncfusion_UI_Xaml_Kanban_KanbanCardStyle_HoverBorderBrush) property of [KanbanCardStyle](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.KanbanCardStyle.html).
+
+The [GetSelectedCards](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_GetSelectedCards) method returns the collection of cards that are currently selected in the Kanban board.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<kanban:SfKanban.CardStyle>
+    <kanban:KanbanCardStyle SelectedBorderBrush="Blue"  HoverBorderBrush="LightGray">
+    </kanban:KanbanCardStyle>
+</kanban:SfKanban.CardStyle>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+kanban.CardStyle = new KanbanCardStyle()
+{
+    SelectedBorderBrush = new SolidColorBrush(Colors.Blue),
+    HoverBorderBrush = new SolidColorBrush(Colors.LightGray)
+};
+
+{% endhighlight %}
+
+{% endtabs %}

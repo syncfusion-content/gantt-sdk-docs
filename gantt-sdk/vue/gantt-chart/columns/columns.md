@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Columns in Vue Gantt Chart Component | Syncfusion
-description: Learn here all about columns in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Columns
+title: Columns in Vue Gantt Chart | Syncfusion
+description: Learn how to work with columns in Syncfusion Vue Gantt Chart including configuration, customization, and data binding.
+keywords: vue gantt columns, column configuration, column mapping, field binding, column customization, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/columns/columns
 platform: gantt-sdk
+control: Columns - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Columns in Vue Gantt Chart Component
+# Columns with Field Mapping and Formatting in Vue Gantt Chart
 
 Columns display information from the bound data source, and you can edit column values to update task details through the TreeGrid. Operations such as sorting, filtering, and searching can be performed based on column definitions. To display a Gantt Chart column, the [field](https://ej2.syncfusion.com/vue/documentation/api/gantt/column#field) property should be mapped from the data source to the column.
 
@@ -51,7 +54,7 @@ The column header text can be defined using the [headerText](https://ej2.syncfus
 
 ## Format
 
-To format cell values based on a specific culture, use the [columns.format](https://ej2.syncfusion.com/vue/documentation/api/gantt/column#format) property. The Gantt Chart component uses the [Internationalization](../../common/internationalization) library to format `number` and `date` values.
+To format cell values based on a specific culture, use the [columns.format](https://ej2.syncfusion.com/vue/documentation/api/gantt/column#format) property. The Gantt Chart component uses the [Internationalization](https://ej2.syncfusion.com/vue/documentation/common/internationalization) library to format `number` and `date` values.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -168,3 +171,24 @@ Gantt Chart columns support the following types:
 
 > If `type` is not defined, it is inferred from the first record of the [dataSource](https://ej2.syncfusion.com/vue/documentation/api/gantt#datasource).  
 > If the first record contains a null or blank value, you must explicitly define the column `type`.
+
+## Serial number column
+
+The **Serial Number** feature automatically generates sequential row numbers for records displayed in the Gantt Chart. To enable this feature, set the [enableSerialNumber](https://ej2.syncfusion.com/vue/documentation/api/gantt#enableserialnumber) property to **true**. Additionally, you need to define a dedicated column in the [columns](https://ej2.syncfusion.com/vue/documentation/api/gantt#columns) configuration with its [field](https://ej2.syncfusion.com/vue/documentation/api/gantt/column#field) property set as **SerialNumber** to display the generated serial numbers. When enabled, serial numbers are assigned based on the current visible row order without requiring a dedicated field in the data source.
+
+Serial numbers are automatically recalculated whenever the visible row sequence changes. This includes operations such as filtering, searching, sorting, expanding or collapsing parent tasks, indenting or outdenting tasks, adding, editing, or deleting records, row drag-and-drop, and data refresh. As a result, the serial number column always reflects the latest row order currently displayed in the Gantt Chart.
+
+The feature works consistently with hierarchical data and updates the numbering across all visible records, ensuring that users can easily identify and reference rows regardless of changes made to the task hierarchy or displayed data set.
+
+The following example demonstrates how to enable the auto-generated Serial Number column in the Gantt Chart:
+
+{% tabs %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
+{% include code-snippet/gantt-sdk/vue/gantt-chart/serialnumber-cs1/app-composition.vue %}
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+{% include code-snippet/gantt-sdk/vue/gantt-chart/serialnumber-cs1/app.vue %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/serialnumber-cs1" %}

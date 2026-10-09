@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Editing tasks in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Editing Tasks in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Editing Tasks in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to edit tasks in Syncfusion ASP.NET Core Gantt Chart with inline editing, dialog editing, and taskbar editing options.
+keywords: asp.net core gantt edit tasks, task editing, inline editing, edit dialog, edit mode, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managing-tasks/editing-tasks
 platform: gantt-sdk
-control: Managing Tasks
-publishingplatform: gantt-sdk
+control: Managing Tasks - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK/overview
 ---
 
-
-# Editing tasks in gantt control
+# Editing Task Properties and Information in ASP.NET Core Gantt Chart
 
 The editing feature can be enabled in the Gantt control by enabling the [`EditSettings.AllowEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html#Syncfusion_EJ2_Gantt_GanttEditSettings_AllowEditing) and [`EditSettings.AllowTaskbarEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html#Syncfusion_EJ2_Gantt_GanttEditSettings_AllowTaskbarEditing) properties.
 
@@ -25,8 +27,6 @@ By setting the edit mode to auto using the [`EditSettings.Mode`](https://help.sy
 
 The following code example shows you how to enable the cell editing in Gantt control.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/enableCellEditing/tagHelper %}
@@ -36,35 +36,19 @@ The following code example shows you how to enable the cell editing in Gantt con
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/enableCellEditing/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="EnableCellEditing.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/enableCellEditing/enableCellEditing.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 N> When the edit mode is set to `Auto`, on performing double-click action on TreeGrid side, the cells will be changed to editable mode and on performing double-click action on chart side, the edit dialog will appear for editing the task details.
 
-![Alt text](images/enableCellEditing1.png)
+![Alt text](../images/enableCellEditing1.png)
 
 double click action on TreeGrid side.
 
-![Alt text](images/enableCellEditing2.png)
+![Alt text](../images/enableCellEditing2.png)
 
 double click action on chart side.
 
 ## Dialog editing
 
 Modify the task details through the edit dialog by setting the edit mode to `Dialog`.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -75,29 +59,13 @@ Modify the task details through the edit dialog by setting the edit mode to `Dia
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/enableDialogEditing/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="EnableDialogEditing.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/enableDialogEditing/enableDialogEditing.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 N> In dialog editing mode, the edit dialog appears when performing double-click action on both TreeGrid or Gantt chart sides.
 
-![Alt text](images/enableDialogEditing.png)
+![Alt text](../images/enableDialogEditing.png)
 
 ### Sections or tabs in dialog
 
 In the Gantt dialog, you can define the required tabs or editing sections using the [`AddDialogFields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AddDialogFields) and [`EditDialogFields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EditDialogFields) properties. Every tab is defined using the [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.DialogFieldType.html) property.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -108,25 +76,11 @@ In the Gantt dialog, you can define the required tabs or editing sections using 
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/add-edit-dialogtab/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Add-edit-dialogtab.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/add-edit-dialogtab/add-edit-dialogtab.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-![Alt text](images/add-edit-dialogtab.png)
+![Alt text](../images/add-edit-dialogtab.png)
 
 Tabs in Edit Dialog
 
-![Alt text](images/add-dialogtab.png)
+![Alt text](../images/add-dialogtab.png)
 
 Tabs in Add Dialog
 
@@ -135,8 +89,6 @@ Tabs in Add Dialog
 In the Gantt dialog, you can make only specific data source fields visible for editing by using the [`AddDialogFields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AddDialogFields) and [`EditDialogFields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EditDialogFields) properties. The data fields are defined with `Type` and `Fields` properties.
 
 N> You can also define the custom fields in the add/edit dialog General tab using the `Fields` property.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -147,23 +99,9 @@ N> You can also define the custom fields in the add/edit dialog General tab usin
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/customfields/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Customfields.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/customfields/customfields.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 The following screenshot show the output of above code example.
 
-![Alt text](images/customfields.png)
+![Alt text](../images/customfields.png)
 
 ## Task dependencies
 
@@ -177,8 +115,6 @@ You can update the task dependencies using the following ways:
 
 The following code example demonstrates how to enable task dependency editing in the Gantt chart using the [`EditSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EditSettings) property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/mouse-interactions/tagHelper %}
@@ -187,20 +123,6 @@ The following code example demonstrates how to enable task dependency editing in
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/mouse-interactions/mouse-interactions.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/mouse-interactions/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Mouse-interactions.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/mouse-interactions/mouse-interactions.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ![Alt text](../images/mouse-interactions.png)
 
@@ -218,11 +140,9 @@ N> When the edit mode is set to `Auto`, on performing double-click action on Tre
 
 ## Update task values using method
 
-Tasks value can be dynamically updated by using the `updateRecordById` method. You can call this method on any custom action. The following code example shows how to use this method to update a task.
+Tasks value can be dynamically updated by using the `updateRecordByID` method. You can call this method on any custom action. The following code example shows how to use this method to update a task.
 
-N> Using the `updateRecordById` method, you cannot update the task ID value.
-
-{% if page.publishingplatform == "aspnet-core" %}
+N> Using the `updateRecordByID` method, you cannot update the task ID value.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -232,15 +152,3 @@ N> Using the `updateRecordById` method, you cannot update the task ID value.
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/updateRecordById/updateRecordById.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/updateRecordById/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="UpdateRecordById.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/editing/updateRecordById/updateRecordById.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

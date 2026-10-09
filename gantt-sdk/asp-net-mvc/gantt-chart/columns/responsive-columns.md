@@ -1,30 +1,19 @@
 ---
 layout: post
-title: Responsive Columns in Syncfusion ASP.NET MVC Gantt Component
-description: Learn here all about Responsive Columns in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Responsive Columns in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn how to create responsive columns in Syncfusion ASP.NET MVC Gantt Chart that adapt to different screen sizes for optimal viewing experience.
+keywords: asp.net mvc gantt responsive columns, responsive design, mobile columns, column responsiveness, adaptive layout, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/columns/responsive-columns
 platform: gantt-sdk
-control: Columns
-publishingplatform: gantt-sdk
+control: Columns - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
+# Responsive Columns in ASP.NET MVC Gantt Chart
 
-# Responsive Columns in gantt control
-
-You can toggle the column visibility based on media queries, which are defined in the [`HideAtMedia`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_HideAtMedia). The [`HideAtMedia`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_HideAtMedia) accepts valid [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html).
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/hideAtMedia/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="HideAtMedia.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/hideAtMedia/hideAtMedia.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+You can toggle the column visibility based on media queries, which are defined in the [`HideAtMedia`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_HideAtMedia). The [`HideAtMedia`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_HideAtMedia) accepts valid [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html).
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -34,4 +23,3 @@ You can toggle the column visibility based on media queries, which are defined i
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/columns/hideAtMedia/hideAtMedia.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

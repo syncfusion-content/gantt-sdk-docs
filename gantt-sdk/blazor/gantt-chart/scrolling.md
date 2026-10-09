@@ -1,13 +1,17 @@
 ---
 layout: post
-title: Scrolling in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about scrolling in Syncfusion Blazor Gantt Chart component and much more.
+title: Scrolling in Blazor Gantt Chart | Syncfusion
+description: Learn how to configure scrolling in Syncfusion Blazor Gantt Chart with scroll-to-task, virtual scrolling, and horizontal scroll settings.
+keywords: blazor gantt scrolling, scroll to task, virtual scrolling, horizontal scroll, scroll settings, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/scrolling
 platform: gantt-sdk
-control: Gantt Chart
+control: Scrolling - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Scrolling in Blazor Gantt Chart component
+# Scroll Configuration and Programmatic Scrolling in Blazor Gantt Chart
 
 Scrolling in the Blazor Gantt Chart component enables smooth navigation across extensive project datasets and long timelines. It ensures taskbars, grid rows, and timeline cells remain visible within the viewport. Scrollbars automatically appear when content exceeds the component’s defined [Height](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Height) and [Width](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Width), supporting vertical scrolling for rows, horizontal scrolling for columns, and timeline scrolling for extended chart areas.
 
@@ -88,7 +92,7 @@ The following example sets fixed dimensions:
 
 ## Configure responsive scrolling
 
-You can make the Gantt Chart component responsive by setting its [Height](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Height) and [Width](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Width) to **100%**, allowing it to fully occupy the parent container. When height is set to **100%**, the parent element must have a defined `Height` to support proper layout rendering. The Gantt will automatically adjust when the container is resized.
+You can make the Blazor Gantt Chart component responsive by setting its [Height](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Height) and [Width](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_Width) to **100%**, allowing it to fully occupy the parent container. When height is set to **100%**, the parent element must have a defined `Height` to support proper layout rendering. The Gantt will automatically adjust when the container is resized.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}

@@ -1,16 +1,19 @@
 ---
 layout: post
-title: Getting started with React Kanban Component | Syncfusion
-description: Check out and learn about getting started with the React Kanban component from Syncfusion Essential JS 2.
-control: Getting started 
+title: Getting Started in React Kanban | Syncfusion
+description: Learn how to start using Syncfusion React Kanban with step-by-step setup instructions and essential component features.
+keywords: react kanban getting started, syncfusion kanban, install component, react setup
+canonical: https://www.syncfusion.com/gantt-sdk/react-kanban-board
 platform: gantt-sdk
+control: Getting Started - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Getting Started with React Kanban Component
+# Getting Started with React Kanban
 
-This article provides a step-by-step  guide to getting started with the Syncfusion<sup style="font-size:70%">&reg;</sup> React Kanban component.
+This article provides a step-by-step guide to getting started with the Syncfusion<sup style="font-size:70%">&reg;</sup> React Kanban component.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> React development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> React components with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/react/documentation/ai-coding-assistant/overview)
 
@@ -18,10 +21,10 @@ This article provides a step-by-step  guide to getting started with the Syncfusi
 
 Before you begin, ensure the following tools are installed:
 
-| Tool | Version | Purpose |
-|------|---------|---------|
-| [Node.js](https://nodejs.org/en) | 18.x or later (LTS recommended) | Required by Vite and npm |
-| [npm](https://www.npmjs.com/) | 9.x or later (bundled with Node.js) | Package manager |
+| Tool                             | Version                             | Purpose                  |
+| -------------------------------- | ----------------------------------- | ------------------------ |
+| [Node.js](https://nodejs.org/en) | 18.x or later (LTS recommended)     | Required by Vite and npm |
+| npm                              | 9.x or later (bundled with Node.js) | Package manager          |
 
 Verify your setup:
 
@@ -33,13 +36,14 @@ npm --version
 ## Overview
 
 The Kanban component is composed of:
+
 - **Cards**: tasks displayed on the board; mapped from a `dataSource` via `cardSettings`.
 - **Columns**: workflow stages; defined using `keyField` on each `ColumnDirective`.
 - **Swimlanes**: optional grouping of cards; configured with `swimlaneSettings`.
 
-> **Note on `keyField`:** The Kanban component's `keyField` property is the name of the field in the data source that categorizes cards (for example, `"Status"`). Each `ColumnDirective` also has its own `keyField` property, which is the *value* the column matches against. A card is rendered in a column when the card's `Status` value equals that column's `keyField`.
->
+> **Note on `keyField`:** The Kanban component's `keyField` property is the name of the field in the data source that categorizes cards (for example, `"Status"`). Each `ColumnDirective` also has its own `keyField` property, which is the _value_ the column matches against. A card is rendered in a column when the card's `Status` value equals that column's `keyField`.
 > The `cardSettings` property defines how each card is displayed. The two main sub-properties are:
+
 > - `headerField` — the data field used for the card header.
 > - `contentField` — the data field used for the card body.
 
@@ -62,7 +66,7 @@ npm install
 
 ### Adding Syncfusion<sup style="font-size:70%">&reg;</sup> packages
 
-Once you have created the React application, install the required Syncfusion<sup style="font-size:70%">&reg;</sup> React component package in the application. All Syncfusion<sup style="font-size:70%">&reg;</sup> React (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are published on the [npmjs](https://www.npmjs.com/~syncfusionorg) public registry.To install the Kanban component package, use the following command.
+Once you have created the React application, install the required Syncfusion<sup style="font-size:70%">&reg;</sup> React component package in the application. All Syncfusion<sup style="font-size:70%">&reg;</sup> React (Essential<sup style="font-size:70%">&reg;</sup> JS 2) packages are published on the [node package registry](https://www.npmjs.com/~syncfusionorg) public registry.To install the Kanban component package, use the following command.
 
 ```bash
 npm install @syncfusion/ej2-react-kanban
@@ -99,60 +103,127 @@ Create a new file named `src/datasource.ts` and define the following data source
 ```typescript
 export let kanbanData: Object[] = [
   {
-    Id: 1, Status: 'Open', Summary: 'Analyze the new requirements gathered from the customer.',
-    Type: 'Story', Priority: 'Low', Tags: 'Analyze,Customer', Estimate: 3.5,
-    Assignee: 'Nancy Davloio', RankId: 1
+    Id: 1,
+    Status: "Open",
+    Summary: "Analyze the new requirements gathered from the customer.",
+    Type: "Story",
+    Priority: "Low",
+    Tags: "Analyze,Customer",
+    Estimate: 3.5,
+    Assignee: "Nancy Davloio",
+    RankId: 1,
   },
   {
-    Id: 2, Status: 'InProgress', Summary: 'Improve application performance',
-    Type: 'Improvement', Priority: 'Normal', Tags: 'Improvement',
-    Estimate: 6, Assignee: 'Andrew Fuller', RankId: 1
+    Id: 2,
+    Status: "InProgress",
+    Summary: "Improve application performance",
+    Type: "Improvement",
+    Priority: "Normal",
+    Tags: "Improvement",
+    Estimate: 6,
+    Assignee: "Andrew Fuller",
+    RankId: 1,
   },
   {
-    Id: 3, Status: 'Open', Summary: 'Arrange a web meeting with the customer to get new requirements.',
-    Type: 'Others', Priority: 'Critical', Tags: 'Meeting',
-    Estimate: 5.5, Assignee: 'Janet Leverling', RankId: 2
+    Id: 3,
+    Status: "Open",
+    Summary: "Arrange a web meeting with the customer to get new requirements.",
+    Type: "Others",
+    Priority: "Critical",
+    Tags: "Meeting",
+    Estimate: 5.5,
+    Assignee: "Janet Leverling",
+    RankId: 2,
   },
   {
-    Id: 4, Status: 'InProgress', Summary: 'Fix the issues reported in the IE browser.',
-    Type: 'Bug', Priority: 'Release Breaker', Tags: 'IE',
-    Estimate: 2.5, Assignee: 'Janet Leverling', RankId: 2
+    Id: 4,
+    Status: "InProgress",
+    Summary: "Fix the issues reported in the IE browser.",
+    Type: "Bug",
+    Priority: "Release Breaker",
+    Tags: "IE",
+    Estimate: 2.5,
+    Assignee: "Janet Leverling",
+    RankId: 2,
   },
   {
-    Id: 5, Status: 'Testing', Summary: 'Fix the issues reported by the customer.',
-    Type: 'Bug', Priority: 'Low', Tags: 'Customer',
-    Estimate: 3.5, Assignee: 'Steven walker', RankId: 1
+    Id: 5,
+    Status: "Testing",
+    Summary: "Fix the issues reported by the customer.",
+    Type: "Bug",
+    Priority: "Low",
+    Tags: "Customer",
+    Estimate: 3.5,
+    Assignee: "Steven walker",
+    RankId: 1,
   },
   {
-    Id: 6, Status: 'Close', Summary: 'Arrange a web meeting with the customer to get the login page requirements.',
-    Type: 'Others', Priority: 'Low', Tags: 'Meeting',
-    Estimate: 2, Assignee: 'Michael Suyama', RankId: 1
+    Id: 6,
+    Status: "Close",
+    Summary:
+      "Arrange a web meeting with the customer to get the login page requirements.",
+    Type: "Others",
+    Priority: "Low",
+    Tags: "Meeting",
+    Estimate: 2,
+    Assignee: "Michael Suyama",
+    RankId: 1,
   },
   {
-    Id: 7, Status: 'Validate', Summary: 'Validate new requirements',
-    Type: 'Improvement', Priority: 'Low', Tags: 'Validation',
-    Estimate: 1.5, Assignee: 'Robert King', RankId: 1
+    Id: 7,
+    Status: "Validate",
+    Summary: "Validate new requirements",
+    Type: "Improvement",
+    Priority: "Low",
+    Tags: "Validation",
+    Estimate: 1.5,
+    Assignee: "Robert King",
+    RankId: 1,
   },
   {
-    Id: 8, Status: 'Close', Summary: 'Login page validation',
-    Type: 'Story', Priority: 'Release Breaker', Tags: 'Validation,Fix',
-    Estimate: 2.5, Assignee: 'Laura Callahan', RankId: 2
+    Id: 8,
+    Status: "Close",
+    Summary: "Login page validation",
+    Type: "Story",
+    Priority: "Release Breaker",
+    Tags: "Validation,Fix",
+    Estimate: 2.5,
+    Assignee: "Laura Callahan",
+    RankId: 2,
   },
   {
-    Id: 9, Status: 'Testing', Summary: 'Fix the issues reported in Safari browser.',
-    Type: 'Bug', Priority: 'Release Breaker', Tags: 'Fix,Safari',
-    Estimate: 1.5, Assignee: 'Nancy Davloio', RankId: 2
+    Id: 9,
+    Status: "Testing",
+    Summary: "Fix the issues reported in Safari browser.",
+    Type: "Bug",
+    Priority: "Release Breaker",
+    Tags: "Fix,Safari",
+    Estimate: 1.5,
+    Assignee: "Nancy Davloio",
+    RankId: 2,
   },
   {
-    Id: 10, Status: 'Close', Summary: 'Test the application in the IE browser.',
-    Type: 'Story', Priority: 'Low', Tags: 'Testing,IE',
-    Estimate: 5.5, Assignee: 'Margaret hamilt', RankId: 3
+    Id: 10,
+    Status: "Close",
+    Summary: "Test the application in the IE browser.",
+    Type: "Story",
+    Priority: "Low",
+    Tags: "Testing,IE",
+    Estimate: 5.5,
+    Assignee: "Margaret hamilt",
+    RankId: 3,
   },
   {
-    Id: 11, Status: 'Validate', Summary: 'Validate the issues reported by the customer.',
-    Type: 'Story', Priority: 'High', Tags: 'Validation,Fix',
-    Estimate: 1, Assignee: 'Andrew Fuller', RankId: 1
-  }
+    Id: 11,
+    Status: "Validate",
+    Summary: "Validate the issues reported by the customer.",
+    Type: "Story",
+    Priority: "High",
+    Tags: "Validation,Fix",
+    Estimate: 1,
+    Assignee: "Andrew Fuller",
+    RankId: 1,
+  },
 ];
 ```
 
@@ -161,6 +232,7 @@ export let kanbanData: Object[] = [
 Update `src/App.tsx` to import the data and render the Kanban component:
 
 {% raw %}
+
 ```typescript
 import { extend } from '@syncfusion/ej2-base';
 import { KanbanComponent, ColumnsDirective, ColumnDirective } from "@syncfusion/ej2-react-kanban";
@@ -185,6 +257,7 @@ function App() {
 }
 export default App;
 ```
+
 {% endraw %}
 
 ## Run the application
@@ -224,27 +297,27 @@ You can preview the following sample by clicking the **Preview Sample** button.
 {% include code-snippet/gantt-sdk/react/kanban/getting-started-key-field-cs3/app/datasource.jsx %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/kanban/getting-started-key-field-cs3" %}
 
 ## Troubleshooting
 
-| Issue | Possible cause | Fix |
-|-------|----------------|-----|
-| Dev server fails to start | Node.js version is too old | Upgrade to Node.js 18.x or later |
-| Port `5173` is already in use | Another process is using the port | Stop the other process, or run `npm run dev -- --port 3000` |
-| Styles are not being applied. | Theme CSS not imported | Verify all `@syncfusion/ej2-*/styles/*.css` imports are present in `src/App.css` and that `App.css` is imported in `App.tsx` |
-| "Module not found" errors | Dependencies not installed | Run `npm install` in the project root |
-| Cards missing from a column | Card `Status` value has no matching column `keyField` | Add a `ColumnDirective` whose `keyField` matches the missing `Status`, or update the data |
+| Issue                         | Possible cause                                        | Fix                                                                                                                          |
+| ----------------------------- | ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Dev server fails to start     | Node.js version is too old                            | Upgrade to Node.js 18.x or later                                                                                             |
+| Port `5173` is already in use | Another process is using the port                     | Stop the other process, or run `npm run dev -- --port 3000`                                                                  |
+| Styles are not being applied. | Theme CSS not imported                                | Verify all `@syncfusion/ej2-*/styles/*.css` imports are present in `src/App.css` and that `App.css` is imported in `App.tsx` |
+| "Module not found" errors     | Dependencies not installed                            | Run `npm install` in the project root                                                                                        |
+| Cards missing from a column   | Card `Status` value has no matching column `keyField` | Add a `ColumnDirective` whose `keyField` matches the missing `Status`, or update the data                                    |
 
 ## Version compatibility
 
-| Package | Tested version |
-|---------|----------------|
-| `@syncfusion/ej2-react-kanban` | Latest (as of July 2026) |
-| React | 18.x and 19.x |
-| TypeScript | 5.x (when using the `react-ts` template) |
-| Vite | 5.x and 6.x |
+| Package                        | Tested version                           |
+| ------------------------------ | ---------------------------------------- |
+| `@syncfusion/ej2-react-kanban` | Latest (as of July 2026)                 |
+| React                          | 18.x and 19.x                            |
+| TypeScript                     | 5.x (when using the `react-ts` template) |
+| Vite                           | 5.x and 6.x                              |
 
 To verify the installed version of the Kanban package, run:
 
@@ -254,8 +327,8 @@ npm list @syncfusion/ej2-react-kanban
 
 ## See also
 
-- [Kanban columns](./columns.md)
-- [Kanban data binding](./data-binding.md)
-- [Kanban dialog](./dialog.md)
-- [Kanban swimlane](./swimlane.md)
-- [Kanban priority](./priority.md)
+- [Kanban columns](https://help.syncfusion.com/gantt-sdk/react/kanban/columns)
+- [Kanban data binding](https://help.syncfusion.com/gantt-sdk/react/kanban/data-binding)
+- [Kanban dialog](https://help.syncfusion.com/gantt-sdk/react/kanban/dialog)
+- [Kanban swimlane](https://help.syncfusion.com/gantt-sdk/react/kanban/swimlane)
+- [Kanban priority](https://help.syncfusion.com/gantt-sdk/react/kanban/priority)

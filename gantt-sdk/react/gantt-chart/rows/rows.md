@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Rows in React Gantt Chart Component | Syncfusion
-description: Learn here all about rows in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Rows in React Gantt Chart | Syncfusion
+description: Learn how to configure and customize rows in Syncfusion React Gantt Chart with row height, alternate row styling, and row template support.
+keywords: react gantt rows, row height, row template, alternate row, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/rows/rows
 platform: gantt-sdk
-control: Rows
+control: Rows - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Rows in React Gantt Chart Component
+# Configuring and Customizing Rows in React Gantt Chart
 
 Each row typically represents a single record or item from a data source. Rows in a Gantt chart are used to present data in both tabular and timeline chart formats. Each row displays a set of values representing the fields of an individual data record. Rows allow you to interact with the data in the Gantt chart. You can select rows, edit cell values, perform taskbar editing in the chart side of the Gantt, perform sorting or filtering operations, and trigger events based on actions.
 
@@ -94,7 +97,7 @@ To customize rows in the chart section, the following methods are available:
 - `getRowByIndex`: Returns the HTML element of a chart row at a specific index.
 - `getChartRows`: Returns all chart row elements.
 
-The following example demonstrates how to use the `getRowByIndex` method of the `treegrid` object in the Gantt instance and the `getRowByIndex` method of the Gantt chart component to customize the appearance of a row within the [rowDataBound](https://ej2.syncfusion.com/react/documentation/gantt/events#rowdatabound) event of the Gantt chart.
+The following example demonstrates how to use the `getRowByIndex` method of the `treeGrid` object in the Gantt instance and the `getRowByIndex` method of the Gantt chart component to customize the appearance of a row within the [rowDataBound](https://ej2.syncfusion.com/react/documentation/gantt/events#rowdatabound) event of the Gantt chart.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
@@ -303,8 +306,8 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt chart provides severa
 
 ## See Also
 
-* [Render parent rows in collapsed state](https://ej2.syncfusion.com/react/documentation/gantt/columns/treecolumn#render-parent-rows-in-collapsed-state)  
-* [Retain expanded and collapsed state](https://ej2.syncfusion.com/react/documentation/gantt/columns/treecolumn#retain-expanded-and-collapsed-state) 
-* [Persist expanded collapsed state on page refresh using localStorage](https://ej2.syncfusion.com/react/documentation/gantt/columns/treecolumn#persist-expanded-and-collapsed-state-on-page-refresh-using-localstorage)
-* [Programmatically expand and collapse a row](https://ej2.syncfusion.com/react/documentation/gantt/columns/treecolumn#programmatically-expand-and-collapse-a-row)
-* [Expand and Collapse action events](https://ej2.syncfusion.com/react/documentation/gantt/columns/treecolumn#expand-and-collapse-action-events)
+* [Render parent rows in collapsed state](https://ej2.syncfusion.com/react/documentation/gantt/columns/tree-column#render-parent-rows-in-collapsed-state)  
+* [Retain expanded and collapsed state](https://ej2.syncfusion.com/react/documentation/gantt/columns/tree-column#retain-expandcollapse-state-on-initial-load) 
+* [Persist expanded collapsed state on page refresh using localStorage](https://ej2.syncfusion.com/react/documentation/gantt/columns/tree-column#persist-expandcollapse-state-across-page-refresh-using-localstorage)
+* [Programmatically expand and collapse a row](https://ej2.syncfusion.com/react/documentation/gantt/columns/tree-column#programmatically-expand-or-collapse-rows)
+* [Expand and Collapse action events](https://ej2.syncfusion.com/react/documentation/gantt/columns/tree-column#customize-expandcollapse-behavior-using-events)

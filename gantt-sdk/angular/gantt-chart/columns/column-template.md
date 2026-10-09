@@ -1,18 +1,23 @@
 ---
 layout: post
-title: Column Template in Angular Gantt Chart Component | Syncfusion
-description: Learn here all about column template in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Column Template in Angular Gantt Chart | Custom Content | Syncfusion
+description: Learn how to use column templates in Syncfusion Angular Gantt Chart to display custom elements like images, buttons, or HTML in cells instead of field values.
+keywords: angular gantt column template, custom cell content, template column, html template, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/columns/column-template
 platform: gantt-sdk
-control: Column template 
+control: Column Template - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Column Template in Angular Gantt Chart Component
+# Column Templates with Custom Cell Content in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component provides a [template](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#template) option that allows you to display custom elements in a column instead of the field value. This can be useful when you need to display images, buttons, or other custom content within a column.
 
-> When using template columns, they are primarily meant for rendering custom content and may not provide built-in support for Gantt actions like sorting, filtering, editing unless [field](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#field) property of the column is specified.
+## Important Note on Template Columns
+
+> **Template columns are primarily meant for rendering custom content.** By default, they may not provide built-in support for Gantt actions like sorting, filtering, and editing. To enable these features for template columns, you must define the [field](https://ej2.syncfusion.com/angular/documentation/api/gantt/column#field) property of the column. When the field property is specified, the column will support all standard Gantt operations.
 
 ## Render image in a column
 
@@ -559,7 +564,7 @@ export class AppComponent implements OnInit {
 
 ## Render a component in the template property using event
 
-You can render a component inside a Gantt chart cell by setting the `template` property and using the [queryCellInfo](https://helpej2.syncfusion.com/angular/documentation/gantt/events#querycellinfo) event to display it before the cell is rendered.
+You can render a component inside a Gantt chart cell by setting the `template` property and using the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querycellinfo) event to display it before the cell is rendered.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -574,3 +579,5 @@ You can render a component inside a Gantt chart cell by setting the `template` p
 {% endtabs %}
   
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/columns/render-template-cs6" %}
+
+> When using an Angular `ng-template` in a Gantt Chart column, the template may be evaluated multiple times during Angular change detection. This is Angular's default behavior and is not specific to the Gantt Chart component. To optimize performance, avoid complex logic or expensive operations inside templates. Instead, pre compute values in the component class and keep template logic simple.

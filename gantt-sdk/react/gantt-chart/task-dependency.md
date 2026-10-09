@@ -1,16 +1,23 @@
 ---
 layout: post
-title: Task Dependency in React Gantt Chart Component | Syncfusion
-description: Learn how to configure task dependencies in the Syncfusion React Gantt Chart component for establishing relationships, managing offsets, and handling validation.
+title: Task Dependency in React Gantt Chart | Syncfusion
+description: Learn how to configure task dependencies in Syncfusion React Gantt Chart to establish task relationships, set offsets, and handle validation.
+keywords: react gantt task dependency, predecessor, finish-to-start, lag offset, dependency validation, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/task-dependency
 platform: gantt-sdk
-control: Task dependency
+control: Task Dependency - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Task Dependency in React Gantt Chart Component
+# Managing Task Dependencies in React Gantt Chart
 
-Task dependency in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component establishes relationships between tasks, affecting scheduling where changes to predecessors impact successors. Dependencies are categorized into four types—Start to Start (SS), Start to Finish (SF), Finish to Start (FS), and Finish to Finish (FF)—mapped via the [taskFields.dependency](https://ej2.syncfusion.com/react/documentation/api/gantt/taskFields#dependency) property in the data source. Parent dependencies are enabled by default with [allowParentDependency](https://ej2.syncfusion.com/react/documentation/api/gantt#allowparentdependency) set to **true**, allowing relationships between parent-parent, child-child, parent-child, and child-parent tasks. Offsets support day, hour, or minute units for precise timing, and validation modes handle conflicts during editing via the [actionBegin](https://ej2.syncfusion.com/react/documentation/api/gantt#actionbegin) event. Connector lines are customized using [connectorLineWidth](https://ej2.syncfusion.com/react/documentation/api/gantt#connectorlinewidth) and [connectorLineBackground](https://ej2.syncfusion.com/react/documentation/api/gantt#connectorlinebackground), with the `queryTaskbarInfo` event enabling dynamic styling. Public methods like [addPredecessor](https://ej2.syncfusion.com/react/documentation/api/gantt#addpredecessor) and [removePredecessor](https://ej2.syncfusion.com/react/documentation/api/gantt#removepredecessor) allow programmatic management, ensuring accurate visualization with ARIA labels for accessibility and responsive scaling for mobile views.
+Task dependency in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component establishes relationships between tasks, affecting scheduling where changes to predecessors impact successors. Dependencies are categorized into four types—Start to Start (SS), Start to Finish (SF), Finish to Start (FS), and Finish to Finish (FF)—mapped via the [taskFields.dependency](https://ej2.syncfusion.com/react/documentation/api/gantt/taskFields#dependency) property in the data source.
+
+Parent dependencies are enabled by default with [allowParentDependency](https://ej2.syncfusion.com/react/documentation/api/gantt#allowparentdependency) set to **true**, allowing relationships between parent-parent, child-child, parent-child, and child-parent tasks. Offsets support day, hour, or minute units for precise timing, and validation modes handle conflicts during editing via the [actionBegin](https://ej2.syncfusion.com/react/documentation/api/gantt#actionbegin) event.
+
+Connector lines are customized using [connectorLineWidth](https://ej2.syncfusion.com/react/documentation/api/gantt#connectorlinewidth) and [connectorLineBackground](https://ej2.syncfusion.com/react/documentation/api/gantt#connectorlinebackground), with the `queryTaskbarInfo` event enabling dynamic styling. Public methods like [addPredecessor](https://ej2.syncfusion.com/react/documentation/api/gantt#addpredecessor) and [removePredecessor](https://ej2.syncfusion.com/react/documentation/api/gantt#removepredecessor) allow programmatic management, ensuring accurate visualization with ARIA labels for accessibility and responsive scaling for mobile views.
 
 ## Configure task dependencies
 
@@ -38,8 +45,11 @@ The following example establishes dependencies:
         
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs1" %}
 
-> * Dependencies between tasks under the same parent are not supported.
-> * Dependencies between tasks in different parent groups are supported when the `allowParentDependency` property is enabled.
+> - Dependencies between tasks under the same parent are not supported.
+> - Dependencies between tasks in different parent groups are supported when the `allowParentDependency` property is enabled.
+> - The format of the dependency string depends on the data type of the [id](https://ej2.syncfusion.com/react/documentation/api/gantt/taskfields#id) field mapped in the data source:
+>   - If the `id` field is an **integer**, the compact format (for example, `3FS`) can be used without a space between the `id` and the dependency type.
+>   - If the `id` field is a **string** or **GUID**, the format `[id] [PredecessorType]` is mandatory, with a single space between the `id` and the predecessor type (for example, `TASK-001 FS`). The Gantt Chart parses the two parts based on this space, so the space is required to correctly identify the predecessor type.
 
 ## Understand task relationship types
 
@@ -86,11 +96,11 @@ This code sets offsets like '2FS+3h', adjusting taskbars accordingly.
 
 ## Predecessor offset synchronization on initial load
 
-The [autoUpdatePredecessorOffset](https://ej2.syncfusion.com/react/documentation/api/gantt/index-default#autoupdatepredecessoroffset) property specifies whether the Gantt Chart automatically adjusts and synchronizes the predecessor offset values (e.g., "+2", "-1d") in the predecessor column display and the underlying data during initial data load/binding, so they match the actually rendered taskbar positions and dependency lines.
+The [autoUpdatePredecessorOffset](https://ej2.syncfusion.com/react/documentation/api/gantt/index-default#autoupdatepredecessoroffset) property specifies whether the Gantt Chart automatically adjusts and synchronizes the predecessor offset values (e.g., "+2", "-1d") during initial data load. When enabled, offset values in the predecessor column display and underlying data match the actually rendered taskbar positions and dependency lines.
 
-- When **enabled**: During the initial data binding/load, the Gantt recalculates the offset portions of predecessor strings based on the final rendered dates after applying calendar rules, weekends, holidays, and working times. The predecessor column in the grid and the corresponding data field values are updated to reflect these accurate offsets - preventing visual or data mismatch between what is displayed and what was actually used for rendering dependency lines - without affecting task dates, durations, or triggering any scheduling/validation logic.
+- When **enabled**: During the initial data binding/load, the Gantt recalculates the offset portions of predecessor strings based on the final rendered dates after applying calendar rules, weekends, holidays, and working times. The predecessor column in the grid and the corresponding data field values are updated to reflect these accurate offsets, preventing visual or data mismatch between what is displayed and what was used for rendering. Task dates, durations, and scheduling logic remain unaffected.
 
-- When **disabled**: The predecessor column displays exactly the offset values provided in the original data source, even if they no longer match the rendered dependency lines due to calendar adjustments. This can result in visual inconsistencies where the grid shows one offset (e.g., "5FS+0") while the drawn arrow connects tasks with a different effective offset (e.g., equivalent to +2 due to non-working days). No automatic correction occurs during load.
+- When **disabled**: The predecessor column displays exactly the offset values provided in the original data source, even if they no longer match the rendered dependency lines due to calendar adjustments. This can result in visual inconsistencies where the grid shows one offset (e.g., "5FS+0") while the drawn arrow represents a different effective offset. No automatic correction occurs during load.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
@@ -256,6 +266,41 @@ By default, Gantt task dates are validated based on predecessor values. To disab
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/predecessor-cs9" %}
+
+## Manage specific dependency types
+
+The Gantt Chart supports the [allowedDependencyTypes](https://ej2.syncfusion.com/react/documentation/api/gantt/index-default#alloweddependencytypes) property to control which dependency relationship types can participate in dependency processing during data loading and editing operations.
+
+Only the dependency types included in the configured `allowedDependencyTypes` collection are processed and maintained. Dependency types that are not included in the collection are ignored during data loading and prevented during editing actions. This behavior applies to all CRUD operations.
+
+The supported dependency types are:
+
+- **FS** – Finish-to-Start
+- **SS** – Start-to-Start
+- **FF** – Finish-to-Finish
+- **SF** – Start-to-Finish
+
+**For example:**
+
+The following example allows only the Start to Finish (SF) dependency type. This code configures `allowedDependencyTypes: ['SF']` so that only **SF** relationships can be created during loading and editing, with all other dependency types disabled.
+
+{% tabs %}
+{% highlight js tabtitle="index.jsx" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/allowedDependencyTypes-cs1/app/index.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="index.tsx" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/allowedDependencyTypes-cs1/app/index.tsx %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/allowedDependencyTypes-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/allowedDependencyTypes-cs1" %}
+
+>**NOTE**
+> By default, all dependency types are allowed when the `allowedDependencyTypes` property is not specified.
+> Specifying an empty collection (`allowedDependencyTypes: []`) is equivalent to not defining the `allowedDependencyTypes` property. In both cases, all supported dependency types are allowed. The Gantt processes all supported dependency types during data loading and allows all dependency relationship types to be created or modified during editing operations.
 
 ## Limitation
 

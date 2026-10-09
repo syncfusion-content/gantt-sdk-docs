@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Row drag and drop in React Gantt Chart Component | Syncfusion
-description: Learn here all about row drag and drop in Syncfusion React Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Drag and Drop
+title: Row Drag and Drop in React Gantt Chart | Syncfusion
+description: Learn how to reorder tasks using row drag and drop in Syncfusion React Gantt Chart to reorganize project hierarchies interactively.
+keywords: react gantt row drag drop, reorder rows, drag rows, task reorder, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/rows/drag-and-drop
 platform: gantt-sdk
+control: Row Drag and Drop - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Row Drag and Drop in React Gantt Chart Component
+# Reordering Tasks with Row Drag and Drop in React Gantt Chart
 
 The [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component includes built-in support for row drag and drop, enabling rows to be rearranged within the Gantt chart or dropped into custom components. 
 
@@ -410,6 +413,8 @@ In the example, a [click](https://ej2.syncfusion.com/react/documentation/api/but
 {% endtabs %} 
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/rows-cs9" %}
+
+> **Note:** Dependency links are not automatically updated when rows are reordered. Since task IDs remain unchanged, review the predecessor relationships after a bulk reorder to ensure they are still valid.
 
 ## Customize the drag and drop action
 

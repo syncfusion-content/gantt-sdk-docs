@@ -1,34 +1,21 @@
 ---
 layout: post
-title: Persistence in JavaScript Kanban control | Syncfusion
-description: Learn here all about Persistence in Syncfusion JavaScript Kanban control of Syncfusion Essential JS 2 and more.
+title: State Persistence in JavaScript Kanban | Syncfusion
+description: Learn how to enable state persistence and save Kanban settings in Syncfusion JavaScript Kanban component.
+keywords: javascript kanban persistence, syncfusion kanban, state management, settings
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/kanban/persistence
 platform: gantt-sdk
-control: Persistence 
-publishingplatform: gantt-sdk
+control: Persistence - Kanban
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Persistence in JavaScript Kanban control
+# State Persistence in JavaScript Kanban
 
 State persistence refers to the Kanban state maintained in the browser's [`localStorage`](https://www.w3schools.com/html/html5_webstorage.asp#) even if the browser is refreshed or if you move to the next page within the browser.
 
-State persistence stores Kanban datasource, column and swimlane expand/collapse state in the local storage when the [`enablePersistence`](../api/kanban/#enablepersistence) is defined as true.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/gantt-sdk/javascript/kanban/persistence-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/gantt-sdk/javascript/kanban/persistence-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/kanban/persistence-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+State persistence stores Kanban datasource, column and swimlane expand/collapse state in the local storage when the [`enablePersistence`](https://ej2.syncfusion.com/javascript/documentation/api/kanban#enablePersistence) is defined as true.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -40,4 +27,4 @@ State persistence stores Kanban datasource, column and swimlane expand/collapse 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/kanban/persistence-cs1" %}
-{% endif %}
+

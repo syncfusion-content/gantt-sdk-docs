@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Maintaining data in server in JavaScript Gantt control | Syncfusion
-description: Learn here all about Maintaining data in server in Syncfusion JavaScript Gantt control of Syncfusion Essential JS 2 and more.
+title: Maintain Data on Server in JavaScript Gantt Chart | Syncfusion
+description: Learn to maintain task data on server in Syncfusion JavaScript Gantt Chart with synchronization, CRUD operations, and data persistence strategies.
+keywords: javascript gantt maintain server data, data synchronization, crud operations, server sync, persistance, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/managing-tasks/maintaining-data-in-server
 platform: gantt-sdk
-control: Maintaining data in server 
-publishingplatform: gantt-sdk
+control: Server-Side Data - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Maintaining data in server in JavaScript Gantt control
+# Maintaining Data Persistence on Server in JavaScript Gantt Chart
 
 All the modified data in Gantt control can be maintained in the database using RESTful web services.
 
@@ -21,36 +23,34 @@ In the below section, we have explained how to get the edited data details on th
 
 In Gantt, we can fetch data from SQL database using `ADO.NET` Entity Data Model and update the changes on CRUD action to the server by using `DataManager` support. To communicate with the remote data we are using `UrlAdaptor` of DataManager property to call the server method and get back resultant data in JSON format. We can know more about `UrlAdaptor` from [here](https://ej2.syncfusion.com/javascript/documentation/data/adaptors/?no-cache=1).
 
-> Please refer the [link](https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/models-data/creating-model-classes-with-the-entity-framework-cs) to create the `ADO.NET` Entity Data Model in Visual studio,
+> Please refer to the [link](https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/models-data/creating-model-classes-with-the-entity-framework-cs) to create the `ADO.NET` Entity Data Model in Visual Studio.
 
 We can define data source for Gantt as instance of DataManager using `url` property of DataManager. Please Check the below code snippet to assign data source to Gantt.
 
 ```ts
-
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
+import { Gantt } from "@syncfusion/ej2-gantt";
+import { DataManager, UrlAdaptor } from "@syncfusion/ej2-data";
 
 let dataSource: DataManager = new DataManager({
-    url: '/Home/UrlDatasource',
-    adaptor: new UrlAdaptor
+  url: "/Home/UrlDatasource",
+  adaptor: new UrlAdaptor(),
 });
 
 let gantt: Gantt = new Gantt({
-    dataSource: dataSource,
-    height: '450px',
-    treeColumnIndex: 1,
-    taskFields: {
-        id: 'TaskId',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        progress: 'Progress',
-        duration: 'Duration',
-        dependency: 'Predecessor',
-        child: 'SubTasks'
-    }
+  dataSource: dataSource,
+  height: "450px",
+  treeColumnIndex: 1,
+  taskFields: {
+    id: "TaskId",
+    name: "TaskName",
+    startDate: "StartDate",
+    progress: "Progress",
+    duration: "Duration",
+    dependency: "Predecessor",
+    child: "SubTasks",
+  },
 });
-gantt.appendTo('#Gantt');
-
+gantt.appendTo("#Gantt");
 ```
 
 ```ts
@@ -67,32 +67,30 @@ public ActionResult UrlDatasource(DataManagerRequest dm)
 We can also do CRUD operations over Gantt data and save the changes to database. By using `BatchUrl` property of DataManager, we can communicate with the controller method to update the data source on CRUD operation. In gantt CRUD actions on task are dependent with other tasks. For example on editing the child record on chart side, corresponding parent item also will get affect and predecessor dependency task as well get affected. So in Gantt all the CRUD operations are considered to be batch editing where you will get all the affected records as collection. Please check the below code snippet to assign controller method to this property.
 
 ```ts
-
-import { Gantt } from '@syncfusion/ej2-gantt';
-import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
+import { Gantt } from "@syncfusion/ej2-gantt";
+import { DataManager, UrlAdaptor } from "@syncfusion/ej2-data";
 
 let dataSource: DataManager = new DataManager({
-    url: '/Home/UrlDatasource',
-    adaptor: new UrlAdaptor,
-    batchUrl: "Home/BatchSave"
+  url: "/Home/UrlDatasource",
+  adaptor: new UrlAdaptor(),
+  batchUrl: "Home/BatchSave",
 });
 
 let gantt: Gantt = new Gantt({
-    dataSource: dataSource,
-    height: '450px',
-    treeColumnIndex: 1,
-    taskFields: {
-        id: 'TaskId',
-        name: 'TaskName',
-        startDate: 'StartDate',
-        progress: 'Progress',
-        duration: 'Duration',
-        dependency: 'Predecessor',
-        child: 'SubTasks'
-    }
+  dataSource: dataSource,
+  height: "450px",
+  treeColumnIndex: 1,
+  taskFields: {
+    id: "TaskId",
+    name: "TaskName",
+    startDate: "StartDate",
+    progress: "Progress",
+    duration: "Duration",
+    dependency: "Predecessor",
+    child: "SubTasks",
+  },
 });
-gantt.appendTo('#Gantt');
-
+gantt.appendTo("#Gantt");
 ```
 
 ```ts
@@ -121,7 +119,7 @@ This server method will be triggered for all the CRUD operations like adding, ed
 
 ## Insert action
 
-Using the `added` argument of the `BatchUrl` method we can insert the newly added row to database and return the same to client side. please find the below code example for details.
+Using the `added` argument of the `BatchUrl` method we can insert the newly added row to database and return the same to client side. Please find the below code example for details.
 
 ```ts
 GanttDataSourceEntities db = new GanttDataSourceEntities();
@@ -193,7 +191,7 @@ public GanttData Edit(GanttData value)
 
 ## Delete action
 
-Using the `deleted` argument of the `BatchUrl` method we can remove the deleted records from database and return the same to client side. on deleting the record we need to remove its corresponding child records as well if it exist from the data base. please find the below code example for details.
+Using the `deleted` argument of the `BatchUrl` method, we can remove the deleted records from database and return the same to client side. on deleting the record we need to remove its corresponding child records as well if it exist from the database. please find the below code example for details.
 
 ```ts
 GanttDataSourceEntities db = new GanttDataSourceEntities();

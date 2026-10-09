@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Holidays in ASP.NET Core Gantt Component
-description: Learn here all about Holidays in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Holidays in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to define and manage holidays in Syncfusion ASP.NET Core Gantt Chart to mark non-working days and improve project scheduling accuracy.
+keywords: asp.net core gantt holidays, non-working days, holiday schedule, weekend, project calendar, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/holidays
 platform: gantt-sdk
-control: Holidays
-publishingplatform: gantt-sdk
+control: Holidays - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK/overview
 ---
 
-
-# Holidays
+# Holidays and Non-Working Days in ASP.NET Core Gantt Chart
 
 Non-working days in a project can be displayed in the Gantt control using the [`Holidays`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Holidays) property. Each holiday can be defined with the following properties:
 
@@ -20,8 +22,6 @@ Non-working days in a project can be displayed in the Gantt control using the [`
 
 The following code example shows how to display the non-working days in the Gantt control.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/holidays/holidays/tagHelper %}
@@ -31,20 +31,6 @@ The following code example shows how to display the non-working days in the Gant
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/holidays/holidays/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Holidays.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/holidays/holidays/holidays.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 The following screenshot shows the output of Holidays in Gantt control.
 
-![Alt text](images/holidays.png)
+![Alt text](./images/holidays.png)

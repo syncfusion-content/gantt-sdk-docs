@@ -1,0 +1,29 @@
+@using Syncfusion.EJ2.Gantt
+
+@(Html.EJS().Gantt("Default")
+    .DataSource((IEnumerable<object>)ViewBag.DataSource)
+    .AllowSelection(true)
+    .GridLines(Syncfusion.EJ2.TreeGrid.GridLine.Both)
+    .HighlightWeekends(true)
+    .Height("550px")
+    .ProjectStartDate("03/21/2019")
+    .ProjectEndDate("05/30/2019")
+    .AllowedDependencyTypes(new string[] { "SF" })
+    .TaskFields(ts => ts
+        .Id("TaskID")
+        .Name("TaskName")
+        .StartDate("StartDate")
+        .Duration("Duration")
+        .Progress("Progress")
+        .Dependency("Predecessor")
+        .Child("subtasks"))
+    .EditSettings(es => es
+        .AllowAdding(true)
+        .AllowEditing(true)
+        .AllowDeleting(true)
+        .AllowTaskbarEditing(true)
+        .ShowDeleteConfirmDialog(true))
+    .LabelSettings(ls => ls
+        .LeftLabel("TaskName")
+        .TaskLabel("Progress"))
+    .Render())

@@ -1,32 +1,21 @@
 ---
 layout: post
-title: Dynamically Change Columns in ASP.NET MVC Kanban Component
-description: Learn here all about Dynamically Change Columns in Syncfusion ASP.NET MVC Kanban component of Syncfusion Essential JS 2 and more.
+title: Dynamically Change Columns in ASP.NET MVC Kanban | Syncfusion
+description: Learn how to dynamically change columns in Syncfusion ASP.NET MVC Kanban with practical examples and configuration guidance.
+keywords: ASP.NET MVC kanban dynamically change columns, syncfusion kanban, update columns at runtime, column toggle
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/kanban/how-to/dynamically-change-columns
 platform: gantt-sdk
-control: Dynamically Change Columns
-publishingplatform: gantt-sdk
+control: Dynamically Change Columns - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
+# Modify Columns Programmatically in ASP.NET MVC Kanban
 
-# Change Kanban columns dynamically
+You can dynamically change the Kanban columns by using the [`columns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_Columns) property.
 
-You can dynamically change the Kanban columns by using the [`columns`](../../api/kanban#columns) property.
-
-In the below sample, you can dynamically change the [`allowToggle`](../../api/kanban/columnsModel/#allowtoggle) property at the particular column when you click on the button. You can also change the initially created columns to the new Kanban columns by using the [`columns`](../../api/kanban#columns) property when you click on the button.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/cards/dynamic-columns/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/cards/dynamic-columns/datasource.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+In the below sample, you can dynamically change the [`allowToggle`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.KanbanColumn.html#Syncfusion_EJ2_Kanban_KanbanColumn_AllowToggle) property at the particular column when you click on the button. You can also change the initially created columns to the new Kanban columns by using the [`columns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_Columns) property when you click on the button.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -36,9 +25,6 @@ In the below sample, you can dynamically change the [`allowToggle`](../../api/ka
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/cards/dynamic-columns/datasource.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 Output be like the below.
 

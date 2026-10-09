@@ -1,15 +1,19 @@
 ---
 layout: post
-title: Critical Path in Blazor Gantt Chart Component | Syncfusion
-description: Learn here all about Critical path in Syncfusion Blazor Gantt Chart component and much more details.
+title: Critical Path in Blazor Gantt Chart | Syncfusion
+description: Learn how to identify and visualize the critical path in Syncfusion Blazor Gantt Chart to track tasks that directly impact the project end date.
+keywords: blazor gantt critical path, critical tasks, project critical path, enablecriticalpath, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/criticalpath
 platform: gantt-sdk
-component: Critical path
+control: Critical Path - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Critical Path in Blazor Gantt Chart component
+# Critical Path Visualization for Project Tracking in Blazor Gantt Chart
 
-The critical path represents the longest sequence of dependent tasks that determines the minimum project duration. Tasks on the critical path have zero or negative [SlackValue](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttCriticalPathSettings.html#Syncfusion_Blazor_Gantt_GanttCriticalPathSettings_SlackValue) (float), specifies the number of days before the project’s maximum end date a task should be marked as critical. The Blazor Gantt Chart component automatically calculates and highlights critical tasks in red with emphasized dependency connector lines when the [EnableCriticalPath](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_EnableCriticalPath) property is enabled. Critical path analysis helps identify which tasks require immediate attention and cannot be delayed without affecting project deadlines.
+The critical path represents the longest sequence of dependent tasks that determines the minimum project duration. Tasks on the critical path have zero or negative [SlackValue](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttCriticalPathSettings.html#Syncfusion_Blazor_Gantt_GanttCriticalPathSettings_SlackValue) (float), which specifies the number of days before the project’s maximum end date a task should be marked as critical. The Blazor Gantt Chart component automatically calculates and highlights critical tasks in red with emphasized dependency connector lines when the [EnableCriticalPath](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_EnableCriticalPath) property is enabled. Critical path analysis helps identify which tasks require immediate attention and cannot be delayed without affecting project deadlines.
 
 ## Understanding critical path calculation
 
@@ -90,9 +94,9 @@ The following example demonstrates enabling critical path analysis:
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/LNBdDwrXsPVkruXR?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## Critical path settings in Gantt Chart Component
+## Critical path settings in Blazor Gantt Chart Component
 
-The critical path settings in the Gantt Chart component determine the default slack value and validate it. Here is an example of how to add slack value to the Gantt Chart component.
+The critical path settings in the Blazor Gantt Chart component determine the default slack value and validate it. Here is an example of how to add slack value to the Blazor Gantt Chart component.
 
 Slack is a measure of  how many days before the project end date a task should be flagged as critical, based on the configured SlackValue. By default, the Slack Value is 0.
 
@@ -157,7 +161,7 @@ By adjusting the `SlackValue`, you can control which tasks are critical and ensu
 
 The taskbar in critical path can be customized by using [QueryChartRowInfo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_QueryChartRowInfo) event. The [GanttTaskModel](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.QueryChartRowInfoEventArgs-1.html#Syncfusion_Blazor_Gantt_QueryChartRowInfoEventArgs_1_GanttTaskModel) in the event argument is used to retrieve taskbar information.
 
-The following code snippet demonstrates how to customize the appearance of critical path taskbars in a Gantt Chart:
+The following code snippet demonstrates how to customize the appearance of critical path taskbars in a Blazor Gantt Chart:
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}

@@ -1,18 +1,21 @@
 ---
 layout: post
-title: Global local in Vue Gantt Chart component | Syncfusion
-description: Learn here all about Global local in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Global local 
+title: Localization in Vue Gantt Chart | Syncfusion
+description: Learn about localization support in Syncfusion Vue Gantt Chart to display content in multiple languages and regional formats.
+keywords: vue gantt localization, global local, language support, regional settings, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/global-local
 platform: gantt-sdk
+control: Localization - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Global local in Vue Gantt Chart component
+# Globalization and Localization in Vue Gantt Chart
 
 ## Localization
 
-The [Localization](../common/localization) library allows you to localize default text content of the Gantt.
+The [Localization](https://ej2.syncfusion.com/vue/documentation/common/localization) library allows you to localize default text content of the Gantt.
 The Gantt Chart component has static text on some features (like toolbar area text, etc.)
 that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the
 [locale](https://ej2.syncfusion.com/vue/documentation/api/gantt#locale) value and translation object.
@@ -137,7 +140,7 @@ The below example demonstrates the Gantt in **Deutsch** culture.
 
 ## Internationalization
 
-The [Internationalization](../common/internationalization) library is used to globalize number, date, and time values in gantt component.
+The [Internationalization](https://ej2.syncfusion.com/vue/documentation/common/internationalization) library is used to globalize number, date, and time values in gantt component.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -170,5 +173,5 @@ RTL provides an option to switch the text direction and layout of the Gantt Char
 
 ## See Also
 
-* [Internationalization](../common/internationalization)
-* [Localization](../common/localization)
+* [Internationalization](https://ej2.syncfusion.com/vue/documentation/common/internationalization)
+* [Localization](https://ej2.syncfusion.com/vue/documentation/common/localization)

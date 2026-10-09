@@ -1,44 +1,93 @@
-let data  = [
-    {
-        TaskID: 1,
-        TaskName: 'Project Initiation',
-        StartDate: new Date('04/02/2019'),
-        EndDate: new Date('04/21/2019'),
-        isParent: true,
-    },
-    { TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: '4days', ParentID: 1, Progress: 50 },
-    { TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: '16hours', ParentID: 1, Progress: 70 },
-    { TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2019'), Duration: '1800minutes', ParentID: 1, Progress: 80 },
-    {
-        TaskID: 5,
-        TaskName: 'Project Estimation',
-        StartDate: new Date('04/02/2019'),
-        EndDate: new Date('04/21/2019'),
-        isParent: true,
-    },
-    { TaskID: 6, TaskName: 'Develop floor plan for estimation', StartDate: new Date('04/04/2019'), Duration: '16hours', ParentID:5, Progress: 50 },
-    { TaskID: 7, TaskName: 'List materials', StartDate: new Date('04/04/2019'), Duration: '3days', ParentID:5, Progress: 50 },
-    { TaskID: 8, TaskName: 'Estimation approval', StartDate: new Date('04/04/2019'), Duration: '480minutes', ParentID:5, Progress: 70 }
-];
+import * as React from "react";
+import * as ReactDOM from "react-dom";
+import { GanttComponent } from "@syncfusion/ej2-react-gantt";
+import { ButtonComponent } from "@syncfusion/ej2-react-buttons";
+import { GanttData } from "./datasource";
 
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import { GanttComponent, ColumnsDirective, ColumnDirective } from '@syncfusion/ej2-react-gantt';
+function App() {
+  let ganttInstance;
 
-function App(){
-    const taskFields = {
-    id: 'TaskID',
-    name: 'TaskName',
-    startDate: 'StartDate',
-    duration: 'Duration',
-    progress: 'Progress',
-    parentID: 'ParentID'
+  const updateProperties = () => {
+    const daysPerWeek = parseInt(
+      document.getElementById("daysPerWeek").value,
+      10,
+    );
+    const daysPerMonth = parseInt(
+      document.getElementById("daysPerMonth").value,
+      10,
+    );
+
+    if (daysPerWeek < 1 || daysPerWeek > 7) {
+      alert("Days per Week must be between 1 and 7");
+      return;
+    }
+
+    if (daysPerMonth < 1 || daysPerMonth > 31) {
+      alert("Days per Month must be between 1 and 31");
+      return;
+    }
+
+    if (ganttInstance) {
+      ganttInstance.daysPerWeek = daysPerWeek;
+      ganttInstance.daysPerMonth = daysPerMonth;
+    }
   };
+
+  const taskFields = {
+    id: "TaskID",
+    name: "TaskName",
+    startDate: "StartDate",
+    duration: "Duration",
+    progress: "Progress",
+    durationUnit: "DurationUnit",
+    parentID: "ParentID",
+  };
+
   const splitterSettings = {
-    columnIndex: 4
+    columnIndex: 4,
   };
-        return <GanttComponent dataSource={data} taskFields={taskFields}
-          splitterSettings={splitterSettings} height = '450px'>
-        </GanttComponent>
-};
-ReactDOM.render(<App />, document.getElementById('root'));
+
+  return (
+    <div>
+      <div style={{ marginBottom: "10px" }}>
+        <label>Days Per Week: </label>
+        <input
+          id="daysPerWeek"
+          type="number"
+          defaultValue={5}
+          min={1}
+          max={7}
+        />
+
+        <label style={{ marginLeft: "10px" }}>Days Per Month: </label>
+        <input
+          id="daysPerMonth"
+          type="number"
+          defaultValue={20}
+          min={1}
+          max={31}
+        />
+
+        <ButtonComponent
+          id="updateButton"
+          onClick={updateProperties}
+          style={{ marginLeft: "10px" }}
+        >
+          Update
+        </ButtonComponent>
+      </div>
+
+      <GanttComponent
+        ref={(gantt) => (ganttInstance = gantt)}
+        dataSource={GanttData}
+        height="380px"
+        daysPerWeek={5}
+        daysPerMonth={20}
+        taskFields={taskFields}
+        splitterSettings={splitterSettings}
+      />
+    </div>
+  );
+}
+
+ReactDOM.render(<App />, document.getElementById("root"));

@@ -1,13 +1,17 @@
 ---
 layout: post
-title: Data Markers in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Data Markers in Syncfusion Blazor Gantt Chart component and much more.
+title: Data Markers in Blazor Gantt Chart | Syncfusion
+description: Learn how to add and customize data markers in Syncfusion Blazor Gantt Chart to highlight key milestone points on the project timeline.
+keywords: blazor gantt data markers, timeline markers, milestone markers, task markers, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/data-markers
 platform: gantt-sdk
-control: Gantt Chart
+control: Data Markers - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Data Markers in Blazor Gantt Chart Component
+# Data Markers for Timeline Highlights in Blazor Gantt Chart
 
 Data markers are visual indicators that highlight significant events, milestones, or important dates within individual project tasks. These markers provide immediate visual context about critical moments in task timelines, enabling effective identification of key dates and tracking of important events at the task level. Understanding data markers implementation ensures effective project visualization and milestone tracking throughout project development cycles.
 
@@ -32,7 +36,7 @@ Data markers represent schedule events for specific tasks through visual indicat
 **Mapping configuration**: The marker array connects to the Gantt component through the [GanttTaskFields.Indicators](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html#Syncfusion_Blazor_Gantt_GanttTaskFields_Indicators) property mapping. This configuration establishes the relationship between data source marker definitions and component rendering logic.
 
 **Multiple marker support**: Tasks can display multiple data markers simultaneously, allowing comprehensive event tracking within individual task contexts. Each marker maintains independent configuration while sharing the same task timeline space.
-The following implementation demonstrates comprehensive data marker integration within a Gantt chart, showcasing multiple markers per task with varied styling and tooltip configurations:
+The following implementation demonstrates comprehensive data marker integration within a Blazor Gantt Chart, showcasing multiple markers per task with varied styling and tooltip configurations:
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -93,4 +97,4 @@ The following implementation demonstrates comprehensive data marker integration 
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/VNLnjGhNhMWKWcrb?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-N> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/blazor-components/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=bootstrap5) to know how to render and configure the Gantt.
+N> You can refer to our [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Blazor Gantt Chart example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=fluent2) to know how to render and configure the Gantt.

@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Task Bar Editing in Angular Gantt Chart Component | Syncfusion
-description: Learn how to edit tasks via taskbar interactions in the Syncfusion Angular Gantt Chart component for intuitive project timeline adjustments.
+title: Task Bar Editing in Angular Gantt Chart | Drag & Resize | Syncfusion
+description: Learn how to enable task bar editing in Syncfusion Angular Gantt Chart to drag or resize taskbars and adjust task dates, duration, or progress intuitively.
+keywords: angular gantt task bar editing, allowtaskbarediting, drag resize, taskbar progress, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/managing-tasks/task-bar-editing
 platform: gantt-sdk
-control: Task bar editing
+control: Task Bar Editing - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Task Bar Editing in Angular Gantt Chart Component
+# Editing Tasks Using Taskbar Drag and Resize in Angular Gantt Chart
 
 Task bar editing in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component enables intuitive project timeline adjustments by allowing to drag or resize taskbars to modify task details, such as start dates, durations, or progress, using mouse or touch interactions. Enable this feature by setting the [allowTaskbarEditing](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettings#allowtaskbarediting) property to **true** and injecting `EditService`, ensuring task data aligns with valid [taskFields](https://ej2.syncfusion.com/angular/documentation/api/gantt#taskfields) mappings (e.g., id, startDate, duration). Taskbars can be dragged to shift dates, resize them to adjust durations, or move progress grips to update completion percentages. The [taskbarEditing](https://ej2.syncfusion.com/angular/documentation/gantt/events#taskbarediting) event allows preventing edits for specific tasks, while the [queryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/gantt/events#querytaskbarinfo) event customizes taskbar visuals by hiding editing indicators like resizer or connector points.
 
@@ -43,6 +46,26 @@ Prevent taskbar editing for specific tasks using the [taskbarEditing](https://ej
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/managing-tasks/prevent-taskbaredit-cs1" %}
+
+## Enable taskbar drawing
+
+The Gantt Chart control supports creating new tasks by dragging directly on the timeline. This feature is enabled via the [allowTaskbarDraw](https://ej2.syncfusion.com/angular/documentation/api/gantt/editSettingsModel#allowtaskbardraw) property in the [editSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt#editsettings) configuration. Taskbar drawing is intended for scheduling unscheduled tasks and requires [allowUnscheduledTasks](https://ej2.syncfusion.com/angular/documentation/api/gantt#allowunscheduledtasks) to be enabled.
+
+Dragging across the timeline schedules an unscheduled task by defining its timeline range. The resulting task duration is calculated based on the configured scheduling settings.
+
+The following example demonstrates how to enable taskbar drawing:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/enable-taskbar-draw-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt-sdk/angular/gantt-chart/managing-tasks/enable-taskbar-draw-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/managing-tasks/enable-taskbar-draw-cs1" %}
 
 ## See also
 

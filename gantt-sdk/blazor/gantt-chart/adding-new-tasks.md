@@ -1,19 +1,23 @@
 ---
 layout: post
-title: Adding new tasks in Blazor Gantt Chart component | Syncfusion
-description: Learn how to add tasks dynamically in the Syncfusion Blazor Gantt Chart component using toolbar, context menu, or programmatic methods for project management.
+title: Adding New Tasks in Blazor Gantt Chart | Syncfusion
+description: Learn how to add new tasks in Syncfusion Blazor Gantt Chart using toolbar, context menu, or programmatic API with parent and child task support.
+keywords: blazor gantt add tasks, new task, toolbar add, context menu, programmatic add, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/adding-new-tasks
 platform: gantt-sdk
-control: Adding new tasks
+control: Adding New Tasks - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Adding new tasks in Blazor Gantt Chart Component
+# Adding New Tasks with Toolbar and API in Blazor Gantt Chart
 
 Adding new tasks to the Blazor Gantt Chart component enables flexible project management by inserting tasks like milestones or subtasks using the toolbar, context menu, or programmatic methods. With [EditSettings.AllowAdding](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_AllowAdding) enabled, tasks can be added at the top, as children, or at specific positions, seamlessly integrating with dependencies and critical path calculations. Ensure task data aligns with [GanttTaskFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html) mappings (e.g., id, name, startDate) for successful addition, and verify parent rows support subtasks when adding child tasks. The toolbar opens a dialog for task details, the context menu provides positional options, and the [AddRecordAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AddRecordAsync__0_System_Nullable_System_Int32__System_Nullable_Syncfusion_Blazor_Gantt_RowPosition__System_Object_) method offers precise control, making task creation efficient for dynamic project updates.
 
-## Adding Tasks via Toolbar
+## Adding tasks via toolbar
 
-Enable task addition through the toolbar by setting [EditSettings.AllowAdding](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_AllowAdding) to **true**. Clicking the toolbar’s **Add** icon opens a dialog to enter details like task name, start date, and duration, adding the task at the top of the Gantt chart. This is ideal for quickly inserting high-level tasks or milestones, with all required fields (e.g., TaskID) validated for successful creation.
+Enable task addition through the toolbar by setting [EditSettings.AllowAdding](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_AllowAdding) to **true**. Clicking the toolbar’s **Add** icon opens a dialog to enter details like task name, start date, and duration, adding the task at the top of the Blazor Gantt Chart. This is ideal for quickly inserting high-level tasks or milestones, with all required fields (e.g., TaskID) validated for successful creation.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -123,7 +127,7 @@ Enable context menu task addition by setting [EnableContextMenu](https://help.sy
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/BjhnDwiGTdlIgfkv?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-> **Note**: The context menu supports keyboard navigation (e.g., <kbd>Enter</kbd> to select "Add Above"). Refer to the [Accessibility in Blazor Gantt Chart](https://blazor.syncfusion.com/documentation/gantt-chart/accessibility) for keyboard shortcuts.
+> **Note**: The context menu supports keyboard navigation (e.g., <kbd>Enter</kbd> to select "Add Above"). Refer to the [Accessibility in Blazor Gantt Chart](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/accessibility) for keyboard shortcuts.
 
 ## Adding tasks programmatically
 
@@ -196,8 +200,8 @@ Tasks can be added programmatically using the [AddRecordAsync](https://help.sync
                            
 > **Note**: Ensure the `TaskID` is unique to prevent runtime errors. Use try-catch blocks with `AddRecordAsync` to handle exceptions, such as invalid data or missing dependencies. For keyboard accessibility, use <kbd>Ctrl</kbd> + <kbd>Insert</kbd> (Windows) or <kbd>⌘</kbd> + <kbd>Insert</kbd> (Mac) to open the add dialog programmatically.
 
-## See Also
+## See also
 
-- [Accessibility in Blazor Gantt Chart](https://blazor.syncfusion.com/documentation/gantt-chart/accessibility)
-- [Blazor Gantt Chart Feature Tour](https://www.syncfusion.com/blazor-components/blazor-gantt-chart)
-- [Blazor Gantt Chart Example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=bootstrap5)
+- [Accessibility in Blazor Gantt Chart](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/accessibility)
+- [Blazor Gantt Chart Feature Tour](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart)
+- [Blazor Gantt Chart Example](https://blazor.syncfusion.com/demos/gantt-chart/default-functionalities?theme=fluent2)

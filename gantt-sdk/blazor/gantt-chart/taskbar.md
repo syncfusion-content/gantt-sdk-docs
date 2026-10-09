@@ -1,16 +1,20 @@
 ---
 layout: post
-title: Taskbar in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Taskbar editing in Syncfusion Blazor Gantt Chart component and more.
+title: Taskbar in Blazor Gantt Chart | Syncfusion
+description: Learn how to configure and customize taskbars in Syncfusion Blazor Gantt Chart including parent, child, milestone taskbars, and progress rendering.
+keywords: blazor gantt taskbar, parent taskbar, child taskbar, milestone, taskbar template, progress bar, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/taskbar
 platform: gantt-sdk
-control: Gantt Chart
+control: Taskbar - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
-# Taskbar in Blazor Gantt Chart Component
+# Taskbar Customization with Templates in Blazor Gantt Chart
 
 ## Taskbar template
 
-You can design your taskbars to view the tasks in Gantt Chart by using [GanttTemplates.TaskbarTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTemplates-1.html#Syncfusion_Blazor_Gantt_GanttTemplates_1_TaskbarTemplate) property. It is also possible to customize the parent taskbars and milestones with custom templates by using [GanttTemplates.ParentTaskbarTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTemplates-1.html#Syncfusion_Blazor_Gantt_GanttTemplates_1_ParentTaskbarTemplate) and [GanttTemplates.MilestoneTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTemplates-1.html#Syncfusion_Blazor_Gantt_GanttTemplates_1_MilestoneTemplate) properties.
+You can design your taskbars to view the tasks in Blazor Gantt Chart using the [GanttTemplates.TaskbarTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTemplates-1.html#Syncfusion_Blazor_Gantt_GanttTemplates_1_TaskbarTemplate) property. You can also customize the parent taskbars and milestones with custom templates using the [GanttTemplates.ParentTaskbarTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTemplates-1.html#Syncfusion_Blazor_Gantt_GanttTemplates_1_ParentTaskbarTemplate) and [GanttTemplates.MilestoneTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTemplates-1.html#Syncfusion_Blazor_Gantt_GanttTemplates_1_MilestoneTemplate) properties.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -186,7 +190,7 @@ You can design your taskbars to view the tasks in Gantt Chart by using [GanttTem
 
 ### Taskbar height
 
-Height of child taskbars and parent taskbars can be customized by using [TaskbarHeight](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_TaskbarHeight) property. The following code example shows how to use the property.
+The height of child taskbars and parent taskbars can be customized using the [TaskbarHeight](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_TaskbarHeight) property. The following code example shows how to use the property.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -238,7 +242,7 @@ N> The `TaskbarHeight` property accepts only pixel value.
 
 ### Taskbar background
 
-In the Gantt Chart component, the appearance can be customized based on the Hierarchy using the [GetRowTaskModel](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_GetRowTaskModel__0_) method with the custom styles. So, the method `GetRowTaskModel` helps the user to do the customization and access the internal properties of Gantt. The following code example shows how to customize Gantt Chart Rows using Gantt properties as `Level` and `HasChildRecords` from `GetRowTaskModel` method in [QueryChartRowInfo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_QueryChartRowInfo) event of Gantt.
+In the Blazor Gantt Chart component, the appearance can be customized based on the Hierarchy using the [GetRowTaskModel](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_GetRowTaskModel__0_) method with the custom styles. So, the method `GetRowTaskModel` helps the user to do the customization and access the internal properties of Gantt. The following code example shows how to customize Blazor Gantt Chart Rows using Gantt properties as `Level` and `HasChildRecords` from `GetRowTaskModel` method in [QueryChartRowInfo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEvents-1.html#Syncfusion_Blazor_Gantt_GanttEvents_1_QueryChartRowInfo) event of Gantt.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -319,7 +323,7 @@ In the Gantt Chart component, the appearance can be customized based on the Hier
 
 ## Connector lines
 
-The width and background color of connector lines in Gantt Chart can be customized using the [ConnectorLineWidth](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ConnectorLineWidth) and [ConnectorLineBackground](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ConnectorLineBackground) properties. The following code example shows how to use these properties.
+The width and background color of connector lines in Blazor Gantt Chart can be customized using the [ConnectorLineWidth](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ConnectorLineWidth) and [ConnectorLineBackground](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_ConnectorLineBackground) properties. The following code example shows how to use these properties.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -371,7 +375,7 @@ The width and background color of connector lines in Gantt Chart can be customiz
 
 ## Tooltip
 
-In the Gantt Chart component, you can enable or disable the mouse hover tooltip for the following UI elements using the [GanttTooltipSettings.ShowTooltip](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTooltipSettings-1.html#Syncfusion_Blazor_Gantt_GanttTooltipSettings_1_ShowTooltip) property:
+In the Blazor Gantt Chart component, you can enable or disable the mouse hover tooltip for the following UI elements using the [GanttTooltipSettings.ShowTooltip](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTooltipSettings-1.html#Syncfusion_Blazor_Gantt_GanttTooltipSettings_1_ShowTooltip) property:
 
 * Taskbar
 * Connector line
@@ -443,7 +447,7 @@ N> The default value of the `GanttTooltipSettings.ShowTooltip` property is true.
 
 ### Taskbar tooltip
 
-The default tooltip in the Gantt Chart component can be customized using the [GanttTooltipSettings.TaskbarTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTooltipSettings-1.html#Syncfusion_Blazor_Gantt_GanttTooltipSettings_1_TaskbarTemplate) property. You can map the template script element’s ID value or template string directly to this property.
+The default tooltip in the Blazor Gantt Chart component can be customized using the [GanttTooltipSettings.TaskbarTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTooltipSettings-1.html#Syncfusion_Blazor_Gantt_GanttTooltipSettings_1_TaskbarTemplate) property. You can map the template script element’s ID value or template string directly to this property.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -502,7 +506,7 @@ The below screenshot shows the output of above code example.
 
 ### Baseline tooltip
 
-A baseline tooltip can be customized using the [GanttTooltipSettings.BaselineTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTooltipSettings-1.html#Syncfusion_Blazor_Gantt_GanttTooltipSettings_1_BaselineTemplate) property. The following code example shows how to customize the baseline tooltip in Gantt Chart.
+A baseline tooltip can be customized using the [GanttTooltipSettings.BaselineTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTooltipSettings-1.html#Syncfusion_Blazor_Gantt_GanttTooltipSettings_1_BaselineTemplate) property. The following code example shows how to customize the baseline tooltip in Blazor Gantt Chart.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -557,13 +561,13 @@ A baseline tooltip can be customized using the [GanttTooltipSettings.BaselineTem
 }
 ```
 
-The following screenshot shows the template for baseline in Gantt Chart.
+The following screenshot shows the template for baseline in Blazor Gantt Chart.
 
 ![Customizing Baseline Tooltip in Blazor Gantt Chart](images/blazor-gantt-chart-baseline-tooltip-customization.webp)
 
 ### Manual taskbar tooltip
 
-A manual taskbar tooltip can be customized using the [GanttTooltipSettings.ManualTaskbarTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTooltipSettings-1.html#Syncfusion_Blazor_Gantt_GanttTooltipSettings_1_ManualTaskbarTemplate) property. The following code example shows how to customize the manual taskbar tooltip in Gantt Chart.
+A manual taskbar tooltip can be customized using the [GanttTooltipSettings.ManualTaskbarTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTooltipSettings-1.html#Syncfusion_Blazor_Gantt_GanttTooltipSettings_1_ManualTaskbarTemplate) property. The following code example shows how to customize the manual taskbar tooltip in Blazor Gantt Chart.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -624,7 +628,7 @@ A manual taskbar tooltip can be customized using the [GanttTooltipSettings.Manua
 
 ### Indicator tooltip
 
-Customizing the indicator tooltip in a Gantt Chart using [GanttTooltipSettings.IndicatorTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTooltipSettings-1.html#Syncfusion_Blazor_Gantt_GanttTooltipSettings_1_IndicatorTemplate) allows you to display additional information and elements in a more visually appealing and informative way. By combining data bindings and CSS styles, you can create custom templates that suit your specific needs and use cases. The following code example shows how to customize the indicator tooltip in Gantt Chart.
+Customizing the indicator tooltip in a Blazor Gantt Chart using [GanttTooltipSettings.IndicatorTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTooltipSettings-1.html#Syncfusion_Blazor_Gantt_GanttTooltipSettings_1_IndicatorTemplate) allows you to display additional information and elements in a more visually appealing and informative way. By combining data bindings and CSS styles, you can create custom templates that suit your specific needs and use cases. The following code example shows how to customize the indicator tooltip in Blazor Gantt Chart.
 
 ```cshtml
 @using Syncfusion.Blazor.Gantt
@@ -698,4 +702,4 @@ Customizing the indicator tooltip in a Gantt Chart using [GanttTooltipSettings.I
 
 ## See also
 
-* [Customizing the Blazor Gantt Chart’s Taskbar](https://www.syncfusion.com/blogs/post/customizing-the-blazor-gantt-charts-taskbar-an-overview.aspx)
+* [Customizing the Blazor Gantt Chart’s Taskbar](https://www.syncfusion.com/blogs/post/customizing-the-blazor-gantt-charts-taskbar-an-overview)

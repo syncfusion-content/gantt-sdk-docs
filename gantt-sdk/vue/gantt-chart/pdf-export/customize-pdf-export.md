@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Customize PDF Exporting in Vue Gantt Chart component | Syncfusion
-description: Learn here all about Customize PDF exporting in Syncfusion Vue Gantt Chart component of Syncfusion Essential JS 2 and more.
-control: Customize PDF exporting
+title: Customize PDF Export in Vue Gantt Chart | Syncfusion
+description: Learn how to customize PDF export in Vue Gantt Chart with custom filename, styles, and PDF properties.
+keywords: vue gantt customize pdf export, pdf customization, export settings, pdf properties, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/vue/gantt-chart/pdf-export/customize-pdf-export
 platform: gantt-sdk
+control: Customize PDF Export - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# To Customize PDF Export
+# Customizing PDF Export Layout and Content in Vue Gantt Chart
 
 PDF export provides an option to customize the mapping of Gantt to exported PDF document.
 
@@ -29,7 +32,7 @@ The file name of the exported PDF document can be specified using the [fileName]
 
 ## How to change page orientation
 
-The page orientation of the exported PDF document can be customized using the [pageOrientation](https://ej2.syncfusion.com/vue/documentation/api/gantt/pdfExportProperties#pageorientation) property in [pdfExportProperties](https://helpej2.syncfusion.com/vue/documentation/api/gantt/pdfExportProperties). By default, the exported PDF document is in Landscape orientation.
+The page orientation of the exported PDF document can be customized using the [pageOrientation](https://ej2.syncfusion.com/vue/documentation/api/gantt/pdfExportProperties#pageorientation) property in [pdfExportProperties](https://ej2.syncfusion.com/vue/documentation/api/gantt/pdfExportProperties). By default, the exported PDF document is in Landscape orientation.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -44,7 +47,7 @@ The page orientation of the exported PDF document can be customized using the [p
 
 ## How to change page size
 
-Page size can be customized for the exported document using the  [pageSize](https://helpej2.syncfusion.com/vue/documentation/api/gantt/pdfExportProperties#pagesize) property in [pdfExportProperties](https://helpej2.syncfusion.com/vue/documentation/api/gantt/pdfExportProperties).
+Page size can be customized for the exported document using the  [pageSize](https://ej2.syncfusion.com/vue/documentation/api/gantt/pdfExportProperties#pagesize) property in [pdfExportProperties](https://ej2.syncfusion.com/vue/documentation/api/gantt/pdfExportProperties).
  The supported page sizes are:
 
 * Letter
@@ -88,7 +91,7 @@ Page size can be customized for the exported document using the  [pageSize](http
 
 ## Export current view data
 
-PDF export provides an option to export the current view data into PDF. To export current view data alone, define the [exportType](https://helpej2.syncfusion.com/vue/documentation/api/gantt/pdfExportProperties#exporttype) to `CurrentViewData`.
+PDF export provides an option to export the current view data into PDF. To export current view data alone, define the [exportType](https://ej2.syncfusion.com/vue/documentation/api/gantt/pdfExportProperties#exporttype) to `CurrentViewData`.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -103,7 +106,7 @@ PDF export provides an option to export the current view data into PDF. To expor
 
 ## Export hidden columns
 
-PDF export provides an option to export hidden columns of Gantt by defining the [includeHiddenColumn](https://helpej2.syncfusion.com/vue/documentation/api/gantt/pdfExportProperties#includehiddencolumn) to `true`.
+PDF export provides an option to export hidden columns of Gantt by defining the [includeHiddenColumn](https://ej2.syncfusion.com/vue/documentation/api/gantt/pdfExportProperties#includehiddencolumn) to `true`.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -118,7 +121,7 @@ PDF export provides an option to export hidden columns of Gantt by defining the 
 
 ## Export predecessor lines
 
-The visibility of predecessor lines in the exported PDF document can be controlled using the [showPredecessorLines](https://helpej2.syncfusion.com/vue/documentation/api/gantt/pdfExportProperties#showpredecessorlines) property.
+The visibility of predecessor lines in the exported PDF document can be controlled using the [showPredecessorLines](https://ej2.syncfusion.com/vue/documentation/api/gantt/pdfExportProperties#showpredecessorlines) property.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -237,9 +240,9 @@ The [taskSegmentStyles](https://ej2.syncfusion.com/vue/documentation/api/gantt/i
 
 ### Exporting with column template
 
-The PDF export functionality allows to export Grid columns that include images, hyperlinks, and custom text to an PDF document using [pdfQueryCellInfo](https://helpej2.syncfusion.com/react/documentation/api/gantt/pdfQueryCellInfoEventArgs) event.
+The PDF export functionality allows to export Grid columns that include images, hyperlinks, and custom text to an PDF document using [pdfQueryCellInfo](https://ej2.syncfusion.com/vue/documentation/api/gantt/pdfQueryCellInfoEventArgs) event.
 
-In the following sample, the hyperlinks and images are exported to PDF using [hyperlink](https://helpej2.syncfusion.com/vue/documentation/api/gantt/pdfQueryCellInfoEventArgs#hyperlink) and [image](https://helpej2.syncfusion.com/vue/documentation/api/gantt/pdfQueryCellInfoEventArgs#image) properties in the [pdfQueryCellInfo](https://helpej2.syncfusion.com/vue/documentation/api/gantt/pdfQueryCellInfoEventArgs) event.
+In the following sample, the hyperlinks and images are exported to PDF using [hyperlink](https://ej2.syncfusion.com/vue/documentation/api/gantt/pdfQueryCellInfoEventArgs#hyperlink) and [image](https://ej2.syncfusion.com/vue/documentation/api/gantt/pdfQueryCellInfoEventArgs#image) properties in the [pdfQueryCellInfo](https://ej2.syncfusion.com/vue/documentation/api/gantt/pdfQueryCellInfoEventArgs) event.
 
 >Note: PDF Export supports base64 string to export the images.
 

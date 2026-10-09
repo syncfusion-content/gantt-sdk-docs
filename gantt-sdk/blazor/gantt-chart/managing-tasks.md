@@ -1,13 +1,17 @@
 ---
 layout: post
-title: Managing Tasks in Blazor Gantt Chart Component | Syncfusion
-description: Checkout and learn here all about Managing Tasks in Syncfusion Blazor Gantt Chart component and more.
+title: Managing Tasks in Blazor Gantt Chart | Syncfusion
+description: Learn how to manage tasks in Syncfusion Blazor Gantt Chart, including adding, editing, deleting, indenting, and outdenting tasks programmatically.
+keywords: blazor gantt manage tasks, add edit delete, indent outdent, task management, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/managing-tasks
 platform: gantt-sdk
-control:  Managing tasks
+control: Managing Tasks - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Managing Tasks in Blazor Gantt Chart Component
+# Managing Tasks with Add, Edit, and Delete in Blazor Gantt Chart
 
 Managing tasks in the Blazor Gantt Chart component enables dynamic project updates, such as inserting, deleting, or editing tasks and dependencies, by enabling [AllowAdding](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_AllowAdding), [AllowDeleting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_AllowDeleting), [AllowEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_AllowEditing), and [AllowTaskbarEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttEditSettings.html#Syncfusion_Blazor_Gantt_GanttEditSettings_AllowTaskbarEditing). A primary key column, defined by [GanttColumn.IsPrimaryKey](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttColumn.html#Syncfusion_Blazor_Gantt_GanttColumn_IsPrimaryKey) set to **true** (e.g., on id), ensures reliable CRUD operations and task identification. Editing modes include cell editing for quick TreeGrid updates, dialog editing for comprehensive changes, taskbar dragging for duration or date adjustments, and connector line dragging for dependencies. Customize dialogs with templates or fields using [AddDialogFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AddDialogFields) and [EditDialogFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_EditDialogFields). Methods like [AddRecordAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_AddRecordAsync__0_System_Nullable_System_Int32__System_Nullable_Syncfusion_Blazor_Gantt_RowPosition__System_Object_), [DeleteRecordAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_DeleteRecordAsync_System_Nullable_System_Int32__), and [UpdateRecordByIDAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_UpdateRecordByIDAsync__0_) support programmatic management. Ensure valid [GanttTaskFields](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTaskFields.html) mappings and a primary key to enable editing seamlessly.
 
@@ -314,15 +318,15 @@ By default, the [Id](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gan
 
 ## Touch interaction
 
-The Gantt Chart component editing actions can be achieved using the double tap and tap and drag actions on an element.
+The Blazor Gantt Chart component editing actions can be achieved using the double tap and tap and drag actions on an element.
 
 The following table describes different types of editing modes available in Gantt.
 
 Action |Description
 -----|-----
-[Cell editing](https://blazor.syncfusion.com/documentation/gantt-chart/editing-tasks#cell-editing) | To perform `double tap` on a specific cell, initiate the cell to be in edit state.
-[Dialog editing](https://blazor.syncfusion.com/documentation/gantt-chart/editing-tasks#dialog-editing) | To perform `double tap` on a specific row, initiate the edit dialog to be opened.
-[Taskbar editing](https://blazor.syncfusion.com/documentation/gantt-chart/taskbar-editing) | Taskbar editing action is initiated using the `tap` action on the taskbar. <br> **Parent taskbar** : Once you tap on the parent taskbar, it will be changed to editing state. Perform only dragging action on parent taskbar editing.<br>![Blazor Gantt Chart displays editing parent taskbar in touch mode](images/editingparent.webp) <br><br> **Child taskbar** : Once you tap the child taskbar, it will be changed to editing state.<br>![Blazor Gantt Chart displays editing parent taskbar in touch mode](images/editingstate.webp) <br> <br> **Dragging taskbar** : To drag a taskbar to the left or right in editing state. <br> <br> **Resizing taskbar** : To resize a taskbar, drag the left/right resize icon. <br> <br> **Progress resizing** : To change the progress, drag the progress resize icon to the left or right direction.
+[Cell editing](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/editing-tasks) | To perform `double tap` on a specific cell, initiate the cell to be in edit state.
+[Dialog editing](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/editing-tasks) | To perform `double tap` on a specific row, initiate the edit dialog to be opened.
+[Taskbar editing](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/taskbar-editing) | Taskbar editing action is initiated using the `tap` action on the taskbar. <br> **Parent taskbar** : Once you tap on the parent taskbar, it will be changed to editing state. Perform only dragging action on parent taskbar editing.<br>![Blazor Gantt Chart displays editing parent taskbar in touch mode](images/editingparent.webp) <br><br> **Child taskbar** : Once you tap the child taskbar, it will be changed to editing state.<br>![Blazor Gantt Chart displays editing parent taskbar in touch mode](images/editingstate.webp) <br> <br> **Dragging taskbar** : To drag a taskbar to the left or right in editing state. <br> <br> **Resizing taskbar** : To resize a taskbar, drag the left/right resize icon. <br> <br> **Progress resizing** : To change the progress, drag the progress resize icon to the left or right direction.
 
 ### Task dependency editing
 
@@ -343,7 +347,7 @@ Removing dependency | Once you tap the taskbar with direct dependency, then conf
 
 ## Taskbar editing tooltip
 
-The taskbar editing tooltip can be integrated in Gantt chart by using the [GanttTooltipSettings.ShowTooltipOnEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTooltipSettings-1.html#Syncfusion_Blazor_Gantt_GanttTooltipSettings_1_ShowTooltipOnEditing) property. By default, this property is set to **true**. The following code example shows how to integrate the `GanttTooltipSettings.ShowTooltipOnEditing` in a Gantt Chart:
+The taskbar editing tooltip can be integrated in Blazor Gantt Chart by using the [GanttTooltipSettings.ShowTooltipOnEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTooltipSettings-1.html#Syncfusion_Blazor_Gantt_GanttTooltipSettings_1_ShowTooltipOnEditing) property. By default, this property is set to **true**. The following code example shows how to integrate the `GanttTooltipSettings.ShowTooltipOnEditing` in a Blazor Gantt Chart:
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -399,7 +403,7 @@ The taskbar editing tooltip can be integrated in Gantt chart by using the [Gantt
 
 ### Template
 
-The taskbar editing tooltip can be customized using the [GanttTooltipSettings.EditingTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTooltipSettings-1.html#Syncfusion_Blazor_Gantt_GanttTooltipSettings_1_EditingTemplate) property. The following code example shows how to customize the taskbar editing tooltip in a Gantt Chart:
+The taskbar editing tooltip can be customized using the [GanttTooltipSettings.EditingTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.GanttTooltipSettings-1.html#Syncfusion_Blazor_Gantt_GanttTooltipSettings_1_EditingTemplate) property. The following code example shows how to customize the taskbar editing tooltip in a Blazor Gantt Chart:
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -484,7 +488,7 @@ The taskbar editing tooltip can be customized using the [GanttTooltipSettings.Ed
 {% previewsample "https://blazorplayground.syncfusion.com/embed/VZhdNGBjKXJOOTyr?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 ## See also
-- [How to add new tasks?](https://blazor.syncfusion.com/documentation/gantt-chart/adding-new-tasks)
-- [How to delete tasks?](https://blazor.syncfusion.com/documentation/gantt-chart/deleting-tasks)
-- [How to manage task dependencies?](https://blazor.syncfusion.com/documentation/gantt-chart/task-dependencies)
-- [How to configure critical path?](https://blazor.syncfusion.com/documentation/gantt-chart/criticalpath)
+- [How to add new tasks?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/adding-new-tasks)
+- [How to delete tasks?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/deleting-tasks)
+- [How to manage task dependencies?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/task-dependencies)
+- [How to configure critical path?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/criticalpath)

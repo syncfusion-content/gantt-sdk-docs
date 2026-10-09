@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Sorting in Angular Gantt Chart Component | Syncfusion
-description: Learn here all about Sorting in Syncfusion Angular Gantt Chart component of Syncfusion Essential JS 2 and more.
+title: Sorting in Angular Gantt Chart | Multi-Sort | Syncfusion
+description: Learn how to enable sorting to arrange task data in ascending or descending order across multiple columns.
+keywords: angular gantt sorting, allowsorting, sortsettings, multi-column sort, ascending, descending, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/sorting
 platform: gantt-sdk
-control: Sorting 
+control: Sorting - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Sorting in Angular Gantt Chart Component
+# Column Sorting with Multi-Sort Support in Angular Gantt Chart
 
 The [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component provides sorting functionality to arrange task data in ascending or descending order based on column values.
 
@@ -89,7 +92,7 @@ You can externally remove sorting from a specific column in the Angular Gantt Ch
 
 ### Clear sorting
 
-You can clear all sorted columns in the Angular Gantt Chart component using the [clearSorting](https://ej2.syncfusion.com/angular/documentation/api/gantt#clearsorting) method to reset the Gantt Chart to its unsorted state.
+You can clear all sorted columns in the Angular Gantt Chart component using the [clearSorting](https://ej2.syncfusion.com/angular/documentation/api/gantt#clearsorting) method to remove all applied sorting and restore the default unsorted state.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -224,6 +227,6 @@ By default, clicking a column header switches the sort order between ascending, 
 
 ## Touch interaction
 
-To perform a tap action on a column header in the Angular Gantt Chart component, the [sorting](sorting#sorting) operation is triggered for the selected column. A popup appears when multi-column sorting is enabled. To sort multiple columns, tap the popup and then tap the desired column headers. The following screenshot shows Gantt touch sorting.
+To perform a tap action on a column header in the Angular Gantt Chart component, the [sorting](https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/sorting) operation is triggered for the selected column. A popup appears when multi-column sorting is enabled. To sort multiple columns, tap the popup and then tap the desired column headers. The following screenshot shows Gantt touch sorting.
 
 ![Multiple Sorting](images/multiple-sorting.png)

@@ -1,17 +1,55 @@
 ---
 layout: post
-title: Getting Started with Blazor Gantt Chart in Blazor WASM App | Syncfusion
-description: Check out and learn about getting started with Blazor Gantt Chart component in Blazor WebAssembly Application.
+title: Getting Started with Blazor Gantt Chart in WASM App | Syncfusion
+description: Learn how to install and set up the Syncfusion Blazor Gantt Chart in a Blazor WebAssembly App with task data binding and timeline rendering.
+keywords: blazor gantt chart, getting started, wasm, webassembly, syncfusion gantt, task data binding, timeline rendering
+canonical: https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart
 platform: gantt-sdk
-control: Gantt Chart
+control: Getting Started - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Getting started with Blazor Gantt Chart component
+# Getting Started with Blazor Gantt Chart in WebAssembly App
 
 This section briefly explains about how to include the [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) component in your Blazor WebAssembly App using [Visual Studio](https://visualstudio.microsoft.com/vs/), [Visual Studio Code](https://code.visualstudio.com/), and the [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/).
 
-> **Ready to streamline your Blazor development?** <br/>Discover the full potential of Blazor components with AI Coding Assistants. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Code Studio and more. [Explore AI Coding Assistants](https://blazor.syncfusion.com/documentation/ai-coding-assistants/overview).
+> **Ready to streamline your Blazor development?** <br/>Discover the full potential of Blazor components with AI Coding Assistants. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like VS Code, Cursor, Code Studio and more. [Explore AI Coding Assistants](https://blazor.syncfusion.com/documentation/ai-coding-assistant/overview).
+
+## Using .NET CLI Templates
+
+Quickly set up a Blazor application using the preconfigured [Syncfusion WebAssembly App Template](https://help.syncfusion.com/extension/syncfusion-blazor-webassemblyapp-template-via-nuget/installation).
+
+First, install the template using the .NET CLI.
+
+{% tabs %}
+{% highlight razor tabtitle=".NET CLI" %}
+
+dotnet new install Syncfusion.Blazor.WebAssemblyApp.Templates
+
+{% endhighlight %}
+{% endtabs %}
+
+Next, create a new project with following command.
+
+{% tabs %}
+{% highlight razor tabtitle="WebAssembly" %}
+
+dotnet new syncfusionblazorwasmapp --name MyApp --pwa true
+
+{% endhighlight %}
+
+{% endtabs %}
+
+After creating the project, navigate to the main project folder (for example, `MyApp`) and run the following command.
+
+{% highlight razor tabtitle=".NET CLI" %}
+
+cd MyApp
+dotnet run
+
+{% endhighlight %}
 
 ## Create a new Blazor WebAssembly (Standalone) App
 
@@ -40,24 +78,9 @@ Alternatively, create a **Blazor WebAssembly App** using Visual Studio Code via 
 
 {% endtabcontent %}
 
-{% tabcontent .NET CLI %}
-
-Run the following command to create a new Blazor WebAssembly App.
-
-{% tabs %}
-{% highlight razor tabtitle="Command Prompt" %}
-
-dotnet new blazorwasm -o BlazorApp
-cd BlazorApp
-
-{% endhighlight %}
-{% endtabs %}
-
-{% endtabcontent %}
-
 {% endtabcontents %}
 
-## Install the required Blazor packages
+### Install the required Blazor packages
 
 Install the [Syncfusion.Blazor.Gantt](https://www.nuget.org/packages/Syncfusion.Blazor.Gantt) and [Syncfusion.Blazor.Themes](https://www.nuget.org/packages/Syncfusion.Blazor.Themes/) NuGet packages. All Syncfusion Blazor packages are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.blazor). See the [NuGet packages](https://blazor.syncfusion.com/documentation/nuget-packages) topic for details.
 
@@ -96,24 +119,9 @@ dotnet add package Syncfusion.Blazor.Themes -v {{ site.releaseversion }}
 
 {% endtabcontent %}
 
-{% tabcontent .NET CLI %}
-
-Open the command prompt and run the following commands.
-
-{% tabs %}
-{% highlight razor tabtitle="Command Prompt" %}
-
-dotnet add package Syncfusion.Blazor.Gantt -v {{ site.releaseversion }}
-dotnet add package Syncfusion.Blazor.Themes -v {{ site.releaseversion }}
-
-{% endhighlight %}
-{% endtabs %}
-
-{% endtabcontent %}
-
 {% endtabcontents %}
 
-## Add import namespaces
+### Add import namespaces
 
 After the packages are installed, open the **~/_Imports.razor** file and import the `Syncfusion.Blazor` and `Syncfusion.Blazor.Gantt` namespaces.
 
@@ -126,19 +134,28 @@ After the packages are installed, open the **~/_Imports.razor** file and import 
 {% endhighlight %}
 {% endtabs %}
 
-## Register the Blazor service
+### Register the Blazor service
 
-Open the **Program.cs** file in Blazor WebAssembly App and register the Blazor service and include the required namespace reference `using Syncfusion.Blazor;` at the top.
+Open the **Program.cs** file in Blazor WebAssembly App and register the Syncfusion Blazor service. Include the required namespace reference `using Syncfusion.Blazor;` at the top, then call `AddSyncfusionBlazor()` in the service configuration section.
 
 {% tabs %}
 {% highlight C# tabtitle="Program.cs" %}
 
+using Syncfusion.Blazor;
+
+var builder = WebAssemblyHostBuilder.CreateDefault(args);
+builder.RootComponents.Add<App>("#app");
+builder.RootComponents.Add<HeadOutlet>("head::after");
+
+builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 builder.Services.AddSyncfusionBlazor();
+
+await builder.Build().RunAsync();
 
 {% endhighlight %}
 {% endtabs %}
 
-## Add stylesheet and script resources
+### Add stylesheet and script resources
 
 The theme stylesheet and script can be accessed from NuGet through [Static Web Assets](https://blazor.syncfusion.com/documentation/appearance/themes#static-web-assets). Include the [stylesheet](https://blazor.syncfusion.com/documentation/appearance/themes) at the end of the `<head>` section in the **~wwwroot/index.html** file.
 
@@ -150,7 +167,7 @@ The theme stylesheet and script can be accessed from NuGet through [Static Web A
 {% endhighlight %}
 {% endtabs %}
 
-Include the required [script references](https://blazor.syncfusion.com/documentation/common/adding-script-references) at the end of the `<body>` section in the **~wwwroot/index.html** file to enable Gantt Chart functionality.
+Include the required [script references](https://blazor.syncfusion.com/documentation/common/adding-script-references) at the end of the `<body>` section in the **~wwwroot/index.html** file to enable Blazor Gantt Chart functionality.
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -160,7 +177,7 @@ Include the required [script references](https://blazor.syncfusion.com/documenta
 {% endhighlight %}
 {% endtabs %}
 
-## Add Blazor Gantt Chart component
+### Add Blazor Gantt Chart component
 
 Add the [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-chart) component in the **~/Pages/*.razor** (for example, **Home.razor**) file.
 
@@ -214,7 +231,7 @@ Add the [Blazor Gantt Chart](https://www.syncfusion.com/gantt-sdk/blazor-gantt-c
 {% endhighlight %}
 {% endtabs %}
 
-## Run the application
+### Run the application
 
 {% tabcontents %}
 
@@ -238,27 +255,12 @@ dotnet run
 
 {% endtabcontent %}
 
-{% tabcontent .NET CLI %}
-
-Open the command prompt and run the following command.
-
-{% tabs %}
-{% highlight razor tabtitle="Command Prompt" %}
-
-dotnet run
-
-{% endhighlight %}
-{% endtabs %}
-
-{% endtabcontent %}
-
 {% endtabcontents %}
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/BtLnjGrtTXAxUBbg?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 ## See also
 
-1. [Getting Started with Blazor for Client-Side in .NET Core CLI](https://blazor.syncfusion.com/documentation/getting-started/blazor-webassembly-dotnet-cli)
-2. [Getting Started with Blazor for Server-Side in Visual Studio](https://blazor.syncfusion.com/documentation/getting-started/blazor-server-side-visual-studio)
-3. [Getting Started with Blazor for Server-Side in .NET Core CLI](https://blazor.syncfusion.com/documentation/getting-started/blazor-server-side-dotnet-cli)
+1. [Getting Started with Blazor Web App in Visual Studio](https://blazor.syncfusion.com/documentation/getting-started/blazor-web-app)
+2. [Getting Started with Blazor Server App](https://blazor.syncfusion.com/documentation/getting-started/blazor-server-side-visual-studio)
  

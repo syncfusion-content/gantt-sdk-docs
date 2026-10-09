@@ -1,14 +1,17 @@
 ---
 layout: post
-title: Splitter in Angular Gantt Chart Component | Syncfusion
-description: Learn how to configure the splitter in the Syncfusion Angular Gantt Chart component for flexible TreeGrid and Chart panel sizing.
-control: Splitter
+title: Splitter in Angular Gantt Chart | Panel Resizing | Syncfusion
+description: Learn how to configure the splitter to resize TreeGrid and chart panels with flexible pixel or percentage positioning.
+keywords: angular gantt splitter, splittersettings, panel resizing, treegrid pane, chart pane, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/angular/gantt-chart/splitter
 platform: gantt-sdk
+control: Splitter - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Splitter in Angular Gantt Chart Component
+# Splitter with Panel Resizing in Angular Gantt Chart
 
 The splitter in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component divides the TreeGrid pane and Chart pane, enabling flexible width allocation for project visualization. Configured via the [splitterSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/splitterSettings) property, the splitter supports pixel or percentage-based positioning, column-based alignment, and predefined view modes. The [setSplitterPosition](https://ej2.syncfusion.com/angular/documentation/api/gantt#setsplitterposition) method adjusts positioning dynamically, while the [splitterResizeStart](https://ej2.syncfusion.com/angular/documentation/gantt/events#splitterresizestart), [splitterResizing](https://ej2.syncfusion.com/angular/documentation/gantt/events#splitterresizing), and [splitterResized](https://ej2.syncfusion.com/angular/documentation/gantt/events#splitterresized) events handle resize interactions. The splitter includes ARIA labels for accessibility, ensuring screen reader compatibility, and adapts to responsive designs, though narrow screens may limit visible columns or timeline segments. By default, both panels are visible with equal width.
 
@@ -53,7 +56,7 @@ import { GanttComponent, GanttModule, SelectionService } from '@syncfusion/ej2-a
     selector: 'app-root',
     standalone: true,
     imports: [GanttModule],
-    providers: [SelectionService]
+    providers: [SelectionService],
     template: `
        <ejs-gantt #gantt id="ganttContainer" height="475px" width="650px" [dataSource]="data" [taskFields]="taskSettings"
         [allowSelection]="true" [labelSettings]="labelSettings" [treeColumnIndex]="1" [splitterSettings]="splitterSettings"
@@ -139,7 +142,7 @@ import { GanttModule, GanttComponent, EditService, ISplitterResizedEventArgs,Sel
     selector: 'app-root',
     providers: [EditService, SelectionService, ToolbarService, DayMarkersService],
     standalone: true,
-    imports: [GanttModule]
+    imports: [GanttModule],
     template: `
         <div class="control-section">
             <ejs-gantt #gantt height="410px" [dataSource]="data" [taskFields]="taskFields" [splitterSettings]="splitterSettings" [treeColumnIndex]="1" (dataBound)="onDataBound()" (splitterResizing)="onSplitterResizing($event)"(splitterResized)="onSplitterResized($event)">

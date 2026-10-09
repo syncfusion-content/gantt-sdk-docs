@@ -36,21 +36,21 @@
     private SfKanban<PizzaModel> KanbanPizzaRef;
     public class TasksModel
     {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string Status { get; set; }
-        public string Summary { get; set; }
-        public string Assignee { get; set; }
+        public string? Id { get; set; }
+        public string? Title { get; set; }
+        public string? Status { get; set; }
+        public string? Summary { get; set; }
+        public string? Assignee { get; set; }
         public int RankId { get; set; }
     }
     public class PizzaModel
     {
-        public string OrderID { get; set; }
-        public string Title { get; set; }
-        public string Type { get; set; }
-        public string Size { get; set; }
-        public string Category { get; set; }
-        public string Description { get; set; }
+        public string? OrderID { get; set; }
+        public string? Title { get; set; }
+        public string? Type { get; set; }
+        public string? Size { get; set; }
+        public string? Category { get; set; }
+        public string? Description { get; set; }
         public int RankId { get; set; }
     }
     private List<string> TaskDropTarget = new List<string> { "#PizzaKanban" };

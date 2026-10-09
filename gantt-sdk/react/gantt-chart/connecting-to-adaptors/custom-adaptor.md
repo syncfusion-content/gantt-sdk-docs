@@ -1,16 +1,19 @@
 ---
 layout: post
-title: React Gantt Chart - Custom Adaptor | Syncfusion
-description: React Gantt Chart custom adaptor explains creating a custom data adaptor to transform requests and responses, enabling custom backends and behaviors.
-control: Custom Adaptor
+title: Custom Adaptor in React Gantt Chart | Syncfusion
+description: Learn how to create a custom data adaptor in Syncfusion React Gantt Chart to transform requests and responses for custom backend data binding.
+keywords: react gantt custom adaptor, custom data binding, custom backend, adaptor transform, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/connecting-to-adaptors/custom-adaptor
 platform: gantt-sdk
+control: Custom Adaptor - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Custom Remote Data Binding in Syncfusion React Gantt Chart
+# Custom Adaptor for Data Binding in React Gantt Chart
 
-The `CustomAdaptor` in Syncfusion<sup style="font-size:70%">&reg;</sup> React Gantt Chart is a powerful extension mechanism that **customizes any existing adaptor** ([RemoteSaveAdaptor](./remote-save-adaptor), [WebMethodAdaptor](./web-method-adaptor), [ODataV4Adaptor](./odatav4-adaptor), [GraphQLAdaptor](./graphql-adaptor)) to meet specific application requirements. Instead of creating an adaptor from scratch, `CustomAdaptor` intercepts and customizes the HTTP request/response pipeline used by the Syncfusion React Gantt Chart.
+The `CustomAdaptor` in Syncfusion<sup style="font-size:70%">&reg;</sup> React Gantt Chart is a powerful extension mechanism that **customizes any existing adaptor** ([RemoteSaveAdaptor](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/connecting-to-adaptors/remote-save-adaptor), [WebMethodAdaptor](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/connecting-to-adaptors/web-method-adaptor), [ODataV4Adaptor](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/connecting-to-adaptors/odatav4-adaptor), [GraphQLAdaptor](https://help.syncfusion.com/gantt-sdk/react/gantt-chart/connecting-to-adaptors/graphql-adaptor)) to meet specific application requirements. Instead of creating an adaptor from scratch, `CustomAdaptor` intercepts and customizes the HTTP request/response pipeline used by the Syncfusion React Gantt Chart.
 
 For detailed guidance, refer to the [DataManager CustomAdaptor documentation](https://ej2.syncfusion.com/react/documentation/data/adaptors/custom-adaptor), which explains the usage of custom adaptors in depth. For complete server-side setup and advanced implementation details, see the [DataManager ODataV4Adaptor documentation](https://ej2.syncfusion.com/react/documentation/data/adaptors/odatav4-adaptor), covering endpoint configuration, query handling, and recommended practices for integrating OData V4 services.
 
@@ -54,24 +57,7 @@ npm install @syncfusion/ej2-data --save
 - Include the required Syncfusion theme and component styles so the Gantt Chart and its input controls render correctly. Add these imports to **index.css** or **App.css**:
 
 ```ts
-/* Basic Gantt Chart styles */
-@import "../node_modules/@syncfusion/ej2-base/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-gantt/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-grids/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-treegrid/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-layouts/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css";
-
-/* For editing, toolbar, and dialog features */
-@import "../node_modules/@syncfusion/ej2-calendars/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css";
-@import "../node_modules/@syncfusion/ej2-notifications/styles/tailwind3.css";
-
-/* For rich text editor in dialog notes tab */
-@import "../node_modules/@syncfusion/ej2-richtexteditor/styles/tailwind3.css";
+@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/gantt/index.css";
 ```
 
 Import the **App.css** in the application entry point (**App.jsx**).
@@ -148,7 +134,7 @@ After creating the custom adaptor class, integrate it with the React Gantt Chart
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-
+{% raw %}
 import { DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data';
 import { CustomAdaptor } from './CustomAdaptor';
 import { GanttComponent, Inject, Edit, Selection, Toolbar, ColumnsDirective, ColumnDirective, ContextMenu, Filter, Sort, Reorder, Resize, ColumnMenu, VirtualScroll, RowDD, } from '@syncfusion/ej2-react-gantt';
@@ -203,7 +189,7 @@ function App() {
     const toolbar = ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll', 'Indent', 'Outdent'];
 
     return (
-        <div style={% raw %}{{ margin: '20px' }}{% endraw %}>
+        <div style={{ margin: '20px' }}>
             <h2>ODataV4Adaptor with Gantt</h2>
             <GanttComponent dataSource={data} taskFields={taskFields} resourceFields={resourceFields} resources={resources} showColumnMenu= {true}
                 editSettings={editSettings} height='400px' toolbar={toolbar} allowReordering={true} allowResizing={true} allowRowDragAndDrop={true} enableContextMenu={true} allowFiltering={true} allowSorting={true}>
@@ -222,7 +208,7 @@ function App() {
 }
 
 export default App;
-
+{% endraw %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -320,7 +306,7 @@ React Gantt Chart enables full CRUD functionality by configuring the required [t
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-
+{% raw %}
 import { DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data';
 import { CustomAdaptor } from './CustomAdaptor';
 import { GanttComponent, Inject, Edit, Selection, Toolbar, ColumnsDirective, ColumnDirective, ContextMenu, Filter, Sort, Reorder, Resize, ColumnMenu, VirtualScroll, RowDD, } from '@syncfusion/ej2-react-gantt';
@@ -375,7 +361,7 @@ function App() {
     const toolbar = ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll', 'Indent', 'Outdent'];
 
     return (
-        <div style={% raw %}{{ margin: '20px' }}{% endraw %}>
+        <div style={{ margin: '20px' }}>
             <h2>ODataV4Adaptor with Gantt</h2>
             <GanttComponent dataSource={data} taskFields={taskFields} resourceFields={resourceFields} resources={resources} showColumnMenu= {true}
                 editSettings={editSettings} height='400px' toolbar={toolbar} allowReordering={true} allowResizing={true} allowRowDragAndDrop={true} enableContextMenu={true} allowFiltering={true} allowSorting={true}>
@@ -394,7 +380,7 @@ function App() {
 }
 
 export default App;
-
+{% endraw %}
 {% endhighlight %}
 {% endtabs %}
 

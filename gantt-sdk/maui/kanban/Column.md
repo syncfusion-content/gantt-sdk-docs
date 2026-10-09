@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Column in .NET MAUI Kanban Board control | Syncfusion
-description: Learn here all about Column support in Syncfusion® .NET MAUI Kanban Board (SfKanban) control, its elements and more.
+title: Column in .NET MAUI Kanban Board | Syncfusion
+description: Learn about Column support in Syncfusion® .NET MAUI Kanban Board with sizing, categories, headers, drag-and-drop, limits, and styling options.
 platform: gantt-sdk
 control: Kanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Column in .NET MAUI Kanban Board (SfKanban)
+# Column in .NET MAUI Kanban Board
 
 ## Customizing Column Size
 
@@ -793,7 +794,7 @@ public class KanbanViewModel
 
 ### Customize the placeholder style
 
-The .NET MAUI Kanban control supports styling the placeholder area, where cards can be dropped during drag-and-drop operations using the [`PlaceholderStyle`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Kanban.KanbanColumn.html#Syncfusion_Maui_Kanban_KanbanColumn_PlaceholderStyle) property of the [`KanbanColumn`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Kanban.KanbanColumn.html). This customization enhances visual clarity and improves the user experience during interactions.
+The .NET MAUI Kanban Board control supports styling the placeholder area, where cards can be dropped during drag-and-drop operations using the [`PlaceholderStyle`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Kanban.KanbanColumn.html#Syncfusion_Maui_Kanban_KanbanColumn_PlaceholderStyle) property of the [`KanbanColumn`](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.Kanban.KanbanColumn.html). This customization enhances visual clarity and improves the user experience during interactions.
 
 {% tabs %}
 {% highlight xaml hl_lines="4 5 6 7 8 9 10 11 12 13 20 24 28 32" %}

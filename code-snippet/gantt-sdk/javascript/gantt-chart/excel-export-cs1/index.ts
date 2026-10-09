@@ -1,5 +1,6 @@
 import { Gantt, Toolbar, ExcelExport, Selection } from '@syncfusion/ej2-gantt';
 import { GanttData } from './datasource.ts';
+import { ExcelExportProperties } from '@syncfusion/ej2-grids';
 
 Gantt.Inject(Toolbar, ExcelExport, Selection);
 

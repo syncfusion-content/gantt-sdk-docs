@@ -1,39 +1,25 @@
 ---
 layout: post
-title: Columns and their Usages in Syncfusion ASP.NET MVC Kanban Component
-description: Learn here all about Columns in Syncfusion ASP.NET MVC Kanban component of Syncfusion Essential JS 2 and more.
+title: Columns in ASP.NET MVC Kanban | Syncfusion
+description: Learn how to configure columns, headers, and workflow stages in Syncfusion ASP.NET MVC Kanban for organized task management.
+keywords: asp-net-mvc kanban columns, syncfusion kanban, workflow columns, kanban stages
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/kanban/columns
 platform: gantt-sdk
-control: Columns
-publishingplatform: gantt-sdk
+control: Columns - Kanban
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-
-# Columns in Kanban Board
+# Columns Configuration and Workflow Stages in ASP.NET MVC Kanban
 
 The **Kanban** columns represent the each stage of the process. The column definitions are used as the **DataSource** schema in the Kanban. The Kanban operations such as drag-and-drop, swimlane, and toggle columns are performed based on column definitions.
 
 ## Single-key mapping
 
-Kanban columns are categorized by mapping the **Key** from the datasource using the `KeyField` property. The corresponding **Value** in the datasource is mapped inside the columns `KeyField`.  Based on this categorization, Kanban columns are split on this board.
+Kanban columns are categorized by mapping the **Key** from the datasource using the [`KeyField`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_KeyField) property. The corresponding **Value** in the datasource is mapped inside the columns [`KeyField`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_KeyField).  Based on this categorization, Kanban columns are split on this board.
 
-N> The `KeyField` property is mandatory to render the columns in the Kanban board.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/columns/single-key/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/columns/single-key/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/columns/single-key/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+N> The [`KeyField`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_KeyField) property is mandatory to render the columns in the Kanban board.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -46,33 +32,13 @@ N> The `KeyField` property is mandatory to render the columns in the Kanban boar
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/columns/single-key/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
-
 Output be like the below.
 
 ![kanban](./images/singel-key.PNG)
 
 ## Multi-key mapping
 
-Kanban board allows to render a single column by mapping multiple keys using `KeyField` property. In below sample, specified the multiple keys(Open, Validate) to a single column.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/columns/multi-key/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/columns/multi-key/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/columns/multi-key/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+Kanban board allows to render a single column by mapping multiple keys using [`KeyField`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_KeyField) property. In below sample, specified the multiple keys(Open, Validate) to a single column.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -85,17 +51,13 @@ Kanban board allows to render a single column by mapping multiple keys using `Ke
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/columns/multi-key/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
-
 Output be like the below.
 
 ![kanban](./images/multi-key.PNG)
 
 ## Header text
 
-You can provide the column header text of Kanban columns using the `HeaderText` property. If you have not specified any header text, it will render the header without any text.
+You can provide the column header text of Kanban columns using the [`HeaderText`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.KanbanColumn.html#Syncfusion_EJ2_Kanban_KanbanColumn_HeaderText) property. If you have not specified any header text, it will render the header without any text.
 
 ## Header template
 
@@ -112,22 +74,6 @@ You can get the following columns data when using header template.
 * showItemCount
 * count
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/columns/header-template/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/columns/header-template/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/columns/header-template/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/columns/header-template/razor %}
@@ -139,35 +85,15 @@ You can get the following columns data when using header template.
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/columns/header-template/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
-
 Output be like the below.
 
 ![kanban](./images/header-template.PNG)
 
 ## Toggle columns
 
-Kanban allows to expand or collapse its columns using `AllowToggle` inside the `Columns` property. When enable the property, it will render the expand or collapse icon to the column header.
+Kanban allows to expand or collapse its columns using [`AllowToggle`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.KanbanColumn.html#Syncfusion_EJ2_Kanban_KanbanColumn_AllowToggle) inside the [`Columns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_Columns) property. When enable the property, it will render the expand or collapse icon to the column header.
 
 N> By default, collapsed column width is set to `50px`.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/columns/toggle-columns/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/columns/toggle-columns/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/columns/toggle-columns/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -180,10 +106,6 @@ N> By default, collapsed column width is set to `50px`.
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/columns/toggle-columns/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
-
 Output be like the below.
 
 ![kanban](./images/toggle-columns.PNG)
@@ -192,25 +114,9 @@ Output be like the below.
 
 By default, all columns are on expanded state when loading the Kanban board initially. But, you can render the columns with collapsed state using the `IsExpanded` property.
 
-N>The `IsExpanded` property only works when enabling the `AllowToggle` property on particular column.
+N>The `IsExpanded` property only works when enabling the [`AllowToggle`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.KanbanColumn.html#Syncfusion_EJ2_Kanban_KanbanColumn_AllowToggle) property on particular column.
 
 In the following example, the To Do column is collapsed on initialization of Kanban board.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/columns/initially-collapsed/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/columns/initially-collapsed/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/columns/initially-collapsed/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -223,10 +129,6 @@ In the following example, the To Do column is collapsed on initialization of Kan
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/columns/initially-collapsed/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
-
 Output be like the below.
 
 ![kanban](./images/initially-collapsed.PNG)
@@ -234,22 +136,6 @@ Output be like the below.
 ## Drag and Drop
  
 The Kanban component allows dynamic column reordering through drag-and-drop interactions. To enable this, set the [`allowColumnDragAndDrop`] property to true. Once enabled, users can rearrange columns by dragging a column header to a new position, with visual feedback highlighting potential drop locations.
- 
-{% if page.publishingplatform == "aspnet-core" %}
- 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/columns/drag-drop/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/columns/drag-drop/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/columns/drag-drop/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
- 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
  
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -262,7 +148,6 @@ The Kanban component allows dynamic column reordering through drag-and-drop inte
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/columns/drag-drop/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Stacked headers
 
@@ -271,22 +156,6 @@ Stacked headers are the additional headers to column header that will group the 
 Define the grouping of columns **Key** value to the `KeyFields` property and provide the custom header text name to grouped columns using the `Text` property, which is placed inside the `StackedHeaders` property.
 
 In the following code, the kanban columns 'InProgress, Review' are grouped under 'Development phase' category.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/columns/stacked-headers/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Datasource.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/columns/stacked-headers/datasource.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/kanban/columns/stacked-headers/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -299,10 +168,6 @@ In the following code, the kanban columns 'InProgress, Review' are grouped under
 {% include code-snippet/gantt-sdk/asp-net-mvc/kanban/columns/stacked-headers/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
-
 Output be like the below.
 
 ![kanban](./images/stacked-header.PNG)

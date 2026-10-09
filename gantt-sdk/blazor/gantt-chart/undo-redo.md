@@ -1,19 +1,23 @@
 ---
 layout: post
-title: Undo and Redo in Blazor Gantt Chart Component | Syncfusion
-description: Learn how to enable, configure, and handle undo and redo actions in the Syncfusion Blazor Gantt Chart, including keyboard shortcuts and supported actions.
+title: Undo and Redo in Blazor Gantt Chart | Syncfusion
+description: Learn how to configure undo and redo in Syncfusion Blazor Gantt Chart to revert task edits, dependency changes, and project modifications with action history.
+keywords: blazor gantt undo redo, enableundoredo, undoredoactions, action history, revert changes, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/undo-redo
 platform: gantt-sdk
-control: Gantt Chart
+control: Undo Redo - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# Undo and Redo in Blazor Gantt Chart Component
+# Undo and Redo with Action History Management in Blazor Gantt Chart
 
 The Syncfusion® Blazor Gantt Chart component includes built-in undo and redo functionality to revert or restore recent changes. This support improves editing efficiency, reduces errors, and supports quick recovery from accidental modifications.
 
 ## Enable undo and redo
 
-The **Undo** in the Blazor Gantt Chart reverts the most recent action, such as modifications to tasks, dependencies, and other supported operations, while the **Redo** reapplies an action that was previously undone using the **Undo** option. This functionality can be enabled by setting the [EnableUndoRedo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_EnableUndoRedo) property in the Gantt Chart component. When enabled, undo and redo operations can be performed using the built-in toolbar items, and the [OnUndoRedo](https://blazor.syncfusion.com/documentation/gantt-chart/events#onundoredo) event is triggered after each undo or redo operation is completed.
+The **Undo** in the Blazor Gantt Chart reverts the most recent action, such as modifications to tasks, dependencies, and other supported operations, while the **Redo** reapplies an action that was previously undone using the **Undo** option. This functionality can be enabled by setting the [EnableUndoRedo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gantt.SfGantt-1.html#Syncfusion_Blazor_Gantt_SfGantt_1_EnableUndoRedo) property in the Blazor Gantt Chart component. When enabled, undo and redo operations can be performed using the built-in toolbar items, and the [OnUndoRedo](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#onundoredo) event is triggered after each undo or redo operation is completed.
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
@@ -298,7 +302,7 @@ In the following example, clicking an external button invokes the `UndoAsync` me
     }
 
     /// <summary>
-    /// Handles the undo action by invoking the Gantt Chart component's asynchronous undo logic.
+    /// Handles the undo action by invoking the Blazor Gantt Chart component's asynchronous undo logic.
     /// </summary>
     private async Task UndoHandler()
     {
@@ -310,7 +314,7 @@ In the following example, clicking an external button invokes the `UndoAsync` me
     }
 
     /// <summary>
-    /// Handles the redo action by invoking the Gantt Chart component's asynchronous redo logic.
+    /// Handles the redo action by invoking the Blazor Gantt Chart component's asynchronous redo logic.
     /// </summary>
     private async Task RedoHandler()
     {
@@ -355,6 +359,6 @@ In the following example, clicking an external button invokes the `UndoAsync` me
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/hXVnXdVroTNIBznu?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## See Also
-- [How to add undo/redo events?](https://blazor.syncfusion.com/documentation/gantt-chart/events#onundoredo)
-- [What are the keys used for undo/redo?](https://blazor.syncfusion.com/documentation/gantt-chart/accessibility#undo-redo)
+## See also
+- [How to add undo/redo events?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/events#onundoredo)
+- [What are the keys used for undo/redo?](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/accessibility#undo-redo)

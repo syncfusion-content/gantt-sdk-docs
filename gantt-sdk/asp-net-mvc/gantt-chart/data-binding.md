@@ -1,50 +1,39 @@
 ---
 layout: post
-title: Data Binding in Syncfusion ASP.NET MVC Gantt Component
-description: Learn here all about Data Binding in Syncfusion ASP.NET MVC Gantt component of Syncfusion Essential JS 2 and more.
+title: Data Binding in ASP.NET MVC Gantt Chart | Syncfusion
+description: Learn data binding in Syncfusion ASP.NET MVC Gantt Chart with local arrays, remote data, DataManager, and dynamic data source updates for project management.
+keywords: asp.net mvc gantt data binding, datamanager, json data, local data, data source binding, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-mvc/gantt-chart/data-binding
 platform: gantt-sdk
-control: Data Binding
-publishingplatform: gantt-sdk
+control: Data Binding - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
 ---
 
+# Data Binding from Local and Remote Sources in ASP.NET MVC Gantt Chart
 
-# Data Binding in Gantt
+The Gantt control uses `DataManager` for binding the data source, which supports both RESTful JSON data services and local JavaScript object array. The [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataSource) property can be assigned either with the instance of DataManager or JavaScript object array collection. The Gantt control supports binding two types of data:
 
-The Gantt control uses `DataManager` for binding the data source, which supports both RESTful JSON data services and local JavaScript object array. The [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataSource) property can be assigned either with the instance of DataManager or JavaScript object array collection. The Gantt control supports binding two types of data:
-
-* Local data
-* Remote data
+- Local data
+- Remote data
 
 ## Local data
 
-To bind local data to Gantt, you can assign a JavaScript object array to the [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataSource) property. The local data source can also be provided as an instance of the `DataManager`.
+To bind local data to Gantt, you can assign a JavaScript object array to the [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataSource) property. The local data source can also be provided as an instance of the `DataManager`.
 
 In local data binding, the data source for rendering the Gantt control is retrieved from the same application locally.
 
 The following are the two types of data binding possible with the Gantt control:
 
-* Hierarchical data binding.
-* Self-referential data binding (Flat data).
+- Hierarchical data binding.
+- Self-referential data binding (Flat data).
 
 ### Hierarchical data binding
 
-The [`Child`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Child) property is used to map the child records in hierarchical data.
+The [`Child`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Child) property is used to map the child records in hierarchical data.
 
 The following code example shows how to bind the hierarchical local data into the Gantt control.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/hierarchyData/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="HierarchyData.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/hierarchyData/hierarchyData.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -54,29 +43,13 @@ The following code example shows how to bind the hierarchical local data into th
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/hierarchyData/hierarchyData.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ### Self-referential data binding (Flat data)
 
-The Gantt control can be bound with self-referential data by mapping the data source field values to the [`Id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Id) and [`ParentID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_ParentID) properties.
+The Gantt control can be bound with self-referential data by mapping the data source field values to the [`Id`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Id) and [`ParentID`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_ParentID) properties.
 
-* **ID field**: This field contains unique values used to identify each individual task and it is mapped to the [`Id`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Id) property.
-* **Parent ID field**: This field contains values that indicate parent tasks and it is mapped to the [`ParentID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_ParentID) property.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/selfReference/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="SelfReference.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/selfReference/selfReference.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+- **ID field**: This field contains unique values used to identify each individual task and it is mapped to the [`Id`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Id) property.
+- **Parent ID field**: This field contains values that indicate parent tasks and it is mapped to the [`ParentID`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_ParentID) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -86,26 +59,10 @@ The Gantt control can be bound with self-referential data by mapping the data so
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/selfReference/selfReference.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Remote data
 
-To bind remote data to the Gantt component, assign service data as an instance of `DataManager` to the [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataSource) property.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/remoteData/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="RemoteData.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/remoteData/remoteData.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+To bind remote data to the Gantt component, assign service data as an instance of `DataManager` to the [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataSource) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -115,32 +72,16 @@ To bind remote data to the Gantt component, assign service data as an instance o
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/remoteData/remoteData.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-
-
-![Alt text](images/remoteData.png)
+![Alt text](./images/remoteData.png)
 
 ### URL Adaptor
 
-In Gantt, we can fetch data from SQL database using `ADO.NET` Entity Data Model and update the changes on CRUD action to the server by using `DataManager` support. To communicate with the remote data we are using `UrlAdaptor` of DataManager property to call the server method and get back resultant data in JSON format. We can know more about `UrlAdaptor` from [`here`](https://ej2.syncfusion.com/javascript/documentation/data/adaptors/?no-cache=1).
+In Gantt, you can fetch data from a SQL database using the `ADO.NET` Entity Data Model and update the changes on CRUD action to the server using the `DataManager` support. To communicate with the remote data, use the `UrlAdaptor` of the DataManager property to call the server method and get back the resultant data in JSON format. You can know more about `UrlAdaptor` from [`here`](https://ej2.syncfusion.com/javascript/documentation/data/adaptors).
 
-N> Refer the [link](https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/models-data/creating-model-classes-with-the-entity-framework-cs) to create the `ADO.NET` Entity Data Model in Visual Studio,
+N> Refer the [link](https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/models-data/creating-model-classes-with-the-entity-framework-cs) to create the `ADO.NET` Entity Data Model in Visual Studio,
 
-We can define data source for Gantt as instance of DataManager using `url` property of DataManager. Check the below code snippet to assign data source to Gantt.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/urlAdaptor/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="UrlAdaptor.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/urlAdaptor/urlAdaptor.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+Define the data source for the Gantt as an instance of DataManager using the `url` property of DataManager. Check the below code snippet to assign the data source to the Gantt.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -150,30 +91,14 @@ We can define data source for Gantt as instance of DataManager using `url` prope
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/urlAdaptor/urlAdaptor.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ### Remote Save Adaptor
 
-You may need to perform all Gantt Actions on the client-side except the CRUD operations, which should be interacted with the server-side to persist data. It can be achieved in Gantt by using **RemoteSaveAdaptor**.
+You may need to perform all Gantt Actions on the client-side except the CRUD operations, which should be interacted with the server-side to persist data. Achieve this in Gantt using **RemoteSaveAdaptor**.
 
-Datasource must be set to the **json** property and set **RemoteSaveAdaptor** to the **adaptor** property of DataManager. CRUD operations can be mapped to the server-side using the **batchUrl** properties.
+Set the datasource to the **json** property and set the **RemoteSaveAdaptor** to the **adaptor** property of DataManager. CRUD operations can be mapped to the server-side using the **batchUrl** properties.
 
-You can use the following code example to use **RemoteSaveAdaptor** in Gantt.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/remoteSaveAdaptor/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="remoteSaveAdaptor.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/remoteSaveAdaptor/remoteSaveAdaptor.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+The following code example uses the **RemoteSaveAdaptor** in Gantt.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -183,11 +108,10 @@ You can use the following code example to use **RemoteSaveAdaptor** in Gantt.
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/remoteSaveAdaptor/remoteSaveAdaptor.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 The following code example describes the CRUD operations handled at server-side.
 
-```json
+```js
     public IActionResult BatchUpdate([FromBody] CRUDModel batchmodel)
     {
         public class CRUDModel
@@ -262,17 +186,6 @@ When a root node is expanded, its child nodes are rendered and maintained in a c
 
 When the <code>LoadChildOnDemand</code> is enabled, parent records are rendered in an expanded state.
 
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight c# tabtitle="LoadChildOnDemand.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/lazy-loading/lazyLoading.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/lazy-loading/razor %}
@@ -281,11 +194,10 @@ When the <code>LoadChildOnDemand</code> is enabled, parent records are rendered 
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/lazy-loading/lazyLoading.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 The following code example describes handling of Load on demand at server end.
 
-```json
+```js
     public object Get()
         {
             DataOperations operation = new DataOperations();
@@ -444,7 +356,7 @@ The following code example describes handling of Load on demand at server end.
                 val.duration = ord.duration;
                 val.predecessor = ord.predecessor;
             }
-            
+
             return value;
         }
 
@@ -567,28 +479,16 @@ The following code example describes handling of Load on demand at server end.
         }
 
 ```
+
 ### Limitations
 
-* Filtering, sorting  and searching are not supported in load on demand.
-* Only Self-Referential type data is supported with remote data binding in Gantt Chart.
-* Load-on-demand supports only the validated data source
+- Filtering, sorting and searching are not supported in load on demand.
+- Only Self-Referential type data is supported with remote data binding in Gantt Chart.
+- Load-on-demand supports only the validated data source
 
 ### Sending additional parameters to the server
 
-We can pass additional parameters using [`addParams`](../api/data/query/#addparams) method of [`Query`](../api/data/query/) class. In server side we have inherited and shown the additional parameter value in Syncfusion<sup style="font-size:70%">&reg;</sup> DataManager class itself. We pass an additional parameter in load time using [`load`](../api/gantt#load) event. We can also pass additional parameter to the CRUD model. Check the below code snippet to send additional parameter to Gantt.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/serverParameters/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="ServerParameters.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/serverParameters/serverParameters.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+We can pass additional parameters using [`addParams`](https://ej2.syncfusion.com/documentation/api/data/query#addparams) method of [`query`](https://ej2.syncfusion.com/documentation/api/data/query) class. In server side we have inherited and shown the additional parameter value in Syncfusion<sup style="font-size:70%">&reg;</sup> DataManager class itself. We pass an additional parameter in load time using [`load`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Load) event. We can also pass additional parameter to the CRUD model. Check the below code snippet to send additional parameter to Gantt.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -598,28 +498,12 @@ We can pass additional parameters using [`addParams`](../api/data/query/#addpara
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/serverParameters/serverParameters.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 #### Handling HTTP error
 
-During server interaction from the Gantt, some server-side exceptions may occur, and you can acquire those error messages or exception details in client-side using the [`actionFailure`](../api/gantt#actionfailure) event.
+During server interaction from the Gantt, some server-side exceptions may occur, and you can acquire those error messages or exception details in client-side using the [`actionFailure`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ActionFailure) event.
 
 The argument passed to the `actionFailure` event contains the error details returned from the server.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/httpError/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="HttpError.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/httpError/httpError.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -629,26 +513,10 @@ The argument passed to the `actionFailure` event contains the error details retu
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/httpError/httpError.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 #### Binding with Fetch
 
-You can use Gantt [`dataSource`](../api/gantt#datasource) property to bind the data source to Gantt from external Fetch request. In the below code we have fetched the data source from the server with the help of Fetch request and provided that to `dataSource` property by using [`onSuccess`](../api/base/ajax/#onsuccess) event of the Fetch.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/ajaxBinding/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="AjaxBinding.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/ajaxBinding/ajaxBinding.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+You can use Gantt [`dataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataSource) property to bind the data source to Gantt from external Fetch request. In the below code we have fetched the data source from the server with the help of Fetch request and provided that to `dataSource` property by using `onSuccess` event of the Fetch.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -658,9 +526,6 @@ You can use Gantt [`dataSource`](../api/gantt#datasource) property to bind the d
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/ajaxBinding/ajaxBinding.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 N> If you bind the dataSource from this way, then it acts like a local dataSource. So you cannot perform any server side crud actions.
 
@@ -670,40 +535,18 @@ The `Split-task` feature allows you to split a task or interrupt the work during
 
 ### Hierarchical
 
-To split a task at load time in hierarchical way, we need to define the segment details in datasource and this field should be mapped by using the [`taskFields.Segments`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) property.
+To split a task at load time in hierarchical way, we need to define the segment details in datasource and this field should be mapped by using the [`taskFields.Segments`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) property.
 
 ```html
-
-GanttDataSource Record2Child1 = new GanttDataSource()
-            {
-                TaskId = 3,
-                TaskName = "Plan timeline",
-                StartDate = new DateTime(2019, 02, 04),
-                EndDate = new DateTime(2019, 02, 10),
-                Duration = 10,
-                Progress = 60,
-                Segments = new List<GanttSegment>
-                {
-                    new GanttSegment {StartDate = new DateTime(2019,02,04), Duration = 2},
-                    new GanttSegment {StartDate = new DateTime(2019,02,05), Duration = 5},
-                    new GanttSegment {StartDate = new DateTime(2019,02,08), Duration = 3}
-                }
-            };
-
+GanttDataSource Record2Child1 = new GanttDataSource() { TaskId = 3, TaskName =
+"Plan timeline", StartDate = new DateTime(2019, 02, 04), EndDate = new
+DateTime(2019, 02, 10), Duration = 10, Progress = 60, Segments = new
+List<GanttSegment>
+  { new GanttSegment {StartDate = new DateTime(2019,02,04), Duration = 2}, new
+  GanttSegment {StartDate = new DateTime(2019,02,05), Duration = 5}, new
+  GanttSegment {StartDate = new DateTime(2019,02,08), Duration = 3} } };
+</GanttSegment>
 ```
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/split-task/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Split-task.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/split-task/split-task.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -713,39 +556,17 @@ GanttDataSource Record2Child1 = new GanttDataSource()
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/split-task/split-task.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-
-
-![Alt text](images/split-tasks.png)
+![Alt text](./images/split-tasks.png)
 
 ### Self-referential
 
-We can also define segment details as a flat data and this collection can be mapped by using [`segmentData`](../api/gantt/#segmentData) property. The segment id field of this collection is mapped by using the [`taskFields.SegmentId`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) property.
+We can also define segment details as a flat data and this collection can be mapped by using [`segmentData`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) property. The segment id field of this collection is mapped by using the [`taskFields.SegmentId`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SegmentData) property.
 
 ```html
-
-  GanttSegment Record1 = new GanttSegment()
-            {
-                segmentId = 2,
-                Duration = 2,
-                StartDate = new DateTime(2019, 04, 02),
-            };
-
+GanttSegment Record1 = new GanttSegment() { segmentId = 2, Duration = 2,
+StartDate = new DateTime(2019, 04, 02), };
 ```
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/split-selfreference/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Split-selfreference.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/split-selfreference/split-selfreference.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -755,30 +576,14 @@ We can also define segment details as a flat data and this collection can be map
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/data-binding/split-selfreference/split-selfreference.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-
-
-![Alt text](images/split-tasks.png)
+![Alt text](./images/split-tasks.png)
 
 N> Segment id field contains id of a task which should be split at load time.
 
 ## Improve performance by disabling validations
 
-The [`autoCalculateDateScheduling`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AutoCalculateDateScheduling) property can help you reduce the time taken for the Gantt chart to render on the initial load. When this API is enabled, parent-child validation, data validation, and predecessor validation are restricted, allowing the Gantt chart to load more quickly. Since we are disabling the validations, data source provided to gantt should have all data such as start date, end date, duration, as proper data.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/virtual-scroll-cs1/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Virtual-scroll.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/virtual-scroll-cs1/virtual-scroll.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+The [`autoCalculateDateScheduling`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AutoCalculateDateScheduling) property can help you reduce the time taken for the Gantt chart to render on the initial load. When this API is enabled, parent-child validation, data validation, and predecessor validation are restricted, allowing the Gantt chart to load more quickly. Since we are disabling the validations, data source provided to gantt should have all data such as start date, end date, duration, as proper data.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -788,7 +593,6 @@ The [`autoCalculateDateScheduling`](https://help.syncfusion.com/cr/aspnetcore-js
 {% include code-snippet/gantt-sdk/asp-net-mvc/gantt-chart/virtual-scroll-cs1/virtual-scroll.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Limitations
 

@@ -1,21 +1,23 @@
 ---
 layout: post
-title: Filtering in Syncfusion ASP.NET Core Gantt Component
-description: Learn here all about Filtering in Syncfusion ASP.NET Core Gantt component of Syncfusion Essential JS 2 and more.
+title: Filtering in ASP.NET Core Gantt Chart | Syncfusion
+description: Learn how to enable filtering in Syncfusion ASP.NET Core Gantt Chart using menu filters, search, hierarchy modes, and custom options.
+keywords: asp.net core gantt filtering, filter tasks, data filtering, filter conditions, advanced filtering, syncfusion gantt chart
+canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/filtering/filtering
 platform: gantt-sdk
-control: Filtering
-publishingplatform: gantt-sdk
+control: Filtering - Gantt Chart
 documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK/overview
 ---
 
+# Filtering and Search Features in ASP.NET Core Gantt Chart
 
-# Filtering in gantt control
-
-Filtering allows you to view specific or related records based on filter criteria. This can be done in the Gantt control by using the filter menu support and toolbar search support. To enable filtering in the Gantt control, set the [`AllowFiltering`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~AllowFiltering.html) to `true`. Menu filtering support can be configured using the [`FilterSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~FilterSettings.html) property and toolbar searching can be configured using the [`SearchSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~SearchSettings.html) property.
+Filtering allows you to view specific or related records based on filter criteria. This can be done in the Gantt control by using the filter menu support and toolbar search support. To enable filtering in the Gantt control, set the [`AllowFiltering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowFiltering) to `true`. Menu filtering support can be configured using the [`FilterSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_FilterSettings) property and toolbar searching can be configured using the [`SearchSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SearchSettings) property.
 
 ## Filter hierarchy modes
 
-The Gantt supports a set of filtering modes with the [`FilterSettings.HierarchyMode`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttFilterSettings~HierarchyMode.html) property. The following are the types of filter hierarchy modes available in the Gantt control:
+The Gantt supports a set of filtering modes with the [`FilterSettings.HierarchyMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttFilterSettings.html#Syncfusion_EJ2_Gantt_GanttFilterSettings_HierarchyMode) property. The following are the types of filter hierarchy modes available in the Gantt control:
 
 * `Parent`: This is the default filter hierarchy mode in Gantt. The filtered records are displayed with its parent records. If the filtered records do not have any parent record, then only the filtered records will be displayed.
 
@@ -24,8 +26,6 @@ The Gantt supports a set of filtering modes with the [`FilterSettings.HierarchyM
 * `Both`: Displays the filtered records with its both parent and child records. If the filtered records do not have any parent and child records, then only the filtered records will be displayed.
 
 * `None`: Displays only the filtered records.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -36,25 +36,9 @@ The Gantt supports a set of filtering modes with the [`FilterSettings.HierarchyM
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/filtering/filterHierarchyMode/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="FilterHierarchyMode.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/filtering/filterHierarchyMode/filterHierarchyMode.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ### Initial filter
 
-To apply the filter at initial rendering, set the filter to `predicate` object in the [`FilterSettings.Columns`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttFilterSettings~Columns.html) property.
-
-{% if page.publishingplatform == "aspnet-core" %}
+To apply the filter at initial rendering, set the filter to `predicate` object in the [`FilterSettings.Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttFilterSettings.html#Syncfusion_EJ2_Gantt_GanttFilterSettings_Columns) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -64,20 +48,6 @@ To apply the filter at initial rendering, set the filter to `predicate` object i
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/filtering/initialFilter/initialFilter.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/filtering/initialFilter/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="InitialFilter.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/filtering/initialFilter/initialFilter.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ### Filter operators
 
@@ -101,11 +71,9 @@ N> By default, the `FilterSettings.Columns.Operator` value is `equal`
 
 ### Diacritics
 
-By default, the Gantt control ignores the diacritic characters while filtering. To include diacritic characters, set the [`FilterSettings.IgnoreAccent`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.GanttFilterSettings~IgnoreAccent.html) to true.
+By default, the Gantt control ignores the diacritic characters while filtering. To include diacritic characters, set the [`FilterSettings.IgnoreAccent`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttFilterSettings.html#Syncfusion_EJ2_Gantt_GanttFilterSettings_IgnoreAccent) to true.
 
 In the following sample, type **Perform** in the **TaskName** column to filter diacritic characters.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -116,25 +84,9 @@ In the following sample, type **Perform** in the **TaskName** column to filter d
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/filtering/diacriticsFilter/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="DiacriticsFilter.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/filtering/diacriticsFilter/diacriticsFilter.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ## Filtering a specific column by method
 
 You can filter the columns dynamically by using the `filterByColumn` method.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -145,25 +97,9 @@ You can filter the columns dynamically by using the `filterByColumn` method.
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/filtering/filterByColumn/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="FilterByColumn.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/filtering/filterByColumn/filterByColumn.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ## Clear filtered columns
 
 You can clear all the filtering condition done in the Gantt control by using the `clearFiltering` method. The following code snippet explains the above behaviour.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -173,15 +109,3 @@ You can clear all the filtering condition done in the Gantt control by using the
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/filtering/clearFilter/clearFilter.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/filtering/clearFilter/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ClearFilter.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/filtering/clearFilter/clearFilter.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
