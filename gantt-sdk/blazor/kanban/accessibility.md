@@ -46,14 +46,19 @@ The following table summarizes the accessibility compliance of the Blazor Kanban
 
 The Blazor Kanban component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/) patterns to meet the accessibility. The following `WAI-ARIA` attributes are used in the Kanban component:
 
-| Attributes             | Purpose                                                                                                                                                                                                           |
-| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `aria-label`           | It helps to provides information about elements in a kanban component for assistive technology.                                                                                                                   |
-| `aria-expanded`        | Attributes indicate the state of a collapsible element.                                                                                                                                                           |
-| `aria-selected`        | This attribute is assigned to the Kanban component for the selection of elements, and its default value is `false`. The value changes to true when the user selects a Kanban card.                                |
-| `aria-grabbed`         | Indicates whether the attribute is set to true. It has been selected for dragging. If this attribute is set to false, the element can be grabbed for a drag-and-drop operation but will not be currently grabbed. |
-| `aria-describedby`     | This attribute contains the ID of the Kanban header column to indicate that the attribute establishes an association between the Kanban header column and the Kanban column body.                                 |
-| `aria-roledescription` | This attribute is assigned to the Kanban component and is used to provide alternative descriptions for card elements.                                                                                             |
+| Selector | Attribute | Usage |
+| --- | --- | --- |
+| `.e-kanban` | `role="application"`, `aria-label`, `aria-roledescription` | Identifies the Kanban board as an interactive application, provides its accessible name, and supplies an alternative description. |
+| `.e-kanban .e-header-table` | `role="table"`, `aria-label` | Identifies the header table and provides its accessible name. |
+| `.e-kanban .e-content-table` | `role="presentation"` | Removes the content table's native table semantics; its body exposes the grid role. |
+| `.e-kanban .e-content-table tbody` | `role="treegrid"` | Identifies the Kanban content as an interactive grid of rows and cards. |
+| `.e-kanban .e-content-row` | `role="row"`, `aria-expanded` | Identifies a content or swimlane row and indicates its expanded state. |
+| `.e-kanban .e-header-cells` | `aria-expanded` | Indicates whether a Kanban column is expanded or collapsed. |
+| `.e-kanban .e-card-container` | `role="listbox"`, `aria-label` | Identifies the selectable card list for a column and provides its accessible name. |
+| `.e-kanban .e-card` | `role="option"`, `aria-selected`, `aria-grabbed`, `aria-roledescription` | Identifies a card as an option, reports its selection and drag state, and provides an alternative description. |
+| `.e-kanban .e-empty-card` | `role="option"` | Identifies the empty-card placeholder as an option in the card list. |
+| `.e-kanban .e-content-cells[data-role="kanban-column"]` | `aria-label`, `aria-describedby` | Provides the column cell's accessible name and associates the column body with its header. |
+| `.e-kanban .e-header-icon`, `.e-kanban .e-swimlane-header .e-icons` | `role="button"`, `aria-label` | Identifies the column and swimlane expand/collapse controls as buttons and provides their accessible names. |
 
 ## Keyboard interaction
 
