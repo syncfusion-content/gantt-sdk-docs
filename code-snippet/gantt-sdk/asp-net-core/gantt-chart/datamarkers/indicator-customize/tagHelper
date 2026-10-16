@@ -1,0 +1,16 @@
+<button id='btn' class="e-btn" onclick="indicator()">Indicator background change</button>
+<br><br>
+<ejs-gantt id='Gantt' height="430px" dataSource="ViewBag.DataSource">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" parentId="ParentId" indicators="Indicators">
+    </e-gantt-taskfields>
+</ejs-gantt>
+<script>
+    function indicator() {
+        var gantt = document.getElementById("Gantt").ej2_instances[0];
+        var nodes = gantt.element.querySelectorAll('.e-indicator-span');
+        nodes.forEach(function (box) {
+            var child = box.children[0];
+            child.style.color = 'red';
+        });
+    }
+</script>

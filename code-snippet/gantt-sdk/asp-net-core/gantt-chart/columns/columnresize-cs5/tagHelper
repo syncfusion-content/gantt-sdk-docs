@@ -1,0 +1,51 @@
+<div style="margin-left: 180px;">
+    <p style="color: red;" id="message"></p>
+</div>
+<ejs-gantt id='Gantt' height="430px" dataSource="ViewBag.DataSource" splitterSettings="@(new GanttSplitterSettingsModel { Position = "75%" })" allowResizing="true" resizeStart="resizeStart" resizing="resizing" resizeStop="resizeStop">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" parentId="ParentId">
+    </e-gantt-taskfields>
+    <e-gantt-columns>
+        <e-gantt-column field="TaskId" headerText="Task ID" textAlign="Right" width="90"></e-gantt-column>
+        <e-gantt-column field="TaskName" headerText="Task Name" textAlign="Left" width="290"></e-gantt-column>
+        <e-gantt-column field="StartDate" headerText="Start Date" textAlign="Right" width="120"></e-gantt-column>
+        <e-gantt-column field="Duration" headerText="Duration" textAlign="Right" width="90"></e-gantt-column>
+        <e-gantt-column field="Progress" headerText="Progress" textAlign="Right" width="120"></e-gantt-column>
+    </e-gantt-columns>
+</ejs-gantt>
+<style>
+    .e-gantt .e-headercell.customcss, .e-gantt .e-rowcell.customcss {
+        background-color: rgb(43, 195, 226);
+    }
+</style>
+<script>
+    function resizeStart(args) {
+        var field = args.column.field;
+        document.getElementById('message').textContent = 'resizeStart event triggered and cancelled for ' + field;
+        if (field === 'TaskId') {
+            args.cancel = true;
+        }
+    }
+
+    function resizing(args) {
+        var field = args.column.field;
+        document.getElementById('message').textContent = 'resizing event triggered and cancelled for ' + field;
+        if (field === 'Duration') {
+            args.cancel = true;
+        }
+    }
+
+    function resizeStop(args) {
+        document.getElementById('message').textContent = 'resizeStop event triggered';
+        var gantt = document.getElementById("Gantt").ej2_instances[0];
+        var field = args.column.field;
+        var index = args.column.index;
+        var headerCell = gantt.treeGrid.getColumnHeaderByField(field);
+        if (headerCell) {
+            headerCell.classList.add('customcss');
+        }
+        var columnCells = gantt.treeGrid.getContentTable().querySelectorAll('[data-colindex="' + index + '"]');
+        for (var i = 0; i < columnCells.length; i++) {
+            columnCells[i].style.backgroundColor = 'rgb(43, 195, 226)';
+        }
+    }
+</script>

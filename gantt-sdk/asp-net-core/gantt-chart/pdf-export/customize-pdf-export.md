@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Customize PDF Export in ASP.NET Core Gantt Chart | Syncfusion
-description: Learn how to customize PDF export settings in Syncfusion ASP.NET Core Gantt Chart including styling, formatting, and advanced export options.
-keywords: asp.net core gantt customize pdf, pdf customization, export customization, pdf styling, advanced export, syncfusion gantt chart
+description: Learn how to customize PDF export in Syncfusion ASP.NET Core Gantt Chart with file names, orientation, headers and footers.
+keywords: asp.net core gantt customize pdf export, pdfexportproperties, beforepdfexport, pdfquerytaskbarinfo, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/pdf-export/customize-pdf-export
 platform: gantt-sdk
 control: PDF Export - Gantt Chart
@@ -13,11 +13,11 @@ appliesto: UI Component Suite, Gantt SDK/overview
 
 # Customizing PDF Export Layout and Content in ASP.NET Core Gantt Chart
 
-PDF export provides an option to customize the mapping of Gantt to exported PDF document.
+Customizing PDF export in the [ASP.NET Core Gantt Chart](https://www.syncfusion.com/gantt-sdk/aspnet-core-gantt-chart) control allows tailoring exported documents for specific needs, using `pdfExportProperties` to adjust file names, page orientation, size, columns, headers, footers, timelines, and templates. Ensuring focused content like selected rows or styled taskbars, with `AllowPdfExport` enabled. Use the [`BeforePdfExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_BeforePdfExport) and [`PdfExportComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_PdfExportComplete) events for pre-export and post-export modifications, and the [`PdfQueryTaskbarInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_PdfQueryTaskbarInfo) event for taskbar styling, supporting RTL layouts via `EnableRtl`.
 
-## File name for exported document
+## Customize file name
 
-The file name of the exported PDF document can be specified using the `fileName` property in `pdfExportProperties`.
+Set the exported PDF file name using the `fileName` property in `pdfExportProperties`, such as **ProjectPlan.pdf**, for personalized document naming.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -30,7 +30,7 @@ The file name of the exported PDF document can be specified using the `fileName`
 
 ## How to change page orientation
 
-The page orientation of the exported PDF document can be customized using the `pageOrientation` property in `pdfExportProperties`. By default, the exported PDF document is in Landscape orientation.
+Adjust page orientation to **Portrait** or **Landscape** using the `pageOrientation` property in `pdfExportProperties`. By default, the exported PDF document is in Landscape orientation.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -41,38 +41,25 @@ The page orientation of the exported PDF document can be customized using the `p
 {% endhighlight %}
 {% endtabs %}
 
-## How to change page size
+## Customize page size
 
-Page size can be customized for the exported document using the  `pageSize` property in `pdfExportProperties`.
- The supported page sizes are:
+Page size can be customized for the exported document using the `pageSize` property in `pdfExportProperties`.
+The supported page sizes are:
 
-* Letter
-* Note
-* Legal
-* A0
-* A1
-* A2
-* A3
-* A5
-* A6
-* A7
-* A8
-* A9
-* B0
-* B1
-* B2
-* B3
-* B4
-* B5
-* Archa
-* Archb
-* Archc
-* Archd
-* Arche
-* Flsa
-* HalfLetter
-* Letter11x17
-* Ledger
+- Letter
+- Note
+- Legal
+- A0 to A9
+- B0 to B5
+- Archa
+- Archb
+- Archc
+- Archd
+- Arche
+- Flsa
+- HalfLetter
+- Letter11x17
+- Ledger
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -85,7 +72,7 @@ Page size can be customized for the exported document using the  `pageSize` prop
 
 ## Export current view data
 
-PDF export provides an option to export the current view data into PDF. To export current view data alone, define the `exportType` to `CurrentViewData`.
+PDF export provides an option to export the current view data into PDF. To export current view data alone, define the `exportType` to **CurrentViewData**.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -96,9 +83,22 @@ PDF export provides an option to export the current view data into PDF. To expor
 {% endhighlight %}
 {% endtabs %}
 
+## Enable footer
+
+By default, we render the default footer for a PDF file, this can be enabled or disabled by using the `enableFooter` property.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/enablefooter/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Enable-footer.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/enablefooter/enable-footer.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 ## Export hidden columns
 
-PDF export provides an option to export hidden columns of Gantt by defining the `includeHiddenColumn` to `true`.
+PDF export provides an option to export hidden columns of Gantt by defining the `includeHiddenColumn` to **true**.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -122,13 +122,13 @@ The visibility of predecessor lines in the exported PDF document can be controll
 {% endhighlight %}
 {% endtabs %}
 
-## Show or hide columns on exported PDF
+## Export specific columns
 
-A hidden column can be shown, or a visible column can be hidden while exporting the Gantt chart by using the  [`toolbarClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ToolbarClick) and [`beforePdfExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_BeforePdfExport) events.
+A hidden column can be shown, or a visible column can be hidden while exporting the Gantt chart by using the [`ToolbarClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ToolbarClick) and [`BeforePdfExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_BeforePdfExport) events.
 
-Columns can be shown or hidden by setting the `column.visible` property to true or false, respectively.
+Columns can be shown or hidden by setting the `column.visible` property to **true** or **false**, respectively.
 
-In the following example, the `Duration` column is initially hidden in the Gantt chart. During export, the `Duration` column is made visible and the StartDate column is hidden.
+In the following example, the **Duration** column is initially hidden in the Gantt chart. During export, the **Duration** column is made visible and the StartDate column is hidden.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -141,9 +141,9 @@ In the following example, the `Duration` column is initially hidden in the Gantt
 
 ## Conditional cell formatting
 
-TreeGrid cells in the exported PDF can be customized or formatted using the [`pdfQueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_PdfQueryCellInfo) event. In this event, you can format the treegrid cells of exported PDF document based on the column cell value.
+TreeGrid cells in the exported PDF can be customized or formatted using the [`PdfQueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_PdfQueryCellInfo) event. This event allows formatting TreeGrid cells in the exported PDF document based on the column cell value.
 
-In the following sample, the background color is set for `Progress` column in the exported document by using the `args.style.backgroundColor` property.
+In the following sample, the background color is set for **Progress** column in the exported document by using the `args.style.backgroundColor` property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -156,7 +156,7 @@ In the following sample, the background color is set for `Progress` column in th
 
 ## Timeline cell formatting
 
-Timeline cells in the exported PDF document can be customized or formatted using the [`pdfQueryTimelineCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_PdfQueryTimelineCellInfo) event.
+Timeline cells in the exported PDF document can be customized or formatted using the [`PdfQueryTimelineCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_PdfQueryTimelineCellInfo) event.
 
 In the following sample, the header background color is set for timeline cells in the exported document by using the `args.headerBackgroundColor` property.
 
@@ -171,7 +171,7 @@ In the following sample, the header background color is set for timeline cells i
 
 ## Taskbar formatting
 
-Taskbars in the exported PDF document can be customized or formatted using the [`pdfQueryTaskbarInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_PdfQueryTaskbarInfo) event.
+Taskbars in the exported PDF document can be customized or formatted using the [`PdfQueryTaskbarInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_PdfQueryTaskbarInfo) event.
 
 In the following sample, the taskbar background color is customized in the chart side of the exported document by using the `args.taskbar` property.
 
@@ -184,9 +184,9 @@ In the following sample, the taskbar background color is customized in the chart
 {% endhighlight %}
 {% endtabs %}
 
-## Customize Gantt Chart Appearance in PDF Export
+## Customize Gantt chart appearance in PDF export
 
-PDF export allows to customize the Gantt chart's appearance in the exported PDF documents. To customize the appearance of Gantt charts in exported PDF documents, define `ganttStyle`. By using `ganttStyle`, can customize `columnHeader`, `fontFamily`, `cell`, `taskbar`, `label`, `timeline`, `chartGridLineColor`, `connectorLineColor`, `criticalConnectorLineColor`, `footer`, `font`, `eventMarker` and `holiday` regardless of the theme.
+PDF export allows to customize the Gantt chart's appearance in the exported PDF documents. To customize the appearance of Gantt charts in exported PDF documents, define `ganttStyle` within `pdfExportProperties`. By using `ganttStyle`, can customize `columnHeader`, `fontFamily`, `cell`, `taskbar`, `label`, `timeline`, `chartGridLineColor`, `connectorLineColor`, `criticalConnectorLineColor`, `footer`, `font`, `eventMarker` and `holiday` regardless of the theme.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -197,7 +197,7 @@ PDF export allows to customize the Gantt chart's appearance in the exported PDF 
 {% endhighlight %}
 {% endtabs %}
 
-## Customize Split Taskbar Segment Colors in PDF
+## Customize split taskbar segment colors in PDF
 
 The PDF export feature in the Gantt Chart allows you to customize the colors of split taskbar segments using the `taskSegmentStyles` property inside the [`PdfQueryTaskbarInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_PdfQueryTaskbarInfo) event.
 
@@ -212,15 +212,15 @@ The `taskSegmentStyles` property contains a collection of style properties for t
 {% endhighlight %}
 {% endtabs %}
 
-## Exporting with template
+## Exporting with templates
 
 ### Exporting with column template
 
-The PDF export functionality allows to export Grid columns that include images, hyperlinks, and custom text to an PDF document using [pdfQueryCellInfo](https://ej2.syncfusion.com/documentation/api/gantt/pdfquerycellinfoeventargs) event.
+The PDF export functionality allows to export Grid columns that include images, hyperlinks, and custom text to an PDF document using the [`PdfQueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_PdfQueryCellInfo) event.
 
-In the following sample, the hyperlinks and images are exported to PDF using [hyperlink](https://ej2.syncfusion.com/documentation/api/gantt/pdfquerycellinfoeventargs#hyperlink) and [image](https://ej2.syncfusion.com/documentation/api/gantt/pdfquerycellinfoeventargs#image) properties in the [pdfQueryCellInfo](https://ej2.syncfusion.com/documentation/api/gantt/pdfquerycellinfoeventargs) event.
+In the following sample, the hyperlinks and images are exported to PDF using the `hyperlink` and `image` properties in the `PdfQueryCellInfo` event.
 
->Note: PDF Export supports base64 string to export the images.
+> Note: PDF Export supports base64 string to export the images.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -233,11 +233,11 @@ In the following sample, the hyperlinks and images are exported to PDF using [hy
 
 ### Exporting with taskbar template
 
-The PDF export functionality allows to export taskbar templates that include `images` and `text` to an PDF document using [pdfQueryTaskbarInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_PdfQueryTaskbarInfo) event. Taskbars in the exported PDF document can be customized or formatted using the `pdfQueryTaskbarInfo` event for parent taskbar templates, taskbar template and milestone templates.
+The PDF export functionality allows to export taskbar templates that include `images` and `text` to an PDF document using the [`PdfQueryTaskbarInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_PdfQueryTaskbarInfo) event. Taskbars in the exported PDF document can be customized or formatted using the `PdfQueryTaskbarInfo` event for parent taskbar templates, taskbar templates and milestone templates.
 
-In the following sample, taskbar templates with images and text are exported to PDF using [taskbarTemplate](https://ej2.syncfusion.com/react/documentation/api/gantt/pdfquerytaskbarinfoeventargs#taskbarTemplate) properties in the [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/react/documentation/api/gantt/index-default#pdfquerytaskbarinfo) event.
+In the following sample, taskbar templates with images and text are exported to PDF using the `taskbarTemplate` property in the `PdfQueryTaskbarInfo` event.
 
->Note: PDF Export supports base64 string to export the images.
+> Note: PDF Export supports base64 string to export the images.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -250,11 +250,11 @@ In the following sample, taskbar templates with images and text are exported to 
 
 ### Exporting with task label template
 
-The PDF export functionality allows to export task label template that include `images` and `text` to an PDF document using [pdfQueryTaskbarInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_PdfQueryTaskbarInfo) event.
+The PDF export functionality allows to export task label template that include `images` and `text` to an PDF document using the [`PdfQueryTaskbarInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_PdfQueryTaskbarInfo) event.
 
-In the following sample, task label template with images and text are exported to PDF using [labelSettings](https://ej2.syncfusion.com/react/documentation/api/gantt/pdfquerytaskbarinfoeventargs#labelSettings) properties in the [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/react/documentation/api/gantt/index-default#pdfquerytaskbarinfo) event.
+In the following sample, task label template with images and text are exported to PDF using the `labelSettings` property in the `PdfQueryTaskbarInfo` event.
 
->Note: PDF Export supports base64 string to export the images.
+> Note: PDF Export supports base64 string to export the images.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -267,11 +267,11 @@ In the following sample, task label template with images and text are exported t
 
 ### Exporting with header template
 
-The PDF export functionality allows to export header template that include `images` and `text` to an PDF document using [pdfColumnHeaderQueryCellInfo](https://ej2.syncfusion.com/react/documentation/api/gantt/pdfcolumnheaderquerycellinfoeventargs) event.
+The PDF export functionality allows to export header template that include `images` and `text` to an PDF document using the [`PdfColumnHeaderQueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_PdfColumnHeaderQueryCellInfo) event.
 
-In the following sample, header template with images and text are exported to PDF using [headerTemplate](https://ej2.syncfusion.com/react/documentation/api/gantt/pdfcolumnheaderquerycellinfoeventargs#headerTemplate) properties in the [pdfColumnHeaderQueryCellInfo](https://ej2.syncfusion.com/react/documentation/api/gantt/pdfcolumnheaderquerycellinfoeventargs) event.
+In the following sample, header template with images and text are exported to PDF using the `headerTemplate` property in the `PdfColumnHeaderQueryCellInfo` event.
 
->Note: PDF Export supports base64 string to export the images.
+> Note: PDF Export supports base64 string to export the images.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -281,3 +281,9 @@ In the following sample, header template with images and text are exported to PD
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/pdfexport-header-Template/pdfexport-header-Template.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+## See also
+
+- [How to export Gantt chart to Excel?](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/excel-export/excel-export)
+- [How to manage task dependencies?](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/task-dependency)
+- [How to configure critical path?](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/criticalpath)
