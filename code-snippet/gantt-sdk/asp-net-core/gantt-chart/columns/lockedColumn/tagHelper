@@ -1,0 +1,38 @@
+<ejs-gantt id="Gantt" dataSource="@Model.GanttDataSourceCollection" height="430px" allowReordering="true"
+    treeColumnIndex="1">
+
+    <e-gantt-taskfields id="TaskID" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration"
+        progress="Progress" parentID="ParentID">
+    </e-gantt-taskfields>
+
+    <e-gantt-splittersettings position="75%"></e-gantt-splittersettings>
+
+    <e-gantt-columns>
+        <e-gantt-column field="TaskID" headerText="Task ID" textAlign="Left" width="100">
+        </e-gantt-column>
+
+        <e-gantt-column field="TaskName" headerText="Task Name" width="270" lockColumn="true"
+            customAttributes="@(new Dictionary<string, object> { { " class", "customcss" } })">
+        </e-gantt-column>
+
+        <e-gantt-column field="StartDate" headerText="Start Date" width="150">
+        </e-gantt-column>
+
+        <e-gantt-column field="Duration" headerText="Duration" width="150">
+        </e-gantt-column>
+
+        <e-gantt-column field="Progress" headerText="Progress" width="150">
+        </e-gantt-column>
+    </e-gantt-columns>
+
+</ejs-gantt>
+
+<style>
+    .e-gantt .e-grid .e-rowcell.customcss {
+        background-color: #ecedee;
+    }
+
+    .e-grid .e-headercell.customcss {
+        background-color: #ecedee;
+    }
+</style>

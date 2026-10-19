@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Columns in ASP.NET Core Gantt Chart | Syncfusion
-description: Learn how to configure and customize columns in Syncfusion ASP.NET Core Gantt Chart using field mapping, column types, formatting, and templates.
-keywords: asp.net core gantt columns, gantt column configuration, field mapping, column customization, column types, gantt columns, syncfusion gantt chart
+title: Columns in ASP.NET Core Gantt Chart | Field Mapping | Syncfusion
+description: Learn how to configure and customize columns in the Syncfusion ASP.NET Core Gantt Chart using field mapping, formatting, and display options.
+keywords: asp.net core gantt columns, column field, column customization, task data display, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/columns/columns
 platform: gantt-sdk
 control: Columns - Gantt Chart
@@ -13,112 +13,375 @@ appliesto: UI Component Suite, Gantt SDK/overview
 
 # Columns with Field Mapping and Formatting in ASP.NET Core Gantt Chart
 
-The column displays information from a bound data source, and you can edit the values of column to update the task details through TreeGrid. The operations such as sorting, filtering, and searching can be performed based on column definitions. To display a Gantt column, the [`Field`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Field) property should be mapped from the data source to the column.
+The [ASP.NET Core Gantt Chart](https://www.syncfusion.com/aspnet-core-ui-controls/gantt-chart) component displays task data in a tabular format using columns. Columns help organize data efficiently and support user interaction within the Gantt chart.
 
-N> If the column [`Field`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Field) is not specified in the data source, the column values will be empty.
+Each column is defined using the [field](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Field) property, which maps values from the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataSource). This mapping ensures accurate data binding and enables formatting and customization for each column.
 
-The [`TreeColumnIndex`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TreeColumnIndex) property is used to define the expander column in the Gantt control to expand and collapse the child rows.
+## Column types
 
-## Defining columns
+The ASP.NET Core Gantt Chart component supports specifying the data type for each column using the `type` property. This ensures that values are displayed with the correct formatting such as number or date based on the column's data.
 
-Using the [`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Columns) property, you can define the columns in Gantt. If the columns are not defined, then the default columns will be rendered based on the mapped data source fields in the [`TaskFields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskFields) property. Refer to the following code example for defining the columns in Gantt along with their widths.
+**Gantt supports the following column types:**
+
+- **string**: Default type for text data.
+- **number**: For numeric values with formatting.
+- **boolean**: Displays checkboxes for true/false values.
+- **date**: For date values.
+- **datetime**: For date and time values.
+- **checkbox**: Displays a checkbox column.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/definingColumns/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnTypes/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ColumnTypes.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnTypes/columnTypes.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+> - If `type` is not defined, it is auto-detected from the first record of the data source.
+> - If the first record has a null or blank value, define the `type` explicitly to ensure correct filter dialog behavior.
+
+### Difference between boolean type and checkbox type column
+
+- Use **boolean** type to bind and edit true/false values from the data source.
+- Use **checkbox** type to enable row selection or deselection in the UI.
+- When column `type` is **checkbox**, Gantt `selectionSettings` defaults to multiple selection.
+- If multiple **checkbox** columns exist, selecting one auto-selects others in the same row.
+
+> To learn more about how to render boolean values as checkboxes in a Syncfusion<sup style="font-size:70%">&reg;</sup> GanttColumn, please refer to the [Render Boolean Values as Checkbox](https://ej2.syncfusion.com/aspnetcore/documentation/gantt/columns/columns#render-boolean-value-as-checkbox) section.
+
+## Column width
+
+In Gantt for ASP.NET Core, column width can be adjusted using the [width](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Width) property within the [column](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Columns) configuration. This property accepts values in pixels (e.g., **100**) or percentages (e.g., **25%**) to define the column's width relative to the Gantt container.
+
+1. Column width is calculated based on the total available width. For example, in a container with 4 columns and a total width of 800 pixels, each column will default to 200 pixels.
+2. If widths are defined for some columns but not others, the remaining width is distributed equally among columns without explicit widths. For example, if you have 3 columns with widths of 100px, 200px, and no width specified for the third column, the third column will occupy the remaining width after accounting for the first two columns.
+3. Percentage-based widths are responsive and adjust dynamically when the Gantt container is resized. For example, a column with a width of 50% will occupy 50% of the Gantt width and will adjust proportionally when the Gantt container is resized to a smaller size.
+4. When columns are manually resized, a minimum width is enforced to maintain readability. By default, this minimum is set to 10 pixels unless specified otherwise.
+5. If the total column width exceeds the container width, a horizontal scrollbar appears to enable scrolling.
+6. The Gantt Chart component inherits the width of its parent element. If the parent has a fixed width, the Gantt will occupy that space; otherwise, it adjusts dynamically based on available space.
+
+> To learn more about resizing, you can refer to the resizing section [here](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/columns/column-resizing)
+
+### Supported types for column width
+
+The Gantt supports the following three types of column width:
+
+**1. Auto**
+
+The column width is automatically calculated based on the content within the column cells. If the content exceeds the width of the column, it will be truncated with an ellipsis (...) at the end. You can set the width for columns as **auto** in your Gantt configuration as shown below:
+
+```html
+<e-gantt-column
+  field="TaskId"
+  headerText="Task ID"
+  textAlign="Right"
+  width="auto"
+></e-gantt-column>
+```
+
+**2. Percentage**
+
+The column width is specified as a percentage value relative to the width of the gantt container. For example, a column width of 25% will occupy 25% of the total gantt width. You can set the width for columns as **percentage** in your Gantt configuration as shown below:
+
+```html
+<e-gantt-column
+  field="TaskId"
+  headerText="Task ID"
+  textAlign="Right"
+  width="25%"
+></e-gantt-column>
+```
+
+**3. Pixel**
+
+The column width is specified as an absolute pixel value. For example, a column width of 100px will have a fixed width of 100 pixels regardless of the gantt container size. You can set the width for columns as **pixel** in your Gantt configuration as shown below:
+
+```html
+<e-gantt-column
+  field="TaskId"
+  headerText="Task ID"
+  textAlign="Right"
+  width="100"
+></e-gantt-column>
+```
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnWidth/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DefiningColumns.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/definingColumns/definingColumns.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Alt text](../images/definingColumns.png)
+![Column width](../images/columns/column-width.png)
 
-## Custom column header
+## Column formatting
 
-The column header text can be defined using the [`HeaderText`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_HeaderText) property, and you can customize the column headers using the [`HeaderTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_HeaderTemplate) property.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/headerTemplate/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="HeaderTemplate.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/headerTemplate/headerTemplate.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Alt text](../images/headerTemplate.png)
-
-## Format
-
-To format the cell values based on a specific culture, use the [`Columns.Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Format) property. The Gantt control uses the [`Internationalization`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization) library to format [`number`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization#number-formatting) and [`date`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization#manipulating-datetime) values.
+The Gantt Chart component for ASP.NET Core supports column formatting to customize data presentation. You can format numbers, dates, or apply templates based on specific requirements. Use the [columns.format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Format) property to define the desired format for each column.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/formatColumn/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnFormatting/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="FormatColumn.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/formatColumn/formatColumn.cs %}
+{% highlight c# tabtitle="ColumnFormatting.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnFormatting/columnFormatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Alt text](../images/formatColumn.png)
+![Column Formatting](../images/columns/column-formatting.png)
 
-N> By default, the [`number`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization#number-formatting) and [`date`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization#manipulating-datetime) values are formatted in `en-US` culture.
+> - The Gantt uses the [Internationalization](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization) library to format values based on the specified format and culture.
+> - By default, the [number](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization#number-formatting) and [date](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization#date-formatting) values are formatted in **en-US** locale. You can localize the currency and date in different locale as explained [here](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization).
+> - The available format codes may vary depending on the data type of the column.
+> - You can also customize the formatting further by providing a custom function to the [format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Format) property, instead of a format string.
+> - Make sure that the format string is valid and compatible with the data type of the column, to avoid unexpected results.
 
-### Number formatting
+<!-- ### Number formatting
 
-The number or integer values can be formatted using the following format strings.
+The Gantt Chart component for ASP.NET Core supports number formatting through the [columns.format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Format) property, where standard format strings define numeric value presentation including currency, percentage, and decimal formats. The following standard format strings are available:
 
-|Format |Description |Remarks|
-|-----|-----|----|
-|N | Denotes numeric type. | The numeric format is followed by an integer value like N2 or N3, which denotes the number of precisions to be allowed.|
-|C | Denotes currency type. | The currency format is followed by an integer value like C2 or C3, which denotes the number of precisions to be allowed.|
-|P | Denotes percentage type | The percentage format expects the input value to be in the range of 0 to 100. For example, the cell value `0.2` is formatted as `20%`. The percentage format is followed by an integer value like P2, P3, which denotes the number of precisions to be allowed.|
+| Format | Description       | Remarks                                                               |
+| ------ | ----------------- | --------------------------------------------------------------------- |
+| N      | Numeric format    | Use `N2`, `N3`, etc., to set the number of decimal places.            |
+| C      | Currency format   | Use `C2`, `C3`, etc., to define precision for currency values.        |
+| P      | Percentage format | Input should be between 0 and 1; `P2`, `P3`, etc., control precision. |
+
+The following example code demonstrates the formatting of data for the **TaskID** column using the **N** format, the **Progress** column using the **P** format, and a currency column using the **C** format.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/numberFormatting/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="NumberFormatting.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/numberFormatting/numberFormatting.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+> To learn more about number formatting, you can refer to the [number](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization#number-formatting) section. -->
 
 ### Date formatting
 
-You can format date values either using the built-in date format string or a custom format string.
+The Gantt Chart component for ASP.NET Core supports date formatting in columns using the [columns.format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Format) property, where format strings such as **d**, **D**, **MMM dd, yyyy** can be applied. Both built-in formats like **yMd** and custom formats are supported to define the layout and detail of date and time values based on column requirements. The following custom formats and their corresponding output are listed below:
 
-For the built-in date format, you can specify the [`Columns.Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Format) property as string (example: `yMd`).
-
-You can also use the custom format string to format the date values. Some of the custom formats and the formatted date values are given in the following table.
-
-|Format | Formatted value|
-|-----|-----|
-|{ type:'date', format:'dd/MM/yyyy' } | 04/07/2019|
-|{ type:'date', format:'dd.MM.yyyy' } | 04.07.2019|
-|{ type:'date', skeleton:'short' } | 7/4/19|
-|{ type: 'dateTime', format: 'dd/MM/yyyy hh:mm a' } | 04/07/2019 12:00 AM|
-|{ type: 'dateTime', format: 'MM/dd/yyyy hh:mm:ss a' } | 07/04/2019 12:00:00 AM|
+| Format                                                | Formatted value        |
+| ----------------------------------------------------- | ---------------------- |
+| { type:'date', format:'dd/MM/yyyy' }                  | 04/07/1996             |
+| { type:'date', format:'dd.MM.yyyy' }                  | 04.07.1996             |
+| { type:'date', skeleton:'short' }                     | 7/4/96                 |
+| { type: 'dateTime', format: 'dd/MM/yyyy hh:mm a' }    | 04/07/1996 12:00 AM    |
+| { type: 'dateTime', format: 'MM/dd/yyyy hh:mm:ss a' } | 07/04/1996 12:00:00 AM |
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/formatColumns/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/dateFormatting/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="FormatColumns.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/formatColumns/formatColumns.cs %}
+{% highlight c# tabtitle="DateFormatting.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/dateFormatting/dateFormatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-## Change tree/expander column
+![Date formatting](../images/columns/date-formatting.png)
 
-The tree/expander column is a column in the Gantt control, that has icons to expand or collapse the parent records. You can define the tree column index in the Gantt control by using the [`TreeColumnIndex`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TreeColumnIndex) property and the default value of this property is `0`. The following code example shows how to use this property.
+> To learn more about date formatting, you can refer to [Date formatting](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization#date-formatting).
+
+### Format the date column based on localization
+
+You can format the date column in Gantt Chart component based on localization settings by using the [format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Format) property to define the date pattern and the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Locale) property to apply regional settings.
+
+The following example demonstrates the `format` property specifies the date format as **yyyy-MMM-dd**, and the `locale` property specifies the locale as **es-AR** for Spanish (Argentina).
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/treeColumnIndex/tagHelper %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnLocale/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="TreeColumnIndex.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/treeColumnIndex/treeColumnIndex.cs %}
+{% highlight c# tabtitle="ColumnLocale.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnLocale/columnLocale.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![Alt text](../images/treeColumnIndex.png)
+![Format the date column based on localization](../images/columns/column-locale.png)
 
-## Show or hide columns dynamically
+### Format template column value
 
-You can show or hide gantt columns dynamically using external buttons by invoking the `showColumn` or `hideColumn` method. The **Progress** column is hidden and shown on button clicking.
+You can customize the appearance of values in Gantt template columns using HTML markup and number formatting. To format values, use ASP.NET Core templates along with the [format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Format) property. In this example, the date template formats the **StartDate** value as `'dd/MMM/yyyy'`.
+
+```cshtml
+<e-gantt-column field="StartDate" headerText="Start Date" textAlign="Left" width="120" template="#dateTemplate"></e-gantt-column>
+<script id="dateTemplate" type="text/x-template">
+    ${new Date(StartDate).toLocaleDateString('en-GB')}
+</script>
+```
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/formatTemplateColumn/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="FormatTemplateColumn.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/formatTemplateColumn/formatTemplateColumn.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Format template column value](../images/columns/format-template-column.png)
+
+> You can use other formatting approaches, such as **currency, decimal, percent,** etc., to format other types of values in the column template based on your requirements.
+
+### Custom formatting
+
+The Gantt Chart component supports custom formatting for numeric and date values. You can use the [format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Format) property to display data in a specific format based on requirements.
+
+In the example below, `numberFormatOptions` is used for the **Progress** column to show four decimal places, and `dateFormatOptions` is used for the **StartDate** column to display the date as day-of-week, month abbreviation, day, and 2-digit year (e.g., Sun, May 8, '23).
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/customFormatting/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="NumberFormatting.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/numberFormatting/numberFormatting.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Custom formatting](../images/columns/custom-formatting.png)
+
+> To learn more about custom formatting, you can refer to [Custom Date formatting](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization#custom-formats) and [Custom Number formatting](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization#custom-number-formatting-and-parsing).
+
+## Align the text of content
+
+You can use the [textAlign](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_TextAlign) property in Gantt Chart component to set the alignment of text within column cells. By default, the text is aligned to the **left**. The available options are:
+
+- **Left**: Aligns the text to the left (default).
+- **Center**: Aligns the text to the center.
+- **Right**: Aligns the text to the right.
+- **Justify**: Align the text to the justify.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnAlignment/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ColumnAlignment.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnAlignment/ColumnAlignment.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Align the text of content](../images/columns/align-column.gif)
+
+> - The `textAlign` property changes the alignment for both the column content and header. If you want to align header differently, you can use the [headerTextAlign](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_HeaderTextAlign) property.
+
+<!-- ## Render boolean value as checkbox
+
+You can render boolean values as checkboxes in Gantt Chart component by setting the [displayAsCheckBox](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_DisplayAsCheckBox) property to **true** for the desired column. This replaces the default text representation of **true** or **false** with a checkbox, making boolean fields visually clearer and more intuitive.
+
+The following sample demonstrates how to display a boolean value as a checkbox for the **Verified** column.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnTypes/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ColumnTypes.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnTypes/columnTypes.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+> - The `displayAsCheckBox` property is only applicable to boolean values in Gantt columns.
+> - When `displayAsCheckBox` is set to **true**, the boolean values will be rendered as checkboxes in the Gantt column, with checked state indicating **true** and unchecked state indicating **false**. -->
+
+<!-- ### How to prevent checkbox for particular row
+
+You can prevent the checkbox from rendering in a specific row of the Gantt even when [displayAsCheckBox](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_DisplayAsCheckBox) is set to **true** for the column. This can be done using the [rowDataBound](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_RowDataBound) event, where you check the row index and conditionally set the inner HTML of the target cell to an empty string to hide the checkbox.
+
+The following sample hides the checkbox for the row with `ariaRowIndex` set to 3.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/rowCheckbox/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ColumnTypes.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnTypes/columnTypes.cs %}
+{% endhighlight %}
+{% endtabs %} -->
+
+## AutoFit columns
+
+The Gantt Chart component for ASP.NET Core supports automatic column width adjustment based on content. Double-clicking the column header resizer adjusts the width to fit the maximum content, ensuring clear data visibility without wrapping.
+
+To enable this feature, set [allowResizing](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowResizing) to **true** in the Gantt configuration.
+
+The following screenshot represents the resizing the column using resizer symbol.
+
+![Resizing](../images/columns/resizing.gif)
+
+### Resizing a column to fit its content using method support
+
+You can resize a column in Gantt to fit its content using the `autoFitColumns` method from the `treeGrid` object. This adjusts the column width based on the widest cell without wrapping. To apply this during initial rendering, call the method in the [dataBound](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataBound) event.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/autoFitColumns/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="autoFitColumns.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/autoFitColumns/autoFitColumns.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Resizing column to fit its content](../images/columns/resizing-column.png)
+
+> You can autofit all the columns by invoking the `autoFitColumns` method without specifying column names.
+
+## Locked columns
+
+You can lock columns in Gantt Chart component to prevent them from being reordered and to keep them fixed at the first position. This is achieved by setting the `column.lockColumn` property to **true** in the column configuration. To visually differentiate locked columns, you can apply custom CSS using attribute selectors.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/lockedColumn/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="LockedColumn.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/lockedColumn/LockedColumn.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![locked columns](../images/columns/locked-columns.png)
+
+## Show or hide columns
+
+The ASP.NET Core Gantt Chart component allows dynamic control over column visibility using built-in properties and methods. This is useful for customizing which columns are shown or hidden based on specific requirements.
+
+### Using property
+
+You can control the visibility of columns in the ASP.NET Core Gantt Chart component by setting the [visible](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Visible) property of each column to **true** or **false**.
+
+The following example illustrates how to dynamically toggle the visibility of the **Duration** column. Initially, the column is set with the `visible` property as **false**. When the switch component triggers a `change` event, the `getColumnByField` method retrieves the column, its `visible` property is updated based on the switch state, and `refreshColumns` is called to apply the changes to the UI.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnVisibilityProperty/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="columnVisibility.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnVisibilityProperty/columnVisibility.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Hiding Duration Column](../images/columns/hiding-duration.png)
+
+![Showing Duration Column](../images/columns/showing-duration.png)
+
+> - Hiding a column using the `visible` property affects only its display; the data remains accessible in the source.
+> - Hidden columns are excluded from the total width calculation.
+> - To keep a column hidden permanently, set `visible` to **false** or remove its definition.
+
+### Using methods
+
+You can also show or hide columns in the ASP.NET Core Gantt Chart component using the [showColumn](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ShowColumn) and [hideColumn](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_HideColumn) methods available in the Gantt. These methods allow you to control column visibility based on either the [headerText](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_HeaderText) or the [field](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Field) property.
+
+**Based on header text:**
+
+You can dynamically show or hide columns by passing either a single header text or an array of header texts as the first parameter, and specifying `headerText` as the second parameter. This enables dynamic control over column visibility based on the displayed header.
+
+You can use the `getGanttColumns` method to retrieve all defined columns, and the `getVisibleColumns` method to get only the visible columns.
+
+The following sample demonstrates how to hide and show columns using button clicks. When the **Hide Column** button is clicked, the `hideColumn` method is called with **Duration** as the first parameter and `headerText` as the second. Clicking the **Show Column** button restores the column using the `showColumn` method.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -129,11 +392,36 @@ You can show or hide gantt columns dynamically using external buttons by invokin
 {% endhighlight %}
 {% endtabs %}
 
-![Alt text](../images/showhidecol.png)
+![show column using method](../images/columns/showcolumn-method.png)
+![hide column using method](../images/columns/hidecolumn-method.png)
 
-## Controlling gantt column actions
+**Based on field:**
 
-You can enable or disable gantt action for a particular column by setting the `allowFiltering`, `allowSorting`, `allowReordering`, and [`allowEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettingsBuilder.html#Syncfusion_EJ2_Gantt_GanttEditSettingsBuilder_AllowEditing_System_Boolean_) properties.
+You can dynamically show or hide columns by passing either a single field name or an array of field names as the first parameter, and `field` as the second parameter to indicate that visibility is controlled using the field name.
+
+The following sample demonstrates how to hide and show columns using button clicks. When the **Hide Column** button is clicked, the `hideColumn` method is triggered with `['TaskName', 'Duration']` as the first parameter and `field` as the second. Clicking the **Show Column** button displays the columns again using the `showColumn` method.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/showHideUsingField/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="showHideUsingField.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/showHideUsingField/showHideUsingField.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![show column using field](../images/columns/showcolumn-method.png)
+![hide column using field](../images/columns/hide-column-using-field.png)
+
+## Controlling Gantt actions
+
+You can manage actions like filtering, sorting, resizing, reordering, editing, and searching for specific columns in ASP.NET Core Gantt using the following options:
+
+- [allowEditing](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_AllowEditing): Enables or disables editing for a column.
+- [allowFiltering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_AllowFiltering): Enables or disables filtering for a column.
+- [allowSorting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_AllowSorting): Enables or disables sorting for a column.
+- [allowReordering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_AllowReordering): Enables or disables reordering for a column.
+- [allowResizing](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_AllowResizing): Enables or disables resizing for a column.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -144,36 +432,97 @@ You can enable or disable gantt action for a particular column by setting the `a
 {% endhighlight %}
 {% endtabs %}
 
-## Column type
+![Controlling Gantt actions](../images/columns/gantt-actions.png)
 
-Column type can be specified using the `columns.type` property. It specifies the type of data the column binds.
+## Customize column styles
 
-If the `format` is defined for a column, the column uses `type` to select the appropriate format option **number** or **date**.
+Customizing Gantt column styles allows you to modify the appearance to match your design needs. You can customize font, background color, and other style attributes using supported events, CSS, properties, or methods.
 
-Gantt column supports the following types:
-* string
-* number
-* boolean
-* date
-* date-time
+For more information check on this [documentation](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/style-and-appearance).
 
-N> If the `type` is not defined, it will be determined from the first record of the `dataSource`. In case if the first record of the `dataSource` is null/blank value for a column then it is necessary to define the `type` for that column.
+## Updating column definitions
+
+To update column definitions in ASP.NET Core Gantt Chart component, modify the [columns](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Columns) property to adjust column appearance and behavior by changing attributes like [headerText](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_HeaderText), [width](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Width), or [visible](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Visible). After making the required updates, use the `refreshColumns` method from the `treeGrid` object to apply and reflect the changes in the Gantt chart.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnUpdate/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ColumnUpdate.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/columnUpdate/ColumnUpdate.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Updating Columns](../images/columns/updating-columns.png)
+
+## Adding/removing columns
+
+You can add or remove columns in the ASP.NET Core Gantt by updating the [columns](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Columns) option in the Gantt instance. To add a column, **push** a new column object into the `columns` array. To remove a column, use **pop** to delete the last item or `splice` to remove a specific one from the array.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/addRemoveColumns/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="AddRemoveColumns.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/addRemoveColumns/AddRemoveColumns.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Adding/Removing columns](../images/columns/add-remove-columns.png)
+
+## Responsive columns
+
+The ASP.NET Core Gantt Chart component provides a built-in feature to control column visibility based on media queries using the `hideAtMedia` property in the column object. This method can be used to hide columns automatically when the screen width matches specified [media query](http://cssmediaqueries.com/what-are-css-media-queries.html) conditions.
+
+The following example demonstrates a Gantt chart where the **Task Name** column is set to `(min-width: 700px)`, meaning it will be hidden when the browser width is less than or equal to 700px. Similarly, the **Duration** column is set to `(max-width: 500px)`, so it will be hidden when the browser width exceeds 500px.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/hideAtMedia/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="HideAtMedia.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/hideAtMedia/hideAtMedia.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Responsive Columns](../images/columns/responsive-columns.png)
+
+## Clip mode
+
+The clip mode provides options to display overflow cell content using the [columns.clipMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_ClipMode) property. The following are three types of `clipMode`:
+
+- **Clip**: Truncates content that exceeds the cell width.
+- **Ellipsis**: Displays ellipsis when content exceeds the cell area.
+- **EllipsisWithTooltip**: Displays ellipsis and shows full content in a tooltip on hover.
+
+> By default, all the column's [clipMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_ClipMode) property is defined as **EllipsisWithTooltip**.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/clipMode/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ClipMode.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/clipMode/clipMode.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Clip mode](../images/columns/clip-mode.png)
 
 ## Serial number column
 
-The Serial Number feature automatically generates sequential row numbers for records displayed in the Gantt Chart. To enable this feature, set the `enableSerialNumber` property to **true**. Additionally, you need to define a dedicated column in the [GanttColumns](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumns.html) configuration with its [Field](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttColumn.html#Syncfusion_EJ2_Gantt_GanttColumn_Field) property set as **SerialNumber** to display the generated serial numbers. When enabled, serial numbers are assigned based on the current visible row order without requiring a dedicated field in the data source.
+The Serial Number feature generates sequential row numbers for the records displayed in the Gantt Chart. Set [enableSerialNumber](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableSerialNumber) to **true** and define a column whose `field` is **SerialNumber**.
 
-Serial numbers are automatically recalculated whenever the visible row sequence changes. This includes operations such as filtering, searching, sorting, expanding or collapsing parent tasks, indenting or outdenting tasks, adding, editing, or deleting records, row drag-and-drop, and data refresh. As a result, the serial number column always reflects the latest row order currently displayed in the Gantt Chart.
+Serial numbers are calculated from the current visible row order and do not require a field in the data source. They are recalculated after filtering, searching, sorting, expanding or collapsing records, indenting or outdenting tasks, CRUD operations, row drag-and-drop, and data refresh. The numbering therefore remains consistent with hierarchical data and the current view.
 
-The feature works consistently with hierarchical data and updates the numbering across all visible records, ensuring that users can easily identify and reference rows regardless of changes made to the task hierarchy or displayed data set
-
-The following example demonstrates how to enable the auto-generated Serial Number column in the Gantt Chart:
+The following example enables serial numbers with sorting, filtering, editing, and row drag-and-drop:
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/serialNumber/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="serialNumber.cs" %}
+{% highlight c# tabtitle="SerialNumber.cs" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/serialNumber/serialNumber.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![Serial number column](../images/columns/serial-number.png)

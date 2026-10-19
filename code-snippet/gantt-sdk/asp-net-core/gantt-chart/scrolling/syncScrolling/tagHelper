@@ -1,0 +1,33 @@
+<div class="control-section" style="height:475px;width:650px;">
+    <ejs-gantt id="PrimaryGantt" dataSource="@Model.GanttDataSourceCollection" height="50%" width="100%"
+        treeColumnIndex="1" allowSelection="true" dateFormat="MMM dd, y" highlightWeekends="true"
+        actionComplete="syncScroll">
+
+        <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration"
+            progress="Progress" parentID="ParentId">
+        </e-gantt-taskfields>
+
+    </ejs-gantt>
+
+    <ejs-gantt id="SecondaryGantt" dataSource="@Model.GanttDataSourceCollection" height="50%" width="100%"
+        treeColumnIndex="1" allowSelection="true" dateFormat="MMM dd, y" highlightWeekends="true">
+
+        <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration"
+            progress="Progress" parentID="ParentId">
+        </e-gantt-taskfields>
+
+    </ejs-gantt>
+</div>
+
+<script>
+    function syncScroll(args) {
+        if (args.action === 'HorizontalScroll') {
+            var secondaryGantt = document.getElementById('SecondaryGantt').ej2_instances[0];
+            var chartElement = secondaryGantt.element.querySelector('.e-chart-root-container > div');
+
+            if (chartElement) {
+                chartElement.scrollLeft = args.scrollLeft;
+            }
+        }
+    }
+</script>
