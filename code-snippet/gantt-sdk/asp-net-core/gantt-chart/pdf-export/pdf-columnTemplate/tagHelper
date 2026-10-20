@@ -1,6 +1,9 @@
-                <ejs-gantt id='Gantt' dataSource="ViewBag.dataSource" toolbar="@(new List<string>() { "PdfExport" })" toolbarClick="toolbarClick" pdfQueryCellInfo="pdfQueryCellInfo" allowPdfExport="true" height="450px" resources="ViewBag.projectResources">
+@page
+@model IndexModel
+
+                <ejs-gantt id='Gantt' dataSource="@Model.GanttDataSourceCollection" toolbar="@(new List<string>() { "PdfExport" })" toolbarClick="toolbarClick" pdfQueryCellInfo="pdfQueryCellInfo" allowPdfExport="true" height="450px" resources="@Model.GanttResourcesCollection">
                     <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
-                           endDate="EndDate" duration="Duration" progress="Progress" child="SubTasks" resourceInfo="ResourceId">
+                           endDate="EndDate" duration="Duration" progress="Progress" parentId="ParentId" resourceInfo="ResourceId">
                     </e-gantt-taskfields>
                      <e-gantt-resourcefields id="ResourceId" name="ResourceName"> </e-gantt-resourcefields>
                     <e-gantt-columns>

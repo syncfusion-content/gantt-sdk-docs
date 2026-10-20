@@ -1,6 +1,9 @@
-<ejs-gantt id='GanttContainer' dataSource="ViewBag.DataSource" toolbar="@(new List<string>() { "PdfExport","ExcelExport" })"
+@page
+@model IndexModel
+
+<ejs-gantt id='GanttContainer' dataSource="@Model.GanttDataSourceCollection" toolbar="@(new List<string>() { "PdfExport","ExcelExport" })"
            toolbarClick="toolbarClick" allowPdfExport="true" allowExcelExport="true" excelExportComplete="excelExpComplete" pdfExportComplete="pdfExpComplete">
-    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" child="SubTasks">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" parentId="ParentId">
     </e-gantt-taskfields>
 </ejs-gantt>
 <script>

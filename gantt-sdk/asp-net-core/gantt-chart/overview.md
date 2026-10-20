@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview of ASP.NET Core Gantt Chart | Syncfusion
-description: Learn how to use Syncfusion ASP.NET Core Gantt Chart control with key features for project scheduling, task management, and timeline visualization.
-keywords: asp.net core gantt overview, gantt chart features, project management, timeline, task scheduling, syncfusion gantt
+title: ASP.NET Core Gantt Chart Overview - Features & Capabilities | Syncfusion
+description: Learn how to use Syncfusion ASP.NET Core Gantt Chart features for task management, timeline visualization, resource allocation, and project scheduling in one guide.
+keywords: asp.net core gantt chart overview, features, capabilities, task management, timeline, resource allocation, project scheduling
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/overview
 platform: gantt-sdk
 control: Gantt Chart Overview
@@ -13,20 +13,75 @@ appliesto: UI Component Suite, Gantt SDK/overview
 
 # ASP.NET Core Gantt Chart Overview
 
-The Gantt chart is a project management tool which provides a Microsoft Project-like interface for scheduling and managing projects. Its intuitive user interface lets you visually manage tasks, task relationships, and resources in a project.
+The [ASP.NET Core Gantt Chart](https://www.syncfusion.com/gantt-sdk/aspnet-core-gantt-chart) is a project management control that provides a Microsoft Project-like interface for scheduling and managing projects. It enables you to visually manage tasks, task relationships, and resources with an intuitive and interactive timeline view.
 
-## Key Features
+## Quick start
 
-- [Large Data Binding](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/data-binding) - To render a large number of tasks in the Gantt Chart with an effective performance. It allows users to load parent records alone on load time. Child records render on demand during expansion action.
-- [Editing](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managing-tasks/editing-tasks) - A task’s fields, such as duration, start date, end date, predecessors, and more, can be edited directly in their respective cells, using dialog, or interactively using taskbars.
-- [Undo/Redo](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/undo-redo) - It enables users to revert the most recent action performed in the Gantt Chart. Redo feature can reapply an action that was previously undone using the Undo feature. This allows users to revert their decision to undo an action.
-- [Task Dependencies](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/task-dependency) - Define task relationships using finish-to-start, start-to-finish, start-to-start, and finish-to-finish task dependency types.
-- [Customizable Timeline](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/time-line/time-line) – Display timescale from minutes to decades easily, and also support to display even custom texts. Timeline can be displayed in either one-tier or two-tier layout.
-- [Taskbars](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/taskbar) – Supports unscheduled tasks, and it can be customized. Baselines can also be displayed for the tasks.
-- [Critical path](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/criticalpath) - It is a series of tasks (or sometimes only a single task) that controls the calculated finish date of the project. If a task in a critical path is delayed, then the entire project will be delayed.
-- [Timezone](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/timezone) - It explains the Gantt Chart schedules project in their respective timezones.
-- [Columns](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/columns/columns) – Customize the columns and add custom columns to Gantt chart at initialization.
-- [Resources](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/resources) - Resources are represented by staff, equipment, materials, and more. We can show and allocate the resources for each task.
-- [Filtering](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/filtering/filtering) – Support for filtering individual column using menu filtering along with toolbar search box.
-- [Data markers or indicators](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/data-markers) – Support for displaying indicators and flags along with taskbars and task labels.
-- [Event markers and Holidays](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/event-markers) - Highlight important days or events in a project using event markers and define non-working days in a project using holidays.
+- [Getting Started](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/getting-started) - Install and render your first Gantt Chart
+- [Live Demos](https://ej2.syncfusion.com/aspnetcore/Gantt/Default#/tailwind3/gantt/default) - Explore interactive examples
+- [API Reference](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.html) - Complete API documentation
+
+## Data binding and performance
+
+- [**Data sources**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataSource) - Bind local arrays, JSON objects, or remote data using DataManager
+- [**Load on demand**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/data-binding) - Load parent tasks initially and render child tasks on expansion for large datasets
+- [**Virtual scrolling**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/virtual-scrolling) - Handle thousands of tasks with optimized rendering
+
+## Task management
+
+- [**Task editing**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managing-tasks/editing-tasks) - Edit tasks inline, through dialogs, or by dragging taskbars
+- [**Task dependencies**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/task-dependency) - Define relationships using finish-to-start, start-to-finish, start-to-start, and finish-to-finish types
+- [**Undo and redo**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/undo-redo) - Revert or reapply recent actions in the Gantt Chart
+- [**Task scheduling**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/scheduling-tasks) - Configure automatic or manual task scheduling modes
+- [**Task constraints**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/task-constraints) - Apply fixed dates or conditional scheduling restrictions
+- [**Milestones**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/scheduling-tasks) - Mark key events with zero-duration tasks
+- [**Adding tasks**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managing-tasks/adding-new-tasks) - Create new tasks programmatically or through UI
+- [**Deleting tasks**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managing-tasks/deleting-tasks) - Remove tasks with automatic dependency cleanup
+
+## Timeline and visualization
+
+- [**Timeline configuration**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/time-line/time-line) - Configure timeline tiers from minutes to decades with custom text
+- [**Timezone support**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/timezone) - Schedule projects across different timezones
+- [**Taskbars**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/taskbar) - Customize taskbar appearance and display baselines for planned vs actual progress
+- [**Critical path**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/criticalpath) - Identify task sequences that determine project completion dates
+- [**Baseline**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/baseline) - Display planned vs actual schedules
+
+## Columns and layout
+
+- [**Column configuration**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/columns/columns) - Define grid structure and field display
+- [**Column resizing**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/columns/column-resizing) - Enable width adjustments
+- [**Column templates**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/columns/column-template) - Customize cell and header content
+- [**Column menu**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/columns/column-menu) - Provide header context menus
+- [**Splitter**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/splitter) - Adjust grid and timeline panel sizes
+
+## Data operations
+
+- [**Sorting**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/sorting) - Sort tasks by one or multiple columns
+- [**Filtering**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/filtering/filtering) - Filter tasks using menu, Excel-like, and toolbar search options
+- [**Selection**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/selection/selection) - Select single or multiple rows and cells
+- [**Context menu**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/context-menu) - Access common operations through right-click menus
+- [**Immutability**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/immutable) - Work with immutable data structures
+
+## Resources and indicators
+
+- [**Resource allocation**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/resources) - Assign and manage staff, equipment, and materials across tasks
+- [**Resource view**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/resource-view) - Display tasks grouped by assigned resources
+- [**Work mapping**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/work) - Map effort units for resource planning
+- [**Event markers**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/event-markers) - Highlight important dates or milestones in the timeline
+- [**Data markers**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/data-markers) - Display custom indicators and flags on taskbars
+- [**Holidays**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/holidays) - Define non-working days in project schedules
+
+## User interface
+
+- [**Toolbar**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/tool-bar) - Add built-in or custom toolbar actions for common operations
+- [**Row customization**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/rows) - Customize row appearance and height
+- [**Editing dialogs**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managing-tasks/editing-tasks) - Use dialog forms for task editing
+- [**Taskbar editing**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/managing-tasks/task-bar-editing) - Edit through drag and resize
+- [**Keyboard navigation**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/accessibility) - Navigate and edit using keyboard shortcuts
+- [**Multi-taskbar**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/multitaskbar) - Display multiple taskbars per row
+
+## Export
+
+- [**Excel export**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/excel-export/excel-export) - Export grid data to Excel and CSV
+- [**PDF export**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/pdf-export/pdf-export) - Export chart to PDF with customization options
+- [**Header and footer**](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/pdf-export/header-and-footer) - Customize PDF headers and footers

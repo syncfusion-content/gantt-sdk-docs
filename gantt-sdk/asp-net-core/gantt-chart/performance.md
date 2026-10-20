@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Performance in ASP.NET Core Gantt Chart | Syncfusion
-description: Learn about performance optimization techniques in Syncfusion ASP.NET Core Gantt Chart when dealing with large datasets and improving rendering speed.
-keywords: asp.net core gantt performance, large data handling, virtual scrolling, lazy loading, optimization, syncfusion gantt chart
+title: Performance Tips for ASP.NET Core Gantt Chart | Optimization | Syncfusion
+description: Learn how to optimize performance with virtual scrolling, lazy loading, and best practices.
+keywords: asp.net core gantt performance, virtual scrolling, lazy loading, optimization tips, large datasets, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/performance
 platform: gantt-sdk
 control: Performance - Gantt Chart
@@ -13,53 +13,83 @@ appliesto: UI Component Suite, Gantt SDK/overview
 
 # Optimization with Virtual Scrolling in ASP.NET Core Gantt Chart
 
-This article is a comprehensive guide on improving the loading performance of the Gantt component, especially when dealing with large datasets and a significant number of columns. It provides valuable insights into the steps required to bind a large data source without experiencing performance degradation. By offering detailed explanations and actionable tips, this resource aims to empower readers with the knowledge and best practices necessary to optimize the performance of the Gantt component during data binding, ensuring a smooth and efficient user experience.
+This guide provides practical techniques to optimize the [ASP.NET Core Gantt Chart](https://www.syncfusion.com/gantt-sdk/aspnet-core-gantt-chart) control's performance, particularly when working with large datasets. Learn how to implement best practices that maintain smooth user experience while handling substantial amounts of project data efficiently.
 
-## How to improve loading performance by binding large dataset
+## Improving loading performance with large datasets
 
-A Gantt chart consists of rows, columns, and taskbars. For example, binding 10 rows and 10 columns results in rendering 100 elements in the Document Object Model (DOM) of Grid area and 10 elements in the Document Object Model (DOM) of chart area. To ensure optimal loading performance for the component, it is recommended to limit the number of rows and columns rendered. This approach helps in efficiently managing large datasets and enhancing the overall user experience.
+A Gantt chart renders rows, columns, and taskbars in the DOM. For example, displaying 10 rows and 10 columns creates 100 elements in the grid area DOM and 10 elements in the chart area DOM. To ensure optimal loading performance, limit the number of rendered rows and columns when working with large datasets.
 
 ### Optimizing performance with virtualization
 
-To enhance your application's efficiency, especially when dealing with substantial datasets, it is recommended to using [virtualization](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/virtual-scroll). Implementing these techniques can significantly reduce the load on your application and elevate its overall performance.
+Virtualization techniques significantly improve application efficiency when handling large datasets by rendering only visible content:
 
-1.  **Row Virtualization**: The Virtual scrolling feature in the Gantt component enables the efficient handling and display of large volumes of data without compromising performance. This approach optimizes the rendering process by loading only the visible rows within the Gantt viewport, rather than rendering the entire dataset simultaneously. For more information on implementing row virtualization, you can refer to the [documentation](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/virtual-scroll#row-virtualization) section dedicated to this feature. This can be visualized while performing the vertical scroll action.
+1. **Row virtualization**: The virtual scrolling feature enables efficient handling of large data volumes by loading only visible rows within the Gantt viewport rather than rendering the entire dataset. This optimization occurs during vertical scroll actions. For detailed implementation, refer to the [row virtualization documentation](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/virtual-scrolling#configure-row-virtualization).
 
-2.  **Timeline Virtualization**: The timeline virtualization feature in the Gantt Component enables efficient handling and display of large timespan without compromising performance. This approach optimizes the rendering process by loading only the visible timeline cells, which are typically three times the width of the Gantt element. Other timeline cells render on-demand during horizontal scrolling. For more information on implementing timeline virtualization, you can refer to the [documentation](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/virtual-scroll#timeline-virtualization) section dedicated to this feature. This can be visualized while performing the horizontal scroll action.
+2. **Timeline virtualization**: This feature optimizes timeline rendering by loading only visible timeline cells (typically three viewport widths). Additional timeline cells render on-demand during horizontal scrolling. For implementation details, see the [timeline virtualization documentation](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/virtual-scrolling#configure-timeline-virtualization).
 
-3.  **Load On Demand**: The Load on demand feature in the Gantt component enables you to render a large number of tasks in the Gantt Chart with optimal performance. With virtualization enabled, only the root-level records are fetched from the datasource during the initial load. When expanding a root parent node or scrolling vertically, the corresponding tasks are dynamically fetched from the datasource and updated in the DOM based on the current viewport position. This ensures that only the necessary data is rendered, significantly improving performance and responsiveness.
+3. **Load on demand**: This feature renders large task collections with optimal performance. With virtualization enabled, only root-level records load initially. Child tasks load dynamically when expanding parent nodes or scrolling vertically, ensuring only necessary data renders based on the current viewport position.
 
-## Optimizing performance with AutoCalculateDateScheduling
+### Optimizing performance with AutoCalculateDateScheduling
 
-In the Gantt chart component, by default it automatically calculates the start and end dates in [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataSource) based on various factors such as working time, holidays, weekends, and predecessors. However, when rendering a large dataset, these calculations for data validation may result in performance issues. To avoid this, set the [autocalculatedatescheduling](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AutoCalculateDateScheduling) property to **false**.
+By default, the Gantt Chart control automatically calculates start and end dates in the [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataSource) based on working time, holidays, weekends, and predecessors. For large datasets, these calculations can impact performance.
 
-> When setting `autocalculatedatescheduling` property to **false**, you must provide the valid data source; otherwise, the Gantt chart will render with invalid dates.
+Set the [`AutoCalculateDateScheduling`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AutoCalculateDateScheduling) property to **false** to improve initial load performance. This disables parent-child validation, data validation, and predecessor validation, allowing faster rendering.
 
-## How to improve loading performance by binding large data by showing custom text or element
+**Important**: When disabling `AutoCalculateDateScheduling`, provide complete data including start date, end date, and duration in your data source.
 
-When integrating image or template elements into a gantt column, it's recommended to utilize the [Column Template](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/columns/column-template) feature instead of customizing data through the [rowDataBound](https://ej2.syncfusion.com/documentation/api/gantt/index-default#rowdatabound) or [queryCellInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_QueryCellInfo) events. These events are triggered for each row and cell rendering, which can introduce delays in the component's rendering process. Moreover, rendering custom elements using these events may lead to the persistence of rendered elements, potentially causing longer rendering times over time. By opting for the column template feature, you can efficiently fulfill this requirement without experiencing rendering delays and ensure a more streamlined rendering process.
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/virtual-scroll-cs2/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/virtual-scroll-cs2/virtual-scroll-cs2.cs %}
+{% endhighlight %}
+{% endtabs %}
 
-## How to improve loading performance by referring individual script and CSS
+![Alt text](./images/virtual-scroll.png)
 
-To enhance the performance of the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt component during initial rendering and certain actions, it is recommended to download specific component scripts using CRG (Custom Resource Generator) for optimized project loading. By default, the ej2.min.js script file includes all Syncfusion<sup style="font-size:70%">&reg;</sup> component scripts, which may lead to longer load times. Using [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator), you can selectively choose the components and their modules that your project requires. Subsequently, you can download only the necessary scripts and CSS, thereby improving loading times and optimizing resource utilization according to your project's needs.
+> When setting the `AutoCalculateDateScheduling` property to **false**, you must provide a valid data source; otherwise, the Gantt chart will render with invalid dates.
 
-[CRG website link](https://crg.syncfusion.com)
+### Optimizing custom content rendering
 
-So to improve the performance of gantt during the initial rendering, suggested you to refer individual script and CSS.
+When integrating images or template elements into Gantt columns, use the [Column Template](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/columns/column-template) feature instead of customizing data through the [`RowDataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_RowDataBound) or [`QueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_QueryCellInfo) events. These events trigger for each row and cell, potentially causing rendering delays and element persistence issues over time.
 
-## How to optimize server-side data operations with adaptors
+### Performance benchmarks
 
-The Gantt component provides support for various adaptors (OData, ODataV4, WebAPI, URL, etc.) to facilitate server-side data operations and CRUD functionalities. By utilizing these adaptors along with the `DataManager` component, you can seamlessly bind remote data sources to the Gantt and execute actions. During data operations such as filtering and sorting, the corresponding action queries are generated according to the adaptor's requirements. It is crucial to handle these actions on the application side and return the processed data back to the Gantt. Refer to the documentation for comprehensive details. It's worth noting that for efficient data processing, the suggested order for returning processed data to the Gantt is as follows:
+The following tables show typical load times for various Gantt configurations, comparing non-virtualized and virtualized scenarios:
 
-- Filtering
-- Sorting
-- Aggregates
+**Test environment**
 
-## How to avoid MaxJsonLength error while passing large amount of records
+- Component Version: Syncfusion ASP.NET Core Gantt 35.1.27
+- .NET Runtime: .NET 8
+- Browser: Edge 152
+- Operating System: Windows 11
+- CPU: 11th Gen Intel® Core™ i5-1135G7 @ 2.40GHz
+- RAM: 16GB
 
-The Gantt component operates on a client-server basis, meaning data is sent as a JSON object between the client and server. The reported issue occurs due to the serialization of a large JSON object. To resolve this, you need to increase the maximum length for serializing large JSON objects. This can be done by altering the [MaxJsonLength](https://learn.microsoft.com/en-us/archive/msdn-technet-forums/ab1a5864-46e2-4c57-9511-dc3f60cc314a) property in your web.config file or at the point of deserialization.
+**Non-virtualized scenario (2,500 tasks)**
 
-**Solution: 1**
+| Scenario                        | Load time (seconds) |
+|---------------------------------|---------------------|
+| Default hierarchy (Parent-Child) | 4.5                 |
+| + Predecessor                   | 6.7                 |
+| + Resources                     | 7.5                 |
+| + Split taskbars                | 6.8                 |
+
+**Virtualized scenario (25,000 tasks)**
+
+| Scenario                        | Load time (seconds) |
+|---------------------------------|---------------------|
+| Default hierarchy (Parent-Child) | 3.9                 |
+| + Predecessor                   | 5.9                 |
+| + Resources                     | 6.5                 |
+| + Split taskbars                | 10.6                |
+
+## Avoiding maxJsonLength errors with large datasets
+
+The Gantt Chart control operates on a client-server basis, sending data as JSON objects. Large JSON object serialization can cause MaxJsonLength errors. Resolve this by increasing the maximum length for JSON serialization in your web.config file or at the deserialization point.
+
+**Solution 1**
 
 ```csharp
 <configuration>
@@ -73,12 +103,28 @@ The Gantt component operates on a client-server basis, meaning data is sent as a
 </configuration>
 ```
 
-**Solution : 2**
+**Solution 2**
 
 ```csharp
 var serializer = new JavaScriptSerializer { MaxJsonLength = Int32.MaxValue };
 ```
 
-## Microsoft Excel limitation while exporting millions of records to excel file format
+## Optimizing server-side data operations with adaptors
 
-By default, Microsoft Excel supports only 1,048,576 records per sheet. Therefore, exporting millions of records directly to Excel is not feasible. For more details on Microsoft Excel specifications and limits, you can refer to the [documentation](https://support.microsoft.com/en-us/excel/excel-specifications-and-limits). It is recommended to export large datasets in CSV (Comma-Separated Values) or other formats that handle large data more efficiently than Excel.
+The Gantt Chart control supports various adaptors (OData, ODataV4, WebAPI, URL) for server-side data operations and CRUD functionalities. Using these adaptors with the `DataManager` control enables seamless remote data binding and action execution.
+
+During data operations like filtering and sorting, corresponding action queries are generated according to adaptor requirements. Handle these actions on the application side and return processed data to the Gantt. For efficient data processing, return processed data in this order:
+
+- Filtering
+- Sorting
+- Aggregates
+
+## Microsoft Excel limitations for large exports
+
+Microsoft Excel supports only 1,048,576 records per sheet by default, making direct export of millions of records unfeasible. For large datasets, consider exporting to CSV (Comma-Separated Values) or other formats that handle large data more efficiently than Excel. For detailed Excel specifications, refer to the [Microsoft documentation](https://support.microsoft.com/en-gb/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3).
+
+## See also
+
+- [Data binding](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/data-binding)
+- [Virtual scrolling](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/virtual-scrolling)
+- [Column template](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/columns/column-template)

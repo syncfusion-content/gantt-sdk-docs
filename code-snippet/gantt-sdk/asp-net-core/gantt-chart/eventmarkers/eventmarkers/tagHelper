@@ -1,3 +1,6 @@
+@page
+@model IndexModel
+
     <style>
       .e-gantt .e-gantt-chart .e-custom-event-marker {
           width: 1px;
@@ -5,9 +8,9 @@
         }
     </style>
 	
-	<ejs-gantt id='Gantt' dataSource="ViewBag.dataSource" height="450px">
+	<ejs-gantt id='Gantt' dataSource="@Model.GanttDataSourceCollection" height="450px">
         <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
-                endDate="EndDate" duration="Duration" progress="Progress" child="SubTasks">
+                endDate="EndDate" duration="Duration" progress="Progress" parentId="ParentId">
         </e-gantt-taskfields>
         <e-gantt-eventmarkers>
             <e-gantt-eventmarker day="04/10/2019" label="Project approval and kick-off" cssClass="e-custom-event-marker"></e-gantt-eventmarker>

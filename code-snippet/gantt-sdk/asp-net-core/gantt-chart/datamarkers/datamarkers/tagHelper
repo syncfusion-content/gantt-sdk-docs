@@ -1,5 +1,8 @@
-                <ejs-gantt id='Gantt' dataSource="ViewBag.dataSource" height="450px">
-                    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
-                          duration="Duration" progress="Progress" child="SubTasks" indicators="Indicators">
-                    </e-gantt-taskfields>
-                </ejs-gantt>
+@page
+@model IndexModel
+
+<ejs-gantt id='Gantt' dataSource="@Model.GanttDataSourceCollection" height="450px">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
+          endDate="EndDate" duration="Duration" progress="Progress" parentId="ParentId" indicators="Indicators">
+    </e-gantt-taskfields>
+</ejs-gantt>
