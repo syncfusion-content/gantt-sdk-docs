@@ -52,6 +52,7 @@ The Blazor Kanban component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/
 | `.e-kanban .e-header-table` | `role="table"`, `aria-label` | Identifies the header table and provides its accessible name. |
 | `.e-kanban .e-content-table` | `role="presentation"` | Removes the content table's native table semantics; its body exposes the grid role. |
 | `.e-kanban .e-content-table tbody` | `role="treegrid"` | Identifies the Kanban content as an interactive grid of rows and cards. |
+| `tbody` | `role="treegrid"` | Identifies the Kanban content as an interactive grid of rows and cards. |
 | `.e-kanban .e-content-row` | `role="row"`, `aria-expanded` | Identifies a content or swimlane row and indicates its expanded state. |
 | `.e-kanban .e-header-cells` | `aria-expanded` | Indicates whether a Kanban column is expanded or collapsed. |
 | `.e-kanban .e-card-container` | `role="listbox"`, `aria-label` | Identifies the selectable card list for a column and provides its accessible name. |
