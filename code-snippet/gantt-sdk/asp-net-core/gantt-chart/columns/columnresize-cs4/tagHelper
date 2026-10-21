@@ -1,0 +1,39 @@
+<div style="display: flex; align-items: center; margin-bottom: 15px;">
+    <label style="padding-right: 10px;font-weight:bold">Change the field:</label>
+    <ejs-dropdownlist style="margin-top: 5px;" id="value" index="0" width="120" dataSource="ViewBag.FieldData">
+    </ejs-dropdownlist>
+</div>
+<div style="margin-bottom: 20px;">
+    <label style="padding-right: 10px;font-weight:bold">Enter the width:</label>
+    <input id="textbox" class="e-input" type="text" placeholder="Enter new width" style="width:120px" />
+    <button id="button" class="e-btn" onclick="onExternalResize()">Resize</button>
+</div>
+<div style="margin-top: 20px;">
+<ejs-gantt id='Gantt' height="430px" dataSource="ViewBag.DataSource" treeColumnIndex="1" splitterSettings="@(new GanttSplitterSettingsModel { Position = "75%" })">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" parentId="ParentId">
+    </e-gantt-taskfields>
+    <e-gantt-columns>
+        <e-gantt-column field="TaskId" headerText="Task ID" textAlign="Right" width="90"></e-gantt-column>
+        <e-gantt-column field="TaskName" headerText="Task Name" textAlign="Left" width="290"></e-gantt-column>
+        <e-gantt-column field="StartDate" headerText="Start Date" textAlign="Right" width="120"></e-gantt-column>
+        <e-gantt-column field="Duration" headerText="Duration" textAlign="Right" width="90"></e-gantt-column>
+        <e-gantt-column field="Progress" headerText="Progress" textAlign="Right" width="120"></e-gantt-column>
+    </e-gantt-columns>
+</ejs-gantt>
+</div>
+<script>
+    document.getElementById('button').addEventListener('click', onExternalResize);
+    function onExternalResize() {
+        var gantt = document.getElementById("Gantt").ej2_instances[0];
+        var dropInstance = document.getElementById("value").ej2_instances[0];
+        var field = dropInstance.value;
+        var newWidth = document.getElementById('textbox').value;
+        if (field && newWidth && gantt) {
+            var column = gantt.treeGrid.getColumnByField(field);
+            if (column) {
+                column.width = newWidth;
+                gantt.treeGrid.refreshColumns();
+            }
+        }
+    }
+</script>

@@ -1,0 +1,28 @@
+<div style="margin-bottom:20px">
+    <button id='toggleBtn' class="e-btn" onclick="toggleEventMarkers()">Disable Event Markers</button>
+</div>
+<ejs-gantt id='Gantt' height="430px" dataSource="ViewBag.dataSource" eventMarkers="ViewBag.EventMarkers">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" progress="Progress" dependency="Predecessor" parentId="ParentId">
+    </e-gantt-taskfields>
+</ejs-gantt>
+<script>
+    var eventMarkersEnabled = true;
+    var defaultMarkers = [
+        { day: '04/09/2019', label: 'Research phase' },
+        { day: '04/30/2019', label: 'Design phase' },
+        { day: '05/23/2019', label: 'Production phase' },
+        { day: '06/20/2019', label: 'Sales and marketing phase' }
+    ];
+
+    function toggleEventMarkers() {
+        var gantt = document.getElementById("Gantt").ej2_instances[0];
+        if (eventMarkersEnabled) {
+            gantt.eventMarkers = [];
+        } else {
+            gantt.eventMarkers = defaultMarkers;
+        }
+        gantt.dataBind();
+        eventMarkersEnabled = !eventMarkersEnabled;
+        document.getElementById('toggleBtn').textContent = (eventMarkersEnabled ? 'Disable' : 'Enable') + ' Event Markers';
+    }
+</script>

@@ -1,0 +1,24 @@
+<button id='hideBtn' class="e-btn" onclick="hideIndicators()">Hide data markers</button>
+<button id='showBtn' class="e-btn" onclick="showIndicators()">Show data markers</button>
+<br><br>
+<ejs-gantt id='Gantt' height="430px" dataSource="ViewBag.DataSource">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" parentId="ParentId" indicators="Indicators">
+    </e-gantt-taskfields>
+</ejs-gantt>
+<script>
+    function hideIndicators() {
+        var gantt = document.getElementById("Gantt").ej2_instances[0];
+        var nodes = gantt.element.querySelectorAll('.e-indicator-span');
+        nodes.forEach(function (box) {
+            box.style.display = 'none';
+        });
+    }
+
+    function showIndicators() {
+        var gantt = document.getElementById("Gantt").ej2_instances[0];
+        var nodes = gantt.element.querySelectorAll('.e-indicator-span');
+        nodes.forEach(function (box) {
+            box.style.display = '';
+        });
+    }
+</script>
