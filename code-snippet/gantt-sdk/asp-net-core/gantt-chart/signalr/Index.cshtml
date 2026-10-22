@@ -1,0 +1,96 @@
+@page
+@model CoreSamples.Pages.IndexModel
+
+<ejs-gantt id="Gantt" dataSource="@Model.GanttData" height="450px" created="created" actionComplete="actionComplete">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" dependency="Predecessor" parentID="ParentId"></e-gantt-taskfields>
+    <e-gantt-editsettings allowAdding="true" allowEditing="true" allowDeleting="true" allowTaskbarEditing="true"></e-gantt-editsettings>
+    <e-gantt-columns>
+        <e-gantt-column field="TaskId" headerText="ID" width="80"></e-gantt-column>
+        <e-gantt-column field="TaskName" headerText="Task Name" width="150"></e-gantt-column>
+        <e-gantt-column field="StartDate"></e-gantt-column>
+        <e-gantt-column field="Duration"></e-gantt-column>
+        <e-gantt-column field="Progress"></e-gantt-column>
+    </e-gantt-columns>
+</ejs-gantt>
+
+<script src="https://cdn.jsdelivr.net/npm/@@microsoft/signalr@8.0.7/dist/browser/signalr.min.js"></script>
+<script>
+    var connection;
+    var connectionId;
+    var toRefreshGantt = false;
+    var projectId = "1"; // dynamic later (route, API, etc.)
+
+    // SignalR setup
+    connection = new signalR.HubConnectionBuilder()
+        .withUrl("https://localhost:7297/ganttHub") // Configure server-side port number
+        .withAutomaticReconnect()
+        .build();
+
+    function created() {
+        var gantt = document.getElementById("Gantt").ej2_instances[0];
+
+        connection.on("ReceiveTaskChange", function (message) {
+            console.log("SignalR message received", message);
+            var data = message.data;
+            if (message.projectId !== projectId) return;
+            if (message.sender === connectionId) return;
+
+            toRefreshGantt = true;
+
+            switch (message.type) {
+                case "add":
+                    gantt.addRecord(data);
+                    break;
+                case "update":
+                    gantt.updateRecordByID(data);
+                    break;
+                case "delete":
+                    gantt.deleteRecord(data.TaskId);
+                    break;
+            }
+        });
+
+        // Sequential flow: start the connection, then join the project group
+        connection.start()
+            .then(function () {
+                connectionId = connection.connectionId;
+                return connection.invoke("JoinProject", projectId);
+            })
+            .then(function () {
+                console.log("Joined group successfully");
+            })
+            .catch(function (err) { console.error(err); });
+    }
+
+    // Triggered when the user changes data
+    function actionComplete(args) {
+        if (toRefreshGantt && (args.requestType === "save" || args.requestType === "add" || args.requestType === "delete")) {
+            toRefreshGantt = false;
+            return;
+        }
+        switch (args.requestType) {
+            case "save":
+                sendMessage("update", args.data.taskData);
+                break;
+            case "add":
+                sendMessage("add", args.newTaskData);
+                break;
+            case "delete":
+                sendMessage("delete", args.data[0].taskData);
+                break;
+        }
+    }
+
+    // Global sender
+    function sendMessage(type, data) {
+        if (!connection) return;
+        var payload = {
+            ProjectId: projectId,
+            Type: type,
+            Data: data,
+            Sender: connectionId
+        };
+        connection.invoke("BroadCastTaskChange", projectId, payload)
+            .catch(function (err) { console.error(err); });
+    }
+</script>

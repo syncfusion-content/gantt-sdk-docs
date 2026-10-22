@@ -1,0 +1,23 @@
+@page
+@model CoreSamples.Pages.IndexModel
+
+<div style="margin-bottom: 10px;">
+    <label for="timelineMode" style="margin-right: 10px;">Timeline mode:</label>
+    <select id="timelineMode" style="width: 200px; padding: 4px;">
+        <option value="Week" selected>Week</option>
+        <option value="Day">Day</option>
+        <option value="Month">Month</option>
+    </select>
+</div>
+<ejs-gantt id="Gantt" dataSource="@Model.GanttData" height="430px">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" progress="Progress" dependency="Predecessor" parentID="ParentId"></e-gantt-taskfields>
+    <e-gantt-timelinesettings timelineViewMode="Week"></e-gantt-timelinesettings>
+</ejs-gantt>
+
+<script>
+    document.getElementById("timelineMode").addEventListener("change", function (e) {
+        var gantt = document.getElementById("Gantt").ej2_instances[0];
+        gantt.timelineSettings.timelineViewMode = e.target.value;
+        gantt.refresh();
+    });
+</script>

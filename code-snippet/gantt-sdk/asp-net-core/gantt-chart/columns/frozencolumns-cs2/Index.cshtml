@@ -1,0 +1,16 @@
+@page
+@model CoreSamples.Pages.IndexModel
+
+<ejs-gantt id="Gantt" dataSource="@Model.GanttData" height="430px" treeColumnIndex="1" gridLines="Both" allowSelection="false">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" endDate="EndDate" progress="Progress" parentID="ParentId"></e-gantt-taskfields>
+    <e-gantt-labelsettings taskLabel="Progress" rightLabel="TaskName"></e-gantt-labelsettings>
+    <e-gantt-splittersettings position="65%"></e-gantt-splittersettings>
+    <e-gantt-columns>
+        <e-gantt-column field="TaskId" headerText="Task ID" isFrozen="true"></e-gantt-column>
+        <e-gantt-column field="TaskName" headerText="Task Name" width="220" isFrozen="true"></e-gantt-column>
+        <e-gantt-column field="StartDate" headerText="Start Date"></e-gantt-column>
+        <e-gantt-column field="Duration" headerText="Duration"></e-gantt-column>
+        <e-gantt-column field="Progress" headerText="Progress"></e-gantt-column>
+        <e-gantt-column field="Status" headerText="Status" isFrozen="true"></e-gantt-column>
+    </e-gantt-columns>
+</ejs-gantt>

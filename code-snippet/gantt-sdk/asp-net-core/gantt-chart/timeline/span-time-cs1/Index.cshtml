@@ -1,0 +1,29 @@
+@page
+@model CoreSamples.Pages.IndexModel
+
+<div style="margin-bottom: 10px;">
+    <button id="previousWeek" style="margin-right: 10px;" onclick="goToPreviousTimeSpan()">Previous Week</button>
+    <button id="nextWeek" onclick="goToNextTimeSpan()">Next Week</button>
+</div>
+<ejs-gantt id="Gantt" dataSource="@Model.GanttData" height="430px">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" progress="Progress" dependency="Predecessor" parentID="ParentId"></e-gantt-taskfields>
+    <e-gantt-timelinesettings timelineViewMode="Week"></e-gantt-timelinesettings>
+    <e-gantt-columns>
+        <e-gantt-column field="TaskId" headerText="Task ID" textAlign="Left" width="100"></e-gantt-column>
+        <e-gantt-column field="TaskName" headerText="Task Name" width="150"></e-gantt-column>
+        <e-gantt-column field="StartDate" headerText="Start Date" width="150"></e-gantt-column>
+        <e-gantt-column field="Duration" headerText="Duration" width="150"></e-gantt-column>
+        <e-gantt-column field="Progress" headerText="Progress" width="150"></e-gantt-column>
+    </e-gantt-columns>
+</ejs-gantt>
+
+<script>
+    function goToPreviousTimeSpan() {
+        var gantt = document.getElementById("Gantt").ej2_instances[0];
+        gantt.previousTimeSpan();
+    }
+    function goToNextTimeSpan() {
+        var gantt = document.getElementById("Gantt").ej2_instances[0];
+        gantt.nextTimeSpan();
+    }
+</script>

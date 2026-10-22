@@ -1,0 +1,46 @@
+@page
+@model CoreSamples.Pages.IndexModel
+
+<div style="margin: 20px 0 10px 180px;">
+    <p style="color: red;" id="message"></p>
+</div>
+<ejs-gantt id="Gantt" dataSource="@Model.GanttData" height="430px" allowReordering="true" treeColumnIndex="1" columnDragStart="columnDragStart" columnDrag="columnDrag" columnDrop="columnDrop">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" parentID="ParentId"></e-gantt-taskfields>
+    <e-gantt-splittersettings position="75%"></e-gantt-splittersettings>
+    <e-gantt-columns>
+            <e-gantt-column field="TaskId" headerText="Task ID" textAlign="Right" width="90"></e-gantt-column>
+            <e-gantt-column field="TaskName" headerText="Task Name" textAlign="Left" width="290"></e-gantt-column>
+            <e-gantt-column field="StartDate" headerText="Start Date" textAlign="Right" width="120"></e-gantt-column>
+            <e-gantt-column field="Duration" headerText="Duration" textAlign="Right" width="90"></e-gantt-column>
+            <e-gantt-column field="Progress" headerText="Progress" textAlign="Right" width="120"></e-gantt-column>
+    </e-gantt-columns>
+</ejs-gantt>
+<script>
+    function setMessage(text) {
+        document.getElementById("message").innerText = text;
+    }
+
+    function columnDragStart(args) {
+        setMessage("columnDragStart event triggered");
+        if (args.column && args.column.field === "TaskName") {
+            args.column.headerText = "Project Task";
+            setMessage("Header text changed for column: " + args.column.field);
+        }
+    }
+
+    function columnDrag(args) {
+        setMessage("columnDrag event triggered");
+        if (args.column && args.column.field === "Duration") {
+            args.column.allowReordering = false;
+            setMessage("Reordering disabled for column: " + args.column.field);
+        }
+    }
+
+    function columnDrop(args) {
+        setMessage("columnDrop event triggered");
+        if (args.column && args.column.field === "TaskId") {
+            args.column.allowReordering = false;
+            setMessage("Reordering cancelled for column: " + args.column.field);
+        }
+    }
+</script>

@@ -1,0 +1,100 @@
+@page
+@model CoreSamples.Pages.IndexModel
+
+<ejs-gantt id="Gantt" dataSource="@Model.GanttData" height="430px" treeColumnIndex="1" timelineTemplate="#timelineTemplate" projectStartDate="new DateTime(2024, 3, 31)" projectEndDate="new DateTime(2024, 4, 23)">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" progress="Progress" dependency="Predecessor" parentID="ParentId"></e-gantt-taskfields>
+    <e-gantt-timelinesettings timelineUnitSize="100">
+        <e-timelinesettings-toptier unit="Week" format="dd/MM/yyyy"></e-timelinesettings-toptier>
+        <e-timelinesettings-bottomtier unit="Day" count="1"></e-timelinesettings-bottomtier>
+    </e-gantt-timelinesettings>
+    <e-gantt-columns>
+        <e-gantt-column field="TaskId" width="80"></e-gantt-column>
+        <e-gantt-column field="TaskName" headerText="Job Name" width="250" clipMode="EllipsisWithTooltip"></e-gantt-column>
+        <e-gantt-column field="StartDate"></e-gantt-column>
+        <e-gantt-column field="EndDate"></e-gantt-column>
+        <e-gantt-column field="Duration"></e-gantt-column>
+        <e-gantt-column field="Progress"></e-gantt-column>
+        <e-gantt-column field="Predecessor"></e-gantt-column>
+    </e-gantt-columns>
+    <e-gantt-holidays>
+        <e-gantt-holiday from="new DateTime(2024, 4, 4)" to="new DateTime(2024, 4, 4)" label="Local Holiday"></e-gantt-holiday>
+        <e-gantt-holiday from="new DateTime(2024, 4, 19)" to="new DateTime(2024, 4, 19)" label="Good Friday"></e-gantt-holiday>
+    </e-gantt-holidays>
+</ejs-gantt>
+
+<script id="timelineTemplate" type="text/x-template">
+    ${if(tier === "topTier")}
+    <div class="e-header-cell-label e-gantt-top-cell-text top-tier-cell" title="${date}">
+        <div>${value}</div>
+        <div class="weather-icon">${getWeatherIcon(date)}</div>
+    </div>
+    ${else}
+    <div class="e-header-cell-label e-gantt-top-cell-text bottom-tier-cell" style="background-color:${bgColor(value, date)}" title="${date}">
+        ${holidayValue(value, date)}
+    </div>
+    ${/if}
+</script>
+
+<style>
+    .top-tier-cell {
+        width: 100%;
+        height: 100%;
+        background-color: #FBF9F1;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .weather-icon {
+        padding-left: 10px;
+        line-height: normal;
+    }
+    .bottom-tier-cell {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+</style>
+
+<script>
+    var holidays = [
+        { from: new Date("04/04/2024"), to: new Date("04/04/2024"), label: "Local Holiday" },
+        { from: new Date("04/19/2024"), to: new Date("04/19/2024"), label: "Good Friday" }
+    ];
+    var weatherIcons = ["\u2600\uFE0F", "\u26C5", "\u2601\uFE0F", "\uD83C\uDF27\uFE0F"];
+    var currentIndex = 0;
+
+    function isHoliday(date) {
+        var parsedDate = new Date(date);
+        for (var i = 0; i < holidays.length; i++) {
+            if (parsedDate >= holidays[i].from && parsedDate <= holidays[i].to) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    function getWeatherIcon() {
+        var icon = weatherIcons[currentIndex];
+        currentIndex = (currentIndex + 1) % weatherIcons.length;
+        return icon;
+    }
+
+    function bgColor(value, date) {
+        if (value === "S") {
+            return "#7BD3EA";
+        }
+        return isHoliday(date) ? "#97E7E1" : "#E0FBE2";
+    }
+
+    function holidayValue(value, date) {
+        if (isHoliday(date)) {
+            return new Date(date).toLocaleDateString("en-US", { weekday: "short" }).toUpperCase();
+        }
+        return value;
+    }
+</script>

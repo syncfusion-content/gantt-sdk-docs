@@ -1,0 +1,17 @@
+@page
+@model CoreSamples.Pages.IndexModel
+
+<ejs-gantt id="Gantt" dataSource="@Model.GanttData" height="430px" enableInfiniteTimelineScroll="true" treeColumnIndex="1" gridLines="Both">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" dependency="Predecessor" parentID="ParentId"></e-gantt-taskfields>
+    <e-gantt-splittersettings columnIndex="3"></e-gantt-splittersettings>
+    <e-gantt-timelinesettings viewStartDate="new DateTime(2025, 12, 29)" viewEndDate="new DateTime(2026, 4, 27)"></e-gantt-timelinesettings>
+    <e-gantt-labelsettings leftLabel="TaskId" rightLabel="TaskName"></e-gantt-labelsettings>
+    <e-gantt-columns>
+        <e-gantt-column field="TaskId" width="80"></e-gantt-column>
+        <e-gantt-column field="TaskName" headerText="Job Name" width="250" clipMode="EllipsisWithTooltip"></e-gantt-column>
+        <e-gantt-column field="StartDate"></e-gantt-column>
+        <e-gantt-column field="Duration"></e-gantt-column>
+        <e-gantt-column field="Progress"></e-gantt-column>
+        <e-gantt-column field="Predecessor"></e-gantt-column>
+    </e-gantt-columns>
+</ejs-gantt>

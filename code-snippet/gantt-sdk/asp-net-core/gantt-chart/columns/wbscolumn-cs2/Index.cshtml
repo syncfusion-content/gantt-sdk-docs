@@ -1,0 +1,46 @@
+@page
+@model CoreSamples.Pages.IndexModel
+
+<ejs-gantt id="Gantt" dataSource="@Model.GanttData" height="450px" treeColumnIndex="2" allowFiltering="true" allowSorting="true" allowSelection="true" allowUnscheduledTasks="true" enableWBS="true" enableAutoWbsUpdate="false" projectStartDate="new DateTime(2024, 3, 31)" projectEndDate="new DateTime(2024, 5, 30)" rowHeight="40" taskbarHeight="20" allowRowDragAndDrop="true" dataBound="dataBound" actionBegin="actionBegin" toolbar="@(new List<string>() { "Add", "Edit", "Update", "Delete", "Cancel", "ExpandAll", "CollapseAll" })">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" dependency="Predecessor" parentID="ParentId"></e-gantt-taskfields>
+    <e-gantt-columns>
+        <e-gantt-column field="TaskId" headerText="Task ID" visible="false"></e-gantt-column>
+        <e-gantt-column field="WBSCode" headerText="WBS Code" width="150"></e-gantt-column>
+        <e-gantt-column field="TaskName" headerText="Task Name" allowReordering="false" width="260"></e-gantt-column>
+        <e-gantt-column field="StartDate" headerText="Start Date" width="140"></e-gantt-column>
+        <e-gantt-column field="WBSPredecessor" headerText="WBS Predecessor" width="190"></e-gantt-column>
+        <e-gantt-column field="Duration" headerText="Duration" allowEditing="false" width="130"></e-gantt-column>
+        <e-gantt-column field="Progress" headerText="Progress"></e-gantt-column>
+    </e-gantt-columns>
+    <e-gantt-eventmarkers>
+        <e-gantt-eventmarker day="new DateTime(2024, 4, 2)" label="Project Initiation"></e-gantt-eventmarker>
+    </e-gantt-eventmarkers>
+    <e-gantt-editsettings allowAdding="true" allowEditing="true" allowDeleting="true" allowTaskbarEditing="true" showDeleteConfirmDialog="true"></e-gantt-editsettings>
+    <e-gantt-splittersettings columnIndex="4"></e-gantt-splittersettings>
+    <e-gantt-selectionsettings mode="Row" type="Single" enableToggle="false"></e-gantt-selectionsettings>
+    <e-gantt-tooltipsettings showTooltip="true"></e-gantt-tooltipsettings>
+    <e-gantt-filtersettings type="Menu"></e-gantt-filtersettings>
+    <e-gantt-timelinesettings showTooltip="true">
+        <e-timelinesettings-toptier unit="Week" format="dd/MM/yyyy"></e-timelinesettings-toptier>
+        <e-timelinesettings-bottomtier unit="Day" count="1"></e-timelinesettings-bottomtier>
+    </e-gantt-timelinesettings>
+    <e-gantt-labelsettings taskLabel="${Progress}%"></e-gantt-labelsettings>
+</ejs-gantt>
+
+<script>
+    var isRowDropped = false;
+    function dataBound() {
+        var gantt = document.getElementById("Gantt").ej2_instances[0];
+        if (isRowDropped) {
+            gantt.enableAutoWbsUpdate = false;
+            isRowDropped = false;
+        }
+    }
+    function actionBegin(args) {
+        var gantt = document.getElementById("Gantt").ej2_instances[0];
+        if (args.requestType === "beforeDrop") {
+            isRowDropped = true;
+            gantt.enableAutoWbsUpdate = true;
+        }
+    }
+</script>
