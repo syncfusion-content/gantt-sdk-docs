@@ -38,7 +38,7 @@
     "@syncfusion/ej2-splitbuttons": "*",
     "@syncfusion/ej2-tailwind3-theme": "*",
     "@syncfusion/ej2-treegrid": "*",
-    "moment": "2.29.4",
+    "moment": "2.31.0",
     "rxjs": "7.8.0",
     "tslib": "2.3.0",
     "zone.js": "0.14.3"
