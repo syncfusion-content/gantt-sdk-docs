@@ -8,7 +8,6 @@
                gridLines="Both"
                frozenColumns= 2
                allowSelection="false"
-               splitterSettings="@(new GanttSplitterSettings { Position = "65%" })"
                labelSettings="@(new GanttLabelSettings { TaskLabel = "Progress" })"
                taskFields="@(new GanttTaskFields {
                    Id = "TaskID",
@@ -29,5 +28,6 @@
             <e-gantt-column field="Progress" headerText="Progress" textAlign="Left" width="120"></e-gantt-column>
             <e-gantt-column field="Predecessor" headerText="Predecessor" textAlign="Left" width="120"></e-gantt-column>
         </e-gantt-columns>
-    </ejs-gantt>
+        <e-gantt-splittersettings position="65%"></e-gantt-splittersettings>
+</ejs-gantt>
 </div>

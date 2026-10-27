@@ -1,13 +1,13 @@
-@Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowPdfExport(true).Height("450px").RowHeight(60).TaskbarTemplate(
+@Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)Model.GanttDataSourceCollection).AllowPdfExport(true).Height("450px").RowHeight(60).TaskbarTemplate(
     "#TaskbarTemplate").ParentTaskbarTemplate("#ParentTaskbarTemplate").MilestoneTemplate("#MilestoneTemplate").TaskFields(ts
     =>
-    ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks").Toolbar(new
+    ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").ParentID("ParentId").Toolbar(new
     List<string>() {
         "PdfExport"
         }).ToolbarClick("toolbarClick").PdfQueryTaskbarInfo("pdfQueryTaskbarInfo").ResourceInfo("ResourceId")).ResourceFields(rf
         =>
         rf.Id("ResourceId").Name("ResourceName")).Resources((
-        IEnumerable<object>)ViewBag.projectResources).Columns(col =>
+        IEnumerable<object>)Model.GanttResourcesCollection).Columns(col =>
             {
             col.Field("TaskId").HeaderText("Task ID").Width(250).Add();
             col.Field("TaskName").HeaderText("Task Name").Width(250).Add();

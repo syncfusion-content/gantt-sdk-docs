@@ -21,6 +21,20 @@ To export data to PDF document, inject the `PdfExport` module in Gantt.
 
 N> Currently, we don't have support for exporting the manually scheduled tasks.
 
+N> If you customize the PDF output using the `PdfQueryCellInfo`, `PdfQueryTimelineCellInfo`, or `PdfQueryTaskbarInfo` events with PDF library classes (such as `ej.pdfexport.PdfColor`), reference the **ej2-pdf-export** script **before** the Gantt script in **~/Pages/Shared/\_Layout.cshtml**; otherwise, a `Cannot read properties of undefined (reading 'PdfColor')` error occurs during export.
+
+{% tabs %}
+{% highlight cshtml tabtitle="_Layout.cshtml" %}
+
+<head>
+    ...
+    <script src="https://cdn.syncfusion.com/ej2/35.1.37/ej2-pdf-export.min.js"></script>
+    <script src="_content/Syncfusion.AspNetCore.Gantt/scripts/sf-gantt.min.js"></script>
+</head>
+
+{% endhighlight %}
+{% endtabs %}
+
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/pdf-export/pdf-columnTemplate/tagHelper %}

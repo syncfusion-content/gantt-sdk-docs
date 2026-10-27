@@ -1,0 +1,30 @@
+@page
+@model IndexModel
+
+<ejs-gantt id='Gantt' height="450px" dataSource="@Model.GanttDataSourceCollection" editSettings="@(new Syncfusion.EJ2.Gantt.GanttEditSettings { AllowEditing = true })" toolbar="@(new List<string>() { "Edit" })" dataBound="dataBound">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
+          endDate="EndDate" duration="Duration" progress="Progress" parentId="ParentId" indicators="Indicators">
+    </e-gantt-taskfields>
+</ejs-gantt>
+<script>
+    function dataBound() {
+        var gantt = document.getElementById("Gantt").ej2_instances[0];
+        var elements = document.querySelectorAll('.e-indicator-span');
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].addEventListener('click', function (event) {
+                // Find the task row that contains the clicked indicator.
+                var indicatorElement = event.target;
+                var taskRow = indicatorElement.closest('tr.e-chart-row');
+                if (taskRow && gantt) {
+                    // Get the task ID from the row data.
+                    var rowIndex = parseInt(taskRow.getAttribute('data-rowindex') || '0', 10);
+                    var record = gantt.flatData[rowIndex];
+                    if (record && record.ganttProperties.taskId) {
+                        // Open edit dialog for the specific task.
+                        gantt.openEditDialog(record.ganttProperties.taskId);
+                    }
+                }
+            });
+        }
+    }
+</script>
