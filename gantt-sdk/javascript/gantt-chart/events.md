@@ -73,7 +73,7 @@ The event argument structure varies based on the operation type. The following t
 | `requestType`            | string   | Describes the type of request, typically **filtering**.  |
 | `type`                   | string   | Event type identifier.                                   |
 
-**5. [SortEventArgs](https://ej2.syncfusion.com/javascript/documentation/api/grid/sortEventArgs) (Sorting)**
+**5. [SortEventArgs](https://ej2.syncfusion.com/javascript/documentation/api/grid/sorteventargs) (Sorting)**
 
 | **Property**  | **Type** | **Description**                                       |
 | ------------- | -------- | ----------------------------------------------------- |
@@ -926,7 +926,7 @@ args.content = `<div><b>${task.TaskName}</b><br>Progress: ${task.Progress}%<br>D
 
 The [cellDeselected](https://ej2.syncfusion.com/javascript/documentation/api/gantt#celldeselected) event is triggered when a selected cell in the Gantt component is deselected. This occurs when the selection is cleared by clicking outside the cell, selecting a different cell or row, or through programmatic control. This event is typically used to validate cell data after deselection, synchronize external state, or trigger updates based on cell-level interactions.
 
-The event provides an argument of type [CellDeselectEventArgs](https://ej2.syncfusion.com/javascript/documentation/api/grid/cellDeselectEventArgs) with the following properties:
+The event provides an argument of type [CellDeselectEventArgs](https://ej2.syncfusion.com/javascript/documentation/api/grid/celldeselecteventargs) with the following properties:
 
 | **Property**  | **Type** | **Description**                               |
 | ------------- | -------- | --------------------------------------------- |
@@ -1180,7 +1180,7 @@ console.log(`Cell deselecting at row ${index.rowIndex}, column ${colIndex} at ${
 
 The [cellEdit](https://ej2.syncfusion.com/javascript/documentation/api/gantt#celledit) event is triggered when a cell enters edit mode in the Gantt Chart component. This event allows customization of the editing behavior, such as validating input, modifying cell values, or preventing edits based on specific conditions. It helps ensure that data changes meet application requirements before being applied.
 
-The event provides an argument of type [CellEditArgs](https://ej2.syncfusion.com/javascript/documentation/api/gantt/cellEditArgs) with the following properties:
+The event provides an argument of type [CellEditArgs](https://ej2.syncfusion.com/javascript/documentation/api/gantt/celleditargs) with the following properties:
 
 | **Property**      | **Type**    | **Description**                                      |
 | ----------------- | ----------- | ---------------------------------------------------- |
@@ -1317,7 +1317,7 @@ return;
 
 The [cellSelected](https://ej2.syncfusion.com/javascript/documentation/api/gantt#cellselected) event is triggered after a cell in the Gantt component is selected. This event provides access to the selected cell’s context and enables interaction logic based on cell-level selection. This event is commonly used to apply conditional styling, display contextual information, or trigger logic based on the selected task or field.
 
-The event provides an argument of type [CellSelectEventArgs](https://ej2.syncfusion.com/javascript/documentation/api/grid/cellSelectEventArgs) with the following properties:
+The event provides an argument of type [CellSelectEventArgs](https://ej2.syncfusion.com/javascript/documentation/api/grid/cellselecteventargs) with the following properties:
 
 | **Property**           | **Type**  | **Description**                            |
 | ---------------------- | --------- | ------------------------------------------ |
@@ -2694,7 +2694,7 @@ console.log("Gantt component destroyed.", args);
 
 The [endEdit](https://ej2.syncfusion.com/javascript/documentation/api/gantt#endedit) event is triggered after a task is modified through cell editing. It enables post-edit actions such as validation, logging, or syncing changes with external systems.
 
-The event provides an argument of type [ITaskbarEditedEventArgs](https://ej2.syncfusion.com/javascript/documentation/api/gantt/iTaskbarEditedEventArgs) with the following properties:
+The event provides an argument of type [ITaskbarEditedEventArgs](https://ej2.syncfusion.com/javascript/documentation/api/gantt/itaskbareditedeventargs) with the following properties:
 
 | **Property**        | **Type**   | **Description**                                    |
 | ------------------- | ---------- | -------------------------------------------------- |
@@ -7304,7 +7304,7 @@ alert(`Task "${editedTask.TaskName}" was updated via ${actionType}.`);
 
 The [taskbarEditing](https://ej2.syncfusion.com/javascript/documentation/api/gantt#taskbarediting) event is triggered while a taskbar is being dragged or resized in the Gantt Chart. It enables actions that respond to live taskbar changes, such as enforcing constraints, updating tooltips, or canceling edits based on conditions.
 
-The event provides an argument of type [ITaskbarEditedEventArgs](https://ej2.syncfusion.com/javascript/documentation/api/gantt/iTaskbarEditedEventArgs) with the following properties:
+The event provides an argument of type [ITaskbarEditedEventArgs](https://ej2.syncfusion.com/javascript/documentation/api/gantt/itaskbareditedeventargs) with the following properties:
 
 | **Property**        | **Type**   | **Description**                          |
 | ------------------- | ---------- | ---------------------------------------- |
