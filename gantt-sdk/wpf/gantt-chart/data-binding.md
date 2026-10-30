@@ -135,7 +135,7 @@ public class ViewModel
 
 The following image shows the binding TaskDetails:
 
-![gantt-control-taskdetails-binding](Data-Binding_images/gantt-control-taskdetails-binding.jpeg)
+![gantt-control-taskdetails-binding](Data-Binding_images/gantt-control-taskdetails-binding.png)
 
 ### Samples Link
 
@@ -530,7 +530,7 @@ public class ViewModel
 {% endtabs %}
 
 The following image shows the External Property Binding:
-![gantt-control-external-property-binding](Data-Binding_images/gantt-control-external-property-binding.jpeg)
+![gantt-control-external-property-binding](Data-Binding_images/gantt-control-external-property-binding.png)
 
 ### Samples Link
 
