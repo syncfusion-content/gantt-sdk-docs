@@ -1,0 +1,66 @@
+<div style="display:flex; gap:15px; margin-bottom:20px;">
+
+    <div>
+        <label for="rowIndex">Row Index:</label>
+        <input type="number" id="rowIndex" class="e-input" placeholder="e.g., 1" />
+        <button id="selectRowBtn" class="e-btn">Select Row</button>
+    </div>
+
+    <div>
+        <label for="scrollDate">Scroll to Date:</label>
+        <input type="text" id="scrollDate" class="e-input" placeholder="MM/DD/YYYY" />
+        <button id="scrollDateBtn" class="e-btn">Scroll Date</button>
+    </div>
+
+    <div>
+        <label for="taskId">Scroll to Task ID:</label>
+        <input type="number" id="taskId" class="e-input" placeholder="e.g., 3" />
+        <button id="scrollTaskBtn" class="e-btn">Scroll Task</button>
+    </div>
+
+</div>
+
+<div style="height:500px;">
+    <ejs-gantt id="Gantt"
+               dataSource="@Model.GanttDataSourceCollection"
+               height="315px">
+
+        <e-gantt-taskfields id="TaskId"
+                            name="TaskName"
+                            startDate="StartDate"
+                            duration="Duration"
+                            progress="Progress"
+                            parentID="ParentId">
+        </e-gantt-taskfields>
+
+    </ejs-gantt>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+        var gantt = document.getElementById('Gantt').ej2_instances[0];
+
+        document.getElementById('selectRowBtn').addEventListener('click', function () {
+            var rowIndex = parseInt(document.getElementById('rowIndex').value);
+            if (!isNaN(rowIndex)) {
+                gantt.selectionModule.selectRow(rowIndex);
+                gantt.setScrollTop(gantt.rowHeight * rowIndex);
+            }
+        });
+
+        document.getElementById('scrollDateBtn').addEventListener('click', function () {
+            var dateValue = document.getElementById('scrollDate').value;
+            if (dateValue) {
+                gantt.scrollToDate(dateValue);
+            }
+        });
+
+        document.getElementById('scrollTaskBtn').addEventListener('click', function () {
+            var taskId = document.getElementById('taskId').value;
+            if (taskId) {
+                gantt.scrollToTask(taskId);
+            }
+        });
+    });
+</script>

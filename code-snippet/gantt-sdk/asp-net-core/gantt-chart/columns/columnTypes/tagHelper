@@ -1,0 +1,15 @@
+<ejs-gantt id='Gantt' dataSource="@Model.GanttDataSourceCollection" height="450px" treeColumnIndex="1">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration"
+                        progress="Progress" parentID="parentId">
+    </e-gantt-taskfields>
+    <e-gantt-columns>
+        <e-gantt-column type="checkbox" width="90"></e-gantt-column>
+        <e-gantt-column field="TaskId" headerText="Task ID" textAlign="Right" width="90" type="number"></e-gantt-column>
+        <e-gantt-column field="TaskName" headerText="Task Name" textAlign="Left" width="270" type="string"></e-gantt-column>
+        <e-gantt-column field="StartDate" headerText="Start Date" textAlign="Right" width="150" format="yMd" type="date"></e-gantt-column>
+        <e-gantt-column field="EndDate" headerText="End Date" textAlign="Right" width="150" format="dd/MM/yyyy hh:mm" type="dateTime"></e-gantt-column>
+        <e-gantt-column field="Duration" headerText="Duration" textAlign="Right" width="90" type="number"></e-gantt-column>
+        <e-gantt-column field="Progress" headerText="Progress" textAlign="Right" width="120" type="number"></e-gantt-column>
+        <e-gantt-column field="Verified" headerText="Verified" width="100" type="boolean" displayAsCheckBox="true"></e-gantt-column>
+    </e-gantt-columns>
+</ejs-gantt>

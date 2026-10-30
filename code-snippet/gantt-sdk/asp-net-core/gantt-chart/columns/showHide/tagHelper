@@ -1,26 +1,49 @@
-<ejs-button id="show" cssClass="e-flat" content="Show Columns"></ejs-button>
-<ejs-button id="hide" cssClass="e-flat" content="Hide Columns"></ejs-button>
-<ejs-gantt id='Gantt' dataSource="ViewBag.DataSource" height="550px" gridLines="Both" treeColumnIndex="1">
-    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
-       endDate="EndDate" duration="Duration" progress="Progress" dependency="Predecessor" child="SubTasks">
+<div style="margin-bottom:20px">
+    <ejs-button id="show" content="Show Column" cssClass="e-primary"></ejs-button>
+    <ejs-button id="hide" content="Hide Column" cssClass="e-primary" style="margin-left:10px"></ejs-button>
+</div>
+
+<ejs-gantt id="Gantt" dataSource="@Model.GanttDataSourceCollection" height="430px" treeColumnIndex="1">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration"
+        progress="Progress" parentID="ParentId">
     </e-gantt-taskfields>
+
+    <e-gantt-splittersettings position="75%"></e-gantt-splittersettings>
+
     <e-gantt-columns>
-        <e-gantt-column field="TaskId"></e-gantt-column>
-        <e-gantt-column field="TaskName" headerText="Name" width="250"></e-gantt-column>
-        <e-gantt-column field="Progress"></e-gantt-column>
-        <e-gantt-column field="StartDate"></e-gantt-column>
-        <e-gantt-column field="Duration"></e-gantt-column>
+        <e-gantt-column field="TaskId" headerText="Task ID" textAlign="Right" width="90">
+        </e-gantt-column>
+
+        <e-gantt-column field="TaskName" headerText="Task Name" width="270">
+        </e-gantt-column>
+
+        <e-gantt-column field="Duration" headerText="Duration" textAlign="Right" width="90">
+        </e-gantt-column>
+
+        <e-gantt-column field="StartDate" headerText="Start Date" format="yMd" textAlign="Right" width="120">
+        </e-gantt-column>
+
+        <e-gantt-column field="Progress" headerText="Progress" textAlign="Right" width="120">
+        </e-gantt-column>
     </e-gantt-columns>
 </ejs-gantt>
 
 <script>
-    document.getElementById("show").addEventListener("click", function () {
-        var gantt = document.getElementById("Gantt").ej2_instances[0];
-        gantt.showColumn(['Duration']); //show by HeaderText
+    document.getElementById('show').addEventListener('click', function () {
+        var gantt = document.getElementById('Gantt').ej2_instances[0];
+        var columns = gantt.getGanttColumns();
+
+        if (columns.length > 0) {
+            gantt.showColumn(columns[2].headerText, 'headerText');
+        }
     });
 
-    document.getElementById("hide").addEventListener("click", function () {
-        var gantt = document.getElementById("Gantt").ej2_instances[0];
-        gantt.hideColumn(['Duration']); //hide by HeaderText
-    })
+    document.getElementById('hide').addEventListener('click', function () {
+        var gantt = document.getElementById('Gantt').ej2_instances[0];
+        var visibleColumns = gantt.treeGrid.getVisibleColumns();
+
+        if (visibleColumns.length > 0) {
+            gantt.hideColumn(visibleColumns[2].headerText, 'headerText');
+        }
+    });
 </script>

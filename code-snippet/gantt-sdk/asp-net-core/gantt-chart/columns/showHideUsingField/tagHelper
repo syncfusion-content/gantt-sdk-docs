@@ -1,0 +1,47 @@
+@page
+@model CoreSamples.Pages.IndexModel
+@{
+ViewData["Title"] = "Home page";
+}
+
+<div style="margin-bottom:20px">
+    <ejs-button id="show" content="Show Column" cssClass="e-primary"></ejs-button>
+    <ejs-button id="hide" content="Hide Column" style="margin-left:10px" cssClass="e-primary"></ejs-button>
+</div>
+
+<ejs-gantt id="Gantt" dataSource="@Model.GanttDataSourceCollection" height="430px" treeColumnIndex="1">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration"
+        progress="Progress" parentID="ParentId">
+    </e-gantt-taskfields>
+
+    <e-gantt-splittersettings position="75%"></e-gantt-splittersettings>
+
+    <e-gantt-columns>
+        <e-gantt-column field="TaskId" headerText="Task ID" textAlign="Right" width="90">
+        </e-gantt-column>
+
+        <e-gantt-column field="TaskName" headerText="Task Name" width="270">
+        </e-gantt-column>
+
+        <e-gantt-column field="Duration" headerText="Duration" textAlign="Right" width="90">
+        </e-gantt-column>
+
+        <e-gantt-column field="StartDate" headerText="Start Date" format="yMd" textAlign="Right" width="120">
+        </e-gantt-column>
+
+        <e-gantt-column field="Progress" headerText="Progress" textAlign="Right" width="120">
+        </e-gantt-column>
+    </e-gantt-columns>
+</ejs-gantt>
+
+<script>
+    document.getElementById('show').addEventListener('click', function () {
+        var gantt = document.getElementById('Gantt').ej2_instances[0];
+        gantt.showColumn(['TaskName', 'Duration'], 'field');
+    });
+
+    document.getElementById('hide').addEventListener('click', function () {
+        var gantt = document.getElementById('Gantt').ej2_instances[0];
+        gantt.hideColumn(['TaskName', 'Duration'], 'field');
+    });
+</script>

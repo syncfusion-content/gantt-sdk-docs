@@ -1,0 +1,69 @@
+@page
+@model CoreSamples.Pages.IndexModel
+@{
+ViewData["Title"] = "Home page";
+}
+
+<style>
+    .e-headercell.customcss {
+        background-color: rgb(43, 195, 226);
+    }
+
+    .e-gantt .e-grid .e-rowcell.customcss {
+        background-color: rgb(43, 195, 226);
+    }
+</style>
+
+<ejs-button id="updateColumns" content="Update Columns" cssClass="e-info">
+</ejs-button>
+
+<br />
+<br />
+
+<ejs-gantt id="Gantt" dataSource="@Model.GanttDataSourceCollection" height="430px" treeColumnIndex="1">
+
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration"
+        progress="Progress" parentID="ParentId">
+    </e-gantt-taskfields>
+
+    <e-gantt-splittersettings position="75%"></e-gantt-splittersettings>
+
+    <e-gantt-columns>
+        <e-gantt-column field="TaskId" headerText="Task ID" textAlign="Right" width="90">
+        </e-gantt-column>
+
+        <e-gantt-column field="TaskName" headerText="Task Name" textAlign="Left" width="270">
+        </e-gantt-column>
+
+        <e-gantt-column field="StartDate" headerText="Start Date" format="yMd" textAlign="Right" width="120">
+        </e-gantt-column>
+
+        <e-gantt-column field="Duration" headerText="Duration" textAlign="Right" width="90">
+        </e-gantt-column>
+
+        <e-gantt-column field="Progress" headerText="Progress" textAlign="Right" width="120">
+        </e-gantt-column>
+    </e-gantt-columns>
+
+</ejs-gantt>
+
+<script>
+    document.getElementById('updateColumns').addEventListener('click', function () {
+
+        var gantt = document.getElementById('Gantt').ej2_instances[0];
+        var columns = gantt.treeGrid.columns;
+
+        if (columns) {
+            columns[0].textAlign = 'Center';
+            columns[0].width = 100;
+
+            columns[2].visible = false;
+
+            columns[1].customAttributes = {
+                class: 'customcss'
+            };
+
+            gantt.treeGrid.refreshColumns();
+        }
+    });
+</script>
