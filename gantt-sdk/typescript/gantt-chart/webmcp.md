@@ -326,4 +326,4 @@ Explore the Syncfusion® TypeScript Gantt Chart component with WebMCP integratio
 
 ## See also
 
-- [WebMCP Tools for TypeScript Gantt Chart](https://ej2.syncfusion.com/typescript/documentation/webmcp/components#gantt-chart)
+- [WebMCP Tools for TypeScript Gantt Chart](https://ej2.syncfusion.com/documentation/webmcp/controls#gantt-chart)

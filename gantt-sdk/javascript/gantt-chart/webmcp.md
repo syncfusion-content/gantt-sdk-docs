@@ -11,43 +11,6 @@ domainurl: https://help.syncfusion.com/gantt-sdk
 appliesto: UI Component Suite, Gantt SDK
 ---
 
-features. By enabling WebMCP, developers can make supported Gantt Chart operations available to AI-powered applications for task management, project planning, timeline navigation, and workflow automation.
-
-
-
-This section demonstrates how to enable and configure WebMCP in the Syncfusion® JavaScript Gantt Chart component and expose its supported tools for AI-driven interactions.
-
-
-
-## WebMCP Overview
-
-
-
-WebMCP allows AI assistants running in the browser to interact directly with Syncfusion® JavaScript Gantt Chart component through natural language prompts.
-
-
-
-Instead of relying on DOM inspection or simulating user interactions, AI assistants can interact directly with component APIs through WebMCP tools. This approach provides more reliable and accurate results.
-
-
-
-Once connected, an AI assistant can perform tasks such as:
-- Manage project tasks and task updates.
-- Schedule and reschedule work across the project timeline.
-- Manage task dependencies and hierarchy.
-- Search, filter, sort, and navigate the project timeline.
-- Expanding and collapsing records.
-- Export project data and review undo and redo history.
-
-
-
-The JavaScript Gantt Chart component exposes 38 WebMCP tools that enable AI agents to perform task management, project scheduling, dependency management, hierarchy operations, timeline navigation, searching, filtering, sorting, export operations, and undo and redo actions. change this as before did for react
-
-
-
-
-
-
 # WebMCP Tools Integration for Syncfusion® JavaScript Gantt Chart
 
 WebMCP allows AI assistants running in the browser to interact directly with Syncfusion® JavaScript Gantt Chart components through natural language prompts.
@@ -90,7 +53,7 @@ Follow these steps to integrate WebMCP support into Syncfusion® JavaScript Gant
 
 ### Step 1: Create an application
 
-Create an JavaScript application and integrate the Syncfusion® JavaScript Gantt Chart component by following the [Getting Started with JavaScript Gantt Chart](https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/getting-started) guide. After completing the setup, follow the steps below to enable WebMCP integration.
+Create an JavaScript application and integrate the Syncfusion® JavaScript Gantt Chart component by following the [Getting Started with JavaScript Gantt Chart](https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/es5-getting-started) guide. After completing the setup, follow the steps below to enable WebMCP integration.
 
 ### Step 2: Enable WebMCP support
 
@@ -358,4 +321,4 @@ Explore the Syncfusion® JavaScript Gantt Chart component with WebMCP integratio
 
 ## See also
 
-- [WebMCP Tools for JavaScript Gantt Chart](https://ej2.syncfusion.com/javascript/documentation/webmcp/components#gantt-chart)
+- [WebMCP Tools for JavaScript Gantt Chart](https://ej2.syncfusion.com/javascript/documentation/webmcp/controls#gantt-chart)

@@ -56,17 +56,17 @@ Create an Angular application and integrate the Syncfusion® Angular Gantt Chart
 
 ### Step 2: Enable WebMCP support
 
-Import the WebMcpGantt module and inject it into the component to make WebMCP functionality available.
+Import the WebMcpGanttService module and inject it into the component to make WebMCP functionality available.
 
 ```ts
 import { Component } from '@angular/core';
-import { GanttModule, SelectionService, SortService, FilterService, ToolbarService, EditService, WebMcpGantt } from '@syncfusion/ej2-angular-gantt';
+import { GanttModule, SelectionService, SortService, FilterService, ToolbarService, EditService, WebMcpGanttService } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [GanttModule],
-  providers: [WebMcpGantt, SelectionService, SortService, FilterService, ToolbarService, EditService],
+  providers: [WebMcpGanttService, SelectionService, SortService, FilterService, ToolbarService, EditService],
   template: `
     <ejs-gantt
       id="gantt"
@@ -127,13 +127,13 @@ An AI assistant can discover these tools and invoke them based on user prompts.
 
 ```ts
 import { Component } from '@angular/core';
-import { GanttModule, SelectionService, SortService, FilterService, ToolbarService, EditService, WebMcpGantt } from '@syncfusion/ej2-angular-gantt';
+import { GanttModule, SelectionService, SortService, FilterService, ToolbarService, EditService, WebMcpGanttService } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [GanttModule],
-  providers: [WebMcpGantt, SelectionService, SortService, FilterService, ToolbarService, EditService],
+  providers: [WebMcpGanttService, SelectionService, SortService, FilterService, ToolbarService, EditService],
   template: `
     <ejs-gantt
       id="gantt"
@@ -197,13 +197,13 @@ Use the `webMcpSettings` property to customize how WebMCP tools are exposed to A
 
 ```ts
 import { Component } from '@angular/core';
-import { GanttModule, SelectionService, SortService, FilterService, ToolbarService, EditService, WebMcpGantt } from '@syncfusion/ej2-angular-gantt';
+import { GanttModule, SelectionService, SortService, FilterService, ToolbarService, EditService, WebMcpGanttService } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [GanttModule],
-  providers: [WebMcpGantt,SelectionService,SortService,FilterService,ToolbarService,EditService],
+  providers: [WebMcpGanttService,SelectionService,SortService,FilterService,ToolbarService,EditService],
   template: `
     <ejs-gantt
       id="gantt"
@@ -286,13 +286,13 @@ The `beforeWebMcpToolExecute` event is triggered before a tool is executed. This
 
 ```ts
 import { Component } from '@angular/core';
-import { GanttModule, SelectionService, SortService, FilterService, ToolbarService, EditService, WebMcpGantt } from '@syncfusion/ej2-angular-gantt';
+import { GanttModule, SelectionService, SortService, FilterService, ToolbarService, EditService, WebMcpGanttService } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [GanttModule],
-  providers: [WebMcpGantt,SelectionService,SortService,FilterService,ToolbarService,EditService],
+  providers: [WebMcpGanttService,SelectionService,SortService,FilterService,ToolbarService,EditService],
   template: `
     <ejs-gantt
       id="gantt"
