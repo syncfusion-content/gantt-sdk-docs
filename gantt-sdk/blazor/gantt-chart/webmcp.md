@@ -87,10 +87,6 @@ Set the `GanttWebMcpSettings` property to register the available tools at the co
 </SfGantt>
 ```
 
-**Configuration Details**:
-- **Name**: Prefix for all registered tools. Tools will appear as `gantt_<toolName>` in the WebMCP extension.
-- Leave empty to use the default prefix `SfGantt`
-
 ### Step 5: Test the Setup
 
 **Test with a Local Setup**
