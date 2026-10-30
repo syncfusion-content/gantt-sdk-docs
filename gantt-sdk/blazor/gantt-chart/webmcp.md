@@ -123,7 +123,7 @@ WebMCP tools are organized by category. The tables below provide an overview of 
 
 ---
 
-## Data Query Tools
+**Data Query Tools**
 
 | Tool Name | Type | Condition | Description |
 |-----------|------|--------------|-------------|
@@ -142,7 +142,7 @@ WebMCP tools are organized by category. The tables below provide an overview of 
 
 ---
 
-## Selection Tools
+**Selection Tools**
 
 | Tool Name | Type | Condition | Description |
 |-----------|------|--------------|-------------|
@@ -154,7 +154,7 @@ WebMCP tools are organized by category. The tables below provide an overview of 
 
 ---
 
-## Task Management Tools
+**Task Management Tools**
 
 | Tool Name | Type | Condition | Description |
 |-----------|------|--------------|-------------|
@@ -165,7 +165,7 @@ WebMCP tools are organized by category. The tables below provide an overview of 
 
 ---
 
-## Hierarchy & Indentation Tools
+**Hierarchy & Indentation Tools**
 
 | Tool Name | Type | Condition | Description |
 |-----------|------|--------------|-------------|
@@ -180,7 +180,7 @@ WebMCP tools are organized by category. The tables below provide an overview of 
 
 ---
 
-## Dependency & Predecessor Tools
+**Dependency & Predecessor Tools**
 
 | Tool Name | Type | Condition | Description |
 |-----------|------|--------------|-------------|
@@ -190,7 +190,7 @@ WebMCP tools are organized by category. The tables below provide an overview of 
 
 ---
 
-## Sorting & Filtering Tools
+**Sorting & Filtering Tools**
 
 | Tool Name | Type | Condition | Description |
 |-----------|------|-----------|-------------|
@@ -202,7 +202,7 @@ WebMCP tools are organized by category. The tables below provide an overview of 
 
 ---
 
-## Timeline Tools
+**Timeline Tools**
 
 | Tool Name | Type | Condition | Description |
 |-----------|------|--------------|-------------|
@@ -217,7 +217,7 @@ WebMCP tools are organized by category. The tables below provide an overview of 
 
 ---
 
-## Layout & View Tools
+**Layout & View Tools**
 
 | Tool Name | Type | Condition | Description |
 |-----------|------|-----------|-------------|
@@ -231,7 +231,7 @@ WebMCP tools are organized by category. The tables below provide an overview of 
 
 ---
 
-## Dialog & Editing Tools
+**Dialog & Editing Tools**
 
 | Tool Name | Type | Condition | Description |
 |-----------|------|--------------|-------------|
@@ -241,7 +241,7 @@ WebMCP tools are organized by category. The tables below provide an overview of 
 
 ---
 
-## Task Segments & Advanced Tools
+**Task Segments & Advanced Tools**
 
 | Tool Name | Type | Condition | Description |
 |-----------|------|--------------|-------------|
@@ -251,7 +251,7 @@ WebMCP tools are organized by category. The tables below provide an overview of 
 
 ---
 
-## Project Management Tools
+**Project Management Tools**
 
 | Tool Name | Type | Condition | Description |
 |-----------|------|--------------|-------------|
@@ -262,7 +262,7 @@ WebMCP tools are organized by category. The tables below provide an overview of 
 
 ---
 
-## Export & Data Tools
+**Export & Data Tools**
 
 | Tool Name | Type | Condition | Description |
 |-----------|------|--------------|-------------|
@@ -273,7 +273,7 @@ WebMCP tools are organized by category. The tables below provide an overview of 
 
 ---
 
-## Resource Management Tools
+**Resource Management Tools**
 
 | Tool Name | Type | Condition | Description |
 |-----------|------|-----------|-------------|
@@ -284,7 +284,7 @@ WebMCP tools are organized by category. The tables below provide an overview of 
 
 ---
 
-## State & Control Tools
+**State & Control Tools**
 
 | Tool Name | Type | Condition | Description |
 |-----------|------|--------------|-------------|
