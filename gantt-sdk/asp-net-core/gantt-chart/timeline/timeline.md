@@ -284,7 +284,7 @@ This feature enables exploration of long project schedules without manually upda
 
 ## See also
 
-- [How to configure taskbars?](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/taskbar/taskbar)
+- [How to configure taskbars?](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/taskbar)
 - [How to zoom the timeline?](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/time-line/zooming)
 - [How to configure non-working days?](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/scheduling-tasks#weekend--non-working-days)
 - [How to configure non-working days?](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/scheduling-tasks#weekend--non-working-days)
