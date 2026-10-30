@@ -1,8 +1,8 @@
 ---
 layout: post
-title: WebMCP Integration in Blazor Gantt Chart | Syncfusion
+title: WebMCP Integration in Blazor Gantt Chart | Syncfusion®
 description: WebMCP integration in Blazor Gantt Chart explains setup, tool registration, configuration, and API reference with code examples.
-platform: project-management
+platform: gantt-sdk
 control: WebMCP
 documentation: ug
 ---
@@ -501,8 +501,6 @@ To allow AI agents to read task data via the `GetData` tool, explicitly enable i
 
 3. Ensure testing occurs on a secure context (HTTPS or localhost)
 
-4. Verify `EnableWebMcp="true"` is set on the SfGantt component
-
 ---
 
 ### Q: The extension does not show registered tools
@@ -528,10 +526,6 @@ To allow AI agents to read task data via the `GetData` tool, explicitly enable i
    - Right-click the WebMCP extension → Manage extension
    - Ensure "Allow on this site" is enabled
 
-3. Some tools require confirmation:
-   - If write tools such as `AddTask`, `UpdateTask`, and others are used, the agent must request approval
-   - Check the console for confirmation prompts
-
 ---
 
 ### Q: "Permission denied" or "Secure context required"
@@ -539,10 +533,10 @@ To allow AI agents to read task data via the `GetData` tool, explicitly enable i
 **A:**
 - WebMCP requires HTTPS in production or localhost for development
 - If using cross-origin tools, both sites must be HTTPS
-- Test locally using `http://localhost:5000` or similar
+- Test locally using URL
 
 ---
 
 ## See Also
 
-* [Getting Started with Blazor Gantt Chart](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/getting-started-with-web-app)
+* [Getting Started](https://help.syncfusion.com/gantt-sdk/blazor/gantt-chart/getting-started-with-web-app)
