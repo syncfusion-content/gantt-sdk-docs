@@ -54,8 +54,7 @@ Add the following namespace to the Razor component:
 Set the `EnableWebMcp` property to `true` in the Gantt configuration:
 
 ```
-<SfGantt
-    DataSource="@TaskCollection"
+<SfGantt DataSource="@TaskCollection"
     EnableWebMcp="true"
     AllowSorting="true"
     AllowFiltering="true">
@@ -97,11 +96,10 @@ Set the `GanttWebMcpSettings` property to register the available tools at the co
 **Test with a Local Setup**
 - Run the application locally and open it in a Chromium-based browser such as Chrome, Edge, or Brave.
 - Launch the WebMCP extension and confirm that it connects to the application successfully.
-- Verify that the registered tools are displayed with the chosen prefix (e.g., `gantt_addTask`, `gantt_updateTask`).
+- Verify that the registered tools are displayed with the chosen prefix.
 - Try a sample prompt that matches the data scenario to validate tool execution and response behavior.
 
 **Sample Prompts**
-Here are realistic natural language prompts for testing with the WebMCP extension:
 
 {% promptcards %}
 {% promptcard Task Creation %}
@@ -110,20 +108,8 @@ Add a new task called "Design Phase" with a start date of 2024-02-01 and 15 days
 {% endpromptcards %}
 
 {% promptcards %}
-{% promptcard Dependency Management %}
-Create a dependency from task 5 to task 3 with a finish-to-start relationship.
-{% endpromptcard %}
-{% endpromptcards %}
-
-{% promptcards %}
 {% promptcard Search and Filter %}
 Search for all tasks with "Implementation" in the name.
-{% endpromptcard %}
-{% endpromptcards %}
-
-{% promptcards %}
-{% promptcard Hierarchy Management %}
-Indent the selected task under its predecessor as a subtask.
 {% endpromptcard %}
 {% endpromptcards %}
 
@@ -137,7 +123,7 @@ Export the current Gantt view to PDF.
 
 ## Tool Reference
 
-WebMCP tools are organized by category. The tables below provide an overview of all available tools. Tools marked with **Confirmation** require approval before execution.
+WebMCP tools are organized by category. The tables below provide an overview of all available tools. For complete input/output schemas, call `GetWebMcpToolsAsync()` programmatically.
 
 ---
 
@@ -393,34 +379,96 @@ Set up a Gantt Chart with WebMCP enabled and tools registered on creation.
 Register only specific tools by disabling tools in the WebMcpSettings:
 
 ```
-<SfGantt TValue="TaskData"
-    DataSource="@TaskCollection"
-    EnableWebMcp="true"
-    Height="450px"
-    Width="100%">
-    
-    <GanttTaskFields
-        Id="TaskId"
-        Name="TaskName"
-        StartDate="StartDate"
-        EndDate="EndDate"
-        Duration="Duration"
-        Progress="Progress"
-        ParentID="ParentId">
-    </GanttTaskFields>
+@using System.Text.Json
+@using Syncfusion.Blazor.Gantt
 
-    <GanttWebMcpSettings Name="gantt">
+<SfGantt TValue="TaskData"
+         DataSource="@Tasks"
+         EnableWebMcp="true"
+         Height="450px">
+
+    <GanttTaskFields Id="TaskId"
+                     Name="TaskName"
+                     StartDate="StartDate"
+                     Duration="Duration"
+                     Progress="Progress" />
+
+    <GanttWebMcpSettings Name="CustomGantt">
         <GanttWebMcpTools>
-            <GanttWebMcpTool Name="GetData" Enabled="true" />
-            <GanttWebMcpTool Name="AddTask" Enabled="true" />
-            <GanttWebMcpTool Name="UpdateTask" Enabled="true" />
-            <GanttWebMcpTool Name="DeleteTask" Enabled="true" />
-            <GanttWebMcpTool Name="SortByColumn" Enabled="true" />
-            <GanttWebMcpTool Name="FilterByColumn" Enabled="true" />
+            <GanttWebMcpTool Command="GanttWebMcpToolCommand.GetData"
+                             Enabled="true"
+                             Description="Return the Gantt task data." />
+
+            <GanttWebMcpTool Command="GanttWebMcpToolCommand.FilterByColumn"
+                             Enabled="true"
+                             Description="Filter Gantt tasks by a column value." />
+
+            <GanttWebMcpTool Command="GanttWebMcpToolCommand.Custom"
+                             Name="getTaskSummary"
+                             Description="Return tasks whose names match an optional search string."
+                             InputSchema="@taskSummarySchema" />
         </GanttWebMcpTools>
     </GanttWebMcpSettings>
 
+    <GanttEvents TValue="TaskData"
+                 OnWebMcpExecute="HandleWebMcpToolExecution" />
 </SfGantt>
+
+@code {
+    private readonly string taskSummarySchema =
+        "{\"type\":\"object\",\"properties\":{\"taskName\":{\"type\":\"string\",\"description\":\"Optional substring to match in task names.\"}}}";
+
+    private List<TaskData> Tasks { get; set; } = new()
+    {
+        new() { TaskId = 1, TaskName = "Planning", StartDate = new DateTime(2026, 1, 5), Duration = 4, Progress = 100 },
+        new() { TaskId = 2, TaskName = "Implementation", StartDate = new DateTime(2026, 1, 9), Duration = 8, Progress = 40 },
+        new() { TaskId = 3, TaskName = "Testing", StartDate = new DateTime(2026, 1, 19), Duration = 5, Progress = 0 }
+    };
+
+    private Task HandleWebMcpToolExecution(GanttWebMcpExecuteEventArgs args)
+    {
+        if (args.Command != GanttWebMcpToolCommand.Custom ||
+            args.Name != "getTaskSummary")
+        {
+            return Task.CompletedTask;
+        }
+
+        string? taskNameFilter = null;
+        if (args.Arguments?.TryGetValue("taskName", out var value) == true)
+        {
+            taskNameFilter = value?.ToString();
+        }
+
+        var matches = Tasks
+            .Where(task => string.IsNullOrWhiteSpace(taskNameFilter) ||
+                task.TaskName.Contains(taskNameFilter, StringComparison.OrdinalIgnoreCase))
+            .ToList();
+
+        args.Result = JsonSerializer.Serialize(new
+        {
+            TotalTasks = matches.Count,
+            Tasks = matches.Select(task => new
+            {
+                task.TaskId,
+                task.TaskName,
+                task.StartDate,
+                task.Duration,
+                task.Progress
+            })
+        });
+
+        return Task.CompletedTask;
+    }
+
+    public class TaskData
+    {
+        public int TaskId { get; set; }
+        public string TaskName { get; set; } = string.Empty;
+        public DateTime StartDate { get; set; }
+        public int Duration { get; set; }
+        public int Progress { get; set; }
+    }
+}
 ```
 
 ### Enabling Data Exposure for Queries
@@ -436,32 +484,6 @@ To allow AI agents to read task data via the `GetData` tool, explicitly enable i
 ```
 
 **Note**: `GetData` is disabled by default to prevent unintended data exposure. Enable only when necessary.
-
----
-
-## Tool Routing Rules
-
-### Add Task Behavior
-
-The `AddTask` and `OpenAddDialog` tools are routed based on the presence of the word "dialog" in the prompt:
-
-- **Without "dialog" keyword**: Agent uses `AddTask` for programmatic task creation
-- **With "dialog" keyword**: Agent uses `OpenAddDialog` to open the interactive dialog
-
-**Example Prompts**:
-- "Add a new task called Review with 5 days duration" → Uses `AddTask`
-- "Add a new task in a dialog" → Uses `OpenAddDialog`
-
-### Edit Task Behavior
-
-Similarly, `UpdateTask` and `OpenEditDialog` follow the same routing logic:
-
-- **Without "dialog" keyword**: Agent uses `UpdateTask` for programmatic task updates
-- **With "dialog" keyword**: Agent uses `OpenEditDialog` to open the interactive dialog
-
-**Example Prompts**:
-- "Update task 3 to 90% complete" → Uses `UpdateTask`
-- "Edit task 3 in a dialog" → Uses `OpenEditDialog`
 
 ---
 
