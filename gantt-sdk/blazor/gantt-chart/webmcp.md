@@ -303,7 +303,6 @@ Set up a Gantt Chart with WebMCP enabled and tools registered on creation.
 
 ```
 @using Syncfusion.Blazor.Gantt
-@using Syncfusion.Blazor.Data
 
 <div style="width:100%; height:100%;">
     <SfGantt TValue="TaskData"
