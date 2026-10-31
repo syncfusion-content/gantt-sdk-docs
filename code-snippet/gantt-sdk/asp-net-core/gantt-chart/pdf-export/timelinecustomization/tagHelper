@@ -1,6 +1,9 @@
-<ejs-gantt id='GanttContainer' dataSource="ViewBag.DataSource" toolbar="@(new List<string>() { "PdfExport" })"
+@page
+@model IndexModel
+
+<ejs-gantt id='GanttContainer' dataSource="@Model.GanttDataSourceCollection" toolbar="@(new List<string>() { "PdfExport" })"
                toolbarClick="toolbarClick" pdfQueryTimelineCellInfo="pdfQueryTimelineCellInfo" allowPdfExport="true">
-        <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" child="SubTasks">
+        <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" parentId="ParentId">
         </e-gantt-taskfields>
         <e-gantt-columns>
             <e-gantt-column field="TaskId" headerText="Task ID" width="150" textAlign="Left"></e-gantt-column>
@@ -18,6 +21,8 @@
             }
         }
         function pdfQueryTimelineCellInfo(args) {
-            args.timelineCell.backgroundColor = new ej.pdfexport.PdfColor(240, 248, 255);
+            args.timelineCell.backgroundColor.redColor = 240;
+            args.timelineCell.backgroundColor.greenColor = 248;
+            args.timelineCell.backgroundColor.blueColor = 255;
         }
         </script>

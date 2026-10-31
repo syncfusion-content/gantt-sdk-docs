@@ -1,14 +1,27 @@
-<ejs-gantt id='Gantt' dataSource="ViewBag.DataSource" height="550px" gridLines="Both" treeColumnIndex="1"
-           allowSorting="true" allowReordering="true" allowFiltering="true">
-    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
-                        endDate="EndDate" duration="Duration" progress="Progress" dependency="Predecessor" child="SubTasks">
+<ejs-gantt id="Gantt" dataSource="@Model.GanttDataSourceCollection" height="430px" treeColumnIndex="1"
+    allowSorting="true" allowFiltering="true" allowReordering="true" allowResizing="true">
+
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration"
+        progress="Progress" parentID="ParentId">
     </e-gantt-taskfields>
+
+    <e-gantt-splittersettings position="75%"></e-gantt-splittersettings>
+
     <e-gantt-columns>
-        <e-gantt-column field="TaskId"></e-gantt-column>
-        <e-gantt-column field="TaskName" headerText="Name" allowSorting="false" width="250"></e-gantt-column>
-        <e-gantt-column field="Progress" allowReordering="false"></e-gantt-column>
-        <e-gantt-column field="StartDate" allowEditing="false"></e-gantt-column>
-        <e-gantt-column field="Duration" allowFiltering="false"></e-gantt-column>
+        <e-gantt-column field="TaskId" headerText="Task ID" textAlign="Right" width="120" allowSorting="false">
+        </e-gantt-column>
+
+        <e-gantt-column field="TaskName" headerText="Task Name" width="270" allowFiltering="false">
+        </e-gantt-column>
+
+        <e-gantt-column field="StartDate" headerText="Start Date" format="yMd" textAlign="Right" width="150">
+        </e-gantt-column>
+
+        <e-gantt-column field="Duration" headerText="Duration" textAlign="Right" width="150">
+        </e-gantt-column>
+
+        <e-gantt-column field="Progress" headerText="Progress" textAlign="Right" width="150">
+        </e-gantt-column>
     </e-gantt-columns>
-    <e-gantt-editsettings allowEditing="true"></e-gantt-editsettings>
+
 </ejs-gantt>

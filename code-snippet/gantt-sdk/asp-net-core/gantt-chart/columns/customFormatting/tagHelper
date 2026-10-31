@@ -1,0 +1,14 @@
+<ejs-gantt id="Gantt" dataSource="@Model.GanttDataSourceCollection" height="430px" treeColumnIndex="1">
+    <e-gantt-taskfields id="TaskID" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration"
+        progress="Progress" parentID="ParentID"></e-gantt-taskfields>
+    <e-gantt-splittersettings position="75%"></e-gantt-splittersettings>
+    <e-gantt-columns>
+        <e-gantt-column field="TaskID" headerText="Task ID" textAlign="Right" width="90"></e-gantt-column>
+        <e-gantt-column field="TaskName" headerText="Task Name" textAlign="Left" width="270"></e-gantt-column>
+        <e-gantt-column field="StartDate" headerText="Start Date" format="EEE, MMM d, ''yy" textAlign="Right"
+            width="170"></e-gantt-column>
+        <e-gantt-column field="Duration" headerText="Duration" textAlign="Right" width="90"></e-gantt-column>
+        <e-gantt-column field="Progress" headerText="Progress" format="##.0000" textAlign="Right"
+            width="120"></e-gantt-column>
+    </e-gantt-columns>
+</ejs-gantt>

@@ -1,0 +1,45 @@
+<ejs-gantt id="Gantt" dataSource="@Model.GanttDataSourceCollection" height="430px" locale="es-AR" treeColumnIndex="1">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration"
+        progress="Progress" parentID="ParentId"></e-gantt-taskfields>
+    <e-gantt-splittersettings position="75%"></e-gantt-splittersettings>
+    <e-gantt-columns>
+        <e-gantt-column field="TaskId" headerText="Task ID" textAlign="Right" width="90"></e-gantt-column>
+        <e-gantt-column field="TaskName" headerText="Task Name" textAlign="Left" width="270"></e-gantt-column>
+        <e-gantt-column field="StartDate" headerText="Start Date" format="yyyy-MMM-dd" textAlign="Right"
+            width="150"></e-gantt-column>
+        <e-gantt-column field="EndDate" headerText="End Date" format="dd/MM/yyyy hh:mm" textAlign="Right"
+            width="210"></e-gantt-column>
+        <e-gantt-column field="Duration" headerText="Duration" textAlign="Right" width="90"></e-gantt-column>
+        <e-gantt-column field="Progress" headerText="Progress" format="C2" type="number" textAlign="Right"
+            width="120"></e-gantt-column>
+    </e-gantt-columns>
+</ejs-gantt>
+
+<script>
+    loadCultureFiles();
+
+    function loadCultureFiles() {
+        var files = [
+            '/cldr-data/ca-gregorian.json',
+            '/cldr-data/currencies.json',
+            '/cldr-data/numbers.json',
+            '/cldr-data/timeZoneNames.json',
+            '/cldr-data/numberingSystems.json'
+        ];
+
+        Promise.all(
+            files.map(file =>
+                fetch(file).then(response => response.json())
+            )
+        ).then(function (cldrData) {
+
+            ej.base.loadCldr.apply(null, cldrData);
+
+            ej.base.setCulture('es-AR');
+            ej.base.setCurrencyCode('ARS');
+
+        }).catch(function (error) {
+            console.error('CLDR loading failed:', error);
+        });
+    }
+</script>

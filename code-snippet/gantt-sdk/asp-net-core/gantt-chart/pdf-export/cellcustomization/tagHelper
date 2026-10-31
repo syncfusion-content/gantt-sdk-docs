@@ -1,6 +1,9 @@
-<ejs-gantt id='GanttContainer' dataSource="ViewBag.DataSource" toolbar="@(new List<string>() { "PdfExport" })"
+@page
+@model IndexModel
+
+<ejs-gantt id='GanttContainer' dataSource="@Model.GanttDataSourceCollection" toolbar="@(new List<string>() { "PdfExport" })"
            toolbarClick="toolbarClick" pdfQueryCellInfo="pdfQueryCellInfo" allowPdfExport="true">
-    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" child="SubTasks">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" parentID="ParentId">
     </e-gantt-taskfields>
     <e-gantt-columns>
         <e-gantt-column field="TaskId" headerText="Task ID" width="150" textAlign="Left"></e-gantt-column>
@@ -15,15 +18,23 @@
         var gantt = document.getElementById("GanttContainer").ej2_instances[0];
         if (args.item.id === 'GanttContainer_pdfexport') {
             gantt.pdfExport();
-            }
+        }
     }
-    function pdfQueryCellInfo(args){
-            if (args.column.field == 'Progress') {
-                if (args.value < 50) {
-                    args.style.backgroundColor = new ej.pdfexport.PdfColor(240, 128, 128);
-                } else {
-                    args.style.backgroundColor = new ej.pdfexport.PdfColor(205, 92, 92);
-                }
+    function pdfQueryCellInfo(args) {
+        if (args.column.field === 'Progress') {
+
+            var progress = Number(args.value);
+
+            if (progress < 50) {
+                args.style.backgroundColor.redColor = 240;
+                args.style.backgroundColor.greenColor = 128;
+                args.style.backgroundColor.blueColor = 128;
+            }
+            else {
+                args.style.backgroundColor.redColor = 144;
+                args.style.backgroundColor.greenColor = 238;
+                args.style.backgroundColor.blueColor = 144;
             }
         }
+    }
 </script>
