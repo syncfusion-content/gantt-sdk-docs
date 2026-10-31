@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Getting Started with ASP.NET Core Gantt Chart | Syncfusion
-description: Explore how to get started with Syncfusion ASP.NET Core Gantt Chart configure the control, bind data, map fields, and visualize project timelines quickly.
-keywords: asp.net core gantt getting started, gantt setup, project timeline, task scheduling, syncfusion gantt chart
+description: Learn how to install and build your first ASP.NET Core Gantt Chart with task data binding, field mapping, and timeline rendering in this step-by-step guide.
+keywords: asp.net core gantt chart, getting started, syncfusion gantt, task data binding, field mapping, timeline rendering
 canonical: https://www.syncfusion.com/gantt-sdk/aspnet-core-gantt-chart
 platform: gantt-sdk
 control: Getting Started - Gantt Chart
@@ -13,21 +13,28 @@ appliesto: UI Component Suite, Gantt SDK/overview
 
 # Getting Started with ASP.NET Core Gantt Chart
 
-This section explains how to include the [ASP.NET Core Gantt](https://www.syncfusion.com/gantt-sdk/aspnet-core-gantt-chart) control in your ASP.NET Core Web App using [Visual Studio](https://visualstudio.microsoft.com/vs/) and [Visual Studio Code](https://code.visualstudio.com). You’ll learn how to configure the control, bind task data, map fields, and quickly visualize project timelines in just a few steps.
+The [ASP.NET Core Gantt Chart](https://www.syncfusion.com/gantt-sdk/aspnet-core-gantt-chart) is a UI control designed to visualize and manage project schedules using a timeline view. It supports hierarchical task structures, automatic scheduling, and rich interactive features.
 
-> **Ready to streamline your ASP.NET Core development?** Discover the full potential of ASP.NET Core controls with AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, CodeStudio and more. [Explore AI Coding Assistant](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/overview)
+This guide demonstrates how to create an ASP.NET Core application, configure task data, and render a basic Gantt Chart.
+
+## Prerequisites
+
+Ensure the following prerequisites are installed:
+
+- [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) or [Visual Studio Code](https://code.visualstudio.com/?_exp_home=e855cfac50) with the [.NET SDK](https://dotnet.microsoft.com/en-us/download) (.NET 8 or later recommended)
+- Basic knowledge of ASP.NET Core Razor Pages
+- A valid Syncfusion<sup style="font-size:70%">&reg;</sup> license key for commercial use. You can obtain a key from your [Syncfusion account](https://www.syncfusion.com/account) and register it as shown in the [licensing documentation](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/how-to-register-in-an-application).
 
 To get started quickly with the ASP.NET Core Gantt control, you can check out this video:
 
 {% youtube "https://www.youtube.com/watch?v=tILyz8PyE6A" %}
 
-## Create an ASP.NET Core web App with Razor pages
+## Create an ASP.NET Core Web App with Razor Pages
 
 {% tabcontents %}
 
 {% tabcontent Visual Studio %}
-
-Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app) or the [ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project).
+You can create an ASP.NET Core Web App using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app) or the [ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project).
 
 {% endtabcontent %}
 
@@ -50,7 +57,7 @@ Alternatively, create an ASP.NET Core Web App using Visual Studio Code via [Micr
 
 {% endtabcontents %}
 
-## Install the required ASP.NET Core packages
+## Install the required NuGet packages
 
 Install the [Syncfusion.AspNetCore.Gantt](https://www.nuget.org/packages/Syncfusion.AspNetCore.Gantt) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes) NuGet packages. All Syncfusion ASP.NET Core packages are available on [nuget.org](https://www.nuget.org/packages?q=Syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
 
@@ -98,8 +105,8 @@ After the packages are installed, open the **~/Pages/\_ViewImports.cshtml** file
 {% tabs %}
 {% highlight cs tabtitle="~/_ViewImports.cshtml" %}
 
-@addTagHelper _, Syncfusion.AspNetCore.Gantt
-@addTagHelper _, Syncfusion.AspNetCore.Base
+@addTagHelper *, Syncfusion.AspNetCore.Gantt
+@addTagHelper *, Syncfusion.AspNetCore.Base
 
 {% endhighlight %}
 {% endtabs %}
@@ -136,46 +143,122 @@ Open the **~/Pages/Shared/\_Layout.cshtml** file and register the script manager
 {% endhighlight %}
 {% endtabs %}
 
-## Create a sample data
+## Create sample task data
 
-Create a simple task hierarchy by assigning a `ParentID` to child tasks. To render tasks correctly in the Gantt control, each task must include a `StartDate` and either a `Duration` or an `EndDate`.
+Define a simple task list with hierarchical relationships. The data includes two parent tasks (TaskId 1 and 5) with child tasks linked via `ParentID`. Each task must have a `StartDate` and either a `Duration` (in days) or an `EndDate` to render properly. All datasource records are defined in the **~/Pages/Index.cshtml.cs** page model.
 
 {% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml.cs" %}
+{% highlight cs tabtitle="Index.cshtml.cs" %}
 
-List<GanttDataSource> Tasks = new List<GanttDataSource>()
-{
-new GanttDataSource() { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2019, 04, 02), EndDate = new DateTime(2019, 04, 21) },
-new GanttDataSource() { TaskId = 2, TaskName = "Identify site location", StartDate = new DateTime(2019, 04, 02), Duration = 4, Progress = 50, ParentID = 1 },
-new GanttDataSource() { TaskId = 3, TaskName = "Perform soil test", StartDate = new DateTime(2019, 04, 02), Duration = 4, Progress = 50, ParentID = 1 },
-new GanttDataSource() { TaskId = 4, TaskName = "Soil test approval", StartDate = new DateTime(2019, 04, 02), Duration = 4, Progress = 50, ParentID = 1 },
-new GanttDataSource() { TaskId = 5, TaskName = "Project estimation", StartDate = new DateTime(2019, 04, 02), EndDate = new DateTime(2019, 04, 21) },
-new GanttDataSource() { TaskId = 6, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2019, 04, 04), Duration = 3, Progress = 50, ParentID = 5 },
-new GanttDataSource() { TaskId = 7, TaskName = "List materials", StartDate = new DateTime(2019, 04, 04), Duration = 3, Progress = 50, ParentID = 5 }
-};
+using Microsoft.AspNetCore.Mvc.RazorPages;
 
-public class GanttDataSource
+namespace CoreSamples.Pages
 {
-public int TaskId { get; set; }
-public string TaskName { get; set; }
-public DateTime StartDate { get; set; }
-public DateTime EndDate { get; set; }
-public int? Duration { get; set; }
-public int Progress { get; set; }
-public int? ParentID { get; set; }
+    public class IndexModel : PageModel
+    {
+        public List<GanttDataSource> GanttDataSourceCollection { get; set; }
+
+        public void OnGet()
+        {
+            GanttDataSourceCollection = GetTaskCollection();
+        }
+
+        private List<GanttDataSource> GetTaskCollection()
+        {
+            return new List<GanttDataSource>()
+            {
+                new GanttDataSource
+                {
+                    TaskId = 1,
+                    TaskName = "Project initiation",
+                    StartDate = new DateTime(2024, 4, 1),
+                    EndDate = new DateTime(2024, 4, 15)
+                },
+                new GanttDataSource
+                {
+                    TaskId = 2,
+                    TaskName = "Identify site location",
+                    StartDate = new DateTime(2024, 4, 1),
+                    Duration = 4,
+                    Progress = 50,
+                    ParentId = 1
+                },
+                new GanttDataSource
+                {
+                    TaskId = 3,
+                    TaskName = "Perform site survey",
+                    StartDate = new DateTime(2024, 4, 1),
+                    Duration = 4,
+                    Progress = 50,
+                    ParentId = 1
+                },
+                new GanttDataSource
+                {
+                    TaskId = 4,
+                    TaskName = "Soil testing",
+                    StartDate = new DateTime(2024, 4, 1),
+                    Duration = 3,
+                    Progress = 50,
+                    ParentId = 1
+                },
+                new GanttDataSource
+                {
+                    TaskId = 5,
+                    TaskName = "Project estimation",
+                    StartDate = new DateTime(2024, 4, 15),
+                    EndDate = new DateTime(2024, 4, 25)
+                },
+                new GanttDataSource
+                {
+                    TaskId = 6,
+                    TaskName = "Develop floor plan",
+                    StartDate = new DateTime(2024, 4, 15),
+                    Duration = 5,
+                    Progress = 50,
+                    ParentId = 5
+                },
+                new GanttDataSource
+                {
+                    TaskId = 7,
+                    TaskName = "Estimate project cost",
+                    StartDate = new DateTime(2024, 4, 15),
+                    Duration = 5,
+                    Progress = 50,
+                    ParentId = 5
+                }
+            };
+        }
+    }
+
+    public class GanttDataSource
+    {
+        public int TaskId { get; set; }
+
+        public string TaskName { get; set; }
+
+        public DateTime? StartDate { get; set; }
+
+        public DateTime? EndDate { get; set; }
+
+        public int? Duration { get; set; }
+
+        public int? Progress { get; set; }
+
+        public int? ParentId { get; set; }
+    }
 }
 
 {% endhighlight %}
 {% endtabs %}
 
-## Configure task fields
+## Configure task fields mapping
 
 Use the `taskFields` configuration to map the fields in your data source to the corresponding Gantt task properties.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
-<e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" progress="Progress" parentID="ParentID">
+<e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" progress="Progress" parentId="ParentId">
 </e-gantt-taskfields>
 
 {% endhighlight %}
@@ -183,17 +266,16 @@ Use the `taskFields` configuration to map the fields in your data source to the 
 
 ### Field mapping reference
 
-| Property    | Description                        | Required |
-| ----------- | ---------------------------------- | -------- |
-| `id`        | Unique task identifier             | Yes      |
-| `name`      | Task display name                  | Yes      |
-| `startDate` | Task start date                    | Yes      |
-| `endDate`   | Task end date                      | No       |
-| `duration`  | Task duration in days              | Yes      |
-| `progress`  | Task completion percentage (0-100) | No       |
-| `parentID`  | Parent task ID for hierarchy       | No       |
+| Property | Description | Required |
+|----------|-------------|----------|
+| `id`     | Unique task identifier | Yes |
+| `name`   | Task display name | Yes |
+| `startDate` | Task start date | Yes |
+| `duration` | Task duration in days | Either Duration or EndDate |
+| `endDate` | Task end date | Either Duration or EndDate |
+| `parentId` | Parent task ID for hierarchy | No |
 
-## Add the ASP.NET Core Gantt control
+## Render the ASP.NET Core Gantt Chart control
 
 Add the [ASP.NET Core Gantt](https://www.syncfusion.com/gantt-sdk/aspnet-core-gantt-chart) control in the **~/Pages/Index.cshtml** file and bind your task collection to it using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataSource) property.
 
@@ -205,6 +287,12 @@ Add the [ASP.NET Core Gantt](https://www.syncfusion.com/gantt-sdk/aspnet-core-ga
 {% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/getting-started/gantt/gantt-core.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+**Key Properties**:
+- `@page` — Denotes a Razor Pages endpoint that can handle requests without a controller
+- `@model IndexModel` — Binds the page to the `IndexModel` page model containing the task data
+- `dataSource` — Binds the task data collection to the Gantt Chart
+- `taskFields` — Maps the data source field names to Gantt task properties
 
 ## Run the application
 
@@ -221,7 +309,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 Open the terminal and run the following command.
 
 {% tabs %}
-{% highlight C# tabtitle="Terminal" %}
+{% highlight bash tabtitle="Terminal" %}
 
 dotnet run
 
@@ -232,9 +320,69 @@ dotnet run
 
 {% endtabcontents %}
 
+This command:
+- Builds and launches the ASP.NET Core application
+- Hosts the application on `https://localhost:<port>` (the port is shown in the console output)
+- Serves the Gantt Chart from the **Index** page
+
+**Troubleshooting**:
+- **Build errors**: Ensure the .NET SDK version installed matches the target framework in the project file
+- **Missing packages**: Restore dependencies with `dotnet restore`
+- **Styles not applied**: Verify the stylesheet references in **~/Pages/Shared/\_Layout.cshtml** are correct
+- **Blank chart**: Ensure the `<ejs-scripts>` tag is registered at the end of the `<body>` and the element `<ejs-gantt>` has a unique `id`
+
+## Output
+
+The Gantt Chart displays:
+
+- Task hierarchy with parent-child relationships
+- Timeline view showing task bars
+- Automatically calculated dates based on duration
+
+The chart displays two parent tasks (Project initiation, Project estimation) with child tasks shown in a tree structure. Task bars are rendered on the timeline, sized according to their duration and start dates.
+
 ![ASP.NET Core Gantt Control](./images/gantt-control.webp)
 
-## See also
+## Error handling
+
+Proper error handling helps identify and resolve issues during development. The Gantt Chart provides events to capture validation and configuration errors.
+
+### Common error scenarios
+
+- **Missing taskFields mapping** — If `taskFields` is not properly configured, the Gantt Chart cannot map data fields to task properties. Ensure all required fields (`id`, `name`, `startDate`) are mapped.
+- **Invalid date format** — Task dates must be valid `DateTime` values. Invalid dates prevent proper rendering.
+- **Missing dataSource** — Ensure `dataSource` is bound to the control with task data.
+- **Unsupported field types** — The `id` field must be numeric or string; Duration must be numeric.
+- **Tag helpers not registered** — Verify that the `@addTagHelper` directives are added in **\_ViewImports.cshtml**.
+
+### Handling errors with actionFailure event
+
+Use the `actionFailure` event to capture and handle errors:
+
+{% tabs %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
+
+@page
+@model IndexModel
+
+<ejs-gantt id="Gantt" height="450px" dataSource="@Model.GanttDataSourceCollection" actionFailure="actionFailure">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" parentId="ParentId">
+    </e-gantt-taskfields>
+</ejs-gantt>
+
+<script>
+    function actionFailure(args) {
+        console.error('Gantt Chart Error:', args.error);
+        alert('Configuration Error: ' + args.error);
+    }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+## Next Steps
 
 - **[Key Elements](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/key-elements)** - Learn about UI components and interactions
 - **[Overview](https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/overview)** - Explore all available features
+
+N> Looking for the full ASP.NET Core Gantt Chart control overview, features, pricing, and documentation? Visit the [ASP.NET Core Gantt Chart](https://www.syncfusion.com/gantt-sdk/aspnet-core-gantt-chart) page.
