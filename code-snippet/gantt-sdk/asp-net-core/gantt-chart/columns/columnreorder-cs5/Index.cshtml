@@ -1,0 +1,32 @@
+@page
+@model CoreSamples.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div style="margin-bottom:20px;">
+    <ejs-button id="reorderByIndex" content="Reorder Column by Index"></ejs-button>
+</div>
+
+<ejs-gantt id="Gantt" dataSource="@Model.GanttData" height="430px" allowReordering="true" treeColumnIndex="1">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress"
+                        parentID="ParentId">
+    </e-gantt-taskfields>
+
+    <e-gantt-splittersettings position="75%"></e-gantt-splittersettings>
+
+    <e-gantt-columns>
+        <e-gantt-column field="TaskId" headerText="Task ID" textAlign="Right" width="90"></e-gantt-column>
+        <e-gantt-column field="TaskName" headerText="Task Name" textAlign="Left" width="290"></e-gantt-column>
+        <e-gantt-column field="StartDate" headerText="Start Date" width="120"></e-gantt-column>
+        <e-gantt-column field="Duration" headerText="Duration" textAlign="Right" width="90"></e-gantt-column>
+        <e-gantt-column field="Progress" headerText="Progress" textAlign="Right" width="120"></e-gantt-column>
+    </e-gantt-columns>
+</ejs-gantt>
+
+<script>
+    document.getElementById('reorderByIndex').addEventListener('click', function () {
+        var gantt = document.getElementById('Gantt').ej2_instances[0];
+        gantt.treeGrid.grid.reorderColumnByIndex(1, 3);
+    });
+</script>

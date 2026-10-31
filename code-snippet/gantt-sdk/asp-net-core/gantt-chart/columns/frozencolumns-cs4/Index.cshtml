@@ -1,0 +1,26 @@
+@page
+@model CoreSamples.Pages.IndexModel
+
+<style>
+.e-gantt .e-leftfreeze.e-freezeleftborder {
+    border-right-color: rgb(0, 255, 0) !important;
+}
+
+.e-gantt .e-rightfreeze.e-freezerightborder {
+    border-left-color: rgb(0, 0, 255) !important;
+}
+</style>
+
+<ejs-gantt id="Gantt" dataSource="@Model.GanttData" height="430px" treeColumnIndex="1" gridLines="Both" allowSelection="false">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" parentID="ParentId" dependency="Predecessor"></e-gantt-taskfields>
+    <e-gantt-splittersettings position="65%"></e-gantt-splittersettings>
+    <e-gantt-columns>
+        <e-gantt-column field="TaskId" headerText="Task ID" freeze="Left"></e-gantt-column>
+        <e-gantt-column field="TaskName" headerText="Task Name" width="200" freeze="Left"></e-gantt-column>
+        <e-gantt-column field="StartDate" headerText="Start Date"></e-gantt-column>
+        <e-gantt-column field="Duration" headerText="Duration"></e-gantt-column>
+        <e-gantt-column field="EndDate" headerText="End Date"></e-gantt-column>
+        <e-gantt-column field="Progress" headerText="Progress" freeze="Right"></e-gantt-column>
+        <e-gantt-column field="Status" headerText="Status"></e-gantt-column>
+    </e-gantt-columns>
+</ejs-gantt>
