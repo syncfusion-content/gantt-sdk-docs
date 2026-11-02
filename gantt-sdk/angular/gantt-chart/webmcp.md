@@ -26,7 +26,7 @@ Once connected, an AI assistant can perform tasks such as:
 - Expand and collapse records.
 - Export project data and review undo and redo history.
 
-The Angular Gantt Chart component exposes 38 WebMCP tools that enable AI agents to perform task management, project scheduling, dependency management, hierarchy operations, timeline navigation, search, filter, sort, export, and undo and redo operations.
+The Angular Gantt Chart component provides WebMCP tools that enable AI agents to manage tasks, schedule projects, handle dependencies and hierarchies, navigate timelines, perform search, filtering, and sorting operations, export project data, and execute undo and redo actions.
 
 > WebMCP is currently an experimental browser capability and requires a Chromium-based browser with WebMCP support enabled. Availability and required browser flags may change as the specification evolves.
 
@@ -117,8 +117,10 @@ export class AppComponent {
 
 ### Step 3: Register component tools
 
-Set the `enableWebMcp` property to `true` and configure the `webMcpSettings` property to register the component's available tools with the WebMCP runtime.
+Set the [enableWebMcp](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#enablewebmcp) property to `true` and configure the [webMcpSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#webmcpsettings) property to register the component's available tools with the WebMCP runtime.
+
 When `enableWebMcp` is enabled, supported component tools are automatically registered with the WebMCP runtime and become discoverable by authorized WebMCP clients.
+
 For example, a component may expose tools such as:
 - `createTask` – Creates one or more project tasks.
 - `updateTask` – Updates task information such as dates, duration, or progress.
@@ -188,7 +190,8 @@ export class AppComponent {
 
 ### Step 4: Customize tool registration
 
-Use the `webMcpSettings` property to customize how WebMCP tools are exposed to AI agents. The available settings are listed below.
+Use the [webMcpSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#webmcpsettings) property to customize how WebMCP tools are exposed to AI agents. The available settings are listed below.
+
 | Property | Description |
 |-----------|-------------|
 | `name` | Prefix applied to registered tool names. If name: `gantt` is specified, a tool such as `createTask` may be registered as `gantt_createTask`, allowing multiple component instances to coexist without tool name conflicts. |
@@ -276,7 +279,7 @@ export class AppComponent {
 
 ### Step 5: Monitor and control tool execution
 
-The `beforeWebMcpToolExecute` event is triggered before a tool is executed. This event allows you to:
+The [beforeWebMcpToolExecute](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#beforewebmcptoolexecute) event is triggered before a tool is executed. This event allows you to:
 - Audit tool usage.
 - Validate incoming requests.
 - Cancel tool execution when necessary.
