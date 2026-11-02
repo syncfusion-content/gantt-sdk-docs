@@ -1,5 +1,5 @@
-@(Html.EJS().Gantt("GanttContainer").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowPdfExport(true).TaskFields(ts => ts.Id(
-    "TaskId").Name("TaskName").StartDate("StartDate").Duration("Duration").Progress("Progress").Child("SubTasks")).Toolbar(new List<string>() {
+@(Html.EJS().Gantt("GanttContainer").DataSource((IEnumerable<object>)Model.GanttDataSourceCollection).AllowPdfExport(true).TaskFields(ts => ts.Id(
+    "TaskId").Name("TaskName").StartDate("StartDate").Duration("Duration").Progress("Progress").ParentID("ParentId")).Toolbar(new List<string>() {
         "PdfExport" }).ToolbarClick("toolbarClick").TreeColumnIndex(1).Render())
 
     <script>

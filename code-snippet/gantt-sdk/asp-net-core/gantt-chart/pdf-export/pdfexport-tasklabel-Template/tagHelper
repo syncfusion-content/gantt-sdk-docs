@@ -1,68 +1,83 @@
-<ejs-gantt id='Gantt' dataSource="ViewBag.dataSource" toolbar="@(new List<string>() { 'PdfExport' })"
-    toolbarClick="toolbarClick" pdfQueryTaskbarInfo="pdfQueryTaskbarInfo" allowPdfExport="true" height="450px"
-    rowHeight="60" resources="ViewBag.projectResources">
-    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration"
-        progress="Progress" child="SubTasks" resourceInfo="ResourceId">
+@page
+@model CoreSamples.Pages.IndexModel
+@{
+ViewData["Title"] = "Home page";
+}
+
+<ejs-gantt id="Gantt" dataSource="@Model.GanttDataSourceCollection" resources="@Model.ProjectResources" height="450px"
+    treeColumnIndex="1" rowHeight="45" taskbarHeight="30" projectStartDate="03/24/2019" projectEndDate="04/30/2019"
+    allowPdfExport="true" allowResizing="true" toolbar="@(new List<string>() { " PdfExport" })"
+    toolbarClick="toolbarClick" pdfQueryTaskbarInfo="pdfQueryTaskbarInfo">
+
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress"
+        parentID="ParentId" resourceInfo="ResourceId">
     </e-gantt-taskfields>
+
+    <e-gantt-resourcefields id="ResourceId" name="ResourceName">
+    </e-gantt-resourcefields>
+
+    <e-gantt-labelSettings leftLabel="#LeftLabelTemplate" rightLabel="#RightLabelTemplate" taskLabel="${Progress}%">
+    </e-gantt-labelSettings>
+
     <e-gantt-columns>
-        <e-gantt-column field="TaskId" headerText="Task Id" width="50"></e-gantt-column>
-        <e-gantt-column field="TaskName" headerText="Task Name" width="250"></e-gantt-column>
+        <e-gantt-column field="TaskId" headerText="Task ID" width="120">
+        </e-gantt-column>
+
+        <e-gantt-column field="TaskName" headerText="Task Name" width="250">
+        </e-gantt-column>
     </e-gantt-columns>
-    <e-gantt-labelSettings leftLabel="#leftLabel" rightLabel="#rightLabel" taskLabel="${Progress}%"></e-gantt-labelSettings>
+
 </ejs-gantt>
 
+<script id="LeftLabelTemplate" type="text/x-template">
+    <span>${TaskName} [ ${Progress}% ]</span>
+</script>
 
-
+<script id="RightLabelTemplate" type="text/x-template">
+    ${if(ganttProperties && ganttProperties.resourceNames)}
+        <span>${ganttProperties.resourceNames}</span>
+    ${/if}
+</script>
 
 <script>
     function toolbarClick(args) {
-        var gantt = document.getElementById("GanttContainer").ej2_instances[0];
-        if (args.item.id === 'GanttContainer_pdfexport') {
-            gantt.pdfExport();
+        var gantt = document.getElementById("Gantt").ej2_instances[0];
+
+        if (args.item.id === "Gantt_pdfexport") {
+            gantt.pdfExport({
+                fileName: "new.pdf"
+            });
         }
     }
-    function pdfQueryTaskbarInfo(args) {
-            args.labelSettings.leftLabel.value = args.data.ganttProperties.taskName + '[' + args.data.ganttProperties.progress + ']';
-            if (args.data.ganttProperties.resourceNames) {
-                args.labelSettings.rightLabel.value = args.data.ganttProperties.resourceNames;
-                args.labelSettings.rightLabel.image = [{
-                    base64: (args).data.taskData.resourcesImage, width: 20, height: 20
-                }]
-            }
-            args.labelSettings.taskLabel.value = args.data.ganttProperties.progress + '%'
-        }
-</script>
 
-<script type="text/x-template" id="leftLabel">
-    <div style="margin-top=-7px;">
-        <div id="leftLabel">
-            <span>${TaskName} [ ${Progress}% ]</span>
-        </div>
-    </div>
-</script>
-<script type="text/x-template" id="rightLabel">
-    <div style="margin-top=-7px;">
-        ${if(ganttProperties.resourceInfo)}
-        <div id="rightLabel">
-            ${getResourceElements(ganttProperties.resourceInfo)}
-        </div>
-        ${/if}
-    </div>
-</script>
-<script>
-    function getResourceElements(value) {
-        var out = "";
-        var img = document.createElement('img');
-        img.height = 40;
-        var span = document.createElement('span');
-        span.style.marginLeft = "5px";
-        span.style.marginRight = "5px";
-        for (var index = 0; index < value.length; index++) {
-            var imgName = value[index].ResourceName;
-            img.src = '../Content/gantt/images/' + value[index].ResourceName + '.png';
-            span.innerHTML = value[index].ResourceName;
-            out = out + img.outerHTML + span.outerHTML;
+    function pdfQueryTaskbarInfo(args) {
+
+        if (args.labelSettings &&
+            args.labelSettings.leftLabel &&
+            args.data.ganttProperties) {
+
+            args.labelSettings.leftLabel.value =
+                args.data.ganttProperties.taskName +
+                ' [' +
+                args.data.ganttProperties.progress +
+                '% ]';
         }
-        return out;
+
+        if (args.labelSettings &&
+            args.labelSettings.rightLabel &&
+            args.data.ganttProperties.resourceNames) {
+
+            args.labelSettings.rightLabel.value =
+                args.data.ganttProperties.resourceNames;
+
+            if (args.data.ResourcesImage) {
+
+                args.labelSettings.rightLabel.image = [{
+                    base64: args.data.ResourcesImage,
+                    width: 20,
+                    height: 20
+                }];
+            }
+        }
     }
 </script>
