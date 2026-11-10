@@ -1,0 +1,17 @@
+@page
+@model CoreSamples.Pages.IndexModel
+
+<ejs-gantt id="Gantt" dataSource="@Model.GanttData" height="430px" treeColumnIndex="1" gridLines="Both" frozenColumns="2" allowSelection="false">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" endDate="EndDate" progress="Progress" parentID="ParentId" dependency="Predecessor"></e-gantt-taskfields>
+    <e-gantt-labelsettings taskLabel="Progress"></e-gantt-labelsettings>
+    <e-gantt-splittersettings position="65%"></e-gantt-splittersettings>
+    <e-gantt-columns>
+        <e-gantt-column field="TaskId" headerText="Task ID" textAlign="Right" width="90"></e-gantt-column>
+        <e-gantt-column field="TaskName" headerText="Task Name" textAlign="Left" width="290"></e-gantt-column>
+        <e-gantt-column field="StartDate" headerText="Start Date" textAlign="Right" width="120"></e-gantt-column>
+        <e-gantt-column field="Duration" headerText="Duration" textAlign="Right" width="90"></e-gantt-column>
+        <e-gantt-column field="EndDate" headerText="End Date" textAlign="Right" width="120"></e-gantt-column>
+        <e-gantt-column field="Progress" headerText="Progress" textAlign="Left" width="120"></e-gantt-column>
+        <e-gantt-column field="Predecessor" headerText="Predecessor" textAlign="Left" width="120"></e-gantt-column>
+    </e-gantt-columns>
+</ejs-gantt>

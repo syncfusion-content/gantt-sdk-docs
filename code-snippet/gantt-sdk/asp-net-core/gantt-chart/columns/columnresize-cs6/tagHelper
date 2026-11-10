@@ -1,0 +1,26 @@
+@page
+@model IndexModel
+
+<div style="display: flex; align-items: center; margin-bottom: 10px;">
+    <label style="padding-right: 10px;font-weight:bold">Change the resize mode:</label>
+    <ejs-dropdownlist style="margin-top: 5px;" id="mode" index="0" width="150" dataSource="@Model.ModeData" change="valueChange">
+    </ejs-dropdownlist>
+</div>
+<ejs-gantt id='Gantt' height="430px" allowResizing="true" dataSource="@Model.GanttDataSourceCollection" treeColumnIndex="1">
+    <e-gantt-splittersettings position="75%"></e-gantt-splittersettings>
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" parentId="ParentId">
+    </e-gantt-taskfields>
+    <e-gantt-columns>
+        <e-gantt-column field="TaskId" headerText="Task ID" textAlign="Right" width="90"></e-gantt-column>
+        <e-gantt-column field="TaskName" headerText="Task Name" textAlign="Left" width="290"></e-gantt-column>
+        <e-gantt-column field="StartDate" headerText="Start Date" textAlign="Right" width="120"></e-gantt-column>
+        <e-gantt-column field="Duration" headerText="Duration" textAlign="Right" width="90"></e-gantt-column>
+        <e-gantt-column field="Progress" headerText="Progress" textAlign="Right" width="120"></e-gantt-column>
+    </e-gantt-columns>
+</ejs-gantt>
+<script>
+    function valueChange(args) {
+        var gantt = document.getElementById("Gantt").ej2_instances[0];
+        gantt.treeGrid.grid.resizeSettings.mode = args.value;
+    }
+</script>
