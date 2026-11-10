@@ -1,0 +1,27 @@
+@page
+@model CoreSamples.Pages.IndexModel
+<div style="margin-bottom:10px;">
+    <ejs-combobox id="TimelineMode" dataSource="ViewBag.TimelineOptions" index="0" width="200px"
+                  change="onTimelineChange">
+        <e-combobox-fields text="Value" value="Id"></e-combobox-fields>
+    </ejs-combobox>
+</div>
+
+<ejs-gantt id="Gantt" dataSource="@Model.GanttDataSourceCollection" height="430px" treeColumnIndex="1">
+    
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration"
+                        progress="Progress" parentID="ParentId">
+    </e-gantt-taskfields>
+
+    <e-gantt-timelinesettings timelineViewMode="Week">
+    </e-gantt-timelinesettings>
+
+</ejs-gantt>
+
+<script>
+    function onTimelineChange(args) {
+        var gantt = document.getElementById('Gantt').ej2_instances[0];
+        gantt.timelineSettings.timelineViewMode = args.value;
+        gantt.refresh();
+    }
+</script>

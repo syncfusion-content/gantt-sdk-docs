@@ -1,0 +1,61 @@
+@page
+@model CoreSamples.Pages.IndexModel
+@using Syncfusion.EJ2.Gantt
+
+@{
+    ViewData["Title"] = "Home page";
+
+    var eventMarkers = new List<GanttEventMarker>()
+    {
+        new GanttEventMarker() { Day = "04/09/2019", Label = "Research phase" },
+        new GanttEventMarker() { Day = "04/30/2019", Label = "Design phase" },
+        new GanttEventMarker() { Day = "05/23/2019", Label = "Production phase" },
+        new GanttEventMarker() { Day = "06/20/2019", Label = "Sales and marketing phase" }
+    };
+}
+
+<div style="margin-bottom:20px">
+    <ejs-button id="toggleMarkers" content="Event Markers"></ejs-button>
+</div>
+
+<ejs-gantt id="Gantt"
+           dataSource="@Model.GanttDataSourceCollection"
+           height="450px"
+           treeColumnIndex="1"
+           eventMarkers="eventMarkers">
+
+    <e-gantt-taskfields id="TaskId"
+                        name="TaskName"
+                        startDate="StartDate"
+                        endDate="EndDate"
+                        duration="Duration"
+                        progress="Progress"
+                        parentID="ParentId">
+    </e-gantt-taskfields>
+
+    <e-gantt-columns>
+        <e-gantt-column field="TaskId" headerText="Task ID" width="100"></e-gantt-column>
+        <e-gantt-column field="TaskName" headerText="Task Name" width="250"></e-gantt-column>
+        <e-gantt-column field="Progress" headerText="Progress" width="120"></e-gantt-column>
+    </e-gantt-columns>
+
+</ejs-gantt>
+
+<script>
+    document.getElementById('toggleMarkers').addEventListener('click', function() {
+        var gantt = document.getElementById('Gantt').ej2_instances[0];
+
+        if (gantt.eventMarkers && gantt.eventMarkers.length > 0) {
+            gantt.eventMarkers = [];
+        } else {
+            gantt.eventMarkers = [
+                { day: '04/09/2019', label: 'Research phase' },
+                { day: '04/30/2019', label: 'Design phase' },
+                { day: '05/23/2019', label: 'Production phase' },
+                { day: '06/20/2019', label: 'Sales and marketing phase' }
+            ];
+        }
+
+        gantt.refresh();
+    });
+</script>

@@ -1,0 +1,19 @@
+@page
+@model CoreSamples.Pages.IndexModel
+
+<ejs-gantt id="Gantt" dataSource="@Model.GanttData" height="430px" treeColumnIndex="1" gridLines="Both"  resources="@Model.ResourceCollection">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" endDate="EndDate" progress="Progress" parentID="ParentId" dependency="Predecessor" resourceInfo="Resources"></e-gantt-taskfields>
+    <e-gantt-labelsettings taskLabel="Progress"></e-gantt-labelsettings>
+    <e-gantt-splittersettings position="65%"></e-gantt-splittersettings>
+    <e-gantt-resourcefields id="ResourceId" name="ResourceName"></e-gantt-resourcefields>
+    <e-gantt-columns>
+        <e-gantt-column field="TaskId" headerText="Task ID" freeze="Left"></e-gantt-column>
+        <e-gantt-column field="TaskName" headerText="Task Name" width="200"></e-gantt-column>
+        <e-gantt-column field="StartDate" headerText="Start Date" width="130"></e-gantt-column>
+        <e-gantt-column field="Duration" headerText="Duration" width="110"></e-gantt-column>
+        <e-gantt-column field="EndDate" headerText="End Date" width="130"></e-gantt-column>
+        <e-gantt-column field="Progress" headerText="Progress" width="110" freeze="Fixed"></e-gantt-column>
+        <e-gantt-column field="Predecessor" headerText="Dependency" width="120"></e-gantt-column>
+        <e-gantt-column field="Resources" headerText="Assignee" freeze="Right"></e-gantt-column>
+    </e-gantt-columns>
+</ejs-gantt>
