@@ -1,55 +1,65 @@
 ---
 layout: post
-title: WBS Column in ASP.NET Core Gantt Chart | Syncfusion
-description: Learn how to display Work Breakdown Structure (WBS) codes in the ASP.NET Core Gantt Chart to organize and track project tasks hierarchically.
-keywords: asp.net core gantt wbs column, work breakdown structure, wbs codes, gantt task hierarchy, project planning, wbs task numbering, syncfusion gantt chart
+title: WBS Column in ASP.NET Core Gantt Chart | Work Breakdown | Syncfusion
+description: Learn how to integrate WBS codes in Syncfusion ASP.NET Core Gantt Chart to assign hierarchical identifiers to tasks.
+keywords: asp-net-core gantt wbs column, work breakdown structure, wbs code, task hierarchy, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/columns/wbs-column
 platform: gantt-sdk
 control: WBS Column - Gantt Chart
 documentation: ug
 domainurl: https://help.syncfusion.com/gantt-sdk
-appliesto: UI Component Suite, Gantt SDK/overview
+appliesto: UI Component Suite, Gantt SDK
 ---
 
-# WBS Column in ASP.NET Core Gantt Chart
+# Work Breakdown Structure (WBS) Column in ASP.NET Core Gantt Chart
 
-The Work Breakdown Structure (WBS) is a hierarchical numbering system that assigns unique and structured codes to each task, reflecting their positions within the overall project. This feature ensures data consistency and a clear, organized project view during operations such as sorting, filtering, editing, and drag-and-drop.
+The Work Breakdown Structure (WBS) organizes project tasks hierarchically by assigning unique codes to each task. This improves task visibility and management, especially in large-scale construction or enterprise-level software projects.
 
 ## Configuration and implementation
 
-To enable and configure WBS in your Gantt component:
+To enable WBS in the Gantt Chart component:
 
-- **Enable WBS Codes**: Set the [`EnableWBS`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableWBS) property to `true` to automatically generate unique task codes and their predecessors.
-- **Auto-Update Codes**: Set the [`EnableAutoWbsUpdate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableAutoWbsUpdate) property to `true` to maintain WBS code accuracy during operations like sorting, filtering, editing, or drag-and-drop.
+- **Enable WBS Codes**: Set [enableWBS](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableWBS) to **true** to automatically generate unique task codes and define their predecessors.
+- **Auto-Update Codes**: Set [enableAutoWbsUpdate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableAutoWbsUpdate) to **true** to maintain accurate WBS codes during operations such as sorting, editing, or drag-and-drop.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/wbsColumn/tagHelper %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/wbscolumn-cs1/Index.cshtml %}
 {% endhighlight %}
-{% highlight c# tabtitle="WbsColumn.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/wbsColumn/wbsColumn.cs %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/wbscolumn-cs1/Index.cshtml.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![WBS Column](../images/wbs-column.png)
+
+> When the WBS column is enabled in the ASP.NET Core Gantt Chart using the [enableWBS](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EnableWBS) property set to **true**, the default **ID** and **Predecessor** columns are automatically disabled, as the WBS Code and WBS Predecessor columns already display the ID and predecessor values based on the task hierarchy. The WBS column fields must include both **WBS Code** and **WBS Predecessor** in the [taskFields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskFields) configuration.
 
 ## Managing WBS code updates
 
-For better performance, you can control when WBS codes are updated by using the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ActionBegin) and [`DataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataBound) events. This is particularly useful during actions like dragging and dropping rows.
+To optimize performance, WBS code updates can be controlled using the [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ActionBegin) and [dataBound](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataBound) events. This is especially useful during operations like row drag-and-drop, where auto-update is triggered only during that specific action to ensure efficient and accurate code handling.
 
-In the following example, WBS auto-update is enabled only during the **row drag and drop** action using these events.
+In the following example, WBS auto-update is enabled only during the row drag and drop action using these events.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/wbsColumnEvents/tagHelper %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/wbscolumn-cs2/Index.cshtml %}
 {% endhighlight %}
-{% highlight c# tabtitle="WbsColumnEvents.cs" %}
-{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/wbsColumnEvents/wbsColumnEvents.cs %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
+{% include code-snippet/gantt-sdk/asp-net-core/gantt-chart/columns/wbscolumn-cs2/Index.cshtml.cs %}
 {% endhighlight %}
 {% endtabs %}
 
+![Managing WBS Code Updates](../images/wbs-column-update.gif)
+
 ## Limitations
 
-The WBS feature has a few limitations in the Gantt component:
+The WBS feature has the following limitations in the Gantt Chart component:
 
-- Editing of the WBS code and WBS predecessor columns is not supported.
-- Load on demand is not supported with the WBS feature.
-- WBS Code and WBS Predecessor fields cannot be mapped directly from the data source.
+- **No Inline Editing**: Editing of the WBS Code and WBS Predecessor columns is not supported. These columns are read-only and are automatically calculated based on the task hierarchy.
+
+- **No Load on Demand**: Load on demand (virtual loading of data) is not supported with the WBS feature. You must load all tasks upfront to ensure the WBS hierarchy is properly calculated.
+
+- **No Direct Field Mapping**: WBS Code and WBS Predecessor fields cannot be mapped directly from the data source. These values are automatically generated by the Gantt Chart based on the parent-child task relationships defined in the data.
+
+These limitations ensure the accuracy and consistency of the WBS hierarchy. If you need editable ID or predecessor columns, consider using custom ID and predecessor columns instead of the WBS feature.

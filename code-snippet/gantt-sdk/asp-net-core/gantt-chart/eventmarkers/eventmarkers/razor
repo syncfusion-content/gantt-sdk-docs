@@ -5,8 +5,8 @@
         }
     </style>
 	
-	@Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => 
-    ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")
+	@Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)Model.GanttDataSourceCollection).Height("450px").TaskFields(ts => 
+    ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").ParentID("ParentId")
     ).EventMarkers(em =>
             {
                 em.Day("04/10/2019").Label("Project approval and kick-off").CssClass("e-custom-event-marker").Add();

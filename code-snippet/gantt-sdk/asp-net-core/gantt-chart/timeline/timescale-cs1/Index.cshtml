@@ -1,0 +1,8 @@
+@page
+@model CoreSamples.Pages.IndexModel
+
+<ejs-gantt id="Gantt" dataSource="@Model.GanttData" height="430px">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" progress="Progress" dependency="Predecessor" parentID="ParentId"></e-gantt-taskfields>
+    <e-gantt-timelinesettings updateTimescaleView="false"></e-gantt-timelinesettings>
+    <e-gantt-editsettings allowEditing="true" allowTaskbarEditing="true"></e-gantt-editsettings>
+</ejs-gantt>

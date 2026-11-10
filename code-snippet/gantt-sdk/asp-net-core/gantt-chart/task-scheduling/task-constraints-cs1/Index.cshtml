@@ -1,0 +1,69 @@
+@page
+@model CoreSamples.Pages.IndexModel
+
+<ejs-gantt id="Gantt" dataSource="@Model.GanttDataSourceCollection" height="450px" treeColumnIndex="1"
+           projectStartDate="03/25/2025" projectEndDate="09/01/2025">
+
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration"
+                        progress="Progress" constraintType="ConstraintType" constraintDate="ConstraintDate" dependency="Predecessor"
+                        parentID="ParentId">
+    </e-gantt-taskfields>
+
+    <e-gantt-editsettings allowAdding="true" allowEditing="true" allowDeleting="true" allowTaskbarEditing="true"
+                          showDeleteConfirmDialog="true">
+    </e-gantt-editsettings>
+
+    <e-gantt-splittersettings columnIndex="4"></e-gantt-splittersettings>
+
+    <e-gantt-labelsettings leftLabel="TaskName" rightLabel="#rightLabelTemplate">
+    </e-gantt-labelsettings>
+
+    <e-gantt-timelinesettings>
+        <e-timelinesettings-toptier unit="Week" format="MMM dd, yyyy">
+        </e-timelinesettings-toptier>
+
+        <e-timelinesettings-bottomtier unit="Day">
+        </e-timelinesettings-bottomtier>
+    </e-gantt-timelinesettings>
+    <e-gantt-eventmarkers>
+        <e-gantt-eventmarker day="03/25/2025" label="Project StartDate"></e-gantt-eventmarker>
+        <e-gantt-eventmarker day="08/31/2025" label="Project EndDate"></e-gantt-eventmarker>
+    </e-gantt-eventmarkers>
+    <e-gantt-columns>
+        <e-gantt-column field="TaskId" visible="false"></e-gantt-column>
+        <e-gantt-column field="TaskName" headerText="Job Name" width="200">
+        </e-gantt-column>
+        <e-gantt-column field="StartDate"></e-gantt-column>
+        <e-gantt-column field="Duration"></e-gantt-column>
+        <e-gantt-column field="ConstraintType"></e-gantt-column>
+        <e-gantt-column field="ConstraintDate"></e-gantt-column>
+        <e-gantt-column field="EndDate"></e-gantt-column>
+        <e-gantt-column field="Predecessor"></e-gantt-column>
+        <e-gantt-column field="Progress"></e-gantt-column>
+    </e-gantt-columns>
+
+</ejs-gantt>
+
+<script id="rightLabelTemplate" type="text/x-template">
+    <div style="margin-top:-7px;">
+        ${getConstraintText(ConstraintType)}
+    </div>
+</script>
+
+<script>
+    function getConstraintText(value) {
+
+        const map = {
+            0: 'As Soon As Possible',
+            1: 'As Late As Possible',
+            2: 'Must Start On',
+            3: 'Must Finish On',
+            4: 'Start No Earlier Than',
+            5: 'Start No Later Than',
+            6: 'Finish No Earlier Than',
+            7: 'Finish No Later Than'
+        };
+
+        return map[value] || '';
+    }
+</script>
