@@ -123,8 +123,8 @@ The following screen shot shows working time range in Gantt control.
 
 ![Alt text](./images/working-time-range.png)
 
-N>* Individual tasks can lie between any time within the defined working time range of the project.
-<br/>* The [`DayWorkingTime`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DayWorkingTime) property is used to define the working time for the whole project.
+N>_ Individual tasks can lie between any time within the defined working time range of the project.
+<br/>_ The [`DayWorkingTime`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DayWorkingTime) property is used to define the working time for the whole project.
 
 ## Weekend/Non-working days
 

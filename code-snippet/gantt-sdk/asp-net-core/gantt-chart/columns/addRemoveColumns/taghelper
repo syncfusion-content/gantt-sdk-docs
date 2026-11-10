@@ -1,0 +1,97 @@
+@page
+@model CoreSamples.Pages.IndexModel
+@using Syncfusion.EJ2.Gantt
+
+<div style="margin-bottom:20px">
+    <button id="addColumn" class="e-btn e-info">Add Column</button>
+    <button id="deleteColumn" class="e-btn e-danger">Delete Column</button>
+</div>
+
+<ejs-gantt id="Gantt"
+           dataSource="@Model.GanttDataSourceCollection"
+           height="430px"
+           treeColumnIndex="1">
+
+    <e-gantt-taskfields id="TaskId"
+                        name="TaskName"
+                        startDate="StartDate"
+                        endDate="EndDate"
+                        duration="Duration"
+                        progress="Progress"
+                        parentID="ParentId">
+    </e-gantt-taskfields>
+
+    <e-gantt-splittersettings position="75%"></e-gantt-splittersettings>
+
+    <e-gantt-columns>
+        <e-gantt-column field="TaskId"
+                        headerText="Task ID"
+                        textAlign="Right"
+                        width="90">
+        </e-gantt-column>
+
+        <e-gantt-column field="TaskName"
+                        headerText="Task Name"
+                        width="250">
+        </e-gantt-column>
+
+        <e-gantt-column field="StartDate"
+                        headerText="Start Date"
+                        format="yMd"
+                        textAlign="Right"
+                        width="120">
+        </e-gantt-column>
+
+        <e-gantt-column field="Duration"
+                        headerText="Duration"
+                        textAlign="Right"
+                        width="100">
+        </e-gantt-column>
+
+        <e-gantt-column field="Progress"
+                        headerText="Progress"
+                        textAlign="Right"
+                        width="120">
+        </e-gantt-column>
+    </e-gantt-columns>
+</ejs-gantt>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+        document.getElementById('addColumn').addEventListener('click', function() {
+
+            var gantt = document.getElementById('Gantt').ej2_instances[0];
+
+            var exists = gantt.columns.some(function(col) {
+                return col.field === 'EndDate';
+            });
+
+            if (!exists) {
+                gantt.columns.push({
+                    field: 'EndDate',
+                    headerText: 'End Date',
+                    width: 120,
+                    format: 'yMd'
+                });
+
+                gantt.refresh();
+            }
+        });
+
+        document.getElementById('deleteColumn').addEventListener('click', function() {
+
+            var gantt = document.getElementById('Gantt').ej2_instances[0];
+
+            var index = gantt.columns.findIndex(function(col) {
+                return col.field === 'EndDate';
+            });
+
+            if (index !== -1) {
+                gantt.columns.splice(index, 1);
+                gantt.refresh();
+            }
+        });
+
+    });
+</script>
