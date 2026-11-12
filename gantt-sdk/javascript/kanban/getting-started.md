@@ -74,7 +74,7 @@ Refer to the following steps to set up your local environment:
 The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Kanban control can be initialized in one of the following ways.
 
 * Using local scripts and styles.
-* Using CDN links for scripts and styles.
+* Using CDN links for scripts and UNPKG for styles.
 
 ### Using local scripts and styles
 
@@ -141,7 +141,7 @@ After copying the files, you can reference the Kanban's scripts and styles in th
 
 ```
 
-### Add Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles and scripts using links
+### Add Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles from UNPKG and scripts from CDN links
 
 Add the following Kanban styles and scripts to the `<head>` section of the `index.html` file.
 

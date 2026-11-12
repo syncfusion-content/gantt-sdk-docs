@@ -44,7 +44,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Gantt Chart control can
 
 * [Using local scripts and styles](#using-local-scripts-and-styles)
 
-* [Add Syncfusion<sup style="font-size:70%">&reg;</sup> CSS Styles and Scripts](#add-syncfusion-css-styles-and-scripts)
+* [Add Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles from UNPKG and scripts from CDN links](#add-syncfusion-css-styles-from-unpkg-and-scripts-from-cdn-links)
 
 ### Using local scripts and styles
 
@@ -131,9 +131,9 @@ Here is a sample configuration for referencing the Gantt Chart scripts and style
   </html>
 ```
 
-### Add Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles and scripts using links
+### Add Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles from UNPKG and scripts from CDN links
 
-Include the following Gantt Chart styles and scripts in the `<head>` section of the `index.html` file.
+Include the following Gantt Chart stylesheet and scripts in the `<head>` section of the `index.html` file.
 
 **Styles (CSS):**
 ```
@@ -147,7 +147,7 @@ https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css
 
 > * Script: [https://cdn.syncfusion.com/ej2/ej2-gantt/dist/global/ej2-gantt.min.js](https://cdn.syncfusion.com/ej2/ej2-gantt/dist/global/ej2-gantt.min.js)
 
-The following example shows how to reference the Gantt Chart scripts and styles in an HTML file using CDN links:
+The following example shows how to reference the Gantt Chart stylesheet from UNPKG and scripts from CDN links in an HTML file:
 
 ```html
 <!DOCTYPE html>
@@ -188,9 +188,9 @@ The following example shows how to reference the Gantt Chart scripts and styles 
   </html>
 ```
 
-**Single script and style CDN reference for all controls:**
+**Single CDN script and UNPKG style reference for all controls:**
 
-A single CDN link can be used to include all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript control resources.
+A single CDN script can be used to include all Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript control scripts. Use the UNPKG theme stylesheet for styles.
 
 Use the following links:
 
