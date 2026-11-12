@@ -14,7 +14,6 @@ var ganttChart = new ej.gantt.Gantt({
         name: 'TaskName',
         startDate: 'StartDate',
         duration: 'Duration',
-        endDate: 'EndDate',
         parentID: 'ParentID'
     }
 });
