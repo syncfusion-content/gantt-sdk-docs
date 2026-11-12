@@ -329,7 +329,7 @@ Use `KanbanWebMcpSettings` and `KanbanWebMcpTools` to change the effective tool 
 
 For a custom tool, provide a PascalCase `Name`, a `Description`, and `InputSchema` as a JSON Schema object represented by an object rather than serialized JSON text. The `OnWebMcpExecute` handler must set `args.Result` for a custom tool. The same event is raised before built-in tools run; use it to inspect the command and arguments, cancel an invocation with `args.Cancel = true`, or request confirmation for a write with `args.ShowConfirmationDialog = true`.
 
-The event runs before the tool executes. Use it for auditing, cancellation, and confirmation requests; built-in operations execute after the event completes. A requested confirmation must be approved and displayed for the operation to proceed. A cancelled operation returns a terminal `[USER_CANCELLED]` message unless the host supplies `CancellationResponse`.
+The event runs before the tool executes. Use it for auditing, cancellation, and confirmation requests; built-in operations execute after the event completes. A requested confirmation must be approved and displayed for the operation to proceed. A canceled operation returns a terminal `[USER_CANCELLED]` message unless the host supplies `CancellationResponse`.
 
 Built-in overrides retain the built-in input schema. Tool names, including built-in name overrides, must be PascalCase. `InputSchema` applies only to custom tools. Invalid custom tool definitions are skipped and logged. A custom tool with the same name as a built-in tool replaces that tool in the effective list.
 
