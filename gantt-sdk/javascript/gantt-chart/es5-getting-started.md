@@ -44,7 +44,7 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 Gantt Chart control can
 
 * [Using local scripts and styles](#using-local-scripts-and-styles)
 
-* [Using CDN link for scripts and styles](#using-cdn-link-for-scripts-and-styles)
+* [Add Syncfusion<sup style="font-size:70%">&reg;</sup> CSS Styles and Scripts](#add-syncfusion-css-styles-and-scripts)
 
 ### Using local scripts and styles
 
@@ -71,8 +71,8 @@ Use the following path format to find the required files:
 
 **Example Paths:**
 
-> * Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/33.1.44/Essential JS 2/ej2-gantt/dist/global/ej2-gantt.min.js`
-> * Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/33.1.44/Essential JS 2/ej2-gantt/styles/tailwind3.css`
+> * Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/35.1.43/Essential JS 2/ej2-gantt/dist/global/ej2-gantt.min.js`
+> * Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/35.1.43/Essential JS 2/ej2-gantt/styles/tailwind3.css`
 
 **4. Reference Scripts and Styles:** After copying the files, include the required scripts and styles in the `index.html` file.
 
@@ -131,22 +131,21 @@ Here is a sample configuration for referencing the Gantt Chart scripts and style
   </html>
 ```
 
-### Using CDN link for scripts and styles
+### Add Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles and scripts using links
 
-Using CDN links to include the Syncfusion<sup style="font-size:70%">&reg;</sup> Gantt Chart control's scripts and styles directly in the `index.html` file.
+Include the following Gantt Chart styles and scripts in the `<head>` section of the `index.html` file.
 
-Use the following CDN link format to refer in the `index.html` files:
+**Styles (CSS):**
+```
+https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css
+```
 
 **Script CDN link:**
 > * Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 
-**Style CDN link:**
-> * Styles: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/tailwind3.css`
-
 **Example CDN link:**
 
 > * Script: [https://cdn.syncfusion.com/ej2/ej2-gantt/dist/global/ej2-gantt.min.js](https://cdn.syncfusion.com/ej2/ej2-gantt/dist/global/ej2-gantt.min.js)
-> * Styles: [https://cdn.syncfusion.com/ej2/ej2-gantt/styles/tailwind3.css](https://cdn.syncfusion.com/ej2/ej2-gantt/styles/tailwind3.css)
 
 The following example shows how to reference the Gantt Chart scripts and styles in an HTML file using CDN links:
 
@@ -155,45 +154,31 @@ The following example shows how to reference the Gantt Chart scripts and styles 
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2 Gantt</title>
-            <!-- Essential JS 2 gantt's dependent tailwind3 theme -->
-            <link href="https://cdn.syncfusion.com/ej2/33.1.44/ej2-base/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/33.1.44/ej2-buttons/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/33.1.44/ej2-popups/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/33.1.44/ej2-navigations/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/33.1.44/ej2-notifications/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/33.1.44/ej2-lists/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/33.1.44/ej2-dropdowns/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/33.1.44/ej2-inputs/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/33.1.44/ej2-calendars/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/33.1.44/ej2-layouts/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/33.1.44/ej2-richtexteditor/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/33.1.44/ej2-grids/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="https://cdn.syncfusion.com/ej2/33.1.44/ej2-treegrid/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <!-- Essential JS 2 tailwind3 theme -->
-            <link href="https://cdn.syncfusion.com/ej2/33.1.44/ej2-gantt/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 Gantt Tailwind 3 theme bundle -->
+            <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css"/>
 
             <!-- Essential JS 2 Gantt's dependent scripts -->
-            <script src="https://cdn.syncfusion.com/ej2/33.1.44/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
-            <script src="https://cdn.syncfusion.com/ej2/33.1.44/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
-            <script src="https://cdn.syncfusion.com/ej2/33.1.44/ej2-buttons/dist/global/ej2-buttons.min.js" type="text/javascript"></script>
-            <script src="https://cdn.syncfusion.com/ej2/33.1.44/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
-            <script src="https://cdn.syncfusion.com/ej2/33.1.44/ej2-navigations/dist/global/ej2-navigations.min.js" type="text/javascript"></script>
-            <script src="https://cdn.syncfusion.com/ej2/33.1.44/ej2-notifications/dist/global/ej2-notifications.min.js" type="text/javascript"></script>
-            <script src="https://cdn.syncfusion.com/ej2/33.1.44/ej2-lists/dist/global/ej2-lists.min.js" type="text/javascript"></script>
-            <script src="https://cdn.syncfusion.com/ej2/33.1.44/ej2-dropdowns/dist/global/ej2-dropdowns.min.js" type="text/javascript"></script>
-            <script src="https://cdn.syncfusion.com/ej2/33.1.44/ej2-inputs/dist/global/ej2-inputs.min.js" type="text/javascript"></script>
-            <script src="https://cdn.syncfusion.com/ej2/33.1.44/ej2-calendars/dist/global/ej2-calendars.min.js" type="text/javascript"></script>
-            <script src="https://cdn.syncfusion.com/ej2/33.1.44/ej2-layouts/dist/global/ej2-layouts.min.js" type="text/javascript"></script>
-            <script src="https://cdn.syncfusion.com/ej2/33.1.44/ej2-richtexteditor/dist/global/ej2-richtexteditor.min.js" type="text/javascript"></script>
-            <script src="https://cdn.syncfusion.com/ej2/33.1.44/ej2-grids/dist/global/ej2-grids.min.js" type="text/javascript"></script>
-            <script src="https://cdn.syncfusion.com/ej2/33.1.44/ej2-treegrid/dist/global/ej2-treegrid.min.js" type="text/javascript"></script>
-            <script src="https://cdn.syncfusion.com/ej2/33.1.44/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js" type="text/javascript"></script>
-            <script src="https://cdn.syncfusion.com/ej2/33.1.44/ej2-excel-export/dist/global/ej2-excel-export.min.js" type="text/javascript"></script>
-            <script src="https://cdn.syncfusion.com/ej2/33.1.44/ej2-file-utils/dist/global/ej2-file-utils.min.js" type="text/javascript"></script>
-            <script src="https://cdn.syncfusion.com/ej2/33.1.44/ej2-compression/dist/global/ej2-compression.min.js" type="text/javascript"></script>
-            <script src="https://cdn.syncfusion.com/ej2/33.1.44/ej2-pdf-export/dist/global/ej2-pdf-export.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/35.1.43/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/35.1.43/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/35.1.43/ej2-buttons/dist/global/ej2-buttons.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/35.1.43/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/35.1.43/ej2-navigations/dist/global/ej2-navigations.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/35.1.43/ej2-notifications/dist/global/ej2-notifications.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/35.1.43/ej2-lists/dist/global/ej2-lists.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/35.1.43/ej2-dropdowns/dist/global/ej2-dropdowns.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/35.1.43/ej2-inputs/dist/global/ej2-inputs.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/35.1.43/ej2-calendars/dist/global/ej2-calendars.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/35.1.43/ej2-layouts/dist/global/ej2-layouts.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/35.1.43/ej2-richtexteditor/dist/global/ej2-richtexteditor.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/35.1.43/ej2-grids/dist/global/ej2-grids.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/35.1.43/ej2-treegrid/dist/global/ej2-treegrid.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/35.1.43/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/35.1.43/ej2-excel-export/dist/global/ej2-excel-export.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/35.1.43/ej2-file-utils/dist/global/ej2-file-utils.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/35.1.43/ej2-compression/dist/global/ej2-compression.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/35.1.43/ej2-pdf-export/dist/global/ej2-pdf-export.min.js" type="text/javascript"></script>
             <!-- Essential JS 2 Gantt's global script -->
-            <script src="https://cdn.syncfusion.com/ej2/33.1.44/ej2-gantt/dist/global/ej2-gantt.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/35.1.43/ej2-gantt/dist/global/ej2-gantt.min.js" type="text/javascript"></script>
        </head>
        <body>
            <!-- Add the HTML <div> element for Gantt Chart -->
@@ -210,10 +195,10 @@ A single CDN link can be used to include all Syncfusion<sup style="font-size:70%
 Use the following links:
 
 **Script (For all controls):**
-> * Script reference: [https://cdn.syncfusion.com/ej2/33.1.44/dist/ej2.min.js](https://cdn.syncfusion.com/ej2/33.1.44/dist/ej2.min.js)
+> * Script reference: [https://cdn.syncfusion.com/ej2/35.1.43/dist/ej2.min.js](https://cdn.syncfusion.com/ej2/35.1.43/dist/ej2.min.js)
 
 **Styles (For all controls):**
-> * Style reference: [https://cdn.syncfusion.com/ej2/33.1.44/tailwind3.css](https://cdn.syncfusion.com/ej2/33.1.44/tailwind3.css)
+> * Style reference: [https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css](https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css)
 
 ## Create sample task data
 
@@ -275,9 +260,9 @@ Add the following HTML element to the `index.html` file. This element acts as th
        <head>
             <title>Essential JS 2 Gantt</title>
             <!-- Essential JS 2 all tailwind3 theme -->
-            <link href="https://cdn.syncfusion.com/ej2/33.1.44/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css"/>
              <!-- Essential JS 2 all script -->
-            <script src="http://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/35.1.43/dist/ej2.min.js" type="text/javascript"></script>
        </head>
        <body>
            <!-- Add the HTML <div> element for Gantt Chart -->
@@ -306,6 +291,7 @@ var ganttChart = new ej.gantt.Gantt({
         name: 'TaskName',
         startDate: 'StartDate',
         duration: 'Duration',
+        endDate: 'EndDate',
         parentID: 'ParentID'
     }
 });
