@@ -19,14 +19,13 @@ Instead of relying on DOM inspection or simulating user interactions, AI assista
 
 Once connected, an AI assistant can perform tasks such as:
 
-- Manage cards and card updates.
-- Move work across columns and update board data.
-- Manage column visibility and board organization.
-- Search, filter, sort, and navigate the board.
-- Expand and collapse swimlane groups.
-- Review card details and selected cards.
+- View card details and selected cards.
+- Retrieve column data and swimlane data.
+- Open and close the dialog used for adding or editing cards.
+- Add, update, and delete cards.
+- Add, delete, show, and hide columns.
 
-The React Kanban component provides WebMCP tools that enable AI agents to manage cards, organize columns, handle board interactions, navigate swimlanes, perform search, filtering, and sorting operations, and review selected card data.
+The React Kanban component provides WebMCP tools that enable AI agents to view card and column information, manage cards, control dialogs, and update column visibility.
 
 > WebMCP is currently an experimental browser capability and requires a Chromium-based browser with WebMCP support enabled. Availability and required browser flags may change as the specification evolves.
 
@@ -34,7 +33,7 @@ The React Kanban component provides WebMCP tools that enable AI agents to manage
 
 - Syncfusion® React Kanban component
 - Chromium-based Browser (like Chrome, Edge, or Brave)
-- [Node.js 24+](https://nodejs.org/en) (LTS recommended).
+- [Node.js 24+](https://nodejs.org/en) (LTS recommended)
 - WebMCP browser extension installed
 - AI API key configured in the extension
 
@@ -44,7 +43,7 @@ Before you can use WebMCP locally, enable the feature flag and install the brows
 
 1. Enable `WebMCP for testing` flag via `chrome://flags/`. Click **"Relaunch"** to restart Chrome.
 2. Search for **"WebMCP - Model Context Tool Inspector"** in [Chrome Web Store](https://chromewebstore.google.com/detail/webmcp-model-context-tool/gbpdfapgefenggkahomfgkhfehlcenpd). Click **"Add to Chrome"**.
-3. Visit [Google AI Studio](https://aistudio.google.com/app/apikey) to create or copy an API key. Open the WebMCP extension → paste your API key.
+3. Visit [Google AI Studio](https://aistudio.google.com/app/apikey) to create or copy an API key. Open the WebMCP extension and paste your API key.
 
 The WebMCP extension is now configured and ready to interact with WebMCP-enabled Syncfusion® React Kanban component.
 
@@ -54,11 +53,11 @@ Follow these steps to integrate WebMCP support into Syncfusion® React Kanban co
 
 ### Step 1: Create an application
 
-Create an React application and integrate the Syncfusion® React Kanban component by following the [Getting Started with React Kanban](https://help.syncfusion.com/gantt-sdk/react/kanban/getting-started) guide. After completing the setup, follow the steps below to enable WebMCP integration.
+Create a React application and integrate the Syncfusion® React Kanban component by following the [Getting Started with React Kanban](https://help.syncfusion.com/gantt-sdk/react/kanban/getting-started) guide. After completing the setup, follow the steps below to enable WebMCP integration.
 
 ### Step 2: Enable WebMCP support
 
-Import the WebMcpAdapter module and inject it into the component to make WebMCP functionality available.
+Import the `WebMcpAdapter` module and inject it into the component to make WebMCP functionality available.
 
 ```js
 import { KanbanComponent, ColumnsDirective, ColumnDirective, Inject, WebMcpAdapter } from '@syncfusion/ej2-react-kanban';
@@ -165,7 +164,7 @@ Use the [webMcpSettings](https://ej2.syncfusion.com/react/documentation/api/kanb
 
 ```js
 import { KanbanComponent, ColumnsDirective, ColumnDirective, Inject, WebMcpAdapter } from '@syncfusion/ej2-react-kanban';
-
+import './App.css'
 const dataSource = [
   { Id: 1, Status: 'Open', Summary: 'Project Planning', Assignee: 'Andrew Fuller' },
   { Id: 2, Status: 'In Progress', Summary: 'Requirement Analysis', Assignee: 'Janet Leverling' },
@@ -180,7 +179,7 @@ const cardSettings = {
 
 const webMcpSettings = {
   name: 'kanban',
-  tools: ['getCardDetails', 'getColumnData', 'getSelectedCards', 'addCard'],
+  tools: ['getCardDetails', 'getColumnData', 'getSelectedCards', 'updateCard'],
   exposedTo: ['https://www.syncfusion.com/']
 };
 
@@ -249,7 +248,7 @@ const cardSettings = {
 
 const webMcpSettings = {
   name: 'kanban',
-  tools: ['getCardDetails', 'getColumnData', 'getSelectedCards', 'addCard'],
+  tools: ['getCardDetails', 'getColumnData', 'getSelectedCards', 'updateCard'],
   exposedTo: ['https://www.syncfusion.com/']
 };
 
@@ -268,6 +267,7 @@ export default function App() {
   return (
     <KanbanComponent
       id='kanban'
+      keyField='Status'
       dataSource={dataSource}
       cardSettings={cardSettings}
       enableWebMcp={true}
