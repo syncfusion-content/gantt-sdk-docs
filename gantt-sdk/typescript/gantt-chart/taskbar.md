@@ -170,7 +170,7 @@ gantt.appendTo('#Gantt');
     <meta name="description" content="Typescript Gantt Controls" />
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
-    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="systemjs.config.js"></script>
     <style>
