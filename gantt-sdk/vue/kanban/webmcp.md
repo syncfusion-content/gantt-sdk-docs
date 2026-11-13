@@ -66,43 +66,36 @@ Import the `WebMcpAdapter` module and inject it into the component to make WebMC
     keyField="Status"
     :dataSource="dataSource"
     :cardSettings="cardSettings"
+    :columns="columns"
     :enableWebMcp="true"
     height="450px"
-  >
-    <e-columns>
-      <e-column headerText="Open" keyField="Open"></e-column>
-      <e-column headerText="In Progress" keyField="In Progress"></e-column>
-      <e-column headerText="Review" keyField="Review"></e-column>
-      <e-column headerText="Done" keyField="Done"></e-column>
-    </e-columns>
-  </ejs-kanban>
+  />
 </template>
 
-<script>
-import { defineComponent } from 'vue';
-import { KanbanComponent, ColumnsDirective, ColumnDirective, WebMcpAdapter } from '@syncfusion/ej2-vue-kanban';
+<script setup>
+import { KanbanComponent as EjsKanban, WebMcpAdapter } from '@syncfusion/ej2-vue-kanban';
+import { provide } from 'vue';
 
-export default defineComponent({
-  components: {
-    'ejs-kanban': KanbanComponent,
-    'e-columns': ColumnsDirective,
-    'e-column': ColumnDirective
-  },
-  data() {
-    return {
-      dataSource: [
-        { Id: 1, Status: 'Open', Summary: 'Project Planning', Assignee: 'Andrew Fuller' },
-        { Id: 2, Status: 'In Progress', Summary: 'Requirement Analysis', Assignee: 'Janet Leverling' },
-        { Id: 3, Status: 'Review', Summary: 'Design phase', Assignee: 'Steven White' },
-        { Id: 4, Status: 'Done', Summary: 'UI Review', Assignee: 'Nancy Davolio' }
-      ],
-      cardSettings: {
-        contentField: 'Summary',
-        headerField: 'Id'
-      }
-    };
-  }
-});
+const dataSource = [
+  { Id: 1, Status: 'Open', Summary: 'Project Planning', Assignee: 'Andrew Fuller' },
+  { Id: 2, Status: 'In Progress', Summary: 'Requirement Analysis', Assignee: 'Janet Leverling' },
+  { Id: 3, Status: 'Review', Summary: 'Design phase', Assignee: 'Steven White' },
+  { Id: 4, Status: 'Done', Summary: 'UI Review', Assignee: 'Nancy Davolio' }
+];
+
+const cardSettings = {
+  contentField: 'Summary',
+  headerField: 'Id'
+};
+
+const columns = [
+  { headerText: 'Open', keyField: 'Open' },
+  { headerText: 'In Progress', keyField: 'In Progress' },
+  { headerText: 'Review', keyField: 'Review' },
+  { headerText: 'Done', keyField: 'Done' }
+];
+
+provide('kanban', [WebMcpAdapter]);
 </script>
 ```
 
@@ -127,47 +120,41 @@ An AI assistant can discover these tools and invoke them based on user prompts.
     keyField="Status"
     :dataSource="dataSource"
     :cardSettings="cardSettings"
+    :columns="columns"
     :enableWebMcp="true"
     :webMcpSettings="webMcpSettings"
     height="450px"
-  >
-    <e-columns>
-      <e-column headerText="Open" keyField="Open"></e-column>
-      <e-column headerText="In Progress" keyField="In Progress"></e-column>
-      <e-column headerText="Review" keyField="Review"></e-column>
-      <e-column headerText="Done" keyField="Done"></e-column>
-    </e-columns>
-  </ejs-kanban>
+  />
 </template>
 
-<script>
-import { defineComponent } from 'vue';
-import { KanbanComponent, ColumnsDirective, ColumnDirective, WebMcpAdapter } from '@syncfusion/ej2-vue-kanban';
+<script setup>
+import { KanbanComponent as EjsKanban, WebMcpAdapter } from '@syncfusion/ej2-vue-kanban';
+import { provide } from 'vue';
 
-export default defineComponent({
-  components: {
-    'ejs-kanban': KanbanComponent,
-    'e-columns': ColumnsDirective,
-    'e-column': ColumnDirective
-  },
-  data() {
-    return {
-      dataSource: [
-        { Id: 1, Status: 'Open', Summary: 'Project Planning', Assignee: 'Andrew Fuller' },
-        { Id: 2, Status: 'In Progress', Summary: 'Requirement Analysis', Assignee: 'Janet Leverling' },
-        { Id: 3, Status: 'Review', Summary: 'Design phase', Assignee: 'Steven White' },
-        { Id: 4, Status: 'Done', Summary: 'UI Review', Assignee: 'Nancy Davolio' }
-      ],
-      cardSettings: {
-        contentField: 'Summary',
-        headerField: 'Id'
-      },
-      webMcpSettings: {
-        tools: []
-      }
-    };
-  }
-});
+const dataSource = [
+  { Id: 1, Status: 'Open', Summary: 'Project Planning', Assignee: 'Andrew Fuller' },
+  { Id: 2, Status: 'In Progress', Summary: 'Requirement Analysis', Assignee: 'Janet Leverling' },
+  { Id: 3, Status: 'Review', Summary: 'Design phase', Assignee: 'Steven White' },
+  { Id: 4, Status: 'Done', Summary: 'UI Review', Assignee: 'Nancy Davolio' }
+];
+
+const cardSettings = {
+  contentField: 'Summary',
+  headerField: 'Id'
+};
+
+const columns = [
+  { headerText: 'Open', keyField: 'Open' },
+  { headerText: 'In Progress', keyField: 'In Progress' },
+  { headerText: 'Review', keyField: 'Review' },
+  { headerText: 'Done', keyField: 'Done' }
+];
+
+const webMcpSettings = {
+  tools: []
+};
+
+provide('kanban', [WebMcpAdapter]);
 </script>
 ```
 
@@ -188,49 +175,55 @@ Use the [webMcpSettings](https://ej2.syncfusion.com/vue/documentation/api/kanban
     keyField="Status"
     :dataSource="dataSource"
     :cardSettings="cardSettings"
+    :columns="columns"
     :enableWebMcp="true"
     :webMcpSettings="webMcpSettings"
+    :beforeWebMcpToolExecute="beforeWebMcpToolExecute"
     height="450px"
-  >
-    <e-columns>
-      <e-column headerText="Open" keyField="Open"></e-column>
-      <e-column headerText="In Progress" keyField="In Progress"></e-column>
-      <e-column headerText="Review" keyField="Review"></e-column>
-      <e-column headerText="Done" keyField="Done"></e-column>
-    </e-columns>
-  </ejs-kanban>
+  />
 </template>
 
-<script>
-import { defineComponent } from 'vue';
-import { KanbanComponent, ColumnsDirective, ColumnDirective, WebMcpAdapter } from '@syncfusion/ej2-vue-kanban';
+<script setup>
+import { KanbanComponent as EjsKanban, WebMcpAdapter } from '@syncfusion/ej2-vue-kanban';
+import { provide } from 'vue';
 
-export default defineComponent({
-  components: {
-    'ejs-kanban': KanbanComponent,
-    'e-columns': ColumnsDirective,
-    'e-column': ColumnDirective
-  },
-  data() {
-    return {
-      dataSource: [
-        { Id: 1, Status: 'Open', Summary: 'Project Planning', Assignee: 'Andrew Fuller' },
-        { Id: 2, Status: 'In Progress', Summary: 'Requirement Analysis', Assignee: 'Janet Leverling' },
-        { Id: 3, Status: 'Review', Summary: 'Design phase', Assignee: 'Steven White' },
-        { Id: 4, Status: 'Done', Summary: 'UI Review', Assignee: 'Nancy Davolio' }
-      ],
-      cardSettings: {
-        contentField: 'Summary',
-        headerField: 'Id'
-      },
-      webMcpSettings: {
-        name: 'kanban',
-        tools: ['getCardDetails', 'getColumnData', 'getSelectedCards', 'updateCard'],
-        exposedTo: ['https://www.syncfusion.com/']
-      }
-    };
+const dataSource = [
+  { Id: 1, Status: 'Open', Summary: 'Project Planning', Assignee: 'Andrew Fuller' },
+  { Id: 2, Status: 'In Progress', Summary: 'Requirement Analysis', Assignee: 'Janet Leverling' },
+  { Id: 3, Status: 'Review', Summary: 'Design phase', Assignee: 'Steven White' },
+  { Id: 4, Status: 'Done', Summary: 'UI Review', Assignee: 'Nancy Davolio' }
+];
+
+const cardSettings = {
+  contentField: 'Summary',
+  headerField: 'Id'
+};
+
+const columns = [
+  { headerText: 'Open', keyField: 'Open' },
+  { headerText: 'In Progress', keyField: 'In Progress' },
+  { headerText: 'Review', keyField: 'Review' },
+  { headerText: 'Done', keyField: 'Done' }
+];
+
+const webMcpSettings = {
+  name: 'kanban',
+  tools: ['getCardDetails', 'getColumnData', 'getSelectedCards', 'updateCard'],
+  exposedTo: ['https://www.syncfusion.com/']
+};
+
+const beforeWebMcpToolExecute = (args) => {
+  if (args.toolName === 'kanban_updateCard') {
+    const hour = new Date().getHours();
+
+    if (hour < 9 || hour > 17) {
+      args.cancel = true;
+      console.log('Card updates are allowed only between 9:00 AM and 5:00 PM.');
+    }
   }
-});
+};
+
+provide('kanban', [WebMcpAdapter]);
 </script>
 ```
 
@@ -254,62 +247,55 @@ The [beforeWebMcpToolExecute](https://ej2.syncfusion.com/vue/documentation/api/k
     keyField="Status"
     :dataSource="dataSource"
     :cardSettings="cardSettings"
+    :columns="columns"
     :enableWebMcp="true"
     :webMcpSettings="webMcpSettings"
     :beforeWebMcpToolExecute="beforeWebMcpToolExecute"
     height="450px"
-  >
-    <e-columns>
-      <e-column headerText="Open" keyField="Open"></e-column>
-      <e-column headerText="In Progress" keyField="In Progress"></e-column>
-      <e-column headerText="Review" keyField="Review"></e-column>
-      <e-column headerText="Done" keyField="Done"></e-column>
-    </e-columns>
-  </ejs-kanban>
+  />
 </template>
 
-<script>
-import { defineComponent } from 'vue';
-import { KanbanComponent, ColumnsDirective, ColumnDirective, WebMcpAdapter } from '@syncfusion/ej2-vue-kanban';
+<script setup>
+import { KanbanComponent as EjsKanban, WebMcpAdapter } from '@syncfusion/ej2-vue-kanban';
+import { provide } from 'vue';
 
-export default defineComponent({
-  components: {
-    'ejs-kanban': KanbanComponent,
-    'e-columns': ColumnsDirective,
-    'e-column': ColumnDirective
-  },
-  data() {
-    return {
-      dataSource: [
-        { Id: 1, Status: 'Open', Summary: 'Project Planning', Assignee: 'Andrew Fuller' },
-        { Id: 2, Status: 'In Progress', Summary: 'Requirement Analysis', Assignee: 'Janet Leverling' },
-        { Id: 3, Status: 'Review', Summary: 'Design phase', Assignee: 'Steven White' },
-        { Id: 4, Status: 'Done', Summary: 'UI Review', Assignee: 'Nancy Davolio' }
-      ],
-      cardSettings: {
-        contentField: 'Summary',
-        headerField: 'Id'
-      },
-      webMcpSettings: {
-        name: 'kanban',
-        tools: ['getCardDetails', 'getColumnData', 'getSelectedCards', 'updateCard'],
-        exposedTo: ['https://www.syncfusion.com/']
-      }
-    };
-  },
-  methods: {
-    beforeWebMcpToolExecute(args) {
-      if (args.toolName === 'kanban_addCard') {
-        const hour = new Date().getHours();
+const dataSource = [
+  { Id: 1, Status: 'Open', Summary: 'Project Planning', Assignee: 'Andrew Fuller' },
+  { Id: 2, Status: 'In Progress', Summary: 'Requirement Analysis', Assignee: 'Janet Leverling' },
+  { Id: 3, Status: 'Review', Summary: 'Design phase', Assignee: 'Steven White' },
+  { Id: 4, Status: 'Done', Summary: 'UI Review', Assignee: 'Nancy Davolio' }
+];
 
-        if (hour < 9 || hour > 17) {
-          args.cancel = true;
-          console.log('Card updates are allowed only between 9:00 AM and 5:00 PM.');
-        }
-      }
+const cardSettings = {
+  contentField: 'Summary',
+  headerField: 'Id'
+};
+
+const columns = [
+  { headerText: 'Open', keyField: 'Open' },
+  { headerText: 'In Progress', keyField: 'In Progress' },
+  { headerText: 'Review', keyField: 'Review' },
+  { headerText: 'Done', keyField: 'Done' }
+];
+
+const webMcpSettings = {
+  name: 'kanban',
+  tools: ['getCardDetails', 'getColumnData', 'getSelectedCards', 'updateCard'],
+  exposedTo: ['https://www.syncfusion.com/']
+};
+
+const beforeWebMcpToolExecute = (args) => {
+  if (args.toolName === 'kanban_updateCard') {
+    const hour = new Date().getHours();
+
+    if (hour < 9 || hour > 17) {
+      args.cancel = true;
+      console.log('Card updates are allowed only between 9:00 AM and 5:00 PM.');
     }
   }
-});
+};
+
+provide('kanban', [WebMcpAdapter]);
 </script>
 ```
 

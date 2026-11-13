@@ -57,14 +57,17 @@ Create an Angular application and integrate the Syncfusion® Angular Kanban comp
 
 ### Step 2: Enable WebMCP support
 
-Import the `WebMcpAdapter` module and inject it into the component to make WebMCP functionality available.
+Import the `WebMcpKanbanService` module and inject it into the component to make WebMCP functionality available.
 
 ```ts
 import { Component } from '@angular/core';
-import { KanbanModule, WebMcpAdapter } from '@syncfusion/ej2-angular-kanban';
+import { KanbanModule, WebMcpKanbanService } from '@syncfusion/ej2-angular-kanban';
 
 @Component({
+  imports: [KanbanModule],
+  standalone: true,
   selector: 'app-root',
+  providers: [ WebMcpKanbanService],
   template: `
     <ejs-kanban
       id="kanban"
@@ -82,9 +85,8 @@ import { KanbanModule, WebMcpAdapter } from '@syncfusion/ej2-angular-kanban';
       </e-columns>
     </ejs-kanban>
   `,
-  providers: [KanbanModule, WebMcpAdapter]
 })
-export class AppComponent {
+export class App {
   public dataSource = [
     { Id: 1, Status: 'Open', Summary: 'Project Planning', Assignee: 'Andrew Fuller' },
     { Id: 2, Status: 'In Progress', Summary: 'Requirement Analysis', Assignee: 'Janet Leverling' },
@@ -115,10 +117,13 @@ An AI assistant can discover these tools and invoke them based on user prompts.
 
 ```ts
 import { Component } from '@angular/core';
-import { KanbanModule, WebMcpAdapter } from '@syncfusion/ej2-angular-kanban';
+import { KanbanModule, WebMcpKanbanService } from '@syncfusion/ej2-angular-kanban';
 
 @Component({
+  imports: [KanbanModule],
+  standalone: true,
   selector: 'app-root',
+  providers: [ WebMcpKanbanService],
   template: `
     <ejs-kanban
       id="kanban"
@@ -137,9 +142,8 @@ import { KanbanModule, WebMcpAdapter } from '@syncfusion/ej2-angular-kanban';
       </e-columns>
     </ejs-kanban>
   `,
-  providers: [KanbanModule, WebMcpAdapter]
 })
-export class AppComponent {
+export class App {
   public dataSource = [
     { Id: 1, Status: 'Open', Summary: 'Project Planning', Assignee: 'Andrew Fuller' },
     { Id: 2, Status: 'In Progress', Summary: 'Requirement Analysis', Assignee: 'Janet Leverling' },
@@ -170,10 +174,13 @@ Use the [webMcpSettings](https://ej2.syncfusion.com/angular/documentation/api/ka
 
 ```ts
 import { Component } from '@angular/core';
-import { KanbanModule, WebMcpAdapter } from '@syncfusion/ej2-angular-kanban';
+import { KanbanModule, WebMcpKanbanService } from '@syncfusion/ej2-angular-kanban';
 
 @Component({
+  imports: [KanbanModule],
+  standalone: true,
   selector: 'app-root',
+  providers: [ WebMcpKanbanService],
   template: `
     <ejs-kanban
       id="kanban"
@@ -182,6 +189,7 @@ import { KanbanModule, WebMcpAdapter } from '@syncfusion/ej2-angular-kanban';
       [cardSettings]="cardSettings"
       [enableWebMcp]="true"
       [webMcpSettings]="webMcpSettings"
+      (beforeWebMcpToolExecute) = "beforeWebMcpToolExecute($event)"
       height="450px"
     >
       <e-columns>
@@ -192,70 +200,8 @@ import { KanbanModule, WebMcpAdapter } from '@syncfusion/ej2-angular-kanban';
       </e-columns>
     </ejs-kanban>
   `,
-  providers: [KanbanModule, WebMcpAdapter]
 })
-export class AppComponent {
-  public dataSource = [
-    { Id: 1, Status: 'Open', Summary: 'Project Planning', Assignee: 'Andrew Fuller' },
-    { Id: 2, Status: 'In Progress', Summary: 'Requirement Analysis', Assignee: 'Janet Leverling' },
-    { Id: 3, Status: 'Review', Summary: 'Design phase', Assignee: 'Steven White' },
-    { Id: 4, Status: 'Done', Summary: 'UI Review', Assignee: 'Nancy Davolio' }
-  ];
-
-  public cardSettings = {
-    contentField: 'Summary',
-    headerField: 'Id'
-  };
-
-  public webMcpSettings = {
-    name: 'kanban',
-    tools: ['getCardDetails', 'getColumnData', 'getSelectedCards', 'updateCard'],
-    exposedTo: ['https://www.syncfusion.com/']
-  };
-}
-```
-
-> Use the `exposedTo` property to restrict WebMCP access to trusted domains. This helps prevent unauthorized WebMCP clients from interacting with your component tools.
-
-### Step 5: Monitor and control tool execution
-
-The [beforeWebMcpToolExecute](https://ej2.syncfusion.com/angular/documentation/api/kanban#beforewebmcptoolexecute) event is triggered before a tool is executed. This event allows you to:
-
-- Audit tool usage.
-- Validate incoming requests.
-- Cancel tool execution when necessary.
-- Apply custom business rules and security policies.
-
-> AI-generated requests should always be validated before executing write operations. Restrict access using `exposedTo` and perform additional authorization checks within `beforeWebMcpToolExecute` when modifying application data.
-
-```ts
-import { Component } from '@angular/core';
-import { KanbanModule, WebMcpAdapter } from '@syncfusion/ej2-angular-kanban';
-
-@Component({
-  selector: 'app-root',
-  template: `
-    <ejs-kanban
-      id="kanban"
-      keyField="Status"
-      [dataSource]="dataSource"
-      [cardSettings]="cardSettings"
-      [enableWebMcp]="true"
-      [webMcpSettings]="webMcpSettings"
-      [beforeWebMcpToolExecute]="beforeWebMcpToolExecute"
-      height="450px"
-    >
-      <e-columns>
-        <e-column headerText="Open" keyField="Open"></e-column>
-        <e-column headerText="In Progress" keyField="In Progress"></e-column>
-        <e-column headerText="Review" keyField="Review"></e-column>
-        <e-column headerText="Done" keyField="Done"></e-column>
-      </e-columns>
-    </ejs-kanban>
-  `,
-  providers: [KanbanModule, WebMcpAdapter]
-})
-export class AppComponent {
+export class App {
   public dataSource = [
     { Id: 1, Status: 'Open', Summary: 'Project Planning', Assignee: 'Andrew Fuller' },
     { Id: 2, Status: 'In Progress', Summary: 'Requirement Analysis', Assignee: 'Janet Leverling' },
@@ -275,7 +221,81 @@ export class AppComponent {
   };
 
   public beforeWebMcpToolExecute = (args: any) => {
-    if (args.toolName === 'kanban_addCard') {
+    if (args.toolName === 'kanban_updateCard') {
+      const hour = new Date().getHours();
+
+      if (hour < 9 || hour > 17) {
+        args.cancel = true;
+        console.log('Card updates are allowed only between 9:00 AM and 5:00 PM.');
+      }
+    }
+  };
+}
+```
+
+> Use the `exposedTo` property to restrict WebMCP access to trusted domains. This helps prevent unauthorized WebMCP clients from interacting with your component tools.
+
+### Step 5: Monitor and control tool execution
+
+The [beforeWebMcpToolExecute](https://ej2.syncfusion.com/angular/documentation/api/kanban#beforewebmcptoolexecute) event is triggered before a tool is executed. This event allows you to:
+
+- Audit tool usage.
+- Validate incoming requests.
+- Cancel tool execution when necessary.
+- Apply custom business rules and security policies.
+
+> AI-generated requests should always be validated before executing write operations. Restrict access using `exposedTo` and perform additional authorization checks within `beforeWebMcpToolExecute` when modifying application data.
+
+```ts
+import { Component } from '@angular/core';
+import { KanbanModule, WebMcpKanbanService } from '@syncfusion/ej2-angular-kanban';
+
+@Component({
+  imports: [KanbanModule],
+  standalone: true,
+  selector: 'app-root',
+  providers: [ WebMcpKanbanService],
+  template: `
+    <ejs-kanban
+      id="kanban"
+      keyField="Status"
+      [dataSource]="dataSource"
+      [cardSettings]="cardSettings"
+      [enableWebMcp]="true"
+      [webMcpSettings]="webMcpSettings"
+      (beforeWebMcpToolExecute) = "beforeWebMcpToolExecute($event)"
+      height="450px"
+    >
+      <e-columns>
+        <e-column headerText="Open" keyField="Open"></e-column>
+        <e-column headerText="In Progress" keyField="In Progress"></e-column>
+        <e-column headerText="Review" keyField="Review"></e-column>
+        <e-column headerText="Done" keyField="Done"></e-column>
+      </e-columns>
+    </ejs-kanban>
+  `,
+})
+export class App {
+  public dataSource = [
+    { Id: 1, Status: 'Open', Summary: 'Project Planning', Assignee: 'Andrew Fuller' },
+    { Id: 2, Status: 'In Progress', Summary: 'Requirement Analysis', Assignee: 'Janet Leverling' },
+    { Id: 3, Status: 'Review', Summary: 'Design phase', Assignee: 'Steven White' },
+    { Id: 4, Status: 'Done', Summary: 'UI Review', Assignee: 'Nancy Davolio' }
+  ];
+
+  public cardSettings = {
+    contentField: 'Summary',
+    headerField: 'Id'
+  };
+
+  public webMcpSettings = {
+    name: 'kanban',
+    tools: ['getCardDetails', 'getColumnData', 'getSelectedCards', 'updateCard'],
+    exposedTo: ['https://www.syncfusion.com/']
+  };
+
+  public beforeWebMcpToolExecute = (args: any) => {
+    if (args.toolName === 'kanban_updateCard') {
       const hour = new Date().getHours();
 
       if (hour < 9 || hour > 17) {
@@ -297,7 +317,7 @@ export class AppComponent {
 
 ## Explore the demo
 
-Explore the Syncfusion® React Kanban component with WebMCP integration through this [demo](https://demos.syncfusion.com/gantt-sdk/gantt-chart/webmcp/index.html).
+Explore the Syncfusion® Angular Kanban component with WebMCP integration through this [demo](https://demos.syncfusion.com/gantt-sdk/gantt-chart/webmcp/index.html).
 
 ## See also
 

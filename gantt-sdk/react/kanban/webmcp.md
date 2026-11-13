@@ -185,7 +185,7 @@ const webMcpSettings = {
 
 export default function App() {
   const beforeWebMcpToolExecute = (args) => {
-    if (args.toolName === 'kanban_addCard') {
+    if (args.toolName === 'kanban_updateCard') {
       const hour = new Date().getHours();
 
       if (hour < 9 || hour > 17) {
@@ -254,7 +254,7 @@ const webMcpSettings = {
 
 export default function App() {
   const beforeWebMcpToolExecute = (args) => {
-    if (args.toolName === 'kanban_addCard') {
+    if (args.toolName === 'kanban_updateCard') {
       const hour = new Date().getHours();
 
       if (hour < 9 || hour > 17) {

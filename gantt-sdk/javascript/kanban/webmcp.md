@@ -59,34 +59,34 @@ Create a JavaScript application and integrate the Syncfusion® JavaScript Kanban
 Import the `WebMcpAdapter` module and inject it into the component to make WebMCP functionality available.
 
 ```js
-import { Kanban, WebMcpAdapter } from '@syncfusion/ej2-kanban';
+ej.kanban.Kanban.Inject(ej.kanban.WebMcpAdapter);
 
-const dataSource = [
-  { Id: 1, Status: 'Open', Summary: 'Project Planning', Assignee: 'Andrew Fuller' },
-  { Id: 2, Status: 'In Progress', Summary: 'Requirement Analysis', Assignee: 'Janet Leverling' },
-  { Id: 3, Status: 'Review', Summary: 'Design phase', Assignee: 'Steven White' },
-  { Id: 4, Status: 'Done', Summary: 'UI Review', Assignee: 'Nancy Davolio' }
+var dataSource = [
+    { Id: 1, Status: 'Open', Summary: 'Project Planning', Assignee: 'Andrew Fuller' },
+    { Id: 2, Status: 'In Progress', Summary: 'Requirement Analysis', Assignee: 'Janet Leverling' },
+    { Id: 3, Status: 'Review', Summary: 'Design phase', Assignee: 'Steven White' },
+    { Id: 4, Status: 'Done', Summary: 'UI Review', Assignee: 'Nancy Davolio' }
 ];
 
-const cardSettings = {
-  contentField: 'Summary',
-  headerField: 'Id'
-};
+var kanbanObj = new ej.kanban.Kanban({
+    keyField: 'Status',
+    dataSource: dataSource,
+    cardSettings: {
+        contentField: 'Summary',
+        headerField: 'Id'
+    },
+    enableWebMcp: true,
 
-const kanban = new Kanban({
-  keyField: 'Status',
-  dataSource: dataSource,
-  cardSettings: cardSettings,
-  enableWebMcp: true,
-  columns: [
-    { headerText: 'Open', keyField: 'Open' },
-    { headerText: 'In Progress', keyField: 'In Progress' },
-    { headerText: 'Review', keyField: 'Review' },
-    { headerText: 'Done', keyField: 'Done' }
-  ]
+    columns: [
+        { headerText: 'Open', keyField: 'Open' },
+        { headerText: 'In Progress', keyField: 'In Progress' },
+        { headerText: 'Review', keyField: 'Review' },
+        { headerText: 'Done', keyField: 'Done' }
+    ],
+    height: '450px'
 });
 
-kanban.appendTo('#kanban');
+kanbanObj.appendTo('#Kanban');
 ```
 
 ### Step 3: Register component tools
@@ -104,39 +104,37 @@ For example, a component may expose tools such as:
 An AI assistant can discover these tools and invoke them based on user prompts.
 
 ```js
-import { Kanban, WebMcpAdapter } from '@syncfusion/ej2-kanban';
+ej.kanban.Kanban.Inject(ej.kanban.WebMcpAdapter);
 
-const dataSource = [
-  { Id: 1, Status: 'Open', Summary: 'Project Planning', Assignee: 'Andrew Fuller' },
-  { Id: 2, Status: 'In Progress', Summary: 'Requirement Analysis', Assignee: 'Janet Leverling' },
-  { Id: 3, Status: 'Review', Summary: 'Design phase', Assignee: 'Steven White' },
-  { Id: 4, Status: 'Done', Summary: 'UI Review', Assignee: 'Nancy Davolio' }
+var dataSource = [
+    { Id: 1, Status: 'Open', Summary: 'Project Planning', Assignee: 'Andrew Fuller' },
+    { Id: 2, Status: 'In Progress', Summary: 'Requirement Analysis', Assignee: 'Janet Leverling' },
+    { Id: 3, Status: 'Review', Summary: 'Design phase', Assignee: 'Steven White' },
+    { Id: 4, Status: 'Done', Summary: 'UI Review', Assignee: 'Nancy Davolio' }
 ];
 
-const cardSettings = {
-  contentField: 'Summary',
-  headerField: 'Id'
-};
+var kanbanObj = new ej.kanban.Kanban({
+    keyField: 'Status',
+    dataSource: dataSource,
+    cardSettings: {
+        contentField: 'Summary',
+        headerField: 'Id'
+    },
+    enableWebMcp: true,
+    webMcpSettings: {
+        tools: [],
+    },
 
-const webMcpSettings = {
-  tools: []
-};
-
-const kanban = new Kanban({
-  keyField: 'Status',
-  dataSource: dataSource,
-  cardSettings: cardSettings,
-  enableWebMcp: true,
-  webMcpSettings: webMcpSettings,
-  columns: [
-    { headerText: 'Open', keyField: 'Open' },
-    { headerText: 'In Progress', keyField: 'In Progress' },
-    { headerText: 'Review', keyField: 'Review' },
-    { headerText: 'Done', keyField: 'Done' }
-  ]
+    columns: [
+        { headerText: 'Open', keyField: 'Open' },
+        { headerText: 'In Progress', keyField: 'In Progress' },
+        { headerText: 'Review', keyField: 'Review' },
+        { headerText: 'Done', keyField: 'Done' }
+    ],
+    height: '450px'
 });
 
-kanban.appendTo('#kanban');
+kanbanObj.appendTo('#Kanban');
 ```
 
 ### Step 4: Customize tool registration
@@ -150,41 +148,48 @@ Use the [webMcpSettings](https://ej2.syncfusion.com/javascript/documentation/api
 | `exposedTo` | List of trusted domains that are allowed to interact with the component through WebMCP. |
 
 ```js
-import { Kanban, WebMcpAdapter } from '@syncfusion/ej2-kanban';
+ej.kanban.Kanban.Inject(ej.kanban.WebMcpAdapter);
 
-const dataSource = [
-  { Id: 1, Status: 'Open', Summary: 'Project Planning', Assignee: 'Andrew Fuller' },
-  { Id: 2, Status: 'In Progress', Summary: 'Requirement Analysis', Assignee: 'Janet Leverling' },
-  { Id: 3, Status: 'Review', Summary: 'Design phase', Assignee: 'Steven White' },
-  { Id: 4, Status: 'Done', Summary: 'UI Review', Assignee: 'Nancy Davolio' }
+var dataSource = [
+    { Id: 1, Status: 'Open', Summary: 'Project Planning', Assignee: 'Andrew Fuller' },
+    { Id: 2, Status: 'In Progress', Summary: 'Requirement Analysis', Assignee: 'Janet Leverling' },
+    { Id: 3, Status: 'Review', Summary: 'Design phase', Assignee: 'Steven White' },
+    { Id: 4, Status: 'Done', Summary: 'UI Review', Assignee: 'Nancy Davolio' }
 ];
 
-const cardSettings = {
-  contentField: 'Summary',
-  headerField: 'Id'
-};
+var kanbanObj = new ej.kanban.Kanban({
+    keyField: 'Status',
+    dataSource: dataSource,
+    cardSettings: {
+        contentField: 'Summary',
+        headerField: 'Id'
+    },
+    enableWebMcp: true,
+    webMcpSettings: {
+        name: 'kanban',
+        tools: ['getCardDetails', 'getColumnData', 'getSelectedCards', 'updateCard'],
+        exposedTo: ['https://www.syncfusion.com/']
+    },
+    beforeWebMcpToolExecute: function (args) {
+        if (args.toolName === 'kanban_updateCard') {
+            var hour = new Date().getHours();
 
-const webMcpSettings = {
-  name: 'kanban',
-  tools: ['getCardDetails', 'getColumnData', 'getSelectedCards', 'updateCard'],
-  exposedTo: ['https://www.syncfusion.com/']
-};
-
-const kanban = new Kanban({
-  keyField: 'Status',
-  dataSource: dataSource,
-  cardSettings: cardSettings,
-  enableWebMcp: true,
-  webMcpSettings: webMcpSettings,
-  columns: [
-    { headerText: 'Open', keyField: 'Open' },
-    { headerText: 'In Progress', keyField: 'In Progress' },
-    { headerText: 'Review', keyField: 'Review' },
-    { headerText: 'Done', keyField: 'Done' }
-  ]
+            if (hour < 9 || hour > 17) {
+                args.cancel = true;
+                console.log('Card updates are allowed only between 9:00 AM and 5:00 PM.');
+            }
+        }
+    },
+    columns: [
+        { headerText: 'Open', keyField: 'Open' },
+        { headerText: 'In Progress', keyField: 'In Progress' },
+        { headerText: 'Review', keyField: 'Review' },
+        { headerText: 'Done', keyField: 'Done' }
+    ],
+    height: '450px'
 });
 
-kanban.appendTo('#kanban');
+kanbanObj.appendTo('#Kanban');
 ```
 
 > Use the `exposedTo` property to restrict WebMCP access to trusted domains. This helps prevent unauthorized WebMCP clients from interacting with your component tools.
@@ -201,59 +206,48 @@ The [beforeWebMcpToolExecute](https://ej2.syncfusion.com/javascript/documentatio
 > AI-generated requests should always be validated before executing write operations. Restrict access using `exposedTo` and perform additional authorization checks within `beforeWebMcpToolExecute` when modifying application data.
 
 ```js
-import { Kanban, WebMcpAdapter } from '@syncfusion/ej2-kanban';
-import './App.css'
-const dataSource = [
-  { Id: 1, Status: 'Open', Summary: 'Project Planning', Assignee: 'Andrew Fuller' },
-  { Id: 2, Status: 'In Progress', Summary: 'Requirement Analysis', Assignee: 'Janet Leverling' },
-  { Id: 3, Status: 'Review', Summary: 'Design phase', Assignee: 'Steven White' },
-  { Id: 4, Status: 'Done', Summary: 'UI Review', Assignee: 'Nancy Davolio' }
+ej.kanban.Kanban.Inject(ej.kanban.WebMcpAdapter);
+
+var dataSource = [
+    { Id: 1, Status: 'Open', Summary: 'Project Planning', Assignee: 'Andrew Fuller' },
+    { Id: 2, Status: 'In Progress', Summary: 'Requirement Analysis', Assignee: 'Janet Leverling' },
+    { Id: 3, Status: 'Review', Summary: 'Design phase', Assignee: 'Steven White' },
+    { Id: 4, Status: 'Done', Summary: 'UI Review', Assignee: 'Nancy Davolio' }
 ];
 
-const cardSettings = {
-  contentField: 'Summary',
-  headerField: 'Id'
-};
+var kanbanObj = new ej.kanban.Kanban({
+    keyField: 'Status',
+    dataSource: dataSource,
+    cardSettings: {
+        contentField: 'Summary',
+        headerField: 'Id'
+    },
+    enableWebMcp: true,
+    webMcpSettings: {
+        name: 'kanban',
+        tools: ['getCardDetails', 'getColumnData', 'getSelectedCards', 'updateCard'],
+        exposedTo: ['https://www.syncfusion.com/']
+    },
+    beforeWebMcpToolExecute: function (args) {
+        if (args.toolName === 'kanban_updateCard') {
+            var hour = new Date().getHours();
 
-const webMcpSettings = {
-  name: 'kanban',
-  tools: ['getCardDetails', 'getColumnData', 'getSelectedCards', 'updateCard'],
-  exposedTo: ['https://www.syncfusion.com/']
-};
+            if (hour < 9 || hour > 17) {
+                args.cancel = true;
+                console.log('Card updates are allowed only between 9:00 AM and 5:00 PM.');
+            }
+        }
+    },
+    columns: [
+        { headerText: 'Open', keyField: 'Open' },
+        { headerText: 'In Progress', keyField: 'In Progress' },
+        { headerText: 'Review', keyField: 'Review' },
+        { headerText: 'Done', keyField: 'Done' }
+    ],
+    height: '450px'
+});
 
-export default function App() {
-  const beforeWebMcpToolExecute = (args) => {
-    if (args.toolName === 'kanban_addCard') {
-      const hour = new Date().getHours();
-
-      if (hour < 9 || hour > 17) {
-        args.cancel = true;
-        console.log('Card updates are allowed only between 9:00 AM and 5:00 PM.');
-      }
-    }
-  };
-
-  return (
-    <Kanban
-      id='kanban'
-      keyField='Status'
-      dataSource={dataSource}
-      cardSettings={cardSettings}
-      enableWebMcp={true}
-      webMcpSettings={webMcpSettings}
-      beforeWebMcpToolExecute={beforeWebMcpToolExecute}
-      height="450px"
-    >
-      <ColumnsDirective>
-        <ColumnDirective headerText='Open' keyField='Open' />
-        <ColumnDirective headerText='In Progress' keyField='In Progress' />
-        <ColumnDirective headerText='Review' keyField='Review' />
-        <ColumnDirective headerText='Done' keyField='Done' />
-      </ColumnsDirective>
-      <Inject services={[WebMcpAdapter]} />
-    </Kanban>
-  );
-}
+kanbanObj.appendTo('#Kanban');
 ```
 
 ## Best practices
