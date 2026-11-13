@@ -423,7 +423,7 @@ We can get the following details from the [CardDeselected](https://help.syncfusi
 
 {% tabs %}
 
-{% highlight XAML hl_lines="5" %}
+{% highlight XAML hl_lines="4" %}
 
 <kanban:SfKanban x:Name="kanban" 
                  ItemsSource="{Binding TaskDetails}" 
@@ -433,7 +433,7 @@ We can get the following details from the [CardDeselected](https://help.syncfusi
 
 {% endhighlight %}
 
-{% highlight C# hl_lines="11" %}
+{% highlight C# hl_lines="3" %}
 
 this.kanban.ItemsSource = new ViewModel().TaskDetails;
 this.kanban.CardSelectionType = KanbanCardSelectionType.Multiple;
