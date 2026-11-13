@@ -204,7 +204,7 @@ gantt.appendTo('#Gantt');
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -418,7 +418,7 @@ gantt.appendTo('#Gantt');
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -523,7 +523,7 @@ gantt.appendTo('#Gantt');
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -649,7 +649,7 @@ console.log(`[${args.name}] Exporting to ${args.isCsv ? 'CSV' : 'Excel'} at ${ne
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -774,7 +774,7 @@ console.log(`[${args.name}] PDF export triggered at ${new Date().toISOString()}`
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -901,7 +901,7 @@ args.content = `<div><b>${task.TaskName}</b><br>Progress: ${task.Progress}%<br>D
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -1027,7 +1027,7 @@ console.log(`Cell deselected at row ${index.rowIndex}, column ${colIndex} at ${n
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -1155,7 +1155,7 @@ console.log(`Cell deselecting at row ${index.rowIndex}, column ${colIndex} at ${
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -1292,7 +1292,7 @@ return;
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -1419,7 +1419,7 @@ console.log(`Cell selected at row ${rowIndex}, column ${colIndex} at ${new Date(
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -1550,7 +1550,7 @@ args.cancel = true;
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -1671,7 +1671,7 @@ console.log('Target element:', args.target);
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -1792,7 +1792,7 @@ console.log('Target element:', args.target);
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -1913,7 +1913,7 @@ console.log('Dropped on target element:', args.target);
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -2036,7 +2036,7 @@ console.log(`Column Field "${args.column.field}"`)
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -2166,7 +2166,7 @@ args.cancel = true;
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -2271,7 +2271,7 @@ console.log('Task:', args.rowData.TaskName);
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -2380,7 +2380,7 @@ args.disableItems = ["Delete Task"];
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -2473,7 +2473,7 @@ console.log("RowIndex 6 is selected on Gantt creation.");
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -2560,7 +2560,7 @@ gantt.appendTo('#Gantt');
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -2668,7 +2668,7 @@ console.log("Gantt component destroyed.", args);
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -2802,7 +2802,7 @@ alert(`Task "${task.TaskName}" has an invalid duration (${task.Duration} days). 
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -2933,7 +2933,7 @@ args.gridInstance.columns[2].visible = false;
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -3069,7 +3069,7 @@ fontSize: 15
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -3207,7 +3207,7 @@ fontSize: 15
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -3325,7 +3325,7 @@ console.log('Expanded task:', args.data.TaskName);
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -3448,7 +3448,7 @@ console.log('Expansion cancelled for:', args.data.taskData.TaskName);
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -3570,7 +3570,7 @@ args.node.style.backgroundColor = 'lightblue';
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -3699,7 +3699,7 @@ count: 12
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -3830,7 +3830,7 @@ console.log(`Mouse position: X=${clientX}, Y=${clientY}`);
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -3963,7 +3963,7 @@ alert(`Task "${task['TaskName']}" clicked at row ${args.rowIndex}`);
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -4104,7 +4104,7 @@ args.value = "New HeaderText changed";
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -4238,7 +4238,7 @@ console.log('PDF export completed', args);
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -4380,7 +4380,7 @@ console.log('PDF Cell Info:', args);
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -4518,7 +4518,7 @@ gantt.pdfExport();
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -4652,7 +4652,7 @@ console.log('Timeline Info:', args.timelineCell);
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -4798,7 +4798,7 @@ console.log('Query Cell Info:', args);
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -4950,7 +4950,7 @@ args.taskbarBorderColor = "rgba(79, 181, 63, 1)";
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -5096,7 +5096,7 @@ console.log('Row Index:', args.rowIndex);
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -5233,7 +5233,7 @@ if (args.column.field === "TaskID") {
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -5362,7 +5362,7 @@ console.log('Resized Column Info:', args.column);
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -5491,7 +5491,7 @@ console.log('Resized Column Info:', args.column);
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -5623,7 +5623,7 @@ console.log('Row Data Bound Event:', args);
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -5755,7 +5755,7 @@ console.log('RowDeselected event triggered. Details of the deselected row:', arg
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -5888,7 +5888,7 @@ console.log('rowDeselecting event triggered. Details of the Deselecting row:', a
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -6026,7 +6026,7 @@ console.log('Row Element:', args.rows);
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -6162,7 +6162,7 @@ args.rows[0].style.backgroundColor = "#ffeeba";
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -6298,7 +6298,7 @@ console.log('Drag cancelled for TaskID 3');
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -6439,7 +6439,7 @@ console.log('Row dropped:', draggedData);
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -6584,7 +6584,7 @@ args.row.style.backgroundColor = '#1addffff';
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -6729,7 +6729,7 @@ console.log("Row selection cancelled for TaskID 3");
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -6861,7 +6861,7 @@ console.log('Resize cancelled due to small screen width');
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -6998,7 +6998,7 @@ console.log('Splitter resized:', leftPaneSize, rightPaneSize);
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -7130,7 +7130,7 @@ separator.style.backgroundColor = '#4CAF50';
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -7279,7 +7279,7 @@ alert(`Task "${editedTask.TaskName}" was updated via ${actionType}.`);
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -7424,7 +7424,7 @@ console.log(`Editing cancelled. Duration must be between 2 and 5 days.`);
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
@@ -7540,7 +7540,7 @@ console.log('Toolbar item clicked:', args.item.text);
     <meta name="description" content="Typescript Gantt Controls">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/32.1.19/tailwind3.css" rel="stylesheet" type="text/css">
+    <link href="https://unpkg.com/@syncfusion/ej2-tailwind3-theme@35.1.43/styles/gantt/index.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.syncfusion.com/ej2/32.1.19/dist/ej2.min.js" type="text/javascript"></script>
 </head>
 <body>
