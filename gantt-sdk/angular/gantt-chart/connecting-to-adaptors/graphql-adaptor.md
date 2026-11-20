@@ -835,7 +835,7 @@ Open a terminal or Command Prompt. Run the server application first, then start 
 
 ## Complete sample repository (reference)
 
-For the complete working implementation of this example, refer to the [GitHub](https://github.com/SyncfusionExamples/ej2-angular-gantt-chart-samples/tree/master/GraphQlAdaptor) repository.
+For the complete working implementation of this example, refer to the [GitHub](https://github.com/SyncfusionExamples/ej2-angular-gantt-chart-samples/tree/master/GraphQIAdaptor) repository.
 
 
 ## See also
