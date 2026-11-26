@@ -54,7 +54,7 @@ Holidays are non-working dates that exclude time from task calculations. The fol
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/project-calendar-holiday" %}
 
-Recurring project-calendar holidays can act as date-rule fallbacks for tasks assigned a task calendar, but only when the selected calendar and its valid parent chain do not claim the date. Fixed project holidays and project exceptions are not task-calendar fallbacks.
+Recurring project-calendar holidays can act as date-rule fallback for tasks assigned a task calendar, but only when the selected calendar and its valid parent chain do not claim the date. Fixed project holidays and project exceptions are not task-calendar fallback.
 
 ## Task calendars
 
@@ -64,7 +64,7 @@ Task calendars enable specific tasks to use custom working days and holidays ins
 
 To assign a custom calendar to a task, first define it in [calendarSettings.taskCalendars](https://ej2.syncfusion.com/vue/documentation/api/gantt/calendarSettingsModel#taskcalendars), then reference it using the [calendarId](https://ej2.syncfusion.com/vue/documentation/api/gantt/taskFieldsModel#calendarid) property in the task data. Calendar exceptions allow defining specific dates with custom working days, enabling team-specific scheduling adjustments such as split shifts or holidays that differ from the main schedule.
 
-When a task is assigned a calendar through the `calendarId` property mapped to the `CalendarId` task data field, the Gantt selects the matching task calendar and resolves its parent chain. Calendar rules are checked from the selected calendar through its nearest ancestors. A recurring project-calendar holiday is a fallback only for a date not claimed by that chain; fixed project holidays and project exceptions are not task-calendar fallbacks.
+When a task is assigned a calendar through the `calendarId` property mapped to the `CalendarId` task data field, the Gantt selects the matching task calendar and resolves its parent chain. Calendar rules are checked from the selected calendar through its nearest ancestors. A recurring project-calendar holiday is a fallback only for a date not claimed by that chain; fixed project holidays and project exceptions are not task-calendar fallback.
 
 The following example defines two task calendars with different working days, task-specific exceptions, and assigns them to specific tasks:
 
@@ -81,7 +81,7 @@ The following example defines two task calendars with different working days, ta
 
 ### Define task calendar holidays
 
-Task calendars can define holidays that affect the assigned task's schedule. A recurring project-calendar holiday can apply only when no rule in the selected calendar or its parent chain claims the date; fixed project holidays and project exceptions do not apply as task-calendar fallbacks. The following example configures a task calendar with specific holidays:
+Task calendars can define holidays that affect the assigned task's schedule. A recurring project-calendar holiday can apply only when no rule in the selected calendar or its parent chain claims the date; fixed project holidays and project exceptions do not apply as task-calendar fallback. The following example configures a task calendar with specific holidays:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -111,7 +111,7 @@ Set the mapped task field to `"regional"` to assign the task to that calendar. T
 | `workWeek` | Accepts weekday names Sunday through Saturday; defaults to `null`. An undefined value can inherit from a parent. An explicit `[]` does not: it falls back to the Gantt `workWeek`, then Monday-Friday. |
 | [`workingTime`](https://ej2.syncfusion.com/vue/documentation/api/gantt/dayWorkingTimeModel) | Accepts time ranges with numeric `from` and `to` hours; defaults to `[]`. The nearest non-empty task-calendar value applies, then the project schedule. |
 | [`weekWorkingTime`](https://ej2.syncfusion.com/vue/documentation/api/gantt/dayWorkingTimeModel) | Defaults to `[]`; each entry specifies a `dayOfWeek` (Sunday through Saturday) and `timeRange` of numeric `from`/`to` hours. A non-empty matching range applies first. An empty `timeRange: []` continues to an ancestor rule or normal `workingTime` resolution. |
-| Date rules | Checks each calendar from nearest to farthest. At each calendar, an exception takes precedence over that calendar's holiday. A recurring project holiday applies only if no task-calendar or ancestor rule claims the date; fixed project holidays and project exceptions are not fallbacks. |
+| Date rules | Checks each calendar from nearest to farthest. At each calendar, an exception takes precedence over that calendar's holiday. A recurring project holiday applies only if no task-calendar or ancestor rule claims the date; fixed project holidays and project exceptions are not fallback. |
 
 Across calendar levels, a nearer calendar rule takes precedence regardless of whether it is an exception or holiday; for example, a nearer ancestor holiday can take precedence over a farther ancestor exception. An empty `exceptionWorkingTime: []` does not make a date non-working; the effective calendar schedule, then the project fallback schedule, is used.
 
@@ -207,7 +207,7 @@ Calendar settings directly affect how task duration is calculated and when tasks
 - **Holidays**: Tasks skip over holiday dates, extending the end date accordingly to maintain the required working duration
 - **Weekends**: By default, weekends are treated as non-working days when [includeWeekend](https://ej2.syncfusion.com/vue/documentation/api/gantt#includeweekend) is set to **false**
 - **Task dependencies**: Dependency calculations use the predecessor task's calendar to determine when the successor task can start
-- **Task calendars**: Tasks without an assigned task calendar follow the project calendar. Tasks with an assigned task calendar use the selected and inherited calendar rules, with project working-time fallback where applicable. Recurring project holidays apply only to dates not claimed by those task calendars; fixed project holidays and project exceptions are not fallbacks.
+- **Task calendars**: Tasks without an assigned task calendar follow the project calendar. Tasks with an assigned task calendar use the selected and inherited calendar rules, with project working-time fallback where applicable. Recurring project holidays apply only to dates not claimed by those task calendars; fixed project holidays and project exceptions are not fallback.
 - **Duration calculations**: Changing `hoursPerDay` recalculates day-based duration values without changing the scheduled start and end dates.
 
 ## See also
