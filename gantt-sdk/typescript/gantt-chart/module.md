@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Modules in TypeScript Gantt Chart | Syncfusion
-description: Learn how to enable advanced TypeScript Gantt Chart features through module injection, including sorting, editing, toolbar, filtering, and export support.
-keywords: typescript gantt modules, feature modules, optional modules, providers, dependency injection, syncfusion gantt
+description: Learn how to enable advanced TypeScript Gantt Chart features through module injection, including sorting, editing, toolbar, filtering, export, and progress line support.
+keywords: typescript gantt modules, feature modules, optional modules, providers, dependency injection, progress line, syncfusion gantt
 canonical: https://help.syncfusion.com/gantt-sdk/typescript/gantt-chart/module
 platform: gantt-sdk
 control: Modules - Gantt Chart
@@ -32,6 +32,7 @@ The modules that are available in Gantt are as follows.
 | [ColumnMenu](https://ej2.syncfusion.com/documentation/api/gantt/columnMenu)             | Inject this module to use column menu feature.       |
 | [VirtualScroll](https://ej2.syncfusion.com/documentation/api/gantt#virtualscrollmodule) | Inject this module to use virtual scroll feature.    |
 | [CriticalPath](https://ej2.syncfusion.com/documentation/api/gantt#criticalpathmodule)   | Inject this module to use critical path feature.     |
+| [ProgressLine](https://ej2.syncfusion.com/documentation/api/gantt#progresslinemodule)   | Inject this module to use progress line feature.     |
 | [UndoRedo](https://ej2.syncfusion.com/documentation/api/gantt#undoredomodule)           | Inject this module to use undo / redo feature.       |
 | [Freeze](https://ej2.syncfusion.com/documentation/api/gantt#freezemodule)                | Inject this module to use frozen columns feature.    |
 

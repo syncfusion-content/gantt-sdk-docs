@@ -272,7 +272,8 @@ Tooltips display on hover, with touch-and-hold support for mobile via the toolti
 
 ### Segment Tooltip
 
-Enable tooltips by setting [tooltipSettings.showTooltip](https://ej2.syncfusion.com/documentation/api/gantt/tooltipSettings#showtooltip) to **true**, then set `tooltipSettings.showSegmentTooltip` to **true** to display details for each segment of a split task. Segment-specific tooltips apply only to tasks with multiple segments.
+The segment tooltip can be displayed by enabling [tooltipSettings.showTooltip](https://ej2.syncfusion.com/documentation/api/gantt/tooltipSettings#showtooltip) and setting `tooltipSettings.showSegmentTooltip` to **true**. When enabled, individual tooltips are shown for each segment of a split task, providing segment-specific task information. Segment-specific details are displayed when hovering over a task segment, while task-level details are displayed when hovering over the gap between segments.
+By default showSegmentTooltip value will be false.
 
 The following example configures segment-specific tooltips for a task with multiple segments:
 
@@ -286,8 +287,6 @@ The following example configures segment-specific tooltips for a task with multi
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/segmentTooltip-cs1" %}
-
-Hovering over a task segment displays details for that segment. Hovering over the gap between segments displays details for the entire task.
 
 ### Disable taskbar tooltip
 
