@@ -270,6 +270,25 @@ The following example enables tooltips:
 
 Tooltips display on hover, with touch-and-hold support for mobile via the tooltip popup.
 
+### Segment Tooltip
+
+Enable tooltips by setting [tooltipSettings.showTooltip](https://ej2.syncfusion.com/documentation/api/gantt/tooltipSettings#showtooltip) to **true**, then set `tooltipSettings.showSegmentTooltip` to **true** to display details for each segment of a split task. Segment-specific tooltips apply only to tasks with multiple segments.
+
+The following example configures segment-specific tooltips for a task with multiple segments:
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt-sdk/typescript/gantt-chart/segmentTooltip-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt-sdk/typescript/gantt-chart/segmentTooltip-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/segmentTooltip-cs1" %}
+
+Hovering over a task segment displays details for that segment. Hovering over the gap between segments displays details for the entire task.
+
 ### Disable taskbar tooltip
 
 You can disable the taskbar tooltip using the [beforeTooltipRender](https://ej2.syncfusion.com/documentation/gantt/events#beforetooltiprender) event by setting `args.cancel` to **true**.
