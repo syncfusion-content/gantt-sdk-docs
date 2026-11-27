@@ -34,5 +34,6 @@ The modules that are available in Gantt are as follows.
 | [CriticalPath](https://ej2.syncfusion.com/documentation/api/gantt#criticalpathmodule)   | Inject this module to use critical path feature.     |
 | [UndoRedo](https://ej2.syncfusion.com/documentation/api/gantt#undoredomodule)           | Inject this module to use undo / redo feature.       |
 | [Freeze](https://ej2.syncfusion.com/documentation/api/gantt#freezemodule)                | Inject this module to use frozen columns feature.    |
+| [DomVirtualization](https://ej2.syncfusion.com/documentation/api/gantt#domVirtualizationModule)           | Inject this module to use dom virtualization feature.       |
 
 These modules should be injected into the Gantt using the **Gantt.Inject** method.
