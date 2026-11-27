@@ -139,7 +139,7 @@ The Gantt checks the assigned calendar first, then its parents from nearest to f
 
 An exception with omitted or empty `exceptionWorkingTime` uses the effective schedule rather than making the date non-working. When a working-time setting is still unresolved after checking the task-calendar chain, `projectCalendar.workingTime` supplies the fallback. global `workWeek` supplies the weekday fallback.
 
-A recurring project-calendar holiday is considered only when neither the assigned task calendar nor any calendar it inherits from defines a holiday or exception for that date. Fixed project-calendar holidays and project-calendar exceptions are not used as task-calendar fallbacks.
+A recurring project-calendar holiday is considered only when neither the assigned task calendar nor any calendar it inherits from defines a holiday or exception for that date. Fixed project-calendar holidays and project-calendar exceptions are not used as task-calendar fallback.
 
 Missing parent references, self-references, and parent cycles are ignored.
 
