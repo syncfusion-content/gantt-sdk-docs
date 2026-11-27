@@ -20,7 +20,7 @@ namespace CoreSamples.Pages
                     TaskId = 1,
                     TaskName = "Local Team Work",
                     StartDate = new DateTime(2026, 4, 2),
-                    Duration = 5,
+                    Duration = 11,
                     CalendarId = "local-team"
                 },
                 new GanttDataSource
@@ -28,8 +28,15 @@ namespace CoreSamples.Pages
                     TaskId = 2,
                     TaskName = "Offshore Team Work",
                     StartDate = new DateTime(2026, 4, 2),
-                    Duration = 5,
+                    Duration = 11,
                     CalendarId = "offshore-team"
+                },
+                new GanttDataSource
+                {
+                    TaskId = 3,
+                    TaskName = "Project Calendar Work",
+                    StartDate = new DateTime(2026, 4, 9),
+                    Duration = 6
                 }
             };
         }

@@ -1,17 +1,40 @@
-<ejs-gantt id='Gantt' dataSource="ViewBag.DataSource" height="550px" gridLines="Both" treeColumnIndex="1">
+<ejs-gantt id="Gantt" dataSource="ViewBag.DataSource" height="450px"
+           projectStartDate="04/01/2026" projectEndDate="04/30/2026">
     <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
-                        endDate="EndDate" duration="Duration" progress="Progress" dependency="Predecessor" child="SubTasks">
+                        duration="Duration" calendarId="CalendarId">
     </e-gantt-taskfields>
-    <e-gantt-calendar-settings>
-        <e-calendar-settings-task-calendars>
-            <e-calendar-task-calendar id="1" name="TaskCalendar1">
-                <e-calendar-settings-work-time-scale startTime="8:00 AM" endTime="4:00 PM"></e-calendar-settings-work-time-scale>
-            </e-calendar-task-calendar>
-            <e-calendar-task-calendar id="2" name="TaskCalendar2">
-                <e-calendar-settings-work-time-scale startTime="9:00 AM" endTime="6:00 PM"></e-calendar-settings-work-time-scale>
-            </e-calendar-task-calendar>
-        </e-calendar-settings-task-calendars>
-    </e-gantt-calendar-settings>
+    <e-gantt-labelsettings leftLabel="TaskName"></e-gantt-labelsettings>
+    <e-gantt-calendarsettings>
+        <e-gantt-projectcalendar workingTime="@(new List<object>
+        {
+            new { from = 9, to = 17 }
+        })">
+        </e-gantt-projectcalendar>
+        <e-gantt-taskcalendars>
+            <e-gantt-taskcalendar calendarId="day-shift"
+                                  workingTime="@(new List<object> { new { from = 9, to = 17 } })"
+                                  holidays="@(new List<object>())"
+                                  exceptions="@(new List<object>
+                                  {
+                                      new { from = new DateTime(2026, 4, 9), to = new DateTime(2026, 4, 9), label = "Team Meeting Day" }
+                                  })">
+            </e-gantt-taskcalendar>
+            <e-gantt-taskcalendar calendarId="night-shift"
+                                  workingTime="@(new List<object> { new { from = 17, to = 9 } })"
+                                  holidays="@(new List<object>())"
+                                  exceptions="@(new List<object>
+                                  {
+                                      new
+                                      {
+                                          from = new DateTime(2026, 4, 10),
+                                          to = new DateTime(2026, 4, 10),
+                                          label = "Maintenance Window",
+                                          exceptionWorkingTime = new[] { new { from = 18, to = 8 } }
+                                      }
+                                  })">
+            </e-gantt-taskcalendar>
+        </e-gantt-taskcalendars>
+    </e-gantt-calendarsettings>
     <e-gantt-columns>
         <e-gantt-column field="TaskId"></e-gantt-column>
         <e-gantt-column field="TaskName" headerText="Name" width="250"></e-gantt-column>

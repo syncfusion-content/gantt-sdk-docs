@@ -3,8 +3,8 @@
 @(Html.EJS().Gantt("Gantt")
     .DataSource((IEnumerable<object>)ViewBag.DataSource)
     .Height("450px")
-    .ProjectStartDate("04/01/2019")
-    .ProjectEndDate("04/30/2019")
+    .ProjectStartDate("04/01/2026")
+    .ProjectEndDate("04/30/2026")
     .TaskFields(ts => ts
         .Id("TaskId")
         .Name("TaskName")
@@ -22,9 +22,19 @@
             {
                 new
                 {
-                    from = new DateTime(2019, 4, 10),
-                    to = new DateTime(2019, 4, 10),
+                    from = new DateTime(2026, 4, 10),
+                    to = new DateTime(2026, 4, 10),
                     label = "Regional Holiday"
+                }
+            })
+            .Exceptions(new List<object>
+            {
+                new
+                {
+                    from = new DateTime(2026, 4, 17),
+                    to = new DateTime(2026, 4, 17),
+                    label = "Project extended hours",
+                    exceptionWorkingTime = new[] { new { from = 8, to = 18 } }
                 }
             }))
         .TaskCalendars(new List<object>
@@ -36,8 +46,8 @@
                 {
                     new
                     {
-                        from = new DateTime(2019, 4, 5),
-                        to = new DateTime(2019, 4, 5),
+                        from = new DateTime(2026, 4, 6),
+                        to = new DateTime(2026, 4, 6),
                         label = "Local Holiday"
                     }
                 }
@@ -49,8 +59,8 @@
                 {
                     new
                     {
-                        from = new DateTime(2019, 4, 8),
-                        to = new DateTime(2019, 4, 8),
+                        from = new DateTime(2026, 4, 8),
+                        to = new DateTime(2026, 4, 8),
                         label = "Offshore Holiday"
                     }
                 }

@@ -1,0 +1,32 @@
+@using Syncfusion.EJ2.Gantt
+
+@(Html.EJS().Gantt("Gantt")
+    .DataSource((IEnumerable<object>)ViewBag.DataSource)
+    .Height("450px")
+    .ProjectStartDate("04/06/2026")
+    .ProjectEndDate("04/24/2026")
+    .TaskFields(task => task
+        .Id("TaskId")
+        .Name("TaskName")
+        .StartDate("StartDate")
+        .Duration("Duration")
+        .CalendarId("CalendarId"))
+    .LabelSettings(label => label.LeftLabel("TaskName"))
+    .CalendarSettings(calendar => calendar
+        .ProjectCalendar(project => project
+            .WorkingTime(new List<object> { new { from = 9, to = 17 } }))
+        .TaskCalendars(new List<object>
+        {
+            new
+            {
+                calendarId = "day-shift",
+                workWeek = new[] { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" },
+                workingTime = new[] { new { from = 9, to = 17 } },
+                weekWorkingTime = new[]
+                {
+                    new { dayOfWeek = "Monday", timeRange = new[] { new { from = 9, to = 12 }, new { from = 13, to = 17 } } },
+                    new { dayOfWeek = "Friday", timeRange = new[] { new { from = 9, to = 13 } } }
+                }
+            }
+        }))
+    .Render())

@@ -22,7 +22,6 @@ export default {
 				name: 'TaskName',
 				startDate: 'StartDate',
 				duration: 'Duration',
-				parentID: 'ParentId',
 				calendarId: 'CalendarId'
 			},
 			labelSettings: {
@@ -50,7 +49,8 @@ export default {
 						exceptions: [{
 							from: new Date('04/10/2026'),
 							to: new Date('04/10/2026'),
-							label: 'Maintenance Window'
+							label: 'Maintenance Window',
+							exceptionWorkingTime: [{ from: 18, to: 8 }]
 						}]
 					}
 				]

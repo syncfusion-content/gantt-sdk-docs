@@ -1,0 +1,58 @@
+@page
+@model IndexModel
+@using Syncfusion.EJ2.Gantt
+
+<ejs-gantt id="Gantt"
+           dataSource="@Model.GanttDataSourceCollection"
+           height="450px"
+           projectStartDate="04/01/2026"
+           projectEndDate="06/30/2026">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
+                        duration="Duration" calendarId="CalendarId">
+    </e-gantt-taskfields>
+    <e-gantt-labelsettings leftLabel="TaskName"></e-gantt-labelsettings>
+    <e-gantt-calendarsettings>
+        <e-gantt-projectcalendar workingTime="@(new List<object>
+        {
+            new { from = 8, to = 17 }
+        })"></e-gantt-projectcalendar>
+        <e-gantt-taskcalendars>
+            <e-gantt-taskcalendar calendarId="company"
+                                  workWeek="@(new[] { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" })"
+                                  workingTime="@(new List<object>
+                                  {
+                                      new { from = 9, to = 12 },
+                                      new { from = 13, to = 17 }
+                                  })"
+                                  holidays="@(new List<object>
+                                  {
+                                      new
+                                      {
+                                          from = new DateTime(2026, 4, 10),
+                                          to = new DateTime(2026, 4, 10),
+                                          label = "Company closure"
+                                      }
+                                  })"
+                                  exceptions="@(new List<object>
+                                  {
+                                      new
+                                      {
+                                          from = new DateTime(2026, 4, 17),
+                                          to = new DateTime(2026, 4, 17),
+                                          label = "Company partial working day",
+                                          exceptionWorkingTime = new[] { new { from = 9, to = 12 } }
+                                      }
+                                  })">
+            </e-gantt-taskcalendar>
+            <e-gantt-taskcalendar calendarId="regional"
+                                  parentId="company">
+            </e-gantt-taskcalendar>
+        </e-gantt-taskcalendars>
+    </e-gantt-calendarsettings>
+    <e-gantt-columns>
+        <e-gantt-column field="TaskId" headerText="ID" width="80"></e-gantt-column>
+        <e-gantt-column field="TaskName" headerText="Task Name" width="250"></e-gantt-column>
+        <e-gantt-column field="StartDate"></e-gantt-column>
+        <e-gantt-column field="Duration"></e-gantt-column>
+    </e-gantt-columns>
+</ejs-gantt>

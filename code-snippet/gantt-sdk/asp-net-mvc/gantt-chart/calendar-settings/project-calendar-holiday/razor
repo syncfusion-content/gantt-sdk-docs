@@ -1,15 +1,15 @@
 @Html.EJS().Gantt("Gantt")
     .DataSource((IEnumerable<object>)ViewBag.DataSource)
-    .Height("550px")
+    .Height("450px")
+    .ProjectStartDate("04/01/2026")
+    .ProjectEndDate("04/30/2026")
     .TaskFields(ts => ts
         .Id("TaskId")
         .Name("TaskName")
         .StartDate("StartDate")
-        .EndDate("EndDate")
         .Duration("Duration")
-        .Progress("Progress")
-        .Dependency("Predecessor")
         .ParentId("ParentId"))
+    .LabelSettings(label => label.LeftLabel("TaskName"))
     .Columns(col =>
     {
         col.Field("TaskId").Add();
@@ -21,7 +21,7 @@
         .ProjectCalendar(pc => pc
             .Holidays(hol =>
             {
-                hol.From(new DateTime(2026, 4, 10)).To(new DateTime(2026, 4, 10)).Add();
-                hol.From(new DateTime(2026, 4, 17)).To(new DateTime(2026, 4, 17)).Add();
+                hol.From(new DateTime(2026, 4, 10)).To(new DateTime(2026, 4, 10)).Label("Regional closure").Add();
+                hol.From(new DateTime(2026, 4, 17)).To(new DateTime(2026, 4, 17)).Label("Public holidays").Add();
             })))
     .Render()

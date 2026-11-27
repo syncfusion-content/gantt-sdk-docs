@@ -18,25 +18,39 @@ namespace CoreSamples.Pages
                 new GanttDataSource
                 {
                     TaskId = 1,
-                    TaskName = "Development Team Work",
+                    TaskName = "Project Planning",
                     StartDate = new DateTime(2026, 4, 2),
-                    Duration = 5,
-                    CalendarId = "day-shift"
+                    Duration = 3
                 },
                 new GanttDataSource
                 {
                     TaskId = 2,
-                    TaskName = "Night Shift Support",
-                    StartDate = new DateTime(2026, 4, 2),
-                    Duration = 5,
-                    CalendarId = "night-shift"
+                    TaskName = "Requirements Analysis",
+                    StartDate = new DateTime(2026, 4, 5),
+                    Duration = 2,
+                    ParentId = 1
                 },
                 new GanttDataSource
                 {
                     TaskId = 3,
-                    TaskName = "Standard Hours",
-                    StartDate = new DateTime(2026, 4, 2),
+                    TaskName = "Design",
+                    StartDate = new DateTime(2026, 4, 7),
+                    Duration = 4,
+                    ParentId = 1
+                },
+                new GanttDataSource
+                {
+                    TaskId = 4,
+                    TaskName = "Development",
+                    StartDate = new DateTime(2026, 4, 11),
                     Duration = 5
+                },
+                new GanttDataSource
+                {
+                    TaskId = 5,
+                    TaskName = "Testing",
+                    StartDate = new DateTime(2026, 4, 16),
+                    Duration = 3
                 }
             };
         }
@@ -52,6 +66,6 @@ namespace CoreSamples.Pages
 
         public int? Duration { get; set; }
 
-        public string CalendarId { get; set; }
+        public int? ParentId { get; set; }
     }
 }

@@ -3,8 +3,8 @@
 @(Html.EJS().Gantt("Gantt")
     .DataSource((IEnumerable<object>)ViewBag.DataSource)
     .Height("450px")
-    .ProjectStartDate("04/01/2019")
-    .ProjectEndDate("04/30/2019")
+    .ProjectStartDate("04/01/2026")
+    .ProjectEndDate("04/30/2026")
     .TaskFields(ts => ts
         .Id("TaskId")
         .Name("TaskName")
@@ -51,9 +51,8 @@
                     {
                         from = new DateTime(2026, 4, 10),
                         to = new DateTime(2026, 4, 10),
-                        name = "Maintenance Window",
-                        isWorking = true,
-                        workingTime = new[]
+                        label = "Maintenance Window",
+                        exceptionWorkingTime = new[]
                         {
                             new { from = 18, to = 8 }
                         }
