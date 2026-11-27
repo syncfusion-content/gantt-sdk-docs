@@ -124,7 +124,7 @@ Task calendars can define holidays that affect the assigned task's schedule. The
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/task-calendar-holiday" %}
 
-## Inherit schedules and date rules from a parent task calendar
+## Configure task calendar inheritance
 
 The task's mapped `calendarId` selects the task calendar used for scheduling. To reuse settings, set [`parentId`](../api/gantt/taskCalendarModel) on that calendar to another task calendar's `calendarId`. The parent supplies settings that the selected calendar does not define; it does not make project-calendar holidays or exceptions apply to the task.
 
