@@ -35,6 +35,32 @@ The following example enables row virtualization for a large dataset:
         
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/virtualscroll-cs1" %}
 
+## Configure dom virtualization
+
+Dom virtualization improves scrolling performance when a Gantt chart contains many tasks. Rather than keeping every task row in the dom at once, it renders the rows in the viewport along with a buffer of nearby rows. Limiting the number of rendered row elements reduces dom workload and helps scrolling remain smooth.
+
+### Enable dom virtualization
+
+Dom virtualization is enabled by setting [enableDomVirtualization](https://ej2.syncfusion.com/react/documentation/api/gantt#enabledomvirtualization) to **true**. Inject [DomVirtualization](https://ej2.syncfusion.com/react/documentation/api/gantt#domVirtualizationModule) in the component's providers to enable this feature.
+
+Use the [domVirtualizationSettings](https://ej2.syncfusion.com/react/documentation/api/gantt/domVirtualizationSettings) property to configure the number of buffer rows. The `rowBuffer` property specifies the number of additional rows rendered around the visible rows and defaults to `20`.
+
+The following example enables row virtualization for a large dataset:
+
+{% tabs %}
+{% highlight js tabtitle="index.jsx" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/virtualscroll-cs4/app/index.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="index.tsx" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/virtualscroll-cs4/app/index.tsx %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/virtualscroll-cs4/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/virtualscroll-cs4" %}
+
 ## Configure timeline virtualization
 
 Timeline virtualization, enabled by setting [enableTimelineVirtualization](https://ej2.syncfusion.com/react/documentation/api/gantt#enabletimelinevirtualization) to **true**, renders three times the Gantt's width initially, loading additional timeline cells during horizontal scrolling. This optimizes performance for wide timelines, such as multi-year projects, by rendering only visible segments. It depends on [timelineSettings](https://ej2.syncfusion.com/react/documentation/api/gantt/timelineSettings) for scale (e.g., monthly or daily tiers). Inject [VirtualScroll](https://ej2.syncfusion.com/react/documentation/api/gantt#virtualscrollmodule) to enable this feature.

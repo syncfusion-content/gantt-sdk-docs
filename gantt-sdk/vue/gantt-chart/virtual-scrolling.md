@@ -34,6 +34,29 @@ This mode can be enable by setting the `enableVirtualization` property to `true`
         
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/virtual-scroll-cs1" %}
 
+## Configure dom virtualization
+
+Dom virtualization improves scrolling performance when a Gantt chart contains many tasks. Rather than keeping every task row in the dom at once, it renders the rows in the viewport along with a buffer of nearby rows. Limiting the number of rendered row elements reduces dom workload and helps scrolling remain smooth.
+
+### Enable dom virtualization
+
+Dom virtualization is enabled by setting the [enableDomVirtualization](https://ej2.syncfusion.com/vue/documentation/api/gantt#enabledomvirtualization) property to **true**. Inject `DomVirtualization` module in Gantt to enable the feature.
+
+Use the [domVirtualizationSettings](https://ej2.syncfusion.com/vue/documentation/api/gantt/domVirtualizationSettings) property to configure the number of buffer rows. The `rowBuffer` property specifies the number of additional rows rendered around the visible rows and defaults to `20`.
+
+The following example enables dom virtualization for a large dataset:
+
+{% tabs %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
+{% include code-snippet/gantt-sdk/vue/gantt-chart/virtual-scroll-cs4/app-composition.vue %}
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+{% include code-snippet/gantt-sdk/vue/gantt-chart/virtual-scroll-cs4/app.vue %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/virtual-scroll-cs4" %}
+
 ## Timeline virtualization
 
 Timeline virtualization allows you to load a data source having large timespan with high performance. Initially, it renders the timeline with thrice the width of the gantt element, while other timeline cells render on-demand during horizontal scrolling.

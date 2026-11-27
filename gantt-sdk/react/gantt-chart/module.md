@@ -79,6 +79,7 @@ Each module enables specific features. For example, `Sort` enables column sortin
 - `VirtualScroll` - Virtual scrolling with `enableVirtualization`
 - `CriticalPath` - Critical path visualization with `enableCriticalPath`
 - `UndoRedo` - Undo/redo operations with `enableUndoRedo`
+- `DomVirtualization` - Virtual scrolling with `enableDomVirtualization`
 
 **Export:**
 - `ExcelExport` - Excel export with `allowExcelExport`

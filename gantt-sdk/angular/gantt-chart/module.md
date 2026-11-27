@@ -96,6 +96,7 @@ export class AppModule { }
 - `VirtualScrollService` - Virtual scrolling with `enableVirtualization`
 - `CriticalPathService` - Critical path visualization with `enableCriticalPath`
 - `UndoRedoService` - Undo/redo operations with `enableUndoRedo`
+- `DomVirtualizationService` - Dom virtualization with `enableDomVirtualization`
 
 **Export:**
 - `ExcelExportService` - Excel export with `allowExcelExport`
