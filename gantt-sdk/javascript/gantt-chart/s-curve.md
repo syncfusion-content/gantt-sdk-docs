@@ -126,7 +126,7 @@ To disable S-Curve tooltips, set [tooltipSettings.showTooltip](https://ej2.syncf
 
 The S-Curve overlay is included when exporting the Gantt Chart to PDF.
 
-To enable PDF export, inject the `PdfExport` module and follow the Gantt Chart [PDF Export UG](https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/pdf-export/pdf-export).
+To enable PDF export, inject the `PdfExport` module and follow the Gantt Chart [PDF Export documentation](https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/pdf-export/pdf-export).
 
 ## Limitations
 
