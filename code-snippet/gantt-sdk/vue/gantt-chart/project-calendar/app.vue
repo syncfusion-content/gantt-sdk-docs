@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<ejs-gantt :dataSource="data" :height="height" :projectStartDate="projectStartDate" :projectEndDate="projectEndDate" :taskFields="taskFields" :labelSettings="labelSettings" :calendarSettings="calendarSettings" :columns="columns"></ejs-gantt>
+		<ejs-gantt :dataSource="data" :height="height" :projectStartDate="projectStartDate" :projectEndDate="projectEndDate" :workWeek="workWeek" :includeWeekend="includeWeekend" :taskFields="taskFields" :labelSettings="labelSettings" :calendarSettings="calendarSettings" :columns="columns"></ejs-gantt>
 	</div>
 </template>
 <script>
@@ -17,6 +17,8 @@ export default {
 			height: '450px',
 			projectStartDate: new Date('04/01/2026'),
 			projectEndDate: new Date('04/30/2026'),
+			workWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+			includeWeekend: false,
 			taskFields: {
 				id: 'TaskId',
 				name: 'TaskName',
@@ -36,9 +38,8 @@ export default {
 					exceptions: [{
 						from: new Date('04/06/2026'),
 						to: new Date('04/06/2026'),
-						name: 'Extended Working Day',
-						isWorking: true,
-						workingTime: [{ from: 8, to: 18 }]
+						label: 'Extended Working Day',
+						exceptionWorkingTime: [{ from: 8, to: 18 }]
 					}]
 				}
 			},

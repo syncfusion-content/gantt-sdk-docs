@@ -42,7 +42,6 @@ export class AppComponent {
     name: 'TaskName',
     startDate: 'StartDate',
     duration: 'Duration',
-    parentID: 'ParentId',
     calendarId: 'CalendarId'
   };
 
@@ -67,11 +66,7 @@ export class AppComponent {
           {
             from: new Date('04/09/2026'),
             to: new Date('04/09/2026'),
-            name: 'Team Meeting Day',
-            isWorking: true,
-            workingTime: [
-              { from: 10, to: 16 }
-            ]
+            label: 'Team Meeting Day'
           }
         ]
       },
@@ -85,11 +80,8 @@ export class AppComponent {
           {
             from: new Date('04/10/2026'),
             to: new Date('04/10/2026'),
-            name: 'Maintenance Window',
-            isWorking: true,
-            workingTime: [
-              { from: 18, to: 8 }
-            ]
+            label: 'Maintenance Window',
+            exceptionWorkingTime: [{ from: 18, to: 8 }]
           }
         ]
       }
