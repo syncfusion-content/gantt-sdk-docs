@@ -1,0 +1,53 @@
+@using Syncfusion.EJ2.Gantt
+
+@(Html.EJS().Gantt("Gantt")
+    .DataSource((IEnumerable<object>)ViewBag.DataSource)
+    .Height("450px")
+    .ProjectStartDate("04/01/2026")
+    .ProjectEndDate("06/30/2026")
+    .TaskFields(ts => ts
+        .Id("TaskId")
+        .Name("TaskName")
+        .StartDate("StartDate")
+        .Duration("Duration")
+        .CalendarId("CalendarId"))
+    .LabelSettings(ls => ls.LeftLabel("TaskName"))
+    .CalendarSettings(cs => cs
+        .ProjectCalendar(pc => pc.WorkingTime(new List<object>
+        {
+            new { from = 8, to = 17 }
+        }))
+        .TaskCalendars(new List<object>
+        {
+            new
+            {
+                calendarId = "company",
+                workWeek = new[] { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" },
+                workingTime = new[] { new { from = 9, to = 12 }, new { from = 13, to = 17 } },
+                holidays = new[]
+                {
+                    new
+                    {
+                        from = new DateTime(2026, 4, 10),
+                        to = new DateTime(2026, 4, 10),
+                        label = "Company closure"
+                    }
+                },
+                exceptions = new[]
+                {
+                    new
+                    {
+                        from = new DateTime(2026, 4, 17),
+                        to = new DateTime(2026, 4, 17),
+                        label = "Company partial working day",
+                        exceptionWorkingTime = new[] { new { from = 9, to = 12 } }
+                    }
+                }
+            },
+            new
+            {
+                calendarId = "regional",
+                parentId = "company"
+            }
+        }))
+    .Render())

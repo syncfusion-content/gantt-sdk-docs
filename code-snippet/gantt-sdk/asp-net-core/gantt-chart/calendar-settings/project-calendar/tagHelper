@@ -5,14 +5,16 @@
 <ejs-gantt id="Gantt"
            dataSource="@Model.GanttDataSourceCollection"
            height="450px"
-           projectStartDate="04/01/2019"
-           projectEndDate="04/30/2019">
+           projectStartDate="04/01/2026"
+           projectEndDate="04/30/2026"
+           workWeek="@(new[] { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" })"
+           includeWeekend="false">
 
     <e-gantt-taskfields id="TaskId"
                         name="TaskName"
                         startDate="StartDate"
                         duration="Duration"
-                        calendarId="CalendarId">
+                        parentID="ParentId">
     </e-gantt-taskfields>
 
     <e-gantt-labelsettings leftLabel="TaskName">
@@ -20,54 +22,23 @@
 
     <e-gantt-calendarsettings>
 
-        <e-gantt-projectcalendar workingTime="@(new List<object>
-        {
-            new { from = 9, to = 17 }
-        })">
+        <e-gantt-projectcalendar
+            workingTime="@(new List<object>
+            {
+                new { from = 9, to = 12 },
+                new { from = 13, to = 17 }
+            })"
+            exceptions="@(new List<object>
+            {
+                new
+                {
+                    from = new DateTime(2026, 4, 6),
+                    to = new DateTime(2026, 4, 6),
+                    label = "Extended Working Day",
+                    exceptionWorkingTime = new[] { new { from = 8, to = 18 } }
+                }
+            })">
         </e-gantt-projectcalendar>
-
-        <e-gantt-taskcalendars>
-
-            <e-gantt-taskcalendar calendarId="day-shift"
-                                  workingTime="@(new List<object>
-                                  {
-                                      new { from = 9, to = 17 }
-                                  })"
-                                  holidays="@(new List<object>())"
-                                  exceptions="@(new List<object>
-                                  {
-                                      new
-                                      {
-                                          from = new DateTime(2026, 4, 9),
-                                          to = new DateTime(2026, 4, 9),
-                                          name = "Team Meeting Day",
-                                          isWorking = true,
-                                          workingTime = new[]
-                                          {
-                                              new { from = 10, to = 16 }
-                                          }
-                                      }
-                                  })">
-            </e-gantt-taskcalendar>
-
-            <e-gantt-taskcalendar calendarId="night-shift"
-                                  workingTime="@(new List<object>
-                                  {
-                                      new { from = 17, to = 9 }
-                                  })"
-                                  holidays="@(new List<object>())"
-                                  exceptions="@(new List<object>
-                                  {
-                                      new
-                                      {
-                                          from = new DateTime(2026, 4, 10),
-                                          to = new DateTime(2026, 4, 10),
-                                          label = "Maintenance Window"
-                                      }
-                                  })">
-            </e-gantt-taskcalendar>
-
-        </e-gantt-taskcalendars>
 
     </e-gantt-calendarsettings>
 

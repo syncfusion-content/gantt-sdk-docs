@@ -18,6 +18,8 @@ import { GanttData } from './data';
       height="450px"
       [projectStartDate]="projectStartDate"
       [projectEndDate]="projectEndDate"
+      [workWeek]="workWeek"
+      [includeWeekend]="includeWeekend"
       [taskFields]="taskFields"
       [labelSettings]="labelSettings"
       [calendarSettings]="calendarSettings">
@@ -38,6 +40,8 @@ export class AppComponent {
 
   public projectStartDate: Date = new Date('04/01/2026');
   public projectEndDate: Date = new Date('04/30/2026');
+  public workWeek: string[] = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+  public includeWeekend: boolean = false;
 
   public taskFields: TaskFieldsModel = {
     id: 'TaskId',
@@ -61,11 +65,8 @@ export class AppComponent {
         {
           from: new Date('04/06/2026'),
           to: new Date('04/06/2026'),
-          name: 'Extended Working Day',
-          isWorking: true,
-          workingTime: [
-            { from: 8, to: 18 }
-          ]
+          label: 'Extended Working Day',
+          exceptionWorkingTime: [{ from: 8, to: 18 }]
         }
       ]
     }

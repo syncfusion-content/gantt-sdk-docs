@@ -6,8 +6,8 @@ Gantt.Inject(Edit, Selection);
 let gantt: Gantt = new Gantt({
     dataSource: GanttData,
     height: '450px',
-    projectStartDate: new Date('04/01/2019'),
-    projectEndDate: new Date('04/30/2019'),
+    projectStartDate: new Date('04/01/2026'),
+    projectEndDate: new Date('04/30/2026'),
     taskFields: {
         id: 'TaskId',
         name: 'TaskName',
@@ -42,7 +42,7 @@ let gantt: Gantt = new Gantt({
                 ],
                 holidays: [],
                 exceptions: [
-                    { from: new Date('04/10/2026'), to: new Date('04/10/2026'), name: 'Maintenance Window', isWorking: true, workingTime: [{ from: 18, to: 8 }] }
+                    { from: new Date('04/10/2026'), to: new Date('04/10/2026'), label: 'Maintenance Window', exceptionWorkingTime: [{ from: 18, to: 8 }] }
                 ]
             }
         ]

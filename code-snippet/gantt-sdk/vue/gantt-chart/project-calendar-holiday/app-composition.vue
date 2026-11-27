@@ -21,10 +21,9 @@ const taskFields = {
 const labelSettings = { leftLabel: 'TaskName' };
 const calendarSettings = {
 	projectCalendar: {
-		workingTime: [{ from: 9, to: 17 }],
 		holidays: [
-			{ from: new Date('04/10/2026'), to: new Date('04/10/2026'), label: 'Holiday 1' },
-			{ from: new Date('04/17/2026'), to: new Date('04/17/2026'), label: 'Holiday 2' }
+			{ from: new Date('04/10/2026'), to: new Date('04/10/2026'), label: 'Regional closure' },
+			{ from: new Date('04/17/2026'), to: new Date('04/17/2026'), label: 'Public holidays' }
 		]
 	}
 };

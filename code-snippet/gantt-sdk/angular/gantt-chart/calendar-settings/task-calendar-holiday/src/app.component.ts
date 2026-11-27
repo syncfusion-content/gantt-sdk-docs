@@ -61,6 +61,14 @@ export class AppComponent {
           to: new Date('04/10/2026'),
           label: 'Regional Holiday'
         }
+      ],
+      exceptions: [
+        {
+          from: new Date('04/17/2026'),
+          to: new Date('04/17/2026'),
+          label: 'Project extended hours',
+          exceptionWorkingTime: [{ from: 8, to: 18 }]
+        }
       ]
     },
     taskCalendars: [
@@ -68,8 +76,8 @@ export class AppComponent {
         calendarId: 'local-team',
         holidays: [
           {
-            from: new Date('04/05/2026'),
-            to: new Date('04/05/2026'),
+            from: new Date('04/06/2026'),
+            to: new Date('04/06/2026'),
             label: 'Local Holiday'
           }
         ]

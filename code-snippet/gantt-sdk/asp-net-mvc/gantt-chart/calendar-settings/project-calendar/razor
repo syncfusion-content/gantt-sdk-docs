@@ -1,8 +1,10 @@
 @(Html.EJS().Gantt("Gantt")
     .DataSource((IEnumerable<object>)ViewBag.DataSource)
     .Height("450px")
-    .ProjectStartDate("04/01/2019")
-    .ProjectEndDate("04/30/2019")
+    .ProjectStartDate("04/01/2026")
+    .ProjectEndDate("04/30/2026")
+    .WorkWeek(new string[] { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" })
+    .IncludeWeekend(false)
     .TaskFields(task => task
         .Id("TaskId")
         .Name("TaskName")
@@ -23,9 +25,8 @@
             {
                 from = new DateTime(2026, 4, 6),
                 to = new DateTime(2026, 4, 6),
-                name = "Extended Working Day",
-                isWorking = true,
-                workingTime = new List<object>
+                label = "Extended Working Day",
+                exceptionWorkingTime = new List<object>
                 {
                     new { from = 8, to = 18 }
                 }
