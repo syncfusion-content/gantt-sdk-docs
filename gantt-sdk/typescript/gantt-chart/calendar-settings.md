@@ -26,7 +26,9 @@ The [calendarSettings.projectCalendar](../api/gantt/calendarSettingsModel#projec
 
 ### Configure project working hours and exceptions
 
-Working hours are defined per day using start and end times. The following example configures the project to have working hours from 9:00 AM to 5:00 PM with a lunch break from 12:00 PM to 1:00 PM. Calendar exceptions allow overriding working hours for specific dates, enabling custom scheduling for special working days or non-working days that don't fit the standard holiday definition:
+Set the default daily working hours in [calendarSettings.projectCalendar.workingTime](../api/gantt/calendarSettingsModel#projectcalendar). Each range uses numeric `from` and `to` hours; use multiple ranges to represent breaks, such as `[{ from: 9, to: 12 }, { from: 13, to: 17 }]`. Tasks without an assigned task calendar use the project calendar's working hours.
+
+Calendar exceptions override the normal project schedule on specific dates. Use them to define custom working hours for an otherwise non-working date or to change the hours for a particular date. The following example defines the project's standard working hours and a date-specific exception:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -54,17 +56,34 @@ Holidays are non-working dates that exclude time from task calculations. The fol
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/project-calendar-holiday" %}
 
-Recurring project-calendar holidays can act as date-rule fallback for tasks assigned a task calendar, but only when the selected calendar and its valid parent chain do not claim the date. Fixed project holidays and project exceptions are not task-calendar fallback.
-
 ## Task calendars
 
 Task calendars enable specific tasks to use custom working days and holidays instead of the project calendar. This is useful for managing work across different shifts, regions, or external teams with different availability.
 
+### Configure working days and hours for task calendars
+
+Use a task calendar when a team follows a schedule that differs from the project calendar. Configure the schedule on an entry in [calendarSettings.taskCalendars](../api/gantt/calendarSettingsModel#taskcalendars):
+
+- [workWeek](../api/gantt/taskCalendarModel#workweek) lists the calendar's working weekdays, using names from Sunday through Saturday.
+- [workingTime](../api/gantt/taskCalendarModel#workingtime) sets the standard daily hours with numeric `from` and `to` values.
+- [weekWorkingTime](../api/gantt/taskCalendarModel#weekworkingtime) sets different hours for specific weekdays using `dayOfWeek` and `timeRange`. Each entry replaces the complete schedule for that weekday.
+
+In this example, both tasks use the `day-shift` calendar. It works Monday through Friday, uses a split schedule on Monday, and has shorter hours on Friday:
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt-sdk/typescript/gantt-chart/calendar-working-schedule/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt-sdk/typescript/gantt-chart/calendar-working-schedule/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/calendar-working-schedule" %}
+
 ### Assign task-specific calendars with exceptions
 
-To assign a custom calendar to a task, first define it in [calendarSettings.taskCalendars](../api/gantt/calendarSettingsModel#taskcalendars), then reference it using the [calendarId](../api/gantt/taskFieldsModel#calendarid) property in the task data. Calendar exceptions allow defining specific dates with custom working days, enabling team-specific scheduling adjustments such as split shifts or holidays that differ from the main schedule.
-
-When a task is assigned a calendar through the `calendarId` property mapped to the `CalendarId` task data field, the Gantt selects the matching task calendar and resolves its parent chain. Calendar rules are checked from the selected calendar through its nearest ancestors. A recurring project-calendar holiday is a fallback only for a date not claimed by that chain; fixed project holidays and project exceptions are not task-calendar fallback.
+To assign a custom calendar to a task, define it in [calendarSettings.taskCalendars](../api/gantt/calendarSettingsModel#taskcalendars), then reference it using the [calendarId](../api/gantt/taskFieldsModel#calendarid) property in the task data. Task calendars can define their own working weekdays, hours, holidays, and date-specific exceptions.
 
 The following example defines two task calendars with different working days, task-specific exceptions, and assigns them to specific tasks:
 
@@ -81,7 +100,7 @@ The following example defines two task calendars with different working days, ta
 
 ### Define task calendar holidays
 
-Task calendars can define holidays that affect the assigned task's schedule. A recurring project-calendar holiday can apply only when no rule in the selected calendar or its parent chain claims the date; fixed project holidays and project exceptions do not apply as task-calendar fallback. The following example configures a task calendar with specific holidays:
+Task calendars can define holidays that affect the assigned task's schedule. The following example configures a task calendar with specific holidays:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -94,32 +113,19 @@ Task calendars can define holidays that affect the assigned task's schedule. A r
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/task-calendar-holiday" %}
 
-## Configure inherited task calendars
+## Inherit schedules and date rules from a parent task calendar
 
-Use [`parentId`](../api/gantt/taskCalendarModel) to reuse working-time and date rules from another task calendar. The Gantt Chart resolves the selected task calendar first, then checks its valid parent chain from the nearest parent to higher ancestors.
+To avoid repeating the same rules, set [`parentId`](../api/gantt/taskCalendarModel) on a child calendar to the parent's `calendarId`. Assign a task to the child using the mapped `calendarId` field.
 
-Map the `calendarId` property to the `CalendarId` task data field and set its value to `"regional"` to assign the task to the regional calendar. The task inherits the company calendar's Monday-Friday work week, working time, fixed holiday, and partial working-day exception.
+The Gantt checks the assigned calendar first, then its parents from nearest to farthest. A value set on the child takes precedence; if it is not set, the nearest parent definition applies. This inheritance applies to `workWeek`, `workingTime`, `weekWorkingTime`, holidays, and exceptions.
 
-### Inheritance rules
+Each `weekWorkingTime` entry replaces the complete schedule for that weekday. A weekday omitted by the child inherits the nearest parent's entry, or uses the calendar's `workingTime` if no parent defines it. An explicit `workWeek: []` does not inherit a parent's work week; it falls back to the project work week.
 
-| Rule | Behavior |
-|---|---|
-| Task calendar match | Uses the first calendar whose `calendarId` equals the value in the mapped `CalendarId` task data field. |
-| Missing or unmatched ID | Uses the project calendar for working-week or working-time fallback. |
-| Parent chain | Checks the selected calendar, then nearest valid parent, then higher valid ancestors. |
-| [`parentId`](../api/gantt/taskCalendarModel) | References a task calendar by its `calendarId`; defaults to `null`. An empty string means no parent. |
-| `workWeek` | Accepts weekday names Sunday through Saturday; defaults to `null`. An undefined value can inherit from a parent. An explicit `[]` does not: it falls back to the Gantt `workWeek`, then Monday-Friday. |
-| [`workingTime`](../api/gantt/dayWorkingTimeModel) | Accepts time ranges with numeric `from` and `to` hours; defaults to `[]`. The nearest non-empty task-calendar value applies, then the project schedule. |
-| [`weekWorkingTime`](../api/gantt/dayWorkingTimeModel) | Defaults to `[]`; each entry specifies a `dayOfWeek` (Sunday through Saturday) and `timeRange` of numeric `from`/`to` hours. A non-empty matching range applies first. An empty `timeRange: []` continues to an ancestor rule or normal `workingTime` resolution. |
-| Date rules | Checks each calendar from nearest to farthest. At each calendar, an exception takes precedence over that calendar's holiday. A recurring project holiday applies only if no task-calendar or ancestor rule claims the date; fixed project holidays and project exceptions are not fallback. |
+For dates, the Gantt checks each calendar from nearest to farthest. An exception takes precedence over a holiday in the same calendar. A recurring project-calendar holiday applies only when no calendar in the chain claims the date; fixed project holidays and project exceptions are not task-calendar fallbacks. An empty `exceptionWorkingTime: []` uses the effective working schedule instead of making the date non-working.
 
-Across calendar levels, a nearer calendar rule takes precedence regardless of whether it is an exception or holiday; for example, a nearer ancestor holiday can take precedence over a farther ancestor exception. An empty `exceptionWorkingTime: []` does not make a date non-working; the effective calendar schedule, then the project fallback schedule, is used.
+Missing parent references, self-references, and parent cycles are ignored.
 
-If a parent calendar does not exist, `parentId` is empty, the parent points to itself, or the parent chain contains a cycle, the invalid link is ignored. The Gantt uses valid local and inherited rules and does not continue through a cycle.
-
-> **Note:** An empty `workWeek` does not create a calendar with zero working weekdays and does not inherit a parent's work week. The Gantt resolves it through the Gantt-level [workWeek](../api/gantt#workweek), then the Monday-Friday default.
-
-The following sample demonstrates a regional task calendar inheriting its work week, working hours, fixed holiday, and fixed partial working-day exception from its parent company calendar:
+The following sample demonstrates a regional task calendar inheriting its schedule and date rules from a company calendar:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
