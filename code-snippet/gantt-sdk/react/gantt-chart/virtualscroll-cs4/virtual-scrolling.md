@@ -1,0 +1,98 @@
+---
+layout: post
+title: Virtual Scrolling in React Gantt Chart | Syncfusion
+description: Learn how to configure virtual scrolling in Syncfusion React Gantt Chart for high-performance rendering of large datasets and wide project timelines.
+keywords: react gantt virtual scrolling, virtual scroll, large dataset, performance scrolling, syncfusion gantt
+canonical: https://help.syncfusion.com/gantt-sdk/react/gantt-chart/scrolling/virtual-scrolling
+platform: gantt-sdk
+control: Virtual Scrolling - Gantt Chart
+documentation: ug
+domainurl: https://help.syncfusion.com/gantt-sdk
+appliesto: UI Component Suite, Gantt SDK
+---
+
+# High-Performance Rendering with Virtual Scrolling in React Gantt Chart
+
+Virtual scrolling in the [React Gantt Chart](https://www.syncfusion.com/react-components/react-gantt-chart) component enhances performance by rendering only visible tasks and timeline segments, minimizing DOM operations for large datasets or extensive timelines. It includes row virtualization for handling thousands of tasks (e.g., 10,000 tasks in a project) and timeline virtualization for wide timelines (e.g., multi-year projects), both requiring [VirtualScroll](https://ej2.syncfusion.com/react/documentation/api/gantt/index-default#virtualscrollmodule) injection. Row virtualization renders tasks within the viewport, while timeline virtualization loads timeline cells on-demand during horizontal scrolling, ensuring efficient rendering for complex project management.
+
+## Configure row virtualization
+
+Row virtualization, enabled by setting [enableVirtualization](https://ej2.syncfusion.com/react/documentation/api/gantt#enablevirtualization) to **true**, renders only tasks visible in the Gantt's viewport, determined by the `height` property in pixels (e.g., "600px"). All tasks are fetched initially but rendered on-demand during vertical scrolling, reducing load times for large datasets. For example, a project with 10,000 tasks renders only the 50 visible tasks, improving performance. Inject [VirtualScroll](https://ej2.syncfusion.com/react/documentation/api/gantt#virtualscrollmodule) in the component's providers to enable this feature. Ensure the `height` property is set explicitly to control the viewport size.
+
+The following example enables row virtualization for a large dataset:
+
+{% tabs %}
+{% highlight js tabtitle="index.jsx" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/virtualscroll-cs1/app/index.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="index.tsx" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/virtualscroll-cs1/app/index.tsx %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/virtualscroll-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/virtualscroll-cs1" %}
+
+## Configure dom virtualization
+
+Dom virtualization improves scrolling performance when a Gantt chart contains many tasks. Rather than keeping every task row in the dom at once, it renders the rows in the viewport along with a buffer of nearby rows. Limiting the number of rendered row elements reduces dom workload and helps scrolling remain smooth.
+
+### Enable dom virtualization
+
+Dom virtualization is enabled by setting [enableDomVirtualization](https://ej2.syncfusion.com/react/documentation/api/gantt#enabledomvirtualization) to **true**. Import `DomVirtualization` from `@syncfusion/ej2-react-gantt` and add it to the `Inject` component's services to enable the feature.
+
+Use the [domVirtualizationSettings](https://ej2.syncfusion.com/react/documentation/api/gantt/domVirtualizationSettings) property to configure the number of buffer rows. The `rowBuffer` property specifies the number of additional rows rendered around the visible rows and defaults to `20`.
+
+The following example enables row virtualization for a large dataset:
+
+{% tabs %}
+{% highlight js tabtitle="index.jsx" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/virtualscroll-cs3/app/index.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="index.tsx" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/virtualscroll-cs3/app/index.tsx %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/virtualscroll-cs3/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/virtualscroll-cs3" %}
+
+## Configure timeline virtualization
+
+Timeline virtualization, enabled by setting [enableTimelineVirtualization](https://ej2.syncfusion.com/react/documentation/api/gantt#enabletimelinevirtualization) to **true**, renders three times the Gantt's width initially, loading additional timeline cells during horizontal scrolling. This optimizes performance for wide timelines, such as multi-year projects, by rendering only visible segments. It depends on [timelineSettings](https://ej2.syncfusion.com/react/documentation/api/gantt/timelineSettings) for scale (e.g., monthly or daily tiers). Inject [VirtualScroll](https://ej2.syncfusion.com/react/documentation/api/gantt#virtualscrollmodule) to enable this feature.
+
+The following example enables timeline virtualization for a wide timeline:
+
+{% tabs %}
+{% highlight js tabtitle="index.jsx" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/virtualscroll-cs3/app/index.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="index.tsx" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/virtualscroll-cs3/app/index.tsx %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/virtualscroll-cs3/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/virtualscroll-cs3" %}
+
+## Virtual scroll limitations
+
+Virtual scrolling has the following constraints:
+- Incompatible with [enableImmutableMode](https://ej2.syncfusion.com/react/documentation/api/gantt#enableimmutablemode), as both use different rendering optimizations.
+- Cell selection is not persisted due to on-demand rendering.
+- Browser height limits restrict the maximum number of records in row virtualization.
+- The [height](https://ej2.syncfusion.com/react/documentation/api/gantt#height) property must be set in pixels for row virtualization to define the viewport size.
+- Set a static height for the Gantt chart or its parent container; 100% height only works if both the component and its parent have explicit static heights.
+- With virtualization enabled, data is rendered in pages. When scrolling to load the next set of records, only the current page's data is available to Gantt's public methods. If a record is selected during this process, only the visible page records are returned. This behavior occurs because the Gantt chart does not retain data from all pages in memory, optimizing performance by loading only the required set.
+
+## See also
+
+- [How to configure timeline settings?](https://ej2.syncfusion.com/react/documentation/gantt/timeline/timeline)
+- [How to manage large datasets?](https://ej2.syncfusion.com/react/documentation/gantt/data-binding)
+- [How to configure critical path?](https://ej2.syncfusion.com/react/documentation/gantt/critical-path)

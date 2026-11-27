@@ -33,6 +33,30 @@ The following example enables row virtualization for a large dataset:
 
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/virtual-scroll-cs1" %}
 
+## Configure dom virtualization
+
+Dom virtualization improves scrolling performance when a Gantt Chart contains many tasks. Rather than keeping every task row in the dom at once, it renders the rows in the viewport along with a buffer of nearby rows. Limiting the number of rendered row elements reduces dom workload and helps scrolling remain smooth.
+
+### Enable dom virtualization
+
+Dom virtualization is enabled by setting [enableDomVirtualization](https://ej2.syncfusion.com/angular/documentation/api/gantt#enabledomvirtualization) to **true**. Import [DomVirtualizationService](https://ej2.syncfusion.com/angular/documentation/api/gantt#domVirtualizationModule) in the component’s providers to enable this feature
+
+Use the [domVirtualizationSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/domVirtualizationSettings) property to configure the number of buffer rows. The `rowBuffer` property specifies the number of additional rows rendered around the visible rows and defaults to `20`.
+
+The following example enables dom virtualization for a large dataset:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt-sdk/angular/gantt-chart/virtual-scroll-cs4/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt-sdk/angular/gantt-chart/virtual-scroll-cs4/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/virtual-scroll-cs4" %}
+
 ## Configure timeline virtualization
 
 Timeline virtualization, enabled by setting [enableTimelineVirtualization](https://ej2.syncfusion.com/angular/documentation/api/gantt#enabletimelinevirtualization) to **true**, renders three times the Gantt’s width initially, loading additional timeline cells during horizontal scrolling. This optimizes performance for wide timelines, such as multi-year projects, by rendering only visible segments. It depends on [timelineSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings) for scale (e.g., monthly or daily tiers). Inject [VirtualScrollService](https://ej2.syncfusion.com/angular/documentation/api/gantt#virtualscrollmodule) to enable this feature.

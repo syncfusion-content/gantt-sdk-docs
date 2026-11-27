@@ -32,5 +32,6 @@ The modules that are available in Gantt are as follows.
 | `ColumnMenu`| Inject this module to use column menu feature.|
 | `VirtualScroll`| Inject this module to use virtual scroll feature.|
 | `CriticalPath` | Inject this module to use critical path feature.|
+| `DomVirtualization`| Inject this module to use dom virtualization feature.|
 
 These modules should be injected into the Gantt using the **Gantt.Inject** method.
