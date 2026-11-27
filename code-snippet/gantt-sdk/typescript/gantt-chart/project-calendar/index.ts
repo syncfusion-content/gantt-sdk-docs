@@ -8,6 +8,8 @@ let gantt: Gantt = new Gantt({
     height: '450px',
     projectStartDate: new Date('04/01/2026'),
     projectEndDate: new Date('04/30/2026'),
+    workWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+    includeWeekend: false,
     taskFields: {
         id: 'TaskId',
         name: 'TaskName',

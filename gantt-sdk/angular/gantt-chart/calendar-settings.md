@@ -17,16 +17,18 @@ The Gantt Chart component supports advanced calendar configuration through the [
 
 The [calendarSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt#calendarsettings) property contains two key configurations:
 
-- **Project Calendar**: Defines working hours and holidays for the entire project, applied to all tasks by default
-- **Task Calendars**: Defines custom working days and holidays for specific tasks, enabling team-specific or shift-based scheduling
+- **Project Calendar**: Defines the default daily working hours, holidays, and exceptions.
+- **Task Calendars**: Define working days, hours, holidays, and exceptions for tasks with a matching `calendarId`.
 
 ## Project calendar
 
-The [calendarSettings.projectCalendar](https://ej2.syncfusion.com/angular/documentation/api/gantt/calendarSettingsModel#projectcalendar) defines the default working hours and non-working days for the entire project. All tasks follow the project calendar unless assigned a task-specific calendar.
+The [calendarSettings.projectCalendar](https://ej2.syncfusion.com/angular/documentation/api/gantt/calendarSettingsModel#projectcalendar) defines default daily working hours and date rules for tasks without a matching task calendar. Configure the default weekdays with the global [workWeek](https://ej2.syncfusion.com/angular/documentation/api/gantt#workweek) property, and use [includeWeekend](https://ej2.syncfusion.com/angular/documentation/api/gantt#includeweekend) to include or exclude weekend days from task-duration calculations. These are Gantt properties, not members of `projectCalendar`.
 
 ### Configure project working hours and exceptions
 
-Working hours are defined per day using start and end times. The following example configures the project to have working hours from 9:00 AM to 5:00 PM with a lunch break from 12:00 PM to 1:00 PM. Calendar exceptions allow overriding working hours for specific dates, enabling custom scheduling for special working days or non-working days that don't fit the standard holiday definition:
+Set the default daily working hours in [calendarSettings.projectCalendar.workingTime](https://ej2.syncfusion.com/angular/documentation/api/gantt/calendarSettingsModel#projectcalendar). Each range uses numeric `from` and `to` hours; use multiple ranges to represent breaks, such as `[{ from: 9, to: 12 }, { from: 13, to: 17 }]`. Tasks without an assigned task calendar use the project calendar's working hours.
+
+Project calendar exceptions override the project calendar's standard working hours or non-working status on specific dates. Use them to define custom working hours for an otherwise non-working date or to change the hours for a particular date. The following example sets the Gantt work week and weekend behavior, then defines project working hours and a date-specific exception:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -46,7 +48,7 @@ Holidays are non-working dates that exclude time from task calculations. The fol
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt-sdk/angular/gantt-chart/calendar-settings/project-calendar/src/app.component.ts %}
+{% include code-snippet/gantt-sdk/angular/gantt-chart/calendar-settings/project-calendar-holiday/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -58,13 +60,43 @@ Holidays are non-working dates that exclude time from task calculations. The fol
 
 ## Task calendars
 
-Task calendars enable specific tasks to use custom working days and holidays instead of the project calendar. This is useful for managing work across different shifts, regions, or external teams with different availability.
+Task calendars define working days, hours, holidays, and exceptions for tasks assigned to them. Use them when a team follows a different schedule from the project calendar; the project calendar's working-time settings may still provide fallback for working-time settings the task calendar does not define.
+
+A task uses a task calendar only when its mapped `calendarId` matches an entry in [calendarSettings.taskCalendars](https://ej2.syncfusion.com/angular/documentation/api/gantt/calendarSettingsModel#taskcalendars). Without a match, the global `workWeek` and `includeWeekend` settings and `projectCalendar.workingTime` determine its working schedule, and project-calendar holidays and exceptions apply. A matching task calendar uses its own date rules; fixed project holidays and exceptions are not copied to that task.
+
+| Task calendar selection | Working days and hours | Holidays and exceptions |
+|---|---|---|
+| No matching task calendar | Uses global `workWeek` and `includeWeekend` with `projectCalendar.workingTime`. | Project-calendar holidays and exceptions apply. |
+| Matching task calendar | Uses the selected task calendar's schedule. Unset values first follow the inheritance rules below; values still unresolved use global `workWeek` or `projectCalendar.workingTime`. Listed `weekWorkingTime` days override the normal working-time ranges. | Uses date rules defined for the selected task calendar. Fixed project holidays and project exceptions do not apply. |
+
+The task-calendar holiday sample demonstrates this distinction using its actual records. **Project Calendar Work** has no matching task calendar, so the project calendar's fixed **Regional Holiday** on April 10 and **Project extended hours** exception on April 17 apply to it. **Local Team Work** uses `local-team`, which defines **Local Holiday** on April 6. **Offshore Team Work** uses `offshore-team`, which defines **Offshore Holiday** on April 8. Both assigned tasks span April 10 and 17, but the project holiday and exception do not apply to them; they use date rules defined for their selected calendars. Project working-time settings may still provide schedule fallback. Recurring project holidays have a separate fallback rule described in the inheritance section.
+
+### Configure working days and hours for task calendars
+
+Use a task calendar when a team follows a schedule that differs from the project calendar. Configure the schedule on an entry in [calendarSettings.taskCalendars](https://ej2.syncfusion.com/angular/documentation/api/gantt/calendarSettingsModel#taskcalendars):
+
+- [workWeek](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskCalendarModel#workweek) lists the calendar's working weekdays, using names from Sunday through Saturday.
+- [workingTime](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskCalendarModel#workingtime) sets the standard daily hours with numeric `from` and `to` values.
+- [weekWorkingTime](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskCalendarModel#weekworkingtime) sets different hours for specific weekdays using `dayOfWeek` and `timeRange`. Each entry replaces the complete schedule for that weekday.
+
+In this example, both tasks use the `day-shift` calendar. It works Monday through Friday, uses a split schedule on Monday, and has shorter hours on Friday:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt-sdk/angular/gantt-chart/calendar-settings/calendar-working-schedule/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt-sdk/angular/gantt-chart/calendar-settings/calendar-working-schedule/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/calendar-settings/calendar-working-schedule" %}
 
 ### Assign task-specific calendars with exceptions
 
-To assign a custom calendar to a task, first define the calendar in [calendarSettings.taskCalendar](https://ej2.syncfusion.com/angular/documentation/api/gantt/calendarSettingsModel#taskcalendar), then reference it using the [calendarId](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFieldsModel#calendarid) property in the task data. Calendar exceptions allow defining specific dates with custom working days, enabling team-specific scheduling adjustments such as split shifts or holidays that differ from the main schedule.
+To assign a custom calendar to a task, define it in [calendarSettings.taskCalendars](https://ej2.syncfusion.com/angular/documentation/api/gantt/calendarSettingsModel#taskcalendars), then reference it using the [calendarId](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFieldsModel#calendarid) property in the task data. Task calendars can define their own working weekdays, hours, holidays, and date-specific exceptions.
 
-When a task is assigned a calendar through `calendarId`, that task follows only the assigned task calendar. The assigned task calendar overrides the project calendar for that task. Working days, holidays, and calendar exceptions defined in the assigned calendar are used when calculating the task schedule and working duration. Other task calendars are not considered when scheduling that task.
+An exception without `exceptionWorkingTime`, or with `exceptionWorkingTime: []`, keeps the effective calendar schedule for the date. For example, the **Team Meeting Day** record below adds a label but does not close the day. To make the full date non-working, define a holiday instead.
 
 The following example defines two task calendars with different working days, task-specific exceptions, and assigns them to specific tasks:
 
@@ -82,7 +114,7 @@ The following example defines two task calendars with different working days, ta
 
 ### Define task calendar holidays
 
-Task calendars can include holidays that override project calendar holidays for the assigned task. These holidays are considered when calculating the task schedule and working duration. The following example configures a task calendar with specific holidays:
+Task calendars can define holidays that affect the assigned task's schedule. The following example sets a project-calendar holiday and exception, then defines separate holidays for two task calendars to show how the rules apply to tasks with and without a matching task calendar:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -95,6 +127,98 @@ Task calendars can include holidays that override project calendar holidays for 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/calendar-settings/task-calendar-holiday" %}
+
+## Configure task calendar inheritance
+
+The task's mapped `calendarId` selects the task calendar used for scheduling. To reuse settings, set [`parentId`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskCalendarModel) on that calendar to another task calendar's `calendarId`. The parent supplies settings that the selected calendar does not define; it does not make project-calendar holidays or exceptions apply to the task.
+
+The Gantt checks the assigned calendar first, then its parents from nearest to farthest. A value set on the child takes precedence; if it is not set, the nearest parent definition applies. This inheritance applies to `workWeek`, `workingTime`, `weekWorkingTime`, `holidays`, and `exceptions`.
+
+| Setting | Resolution for the selected task calendar |
+|---|---|
+| `workWeek` | An undefined value can inherit the nearest defined value in the task-calendar chain. An explicit `workWeek: []` does not inherit; it falls back to the global `workWeek`, then the Monday-Friday default. |
+| `workingTime` | An empty or undefined value uses the nearest non-empty task-calendar value, then `projectCalendar.workingTime`. |
+| `weekWorkingTime` | A non-empty entry replaces the full schedule for its `dayOfWeek`. If that weekday is omitted, the nearest ancestor entry is used; otherwise, normal `workingTime` resolution applies. An entry with `timeRange: []` continues to the nearest ancestor entry, then normal `workingTime` resolution. |
+| Date rules | The nearest calendar's rule wins across the chain. Within the same calendar, an exception takes precedence over a holiday. Therefore, a nearer calendar's holiday can take precedence over a farther ancestor's exception. |
+
+An exception with omitted or empty `exceptionWorkingTime` uses the effective schedule rather than making the date non-working. When a working-time setting is still unresolved after checking the task-calendar chain, `projectCalendar.workingTime` supplies the fallback. global `workWeek` supplies the weekday fallback.
+
+A recurring project-calendar holiday is considered only when neither the assigned task calendar nor any calendar it inherits from defines a holiday or exception for that date. Fixed project-calendar holidays and project-calendar exceptions are not used as task-calendar fallback.
+
+Missing parent references, self-references, and parent cycles are ignored.
+
+The following sample assigns **Regional Inherited Schedule** to the `regional` task calendar, which inherits its schedule and date rules from the `company` calendar:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt-sdk/angular/gantt-chart/calendar-settings/calendar-inheritance/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt-sdk/angular/gantt-chart/calendar-settings/calendar-inheritance/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/calendar-settings/calendar-inheritance" %}
+
+## Configure recurring holidays and exceptions
+
+The `recurrence` property defaults to `null`. Set it on a [holiday](https://ej2.syncfusion.com/angular/documentation/api/gantt/holidayModel) or [calendar exception](https://ej2.syncfusion.com/angular/documentation/api/gantt/calendarExceptionModel) to repeat the record from the anchor `from` date. The `to` date defines the inclusive span repeated for every occurrence. If `to` is omitted, only the anchor date is repeated. The recurrence options below supplement these record properties.
+
+Use `count` to limit the number of occurrence starts or `until` to set an inclusive termination date. Do not use `count` and `until` together.
+
+### Recurrence properties
+
+| Property | Type | Default | Purpose |
+|---|---|---|---|
+| `frequency` | `daily` \| `weekly` \| `monthly` \| `yearly` | `null` | Required recurrence pattern. |
+| `interval` | `number` | `1` | Positive number of frequency periods between starts. |
+| `daysOfWeek` | `DayOfWeek[]` | `null` | Unique weekday names from Sunday through Saturday for weekly or ordinal recurrence. |
+| `dayOfMonth` | `number` \| `"last"` | `null` | Day for monthly or yearly recurrence. |
+| `weekOfMonth` | `number` \| `"last"` | `null` | Ordinal week used with exactly one weekday. |
+| `month` | `number` | `null` | Month number from `1` to `12` for yearly recurrence. |
+| `count` | `number` | `null` | Positive number of occurrence starts, including the anchor. |
+| `until` | `Date` \| `string` | `null` | Inclusive termination date for occurrence starts. |
+
+### Recurrence pattern examples
+
+The examples below show the `recurrence` value; set the record's `from` date to match the selected weekday, day, ordinal, or month.
+
+| Pattern | Example |
+|---|---|
+| Daily | `{ frequency: 'daily', interval: 1 }` |
+| Weekly on Monday and Wednesday | `{ frequency: 'weekly', daysOfWeek: ['Monday', 'Wednesday'] }` |
+| Second Monday of each month | `{ frequency: 'monthly', daysOfWeek: ['Monday'], weekOfMonth: 2 }` |
+| April 10 each year | `{ frequency: 'yearly', month: 4, dayOfMonth: 10 }` |
+| February 29 each year | `{ frequency: 'yearly', month: 2, dayOfMonth: 29 }` — occurrences are skipped in non-leap years. |
+
+For a weekly recurrence, use `{ frequency: 'weekly', daysOfWeek: ['Monday'], count: 8 }` or `{ frequency: 'weekly', daysOfWeek: ['Monday'], until: new Date(2026, 5, 30) }` as the end condition.
+
+Use `count` or `until`, but not both. Selectors must match their frequency: `daysOfWeek` contains unique, case-sensitive weekday names from Sunday through Saturday; monthly or yearly ordinal rules use exactly one weekday with `weekOfMonth` set to `1`-`4` or `"last"`; `dayOfMonth` is `1`-`31` or `"last"`; and yearly `month` is `1`-`12`. Do not combine `dayOfMonth` with `daysOfWeek` or `weekOfMonth`. When recurrence is configured, `from` is required and must match any specified weekday, day, ordinal, or yearly month. If supplied, `to` must be the same as or later than `from`. `interval` and `count` must be positive integers; use either `count` or a valid `until` date not before `from`.
+
+Recurrence dates are parsed as dates and normalized using local date interpretation. Date-only values can behave differently across environment time zones, so provide dates consistently when working across time zones.
+
+Recurrence is evaluated only as needed for the scheduling window and repeats the source `from`-`to` span.
+
+For monthly rules on day 29-31, months without the selected day are skipped; a yearly February 29 rule skips non-leap years. Skipped dates do not consume `count`. On initialization, an invalid recurrence with valid source dates is reported through the [actionFailure event](https://ej2.syncfusion.com/angular/documentation/api/gantt#actionfailure) and treated as a one-time fixed-date rule; a record with invalid dates is skipped. If an invalid recurrence is introduced by a calendar update, `actionFailure` reports the error and the previous calendar configuration is retained.
+
+The following sample demonstrates a holiday repeated three times using `count` and a partial working-day exception repeated through June 17 using `until`:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt-sdk/angular/gantt-chart/calendar-settings/calendar-recurrence/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt-sdk/angular/gantt-chart/calendar-settings/calendar-recurrence/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/samples/gantt-sdk/angular/gantt-chart/calendar-settings/calendar-recurrence" %}
+
+## Calendar limitations
+
+- A task calendar cannot represent zero working weekdays with `workWeek: []`.
+- Recurrence expansion extends up to 100 years after the scheduling evaluation window ends; occurrences beyond that period are not generated.
+- No resource-specific calendar lookup is available.
 
 ## Configure hours per day for task durations
 
@@ -120,13 +244,13 @@ The following example demonstrates how changing `hoursPerDay` affects duration c
 
 ## Impact on task scheduling
 
-Calendar settings directly affect how task duration is calculated and when tasks are scheduled:
+Calendar settings directly affect how task duration is calculated and when tasks are scheduled. Changes recalculate task schedules, durations, dependencies, and chart rendering.
 
-- **Working hours**: Task durations ignore non-working hours. A 2-day task completed during 9 AM-5 PM working hours uses the same elapsed time as a 2-day task across multiple days with shorter working hours
+- **Working hours**: Task durations are calculated using the configured working hours. Non-working hours are excluded from duration calculations.
 - **Holidays**: Tasks skip over holiday dates, extending the end date accordingly to maintain the required working duration
 - **Weekends**: By default, weekends are treated as non-working days when [includeWeekend](https://ej2.syncfusion.com/angular/documentation/api/gantt#includeweekend) is set to **false**
 - **Task dependencies**: Dependency calculations use the predecessor task's calendar to determine when the successor task can start
-- **Task calendars**: Tasks without an assigned task calendar follow the project calendar. Tasks with an assigned task calendar use the working hours, holidays, and exceptions defined in that calendar for scheduling and duration calculations.
+- **Task calendars**: If no task calendar matches the task's `calendarId`, the project calendar's configured working days, working hours, holidays, and exceptions apply. If one matches, Gantt applies that task calendar to the task. Settings it does not define may come from task-calendar inheritance or project working-time fallback. Fixed project holidays and exceptions do not apply to that task; a recurring project holiday can apply only when no rule in its task-calendar chain covers the date.
 - **Duration calculations**: Changing `hoursPerDay` recalculates day-based duration values without changing the scheduled start and end dates.
 
 ## See also

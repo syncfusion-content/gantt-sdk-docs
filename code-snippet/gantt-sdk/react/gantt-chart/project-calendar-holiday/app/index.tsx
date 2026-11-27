@@ -23,12 +23,12 @@ function App() {
                 {
                     from: new Date('04/10/2026'),
                     to: new Date('04/10/2026'),
-                    label: 'Holiday 1'
+                    label: 'Regional closure'
                 },
                 {
                     from: new Date('04/17/2026'),
                     to: new Date('04/17/2026'),
-                    label: 'Holiday 2'
+                    label: 'Public holidays'
                 }
             ]
         }

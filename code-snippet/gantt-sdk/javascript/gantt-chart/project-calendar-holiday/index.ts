@@ -21,8 +21,8 @@ let gantt: Gantt = new Gantt({
     calendarSettings: {
         projectCalendar: {
             holidays: [
-                { from: new Date('04/10/2026'), to: new Date('04/10/2026'), label: 'Holiday 1' },
-                { from: new Date('04/17/2026'), to: new Date('04/17/2026'), label: 'Holiday 2' }
+                { from: new Date('04/10/2026'), to: new Date('04/10/2026'), label: 'Regional closure' },
+                { from: new Date('04/17/2026'), to: new Date('04/17/2026'), label: 'Public holidays' }
             ]
         }
     }

@@ -3,6 +3,8 @@ var ganttChart = new ej.gantt.Gantt({
     height: '450px',
     projectStartDate: new Date('04/01/2026'),
     projectEndDate: new Date('04/30/2026'),
+    workWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+    includeWeekend: false,
     taskFields: {
         id: 'TaskId',
         name: 'TaskName',
@@ -20,7 +22,7 @@ var ganttChart = new ej.gantt.Gantt({
                 { from: 13, to: 17 }
             ],
             exceptions: [
-                { from: new Date('04/06/2026'), to: new Date('04/06/2026'), label: 'Extended Working Day' }
+                { from: new Date('04/06/2026'), to: new Date('04/06/2026'), label: 'Extended Working Day', exceptionWorkingTime: [{ from: 8, to: 18 }] }
             ]
         }
     }

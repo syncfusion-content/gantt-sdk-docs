@@ -67,7 +67,7 @@ A task uses a task calendar only when its mapped `calendarId` matches an entry i
 | No matching task calendar | Uses global `workWeek` and `includeWeekend` with `projectCalendar.workingTime`. | Project-calendar holidays and exceptions apply. |
 | Matching task calendar | Uses the selected task calendar's schedule. Unset values first follow the inheritance rules below; values still unresolved use global `workWeek` or `projectCalendar.workingTime`. Listed `weekWorkingTime` days override the normal working-time ranges. | Uses date rules defined for the selected task calendar. Fixed project holidays and project exceptions do not apply. |
 
-The task-calendar holiday sample demonstrates this distinction using its actual records. **Project Calendar Work** has no matching task calendar, so the project calendar's fixed **Regional Holiday** on April 10, , and **Project extended hours** exception on April 17 apply to it. **Local Team Work** uses `local-team`, which defines **Local Holiday** on April 6. **Offshore Team Work** uses `offshore-team`, which defines **Offshore Holiday** on April 8. Both assigned tasks span April 10 and 17, but the project holiday and exception do not apply to them; they use date rules defined for their selected calendars. Project working-time settings may still provide schedule fallback. Recurring project holidays have a separate fallback rule described in the inheritance section.
+The task-calendar holiday sample demonstrates this distinction using its actual records. **Project Calendar Work** has no matching task calendar, so the project calendar's fixed **Regional Holiday** on April 10 and **Project extended hours** exception on April 17 apply to it. **Local Team Work** uses `local-team`, which defines **Local Holiday** on April 6. **Offshore Team Work** uses `offshore-team`, which defines **Offshore Holiday** on April 8. Both assigned tasks span April 10 and 17, but the project holiday and exception do not apply to them; they use date rules defined for their selected calendars. Project working-time settings may still provide schedule fallback. Recurring project holidays have a separate fallback rule described in the inheritance section.
 
 ### Configure working days and hours for task calendars
 
@@ -187,7 +187,7 @@ The examples below show the `recurrence` value; set the record's `from` date to 
 | April 10 each year | `{ frequency: 'yearly', month: 4, dayOfMonth: 10 }` |
 | February 29 each year | `{ frequency: 'yearly', month: 2, dayOfMonth: 29 }` — occurrences are skipped in non-leap years. |
 
-For a weekly recurrence, use `{ frequency: 'weekly', daysOfWeek: ['Monday'], count: 8 }` or `{ frequency: 'weekly', daysOfWeek: ['Monday'], until: new Date(, 5, 30) }` as the end condition.
+For a weekly recurrence, use `{ frequency: 'weekly', daysOfWeek: ['Monday'], count: 8 }` or `{ frequency: 'weekly', daysOfWeek: ['Monday'], until: new Date(2026, 5, 30) }` as the end condition.
 
 Selectors must match their frequency: `daysOfWeek` contains unique, case-sensitive weekday names from Sunday through Saturday; monthly or yearly ordinal rules use exactly one weekday with `weekOfMonth` set to `1`-`4` or `"last"`; `dayOfMonth` is `1`-`31` or `"last"`; and yearly `month` is `1`-`12`. Do not combine `dayOfMonth` with `daysOfWeek` or `weekOfMonth`. When recurrence is configured, `from` is required and must match any specified weekday, day, ordinal, or yearly month. If supplied, `to` must be the same as or later than `from`. `interval` and `count` must be positive integers; use either `count` or a valid `until` date not before `from`.
 
@@ -195,7 +195,7 @@ Recurrence dates are parsed as dates and normalized using local date interpretat
 
 For monthly rules on day 29-31, months without the selected day are skipped; a yearly February 29 rule skips non-leap years. Skipped dates do not consume `count`. Recurrence is evaluated only as needed for the scheduling window and repeats the source `from`-`to` span. On initialization, an invalid recurrence with valid source dates is reported through the [actionFailure event](../api/gantt#actionfailure) and treated as a one-time fixed-date rule; a record with invalid dates is skipped. If an invalid recurrence is introduced by a calendar update, `actionFailure` reports the error and the previous calendar configuration is retained.
 
-The following sample demonstrates a holiday repeated three times using `count` and a partial working-day exception repeated through June 17,  using `until`:
+The following sample demonstrates a holiday repeated three times using `count` and a partial working-day exception repeated through June 17 using `until`:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

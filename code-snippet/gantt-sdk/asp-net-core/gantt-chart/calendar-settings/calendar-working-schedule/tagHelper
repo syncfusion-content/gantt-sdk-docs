@@ -1,0 +1,38 @@
+@page
+@model IndexModel
+@using Syncfusion.EJ2.Gantt
+
+<ejs-gantt id="Gantt"
+           dataSource="@Model.GanttDataSourceCollection"
+           height="450px"
+           projectStartDate="04/06/2026"
+           projectEndDate="04/24/2026">
+    <e-gantt-taskfields id="TaskId"
+                        name="TaskName"
+                        startDate="StartDate"
+                        duration="Duration"
+                        calendarId="CalendarId">
+    </e-gantt-taskfields>
+    <e-gantt-labelsettings leftLabel="TaskName"></e-gantt-labelsettings>
+    <e-gantt-calendarsettings>
+        <e-gantt-projectcalendar workingTime="@(new List<object>
+        {
+            new { from = 9, to = 17 }
+        })">
+        </e-gantt-projectcalendar>
+        <e-gantt-taskcalendars>
+            <e-gantt-taskcalendar calendarId="day-shift"
+                                  workWeek="@(new[] { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" })"
+                                  workingTime="@(new List<object>
+                                  {
+                                      new { from = 9, to = 17 }
+                                  })"
+                                  weekWorkingTime="@(new List<object>
+                                  {
+                                      new { dayOfWeek = "Monday", timeRange = new[] { new { from = 9, to = 12 }, new { from = 13, to = 17 } } },
+                                      new { dayOfWeek = "Friday", timeRange = new[] { new { from = 9, to = 13 } } }
+                                  })">
+            </e-gantt-taskcalendar>
+        </e-gantt-taskcalendars>
+    </e-gantt-calendarsettings>
+</ejs-gantt>

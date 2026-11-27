@@ -17,7 +17,6 @@ function App() {
         name: 'TaskName',
         startDate: 'StartDate',
         duration: 'Duration',
-        parentID: 'ParentId',
         calendarId: 'CalendarId'
     };
     const labelSettings: LabelSettingsModel = {
@@ -34,13 +33,13 @@ function App() {
                 calendarId: 'day-shift',
                 workingTime: [{ from: 9, to: 17 }],
                 holidays: [],
-                exceptions: [{ from: new Date('04/09/2026'), to: new Date('04/09/2026'), name: 'Team Meeting Day', isWorking: true, workingTime: [{ from: 10, to: 16 }] }]
+                exceptions: [{ from: new Date('04/09/2026'), to: new Date('04/09/2026'), label: 'Team Meeting Day' }]
             },
             {
                 calendarId: 'night-shift',
                 workingTime: [{ from: 17, to: 9 }],
                 holidays: [],
-                exceptions: [{ from: new Date('04/10/2026'), to: new Date('04/10/2026'), name: 'Maintenance Window', isWorking: true, workingTime: [{ from: 18, to: 8 }] }]
+                exceptions: [{ from: new Date('04/10/2026'), to: new Date('04/10/2026'), label: 'Maintenance Window', exceptionWorkingTime: [{ from: 18, to: 8 }] }]
             }
         ]
     };
