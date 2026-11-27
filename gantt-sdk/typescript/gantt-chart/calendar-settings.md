@@ -121,7 +121,7 @@ The Gantt checks the assigned calendar first, then its parents from nearest to f
 
 Each `weekWorkingTime` entry replaces the complete schedule for that weekday. A weekday omitted by the child inherits the nearest parent's entry, or uses the calendar's `workingTime` if no parent defines it. An explicit `workWeek: []` does not inherit a parent's work week; it falls back to the project work week.
 
-For dates, the Gantt checks each calendar from nearest to farthest. An exception takes precedence over a holiday in the same calendar. A recurring project-calendar holiday applies only when no calendar in the chain claims the date; fixed project holidays and project exceptions are not task-calendar fallbacks. An empty `exceptionWorkingTime: []` uses the effective working schedule instead of making the date non-working.
+For dates, the Gantt checks each calendar from nearest to farthest. An exception takes precedence over a holiday in the same calendar. A recurring project-calendar holiday applies only when no calendar in the chain claims the date; fixed project holidays and project exceptions are not task-calendar fallback. An empty `exceptionWorkingTime: []` uses the effective working schedule instead of making the date non-working.
 
 Missing parent references, self-references, and parent cycles are ignored.
 
@@ -170,7 +170,7 @@ Recurrence dates are parsed as dates and normalized using local date interpretat
 
 For monthly rules on day 29-31, months without the selected day are skipped; a yearly February 29 rule skips non-leap years. Skipped dates do not consume `count`. Recurrence is evaluated only as needed for the scheduling window and repeats the source `from`-`to` span. On initialization, an invalid recurrence with valid source dates is reported through the [actionFailure event](../api/gantt#actionfailure) and treated as a one-time fixed-date rule; a record with invalid dates is skipped. If an invalid recurrence is introduced by a calendar update, `actionFailure` reports the error and the previous calendar configuration is retained.
 
-The following sample demonstrates a recurring holiday and a recurring partial working-day exception on an independently assigned task calendar:
+The following sample demonstrates a holiday repeated three times using `count` and a partial working-day exception repeated through June 17, 2026 using `until`:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

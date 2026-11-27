@@ -36,7 +36,7 @@ let gantt: Gantt = new Gantt({
                     to: new Date('04/17/2026'),
                     label: 'Partial working day',
                     exceptionWorkingTime: [{ from: 9, to: 12 }],
-                    recurrence: { frequency: 'monthly', interval: 1, dayOfMonth: 17, count: 3 }
+                    recurrence: { frequency: 'monthly', interval: 1, dayOfMonth: 17, until: new Date('06/17/2026') }
                 }]
             }
         ]
