@@ -13,20 +13,29 @@ appliesto: UI Component Suite, Gantt SDK
 
 # S-Curve in JavaScript Gantt Chart
 
-The S-Curve feature visualizes cumulative project progress and duration over time directly on the Gantt chart timeline. It helps compare planned work against completed work and provides insight into project performance throughout the schedule.
+The S-Curve feature visualizes cumulative project performance over time directly on the Gantt chart timeline. It provides a graphical representation of how work progresses throughout a project schedule, helping track performance trends and overall completion throughout the project lifecycle.
 
-The Gantt Chart supports two S-Curve metrics:
+S-Curve data is calculated from scheduled child tasks that contain valid start dates and durations. The calculated values are rendered as an overlay on the Gantt chart timeline.
 
-- **Progress** – Displays cumulative earned progress.
-- **Duration** – Displays cumulative scheduled duration.
+The Gantt Chart supports the following S-Curve types:
 
-## Enabling S-Curve
+- **Progress** - Displays cumulative earned progress over time.
+- **Duration** - Displays cumulative scheduled duration over time.
 
-To enable the S-Curve feature, inject the `SCurve` module and configure the [sCurveSettings](https://ej2.syncfusion.com/javascript/documentation/api/gantt#scurvesettings) property with `visible: true`. Define one or more datasets within the `dataSet` collection to display the required curves.
+## Configure S-Curve Rendering
 
-Map the task properties by using the `taskFields` configuration.
+Configure S-Curve rendering using the [`sCurveSettings`](https://ej2.syncfusion.com/javascript/documentation/api/gantt#scurvesettings) property.
 
-The following example demonstrates how to render Progress and Duration S-Curves.
+The following properties are available for configuring S-Curve rendering.
+
+| Property | Description |
+|-----------|-------------|
+| `visible` | Enables or disables S-Curve rendering. |
+| `dataSet` | Use the dataSet collection to define one or more S-Curve datasets for rendering. |
+| `dataSet.field` | Specifies the dataset type. Supported values are `Progress` and `Duration`. |
+| `dataSet.color` | Specifies the line and marker color of the dataset. |
+
+The following example demonstrates how to display both Progress and Duration S-Curves.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -39,55 +48,25 @@ The following example demonstrates how to render Progress and Duration S-Curves.
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/javascript/gantt-chart/scurve-cs1" %}
 
-## S-Curve Settings
-
-Use the [sCurveSettings](https://ej2.syncfusion.com/javascript/documentation/api/gantt#scurvesettings) property to configure S-Curve behavior.
-
-| Property | Description |
-| --- | --- |
-| `visible` | Enables or disables S-Curve rendering. The default value is `false`. |
-| `dataSet` | Defines the collection of S-Curve datasets to render. |
-| `dataSet.field` | Specifies the metric represented by the dataset. Supported values are `Progress` and `Duration`. |
-| `dataSet.color` | Specifies the line and marker color for the dataset. If not specified, theme-specific colors are used. |
-
-## Understanding S-Curve Calculation
-
-The S-Curve values are calculated using scheduled leaf-level tasks that contain valid start dates and durations.
-
-### Progress S-Curve
-
-The Progress S-Curve represents cumulative earned progress over time. Each task contributes based on its duration and progress value, allowing project completion trends to be visualized throughout the schedule.
-
-### Duration S-Curve
-
-The Duration S-Curve represents cumulative scheduled duration over time and illustrates how planned work is distributed across the project timeline.
-
-Both curves are normalized as percentages of the total scheduled duration, allowing Progress and Duration curves to be compared on the same scale.
-
-## Timeline Interaction
-
-S-Curve data points are generated using the configured timeline intervals together with task start and finish dates. The level of detail displayed in the curve depends on the configured timeline tier settings.
-
-The S-Curve is automatically refreshed when task data or S-Curve settings change.
-
 ## Customizing S-Curve Tooltip
 
-Hovering over an S-Curve data point displays information about the curve value at that date.
+Hovering over an S-Curve data point displays information associated with the selected dataset and timeline date.
 
-To customize the tooltip content, use the [tooltipSettings.sCurve](https://ej2.syncfusion.com/javascript/documentation/api/gantt/tooltipSettings#scurve) property.
+The S-Curve tooltip supports template customization through the [`tooltipSettings.sCurve`](https://ej2.syncfusion.com/javascript/documentation/api/gantt/tooltipSettings#scurve) property. This template provides context-specific information for the selected S-Curve data point, enabling custom display of cumulative progress and duration values.
 
-The template receives the following fields:
+The tooltip template provides the following fields.
 
 | Field | Description |
-| --- | --- |
+|---------|-------------|
 | `field` | Dataset type (`Progress` or `Duration`). |
 | `name` | Display name of the dataset. |
-| `date` | Timeline date corresponding to the data point. |
-| `percentage` | Calculated cumulative percentage value. |
-| `value` | Actual cumulative value represented by the point; available for Duration datasets only. |
+| `date` | Timeline date associated with the data point. |
+| `percentage` | Cumulative percentage calculated for the specified date. |
+| `value` | Cumulative duration value. Available only for Duration dataset. |
+
+The following example demonstrates how to customize the S-Curve tooltip.
 
 ```javascript
-
 var ganttChart = new ej.gantt.Gantt({
     dataSource: [
         { TaskID: 1, TaskName: 'Project Planning', StartDate: new Date('04/01/2026'), Duration: 5, Progress: 40 },
@@ -113,21 +92,13 @@ var ganttChart = new ej.gantt.Gantt({
         ]
     },
     tooltipSettings: {
-        sCurve: '<div>${field}: ${name}<br/>Date: ${date}<br/>Percentage: ${percentage}%${if (field === "Duration")}<br/>Value: ${value}${/if}</div>'
+        sCurve: '<div>${field}<br/>Date: ${this.getFormatedDate(date)}<br/>Percentage: ${percentage}%</div>'
     }
 });
 
 ganttChart.appendTo('#Gantt');
 ```
 
-To disable S-Curve tooltips, set [tooltipSettings.showTooltip](https://ej2.syncfusion.com/javascript/documentation/api/gantt/tooltipSettings#showtooltip) to `false`.
-
-## Export Support
-
-The S-Curve overlay is included when exporting the Gantt Chart to PDF.
-
-To enable PDF export, inject the `PdfExport` module and follow the Gantt Chart [PDF Export documentation](https://help.syncfusion.com/gantt-sdk/javascript/gantt-chart/pdf-export/pdf-export).
-
 ## Limitations
 
-When `loadChildOnDemand` is enabled together with child mapping, S-Curve rendering is not supported because all task data is not available during calculation.
+- When `loadChildOnDemand` is enabled, S-Curve rendering is not supported because all task records are not available during S-Curve calculation.
