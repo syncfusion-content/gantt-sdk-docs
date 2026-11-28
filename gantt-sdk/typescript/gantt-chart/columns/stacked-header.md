@@ -13,13 +13,11 @@ appliesto: UI Component Suite, Gantt SDK
 
 ## Stacked Header in TypeScript Gantt Chart
 
-The Stacked Header feature in the Syncfusion TypeScript Gantt Chart enables users to organize multiple related columns under a common header. This improves readability and provides a structured layout when displaying large numbers of columns.
-
-A stacked header acts as a parent header and groups one or more child columns beneath it. This is particularly useful for categorizing task information, scheduling details, resource data, or custom project fields.
+The stacked header feature enables you to group multiple columns under a common parent header. It helps organize related task information into logical sections, making the Gantt TreeGrid easier to read and navigate, especially when displaying a large number of columns. Each stacked header can contain one or more child columns, allowing project data to be presented in a structured and intuitive manner.
 
 ### Enabling stacked header
 
-To create stacked headers, define columns with the `columns` property and configure the `columns` collection within a column definition to group multiple child columns under a single header.
+Stacked headers are configured by defining a parent column that contains a collection of child columns using the `columns` property. The parent column displays the stacked header text, while the child columns appear as individual columns within the group.
 
 The following example demonstrates grouping task-related columns under a common stacked header.
 
@@ -34,20 +32,23 @@ The following example demonstrates grouping task-related columns under a common 
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/stackedheader-cs1" %}
 
-### Column behavior with stacked headers
+### Behavior of stacked header columns
 
-Child columns keep their own column settings, such as `allowSorting`, `allowFiltering`, `allowResizing`, `allowReordering` and `visible`, and they stay visually grouped under the stacked header. The stacked header cell itself is not bound to a data field.
+The child columns retain their individual configurations and functionality, including sorting, filtering, resizing, reordering, editing, formatting, and visibility settings. Changes to a child column affect only that column and do not impact other columns within the same stacked header group.
+Stacked headers can contain multiple levels of nested columns, allowing complex column hierarchies to be created when organizing related task information
 
-### Export
+The following example demonstrates behaviour of stacked header columns.
 
-Stacked headers are included when the Gantt chart is exported. The grouped header levels are written to the exported file.
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/gantt-sdk/typescript/gantt-chart/stackedheader-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt-sdk/typescript/gantt-chart/stackedheader-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
 
-### Keyboard interaction
-
-Header cells, including stacked header cells, can be reached with the standard keyboard navigation.
-
-**Tab** moves focus to the next focusable element.
-**Shift + Tab** moves focus to the previous focusable element.
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/stackedheader-cs2" %}
 
 ### Touch interaction
 
