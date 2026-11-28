@@ -1,7 +1,3 @@
-#container {
-    visibility: hidden;
-}
-
 #container #Gantt {
     height: 450px;
 }
