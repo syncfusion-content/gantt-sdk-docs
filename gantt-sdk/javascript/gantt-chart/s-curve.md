@@ -24,6 +24,8 @@ The Gantt Chart supports the following S-Curve types:
 
 ## Configure S-Curve rendering
 
+Before rendering the S-Curve, inject the [`SCurve`](https://ej2.syncfusion.com/javascript/documentation/api/gantt#scurvemodule) module into the Gantt Chart.
+
 Configure S-Curve rendering using the [`sCurveSettings`](https://ej2.syncfusion.com/javascript/documentation/api/gantt#scurvesettings) property.
 
 The following properties are available for configuring S-Curve rendering.
