@@ -32,5 +32,6 @@ The modules that are available in Gantt are as follows.
 | [ColumnMenu](https://ej2.syncfusion.com/javascript/documentation/api/gantt/columnMenu)   | Inject this module to use column menu feature.       |
 | [VirtualScroll](https://ej2.syncfusion.com/documentation/api/gantt#virtualscrollmodule)  | Inject this module to use virtual scroll feature.    |
 | [CriticalPath](https://ej2.syncfusion.com/documentation/api/gantt#criticalpathmodule)    | Inject this module to use critical path feature.     |
+| [ProgressLine](https://ej2.syncfusion.com/javascript/documentation/api/gantt#progresslinemodule) | Inject this module to use progress line feature. |
 
 These modules should be injected into the Gantt using the **Gantt.Inject** method.

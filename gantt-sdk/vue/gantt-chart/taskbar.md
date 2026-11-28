@@ -137,6 +137,24 @@ In the Gantt Chart component, you can enable or disable the mouse hover tooltip 
 
 > The default value of the [tooltipSettings.showTooltip](https://ej2.syncfusion.com/vue/documentation/api/gantt/tooltipSettings#showtooltip) property is `true`.
 
+### Segment Tooltip
+
+The segment tooltip can be displayed by enabling [tooltipSettings.showTooltip](https://ej2.syncfusion.com/vue/documentation/api/gantt/tooltipSettings#showtooltip) and setting [tooltipSettings.showSegmentTooltip](https://ej2.syncfusion.com/vue/documentation/api/gantt/tooltipSettings#showsegmenttooltip) to **true**. When enabled, individual tooltips are shown for each segment of a split task, providing segment-specific task information. Segment-specific details are displayed when hovering over a task segment, while task-level details are displayed when hovering over the gap between segments.
+By default `showSegmentTooltip` value will be **false**.
+
+The following example configures segment-specific tooltips for a task with multiple segments:
+
+{% tabs %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
+{% include code-snippet/gantt-sdk/vue/gantt-chart/segmentTooltip-cs1/app-composition.vue %}
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+{% include code-snippet/gantt-sdk/vue/gantt-chart/segmentTooltip-cs1/app.vue %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/vue/gantt-chart/segmentTooltip-cs1" %}
+
 ## Tooltip template
 
 ### Taskbar tooltip
