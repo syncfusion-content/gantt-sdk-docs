@@ -483,6 +483,27 @@ The following example enables tooltips:
 
 Tooltips display on hover, with touch-and-hold support for mobile via the tooltip popup.
 
+### Segment Tooltip
+
+The segment tooltip can be displayed by enabling [tooltipSettings.showTooltip](https://ej2.syncfusion.com/react/documentation/api/gantt/tooltipSettings#showtooltip) and setting [tooltipSettings.showSegmentTooltip](https://ej2.syncfusion.com/react/documentation/api/gantt/tooltipSettings#showsegmenttooltip) to **true**. When enabled, individual tooltips are shown for each segment of a split task, providing segment-specific task information. Segment-specific details are displayed when hovering over a task segment, while task-level details are displayed when hovering over the gap between segments.
+By default `showSegmentTooltip` value will be **false**.
+
+The following example configures segment-specific tooltips for a task with multiple segments:
+
+{% tabs %}
+{% highlight js tabtitle="index.jsx" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/segmentTooltip-cs1/app/index.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="index.tsx" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/segmentTooltip-cs1/app/index.tsx %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/gantt-sdk/react/gantt-chart/segmentTooltip-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/react/gantt-chart/segmentTooltip-cs1" %}
+
 ### Disable taskbar tooltip 
 
 You can disable the taskbar tooltip using the [beforeTooltipRender](https://ej2.syncfusion.com/react/documentation/gantt/events#beforetooltiprender) event by setting `args.cancel` to **true**.

@@ -78,6 +78,7 @@ Each module enables specific features. For example, `Sort` enables column sortin
 - `DayMarkers` - Event markers and holidays
 - `VirtualScroll` - Virtual scrolling with `enableVirtualization`
 - `CriticalPath` - Critical path visualization with `enableCriticalPath`
+- `ProgressLine` - Progress line visualization with `progressLine`
 - `UndoRedo` - Undo/redo operations with `enableUndoRedo`
 
 **Export:**

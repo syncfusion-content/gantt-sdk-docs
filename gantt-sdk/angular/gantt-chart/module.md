@@ -95,6 +95,7 @@ export class AppModule { }
 - `DayMarkersService` - Event markers and holidays
 - `VirtualScrollService` - Virtual scrolling with `enableVirtualization`
 - `CriticalPathService` - Critical path visualization with `enableCriticalPath`
+- `ProgressLineService` - Progress line visualization with `progressLine`
 - `UndoRedoService` - Undo/redo operations with `enableUndoRedo`
 
 **Export:**
