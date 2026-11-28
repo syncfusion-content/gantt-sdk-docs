@@ -7,6 +7,7 @@ const gantt: Gantt = new Gantt({
     dataSource: GanttData,
     height: '450px',
     allowTaskCopyPaste: true,
+    allowSelection: true,
     taskFields: {
         id: 'TaskID',
         name: 'TaskName',
