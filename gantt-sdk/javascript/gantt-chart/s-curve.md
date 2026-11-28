@@ -68,7 +68,7 @@ The tooltip template provides the following fields.
 
 The following example demonstrates how to customize the S-Curve tooltip.
 
-```javascript
+```js
 var ganttChart = new ej.gantt.Gantt({
     dataSource: [
         { TaskID: 1, TaskName: 'Project Planning', StartDate: new Date('04/01/2026'), Duration: 5, Progress: 40 },
