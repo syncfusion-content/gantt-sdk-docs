@@ -1,6 +1,5 @@
-ej.gantt.Gantt.Inject(ej.gantt.SCurve);
-
 var ganttChart = new ej.gantt.Gantt({
+
     dataSource: GanttData,
     height: '450px',
     taskFields: {
@@ -11,8 +10,15 @@ var ganttChart = new ej.gantt.Gantt({
         progress: 'Progress',
         parentID: 'ParentID'
     },
+    editSettings: {
+        allowAdding: true,
+        allowDeleting: true,
+        allowEditing: true,
+        allowTaskbarEditing: true
+    },
+    toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
     timelineSettings: {
-        topTier: { unit: 'Month' },
+        topTier: { unit: 'Week' },
         bottomTier: { unit: 'Day' }
     },
     sCurveSettings: {
@@ -21,6 +27,8 @@ var ganttChart = new ej.gantt.Gantt({
             { field: 'Progress', color: '#4CAF50' },
             { field: 'Duration', color: '#2196F3' }
         ]
-    }
+    },
+    projectStartDate: new Date(2025, 11, 25),
+    projectEndDate: new Date(2026, 1, 15)
 });
 ganttChart.appendTo('#Gantt');

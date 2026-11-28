@@ -13,16 +13,16 @@ appliesto: UI Component Suite, Gantt SDK
 
 # S-Curve in TypeScript Gantt Chart
 
-The S-Curve feature visualizes cumulative project performance over time directly on the Gantt chart timeline. It provides a graphical representation of how work progresses throughout a project schedule, helping track performance trends and overall completion throughout the project lifecycle.
+The S-Curve feature visualizes cumulative project performance over time directly on the Gantt Chart timeline. It provides a graphical representation of how work progresses throughout a project schedule, helping track performance trends and overall completion throughout the project lifecycle.
 
-S-Curve data is calculated from scheduled child tasks that contain valid start dates and durations. The calculated values are rendered as an overlay on the Gantt chart timeline.
+S-Curve data is calculated from scheduled child tasks that contain valid start dates and durations. The calculated values are rendered as an overlay on the Gantt Chart timeline.
 
 The Gantt Chart supports the following S-Curve types:
 
 - **Progress** - Displays cumulative earned progress over time.
 - **Duration** - Displays cumulative scheduled duration over time.
 
-## Configure S-Curve Rendering
+## Configure S-Curve rendering
 
 Before rendering the S-Curve, inject the [`SCurve`](https://ej2.syncfusion.com/documentation/api/gantt#scurvemodule) module into the Gantt Chart.
 
@@ -50,7 +50,7 @@ The following example demonstrates how to display both Progress and Duration S-C
 
 {% previewsample "https://help.syncfusion.com/code-snippet/gantt-sdk/typescript/gantt-chart/scurve-cs1" %}
 
-## Customizing S-Curve Tooltip
+## Customizing S-Curve tooltip
 
 Hovering over an S-Curve data point displays information associated with the selected dataset and timeline date.
 

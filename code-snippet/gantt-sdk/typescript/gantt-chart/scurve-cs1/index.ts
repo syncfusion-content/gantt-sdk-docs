@@ -14,8 +14,15 @@ let gantt: Gantt = new Gantt({
         progress: 'Progress',
         parentID: 'ParentID'
     },
+    editSettings: {
+        allowAdding: true,
+        allowDeleting: true,
+        allowEditing: true,
+        allowTaskbarEditing: true
+    },
+    toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
     timelineSettings: {
-        topTier: { unit: 'Month' },
+        topTier: { unit: 'Week' },
         bottomTier: { unit: 'Day' }
     },
     sCurveSettings: {
@@ -24,6 +31,8 @@ let gantt: Gantt = new Gantt({
             { field: 'Progress', color: '#4CAF50' },
             { field: 'Duration', color: '#2196F3' }
         ]
-    }
+    },
+    projectStartDate: new Date(2025, 11, 25),
+    projectEndDate: new Date(2026, 1, 15)
 });
 gantt.appendTo('#Gantt');
